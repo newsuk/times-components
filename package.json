@@ -1,0 +1,55 @@
+{
+  "name": "lal-components",
+  "version": "0.0.1",
+  "description": "A collection of presentational components for locate a location",
+  "main": "index.js",
+  "scripts": {
+    "native": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "lerna run test",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "prestorybook-native": "node ./node_modules/.bin/rnstl",
+    "storybook-native": "storybook -c .storybook.native start -p 7007",
+    "storybook:build": "build-storybook -c .storybook -o .out",
+    "prettier:diff": "prettier --list-different 'packages/**/*.js'",
+    "packages:publish": "lerna publish --conventional-commits"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./packages"
+      ],
+      "pattern": "**/*.stories.js",
+      "outputFile": "./.storybook.native/story-loader.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craigbilner/lal-components.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "web"
+  ],
+  "author": "Craig Bilner",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/craigbilner/lal-components/issues"
+  },
+  "homepage": "https://github.com/craigbilner/lal-components#readme",
+  "devDependencies": {
+    "@storybook/addon-actions": "3.0.0",
+    "@storybook/react": "3.0.0",
+    "@storybook/react-native": "3.0.0",
+    "lerna": "2.0.0-rc.5",
+    "prettier": "^1.4.2",
+    "react": "16.0.0-alpha.6",
+    "react-dom": "15.5.4",
+    "react-native": "0.44.1",
+    "react-native-storybook-loader": "1.3.1",
+    "url": "^0.11.0"
+  },
+  "dependencies": {
+    "react-native-web": "0.0.97"
+  }
+}
