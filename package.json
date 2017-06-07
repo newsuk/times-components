@@ -54,6 +54,7 @@
   },
   "dependencies": {
     "dashify": "^0.2.2",
+    "global": "^4.3.2",
     "handlebars": "^4.0.10",
     "inquirer": "^3.0.6",
     "lodash": "^4.17.4",
