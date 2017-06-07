@@ -1,5 +1,5 @@
 {
-  "name": "@lal/author",
+  "name": "@newsint/author",
   "version": "0.0.1",
   "main": "author.js",
   "scripts": {
@@ -22,7 +22,6 @@
     "author",
     "component"
   ],
-  "author": "Craig Bilner",
   "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/newsuk/times-components/issues"
