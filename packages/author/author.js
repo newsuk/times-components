@@ -1,16 +1,12 @@
-import React, { Component } from 'react';
-import {
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import React, { Component } from "react";
+import { StyleSheet, Text, View } from "react-native";
 
 export default class Author extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Text>
-          Author Bio
+          Author Bios!
         </Text>
       </View>
     );
@@ -20,8 +16,8 @@ export default class Author extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5EFEB',
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#F5EFEB"
   }
 });
