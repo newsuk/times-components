@@ -52,6 +52,6 @@ fastlane/Preview.html
 fastlane/screenshots
 
 .storybook.native/story-loader.js
-.out
+storybook-static
 coverage
 

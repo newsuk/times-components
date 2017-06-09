@@ -25,7 +25,7 @@ Following these guidelines helps to get issues organised and PRs merged faster!
  code consistency and reliability, this pattern should also be followed to avoid typical dev
   bike-shedding
 * For testing we’re using [Jest](https://facebook.github.io/jest/) for unit and integration tests.
- React Native integration tests will use [Wix](https://github.com/wix/detox)
+ React Native integration tests will use [Detox](https://github.com/wix/detox)
 
 ### Heuristics
 
@@ -34,7 +34,7 @@ We're using [lerna](https://github.com/lerna/lerna) for the monorepo with each c
  the exported JSX with no compilation
 
 For ease of use there is a CLI for creating a component. Run `./times-components` for instructions,
- this is the quickest way to create package with the required scaffolding which is a component,
+ this is the quickest way to create a package with the required scaffolding which is; a component,
   `package.json`, stubbed test and story
 
 When developing a component it's easiest to use the 
@@ -47,8 +47,8 @@ When developing a component it's easiest to use the
  terminal run `react-native run-[platform]`. This will allow you to develop in your storybook on a
  device or in an emulator.
  
-`npm run storybook:build` will output the built web storybook into an `out` folder that is synced
- to the `gh_pages` branch to demo the components in the web
+`npm run storybook:build` will output the built web storybook into the default `storybook-static`
+ folder that is synced to the `gh_pages` branch to demo the components in the web
  
  `npm run prettier:diff` is used by the test script to enforce the code style at the CI level but
  can be run across all packages as a check too
@@ -71,9 +71,9 @@ Please **ask first** if somebody else is already working on this or the core dev
 
 ## Testing
 
-Every component should have a `XXXX.test.js` file with the components Jest tests. If required there
+Every component should have a `XXXX.test.js` file with the component's Jest tests. If required there
  should be additional functional tests written in [nightmare](http://www.nightmarejs.org/) and/or
- Wix. Currently there's no coverage gate but a coverage report will be generated.
+ Detox. Currently there's no coverage gate but a coverage report will be generated.
 
 ## Folder Structure
 
