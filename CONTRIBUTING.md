@@ -47,6 +47,11 @@ When developing a component it's easiest to use the
  terminal run `react-native run-[platform]`. This will allow you to develop in your storybook on a
  device or in an emulator.
  
+> #### Caution
+> 
+> There are some problems regarding the usage of native storybooks with the Android simulator, mainly with hot module reloading (HMR). 
+> To take full advantage of HMR while developing components while testing with storybooks use the iOS simulator instead.
+ 
 `npm run storybook:build` will output the built web storybook into the default `storybook-static`
  folder that is synced to the `gh_pages` branch to demo the components in the web
  
