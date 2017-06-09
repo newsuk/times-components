@@ -25,7 +25,7 @@ Following these guidelines helps to get issues organised and PRs merged faster!
  code consistency and reliability, this pattern should also be followed to avoid typical dev
   bike-shedding
 * For testing we’re using [Jest](https://facebook.github.io/jest/) for unit and integration tests.
- React Native integration tests will use [Wix](https://github.com/wix/detox)
+ React Native integration tests will use [Detox](https://github.com/wix/detox)
 
 ### Heuristics
 
@@ -73,7 +73,7 @@ Please **ask first** if somebody else is already working on this or the core dev
 
 Every component should have a `XXXX.test.js` file with the component's Jest tests. If required there
  should be additional functional tests written in [nightmare](http://www.nightmarejs.org/) and/or
- Wix. Currently there's no coverage gate but a coverage report will be generated.
+ Detox. Currently there's no coverage gate but a coverage report will be generated.
 
 ## Folder Structure
 
