@@ -11,13 +11,15 @@ It's been developed almost solely on MacOS so there may be issues elsewhere
 
 ## Getting Started
 
-```sh
-# this will install the modules for the react storybooks and each components' dependencies too
-yarn
-
-# this will use webpack to build the storybook and run it in the browser for you to...browse
-npm run storybook 
-```
+1. `yarn` to install the dependencies
+2. components can be seen running in a storybook:
+  * web storybook
+    1. `yarn run storybook`
+    2. go to http://localhost:9001
+  * native storybook
+    1. `react-native run-android` or `react-native run-ios` to start an emulator
+    2. `yarn run storybook-native`
+    3. go to http://localhost:7007
 
 ## Contributing
 
