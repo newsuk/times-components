@@ -1,14 +1,37 @@
 import React from "react";
-import { StyleSheet, Image as RNImage } from "react-native";
+import { View, Image } from "react-native";
+import merge from "lodash/merge";
 
-const styles = StyleSheet.create({
-  image: {
-    width: "100%",
-    height: "100%",
-    alignSelf: "stretch"
+export default class extends React.Component {
+  constructor(...args) {
+    super(...args);
+
+    this.handleLayout = this.handleLayout.bind(this);
+    this.state = { width: 0, height: 0 };
   }
-});
 
-export default function Image(props) {
-  return <RNImage style={styles.image} {...props} />;
+  handleLayout(event) {
+    const containerWidth = event.nativeEvent.layout.width;
+
+    Image.getSize(this.props.source.uri, (width, height) => {
+      this.setState({
+        width: containerWidth,
+        height: containerWidth * height / width
+      });
+    });
+  }
+
+  render() {
+    return (
+      <View onLayout={this.handleLayout}>
+        <Image
+          {...this.props}
+          style={merge(this.props.style || {}, {
+            width: this.state.width,
+            height: this.state.height
+          })}
+        />
+      </View>
+    );
+  }
 }
