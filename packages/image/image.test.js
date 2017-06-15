@@ -9,8 +9,3 @@ it("renders correctly", () => {
   expect(tree).toBeTruthy();
 });
 
-it("Has some default styles", () => {
-  const tree = renderer.create(<Image />).toJSON();
-  expect(tree.props.style.width).toEqual(50);
-  expect(tree.props.style.height).toEqual(50);
-});
