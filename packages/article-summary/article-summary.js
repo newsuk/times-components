@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     lineHeight: 22,
     marginBottom: 8,
     fontFamily: "TimesModern-Bold",
-    fontWeight: 400
+    fontWeight: "400"
   },
   text: {
     color: "#696969",

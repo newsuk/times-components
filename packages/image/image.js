@@ -3,8 +3,9 @@ import { StyleSheet, Image as RNImage } from "react-native";
 
 const styles = StyleSheet.create({
   image: {
-    width: 50,
-    height: 50
+    width: "100%",
+    height: "100%",
+    alignSelf: "stretch"
   }
 });
 
