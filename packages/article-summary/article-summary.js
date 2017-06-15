@@ -2,13 +2,13 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 const styles = StyleSheet.create({
+  container: {},
   label: {
     color: "#333333",
     fontFamily: "GillSansMTStd-Medium",
     fontSize: 12,
     marginBottom: 2,
-    letterSpacing: 1,
-    textTransform: "uppercase"
+    letterSpacing: 1
   },
   headline: {
     color: "#333333",
@@ -40,9 +40,10 @@ export default function ArticleSummary({
   date,
   publication
 }) {
+  const labelText = typeof label === "string" ? label.toUpperCase() : label;
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>{label}</Text>
+      <Text style={styles.label}>{labelText}</Text>
       <Text style={styles.headline}>{headline}</Text>
       <Text style={styles.text}>{text}</Text>
       {date && publication
