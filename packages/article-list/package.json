@@ -1,5 +1,5 @@
 {
-  "name": "@newsint/article-list",
+  "name": "@times-components/article-list",
   "version": "0.0.1",
   "main": "article-list.js",
   "scripts": {
@@ -41,7 +41,6 @@
     "webpack": "2.6.1"
   },
   "dependencies": {
-    "@newsint/card": "*",
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",
     "react-native-web": "0.0.96"
