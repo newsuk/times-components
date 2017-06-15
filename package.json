@@ -8,7 +8,7 @@
   },
   "scripts": {
     "native": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest ./lib && npm run prettier:diff && lerna run test",
+    "test": "npm run prettier:diff --silent && lerna run test",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "prestorybook-native": "node ./node_modules/.bin/rnstl",
     "storybook-native": "storybook -c .storybook.native start -p 7007",
@@ -18,7 +18,7 @@
     "packages:publish": "lerna publish --conventional-commits",
     "update-deps": "lerna bootstrap --npm-client=yarn --concurrency=1",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
-    "postinstall": "npm run update-deps"
+    "postinstall": "npm run update-deps --silent"
   },
   "pre-commit": [ "precommit-msg", "test" ],
   "config": {
