@@ -9,15 +9,18 @@ const rowStyle = isLast => {
   return {
     borderBottomWidth: isLast ? 0 : 1,
     borderBottomColor: "#DBDBDB",
-    paddingBottom: 12,
-    marginBottom: 15
+    paddingBottom: 9,
+    marginBottom: 9
   };
 };
 
 export default function ArticleList({ articles }) {
   const cards = articles.map((props, i) =>
-    <View style={rowStyle(i === articles.length - 1)}>
-      <Card {...props} key={`articlelist-article-${i}`} />
+    <View
+      style={rowStyle(i === articles.length - 1)}
+      key={`articlelist-article-${i}`}
+    >
+      <Card {...props} />
     </View>
   );
   return <View>{cards}</View>;
