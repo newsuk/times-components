@@ -8,4 +8,3 @@ it("renders correctly", () => {
 
   expect(tree).toBeTruthy();
 });
-
