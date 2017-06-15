@@ -1,23 +1,20 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { requireNativeComponent } from 'react-native';
 
-export default class BrightcoveVideo extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>
-          Author Bios!
-        </Text>
-      </View>
-    );
-  }
+class Brightcove extends Component {
+    render () {
+        const height = this.props.height || '100%';
+        const width = this.props.width || '100%';
+
+        return (<RNTBrightcove
+            style={{height, width}}
+            policyId='BCpkADawqM1W-vUOMe6RSA3pA6Vw-VWUNn5rL0lzQabvrI63-VjS93gVUugDlmBpHIxP16X8TSe5LSKM415UHeMBmxl7pqcwVY_AZ4yKFwIpZPvXE34TpXEYYcmulxJQAOvHbv2dpfq-S_cm'
+            accountId={this.props.accountId}
+            videoId={this.props.videoId} />
+        );
+    }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#F5EFEB"
-  }
-});
+const RNTBrightcove = requireNativeComponent('RNTBrightcove', null);
+
+export default Brightcove;
