@@ -3,46 +3,56 @@ import { StyleSheet, Text, View, Dimensions } from "react-native";
 import ArticleSummary from "@newsint/article-summary";
 import Image from "@newsint/image";
 
-const styles = StyleSheet.create({
+const horizontalBreakpoint = 500;
+
+const getStyles = isHorizontal => ({
   container: {
     flex: 1,
-    flexDirection: "row"
+    flexDirection: isHorizontal ? "row" : "column"
   },
   imageContainer: {
-    width: "40%",
-    paddingRight: 17
-  },
-  image: {
-    paddingRight: 5
+    width: isHorizontal ? "40%" : "100%",
+    paddingRight: isHorizontal ? 17 : 0
   },
   summaryContainer: {
-    paddingRight: "8%",
-    width: "60%"
+    paddingRight: isHorizontal ? "8%" : 0,
+    width: isHorizontal ? "60%" : "100%"
   }
 });
 
-export default function Card({
-  label,
-  headline,
-  text,
-  date,
-  publication,
-  image
-}) {
-  return (
-    <View style={styles.container}>
-      <View style={styles.imageContainer}>
-        <Image source={image} style={styles.image} />
+export default class Card extends React.Component {
+  constructor(...args) {
+    super(...args);
+    this.handleLayout = this.handleLayout.bind(this);
+    this.state = {
+      isHorizontal: false
+    };
+  }
+  handleLayout(event) {
+    const width = event.nativeEvent.layout.width;
+    const isHorizontal = width > horizontalBreakpoint;
+    if (isHorizontal !== this.state.isHorizontal) {
+      this.setState({ isHorizontal });
+    }
+  }
+  render() {
+    const { label, headline, text, date, publication, image } = this.props;
+    const styles = getStyles(this.state.isHorizontal);
+    return (
+      <View onLayout={this.handleLayout} style={styles.container}>
+        <View style={styles.imageContainer}>
+          <Image source={image} />
+        </View>
+        <View style={styles.summaryContainer}>
+          <ArticleSummary
+            label={label}
+            headline={headline}
+            text={text}
+            date={date}
+            publication={publication}
+          />
+        </View>
       </View>
-      <View style={styles.summaryContainer}>
-        <ArticleSummary
-          label={label}
-          headline={headline}
-          text={text}
-          date={date}
-          publication={publication}
-        />
-      </View>
-    </View>
-  );
+    );
+  }
 }
