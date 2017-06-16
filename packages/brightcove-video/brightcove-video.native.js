@@ -8,7 +8,7 @@ class BrightcoveVideo extends Component {
 
         return (<RNTBrightcove
             style={{height, width}}
-            policyId='BCpkADawqM1W-vUOMe6RSA3pA6Vw-VWUNn5rL0lzQabvrI63-VjS93gVUugDlmBpHIxP16X8TSe5LSKM415UHeMBmxl7pqcwVY_AZ4yKFwIpZPvXE34TpXEYYcmulxJQAOvHbv2dpfq-S_cm'
+            policyId={this.props.policyId}
             accountId={this.props.accountId}
             videoId={this.props.videoId} />
         );
