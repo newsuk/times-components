@@ -74,6 +74,14 @@ class Brightcove extends Component {
       "className": "video-js"
     };
 
+    if (this.props.height) {
+      height = this.props.height + 'px';
+    }
+
+    if (this.props.width) {
+      width = this.props.width + 'px';
+    }
+
     return (
       <View style={styles.outerContainer}>
         <View style={styles.innerContainer}>
@@ -98,8 +106,8 @@ Brightcove.defaultProps = {
   video_id: "5464373931001",
   player_id: "default",
   paidOnly: false,
-  width: "100%",
-  height: "100%"
+  width: 800,
+  height: 450
 };
 
 Brightcove.propTypes = {
@@ -107,8 +115,8 @@ Brightcove.propTypes = {
   video_id: PropTypes.string.isRequired,
   player_id: PropTypes.string,
   paidOnly: PropTypes.bool,
-  width: PropTypes.string,
-  height: PropTypes.string
+  width: PropTypes.number,
+  height: PropTypes.number
 };
 
 export default Brightcove;
