@@ -12,7 +12,7 @@ It's been developed almost solely on MacOS so there may be issues elsewhere
 ## Getting Started
 
 1. Install `yarn` with `npm i yarn -g` or `brew install yarn`
-2. Run `yarn install`
+2. Run `yarn`
 3. components can be seen running in a storybook:
   * web storybook
     1. `yarn run storybook`
