@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, Dimensions } from "react-native";
+import { Text, View, Dimensions } from "react-native";
 import ArticleSummary from "@newsint/article-summary";
 import Image from "@newsint/image";
 
