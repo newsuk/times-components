@@ -1,5 +1,5 @@
 {
-  "name": "@newsint/article-summary",
+  "name": "@times-components/article-summary",
   "version": "0.0.1",
   "main": "article-summary.js",
   "scripts": {
