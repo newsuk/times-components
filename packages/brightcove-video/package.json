@@ -39,6 +39,7 @@
     "jest": "20.0.4",
     "react-native": "0.44.2",
     "react-test-renderer": "15.5.4",
+    "react-load-script": "0.0.4",
     "webpack": "2.6.1"
   },
   "dependencies": {
