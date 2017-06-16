@@ -11,8 +11,9 @@ It's been developed almost solely on MacOS so there may be issues elsewhere
 
 ## Getting Started
 
-1. `yarn` to install the dependencies
-2. components can be seen running in a storybook:
+1. Install `yarn`
+2. Run `yarn install`
+3. components can be seen running in a storybook:
   * web storybook
     1. `yarn run storybook`
     2. go to http://localhost:9001
