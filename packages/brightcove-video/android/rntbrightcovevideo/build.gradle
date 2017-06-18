@@ -9,17 +9,13 @@ android {
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
 
     buildTypes {
-
         debug {
             manifestPlaceholders = [excludeSystemAlertWindowPermission: "false"]
         }
-
         release {
             manifestPlaceholders = [excludeSystemAlertWindowPermission: "true"]
             minifyEnabled false
