@@ -1,7 +1,6 @@
-package com.tnluicomponents;
+package uk.co.news.rntbrightcovevideo;
 
 import android.support.annotation.Nullable;
-import android.util.Log;
 
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;

@@ -1,6 +1,4 @@
-package com.tnluicomponents;
-
-import android.util.Log;
+package uk.co.news.rntbrightcovevideo;
 
 import com.brightcove.player.edge.Catalog;
 import com.brightcove.player.edge.VideoListener;
