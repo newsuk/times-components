@@ -25,11 +25,11 @@ class Brightcove extends Component {
     super(props);
     this.state = {
       scriptLoaded: false
-    }
+    };
   }
 
   componentDidMount() {
-    console.log('componentDidMount');
+    console.log("componentDidMount");
   }
 
   handleScriptLoad() {
@@ -39,14 +39,14 @@ class Brightcove extends Component {
   }
 
   mountVideoPlayer() {
-    this._player = videojs(this.getVideoElement());
+    this._player = videojs(this.getVideoElementId());
   }
 
   getVideoPlayer() {
     return this._player;
   }
 
-  getVideoElement() {
+  getVideoElementId() {
     return `${this.props.video_id}-${this.props.account_id}`;
   }
 
@@ -62,39 +62,43 @@ class Brightcove extends Component {
     this._player.currentTime(0).play();
   }
 
-  render () {
-    const scriptUrl = `//players.brightcove.net/${this.props.account_id}/${this.props.player_id}_default/index.min.js`;
+  render() {
+    const scriptUrl = `//players.brightcove.net/${this.props.account_id}/${this
+      .props.player_id}_default/index.min.js`;
 
     const attribs = {
-      id: this.getVideoElement(),
+      id: this.getVideoElementId(),
       "data-embed": "default",
       "data-video-id": this.props.video_id,
       "data-account": this.props.account_id,
       "data-player": this.props.player_id,
-      "className": "video-js"
+      className: "video-js"
     };
 
     if (this.props.height) {
-      height = this.props.height + 'px';
+      height = this.props.height + "px";
     }
 
     if (this.props.width) {
-      width = this.props.width + 'px';
+      width = this.props.width + "px";
     }
 
     return (
       <View style={styles.outerContainer}>
         <View style={styles.innerContainer}>
           <video
-            style={{width: this.props.width, height: this.props.height, position: "absolute", top: "0", left: "0"}}
+            style={{
+              width: this.props.width,
+              height: this.props.height,
+              position: "absolute",
+              top: "0",
+              left: "0"
+            }}
             {...attribs}
             data-application-id
-            controls>
-          </video>
-          <Script
-            url={scriptUrl}
-            onLoad={this.handleScriptLoad.bind(this)}
+            controls
           />
+          <Script url={scriptUrl} onLoad={this.handleScriptLoad.bind(this)} />
         </View>
       </View>
     );
