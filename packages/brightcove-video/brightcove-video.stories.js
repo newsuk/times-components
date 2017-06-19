@@ -60,8 +60,8 @@ storiesOf("BrightcoveVideo", module)
   .add("default", () =>
     <BrightcoveVideo
       policyId="BCpkADawqM1W-vUOMe6RSA3pA6Vw-VWUNn5rL0lzQabvrI63-VjS93gVUugDlmBpHIxP16X8TSe5LSKM415UHeMBmxl7pqcwVY_AZ4yKFwIpZPvXE34TpXEYYcmulxJQAOvHbv2dpfq-S_cm"
-      videoId="3666678807001"
-      accountId="3636334163001"
+      videoId="5464373931001"
+      accountId="5436121857001"
     />
   )
   .add("big", () =>
