@@ -68,7 +68,6 @@
     "pre-commit": "1.2.2",
     "react-native-web": "0.0.97",
     "sort-pkg": "1.1.0",
-    "subcommander": "1.0.0",
-    "videojs": "^1.0.0"
+    "subcommander": "1.0.0"
   }
 }
