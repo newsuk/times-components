@@ -3636,6 +3636,10 @@ react-dom@15.5.4:
     object-assign "^4.1.0"
     prop-types "~15.5.7"
 
+react-load-script@0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/react-load-script/-/react-load-script-0.0.4.tgz#54175cb9037e3f21b979c858dbd25cbad4eb1139"
+
 react-native-web@0.0.96:
   version "0.0.96"
   resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.0.96.tgz#77446f6f32f94c8d057b5dad1a5a3df7b3d789fc"
