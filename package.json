@@ -17,8 +17,10 @@
     "prettier:diff": "prettier --list-different 'packages/*/*.js'",
     "packages:publish": "lerna publish --conventional-commits",
     "update-deps": "lerna bootstrap --npm-client=yarn --concurrency=1",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
     "postinstall": "npm run update-deps"
   },
+  "pre-commit": [ "precommit-msg", "test" ],
   "config": {
     "react-native-storybook-loader": {
       "searchDir": [
@@ -63,6 +65,7 @@
     "handlebars": "4.0.10",
     "lodash": "4.17.4",
     "mkdirp": "^0.5.1",
+    "pre-commit": "1.2.2",
     "react-native-web": "0.0.97",
     "sort-pkg": "1.1.0",
     "subcommander": "1.0.0"
