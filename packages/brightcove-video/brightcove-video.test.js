@@ -1,6 +1,6 @@
 import "react-native";
 import React from "react";
-import BrightcoveVideo from "./BrightcoveVideo";
+import BrightcoveVideo from "./brightcove-video";
 import renderer from "react-test-renderer";
 
 it("renders correctly", () => {
