@@ -3,6 +3,11 @@ import { View, TouchableOpacity, Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import BrightcoveVideo from "./brightcove-video";
 
+const policyId =
+  "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U";
+const accountId = "57838016001";
+const videoId = "4084164751001";
+
 class VideoAddTest extends Component {
   constructor(props) {
     super(props);
@@ -20,9 +25,9 @@ class VideoAddTest extends Component {
           key={i}
           width={300}
           height={200}
-          policyId="BCpkADawqM1W-vUOMe6RSA3pA6Vw-VWUNn5rL0lzQabvrI63-VjS93gVUugDlmBpHIxP16X8TSe5LSKM415UHeMBmxl7pqcwVY_AZ4yKFwIpZPvXE34TpXEYYcmulxJQAOvHbv2dpfq-S_cm"
-          videoId="3666678807001"
-          accountId="3636334163001"
+          policyId={policyId}
+          videoId={videoId}
+          accountId={accountId}
         />
       );
 
@@ -59,18 +64,18 @@ class VideoAddTest extends Component {
 storiesOf("BrightcoveVideo", module)
   .add("default", () =>
     <BrightcoveVideo
-      policyId="BCpkADawqM1W-vUOMe6RSA3pA6Vw-VWUNn5rL0lzQabvrI63-VjS93gVUugDlmBpHIxP16X8TSe5LSKM415UHeMBmxl7pqcwVY_AZ4yKFwIpZPvXE34TpXEYYcmulxJQAOvHbv2dpfq-S_cm"
-      videoId="3666678807001"
-      accountId="3636334163001"
+      policyId={policyId}
+      videoId={videoId}
+      accountId={accountId}
     />
   )
   .add("big", () =>
     <BrightcoveVideo
       width={800}
       height={600}
-      policyId="BCpkADawqM1W-vUOMe6RSA3pA6Vw-VWUNn5rL0lzQabvrI63-VjS93gVUugDlmBpHIxP16X8TSe5LSKM415UHeMBmxl7pqcwVY_AZ4yKFwIpZPvXE34TpXEYYcmulxJQAOvHbv2dpfq-S_cm"
-      videoId="3666678807001"
-      accountId="3636334163001"
+      policyId={policyId}
+      videoId={videoId}
+      accountId={accountId}
     />
   )
   .add("two videos", () =>
@@ -78,16 +83,16 @@ storiesOf("BrightcoveVideo", module)
       <BrightcoveVideo
         width={300}
         height={200}
-        policyId="BCpkADawqM1W-vUOMe6RSA3pA6Vw-VWUNn5rL0lzQabvrI63-VjS93gVUugDlmBpHIxP16X8TSe5LSKM415UHeMBmxl7pqcwVY_AZ4yKFwIpZPvXE34TpXEYYcmulxJQAOvHbv2dpfq-S_cm"
-        videoId="3666678807001"
-        accountId="3636334163001"
+        policyId={policyId}
+        videoId={videoId}
+        accountId={accountId}
       />
       <BrightcoveVideo
         width={320}
         height={200}
-        policyId="BCpkADawqM1W-vUOMe6RSA3pA6Vw-VWUNn5rL0lzQabvrI63-VjS93gVUugDlmBpHIxP16X8TSe5LSKM415UHeMBmxl7pqcwVY_AZ4yKFwIpZPvXE34TpXEYYcmulxJQAOvHbv2dpfq-S_cm"
-        videoId="3666678807001"
-        accountId="3636334163001"
+        policyId={policyId}
+        videoId={videoId}
+        accountId={accountId}
       />
     </View>
   )
