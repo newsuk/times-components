@@ -6,5 +6,5 @@ import renderer from "react-test-renderer";
 it("renders correctly", () => {
   const tree = renderer.create(<Author />).toJSON();
 
-  expect(tree).toBeInstanceOf(Object);
+  expect(tree).toBeTruthy();
 });
