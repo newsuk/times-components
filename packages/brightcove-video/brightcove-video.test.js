@@ -6,5 +6,5 @@ import renderer from "react-test-renderer";
 it("renders correctly", () => {
   const tree = renderer.create(<BrightcoveVideo />).toJSON();
 
-  expect(tree).to.exist;
+  expect(tree).toBeTruthy();
 });
