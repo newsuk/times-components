@@ -39,8 +39,8 @@ describe("brightcove-video native component", () => {
       )
       .toJSON();
 
-    expect(tree.props["policyId"]).toBe("[POLICY_ID]");
-    expect(tree.props["videoId"]).toBe("[VIDEO_ID]");
-    expect(tree.props["accountId"]).toBe("[ACCOUNT_ID]");
+    expect(tree.props.policyId).toBe("[POLICY_ID]");
+    expect(tree.props.videoId).toBe("[VIDEO_ID]");
+    expect(tree.props.accountId).toBe("[ACCOUNT_ID]");
   });
 });
