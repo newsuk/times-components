@@ -3,7 +3,6 @@ import { View } from "react-native";
 
 class BrightcoveVideo extends Component {
   componentDidMount() {
-    // add and execute the player script tag
     const s = document.createElement("script");
     s.src = `//players.brightcove.net/${this.props
       .accountId}/default_default/index.min.js`;
@@ -22,8 +21,8 @@ class BrightcoveVideo extends Component {
           data-video-id={this.props.videoId}
           data-account={this.props.accountId}
           data-player="default"
-          className="video-js"
           data-application-id
+          className="video-js"
           controls
         />
       </View>
