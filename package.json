@@ -14,7 +14,7 @@
     "storybook-native": "storybook -c .storybook.native start -p 7007",
     "storybook:build": "build-storybook -c .storybook",
     "storybook:publish": "./lib/publish_storybook.sh",
-    "prettier:diff": "prettier --list-different 'packages/**/*.js'",
+    "prettier:diff": "prettier --list-different 'packages/*/*.js'",
     "packages:publish": "lerna publish --conventional-commits",
     "update-deps": "lerna bootstrap --npm-client=yarn --concurrency=1",
     "postinstall": "npm run update-deps"
