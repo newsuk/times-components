@@ -7,4 +7,5 @@ it("renders correctly", () => {
   const tree = renderer.create(<BrightcoveVideo />).toJSON();
 
   expect(tree).toBeTruthy();
+  expect(tree.type).toBe("RNTBrightcove");
 });
