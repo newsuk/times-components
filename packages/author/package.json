@@ -1,5 +1,5 @@
 {
-  "name": "@newsint/author",
+  "name": "@timescomponents/author",
   "version": "0.0.1",
   "main": "author.js",
   "scripts": {
@@ -44,10 +44,5 @@
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",
     "react-native-web": "0.0.96"
-  },
-  "_timesComponentsCliVariables": {
-    "component": "author",
-    "packageDescription": "Author component",
-    "packageName": "author"
   }
 }
