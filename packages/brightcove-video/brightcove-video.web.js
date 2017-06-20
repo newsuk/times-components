@@ -10,13 +10,14 @@ class BrightcoveVideo extends Component {
   }
 
   render() {
-    const width = this.props.width || 150;
-    const height = this.props.height || 100;
+    const width = this.props.width || 320;
+    const height = this.props.height || 180;
 
     return (
-      <View style={{ width, height }}>
+      <View width="100%" height="100%">
         <video
-          style={{ width: "100%", height: "100%" }}
+          width={width}
+          height={height}
           data-embed="default"
           data-video-id={this.props.videoId}
           data-account={this.props.accountId}

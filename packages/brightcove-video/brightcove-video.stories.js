@@ -62,14 +62,14 @@ class VideoAddTest extends Component {
 }
 
 storiesOf("BrightcoveVideo", module)
-  .add("default", () =>
+  .add("Default values", () =>
     <BrightcoveVideo
       policyId={policyId}
       videoId={videoId}
       accountId={accountId}
     />
   )
-  .add("big", () =>
+  .add("Large player", () =>
     <BrightcoveVideo
       width={800}
       height={600}
@@ -78,7 +78,7 @@ storiesOf("BrightcoveVideo", module)
       accountId={accountId}
     />
   )
-  .add("two videos", () =>
+  .add("Two players", () =>
     <View>
       <BrightcoveVideo
         width={300}
@@ -96,4 +96,4 @@ storiesOf("BrightcoveVideo", module)
       />
     </View>
   )
-  .add("click to add", () => <VideoAddTest />);
+  .add("Lazy load players", () => <VideoAddTest />);
