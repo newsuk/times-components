@@ -21,8 +21,8 @@ class VideoAddTest extends Component {
           width={300}
           height={200}
           policyId="BCpkADawqM1W-vUOMe6RSA3pA6Vw-VWUNn5rL0lzQabvrI63-VjS93gVUugDlmBpHIxP16X8TSe5LSKM415UHeMBmxl7pqcwVY_AZ4yKFwIpZPvXE34TpXEYYcmulxJQAOvHbv2dpfq-S_cm"
-          videoId="5464373931001"
-          accountId="5436121857001"
+          videoId="3666678807001"
+          accountId="3636334163001"
         />
       );
 
@@ -60,8 +60,8 @@ storiesOf("BrightcoveVideo", module)
   .add("default", () =>
     <BrightcoveVideo
       policyId="BCpkADawqM1W-vUOMe6RSA3pA6Vw-VWUNn5rL0lzQabvrI63-VjS93gVUugDlmBpHIxP16X8TSe5LSKM415UHeMBmxl7pqcwVY_AZ4yKFwIpZPvXE34TpXEYYcmulxJQAOvHbv2dpfq-S_cm"
-      videoId="5464373931001"
-      accountId="5436121857001"
+      videoId="3666678807001"
+      accountId="3636334163001"
     />
   )
   .add("big", () =>
@@ -69,8 +69,8 @@ storiesOf("BrightcoveVideo", module)
       width={800}
       height={600}
       policyId="BCpkADawqM1W-vUOMe6RSA3pA6Vw-VWUNn5rL0lzQabvrI63-VjS93gVUugDlmBpHIxP16X8TSe5LSKM415UHeMBmxl7pqcwVY_AZ4yKFwIpZPvXE34TpXEYYcmulxJQAOvHbv2dpfq-S_cm"
-      videoId="5464373931001"
-      accountId="5436121857001"
+      videoId="3666678807001"
+      accountId="3636334163001"
     />
   )
   .add("two videos", () =>
@@ -79,15 +79,15 @@ storiesOf("BrightcoveVideo", module)
         width={300}
         height={200}
         policyId="BCpkADawqM1W-vUOMe6RSA3pA6Vw-VWUNn5rL0lzQabvrI63-VjS93gVUugDlmBpHIxP16X8TSe5LSKM415UHeMBmxl7pqcwVY_AZ4yKFwIpZPvXE34TpXEYYcmulxJQAOvHbv2dpfq-S_cm"
-        videoId="5464373931001"
-        accountId="5436121857001"
+        videoId="3666678807001"
+        accountId="3636334163001"
       />
       <BrightcoveVideo
         width={320}
         height={200}
         policyId="BCpkADawqM1W-vUOMe6RSA3pA6Vw-VWUNn5rL0lzQabvrI63-VjS93gVUugDlmBpHIxP16X8TSe5LSKM415UHeMBmxl7pqcwVY_AZ4yKFwIpZPvXE34TpXEYYcmulxJQAOvHbv2dpfq-S_cm"
-        videoId="5464373931001"
-        accountId="5436121857001"
+        videoId="3666678807001"
+        accountId="3636334163001"
       />
     </View>
   )
