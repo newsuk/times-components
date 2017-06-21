@@ -1,4 +1,4 @@
-import "react-native";
+import { View } from "react-native";
 import React from "react";
 import BrightcoveVideo from "../brightcove-video.web";
 import renderer from "react-test-renderer";
@@ -12,6 +12,7 @@ describe("brightcove-video web component", () => {
 
     global.document = {
       createElement: () => dummyElem,
+      getElementById: () => dummyElem,
       body: {
         appendChild: appendChildMock
       }
@@ -19,6 +20,9 @@ describe("brightcove-video web component", () => {
   });
 
   afterEach(() => {
+    window.bc = undefined;
+    window.videojs = undefined;
+    BrightcoveVideo.hasLoadedScript = false;
     delete global.document;
   });
 
@@ -26,8 +30,8 @@ describe("brightcove-video web component", () => {
     const tree = renderer.create(<BrightcoveVideo />).toJSON();
 
     expect(tree).toBeTruthy();
-    expect(tree.type).toBe("View");
-    expect(tree.children.length).toBe(1);
+    expect(tree.type).toBe("video");
+    expect(tree.children).toBe(null);
   });
 
   it("appends script tag to body", () => {
@@ -37,11 +41,11 @@ describe("brightcove-video web component", () => {
     expect(appendChildMock.mock.calls[0][0]).toBe(dummyElem);
   });
 
-  it("width x height default to 150 x 100", () => {
+  it("width x height default to 320 x 180", () => {
     const tree = renderer.create(<BrightcoveVideo />).toJSON();
 
-    expect(tree.props.style.width).toBe(150);
-    expect(tree.props.style.height).toBe(100);
+    expect(tree.props.width).toBe(320);
+    expect(tree.props.height).toBe(180);
   });
 
   it("width x height can be overridden", () => {
@@ -49,8 +53,8 @@ describe("brightcove-video web component", () => {
       .create(<BrightcoveVideo height={400} width={600} />)
       .toJSON();
 
-    expect(tree.props.style.width).toBe(600);
-    expect(tree.props.style.height).toBe(400);
+    expect(tree.props.width).toBe(600);
+    expect(tree.props.height).toBe(400);
   });
 
   it("generates the correct script link", () => {
@@ -68,7 +72,34 @@ describe("brightcove-video web component", () => {
       .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
       .toJSON();
 
-    expect(tree.children[0].props["data-video-id"]).toBe("[VIDEO_ID]");
-    expect(tree.children[0].props["data-account"]).toBe("[ACCOUNT_ID]");
+    expect(tree.props["data-video-id"]).toBe("[VIDEO_ID]");
+    expect(tree.props["data-account"]).toBe("[ACCOUNT_ID]");
+  });
+
+  it("does not attempt to initialise the brightcove player before the script has loaded", () => {
+    const videos = () =>
+      renderer.create(
+        <View>
+          <BrightcoveVideo accountId="[ACCOUNT_ID1]" videoId="[VIDEO_ID1]" />
+          <BrightcoveVideo accountId="[ACCOUNT_ID2]" videoId="[VIDEO_ID2]" />
+        </View>
+      );
+
+    expect(videos).not.toThrow();
+  });
+
+  it("uses the initialise function once the script has loaded", () => {
+    window.bc = jest.fn();
+    window.videojs = jest.fn();
+
+    const videos = renderer.create(
+      <View>
+        <BrightcoveVideo accountId="[ACCOUNT_ID1]" videoId="[VIDEO_ID1]" />
+        <BrightcoveVideo accountId="[ACCOUNT_ID1]" videoId="[VIDEO_ID1]" />
+      </View>
+    );
+
+    expect(window.bc.mock.calls).toHaveLength(1);
+    expect(window.videojs.mock.calls).toHaveLength(1);
   });
 });

@@ -1,21 +1,20 @@
 import React, { Component } from "react";
 import { View } from "react-native";
 
-let id = 0,
-  hasLoadedScript = false;
+let index = 0;
 
 class BrightcoveVideo extends Component {
   componentDidMount() {
-    if (!hasLoadedScript) {
+    if (!BrightcoveVideo.hasLoadedScript) {
       const s = document.createElement("script");
-      hasLoadedScript = true;
+      BrightcoveVideo.hasLoadedScript = true;
 
       s.src = `//players.brightcove.net/${this.props
         .accountId}/default_default/index.min.js`;
       document.body.appendChild(s);
-    } else {
-      this.init();
+      return;
     }
+    this.init();
   }
 
   init() {
@@ -26,27 +25,31 @@ class BrightcoveVideo extends Component {
   }
 
   render() {
-    const width = this.props.width || 320;
-    const height = this.props.height || 180;
-    this.id = `_${id++}`;
+    this.id = `${this.props.videoId}-${this.props.accountId}-${index}`;
+    index++;
 
     return (
-      <View width="100%" height="100%">
-        <video
-          id={this.id}
-          width={width}
-          height={height}
-          data-embed="default"
-          data-video-id={this.props.videoId}
-          data-account={this.props.accountId}
-          data-player="default"
-          data-application-id
-          className="video-js"
-          controls
-        />
-      </View>
+      <video
+        id={this.id}
+        width={this.props.width}
+        height={this.props.height}
+        data-embed="default"
+        data-video-id={this.props.videoId}
+        data-account={this.props.accountId}
+        data-player="default"
+        data-application-id
+        className="video-js"
+        controls
+      />
     );
   }
 }
+
+BrightcoveVideo.defaultProps = {
+  width: 320,
+  height: 180
+};
+
+BrightcoveVideo.hasLoadedScript = false;
 
 export default BrightcoveVideo;
