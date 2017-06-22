@@ -16,7 +16,7 @@
     "storybook:publish": "./lib/publish_storybook.sh",
     "prettier:diff": "prettier --list-different 'packages/*/*.js'",
     "packages:publish": "lerna publish --conventional-commits",
-    "update-deps": "lerna bootstrap --npm-client=yarn --concurrency=1",
+    "update-deps": "lerna bootstrap --hoisting --npm-client=yarn --concurrency=1",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
     "postinstall": "npm run update-deps --silent"
   },
@@ -54,7 +54,7 @@
     "prettier": "1.4.2",
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",
-    "react-native": "0.44.1",
+    "react-native": "0.44.2",
     "react-native-storybook-loader": "1.3.1",
     "rimraf": "^2.6.1",
     "url": "0.11.0"
