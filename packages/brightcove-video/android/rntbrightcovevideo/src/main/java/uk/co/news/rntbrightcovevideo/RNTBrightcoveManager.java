@@ -9,12 +9,7 @@ import com.facebook.react.uimanager.annotations.ReactProp;
 
 public class RNTBrightcoveManager extends SimpleViewManager<RNTBrightcoveView> {
   public static final String REACT_CLASS = "RNTBrightcove";
-  private final @Nullable Object mCallerContext;
   private RNTBrightcoveView mView;
-
-  public RNTBrightcoveManager(Object callerContext) {
-    mCallerContext = callerContext;
-  }
 
   @Override
   public String getName() {
@@ -40,9 +35,5 @@ public class RNTBrightcoveManager extends SimpleViewManager<RNTBrightcoveView> {
   public RNTBrightcoveView createViewInstance(ThemedReactContext context) {
     mView = new RNTBrightcoveView(context);
     return mView;
-  }
-
-  public Object getCallerContext() {
-    return mCallerContext;
   }
 }
