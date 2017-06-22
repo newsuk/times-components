@@ -7,28 +7,30 @@ import GPT from "./gpt.web";
 
 class Wrapper extends Component {
 
+  constructor (props) {
+    super(props);
+    this.adManager = new AdManager({
+      networkId: '25436805',
+      adUnit: 'd.thetimes.co.uk',
+      section: 'home'
+    });
+  }
+
   componentDidMount () {
-    console.log('Component did mount wrapper')
-    this.props.adManager.init(() => {
-      this.props.adManager.display();
+    this.adManager.init(() => {
+      this.adManager.display();
     });
   }
 
   render() {
     return (
       <div>
-        <GPT code='ad-header' adManager={this.props.adManager} />
+        <GPT adManager={this.adManager} code='ad-header' />
       </div>
     );
   }
 }
 
 storiesOf("GPT", module).add("GPT", () => {
-  const adManager = new AdManager({
-    networkId: '25436805',
-    adUnit: 'd.thetimes.co.uk',
-    section: 'article'
-  });
-
-  return (<Wrapper adManager={adManager} />);
+  return (<Wrapper />);
 });

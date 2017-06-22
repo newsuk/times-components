@@ -67,7 +67,7 @@ AdManager.prototype.display = function display (callback) {
       console.log('refresh')
       pbjsManager.pbjs.setTargetingForGPTAsync();
       gptManager.googletag.pubads().refresh();
-      return callback();
+      if(callback) callback();
     });
   });
 };
@@ -79,7 +79,6 @@ AdManager.prototype._pushAdToGPT = function pushAdToGPT (adSlotId, sizingMap, op
 
   gptManager.googletag.cmd.push(() => {
     const slot = this._createSlot(adSlotId, this.section);
-    console.log('Slot', slot)
     slot.addService(gptManager.googletag.pubads());
     slot.defineSizeMapping(this._generateSizings(sizingMap));
 
@@ -90,6 +89,8 @@ AdManager.prototype._pushAdToGPT = function pushAdToGPT (adSlotId, sizingMap, op
 
     // Display the ad
     gptManager.googletag.display(adSlotId);
+console.log('Display slot', slot)
+console.log('Sizing map', sizingMap)
   });
 };
 
