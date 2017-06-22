@@ -1,24 +1,26 @@
 import React from "react";
-import { Text, View, Dimensions } from "react-native";
+import { Text, View, StyleSheet, Dimensions } from "react-native";
 import ArticleSummary from "@times-components/article-summary";
 import Image from "@times-components/image";
 
 const horizontalBreakpoint = 500;
 
-const getStyles = isHorizontal => ({
-  container: {
-    flex: 1,
-    flexDirection: isHorizontal ? "row" : "column"
-  },
-  imageContainer: {
-    width: isHorizontal ? "40%" : "100%",
-    paddingRight: isHorizontal ? 17 : 0
-  },
-  summaryContainer: {
-    paddingRight: isHorizontal ? "8%" : 0,
-    width: isHorizontal ? "60%" : "100%"
-  }
-});
+const getStyles = isHorizontal => {
+  return StyleSheet.create({
+    container: {
+      flex: 1,
+      flexDirection: isHorizontal ? "row" : "column"
+    },
+    imageContainer: {
+      width: isHorizontal ? "40%" : "100%",
+      paddingRight: isHorizontal ? 17 : 0
+    },
+    summaryContainer: {
+      paddingRight: isHorizontal ? "8%" : 0,
+      width: isHorizontal ? "60%" : "100%"
+    }
+  })
+};
 
 export default class Card extends React.Component {
   constructor(...args) {
