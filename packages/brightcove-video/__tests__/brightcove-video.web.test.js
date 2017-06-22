@@ -30,8 +30,8 @@ describe("brightcove-video web component", () => {
     const tree = renderer.create(<BrightcoveVideo />).toJSON();
 
     expect(tree).toBeTruthy();
-    expect(tree.type).toBe("video");
-    expect(tree.children).toBe(null);
+    expect(tree.type).toBe("View");
+    expect(tree.children[0].type).toBe("video");
   });
 
   it("appends script tag to body", () => {
@@ -44,8 +44,8 @@ describe("brightcove-video web component", () => {
   it("width x height default to 320 x 180", () => {
     const tree = renderer.create(<BrightcoveVideo />).toJSON();
 
-    expect(tree.props.width).toBe(320);
-    expect(tree.props.height).toBe(180);
+    expect(tree.children[0].props.width).toBe(320);
+    expect(tree.children[0].props.height).toBe(180);
   });
 
   it("width x height can be overridden", () => {
@@ -53,8 +53,8 @@ describe("brightcove-video web component", () => {
       .create(<BrightcoveVideo height={400} width={600} />)
       .toJSON();
 
-    expect(tree.props.width).toBe(600);
-    expect(tree.props.height).toBe(400);
+    expect(tree.children[0].props.width).toBe(600);
+    expect(tree.children[0].props.height).toBe(400);
   });
 
   it("generates the correct script link", () => {
@@ -72,8 +72,8 @@ describe("brightcove-video web component", () => {
       .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
       .toJSON();
 
-    expect(tree.props["data-video-id"]).toBe("[VIDEO_ID]");
-    expect(tree.props["data-account"]).toBe("[ACCOUNT_ID]");
+    expect(tree.children[0].props["data-video-id"]).toBe("[VIDEO_ID]");
+    expect(tree.children[0].props["data-account"]).toBe("[ACCOUNT_ID]");
   });
 
   it("does not attempt to initialise the brightcove player before the script has loaded", () => {

@@ -29,18 +29,20 @@ class BrightcoveVideo extends Component {
     index++;
 
     return (
-      <video
-        id={this.id}
-        width={this.props.width}
-        height={this.props.height}
-        data-embed="default"
-        data-video-id={this.props.videoId}
-        data-account={this.props.accountId}
-        data-player="default"
-        data-application-id
-        className="video-js"
-        controls
-      />
+      <View>
+        <video
+          id={this.id}
+          width={this.props.width}
+          height={this.props.height}
+          data-embed="default"
+          data-video-id={this.props.videoId}
+          data-account={this.props.accountId}
+          data-player="default"
+          data-application-id
+          className="video-js"
+          controls
+        />
+      </View>
     );
   }
 }
