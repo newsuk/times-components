@@ -8,3 +8,9 @@ it("renders correctly", () => {
 
   expect(tree).toBeTruthy();
 });
+
+it('renders a snapshot', () => {
+  const tree = renderer.create(<Card/>).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
