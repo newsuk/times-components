@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Image } from "react-native";
-import merge from "lodash/merge";
+import merge from "lodash.merge";
 
 export default class extends React.Component {
   constructor(...args) {

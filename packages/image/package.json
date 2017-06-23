@@ -1,5 +1,5 @@
 {
-  "name": "@times-components/image",
+  "name": "@timescomponents/image",
   "version": "0.0.1",
   "main": "image.js",
   "scripts": {
@@ -43,6 +43,7 @@
   "dependencies": {
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",
-    "react-native-web": "0.0.96"
+    "react-native-web": "0.0.97",
+    "lodash.merge": "4.6.0"
   }
 }

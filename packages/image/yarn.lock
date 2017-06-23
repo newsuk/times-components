@@ -2873,6 +2873,10 @@ lodash.keys@^3.0.0:
     lodash.isarguments "^3.0.0"
     lodash.isarray "^3.0.0"
 
+lodash.merge@4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.0.tgz#69884ba144ac33fe699737a6086deffadd0f89c5"
+
 lodash.pad@^4.1.0:
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/lodash.pad/-/lodash.pad-4.5.1.tgz#4330949a833a7c8da22cc20f6a26c4d59debba70"
@@ -3620,9 +3624,9 @@ react-dom@15.5.4:
     object-assign "^4.1.0"
     prop-types "~15.5.7"
 
-react-native-web@0.0.96:
-  version "0.0.96"
-  resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.0.96.tgz#77446f6f32f94c8d057b5dad1a5a3df7b3d789fc"
+react-native-web@0.0.97:
+  version "0.0.97"
+  resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.0.97.tgz#80f48c2d69ae0b872c9076828dbee9a51685c6e5"
   dependencies:
     animated "^0.2.0"
     array-find-index "^1.0.2"
