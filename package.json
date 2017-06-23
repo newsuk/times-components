@@ -8,19 +8,31 @@
   },
   "scripts": {
     "native": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "npm run prettier:diff --silent && lerna run test",
+    "test": "jest ./lib && lerna run test",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "prestorybook-native": "node ./node_modules/.bin/rnstl",
     "storybook-native": "storybook -c .storybook.native start -p 7007",
     "storybook:build": "build-storybook -c .storybook",
     "storybook:publish": "./lib/publish_storybook.sh",
     "prettier:diff": "prettier --list-different 'packages/*/*.js'",
+    "prettier:write": "prettier --write 'packages/*/*.js'",
+    "lint-staged": "lint-staged",
     "packages:publish": "lerna publish --conventional-commits",
     "update-deps": "lerna bootstrap --hoist --npm-client=yarn --concurrency=1",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
     "postinstall": "npm run update-deps --silent"
   },
-  "pre-commit": [ "precommit-msg", "test" ],
+  "pre-commit": [
+    "precommit-msg",
+    "lint-staged",
+    "test"
+  ],
+  "lint-staged": {
+    "**/*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "config": {
     "react-native-storybook-loader": {
       "searchDir": [
@@ -51,6 +63,8 @@
     "@storybook/react-native": "3.0.0",
     "jest": "^20.0.4",
     "lerna": "2.0.0-rc.5",
+    "lint-staged": "^4.0.0",
+    "pre-commit": "^1.2.2",
     "prettier": "1.4.2",
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",
@@ -64,9 +78,7 @@
     "dashify": "0.2.2",
     "global": "4.3.2",
     "handlebars": "4.0.10",
-    "lodash": "4.17.4",
     "mkdirp": "^0.5.1",
-    "pre-commit": "1.2.2",
     "sort-pkg": "1.1.0",
     "subcommander": "1.0.0"
   }
