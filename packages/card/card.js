@@ -1,7 +1,7 @@
 import React from "react";
-import { Text, View, StyleSheet, Dimensions } from "react-native";
-import ArticleSummary from "@times-components/article-summary";
-import Image from "@times-components/image";
+import { View, StyleSheet } from "react-native";
+import ArticleSummary from "@timescomponents/article-summary";
+import Image from "@timescomponents/image";
 
 const horizontalBreakpoint = 500;
 
