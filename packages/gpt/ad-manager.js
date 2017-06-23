@@ -98,8 +98,6 @@ AdManager.prototype._pushAdToGPT = function pushAdToGPT(
 
     // Display the ad
     gptManager.googletag.display(adSlotId);
-    console.log("Display slot", slot);
-    console.log("Sizing map", sizingMap);
   });
 };
 

@@ -13,7 +13,7 @@ describe("GptManager", () => {
 
   afterAll(() => {
     delete global.window;
-    delete global.window;
+    delete global.document;
     delete require.cache[require.resolve("./gpt-manager")];
   });
 

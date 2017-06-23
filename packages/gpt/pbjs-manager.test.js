@@ -13,7 +13,7 @@ describe("PrebidManager", () => {
 
   afterAll(() => {
     delete global.window;
-    delete global.window;
+    delete global.document;
     delete require.cache[require.resolve("./pbjs-manager")];
   });
 
