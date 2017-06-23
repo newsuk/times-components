@@ -7,7 +7,7 @@ import pbjsManager from "./pbjs-manager";
 
 function AdManager(options = {}) {
   if (!(this instanceof AdManager)) {
-    return new AdManager();
+    return new AdManager(options);
   }
 
   this.adQueue = [];

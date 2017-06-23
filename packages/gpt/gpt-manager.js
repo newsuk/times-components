@@ -33,7 +33,10 @@ GptManager.prototype.loadScript = function loadScript() {
 };
 
 GptManager.prototype.setConfig = function setConfig(callback) {
-  if (this.isReady()) return callback();
+  if (this.isReady()) {
+    if (callback) return callback();
+    return;
+  }
 
   const googletag = this.googletag;
 
@@ -51,7 +54,7 @@ GptManager.prototype.setConfig = function setConfig(callback) {
     // load ad with slot refresh
     googletag.pubads().disableInitialLoad();
 
-    callback();
+    if (callback) callback();
   });
 };
 
@@ -62,7 +65,7 @@ GptManager.prototype.init = function init(callback) {
     // enable google publisher tag
     this.googletag.enableServices();
     this.initialised = true;
-    callback();
+    if (callback) callback();
   });
 };
 

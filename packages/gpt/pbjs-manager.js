@@ -79,12 +79,11 @@ PbjsManager.prototype.setConfig = function setConfig(callback) {
     }
   };
 
-  callback();
+  if (callback) callback();
 };
 
 PbjsManager.prototype.init = function init(adUnits, callback) {
   this.pbjs.que.push(() => {
-    console.log(adUnits);
     this.pbjs.addAdUnits(adUnits);
 
     this.pbjs.requestBids({
