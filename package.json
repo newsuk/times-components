@@ -78,7 +78,6 @@
     "dashify": "0.2.2",
     "global": "4.3.2",
     "handlebars": "4.0.10",
-    "lodash": "4.17.4",
     "mkdirp": "^0.5.1",
     "sort-pkg": "1.1.0",
     "subcommander": "1.0.0"
