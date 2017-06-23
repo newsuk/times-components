@@ -16,7 +16,7 @@
     "storybook:publish": "./lib/publish_storybook.sh",
     "prettier:diff": "prettier --list-different 'packages/*/*.js'",
     "packages:publish": "lerna publish --conventional-commits",
-    "update-deps": "lerna bootstrap --hoisting --npm-client=yarn --concurrency=1",
+    "update-deps": "lerna bootstrap --hoist --npm-client=yarn --concurrency=1",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
     "postinstall": "npm run update-deps --silent"
   },
