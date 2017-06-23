@@ -21,6 +21,8 @@ class Wrapper extends Component {
   }
 
   render() {
+    // Hack, gpt map sizes don't seem to work inside iframes as such this is a
+    // temporary fix, while waiting for https://github.com/storybooks/storybook/issues/862
     return (
       <div>
         <a
