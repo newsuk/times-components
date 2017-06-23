@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, TouchableOpacity, Text } from "react-native";
-import { storiesOf } from "@storybook/react-native";
+import { storiesOf, action } from "@storybook/react-native";
 import BrightcoveVideo from "./brightcove-video";
 
 const policyId =
@@ -96,4 +96,11 @@ storiesOf("BrightcoveVideo", module)
       />
     </View>
   )
-  .add("Lazy load players", () => <VideoAddTest />);
+  .add("Lazy load players", () => <VideoAddTest />)
+  .add("onplay, onload", () =>
+    <BrightcoveVideo
+      policyId={policyId}
+      videoId={videoId}
+      accountId={accountId}
+    />
+  );

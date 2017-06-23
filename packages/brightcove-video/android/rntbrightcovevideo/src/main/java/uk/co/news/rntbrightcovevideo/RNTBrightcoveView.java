@@ -1,12 +1,21 @@
 package uk.co.news.rntbrightcovevideo;
 
+import android.util.Log;
+
 import com.brightcove.player.edge.Catalog;
 import com.brightcove.player.edge.VideoListener;
+import com.brightcove.player.event.Event;
 import com.brightcove.player.event.EventEmitter;
+import com.brightcove.player.event.EventListener;
+import com.brightcove.player.event.EventType;
 import com.brightcove.player.mediacontroller.BrightcoveMediaController;
 import com.brightcove.player.model.Video;
 import com.brightcove.player.view.BrightcoveExoPlayerVideoView;
+import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.ReactContext;
+import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.uimanager.ThemedReactContext;
+import com.facebook.react.uimanager.events.RCTEventEmitter;
 
 public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
   private String mVideoId, mAccountId, mPolicyId;
@@ -34,6 +43,16 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
   private void initVideo() {
     if (mVideoId != null && mAccountId != null && mPolicyId != null) {
       EventEmitter eventEmitter = getEventEmitter();
+
+      eventEmitter.on(EventType.PLAY, new EventListener() {
+        @Override
+        public void processEvent(Event event) {
+          WritableMap eventA = Arguments.createMap();
+          eventA.putString("Event", "play");
+          ReactContext reactContext = (ReactContext)getContext();
+          reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "playEvent", eventA);
+        }
+      });
 
       Catalog catalog = new Catalog(eventEmitter, mAccountId, mPolicyId);
 
