@@ -1,15 +1,15 @@
-import { bidders, sizes } from './config';
+import { bidders, sizes } from "./config";
 
-const getSizeMaps = (code) => {
+const getSizeMaps = code => {
   switch (code) {
-    case 'ad-header':
+    case "ad-header":
       return sizes.header;
-    case 'ad-pixel':
-    case 'ad-pixelskin':
-    case 'ad-pixelteads':
-    case 'ad-article-sponsored':
+    case "ad-pixel":
+    case "ad-pixelskin":
+    case "ad-pixelteads":
+    case "ad-article-sponsored":
       return sizes.pixel;
-    default :
+    default:
       return sizes.intervention;
   }
 };
@@ -28,14 +28,14 @@ const getSlotConfig = (section, code, width) => {
   const mappings = getSizeMaps(code);
   const bids = [
     {
-      bidder: 'appnexus',
+      bidder: "appnexus",
       params: {
         placementId: bidders.appnexus.placementId,
         section
       }
     },
     {
-      bidder: 'rubicon',
+      bidder: "rubicon",
       params: {
         accountId: bidders.rubicon.accountId,
         siteId: bidders.rubicon.siteId,
@@ -44,7 +44,7 @@ const getSlotConfig = (section, code, width) => {
       }
     },
     {
-      bidder: 'indexExchange',
+      bidder: "indexExchange",
       params: {
         id: code,
         siteID: bidders.indexExchange.siteId
@@ -54,19 +54,19 @@ const getSlotConfig = (section, code, width) => {
 
   adSizes.forEach(size => {
     bids.push({
-      bidder: 'pubmatic',
+      bidder: "pubmatic",
       params: {
         publisherId: bidders.pubmatic.accountId,
-        adSlot: bidders.pubmatic.adSlotPrefix + '@' + size.join('x'),
+        adSlot: bidders.pubmatic.adSlotPrefix + "@" + size.join("x"),
         section
       }
     });
 
     // Criteo
-    const zoneId = bidders.criteo.zoneMap[size.join('x')] || '';
+    const zoneId = bidders.criteo.zoneMap[size.join("x")] || "";
     if (zoneId) {
       bids.push({
-        bidder: 'criteo',
+        bidder: "criteo",
         params: {
           zoneId: zoneId
         }
@@ -82,8 +82,4 @@ const getSlotConfig = (section, code, width) => {
   };
 };
 
-export {
-  getAdSizes,
-  getSizeMaps,
-  getSlotConfig
-};
+export { getAdSizes, getSizeMaps, getSlotConfig };

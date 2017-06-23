@@ -1,5 +1,4 @@
-
-function GptManager () {
+function GptManager() {
   if (!(this instanceof GptManager)) {
     return new GptManager();
   }
@@ -9,11 +8,11 @@ function GptManager () {
   this.googletag = null;
 }
 
-GptManager.prototype.isReady = function isReady () {
+GptManager.prototype.isReady = function isReady() {
   return this.scriptSet && this.initialised;
 };
 
-GptManager.prototype.loadScript = function loadScript () {
+GptManager.prototype.loadScript = function loadScript() {
   // Check if script tag is already set
   if (this.scriptSet) return;
 
@@ -22,18 +21,18 @@ GptManager.prototype.loadScript = function loadScript () {
   window.googletag.cmd = window.googletag.cmd || [];
   this.googletag = window.googletag;
 
-  const gads = document.createElement('script');
+  const gads = document.createElement("script");
   gads.async = true;
-  gads.type = 'text/javascript';
-  gads.src = '//www.googletagservices.com/tag/js/gpt.js';
+  gads.type = "text/javascript";
+  gads.src = "//www.googletagservices.com/tag/js/gpt.js";
 
-  const head = document.getElementsByTagName('head')[0];
+  const head = document.getElementsByTagName("head")[0];
   head.appendChild(gads);
 
   this.scriptSet = true;
 };
 
-GptManager.prototype.setConfig = function setConfig (callback) {
+GptManager.prototype.setConfig = function setConfig(callback) {
   if (this.isReady()) return callback();
 
   const googletag = this.googletag;
@@ -56,7 +55,7 @@ GptManager.prototype.setConfig = function setConfig (callback) {
   });
 };
 
-GptManager.prototype.init = function init (callback) {
+GptManager.prototype.init = function init(callback) {
   if (this.isReady()) return callback();
 
   this.googletag.cmd.push(() => {
