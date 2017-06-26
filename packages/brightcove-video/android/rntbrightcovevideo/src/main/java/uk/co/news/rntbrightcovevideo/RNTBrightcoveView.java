@@ -18,7 +18,7 @@ import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.events.RCTEventEmitter;
 
 public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
-  private String mVideoId, mAccountId, mPolicyId;
+  private String mVideoId, mAccountId, mPolicyId, mPlayerStatus;
 
   public RNTBrightcoveView(ThemedReactContext context) {
     super(context, null);
@@ -40,6 +40,14 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
     initVideo();
   }
 
+  private void emitState() {
+    WritableMap event = Arguments.createMap();
+    event.putString("playerStatus", mPlayerStatus);
+    event.putString("playheadPosition", Float.toString((float) playheadPosition / 1000));
+    ReactContext reactContext = (ReactContext) getContext();
+    reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
+  }
+
   private void initVideo() {
     if (mVideoId != null && mAccountId != null && mPolicyId != null) {
       EventEmitter eventEmitter = getEventEmitter();
@@ -47,30 +55,23 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
       eventEmitter.on(EventType.PLAY, new EventListener() {
         @Override
         public void processEvent(Event e) {
-          WritableMap event = Arguments.createMap();
-          event.putString("Event", "play from " + Float.toString((float) playheadPosition / 1000));
-          ReactContext reactContext = (ReactContext) getContext();
-          reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
+          mPlayerStatus = "playing";
+          emitState();
         }
       });
 
       eventEmitter.on(EventType.PAUSE, new EventListener() {
         @Override
         public void processEvent(Event e) {
-          WritableMap event = Arguments.createMap();
-          event.putString("Event", "pause at " + Float.toString((float) playheadPosition / 1000));
-          ReactContext reactContext = (ReactContext) getContext();
-          reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
+          mPlayerStatus = "paused";
+          emitState();
         }
       });
 
       eventEmitter.on(EventType.SEEK_TO, new EventListener() {
         @Override
         public void processEvent(Event e) {
-          WritableMap event = Arguments.createMap();
-          event.putString("Event", "seek to " + Float.toString((float) playheadPosition / 1000));
-          ReactContext reactContext = (ReactContext) getContext();
-          reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
+          emitState();
         }
       });
 
@@ -82,7 +83,6 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
         @Override
         public void onVideo(Video video) {
           RNTBrightcoveView.this.add(video);
-          RNTBrightcoveView.this.start();
         }
       });
     }

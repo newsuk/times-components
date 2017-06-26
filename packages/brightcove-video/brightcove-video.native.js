@@ -8,7 +8,6 @@ class BrightcoveVideo extends Component {
   }
 
   render() {
-    console.log("logging works");
     const height = this.props.height || "100%";
     const width = this.props.width || "100%";
 
@@ -24,7 +23,7 @@ class BrightcoveVideo extends Component {
   }
 
   _onChange(event) {
-    console.log(event.nativeEvent.Event);
+    console.log("received change event", event.nativeEvent);
   }
 
   onPlay() {
