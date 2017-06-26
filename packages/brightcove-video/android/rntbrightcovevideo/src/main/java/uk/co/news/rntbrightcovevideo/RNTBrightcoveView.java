@@ -46,11 +46,21 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
 
       eventEmitter.on(EventType.PLAY, new EventListener() {
         @Override
-        public void processEvent(Event event) {
-          WritableMap eventA = Arguments.createMap();
-          eventA.putString("Event", "play");
-          ReactContext reactContext = (ReactContext)getContext();
-          reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "playEvent", eventA);
+        public void processEvent(Event e) {
+          WritableMap event = Arguments.createMap();
+          event.putString("Event", "play");
+          ReactContext reactContext = (ReactContext) getContext();
+          reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
+        }
+      });
+
+      eventEmitter.on(EventType.PAUSE, new EventListener() {
+        @Override
+        public void processEvent(Event e) {
+          WritableMap event = Arguments.createMap();
+          event.putString("Event", "pause");
+          ReactContext reactContext = (ReactContext) getContext();
+          reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
         }
       });
 
