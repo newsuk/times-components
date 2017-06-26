@@ -89,17 +89,21 @@ describe("brightcove-video web component", () => {
   });
 
   it("uses the initialise function once the script has loaded", () => {
+    const readyMock = jest.fn();
     window.bc = jest.fn();
-    window.videojs = jest.fn();
+    window.videojs = jest.fn().mockReturnValue({
+      ready: readyMock
+    });
 
     const videos = renderer.create(
       <View>
-        <BrightcoveVideo accountId="[ACCOUNT_ID1]" videoId="[VIDEO_ID1]" />
-        <BrightcoveVideo accountId="[ACCOUNT_ID1]" videoId="[VIDEO_ID1]" />
+        <BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />
+        <BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />
       </View>
     );
 
-    expect(window.bc.mock.calls).toHaveLength(1);
-    expect(window.videojs.mock.calls).toHaveLength(1);
+    expect(window.bc.mock.calls).toHaveLength(2);
+    expect(window.videojs.mock.calls).toHaveLength(2);
+    expect(readyMock.mock.calls).toHaveLength(2);
   });
 });
