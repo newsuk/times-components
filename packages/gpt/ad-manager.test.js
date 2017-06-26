@@ -54,7 +54,7 @@ describe("AdManager", () => {
     adManager.init(() => {
       expect(pbjsLoadScript).toHaveBeenCalled();
       expect(gptLoadScript).toHaveBeenCalled();
-      expeect(adManager.isReady()).toBeTruthy();
+      expect(adManager.isReady()).toBeTruthy();
     });
   });
 

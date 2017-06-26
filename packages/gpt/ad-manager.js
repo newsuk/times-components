@@ -69,7 +69,6 @@ AdManager.prototype.unregisterAd = function registerAd(code) {
 AdManager.prototype.display = function display(callback) {
   gptManager.googletag.cmd.push(() => {
     pbjsManager.pbjs.que.push(() => {
-      console.log("refresh");
       pbjsManager.pbjs.setTargetingForGPTAsync();
       gptManager.googletag.pubads().refresh();
       if (callback) callback();

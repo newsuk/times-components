@@ -41,7 +41,6 @@ GptManager.prototype.setConfig = function setConfig(callback) {
   const googletag = this.googletag;
 
   googletag.cmd.push(() => {
-    // googletag.openConsole()
     // Infinite scroll requires SRA
     googletag.pubads().enableSingleRequest();
 

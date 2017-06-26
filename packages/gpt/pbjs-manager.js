@@ -23,9 +23,7 @@ PbjsManager.prototype.loadScript = function loadScript() {
   const d = document;
   const pbs = d.createElement("script");
   pbs.async = true;
-  // const pro = d.location.protocol;
   pbs.type = "text/javascript";
-  // pbs.src = ((pro === 'https:') ? 'https' : 'http') + '://acdn.adnxs.com/prebid/not-for-prod/prebid.js';
   pbs.src = "https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js";
   const head = document.getElementsByTagName("head")[0];
   head.appendChild(pbs);
