@@ -48,7 +48,7 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
         @Override
         public void processEvent(Event e) {
           WritableMap event = Arguments.createMap();
-          event.putString("Event", "play");
+          event.putString("Event", "play from " + Float.toString((float) playheadPosition / 1000));
           ReactContext reactContext = (ReactContext) getContext();
           reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
         }
@@ -58,7 +58,17 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
         @Override
         public void processEvent(Event e) {
           WritableMap event = Arguments.createMap();
-          event.putString("Event", "pause");
+          event.putString("Event", "pause at " + Float.toString((float) playheadPosition / 1000));
+          ReactContext reactContext = (ReactContext) getContext();
+          reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
+        }
+      });
+
+      eventEmitter.on(EventType.SEEK_TO, new EventListener() {
+        @Override
+        public void processEvent(Event e) {
+          WritableMap event = Arguments.createMap();
+          event.putString("Event", "seek to " + Float.toString((float) playheadPosition / 1000));
           ReactContext reactContext = (ReactContext) getContext();
           reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
         }
