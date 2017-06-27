@@ -8,12 +8,9 @@ class BrightcoveVideo extends Component {
   }
 
   render() {
-    const height = this.props.height || "100%";
-    const width = this.props.width || "100%";
-
     return (
       <RNTBrightcove
-        style={{ height, width }}
+        style={{ height: this.props.height, width: this.props.width }}
         policyId={this.props.policyId}
         accountId={this.props.accountId}
         videoId={this.props.videoId}
@@ -44,6 +41,11 @@ class BrightcoveVideo extends Component {
 
   onSeeked() {}
 }
+
+BrightcoveVideo.defaultProps = {
+  width: "100%",
+  height: "100%"
+};
 
 const RNTBrightcove = requireNativeComponent("RNTBrightcove", null);
 

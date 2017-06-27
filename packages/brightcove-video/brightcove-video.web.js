@@ -7,16 +7,32 @@ class BrightcoveVideo extends Component {
   componentDidMount() {
     if (!BrightcoveVideo.hasLoadedScript) {
       BrightcoveVideo.hasLoadedScript = true;
+      BrightcoveVideo.players = [];
 
       const s = document.createElement("script");
-      s.src = `//players.brightcove.net/${this.props
-        .accountId}/default_default/index.min.js`;
 
-      BrightcoveVideo.players = [];
-      s.onload = () =>
+      s.src = BrightcoveVideo.getScriptUrl(this.props.accountId);
+
+      s.onload = () => {
         BrightcoveVideo.players.forEach(this.initVideoJS.bind(this));
+      };
+
+      // handle script not loading
+      s.onerror = err => {
+        const uriErr = new URIError(
+          `The script ${err.target.src} is not accessible.`
+        );
+
+        if (!this.props.onError) {
+          throw uriErr;
+        } else {
+          this.props.onError(uriErr);
+        }
+      };
 
       document.body.appendChild(s);
+
+      return;
     }
     this.init();
   }
@@ -51,20 +67,28 @@ class BrightcoveVideo extends Component {
     }
   }
 
-  initVideoJS() {
-    const player = videojs(this.id);
+  initVideoJS(id) {
+    const player = videojs(id);
     const handler = BrightcoveVideo.handlePlayerReady.bind(player, this);
 
     player.ready(handler);
   }
 
+  initVideo(id) {
+    bc(document.getElementById(id));
+    this.initVideoJS(id);
+  }
+
   init() {
-    if (window.bc) {
-      bc(document.getElementById(this.id));
-      this.initVideoJS();
+    if (window.bc && window.videojs) {
+      this.initVideo(this.id);
     } else {
       BrightcoveVideo.players.push(this);
     }
+  }
+
+  static getScriptUrl(accountId) {
+    return `//players.brightcove.net/${accountId}/default_default/index.min.js`;
   }
 
   render() {

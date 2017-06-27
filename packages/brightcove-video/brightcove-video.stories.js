@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import { View, TouchableOpacity, Text } from "react-native";
-import { storiesOf, action } from "@storybook/react-native";
+import { storiesOf } from "@storybook/react-native";
+import { action, decorateAction } from "@storybook/addon-actions";
 import BrightcoveVideo from "./brightcove-video";
 
 const policyId =
   "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U";
 const accountId = "57838016001";
 const videoId = "4084164751001";
+
+const firstArgAction = decorateAction([args => [args[0].toString()]]);
 
 class VideoAddTest extends Component {
   constructor(props) {
@@ -97,10 +100,40 @@ storiesOf("BrightcoveVideo", module)
     </View>
   )
   .add("Lazy load players", () => <VideoAddTest />)
-  .add("onplay, onload", () =>
+  .add("With different videos", () =>
+    <View>
+      <BrightcoveVideo
+        width={320}
+        height={200}
+        policyId={policyId}
+        videoId={videoId}
+        accountId={accountId}
+      />
+      <BrightcoveVideo
+        width={320}
+        height={200}
+        policyId={policyId}
+        videoId="1532562858001"
+        accountId={accountId}
+      />
+    </View>
+  )
+  .add("Bad videoId", () =>
     <BrightcoveVideo
+      width={800}
+      height={600}
+      policyId={policyId}
+      videoId="x"
+      accountId={accountId}
+    />
+  )
+  .add("Bad account id", () =>
+    <BrightcoveVideo
+      width={800}
+      height={600}
       policyId={policyId}
       videoId={videoId}
-      accountId={accountId}
+      accountId="x"
+      onError={firstArgAction("error")}
     />
   );
