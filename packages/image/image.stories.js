@@ -11,19 +11,12 @@ const exampleImage = {
 const styles = StyleSheet.create({
   halfWidthView: {
     width: "100%"
-  },
-  customSize: {
-    width: "100px"
   }
 });
 
 storiesOf("Image", module)
 .add("Stretched to full width keeping aspect ratio", () =>
   <View style={styles.halfWidthView}>
-    <Image source={exampleImage} />
-  </View>
-).add("With custom width of 100px", () =>
-  <View style={styles.customSize}>
     <Image source={exampleImage} />
   </View>
 );
