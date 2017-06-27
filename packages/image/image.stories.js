@@ -10,12 +10,17 @@ const exampleImage = {
 
 const styles = StyleSheet.create({
   halfWidthView: {
-    width: "100%"
+    width: "50%"
   }
 });
 
 storiesOf("Image", module)
-.add("Stretched to full width keeping aspect ratio", () =>
+.add("Adjusted to parent view size", () =>
+  <View>
+    <Image source={exampleImage} />
+  </View>
+)
+.add("Resized to half of full width, keeping aspect ratio", () =>
   <View style={styles.halfWidthView}>
     <Image source={exampleImage} />
   </View>
