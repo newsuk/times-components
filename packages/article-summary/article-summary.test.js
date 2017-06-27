@@ -31,5 +31,6 @@ it('renders a snapshot with content and styles', () => {
     style
   };
   const tree = renderer.create(<ArticleSummary {...props}/>).toJSON();
+
   expect(tree).toMatchSnapshot();
 });
