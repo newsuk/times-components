@@ -35,7 +35,8 @@ We're using [lerna](https://github.com/lerna/lerna) for the monorepo with each c
 
 For ease of use there is a CLI for creating a component. Run `./times-components` for instructions,
  this is the quickest way to create a package with the required scaffolding which is; a component,
-  `package.json`, stubbed test and story
+  `package.json`, stubbed test and story. Note that the stubbed test will fail until a snapshot
+  is created with `jest --updateSnapshot` or a test run is made without the `--CI` flag
 
 When developing a component it's easiest to use the 
 [storybooks](https://github.com/storybooks/storybook) with hot reloading. Make sure you follow the
