@@ -20,26 +20,10 @@ class BrightcoveVideo extends Component {
   }
 
   _onChange(event) {
-    console.log("received change event", event.nativeEvent);
-  }
-
-  onPlay() {
-    if (this.props.onPlay) {
-      this.props.onPlay();
-    } else {
-      console.log("on play");
+    if (this.props.onChange) {
+      this.props.onChange(event.nativeEvent);
     }
   }
-
-  onPause() {
-    if (this.props.onPause) {
-      this.props.onPause();
-    } else {
-      console.log("on pause");
-    }
-  }
-
-  onSeeked() {}
 }
 
 BrightcoveVideo.defaultProps = {

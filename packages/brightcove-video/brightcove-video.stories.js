@@ -10,6 +10,7 @@ const accountId = "57838016001";
 const videoId = "4084164751001";
 
 const firstArgAction = decorateAction([args => [args[0].toString()]]);
+const firstArgJSONAction = decorateAction([args => [JSON.stringify(args[0])]]);
 
 class VideoAddTest extends Component {
   constructor(props) {
@@ -135,5 +136,13 @@ storiesOf("BrightcoveVideo", module)
       videoId={videoId}
       accountId="x"
       onError={firstArgAction("error")}
+    />
+  )
+  .add("With event listener", () =>
+    <BrightcoveVideo
+      policyId={policyId}
+      videoId={videoId}
+      accountId={accountId}
+      onChange={firstArgJSONAction("change")}
     />
   );

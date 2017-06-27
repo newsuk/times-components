@@ -4,6 +4,15 @@ import { View } from "react-native";
 let index = 0;
 
 class BrightcoveVideo extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      playerStatus: "paused",
+      playheadPosition: "0"
+    };
+  }
+
   componentDidMount() {
     if (!BrightcoveVideo.hasLoadedScript) {
       BrightcoveVideo.hasLoadedScript = true;
@@ -44,28 +53,36 @@ class BrightcoveVideo extends Component {
     this.on("seeked", context.onSeeked.bind(context, this));
   }
 
-  onPlay(player) {
-    if (this.props.onPlay) {
-      this.props.onPlay(player.currentTime());
-    } else {
-      console.log("playing from", player.currentTime());
+  emitState() {
+    if (this.props.onChange) {
+      this.props.onChange(this.state);
     }
+  }
+
+  onPlay(player) {
+    this.setState({
+      playerStatus: "playing",
+      playheadPosition: player.currentTime()
+    });
+
+    this.emitState();
   }
 
   onPause(player) {
-    if (this.props.onPause) {
-      this.props.onPause(player.currentTime());
-    } else {
-      console.log("pausing at", player.currentTime());
-    }
+    this.setState({
+      playerStatus: "paused",
+      playheadPosition: player.currentTime()
+    });
+
+    this.emitState();
   }
 
   onSeeked(player) {
-    if (this.props.onSeeked) {
-      this.props.onSeeked(player.currentTime());
-    } else {
-      console.log("seeked to", player.currentTime());
-    }
+    this.setState({
+      playheadPosition: player.currentTime()
+    });
+
+    this.emitState();
   }
 
   initVideoJS(id) {
