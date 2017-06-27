@@ -7,9 +7,7 @@ describe("brightcove-video native component", () => {
   it("renders correctly", () => {
     const tree = renderer.create(<BrightcoveVideo />).toJSON();
 
-    expect(tree).toBeTruthy();
-    expect(tree.type).toBe("RNTBrightcove");
-    expect(tree.children).toBe(null);
+    expect(tree).toMatchSnapshot();
   });
 
   it("width x height default to 100% x 100%", () => {

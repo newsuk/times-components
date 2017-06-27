@@ -19,9 +19,13 @@ class BrightcoveVideo extends Component {
 
   init() {
     if (window.bc && window.videojs) {
-      bc(document.getElementById(this.id));
-      videojs(this.id);
+      BrightcoveVideo.initVideo(this.id);
     }
+  }
+
+  static initVideo(id) {
+    bc(document.getElementById(id));
+    videojs(id);
   }
 
   render() {

@@ -29,9 +29,7 @@ describe("brightcove-video web component", () => {
   it("renders correctly", () => {
     const tree = renderer.create(<BrightcoveVideo />).toJSON();
 
-    expect(tree).toBeTruthy();
-    expect(tree.type).toBe("View");
-    expect(tree.children[0].type).toBe("video");
+    expect(tree).toMatchSnapshot();
   });
 
   it("appends script tag to body", () => {
