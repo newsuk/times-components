@@ -75,6 +75,8 @@ describe("brightcove-video web component", () => {
   });
 
   it("does not attempt to initialise the brightcove player before the script has loaded", () => {
+    const initVideoSpy = jest.spyOn(BrightcoveVideo, "initVideo");
+
     const videos = () =>
       renderer.create(
         <View>
@@ -83,10 +85,14 @@ describe("brightcove-video web component", () => {
         </View>
       );
 
-    expect(videos).not.toThrow();
+    expect(initVideoSpy.mock.calls.length).toBe(0);
+
+    initVideoSpy.mockRestore();
   });
 
   it("uses the initialise function once the script has loaded", () => {
+    const initVideoSpy = jest.spyOn(BrightcoveVideo, "initVideo");
+
     window.bc = jest.fn();
     window.videojs = jest.fn();
 
@@ -97,7 +103,10 @@ describe("brightcove-video web component", () => {
       </View>
     );
 
+    expect(initVideoSpy.mock.calls.length).toBe(1);
     expect(window.bc.mock.calls).toHaveLength(1);
     expect(window.videojs.mock.calls).toHaveLength(1);
+
+    initVideoSpy.mockRestore();
   });
 });
