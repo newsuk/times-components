@@ -114,4 +114,22 @@ storiesOf("BrightcoveVideo", module)
         accountId={accountId}
       />
     </View>
+  )
+  .add("Bad videoId", () =>
+    <BrightcoveVideo
+      width={800}
+      height={600}
+      policyId={policyId}
+      videoId="x"
+      accountId={accountId}
+    />
+  )
+  .add("Bad account id", () =>
+    <BrightcoveVideo
+      width={800}
+      height={600}
+      policyId={policyId}
+      videoId={videoId}
+      accountId="x"
+    />
   );
