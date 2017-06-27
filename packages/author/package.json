@@ -43,6 +43,7 @@
     "babel-preset-react-native": "1.9.2",
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
+    "react-native": "0.44.1",
     "react-test-renderer": "15.5.4",
     "webpack": "2.6.1"
   },
