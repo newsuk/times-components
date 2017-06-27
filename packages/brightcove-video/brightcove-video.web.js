@@ -14,7 +14,9 @@ class BrightcoveVideo extends Component {
       s.src = BrightcoveVideo.getScriptUrl(this.props.accountId);
 
       s.onload = () => {
-        BrightcoveVideo.players.forEach(this.initVideoJS.bind(this));
+        BrightcoveVideo.players.forEach(player =>
+          player.initVideoJS(player.id)
+        );
       };
 
       // handle script not loading
@@ -31,9 +33,8 @@ class BrightcoveVideo extends Component {
       };
 
       document.body.appendChild(s);
-
-      return;
     }
+
     this.init();
   }
 
