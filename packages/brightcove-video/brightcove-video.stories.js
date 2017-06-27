@@ -96,4 +96,22 @@ storiesOf("BrightcoveVideo", module)
       />
     </View>
   )
-  .add("Lazy load players", () => <VideoAddTest />);
+  .add("Lazy load players", () => <VideoAddTest />)
+  .add("With different videos", () =>
+    <View>
+      <BrightcoveVideo
+        width={320}
+        height={200}
+        policyId={policyId}
+        videoId={videoId}
+        accountId={accountId}
+      />
+      <BrightcoveVideo
+        width={320}
+        height={200}
+        policyId={policyId}
+        videoId="1532562858001"
+        accountId={accountId}
+      />
+    </View>
+  );
