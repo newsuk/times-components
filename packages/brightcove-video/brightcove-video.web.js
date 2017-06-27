@@ -9,9 +9,23 @@ class BrightcoveVideo extends Component {
       const s = document.createElement("script");
       BrightcoveVideo.hasLoadedScript = true;
 
-      s.src = `//players.brightcove.net/${this.props
-        .accountId}/default_default/index.min.js`;
+      s.src = BrightcoveVideo.getScriptUrl(this.props.accountId);
+
+      // handle script not loading
+      s.onerror = err => {
+        const uriErr = new URIError(
+          `The script ${err.target.src} is not accessible.`
+        );
+
+        if (!this.props.onError) {
+          throw uriErr;
+        } else {
+          this.props.onError(uriErr);
+        }
+      };
+
       document.body.appendChild(s);
+
       return;
     }
     this.init();
@@ -21,6 +35,10 @@ class BrightcoveVideo extends Component {
     if (window.bc && window.videojs) {
       BrightcoveVideo.initVideo(this.id);
     }
+  }
+
+  static getScriptUrl(accountId) {
+    return `//players.brightcove.net/${accountId}/default_default/index.min.js`;
   }
 
   static initVideo(id) {
