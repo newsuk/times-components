@@ -27,7 +27,7 @@ describe("AdManager", () => {
   });
 
   it("constructor returns an AdManager instance with correct props", () => {
-    const adManager = AdManager(managerOptions);
+    const adManager = new AdManager(managerOptions);
     expect(adManager).toBeInstanceOf(AdManager);
     expect(adManager.adUnit).toBe(managerOptions.adUnit);
     expect(adManager.networkId).toBe(managerOptions.networkId);
@@ -37,7 +37,7 @@ describe("AdManager", () => {
   });
 
   it("init function sets the required scripts", () => {
-    const adManager = AdManager(managerOptions);
+    const adManager = new AdManager(managerOptions);
     const pbjsManager = require("./pbjs-manager");
     const gptManager = require("./gpt-manager");
 
@@ -59,7 +59,7 @@ describe("AdManager", () => {
   });
 
   it("registerAd inserts configured ad in the queue and push it to gpt on it", () => {
-    const adManager = AdManager(managerOptions);
+    const adManager = new AdManager(managerOptions);
     const pbjsManager = require("./pbjs-manager");
     const gptManager = require("./gpt-manager");
     const windowWidth = 100;
@@ -96,7 +96,7 @@ describe("AdManager", () => {
   });
 
   it("display should tell pbjs to handle targeting and gpt to refresh", () => {
-    adManager = AdManager(managerOptions);
+    adManager = new AdManager(managerOptions);
     const gptManager = require("./gpt-manager").default;
     const pbjsManager = require("./pbjs-manager").default;
     const refresh = jest.fn();
@@ -126,13 +126,13 @@ describe("AdManager", () => {
   });
 
   it("pushAdToGPT gives an error if ad manager is not initialised", () => {
-    adManager = AdManager(managerOptions);
+    adManager = new AdManager(managerOptions);
     expect(adManager.initialised).toEqual(false);
     expect(adManager._pushAdToGPT).toThrowError();
   });
 
   it("pushAdToGPT creates and sets slot and asks gpt to display", () => {
-    adManager = AdManager(managerOptions);
+    adManager = new AdManager(managerOptions);
     const gptManager = require("./gpt-manager").default;
 
     const addService = jest.fn();
@@ -173,7 +173,7 @@ describe("AdManager", () => {
 
   it("generateSizings calls gpt googletag to set sizings", () => {
     const gptManager = require("./gpt-manager").default;
-    adManager = AdManager(managerOptions);
+    adManager = new AdManager(managerOptions);
 
     const addSize = jest.fn();
     const build = jest.fn();
@@ -202,7 +202,7 @@ describe("AdManager", () => {
 
   it("createSlot calls gpt googletag to set slots", () => {
     const gptManager = require("./gpt-manager").default;
-    adManager = AdManager(managerOptions);
+    adManager = new AdManager(managerOptions);
     gptManager.googletag = {
       defineSlot: jest.fn()
     };

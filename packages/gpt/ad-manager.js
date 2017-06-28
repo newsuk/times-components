@@ -5,118 +5,111 @@ import { getSlotConfig } from "./generate-config";
 import gptManager from "./gpt-manager";
 import pbjsManager from "./pbjs-manager";
 
-function AdManager(options = {}) {
-  if (!(this instanceof AdManager)) {
-    return new AdManager(options);
-  }
-
-  this.adQueue = [];
-  this.adUnit = options.adUnit;
-  this.networkId = options.networkId;
-  this.section = options.section;
-  this.initialised = false;
-}
-
-AdManager.prototype.isReady = function isReady() {
-  return this.initialised;
-};
-
-AdManager.prototype.init = function init(callback) {
-  // Load scripts if needed be
-  gptManager.loadScript();
-  pbjsManager.loadScript();
-
-  series(
-    [
-      // Set services config
-      parallel.bind(parallel, [
-        gptManager.setConfig.bind(gptManager),
-        pbjsManager.setConfig.bind(pbjsManager)
-      ]),
-      // Init services
-      parallel.bind(parallel, [
-        gptManager.init.bind(gptManager),
-        pbjsManager.init.bind(pbjsManager, this.adQueue)
-      ])
-    ],
-    err => {
-      if (err) throw new Error(err);
-      this.initialised = true;
-      // Actually push the ads to GPT
-      this.adQueue.forEach(ad => {
-        this._pushAdToGPT(ad.code, ad.mappings, ad.options);
-      });
-      if (callback) callback();
+export default class AdManager {
+  constructor(options = {}) {
+    if (!(this instanceof AdManager)) {
+      return new AdManager(options);
     }
-  );
-};
 
-AdManager.prototype.registerAd = function registerAd(
-  code,
-  { width = 1024 } = {}
-) {
-  this.adQueue.push(getSlotConfig(this.section, code, width));
-};
-
-AdManager.prototype.unregisterAd = function registerAd(code) {
-  const queueIds = this.adQueue.map(item => item.id);
-  const idx = queueIds.indexOf(code);
-  if (idx > -1) {
-    this.adQueue.splice(idx, 1);
+    this.adQueue = [];
+    this.adUnit = options.adUnit;
+    this.networkId = options.networkId;
+    this.section = options.section;
+    this.initialised = false;
   }
-};
 
-AdManager.prototype.display = function display(callback) {
-  gptManager.googletag.cmd.push(() => {
-    pbjsManager.pbjs.que.push(() => {
-      pbjsManager.pbjs.setTargetingForGPTAsync();
-      gptManager.googletag.pubads().refresh();
-      if (callback) callback();
+  isReady() {
+    return this.initialised;
+  }
+
+  init(callback) {
+    // Load scripts if needed be
+    gptManager.loadScript();
+    pbjsManager.loadScript();
+
+    series(
+      [
+        // Set services config
+        parallel.bind(parallel, [
+          gptManager.setConfig.bind(gptManager),
+          pbjsManager.setConfig.bind(pbjsManager)
+        ]),
+        // Init services
+        parallel.bind(parallel, [
+          gptManager.init.bind(gptManager),
+          pbjsManager.init.bind(pbjsManager, this.adQueue)
+        ])
+      ],
+      err => {
+        if (err) throw new Error(err);
+        this.initialised = true;
+        // Actually push the ads to GPT
+        this.adQueue.forEach(ad => {
+          this._pushAdToGPT(ad.code, ad.mappings, ad.options);
+        });
+        if (callback) callback();
+      }
+    );
+  }
+
+  registerAd(code, { width = 1024 } = {}) {
+    this.adQueue.push(getSlotConfig(this.section, code, width));
+  }
+
+  unregisterAd(code) {
+    const queueIds = this.adQueue.map(item => item.id);
+    const idx = queueIds.indexOf(code);
+    if (idx > -1) {
+      this.adQueue.splice(idx, 1);
+    }
+  }
+
+  display(callback) {
+    gptManager.googletag.cmd.push(() => {
+      pbjsManager.pbjs.que.push(() => {
+        pbjsManager.pbjs.setTargetingForGPTAsync();
+        gptManager.googletag.pubads().refresh();
+        if (callback) callback();
+      });
     });
-  });
-};
-
-AdManager.prototype._pushAdToGPT = function pushAdToGPT(
-  adSlotId,
-  sizingMap,
-  options = {}
-) {
-  if (!this.initialised) {
-    throw new Error("Ad manager needs to be initialised first");
   }
 
-  gptManager.googletag.cmd.push(() => {
-    const slot = this._createSlot(adSlotId, this.section);
-    slot.addService(gptManager.googletag.pubads());
-    slot.defineSizeMapping(this._generateSizings(sizingMap));
+  _pushAdToGPT(adSlotId, sizingMap, options = {}) {
+    if (!this.initialised) {
+      throw new Error("Ad manager needs to be initialised first");
+    }
 
-    // const targeting = omit(options, 'iuPartsSuffix');
-    // setSlotTargeting(slot, targeting);
+    gptManager.googletag.cmd.push(() => {
+      const slot = this._createSlot(adSlotId, this.section);
+      slot.addService(gptManager.googletag.pubads());
+      slot.defineSizeMapping(this._generateSizings(sizingMap));
 
-    slot.id = adSlotId;
+      // const targeting = omit(options, 'iuPartsSuffix');
+      // setSlotTargeting(slot, targeting);
 
-    // Display the ad
-    gptManager.googletag.display(adSlotId);
-  });
-};
+      slot.id = adSlotId;
 
-AdManager.prototype._generateSizings = function generateSizings(sizingMap) {
-  const mapping = gptManager.googletag.sizeMapping();
-
-  for (let i = 0; i < sizingMap.length; i++) {
-    const size = sizingMap[i];
-    mapping.addSize([size.width, size.height], size.sizes);
+      // Display the ad
+      gptManager.googletag.display(adSlotId);
+    });
   }
 
-  return mapping.build();
-};
+  _generateSizings(sizingMap) {
+    const mapping = gptManager.googletag.sizeMapping();
 
-AdManager.prototype._createSlot = function createSlot(adSlotId, section) {
-  return gptManager.googletag.defineSlot(
-    `/${this.networkId}/${this.adUnit}/${section}`,
-    [],
-    adSlotId
-  );
-};
+    for (let i = 0; i < sizingMap.length; i++) {
+      const size = sizingMap[i];
+      mapping.addSize([size.width, size.height], size.sizes);
+    }
 
-export default AdManager;
+    return mapping.build();
+  }
+
+  _createSlot(adSlotId, section) {
+    return gptManager.googletag.defineSlot(
+      `/${this.networkId}/${this.adUnit}/${section}`,
+      [],
+      adSlotId
+    );
+  }
+}
