@@ -8,7 +8,8 @@
     "test": "jest --bail --ci --coverage"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "rootDir": "../../"
   },
   "repository": {
     "type": "git",
