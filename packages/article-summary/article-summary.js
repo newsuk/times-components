@@ -44,12 +44,12 @@ export default function ArticleSummary({
   const labelText = typeof label === "string" ? label.toUpperCase() : label;
   style = style || {};
   return (
-    <View style={styles.container, style.container}>
-      <Text style={styles.label, style.label}>{labelText}</Text>
-      <Text style={styles.headline, style.headline}>{headline}</Text>
-      <Text style={styles.text, style.text}>{text}</Text>
+    <View style={(styles.container, style.container)}>
+      <Text style={(styles.label, style.label)}>{labelText}</Text>
+      <Text style={(styles.headline, style.headline)}>{headline}</Text>
+      <Text style={(styles.text, style.text)}>{text}</Text>
       {date && publication
-        ? <Text style={styles.meta, style.meta}>
+        ? <Text style={(styles.meta, style.meta)}>
             {date}, {publication}
           </Text>
         : null}

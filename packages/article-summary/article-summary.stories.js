@@ -1,5 +1,5 @@
-import { View, StyleSheet } from "react-native";
 import React from "react";
+import { View, StyleSheet } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import ArticleSummary from "./article-summary";
 
@@ -10,23 +10,24 @@ const style = StyleSheet.create({
 });
 
 const props = {
-  label: "Camilla Long",
-  headline: "OK, so Putin’s not a lady, but he does have the wildest man‑PMT",
+  label: "Lorem ipsum",
+  headline: "Lorem ipsum dolor sit amet",
   date: "Sunday June 11 2017",
-  publication: "The Sunday Times",
+  publication: "Consectetur adipiscing elit",
   text:
-    "When I was the official celebrity sex correspondent on Style magazine, every so often I would have to address the abject failure of male...  "
+    "Donec placerat sodales magna, eget tempus sem iaculis sit amet. In hac habitasse platea dictumst. In pellentesque urna magna, quis condimentum ante ornare at. Etiam sem enim, accumsan ut magna non, efficitur tempus arcu. Sed elementum pretium ante non porttitor. Curabitur vestibulum, orci at pharetra dictum, magna nisi tincidunt neque, hendrerit pellentesque augue metus eget dolor. Nulla laoreet elementum urna, ac condimentum diam vehicula et. Pellentesque lacinia ornare arcu, eget scelerisque lorem auctor non. Ut eu pulvinar risus."
 };
 
-storiesOf("ArticleSummary", module).add("ArticleSummary", () =>
-  <View style={{ width: 395 }}>
-    <ArticleSummary {...props} />
-  </View>
-)
-.add("ArticleSummary with changed styles", () => {
-  return (
-    <View style={{ width: 395 }}>
-      <ArticleSummary {...{...props, style}} />
+storiesOf("ArticleSummary", module)
+  .add("ArticleSummary", () =>
+    <View style={{ width: "100%" }}>
+      <ArticleSummary {...props} />
     </View>
-  );
-});
+  )
+  .add("ArticleSummary with changed styles", () => {
+    return (
+      <View style={{ width: "100%" }}>
+        <ArticleSummary {...{ ...props, style }} />
+      </View>
+    );
+  });
