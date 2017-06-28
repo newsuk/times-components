@@ -3,8 +3,8 @@ import { View, Image } from "react-native";
 import merge from "lodash.merge";
 
 export default class extends React.Component {
-  constructor(...args) {
-    super(...args);
+  constructor(props) {
+    super(props);
 
     const styles = this.props.style || {};
 
