@@ -1,7 +1,12 @@
+import get from "lodash.get";
 import { pbjs as config } from "./config";
 
 const PbjsManager = class PbjsManager {
   constructor(options) {
+    if (!new.target) {
+      return new PbjsManager(config);
+    }
+
     this._options = options;
     this.scriptSet = false;
     this.initialised = false;
@@ -82,6 +87,10 @@ const PbjsManager = class PbjsManager {
   }
 
   init(adUnits, callback) {
+    if (!get(this.pbjs, "que")) {
+      throw new Error("pbjs properties are unavailable");
+    }
+
     this.pbjs.que.push(() => {
       this.pbjs.addAdUnits(adUnits);
 

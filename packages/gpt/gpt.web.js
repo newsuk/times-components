@@ -13,8 +13,7 @@ class GPT extends Component {
   }
 
   render() {
-    const props = this.props;
-    return <div id={props.code} />;
+    return <div id={this.props.code} />;
   }
 }
 

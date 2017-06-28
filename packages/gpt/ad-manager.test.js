@@ -32,7 +32,7 @@ describe("AdManager", () => {
     expect(adManager.adUnit).toBe(managerOptions.adUnit);
     expect(adManager.networkId).toBe(managerOptions.networkId);
     expect(adManager.section).toBe(managerOptions.section);
-    expect(adManager.isReady()).toBeFalsy();
+    expect(adManager.initialised).toBeFalsy();
     expect(adManager.adQueue).toHaveLength(0);
   });
 
@@ -54,7 +54,7 @@ describe("AdManager", () => {
     adManager.init(() => {
       expect(pbjsLoadScript).toHaveBeenCalled();
       expect(gptLoadScript).toHaveBeenCalled();
-      expect(adManager.isReady()).toBeTruthy();
+      expect(adManager.initialised).toBeTruthy();
     });
   });
 
@@ -95,6 +95,38 @@ describe("AdManager", () => {
     });
   });
 
+  it("unregister one ad", () => {
+    const adManager = new AdManager(managerOptions);
+    adManager.adQueue = [
+      {
+        id: "id-0"
+      },
+      {
+        id: "id-1"
+      }
+    ];
+    const itemId = "id-1";
+    expect(adManager.adQueue.length).toEqual(2);
+    adManager.unregisterAd(itemId);
+    expect(adManager.adQueue.length).toEqual(1);
+  });
+
+  it("remove one item from the queue", () => {
+    const adManager = new AdManager(managerOptions);
+    const queue = [
+      {
+        id: "id-0"
+      },
+      {
+        id: "id-1"
+      }
+    ];
+    const itemId = "id-1";
+    const newQueue = adManager.removeItemFromQueue(queue, itemId);
+    expect(queue.length).toEqual(2);
+    expect(newQueue.length).toEqual(queue.length - 1);
+  });
+
   it("display should tell pbjs to handle targeting and gpt to refresh", () => {
     adManager = new AdManager(managerOptions);
     const gptManager = require("./gpt-manager").default;
@@ -115,11 +147,11 @@ describe("AdManager", () => {
       que: [],
       setTargetingForGPTAsync
     };
-    const callback = jest.fn();
-    adManager.display(callback);
+
+    adManager.display();
     gptManager.googletag.cmd[0]();
     pbjsManager.pbjs.que[0]();
-    expect(callback).toHaveBeenCalled();
+    expect(adManager.display).not.toThrowError();
     expect(pubads).toHaveBeenCalled();
     expect(refresh).toHaveBeenCalled();
     expect(setTargetingForGPTAsync).toHaveBeenCalled();

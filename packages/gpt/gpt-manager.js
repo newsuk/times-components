@@ -1,6 +1,8 @@
+import get from "lodash.get";
+
 const GptManager = class GptManager {
   constructor() {
-    if (!(this instanceof GptManager)) {
+    if (!new.target) {
       return new GptManager();
     }
 
@@ -41,6 +43,10 @@ const GptManager = class GptManager {
 
     const googletag = this.googletag;
 
+    if (!get(googletag, "cmd")) {
+      throw new Error("gpt properties are unavailable");
+    }
+
     googletag.cmd.push(() => {
       // Infinite scroll requires SRA
       googletag.pubads().enableSingleRequest();
@@ -60,6 +66,10 @@ const GptManager = class GptManager {
 
   init(callback) {
     if (this.isReady()) return callback();
+
+    if (!get(this.googletag, "cmd")) {
+      throw new Error("gpt properties are unavailable");
+    }
 
     this.googletag.cmd.push(() => {
       // enable google publisher tag
