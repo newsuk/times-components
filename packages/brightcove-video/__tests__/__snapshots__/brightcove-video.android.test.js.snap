@@ -3,6 +3,7 @@
 exports[`renders correctly 1`] = `
 <RNTBrightcove
   accountId={undefined}
+  onChange={[Function]}
   policyId={undefined}
   style={
     Object {

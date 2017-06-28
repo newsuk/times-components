@@ -15,6 +15,8 @@
 
 @implementation RNTBrightcove : UIView {
   RCTEventDispatcher *_eventDispatcher;
+  NSString *_playerStatus;
+  NSString *_playheadPosition;
 }
 
 - (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher {
@@ -26,12 +28,15 @@
 }
 
 - (void)setup {
+  _playerStatus = @"paused";
+  _playheadPosition = @"0";
+  
   BCOVPlayerSDKManager *manager = [BCOVPlayerSDKManager sharedManager];
 
   _playbackController = [manager createPlaybackController];
   _playbackController.delegate = self;
   _playbackController.autoAdvance = YES;
-  _playbackController.autoPlay = YES;
+  _playbackController.autoPlay = NO;
 
   _playbackService = [[BCOVPlaybackService alloc] initWithAccountId:_accountId
                                                           policyKey:_policyId];
@@ -97,5 +102,38 @@
     [self initPlayerView];
   }
 }
+
+- (void)emitStatus {
+  if (!self.onChange) {
+    return;
+  }
+
+  self.onChange(@{@"playerStatus": _playerStatus, @"playheadPosition": _playheadPosition});
+}
+
+- (void)playbackController:(id<BCOVPlaybackController>)controller playbackSession:(id<BCOVPlaybackSession>)session didReceiveLifecycleEvent:(BCOVPlaybackSessionLifecycleEvent *)lifecycleEvent {
+
+  if ([kBCOVPlaybackSessionLifecycleEventPlay isEqualToString:lifecycleEvent.eventType]) {
+    _playerStatus = @"playing";
+
+    [self emitStatus];
+  }
+
+  if ([kBCOVPlaybackSessionLifecycleEventPause isEqualToString:lifecycleEvent.eventType]) {
+    _playerStatus = @"paused";
+
+    [self emitStatus];
+  }
+}
+
+- (void)playbackController:(id<BCOVPlaybackController>)controller playbackSession:(id<BCOVPlaybackSession>)session didProgressTo:(NSTimeInterval)progress {
+  
+  NSNumber *progressNumber = [NSNumber numberWithDouble:progress];
+
+  _playheadPosition = [progressNumber stringValue];
+  
+  [self emitStatus];
+}
+
 
 @end

@@ -75,7 +75,7 @@ describe("brightcove-video web component", () => {
   });
 
   it("does not attempt to initialise the brightcove player before the script has loaded", () => {
-    const initVideoSpy = jest.spyOn(BrightcoveVideo, "initVideo");
+    const initVideoSpy = jest.spyOn(BrightcoveVideo.prototype, "initVideo");
 
     const videos = () =>
       renderer.create(
@@ -91,21 +91,24 @@ describe("brightcove-video web component", () => {
   });
 
   it("uses the initialise function once the script has loaded", () => {
-    const initVideoSpy = jest.spyOn(BrightcoveVideo, "initVideo");
+    const readyMock = jest.fn();
+    const initVideoSpy = jest.spyOn(BrightcoveVideo.prototype, "initVideo");
 
     window.bc = jest.fn();
-    window.videojs = jest.fn();
+    window.videojs = jest.fn().mockReturnValue({
+      ready: readyMock
+    });
 
     const videos = renderer.create(
       <View>
-        <BrightcoveVideo accountId="[ACCOUNT_ID1]" videoId="[VIDEO_ID1]" />
-        <BrightcoveVideo accountId="[ACCOUNT_ID1]" videoId="[VIDEO_ID1]" />
+        <BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />
+        <BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />
       </View>
     );
 
-    expect(initVideoSpy.mock.calls.length).toBe(1);
-    expect(window.bc.mock.calls).toHaveLength(1);
-    expect(window.videojs.mock.calls).toHaveLength(1);
+    expect(initVideoSpy.mock.calls.length).toBe(2);
+    expect(window.bc.mock.calls).toHaveLength(2);
+    expect(window.videojs.mock.calls).toHaveLength(2);
 
     initVideoSpy.mockRestore();
   });

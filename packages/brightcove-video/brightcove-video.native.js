@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import { requireNativeComponent } from "react-native";
 
 class BrightcoveVideo extends Component {
+  constructor(props) {
+    super(props);
+    this._onChange = this._onChange.bind(this);
+  }
+
   render() {
     return (
       <RNTBrightcove
@@ -9,8 +14,15 @@ class BrightcoveVideo extends Component {
         policyId={this.props.policyId}
         accountId={this.props.accountId}
         videoId={this.props.videoId}
+        onChange={this._onChange}
       />
     );
+  }
+
+  _onChange(event) {
+    if (this.props.onChange) {
+      this.props.onChange(event.nativeEvent);
+    }
   }
 }
 

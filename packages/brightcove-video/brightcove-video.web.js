@@ -4,12 +4,29 @@ import { View } from "react-native";
 let index = 0;
 
 class BrightcoveVideo extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      playerStatus: "paused",
+      playheadPosition: "0"
+    };
+  }
+
   componentDidMount() {
     if (!BrightcoveVideo.hasLoadedScript) {
-      const s = document.createElement("script");
       BrightcoveVideo.hasLoadedScript = true;
+      BrightcoveVideo.players = [];
+
+      const s = document.createElement("script");
 
       s.src = BrightcoveVideo.getScriptUrl(this.props.accountId);
+
+      s.onload = () => {
+        BrightcoveVideo.players.forEach(player =>
+          player.initVideoJS(player.id)
+        );
+      };
 
       // handle script not loading
       s.onerror = err => {
@@ -25,25 +42,71 @@ class BrightcoveVideo extends Component {
       };
 
       document.body.appendChild(s);
-
-      return;
     }
+
     this.init();
+  }
+
+  static handlePlayerReady(context) {
+    this.on("play", context.onPlay.bind(context, this));
+    this.on("pause", context.onPause.bind(context, this));
+    this.on("seeked", context.onSeeked.bind(context, this));
+  }
+
+  emitState() {
+    if (this.props.onChange) {
+      this.props.onChange(this.state);
+    }
+  }
+
+  onPlay(player) {
+    this.setState({
+      playerStatus: "playing",
+      playheadPosition: player.currentTime()
+    });
+
+    this.emitState();
+  }
+
+  onPause(player) {
+    this.setState({
+      playerStatus: "paused",
+      playheadPosition: player.currentTime()
+    });
+
+    this.emitState();
+  }
+
+  onSeeked(player) {
+    this.setState({
+      playheadPosition: player.currentTime()
+    });
+
+    this.emitState();
+  }
+
+  initVideoJS(id) {
+    const player = videojs(id);
+    const handler = BrightcoveVideo.handlePlayerReady.bind(player, this);
+
+    player.ready(handler);
+  }
+
+  initVideo(id) {
+    bc(document.getElementById(id));
+    this.initVideoJS(id);
   }
 
   init() {
     if (window.bc && window.videojs) {
-      BrightcoveVideo.initVideo(this.id);
+      this.initVideo(this.id);
+    } else {
+      BrightcoveVideo.players.push(this);
     }
   }
 
   static getScriptUrl(accountId) {
     return `//players.brightcove.net/${accountId}/default_default/index.min.js`;
-  }
-
-  static initVideo(id) {
-    bc(document.getElementById(id));
-    videojs(id);
   }
 
   render() {
