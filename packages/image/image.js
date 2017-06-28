@@ -6,16 +6,23 @@ export default class extends React.Component {
   constructor(...args) {
     super(...args);
 
+    const styles = this.props.style || {};
+
+    this.state = {
+      width: styles.width || 0,
+      height: styles.height || 0
+    };
+
     this.handleLayout = this.handleLayout.bind(this);
-    this.state = { width: 0, height: 0 };
   }
 
   handleLayout(event) {
     const containerWidth = event.nativeEvent.layout.width;
 
     const { getSize = Image.getSize } = this.props;
+    const imageUri = (this.props.source && this.props.source.uri) || '';
 
-    getSize(this.props.source.uri, (width, height) => {
+    getSize(imageUri, (width, height) => {
       this.setState({
         width: containerWidth,
         height: containerWidth * height / width
@@ -24,14 +31,16 @@ export default class extends React.Component {
   }
 
   render() {
+    const styles = merge(this.props.style, {
+      width: this.state.width,
+      height: this.state.height
+    });
+
     return (
       <View onLayout={this.handleLayout}>
         <Image
+          style={styles}
           {...this.props}
-          style={merge(this.props.style, {
-            width: this.state.width,
-            height: this.state.height
-          })}
         />
       </View>
     );

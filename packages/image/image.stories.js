@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import Image from "./image";
 

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot correctly correctly 1`] = `
+<View
+  onLayout={[Function]}
+>
+  <Image
+    source={
+      Object {
+        "uri": "http://example.com/image.jpg",
+      }
+    }
+    style={
+      Object {
+        "height": 75,
+        "width": 200,
+      }
+    }
+  />
+</View>
+`;
