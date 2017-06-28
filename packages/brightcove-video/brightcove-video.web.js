@@ -1,19 +1,35 @@
 import React, { Component } from "react";
-import { View } from "react-native";
+import { View, Text } from "react-native";
 
 let index = 0;
+
+const globalErrors = [];
 
 class BrightcoveVideo extends Component {
   constructor(props) {
     super(props);
 
+    index++;
+
     this.state = {
+      id: `${props.videoId}-${props.accountId}-${index}`,
+      accountId: props.accountId,
+      videoId: props.videoId,
+      errors: [].concat(globalErrors),
       playerStatus: "paused",
-      playheadPosition: "0"
+      playheadPosition: 0
     };
   }
 
   componentDidMount() {
+    if (this.state.errors.length) {
+      return;
+    }
+
+    // video element must not be a React component as brightcove SDK causes loss of React's internal reference
+    // THUS: add it the old fasioned way...
+    this.getWrapperElem().appendChild(this.createVideoElem());
+
     if (!BrightcoveVideo.hasLoadedScript) {
       BrightcoveVideo.hasLoadedScript = true;
       BrightcoveVideo.players = [];
@@ -24,27 +40,45 @@ class BrightcoveVideo extends Component {
 
       s.onload = () => {
         BrightcoveVideo.players.forEach(player =>
-          player.initVideoJS(player.id)
+          player.initVideoJS(player.state.id)
         );
       };
 
       // handle script not loading
       s.onerror = err => {
-        const uriErr = new URIError(
-          `The script ${err.target.src} is not accessible.`
-        );
+        const uriErr = {
+          code: "",
+          message: `The script ${err.target.src} is not accessible.`
+        };
 
-        if (!this.props.onError) {
-          throw uriErr;
-        } else {
-          this.props.onError(uriErr);
-        }
+        globalErrors.push(uriErr);
+
+        this.emitError(uriErr);
       };
 
       document.body.appendChild(s);
     }
 
     this.init();
+  }
+
+  getWrapperElem() {
+    return this._wrapperElem;
+  }
+
+  createVideoElem() {
+    const elem = document.createElement("video");
+    elem.id = this.state.id;
+    elem.width = this.props.width;
+    elem.height = this.props.height;
+    elem.dataset.embed = "default";
+    elem.dataset.videoId = this.props.videoId;
+    elem.dataset.account = this.props.accountId;
+    elem.dataset.player = "default";
+    elem.className = "video-js";
+    elem.controls = "controls";
+
+    return elem;
   }
 
   static handlePlayerReady(context) {
@@ -57,6 +91,20 @@ class BrightcoveVideo extends Component {
     if (this.props.onChange) {
       this.props.onChange(this.state);
     }
+  }
+
+  emitError(err) {
+    const errors = [].concat(this.state.errors);
+    errors.push(err);
+    this.setState({ errors });
+
+    if (this.props.onError) {
+      this.props.onError(err);
+    }
+  }
+
+  onError(player) {
+    this.emitError(player.error());
   }
 
   onPlay(player) {
@@ -90,6 +138,7 @@ class BrightcoveVideo extends Component {
     const handler = BrightcoveVideo.handlePlayerReady.bind(player, this);
 
     player.ready(handler);
+    player.on("error", this.onError.bind(this, player));
   }
 
   initVideo(id) {
@@ -99,7 +148,7 @@ class BrightcoveVideo extends Component {
 
   init() {
     if (window.bc && window.videojs) {
-      this.initVideo(this.id);
+      this.initVideo(this.state.id);
     } else {
       BrightcoveVideo.players.push(this);
     }
@@ -110,24 +159,32 @@ class BrightcoveVideo extends Component {
   }
 
   render() {
-    this.id = `${this.props.videoId}-${this.props.accountId}-${index}`;
-    index++;
+    if (this.state.errors.length) {
+      const errorItems = this.state.errors.map((error, i) =>
+        <li key={i} style={{ color: "white" }}>
+          {error.code} - {error.message}
+        </li>
+      );
+
+      return (
+        <View
+          style={{
+            width: this.props.width,
+            height: this.props.height,
+            backgroundColor: "red"
+          }}
+        >
+          <ul>{errorItems}</ul>
+        </View>
+      );
+    }
 
     return (
-      <View>
-        <video
-          id={this.id}
-          width={this.props.width}
-          height={this.props.height}
-          data-embed="default"
-          data-video-id={this.props.videoId}
-          data-account={this.props.accountId}
-          data-player="default"
-          data-application-id
-          className="video-js"
-          controls
-        />
-      </View>
+      <div
+        ref={ref => {
+          this._wrapperElem = ref;
+        }}
+      />
     );
   }
 }
