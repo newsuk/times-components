@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
 })
 
 const Row = article => (
-  <View style={styles.container}>
+  <View>
     <Card {...article} />
   </View>
 );
@@ -38,7 +38,7 @@ export default class ArticleList extends React.Component {
   render() {
     return (
       <ListView
-        style={styles.container}
+        contentContainerStyle={styles.container}
         dataSource={this.state.articles}
         renderRow={(data) => <Row {...data} />}
         renderSeparator={(sectionId, rowId) => <View key={rowId} style={styles.separator} />}
