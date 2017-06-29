@@ -9,6 +9,7 @@
   "scripts": {
     "native": "node node_modules/react-native/local-cli/cli.js start",
     "fructose-app": "react-native start --root .fructose/ --resetCache",
+    "build-app": "xcodebuild -project ios/storybooknative.xcodeproj -scheme storybooknative -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
     "test": "jest ./lib && lerna run test",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "prestorybook-native": "node ./node_modules/.bin/rnstl",

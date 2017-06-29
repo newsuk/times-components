@@ -10,8 +10,6 @@ const detoxConfig = {
     "ios.sim.debug": {
       binaryPath:
         "../../ios/build/Build/Products/Debug-iphonesimulator/storybooknative.app",
-      build:
-        "xcodebuild -project ../../ios/storybooknative.xcodeproj -scheme storybooknative -configuration Debug -sdk iphonesimulator -derivedDataPath ../../ios/build",
       type: "ios.simulator",
       name: "iPhone 7"
     }
