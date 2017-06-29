@@ -9,7 +9,8 @@
   },
   "jest": {
     "preset": "react-native",
-    "rootDir": "../../"
+    "rootDir": "../../",
+    "testEnvironment": "jsdom"
   },
   "repository": {
     "type": "git",

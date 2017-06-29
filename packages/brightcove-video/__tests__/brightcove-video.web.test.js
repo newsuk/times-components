@@ -4,40 +4,22 @@ import BrightcoveVideo from "../brightcove-video.web";
 import renderer from "react-test-renderer";
 
 describe("brightcove-video web component", () => {
-  let appendChildMock,
-    dummyElem,
-    dummyVideoElem,
-    dummyWrapperElem,
-    getWrapperElemSpy;
+  let getWrapperElemSpy;
 
   beforeEach(() => {
-    appendChildMock = jest.fn();
-    dummyElem = { dataset: {} };
-    dummyVideoElem = { dataset: {} };
-    dummyWrapperElem = {
-      appendChild: jest.fn().mockImplementation(() => dummyVideoElem)
-    };
-
-    global.document = {
-      createElement: () => dummyElem,
-      getElementById: () => dummyElem,
-      body: {
-        appendChild: appendChildMock
-      }
-    };
-
     getWrapperElemSpy = jest
       .spyOn(BrightcoveVideo.prototype, "getWrapperElem")
-      .mockImplementation(() => dummyWrapperElem);
+      .mockImplementation(() => document.createElement("div"));
   });
 
   afterEach(() => {
-    window.bc = undefined;
-    window.videojs = undefined;
-    BrightcoveVideo.hasLoadedScript = false;
-    delete global.document;
+    delete window.bc;
+    delete window.videojs;
+    delete BrightcoveVideo.players;
 
     getWrapperElemSpy.mockRestore();
+
+    document.body.innerHTML = "";
   });
 
   it("renders correctly", () => {
@@ -49,18 +31,19 @@ describe("brightcove-video web component", () => {
   it("appends script tag to body", () => {
     const tree = renderer.create(<BrightcoveVideo />).toJSON();
 
-    expect(appendChildMock.mock.calls.length).toBe(1);
-    expect(appendChildMock.mock.calls[0][0]).toBe(dummyElem);
+    expect(document.body.innerHTML.trim()).toBe(
+      '<script src="//players.brightcove.net/undefined/default_default/index.min.js"></script>'
+    );
   });
 
-  it.skip("width x height default to 320 x 180", () => {
+  it("width x height default to 320 x 180", () => {
     const tree = renderer.create(<BrightcoveVideo />).toJSON();
 
     expect(tree.children[0].props.width).toBe(320);
     expect(tree.children[0].props.height).toBe(180);
   });
 
-  it.skip("width x height can be overridden", () => {
+  it("width x height can be overridden", () => {
     const tree = renderer
       .create(<BrightcoveVideo height={400} width={600} />)
       .toJSON();
@@ -74,12 +57,12 @@ describe("brightcove-video web component", () => {
       .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" />)
       .toJSON();
 
-    expect(dummyElem.src).toBe(
-      "//players.brightcove.net/[ACCOUNT_ID]/default_default/index.min.js"
+    expect(document.body.innerHTML.trim()).toBe(
+      '<script src="//players.brightcove.net/[ACCOUNT_ID]/default_default/index.min.js"></script>'
     );
   });
 
-  it.skip("passes accountId & videoId to video correctly", () => {
+  it("passes accountId & videoId to video correctly", () => {
     const tree = renderer
       .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
       .toJSON();

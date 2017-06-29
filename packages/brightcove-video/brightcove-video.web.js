@@ -26,8 +26,8 @@ class BrightcoveVideo extends Component {
       return;
     }
 
-    if (!BrightcoveVideo.hasLoadedScript) {
-      BrightcoveVideo.hasLoadedScript = true;
+    // only ever append script once
+    if (!BrightcoveVideo.players) {
       BrightcoveVideo.players = [];
 
       const s = document.createElement("script");
@@ -183,7 +183,5 @@ BrightcoveVideo.defaultProps = {
   width: 320,
   height: 180
 };
-
-BrightcoveVideo.hasLoadedScript = false;
 
 export default BrightcoveVideo;
