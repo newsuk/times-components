@@ -29,14 +29,15 @@ class Wrapper extends Component {
           href={`/iframe.html${window.document.location.search}`}
           target="_parent"
         >
-          Render ad
+          Render ads
         </a>
         <GPT adManager={this.adManager} code="ad-header" />
+        <GPT adManager={this.adManager} code="intervention" />
       </div>
     );
   }
 }
 
-storiesOf("GPT", module).add("GPT", () => {
+storiesOf("GPT", module).add("render two ads in article page", () => {
   return <Wrapper />;
 });
