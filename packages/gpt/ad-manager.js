@@ -3,8 +3,6 @@ import parallel from "run-parallel";
 import get from "lodash.get";
 
 import { getSlotConfig } from "./generate-config";
-import gptManager from "./gpt-manager";
-import pbjsManager from "./pbjs-manager";
 
 export default class AdManager {
   constructor(options = {}) {
@@ -13,26 +11,32 @@ export default class AdManager {
     }
 
     this.adQueue = [];
-    Object.assign(this, ({ adUnit, networkId, section } = options));
+    Object.assign(this, ({
+      adUnit,
+      networkId,
+      section,
+      gptManager,
+      pbjsManager
+    } = options));
     this.initialised = false;
   }
 
   init(callback) {
     // Load scripts if needed be
-    gptManager.loadScript();
-    pbjsManager.loadScript();
+    this.gptManager.loadScript();
+    this.pbjsManager.loadScript();
 
     series(
       [
         // Set services config
         parallel.bind(parallel, [
-          gptManager.setConfig.bind(gptManager),
-          pbjsManager.setConfig.bind(pbjsManager)
+          this.gptManager.setConfig.bind(this.gptManager),
+          this.pbjsManager.setConfig.bind(this.pbjsManager)
         ]),
         // Init services
         parallel.bind(parallel, [
-          gptManager.init.bind(gptManager),
-          pbjsManager.init.bind(pbjsManager, this.adQueue)
+          this.gptManager.init.bind(this.gptManager),
+          this.pbjsManager.init.bind(this.pbjsManager, this.adQueue)
         ])
       ],
       err => {
@@ -63,15 +67,15 @@ export default class AdManager {
   }
 
   display(callback) {
-    if (!get(gptManager, "googletag.cmd") || !get(pbjsManager, "pbjs.que")) {
+    if (!get(this.gptManager, "googletag.cmd") || !get(this.pbjsManager, "pbjs.que")) {
       throw new Error("gpt or pbjs properties are unavailable");
       return;
     }
 
-    gptManager.googletag.cmd.push(() => {
-      pbjsManager.pbjs.que.push(() => {
-        pbjsManager.pbjs.setTargetingForGPTAsync();
-        gptManager.googletag.pubads().refresh();
+    this.gptManager.googletag.cmd.push(() => {
+      this.pbjsManager.pbjs.que.push(() => {
+        this.pbjsManager.pbjs.setTargetingForGPTAsync();
+        this.gptManager.googletag.pubads().refresh();
         return;
       });
     });
@@ -82,13 +86,13 @@ export default class AdManager {
       throw new Error("Ad manager needs to be initialised first");
     }
 
-    if (!get(gptManager, "googletag.cmd")) {
+    if (!get(this.gptManager, "googletag.cmd")) {
       throw new Error("gpt properties are unavailable");
     }
 
-    gptManager.googletag.cmd.push(() => {
+    this.gptManager.googletag.cmd.push(() => {
       const slot = this._createSlot(adSlotId, this.section);
-      slot.addService(gptManager.googletag.pubads());
+      slot.addService(this.gptManager.googletag.pubads());
       slot.defineSizeMapping(this._generateSizings(sizingMap));
 
       // const targeting = omit(options, 'iuPartsSuffix');
@@ -97,16 +101,16 @@ export default class AdManager {
       slot.id = adSlotId;
 
       // Display the ad
-      gptManager.googletag.display(adSlotId);
+      this.gptManager.googletag.display(adSlotId);
     });
   }
 
   _generateSizings(sizingMap) {
-    if (!get(gptManager, "googletag")) {
+    if (!get(this.gptManager, "googletag")) {
       throw new Error("gpt properties are unavailable");
     }
 
-    const mapping = gptManager.googletag.sizeMapping();
+    const mapping = this.gptManager.googletag.sizeMapping();
 
     for (let i = 0; i < sizingMap.length; i++) {
       const size = sizingMap[i];
@@ -117,11 +121,11 @@ export default class AdManager {
   }
 
   _createSlot(adSlotId, section) {
-    if (!get(gptManager, "googletag")) {
+    if (!get(this.gptManager, "googletag")) {
       throw new Error("gpt properties are unavailable");
     }
 
-    return gptManager.googletag.defineSlot(
+    return this.gptManager.googletag.defineSlot(
       `/${this.networkId}/${this.adUnit}/${section}`,
       [],
       adSlotId

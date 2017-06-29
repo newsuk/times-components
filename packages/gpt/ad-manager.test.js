@@ -4,42 +4,49 @@ describe("AdManager", () => {
   const managerOptions = {
     adUnit: "mock-ad-unit",
     networkId: "mock-network-id",
-    section: "mock-section"
+    section: "mock-section",
+    gptManager: require("./gpt-manager").default,
+    pbjsManager: require("./pbjs-manager").default
   };
   let AdManager;
+  let adManager;
 
   beforeEach(() => {
     const window = new JSDOM().window;
     global.window = window;
     global.document = window.document;
-    delete require.cache[require.resolve("./gpt-manager")];
-    delete require.cache[require.resolve("./pbjs-manager")];
     delete require.cache[require.resolve("./ad-manager")];
     AdManager = require("./ad-manager").default;
+    adManager = new AdManager(managerOptions);
   });
 
   afterAll(() => {
     delete global.window;
     delete global.document;
-    delete require.cache[require.resolve("./gpt-manager")];
-    delete require.cache[require.resolve("./pbjs-manager")];
     delete require.cache[require.resolve("./ad-manager")];
   });
 
   it("constructor returns an AdManager instance with correct props", () => {
-    const adManager = new AdManager(managerOptions);
     expect(adManager).toBeInstanceOf(AdManager);
-    expect(adManager.adUnit).toBe(managerOptions.adUnit);
-    expect(adManager.networkId).toBe(managerOptions.networkId);
-    expect(adManager.section).toBe(managerOptions.section);
     expect(adManager.initialised).toBeFalsy();
     expect(adManager.adQueue).toHaveLength(0);
   });
 
-  it("init function sets the required scripts", () => {
-    const adManager = new AdManager(managerOptions);
-    const pbjsManager = require("./pbjs-manager");
-    const gptManager = require("./gpt-manager");
+  it("constructor returns an AdManager instance with adUnit", () => {
+    expect(adManager.adUnit).toBe(managerOptions.adUnit);
+  });
+
+  it("constructor returns an AdManager instance with networkId", () => {
+    expect(adManager.networkId).toBe(managerOptions.networkId);
+  });
+
+  it("constructor returns an AdManager instance with section", () => {
+    expect(adManager.section).toBe(managerOptions.section);
+  });
+
+  it("init function sets the required scripts", (done) => {
+    const pbjsManager = adManager.pbjsManager;
+    const gptManager = adManager.gptManager;
 
     const pbjsLoadScript = jest.fn();
     const gptLoadScript = jest.fn();
@@ -55,13 +62,14 @@ describe("AdManager", () => {
       expect(pbjsLoadScript).toHaveBeenCalled();
       expect(gptLoadScript).toHaveBeenCalled();
       expect(adManager.initialised).toBeTruthy();
+      done();
     });
   });
 
-  it("registerAd inserts configured ad in the queue and push it to gpt on it", () => {
-    const adManager = new AdManager(managerOptions);
-    const pbjsManager = require("./pbjs-manager");
-    const gptManager = require("./gpt-manager");
+  it("registerAd inserts configured ad in the queue and push it to gpt on it", (done) => {
+    const pbjsManager = adManager.pbjsManager;
+    const gptManager = adManager.gptManager;
+
     const windowWidth = 100;
     const mockAd = {
       code: "mock-code",
@@ -92,11 +100,11 @@ describe("AdManager", () => {
     gptManager.init = cb => cb();
     adManager.init(() => {
       expect(adManager._pushAdToGPT).toHaveBeenCalled();
+      done();
     });
   });
 
   it("unregister one ad", () => {
-    const adManager = new AdManager(managerOptions);
     adManager.adQueue = [
       {
         id: "id-0"
@@ -112,7 +120,6 @@ describe("AdManager", () => {
   });
 
   it("remove one item from the queue", () => {
-    const adManager = new AdManager(managerOptions);
     const queue = [
       {
         id: "id-0"
@@ -128,9 +135,9 @@ describe("AdManager", () => {
   });
 
   it("display should tell pbjs to handle targeting and gpt to refresh", () => {
-    adManager = new AdManager(managerOptions);
-    const gptManager = require("./gpt-manager").default;
-    const pbjsManager = require("./pbjs-manager").default;
+    const pbjsManager = adManager.pbjsManager;
+    const gptManager = adManager.gptManager;
+
     const refresh = jest.fn();
     const pubads = jest.fn().mockImplementation(() => {
       return {
@@ -158,14 +165,12 @@ describe("AdManager", () => {
   });
 
   it("pushAdToGPT gives an error if ad manager is not initialised", () => {
-    adManager = new AdManager(managerOptions);
     expect(adManager.initialised).toEqual(false);
     expect(adManager._pushAdToGPT).toThrowError();
   });
 
   it("pushAdToGPT creates and sets slot and asks gpt to display", () => {
-    adManager = new AdManager(managerOptions);
-    const gptManager = require("./gpt-manager").default;
+    const gptManager = adManager.gptManager;
 
     const addService = jest.fn();
     const defineSizeMapping = jest.fn();
@@ -204,8 +209,7 @@ describe("AdManager", () => {
   });
 
   it("generateSizings calls gpt googletag to set sizings", () => {
-    const gptManager = require("./gpt-manager").default;
-    adManager = new AdManager(managerOptions);
+    const gptManager = adManager.gptManager;
 
     const addSize = jest.fn();
     const build = jest.fn();
@@ -233,8 +237,8 @@ describe("AdManager", () => {
   });
 
   it("createSlot calls gpt googletag to set slots", () => {
-    const gptManager = require("./gpt-manager").default;
-    adManager = new AdManager(managerOptions);
+    const gptManager = adManager.gptManager;
+
     gptManager.googletag = {
       defineSlot: jest.fn()
     };

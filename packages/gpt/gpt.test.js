@@ -11,7 +11,9 @@ describe("Gpt test", () => {
     adManager = new AdManager({
       networkId: "25436805",
       adUnit: "d.thetimes.co.uk",
-      section: "article"
+      section: "article",
+      gptManager: require("./gpt-manager").default,
+      pbjsManager: require("./pbjs-manager").default
     });
   });
 
