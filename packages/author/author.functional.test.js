@@ -1,6 +1,3 @@
-import detox from "detox";
-import { FructoseServer } from "hjkadshhjkl-server";
-import Client from "hjkadshhjkl-client";
 import { client, setup, teardown } from "../../.fructose/setup";
 
 beforeAll(async () => {
