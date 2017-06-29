@@ -26,10 +26,6 @@ class BrightcoveVideo extends Component {
       return;
     }
 
-    // video element must not be a React component as brightcove SDK causes loss of React's internal reference
-    // THUS: add it the old fasioned way...
-    this.getWrapperElem().appendChild(this.createVideoElem());
-
     if (!BrightcoveVideo.hasLoadedScript) {
       BrightcoveVideo.hasLoadedScript = true;
       BrightcoveVideo.players = [];
@@ -64,21 +60,6 @@ class BrightcoveVideo extends Component {
 
   getWrapperElem() {
     return this._wrapperElem;
-  }
-
-  createVideoElem() {
-    const elem = document.createElement("video");
-    elem.id = this.state.id;
-    elem.width = this.props.width;
-    elem.height = this.props.height;
-    elem.dataset.embed = "default";
-    elem.dataset.videoId = this.props.videoId;
-    elem.dataset.account = this.props.accountId;
-    elem.dataset.player = "default";
-    elem.className = "video-js";
-    elem.controls = "controls";
-
-    return elem;
   }
 
   static handlePlayerReady(context) {
@@ -180,11 +161,20 @@ class BrightcoveVideo extends Component {
     }
 
     return (
-      <div
-        ref={ref => {
-          this._wrapperElem = ref;
-        }}
-      />
+      <div>
+        <video
+          id={this.state.id}
+          width={this.props.width}
+          height={this.props.height}
+          data-embed="default"
+          data-video-id={this.props.videoId}
+          data-account={this.props.accountId}
+          data-player="default"
+          data-application-id
+          className="video-js"
+          controls
+        />
+      </div>
     );
   }
 }
