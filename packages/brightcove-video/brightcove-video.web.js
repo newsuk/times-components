@@ -28,9 +28,7 @@ class BrightcoveVideo extends Component {
     if (!BrightcoveVideo.players) {
       BrightcoveVideo.players = [];
 
-      const s = document.createElement("script");
-
-      s.src = BrightcoveVideo.getScriptUrl(this.props.accountId);
+      const s = this.createScript();
 
       s.onload = () => {
         BrightcoveVideo.players.forEach(player =>
@@ -50,10 +48,21 @@ class BrightcoveVideo extends Component {
         this.emitError(uriErr);
       };
 
-      document.body.appendChild(s);
+      this.appendScript(s);
     }
 
     this.init();
+  }
+
+  createScript() {
+    const s = document.createElement("script");
+    s.src = BrightcoveVideo.getScriptUrl(this.props.accountId);
+
+    return s;
+  }
+
+  appendScript(s) {
+    document.body.appendChild(s);
   }
 
   static handlePlayerReady(context) {

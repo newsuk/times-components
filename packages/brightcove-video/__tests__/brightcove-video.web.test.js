@@ -1,5 +1,6 @@
 import { View } from "react-native";
 import React from "react";
+import ReactDOM from "react-dom";
 import BrightcoveVideo from "../brightcove-video.web";
 import renderer from "react-test-renderer";
 
@@ -109,5 +110,118 @@ describe("brightcove-video web component", () => {
     expect(window.videojs.mock.calls).toHaveLength(2);
 
     initVideoSpy.mockRestore();
+  });
+
+  describe("jsdom tests", () => {
+    let reactWrapper;
+
+    beforeEach(() => {
+      reactWrapper = document.body.appendChild(document.createElement("div"));
+    });
+
+    it("will emit an error if account id is wrong", done => {
+      const component = (
+        <BrightcoveVideo
+          accountId="[X]"
+          videoId="[VIDEO_ID]"
+          onError={err => {
+            expect(err).toMatchObject({
+              code: "",
+              message:
+                "The script //players.brightcove.net/[X]/default_default/index.min.js is not accessible."
+            });
+            done();
+          }}
+        />
+      );
+
+      ReactDOM.render(component, reactWrapper);
+    });
+
+    describe("player events", () => {
+      let dummyScript, createScript, appendScriptSpy, dummyPlayer;
+
+      beforeEach(() => {
+        dummyScript = {};
+        createScriptSpy = jest
+          .spyOn(BrightcoveVideo.prototype, "createScript")
+          .mockReturnValue(dummyScript);
+
+        appendScriptSpy = jest
+          .spyOn(BrightcoveVideo.prototype, "appendScript")
+          .mockImplementation(() => {});
+
+        dummyPlayer = {};
+
+        window.videojs = () => dummyPlayer;
+      });
+
+      afterEach(() => {
+        createScriptSpy.mockRestore();
+        appendScriptSpy.mockRestore();
+
+        delete window.videojs;
+      });
+
+      it("will emit an error if the brightcove player emits an error", done => {
+        dummyPlayer.error = () => ({
+          code: "[CODE]",
+          message: "[MESSAGE]"
+        });
+        dummyPlayer.ready = () => ({});
+        dummyPlayer.on = (what, fn) => {
+          if (what === "error") {
+            fn();
+          }
+        };
+
+        const component = (
+          <BrightcoveVideo
+            accountId="57838016001"
+            videoId="[X]"
+            onError={err => {
+              expect(err).toMatchObject({
+                code: "[CODE]",
+                message: "[MESSAGE]"
+              });
+              done();
+            }}
+          />
+        );
+
+        ReactDOM.render(component, reactWrapper);
+
+        dummyScript.onload();
+      });
+
+      it("will emit a 'play' event", done => {
+        const evtReg = {};
+
+        dummyPlayer.currentTime = () => "Judgement Day";
+        dummyPlayer.ready = fn => {
+          fn();
+        };
+        dummyPlayer.on = (evtType, fn) => {
+          evtReg[evtType] = fn;
+        };
+
+        const component = (
+          <BrightcoveVideo
+            accountId="57838016001"
+            videoId="[X]"
+            onChange={state => {
+              expect(state.playerStatus).toBe("playing");
+              done();
+            }}
+          />
+        );
+
+        ReactDOM.render(component, reactWrapper);
+
+        dummyScript.onload();
+
+        evtReg.play();
+      });
+    });
   });
 });
