@@ -4,20 +4,11 @@ import BrightcoveVideo from "../brightcove-video.web";
 import renderer from "react-test-renderer";
 
 describe("brightcove-video web component", () => {
-  let getWrapperElemSpy;
-
-  beforeEach(() => {
-    getWrapperElemSpy = jest
-      .spyOn(BrightcoveVideo.prototype, "getWrapperElem")
-      .mockImplementation(() => document.createElement("div"));
-  });
-
   afterEach(() => {
     delete window.bc;
     delete window.videojs;
     delete BrightcoveVideo.players;
-
-    getWrapperElemSpy.mockRestore();
+    BrightcoveVideo.globalErrors = [];
 
     document.body.innerHTML = "";
   });
@@ -34,6 +25,14 @@ describe("brightcove-video web component", () => {
     expect(document.body.innerHTML.trim()).toBe(
       '<script src="//players.brightcove.net/undefined/default_default/index.min.js"></script>'
     );
+  });
+
+  it("will not append script tag to body if there has been a global error", () => {
+    BrightcoveVideo.globalErrors.push({});
+
+    const tree = renderer.create(<BrightcoveVideo />).toJSON();
+
+    expect(document.body.innerHTML.trim()).toBe("");
   });
 
   it("width x height default to 320 x 180", () => {

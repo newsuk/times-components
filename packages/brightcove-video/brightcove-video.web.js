@@ -3,8 +3,6 @@ import { View, Text } from "react-native";
 
 let index = 0;
 
-const globalErrors = [];
-
 class BrightcoveVideo extends Component {
   constructor(props) {
     super(props);
@@ -15,7 +13,7 @@ class BrightcoveVideo extends Component {
       id: `${props.videoId}-${props.accountId}-${index}`,
       accountId: props.accountId,
       videoId: props.videoId,
-      errors: [].concat(globalErrors),
+      errors: [].concat(BrightcoveVideo.globalErrors),
       playerStatus: "paused",
       playheadPosition: 0
     };
@@ -47,7 +45,7 @@ class BrightcoveVideo extends Component {
           message: `The script ${err.target.src} is not accessible.`
         };
 
-        globalErrors.push(uriErr);
+        BrightcoveVideo.globalErrors.push(uriErr);
 
         this.emitError(uriErr);
       };
@@ -56,10 +54,6 @@ class BrightcoveVideo extends Component {
     }
 
     this.init();
-  }
-
-  getWrapperElem() {
-    return this._wrapperElem;
   }
 
   static handlePlayerReady(context) {
@@ -178,6 +172,8 @@ class BrightcoveVideo extends Component {
     );
   }
 }
+
+BrightcoveVideo.globalErrors = [];
 
 BrightcoveVideo.defaultProps = {
   width: 320,
