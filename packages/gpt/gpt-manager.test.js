@@ -1,20 +1,16 @@
 import { JSDOM } from "jsdom";
+import gptManager from "./gpt-manager";
 
 describe("GptManager", () => {
-  let gptManager;
-
   beforeEach(() => {
     const window = new JSDOM().window;
     global.window = window;
     global.document = window.document;
-    delete require.cache[require.resolve("./gpt-manager")];
-    gptManager = require("./gpt-manager").default;
   });
 
   afterAll(() => {
     delete global.window;
     delete global.document;
-    delete require.cache[require.resolve("./gpt-manager")];
   });
 
   it("gptManager singleton is initialised with correct props", () => {

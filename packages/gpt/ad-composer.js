@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import { Broadcast } from "react-broadcast";
 
-import gptManager from "./gpt-manager";
-import pbjsManager from "./pbjs-manager";
-import { getSlotConfig } from "./generate-config";
 import AdManager from "./ad-manager";
+import { getSlotConfig } from "./generate-config";
+import gptManager from "./gpt-manager";
+import pbjs from "./pbjs-manager";
+import { pbjs as pbjsConfig } from "./config";
+const pbjsManager = pbjs(pbjsConfig);
 
 class AdComposer extends Component {
   constructor(props) {

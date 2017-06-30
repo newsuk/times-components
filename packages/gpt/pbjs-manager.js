@@ -1,10 +1,9 @@
 import get from "lodash.get";
-import { pbjs as config } from "./config";
 
 const PbjsManager = class PbjsManager {
   constructor(options) {
     if (!new.target) {
-      return new PbjsManager(config);
+      return new PbjsManager(options);
     }
 
     this._options = options;
@@ -104,4 +103,4 @@ const PbjsManager = class PbjsManager {
   }
 };
 
-export default new PbjsManager(config);
+export default config => new PbjsManager(config);

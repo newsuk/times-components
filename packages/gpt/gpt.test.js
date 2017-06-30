@@ -1,12 +1,14 @@
 import "react-native";
 import React from "react";
 import GPT from "./gpt.web";
-import AdManager from "./ad-manager";
 import renderer from "react-test-renderer";
 
-import gptManager from "./gpt-manager";
-import pbjsManager from "./pbjs-manager";
+import AdManager from "./ad-manager";
 import { getSlotConfig } from "./generate-config";
+import gptManager from "./gpt-manager";
+import pbjs from "./pbjs-manager";
+import { pbjs as pbjsConfig } from "./config";
+const pbjsManager = pbjs(pbjsConfig);
 
 describe("Gpt test", () => {
   let adManager;

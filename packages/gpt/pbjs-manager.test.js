@@ -1,4 +1,6 @@
 import { JSDOM } from "jsdom";
+import pbjs from "./pbjs-manager";
+import { pbjs as pbjsConfig } from "./config";
 
 describe("PrebidManager", () => {
   let pbjsManager;
@@ -7,14 +9,12 @@ describe("PrebidManager", () => {
     const window = new JSDOM().window;
     global.window = window;
     global.document = window.document;
-    delete require.cache[require.resolve("./pbjs-manager")];
-    pbjsManager = require("./pbjs-manager").default;
+    pbjsManager = pbjs(pbjsConfig);
   });
 
   afterAll(() => {
     delete global.window;
     delete global.document;
-    delete require.cache[require.resolve("./pbjs-manager")];
   });
 
   it("pbjsManager singleton is initialised with correct props", () => {

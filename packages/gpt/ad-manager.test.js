@@ -1,8 +1,11 @@
 import { JSDOM } from "jsdom";
 
-import gptManager from "./gpt-manager";
-import pbjsManager from "./pbjs-manager";
+import AdManager from "./ad-manager";
 import { getSlotConfig } from "./generate-config";
+import gptManager from "./gpt-manager";
+import pbjs from "./pbjs-manager";
+import { pbjs as pbjsConfig } from "./config";
+const pbjsManager = pbjs(pbjsConfig);
 
 describe("AdManager", () => {
   const managerOptions = {
@@ -13,22 +16,18 @@ describe("AdManager", () => {
     pbjsManager,
     getSlotConfig
   };
-  let AdManager;
   let adManager;
 
   beforeEach(() => {
     const window = new JSDOM().window;
     global.window = window;
     global.document = window.document;
-    delete require.cache[require.resolve("./ad-manager")];
-    AdManager = require("./ad-manager").default;
     adManager = new AdManager(managerOptions);
   });
 
   afterAll(() => {
     delete global.window;
     delete global.document;
-    delete require.cache[require.resolve("./ad-manager")];
   });
 
   it("constructor returns an AdManager instance with correct props", () => {

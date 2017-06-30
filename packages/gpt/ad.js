@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
+
 import { Subscriber } from "react-broadcast";
 
 import GPT from "./gpt.web";
@@ -16,5 +18,9 @@ class Ad extends Component {
     );
   }
 }
+
+Ad.propTypes = {
+  code: PropTypes.string.isRequired
+};
 
 export default Ad;
