@@ -15,13 +15,13 @@ const styles = StyleSheet.create({
 });
 
 storiesOf("Image", module)
-.add("Adjusted to parent view size", () =>
-  <View>
-    <Image source={exampleImage} />
-  </View>
-)
-.add("Resized to half of full width, keeping aspect ratio", () =>
-  <View style={styles.halfWidthView}>
-    <Image source={exampleImage} />
-  </View>
-);
+  .add("Adjusted to parent view size", () =>
+    <View>
+      <Image source={exampleImage} />
+    </View>
+  )
+  .add("Resized to half of full width, keeping aspect ratio", () =>
+    <View style={styles.halfWidthView}>
+      <Image source={exampleImage} />
+    </View>
+  );

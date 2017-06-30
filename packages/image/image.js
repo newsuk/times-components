@@ -20,7 +20,7 @@ export default class extends React.Component {
     const containerWidth = event.nativeEvent.layout.width;
 
     const { getSize = Image.getSize } = this.props;
-    const imageUri = (this.props.source && this.props.source.uri) || '';
+    const imageUri = (this.props.source && this.props.source.uri) || "";
 
     getSize(imageUri, (width, height) => {
       this.setState({
@@ -38,10 +38,7 @@ export default class extends React.Component {
 
     return (
       <View onLayout={this.handleLayout}>
-        <Image
-          style={styles}
-          {...this.props}
-        />
+        <Image style={styles} {...this.props} />
       </View>
     );
   }

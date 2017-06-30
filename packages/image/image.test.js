@@ -25,14 +25,14 @@ it("renders snapshot correctly correctly", () => {
 });
 
 it("lays out image with correct aspect ratio", done => {
- const comp = new Image({
-   getSize: (_, cb) => {
-     cb(10, 20);
-   },
-   source: {
-     uri: "http://example.com/image.jpg"
-   }
- });
+  const comp = new Image({
+    getSize: (_, cb) => {
+      cb(10, 20);
+    },
+    source: {
+      uri: "http://example.com/image.jpg"
+    }
+  });
 
   comp.setState = ({ width, height }) => {
     expect(width).toEqual(20);
@@ -53,5 +53,5 @@ it("loads the correct url", () => {
   const comp = renderer.create(<Image {...props} />).toJSON();
   //Image is inside a View to handle resizing events
   const target = comp.children[0].props.source.uri;
-  expect(target).toBe(props.source.uri)
+  expect(target).toBe(props.source.uri);
 });
