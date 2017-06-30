@@ -3,13 +3,7 @@ import React from "react";
 import Image from "./image";
 import renderer from "react-test-renderer";
 
-it("renders correctly", () => {
-  const tree = renderer.create(<Image />).toJSON();
-
-  expect(tree).toBeTruthy();
-});
-
-it("renders snapshot correctly correctly", () => {
+it("renders snapshot correctly", () => {
   const props = {
     source: {
       uri: "http://example.com/image.jpg"

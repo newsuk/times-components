@@ -13,10 +13,10 @@ export default class extends React.Component {
       height: styles.height || 0
     };
 
-    this.handleLayout = this.handleLayout.bind(this);
+    this._handleLayout = this._handleLayout.bind(this);
   }
 
-  handleLayout(event) {
+  _handleLayout(event) {
     const containerWidth = event.nativeEvent.layout.width;
 
     const { getSize = Image.getSize } = this.props;
@@ -37,7 +37,7 @@ export default class extends React.Component {
     });
 
     return (
-      <View onLayout={this.handleLayout}>
+      <View onLayout={this._handleLayout}>
         <Image style={styles} {...this.props} />
       </View>
     );
