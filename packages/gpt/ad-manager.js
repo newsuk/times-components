@@ -2,8 +2,6 @@ import series from "run-series";
 import parallel from "run-parallel";
 import get from "lodash.get";
 
-import { getSlotConfig } from "./generate-config";
-
 export default class AdManager {
   constructor(options = {}) {
     if (!new.target) {
@@ -11,13 +9,17 @@ export default class AdManager {
     }
 
     this.adQueue = [];
-    Object.assign(this, ({
-      adUnit,
-      networkId,
-      section,
-      gptManager,
-      pbjsManager
-    } = options));
+    Object.assign(
+      this,
+      ({
+        adUnit,
+        networkId,
+        section,
+        gptManager,
+        pbjsManager,
+        getSlotConfig
+      } = options)
+    );
     this.initialised = false;
   }
 
@@ -59,7 +61,7 @@ export default class AdManager {
   }
 
   registerAd(code, { width = 1024 } = {}) {
-    this.adQueue.push(getSlotConfig(this.section, code, width));
+    this.adQueue.push(this.getSlotConfig(this.section, code, width));
   }
 
   unregisterAd(code) {
@@ -67,7 +69,10 @@ export default class AdManager {
   }
 
   display(callback) {
-    if (!get(this.gptManager, "googletag.cmd") || !get(this.pbjsManager, "pbjs.que")) {
+    if (
+      !get(this.gptManager, "googletag.cmd") ||
+      !get(this.pbjsManager, "pbjs.que")
+    ) {
       throw new Error("gpt or pbjs properties are unavailable");
       return;
     }

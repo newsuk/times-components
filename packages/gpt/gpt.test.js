@@ -4,6 +4,10 @@ import GPT from "./gpt.web";
 import AdManager from "./ad-manager";
 import renderer from "react-test-renderer";
 
+import gptManager from "./gpt-manager";
+import pbjsManager from "./pbjs-manager";
+import { getSlotConfig } from "./generate-config";
+
 describe("Gpt test", () => {
   let adManager;
 
@@ -12,8 +16,9 @@ describe("Gpt test", () => {
       networkId: "25436805",
       adUnit: "d.thetimes.co.uk",
       section: "article",
-      gptManager: require("./gpt-manager").default,
-      pbjsManager: require("./pbjs-manager").default
+      gptManager,
+      pbjsManager,
+      getSlotConfig
     });
   });
 

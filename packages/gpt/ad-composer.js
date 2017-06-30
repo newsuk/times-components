@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Broadcast } from "react-broadcast";
 
+import gptManager from "./gpt-manager";
+import pbjsManager from "./pbjs-manager";
+import { getSlotConfig } from "./generate-config";
 import AdManager from "./ad-manager";
 
 class AdComposer extends Component {
@@ -11,8 +14,9 @@ class AdComposer extends Component {
       networkId: "25436805",
       adUnit: "d.thetimes.co.uk",
       section: "article",
-      gptManager: require("./gpt-manager").default,
-      pbjsManager: require("./pbjs-manager").default
+      gptManager,
+      pbjsManager,
+      getSlotConfig
     });
   }
 

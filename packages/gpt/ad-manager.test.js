@@ -1,12 +1,17 @@
 import { JSDOM } from "jsdom";
 
+import gptManager from "./gpt-manager";
+import pbjsManager from "./pbjs-manager";
+import { getSlotConfig } from "./generate-config";
+
 describe("AdManager", () => {
   const managerOptions = {
     adUnit: "mock-ad-unit",
     networkId: "mock-network-id",
     section: "mock-section",
-    gptManager: require("./gpt-manager").default,
-    pbjsManager: require("./pbjs-manager").default
+    gptManager,
+    pbjsManager,
+    getSlotConfig
   };
   let AdManager;
   let adManager;
@@ -44,7 +49,7 @@ describe("AdManager", () => {
     expect(adManager.section).toBe(managerOptions.section);
   });
 
-  it("init function sets the required scripts", (done) => {
+  it("init function sets the required scripts", done => {
     const pbjsManager = adManager.pbjsManager;
     const gptManager = adManager.gptManager;
 
@@ -66,7 +71,7 @@ describe("AdManager", () => {
     });
   });
 
-  it("registerAd inserts configured ad in the queue and push it to gpt on it", (done) => {
+  it("registerAd inserts configured ad in the queue and push it to gpt on it", done => {
     const pbjsManager = adManager.pbjsManager;
     const gptManager = adManager.gptManager;
 
@@ -76,10 +81,8 @@ describe("AdManager", () => {
       mappings: [100, 200],
       options: { foo: "bar" }
     };
-    delete require.cache[require.resolve("./generate-config")];
-    const generateConfig = require("./generate-config");
 
-    generateConfig.getSlotConfig = jest
+    adManager.getSlotConfig = jest
       .fn()
       .mockImplementation((section, code, width) => {
         expect(section).toEqual(adManager.section);
@@ -90,7 +93,7 @@ describe("AdManager", () => {
     adManager._pushAdToGPT = jest.fn();
 
     adManager.registerAd(mockAd.code, { width: windowWidth });
-    expect(generateConfig.getSlotConfig).toHaveBeenCalled();
+    expect(adManager.getSlotConfig).toHaveBeenCalled();
     expect(adManager.adQueue).toHaveLength(1);
     expect(adManager.adQueue[0]).toEqual(mockAd);
 
