@@ -49,7 +49,8 @@ it("lays out the image with the correct aspect ratio", done => {
     return done();
   };
 
-  comp.handleLayout({ nativeEvent: { layout: { width: 20 } } });
+  comp.setState = testSetState(20, 15, done);
+  comp._handleLayout({ nativeEvent: { layout: { width: 20 } } });
 });
 
 it("sets the expected dimensions for a given state", () => {
