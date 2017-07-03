@@ -25,9 +25,13 @@ storiesOf("ArticleSummary", module)
     </View>
   )
   .add("ArticleSummary with changed styles", () => {
+    const articleProps = {
+      ...props,
+      style
+    };
     return (
       <View style={{ width: "100%" }}>
-        <ArticleSummary {...{ ...props, style }} />
+        <ArticleSummary {...articleProps} />
       </View>
     );
   });

@@ -4,17 +4,12 @@ import { StyleSheet } from "react-native";
 import ArticleSummary from "./article-summary";
 import renderer from "react-test-renderer";
 
-it("renders correctly", () => {
-  const tree = renderer.create(<ArticleSummary />).toJSON();
-  expect(tree).toBeTruthy();
-});
-
-it('renders a snapshot', () => {
+it("renders a snapshot", () => {
   const tree = renderer.create(<ArticleSummary />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
-it('renders a snapshot with content and styles', () => {
+it("renders a snapshot with content and styles", () => {
   const style = StyleSheet.create({
     headline: {
       color: "red"
@@ -30,7 +25,7 @@ it('renders a snapshot with content and styles', () => {
       "When I was the official celebrity sex correspondent on Style magazine, every so often I would have to address the abject failure of male...  ",
     style
   };
-  const tree = renderer.create(<ArticleSummary {...props}/>).toJSON();
+  const tree = renderer.create(<ArticleSummary {...props} />).toJSON();
 
   expect(tree).toMatchSnapshot();
 });
