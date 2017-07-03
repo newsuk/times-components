@@ -6,6 +6,8 @@ import renderer from "react-test-renderer";
 
 describe("brightcove-video web component", () => {
   afterEach(() => {
+    window.bc = null;
+    window.videojs = null;
     delete window.bc;
     delete window.videojs;
     delete BrightcoveVideo.players;
@@ -36,14 +38,14 @@ describe("brightcove-video web component", () => {
     expect(document.body.innerHTML.trim()).toBe("");
   });
 
-  it("width x height default to 320 x 180", () => {
+  it("has width x height that default to 320 x 180", () => {
     const tree = renderer.create(<BrightcoveVideo />).toJSON();
 
     expect(tree.children[0].props.width).toBe(320);
     expect(tree.children[0].props.height).toBe(180);
   });
 
-  it("width x height can be overridden", () => {
+  it("has width x height that can be overridden", () => {
     const tree = renderer
       .create(<BrightcoveVideo height={400} width={600} />)
       .toJSON();
@@ -119,6 +121,10 @@ describe("brightcove-video web component", () => {
       reactWrapper = document.body.appendChild(document.createElement("div"));
     });
 
+    afterEach(() => {
+      document.body.removeChild(reactWrapper);
+    });
+
     it("will emit an error if account id is wrong", done => {
       const component = (
         <BrightcoveVideo
@@ -151,7 +157,13 @@ describe("brightcove-video web component", () => {
           .spyOn(BrightcoveVideo.prototype, "appendScript")
           .mockImplementation(() => {});
 
-        dummyPlayer = {};
+        dummyPlayer = {
+          ready: fn => {
+            setTimeout(() => {
+              fn();
+            }, 20);
+          }
+        };
 
         window.videojs = () => dummyPlayer;
       });
@@ -168,7 +180,7 @@ describe("brightcove-video web component", () => {
           code: "[CODE]",
           message: "[MESSAGE]"
         });
-        dummyPlayer.ready = () => ({});
+
         dummyPlayer.on = (what, fn) => {
           if (what === "error") {
             fn();
@@ -193,7 +205,7 @@ describe("brightcove-video web component", () => {
 
         setTimeout(() => {
           dummyScript.onload();
-        });
+        }, 20);
       });
 
       describe("play / pause / seek", () => {
@@ -202,9 +214,6 @@ describe("brightcove-video web component", () => {
         beforeEach(() => {
           evtReg = {};
 
-          dummyPlayer.ready = fn => {
-            fn();
-          };
           dummyPlayer.on = (evtType, fn) => {
             evtReg[evtType] = fn;
           };
@@ -228,9 +237,13 @@ describe("brightcove-video web component", () => {
 
           ReactDOM.render(component, reactWrapper);
 
-          dummyScript.onload();
+          setTimeout(() => {
+            dummyScript.onload();
 
-          evtReg.play();
+            setTimeout(() => {
+              evtReg.play();
+            }, 50);
+          }, 50);
         });
 
         it("will emit a 'pause' event", done => {
@@ -251,9 +264,13 @@ describe("brightcove-video web component", () => {
 
           ReactDOM.render(component, reactWrapper);
 
-          dummyScript.onload();
+          setTimeout(() => {
+            dummyScript.onload();
 
-          evtReg.pause();
+            setTimeout(() => {
+              evtReg.pause();
+            }, 50);
+          }, 50);
         });
 
         it("will emit a 'seeked' event", done => {
@@ -274,9 +291,13 @@ describe("brightcove-video web component", () => {
 
           ReactDOM.render(component, reactWrapper);
 
-          dummyScript.onload();
+          setTimeout(() => {
+            dummyScript.onload();
 
-          evtReg.seeked();
+            setTimeout(() => {
+              evtReg.seeked();
+            }, 50);
+          }, 50);
         });
       });
     });
