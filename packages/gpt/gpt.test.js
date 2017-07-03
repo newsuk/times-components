@@ -24,14 +24,6 @@ describe("Gpt test", () => {
     });
   });
 
-  it("renders correctly", () => {
-    const tree = renderer
-      .create(<GPT adManager={adManager} code="ad-header" />)
-      .toJSON();
-
-    expect(tree).toBeTruthy();
-  });
-
   it("renders a snapshot", () => {
     const tree = renderer
       .create(<GPT adManager={adManager} code="ad-header" />)
