@@ -3,6 +3,15 @@ import React from "react";
 import Image from "./image";
 import renderer from "react-test-renderer";
 
+function testSetState(width, height, done) {
+  return ({ width, height }) => {
+    expect(width).toEqual(width);
+    expect(height).toEqual(height);
+
+    return done();
+  };
+}
+
 it("renders snapshot correctly", () => {
   const props = {
     source: {
@@ -14,28 +23,47 @@ it("renders snapshot correctly", () => {
     }
   };
   const tree = renderer.create(<Image {...props} />).toJSON();
-
   expect(tree).toMatchSnapshot();
 });
 
 it("lays out image with correct aspect ratio", done => {
   const comp = new Image({
-    getSize: (_, cb) => {
-      cb(10, 20);
+    getSize: (uri, cb) => {
+      expect(uri).toEqual("http://example.com/image.jpg");
+      return cb(10, 20);
     },
     source: {
       uri: "http://example.com/image.jpg"
     }
   });
 
-  comp.setState = ({ width, height }) => {
-    expect(width).toEqual(20);
-    expect(height).toEqual(40);
+  comp.setState = testSetState(20, 40, done);
+  comp._handleLayout({ nativeEvent: { layout: { width: 20 } } });
+});
 
-    done();
-  };
+it("use empty string as default source", done => {
+  const comp = new Image({
+    getSize: (url, _, cb) => {
+      return cb();
+    }
+  });
 
-  comp.handleLayout({ nativeEvent: { layout: { width: 20 } } });
+  comp.setState = testSetState(20, 15, done);
+  comp._handleLayout({ nativeEvent: { layout: { width: 20 } } });
+});
+
+it("use default image when get size fails", done => {
+  const comp = new Image({
+    getSize: (url, _, cb) => {
+      return cb();
+    },
+    source: {
+      uri: "http://example.com/image.jpg"
+    }
+  });
+
+  comp.setState = testSetState(20, 15, done);
+  comp._handleLayout({ nativeEvent: { layout: { width: 20 } } });
 });
 
 it("loads the correct url", () => {

@@ -1,10 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders snapshot correctly correctly 1`] = `
+exports[`renders snapshot correctly 1`] = `
 <View
   onLayout={[Function]}
 >
   <Image
+    defaultSource={1}
     source={
       Object {
         "uri": "http://example.com/image.jpg",

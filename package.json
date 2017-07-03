@@ -86,10 +86,6 @@
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",
     "react-native": "0.44.1",
-<<<<<<< HEAD
-=======
-    "react-native-web": "0.0.97",
->>>>>>> fix: correct dependencies version
     "react-native-storybook-loader": "1.3.1",
     "react-native-web": "0.0.97",
     "rimraf": "2.6.1",

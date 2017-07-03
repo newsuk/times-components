@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Image } from "react-native";
 import merge from "lodash.merge";
+import defaultSource from "./assets/default.png";
 
 export default class extends React.Component {
   constructor(props) {
@@ -17,17 +18,20 @@ export default class extends React.Component {
   }
 
   _handleLayout(event) {
+    const setSize = (width, height) => {
+      this.setState({
+        width: containerWidth,
+        height: containerWidth * height / width
+      });
+    };
+
     const containerWidth = event.nativeEvent.layout.width;
 
     const { getSize = Image.getSize } = this.props;
     const imageUri = (this.props.source && this.props.source.uri) || "";
 
-    getSize(imageUri, (width, height) => {
-      this.setState({
-        width: containerWidth,
-        height: containerWidth * height / width
-      });
-    });
+    // the size for the default image must match the static image
+    getSize(imageUri, setSize, () => setSize(800, 600));
   }
 
   render() {
@@ -38,7 +42,7 @@ export default class extends React.Component {
 
     return (
       <View onLayout={this._handleLayout}>
-        <Image style={styles} {...this.props} />
+        <Image {...this.props} defaultSource={defaultSource} style={styles} />
       </View>
     );
   }
