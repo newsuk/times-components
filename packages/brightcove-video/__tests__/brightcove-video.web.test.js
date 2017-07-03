@@ -191,36 +191,93 @@ describe("brightcove-video web component", () => {
 
         ReactDOM.render(component, reactWrapper);
 
-        dummyScript.onload();
+        setTimeout(() => {
+          dummyScript.onload();
+        });
       });
 
-      it("will emit a 'play' event", done => {
-        const evtReg = {};
+      describe("play / pause / seek", () => {
+        let evtReg;
 
-        dummyPlayer.currentTime = () => "Judgement Day";
-        dummyPlayer.ready = fn => {
-          fn();
-        };
-        dummyPlayer.on = (evtType, fn) => {
-          evtReg[evtType] = fn;
-        };
+        beforeEach(() => {
+          evtReg = {};
 
-        const component = (
-          <BrightcoveVideo
-            accountId="57838016001"
-            videoId="[X]"
-            onChange={state => {
-              expect(state.playerStatus).toBe("playing");
-              done();
-            }}
-          />
-        );
+          dummyPlayer.ready = fn => {
+            fn();
+          };
+          dummyPlayer.on = (evtType, fn) => {
+            evtReg[evtType] = fn;
+          };
+        });
 
-        ReactDOM.render(component, reactWrapper);
+        it("will emit a 'play' event", done => {
+          dummyPlayer.currentTime = () => "Judgement Day";
 
-        dummyScript.onload();
+          const component = (
+            <BrightcoveVideo
+              accountId="57838016001"
+              videoId="[X]"
+              onChange={state => {
+                expect(state.playerStatus).toBe("playing");
+                expect(state.playheadPosition).toBe("Judgement Day");
 
-        evtReg.play();
+                done();
+              }}
+            />
+          );
+
+          ReactDOM.render(component, reactWrapper);
+
+          dummyScript.onload();
+
+          evtReg.play();
+        });
+
+        it("will emit a 'pause' event", done => {
+          dummyPlayer.currentTime = () => "Super inflation";
+
+          const component = (
+            <BrightcoveVideo
+              accountId="57838016001"
+              videoId="[X]"
+              onChange={state => {
+                expect(state.playerStatus).toBe("paused");
+                expect(state.playheadPosition).toBe("Super inflation");
+
+                done();
+              }}
+            />
+          );
+
+          ReactDOM.render(component, reactWrapper);
+
+          dummyScript.onload();
+
+          evtReg.pause();
+        });
+
+        it("will emit a 'seeked' event", done => {
+          dummyPlayer.currentTime = () => "Seek & ye will find";
+
+          const component = (
+            <BrightcoveVideo
+              accountId="57838016001"
+              videoId="[X]"
+              onChange={state => {
+                expect(state.playerStatus).toBe("paused");
+                expect(state.playheadPosition).toBe("Seek & ye will find");
+
+                done();
+              }}
+            />
+          );
+
+          ReactDOM.render(component, reactWrapper);
+
+          dummyScript.onload();
+
+          evtReg.seeked();
+        });
       });
     });
   });
