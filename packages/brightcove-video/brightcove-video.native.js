@@ -8,8 +8,10 @@ class BrightcoveVideo extends Component {
   }
 
   render() {
+    const NativeBrightcove = this.getNativeBrightcoveComponent();
+
     return (
-      <RNTBrightcove
+      <NativeBrightcove
         style={{ height: this.props.height, width: this.props.width }}
         policyId={this.props.policyId}
         accountId={this.props.accountId}
@@ -17,6 +19,10 @@ class BrightcoveVideo extends Component {
         onChange={this._onChange}
       />
     );
+  }
+
+  getNativeBrightcoveComponent() {
+    return RNTBrightcove;
   }
 
   _onChange(event) {

@@ -1,5 +1,5 @@
 import "react-native";
-import React from "react";
+import React, { Component } from "react";
 import BrightcoveVideo from "../brightcove-video.native";
 import renderer from "react-test-renderer";
 
@@ -40,5 +40,59 @@ describe("brightcove-video native component", () => {
     expect(tree.props.policyId).toBe("[POLICY_ID]");
     expect(tree.props.videoId).toBe("[VIDEO_ID]");
     expect(tree.props.accountId).toBe("[ACCOUNT_ID]");
+  });
+
+  describe("mock RNTBrightcove", () => {
+    let getNativeBrightcoveComponent, mockRNTBrightcove, propsCache;
+
+    beforeEach(() => {
+      mockRNTBrightcove = class extends Component {
+        constructor(props) {
+          super(props);
+          propsCache = props;
+        }
+        render() {
+          return null;
+        }
+      };
+
+      getNativeBrightcoveComponentSpy = jest
+        .spyOn(BrightcoveVideo.prototype, "getNativeBrightcoveComponent")
+        .mockImplementation(() => {
+          return mockRNTBrightcove;
+        });
+    });
+
+    afterEach(() => {
+      getNativeBrightcoveComponentSpy.mockRestore();
+    });
+
+    it("will propagate change events from the native component", done => {
+      renderer.create(
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          policyId="[POLICY_ID]"
+          onChange={evt => {
+            expect(evt).toBe("random act of kindness");
+            done();
+          }}
+        />
+      );
+
+      propsCache.onChange({ nativeEvent: "random act of kindness" });
+    });
+
+    it("will not error if there is no chnage handler", () => {
+      renderer.create(
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          policyId="[POLICY_ID]"
+        />
+      );
+
+      propsCache.onChange({ nativeEvent: "random act of kindness" });
+    });
   });
 });

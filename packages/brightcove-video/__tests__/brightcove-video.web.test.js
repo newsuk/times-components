@@ -299,6 +299,25 @@ describe("brightcove-video web component", () => {
             }, 50);
           }, 50);
         });
+
+        it("will not error if there is no change handler", done => {
+          dummyPlayer.currentTime = () => "Seek & ye will find";
+
+          const component = (
+            <BrightcoveVideo accountId="57838016001" videoId="[X]" />
+          );
+
+          ReactDOM.render(component, reactWrapper);
+
+          setTimeout(() => {
+            dummyScript.onload();
+
+            setTimeout(() => {
+              evtReg.seeked();
+              done();
+            }, 50);
+          }, 50);
+        });
       });
     });
   });
