@@ -1,4 +1,5 @@
 # The Times Component Library
+[![Coverage Status](https://coveralls.io/repos/github/newsuk/times-components/badge.svg?branch=add-coverage)](https://coveralls.io/github/newsuk/times-components?branch=add-coverage)
 
 ### Purpose
 
