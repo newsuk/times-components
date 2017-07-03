@@ -139,6 +139,7 @@ describe("AdManager", () => {
   it("display should tell pbjs to handle targeting and gpt to refresh", () => {
     const pbjsManager = adManager.pbjsManager;
     const gptManager = adManager.gptManager;
+    adManager.initialised = true;
 
     const refresh = jest.fn();
     const pubads = jest.fn().mockImplementation(() => {
@@ -157,10 +158,12 @@ describe("AdManager", () => {
       setTargetingForGPTAsync
     };
 
-    adManager.display();
+    expect(() => {
+      adManager.display();
+    }).not.toThrowError();
+
     gptManager.googletag.cmd[0]();
     pbjsManager.pbjs.que[0]();
-    expect(adManager.display).not.toThrowError();
     expect(pubads).toHaveBeenCalled();
     expect(refresh).toHaveBeenCalled();
     expect(setTargetingForGPTAsync).toHaveBeenCalled();
@@ -212,6 +215,7 @@ describe("AdManager", () => {
 
   it("generateSizings calls gpt googletag to set sizings", () => {
     const gptManager = adManager.gptManager;
+    adManager.initialised = true;
 
     const addSize = jest.fn();
     const build = jest.fn();
@@ -240,6 +244,7 @@ describe("AdManager", () => {
 
   it("createSlot calls gpt googletag to set slots", () => {
     const gptManager = adManager.gptManager;
+    adManager.initialised = true;
 
     gptManager.googletag = {
       defineSlot: jest.fn()

@@ -1,5 +1,3 @@
-import get from "lodash.get";
-
 const GptManager = class GptManager {
   constructor() {
     if (!new.target) {
@@ -11,7 +9,7 @@ const GptManager = class GptManager {
     this.googletag = null;
   }
 
-  isReady() {
+  get isReady() {
     return this.scriptSet && this.initialised;
   }
 
@@ -36,16 +34,17 @@ const GptManager = class GptManager {
   }
 
   setConfig(callback) {
-    if (this.isReady()) {
+    if (this.isReady) {
       if (callback) return callback();
       return;
     }
 
-    const googletag = this.googletag;
-
-    if (!get(googletag, "cmd")) {
-      throw new Error("gpt properties are unavailable");
+    // Script and related vars must be set first
+    if (!this.scriptSet) {
+      throw new Error("GPT manager needs the script to be set first");
     }
+
+    const googletag = this.googletag;
 
     googletag.cmd.push(() => {
       // Infinite scroll requires SRA
@@ -65,10 +64,14 @@ const GptManager = class GptManager {
   }
 
   init(callback) {
-    if (this.isReady()) return callback();
+    if (this.isReady) {
+      if (callback) return callback();
+      return;
+    }
 
-    if (!get(this.googletag, "cmd")) {
-      throw new Error("gpt properties are unavailable");
+    // Script and related vars must be set first
+    if (!this.scriptSet) {
+      throw new Error("GPT manager needs the script to be set first");
     }
 
     this.googletag.cmd.push(() => {

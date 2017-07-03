@@ -21,7 +21,7 @@ describe("PrebidManager", () => {
     expect(pbjsManager.scriptSet).toBeFalsy();
     expect(pbjsManager.initialised).toBeFalsy();
     expect(pbjsManager.pbjs).toBeNull();
-    expect(pbjsManager.isReady()).toBeFalsy();
+    expect(pbjsManager.isReady).toBeFalsy();
   });
 
   it("loadScript function sets the required scripts", () => {
@@ -63,6 +63,6 @@ describe("PrebidManager", () => {
     expect(addAdUnits).toHaveBeenCalled();
     expect(callback).toHaveBeenCalled();
     expect(pbjsManager.initialised).toBeTruthy();
-    expect(pbjsManager.isReady()).toBeTruthy();
+    expect(pbjsManager.isReady).toBeTruthy();
   });
 });

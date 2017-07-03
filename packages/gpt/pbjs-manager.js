@@ -1,5 +1,3 @@
-import get from "lodash.get";
-
 const PbjsManager = class PbjsManager {
   constructor(options) {
     if (!new.target) {
@@ -12,7 +10,7 @@ const PbjsManager = class PbjsManager {
     this.pbjs = null;
   }
 
-  isReady() {
+  get isReady() {
     return this.initialised && this.scriptSet;
   }
 
@@ -37,7 +35,15 @@ const PbjsManager = class PbjsManager {
   }
 
   setConfig(callback) {
-    if (this.initialised) return callback();
+    if (this.isReady) {
+      if (callback) return callback();
+      return;
+    }
+
+    // Script and related vars must be set first
+    if (!this.scriptSet) {
+      throw new Error("Prebid JS manager needs the script to be set first");
+    }
 
     const pbjs = this.pbjs;
     const options = this._options;
@@ -86,8 +92,14 @@ const PbjsManager = class PbjsManager {
   }
 
   init(adUnits, callback) {
-    if (!get(this.pbjs, "que")) {
-      throw new Error("pbjs properties are unavailable");
+    if (this.isReady) {
+      if (callback) return callback();
+      return;
+    }
+
+    // Script and related vars must be set first
+    if (!this.scriptSet) {
+      throw new Error("Prebid JS manager needs the script to be set first");
     }
 
     this.pbjs.que.push(() => {
@@ -96,7 +108,7 @@ const PbjsManager = class PbjsManager {
       this.pbjs.requestBids({
         bidsBackHandler: () => {
           this.initialised = true;
-          callback();
+          if (callback) callback();
         }
       });
     });

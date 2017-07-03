@@ -17,7 +17,7 @@ describe("GptManager", () => {
     expect(gptManager.scriptSet).toBeFalsy();
     expect(gptManager.initialised).toBeFalsy();
     expect(gptManager.googletag).toBeNull();
-    expect(gptManager.isReady()).toBeFalsy();
+    expect(gptManager.isReady).toBeFalsy();
   });
 
   it("loadScript function sets the required scripts", () => {
@@ -69,6 +69,6 @@ describe("GptManager", () => {
     expect(enableServices).toHaveBeenCalled();
     expect(callback).toHaveBeenCalled();
     expect(gptManager.initialised).toBeTruthy();
-    expect(gptManager.isReady()).toBeTruthy();
+    expect(gptManager.isReady).toBeTruthy();
   });
 });

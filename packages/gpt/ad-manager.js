@@ -1,6 +1,5 @@
 import series from "run-series";
 import parallel from "run-parallel";
-import get from "lodash.get";
 
 export default class AdManager {
   constructor(options = {}) {
@@ -69,12 +68,8 @@ export default class AdManager {
   }
 
   display(callback) {
-    if (
-      !get(this.gptManager, "googletag.cmd") ||
-      !get(this.pbjsManager, "pbjs.que")
-    ) {
-      throw new Error("gpt or pbjs properties are unavailable");
-      return;
+    if (!this.initialised) {
+      throw new Error("Ad manager needs to be initialised first");
     }
 
     this.gptManager.googletag.cmd.push(() => {
@@ -89,10 +84,6 @@ export default class AdManager {
   _pushAdToGPT(adSlotId, sizingMap) {
     if (!this.initialised) {
       throw new Error("Ad manager needs to be initialised first");
-    }
-
-    if (!get(this.gptManager, "googletag.cmd")) {
-      throw new Error("gpt properties are unavailable");
     }
 
     this.gptManager.googletag.cmd.push(() => {
@@ -111,8 +102,8 @@ export default class AdManager {
   }
 
   _generateSizings(sizingMap) {
-    if (!get(this.gptManager, "googletag")) {
-      throw new Error("gpt properties are unavailable");
+    if (!this.initialised) {
+      throw new Error("Ad manager needs to be initialised first");
     }
 
     const mapping = this.gptManager.googletag.sizeMapping();
@@ -126,8 +117,8 @@ export default class AdManager {
   }
 
   _createSlot(adSlotId, section) {
-    if (!get(this.gptManager, "googletag")) {
-      throw new Error("gpt properties are unavailable");
+    if (!this.initialised) {
+      throw new Error("Ad manager needs to be initialised first");
     }
 
     return this.gptManager.googletag.defineSlot(

@@ -43,7 +43,6 @@
     "webpack": "2.6.1"
   },
   "dependencies": {
-    "lodash.get": "^4.4.2",
     "react": "16.0.0-alpha.6",
     "react-broadcast": "^0.1.2",
     "react-dom": "15.5.4",
