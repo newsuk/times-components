@@ -15,7 +15,7 @@ storiesOf("GPT", module).add("render two ads in article page", () => {
       >
         Render ads
       </a>
-      <AdComposer>
+      <AdComposer section="article">
         <Ad code="ad-header" />
         <Ad code="intervention" />
       </AdComposer>

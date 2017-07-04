@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import { Broadcast } from "react-broadcast";
 
 import AdManager from "./ad-manager";
@@ -15,7 +16,7 @@ class AdComposer extends Component {
     this.adManager = new AdManager({
       networkId: "25436805",
       adUnit: "d.thetimes.co.uk",
-      section: "article",
+      section: props.section,
       gptManager,
       pbjsManager,
       getSlotConfig
@@ -38,5 +39,9 @@ class AdComposer extends Component {
     );
   }
 }
+
+AdComposer.propTypes = {
+  section: PropTypes.string.isRequired
+};
 
 export default AdComposer;
