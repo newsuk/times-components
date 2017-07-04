@@ -47,10 +47,10 @@ export default function ArticleSummary({
       <Text style={styles.headline}>{headline}</Text>
       <Text style={styles.text}>{text}</Text>
       {date && publication
-        ? <Text style={styles.meta}>
-            {date}, {publication}
-          </Text>
-        : null}
+      ? <Text style={styles.meta}>
+          {date}, {publication}
+        </Text>
+      : null}
     </View>
   );
 }
