@@ -4,11 +4,12 @@
   "main": "article-summary.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
-    "test:dev": "jest --bail --verbose --watch",
-    "test": "jest --bail --ci --coverage"
+    "test:dev": "jest article-summary.test --bail --verbose --watch",
+    "test": "jest article-summary.test --bail --ci --coverage"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "rootDir": "../../"
   },
   "repository": {
     "type": "git",
