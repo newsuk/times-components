@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Image, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet, Text } from 'react-native';
+import Image from '@timescomponents/image';
 
 const Photo = ({ uri }) => <Image source={{ uri }} style={styles.roundImage} />;
 const Name = () => <Text style={styles.name} />;
@@ -12,13 +13,13 @@ class AuthorHead extends Component {
 
   render() {
     return (
-      <header>
+      <View>
         <Photo uri={this.props.uri} />
-        <div>
+        <View>
           <Name>{this.props.name}</Name>
           <Title>{this.props.title}</Title>
-        </div>
-      </header>
+        </View>
+      </View>
     )
   }
 }
