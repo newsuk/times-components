@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 const styles = StyleSheet.create({
@@ -33,24 +33,29 @@ const styles = StyleSheet.create({
   }
 });
 
-export default function ArticleSummary({
-  label,
-  headline,
-  text,
-  date,
-  publication
-}) {
-  const labelText = typeof label === "string" ? label.toUpperCase() : label;
-  return (
-    <View style={styles.container}>
-      <Text style={styles.label}>{labelText}</Text>
-      <Text style={styles.headline}>{headline}</Text>
-      <Text style={styles.text}>{text}</Text>
-      {date && publication
-      ? <Text style={styles.meta}>
-          {date}, {publication}
-        </Text>
-      : null}
-    </View>
-  );
+export default class ArticleSummary extends Component {
+  renderPublicationDetails(date, publication, styles) {
+    if (!date || !publication) {
+      return null;
+    }
+    return (
+      <Text style={styles.meta}>
+        {date}, {publication}
+      </Text>
+    );
+  }
+
+  render() {
+    const { label, headline, text, date, publication } = this.props;
+
+    const labelText = typeof label === "string" ? label.toUpperCase() : label;
+    return (
+      <View style={styles.container}>
+        <Text style={styles.label}>{labelText}</Text>
+        <Text style={styles.headline}>{headline}</Text>
+        <Text style={styles.text}>{text}</Text>
+        {this.renderPublicationDetails(date, publication, styles)}
+      </View>
+    );
+  }
 }
