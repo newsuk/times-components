@@ -1,5 +1,3 @@
-import { JSDOM } from "jsdom";
-
 import AdManager from "../ad-manager";
 import { getSlotConfig } from "../generate-config";
 import gptManager from "../gpt-manager";
@@ -19,15 +17,7 @@ describe("AdManager", () => {
   let adManager;
 
   beforeEach(() => {
-    const window = new JSDOM().window;
-    global.window = window;
-    global.document = window.document;
     adManager = new AdManager(managerOptions);
-  });
-
-  afterAll(() => {
-    delete global.window;
-    delete global.document;
   });
 
   it("constructor returns an AdManager instance with correct props", () => {

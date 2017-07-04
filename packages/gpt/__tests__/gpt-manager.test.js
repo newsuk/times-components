@@ -1,18 +1,6 @@
-import { JSDOM } from "jsdom";
 import gptManager from "../gpt-manager";
 
 describe("GptManager", () => {
-  beforeEach(() => {
-    const window = new JSDOM().window;
-    global.window = window;
-    global.document = window.document;
-  });
-
-  afterAll(() => {
-    delete global.window;
-    delete global.document;
-  });
-
   it("gptManager singleton is initialised with correct props", () => {
     expect(gptManager.scriptSet).toBeFalsy();
     expect(gptManager.initialised).toBeFalsy();
