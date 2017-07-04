@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import Image from '@timescomponents/image';
 
-const Photo = ({ source }) => <Image source={{ source }} style={styles.roundImage} />;
-const Name = () => <Text style={styles.name} />;
-const Title = () => <Text style={styles.title} />;
+const Photo = ({ uri }) => <Image source={{ uri }} style={styles.roundImage} />;
+const Name = (props) => <Text style={styles.name}>{props.children}</Text>
+const Title = (props) => <Text style={styles.title}>{props.children}</Text>
+const TwitterHandle = (props) => <Text style={styles.twitter}>{props.children}</Text>
+const Biography = (props) => <Text style={styles.bio}>{props.children}</Text>
 
 class AuthorHead extends Component {
   constructor(props) {
@@ -13,11 +15,17 @@ class AuthorHead extends Component {
 
   render() {
     return (
-      <View>
-        <Photo uri={this.props.uri} />
+      <View style={styles.container}>
         <View>
           <Name>{this.props.name}</Name>
-          <Title>{this.props.title}</Title>
+          <Title>{this.props.title.toLowerCase()}</Title>
+          <TwitterHandle>{this.props.twitter}</TwitterHandle>
+        </View>
+        <View>
+          <Biography>{this.props.bio}</Biography>
+        </View>
+        <View style={styles.photoContainer}>
+          <Photo uri={this.props.uri} />
         </View>
       </View>
     )
@@ -25,18 +33,47 @@ class AuthorHead extends Component {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#F9F8F3',
+    paddingTop: 15,
+    paddingLeft: 15,
+    paddingRight: 15
+  },
+  photoContainer: {
+    left: '100%',
+    bottom: -50
+  },
   roundImage: {
-    'borderRadius': 100,
-    'backgroundColor': '#EFEFEF',
-    'borderStyle': 'solid',
-    'borderWidth': 5,
-    'maxWidth': '100%'
+    width: 100,
+    height: 100,
+    borderRadius: 50,
+    backgroundColor: '#EFEFEF',
+    borderWidth: 5,
+    borderStyle: 'solid',
+    borderColor: '#FFF',
+    left: '-66%',
+    position: 'relative'
   },
   name: {
-    'fontSize': 3,
-    'lineHeight': 3,
+    textAlign: 'center',
+    'fontSize': 30,
+    'lineHeight': 30,
     'fontWeight': '400',
     'color': '#1D1D1B'
+  },
+  title: {
+    textAlign: "center",
+  },
+  twitter: {
+    textAlign: 'center',
+    "fontSize": 15,
+    'color': "#069"
+  },
+  bio: {
+    textAlign: "center",
+    fontSize: 15,
+    lineHeight: 25,
+    marginTop: 6
   }
 });
 
@@ -44,7 +81,5 @@ export default AuthorHead;
 
 export {
   Photo,
-  Name,
-  Title,
   AuthorHead as Header
 }
