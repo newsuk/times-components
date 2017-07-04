@@ -1,17 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-
-export default class Author extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>
-          Author Bios!
-        </Text>
-      </View>
-    );
-  }
-}
 
 const styles = StyleSheet.create({
   container: {
@@ -21,3 +9,12 @@ const styles = StyleSheet.create({
     backgroundColor: "#F5EFEB"
   }
 });
+
+const Author = () =>
+  <View style={styles.container}>
+    <Text>
+      Author Bios!
+    </Text>
+  </View>;
+
+export default Author;
