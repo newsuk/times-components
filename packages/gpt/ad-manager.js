@@ -47,7 +47,7 @@ export default class AdManager {
         this.adQueue.forEach(ad => {
           this._pushAdToGPT(ad.code, ad.mappings);
         });
-        if (callback) callback();
+        if (callback) return callback();
       }
     );
   }

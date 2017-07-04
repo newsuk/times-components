@@ -59,7 +59,7 @@ const GptManager = class GptManager {
       // load ad with slot refresh
       googletag.pubads().disableInitialLoad();
 
-      if (callback) callback();
+      if (callback) return callback();
     });
   }
 
@@ -78,7 +78,7 @@ const GptManager = class GptManager {
       // enable google publisher tag
       this.googletag.enableServices();
       this.initialised = true;
-      if (callback) callback();
+      if (callback) return callback();
     });
   }
 };

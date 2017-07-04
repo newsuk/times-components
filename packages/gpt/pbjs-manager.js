@@ -88,7 +88,7 @@ const PbjsManager = class PbjsManager {
       }
     };
 
-    if (callback) callback();
+    if (callback) return callback();
   }
 
   init(adUnits, callback) {
@@ -108,7 +108,7 @@ const PbjsManager = class PbjsManager {
       this.pbjs.requestBids({
         bidsBackHandler: () => {
           this.initialised = true;
-          if (callback) callback();
+          if (callback) return callback();
         }
       });
     });
