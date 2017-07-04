@@ -1,18 +1,5 @@
 module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /(node_modules)/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            plugins: ["transform-object-rest-spread"]
-          }
-        }
-      }
-    ]
-  },
+  module: {},
 
   resolve: {
     // Maps the 'react-native' import to 'react-native-web'.
