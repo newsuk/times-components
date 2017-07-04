@@ -8,8 +8,8 @@
   },
   "scripts": {
     "native": "node node_modules/react-native/local-cli/cli.js start",
-    "coverage": "lcov-result-merger ./packages/**/lcov.info ./lcov.info",
-    "test": "jest ./lib && lerna run test && npm run coverage && cat ./lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "test": "jest ./lib && lerna run test",
+    "coverage:publish": "lcov-result-merger ./packages/**/lcov.info | coveralls",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "storybook:build": "build-storybook -c .storybook",
     "storybook:publish": "./lib/publish_storybook.sh",
