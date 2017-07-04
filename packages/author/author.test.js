@@ -1,7 +1,10 @@
+/* eslint-env jest */
+
 import "react-native";
 import React from "react";
-import Author from "./author";
 import renderer from "react-test-renderer";
+
+import Author from "./author";
 
 it("renders correctly", () => {
   const tree = renderer.create(<Author />).toJSON();
