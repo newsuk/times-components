@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import Image from '@timescomponents/image';
 
-const Photo = ({ uri }) => <Image source={{ uri }} style={styles.roundImage} />;
+const Photo = ({ source }) => <Image source={{ source }} style={styles.roundImage} />;
 const Name = () => <Text style={styles.name} />;
 const Title = () => <Text style={styles.title} />;
 
@@ -26,16 +26,16 @@ class AuthorHead extends Component {
 
 const styles = StyleSheet.create({
   roundImage: {
-    'border-radius': '100%',
-    'background-color': '#EFEFEF',
-    'border': '5px solid #FFF',
-    'vertical-align': 'middle',
-    'max-width': '100%'
+    'borderRadius': 100,
+    'backgroundColor': '#EFEFEF',
+    'borderStyle': 'solid',
+    'borderWidth': 5,
+    'maxWidth': '100%'
   },
   name: {
-    'font-size': '3rem',
-    'line-height': '3rem',
-    'font-weight': '400',
+    'fontSize': 3,
+    'lineHeight': 3,
+    'fontWeight': '400',
     'color': '#1D1D1B'
   }
 });
