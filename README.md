@@ -8,13 +8,14 @@ Home of The Times' `react`/`react native` components, using
 
 ### Dev Environment
 
-It's been developed almost solely on MacOS so there may be issues elsewhere
+We require MacOS with [node.js](https://nodejs.org), [yarn](https://yarnpkg.com) and [watchman](https://facebook.github.io/watchman) installed. Native development requires [Xcode](https://developer.apple.com/xcode) and [Android Studio](https://developer.android.com/studio/index.html).
+
+You can try without these requirements, but you'd be on your own.
 
 ## Getting Started
 
-1. Install `yarn` with `npm i yarn -g` or `brew install yarn`
-2. Run `yarn`
-3. components can be seen running in a storybook:
+1. Run `yarn`
+2. components can be seen running in a storybook:
   * web storybook
     1. `yarn run storybook`
     2. go to http://localhost:9001
