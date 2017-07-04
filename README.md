@@ -14,14 +14,14 @@ You can try without these requirements, but you'd be on your own.
 
 ## Getting Started
 
-1. Run `yarn`
+1. Run `yarn` to install dependencies
 2. components can be seen running in a storybook:
   * web storybook
-    1. `yarn run storybook`
+    1. `yarn storybook`
     2. go to http://localhost:9001
   * native storybook
-    1. `react-native run-android` or `react-native run-ios` to start an emulator
-    2. `yarn run storybook-native`
+    1. `yarn storybook-native` and leave it running
+    2. `yarn ios` and/or `yarn android` to start the (sim|em)ulators
     3. go to http://localhost:7007
 
 ## Contributing
