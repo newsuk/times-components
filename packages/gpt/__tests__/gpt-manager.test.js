@@ -1,5 +1,5 @@
 import { JSDOM } from "jsdom";
-import gptManager from "./gpt-manager";
+import gptManager from "../gpt-manager";
 
 describe("GptManager", () => {
   beforeEach(() => {

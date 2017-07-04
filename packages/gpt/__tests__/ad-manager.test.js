@@ -1,10 +1,10 @@
 import { JSDOM } from "jsdom";
 
-import AdManager from "./ad-manager";
-import { getSlotConfig } from "./generate-config";
-import gptManager from "./gpt-manager";
-import pbjs from "./pbjs-manager";
-import { pbjs as pbjsConfig } from "./config";
+import AdManager from "../ad-manager";
+import { getSlotConfig } from "../generate-config";
+import gptManager from "../gpt-manager";
+import pbjs from "../pbjs-manager";
+import { pbjs as pbjsConfig } from "../config";
 const pbjsManager = pbjs(pbjsConfig);
 
 describe("AdManager", () => {

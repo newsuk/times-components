@@ -1,6 +1,6 @@
 import { JSDOM } from "jsdom";
-import pbjs from "./pbjs-manager";
-import { pbjs as pbjsConfig } from "./config";
+import pbjs from "../pbjs-manager";
+import { pbjs as pbjsConfig } from "../config";
 
 describe("PrebidManager", () => {
   let pbjsManager;

@@ -3,8 +3,8 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { JSDOM } from "jsdom";
 
-import AdComposer from "./ad-composer";
-import Ad from "./ad";
+import AdComposer from "../ad-composer";
+import Ad from "../ad";
 
 describe("AdComposer test", () => {
   beforeEach(() => {
