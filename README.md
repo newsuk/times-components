@@ -26,5 +26,5 @@ You can try without these requirements, but you'd be on your own.
 
 ## Contributing
 
-See the [CONTRIBUTING.md](https://github.com/newsuk/times-components/blob/master/CONTRIBUTING.md)
+See the [CONTRIBUTING.md](.github/CONTRIBUTING.md)
  for an extensive breakdown of the project
