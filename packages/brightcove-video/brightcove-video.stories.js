@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, TouchableOpacity, Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { action, decorateAction } from "@storybook/addon-actions";
+import { decorateAction } from "@storybook/addon-actions";
 import BrightcoveVideo from "./brightcove-video";
 
 const policyId =
