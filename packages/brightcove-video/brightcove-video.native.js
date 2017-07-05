@@ -33,8 +33,8 @@ class BrightcoveVideo extends Component {
 }
 
 BrightcoveVideo.defaultProps = {
-  width: "100%",
-  height: "100%"
+  width: 320,
+  height: 180
 };
 
 const RNTBrightcove = requireNativeComponent("RNTBrightcove", null);

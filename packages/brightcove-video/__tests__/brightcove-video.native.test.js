@@ -10,11 +10,11 @@ describe("brightcove-video native component", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("width x height default to 100% x 100%", () => {
+  it("width x height default to 320 x 180", () => {
     const tree = renderer.create(<BrightcoveVideo />).toJSON();
 
-    expect(tree.props.style.width).toBe("100%");
-    expect(tree.props.style.height).toBe("100%");
+    expect(tree.props.style.width).toBe(320);
+    expect(tree.props.style.height).toBe(180);
   });
 
   it("width x height can be overridden", () => {
