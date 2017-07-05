@@ -43,7 +43,7 @@ it("lays out image with correct aspect ratio", done => {
 
 it("use empty string as default source", done => {
   const comp = new Image({
-    getSize: (url, _, cb) => {
+    getSize: (_, cb) => {
       return cb();
     }
   });
@@ -54,7 +54,7 @@ it("use empty string as default source", done => {
 
 it("use default image when get size fails", done => {
   const comp = new Image({
-    getSize: (url, _, cb) => {
+    getSize: (_, cb) => {
       return cb();
     },
     source: {

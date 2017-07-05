@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Image } from "react-native";
 import merge from "lodash.merge";
-import defaultSource from "./assets/default.png";
+import placeholder from "./placeholder";
 
 export default class extends React.Component {
   constructor(props) {
@@ -30,8 +30,10 @@ export default class extends React.Component {
     const { getSize = Image.getSize } = this.props;
     const imageUri = (this.props.source && this.props.source.uri) || "";
 
-    // the size for the default image must match the static image
-    getSize(imageUri, setSize, () => setSize(800, 600));
+    // the failure callback is ignored on mobile
+    // https://github.com/necolas/react-native-web/blob/master/src/modules/ImageLoader/index.js#L25
+    setSize(placeholder.width, placeholder.height);
+    getSize(imageUri, setSize);
   }
 
   render() {
@@ -42,7 +44,7 @@ export default class extends React.Component {
 
     return (
       <View onLayout={this._handleLayout}>
-        <Image {...this.props} defaultSource={defaultSource} style={styles} />
+        <Image {...this.props} defaultSource={placeholder} style={styles} />
       </View>
     );
   }
