@@ -35,7 +35,7 @@
     "prettier:write": "prettier --write 'packages/*/*.js'",
     "lint-staged": "lint-staged",
     "packages:publish": "lerna publish --conventional-commits",
-    "update-deps": "lerna bootstrap --npm-client=yarn --concurrency=1",
+    "update-deps": "lerna bootstrap --hoist --npm-client=yarn --concurrency=1",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
     "postinstall": "npm run update-deps --silent"
   },
