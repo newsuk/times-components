@@ -318,6 +318,39 @@ describe("brightcove-video web component", () => {
             }, 50);
           }, 50);
         });
+
+        it("will unmount cleanly", done => {
+          dummyPlayer.off = jest.fn();
+          dummyPlayer.dispose = jest.fn();
+
+          const component = (
+            <BrightcoveVideo accountId="57838016001" videoId="[X]" />
+          );
+
+          ReactDOM.render(component, reactWrapper);
+
+          setTimeout(() => {
+            dummyScript.onload();
+
+            setTimeout(() => {
+              ReactDOM.unmountComponentAtNode(reactWrapper);
+
+              expect(dummyPlayer.off.mock.calls).toHaveLength(1);
+              expect(dummyPlayer.dispose.mock.calls).toHaveLength(1);
+
+              done();
+            }, 50);
+          }, 50);
+        });
+
+        it("will unmount cleanly if player not yet ready", () => {
+          const component = (
+            <BrightcoveVideo accountId="57838016001" videoId="[X]" />
+          );
+
+          ReactDOM.render(component, reactWrapper);
+          ReactDOM.unmountComponentAtNode(reactWrapper);
+        });
       });
     });
   });

@@ -54,6 +54,13 @@ class BrightcoveVideo extends Component {
     this.init();
   }
 
+  componentWillUnmount() {
+    if (this.player) {
+      this.player.off();
+      this.player.dispose();
+    }
+  }
+
   createScript() {
     const s = document.createElement("script");
     s.src = BrightcoveVideo.getScriptUrl(this.props.accountId);
@@ -65,7 +72,13 @@ class BrightcoveVideo extends Component {
     document.body.appendChild(s);
   }
 
+  setPlayer(player) {
+    this.player = player;
+  }
+
   static handlePlayerReady(context) {
+    context.setPlayer(this);
+
     this.on("play", context.onPlay.bind(context, this));
     this.on("pause", context.onPause.bind(context, this));
     this.on("seeked", context.onSeeked.bind(context, this));
