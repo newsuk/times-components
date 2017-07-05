@@ -26,7 +26,7 @@ describe("brightcove-video native component", () => {
     expect(tree.props.style.height).toBe(400);
   });
 
-  it("passes accountId & videoId to video correctly", () => {
+  it("passes accountId, videoId & policyId to video correctly", () => {
     const tree = renderer
       .create(
         <BrightcoveVideo
