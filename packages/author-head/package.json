@@ -5,7 +5,7 @@
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest author-head.test.js --bail --verbose --watch",
-    "test": "`jest author-head.test.js --bail --ci --coverage"
+    "test": "jest author-head.test.js --bail --ci --coverage"
   },
   "jest": {
     "preset": "react-native",

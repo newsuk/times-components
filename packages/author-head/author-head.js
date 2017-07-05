@@ -17,7 +17,7 @@ class AuthorHead extends Component {
     return (
       <View accessibilityRole="banner" style={styles.container}>
         <View>
-          <Name accessibilityRole="heading">{this.props.name}</Name>
+          <Name accessibilityRole="heading" aria-level="1">{this.props.name}</Name>
           <Title accessibilityRole="heading" aria-level="2">{this.props.title.toLowerCase()}</Title>
           <TwitterHandle>{this.props.twitter}</TwitterHandle>
         </View>
@@ -77,9 +77,24 @@ const styles = StyleSheet.create({
   }
 });
 
+AuthorHead.defaultProps = {
+  name: '',
+  title: '',
+  bio: '',
+  uri: ''
+};
+
+AuthorHead.propTypes = {
+
+};
+
 export default AuthorHead;
 
 export {
   Photo,
+  Name,
+  Title,
+  TwitterHandle,
+  Biography,
   AuthorHead as Header
 }
