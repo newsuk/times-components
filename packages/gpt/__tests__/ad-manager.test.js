@@ -3,6 +3,7 @@ import { getSlotConfig } from "../generate-config";
 import gptManager from "../gpt-manager";
 import pbjs from "../pbjs-manager";
 import { pbjs as pbjsConfig } from "../config";
+
 const pbjsManager = pbjs(pbjsConfig);
 
 describe("AdManager", () => {
@@ -39,19 +40,19 @@ describe("AdManager", () => {
   });
 
   it("init function sets the required scripts", done => {
-    const pbjsManager = adManager.pbjsManager;
-    const gptManager = adManager.gptManager;
+    const newPbjsManager = adManager.pbjsManager;
+    const newGptManager = adManager.gptManager;
 
     const pbjsLoadScript = jest.fn();
     const gptLoadScript = jest.fn();
 
-    pbjsManager.loadScript = pbjsLoadScript;
-    gptManager.loadScript = gptLoadScript;
+    newPbjsManager.loadScript = pbjsLoadScript;
+    newGptManager.loadScript = gptLoadScript;
 
-    pbjsManager.setConfig = cb => cb();
-    gptManager.setConfig = cb => cb();
-    pbjsManager.init = (adUnits, cb) => cb();
-    gptManager.init = cb => cb();
+    newPbjsManager.setConfig = cb => cb();
+    newGptManager.setConfig = cb => cb();
+    newPbjsManager.init = (adUnits, cb) => cb();
+    newGptManager.init = cb => cb();
     adManager.init(() => {
       expect(pbjsLoadScript).toHaveBeenCalled();
       expect(gptLoadScript).toHaveBeenCalled();
@@ -61,8 +62,8 @@ describe("AdManager", () => {
   });
 
   it("registerAd inserts configured ad in the queue and push it to gpt on it", done => {
-    const pbjsManager = adManager.pbjsManager;
-    const gptManager = adManager.gptManager;
+    const newPbjsManager = adManager.pbjsManager;
+    const newGptManager = adManager.gptManager;
 
     const windowWidth = 100;
     const mockAd = {
@@ -79,19 +80,19 @@ describe("AdManager", () => {
         expect(width).toEqual(windowWidth);
         return mockAd;
       });
-    adManager._pushAdToGPT = jest.fn();
+    adManager.pushAdToGPT = jest.fn();
 
     adManager.registerAd(mockAd.code, { width: windowWidth });
     expect(adManager.getSlotConfig).toHaveBeenCalled();
     expect(adManager.adQueue).toHaveLength(1);
     expect(adManager.adQueue[0]).toEqual(mockAd);
 
-    pbjsManager.setConfig = cb => cb();
-    gptManager.setConfig = cb => cb();
-    pbjsManager.init = (adUnits, cb) => cb();
-    gptManager.init = cb => cb();
+    newPbjsManager.setConfig = cb => cb();
+    newGptManager.setConfig = cb => cb();
+    newPbjsManager.init = (adUnits, cb) => cb();
+    newGptManager.init = cb => cb();
     adManager.init(() => {
-      expect(adManager._pushAdToGPT).toHaveBeenCalled();
+      expect(adManager.pushAdToGPT).toHaveBeenCalled();
       done();
     });
   });
@@ -121,29 +122,27 @@ describe("AdManager", () => {
       }
     ];
     const itemId = "id-1";
-    const newQueue = adManager.removeItemFromQueue(queue, itemId);
+    const newQueue = AdManager.removeItemFromQueue(queue, itemId);
     expect(queue.length).toEqual(2);
     expect(newQueue.length).toEqual(queue.length - 1);
   });
 
   it("display should tell pbjs to handle targeting and gpt to refresh", () => {
-    const pbjsManager = adManager.pbjsManager;
-    const gptManager = adManager.gptManager;
+    const newPbjsManager = adManager.pbjsManager;
+    const newGptManager = adManager.gptManager;
     adManager.initialised = true;
 
     const refresh = jest.fn();
-    const pubads = jest.fn().mockImplementation(() => {
-      return {
-        refresh
-      };
-    });
-    gptManager.googletag = {
+    const pubads = jest.fn().mockImplementation(() => ({
+      refresh
+    }));
+    newGptManager.googletag = {
       cmd: [],
       pubads
     };
 
     const setTargetingForGPTAsync = jest.fn();
-    pbjsManager.pbjs = {
+    newPbjsManager.pbjs = {
       que: [],
       setTargetingForGPTAsync
     };
@@ -152,8 +151,8 @@ describe("AdManager", () => {
       adManager.display();
     }).not.toThrowError();
 
-    gptManager.googletag.cmd[0]();
-    pbjsManager.pbjs.que[0]();
+    newGptManager.googletag.cmd[0]();
+    newPbjsManager.pbjs.que[0]();
     expect(pubads).toHaveBeenCalled();
     expect(refresh).toHaveBeenCalled();
     expect(setTargetingForGPTAsync).toHaveBeenCalled();
@@ -161,24 +160,22 @@ describe("AdManager", () => {
 
   it("pushAdToGPT gives an error if ad manager is not initialised", () => {
     expect(adManager.initialised).toEqual(false);
-    expect(adManager._pushAdToGPT).toThrowError();
+    expect(adManager.pushAdToGPT).toThrowError();
   });
 
   it("pushAdToGPT creates and sets slot and asks gpt to display", () => {
-    const gptManager = adManager.gptManager;
+    const newGptManager = adManager.gptManager;
 
     const addService = jest.fn();
     const defineSizeMapping = jest.fn();
-    adManager._createSlot = jest.fn().mockImplementation(() => {
-      return {
-        addService,
-        defineSizeMapping
-      };
-    });
+    adManager.createSlot = jest.fn().mockImplementation(() => ({
+      addService,
+      defineSizeMapping
+    }));
 
     const display = jest.fn();
     const pubads = jest.fn();
-    gptManager.googletag = {
+    newGptManager.googletag = {
       cmd: [],
       display,
       pubads
@@ -194,9 +191,9 @@ describe("AdManager", () => {
     ];
 
     adManager.initialised = true;
-    adManager._generateSizings = jest.fn();
-    adManager._pushAdToGPT(slotId, sizingMap);
-    gptManager.googletag.cmd[0]();
+    adManager.generateSizings = jest.fn();
+    adManager.pushAdToGPT(slotId, sizingMap);
+    newGptManager.googletag.cmd[0]();
     expect(addService).toHaveBeenCalled();
     expect(defineSizeMapping).toHaveBeenCalled();
     expect(display).toHaveBeenCalled();
@@ -204,18 +201,16 @@ describe("AdManager", () => {
   });
 
   it("generateSizings calls gpt googletag to set sizings", () => {
-    const gptManager = adManager.gptManager;
+    const newGptManager = adManager.gptManager;
     adManager.initialised = true;
 
     const addSize = jest.fn();
     const build = jest.fn();
-    gptManager.googletag = {
-      sizeMapping: jest.fn().mockImplementation(() => {
-        return {
-          addSize,
-          build
-        };
-      })
+    newGptManager.googletag = {
+      sizeMapping: jest.fn().mockImplementation(() => ({
+        addSize,
+        build
+      }))
     };
 
     const sizingMap = [
@@ -226,22 +221,22 @@ describe("AdManager", () => {
       }
     ];
 
-    adManager._generateSizings(sizingMap);
-    expect(gptManager.googletag.sizeMapping).toHaveBeenCalled();
+    adManager.generateSizings(sizingMap);
+    expect(newGptManager.googletag.sizeMapping).toHaveBeenCalled();
     expect(addSize).toHaveBeenCalled();
     expect(build).toHaveBeenCalled();
   });
 
   it("createSlot calls gpt googletag to set slots", () => {
-    const gptManager = adManager.gptManager;
+    const newGptManager = adManager.gptManager;
     adManager.initialised = true;
 
-    gptManager.googletag = {
+    newGptManager.googletag = {
       defineSlot: jest.fn()
     };
 
     const slotId = "mock-slot-id";
-    adManager._createSlot(slotId, managerOptions.section);
-    expect(gptManager.googletag.defineSlot).toHaveBeenCalled();
+    adManager.createSlot(slotId, managerOptions.section);
+    expect(newGptManager.googletag.defineSlot).toHaveBeenCalled();
   });
 });

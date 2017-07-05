@@ -1,10 +1,12 @@
+/* eslint-env browser */
+
 const PbjsManager = class PbjsManager {
   constructor(options) {
     if (!new.target) {
       return new PbjsManager(options);
     }
 
-    this._options = options;
+    this.options = options;
     this.scriptSet = false;
     this.initialised = false;
     this.pbjs = null;
@@ -36,8 +38,7 @@ const PbjsManager = class PbjsManager {
 
   setConfig(callback) {
     if (this.isReady) {
-      if (callback) return callback();
-      return;
+      return callback && callback();
     }
 
     // Script and related vars must be set first
@@ -46,7 +47,7 @@ const PbjsManager = class PbjsManager {
     }
 
     const pbjs = this.pbjs;
-    const options = this._options;
+    const options = this.options;
 
     pbjs.bidderTimeout = options.timeout;
 
@@ -55,19 +56,19 @@ const PbjsManager = class PbjsManager {
         adserverTargeting: [
           {
             key: "hb_bidder",
-            val: function(bidResponse) {
+            val(bidResponse) {
               return bidResponse.bidder;
             }
           },
           {
             key: "hb_adid",
-            val: function(bidResponse) {
+            val(bidResponse) {
               return bidResponse.adId;
             }
           },
           {
             key: "hb_pb",
-            val: function(bidResponse) {
+            val(bidResponse) {
               if (bidResponse.cpm > options.maxBid) {
                 return options.maxBid.toFixed(2);
               }
@@ -80,7 +81,7 @@ const PbjsManager = class PbjsManager {
           },
           {
             key: "hb_size",
-            val: function(bidResponse) {
+            val(bidResponse) {
               return bidResponse.size;
             }
           }
@@ -88,13 +89,12 @@ const PbjsManager = class PbjsManager {
       }
     };
 
-    if (callback) return callback();
+    return callback && callback();
   }
 
   init(adUnits, callback) {
     if (this.isReady) {
-      if (callback) return callback();
-      return;
+      return callback && callback();
     }
 
     // Script and related vars must be set first
@@ -102,13 +102,13 @@ const PbjsManager = class PbjsManager {
       throw new Error("Prebid JS manager needs the script to be set first");
     }
 
-    this.pbjs.que.push(() => {
+    return this.pbjs.que.push(() => {
       this.pbjs.addAdUnits(adUnits);
 
       this.pbjs.requestBids({
         bidsBackHandler: () => {
           this.initialised = true;
-          if (callback) return callback();
+          return callback && callback();
         }
       });
     });

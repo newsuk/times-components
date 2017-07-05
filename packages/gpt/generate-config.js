@@ -16,11 +16,12 @@ const getSizeMaps = code => {
 
 const getAdSizes = (code, width) => {
   const sizeMap = getSizeMaps(code);
-  for (let i = sizeMap.length - 1; i > 0; i--) {
+  for (let i = sizeMap.length - 1; i > 0; i -= 1) {
     if (width > sizeMap[i].width) {
       return sizeMap[i].sizes;
     }
   }
+  return [];
 };
 
 const getSlotConfig = (section, code, width) => {
@@ -57,7 +58,7 @@ const getSlotConfig = (section, code, width) => {
       bidder: "pubmatic",
       params: {
         publisherId: bidders.pubmatic.accountId,
-        adSlot: bidders.pubmatic.adSlotPrefix + "@" + size.join("x"),
+        adSlot: `${bidders.pubmatic.adSlotPrefix}@${size.join("x")}`,
         section
       }
     });
@@ -68,7 +69,7 @@ const getSlotConfig = (section, code, width) => {
       bids.push({
         bidder: "criteo",
         params: {
-          zoneId: zoneId
+          zoneId
         }
       });
     }

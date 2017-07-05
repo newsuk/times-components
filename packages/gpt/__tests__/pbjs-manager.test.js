@@ -26,12 +26,12 @@ describe("PrebidManager", () => {
 
   it("setConfig function sets the required configurations in the pbjs object", () => {
     pbjsManager.loadScript();
-    const pbjs = pbjsManager.pbjs;
+    const prebid = pbjsManager.pbjs;
 
-    expect(pbjs.bidderSettings).not.toBeDefined();
+    expect(prebid.bidderSettings).not.toBeDefined();
     pbjsManager.setConfig();
-    expect(typeof pbjs.bidderTimeout).toEqual("number");
-    expect(pbjs.bidderSettings).toBeDefined();
+    expect(typeof prebid.bidderTimeout).toEqual("number");
+    expect(prebid.bidderSettings).toBeDefined();
 
     const callback = jest.fn();
     pbjsManager.setConfig(callback);
@@ -44,13 +44,13 @@ describe("PrebidManager", () => {
     const requestBids = ({ bidsBackHandler }) => bidsBackHandler();
 
     pbjsManager.loadScript();
-    const pbjs = pbjsManager.pbjs;
-    pbjs.requestBids = requestBids;
-    pbjs.addAdUnits = addAdUnits;
+    const prebid = pbjsManager.pbjs;
+    prebid.requestBids = requestBids;
+    prebid.addAdUnits = addAdUnits;
 
     pbjsManager.init({}, callback);
-    expect(pbjs.que).toHaveLength(1);
-    pbjs.que[0]();
+    expect(prebid.que).toHaveLength(1);
+    prebid.que[0]();
     expect(addAdUnits).toHaveBeenCalled();
     expect(callback).toHaveBeenCalled();
     expect(pbjsManager.initialised).toBeTruthy();

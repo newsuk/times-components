@@ -6,14 +6,14 @@ import { Subscriber } from "react-broadcast";
 import GPT from "./gpt.web";
 
 class Ad extends Component {
-  _render(adManager, props) {
-    return <GPT adManager={adManager} code={props.code} />;
+  renderGpt(adManager) {
+    return <GPT adManager={adManager} code={this.props.code} />;
   }
 
   render() {
     return (
       <Subscriber channel="adChannel">
-        {adManager => this._render(adManager, this.props)}
+        {adManager => this.renderGpt(adManager)}
       </Subscriber>
     );
   }

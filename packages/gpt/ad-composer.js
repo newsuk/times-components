@@ -7,6 +7,7 @@ import { getSlotConfig } from "./generate-config";
 import gptManager from "./gpt-manager";
 import pbjs from "./pbjs-manager";
 import { pbjs as pbjsConfig } from "./config";
+
 const pbjsManager = pbjs(pbjsConfig);
 
 class AdComposer extends Component {
@@ -41,7 +42,8 @@ class AdComposer extends Component {
 }
 
 AdComposer.propTypes = {
-  section: PropTypes.string.isRequired
+  section: PropTypes.string.isRequired,
+  children: PropTypes.element.isRequired
 };
 
 export default AdComposer;

@@ -1,3 +1,5 @@
+/* eslint-env browser */
+
 const GptManager = class GptManager {
   constructor() {
     if (!new.target) {
@@ -35,8 +37,7 @@ const GptManager = class GptManager {
 
   setConfig(callback) {
     if (this.isReady) {
-      if (callback) return callback();
-      return;
+      return callback && callback();
     }
 
     // Script and related vars must be set first
@@ -46,7 +47,8 @@ const GptManager = class GptManager {
 
     const googletag = this.googletag;
 
-    googletag.cmd.push(() => {
+    return googletag.cmd.push(() => {
+      // eslint-disable consistent-return
       // Infinite scroll requires SRA
       googletag.pubads().enableSingleRequest();
 
@@ -59,14 +61,13 @@ const GptManager = class GptManager {
       // load ad with slot refresh
       googletag.pubads().disableInitialLoad();
 
-      if (callback) return callback();
+      return callback && callback();
     });
   }
 
   init(callback) {
     if (this.isReady) {
-      if (callback) return callback();
-      return;
+      return callback && callback();
     }
 
     // Script and related vars must be set first
@@ -74,11 +75,11 @@ const GptManager = class GptManager {
       throw new Error("GPT manager needs the script to be set first");
     }
 
-    this.googletag.cmd.push(() => {
+    return this.googletag.cmd.push(() => {
       // enable google publisher tag
       this.googletag.enableServices();
       this.initialised = true;
-      if (callback) return callback();
+      return callback && callback();
     });
   }
 };
