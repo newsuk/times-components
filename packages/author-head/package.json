@@ -44,6 +44,7 @@
   "dependencies": {
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",
-    "react-native-web": "0.0.97"
+    "react-native-web": "0.0.97",
+    "@timescomponents/image": "0.0.1"
   }
 }
