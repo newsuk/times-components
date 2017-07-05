@@ -19,12 +19,8 @@ it("renders snapshot correctly", () => {
 
 it("lays out image with correct aspect ratio", done => {
   const comp = new Image({
-    getSize: (uri, cb) => {
-      expect(uri).toEqual("http://example.com/image.jpg");
-      return cb(40, 30);
-    },
     source: {
-      uri: "http://example.com/image.jpg"
+      uri: "http://httpstat.us/404"
     }
   });
 
@@ -32,7 +28,7 @@ it("lays out image with correct aspect ratio", done => {
     expect(width).toEqual(20);
     expect(height).toEqual(15);
 
-    done();
+    return done();
   };
 
   comp.handleLayout({ nativeEvent: { layout: { width: 20 } } });
@@ -41,7 +37,7 @@ it("lays out image with correct aspect ratio", done => {
 it("loads the correct url", () => {
   const props = {
     source: {
-      uri: "http://example.com/image.jpg"
+      uri: "http://httpstat.us/200"
     }
   };
 

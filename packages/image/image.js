@@ -10,6 +10,7 @@ class ImageComponent extends React.Component {
     super(props);
 
     this.state = {
+      uri: this.props.source && this.props.source.uri,
       height: this.props.height,
       width: this.props.width
     };
@@ -20,20 +21,19 @@ class ImageComponent extends React.Component {
   handleLayout(event) {
     const containerWidth = event.nativeEvent.layout.width;
 
-    const setSize = (width, height) => {
+    const setSize = (uri, width, height) => {
       this.setState({
+        uri,
         width: containerWidth,
         height: containerWidth * height / width
       });
     };
 
-    const { getSize } = this.props;
-    const imageUri = this.props.source && this.props.source.uri;
-
+    const uri = this.props.source && this.props.source.uri;
     // the failure callback is ignored on web
     // https://github.com/necolas/react-native-web/blob/master/src/modules/ImageLoader/index.js#L25
-    getSize(imageUri, setSize, () =>
-      setSize(placeholder.width, placeholder.height)
+    Image.getSize(uri, setSize.bind(this, uri), () =>
+      setSize(placeholder.uri, placeholder.width, placeholder.height)
     );
   }
 
@@ -43,20 +43,15 @@ class ImageComponent extends React.Component {
       height: this.state.height
     });
 
-    const defaultSource = {
-      uri: placeholder.uri
-    };
-
     return (
       <View onLayout={this.handleLayout}>
-        <Image {...this.props} defaultSource={defaultSource} style={style} />
+        <Image {...this.props} source={{ uri: this.state.uri }} style={style} />
       </View>
     );
   }
 }
 
 ImageComponent.propTypes = {
-  getSize: PropTypes.func,
   height: PropTypes.number,
   source: PropTypes.shape({
     uri: PropTypes.string.isRequired
@@ -66,10 +61,9 @@ ImageComponent.propTypes = {
 };
 
 ImageComponent.defaultProps = {
-  getSize: Image.getSize,
-  height: 0,
+  height: placeholder.width,
   style: {},
-  width: 0
+  width: placeholder.height
 };
 
 export default ImageComponent;
