@@ -14,7 +14,7 @@ describe("AdComposer test", () => {
   it("renders a snapshot with one Ad", () => {
     const tree = renderer
       .create(
-        <AdComposer section="article">
+        <AdComposer section="article" networkId="25436805">
           <Ad code="ad-header" />
         </AdComposer>
       )
@@ -26,7 +26,7 @@ describe("AdComposer test", () => {
   it("renders a snapshot with more than one Ad", () => {
     const tree = renderer
       .create(
-        <AdComposer section="article">
+        <AdComposer section="article" networkId="25436805">
           <Ad code="ad-header" />
           <Ad code="intervention" />
         </AdComposer>

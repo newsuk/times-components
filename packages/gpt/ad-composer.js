@@ -15,7 +15,7 @@ class AdComposer extends Component {
     super(props);
 
     this.adManager = new AdManager({
-      networkId: "25436805",
+      networkId: props.networkId,
       adUnit: "d.thetimes.co.uk",
       section: props.section,
       gptManager,
@@ -42,6 +42,7 @@ class AdComposer extends Component {
 }
 
 AdComposer.propTypes = {
+  networkId: PropTypes.string.isRequired,
   section: PropTypes.string.isRequired,
   children: PropTypes.element.isRequired
 };

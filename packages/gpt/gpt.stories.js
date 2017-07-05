@@ -13,7 +13,7 @@ storiesOf("GPT", module).add("render two ads in article page", () =>
     <a href={`/iframe.html${window.document.location.search}`} target="_parent">
       Render ads
     </a>
-    <AdComposer section="article">
+    <AdComposer section="article" networkId="25436805">
       <Ad code="ad-header" />
       <Ad code="intervention" />
     </AdComposer>
