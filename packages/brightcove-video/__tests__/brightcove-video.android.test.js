@@ -2,8 +2,8 @@
 
 import "react-native";
 import React from "react";
-import BrightcoveVideo from "../brightcove-video.android";
 import renderer from "react-test-renderer";
+import BrightcoveVideo from "../brightcove-video.android";
 
 it("renders correctly", () => {
   const tree = renderer.create(<BrightcoveVideo />).toJSON();

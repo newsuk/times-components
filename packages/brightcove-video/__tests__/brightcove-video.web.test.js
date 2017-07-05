@@ -1,10 +1,10 @@
-/* eslint-env jest */
+/* eslint-env jest, browser */
 
 import { View } from "react-native";
 import React from "react";
 import ReactDOM from "react-dom";
-import BrightcoveVideo from "../brightcove-video.web";
 import renderer from "react-test-renderer";
+import BrightcoveVideo from "../brightcove-video.web";
 
 describe("brightcove-video web component", () => {
   afterEach(() => {
@@ -25,7 +25,7 @@ describe("brightcove-video web component", () => {
   });
 
   it("appends script tag to body", () => {
-    const tree = renderer.create(<BrightcoveVideo />).toJSON();
+    renderer.create(<BrightcoveVideo />).toJSON();
 
     expect(document.body.innerHTML.trim()).toBe(
       '<script src="//players.brightcove.net/undefined/default_default/index.min.js"></script>'
@@ -35,7 +35,7 @@ describe("brightcove-video web component", () => {
   it("will not append script tag to body if there has been a global error", () => {
     BrightcoveVideo.globalErrors.push({});
 
-    const tree = renderer.create(<BrightcoveVideo />).toJSON();
+    renderer.create(<BrightcoveVideo />).toJSON();
 
     expect(document.body.innerHTML.trim()).toBe("");
   });
@@ -57,9 +57,7 @@ describe("brightcove-video web component", () => {
   });
 
   it("generates the correct script link", () => {
-    const tree = renderer
-      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" />)
-      .toJSON();
+    renderer.create(<BrightcoveVideo accountId="[ACCOUNT_ID]" />).toJSON();
 
     expect(document.body.innerHTML.trim()).toBe(
       '<script src="//players.brightcove.net/[ACCOUNT_ID]/default_default/index.min.js"></script>'
@@ -78,13 +76,12 @@ describe("brightcove-video web component", () => {
   it("does not attempt to initialise the brightcove player before the script has loaded", () => {
     const initVideoSpy = jest.spyOn(BrightcoveVideo.prototype, "initVideo");
 
-    const videos = () =>
-      renderer.create(
-        <View>
-          <BrightcoveVideo accountId="[ACCOUNT_ID1]" videoId="[VIDEO_ID1]" />
-          <BrightcoveVideo accountId="[ACCOUNT_ID2]" videoId="[VIDEO_ID2]" />
-        </View>
-      );
+    renderer.create(
+      <View>
+        <BrightcoveVideo accountId="[ACCOUNT_ID1]" videoId="[VIDEO_ID1]" />
+        <BrightcoveVideo accountId="[ACCOUNT_ID2]" videoId="[VIDEO_ID2]" />
+      </View>
+    );
 
     expect(initVideoSpy.mock.calls.length).toBe(0);
 
@@ -102,7 +99,7 @@ describe("brightcove-video web component", () => {
       on: onMock
     });
 
-    const videos = renderer.create(
+    renderer.create(
       <View>
         <BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />
         <BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />
@@ -147,7 +144,10 @@ describe("brightcove-video web component", () => {
     });
 
     describe("player events", () => {
-      let dummyScript, createScript, appendScriptSpy, dummyPlayer;
+      let dummyScript;
+      let createScriptSpy;
+      let appendScriptSpy;
+      let dummyPlayer;
 
       beforeEach(() => {
         dummyScript = {};

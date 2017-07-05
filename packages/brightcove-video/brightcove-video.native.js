@@ -7,6 +7,16 @@ class BrightcoveVideo extends Component {
     this._onChange = this._onChange.bind(this);
   }
 
+  getNativeBrightcoveComponent() {
+    return RNTBrightcove;
+  }
+
+  _onChange(event) {
+    if (this.props.onChange) {
+      this.props.onChange(event.nativeEvent);
+    }
+  }
+
   render() {
     const NativeBrightcove = this.getNativeBrightcoveComponent();
 
@@ -19,16 +29,6 @@ class BrightcoveVideo extends Component {
         onChange={this._onChange}
       />
     );
-  }
-
-  getNativeBrightcoveComponent() {
-    return RNTBrightcove;
-  }
-
-  _onChange(event) {
-    if (this.props.onChange) {
-      this.props.onChange(event.nativeEvent);
-    }
   }
 }
 

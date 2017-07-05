@@ -1,7 +1,9 @@
+/* eslint-env jest */
+
 import "react-native";
 import React, { Component } from "react";
-import BrightcoveVideo from "../brightcove-video.native";
 import renderer from "react-test-renderer";
+import BrightcoveVideo from "../brightcove-video.native";
 
 describe("brightcove-video native component", () => {
   it("renders correctly", () => {
@@ -43,7 +45,9 @@ describe("brightcove-video native component", () => {
   });
 
   describe("mock RNTBrightcove", () => {
-    let getNativeBrightcoveComponent, mockRNTBrightcove, propsCache;
+    let getNativeBrightcoveComponentSpy;
+    let mockRNTBrightcove;
+    let propsCache;
 
     beforeEach(() => {
       mockRNTBrightcove = class extends Component {
