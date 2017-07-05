@@ -15,10 +15,10 @@ class AuthorHead extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <View accessibilityRole="banner" style={styles.container}>
         <View>
-          <Name>{this.props.name}</Name>
-          <Title>{this.props.title.toLowerCase()}</Title>
+          <Name accessibilityRole="heading">{this.props.name}</Name>
+          <Title accessibilityRole="heading" aria-level="2">{this.props.title.toLowerCase()}</Title>
           <TwitterHandle>{this.props.twitter}</TwitterHandle>
         </View>
         <View>
