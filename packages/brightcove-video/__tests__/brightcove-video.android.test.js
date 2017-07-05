@@ -1,3 +1,5 @@
+/* eslint-env jest */
+
 import "react-native";
 import React from "react";
 import BrightcoveVideo from "../brightcove-video.android";

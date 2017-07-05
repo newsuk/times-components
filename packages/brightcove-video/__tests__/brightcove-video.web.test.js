@@ -1,3 +1,5 @@
+/* eslint-env jest */
+
 import { View } from "react-native";
 import React from "react";
 import ReactDOM from "react-dom";
