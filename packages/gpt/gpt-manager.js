@@ -47,9 +47,9 @@ const GptManager = class GptManager {
 
     const googletag = this.googletag;
 
+    // See https://developers.google.com/doubleclick-gpt/reference#googletagpubadsservice
     return googletag.cmd.push(() => {
-      // eslint-disable consistent-return
-      // Infinite scroll requires SRA
+      // fetch multiple ads at once
       googletag.pubads().enableSingleRequest();
 
       // add support for async loading

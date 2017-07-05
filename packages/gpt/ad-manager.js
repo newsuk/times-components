@@ -86,9 +86,6 @@ export default class AdManager {
       slot.addService(this.gptManager.googletag.pubads());
       slot.defineSizeMapping(this.generateSizings(sizingMap));
 
-      // const targeting = omit(options, 'iuPartsSuffix');
-      // setSlotTargeting(slot, targeting);
-
       slot.id = adSlotId;
 
       // Display the ad
