@@ -163,6 +163,7 @@ class BrightcoveVideo extends Component {
       );
     }
 
+    // Wrapping div required as brightcove adds siblings to the video tag
     return (
       <div>
         <video
