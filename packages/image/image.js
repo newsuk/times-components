@@ -1,23 +1,25 @@
 import React from "react";
+import PropTypes from "prop-types";
+import stylePropType from "react-style-proptype";
 import { View, Image } from "react-native";
 import merge from "lodash.merge";
 import placeholder from "./placeholder";
 
-export default class extends React.Component {
+class ImageComponent extends React.Component {
   constructor(props) {
     super(props);
 
-    const styles = this.props.style || {};
-
     this.state = {
-      width: styles.width || 0,
-      height: styles.height || 0
+      height: this.props.height,
+      width: this.props.width
     };
 
-    this._handleLayout = this._handleLayout.bind(this);
+    this.handleLayout = this.handleLayout.bind(this);
   }
 
-  _handleLayout(event) {
+  handleLayout(event) {
+    const containerWidth = event.nativeEvent.layout.width;
+
     const setSize = (width, height) => {
       this.setState({
         width: containerWidth,
@@ -25,27 +27,49 @@ export default class extends React.Component {
       });
     };
 
-    const containerWidth = event.nativeEvent.layout.width;
+    const { getSize } = this.props;
+    const imageUri = this.props.source && this.props.source.uri;
 
-    const { getSize = Image.getSize } = this.props;
-    const imageUri = (this.props.source && this.props.source.uri) || "";
-
-    // the failure callback is ignored on mobile
+    // the failure callback is ignored on web
     // https://github.com/necolas/react-native-web/blob/master/src/modules/ImageLoader/index.js#L25
-    setSize(placeholder.width, placeholder.height);
-    getSize(imageUri, setSize);
+    getSize(imageUri, setSize, () =>
+      setSize(placeholder.width, placeholder.height)
+    );
   }
 
   render() {
-    const styles = merge(this.props.style, {
+    const style = merge(this.props.style, {
       width: this.state.width,
       height: this.state.height
     });
 
+    const defaultSource = {
+      uri: placeholder.uri
+    };
+
     return (
-      <View onLayout={this._handleLayout}>
-        <Image {...this.props} defaultSource={placeholder} style={styles} />
+      <View onLayout={this.handleLayout}>
+        <Image {...this.props} defaultSource={defaultSource} style={style} />
       </View>
     );
   }
 }
+
+ImageComponent.propTypes = {
+  getSize: PropTypes.func,
+  height: PropTypes.number,
+  source: PropTypes.shape({
+    uri: PropTypes.string.isRequired
+  }).isRequired,
+  style: stylePropType,
+  width: PropTypes.number
+};
+
+ImageComponent.defaultProps = {
+  getSize: Image.getSize,
+  height: 0,
+  style: {},
+  width: 0
+};
+
+export default ImageComponent;
