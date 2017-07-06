@@ -67,4 +67,9 @@ coverage
 =======
 dist
 
+<<<<<<< HEAD
 >>>>>>> Storybook fonts (#44)
+=======
+.fructose/components.js
+.fructose/components.test.js
+>>>>>>> test: add fructose test
