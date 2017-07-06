@@ -1,7 +1,9 @@
+/* eslint-env jest */
+
 import "react-native";
 import React from "react";
-import ArticleSummary from "./article-summary";
 import renderer from "react-test-renderer";
+import ArticleSummary from "./article-summary";
 
 it("renders a snapshot", () => {
   const tree = renderer.create(<ArticleSummary />).toJSON();

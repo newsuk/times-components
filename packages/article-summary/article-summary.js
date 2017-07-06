@@ -1,5 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import PropTypes from "prop-types";
 
 const styles = StyleSheet.create({
   container: {},
@@ -33,29 +34,45 @@ const styles = StyleSheet.create({
   }
 });
 
-export default class ArticleSummary extends Component {
-  renderPublicationDetails(date, publication, styles) {
-    if (!date || !publication) {
-      return null;
-    }
-    return (
-      <Text style={styles.meta}>
-        {date}, {publication}
-      </Text>
-    );
+function renderPublicationDetails(date, publication, style) {
+  if (!date || !publication) {
+    return null;
   }
-
-  render() {
-    const { label, headline, text, date, publication } = this.props;
-
-    const labelText = typeof label === "string" ? label.toUpperCase() : label;
-    return (
-      <View style={styles.container}>
-        <Text style={styles.label}>{labelText}</Text>
-        <Text style={styles.headline}>{headline}</Text>
-        <Text style={styles.text}>{text}</Text>
-        {this.renderPublicationDetails(date, publication, styles)}
-      </View>
-    );
-  }
+  return (
+    <Text style={style.meta}>
+      {date}, {publication}
+    </Text>
+  );
 }
+
+const ArticleSummary = props => {
+  const { label, headline, text, date, publication } = props;
+
+  const labelText = label.toUpperCase();
+  return (
+    <View style={styles.container}>
+      <Text style={styles.label}>{labelText}</Text>
+      <Text style={styles.headline}>{headline}</Text>
+      <Text style={styles.text}>{text}</Text>
+      {renderPublicationDetails(date, publication, styles)}
+    </View>
+  );
+};
+
+ArticleSummary.propTypes = {
+  label: PropTypes.string,
+  headline: PropTypes.string,
+  text: PropTypes.string,
+  date: PropTypes.string,
+  publication: PropTypes.string
+};
+
+ArticleSummary.defaultProps = {
+  label: "",
+  headline: "",
+  text: "",
+  date: "",
+  publication: ""
+};
+
+export default ArticleSummary;

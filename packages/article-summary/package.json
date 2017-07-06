@@ -42,8 +42,13 @@
     "webpack": "2.6.1"
   },
   "dependencies": {
+    "prop-types": "^15.5.10",
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",
     "react-native-web": "0.0.97"
+  },
+  "peerDependencies": {
+    "react-native": "0.44.1",
+    "@storybook/react-native": "3.0.0"
   }
 }
