@@ -32,8 +32,6 @@ describe("PrebidManager", () => {
     pbjsManager.setConfig();
     expect(typeof prebid.bidderTimeout).toEqual("number");
     expect(prebid.bidderSettings).toBeDefined();
-
-    return pbjsManager.setConfig();
   });
 
   it("init function adds the ad units and makes the bid requests", () => {

@@ -5,3 +5,9 @@ exports[`Gpt test renders a snapshot 1`] = `
   id="ad-header"
 />
 `;
+
+exports[`Gpt test renders a snapshot for pixel 1`] = `
+<div
+  id="ad-pixel"
+/>
+`;
