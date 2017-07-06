@@ -1,36 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
-import Image from '@timescomponents/image';
+import PropTypes from "prop-types";
 
-const Photo = ({ uri }) => <Image source={{ uri }} style={styles.roundImage} />;
-const Name = (props) => <Text style={styles.name}>{props.children}</Text>
-const Title = (props) => <Text style={styles.title}>{props.children}</Text>
-const TwitterHandle = (props) => <Text style={styles.twitter}>{props.children}</Text>
-const Biography = (props) => <Text style={styles.bio}>{props.children}</Text>
-
-class AuthorHead extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <View accessibilityRole="banner" style={styles.container}>
-        <View>
-          <Name accessibilityRole="heading" aria-level="1">{this.props.name}</Name>
-          <Title accessibilityRole="heading" aria-level="2">{this.props.title.toLowerCase()}</Title>
-          <TwitterHandle>{this.props.twitter}</TwitterHandle>
-        </View>
-        <View>
-          <Biography>{this.props.bio}</Biography>
-        </View>
-        <View style={styles.photoContainer}>
-          <Photo uri={this.props.uri} />
-        </View>
-      </View>
-    )
-  }
-}
+import Image from '@times-components/image';
 
 const styles = StyleSheet.create({
   container: {
@@ -77,15 +49,52 @@ const styles = StyleSheet.create({
   }
 });
 
+const Photo = ({ uri }) => <Image source={{ uri }} style={styles.roundImage} />;
+const Name = ({ children }) => <Text style={styles.name}>{ children }</Text>
+const Title = ({ children }) => <Text style={styles.title}>{ children }</Text>
+const TwitterHandle = ({ children }) => <Text style={styles.twitter}>{ children }</Text>
+const Biography = ({ children }) => <Text style={styles.bio}>{ children }</Text>
+
+const AuthorHead = (props) => {
+  const {
+    name,
+    title,
+    twitter,
+    bio,
+    uri
+  } = props;
+
+  return (
+    <View accessibilityRole="banner" style={styles.container}>
+      <View>
+        <Name accessibilityRole="heading" aria-level="1">{ name }</Name>
+        <Title accessibilityRole="heading" aria-level="2">{ title.toLowerCase() }</Title>
+        <TwitterHandle>{ twitter }</TwitterHandle>
+      </View>
+      <View>
+        <Biography>{ bio }</Biography>
+      </View>
+      <View style={styles.photoContainer}>
+        <Photo uri={ uri } />
+      </View>
+    </View>
+  )
+}
+
 AuthorHead.defaultProps = {
   name: '',
   title: '',
   bio: '',
-  uri: ''
+  uri: '',
+  twitter: ''
 };
 
 AuthorHead.propTypes = {
-
+  name: PropTypes.string,
+  title: PropTypes.string,
+  bio: PropTypes.string,
+  uri: PropTypes.string,
+  twitter: PropTypes.string
 };
 
 export default AuthorHead;
