@@ -57,4 +57,3 @@ fastlane/screenshots
 .storybook.native/story-loader.js
 storybook-static
 coverage
-package-json.lock

@@ -1,16 +1,18 @@
 {
-  "name": "@timescomponents/image",
+  "name": "@times-components/image",
   "version": "0.0.1",
   "main": "image.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
-    "test:dev": "jest image.test.js --bail --verbose --watch",
-    "test": "jest image.test.js --bail --ci --coverage"
+    "test:dev": "jest --bail --verbose --watchAll",
+    "test": "jest --bail --ci --coverage"
   },
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+    "testMatch": ["<rootDir>/packages/image/**.test.js"]
   },
   "repository": {
     "type": "git",
