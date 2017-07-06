@@ -4,12 +4,18 @@
   "main": "author-head.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
-    "test:watch": "jest author-head.test.js --bail --verbose --watch",
-    "test": "jest author-head.test.js --bail --ci --coverage"
+    "test:watch": "jest --bail --verbose --watch",
+    "test": "jest --bail --ci --coverage"
   },
   "jest": {
     "preset": "react-native",
-    "rootDir": "../../"
+    "rootDir": "../../",
+    "transformIgnorePatterns": [
+      "node_modules/(?!@timescomponents)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/author-head/**.test.js"
+    ]
   },
   "repository": {
     "type": "git",

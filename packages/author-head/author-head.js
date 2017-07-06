@@ -49,17 +49,17 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     backgroundColor: '#EFEFEF',
     borderWidth: 5,
-    borderStyle: 'solid',
+    // borderStyle: 'solid',
     borderColor: '#FFF',
     left: '-66%',
     position: 'relative'
   },
   name: {
     textAlign: 'center',
-    'fontSize': 30,
-    'lineHeight': 30,
-    'fontWeight': '400',
-    'color': '#1D1D1B'
+    fontSize: 30,
+    lineHeight: 30,
+    fontWeight: '400',
+    color: '#1D1D1B'
   },
   title: {
     textAlign: "center",
