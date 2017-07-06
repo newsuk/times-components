@@ -5,7 +5,7 @@ exports[`renders snapshot correctly 1`] = `
   onLayout={[Function]}
 >
   <Image
-    height={75}
+    onError={[Function]}
     source={
       Object {
         "uri": "http://example.com/image.jpg",
@@ -13,11 +13,10 @@ exports[`renders snapshot correctly 1`] = `
     }
     style={
       Object {
-        "height": 75,
-        "width": 200,
+        "height": 0,
+        "width": 0,
       }
     }
-    width={200}
   />
 </View>
 `;

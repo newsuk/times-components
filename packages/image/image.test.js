@@ -21,12 +21,13 @@ it("lays out image with correct aspect ratio", done => {
   const comp = new Image({
     source: {
       uri: "http://httpstat.us/404"
-    }
+    },
+    aspectRatio: 0.5
   });
 
   comp.setState = ({ width, height }) => {
     expect(width).toEqual(20);
-    expect(height).toEqual(15);
+    expect(height).toEqual(10);
 
     return done();
   };

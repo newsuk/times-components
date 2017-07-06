@@ -10,31 +10,29 @@ class ImageComponent extends React.Component {
     super(props);
 
     this.state = {
-      uri: this.props.source && this.props.source.uri,
-      height: this.props.height,
-      width: this.props.width
+      source: props.source,
+      width: 0,
+      height: 0
     };
 
     this.handleLayout = this.handleLayout.bind(this);
+    this.handleError = this.handleError.bind(this);
   }
 
   handleLayout(event) {
     const containerWidth = event.nativeEvent.layout.width;
+    this.setState({
+      width: containerWidth,
+      height: containerWidth * this.props.aspectRatio
+    });
+  }
 
-    const setSize = (uri, width, height) => {
-      this.setState({
-        uri,
-        width: containerWidth,
-        height: containerWidth * height / width
-      });
-    };
-
-    const uri = this.props.source && this.props.source.uri;
-    // the failure callback is ignored on web
-    // https://github.com/necolas/react-native-web/blob/master/src/modules/ImageLoader/index.js#L25
-    Image.getSize(uri, setSize.bind(this, uri), () =>
-      setSize(placeholder.uri, placeholder.width, placeholder.height)
-    );
+  handleError() {
+    this.setState({
+      source: {
+        uri: placeholder
+      }
+    });
   }
 
   render() {
@@ -45,25 +43,27 @@ class ImageComponent extends React.Component {
 
     return (
       <View onLayout={this.handleLayout}>
-        <Image {...this.props} source={{ uri: this.state.uri }} style={style} />
+        <Image
+          onError={this.handleError}
+          source={this.state.source}
+          style={style}
+        />
       </View>
     );
   }
 }
 
 ImageComponent.propTypes = {
-  height: PropTypes.number,
+  aspectRatio: PropTypes.number,
   source: PropTypes.shape({
     uri: PropTypes.string.isRequired
   }).isRequired,
-  style: stylePropType,
-  width: PropTypes.number
+  style: stylePropType
 };
 
 ImageComponent.defaultProps = {
-  height: placeholder.width,
-  style: {},
-  width: placeholder.height
+  aspectRatio: 0.75,
+  style: {}
 };
 
 export default ImageComponent;

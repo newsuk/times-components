@@ -9,7 +9,7 @@ const exampleImage = {
 };
 
 const exampleNonImage = {
-  uri: "https://www.thetimes.co.uk/nonimageserver"
+  uri: "http://httpstat.us/404"
 };
 
 const styles = StyleSheet.create({
@@ -21,16 +21,16 @@ const styles = StyleSheet.create({
 storiesOf("Image", module)
   .add("Adjusted to parent view size", () =>
     <View>
-      <Image source={exampleImage} />
+      <Image source={exampleImage} aspectRatio={0.67} />
     </View>
   )
   .add("Resized to half of full width, keeping aspect ratio", () =>
     <View style={styles.halfWidthView}>
-      <Image source={exampleImage} />
+      <Image source={exampleImage} aspectRatio={0.67} />
     </View>
   )
   .add("Show default image on error", () =>
     <View>
-      <Image source={exampleNonImage} />
+      <Image source={exampleNonImage} aspectRatio={0.67} />
     </View>
   );
