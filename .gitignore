@@ -58,8 +58,13 @@ fastlane/screenshots
 storybook-static
 coverage
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 .fructose/components.js
 .fructose/components.test.js
 =======
 >>>>>>> Fixes for NPM scripts (#42)
+=======
+dist
+
+>>>>>>> Storybook fonts (#44)

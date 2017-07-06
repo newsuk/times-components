@@ -7,12 +7,15 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#F5EFEB"
+  },
+  text: {
+    fontFamily: "TimesModern-Bold"
   }
 });
 
 const Author = () =>
   <View style={styles.container}>
-    <Text>
+    <Text style={styles.text}>
       Author Bios!
     </Text>
   </View>;
