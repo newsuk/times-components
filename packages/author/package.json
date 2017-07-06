@@ -1,15 +1,21 @@
 {
-  "name": "@timescomponents/author",
+  "name": "@times-components/author",
   "version": "0.0.1",
   "main": "author.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
-    "test:watch": "jest author.test.js --bail --verbose --watch",
-    "test": "jest author.test.js --bail --ci --coverage"
+    "test:watch": "jest --bail --verbose --watchAll",
+    "test": "jest --bail --ci --coverage"
   },
   "jest": {
     "preset": "react-native",
-    "rootDir": "../../"
+    "rootDir": "../../",
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/author/**.test.js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -44,7 +50,7 @@
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",
     "react-native": "0.44.1",
-    "react-native-web": "0.0.96"
+    "react-native-web": "0.0.97"
   },
   "peerDependencies": {
     "@storybook/react-native": "3.1.6"

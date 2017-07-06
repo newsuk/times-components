@@ -1,4 +1,4 @@
-Please take a moment to review this document in order to make the contribution process easy and effective for 
+Please take a moment to review this document in order to make the contribution process easy and effective for
 everyone involved.
 
 Following these guidelines helps to get issues organised and PRs merged faster!
@@ -38,7 +38,7 @@ For ease of use there is a CLI for creating a component. Run `./times-components
   `package.json`, stubbed test and story. Note that the stubbed test will fail until a snapshot
   is created with `jest --updateSnapshot` or a test run is made without the `--CI` flag
 
-When developing a component it's easiest to use the 
+When developing a component it's easiest to use the
 [storybooks](https://github.com/storybooks/storybook) with hot reloading. Make sure you follow the
  [React Native instructions](https://facebook.github.io/react-native/docs/getting-started.html) to
  get up and running first
@@ -47,22 +47,22 @@ When developing a component it's easiest to use the
 * `npm run storybook-native` will build the storybook and watch for JS changes. In a separate
  terminal run `react-native run-[platform]`. This will allow you to develop in your storybook on a
  device or in an emulator.
- 
+
 > #### Caution
-> 
-> There are some problems regarding the usage of native storybooks with the Android simulator, mainly with hot module reloading (HMR). 
+>
+> There are some problems regarding the usage of native storybooks with the Android simulator, mainly with hot module reloading (HMR).
 > To take full advantage of HMR while developing components while testing with storybooks use the iOS simulator instead.
- 
+
 `npm run storybook:build` will output the built web storybook into the default `storybook-static`
  folder that is synced to the `gh_pages` branch to demo the components in the web
- 
+
  `npm run prettier:diff` is used by the test script to enforce the code style at the CI level but
  can be run across all packages as a check too
- 
+
  When the CI passes `packages:publish` will be run that uses
   [conventional commits](https://conventionalcommits.org/) to bump to the correct semver version,
-  create a CHANGELOG and push to the `@timescomponents` org on npm
-  
+  create a CHANGELOG and push to the `@times-components` org on npm
+
   `update-deps` is run `postinstall` to add `node_modules` to each of the packages
 
 ## Submitting a Pull Request

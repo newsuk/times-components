@@ -1,5 +1,5 @@
 {
-  "name": "timescomponents",
+  "name": "times-components",
   "version": "0.0.1",
   "description": "A collection of presentational components for locate a location",
   "main": "index.js",
@@ -39,6 +39,11 @@
       "eslint . --fix",
       "prettier --write",
       "git add"
+    ]
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/"
     ]
   },
   "config": {
