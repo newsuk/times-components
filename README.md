@@ -23,6 +23,17 @@ You can try without these requirements, but you'd be on your own.
     1. `yarn storybook-native` and leave it running
     2. `yarn ios` and/or `yarn android` to start the (sim|em)ulators
     3. go to http://localhost:7007
+    
+⚠️ Native Storybook ⚠️
+
+In order to view the storybook on native, you'll need to fix a broken font which requires
+ [fontforge](http://fontforge.github.io/en-US/)
+
+```ssh
+brew install fontforge
+```
+
+When you first get a local copy of the fonts you may see some warnings which you can ignore
 
 ## Contributing
 
