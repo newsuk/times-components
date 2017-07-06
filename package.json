@@ -47,7 +47,7 @@
       "searchDir": [
         "./packages"
       ],
-      "pattern": "**/*.stories.js",
+      "pattern": "**!(node_modules)/*.stories.js",
       "outputFile": "./.storybook.native/story-loader.js"
     }
   },
