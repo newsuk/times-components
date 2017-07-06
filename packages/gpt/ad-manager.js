@@ -61,10 +61,6 @@ export default class AdManager {
   }
 
   pushAdToGPT(adSlotId, sizingMap) {
-    if (!this.initialised) {
-      throw new Error("Ad manager needs to be initialised first");
-    }
-
     this.gptManager.googletag.cmd.push(() => {
       const slot = this.createSlot(adSlotId, this.section);
       slot.addService(this.gptManager.googletag.pubads());
