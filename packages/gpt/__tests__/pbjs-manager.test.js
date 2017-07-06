@@ -51,12 +51,47 @@ describe("PrebidManager", () => {
     expect(pbjsManager.isReady).toBeTruthy();
   });
 
-  it("init resolves if script was set and pbjs is initialised", () => {
-    pbjsManager.loadScript();
-    const prebid = pbjsManager.pbjs;
-    prebid.que = jest.fn();
-    pbjsManager.isReady = jest.fn().mockImplementation(() => true);
-    pbjsManager.init();
-    expect(prebid.que).not.toHaveBeenCalled();
+  describe("bidderSettings", () => {
+    let bidResponse;
+    let adserverTargeting;
+    beforeEach(() => {
+      pbjsManager.loadScript();
+      const prebid = pbjsManager.pbjs;
+      pbjsManager.setConfig();
+      adserverTargeting = prebid.bidderSettings.standard.adserverTargeting;
+
+      bidResponse = {
+        bidder: "appnexus",
+        adId: "1712a75ae776bfb",
+        size: [300, 250]
+      };
+    });
+
+    it("prebid response has bidder value", () => {
+      expect(adserverTargeting[0].val(bidResponse)).toEqual(bidResponse.bidder);
+    });
+
+    it("prebid response has adId value", () => {
+      expect(adserverTargeting[1].val(bidResponse)).toEqual(bidResponse.adId);
+    });
+
+    it("prebid response cpm value is higher than maxBid", () => {
+      bidResponse.cpm = 20;
+      expect(adserverTargeting[2].val(bidResponse)).toEqual("15.00");
+    });
+
+    it("prebid response cpm value is lower than bucketSize", () => {
+      bidResponse.cpm = 0;
+      expect(adserverTargeting[2].val(bidResponse)).toEqual("0.01");
+    });
+
+    it("prebid response cpm value is lower than maxBid and higher than bucketSize", () => {
+      bidResponse.cpm = 10;
+      expect(adserverTargeting[2].val(bidResponse)).toEqual("10.00");
+    });
+
+    it("prebid response has size value", () => {
+      expect(adserverTargeting[3].val(bidResponse)).toEqual(bidResponse.size);
+    });
   });
 });
