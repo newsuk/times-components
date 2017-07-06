@@ -4,6 +4,7 @@ import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 import Image from "./image";
+import placeholder from "./placeholder";
 
 it("renders snapshot correctly", () => {
   const props = {
@@ -33,6 +34,23 @@ it("lays out image with correct aspect ratio", done => {
   };
 
   comp.handleLayout({ nativeEvent: { layout: { width: 20 } } });
+});
+
+it("use placeholder image when image is not reachable", done => {
+  const comp = new Image({
+    source: {
+      uri: "http://httpstat.us/404"
+    },
+    aspectRatio: 0.5
+  });
+
+  comp.setState = ({ source }) => {
+    expect(source.uri).toEqual(placeholder);
+
+    return done();
+  };
+
+  comp.handleError();
 });
 
 it("loads the correct url", () => {
