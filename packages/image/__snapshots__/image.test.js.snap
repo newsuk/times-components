@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders snapshot correctly 1`] = `
+exports[`renders correctly with no dimensions and given URI 1`] = `
 <View
   onLayout={[Function]}
 >
@@ -15,6 +15,27 @@ exports[`renders snapshot correctly 1`] = `
       Object {
         "height": 0,
         "width": 0,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`sets the expected dimensions for a given state 1`] = `
+<View
+  onLayout={[Function]}
+>
+  <Image
+    onError={[Function]}
+    source={
+      Object {
+        "uri": "http://example.com/image.jpg",
+      }
+    }
+    style={
+      Object {
+        "height": 300,
+        "width": 100,
       }
     }
   />

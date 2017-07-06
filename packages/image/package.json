@@ -9,7 +9,8 @@
   },
   "jest": {
     "preset": "react-native",
-    "rootDir": "../../"
+    "rootDir": "../../",
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "peerDependencies": {
+    "@storybook/react-native": "3.0.0",
     "react-native": "0.44.1"
   },
   "devDependencies": {
@@ -38,6 +40,8 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
+    "enzyme": "2.9.1",
+    "enzyme-to-json": "1.5.1",
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
     "react-native": "0.44.1",
@@ -47,14 +51,10 @@
   "dependencies": {
     "jest-cli": "20.0.4",
     "lodash.merge": "4.6.0",
-    "prop-types": "^15.5.10",
+    "prop-types": "15.5.10",
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",
     "react-native-web": "0.0.97",
-    "react-style-proptype": "^3.0.0"
-  },
-  "peerDependencies": {
-    "@storybook/react-native": "3.0.0",
-    "react-native": "0.44.1"
+    "react-style-proptype": "3.0.0"
   }
 }
