@@ -39,7 +39,7 @@ describe("AdManager", () => {
     expect(adManager.section).toBe(managerOptions.section);
   });
 
-  it("init function sets the required scripts", done => {
+  it("init function sets the required scripts", () => {
     const newPbjsManager = adManager.pbjsManager;
     const newGptManager = adManager.gptManager;
 
@@ -49,19 +49,18 @@ describe("AdManager", () => {
     newPbjsManager.loadScript = pbjsLoadScript;
     newGptManager.loadScript = gptLoadScript;
 
-    newPbjsManager.setConfig = cb => cb();
-    newGptManager.setConfig = cb => cb();
-    newPbjsManager.init = (adUnits, cb) => cb();
-    newGptManager.init = cb => cb();
-    adManager.init(() => {
+    newPbjsManager.setConfig = () => Promise.resolve();
+    newGptManager.setConfig = () => Promise.resolve();
+    newPbjsManager.init = () => Promise.resolve();
+    newGptManager.init = () => Promise.resolve();
+    return adManager.init().then(() => {
       expect(pbjsLoadScript).toHaveBeenCalled();
       expect(gptLoadScript).toHaveBeenCalled();
       expect(adManager.initialised).toBeTruthy();
-      done();
     });
   });
 
-  it("registerAd inserts configured ad in the queue and push it to gpt on it", done => {
+  it("registerAd inserts configured ad in the queue and push it to gpt on it", () => {
     const newPbjsManager = adManager.pbjsManager;
     const newGptManager = adManager.gptManager;
 
@@ -87,13 +86,12 @@ describe("AdManager", () => {
     expect(adManager.adQueue).toHaveLength(1);
     expect(adManager.adQueue[0]).toEqual(mockAd);
 
-    newPbjsManager.setConfig = cb => cb();
-    newGptManager.setConfig = cb => cb();
-    newPbjsManager.init = (adUnits, cb) => cb();
-    newGptManager.init = cb => cb();
-    adManager.init(() => {
+    newPbjsManager.setConfig = () => Promise.resolve();
+    newGptManager.setConfig = () => Promise.resolve();
+    newPbjsManager.init = () => Promise.resolve();
+    newGptManager.init = () => Promise.resolve();
+    return adManager.init().then(() => {
       expect(adManager.pushAdToGPT).toHaveBeenCalled();
-      done();
     });
   });
 

@@ -22,7 +22,6 @@ describe("GptManager", () => {
     const enableAsyncRendering = jest.fn();
     const collapseEmptyDivs = jest.fn();
     const disableInitialLoad = jest.fn();
-    const callback = jest.fn();
 
     gptManager.loadScript();
     const googletag = gptManager.googletag;
@@ -32,30 +31,27 @@ describe("GptManager", () => {
       collapseEmptyDivs,
       disableInitialLoad
     });
-    gptManager.setConfig(callback);
-    expect(googletag.cmd).toHaveLength(1);
 
+    gptManager.setConfig();
+    expect(googletag.cmd).toHaveLength(1);
     googletag.cmd[0]();
     expect(enableSingleRequest).toHaveBeenCalled();
     expect(enableAsyncRendering).toHaveBeenCalled();
     expect(collapseEmptyDivs).toHaveBeenCalled();
     expect(disableInitialLoad).toHaveBeenCalled();
-    expect(callback).toHaveBeenCalled();
   });
 
   it("init function calls enableServices and sets the initialised fields", () => {
     const enableServices = jest.fn();
-    const callback = jest.fn();
 
     gptManager.loadScript();
     const googletag = gptManager.googletag;
     googletag.enableServices = enableServices;
-    gptManager.init(callback);
-    expect(googletag.cmd).toHaveLength(2);
 
+    gptManager.init();
+    expect(googletag.cmd).toHaveLength(2);
     googletag.cmd[1]();
     expect(enableServices).toHaveBeenCalled();
-    expect(callback).toHaveBeenCalled();
     expect(gptManager.initialised).toBeTruthy();
     expect(gptManager.isReady).toBeTruthy();
   });

@@ -25,9 +25,12 @@ class AdComposer extends Component {
   }
 
   componentDidMount() {
-    this.adManager.init(() => {
-      this.adManager.display();
-    });
+    this.adManager
+      .init()
+      .then(this.adManager.display.bind(this.adManager))
+      .catch(err => {
+        throw new Error(err);
+      });
   }
 
   render() {

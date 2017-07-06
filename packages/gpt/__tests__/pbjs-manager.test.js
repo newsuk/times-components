@@ -33,13 +33,10 @@ describe("PrebidManager", () => {
     expect(typeof prebid.bidderTimeout).toEqual("number");
     expect(prebid.bidderSettings).toBeDefined();
 
-    const callback = jest.fn();
-    pbjsManager.setConfig(callback);
-    expect(callback).toHaveBeenCalled();
+    return pbjsManager.setConfig();
   });
 
   it("init function adds the ad units and makes the bid requests", () => {
-    const callback = jest.fn();
     const addAdUnits = jest.fn();
     const requestBids = ({ bidsBackHandler }) => bidsBackHandler();
 
@@ -48,11 +45,10 @@ describe("PrebidManager", () => {
     prebid.requestBids = requestBids;
     prebid.addAdUnits = addAdUnits;
 
-    pbjsManager.init({}, callback);
+    pbjsManager.init({});
     expect(prebid.que).toHaveLength(1);
     prebid.que[0]();
     expect(addAdUnits).toHaveBeenCalled();
-    expect(callback).toHaveBeenCalled();
     expect(pbjsManager.initialised).toBeTruthy();
     expect(pbjsManager.isReady).toBeTruthy();
   });

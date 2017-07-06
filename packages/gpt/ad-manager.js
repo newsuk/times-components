@@ -1,6 +1,3 @@
-import series from "run-series";
-import parallel from "run-parallel";
-
 export default class AdManager {
   constructor(options = {}) {
     if (!new.target) {
@@ -24,34 +21,23 @@ export default class AdManager {
     return idx > -1 ? obj.filter((item, index) => idx !== index) : obj;
   }
 
-  init(callback) {
+  init() {
     // Load scripts if needed be
     this.gptManager.loadScript();
     this.pbjsManager.loadScript();
 
-    series(
-      [
-        // Set services config
-        parallel.bind(parallel, [
-          this.gptManager.setConfig.bind(this.gptManager),
-          this.pbjsManager.setConfig.bind(this.pbjsManager)
-        ]),
-        // Init services
-        parallel.bind(parallel, [
-          this.gptManager.init.bind(this.gptManager),
-          this.pbjsManager.init.bind(this.pbjsManager, this.adQueue)
-        ])
-      ],
-      err => {
-        if (err) throw new Error(err);
+    return this.gptManager
+      .setConfig()
+      .then(this.pbjsManager.setConfig.bind(this.pbjsManager))
+      .then(this.gptManager.init.bind(this.gptManager))
+      .then(this.pbjsManager.init.bind(this.pbjsManager, this.adQueue))
+      .then(() => {
         this.initialised = true;
         // Actually push the ads to GPT
         this.adQueue.forEach(ad => {
           this.pushAdToGPT(ad.code, ad.mappings);
         });
-        return callback && callback();
-      }
-    );
+      });
   }
 
   registerAd(code, { width = 1024 } = {}) {
@@ -62,16 +48,14 @@ export default class AdManager {
     this.adQueue = AdManager.removeItemFromQueue(this.adQueue, code);
   }
 
-  display(callback) {
-    if (!this.initialised) {
-      throw new Error("Ad manager needs to be initialised first");
-    }
-
-    this.gptManager.googletag.cmd.push(() => {
-      this.pbjsManager.pbjs.que.push(() => {
-        this.pbjsManager.pbjs.setTargetingForGPTAsync();
-        this.gptManager.googletag.pubads().refresh();
-        return callback && callback();
+  display() {
+    return new Promise(resolve => {
+      this.gptManager.googletag.cmd.push(() => {
+        this.pbjsManager.pbjs.que.push(() => {
+          this.pbjsManager.pbjs.setTargetingForGPTAsync();
+          this.gptManager.googletag.pubads().refresh();
+          return resolve();
+        });
       });
     });
   }
@@ -94,10 +78,6 @@ export default class AdManager {
   }
 
   generateSizings(sizingMap) {
-    if (!this.initialised) {
-      throw new Error("Ad manager needs to be initialised first");
-    }
-
     const mapping = this.gptManager.googletag.sizeMapping();
 
     for (let i = 0; i < sizingMap.length; i += 1) {
@@ -109,10 +89,6 @@ export default class AdManager {
   }
 
   createSlot(adSlotId, section) {
-    if (!this.initialised) {
-      throw new Error("Ad manager needs to be initialised first");
-    }
-
     return this.gptManager.googletag.defineSlot(
       `/${this.networkId}/${this.adUnit}/${section}`,
       [],

@@ -35,51 +35,40 @@ const GptManager = class GptManager {
     this.scriptSet = true;
   }
 
-  setConfig(callback) {
-    if (this.isReady) {
-      return callback && callback();
-    }
-
-    // Script and related vars must be set first
-    if (!this.scriptSet) {
-      throw new Error("GPT manager needs the script to be set first");
-    }
-
+  setConfig() {
     const googletag = this.googletag;
 
     // See https://developers.google.com/doubleclick-gpt/reference#googletagpubadsservice
-    return googletag.cmd.push(() => {
-      // fetch multiple ads at once
-      googletag.pubads().enableSingleRequest();
+    return new Promise(resolve => {
+      if (this.isReady) return resolve();
 
-      // add support for async loading
-      googletag.pubads().enableAsyncRendering();
+      return googletag.cmd.push(() => {
+        // fetch multiple ads at once
+        googletag.pubads().enableSingleRequest();
 
-      // collapse div without ad
-      googletag.pubads().collapseEmptyDivs();
+        // add support for async loading
+        googletag.pubads().enableAsyncRendering();
 
-      // load ad with slot refresh
-      googletag.pubads().disableInitialLoad();
+        // collapse div without ad
+        googletag.pubads().collapseEmptyDivs();
 
-      return callback && callback();
+        // load ad with slot refresh
+        googletag.pubads().disableInitialLoad();
+
+        return resolve();
+      });
     });
   }
 
-  init(callback) {
-    if (this.isReady) {
-      return callback && callback();
-    }
-
-    // Script and related vars must be set first
-    if (!this.scriptSet) {
-      throw new Error("GPT manager needs the script to be set first");
-    }
-
-    return this.googletag.cmd.push(() => {
-      // enable google publisher tag
-      this.googletag.enableServices();
-      this.initialised = true;
-      return callback && callback();
+  init() {
+    return new Promise(resolve => {
+      if (this.isReady) return resolve();
+      return this.googletag.cmd.push(() => {
+        // enable google publisher tag
+        this.googletag.enableServices();
+        this.initialised = true;
+        return resolve();
+      });
     });
   }
 };

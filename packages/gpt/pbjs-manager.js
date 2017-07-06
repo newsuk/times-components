@@ -36,16 +36,7 @@ const PbjsManager = class PbjsManager {
     this.scriptSet = true;
   }
 
-  setConfig(callback) {
-    if (this.isReady) {
-      return callback && callback();
-    }
-
-    // Script and related vars must be set first
-    if (!this.scriptSet) {
-      throw new Error("Prebid JS manager needs the script to be set first");
-    }
-
+  setConfig() {
     const pbjs = this.pbjs;
     const options = this.options;
 
@@ -89,27 +80,22 @@ const PbjsManager = class PbjsManager {
       }
     };
 
-    return callback && callback();
+    return Promise.resolve();
   }
 
-  init(adUnits, callback) {
-    if (this.isReady) {
-      return callback && callback();
-    }
+  init(adUnits) {
+    return new Promise(resolve => {
+      if (this.isReady) resolve();
 
-    // Script and related vars must be set first
-    if (!this.scriptSet) {
-      throw new Error("Prebid JS manager needs the script to be set first");
-    }
+      this.pbjs.que.push(() => {
+        this.pbjs.addAdUnits(adUnits);
 
-    return this.pbjs.que.push(() => {
-      this.pbjs.addAdUnits(adUnits);
-
-      this.pbjs.requestBids({
-        bidsBackHandler: () => {
-          this.initialised = true;
-          return callback && callback();
-        }
+        this.pbjs.requestBids({
+          bidsBackHandler: () => {
+            this.initialised = true;
+            return resolve();
+          }
+        });
       });
     });
   }
