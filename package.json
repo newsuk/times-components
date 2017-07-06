@@ -37,6 +37,11 @@
       "git add"
     ]
   },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ]
+  },
   "config": {
     "react-native-storybook-loader": {
       "searchDir": [
