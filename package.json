@@ -15,7 +15,7 @@
     "prestorybook:build": "node ./lib/fetch-fonts",
     "storybook:build": "build-storybook -c .storybook -s ./dist/public",
     "storybook:publish": "./lib/publish_storybook.sh",
-    "prestorybook-native": "node ./node_modules/.bin/rnstl",
+    "prestorybook-native": "node ./node_modules/.bin/rnstl && node ./lib/fetch-fonts",
     "storybook-native": "storybook -c .storybook.native start -p 7007",
     "ios": "react-native run-ios",
     "android": "react-native run-android",
