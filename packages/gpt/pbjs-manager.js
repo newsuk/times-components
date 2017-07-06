@@ -2,10 +2,6 @@
 
 const PbjsManager = class PbjsManager {
   constructor(options) {
-    if (!new.target) {
-      return new PbjsManager(options);
-    }
-
     this.options = options;
     this.scriptSet = false;
     this.initialised = false;

@@ -2,10 +2,6 @@
 
 const GptManager = class GptManager {
   constructor() {
-    if (!new.target) {
-      return new GptManager();
-    }
-
     this.scriptSet = false;
     this.initialised = false;
     this.googletag = null;

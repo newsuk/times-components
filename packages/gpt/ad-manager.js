@@ -1,9 +1,5 @@
 export default class AdManager {
   constructor(options = {}) {
-    if (!new.target) {
-      return new AdManager(options);
-    }
-
     this.adQueue = [];
     this.adUnit = options.adUnit;
     this.networkId = options.networkId;
