@@ -34,7 +34,7 @@ class VideoAddTest extends Component {
         />
       );
 
-      i++;
+      i += 1;
     }
 
     return (

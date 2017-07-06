@@ -156,7 +156,7 @@ describe("brightcove-video web component", () => {
           .mockReturnValue(dummyScript);
 
         appendScriptSpy = jest
-          .spyOn(BrightcoveVideo.prototype, "appendScript")
+          .spyOn(BrightcoveVideo, "appendScript")
           .mockImplementation(() => {});
 
         dummyPlayer = {

@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import { requireNativeComponent } from "react-native";
 
+const RNTBrightcove = requireNativeComponent("RNTBrightcove", null);
+
 class BrightcoveVideo extends Component {
+  static getNativeBrightcoveComponent() {
+    return RNTBrightcove;
+  }
+
   constructor(props) {
     super(props);
     this._onChange = this._onChange.bind(this);
-  }
-
-  getNativeBrightcoveComponent() {
-    return RNTBrightcove;
   }
 
   _onChange(event) {
@@ -18,7 +20,7 @@ class BrightcoveVideo extends Component {
   }
 
   render() {
-    const NativeBrightcove = this.getNativeBrightcoveComponent();
+    const NativeBrightcove = BrightcoveVideo.getNativeBrightcoveComponent();
 
     return (
       <NativeBrightcove
@@ -36,7 +38,5 @@ BrightcoveVideo.defaultProps = {
   width: 320,
   height: 180
 };
-
-const RNTBrightcove = requireNativeComponent("RNTBrightcove", null);
 
 export default BrightcoveVideo;

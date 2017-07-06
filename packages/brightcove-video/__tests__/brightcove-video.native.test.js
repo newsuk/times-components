@@ -61,7 +61,7 @@ describe("brightcove-video native component", () => {
       };
 
       getNativeBrightcoveComponentSpy = jest
-        .spyOn(BrightcoveVideo.prototype, "getNativeBrightcoveComponent")
+        .spyOn(BrightcoveVideo, "getNativeBrightcoveComponent")
         .mockImplementation(() => mockRNTBrightcove);
     });
 
