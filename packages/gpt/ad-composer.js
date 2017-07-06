@@ -16,7 +16,7 @@ class AdComposer extends Component {
 
     this.adManager = new AdManager({
       networkId: props.networkId,
-      adUnit: "d.thetimes.co.uk",
+      adUnit: props.adUnit,
       section: props.section,
       gptManager,
       pbjsManager,
@@ -46,8 +46,14 @@ class AdComposer extends Component {
 
 AdComposer.propTypes = {
   networkId: PropTypes.string.isRequired,
+  adUnit: PropTypes.string.isRequired,
   section: PropTypes.string.isRequired,
   children: PropTypes.element.isRequired
+};
+
+AdComposer.defaultProps = {
+  networkId: "25436805",
+  adUnit: "d.thetimes.co.uk"
 };
 
 export default AdComposer;

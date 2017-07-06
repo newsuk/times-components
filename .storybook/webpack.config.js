@@ -1,3 +1,6 @@
+const babelPluginTransformClass = require("babel-plugin-transform-class")
+  .default;
+
 module.exports = {
   module: {
     rules: [
@@ -7,7 +10,7 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            plugins: [require("babel-plugin-transform-class").default]
+            plugins: [babelPluginTransformClass]
           }
         }
       }

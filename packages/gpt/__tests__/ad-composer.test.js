@@ -6,7 +6,7 @@ import Ad from "../ad";
 
 describe("AdComposer test", () => {
   it("renders a snapshot with AdComposer and no ads", () => {
-    const tree = renderer.create(<AdComposer />).toJSON();
+    const tree = renderer.create(<AdComposer section="article" />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
@@ -14,7 +14,7 @@ describe("AdComposer test", () => {
   it("renders a snapshot with one Ad", () => {
     const tree = renderer
       .create(
-        <AdComposer section="article" networkId="25436805">
+        <AdComposer section="article">
           <Ad code="ad-header" />
         </AdComposer>
       )
@@ -26,7 +26,7 @@ describe("AdComposer test", () => {
   it("renders a snapshot with more than one Ad", () => {
     const tree = renderer
       .create(
-        <AdComposer section="article" networkId="25436805">
+        <AdComposer section="article">
           <Ad code="ad-header" />
           <Ad code="intervention" />
         </AdComposer>
