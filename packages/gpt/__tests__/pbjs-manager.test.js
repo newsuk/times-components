@@ -50,4 +50,13 @@ describe("PrebidManager", () => {
     expect(pbjsManager.initialised).toBeTruthy();
     expect(pbjsManager.isReady).toBeTruthy();
   });
+
+  it("init resolves if script was set and pbjs is initialised", () => {
+    pbjsManager.loadScript();
+    const prebid = pbjsManager.pbjs;
+    prebid.que = jest.fn();
+    pbjsManager.isReady = jest.fn().mockImplementation(() => true);
+    pbjsManager.init();
+    expect(prebid.que).not.toHaveBeenCalled();
+  });
 });
