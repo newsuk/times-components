@@ -19,22 +19,17 @@ const props = {
   }
 };
 
-it("renders a horizontal snapshot by default", () => {
+it("renders horizontal by default", () => {
   const tree = renderer.create(<Card {...props} />).toJSON();
 
   expect(tree).toMatchSnapshot();
 });
 
-it("renders a horizontal snapshot when width below breakpoint", () => {
+it("renders vertical above breakpoint", () => {
   const wrapper = shallow(<Card {...props} />);
-  wrapper.instance().handleLayout({ nativeEvent: { layout: { width: 320 } } });
-
-  expect(wrapper).toMatchSnapshot();
-});
-
-it("renders a vertical snapshot when width above breakpoint", () => {
-  const wrapper = shallow(<Card {...props} />);
-  wrapper.instance().handleLayout({ nativeEvent: { layout: { width: 640 } } });
+  wrapper.setState({
+    isHorizontal: false
+  });
 
   expect(wrapper).toMatchSnapshot();
 });
@@ -45,7 +40,7 @@ it("renders component horizontal by default", () => {
   expect(comp.state.isHorizontal).toBeTruthy();
 });
 
-it("renders component vertical when width below breakpoint", done => {
+it("renders component vertical below breakpoint", done => {
   const comp = new Card(...props);
 
   comp.setState = ({ isHorizontal }) => {
@@ -55,4 +50,11 @@ it("renders component vertical when width below breakpoint", done => {
   };
 
   comp.handleLayout({ nativeEvent: { layout: { width: 320 } } });
+});
+
+it("renders component horizontal above breakpoint", () => {
+  const comp = new Card(...props);
+
+  comp.handleLayout({ nativeEvent: { layout: { width: 640 } } });
+  expect(comp.state.isHorizontal).toBeTruthy();
 });
