@@ -4,14 +4,15 @@
   "main": "card.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
-    "test:dev": "jest --bail --verbose --watch",
+    "test:dev": "jest --bail --verbose --watchAll",
     "test": "jest --bail --ci --coverage"
   },
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
     "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-    "testMatch": ["<rootDir>/packages/article-summary/**.test.js"]
+    "testMatch": ["<rootDir>/packages/card/**.test.js"]
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,8 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
+    "enzyme": "2.9.1",
+    "enzyme-to-json": "1.5.1",
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
     "react-native": "0.44.1",

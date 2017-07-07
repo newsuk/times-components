@@ -27,7 +27,7 @@ class CardComponent extends React.Component {
     super(props);
     this.handleLayout = this.handleLayout.bind(this);
     this.state = {
-      isHorizontal: false
+      isHorizontal: true
     };
   }
   handleLayout(event) {
