@@ -198,6 +198,18 @@ describe("AdManager", () => {
     expect(display).toHaveBeenCalledWith(slotId);
   });
 
+  it("pushAdToGPT gives an error if slot does not exist", () => {
+    adManager.createSlot = jest.fn().mockImplementation(() => null);
+    const display = jest.fn();
+    adManager.gptManager.googletag = {
+      cmd: [],
+      display
+    };
+    adManager.pushAdToGPT();
+    adManager.gptManager.googletag.cmd[0]();
+    expect(display).not.toHaveBeenCalled();
+  });
+
   it("generateSizings calls gpt googletag to set sizings", () => {
     const newGptManager = adManager.gptManager;
     adManager.initialised = true;

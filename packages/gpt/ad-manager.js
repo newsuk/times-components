@@ -59,6 +59,9 @@ export default class AdManager {
   pushAdToGPT(adSlotId, sizingMap) {
     this.gptManager.googletag.cmd.push(() => {
       const slot = this.createSlot(adSlotId, this.section);
+      if (!slot) {
+        return;
+      }
       slot.addService(this.gptManager.googletag.pubads());
       slot.defineSizeMapping(this.generateSizings(sizingMap));
 

@@ -48,7 +48,7 @@ AdComposer.propTypes = {
   networkId: PropTypes.string.isRequired,
   adUnit: PropTypes.string.isRequired,
   section: PropTypes.string.isRequired,
-  children: PropTypes.element.isRequired
+  children: PropTypes.arrayOf(PropTypes.element).isRequired
 };
 
 AdComposer.defaultProps = {
