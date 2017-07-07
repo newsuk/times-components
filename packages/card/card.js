@@ -22,8 +22,8 @@ const getStyles = isHorizontal =>
   });
 
 class CardComponent extends React.Component {
-  constructor(...args) {
-    super(...args);
+  constructor(props) {
+    super(props);
     this.handleLayout = this.handleLayout.bind(this);
     this.state = {
       isHorizontal: false
