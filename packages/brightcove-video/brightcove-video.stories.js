@@ -1,4 +1,5 @@
-/* eslint import/no-unresolved: "off" */
+/* eslint import/no-unresolved: "off", react/no-multi-comp: "off" */
+/* global document */
 
 import React, { Component } from "react";
 import { View, TouchableOpacity, Text } from "react-native";
@@ -12,6 +13,22 @@ const accountId = "57838016001";
 const videoId = "4084164751001";
 
 const firstArgJSONAction = decorateAction([args => [JSON.stringify(args[0])]]);
+
+class TealiumScript extends Component {
+  componentWillMount() {
+    const account = "newsinternational";
+    const profile = "thetimes.d.desktop";
+    const env = "dev";
+    const script = document.createElement("script");
+
+    script.src = `https://tags.tiqcdn.com/utag/${account}/${profile}/${env}/utag.js`;
+    document.body.appendChild(script);
+  }
+
+  render() {
+    return null;
+  }
+}
 
 class VideoAddTest extends Component {
   static getVideos(count) {
@@ -149,4 +166,14 @@ storiesOf("BrightcoveVideo", module)
       accountId={accountId}
       onChange={firstArgJSONAction("change")}
     />
+  )
+  .add("With tealium on the page", () =>
+    <View>
+      <TealiumScript />
+      <BrightcoveVideo
+        policyId={policyId}
+        videoId={videoId}
+        accountId={accountId}
+      />
+    </View>
   );
