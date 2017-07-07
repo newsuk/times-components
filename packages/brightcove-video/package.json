@@ -1,5 +1,5 @@
 {
-  "name": "@timescomponents/brightcove-video",
+  "name": "@times-components/brightcove-video",
   "version": "0.0.1",
   "main": "brightcove-video.js",
   "scripts": {
@@ -43,6 +43,7 @@
     "webpack": "2.6.1"
   },
   "dependencies": {
+    "prop-types": "15.5.10",
     "react": "16.0.0-alpha.6",
     "react-native": "0.44.2",
     "react-dom": "15.5.4",
