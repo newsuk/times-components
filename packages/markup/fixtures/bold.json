@@ -1,0 +1,20 @@
+{
+  "fixture": [
+    {
+      "name": "b",
+      "attributes": {
+
+      },
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": "some text here"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

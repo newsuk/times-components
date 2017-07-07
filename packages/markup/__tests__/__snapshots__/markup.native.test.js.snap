@@ -1,0 +1,236 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Markup Native does not render a script tag 1`] = `<View />`;
+
+exports[`Markup Native does not render an image tag 1`] = `<View />`;
+
+exports[`Markup Native renders a mixture of tags 1`] = `
+<View>
+  <View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      onPress={[Function]}
+      style={
+        Object {
+          "color": "blue",
+        }
+      }
+    >
+      some link here
+    </Text>
+  </View>
+  <View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontWeight": "bold",
+        }
+      }
+    >
+      some text here
+    </Text>
+  </View>
+  <View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontStyle": "italic",
+        }
+      }
+    >
+       some more text here
+    </Text>
+  </View>
+  <View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      some other text here
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Markup Native renders a single paragraph 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+  This is the text for paragraph one
+</Text>
+`;
+
+exports[`Markup Native renders an empty component 1`] = `<View />`;
+
+exports[`Markup Native renders multiple paragraphs 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    This is the text for paragraph one
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    This is the text for paragraph two
+  </Text>
+</View>
+`;
+
+exports[`Markup Native renders nested tags 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    Some text is here 
+  </Text>
+  <View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      and there is some 
+    </Text>
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        more text 
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        and in here
+      </Text>
+    </View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+       after it too
+    </Text>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+     and here
+  </Text>
+</View>
+`;
+
+exports[`Markup Native renders the anchor tag 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  onPress={[Function]}
+  style={
+    Object {
+      "color": "blue",
+    }
+  }
+>
+  some link here
+</Text>
+`;
+
+exports[`Markup Native renders the bold tag 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Object {
+      "fontWeight": "bold",
+    }
+  }
+>
+  some text here
+</Text>
+`;
+
+exports[`Markup Native renders the italic tag 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Object {
+      "fontStyle": "italic",
+    }
+  }
+>
+   some more text here
+</Text>
+`;
+
+exports[`Markup Native renders the span tag 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+  some other text here
+</Text>
+`;
+
+exports[`Markup Native renders wrapped tags 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+  Camilla Long is 
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontStyle": "italic",
+      }
+    }
+  >
+    the Sunday Times
+  </Text>
+   film critic. She also writes interviews and a column, and was named 
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontWeight": "bold",
+      }
+    }
+  >
+    interviewer of the year
+  </Text>
+   at the British Press Awards in 2010 and 2016.
+</Text>
+`;

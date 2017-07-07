@@ -1,0 +1,20 @@
+{
+  "fixture": [
+    {
+      "name": "a",
+      "attributes": {
+        "href": "www.google.com"
+      },
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": "some link here"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

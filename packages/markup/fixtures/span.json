@@ -1,0 +1,20 @@
+{
+  "fixture": [
+    {
+      "name": "span",
+      "attributes": {
+
+      },
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": "some other text here"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

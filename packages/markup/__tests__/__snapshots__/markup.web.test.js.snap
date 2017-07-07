@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Markup Web does not render a script tag 1`] = `<div />`;
+
+exports[`Markup Web does not render an image tag 1`] = `<div />`;
+
+exports[`Markup Web renders a mixture of tags 1`] = `
+<div>
+  <div>
+    <a
+      href="http://www.google.com"
+    >
+      some link here
+    </a>
+  </div>
+  <div>
+    <strong>
+      some text here
+    </strong>
+  </div>
+  <div>
+    <em>
+       some more text here
+    </em>
+  </div>
+  <div>
+    <span>
+      some other text here
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Markup Web renders a single paragraph 1`] = `
+<p>
+  This is the text for paragraph one
+</p>
+`;
+
+exports[`Markup Web renders an empty component 1`] = `<div />`;
+
+exports[`Markup Web renders multiple paragraphs 1`] = `
+<div>
+  <p>
+    This is the text for paragraph one
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+</div>
+`;
+
+exports[`Markup Web renders nested tags 1`] = `
+<div>
+  Some text is here 
+  <div>
+    and there is some 
+    <div>
+      more text 
+      <span>
+        and in here
+      </span>
+    </div>
+     after it too
+  </div>
+   and here
+</div>
+`;
+
+exports[`Markup Web renders the anchor tag 1`] = `
+<a
+  href="www.google.com"
+>
+  some link here
+</a>
+`;
+
+exports[`Markup Web renders the bold tag 1`] = `
+<strong>
+  some text here
+</strong>
+`;
+
+exports[`Markup Web renders the italic tag 1`] = `
+<em>
+   some more text here
+</em>
+`;
+
+exports[`Markup Web renders the span tag 1`] = `
+<span>
+  some other text here
+</span>
+`;
+
+exports[`Markup Web renders wrapped tags 1`] = `
+<p>
+  Camilla Long is 
+  <em>
+    the Sunday Times
+  </em>
+   film critic. She also writes interviews and a column, and was named 
+  <strong>
+    interviewer of the year
+  </strong>
+   at the British Press Awards in 2010 and 2016.
+</p>
+`;
