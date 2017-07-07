@@ -1,12 +1,12 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import ArticleSummary from "@timescomponents/article-summary";
-import Image from "@timescomponents/image";
+import ArticleSummary from "@times-components/article-summary";
+import Image from "@times-components/image";
 
 const horizontalBreakpoint = 500;
 
-const getStyles = isHorizontal => {
-  return StyleSheet.create({
+const getStyles = isHorizontal =>
+  StyleSheet.create({
     container: {
       flex: 1,
       flexDirection: isHorizontal ? "row" : "column"
@@ -19,10 +19,9 @@ const getStyles = isHorizontal => {
       paddingRight: isHorizontal ? "8%" : 0,
       width: isHorizontal ? "60%" : "100%"
     }
-  })
-};
+  });
 
-export default class Card extends React.Component {
+class CardComponent extends React.Component {
   constructor(...args) {
     super(...args);
     this.handleLayout = this.handleLayout.bind(this);
@@ -58,3 +57,19 @@ export default class Card extends React.Component {
     );
   }
 }
+
+CardComponent.propTypes = Object.assign(
+  {},
+  {
+    image: Image.propTypes.source
+  },
+  ArticleSummary.propTypes
+);
+
+CardComponent.defaultProps = {
+  image: {
+    uri: ""
+  }
+};
+
+export default CardComponent;
