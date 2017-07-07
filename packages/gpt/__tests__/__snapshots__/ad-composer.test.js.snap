@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AdComposer test renders a snapshot with AdComposer and no ads 1`] = `<div />`;
+exports[`AdComposer renders no ad slots 1`] = `<div />`;
 
-exports[`AdComposer test renders a snapshot with more than one Ad 1`] = `
+exports[`AdComposer renders with more than one ad slot 1`] = `
 <div>
   <div
     id="ad-header"
@@ -13,7 +13,7 @@ exports[`AdComposer test renders a snapshot with more than one Ad 1`] = `
 </div>
 `;
 
-exports[`AdComposer test renders a snapshot with one Ad 1`] = `
+exports[`AdComposer renders with one ad slot 1`] = `
 <div>
   <div
     id="ad-header"

@@ -24,7 +24,7 @@ describe("Gpt test", () => {
     });
   });
 
-  it("renders a snapshot", () => {
+  it("renders an ad-header ad slot", () => {
     const tree = renderer
       .create(<GPT adManager={adManager} code="ad-header" />)
       .toJSON();
@@ -32,7 +32,7 @@ describe("Gpt test", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders a snapshot for pixel", () => {
+  it("renders an ad-pixel ad slot", () => {
     const tree = renderer
       .create(<GPT adManager={adManager} code="ad-pixel" />)
       .toJSON();
@@ -40,7 +40,7 @@ describe("Gpt test", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders a snapshot on a unmounted component", () => {
+  it("calls unregisterAd when component unmounts", () => {
     const code = "ad-header";
     const tree = renderer.create(<GPT adManager={adManager} code={code} />);
 

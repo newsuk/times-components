@@ -4,14 +4,14 @@ import renderer from "react-test-renderer";
 import AdComposer from "../ad-composer";
 import Ad from "../ad";
 
-describe("AdComposer test", () => {
-  it("renders a snapshot with AdComposer and no ads", () => {
+describe("AdComposer", () => {
+  it("renders no ad slots", () => {
     const tree = renderer.create(<AdComposer section="article" />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders a snapshot with one Ad", () => {
+  it("renders with one ad slot", () => {
     const tree = renderer
       .create(
         <AdComposer section="article">
@@ -23,7 +23,7 @@ describe("AdComposer test", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders a snapshot with more than one Ad", () => {
+  it("renders with more than one ad slot", () => {
     const tree = renderer
       .create(
         <AdComposer section="article">
