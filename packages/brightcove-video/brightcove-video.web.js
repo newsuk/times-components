@@ -75,35 +75,7 @@ class BrightcoveVideo extends Component {
 
   componentWillUnmount() {
     if (this.player) {
-      this.player.off();
       this.player.dispose();
-    }
-  }
-
-  setPlayer(player) {
-    this.player = player;
-  }
-
-  createScript() {
-    const s = document.createElement("script");
-    s.src = BrightcoveVideo.getScriptUrl(this.props.accountId);
-
-    return s;
-  }
-
-  emitState() {
-    if (this.props.onChange) {
-      this.props.onChange(this.state);
-    }
-  }
-
-  emitError(err) {
-    const errors = [].concat(this.state.errors);
-    errors.push(err);
-    this.setState({ errors });
-
-    if (this.props.onError) {
-      this.props.onError(err);
     }
   }
 
@@ -137,6 +109,33 @@ class BrightcoveVideo extends Component {
     this.emitState();
   }
 
+  setPlayer(player) {
+    this.player = player;
+  }
+
+  createScript() {
+    const s = document.createElement("script");
+    s.src = BrightcoveVideo.getScriptUrl(this.props.accountId);
+
+    return s;
+  }
+
+  emitState() {
+    if (this.props.onChange) {
+      this.props.onChange(this.state);
+    }
+  }
+
+  emitError(err) {
+    const errors = [].concat(this.state.errors);
+    errors.push(err);
+    this.setState({ errors });
+
+    if (this.props.onError) {
+      this.props.onError(err);
+    }
+  }
+
   initVideoJS(id) {
     const player = videojs(id);
     const handler = BrightcoveVideo.handlePlayerReady.bind(player, this);
@@ -160,8 +159,10 @@ class BrightcoveVideo extends Component {
 
   render() {
     if (this.state.errors.length) {
-      const errorItems = this.state.errors.map((error, i) =>
-        <li key={i} style={{ color: "white" }}>
+      /* eslint jsx-a11y/media-has-caption: "off" */
+
+      const errorItems = this.state.errors.map(error =>
+        <li key={`${error.code}_${error.message}`} style={{ color: "white" }}>
           {error.code} - {error.message}
         </li>
       );

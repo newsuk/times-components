@@ -10,10 +10,10 @@ class BrightcoveVideo extends Component {
 
   constructor(props) {
     super(props);
-    this._onChange = this._onChange.bind(this);
+    this.onChange = this.onChange.bind(this);
   }
 
-  _onChange(event) {
+  onChange(event) {
     if (this.props.onChange) {
       this.props.onChange(event.nativeEvent);
     }
@@ -28,7 +28,7 @@ class BrightcoveVideo extends Component {
         policyId={this.props.policyId}
         accountId={this.props.accountId}
         videoId={this.props.videoId}
-        onChange={this._onChange}
+        onChange={this.onChange}
       />
     );
   }

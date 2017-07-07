@@ -1,3 +1,5 @@
+/* eslint import/no-unresolved: "off" */
+
 import React, { Component } from "react";
 import { View, TouchableOpacity, Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
@@ -12,13 +14,7 @@ const videoId = "4084164751001";
 const firstArgJSONAction = decorateAction([args => [JSON.stringify(args[0])]]);
 
 class VideoAddTest extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      videoCount: 0
-    };
-  }
-  _getVideos(count) {
+  static getVideos(count) {
     const videos = [];
     let i = 0;
 
@@ -43,10 +39,18 @@ class VideoAddTest extends Component {
       </View>
     );
   }
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      videoCount: 0
+    };
+  }
+
   render() {
     return (
       <View>
-        {this._getVideos(this.state.videoCount)}
+        {VideoAddTest.getVideos(this.state.videoCount)}
         <TouchableOpacity
           style={{
             backgroundColor: "red",

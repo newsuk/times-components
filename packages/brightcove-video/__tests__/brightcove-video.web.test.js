@@ -322,7 +322,6 @@ describe("brightcove-video web component", () => {
         });
 
         it("will unmount cleanly", done => {
-          dummyPlayer.off = jest.fn();
           dummyPlayer.dispose = jest.fn();
 
           const component = (
@@ -337,7 +336,6 @@ describe("brightcove-video web component", () => {
             setTimeout(() => {
               ReactDOM.unmountComponentAtNode(reactWrapper);
 
-              expect(dummyPlayer.off.mock.calls).toHaveLength(1);
               expect(dummyPlayer.dispose.mock.calls).toHaveLength(1);
 
               done();

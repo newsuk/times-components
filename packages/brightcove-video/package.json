@@ -48,6 +48,10 @@
     "react-dom": "15.5.4",
     "react-native-web": "0.0.96"
   },
+  "peerDependencies": {
+    "@storybook/react-native": "3.0.0",
+    "@storybook/addon-actions": "3.0.0"
+  },
   "_timesComponentsCliVariables": {
     "component": "BrightcoveVideo",
     "packageDescription": "Brightcove component",
