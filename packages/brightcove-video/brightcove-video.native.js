@@ -34,9 +34,7 @@ class BrightcoveVideo extends Component {
   }
 }
 
-BrightcoveVideo.defaultProps = {
-  width: 320,
-  height: 180
-};
+BrightcoveVideo.defaultProps = require("./brightcove-video.defaults");
+BrightcoveVideo.propTypes = require("./brightcove-video.proptypes");
 
 export default BrightcoveVideo;

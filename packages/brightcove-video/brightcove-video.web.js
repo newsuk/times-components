@@ -121,19 +121,14 @@ class BrightcoveVideo extends Component {
   }
 
   emitState() {
-    if (this.props.onChange) {
-      this.props.onChange(this.state);
-    }
+    this.props.onChange(this.state);
   }
 
   emitError(err) {
     const errors = [].concat(this.state.errors);
     errors.push(err);
     this.setState({ errors });
-
-    if (this.props.onError) {
-      this.props.onError(err);
-    }
+    this.props.onError(err);
   }
 
   initVideoJS(id) {
@@ -202,9 +197,7 @@ class BrightcoveVideo extends Component {
 
 BrightcoveVideo.globalErrors = [];
 
-BrightcoveVideo.defaultProps = {
-  width: 320,
-  height: 180
-};
+BrightcoveVideo.defaultProps = require("./brightcove-video.defaults");
+BrightcoveVideo.propTypes = require("./brightcove-video.proptypes");
 
 export default BrightcoveVideo;
