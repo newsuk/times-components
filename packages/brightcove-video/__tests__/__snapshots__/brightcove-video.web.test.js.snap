@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`brightcove-video web component renders correctly 1`] = `
+<div>
+  <video
+    className="video-js"
+    controls={true}
+    data-account="[ACCOUNT_ID]"
+    data-application-id={true}
+    data-embed="default"
+    data-player="default"
+    data-video-id="[VIDEO_ID]"
+    height={180}
+    id="[VIDEO_ID]-[ACCOUNT_ID]-1"
+    width={320}
+  />
+</div>
+`;

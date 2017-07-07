@@ -1,3 +1,5 @@
 rootProject.name = 'storybooknative'
 
-include ':app'
+include ':app', ':rntbrightcovevideo'
+
+project(':rntbrightcovevideo').projectDir = new File(settingsDir, '../packages/brightcove-video/android/rntbrightcovevideo')
