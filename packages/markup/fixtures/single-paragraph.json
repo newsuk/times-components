@@ -1,0 +1,20 @@
+{
+  "fixture": [
+    {
+      "name": "p",
+      "attributes": {
+
+      },
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": "This is the text for paragraph one"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "fixture": [
+    {
+      "name": "div",
+      "attributes": {
+
+      },
+      "children": [
+        {
+          "name": "div",
+          "attributes": {
+
+          },
+          "children": [
+            {
+              "name": "a",
+              "attributes": {
+                "href": "http://www.google.com"
+              },
+              "children": [
+                {
+                  "name": "text",
+                  "children": [
+                    {
+                      "text": "some link here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "div",
+          "attributes": {},
+          "children": [
+            {
+              "name": "b",
+              "attributes": {
+              },
+              "children": [
+                {
+                  "name": "text",
+                  "children": [
+                    {
+                      "text": "some text here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "div",
+          "attributes": {},
+          "children": [
+            {
+              "name": "i",
+              "attributes": {
+              },
+              "children": [
+                {
+                  "name": "text",
+                  "children": [
+                    {
+                      "text": " some more text here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "div",
+          "attributes": {},
+          "children": [
+            {
+              "name": "span",
+              "attributes": {
+              },
+              "children": [
+                {
+                  "name": "text",
+                  "children": [
+                    {
+                      "text": "some other text here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
