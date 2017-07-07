@@ -15,6 +15,11 @@ exports[`renders correctly 1`] = `
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    style={
+      Object {
+        "fontFamily": "TimesModern-Bold",
+      }
+    }
   >
     Author Bios!
   </Text>

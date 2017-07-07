@@ -36,6 +36,7 @@ node_modules/
 *.log
 lcov.info
 .coveralls.yml
+package-lock.json
 
 # BUCK
 buck-out/
@@ -56,4 +57,5 @@ fastlane/screenshots
 .storybook.native/story-loader.js
 storybook-static
 coverage
+dist
 
