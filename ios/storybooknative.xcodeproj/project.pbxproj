@@ -25,7 +25,7 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2D02E4C21E0B4AEC006451C7 /* libRCTAnimation-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157351DD0AC6500FF2AA8 /* libRCTAnimation-tvOS.a */; };
+		2D02E4C21E0B4AEC006451C7 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		2D02E4C31E0B4AEC006451C7 /* libRCTImage-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */; };
 		2D02E4C41E0B4AEC006451C7 /* libRCTLinking-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E881DF850E9000B6D8A /* libRCTLinking-tvOS.a */; };
 		2D02E4C51E0B4AEC006451C7 /* libRCTNetwork-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E8C1DF850E9000B6D8A /* libRCTNetwork-tvOS.a */; };
@@ -40,6 +40,17 @@
 		515F7D1A1F0E7BA000966DF3 /* TimesModern-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 515F7D161F0E7BA000966DF3 /* TimesModern-Bold.ttf */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		87396A0E1EF3E8F70076CBAD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87396A0D1EF3E8F70076CBAD /* AVFoundation.framework */; };
+		87396A291EF3E9030076CBAD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87396A281EF3E9030076CBAD /* CoreMedia.framework */; };
+		87396A2B1EF3E9110076CBAD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87396A2A1EF3E9110076CBAD /* CoreMotion.framework */; };
+		87396A2D1EF3E91D0076CBAD /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87396A2C1EF3E91D0076CBAD /* GLKit.framework */; };
+		87396A2F1EF3E9290076CBAD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87396A2E1EF3E9290076CBAD /* MediaPlayer.framework */; };
+		87396A311EF3E9310076CBAD /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87396A301EF3E9310076CBAD /* SafariServices.framework */; };
+		87396A331EF3E9390076CBAD /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87396A321EF3E9390076CBAD /* WebKit.framework */; };
+		87396A371EF3E9980076CBAD /* BrightcovePlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87396A361EF3E9980076CBAD /* BrightcovePlayerSDK.framework */; };
+		87396A391EF3E9F10076CBAD /* bcovpuiiconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87396A381EF3E9F10076CBAD /* bcovpuiiconfont.ttf */; };
+		87396A3F1EF3EA5F0076CBAD /* RNTBrightcove.m in Sources */ = {isa = PBXBuildFile; fileRef = 87396A3C1EF3EA5F0076CBAD /* RNTBrightcove.m */; };
+		87396A401EF3EA5F0076CBAD /* RNTBrightcoveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 87396A3E1EF3EA5F0076CBAD /* RNTBrightcoveManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -263,6 +274,19 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		87396A0D1EF3E8F70076CBAD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		87396A281EF3E9030076CBAD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		87396A2A1EF3E9110076CBAD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		87396A2C1EF3E91D0076CBAD /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		87396A2E1EF3E9290076CBAD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		87396A301EF3E9310076CBAD /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		87396A321EF3E9390076CBAD /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		87396A361EF3E9980076CBAD /* BrightcovePlayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BrightcovePlayerSDK.framework; sourceTree = "<group>"; };
+		87396A381EF3E9F10076CBAD /* bcovpuiiconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bcovpuiiconfont.ttf; sourceTree = "<group>"; };
+		87396A3B1EF3EA5F0076CBAD /* RNTBrightcove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNTBrightcove.h; path = "../packages/brightcove-video/ios/RNTBrightcove.h"; sourceTree = "<group>"; };
+		87396A3C1EF3EA5F0076CBAD /* RNTBrightcove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNTBrightcove.m; path = "../packages/brightcove-video/ios/RNTBrightcove.m"; sourceTree = "<group>"; };
+		87396A3D1EF3EA5F0076CBAD /* RNTBrightcoveManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNTBrightcoveManager.h; path = "../packages/brightcove-video/ios/RNTBrightcoveManager.h"; sourceTree = "<group>"; };
+		87396A3E1EF3EA5F0076CBAD /* RNTBrightcoveManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNTBrightcoveManager.m; path = "../packages/brightcove-video/ios/RNTBrightcoveManager.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +302,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87396A371EF3E9980076CBAD /* BrightcovePlayerSDK.framework in Frameworks */,
+				87396A331EF3E9390076CBAD /* WebKit.framework in Frameworks */,
+				87396A311EF3E9310076CBAD /* SafariServices.framework in Frameworks */,
+				87396A2F1EF3E9290076CBAD /* MediaPlayer.framework in Frameworks */,
+				87396A2D1EF3E91D0076CBAD /* GLKit.framework in Frameworks */,
+				87396A2B1EF3E9110076CBAD /* CoreMotion.framework in Frameworks */,
+				87396A291EF3E9030076CBAD /* CoreMedia.framework in Frameworks */,
+				87396A0E1EF3E8F70076CBAD /* AVFoundation.framework in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
@@ -297,7 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */,
-				2D02E4C21E0B4AEC006451C7 /* libRCTAnimation-tvOS.a in Frameworks */,
+				2D02E4C21E0B4AEC006451C7 /* libRCTAnimation.a in Frameworks */,
 				2D02E4C31E0B4AEC006451C7 /* libRCTImage-tvOS.a in Frameworks */,
 				2D02E4C41E0B4AEC006451C7 /* libRCTLinking-tvOS.a in Frameworks */,
 				2D02E4C51E0B4AEC006451C7 /* libRCTNetwork-tvOS.a in Frameworks */,
@@ -439,7 +471,7 @@
 			isa = PBXGroup;
 			children = (
 				5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */,
-				5E9157351DD0AC6500FF2AA8 /* libRCTAnimation-tvOS.a */,
+				5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -483,10 +515,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				87396A3A1EF3EA130076CBAD /* brightcove-video */,
 				13B07FAE1A68108700A75B9A /* storybooknative */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* storybooknativeTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
+				87396A0C1EF3E8F70076CBAD /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -501,6 +535,33 @@
 				2D02E4901E0B4A5D006451C7 /* storybooknative-tvOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		87396A0C1EF3E8F70076CBAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87396A361EF3E9980076CBAD /* BrightcovePlayerSDK.framework */,
+				87396A321EF3E9390076CBAD /* WebKit.framework */,
+				87396A301EF3E9310076CBAD /* SafariServices.framework */,
+				87396A2E1EF3E9290076CBAD /* MediaPlayer.framework */,
+				87396A2C1EF3E91D0076CBAD /* GLKit.framework */,
+				87396A2A1EF3E9110076CBAD /* CoreMotion.framework */,
+				87396A281EF3E9030076CBAD /* CoreMedia.framework */,
+				87396A0D1EF3E8F70076CBAD /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87396A3A1EF3EA130076CBAD /* brightcove-video */ = {
+			isa = PBXGroup;
+			children = (
+				87396A3B1EF3EA5F0076CBAD /* RNTBrightcove.h */,
+				87396A3C1EF3EA5F0076CBAD /* RNTBrightcove.m */,
+				87396A3D1EF3EA5F0076CBAD /* RNTBrightcoveManager.h */,
+				87396A3E1EF3EA5F0076CBAD /* RNTBrightcoveManager.m */,
+				87396A381EF3E9F10076CBAD /* bcovpuiiconfont.ttf */,
+			);
+			name = "brightcove-video";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -824,10 +885,10 @@
 			remoteRef = 5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		5E9157351DD0AC6500FF2AA8 /* libRCTAnimation-tvOS.a */ = {
+		5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = "libRCTAnimation-tvOS.a";
+			path = libRCTAnimation.a;
 			remoteRef = 5E9157341DD0AC6500FF2AA8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -860,6 +921,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				87396A391EF3E9F10076CBAD /* bcovpuiiconfont.ttf in Resources */,
 				515F7D1A1F0E7BA000966DF3 /* TimesModern-Bold.ttf in Resources */,
 				515F7D181F0E7BA000966DF3 /* TimesDigitalW04-Regular.ttf in Resources */,
 				515F7D191F0E7BA000966DF3 /* TimesDigitalW04-RegularSC.ttf in Resources */,
@@ -929,6 +991,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87396A3F1EF3EA5F0076CBAD /* RNTBrightcove.m in Sources */,
+				87396A401EF3EA5F0076CBAD /* RNTBrightcoveManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
@@ -1022,6 +1086,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = storybooknative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1039,6 +1107,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = storybooknative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (

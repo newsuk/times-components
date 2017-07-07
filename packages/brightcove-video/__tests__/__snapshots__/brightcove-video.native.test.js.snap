@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`brightcove-video native component renders correctly 1`] = `
+<RNTBrightcove
+  accountId="[ACCOUNT_ID]"
+  onChange={[Function]}
+  policyId={undefined}
+  style={
+    Object {
+      "height": 180,
+      "width": 320,
+    }
+  }
+  videoId="[VIDEO_ID]"
+/>
+`;

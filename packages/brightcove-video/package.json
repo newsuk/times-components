@@ -1,0 +1,61 @@
+{
+  "name": "@times-components/brightcove-video",
+  "version": "0.0.1",
+  "main": "brightcove-video.js",
+  "scripts": {
+    "flow": "node_modules/flow-bin/cli.js",
+    "test:dev": "jest __tests__/ --bail --verbose --watch",
+    "test": "jest __tests__/ --bail --ci --coverage"
+  },
+  "jest": {
+    "preset": "react-native",
+    "rootDir": "../../",
+    "testEnvironment": "jsdom"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "keywords": [
+    "react-native-web",
+    "react",
+    "native",
+    "web",
+    "video",
+    "brightcove",
+    "component"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "6.24.1",
+    "babel-loader": "7.0.0",
+    "babel-plugin-transform-react-remove-prop-types": "0.4.5",
+    "babel-preset-flow": "6.23.0",
+    "babel-preset-react-native": "1.9.2",
+    "flow-bin": "0.42.0",
+    "jest": "20.0.4",
+    "react-test-renderer": "15.5.4",
+    "webpack": "2.6.1"
+  },
+  "dependencies": {
+    "prop-types": "15.5.10",
+    "react": "16.0.0-alpha.6",
+    "react-native": "0.44.1",
+    "react-dom": "15.5.4",
+    "react-native-web": "0.0.97"
+  },
+  "peerDependencies": {
+    "@storybook/react-native": "3.0.0",
+    "@storybook/addon-actions": "3.0.0"
+  },
+  "_timesComponentsCliVariables": {
+    "component": "BrightcoveVideo",
+    "packageDescription": "Brightcove component",
+    "packageName": "brightcove-video"
+  }
+}
