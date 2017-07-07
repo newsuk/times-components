@@ -8,16 +8,17 @@ const horizontalBreakpoint = 500;
 const getStyles = isHorizontal =>
   StyleSheet.create({
     container: {
-      flex: 1,
+      display: "flex",
       flexDirection: isHorizontal ? "row" : "column"
     },
     imageContainer: {
-      width: isHorizontal ? "40%" : "100%",
-      paddingRight: isHorizontal ? 17 : 0
+      flexGrow: isHorizontal ? 2 : 1,
+      flexBasis: isHorizontal ? 0 : "auto"
     },
     summaryContainer: {
-      paddingRight: isHorizontal ? "8%" : 0,
-      width: isHorizontal ? "60%" : "100%"
+      flexGrow: isHorizontal ? 3 : 1,
+      flexBasis: isHorizontal ? 0 : "auto",
+      padding: 32
     }
   });
 
@@ -59,7 +60,6 @@ class CardComponent extends React.Component {
 }
 
 CardComponent.propTypes = Object.assign(
-  {},
   {
     image: Image.propTypes.source
   },
