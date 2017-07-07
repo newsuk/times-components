@@ -13,7 +13,7 @@ const props = {
 };
 
 storiesOf("ArticleSummary", module).add("ArticleSummary", () =>
-  <View style={{ width: "100%" }}>
+  <View style={{ width: "100%", padding: 30 }}>
     <ArticleSummary {...props} />
   </View>
 );

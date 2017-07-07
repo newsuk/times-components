@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   text: {
     color: "#696969",
     fontSize: 14,
-    fontFamily: "TimesDigital-Regular",
+    fontFamily: "TimesDigitalW04-Regular",
     lineHeight: 20,
     marginBottom: 10,
     flexWrap: "wrap"
