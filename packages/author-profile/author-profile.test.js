@@ -5,7 +5,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import AuthorProfile from "./author-profile";
 
-it("renders correctly", () => {
+it.skip("renders correctly", () => {
   const tree = renderer.create(<AuthorProfile />).toJSON();
 
   expect(tree).toMatchSnapshot();

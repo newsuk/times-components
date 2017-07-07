@@ -1,0 +1,102 @@
+{
+  "name": "Fiona Hamilton",
+  "jobTitle": "Legal Editor",
+  "biography": "[{\"name\":\"text\",\"children\":[{\"text\":\"Lorem \"}]},{\"name\":\"b\",\"attributes\":{},\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"ipsum\"}]}]},{\"name\":\"text\",\"children\":[{\"text\":\" testbr \"}]},{\"name\":\"br\",\"attributes\":{}},{\"name\":\"text\",\"children\":[{\"text\":\"More text \"}]},{\"name\":\"i\",\"attributes\":{},\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\" last \"}]}]}]",
+  "image": "",
+  "twitter": "jdoe",
+  "articles": {
+    "count": 24,
+    "list": [
+      {
+        "id": "97c64f20-cb67-11e4-a202-50ac5def393a",
+        "title": "British trio stopped on the way to join Isis",
+        "label": null,
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-23T23:06:34.000Z",
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/british-trio-stopped-on-the-way-to-join-isis-57nwljmbn",
+        "teaser": "[{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, \"}]},{\"name\":\"em\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"The Times\"}]}],\"attributes\":{}},{\"name\":\"text\",\"children\":[{\"text\":\" has learnt.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"Two 17-year-old Muslim schoolboys from the Pakistani community in Brent, northwest London, and a 19-year-old man were intercepted in Istanbul at the weekend and swiftly returned to England. They were questioned by counterterrorism officials last night.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"Quick action by the parents of the younger boys, when the pair did not return home after Friday prayers, thwarted the latest alleged attempt by young Britons to join the terrorist group, sources said.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"It came two days after Britain’s most senior police officer reassured the families of three runaway schoolgirls from east London that they would not be prosecuted if they returned\"}]}],\"attributes\":{}}]"
+      },
+      {
+        "id": "1f18ebd0-671f-40e0-a190-82dd8af1a294",
+        "title": "A blank article with a server rendered component",
+        "label": null,
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-23T23:06:34.000Z",
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/a-blank-article-with-a-server-rendered-component-d06vmvz08",
+        "teaser": "[]"
+      },
+      {
+        "id": "2c18ebd0-671f-40e0-a190-82dd8af1a294",
+        "title": "A blank article with a server rendered component",
+        "label": null,
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-23T23:06:34.000Z",
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/a-blank-article-with-a-server-rendered-component-35pjwxj8n",
+        "teaser": "[]"
+      },
+      {
+        "id": "61143932-6f49-4720-9506-10f32f2eca0d",
+        "title": "British trio stopped on the way to join Isis",
+        "label": "Politics",
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-20T23:06:34.000Z",
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/british-trio-stopped-on-the-way-to-join-isis-6583gb80g",
+        "teaser": "[{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, \"}]},{\"name\":\"em\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"The Times\"}]}],\"attributes\":{}},{\"name\":\"text\",\"children\":[{\"text\":\" has learnt.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"Two 17-year-old Muslim schoolboys from the Pakistani community in Brent, northwest London, and a 19-year-old man were intercepted in Istanbul at the weekend and swiftly returned to England. They were questioned by counterterrorism officials last night.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"Quick action by the parents of the younger boys, when the pair did not return home after Friday prayers, thwarted the latest alleged attempt by young Britons to join the terrorist group, sources said.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"It came two days after Britain’s most senior police officer reassured the families of three runaway schoolgirls from east London that they would not be prosecuted if they returned\"}]}],\"attributes\":{}}]"
+      },
+      {
+        "id": "08fc89f8-bbe1-4ba1-9fd3-39607ea9bc49",
+        "title": "British trio stopped on the way to join Isis",
+        "label": "Science",
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-19T23:06:34.000Z",
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/british-trio-stopped-on-the-way-to-join-isis-5xm7x7rxt",
+        "teaser": "[{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, \"}]},{\"name\":\"em\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"The Times\"}]}],\"attributes\":{}},{\"name\":\"text\",\"children\":[{\"text\":\" has learnt.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"Two 17-year-old Muslim schoolboys from the Pakistani community in Brent, northwest London, and a 19-year-old man were intercepted in Istanbul at the weekend and swiftly returned to England. They were questioned by counterterrorism officials last night.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"Quick action by the parents of the younger boys, when the pair did not return home after Friday prayers, thwarted the latest alleged attempt by young Britons to join the terrorist group, sources said.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"It came two days after Britain’s most senior police officer reassured the families of three runaway schoolgirls from east London that they would not be prosecuted if they returned\"}]}],\"attributes\":{}}]"
+      },
+      {
+        "id": "d9851f3a-a67f-4249-b16a-1b0cb5bec915",
+        "title": "British trio stopped on the way to join Isis",
+        "label": "Science",
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-18T23:06:34.000Z",
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/british-trio-stopped-on-the-way-to-join-isis-5wrj5sc7p",
+        "teaser": "[{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, \"}]},{\"name\":\"em\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"The Times\"}]}],\"attributes\":{}},{\"name\":\"text\",\"children\":[{\"text\":\" has learnt.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"Two 17-year-old Muslim schoolboys from the Pakistani community in Brent, northwest London, and a 19-year-old man were intercepted in Istanbul at the weekend and swiftly returned to England. They were questioned by counterterrorism officials last night.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"Quick action by the parents of the younger boys, when the pair did not return home after Friday prayers, thwarted the latest alleged attempt by young Britons to join the terrorist group, sources said.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"It came two days after Britain’s most senior police officer reassured the families of three runaway schoolgirls from east London that they would not be prosecuted if they returned\"}]}],\"attributes\":{}}]"
+      },
+      {
+        "id": "be9dfdb0-a21e-45d5-93a5-76fa6d748b7b",
+        "title": "Gay and IVF couples ‘better at raising children’",
+        "label": "Health",
+        "publicationName": "SUNDAYTIMES",
+        "publishedTime": "2015-03-17T23:37:49.000Z",
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/gay-and-ivf-couples-better-at-raising-children-zzngv7vz3",
+        "teaser": "[{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"GAY and lesbian couples and those who have children using IVF treatment or a surrogate make better parents than heterosexual couples, according to the author of a new book.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"Susan Golombok, director of the Centre for Family Research at Cambridge University, believes that, in general, these so-called “new” families face so many obstacles to reach parenthood that they perform better when they arrive there.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"“When you think about it, the parents of these families are people who have often gone through years of infertility or faced a lot of social disapproval, or sometimes both,” she said.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"“So only people that really, really want to be parents stay the course. It’s often so difficult that if you weren’t so committed then you’d just drop off along\"}]}],\"attributes\":{}}]"
+      },
+      {
+        "id": "6674e762-f171-4885-820d-ea067ec66a74",
+        "title": "British trio stopped on the way to join Isis",
+        "label": "Science",
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-17T23:06:34.000Z",
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/british-trio-stopped-on-the-way-to-join-isis-gpqs3t7fz",
+        "teaser": "[{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, \"}]},{\"name\":\"em\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"The Times\"}]}],\"attributes\":{}},{\"name\":\"text\",\"children\":[{\"text\":\" has learnt.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"Two 17-year-old Muslim schoolboys from the Pakistani community in Brent, northwest London, and a 19-year-old man were intercepted in Istanbul at the weekend and swiftly returned to England. They were questioned by counterterrorism officials last night.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"Quick action by the parents of the younger boys, when the pair did not return home after Friday prayers, thwarted the latest alleged attempt by young Britons to join the terrorist group, sources said.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"It came two days after Britain’s most senior police officer reassured the families of three runaway schoolgirls from east London that they would not be prosecuted if they returned\"}]}],\"attributes\":{}}]"
+      },
+      {
+        "id": "89bd6c18-ccf9-11e4-81dd-064fe933cd40",
+        "title": "Fourth Briton is seized trying to join Isis",
+        "label": "Environment",
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-17T23:01:44.000Z",
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/fourth-briton-is-seized-trying-to-join-isis-6nxtx6kg3",
+        "teaser": "[{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to reach Syria and join Islamic State.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"The woman, identified as JNH, was detained at a bus terminal in Ankara by specialist police units that identify any would-be jihadists, according to Turkish officials. The Foreign Office confirmed that a British national had been detained. It is understood that she will be deported in the next few days.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"The woman is the latest in a steady stream of Britons allegedly trying to join Isis, but her case is in contrast with other teenagers recently sought because there was no tip-off from the authorities in Britain.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"An international alert last month for\"}]}],\"attributes\":{}}]"
+      },
+      {
+        "id": "88152206-eaaa-4c19-940e-a1a2a9b80b62",
+        "title": "Fourth Briton is seized trying to join Isis",
+        "label": "Politics",
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-17T23:01:44.000Z",
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/fourth-briton-is-seized-trying-to-join-isis-svbdhdcvx",
+        "teaser": "[{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to reach Syria and join Islamic State.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"The woman, identified as JNH, was detained at a bus terminal in Ankara by specialist police units that identify any would-be jihadists, according to Turkish officials. The Foreign Office confirmed that a British national had been detained. It is understood that she will be deported in the next few days.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"The woman is the latest in a steady stream of Britons allegedly trying to join Isis, but her case is in contrast with other teenagers recently sought because there was no tip-off from the authorities in Britain.\"}]}],\"attributes\":{}},{\"name\":\"p\",\"children\":[{\"name\":\"text\",\"children\":[{\"text\":\"An international alert last month for\"}]}],\"attributes\":{}}]"
+      }
+    ]
+  }
+}
