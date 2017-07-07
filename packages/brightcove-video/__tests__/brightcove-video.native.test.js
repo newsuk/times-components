@@ -7,13 +7,17 @@ import BrightcoveVideo from "../brightcove-video.native";
 
 describe("brightcove-video native component", () => {
   it("renders correctly", () => {
-    const tree = renderer.create(<BrightcoveVideo />).toJSON();
+    const tree = renderer
+      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
+      .toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
   it("width x height default to 320 x 180", () => {
-    const tree = renderer.create(<BrightcoveVideo />).toJSON();
+    const tree = renderer
+      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
+      .toJSON();
 
     expect(tree.props.style.width).toBe(320);
     expect(tree.props.style.height).toBe(180);
@@ -21,7 +25,14 @@ describe("brightcove-video native component", () => {
 
   it("width x height can be overridden", () => {
     const tree = renderer
-      .create(<BrightcoveVideo height={400} width={600} />)
+      .create(
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          height={400}
+          width={600}
+        />
+      )
       .toJSON();
 
     expect(tree.props.style.width).toBe(600);

@@ -5,13 +5,13 @@ exports[`brightcove-video web component renders correctly 1`] = `
   <video
     className="video-js"
     controls={true}
-    data-account={undefined}
+    data-account="[ACCOUNT_ID]"
     data-application-id={true}
     data-embed="default"
     data-player="default"
-    data-video-id={undefined}
+    data-video-id="[VIDEO_ID]"
     height={180}
-    id="undefined-undefined-1"
+    id="[VIDEO_ID]-[ACCOUNT_ID]-1"
     width={320}
   />
 </div>

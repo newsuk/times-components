@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { requireNativeComponent } from "react-native";
 
+import propTypes from "./brightcove-video.proptypes";
+import defaults from "./brightcove-video.defaults";
+
 const RNTBrightcove = requireNativeComponent("RNTBrightcove", null);
 
 class BrightcoveVideo extends Component {
@@ -14,9 +17,7 @@ class BrightcoveVideo extends Component {
   }
 
   onChange(event) {
-    if (this.props.onChange) {
-      this.props.onChange(event.nativeEvent);
-    }
+    this.props.onChange(event.nativeEvent);
   }
 
   render() {
@@ -34,7 +35,7 @@ class BrightcoveVideo extends Component {
   }
 }
 
-BrightcoveVideo.defaultProps = require("./brightcove-video.defaults");
-BrightcoveVideo.propTypes = require("./brightcove-video.proptypes");
+BrightcoveVideo.defaultProps = defaults;
+BrightcoveVideo.propTypes = propTypes;
 
 export default BrightcoveVideo;

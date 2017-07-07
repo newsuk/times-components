@@ -19,29 +19,37 @@ describe("brightcove-video web component", () => {
   });
 
   it("renders correctly", () => {
-    const tree = renderer.create(<BrightcoveVideo />).toJSON();
+    const tree = renderer
+      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
+      .toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
   it("appends script tag to body", () => {
-    renderer.create(<BrightcoveVideo />).toJSON();
+    renderer
+      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
+      .toJSON();
 
     expect(document.body.innerHTML.trim()).toBe(
-      '<script src="//players.brightcove.net/undefined/default_default/index.min.js"></script>'
+      '<script src="//players.brightcove.net/[ACCOUNT_ID]/default_default/index.min.js"></script>'
     );
   });
 
   it("will not append script tag to body if there has been a global error", () => {
     BrightcoveVideo.globalErrors.push({});
 
-    renderer.create(<BrightcoveVideo />).toJSON();
+    renderer
+      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
+      .toJSON();
 
     expect(document.body.innerHTML.trim()).toBe("");
   });
 
   it("has width x height that default to 320 x 180", () => {
-    const tree = renderer.create(<BrightcoveVideo />).toJSON();
+    const tree = renderer
+      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
+      .toJSON();
 
     expect(tree.children[0].props.width).toBe(320);
     expect(tree.children[0].props.height).toBe(180);
@@ -49,7 +57,14 @@ describe("brightcove-video web component", () => {
 
   it("has width x height that can be overridden", () => {
     const tree = renderer
-      .create(<BrightcoveVideo height={400} width={600} />)
+      .create(
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          height={400}
+          width={600}
+        />
+      )
       .toJSON();
 
     expect(tree.children[0].props.width).toBe(600);
@@ -57,7 +72,9 @@ describe("brightcove-video web component", () => {
   });
 
   it("generates the correct script link", () => {
-    renderer.create(<BrightcoveVideo accountId="[ACCOUNT_ID]" />).toJSON();
+    renderer
+      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
+      .toJSON();
 
     expect(document.body.innerHTML.trim()).toBe(
       '<script src="//players.brightcove.net/[ACCOUNT_ID]/default_default/index.min.js"></script>'
