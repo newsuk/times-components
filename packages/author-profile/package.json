@@ -51,6 +51,7 @@
     "webpack": "2.6.1"
   },
   "dependencies": {
+    "@times-components/card": "0.0.1",
     "jest-cli": "20.0.4",
     "lodash.merge": "4.6.0",
     "prop-types": "15.5.10",
