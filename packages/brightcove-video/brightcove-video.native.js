@@ -1,14 +1,27 @@
 import React, { Component } from "react";
 import { requireNativeComponent } from "react-native";
 
+import propTypes from "./brightcove-video.proptypes";
+import defaults from "./brightcove-video.defaults";
+
+const RNTBrightcove = requireNativeComponent("RNTBrightcove", null);
+
 class BrightcoveVideo extends Component {
+  static getNativeBrightcoveComponent() {
+    return RNTBrightcove;
+  }
+
   constructor(props) {
     super(props);
-    this._onChange = this._onChange.bind(this);
+    this.onChange = this.onChange.bind(this);
+  }
+
+  onChange(event) {
+    this.props.onChange(event.nativeEvent);
   }
 
   render() {
-    const NativeBrightcove = this.getNativeBrightcoveComponent();
+    const NativeBrightcove = BrightcoveVideo.getNativeBrightcoveComponent();
 
     return (
       <NativeBrightcove
@@ -16,27 +29,13 @@ class BrightcoveVideo extends Component {
         policyId={this.props.policyId}
         accountId={this.props.accountId}
         videoId={this.props.videoId}
-        onChange={this._onChange}
+        onChange={this.onChange}
       />
     );
   }
-
-  getNativeBrightcoveComponent() {
-    return RNTBrightcove;
-  }
-
-  _onChange(event) {
-    if (this.props.onChange) {
-      this.props.onChange(event.nativeEvent);
-    }
-  }
 }
 
-BrightcoveVideo.defaultProps = {
-  width: 320,
-  height: 180
-};
-
-const RNTBrightcove = requireNativeComponent("RNTBrightcove", null);
+BrightcoveVideo.defaultProps = defaults;
+BrightcoveVideo.propTypes = propTypes;
 
 export default BrightcoveVideo;

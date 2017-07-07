@@ -1,8 +1,10 @@
+/* eslint-env jest, browser */
+
 import { View } from "react-native";
 import React from "react";
 import ReactDOM from "react-dom";
-import BrightcoveVideo from "../brightcove-video.web";
 import renderer from "react-test-renderer";
+import BrightcoveVideo from "../brightcove-video.web";
 
 describe("brightcove-video web component", () => {
   afterEach(() => {
@@ -17,29 +19,37 @@ describe("brightcove-video web component", () => {
   });
 
   it("renders correctly", () => {
-    const tree = renderer.create(<BrightcoveVideo />).toJSON();
+    const tree = renderer
+      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
+      .toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
   it("appends script tag to body", () => {
-    const tree = renderer.create(<BrightcoveVideo />).toJSON();
+    renderer
+      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
+      .toJSON();
 
     expect(document.body.innerHTML.trim()).toBe(
-      '<script src="//players.brightcove.net/undefined/default_default/index.min.js"></script>'
+      '<script src="//players.brightcove.net/[ACCOUNT_ID]/default_default/index.min.js"></script>'
     );
   });
 
   it("will not append script tag to body if there has been a global error", () => {
     BrightcoveVideo.globalErrors.push({});
 
-    const tree = renderer.create(<BrightcoveVideo />).toJSON();
+    renderer
+      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
+      .toJSON();
 
     expect(document.body.innerHTML.trim()).toBe("");
   });
 
   it("has width x height that default to 320 x 180", () => {
-    const tree = renderer.create(<BrightcoveVideo />).toJSON();
+    const tree = renderer
+      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
+      .toJSON();
 
     expect(tree.children[0].props.width).toBe(320);
     expect(tree.children[0].props.height).toBe(180);
@@ -47,7 +57,14 @@ describe("brightcove-video web component", () => {
 
   it("has width x height that can be overridden", () => {
     const tree = renderer
-      .create(<BrightcoveVideo height={400} width={600} />)
+      .create(
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          height={400}
+          width={600}
+        />
+      )
       .toJSON();
 
     expect(tree.children[0].props.width).toBe(600);
@@ -55,8 +72,8 @@ describe("brightcove-video web component", () => {
   });
 
   it("generates the correct script link", () => {
-    const tree = renderer
-      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" />)
+    renderer
+      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
       .toJSON();
 
     expect(document.body.innerHTML.trim()).toBe(
@@ -76,13 +93,12 @@ describe("brightcove-video web component", () => {
   it("does not attempt to initialise the brightcove player before the script has loaded", () => {
     const initVideoSpy = jest.spyOn(BrightcoveVideo.prototype, "initVideo");
 
-    const videos = () =>
-      renderer.create(
-        <View>
-          <BrightcoveVideo accountId="[ACCOUNT_ID1]" videoId="[VIDEO_ID1]" />
-          <BrightcoveVideo accountId="[ACCOUNT_ID2]" videoId="[VIDEO_ID2]" />
-        </View>
-      );
+    renderer.create(
+      <View>
+        <BrightcoveVideo accountId="[ACCOUNT_ID1]" videoId="[VIDEO_ID1]" />
+        <BrightcoveVideo accountId="[ACCOUNT_ID2]" videoId="[VIDEO_ID2]" />
+      </View>
+    );
 
     expect(initVideoSpy.mock.calls.length).toBe(0);
 
@@ -100,7 +116,7 @@ describe("brightcove-video web component", () => {
       on: onMock
     });
 
-    const videos = renderer.create(
+    renderer.create(
       <View>
         <BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />
         <BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />
@@ -145,7 +161,10 @@ describe("brightcove-video web component", () => {
     });
 
     describe("player events", () => {
-      let dummyScript, createScript, appendScriptSpy, dummyPlayer;
+      let dummyScript;
+      let createScriptSpy;
+      let appendScriptSpy;
+      let dummyPlayer;
 
       beforeEach(() => {
         dummyScript = {};
@@ -154,7 +173,7 @@ describe("brightcove-video web component", () => {
           .mockReturnValue(dummyScript);
 
         appendScriptSpy = jest
-          .spyOn(BrightcoveVideo.prototype, "appendScript")
+          .spyOn(BrightcoveVideo, "appendScript")
           .mockImplementation(() => {});
 
         dummyPlayer = {
@@ -320,7 +339,6 @@ describe("brightcove-video web component", () => {
         });
 
         it("will unmount cleanly", done => {
-          dummyPlayer.off = jest.fn();
           dummyPlayer.dispose = jest.fn();
 
           const component = (
@@ -335,7 +353,6 @@ describe("brightcove-video web component", () => {
             setTimeout(() => {
               ReactDOM.unmountComponentAtNode(reactWrapper);
 
-              expect(dummyPlayer.off.mock.calls).toHaveLength(1);
               expect(dummyPlayer.dispose.mock.calls).toHaveLength(1);
 
               done();

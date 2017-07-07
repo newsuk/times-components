@@ -1,17 +1,23 @@
+/* eslint-env jest */
+
 import "react-native";
 import React, { Component } from "react";
-import BrightcoveVideo from "../brightcove-video.native";
 import renderer from "react-test-renderer";
+import BrightcoveVideo from "../brightcove-video.native";
 
 describe("brightcove-video native component", () => {
   it("renders correctly", () => {
-    const tree = renderer.create(<BrightcoveVideo />).toJSON();
+    const tree = renderer
+      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
+      .toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
   it("width x height default to 320 x 180", () => {
-    const tree = renderer.create(<BrightcoveVideo />).toJSON();
+    const tree = renderer
+      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
+      .toJSON();
 
     expect(tree.props.style.width).toBe(320);
     expect(tree.props.style.height).toBe(180);
@@ -19,7 +25,14 @@ describe("brightcove-video native component", () => {
 
   it("width x height can be overridden", () => {
     const tree = renderer
-      .create(<BrightcoveVideo height={400} width={600} />)
+      .create(
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          height={400}
+          width={600}
+        />
+      )
       .toJSON();
 
     expect(tree.props.style.width).toBe(600);
@@ -43,7 +56,9 @@ describe("brightcove-video native component", () => {
   });
 
   describe("mock RNTBrightcove", () => {
-    let getNativeBrightcoveComponent, mockRNTBrightcove, propsCache;
+    let getNativeBrightcoveComponentSpy;
+    let mockRNTBrightcove;
+    let propsCache;
 
     beforeEach(() => {
       mockRNTBrightcove = class extends Component {
@@ -57,10 +72,8 @@ describe("brightcove-video native component", () => {
       };
 
       getNativeBrightcoveComponentSpy = jest
-        .spyOn(BrightcoveVideo.prototype, "getNativeBrightcoveComponent")
-        .mockImplementation(() => {
-          return mockRNTBrightcove;
-        });
+        .spyOn(BrightcoveVideo, "getNativeBrightcoveComponent")
+        .mockImplementation(() => mockRNTBrightcove);
     });
 
     afterEach(() => {

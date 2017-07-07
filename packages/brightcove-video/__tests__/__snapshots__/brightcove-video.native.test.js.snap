@@ -2,7 +2,7 @@
 
 exports[`brightcove-video native component renders correctly 1`] = `
 <RNTBrightcove
-  accountId={undefined}
+  accountId="[ACCOUNT_ID]"
   onChange={[Function]}
   policyId={undefined}
   style={
@@ -11,6 +11,6 @@ exports[`brightcove-video native component renders correctly 1`] = `
       "width": 320,
     }
   }
-  videoId={undefined}
+  videoId="[VIDEO_ID]"
 />
 `;

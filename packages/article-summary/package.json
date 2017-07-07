@@ -1,21 +1,17 @@
 {
-  "name": "@times-components/author",
+  "name": "@times-components/article-summary",
   "version": "0.0.1",
-  "main": "author.js",
+  "main": "article-summary.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
-    "test:watch": "jest --bail --verbose --watchAll",
+    "test:dev": "jest --bail --verbose --watchAll",
     "test": "jest --bail --ci --coverage"
   },
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/author/**.test.js"
-    ]
+    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+    "testMatch": ["<rootDir>/packages/article-summary/**.test.js"]
   },
   "repository": {
     "type": "git",
@@ -26,7 +22,7 @@
     "react",
     "native",
     "web",
-    "author",
+    "article-summary",
     "component"
   ],
   "license": "BSD-3-Clause",
@@ -43,16 +39,18 @@
     "babel-preset-react-native": "1.9.2",
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
+    "react-native": "0.44.1",
     "react-test-renderer": "15.5.4",
     "webpack": "2.6.1"
   },
   "dependencies": {
+    "prop-types": "^15.5.10",
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",
-    "react-native": "0.44.1",
     "react-native-web": "0.0.97"
   },
   "peerDependencies": {
-    "@storybook/react-native": "3.1.6"
+    "react-native": "0.44.1",
+    "@storybook/react-native": "3.0.0"
   }
 }

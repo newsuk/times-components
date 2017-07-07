@@ -1,5 +1,5 @@
 {
-  "name": "@timescomponents/brightcove-video",
+  "name": "@times-components/brightcove-video",
   "version": "0.0.1",
   "main": "brightcove-video.js",
   "scripts": {
@@ -39,14 +39,19 @@
     "babel-preset-react-native": "1.9.2",
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
-    "react-native": "0.44.2",
     "react-test-renderer": "15.5.4",
     "webpack": "2.6.1"
   },
   "dependencies": {
+    "prop-types": "15.5.10",
     "react": "16.0.0-alpha.6",
+    "react-native": "0.44.1",
     "react-dom": "15.5.4",
-    "react-native-web": "0.0.96"
+    "react-native-web": "0.0.97"
+  },
+  "peerDependencies": {
+    "@storybook/react-native": "3.0.0",
+    "@storybook/addon-actions": "3.0.0"
   },
   "_timesComponentsCliVariables": {
     "component": "BrightcoveVideo",

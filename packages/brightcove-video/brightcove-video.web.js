@@ -1,13 +1,35 @@
+/* eslint-env browser */
+/* globals videojs, bc */
+
 import React, { Component } from "react";
-import { View, Text } from "react-native";
+import { View } from "react-native";
+
+import propTypes from "./brightcove-video.proptypes";
+import defaults from "./brightcove-video.defaults";
 
 let index = 0;
 
 class BrightcoveVideo extends Component {
+  static handlePlayerReady(context) {
+    context.setPlayer(this);
+
+    this.on("play", context.onPlay.bind(context, this));
+    this.on("pause", context.onPause.bind(context, this));
+    this.on("seeked", context.onSeeked.bind(context, this));
+  }
+
+  static appendScript(s) {
+    document.body.appendChild(s);
+  }
+
+  static getScriptUrl(accountId) {
+    return `//players.brightcove.net/${accountId}/default_default/index.min.js`;
+  }
+
   constructor(props) {
     super(props);
 
-    index++;
+    index += 1;
 
     this.state = {
       id: `${props.videoId}-${props.accountId}-${index}`,
@@ -48,7 +70,7 @@ class BrightcoveVideo extends Component {
         this.emitError(uriErr);
       };
 
-      this.appendScript(s);
+      BrightcoveVideo.appendScript(s);
     }
 
     this.init();
@@ -56,47 +78,7 @@ class BrightcoveVideo extends Component {
 
   componentWillUnmount() {
     if (this.player) {
-      this.player.off();
       this.player.dispose();
-    }
-  }
-
-  createScript() {
-    const s = document.createElement("script");
-    s.src = BrightcoveVideo.getScriptUrl(this.props.accountId);
-
-    return s;
-  }
-
-  appendScript(s) {
-    document.body.appendChild(s);
-  }
-
-  setPlayer(player) {
-    this.player = player;
-  }
-
-  static handlePlayerReady(context) {
-    context.setPlayer(this);
-
-    this.on("play", context.onPlay.bind(context, this));
-    this.on("pause", context.onPause.bind(context, this));
-    this.on("seeked", context.onSeeked.bind(context, this));
-  }
-
-  emitState() {
-    if (this.props.onChange) {
-      this.props.onChange(this.state);
-    }
-  }
-
-  emitError(err) {
-    const errors = [].concat(this.state.errors);
-    errors.push(err);
-    this.setState({ errors });
-
-    if (this.props.onError) {
-      this.props.onError(err);
     }
   }
 
@@ -130,6 +112,28 @@ class BrightcoveVideo extends Component {
     this.emitState();
   }
 
+  setPlayer(player) {
+    this.player = player;
+  }
+
+  createScript() {
+    const s = document.createElement("script");
+    s.src = BrightcoveVideo.getScriptUrl(this.props.accountId);
+
+    return s;
+  }
+
+  emitState() {
+    this.props.onChange(this.state);
+  }
+
+  emitError(err) {
+    const errors = [].concat(this.state.errors);
+    errors.push(err);
+    this.setState({ errors });
+    this.props.onError(err);
+  }
+
   initVideoJS(id) {
     const player = videojs(id);
     const handler = BrightcoveVideo.handlePlayerReady.bind(player, this);
@@ -151,14 +155,12 @@ class BrightcoveVideo extends Component {
     }
   }
 
-  static getScriptUrl(accountId) {
-    return `//players.brightcove.net/${accountId}/default_default/index.min.js`;
-  }
-
   render() {
     if (this.state.errors.length) {
-      const errorItems = this.state.errors.map((error, i) =>
-        <li key={i} style={{ color: "white" }}>
+      /* eslint jsx-a11y/media-has-caption: "off" */
+
+      const errorItems = this.state.errors.map(error =>
+        <li key={`${error.code}_${error.message}`} style={{ color: "white" }}>
           {error.code} - {error.message}
         </li>
       );
@@ -198,9 +200,7 @@ class BrightcoveVideo extends Component {
 
 BrightcoveVideo.globalErrors = [];
 
-BrightcoveVideo.defaultProps = {
-  width: 320,
-  height: 180
-};
+BrightcoveVideo.defaultProps = defaults;
+BrightcoveVideo.propTypes = propTypes;
 
 export default BrightcoveVideo;

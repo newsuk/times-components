@@ -1,10 +1,14 @@
+/* eslint-env jest */
+
 import "react-native";
 import React from "react";
-import BrightcoveVideo from "../brightcove-video.ios";
 import renderer from "react-test-renderer";
+import BrightcoveVideo from "../brightcove-video.ios";
 
 it("renders correctly", () => {
-  const tree = renderer.create(<BrightcoveVideo />).toJSON();
+  const tree = renderer
+    .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
+    .toJSON();
 
   expect(tree).toMatchSnapshot();
 });
