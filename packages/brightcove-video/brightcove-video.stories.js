@@ -203,7 +203,7 @@ storiesOf("BrightcoveVideo", module)
   .add("With tealium on the page", () =>
     <TestTealiumVideo
       policyId={policyId}
-      videoId={videoId}
-      accountId={accountId}
+      videoId="5464373931001"
+      accountId="5436121857001"
     />
   );
