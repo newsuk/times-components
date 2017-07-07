@@ -14,8 +14,9 @@ You can try without these requirements, but you'd be on your own.
 
 ## Getting Started
 
-1. Run `yarn` to install dependencies
-2. components can be seen running in a storybook:
+1. Make sure you are using Node 8.x
+2. Run `yarn` to install dependencies
+3. components can be seen running in a storybook:
   * web storybook
     1. `yarn storybook`
     2. go to http://localhost:9001
@@ -23,7 +24,7 @@ You can try without these requirements, but you'd be on your own.
     1. `yarn storybook-native` and leave it running
     2. `yarn ios` and/or `yarn android` to start the (sim|em)ulators
     3. go to http://localhost:7007
-    
+
 ⚠️ Native Storybook ⚠️
 
 In order to view the storybook on native, you'll need to fix a broken font which requires
