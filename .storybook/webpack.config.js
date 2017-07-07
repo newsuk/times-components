@@ -1,21 +1,5 @@
-const babelPluginTransformClass = require("babel-plugin-transform-class")
-  .default;
-
 module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /(node_modules)/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            plugins: [babelPluginTransformClass]
-          }
-        }
-      }
-    ]
-  },
+  module: {},
 
   resolve: {
     // Maps the 'react-native' import to 'react-native-web'.
@@ -26,6 +10,6 @@ module.exports = {
     // If you're working on a multi-platform React Native app, web-specific
     // module implementations should be written in files using the extension
     // `.web.js`.
-    extensions: ['.web.js', '.js', '.ios.js', '.android.js']
+    extensions: [".web.js", ".js", ".ios.js", ".android.js"]
   }
 };
