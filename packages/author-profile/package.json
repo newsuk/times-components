@@ -1,0 +1,62 @@
+{
+  "name": "@times-components/author-profile",
+  "version": "0.0.1",
+  "description": "Author info along with articles they have written",
+  "main": "author-profile.js",
+  "scripts": {
+    "flow": "node_modules/flow-bin/cli.js",
+    "test:watch": "jest --bail --verbose --watchAll",
+    "test": "jest --bail --ci --coverage"
+  },
+  "jest": {
+    "preset": "react-native",
+    "rootDir": "../../",
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/author-profile/**.test.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "keywords": [
+    "react-native-web",
+    "react",
+    "native",
+    "web",
+    "author-profile",
+    "component"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "6.24.1",
+    "babel-loader": "7.0.0",
+    "babel-plugin-transform-react-remove-prop-types": "0.4.5",
+    "babel-preset-flow": "6.23.0",
+    "babel-preset-react-native": "1.9.2",
+    "enzyme": "2.9.1",
+    "enzyme-to-json": "1.5.1",
+    "flow-bin": "0.42.0",
+    "jest": "20.0.4",
+    "react-native": "0.44.1",
+    "react-test-renderer": "15.5.4",
+    "webpack": "2.6.1"
+  },
+  "dependencies": {
+    "jest-cli": "20.0.4",
+    "lodash.merge": "4.6.0",
+    "prop-types": "15.5.10",
+    "react": "16.0.0-alpha.6",
+    "react-dom": "15.5.4",
+    "react-native-web": "0.0.97",
+    "react-style-proptype": "3.0.0"
+  }
+}
