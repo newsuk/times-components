@@ -13,9 +13,13 @@ const accountId = "57838016001";
 const videoId = "4084164751001";
 
 const firstArgJSONAction = decorateAction([args => [JSON.stringify(args[0])]]);
+let hasTealiumScriptLoaded = false;
 
 class TealiumScript extends Component {
-  componentWillMount() {
+  componentDidMount() {
+    if (hasTealiumScriptLoaded) {
+      return;
+    }
     const account = "newsinternational";
     const profile = "thetimes.d.desktop";
     const env = "dev";
@@ -23,6 +27,7 @@ class TealiumScript extends Component {
 
     script.src = `https://tags.tiqcdn.com/utag/${account}/${profile}/${env}/utag.js`;
     document.body.appendChild(script);
+    hasTealiumScriptLoaded = true;
   }
 
   render() {
