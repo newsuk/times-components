@@ -1,22 +1,18 @@
 {
   "name": "@times-components/brightcove-video",
-  "version": "0.3.4",
-  "main": "brightcove-video",
+  "version": "0.0.1",
+  "main": "brightcove-video.es5.web.js",
+  "jsnext:main": "brightcove-video.web.js",
+  "module": "brightcove-video.web.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
-    "test:watch": "jest --bail --verbose --watchAll",
-    "test": "jest --bail --ci --coverage"
+    "test:dev": "jest __tests__/ --bail --verbose --watch",
+    "test": "jest __tests__/ --bail --ci --coverage"
   },
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "testEnvironment": "jsdom",
-    "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/brightcove-video/__tests__/*"
-    ]
+    "testEnvironment": "jsdom"
   },
   "repository": {
     "type": "git",
@@ -38,28 +34,18 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "jest": "20.0.4",
-    "react": "15.4.2",
-    "react-dom": "15.4.2",
-    "react-native": "0.42.3",
-    "react-native-web": "0.0.119",
-    "react-test-renderer": "15.4.2",
-    "webpack": "3.3.0"
+    "react-native": "0.44.2",
+    "react-test-renderer": "15.5.4"
   },
   "dependencies": {
-    "prop-types": "15.5.10",
-    "react-native-web": "0.0.119"
-  },
-  "peerDependencies": {
-    "react": ">=15",
-    "react-dom": ">=15",
-    "react-native": ">=0.42"
+    "react": "16.0.0-alpha.6",
+    "react-dom": "15.5.4",
+    "react-in-style": "^0.21.0",
+    "react-native-web": "0.0.96"
   },
   "_timesComponentsCliVariables": {
     "component": "BrightcoveVideo",
     "packageDescription": "Brightcove component",
     "packageName": "brightcove-video"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

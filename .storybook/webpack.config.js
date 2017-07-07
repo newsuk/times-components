@@ -2,7 +2,9 @@ const webpack = require("webpack");
 
 module.exports = {
   module: {},
-
+  node: {
+    fs: 'empty' // https://github.com/webpack-contrib/css-loader/issues/447
+  },
   resolve: {
     // Maps the 'react-native' import to 'react-native-web'.
     alias: {
