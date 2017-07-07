@@ -45,7 +45,7 @@
   "dependencies": {
     "prop-types": "15.5.10",
     "react": "16.0.0-alpha.6",
-    "react-native": "0.44.2",
+    "react-native": "0.44.1",
     "react-dom": "15.5.4",
     "react-native-web": "0.0.97"
   },
