@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Dimensions } from "react-native";
 import { getSlotConfig } from "./generate-config";
 import { pbjs as pbjsConfig } from "./config";
-import WebViewAutoHeight from "./WebViewAutoHeight";
+import WebViewAutoHeight from "./webview-auto-height";
 
 const { width } = Dimensions.get("window");
 
