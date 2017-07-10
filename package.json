@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "A collection of presentational components for locate a location",
   "main": "index.js",
+  "engines": {
+    "node" : ">=8.0.0"
+  },
   "bin": {
     "times-components": "times-components"
   },
