@@ -39,7 +39,8 @@
   "pre-commit": [
     "precommit-msg",
     "lint-staged",
-    "test"
+    "test",
+    "fructose-test"
   ],
   "lint-staged": {
     "**/*.js": [
