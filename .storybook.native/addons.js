@@ -1,2 +1,2 @@
-import '@storybook/addon-actions';
-import '@storybook/addon-links';
+import "@storybook/addon-actions/register";
+import "@storybook/addon-links";
