@@ -1,40 +1,4 @@
-const handlebars = require("handlebars");
-
-const packageJson = require("./package-json");
-
-const indexFile = handlebars.compile(`import React from "react";
-import { Text } from "react-native";
-
-export default function {{{component}}}() {
-  return <Text>{{{component}}}</Text>;
-}
-`);
-
-const storyFile = handlebars.compile(`import "react-native";
-import React from "react";
-import { storiesOf } from "@storybook/react-native";
-import {{{component}}} from "./{{{packageName}}}";
-
-storiesOf("{{{component}}}", module).add("{{{component}}}", () =>
-  <{{{component}}} />
-);
-`);
-
-const testFile = handlebars.compile(`/* eslint-env jest */
-
-import "react-native";
-import React from "react";
-import renderer from "react-test-renderer";
-import {{{component}}} from "./{{{packageName}}}";
-
-it("renders correctly", () => {
-  const tree = renderer.create(<{{{component}}} />).toJSON();
-
-  expect(tree).toMatchSnapshot();
-});
-`);
-
-const licenseFile = handlebars.compile(`BSD 3-Clause License
+BSD 3-Clause License
 
 Copyright (c) 2017, News UK & Ireland Ltd
 All rights reserved.
@@ -63,15 +27,3 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-`);
-
-const packageJsonFile = variables =>
-  JSON.stringify(packageJson(variables), null, 2);
-
-module.exports = variables => [
-  [indexFile, `${variables.packageName}.js`],
-  [testFile, `${variables.packageName}.test.js`],
-  [storyFile, `${variables.packageName}.stories.js`],
-  [licenseFile, "LICENSE"],
-  [packageJsonFile, "package.json"]
-];

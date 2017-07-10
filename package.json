@@ -76,7 +76,7 @@
     "@storybook/react": "3.0.0",
     "@storybook/react-native": "3.0.0",
     "coveralls": "2.13.1",
-    "eslint": "3.19.0",
+    "eslint": "4.2.0",
     "eslint-config-airbnb": "15.0.1",
     "eslint-config-prettier": "2.3.0",
     "eslint-plugin-import": "2.6.1",
@@ -98,6 +98,7 @@
     "url": "0.11.0"
   },
   "dependencies": {
+    "babel-plugin-transform-class": "^0.3.0",
     "dashify": "0.2.2",
     "global": "4.3.2",
     "handlebars": "4.0.10",
