@@ -95,6 +95,7 @@
     "url": "0.11.0"
   },
   "dependencies": {
+    "babel-plugin-transform-class": "^0.3.0",
     "dashify": "0.2.2",
     "global": "4.3.2",
     "handlebars": "4.0.10",

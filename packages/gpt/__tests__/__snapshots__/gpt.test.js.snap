@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Gpt test renders an ad-header ad slot 1`] = `
+<div
+  id="ad-header"
+/>
+`;
+
+exports[`Gpt test renders an ad-pixel ad slot 1`] = `
+<div
+  id="ad-pixel"
+/>
+`;
