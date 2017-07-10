@@ -73,7 +73,7 @@
     "@storybook/react": "3.0.0",
     "@storybook/react-native": "3.0.0",
     "coveralls": "2.13.1",
-    "eslint": "4.2.0",
+    "eslint": "3.19.0",
     "eslint-config-airbnb": "15.0.1",
     "eslint-config-prettier": "2.3.0",
     "eslint-plugin-import": "2.6.1",
