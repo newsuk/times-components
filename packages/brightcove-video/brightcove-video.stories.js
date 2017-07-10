@@ -1,10 +1,60 @@
-/* eslint import/no-unresolved: "off" */
+/* eslint import/no-unresolved: "off", react/no-multi-comp: "off" */
+/* global document */
 
 import React, { Component } from "react";
 import { View, TouchableOpacity, Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { decorateAction } from "@storybook/addon-actions";
 import BrightcoveVideo from "./brightcove-video";
+
+const TestTealiumVideo = (() => {
+  /* eslint react/prop-types: "off" */
+  let hasTealiumScriptLoaded = false;
+
+  class TealiumVideo extends Component {
+    constructor(props) {
+      super(props);
+
+      this.state = {
+        tealiumLoaded: hasTealiumScriptLoaded
+      };
+    }
+
+    componentDidMount() {
+      if (hasTealiumScriptLoaded) {
+        return;
+      }
+      const account = "newsinternational";
+      const profile = "thetimes.d.desktop";
+      const env = "dev";
+      const scriptElem = document.createElement("script");
+
+      scriptElem.src = `https://tags.tiqcdn.com/utag/${account}/${profile}/${env}/utag.js`;
+
+      scriptElem.onload = () => {
+        this.setState({ tealiumLoaded: true });
+      };
+
+      document.head.appendChild(scriptElem);
+      hasTealiumScriptLoaded = true;
+    }
+
+    render() {
+      if (this.state.tealiumLoaded) {
+        return (
+          <BrightcoveVideo
+            policyId={this.props.policyId}
+            videoId={this.props.videoId}
+            accountId={this.props.accountId}
+          />
+        );
+      }
+      return null;
+    }
+  }
+
+  return TealiumVideo;
+})();
 
 const policyId =
   "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U";
@@ -148,5 +198,12 @@ storiesOf("BrightcoveVideo", module)
       videoId={videoId}
       accountId={accountId}
       onChange={firstArgJSONAction("change")}
+    />
+  )
+  .add("With tealium on the page", () =>
+    <TestTealiumVideo
+      policyId={policyId}
+      videoId="5464373931001"
+      accountId="5436121857001"
     />
   );
