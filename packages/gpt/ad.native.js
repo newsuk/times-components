@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Dimensions, WebView } from "react-native";
+import { Dimensions } from "react-native";
 import { getSlotConfig } from "./generate-config";
 import { pbjs as pbjsConfig } from "./config";
+import WebViewAutoHeight from "./WebViewAutoHeight";
 
 const { width } = Dimensions.get("window");
 
@@ -16,7 +17,6 @@ class Ad extends Component {
     const html = `
       <html>
         <head>
-          <script>window.alert('hey')</script>
           <script async src="https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js"></script>
           <script async src="https://www.googletagservices.com/tag/js/gpt.js"></script>
         </head>
@@ -95,7 +95,7 @@ class Ad extends Component {
       `;
 
     return (
-      <WebView source={{ html, baseUrl: "https://example.com" }} height={250} />
+      <WebViewAutoHeight source={{ html }} baseUrl={"https://example.com"} />
     );
   }
 }
