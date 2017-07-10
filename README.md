@@ -14,7 +14,7 @@ You can try without these requirements, but you'd be on your own.
 
 ## Getting Started
 
-1. Make sure you are using Node 8.x, have npm <= 5.0.3 and yarn <= 27.5
+1. Make sure you are using Node 8.x, have npm >= 5.0.3 and yarn >= 27.5
 2. Run `yarn` to install dependencies
 3. components can be seen running in a storybook:
   * web storybook
