@@ -52,7 +52,6 @@
   },
   "dependencies": {
     "jest-cli": "20.0.4",
-    "lodash.merge": "4.6.0",
     "prop-types": "15.5.10",
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",

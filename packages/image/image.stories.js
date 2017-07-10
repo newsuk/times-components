@@ -33,4 +33,13 @@ storiesOf("Image", module)
     <View>
       <Image source={exampleNonImage} aspectRatio={0.67} />
     </View>
+  )
+  .add("Apply style to image", () =>
+    <View style={{ width: 100 }}>
+      <Image
+        style={{ borderRadius: 50 }}
+        source={exampleImage}
+        aspectRatio={1}
+      />
+    </View>
   );
