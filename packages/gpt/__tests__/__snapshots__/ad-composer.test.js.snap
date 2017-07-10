@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdComposer renders no ad slots 1`] = `<div />`;
+
+exports[`AdComposer renders with more than one ad slot 1`] = `
+<div>
+  <div
+    id="ad-header"
+  />
+  <div
+    id="intervention"
+  />
+</div>
+`;
+
+exports[`AdComposer renders with one ad slot 1`] = `
+<div>
+  <div
+    id="ad-header"
+  />
+</div>
+`;
