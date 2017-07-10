@@ -6,82 +6,63 @@ import Image from "@times-components/image";
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#F9F8F3",
-    paddingTop: 15,
-    paddingLeft: 15,
-    paddingRight: 15
+    display: "flex",
+    alignItems: "center",
+    flexDirection: "column",
+    backgroundColor: "#F9F8F3"
   },
   photoContainer: {
-    left: "100%",
-    bottom: -50
-  },
-  roundImage: {
     width: 100,
-    height: 100,
-    borderRadius: 50,
-    backgroundColor: "#EFEFEF",
-    borderWidth: 5,
-    // borderStyle: 'solid',
-    borderColor: "#FFF",
-    left: "-66%",
+    height: 50,
     position: "relative"
   },
+  roundImage: {
+    height: 100,
+    top: "50%",
+    backgroundColor: "#EFEFEF",
+    borderColor: "#FFF",
+    borderRadius: 50,
+    borderWidth: 5
+  },
   name: {
-    textAlign: "center",
+    fontFamily: "TimesModern-Bold",
     fontSize: 30,
     lineHeight: 30,
     fontWeight: "400",
     color: "#1D1D1B"
   },
   title: {
-    textAlign: "center"
+    fontFamily: "TimesDigitalW04-RegularSC"
   },
   twitter: {
-    textAlign: "center",
     fontSize: 15,
+    fontFamily: "GillSansMTStd-Medium",
     color: "#069"
   },
   bio: {
-    textAlign: "center",
+    fontFamily: "TimesDigital-Regular",
     fontSize: 15,
     lineHeight: 25,
-    marginTop: 6
+    marginTop: 6,
+    color: "#333"
   }
 });
-
-const Photo = ({ uri }) => <Image source={{ uri }} style={styles.roundImage} />;
-Photo.propTypes = { uri: PropTypes.string.isRequired };
-
-const Name = ({ children }) => <Text style={styles.name}>{children}</Text>;
-Name.propTypes = { children: PropTypes.string.isRequired };
-
-const Title = ({ children }) => <Text style={styles.title}>{children}</Text>;
-Title.propTypes = { children: PropTypes.string.isRequired };
-
-const TwitterHandle = ({ children }) =>
-  <Text style={styles.twitter}>{children}</Text>;
-TwitterHandle.propTypes = { children: PropTypes.string.isRequired };
-
-const Biography = ({ children }) => <Text style={styles.bio}>{children}</Text>;
-Biography.propTypes = { children: PropTypes.string.isRequired };
 
 const AuthorHead = props => {
   const { name, title, twitter, bio, uri } = props;
 
   return (
     <View accessibilityRole="banner" style={styles.container}>
-      <View>
-        <Name accessibilityRole="heading" aria-level="1">{name}</Name>
-        <Title accessibilityRole="heading" aria-level="2">
-          {title.toLowerCase()}
-        </Title>
-        <TwitterHandle>{twitter}</TwitterHandle>
-      </View>
-      <View>
-        <Biography>{bio}</Biography>
-      </View>
+      <Text accessibilityRole="heading" aria-level="1" style={styles.name}>
+        {name}
+      </Text>
+      <Text accessibilityRole="heading" aria-level="2" style={styles.title}>
+        {title.toLowerCase()}
+      </Text>
+      <Text style={styles.twitter}>{twitter}</Text>
+      <Text style={styles.bio}>{bio}</Text>
       <View style={styles.photoContainer}>
-        <Photo uri={uri} />
+        <Image aspectRatio={1} source={{ uri }} style={styles.roundImage} />
       </View>
     </View>
   );
@@ -104,5 +85,3 @@ AuthorHead.propTypes = {
 };
 
 export default AuthorHead;
-
-export { Photo, Name, Title, TwitterHandle, Biography, AuthorHead as Header };
