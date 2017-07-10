@@ -4,6 +4,7 @@ exports[`renders correctly 1`] = `
 <RNTBrightcove
   accountId="[ACCOUNT_ID]"
   onChange={[Function]}
+  onNativeError={[Function]}
   policyId={undefined}
   style={
     Object {

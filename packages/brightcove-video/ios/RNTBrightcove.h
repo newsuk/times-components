@@ -10,6 +10,7 @@
 @property (nonatomic, assign) NSString *accountId;
 @property (nonatomic, assign) NSString *videoId;
 @property (nonatomic, copy) RCTBubblingEventBlock onChange;
+@property (nonatomic, copy) RCTBubblingEventBlock onNativeError;
 
 - (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher NS_DESIGNATED_INITIALIZER;
 
