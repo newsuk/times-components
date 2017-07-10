@@ -13,6 +13,7 @@ export default () =>
       <a
         href={`/iframe.html${window.top.location.search}`}
         target="_blank"
+        rel="noopener noreferrer"
       >
         Render ads
       </a>
