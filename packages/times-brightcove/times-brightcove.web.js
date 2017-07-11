@@ -1,13 +1,6 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
-import BrightcoveVideo from "../brightcove-video"; //@times-components/brightcove-video ?
 import { Helmet } from "react-helmet";
-
-const styleSheet = {
-  body: {
-    background: "#FF0000"
-  }
-};
+import BrightcoveVideo from "../brightcove-video"; // @times-components/brightcove-video ?
 
 class TimesBrightcove extends Component {
   render() {

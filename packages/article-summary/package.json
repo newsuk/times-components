@@ -2,6 +2,14 @@
   "name": "@times-components/article-summary",
   "version": "0.2.14",
   "main": "article-summary.js",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        { "presets": ["es2015"] }
+      ]
+    ]
+  },
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",

@@ -4,6 +4,14 @@
   "main": "times-brightcove.es5.web.js",
   "jsnext:main": "times-brightcove.web.js",
   "module": "times-brightcove.web.js",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        { "presets": ["es2015"] }
+      ]
+    ]
+  },
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:dev": "jest __tests__/ --bail --verbose --watch",
@@ -34,7 +42,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "jest": "20.0.4",
-    "react-native": "0.44.2",
+    "react-native": "0.44.1",
     "react-test-renderer": "15.5.4"
   },
   "dependencies": {

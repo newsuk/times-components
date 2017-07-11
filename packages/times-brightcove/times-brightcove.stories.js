@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import { View, Text } from "react-native";
+import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import TimesBrightcove from "./times-brightcove";
 
