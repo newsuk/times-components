@@ -12,15 +12,23 @@
   "scripts": {
     "native": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest ./lib && lerna run test",
+    "test:fructose": "FRUCTOSE=true jest .fructose/components.test.js --forceExit --verbose",
+    "pretest:fructose": "npm run fetch-fonts && npm run write-test-components",
     "coverage:publish": "lcov-result-merger ./packages/**/lcov.info | coveralls",
-    "prestorybook": "node ./lib/fetch-fonts",
+    "fetch-fonts": "node ./lib/fetch-fonts",
+    "prestorybook": "npm run fetch-fonts",
     "storybook": "start-storybook -p 9001 -c .storybook -s ./dist/public",
     "prestorybook:build": "node ./lib/fetch-fonts",
     "storybook:build": "build-storybook -c .storybook -s ./dist/public",
     "storybook:publish": "./lib/publish_storybook.sh",
     "prestorybook-native": "node ./node_modules/.bin/rnstl && node ./lib/fetch-fonts",
     "storybook-native": "storybook -c .storybook.native start -p 7007",
+    "compile-fructose-components": "rnstl --searchDir ./packages --pattern '**/*.fructose.js' --outputFile ./.fructose/components.js",
+    "write-test-components": "npm run compile-fructose-components && compile-tests",
+    "fructose-app": "react-native start --root .fructose/ --resetCache",
+    "preios": "npm run fetch-fonts",
     "ios": "react-native run-ios",
+    "preandroid": "npm run fetch-fonts",
     "android": "react-native run-android",
     "prettier:diff": "prettier --list-different 'packages/*/*.js'",
     "prettier:write": "prettier --write 'packages/*/*.js'",
@@ -33,7 +41,8 @@
   "pre-commit": [
     "precommit-msg",
     "lint-staged",
-    "test"
+    "test",
+    "test:fructose"
   ],
   "lint-staged": {
     "**/*.js": [
@@ -43,6 +52,8 @@
     ]
   },
   "jest": {
+    "preset": "react-native",
+    "setupTestFrameworkScriptFile": "./.fructose/setup.js",
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules/"
     ]
@@ -56,6 +67,9 @@
       "outputFile": "./.storybook.native/story-loader.js"
     }
   },
+  "fructose": {
+    "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/storybooknative.app"
+	},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/newsuk/times-components.git"
@@ -84,6 +98,9 @@
     "eslint-plugin-react": "7.1.0",
     "jest": "20.0.4",
     "lcov-result-merger": "1.2.0",
+    "detox": "5.2.0",
+    "hjkadshhjkl-app": "0.1.11",
+    "hjkadshhjkl-test-utils": "0.1.11",
     "lerna": "2.0.0-rc.5",
     "lint-staged": "4.0.0",
     "node-fetch": "^1.7.1",
@@ -92,7 +109,7 @@
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",
     "react-native": "0.44.1",
-    "react-native-storybook-loader": "1.3.1",
+    "react-native-storybook-loader": "1.4.1",
     "react-native-web": "0.0.97",
     "rimraf": "2.6.1",
     "url": "0.11.0"
