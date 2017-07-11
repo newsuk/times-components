@@ -2,83 +2,98 @@
 
 exports[`renders a snapshot 1`] = `
 <View
-  accessibilityRole="banner"
+  pointerEvents="box-none"
   style={
     Object {
       "alignItems": "center",
-      "backgroundColor": "#F9F8F3",
+      "backgroundColor": "transparent",
       "display": "flex",
-      "flexDirection": "column",
+      "paddingBottom": 50,
     }
   }
 >
-  <Text
-    accessibilityRole="heading"
-    accessible={true}
-    allowFontScaling={true}
-    aria-level="1"
-    ellipsizeMode="tail"
+  <View
+    accessibilityRole="banner"
     style={
       Object {
-        "color": "#1D1D1B",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 30,
-        "fontWeight": "400",
-        "lineHeight": 30,
+        "alignItems": "center",
+        "backgroundColor": "#F9F8F3",
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": 50,
+        "width": "100%",
       }
     }
   >
-    
-  </Text>
-  <Text
-    accessibilityRole="heading"
-    accessible={true}
-    allowFontScaling={true}
-    aria-level="2"
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "fontFamily": "TimesDigitalW04-RegularSC",
+    <Text
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="1"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 30,
+          "fontWeight": "400",
+          "lineHeight": 30,
+        }
       }
-    }
-  >
-    
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#069",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 15,
+    >
+      
+    </Text>
+    <Text
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="2"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontFamily": "TimesDigitalW04-RegularSC",
+        }
       }
-    }
-  >
-    
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#333",
-        "fontFamily": "TimesDigital-Regular",
-        "fontSize": 15,
-        "lineHeight": 25,
-        "marginTop": 6,
+    >
+      
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#069",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 15,
+        }
       }
-    }
-  >
-    
-  </Text>
+    >
+      
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#333",
+          "fontFamily": "TimesDigital-Regular",
+          "fontSize": 15,
+          "lineHeight": 25,
+          "marginTop": 6,
+        }
+      }
+    >
+      
+    </Text>
+  </View>
   <View
     style={
       Object {
-        "height": 50,
-        "position": "relative",
+        "bottom": 0,
+        "height": 100,
+        "position": "absolute",
         "width": 100,
       }
     }
@@ -96,7 +111,6 @@ exports[`renders a snapshot 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#EFEFEF",
               "borderColor": "#FFF",
               "borderRadius": 50,
               "borderWidth": 5,
@@ -117,83 +131,98 @@ exports[`renders a snapshot 1`] = `
 
 exports[`renders a snapshot with data 1`] = `
 <View
-  accessibilityRole="banner"
+  pointerEvents="box-none"
   style={
     Object {
       "alignItems": "center",
-      "backgroundColor": "#F9F8F3",
+      "backgroundColor": "transparent",
       "display": "flex",
-      "flexDirection": "column",
+      "paddingBottom": 50,
     }
   }
 >
-  <Text
-    accessibilityRole="heading"
-    accessible={true}
-    allowFontScaling={true}
-    aria-level="1"
-    ellipsizeMode="tail"
+  <View
+    accessibilityRole="banner"
     style={
       Object {
-        "color": "#1D1D1B",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 30,
-        "fontWeight": "400",
-        "lineHeight": 30,
+        "alignItems": "center",
+        "backgroundColor": "#F9F8F3",
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": 50,
+        "width": "100%",
       }
     }
   >
-    Carol Midgley
-  </Text>
-  <Text
-    accessibilityRole="heading"
-    accessible={true}
-    allowFontScaling={true}
-    aria-level="2"
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "fontFamily": "TimesDigitalW04-RegularSC",
+    <Text
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="1"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 30,
+          "fontWeight": "400",
+          "lineHeight": 30,
+        }
       }
-    }
-  >
-    columnist
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#069",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 15,
+    >
+      Carol Midgley
+    </Text>
+    <Text
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="2"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontFamily": "TimesDigitalW04-RegularSC",
+        }
       }
-    }
-  >
-    @carolmidgley
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#333",
-        "fontFamily": "TimesDigital-Regular",
-        "fontSize": 15,
-        "lineHeight": 25,
-        "marginTop": 6,
+    >
+      columnist
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#069",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 15,
+        }
       }
-    }
-  >
-    Carol Midgley joined The Times in 1996, and won feature writer of the year in 2004. Find her Wednesday column in Times2 each week and a weekly comment piece on Fridays.
-  </Text>
+    >
+      @carolmidgley
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#333",
+          "fontFamily": "TimesDigital-Regular",
+          "fontSize": 15,
+          "lineHeight": 25,
+          "marginTop": 6,
+        }
+      }
+    >
+      Carol Midgley joined The Times in 1996, and won feature writer of the year in 2004. Find her Wednesday column in Times2 each week and a weekly comment piece on Fridays.
+    </Text>
+  </View>
   <View
     style={
       Object {
-        "height": 50,
-        "position": "relative",
+        "bottom": 0,
+        "height": 100,
+        "position": "absolute",
         "width": 100,
       }
     }
@@ -211,7 +240,6 @@ exports[`renders a snapshot with data 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#EFEFEF",
               "borderColor": "#FFF",
               "borderRadius": 50,
               "borderWidth": 5,
