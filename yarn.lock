@@ -4259,9 +4259,9 @@ hawk@~3.1.3:
     hoek "2.x.x"
     sntp "1.x.x"
 
-hjkadshhjkl-app@0.1.10:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/hjkadshhjkl-app/-/hjkadshhjkl-app-0.1.10.tgz#27edddb607e0593c4f5c5aff650ae0e0f070932a"
+hjkadshhjkl-app@0.1.11:
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/hjkadshhjkl-app/-/hjkadshhjkl-app-0.1.11.tgz#89386018dfbe8bc44c108091631013723a5262d8"
   dependencies:
     babel-preset-es2015 "^6.24.1"
     events "^1.1.1"
@@ -4286,9 +4286,9 @@ hjkadshhjkl-server@^0.1.9:
     server-destroy "^1.0.1"
     socket.io "^2.0.3"
 
-hjkadshhjkl-test-utils@0.1.9:
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/hjkadshhjkl-test-utils/-/hjkadshhjkl-test-utils-0.1.9.tgz#69d27d139c65f9e351c396d87618e6d659684e8d"
+hjkadshhjkl-test-utils@0.1.11:
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/hjkadshhjkl-test-utils/-/hjkadshhjkl-test-utils-0.1.11.tgz#8ee48c2b7e7ee31cb6558c0dc3a9ec0997d81bc7"
   dependencies:
     babel-polyfill "^6.23.0"
     babel-preset-es2015 "^6.24.1"
@@ -5544,7 +5544,7 @@ lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
 
-lodash.merge@4.6.0, lodash.merge@^4.4.0:
+lodash.merge@^4.4.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.0.tgz#69884ba144ac33fe699737a6086deffadd0f89c5"
 

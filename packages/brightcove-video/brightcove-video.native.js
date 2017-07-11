@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { requireNativeComponent } from "react-native";
+import { requireNativeComponent, View, Text } from "react-native";
 
 import propTypes from "./brightcove-video.proptypes";
 import defaults from "./brightcove-video.defaults";
@@ -13,14 +13,51 @@ class BrightcoveVideo extends Component {
 
   constructor(props) {
     super(props);
+
+    this.state = {
+      errors: []
+    };
+
     this.onChange = this.onChange.bind(this);
+    this.onError = this.onError.bind(this);
   }
 
-  onChange(event) {
-    this.props.onChange(event.nativeEvent);
+  onChange(evt) {
+    this.props.onChange(evt.nativeEvent);
+  }
+
+  onError(evt) {
+    this.emitError(evt.nativeEvent);
+  }
+
+  emitError(err) {
+    const errors = [].concat(this.state.errors);
+    errors.push(err);
+    this.setState({ errors });
+    this.props.onError(err);
   }
 
   render() {
+    if (this.state.errors.length) {
+      const errorItems = this.state.errors.map(error =>
+        <Text key={`${error.code}_${error.message}`} style={{ color: "white" }}>
+          {error.code} - {error.message}
+        </Text>
+      );
+
+      return (
+        <View
+          style={{
+            width: this.props.width,
+            height: this.props.height,
+            backgroundColor: "red"
+          }}
+        >
+          {errorItems}
+        </View>
+      );
+    }
+
     const NativeBrightcove = BrightcoveVideo.getNativeBrightcoveComponent();
 
     return (
@@ -30,6 +67,8 @@ class BrightcoveVideo extends Component {
         accountId={this.props.accountId}
         videoId={this.props.videoId}
         onChange={this.onChange}
+        onLoadingError={this.onError} // android handler seems to be reserved on iOS
+        onIOSError={this.onError} // so we use this instead
       />
     );
   }

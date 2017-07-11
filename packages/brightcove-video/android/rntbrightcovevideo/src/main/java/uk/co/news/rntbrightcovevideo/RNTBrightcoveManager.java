@@ -1,7 +1,5 @@
 package uk.co.news.rntbrightcovevideo;
 
-import android.support.annotation.Nullable;
-
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
