@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a simple component with no errors 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    height={180}
+    onChange={[Function]}
+    onError={[Function]}
+    width={320}
+  >
+    Just a test
+  </Text>
+</View>
+`;
+
+exports[`renders the errors from it's child 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "red",
+      "height": 180,
+      "width": 320,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    [ERROR_CODE]
+     - 
+    [ERROR_MESSAGE]
+  </Text>
+</View>
+`;

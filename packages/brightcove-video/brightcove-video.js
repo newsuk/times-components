@@ -3,9 +3,7 @@ import {
   NativeModules,
   findNodeHandle,
   Platform,
-  requireNativeComponent,
-  View,
-  Text
+  requireNativeComponent
 } from "react-native";
 
 import propTypes from "./brightcove-video.proptypes";
@@ -43,7 +41,7 @@ class BrightcoveVideo extends Component {
   }
 
   onError(evt) {
-    this.emitError(evt.nativeEvent);
+    this.props.onError(evt.nativeEvent);
   }
 
   getNodeHandle() {
@@ -56,13 +54,6 @@ class BrightcoveVideo extends Component {
 
   pause() {
     this.runNativeCommand("pause", []);
-  }
-
-  emitError(err) {
-    const errors = [].concat(this.state.errors);
-    errors.push(err);
-    this.setState({ errors });
-    this.props.onError(err);
   }
 
   runNativeCommand(name, args) {
@@ -88,26 +79,6 @@ class BrightcoveVideo extends Component {
   }
 
   render() {
-    if (this.state.errors.length) {
-      const errorItems = this.state.errors.map(error =>
-        <Text key={`${error.code}_${error.message}`} style={{ color: "white" }}>
-          {error.code} - {error.message}
-        </Text>
-      );
-
-      return (
-        <View
-          style={{
-            width: this.props.width,
-            height: this.props.height,
-            backgroundColor: "red"
-          }}
-        >
-          {errorItems}
-        </View>
-      );
-    }
-
     const NativeBrightcove = BrightcoveVideo.getNativeBrightcoveComponent();
 
     return (
