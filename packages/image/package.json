@@ -4,7 +4,7 @@
   "main": "image.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
-    "test:dev": "jest --bail --verbose --watchAll",
+    "test:watch": "jest --bail --verbose --watchAll",
     "test": "jest --bail --ci --coverage"
   },
   "jest": {
