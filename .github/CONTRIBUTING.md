@@ -83,7 +83,7 @@ It should also have a `XXXX.fructose.js` file with the component's Fructose test
 
 If required there
  should be additional functional tests written in [nightmare](http://www.nightmarejs.org/) and/or
- [fructose](https://github.com/rjanjua/fructose). Currently there's no coverage gate but a coverage report will be generated.
+ [fructose](https://github.com/rjanjua/fructose).
 
 Fructose uses detox to instrument the tests. In order to run the tests you will need to install some additional dependencies. Follow steps 1-3 in these [detox docs](https://github.com/wix/detox/blob/master/docs/Introduction.GettingStarted.md).
 

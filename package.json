@@ -12,6 +12,8 @@
   "scripts": {
     "native": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest ./lib && lerna run test",
+    "test:fructose": "FRUCTOSE=true jest .fructose/components.test.js --forceExit --verbose",
+    "pretest:fructose": "npm run fetch-fonts && npm run write-test-components",
     "coverage:publish": "lcov-result-merger ./packages/**/lcov.info | coveralls",
     "fetch-fonts": "node ./lib/fetch-fonts",
     "prestorybook": "npm run fetch-fonts",
@@ -23,8 +25,6 @@
     "storybook-native": "storybook -c .storybook.native start -p 7007",
     "compile-fructose-components": "rnstl --searchDir ./packages --pattern '**/*.fructose.js' --outputFile ./.fructose/components.js",
     "write-test-components": "npm run compile-fructose-components && compile-tests",
-    "pre-fructose": "npm run fetch-fonts && npm run write-test-components",
-    "fructose-tests": "npm run pre-fructose && FRUCTOSE=true jest .fructose/components.test.js --forceExit --verbose",
     "fructose-app": "react-native start --root .fructose/ --resetCache",
     "ios": "react-native run-ios",
     "android": "react-native run-android",
@@ -40,7 +40,7 @@
     "precommit-msg",
     "lint-staged",
     "test",
-    "fructose-test"
+    "test:fructose"
   ],
   "lint-staged": {
     "**/*.js": [
@@ -66,7 +66,7 @@
     }
   },
   "fructose": {
-		"binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/storybooknative.app"
+    "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/storybooknative.app"
 	},
   "repository": {
     "type": "git",
@@ -97,8 +97,8 @@
     "jest": "20.0.4",
     "lcov-result-merger": "1.2.0",
     "detox": "5.2.0",
-    "hjkadshhjkl-app": "0.1.10",
-    "hjkadshhjkl-test-utils": "0.1.9",
+    "hjkadshhjkl-app": "0.1.11",
+    "hjkadshhjkl-test-utils": "0.1.11",
     "lerna": "2.0.0-rc.5",
     "lint-staged": "4.0.0",
     "node-fetch": "^1.7.1",
