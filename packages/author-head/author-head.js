@@ -17,8 +17,8 @@ const styles = StyleSheet.create({
     position: "relative"
   },
   roundImage: {
+    width: 100,
     height: 100,
-    top: "50%",
     backgroundColor: "#EFEFEF",
     borderColor: "#FFF",
     borderRadius: 50,

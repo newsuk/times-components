@@ -3,13 +3,12 @@ import { storiesOf } from "@storybook/react-native";
 import AuthorHead from "./author-head";
 
 const data = {
-  uri:
-    "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200",
-  name: "Carol Midgley",
-  title: "Columnist",
-  twitter: "@carolmidgley",
+  uri: "https://pbs.twimg.com/profile_images/706844157093027840/2Aan_aSU.jpg",
+  name: "Mr. Cat von Kitten",
+  title: "Business Cat",
+  twitter: "@bcatcomic",
   bio:
-    "Carol Midgley joined The Times in 1996, and won feature writer of the year in 2004. Find her Wednesday column in Times2 each week and a weekly comment piece on Fridays."
+    "Get the book, Business Cat: Money Power Treats, here: http://buff.ly/2dqX7ZB."
 };
 
 storiesOf("AuthorHead", module).add("Full Header", () =>

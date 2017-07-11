@@ -94,15 +94,20 @@ exports[`renders a snapshot 1`] = `
           }
         }
         style={
-          Object {
-            "backgroundColor": "#EFEFEF",
-            "borderColor": "#FFF",
-            "borderRadius": 50,
-            "borderWidth": 5,
-            "height": 0,
-            "top": "50%",
-            "width": 0,
-          }
+          Array [
+            Object {
+              "backgroundColor": "#EFEFEF",
+              "borderColor": "#FFF",
+              "borderRadius": 50,
+              "borderWidth": 5,
+              "height": 100,
+              "width": 100,
+            },
+            Object {
+              "height": 0,
+              "width": 0,
+            },
+          ]
         }
       />
     </View>
@@ -204,15 +209,20 @@ exports[`renders a snapshot with data 1`] = `
           }
         }
         style={
-          Object {
-            "backgroundColor": "#EFEFEF",
-            "borderColor": "#FFF",
-            "borderRadius": 50,
-            "borderWidth": 5,
-            "height": 0,
-            "top": "50%",
-            "width": 0,
-          }
+          Array [
+            Object {
+              "backgroundColor": "#EFEFEF",
+              "borderColor": "#FFF",
+              "borderRadius": 50,
+              "borderWidth": 5,
+              "height": 100,
+              "width": 100,
+            },
+            Object {
+              "height": 0,
+              "width": 0,
+            },
+          ]
         }
       />
     </View>
