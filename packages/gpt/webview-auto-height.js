@@ -2,7 +2,7 @@
 // the main trick here is that when window.location.hash is changed, handleNavigationChange() function is called
 
 import React from "react";
-import { WebView } from "react-native";
+import { WebView, StyleSheet } from "react-native";
 
 const script = `
 <script>
@@ -98,13 +98,13 @@ WebViewAutoHeight.defaultProps = {
 };
 
 WebViewAutoHeight.propTypes = {
-  source: React.PropTypes.objectOf({
-    html: React.PropTypes.string.isRequired
+  source: React.PropTypes.shape({
+    html: React.PropTypes.string
   }).isRequired,
   minHeight: React.PropTypes.number,
   onNavigationStateChange: React.PropTypes.func,
   baseUrl: React.PropTypes.string,
-  style: WebView.propTypes.style
+  style: React.PropTypes.instanceOf(StyleSheet)
 };
 
 export default WebViewAutoHeight;
