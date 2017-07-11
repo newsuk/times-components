@@ -54,7 +54,7 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
     event.putString("code", e.properties.get("error_code").toString());
     event.putString("message", e.toString());
     ReactContext reactContext = (ReactContext) getContext();
-    reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
+    reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topLoadingError", event);
   }
 
   private void initVideo() {

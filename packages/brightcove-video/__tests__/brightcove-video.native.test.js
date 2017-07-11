@@ -108,7 +108,7 @@ describe("brightcove-video native component", () => {
       propsCache.onChange({ nativeEvent: "random act of kindness" });
     });
 
-    it("will correctly handle native errors", done => {
+    it("will correctly handle native (android) errors", done => {
       renderer.create(
         <BrightcoveVideo
           accountId="[ACCOUNT_ID]"
@@ -121,7 +121,23 @@ describe("brightcove-video native component", () => {
         />
       );
 
-      propsCache.onNativeError({ nativeEvent: "random act of badness" });
+      propsCache.onLoadingError({ nativeEvent: "random act of badness" });
+    });
+
+    it("will correctly handle native (iOS) errors", done => {
+      renderer.create(
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          policyId="[POLICY_ID]"
+          onError={evt => {
+            expect(evt).toBe("random act of badness");
+            done();
+          }}
+        />
+      );
+
+      propsCache.onIOSError({ nativeEvent: "random act of badness" });
     });
   });
 });

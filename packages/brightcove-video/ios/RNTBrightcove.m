@@ -112,13 +112,13 @@
 }
 
 - (void)emitError:(NSError *)error {
-  if (!self.onNativeError) {
+  if (!self.onIOSError) {
     return;
   }
   
   NSString *code = [NSString stringWithFormat:@"%ld", (long)[error code]];
   
-  self.onNativeError(@{@"code": code, @"message": [error localizedDescription]});
+  self.onIOSError(@{@"code": code, @"message": [error localizedDescription]});
 }
 
 - (void)playbackController:(id<BCOVPlaybackController>)controller playbackSession:(id<BCOVPlaybackSession>)session didReceiveLifecycleEvent:(BCOVPlaybackSessionLifecycleEvent *)lifecycleEvent {

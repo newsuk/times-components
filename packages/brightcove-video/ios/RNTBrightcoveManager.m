@@ -8,7 +8,7 @@ RCT_EXPORT_VIEW_PROPERTY(policyId, NSString);
 RCT_EXPORT_VIEW_PROPERTY(accountId, NSString);
 RCT_EXPORT_VIEW_PROPERTY(videoId, NSString);
 RCT_EXPORT_VIEW_PROPERTY(onChange, RCTBubblingEventBlock);
-RCT_EXPORT_VIEW_PROPERTY(onNativeError, RCTBubblingEventBlock);
+RCT_EXPORT_VIEW_PROPERTY(onIOSError, RCTBubblingEventBlock);
 
 @synthesize bridge = _bridge;
 

@@ -67,7 +67,8 @@ class BrightcoveVideo extends Component {
         accountId={this.props.accountId}
         videoId={this.props.videoId}
         onChange={this.onChange}
-        onNativeError={this.onError}
+        onLoadingError={this.onError} // android handler seems to be reserved on iOS
+        onIOSError={this.onError} // so we use this instead
       />
     );
   }
