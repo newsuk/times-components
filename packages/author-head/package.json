@@ -11,10 +11,10 @@
     "preset": "react-native",
     "rootDir": "../../",
     "transformIgnorePatterns": [
-      "node_modules/(?!@timescomponents)/"
+      "node_modules/(?!@times-components)/"
     ],
     "testMatch": [
-      "<rootDir>/packages/author-head/**.test.js"
+      "<rootDir>/packages/author-head/__tests__/*.test.js"
     ]
   },
   "repository": {
@@ -52,7 +52,8 @@
     "react-dom": "15.5.4",
     "react-native": "0.44.1",
     "react-native-web": "0.0.97",
-    "@times-components/image": "0.0.1"
+    "@times-components/image": "0.0.1",
+    "@times-components/markup": "0.0.1"
   },
   "peerDependencies": {
     "@storybook/react-native": "3.1.6"

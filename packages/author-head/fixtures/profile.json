@@ -1,0 +1,82 @@
+{
+  "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg",
+  "name": "Carol Midgley",
+  "title": "columnist",
+  "twitter": [
+    {
+      "name": "a",
+      "attributes": {
+        "href": "http://www.twitter.com/carolmidgley"
+      },
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": "@carolmidgley"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "bio":
+  [
+    {
+      "name": "text",
+      "children": [
+        {
+          "text": "Carol Midgley joined "
+        }
+      ]
+    },
+    {
+      "name": "i",
+      "attributes": {
+
+      },
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": "The Times"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "text",
+      "children": [
+        {
+          "text": " in 1996, and won feature writer of the year in 2004. Find her Wednesday column in "
+        }
+      ]
+    },
+    {
+      "name": "i",
+      "attributes": {
+
+      },
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": "Times2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "text",
+      "children": [
+        {
+          "text": " each week and a weekly comment piece on Fridays."
+        }
+      ]
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import { View, StyleSheet, Text } from "react-native";
 import PropTypes from "prop-types";
 
 import Image from "@times-components/image";
+import Markup from "@times-components/markup";
 
 const styles = StyleSheet.create({
   container: {
@@ -43,6 +44,7 @@ const styles = StyleSheet.create({
   },
   bio: {
     fontFamily: "TimesDigital-Regular",
+    textAlign: "center",
     fontSize: 15,
     lineHeight: 25,
     marginTop: 6,
@@ -68,8 +70,12 @@ const AuthorHead = props => {
         <Text accessibilityRole="heading" aria-level="2" style={styles.title}>
           {title.toLowerCase()}
         </Text>
-        <Text style={styles.twitter}>{twitter}</Text>
-        <Text style={styles.bio}>{bio}</Text>
+        <Text style={styles.twitter}>
+          <Markup ast={twitter} />
+        </Text>
+        <Text style={styles.bio}>
+          <Markup ast={bio} />
+        </Text>
       </View>
       <View style={styles.photoContainer}>
         <Image aspectRatio={1} source={{ uri }} style={styles.roundImage} />
@@ -81,17 +87,17 @@ const AuthorHead = props => {
 AuthorHead.defaultProps = {
   name: "",
   title: "",
-  bio: "",
   uri: "",
-  twitter: ""
+  bio: [],
+  twitter: []
 };
 
 AuthorHead.propTypes = {
   name: PropTypes.string,
   title: PropTypes.string,
-  bio: PropTypes.string,
   uri: PropTypes.string,
-  twitter: PropTypes.string
+  bio: Markup.propTypes.ast,
+  twitter: Markup.propTypes.ast
 };
 
 export default AuthorHead;
