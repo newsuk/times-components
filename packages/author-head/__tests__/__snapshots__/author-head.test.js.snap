@@ -38,6 +38,7 @@ exports[`renders a snapshot 1`] = `
           "fontSize": 30,
           "fontWeight": "400",
           "lineHeight": 30,
+          "padding": 8,
         }
       }
     >
@@ -52,6 +53,7 @@ exports[`renders a snapshot 1`] = `
       style={
         Object {
           "fontFamily": "TimesDigitalW04-RegularSC",
+          "padding": 8,
         }
       }
     >
@@ -66,10 +68,15 @@ exports[`renders a snapshot 1`] = `
           "color": "#069",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 15,
+          "padding": 8,
         }
       }
     >
-      <View />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      />
     </Text>
     <Text
       accessible={true}
@@ -81,12 +88,16 @@ exports[`renders a snapshot 1`] = `
           "fontFamily": "TimesDigital-Regular",
           "fontSize": 15,
           "lineHeight": 25,
-          "marginTop": 6,
+          "padding": 8,
           "textAlign": "center",
         }
       }
     >
-      <View />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      />
     </Text>
   </View>
   <View
@@ -168,6 +179,7 @@ exports[`renders a snapshot with data 1`] = `
           "fontSize": 30,
           "fontWeight": "400",
           "lineHeight": 30,
+          "padding": 8,
         }
       }
     >
@@ -182,6 +194,7 @@ exports[`renders a snapshot with data 1`] = `
       style={
         Object {
           "fontFamily": "TimesDigitalW04-RegularSC",
+          "padding": 8,
         }
       }
     >
@@ -196,6 +209,7 @@ exports[`renders a snapshot with data 1`] = `
           "color": "#069",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 15,
+          "padding": 8,
         }
       }
     >
@@ -223,19 +237,17 @@ exports[`renders a snapshot with data 1`] = `
           "fontFamily": "TimesDigital-Regular",
           "fontSize": 15,
           "lineHeight": 25,
-          "marginTop": 6,
+          "padding": 8,
           "textAlign": "center",
         }
       }
     >
-      <View>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-        >
-          Carol Midgley joined 
-        </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        Carol Midgley joined 
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -248,13 +260,7 @@ exports[`renders a snapshot with data 1`] = `
         >
           The Times
         </Text>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-        >
-           in 1996, and won feature writer of the year in 2004. Find her Wednesday column in 
-        </Text>
+         in 1996, and won feature writer of the year in 2004. Find her Wednesday column in 
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -267,14 +273,8 @@ exports[`renders a snapshot with data 1`] = `
         >
           Times2
         </Text>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-        >
-           each week and a weekly comment piece on Fridays.
-        </Text>
-      </View>
+         each week and a weekly comment piece on Fridays.
+      </Text>
     </Text>
   </View>
   <View

@@ -30,14 +30,17 @@ const styles = StyleSheet.create({
   name: {
     fontFamily: "TimesModern-Bold",
     fontSize: 30,
-    lineHeight: 30,
     fontWeight: "400",
+    lineHeight: 30,
+    padding: 8,
     color: "#1D1D1B"
   },
   title: {
+    padding: 8,
     fontFamily: "TimesDigitalW04-RegularSC"
   },
   twitter: {
+    padding: 8,
     fontSize: 15,
     fontFamily: "GillSansMTStd-Medium",
     color: "#069"
@@ -47,7 +50,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 15,
     lineHeight: 25,
-    marginTop: 6,
+    padding: 8,
     color: "#333"
   },
   wrapper: {
@@ -71,10 +74,10 @@ const AuthorHead = props => {
           {title.toLowerCase()}
         </Text>
         <Text style={styles.twitter}>
-          <Markup ast={twitter} />
+          <Markup ast={twitter} wrapIn="span" />
         </Text>
         <Text style={styles.bio}>
-          <Markup ast={bio} />
+          <Markup ast={bio} wrapIn="p" />
         </Text>
       </View>
       <View style={styles.photoContainer}>
