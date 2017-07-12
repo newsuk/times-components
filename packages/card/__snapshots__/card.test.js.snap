@@ -101,7 +101,13 @@ exports[`renders horizontal by default 1`] = `
           }
         }
       >
-        When I was the official celebrity sex correspondent on Style magazine, every so often I would have to address the abject failure of male...  
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+        >
+          A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+        </Text>
       </Text>
       <Text
         accessible={true}
@@ -164,7 +170,24 @@ exports[`renders vertical above breakpoint 1`] = `
       headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT"
       label="Camilla Long"
       publication="The Sunday Times"
-      text="When I was the official celebrity sex correspondent on Style magazine, every so often I would have to address the abject failure of male...  "
+      text={
+        Array [
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "text": "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, ",
+                  },
+                ],
+                "name": "text",
+              },
+            ],
+            "name": "p",
+          },
+        ]
+      }
     />
   </View>
 </View>

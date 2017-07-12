@@ -1,6 +1,10 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import PropTypes from "prop-types";
+import format from "date-fns/format";
+import Markup from "@times-components/markup";
+
+const DATE_FORMAT = "dddd MMMM DD YYYY";
 
 const styles = StyleSheet.create({
   container: {},
@@ -38,9 +42,10 @@ function renderPublicationDetails(date, publication, style) {
   if (!date || !publication) {
     return null;
   }
+
   return (
     <Text style={style.meta}>
-      {date}, {publication}
+      {format(date, DATE_FORMAT)}, {publication}
     </Text>
   );
 }
@@ -53,7 +58,9 @@ const ArticleSummary = props => {
     <View style={styles.container}>
       <Text style={styles.label}>{labelText}</Text>
       <Text style={styles.headline}>{headline}</Text>
-      <Text style={styles.text}>{text}</Text>
+      <Text style={styles.text}>
+        <Markup ast={text} />
+      </Text>
       {renderPublicationDetails(date, publication, styles)}
     </View>
   );
@@ -62,7 +69,7 @@ const ArticleSummary = props => {
 ArticleSummary.propTypes = {
   label: PropTypes.string,
   headline: PropTypes.string,
-  text: PropTypes.string,
+  text: Markup.propTypes.ast,
   date: PropTypes.string,
   publication: PropTypes.string
 };
@@ -70,8 +77,8 @@ ArticleSummary.propTypes = {
 ArticleSummary.defaultProps = {
   label: "",
   headline: "",
-  text: "",
-  date: "",
+  text: [],
+  date: null,
   publication: ""
 };
 

@@ -52,7 +52,7 @@ exports[`renders a snapshot 1`] = `
       }
     }
   >
-    
+    <View />
   </Text>
 </View>
 `;
@@ -109,7 +109,37 @@ exports[`renders a snapshot with content 1`] = `
       }
     }
   >
-    When I was the official celebrity sex correspondent on Style magazine, every so often I would have to address the abject failure of male...  
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+         has learnt.
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        Two 17-year-old Muslim schoolboys from the Pakistani community in Brent, northwest London, and a 19-year-old man were intercepted in Istanbul at the weekend and swiftly returned to England. They were questioned by counterterrorism officials last night.
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        Quick action by the parents of the younger boys, when the pair did not return home after Friday prayers, thwarted the latest alleged attempt by young Britons to join the terrorist group, sources said.
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        It came two days after Britain’s most senior police officer reassured the families of three runaway schoolgirls from east London that they would not be prosecuted if they returned
+      </Text>
+    </View>
   </Text>
   <Text
     accessible={true}
@@ -123,7 +153,7 @@ exports[`renders a snapshot with content 1`] = `
       }
     }
   >
-    Sunday June 11 2017
+    Saturday July 01 2017
     , 
     The Sunday Times
   </Text>
