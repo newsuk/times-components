@@ -12,11 +12,11 @@ class Ad extends Component {
     Linking.canOpenURL(url)
       .then(supported => {
         if (!supported) {
-          return console.error("Cant open url", url);
+          return console.error("Cant open url", url); // eslint-disable-line no-console
         }
         return Linking.openURL(url);
       })
-      .catch(err => console.error("An error occurred", err));
+      .catch(err => console.error("An error occurred", err)); // eslint-disable-line no-console
   }
 
   constructor(props) {
