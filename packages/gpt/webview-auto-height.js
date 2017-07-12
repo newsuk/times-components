@@ -46,22 +46,46 @@ const style = `
 const codeInject = html => `${style}${html}${script}`;
 
 class WebViewAutoHeight extends React.Component {
+  static hasDifferentOrigin(url, baseUrl) {
+    return url && url.indexOf(baseUrl) === -1 && url.indexOf("://") > -1;
+  }
+
   constructor(props) {
     super(props);
     this.state = {
       realContentHeight: this.props.minHeight
     };
 
+    this.handleTitleChange = this.handleTitleChange.bind(this);
+    this.handleOriginChange = this.handleOriginChange.bind(this);
     this.handleNavigationChange = this.handleNavigationChange.bind(this);
   }
 
-  handleNavigationChange(navState) {
-    if (navState.title) {
-      const realContentHeight = parseInt(navState.title, 10) || 0; // turn NaN to 0
-      if (realContentHeight > 0) {
+  handleTitleChange(title) {
+    if (title) {
+      const realContentHeight = parseInt(title, 10) || 0; // turn NaN to 0
+      if (
+        realContentHeight > 0 &&
+        this.state.realContentHeight !== realContentHeight
+      ) {
         this.setState({ realContentHeight });
       }
     }
+  }
+
+  handleOriginChange(url) {
+    if (WebViewAutoHeight.hasDifferentOrigin(url, this.props.baseUrl)) {
+      this.webview.stopLoading();
+      if (typeof this.props.onOriginChange === "function") {
+        this.props.onOriginChange(url);
+      }
+    }
+  }
+
+  handleNavigationChange(navState) {
+    this.handleTitleChange(navState.title);
+    this.handleOriginChange(navState.url);
+
     if (typeof this.props.onNavigationStateChange === "function") {
       this.props.onNavigationStateChange(navState);
     }
@@ -77,6 +101,9 @@ class WebViewAutoHeight extends React.Component {
 
     return (
       <WebView
+        ref={ref => {
+          this.webview = ref;
+        }}
         source={{ html: codeInject(html), baseUrl }}
         scrollEnabled={false}
         style={[
@@ -94,7 +121,8 @@ WebViewAutoHeight.defaultProps = {
   minHeight: 0,
   baseUrl: "",
   style: null,
-  onNavigationStateChange: null
+  onNavigationStateChange: null,
+  onOriginChange: null
 };
 
 WebViewAutoHeight.propTypes = {
@@ -103,6 +131,7 @@ WebViewAutoHeight.propTypes = {
   }).isRequired,
   minHeight: React.PropTypes.number,
   onNavigationStateChange: React.PropTypes.func,
+  onOriginChange: React.PropTypes.func,
   baseUrl: React.PropTypes.string,
   style: React.PropTypes.instanceOf(StyleSheet)
 };

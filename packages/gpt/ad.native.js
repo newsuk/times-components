@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Dimensions } from "react-native";
+import { Dimensions, Linking } from "react-native";
 import { getSlotConfig } from "./generate-config";
 import { pbjs as pbjsConfig } from "./config";
 import WebViewAutoHeight from "./webview-auto-height";
@@ -8,6 +8,17 @@ import WebViewAutoHeight from "./webview-auto-height";
 const { width } = Dimensions.get("window");
 
 class Ad extends Component {
+  static onOriginChange(url) {
+    Linking.canOpenURL(url)
+      .then(supported => {
+        if (!supported) {
+          return console.error("Cant open url", url);
+        }
+        return Linking.openURL(url);
+      })
+      .catch(err => console.error("An error occurred", err));
+  }
+
   constructor(props) {
     super(props);
     this.config = getSlotConfig(props.section, props.code, width);
@@ -89,13 +100,18 @@ class Ad extends Component {
               initGoogleTagDefaults();
             }
             init();
+
           </script>
         </body>
       </html>
       `;
 
     return (
-      <WebViewAutoHeight source={{ html }} baseUrl={"https://example.com"} />
+      <WebViewAutoHeight
+        source={{ html }}
+        baseUrl={this.props.baseUrl}
+        onOriginChange={Ad.onOriginChange}
+      />
     );
   }
 }
@@ -104,12 +120,14 @@ Ad.propTypes = {
   networkId: PropTypes.string,
   adUnit: PropTypes.string,
   code: PropTypes.string.isRequired,
-  section: PropTypes.string.isRequired
+  section: PropTypes.string.isRequired,
+  baseUrl: PropTypes.string
 };
 
 Ad.defaultProps = {
   networkId: "25436805",
-  adUnit: "d.thetimes.co.uk"
+  adUnit: "d.thetimes.co.uk",
+  baseUrl: "https://example.com"
 };
 
 export default Ad;
