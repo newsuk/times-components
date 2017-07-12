@@ -48,6 +48,15 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
     reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
   }
 
+  private void emitError(Event e) {
+    Log.d("emitError", e.toString());
+    WritableMap event = Arguments.createMap();
+    event.putString("code", e.properties.get("error_code").toString());
+    event.putString("message", e.toString());
+    ReactContext reactContext = (ReactContext) getContext();
+    reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topLoadingError", event);
+  }
+
   private void initVideo() {
     if (mVideoId != null && mAccountId != null && mPolicyId != null) {
       EventEmitter eventEmitter = getEventEmitter();
@@ -72,6 +81,13 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
         @Override
         public void processEvent(Event e) {
           emitState();
+        }
+      });
+
+      eventEmitter.on(EventType.ERROR, new EventListener() {
+        @Override
+        public void processEvent(Event e) {
+          emitError(e);
         }
       });
 

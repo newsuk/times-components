@@ -47,7 +47,7 @@
     if (video) {
       [self.playbackController setVideos:@[ video ]];
     } else {
-      NSLog(@"ViewController Debug - Error retrieving video playlist: `%@`", error);
+      [self emitError:error];
     }
   }];
 }
@@ -109,6 +109,16 @@
   }
 
   self.onChange(@{@"playerStatus": _playerStatus, @"playheadPosition": _playheadPosition});
+}
+
+- (void)emitError:(NSError *)error {
+  if (!self.onIOSError) {
+    return;
+  }
+  
+  NSString *code = [NSString stringWithFormat:@"%ld", (long)[error code]];
+  
+  self.onIOSError(@{@"code": code, @"message": [error localizedDescription]});
 }
 
 - (void)playbackController:(id<BCOVPlaybackController>)controller playbackSession:(id<BCOVPlaybackSession>)session didReceiveLifecycleEvent:(BCOVPlaybackSessionLifecycleEvent *)lifecycleEvent {

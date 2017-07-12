@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import stylePropType from "react-style-proptype";
 import { View, Image } from "react-native";
-import merge from "lodash.merge";
 import placeholder from "./placeholder";
 
 class ImageComponent extends React.Component {
@@ -36,17 +35,17 @@ class ImageComponent extends React.Component {
   }
 
   render() {
-    const style = merge(this.props.style, {
+    const style = {
       width: this.state.width,
       height: this.state.height
-    });
+    };
 
     return (
       <View onLayout={this.handleLayout}>
         <Image
           onError={this.handleError}
           source={this.state.source}
-          style={style}
+          style={[this.props.style, style]}
         />
       </View>
     );
