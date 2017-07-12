@@ -15,6 +15,7 @@
     "test:fructose": "FRUCTOSE=true jest .fructose/components.test.js --forceExit --verbose",
     "pretest:fructose": "npm run fetch-fonts && npm run write-test-components",
     "coverage:publish": "lcov-result-merger ./packages/**/lcov.info | coveralls",
+    "lint": "eslint .",
     "fetch-fonts": "node ./lib/fetch-fonts",
     "prestorybook": "npm run fetch-fonts",
     "storybook": "start-storybook -p 9001 -c .storybook -s ./dist/public",
