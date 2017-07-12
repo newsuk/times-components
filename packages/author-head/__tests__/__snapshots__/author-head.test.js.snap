@@ -69,7 +69,7 @@ exports[`renders a snapshot 1`] = `
         }
       }
     >
-      
+      <View />
     </Text>
     <Text
       accessible={true}
@@ -82,10 +82,11 @@ exports[`renders a snapshot 1`] = `
           "fontSize": 15,
           "lineHeight": 25,
           "marginTop": 6,
+          "textAlign": "center",
         }
       }
     >
-      
+      <View />
     </Text>
   </View>
   <View
@@ -198,7 +199,19 @@ exports[`renders a snapshot with data 1`] = `
         }
       }
     >
-      @carolmidgley
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        onPress={[Function]}
+        style={
+          Object {
+            "color": "blue",
+          }
+        }
+      >
+        @carolmidgley
+      </Text>
     </Text>
     <Text
       accessible={true}
@@ -211,10 +224,57 @@ exports[`renders a snapshot with data 1`] = `
           "fontSize": 15,
           "lineHeight": 25,
           "marginTop": 6,
+          "textAlign": "center",
         }
       }
     >
-      Carol Midgley joined The Times in 1996, and won feature writer of the year in 2004. Find her Wednesday column in Times2 each week and a weekly comment piece on Fridays.
+      <View>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+        >
+          Carol Midgley joined 
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "fontStyle": "italic",
+            }
+          }
+        >
+          The Times
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+        >
+           in 1996, and won feature writer of the year in 2004. Find her Wednesday column in 
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "fontStyle": "italic",
+            }
+          }
+        >
+          Times2
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+        >
+           each week and a weekly comment piece on Fridays.
+        </Text>
+      </View>
     </Text>
   </View>
   <View
@@ -234,7 +294,7 @@ exports[`renders a snapshot with data 1`] = `
         onError={[Function]}
         source={
           Object {
-            "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200",
+            "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg",
           }
         }
         style={
