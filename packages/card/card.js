@@ -13,7 +13,7 @@ const getStyles = isHorizontal =>
     },
     imageContainer: {
       flexGrow: isHorizontal ? 2 : 1,
-      flexBasis: isHorizontal ? 0 : "auto"
+      flexBasis: isHorizontal ? 0 : 256
     },
     summaryContainer: {
       flexGrow: isHorizontal ? 3 : 1,

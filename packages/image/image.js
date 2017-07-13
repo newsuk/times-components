@@ -1,29 +1,23 @@
 import React from "react";
-import PropTypes from "prop-types";
-import stylePropType from "react-style-proptype";
-import { View, Image } from "react-native";
+import { Image, StyleSheet, ViewPropTypes } from "react-native";
 import placeholder from "./placeholder";
+
+const styles = StyleSheet.create({
+  image: {
+    width: "100%",
+    height: "100%"
+  }
+});
 
 class ImageComponent extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      source: props.source,
-      width: 0,
-      height: 0
+      source: props.source
     };
 
-    this.handleLayout = this.handleLayout.bind(this);
     this.handleError = this.handleError.bind(this);
-  }
-
-  handleLayout(event) {
-    const containerWidth = event.nativeEvent.layout.width;
-    this.setState({
-      width: containerWidth,
-      height: containerWidth * this.props.aspectRatio
-    });
   }
 
   handleError() {
@@ -35,34 +29,16 @@ class ImageComponent extends React.Component {
   }
 
   render() {
-    const style = {
-      width: this.state.width,
-      height: this.state.height
-    };
+    const props = Object.assign({}, this.props, this.state, {
+      style: [styles.image, this.props.style]
+    });
 
-    return (
-      <View onLayout={this.handleLayout}>
-        <Image
-          onError={this.handleError}
-          source={this.state.source}
-          style={[this.props.style, style]}
-        />
-      </View>
-    );
+    return <Image {...props} onError={this.handleError} />;
   }
 }
 
-ImageComponent.propTypes = {
-  aspectRatio: PropTypes.number,
-  source: PropTypes.shape({
-    uri: PropTypes.string.isRequired
-  }).isRequired,
-  style: stylePropType
-};
-
-ImageComponent.defaultProps = {
-  aspectRatio: 0.75,
-  style: {}
-};
+ImageComponent.propTypes = Object.assign({}, Image.propTypes, {
+  containerStyle: ViewPropTypes.style
+});
 
 export default ImageComponent;

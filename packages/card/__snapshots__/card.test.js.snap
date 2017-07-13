@@ -18,27 +18,23 @@ exports[`renders horizontal by default 1`] = `
       }
     }
   >
-    <View
-      onLayout={[Function]}
-    >
-      <Image
-        onError={[Function]}
-        source={
+    <Image
+      onError={[Function]}
+      source={
+        Object {
+          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320",
+        }
+      }
+      style={
+        Array [
           Object {
-            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320",
-          }
-        }
-        style={
-          Array [
-            Object {},
-            Object {
-              "height": 0,
-              "width": 0,
-            },
-          ]
-        }
-      />
-    </View>
+            "height": "100%",
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    />
   </View>
   <View
     style={
@@ -136,19 +132,17 @@ exports[`renders vertical above breakpoint 1`] = `
   <View
     style={
       Object {
-        "flexBasis": "auto",
+        "flexBasis": 256,
         "flexGrow": 1,
       }
     }
   >
     <ImageComponent
-      aspectRatio={0.75}
       source={
         Object {
           "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320",
         }
       }
-      style={Object {}}
     />
   </View>
   <View
