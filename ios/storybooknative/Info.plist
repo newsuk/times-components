@@ -5,8 +5,8 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>GillSansMTStd-Medium.ttf</string>
-		<string>TimesDigitalW04-Regular.ttf</string>
-		<string>TimesDigitalW04-RegularSC.ttf</string>
+		<string>TimesDigital-Regular.ttf</string>
+		<string>TimesDigital-RegularSC.ttf</string>
 		<string>TimesModern-Bold.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
