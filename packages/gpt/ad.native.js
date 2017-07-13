@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Dimensions, Linking } from "react-native";
+import { WebView, Dimensions, Linking, StyleSheet } from "react-native";
 import { getSlotConfig } from "./generate-config";
 import { pbjs as pbjsConfig } from "./config";
-import WebViewAutoHeight from "./webview-auto-height";
 
 const { width } = Dimensions.get("window");
 
@@ -19,15 +18,45 @@ class Ad extends Component {
       .catch(err => console.error("An error occurred", err)); // eslint-disable-line no-console
   }
 
+  static getMaxHeight(sizes) {
+    if (!sizes) {
+      return 0;
+    }
+
+    return sizes.reduce((max, item) => {
+      const curHeight = item[1];
+      let maxHeight = max;
+      if (curHeight && curHeight > max) {
+        maxHeight = curHeight;
+      }
+      return maxHeight;
+    }, 0);
+  }
+
   constructor(props) {
     super(props);
     this.config = getSlotConfig(props.section, props.code, width);
+    this.maxHeight = Ad.getMaxHeight(this.config.sizes);
   }
 
   render() {
     const html = `
       <html>
         <head>
+          <style>
+            body {
+              margin: 0 auto;
+              background-color: #f1f1f1;
+              display: table;
+              height: 100%;
+              width: 100%;
+              text-align: center;
+            }
+            div#${this.props.code} {
+              display: table-cell;
+              vertical-align: middle;
+            }
+          </style>
           <script async src="https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js"></script>
           <script async src="https://www.googletagservices.com/tag/js/gpt.js"></script>
         </head>
@@ -107,8 +136,9 @@ class Ad extends Component {
       `;
 
     return (
-      <WebViewAutoHeight
-        source={{ html }}
+      <WebView
+        source={{ html, baseUrl: this.props.baseUrl }}
+        style={[this.props.style, { height: this.maxHeight + 10 }]}
         baseUrl={this.props.baseUrl}
         onOriginChange={Ad.onOriginChange}
       />
@@ -121,13 +151,15 @@ Ad.propTypes = {
   adUnit: PropTypes.string,
   code: PropTypes.string.isRequired,
   section: PropTypes.string.isRequired,
-  baseUrl: PropTypes.string
+  baseUrl: PropTypes.string,
+  style: React.PropTypes.instanceOf(StyleSheet)
 };
 
 Ad.defaultProps = {
   networkId: "25436805",
   adUnit: "d.thetimes.co.uk",
-  baseUrl: "https://example.com"
+  baseUrl: "https://example.com",
+  style: null
 };
 
 export default Ad;
