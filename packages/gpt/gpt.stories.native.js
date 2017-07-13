@@ -7,7 +7,7 @@ import Ad from "./ad.native";
 export default () =>
   storiesOf("GPT", module)
     .add("render one native ad", () =>
-      <Ad code="ad-header" section="article" />
+      <Ad code="intervention" section="article" />
     )
     .add("render one native ad and some text", () =>
       <ScrollView>
@@ -16,7 +16,7 @@ export default () =>
           elementum ex id diam eleifend convallis. Nulla faucibus nec nibh sed
           condimentum.
         </Text>
-        <Ad code="ad-header" section="article" />
+        <Ad code="intervention" section="article" />
         <Text style={{ color: "red" }}>
           Class aptent taciti sociosqu ad
           litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
@@ -27,8 +27,8 @@ export default () =>
     )
     .add("render two native ads", () =>
       <ScrollView>
-        <Ad code="ad-header" section="article" />
-        <Ad code="ad-header" section="article" />
+        <Ad code="intervention" section="article" />
+        <Ad code="intervention" section="article" />
       </ScrollView>
     )
     .add("render two native ads and some text", () =>
@@ -41,7 +41,7 @@ export default () =>
           Orci varius natoque penatibus et magnis dis parturient montes,
           nascetur ridiculus mus.
         </Text>
-        <Ad code="ad-header" section="article" />
+        <Ad code="intervention" section="article" />
         <Text>
           Donec convallis enim sit amet
           elit pharetra, et aliquet augue blandit. Integer suscipit mollis
@@ -50,7 +50,7 @@ export default () =>
           nisi pretium neque, sed congue tortor erat vitae erat. Nulla eget
           nulla rhoncus, sollicitudin ipsum et, volutpat ligula.
         </Text>
-        <Ad code="ad-header" section="article" />
+        <Ad code="intervention" section="article" />
         <Text>
           Aliquam dapibus risus a leo euismod, sed dignissim nibh commodo. Donec
           vitae justo aliquam, pellentesque risus laoreet, hendrerit augue.

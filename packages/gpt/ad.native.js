@@ -180,7 +180,7 @@ Ad.propTypes = {
 Ad.defaultProps = {
   networkId: "25436805",
   adUnit: "d.thetimes.co.uk",
-  baseUrl: "https://example.com",
+  baseUrl: "https://www.thetimes.co.uk/",
   style: null
 };
 
