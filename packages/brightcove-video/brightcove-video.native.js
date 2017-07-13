@@ -38,13 +38,15 @@ class BrightcoveVideo extends Component {
   }
 
   play() {
-    /* eslint class-methods-use-this: 0 */
-    /* not implemented */
+    if (this.bcPlayer.play) {
+      this.bcPlayer.play();
+    }
   }
 
   pause() {
-    /* eslint class-methods-use-this: 0 */
-    /* not implemented */
+    if (this.bcPlayer.pause) {
+      this.bcPlayer.pause();
+    }
   }
 
   render() {
@@ -72,6 +74,9 @@ class BrightcoveVideo extends Component {
 
     return (
       <NativeBrightcove
+        ref={ref => {
+          this.bcPlayer = ref;
+        }}
         style={{ height: this.props.height, width: this.props.width }}
         policyId={this.props.policyId}
         accountId={this.props.accountId}
