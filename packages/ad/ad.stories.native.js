@@ -5,7 +5,7 @@ import { Text, ScrollView } from "react-native";
 import Ad from "./ad";
 
 export default () =>
-  storiesOf("GPT", module)
+  storiesOf("Ad", module)
     .add("render one native ad", () =>
       <Ad code="intervention" section="article" />
     )

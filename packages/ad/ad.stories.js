@@ -1,6 +1,6 @@
 /* eslint-env browser */
-import nativeStories from "./ad.stories.native";
-import webStories from "./ad.stories.web";
+import nativeStories from "./ad.stories.native.js";
+import webStories from "./ad.stories.web.js";
 
 // will pick either web or native stories
 const stories = () => {
