@@ -1,11 +1,15 @@
 import React from "react";
 import { View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
+import { IntlProvider } from "react-intl";
 import ArticleSummary from "./article-summary";
 import props from "./fixtures/article.json";
 
+const story = m =>
+  <IntlProvider locale="en">
+    <View style={{ padding: 20 }}>{m}</View>
+  </IntlProvider>;
+
 storiesOf("ArticleSummary", module).add("ArticleSummary", () =>
-  <View style={{ width: "100%", padding: 30 }}>
-    <ArticleSummary {...props} />
-  </View>
+  story(<ArticleSummary {...props} />)
 );

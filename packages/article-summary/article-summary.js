@@ -1,10 +1,8 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import { FormattedDate } from "react-intl-native";
 import PropTypes from "prop-types";
-import format from "date-fns/format";
 import Markup from "@times-components/markup";
-
-const DATE_FORMAT = "dddd MMMM DD YYYY";
 
 const styles = StyleSheet.create({
   container: {},
@@ -45,7 +43,13 @@ function renderPublicationDetails(date, publication, style) {
 
   return (
     <Text style={style.meta}>
-      {format(date, DATE_FORMAT)}, {publication}
+      <FormattedDate
+        weekday="long"
+        month="long"
+        day="numeric"
+        year="numeric"
+        value={new Date(date)}
+      />, {publication}
     </Text>
   );
 }

@@ -7,6 +7,7 @@ module.exports = {
     // Maps the 'react-native' import to 'react-native-web'.
     alias: {
       "react-native": "react-native-web",
+      "react-intl-native": "react-intl",
       "@storybook/react-native": "@storybook/react"
     },
     // If you're working on a multi-platform React Native app, web-specific

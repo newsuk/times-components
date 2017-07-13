@@ -10,9 +10,15 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "snapshotSerializers": ["enzyme-to-json/serializer"],
-    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-    "testMatch": ["<rootDir>/packages/card/**.test.js"]
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/card/**.test.js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -51,6 +57,7 @@
     "@times-components/image": "0.0.1",
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",
+    "react-intl": "^2.3.0",
     "react-native-web": "0.0.97"
   },
   "peerDependencies": {

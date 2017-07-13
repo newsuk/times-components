@@ -4,8 +4,6 @@ import { storiesOf } from "@storybook/react-native";
 import Card from "./card";
 import props from "./fixtures/card-props.json";
 
-storiesOf("Card", module).add("Card", () =>
-  <View>
-    <Card {...props} />
-  </View>
-);
+const story = m => <View style={{ padding: 20 }}>{m}</View>;
+
+storiesOf("Card", module).add("Card", () => story(<Card {...props} />));
