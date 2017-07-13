@@ -1,12 +1,15 @@
+import "intl";
+import "react-intl/locale-data/en";
+
 import React from "react";
-import { View } from "react-native";
+import { Text, View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { IntlProvider } from "react-intl";
 import ArticleSummary from "./article-summary";
 import props from "./fixtures/article.json";
 
 const story = m =>
-  <IntlProvider locale="en">
+  <IntlProvider textComponent={Text} locale="en">
     <View style={{ padding: 20 }}>{m}</View>
   </IntlProvider>;
 

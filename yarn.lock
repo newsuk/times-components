@@ -4592,6 +4592,10 @@ intl-relativeformat@^1.3.0:
   dependencies:
     intl-messageformat "1.3.0"
 
+intl@1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/intl/-/intl-1.2.5.tgz#82244a2190c4e419f8371f5aa34daa3420e2abde"
+
 invariant@2.x.x, invariant@^2.1.1, invariant@^2.2.0, invariant@^2.2.1, invariant@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.2.tgz#9e1f56ac0acdb6bf303306f338be3b204ae60360"
@@ -5339,9 +5343,9 @@ left-pad@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/left-pad/-/left-pad-1.1.3.tgz#612f61c033f3a9e08e939f1caebeea41b6f3199a"
 
-lerna@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/lerna/-/lerna-2.0.0.tgz#49a72fe70e06aebfd7ea23efb2ab41abe60ebeea"
+lerna@2.0.0-rc.5:
+  version "2.0.0-rc.5"
+  resolved "https://registry.yarnpkg.com/lerna/-/lerna-2.0.0-rc.5.tgz#b59d168caaac6e3443078c1bce194208c9aa3090"
   dependencies:
     async "^1.5.0"
     chalk "^1.1.1"
@@ -7113,13 +7117,7 @@ react-inspector@^2.0.0, react-inspector@^2.1.1:
     babel-runtime "^6.23.0"
     is-dom "^1.0.9"
 
-react-intl-native@2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/react-intl-native/-/react-intl-native-2.1.1.tgz#75a9bf30587464fd05cad8feaa4ba830d0815135"
-  dependencies:
-    react-intl "^2.1.2"
-
-react-intl@^2.1.2, react-intl@^2.3.0:
+react-intl@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-2.3.0.tgz#e1df6af5667fdf01cbe4aab20e137251e2ae5142"
   dependencies:

@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { FormattedDate } from "react-intl-native";
+import { FormattedDate } from "react-intl";
 import PropTypes from "prop-types";
 import Markup from "@times-components/markup";
 
@@ -48,8 +48,9 @@ function renderPublicationDetails(date, publication, style) {
         month="long"
         day="numeric"
         year="numeric"
-        value={new Date(date)}
-      />, {publication}
+        value={date}
+      />
+      <Text>, {publication}</Text>
     </Text>
   );
 }
@@ -63,7 +64,7 @@ const ArticleSummary = props => {
       <Text style={styles.label}>{labelText}</Text>
       <Text style={styles.headline}>{headline}</Text>
       <Text style={styles.text}>
-        <Markup ast={text} />
+        <Markup ast={text} wrapIn="span" />
       </Text>
       {renderPublicationDetails(date, publication, styles)}
     </View>

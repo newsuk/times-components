@@ -52,7 +52,11 @@ exports[`renders a snapshot 1`] = `
       }
     }
   >
-    <View />
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    />
   </Text>
 </View>
 `;
@@ -109,7 +113,11 @@ exports[`renders a snapshot with content 1`] = `
       }
     }
   >
-    <View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -139,7 +147,7 @@ exports[`renders a snapshot with content 1`] = `
       >
         It came two days after Britain’s most senior police officer reassured the families of three runaway schoolgirls from east London that they would not be prosecuted if they returned
       </Text>
-    </View>
+    </Text>
   </Text>
   <Text
     accessible={true}
@@ -153,9 +161,21 @@ exports[`renders a snapshot with content 1`] = `
       }
     }
   >
-    Saturday July 01 2017
-    , 
-    The Sunday Times
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      Saturday, July 1, 2017
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      , 
+      The Sunday Times
+    </Text>
   </Text>
 </View>
 `;

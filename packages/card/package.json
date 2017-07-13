@@ -55,6 +55,7 @@
   "dependencies": {
     "@times-components/article-summary": "0.0.1",
     "@times-components/image": "0.0.1",
+    "intl": "1.2.5",
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",
     "react-intl": "^2.3.0",
