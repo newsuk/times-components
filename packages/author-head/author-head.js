@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   },
   title: {
     padding: 8,
-    fontFamily: "TimesDigitalW04-RegularSC"
+    fontFamily: "TimesDigital-RegularSC"
   },
   twitter: {
     padding: 8,
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     color: "#069"
   },
   bio: {
-    fontFamily: "TimesDigital-Regular-W04",
+    fontFamily: "TimesDigital-Regular",
     textAlign: "center",
     fontSize: 15,
     lineHeight: 25,

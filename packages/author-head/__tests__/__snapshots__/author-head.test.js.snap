@@ -52,7 +52,7 @@ exports[`renders a snapshot 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontFamily": "TimesDigital-RegularSC",
           "padding": 8,
         }
       }
@@ -85,7 +85,7 @@ exports[`renders a snapshot 1`] = `
       style={
         Object {
           "color": "#333",
-          "fontFamily": "TimesDigital-Regular-W04",
+          "fontFamily": "TimesDigital-Regular",
           "fontSize": 15,
           "lineHeight": 25,
           "padding": 8,
@@ -193,7 +193,7 @@ exports[`renders a snapshot with data 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontFamily": "TimesDigital-RegularSC",
           "padding": 8,
         }
       }
@@ -234,7 +234,7 @@ exports[`renders a snapshot with data 1`] = `
       style={
         Object {
           "color": "#333",
-          "fontFamily": "TimesDigital-Regular-W04",
+          "fontFamily": "TimesDigital-Regular",
           "fontSize": 15,
           "lineHeight": 25,
           "padding": 8,
