@@ -4,8 +4,8 @@ import React, { Component } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 
-import TestButton from "./TestButton";
-import BrightcoveVideo from "../../brightcove-video";
+import Button from "./button";
+import BrightcoveVideo from "../brightcove-video";
 
 class VideoWithExternalControls extends Component {
   render() {
@@ -17,15 +17,15 @@ class VideoWithExternalControls extends Component {
           videoId={this.props.videoId}
           accountId={this.props.accountId}
         />
-        <TestButton
+        <Button
           buttonText="play"
-          onClick={() => {
+          onPress={() => {
             this.bcVideo.play();
           }}
         />
-        <TestButton
+        <Button
           buttonText="pause"
-          onClick={() => {
+          onPress={() => {
             this.bcVideo.pause();
           }}
         />

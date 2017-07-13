@@ -4,8 +4,8 @@ import React, { Component } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 
-import TestButton from "./TestButton";
-import BrightcoveVideo from "../../brightcove-video";
+import Button from "./button";
+import BrightcoveVideo from "../brightcove-video";
 
 class VideoAdder extends Component {
   constructor(props) {
@@ -45,9 +45,9 @@ class VideoAdder extends Component {
     return (
       <View>
         {this.getVideos(this.state.videoCount)}
-        <TestButton
+        <Button
           buttonText="click here to add a video"
-          onClick={() => {
+          onPress={() => {
             this.setState({ videoCount: this.state.videoCount + 1 });
           }}
         />

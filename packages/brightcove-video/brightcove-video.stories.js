@@ -6,8 +6,8 @@ import { storiesOf } from "@storybook/react-native";
 import { decorateAction } from "@storybook/addon-actions";
 
 import BrightcoveVideo from "./brightcove-video";
-import VideoAdder from "./__tests__/fixtures/VideoAdder";
-import VideoWithExternalControls from "./__tests__/fixtures/VideoWithExternalControls";
+import VideoAdder from "./fixtures/video-adder";
+import VideoWithExternalControls from "./fixtures/video-with-external-controls";
 
 const policyId =
   "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U";

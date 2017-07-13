@@ -37,6 +37,16 @@ class BrightcoveVideo extends Component {
     this.props.onError(err);
   }
 
+  play() {
+    /* eslint class-methods-use-this: 0 */
+    /* not implemented */
+  }
+
+  pause() {
+    /* eslint class-methods-use-this: 0 */
+    /* not implemented */
+  }
+
   render() {
     if (this.state.errors.length) {
       const errorItems = this.state.errors.map(error =>
