@@ -1,8 +1,8 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-import AdComposer from "../ad-composer";
-import Ad from "../ad";
+import AdComposer from "../ad-composer.web";
+import Ad from "../ad.web";
 
 describe("AdComposer", () => {
   it("renders no ad slots", () => {
