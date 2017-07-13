@@ -7,6 +7,10 @@ import { pbjs as pbjsConfig } from "./config";
 const { width } = Dimensions.get("window");
 
 class Ad extends Component {
+  static hasDifferentOrigin(url, baseUrl) {
+    return url && url.indexOf(baseUrl) === -1 && url.indexOf("://") > -1;
+  }
+
   static onOriginChange(url) {
     Linking.canOpenURL(url)
       .then(supported => {
@@ -37,6 +41,21 @@ class Ad extends Component {
     super(props);
     this.config = getSlotConfig(props.section, props.code, width);
     this.maxHeight = Ad.getMaxHeight(this.config.sizes);
+    this.viewBorder = 10;
+
+    this.handleOriginChange = this.handleOriginChange.bind(this);
+    this.handleNavigationChange = this.handleNavigationChange.bind(this);
+  }
+
+  handleOriginChange(url) {
+    if (Ad.hasDifferentOrigin(url, this.props.baseUrl)) {
+      this.webview.stopLoading();
+      Ad.onOriginChange(url);
+    }
+  }
+
+  handleNavigationChange(navState) {
+    this.handleOriginChange(navState.url);
   }
 
   render() {
@@ -137,10 +156,13 @@ class Ad extends Component {
 
     return (
       <WebView
+        ref={ref => {
+          this.webview = ref;
+        }}
         source={{ html, baseUrl: this.props.baseUrl }}
-        style={[this.props.style, { height: this.maxHeight + 10 }]}
+        style={[this.props.style, { height: this.maxHeight + this.viewBorder }]}
         baseUrl={this.props.baseUrl}
-        onOriginChange={Ad.onOriginChange}
+        onNavigationStateChange={this.handleNavigationChange}
       />
     );
   }
