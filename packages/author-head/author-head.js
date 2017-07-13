@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     color: "#069"
   },
   bio: {
-    fontFamily: "TimesDigital-Regular",
+    fontFamily: "TimesDigital-Regular-W04",
     textAlign: "center",
     fontSize: 15,
     lineHeight: 25,
