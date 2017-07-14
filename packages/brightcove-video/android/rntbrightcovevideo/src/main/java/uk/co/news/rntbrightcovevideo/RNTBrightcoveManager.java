@@ -1,11 +1,19 @@
 package uk.co.news.rntbrightcovevideo;
 
+import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
+import com.facebook.react.common.MapBuilder;
 
+import java.util.Map;
+
+import javax.annotation.Nullable;
 
 public class RNTBrightcoveManager extends SimpleViewManager<RNTBrightcoveView> {
+  private static final int PLAY = 1;
+  private static final int PAUSE = 2;
+
   public static final String REACT_CLASS = "RNTBrightcove";
   private RNTBrightcoveView mView;
 
@@ -27,6 +35,26 @@ public class RNTBrightcoveManager extends SimpleViewManager<RNTBrightcoveView> {
   @ReactProp(name = "policyId")
   public void setPolicyId(RNTBrightcoveView view, String policyId) {
     mView.setPolicyId(policyId);
+  }
+
+
+  @Override
+  public void receiveCommand(RNTBrightcoveView view, int commandId, @Nullable ReadableArray args) {
+    switch (commandId) {
+      case PLAY:
+        view.start();
+        break;
+
+      case PAUSE:
+        view.pause();
+        break;
+    }
+  }
+
+  @Override
+  @Nullable
+  public Map<String, Integer> getCommandsMap() {
+    return MapBuilder.of("play", PLAY, "pause", PAUSE);
   }
 
   @Override
