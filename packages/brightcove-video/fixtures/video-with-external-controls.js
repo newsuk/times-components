@@ -13,7 +13,7 @@ class VideoWithExternalControls extends Component {
       <View>
         <BrightcoveVideo
           ref={ref => (this.bcVideo = ref)}
-          policyId={this.props.policyId}
+          policyKey={this.props.policyKey}
           videoId={this.props.videoId}
           accountId={this.props.accountId}
         />
@@ -37,7 +37,7 @@ class VideoWithExternalControls extends Component {
 VideoWithExternalControls.propTypes = {
   videoId: PropTypes.string.isRequired,
   accountId: PropTypes.string.isRequired,
-  policyId: PropTypes.string.isRequired
+  policyKey: PropTypes.string.isRequired
 };
 
 export default VideoWithExternalControls;
