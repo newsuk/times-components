@@ -4,7 +4,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import { decorateAction } from "@storybook/addon-actions";
 
-import Error from "./error";
+import Error from "./error-view";
 import BrightcoveVideo from "../brightcove-video/brightcove-video";
 
 const policyId =
@@ -14,7 +14,7 @@ const videoId = "4084164751001";
 
 const firstArgJSONAction = decorateAction([args => [JSON.stringify(args[0])]]);
 
-storiesOf("Error", module)
+storiesOf("ErrorView", module)
   .add("Working Video", () =>
     <Error onError={firstArgJSONAction("error")} width={320} height={180}>
       <BrightcoveVideo

@@ -4,7 +4,7 @@ import React from "react";
 import { Text } from "react-native";
 import renderer from "react-test-renderer";
 
-import Error from "../error";
+import Error from "../error-view";
 import ErroringComponent from "./erroring";
 import ChangingComponent from "./changing";
 

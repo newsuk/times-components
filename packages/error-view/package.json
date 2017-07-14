@@ -1,8 +1,8 @@
 {
-  "name": "@times-components/error",
+  "name": "@times-components/error-view",
   "version": "0.0.1",
   "description": "Handles errors",
-  "main": "error.js",
+  "main": "error-view.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
