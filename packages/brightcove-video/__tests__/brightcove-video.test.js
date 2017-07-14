@@ -3,7 +3,7 @@
 import "react-native";
 import React, { Component } from "react";
 import renderer from "react-test-renderer";
-import BrightcoveVideo from "../brightcove-video.native";
+import BrightcoveVideo from "../brightcove-video";
 
 describe("brightcove-video native component", () => {
   it("renders correctly", () => {
