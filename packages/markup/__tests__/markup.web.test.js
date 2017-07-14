@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
 import runTests from "./test-helper";
-import Markup from "../markup.web";
+import Markup, { builder } from "../markup.web";
 
-describe("Markup Web", runTests(Markup));
+describe("Markup Web", runTests(Markup, builder));

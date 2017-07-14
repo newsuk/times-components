@@ -1,5 +1,5 @@
 import React from "react";
-import Markup from "./markup-builder";
+import Markup, { builder as mb } from "./markup-builder";
 import propTypes from "./markup-proptype";
 
 const tagMap = new Map([
@@ -57,3 +57,5 @@ const MarkupWeb = ({ ast, wrapIn }) =>
 MarkupWeb.propTypes = propTypes;
 
 export default MarkupWeb;
+
+export const builder = mb(tagMap);

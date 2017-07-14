@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-import "react-native";
+import { Text } from "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 
@@ -16,7 +16,7 @@ const bio = require("../fixtures/bio.json").fixture;
 const script = require("../fixtures/script.json").fixture;
 const image = require("../fixtures/image.json").fixture;
 
-export default Markup => () => {
+export default (Markup, builder) => () => {
   it("renders an empty component", () => {
     const ast = [];
     const tree = renderer.create(<Markup ast={ast} />).toJSON();
@@ -74,6 +74,16 @@ export default Markup => () => {
 
   it("renders wrapped tags", () => {
     const tree = renderer.create(<Markup ast={bio} wrapIn="p" />).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders multiple children", () => {
+    const tree = renderer
+      .create(
+        <Text style={{ color: "red" }}>{builder({ ast: multiParagraph })}</Text>
+      )
+      .toJSON();
 
     expect(tree).toMatchSnapshot();
   });
