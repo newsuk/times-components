@@ -52,7 +52,7 @@ storiesOf("BrightcoveVideo", module)
     </View>
   )
   .add("Lazy load players", () =>
-    <VideoAdder policyId={policyId} videoId={videoId} accountId={accountId} />
+    <VideoAdder policyKey={policyKey} videoId={videoId} accountId={accountId} />
   )
   .add("With different videos", () =>
     <View>
@@ -60,7 +60,6 @@ storiesOf("BrightcoveVideo", module)
         width={320}
         height={200}
         policyKey={policyKey}
-        videoId={videoId}
         accountId={accountId}
       />
       <BrightcoveVideo
@@ -102,7 +101,7 @@ storiesOf("BrightcoveVideo", module)
   )
   .add("With external controls", () =>
     <VideoWithExternalControls
-      policyId={policyId}
+      policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
     />
