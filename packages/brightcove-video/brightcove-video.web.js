@@ -157,6 +157,18 @@ class BrightcoveVideo extends Component {
     }
   }
 
+  play() {
+    if (this.player) {
+      this.player.play();
+    }
+  }
+
+  pause() {
+    if (this.player) {
+      this.player.pause();
+    }
+  }
+
   render() {
     if (this.state.errors.length) {
       /* eslint jsx-a11y/media-has-caption: "off" */

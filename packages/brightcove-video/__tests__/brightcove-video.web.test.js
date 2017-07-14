@@ -368,6 +368,66 @@ describe("brightcove-video web component", () => {
           ReactDOM.render(component, reactWrapper);
           ReactDOM.unmountComponentAtNode(reactWrapper);
         });
+
+        it("will call player's 'play' method if play is called", done => {
+          dummyPlayer.play = jest.fn();
+
+          let brightcoveVideo;
+
+          const component = (
+            <BrightcoveVideo
+              accountId="57838016001"
+              videoId="[X]"
+              ref={ref => {
+                brightcoveVideo = ref;
+              }}
+            />
+          );
+
+          ReactDOM.render(component, reactWrapper);
+
+          setTimeout(() => {
+            dummyScript.onload();
+
+            setTimeout(() => {
+              brightcoveVideo.play();
+
+              expect(dummyPlayer.play.mock.calls).toHaveLength(1);
+
+              done();
+            }, 50);
+          }, 50);
+        });
+
+        it("will call player's 'pause' method if pause is called", done => {
+          dummyPlayer.pause = jest.fn();
+
+          let brightcoveVideo;
+
+          const component = (
+            <BrightcoveVideo
+              accountId="57838016001"
+              videoId="[X]"
+              ref={ref => {
+                brightcoveVideo = ref;
+              }}
+            />
+          );
+
+          ReactDOM.render(component, reactWrapper);
+
+          setTimeout(() => {
+            dummyScript.onload();
+
+            setTimeout(() => {
+              brightcoveVideo.pause();
+
+              expect(dummyPlayer.pause.mock.calls).toHaveLength(1);
+
+              done();
+            }, 50);
+          }, 50);
+        });
       });
     });
   });

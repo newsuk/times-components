@@ -111,6 +111,14 @@
   self.onChange(@{@"playerStatus": _playerStatus, @"playheadPosition": _playheadPosition});
 }
 
+- (void)playVideo {
+  [_playbackController play];
+}
+ 
+- (void)pauseVideo {
+  [_playbackController pause];
+}
+
 - (void)emitError:(NSError *)error {
   if (!self.onIOSError) {
     return;

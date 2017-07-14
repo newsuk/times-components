@@ -1,14 +1,30 @@
 import React, { Component } from "react";
-import { requireNativeComponent, View, Text } from "react-native";
+import {
+  NativeModules,
+  findNodeHandle,
+  Platform,
+  requireNativeComponent,
+  View,
+  Text
+} from "react-native";
 
 import propTypes from "./brightcove-video.proptypes";
 import defaults from "./brightcove-video.defaults";
 
-const RNTBrightcove = requireNativeComponent("RNTBrightcove", null);
+const nativeClassName = "RNTBrightcove";
+const RNTBrightcove = requireNativeComponent(nativeClassName, null);
 
 class BrightcoveVideo extends Component {
   static getNativeBrightcoveComponent() {
     return RNTBrightcove;
+  }
+
+  static uiManagerCommand(name) {
+    return NativeModules.UIManager[nativeClassName].Commands[name];
+  }
+
+  static brightcoveManagerCommand(name) {
+    return NativeModules[`${nativeClassName}Manager`][name];
   }
 
   constructor(props) {
@@ -30,11 +46,45 @@ class BrightcoveVideo extends Component {
     this.emitError(evt.nativeEvent);
   }
 
+  getNodeHandle() {
+    return findNodeHandle(this.bcPlayer);
+  }
+
+  play() {
+    this.runNativeCommand("play", []);
+  }
+
+  pause() {
+    this.runNativeCommand("pause", []);
+  }
+
   emitError(err) {
     const errors = [].concat(this.state.errors);
     errors.push(err);
     this.setState({ errors });
     this.props.onError(err);
+  }
+
+  runNativeCommand(name, args) {
+    switch (Platform.OS) {
+      case "android":
+        NativeModules.UIManager.dispatchViewManagerCommand(
+          this.getNodeHandle(),
+          BrightcoveVideo.uiManagerCommand(name),
+          args
+        );
+        break;
+
+      case "ios":
+        BrightcoveVideo.brightcoveManagerCommand(name)(
+          this.getNodeHandle(),
+          ...args
+        );
+        break;
+
+      default:
+        break;
+    }
   }
 
   render() {
@@ -62,6 +112,9 @@ class BrightcoveVideo extends Component {
 
     return (
       <NativeBrightcove
+        ref={ref => {
+          this.bcPlayer = ref;
+        }}
         style={{ height: this.props.height, width: this.props.width }}
         policyId={this.props.policyId}
         accountId={this.props.accountId}
