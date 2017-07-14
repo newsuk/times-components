@@ -58,7 +58,7 @@
     "intl": "1.2.5",
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",
-    "react-intl": "^2.3.0",
+    "react-intl": "2.3.0",
     "react-native-web": "0.0.97"
   },
   "peerDependencies": {

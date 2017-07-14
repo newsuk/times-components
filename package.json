@@ -38,7 +38,7 @@
     "packages:publish": "lerna publish --conventional-commits",
     "update-deps": "lerna bootstrap --hoist --npm-client=yarn --concurrency=1",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
-    "postinstall": "npm run update-deps --silent"
+    "postinstall": "npm run update-deps --silent && rm -f node_modules/intl/.babelrc"
   },
   "pre-commit": [
     "precommit-msg",
@@ -104,7 +104,7 @@
     "lcov-result-merger": "1.2.0",
     "lerna": "2.0.0",
     "lint-staged": "4.0.0",
-    "node-fetch": "^1.7.1",
+    "node-fetch": "1.7.1",
     "pre-commit": "1.2.2",
     "prettier": "1.4.2",
     "react": "16.0.0-alpha.6",
@@ -117,7 +117,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "babel-plugin-transform-class": "^0.3.0",
+    "babel-plugin-transform-class": "0.3.0",
     "dashify": "0.2.2",
     "global": "4.3.2",
     "handlebars": "4.0.10",
