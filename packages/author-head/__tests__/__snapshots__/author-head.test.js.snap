@@ -1,0 +1,319 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "transparent",
+      "display": "flex",
+      "paddingBottom": 50,
+    }
+  }
+>
+  <View
+    accessibilityRole="banner"
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F9F8F3",
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": 50,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="1"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 30,
+          "fontWeight": "400",
+          "lineHeight": 30,
+          "padding": 8,
+        }
+      }
+    >
+      
+    </Text>
+    <Text
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="2"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontFamily": "TimesDigital-RegularSC",
+          "padding": 8,
+        }
+      }
+    >
+      
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#069",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 15,
+          "padding": 8,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      />
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#333",
+          "fontFamily": "TimesDigital-Regular",
+          "fontSize": 15,
+          "lineHeight": 25,
+          "padding": 8,
+          "textAlign": "center",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      />
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "bottom": 0,
+        "height": 100,
+        "position": "absolute",
+        "width": 100,
+      }
+    }
+  >
+    <View
+      onLayout={[Function]}
+    >
+      <Image
+        onError={[Function]}
+        source={
+          Object {
+            "uri": "",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "borderColor": "#FFF",
+              "borderRadius": 50,
+              "borderWidth": 5,
+              "height": 100,
+              "width": 100,
+            },
+            Object {
+              "height": 0,
+              "width": 0,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders a snapshot with data 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "transparent",
+      "display": "flex",
+      "paddingBottom": 50,
+    }
+  }
+>
+  <View
+    accessibilityRole="banner"
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F9F8F3",
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": 50,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="1"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 30,
+          "fontWeight": "400",
+          "lineHeight": 30,
+          "padding": 8,
+        }
+      }
+    >
+      Carol Midgley
+    </Text>
+    <Text
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="2"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontFamily": "TimesDigital-RegularSC",
+          "padding": 8,
+        }
+      }
+    >
+      columnist
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#069",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 15,
+          "padding": 8,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        onPress={[Function]}
+        style={
+          Object {
+            "color": "blue",
+          }
+        }
+      >
+        @carolmidgley
+      </Text>
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#333",
+          "fontFamily": "TimesDigital-Regular",
+          "fontSize": 15,
+          "lineHeight": 25,
+          "padding": 8,
+          "textAlign": "center",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        Carol Midgley joined 
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "fontStyle": "italic",
+            }
+          }
+        >
+          The Times
+        </Text>
+         in 1996, and won feature writer of the year in 2004. Find her Wednesday column in 
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "fontStyle": "italic",
+            }
+          }
+        >
+          Times2
+        </Text>
+         each week and a weekly comment piece on Fridays.
+      </Text>
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "bottom": 0,
+        "height": 100,
+        "position": "absolute",
+        "width": 100,
+      }
+    }
+  >
+    <View
+      onLayout={[Function]}
+    >
+      <Image
+        onError={[Function]}
+        source={
+          Object {
+            "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "borderColor": "#FFF",
+              "borderRadius": 50,
+              "borderWidth": 5,
+              "height": 100,
+              "width": 100,
+            },
+            Object {
+              "height": 0,
+              "width": 0,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
