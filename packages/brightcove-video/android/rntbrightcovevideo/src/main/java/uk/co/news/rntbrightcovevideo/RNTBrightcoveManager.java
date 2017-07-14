@@ -1,5 +1,6 @@
 package uk.co.news.rntbrightcovevideo;
 
+import com.facebook.common.internal.ImmutableMap;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
@@ -15,6 +16,8 @@ public class RNTBrightcoveManager extends SimpleViewManager<RNTBrightcoveView> {
   private static final int PAUSE = 2;
 
   public static final String REACT_CLASS = "RNTBrightcove";
+  private static final String PLAY_KEY = "play";
+  private static final String PAUSE_KEY = "pause";
   private RNTBrightcoveView mView;
 
   @Override
@@ -54,7 +57,7 @@ public class RNTBrightcoveManager extends SimpleViewManager<RNTBrightcoveView> {
   @Override
   @Nullable
   public Map<String, Integer> getCommandsMap() {
-    return MapBuilder.of("play", PLAY, "pause", PAUSE);
+    return ImmutableMap.of(PLAY_KEY, PLAY, PAUSE_KEY, PAUSE);
   }
 
   @Override
