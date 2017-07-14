@@ -1,71 +1,66 @@
 import React, { Component } from "react";
+import { View, Text, StyleSheet, ViewPropTypes } from "react-native";
 import PropTypes from "prop-types";
-import { View, Text } from "react-native";
 
-class ErrorComponent extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { errors: [] };
-    this.onError = this.onError.bind(this);
+const styles = StyleSheet.create({
+  text: { color: "white" },
+  background: {
+    backgroundColor: "red"
   }
+});
 
-  onError(err) {
-    const errors = [...this.state.errors, err];
-    this.setState({ errors });
-    this.props.onError(err);
-  }
+const ErrorView = ({ style, errors }) => {
+  const errorItems = errors.map(error =>
+    <Text key={`${error.code}_${error.message}`} style={styles.text}>
+      {error.code} - {error.message}
+    </Text>
+  );
 
-  getErrorStyles() {
-    const errorStyles = {
-      backgroundColor: "red",
-      width: this.props.width,
-      height: this.props.height
-    };
+  return (
+    <View style={[style, styles.background]}>
+      {errorItems}
+    </View>
+  );
+};
+const errorPropType = PropTypes.shape({
+  code: PropTypes.string,
+  message: PropTypes.string
+});
+ErrorView.defaultProps = { style: {} };
+ErrorView.propTypes = {
+  style: ViewPropTypes.style,
+  errors: PropTypes.arrayOf(errorPropType).isRequired
+};
+export default ErrorView;
 
-    return errorStyles;
-  }
+export const addErrorHandler = WrappedComponent => {
+  class ErrorHandler extends Component {
+    constructor(props) {
+      super(props);
+      this.state = { errors: [] };
+    }
+    render() {
+      const { errors } = this.state;
+      const { onError, style, ...passThroughProps } = this.props;
 
-  render() {
-    if (this.state.errors.length) {
-      const errorItems = this.state.errors.map(error =>
-        <Text key={`${error.code}_${error.message}`} style={{ color: "white" }}>
-          {error.code} - {error.message}
-        </Text>
-      );
-
+      if (errors.length) {
+        return <ErrorView style={style} errors={errors} />;
+      }
       return (
-        <View style={this.getErrorStyles()}>
-          {errorItems}
-        </View>
+        <WrappedComponent
+          style={style}
+          onError={err => {
+            this.setState(prevState => ({
+              errors: [...prevState.errors, err]
+            }));
+            // bubble up errors if parent is listening
+            if (onError) onError(err);
+          }}
+          {...passThroughProps}
+        />
       );
     }
-
-    const childrenWithProps = React.Children.map(this.props.children, child =>
-      React.cloneElement(child, {
-        onChange: this.props.onChange,
-        onError: this.onError,
-        height: this.props.height,
-        width: this.props.width
-      })
-    );
-
-    return <View>{childrenWithProps}</View>;
   }
-}
-
-ErrorComponent.propTypes = {
-  children: React.PropTypes.element.isRequired,
-  onChange: PropTypes.func,
-  onError: PropTypes.func,
-  height: PropTypes.number,
-  width: PropTypes.number
+  ErrorHandler.propTypes = WrappedComponent.propTypes;
+  return ErrorHandler;
 };
-
-ErrorComponent.defaultProps = {
-  onChange: () => {},
-  onError: () => {},
-  height: 180,
-  width: 320
-};
-
-export default ErrorComponent;

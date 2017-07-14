@@ -4,27 +4,39 @@ import React from "react";
 import { Text } from "react-native";
 import renderer from "react-test-renderer";
 
-import Error from "../error-view";
+import ErrorView, { addErrorHandler } from "../error-view";
 import ErroringComponent from "./erroring";
 import ChangingComponent from "./changing";
 
-it("renders a simple component with no errors", () => {
+it("renders an ErrorView", () => {
   const tree = renderer
-    .create(<Error><Text>Just a test</Text></Error>)
+    .create(<ErrorView errors={[{code: "code", message: "message"}]} />)
     .toJSON();
 
   expect(tree).toMatchSnapshot();
 });
 
-it("renders the errors from it's child", () => {
-  const tree = renderer.create(<Error><ErroringComponent /></Error>).toJSON();
+it("renders a simple component with no errors", () => {
+  const ErrorText = addErrorHandler(Text);
+  const tree = renderer
+    .create(<ErrorText>Just a test</ErrorText>)
+    .toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders the errors from its child", () => {
+  const WrappedErroringComponent = addErrorHandler(ErroringComponent);
+  const tree = renderer.create(<WrappedErroringComponent />).toJSON();
 
   expect(tree).toMatchSnapshot();
 });
 
 it("propagates error correctly", done => {
+  const WrappedErroringComponent = addErrorHandler(ErroringComponent);
+
   renderer.create(
-    <Error
+    <WrappedErroringComponent
       onError={err => {
         expect(err).toMatchObject({
           code: "[ERROR_CODE]",
@@ -33,15 +45,15 @@ it("propagates error correctly", done => {
 
         done();
       }}
-    >
-      <ErroringComponent />
-    </Error>
+    />
   );
 });
 
 it("propagates change correctly", done => {
+  const WrappedChangingComponent = addErrorHandler(ChangingComponent);
+
   renderer.create(
-    <Error
+    <WrappedChangingComponent
       onChange={state => {
         expect(state).toMatchObject({
           state: "boiled"
@@ -49,16 +61,6 @@ it("propagates change correctly", done => {
 
         done();
       }}
-    >
-      <ChangingComponent />
-    </Error>
-  );
-});
-
-it("does not have to have a change handler", () => {
-  renderer.create(
-    <Error>
-      <ChangingComponent />
-    </Error>
+    />
   );
 });
