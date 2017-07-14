@@ -6,7 +6,7 @@ exports[`brightcove-video native component renders correctly 1`] = `
   onChange={[Function]}
   onIOSError={[Function]}
   onLoadingError={[Function]}
-  policyId={undefined}
+  policyKey="[POLICY_KEY]"
   style={
     Object {
       "height": 180,
