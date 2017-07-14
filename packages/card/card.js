@@ -11,6 +11,9 @@ const getStyles = isHorizontal =>
       display: "flex",
       flexDirection: isHorizontal ? "row" : "column"
     },
+    image: {
+      flex: 1
+    },
     imageContainer: {
       flexGrow: isHorizontal ? 2 : 1,
       flexBasis: isHorizontal ? 0 : 256
@@ -43,7 +46,7 @@ class CardComponent extends React.Component {
     return (
       <View onLayout={this.handleLayout} style={styles.container}>
         <View style={styles.imageContainer}>
-          <Image source={image} />
+          <Image style={styles.image} source={image} />
         </View>
         <View style={styles.summaryContainer}>
           <ArticleSummary

@@ -23,8 +23,8 @@ const styles = StyleSheet.create({
 
 storiesOf("Image", module)
   .add("Adjusted to parent view size", () =>
-    <View style={styles.container}>
-      <Image source={exampleImage} />
+    <View style={[styles.container]}>
+      <Image style={{ resizeMode: "center" }} source={exampleImage} />
     </View>
   )
   .add("Resized to half of full width, keeping aspect ratio", () =>
