@@ -1,14 +1,30 @@
 import React, { Component } from "react";
-import { requireNativeComponent, View, Text } from "react-native";
+import {
+  NativeModules,
+  findNodeHandle,
+  Platform,
+  requireNativeComponent,
+  View,
+  Text
+} from "react-native";
 
 import propTypes from "./brightcove-video.proptypes";
 import defaults from "./brightcove-video.defaults";
 
-const RNTBrightcove = requireNativeComponent("RNTBrightcove", null);
+const nativeClassName = "RNTBrightcove";
+const RNTBrightcove = requireNativeComponent(nativeClassName, null);
 
 class BrightcoveVideo extends Component {
   static getNativeBrightcoveComponent() {
     return RNTBrightcove;
+  }
+
+  static uiManagerCommand(name) {
+    return NativeModules.UIManager[nativeClassName].Commands[name];
+  }
+
+  static brightcoveManagerCommand(name) {
+    return NativeModules[`${nativeClassName}Manager`][name];
   }
 
   constructor(props) {
@@ -30,6 +46,18 @@ class BrightcoveVideo extends Component {
     this.emitError(evt.nativeEvent);
   }
 
+  getNodeHandle() {
+    return findNodeHandle(this.bcPlayer);
+  }
+
+  play() {
+    this.runNativeCommand("play", []);
+  }
+
+  pause() {
+    this.runNativeCommand("pause", []);
+  }
+
   emitError(err) {
     const errors = [].concat(this.state.errors);
     errors.push(err);
@@ -37,15 +65,25 @@ class BrightcoveVideo extends Component {
     this.props.onError(err);
   }
 
-  play() {
-    if (this.bcPlayer.play) {
-      this.bcPlayer.play();
-    }
-  }
+  runNativeCommand(name, args) {
+    switch (Platform.OS) {
+      case "android":
+        NativeModules.UIManager.dispatchViewManagerCommand(
+          this.getNodeHandle(),
+          BrightcoveVideo.uiManagerCommand(name),
+          args
+        );
+        break;
 
-  pause() {
-    if (this.bcPlayer.pause) {
-      this.bcPlayer.pause();
+      case "ios":
+        BrightcoveVideo.brightcoveManagerCommand(name)(
+          this.getNodeHandle(),
+          ...args
+        );
+        break;
+
+      default:
+        break;
     }
   }
 
