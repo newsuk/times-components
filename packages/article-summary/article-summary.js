@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { FormattedDate } from "react-intl";
 import PropTypes from "prop-types";
-import Markup from "@times-components/markup";
+import Markup, { builder } from "@times-components/markup";
 
 const styles = StyleSheet.create({
   container: {},
@@ -56,7 +56,7 @@ function renderPublicationDetails(date, publication, style) {
 }
 
 const ArticleSummary = props => {
-  const { label, headline, text, date, publication } = props;
+  const { label, headline, text: ast, date, publication } = props;
 
   const labelText = label.toUpperCase();
   return (
@@ -64,7 +64,7 @@ const ArticleSummary = props => {
       <Text style={styles.label}>{labelText}</Text>
       <Text style={styles.headline}>{headline}</Text>
       <Text style={styles.text}>
-        <Markup ast={text} wrapIn="span" />
+        {builder({ ast })}
       </Text>
       {renderPublicationDetails(date, publication, styles)}
     </View>
