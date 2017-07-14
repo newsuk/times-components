@@ -67,6 +67,11 @@
     [self setup];
 
     BCOVPUIBasicControlView *controlsView = [BCOVPUIBasicControlView basicControlViewWithVODLayout];
+    controlsView.playbackButton.accessibilityIdentifier = @"play";
+    controlsView.jumpBackButton.accessibilityIdentifier = @"jump-back";
+    controlsView.currentTimeLabel.accessibilityIdentifier = @"current-time";
+    controlsView.durationLabel.accessibilityIdentifier = @"duration";
+    controlsView.screenModeButton.accessibilityIdentifier = @"screen-mode";
 
     BCOVPUIPlayerViewOptions *options = [[BCOVPUIPlayerViewOptions alloc] init];
 
