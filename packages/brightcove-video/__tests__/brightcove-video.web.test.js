@@ -399,7 +399,7 @@ describe("brightcove-video web component", () => {
           }, 50);
         });
 
-        it("will call player's 'pause' method if play is called", done => {
+        it("will call player's 'pause' method if pause is called", done => {
           dummyPlayer.pause = jest.fn();
 
           let brightcoveVideo;
