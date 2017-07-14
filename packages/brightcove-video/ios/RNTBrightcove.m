@@ -114,8 +114,7 @@
 - (void)playVideo {
   [_playbackController play];
 }
-
-
+ 
 - (void)pauseVideo {
   [_playbackController pause];
 }
