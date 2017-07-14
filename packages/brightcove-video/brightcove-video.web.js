@@ -2,7 +2,6 @@
 /* globals videojs, bc */
 
 import React, { Component } from "react";
-import { View } from "react-native";
 
 import propTypes from "./brightcove-video.proptypes";
 import defaults from "./brightcove-video.defaults";
@@ -32,6 +31,8 @@ class BrightcoveVideo extends Component {
     super(props);
 
     index += 1;
+
+    BrightcoveVideo.globalErrors.forEach(this.props.onError);
 
     this.state = {
       id: `${props.videoId}-${props.accountId}-${index}`,
@@ -69,7 +70,7 @@ class BrightcoveVideo extends Component {
 
         BrightcoveVideo.globalErrors.push(uriErr);
 
-        this.emitError(uriErr);
+        this.props.onError(uriErr);
       };
 
       BrightcoveVideo.appendScript(s);
@@ -85,7 +86,7 @@ class BrightcoveVideo extends Component {
   }
 
   onError(player) {
-    this.emitError(player.error());
+    this.props.onError(player.error());
   }
 
   onPlay(player) {
@@ -129,13 +130,6 @@ class BrightcoveVideo extends Component {
     this.props.onChange(this.state);
   }
 
-  emitError(err) {
-    const errors = [].concat(this.state.errors);
-    errors.push(err);
-    this.setState({ errors });
-    this.props.onError(err);
-  }
-
   initVideoJS(id) {
     const player = videojs(id);
     const handler = BrightcoveVideo.handlePlayerReady.bind(player, this);
@@ -170,28 +164,7 @@ class BrightcoveVideo extends Component {
   }
 
   render() {
-    if (this.state.errors.length) {
-      /* eslint jsx-a11y/media-has-caption: "off" */
-
-      const errorItems = this.state.errors.map(error =>
-        <li key={`${error.code}_${error.message}`} style={{ color: "white" }}>
-          {error.code} - {error.message}
-        </li>
-      );
-
-      return (
-        <View
-          style={{
-            width: this.props.width,
-            height: this.props.height,
-            backgroundColor: "red"
-          }}
-        >
-          <ul>{errorItems}</ul>
-        </View>
-      );
-    }
-
+    /* eslint jsx-a11y/media-has-caption: "off" */
     // Wrapping div required as brightcove adds siblings to the video tag
     return (
       <div>
