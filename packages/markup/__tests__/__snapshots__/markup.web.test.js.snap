@@ -39,6 +39,26 @@ exports[`Markup Web renders a single paragraph 1`] = `
 
 exports[`Markup Web renders an empty component 1`] = `<div />`;
 
+exports[`Markup Web renders multiple children 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Object {
+      "color": "red",
+    }
+  }
+>
+  <p>
+    This is the text for paragraph one
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+</Text>
+`;
+
 exports[`Markup Web renders multiple paragraphs 1`] = `
 <div>
   <p>

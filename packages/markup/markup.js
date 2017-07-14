@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, Linking, StyleSheet } from "react-native";
-import Markup from "./markup-builder";
+import Markup, { builder as mb } from "./markup-builder";
 import propTypes from "./markup-proptype";
 
 const styles = StyleSheet.create({
@@ -82,3 +82,5 @@ const MarkupNative = ({ ast, wrapIn }) =>
 MarkupNative.propTypes = propTypes;
 
 export default MarkupNative;
+
+export const builder = mb(tagMap);

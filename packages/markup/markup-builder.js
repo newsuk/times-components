@@ -46,13 +46,11 @@ function astToMarkup(tagMap, key, wrapTextWith, [x, ...xs]) {
   return children.concat(...astToMarkup(tagMap, bump(key), wrapTextWith, xs));
 }
 
+export const builder = tagMap => ({ ast, wrapIn }) =>
+  astToMarkup(tagMap, "0", tagMap.get(wrapIn || "div").wrapText, ast);
+
 export default function Markup({ ast, tagMap, wrapIn }) {
-  const markup = astToMarkup(
-    tagMap,
-    "0",
-    tagMap.get(wrapIn || "div").wrapText,
-    ast
-  );
+  const markup = builder(tagMap)({ ast, wrapIn });
 
   if (markup.length === 1) {
     return markup[0];

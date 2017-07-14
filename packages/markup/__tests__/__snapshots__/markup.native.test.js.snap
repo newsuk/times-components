@@ -73,6 +73,34 @@ exports[`Markup Native renders a single paragraph 1`] = `
 
 exports[`Markup Native renders an empty component 1`] = `<View />`;
 
+exports[`Markup Native renders multiple children 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Object {
+      "color": "red",
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    This is the text for paragraph one
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    This is the text for paragraph two
+  </Text>
+</Text>
+`;
+
 exports[`Markup Native renders multiple paragraphs 1`] = `
 <View>
   <Text
