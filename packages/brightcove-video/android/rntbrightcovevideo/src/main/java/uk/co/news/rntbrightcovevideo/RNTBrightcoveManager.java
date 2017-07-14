@@ -39,8 +39,8 @@ public class RNTBrightcoveManager extends SimpleViewManager<RNTBrightcoveView> {
     }
 
     @ReactProp(name = "policyKey")
-    public void setPolicyKey(RNTBrightcoveView view, String policyId) {
-        mView.setPolicyId(policyId);
+    public void setPolicyKey(RNTBrightcoveView view, String policyKey) {
+        mView.setPolicyKey(policyKey);
     }
 
 
