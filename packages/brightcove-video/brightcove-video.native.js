@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { findNodeHandle, requireNativeComponent } from "react-native";
+import PropTypes from "prop-types";
 
 import propTypes from "./brightcove-video.proptypes";
 import defaults from "./brightcove-video.defaults";
@@ -72,7 +73,11 @@ class BrightcoveVideo extends Component {
   }
 }
 
-BrightcoveVideo.defaultProps = defaults;
-BrightcoveVideo.propTypes = propTypes;
+BrightcoveVideo.defaultProps = Object.assign(defaults, {
+  runNativeCommand: () => {}
+});
+BrightcoveVideo.propTypes = Object.assign(propTypes, {
+  runNativeCommand: PropTypes.func.isRequired
+});
 
 export default BrightcoveVideo;

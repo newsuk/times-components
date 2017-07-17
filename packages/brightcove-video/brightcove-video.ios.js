@@ -3,6 +3,9 @@ import { NativeModules } from "react-native";
 
 import BrightcoveVideo from "./brightcove-video.native";
 
+import propTypes from "./brightcove-video.proptypes";
+import defaults from "./brightcove-video.defaults";
+
 function withNativeCommand(WrappedComponent) {
   class IOSNative extends Component {
     static managerCommand(name) {
@@ -41,6 +44,9 @@ function withNativeCommand(WrappedComponent) {
       );
     }
   }
+
+  IOSNative.defaultProps = defaults;
+  IOSNative.propTypes = propTypes;
 
   return IOSNative;
 }
