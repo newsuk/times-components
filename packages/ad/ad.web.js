@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 import { Subscriber } from "react-broadcast";
 
+import AdComposer from "./ad-composer.web";
 import GPT from "./gpt.web";
 
 class Ad extends Component {
@@ -24,3 +25,5 @@ Ad.propTypes = {
 };
 
 export default Ad;
+
+export { AdComposer };

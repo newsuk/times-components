@@ -12,7 +12,7 @@ class Ad extends Component {
   }
 
   static onOriginChange(url) {
-    Linking.canOpenURL(url)
+    return Linking.canOpenURL(url)
       .then(supported => {
         if (!supported) {
           return console.error("Cant open url", url); // eslint-disable-line no-console
