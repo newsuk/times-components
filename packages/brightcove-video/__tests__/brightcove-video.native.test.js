@@ -98,6 +98,10 @@ describe("brightcove-video native component", () => {
     component.pause();
   });
 
+  it("will return the native class name", () => {
+    expect(BrightcoveVideo.getNativeClassName()).toBe("RNTBrightcove");
+  });
+
   describe("mock RNTBrightcove", () => {
     let getNativeBrightcoveComponentSpy;
     let mockRNTBrightcove;
