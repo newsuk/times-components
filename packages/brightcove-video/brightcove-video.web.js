@@ -23,8 +23,8 @@ class BrightcoveVideo extends Component {
     document.body.appendChild(s);
   }
 
-  static getScriptUrl(accountId) {
-    return `//players.brightcove.net/${accountId}/default_default/index.min.js`;
+  static getScriptUrl(accountId, playerId) {
+    return `//players.brightcove.net/${accountId}/${playerId}_default/index.min.js`;
   }
 
   constructor(props) {
@@ -38,6 +38,7 @@ class BrightcoveVideo extends Component {
       id: `${props.videoId}-${props.accountId}-${index}`,
       accountId: props.accountId,
       videoId: props.videoId,
+      playerId: props.playerId,
       errors: [].concat(BrightcoveVideo.globalErrors),
       playerStatus: "paused",
       playheadPosition: 0
@@ -121,7 +122,10 @@ class BrightcoveVideo extends Component {
 
   createScript() {
     const s = document.createElement("script");
-    s.src = BrightcoveVideo.getScriptUrl(this.props.accountId);
+    s.src = BrightcoveVideo.getScriptUrl(
+      this.props.accountId,
+      this.props.playerId
+    );
 
     return s;
   }
@@ -175,7 +179,7 @@ class BrightcoveVideo extends Component {
           data-embed="default"
           data-video-id={this.props.videoId}
           data-account={this.props.accountId}
-          data-player="default"
+          data-player={this.props.playerId}
           data-application-id
           className="video-js"
           controls

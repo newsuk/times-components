@@ -26,22 +26,36 @@ describe("brightcove-video web component", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("appends script tag to body", () => {
-    renderer
-      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
-      .toJSON();
+  it("appends correct script tag to body when no playerId supplied", () => {
+    renderer.create(
+      <BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />
+    );
 
     expect(document.body.innerHTML.trim()).toBe(
       '<script src="//players.brightcove.net/[ACCOUNT_ID]/default_default/index.min.js"></script>'
     );
   });
 
+  it("appends correct script tag to body when playerId supplied", () => {
+    renderer.create(
+      <BrightcoveVideo
+        accountId="[ACCOUNT_ID]"
+        videoId="[VIDEO_ID]"
+        playerId="[PLAYER_ID]"
+      />
+    );
+
+    expect(document.body.innerHTML.trim()).toBe(
+      '<script src="//players.brightcove.net/[ACCOUNT_ID]/[PLAYER_ID]_default/index.min.js"></script>'
+    );
+  });
+
   it("will not append script tag to body if there has been a global error", () => {
     BrightcoveVideo.globalErrors.push({});
 
-    renderer
-      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
-      .toJSON();
+    renderer.create(
+      <BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />
+    );
 
     expect(document.body.innerHTML.trim()).toBe("");
   });
@@ -71,23 +85,20 @@ describe("brightcove-video web component", () => {
     expect(tree.children[0].props.height).toBe(400);
   });
 
-  it("generates the correct script link", () => {
-    renderer
-      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
-      .toJSON();
-
-    expect(document.body.innerHTML.trim()).toBe(
-      '<script src="//players.brightcove.net/[ACCOUNT_ID]/default_default/index.min.js"></script>'
-    );
-  });
-
-  it("passes accountId & videoId to video correctly", () => {
+  it("passes accountId, videoId & playerId to video correctly", () => {
     const tree = renderer
-      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
+      .create(
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          playerId="[PLAYER_ID]"
+        />
+      )
       .toJSON();
 
     expect(tree.children[0].props["data-video-id"]).toBe("[VIDEO_ID]");
     expect(tree.children[0].props["data-account"]).toBe("[ACCOUNT_ID]");
+    expect(tree.children[0].props["data-player"]).toBe("[PLAYER_ID]");
   });
 
   it("does not attempt to initialise the brightcove player before the script has loaded", () => {
@@ -95,8 +106,16 @@ describe("brightcove-video web component", () => {
 
     renderer.create(
       <View>
-        <BrightcoveVideo accountId="[ACCOUNT_ID1]" videoId="[VIDEO_ID1]" />
-        <BrightcoveVideo accountId="[ACCOUNT_ID2]" videoId="[VIDEO_ID2]" />
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID1]"
+          videoId="[VIDEO_ID1]"
+          playerId="[PLAYER_ID1]"
+        />
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID2]"
+          videoId="[VIDEO_ID2]"
+          playerId="[PLAYER_ID2]"
+        />
       </View>
     );
 
@@ -118,8 +137,16 @@ describe("brightcove-video web component", () => {
 
     renderer.create(
       <View>
-        <BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />
-        <BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          playerId="[PLAYER_ID1]"
+        />
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          playerId="[PLAYER_ID2]"
+        />
       </View>
     );
 

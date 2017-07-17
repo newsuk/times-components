@@ -18,7 +18,7 @@ import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.events.RCTEventEmitter;
 
 public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
-  private String mVideoId, mAccountId, mPolicyId, mPlayerStatus;
+  private String mVideoId, mAccountId, mPolicyKey, mPlayerStatus;
 
   public RNTBrightcoveView(ThemedReactContext context) {
     super(context, null);
@@ -35,8 +35,8 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
     initVideo();
   }
 
-  public void setPolicyId(String policyId) {
-    mPolicyId = policyId;
+  public void setPolicyKey(String policyKey) {
+    mPolicyKey = policyKey;
     initVideo();
   }
 
@@ -58,7 +58,7 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
   }
 
   private void initVideo() {
-    if (mVideoId != null && mAccountId != null && mPolicyId != null) {
+    if (mVideoId != null && mAccountId != null && mPolicyKey != null) {
       EventEmitter eventEmitter = getEventEmitter();
 
       eventEmitter.on(EventType.PLAY, new EventListener() {
@@ -91,7 +91,7 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
         }
       });
 
-      Catalog catalog = new Catalog(eventEmitter, mAccountId, mPolicyId);
+      Catalog catalog = new Catalog(eventEmitter, mAccountId, mPolicyKey);
 
       this.setMediaController(new BrightcoveMediaController(this));
 

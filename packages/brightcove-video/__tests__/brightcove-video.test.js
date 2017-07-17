@@ -8,7 +8,13 @@ import BrightcoveVideo from "../brightcove-video";
 describe("brightcove-video native component", () => {
   it("renders correctly", () => {
     const tree = renderer
-      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
+      .create(
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          policyKey="[POLICY_KEY]"
+        />
+      )
       .toJSON();
 
     expect(tree).toMatchSnapshot();
@@ -16,7 +22,13 @@ describe("brightcove-video native component", () => {
 
   it("width x height default to 320 x 180", () => {
     const tree = renderer
-      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
+      .create(
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          policyKey="[POLICY_KEY]"
+        />
+      )
       .toJSON();
 
     expect(tree.props.style.width).toBe(320);
@@ -29,6 +41,7 @@ describe("brightcove-video native component", () => {
         <BrightcoveVideo
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
+          policyKey="[POLICY_KEY]"
           height={400}
           width={600}
         />
@@ -39,18 +52,18 @@ describe("brightcove-video native component", () => {
     expect(tree.props.style.height).toBe(400);
   });
 
-  it("passes accountId, videoId & policyId to video correctly", () => {
+  it("passes accountId, videoId & policyKey to video correctly", () => {
     const tree = renderer
       .create(
         <BrightcoveVideo
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
-          policyId="[POLICY_ID]"
+          policyKey="[POLICY_KEY]"
         />
       )
       .toJSON();
 
-    expect(tree.props.policyId).toBe("[POLICY_ID]");
+    expect(tree.props.policyKey).toBe("[POLICY_KEY]");
     expect(tree.props.videoId).toBe("[VIDEO_ID]");
     expect(tree.props.accountId).toBe("[ACCOUNT_ID]");
   });
@@ -85,7 +98,7 @@ describe("brightcove-video native component", () => {
         <BrightcoveVideo
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
-          policyId="[POLICY_ID]"
+          policyKey="[POLICY_KEY]"
           onChange={evt => {
             expect(evt).toBe("random act of kindness");
             done();
@@ -101,7 +114,7 @@ describe("brightcove-video native component", () => {
         <BrightcoveVideo
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
-          policyId="[POLICY_ID]"
+          policyKey="[POLICY_KEY]"
         />
       );
 
@@ -113,7 +126,7 @@ describe("brightcove-video native component", () => {
         <BrightcoveVideo
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
-          policyId="[POLICY_ID]"
+          policyKey="[POLICY_KEY]"
           onError={evt => {
             expect(evt).toBe("random act of badness");
             done();
@@ -129,7 +142,7 @@ describe("brightcove-video native component", () => {
         <BrightcoveVideo
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
-          policyId="[POLICY_ID]"
+          policyKey="[POLICY_KEY]"
           onError={evt => {
             expect(evt).toBe("random act of badness");
             done();

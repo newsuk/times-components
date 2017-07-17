@@ -87,7 +87,7 @@ class BrightcoveVideo extends Component {
           this.bcPlayer = ref;
         }}
         style={{ height: this.props.height, width: this.props.width }}
-        policyId={this.props.policyId}
+        policyKey={this.props.policyKey}
         accountId={this.props.accountId}
         videoId={this.props.videoId}
         onChange={this.onChange}

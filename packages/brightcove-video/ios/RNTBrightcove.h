@@ -6,7 +6,7 @@
 
 @interface RNTBrightcove : UIView
 
-@property (nonatomic, assign) NSString *policyId;
+@property (nonatomic, assign) NSString *policyKey;
 @property (nonatomic, assign) NSString *accountId;
 @property (nonatomic, assign) NSString *videoId;
 @property (nonatomic, copy) RCTBubblingEventBlock onChange;

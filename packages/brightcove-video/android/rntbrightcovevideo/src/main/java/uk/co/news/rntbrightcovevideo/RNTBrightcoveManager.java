@@ -38,9 +38,9 @@ public class RNTBrightcoveManager extends SimpleViewManager<RNTBrightcoveView> {
         mView.setAccountId(accountId);
     }
 
-    @ReactProp(name = "policyId")
-    public void setPolicyId(RNTBrightcoveView view, String policyId) {
-        mView.setPolicyId(policyId);
+    @ReactProp(name = "policyKey")
+    public void setPolicyKey(RNTBrightcoveView view, String policyKey) {
+        mView.setPolicyKey(policyKey);
     }
 
 

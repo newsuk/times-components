@@ -30,7 +30,7 @@
 - (void)setup {
   _playerStatus = @"paused";
   _playheadPosition = @"0";
-  
+
   BCOVPlayerSDKManager *manager = [BCOVPlayerSDKManager sharedManager];
 
   _playbackController = [manager createPlaybackController];
@@ -39,7 +39,7 @@
   _playbackController.autoPlay = NO;
 
   _playbackService = [[BCOVPlaybackService alloc] initWithAccountId:_accountId
-                                                          policyKey:_policyId];
+                                                          policyKey:_policyKey];
 }
 
 - (void)requestContentFromPlaybackService {
@@ -63,7 +63,7 @@
 }
 
 - (void)initPlayerView {
-  if (_policyId && _accountId && _videoId) {
+  if (_policyKey && _accountId && _videoId) {
     [self setup];
 
     BCOVPUIBasicControlView *controlsView = [BCOVPUIBasicControlView basicControlViewWithVODLayout];
@@ -82,9 +82,9 @@
   }
 }
 
-- (void)setPolicyId:(NSString *)policyId {
-  if (![policyId isEqual:_policyId]) {
-    _policyId = [policyId copy];
+- (void)setPolicyKey:(NSString *)policyKey {
+  if (![policyKey isEqual:_policyKey]) {
+    _policyKey = [policyKey copy];
     [self initPlayerView];
   }
 }
@@ -123,9 +123,9 @@
   if (!self.onIOSError) {
     return;
   }
-  
+
   NSString *code = [NSString stringWithFormat:@"%ld", (long)[error code]];
-  
+
   self.onIOSError(@{@"code": code, @"message": [error localizedDescription]});
 }
 
@@ -145,11 +145,11 @@
 }
 
 - (void)playbackController:(id<BCOVPlaybackController>)controller playbackSession:(id<BCOVPlaybackSession>)session didProgressTo:(NSTimeInterval)progress {
-  
+
   NSNumber *progressNumber = [NSNumber numberWithDouble:progress];
 
   _playheadPosition = [progressNumber stringValue];
-  
+
   [self emitStatus];
 }
 
