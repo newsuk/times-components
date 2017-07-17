@@ -4,7 +4,7 @@
   "description": "A collection of presentational components for locate a location",
   "main": "index.js",
   "engines": {
-    "node" : ">=8.0.0"
+    "node": ">=8.0.0"
   },
   "bin": {
     "times-components": "times-components"
@@ -17,9 +17,10 @@
     "coverage:publish": "lcov-result-merger ./packages/**/lcov.info | coveralls",
     "lint": "eslint .",
     "fetch-fonts": "node ./lib/fetch-fonts",
-    "prestorybook": "npm run fetch-fonts",
+    "prestorybook": "npm run fetch-fonts && npm run storybook:build-vendor",
     "storybook": "start-storybook -p 9001 -c .storybook -s ./dist/public",
     "prestorybook:build": "node ./lib/fetch-fonts",
+    "storybook:build-vendor": "webpack --config ./.storybook/vendor.webpack.config.js",
     "storybook:build": "build-storybook -c .storybook -s ./dist/public",
     "storybook:publish": "./lib/publish_storybook.sh",
     "prestorybook-native": "node ./node_modules/.bin/rnstl && node ./lib/fetch-fonts",
@@ -69,7 +70,7 @@
   },
   "fructose": {
     "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/storybooknative.app"
-	},
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/newsuk/times-components.git"
@@ -86,21 +87,21 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@storybook/addon-actions": "3.0.0",
-    "@storybook/react": "3.0.0",
-    "@storybook/react-native": "3.0.0",
+    "@storybook/addon-actions": "3.1.8",
+    "@storybook/react": "3.1.8",
+    "@storybook/react-native": "3.1.8",
     "coveralls": "2.13.1",
+    "detox": "5.2.0",
     "eslint": "3.19.0",
     "eslint-config-airbnb": "15.0.1",
     "eslint-config-prettier": "2.3.0",
     "eslint-plugin-import": "2.6.1",
     "eslint-plugin-jsx-a11y": "5.1.1",
     "eslint-plugin-react": "7.1.0",
-    "jest": "20.0.4",
-    "lcov-result-merger": "1.2.0",
-    "detox": "5.2.0",
     "hjkadshhjkl-app": "0.1.11",
     "hjkadshhjkl-test-utils": "0.1.11",
+    "jest": "20.0.4",
+    "lcov-result-merger": "1.2.0",
     "lerna": "2.0.0",
     "lint-staged": "4.0.0",
     "node-fetch": "^1.7.1",
@@ -112,7 +113,8 @@
     "react-native-storybook-loader": "1.4.1",
     "react-native-web": "0.0.97",
     "rimraf": "2.6.1",
-    "url": "0.11.0"
+    "url": "0.11.0",
+    "webpack": "3.3.0"
   },
   "dependencies": {
     "babel-plugin-transform-class": "^0.3.0",
