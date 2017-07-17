@@ -2768,7 +2768,7 @@ dashify@0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/dashify/-/dashify-0.2.2.tgz#6a07415a01c91faf4a32e38d9dfba71f61cb20fe"
 
-date-fns@^1.27.2:
+date-fns@1.28.5, date-fns@^1.27.2:
   version "1.28.5"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-1.28.5.tgz#257cfc45d322df45ef5658665967ee841cd73faf"
 
@@ -3929,7 +3929,11 @@ function-bind@^1.0.2, function-bind@^1.1.0, function-bind@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.0.tgz#16176714c801798e4e8f2cf7f7529467bb4a5771"
 
+<<<<<<< HEAD
 function.prototype.name@^1.0.0, function.prototype.name@^1.0.2:
+=======
+function.prototype.name@^1.0.0:
+>>>>>>> chore: revert intl changes to use date-fns
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/function.prototype.name/-/function.prototype.name-1.0.2.tgz#b511a1a15d35fb4834cb35464b6b6b03f4e543ea"
   dependencies:
@@ -5343,9 +5347,9 @@ left-pad@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/left-pad/-/left-pad-1.1.3.tgz#612f61c033f3a9e08e939f1caebeea41b6f3199a"
 
-lerna@2.0.0-rc.5:
-  version "2.0.0-rc.5"
-  resolved "https://registry.yarnpkg.com/lerna/-/lerna-2.0.0-rc.5.tgz#b59d168caaac6e3443078c1bce194208c9aa3090"
+lerna@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/lerna/-/lerna-2.0.0.tgz#49a72fe70e06aebfd7ea23efb2ab41abe60ebeea"
   dependencies:
     async "^1.5.0"
     chalk "^1.1.1"

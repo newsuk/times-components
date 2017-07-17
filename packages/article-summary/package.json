@@ -49,11 +49,10 @@
   },
   "dependencies": {
     "@times-components/markup": "0.0.1",
-    "intl": "1.2.5",
+    "date-fns": "1.28.5",
     "prop-types": "15.5.10",
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",
-    "react-intl": "2.3.0",
     "react-native-web": "0.0.97"
   },
   "peerDependencies": {

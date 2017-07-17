@@ -2,17 +2,17 @@
 
 import "react-native";
 import React from "react";
+import renderer from "react-test-renderer";
 import ArticleSummary from "../article-summary";
 import props from "../fixtures/article.json";
-import withIntl from "./with-intl";
 
 it("renders a snapshot", () => {
-  const tree = withIntl(<ArticleSummary />).toJSON();
+  const tree = renderer.create(<ArticleSummary />).toJSON();
 
   expect(tree).toMatchSnapshot();
 });
 
 it("renders a snapshot with content", () => {
-  const tree = withIntl(<ArticleSummary {...props} />).toJSON();
+  const tree = renderer.create(<ArticleSummary {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });

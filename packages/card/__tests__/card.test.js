@@ -3,12 +3,12 @@
 import "react-native";
 import { shallow } from "enzyme";
 import React from "react";
+import renderer from "react-test-renderer";
 import Card from "../card";
 import props from "../fixtures/card-props.json";
-import withIntl from "./with-intl";
 
 it("renders horizontal by default", () => {
-  const tree = withIntl(<Card {...props} />).toJSON();
+  const tree = renderer.create(<Card {...props} />).toJSON();
 
   expect(tree).toMatchSnapshot();
 });
