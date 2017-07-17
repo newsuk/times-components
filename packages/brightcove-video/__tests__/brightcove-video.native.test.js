@@ -3,7 +3,7 @@
 import "react-native";
 import React, { Component } from "react";
 import renderer from "react-test-renderer";
-import BrightcoveVideo from "../brightcove-video";
+import BrightcoveVideo from "../brightcove-video.native";
 
 describe("brightcove-video native component", () => {
   it("renders correctly", () => {
@@ -66,6 +66,48 @@ describe("brightcove-video native component", () => {
     expect(tree.props.policyKey).toBe("[POLICY_KEY]");
     expect(tree.props.videoId).toBe("[VIDEO_ID]");
     expect(tree.props.accountId).toBe("[ACCOUNT_ID]");
+  });
+
+  it("will call passed 'runNativeCommand' method property with 'play' when play is called", done => {
+    const root = renderer.create(
+      <BrightcoveVideo
+        accountId="[ACCOUNT_ID]"
+        videoId="[VIDEO_ID]"
+        policyKey="[POLICY_KEY]"
+        runNativeCommand={commandName => {
+          expect(commandName).toBe("play");
+
+          done();
+        }}
+      />
+    );
+
+    const rootInstance = root.getInstance();
+
+    rootInstance.play();
+  });
+
+  it("will call passed 'runNativeCommand' method property with 'pause' when pause is called", done => {
+    const root = renderer.create(
+      <BrightcoveVideo
+        accountId="[ACCOUNT_ID]"
+        videoId="[VIDEO_ID]"
+        policyKey="[POLICY_KEY]"
+        runNativeCommand={commandName => {
+          expect(commandName).toBe("pause");
+
+          done();
+        }}
+      />
+    );
+
+    const rootInstance = root.getInstance();
+
+    rootInstance.pause();
+  });
+
+  it("will return the native class name", () => {
+    expect(BrightcoveVideo.getNativeClassName()).toBe("RNTBrightcove");
   });
 
   describe("mock RNTBrightcove", () => {

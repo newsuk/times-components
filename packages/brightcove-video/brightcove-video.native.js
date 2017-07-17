@@ -1,10 +1,6 @@
 import React, { Component } from "react";
-import {
-  NativeModules,
-  findNodeHandle,
-  Platform,
-  requireNativeComponent
-} from "react-native";
+import { findNodeHandle, requireNativeComponent } from "react-native";
+import PropTypes from "prop-types";
 
 import propTypes from "./brightcove-video.proptypes";
 import defaults from "./brightcove-video.defaults";
@@ -17,12 +13,8 @@ class BrightcoveVideo extends Component {
     return RNTBrightcove;
   }
 
-  static uiManagerCommand(name) {
-    return NativeModules.UIManager[nativeClassName].Commands[name];
-  }
-
-  static brightcoveManagerCommand(name) {
-    return NativeModules[`${nativeClassName}Manager`][name];
+  static getNativeClassName() {
+    return nativeClassName;
   }
 
   constructor(props) {
@@ -34,6 +26,11 @@ class BrightcoveVideo extends Component {
 
     this.onChange = this.onChange.bind(this);
     this.onError = this.onError.bind(this);
+
+    this.publicMethods = {
+      play: this.play.bind(this),
+      pause: this.pause.bind(this)
+    };
   }
 
   onChange(evt) {
@@ -49,33 +46,11 @@ class BrightcoveVideo extends Component {
   }
 
   play() {
-    this.runNativeCommand("play", []);
+    this.props.runNativeCommand("play", []);
   }
 
   pause() {
-    this.runNativeCommand("pause", []);
-  }
-
-  runNativeCommand(name, args) {
-    switch (Platform.OS) {
-      case "android":
-        NativeModules.UIManager.dispatchViewManagerCommand(
-          this.getNodeHandle(),
-          BrightcoveVideo.uiManagerCommand(name),
-          args
-        );
-        break;
-
-      case "ios":
-        BrightcoveVideo.brightcoveManagerCommand(name)(
-          this.getNodeHandle(),
-          ...args
-        );
-        break;
-
-      default:
-        break;
-    }
+    this.props.runNativeCommand("pause", []);
   }
 
   render() {
@@ -98,7 +73,11 @@ class BrightcoveVideo extends Component {
   }
 }
 
-BrightcoveVideo.defaultProps = defaults;
-BrightcoveVideo.propTypes = propTypes;
+BrightcoveVideo.defaultProps = Object.assign(defaults, {
+  runNativeCommand: () => {}
+});
+BrightcoveVideo.propTypes = Object.assign(propTypes, {
+  runNativeCommand: PropTypes.func.isRequired
+});
 
 export default BrightcoveVideo;
