@@ -2,58 +2,66 @@
 
 import "react-native";
 import React, { Component } from "react";
-import Renderer from "react-test-renderer";
+import renderer from "react-test-renderer";
 import BrightcoveVideo from "../brightcove-video.native";
 
 describe("brightcove-video native component", () => {
   it("renders correctly", () => {
-    const tree = Renderer.create(
-      <BrightcoveVideo
-        accountId="[ACCOUNT_ID]"
-        videoId="[VIDEO_ID]"
-        policyKey="[POLICY_KEY]"
-      />
-    ).toJSON();
+    const tree = renderer
+      .create(
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          policyKey="[POLICY_KEY]"
+        />
+      )
+      .toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
   it("width x height default to 320 x 180", () => {
-    const tree = Renderer.create(
-      <BrightcoveVideo
-        accountId="[ACCOUNT_ID]"
-        videoId="[VIDEO_ID]"
-        policyKey="[POLICY_KEY]"
-      />
-    ).toJSON();
+    const tree = renderer
+      .create(
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          policyKey="[POLICY_KEY]"
+        />
+      )
+      .toJSON();
 
     expect(tree.props.style.width).toBe(320);
     expect(tree.props.style.height).toBe(180);
   });
 
   it("width x height can be overridden", () => {
-    const tree = Renderer.create(
-      <BrightcoveVideo
-        accountId="[ACCOUNT_ID]"
-        videoId="[VIDEO_ID]"
-        policyKey="[POLICY_KEY]"
-        height={400}
-        width={600}
-      />
-    ).toJSON();
+    const tree = renderer
+      .create(
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          policyKey="[POLICY_KEY]"
+          height={400}
+          width={600}
+        />
+      )
+      .toJSON();
 
     expect(tree.props.style.width).toBe(600);
     expect(tree.props.style.height).toBe(400);
   });
 
   it("passes accountId, videoId & policyKey to video correctly", () => {
-    const tree = Renderer.create(
-      <BrightcoveVideo
-        accountId="[ACCOUNT_ID]"
-        videoId="[VIDEO_ID]"
-        policyKey="[POLICY_KEY]"
-      />
-    ).toJSON();
+    const tree = renderer
+      .create(
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          policyKey="[POLICY_KEY]"
+        />
+      )
+      .toJSON();
 
     expect(tree.props.policyKey).toBe("[POLICY_KEY]");
     expect(tree.props.videoId).toBe("[VIDEO_ID]");
@@ -61,7 +69,7 @@ describe("brightcove-video native component", () => {
   });
 
   it("will call passed 'runNativeCommand' method property with 'play' when play is called", done => {
-    const renderer = Renderer.create(
+    const root = renderer.create(
       <BrightcoveVideo
         accountId="[ACCOUNT_ID]"
         videoId="[VIDEO_ID]"
@@ -74,13 +82,13 @@ describe("brightcove-video native component", () => {
       />
     );
 
-    const component = renderer.getInstance();
+    const rootInstance = root.getInstance();
 
-    component.play();
+    rootInstance.play();
   });
 
   it("will call passed 'runNativeCommand' method property with 'pause' when pause is called", done => {
-    const renderer = Renderer.create(
+    const root = renderer.create(
       <BrightcoveVideo
         accountId="[ACCOUNT_ID]"
         videoId="[VIDEO_ID]"
@@ -93,9 +101,9 @@ describe("brightcove-video native component", () => {
       />
     );
 
-    const component = renderer.getInstance();
+    const rootInstance = root.getInstance();
 
-    component.pause();
+    rootInstance.pause();
   });
 
   it("will return the native class name", () => {
@@ -128,7 +136,7 @@ describe("brightcove-video native component", () => {
     });
 
     it("will propagate change events from the native component", done => {
-      Renderer.create(
+      renderer.create(
         <BrightcoveVideo
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
@@ -144,7 +152,7 @@ describe("brightcove-video native component", () => {
     });
 
     it("will not error if there is no chnage handler", () => {
-      Renderer.create(
+      renderer.create(
         <BrightcoveVideo
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
@@ -156,7 +164,7 @@ describe("brightcove-video native component", () => {
     });
 
     it("will correctly handle native (android) errors", done => {
-      Renderer.create(
+      renderer.create(
         <BrightcoveVideo
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
@@ -172,7 +180,7 @@ describe("brightcove-video native component", () => {
     });
 
     it("will correctly handle native (iOS) errors", done => {
-      Renderer.create(
+      renderer.create(
         <BrightcoveVideo
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
