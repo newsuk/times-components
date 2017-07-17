@@ -18,25 +18,28 @@ exports[`renders horizontal by default 1`] = `
       }
     }
   >
-    <Image
-      onError={[Function]}
-      source={
-        Object {
-          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320",
+    <View
+      onLayout={[Function]}
+    >
+      <Image
+        onError={[Function]}
+        onLoad={[Function]}
+        source={
+          Object {
+            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320",
+          }
         }
-      }
-      style={
-        Array [
-          Object {
-            "height": "100%",
-            "width": "100%",
-          },
-          Object {
-            "flex": 1,
-          },
-        ]
-      }
-    />
+        style={
+          Array [
+            Object {
+              "height": "100%",
+              "width": "100%",
+            },
+            undefined,
+          ]
+        }
+      />
+    </View>
   </View>
   <View
     style={
@@ -134,7 +137,7 @@ exports[`renders vertical above breakpoint 1`] = `
   <View
     style={
       Object {
-        "flexBasis": 256,
+        "flexBasis": "auto",
         "flexGrow": 1,
       }
     }
@@ -143,11 +146,6 @@ exports[`renders vertical above breakpoint 1`] = `
       source={
         Object {
           "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320",
-        }
-      }
-      style={
-        Object {
-          "flex": 1,
         }
       }
     />

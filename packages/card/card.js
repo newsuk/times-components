@@ -11,12 +11,9 @@ const getStyles = isHorizontal =>
       display: "flex",
       flexDirection: isHorizontal ? "row" : "column"
     },
-    image: {
-      flex: 1
-    },
     imageContainer: {
       flexGrow: isHorizontal ? 2 : 1,
-      flexBasis: isHorizontal ? 0 : 256
+      flexBasis: isHorizontal ? 0 : "auto"
     },
     summaryContainer: {
       flexGrow: isHorizontal ? 3 : 1,

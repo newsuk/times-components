@@ -37,11 +37,16 @@ storiesOf("Image", module)
       <Image source={exampleNonImage} />
     </View>
   )
+  .add("Show default image on error centered", () =>
+    <View>
+      <Image style={{ resizeMode: "center" }} source={exampleNonImage} />
+    </View>
+  )
   .add("Apply style to image", () =>
     <View style={{ width: 100, height: 100 }}>
       <Image
         resizeMode={"cover"}
-        style={{ borderRadius: 50 }}
+        style={{ borderRadius: 50, width: 100, height: 100 }}
         source={exampleImage}
       />
     </View>
