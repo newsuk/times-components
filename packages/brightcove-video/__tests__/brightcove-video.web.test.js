@@ -27,9 +27,9 @@ describe("brightcove-video web component", () => {
   });
 
   it("appends correct script tag to body when no playerId supplied", () => {
-    renderer
-      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
-      .toJSON();
+    renderer.create(
+      <BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />
+    );
 
     expect(document.body.innerHTML.trim()).toBe(
       '<script src="//players.brightcove.net/[ACCOUNT_ID]/default_default/index.min.js"></script>'
@@ -37,15 +37,13 @@ describe("brightcove-video web component", () => {
   });
 
   it("appends correct script tag to body when playerId supplied", () => {
-    renderer
-      .create(
-        <BrightcoveVideo
-          accountId="[ACCOUNT_ID]"
-          videoId="[VIDEO_ID]"
-          playerId="[PLAYER_ID]"
-        />
-      )
-      .toJSON();
+    renderer.create(
+      <BrightcoveVideo
+        accountId="[ACCOUNT_ID]"
+        videoId="[VIDEO_ID]"
+        playerId="[PLAYER_ID]"
+      />
+    );
 
     expect(document.body.innerHTML.trim()).toBe(
       '<script src="//players.brightcove.net/[ACCOUNT_ID]/[PLAYER_ID]_default/index.min.js"></script>'
@@ -55,9 +53,9 @@ describe("brightcove-video web component", () => {
   it("will not append script tag to body if there has been a global error", () => {
     BrightcoveVideo.globalErrors.push({});
 
-    renderer
-      .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
-      .toJSON();
+    renderer.create(
+      <BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />
+    );
 
     expect(document.body.innerHTML.trim()).toBe("");
   });
