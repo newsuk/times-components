@@ -1,3 +1,5 @@
+const webpack = require("webpack");
+
 module.exports = {
   module: {},
 
@@ -11,5 +13,13 @@ module.exports = {
     // module implementations should be written in files using the extension
     // `.web.js`.
     extensions: [".web.js", ".js", ".ios.js", ".android.js"]
-  }
+  },
+
+  plugins: [
+    // Use the DLL in development.
+    new webpack.DllReferencePlugin({
+      context: __dirname,
+      manifest: require("../dist/public/vendor-manifest.json")
+    })
+  ]
 };
