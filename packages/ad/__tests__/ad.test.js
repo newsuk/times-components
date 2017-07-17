@@ -16,9 +16,7 @@ describe("Native Ad test", () => {
 
   beforeEach(() => {
     ad = <Ad {...adProps} />;
-    jest.unmock("ScrollView");
     jest.mock("WebView", () => "WebView");
-    jest.unmock("../ad");
   });
 
   afterEach(() => {});
