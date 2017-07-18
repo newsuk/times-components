@@ -6,13 +6,13 @@ import renderer from "react-test-renderer";
 import ArticleSummary from "../article-summary";
 import props from "../fixtures/article.json";
 
-it("renders a snapshot", () => {
+it("renders an article-summary component", () => {
   const tree = renderer.create(<ArticleSummary />).toJSON();
 
   expect(tree).toMatchSnapshot();
 });
 
-it("renders a snapshot with content", () => {
+it("renders an article-summary component with content", () => {
   const tree = renderer.create(<ArticleSummary {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });

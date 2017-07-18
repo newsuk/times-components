@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders a snapshot 1`] = `
+exports[`renders an article-summary component 1`] = `
 <View
   style={Object {}}
 >
@@ -55,7 +55,7 @@ exports[`renders a snapshot 1`] = `
 </View>
 `;
 
-exports[`renders a snapshot with content 1`] = `
+exports[`renders an article-summary component with content 1`] = `
 <View
   style={Object {}}
 >
