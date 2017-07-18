@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import { Dimensions, View, StyleSheet } from "react-native";
 import ArticleSummary from "@times-components/article-summary";
 import Image from "@times-components/image";
 
@@ -22,17 +22,21 @@ const getStyles = isHorizontal =>
     }
   });
 
+function isOrientationHorizontal(width) {
+  return width > horizontalBreakpoint;
+}
+
 class CardComponent extends React.Component {
   constructor(props) {
     super(props);
     this.handleLayout = this.handleLayout.bind(this);
     this.state = {
-      isHorizontal: true
+      isHorizontal: isOrientationHorizontal(Dimensions.get("window").width)
     };
   }
   handleLayout(event) {
     const width = event.nativeEvent.layout.width;
-    const isHorizontal = width > horizontalBreakpoint;
+    const isHorizontal = isOrientationHorizontal(width);
     if (isHorizontal !== this.state.isHorizontal) {
       this.setState({ isHorizontal });
     }
