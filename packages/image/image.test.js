@@ -65,9 +65,11 @@ it("calculates width and height based on image dimensions", done => {
     }
   });
 
-  comp.setState = ({ width, height }) => {
+  comp.setState = ({ width, height, layout }) => {
     expect(width).toEqual(20);
     expect(height).toEqual(10);
+    expect(layout.width).toEqual(20);
+    expect(layout.height).toEqual(15);
 
     return done();
   };
@@ -75,32 +77,6 @@ it("calculates width and height based on image dimensions", done => {
   comp.state = {
     width: 40,
     height: 20
-  };
-
-  comp.handleLayout({
-    nativeEvent: {
-      layout: {
-        width: 20,
-        height: 15
-      }
-    }
-  });
-});
-
-it("ignores layout if width and height is 100%", done => {
-  const comp = new Image({
-    source: {
-      uri: "http://httpstat.us/200"
-    }
-  });
-
-  comp.setState = ({ width, height, layout }) => {
-    expect(width).toEqual(undefined);
-    expect(height).toEqual(undefined);
-    expect(layout.width).toEqual(20);
-    expect(layout.height).toEqual(15);
-
-    return done();
   };
 
   comp.handleLayout({

@@ -1,6 +1,8 @@
 import React from "react";
-import { Image, View } from "react-native";
+import { Dimensions, Image, View } from "react-native";
 import placeholder from "./placeholder";
+
+const window = Dimensions.get('window');
 
 class ImageComponent extends React.Component {
   constructor(props) {
@@ -8,8 +10,8 @@ class ImageComponent extends React.Component {
 
     this.state = {
       source: props.source,
-      width: "100%",
-      height: "100%"
+      width: window.width,
+      height: 1
     };
 
     this.getSize = Image.getSize;
@@ -21,10 +23,6 @@ class ImageComponent extends React.Component {
   calculateDimensions(props) {
     const state = Object.assign({}, this.state, props);
     if (!state.layout) {
-      return this.setState(props);
-    }
-
-    if (state.width === "100%" || state.height === "100%") {
       return this.setState(props);
     }
 
