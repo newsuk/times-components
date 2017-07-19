@@ -77,7 +77,7 @@ Please **ask first** if somebody else is already working on this or the core dev
 
 ## Testing
 
-Every component should have a `XXXX.test.js` file with the component's Jest tests. 
+Every component should have a `XXXX.test.js` file with the component's Jest tests.
 
 It should also have a `XXXX.fructose.js` file with the component's Fructose tests.
 
@@ -85,11 +85,11 @@ If required there
  should be additional functional tests written in [nightmare](http://www.nightmarejs.org/) and/or
  [fructose](https://github.com/rjanjua/fructose).
 
-Fructose uses detox to instrument the tests. In order to run the tests you will need to install some additional dependencies. Follow steps 1-3 in these [detox docs](https://github.com/wix/detox/blob/master/docs/Introduction.GettingStarted.md).
+Fructose uses detox to instrument the tests. In order to run the tests you will need to install some additional dependencies. Follow steps 1-4 in these [detox docs](https://github.com/wix/detox/blob/master/docs/Introduction.GettingStarted.md).
 
 Fructose also relies on an application existing within the project, in this case we are using the storybook app. If you have not installed it, you can do so by running `npm run ios`. You will need to terminate the server that is run with this as fructose will run its own at the time of testing. As long as you do not delete the app, you will only have to build the app once.
 
-If you run `npm run fructose-tests` in the root directory it will run fructose tests for all of the components.
+If you run `npm run fructose:tests` in the root directory it will run fructose tests for all of the components.
 
 
 ## Folder Structure

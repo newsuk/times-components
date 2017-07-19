@@ -18,12 +18,14 @@ class VideoWithExternalControls extends Component {
           accountId={this.props.accountId}
         />
         <Button
+          testID="external-play"
           buttonText="play"
           onPress={() => {
             this.bcVideo.play();
           }}
         />
         <Button
+          testID="external-pause"
           buttonText="pause"
           onPress={() => {
             this.bcVideo.pause();
