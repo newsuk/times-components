@@ -10,8 +10,12 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-    "testMatch": ["<rootDir>/packages/article-summary/**.test.js"]
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/article-summary/__tests__/**.test.js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -44,7 +48,9 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "prop-types": "^15.5.10",
+    "@times-components/markup": "0.0.1",
+    "date-fns": "1.28.5",
+    "prop-types": "15.5.10",
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",
     "react-native-web": "0.0.97"

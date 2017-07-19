@@ -104,7 +104,7 @@
     "lcov-result-merger": "1.2.0",
     "lerna": "2.0.0",
     "lint-staged": "4.0.0",
-    "node-fetch": "^1.7.1",
+    "node-fetch": "1.7.1",
     "pre-commit": "1.2.2",
     "prettier": "1.4.2",
     "react": "16.0.0-alpha.6",
@@ -117,7 +117,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "babel-plugin-transform-class": "^0.3.0",
+    "babel-plugin-transform-class": "0.3.0",
     "dashify": "0.2.2",
     "global": "4.3.2",
     "handlebars": "4.0.10",
