@@ -15,6 +15,6 @@
 - (void)playVideo;
 - (void)pauseVideo;
 
-- (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher;
 
 @end
