@@ -103,4 +103,4 @@ const getSlotConfig = (section, code, width) => {
   };
 };
 
-export { getAdSizes, getSizeMaps, getSlotConfig };
+export { getAdSizes, getSizeMaps, getSlotConfig, getMaxHeight };

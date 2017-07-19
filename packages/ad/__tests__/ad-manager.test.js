@@ -12,8 +12,7 @@ describe("AdManager", () => {
     networkId: "mock-network-id",
     section: "mock-section",
     gptManager,
-    pbjsManager,
-    getSlotConfig
+    pbjsManager
   };
   let adManager;
 
@@ -64,27 +63,15 @@ describe("AdManager", () => {
     const newPbjsManager = adManager.pbjsManager;
     const newGptManager = adManager.gptManager;
 
-    const windowWidth = 100;
-    const mockAd = {
-      code: "mock-code",
-      mappings: [100, 200],
-      options: { foo: "bar" }
-    };
+    const width = 100;
+    const code = "mock-code";
 
-    adManager.getSlotConfig = jest
-      .fn()
-      .mockImplementation((section, code, width) => {
-        expect(section).toEqual(adManager.section);
-        expect(code).toEqual(mockAd.code);
-        expect(width).toEqual(windowWidth);
-        return mockAd;
-      });
     adManager.pushAdToGPT = jest.fn();
 
-    adManager.registerAd(mockAd.code, { width: windowWidth });
-    expect(adManager.getSlotConfig).toHaveBeenCalled();
+    const slotConfig = getSlotConfig(adManager.section, code, width);
+    adManager.registerAd(slotConfig);
     expect(adManager.adQueue).toHaveLength(1);
-    expect(adManager.adQueue[0]).toEqual(mockAd);
+    expect(adManager.adQueue[0]).toEqual(slotConfig);
 
     newPbjsManager.setConfig = () => Promise.resolve();
     newGptManager.setConfig = () => Promise.resolve();
@@ -110,8 +97,8 @@ describe("AdManager", () => {
     expect(adManager.adQueue.length).toEqual(1);
   });
 
-  it("remove one item from the queue", () => {
-    const queue = [
+  it("unregister does not unregister if element does not exist", () => {
+    adManager.adQueue = [
       {
         id: "id-0"
       },
@@ -119,10 +106,10 @@ describe("AdManager", () => {
         id: "id-1"
       }
     ];
-    const itemId = "id-1";
-    const newQueue = AdManager.removeItemFromQueue(queue, itemId);
-    expect(queue.length).toEqual(2);
-    expect(newQueue.length).toEqual(queue.length - 1);
+    const itemId = "id-2";
+    expect(adManager.adQueue.length).toEqual(2);
+    adManager.unregisterAd(itemId);
+    expect(adManager.adQueue.length).toEqual(2);
   });
 
   it("display should tell pbjs to handle targeting and gpt to refresh", () => {

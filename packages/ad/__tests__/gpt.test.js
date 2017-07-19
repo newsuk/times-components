@@ -1,5 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
+import TestUtils from "react-dom/test-utils";
 
 import GPT from "../gpt.web";
 import AdManager from "../ad-manager";
@@ -40,12 +41,32 @@ describe("Gpt test", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("calls unregisterAd when component unmounts", () => {
+  it("unregisterAd when component unmounts", () => {
     const code = "ad-header";
     const tree = renderer.create(<GPT adManager={adManager} code={code} />);
 
     adManager.unregisterAd = jest.fn();
     tree.unmount();
     expect(adManager.unregisterAd).toHaveBeenCalledWith(code);
+  });
+
+  it.only("handleLayout changes configuration", () => {
+    const tree = TestUtils.renderIntoDocument(
+      <GPT adManager={adManager} code="ad-header" />
+    );
+    const event = {
+      nativeEvent: {
+        layout: {
+          width: 100
+        }
+      }
+    };
+    tree.setState({
+      width: 50
+    });
+
+    tree.handleLayout(event, () => {
+      expect(tree.state.width).toEqual(100);
+    });
   });
 });
