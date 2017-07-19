@@ -11,19 +11,23 @@ const videoId = "4084164751001";
 
 withComponent(
   <BrightcoveVideo
-    policyId={policyKey}
+    policyKey={policyKey}
     videoId={videoId}
     accountId={accountId}
   />,
   "brightcove video",
   async () => {
-    test("renders", async () => {
-      await expect(element(by.id("play"))).toBeVisible();
-      await expect(element(by.id("jump-back"))).toBeVisible();
-      await expect(element(by.id("current-time"))).toBeVisible();
-      await expect(element(by.id("duration"))).toBeVisible();
-      await expect(element(by.id("screen-mode"))).toBeVisible();
-    });
+    test(
+      "renders",
+      async () => {
+        await expect(element(by.id("play"))).toBeVisible();
+        await expect(element(by.id("jump-back"))).toBeVisible();
+        await expect(element(by.id("current-time"))).toBeVisible();
+        await expect(element(by.id("duration"))).toBeVisible();
+        await expect(element(by.id("screen-mode"))).toBeVisible();
+      },
+      10000
+    );
 
     test("video plays", async () => {
       await element(by.id("play")).tap();
@@ -41,14 +45,14 @@ withComponent(
   <View>
     <View testID="player1">
       <BrightcoveVideo
-        policyId={policyKey}
+        policyKey={policyKey}
         videoId={videoId}
         accountId={accountId}
       />
     </View>
     <View testID="player2">
       <BrightcoveVideo
-        policyId={policyKey}
+        policyKey={policyKey}
         videoId={videoId}
         accountId={accountId}
       />

@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 const Button = props =>
   <TouchableOpacity
+    testID={props.testID}
     style={{
       backgroundColor: "blue",
       padding: 5,
@@ -16,12 +17,14 @@ const Button = props =>
 
 Button.propTypes = {
   onPress: PropTypes.func.isRequired,
-  buttonText: PropTypes.string.isRequired
+  buttonText: PropTypes.string.isRequired,
+  testID: PropTypes.string
 };
 
 Button.defaultProps = {
   onPress: () => {},
-  text: "click here"
+  text: "click here",
+  testID: "button"
 };
 
 export default Button;
