@@ -1,8 +1,8 @@
 import React from "react";
-import PropTypes from "prop-types";
-import stylePropType from "react-style-proptype";
-import { View, Image } from "react-native";
+import { Dimensions, Image, View } from "react-native";
 import placeholder from "./placeholder";
+
+const window = Dimensions.get('window');
 
 class ImageComponent extends React.Component {
   constructor(props) {
@@ -10,59 +10,80 @@ class ImageComponent extends React.Component {
 
     this.state = {
       source: props.source,
-      width: 0,
-      height: 0
+      width: window.width,
+      height: 1
     };
 
-    this.handleLayout = this.handleLayout.bind(this);
+    this.getSize = Image.getSize;
     this.handleError = this.handleError.bind(this);
+    this.handleLayout = this.handleLayout.bind(this);
+    this.handleLoad = this.handleLoad.bind(this);
   }
 
-  handleLayout(event) {
-    const containerWidth = event.nativeEvent.layout.width;
-    this.setState({
-      width: containerWidth,
-      height: containerWidth * this.props.aspectRatio
-    });
+  calculateDimensions(props) {
+    const state = Object.assign({}, this.state, props);
+    if (!state.layout) {
+      return this.setState(props);
+    }
+
+    return this.setState(
+      Object.assign(state, {
+        width: state.layout.width,
+        height: state.layout.width * state.height / state.width
+      })
+    );
   }
 
   handleError() {
-    this.setState({
+    this.calculateDimensions({
       source: {
         uri: placeholder
+      },
+      width: 800,
+      height: 600
+    });
+  }
+
+  handleLoad() {
+    return this.getSize(this.state.source.uri, (width, height) =>
+      this.calculateDimensions({
+        width,
+        height
+      })
+    );
+  }
+
+  handleLayout({ nativeEvent }) {
+    const { height, width } = nativeEvent.layout;
+
+    this.calculateDimensions({
+      layout: {
+        width,
+        height
       }
     });
   }
 
   render() {
-    const style = {
-      width: this.state.width,
-      height: this.state.height
-    };
+    const props = Object.assign({}, this.props, {
+      source: this.state.source,
+      style: [
+        {
+          height: this.state.height,
+          width: this.state.width
+        },
+        this.props.style
+      ]
+    });
 
     return (
       <View onLayout={this.handleLayout}>
-        <Image
-          onError={this.handleError}
-          source={this.state.source}
-          style={[this.props.style, style]}
-        />
+        <Image {...props} onError={this.handleError} onLoad={this.handleLoad} />
       </View>
     );
   }
 }
 
-ImageComponent.propTypes = {
-  aspectRatio: PropTypes.number,
-  source: PropTypes.shape({
-    uri: PropTypes.string.isRequired
-  }).isRequired,
-  style: stylePropType
-};
-
-ImageComponent.defaultProps = {
-  aspectRatio: 0.75,
-  style: {}
-};
+ImageComponent.propTypes = Image.propTypes;
 
 export default ImageComponent;

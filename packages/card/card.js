@@ -43,7 +43,7 @@ class CardComponent extends React.Component {
     return (
       <View onLayout={this.handleLayout} style={styles.container}>
         <View style={styles.imageContainer}>
-          <Image source={image} />
+          <Image style={styles.image} source={image} />
         </View>
         <View style={styles.summaryContainer}>
           <ArticleSummary

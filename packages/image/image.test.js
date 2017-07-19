@@ -1,6 +1,5 @@
 /* eslint-env jest */
 
-import { shallow } from "enzyme";
 import React from "react";
 import renderer from "react-test-renderer";
 import Image from "./image";
@@ -10,8 +9,7 @@ it("renders correctly with no dimensions and given URI", () => {
   const props = {
     source: {
       uri: "http://example.com/image.jpg"
-    },
-    aspectRatio: 3 / 2
+    }
   };
   const tree = renderer.create(<Image {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
@@ -21,8 +19,7 @@ it("use placeholder image when image is not reachable", done => {
   const comp = new Image({
     source: {
       uri: "http://httpstat.us/404"
-    },
-    aspectRatio: 0.5
+    }
   });
 
   comp.setState = ({ source }) => {
@@ -34,12 +31,11 @@ it("use placeholder image when image is not reachable", done => {
   comp.handleError();
 });
 
-it("lays out the image with the correct aspect ratio", done => {
+it("calculates width and height based on layout dimensions", done => {
   const comp = new Image({
     source: {
       uri: "http://httpstat.us/404"
-    },
-    aspectRatio: 0.5
+    }
   });
 
   comp.setState = ({ width, height }) => {
@@ -49,22 +45,65 @@ it("lays out the image with the correct aspect ratio", done => {
     return done();
   };
 
-  comp.handleLayout({ nativeEvent: { layout: { width: 20 } } });
-});
-
-it("sets the expected dimensions for a given state", () => {
-  const props = {
-    source: {
-      uri: "http://example.com/image.jpg"
+  comp.state = {
+    layout: {
+      width: 20,
+      height: 15
     }
   };
 
-  const wrapper = shallow(<Image {...props} />);
+  comp.calculateDimensions({
+    width: 40,
+    height: 20
+  });
+});
 
-  wrapper.setState({
-    height: 300,
-    width: 100
+it("calculates width and height based on image dimensions", done => {
+  const comp = new Image({
+    source: {
+      uri: "http://httpstat.us/200"
+    }
   });
 
-  expect(wrapper).toMatchSnapshot();
+  comp.setState = ({ width, height, layout }) => {
+    expect(width).toEqual(20);
+    expect(height).toEqual(10);
+    expect(layout.width).toEqual(20);
+    expect(layout.height).toEqual(15);
+
+    return done();
+  };
+
+  comp.state = {
+    width: 40,
+    height: 20
+  };
+
+  comp.handleLayout({
+    nativeEvent: {
+      layout: {
+        width: 20,
+        height: 15
+      }
+    }
+  });
+});
+
+it("ignores dimension if layout is 0", done => {
+  const comp = new Image({
+    source: {
+      uri: "http://httpstat.us/200"
+    }
+  });
+
+  comp.setState = ({ width, height, layout }) => {
+    expect(width).toEqual(40);
+    expect(height).toEqual(20);
+    expect(layout).toEqual(undefined);
+
+    return done();
+  };
+
+  comp.getSize = (uri, success) => success(40, 20);
+  comp.handleLoad();
 });

@@ -23,6 +23,7 @@ exports[`renders horizontal by default 1`] = `
     >
       <Image
         onError={[Function]}
+        onLoad={[Function]}
         source={
           Object {
             "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320",
@@ -30,11 +31,11 @@ exports[`renders horizontal by default 1`] = `
         }
         style={
           Array [
-            Object {},
             Object {
-              "height": 0,
-              "width": 0,
+              "height": 1,
+              "width": 750,
             },
+            undefined,
           ]
         }
       />
@@ -142,13 +143,11 @@ exports[`renders vertical above breakpoint 1`] = `
     }
   >
     <ImageComponent
-      aspectRatio={0.75}
       source={
         Object {
           "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320",
         }
       }
-      style={Object {}}
     />
   </View>
   <View

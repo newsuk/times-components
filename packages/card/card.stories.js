@@ -17,7 +17,7 @@ const props = {
 };
 
 storiesOf("Card", module).add("Card", () =>
-  <View style={{ width: "100%" }}>
+  <View>
     <Card {...props} />
   </View>
 );
