@@ -89,7 +89,7 @@ Fructose uses detox to instrument the tests. In order to run the tests you will 
 
 Fructose also relies on an application existing within the project, in this case we are using the storybook app. If you have not installed it, you can do so by running `npm run ios`. You will need to terminate the server that is run with this as fructose will run its own at the time of testing. As long as you do not delete the app, you will only have to build the app once.
 
-If you run `npm run fructose:tests` in the root directory it will run fructose tests for all of the components.
+If you run `npm run test:fructose` in the root directory it will run fructose tests for all of the components.
 
 
 ## Folder Structure
