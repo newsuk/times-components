@@ -2,65 +2,108 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import PropTypes from "prop-types";
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
+  compact: {
+    position: "absolute",
+    right: 0,
+    left: 0
+  },
   container: {
-    alignItems: "center",
-    color: "#006699",
+    alignItems: "stretch",
+    display: "flex",
+    flexDirection: "column"
+  },
+  horizontal: {
     display: "flex",
     flexDirection: "row",
+    borderBottomColor: "#dbdbdb",
+    borderBottomWidth: 1,
+    borderStyle: "solid",
+    borderTopColor: "#dbdbdb",
+    borderTopWidth: 1,
+    justifyContent: "space-between"
+  },
+  arrows: {
+    color: "#006699",
     fontFamily: "GillSansMTStd-Medium",
-    justifyContent: "center",
-    lineHeight: 22
+    fontSize: 14,
+    lineHeight: 38
   },
   label: {
-    flexGrow: 1,
-    textAlign: "center"
-  },
-  pageChange: {
-    flexShrink: 1,
-    fontWeight: "400"
-  },
-  pageChangeHidden: {
-    textIndent: 999
+    color: "#696969",
+    fontFamily: "GillSansMTStd-Medium",
+    fontSize: 15,
+    lineHeight: 20,
+    textAlign: "center",
+    paddingBottom: 10,
+    paddingTop: 10
   }
 });
 
-const Pagination = props => {
-  const firstResult = props.page * props.pageSize + 1;
-  const lastResult = Math.min(props.total, (props.page + 1) * props.pageSize);
-  const message = `Showing ${firstResult} - ${lastResult} of ${props.total} results`;
+const shouldRenderOneLine = width => width >= 700;
 
-  const prevComponentStyle = [style.pageChange];
-  if (firstResult < props.pageSize) {
-    prevComponentStyle.push(style.pageChangeHidden);
+class Pagination extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isCompact: false
+    };
+
+    this.handleLayout = this.handleLayout.bind(this);
   }
 
-  const nextComponentStyle = [style.pageChange];
-  if (lastResult >= props.total) {
-    nextComponentStyle.push(style.pageChangeHidden);
+  handleLayout({ nativeEvent }) {
+    const { width } = nativeEvent.layout;
+
+    return this.setState({
+      isCompact: shouldRenderOneLine(width)
+    });
   }
 
-  return (
-    <View style={style.container}>
-      <Text style={prevComponentStyle}>
-        Previous page
-      </Text>
-      <Text style={style.label}>{message}</Text>
-      <Text style={nextComponentStyle}>
-        Next page
-      </Text>
-    </View>
-  );
-};
+  render() {
+    const { count, page, pageSize } = this.props;
+
+    const startResult = (page - 1) * pageSize + 1;
+    const finalResult = Math.min(count, page * pageSize);
+    const message = `Showing ${startResult} - ${finalResult} of ${count} results`;
+
+    const prevComponent = startResult > pageSize
+      ? <Text style={styles.arrows}>
+          {"< Previous page"}
+        </Text>
+      : null;
+
+    const nextComponent = finalResult < count
+      ? <Text style={styles.arrows}>
+          {"Next page >"}
+        </Text>
+      : null;
+
+    return (
+      <View style={styles.container} onLayout={this.handleLayout}>
+        <Text
+          style={[styles.label, this.state.isCompact ? styles.compact : null]}
+        >
+          {message}
+        </Text>
+        <View style={styles.horizontal}>
+          <View>{prevComponent}</View>
+          <View>{nextComponent}</View>
+        </View>
+      </View>
+    );
+  }
+}
 
 Pagination.propTypes = {
   page: PropTypes.number,
   pageSize: PropTypes.number,
-  total: PropTypes.number.isRequired
+  count: PropTypes.number.isRequired
 };
 
 Pagination.defaultProps = {
-  page: 0,
+  page: 1,
   pageSize: 20
 };
 
