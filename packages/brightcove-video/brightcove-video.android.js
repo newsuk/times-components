@@ -36,13 +36,17 @@ function withNativeCommand(WrappedComponent) {
     }
 
     render() {
+      const props = Object.assign(
+        { runNativeCommand: this.runNativeCommand },
+        this.props
+      );
+
       return (
         <WrappedComponent
           ref={ref => {
             this.bcv = ref;
           }}
-          runNativeCommand={this.runNativeCommand}
-          {...this.props}
+          {...props}
         />
       );
     }
