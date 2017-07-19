@@ -49,9 +49,7 @@ class GPT extends Component {
         this.props.code,
         width
       );
-      this.setState({ config }, () => {
-        callback();
-      });
+      this.setState({ config }, callback);
     }
   }
 
