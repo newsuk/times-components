@@ -13,10 +13,20 @@
 
 @end
 
-@implementation RNTBrightcove : UIView {
+@implementation RNTBrightcove {
   RCTEventDispatcher *_eventDispatcher;
   NSString *_playerStatus;
   NSString *_playheadPosition;
+}
+
+-(instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    return self;
+}
+
+-(instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    return self;
 }
 
 - (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher {
@@ -119,7 +129,7 @@
 - (void)playVideo {
   [_playbackController play];
 }
- 
+
 - (void)pauseVideo {
   [_playbackController pause];
 }
@@ -135,7 +145,6 @@
 }
 
 - (void)playbackController:(id<BCOVPlaybackController>)controller playbackSession:(id<BCOVPlaybackSession>)session didReceiveLifecycleEvent:(BCOVPlaybackSessionLifecycleEvent *)lifecycleEvent {
-
   if ([kBCOVPlaybackSessionLifecycleEventPlay isEqualToString:lifecycleEvent.eventType]) {
     _playerStatus = @"playing";
 
@@ -150,13 +159,11 @@
 }
 
 - (void)playbackController:(id<BCOVPlaybackController>)controller playbackSession:(id<BCOVPlaybackSession>)session didProgressTo:(NSTimeInterval)progress {
-
   NSNumber *progressNumber = [NSNumber numberWithDouble:progress];
 
   _playheadPosition = [progressNumber stringValue];
 
   [self emitStatus];
 }
-
 
 @end
