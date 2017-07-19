@@ -4,8 +4,6 @@ import { WebView, Dimensions, Linking, StyleSheet } from "react-native";
 import { getSlotConfig } from "./generate-config";
 import { pbjs as pbjsConfig } from "./config";
 
-const { width } = Dimensions.get("window");
-
 class Ad extends Component {
   static hasDifferentOrigin(url, baseUrl) {
     return url && url.indexOf(baseUrl) === -1 && url.indexOf("://") > -1;
@@ -22,25 +20,10 @@ class Ad extends Component {
       .catch(err => console.error("An error occurred", err)); // eslint-disable-line no-console
   }
 
-  static getMaxHeight(sizes) {
-    if (!sizes) {
-      return 0;
-    }
-
-    return sizes.reduce((max, item) => {
-      const curHeight = item[1];
-      let maxHeight = max;
-      if (curHeight && curHeight > max) {
-        maxHeight = curHeight;
-      }
-      return maxHeight;
-    }, 0);
-  }
-
   constructor(props) {
     super(props);
+    const { width } = Dimensions.get("window");
     this.config = getSlotConfig(props.section, props.code, width);
-    this.maxHeight = Ad.getMaxHeight(this.config.sizes);
     this.viewBorder = 10;
 
     this.handleOriginChange = this.handleOriginChange.bind(this);
@@ -160,7 +143,10 @@ class Ad extends Component {
           this.webview = ref;
         }}
         source={{ html, baseUrl: this.props.baseUrl }}
-        style={[this.props.style, { height: this.maxHeight + this.viewBorder }]}
+        style={[
+          this.props.style,
+          { height: this.config.maxHeight + this.viewBorder }
+        ]}
         baseUrl={this.props.baseUrl}
         onNavigationStateChange={this.handleNavigationChange}
       />

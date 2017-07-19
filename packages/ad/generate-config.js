@@ -1,5 +1,22 @@
 import { bidders, sizes } from "./config";
 
+// Given all the valid ad sizes returns the maximum height possible
+// for the element
+const getMaxHeight = adSizes => {
+  if (!adSizes) {
+    return 0;
+  }
+
+  return adSizes.reduce((max, item) => {
+    const curHeight = item[1];
+    let maxHeight = max;
+    if (curHeight && curHeight > max) {
+      maxHeight = curHeight;
+    }
+    return maxHeight;
+  }, 0);
+};
+
 const getSizeMaps = code => {
   switch (code) {
     case "ad-header":
@@ -14,6 +31,7 @@ const getSizeMaps = code => {
   }
 };
 
+// Returns the valid ad sizes given the ad code and window width
 const getAdSizes = (code, width) => {
   const sizeMap = getSizeMaps(code);
   for (let i = sizeMap.length - 1; i > 0; i -= 1) {
@@ -27,6 +45,7 @@ const getAdSizes = (code, width) => {
 const getSlotConfig = (section, code, width) => {
   const adSizes = getAdSizes(code, width);
   const mappings = getSizeMaps(code);
+  const maxHeight = getMaxHeight(adSizes);
   const bids = [
     {
       bidder: "appnexus",
@@ -78,6 +97,7 @@ const getSlotConfig = (section, code, width) => {
   return {
     code,
     sizes: adSizes,
+    maxHeight,
     mappings,
     bids
   };

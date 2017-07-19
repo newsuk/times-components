@@ -1,4 +1,11 @@
-export default class AdManager {
+const removeItemFromQueue = (queue, itemId) => {
+  const obj = Object.assign([], queue);
+  const objIds = obj.map(item => item.id);
+  const idx = objIds.indexOf(itemId);
+  return idx > -1 ? obj.filter((item, index) => idx !== index) : obj;
+};
+
+class AdManager {
   constructor(options = {}) {
     this.adQueue = [];
     this.adUnit = options.adUnit;
@@ -6,15 +13,7 @@ export default class AdManager {
     this.section = options.section;
     this.gptManager = options.gptManager;
     this.pbjsManager = options.pbjsManager;
-    this.getSlotConfig = options.getSlotConfig;
     this.initialised = false;
-  }
-
-  static removeItemFromQueue(queue, itemId) {
-    const obj = Object.assign([], queue);
-    const objIds = obj.map(item => item.id);
-    const idx = objIds.indexOf(itemId);
-    return idx > -1 ? obj.filter((item, index) => idx !== index) : obj;
   }
 
   init() {
@@ -36,12 +35,12 @@ export default class AdManager {
       });
   }
 
-  registerAd(code, { width = 1024 } = {}) {
-    this.adQueue.push(this.getSlotConfig(this.section, code, width));
+  registerAd(slot) {
+    this.adQueue.push(slot);
   }
 
   unregisterAd(code) {
-    this.adQueue = AdManager.removeItemFromQueue(this.adQueue, code);
+    this.adQueue = removeItemFromQueue(this.adQueue, code);
   }
 
   display() {
@@ -91,3 +90,5 @@ export default class AdManager {
     );
   }
 }
+
+export default AdManager;
