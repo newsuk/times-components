@@ -1,0 +1,361 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders compact above breakpoint 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "alignItems": "stretch",
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 15,
+          "lineHeight": 20,
+          "paddingBottom": 10,
+          "paddingTop": 10,
+          "textAlign": "center",
+        },
+        Object {
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+        },
+      ]
+    }
+  >
+    Showing 1 - 20 of 21 results
+  </Text>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "borderTopColor": "#dbdbdb",
+        "borderTopWidth": 1,
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <View />
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#006699",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 14,
+            "lineHeight": 38,
+          }
+        }
+      >
+        Next page &gt;
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders correctly 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "alignItems": "stretch",
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 15,
+          "lineHeight": 20,
+          "paddingBottom": 10,
+          "paddingTop": 10,
+          "textAlign": "center",
+        },
+        null,
+      ]
+    }
+  >
+    Showing 1 - 20 of 21 results
+  </Text>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "borderTopColor": "#dbdbdb",
+        "borderTopWidth": 1,
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <View />
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#006699",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 14,
+            "lineHeight": 38,
+          }
+        }
+      >
+        Next page &gt;
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders prev and next link 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "alignItems": "stretch",
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 15,
+          "lineHeight": 20,
+          "paddingBottom": 10,
+          "paddingTop": 10,
+          "textAlign": "center",
+        },
+        null,
+      ]
+    }
+  >
+    Showing 21 - 40 of 41 results
+  </Text>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "borderTopColor": "#dbdbdb",
+        "borderTopWidth": 1,
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#006699",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 14,
+            "lineHeight": 38,
+          }
+        }
+      >
+        &lt; Previous page
+      </Text>
+    </View>
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#006699",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 14,
+            "lineHeight": 38,
+          }
+        }
+      >
+        Next page &gt;
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders prev link 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "alignItems": "stretch",
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 15,
+          "lineHeight": 20,
+          "paddingBottom": 10,
+          "paddingTop": 10,
+          "textAlign": "center",
+        },
+        null,
+      ]
+    }
+  >
+    Showing 41 - 41 of 41 results
+  </Text>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "borderTopColor": "#dbdbdb",
+        "borderTopWidth": 1,
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#006699",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 14,
+            "lineHeight": 38,
+          }
+        }
+      >
+        &lt; Previous page
+      </Text>
+    </View>
+    <View />
+  </View>
+</View>
+`;
+
+exports[`renders prev link 2`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "alignItems": "stretch",
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 15,
+          "lineHeight": 20,
+          "paddingBottom": 10,
+          "paddingTop": 10,
+          "textAlign": "center",
+        },
+        null,
+      ]
+    }
+  >
+    Showing 1 - 20 of 41 results
+  </Text>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "borderTopColor": "#dbdbdb",
+        "borderTopWidth": 1,
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <View />
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#006699",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 14,
+            "lineHeight": 38,
+          }
+        }
+      >
+        Next page &gt;
+      </Text>
+    </View>
+  </View>
+</View>
+`;
