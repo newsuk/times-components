@@ -16,7 +16,7 @@ const AuthorProfileItem = item => {
     image: {
       uri: item.leadAsset ? item.leadAsset.crop.url : ""
     },
-    text: item.teaser,
+    text: JSON.parse(item.teaser),
     label: item.label,
     publication: item.publicationName
   };
