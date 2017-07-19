@@ -50,7 +50,7 @@ describe("Gpt test", () => {
     expect(adManager.unregisterAd).toHaveBeenCalledWith(code);
   });
 
-  it.only("handleLayout changes configuration", () => {
+  it("handleLayout changes configuration", () => {
     const tree = TestUtils.renderIntoDocument(
       <GPT adManager={adManager} code="ad-header" />
     );
