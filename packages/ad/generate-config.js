@@ -7,14 +7,10 @@ const getMaxHeight = adSizes => {
     return 0;
   }
 
-  return adSizes.reduce((max, item) => {
-    const curHeight = item[1];
-    let maxHeight = max;
-    if (curHeight && curHeight > max) {
-      maxHeight = curHeight;
-    }
-    return maxHeight;
-  }, 0);
+  return adSizes.reduce(
+    (max, [, curHeight]) => Math.max(max, curHeight || 0),
+    0
+  );
 };
 
 const getSizeMaps = code => {
