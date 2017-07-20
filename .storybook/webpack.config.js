@@ -1,7 +1,17 @@
 const webpack = require("webpack");
 
 module.exports = {
-  module: {},
+  module: {
+    rules: [
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
+          'url-loader?limit=10000',
+          'img-loader'
+        ]
+      }
+    ]
+  },
 
   resolve: {
     // Maps the 'react-native' import to 'react-native-web'.

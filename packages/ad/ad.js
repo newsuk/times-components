@@ -63,7 +63,9 @@ class Ad extends Component {
           <script async src="https://www.googletagservices.com/tag/js/gpt.js"></script>
         </head>
         <body>
+        hey
           <div id='${this.config.code}'>
+            <img src='${require('./assets/MPU.png')}' width="300" height="250"/>
           </div>
 
           <script>

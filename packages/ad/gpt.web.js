@@ -1,14 +1,15 @@
 import React, { Component } from "react";
-import { Dimensions, StyleSheet, View } from "react-native";
+import { Dimensions, StyleSheet, View, Image, Text } from "react-native";
 import PropTypes from "prop-types";
 
 import AdManager from "./ad-manager";
+import Placeholder from "./placeholder";
 import { getSlotConfig } from "./generate-config";
 
 const getStyles = config =>
   StyleSheet.create({
     container: {
-      backgroundColor: "#f1f1f1",
+      backgroundColor: "#F9F9F9", // TODO: REMOVE?
       height: config.maxHeight
     }
   });
@@ -55,13 +56,19 @@ class GPT extends Component {
 
   render() {
     const styles = getStyles(this.state.config);
+
     return (
-      <View
-        id={this.props.code}
-        onLayout={this.handleLayout}
-        style={styles.container}
-      />
+      <Placeholder config={this.state.config} />
     );
+    // return (
+    //   <View
+    //     style={styles.container}
+    //     id={this.props.code}
+    //     onLayout={this.handleLayout}
+    //     style={styles.container} >
+    //     <Placeholder config={this.state.config} />
+    //   </View>
+    // );
   }
 }
 
