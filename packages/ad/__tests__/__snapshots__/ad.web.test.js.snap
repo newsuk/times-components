@@ -4,19 +4,40 @@ exports[`AdComposer renders no ad slots 1`] = `<div />`;
 
 exports[`AdComposer renders with more than one ad slot 1`] = `
 <div>
-  <div
+  <View
     id="ad-header"
+    onLayout={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#f1f1f1",
+        "height": 50,
+      }
+    }
   />
-  <div
+  <View
     id="intervention"
+    onLayout={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#f1f1f1",
+        "height": 250,
+      }
+    }
   />
 </div>
 `;
 
 exports[`AdComposer renders with one ad slot 1`] = `
 <div>
-  <div
+  <View
     id="ad-header"
+    onLayout={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#f1f1f1",
+        "height": 50,
+      }
+    }
   />
 </div>
 `;

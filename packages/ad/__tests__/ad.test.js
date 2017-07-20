@@ -120,17 +120,6 @@ describe("Native Ad test", () => {
     done();
   });
 
-  it("getMaxHeight is 0 is no size is sent", () => {
-    const result = Ad.getMaxHeight(null);
-    expect(result).toEqual(0);
-  });
-
-  it("getMaxHeight should return the maximum height from an array of arrays of sizes", () => {
-    const sizes = [[300, 250], [320, 50], [320, 48]];
-    const result = Ad.getMaxHeight(sizes);
-    expect(result).toEqual(250);
-  });
-
   it("handleOriginChange should not do anything if the origin is the same", () => {
     const tree = TestUtils.renderIntoDocument(ad);
     const hasDifferentOriginSpy = jest.spyOn(Ad, "hasDifferentOrigin");

@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { Broadcast } from "react-broadcast";
 
 import AdManager from "./ad-manager";
-import { getSlotConfig } from "./generate-config";
 import gptManager from "./gpt-manager";
 import pbjs from "./pbjs-manager";
 import { pbjs as pbjsConfig } from "./config";
@@ -19,8 +18,7 @@ class AdComposer extends Component {
       adUnit: props.adUnit,
       section: props.section,
       gptManager,
-      pbjsManager,
-      getSlotConfig
+      pbjsManager
     });
   }
 

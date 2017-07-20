@@ -1,13 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Gpt test renders an ad-header ad slot 1`] = `
-<div
+<View
   id="ad-header"
+  onLayout={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#f1f1f1",
+      "height": 50,
+    }
+  }
 />
 `;
 
 exports[`Gpt test renders an ad-pixel ad slot 1`] = `
-<div
+<View
   id="ad-pixel"
+  onLayout={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#f1f1f1",
+      "height": 0,
+    }
+  }
 />
 `;
