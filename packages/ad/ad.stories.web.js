@@ -1,9 +1,12 @@
 /* eslint-env browser */
 import React from "react";
+import { View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 
 import Ad, { AdComposer } from "./ad.web";
+import { getSlotConfig } from "./generate-config";
 
+import Placeholder from './placeholder';
 import TimesWatermark from './assets/TimesWatermark';
 
 export default () =>
@@ -40,6 +43,4 @@ export default () =>
       </AdComposer>
     </div>
   )
-  add("TimesWatermark", () => {
-    return (<TimesWatermark/>);
-  });
+  .add("TimesWatermark", () => <TimesWatermark/>);

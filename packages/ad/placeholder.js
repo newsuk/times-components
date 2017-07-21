@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Dimensions, StyleSheet, View, Image, Text, ImageEditor } from "react-native";
 import PropTypes from "prop-types";
 
+import TimesWatermark from './assets/TimesWatermark';
+
 const getStyles = config =>
   StyleSheet.create({
     container: {
@@ -45,15 +47,23 @@ class Placeholder extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.wrapper}>
-          <Image
-            source={{
-              uri: require('./assets/Watermark.svg')
-            }}
-            style={styles.placeholderImage}/>
+          <TimesWatermark style={styles.placeholderImage}/>
           <Text style={styles.placeholderText}>Advertisement</Text>
         </View>
       </View>
     );
+    // return (
+    //   <View style={styles.container}>
+    //     <View style={styles.wrapper}>
+    //       <Image
+    //         source={{
+    //           uri: require('./assets/Watermark.svg')
+    //         }}
+    //         style={styles.placeholderImage}/>
+    //       <Text style={styles.placeholderText}>Advertisement</Text>
+    //     </View>
+    //   </View>
+    // );
   }
 }
 
