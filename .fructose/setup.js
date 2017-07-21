@@ -1,6 +1,6 @@
-import initFructose from "hjkadshhjkl-test-utils";
+import setup from "@times-components/fructose/setup";
 import config from "../package";
 
 if (process.env.FRUCTOSE) {
-  initFructose(config.fructose);
+  setup(config.fructose);
 }
