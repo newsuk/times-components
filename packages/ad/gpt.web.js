@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Dimensions, StyleSheet, View, Image, Text } from "react-native";
+import { Dimensions, StyleSheet, View } from "react-native";
 import PropTypes from "prop-types";
 
 import AdManager from "./ad-manager";
@@ -62,11 +62,11 @@ class GPT extends Component {
         style={styles.container}
         id={this.props.code}
         onLayout={this.handleLayout}
-        style={styles.container} >
-          <Placeholder
-            width={config.maxSizes.width}
-            height={config.maxSizes.height}
-          />
+      >
+        <Placeholder
+          width={config.maxSizes.width}
+          height={config.maxSizes.height}
+        />
       </View>
     );
   }

@@ -8,12 +8,10 @@ const getMaxSizes = adSizes => {
   }
 
   return adSizes.reduce(
-    (max, [curWidth, curHeight]) => {
-      return {
-        width: Math.max(max.width, curWidth),
-        height: Math.max(max.height, curHeight),
-      }
-    },
+    (max, [curWidth, curHeight]) => ({
+      width: Math.max(max.width, curWidth),
+      height: Math.max(max.height, curHeight)
+    }),
     { width: 0, height: 0 }
   );
 };

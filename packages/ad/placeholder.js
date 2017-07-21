@@ -1,22 +1,22 @@
-import React, { Component } from "react";
-import { Dimensions, StyleSheet, View, Image, Text, ImageEditor } from "react-native";
+import React from "react";
+import { StyleSheet, View, Text } from "react-native";
 import PropTypes from "prop-types";
 
-import TimesWatermark from './assets/TimesWatermark';
+import TimesWatermark from "./assets/TimesWatermark";
 
-const getStyles = ( width, height ) =>
+const getStyles = (width, height) =>
   StyleSheet.create({
     container: {
       flex: 1,
-      justifyContent:'center',
-      alignItems:'center',
+      justifyContent: "center",
+      alignItems: "center"
     },
     wrapper: {
-      justifyContent:'center',
-      alignItems:'center',
+      justifyContent: "center",
+      alignItems: "center",
       backgroundColor: "#F9F9F9",
       width, // NOTE: should it be fixed somehow to 300 instead of 320?
-      height,
+      height
     },
     placeholderText: {
       fontSize: 12,
@@ -36,23 +36,17 @@ const getStyles = ( width, height ) =>
     }
   });
 
-class Placeholder extends Component {
-  render() {
-    const { width, height } = this.props;
-    const styles = getStyles(width, height);
-    return (
-      <View style={styles.container}>
-        <View style={styles.wrapper}>
-          <TimesWatermark
-            width={width}
-            height={height}
-          />
-          <Text style={styles.placeholderText}>Advertisement</Text>
-        </View>
+const Placeholder = ({ width, height }) => {
+  const styles = getStyles(width, height);
+  return (
+    <View style={styles.container}>
+      <View style={styles.wrapper}>
+        <TimesWatermark width={width} height={height} />
+        <Text style={styles.placeholderText}>Advertisement</Text>
       </View>
-    );
-  }
-}
+    </View>
+  );
+};
 
 Placeholder.propTypes = {
   width: PropTypes.number.isRequired,
