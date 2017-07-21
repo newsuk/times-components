@@ -48,7 +48,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/markup": "^0.1.1",
+    "@times-components/markup": "0.1.1",
     "date-fns": "1.28.5",
     "prop-types": "15.5.10",
     "react": "16.0.0-alpha.6",
