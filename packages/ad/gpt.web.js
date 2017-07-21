@@ -9,7 +9,7 @@ import { getSlotConfig } from "./generate-config";
 const getStyles = config =>
   StyleSheet.create({
     container: {
-      height: config.maxHeight
+      height: config.maxSizes.height
     }
   });
 
@@ -18,7 +18,6 @@ class GPT extends Component {
     super(props);
     this.handleLayout = this.handleLayout.bind(this);
     const { width } = Dimensions.get("window");
-    console.log(width)
     const config = getSlotConfig(
       this.props.adManager.section,
       this.props.code,
@@ -55,7 +54,8 @@ class GPT extends Component {
   }
 
   render() {
-    const styles = getStyles(this.state.config);
+    const { config } = this.state;
+    const styles = getStyles(config);
 
     return (
       <View
@@ -63,7 +63,10 @@ class GPT extends Component {
         id={this.props.code}
         onLayout={this.handleLayout}
         style={styles.container} >
-        <Placeholder config={this.state.config} />
+          <Placeholder
+            width={config.maxSizes.width}
+            height={config.maxSizes.height}
+          />
       </View>
     );
   }

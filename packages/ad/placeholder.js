@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 import TimesWatermark from './assets/TimesWatermark';
 
-const getStyles = config =>
+const getStyles = ( width, height ) =>
   StyleSheet.create({
     container: {
       flex: 1,
@@ -15,8 +15,8 @@ const getStyles = config =>
       justifyContent:'center',
       alignItems:'center',
       backgroundColor: "#F9F9F9",
-      width: 300, // TODO change
-      height: config.maxHeight,
+      width, // NOTE: should it be fixed somehow to 300 instead of 320?
+      height,
     },
     placeholderText: {
       fontSize: 12,
@@ -38,12 +38,15 @@ const getStyles = config =>
 
 class Placeholder extends Component {
   render() {
-    const styles = getStyles(this.props.config);
-
+    const { width, height } = this.props;
+    const styles = getStyles(width, height);
     return (
       <View style={styles.container}>
         <View style={styles.wrapper}>
-          <TimesWatermark width={300} height={this.props.config.maxHeight}/>
+          <TimesWatermark
+            width={width}
+            height={height}
+          />
           <Text style={styles.placeholderText}>Advertisement</Text>
         </View>
       </View>
@@ -52,7 +55,8 @@ class Placeholder extends Component {
 }
 
 Placeholder.propTypes = {
-  // TODO add SIZES
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired
 };
 
 export default Placeholder;

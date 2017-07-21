@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 import Svg, {
     G,
@@ -15,7 +16,7 @@ export default class TimesWatermark extends Component {
     // TODO we may want to verify with WIDTH > maxWidth (823) and use the latter
     // <Svg width="832" height="300" viewBox="0 0 832 300">
     const leftMargin = 50;
-    console.log(width, height)
+    // console.log(width, height)
     const viewBox = `${-leftMargin} 0 ${width} ${height}`;
     return (
       <Svg
@@ -40,3 +41,8 @@ export default class TimesWatermark extends Component {
     );
   }
 }
+
+TimesWatermark.propTypes = {
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired
+};

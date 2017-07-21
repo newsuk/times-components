@@ -44,14 +44,8 @@ export default () =>
     </div>
   )
   .add("Placeholder", () => {
-    const { width } = Dimensions.get("window");
-    const config = getSlotConfig(
-      "article",
-      "intervention",
-      width
-    );
-    return (<Placeholder config={config} />);
+    return (<Placeholder width={300} height={250} />);
   })
   .add("TimesWatermark (Default)", () => <TimesWatermark width={832} height={300}/>)
   .add("TimesWatermark (MPU)", () => <TimesWatermark width={300} height={250}/>)
-  .add("TimesWatermark (Billboard)", () => <TimesWatermark width={970} height={250}/>)
+  .add("TimesWatermark (Billboard)", () => <TimesWatermark width={970} height={250}/>);

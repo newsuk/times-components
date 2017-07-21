@@ -147,7 +147,7 @@ class Ad extends Component {
         source={{ html, baseUrl: this.props.baseUrl }}
         style={[
           this.props.style,
-          { height: this.config.maxHeight + this.viewBorder }
+          { height: this.config.maxSizes.height + this.viewBorder }
         ]}
         baseUrl={this.props.baseUrl}
         onNavigationStateChange={this.handleNavigationChange}
