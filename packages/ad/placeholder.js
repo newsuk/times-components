@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Dimensions, StyleSheet, View, Image, Text } from "react-native";
-// import ImageCrop from 'react-native-image-crop';
+import { Dimensions, StyleSheet, View, Image, Text, ImageEditor } from "react-native";
 import PropTypes from "prop-types";
 
 const getStyles = config =>
@@ -43,23 +42,6 @@ class Placeholder extends Component {
   render() {
     const styles = getStyles(this.props.config);
 
-
-    // return (
-    //   <View style={styles.container}>
-    //     <View style={styles.wrapper}>
-    //       <ImageCrop
-    //         ref={(c) => { this.imageCrop = c; }}
-    //         cropWidth={500}
-    //         cropHeight={500}
-    //         source={{
-    //           uri: 'https://c1.staticflickr.com/9/8073/28582653114_d154039cb9_k.jpg',
-    //         }}
-    //       />
-    //       <Text style={styles.placeholderText}>Advertisement</Text>
-    //     </View>
-    //   </View>
-    // );
-
     return (
       <View style={styles.container}>
         <View style={styles.wrapper}>
@@ -76,7 +58,7 @@ class Placeholder extends Component {
 }
 
 Placeholder.propTypes = {
-  // SIZES
+  // TODO add SIZES
 };
 
 export default Placeholder;
