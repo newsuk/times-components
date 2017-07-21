@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "article-summary.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -48,7 +48,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/markup": "^0.1.0",
+    "@times-components/markup": "^0.1.1",
     "date-fns": "1.28.5",
     "prop-types": "15.5.10",
     "react": "16.0.0-alpha.6",
@@ -58,5 +58,8 @@
   "peerDependencies": {
     "@storybook/react-native": "3.0.0",
     "react-native": "0.44.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

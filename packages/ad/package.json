@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ad",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Ad component",
   "main": "ad",
   "scripts": {
@@ -58,5 +58,8 @@
   },
   "peerDependencies": {
     "@storybook/react-native": "3.1.8"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "image.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -63,5 +63,8 @@
     "react-dom": "15.5.4",
     "react-native-web": "0.0.97",
     "react-style-proptype": "3.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

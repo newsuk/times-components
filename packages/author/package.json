@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "author.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -54,5 +54,8 @@
   },
   "peerDependencies": {
     "@storybook/react-native": "3.1.8"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
