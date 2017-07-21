@@ -54,6 +54,7 @@
 
 - (void)requestContentFromPlaybackService {
   [self.playbackService findVideoWithVideoID:_videoId parameters:nil completion:^(BCOVVideo *video, NSDictionary *jsonResponse, NSError *error) {
+    #pragma unused (jsonResponse)
     if (video) {
       [self.playbackController setVideos:@[ video ]];
     } else {
@@ -99,21 +100,21 @@
 
 - (void)setPolicyKey:(NSString *)policyKey {
   if (![policyKey isEqual:_policyKey]) {
-    _policyKey = [policyKey copy];
+      _policyKey = policyKey;
     [self initPlayerView];
   }
 }
 
 - (void)setAccountId:(NSString *)accountId {
   if (![accountId isEqual:_accountId]) {
-    _accountId = [accountId copy];
+    _accountId = accountId;
     [self initPlayerView];
   }
 }
 
 - (void)setVideoId:(NSString *)videoId {
   if (![videoId isEqual:_videoId]) {
-    _videoId = [videoId copy];
+    _videoId = videoId;
     [self initPlayerView];
   }
 }
@@ -145,7 +146,10 @@
 }
 
 - (void)playbackController:(id<BCOVPlaybackController>)controller playbackSession:(id<BCOVPlaybackSession>)session didReceiveLifecycleEvent:(BCOVPlaybackSessionLifecycleEvent *)lifecycleEvent {
-  if ([kBCOVPlaybackSessionLifecycleEventPlay isEqualToString:lifecycleEvent.eventType]) {
+
+    #pragma unused (controller)
+    #pragma unused (session)
+    if ([kBCOVPlaybackSessionLifecycleEventPlay isEqualToString:lifecycleEvent.eventType]) {
     _playerStatus = @"playing";
 
     [self emitStatus];
@@ -159,7 +163,11 @@
 }
 
 - (void)playbackController:(id<BCOVPlaybackController>)controller playbackSession:(id<BCOVPlaybackSession>)session didProgressTo:(NSTimeInterval)progress {
-  NSNumber *progressNumber = [NSNumber numberWithDouble:progress];
+
+    #pragma unused (controller)
+    #pragma unused (session)
+
+    NSNumber *progressNumber = [NSNumber numberWithDouble:progress];
 
   _playheadPosition = [progressNumber stringValue];
 
