@@ -1,6 +1,6 @@
 /* eslint-env browser */
 import React from "react";
-import { View } from "react-native";
+import { View, Dimensions } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 
 import Ad, { AdComposer } from "./ad.web";
@@ -43,4 +43,15 @@ export default () =>
       </AdComposer>
     </div>
   )
-  .add("TimesWatermark", () => <TimesWatermark/>);
+  .add("Placeholder", () => {
+    const { width } = Dimensions.get("window");
+    const config = getSlotConfig(
+      "article",
+      "intervention",
+      width
+    );
+    return (<Placeholder config={config} />);
+  })
+  .add("TimesWatermark (Default)", () => <TimesWatermark width={832} height={300}/>)
+  .add("TimesWatermark (MPU)", () => <TimesWatermark width={300} height={250}/>)
+  .add("TimesWatermark (Billboard)", () => <TimesWatermark width={970} height={250}/>)

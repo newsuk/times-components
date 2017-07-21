@@ -18,10 +18,6 @@ const getStyles = config =>
       width: 300, // TODO change
       height: config.maxHeight,
     },
-    placeholderImage: {
-      width: 300,
-      height: 250, // config.maxHeight
-    },
     placeholderText: {
       fontSize: 12,
       fontFamily: "TimesDigital-Regular",
@@ -34,8 +30,8 @@ const getStyles = config =>
       position: "absolute",
       paddingTop: 5,
       paddingBottom: 5,
-      paddingLeft: 15,
-      paddingRight: 15,
+      paddingLeft: 10,
+      paddingRight: 10,
       letterSpacing: 1.5
     }
   });
@@ -47,23 +43,11 @@ class Placeholder extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.wrapper}>
-          <TimesWatermark style={styles.placeholderImage}/>
+          <TimesWatermark width={300} height={this.props.config.maxHeight}/>
           <Text style={styles.placeholderText}>Advertisement</Text>
         </View>
       </View>
     );
-    // return (
-    //   <View style={styles.container}>
-    //     <View style={styles.wrapper}>
-    //       <Image
-    //         source={{
-    //           uri: require('./assets/Watermark.svg')
-    //         }}
-    //         style={styles.placeholderImage}/>
-    //       <Text style={styles.placeholderText}>Advertisement</Text>
-    //     </View>
-    //   </View>
-    // );
   }
 }
 
