@@ -6,10 +6,7 @@ import GPT from "../gpt.web";
 import AdManager from "../ad-manager";
 import { getSlotConfig } from "../generate-config";
 import gptManager from "../gpt-manager";
-import pbjs from "../pbjs-manager";
-import { pbjs as pbjsConfig } from "../config";
-
-const pbjsManager = pbjs(pbjsConfig);
+import pbjsManager from "../pbjs-manager";
 
 describe("Gpt test", () => {
   let adManager;
@@ -41,13 +38,13 @@ describe("Gpt test", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("unregisterAd when component unmounts", () => {
+  it("call unregisterAds when component unmounts", () => {
     const code = "ad-header";
     const tree = renderer.create(<GPT adManager={adManager} code={code} />);
 
-    adManager.unregisterAd = jest.fn();
+    adManager.unregisterAds = jest.fn();
     tree.unmount();
-    expect(adManager.unregisterAd).toHaveBeenCalledWith(code);
+    expect(adManager.unregisterAds).toHaveBeenCalledWith([code]);
   });
 
   it("handleLayout changes configuration", () => {

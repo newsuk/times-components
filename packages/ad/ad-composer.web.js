@@ -4,10 +4,7 @@ import { Broadcast } from "react-broadcast";
 
 import AdManager from "./ad-manager";
 import gptManager from "./gpt-manager";
-import pbjs from "./pbjs-manager";
-import { pbjs as pbjsConfig } from "./config";
-
-const pbjsManager = pbjs(pbjsConfig);
+import pbjsManager from "./pbjs-manager";
 
 class AdComposer extends Component {
   constructor(props) {

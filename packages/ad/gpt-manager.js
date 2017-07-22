@@ -5,6 +5,7 @@ const GptManager = class GptManager {
     this.scriptSet = false;
     this.initialised = false;
     this.googletag = null;
+    this.registeredAds = {};
   }
 
   get isReady() {
@@ -65,6 +66,22 @@ const GptManager = class GptManager {
         this.initialised = true;
         return resolve();
       });
+    });
+  }
+
+  // Optional slots argument will unregister only the specified ads
+  removeAds(slots) {
+    return new Promise(resolve => {
+      this.googletag.cmd.push(() => {
+        // Unregister all ads
+        if (!slots) {
+          this.googletag.destroySlots();
+          return resolve();
+        }
+        // Unregister specifc ads
+        this.googletag.destroySlots(slots);
+        return resolve();
+      })
     });
   }
 };

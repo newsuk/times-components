@@ -1,11 +1,11 @@
-import pbjs from "../pbjs-manager";
+import { PbjsManager } from "../pbjs-manager";
 import { pbjs as pbjsConfig } from "../config";
 
 describe("PrebidManager", () => {
   let pbjsManager;
 
   beforeEach(() => {
-    pbjsManager = pbjs(pbjsConfig);
+    pbjsManager = new PbjsManager(pbjsConfig);
   });
 
   it("pbjsManager singleton is initialised with correct props", () => {
@@ -43,7 +43,7 @@ describe("PrebidManager", () => {
     prebid.requestBids = requestBids;
     prebid.addAdUnits = addAdUnits;
 
-    pbjsManager.init({});
+    pbjsManager.init([]);
     expect(prebid.que).toHaveLength(1);
     prebid.que[0]();
     expect(addAdUnits).toHaveBeenCalled();

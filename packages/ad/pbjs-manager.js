@@ -1,11 +1,14 @@
 /* eslint-env browser */
 
+import { pbjs as config } from "./config";
+
 const PbjsManager = class PbjsManager {
   constructor(options) {
     this.options = options;
     this.scriptSet = false;
     this.initialised = false;
     this.pbjs = null;
+    this.registeredAdUnits = {};
   }
 
   get isReady() {
@@ -84,6 +87,10 @@ const PbjsManager = class PbjsManager {
       if (this.isReady) resolve();
 
       this.pbjs.que.push(() => {
+        // Keep track of the current registered ad units
+        adUnits.forEach(adUnit => {
+          this.registeredAdUnits[adUnit.code] = adUnit;
+        })
         this.pbjs.addAdUnits(adUnits);
 
         this.pbjs.requestBids({
@@ -95,6 +102,25 @@ const PbjsManager = class PbjsManager {
       });
     });
   }
+
+  // Optional codes argument will unregister only the specified ads
+  removeAdUnits(codes) {
+    return new Promise(resolve => {
+      this.pbjs.que.push(() => {
+        let adsToRemove = codes;
+        if (!codes) {
+          adsToRemove = Object.keys(this.registeredAdUnits);
+        }
+        adsToRemove.forEach(code => {
+          this.pbjs.removeAdUnit(code);
+          delete this.registeredAdUnits[code];
+        })
+        resolve();
+      });
+    });
+  }
 };
 
-export default config => new PbjsManager(config);
+export default new PbjsManager(config);
+
+export { PbjsManager };
