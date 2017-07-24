@@ -11,8 +11,8 @@ class Ad extends Component {
     return url && url.indexOf(baseUrl) === -1 && url.indexOf("://") > -1;
   }
 
-  static hasAdReady(title) {
-    return title ? title.indexOf("AD_READY") > -1 : false;
+  static hasAdReady(message) {
+    return message ? message.indexOf("AD_READY") > -1 : false;
   }
 
   static onOriginChange(url) {
@@ -55,6 +55,7 @@ class Ad extends Component {
   }
 
   handleNavigationChange(navState) {
+    // NOTE: we're using title here to send messages between the webview and the Ad component
     if (Ad.hasAdReady(navState.title)) {
       this.setAdReady();
     }
