@@ -1,4 +1,5 @@
 import React from "react";
+import { View } from "react-native";
 import Card from "@times-components/card";
 
 const AuthorProfileItem = item => {
@@ -6,15 +7,23 @@ const AuthorProfileItem = item => {
     date: item.publishedTime,
     headline: item.title,
     image: {
-      uri:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320"
+      uri: item.leadAsset ? item.leadAsset.crop.url : ""
     },
     text: JSON.parse(item.teaser),
     label: item.label,
     publication: item.publicationName
   };
 
-  return <Card {...props} />;
+  return (
+    <View
+      style={{
+        paddingBottom: 8,
+        paddingTop: 8
+      }}
+    >
+      <Card {...props} />
+    </View>
+  );
 };
 
 export default AuthorProfileItem;

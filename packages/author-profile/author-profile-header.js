@@ -1,33 +1,61 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import AuthorHead from "@times-components/author-head";
+import Pagination from "@times-components/pagination";
+import PropTypes from "prop-types";
 
 const AuthorProfileHeader = ({
-  articleCount,
-  biography,
+  articleCount: count,
+  biography: bio,
   currentPageOffset,
+  image: uri,
+  jobTitle: title,
   name,
-  image,
-  jobTitle,
-  twitter,
-  pageSize
+  pageSize,
+  twitter
 }) => {
-  const props = {
-    bio: biography,
+  const authorProps = {
+    bio,
     name,
-    uri: image,
-    title: jobTitle,
+    uri,
+    title,
     twitter
+  };
+
+  const paginationProps = {
+    page: currentPageOffset + 1,
+    pageSize,
+    count
   };
 
   return (
     <View>
-      <AuthorHead {...props} />
-      <Text>{articleCount} {currentPageOffset} {pageSize}</Text>
+      <AuthorHead {...authorProps} />
+      <Pagination {...paginationProps} />
     </View>
   );
 };
 
-AuthorProfileHeader.propTypes = Object.assign({}, AuthorHead.propTypes);
+AuthorProfileHeader.propTypes = {
+  articleCount: Pagination.propTypes.count,
+  biography: AuthorHead.propTypes.bio,
+  currentPageOffset: PropTypes.number,
+  image: AuthorHead.propTypes.uri,
+  jobTitle: AuthorHead.propTypes.title,
+  name: AuthorHead.propTypes.name,
+  twitter: AuthorHead.propTypes.twitter,
+  pageSize: Pagination.propTypes.pageSize
+};
+
+AuthorProfileHeader.defaultProps = {
+  articleCount: 0,
+  biography: null,
+  currentPageOffset: 0,
+  image: null,
+  jobTitle: null,
+  name: null,
+  twitter: null,
+  pageSize: 20
+};
 
 export default AuthorProfileHeader;
