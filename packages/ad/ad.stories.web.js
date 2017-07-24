@@ -5,7 +5,7 @@ import { storiesOf } from "@storybook/react-native";
 import Ad, { AdComposer } from "./ad.web";
 
 import Placeholder from "./placeholder";
-import TimesWatermark from "./assets/TimesWatermark";
+import TimesWatermark from "./times-watermark";
 
 export default () =>
   storiesOf("Ad", module)

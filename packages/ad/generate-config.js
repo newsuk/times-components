@@ -4,7 +4,7 @@ import { bidders, sizes } from "./config";
 // for the element
 const getMaxSizes = adSizes => {
   if (!adSizes) {
-    return 0;
+    return { width: 0, height: 0 };
   }
 
   return adSizes.reduce(

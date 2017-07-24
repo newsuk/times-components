@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, View, Text } from "react-native";
 import PropTypes from "prop-types";
 
-import TimesWatermark from "./assets/TimesWatermark";
+import TimesWatermark from "./times-watermark";
 
 const getStyles = (width, height) =>
   StyleSheet.create({

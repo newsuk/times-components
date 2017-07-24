@@ -12,7 +12,7 @@ class Ad extends Component {
   }
 
   static hasAdReady(title) {
-    return title.indexOf("AD_READY") > -1;
+    return title ? title.indexOf("AD_READY") > -1 : false;
   }
 
   static onOriginChange(url) {

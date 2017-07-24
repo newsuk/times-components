@@ -4,7 +4,7 @@ import { Text, ScrollView } from "react-native";
 
 import Ad from "./ad";
 import Placeholder from "./placeholder";
-import TimesWatermark from "./assets/TimesWatermark";
+import TimesWatermark from "./times-watermark";
 
 export default () =>
   storiesOf("Ad", module)
