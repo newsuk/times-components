@@ -22,17 +22,19 @@ const getStyles = isHorizontal =>
     }
   });
 
+const isOrientationHorizontal = (width) => width > horizontalBreakpoint
+
 class CardComponent extends React.Component {
   constructor(props) {
     super(props);
     this.handleLayout = this.handleLayout.bind(this);
     this.state = {
-      isHorizontal: true
+      isHorizontal: false
     };
   }
   handleLayout(event) {
     const width = event.nativeEvent.layout.width;
-    const isHorizontal = width > horizontalBreakpoint;
+    const isHorizontal = isOrientationHorizontal(width);
     if (isHorizontal !== this.state.isHorizontal) {
       this.setState({ isHorizontal });
     }

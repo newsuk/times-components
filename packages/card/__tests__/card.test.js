@@ -7,30 +7,32 @@ import renderer from "react-test-renderer";
 import Card from "../card";
 import props from "../fixtures/card-props.json";
 
-it("renders horizontal by default", () => {
+it("renders vertical by default", () => {
   const tree = renderer.create(<Card {...props} />).toJSON();
 
   expect(tree).toMatchSnapshot();
 });
 
-it("renders vertical above breakpoint", () => {
+it("renders horizontal above breakpoint", () => {
   const wrapper = shallow(<Card {...props} />);
   wrapper.setState({
-    isHorizontal: false
+    isHorizontal: true
   });
 
+  wrapper.update();
   expect(wrapper).toMatchSnapshot();
 });
 
-it("renders component horizontal by default", () => {
+it("renders component vertical by default", () => {
   const comp = new Card(...props);
 
-  expect(comp.state.isHorizontal).toBeTruthy();
+  expect(comp.state.isHorizontal).toBeFalsy();
 });
 
 it("renders component vertical below breakpoint", done => {
   const comp = new Card(...props);
 
+  comp.state.isHorizontal = true;
   comp.setState = ({ isHorizontal }) => {
     expect(isHorizontal).toBeFalsy();
 
@@ -40,9 +42,27 @@ it("renders component vertical below breakpoint", done => {
   comp.handleLayout({ nativeEvent: { layout: { width: 320 } } });
 });
 
-it("renders component horizontal above breakpoint", () => {
+it("renders component horizontal above breakpoint", done => {
   const comp = new Card(...props);
 
+  comp.setState = ({ isHorizontal }) => {
+    expect(isHorizontal).toBeTruthy();
+
+    return done();
+  };
+
   comp.handleLayout({ nativeEvent: { layout: { width: 640 } } });
-  expect(comp.state.isHorizontal).toBeTruthy();
+});
+
+it("don't set same card orientation", done => {
+  const comp = new Card(...props);
+
+  comp.setState = ({ isHorizontal }) => {
+    expect(isHorizontal).toBeTruthy();
+
+    return done();
+  };
+
+  comp.handleLayout({ nativeEvent: { layout: { width: 320 } } });
+  comp.handleLayout({ nativeEvent: { layout: { width: 640 } } });
 });
