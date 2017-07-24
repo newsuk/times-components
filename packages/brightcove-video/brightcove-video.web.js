@@ -180,6 +180,9 @@ class BrightcoveVideo extends Component {
           data-video-id={this.props.videoId}
           data-account={this.props.accountId}
           data-player={this.props.playerId}
+          // following 'autoplay' can not expected to always work on web
+          // see: https://docs.brightcove.com/en/player/brightcove-player/guides/in-page-embed-player-implementation.html
+          autoPlay="{this.props.autoplay}"
           data-application-id
           className="video-js"
           controls

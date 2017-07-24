@@ -3,6 +3,7 @@
 exports[`brightcove-video web component renders correctly 1`] = `
 <div>
   <video
+    autoPlay="{this.props.autoplay}"
     className="video-js"
     controls={true}
     data-account="[ACCOUNT_ID]"
