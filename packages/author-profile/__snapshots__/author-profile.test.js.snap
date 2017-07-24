@@ -2,10 +2,22 @@
 
 exports[`renders correctly 1`] = `
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> feat: profile is close to the desired ui
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={[Function]}
   ListHeaderComponent={[Function]}
+<<<<<<< HEAD
+=======
+  containerStyle={
+    Object {
+      "marginLeft": 10,
+      "marginRight": 10,
+    }
+  }
+>>>>>>> feat: profile is close to the desired ui
   data={
     Array [
       Object {
@@ -13,7 +25,11 @@ exports[`renders correctly 1`] = `
         "label": null,
         "leadAsset": Object {
           "crop": Object {
+<<<<<<< HEAD
             "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+=======
+            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+>>>>>>> feat: profile is close to the desired ui
           },
           "title": "British trio stopped on the way to join Isis",
         },
@@ -124,7 +140,11 @@ exports[`renders correctly 1`] = `
         "label": "Politics",
         "leadAsset": Object {
           "crop": Object {
+<<<<<<< HEAD
             "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+=======
+            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+>>>>>>> feat: profile is close to the desired ui
           },
           "title": "British trio stopped on the way to join Isis",
         },
@@ -217,7 +237,11 @@ exports[`renders correctly 1`] = `
         "label": "Science",
         "leadAsset": Object {
           "crop": Object {
+<<<<<<< HEAD
             "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+=======
+            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+>>>>>>> feat: profile is close to the desired ui
           },
           "title": "British trio stopped on the way to join Isis",
         },
@@ -310,7 +334,11 @@ exports[`renders correctly 1`] = `
         "label": "Science",
         "leadAsset": Object {
           "crop": Object {
+<<<<<<< HEAD
             "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+=======
+            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+>>>>>>> feat: profile is close to the desired ui
           },
           "title": "British trio stopped on the way to join Isis",
         },
@@ -403,7 +431,11 @@ exports[`renders correctly 1`] = `
         "label": "Health",
         "leadAsset": Object {
           "crop": Object {
+<<<<<<< HEAD
             "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
+=======
+            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
+>>>>>>> feat: profile is close to the desired ui
           },
           "title": "Gay and IVF couples ‘better at raising children’",
         },
@@ -474,7 +506,11 @@ exports[`renders correctly 1`] = `
         "label": "Science",
         "leadAsset": Object {
           "crop": Object {
+<<<<<<< HEAD
             "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+=======
+            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+>>>>>>> feat: profile is close to the desired ui
           },
           "title": "British trio stopped on the way to join Isis",
         },
@@ -567,7 +603,11 @@ exports[`renders correctly 1`] = `
         "label": "Environment",
         "leadAsset": Object {
           "crop": Object {
+<<<<<<< HEAD
             "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+=======
+            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+>>>>>>> feat: profile is close to the desired ui
           },
           "title": "Fourth Briton is seized trying to join Isis",
         },
@@ -638,7 +678,11 @@ exports[`renders correctly 1`] = `
         "label": "Politics",
         "leadAsset": Object {
           "crop": Object {
+<<<<<<< HEAD
             "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+=======
+            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+>>>>>>> feat: profile is close to the desired ui
           },
           "title": "Fourth Briton is seized trying to join Isis",
         },
@@ -709,7 +753,11 @@ exports[`renders correctly 1`] = `
         "label": "Health",
         "leadAsset": Object {
           "crop": Object {
+<<<<<<< HEAD
             "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+=======
+            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+>>>>>>> feat: profile is close to the desired ui
           },
           "title": "Fourth Briton is seized trying to join Isis",
         },
@@ -780,7 +828,11 @@ exports[`renders correctly 1`] = `
         "label": "Science",
         "leadAsset": Object {
           "crop": Object {
+<<<<<<< HEAD
             "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+=======
+            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+>>>>>>> feat: profile is close to the desired ui
           },
           "title": "Fourth Briton is seized trying to join Isis",
         },
@@ -851,7 +903,11 @@ exports[`renders correctly 1`] = `
         "label": "Health",
         "leadAsset": Object {
           "crop": Object {
+<<<<<<< HEAD
             "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+=======
+            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+>>>>>>> feat: profile is close to the desired ui
           },
           "title": "Fourth Briton is seized trying to join Isis",
         },
@@ -922,7 +978,11 @@ exports[`renders correctly 1`] = `
         "label": "Environment",
         "leadAsset": Object {
           "crop": Object {
+<<<<<<< HEAD
             "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+=======
+            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+>>>>>>> feat: profile is close to the desired ui
           },
           "title": "Fourth Briton is seized trying to join Isis",
         },
@@ -993,7 +1053,11 @@ exports[`renders correctly 1`] = `
         "label": "Science",
         "leadAsset": Object {
           "crop": Object {
+<<<<<<< HEAD
             "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C520%2C0%2C0",
+=======
+            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C520%2C0%2C0",
+>>>>>>> feat: profile is close to the desired ui
           },
           "title": "Clash of interests tarnished the project",
         },
@@ -1064,7 +1128,11 @@ exports[`renders correctly 1`] = `
         "label": "Science",
         "leadAsset": Object {
           "crop": Object {
+<<<<<<< HEAD
             "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/0a36e5e3aa3fa281979258f23ec7d9bb0b1316b7.jpg?crop=780%2C520%2C0%2C0",
+=======
+            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/0a36e5e3aa3fa281979258f23ec7d9bb0b1316b7.jpg?crop=780%2C520%2C0%2C0",
+>>>>>>> feat: profile is close to the desired ui
           },
           "title": "Giant brings out the stars for one last time",
         },
@@ -1135,7 +1203,11 @@ exports[`renders correctly 1`] = `
         "label": "Science",
         "leadAsset": Object {
           "crop": Object {
+<<<<<<< HEAD
             "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/e1099c348c8c727584842b53d5e708a0377770a2.jpg?crop=620%2C413%2C0%2C0",
+=======
+            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/e1099c348c8c727584842b53d5e708a0377770a2.jpg?crop=620%2C413%2C0%2C0",
+>>>>>>> feat: profile is close to the desired ui
           },
           "title": "Inquiry at sect schools that banned books",
         },
@@ -1236,7 +1308,11 @@ exports[`renders correctly 1`] = `
         "label": "Health",
         "leadAsset": Object {
           "crop": Object {
+<<<<<<< HEAD
             "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/eee1c7f320c3690dce7ee275ceb77e915c61c4f3.jpg?crop=780%2C520%2C0%2C0",
+=======
+            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/eee1c7f320c3690dce7ee275ceb77e915c61c4f3.jpg?crop=780%2C520%2C0%2C0",
+>>>>>>> feat: profile is close to the desired ui
           },
           "title": "Top graduates drawn to jobs in social work",
         },
@@ -1293,7 +1369,11 @@ exports[`renders correctly 1`] = `
         "label": "Health",
         "leadAsset": Object {
           "crop": Object {
+<<<<<<< HEAD
             "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
+=======
+            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
+>>>>>>> feat: profile is close to the desired ui
           },
           "title": "TMS: Pratchett’s law of the jungle",
         },
@@ -1366,7 +1446,11 @@ exports[`renders correctly 1`] = `
         "label": "Environment",
         "leadAsset": Object {
           "crop": Object {
+<<<<<<< HEAD
             "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/0d5fa06d6b10cfbbc2dade5f0d7b0271fccd994b.jpg?crop=780%2C520%2C0%2C0",
+=======
+            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/0d5fa06d6b10cfbbc2dade5f0d7b0271fccd994b.jpg?crop=780%2C520%2C0%2C0",
+>>>>>>> feat: profile is close to the desired ui
           },
           "title": "Learning by rote ‘will put pupils off poetry’",
         },
@@ -1671,11 +1755,22 @@ exports[`renders correctly 1`] = `
             <View
               onLayout={[Function]}
               style={
+<<<<<<< HEAD
                 Object {
                   "alignItems": "stretch",
                   "display": "flex",
                   "flexDirection": "column",
                 }
+=======
+                Array [
+                  Object {
+                    "alignItems": "stretch",
+                    "display": "flex",
+                    "flexDirection": "column",
+                  },
+                  null,
+                ]
+>>>>>>> feat: profile is close to the desired ui
               }
             >
               <Text
@@ -1689,8 +1784,13 @@ exports[`renders correctly 1`] = `
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 15,
                       "lineHeight": 20,
+<<<<<<< HEAD
                       "paddingBottom": 11,
                       "paddingTop": 11,
+=======
+                      "paddingBottom": 10,
+                      "paddingTop": 10,
+>>>>>>> feat: profile is close to the desired ui
                       "textAlign": "center",
                     },
                     null,
@@ -1715,6 +1815,7 @@ exports[`renders correctly 1`] = `
               >
                 <View />
                 <View>
+<<<<<<< HEAD
                   <View
                     accessibilityComponentType={undefined}
                     accessibilityLabel={undefined}
@@ -1760,6 +1861,23 @@ exports[`renders correctly 1`] = `
                       Next page &gt;
                     </Text>
                   </View>
+=======
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#006699",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 14,
+                        "lineHeight": 38,
+                      }
+                    }
+                  >
+                    Next page &gt;
+                  </Text>
+>>>>>>> feat: profile is close to the desired ui
                 </View>
               </View>
             </View>
@@ -1773,8 +1891,13 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
+<<<<<<< HEAD
             "paddingLeft": 10,
             "paddingRight": 10,
+=======
+            "marginLeft": 10,
+            "marginRight": 10,
+>>>>>>> feat: profile is close to the desired ui
           }
         }
       >
@@ -1946,7 +2069,14 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
+<<<<<<< HEAD
           "margin": 10,
+=======
+          "marginBottom": 10,
+          "marginLeft": 10,
+          "marginRight": 10,
+          "marginTop": 10,
+>>>>>>> feat: profile is close to the desired ui
         }
       }
     />
@@ -1956,8 +2086,13 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
+<<<<<<< HEAD
             "paddingLeft": 10,
             "paddingRight": 10,
+=======
+            "marginLeft": 10,
+            "marginRight": 10,
+>>>>>>> feat: profile is close to the desired ui
           }
         }
       >
@@ -2099,7 +2234,14 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
+<<<<<<< HEAD
           "margin": 10,
+=======
+          "marginBottom": 10,
+          "marginLeft": 10,
+          "marginRight": 10,
+          "marginTop": 10,
+>>>>>>> feat: profile is close to the desired ui
         }
       }
     />
@@ -2109,8 +2251,13 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
+<<<<<<< HEAD
             "paddingLeft": 10,
             "paddingRight": 10,
+=======
+            "marginLeft": 10,
+            "marginRight": 10,
+>>>>>>> feat: profile is close to the desired ui
           }
         }
       >
@@ -2252,7 +2399,14 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
+<<<<<<< HEAD
           "margin": 10,
+=======
+          "marginBottom": 10,
+          "marginLeft": 10,
+          "marginRight": 10,
+          "marginTop": 10,
+>>>>>>> feat: profile is close to the desired ui
         }
       }
     />
@@ -2262,8 +2416,13 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
+<<<<<<< HEAD
             "paddingLeft": 10,
             "paddingRight": 10,
+=======
+            "marginLeft": 10,
+            "marginRight": 10,
+>>>>>>> feat: profile is close to the desired ui
           }
         }
       >
@@ -2437,7 +2596,14 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
+<<<<<<< HEAD
           "margin": 10,
+=======
+          "marginBottom": 10,
+          "marginLeft": 10,
+          "marginRight": 10,
+          "marginTop": 10,
+>>>>>>> feat: profile is close to the desired ui
         }
       }
     />
@@ -2447,8 +2613,13 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
+<<<<<<< HEAD
             "paddingLeft": 10,
             "paddingRight": 10,
+=======
+            "marginLeft": 10,
+            "marginRight": 10,
+>>>>>>> feat: profile is close to the desired ui
           }
         }
       >
@@ -2622,7 +2793,14 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
+<<<<<<< HEAD
           "margin": 10,
+=======
+          "marginBottom": 10,
+          "marginLeft": 10,
+          "marginRight": 10,
+          "marginTop": 10,
+>>>>>>> feat: profile is close to the desired ui
         }
       }
     />
@@ -2632,8 +2810,13 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
+<<<<<<< HEAD
             "paddingLeft": 10,
             "paddingRight": 10,
+=======
+            "marginLeft": 10,
+            "marginRight": 10,
+>>>>>>> feat: profile is close to the desired ui
           }
         }
       >
@@ -2807,7 +2990,14 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
+<<<<<<< HEAD
           "margin": 10,
+=======
+          "marginBottom": 10,
+          "marginLeft": 10,
+          "marginRight": 10,
+          "marginTop": 10,
+>>>>>>> feat: profile is close to the desired ui
         }
       }
     />
@@ -2817,8 +3007,13 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
+<<<<<<< HEAD
             "paddingLeft": 10,
             "paddingRight": 10,
+=======
+            "marginLeft": 10,
+            "marginRight": 10,
+>>>>>>> feat: profile is close to the desired ui
           }
         }
       >
@@ -2991,7 +3186,14 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
+<<<<<<< HEAD
           "margin": 10,
+=======
+          "marginBottom": 10,
+          "marginLeft": 10,
+          "marginRight": 10,
+          "marginTop": 10,
+>>>>>>> feat: profile is close to the desired ui
         }
       }
     />
@@ -3001,8 +3203,13 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
+<<<<<<< HEAD
             "paddingLeft": 10,
             "paddingRight": 10,
+=======
+            "marginLeft": 10,
+            "marginRight": 10,
+>>>>>>> feat: profile is close to the desired ui
           }
         }
       >
@@ -3176,7 +3383,14 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
+<<<<<<< HEAD
           "margin": 10,
+=======
+          "marginBottom": 10,
+          "marginLeft": 10,
+          "marginRight": 10,
+          "marginTop": 10,
+>>>>>>> feat: profile is close to the desired ui
         }
       }
     />
@@ -3186,8 +3400,13 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
+<<<<<<< HEAD
             "paddingLeft": 10,
             "paddingRight": 10,
+=======
+            "marginLeft": 10,
+            "marginRight": 10,
+>>>>>>> feat: profile is close to the desired ui
           }
         }
       >
@@ -3360,7 +3579,14 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
+<<<<<<< HEAD
           "margin": 10,
+=======
+          "marginBottom": 10,
+          "marginLeft": 10,
+          "marginRight": 10,
+          "marginTop": 10,
+>>>>>>> feat: profile is close to the desired ui
         }
       }
     />
@@ -3370,8 +3596,13 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
+<<<<<<< HEAD
             "paddingLeft": 10,
             "paddingRight": 10,
+=======
+            "marginLeft": 10,
+            "marginRight": 10,
+>>>>>>> feat: profile is close to the desired ui
           }
         }
       >
@@ -3544,7 +3775,14 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
+<<<<<<< HEAD
           "margin": 10,
+=======
+          "marginBottom": 10,
+          "marginLeft": 10,
+          "marginRight": 10,
+          "marginTop": 10,
+>>>>>>> feat: profile is close to the desired ui
         }
       }
     />
@@ -3558,6 +3796,7 @@ exports[`renders correctly 1`] = `
     <View
       onLayout={[Function]}
     >
+<<<<<<< HEAD
       <View
         style={
           Object {
@@ -3887,12 +4126,301 @@ exports[`renders profile separator 1`] = `
   }
 />
 =======
+=======
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        FOOTER
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`renders profile footer 1`] = `
+>>>>>>> feat: profile is close to the desired ui
 <Text
   accessible={true}
   allowFontScaling={true}
   ellipsizeMode="tail"
 >
-  AuthorProfile
+  FOOTER
 </Text>
 >>>>>>> initial author-profile commit
+`;
+
+exports[`renders profile header 1`] = `
+<View>
+  <View
+    pointerEvents="box-none"
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "transparent",
+        "display": "flex",
+        "paddingBottom": 50,
+      }
+    }
+  >
+    <View
+      accessibilityRole="banner"
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F9F8F3",
+          "display": "flex",
+          "flexDirection": "column",
+          "paddingBottom": 50,
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        accessibilityRole="heading"
+        accessible={true}
+        allowFontScaling={true}
+        aria-level="1"
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 30,
+            "fontWeight": "400",
+            "lineHeight": 30,
+            "padding": 8,
+          }
+        }
+      >
+        Fiona Hamilton
+      </Text>
+      <Text
+        accessibilityRole="heading"
+        accessible={true}
+        allowFontScaling={true}
+        aria-level="2"
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontFamily": "TimesDigital-RegularSC",
+            "padding": 8,
+          }
+        }
+      >
+        legal editor
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#069",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 15,
+            "padding": 8,
+          }
+        }
+      >
+        jdoe
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#333",
+            "fontFamily": "TimesDigital-Regular",
+            "fontSize": 15,
+            "lineHeight": 25,
+            "padding": 8,
+            "textAlign": "center",
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+        >
+          Lorem 
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            ipsum
+          </Text>
+           testbr 
+          More text 
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontStyle": "italic",
+              }
+            }
+          >
+             last 
+          </Text>
+        </Text>
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "bottom": 0,
+          "height": 100,
+          "position": "absolute",
+          "width": 100,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+      >
+        <Image
+          onError={[Function]}
+          onLoad={[Function]}
+          source={
+            Object {
+              "uri": "",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "height": 1,
+                "width": 750,
+              },
+              Object {
+                "borderColor": "#FFF",
+                "borderRadius": 50,
+                "borderWidth": 5,
+                "height": 100,
+                "width": 100,
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginBottom": 10,
+          "marginLeft": 10,
+          "marginRight": 10,
+          "maxWidth": 800,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "stretch",
+              "display": "flex",
+              "flexDirection": "column",
+            },
+            null,
+          ]
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 15,
+                "lineHeight": 20,
+                "paddingBottom": 10,
+                "paddingTop": 10,
+                "textAlign": "center",
+              },
+              null,
+            ]
+          }
+        >
+          Showing 1 - 10 of 24 results
+        </Text>
+        <View
+          style={
+            Object {
+              "borderBottomColor": "#dbdbdb",
+              "borderBottomWidth": 1,
+              "borderStyle": "solid",
+              "borderTopColor": "#dbdbdb",
+              "borderTopWidth": 1,
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <View />
+          <View>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#006699",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 14,
+                  "lineHeight": 38,
+                }
+              }
+            >
+              Next page &gt;
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders profile separator 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#dbdbdb",
+      "height": 1,
+      "marginBottom": 10,
+      "marginLeft": 10,
+      "marginRight": 10,
+      "marginTop": 10,
+    }
+  }
+/>
 `;

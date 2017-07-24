@@ -4,11 +4,14 @@ exports[`renders compact above breakpoint 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "alignItems": "stretch",
-      "display": "flex",
-      "flexDirection": "column",
-    }
+    Array [
+      Object {
+        "alignItems": "stretch",
+        "display": "flex",
+        "flexDirection": "column",
+      },
+      null,
+    ]
   }
 >
   <Text
@@ -84,11 +87,14 @@ exports[`renders correctly 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "alignItems": "stretch",
-      "display": "flex",
-      "flexDirection": "column",
-    }
+    Array [
+      Object {
+        "alignItems": "stretch",
+        "display": "flex",
+        "flexDirection": "column",
+      },
+      null,
+    ]
   }
 >
   <Text
@@ -160,11 +166,14 @@ exports[`renders prev and next link 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "alignItems": "stretch",
-      "display": "flex",
-      "flexDirection": "column",
-    }
+    Array [
+      Object {
+        "alignItems": "stretch",
+        "display": "flex",
+        "flexDirection": "column",
+      },
+      null,
+    ]
   }
 >
   <Text
@@ -260,11 +269,14 @@ exports[`renders prev link 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "alignItems": "stretch",
-      "display": "flex",
-      "flexDirection": "column",
-    }
+    Array [
+      Object {
+        "alignItems": "stretch",
+        "display": "flex",
+        "flexDirection": "column",
+      },
+      null,
+    ]
   }
 >
   <Text
@@ -336,11 +348,14 @@ exports[`renders prev link 2`] = `
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "alignItems": "stretch",
-      "display": "flex",
-      "flexDirection": "column",
-    }
+    Array [
+      Object {
+        "alignItems": "stretch",
+        "display": "flex",
+        "flexDirection": "column",
+      },
+      null,
+    ]
   }
 >
   <Text
