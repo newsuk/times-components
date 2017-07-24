@@ -3878,9 +3878,9 @@ react-dom@15.5.4:
     object-assign "^4.1.0"
     prop-types "~15.5.7"
 
-react-native-svg@5.3.1:
-  version "5.3.1"
-  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-5.3.1.tgz#8d4c7640234368073c1fa4c86f867615de0799d9"
+react-native-svg@5.1.7:
+  version "5.1.7"
+  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-5.1.7.tgz#444b18b51eb38ff63205befaf612f59a4cbf64be"
   dependencies:
     color "^0.11.1"
     lodash "^4.16.6"
