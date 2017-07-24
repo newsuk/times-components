@@ -1,8 +1,24 @@
 import React from "react";
-import { View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import AuthorHead from "@times-components/author-head";
 import Pagination from "@times-components/pagination";
 import PropTypes from "prop-types";
+
+const styles = StyleSheet.create({
+  container: {
+    alignItems: "stretch",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center"
+  },
+  spacing: {
+    flex: 1,
+    marginLeft: 10,
+    marginRight: 10,
+    marginBottom: 10,
+    maxWidth: 800
+  }
+});
 
 const AuthorProfileHeader = ({
   articleCount: count,
@@ -31,7 +47,11 @@ const AuthorProfileHeader = ({
   return (
     <View>
       <AuthorHead {...authorProps} />
-      <Pagination {...paginationProps} />
+      <View style={styles.container}>
+        <View style={styles.spacing}>
+          <Pagination {...paginationProps} />
+        </View>
+      </View>
     </View>
   );
 };

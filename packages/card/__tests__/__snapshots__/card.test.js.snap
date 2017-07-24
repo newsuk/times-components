@@ -12,6 +12,7 @@ exports[`renders horizontal above breakpoint 1`] = `
       Object {
         "flexDirection": "row",
       },
+      undefined,
     ]
   }
 >
@@ -96,6 +97,7 @@ exports[`renders vertical by default 1`] = `
         "flexDirection": "column",
       },
       null,
+      undefined,
     ]
   }
 >

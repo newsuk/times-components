@@ -11,6 +11,9 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "transformIgnorePatterns": [
       "node_modules/(?!@times-components)/"
     ],
@@ -48,7 +51,7 @@
     "jest": "20.0.4",
     "react-native": "0.44.1",
     "react-test-renderer": "15.5.4",
-    "webpack": "2.6.1"
+    "webpack": "3.3.0"
   },
   "dependencies": {
     "@times-components/author-head": "0.0.1",

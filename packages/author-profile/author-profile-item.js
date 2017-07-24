@@ -1,6 +1,13 @@
 import React from "react";
-import { View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import Card from "@times-components/card";
+
+const styles = StyleSheet.create({
+  container: {
+    marginLeft: 10,
+    marginRight: 10
+  }
+})
 
 const AuthorProfileItem = item => {
   const props = {
@@ -9,18 +16,13 @@ const AuthorProfileItem = item => {
     image: {
       uri: item.leadAsset ? item.leadAsset.crop.url : ""
     },
-    text: JSON.parse(item.teaser),
+    text: item.teaser,
     label: item.label,
     publication: item.publicationName
   };
 
   return (
-    <View
-      style={{
-        paddingBottom: 8,
-        paddingTop: 8
-      }}
-    >
+    <View style={styles.container}>
       <Card {...props} />
     </View>
   );

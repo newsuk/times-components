@@ -71,13 +71,7 @@ exports[`renders a snapshot 1`] = `
           "padding": 8,
         }
       }
-    >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      />
-    </Text>
+    />
     <Text
       accessible={true}
       allowFontScaling={true}
@@ -114,7 +108,6 @@ exports[`renders a snapshot 1`] = `
       onLayout={[Function]}
     >
       <Image
-        aspectRatio={1}
         onError={[Function]}
         onLoad={[Function]}
         source={
@@ -215,19 +208,7 @@ exports[`renders a snapshot with data 1`] = `
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        onPress={[Function]}
-        style={
-          Object {
-            "color": "blue",
-          }
-        }
-      >
-        @carolmidgley
-      </Text>
+      carolmidgley
     </Text>
     <Text
       accessible={true}
@@ -293,7 +274,6 @@ exports[`renders a snapshot with data 1`] = `
       onLayout={[Function]}
     >
       <Image
-        aspectRatio={1}
         onError={[Function]}
         onLoad={[Function]}
         source={

@@ -14,6 +14,10 @@ class ImageComponent extends React.Component {
       height: 1
     };
 
+    if (props.source.uri.indexOf("//") === 0) {
+      this.state.source.uri = `https:${  props.source.uri}`;
+    }
+
     this.getSize = Image.getSize;
     this.handleError = this.handleError.bind(this);
     this.handleLayout = this.handleLayout.bind(this);
