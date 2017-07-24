@@ -1,12 +1,18 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { WebView, Dimensions, Linking, StyleSheet } from "react-native";
+import { View, WebView, Dimensions, Linking, StyleSheet } from "react-native";
 import { getSlotConfig } from "./generate-config";
 import { pbjs as pbjsConfig } from "./config";
+
+import Placeholder from "./placeholder";
 
 class Ad extends Component {
   static hasDifferentOrigin(url, baseUrl) {
     return url && url.indexOf(baseUrl) === -1 && url.indexOf("://") > -1;
+  }
+
+  static hasAdReady(title) {
+    return title.indexOf("AD_READY") > -1;
   }
 
   static onOriginChange(url) {
@@ -28,6 +34,17 @@ class Ad extends Component {
 
     this.handleOriginChange = this.handleOriginChange.bind(this);
     this.handleNavigationChange = this.handleNavigationChange.bind(this);
+    this.setAdReady = this.setAdReady.bind(this);
+
+    this.state = {
+      adReady: false
+    };
+  }
+
+  setAdReady() {
+    this.setState({
+      adReady: true
+    });
   }
 
   handleOriginChange(url) {
@@ -38,6 +55,10 @@ class Ad extends Component {
   }
 
   handleNavigationChange(navState) {
+    if (Ad.hasAdReady(navState.title)) {
+      this.setAdReady();
+    }
+
     this.handleOriginChange(navState.url);
   }
 
@@ -48,7 +69,6 @@ class Ad extends Component {
           <style>
             body {
               margin: 0 auto;
-              background-color: #f1f1f1;
               display: table;
               height: 100%;
               width: 100%;
@@ -63,12 +83,11 @@ class Ad extends Component {
           <script async src="https://www.googletagservices.com/tag/js/gpt.js"></script>
         </head>
         <body>
-        hey
           <div id='${this.config.code}'>
-            <img src='${require('./assets/MPU.png')}' width="300" height="250"/>
           </div>
 
           <script>
+            var i = 0;
             const config = ${JSON.stringify(this.config)};
             var PREBID_TIMEOUT = ${pbjsConfig.timeout};
             var adUnits = [{
@@ -76,6 +95,11 @@ class Ad extends Component {
                 sizes: config.sizes,
                 bids: config.bids
             }];
+
+            function notifyAdReady() {
+              document.title = 'AD_READY';
+              window.location.hash = ++i;
+            }
 
             function initPrebidDefaults() {
               window.pbjs = window.pbjs || {};
@@ -97,6 +121,7 @@ class Ad extends Component {
 
             function sendAdserverRequest () {
               if (pbjs.adserverRequestSent) return;
+              notifyAdReady();
               pbjs.adserverRequestSent = true;
               googletag.cmd.push(function() {
                 pbjs.que.push(function() {
@@ -140,18 +165,27 @@ class Ad extends Component {
       `;
 
     return (
-      <WebView
-        ref={ref => {
-          this.webview = ref;
-        }}
-        source={{ html, baseUrl: this.props.baseUrl }}
-        style={[
-          this.props.style,
-          { height: this.config.maxSizes.height + this.viewBorder }
-        ]}
-        baseUrl={this.props.baseUrl}
-        onNavigationStateChange={this.handleNavigationChange}
-      />
+      <View style={this.props.style}>
+        <Placeholder
+          width={this.config.maxSizes.width}
+          height={this.config.maxSizes.height}
+          style={{
+            display: this.state.adReady ? "none" : "flex"
+          }}
+        />
+        <WebView
+          ref={ref => {
+            this.webview = ref;
+          }}
+          source={{ html, baseUrl: this.props.baseUrl }}
+          style={{
+            height: this.config.maxSizes.height + this.viewBorder,
+            display: this.state.adReady ? "flex" : "none"
+          }}
+          baseUrl={this.props.baseUrl}
+          onNavigationStateChange={this.handleNavigationChange}
+        />
+      </View>
     );
   }
 }

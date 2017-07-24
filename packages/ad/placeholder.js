@@ -23,7 +23,6 @@ const getStyles = (width, height) =>
       fontFamily: "TimesDigital-Regular",
       backgroundColor: "#F9F9F9",
       color: "#696969",
-      textTransform: "uppercase",
       borderColor: "#D8D8D8",
       borderWidth: 1,
       borderStyle: "solid",
@@ -36,13 +35,13 @@ const getStyles = (width, height) =>
     }
   });
 
-const Placeholder = ({ width, height }) => {
+const Placeholder = ({ width, height, style }) => {
   const styles = getStyles(width, height);
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, style]}>
       <View style={styles.wrapper}>
         <TimesWatermark width={width} height={height} />
-        <Text style={styles.placeholderText}>Advertisement</Text>
+        <Text style={styles.placeholderText}>ADVERTISEMENT</Text>
       </View>
     </View>
   );
@@ -50,7 +49,14 @@ const Placeholder = ({ width, height }) => {
 
 Placeholder.propTypes = {
   width: PropTypes.number.isRequired,
-  height: PropTypes.number.isRequired
+  height: PropTypes.number.isRequired,
+  style: React.PropTypes.shape({
+    display: React.PropTypes.string
+  })
+};
+
+Placeholder.defaultProps = {
+  style: {}
 };
 
 export default Placeholder;

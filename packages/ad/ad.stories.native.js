@@ -3,6 +3,8 @@ import { storiesOf } from "@storybook/react-native";
 import { Text, ScrollView } from "react-native";
 
 import Ad from "./ad";
+import Placeholder from "./placeholder";
+import TimesWatermark from "./assets/TimesWatermark";
 
 export default () =>
   storiesOf("Ad", module)
@@ -61,4 +63,8 @@ export default () =>
           lobortis mattis enim, eu porta mi.
         </Text>
       </ScrollView>
+    )
+    .add("Placeholder", () => <Placeholder width={300} height={250} />)
+    .add("TimesWatermark (MPU)", () =>
+      <TimesWatermark width={300} height={250} />
     );
