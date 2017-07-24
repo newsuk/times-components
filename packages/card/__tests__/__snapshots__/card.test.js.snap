@@ -4,18 +4,34 @@ exports[`renders horizontal above breakpoint 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "display": "flex",
-      "flexDirection": "row",
-    }
+    Array [
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+      },
+      Object {
+        "flexDirection": "row",
+      },
+    ]
   }
 >
   <View
     style={
-      Object {
-        "flexBasis": 0,
-        "flexGrow": 2,
-      }
+      Array [
+        Object {
+          "paddingBottom": 15,
+        },
+        Object {
+          "flexBasis": "auto",
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+        Object {
+          "flexBasis": 0,
+          "flexGrow": 2,
+          "paddingBottom": 0,
+        },
+      ]
     }
   >
     <ImageComponent
@@ -28,11 +44,18 @@ exports[`renders horizontal above breakpoint 1`] = `
   </View>
   <View
     style={
-      Object {
-        "flexBasis": 0,
-        "flexGrow": 3,
-        "padding": 32,
-      }
+      Array [
+        Object {
+          "flexBasis": "auto",
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+        Object {
+          "flexBasis": 0,
+          "flexGrow": 3,
+          "paddingLeft": 15,
+        },
+      ]
     }
   >
     <ArticleSummary
@@ -67,18 +90,28 @@ exports[`renders vertical by default 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "display": "flex",
-      "flexDirection": "column",
-    }
+    Array [
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+      },
+      null,
+    ]
   }
 >
   <View
     style={
-      Object {
-        "flexBasis": "auto",
-        "flexGrow": 1,
-      }
+      Array [
+        Object {
+          "paddingBottom": 15,
+        },
+        Object {
+          "flexBasis": "auto",
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+        null,
+      ]
     }
   >
     <View
@@ -106,11 +139,14 @@ exports[`renders vertical by default 1`] = `
   </View>
   <View
     style={
-      Object {
-        "flexBasis": "auto",
-        "flexGrow": 1,
-        "padding": 32,
-      }
+      Array [
+        Object {
+          "flexBasis": "auto",
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+        null,
+      ]
     }
   >
     <View
