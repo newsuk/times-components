@@ -19,6 +19,7 @@ import com.facebook.react.uimanager.events.RCTEventEmitter;
 
 public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
   private String mVideoId, mAccountId, mPolicyKey, mPlayerStatus;
+  private Boolean mAutoplay;
 
   public RNTBrightcoveView(ThemedReactContext context) {
     super(context, null);
@@ -40,6 +41,11 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
     initVideo();
   }
 
+  public void setAutoplay(Boolean autoplay) {
+    mAutoplay = autoplay;
+    initVideo();
+  }
+
   private void emitState() {
     WritableMap event = Arguments.createMap();
     event.putString("playerStatus", mPlayerStatus);
@@ -58,7 +64,7 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
   }
 
   private void initVideo() {
-    if (mVideoId != null && mAccountId != null && mPolicyKey != null) {
+    if (mVideoId != null && mAccountId != null && mPolicyKey != null && mAutoplay != null) {
       EventEmitter eventEmitter = getEventEmitter();
 
       eventEmitter.on(EventType.PLAY, new EventListener() {
@@ -99,6 +105,10 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
         @Override
         public void onVideo(Video video) {
           RNTBrightcoveView.this.add(video);
+
+          if (mAutoplay) {
+            RNTBrightcoveView.this.start();
+          }
         }
       });
     }
