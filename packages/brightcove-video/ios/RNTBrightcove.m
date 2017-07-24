@@ -20,13 +20,13 @@
 }
 
 -(instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    return self;
+  self = [super initWithFrame:frame];
+  return self;
 }
 
 -(instancetype)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
-    return self;
+  self = [super initWithCoder:aDecoder];
+  return self;
 }
 
 - (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher {
@@ -100,7 +100,7 @@
 
 - (void)setPolicyKey:(NSString *)policyKey {
   if (![policyKey isEqual:_policyKey]) {
-      _policyKey = policyKey;
+    _policyKey = policyKey;
     [self initPlayerView];
   }
 }
@@ -147,9 +147,9 @@
 
 - (void)playbackController:(id<BCOVPlaybackController>)controller playbackSession:(id<BCOVPlaybackSession>)session didReceiveLifecycleEvent:(BCOVPlaybackSessionLifecycleEvent *)lifecycleEvent {
 
-    #pragma unused (controller)
-    #pragma unused (session)
-    if ([kBCOVPlaybackSessionLifecycleEventPlay isEqualToString:lifecycleEvent.eventType]) {
+  #pragma unused (controller)
+  #pragma unused (session)
+  if ([kBCOVPlaybackSessionLifecycleEventPlay isEqualToString:lifecycleEvent.eventType]) {
     _playerStatus = @"playing";
 
     [self emitStatus];
@@ -164,10 +164,10 @@
 
 - (void)playbackController:(id<BCOVPlaybackController>)controller playbackSession:(id<BCOVPlaybackSession>)session didProgressTo:(NSTimeInterval)progress {
 
-    #pragma unused (controller)
-    #pragma unused (session)
+  #pragma unused (controller)
+  #pragma unused (session)
 
-    NSNumber *progressNumber = [NSNumber numberWithDouble:progress];
+  NSNumber *progressNumber = [NSNumber numberWithDouble:progress];
 
   _playheadPosition = [progressNumber stringValue];
 
