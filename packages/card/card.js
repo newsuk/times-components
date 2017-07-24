@@ -5,24 +5,35 @@ import Image from "@times-components/image";
 
 const horizontalBreakpoint = 500;
 
-const getStyles = isHorizontal =>
-  StyleSheet.create({
-    container: {
-      display: "flex",
-      flexDirection: isHorizontal ? "row" : "column"
-    },
-    imageContainer: {
-      flexGrow: isHorizontal ? 2 : 1,
-      flexBasis: isHorizontal ? 0 : "auto"
-    },
-    summaryContainer: {
-      flexGrow: isHorizontal ? 3 : 1,
-      flexBasis: isHorizontal ? 0 : "auto",
-      padding: 32
-    }
-  });
+const styles = StyleSheet.create({
+  container: {
+    display: "flex",
+    flexDirection: "column"
+  },
+  childrenContainer: {
+    flexGrow: 1,
+    flexShrink: 1,
+    flexBasis: "auto"
+  },
+  imageContainer: {
+    paddingBottom: 15
+  },
+  horizontalContainer: {
+    flexDirection: "row"
+  },
+  horizontalImageContainer: {
+    flexGrow: 2,
+    flexBasis: 0,
+    paddingBottom: 0
+  },
+  horizontalSummaryContainer: {
+    flexGrow: 3,
+    flexBasis: 0,
+    paddingLeft: 15
+  }
+});
 
-const isOrientationHorizontal = (width) => width > horizontalBreakpoint
+const isOrientationHorizontal = width => width > horizontalBreakpoint;
 
 class CardComponent extends React.Component {
   constructor(props) {
@@ -40,14 +51,32 @@ class CardComponent extends React.Component {
     }
   }
   render() {
+    const { isHorizontal } = this.state;
     const { label, headline, text, date, publication, image } = this.props;
-    const styles = getStyles(this.state.isHorizontal);
+
     return (
-      <View onLayout={this.handleLayout} style={styles.container}>
-        <View style={styles.imageContainer}>
+      <View
+        onLayout={this.handleLayout}
+        style={[
+          styles.container,
+          isHorizontal ? styles.horizontalContainer : null
+        ]}
+      >
+        <View
+          style={[
+            styles.imageContainer,
+            styles.childrenContainer,
+            isHorizontal ? styles.horizontalImageContainer : null
+          ]}
+        >
           <Image style={styles.image} source={image} />
         </View>
-        <View style={styles.summaryContainer}>
+        <View
+          style={[
+            styles.childrenContainer,
+            isHorizontal ? styles.horizontalSummaryContainer : null
+          ]}
+        >
           <ArticleSummary
             label={label}
             headline={headline}
