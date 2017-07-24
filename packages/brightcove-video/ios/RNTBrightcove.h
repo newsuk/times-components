@@ -9,7 +9,7 @@
 @property (nonatomic, copy) NSString *policyKey;
 @property (nonatomic, copy) NSString *accountId;
 @property (nonatomic, copy) NSString *videoId;
-@property (nonatomic, assign) BOOL *autoplay;
+@property (nonatomic, assign) BOOL autoplay;
 @property (nonatomic, copy) RCTBubblingEventBlock onChange;
 @property (nonatomic, copy) RCTBubblingEventBlock onIOSError;
 
