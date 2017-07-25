@@ -73,6 +73,39 @@ describe("Native Ad test", () => {
     expect(result).toEqual(true);
   });
 
+  it("onOriginChange should try to open a link", done => {
+    const fakeUrl = "http://another-mock-url.com";
+
+    let refCanOpenURL;
+    let refOpenURL;
+
+    jest.mock("Linking", () => {
+      const canOpenURL = jest
+        .fn()
+        .mockImplementation(() => new Promise(resolve => resolve(true)));
+
+      const openURL = jest
+        .fn()
+        .mockImplementation(() => new Promise(resolve => resolve()));
+
+      refCanOpenURL = canOpenURL;
+      refOpenURL = openURL;
+
+      return {
+        canOpenURL,
+        openURL
+      };
+    });
+
+    Ad.onOriginChange(fakeUrl).then(() => {
+      expect(refCanOpenURL).toHaveBeenCalledWith(fakeUrl);
+      expect(refOpenURL).toHaveBeenCalled();
+      expect(refCanOpenURL.mock.calls.length).toEqual(1);
+      jest.resetModules();
+      done();
+    });
+  });
+
   it("onOriginChange should return error if url is not supported", done => {
     const fakeUrl = "http://another-mock-url.com";
 
