@@ -75,7 +75,7 @@
 }
 
 - (void)initPlayerView {
-  if (_policyKey && _accountId && _videoId && [NSNumber numberWithBool:_autoplayNumber] != nil) {
+  if (_policyKey && _accountId && _videoId && _autoplayNumber != nil) {
     [self setup];
 
     BCOVPUIBasicControlView *controlsView = [BCOVPUIBasicControlView basicControlViewWithVODLayout];
