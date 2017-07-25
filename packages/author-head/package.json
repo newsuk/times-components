@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-head",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "main": "author-head.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -47,8 +47,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/image": "0.0.1",
-    "@times-components/markup": "0.0.1",
+    "@times-components/image": "1.0.1",
+    "@times-components/markup": "0.1.1",
     "prop-types": "15.5.10",
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",
@@ -57,5 +57,8 @@
   },
   "peerDependencies": {
     "@storybook/react-native": "3.1.8"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

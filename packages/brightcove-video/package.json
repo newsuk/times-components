@@ -1,6 +1,6 @@
 {
   "name": "@times-components/brightcove-video",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "main": "brightcove-video",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -11,8 +11,12 @@
     "preset": "react-native",
     "rootDir": "../../",
     "testEnvironment": "jsdom",
-    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-    "testMatch": ["<rootDir>/packages/brightcove-video/__tests__/*"]
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/brightcove-video/__tests__/*"
+    ]
   },
   "repository": {
     "type": "git",
@@ -47,17 +51,20 @@
   "dependencies": {
     "prop-types": "15.5.10",
     "react": "16.0.0-alpha.6",
-    "react-native": "0.44.1",
     "react-dom": "15.5.4",
+    "react-native": "0.44.1",
     "react-native-web": "0.0.97"
   },
   "peerDependencies": {
-    "@storybook/react-native": "3.0.0",
-    "@storybook/addon-actions": "3.0.0"
+    "@storybook/addon-actions": "3.0.0",
+    "@storybook/react-native": "3.0.0"
   },
   "_timesComponentsCliVariables": {
     "component": "BrightcoveVideo",
     "packageDescription": "Brightcove component",
     "packageName": "brightcove-video"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

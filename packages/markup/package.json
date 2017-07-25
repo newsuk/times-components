@@ -1,6 +1,6 @@
 {
   "name": "@times-components/markup",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "a component which takes an HTML ast and renders the platform specific markup",
   "main": "markup",
   "scripts": {
@@ -56,5 +56,8 @@
   },
   "peerDependencies": {
     "@storybook/react-native": "3.1.8"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
