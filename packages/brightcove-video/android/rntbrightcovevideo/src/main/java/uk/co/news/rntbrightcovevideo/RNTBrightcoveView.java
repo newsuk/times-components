@@ -18,30 +18,33 @@ import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.events.RCTEventEmitter;
 
 public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
-  private String mVideoId, mAccountId, mPolicyKey, mPlayerStatus;
+  private String mVideoId;
+  private String mAccountId;
+  private String mPolicyKey;
+  private String mPlayerStatus;
   private Boolean mAutoplay;
 
-  public RNTBrightcoveView(ThemedReactContext context) {
-    super(context, null);
+  public RNTBrightcoveView(final ThemedReactContext context) {
+    super(context);
     finishInitialization();
   }
 
-  public void setVideoId(String videoId) {
+  public void setVideoId(final String videoId) {
     mVideoId = videoId;
     initVideo();
   }
 
-  public void setAccountId(String accountId) {
+  public void setAccountId(final String accountId) {
     mAccountId = accountId;
     initVideo();
   }
 
-  public void setPolicyKey(String policyKey) {
+  public void setPolicyKey(final String policyKey) {
     mPolicyKey = policyKey;
     initVideo();
   }
 
-  public void setAutoplay(Boolean autoplay) {
+  public void setAutoplay(final Boolean autoplay) {
     mAutoplay = autoplay;
     initVideo();
   }
@@ -55,7 +58,6 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
   }
 
   private void emitError(Event e) {
-    Log.d("emitError", e.toString());
     WritableMap event = Arguments.createMap();
     event.putString("code", e.properties.get("error_code").toString());
     event.putString("message", e.toString());
@@ -63,40 +65,28 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
     reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topLoadingError", event);
   }
 
+  private EventEmitter setupEventEmitter() {
+    EventEmitter eventEmitter = getEventEmitter();
+    eventEmitter.on(EventType.PLAY, onEvent("playing"));
+    eventEmitter.on(EventType.PAUSE, onEvent("paused"));
+    eventEmitter.on(EventType.SEEK_TO, new EventListener() {
+      @Override
+      public void processEvent(Event e) {
+        emitState();
+      }
+    });
+    eventEmitter.on(EventType.ERROR, new EventListener() {
+      @Override
+      public void processEvent(Event e) {
+        emitError(e);
+      }
+    });
+    return eventEmitter;
+  }
+
   private void initVideo() {
-    if (mVideoId != null && mAccountId != null && mPolicyKey != null && mAutoplay != null) {
-      EventEmitter eventEmitter = getEventEmitter();
-
-      eventEmitter.on(EventType.PLAY, new EventListener() {
-        @Override
-        public void processEvent(Event e) {
-          mPlayerStatus = "playing";
-          emitState();
-        }
-      });
-
-      eventEmitter.on(EventType.PAUSE, new EventListener() {
-        @Override
-        public void processEvent(Event e) {
-          mPlayerStatus = "paused";
-          emitState();
-        }
-      });
-
-      eventEmitter.on(EventType.SEEK_TO, new EventListener() {
-        @Override
-        public void processEvent(Event e) {
-          emitState();
-        }
-      });
-
-      eventEmitter.on(EventType.ERROR, new EventListener() {
-        @Override
-        public void processEvent(Event e) {
-          emitError(e);
-        }
-      });
-
+    if (parametersSet()) {
+      EventEmitter eventEmitter = setupEventEmitter();
       Catalog catalog = new Catalog(eventEmitter, mAccountId, mPolicyKey);
 
       this.setMediaController(new BrightcoveMediaController(this));
@@ -113,4 +103,19 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
       });
     }
   }
+
+  private EventListener onEvent(final String playerStatus) {
+    return new EventListener() {
+      @Override
+      public void processEvent(Event event) {
+        mPlayerStatus = playerStatus;
+        emitState();
+      }
+    };
+  }
+
+  private boolean parametersSet() {
+    return mVideoId != null && mAccountId != null && mPolicyKey != null && mAutoplay != null;
+  }
+
 }
