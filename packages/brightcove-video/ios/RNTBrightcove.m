@@ -121,7 +121,7 @@
 }
 
 - (void)setAutoplay:(BOOL)autoplay {
-  if (_autoplayNumber == nil || !(autoplay == [_autoplayNumber boolValue])) {
+  if (_autoplayNumber == nil || autoplay != [_autoplayNumber boolValue]) {
     _autoplayNumber = [NSNumber numberWithBool:autoplay];
     [self initPlayerView];
   }
@@ -157,6 +157,7 @@
 
   #pragma unused (controller)
   #pragma unused (session)
+  
   if ([kBCOVPlaybackSessionLifecycleEventPlay isEqualToString:lifecycleEvent.eventType]) {
     _playerStatus = @"playing";
 
