@@ -9,7 +9,9 @@ import TimesWatermark from "./times-watermark";
 export default () =>
   storiesOf("Ad", module)
     .add("render one native ad", () =>
-      <Ad code="intervention" section="article" />
+      <ScrollView>
+        <Ad code="intervention" section="article" />
+      </ScrollView>
     )
     .add("render one native ad and some text", () =>
       <ScrollView>
