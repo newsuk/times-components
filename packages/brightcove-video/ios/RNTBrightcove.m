@@ -17,7 +17,7 @@
   RCTEventDispatcher *_eventDispatcher;
   NSString *_playerStatus;
   NSString *_playheadPosition;
-  BOOL _autoplay;
+  NSNumber *_autoplayNumber;
 }
 
 -(instancetype)initWithFrame:(CGRect)frame {
@@ -47,7 +47,7 @@
   _playbackController = [manager createPlaybackController];
   _playbackController.delegate = self;
   _playbackController.autoAdvance = YES;
-  _playbackController.autoPlay = _autoplay;
+  _playbackController.autoPlay = [_autoplayNumber boolValue];
   
   _playbackService = [[BCOVPlaybackService alloc] initWithAccountId:_accountId
                                                           policyKey:_policyKey];
@@ -75,7 +75,7 @@
 }
 
 - (void)initPlayerView {
-  if (_policyKey && _accountId && _videoId && [NSNumber numberWithBool:_autoplay] != nil) {
+  if (_policyKey && _accountId && _videoId && [NSNumber numberWithBool:_autoplayNumber] != nil) {
     [self setup];
 
     BCOVPUIBasicControlView *controlsView = [BCOVPUIBasicControlView basicControlViewWithVODLayout];
@@ -121,8 +121,8 @@
 }
 
 - (void)setAutoplay:(BOOL)autoplay {
-  if (_autoplay != autoplay) {
-    _autoplay = autoplay;
+  if (_autoplayNumber == nil || !(autoplay == [_autoplayNumber boolValue])) {
+    _autoplayNumber = [NSNumber numberWithBool:autoplay];
     [self initPlayerView];
   }
 }
