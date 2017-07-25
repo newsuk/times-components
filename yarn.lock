@@ -4062,8 +4062,8 @@ github-url-from-git@^1.4.0:
   resolved "https://registry.yarnpkg.com/github-url-from-git/-/github-url-from-git-1.5.0.tgz#f985fedcc0a9aa579dc88d7aff068d55cc6251a0"
 
 glamor@^2.20.25:
-  version "2.20.35"
-  resolved "https://registry.yarnpkg.com/glamor/-/glamor-2.20.35.tgz#ba7ad597e31969523de6c00d1b6492e9f44d9457"
+  version "2.20.37"
+  resolved "https://registry.yarnpkg.com/glamor/-/glamor-2.20.37.tgz#3cd576deb760eaaf475dcc1f9b77bf6a7d2f8b26"
   dependencies:
     fbjs "^0.8.12"
     inline-style-prefixer "^3.0.6"
