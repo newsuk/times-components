@@ -8,5 +8,6 @@ export default {
   width: PropTypes.number,
   height: PropTypes.number,
   onError: PropTypes.func,
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
+  autoplay: PropTypes.bool
 };

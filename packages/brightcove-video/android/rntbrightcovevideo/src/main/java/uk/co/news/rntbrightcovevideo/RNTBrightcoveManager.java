@@ -43,6 +43,10 @@ public class RNTBrightcoveManager extends SimpleViewManager<RNTBrightcoveView> {
         mView.setPolicyKey(policyKey);
     }
 
+    @ReactProp(name = "autoplay")
+    public void setAutoplay(RNTBrightcoveView view, Boolean autoplay) {
+        mView.setAutoplay(autoplay);
+    }
 
     @Override
     public void receiveCommand(RNTBrightcoveView view, int commandId, @Nullable ReadableArray args) {

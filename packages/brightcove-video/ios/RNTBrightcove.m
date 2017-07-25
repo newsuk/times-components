@@ -17,16 +17,17 @@
   RCTEventDispatcher *_eventDispatcher;
   NSString *_playerStatus;
   NSString *_playheadPosition;
+  NSNumber *_autoplayNumber;
 }
 
 -(instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    return self;
+  self = [super initWithFrame:frame];
+  return self;
 }
 
 -(instancetype)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
-    return self;
+  self = [super initWithCoder:aDecoder];
+  return self;
 }
 
 - (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher {
@@ -46,14 +47,15 @@
   _playbackController = [manager createPlaybackController];
   _playbackController.delegate = self;
   _playbackController.autoAdvance = YES;
-  _playbackController.autoPlay = NO;
-
+  _playbackController.autoPlay = [_autoplayNumber boolValue];
+  
   _playbackService = [[BCOVPlaybackService alloc] initWithAccountId:_accountId
                                                           policyKey:_policyKey];
 }
 
 - (void)requestContentFromPlaybackService {
   [self.playbackService findVideoWithVideoID:_videoId parameters:nil completion:^(BCOVVideo *video, NSDictionary *jsonResponse, NSError *error) {
+    #pragma unused (jsonResponse)
     if (video) {
       [self.playbackController setVideos:@[ video ]];
     } else {
@@ -73,7 +75,7 @@
 }
 
 - (void)initPlayerView {
-  if (_policyKey && _accountId && _videoId) {
+  if (_policyKey && _accountId && _videoId && _autoplayNumber != nil) {
     [self setup];
 
     BCOVPUIBasicControlView *controlsView = [BCOVPUIBasicControlView basicControlViewWithVODLayout];
@@ -99,21 +101,28 @@
 
 - (void)setPolicyKey:(NSString *)policyKey {
   if (![policyKey isEqual:_policyKey]) {
-    _policyKey = [policyKey copy];
+    _policyKey = policyKey;
     [self initPlayerView];
   }
 }
 
 - (void)setAccountId:(NSString *)accountId {
   if (![accountId isEqual:_accountId]) {
-    _accountId = [accountId copy];
+    _accountId = accountId;
     [self initPlayerView];
   }
 }
 
 - (void)setVideoId:(NSString *)videoId {
   if (![videoId isEqual:_videoId]) {
-    _videoId = [videoId copy];
+    _videoId = videoId;
+    [self initPlayerView];
+  }
+}
+
+- (void)setAutoplay:(BOOL)autoplay {
+  if (_autoplayNumber == nil || autoplay != [_autoplayNumber boolValue]) {
+    _autoplayNumber = [NSNumber numberWithBool:autoplay];
     [self initPlayerView];
   }
 }
@@ -145,6 +154,10 @@
 }
 
 - (void)playbackController:(id<BCOVPlaybackController>)controller playbackSession:(id<BCOVPlaybackSession>)session didReceiveLifecycleEvent:(BCOVPlaybackSessionLifecycleEvent *)lifecycleEvent {
+
+  #pragma unused (controller)
+  #pragma unused (session)
+  
   if ([kBCOVPlaybackSessionLifecycleEventPlay isEqualToString:lifecycleEvent.eventType]) {
     _playerStatus = @"playing";
 
@@ -159,6 +172,10 @@
 }
 
 - (void)playbackController:(id<BCOVPlaybackController>)controller playbackSession:(id<BCOVPlaybackSession>)session didProgressTo:(NSTimeInterval)progress {
+
+  #pragma unused (controller)
+  #pragma unused (session)
+
   NSNumber *progressNumber = [NSNumber numberWithDouble:progress];
 
   _playheadPosition = [progressNumber stringValue];
