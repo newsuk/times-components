@@ -15,7 +15,7 @@ const getStyles = (width, height) =>
       justifyContent: "center",
       alignItems: "center",
       backgroundColor: "#F9F9F9",
-      width, // NOTE: should it be fixed somehow to 300 instead of 320?
+      width,
       height
     },
     placeholderText: {
