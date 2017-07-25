@@ -54,7 +54,7 @@
     "react-broadcast": "^0.1.2",
     "react-dom": "15.5.4",
     "react-native": "0.44.1",
-    "react-native-svg": "5.1.7",
+    "react-native-svg": "5.1.8",
     "react-native-web": "0.0.97",
     "svgs": "2.3.0"
   },

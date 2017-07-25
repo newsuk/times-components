@@ -1929,8 +1929,8 @@ caniuse-api@^1.5.2:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000704"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000704.tgz#8c5aa6fed8058e65c70f2c1f5d63f7088650705c"
+  version "1.0.30000706"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000706.tgz#e2b5f0460573cbcc88a0985f5cced08f1617c6f5"
 
 caniuse-lite@^1.0.30000697, caniuse-lite@^1.0.30000704:
   version "1.0.30000704"
@@ -3054,8 +3054,8 @@ dot-prop@^3.0.0:
     is-obj "^1.0.0"
 
 dot-prop@^4.1.0:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-4.1.1.tgz#a8493f0b7b5eeec82525b5c7587fa7de7ca859c1"
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-4.2.0.tgz#1f19e0c2e1aa0e32797c49799f2837ac6af69c57"
   dependencies:
     is-obj "^1.0.0"
 
@@ -3349,8 +3349,8 @@ escope@^3.6.0:
     estraverse "^4.1.1"
 
 eslint-config-airbnb-base@^11.2.0:
-  version "11.3.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-airbnb-base/-/eslint-config-airbnb-base-11.3.0.tgz#921ae3dfbbf3596345b549db09ac550874d98202"
+  version "11.3.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-airbnb-base/-/eslint-config-airbnb-base-11.3.1.tgz#c0ab108c9beed503cb999e4c60f4ef98eda0ed30"
   dependencies:
     eslint-restricted-globals "^0.1.1"
 
@@ -4071,8 +4071,8 @@ glamor@^2.20.25:
     prop-types "^15.5.10"
 
 glamorous@^3.22.1:
-  version "3.23.5"
-  resolved "https://registry.yarnpkg.com/glamorous/-/glamorous-3.23.5.tgz#49f613a29f64cdee80948679c66dbcd4084e5fd5"
+  version "3.24.0"
+  resolved "https://registry.yarnpkg.com/glamorous/-/glamorous-3.24.0.tgz#d64ff810a80c55143d19c28b6d31bc9339b30cc1"
   dependencies:
     brcast "^2.0.0"
     fast-memoize "^2.2.7"
@@ -5809,17 +5809,13 @@ miller-rabin@^4.0.0:
     bn.js "^4.0.0"
     brorand "^1.0.1"
 
-"mime-db@>= 1.27.0 < 2":
+"mime-db@>= 1.27.0 < 2", mime-db@~1.29.0:
   version "1.29.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.29.0.tgz#48d26d235589651704ac5916ca06001914266878"
 
 mime-db@~1.23.0:
   version "1.23.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.23.0.tgz#a31b4070adaea27d732ea333740a64d0ec9a6659"
-
-mime-db@~1.27.0:
-  version "1.27.0"
-  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.27.0.tgz#820f572296bbd20ec25ed55e5b5de869e5436eb1"
 
 mime-types@2.1.11:
   version "2.1.11"
@@ -5828,10 +5824,10 @@ mime-types@2.1.11:
     mime-db "~1.23.0"
 
 mime-types@^2.1.12, mime-types@~2.1.11, mime-types@~2.1.15, mime-types@~2.1.6, mime-types@~2.1.7, mime-types@~2.1.9:
-  version "2.1.15"
-  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.15.tgz#a4ebf5064094569237b8cf70046776d09fc92aed"
+  version "2.1.16"
+  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.16.tgz#2b858a52e5ecd516db897ac2be87487830698e23"
   dependencies:
-    mime-db "~1.27.0"
+    mime-db "~1.29.0"
 
 mime@1.3.4:
   version "1.3.4"
@@ -7088,9 +7084,9 @@ react-native-storybook-loader@1.4.1:
     glob "^7.1.1"
     yargs "^8.0.2"
 
-react-native-svg@5.1.7:
-  version "5.1.7"
-  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-5.1.7.tgz#444b18b51eb38ff63205befaf612f59a4cbf64be"
+react-native-svg@5.1.8:
+  version "5.1.8"
+  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-5.1.8.tgz#bdb9bc6a8693852751f7faa6598ebcb3d1be48ce"
   dependencies:
     color "^0.11.1"
     lodash "^4.16.6"
@@ -7693,8 +7689,8 @@ schema-utils@^0.3.0:
     ajv "^5.0.0"
 
 "semver@2 || 3 || 4 || 5", semver@5.x, semver@^5.0.1, semver@^5.0.3, semver@^5.1.0, semver@^5.3.0:
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-5.4.0.tgz#4b753f9bc8dc4c0b30cf460124ed17ae65444ae8"
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-5.4.1.tgz#e059c09d8571f0540823733433505d3a2f00b18e"
 
 send@0.13.2:
   version "0.13.2"
