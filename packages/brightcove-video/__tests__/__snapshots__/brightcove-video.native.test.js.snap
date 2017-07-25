@@ -3,6 +3,7 @@
 exports[`brightcove-video native component renders correctly 1`] = `
 <RNTBrightcove
   accountId="[ACCOUNT_ID]"
+  autoplay={false}
   onChange={[Function]}
   onIOSError={[Function]}
   onLoadingError={[Function]}

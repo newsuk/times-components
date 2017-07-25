@@ -3,5 +3,6 @@ export default {
   height: 180,
   playerId: "default",
   onError: () => {},
-  onChange: () => {}
+  onChange: () => {},
+  autoplay: false
 };

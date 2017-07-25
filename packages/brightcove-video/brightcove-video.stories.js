@@ -105,4 +105,12 @@ storiesOf("BrightcoveVideo", module)
       videoId={videoId}
       accountId={accountId}
     />
+  )
+  .add("With autoplay", () =>
+    <BrightcoveVideo
+      policyKey={policyKey}
+      videoId={videoId}
+      accountId={accountId}
+      autoplay
+    />
   );
