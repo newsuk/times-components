@@ -49,6 +49,30 @@ describe("Native Ad test", () => {
     expect(result).toEqual(false);
   });
 
+  it("hasDifferentOrigin returns false if incorrect URL was provided", () => {
+    const fakeUrl = "about:blank";
+    const result = Ad.hasDifferentOrigin(fakeUrl, adProps.baseUrl);
+    expect(result).toEqual(false);
+  });
+
+  it("hasAdReady should return false if no message was received", () => {
+    const title = "";
+    const result = Ad.hasAdReady(title);
+    expect(result).toEqual(false);
+  });
+
+  it("hasAdReady should return false if the message does not contain AD_READY", () => {
+    const title = "AD_TEST";
+    const result = Ad.hasAdReady(title);
+    expect(result).toEqual(false);
+  });
+
+  it("hasAdReady should return true if the message does contains AD_READY", () => {
+    const title = "AD_READYTEST";
+    const result = Ad.hasAdReady(title);
+    expect(result).toEqual(true);
+  });
+
   it("onOriginChange should try to open a link", done => {
     const fakeUrl = "http://another-mock-url.com";
 
@@ -162,5 +186,17 @@ describe("Native Ad test", () => {
     tree.handleOriginChange = jest.fn();
     tree.handleNavigationChange(navState);
     expect(tree.handleOriginChange).toHaveBeenCalledWith(navState.url);
+  });
+
+  it("handleNavigationChange should verify if ad is ready to be shown and show it", () => {
+    const tree = TestUtils.renderIntoDocument(ad);
+    const navState = {
+      title: "AD_READYTEST"
+    };
+    const hasAdReady = jest.spyOn(Ad, "hasAdReady");
+    const setAdReady = jest.spyOn(tree, "setAdReady");
+    tree.handleNavigationChange(navState);
+    expect(hasAdReady).toHaveBeenCalledWith(navState.title);
+    expect(setAdReady).toHaveBeenCalled();
   });
 });

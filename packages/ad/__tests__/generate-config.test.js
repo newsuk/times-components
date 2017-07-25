@@ -1,14 +1,14 @@
-import { getMaxHeight } from "../generate-config";
+import { getMaxSizes } from "../generate-config";
 
 describe("Generate Config test", () => {
-  it("getMaxHeight is 0 is no size is sent", () => {
-    const result = getMaxHeight(null);
-    expect(result).toEqual(0);
+  it("getMaxSizes has default values if no size is sent", () => {
+    const result = getMaxSizes(null);
+    expect(result).toEqual({ width: 0, height: 0 });
   });
 
-  it("getMaxHeight should return the maximum height from an array of arrays of sizes", () => {
+  it("getMaxSizes returns the maximum height and width from an array of arrays of sizes", () => {
     const sizes = [[300, 250], [320, 50], [320, 48]];
-    const result = getMaxHeight(sizes);
-    expect(result).toEqual(250);
+    const result = getMaxSizes(sizes);
+    expect(result).toEqual({ width: 320, height: 250 });
   });
 });

@@ -2,14 +2,17 @@ import { bidders, sizes } from "./config";
 
 // Given all the valid ad sizes returns the maximum height possible
 // for the element
-const getMaxHeight = adSizes => {
+const getMaxSizes = adSizes => {
   if (!adSizes) {
-    return 0;
+    return { width: 0, height: 0 };
   }
 
   return adSizes.reduce(
-    (max, [, curHeight]) => Math.max(max, curHeight || 0),
-    0
+    (max, [curWidth, curHeight]) => ({
+      width: Math.max(max.width, curWidth),
+      height: Math.max(max.height, curHeight)
+    }),
+    { width: 0, height: 0 }
   );
 };
 
@@ -41,7 +44,7 @@ const getAdSizes = (code, width) => {
 const getSlotConfig = (section, code, width) => {
   const adSizes = getAdSizes(code, width);
   const mappings = getSizeMaps(code);
-  const maxHeight = getMaxHeight(adSizes);
+  const maxSizes = getMaxSizes(adSizes);
   const bids = [
     {
       bidder: "appnexus",
@@ -93,10 +96,10 @@ const getSlotConfig = (section, code, width) => {
   return {
     code,
     sizes: adSizes,
-    maxHeight,
+    maxSizes,
     mappings,
     bids
   };
 };
 
-export { getAdSizes, getSizeMaps, getSlotConfig, getMaxHeight };
+export { getAdSizes, getSizeMaps, getSlotConfig, getMaxSizes };

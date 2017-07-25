@@ -12,7 +12,9 @@ class VideoWithExternalControls extends Component {
     return (
       <View>
         <BrightcoveVideo
-          ref={ref => (this.bcVideo = ref)}
+          ref={ref => {
+            this.bcVideo = ref;
+          }}
           policyKey={this.props.policyKey}
           videoId={this.props.videoId}
           accountId={this.props.accountId}
