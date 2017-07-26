@@ -57,8 +57,11 @@ class AdManager {
     if (codes) {
       slotsToRemove = [];
       codes.forEach(code => {
-        slotsToRemove.push(this.registeredSlots[code]);
-        delete this.registeredSlots[code];
+        const registeredSlot = this.registeredSlots[code];
+        if (registeredSlot) {
+          slotsToRemove.push(registeredSlot);
+          delete this.registeredSlots[code];
+        }
       });
     }
     return this.gptManager
