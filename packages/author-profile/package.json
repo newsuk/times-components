@@ -54,9 +54,15 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@times-components/author-head": "0.2.0",
     "@times-components/card": "0.3.0",
     "@times-components/pagination": "0.2.0",
+=======
+    "@times-components/author-head": "0.1.2",
+    "@times-components/card": "0.2.0",
+    "@times-components/pagination": "0.1.0",
+>>>>>>> feat: navigate to a different page
     "jest-cli": "20.0.4",
     "lodash.merge": "4.6.0",
     "prop-types": "15.5.10",

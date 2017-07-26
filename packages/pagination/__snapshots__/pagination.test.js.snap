@@ -4,14 +4,11 @@ exports[`renders compact above breakpoint 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
-        "alignItems": "stretch",
-        "display": "flex",
-        "flexDirection": "column",
-      },
-      null,
-    ]
+    Object {
+      "alignItems": "stretch",
+      "display": "flex",
+      "flexDirection": "column",
+    }
   }
 >
   <Text
@@ -55,16 +52,26 @@ exports[`renders compact above breakpoint 1`] = `
   >
     <View />
     <View>
+<<<<<<< HEAD
       <TouchableHighlight
         activeOpacity={0.85}
         underlayColor="black"
+=======
+      <TouchableOpacity
+        activeOpacity={0.2}
+        focusedOpacity={0.7}
+>>>>>>> feat: navigate to a different page
       >
         <Text
           accessibilityRole="link"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
+<<<<<<< HEAD
           href={null}
+=======
+          href="https://www.thetimes.co.uk/"
+>>>>>>> feat: navigate to a different page
           onPress={[Function]}
           style={
             Object {
@@ -87,14 +94,11 @@ exports[`renders correctly 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
-        "alignItems": "stretch",
-        "display": "flex",
-        "flexDirection": "column",
-      },
-      null,
-    ]
+    Object {
+      "alignItems": "stretch",
+      "display": "flex",
+      "flexDirection": "column",
+    }
   }
 >
   <Text
@@ -134,16 +138,26 @@ exports[`renders correctly 1`] = `
   >
     <View />
     <View>
+<<<<<<< HEAD
       <TouchableHighlight
         activeOpacity={0.85}
         underlayColor="black"
+=======
+      <TouchableOpacity
+        activeOpacity={0.2}
+        focusedOpacity={0.7}
+>>>>>>> feat: navigate to a different page
       >
         <Text
           accessibilityRole="link"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
+<<<<<<< HEAD
           href={null}
+=======
+          href="https://www.thetimes.co.uk/"
+>>>>>>> feat: navigate to a different page
           onPress={[Function]}
           style={
             Object {
@@ -166,14 +180,11 @@ exports[`renders prev and next link 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
-        "alignItems": "stretch",
-        "display": "flex",
-        "flexDirection": "column",
-      },
-      null,
-    ]
+    Object {
+      "alignItems": "stretch",
+      "display": "flex",
+      "flexDirection": "column",
+    }
   }
 >
   <Text
@@ -212,16 +223,26 @@ exports[`renders prev and next link 1`] = `
     }
   >
     <View>
+<<<<<<< HEAD
       <TouchableHighlight
         activeOpacity={0.85}
         underlayColor="black"
+=======
+      <TouchableOpacity
+        activeOpacity={0.2}
+        focusedOpacity={0.7}
+>>>>>>> feat: navigate to a different page
       >
         <Text
           accessibilityRole="link"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
+<<<<<<< HEAD
           href={null}
+=======
+          href="https://www.thetimes.co.uk/"
+>>>>>>> feat: navigate to a different page
           onPress={[Function]}
           style={
             Object {
@@ -237,16 +258,26 @@ exports[`renders prev and next link 1`] = `
       </TouchableHighlight>
     </View>
     <View>
+<<<<<<< HEAD
       <TouchableHighlight
         activeOpacity={0.85}
         underlayColor="black"
+=======
+      <TouchableOpacity
+        activeOpacity={0.2}
+        focusedOpacity={0.7}
+>>>>>>> feat: navigate to a different page
       >
         <Text
           accessibilityRole="link"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
+<<<<<<< HEAD
           href={null}
+=======
+          href="https://www.thetimes.co.uk/"
+>>>>>>> feat: navigate to a different page
           onPress={[Function]}
           style={
             Object {
@@ -269,14 +300,11 @@ exports[`renders prev link 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
-        "alignItems": "stretch",
-        "display": "flex",
-        "flexDirection": "column",
-      },
-      null,
-    ]
+    Object {
+      "alignItems": "stretch",
+      "display": "flex",
+      "flexDirection": "column",
+    }
   }
 >
   <Text
@@ -315,16 +343,26 @@ exports[`renders prev link 1`] = `
     }
   >
     <View>
+<<<<<<< HEAD
       <TouchableHighlight
         activeOpacity={0.85}
         underlayColor="black"
+=======
+      <TouchableOpacity
+        activeOpacity={0.2}
+        focusedOpacity={0.7}
+>>>>>>> feat: navigate to a different page
       >
         <Text
           accessibilityRole="link"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
+<<<<<<< HEAD
           href={null}
+=======
+          href="https://www.thetimes.co.uk/"
+>>>>>>> feat: navigate to a different page
           onPress={[Function]}
           style={
             Object {
@@ -348,14 +386,11 @@ exports[`renders prev link 2`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
-        "alignItems": "stretch",
-        "display": "flex",
-        "flexDirection": "column",
-      },
-      null,
-    ]
+    Object {
+      "alignItems": "stretch",
+      "display": "flex",
+      "flexDirection": "column",
+    }
   }
 >
   <Text
@@ -395,16 +430,26 @@ exports[`renders prev link 2`] = `
   >
     <View />
     <View>
+<<<<<<< HEAD
       <TouchableHighlight
         activeOpacity={0.85}
         underlayColor="black"
+=======
+      <TouchableOpacity
+        activeOpacity={0.2}
+        focusedOpacity={0.7}
+>>>>>>> feat: navigate to a different page
       >
         <Text
           accessibilityRole="link"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
+<<<<<<< HEAD
           href={null}
+=======
+          href="https://www.thetimes.co.uk/"
+>>>>>>> feat: navigate to a different page
           onPress={[Function]}
           style={
             Object {

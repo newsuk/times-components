@@ -1756,11 +1756,15 @@ exports[`renders correctly 1`] = `
               onLayout={[Function]}
               style={
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> feat: navigate to a different page
                 Object {
                   "alignItems": "stretch",
                   "display": "flex",
                   "flexDirection": "column",
                 }
+<<<<<<< HEAD
 =======
                 Array [
                   Object {
@@ -1771,6 +1775,8 @@ exports[`renders correctly 1`] = `
                   null,
                 ]
 >>>>>>> feat: profile is close to the desired ui
+=======
+>>>>>>> feat: navigate to a different page
               }
             >
               <Text
@@ -1785,12 +1791,17 @@ exports[`renders correctly 1`] = `
                       "fontSize": 15,
                       "lineHeight": 20,
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "paddingBottom": 11,
                       "paddingTop": 11,
 =======
                       "paddingBottom": 10,
                       "paddingTop": 10,
 >>>>>>> feat: profile is close to the desired ui
+=======
+                      "paddingBottom": 11,
+                      "paddingTop": 11,
+>>>>>>> feat: navigate to a different page
                       "textAlign": "center",
                     },
                     null,
@@ -1816,10 +1827,14 @@ exports[`renders correctly 1`] = `
                 <View />
                 <View>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> feat: navigate to a different page
                   <View
                     accessibilityComponentType={undefined}
                     accessibilityLabel={undefined}
                     accessibilityTraits={undefined}
+<<<<<<< HEAD
                     accessible={true}
                     hasTVPreferredFocus={undefined}
                     hitSlop={undefined}
@@ -1863,21 +1878,51 @@ exports[`renders correctly 1`] = `
                   </View>
 =======
                   <Text
+=======
+>>>>>>> feat: navigate to a different page
                     accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
+                    hitSlop={undefined}
+                    isTVSelectable={true}
+                    onLayout={undefined}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
                     style={
                       Object {
-                        "color": "#006699",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 14,
-                        "lineHeight": 38,
+                        "opacity": 1,
                       }
                     }
+                    testID={undefined}
+                    tvParallaxProperties={undefined}
                   >
+<<<<<<< HEAD
                     Next page &gt;
                   </Text>
 >>>>>>> feat: profile is close to the desired ui
+=======
+                    <Text
+                      accessibilityRole="link"
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      href="https://www.thetimes.co.uk/"
+                      onPress={[Function]}
+                      style={
+                        Object {
+                          "color": "#006699",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 14,
+                          "lineHeight": 38,
+                        }
+                      }
+                    >
+                      Next page &gt;
+                    </Text>
+                  </View>
+>>>>>>> feat: navigate to a different page
                 </View>
               </View>
             </View>
@@ -4340,14 +4385,11 @@ exports[`renders profile header 1`] = `
       <View
         onLayout={[Function]}
         style={
-          Array [
-            Object {
-              "alignItems": "stretch",
-              "display": "flex",
-              "flexDirection": "column",
-            },
-            null,
-          ]
+          Object {
+            "alignItems": "stretch",
+            "display": "flex",
+            "flexDirection": "column",
+          }
         }
       >
         <Text
@@ -4361,8 +4403,8 @@ exports[`renders profile header 1`] = `
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 15,
                 "lineHeight": 20,
-                "paddingBottom": 10,
-                "paddingTop": 10,
+                "paddingBottom": 11,
+                "paddingTop": 11,
                 "textAlign": "center",
               },
               null,
@@ -4387,21 +4429,47 @@ exports[`renders profile header 1`] = `
         >
           <View />
           <View>
-            <Text
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
               accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+              hitSlop={undefined}
+              isTVSelectable={true}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
               style={
                 Object {
-                  "color": "#006699",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 14,
-                  "lineHeight": 38,
+                  "opacity": 1,
                 }
               }
+              testID={undefined}
+              tvParallaxProperties={undefined}
             >
-              Next page &gt;
-            </Text>
+              <Text
+                accessibilityRole="link"
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                href="https://www.thetimes.co.uk/"
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                    "lineHeight": 38,
+                  }
+                }
+              >
+                Next page &gt;
+              </Text>
+            </View>
           </View>
         </View>
       </View>
