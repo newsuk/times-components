@@ -5,12 +5,6 @@ exports[`renders correctly 1`] = `
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={[Function]}
   ListHeaderComponent={[Function]}
-  containerStyle={
-    Object {
-      "marginLeft": 10,
-      "marginRight": 10,
-    }
-  }
   data={
     Array [
       Object {
@@ -18,7 +12,7 @@ exports[`renders correctly 1`] = `
         "label": null,
         "leadAsset": Object {
           "crop": Object {
-            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+            "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
           },
           "title": "British trio stopped on the way to join Isis",
         },
@@ -129,7 +123,7 @@ exports[`renders correctly 1`] = `
         "label": "Politics",
         "leadAsset": Object {
           "crop": Object {
-            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+            "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
           },
           "title": "British trio stopped on the way to join Isis",
         },
@@ -222,7 +216,7 @@ exports[`renders correctly 1`] = `
         "label": "Science",
         "leadAsset": Object {
           "crop": Object {
-            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+            "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
           },
           "title": "British trio stopped on the way to join Isis",
         },
@@ -315,7 +309,7 @@ exports[`renders correctly 1`] = `
         "label": "Science",
         "leadAsset": Object {
           "crop": Object {
-            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+            "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
           },
           "title": "British trio stopped on the way to join Isis",
         },
@@ -408,7 +402,7 @@ exports[`renders correctly 1`] = `
         "label": "Health",
         "leadAsset": Object {
           "crop": Object {
-            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
+            "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
           },
           "title": "Gay and IVF couples ‘better at raising children’",
         },
@@ -479,7 +473,7 @@ exports[`renders correctly 1`] = `
         "label": "Science",
         "leadAsset": Object {
           "crop": Object {
-            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+            "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
           },
           "title": "British trio stopped on the way to join Isis",
         },
@@ -572,7 +566,7 @@ exports[`renders correctly 1`] = `
         "label": "Environment",
         "leadAsset": Object {
           "crop": Object {
-            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+            "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
           },
           "title": "Fourth Briton is seized trying to join Isis",
         },
@@ -643,7 +637,7 @@ exports[`renders correctly 1`] = `
         "label": "Politics",
         "leadAsset": Object {
           "crop": Object {
-            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+            "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
           },
           "title": "Fourth Briton is seized trying to join Isis",
         },
@@ -714,7 +708,7 @@ exports[`renders correctly 1`] = `
         "label": "Health",
         "leadAsset": Object {
           "crop": Object {
-            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+            "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
           },
           "title": "Fourth Briton is seized trying to join Isis",
         },
@@ -785,7 +779,7 @@ exports[`renders correctly 1`] = `
         "label": "Science",
         "leadAsset": Object {
           "crop": Object {
-            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+            "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
           },
           "title": "Fourth Briton is seized trying to join Isis",
         },
@@ -856,7 +850,7 @@ exports[`renders correctly 1`] = `
         "label": "Health",
         "leadAsset": Object {
           "crop": Object {
-            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+            "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
           },
           "title": "Fourth Briton is seized trying to join Isis",
         },
@@ -927,7 +921,7 @@ exports[`renders correctly 1`] = `
         "label": "Environment",
         "leadAsset": Object {
           "crop": Object {
-            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+            "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
           },
           "title": "Fourth Briton is seized trying to join Isis",
         },
@@ -998,7 +992,7 @@ exports[`renders correctly 1`] = `
         "label": "Science",
         "leadAsset": Object {
           "crop": Object {
-            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C520%2C0%2C0",
+            "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C520%2C0%2C0",
           },
           "title": "Clash of interests tarnished the project",
         },
@@ -1069,7 +1063,7 @@ exports[`renders correctly 1`] = `
         "label": "Science",
         "leadAsset": Object {
           "crop": Object {
-            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/0a36e5e3aa3fa281979258f23ec7d9bb0b1316b7.jpg?crop=780%2C520%2C0%2C0",
+            "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/0a36e5e3aa3fa281979258f23ec7d9bb0b1316b7.jpg?crop=780%2C520%2C0%2C0",
           },
           "title": "Giant brings out the stars for one last time",
         },
@@ -1140,7 +1134,7 @@ exports[`renders correctly 1`] = `
         "label": "Science",
         "leadAsset": Object {
           "crop": Object {
-            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/e1099c348c8c727584842b53d5e708a0377770a2.jpg?crop=620%2C413%2C0%2C0",
+            "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/e1099c348c8c727584842b53d5e708a0377770a2.jpg?crop=620%2C413%2C0%2C0",
           },
           "title": "Inquiry at sect schools that banned books",
         },
@@ -1241,7 +1235,7 @@ exports[`renders correctly 1`] = `
         "label": "Health",
         "leadAsset": Object {
           "crop": Object {
-            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/eee1c7f320c3690dce7ee275ceb77e915c61c4f3.jpg?crop=780%2C520%2C0%2C0",
+            "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/eee1c7f320c3690dce7ee275ceb77e915c61c4f3.jpg?crop=780%2C520%2C0%2C0",
           },
           "title": "Top graduates drawn to jobs in social work",
         },
@@ -1298,7 +1292,7 @@ exports[`renders correctly 1`] = `
         "label": "Health",
         "leadAsset": Object {
           "crop": Object {
-            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
+            "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
           },
           "title": "TMS: Pratchett’s law of the jungle",
         },
@@ -1371,7 +1365,7 @@ exports[`renders correctly 1`] = `
         "label": "Environment",
         "leadAsset": Object {
           "crop": Object {
-            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/0d5fa06d6b10cfbbc2dade5f0d7b0271fccd994b.jpg?crop=780%2C520%2C0%2C0",
+            "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/0d5fa06d6b10cfbbc2dade5f0d7b0271fccd994b.jpg?crop=780%2C520%2C0%2C0",
           },
           "title": "Learning by rote ‘will put pupils off poetry’",
         },
@@ -1774,8 +1768,8 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
-            "marginLeft": 10,
-            "marginRight": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
           }
         }
       >
@@ -1947,10 +1941,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
-          "marginBottom": 10,
-          "marginLeft": 10,
-          "marginRight": 10,
-          "marginTop": 10,
+          "padding": 10,
         }
       }
     />
@@ -1960,8 +1951,8 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
-            "marginLeft": 10,
-            "marginRight": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
           }
         }
       >
@@ -2103,10 +2094,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
-          "marginBottom": 10,
-          "marginLeft": 10,
-          "marginRight": 10,
-          "marginTop": 10,
+          "padding": 10,
         }
       }
     />
@@ -2116,8 +2104,8 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
-            "marginLeft": 10,
-            "marginRight": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
           }
         }
       >
@@ -2259,10 +2247,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
-          "marginBottom": 10,
-          "marginLeft": 10,
-          "marginRight": 10,
-          "marginTop": 10,
+          "padding": 10,
         }
       }
     />
@@ -2272,8 +2257,8 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
-            "marginLeft": 10,
-            "marginRight": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
           }
         }
       >
@@ -2447,10 +2432,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
-          "marginBottom": 10,
-          "marginLeft": 10,
-          "marginRight": 10,
-          "marginTop": 10,
+          "padding": 10,
         }
       }
     />
@@ -2460,8 +2442,8 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
-            "marginLeft": 10,
-            "marginRight": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
           }
         }
       >
@@ -2635,10 +2617,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
-          "marginBottom": 10,
-          "marginLeft": 10,
-          "marginRight": 10,
-          "marginTop": 10,
+          "padding": 10,
         }
       }
     />
@@ -2648,8 +2627,8 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
-            "marginLeft": 10,
-            "marginRight": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
           }
         }
       >
@@ -2823,10 +2802,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
-          "marginBottom": 10,
-          "marginLeft": 10,
-          "marginRight": 10,
-          "marginTop": 10,
+          "padding": 10,
         }
       }
     />
@@ -2836,8 +2812,8 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
-            "marginLeft": 10,
-            "marginRight": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
           }
         }
       >
@@ -3010,10 +2986,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
-          "marginBottom": 10,
-          "marginLeft": 10,
-          "marginRight": 10,
-          "marginTop": 10,
+          "padding": 10,
         }
       }
     />
@@ -3023,8 +2996,8 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
-            "marginLeft": 10,
-            "marginRight": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
           }
         }
       >
@@ -3198,10 +3171,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
-          "marginBottom": 10,
-          "marginLeft": 10,
-          "marginRight": 10,
-          "marginTop": 10,
+          "padding": 10,
         }
       }
     />
@@ -3211,8 +3181,8 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
-            "marginLeft": 10,
-            "marginRight": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
           }
         }
       >
@@ -3385,10 +3355,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
-          "marginBottom": 10,
-          "marginLeft": 10,
-          "marginRight": 10,
-          "marginTop": 10,
+          "padding": 10,
         }
       }
     />
@@ -3398,8 +3365,8 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
-            "marginLeft": 10,
-            "marginRight": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
           }
         }
       >
@@ -3572,10 +3539,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
-          "marginBottom": 10,
-          "marginLeft": 10,
-          "marginRight": 10,
-          "marginTop": 10,
+          "padding": 10,
         }
       }
     />
@@ -3899,10 +3863,7 @@ exports[`renders profile separator 1`] = `
     Object {
       "backgroundColor": "#dbdbdb",
       "height": 1,
-      "marginBottom": 10,
-      "marginLeft": 10,
-      "marginRight": 10,
-      "marginTop": 10,
+      "padding": 10,
     }
   }
 />

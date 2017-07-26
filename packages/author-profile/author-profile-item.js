@@ -4,10 +4,10 @@ import Card from "@times-components/card";
 
 const styles = StyleSheet.create({
   container: {
-    marginLeft: 10,
-    marginRight: 10
+    paddingLeft: 10,
+    paddingRight: 10
   }
-})
+});
 
 const AuthorProfileItem = item => {
   const props = {
