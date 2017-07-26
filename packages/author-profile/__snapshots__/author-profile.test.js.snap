@@ -1719,6 +1719,7 @@ exports[`renders correctly 1`] = `
                     accessibilityLabel={undefined}
                     accessibilityTraits={undefined}
                     accessible={true}
+                    hasTVPreferredFocus={undefined}
                     hitSlop={undefined}
                     isTVSelectable={true}
                     onLayout={undefined}
@@ -1729,9 +1730,12 @@ exports[`renders correctly 1`] = `
                     onResponderTerminationRequest={[Function]}
                     onStartShouldSetResponder={[Function]}
                     style={
-                      Object {
-                        "opacity": 1,
-                      }
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                        },
+                        undefined,
+                      ]
                     }
                     testID={undefined}
                     tvParallaxProperties={undefined}
@@ -1741,7 +1745,7 @@ exports[`renders correctly 1`] = `
                       accessible={true}
                       allowFontScaling={true}
                       ellipsizeMode="tail"
-                      href="https://www.thetimes.co.uk/"
+                      href="https://www.thetimes.co.uk?page=3"
                       onPress={[Function]}
                       style={
                         Object {
@@ -1941,7 +1945,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
-          "padding": 10,
+          "margin": 10,
         }
       }
     />
@@ -2094,7 +2098,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
-          "padding": 10,
+          "margin": 10,
         }
       }
     />
@@ -2247,7 +2251,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
-          "padding": 10,
+          "margin": 10,
         }
       }
     />
@@ -2432,7 +2436,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
-          "padding": 10,
+          "margin": 10,
         }
       }
     />
@@ -2617,7 +2621,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
-          "padding": 10,
+          "margin": 10,
         }
       }
     />
@@ -2802,7 +2806,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
-          "padding": 10,
+          "margin": 10,
         }
       }
     />
@@ -2986,7 +2990,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
-          "padding": 10,
+          "margin": 10,
         }
       }
     />
@@ -3171,7 +3175,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
-          "padding": 10,
+          "margin": 10,
         }
       }
     />
@@ -3355,7 +3359,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
-          "padding": 10,
+          "margin": 10,
         }
       }
     />
@@ -3539,7 +3543,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#dbdbdb",
           "height": 1,
-          "padding": 10,
+          "margin": 10,
         }
       }
     />
@@ -3813,6 +3817,7 @@ exports[`renders profile header 1`] = `
               accessibilityLabel={undefined}
               accessibilityTraits={undefined}
               accessible={true}
+              hasTVPreferredFocus={undefined}
               hitSlop={undefined}
               isTVSelectable={true}
               onLayout={undefined}
@@ -3823,9 +3828,12 @@ exports[`renders profile header 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                Object {
-                  "opacity": 1,
-                }
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                  },
+                  undefined,
+                ]
               }
               testID={undefined}
               tvParallaxProperties={undefined}
@@ -3835,7 +3843,7 @@ exports[`renders profile header 1`] = `
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail"
-                href="https://www.thetimes.co.uk/"
+                href="https://www.thetimes.co.uk?page=3"
                 onPress={[Function]}
                 style={
                   Object {
@@ -3863,7 +3871,7 @@ exports[`renders profile separator 1`] = `
     Object {
       "backgroundColor": "#dbdbdb",
       "height": 1,
-      "padding": 10,
+      "margin": 10,
     }
   }
 />

@@ -9,8 +9,8 @@ import AuthorProfileItemSeparator from "./author-profile-item-separator";
 const AuthorProfile = props => {
   const headerProps = {
     ...props,
-    onNext: () => Linking.openURL("https://www.thetimes.co.uk/"),
-    onPrev: () => Linking.openURL("https://www.thetimes.co.uk/")
+    onNext: url => Linking.openURL(url),
+    onPrev: url => Linking.openURL(url)
   };
 
   return (

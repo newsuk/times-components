@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "#dbdbdb",
     height: 1,
-    padding: 10
+    margin: 10
   }
 });
 

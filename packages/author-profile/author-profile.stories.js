@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignSelf: "stretch"
   }
-})
+});
 
 storiesOf("AuthorProfile", module).add("AuthorProfile", () =>
   <View style={styles.background}>
@@ -26,7 +26,7 @@ storiesOf("AuthorProfile", module).add("AuthorProfile", () =>
         twitter={example.twitter}
         articleCount={example.articles.count}
         currentPageOfArticles={example.articles.list}
-        currentPageOffset={0}
+        currentPageOffset={1}
         pageSize={10}
       />
     </View>

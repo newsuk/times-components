@@ -44,8 +44,10 @@ const AuthorProfileHeader = ({
     count,
     onNext,
     onPrev,
+    nextPageLinking: "https://www.thetimes.co.uk?page=3",
     page: currentPageOffset + 1,
-    pageSize
+    pageSize,
+    prevPageLinking: "https://www.thetimes.co.uk?page=1"
   };
 
   return (

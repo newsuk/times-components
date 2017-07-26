@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, Text, TouchableHighlight, View } from "react-native";
 import PropTypes from "prop-types";
 
 const styles = StyleSheet.create({
@@ -62,36 +62,45 @@ class Pagination extends React.Component {
   }
 
   render() {
-    const { compact, count, page, pageSize, onNext, onPrev } = this.props;
+    const {
+      compact,
+      count,
+      nextPageLinking,
+      page,
+      pageSize,
+      prevPageLinking,
+      onNext,
+      onPrev
+    } = this.props;
 
     const startResult = (page - 1) * pageSize + 1;
     const finalResult = Math.min(count, page * pageSize);
     const message = `Showing ${startResult} - ${finalResult} of ${count} results`;
 
     const prevComponent = startResult > pageSize
-      ? <TouchableOpacity>
+      ? <TouchableHighlight>
           <Text
             accessibilityRole="link"
-            href={"https://www.thetimes.co.uk/"}
+            href={prevPageLinking}
             style={styles.arrows}
-            onPress={onPrev}
+            onPress={() => onPrev(prevPageLinking)}
           >
             {"< Previous page"}
           </Text>
-        </TouchableOpacity>
+        </TouchableHighlight>
       : null;
 
     const nextComponent = finalResult < count
-      ? <TouchableOpacity>
+      ? <TouchableHighlight>
           <Text
             accessibilityRole="link"
-            href={"https://www.thetimes.co.uk/"}
+            href={nextPageLinking}
             style={styles.arrows}
-            onPress={onNext}
+            onPress={() => onNext(nextPageLinking)}
           >
             {"Next page >"}
           </Text>
-        </TouchableOpacity>
+        </TouchableHighlight>
       : null;
 
     const messageComponent = !compact
@@ -117,16 +126,20 @@ class Pagination extends React.Component {
 Pagination.propTypes = {
   compact: PropTypes.bool,
   count: PropTypes.number.isRequired,
+  nextPageLinking: PropTypes.string,
   page: PropTypes.number,
   pageSize: PropTypes.number,
+  prevPageLinking: PropTypes.string,
   onNext: PropTypes.func,
   onPrev: PropTypes.func
 };
 
 Pagination.defaultProps = {
   compact: false,
+  nextPageLinking: null,
   page: 1,
   pageSize: 20,
+  prevPageLinking: null,
   onNext: () => {},
   onPrev: () => {}
 };

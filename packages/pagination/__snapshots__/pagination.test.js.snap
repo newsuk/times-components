@@ -52,16 +52,16 @@ exports[`renders compact above breakpoint 1`] = `
   >
     <View />
     <View>
-      <TouchableOpacity
-        activeOpacity={0.2}
-        focusedOpacity={0.7}
+      <TouchableHighlight
+        activeOpacity={0.85}
+        underlayColor="black"
       >
         <Text
           accessibilityRole="link"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
-          href="https://www.thetimes.co.uk/"
+          href={null}
           onPress={[Function]}
           style={
             Object {
@@ -74,7 +74,7 @@ exports[`renders compact above breakpoint 1`] = `
         >
           Next page &gt;
         </Text>
-      </TouchableOpacity>
+      </TouchableHighlight>
     </View>
   </View>
 </View>
@@ -128,16 +128,16 @@ exports[`renders correctly 1`] = `
   >
     <View />
     <View>
-      <TouchableOpacity
-        activeOpacity={0.2}
-        focusedOpacity={0.7}
+      <TouchableHighlight
+        activeOpacity={0.85}
+        underlayColor="black"
       >
         <Text
           accessibilityRole="link"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
-          href="https://www.thetimes.co.uk/"
+          href={null}
           onPress={[Function]}
           style={
             Object {
@@ -150,7 +150,7 @@ exports[`renders correctly 1`] = `
         >
           Next page &gt;
         </Text>
-      </TouchableOpacity>
+      </TouchableHighlight>
     </View>
   </View>
 </View>
@@ -203,16 +203,16 @@ exports[`renders prev and next link 1`] = `
     }
   >
     <View>
-      <TouchableOpacity
-        activeOpacity={0.2}
-        focusedOpacity={0.7}
+      <TouchableHighlight
+        activeOpacity={0.85}
+        underlayColor="black"
       >
         <Text
           accessibilityRole="link"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
-          href="https://www.thetimes.co.uk/"
+          href={null}
           onPress={[Function]}
           style={
             Object {
@@ -225,19 +225,19 @@ exports[`renders prev and next link 1`] = `
         >
           &lt; Previous page
         </Text>
-      </TouchableOpacity>
+      </TouchableHighlight>
     </View>
     <View>
-      <TouchableOpacity
-        activeOpacity={0.2}
-        focusedOpacity={0.7}
+      <TouchableHighlight
+        activeOpacity={0.85}
+        underlayColor="black"
       >
         <Text
           accessibilityRole="link"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
-          href="https://www.thetimes.co.uk/"
+          href={null}
           onPress={[Function]}
           style={
             Object {
@@ -250,7 +250,7 @@ exports[`renders prev and next link 1`] = `
         >
           Next page &gt;
         </Text>
-      </TouchableOpacity>
+      </TouchableHighlight>
     </View>
   </View>
 </View>
@@ -303,16 +303,16 @@ exports[`renders prev link 1`] = `
     }
   >
     <View>
-      <TouchableOpacity
-        activeOpacity={0.2}
-        focusedOpacity={0.7}
+      <TouchableHighlight
+        activeOpacity={0.85}
+        underlayColor="black"
       >
         <Text
           accessibilityRole="link"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
-          href="https://www.thetimes.co.uk/"
+          href={null}
           onPress={[Function]}
           style={
             Object {
@@ -325,7 +325,7 @@ exports[`renders prev link 1`] = `
         >
           &lt; Previous page
         </Text>
-      </TouchableOpacity>
+      </TouchableHighlight>
     </View>
     <View />
   </View>
@@ -380,16 +380,16 @@ exports[`renders prev link 2`] = `
   >
     <View />
     <View>
-      <TouchableOpacity
-        activeOpacity={0.2}
-        focusedOpacity={0.7}
+      <TouchableHighlight
+        activeOpacity={0.85}
+        underlayColor="black"
       >
         <Text
           accessibilityRole="link"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
-          href="https://www.thetimes.co.uk/"
+          href={null}
           onPress={[Function]}
           style={
             Object {
@@ -402,7 +402,7 @@ exports[`renders prev link 2`] = `
         >
           Next page &gt;
         </Text>
-      </TouchableOpacity>
+      </TouchableHighlight>
     </View>
   </View>
 </View>
