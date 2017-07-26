@@ -2,14 +2,14 @@ import gptManager from "./gpt-manager";
 import pbjsManager from "./pbjs-manager";
 
 const defaultOptions = {
-  section: 'article',
-  networkId: '25436805',
-  adUnit: 'd.thetimes.co.uk'
+  section: "article",
+  networkId: "25436805",
+  adUnit: "d.thetimes.co.uk"
 };
 
 class AdManager {
   constructor(opts = {}) {
-    const options = {...defaultOptions, ...opts};
+    const options = { ...defaultOptions, ...opts };
     this.adQueue = [];
     this.registeredSlots = {};
     this.adUnit = options.adUnit;
@@ -49,28 +49,30 @@ class AdManager {
   unregisterAds(codes) {
     let slotsToRemove;
     // We're unregistering all ads
-    if (!codes) this.initialised = false;
+    if (!codes) {
+      this.initialised = false;
+      this.registeredSlots = {};
+    }
     // Unregister specifc ads
-    if (codes){
+    if (codes) {
       slotsToRemove = [];
       codes.forEach(code => {
         slotsToRemove.push(this.registeredSlots[code]);
         delete this.registeredSlots[code];
-      })
+      });
     }
-    return this.gptManager.removeAds(slotsToRemove)
+    return this.gptManager
+      .removeAds(slotsToRemove)
       .then(this.pbjsManager.removeAdUnits.bind(this.pbjsManager, codes));
   }
 
   // Called by the ad components to signal that a new set of ads needs to be fetched
   getAds() {
     // Only request new ads if all the ads have unregistered
-    if(Object.keys(this.registeredSlots).length) return Promise.resolve();
-    return this.init()
-      .then(this.display.bind(this))
-      .catch(err => {
-        throw new Error(err);
-      });
+    if (Object.keys(this.registeredSlots).length) return Promise.resolve();
+    return this.init().then(this.display.bind(this)).catch(err => {
+      throw new Error(err);
+    });
   }
 
   display() {
