@@ -33,7 +33,7 @@ include ':app', ':rntbrightcovevideo'
 Lastly, add this line to the file, taking care to point the _relative_ path to your `node_modules`,
 
 ```
-project(':rntbrightcovevideo').projectDir = new File(settingsDir, '<path-to-node_modules>/@newsint/brightcove-video/android/rntbrightcovevideo')
+project(':rntbrightcovevideo').projectDir = new File(settingsDir, '<path-to-node_modules>/@times-components/brightcove-video/android/rntbrightcovevideo')
 ```
 
 ## Implementation
