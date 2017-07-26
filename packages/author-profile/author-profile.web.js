@@ -10,22 +10,31 @@ const styles = StyleSheet.create({
     maxWidth: 650,
     alignSelf: "center"
   }
-})
+});
 
-const AuthorProfile = props =>
-  <View>
-    <AuthorProfileHeader {...props} />
-    {props.currentPageOfArticles.map((item, key) => {
-      const separatorComponent = key > 0 ? <AuthorProfileItemSeparator /> : null;
-      return (
-        <View style={styles.container}>
-          {separatorComponent}
-          <AuthorProfileItem {...item} />
-        </View>
-      )
-    })}
-    <AuthorProfileFooter />
-  </View>;
+const AuthorProfile = props => {
+  const headerProps = {
+    ...props
+  };
+
+  return (
+    <View>
+      <AuthorProfileHeader {...headerProps} />
+      {props.currentPageOfArticles.map((item, key) => {
+        const separatorComponent = key > 0
+          ? <AuthorProfileItemSeparator />
+          : null;
+        return (
+          <View style={styles.container}>
+            {separatorComponent}
+            <AuthorProfileItem {...item} />
+          </View>
+        );
+      })}
+      <AuthorProfileFooter />
+    </View>
+  );
+};
 
 AuthorProfile.propTypes = Object.assign(
   {},

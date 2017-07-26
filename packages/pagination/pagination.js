@@ -69,16 +69,26 @@ class Pagination extends React.Component {
     const message = `Showing ${startResult} - ${finalResult} of ${count} results`;
 
     const prevComponent = startResult > pageSize
-      ? <TouchableOpacity onPress={onPrev}>
-          <Text style={styles.arrows}>
+      ? <TouchableOpacity>
+          <Text
+            accessibilityRole="link"
+            href={"https://www.thetimes.co.uk/"}
+            style={styles.arrows}
+            onPress={onPrev}
+          >
             {"< Previous page"}
           </Text>
         </TouchableOpacity>
       : null;
 
     const nextComponent = finalResult < count
-      ? <TouchableOpacity onPress={onNext}>
-          <Text style={styles.arrows}>
+      ? <TouchableOpacity>
+          <Text
+            accessibilityRole="link"
+            href={"https://www.thetimes.co.uk/"}
+            style={styles.arrows}
+            onPress={onNext}
+          >
             {"Next page >"}
           </Text>
         </TouchableOpacity>

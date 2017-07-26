@@ -1676,14 +1676,11 @@ exports[`renders correctly 1`] = `
             <View
               onLayout={[Function]}
               style={
-                Array [
-                  Object {
-                    "alignItems": "stretch",
-                    "display": "flex",
-                    "flexDirection": "column",
-                  },
-                  null,
-                ]
+                Object {
+                  "alignItems": "stretch",
+                  "display": "flex",
+                  "flexDirection": "column",
+                }
               }
             >
               <Text
@@ -1697,8 +1694,8 @@ exports[`renders correctly 1`] = `
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 15,
                       "lineHeight": 20,
-                      "paddingBottom": 10,
-                      "paddingTop": 10,
+                      "paddingBottom": 11,
+                      "paddingTop": 11,
                       "textAlign": "center",
                     },
                     null,
@@ -1723,21 +1720,47 @@ exports[`renders correctly 1`] = `
               >
                 <View />
                 <View>
-                  <Text
+                  <View
+                    accessibilityComponentType={undefined}
+                    accessibilityLabel={undefined}
+                    accessibilityTraits={undefined}
                     accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
+                    hitSlop={undefined}
+                    isTVSelectable={true}
+                    onLayout={undefined}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
                     style={
                       Object {
-                        "color": "#006699",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 14,
-                        "lineHeight": 38,
+                        "opacity": 1,
                       }
                     }
+                    testID={undefined}
+                    tvParallaxProperties={undefined}
                   >
-                    Next page &gt;
-                  </Text>
+                    <Text
+                      accessibilityRole="link"
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      href="https://www.thetimes.co.uk/"
+                      onPress={[Function]}
+                      style={
+                        Object {
+                          "color": "#006699",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 14,
+                          "lineHeight": 38,
+                        }
+                      }
+                    >
+                      Next page &gt;
+                    </Text>
+                  </View>
                 </View>
               </View>
             </View>
@@ -3777,14 +3800,11 @@ exports[`renders profile header 1`] = `
       <View
         onLayout={[Function]}
         style={
-          Array [
-            Object {
-              "alignItems": "stretch",
-              "display": "flex",
-              "flexDirection": "column",
-            },
-            null,
-          ]
+          Object {
+            "alignItems": "stretch",
+            "display": "flex",
+            "flexDirection": "column",
+          }
         }
       >
         <Text
@@ -3798,8 +3818,8 @@ exports[`renders profile header 1`] = `
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 15,
                 "lineHeight": 20,
-                "paddingBottom": 10,
-                "paddingTop": 10,
+                "paddingBottom": 11,
+                "paddingTop": 11,
                 "textAlign": "center",
               },
               null,
@@ -3824,21 +3844,47 @@ exports[`renders profile header 1`] = `
         >
           <View />
           <View>
-            <Text
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
               accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+              hitSlop={undefined}
+              isTVSelectable={true}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
               style={
                 Object {
-                  "color": "#006699",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 14,
-                  "lineHeight": 38,
+                  "opacity": 1,
                 }
               }
+              testID={undefined}
+              tvParallaxProperties={undefined}
             >
-              Next page &gt;
-            </Text>
+              <Text
+                accessibilityRole="link"
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                href="https://www.thetimes.co.uk/"
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                    "lineHeight": 38,
+                  }
+                }
+              >
+                Next page &gt;
+              </Text>
+            </View>
           </View>
         </View>
       </View>

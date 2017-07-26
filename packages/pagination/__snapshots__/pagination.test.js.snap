@@ -4,14 +4,11 @@ exports[`renders compact above breakpoint 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
-        "alignItems": "stretch",
-        "display": "flex",
-        "flexDirection": "column",
-      },
-      null,
-    ]
+    Object {
+      "alignItems": "stretch",
+      "display": "flex",
+      "flexDirection": "column",
+    }
   }
 >
   <Text
@@ -58,12 +55,14 @@ exports[`renders compact above breakpoint 1`] = `
       <TouchableOpacity
         activeOpacity={0.2}
         focusedOpacity={0.7}
-        onPress={[Function]}
       >
         <Text
+          accessibilityRole="link"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
+          href="https://www.thetimes.co.uk/"
+          onPress={[Function]}
           style={
             Object {
               "color": "#006699",
@@ -85,14 +84,11 @@ exports[`renders correctly 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
-        "alignItems": "stretch",
-        "display": "flex",
-        "flexDirection": "column",
-      },
-      null,
-    ]
+    Object {
+      "alignItems": "stretch",
+      "display": "flex",
+      "flexDirection": "column",
+    }
   }
 >
   <Text
@@ -135,12 +131,14 @@ exports[`renders correctly 1`] = `
       <TouchableOpacity
         activeOpacity={0.2}
         focusedOpacity={0.7}
-        onPress={[Function]}
       >
         <Text
+          accessibilityRole="link"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
+          href="https://www.thetimes.co.uk/"
+          onPress={[Function]}
           style={
             Object {
               "color": "#006699",
@@ -162,14 +160,11 @@ exports[`renders prev and next link 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
-        "alignItems": "stretch",
-        "display": "flex",
-        "flexDirection": "column",
-      },
-      null,
-    ]
+    Object {
+      "alignItems": "stretch",
+      "display": "flex",
+      "flexDirection": "column",
+    }
   }
 >
   <Text
@@ -211,12 +206,14 @@ exports[`renders prev and next link 1`] = `
       <TouchableOpacity
         activeOpacity={0.2}
         focusedOpacity={0.7}
-        onPress={[Function]}
       >
         <Text
+          accessibilityRole="link"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
+          href="https://www.thetimes.co.uk/"
+          onPress={[Function]}
           style={
             Object {
               "color": "#006699",
@@ -234,12 +231,14 @@ exports[`renders prev and next link 1`] = `
       <TouchableOpacity
         activeOpacity={0.2}
         focusedOpacity={0.7}
-        onPress={[Function]}
       >
         <Text
+          accessibilityRole="link"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
+          href="https://www.thetimes.co.uk/"
+          onPress={[Function]}
           style={
             Object {
               "color": "#006699",
@@ -261,14 +260,11 @@ exports[`renders prev link 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
-        "alignItems": "stretch",
-        "display": "flex",
-        "flexDirection": "column",
-      },
-      null,
-    ]
+    Object {
+      "alignItems": "stretch",
+      "display": "flex",
+      "flexDirection": "column",
+    }
   }
 >
   <Text
@@ -310,12 +306,14 @@ exports[`renders prev link 1`] = `
       <TouchableOpacity
         activeOpacity={0.2}
         focusedOpacity={0.7}
-        onPress={[Function]}
       >
         <Text
+          accessibilityRole="link"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
+          href="https://www.thetimes.co.uk/"
+          onPress={[Function]}
           style={
             Object {
               "color": "#006699",
@@ -338,14 +336,11 @@ exports[`renders prev link 2`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
-        "alignItems": "stretch",
-        "display": "flex",
-        "flexDirection": "column",
-      },
-      null,
-    ]
+    Object {
+      "alignItems": "stretch",
+      "display": "flex",
+      "flexDirection": "column",
+    }
   }
 >
   <Text
@@ -388,12 +383,14 @@ exports[`renders prev link 2`] = `
       <TouchableOpacity
         activeOpacity={0.2}
         focusedOpacity={0.7}
-        onPress={[Function]}
       >
         <Text
+          accessibilityRole="link"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
+          href="https://www.thetimes.co.uk/"
+          onPress={[Function]}
           style={
             Object {
               "color": "#006699",

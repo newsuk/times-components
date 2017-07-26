@@ -27,6 +27,8 @@ const AuthorProfileHeader = ({
   image: uri,
   jobTitle: title,
   name,
+  onNext,
+  onPrev,
   pageSize,
   twitter
 }) => {
@@ -39,9 +41,11 @@ const AuthorProfileHeader = ({
   };
 
   const paginationProps = {
+    count,
+    onNext,
+    onPrev,
     page: currentPageOffset + 1,
-    pageSize,
-    count
+    pageSize
   };
 
   return (
@@ -63,8 +67,10 @@ AuthorProfileHeader.propTypes = {
   image: AuthorHead.propTypes.uri,
   jobTitle: AuthorHead.propTypes.title,
   name: AuthorHead.propTypes.name,
-  twitter: AuthorHead.propTypes.twitter,
-  pageSize: Pagination.propTypes.pageSize
+  onNext: Pagination.propTypes.onNext,
+  onPrev: Pagination.propTypes.onPrev,
+  pageSize: Pagination.propTypes.pageSize,
+  twitter: AuthorHead.propTypes.twitter
 };
 
 AuthorProfileHeader.defaultProps = {
@@ -74,8 +80,10 @@ AuthorProfileHeader.defaultProps = {
   image: null,
   jobTitle: null,
   name: null,
-  twitter: null,
-  pageSize: 20
+  onNext: () => {},
+  onPrev: () => {},
+  pageSize: 20,
+  twitter: null
 };
 
 export default AuthorProfileHeader;
