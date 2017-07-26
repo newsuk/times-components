@@ -33,12 +33,12 @@ class GPT extends Component {
   }
 
   componentWillUpdate() {
-    this.props.adManager.unregisterAd(this.props.code);
+    this.props.adManager.unregisterAds([this.props.code]);
     this.props.adManager.registerAd(this.state.config);
   }
 
   componentWillUnmount() {
-    this.props.adManager.unregisterAd(this.props.code);
+    this.props.adManager.unregisterAds([this.props.code]);
   }
 
   handleLayout(event, callback) {
