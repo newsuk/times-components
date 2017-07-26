@@ -22,8 +22,8 @@ exports[`renders compact above breakpoint 1`] = `
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 15,
           "lineHeight": 20,
-          "paddingBottom": 10,
-          "paddingTop": 10,
+          "paddingBottom": 11,
+          "paddingTop": 11,
           "textAlign": "center",
         },
         Object {
@@ -52,21 +52,27 @@ exports[`renders compact above breakpoint 1`] = `
   >
     <View />
     <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#006699",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 14,
-            "lineHeight": 38,
-          }
-        }
+      <TouchableOpacity
+        activeOpacity={0.2}
+        focusedOpacity={0.7}
+        onPress={[Function]}
       >
-        Next page &gt;
-      </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#006699",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 14,
+              "lineHeight": 38,
+            }
+          }
+        >
+          Next page &gt;
+        </Text>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -94,8 +100,8 @@ exports[`renders correctly 1`] = `
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 15,
           "lineHeight": 20,
-          "paddingBottom": 10,
-          "paddingTop": 10,
+          "paddingBottom": 11,
+          "paddingTop": 11,
           "textAlign": "center",
         },
         null,
@@ -120,21 +126,27 @@ exports[`renders correctly 1`] = `
   >
     <View />
     <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#006699",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 14,
-            "lineHeight": 38,
-          }
-        }
+      <TouchableOpacity
+        activeOpacity={0.2}
+        focusedOpacity={0.7}
+        onPress={[Function]}
       >
-        Next page &gt;
-      </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#006699",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 14,
+              "lineHeight": 38,
+            }
+          }
+        >
+          Next page &gt;
+        </Text>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -162,8 +174,8 @@ exports[`renders prev and next link 1`] = `
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 15,
           "lineHeight": 20,
-          "paddingBottom": 10,
-          "paddingTop": 10,
+          "paddingBottom": 11,
+          "paddingTop": 11,
           "textAlign": "center",
         },
         null,
@@ -187,38 +199,50 @@ exports[`renders prev and next link 1`] = `
     }
   >
     <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#006699",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 14,
-            "lineHeight": 38,
-          }
-        }
+      <TouchableOpacity
+        activeOpacity={0.2}
+        focusedOpacity={0.7}
+        onPress={[Function]}
       >
-        &lt; Previous page
-      </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#006699",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 14,
+              "lineHeight": 38,
+            }
+          }
+        >
+          &lt; Previous page
+        </Text>
+      </TouchableOpacity>
     </View>
     <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#006699",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 14,
-            "lineHeight": 38,
-          }
-        }
+      <TouchableOpacity
+        activeOpacity={0.2}
+        focusedOpacity={0.7}
+        onPress={[Function]}
       >
-        Next page &gt;
-      </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#006699",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 14,
+              "lineHeight": 38,
+            }
+          }
+        >
+          Next page &gt;
+        </Text>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -246,8 +270,8 @@ exports[`renders prev link 1`] = `
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 15,
           "lineHeight": 20,
-          "paddingBottom": 10,
-          "paddingTop": 10,
+          "paddingBottom": 11,
+          "paddingTop": 11,
           "textAlign": "center",
         },
         null,
@@ -271,21 +295,27 @@ exports[`renders prev link 1`] = `
     }
   >
     <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#006699",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 14,
-            "lineHeight": 38,
-          }
-        }
+      <TouchableOpacity
+        activeOpacity={0.2}
+        focusedOpacity={0.7}
+        onPress={[Function]}
       >
-        &lt; Previous page
-      </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#006699",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 14,
+              "lineHeight": 38,
+            }
+          }
+        >
+          &lt; Previous page
+        </Text>
+      </TouchableOpacity>
     </View>
     <View />
   </View>
@@ -314,8 +344,8 @@ exports[`renders prev link 2`] = `
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 15,
           "lineHeight": 20,
-          "paddingBottom": 10,
-          "paddingTop": 10,
+          "paddingBottom": 11,
+          "paddingTop": 11,
           "textAlign": "center",
         },
         null,
@@ -340,21 +370,27 @@ exports[`renders prev link 2`] = `
   >
     <View />
     <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#006699",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 14,
-            "lineHeight": 38,
-          }
-        }
+      <TouchableOpacity
+        activeOpacity={0.2}
+        focusedOpacity={0.7}
+        onPress={[Function]}
       >
-        Next page &gt;
-      </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#006699",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 14,
+              "lineHeight": 38,
+            }
+          }
+        >
+          Next page &gt;
+        </Text>
+      </TouchableOpacity>
     </View>
   </View>
 </View>

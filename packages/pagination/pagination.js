@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import PropTypes from "prop-types";
 
 const styles = StyleSheet.create({
@@ -35,8 +35,8 @@ const styles = StyleSheet.create({
     fontSize: 15,
     lineHeight: 20,
     textAlign: "center",
-    paddingBottom: 10,
-    paddingTop: 10
+    paddingBottom: 11,
+    paddingTop: 11
   }
 });
 
@@ -62,31 +62,39 @@ class Pagination extends React.Component {
   }
 
   render() {
-    const { count, page, pageSize } = this.props;
+    const { compact, count, page, pageSize, onNext, onPrev } = this.props;
 
     const startResult = (page - 1) * pageSize + 1;
     const finalResult = Math.min(count, page * pageSize);
     const message = `Showing ${startResult} - ${finalResult} of ${count} results`;
 
     const prevComponent = startResult > pageSize
-      ? <Text style={styles.arrows}>
-          {"< Previous page"}
-        </Text>
+      ? <TouchableOpacity onPress={onPrev}>
+          <Text style={styles.arrows}>
+            {"< Previous page"}
+          </Text>
+        </TouchableOpacity>
       : null;
 
     const nextComponent = finalResult < count
-      ? <Text style={styles.arrows}>
-          {"Next page >"}
+      ? <TouchableOpacity onPress={onNext}>
+          <Text style={styles.arrows}>
+            {"Next page >"}
+          </Text>
+        </TouchableOpacity>
+      : null;
+
+    const messageComponent = !compact
+      ? <Text
+          style={[styles.label, this.state.isCompact ? styles.compact : null]}
+        >
+          {message}
         </Text>
       : null;
 
     return (
       <View style={styles.container} onLayout={this.handleLayout}>
-        <Text
-          style={[styles.label, this.state.isCompact ? styles.compact : null]}
-        >
-          {message}
-        </Text>
+        {messageComponent}
         <View style={styles.horizontal}>
           <View>{prevComponent}</View>
           <View>{nextComponent}</View>
@@ -97,14 +105,20 @@ class Pagination extends React.Component {
 }
 
 Pagination.propTypes = {
+  compact: PropTypes.bool,
+  count: PropTypes.number.isRequired,
   page: PropTypes.number,
   pageSize: PropTypes.number,
-  count: PropTypes.number.isRequired
+  onNext: PropTypes.func,
+  onPrev: PropTypes.func
 };
 
 Pagination.defaultProps = {
+  compact: false,
   page: 1,
-  pageSize: 20
+  pageSize: 20,
+  onNext: () => {},
+  onPrev: () => {}
 };
 
 export default Pagination;
