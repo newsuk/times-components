@@ -1,9 +1,28 @@
-import React from "react";
-import { View, Text } from "react-native";
+import React, { Component } from "react";
+import { ScrollView, Text, Platform } from "react-native";
+import Ad, { AdComposer } from "@times-components/ad";
 
-const Article = () =>
-  <View>
-    <Text>Default Article.</Text>
-  </View>;
+class Article extends Component {
+  static renderAd() {
+    if (Platform.OS === "ios" || Platform.OS === "android") {
+      return <Ad code="intervention" section="article" />;
+    }
+
+    return (
+      <AdComposer section="article" networkId="25436805">
+        <Ad code="ad-header" />
+      </AdComposer>
+    );
+  }
+
+  render() {
+    return (
+      <ScrollView>
+        <Text>Default Article.</Text>
+        {Article.renderAd()}
+      </ScrollView>
+    );
+  }
+}
 
 export default Article;
