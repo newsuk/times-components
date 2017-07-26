@@ -53,6 +53,7 @@ exports[`renders compact above breakpoint 1`] = `
     <View />
     <View>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <TouchableHighlight
         activeOpacity={0.85}
         underlayColor="black"
@@ -61,6 +62,11 @@ exports[`renders compact above breakpoint 1`] = `
         activeOpacity={0.2}
         focusedOpacity={0.7}
 >>>>>>> feat: navigate to a different page
+=======
+      <TouchableHighlight
+        activeOpacity={0.85}
+        underlayColor="black"
+>>>>>>> feat: use url from props
       >
         <Text
           accessibilityRole="link"
@@ -68,10 +74,14 @@ exports[`renders compact above breakpoint 1`] = `
           allowFontScaling={true}
           ellipsizeMode="tail"
 <<<<<<< HEAD
+<<<<<<< HEAD
           href={null}
 =======
           href="https://www.thetimes.co.uk/"
 >>>>>>> feat: navigate to a different page
+=======
+          href={null}
+>>>>>>> feat: use url from props
           onPress={[Function]}
           style={
             Object {
@@ -139,6 +149,7 @@ exports[`renders correctly 1`] = `
     <View />
     <View>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <TouchableHighlight
         activeOpacity={0.85}
         underlayColor="black"
@@ -147,6 +158,11 @@ exports[`renders correctly 1`] = `
         activeOpacity={0.2}
         focusedOpacity={0.7}
 >>>>>>> feat: navigate to a different page
+=======
+      <TouchableHighlight
+        activeOpacity={0.85}
+        underlayColor="black"
+>>>>>>> feat: use url from props
       >
         <Text
           accessibilityRole="link"
@@ -154,10 +170,14 @@ exports[`renders correctly 1`] = `
           allowFontScaling={true}
           ellipsizeMode="tail"
 <<<<<<< HEAD
+<<<<<<< HEAD
           href={null}
 =======
           href="https://www.thetimes.co.uk/"
 >>>>>>> feat: navigate to a different page
+=======
+          href={null}
+>>>>>>> feat: use url from props
           onPress={[Function]}
           style={
             Object {
@@ -224,6 +244,7 @@ exports[`renders prev and next link 1`] = `
   >
     <View>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <TouchableHighlight
         activeOpacity={0.85}
         underlayColor="black"
@@ -232,6 +253,11 @@ exports[`renders prev and next link 1`] = `
         activeOpacity={0.2}
         focusedOpacity={0.7}
 >>>>>>> feat: navigate to a different page
+=======
+      <TouchableHighlight
+        activeOpacity={0.85}
+        underlayColor="black"
+>>>>>>> feat: use url from props
       >
         <Text
           accessibilityRole="link"
@@ -239,10 +265,14 @@ exports[`renders prev and next link 1`] = `
           allowFontScaling={true}
           ellipsizeMode="tail"
 <<<<<<< HEAD
+<<<<<<< HEAD
           href={null}
 =======
           href="https://www.thetimes.co.uk/"
 >>>>>>> feat: navigate to a different page
+=======
+          href={null}
+>>>>>>> feat: use url from props
           onPress={[Function]}
           style={
             Object {
@@ -259,6 +289,7 @@ exports[`renders prev and next link 1`] = `
     </View>
     <View>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <TouchableHighlight
         activeOpacity={0.85}
         underlayColor="black"
@@ -267,6 +298,11 @@ exports[`renders prev and next link 1`] = `
         activeOpacity={0.2}
         focusedOpacity={0.7}
 >>>>>>> feat: navigate to a different page
+=======
+      <TouchableHighlight
+        activeOpacity={0.85}
+        underlayColor="black"
+>>>>>>> feat: use url from props
       >
         <Text
           accessibilityRole="link"
@@ -274,10 +310,14 @@ exports[`renders prev and next link 1`] = `
           allowFontScaling={true}
           ellipsizeMode="tail"
 <<<<<<< HEAD
+<<<<<<< HEAD
           href={null}
 =======
           href="https://www.thetimes.co.uk/"
 >>>>>>> feat: navigate to a different page
+=======
+          href={null}
+>>>>>>> feat: use url from props
           onPress={[Function]}
           style={
             Object {
@@ -344,6 +384,7 @@ exports[`renders prev link 1`] = `
   >
     <View>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <TouchableHighlight
         activeOpacity={0.85}
         underlayColor="black"
@@ -352,6 +393,11 @@ exports[`renders prev link 1`] = `
         activeOpacity={0.2}
         focusedOpacity={0.7}
 >>>>>>> feat: navigate to a different page
+=======
+      <TouchableHighlight
+        activeOpacity={0.85}
+        underlayColor="black"
+>>>>>>> feat: use url from props
       >
         <Text
           accessibilityRole="link"
@@ -359,10 +405,14 @@ exports[`renders prev link 1`] = `
           allowFontScaling={true}
           ellipsizeMode="tail"
 <<<<<<< HEAD
+<<<<<<< HEAD
           href={null}
 =======
           href="https://www.thetimes.co.uk/"
 >>>>>>> feat: navigate to a different page
+=======
+          href={null}
+>>>>>>> feat: use url from props
           onPress={[Function]}
           style={
             Object {
@@ -431,6 +481,7 @@ exports[`renders prev link 2`] = `
     <View />
     <View>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <TouchableHighlight
         activeOpacity={0.85}
         underlayColor="black"
@@ -439,6 +490,11 @@ exports[`renders prev link 2`] = `
         activeOpacity={0.2}
         focusedOpacity={0.7}
 >>>>>>> feat: navigate to a different page
+=======
+      <TouchableHighlight
+        activeOpacity={0.85}
+        underlayColor="black"
+>>>>>>> feat: use url from props
       >
         <Text
           accessibilityRole="link"
@@ -446,10 +502,14 @@ exports[`renders prev link 2`] = `
           allowFontScaling={true}
           ellipsizeMode="tail"
 <<<<<<< HEAD
+<<<<<<< HEAD
           href={null}
 =======
           href="https://www.thetimes.co.uk/"
 >>>>>>> feat: navigate to a different page
+=======
+          href={null}
+>>>>>>> feat: use url from props
           onPress={[Function]}
           style={
             Object {
