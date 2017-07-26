@@ -13,9 +13,6 @@ android {
     }
 
     buildTypes {
-        debug {
-            manifestPlaceholders = [excludeSystemAlertWindowPermission: "false"]
-        }
         release {
             manifestPlaceholders = [excludeSystemAlertWindowPermission: "true"]
             minifyEnabled false
