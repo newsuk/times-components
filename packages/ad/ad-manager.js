@@ -73,9 +73,9 @@ class AdManager {
   getAds() {
     // Only request new ads if all the ads have unregistered
     if (Object.keys(this.registeredSlots).length) return Promise.resolve();
-    return this.init().then(this.display.bind(this)).catch(err => {
-      throw new Error(err);
-    });
+    return this.init()
+      .then(this.display.bind(this))
+      .catch(err => console.error("An error occurred loading ads", err)); // eslint-disable-line no-console
   }
 
   display() {

@@ -158,6 +158,28 @@ describe("AdManager", () => {
     });
   });
 
+  it("getAds does nothing if there are ads still registered", () => {
+    adManager.init = jest.fn();
+    adManager.display = jest.fn();
+    adManager.registeredSlots = {
+      "ad-1": "foobar"
+    };
+    return adManager.getAds().then(() => {
+      expect(adManager.init).not.toHaveBeenCalled();
+      expect(adManager.display).not.toHaveBeenCalled();
+    });
+  });
+
+  it("getAds calls init and display if there are no registerAds", () => {
+    adManager.init = jest.fn().mockImplementation(() => Promise.resolve());
+    adManager.display = jest.fn().mockImplementation(() => Promise.resolve());
+    adManager.registeredSlots = {};
+    return adManager.getAds().then(() => {
+      expect(adManager.init).toHaveBeenCalled();
+      expect(adManager.display).toHaveBeenCalled();
+    });
+  });
+
   it("display should tell pbjs to handle targeting and gpt to refresh", () => {
     const newPbjsManager = adManager.pbjsManager;
     const newGptManager = adManager.gptManager;
@@ -188,11 +210,6 @@ describe("AdManager", () => {
     expect(refresh).toHaveBeenCalled();
     expect(setTargetingForGPTAsync).toHaveBeenCalled();
   });
-
-  // it("pushAdToGPT gives an error if ad manager is not initialised", () => {
-  //   expect(adManager.initialised).toEqual(false);
-  //   expect(adManager.pushAdToGPT).toThrowError();
-  // });
 
   it("pushAdToGPT creates and sets slot and asks gpt to display", () => {
     const newGptManager = adManager.gptManager;

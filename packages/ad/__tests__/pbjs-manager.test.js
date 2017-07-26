@@ -51,6 +51,47 @@ describe("PrebidManager", () => {
     expect(pbjsManager.isReady).toBeTruthy();
   });
 
+  it("removeAds calls removeAdUnit to destroy specific ads", () => {
+    const adsToRemove = ["ad-1"];
+    const registeredAdUnits = {
+      "ad-1": "foo",
+      "ad-2": "bar"
+    };
+    pbjsManager.pbjs = {
+      que: [],
+      removeAdUnit: jest.fn()
+    };
+    pbjsManager.registeredAdUnits = registeredAdUnits;
+    const removeOperation = pbjsManager.removeAdUnits(adsToRemove);
+    pbjsManager.pbjs.que[0]();
+    return removeOperation.then(() => {
+      expect(pbjsManager.pbjs.removeAdUnit).toHaveBeenCalledWith(
+        adsToRemove[0]
+      );
+      expect(pbjsManager.registeredAdUnits[adsToRemove[0]]).toBeUndefined();
+    });
+  });
+
+  it("removeAds calls removeAdUnit to destroy all ads", () => {
+    const registeredAdUnits = {
+      "ad-1": "foo",
+      "ad-2": "bar"
+    };
+    pbjsManager.pbjs = {
+      que: [],
+      removeAdUnit: jest.fn()
+    };
+    pbjsManager.registeredAdUnits = { ...registeredAdUnits };
+    const removeOperation = pbjsManager.removeAdUnits();
+    pbjsManager.pbjs.que[0]();
+    return removeOperation.then(() => {
+      const codes = Object.keys(registeredAdUnits);
+      expect(pbjsManager.pbjs.removeAdUnit).toHaveBeenCalledWith(codes[0]);
+      expect(pbjsManager.pbjs.removeAdUnit).toHaveBeenCalledWith(codes[1]);
+      expect(pbjsManager.registeredAdUnits).toEqual({});
+    });
+  });
+
   describe("bidderSettings", () => {
     let bidResponse;
     let adserverTargeting;
