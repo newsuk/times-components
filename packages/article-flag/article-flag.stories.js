@@ -4,24 +4,9 @@ import { storiesOf } from "@storybook/react-native";
 import ArticleFlag from "./article-flag";
 
 storiesOf("ArticleFlag", module)
-  .add("ArticleFlag (New)", () =>
-    <ArticleFlag
-      style={{ color: "red" }}
-      title="New"
-      value={true}
-    />
-  )
-  .add("ArticleFlag (Sponsored)", () =>
-    <ArticleFlag
-      style={{ color: "red" }}
-      title="Sponsored"
-      value={true}
-    />
-  )
-  .add("ArticleFlag (Updated)", () =>
-    <ArticleFlag
-      style={{ color: "red" }}
-      title="Updated"
-      value={true}
-    />
+  .add("ArticleFlag (New)", () => <ArticleFlag title="New" value />)
+  .add("ArticleFlag (Sponsored)", () => <ArticleFlag title="Sponsored" value />)
+  .add("ArticleFlag (Updated)", () => <ArticleFlag title="Updated" value />)
+  .add("ArticleFlag (Custom)", () =>
+    <ArticleFlag style={{ color: "green" }} title="Custom" value />
   );

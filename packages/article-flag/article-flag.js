@@ -1,35 +1,54 @@
-import React, { Component } from "react";
+import React from "react";
 import { Text, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 
-class ArticleFlag extends Component {
-  render() {
-    const {
-      title,
-      value,
-      style
-    } = this.props;
+import Diamond from "./diamond";
 
-    if (!value) {
-      return null;
-    }
-
-    return (
-      <Text style={style}>
-        {title}
-      </Text>
-    );
+const styles = {
+  flag: {
+    fontFamily: "TimesDigitalW04-RegularSC",
+    fontSize: 10,
+    fontWeight: "400",
+    lineHeight: 20,
+    letterSpacing: 1
+  },
+  new: {
+    color: "#E34605"
+  },
+  sponsored: {
+    color: "#4D4D4D"
+  },
+  updated: {
+    color: "#3C81BE"
   }
-}
+};
+
+const getStyles = StyleSheet.create(styles);
+
+const ArticleFlag = ({ title, value, style }) => {
+  if (!value) {
+    return null;
+  }
+
+  const flagStyles = styles[title.toLowerCase()];
+  const color =
+    (flagStyles && flagStyles.color) || (style && style.color) || "black";
+
+  return (
+    <Text style={[styles.flag, getStyles[title.toLowerCase()], style]}>
+      <Diamond height={7} width={7} color={color} /> {title.toUpperCase()}
+    </Text>
+  );
+};
 
 ArticleFlag.propTypes = {
-  title: React.PropTypes.string,
-  value: React.PropTypes.bool,
-  style: React.PropTypes.instanceOf(StyleSheet)
-}
+  title: PropTypes.string.isRequired,
+  value: PropTypes.bool.isRequired,
+  style: PropTypes.shape({})
+};
 
 ArticleFlag.defaultProps = {
-  style: null
-}
+  style: {}
+};
 
 export default ArticleFlag;
