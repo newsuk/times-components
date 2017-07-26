@@ -26,7 +26,7 @@ const styles = {
 const getStyles = StyleSheet.create(styles);
 
 const ArticleFlag = ({ title, value, style }) => {
-  if (!value) {
+  if (!title || !value) {
     return null;
   }
 
