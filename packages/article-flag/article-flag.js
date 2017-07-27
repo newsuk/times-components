@@ -6,7 +6,7 @@ import Diamond from "./diamond";
 
 const styles = {
   flag: {
-    fontFamily: "TimesDigitalW04-RegularSC",
+    fontFamily: "TimesDigital-RegularSC",
     fontSize: 10,
     fontWeight: "400",
     lineHeight: 20,
