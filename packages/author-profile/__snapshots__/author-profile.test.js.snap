@@ -3557,26 +3557,36 @@ exports[`renders correctly 1`] = `
     <View
       onLayout={[Function]}
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
-        FOOTER
-      </Text>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#1a1f24",
+            "marginTop": 10,
+            "paddingBottom": 200,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+          }
+        }
+      />
     </View>
   </View>
 </RCTScrollView>
 `;
 
 exports[`renders profile footer 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
->
-  FOOTER
-</Text>
+<View
+  style={
+    Object {
+      "backgroundColor": "#1a1f24",
+      "marginTop": 10,
+      "paddingBottom": 200,
+      "paddingLeft": 10,
+      "paddingRight": 10,
+      "paddingTop": 10,
+    }
+  }
+/>
 `;
 
 exports[`renders profile header 1`] = `

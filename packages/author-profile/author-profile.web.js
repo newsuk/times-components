@@ -7,7 +7,7 @@ import AuthorProfileItemSeparator from "./author-profile-item-separator";
 
 const styles = StyleSheet.create({
   container: {
-    maxWidth: 650,
+    maxWidth: 820,
     alignSelf: "center"
   }
 });
