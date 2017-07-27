@@ -1,12 +1,20 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 
 import Diamond from "./diamond";
 
 const getStyles = color =>
   StyleSheet.create({
-    flag: {
+    view: {
+      display: "flex",
+      flexDirection: "row"
+    },
+    diamond: {
+      alignSelf: "center",
+      marginRight: 3
+    },
+    title: {
       fontFamily: "TimesDigital-RegularSC",
       fontSize: 10,
       fontWeight: "400",
@@ -21,10 +29,14 @@ const ArticleFlag = ({ title, color }) => {
     return null;
   }
 
+  const styles = getStyles(color);
   return (
-    <Text style={getStyles(color).flag}>
-      <Diamond height={7} width={7} color={color} /> {title.toUpperCase()}
-    </Text>
+    <View style={styles.view}>
+      <View style={styles.diamond}>
+        <Diamond height={7} width={7} color={color} />
+      </View>
+      <Text style={styles.title}>{title.toUpperCase()}</Text>
+    </View>
   );
 };
 

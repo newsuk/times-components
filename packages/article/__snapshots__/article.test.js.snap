@@ -12,6 +12,57 @@ exports[`Article test renders native correctly 1`] = `
         Default Article.
       </Text>
       <View
+        style={
+          Object {
+            "display": "flex",
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "marginRight": 3,
+            }
+          }
+        >
+          <svg
+            height={7}
+            style={Object {}}
+            viewBox="0 0 20 20"
+            width={7}
+          >
+            <g
+              fill="#E34605"
+              style={Object {}}
+            >
+              <path
+                d="M 0,10 10,20 20,10 10,0 Z"
+                style={Object {}}
+              />
+            </g>
+          </svg>
+        </View>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#E34605",
+              "fontFamily": "TimesDigital-RegularSC",
+              "fontSize": 10,
+              "fontWeight": "400",
+              "letterSpacing": 1,
+              "lineHeight": 20,
+            }
+          }
+        >
+          NEW
+        </Text>
+      </View>
+      <View
         style={null}
       >
         <View
