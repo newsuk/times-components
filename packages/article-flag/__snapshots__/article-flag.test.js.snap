@@ -40,13 +40,17 @@ exports[`Article Flag renders Exclusive flag correctly 1`] = `
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#C51D24",
-        "fontFamily": "TimesDigital-RegularSC",
-        "fontSize": 10,
-        "fontWeight": "400",
-        "letterSpacing": 1,
-      }
+      Array [
+        Object {
+          "fontFamily": "TimesDigital-RegularSC",
+          "fontSize": 10,
+          "fontWeight": "400",
+          "letterSpacing": 1,
+        },
+        Object {
+          "color": "#C51D24",
+        },
+      ]
     }
   >
     EXCLUSIVE
@@ -94,13 +98,17 @@ exports[`Article Flag renders New flag correctly 1`] = `
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#E34605",
-        "fontFamily": "TimesDigital-RegularSC",
-        "fontSize": 10,
-        "fontWeight": "400",
-        "letterSpacing": 1,
-      }
+      Array [
+        Object {
+          "fontFamily": "TimesDigital-RegularSC",
+          "fontSize": 10,
+          "fontWeight": "400",
+          "letterSpacing": 1,
+        },
+        Object {
+          "color": "#E34605",
+        },
+      ]
     }
   >
     NEW
@@ -148,13 +156,17 @@ exports[`Article Flag renders Sponsored flag correctly 1`] = `
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#4D4D4D",
-        "fontFamily": "TimesDigital-RegularSC",
-        "fontSize": 10,
-        "fontWeight": "400",
-        "letterSpacing": 1,
-      }
+      Array [
+        Object {
+          "fontFamily": "TimesDigital-RegularSC",
+          "fontSize": 10,
+          "fontWeight": "400",
+          "letterSpacing": 1,
+        },
+        Object {
+          "color": "#4D4D4D",
+        },
+      ]
     }
   >
     SPONSORED
@@ -202,13 +214,17 @@ exports[`Article Flag renders Updated flag correctly 1`] = `
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#3C81BE",
-        "fontFamily": "TimesDigital-RegularSC",
-        "fontSize": 10,
-        "fontWeight": "400",
-        "letterSpacing": 1,
-      }
+      Array [
+        Object {
+          "fontFamily": "TimesDigital-RegularSC",
+          "fontSize": 10,
+          "fontWeight": "400",
+          "letterSpacing": 1,
+        },
+        Object {
+          "color": "#3C81BE",
+        },
+      ]
     }
   >
     UPDATED
