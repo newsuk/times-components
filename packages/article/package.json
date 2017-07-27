@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "@times-components/ad": "0.0.5",
+    "@times-components/article-flag": "0.0.1",
     "prop-types": "15.5.10",
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",
