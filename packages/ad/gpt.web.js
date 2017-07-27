@@ -17,17 +17,17 @@ class GPT extends Component {
   constructor(props) {
     super(props);
     const { width } = Dimensions.get("window");
-    this.config = getSlotConfig(
+    const config = getSlotConfig(
       this.props.adManager.section,
       this.props.code,
       width
     );
-    this.state = { width };
+    this.state = { config, width };
     this.handleLayout = this.handleLayout.bind(this);
   }
 
   componentDidMount() {
-    this.props.adManager.registerAd(this.config);
+    this.props.adManager.registerAd(this.state.config);
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -36,14 +36,9 @@ class GPT extends Component {
 
   componentWillUpdate(nextProps, nextState) {
     const adManager = nextProps.adManager;
-    this.config = getSlotConfig(
-      this.props.adManager.section,
-      this.props.code,
-      nextState.width
-    );
     adManager
       .unregisterAds([nextProps.code])
-      .then(adManager.registerAd.bind(adManager, this.config))
+      .then(adManager.registerAd.bind(adManager, nextState.config))
       .then(adManager.getAds.bind(adManager));
   }
 
@@ -53,11 +48,16 @@ class GPT extends Component {
 
   handleLayout(event, callback) {
     const { width } = Dimensions.get("window");
-    this.setState({ width }, callback);
+    const config = getSlotConfig(
+      this.props.adManager.section,
+      this.props.code,
+      width
+    );
+    this.setState({ width, config }, callback);
   }
 
   render() {
-    const config = this.config;
+    const config = this.state.config;
     const styles = getStyles(config);
 
     return (
