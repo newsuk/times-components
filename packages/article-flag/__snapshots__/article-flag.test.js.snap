@@ -4,6 +4,7 @@ exports[`Article Flag renders Exclusive flag correctly 1`] = `
 <View
   style={
     Object {
+      "alignItems": "center",
       "display": "flex",
       "flexDirection": "row",
     }
@@ -12,7 +13,7 @@ exports[`Article Flag renders Exclusive flag correctly 1`] = `
   <View
     style={
       Object {
-        "alignSelf": "center",
+        "marginBottom": 1,
         "marginRight": 3,
       }
     }
@@ -45,7 +46,6 @@ exports[`Article Flag renders Exclusive flag correctly 1`] = `
         "fontSize": 10,
         "fontWeight": "400",
         "letterSpacing": 1,
-        "lineHeight": 20,
       }
     }
   >
@@ -58,6 +58,7 @@ exports[`Article Flag renders New flag correctly 1`] = `
 <View
   style={
     Object {
+      "alignItems": "center",
       "display": "flex",
       "flexDirection": "row",
     }
@@ -66,7 +67,7 @@ exports[`Article Flag renders New flag correctly 1`] = `
   <View
     style={
       Object {
-        "alignSelf": "center",
+        "marginBottom": 1,
         "marginRight": 3,
       }
     }
@@ -99,7 +100,6 @@ exports[`Article Flag renders New flag correctly 1`] = `
         "fontSize": 10,
         "fontWeight": "400",
         "letterSpacing": 1,
-        "lineHeight": 20,
       }
     }
   >
@@ -112,6 +112,7 @@ exports[`Article Flag renders Sponsored flag correctly 1`] = `
 <View
   style={
     Object {
+      "alignItems": "center",
       "display": "flex",
       "flexDirection": "row",
     }
@@ -120,7 +121,7 @@ exports[`Article Flag renders Sponsored flag correctly 1`] = `
   <View
     style={
       Object {
-        "alignSelf": "center",
+        "marginBottom": 1,
         "marginRight": 3,
       }
     }
@@ -153,7 +154,6 @@ exports[`Article Flag renders Sponsored flag correctly 1`] = `
         "fontSize": 10,
         "fontWeight": "400",
         "letterSpacing": 1,
-        "lineHeight": 20,
       }
     }
   >
@@ -166,6 +166,7 @@ exports[`Article Flag renders Updated flag correctly 1`] = `
 <View
   style={
     Object {
+      "alignItems": "center",
       "display": "flex",
       "flexDirection": "row",
     }
@@ -174,7 +175,7 @@ exports[`Article Flag renders Updated flag correctly 1`] = `
   <View
     style={
       Object {
-        "alignSelf": "center",
+        "marginBottom": 1,
         "marginRight": 3,
       }
     }
@@ -207,7 +208,6 @@ exports[`Article Flag renders Updated flag correctly 1`] = `
         "fontSize": 10,
         "fontWeight": "400",
         "letterSpacing": 1,
-        "lineHeight": 20,
       }
     }
   >

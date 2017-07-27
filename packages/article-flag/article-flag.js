@@ -4,21 +4,23 @@ import PropTypes from "prop-types";
 
 import Diamond from "./diamond";
 
+// When changing styles please debug both web, android and ios because
+// some styles are not working correctly on all platforms (namely, android)
 const getStyles = color =>
   StyleSheet.create({
     view: {
       display: "flex",
-      flexDirection: "row"
+      flexDirection: "row",
+      alignItems: "center"
     },
     diamond: {
-      alignSelf: "center",
-      marginRight: 3
+      marginRight: 3,
+      marginBottom: 1
     },
     title: {
       fontFamily: "TimesDigital-RegularSC",
       fontSize: 10,
       fontWeight: "400",
-      lineHeight: 20,
       letterSpacing: 1,
       color
     }
