@@ -53,7 +53,7 @@ function renderPublicationDetails(date, publication, style) {
 const ArticleSummary = props => {
   const { label, headline, text: ast, date, publication } = props;
 
-  const labelText = label.toUpperCase();
+  const labelText = label && label.toUpperCase && label.toUpperCase();
   return (
     <View style={styles.container}>
       <Text style={styles.label}>{labelText}</Text>

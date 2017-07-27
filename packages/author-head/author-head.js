@@ -74,14 +74,14 @@ const AuthorHead = props => {
           {title.toLowerCase()}
         </Text>
         <Text style={styles.twitter}>
-          <Markup ast={twitter} wrapIn="span" />
+          {twitter}
         </Text>
         <Text style={styles.bio}>
           <Markup ast={bio} wrapIn="p" />
         </Text>
       </View>
       <View style={styles.photoContainer}>
-        <Image aspectRatio={1} source={{ uri }} style={styles.roundImage} />
+        <Image source={{ uri }} style={styles.roundImage} />
       </View>
     </View>
   );
@@ -92,7 +92,7 @@ AuthorHead.defaultProps = {
   title: "",
   uri: "",
   bio: [],
-  twitter: []
+  twitter: null
 };
 
 AuthorHead.propTypes = {
@@ -100,7 +100,7 @@ AuthorHead.propTypes = {
   title: PropTypes.string,
   uri: PropTypes.string,
   bio: Markup.propTypes.ast,
-  twitter: Markup.propTypes.ast
+  twitter: PropTypes.string
 };
 
 export default AuthorHead;
