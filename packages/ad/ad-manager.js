@@ -1,15 +1,8 @@
 import gptManager from "./gpt-manager";
 import pbjsManager from "./pbjs-manager";
 
-const defaultOptions = {
-  section: "article",
-  networkId: "25436805",
-  adUnit: "d.thetimes.co.uk"
-};
-
 class AdManager {
-  constructor(opts = {}) {
-    const options = { ...defaultOptions, ...opts };
+  constructor(options) {
     this.adQueue = [];
     this.registeredSlots = {};
     this.adUnit = options.adUnit;
