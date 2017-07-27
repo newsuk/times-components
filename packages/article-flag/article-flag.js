@@ -4,38 +4,25 @@ import PropTypes from "prop-types";
 
 import Diamond from "./diamond";
 
-const styles = {
-  flag: {
-    fontFamily: "TimesDigital-RegularSC",
-    fontSize: 10,
-    fontWeight: "400",
-    lineHeight: 20,
-    letterSpacing: 1
-  },
-  new: {
-    color: "#E34605"
-  },
-  sponsored: {
-    color: "#4D4D4D"
-  },
-  updated: {
-    color: "#3C81BE"
-  }
-};
+const getStyles = color =>
+  StyleSheet.create({
+    flag: {
+      fontFamily: "TimesDigital-RegularSC",
+      fontSize: 10,
+      fontWeight: "400",
+      lineHeight: 20,
+      letterSpacing: 1,
+      color
+    }
+  });
 
-const getStyles = StyleSheet.create(styles);
-
-const ArticleFlag = ({ title, value, style }) => {
-  if (!title || !value) {
+const ArticleFlag = ({ title, color }) => {
+  if (!title) {
     return null;
   }
 
-  const flagStyles = styles[title.toLowerCase()];
-  const color =
-    (flagStyles && flagStyles.color) || (style && style.color) || "black";
-
   return (
-    <Text style={[styles.flag, getStyles[title.toLowerCase()], style]}>
+    <Text style={getStyles(color).flag}>
       <Diamond height={7} width={7} color={color} /> {title.toUpperCase()}
     </Text>
   );
@@ -43,12 +30,26 @@ const ArticleFlag = ({ title, value, style }) => {
 
 ArticleFlag.propTypes = {
   title: PropTypes.string.isRequired,
-  value: PropTypes.bool.isRequired,
-  style: PropTypes.shape({})
+  color: PropTypes.string
 };
 
 ArticleFlag.defaultProps = {
-  style: {}
+  color: "black"
 };
 
+const NewArticleFlag = () => <ArticleFlag title="new" color="#E34605" />;
+const UpdatedArticleFlag = () =>
+  <ArticleFlag title="updated" color="#3C81BE" />;
+const ExclusiveArticleFlag = () =>
+  <ArticleFlag title="exclusive" color="#C51D24" />;
+const SponsoredArticleFlag = () =>
+  <ArticleFlag title="sponsored" color="#4D4D4D" />;
+
 export default ArticleFlag;
+
+export {
+  NewArticleFlag,
+  UpdatedArticleFlag,
+  ExclusiveArticleFlag,
+  SponsoredArticleFlag
+};

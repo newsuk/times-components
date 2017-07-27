@@ -1,24 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Article Flag renders Custom flag with styles correctly 1`] = `
+exports[`Article Flag renders Exclusive flag correctly 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
   ellipsizeMode="tail"
   style={
-    Array [
-      Object {
-        "fontFamily": "TimesDigitalW04-RegularSC",
-        "fontSize": 10,
-        "fontWeight": "400",
-        "letterSpacing": 1,
-        "lineHeight": 20,
-      },
-      undefined,
-      Object {
-        "color": "green",
-      },
-    ]
+    Object {
+      "color": "#C51D24",
+      "fontFamily": "TimesDigital-RegularSC",
+      "fontSize": 10,
+      "fontWeight": "400",
+      "letterSpacing": 1,
+      "lineHeight": 20,
+    }
   }
 >
   <svg
@@ -28,7 +23,7 @@ exports[`Article Flag renders Custom flag with styles correctly 1`] = `
     width={7}
   >
     <g
-      fill="green"
+      fill="#C51D24"
       style={Object {}}
     >
       <path
@@ -38,47 +33,7 @@ exports[`Article Flag renders Custom flag with styles correctly 1`] = `
     </g>
   </svg>
    
-  CUSTOM
-</Text>
-`;
-
-exports[`Article Flag renders Custom flag without styles correctly 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  style={
-    Array [
-      Object {
-        "fontFamily": "TimesDigitalW04-RegularSC",
-        "fontSize": 10,
-        "fontWeight": "400",
-        "letterSpacing": 1,
-        "lineHeight": 20,
-      },
-      undefined,
-      Object {},
-    ]
-  }
->
-  <svg
-    height={7}
-    style={Object {}}
-    viewBox="0 0 20 20"
-    width={7}
-  >
-    <g
-      fill="black"
-      style={Object {}}
-    >
-      <path
-        d="M 0,10 10,20 20,10 10,0 Z"
-        style={Object {}}
-      />
-    </g>
-  </svg>
-   
-  CUSTOM
+  EXCLUSIVE
 </Text>
 `;
 
@@ -88,19 +43,14 @@ exports[`Article Flag renders New flag correctly 1`] = `
   allowFontScaling={true}
   ellipsizeMode="tail"
   style={
-    Array [
-      Object {
-        "fontFamily": "TimesDigitalW04-RegularSC",
-        "fontSize": 10,
-        "fontWeight": "400",
-        "letterSpacing": 1,
-        "lineHeight": 20,
-      },
-      Object {
-        "color": "#E34605",
-      },
-      Object {},
-    ]
+    Object {
+      "color": "#E34605",
+      "fontFamily": "TimesDigital-RegularSC",
+      "fontSize": 10,
+      "fontWeight": "400",
+      "letterSpacing": 1,
+      "lineHeight": 20,
+    }
   }
 >
   <svg
@@ -130,19 +80,14 @@ exports[`Article Flag renders Sponsored flag correctly 1`] = `
   allowFontScaling={true}
   ellipsizeMode="tail"
   style={
-    Array [
-      Object {
-        "fontFamily": "TimesDigitalW04-RegularSC",
-        "fontSize": 10,
-        "fontWeight": "400",
-        "letterSpacing": 1,
-        "lineHeight": 20,
-      },
-      Object {
-        "color": "#4D4D4D",
-      },
-      Object {},
-    ]
+    Object {
+      "color": "#4D4D4D",
+      "fontFamily": "TimesDigital-RegularSC",
+      "fontSize": 10,
+      "fontWeight": "400",
+      "letterSpacing": 1,
+      "lineHeight": 20,
+    }
   }
 >
   <svg
@@ -172,19 +117,14 @@ exports[`Article Flag renders Updated flag correctly 1`] = `
   allowFontScaling={true}
   ellipsizeMode="tail"
   style={
-    Array [
-      Object {
-        "fontFamily": "TimesDigitalW04-RegularSC",
-        "fontSize": 10,
-        "fontWeight": "400",
-        "letterSpacing": 1,
-        "lineHeight": 20,
-      },
-      Object {
-        "color": "#3C81BE",
-      },
-      Object {},
-    ]
+    Object {
+      "color": "#3C81BE",
+      "fontFamily": "TimesDigital-RegularSC",
+      "fontSize": 10,
+      "fontWeight": "400",
+      "letterSpacing": 1,
+      "lineHeight": 20,
+    }
   }
 >
   <svg
