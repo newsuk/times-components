@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pagination",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "pagination.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -59,8 +59,8 @@
     "react-native-web": "0.0.97"
   },
   "peerDependencies": {
-    "@storybook/react-native": "3.1.8",
-    "@storybook/addon-actions": "3.0.0"
+    "@storybook/addon-actions": "3.0.0",
+    "@storybook/react-native": "3.1.8"
   },
   "publishConfig": {
     "access": "public"
