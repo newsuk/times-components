@@ -90,7 +90,7 @@ const PbjsManager = class PbjsManager {
         // Keep track of the current registered ad units
         adUnits.forEach(adUnit => {
           this.registeredAdUnits[adUnit.code] = adUnit;
-        })
+        });
         this.pbjs.addAdUnits(adUnits);
 
         this.pbjs.requestBids({
@@ -103,18 +103,13 @@ const PbjsManager = class PbjsManager {
     });
   }
 
-  // Optional codes argument will unregister only the specified ads
   removeAdUnits(codes) {
     return new Promise(resolve => {
       this.pbjs.que.push(() => {
-        let adsToRemove = codes;
-        if (!codes) {
-          adsToRemove = Object.keys(this.registeredAdUnits);
-        }
-        adsToRemove.forEach(code => {
+        codes.forEach(code => {
           this.pbjs.removeAdUnit(code);
           delete this.registeredAdUnits[code];
-        })
+        });
         resolve();
       });
     });

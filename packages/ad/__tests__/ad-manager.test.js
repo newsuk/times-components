@@ -81,35 +81,6 @@ describe("AdManager", () => {
     });
   });
 
-  it("unregister all ads", () => {
-    adManager.initialised = true;
-    adManager.registeredSlots = {
-      "slot-1": "foo",
-      "slot-2": "bar"
-    };
-    adManager.gptManager.removeAds = jest.fn().mockImplementation(
-      // Make sure we call the removeAds correctly to deregister all ads
-      adSlots => {
-        expect(adSlots).toBeUndefined();
-        return Promise.resolve();
-      }
-    );
-    adManager.pbjsManager.removeAdUnits = jest.fn().mockImplementation(
-      // Make sure we call the removeAdUnits correctly to deregister all ads
-      codes => {
-        expect(codes).toBeUndefined();
-        return Promise.resolve();
-      }
-    );
-
-    return adManager.unregisterAds().then(() => {
-      expect(adManager.initialised).toBeFalsy();
-      expect(adManager.registeredSlots).toEqual({});
-      expect(adManager.gptManager.removeAds).toHaveBeenCalled();
-      expect(adManager.pbjsManager.removeAdUnits).toHaveBeenCalled();
-    });
-  });
-
   it("unregister specifc ads", () => {
     const adToRemove = "slot-1";
     const registeredSlots = {

@@ -72,26 +72,6 @@ describe("PrebidManager", () => {
     });
   });
 
-  it("removeAds calls removeAdUnit to destroy all ads", () => {
-    const registeredAdUnits = {
-      "ad-1": "foo",
-      "ad-2": "bar"
-    };
-    pbjsManager.pbjs = {
-      que: [],
-      removeAdUnit: jest.fn()
-    };
-    pbjsManager.registeredAdUnits = { ...registeredAdUnits };
-    const removeOperation = pbjsManager.removeAdUnits();
-    pbjsManager.pbjs.que[0]();
-    return removeOperation.then(() => {
-      const codes = Object.keys(registeredAdUnits);
-      expect(pbjsManager.pbjs.removeAdUnit).toHaveBeenCalledWith(codes[0]);
-      expect(pbjsManager.pbjs.removeAdUnit).toHaveBeenCalledWith(codes[1]);
-      expect(pbjsManager.registeredAdUnits).toEqual({});
-    });
-  });
-
   describe("bidderSettings", () => {
     let bidResponse;
     let adserverTargeting;

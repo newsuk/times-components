@@ -80,16 +80,6 @@ describe("GptManager", () => {
     expect(googletag.cmd).not.toHaveBeenCalled();
   });
 
-  it("removeAds calls destroySlots to destroy all ads", () => {
-    const googletag = gptManager.googletag;
-    googletag.destroySlots = jest.fn();
-    const removeAds = gptManager.removeAds();
-    googletag.cmd[0]();
-    return removeAds.then(() => {
-      expect(googletag.destroySlots).toHaveBeenCalledWith();
-    });
-  });
-
   it("removeAds calls destroySlots with the specific slots to destroy", () => {
     const googletag = gptManager.googletag;
     googletag.destroySlots = jest.fn();

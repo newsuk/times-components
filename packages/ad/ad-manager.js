@@ -38,25 +38,15 @@ class AdManager {
     this.adQueue.push(adConfig);
   }
 
-  // Optional codes argument will unregister only the specified ads
   unregisterAds(codes) {
-    let slotsToRemove;
-    // We're unregistering all ads
-    if (!codes) {
-      this.initialised = false;
-      this.registeredSlots = {};
-    }
-    // Unregister specifc ads
-    if (codes) {
-      slotsToRemove = [];
-      codes.forEach(code => {
-        const registeredSlot = this.registeredSlots[code];
-        if (registeredSlot) {
-          slotsToRemove.push(registeredSlot);
-          delete this.registeredSlots[code];
-        }
-      });
-    }
+    const slotsToRemove = [];
+    codes.forEach(code => {
+      const registeredSlot = this.registeredSlots[code];
+      if (registeredSlot) {
+        slotsToRemove.push(registeredSlot);
+        delete this.registeredSlots[code];
+      }
+    });
     return this.gptManager
       .removeAds(slotsToRemove)
       .then(this.pbjsManager.removeAdUnits.bind(this.pbjsManager, codes));
