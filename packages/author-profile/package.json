@@ -68,5 +68,8 @@
   "peerDependencies": {
     "@storybook/react-native": "3.0.0",
     "react-native": "0.44.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
