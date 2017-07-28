@@ -5,14 +5,6 @@
   "main": "image.es5.js",
   "jsnext:main": "image.js",
   "module": "image.js",
-  "browserify": {
-    "transform": [
-      [
-        "babelify",
-        { "presets": ["es2015"] }
-      ]
-    ]
-  },
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",

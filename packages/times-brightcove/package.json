@@ -1,17 +1,7 @@
 {
   "name": "@times-components/times-brightcove",
   "version": "0.0.1",
-  "main": "times-brightcove.es5.web.js",
-  "jsnext:main": "times-brightcove.web.js",
-  "module": "times-brightcove.web.js",
-  "browserify": {
-    "transform": [
-      [
-        "babelify",
-        { "presets": ["es2015"] }
-      ]
-    ]
-  },
+  "main": "times-brightcove.web.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:dev": "jest __tests__/ --bail --verbose --watch",
@@ -53,8 +43,8 @@
     "react-native-web": "0.0.96"
   },
   "_timesComponentsCliVariables": {
-    "component": "BrightcoveVideo",
-    "packageDescription": "Brightcove component",
+    "component": "TimesBrightcove",
+    "packageDescription": "Times Brightcove component",
     "packageName": "times-brightcove"
   }
 }
