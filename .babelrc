@@ -1,11 +1,3 @@
 {
-  "presets": [
-    "es2015",
-    "react-native",
-    "react"
-  ],
-  "plugins": [
-    "transform-decorators",
-    "add-module-exports"
-  ]
+  "presets": [ "react-native" ]
 }
