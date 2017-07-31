@@ -14,7 +14,7 @@ exports[`Article Flag renders Exclusive flag correctly 1`] = `
     style={
       Object {
         "marginBottom": 1,
-        "marginRight": 3,
+        "marginRight": 5,
       }
     }
   >
@@ -45,7 +45,6 @@ exports[`Article Flag renders Exclusive flag correctly 1`] = `
           "fontFamily": "TimesDigital-RegularSC",
           "fontSize": 10,
           "fontWeight": "400",
-          "letterSpacing": 1,
         },
         Object {
           "color": "#C51D24",
@@ -53,7 +52,7 @@ exports[`Article Flag renders Exclusive flag correctly 1`] = `
       ]
     }
   >
-    EXCLUSIVE
+    E X C L U S I V E
   </Text>
 </View>
 `;
@@ -72,7 +71,7 @@ exports[`Article Flag renders New flag correctly 1`] = `
     style={
       Object {
         "marginBottom": 1,
-        "marginRight": 3,
+        "marginRight": 5,
       }
     }
   >
@@ -103,7 +102,6 @@ exports[`Article Flag renders New flag correctly 1`] = `
           "fontFamily": "TimesDigital-RegularSC",
           "fontSize": 10,
           "fontWeight": "400",
-          "letterSpacing": 1,
         },
         Object {
           "color": "#E34605",
@@ -111,7 +109,7 @@ exports[`Article Flag renders New flag correctly 1`] = `
       ]
     }
   >
-    NEW
+    N E W
   </Text>
 </View>
 `;
@@ -130,7 +128,7 @@ exports[`Article Flag renders Sponsored flag correctly 1`] = `
     style={
       Object {
         "marginBottom": 1,
-        "marginRight": 3,
+        "marginRight": 5,
       }
     }
   >
@@ -161,7 +159,6 @@ exports[`Article Flag renders Sponsored flag correctly 1`] = `
           "fontFamily": "TimesDigital-RegularSC",
           "fontSize": 10,
           "fontWeight": "400",
-          "letterSpacing": 1,
         },
         Object {
           "color": "#4D4D4D",
@@ -169,7 +166,7 @@ exports[`Article Flag renders Sponsored flag correctly 1`] = `
       ]
     }
   >
-    SPONSORED
+    S P O N S O R E D
   </Text>
 </View>
 `;
@@ -188,7 +185,7 @@ exports[`Article Flag renders Updated flag correctly 1`] = `
     style={
       Object {
         "marginBottom": 1,
-        "marginRight": 3,
+        "marginRight": 5,
       }
     }
   >
@@ -219,7 +216,6 @@ exports[`Article Flag renders Updated flag correctly 1`] = `
           "fontFamily": "TimesDigital-RegularSC",
           "fontSize": 10,
           "fontWeight": "400",
-          "letterSpacing": 1,
         },
         Object {
           "color": "#3C81BE",
@@ -227,7 +223,7 @@ exports[`Article Flag renders Updated flag correctly 1`] = `
       ]
     }
   >
-    UPDATED
+    U P D A T E D
   </Text>
 </View>
 `;
