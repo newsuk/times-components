@@ -48,7 +48,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/author-profile": "0.0.1",
+    "@times-components/author-profile": "0.1.0",
     "apollo-client": "1.9.0-1",
     "graphql-tag": "2.4.2",
     "lodash.pick": "4.4.0",

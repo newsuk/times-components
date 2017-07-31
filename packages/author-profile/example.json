@@ -627,7 +627,7 @@
         "leadAsset": {
           "title": "Fourth Briton is seized trying to join Isis",
           "crop": {
-            "url": "//feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216"
+            "url": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216"
           }
         },
         "teaser": [
