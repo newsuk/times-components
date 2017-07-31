@@ -16,45 +16,48 @@ const getStyles = config =>
 class GPT extends Component {
   constructor(props) {
     super(props);
-    this.handleLayout = this.handleLayout.bind(this);
     const { width } = Dimensions.get("window");
     const config = getSlotConfig(
       this.props.adManager.section,
       this.props.code,
       width
     );
-    this.state = {
-      config
-    };
+    this.state = { config, width };
+    this.handleLayout = this.handleLayout.bind(this);
   }
 
   componentDidMount() {
     this.props.adManager.registerAd(this.state.config);
   }
 
-  componentWillUpdate() {
-    this.props.adManager.unregisterAd(this.props.code);
-    this.props.adManager.registerAd(this.state.config);
+  shouldComponentUpdate(nextProps, nextState) {
+    return this.state.width !== nextState.width;
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+    const adManager = nextProps.adManager;
+    adManager
+      .unregisterAds([nextProps.code])
+      .then(adManager.registerAd.bind(adManager, nextState.config))
+      .then(adManager.getAds.bind(adManager));
   }
 
   componentWillUnmount() {
-    this.props.adManager.unregisterAd(this.props.code);
+    this.props.adManager.unregisterAds([this.props.code]);
   }
 
   handleLayout(event, callback) {
-    const width = event.nativeEvent.layout.width;
-    if (this.state.width !== width) {
-      const config = getSlotConfig(
-        this.props.adManager.section,
-        this.props.code,
-        width
-      );
-      this.setState({ config }, callback);
-    }
+    const { width } = Dimensions.get("window");
+    const config = getSlotConfig(
+      this.props.adManager.section,
+      this.props.code,
+      width
+    );
+    this.setState({ width, config }, callback);
   }
 
   render() {
-    const { config } = this.state;
+    const config = this.state.config;
     const styles = getStyles(config);
 
     return (

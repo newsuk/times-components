@@ -1,18 +1,16 @@
-const removeItemFromQueue = (queue, itemId) => {
-  const obj = Object.assign([], queue);
-  const objIds = obj.map(item => item.id);
-  const idx = objIds.indexOf(itemId);
-  return idx > -1 ? obj.filter((item, index) => idx !== index) : obj;
-};
+import gptManager from "./gpt-manager";
+import pbjsManager from "./pbjs-manager";
 
 class AdManager {
-  constructor(options = {}) {
+  constructor(options) {
     this.adQueue = [];
+    this.registeredSlots = {};
     this.adUnit = options.adUnit;
     this.networkId = options.networkId;
     this.section = options.section;
-    this.gptManager = options.gptManager;
-    this.pbjsManager = options.pbjsManager;
+    // Optionally provide the gpt and pbjs managers
+    this.gptManager = options.gptManager || gptManager;
+    this.pbjsManager = options.pbjsManager || pbjsManager;
     this.initialised = false;
   }
 
@@ -32,15 +30,35 @@ class AdManager {
         this.adQueue.forEach(ad => {
           this.pushAdToGPT(ad.code, ad.mappings);
         });
+        this.adQueue = [];
       });
   }
 
-  registerAd(slot) {
-    this.adQueue.push(slot);
+  registerAd(adConfig) {
+    this.adQueue.push(adConfig);
   }
 
-  unregisterAd(code) {
-    this.adQueue = removeItemFromQueue(this.adQueue, code);
+  unregisterAds(codes) {
+    const slotsToRemove = [];
+    codes.forEach(code => {
+      const registeredSlot = this.registeredSlots[code];
+      if (registeredSlot) {
+        slotsToRemove.push(registeredSlot);
+        delete this.registeredSlots[code];
+      }
+    });
+    return this.gptManager
+      .removeAds(slotsToRemove)
+      .then(this.pbjsManager.removeAdUnits.bind(this.pbjsManager, codes));
+  }
+
+  // Called by the ad components to signal that a new set of ads needs to be fetched
+  getAds() {
+    // Only request new ads if all the ads have unregistered
+    if (Object.keys(this.registeredSlots).length) return Promise.resolve();
+    return this.init()
+      .then(this.display.bind(this))
+      .catch(err => console.error("An error occurred loading ads", err)); // eslint-disable-line no-console
   }
 
   display() {
@@ -64,8 +82,8 @@ class AdManager {
       slot.addService(this.gptManager.googletag.pubads());
       slot.defineSizeMapping(this.generateSizings(sizingMap));
 
-      slot.id = adSlotId;
-
+      // Keep track of registered ads
+      this.registeredSlots[slot.getSlotElementId()] = slot;
       // Display the ad
       this.gptManager.googletag.display(adSlotId);
     });

@@ -34,7 +34,7 @@ const getSizeMaps = code => {
 const getAdSizes = (code, width) => {
   const sizeMap = getSizeMaps(code);
   for (let i = sizeMap.length - 1; i > 0; i -= 1) {
-    if (width > sizeMap[i].width) {
+    if (width >= sizeMap[i].width) {
       return sizeMap[i].sizes;
     }
   }

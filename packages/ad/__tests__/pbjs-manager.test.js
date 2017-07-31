@@ -1,11 +1,11 @@
-import pbjs from "../pbjs-manager";
+import { PbjsManager } from "../pbjs-manager";
 import { pbjs as pbjsConfig } from "../config";
 
 describe("PrebidManager", () => {
   let pbjsManager;
 
   beforeEach(() => {
-    pbjsManager = pbjs(pbjsConfig);
+    pbjsManager = new PbjsManager(pbjsConfig);
   });
 
   it("pbjsManager singleton is initialised with correct props", () => {
@@ -43,12 +43,33 @@ describe("PrebidManager", () => {
     prebid.requestBids = requestBids;
     prebid.addAdUnits = addAdUnits;
 
-    pbjsManager.init({});
+    pbjsManager.init([]);
     expect(prebid.que).toHaveLength(1);
     prebid.que[0]();
     expect(addAdUnits).toHaveBeenCalled();
     expect(pbjsManager.initialised).toBeTruthy();
     expect(pbjsManager.isReady).toBeTruthy();
+  });
+
+  it("removeAds calls removeAdUnit to destroy specific ads", () => {
+    const adsToRemove = ["ad-1"];
+    const registeredAdUnits = {
+      "ad-1": "foo",
+      "ad-2": "bar"
+    };
+    pbjsManager.pbjs = {
+      que: [],
+      removeAdUnit: jest.fn()
+    };
+    pbjsManager.registeredAdUnits = registeredAdUnits;
+    const removeOperation = pbjsManager.removeAdUnits(adsToRemove);
+    pbjsManager.pbjs.que[0]();
+    return removeOperation.then(() => {
+      expect(pbjsManager.pbjs.removeAdUnit).toHaveBeenCalledWith(
+        adsToRemove[0]
+      );
+      expect(pbjsManager.registeredAdUnits[adsToRemove[0]]).toBeUndefined();
+    });
   });
 
   describe("bidderSettings", () => {

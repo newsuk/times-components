@@ -1,6 +1,14 @@
 import gptManager from "../gpt-manager";
 
 describe("GptManager", () => {
+  beforeEach(() => {
+    // Clean the command queue if there is one
+    const googletag = gptManager.googletag;
+    if (googletag && googletag.cmd) {
+      googletag.cmd = [];
+    }
+  });
+
   it("gptManager singleton is initialised with correct props", () => {
     expect(gptManager.scriptSet).toBeFalsy();
     expect(gptManager.initialised).toBeFalsy();
@@ -49,8 +57,8 @@ describe("GptManager", () => {
     googletag.enableServices = enableServices;
 
     gptManager.init();
-    expect(googletag.cmd).toHaveLength(2);
-    googletag.cmd[1]();
+    expect(googletag.cmd).toHaveLength(1);
+    googletag.cmd[0]();
     expect(enableServices).toHaveBeenCalled();
     expect(gptManager.initialised).toBeTruthy();
     expect(gptManager.isReady).toBeTruthy();
@@ -70,5 +78,16 @@ describe("GptManager", () => {
     gptManager.isReady = jest.fn().mockImplementation(() => true);
     gptManager.init();
     expect(googletag.cmd).not.toHaveBeenCalled();
+  });
+
+  it("removeAds calls destroySlots with the specific slots to destroy", () => {
+    const googletag = gptManager.googletag;
+    googletag.destroySlots = jest.fn();
+    const slots = [{ foo: "bar" }];
+    const removeAds = gptManager.removeAds(slots);
+    googletag.cmd[0]();
+    return removeAds.then(() => {
+      expect(googletag.destroySlots).toHaveBeenCalledWith(slots);
+    });
   });
 });

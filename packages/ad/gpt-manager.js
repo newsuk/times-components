@@ -5,6 +5,7 @@ const GptManager = class GptManager {
     this.scriptSet = false;
     this.initialised = false;
     this.googletag = null;
+    this.registeredAds = {};
   }
 
   get isReady() {
@@ -63,6 +64,16 @@ const GptManager = class GptManager {
         // enable google publisher tag
         this.googletag.enableServices();
         this.initialised = true;
+        return resolve();
+      });
+    });
+  }
+
+  removeAds(slots) {
+    return new Promise(resolve => {
+      this.googletag.cmd.push(() => {
+        // Unregister specifc ads
+        this.googletag.destroySlots(slots);
         return resolve();
       });
     });

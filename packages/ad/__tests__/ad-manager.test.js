@@ -1,10 +1,7 @@
 import AdManager from "../ad-manager";
 import { getSlotConfig } from "../generate-config";
 import gptManager from "../gpt-manager";
-import pbjs from "../pbjs-manager";
-import { pbjs as pbjsConfig } from "../config";
-
-const pbjsManager = pbjs(pbjsConfig);
+import pbjsManager from "../pbjs-manager";
 
 describe("AdManager", () => {
   const managerOptions = {
@@ -70,6 +67,7 @@ describe("AdManager", () => {
 
     const slotConfig = getSlotConfig(adManager.section, code, width);
     adManager.registerAd(slotConfig);
+    expect(adManager.registeredSlots).toEqual({});
     expect(adManager.adQueue).toHaveLength(1);
     expect(adManager.adQueue[0]).toEqual(slotConfig);
 
@@ -79,37 +77,78 @@ describe("AdManager", () => {
     newGptManager.init = () => Promise.resolve();
     return adManager.init().then(() => {
       expect(adManager.pushAdToGPT).toHaveBeenCalled();
+      expect(adManager.adQueue).toHaveLength(0);
     });
   });
 
-  it("unregister one ad", () => {
-    adManager.adQueue = [
-      {
-        id: "id-0"
-      },
-      {
-        id: "id-1"
+  it("unregister specifc ads", () => {
+    const adToRemove = "slot-1";
+    const registeredSlots = {
+      "slot-1": "foo",
+      "slot-2": "bar"
+    };
+    adManager.registeredSlots = { ...registeredSlots };
+    adManager.gptManager.removeAds = jest
+      .fn()
+      .mockImplementation(() => Promise.resolve());
+    adManager.pbjsManager.removeAdUnits = jest.fn().mockImplementation(
+      // Make sure we call the removeAdUnits correctly to deregister all ads
+      codes => {
+        expect(codes).toEqual([adToRemove]);
+        return Promise.resolve();
       }
-    ];
-    const itemId = "id-1";
-    expect(adManager.adQueue.length).toEqual(2);
-    adManager.unregisterAd(itemId);
-    expect(adManager.adQueue.length).toEqual(1);
+    );
+
+    return adManager.unregisterAds([adToRemove]).then(() => {
+      expect(adManager.registeredSlots[adToRemove]).toBeUndefined();
+      expect(adManager.gptManager.removeAds).toHaveBeenCalledWith([
+        registeredSlots[adToRemove]
+      ]);
+      expect(adManager.pbjsManager.removeAdUnits).toHaveBeenCalled();
+    });
+  });
+  //
+  it("unregister does not unregister if element does not exist", () => {
+    const nonExistentAd = "foo";
+    const registeredSlots = {
+      "slot-1": "foo",
+      "slot-2": "bar"
+    };
+    adManager.registeredSlots = { ...registeredSlots };
+    adManager.gptManager.removeAds = jest
+      .fn()
+      .mockImplementation(() => Promise.resolve());
+    adManager.pbjsManager.removeAdUnits = jest
+      .fn()
+      .mockImplementation(() => Promise.resolve());
+
+    return adManager.unregisterAds([nonExistentAd]).then(() => {
+      expect(Object.keys(adManager.registeredSlots)).toHaveLength(2);
+      expect(adManager.gptManager.removeAds).toHaveBeenCalled();
+      expect(adManager.pbjsManager.removeAdUnits).toHaveBeenCalled();
+    });
   });
 
-  it("unregister does not unregister if element does not exist", () => {
-    adManager.adQueue = [
-      {
-        id: "id-0"
-      },
-      {
-        id: "id-1"
-      }
-    ];
-    const itemId = "id-2";
-    expect(adManager.adQueue.length).toEqual(2);
-    adManager.unregisterAd(itemId);
-    expect(adManager.adQueue.length).toEqual(2);
+  it("getAds does nothing if there are ads still registered", () => {
+    adManager.init = jest.fn();
+    adManager.display = jest.fn();
+    adManager.registeredSlots = {
+      "ad-1": "foobar"
+    };
+    return adManager.getAds().then(() => {
+      expect(adManager.init).not.toHaveBeenCalled();
+      expect(adManager.display).not.toHaveBeenCalled();
+    });
+  });
+
+  it("getAds calls init and display if there are no registerAds", () => {
+    adManager.init = jest.fn().mockImplementation(() => Promise.resolve());
+    adManager.display = jest.fn().mockImplementation(() => Promise.resolve());
+    adManager.registeredSlots = {};
+    return adManager.getAds().then(() => {
+      expect(adManager.init).toHaveBeenCalled();
+      expect(adManager.display).toHaveBeenCalled();
+    });
   });
 
   it("display should tell pbjs to handle targeting and gpt to refresh", () => {
@@ -143,17 +182,13 @@ describe("AdManager", () => {
     expect(setTargetingForGPTAsync).toHaveBeenCalled();
   });
 
-  it("pushAdToGPT gives an error if ad manager is not initialised", () => {
-    expect(adManager.initialised).toEqual(false);
-    expect(adManager.pushAdToGPT).toThrowError();
-  });
-
   it("pushAdToGPT creates and sets slot and asks gpt to display", () => {
     const newGptManager = adManager.gptManager;
 
     const addService = jest.fn();
     const defineSizeMapping = jest.fn();
     adManager.createSlot = jest.fn().mockImplementation(() => ({
+      getSlotElementId: () => 1,
       addService,
       defineSizeMapping
     }));
