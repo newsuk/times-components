@@ -1,5 +1,5 @@
 import React from "react";
-import { FlatList, Linking } from "react-native";
+import { Text, FlatList, Linking } from "react-native";
 import PropTypes from "prop-types";
 import AuthorProfileFooter from "./author-profile-footer";
 import AuthorProfileHeader from "./author-profile-header";
@@ -7,18 +7,26 @@ import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
 
 const AuthorProfile = props => {
+  const data = props.data;
+  if (data.loading) {
+    return <Text>Loading</Text>;
+  }
+
   const headerProps = {
-    ...props,
+    ...data.author,
+    count: data.author.articles.count,
     onNext: url => Linking.openURL(url),
-    onPrev: url => Linking.openURL(url)
+    onPrev: url => Linking.openURL(url),
+    pageSize: props.pageSize,
+    page: props.page
   };
 
   return (
     <FlatList
-      data={props.currentPageOfArticles}
+      data={data.author.articles.list}
       ItemSeparatorComponent={() => <AuthorProfileItemSeparator />}
       keyExtractor={article => article.id}
-      ListFooterComponent={() => <AuthorProfileFooter {...props} />}
+      ListFooterComponent={() => <AuthorProfileFooter />}
       ListHeaderComponent={() => <AuthorProfileHeader {...headerProps} />}
       renderItem={({ item }) => <AuthorProfileItem {...item} />}
     />
@@ -26,13 +34,17 @@ const AuthorProfile = props => {
 };
 
 AuthorProfile.propTypes = {
-  currentPageOfArticles: PropTypes.arrayOf(
-    PropTypes.shape(AuthorProfileItem.propTypes)
-  )
+  page: PropTypes.number,
+  pageSize: PropTypes.number,
+  data: PropTypes.shape()
 };
 
 AuthorProfile.defaultProps = {
-  currentPageOfArticles: []
+  page: 1,
+  pageSize: 10,
+  data: {
+    loading: true
+  }
 };
 
 export default AuthorProfile;

@@ -1,7 +1,5 @@
-import React from "react";
-import { ScrollView, Text } from "react-native";
 import gql from "graphql-tag";
-// import AuthorProfile from "@times-components/author-profile";
+import AuthorProfile from "@times-components/author-profile";
 import connectGraphql from "./provider";
 
 const query = gql`
@@ -43,16 +41,11 @@ const query = gql`
   }
 `;
 
-const propsToVariables = ({ slug, pageSize, pageNumber, imageRatio }) => ({
+const propsToVariables = ({ slug, pageSize, page, imageRatio }) => ({
   slug,
   first: pageSize,
-  skip: pageSize * (pageNumber - 1),
+  skip: pageSize * (page - 1),
   imageRatio
 });
 
-export default connectGraphql(query, propsToVariables)(props =>
-  <ScrollView>
-    <Text>{JSON.stringify(props, null, 2)}</Text>
-  </ScrollView>
-);
-// export default connectGraphql(query, propsToVariables)(AuthorProfile);
+export default connectGraphql(query, propsToVariables)(AuthorProfile);
