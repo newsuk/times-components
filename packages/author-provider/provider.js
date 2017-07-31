@@ -2,10 +2,12 @@ import React from "react";
 import pick from "lodash.pick";
 import { graphql } from "react-apollo";
 
+const identity = a => a;
+
 const flatten = l =>
   l.reduce((a, b) => a.concat(Array.isArray(b) ? flatten(b) : b), []);
 
-const map = definitions =>
+const getQueryVariables = definitions =>
   flatten(
     definitions.map(definition =>
       definition.variableDefinitions.map(
@@ -14,10 +16,8 @@ const map = definitions =>
     )
   );
 
-const identity = a => a;
-
 const connectGraphql = (query, propsToVariables = identity) => Component => {
-  const variableNames = map(query.definitions);
+  const variableNames = getQueryVariables(query.definitions);
 
   return props => {
     const Wrapper = data => <Component {...props} {...data} />;

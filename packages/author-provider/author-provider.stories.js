@@ -27,12 +27,14 @@ const fragmentMatcher = new IntrospectionFragmentMatcher({
 
 const networkInterface = createNetworkInterface({
   uri: "http://localhost:4000/graphql/"
-}).use([{
-  applyMiddleware(req, next) {
-    console.log(req);
-    return next();
+}).use([
+  {
+    applyMiddleware(req, next) {
+      console.log(req);
+      return next();
+    }
   }
-}]);
+]);
 
 const client = new ApolloClient({
   networkInterface,
@@ -43,7 +45,7 @@ storiesOf("AuthorProvider", module).add("AuthorProvider", () =>
   <ApolloProvider client={client}>
     <AuthorProvider
       slug="fiona-hamilton"
-      pageSize={10}
+      pageSize={2}
       pageNumber={1}
       imageRatio="3:2"
     />
