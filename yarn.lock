@@ -185,9 +185,9 @@
     react-split-pane "^0.1.63"
     redux "^3.6.0"
 
-"@times-components/fructose@0.1.24":
+"@times-components/fructose@git://github.com/newsuk/fructose.git#f3bf8f08e1120a2f8a6c6f203ff0ee2f9bb51ae2":
   version "0.1.24"
-  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-0.1.24.tgz#fb9c96f186489b06afac3dfedbb7ac2d297ed394"
+  resolved "git://github.com/newsuk/fructose.git#f3bf8f08e1120a2f8a6c6f203ff0ee2f9bb51ae2"
   dependencies:
     babel-polyfill "^6.23.0"
     babel-preset-es2015 "^6.24.1"
@@ -196,7 +196,6 @@
     express "^4.15.3"
     global "4.3.2"
     prop-types "15.5.10"
-    react "16.0.0-alpha.6"
     server-destroy "^1.0.1"
     socket.io "2.0.3"
     socket.io-client "2.0.3"
@@ -3933,7 +3932,15 @@ function-bind@^1.0.2, function-bind@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.0.tgz#16176714c801798e4e8f2cf7f7529467bb4a5771"
 
-function.prototype.name@^1.0.0, function.prototype.name@^1.0.2:
+function.prototype.name@^1.0.0:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/function.prototype.name/-/function.prototype.name-1.0.3.tgz#0099ae5572e9dd6f03c97d023fd92bcc5e639eac"
+  dependencies:
+    define-properties "^1.1.2"
+    function-bind "^1.1.0"
+    is-callable "^1.1.3"
+
+function.prototype.name@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/function.prototype.name/-/function.prototype.name-1.0.2.tgz#b511a1a15d35fb4834cb35464b6b6b03f4e543ea"
   dependencies:
