@@ -8,6 +8,25 @@ exports[`Article test renders native correctly 1`] = `
         accessible={true}
         allowFontScaling={true}
         ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 10,
+              "fontWeight": "400",
+            },
+            Object {
+              "color": "#008347",
+            },
+          ]
+        }
+      >
+        S W I M M I N G
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
       >
         Default Article.
       </Text>
