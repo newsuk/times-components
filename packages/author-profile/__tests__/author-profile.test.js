@@ -3,11 +3,11 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import AuthorProfile from "./author-profile";
-import AuthorProfileFooter from "./author-profile-footer";
-import AuthorProfileHeader from "./author-profile-header";
-import AuthorProfileItemSeparator from "./author-profile-item-separator";
-import example from "./example.json";
+import AuthorProfile from "../author-profile";
+import AuthorProfileFooter from "../author-profile-footer";
+import AuthorProfileHeader from "../author-profile-header";
+import AuthorProfileItemSeparator from "../author-profile-item-separator";
+import example from "../example.json";
 
 const props = {
   name: example.name,

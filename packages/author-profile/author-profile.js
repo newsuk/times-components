@@ -1,38 +1,46 @@
 import React from "react";
-import { FlatList, Linking } from "react-native";
 import PropTypes from "prop-types";
-import AuthorProfileFooter from "./author-profile-footer";
-import AuthorProfileHeader from "./author-profile-header";
-import AuthorProfileItem from "./author-profile-item";
-import AuthorProfileItemSeparator from "./author-profile-item-separator";
+import AuthorProfileContent from "./author-profile-content";
+import AuthorProfileEmpty from "./author-profile-empty";
+import AuthorProfileLoading from "./author-profile-loading";
 
 const AuthorProfile = props => {
-  const headerProps = {
-    ...props,
-    onNext: url => Linking.openURL(url),
-    onPrev: url => Linking.openURL(url)
-  };
+  if (props.data.loading) {
+    return <AuthorProfileLoading />;
+  }
 
-  return (
-    <FlatList
-      data={props.currentPageOfArticles}
-      ItemSeparatorComponent={() => <AuthorProfileItemSeparator />}
-      keyExtractor={article => article.id}
-      ListFooterComponent={() => <AuthorProfileFooter {...props} />}
-      ListHeaderComponent={() => <AuthorProfileHeader {...headerProps} />}
-      renderItem={({ item }) => <AuthorProfileItem {...item} />}
-    />
-  );
+  if (!props.data || !props.data.author) {
+    return <AuthorProfileEmpty />;
+  }
+
+  const contentProps = Object.assign({}, props.data.author, {
+    page: props.page,
+    pageSize: props.pageSize,
+    imageRatio: props.imageRatio,
+    count: props.data.author.articles && props.data.author.articles.count
+  });
+
+  return <AuthorProfileContent {...contentProps} />;
 };
 
 AuthorProfile.propTypes = {
-  currentPageOfArticles: PropTypes.arrayOf(
-    PropTypes.shape(AuthorProfileItem.propTypes)
-  )
+  data: PropTypes.shape({
+    loading: PropTypes.boolean,
+    author: PropTypes.shape(AuthorProfileContent.propTypes)
+  }),
+  page: PropTypes.number,
+  pageSize: PropTypes.number,
+  imageRatio: PropTypes.string
 };
 
 AuthorProfile.defaultProps = {
-  currentPageOfArticles: []
+  data: {
+    loading: true,
+    author: null
+  },
+  page: 1,
+  pageSize: 20,
+  imageRatio: "3:2"
 };
 
 export default AuthorProfile;
