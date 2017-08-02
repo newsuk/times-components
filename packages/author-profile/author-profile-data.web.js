@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { Linking, StyleSheet, View } from "react-native";
 import AuthorProfileFooter from "./author-profile-footer";
 import AuthorProfileHeader from "./author-profile-header";
 import AuthorProfileItem from "./author-profile-item";
@@ -13,17 +13,24 @@ const styles = StyleSheet.create({
 });
 
 const AuthorProfile = props => {
+  const data = props.data;
   const headerProps = {
-    ...props
+    ...data.author,
+    count: data.author.articles.count,
+    onNext: url => Linking.openURL(url),
+    onPrev: url => Linking.openURL(url),
+    pageSize: props.pageSize,
+    page: props.page
   };
 
   return (
     <View>
       <AuthorProfileHeader {...headerProps} />
-      {props.currentPageOfArticles.map((item, key) => {
+      {data.author.articles.list.map((item, key) => {
         const separatorComponent = key > 0
           ? <AuthorProfileItemSeparator />
           : null;
+
         return (
           <View style={styles.container}>
             {separatorComponent}
