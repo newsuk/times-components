@@ -1,7 +1,12 @@
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
-import ApolloClient, { createNetworkInterface } from "apollo-client";
-import { ApolloProvider, IntrospectionFragmentMatcher } from "react-apollo";
+import {
+  ApolloClient,
+  ApolloProvider,
+  createNetworkInterface,
+  IntrospectionFragmentMatcher
+} from "react-apollo";
+
 import AuthorProvider from "./author-provider";
 
 const fragmentMatcher = new IntrospectionFragmentMatcher({
