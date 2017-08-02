@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "#1D1D1B",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 22,
+        "marginBottom": 8,
+      },
+      null,
+    ]
+  }
+>
+  Labour MPs urge Jeremy Corbyn to condemn Maduro’s Venezuela regime
+</Text>
+`;
