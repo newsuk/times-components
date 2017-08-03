@@ -3,6 +3,7 @@
 
 import React from "react";
 import { WebView } from "react-native";
+import PropTypes from "prop-types";
 
 const script = `
 <script>
@@ -87,12 +88,12 @@ class WebViewAutoHeight extends React.Component {
 }
 
 WebViewAutoHeight.propTypes = {
-  source: React.PropTypes.shape({
-    html: React.PropTypes.string.isRequired,
-    baseUrl: React.PropTypes.string.isRequired
+  source: PropTypes.shape({
+    html: PropTypes.string.isRequired,
+    baseUrl: PropTypes.string.isRequired
   }).isRequired,
-  minHeight: React.PropTypes.number,
-  onNavigationStateChange: React.PropTypes.func,
+  minHeight: PropTypes.number,
+  onNavigationStateChange: PropTypes.func,
   style: WebView.propTypes.style
 };
 
