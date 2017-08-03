@@ -12,6 +12,7 @@ exports[`renders correctly 1`] = `
         "fontFamily": "TimesModern-Bold",
         "fontSize": 22,
         "fontWeight": "400",
+        "letterSpacing": 1,
         "lineHeight": 22,
         "marginBottom": 8,
       },
