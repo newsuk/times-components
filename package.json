@@ -118,6 +118,7 @@
     "react-native-storybook-loader": "1.4.1",
     "react-native-web": "0.0.97",
     "rimraf": "2.6.1",
+    "storybook-addon-apollo-graphql": "0.1.2",
     "url": "0.11.0",
     "webpack": "3.3.0"
   },
