@@ -9,7 +9,7 @@ const AuthorProfile = props => {
     return <AuthorProfileLoading />;
   }
 
-  if (!props.data || !props.data.author) {
+  if (!props.data.author) {
     return <AuthorProfileEmpty />;
   }
 

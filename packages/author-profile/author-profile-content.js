@@ -1,6 +1,5 @@
 import React from "react";
 import { FlatList } from "react-native";
-import PropTypes from "prop-types";
 import AuthorProfileFooter from "./author-profile-footer";
 import AuthorProfileHeader from "./author-profile-header";
 import AuthorProfileItem from "./author-profile-item";
@@ -17,12 +16,9 @@ const AuthorProfile = props =>
   />;
 
 AuthorProfile.propTypes = Object.assign(
-  {
-    articles: PropTypes.shape({
-      list: PropTypes.shape(AuthorProfileItem.propTypes),
-      count: PropTypes.number
-    })
-  },
+  {},
+  AuthorProfileItem.propTypes,
   AuthorProfileHeader.propTypes
 );
+
 export default AuthorProfile;
