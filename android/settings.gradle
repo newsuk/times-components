@@ -4,4 +4,4 @@ project(':react-native-svg').projectDir = new File(rootProject.projectDir, '../n
 
 include ':app', ':rntbrightcovevideo'
 
-project(':rntbrightcovevideo').projectDir = new File(settingsDir, '../packages/brightcove-video/android/rntbrightcovevideo')
+project(':rntbrightcovevideo').projectDir = new File(settingsDir, '../packages/brightcove-video/android')
