@@ -45,7 +45,7 @@
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
     "react-test-renderer": "15.5.4",
-    "webpack": "2.6.1"
+    "webpack": "3.3.0"
   },
   "dependencies": {
     "prop-types": "15.5.10",
