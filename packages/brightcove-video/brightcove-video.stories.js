@@ -33,6 +33,15 @@ storiesOf("BrightcoveVideo", module)
       accountId={accountId}
     />
   )
+  .add("Fullscreen player", () =>
+    <BrightcoveVideo
+      width="100%"
+      height="100%"
+      policyKey={policyKey}
+      videoId={videoId}
+      accountId={accountId}
+    />
+  )
   .add("Two players", () =>
     <View>
       <BrightcoveVideo
