@@ -41,8 +41,10 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
+    "enzyme": "^2.9.1",
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
+    "nock": "^9.0.14",
     "react-test-renderer": "15.5.4",
     "webpack": "2.6.1"
   },
