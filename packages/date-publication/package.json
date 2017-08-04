@@ -1,8 +1,8 @@
 {
-  "name": "@times-components/article-meta",
+  "name": "@times-components/date-publication",
   "version": "0.0.1",
-  "description": "Article Meta properties",
-  "main": "article-meta.js",
+  "description": "Date and Publication properties",
+  "main": "date-publication.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
@@ -15,7 +15,7 @@
       "node_modules/(?!@times-components)/"
     ],
     "testMatch": [
-      "<rootDir>/packages/article-meta/**.test.js"
+      "<rootDir>/packages/date-publication/**.test.js"
     ]
   },
   "repository": {
@@ -27,7 +27,7 @@
     "react",
     "native",
     "web",
-    "article-meta",
+    "date-publication",
     "component"
   ],
   "license": "BSD-3-Clause",
