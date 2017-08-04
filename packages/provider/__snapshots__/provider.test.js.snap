@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders data 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+  {
+    "data": {
+      "loading": false,
+      "data": "stuff"
+    }
+  }
+</Text>
+`;
+
+exports[`renders data 2`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+  {
+    "data": {
+      "loading": false,
+      "data": "data"
+    }
+  }
+</Text>
+`;
+
+exports[`renders loading state 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+  {
+    "data": {
+      "loading": true
+    }
+  }
+</Text>
+`;
