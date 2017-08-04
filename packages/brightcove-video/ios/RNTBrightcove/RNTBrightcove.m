@@ -48,7 +48,7 @@
   _playbackController.delegate = self;
   _playbackController.autoAdvance = YES;
   _playbackController.autoPlay = [_autoplayNumber boolValue];
-  
+
   _playbackService = [[BCOVPlaybackService alloc] initWithAccountId:_accountId
                                                           policyKey:_policyKey];
 }
@@ -157,7 +157,7 @@
 
   #pragma unused (controller)
   #pragma unused (session)
-  
+
   if ([kBCOVPlaybackSessionLifecycleEventPlay isEqualToString:lifecycleEvent.eventType]) {
     _playerStatus = @"playing";
 

@@ -1,8 +1,8 @@
 {
-  "name": "@times-components/article",
-  "version": "0.1.0",
-  "description": "The article",
-  "main": "article.js",
+  "name": "@times-components/article-label",
+  "version": "0.0.1",
+  "description": "The article label",
+  "main": "article-label.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
@@ -15,7 +15,7 @@
       "node_modules/(?!@times-components)/"
     ],
     "testMatch": [
-      "<rootDir>/packages/article/**.test.js"
+      "<rootDir>/packages/article-label/**.test.js"
     ]
   },
   "repository": {
@@ -27,7 +27,7 @@
     "react",
     "native",
     "web",
-    "article",
+    "article-label",
     "component"
   ],
   "license": "BSD-3-Clause",
@@ -48,9 +48,6 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/ad": "0.0.5",
-    "@times-components/article-flag": "0.0.1",
-    "@times-components/article-label": "0.0.1",
     "prop-types": "15.5.10",
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",
