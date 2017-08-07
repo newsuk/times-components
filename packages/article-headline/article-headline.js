@@ -6,7 +6,7 @@ const styles = {
   title: {
     color: "#1D1D1B",
     fontSize: 22,
-    lineHeight: 22,
+    lineHeight: 25,
     marginBottom: 8,
     fontFamily: "TimesModern-Bold",
     fontWeight: "400",

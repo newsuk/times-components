@@ -19,7 +19,7 @@ const ArticleHeadline = ({ title, style, baseUrl }) => {
         p {
           color: #1D1D1B;
           font-size: 22px;
-          line-height: 22px;
+          line-height: 25px;
           margin-bottom: 8px;
           font-family: TimesModernBold;
           font-weight: 400;

@@ -13,7 +13,7 @@ exports[`renders correctly 1`] = `
         "fontSize": 22,
         "fontWeight": "400",
         "letterSpacing": 1,
-        "lineHeight": 22,
+        "lineHeight": 25,
         "marginBottom": 8,
       },
       null,
