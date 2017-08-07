@@ -1,12 +1,17 @@
 import PropTypes from "prop-types";
 
+const numberOrString = PropTypes.oneOfType([
+  PropTypes.string,
+  PropTypes.number
+]);
+
 export default {
   videoId: PropTypes.string.isRequired,
   accountId: PropTypes.string.isRequired,
   policyKey: PropTypes.string,
   playerId: PropTypes.string,
-  width: PropTypes.number,
-  height: PropTypes.number,
+  width: numberOrString,
+  height: numberOrString,
   onError: PropTypes.func,
   onChange: PropTypes.func,
   autoplay: PropTypes.bool

@@ -1,6 +1,8 @@
 package uk.co.news.rntbrightcovevideo;
 
 import android.support.annotation.NonNull;
+import android.util.Log;
+import android.view.SurfaceView;
 
 import com.brightcove.player.edge.Catalog;
 import com.brightcove.player.edge.VideoListener;
@@ -18,6 +20,7 @@ import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.events.RCTEventEmitter;
 
 public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
+    public static final String TAG = RNTBrightcoveView.class.getSimpleName();
 
     private String mVideoId;
     private String mAccountId;
@@ -28,26 +31,35 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
     public RNTBrightcoveView(final ThemedReactContext context) {
         super(context);
         finishInitialization();
+        this.setMediaController(new BrightcoveMediaController(this));
     }
 
     public void setVideoId(final String videoId) {
-        mVideoId = videoId;
-        initVideo();
+        if (mVideoId == null) {
+            mVideoId = videoId;
+            initVideo();
+        }
     }
 
     public void setAccountId(final String accountId) {
-        mAccountId = accountId;
-        initVideo();
+        if (mAccountId == null) {
+            mAccountId = accountId;
+            initVideo();
+        }
     }
 
     public void setPolicyKey(final String policyKey) {
-        mPolicyKey = policyKey;
-        initVideo();
+        if (mPolicyKey == null) {
+            mPolicyKey = policyKey;
+            initVideo();
+        }
     }
 
     public void setAutoplay(final Boolean autoplay) {
-        mAutoplay = autoplay;
-        initVideo();
+        if (mAutoplay == null) {
+            mAutoplay = autoplay;
+            initVideo();
+        }
     }
 
     private void emitState() {
@@ -68,6 +80,12 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
 
     private EventEmitter setupEventEmitter() {
         EventEmitter eventEmitter = getEventEmitter();
+        eventEmitter.on(EventType.VIDEO_SIZE_KNOWN, new EventListener() {
+            @Override
+            public void processEvent(Event e) {
+                fixVideoLayout();
+            }
+        });
         eventEmitter.on(EventType.PLAY, onEvent("playing"));
         eventEmitter.on(EventType.PAUSE, onEvent("paused"));
         eventEmitter.on(EventType.SEEK_TO, new EventListener() {
@@ -88,19 +106,40 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
     private void initVideo() {
         if (parametersSet()) {
             EventEmitter eventEmitter = setupEventEmitter();
+
             Catalog catalog = new Catalog(eventEmitter, mAccountId, mPolicyKey);
-
             catalog.findVideoByID(mVideoId, createVideoListener());
-
-            this.setMediaController(new BrightcoveMediaController(this));
         }
+    }
+
+    private void fixVideoLayout() {
+        Log.d(TAG, "fixVideoLayout");
+
+        final int viewW = this.getMeasuredWidth();
+        final int viewH = this.getMeasuredHeight();
+
+        SurfaceView surfaceView = (SurfaceView)this.getRenderView();
+
+        surfaceView.measure(viewW, viewH);
+
+        final int surfaceW = surfaceView.getMeasuredWidth();
+        final int surfaceH = surfaceView.getMeasuredHeight();
+
+        final int leftOffset = (viewW - surfaceW) / 2;
+        final int topOffset = (viewH - surfaceH) / 2;
+
+        surfaceView.layout(
+                leftOffset,
+                topOffset,
+                leftOffset + surfaceW,
+                topOffset + surfaceH);
     }
 
     @NonNull
     private VideoListener createVideoListener() {
         return new VideoListener() {
             @Override
-            public void onVideo(Video video) {
+            public void onVideo(final Video video) {
                 RNTBrightcoveView.this.add(video);
 
                 if (mAutoplay) {
