@@ -1,7 +1,7 @@
 {
   "name": "@times-components/brightcove-video",
   "version": "0.2.1",
-  "main": "brightcove-video",
+  "main": "brightcove-video.web.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
