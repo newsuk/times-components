@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={undefined}
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    onLongPress={null}
+    onPress={null}
+    style={undefined}
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          null,
+          Object {},
+        ]
+      }
+    >
+      Hello, 
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      onLongPress={null}
+      onPress={null}
+      style={null}
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            null,
+            Object {
+              "fontStyle": "italic",
+            },
+          ]
+        }
+      >
+        world!
+      </Text>
+    </Text>
+  </Text>
+</View>
+`;
