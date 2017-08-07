@@ -1,4 +1,4 @@
-/* globals withComponent test expect element by waitFor */
+/* globals withComponent test expect element by waitFor beforeEach*/
 import { View } from "react-native";
 import React from "react";
 import BrightcoveVideo from "./brightcove-video";
@@ -16,7 +16,11 @@ withComponent(
     accountId={accountId}
   />,
   "brightcove video",
-  async () => {
+  async fructose => {
+    beforeEach(async () => {
+      await fructose.loadComponent();
+    });
+
     test(
       "renders",
       async () => {
@@ -59,9 +63,14 @@ withComponent(
     </View>
   </View>,
   "multiple brightcove players",
-  async () => {
+  async fructose => {
     const player1 = id => element(by.id("player1").withDescendant(by.id(id)));
     const player2 = id => element(by.id("player1").withDescendant(by.id(id)));
+
+    beforeEach(async () => {
+      await fructose.loadComponent();
+    });
+
     test("renders player1", async () => {
       await expect(player1("play")).toBeVisible();
       await expect(player1("jump-back")).toBeVisible();
@@ -87,7 +96,11 @@ withComponent(
     accountId={accountId}
   />,
   "video with external controls",
-  async () => {
+  async fructose => {
+    beforeEach(async () => {
+      await fructose.loadComponent();
+    });
+
     test("renders", async () => {
       await expect(element(by.id("external-play"))).toBeVisible();
       await expect(element(by.id("external-pause"))).toBeVisible();
