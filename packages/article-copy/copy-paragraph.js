@@ -23,8 +23,12 @@ const pullQuoteStyles = {
   }
 };
 
+// const CopyParagraph = ({ content, index, style}) =>
+  // <HTMLView key={index} stylesheet={style || getStyles()} value={'<p>' + content + '</p>'} />;
+
 const CopyParagraph = ({ content, index, style}) =>
-  <HTMLView key={index} stylesheet={style || getStyles()} value={'<p>' + content + '</p>'} />;
+  <HTMLView value={'<p>' + content + '</p>'} />;
+
 
 CopyParagraph.propTypes = {
   content: PropTypes.string.isRequired,
@@ -35,6 +39,7 @@ const PullQuoteParagraph = ({ content, index}) =>
   <CopyParagraph content={content} index={index} style={getStyles(pullQuoteStyles.p)} />;
 
 export default CopyParagraph;
+
 export {
   PullQuoteParagraph
 }

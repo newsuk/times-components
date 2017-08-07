@@ -3,7 +3,7 @@ import { ScrollView, Text, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 
 import Image from '@times-components/image';
-import CopyParagraph, { PullQuoteParagraph } from './copy-paragraph';
+import CopyParagraph/*, { PullQuoteParagraph }*/ from './copy-paragraph';
 
 const ArticleCopy = ({ content }) => {
   const data = content.map((item, index) => {
@@ -17,9 +17,9 @@ const ArticleCopy = ({ content }) => {
         }
         return <Image source={imageSrc} />
       }
-      case('pull-quote'): {
-        return <PullQuoteParagraph content={item.data.text} index={index} />;
-      }
+      // case('pull-quote'): {
+      //   return <PullQuoteParagraph content={item.data.text} index={index} />;
+      // }
       default: {
         return null;
       }
