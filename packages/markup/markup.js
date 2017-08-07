@@ -98,3 +98,5 @@ MarkupNative.propTypes = propTypes;
 export default MarkupNative;
 
 export const builder = mb(tagMap);
+
+export const MarkupBuilder = Markup;

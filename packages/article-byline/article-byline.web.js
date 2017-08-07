@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Linking } from "react-native";
+import { Text } from "react-native";
 import { MarkupBuilder } from "@times-components/markup";
 
 const styles = {
@@ -26,9 +26,7 @@ export default function ArticleByline({ ast, style }) {
         attrs({ slug }) {
           return {
             style: { ...styles.link, ...style.link },
-            onPress() {
-              Linking.openURL(slug);
-            }
+            href: `/profile/${slug}`
           };
         }
       }

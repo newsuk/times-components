@@ -81,3 +81,5 @@ MarkupWeb.propTypes = propTypes;
 export default MarkupWeb;
 
 export const builder = mb(tagMap);
+
+export const MarkupBuilder = Markup;
