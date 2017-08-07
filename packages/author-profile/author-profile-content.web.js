@@ -22,7 +22,7 @@ const AuthorProfile = props =>
         : null;
 
       return (
-        <View style={styles.container}>
+        <View key={item.id} style={styles.container}>
           {separatorComponent}
           <AuthorProfileItem {...item} />
         </View>
@@ -33,9 +33,9 @@ const AuthorProfile = props =>
 
 AuthorProfile.propTypes = Object.assign(
   {
-    articles: {
-      list: PropTypes.arrayOf(AuthorProfileItem.propTypes)
-    }
+    articles: PropTypes.shape({
+      list: PropTypes.arrayOf(PropTypes.shape(AuthorProfileItem.propTypes))
+    })
   },
   AuthorProfileHeader.propTypes
 );

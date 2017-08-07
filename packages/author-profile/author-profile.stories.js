@@ -25,28 +25,26 @@ const story = m =>
 storiesOf("AuthorProfile", module)
   .add("AuthorProfile", () => {
     const props = {
-      data: example,
-      isLoading: false,
-      pageSize: 10,
-      page: 1
+      data: Object.assign({}, example, {
+        count: example.articles.count,
+        pageSize: 10,
+        page: 1
+      }),
+      isLoading: false
     };
 
     return story(<AuthorProfile {...props} />);
   })
   .add("AuthorProfile Loading", () => {
     const props = {
-      isLoading: true,
-      pageSize: 10,
-      page: 1
+      isLoading: true
     };
 
     return story(<AuthorProfile {...props} />);
   })
   .add("AuthorProfile Empty State", () => {
     const props = {
-      isLoading: false,
-      pageSize: 10,
-      page: 1
+      isLoading: false
     };
 
     return story(<AuthorProfile {...props} />);

@@ -18,9 +18,9 @@ const AuthorProfile = props =>
 
 AuthorProfile.propTypes = Object.assign(
   {
-    articles: {
-      list: PropTypes.arrayOf(AuthorProfileItem.propTypes)
-    }
+    articles: PropTypes.shape({
+      list: PropTypes.arrayOf(PropTypes.shape(AuthorProfileItem.propTypes))
+    })
   },
   AuthorProfileHeader.propTypes
 );

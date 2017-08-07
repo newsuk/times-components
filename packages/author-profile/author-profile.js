@@ -9,26 +9,16 @@ const AuthorProfile = props => {
     return <AuthorProfileLoading />;
   }
 
-  if (!props.data) {
-    return <AuthorProfileEmpty />;
+  if (!!props.data === true) {
+    return <AuthorProfileContent {...props.data} />;
   }
 
-  const contentProps = Object.assign({}, props.data, {
-    page: props.page,
-    pageSize: props.pageSize,
-    imageRatio: props.imageRatio,
-    count: props.data.articles && props.data.articles.count
-  });
-
-  return <AuthorProfileContent {...contentProps} />;
+  return <AuthorProfileEmpty />;
 };
 
 AuthorProfile.propTypes = {
   data: PropTypes.shape(AuthorProfileContent.propTypes),
-  imageRatio: PropTypes.string,
-  isLoading: PropTypes.boolean,
-  page: PropTypes.number,
-  pageSize: PropTypes.number
+  isLoading: PropTypes.bool
 };
 
 AuthorProfile.defaultProps = {
