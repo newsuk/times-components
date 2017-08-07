@@ -1,4 +1,4 @@
-/* globals beforeAll afterAll*/
+/* globals beforeAll afterAll */
 import fructose from "@times-components/fructose/setup";
 import detox from "detox";
 import config from "../package";

@@ -2931,7 +2931,7 @@ detect-indent@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/detect-indent/-/detect-indent-5.0.0.tgz#3871cc0a6a002e8c3e5b3cf7f336264675f06b9d"
 
-detox-server@^2.0.3:
+detox-server@^2.0.3, detox-server@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/detox-server/-/detox-server-2.0.4.tgz#ce4eb83a5d11c88cc8639b192b4b1695d53380e4"
   dependencies:
@@ -2952,13 +2952,13 @@ detox@5.1.3:
     react-native-invoke "^0.2.1"
     ws "^1.1.1"
 
-detox@5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/detox/-/detox-5.2.0.tgz#040d6eac7989574438dc1b127635a6676268ad45"
+detox@5.5.1:
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/detox/-/detox-5.5.1.tgz#7b6be786400cbcd62e46a795f3bf9ca0cc9de77a"
   dependencies:
     child-process-promise "^2.2.0"
     commander "^2.9.0"
-    detox-server "^2.0.3"
+    detox-server "^2.0.4"
     get-port "^2.1.0"
     lodash "^4.14.1"
     npmlog "^4.0.2"
