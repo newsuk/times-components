@@ -49,6 +49,7 @@
     "enzyme-to-json": "1.5.1",
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
+    "jsdom": "11.1.0",
     "react-native": "0.44.1",
     "react-test-renderer": "15.5.4",
     "webpack": "3.3.0"

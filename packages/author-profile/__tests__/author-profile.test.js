@@ -1,7 +1,9 @@
 /* eslint-env jest */
 
+import "jsdom";
 import "react-native";
 import React from "react";
+import { shallow } from "enzyme";
 import renderer from "react-test-renderer";
 import AuthorProfile from "../author-profile";
 import AuthorProfileFooter from "../author-profile-footer";
@@ -11,17 +13,21 @@ import AuthorProfileContent from "../author-profile-content";
 import example from "../example.json";
 
 const props = {
+  data: Object.assign({}, example, {
+    count: example.articles.count,
+    page: 1,
+    pageSize: 10
+  }),
+  isLoading: false,
   pageSize: 10,
-  page: 1,
-  data: {
-    loading: false,
-    author: Object.assign({}, example, {
-      count: example.articles.count,
-      page: 1,
-      pageSize: 10
-    })
-  }
+  page: 1
 };
+
+it("renders profile", () => {
+  const wrapper = shallow(<AuthorProfile {...props} />);
+
+  expect(wrapper).toMatchSnapshot();
+});
 
 it("renders profile content", () => {
   const component = renderer.create(<AuthorProfile {...props} />);
@@ -31,10 +37,8 @@ it("renders profile content", () => {
 
 it("renders profile loading", () => {
   const p = Object.assign({}, props, {
-    data: {
-      loading: true,
-      author: null
-    }
+    data: null,
+    isLoading: true
   });
   const component = renderer.create(<AuthorProfile {...p} />);
 
@@ -43,10 +47,8 @@ it("renders profile loading", () => {
 
 it("renders profile empty", () => {
   const p = Object.assign({}, props, {
-    data: {
-      loading: false,
-      author: null
-    }
+    data: null,
+    isLoading: false
   });
 
   const component = renderer.create(<AuthorProfile {...p} />);
@@ -55,9 +57,7 @@ it("renders profile empty", () => {
 });
 
 it("renders profile header", () => {
-  const component = renderer.create(
-    <AuthorProfileHeader {...props.data.author} />
-  );
+  const component = renderer.create(<AuthorProfileHeader {...props.data} />);
 
   expect(component).toMatchSnapshot();
 });
@@ -75,9 +75,7 @@ it("renders profile separator", () => {
 });
 
 it("renders profile content", () => {
-  const component = renderer.create(
-    <AuthorProfileContent {...props.data.author} />
-  );
+  const component = renderer.create(<AuthorProfileContent {...props.data} />);
 
   expect(component).toMatchSnapshot();
 });
