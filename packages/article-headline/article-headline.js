@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text, Platform } from "react-native";
 import PropTypes from "prop-types";
 
 const styles = {
@@ -9,13 +9,15 @@ const styles = {
     lineHeight: 25,
     marginBottom: 8,
     fontFamily: "TimesModern-Bold",
-    fontWeight: "400",
-    letterSpacing: 1
+    fontWeight: "400"
   }
 };
 
-const ArticleHeadline = ({ title, style }) =>
-  <Text style={[styles.title, style]}>{title}</Text>;
+const ArticleHeadline = ({ title, style }) => {
+  console.log(Platform)
+  return (<Text style={[styles.title, style]}>{title}</Text>);
+}
+
 
 ArticleHeadline.propTypes = {
   title: PropTypes.string.isRequired,
