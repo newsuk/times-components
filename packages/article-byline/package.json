@@ -48,6 +48,7 @@
     "webpack": "2.6.1"
   },
   "dependencies": {
+    "@times-components/markup": "0.1.2",
     "prop-types": "15.5.10",
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",

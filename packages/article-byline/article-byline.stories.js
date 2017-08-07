@@ -3,18 +3,24 @@ import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import ArticleByline from "./article-byline";
 
-const author = { name: "This Person", location: "This Place" };
-const authors = [
-  { ...author },
-  { name: "That Person", location: "That Place" }
-];
+const authorsAST = require("./fixtures/authors.json").fixture;
+
+const bylineStyles = {
+  byline: {
+    textTransform: "uppercase"
+  },
+  link: {
+    color: "red"
+  }
+};
+
 storiesOf("ArticleByline", module)
   .add("ArticleByline with a single author", () =>
-    <ArticleByline author={author} />
+    <ArticleByline ast={authorsAST.singleAuthor} />
   )
   .add("ArticleByline with multiple authors", () =>
-    <ArticleByline author={authors} />
+    <ArticleByline ast={authorsAST.multipleAuthors} />
   )
   .add("ArticleByline with styles", () =>
-    <ArticleByline author={author} style={{ textTransform: "uppercase" }} />
+    <ArticleByline ast={authorsAST.multipleAuthors} style={bylineStyles} />
   );
