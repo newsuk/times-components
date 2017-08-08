@@ -185,9 +185,9 @@
     react-split-pane "^0.1.63"
     redux "^3.6.0"
 
-"@times-components/fructose@0.1.24":
-  version "0.1.24"
-  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-0.1.24.tgz#fb9c96f186489b06afac3dfedbb7ac2d297ed394"
+"@times-components/fructose@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-1.0.0.tgz#4acd4590ccfcae8815321d643d29b2b87300a498"
   dependencies:
     babel-polyfill "^6.23.0"
     babel-preset-es2015 "^6.24.1"
@@ -195,8 +195,8 @@
     events "1.1.1"
     express "^4.15.3"
     global "4.3.2"
+    npmlog "^4.1.2"
     prop-types "15.5.10"
-    react "16.0.0-alpha.6"
     server-destroy "^1.0.1"
     socket.io "2.0.3"
     socket.io-client "2.0.3"
@@ -2931,7 +2931,7 @@ detect-indent@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/detect-indent/-/detect-indent-5.0.0.tgz#3871cc0a6a002e8c3e5b3cf7f336264675f06b9d"
 
-detox-server@^2.0.3:
+detox-server@^2.0.3, detox-server@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/detox-server/-/detox-server-2.0.4.tgz#ce4eb83a5d11c88cc8639b192b4b1695d53380e4"
   dependencies:
@@ -2952,13 +2952,13 @@ detox@5.1.3:
     react-native-invoke "^0.2.1"
     ws "^1.1.1"
 
-detox@5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/detox/-/detox-5.2.0.tgz#040d6eac7989574438dc1b127635a6676268ad45"
+detox@5.5.1:
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/detox/-/detox-5.5.1.tgz#7b6be786400cbcd62e46a795f3bf9ca0cc9de77a"
   dependencies:
     child-process-promise "^2.2.0"
     commander "^2.9.0"
-    detox-server "^2.0.3"
+    detox-server "^2.0.4"
     get-port "^2.1.0"
     lodash "^4.14.1"
     npmlog "^4.0.2"
@@ -3933,7 +3933,15 @@ function-bind@^1.0.2, function-bind@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.0.tgz#16176714c801798e4e8f2cf7f7529467bb4a5771"
 
-function.prototype.name@^1.0.0, function.prototype.name@^1.0.2:
+function.prototype.name@^1.0.0:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/function.prototype.name/-/function.prototype.name-1.0.3.tgz#0099ae5572e9dd6f03c97d023fd92bcc5e639eac"
+  dependencies:
+    define-properties "^1.1.2"
+    function-bind "^1.1.0"
+    is-callable "^1.1.3"
+
+function.prototype.name@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/function.prototype.name/-/function.prototype.name-1.0.2.tgz#b511a1a15d35fb4834cb35464b6b6b03f4e543ea"
   dependencies:
@@ -6101,7 +6109,7 @@ npmlog@^2.0.4:
     are-we-there-yet "~1.1.2"
     gauge "~1.2.5"
 
-npmlog@^4.0.2, npmlog@^4.1.0:
+npmlog@^4.0.2, npmlog@^4.1.0, npmlog@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/npmlog/-/npmlog-4.1.2.tgz#08a7f2a8bf734604779a9efa4ad5cc717abb954b"
   dependencies:
