@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
   }
 });
 
-const tagMap = new Map([
+export const tagMap = new Map([
   [
     "p",
     {
@@ -84,3 +84,5 @@ MarkupNative.propTypes = propTypes;
 export default MarkupNative;
 
 export const builder = mb(tagMap);
+
+export const MarkupBuilder = Markup;
