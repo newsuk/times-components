@@ -6,7 +6,6 @@ import React from "react";
 import { shallow } from "enzyme";
 import renderer from "react-test-renderer";
 import AuthorProfile from "../author-profile";
-import AuthorProfileFooter from "../author-profile-footer";
 import AuthorProfileHeader from "../author-profile-header";
 import AuthorProfileItemSeparator from "../author-profile-item-separator";
 import example from "../example.json";
@@ -56,12 +55,6 @@ export default AuthorProfileContent => {
 
   it("renders profile header", () => {
     const component = renderer.create(<AuthorProfileHeader {...props.data} />);
-
-    expect(component).toMatchSnapshot();
-  });
-
-  it("renders profile footer", () => {
-    const component = renderer.create(<AuthorProfileFooter />);
 
     expect(component).toMatchSnapshot();
   });

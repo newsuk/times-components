@@ -1528,7 +1528,6 @@ exports[`renders profile 1`] = `
 exports[`renders profile content 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
-  ListFooterComponent={[Function]}
   ListHeaderComponent={[Function]}
   data={
     Array [
@@ -5079,22 +5078,6 @@ exports[`renders profile content 1`] = `
         }
       }
     />
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        style={
-          Object {
-            "backgroundColor": "#1a1f24",
-            "marginTop": 10,
-            "paddingBottom": 200,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-          }
-        }
-      />
-    </View>
   </View>
 </RCTScrollView>
 `;
@@ -9066,18 +9049,6 @@ exports[`renders profile content 2`] = `
       </View>
     </View>
   </View>
-  <View
-    style={
-      Object {
-        "backgroundColor": "#1a1f24",
-        "marginTop": 10,
-        "paddingBottom": 200,
-        "paddingLeft": 10,
-        "paddingRight": 10,
-        "paddingTop": 10,
-      }
-    }
-  />
 </View>
 `;
 
@@ -9089,21 +9060,6 @@ exports[`renders profile empty 1`] = `
 >
   Empty
 </Text>
-`;
-
-exports[`renders profile footer 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "#1a1f24",
-      "marginTop": 10,
-      "paddingBottom": 200,
-      "paddingLeft": 10,
-      "paddingRight": 10,
-      "paddingTop": 10,
-    }
-  }
-/>
 `;
 
 exports[`renders profile header 1`] = `
