@@ -3,11 +3,17 @@ import React from "react";
 const actualReactApollo = require.requireActual("react-apollo");
 
 let mockProps = {};
-const setMockGraphQLProps = props => {
+let mockGraphqlExpectations = () => {};
+
+const setMockGraphQLProps = (props, expectations = () => {}) => {
+  mockGraphqlExpectations = expectations;
   mockProps = props;
 };
-const graphql = () => Component => props =>
-  <Component {...mockProps} {...props} />;
+
+const graphql = (query, variables) => Component => props => {
+  mockGraphqlExpectations(query, variables);
+  return <Component {...mockProps} {...props} />;
+};
 
 const {
   ApolloClient,

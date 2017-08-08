@@ -38,16 +38,17 @@ it("renders data", () => {
     }
   };
 
-  setMockGraphQLProps(data);
+  setMockGraphQLProps(data, (query, extras) => {
+    expect(extras.options.variables.slug).toEqual("slug-value");
+  });
 
   const query = gql`query Query($slug: Slug!) { random }`;
-  const Component = props => {
-    expect(props).toEqual(data);
-    return <Text>{JSON.stringify(props, null, 2)}</Text>;
-  };
+  const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
 
   const ComponentWithData = connectGraphql(query)(Component);
 
-  const tree = renderer.create(<ComponentWithData />).toJSON();
+  const tree = renderer
+    .create(<ComponentWithData slug={"slug-value"} />)
+    .toJSON();
   expect(tree).toMatchSnapshot();
 });

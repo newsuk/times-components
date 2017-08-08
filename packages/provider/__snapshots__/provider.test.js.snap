@@ -22,6 +22,7 @@ exports[`renders data 2`] = `
   ellipsizeMode="tail"
 >
   {
+    "slug": "slug-value",
     "data": {
       "loading": false,
       "data": "data"

@@ -45,20 +45,21 @@
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
     "nock": "^9.0.14",
+    "react-native": "0.44.1",
     "react-test-renderer": "15.5.4",
     "webpack": "2.6.1"
   },
   "dependencies": {
-    "lodash.pick": "^4.4.0",
+    "lodash.pick": "4.4.0",
     "prop-types": "15.5.10",
     "react": "16.0.0-alpha.6",
     "react-apollo": "1.4.10",
     "react-dom": "15.5.4",
-    "react-native": "0.44.1",
     "react-native-web": "0.0.97"
   },
   "peerDependencies": {
     "@storybook/react-native": "3.1.6",
+    "react-native": "0.44.1",
     "storybook-addon-apollo-graphql": "0.1.2"
   },
   "publishConfig": {
