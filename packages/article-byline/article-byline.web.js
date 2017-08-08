@@ -1,19 +1,11 @@
 import React from "react";
 import { Text } from "react-native";
 import { MarkupBuilder } from "@times-components/markup";
+import { webStyles } from "./article-byline-styles";
 
-const styles = {
-  byline: {
-    color: "#696969",
-    fontSize: 13,
-    fontFamily: "GillSansMTStd-Medium"
-  },
-  link: {
-    color: "#069"
-  }
-};
+import articleBylinePropTypes from "./article-byline-proptypes";
 
-export default function ArticleByline({ ast, style }) {
+export default function ArticleBylineWeb({ ast, style }) {
   if (!ast) {
     return null;
   }
@@ -25,7 +17,7 @@ export default function ArticleByline({ ast, style }) {
         tag: "a",
         attrs({ slug }) {
           return {
-            style: { ...styles.link, ...style.link },
+            style: { ...webStyles.link, ...style.link },
             href: `/profile/${slug}`
           };
         }
@@ -34,26 +26,22 @@ export default function ArticleByline({ ast, style }) {
     [
       "div",
       {
-        tag: Text,
-        attrs() {},
-        wrapText: Text
+        tag: "div",
+        attrs() {}
       }
     ]
   ]);
 
   return (
-    <Text style={[styles.byline, style.byline]}>
+    <Text style={[webStyles.byline, style.byline]}>
       <MarkupBuilder ast={ast} tagMap={tagMap} />
     </Text>
   );
 }
 
-ArticleByline.propTypes = {
-  ast: MarkupBuilder.propTypes.ast,
-  style: Text.propTypes.style
-};
+ArticleBylineWeb.propTypes = articleBylinePropTypes;
 
-ArticleByline.defaultProps = {
+ArticleBylineWeb.defaultProps = {
   ast: {},
   style: {}
 };
