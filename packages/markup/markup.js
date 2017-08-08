@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
   }
 });
 
-const tagMap = new Map([
+export const tagMap = new Map([
   [
     "p",
     {
