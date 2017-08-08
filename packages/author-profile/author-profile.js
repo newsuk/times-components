@@ -23,7 +23,6 @@ AuthorProfile.propTypes = {
 
 AuthorProfile.defaultProps = {
   data: null,
-  imageRatio: "3:2",
   isLoading: true,
   page: 1,
   pageSize: 20
