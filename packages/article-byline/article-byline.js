@@ -1,19 +1,10 @@
 import React from "react";
 import { Text, Linking } from "react-native";
 import { MarkupBuilder } from "@times-components/markup";
+import articleBylinePropTypes from "./article-byline-proptypes";
+import { nativeStyles } from "./article-byline-styles";
 
-const styles = {
-  byline: {
-    color: "#696969",
-    fontSize: 13,
-    fontFamily: "GillSansMTStd-Medium"
-  },
-  link: {
-    color: "#069"
-  }
-};
-
-export default function ArticleByline({ ast, style }) {
+export default function ArticleBylineNative({ ast, style }) {
   if (!ast) {
     return null;
   }
@@ -22,40 +13,36 @@ export default function ArticleByline({ ast, style }) {
     [
       "author",
       {
-        tag: "a",
+        tag: Text,
         attrs({ slug }) {
           return {
-            style: { ...styles.link, ...style.link },
+            style: { ...nativeStyles.link, ...style.link },
             onPress() {
-              Linking.openURL(slug);
+              Linking.openURL(`profile/${slug}`);
             }
           };
         }
       }
     ],
     [
-      "div",
+      "text",
       {
         tag: Text,
-        attrs() {},
-        wrapText: Text
+        attrs() {}
       }
     ]
   ]);
 
   return (
-    <Text style={[styles.byline, style.byline]}>
-      <MarkupBuilder ast={ast} tagMap={tagMap} />
+    <Text style={[nativeStyles.byline, style.byline]}>
+      <MarkupBuilder ast={ast} tagMap={tagMap} wrapIn="text" />
     </Text>
   );
 }
 
-ArticleByline.propTypes = {
-  ast: MarkupBuilder.propTypes.ast,
-  style: Text.propTypes.style
-};
+ArticleBylineNative.propTypes = articleBylinePropTypes;
 
-ArticleByline.defaultProps = {
+ArticleBylineNative.defaultProps = {
   ast: {},
   style: {}
 };
