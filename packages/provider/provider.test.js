@@ -42,7 +42,9 @@ it("renders data from graphql", () => {
     }
   };
 
-  setMockGraphQLProps(data);
+  setMockGraphQLProps(data, (query, extras) => {
+    expect(extras.options.variables.slug).toEqual("slug-value");
+  });
 
   const query = gql`query Query($slug: Slug!) { random }`;
   const Component = params => {
@@ -59,7 +61,7 @@ it("renders data from graphql", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("renders data using prop variables", () => {
+it("renders data using prop variables", (done) => {
   const data = {
     data: {
       loading: false,
@@ -69,6 +71,7 @@ it("renders data using prop variables", () => {
 
   setMockGraphQLProps(data, (query, extras) => {
     expect(extras.options.variables.slug).toEqual("slug-value");
+    return done();
   });
 
   const query = gql`query Query($slug: Slug!) { random }`;
@@ -76,8 +79,5 @@ it("renders data using prop variables", () => {
 
   const ComponentWithData = connectGraphql(query)(Component);
 
-  const tree = renderer
-    .create(<ComponentWithData slug={"slug-value"} />)
-    .toJSON();
-  expect(tree).toMatchSnapshot();
+  renderer.create(<ComponentWithData slug={"slug-value"} />).toJSON();
 });
