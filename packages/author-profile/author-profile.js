@@ -1,38 +1,31 @@
 import React from "react";
-import { FlatList, Linking } from "react-native";
 import PropTypes from "prop-types";
-import AuthorProfileFooter from "./author-profile-footer";
-import AuthorProfileHeader from "./author-profile-header";
-import AuthorProfileItem from "./author-profile-item";
-import AuthorProfileItemSeparator from "./author-profile-item-separator";
+import AuthorProfileContent from "./author-profile-content";
+import AuthorProfileEmpty from "./author-profile-empty";
+import AuthorProfileLoading from "./author-profile-loading";
 
 const AuthorProfile = props => {
-  const headerProps = {
-    ...props,
-    onNext: url => Linking.openURL(url),
-    onPrev: url => Linking.openURL(url)
-  };
+  if (props.isLoading) {
+    return <AuthorProfileLoading />;
+  }
 
-  return (
-    <FlatList
-      data={props.currentPageOfArticles}
-      ItemSeparatorComponent={() => <AuthorProfileItemSeparator />}
-      keyExtractor={article => article.id}
-      ListFooterComponent={() => <AuthorProfileFooter {...props} />}
-      ListHeaderComponent={() => <AuthorProfileHeader {...headerProps} />}
-      renderItem={({ item }) => <AuthorProfileItem {...item} />}
-    />
-  );
+  if (!!props.data === true) {
+    return <AuthorProfileContent {...props.data} />;
+  }
+
+  return <AuthorProfileEmpty />;
 };
 
 AuthorProfile.propTypes = {
-  currentPageOfArticles: PropTypes.arrayOf(
-    PropTypes.shape(AuthorProfileItem.propTypes)
-  )
+  data: PropTypes.shape(AuthorProfileContent.propTypes),
+  isLoading: PropTypes.bool
 };
 
 AuthorProfile.defaultProps = {
-  currentPageOfArticles: []
+  data: null,
+  isLoading: true,
+  page: 1,
+  pageSize: 20
 };
 
 export default AuthorProfile;

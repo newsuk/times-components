@@ -15,20 +15,37 @@ const styles = StyleSheet.create({
   }
 });
 
-storiesOf("AuthorProfile", module).add("AuthorProfile", () =>
+const story = m =>
   <View style={styles.background}>
     <View style={styles.container}>
-      <AuthorProfile
-        name={example.name}
-        jobTitle={example.jobTitle}
-        biography={example.biography}
-        image={example.image}
-        twitter={example.twitter}
-        articleCount={example.articles.count}
-        currentPageOfArticles={example.articles.list}
-        currentPageOffset={1}
-        pageSize={10}
-      />
+      {m}
     </View>
-  </View>
-);
+  </View>;
+
+storiesOf("AuthorProfile", module)
+  .add("AuthorProfile", () => {
+    const props = {
+      data: Object.assign({}, example, {
+        count: example.articles.count,
+        pageSize: 10,
+        page: 1
+      }),
+      isLoading: false
+    };
+
+    return story(<AuthorProfile {...props} />);
+  })
+  .add("AuthorProfile Loading", () => {
+    const props = {
+      isLoading: true
+    };
+
+    return story(<AuthorProfile {...props} />);
+  })
+  .add("AuthorProfile Empty State", () => {
+    const props = {
+      isLoading: false
+    };
+
+    return story(<AuthorProfile {...props} />);
+  });

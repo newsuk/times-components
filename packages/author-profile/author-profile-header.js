@@ -1,8 +1,8 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
+import PropTypes from "prop-types";
 import AuthorHead from "@times-components/author-head";
 import Pagination from "@times-components/pagination";
-import PropTypes from "prop-types";
 
 const styles = StyleSheet.create({
   container: {
@@ -21,9 +21,9 @@ const styles = StyleSheet.create({
 });
 
 const AuthorProfileHeader = ({
-  articleCount: count,
+  count,
   biography: bio,
-  currentPageOffset,
+  page,
   image: uri,
   jobTitle: title,
   name,
@@ -45,7 +45,7 @@ const AuthorProfileHeader = ({
     onNext,
     onPrev,
     nextPageLinking: "https://www.thetimes.co.uk?page=3",
-    page: currentPageOffset + 1,
+    page,
     pageSize,
     prevPageLinking: "https://www.thetimes.co.uk?page=1"
   };
@@ -63,22 +63,22 @@ const AuthorProfileHeader = ({
 };
 
 AuthorProfileHeader.propTypes = {
-  articleCount: Pagination.propTypes.count,
   biography: AuthorHead.propTypes.bio,
-  currentPageOffset: PropTypes.number,
+  count: Pagination.propTypes.count,
   image: AuthorHead.propTypes.uri,
   jobTitle: AuthorHead.propTypes.title,
   name: AuthorHead.propTypes.name,
-  onNext: Pagination.propTypes.onNext,
-  onPrev: Pagination.propTypes.onPrev,
+  onNext: PropTypes.func,
+  onPrev: PropTypes.func,
+  page: Pagination.propTypes.page,
   pageSize: Pagination.propTypes.pageSize,
   twitter: AuthorHead.propTypes.twitter
 };
 
 AuthorProfileHeader.defaultProps = {
-  articleCount: 0,
+  count: 0,
   biography: null,
-  currentPageOffset: 0,
+  page: 0,
   image: null,
   jobTitle: null,
   name: null,
