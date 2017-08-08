@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.1.0...@times-components/article@0.2.0) (2017-08-08)
+
+
+### Features
+
+* add article flag to article ([e40020e](https://github.com/newsuk/times-components/commit/e40020e))
+* add article label to article ([f4215a5](https://github.com/newsuk/times-components/commit/f4215a5))
+* beautify title ([c1a62f9](https://github.com/newsuk/times-components/commit/c1a62f9))
+
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2017-07-27)
 
