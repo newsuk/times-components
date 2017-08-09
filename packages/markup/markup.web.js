@@ -2,6 +2,13 @@ import React from "react";
 import Markup, { builder as mb } from "./markup-builder";
 import propTypes from "./markup-proptype";
 
+const styles = {
+  author: {
+    color: "#069",
+    textDecoration: "none"
+  }
+};
+
 const tagMap = new Map([
   [
     "p",
@@ -43,6 +50,18 @@ const tagMap = new Map([
     }
   ],
   [
+    "author",
+    {
+      tag: "a",
+      attrs({ slug }) {
+        return {
+          style: styles.author,
+          href: `/profile/${slug}`
+        };
+      }
+    }
+  ],
+  [
     "div",
     {
       tag: "div",
@@ -59,5 +78,3 @@ MarkupWeb.propTypes = propTypes;
 export default MarkupWeb;
 
 export const builder = mb(tagMap);
-
-export const MarkupBuilder = Markup;

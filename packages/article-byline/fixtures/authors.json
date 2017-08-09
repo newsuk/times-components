@@ -36,11 +36,16 @@
         ]
       },
       {
-        "name": "text",
+        "name": "span",
         "attributes": {},
         "children": [
           {
-            "text": ", Social Affairs Correspondent | Mark Bridge, Technology Correspondent | "
+            "name": "text",
+            "children": [
+              {
+                "text": ", Social Affairs Correspondent | Mark Bridge, Technology Correspondent | "
+              }
+            ]
           }
         ]
       },
