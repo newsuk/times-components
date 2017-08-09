@@ -10,6 +10,10 @@ const setMockGraphQLProps = (props, expectations = () => {}) => {
   mockProps = props;
 };
 
+const resetMockGraphQLProps = () => {
+  setMockGraphQLProps({});
+};
+
 const graphql = (query, variables) => Component => props => {
   mockGraphqlExpectations(query, variables);
   return <Component {...mockProps} {...props} />;
@@ -28,5 +32,6 @@ export {
   createBatchingNetworkInterface,
   gql,
   graphql,
+  resetMockGraphQLProps,
   setMockGraphQLProps
 };
