@@ -15,10 +15,15 @@ const getQueryVariables = definitions =>
     )
   );
 
-const connectGraphql = (query, propsToVariables = identity) => Component => {
+const connectGraphql = (
+  query,
+  propsToVariables = identity,
+  transformResponse = identity
+) => Component => {
   const variableNames = getQueryVariables(query.definitions);
   return props => {
-    const Wrapper = data => <Component {...props} {...data} />;
+    const Wrapper = data =>
+      <Component {...props} {...transformResponse(data)} />;
 
     const variables = pick(propsToVariables(props), variableNames);
     const WithGraphql = graphql(query, {
