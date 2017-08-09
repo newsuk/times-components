@@ -1,0 +1,279 @@
+{
+	"fixture": [{
+			"attributes": {
+				"title": "Sex, cocaine and sport: a volatile combination"
+			},
+			"children": [{
+				"attributes": {},
+				"children": [{
+						"attributes": {},
+						"children": [{
+							"children": [{
+								"text": "The Italian cyclist Gilberto Simoni was cleared of taking cocaine in 2002 by proving that traces of the drug came from coca leaf sweets his aunt brought back from Peru"
+							}],
+							"name": "text"
+						}],
+						"name": "li"
+					},
+					{
+						"attributes": {},
+						"children": [{
+							"children": [{
+								"text": "Daniel Plaza, an Olympic race-walking champion from Spain, said that a positive test for nandrolone in 1996 had been caused by his performing a sex act on his pregnant wife. Ten years later, he was cleared"
+							}],
+							"name": "text"
+						}],
+						"name": "li"
+					},
+					{
+						"attributes": {},
+						"children": [{
+							"children": [{
+								"text": "Dennis Mitchell’s high levels of testosterone in 1998 were caused by having sex with his wife “at least four times” on her birthday, according to the sprinter. USA Track and Field believed him, the IAAF did not"
+							}],
+							"name": "text"
+						}],
+						"name": "li"
+					},
+					{
+						"attributes": {},
+						"children": [{
+							"children": [{
+								"text": "In 2010 the American sprinter LaShawn Merritt blamed a positive test on not reading the ingredients for his penis enlargement medication. A possible two-year ban was reduced by three months"
+							}],
+							"name": "text"
+						}],
+						"name": "li"
+					}
+				],
+				"name": "ul"
+			}],
+			"name": "key-facts"
+		},
+		{
+			"attributes": {
+				"title": "Sex, cocaine and sport: a volatile combination"
+			},
+			"children": [{
+				"attributes": {},
+				"children": [{
+						"attributes": {},
+						"children": [{
+							"children": [{
+								"text": "The Italian cyclist Gilberto Simoni was cleared of taking cocaine in 2002 by proving that traces of the drug came from coca leaf sweets his aunt brought back from Peru"
+							}],
+							"name": "text"
+						}],
+						"name": "li"
+					},
+					{
+						"attributes": {},
+						"children": [{
+							"children": [{
+								"text": "Daniel Plaza, an Olympic race-walking champion from Spain, said that a positive test for nandrolone in 1996 had been caused by his performing a sex act on his pregnant wife. Ten years later, he was cleared"
+							}],
+							"name": "text"
+						}],
+						"name": "li"
+					},
+					{
+						"attributes": {},
+						"children": [{
+							"children": [{
+								"text": "Dennis Mitchell’s high levels of testosterone in 1998 were caused by having sex with his wife “at least four times” on her birthday, according to the sprinter. USA Track and Field believed him, the IAAF did not"
+							}],
+							"name": "text"
+						}],
+						"name": "li"
+					},
+					{
+						"attributes": {},
+						"children": [{
+							"children": [{
+								"text": "In 2010 the American sprinter LaShawn Merritt blamed a positive test on not reading the ingredients for his penis enlargement medication. A possible two-year ban was reduced by three months"
+							}],
+							"name": "text"
+						}],
+						"name": "li"
+					}
+				],
+				"name": "ul"
+			}],
+			"name": "key-facts"
+		},
+		{
+			"attributes": {
+				"name": "",
+				"text": "",
+				"twitter": ""
+			},
+			"children": [{
+				"children": [{
+					"text": "He never said anything to me about suicide or self-harm. I don’t understand why he did it"
+				}],
+				"name": "text"
+			}],
+			"name": "pull-quote"
+		},
+		{
+			"attributes": {},
+			"children": [{
+				"children": [{
+					"text": "Big header"
+				}],
+				"name": "text"
+			}],
+			"name": "h2"
+		},
+		{
+			"attributes": {},
+			"children": [{
+				"children": [{
+					"text": "Stephen Evans, whose previous film credits include Henry V and The Madness of King George, wants to cast a footballer who can be taught to act, rather than an actor who can be taught to play football in the role of the young Best."
+				}],
+				"name": "text"
+			}],
+			"name": "paragraph"
+		},
+		{
+			"attributes": {},
+			"children": [{
+				"children": [{
+					"text": "Medium header"
+				}],
+				"name": "text"
+			}],
+			"name": "h3"
+		},
+		{
+			"attributes": {},
+			"children": [{
+				"children": [{
+					"text": "Small header"
+				}],
+				"name": "text"
+			}],
+			"name": "h4"
+		},
+		{
+			"attributes": {},
+			"children": [{
+				"children": [{
+					"text": "The search, to begin next month, is similar to that employed for Seve, a film produced by Evans about the life of the Spanish golfer Severiano Ballesteros, for which the rising young golf star Jose Luis Gutierrez, then 15, was cast in the lead role."
+				}],
+				"name": "text"
+			}],
+			"name": "paragraph"
+		},
+		{
+			"attributes": {},
+			"children": [{
+				"children": [{
+					"text": "Smaller header"
+				}],
+				"name": "text"
+			}],
+			"name": "h5"
+		},
+		{
+			"attributes": {},
+			"children": [{
+				"children": [{
+					"text": "Like Seve, the Best film will combine archive footage with dramatic re-enactment filmed in Belfast and Manchester."
+				}],
+				"name": "text"
+			}],
+			"name": "paragraph"
+		},
+		{
+			"attributes": {},
+			"children": [{
+				"children": [{
+					"text": "Smallest header"
+				}],
+				"name": "text"
+			}],
+			"name": "h6"
+		},
+		{
+			"attributes": {},
+			"children": [{
+				"children": [{
+					"text": "“What we want is a good-looking, spindly, cheeky chappy,” Evans said. “The only man who could play Best in adulthood — and match his resolute intensity, wit and charisma — is George himself. Any other actor would fall woefully short, above all during any footballing sequences.”"
+				}],
+				"name": "text"
+			}],
+			"name": "paragraph"
+		},
+		{
+			"attributes": {},
+			"children": [{
+				"children": [{
+					"text": "Evans, who has worked on films nominated for a total of 11 Oscars, said a key aspect of the film would be Best’s relationship with Mary Fullaway, his landlady when he moved to Manchester at the age of 15."
+				}],
+				"name": "text"
+			}],
+			"name": "paragraph"
+		},
+		{
+			"attributes": {},
+			"children": [{
+				"children": [{
+					"text": "“She did everything. She used to answer sackloads of fan mail that came in, she built him up weight-wise by feeding him well,” said Evans, who hopes to cast someone “of [actress] Julie Walters’s calibre” to play her."
+				}],
+				"name": "text"
+			}],
+			"name": "paragraph"
+		},
+		{
+			"attributes": {},
+			"children": [{
+				"children": [{
+					"text": "“He was very homesick when he came to Manchester. She was the one who helped him get over it.”"
+				}],
+				"name": "text"
+			}],
+			"name": "paragraph"
+		},
+		{
+			"attributes": {},
+			"children": [{
+				"children": [{
+					"text": "Best, who scored 178 goals in 466 appearances for Manchester United between 1963 and 1974 and won 37 caps for Northern Ireland, remained close to Fullaway even after becoming one of the most famous and wealthy footballers of his generation."
+				}],
+				"name": "text"
+			}],
+			"name": "paragraph"
+		},
+		{
+			"attributes": {},
+			"children": [{
+				"children": [{
+					"text": "The biopic will also cover his hedonistic lifestyle and descent into alcoholism. He died in 2005, aged 59."
+				}],
+				"name": "text"
+			}],
+			"name": "paragraph"
+		},
+		{
+			"attributes": {},
+			"children": [{
+				"children": [{
+					"text": "Evans, who hopes to begin filming this summer, said there were similarities between Ballesteros, who won more than 90 tournaments including five major championships, and Best."
+				}],
+				"name": "text"
+			}],
+			"name": "paragraph"
+		},
+		{
+			"attributes": {},
+			"children": [{
+				"children": [{
+					"text": "“They lit up their generation like a comet, both on and off the pitch,” he said."
+				}],
+				"name": "text"
+			}],
+			"name": "paragraph"
+		}
+	]
+}

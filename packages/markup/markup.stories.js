@@ -9,6 +9,9 @@ const multiParagraph = require("./fixtures/multi-paragraph.json").fixture;
 const mixture = require("./fixtures/tag-mixture.json").fixture;
 const bio = require("./fixtures/bio.json").fixture;
 
+const copyParagraph = require("./fixtures/copy-paragraph.json").fixture;
+const copyMultiFields = require("./fixtures/copy-multi-fields.json").fixture;
+
 const story = m => <View style={{ padding: 20 }}>{m}</View>;
 
 storiesOf("Markup", module)
@@ -27,4 +30,6 @@ storiesOf("Markup", module)
         )}
       </View>
     )
-  );
+  )
+  .add("Multiple copy paragraphs", () => story(<Markup ast={copyParagraph} />))
+  .add("Multiple copy fields", () => story(<Markup ast={copyMultiFields} />));
