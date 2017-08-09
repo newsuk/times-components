@@ -1,48 +1,35 @@
+/* eslint-disable react/no-array-index-key */
 import React from "react";
-import { Text, Linking } from "react-native";
-import { MarkupBuilder } from "@times-components/markup";
-import articleBylinePropTypes from "./article-byline-proptypes";
-import { nativeStyles } from "./article-byline-styles";
+import { Text } from "react-native";
+import { builder } from "@times-components/markup";
+import styles from "./article-byline-styles";
 
-export default function ArticleBylineNative({ ast, style }) {
+import {
+  articleBylinePropTypes,
+  articleBylineDefaultPropTypes
+} from "./article-byline-proptypes";
+
+export default function ArticleBylineWeb({ ast, style }) {
   if (!ast) {
     return null;
   }
 
-  const tagMap = new Map([
-    [
-      "author",
-      {
-        tag: Text,
-        attrs({ slug }) {
-          return {
-            style: { ...nativeStyles.link, ...style.link },
-            onPress() {
-              Linking.openURL(`profile/${slug}`);
-            }
-          };
-        }
-      }
-    ],
-    [
-      "text",
-      {
-        tag: Text,
-        attrs() {}
-      }
-    ]
-  ]);
-
   return (
-    <Text style={[nativeStyles.byline, style.byline]}>
-      <MarkupBuilder ast={ast} tagMap={tagMap} wrapIn="text" />
+    <Text>
+      {builder({ ast }).map((el, i) =>
+        <Text style={[styles.byline, style.byline]} key={i}>
+          {React.cloneElement(el, {
+            style: {
+              ...el.props.style,
+              ...(style.link && el.props.onPress ? style.link : {})
+            }
+          })}
+        </Text>
+      )}
     </Text>
   );
 }
 
-ArticleBylineNative.propTypes = articleBylinePropTypes;
+ArticleBylineWeb.propTypes = articleBylinePropTypes;
 
-ArticleBylineNative.defaultProps = {
-  ast: {},
-  style: {}
-};
+ArticleBylineWeb.defaultProps = articleBylineDefaultPropTypes;

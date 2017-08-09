@@ -1,13 +1,22 @@
 import PropTypes from "prop-types";
-import { MarkupBuilder } from "@times-components/markup";
 import { Text } from "react-native";
 
-const articleBylinePropTypes = {
-  ast: MarkupBuilder.propTypes.ast,
+const astType = {
+  name: PropTypes.string,
+  attributes: PropTypes.object
+};
+
+astType.children = PropTypes.arrayOf(PropTypes.shape(astType));
+
+export const articleBylinePropTypes = {
+  ast: PropTypes.arrayOf(PropTypes.shape(astType)).isRequired,
   style: PropTypes.shape({
     byline: Text.propTypes.style,
     link: Text.propTypes.style
   })
 };
 
-export default articleBylinePropTypes;
+export const articleBylineDefaultPropTypes = {
+  ast: {},
+  style: {}
+};
