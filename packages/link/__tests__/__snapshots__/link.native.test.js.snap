@@ -15,6 +15,7 @@ exports[`renders correctly with children 1`] = `
       Object {},
     ]
   }
+  url="http://thetimes.co.uk"
 >
   The Times
 </Text>
@@ -37,6 +38,7 @@ exports[`renders correctly with specifc styles 1`] = `
       },
     ]
   }
+  url="http://thetimes.co.uk"
 >
   The Times
 </Text>

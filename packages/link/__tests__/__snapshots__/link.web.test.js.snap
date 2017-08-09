@@ -7,6 +7,7 @@ exports[`renders correctly with children 1`] = `
   allowFontScaling={true}
   ellipsizeMode="tail"
   href="http://thetimes.co.uk"
+  onPress={[Function]}
   style={
     Array [
       Object {
@@ -28,6 +29,7 @@ exports[`renders correctly with specifc styles 1`] = `
   allowFontScaling={true}
   ellipsizeMode="tail"
   href="http://thetimes.co.uk"
+  onPress={[Function]}
   style={
     Array [
       Object {

@@ -58,6 +58,19 @@ export default AuthorProfileContent => {
     expect(component).toMatchSnapshot();
   });
 
+  it("renders profile error", () => {
+    const p = Object.assign({}, props, {
+      data: null,
+      error: {
+        error: "error"
+      }
+    });
+
+    const component = renderer.create(<AuthorProfile {...p} />);
+
+    expect(component).toMatchSnapshot();
+  });
+
   it("renders profile header", () => {
     const component = renderer.create(<AuthorProfileHeader {...props.data} />);
 

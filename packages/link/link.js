@@ -8,9 +8,13 @@ const styles = {
   textDecorationLine: "underline"
 };
 
-export default function Link({ url, style, children }) {
+export default function Link(props) {
+  const { children, style, url } = props;
+
+  const { onPress = () => Linking.openURL(url) } = props;
+
   return (
-    <Text onPress={() => Linking.openURL(url)} style={[styles, style]}>
+    <Text {...props} onPress={onPress} style={[styles, style]}>
       {children}
     </Text>
   );

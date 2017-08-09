@@ -194,38 +194,56 @@ exports[`renders data 1`] = `
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
                 Array [
                   Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 15,
-                    "lineHeight": 20,
-                    "paddingBottom": 11,
-                    "paddingTop": 11,
-                    "textAlign": "center",
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 40,
+                    "justifyContent": "space-between",
+                  },
+                  Object {
+                    "justifyContent": "center",
                   },
                   null,
                 ]
               }
             >
-              Showing 1 - 0 of 0 results
-            </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 15,
+                    },
+                  ]
+                }
+              >
+                Showing 1 - 0 of 0 results
+              </Text>
+            </View>
             <View
               style={
-                Object {
-                  "borderBottomColor": "#dbdbdb",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "justifyContent": "space-between",
-                }
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 40,
+                    "justifyContent": "space-between",
+                  },
+                  Object {
+                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomWidth": 1,
+                    "borderStyle": "solid",
+                    "borderTopColor": "#dbdbdb",
+                    "borderTopWidth": 1,
+                  },
+                ]
               }
             >
               <View />
@@ -433,38 +451,56 @@ exports[`renders data from graphql 1`] = `
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
                 Array [
                   Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 15,
-                    "lineHeight": 20,
-                    "paddingBottom": 11,
-                    "paddingTop": 11,
-                    "textAlign": "center",
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 40,
+                    "justifyContent": "space-between",
+                  },
+                  Object {
+                    "justifyContent": "center",
                   },
                   null,
                 ]
               }
             >
-              Showing 1 - 0 of 0 results
-            </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 15,
+                    },
+                  ]
+                }
+              >
+                Showing 1 - 0 of 0 results
+              </Text>
+            </View>
             <View
               style={
-                Object {
-                  "borderBottomColor": "#dbdbdb",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "justifyContent": "space-between",
-                }
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 40,
+                    "justifyContent": "space-between",
+                  },
+                  Object {
+                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomWidth": 1,
+                    "borderStyle": "solid",
+                    "borderTopColor": "#dbdbdb",
+                    "borderTopWidth": 1,
+                  },
+                ]
               }
             >
               <View />

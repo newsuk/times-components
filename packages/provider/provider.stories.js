@@ -1,6 +1,8 @@
 import React from "react";
 import { Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
+import { withPageState } from "@times-components/pagination";
+
 import {
   ApolloClient,
   ApolloProvider,
@@ -56,13 +58,15 @@ storiesOf("Provider", module).add("Provider", () => {
   );
 });
 
+const AuthorProfileWithPageState = withPageState(AuthorProfileProvider);
 storiesOf("Provider", module).add("AuthorProfileProvider", () =>
   <ApolloProvider client={client}>
-    <AuthorProfileProvider
+    <AuthorProfileWithPageState
+      generatePageLink={page => `https://www.thetimes.co.uk?page=${page}`}
+      imageRatio="3:2"
       slug="fiona-hamilton"
       page={1}
-      pageSize={10}
-      imageRatio="3:2"
+      pageSize={3}
     />
   </ApolloProvider>
 );

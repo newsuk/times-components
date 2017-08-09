@@ -21,6 +21,7 @@ exports[`Markup Native renders a mixture of tags 1`] = `
           Object {},
         ]
       }
+      url="http://www.google.com"
     >
       some link here
     </Text>
@@ -190,6 +191,7 @@ exports[`Markup Native renders the anchor tag 1`] = `
       Object {},
     ]
   }
+  url="www.google.com"
 >
   some link here
 </Text>
