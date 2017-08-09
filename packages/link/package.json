@@ -57,6 +57,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
+    "lodash.pick": "^4.4.0",
     "prop-types": "15.5.10",
     "react-native-web": "0.0.119"
   },

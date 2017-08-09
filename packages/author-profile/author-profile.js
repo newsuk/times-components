@@ -15,7 +15,13 @@ const AuthorProfile = props => {
   }
 
   if (!!props.data === true) {
-    return <AuthorProfileContent {...props.data} />;
+    const extra = {
+      onNext: props.onNext,
+      onPrev: props.onPrev,
+      page: props.page,
+      pageSize: props.pageSize
+    };
+    return <AuthorProfileContent {...props.data} {...extra} />;
   }
 
   return <AuthorProfileEmpty />;
@@ -24,13 +30,21 @@ const AuthorProfile = props => {
 AuthorProfile.propTypes = {
   data: PropTypes.shape(AuthorProfileContent.propTypes),
   error: PropTypes.shape(),
-  isLoading: PropTypes.bool
+  isLoading: PropTypes.bool,
+  onNext: AuthorProfileContent.propTypes.onNext,
+  onPrev: AuthorProfileContent.propTypes.onPrev,
+  page: AuthorProfileContent.propTypes.page,
+  pageSize: AuthorProfileContent.propTypes.pageSize
 };
 
 AuthorProfile.defaultProps = {
   data: null,
   error: null,
-  isLoading: true
+  isLoading: true,
+  onNext: () => {},
+  onPrev: () => {},
+  page: 1,
+  pageSize: 10
 };
 
 export default AuthorProfile;

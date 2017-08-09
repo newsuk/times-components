@@ -53,6 +53,7 @@
   },
   "dependencies": {
     "@times-components/author-profile": "0.4.8",
+    "@times-components/pagination": "0.2.1",
     "graphql-tag": "2.4.2",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",
