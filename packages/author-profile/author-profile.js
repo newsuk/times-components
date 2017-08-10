@@ -11,7 +11,7 @@ const AuthorProfile = props => {
   }
 
   if (props.error) {
-    return <AuthorProfileError {...props.data} />;
+    return <AuthorProfileError {...props.error} />;
   }
 
   if (!!props.data === true) {

@@ -1,7 +1,7 @@
 import get from "lodash.get";
 import gql from "graphql-tag";
-import connectGraphql from "@times-components/provider";
-import AuthorProfile from "./author-profile";
+import AuthorProfile from "@times-components/author-profile";
+import connectGraphql from "./connect";
 
 const query = gql`
   query ArticleQuery($slug: Slug!, $first: Int, $skip: Int, $imageRatio: Ratio!) {
