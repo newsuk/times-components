@@ -2,7 +2,7 @@
 // https://github.com/facebook/react-native/pull/13199
 
 import React from "react";
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import WebViewAutoHeight from "./WebView-auto-height";
 
