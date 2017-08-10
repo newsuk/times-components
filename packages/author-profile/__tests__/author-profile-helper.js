@@ -10,6 +10,11 @@ import AuthorProfileHeader from "../author-profile-header";
 import AuthorProfileItemSeparator from "../author-profile-item-separator";
 import example from "../example.json";
 
+example.articles.list = example.articles.list.map(el => ({
+  ...el,
+  publishedTime: new Date(el.publishedTime)
+}));
+
 const props = {
   data: Object.assign({}, example, {
     count: example.articles.count,

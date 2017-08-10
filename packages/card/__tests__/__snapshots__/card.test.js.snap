@@ -60,7 +60,7 @@ exports[`renders horizontal above breakpoint 1`] = `
     }
   >
     <ArticleSummary
-      date="2017-07-10T14:32:00.000Z"
+      date={2017-07-01T14:32:00.000Z}
       headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT"
       label="Camilla Long"
       publication="The Sunday Times"
@@ -215,14 +215,17 @@ exports[`renders vertical by default 1`] = `
         allowFontScaling={true}
         ellipsizeMode="tail"
         style={
-          Object {
-            "color": "#696969",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 13,
-          }
+          Array [
+            Object {
+              "color": "#696969",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+            },
+            Object {},
+          ]
         }
       >
-        Monday July 10 2017
+        Saturday July 01 2017
         , 
         The Sunday Times
       </Text>

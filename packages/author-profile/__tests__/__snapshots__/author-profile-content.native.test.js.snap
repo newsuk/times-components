@@ -16,7 +16,7 @@ exports[`renders profile 1`] = `
             "title": "British trio stopped on the way to join Isis",
           },
           "publicationName": "TIMES",
-          "publishedTime": "2015-03-23T23:06:34.000Z",
+          "publishedTime": 2015-03-23T23:06:34.000Z,
           "teaser": Array [
             Object {
               "attributes": Object {},
@@ -104,7 +104,7 @@ exports[`renders profile 1`] = `
           "label": null,
           "leadAsset": null,
           "publicationName": "TIMES",
-          "publishedTime": "2015-03-23T23:06:34.000Z",
+          "publishedTime": 2015-03-23T23:06:34.000Z,
           "teaser": Array [],
           "title": "A blank article with a server rendered component",
         },
@@ -113,7 +113,7 @@ exports[`renders profile 1`] = `
           "label": null,
           "leadAsset": null,
           "publicationName": "TIMES",
-          "publishedTime": "2015-03-23T23:06:34.000Z",
+          "publishedTime": 2015-03-23T23:06:34.000Z,
           "teaser": Array [],
           "title": "A blank article with a server rendered component",
         },
@@ -127,7 +127,7 @@ exports[`renders profile 1`] = `
             "title": "British trio stopped on the way to join Isis",
           },
           "publicationName": "TIMES",
-          "publishedTime": "2015-03-20T23:06:34.000Z",
+          "publishedTime": 2015-03-20T23:06:34.000Z,
           "teaser": Array [
             Object {
               "attributes": Object {},
@@ -220,7 +220,7 @@ exports[`renders profile 1`] = `
             "title": "British trio stopped on the way to join Isis",
           },
           "publicationName": "TIMES",
-          "publishedTime": "2015-03-19T23:06:34.000Z",
+          "publishedTime": 2015-03-19T23:06:34.000Z,
           "teaser": Array [
             Object {
               "attributes": Object {},
@@ -313,7 +313,7 @@ exports[`renders profile 1`] = `
             "title": "British trio stopped on the way to join Isis",
           },
           "publicationName": "TIMES",
-          "publishedTime": "2015-03-18T23:06:34.000Z",
+          "publishedTime": 2015-03-18T23:06:34.000Z,
           "teaser": Array [
             Object {
               "attributes": Object {},
@@ -406,7 +406,7 @@ exports[`renders profile 1`] = `
             "title": "Gay and IVF couples ‘better at raising children’",
           },
           "publicationName": "SUNDAYTIMES",
-          "publishedTime": "2015-03-17T23:37:49.000Z",
+          "publishedTime": 2015-03-17T23:37:49.000Z,
           "teaser": Array [
             Object {
               "attributes": Object {},
@@ -477,7 +477,7 @@ exports[`renders profile 1`] = `
             "title": "British trio stopped on the way to join Isis",
           },
           "publicationName": "TIMES",
-          "publishedTime": "2015-03-17T23:06:34.000Z",
+          "publishedTime": 2015-03-17T23:06:34.000Z,
           "teaser": Array [
             Object {
               "attributes": Object {},
@@ -570,7 +570,7 @@ exports[`renders profile 1`] = `
             "title": "Fourth Briton is seized trying to join Isis",
           },
           "publicationName": "TIMES",
-          "publishedTime": "2015-03-17T23:01:44.000Z",
+          "publishedTime": 2015-03-17T23:01:44.000Z,
           "teaser": Array [
             Object {
               "attributes": Object {},
@@ -641,7 +641,7 @@ exports[`renders profile 1`] = `
             "title": "Fourth Briton is seized trying to join Isis",
           },
           "publicationName": "TIMES",
-          "publishedTime": "2015-03-17T23:01:44.000Z",
+          "publishedTime": 2015-03-17T23:01:44.000Z,
           "teaser": Array [
             Object {
               "attributes": Object {},
@@ -712,7 +712,7 @@ exports[`renders profile 1`] = `
             "title": "Fourth Briton is seized trying to join Isis",
           },
           "publicationName": "TIMES",
-          "publishedTime": "2015-03-17T23:01:44.000Z",
+          "publishedTime": 2015-03-17T23:01:44.000Z,
           "teaser": Array [
             Object {
               "attributes": Object {},
@@ -783,7 +783,7 @@ exports[`renders profile 1`] = `
             "title": "Fourth Briton is seized trying to join Isis",
           },
           "publicationName": "TIMES",
-          "publishedTime": "2015-03-17T23:01:44.000Z",
+          "publishedTime": 2015-03-17T23:01:44.000Z,
           "teaser": Array [
             Object {
               "attributes": Object {},
@@ -854,7 +854,7 @@ exports[`renders profile 1`] = `
             "title": "Fourth Briton is seized trying to join Isis",
           },
           "publicationName": "TIMES",
-          "publishedTime": "2015-03-17T23:01:44.000Z",
+          "publishedTime": 2015-03-17T23:01:44.000Z,
           "teaser": Array [
             Object {
               "attributes": Object {},
@@ -925,7 +925,7 @@ exports[`renders profile 1`] = `
             "title": "Fourth Briton is seized trying to join Isis",
           },
           "publicationName": "TIMES",
-          "publishedTime": "2015-03-17T23:01:44.000Z",
+          "publishedTime": 2015-03-17T23:01:44.000Z,
           "teaser": Array [
             Object {
               "attributes": Object {},
@@ -996,7 +996,7 @@ exports[`renders profile 1`] = `
             "title": "Clash of interests tarnished the project",
           },
           "publicationName": "TIMES",
-          "publishedTime": "2015-03-17T22:11:25.000Z",
+          "publishedTime": 2015-03-17T22:11:25.000Z,
           "teaser": Array [
             Object {
               "attributes": Object {},
@@ -1067,7 +1067,7 @@ exports[`renders profile 1`] = `
             "title": "Giant brings out the stars for one last time",
           },
           "publicationName": "TIMES",
-          "publishedTime": "2015-03-17T21:49:11.000Z",
+          "publishedTime": 2015-03-17T21:49:11.000Z,
           "teaser": Array [
             Object {
               "attributes": Object {},
@@ -1138,7 +1138,7 @@ exports[`renders profile 1`] = `
             "title": "Inquiry at sect schools that banned books",
           },
           "publicationName": "TIMES",
-          "publishedTime": "2015-03-17T21:25:02.000Z",
+          "publishedTime": 2015-03-17T21:25:02.000Z,
           "teaser": Array [
             Object {
               "attributes": Object {},
@@ -1239,7 +1239,7 @@ exports[`renders profile 1`] = `
             "title": "Top graduates drawn to jobs in social work",
           },
           "publicationName": "TIMES",
-          "publishedTime": "2015-03-17T20:51:44.000Z",
+          "publishedTime": 2015-03-17T20:51:44.000Z,
           "teaser": Array [
             Object {
               "attributes": Object {},
@@ -1296,7 +1296,7 @@ exports[`renders profile 1`] = `
             "title": "TMS: Pratchett’s law of the jungle",
           },
           "publicationName": "TIMES",
-          "publishedTime": "2015-03-17T19:39:39.000Z",
+          "publishedTime": 2015-03-17T19:39:39.000Z,
           "teaser": Array [
             Object {
               "attributes": Object {},
@@ -1369,7 +1369,7 @@ exports[`renders profile 1`] = `
             "title": "Learning by rote ‘will put pupils off poetry’",
           },
           "publicationName": "TIMES",
-          "publishedTime": "2015-03-17T19:36:43.000Z",
+          "publishedTime": 2015-03-17T19:36:43.000Z,
           "teaser": Array [
             Object {
               "attributes": Object {},
@@ -1541,7 +1541,7 @@ exports[`renders profile content 1`] = `
           "title": "British trio stopped on the way to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-23T23:06:34.000Z",
+        "publishedTime": 2015-03-23T23:06:34.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -1629,7 +1629,7 @@ exports[`renders profile content 1`] = `
         "label": null,
         "leadAsset": null,
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-23T23:06:34.000Z",
+        "publishedTime": 2015-03-23T23:06:34.000Z,
         "teaser": Array [],
         "title": "A blank article with a server rendered component",
       },
@@ -1638,7 +1638,7 @@ exports[`renders profile content 1`] = `
         "label": null,
         "leadAsset": null,
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-23T23:06:34.000Z",
+        "publishedTime": 2015-03-23T23:06:34.000Z,
         "teaser": Array [],
         "title": "A blank article with a server rendered component",
       },
@@ -1652,7 +1652,7 @@ exports[`renders profile content 1`] = `
           "title": "British trio stopped on the way to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-20T23:06:34.000Z",
+        "publishedTime": 2015-03-20T23:06:34.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -1745,7 +1745,7 @@ exports[`renders profile content 1`] = `
           "title": "British trio stopped on the way to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-19T23:06:34.000Z",
+        "publishedTime": 2015-03-19T23:06:34.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -1838,7 +1838,7 @@ exports[`renders profile content 1`] = `
           "title": "British trio stopped on the way to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-18T23:06:34.000Z",
+        "publishedTime": 2015-03-18T23:06:34.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -1931,7 +1931,7 @@ exports[`renders profile content 1`] = `
           "title": "Gay and IVF couples ‘better at raising children’",
         },
         "publicationName": "SUNDAYTIMES",
-        "publishedTime": "2015-03-17T23:37:49.000Z",
+        "publishedTime": 2015-03-17T23:37:49.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -2002,7 +2002,7 @@ exports[`renders profile content 1`] = `
           "title": "British trio stopped on the way to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T23:06:34.000Z",
+        "publishedTime": 2015-03-17T23:06:34.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -2095,7 +2095,7 @@ exports[`renders profile content 1`] = `
           "title": "Fourth Briton is seized trying to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T23:01:44.000Z",
+        "publishedTime": 2015-03-17T23:01:44.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -2166,7 +2166,7 @@ exports[`renders profile content 1`] = `
           "title": "Fourth Briton is seized trying to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T23:01:44.000Z",
+        "publishedTime": 2015-03-17T23:01:44.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -2237,7 +2237,7 @@ exports[`renders profile content 1`] = `
           "title": "Fourth Briton is seized trying to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T23:01:44.000Z",
+        "publishedTime": 2015-03-17T23:01:44.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -2308,7 +2308,7 @@ exports[`renders profile content 1`] = `
           "title": "Fourth Briton is seized trying to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T23:01:44.000Z",
+        "publishedTime": 2015-03-17T23:01:44.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -2379,7 +2379,7 @@ exports[`renders profile content 1`] = `
           "title": "Fourth Briton is seized trying to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T23:01:44.000Z",
+        "publishedTime": 2015-03-17T23:01:44.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -2450,7 +2450,7 @@ exports[`renders profile content 1`] = `
           "title": "Fourth Briton is seized trying to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T23:01:44.000Z",
+        "publishedTime": 2015-03-17T23:01:44.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -2521,7 +2521,7 @@ exports[`renders profile content 1`] = `
           "title": "Clash of interests tarnished the project",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T22:11:25.000Z",
+        "publishedTime": 2015-03-17T22:11:25.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -2592,7 +2592,7 @@ exports[`renders profile content 1`] = `
           "title": "Giant brings out the stars for one last time",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T21:49:11.000Z",
+        "publishedTime": 2015-03-17T21:49:11.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -2663,7 +2663,7 @@ exports[`renders profile content 1`] = `
           "title": "Inquiry at sect schools that banned books",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T21:25:02.000Z",
+        "publishedTime": 2015-03-17T21:25:02.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -2764,7 +2764,7 @@ exports[`renders profile content 1`] = `
           "title": "Top graduates drawn to jobs in social work",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T20:51:44.000Z",
+        "publishedTime": 2015-03-17T20:51:44.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -2821,7 +2821,7 @@ exports[`renders profile content 1`] = `
           "title": "TMS: Pratchett’s law of the jungle",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T19:39:39.000Z",
+        "publishedTime": 2015-03-17T19:39:39.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -2894,7 +2894,7 @@ exports[`renders profile content 1`] = `
           "title": "Learning by rote ‘will put pupils off poetry’",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T19:36:43.000Z",
+        "publishedTime": 2015-03-17T19:36:43.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -3448,11 +3448,14 @@ exports[`renders profile content 1`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                    },
+                    Object {},
+                  ]
                 }
               >
                 Monday March 23 2015
@@ -3601,11 +3604,14 @@ exports[`renders profile content 1`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                    },
+                    Object {},
+                  ]
                 }
               >
                 Monday March 23 2015
@@ -3754,11 +3760,14 @@ exports[`renders profile content 1`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                    },
+                    Object {},
+                  ]
                 }
               >
                 Monday March 23 2015
@@ -3939,11 +3948,14 @@ exports[`renders profile content 1`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                    },
+                    Object {},
+                  ]
                 }
               >
                 Friday March 20 2015
@@ -4124,11 +4136,14 @@ exports[`renders profile content 1`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                    },
+                    Object {},
+                  ]
                 }
               >
                 Thursday March 19 2015
@@ -4309,11 +4324,14 @@ exports[`renders profile content 1`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                    },
+                    Object {},
+                  ]
                 }
               >
                 Wednesday March 18 2015
@@ -4493,11 +4511,14 @@ exports[`renders profile content 1`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                    },
+                    Object {},
+                  ]
                 }
               >
                 Tuesday March 17 2015
@@ -4678,11 +4699,14 @@ exports[`renders profile content 1`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                    },
+                    Object {},
+                  ]
                 }
               >
                 Tuesday March 17 2015
@@ -4862,11 +4886,14 @@ exports[`renders profile content 1`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                    },
+                    Object {},
+                  ]
                 }
               >
                 Tuesday March 17 2015
@@ -5046,11 +5073,14 @@ exports[`renders profile content 1`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                    },
+                    Object {},
+                  ]
                 }
               >
                 Tuesday March 17 2015
@@ -5098,7 +5128,7 @@ exports[`renders profile content 2`] = `
           "title": "British trio stopped on the way to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-23T23:06:34.000Z",
+        "publishedTime": 2015-03-23T23:06:34.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -5186,7 +5216,7 @@ exports[`renders profile content 2`] = `
         "label": null,
         "leadAsset": null,
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-23T23:06:34.000Z",
+        "publishedTime": 2015-03-23T23:06:34.000Z,
         "teaser": Array [],
         "title": "A blank article with a server rendered component",
       },
@@ -5195,7 +5225,7 @@ exports[`renders profile content 2`] = `
         "label": null,
         "leadAsset": null,
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-23T23:06:34.000Z",
+        "publishedTime": 2015-03-23T23:06:34.000Z,
         "teaser": Array [],
         "title": "A blank article with a server rendered component",
       },
@@ -5209,7 +5239,7 @@ exports[`renders profile content 2`] = `
           "title": "British trio stopped on the way to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-20T23:06:34.000Z",
+        "publishedTime": 2015-03-20T23:06:34.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -5302,7 +5332,7 @@ exports[`renders profile content 2`] = `
           "title": "British trio stopped on the way to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-19T23:06:34.000Z",
+        "publishedTime": 2015-03-19T23:06:34.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -5395,7 +5425,7 @@ exports[`renders profile content 2`] = `
           "title": "British trio stopped on the way to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-18T23:06:34.000Z",
+        "publishedTime": 2015-03-18T23:06:34.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -5488,7 +5518,7 @@ exports[`renders profile content 2`] = `
           "title": "Gay and IVF couples ‘better at raising children’",
         },
         "publicationName": "SUNDAYTIMES",
-        "publishedTime": "2015-03-17T23:37:49.000Z",
+        "publishedTime": 2015-03-17T23:37:49.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -5559,7 +5589,7 @@ exports[`renders profile content 2`] = `
           "title": "British trio stopped on the way to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T23:06:34.000Z",
+        "publishedTime": 2015-03-17T23:06:34.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -5652,7 +5682,7 @@ exports[`renders profile content 2`] = `
           "title": "Fourth Briton is seized trying to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T23:01:44.000Z",
+        "publishedTime": 2015-03-17T23:01:44.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -5723,7 +5753,7 @@ exports[`renders profile content 2`] = `
           "title": "Fourth Briton is seized trying to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T23:01:44.000Z",
+        "publishedTime": 2015-03-17T23:01:44.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -5794,7 +5824,7 @@ exports[`renders profile content 2`] = `
           "title": "Fourth Briton is seized trying to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T23:01:44.000Z",
+        "publishedTime": 2015-03-17T23:01:44.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -5865,7 +5895,7 @@ exports[`renders profile content 2`] = `
           "title": "Fourth Briton is seized trying to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T23:01:44.000Z",
+        "publishedTime": 2015-03-17T23:01:44.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -5936,7 +5966,7 @@ exports[`renders profile content 2`] = `
           "title": "Fourth Briton is seized trying to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T23:01:44.000Z",
+        "publishedTime": 2015-03-17T23:01:44.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -6007,7 +6037,7 @@ exports[`renders profile content 2`] = `
           "title": "Fourth Briton is seized trying to join Isis",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T23:01:44.000Z",
+        "publishedTime": 2015-03-17T23:01:44.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -6078,7 +6108,7 @@ exports[`renders profile content 2`] = `
           "title": "Clash of interests tarnished the project",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T22:11:25.000Z",
+        "publishedTime": 2015-03-17T22:11:25.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -6149,7 +6179,7 @@ exports[`renders profile content 2`] = `
           "title": "Giant brings out the stars for one last time",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T21:49:11.000Z",
+        "publishedTime": 2015-03-17T21:49:11.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -6220,7 +6250,7 @@ exports[`renders profile content 2`] = `
           "title": "Inquiry at sect schools that banned books",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T21:25:02.000Z",
+        "publishedTime": 2015-03-17T21:25:02.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -6321,7 +6351,7 @@ exports[`renders profile content 2`] = `
           "title": "Top graduates drawn to jobs in social work",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T20:51:44.000Z",
+        "publishedTime": 2015-03-17T20:51:44.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -6378,7 +6408,7 @@ exports[`renders profile content 2`] = `
           "title": "TMS: Pratchett’s law of the jungle",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T19:39:39.000Z",
+        "publishedTime": 2015-03-17T19:39:39.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -6451,7 +6481,7 @@ exports[`renders profile content 2`] = `
           "title": "Learning by rote ‘will put pupils off poetry’",
         },
         "publicationName": "TIMES",
-        "publishedTime": "2015-03-17T19:36:43.000Z",
+        "publishedTime": 2015-03-17T19:36:43.000Z,
         "teaser": Array [
           Object {
             "attributes": Object {},
@@ -7005,11 +7035,14 @@ exports[`renders profile content 2`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                    },
+                    Object {},
+                  ]
                 }
               >
                 Monday March 23 2015
@@ -7158,11 +7191,14 @@ exports[`renders profile content 2`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                    },
+                    Object {},
+                  ]
                 }
               >
                 Monday March 23 2015
@@ -7311,11 +7347,14 @@ exports[`renders profile content 2`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                    },
+                    Object {},
+                  ]
                 }
               >
                 Monday March 23 2015
@@ -7496,11 +7535,14 @@ exports[`renders profile content 2`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                    },
+                    Object {},
+                  ]
                 }
               >
                 Friday March 20 2015
@@ -7681,11 +7723,14 @@ exports[`renders profile content 2`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                    },
+                    Object {},
+                  ]
                 }
               >
                 Thursday March 19 2015
@@ -7866,11 +7911,14 @@ exports[`renders profile content 2`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                    },
+                    Object {},
+                  ]
                 }
               >
                 Wednesday March 18 2015
@@ -8050,11 +8098,14 @@ exports[`renders profile content 2`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                    },
+                    Object {},
+                  ]
                 }
               >
                 Tuesday March 17 2015
@@ -8235,11 +8286,14 @@ exports[`renders profile content 2`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                    },
+                    Object {},
+                  ]
                 }
               >
                 Tuesday March 17 2015
@@ -8419,11 +8473,14 @@ exports[`renders profile content 2`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                    },
+                    Object {},
+                  ]
                 }
               >
                 Tuesday March 17 2015
@@ -8603,11 +8660,14 @@ exports[`renders profile content 2`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                    },
+                    Object {},
+                  ]
                 }
               >
                 Tuesday March 17 2015
