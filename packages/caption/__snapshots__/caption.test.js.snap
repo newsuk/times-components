@@ -47,9 +47,7 @@ exports[`renders correctly with credits 1`] = `
       ]
     }
   >
-     
     JUST CREDITS
-     
   </Text>
 </View>
 `;
