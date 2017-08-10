@@ -45,6 +45,7 @@
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
     "react-test-renderer": "15.5.4",
+    "@times-components/image": "1.1.0",
     "webpack": "3.3.0"
   },
   "dependencies": {
