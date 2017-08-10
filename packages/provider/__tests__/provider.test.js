@@ -4,14 +4,14 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { resetMockGraphQLProps, setMockGraphQLProps, gql } from "react-apollo";
 import { Text } from "react-native";
-import connectGraphql from "./provider";
+import connectGraphql from "../provider";
 
 beforeEach(() => {
   resetMockGraphQLProps();
 });
 
 it("renders data", () => {
-  setMockGraphQLProps({ data: { loading: false, data: "stuff" } });
+  setMockGraphQLProps({ data: { loading: false, data: "data" } });
 
   const query = gql`query Query($slug: Slug!) { random }`;
   const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
@@ -61,7 +61,7 @@ it("renders data from graphql", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("renders data using prop variables", (done) => {
+it("renders data using prop variables", done => {
   const data = {
     data: {
       loading: false,

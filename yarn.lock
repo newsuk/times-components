@@ -176,56 +176,6 @@
     react-treebeard "^2.0.3"
     redux "^3.6.0"
 
-"@times-components/article-summary@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@times-components/article-summary/-/article-summary-0.2.0.tgz#4e435832c4d47cc1dca5218beafdc274d0d7c48a"
-  dependencies:
-    "@times-components/markup" "0.1.2"
-    date-fns "1.28.5"
-    prop-types "15.5.10"
-    react "16.0.0-alpha.6"
-    react-dom "15.5.4"
-    react-native "0.44.1"
-    react-native-web "0.0.97"
-
-"@times-components/author-head@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@times-components/author-head/-/author-head-0.2.0.tgz#fa5551af704fa9f62fbb80bed962e4f85d12ef74"
-  dependencies:
-    "@times-components/image" "1.1.0"
-    "@times-components/markup" "0.1.2"
-    prop-types "15.5.10"
-    react "16.0.0-alpha.6"
-    react-dom "15.5.4"
-    react-native "0.44.1"
-    react-native-web "0.0.97"
-
-"@times-components/author-profile@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@times-components/author-profile/-/author-profile-0.1.0.tgz#76682f225c2dea5f8da5d4aa2ce41668210e2ba0"
-  dependencies:
-    "@times-components/author-head" "0.2.0"
-    "@times-components/card" "0.3.0"
-    "@times-components/pagination" "0.2.0"
-    jest-cli "20.0.4"
-    lodash.merge "4.6.0"
-    prop-types "15.5.10"
-    react "16.0.0-alpha.6"
-    react-dom "15.5.4"
-    react-native-web "0.0.97"
-    react-style-proptype "3.0.0"
-
-"@times-components/card@0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@times-components/card/-/card-0.3.0.tgz#7369786542a8bf6b131fddafb1f949050d987c58"
-  dependencies:
-    "@times-components/article-summary" "0.2.0"
-    "@times-components/image" "1.1.0"
-    react "16.0.0-alpha.6"
-    react-dom "15.5.4"
-    react-native "0.44.1"
-    react-native-web "0.0.97"
-
 "@times-components/fructose@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-1.0.0.tgz#4acd4590ccfcae8815321d643d29b2b87300a498"
@@ -241,38 +191,6 @@
     server-destroy "^1.0.1"
     socket.io "2.0.3"
     socket.io-client "2.0.3"
-
-"@times-components/image@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@times-components/image/-/image-1.1.0.tgz#876b111bc1deee3d08beff25545c2527f4572b25"
-  dependencies:
-    jest-cli "20.0.4"
-    prop-types "15.5.10"
-    react "16.0.0-alpha.6"
-    react-dom "15.5.4"
-    react-native "0.44.1"
-    react-native-web "0.0.97"
-    react-style-proptype "3.0.0"
-
-"@times-components/markup@0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@times-components/markup/-/markup-0.1.2.tgz#6839b86ea8bd7d69af5bb70d2cee05d3422a70f1"
-  dependencies:
-    prop-types "15.5.10"
-    react "16.0.0-alpha.6"
-    react-dom "15.5.4"
-    react-native "0.44.1"
-    react-native-web "0.0.97"
-
-"@times-components/pagination@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@times-components/pagination/-/pagination-0.2.0.tgz#e102d55012ebe685d693e8d2cbb5715514f55766"
-  dependencies:
-    prop-types "15.5.10"
-    react "16.0.0-alpha.6"
-    react-dom "15.5.4"
-    react-native "0.44.1"
-    react-native-web "0.0.97"
 
 "@types/graphql@0.10.2":
   version "0.10.2"

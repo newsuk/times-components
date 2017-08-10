@@ -14,7 +14,7 @@
       "node_modules/(?!@times-components)/"
     ],
     "testMatch": [
-      "<rootDir>/packages/provider/**.test.js"
+      "<rootDir>/packages/provider/__tests__/**.test.js"
     ]
   },
   "repository": {
@@ -50,7 +50,7 @@
     "webpack": "2.6.1"
   },
   "dependencies": {
-    "@times-components/author-profile": "0.1.0",
+    "@times-components/author-profile": "0.2.0",
     "graphql-tag": "2.4.2",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",

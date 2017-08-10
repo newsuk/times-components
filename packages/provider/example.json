@@ -1,0 +1,68 @@
+{
+  "name": "Fiona Hamilton",
+  "jobTitle": "Legal Editor",
+  "biography": [
+    {
+      "name": "text",
+      "children": [
+        {
+          "text": "Lorem "
+        }
+      ]
+    },
+    {
+      "name": "b",
+      "attributes": {},
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": "ipsum"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "text",
+      "children": [
+        {
+          "text": " testbr "
+        }
+      ]
+    },
+    {
+      "name": "br",
+      "attributes": {}
+    },
+    {
+      "name": "text",
+      "children": [
+        {
+          "text": "More text "
+        }
+      ]
+    },
+    {
+      "name": "i",
+      "attributes": {},
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": " last "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "image": "",
+  "twitter": "jdoe",
+  "articles": {
+    "count": 0,
+    "list": []
+  }
+}

@@ -9,7 +9,7 @@ exports[`renders data 1`] = `
   {
     "data": {
       "loading": false,
-      "data": "stuff"
+      "data": "data"
     }
   }
 </Text>

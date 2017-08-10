@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react-native";
 import { ApolloProvider, gql } from "react-apollo";
 import { withApolloProvider } from "storybook-addon-apollo-graphql";
 
-import client from "./apollo-client";
+import client from "./fixtures/apollo-client";
 import connectGraphql, { AuthorProfileProvider } from "./provider.js";
 
 const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
