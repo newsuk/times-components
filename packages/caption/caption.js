@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, Text, StyleSheet } from "react-native";
+import { View, ViewPropTypes, Text, StyleSheet } from "react-native";
 
-const style = StyleSheet.create({
+const defaultStyle = StyleSheet.create({
   container: {
     paddingTop: 10
   },
@@ -21,20 +21,32 @@ const style = StyleSheet.create({
   }
 });
 
-const Caption = ({ text, credits }) =>
-  <View style={style.container}>
-    <Text style={style.text}> {text} </Text>
-    {credits &&
-      <Text style={[style.text, style.credits]}>{credits.toUpperCase()}</Text>}
+const Caption = ({ text, credits, style, children }) =>
+  <View>
+    {children}
+    <View style={[defaultStyle.container, style.container]}>
+      <Text style={[defaultStyle.text, style.text]}> {text} </Text>
+      {credits &&
+        <Text style={[defaultStyle.text, defaultStyle.credits, style.text]}>
+          {credits.toUpperCase()}
+        </Text>}
+    </View>
   </View>;
 
 Caption.defaultProps = {
-  credits: ""
+  credits: null,
+  style: {},
+  children: null
 };
 
 Caption.propTypes = {
   text: PropTypes.string.isRequired,
-  credits: PropTypes.string
+  credits: PropTypes.string,
+  style: PropTypes.shape({
+    text: Text.propTypes.style,
+    container: ViewPropTypes.style
+  }),
+  children: PropTypes.element
 };
 
 export default Caption;

@@ -1,82 +1,248 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly with credits 1`] = `
-<View
-  style={
-    Object {
-      "paddingTop": 10,
-    }
-  }
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-      }
-    }
+exports[`renders an image with a caption 1`] = `
+<View>
+  <View
+    onLayout={[Function]}
   >
-     
-    Some caption text goes in here
-     
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+    <Image
+      onError={[Function]}
+      onLoad={[Function]}
+      source={
+        Object {
+          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "height": 1,
+            "width": 750,
+          },
+          undefined,
+        ]
+      }
+    />
+  </View>
+  <View
     style={
       Array [
         Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 15,
+          "paddingTop": 10,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#696969",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 13,
+            "lineHeight": 15,
+          },
+          undefined,
+        ]
+      }
+    >
+       
+      Some caption text goes in here
+       
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#696969",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 13,
+            "lineHeight": 15,
+          },
+          Object {
+            "color": "#333",
+            "fontSize": 9,
+            "fontWeight": "400",
+            "letterSpacing": 1,
+            "marginTop": 2,
+          },
+          undefined,
+        ]
+      }
+    >
+      JUST CREDITS
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`renders correctly with credits 1`] = `
+<View>
+  <View
+    style={
+      Array [
+        Object {
+          "paddingTop": 10,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#696969",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 13,
+            "lineHeight": 15,
+          },
+          undefined,
+        ]
+      }
+    >
+       
+      Some caption text goes in here
+       
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#696969",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 13,
+            "lineHeight": 15,
+          },
+          Object {
+            "color": "#333",
+            "fontSize": 9,
+            "fontWeight": "400",
+            "letterSpacing": 1,
+            "marginTop": 2,
+          },
+          undefined,
+        ]
+      }
+    >
+      JUST CREDITS
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`renders correctly with specific styles 1`] = `
+<View>
+  <View
+    style={
+      Array [
+        Object {
+          "paddingTop": 10,
         },
         Object {
-          "color": "#333",
-          "fontSize": 9,
-          "fontWeight": "400",
-          "letterSpacing": 1,
-          "marginTop": 2,
+          "backgroundColor": "red",
         },
       ]
     }
   >
-    JUST CREDITS
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#696969",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 13,
+            "lineHeight": 15,
+          },
+          Object {
+            "color": "green",
+          },
+        ]
+      }
+    >
+       
+      Some caption text goes in here
+       
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#696969",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 13,
+            "lineHeight": 15,
+          },
+          Object {
+            "color": "#333",
+            "fontSize": 9,
+            "fontWeight": "400",
+            "letterSpacing": 1,
+            "marginTop": 2,
+          },
+          Object {
+            "color": "green",
+          },
+        ]
+      }
+    >
+      JUST CREDITS
+    </Text>
+  </View>
 </View>
 `;
 
 exports[`renders correctly without credits 1`] = `
-<View
-  style={
-    Object {
-      "paddingTop": 10,
-    }
-  }
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+<View>
+  <View
     style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-      }
+      Array [
+        Object {
+          "paddingTop": 10,
+        },
+        undefined,
+      ]
     }
   >
-     
-    Some caption text goes in here
-     
-  </Text>
-  
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#696969",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 13,
+            "lineHeight": 15,
+          },
+          undefined,
+        ]
+      }
+    >
+       
+      Some caption text goes in here
+       
+    </Text>
+  </View>
 </View>
 `;
