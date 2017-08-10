@@ -8,7 +8,7 @@ exports[`renders correctly 1`] = `
   width={7}
 >
   <g
-    fill="#C51D24"
+    fill="green"
     style={Object {}}
   >
     <path
