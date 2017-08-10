@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with credits 1`] = `
+<View
+  style={
+    Object {
+      "paddingTop": 10,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+      }
+    }
+  >
+     
+    Some caption text goes in here
+     
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 15,
+        },
+        Object {
+          "color": "#333",
+          "fontSize": 9,
+          "fontWeight": "400",
+          "letterSpacing": 1,
+          "marginTop": 2,
+        },
+      ]
+    }
+  >
+     
+    JUST CREDITS
+     
+  </Text>
+</View>
+`;
+
+exports[`renders correctly without credits 1`] = `
+<View
+  style={
+    Object {
+      "paddingTop": 10,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+      }
+    }
+  >
+     
+    Some caption text goes in here
+     
+  </Text>
+  
+</View>
+`;
