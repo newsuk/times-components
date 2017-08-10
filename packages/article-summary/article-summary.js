@@ -1,12 +1,10 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import format from "date-fns/format";
+import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import Markup, { builder } from "@times-components/markup";
+import DatePublication from "@times-components/date-publication";
 
-const DATE_FORMAT = "dddd MMMM DD YYYY";
-
-const styles = StyleSheet.create({
+const styles = {
   container: {},
   label: {
     color: "#333333",
@@ -30,25 +28,8 @@ const styles = StyleSheet.create({
     lineHeight: 20,
     marginBottom: 10,
     flexWrap: "wrap"
-  },
-  meta: {
-    color: "#696969",
-    fontSize: 13,
-    fontFamily: "GillSansMTStd-Medium"
   }
-});
-
-function renderPublicationDetails(date, publication, style) {
-  if (!date || !publication) {
-    return null;
-  }
-
-  return (
-    <Text style={style.meta}>
-      {format(date, DATE_FORMAT)}, {publication}
-    </Text>
-  );
-}
+};
 
 const ArticleSummary = props => {
   const { label, headline, text: ast, date, publication } = props;
@@ -61,7 +42,7 @@ const ArticleSummary = props => {
       <Text style={styles.text}>
         {builder({ ast })}
       </Text>
-      {renderPublicationDetails(date, publication, styles)}
+      <DatePublication date={date} publication={publication} />
     </View>
   );
 };
@@ -70,7 +51,7 @@ ArticleSummary.propTypes = {
   label: PropTypes.string,
   headline: PropTypes.string,
   text: Markup.propTypes.ast,
-  date: PropTypes.string,
+  date: PropTypes.instanceOf(Date),
   publication: PropTypes.string
 };
 

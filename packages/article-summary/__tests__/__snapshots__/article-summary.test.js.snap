@@ -142,11 +142,14 @@ exports[`renders an article-summary component with content 1`] = `
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-      }
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+        },
+        Object {},
+      ]
     }
   >
     Saturday July 01 2017

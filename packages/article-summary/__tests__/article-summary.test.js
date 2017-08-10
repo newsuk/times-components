@@ -13,6 +13,7 @@ it("renders an article-summary component", () => {
 });
 
 it("renders an article-summary component with content", () => {
+  props.date = new Date("2017-07-01T14:32:00.000Z");
   const tree = renderer.create(<ArticleSummary {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });

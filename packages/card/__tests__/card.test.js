@@ -7,6 +7,8 @@ import renderer from "react-test-renderer";
 import Card from "../card";
 import props from "../fixtures/card-props.json";
 
+props.date = new Date("2017-07-01T14:32:00.000Z");
+
 it("renders vertical by default", () => {
   const tree = renderer.create(<Card {...props} />).toJSON();
 
