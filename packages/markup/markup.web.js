@@ -12,6 +12,11 @@ const styles = {
     fontFamily: "TimesModern-Regular",
     fontSize: 25,
     lineHeight: 1.2
+  },
+  keyfacts: {
+    color: "#333",
+    fontFamily: "TimesDigital-Regular",
+    fontSize: 13,
   }
 };
 
@@ -83,7 +88,19 @@ const tagMap = new Map([
         };
       }
     }
-  ]
+  ],
+  [
+    "key-facts",
+    {
+      tag: "div",
+      attrs({ title }) {
+        return {
+          style: styles.keyfacts,
+          title
+        };
+      }
+    }
+  ],
 ]);
 
 const MarkupWeb = ({ ast, wrapIn }) =>

@@ -28,6 +28,11 @@ function astToMarkup(tagMap, key, wrapTextWith, [x, ...xs]) {
 
   const { tag, attrs, wrapText } = tagMap.get(x.name) || {};
 
+  console.log('--------');
+  console.log(attrs);
+  console.log(x.attributes);
+  console.log('--------');
+
   if (tag) {
     children.push(
       React.createElement(

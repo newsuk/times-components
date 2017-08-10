@@ -28,6 +28,11 @@ const styles = {
     lineHeight: 25,
     marginTop: 10,
     marginBottom: 10
+  },
+  keyfacts: {
+    color: "#333",
+    fontFamily: "TimesDigital-Regular",
+    fontSize: 13,
   }
 };
 
@@ -111,7 +116,20 @@ const tagMap = new Map([
         };
       }
     }
-  ]
+  ],
+  [
+    "key-facts",
+    {
+      tag: View,
+      attrs({ title }) {
+        return {
+          style: styles.keyfacts,
+          title
+        };
+      },
+      wrapText: Text
+    }
+  ],
 ]);
 
 const MarkupNative = ({ ast, wrapIn }) =>
