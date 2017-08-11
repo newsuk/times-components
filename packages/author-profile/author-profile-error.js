@@ -1,6 +1,10 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text, View } from "react-native";
 
-const AuthorProfileError = () => <Text>An error ocurred</Text>;
+const AuthorProfileError = props =>
+  <View>
+    <Text>An error ocurred</Text>
+    <Text>{JSON.stringify(props, null, 2)}</Text>
+  </View>;
 
 export default AuthorProfileError;

@@ -2,11 +2,16 @@ import React from "react";
 import PropTypes from "prop-types";
 import AuthorProfileContent from "./author-profile-content";
 import AuthorProfileEmpty from "./author-profile-empty";
+import AuthorProfileError from "./author-profile-error";
 import AuthorProfileLoading from "./author-profile-loading";
 
 const AuthorProfile = props => {
   if (props.isLoading) {
     return <AuthorProfileLoading />;
+  }
+
+  if (props.error) {
+    return <AuthorProfileError {...props.error} />;
   }
 
   if (!!props.data === true) {
@@ -18,14 +23,14 @@ const AuthorProfile = props => {
 
 AuthorProfile.propTypes = {
   data: PropTypes.shape(AuthorProfileContent.propTypes),
+  error: PropTypes.shape(),
   isLoading: PropTypes.bool
 };
 
 AuthorProfile.defaultProps = {
   data: null,
-  isLoading: true,
-  page: 1,
-  pageSize: 20
+  error: null,
+  isLoading: true
 };
 
 export default AuthorProfile;

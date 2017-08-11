@@ -9,29 +9,13 @@ exports[`renders data 1`] = `
   {
     "data": {
       "loading": false,
-      "data": "stuff"
-    }
-  }
-</Text>
-`;
-
-exports[`renders data from graphql 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
->
-  {
-    "slug": "slug-value",
-    "data": {
-      "loading": false,
       "data": "data"
     }
   }
 </Text>
 `;
 
-exports[`renders data using prop variables 1`] = `
+exports[`renders data from graphql 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
