@@ -55,7 +55,7 @@
   "dependencies": {
     "@times-components/article-summary": "0.2.2",
     "@times-components/image": "1.1.0",
-    "react": "16.0.0-alpha.6",
+    "react": "16.0.0-beta.5",
     "react-dom": "15.5.4",
     "react-native": "0.44.1",
     "react-native-web": "0.0.97"

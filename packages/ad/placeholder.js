@@ -50,8 +50,8 @@ const Placeholder = ({ width, height, style }) => {
 Placeholder.propTypes = {
   width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired,
-  style: React.PropTypes.shape({
-    display: React.PropTypes.string
+  style: PropTypes.shape({
+    display: PropTypes.string
   })
 };
 
