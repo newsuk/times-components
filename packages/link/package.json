@@ -1,8 +1,8 @@
 {
-  "name": "@times-components/article-byline",
+  "name": "@times-components/link",
   "version": "0.0.1",
-  "description": "Article byline information",
-  "main": "article-byline.js",
+  "description": "component to handle links and navigation",
+  "main": "link.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
@@ -11,8 +11,12 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-    "testMatch": ["<rootDir>/packages/article-byline/**.test.js"]
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/link/**.test.js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -23,7 +27,7 @@
     "react",
     "native",
     "web",
-    "article-byline",
+    "link",
     "component"
   ],
   "license": "BSD-3-Clause",
@@ -41,11 +45,9 @@
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
     "react-test-renderer": "15.5.4",
-    "webpack": "2.6.1"
+    "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/link": "0.0.1",
-    "@times-components/markup": "0.1.2",
     "prop-types": "15.5.10",
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",

@@ -11,12 +11,8 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/markup/__tests__/*.test.js"
-    ]
+    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+    "testMatch": ["<rootDir>/packages/markup/__tests__/*.test.js"]
   },
   "repository": {
     "type": "git",
@@ -48,6 +44,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
+    "@times-components/link": "0.0.1",
     "prop-types": "15.5.10",
     "react": "16.0.0-alpha.6",
     "react-dom": "15.5.4",

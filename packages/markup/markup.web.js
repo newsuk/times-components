@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "@times-components/link";
 import Markup, { builder as mb } from "./markup-builder";
 import propTypes from "./markup-proptype";
 
@@ -6,7 +7,8 @@ const styles = {
   author: {
     color: "#069",
     textDecoration: "none"
-  }
+  },
+  anchor: { color: "blue" }
 };
 
 const tagMap = new Map([
@@ -20,10 +22,11 @@ const tagMap = new Map([
   [
     "a",
     {
-      tag: "a",
+      tag: Link,
       attrs({ href }) {
         return {
-          href
+          url: href,
+          style: styles.anchor
         };
       }
     }
@@ -52,11 +55,11 @@ const tagMap = new Map([
   [
     "author",
     {
-      tag: "a",
+      tag: Link,
       attrs({ slug }) {
         return {
           style: styles.author,
-          href: `/profile/${slug}`
+          url: `/profile/${slug}`
         };
       }
     }

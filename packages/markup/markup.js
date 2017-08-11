@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text, Linking } from "react-native";
+import Link from "@times-components/link";
 import Markup, { builder as mb } from "./markup-builder";
 import propTypes from "./markup-proptype";
 
@@ -29,13 +30,11 @@ const tagMap = new Map([
   [
     "a",
     {
-      tag: Text,
+      tag: Link,
       attrs({ href }) {
         return {
-          style: styles.anchor,
-          onPress() {
-            Linking.openURL(href);
-          }
+          href,
+          style: styles.anchor
         };
       }
     }
@@ -72,13 +71,11 @@ const tagMap = new Map([
   [
     "author",
     {
-      tag: Text,
+      tag: Link,
       attrs({ slug }) {
         return {
           style: styles.author,
-          onPress() {
-            Linking.openURL(`profile/${slug}`);
-          }
+          url: `profile/${slug}`
         };
       }
     }

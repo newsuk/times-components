@@ -1,6 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import React from "react";
 import { Text } from "react-native";
+import Link from "@times-components/link";
 import { builder } from "@times-components/markup";
 import styles from "./article-byline-styles";
 
@@ -21,7 +22,7 @@ export default function ArticleBylineWeb({ ast, style }) {
           {React.cloneElement(el, {
             style: {
               ...el.props.style,
-              ...(style.link && el.type === "a" ? style.link : {})
+              ...(style.link && el.type === Link ? style.link : {})
             }
           })}
         </Text>
