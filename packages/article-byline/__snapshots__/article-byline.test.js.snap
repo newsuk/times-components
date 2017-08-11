@@ -27,9 +27,12 @@ exports[`renders correctly with a single author 1`] = `
       ellipsizeMode="tail"
       onPress={[Function]}
       style={
-        Object {
-          "color": "#069",
-        }
+        Array [
+          Object {
+            "color": "#069",
+          },
+          Object {},
+        ]
       }
     >
       Fiona Hamilton
@@ -65,9 +68,12 @@ exports[`renders correctly with multiple authors, titles and texts 1`] = `
       ellipsizeMode="tail"
       onPress={[Function]}
       style={
-        Object {
-          "color": "#069",
-        }
+        Array [
+          Object {
+            "color": "#069",
+          },
+          Object {},
+        ]
       }
     >
       Greg Hurst
@@ -118,9 +124,12 @@ exports[`renders correctly with multiple authors, titles and texts 1`] = `
       ellipsizeMode="tail"
       onPress={[Function]}
       style={
-        Object {
-          "color": "#069",
-        }
+        Array [
+          Object {
+            "color": "#069",
+          },
+          Object {},
+        ]
       }
     >
       Fiona Hamilton
@@ -158,10 +167,12 @@ exports[`renders correctly with styles 1`] = `
       ellipsizeMode="tail"
       onPress={[Function]}
       style={
-        Object {
-          "color": "red",
-          "textDecorationLine": "underline",
-        }
+        Array [
+          Object {
+            "color": "#069",
+          },
+          Object {},
+        ]
       }
     >
       Fiona Hamilton
