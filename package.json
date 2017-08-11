@@ -126,6 +126,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
+    "@times-components/brightcove-video": "^0.2.2",
     "babel-plugin-transform-class": "0.3.0",
     "dashify": "0.2.2",
     "global": "4.3.2",

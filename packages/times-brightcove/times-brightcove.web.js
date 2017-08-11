@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
-import BrightcoveVideo from "../brightcove-video"; // @times-components/brightcove-video ?
+import BrightcoveVideo from "@times-components/brightcove-video/brightcove-video.web";
 
 class TimesBrightcove extends Component {
   render() {
