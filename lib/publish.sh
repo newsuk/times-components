@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-echo "Running publish script tb"
+echo "Running publish script"
 
 echo $(printf "TRAVIS_BRANCH %s" $TRAVIS_BRANCH)
 echo $(printf "TRAVIS_PULL_REQUEST %s" $TRAVIS_PULL_REQUEST)
