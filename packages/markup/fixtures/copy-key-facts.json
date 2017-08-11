@@ -1,0 +1,54 @@
+{
+	"fixture": [{
+			"attributes": {
+				"title": "Sex, cocaine and sport: a volatile combination"
+			},
+			"children": [{
+				"attributes": {},
+				"children": [{
+						"attributes": {},
+						"children": [{
+							"children": [{
+								"text": "The Italian cyclist Gilberto Simoni was cleared of taking cocaine in 2002 by proving that traces of the drug came from coca leaf sweets his aunt brought back from Peru"
+							}],
+							"name": "text"
+						}],
+						"name": "li"
+					},
+					{
+						"attributes": {},
+						"children": [{
+							"children": [{
+								"text": "Daniel Plaza, an Olympic race-walking champion from Spain, said that a positive test for nandrolone in 1996 had been caused by his performing a sex act on his pregnant wife. Ten years later, he was cleared"
+							}],
+							"name": "text"
+						}],
+						"name": "li"
+					},
+					{
+						"attributes": {},
+						"children": [{
+							"children": [{
+								"text": "Dennis Mitchell’s high levels of testosterone in 1998 were caused by having sex with his wife “at least four times” on her birthday, according to the sprinter. USA Track and Field believed him, the IAAF did not"
+							}],
+							"name": "text"
+						}],
+						"name": "li"
+					},
+					{
+						"attributes": {},
+						"children": [{
+							"children": [{
+								"text": "In 2010 the American sprinter LaShawn Merritt blamed a positive test on not reading the ingredients for his penis enlargement medication. A possible two-year ban was reduced by three months"
+							}],
+							"name": "text"
+						}],
+						"name": "li"
+					}
+				],
+				"name": "ul"
+			}],
+			"name": "key-facts"
+		}
+	]
+}

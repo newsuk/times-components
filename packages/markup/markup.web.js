@@ -2,6 +2,24 @@ import React from "react";
 import Markup, { builder as mb } from "./markup-builder";
 import propTypes from "./markup-proptype";
 
+const styles = {
+  paragraph: {
+    color: "#333",
+    fontFamily: "TimesDigital-Regular"
+  },
+  pullquote: {
+    color: "#000",
+    fontFamily: "TimesModern-Regular",
+    fontSize: 25,
+    lineHeight: 1.2
+  },
+  keyfacts: {
+    color: "#333",
+    fontFamily: "TimesDigital-Regular",
+    fontSize: 13,
+  }
+};
+
 const tagMap = new Map([
   [
     "p",
@@ -48,7 +66,41 @@ const tagMap = new Map([
       tag: "div",
       attrs() {}
     }
-  ]
+  ],
+  [
+    "paragraph",
+    {
+      tag: "p",
+      attrs() {
+        return {
+          style: styles.paragraph
+        };
+      }
+    }
+  ],
+  [
+    "pull-quote",
+    {
+      tag: "p",
+      attrs() {
+        return {
+          style: styles.pullquote
+        };
+      }
+    }
+  ],
+  [
+    "key-facts",
+    {
+      tag: "div",
+      attrs({ title }) {
+        return {
+          style: styles.keyfacts,
+          title
+        };
+      }
+    }
+  ],
 ]);
 
 const MarkupWeb = ({ ast, wrapIn }) =>
