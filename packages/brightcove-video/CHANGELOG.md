@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.3"></a>
+## [0.2.3](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@0.2.1...@times-components/brightcove-video@0.2.3) (2017-08-11)
+
+
+### Bug Fixes
+
+* linting error ([ef09f6f](https://github.com/newsuk/times-components/commit/ef09f6f))
+* squishy video ([#128](https://github.com/newsuk/times-components/issues/128)) ([3304520](https://github.com/newsuk/times-components/commit/3304520))
+
+
+
+
 <a name="0.2.2"></a>
 ## [0.2.2](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@0.2.1...@times-components/brightcove-video@0.2.2) (2017-08-08)
 

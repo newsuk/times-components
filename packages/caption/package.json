@@ -1,6 +1,6 @@
 {
   "name": "@times-components/caption",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Media caption component",
   "main": "caption.js",
   "scripts": {
@@ -36,6 +36,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@times-components/image": "1.1.0",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-loader": "7.0.0",
@@ -45,7 +46,6 @@
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
     "react-test-renderer": "15.5.4",
-    "@times-components/image": "1.1.0",
     "webpack": "3.3.0"
   },
   "dependencies": {
