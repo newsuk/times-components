@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react-native";
 import Image from "@times-components/image";
 import Caption from "./caption";
 
-const captionText = "This is a caption text";
+const captionText = "This is caption text";
 const credits = "And these are just credits";
 const exampleImage = {
   uri:
