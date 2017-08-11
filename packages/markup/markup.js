@@ -1,9 +1,10 @@
 import React from "react";
-import { View, Text, Linking, StyleSheet } from "react-native";
+import { View, Text, Linking } from "react-native";
+import Link from "@times-components/link";
 import Markup, { builder as mb } from "./markup-builder";
 import propTypes from "./markup-proptype";
 
-const styles = StyleSheet.create({
+const styles = {
   italic: {
     fontStyle: "italic"
   },
@@ -12,8 +13,11 @@ const styles = StyleSheet.create({
   },
   anchor: {
     color: "blue"
+  },
+  author: {
+    color: "#069"
   }
-});
+};
 
 const tagMap = new Map([
   [
@@ -26,13 +30,11 @@ const tagMap = new Map([
   [
     "a",
     {
-      tag: Text,
+      tag: Link,
       attrs({ href }) {
         return {
-          style: styles.anchor,
-          onPress() {
-            Linking.openURL(href);
-          }
+          href,
+          style: styles.anchor
         };
       }
     }
@@ -64,6 +66,18 @@ const tagMap = new Map([
     {
       tag: Text,
       attrs() {}
+    }
+  ],
+  [
+    "author",
+    {
+      tag: Link,
+      attrs({ slug }) {
+        return {
+          style: styles.author,
+          url: `profile/${slug}`
+        };
+      }
     }
   ],
   [
