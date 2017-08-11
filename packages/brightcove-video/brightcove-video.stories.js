@@ -122,4 +122,13 @@ storiesOf("BrightcoveVideo", module)
       accountId={accountId}
       autoplay
     />
+  )
+  .add("With autoplay & event listner", () =>
+    <BrightcoveVideo
+      policyKey={policyKey}
+      videoId={videoId}
+      accountId={accountId}
+      onChange={firstArgJSONAction("change")}
+      autoplay
+    />
   );
