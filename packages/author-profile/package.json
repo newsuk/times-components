@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Author info along with articles they have written",
   "main": "author-profile.js",
   "scripts": {
