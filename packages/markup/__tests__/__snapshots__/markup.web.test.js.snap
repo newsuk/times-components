@@ -7,11 +7,24 @@ exports[`Markup Web does not render an image tag 1`] = `<div />`;
 exports[`Markup Web renders a mixture of tags 1`] = `
 <div>
   <div>
-    <a
-      href="http://www.google.com"
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "color": "#069",
+          },
+          Object {
+            "color": "blue",
+          },
+        ]
+      }
     >
       some link here
-    </a>
+    </Text>
   </div>
   <div>
     <strong>
@@ -88,11 +101,24 @@ exports[`Markup Web renders nested tags 1`] = `
 `;
 
 exports[`Markup Web renders the anchor tag 1`] = `
-<a
-  href="www.google.com"
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "color": "#069",
+      },
+      Object {
+        "color": "blue",
+      },
+    ]
+  }
 >
   some link here
-</a>
+</Text>
 `;
 
 exports[`Markup Web renders the bold tag 1`] = `
