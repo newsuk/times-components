@@ -1,6 +1,7 @@
 import React from "react";
 import { Text } from "react-native";
-import propTypes from "prop-types";
+
+import { defaultProps, propTypes } from "./link.proptypes";
 
 const styles = {
   color: "#069",
@@ -15,13 +16,6 @@ export default function Link({ url, style, children }) {
   );
 }
 
-Link.propTypes = {
-  style: Text.propTypes.style,
-  url: propTypes.string.isRequired,
-  children: propTypes.oneOfType([propTypes.string, propTypes.element])
-    .isRequired
-};
+Link.defaultProps = defaultProps;
 
-Link.defaultProps = {
-  style: {}
-};
+Link.propTypes = propTypes;
