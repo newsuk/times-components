@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Linking } from "react-native";
+import { View, Text } from "react-native";
 import Link from "@times-components/link";
 import Markup, { builder as mb } from "./markup-builder";
 import propTypes from "./markup-proptype";
@@ -33,7 +33,7 @@ const tagMap = new Map([
       tag: Link,
       attrs({ href }) {
         return {
-          href,
+          url: href,
           style: styles.anchor
         };
       }
