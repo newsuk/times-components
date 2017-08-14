@@ -45,10 +45,11 @@
     "babel-preset-react-native": "1.9.2",
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
-    "react-dom": "15.5.4",
-    "react-native": "0.44.1",
-    "react-native-web": "0.0.97",
-    "react-test-renderer": "15.5.4",
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
+    "react-native": "0.42.3",
+    "react-native-web": "0.0.119",
+    "react-test-renderer": "15.4.2",
     "webpack": "3.3.0"
   },
   "dependencies": {
@@ -56,10 +57,11 @@
   },
   "peerDependencies": {
     "@storybook/addon-actions": "3.0.0",
-    "@storybook/react-native": "3.0.0",
-    "react": ">=16.0.0-alpha.6",
-    "react-native": ">=0.44.1",
-    "react-native-web": "0.0.97"
+    "@storybook/react-native": "3.2.4",
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
+    "react-native": "0.42.3",
+    "react-native-web": "0.0.119"
   },
   "_timesComponentsCliVariables": {
     "component": "BrightcoveVideo",

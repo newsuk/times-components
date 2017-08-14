@@ -70,7 +70,7 @@ export default AuthorProfileContent => {
     expect(component).toMatchSnapshot();
   });
 
-  it("renders profile content", () => {
+  it("renders profile content component", () => {
     const component = renderer.create(<AuthorProfileContent {...props.data} />);
 
     expect(component).toMatchSnapshot();

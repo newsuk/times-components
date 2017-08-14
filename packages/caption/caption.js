@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, ViewPropTypes, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
+import StylePropTypes from "react-style-proptype";
 
 const defaultStyle = StyleSheet.create({
   container: {
@@ -44,7 +45,7 @@ Caption.propTypes = {
   credits: PropTypes.string,
   style: PropTypes.shape({
     text: Text.propTypes.style,
-    container: ViewPropTypes.style
+    container: StylePropTypes
   }),
   children: PropTypes.element
 };

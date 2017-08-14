@@ -6,7 +6,6 @@ exports[`renders compact above breakpoint 1`] = `
   style={
     Object {
       "alignItems": "stretch",
-      "display": "flex",
       "flexDirection": "column",
     }
   }
@@ -44,7 +43,6 @@ exports[`renders compact above breakpoint 1`] = `
         "borderStyle": "solid",
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 1,
-        "display": "flex",
         "flexDirection": "row",
         "justifyContent": "space-between",
       }
@@ -86,7 +84,6 @@ exports[`renders correctly 1`] = `
   style={
     Object {
       "alignItems": "stretch",
-      "display": "flex",
       "flexDirection": "column",
     }
   }
@@ -120,7 +117,6 @@ exports[`renders correctly 1`] = `
         "borderStyle": "solid",
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 1,
-        "display": "flex",
         "flexDirection": "row",
         "justifyContent": "space-between",
       }
@@ -162,7 +158,6 @@ exports[`renders prev and next link 1`] = `
   style={
     Object {
       "alignItems": "stretch",
-      "display": "flex",
       "flexDirection": "column",
     }
   }
@@ -196,7 +191,6 @@ exports[`renders prev and next link 1`] = `
         "borderStyle": "solid",
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 1,
-        "display": "flex",
         "flexDirection": "row",
         "justifyContent": "space-between",
       }
@@ -262,7 +256,6 @@ exports[`renders prev link 1`] = `
   style={
     Object {
       "alignItems": "stretch",
-      "display": "flex",
       "flexDirection": "column",
     }
   }
@@ -296,7 +289,6 @@ exports[`renders prev link 1`] = `
         "borderStyle": "solid",
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 1,
-        "display": "flex",
         "flexDirection": "row",
         "justifyContent": "space-between",
       }
@@ -338,7 +330,6 @@ exports[`renders prev link 2`] = `
   style={
     Object {
       "alignItems": "stretch",
-      "display": "flex",
       "flexDirection": "column",
     }
   }
@@ -372,7 +363,6 @@ exports[`renders prev link 2`] = `
         "borderStyle": "solid",
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 1,
-        "display": "flex",
         "flexDirection": "row",
         "justifyContent": "space-between",
       }

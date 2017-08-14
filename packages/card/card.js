@@ -7,13 +7,11 @@ const horizontalBreakpoint = 500;
 
 const styles = StyleSheet.create({
   container: {
-    display: "flex",
     flexDirection: "column"
   },
   childrenContainer: {
     flexGrow: 1,
-    flexShrink: 1,
-    flexBasis: "auto"
+    flexShrink: 1
   },
   imageContainer: {
     paddingBottom: 15
@@ -52,7 +50,15 @@ class CardComponent extends React.Component {
   }
   render() {
     const { isHorizontal } = this.state;
-    const { date, headline, image, label, publication, style, text } = this.props;
+    const {
+      date,
+      headline,
+      image,
+      label,
+      publication,
+      style,
+      text
+    } = this.props;
 
     return (
       <View

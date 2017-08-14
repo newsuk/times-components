@@ -34,7 +34,6 @@ exports[`Article test renders native correctly 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "display": "flex",
             "flexDirection": "row",
           }
         }
@@ -85,7 +84,14 @@ exports[`Article test renders native correctly 1`] = `
         </Text>
       </View>
       <View
-        style={null}
+        style={
+          Array [
+            Object {
+              "position": "relative",
+            },
+            null,
+          ]
+        }
       >
         <View
           style={
@@ -96,7 +102,9 @@ exports[`Article test renders native correctly 1`] = `
                 "justifyContent": "center",
               },
               Object {
-                "display": "flex",
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
               },
             ]
           }
@@ -269,10 +277,17 @@ exports[`Article test renders native correctly 1`] = `
             }
           }
           style={
-            Object {
-              "display": "none",
-              "height": 260,
-            }
+            Array [
+              Object {
+                "height": 0,
+                "width": 0,
+              },
+              Object {
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+              },
+            ]
           }
         />
       </View>

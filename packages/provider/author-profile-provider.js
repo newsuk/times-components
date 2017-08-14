@@ -4,7 +4,12 @@ import AuthorProfile from "@times-components/author-profile";
 import connectGraphql from "./connect";
 
 const query = gql`
-  query ArticleQuery($slug: Slug!, $first: Int, $skip: Int, $imageRatio: Ratio!) {
+  query ArticleQuery(
+    $slug: Slug!
+    $first: Int
+    $skip: Int
+    $imageRatio: Ratio!
+  ) {
     author(slug: $slug) {
       name
       jobTitle
@@ -53,11 +58,24 @@ const transformResponse = response => {
   const author = get(response, "data.author");
   if (author) {
     return {
-      data: Object.assign({}, author, {
-        count: get(response, "data.author.articles.count"),
-        pageSize: 10,
-        page: 1
-      }),
+      data: Object.assign(
+        {},
+        {
+          ...author,
+          articles: {
+            count: author.articles.count,
+            list: author.articles.list.map(article => ({
+              ...article,
+              publishedTime: new Date(article.publishedTime)
+            }))
+          }
+        },
+        {
+          count: get(response, "data.author.articles.count"),
+          pageSize: 10,
+          page: 1
+        }
+      ),
       error: null,
       isLoading: false
     };

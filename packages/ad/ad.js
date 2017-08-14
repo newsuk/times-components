@@ -6,6 +6,17 @@ import { pbjs as pbjsConfig } from "./config";
 
 import Placeholder from "./placeholder";
 
+const styles = StyleSheet.create({
+  container: {
+    position: "relative"
+  },
+  children: {
+    position: "absolute",
+    left: 0,
+    right: 0
+  }
+});
+
 class Ad extends Component {
   static hasDifferentOrigin(url, baseUrl) {
     return url && url.indexOf(baseUrl) === -1 && url.indexOf("://") > -1;
@@ -165,27 +176,39 @@ class Ad extends Component {
       </html>
       `;
 
-    return (
-      <View style={this.props.style}>
-        <Placeholder
+    const placeholderComponent = !this.state.adReady
+      ? <Placeholder
           width={this.config.maxSizes.width}
           height={this.config.maxSizes.height}
-          style={{
-            display: this.state.adReady ? "none" : "flex"
-          }}
+          style={styles.children}
         />
-        <WebView
-          ref={ref => {
-            this.webview = ref;
-          }}
-          source={{ html, baseUrl: this.props.baseUrl }}
-          style={{
-            height: this.config.maxSizes.height + this.viewBorder,
-            display: this.state.adReady ? "flex" : "none"
-          }}
-          baseUrl={this.props.baseUrl}
-          onNavigationStateChange={this.handleNavigationChange}
-        />
+      : null;
+
+    const webviewStyles = !this.state.adReady
+      ? {
+          width: 0,
+          height: 0
+        }
+      : {
+          height: this.config.maxSizes.height + this.viewBorder
+        };
+
+    const webviewComponent = (
+      <WebView
+        ref={ref => {
+          this.webview = ref;
+        }}
+        source={{ html, baseUrl: this.props.baseUrl }}
+        style={[webviewStyles, styles.children]}
+        baseUrl={this.props.baseUrl}
+        onNavigationStateChange={this.handleNavigationChange}
+      />
+    );
+
+    return (
+      <View style={[styles.container, this.props.style]}>
+        {placeholderComponent}
+        {webviewComponent}
       </View>
     );
   }
@@ -197,7 +220,7 @@ Ad.propTypes = {
   code: PropTypes.string.isRequired,
   section: PropTypes.string.isRequired,
   baseUrl: PropTypes.string,
-  style: React.PropTypes.instanceOf(StyleSheet)
+  style: PropTypes.instanceOf(StyleSheet)
 };
 
 Ad.defaultProps = {

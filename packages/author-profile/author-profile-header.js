@@ -7,7 +7,6 @@ import Pagination from "@times-components/pagination";
 const styles = StyleSheet.create({
   container: {
     alignItems: "stretch",
-    display: "flex",
     flexDirection: "row",
     justifyContent: "center"
   },

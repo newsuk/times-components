@@ -33,6 +33,11 @@ storiesOf("AuthorProfile", module)
       isLoading: false
     };
 
+    props.data.articles.list.forEach(article => {
+      // eslint-disable-next-line
+      article.publishedTime = new Date(article.publishedTime);
+    });
+
     return story(<AuthorProfile {...props} />);
   })
   .add("AuthorProfile Loading", () => {

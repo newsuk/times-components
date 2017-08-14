@@ -2,7 +2,14 @@
 
 exports[`Native Ad test renders a native ad slot 1`] = `
 <View
-  style={null}
+  style={
+    Array [
+      Object {
+        "position": "relative",
+      },
+      null,
+    ]
+  }
 >
   <View
     style={
@@ -13,7 +20,9 @@ exports[`Native Ad test renders a native ad slot 1`] = `
           "justifyContent": "center",
         },
         Object {
-          "display": "flex",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
         },
       ]
     }
@@ -186,10 +195,17 @@ exports[`Native Ad test renders a native ad slot 1`] = `
       }
     }
     style={
-      Object {
-        "display": "none",
-        "height": 260,
-      }
+      Array [
+        Object {
+          "height": 0,
+          "width": 0,
+        },
+        Object {
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+        },
+      ]
     }
   />
 </View>

@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import TestUtils from "react-dom/test-utils";
+import TestUtils from "react-addons-test-utils";
 
 import Ad from "../ad";
 

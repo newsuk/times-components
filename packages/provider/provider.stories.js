@@ -9,30 +9,13 @@ import {
   gql
 } from "react-apollo";
 
-import { withApolloProvider } from "storybook-addon-apollo-graphql";
-
 import connectGraphql, { AuthorProfileProvider } from "./provider.js";
 
 const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
 
-const schema = `
-    type Query {
-        random: Int!
-    }
-`;
-
-const root = {
-  random: () => Math.floor(Math.random() * 10)
-};
-
-const query = gql`{ random }`;
-
-storiesOf("Provider", module)
-  .addDecorator(withApolloProvider({ schema, root }))
-  .add("Provider", () => {
-    const WithData = connectGraphql(query)(Component);
-    return <WithData />;
-  });
+const query = gql`{
+  author(slug: "fiona-hamilton") { name }
+}`;
 
 const fragmentMatcher = new IntrospectionFragmentMatcher({
   introspectionQueryResultData: {
@@ -62,6 +45,15 @@ const networkInterface = createNetworkInterface({
 const client = new ApolloClient({
   networkInterface,
   fragmentMatcher
+});
+
+storiesOf("Provider", module).add("Provider", () => {
+  const WithData = connectGraphql(query)(Component);
+  return (
+    <ApolloProvider client={client}>
+      <WithData />
+    </ApolloProvider>
+  );
 });
 
 storiesOf("Provider", module).add("AuthorProfileProvider", () =>
