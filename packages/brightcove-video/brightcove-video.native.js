@@ -59,20 +59,24 @@ class BrightcoveVideo extends Component {
   }
 
   handleAppStateChange(nextAppState) {
-    if (this.state.appState !== nextAppState) {
-      if (
-        nextAppState === "active" &&
-        this.state.wasPlayingBeforeAppBackgrounded
-      ) {
-        this.setState({ wasPlayingBeforeAppBackgrounded: false });
-        this.play();
-      } else if (this.state.playing && nextAppState !== "active") {
-        this.setState({ wasPlayingBeforeAppBackgrounded: true });
-        this.pause();
-      }
-    }
+    this.setState(prevState => {
+      const nextState = { appState: nextAppState };
 
-    this.setState({ appState: nextAppState });
+      if (prevState.appState !== nextAppState) {
+        if (
+          nextAppState === "active" &&
+          prevState.wasPlayingBeforeAppBackgrounded
+        ) {
+          nextState.wasPlayingBeforeAppBackgrounded = false;
+          this.play();
+        } else if (prevState.playing && nextAppState !== "active") {
+          nextState.wasPlayingBeforeAppBackgrounded = true;
+          this.pause();
+        }
+      }
+
+      return nextState;
+    });
   }
 
   play() {
