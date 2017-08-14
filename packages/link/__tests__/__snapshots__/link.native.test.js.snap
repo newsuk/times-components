@@ -16,7 +16,17 @@ exports[`renders correctly with children 1`] = `
     ]
   }
 >
+<<<<<<< HEAD
   The Times
+=======
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    The Times
+  </Text>
+>>>>>>> fix: tests on link component
 </Text>
 `;
 
@@ -38,6 +48,16 @@ exports[`renders correctly with specifc styles 1`] = `
     ]
   }
 >
+<<<<<<< HEAD
   The Times
+=======
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    The Times
+  </Text>
+>>>>>>> fix: tests on link component
 </Text>
 `;
