@@ -47,7 +47,7 @@ class BrightcoveVideo extends Component {
   onChange(evt) {
     this.props.onChange(evt.nativeEvent);
 
-    this.isPlaying = evt.nativeEvent.playerStatus === "playing";
+    this.setState({ playing: evt.nativeEvent.playerStatus === "playing" });
   }
 
   onError(evt) {
@@ -60,11 +60,14 @@ class BrightcoveVideo extends Component {
 
   handleAppStateChange(nextAppState) {
     if (this.state.appState !== nextAppState) {
-      if (nextAppState === "active" && this.wasPlaying) {
-        this.wasPlaying = false;
+      if (
+        nextAppState === "active" &&
+        this.state.wasPlayingBeforeAppBackgrounded
+      ) {
+        this.setState({ wasPlayingBeforeAppBackgrounded: false });
         this.play();
-      } else if (this.isPlaying) {
-        this.wasPlaying = true;
+      } else if (this.state.playing && nextAppState !== "active") {
+        this.setState({ wasPlayingBeforeAppBackgrounded: true });
         this.pause();
       }
     }
