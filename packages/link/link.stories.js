@@ -5,7 +5,7 @@ import Link from "./link";
 
 storiesOf("Link", module)
   .add("Link", () =>
-    <Link url="https://www.thetimes.co.uk/"> click to open The Times </Link>
+    <Link url="https://www.thetimes.co.uk/">click to open The Times</Link>
   )
   .add("Link with styles", () =>
     <Link url="https://www.thetimes.co.uk/" style={{ color: "red" }}>

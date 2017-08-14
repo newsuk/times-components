@@ -11,11 +11,17 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!**/*.stories.js",
+      "!__tests__/**",
+      "!coverage/**"
+    ],
     "transformIgnorePatterns": [
       "node_modules/(?!@times-components)/"
     ],
     "testMatch": [
-      "<rootDir>/packages/link/**.test.js"
+      "<rootDir>/packages/link/__tests__/**/*.test.js"
     ]
   },
   "repository": {

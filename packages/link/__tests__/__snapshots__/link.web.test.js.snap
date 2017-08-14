@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with children 1`] = `
+<Text
+  accessibilityRole="link"
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  href="http://thetimes.co.uk"
+  style={
+    Array [
+      Object {
+        "color": "#069",
+        "textDecorationLine": "none",
+      },
+      Object {},
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    The Times
+  </Text>
+</Text>
+`;
+
+exports[`renders correctly with specifc styles 1`] = `
+<Text
+  accessibilityRole="link"
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  href="http://thetimes.co.uk"
+  style={
+    Array [
+      Object {
+        "color": "#069",
+        "textDecorationLine": "none",
+      },
+      Object {
+        "backgroundColor": "blue",
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    The Times
+  </Text>
+</Text>
+`;
