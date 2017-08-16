@@ -14,6 +14,7 @@ const multiParagraph = require("./fixtures/multi-para.json").fixture;
 
 const Article = props => {
   const data = props.data;
+  const code = props.code;
   if (data.loading) {
     return <Text>Loading</Text>;
   }
@@ -25,8 +26,7 @@ const Article = props => {
     LeadAsset: {
       position: "relative",
       boxSizing: "border-box",
-      margin: 0,
-      border: 0
+      margin: 0
       // paddingBottom: 25
     },
     ArticleBody: {
@@ -106,14 +106,16 @@ const Article = props => {
       <View style={styles.ArticleAd}>
         <View style={{ alignSelf: "center" }}>
           <AdComposer section="article" networkId="25436805">
-            <Ad code="intervention" />
+            <Ad code={code} />
           </AdComposer>
         </View>
       </View>
       <View style={styles.ArticleHeader}>
-        <View style={styles.ArticleLabel}>
-          <ArticleLabel title="health" color="#008347" />
-        </View>
+        {data.article.label
+          ? <View style={styles.ArticleLabel}>
+              <ArticleLabel title="health" color="#008347" />
+            </View>
+          : null}
         <View style={styles.ArticleHeadline}>
           <ArticleHeadline
             title={data.article.title}
@@ -179,7 +181,7 @@ const Article = props => {
 };
 
 Article.propTypes = {
-  // code: PropTypes.string,
+  code: PropTypes.string,
   data: PropTypes.shape({
     article: PropTypes.object,
     loading: PropTypes.boolean
@@ -187,7 +189,7 @@ Article.propTypes = {
 };
 
 Article.defaultProps = {
-  // code: "intervention",
+  code: "intervention",
   id: "",
   data: {
     loading: true,
