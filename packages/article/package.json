@@ -54,10 +54,23 @@
     "@times-components/ad": "0.0.8",
     "@times-components/article-flag": "0.3.2",
     "@times-components/article-label": "0.0.6",
+    "@times-components/date-publication": "0.0.4",
+    "@times-components/article-headline": "0.3.0",
+    "@times-components/image": "1.1.0",
+    "@times-components/provider": "0.2.0",
+    "@times-components/caption": "0.2.0",
+    "@times-components/markup": "0.1.2",
+    "graphql-tag": "2.4.2",
     "prop-types": "15.5.10",
-    "react-native-web": "0.0.119"
+    "react": "16.0.0-alpha.6",
+    "react-dom": "15.5.4",
+    "react-native": "0.44.1",
+    "react-native-web": "0.0.119",
+    "react-apollo": "1.4.10"
   },
   "peerDependencies": {
+    "@storybook/react-native": ">=3",
+    "storybook-addon-apollo-graphql": "0.1.2",
     "react": ">=15",
     "react-dom": ">=15",
     "react-native": ">=0.42"
