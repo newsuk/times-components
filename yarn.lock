@@ -189,6 +189,16 @@
     react-treebeard "^2.0.3"
     redux "^3.6.0"
 
+"@times-components/article-headline@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@times-components/article-headline/-/article-headline-0.1.0.tgz#3fce0feb1ad63726aefdea52e5d3065d3bdbc2d2"
+  dependencies:
+    prop-types "15.5.10"
+    react "16.0.0-alpha.6"
+    react-dom "15.5.4"
+    react-native "0.44.1"
+    react-native-web "0.0.97"
+
 "@times-components/fructose@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-1.0.0.tgz#4acd4590ccfcae8815321d643d29b2b87300a498"
