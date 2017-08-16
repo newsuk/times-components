@@ -15,13 +15,7 @@ exports[`renders correctly with children 1`] = `
     ]
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
-    The Times
-  </Text>
+  The Times
 </Text>
 `;
 
@@ -42,12 +36,6 @@ exports[`renders correctly with specifc styles 1`] = `
     ]
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
-    The Times
-  </Text>
+  The Times
 </Text>
 `;

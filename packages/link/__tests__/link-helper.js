@@ -1,6 +1,5 @@
 /* eslint-env jest */
 
-import { Text } from "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 
@@ -9,7 +8,7 @@ export default Link => {
     const tree = renderer
       .create(
         <Link url="http://thetimes.co.uk" style={{ backgroundColor: "blue" }}>
-          <Text>The Times</Text>
+          The Times
         </Link>
       )
       .toJSON();
@@ -21,7 +20,7 @@ export default Link => {
     const tree = renderer
       .create(
         <Link url="http://thetimes.co.uk">
-          <Text>The Times</Text>
+          The Times
         </Link>
       )
       .toJSON();

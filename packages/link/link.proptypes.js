@@ -5,8 +5,9 @@ const propTypes = {
   style: Text.propTypes.style,
   url: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.string),
-    PropTypes.element
+    PropTypes.string,
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element)
   ]).isRequired
 };
 
