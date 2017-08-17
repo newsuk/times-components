@@ -62,15 +62,15 @@
     fuse.js "^3.0.1"
     prop-types "^15.5.9"
 
-"@storybook/react-native@3.2.4":
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/@storybook/react-native/-/react-native-3.2.4.tgz#37f82f13876663cf972359ebc6cea40c64ad316f"
+"@storybook/react-native@>=3":
+  version "3.2.5"
+  resolved "https://registry.yarnpkg.com/@storybook/react-native/-/react-native-3.2.5.tgz#0debd2f1e9c2c639686c1d4b6f94a7dd9c64ba5c"
   dependencies:
     "@storybook/addon-actions" "^3.2.0"
     "@storybook/addon-links" "^3.2.0"
     "@storybook/addons" "^3.2.0"
     "@storybook/channel-websocket" "^3.2.0"
-    "@storybook/ui" "^3.2.4"
+    "@storybook/ui" "^3.2.5"
     autoprefixer "^7.1.1"
     babel-core "^6.25.0"
     babel-loader "^7.0.0"
@@ -164,7 +164,7 @@
     webpack-dev-middleware "^1.10.2"
     webpack-hot-middleware "^2.18.0"
 
-"@storybook/ui@^3.2.4":
+"@storybook/ui@^3.2.4", "@storybook/ui@^3.2.5":
   version "3.2.5"
   resolved "https://registry.yarnpkg.com/@storybook/ui/-/ui-3.2.5.tgz#9e8cfe14dd49d3bb42f4ea1a3be90411a47c14fc"
   dependencies:
@@ -3079,16 +3079,9 @@ domhandler@^2.3.0:
   dependencies:
     domelementtype "1"
 
-domutils@1.5.1:
+domutils@1.5.1, domutils@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.5.1.tgz#dcd8488a26f563d61079e48c9f7b7e32373682cf"
-  dependencies:
-    dom-serializer "0"
-    domelementtype "1"
-
-domutils@^1.5.1:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.6.2.tgz#1958cc0b4c9426e9ed367fb1c8e854891b0fa3ff"
   dependencies:
     dom-serializer "0"
     domelementtype "1"
@@ -7266,9 +7259,9 @@ react-native-storybook-loader@1.4.1:
     glob "^7.1.1"
     yargs "^8.0.2"
 
-react-native-svg@5.1.8:
-  version "5.1.8"
-  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-5.1.8.tgz#bdb9bc6a8693852751f7faa6598ebcb3d1be48ce"
+react-native-svg@5.1.7:
+  version "5.1.7"
+  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-5.1.7.tgz#444b18b51eb38ff63205befaf612f59a4cbf64be"
   dependencies:
     color "^0.11.1"
     lodash "^4.16.6"

@@ -7,13 +7,8 @@ import { pbjs as pbjsConfig } from "./config";
 import Placeholder from "./placeholder";
 
 const styles = StyleSheet.create({
-  container: {
-    position: "relative"
-  },
   children: {
-    position: "absolute",
-    left: 0,
-    right: 0
+    flex: 1
   }
 });
 
@@ -80,11 +75,12 @@ class Ad extends Component {
         <head>
           <style>
             body {
-              margin: 0 auto;
               display: table;
               height: 100%;
-              width: 100%;
+              margin: 0 auto;
+              overflow:hidden;
               text-align: center;
+              width: 100%;
             }
             div#${this.props.code} {
               display: table-cell;
@@ -206,9 +202,9 @@ class Ad extends Component {
     );
 
     return (
-      <View style={[styles.container, this.props.style]}>
-        {placeholderComponent}
+      <View style={[this.props.style]}>
         {webviewComponent}
+        {placeholderComponent}
       </View>
     );
   }
