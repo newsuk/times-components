@@ -55,7 +55,6 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "jest-cli": "20.0.4",
     "prop-types": "15.5.10",
     "react-native-web": "0.0.119",
     "react-style-proptype": "3.0.0"

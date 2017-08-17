@@ -4,7 +4,6 @@ exports[`Native Ad test renders a native ad slot 1`] = `
 <View
   style={
     Array [
-      undefined,
       null,
     ]
   }

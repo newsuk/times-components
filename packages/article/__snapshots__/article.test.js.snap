@@ -86,7 +86,6 @@ exports[`Article test renders native correctly 1`] = `
       <View
         style={
           Array [
-            undefined,
             null,
           ]
         }
