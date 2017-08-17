@@ -110,6 +110,87 @@ describe("brightcove-video native component", () => {
     expect(BrightcoveVideo.getNativeClassName()).toBe("RNTBrightcove");
   });
 
+  describe("Component App State handling", () => {
+    let rootInstance;
+    let pauseSpy;
+    let playSpy;
+
+    beforeEach(() => {
+      const root = renderer.create(
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          policyKey="[POLICY_KEY]"
+        />
+      );
+
+      rootInstance = root.getInstance();
+
+      pauseSpy = jest.spyOn(rootInstance, "pause");
+      playSpy = jest.spyOn(rootInstance, "play");
+    });
+
+    afterEach(() => {
+      pauseSpy.mockRestore();
+      playSpy.mockRestore();
+    });
+
+    it("will handle an initial app state update (active)", () => {
+      rootInstance.handleAppStateChange("active");
+
+      expect(rootInstance.state.appState).toBe("active");
+
+      expect(pauseSpy.mock.calls.length).toBe(0);
+      expect(playSpy.mock.calls.length).toBe(0);
+    });
+
+    it("will handle an initial app state update (not active)", () => {
+      rootInstance.handleAppStateChange("inactive");
+
+      expect(rootInstance.state.appState).toBe("inactive");
+
+      expect(pauseSpy.mock.calls.length).toBe(0);
+      expect(playSpy.mock.calls.length).toBe(0);
+    });
+
+    it("will handle an app state update (not active) whilst playing - causing player to pause & flag to start again when app is active again", () => {
+      rootInstance.state.playing = true;
+
+      rootInstance.handleAppStateChange("inactive");
+
+      expect(rootInstance.state.appState).toBe("inactive");
+      expect(rootInstance.state.wasPlayingBeforeAppBackgrounded).toBe(true);
+
+      expect(pauseSpy.mock.calls.length).toBe(1);
+      expect(playSpy.mock.calls.length).toBe(0);
+    });
+
+    it("will handle an app state update (active) whilst having the 'wasPlayingBeforeAppBackgrounded' flag set to true - causing player to start playing again", () => {
+      rootInstance.state.wasPlayingBeforeAppBackgrounded = true;
+
+      rootInstance.handleAppStateChange("active");
+
+      expect(rootInstance.state.appState).toBe("active");
+      expect(rootInstance.state.wasPlayingBeforeAppBackgrounded).toBe(false);
+
+      expect(pauseSpy.mock.calls.length).toBe(0);
+      expect(playSpy.mock.calls.length).toBe(1);
+    });
+
+    it("will only call play once if two 'active' events are recieved in succession", () => {
+      rootInstance.state.wasPlayingBeforeAppBackgrounded = true;
+
+      rootInstance.handleAppStateChange("active");
+      rootInstance.handleAppStateChange("active");
+
+      expect(rootInstance.state.appState).toBe("active");
+      expect(rootInstance.state.wasPlayingBeforeAppBackgrounded).toBe(false);
+
+      expect(pauseSpy.mock.calls.length).toBe(0);
+      expect(playSpy.mock.calls.length).toBe(1);
+    });
+  });
+
   describe("mock RNTBrightcove", () => {
     let getNativeBrightcoveComponentSpy;
     let mockRNTBrightcove;

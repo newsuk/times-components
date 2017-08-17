@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { findNodeHandle, requireNativeComponent } from "react-native";
+import { findNodeHandle, requireNativeComponent, AppState } from "react-native";
 import PropTypes from "prop-types";
 
 import propTypes from "./brightcove-video.proptypes";
@@ -21,11 +21,14 @@ class BrightcoveVideo extends Component {
     super(props);
 
     this.state = {
-      errors: []
+      errors: [],
+      appState: AppState.currentState
     };
 
     this.onChange = this.onChange.bind(this);
     this.onError = this.onError.bind(this);
+    this.componentWillUnmount = this.componentWillUnmount.bind(this);
+    this.handleAppStateChange = this.handleAppStateChange.bind(this);
 
     this.publicMethods = {
       play: this.play.bind(this),
@@ -33,8 +36,18 @@ class BrightcoveVideo extends Component {
     };
   }
 
+  componentDidMount() {
+    AppState.addEventListener("change", this.handleAppStateChange);
+  }
+
+  componentWillUnmount() {
+    AppState.removeEventListener("change", this.handleAppStateChange);
+  }
+
   onChange(evt) {
     this.props.onChange(evt.nativeEvent);
+
+    this.setState({ playing: evt.nativeEvent.playerStatus === "playing" });
   }
 
   onError(evt) {
@@ -43,6 +56,27 @@ class BrightcoveVideo extends Component {
 
   getNodeHandle() {
     return findNodeHandle(this.bcPlayer);
+  }
+
+  handleAppStateChange(nextAppState) {
+    this.setState(prevState => {
+      const nextState = { appState: nextAppState };
+
+      if (prevState.appState !== nextAppState) {
+        if (
+          nextAppState === "active" &&
+          prevState.wasPlayingBeforeAppBackgrounded
+        ) {
+          nextState.wasPlayingBeforeAppBackgrounded = false;
+          this.play();
+        } else if (prevState.playing && nextAppState !== "active") {
+          nextState.wasPlayingBeforeAppBackgrounded = true;
+          this.pause();
+        }
+      }
+
+      return nextState;
+    });
   }
 
   play() {
