@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.2"></a>
+## [0.2.2](https://github.com/newsuk/times-components/compare/@times-components/caption@0.2.1...@times-components/caption@0.2.2) (2017-08-17)
+
+
+### Bug Fixes
+
+* allow image caption to have credits only ([b7355fc](https://github.com/newsuk/times-components/commit/b7355fc))
+
+
+
+
 <a name="0.2.1"></a>
 ## [0.2.1](https://github.com/newsuk/times-components/compare/@times-components/caption@0.2.0...@times-components/caption@0.2.1) (2017-08-17)
 
