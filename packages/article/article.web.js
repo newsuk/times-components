@@ -15,24 +15,29 @@ const multiParagraph = require("./fixtures/multi-para.json").fixture;
 const Article = props => {
   const data = props.data;
   const code = props.code;
+
   if (data.loading) {
     return <Text>Loading</Text>;
   }
 
   const styles = StyleSheet.create({
+    Container: {},
     ArticleContainer: {
-      flexDirection: "column"
+      flexDirection: "column",
+      boxSizing: "border-box",
+      paddingLeft: 20,
+      paddingRight: 20,
+      paddingTop: 15
     },
     LeadAsset: {
       position: "relative",
       boxSizing: "border-box",
-      margin: 0
-      // paddingBottom: 25
+      marginBottom: 30
     },
     ArticleBody: {
       flexDirection: "row",
       width: "58.33%",
-      marginTop: 0,
+      marginTop: 30,
       marginRight: "auto",
       marginBottom: 0,
       marginLeft: "auto"
@@ -42,45 +47,38 @@ const Article = props => {
     },
     ArticleHeader: {
       width: "58.33333%",
-      margin: "auto",
-      paddingTop: 15
+      margin: "auto"
     },
-    ArticleHeadline: {
-      paddingTop: 20,
-      marginBottom: "0.6%"
-    },
+    ArticleHeadline: {},
     ArticleFlag: {
-      marginBottom: 28
+      marginTop: 6,
+      marginBottom: 3
     },
-    ArticleLabel: {
-      marginBottom: -25,
-      boxSizing: "border-box",
-      paddingBottom: 7
-    },
+    ArticleLabel: {},
     ArticleMeta: {
       flex: 1,
       width: "35.71429%",
-      marginLeft: 15,
       boxSizing: "border-box",
       top: 0,
       left: "-35.714%",
-      position: "absolute"
+      position: "absolute",
+      paddingRight: 20
     },
     DatePublication: {
       width: "90%",
       borderTopColor: "#DBDBDB",
       borderTopWidth: 1,
       borderTopStyle: "solid",
-      paddingTop: 5
+      paddingTop: 6,
+      paddingBottom: 6
     },
     Byline: {
       width: "90%",
       borderTopColor: "#DBDBDB",
       borderTopWidth: 1,
       borderTopStyle: "solid",
-      paddingTop: 5,
-      marginBottom: 3,
-      marginTop: 2
+      paddingTop: 6,
+      paddingBottom: 6
     },
     ArticleContent: {
       flex: 3,
@@ -95,14 +93,13 @@ const Article = props => {
       borderBottomColor: "#DBDBDB"
     },
     ArticleMedia: {
-      // height: "58.25%",
       backgroundColor: "#EFEFEF"
     },
     ArticleCaption: {}
   });
 
   return (
-    <View style={styles.ArticleContainer}>
+    <View style={styles.Container}>
       <View style={styles.ArticleAd}>
         <View style={{ alignSelf: "center" }}>
           <AdComposer section="article" networkId="25436805">
@@ -110,69 +107,70 @@ const Article = props => {
           </AdComposer>
         </View>
       </View>
-      <View style={styles.ArticleHeader}>
-        {data.article.label
-          ? <View style={styles.ArticleLabel}>
-              <ArticleLabel title="health" color="#008347" />
-            </View>
-          : null}
-        <View style={styles.ArticleHeadline}>
-          <ArticleHeadline
-            title={data.article.title}
-            style={{ fontSize: 45, lineHeight: 45, color: "#333333" }}
-          />
-        </View>
-        <View style={styles.ArticleFlag}>
-          <NewArticleFlag />
-        </View>
-      </View>
-      <View style={styles.ArticleBody}>
-        <View style={styles.ArticleMeta}>
-          <View style={styles.Byline}>
-            <Text
-              style={{
-                fontFamily: "GillSansMTStd-Medium",
-                fontSize: 13,
-                color: "#696969"
-              }}
-            >
-              Patrick Kidd
-              {" "}
-            </Text>
-          </View>
-          <View style={styles.DatePublication}>
-            <DatePublication
-              date={data.article.publishedTime}
-              publication={data.article.publicationName}
+      <View style={styles.ArticleContainer}>
+        <View style={styles.ArticleHeader}>
+          {data.article.label
+            ? <View style={styles.ArticleLabel}>
+                <ArticleLabel title={data.article.label} color="#008347" />
+              </View>
+            : null}
+          <View style={styles.ArticleHeadline}>
+            <ArticleHeadline
+              title={data.article.title}
+              style={{ fontSize: 45, lineHeight: 45, color: "#333333" }}
             />
           </View>
+          <View style={styles.ArticleFlag}>
+            <NewArticleFlag />
+          </View>
         </View>
-        <View style={styles.ArticleContent}>
-          <View style={styles.LeadAsset}>
-            <View style={styles.ArticleMedia}>
-              <Image
-                style={{ height: 349 }}
-                resizeMode={"center"}
-                source={data.article.leadAsset.crop.url}
+        <View style={styles.ArticleBody}>
+          <View style={styles.ArticleMeta}>
+            <View style={styles.Byline}>
+              <Text
+                style={{
+                  fontFamily: "GillSansMTStd-Medium",
+                  fontSize: 13,
+                  color: "#696969"
+                }}
+              >
+                Francis Elliott Political Editor Philip Aldrick Economics Editor
+                {" "}
+              </Text>
+            </View>
+            <View style={styles.DatePublication}>
+              <DatePublication
+                date={data.article.publishedTime}
+                publication={data.article.publicationName}
               />
             </View>
-            <View>
-              <Caption text="A recurring character in his novels is the Librarian of Unseen University" />
-            </View>
           </View>
-          <View>
-            {builder({ ast: multiParagraph }).map(el =>
-              <View style={{ marginBottom: 4 }}>
-                {React.cloneElement(el, {
-                  style: {
-                    fontFamily: "TimesDigital-Regular",
-                    lineHeight: 1.6,
-                    fontSize: 18,
-                    color: "#333"
-                  }
-                })}
+          <View style={styles.ArticleContent}>
+            <View style={styles.LeadAsset}>
+              <View style={styles.ArticleMedia}>
+                <Image source={{ uri: data.article.leadAsset.crop.url }} />
               </View>
-            )}
+              <View>
+                <Caption
+                  text={data.article.leadAsset.caption}
+                  credits={data.article.leadAsset.credits}
+                />
+              </View>
+            </View>
+            <View>
+              {builder({ ast: multiParagraph }).map(el =>
+                <View style={{ marginBottom: 1.7 }}>
+                  {React.cloneElement(el, {
+                    style: {
+                      fontFamily: "TimesDigital-Regular",
+                      lineHeight: 1.7,
+                      fontSize: 18,
+                      color: "#333"
+                    }
+                  })}
+                </View>
+              )}
+            </View>
           </View>
         </View>
       </View>
