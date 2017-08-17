@@ -140,6 +140,47 @@ exports[`renders correctly with credits 1`] = `
 </View>
 `;
 
+exports[`renders correctly with credits only 1`] = `
+<View>
+  <View
+    style={
+      Array [
+        Object {
+          "paddingTop": 10,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#696969",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 13,
+            "lineHeight": 15,
+          },
+          Object {
+            "color": "#333",
+            "fontSize": 9,
+            "fontWeight": "400",
+            "letterSpacing": 1,
+            "marginTop": 2,
+          },
+          undefined,
+        ]
+      }
+    >
+      JUST CREDITS
+    </Text>
+  </View>
+</View>
+`;
+
 exports[`renders correctly with specific styles 1`] = `
 <View>
   <View

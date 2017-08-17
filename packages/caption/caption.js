@@ -26,7 +26,7 @@ const Caption = ({ text, credits, style, children }) =>
   <View>
     {children}
     <View style={[defaultStyle.container, style.container]}>
-      <Text style={[defaultStyle.text, style.text]}>{text}</Text>
+      {text && <Text style={[defaultStyle.text, style.text]}>{text}</Text>}
       {credits &&
         <Text style={[defaultStyle.text, defaultStyle.credits, style.text]}>
           {credits.toUpperCase()}
@@ -35,13 +35,14 @@ const Caption = ({ text, credits, style, children }) =>
   </View>;
 
 Caption.defaultProps = {
+  text: null,
   credits: null,
   style: {},
   children: null
 };
 
 Caption.propTypes = {
-  text: PropTypes.string.isRequired,
+  text: PropTypes.string,
   credits: PropTypes.string,
   style: PropTypes.shape({
     text: Text.propTypes.style,

@@ -35,6 +35,12 @@ it("renders correctly with credits", () => {
   expect(tree).toMatchSnapshot();
 });
 
+it("renders correctly with credits only", () => {
+  const tree = renderer.create(<Caption credits={credits} />).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
 it("renders correctly with specific styles", () => {
   const tree = renderer
     .create(<Caption text={captionText} credits={credits} style={style} />)

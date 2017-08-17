@@ -22,6 +22,7 @@ const style = {
 storiesOf("Caption", module)
   .add("Without credits", () => <Caption text={captionText} />)
   .add("With credits", () => <Caption text={captionText} credits={credits} />)
+  .add("Credits only", () => <Caption credits={credits} />)
   .add("With specific styles", () =>
     <Caption text={captionText} credits={credits} style={style} />
   )
