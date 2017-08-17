@@ -46,8 +46,8 @@
     "jest": "20.0.4",
     "nock": "^9.0.14",
     "react-native": "0.44.1",
-    "react-test-renderer": "16.0.0-alpha.6",
-    "webpack": "2.6.1"
+    "react-test-renderer": "16.0.0-beta.5",
+    "webpack": "3.3.0"
   },
   "dependencies": {
     "@times-components/author-profile": "0.4.0",
@@ -55,7 +55,7 @@
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",
     "prop-types": "15.5.10",
-    "react": "16.0.0-alpha.6",
+    "react": "16.0.0-beta.5",
     "react-apollo": "1.4.10",
     "react-dom": "15.5.4",
     "react-native-web": "0.0.97"

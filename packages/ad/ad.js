@@ -197,7 +197,7 @@ Ad.propTypes = {
   code: PropTypes.string.isRequired,
   section: PropTypes.string.isRequired,
   baseUrl: PropTypes.string,
-  style: React.PropTypes.instanceOf(StyleSheet)
+  style: PropTypes.instanceOf(StyleSheet)
 };
 
 Ad.defaultProps = {
