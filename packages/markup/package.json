@@ -1,6 +1,6 @@
 {
   "name": "@times-components/markup",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "a component which takes an HTML ast and renders the platform specific markup",
   "main": "markup",
   "scripts": {
@@ -11,8 +11,12 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-    "testMatch": ["<rootDir>/packages/markup/__tests__/*.test.js"]
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/markup/__tests__/*.test.js"
+    ]
   },
   "repository": {
     "type": "git",
