@@ -10,28 +10,20 @@ import {
   articleBylineDefaultPropTypes
 } from "./article-byline-proptypes";
 
-export default function ArticleBylineWeb({ ast, style }) {
-  if (!ast) {
-    return null;
-  }
+const ArticleBylineWeb = ({ ast, style }) =>
+  <Text style={[styles.byline, style.byline]}>
+    {builder({ ast }).map((el, i) =>
+      React.cloneElement(el, {
+        key: i,
+        style: {
+          ...el.props.style,
+          ...(style.link && el.type === Link ? style.link : {})
+        }
+      })
+    )}
+  </Text>;
 
-  return (
-    <Text>
-      {builder({ ast }).map(
-        (el, i) => (
-          <Text style={[styles.byline, style.byline]} key={i}>
-            {React.cloneElement(el, {
-              style: {
-                ...el.props.style,
-                ...(style.link && el.type === Link ? style.link : {})
-              }
-            })}
-          </Text>
-        )
-      )}
-    </Text>
-  );
-}
+export default ArticleBylineWeb;
 
 ArticleBylineWeb.propTypes = articleBylinePropTypes;
 

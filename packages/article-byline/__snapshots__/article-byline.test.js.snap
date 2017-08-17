@@ -5,38 +5,34 @@ exports[`renders correctly with a single author 1`] = `
   accessible={true}
   allowFontScaling={true}
   ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+      },
+      undefined,
+    ]
+  }
 >
   <Text
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    onPress={[Function]}
     style={
       Array [
         Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
+          "color": "#069",
         },
-        undefined,
+        Object {
+          "color": "#069",
+        },
       ]
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      onPress={[Function]}
-      style={
-        Array [
-          Object {
-            "color": "#069",
-          },
-          Object {},
-        ]
-      }
-    >
-      Fiona Hamilton
-    </Text>
+    Fiona Hamilton
   </Text>
 </Text>
 `;
@@ -46,94 +42,60 @@ exports[`renders correctly with multiple authors, titles and texts 1`] = `
   accessible={true}
   allowFontScaling={true}
   ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+      },
+      undefined,
+    ]
+  }
 >
   <Text
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    onPress={[Function]}
     style={
       Array [
         Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
+          "color": "#069",
         },
-        undefined,
+        Object {
+          "color": "#069",
+        },
       ]
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      onPress={[Function]}
-      style={
-        Array [
-          Object {
-            "color": "#069",
-          },
-          Object {},
-        ]
-      }
-    >
-      Greg Hurst
-    </Text>
+    Greg Hurst
   </Text>
   <Text
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
-    style={
-      Array [
-        Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-        },
-        undefined,
-      ]
-    }
+    style={Object {}}
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={Object {}}
-    >
-      , Social Affairs Correspondent | Mark Bridge, Technology Correspondent |
-    </Text>
+    , Social Affairs Correspondent | Mark Bridge, Technology Correspondent |
   </Text>
   <Text
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    onPress={[Function]}
     style={
       Array [
         Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
+          "color": "#069",
         },
-        undefined,
+        Object {
+          "color": "#069",
+        },
       ]
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      onPress={[Function]}
-      style={
-        Array [
-          Object {
-            "color": "#069",
-          },
-          Object {},
-        ]
-      }
-    >
-      Fiona Hamilton
-    </Text>
+    Fiona Hamilton
   </Text>
 </Text>
 `;
@@ -143,40 +105,36 @@ exports[`renders correctly with styles 1`] = `
   accessible={true}
   allowFontScaling={true}
   ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+      },
+      Object {
+        "color": "blue",
+      },
+    ]
+  }
 >
   <Text
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    onPress={[Function]}
     style={
       Array [
         Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
+          "color": "#069",
         },
         Object {
-          "color": "blue",
+          "color": "#069",
         },
       ]
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      onPress={[Function]}
-      style={
-        Array [
-          Object {
-            "color": "#069",
-          },
-          Object {},
-        ]
-      }
-    >
-      Fiona Hamilton
-    </Text>
+    Fiona Hamilton
   </Text>
 </Text>
 `;
