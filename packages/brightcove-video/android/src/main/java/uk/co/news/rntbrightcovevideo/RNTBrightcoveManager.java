@@ -8,9 +8,8 @@ import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
 
-import java.util.Map;
-
 import javax.annotation.Nullable;
+import java.util.Map;
 
 public class RNTBrightcoveManager extends SimpleViewManager<RNTBrightcoveView> {
 
@@ -46,6 +45,11 @@ public class RNTBrightcoveManager extends SimpleViewManager<RNTBrightcoveView> {
     @ReactProp(name = "autoplay")
     public void setAutoplay(RNTBrightcoveView view, Boolean autoplay) {
         mView.setAutoplay(autoplay);
+    }
+
+    @ReactProp(name = "hideFullScreenButton")
+    public void setHideFullScreenButton(RNTBrightcoveView view, Boolean hideFullScreenButton) {
+        mView.setHideFullScreenButton(hideFullScreenButton);
     }
 
     @Override
