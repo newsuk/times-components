@@ -2,7 +2,7 @@
 // https://github.com/facebook/react-native/pull/13199
 
 import React from "react";
-import { View } from "react-native";
+import StylePropTypes from "react-style-proptype";
 import PropTypes from "prop-types";
 import WebViewAutoHeight from "./WebView-auto-height";
 
@@ -35,7 +35,7 @@ const ArticleHeadline = ({ title, style, baseUrl }) => {
 
 ArticleHeadline.propTypes = {
   title: PropTypes.string.isRequired,
-  style: View.propTypes.style,
+  style: StylePropTypes,
   baseUrl: PropTypes.string
 };
 

@@ -5,6 +5,7 @@ import { TouchableWithoutFeedback, View, Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { decorateAction } from "@storybook/addon-actions";
 import PropTypes from "prop-types";
+import StylePropTypes from "react-style-proptype";
 import BrightcoveVideo from "@times-components/brightcove-video";
 
 import ErrorView, { addErrorHandler } from "./error-view";
@@ -21,7 +22,7 @@ const ErrorOnClick = ({ style, onError, ...otherProps }) =>
   </TouchableWithoutFeedback>;
 ErrorOnClick.defaultProps = { style: {}, onError: () => {} };
 ErrorOnClick.propTypes = {
-  style: View.propTypes.style,
+  style: StylePropTypes,
   onError: PropTypes.func
 };
 

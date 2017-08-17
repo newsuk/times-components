@@ -8,7 +8,6 @@ import Diamond from "./diamond";
 // some styles are not working correctly on all platforms (namely, android)
 const styles = {
   view: {
-    display: "flex",
     flexDirection: "row",
     alignItems: "center"
   },

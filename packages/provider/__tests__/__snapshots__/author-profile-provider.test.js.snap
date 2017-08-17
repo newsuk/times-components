@@ -1,270 +1,235 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders data 1`] = `
-<RCTScrollView
-  ItemSeparatorComponent={[Function]}
-  ListHeaderComponent={[Function]}
-  data={Array []}
-  disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
-  horizontal={false}
-  initialNumToRender={10}
-  keyExtractor={[Function]}
-  maxToRenderPerBatch={10}
-  numColumns={1}
-  onContentSizeChange={[Function]}
-  onEndReached={[Function]}
-  onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onViewableItemsChanged={undefined}
-  removeClippedSubviews={true}
-  renderItem={[Function]}
-  renderScrollComponent={[Function]}
-  scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
-  updateCellsBatchingPeriod={50}
-  windowSize={21}
->
+<RCTScrollView>
   <View>
-    <View
-      onLayout={[Function]}
-    >
-      <View>
+    <View>
+      <View
+        pointerEvents="box-none"
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "paddingBottom": 50,
+          }
+        }
+      >
         <View
-          pointerEvents="box-none"
+          accessibilityRole="banner"
           style={
             Object {
               "alignItems": "center",
-              "backgroundColor": "transparent",
-              "display": "flex",
+              "backgroundColor": "#F9F8F3",
+              "flexDirection": "column",
               "paddingBottom": 50,
+              "width": "100%",
             }
           }
         >
-          <View
-            accessibilityRole="banner"
+          <Text
+            accessibilityRole="heading"
+            accessible={true}
+            allowFontScaling={true}
+            aria-level="1"
+            ellipsizeMode="tail"
             style={
               Object {
-                "alignItems": "center",
-                "backgroundColor": "#F9F8F3",
-                "display": "flex",
-                "flexDirection": "column",
-                "paddingBottom": 50,
-                "width": "100%",
+                "color": "#1D1D1B",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 30,
+                "fontWeight": "400",
+                "lineHeight": 30,
+                "padding": 8,
+              }
+            }
+          >
+            Fiona Hamilton
+          </Text>
+          <Text
+            accessibilityRole="heading"
+            accessible={true}
+            allowFontScaling={true}
+            aria-level="2"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontFamily": "TimesDigital-RegularSC",
+                "padding": 8,
+              }
+            }
+          >
+            legal editor
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#069",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 15,
+                "padding": 8,
+              }
+            }
+          >
+            jdoe
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#333",
+                "fontFamily": "TimesDigital-Regular",
+                "fontSize": 15,
+                "lineHeight": 25,
+                "padding": 8,
+                "textAlign": "center",
               }
             }
           >
             <Text
-              accessibilityRole="heading"
-              accessible={true}
-              allowFontScaling={true}
-              aria-level="1"
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#1D1D1B",
-                  "fontFamily": "TimesModern-Bold",
-                  "fontSize": 30,
-                  "fontWeight": "400",
-                  "lineHeight": 30,
-                  "padding": 8,
-                }
-              }
-            >
-              Fiona Hamilton
-            </Text>
-            <Text
-              accessibilityRole="heading"
-              accessible={true}
-              allowFontScaling={true}
-              aria-level="2"
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontFamily": "TimesDigital-RegularSC",
-                  "padding": 8,
-                }
-              }
-            >
-              legal editor
-            </Text>
-            <Text
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#069",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 15,
-                  "padding": 8,
-                }
-              }
             >
-              jdoe
-            </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#333",
-                  "fontFamily": "TimesDigital-Regular",
-                  "fontSize": 15,
-                  "lineHeight": 25,
-                  "padding": 8,
-                  "textAlign": "center",
-                }
-              }
-            >
+              Lorem 
               <Text
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontWeight": "bold",
+                  }
+                }
               >
-                Lorem 
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "fontWeight": "bold",
-                    }
+                ipsum
+              </Text>
+               testbr 
+              More text 
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontStyle": "italic",
                   }
-                >
-                  ipsum
-                </Text>
-                 testbr 
-                More text 
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "fontStyle": "italic",
-                    }
-                  }
-                >
-                   last 
-                </Text>
+                }
+              >
+                 last 
               </Text>
             </Text>
-          </View>
-          <View
-            style={
-              Object {
-                "bottom": 0,
-                "height": 100,
-                "position": "absolute",
-                "width": 100,
-              }
-            }
-          >
-            <View
-              onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
-                  Object {
-                    "uri": "",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    Object {
-                      "borderColor": "#FFF",
-                      "borderRadius": 50,
-                      "borderWidth": 5,
-                      "height": 100,
-                      "width": 100,
-                    },
-                  ]
-                }
-              />
-            </View>
-          </View>
+          </Text>
         </View>
         <View
           style={
             Object {
-              "alignItems": "stretch",
-              "display": "flex",
-              "flexDirection": "row",
-              "justifyContent": "center",
+              "bottom": 0,
+              "height": 100,
+              "position": "absolute",
+              "width": 100,
             }
           }
         >
           <View
+            onLayout={[Function]}
+          >
+            <Image
+              onError={[Function]}
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 1,
+                    "width": 750,
+                  },
+                  Object {
+                    "borderColor": "#FFF",
+                    "borderRadius": 50,
+                    "borderWidth": 5,
+                    "height": 100,
+                    "width": 100,
+                  },
+                ]
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "stretch",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "marginBottom": 10,
+              "marginLeft": 10,
+              "marginRight": 10,
+              "maxWidth": 800,
+            }
+          }
+        >
+          <View
+            onLayout={[Function]}
             style={
               Object {
-                "flex": 1,
-                "marginBottom": 10,
-                "marginLeft": 10,
-                "marginRight": 10,
-                "maxWidth": 800,
+                "alignItems": "stretch",
+                "flexDirection": "column",
               }
             }
           >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 15,
+                    "lineHeight": 20,
+                    "paddingBottom": 11,
+                    "paddingTop": 11,
+                    "textAlign": "center",
+                  },
+                  null,
+                ]
+              }
+            >
+              Showing 1 - 0 of 0 results
+            </Text>
             <View
-              onLayout={[Function]}
               style={
                 Object {
-                  "alignItems": "stretch",
-                  "display": "flex",
-                  "flexDirection": "column",
+                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#dbdbdb",
+                  "borderTopWidth": 1,
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
                 }
               }
             >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 15,
-                      "lineHeight": 20,
-                      "paddingBottom": 11,
-                      "paddingTop": 11,
-                      "textAlign": "center",
-                    },
-                    null,
-                  ]
-                }
-              >
-                Showing 1 - 0 of 0 results
-              </Text>
-              <View
-                style={
-                  Object {
-                    "borderBottomColor": "#dbdbdb",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
-                    "borderTopWidth": 1,
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "justifyContent": "space-between",
-                  }
-                }
-              >
-                <View />
-                <View />
-              </View>
+              <View />
+              <View />
             </View>
           </View>
         </View>
@@ -275,270 +240,235 @@ exports[`renders data 1`] = `
 `;
 
 exports[`renders data from graphql 1`] = `
-<RCTScrollView
-  ItemSeparatorComponent={[Function]}
-  ListHeaderComponent={[Function]}
-  data={Array []}
-  disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
-  horizontal={false}
-  initialNumToRender={10}
-  keyExtractor={[Function]}
-  maxToRenderPerBatch={10}
-  numColumns={1}
-  onContentSizeChange={[Function]}
-  onEndReached={[Function]}
-  onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onViewableItemsChanged={undefined}
-  removeClippedSubviews={true}
-  renderItem={[Function]}
-  renderScrollComponent={[Function]}
-  scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
-  updateCellsBatchingPeriod={50}
-  windowSize={21}
->
+<RCTScrollView>
   <View>
-    <View
-      onLayout={[Function]}
-    >
-      <View>
+    <View>
+      <View
+        pointerEvents="box-none"
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "paddingBottom": 50,
+          }
+        }
+      >
         <View
-          pointerEvents="box-none"
+          accessibilityRole="banner"
           style={
             Object {
               "alignItems": "center",
-              "backgroundColor": "transparent",
-              "display": "flex",
+              "backgroundColor": "#F9F8F3",
+              "flexDirection": "column",
               "paddingBottom": 50,
+              "width": "100%",
             }
           }
         >
-          <View
-            accessibilityRole="banner"
+          <Text
+            accessibilityRole="heading"
+            accessible={true}
+            allowFontScaling={true}
+            aria-level="1"
+            ellipsizeMode="tail"
             style={
               Object {
-                "alignItems": "center",
-                "backgroundColor": "#F9F8F3",
-                "display": "flex",
-                "flexDirection": "column",
-                "paddingBottom": 50,
-                "width": "100%",
+                "color": "#1D1D1B",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 30,
+                "fontWeight": "400",
+                "lineHeight": 30,
+                "padding": 8,
+              }
+            }
+          >
+            Fiona Hamilton
+          </Text>
+          <Text
+            accessibilityRole="heading"
+            accessible={true}
+            allowFontScaling={true}
+            aria-level="2"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontFamily": "TimesDigital-RegularSC",
+                "padding": 8,
+              }
+            }
+          >
+            legal editor
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#069",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 15,
+                "padding": 8,
+              }
+            }
+          >
+            jdoe
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#333",
+                "fontFamily": "TimesDigital-Regular",
+                "fontSize": 15,
+                "lineHeight": 25,
+                "padding": 8,
+                "textAlign": "center",
               }
             }
           >
             <Text
-              accessibilityRole="heading"
-              accessible={true}
-              allowFontScaling={true}
-              aria-level="1"
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#1D1D1B",
-                  "fontFamily": "TimesModern-Bold",
-                  "fontSize": 30,
-                  "fontWeight": "400",
-                  "lineHeight": 30,
-                  "padding": 8,
-                }
-              }
-            >
-              Fiona Hamilton
-            </Text>
-            <Text
-              accessibilityRole="heading"
-              accessible={true}
-              allowFontScaling={true}
-              aria-level="2"
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontFamily": "TimesDigital-RegularSC",
-                  "padding": 8,
-                }
-              }
-            >
-              legal editor
-            </Text>
-            <Text
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#069",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 15,
-                  "padding": 8,
-                }
-              }
             >
-              jdoe
-            </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#333",
-                  "fontFamily": "TimesDigital-Regular",
-                  "fontSize": 15,
-                  "lineHeight": 25,
-                  "padding": 8,
-                  "textAlign": "center",
-                }
-              }
-            >
+              Lorem 
               <Text
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontWeight": "bold",
+                  }
+                }
               >
-                Lorem 
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "fontWeight": "bold",
-                    }
+                ipsum
+              </Text>
+               testbr 
+              More text 
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontStyle": "italic",
                   }
-                >
-                  ipsum
-                </Text>
-                 testbr 
-                More text 
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "fontStyle": "italic",
-                    }
-                  }
-                >
-                   last 
-                </Text>
+                }
+              >
+                 last 
               </Text>
             </Text>
-          </View>
-          <View
-            style={
-              Object {
-                "bottom": 0,
-                "height": 100,
-                "position": "absolute",
-                "width": 100,
-              }
-            }
-          >
-            <View
-              onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
-                  Object {
-                    "uri": "",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    Object {
-                      "borderColor": "#FFF",
-                      "borderRadius": 50,
-                      "borderWidth": 5,
-                      "height": 100,
-                      "width": 100,
-                    },
-                  ]
-                }
-              />
-            </View>
-          </View>
+          </Text>
         </View>
         <View
           style={
             Object {
-              "alignItems": "stretch",
-              "display": "flex",
-              "flexDirection": "row",
-              "justifyContent": "center",
+              "bottom": 0,
+              "height": 100,
+              "position": "absolute",
+              "width": 100,
             }
           }
         >
           <View
+            onLayout={[Function]}
+          >
+            <Image
+              onError={[Function]}
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 1,
+                    "width": 750,
+                  },
+                  Object {
+                    "borderColor": "#FFF",
+                    "borderRadius": 50,
+                    "borderWidth": 5,
+                    "height": 100,
+                    "width": 100,
+                  },
+                ]
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "stretch",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "marginBottom": 10,
+              "marginLeft": 10,
+              "marginRight": 10,
+              "maxWidth": 800,
+            }
+          }
+        >
+          <View
+            onLayout={[Function]}
             style={
               Object {
-                "flex": 1,
-                "marginBottom": 10,
-                "marginLeft": 10,
-                "marginRight": 10,
-                "maxWidth": 800,
+                "alignItems": "stretch",
+                "flexDirection": "column",
               }
             }
           >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 15,
+                    "lineHeight": 20,
+                    "paddingBottom": 11,
+                    "paddingTop": 11,
+                    "textAlign": "center",
+                  },
+                  null,
+                ]
+              }
+            >
+              Showing 1 - 0 of 0 results
+            </Text>
             <View
-              onLayout={[Function]}
               style={
                 Object {
-                  "alignItems": "stretch",
-                  "display": "flex",
-                  "flexDirection": "column",
+                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#dbdbdb",
+                  "borderTopWidth": 1,
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
                 }
               }
             >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 15,
-                      "lineHeight": 20,
-                      "paddingBottom": 11,
-                      "paddingTop": 11,
-                      "textAlign": "center",
-                    },
-                    null,
-                  ]
-                }
-              >
-                Showing 1 - 0 of 0 results
-              </Text>
-              <View
-                style={
-                  Object {
-                    "borderBottomColor": "#dbdbdb",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
-                    "borderTopWidth": 1,
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "justifyContent": "space-between",
-                  }
-                }
-              >
-                <View />
-                <View />
-              </View>
+              <View />
+              <View />
             </View>
           </View>
         </View>

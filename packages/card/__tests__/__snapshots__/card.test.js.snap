@@ -6,7 +6,6 @@ exports[`renders horizontal above breakpoint 1`] = `
   style={
     Array [
       Object {
-        "display": "flex",
         "flexDirection": "column",
       },
       Object {
@@ -23,7 +22,6 @@ exports[`renders horizontal above breakpoint 1`] = `
           "paddingBottom": 15,
         },
         Object {
-          "flexBasis": "auto",
           "flexGrow": 1,
           "flexShrink": 1,
         },
@@ -47,7 +45,6 @@ exports[`renders horizontal above breakpoint 1`] = `
     style={
       Array [
         Object {
-          "flexBasis": "auto",
           "flexGrow": 1,
           "flexShrink": 1,
         },
@@ -93,7 +90,6 @@ exports[`renders vertical by default 1`] = `
   style={
     Array [
       Object {
-        "display": "flex",
         "flexDirection": "column",
       },
       null,
@@ -108,7 +104,6 @@ exports[`renders vertical by default 1`] = `
           "paddingBottom": 15,
         },
         Object {
-          "flexBasis": "auto",
           "flexGrow": 1,
           "flexShrink": 1,
         },
@@ -143,7 +138,6 @@ exports[`renders vertical by default 1`] = `
     style={
       Array [
         Object {
-          "flexBasis": "auto",
           "flexGrow": 1,
           "flexShrink": 1,
         },

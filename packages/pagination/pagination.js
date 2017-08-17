@@ -10,11 +10,9 @@ const styles = StyleSheet.create({
   },
   container: {
     alignItems: "stretch",
-    display: "flex",
     flexDirection: "column"
   },
   horizontal: {
-    display: "flex",
     flexDirection: "row",
     borderBottomColor: "#dbdbdb",
     borderBottomWidth: 1,

@@ -1,8 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import TestUtils from "react-dom/test-utils";
 
-import GPT from "../gpt.web";
+import GPT from "../gpt";
 import AdManager from "../ad-manager";
 import { getSlotConfig } from "../generate-config";
 import gptManager from "../gpt-manager";
@@ -50,10 +49,12 @@ describe("Gpt test", () => {
     expect(adManager.unregisterAd).toHaveBeenCalledWith(code);
   });
 
-  it("handleLayout changes configuration", () => {
-    const tree = TestUtils.renderIntoDocument(
-      <GPT adManager={adManager} code="ad-header" />
-    );
+  it("handleLayout changes configuration", done => {
+    const comp = new GPT({
+      adManager,
+      code: "ad-header"
+    });
+
     const event = {
       nativeEvent: {
         layout: {
@@ -61,12 +62,15 @@ describe("Gpt test", () => {
         }
       }
     };
-    tree.setState({
-      width: 50
-    });
 
-    tree.handleLayout(event, () => {
-      expect(tree.state.width).toEqual(100);
-    });
+    comp.state.width = 50;
+
+    comp.setState = ({ config }) => {
+      expect(config).toBeDefined();
+
+      return done();
+    };
+
+    comp.handleLayout(event);
   });
 });

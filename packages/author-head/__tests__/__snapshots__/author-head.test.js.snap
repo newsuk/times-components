@@ -7,7 +7,6 @@ exports[`renders a snapshot 1`] = `
     Object {
       "alignItems": "center",
       "backgroundColor": "transparent",
-      "display": "flex",
       "paddingBottom": 50,
     }
   }
@@ -18,7 +17,6 @@ exports[`renders a snapshot 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "#F9F8F3",
-        "display": "flex",
         "flexDirection": "column",
         "paddingBottom": 50,
         "width": "100%",
@@ -143,7 +141,6 @@ exports[`renders a snapshot with data 1`] = `
     Object {
       "alignItems": "center",
       "backgroundColor": "transparent",
-      "display": "flex",
       "paddingBottom": 50,
     }
   }
@@ -154,7 +151,6 @@ exports[`renders a snapshot with data 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "#F9F8F3",
-        "display": "flex",
         "flexDirection": "column",
         "paddingBottom": 50,
         "width": "100%",
