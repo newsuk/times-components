@@ -6,7 +6,7 @@ import propTypes from "./markup-proptype";
 const styles = {
   author: {
     color: "#069",
-    textDecoration: "none"
+    textDecorationLine: "none"
   },
   anchor: { color: "blue" }
 };
