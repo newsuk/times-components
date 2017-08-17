@@ -1,6 +1,6 @@
 {
   "name": "@times-components/link",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "component to handle links and navigation",
   "main": "link.js",
   "scripts": {

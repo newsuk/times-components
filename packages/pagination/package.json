@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pagination",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "pagination.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
