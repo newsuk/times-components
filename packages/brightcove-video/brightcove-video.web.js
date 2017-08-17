@@ -143,7 +143,12 @@ class BrightcoveVideo extends Component {
   }
 
   initVideo(id) {
-    bc(document.getElementById(id));
+    bc(document.getElementById(id), {
+      controlBar: {
+        fullscreenToggle: !this.props.hideFullScreenButton
+      }
+    });
+
     this.initVideoJS(id);
   }
 
