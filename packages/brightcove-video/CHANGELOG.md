@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@0.2.4...@times-components/brightcove-video@0.3.0) (2017-08-17)
+
+
+### Features
+
+* pause/play video based on appstate ([#148](https://github.com/newsuk/times-components/issues/148)) ([e2f6231](https://github.com/newsuk/times-components/commit/e2f6231))
+
+
+
+
 <a name="0.2.4"></a>
 ## [0.2.4](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@0.2.1...@times-components/brightcove-video@0.2.4) (2017-08-11)
 
