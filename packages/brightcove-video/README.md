@@ -62,6 +62,8 @@ Properties types are defined in `./brightcove-video.proptypes.js`
 | `height` | number | height of the player
 | `onError` | function | Handle errors
 | `onChange` | function |
+| `onGoFullScreen` | function | Handle signal to go full screen in parent (Android)
+| `onExitFullScreen` | function | Handle signal to go out of full screen in parent (Android)
 | `autoplay` | boolean | Should the video autoplay
 
 ## Usage
@@ -79,6 +81,12 @@ import BrightcoveVideo from '@times-component/brightcove-video';
     onError={console.error}
     policyKey={BRIGHTCOVE_POLICY_KEY} // Required for native
     autoplay={true}
+    onGoFullScreen={this.doSomethingAboutIt} // Android Only, see note below
+    onExitFullScreen={this.doSomethingAboutIt} // Android Only, see note below
 />
 
 ```
+
+## Note about handling full screen on Android
+
+:warning: On Android, in the native SDK, it is the parent that handles the full screen change (`BrightCovePlayer`, that extends an Activity, and not `BrightcoveExoPlayerView`, what we use in this component), so you have to handle the full screen yourself in react-native with the `onGoFullScreen` and `onExitFullScreen` handlers.

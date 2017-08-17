@@ -26,12 +26,14 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
     private String mAccountId;
     private String mPolicyKey;
     private String mPlayerStatus;
+    private Boolean mIsFullScreen;
     private Boolean mAutoplay;
 
     public RNTBrightcoveView(final ThemedReactContext context) {
         super(context);
         finishInitialization();
         this.setMediaController(new BrightcoveMediaController(this));
+        mIsFullScreen = false;
     }
 
     public void setVideoId(final String videoId) {
@@ -78,6 +80,23 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
         reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topLoadingError", event);
     }
 
+    private void emitToggleFullScreen() {
+        WritableMap event = Arguments.createMap();
+        String nextFullScreenState = "";
+
+        if (mIsFullScreen) {
+            mIsFullScreen = false;
+            nextFullScreenState = "NORMAL_SCREEN";
+        } else {
+            mIsFullScreen = true;
+            nextFullScreenState = "FULL_SCREEN";
+        }
+
+        event.putString("fullScreenState", nextFullScreenState);
+        ReactContext reactContext = (ReactContext) getContext();
+        reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
+    }
+
     private EventEmitter setupEventEmitter() {
         EventEmitter eventEmitter = getEventEmitter();
         eventEmitter.on(EventType.VIDEO_SIZE_KNOWN, new EventListener() {
@@ -92,6 +111,12 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
             @Override
             public void processEvent(Event e) {
                 emitState();
+            }
+        });
+        eventEmitter.on(EventType.ENTER_FULL_SCREEN, new EventListener() {
+            @Override
+            public void processEvent(Event e) {
+                emitToggleFullScreen();
             }
         });
         eventEmitter.on(EventType.ERROR, new EventListener() {
