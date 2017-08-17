@@ -42,8 +42,13 @@ storiesOf("Article", module)
       <Article />
     </View>
   )
-  .add("ArticleWeb", () =>
+  .add("ArticleWebWithLabel", () =>
     <ApolloProvider client={client}>
-      <ArticleProvider id="ea16d744-cb4a-11e4-a202-50ac5def393a" />
+      <ArticleProvider id="823c3892-ccf5-11e4-81dd-064fe933cd41" />
+    </ApolloProvider>
+  )
+  .add("ArticleWebWithoutLabelWithoutFlag", () =>
+    <ApolloProvider client={client}>
+      <ArticleProvider id="97c64f20-cb67-11e4-a202-50ac5def393a" />
     </ApolloProvider>
   );

@@ -9,11 +9,14 @@ const query = gql`
             title
             publicationName
             publishedTime
+            label
             leadAsset{
              ... on Image
                 {
                   id
                   title
+                  credits
+                  caption
                   crop(ratio: "16:9")
                   {
                    ratio
