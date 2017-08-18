@@ -3,7 +3,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import ArticleByline from "./article-byline";
 
-const authorsAST = require("./fixtures/authors.json").fixture;
+const authorsAST = require("./fixtures/authors.json");
 
 const bylineStyles = {
   byline: {

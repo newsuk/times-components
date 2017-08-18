@@ -1,70 +1,68 @@
 {
-  "fixture": {
-    "singleAuthor": [
-      {
-        "name": "author",
-        "attributes": {
-          "slug": "fiona-hamilton"
-        },
-        "children": [
-          {
-            "name": "text",
-            "children": [
-              {
-                "text": "Fiona Hamilton"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "multipleAuthors": [
-      {
-        "name": "author",
-        "attributes": {
-          "slug": "greg-hurst"
-        },
-        "children": [
-          {
-            "name": "text",
-            "children": [
-              {
-                "text": "Greg Hurst"
-              }
-            ]
-          }
-        ]
+  "singleAuthor": [
+    {
+      "name": "author",
+      "attributes": {
+        "slug": "fiona-hamilton"
       },
-      {
-        "name": "span",
-        "attributes": {},
-        "children": [
-          {
-            "name": "text",
-            "children": [
-              {
-                "text": ", Social Affairs Correspondent | Mark Bridge, Technology Correspondent | "
-              }
-            ]
-          }
-        ]
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": "Fiona Hamilton"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "multipleAuthors": [
+    {
+      "name": "author",
+      "attributes": {
+        "slug": "greg-hurst"
       },
-      {
-        "name": "author",
-        "attributes": {
-          "slug": "fiona-hamilton"
-        },
-        "children": [
-          {
-            "name": "text",
-            "children": [
-              {
-                "text": "Fiona Hamilton"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": "Greg Hurst"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "span",
+      "attributes": {},
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": ", Social Affairs Correspondent | Mark Bridge, Technology Correspondent | "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "author",
+      "attributes": {
+        "slug": "fiona-hamilton"
+      },
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": "Fiona Hamilton"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
