@@ -1446,8 +1446,7 @@ exports[`renders profile content 1`] = `
                 }
               >
                 Monday March 23 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -1615,8 +1614,7 @@ exports[`renders profile content 1`] = `
                 }
               >
                 Friday March 20 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -1784,8 +1782,7 @@ exports[`renders profile content 1`] = `
                 }
               >
                 Thursday March 19 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -1953,8 +1950,7 @@ exports[`renders profile content 1`] = `
                 }
               >
                 Wednesday March 18 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -2121,8 +2117,7 @@ exports[`renders profile content 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                SUNDAYTIMES
+                , The Sunday Times
               </Text>
             </View>
           </View>
@@ -2290,8 +2285,7 @@ exports[`renders profile content 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -2458,8 +2452,7 @@ exports[`renders profile content 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -2626,8 +2619,7 @@ exports[`renders profile content 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -2794,8 +2786,7 @@ exports[`renders profile content 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -2962,8 +2953,7 @@ exports[`renders profile content 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -3130,8 +3120,7 @@ exports[`renders profile content 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -3298,8 +3287,7 @@ exports[`renders profile content 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -3466,8 +3454,7 @@ exports[`renders profile content 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -3634,8 +3621,7 @@ exports[`renders profile content 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -3803,8 +3789,7 @@ exports[`renders profile content 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -3971,8 +3956,7 @@ exports[`renders profile content 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -4133,8 +4117,7 @@ exports[`renders profile content 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -4302,8 +4285,7 @@ exports[`renders profile content 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -4745,8 +4727,7 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 Monday March 23 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -4914,8 +4895,7 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 Friday March 20 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -5083,8 +5063,7 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 Thursday March 19 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -5252,8 +5231,7 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 Wednesday March 18 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -5420,8 +5398,7 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                SUNDAYTIMES
+                , The Sunday Times
               </Text>
             </View>
           </View>
@@ -5589,8 +5566,7 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -5757,8 +5733,7 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -5925,8 +5900,7 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -6093,8 +6067,7 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -6261,8 +6234,7 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -6429,8 +6401,7 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -6597,8 +6568,7 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -6765,8 +6735,7 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -6933,8 +6902,7 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -7102,8 +7070,7 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -7270,8 +7237,7 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -7432,8 +7398,7 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>
@@ -7601,8 +7566,7 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 Tuesday March 17 2015
-                , 
-                TIMES
+                , The Times
               </Text>
             </View>
           </View>

@@ -1,7 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders a DatePublication component 1`] = `null`;
-
 exports[`renders a DatePublication component with content 1`] = `
 <Text
   accessible={true}
@@ -19,8 +17,7 @@ exports[`renders a DatePublication component with content 1`] = `
   }
 >
   Saturday July 01 2017
-  , 
-  The Sunday Times
+  , The Times
 </Text>
 `;
 
@@ -43,7 +40,6 @@ exports[`renders a DatePublication component with red font color 1`] = `
   }
 >
   Saturday July 01 2017
-  , 
-  The Sunday Times
+  , The Times
 </Text>
 `;

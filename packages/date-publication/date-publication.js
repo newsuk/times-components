@@ -11,21 +11,20 @@ const styles = {
   }
 };
 
-const DatePublication = ({ date, publication, style }) => {
-  if (!date || !publication) {
-    return null;
-  }
-
-  return (
-    <Text style={[styles.default, style]}>
-      {format(date, "dddd MMMM DD YYYY")}, {publication}
-    </Text>
-  );
+const publications = {
+  SUNDAYTIMES: "The Sunday Times",
+  TIMES: "The Times"
 };
 
+const DatePublication = ({ date, publication, style }) =>
+  <Text style={[styles.default, style]}>
+    {format(date, "dddd MMMM DD YYYY")}
+    {publications[publication] ? `, ${publications[publication]}` : ""}
+  </Text>;
+
 DatePublication.propTypes = {
-  date: PropTypes.instanceOf(Date),
-  publication: PropTypes.string,
+  date: PropTypes.instanceOf(Date).isRequired,
+  publication: PropTypes.oneOf(Object.keys(publications)).isRequired,
   style: Text.propTypes.style
 };
 
