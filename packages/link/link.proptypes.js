@@ -7,6 +7,7 @@ const propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.element,
+    PropTypes.arrayOf(PropTypes.string),
     PropTypes.arrayOf(PropTypes.element)
   ]).isRequired
 };
