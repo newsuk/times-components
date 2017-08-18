@@ -1,6 +1,6 @@
 {
   "name": "@times-components/date-publication",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Date and Publication properties",
   "main": "date-publication.js",
   "scripts": {
