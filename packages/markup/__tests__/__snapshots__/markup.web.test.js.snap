@@ -7,24 +7,19 @@ exports[`Markup Web does not render an image tag 1`] = `<div />`;
 exports[`Markup Web renders a mixture of tags 1`] = `
 <div>
   <div>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      onPress={[Function]}
+    <a
+      className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      dir="auto"
+      href="http://www.google.com"
+      role="link"
       style={
-        Array [
-          Object {
-            "color": "#069",
-          },
-          Object {
-            "color": "blue",
-          },
-        ]
+        Object {
+          "color": "blue",
+        }
       }
     >
       some link here
-    </Text>
+    </a>
   </div>
   <div>
     <strong>
@@ -53,10 +48,9 @@ exports[`Markup Web renders a single paragraph 1`] = `
 exports[`Markup Web renders an empty component 1`] = `<div />`;
 
 exports[`Markup Web renders multiple children 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
+<div
+  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+  dir="auto"
   style={
     Object {
       "color": "red",
@@ -69,7 +63,7 @@ exports[`Markup Web renders multiple children 1`] = `
   <p>
     This is the text for paragraph two
   </p>
-</Text>
+</div>
 `;
 
 exports[`Markup Web renders multiple paragraphs 1`] = `
@@ -101,24 +95,19 @@ exports[`Markup Web renders nested tags 1`] = `
 `;
 
 exports[`Markup Web renders the anchor tag 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  onPress={[Function]}
+<a
+  className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+  dir="auto"
+  href="www.google.com"
+  role="link"
   style={
-    Array [
-      Object {
-        "color": "#069",
-      },
-      Object {
-        "color": "blue",
-      },
-    ]
+    Object {
+      "color": "blue",
+    }
   }
 >
   some link here
-</Text>
+</a>
 `;
 
 exports[`Markup Web renders the bold tag 1`] = `

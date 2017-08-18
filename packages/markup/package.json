@@ -5,18 +5,10 @@
   "main": "markup",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
-    "test:watch": "jest --bail --verbose --watchAll",
-    "test": "jest --bail --ci --coverage"
-  },
-  "jest": {
-    "preset": "react-native",
-    "rootDir": "../../",
-    "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/markup/__tests__/*.test.js"
-    ]
+    "test:watch": "npm run test:native -- --bail --verbose --watchAll",
+    "test:native": "jest --config='./jest.config.json'",
+    "test:web": "jest --config='./jest.config.web.json'",
+    "test": "npm run test:native -- --ci --bail && npm run test:web -- --ci --bail --coverage"
   },
   "repository": {
     "type": "git",
