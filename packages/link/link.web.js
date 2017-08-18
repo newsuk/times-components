@@ -5,7 +5,7 @@ import { defaultProps, propTypes } from "./link.proptypes";
 
 const styles = {
   color: "#069",
-  textDecorationLine: "none"
+  textDecorationLine: "underline"
 };
 
 export default function Link({ url, style, children }) {

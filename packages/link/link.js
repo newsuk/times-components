@@ -4,7 +4,8 @@ import { Text, Linking } from "react-native";
 import { defaultProps, propTypes } from "./link.proptypes";
 
 const styles = {
-  color: "#069"
+  color: "#069",
+  textDecorationLine: "underline"
 };
 
 export default function Link({ url, style, children }) {
