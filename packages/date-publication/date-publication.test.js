@@ -7,13 +7,8 @@ import DatePublication from "./date-publication";
 
 const props = {
   date: new Date("2017-07-01T14:32:00.000Z"),
-  publication: "The Sunday Times"
+  publication: "TIMES"
 };
-
-it("renders a DatePublication component", () => {
-  const tree = renderer.create(<DatePublication />).toJSON();
-  expect(tree).toMatchSnapshot();
-});
 
 it("renders a DatePublication component with content", () => {
   const tree = renderer.create(<DatePublication {...props} />).toJSON();
