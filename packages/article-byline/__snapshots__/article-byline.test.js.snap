@@ -25,6 +25,7 @@ exports[`renders correctly with a single author 1`] = `
       Array [
         Object {
           "color": "#069",
+          "textDecorationLine": "underline",
         },
         Object {
           "color": "#069",
@@ -62,6 +63,7 @@ exports[`renders correctly with multiple authors, titles and texts 1`] = `
       Array [
         Object {
           "color": "#069",
+          "textDecorationLine": "underline",
         },
         Object {
           "color": "#069",
@@ -77,7 +79,7 @@ exports[`renders correctly with multiple authors, titles and texts 1`] = `
     ellipsizeMode="tail"
     style={Object {}}
   >
-    , Social Affairs Correspondent | Mark Bridge, Technology Correspondent |
+    , Social Affairs Correspondent | Mark Bridge, Technology Correspondent | 
   </Text>
   <Text
     accessible={true}
@@ -88,6 +90,7 @@ exports[`renders correctly with multiple authors, titles and texts 1`] = `
       Array [
         Object {
           "color": "#069",
+          "textDecorationLine": "underline",
         },
         Object {
           "color": "#069",
@@ -127,6 +130,7 @@ exports[`renders correctly with styles 1`] = `
       Array [
         Object {
           "color": "#069",
+          "textDecorationLine": "underline",
         },
         Object {
           "color": "#069",
