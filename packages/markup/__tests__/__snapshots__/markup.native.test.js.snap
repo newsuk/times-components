@@ -16,6 +16,7 @@ exports[`Markup Native renders a mixture of tags 1`] = `
         Array [
           Object {
             "color": "#069",
+            "textDecorationLine": "underline",
           },
           Object {
             "color": "blue",
@@ -186,6 +187,7 @@ exports[`Markup Native renders the anchor tag 1`] = `
     Array [
       Object {
         "color": "#069",
+        "textDecorationLine": "underline",
       },
       Object {
         "color": "blue",
