@@ -1,25 +1,24 @@
-import React from 'react';
-import { Text } from 'react-native';
-import format from 'date-fns/format';
-import PropTypes from 'prop-types';
+import React from "react";
+import { Text } from "react-native";
+import format from "date-fns/format";
+import PropTypes from "prop-types";
 
 const styles = {
   default: {
-    color: '#696969',
+    color: "#696969",
     fontSize: 13,
-    fontFamily: 'GillSansMTStd-Medium'
+    fontFamily: "GillSansMTStd-Medium"
   }
 };
 
 const DatePublication = ({ date, publication, style }) => {
-
   if (!date || !publication) {
     return null;
   }
 
   return (
     <Text style={[styles.default, style]}>
-      {format(date, 'dddd MMMM DD YYYY')}, {publication}
+      {format(date, "dddd MMMM DD YYYY")}, {publication}
     </Text>
   );
 };
@@ -32,7 +31,7 @@ DatePublication.propTypes = {
 
 DatePublication.defaultProps = {
   date: null,
-  publication: '',
+  publication: "",
   style: {}
 };
 
