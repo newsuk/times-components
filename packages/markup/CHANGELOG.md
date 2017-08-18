@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/markup@0.2.1...@times-components/markup@0.3.0) (2017-08-18)
+
+
+### Features
+
+* add link component to markup builder ([#151](https://github.com/newsuk/times-components/issues/151)) ([6429a16](https://github.com/newsuk/times-components/commit/6429a16))
+
+
+
+
 <a name="0.2.1"></a>
 ## [0.2.1](https://github.com/newsuk/times-components/compare/@times-components/markup@0.2.0...@times-components/markup@0.2.1) (2017-08-17)
 
