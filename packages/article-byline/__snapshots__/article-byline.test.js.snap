@@ -15,7 +15,27 @@ exports[`renders correctly with a single author 1`] = `
       undefined,
     ]
   }
-/>
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "color": "#069",
+          "textDecorationLine": "underline",
+        },
+        Object {
+          "color": "#069",
+        },
+      ]
+    }
+  >
+    Fiona Hamilton
+  </Text>
+</Text>
 `;
 
 exports[`renders correctly with multiple authors, titles and texts 1`] = `
@@ -38,9 +58,47 @@ exports[`renders correctly with multiple authors, titles and texts 1`] = `
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "color": "#069",
+          "textDecorationLine": "underline",
+        },
+        Object {
+          "color": "#069",
+        },
+      ]
+    }
+  >
+    Greg Hurst
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
     style={Object {}}
   >
     , Social Affairs Correspondent | Mark Bridge, Technology Correspondent | 
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "color": "#069",
+          "textDecorationLine": "underline",
+        },
+        Object {
+          "color": "#069",
+        },
+      ]
+    }
+  >
+    Fiona Hamilton
   </Text>
 </Text>
 `;
@@ -62,5 +120,25 @@ exports[`renders correctly with styles 1`] = `
       },
     ]
   }
-/>
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "color": "#069",
+          "textDecorationLine": "underline",
+        },
+        Object {
+          "color": "#069",
+        },
+      ]
+    }
+  >
+    Fiona Hamilton
+  </Text>
+</Text>
 `;
