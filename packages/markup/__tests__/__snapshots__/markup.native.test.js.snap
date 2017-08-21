@@ -18,9 +18,7 @@ exports[`Markup Native renders a mixture of tags 1`] = `
             "color": "#069",
             "textDecorationLine": "underline",
           },
-          Object {
-            "color": "blue",
-          },
+          Object {},
         ]
       }
     >
@@ -189,9 +187,7 @@ exports[`Markup Native renders the anchor tag 1`] = `
         "color": "#069",
         "textDecorationLine": "underline",
       },
-      Object {
-        "color": "blue",
-      },
+      Object {},
     ]
   }
 >
