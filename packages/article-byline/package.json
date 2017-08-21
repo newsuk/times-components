@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-byline",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Article byline information",
   "main": "article-byline.js",
   "scripts": {
@@ -11,8 +11,12 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-    "testMatch": ["<rootDir>/packages/article-byline/**.test.js"]
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/article-byline/**.test.js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -48,7 +52,7 @@
   },
   "dependencies": {
     "@times-components/link": "0.2.2",
-    "@times-components/markup": "0.3.2",
+    "@times-components/markup": "0.3.3",
     "prop-types": "15.5.10",
     "react-native-web": "0.0.119"
   },
