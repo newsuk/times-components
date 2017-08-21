@@ -3,13 +3,6 @@ import Link from "@times-components/link";
 import Markup, { builder as mb } from "./markup-builder";
 import propTypes from "./markup-proptype";
 
-const styles = {
-  author: {
-    color: "#069"
-  },
-  anchor: { color: "blue" }
-};
-
 const tagMap = new Map([
   [
     "p",
@@ -24,8 +17,7 @@ const tagMap = new Map([
       tag: Link,
       attrs({ href }) {
         return {
-          url: href,
-          style: styles.anchor
+          url: href
         };
       }
     }
@@ -57,7 +49,6 @@ const tagMap = new Map([
       tag: Link,
       attrs({ slug }) {
         return {
-          style: styles.author,
           url: `/profile/${slug}`
         };
       }

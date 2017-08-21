@@ -14,7 +14,7 @@ exports[`Markup Web renders a mixture of tags 1`] = `
       role="link"
       style={
         Object {
-          "color": "blue",
+          "color": "rgba(0,102,153,1)",
           "textDecoration": "underline",
         }
       }
@@ -103,7 +103,7 @@ exports[`Markup Web renders the anchor tag 1`] = `
   role="link"
   style={
     Object {
-      "color": "blue",
+      "color": "rgba(0,102,153,1)",
       "textDecoration": "underline",
     }
   }

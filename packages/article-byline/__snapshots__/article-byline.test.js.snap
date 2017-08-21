@@ -27,9 +27,7 @@ exports[`renders correctly with a single author 1`] = `
           "color": "#069",
           "textDecorationLine": "underline",
         },
-        Object {
-          "color": "#069",
-        },
+        Object {},
       ]
     }
   >
@@ -65,9 +63,7 @@ exports[`renders correctly with multiple authors, titles and texts 1`] = `
           "color": "#069",
           "textDecorationLine": "underline",
         },
-        Object {
-          "color": "#069",
-        },
+        Object {},
       ]
     }
   >
@@ -92,9 +88,7 @@ exports[`renders correctly with multiple authors, titles and texts 1`] = `
           "color": "#069",
           "textDecorationLine": "underline",
         },
-        Object {
-          "color": "#069",
-        },
+        Object {},
       ]
     }
   >
@@ -132,9 +126,7 @@ exports[`renders correctly with styles 1`] = `
           "color": "#069",
           "textDecorationLine": "underline",
         },
-        Object {
-          "color": "#069",
-        },
+        Object {},
       ]
     }
   >

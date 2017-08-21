@@ -10,12 +10,6 @@ const styles = {
   },
   bold: {
     fontWeight: "bold"
-  },
-  anchor: {
-    color: "blue"
-  },
-  author: {
-    color: "#069"
   }
 };
 
@@ -33,8 +27,7 @@ const tagMap = new Map([
       tag: Link,
       attrs({ href }) {
         return {
-          url: href,
-          style: styles.anchor
+          url: href
         };
       }
     }
@@ -74,7 +67,6 @@ const tagMap = new Map([
       tag: Link,
       attrs({ slug }) {
         return {
-          style: styles.author,
           url: `profile/${slug}`
         };
       }
