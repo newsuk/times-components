@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.0.7"></a>
+## [0.0.7](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.0.6...@times-components/date-publication@0.0.7) (2017-08-21)
+
+
+### Bug Fixes
+
+* date-publication add enum for publication values ([98fa88e](https://github.com/newsuk/times-components/commit/98fa88e))
+
+
+
+
 <a name="0.0.6"></a>
 ## [0.0.6](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.0.5...@times-components/date-publication@0.0.6) (2017-08-18)
 
