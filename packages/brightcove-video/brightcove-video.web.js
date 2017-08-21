@@ -2,7 +2,6 @@
 /* globals videojs, bc */
 
 import React, { Component } from "react";
-import { Helmet } from "react-helmet";
 
 import propTypes from "./brightcove-video.proptypes";
 import defaults from "./brightcove-video.defaults";
@@ -192,17 +191,6 @@ class BrightcoveVideo extends Component {
           data-application-id
           className="video-js"
           controls
-        />
-        <Helmet
-          style={[
-            {
-              type: "text/css",
-              cssText: `.bc-player-default_default {
-                width: ${this.props.width}px;
-                height: ${this.props.height}px;
-              }`
-            }
-          ]}
         />
       </div>
     );
