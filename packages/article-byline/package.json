@@ -40,20 +40,20 @@
     "babel-preset-react-native": "1.9.2",
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
-    "react": "15.5.4",
-    "react-dom": "15.5.4",
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
     "react-native": "0.42.3",
-    "react-test-renderer": "15.5.4",
-    "webpack": "2.6.1"
+    "react-test-renderer": "15.4.2",
+    "webpack": "3.3.0"
   },
   "dependencies": {
     "@times-components/link": "0.1.1",
     "@times-components/markup": "0.2.1",
     "prop-types": "15.5.10",
-    "react-native-web": "0.0.97"
+    "react-native-web": "0.0.119"
   },
   "peerDependencies": {
-    "@storybook/react-native": "3.1.6",
+    "@storybook/react-native": ">=3",
     "react": ">=15",
     "react-dom": ">=15",
     "react-native": ">=0.42"
