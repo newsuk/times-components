@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.4.8...@times-components/author-profile@0.5.0) (2017-08-22)
+
+
+### Features
+
+* author profile provider component ([57cbb79](https://github.com/newsuk/times-components/commit/57cbb79))
+
+
+
+
 <a name="0.4.8"></a>
 ## [0.4.8](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.4.7...@times-components/author-profile@0.4.8) (2017-08-21)
 
