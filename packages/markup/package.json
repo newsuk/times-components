@@ -1,6 +1,6 @@
 {
   "name": "@times-components/markup",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "a component which takes an HTML ast and renders the platform specific markup",
   "main": "markup",
   "scripts": {
@@ -43,7 +43,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/link": "0.3.0",
+    "@times-components/link": "0.3.1",
     "prop-types": "15.5.10",
     "react-native-web": "0.0.119"
   },
