@@ -39,5 +39,8 @@ export default StyleSheet.create({
   },
   LeadAsset: {
     marginBottom: 20
+  },
+  ArticleText: {
+    color: "#333"
   }
 });
