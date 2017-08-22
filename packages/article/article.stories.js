@@ -12,7 +12,7 @@ import Article from "./article";
 import ArticleProvider from "./article-provider";
 
 const networkInterface = createNetworkInterface({
-  uri: "http://localhost:4000/graphql/"
+  uri: "http://10.22.23.184:4000/graphql/"
 });
 
 const client = new ApolloClient({

@@ -1,6 +1,6 @@
 import connectGraphql from "@times-components/provider";
 import gql from "graphql-tag";
-import Article from "./article.web";
+import Article from "./article.android";
 
 const query = gql`
     query ArticleDataQuery($id: ID!) {
@@ -10,6 +10,7 @@ const query = gql`
             publicationName
             publishedTime
             label
+            content
             leadAsset{
              ... on Image
                 {
