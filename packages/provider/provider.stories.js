@@ -13,11 +13,18 @@ import {
 
 import connectGraphql, { AuthorProfileProvider } from "./provider.js";
 
-const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
+const Component = props =>
+  <Text>
+    {JSON.stringify(props, null, 2)}
+  </Text>;
 
-const query = gql`{
-  author(slug: "fiona-hamilton") { name }
-}`;
+const query = gql`
+  {
+    author(slug: "fiona-hamilton") {
+      name
+    }
+  }
+`;
 
 const fragmentMatcher = new IntrospectionFragmentMatcher({
   introspectionQueryResultData: {

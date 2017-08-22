@@ -103,25 +103,27 @@ class Pagination extends React.Component {
     const finalResult = Math.min(count, page * pageSize);
     const message = `Showing ${startResult} - ${finalResult} of ${count} results`;
 
-    const prevComponent = startResult > pageSize
-      ? <Link
-          style={styles.arrow}
-          onPress={(...params) => onPrev(page - 1, ...params)}
-          url={generatePageLink(page - 1)}
-        >
-          {"< Previous page"}
-        </Link>
-      : null;
+    const prevComponent =
+      startResult > pageSize
+        ? <Link
+            style={styles.arrow}
+            onPress={(...params) => onPrev(page - 1, ...params)}
+            url={generatePageLink(page - 1)}
+          >
+            {"< Previous page"}
+          </Link>
+        : null;
 
-    const nextComponent = finalResult < count
-      ? <Link
-          style={styles.arrow}
-          onPress={(...params) => onNext(page + 1, ...params)}
-          url={generatePageLink(page + 1)}
-        >
-          {"Next page >"}
-        </Link>
-      : null;
+    const nextComponent =
+      finalResult < count
+        ? <Link
+            style={styles.arrow}
+            onPress={(...params) => onNext(page + 1, ...params)}
+            url={generatePageLink(page + 1)}
+          >
+            {"Next page >"}
+          </Link>
+        : null;
 
     const messageComponent = !hideResults
       ? <View
@@ -141,8 +143,12 @@ class Pagination extends React.Component {
       <View style={styles.container} onLayout={this.handleLayout}>
         {messageComponent}
         <View style={[styles.horizontal, styles.border]}>
-          <View>{prevComponent}</View>
-          <View>{nextComponent}</View>
+          <View>
+            {prevComponent}
+          </View>
+          <View>
+            {nextComponent}
+          </View>
         </View>
       </View>
     );
