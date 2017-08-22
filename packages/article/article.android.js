@@ -204,14 +204,14 @@ class ArticlePage extends React.Component {
     }
 
     this.state = {
-      dataSource: ds.cloneWithRows(this.genRows(this.props))
+      dataSource: ds.cloneWithRows(ArticlePage.genRows(this.props))
     };
     return (
       <View>
         <ListView
           style={styles.ArticleContainer}
           dataSource={this.state.dataSource}
-          renderRow={this.renderRow}
+          renderRow={ArticlePage.renderRow}
           initialListSize={10}
           scrollRenderAheadDistance={10}
           pageSize={1}
