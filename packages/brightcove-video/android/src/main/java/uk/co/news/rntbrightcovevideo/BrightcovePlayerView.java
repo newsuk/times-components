@@ -21,6 +21,7 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
 
     private Boolean mAutoplay;
     private String mPlayerStatus;
+    private float mStartPlayheadPosition = 0;
 
     public BrightcovePlayerView(final Context context) {
         super(context);
@@ -49,8 +50,6 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
         eventEmitter.on(EventType.ERROR, new EventListener() {
             @Override
             public void processEvent(Event e) {
-                //emitError(e);
-
                 ((RNTBrightcoveView) BrightcovePlayerView.this.getParent()).emitError(e);
             }
         });
@@ -83,6 +82,11 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
             public void onVideo(final Video video) {
                 BrightcovePlayerView.this.add(video);
 
+                BrightcovePlayerView.this.seekTo((int) mStartPlayheadPosition);
+
+                BrightcovePlayerView.this.invalidate();
+                BrightcovePlayerView.this.requestLayout();
+
                 if (mAutoplay) {
                     BrightcovePlayerView.this.start();
                 }
@@ -112,6 +116,10 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
                 leftOffset + surfaceW,
                 topOffset + surfaceH
         );
+    }
+
+    public void setStartPlayheadPosition(float startPlayheadPosition) {
+        mStartPlayheadPosition = startPlayheadPosition;
     }
 
     public String getPlayerStatus() {

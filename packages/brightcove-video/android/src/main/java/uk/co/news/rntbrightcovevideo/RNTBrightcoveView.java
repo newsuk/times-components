@@ -22,8 +22,7 @@ public class RNTBrightcoveView extends RelativeLayout {
     private BrightcovePlayerView mPlayerView;
     private ThemedReactContext mContext;
 
-    private float mSavedPlayheadPosition;
-    private String mSavedPlayerStatus;
+    private float mSavedPlayheadPosition = 0;
 
     public RNTBrightcoveView(final ThemedReactContext context) {
         super(context);
@@ -35,7 +34,7 @@ public class RNTBrightcoveView extends RelativeLayout {
     protected void onConfigurationChanged(Configuration newConfig) {
         Log.d(TAG, "onConfigurationChanged");
 
-        mSavedPlayerStatus = mPlayerView.getPlayerStatus();
+        mAutoplay = mPlayerView.getPlayerStatus() == "playing";
         mSavedPlayheadPosition = mPlayerView.getPlayheadPosition();
 
         this.removeAllViews();
@@ -85,6 +84,8 @@ public class RNTBrightcoveView extends RelativeLayout {
 
             RNTBrightcoveView.this.addView(mPlayerView, new ViewGroup.LayoutParams(LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 
+            mPlayerView.setStartPlayheadPosition(mSavedPlayheadPosition);
+
             mPlayerView.initVideo(mVideoId, mAccountId, mPolicyKey, mAutoplay);
 
             requestLayout();
@@ -96,7 +97,6 @@ public class RNTBrightcoveView extends RelativeLayout {
         WritableMap event = Arguments.createMap();
         event.putString("playerStatus", mPlayerView.getPlayerStatus());
         event.putString("playheadPosition", Float.toString(mPlayerView.getPlayheadPosition() / 1000));
-
         ReactContext reactContext = (ReactContext) getContext();
         reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
     }
