@@ -1,7 +1,7 @@
 import React from "react";
-import { Text, View, ListView } from "react-native";
+import { Text, View, ListView, Platform } from "react-native";
 import PropTypes from "prop-types";
-import Ad from "@times-components/ad"; // , { AdComposer }
+import Ad, { AdComposer } from "@times-components/ad"; // , { AdComposer }
 import {
   NewArticleFlag,
   SponsoredArticleFlag,
@@ -67,9 +67,22 @@ class ArticlePage extends React.Component {
 
   static renderRow(rowData) {
     if (rowData.type === "ads") {
+      let ADS;
+      const singleADS = (
+        <Ad code={rowData.data.code} section={rowData.data.section} />
+      );
+      if (Platform.OS !== "web") {
+        ADS = singleADS;
+      } else {
+        ADS = (
+          <AdComposer section="article" networkId="25436805">
+            {singleADS}
+          </AdComposer>
+        );
+      }
       return (
         <View style={styles.ArticleAd}>
-          <Ad code={rowData.data.code} section={rowData.data.section} />
+          {ADS}
         </View>
       );
     }
