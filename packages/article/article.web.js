@@ -1,212 +1,212 @@
 import React from "react";
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, ListView, Platform } from "react-native";
 import PropTypes from "prop-types";
-import Ad, { AdComposer } from "@times-components/ad";
-import { NewArticleFlag } from "@times-components/article-flag";
+import Ad, { AdComposer } from "@times-components/ad"; // , { AdComposer }
+import {
+  NewArticleFlag,
+  SponsoredArticleFlag,
+  UpdatedArticleFlag,
+  ExclusiveArticleFlag
+} from "@times-components/article-flag";
 import ArticleLabel from "@times-components/article-label";
 import ArticleHeadline from "@times-components/article-headline";
 import DatePublication from "@times-components/date-publication";
 import Image from "@times-components/image";
 import Caption from "@times-components/caption";
-import { builder } from "@times-components/markup";
+import Markup from "@times-components/markup";
+import ArticleByline from "@times-components/article-byline";
+import pick from "lodash.pick";
+
+import { webStyles } from "./article-style";
 
 const multiParagraph = require("./fixtures/multi-para.json").fixture;
+const authorFixture = require("./fixtures/author.json").singleTextAuthor;
 
-const Article = props => {
-  const data = props.data;
-  const code = props.code;
+const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 
-  if (data.loading) {
-    return <Text>Loading</Text>;
+class ArticlePage extends React.Component {
+  // constructor (props) {
+  //   super(props);
+  //  }
+
+  static prepareDataForListView(props) {
+    const Article = props.data.article;
+    const AdsData = { code: "intervention", section: "article" };
+    const ArticleHeader = pick(Article, [
+      "id",
+      "title",
+      "publicationName",
+      "label"
+      // NOTE flag fields are missed from the api
+      // ...
+    ]);
+    // HACK for the flags
+    Object.assign(ArticleHeader, { newFlag: true, sponsoredFlag: true });
+
+    const ArticleMidContainer = pick(Article, [
+      "publicationName",
+      "publishedTime",
+      "leadAsset"
+      // NOTE byline field is missed from the api
+      // byline
+    ]);
+    // HACK for the byline
+    Object.assign(ArticleMidContainer, {
+      byline: authorFixture
+    });
+    const ArticleArray = Array.prototype.concat(
+      [
+        { type: "ads", data: AdsData },
+        { type: "header", data: ArticleHeader },
+        { type: "middleContaner", data: ArticleMidContainer }
+      ],
+      multiParagraph.map(i => ({ type: "article_body_row", data: i }))
+    );
+    return ArticleArray;
   }
 
-  const styles = StyleSheet.create({
-    Container: {},
-    ArticleContainer: {
-      flexDirection: "column",
-      boxSizing: "border-box",
-      paddingLeft: 20,
-      paddingRight: 20,
-      paddingTop: 15
-    },
-    LeadAsset: {
-      position: "relative",
-      boxSizing: "border-box",
-      marginBottom: 30
-    },
-    ArticleMiddleContainer: {
-      flexDirection: "row",
-      width: "58.33%",
-      marginTop: 30,
-      marginRight: "auto",
-      marginBottom: 0,
-      marginLeft: "auto"
-    },
-    ArticleBody: {
-      flexDirection: "row",
-      width: "58.33%",
-      marginRight: "auto",
-      marginBottom: 0,
-      marginLeft: "auto"
-    },
-    ArticleBodyChildContainer: {
-      boxSizing: "border-box"
-    },
-    ArticleHeader: {
-      width: "58.33333%",
-      margin: "auto"
-    },
-    ArticleHeadline: {},
-    ArticleFlag: {
-      marginTop: 6,
-      marginBottom: 3
-    },
-    ArticleLabel: {},
-    ArticleMeta: {
-      flex: 1,
-      width: "35.71429%",
-      boxSizing: "border-box",
-      top: 0,
-      left: "-35.714%",
-      position: "absolute",
-      paddingRight: 20
-    },
-    DatePublication: {
-      width: "90%",
-      borderTopColor: "#DBDBDB",
-      borderTopWidth: 1,
-      borderTopStyle: "solid",
-      paddingTop: 6,
-      paddingBottom: 6
-    },
-    Byline: {
-      width: "90%",
-      borderTopColor: "#DBDBDB",
-      borderTopWidth: 1,
-      borderTopStyle: "solid",
-      paddingTop: 6,
-      paddingBottom: 6
-    },
-    ArticleContent: {
-      flex: 3,
-      flexDirection: "column"
-    },
-    ArticleAd: {
-      borderBottomWidth: 1,
-      borderBottomStyle: "solid",
-      paddingBottom: 15,
-      paddingTop: 15,
-      boxSizing: "border-box",
-      borderBottomColor: "#DBDBDB"
-    },
-    ArticleMedia: {
-      backgroundColor: "#EFEFEF"
-    },
-    ArticleCaption: {}
-  });
-
-  return (
-    <View style={styles.Container}>
-      <View style={styles.ArticleAd}>
-        <View style={{ alignSelf: "center" }}>
+  static renderRow(rowData) {
+    if (rowData.type === "ads") {
+      let ADS;
+      const singleADS = (
+        <Ad code={rowData.data.code} section={rowData.data.section} />
+      );
+      if (Platform.OS !== "web") {
+        ADS = singleADS;
+      } else {
+        ADS = (
           <AdComposer section="article" networkId="25436805">
-            <Ad code={code} />
+            {singleADS}
           </AdComposer>
+        );
+      }
+      return (
+        <View style={webStyles.ArticleAd}>
+          {ADS}
         </View>
-      </View>
-      <View style={styles.ArticleContainer}>
-        <View style={styles.ArticleHeader}>
-          {data.article.label
-            ? <View style={styles.ArticleLabel}>
-                <ArticleLabel title={data.article.label} color="#008347" />
-              </View>
+      );
+    }
+    if (rowData.type === "header") {
+      return (
+        <View style={[webStyles.ArticleBodyContainer, webStyles.ArticleHeader]}>
+          {rowData.data.label
+            ? <ArticleLabel title={rowData.data.label} color="#008347" />
             : null}
-          <View style={styles.ArticleHeadline}>
+          <View style={webStyles.ArticleHeadline}>
             <ArticleHeadline
-              title={data.article.title}
-              style={{ fontSize: 45, lineHeight: 45, color: "#333333" }}
+              title={rowData.data.title}
+              style={webStyles.ArticleHeadLineText}
             />
           </View>
-          <View style={styles.ArticleFlag}>
-            <NewArticleFlag />
+          <View style={webStyles.ArticleFlag}>
+            {rowData.data.newFlag
+              ? <View style={webStyles.ArticleFlagContainer}>
+                  <NewArticleFlag />
+                </View>
+              : null}
+            {rowData.data.updatedFlag
+              ? <View style={webStyles.ArticleFlagContainer}>
+                  <UpdatedArticleFlag />
+                </View>
+              : null}
+            {rowData.data.exclusiveFlag
+              ? <View style={webStyles.ArticleFlagContainer}>
+                  <ExclusiveArticleFlag />
+                </View>
+              : null}
+            {rowData.data.sponsoredFlag
+              ? <View style={webStyles.ArticleFlagContainer}>
+                  <SponsoredArticleFlag />
+                </View>
+              : null}
           </View>
         </View>
-        <View style={styles.ArticleMiddleContainer}>
-          <View style={styles.ArticleMeta}>
-            <View style={styles.Byline}>
-              <Text
-                style={{
-                  fontFamily: "GillSansMTStd-Medium",
-                  fontSize: 13,
-                  color: "#696969"
-                }}
-              >
-                Francis Elliott Political Editor Philip Aldrick Economics Editor
-                {" "}
-              </Text>
+      );
+    } else if (rowData.type === "middleContaner") {
+      // HACK
+      const TEMP_HTTPS_IMAGE_URL =
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F26cb2178-868c-11e7-9f10-c918952dd8f2.jpg?crop=1322%2C743%2C260%2C319&resize=685"; // eslint-disable-line
+      return (
+        <View
+          style={[
+            webStyles.ArticleBodyContainer,
+            { marginTop: 30, position: "relative" }
+          ]}
+        >
+          <View style={webStyles.ArticleMeta}>
+            <View style={[webStyles.ArticleMetaElement]}>
+              <ArticleByline ast={rowData.data.byline} />
             </View>
-            <View style={styles.DatePublication}>
+            <View style={[webStyles.ArticleMetaElement]}>
               <DatePublication
-                date={data.article.publishedTime}
-                publication={data.article.publicationName}
+                date={new Date(rowData.data.publishedTime)}
+                publication={rowData.data.publicationName}
               />
             </View>
           </View>
-          <View style={styles.ArticleContent}>
-            <View style={styles.LeadAsset}>
-              <View style={styles.ArticleMedia}>
-                <Image source={{ uri: data.article.leadAsset.crop.url }} />
-              </View>
-              <View>
-                <Caption
-                  text={data.article.leadAsset.caption}
-                  credits={data.article.leadAsset.credits}
-                />
-              </View>
+          <View style={webStyles.LeadAsset}>
+            <View style={webStyles.ArticleMedia}>
+              <Image source={{ uri: TEMP_HTTPS_IMAGE_URL }} />
             </View>
+            <Caption
+              text={rowData.data.leadAsset.caption}
+              credits={rowData.data.leadAsset.credits}
+            />
           </View>
         </View>
-        <View style={styles.ArticleBody}>
-          <View style={styles.ArticleContent}>
-            <View>
-              {builder({ ast: multiParagraph }).map(el =>
-                <View style={{ marginBottom: 1.7 }}>
-                  {React.cloneElement(el, {
-                    style: {
-                      fontFamily: "TimesDigital-Regular",
-                      lineHeight: 1.7,
-                      fontSize: 18,
-                      color: "#333"
-                    }
-                  })}
-                </View>
-              )}
-            </View>
-          </View>
+      );
+    } else if (rowData.type === "article_body_row") {
+      return (
+        <View style={[webStyles.ArticleBodyContainer, webStyles.ArticleText]}>
+          <Markup ast={[rowData.data]} />
         </View>
-      </View>
-    </View>
-  );
-};
+      );
+    }
 
-Article.propTypes = {
-  code: PropTypes.string,
+    return <Text> Unknown type </Text>;
+  }
+
+  render() {
+    if (this.props.data.loading) {
+      return <Text>Loading ....</Text>;
+    }
+
+    this.state = {
+      dataSource: ds.cloneWithRows(
+        ArticlePage.prepareDataForListView(this.props)
+      )
+    };
+    return (
+      <View style={webStyles.PageStyle}>
+        <View style={{ height: 50, backgroundColor: "yellow" }}>
+          <Text>
+            This is the header of the page
+          </Text>
+        </View>
+        <ListView
+          style={webStyles.ArticleContainer}
+          dataSource={this.state.dataSource}
+          renderRow={ArticlePage.renderRow}
+          initialListSize={10}
+          scrollRenderAheadDistance={10}
+          pageSize={1}
+        />
+      </View>
+    );
+  }
+}
+
+ArticlePage.propTypes = {
   data: PropTypes.shape({
     article: PropTypes.object,
     loading: PropTypes.boolean
   })
 };
 
-Article.defaultProps = {
-  code: "intervention",
-  id: "",
+ArticlePage.defaultProps = {
   data: {
-    loading: true,
-    article: {
-      title:
-        "Labour MPs urge Jeremy Corbyn to condemn Maduro’s Venezuela regime"
-    }
+    loading: true
   }
 };
 
-export default Article;
+export default ArticlePage;
