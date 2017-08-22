@@ -1,12 +1,13 @@
 package uk.co.news.rntbrightcovevideo;
 
+import android.content.res.Configuration;
 import android.util.Log;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
+import android.widget.RelativeLayout;
 
 import com.facebook.react.uimanager.ThemedReactContext;
 
-public class RNTBrightcoveView extends FrameLayout {
+public class RNTBrightcoveView extends RelativeLayout {
     public static final String TAG = RNTBrightcoveView.class.getSimpleName();
 
     private String mVideoId;
@@ -14,145 +15,78 @@ public class RNTBrightcoveView extends FrameLayout {
     private String mPolicyKey;
     private String mPlayerStatus;
     private Boolean mAutoplay;
-    private BlueView mPlayerView;
+    private BrightcovePlayerView mPlayerView;
     private ThemedReactContext mContext;
+
+    private android.os.Handler handler = new android.os.Handler();
 
     public RNTBrightcoveView(final ThemedReactContext context) {
         super(context);
 
         mContext = context;
 
-        this.setBackgroundColor(0xFF00FF00);
+        initVideo();
+
+        this.setBackgroundColor(0xFF000000);
     }
 
     @Override
-    protected void onLayout(boolean changed, int l, int t, int r, int b) {
-        Log.d(TAG, "onLayout");
+    protected void onConfigurationChanged(Configuration newConfig) {
+        Log.d(TAG, "onConfigurationChanged");
+
         this.removeAllViews();
+
         initVideo();
+
+        super.onConfigurationChanged(newConfig);
+    }
+
+    public BrightcovePlayerView getPlayerView() {
+        return mPlayerView;
     }
 
     public void setVideoId(final String videoId) {
         if (mVideoId == null) {
             mVideoId = videoId;
+            initVideo();
         }
     }
 
     public void setAccountId(final String accountId) {
         if (mAccountId == null) {
             mAccountId = accountId;
+            initVideo();
         }
     }
 
     public void setPolicyKey(final String policyKey) {
         if (mPolicyKey == null) {
             mPolicyKey = policyKey;
+            initVideo();
         }
     }
 
     public void setAutoplay(final Boolean autoplay) {
         if (mAutoplay == null) {
             mAutoplay = autoplay;
+            initVideo();
         }
     }
 
     private void initVideo() {
         if (parametersSet()) {
-            mPlayerView = new BlueView(mContext);
-
             Log.d(TAG, "adding player view");
 
-            ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams(1000, 1000);
+            mPlayerView = new BrightcovePlayerView(mContext);
 
-            this.addView(mPlayerView, layoutParams);
+            RNTBrightcoveView.this.addView(mPlayerView, new ViewGroup.LayoutParams(LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 
-            //mPlayerView.initVideo(mVideoId, mAccountId, mPolicyKey);
+            mPlayerView.initVideo(mVideoId, mAccountId, mPolicyKey, mAutoplay);
+
+            requestLayout();
+            invalidate();
         }
     }
-
-    /*
-        private void emitState() {
-            WritableMap event = Arguments.createMap();
-            event.putString("playerStatus", mPlayerStatus);
-            event.putString("playheadPosition", Float.toString((float) playheadPosition / 1000));
-            ReactContext reactContext = (ReactContext) getContext();
-            reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
-        }
-
-        private void emitError(Event e) {
-            WritableMap event = Arguments.createMap();
-            event.putString("code", e.properties.get("error_code").toString());
-            event.putString("message", e.toString());
-            ReactContext reactContext = (ReactContext) getContext();
-            reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topLoadingError", event);
-        }
-
-        private EventEmitter setupEventEmitter() {
-            EventEmitter eventEmitter = getEventEmitter();
-            eventEmitter.on(EventType.VIDEO_SIZE_KNOWN, new EventListener() {
-                @Override
-                public void processEvent(Event e) {
-                    fixVideoLayout();
-                }
-            });
-            eventEmitter.on(EventType.PLAY, onEvent("playing"));
-            eventEmitter.on(EventType.PAUSE, onEvent("paused"));
-            eventEmitter.on(EventType.SEEK_TO, new EventListener() {
-                @Override
-                public void processEvent(Event e) {
-                    emitState();
-                }
-            });
-            eventEmitter.on(EventType.ERROR, new EventListener() {
-                @Override
-                public void processEvent(Event e) {
-                    emitError(e);
-                }
-            });
-            return eventEmitter;
-        }
-    */
-
-
-
-
-/*
-
-
-
-
-    private EventListener onEvent(final String playerStatus) {
-        return new EventListener() {
-            @Override
-            public void processEvent(Event event) {
-                mPlayerStatus = playerStatus;
-                emitState();
-            }
-        };
-    }
-    */
-
-    private final Runnable mLayoutRunnable = new Runnable() {
-        @Override
-        public void run() {
-            measure(
-                    MeasureSpec.makeMeasureSpec(getWidth(), MeasureSpec.EXACTLY),
-                    MeasureSpec.makeMeasureSpec(getHeight(), MeasureSpec.EXACTLY)
-            );
-            layout(getLeft(), getTop(), getRight(), getBottom());
-        }
-    };
-
-    @Override
-    public void requestLayout() {
-        super.requestLayout();
-
-        // The toolbar relies on a measure + layout pass happening after it calls requestLayout().
-        // Without this, certain calls (e.g. setLogo) only take effect after a second invalidation.
-        post(mLayoutRunnable);
-    }
-
-
 
     private boolean parametersSet() {
         return mVideoId != null && mAccountId != null && mPolicyKey != null && mAutoplay != null;
