@@ -52,13 +52,7 @@ class ArticlePage extends React.Component {
     ]);
     // HACK for the byline
     Object.assign(ArticleMidContainer, {
-      byline: authorFixture,
-      leadAsset: {
-        crop: {
-          url:
-            "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F26cb2178-868c-11e7-9f10-c918952dd8f2.jpg?crop=1322%2C743%2C260%2C319&resize=685"
-        }
-      }
+      byline: authorFixture
     });
     const ArticleArray = Array.prototype.concat(
       [
@@ -116,6 +110,9 @@ class ArticlePage extends React.Component {
         </View>
       );
     } else if (rowData.type === "middleContaner") {
+      // HACK
+      const TEMP_HTTPS_IMAGE_URL =
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F26cb2178-868c-11e7-9f10-c918952dd8f2.jpg?crop=1322%2C743%2C260%2C319&resize=685"; // eslint-disable-line
       return (
         <View style={[styles.ArticleBodyContainer]}>
           <View style={styles.ArticleMeta}>
@@ -129,24 +126,20 @@ class ArticlePage extends React.Component {
               />
             </View>
           </View>
-          <View style={styles.ArticleContent}>
-            <View style={styles.LeadAsset}>
-              <View style={styles.ArticleMedia}>
-                <Image source={{ uri: rowData.data.leadAsset.crop.url }} />
-              </View>
-              <View>
-                <Caption
-                  text={rowData.data.leadAsset.caption}
-                  credits={rowData.data.leadAsset.credits}
-                />
-              </View>
+          <View style={styles.LeadAsset}>
+            <View style={styles.ArticleMedia}>
+              <Image source={{ uri: TEMP_HTTPS_IMAGE_URL }} />
             </View>
+            <Caption
+              text={rowData.data.leadAsset.caption}
+              credits={rowData.data.leadAsset.credits}
+            />
           </View>
         </View>
       );
     } else if (rowData.type === "article_body_row") {
       return (
-        <View style={[styles.ArticleBodyContainer]}>
+        <View style={[styles.ArticleBodyContainer, styles.ArticleText]}>
           <Markup ast={[rowData.data]} />
         </View>
       );
@@ -193,13 +186,8 @@ ArticlePage.propTypes = {
 };
 
 ArticlePage.defaultProps = {
-  id: "",
   data: {
-    loading: true,
-    article: {
-      title:
-        "Labour MPs urge Jeremy Corbyn to condemn Maduro’s Venezuela regime"
-    }
+    loading: true
   }
 };
 
