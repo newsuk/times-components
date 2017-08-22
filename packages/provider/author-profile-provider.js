@@ -60,8 +60,7 @@ const transformResponse = response => {
     return {
       data: Object.assign(
         {},
-        {
-          ...author,
+        Object.assign({}, author, {
           articles: {
             count: author.articles.count,
             list: author.articles.list.map(article => ({
@@ -69,7 +68,7 @@ const transformResponse = response => {
               publishedTime: new Date(article.publishedTime)
             }))
           }
-        },
+        }),
         {
           count: get(response, "data.author.articles.count"),
           pageSize: 10,

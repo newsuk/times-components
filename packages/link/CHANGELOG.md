@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.1"></a>
+## [0.3.1](https://github.com/newsuk/times-components/compare/@times-components/link@0.3.0...@times-components/link@0.3.1) (2017-08-22)
+
+
+
+
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/link@0.2.2...@times-components/link@0.3.0) (2017-08-22)
+
+
+### Features
+
+* author profile provider component ([57cbb79](https://github.com/newsuk/times-components/commit/57cbb79))
+
+
+
+
+<a name="0.2.2"></a>
+## [0.2.2](https://github.com/newsuk/times-components/compare/@times-components/link@0.2.1...@times-components/link@0.2.2) (2017-08-21)
+
+
+### Bug Fixes
+
+* link - add underline to links ([f1ee6c6](https://github.com/newsuk/times-components/commit/f1ee6c6))
+
+
+
+
 <a name="0.2.1"></a>
 ## [0.2.1](https://github.com/newsuk/times-components/compare/@times-components/link@0.2.0...@times-components/link@0.2.1) (2017-08-18)
 

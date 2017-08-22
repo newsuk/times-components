@@ -22,10 +22,9 @@ export default () =>
         </Text>
         <Ad code="intervention" section="article" />
         <Text style={{ color: "red" }}>
-          Class aptent taciti sociosqu ad
-          litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
-          non sem ut sapien viverra pharetra eu a nulla. Donec egestas ex quis
-          enim porttitor consequat.
+          Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+          per inceptos himenaeos. Curabitur non sem ut sapien viverra pharetra
+          eu a nulla. Donec egestas ex quis enim porttitor consequat.
         </Text>
       </ScrollView>
     )
@@ -47,12 +46,12 @@ export default () =>
         </Text>
         <Ad code="intervention" section="article" />
         <Text>
-          Donec convallis enim sit amet
-          elit pharetra, et aliquet augue blandit. Integer suscipit mollis
-          libero, et imperdiet nunc. Aenean eu lacus aliquam, ullamcorper ante
-          at, egestas orci. Aliquam finibus, nulla in convallis mollis, elit
-          nisi pretium neque, sed congue tortor erat vitae erat. Nulla eget
-          nulla rhoncus, sollicitudin ipsum et, volutpat ligula.
+          Donec convallis enim sit amet elit pharetra, et aliquet augue blandit.
+          Integer suscipit mollis libero, et imperdiet nunc. Aenean eu lacus
+          aliquam, ullamcorper ante at, egestas orci. Aliquam finibus, nulla in
+          convallis mollis, elit nisi pretium neque, sed congue tortor erat
+          vitae erat. Nulla eget nulla rhoncus, sollicitudin ipsum et, volutpat
+          ligula.
         </Text>
         <Ad code="intervention" section="article" />
         <Text>

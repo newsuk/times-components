@@ -7,11 +7,12 @@ exports[`renders correctly with children 1`] = `
   allowFontScaling={true}
   ellipsizeMode="tail"
   href="http://thetimes.co.uk"
+  onPress={[Function]}
   style={
     Array [
       Object {
         "color": "#069",
-        "textDecorationLine": "none",
+        "textDecorationLine": "underline",
       },
       Object {},
     ]
@@ -28,11 +29,12 @@ exports[`renders correctly with specifc styles 1`] = `
   allowFontScaling={true}
   ellipsizeMode="tail"
   href="http://thetimes.co.uk"
+  onPress={[Function]}
   style={
     Array [
       Object {
         "color": "#069",
-        "textDecorationLine": "none",
+        "textDecorationLine": "underline",
       },
       Object {
         "backgroundColor": "blue",

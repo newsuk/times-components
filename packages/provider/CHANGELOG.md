@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.1"></a>
+## [0.3.1](https://github.com/newsuk/times-components/compare/@times-components/provider@0.3.0...@times-components/provider@0.3.1) (2017-08-22)
+
+
+
+
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.2.8...@times-components/provider@0.3.0) (2017-08-22)
+
+
+### Features
+
+* author profile provider component ([57cbb79](https://github.com/newsuk/times-components/commit/57cbb79))
+
+
+
+
+<a name="0.2.8"></a>
+## [0.2.8](https://github.com/newsuk/times-components/compare/@times-components/provider@0.2.7...@times-components/provider@0.2.8) (2017-08-21)
+
+
+
+
+<a name="0.2.7"></a>
+## [0.2.7](https://github.com/newsuk/times-components/compare/@times-components/provider@0.2.6...@times-components/provider@0.2.7) (2017-08-21)
+
+
+
+
+<a name="0.2.6"></a>
+## [0.2.6](https://github.com/newsuk/times-components/compare/@times-components/provider@0.2.5...@times-components/provider@0.2.6) (2017-08-21)
+
+
+
+
 <a name="0.2.5"></a>
 ## [0.2.5](https://github.com/newsuk/times-components/compare/@times-components/provider@0.2.4...@times-components/provider@0.2.5) (2017-08-18)
 

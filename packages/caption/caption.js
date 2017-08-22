@@ -26,7 +26,10 @@ const Caption = ({ text, credits, style, children }) =>
   <View>
     {children}
     <View style={[defaultStyle.container, style.container]}>
-      {text && <Text style={[defaultStyle.text, style.text]}>{text}</Text>}
+      {text &&
+        <Text style={[defaultStyle.text, style.text]}>
+          {text}
+        </Text>}
       {credits &&
         <Text style={[defaultStyle.text, defaultStyle.credits, style.text]}>
           {credits.toUpperCase()}

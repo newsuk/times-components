@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with a single author 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "color": "#069",
+          "textDecorationLine": "underline",
+        },
+        Object {},
+      ]
+    }
+    url="profile/fiona-hamilton"
+  >
+    Fiona Hamilton
+  </Text>
+</Text>
+`;
+
+exports[`renders correctly with multiple authors, titles and texts 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "color": "#069",
+          "textDecorationLine": "underline",
+        },
+        Object {},
+      ]
+    }
+    url="profile/greg-hurst"
+  >
+    Greg Hurst
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={Object {}}
+  >
+    , Social Affairs Correspondent | Mark Bridge, Technology Correspondent | 
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "color": "#069",
+          "textDecorationLine": "underline",
+        },
+        Object {},
+      ]
+    }
+    url="profile/fiona-hamilton"
+  >
+    Fiona Hamilton
+  </Text>
+</Text>
+`;
+
+exports[`renders correctly with styles 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+      },
+      Object {
+        "color": "blue",
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "color": "#069",
+          "textDecorationLine": "underline",
+        },
+        Object {},
+      ]
+    }
+    url="profile/fiona-hamilton"
+  >
+    Fiona Hamilton
+  </Text>
+</Text>
+`;

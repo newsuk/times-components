@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.12"></a>
+## [0.3.12](https://github.com/newsuk/times-components/compare/@times-components/card@0.3.9...@times-components/card@0.3.12) (2017-08-22)
+
+
+
+
+<a name="0.3.11"></a>
+## [0.3.11](https://github.com/newsuk/times-components/compare/@times-components/card@0.3.9...@times-components/card@0.3.11) (2017-08-22)
+
+
+
+
+<a name="0.3.10"></a>
+## [0.3.10](https://github.com/newsuk/times-components/compare/@times-components/card@0.3.9...@times-components/card@0.3.10) (2017-08-21)
+
+
+
+
+<a name="0.3.9"></a>
+## [0.3.9](https://github.com/newsuk/times-components/compare/@times-components/card@0.3.8...@times-components/card@0.3.9) (2017-08-21)
+
+
+
+
+<a name="0.3.8"></a>
+## [0.3.8](https://github.com/newsuk/times-components/compare/@times-components/card@0.3.7...@times-components/card@0.3.8) (2017-08-21)
+
+
+### Bug Fixes
+
+* date-publication add enum for publication values ([98fa88e](https://github.com/newsuk/times-components/commit/98fa88e))
+
+
+
+
 <a name="0.3.7"></a>
 ## [0.3.7](https://github.com/newsuk/times-components/compare/@times-components/card@0.3.6...@times-components/card@0.3.7) (2017-08-18)
 

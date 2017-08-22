@@ -2,9 +2,12 @@ import React from "react";
 import { View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { action } from "@storybook/addon-actions";
-import Pagination from "./pagination";
+import Pagination, { withPageState } from "./pagination";
 
-const story = m => <View style={{ paddingTop: 20 }}>{m}</View>;
+const story = m =>
+  <View style={{ paddingTop: 20 }}>
+    {m}
+  </View>;
 
 storiesOf("Pagination", module)
   .add("First page", () =>
@@ -69,4 +72,20 @@ storiesOf("Pagination", module)
         onPrev={action("last-page-prev-compact")}
       />
     )
+  );
+
+const PageChanger = withPageState(Pagination);
+
+storiesOf("Pagination Helper", module)
+  .add("First page", () => story(<PageChanger page={1} count={60} />))
+  .add("Another page", () => story(<PageChanger page={2} count={60} />))
+  .add("Last page", () => story(<PageChanger page={3} count={60} />))
+  .add("First page without results information", () =>
+    story(<PageChanger page={1} count={60} compact />)
+  )
+  .add("Another page without results information", () =>
+    story(<PageChanger page={2} count={60} compact />)
+  )
+  .add("Last page without results information", () =>
+    story(<PageChanger page={3} count={60} compact />)
   );

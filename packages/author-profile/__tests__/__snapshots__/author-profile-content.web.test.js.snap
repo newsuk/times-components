@@ -1009,6 +1009,8 @@ exports[`renders profile 1`] = `
   image="https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg"
   jobTitle="Legal Editor"
   name="Fiona Hamilton"
+  onNext={[Function]}
+  onPrev={[Function]}
   page={1}
   pageSize={10}
   twitter="jdoe"
@@ -1209,87 +1211,82 @@ exports[`renders profile content 1`] = `
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
                 Array [
                   Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 15,
-                    "lineHeight": 20,
-                    "paddingBottom": 11,
-                    "paddingTop": 11,
-                    "textAlign": "center",
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 40,
+                    "justifyContent": "space-between",
+                  },
+                  Object {
+                    "justifyContent": "center",
                   },
                   null,
                 ]
               }
             >
-              Showing 1 - 10 of 24 results
-            </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 15,
+                    },
+                  ]
+                }
+              >
+                Showing 1 - 10 of 24 results
+              </Text>
+            </View>
             <View
               style={
-                Object {
-                  "borderBottomColor": "#dbdbdb",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "justifyContent": "space-between",
-                }
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 40,
+                    "justifyContent": "space-between",
+                  },
+                  Object {
+                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomWidth": 1,
+                    "borderStyle": "solid",
+                    "borderTopColor": "#dbdbdb",
+                    "borderTopWidth": 1,
+                  },
+                ]
               }
             >
               <View />
               <View>
-                <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
+                <Text
                   accessible={true}
-                  hasTVPreferredFocus={undefined}
-                  hitSlop={undefined}
-                  isTVSelectable={true}
-                  onLayout={undefined}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  onPress={[Function]}
                   style={
                     Array [
                       Object {
-                        "backgroundColor": "transparent",
+                        "color": "#069",
+                        "textDecorationLine": "underline",
                       },
-                      undefined,
-                    ]
-                  }
-                  testID={undefined}
-                  tvParallaxProperties={undefined}
-                >
-                  <Text
-                    accessibilityRole="link"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    href="https://www.thetimes.co.uk?page=3"
-                    onPress={[Function]}
-                    style={
                       Object {
                         "color": "#006699",
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 14,
-                        "lineHeight": 38,
-                      }
-                    }
-                  >
-                    Next page &gt;
-                  </Text>
-                </View>
+                      },
+                    ]
+                  }
+                  url="?page=2"
+                >
+                  Next page &gt;
+                </Text>
               </View>
             </View>
           </View>
@@ -4489,87 +4486,82 @@ exports[`renders profile content component 1`] = `
             }
           }
         >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          <View
             style={
               Array [
                 Object {
-                  "color": "#696969",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 15,
-                  "lineHeight": 20,
-                  "paddingBottom": 11,
-                  "paddingTop": 11,
-                  "textAlign": "center",
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "justifyContent": "center",
                 },
                 null,
               ]
             }
           >
-            Showing 1 - 10 of 24 results
-          </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 15,
+                  },
+                ]
+              }
+            >
+              Showing 1 - 10 of 24 results
+            </Text>
+          </View>
           <View
             style={
-              Object {
-                "borderBottomColor": "#dbdbdb",
-                "borderBottomWidth": 1,
-                "borderStyle": "solid",
-                "borderTopColor": "#dbdbdb",
-                "borderTopWidth": 1,
-                "flexDirection": "row",
-                "justifyContent": "space-between",
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#dbdbdb",
+                  "borderTopWidth": 1,
+                },
+              ]
             }
           >
             <View />
             <View>
-              <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
+              <Text
                 accessible={true}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
-                isTVSelectable={true}
-                onLayout={undefined}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                onPress={[Function]}
                 style={
                   Array [
                     Object {
-                      "backgroundColor": "transparent",
+                      "color": "#069",
+                      "textDecorationLine": "underline",
                     },
-                    undefined,
-                  ]
-                }
-                testID={undefined}
-                tvParallaxProperties={undefined}
-              >
-                <Text
-                  accessibilityRole="link"
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  href="https://www.thetimes.co.uk?page=3"
-                  onPress={[Function]}
-                  style={
                     Object {
                       "color": "#006699",
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 14,
-                      "lineHeight": 38,
-                    }
-                  }
-                >
-                  Next page &gt;
-                </Text>
-              </View>
+                    },
+                  ]
+                }
+                url="?page=2"
+              >
+                Next page &gt;
+              </Text>
             </View>
           </View>
         </View>
@@ -7711,6 +7703,27 @@ exports[`renders profile empty 1`] = `
 </Text>
 `;
 
+exports[`renders profile error 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    An error ocurred
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    {
+      "error": "error"
+    }
+  </Text>
+</View>
+`;
+
 exports[`renders profile header 1`] = `
 <View>
   <View
@@ -7903,87 +7916,82 @@ exports[`renders profile header 1`] = `
           }
         }
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
+        <View
           style={
             Array [
               Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 15,
-                "lineHeight": 20,
-                "paddingBottom": 11,
-                "paddingTop": 11,
-                "textAlign": "center",
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 40,
+                "justifyContent": "space-between",
+              },
+              Object {
+                "justifyContent": "center",
               },
               null,
             ]
           }
         >
-          Showing 1 - 10 of 24 results
-        </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 15,
+                },
+              ]
+            }
+          >
+            Showing 1 - 10 of 24 results
+          </Text>
+        </View>
         <View
           style={
-            Object {
-              "borderBottomColor": "#dbdbdb",
-              "borderBottomWidth": 1,
-              "borderStyle": "solid",
-              "borderTopColor": "#dbdbdb",
-              "borderTopWidth": 1,
-              "flexDirection": "row",
-              "justifyContent": "space-between",
-            }
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 40,
+                "justifyContent": "space-between",
+              },
+              Object {
+                "borderBottomColor": "#dbdbdb",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+                "borderTopColor": "#dbdbdb",
+                "borderTopWidth": 1,
+              },
+            ]
           }
         >
           <View />
           <View>
-            <View
-              accessibilityComponentType={undefined}
-              accessibilityLabel={undefined}
-              accessibilityTraits={undefined}
+            <Text
               accessible={true}
-              hasTVPreferredFocus={undefined}
-              hitSlop={undefined}
-              isTVSelectable={true}
-              onLayout={undefined}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              onPress={[Function]}
               style={
                 Array [
                   Object {
-                    "backgroundColor": "transparent",
+                    "color": "#069",
+                    "textDecorationLine": "underline",
                   },
-                  undefined,
-                ]
-              }
-              testID={undefined}
-              tvParallaxProperties={undefined}
-            >
-              <Text
-                accessibilityRole="link"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                href="https://www.thetimes.co.uk?page=3"
-                onPress={[Function]}
-                style={
                   Object {
                     "color": "#006699",
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 14,
-                    "lineHeight": 38,
-                  }
-                }
-              >
-                Next page &gt;
-              </Text>
-            </View>
+                  },
+                ]
+              }
+              url="?page=2"
+            >
+              Next page &gt;
+            </Text>
           </View>
         </View>
       </View>

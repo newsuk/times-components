@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.8"></a>
+## [0.2.8](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.2.7...@times-components/author-head@0.2.8) (2017-08-22)
+
+
+
+
+<a name="0.2.7"></a>
+## [0.2.7](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.2.6...@times-components/author-head@0.2.7) (2017-08-22)
+
+
+
+
+<a name="0.2.6"></a>
+## [0.2.6](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.2.5...@times-components/author-head@0.2.6) (2017-08-21)
+
+
+
+
+<a name="0.2.5"></a>
+## [0.2.5](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.2.4...@times-components/author-head@0.2.5) (2017-08-21)
+
+
+
+
 <a name="0.2.4"></a>
 ## [0.2.4](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.2.3...@times-components/author-head@0.2.4) (2017-08-18)
 
