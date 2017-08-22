@@ -162,7 +162,7 @@ class ArticlePage extends React.Component {
 
     this.state = {
       dataSource: ds.cloneWithRows(
-        ArticlePage.repareDataForListView(this.props)
+        ArticlePage.prepareDataForListView(this.props)
       )
     };
     return (
