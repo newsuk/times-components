@@ -189,6 +189,63 @@
     react-treebeard "^2.0.3"
     redux "^3.6.0"
 
+"@times-components/article-headline@0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@times-components/article-headline/-/article-headline-0.3.1.tgz#87eddc5335f2f5ed0ba8c811f49eed62be0fd813"
+  dependencies:
+    prop-types "15.5.10"
+    react-native-web "0.0.119"
+    react-style-proptype "3.0.0"
+
+"@times-components/article-summary@0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@times-components/article-summary/-/article-summary-0.2.4.tgz#ebefb13db0201c2f9fa76f19a67a95d4a7429efa"
+  dependencies:
+    "@times-components/date-publication" "0.0.5"
+    "@times-components/markup" "0.2.1"
+    date-fns "1.28.5"
+    prop-types "15.5.10"
+    react-native-web "0.0.119"
+    react-style-proptype "3.0.0"
+
+"@times-components/author-head@0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@times-components/author-head/-/author-head-0.2.2.tgz#4c5d654d5e82fc1c800dc86c7a7372e1dc887bea"
+  dependencies:
+    "@times-components/image" "1.1.1"
+    "@times-components/markup" "0.2.1"
+    prop-types "15.5.10"
+    react-native-web "0.0.119"
+
+"@times-components/author-profile@0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@times-components/author-profile/-/author-profile-0.4.2.tgz#646005d8d853c8646d7e6591fabdc62cb65bf74a"
+  dependencies:
+    "@times-components/author-head" "0.2.2"
+    "@times-components/card" "0.3.4"
+    "@times-components/pagination" "0.2.1"
+    jest-cli "20.0.4"
+    lodash.merge "4.6.0"
+    prop-types "15.5.10"
+    react-native-web "0.0.119"
+    react-style-proptype "3.0.0"
+
+"@times-components/card@0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@times-components/card/-/card-0.3.4.tgz#c67910ae3e159c68ce0c45fce564afe56f821d0a"
+  dependencies:
+    "@times-components/article-summary" "0.2.4"
+    "@times-components/image" "1.1.1"
+    react-native-web "0.0.119"
+
+"@times-components/date-publication@0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@times-components/date-publication/-/date-publication-0.0.5.tgz#5ca434ee8e9a3ad11413e2c5819dacfc3c21c196"
+  dependencies:
+    date-fns "1.28.5"
+    prop-types "15.5.10"
+    react-native-web "0.0.119"
+
 "@times-components/fructose@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-1.0.0.tgz#4acd4590ccfcae8815321d643d29b2b87300a498"
@@ -204,6 +261,40 @@
     server-destroy "^1.0.1"
     socket.io "2.0.3"
     socket.io-client "2.0.3"
+
+"@times-components/image@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@times-components/image/-/image-1.1.1.tgz#9c152d1577bbf2c4f9ce89a57e0d6105e5c9e833"
+  dependencies:
+    prop-types "15.5.10"
+    react-native-web "0.0.119"
+    react-style-proptype "3.0.0"
+
+"@times-components/markup@0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@times-components/markup/-/markup-0.2.1.tgz#b7d66469bc1409e220504715bdd86167061818b6"
+  dependencies:
+    prop-types "15.5.10"
+    react-native-web "0.0.119"
+
+"@times-components/pagination@0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@times-components/pagination/-/pagination-0.2.1.tgz#cb999c903285c88723e239df58110dfe319b48ce"
+  dependencies:
+    prop-types "15.5.10"
+    react-native-web "0.0.119"
+
+"@times-components/provider@0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@times-components/provider/-/provider-0.2.2.tgz#0f271981fd3f97f0db3ecc20704fe065018a2e5b"
+  dependencies:
+    "@times-components/author-profile" "0.4.2"
+    graphql-tag "2.4.2"
+    lodash.get "4.4.2"
+    lodash.pick "4.4.0"
+    prop-types "15.5.10"
+    react-apollo "1.4.14"
+    react-native-web "0.0.119"
 
 "@types/graphql@0.10.2":
   version "0.10.2"

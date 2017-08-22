@@ -56,6 +56,7 @@
     "@times-components/article-headline": "0.3.2",
     "@times-components/image": "1.1.1",
     "@times-components/provider": "0.3.0",
+    "@times-components/article-byline": "^0.1.0",
     "@times-components/article-flag": "0.3.1",
     "@times-components/article-label": "0.0.5",
     "@times-components/caption": "0.2.2",
@@ -71,10 +72,10 @@
   },
   "peerDependencies": {
     "@storybook/react-native": ">=3",
-    "storybook-addon-apollo-graphql": "0.1.2",
     "react": ">=15",
     "react-dom": ">=15",
-    "react-native": ">=0.42"
+    "react-native": ">=0.42",
+    "storybook-addon-apollo-graphql": "0.1.2"
   },
   "publishConfig": {
     "access": "public"
