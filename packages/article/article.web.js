@@ -34,10 +34,17 @@ const Article = props => {
       boxSizing: "border-box",
       marginBottom: 30
     },
-    ArticleBody: {
+    ArticleMiddleContainer: {
       flexDirection: "row",
       width: "58.33%",
       marginTop: 30,
+      marginRight: "auto",
+      marginBottom: 0,
+      marginLeft: "auto"
+    },
+    ArticleBody: {
+      flexDirection: "row",
+      width: "58.33%",
       marginRight: "auto",
       marginBottom: 0,
       marginLeft: "auto"
@@ -124,7 +131,7 @@ const Article = props => {
             <NewArticleFlag />
           </View>
         </View>
-        <View style={styles.ArticleBody}>
+        <View style={styles.ArticleMiddleContainer}>
           <View style={styles.ArticleMeta}>
             <View style={styles.Byline}>
               <Text
@@ -157,6 +164,10 @@ const Article = props => {
                 />
               </View>
             </View>
+          </View>
+        </View>
+        <View style={styles.ArticleBody}>
+          <View style={styles.ArticleContent}>
             <View>
               {builder({ ast: multiParagraph }).map(el =>
                 <View style={{ marginBottom: 1.7 }}>
