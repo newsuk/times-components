@@ -14,10 +14,6 @@ import com.brightcove.player.event.EventType;
 import com.brightcove.player.mediacontroller.BrightcoveMediaController;
 import com.brightcove.player.model.Video;
 import com.brightcove.player.view.BrightcoveExoPlayerVideoView;
-import com.facebook.react.bridge.Arguments;
-import com.facebook.react.bridge.ReactContext;
-import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.uimanager.events.RCTEventEmitter;
 
 public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
 
@@ -47,32 +43,18 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
         eventEmitter.on(EventType.SEEK_TO, new EventListener() {
             @Override
             public void processEvent(Event e) {
-                emitState();
+                ((RNTBrightcoveView) BrightcovePlayerView.this.getParent()).emitState();
             }
         });
         eventEmitter.on(EventType.ERROR, new EventListener() {
             @Override
             public void processEvent(Event e) {
-                emitError(e);
+                //emitError(e);
+
+                ((RNTBrightcoveView) BrightcovePlayerView.this.getParent()).emitError(e);
             }
         });
         return eventEmitter;
-    }
-
-    private void emitState() {
-        WritableMap event = Arguments.createMap();
-        event.putString("playerStatus", mPlayerStatus);
-        event.putString("playheadPosition", Float.toString((float) playheadPosition / 1000));
-        ReactContext reactContext = (ReactContext) getContext();
-        reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
-    }
-
-    private void emitError(Event e) {
-        WritableMap event = Arguments.createMap();
-        event.putString("code", e.properties.get("error_code").toString());
-        event.putString("message", e.toString());
-        ReactContext reactContext = (ReactContext) getContext();
-        reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topLoadingError", event);
     }
 
     public void initVideo(String videoId, String accountId, String policyKey, Boolean autoplay) {
@@ -89,7 +71,7 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
             @Override
             public void processEvent(Event event) {
                 mPlayerStatus = playerStatus;
-                emitState();
+                ((RNTBrightcoveView) BrightcovePlayerView.this.getParent()).emitState();
             }
         };
     }
@@ -130,6 +112,14 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
                 leftOffset + surfaceW,
                 topOffset + surfaceH
         );
+    }
+
+    public String getPlayerStatus() {
+        return mPlayerStatus;
+    }
+
+    public float getPlayheadPosition() {
+        return playheadPosition;
     }
 
 }

@@ -5,7 +5,12 @@ import android.util.Log;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
+import com.brightcove.player.event.Event;
+import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.ReactContext;
+import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.uimanager.ThemedReactContext;
+import com.facebook.react.uimanager.events.RCTEventEmitter;
 
 public class RNTBrightcoveView extends RelativeLayout {
     public static final String TAG = RNTBrightcoveView.class.getSimpleName();
@@ -13,20 +18,16 @@ public class RNTBrightcoveView extends RelativeLayout {
     private String mVideoId;
     private String mAccountId;
     private String mPolicyKey;
-    private String mPlayerStatus;
     private Boolean mAutoplay;
     private BrightcovePlayerView mPlayerView;
     private ThemedReactContext mContext;
 
-    private android.os.Handler handler = new android.os.Handler();
+    private float mSavedPlayheadPosition;
+    private String mSavedPlayerStatus;
 
     public RNTBrightcoveView(final ThemedReactContext context) {
         super(context);
-
         mContext = context;
-
-        initVideo();
-
         this.setBackgroundColor(0xFF000000);
     }
 
@@ -34,9 +35,12 @@ public class RNTBrightcoveView extends RelativeLayout {
     protected void onConfigurationChanged(Configuration newConfig) {
         Log.d(TAG, "onConfigurationChanged");
 
+        mSavedPlayerStatus = mPlayerView.getPlayerStatus();
+        mSavedPlayheadPosition = mPlayerView.getPlayheadPosition();
+
         this.removeAllViews();
 
-        initVideo();
+        initPlayerView();
 
         super.onConfigurationChanged(newConfig);
     }
@@ -48,32 +52,32 @@ public class RNTBrightcoveView extends RelativeLayout {
     public void setVideoId(final String videoId) {
         if (mVideoId == null) {
             mVideoId = videoId;
-            initVideo();
+            initPlayerView();
         }
     }
 
     public void setAccountId(final String accountId) {
         if (mAccountId == null) {
             mAccountId = accountId;
-            initVideo();
+            initPlayerView();
         }
     }
 
     public void setPolicyKey(final String policyKey) {
         if (mPolicyKey == null) {
             mPolicyKey = policyKey;
-            initVideo();
+            initPlayerView();
         }
     }
 
     public void setAutoplay(final Boolean autoplay) {
         if (mAutoplay == null) {
             mAutoplay = autoplay;
-            initVideo();
+            initPlayerView();
         }
     }
 
-    private void initVideo() {
+    private void initPlayerView() {
         if (parametersSet()) {
             Log.d(TAG, "adding player view");
 
@@ -86,6 +90,23 @@ public class RNTBrightcoveView extends RelativeLayout {
             requestLayout();
             invalidate();
         }
+    }
+
+    public void emitState() {
+        WritableMap event = Arguments.createMap();
+        event.putString("playerStatus", mPlayerView.getPlayerStatus());
+        event.putString("playheadPosition", Float.toString(mPlayerView.getPlayheadPosition() / 1000));
+
+        ReactContext reactContext = (ReactContext) getContext();
+        reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
+    }
+
+    public void emitError(Event e) {
+        WritableMap event = Arguments.createMap();
+        event.putString("code", e.properties.get("error_code").toString());
+        event.putString("message", e.toString());
+        ReactContext reactContext = (ReactContext) getContext();
+        reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topLoadingError", event);
     }
 
     private boolean parametersSet() {
