@@ -37,8 +37,12 @@ const ArticleSummary = props => {
   const labelText = label && label.toUpperCase && label.toUpperCase();
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>{labelText}</Text>
-      <Text style={styles.headline}>{headline}</Text>
+      <Text style={styles.label}>
+        {labelText}
+      </Text>
+      <Text style={styles.headline}>
+        {headline}
+      </Text>
       <Text style={styles.text}>
         {builder({ ast })}
       </Text>
