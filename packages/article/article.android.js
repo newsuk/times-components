@@ -1,97 +1,27 @@
 import React from "react";
-import { Text, View, StyleSheet, ListView } from "react-native";
+import { Text, View, ListView } from "react-native";
 import PropTypes from "prop-types";
-// import Ad, { AdComposer } from "@times-components/ad";
-import { NewArticleFlag } from "@times-components/article-flag";
+import Ad from "@times-components/ad"; // , { AdComposer }
+import {
+  NewArticleFlag,
+  SponsoredArticleFlag,
+  UpdatedArticleFlag,
+  ExclusiveArticleFlag
+} from "@times-components/article-flag";
 import ArticleLabel from "@times-components/article-label";
 import ArticleHeadline from "@times-components/article-headline";
 import DatePublication from "@times-components/date-publication";
 import Image from "@times-components/image";
-// import Caption from "@times-components/caption";
+import Caption from "@times-components/caption";
 import Markup from "@times-components/markup";
+import ArticleByline from "@times-components/article-byline";
 import pick from "lodash.pick";
 
-const multiParagraph = require("./fixtures/multi-para.json").fixture;
+import styles from "./article-style";
 
-const styles = StyleSheet.create({
-  Container: {},
-  ArticleContainer: {
-    flexDirection: "column",
-    // boxSizing: "border-box",
-    paddingLeft: 20,
-    paddingRight: 20,
-    paddingTop: 15
-  },
-  LeadAsset: {
-    position: "relative",
-    // boxSizing: "border-box",
-    marginBottom: 30
-  },
-  ArticleBody: {
-    flexDirection: "row",
-    width: "58.33%",
-    marginTop: 30,
-    alignSelf: "center",
-    // marginRight: "auto",
-    marginBottom: 0
-    // marginLeft: "auto"
-  },
-  ArticleBodyChildContainer: {
-    // boxSizing: "border-box"
-  },
-  ArticleHeader: {
-    width: "58.33333%",
-    alignSelf: "center"
-    // margin: "auto"
-  },
-  ArticleHeadline: {},
-  ArticleFlag: {
-    marginTop: 6,
-    marginBottom: 3
-  },
-  ArticleLabel: {},
-  ArticleMeta: {
-    flex: 1,
-    width: "35.71429%",
-    // boxSizing: "border-box",
-    top: 0,
-    left: "-35.714%",
-    position: "absolute",
-    paddingRight: 20
-  },
-  DatePublication: {
-    width: "90%",
-    borderTopColor: "#DBDBDB",
-    borderTopWidth: 1,
-    // borderTopStyle: "solid",
-    paddingTop: 6,
-    paddingBottom: 6
-  },
-  Byline: {
-    width: "90%",
-    borderTopColor: "#DBDBDB",
-    borderTopWidth: 1,
-    // borderTopStyle: "solid",
-    paddingTop: 6,
-    paddingBottom: 6
-  },
-  ArticleContent: {
-    flex: 3,
-    flexDirection: "column"
-  },
-  ArticleAd: {
-    borderBottomWidth: 1,
-    // borderBottomStyle: "solid",
-    paddingBottom: 15,
-    paddingTop: 15,
-    // boxSizing: "border-box",
-    borderBottomColor: "#DBDBDB"
-  },
-  ArticleMedia: {
-    backgroundColor: "#EFEFEF"
-  },
-  ArticleCaption: {}
-});
+const multiParagraph = require("./fixtures/multi-para.json").fixture;
+const authorFixture = require("./fixtures/author.json").singleTextAuthor;
+
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 
 class ArticlePage extends React.Component {
@@ -99,21 +29,40 @@ class ArticlePage extends React.Component {
   //   super(props);
   //  }
 
-  static genRows(props) {
+  static prepareDataForListView(props) {
     const Article = props.data.article;
+    const AdsData = { code: "intervention", section: "article" };
     const ArticleHeader = pick(Article, [
       "id",
       "title",
       "publicationName",
       "label"
+      // NOTE flag fields are missed from the api
+      // ...
     ]);
+    // HACK for the flags
+    Object.assign(ArticleHeader, { newFlag: true, sponsoredFlag: true });
+
     const ArticleMidContainer = pick(Article, [
       "publicationName",
       "publishedTime",
       "leadAsset"
+      // NOTE byline field is missed from the api
+      // byline
     ]);
+    // HACK for the byline
+    Object.assign(ArticleMidContainer, {
+      byline: authorFixture,
+      leadAsset: {
+        crop: {
+          url:
+            "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F26cb2178-868c-11e7-9f10-c918952dd8f2.jpg?crop=1322%2C743%2C260%2C319&resize=685"
+        }
+      }
+    });
     const ArticleArray = Array.prototype.concat(
       [
+        { type: "ads", data: AdsData },
         { type: "header", data: ArticleHeader },
         { type: "middleContaner", data: ArticleMidContainer }
       ],
@@ -123,44 +72,57 @@ class ArticlePage extends React.Component {
   }
 
   static renderRow(rowData) {
+    if (rowData.type === "ads") {
+      return (
+        <View style={styles.ArticleAd}>
+          <Ad code={rowData.data.code} section={rowData.data.section} />
+        </View>
+      );
+    }
     if (rowData.type === "header") {
       return (
-        <View style={styles.ArticleHeader}>
+        <View style={[styles.ArticleBodyContainer, styles.ArticleHeader]}>
           {rowData.data.label
-            ? <View style={styles.ArticleLabel}>
-                <ArticleLabel title={rowData.data.label} color="#008347" />
-              </View>
+            ? <ArticleLabel title={rowData.data.label} color="#008347" />
             : null}
           <View style={styles.ArticleHeadline}>
             <ArticleHeadline
               title={rowData.data.title}
-              style={{ fontSize: 45, lineHeight: 45, color: "#333333" }}
+              style={styles.ArticleHeadLineText}
             />
           </View>
           <View style={styles.ArticleFlag}>
-            <NewArticleFlag />
+            {rowData.data.newFlag
+              ? <View style={styles.ArticleFlagContainer}>
+                  <NewArticleFlag />
+                </View>
+              : null}
+            {rowData.data.updatedFlag
+              ? <View style={styles.ArticleFlagContainer}>
+                  <UpdatedArticleFlag />
+                </View>
+              : null}
+            {rowData.data.exclusiveFlag
+              ? <View style={styles.ArticleFlagContainer}>
+                  <ExclusiveArticleFlag />
+                </View>
+              : null}
+            {rowData.data.sponsoredFlag
+              ? <View style={styles.ArticleFlagContainer}>
+                  <SponsoredArticleFlag />
+                </View>
+              : null}
           </View>
         </View>
       );
     } else if (rowData.type === "middleContaner") {
-      const leadAssetUrl =
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F26cb2178-868c-11e7-9f10-c918952dd8f2.jpg?crop=1322%2C743%2C260%2C319&resize=685";
       return (
-        <View style={styles.ArticleMiddleContainer}>
+        <View style={[styles.ArticleBodyContainer]}>
           <View style={styles.ArticleMeta}>
-            <View style={styles.Byline}>
-              <Text
-                style={{
-                  fontFamily: "GillSansMTStd-Medium",
-                  fontSize: 13,
-                  color: "#696969"
-                }}
-              >
-                Francis Elliott Political Editor Philip Aldrick Economics Editor
-                {" "}
-              </Text>
+            <View style={[styles.ArticleMetaElement]}>
+              <ArticleByline ast={rowData.data.byline} />
             </View>
-            <View style={styles.DatePublication}>
+            <View style={[styles.ArticleMetaElement]}>
               <DatePublication
                 date={new Date(rowData.data.publishedTime)}
                 publication={rowData.data.publicationName}
@@ -170,14 +132,13 @@ class ArticlePage extends React.Component {
           <View style={styles.ArticleContent}>
             <View style={styles.LeadAsset}>
               <View style={styles.ArticleMedia}>
-                {/* <Image source={{ uri: `http:${rowData.data.leadAsset.crop.url}` }} /> */}
-                <Image source={{ uri: leadAssetUrl }} />
+                <Image source={{ uri: rowData.data.leadAsset.crop.url }} />
               </View>
               <View>
-                {/* <Caption
-                    text={rowData.data.leadAsset.caption}
-                    credits={rowData.data.leadAsset.credits}
-                  /> */}
+                <Caption
+                  text={rowData.data.leadAsset.caption}
+                  credits={rowData.data.leadAsset.credits}
+                />
               </View>
             </View>
           </View>
@@ -185,13 +146,9 @@ class ArticlePage extends React.Component {
       );
     } else if (rowData.type === "article_body_row") {
       return (
-        //   <View style={styles.ArticleBody}>
-        //     <View style={styles.ArticleContent}>
-        <View style={{ marginBottom: 1.7 }}>
+        <View style={[styles.ArticleBodyContainer]}>
           <Markup ast={[rowData.data]} />
         </View>
-        //     </View>
-        //   </View>
       );
     }
 
@@ -204,14 +161,21 @@ class ArticlePage extends React.Component {
     }
 
     this.state = {
-      dataSource: ds.cloneWithRows(this.genRows(this.props))
+      dataSource: ds.cloneWithRows(
+        ArticlePage.prepareDataForListView(this.props)
+      )
     };
     return (
-      <View>
+      <View style={styles.PageStyle}>
+        <View style={{ height: 50, backgroundColor: "yellow" }}>
+          <Text>
+            This is the header of the page
+          </Text>
+        </View>
         <ListView
           style={styles.ArticleContainer}
           dataSource={this.state.dataSource}
-          renderRow={this.renderRow}
+          renderRow={ArticlePage.renderRow}
           initialListSize={10}
           scrollRenderAheadDistance={10}
           pageSize={1}
@@ -222,7 +186,6 @@ class ArticlePage extends React.Component {
 }
 
 ArticlePage.propTypes = {
-  // code: PropTypes.string,
   data: PropTypes.shape({
     article: PropTypes.object,
     loading: PropTypes.boolean
@@ -230,7 +193,6 @@ ArticlePage.propTypes = {
 };
 
 ArticlePage.defaultProps = {
-  // code: "intervention",
   id: "",
   data: {
     loading: true,

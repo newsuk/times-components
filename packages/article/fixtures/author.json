@@ -1,0 +1,18 @@
+{
+    "singleTextAuthor": [
+      {
+        "name": "span",
+        "attributes": {},
+        "children": [
+          {
+            "name": "text",
+            "children": [
+              {
+                "text": ", Social Affairs Correspondent | Mark Bridge, Technology Correspondent | "
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
