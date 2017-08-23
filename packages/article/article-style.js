@@ -1,7 +1,18 @@
 import { StyleSheet, Platform } from "react-native";
 
+const globalStyle = StyleSheet.create({
+  CaptionWrapper: {
+    paddingLeft: 10,
+    paddingRight: 10
+  },
+  Standfirst: {
+    fontFamily: "TimesDigital-Regular"
+  }
+});
+
 const webStyles = StyleSheet.create({
-  ArticleContainer: {
+  // padding for each row execpt for the ads
+  ArticleMainContentRow: {
     paddingLeft: 20,
     paddingRight: 20
   },
@@ -13,13 +24,13 @@ const webStyles = StyleSheet.create({
     paddingTop: 15,
     borderBottomColor: "#DBDBDB"
   },
+  ArticleMiddleContainer: {
+    marginTop: 30
+  },
   ArticleBodyContainer: {
     width: "58.33333%",
     marginLeft: "auto",
     marginRight: "auto"
-  },
-  ArticleMiddleContainer: {
-    marginTop: 30
   },
   ArticleHeader: {
     paddingTop: 15
@@ -33,6 +44,7 @@ const webStyles = StyleSheet.create({
     color: "#333333",
     marginBottom: 0
   },
+  Standfirst: {},
   ArticleFlag: {
     marginTop: 6,
     marginBottom: 3
@@ -52,7 +64,7 @@ const webStyles = StyleSheet.create({
     paddingBottom: 6
   },
   LeadAsset: {
-    marginBottom: 30
+    // marginBottom: 30
   },
   ArticleTextWrapper: {
     // backgroundColor: "red"
@@ -74,12 +86,15 @@ const nativeStyles = StyleSheet.create({
     paddingTop: 15,
     borderBottomColor: "#DBDBDB"
   },
-  ArticleBodyContainer: {
+  ArticleMainContentRow: {
     paddingLeft: 10,
     paddingRight: 10
   },
+  ArticleMiddleContainer: {
+    marginTop: 20
+  },
   ArticleHeader: {
-    paddingTop: 15
+    // paddingTop: 15
   },
   ArticleHeadline: {
     marginBottom: 15
@@ -90,6 +105,7 @@ const nativeStyles = StyleSheet.create({
     color: "#333333",
     marginBottom: 0
   },
+  Standfirst: {},
   ArticleFlag: {
     marginTop: 6,
     marginBottom: 3
@@ -111,11 +127,12 @@ const nativeStyles = StyleSheet.create({
     // color: "#333"
   },
   ArticleTextWrapper: {
-    marginBottom: 1.7
+    marginBottom: 20
+    // backgroundColor: "yellow"
   },
   ArticleTextElement: {
     fontFamily: "TimesDigital-Regular",
-    lineHeight: 10,
+    lineHeight: 20,
     fontSize: 18,
     color: "#333"
   }
@@ -124,9 +141,9 @@ const nativeStyles = StyleSheet.create({
 const styles = {};
 
 if (Platform.OS === "android" || Platform.OS === "ios") {
-  Object.assign(styles, nativeStyles);
+  Object.assign(styles, globalStyle, nativeStyles);
 } else {
-  Object.assign(styles, webStyles);
+  Object.assign(styles, globalStyle, webStyles);
 }
 
 export default styles;
