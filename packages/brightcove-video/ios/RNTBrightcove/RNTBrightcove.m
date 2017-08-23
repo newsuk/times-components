@@ -86,9 +86,7 @@
     controlsView.durationLabel.accessibilityIdentifier = @"duration";
     controlsView.screenModeButton.accessibilityIdentifier = @"screen-mode";
     
-    if ([_hideFullScreenButtonNumber boolValue]) {
-      [controlsView.screenModeButton removeFromSuperview];
-    }
+    [controlsView.screenModeButton setHidden:[_hideFullScreenButtonNumber boolValue]];
 
     BCOVPUIPlayerViewOptions *options = [[BCOVPUIPlayerViewOptions alloc] init];
 
