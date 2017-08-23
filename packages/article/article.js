@@ -25,40 +25,40 @@ const authorFixture = require("./fixtures/author.json").singleTextAuthor;
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 
 class ArticlePage extends React.Component {
-  // constructor (props) {
-  //   super(props);
-  //  }
-
   static prepareDataForListView(props) {
-    const Article = props.data.article;
-    const AdsData = { code: "intervention", section: "article" };
-    const ArticleHeader = pick(Article, [
+    const articleData = props.data.article;
+    const adsData = { code: "intervention", section: "article" };
+    const leadAssetData = pick(articleData, ["leadAsset"]);
+    const articleHeaderData = pick(articleData, [
       "id",
-      "title",
-      "publicationName",
-      "label"
-      // NOTE flag fields are missed from the api
-      // ...
+      "label",
+      "title"
+      // NOTE flag and standfirst fields are missed from the api
     ]);
-    // HACK for the flags
-    Object.assign(ArticleHeader, { newFlag: true, sponsoredFlag: true });
 
-    const ArticleMidContainer = pick(Article, [
+    // HACK for the flags and standfirst
+    Object.assign(articleHeaderData, {
+      standfirst: "Cras mattis consectetur purus sit amet fermentum",
+      newFlag: true,
+      sponsoredFlag: true
+    });
+
+    const articleMidContainerData = pick(articleData, [
       "publicationName",
-      "publishedTime",
-      "leadAsset"
+      "publishedTime"
       // NOTE byline field is missed from the api
       // byline
     ]);
     // HACK for the byline
-    Object.assign(ArticleMidContainer, {
+    Object.assign(articleMidContainerData, {
       byline: authorFixture
     });
     const ArticleArray = Array.prototype.concat(
       [
-        { type: "ads", data: AdsData },
-        { type: "header", data: ArticleHeader },
-        { type: "middleContaner", data: ArticleMidContainer }
+        { type: "ads", data: adsData },
+        { type: "leadAsset", data: leadAssetData },
+        { type: "header", data: articleHeaderData },
+        { type: "middleContaner", data: articleMidContainerData }
       ],
       multiParagraph.map(i => ({ type: "article_body_row", data: i }))
     );
@@ -85,10 +85,24 @@ class ArticlePage extends React.Component {
           {ADS}
         </View>
       );
-    }
-    if (rowData.type === "header") {
+    } else if (rowData.type === "leadAsset") {
+      // HACK at the moment graphql just support http image (we need https for the mobile)
+      const TEMP_HTTPS_IMAGE_URL =
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F26cb2178-868c-11e7-9f10-c918952dd8f2.jpg?crop=1322%2C743%2C260%2C319&resize=685"; // eslint-disable-line
       return (
-        <View style={[styles.ArticleBodyContainer, styles.ArticleHeader]}>
+        <View style={styles.LeadAsset}>
+          <Image source={{ uri: TEMP_HTTPS_IMAGE_URL }} />
+          <View style={styles.CaptionWrapper}>
+            <Caption
+              text={rowData.data.leadAsset.caption}
+              credits={rowData.data.leadAsset.credits}
+            />
+          </View>
+        </View>
+      );
+    } else if (rowData.type === "header") {
+      return (
+        <View style={[styles.ArticleMainContentRow, styles.ArticleHeader]}>
           {rowData.data.label
             ? <ArticleLabel title={rowData.data.label} color="#008347" />
             : null}
@@ -97,6 +111,7 @@ class ArticlePage extends React.Component {
               title={rowData.data.title}
               style={styles.ArticleHeadLineText}
             />
+            <Text style={styles.Standfirst}>{rowData.data.standfirst}</Text>
           </View>
           <View style={styles.ArticleFlag}>
             {rowData.data.newFlag
@@ -123,12 +138,9 @@ class ArticlePage extends React.Component {
         </View>
       );
     } else if (rowData.type === "middleContaner") {
-      // HACK
-      const TEMP_HTTPS_IMAGE_URL =
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F26cb2178-868c-11e7-9f10-c918952dd8f2.jpg?crop=1322%2C743%2C260%2C319&resize=685"; // eslint-disable-line
       return (
         <View
-          style={[styles.ArticleBodyContainer, styles.ArticleMiddleContainer]}
+          style={[styles.ArticleMainContentRow, styles.ArticleMiddleContainer]}
         >
           <View style={styles.ArticleMeta}>
             <View style={[styles.ArticleMetaElement]}>
@@ -141,22 +153,13 @@ class ArticlePage extends React.Component {
               />
             </View>
           </View>
-          <View style={styles.LeadAsset}>
-            <View style={styles.ArticleMedia}>
-              <Image source={{ uri: TEMP_HTTPS_IMAGE_URL }} />
-            </View>
-            <Caption
-              text={rowData.data.leadAsset.caption}
-              credits={rowData.data.leadAsset.credits}
-            />
-          </View>
         </View>
       );
     } else if (rowData.type === "article_body_row") {
       return (
         <View
           className="markup-wrapper-outer"
-          style={[styles.ArticleBodyContainer, styles.ArticleText]}
+          style={[styles.ArticleMainContentRow, styles.ArticleText]}
         >
           {builder({ ast: [rowData.data], wrapIn: "p" }).map(el =>
             <View className="markup-wrapper" style={styles.ArticleTextWrapper}>
@@ -183,14 +186,13 @@ class ArticlePage extends React.Component {
       )
     };
     return (
-      <View style={styles.PageStyle}>
+      <View>
         <View style={{ height: 50, backgroundColor: "yellow" }}>
           <Text>
             This is the header of the page
           </Text>
         </View>
         <ListView
-          style={styles.ArticleContainer}
           dataSource={this.state.dataSource}
           renderRow={ArticlePage.renderRow}
           initialListSize={10}
