@@ -27,8 +27,8 @@ class BrightcoveVideo extends Component {
 
     this.onChange = this.onChange.bind(this);
     this.onError = this.onError.bind(this);
-    this.componentWillUnmount = this.componentWillUnmount.bind(this);
     this.handleAppStateChange = this.handleAppStateChange.bind(this);
+    this.handlePlayerRef = this.handlePlayerRef.bind(this);
 
     this.publicMethods = {
       play: this.play.bind(this),
@@ -45,9 +45,14 @@ class BrightcoveVideo extends Component {
   }
 
   onChange(evt) {
-    this.props.onChange(evt.nativeEvent);
-
-    this.setState({ playing: evt.nativeEvent.playerStatus === "playing" });
+    if (evt.nativeEvent.fullScreenState === "FULL_SCREEN") {
+      this.props.onGoFullScreen();
+    } else if (evt.nativeEvent.fullScreenState === "NORMAL_SCREEN") {
+      this.props.onExitFullScreen();
+    } else {
+      this.props.onChange(evt.nativeEvent);
+      this.setState({ playing: evt.nativeEvent.playerStatus === "playing" });
+    }
   }
 
   onError(evt) {
@@ -87,14 +92,16 @@ class BrightcoveVideo extends Component {
     this.props.runNativeCommand("pause", []);
   }
 
+  handlePlayerRef(ref) {
+    this.bcPlayer = ref;
+  }
+
   render() {
     const NativeBrightcove = BrightcoveVideo.getNativeBrightcoveComponent();
 
     return (
       <NativeBrightcove
-        ref={ref => {
-          this.bcPlayer = ref;
-        }}
+        ref={this.handlePlayerRef}
         style={{ height: this.props.height, width: this.props.width }}
         policyKey={this.props.policyKey}
         accountId={this.props.accountId}
