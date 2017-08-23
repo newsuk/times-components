@@ -11,9 +11,14 @@ exports[`brightcove-video web component renders correctly 1`] = `
     data-embed="default"
     data-player="default"
     data-video-id="[VIDEO_ID]"
-    height={180}
     id="[VIDEO_ID]-[ACCOUNT_ID]-1"
-    width={320}
+    poster="http://image-host.com/aBc.jpeg"
+    style={
+      Object {
+        "height": {180},
+        "width": {320},
+      }
+    }
   />
 </div>
 `;
