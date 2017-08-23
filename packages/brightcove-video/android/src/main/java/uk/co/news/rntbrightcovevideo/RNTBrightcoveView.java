@@ -19,6 +19,7 @@ public class RNTBrightcoveView extends RelativeLayout {
     private String mAccountId;
     private String mPolicyKey;
     private Boolean mAutoplay;
+    private Boolean mHideFullScreenButton;
     private BrightcovePlayerView mPlayerView;
     private ThemedReactContext mContext;
 
@@ -76,17 +77,26 @@ public class RNTBrightcoveView extends RelativeLayout {
         }
     }
 
+    public void setHideFullScreenButton(final Boolean hideFullScreenButton) {
+        if (mHideFullScreenButton == null) {
+            mHideFullScreenButton = hideFullScreenButton;
+            initPlayerView();
+        }
+    }
+
     private void initPlayerView() {
         if (parametersSet()) {
             Log.d(TAG, "adding player view");
 
             mPlayerView = new BrightcovePlayerView(mContext);
 
+            boolean isFullscreenButtonHidden = mHideFullScreenButton != null ? mHideFullScreenButton : false;
+
             RNTBrightcoveView.this.addView(mPlayerView, new ViewGroup.LayoutParams(LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 
             mPlayerView.setStartPlayheadPosition(mSavedPlayheadPosition);
 
-            mPlayerView.initVideo(mVideoId, mAccountId, mPolicyKey, mAutoplay);
+            mPlayerView.initVideo(mVideoId, mAccountId, mPolicyKey, mAutoplay, isFullscreenButtonHidden);
 
             requestLayout();
             invalidate();
@@ -110,6 +120,6 @@ public class RNTBrightcoveView extends RelativeLayout {
     }
 
     private boolean parametersSet() {
-        return mVideoId != null && mAccountId != null && mPolicyKey != null && mAutoplay != null;
+        return mVideoId != null && mAccountId != null && mPolicyKey != null && mAutoplay != null && mHideFullScreenButton != null;
     }
 }

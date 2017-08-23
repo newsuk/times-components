@@ -14,5 +14,6 @@ export default {
   height: numberOrString,
   onError: PropTypes.func,
   onChange: PropTypes.func,
-  autoplay: PropTypes.bool
+  autoplay: PropTypes.bool,
+  hideFullScreenButton: PropTypes.bool
 };

@@ -100,6 +100,7 @@ class BrightcoveVideo extends Component {
         accountId={this.props.accountId}
         videoId={this.props.videoId}
         autoplay={this.props.autoplay}
+        hideFullScreenButton={this.props.hideFullScreenButton}
         onChange={this.onChange}
         onLoadingError={this.onError} // android handler seems to be reserved on iOS
         onIOSError={this.onError} // so we use this instead

@@ -47,6 +47,11 @@ public class RNTBrightcoveManager extends SimpleViewManager<RNTBrightcoveView> {
         mView.setAutoplay(autoplay);
     }
 
+    @ReactProp(name = "hideFullScreenButton")
+    public void setHideFullScreenButton(RNTBrightcoveView view, Boolean hideFullScreenButton) {
+        mView.setHideFullScreenButton(hideFullScreenButton);
+    }
+
     @Override
     public void receiveCommand(RNTBrightcoveView view, int commandId, @Nullable ReadableArray args) {
         switch (commandId) {
