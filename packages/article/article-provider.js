@@ -1,6 +1,6 @@
 import connectGraphql from "@times-components/provider";
 import gql from "graphql-tag";
-import Article from "./article.android";
+import Article from "./article";
 
 const query = gql`
     query ArticleDataQuery($id: ID!) {

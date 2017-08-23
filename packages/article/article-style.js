@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Platform } from "react-native";
 
 const webStyles = StyleSheet.create({
   ArticleContainer: {
@@ -17,6 +17,9 @@ const webStyles = StyleSheet.create({
     width: "58.33333%",
     marginLeft: "auto",
     marginRight: "auto"
+  },
+  ArticleMiddleContainer: {
+    marginTop: 30
   },
   ArticleHeader: {
     paddingTop: 15
@@ -51,15 +54,20 @@ const webStyles = StyleSheet.create({
   LeadAsset: {
     marginBottom: 30
   },
-  ArticleText: {
-    color: "#333"
+  ArticleTextWrapper: {
+    // backgroundColor: "red"
   },
   ArticleTextElement: {
-    marginBottom: 1.7
+    fontFamily: "TimesDigital-Regular",
+    lineHeight: 1.7,
+    fontSize: 18,
+    color: "#333",
+    marginTop: 0,
+    marginBottom: 30
   }
 });
 
-const styles = StyleSheet.create({
+const nativeStyles = StyleSheet.create({
   ArticleAd: {
     borderBottomWidth: 1,
     paddingBottom: 15,
@@ -100,12 +108,25 @@ const styles = StyleSheet.create({
     marginBottom: 20
   },
   ArticleText: {
-    color: "#333"
+    // color: "#333"
+  },
+  ArticleTextWrapper: {
+    marginBottom: 1.7
   },
   ArticleTextElement: {
-    marginBottom: 1.7
+    fontFamily: "TimesDigital-Regular",
+    lineHeight: 10,
+    fontSize: 18,
+    color: "#333"
   }
 });
 
+const styles = {};
+
+if (Platform.OS === "android" || Platform.OS === "ios") {
+  Object.assign(styles, nativeStyles);
+} else {
+  Object.assign(styles, webStyles);
+}
+
 export default styles;
-export { webStyles };
