@@ -63,6 +63,7 @@ Properties types are defined in `./brightcove-video.proptypes.js`
 | `onError` | function | Handle errors
 | `onChange` | function |
 | `autoplay` | boolean | Should the video autoplay
+| `hideFullScreenButton` | boolean | Should the full screen button be hidden
 
 ## Usage
 

@@ -3,6 +3,7 @@ package uk.co.news.rntbrightcovevideo;
 import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.SurfaceView;
+import android.view.View;
 
 import com.brightcove.player.edge.Catalog;
 import com.brightcove.player.edge.VideoListener;
@@ -27,11 +28,14 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
     private String mPolicyKey;
     private String mPlayerStatus;
     private Boolean mAutoplay;
+    private Boolean mHideFullScreenButton;
 
     public RNTBrightcoveView(final ThemedReactContext context) {
         super(context);
         finishInitialization();
-        this.setMediaController(new BrightcoveMediaController(this));
+
+        BrightcoveMediaController mc = new BrightcoveMediaController(this);
+        this.setMediaController(mc);
     }
 
     public void setVideoId(final String videoId) {
@@ -58,6 +62,13 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
     public void setAutoplay(final Boolean autoplay) {
         if (mAutoplay == null) {
             mAutoplay = autoplay;
+            initVideo();
+        }
+    }
+
+    public void setHideFullScreenButton(final Boolean hideFullScreenButton) {
+        if (mHideFullScreenButton == null) {
+            mHideFullScreenButton = hideFullScreenButton;
             initVideo();
         }
     }
@@ -105,6 +116,10 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
 
     private void initVideo() {
         if (parametersSet()) {
+            boolean isHidden = mHideFullScreenButton != null ? mHideFullScreenButton : false;
+            View fullScreenButton = this.findViewById(com.brightcove.player.R.id.full_screen);
+            fullScreenButton.setVisibility(isHidden ? View.GONE : View.VISIBLE);
+
             EventEmitter eventEmitter = setupEventEmitter();
 
             Catalog catalog = new Catalog(eventEmitter, mAccountId, mPolicyKey);
@@ -160,6 +175,6 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
     }
 
     private boolean parametersSet() {
-        return mVideoId != null && mAccountId != null && mPolicyKey != null && mAutoplay != null;
+        return mVideoId != null && mAccountId != null && mPolicyKey != null && mAutoplay != null && mHideFullScreenButton != null;
     }
 }

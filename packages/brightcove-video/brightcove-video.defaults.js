@@ -4,5 +4,6 @@ export default {
   playerId: "default",
   onError: () => {},
   onChange: () => {},
-  autoplay: false
+  autoplay: false,
+  hideFullScreenButton: false
 };
