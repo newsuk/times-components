@@ -11,7 +11,8 @@ import React from "react";
 import ArticleProvider from "./article-provider";
 
 const networkInterface = createNetworkInterface({
-  uri: "http://localhost:4000/graphql/"
+  // uri: "http://localhost:4000/graphql/"
+  uri: "http://10.25.51.0:4000/graphql/"
 });
 
 const client = new ApolloClient({
