@@ -10,6 +10,86 @@
           "name": "text",
           "children": [
             {
+              "text": "Some text is here "
+            }
+          ]
+        },
+        {
+          "name": "strong",
+          "attributes": {
+
+          },
+          "children": [
+            {
+              "name": "text",
+              "children": [
+                {
+                  "text": "and there is some "
+                }
+              ]
+            },
+            {
+              "name": "span",
+              "attributes": {
+
+              },
+              "children": [
+                {
+                  "name": "text",
+                  "children": [
+                    {
+                      "text": "more text "
+                    }
+                  ]
+                },
+                {
+                  "name": "span",
+                  "attributes": {
+
+                  },
+                  "children": [
+                    {
+                      "name": "text",
+                      "children": [
+                        {
+                          "text": "and in here"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "text",
+              "children": [
+                {
+                  "text": " after it too"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": " and here"
+            }
+          ]
+        }
+      ]
+    }
+    ,{
+      "name": "p",
+      "attributes": {
+
+      },
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
               "text": "George Osborne will today use a £10 billion windfall from a booming economy to offer voters a taste of post-austerity Britain as he kicks off the Conservatives’ election campaign."
             }
           ]
