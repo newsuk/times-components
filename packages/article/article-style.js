@@ -53,6 +53,9 @@ const webStyles = StyleSheet.create({
   },
   ArticleText: {
     color: "#333"
+  },
+  ArticleTextElement: {
+    marginBottom: 1.7
   }
 });
 
@@ -98,6 +101,9 @@ const styles = StyleSheet.create({
   },
   ArticleText: {
     color: "#333"
+  },
+  ArticleTextElement: {
+    marginBottom: 1.7
   }
 });
 

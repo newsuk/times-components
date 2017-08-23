@@ -13,7 +13,7 @@ import ArticleHeadline from "@times-components/article-headline";
 import DatePublication from "@times-components/date-publication";
 import Image from "@times-components/image";
 import Caption from "@times-components/caption";
-import Markup from "@times-components/markup";
+import { builder } from "@times-components/markup";
 import ArticleByline from "@times-components/article-byline";
 import pick from "lodash.pick";
 
@@ -153,7 +153,18 @@ class ArticlePage extends React.Component {
     } else if (rowData.type === "article_body_row") {
       return (
         <View style={[styles.ArticleBodyContainer, styles.ArticleText]}>
-          <Markup ast={[rowData.data]} />
+          {builder({ ast: [rowData.data] }).map(el =>
+            <View style={styles.ArticleTextElement}>
+              {React.cloneElement(el, {
+                style: {
+                  fontFamily: "TimesDigital-Regular",
+                  lineHeight: 1.7,
+                  fontSize: 18,
+                  color: "#333"
+                }
+              })}
+            </View>
+          )}
         </View>
       );
     }
