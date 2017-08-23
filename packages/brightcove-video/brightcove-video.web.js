@@ -174,7 +174,7 @@ class BrightcoveVideo extends Component {
 
   render() {
     /* eslint jsx-a11y/media-has-caption: "off" */
-    // Wrapping div required as brightcove adds siblings to the video tag
+    // Added a wrapping div as brightcove adds siblings to the video tag
     return (
       <div>
         <video
