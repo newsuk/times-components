@@ -116,10 +116,9 @@ public class RNTBrightcoveView extends BrightcoveExoPlayerVideoView {
 
     private void initVideo() {
         if (parametersSet()) {
-            if (mHideFullScreenButton) {
-                View fullScreenButton = this.findViewById(com.brightcove.player.R.id.full_screen);
-                fullScreenButton.setVisibility(View.GONE);
-            }
+            boolean isHidden = mHideFullScreenButton != null ? mHideFullScreenButton : false;
+            View fullScreenButton = this.findViewById(com.brightcove.player.R.id.full_screen);
+            fullScreenButton.setVisibility(isHidden ? View.GONE : View.VISIBLE);
 
             EventEmitter eventEmitter = setupEventEmitter();
 
