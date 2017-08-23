@@ -2,7 +2,9 @@
 
 import React from "react";
 import { View } from "react-native";
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { decorateAction } from "@storybook/addon-actions";
 
 import BrightcoveVideo from "./brightcove-video";
