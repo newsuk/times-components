@@ -96,7 +96,7 @@ storiesOf("BrightcoveVideo", module)
     <BrightcoveVideo
       width={320}
       height={200}
-      policyId={policyId}
+      policyKey={policyKey}
       poster="http://i.imgur.com/Pb5osPZ.jpg"
       videoId="1532562858001"
       accountId={accountId}
