@@ -2,9 +2,6 @@
   "name": "@times-components/image",
   "version": "1.1.2",
   "main": "image.js",
-  "main": "image.es5.js",
-  "jsnext:main": "image.js",
-  "module": "image.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
