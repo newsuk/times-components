@@ -56,11 +56,11 @@ public class RNTBrightcoveManager extends SimpleViewManager<RNTBrightcoveView> {
     public void receiveCommand(RNTBrightcoveView view, int commandId, @Nullable ReadableArray args) {
         switch (commandId) {
             case PLAY_VALUE:
-                view.getPlayerView().start();
+                view.play();
                 break;
 
             case PAUSE_VALUE:
-                view.getPlayerView().pause();
+                view.pause();
                 break;
 
             default:

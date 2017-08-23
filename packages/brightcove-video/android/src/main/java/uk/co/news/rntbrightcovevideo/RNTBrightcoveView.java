@@ -45,8 +45,12 @@ public class RNTBrightcoveView extends RelativeLayout {
         super.onConfigurationChanged(newConfig);
     }
 
-    public BrightcovePlayerView getPlayerView() {
-        return mPlayerView;
+    public void play() {
+        mPlayerView.start();
+    }
+
+    public void pause() {
+        mPlayerView.pause();
     }
 
     public void setVideoId(final String videoId) {
@@ -90,11 +94,11 @@ public class RNTBrightcoveView extends RelativeLayout {
 
             mPlayerView = new BrightcovePlayerView(mContext);
 
-            boolean isFullscreenButtonHidden = mHideFullScreenButton != null ? mHideFullScreenButton : false;
-
             RNTBrightcoveView.this.addView(mPlayerView, new ViewGroup.LayoutParams(LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 
             mPlayerView.setStartPlayheadPosition(mSavedPlayheadPosition);
+
+            boolean isFullscreenButtonHidden = mHideFullScreenButton != null ? mHideFullScreenButton : false;
 
             mPlayerView.initVideo(mVideoId, mAccountId, mPolicyKey, mAutoplay, isFullscreenButtonHidden);
 
