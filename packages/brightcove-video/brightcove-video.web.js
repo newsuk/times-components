@@ -179,7 +179,7 @@ class BrightcoveVideo extends Component {
       <div>
         <video
           id={this.state.id}
-          style={{width: this.props.width, height: this.props.height }}
+          style={{ width: this.props.width, height: this.props.height }}
           poster={this.props.poster}
           data-embed="default"
           data-video-id={this.props.videoId}
