@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider",
-  "version": "0.2.1",
+  "version": "0.3.1",
   "main": "provider.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -41,29 +41,31 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
-    "enzyme": "^2.9.1",
+    "enzyme": "2.9.1",
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
-    "nock": "^9.0.14",
-    "react-native": "0.44.1",
-    "react-test-renderer": "16.0.0-alpha.6",
-    "webpack": "2.6.1"
+    "nock": "9.0.14",
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
+    "react-native": "0.42.3",
+    "react-test-renderer": "15.4.2",
+    "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/author-profile": "0.4.1",
+    "@times-components/author-profile": "0.5.1",
+    "@times-components/pagination": "0.3.1",
     "graphql-tag": "2.4.2",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",
     "prop-types": "15.5.10",
-    "react": "16.0.0-alpha.6",
-    "react-apollo": "1.4.10",
-    "react-dom": "15.5.4",
-    "react-native-web": "0.0.97"
+    "react-apollo": "1.4.14",
+    "react-native-web": "0.0.119"
   },
   "peerDependencies": {
-    "@storybook/react-native": "3.1.6",
-    "react-native": "0.44.1",
-    "storybook-addon-apollo-graphql": "0.1.2"
+    "@storybook/react-native": ">=3",
+    "react": ">=15",
+    "react-dom": ">=15",
+    "react-native": ">=0.42"
   },
   "publishConfig": {
     "access": "public"

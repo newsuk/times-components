@@ -6,7 +6,6 @@ exports[`renders horizontal above breakpoint 1`] = `
   style={
     Array [
       Object {
-        "display": "flex",
         "flexDirection": "column",
       },
       Object {
@@ -23,7 +22,6 @@ exports[`renders horizontal above breakpoint 1`] = `
           "paddingBottom": 15,
         },
         Object {
-          "flexBasis": "auto",
           "flexGrow": 1,
           "flexShrink": 1,
         },
@@ -47,7 +45,6 @@ exports[`renders horizontal above breakpoint 1`] = `
     style={
       Array [
         Object {
-          "flexBasis": "auto",
           "flexGrow": 1,
           "flexShrink": 1,
         },
@@ -63,7 +60,7 @@ exports[`renders horizontal above breakpoint 1`] = `
       date={2017-07-01T14:32:00.000Z}
       headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT"
       label="Camilla Long"
-      publication="The Sunday Times"
+      publication="SUNDAYTIMES"
       text={
         Array [
           Object {
@@ -93,7 +90,6 @@ exports[`renders vertical by default 1`] = `
   style={
     Array [
       Object {
-        "display": "flex",
         "flexDirection": "column",
       },
       null,
@@ -108,7 +104,6 @@ exports[`renders vertical by default 1`] = `
           "paddingBottom": 15,
         },
         Object {
-          "flexBasis": "auto",
           "flexGrow": 1,
           "flexShrink": 1,
         },
@@ -143,7 +138,6 @@ exports[`renders vertical by default 1`] = `
     style={
       Array [
         Object {
-          "flexBasis": "auto",
           "flexGrow": 1,
           "flexShrink": 1,
         },
@@ -226,8 +220,7 @@ exports[`renders vertical by default 1`] = `
         }
       >
         Saturday July 01 2017
-        , 
-        The Sunday Times
+        , The Sunday Times
       </Text>
     </View>
   </View>

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/caption",
-  "version": "0.2.0",
+  "version": "0.2.3",
   "description": "Media caption component",
   "main": "caption.js",
   "scripts": {
@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/image": "1.1.0",
+    "@times-components/image": "1.1.1",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-loader": "7.0.0",
@@ -45,18 +45,21 @@
     "babel-preset-react-native": "1.9.2",
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
-    "react-test-renderer": "15.5.4",
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
+    "react-test-renderer": "15.4.2",
     "webpack": "3.3.0"
   },
   "dependencies": {
     "prop-types": "15.5.10",
-    "react": "16.0.0-alpha.6",
-    "react-dom": "15.5.4",
-    "react-native-web": "0.0.97"
+    "react-native-web": "0.0.119",
+    "react-style-proptype": "3.0.0"
   },
   "peerDependencies": {
-    "@storybook/react-native": "3.1.6",
-    "react-native": "0.44.1"
+    "@storybook/react-native": ">=3",
+    "react": ">=15",
+    "react-dom": ">=15",
+    "react-native": ">=0.42"
   },
   "publishConfig": {
     "access": "public"

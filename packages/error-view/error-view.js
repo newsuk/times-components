@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet, ViewPropTypes } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
+import ReactStyleProp from "react-style-proptype";
 
 const styles = StyleSheet.create({
   text: { color: "white" },
@@ -28,7 +29,7 @@ const errorPropType = PropTypes.shape({
 });
 ErrorView.defaultProps = { style: {} };
 ErrorView.propTypes = {
-  style: ViewPropTypes.style,
+  style: ReactStyleProp,
   errors: PropTypes.arrayOf(errorPropType).isRequired
 };
 export default ErrorView;

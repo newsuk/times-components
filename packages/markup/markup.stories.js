@@ -9,7 +9,10 @@ const multiParagraph = require("./fixtures/multi-paragraph.json").fixture;
 const mixture = require("./fixtures/tag-mixture.json").fixture;
 const bio = require("./fixtures/bio.json").fixture;
 
-const story = m => <View style={{ padding: 20 }}>{m}</View>;
+const story = m =>
+  <View style={{ padding: 20 }}>
+    {m}
+  </View>;
 
 storiesOf("Markup", module)
   .add("Multiple paragraphs", () => story(<Markup ast={multiParagraph} />))

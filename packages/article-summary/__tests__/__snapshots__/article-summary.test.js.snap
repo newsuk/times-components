@@ -52,6 +52,24 @@ exports[`renders an article-summary component 1`] = `
       }
     }
   />
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+        },
+        Object {},
+      ]
+    }
+  >
+    Thursday January 01 1970
+    
+  </Text>
 </View>
 `;
 
@@ -153,8 +171,7 @@ exports[`renders an article-summary component with content 1`] = `
     }
   >
     Saturday July 01 2017
-    , 
-    The Sunday Times
+    , The Sunday Times
   </Text>
 </View>
 `;

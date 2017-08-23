@@ -41,7 +41,7 @@ class GPT extends Component {
     this.props.adManager.unregisterAd(this.props.code);
   }
 
-  handleLayout(event, callback) {
+  handleLayout(event) {
     const width = event.nativeEvent.layout.width;
     if (this.state.width !== width) {
       const config = getSlotConfig(
@@ -49,7 +49,7 @@ class GPT extends Component {
         this.props.code,
         width
       );
-      this.setState({ config }, callback);
+      this.setState({ config });
     }
   }
 

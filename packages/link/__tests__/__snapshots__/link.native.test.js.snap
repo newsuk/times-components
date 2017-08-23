@@ -10,10 +10,12 @@ exports[`renders correctly with children 1`] = `
     Array [
       Object {
         "color": "#069",
+        "textDecorationLine": "underline",
       },
       Object {},
     ]
   }
+  url="http://thetimes.co.uk"
 >
   The Times
 </Text>
@@ -29,12 +31,14 @@ exports[`renders correctly with specifc styles 1`] = `
     Array [
       Object {
         "color": "#069",
+        "textDecorationLine": "underline",
       },
       Object {
         "backgroundColor": "blue",
       },
     ]
   }
+  url="http://thetimes.co.uk"
 >
   The Times
 </Text>

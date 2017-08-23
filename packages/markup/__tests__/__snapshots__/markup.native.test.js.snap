@@ -13,10 +13,15 @@ exports[`Markup Native renders a mixture of tags 1`] = `
       ellipsizeMode="tail"
       onPress={[Function]}
       style={
-        Object {
-          "color": "blue",
-        }
+        Array [
+          Object {
+            "color": "#069",
+            "textDecorationLine": "underline",
+          },
+          Object {},
+        ]
       }
+      url="http://www.google.com"
     >
       some link here
     </Text>
@@ -178,10 +183,15 @@ exports[`Markup Native renders the anchor tag 1`] = `
   ellipsizeMode="tail"
   onPress={[Function]}
   style={
-    Object {
-      "color": "blue",
-    }
+    Array [
+      Object {
+        "color": "#069",
+        "textDecorationLine": "underline",
+      },
+      Object {},
+    ]
   }
+  url="www.google.com"
 >
   some link here
 </Text>

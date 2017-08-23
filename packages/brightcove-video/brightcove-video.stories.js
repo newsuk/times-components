@@ -78,6 +78,7 @@ storiesOf("BrightcoveVideo", module)
         width={320}
         height={200}
         policyKey={policyKey}
+        videoId={videoId}
         accountId={accountId}
       />
       <BrightcoveVideo

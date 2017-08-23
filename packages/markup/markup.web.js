@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "@times-components/link";
 import Markup, { builder as mb } from "./markup-builder";
 import propTypes from "./markup-proptype";
 
@@ -13,10 +14,10 @@ const tagMap = new Map([
   [
     "a",
     {
-      tag: "a",
+      tag: Link,
       attrs({ href }) {
         return {
-          href
+          url: href
         };
       }
     }
@@ -40,6 +41,17 @@ const tagMap = new Map([
     {
       tag: "span",
       attrs() {}
+    }
+  ],
+  [
+    "author",
+    {
+      tag: Link,
+      attrs({ slug }) {
+        return {
+          url: `/profile/${slug}`
+        };
+      }
     }
   ],
   [

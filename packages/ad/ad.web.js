@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 
 import { Subscriber } from "react-broadcast";
 
-import AdComposer from "./ad-composer.web";
-import GPT from "./gpt.web";
+import AdComposer from "./ad-composer";
+import GPT from "./gpt";
 
 class Ad extends Component {
   renderGpt(adManager) {

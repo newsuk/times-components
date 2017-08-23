@@ -1,42 +1,44 @@
 import React from "react";
-import { StyleSheet, Text, TouchableHighlight, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import PropTypes from "prop-types";
+import Link from "@times-components/link";
+import withPageState from "./pagination-wrapper";
 
 const styles = StyleSheet.create({
-  compact: {
+  absolute: {
+    left: 0,
     position: "absolute",
-    right: 0,
-    left: 0
+    right: 0
   },
-  container: {
-    alignItems: "stretch",
-    display: "flex",
-    flexDirection: "column"
+  arrow: {
+    color: "#006699",
+    fontFamily: "GillSansMTStd-Medium",
+    fontSize: 14
   },
-  horizontal: {
-    display: "flex",
-    flexDirection: "row",
+  border: {
     borderBottomColor: "#dbdbdb",
     borderBottomWidth: 1,
     borderStyle: "solid",
     borderTopColor: "#dbdbdb",
-    borderTopWidth: 1,
-    justifyContent: "space-between"
+    borderTopWidth: 1
   },
-  arrows: {
-    color: "#006699",
-    fontFamily: "GillSansMTStd-Medium",
-    fontSize: 14,
-    lineHeight: 38
+  container: {
+    alignItems: "stretch",
+    flexDirection: "column"
+  },
+  horizontal: {
+    alignItems: "center",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    height: 40
   },
   label: {
     color: "#696969",
     fontFamily: "GillSansMTStd-Medium",
-    fontSize: 15,
-    lineHeight: 20,
-    textAlign: "center",
-    paddingBottom: 11,
-    paddingTop: 11
+    fontSize: 15
+  },
+  message: {
+    justifyContent: "center"
   }
 });
 
@@ -46,77 +48,107 @@ class Pagination extends React.Component {
   constructor(props) {
     super(props);
 
+    const {
+      count,
+      generatePageLink,
+      onNext,
+      onPrev,
+      page,
+      pageSize,
+      hideResults
+    } = props;
+
     this.state = {
-      isCompact: false
+      absolutePosition: false,
+      count,
+      generatePageLink,
+      onNext,
+      onPrev,
+      page,
+      pageSize,
+      hideResults
     };
 
     this.handleLayout = this.handleLayout.bind(this);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState(
+      Object.assign({}, nextProps, {
+        absolutePosition: this.state.absolutePosition
+      })
+    );
   }
 
   handleLayout({ nativeEvent }) {
     const { width } = nativeEvent.layout;
 
     return this.setState({
-      isCompact: shouldRenderOneLine(width)
+      absolutePosition: shouldRenderOneLine(width)
     });
   }
 
   render() {
     const {
-      compact,
       count,
-      nextPageLinking,
+      generatePageLink,
+      onNext,
+      onPrev,
       page,
       pageSize,
-      prevPageLinking,
-      onNext,
-      onPrev
-    } = this.props;
+      hideResults
+    } = this.state;
 
     const startResult = (page - 1) * pageSize + 1;
     const finalResult = Math.min(count, page * pageSize);
     const message = `Showing ${startResult} - ${finalResult} of ${count} results`;
 
-    const prevComponent = startResult > pageSize
-      ? <TouchableHighlight>
-          <Text
-            accessibilityRole="link"
-            href={prevPageLinking}
-            style={styles.arrows}
-            onPress={() => onPrev(prevPageLinking)}
+    const prevComponent =
+      startResult > pageSize
+        ? <Link
+            style={styles.arrow}
+            onPress={(...params) => onPrev(page - 1, ...params)}
+            url={generatePageLink(page - 1)}
           >
             {"< Previous page"}
-          </Text>
-        </TouchableHighlight>
-      : null;
+          </Link>
+        : null;
 
-    const nextComponent = finalResult < count
-      ? <TouchableHighlight>
-          <Text
-            accessibilityRole="link"
-            href={nextPageLinking}
-            style={styles.arrows}
-            onPress={() => onNext(nextPageLinking)}
+    const nextComponent =
+      finalResult < count
+        ? <Link
+            style={styles.arrow}
+            onPress={(...params) => onNext(page + 1, ...params)}
+            url={generatePageLink(page + 1)}
           >
             {"Next page >"}
-          </Text>
-        </TouchableHighlight>
-      : null;
+          </Link>
+        : null;
 
-    const messageComponent = !compact
-      ? <Text
-          style={[styles.label, this.state.isCompact ? styles.compact : null]}
+    const messageComponent = !hideResults
+      ? <View
+          style={[
+            styles.horizontal,
+            styles.message,
+            this.state.absolutePosition ? styles.absolute : null
+          ]}
         >
-          {message}
-        </Text>
+          <Text style={[styles.label]}>
+            {message}
+          </Text>
+        </View>
       : null;
 
     return (
       <View style={styles.container} onLayout={this.handleLayout}>
         {messageComponent}
-        <View style={styles.horizontal}>
-          <View>{prevComponent}</View>
-          <View>{nextComponent}</View>
+        <View style={[styles.horizontal, styles.border]}>
+          <View>
+            {prevComponent}
+          </View>
+          <View>
+            {nextComponent}
+          </View>
         </View>
       </View>
     );
@@ -124,24 +156,24 @@ class Pagination extends React.Component {
 }
 
 Pagination.propTypes = {
-  compact: PropTypes.bool,
   count: PropTypes.number.isRequired,
-  nextPageLinking: PropTypes.string,
+  generatePageLink: PropTypes.func,
+  onNext: PropTypes.func,
+  onPrev: PropTypes.func,
   page: PropTypes.number,
   pageSize: PropTypes.number,
-  prevPageLinking: PropTypes.string,
-  onNext: PropTypes.func,
-  onPrev: PropTypes.func
+  hideResults: PropTypes.bool
 };
 
 Pagination.defaultProps = {
-  compact: false,
-  nextPageLinking: null,
+  generatePageLink: page => `./${page}`,
+  onNext: () => {},
+  onPrev: () => {},
   page: 1,
   pageSize: 20,
-  prevPageLinking: null,
-  onNext: () => {},
-  onPrev: () => {}
+  hideResults: false
 };
 
 export default Pagination;
+
+export { withPageState };

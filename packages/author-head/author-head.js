@@ -8,7 +8,6 @@ import Markup from "@times-components/markup";
 const styles = StyleSheet.create({
   container: {
     width: "100%",
-    display: "flex",
     alignItems: "center",
     flexDirection: "column",
     backgroundColor: "#F9F8F3",
@@ -56,7 +55,6 @@ const styles = StyleSheet.create({
   wrapper: {
     alignItems: "center",
     backgroundColor: "transparent",
-    display: "flex",
     paddingBottom: 50
   }
 });

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "0.4.1",
+  "version": "0.5.1",
   "description": "Author info along with articles they have written",
   "main": "author-profile.js",
   "scripts": {
@@ -50,25 +50,27 @@
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
     "jsdom": "11.1.0",
-    "react-native": "0.44.1",
-    "react-test-renderer": "16.0.0-alpha.6",
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
+    "react-native": "0.42.3",
+    "react-test-renderer": "15.4.2",
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/author-head": "0.2.1",
-    "@times-components/card": "0.3.3",
-    "@times-components/pagination": "0.2.0",
+    "@times-components/author-head": "0.2.8",
+    "@times-components/card": "0.3.12",
+    "@times-components/pagination": "0.3.1",
     "jest-cli": "20.0.4",
     "lodash.merge": "4.6.0",
     "prop-types": "15.5.10",
-    "react": "16.0.0-alpha.6",
-    "react-dom": "15.5.4",
-    "react-native-web": "0.0.97",
+    "react-native-web": "0.0.119",
     "react-style-proptype": "3.0.0"
   },
   "peerDependencies": {
-    "@storybook/react-native": "3.0.0",
-    "react-native": "0.44.1"
+    "@storybook/react-native": ">=3",
+    "react": ">=15",
+    "react-dom": ">=15",
+    "react-native": ">=0.42"
   },
   "publishConfig": {
     "access": "public"

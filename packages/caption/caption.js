@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, ViewPropTypes, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
+import StylePropTypes from "react-style-proptype";
 
 const defaultStyle = StyleSheet.create({
   container: {
@@ -25,7 +26,10 @@ const Caption = ({ text, credits, style, children }) =>
   <View>
     {children}
     <View style={[defaultStyle.container, style.container]}>
-      <Text style={[defaultStyle.text, style.text]}>{text}</Text>
+      {text &&
+        <Text style={[defaultStyle.text, style.text]}>
+          {text}
+        </Text>}
       {credits &&
         <Text style={[defaultStyle.text, defaultStyle.credits, style.text]}>
           {credits.toUpperCase()}
@@ -34,17 +38,18 @@ const Caption = ({ text, credits, style, children }) =>
   </View>;
 
 Caption.defaultProps = {
+  text: null,
   credits: null,
   style: {},
   children: null
 };
 
 Caption.propTypes = {
-  text: PropTypes.string.isRequired,
+  text: PropTypes.string,
   credits: PropTypes.string,
   style: PropTypes.shape({
     text: Text.propTypes.style,
-    container: ViewPropTypes.style
+    container: StylePropTypes
   }),
   children: PropTypes.element
 };
