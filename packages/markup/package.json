@@ -48,7 +48,6 @@
     "react-native-web": "0.0.119"
   },
   "peerDependencies": {
-    "@storybook/react-native": ">=3",
     "react": ">=15",
     "react-dom": ">=15",
     "react-native": ">=0.42"

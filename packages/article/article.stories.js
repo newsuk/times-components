@@ -2,8 +2,9 @@
 
 import { View, Platform } from "react-native";
 import React from "react";
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
-import Article from "./article";
+import Article from "../article";
 
 const renderIframe = () => {
   if (Platform.OS !== "web") {

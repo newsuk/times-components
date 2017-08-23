@@ -67,7 +67,6 @@
     "react-style-proptype": "3.0.0"
   },
   "peerDependencies": {
-    "@storybook/react-native": ">=3",
     "react": ">=15",
     "react-dom": ">=15",
     "react-native": ">=0.42"

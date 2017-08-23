@@ -2,7 +2,9 @@
 
 import React from "react";
 import { TouchableWithoutFeedback, View, Text } from "react-native";
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { decorateAction } from "@storybook/addon-actions";
 import PropTypes from "prop-types";
 import StylePropTypes from "react-style-proptype";

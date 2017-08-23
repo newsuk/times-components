@@ -189,9 +189,9 @@
     react-treebeard "^2.0.3"
     redux "^3.6.0"
 
-"@times-components/fructose@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-1.0.0.tgz#4acd4590ccfcae8815321d643d29b2b87300a498"
+"@times-components/fructose@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-1.1.0.tgz#6d2e1e8126850e260316e65d83d2d5814fc58eb2"
   dependencies:
     babel-polyfill "^6.23.0"
     babel-preset-es2015 "^6.24.1"
