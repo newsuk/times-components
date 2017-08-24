@@ -4,9 +4,6 @@ const globalStyle = StyleSheet.create({
   CaptionWrapper: {
     paddingLeft: 10,
     paddingRight: 10
-  },
-  Standfirst: {
-    fontFamily: "TimesDigital-Regular"
   }
 });
 
@@ -44,7 +41,6 @@ const webStyles = StyleSheet.create({
     color: "#333333",
     marginBottom: 0
   },
-  Standfirst: {},
   ArticleFlag: {
     marginTop: 6,
     marginBottom: 3
@@ -80,18 +76,18 @@ const webStyles = StyleSheet.create({
 });
 
 const nativeStyles = StyleSheet.create({
-  ArticleAd: {
-    borderBottomWidth: 1,
-    paddingBottom: 15,
-    paddingTop: 15,
-    borderBottomColor: "#DBDBDB"
-  },
+  // ArticleAd: {
+  //   borderBottomWidth: 1,
+  //   paddingBottom: 15,
+  //   paddingTop: 15,
+  //   borderBottomColor: "#DBDBDB"
+  // },
   ArticleMainContentRow: {
     paddingLeft: 10,
     paddingRight: 10
   },
   ArticleMiddleContainer: {
-    marginTop: 20
+    marginTop: 19.5
   },
   ArticleHeader: {
     // paddingTop: 15
@@ -100,28 +96,36 @@ const nativeStyles = StyleSheet.create({
     marginBottom: 15
   },
   ArticleHeadLineText: {
-    fontSize: 45,
-    lineHeight: 45,
+    fontSize: 30,
+    lineHeight: 32,
     color: "#333333",
+    marginTop: 3,
     marginBottom: 0
   },
-  Standfirst: {},
-  ArticleFlag: {
-    marginTop: 6,
-    marginBottom: 3
+  StandFirst: {
+    fontSize: 21,
+    lineHeight: 23,
+    fontFamily: "TimesModern-Regular",
+    paddingBottom: 14
   },
-  ArticleFlagContainer: {},
+  ArticleFlag: {
+    marginBottom: 3,
+    flexDirection: "row"
+  },
+  ArticleFlagContainer: {
+    marginRight: 14
+  },
   ArticleMeta: {
     marginBottom: 10
   },
   ArticleMetaElement: {
-    borderTopColor: "#DBDBDB",
+    borderTopColor: "#d0cece",
     borderTopWidth: 1,
-    paddingTop: 6,
+    paddingTop: 5,
     paddingBottom: 6
   },
   LeadAsset: {
-    marginBottom: 20
+    marginBottom: 10
   },
   ArticleText: {
     // color: "#333"
@@ -131,7 +135,7 @@ const nativeStyles = StyleSheet.create({
     // backgroundColor: "yellow"
   },
   ArticleTextElement: {
-    fontFamily: "TimesDigital-Regular",
+    fontFamily: "TimesDigitalW04-Regular",
     lineHeight: 20,
     fontSize: 18,
     color: "#333"

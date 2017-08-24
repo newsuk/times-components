@@ -20,6 +20,7 @@ import pick from "lodash.pick";
 import styles from "./article-style";
 
 const multiParagraph = require("./fixtures/multi-para.json").fixture;
+const authorFixture = require("./fixtures/author.json").singleTextAuthor;
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 
@@ -45,9 +46,12 @@ class ArticlePage extends React.Component {
     const articleMidContainerData = pick(articleData, [
       "publicationName",
       "publishedTime",
-      "authorName"
+      "byline"
     ]);
-
+    // HACK for the byline
+    Object.assign(articleMidContainerData, {
+      byline: authorFixture
+    });
     const ArticleArray = Array.prototype.concat(
       [
         { type: "ads", data: adsData },
@@ -61,23 +65,12 @@ class ArticlePage extends React.Component {
   }
 
   static renderRow(rowData) {
-    if (rowData.type === "ads") {
-      let ADS;
-      const singleADS = (
-        <Ad code={rowData.data.code} section={rowData.data.section} />
-      );
-      if (Platform.OS !== "web") {
-        ADS = singleADS;
-      } else {
-        ADS = (
-          <AdComposer section="article" networkId="25436805">
-            {singleADS}
-          </AdComposer>
-        );
-      }
+    if (rowData.type === "ads" && Platform.OS === "web") {
       return (
         <View style={styles.ArticleAd}>
-          {ADS}
+          <AdComposer section="article" networkId="25436805">
+            <Ad code={rowData.data.code} section={rowData.data.section} />
+          </AdComposer>
         </View>
       );
     } else if (rowData.type === "leadAsset") {
@@ -108,8 +101,8 @@ class ArticlePage extends React.Component {
               title={rowData.data.title}
               style={styles.ArticleHeadLineText}
             />
-            <Text style={styles.Standfirst}>{rowData.data.standfirst}</Text>
           </View>
+          <Text style={styles.StandFirst}>{rowData.data.standfirst}</Text>
           <View style={styles.ArticleFlag}>
             {rowData.data.newFlag
               ? <View style={styles.ArticleFlagContainer}>
@@ -141,7 +134,7 @@ class ArticlePage extends React.Component {
         >
           <View style={styles.ArticleMeta}>
             <View style={[styles.ArticleMetaElement]}>
-              <ArticleByline ast={rowData.data.authorName} />
+              <ArticleByline ast={rowData.data.byline} />
             </View>
             <View style={[styles.ArticleMetaElement]}>
               <DatePublication
@@ -169,7 +162,7 @@ class ArticlePage extends React.Component {
       );
     }
 
-    return <Text> Unknown type </Text>;
+    return null;
   }
 
   render() {
@@ -183,7 +176,7 @@ class ArticlePage extends React.Component {
       )
     };
     return (
-      <View>
+      <View style={{ paddingBottom: 66 }}>
         <View
           className="navigation"
           style={{ height: 66, backgroundColor: "#003d58" }}
