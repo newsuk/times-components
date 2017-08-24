@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "image.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
