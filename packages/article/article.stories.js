@@ -14,7 +14,7 @@ const articleFixture = require("./fixtures/article.json").fixture;
 
 const networkInterface = createNetworkInterface({
   uri: "http://localhost:4000/graphql/"
-  // uri: "http://10.25.51.0:4000/graphql/"
+  // uri: "http://10.22.16.19:4000/graphql/"
 });
 
 const client = new ApolloClient({
