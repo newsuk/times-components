@@ -20,7 +20,6 @@ import pick from "lodash.pick";
 import styles from "./article-style";
 
 const multiParagraph = require("./fixtures/multi-para.json").fixture;
-const authorFixture = require("./fixtures/author.json").singleTextAuthor;
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 
@@ -33,7 +32,7 @@ class ArticlePage extends React.Component {
       "id",
       "label",
       "title"
-      // NOTE flag and standfirst fields are missed from the api
+      // NOTE flags and standfirst fields are missed from the api
     ]);
 
     // HACK for the flags and standfirst
@@ -45,14 +44,10 @@ class ArticlePage extends React.Component {
 
     const articleMidContainerData = pick(articleData, [
       "publicationName",
-      "publishedTime"
-      // NOTE byline field is missed from the api
-      // byline
+      "publishedTime",
+      "authorName"
     ]);
-    // HACK for the byline
-    Object.assign(articleMidContainerData, {
-      byline: authorFixture
-    });
+
     const ArticleArray = Array.prototype.concat(
       [
         { type: "ads", data: adsData },
@@ -92,12 +87,14 @@ class ArticlePage extends React.Component {
       return (
         <View style={styles.LeadAsset}>
           <Image source={{ uri: TEMP_HTTPS_IMAGE_URL }} />
-          <View style={styles.CaptionWrapper}>
-            <Caption
-              text={rowData.data.leadAsset.caption}
-              credits={rowData.data.leadAsset.credits}
-            />
-          </View>
+          {Platform.OS === "web"
+            ? <View style={styles.CaptionWrapper}>
+                <Caption
+                  text={rowData.data.leadAsset.caption}
+                  credits={rowData.data.leadAsset.credits}
+                />
+              </View>
+            : null}
         </View>
       );
     } else if (rowData.type === "header") {
@@ -144,7 +141,7 @@ class ArticlePage extends React.Component {
         >
           <View style={styles.ArticleMeta}>
             <View style={[styles.ArticleMetaElement]}>
-              <ArticleByline ast={rowData.data.byline} />
+              <ArticleByline ast={rowData.data.authorName} />
             </View>
             <View style={[styles.ArticleMetaElement]}>
               <DatePublication
@@ -187,9 +184,21 @@ class ArticlePage extends React.Component {
     };
     return (
       <View>
-        <View style={{ height: 50, backgroundColor: "yellow" }}>
-          <Text>
-            This is the header of the page
+        <View
+          className="navigation"
+          style={{ height: 66, backgroundColor: "#003d58" }}
+        >
+          <Text
+            style={{
+              fontFamily: "TimesModern-Bold",
+              fontSize: 20,
+              fontWeight: "bold",
+              color: "#fff",
+              textAlign: "center",
+              paddingTop: 31
+            }}
+          >
+            News
           </Text>
         </View>
         <ListView
