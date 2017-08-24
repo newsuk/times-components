@@ -15,6 +15,26 @@ it("renders vertical by default", () => {
   expect(tree).toMatchSnapshot();
 });
 
+it("renders without image", () => {
+  const noImageProps = Object.assign({}, props, {
+    image: null
+  });
+  const tree = renderer.create(<Card {...noImageProps} />).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders without image url", () => {
+  const noImageProps = Object.assign({}, props, {
+    image: {
+      uri: null
+    }
+  });
+  const tree = renderer.create(<Card {...noImageProps} />).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
 it("renders horizontal above breakpoint", () => {
   const wrapper = shallow(<Card {...props} />);
   wrapper.setState({
