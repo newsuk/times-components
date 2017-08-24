@@ -12,6 +12,7 @@ const query = gql`
             label
             authorName
             content
+            authorName
             leadAsset{
              ... on Image
                 {
