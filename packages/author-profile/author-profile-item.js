@@ -14,7 +14,9 @@ const AuthorProfileItem = item => {
     date: item.publishedTime,
     headline: item.title,
     image: {
-      uri: item.leadAsset ? item.leadAsset.crop.url : ""
+      uri:
+        (item.leadAsset && item.leadAsset.crop && item.leadAsset.crop.url) ||
+        null
     },
     text: item.teaser,
     label: item.label,
