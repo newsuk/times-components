@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
+import { action } from "@storybook/addon-actions";
 import AuthorProfile from "./author-profile";
 import example from "./example.json";
 
@@ -30,6 +31,7 @@ storiesOf("AuthorProfile", module)
         pageSize: 10,
         page: 1
       }),
+      onLinkPress: action("onLinkPress"),
       isLoading: false
     };
 

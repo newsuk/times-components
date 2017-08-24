@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet, Text, TouchableHighlight } from "react-native";
 import PropTypes from "prop-types";
 
 import Image from "@times-components/image";
@@ -42,6 +42,8 @@ const styles = StyleSheet.create({
     padding: 8,
     fontSize: 15,
     fontFamily: "GillSansMTStd-Medium",
+    // backgroundColor required for TouchableHighlight to look correct on press
+    backgroundColor: "#F9F8F3",
     color: "#069"
   },
   bio: {
@@ -60,7 +62,7 @@ const styles = StyleSheet.create({
 });
 
 const AuthorHead = props => {
-  const { name, title, twitter, bio, uri } = props;
+  const { name, title, twitter, bio, uri, onLinkPress } = props;
 
   return (
     <View style={styles.wrapper} pointerEvents="box-none">
@@ -71,9 +73,13 @@ const AuthorHead = props => {
         <Text accessibilityRole="heading" aria-level="2" style={styles.title}>
           {title.toLowerCase()}
         </Text>
-        <Text style={styles.twitter}>
-          {twitter}
-        </Text>
+        <TouchableHighlight
+          onPress={() => onLinkPress(`https://twitter.com/${twitter}`)}
+        >
+          <Text style={styles.twitter}>
+            {"@" + twitter}
+          </Text>
+        </TouchableHighlight>
         <Text style={styles.bio}>
           <Markup ast={bio} wrapIn="p" />
         </Text>
@@ -98,7 +104,8 @@ AuthorHead.propTypes = {
   title: PropTypes.string,
   uri: PropTypes.string,
   bio: Markup.propTypes.ast,
-  twitter: PropTypes.string
+  twitter: PropTypes.string,
+  onLinkPress: PropTypes.function
 };
 
 export default AuthorHead;

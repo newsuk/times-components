@@ -29,6 +29,7 @@ const AuthorProfileHeader = ({
   name,
   onNext,
   onPrev,
+  onLinkPress,
   pageSize,
   twitter
 }) => {
@@ -37,7 +38,8 @@ const AuthorProfileHeader = ({
     name,
     uri,
     title,
-    twitter
+    twitter,
+    onLinkPress
   };
 
   const paginationProps = {
@@ -70,6 +72,7 @@ AuthorProfileHeader.propTypes = {
   name: AuthorHead.propTypes.name,
   onNext: PropTypes.func,
   onPrev: PropTypes.func,
+  onLinkPress: PropTypes.func,
   page: Pagination.propTypes.page,
   pageSize: Pagination.propTypes.pageSize,
   twitter: AuthorHead.propTypes.twitter
