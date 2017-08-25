@@ -18,7 +18,7 @@ const story = m =>
 storiesOf("Markup", module)
   .add("Multiple paragraphs", () => story(<Markup ast={multiParagraph} />))
   .add("Mixture of tags", () => story(<Markup ast={mixture} />))
-  .add("Biography", () => story(<Markup ast={bio} wrapIn="p" />))
+  .add("Biography", () => story(<Markup ast={bio} wrapIn="paragraph" />))
   .add("Multiple children with styling", () =>
     story(
       <View>

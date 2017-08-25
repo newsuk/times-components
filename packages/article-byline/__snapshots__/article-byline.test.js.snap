@@ -75,14 +75,6 @@ exports[`renders correctly with multiple authors, titles and texts 1`] = `
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
-    style={Object {}}
-  >
-    , Social Affairs Correspondent | Mark Bridge, Technology Correspondent | 
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     onPress={[Function]}
     style={
       Array [

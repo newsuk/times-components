@@ -195,15 +195,7 @@ exports[`renders vertical by default 1`] = `
             "marginBottom": 10,
           }
         }
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-        >
-          A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
-        </Text>
-      </Text>
+      />
       <Text
         accessible={true}
         allowFontScaling={true}

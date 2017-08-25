@@ -9,10 +9,8 @@
       ]
     },
     {
-      "name": "i",
-      "attributes": {
-
-      },
+      "name": "italic",
+      "attributes": {},
       "children": [
         {
           "name": "text",
@@ -33,7 +31,7 @@
       ]
     },
     {
-      "name": "b",
+      "name": "bold",
       "children": [
         {
           "name": "text",

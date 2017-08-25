@@ -1,19 +1,15 @@
 {
   "fixture": [
     {
-      "name": "div",
-      "attributes": {
-
-      },
+      "name": "block",
+      "attributes": {},
       "children": [
         {
-          "name": "div",
-          "attributes": {
-
-          },
+          "name": "block",
+          "attributes": {},
           "children": [
             {
-              "name": "a",
+              "name": "link",
               "attributes": {
                 "href": "http://www.google.com"
               },
@@ -31,13 +27,12 @@
           ]
         },
         {
-          "name": "div",
+          "name": "block",
           "attributes": {},
           "children": [
             {
-              "name": "b",
-              "attributes": {
-              },
+              "name": "bold",
+              "attributes": {},
               "children": [
                 {
                   "name": "text",
@@ -52,13 +47,12 @@
           ]
         },
         {
-          "name": "div",
+          "name": "block",
           "attributes": {},
           "children": [
             {
-              "name": "i",
-              "attributes": {
-              },
+              "name": "italic",
+              "attributes": {},
               "children": [
                 {
                   "name": "text",
@@ -73,13 +67,12 @@
           ]
         },
         {
-          "name": "div",
+          "name": "block",
           "attributes": {},
           "children": [
             {
-              "name": "span",
-              "attributes": {
-              },
+              "name": "inline",
+              "attributes": {},
               "children": [
                 {
                   "name": "text",

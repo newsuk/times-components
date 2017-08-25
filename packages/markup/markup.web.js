@@ -5,14 +5,14 @@ import propTypes from "./markup-proptype";
 
 const tagMap = new Map([
   [
-    "p",
+    "paragraph",
     {
       tag: "p",
       attrs() {}
     }
   ],
   [
-    "a",
+    "link",
     {
       tag: Link,
       attrs({ href }) {
@@ -23,21 +23,21 @@ const tagMap = new Map([
     }
   ],
   [
-    "b",
+    "bold",
     {
       tag: "strong",
       attrs() {}
     }
   ],
   [
-    "i",
+    "italic",
     {
       tag: "em",
       attrs() {}
     }
   ],
   [
-    "span",
+    "inline",
     {
       tag: "span",
       attrs() {}
@@ -55,7 +55,7 @@ const tagMap = new Map([
     }
   ],
   [
-    "div",
+    "block",
     {
       tag: "div",
       attrs() {}

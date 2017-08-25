@@ -15,14 +15,14 @@ const styles = {
 
 const tagMap = new Map([
   [
-    "p",
+    "paragraph",
     {
       tag: Text,
       attrs() {}
     }
   ],
   [
-    "a",
+    "link",
     {
       tag: Link,
       attrs({ href }) {
@@ -33,7 +33,7 @@ const tagMap = new Map([
     }
   ],
   [
-    "b",
+    "bold",
     {
       tag: Text,
       attrs() {
@@ -44,7 +44,7 @@ const tagMap = new Map([
     }
   ],
   [
-    "i",
+    "italic",
     {
       tag: Text,
       attrs() {
@@ -55,7 +55,7 @@ const tagMap = new Map([
     }
   ],
   [
-    "span",
+    "inline",
     {
       tag: Text,
       attrs() {}
@@ -73,7 +73,7 @@ const tagMap = new Map([
     }
   ],
   [
-    "div",
+    "block",
     {
       tag: View,
       attrs() {},
