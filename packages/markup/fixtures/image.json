@@ -1,14 +1,12 @@
 {
   "fixture": [
     {
-      "name": "img",
+      "name": "image",
       "attributes": {
         "onerror": "eval(console.log('evil');)",
         "src": "http://example.com/image.jpg"
       },
-      "children": [
-
-      ]
+      "children": []
     }
   ]
 }

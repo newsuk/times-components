@@ -47,7 +47,7 @@ function astToMarkup(tagMap, key, wrapTextWith, [x, ...xs]) {
 }
 
 export const builder = tagMap => ({ ast, wrapIn }) =>
-  astToMarkup(tagMap, "0", tagMap.get(wrapIn || "div").wrapText, ast);
+  astToMarkup(tagMap, "0", tagMap.get(wrapIn || "block").wrapText, ast);
 
 export default function Markup({ ast, tagMap, wrapIn }) {
   const markup = builder(tagMap)({ ast, wrapIn });
@@ -56,7 +56,7 @@ export default function Markup({ ast, tagMap, wrapIn }) {
     return markup[0];
   }
 
-  return React.createElement(tagMap.get(wrapIn || "div").tag, {}, markup);
+  return React.createElement(tagMap.get(wrapIn || "block").tag, {}, markup);
 }
 
 Markup.propTypes = Object.assign({}, propTypes, {

@@ -41,7 +41,7 @@ exports[`renders profile 1`] = `
                       "name": "text",
                     },
                   ],
-                  "name": "em",
+                  "name": "italic",
                 },
                 Object {
                   "children": Array [
@@ -52,7 +52,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
             Object {
               "attributes": Object {},
@@ -66,7 +66,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
           ],
           "title": "British trio stopped on the way to join Isis",
@@ -106,7 +106,7 @@ exports[`renders profile 1`] = `
                       "name": "text",
                     },
                   ],
-                  "name": "em",
+                  "name": "italic",
                 },
                 Object {
                   "children": Array [
@@ -117,7 +117,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
             Object {
               "attributes": Object {},
@@ -131,7 +131,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
           ],
           "title": "British trio stopped on the way to join Isis",
@@ -171,7 +171,7 @@ exports[`renders profile 1`] = `
                       "name": "text",
                     },
                   ],
-                  "name": "em",
+                  "name": "italic",
                 },
                 Object {
                   "children": Array [
@@ -182,7 +182,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
             Object {
               "attributes": Object {},
@@ -196,7 +196,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
           ],
           "title": "British trio stopped on the way to join Isis",
@@ -236,7 +236,7 @@ exports[`renders profile 1`] = `
                       "name": "text",
                     },
                   ],
-                  "name": "em",
+                  "name": "italic",
                 },
                 Object {
                   "children": Array [
@@ -247,7 +247,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
             Object {
               "attributes": Object {},
@@ -261,7 +261,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
           ],
           "title": "British trio stopped on the way to join Isis",
@@ -290,7 +290,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
             Object {
               "attributes": Object {},
@@ -304,7 +304,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
           ],
           "title": "Gay and IVF couples ‘better at raising children’",
@@ -344,7 +344,7 @@ exports[`renders profile 1`] = `
                       "name": "text",
                     },
                   ],
-                  "name": "em",
+                  "name": "italic",
                 },
                 Object {
                   "children": Array [
@@ -355,7 +355,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
             Object {
               "attributes": Object {},
@@ -369,7 +369,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
           ],
           "title": "British trio stopped on the way to join Isis",
@@ -398,7 +398,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
             Object {
               "attributes": Object {},
@@ -412,7 +412,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
           ],
           "title": "Fourth Briton is seized trying to join Isis",
@@ -441,7 +441,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
             Object {
               "attributes": Object {},
@@ -455,7 +455,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
           ],
           "title": "Fourth Briton is seized trying to join Isis",
@@ -484,7 +484,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
             Object {
               "attributes": Object {},
@@ -498,7 +498,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
           ],
           "title": "Fourth Briton is seized trying to join Isis",
@@ -527,7 +527,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
             Object {
               "attributes": Object {},
@@ -541,7 +541,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
           ],
           "title": "Fourth Briton is seized trying to join Isis",
@@ -570,7 +570,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
             Object {
               "attributes": Object {},
@@ -584,7 +584,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
           ],
           "title": "Fourth Briton is seized trying to join Isis",
@@ -613,7 +613,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
             Object {
               "attributes": Object {},
@@ -627,7 +627,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
           ],
           "title": "Fourth Briton is seized trying to join Isis",
@@ -656,7 +656,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
             Object {
               "attributes": Object {},
@@ -670,7 +670,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
           ],
           "title": "Clash of interests tarnished the project",
@@ -699,7 +699,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
             Object {
               "attributes": Object {},
@@ -713,7 +713,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
           ],
           "title": "Giant brings out the stars for one last time",
@@ -753,7 +753,7 @@ exports[`renders profile 1`] = `
                       "name": "text",
                     },
                   ],
-                  "name": "em",
+                  "name": "italic",
                 },
                 Object {
                   "children": Array [
@@ -764,7 +764,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
             Object {
               "attributes": Object {},
@@ -778,7 +778,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
           ],
           "title": "Inquiry at sect schools that banned books",
@@ -807,7 +807,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
             Object {
               "attributes": Object {},
@@ -821,7 +821,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
           ],
           "title": "Top graduates drawn to jobs in social work",
@@ -861,7 +861,7 @@ exports[`renders profile 1`] = `
                       "name": "text",
                     },
                   ],
-                  "name": "em",
+                  "name": "italic",
                 },
                 Object {
                   "children": Array [
@@ -872,7 +872,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
           ],
           "title": "TMS: Pratchett’s law of the jungle",
@@ -912,7 +912,7 @@ exports[`renders profile 1`] = `
                       "name": "text",
                     },
                   ],
-                  "name": "em",
+                  "name": "italic",
                 },
                 Object {
                   "children": Array [
@@ -923,7 +923,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
             Object {
               "attributes": Object {},
@@ -937,7 +937,7 @@ exports[`renders profile 1`] = `
                   "name": "text",
                 },
               ],
-              "name": "p",
+              "name": "paragraph",
             },
           ],
           "title": "Learning by rote ‘will put pupils off poetry’",
@@ -967,7 +967,7 @@ exports[`renders profile 1`] = `
             "name": "text",
           },
         ],
-        "name": "b",
+        "name": "bold",
       },
       Object {
         "children": Array [
@@ -979,7 +979,7 @@ exports[`renders profile 1`] = `
       },
       Object {
         "attributes": Object {},
-        "name": "br",
+        "name": "break",
       },
       Object {
         "children": Array [
@@ -1001,7 +1001,7 @@ exports[`renders profile 1`] = `
             "name": "text",
           },
         ],
-        "name": "i",
+        "name": "italic",
       },
     ]
   }
@@ -1417,6 +1417,18 @@ exports[`renders profile content 1`] = `
                   ellipsizeMode="tail"
                 >
                   A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "fontStyle": "italic",
+                      }
+                    }
+                  >
+                    The Times
+                  </Text>
                    has learnt.
                 </Text>
                 <Text
@@ -1585,6 +1597,18 @@ exports[`renders profile content 1`] = `
                   ellipsizeMode="tail"
                 >
                   A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "fontStyle": "italic",
+                      }
+                    }
+                  >
+                    The Times
+                  </Text>
                    has learnt.
                 </Text>
                 <Text
@@ -1753,6 +1777,18 @@ exports[`renders profile content 1`] = `
                   ellipsizeMode="tail"
                 >
                   A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "fontStyle": "italic",
+                      }
+                    }
+                  >
+                    The Times
+                  </Text>
                    has learnt.
                 </Text>
                 <Text
@@ -1921,6 +1957,18 @@ exports[`renders profile content 1`] = `
                   ellipsizeMode="tail"
                 >
                   A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "fontStyle": "italic",
+                      }
+                    }
+                  >
+                    The Times
+                  </Text>
                    has learnt.
                 </Text>
                 <Text
@@ -2256,6 +2304,18 @@ exports[`renders profile content 1`] = `
                   ellipsizeMode="tail"
                 >
                   A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "fontStyle": "italic",
+                      }
+                    }
+                  >
+                    The Times
+                  </Text>
                    has learnt.
                 </Text>
                 <Text
@@ -3760,6 +3820,18 @@ exports[`renders profile content 1`] = `
                   ellipsizeMode="tail"
                 >
                   The funding of British faith schools run by an extreme religious sect is under investigation by the taxman over multi-million pound gift aid claims, 
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "fontStyle": "italic",
+                      }
+                    }
+                  >
+                    The Times
+                  </Text>
                    has learnt.
                 </Text>
                 <Text
@@ -4095,6 +4167,18 @@ exports[`renders profile content 1`] = `
                   ellipsizeMode="tail"
                 >
                   Terry Pratchett, who died last week, began his career on the 
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "fontStyle": "italic",
+                      }
+                    }
+                  >
+                    Bucks Free Press
+                  </Text>
                    in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job interview. The editor, impressed, told him: “I like the cut of your jib, young man.” As Pratchett, above, noted, he was “possibly the last person ever to say that without being arrested”. The author once told the paper that he learnt nothing more than to “spit and fight” at school but owed
                 </Text>
               </Text>
@@ -4256,6 +4340,18 @@ exports[`renders profile content 1`] = `
                   ellipsizeMode="tail"
                 >
                   Is poetry best when written down or is it nobler in the mind? Is it enough to read a great verse off the page, or is it 
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "fontStyle": "italic",
+                      }
+                    }
+                  >
+                    dulce et decorum
+                  </Text>
                    to recite it by heart?
                 </Text>
                 <Text
@@ -4693,6 +4789,18 @@ exports[`renders profile content component 1`] = `
                   ellipsizeMode="tail"
                 >
                   A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "fontStyle": "italic",
+                      }
+                    }
+                  >
+                    The Times
+                  </Text>
                    has learnt.
                 </Text>
                 <Text
@@ -4861,6 +4969,18 @@ exports[`renders profile content component 1`] = `
                   ellipsizeMode="tail"
                 >
                   A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "fontStyle": "italic",
+                      }
+                    }
+                  >
+                    The Times
+                  </Text>
                    has learnt.
                 </Text>
                 <Text
@@ -5029,6 +5149,18 @@ exports[`renders profile content component 1`] = `
                   ellipsizeMode="tail"
                 >
                   A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "fontStyle": "italic",
+                      }
+                    }
+                  >
+                    The Times
+                  </Text>
                    has learnt.
                 </Text>
                 <Text
@@ -5197,6 +5329,18 @@ exports[`renders profile content component 1`] = `
                   ellipsizeMode="tail"
                 >
                   A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "fontStyle": "italic",
+                      }
+                    }
+                  >
+                    The Times
+                  </Text>
                    has learnt.
                 </Text>
                 <Text
@@ -5532,6 +5676,18 @@ exports[`renders profile content component 1`] = `
                   ellipsizeMode="tail"
                 >
                   A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "fontStyle": "italic",
+                      }
+                    }
+                  >
+                    The Times
+                  </Text>
                    has learnt.
                 </Text>
                 <Text
@@ -7036,6 +7192,18 @@ exports[`renders profile content component 1`] = `
                   ellipsizeMode="tail"
                 >
                   The funding of British faith schools run by an extreme religious sect is under investigation by the taxman over multi-million pound gift aid claims, 
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "fontStyle": "italic",
+                      }
+                    }
+                  >
+                    The Times
+                  </Text>
                    has learnt.
                 </Text>
                 <Text
@@ -7371,6 +7539,18 @@ exports[`renders profile content component 1`] = `
                   ellipsizeMode="tail"
                 >
                   Terry Pratchett, who died last week, began his career on the 
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "fontStyle": "italic",
+                      }
+                    }
+                  >
+                    Bucks Free Press
+                  </Text>
                    in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job interview. The editor, impressed, told him: “I like the cut of your jib, young man.” As Pratchett, above, noted, he was “possibly the last person ever to say that without being arrested”. The author once told the paper that he learnt nothing more than to “spit and fight” at school but owed
                 </Text>
               </Text>
@@ -7532,6 +7712,18 @@ exports[`renders profile content component 1`] = `
                   ellipsizeMode="tail"
                 >
                   Is poetry best when written down or is it nobler in the mind? Is it enough to read a great verse off the page, or is it 
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "fontStyle": "italic",
+                      }
+                    }
+                  >
+                    dulce et decorum
+                  </Text>
                    to recite it by heart?
                 </Text>
                 <Text

@@ -75,7 +75,7 @@ exports[`renders horizontal above breakpoint 1`] = `
                 "name": "text",
               },
             ],
-            "name": "p",
+            "name": "paragraph",
           },
         ]
       }
