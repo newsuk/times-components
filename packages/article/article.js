@@ -16,10 +16,11 @@ import Caption from "@times-components/caption";
 import { builder } from "@times-components/markup";
 import ArticleByline from "@times-components/article-byline";
 import pick from "lodash.pick";
+import get from "lodash.get";
 
 import styles from "./article-style";
 
-const multiParagraph = require("./fixtures/multi-para.json").fixture;
+// const multiParagraph = require("./fixtures/multi-para.json").fixture;
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 
@@ -57,8 +58,11 @@ class ArticlePage extends React.Component {
         { type: "middleContaner", data: articleMidContainerData }
       ],
       // NOTE failing gracefully
-      // get(articleData, "content", []).map(i => ({ type: "article_body_row", data: i }))
-      multiParagraph.map(i => ({ type: "article_body_row", data: i }))
+      get(articleData, "content", []).map(i => ({
+        type: "article_body_row",
+        data: i
+      }))
+      // multiParagraph.map(i => ({ type: "article_body_row", data: i }))
     );
     return ArticleArray;
   }
@@ -101,7 +105,9 @@ class ArticlePage extends React.Component {
               style={styles.ArticleHeadLineText}
             />
           </View>
-          <Text style={styles.StandFirst}>{rowData.data.standfirst}</Text>
+          <Text style={styles.StandFirst}>
+            {rowData.data.standfirst}
+          </Text>
           <View style={styles.ArticleFlag}>
             {rowData.data.newFlag
               ? <View style={styles.ArticleFlagContainer}>
@@ -133,7 +139,7 @@ class ArticlePage extends React.Component {
         >
           <View style={styles.ArticleMeta}>
             <View style={[styles.ArticleMetaElement]}>
-              <ArticleByline ast={rowData.data.byline} style={{}} />
+              <ArticleByline ast={rowData.data.byline} />
             </View>
             <View style={[styles.ArticleMetaElement]}>
               <DatePublication
@@ -150,13 +156,14 @@ class ArticlePage extends React.Component {
           className="markup-wrapper-outer"
           style={[styles.ArticleMainContentRow, styles.ArticleText]}
         >
-          {builder({ ast: [rowData.data], wrapIn: "p" }).map(el =>
+          {builder({ ast: [rowData.data] }).map(el =>
             <View
               className="markup-wrapper"
               style={styles.ArticleTextWrapper}
               key={`paragraph-${Date.now().toLocaleString()}`}
             >
               {React.cloneElement(el, {
+                className: "single-element",
                 style: StyleSheet.flatten([styles.ArticleTextElement])
               })}
             </View>
