@@ -1,81 +1,78 @@
 import { StyleSheet, Platform } from "react-native";
 
-const globalStyle = StyleSheet.create({
-  CaptionWrapper: {
-    paddingLeft: 10,
-    paddingRight: 10
-  }
-});
+const globalStyle = StyleSheet.create({});
 
 const webStyles = StyleSheet.create({
-  // padding for each row execpt for the ads
+  // ArticleAd: {
+  //   borderBottomWidth: 1,
+  //   paddingBottom: 15,
+  //   paddingTop: 15,
+  //   borderBottomColor: "#DBDBDB"
+  // },
   ArticleMainContentRow: {
-    paddingLeft: 20,
-    paddingRight: 20
-  },
-  ArticleAd: {
-    marginLeft: -20,
-    marginRight: -20,
-    borderBottomWidth: 1,
-    paddingBottom: 15,
-    paddingTop: 15,
-    borderBottomColor: "#DBDBDB"
+    paddingLeft: 10,
+    paddingRight: 10
   },
   ArticleMiddleContainer: {
-    marginTop: 30
-  },
-  ArticleBodyContainer: {
-    width: "58.33333%",
-    marginLeft: "auto",
-    marginRight: "auto"
+    marginTop: 19.5
   },
   ArticleHeader: {
-    paddingTop: 15
+    // paddingTop: 15
   },
   ArticleHeadline: {
     marginBottom: 15
   },
   ArticleHeadLineText: {
-    fontSize: 45,
-    lineHeight: 45,
+    fontSize: 30,
+    lineHeight: 32,
     color: "#333333",
+    marginTop: 3,
     marginBottom: 0
   },
-  ArticleFlag: {
-    marginTop: 6,
-    marginBottom: 3
+  StandFirst: {
+    fontSize: 21,
+    lineHeight: 23,
+    fontFamily: "TimesModern-Regular",
+    paddingBottom: 14
   },
-  ArticleFlagContainer: {},
+  ArticleFlag: {
+    marginBottom: 3,
+    flexDirection: "row"
+  },
+  ArticleFlagContainer: {
+    marginRight: 14
+  },
   ArticleMeta: {
-    marginBottom: 20,
-    paddingRight: 20,
-    width: "35.71429%",
-    left: "-35.71429%",
-    position: "absolute"
+    marginBottom: 10
   },
   ArticleMetaElement: {
-    borderTopColor: "#DBDBDB",
+    borderTopColor: "#d0cece",
     borderTopWidth: 1,
-    paddingTop: 6,
+    paddingTop: 5,
     paddingBottom: 6
   },
   LeadAsset: {
-    // marginBottom: 30
+    marginBottom: 10
   },
-  ArticleTextWrapper: {
-    // backgroundColor: "red"
+  CaptionWrapper: {
+    paddingLeft: 10,
+    paddingRight: 10
   },
   ArticleTextElement: {
-    fontFamily: "TimesDigital-Regular",
-    lineHeight: 1.7,
-    fontSize: 18,
-    color: "#333",
+    fontFamily: "TimesDigitalW04-Regular",
+    lineHeight: 1.53,
+    fontSize: 17,
+    // reset the default p style just for the web (on the native we have <Text> element with no default style)
+    marginBottom: 25,
     marginTop: 0,
-    marginBottom: 30
+    color: "#333"
   }
 });
 
 const nativeStyles = StyleSheet.create({
+  PageWrapper: {
+    paddingBottom: 66
+  },
   // ArticleAd: {
   //   borderBottomWidth: 1,
   //   paddingBottom: 15,

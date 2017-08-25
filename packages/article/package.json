@@ -68,7 +68,8 @@
     "react-native": "0.42.3",
     "react-native-web": "0.0.119",
     "react-apollo": "1.4.14",
-    "lodash.pick": "4.4.0"
+    "lodash.pick": "4.4.0",
+    "lodash.get": "4.4.0"
   },
   "peerDependencies": {
     "@storybook/react-native": ">=3",
