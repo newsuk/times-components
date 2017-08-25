@@ -20,11 +20,9 @@ const query = gql`
       articles {
         count
         list(first: $first, skip: $skip) {
+          content(maxWordCount: 25, markupType: "paragraph")
           id
-          title
           label
-          publicationName
-          publishedTime
           leadAsset {
             ... on Image {
               title
@@ -41,7 +39,9 @@ const query = gql`
               }
             }
           }
-          teaser
+          publicationName
+          publishedTime
+          title
         }
       }
     }
