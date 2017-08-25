@@ -5,7 +5,7 @@
   "publication": "SUNDAYTIMES",
   "text": [
     {
-      "name": "p",
+      "name": "paragraph",
       "children": [
         {
           "name": "text",

@@ -3,8 +3,7 @@
   "name": "Carol Midgley",
   "title": "columnist",
   "twitter": "carolmidgley",
-  "bio":
-  [
+  "bio": [
     {
       "name": "text",
       "children": [
@@ -14,10 +13,8 @@
       ]
     },
     {
-      "name": "i",
-      "attributes": {
-
-      },
+      "name": "italic",
+      "attributes": {},
       "children": [
         {
           "name": "text",
@@ -38,10 +35,8 @@
       ]
     },
     {
-      "name": "i",
-      "attributes": {
-
-      },
+      "name": "italic",
+      "attributes": {},
       "children": [
         {
           "name": "text",

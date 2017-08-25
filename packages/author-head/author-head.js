@@ -75,7 +75,7 @@ const AuthorHead = props => {
           {twitter}
         </Text>
         <Text style={styles.bio}>
-          <Markup ast={bio} wrapIn="p" />
+          <Markup ast={bio} wrapIn="paragraph" />
         </Text>
       </View>
       <View style={styles.photoContainer}>

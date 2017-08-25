@@ -131,6 +131,18 @@ exports[`renders an article-summary component with content 1`] = `
       ellipsizeMode="tail"
     >
       A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontStyle": "italic",
+          }
+        }
+      >
+        The Times
+      </Text>
        has learnt.
     </Text>
     <Text

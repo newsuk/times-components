@@ -1,4 +1,5 @@
 import React from "react";
+import get from "lodash.get";
 import { StyleSheet, View } from "react-native";
 import Card from "@times-components/card";
 
@@ -14,7 +15,11 @@ const AuthorProfileItem = item => {
     date: item.publishedTime,
     headline: item.title,
     image: {
-      uri: item.leadAsset ? item.leadAsset.crop.url : ""
+      uri: get(
+        item,
+        "leadAsset.crop.url",
+        get(item, "leadAsset.posterImage.crop.url", null)
+      )
     },
     text: item.teaser,
     label: item.label,

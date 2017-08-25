@@ -1,10 +1,8 @@
 {
   "fixture": [
     {
-      "name": "b",
-      "attributes": {
-
-      },
+      "name": "bold",
+      "attributes": {},
       "children": [
         {
           "name": "text",

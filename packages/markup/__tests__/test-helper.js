@@ -73,7 +73,9 @@ export default (Markup, builder) => () => {
   });
 
   it("renders wrapped tags", () => {
-    const tree = renderer.create(<Markup ast={bio} wrapIn="p" />).toJSON();
+    const tree = renderer
+      .create(<Markup ast={bio} wrapIn="paragraph" />)
+      .toJSON();
 
     expect(tree).toMatchSnapshot();
   });
@@ -81,7 +83,9 @@ export default (Markup, builder) => () => {
   it("renders multiple children", () => {
     const tree = renderer
       .create(
-        <Text style={{ color: "red" }}>{builder({ ast: multiParagraph })}</Text>
+        <Text style={{ color: "red" }}>
+          {builder({ ast: multiParagraph })}
+        </Text>
       )
       .toJSON();
 

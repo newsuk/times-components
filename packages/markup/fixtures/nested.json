@@ -1,10 +1,8 @@
 {
   "fixture": [
     {
-      "name": "div",
-      "attributes": {
-
-      },
+      "name": "block",
+      "attributes": {},
       "children": [
         {
           "name": "text",
@@ -15,10 +13,8 @@
           ]
         },
         {
-          "name": "div",
-          "attributes": {
-
-          },
+          "name": "block",
+          "attributes": {},
           "children": [
             {
               "name": "text",
@@ -29,10 +25,8 @@
               ]
             },
             {
-              "name": "div",
-              "attributes": {
-
-              },
+              "name": "block",
+              "attributes": {},
               "children": [
                 {
                   "name": "text",
@@ -43,10 +37,8 @@
                   ]
                 },
                 {
-                  "name": "span",
-                  "attributes": {
-
-                  },
+                  "name": "inline",
+                  "attributes": {},
                   "children": [
                     {
                       "name": "text",
