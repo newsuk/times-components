@@ -16,11 +16,11 @@ import Caption from "@times-components/caption";
 import { builder } from "@times-components/markup";
 import ArticleByline from "@times-components/article-byline";
 import pick from "lodash.pick";
+// import get from "lodash.get";
 
 import styles from "./article-style";
 
 const multiParagraph = require("./fixtures/multi-para.json").fixture;
-const authorFixture = require("./fixtures/author.json").singleTextAuthor;
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 
@@ -40,7 +40,9 @@ class ArticlePage extends React.Component {
     Object.assign(articleHeaderData, {
       standfirst: "Cras mattis consectetur purus sit amet fermentum",
       newFlag: true,
-      sponsoredFlag: true
+      sponsoredFlag: true,
+      updatedFlag: true,
+      exclusiveFlag: true
     });
 
     const articleMidContainerData = pick(articleData, [
@@ -48,10 +50,7 @@ class ArticlePage extends React.Component {
       "publishedTime",
       "byline"
     ]);
-    // HACK for the byline
-    Object.assign(articleMidContainerData, {
-      byline: authorFixture
-    });
+
     const ArticleArray = Array.prototype.concat(
       [
         { type: "ads", data: adsData },
@@ -59,6 +58,8 @@ class ArticlePage extends React.Component {
         { type: "header", data: articleHeaderData },
         { type: "middleContaner", data: articleMidContainerData }
       ],
+      // NOTE failing gracefully
+      // get(articleData, "content", []).map(i => ({ type: "article_body_row", data: i }))
       multiParagraph.map(i => ({ type: "article_body_row", data: i }))
     );
     return ArticleArray;
@@ -134,7 +135,7 @@ class ArticlePage extends React.Component {
         >
           <View style={styles.ArticleMeta}>
             <View style={[styles.ArticleMetaElement]}>
-              <ArticleByline ast={rowData.data.byline} />
+              <ArticleByline ast={rowData.data.byline} style={{}} />
             </View>
             <View style={[styles.ArticleMetaElement]}>
               <DatePublication
@@ -152,7 +153,11 @@ class ArticlePage extends React.Component {
           style={[styles.ArticleMainContentRow, styles.ArticleText]}
         >
           {builder({ ast: [rowData.data], wrapIn: "p" }).map(el =>
-            <View className="markup-wrapper" style={styles.ArticleTextWrapper}>
+            <View
+              className="markup-wrapper"
+              style={styles.ArticleTextWrapper}
+              key={`paragraph-${Date.now().toLocaleString()}`}
+            >
               {React.cloneElement(el, {
                 style: StyleSheet.flatten([styles.ArticleTextElement])
               })}
@@ -176,7 +181,7 @@ class ArticlePage extends React.Component {
       )
     };
     return (
-      <View style={{ paddingBottom: 66 }}>
+      <View style={styles.PageWrapper}>
         <View
           className="navigation"
           style={{ height: 66, backgroundColor: "#003d58" }}
