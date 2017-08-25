@@ -96,8 +96,32 @@ exports[`renders data 1`] = `
               ellipsizeMode="tail"
             >
               Lorem 
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontWeight": "bold",
+                  }
+                }
+              >
+                ipsum
+              </Text>
                testbr 
               More text 
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontStyle": "italic",
+                  }
+                }
+              >
+                 last 
+              </Text>
             </Text>
           </Text>
         </View>
@@ -329,8 +353,32 @@ exports[`renders data from graphql 1`] = `
               ellipsizeMode="tail"
             >
               Lorem 
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontWeight": "bold",
+                  }
+                }
+              >
+                ipsum
+              </Text>
                testbr 
               More text 
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontStyle": "italic",
+                  }
+                }
+              >
+                 last 
+              </Text>
             </Text>
           </Text>
         </View>

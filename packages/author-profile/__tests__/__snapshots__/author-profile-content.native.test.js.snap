@@ -967,7 +967,7 @@ exports[`renders profile 1`] = `
             "name": "text",
           },
         ],
-        "name": "b",
+        "name": "bold",
       },
       Object {
         "children": Array [
@@ -979,7 +979,7 @@ exports[`renders profile 1`] = `
       },
       Object {
         "attributes": Object {},
-        "name": "br",
+        "name": "break",
       },
       Object {
         "children": Array [
@@ -1001,7 +1001,7 @@ exports[`renders profile 1`] = `
             "name": "text",
           },
         ],
-        "name": "i",
+        "name": "italic",
       },
     ]
   }
@@ -1113,8 +1113,32 @@ exports[`renders profile content 1`] = `
               ellipsizeMode="tail"
             >
               Lorem 
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontWeight": "bold",
+                  }
+                }
+              >
+                ipsum
+              </Text>
                testbr 
               More text 
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontStyle": "italic",
+                  }
+                }
+              >
+                 last 
+              </Text>
             </Text>
           </Text>
         </View>
@@ -4461,8 +4485,32 @@ exports[`renders profile content component 1`] = `
               ellipsizeMode="tail"
             >
               Lorem 
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontWeight": "bold",
+                  }
+                }
+              >
+                ipsum
+              </Text>
                testbr 
               More text 
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontStyle": "italic",
+                  }
+                }
+              >
+                 last 
+              </Text>
             </Text>
           </Text>
         </View>
@@ -7838,8 +7886,32 @@ exports[`renders profile header 1`] = `
           ellipsizeMode="tail"
         >
           Lorem 
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            ipsum
+          </Text>
            testbr 
           More text 
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontStyle": "italic",
+              }
+            }
+          >
+             last 
+          </Text>
         </Text>
       </Text>
     </View>

@@ -11,7 +11,7 @@
       ]
     },
     {
-      "name": "b",
+      "name": "bold",
       "attributes": {},
       "children": [
         {
@@ -33,7 +33,7 @@
       ]
     },
     {
-      "name": "br",
+      "name": "break",
       "attributes": {}
     },
     {
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "name": "i",
+      "name": "italic",
       "attributes": {},
       "children": [
         {
