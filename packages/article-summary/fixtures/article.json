@@ -5,7 +5,7 @@
   "publication": "SUNDAYTIMES",
   "text": [
     {
-      "name": "p",
+      "name": "paragraph",
       "children": [
         {
           "name": "text",
@@ -16,7 +16,7 @@
           ]
         },
         {
-          "name": "em",
+          "name": "italic",
           "children": [
             {
               "name": "text",
@@ -41,7 +41,7 @@
       "attributes": {}
     },
     {
-      "name": "p",
+      "name": "paragraph",
       "children": [
         {
           "name": "text",
@@ -55,7 +55,7 @@
       "attributes": {}
     },
     {
-      "name": "p",
+      "name": "paragraph",
       "children": [
         {
           "name": "text",
@@ -69,7 +69,7 @@
       "attributes": {}
     },
     {
-      "name": "p",
+      "name": "paragraph",
       "children": [
         {
           "name": "text",
