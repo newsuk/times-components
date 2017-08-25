@@ -11,4 +11,16 @@ const story = m =>
   </View>;
 
 props.date = new Date("2017-07-01T14:32:00.000Z");
-storiesOf("Card", module).add("Card", () => story(<Card {...props} />));
+storiesOf("Card", module)
+  .add("Card", () => story(<Card {...props} />))
+  .add("Card without Image", () =>
+    story(
+      <Card
+        {...Object.assign({}, props, {
+          image: {
+            url: null
+          }
+        })}
+      />
+    )
+  );

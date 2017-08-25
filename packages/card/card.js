@@ -60,6 +60,19 @@ class CardComponent extends React.Component {
       text
     } = this.props;
 
+    const imageComponent =
+      image && image.uri
+        ? <View
+            style={[
+              styles.imageContainer,
+              styles.childrenContainer,
+              isHorizontal ? styles.horizontalImageContainer : null
+            ]}
+          >
+            <Image style={styles.image} source={image} />
+          </View>
+        : null;
+
     return (
       <View
         onLayout={this.handleLayout}
@@ -69,15 +82,7 @@ class CardComponent extends React.Component {
           style
         ]}
       >
-        <View
-          style={[
-            styles.imageContainer,
-            styles.childrenContainer,
-            isHorizontal ? styles.horizontalImageContainer : null
-          ]}
-        >
-          <Image style={styles.image} source={image} />
-        </View>
+        {imageComponent}
         <View
           style={[
             styles.childrenContainer,

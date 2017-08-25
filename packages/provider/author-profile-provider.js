@@ -16,6 +16,7 @@ const query = gql`
       biography
       image
       twitter
+      url
       articles {
         count
         list(first: $first, skip: $skip) {

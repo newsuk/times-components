@@ -61,6 +61,7 @@
     "@times-components/card": "0.3.13",
     "@times-components/pagination": "0.3.2",
     "jest-cli": "20.0.4",
+    "lodash.get": "4.4.2",
     "lodash.merge": "4.6.0",
     "prop-types": "15.5.10",
     "react-native-web": "0.0.119",
