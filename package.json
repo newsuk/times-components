@@ -57,6 +57,10 @@
     "preset": "react-native",
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules/"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|react-navigation|@times-components)",
+      "packages/?!author-profile"
     ]
   },
   "config": {

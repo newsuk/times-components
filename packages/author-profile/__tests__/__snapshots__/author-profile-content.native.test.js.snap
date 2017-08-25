@@ -1018,7 +1018,9 @@ exports[`renders profile 1`] = `
 `;
 
 exports[`renders profile content 1`] = `
-<RCTScrollView>
+<RCTScrollView
+  testID="scroll-view"
+>
   <View>
     <View>
       <View
@@ -4294,7 +4296,9 @@ exports[`renders profile content 1`] = `
 `;
 
 exports[`renders profile content component 1`] = `
-<RCTScrollView>
+<RCTScrollView
+  testID="scroll-view"
+>
   <View>
     <View>
       <View
