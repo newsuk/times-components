@@ -18,6 +18,7 @@ const AuthorProfile = props => {
     const extra = {
       onNext: props.onNext,
       onPrev: props.onPrev,
+      onLinkPress: props.onLinkPress,
       page: props.page,
       pageSize: props.pageSize
     };
@@ -34,7 +35,8 @@ AuthorProfile.propTypes = {
   onNext: AuthorProfileContent.propTypes.onNext,
   onPrev: AuthorProfileContent.propTypes.onPrev,
   page: AuthorProfileContent.propTypes.page,
-  pageSize: AuthorProfileContent.propTypes.pageSize
+  pageSize: AuthorProfileContent.propTypes.pageSize,
+  onLinkPress: PropTypes.function
 };
 
 AuthorProfile.defaultProps = {
