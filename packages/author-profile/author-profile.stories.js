@@ -2,6 +2,13 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
+import { withPageState } from "@times-components/pagination";
+import {
+  ApolloClient,
+  ApolloProvider,
+  createNetworkInterface,
+  IntrospectionFragmentMatcher
+} from "react-apollo";
 import AuthorProfile from "./author-profile";
 import example from "./example.json";
 
@@ -22,6 +29,36 @@ const story = m =>
       {m}
     </View>
   </View>;
+
+const fragmentMatcher = new IntrospectionFragmentMatcher({
+  introspectionQueryResultData: {
+    __schema: {
+      types: [
+        {
+          kind: "UNION",
+          name: "Media",
+          possibleTypes: [
+            {
+              name: "Image"
+            },
+            {
+              name: "Video"
+            }
+          ]
+        }
+      ]
+    }
+  }
+});
+
+const networkInterface = createNetworkInterface({
+  uri: "http://localhost:4000/graphql/"
+});
+
+const client = new ApolloClient({
+  networkInterface,
+  fragmentMatcher
+});
 
 storiesOf("AuthorProfile", module)
   .add("AuthorProfile", () => {
@@ -55,3 +92,16 @@ storiesOf("AuthorProfile", module)
 
     return story(<AuthorProfile {...props} />);
   });
+
+const AuthorProfileWithPageState = withPageState(AuthorProfile);
+storiesOf("Provider", module).add("AuthorProfileProvider", () =>
+  <ApolloProvider client={client}>
+    <AuthorProfileWithPageState
+      generatePageLink={page => `https://www.thetimes.co.uk?page=${page}`}
+      imageRatio="3:2"
+      slug="fiona-hamilton"
+      page={1}
+      pageSize={3}
+    />
+  </ApolloProvider>
+);

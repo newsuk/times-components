@@ -1,52 +1,7 @@
 import get from "lodash.get";
-import gql from "graphql-tag";
-import AuthorProfile from "@times-components/author-profile";
-import connectGraphql from "./connect";
-
-const query = gql`
-  query ArticleQuery(
-    $slug: Slug!
-    $first: Int
-    $skip: Int
-    $imageRatio: Ratio!
-  ) {
-    author(slug: $slug) {
-      name
-      jobTitle
-      biography
-      image
-      twitter
-      url
-      articles {
-        count
-        list(first: $first, skip: $skip) {
-          id
-          title
-          label
-          publicationName
-          publishedTime
-          leadAsset {
-            ... on Image {
-              title
-              crop(ratio: $imageRatio) {
-                url
-              }
-            }
-            ... on Video {
-              posterImage {
-                title
-                crop(ratio: $imageRatio) {
-                  url
-                }
-              }
-            }
-          }
-          teaser
-        }
-      }
-    }
-  }
-`;
+import connectGraphql from "@times-components/provider";
+import AuthorProfile from "./author-profile-component";
+import query from "./query";
 
 const propsToVariables = ({ slug, pageSize, page, imageRatio }) => ({
   slug,

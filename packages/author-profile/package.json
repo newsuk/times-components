@@ -60,10 +60,13 @@
     "@times-components/author-head": "0.2.10",
     "@times-components/card": "0.3.14",
     "@times-components/pagination": "0.3.2",
+    "@times-components/provider": "0.3.3",
+    "graphql-tag": "2.4.2",
     "jest-cli": "20.0.4",
     "lodash.get": "4.4.2",
     "lodash.merge": "4.6.0",
     "prop-types": "15.5.10",
+    "react-apollo": "1.4.14",
     "react-native-web": "0.0.119",
     "react-style-proptype": "3.0.0"
   },

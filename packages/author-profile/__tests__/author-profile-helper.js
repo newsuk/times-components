@@ -5,7 +5,7 @@ import "react-native";
 import React from "react";
 import { shallow } from "enzyme";
 import renderer from "react-test-renderer";
-import AuthorProfile from "../author-profile";
+import AuthorProfile from "../author-profile-component";
 import AuthorProfileHeader from "../author-profile-header";
 import AuthorProfileItemSeparator from "../author-profile-item-separator";
 import example from "../example.json";
