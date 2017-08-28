@@ -9,7 +9,7 @@ import {
   createNetworkInterface,
   IntrospectionFragmentMatcher
 } from "react-apollo";
-import AuthorProfile from "./author-profile";
+import AuthorProfile from "./";
 import example from "./example.json";
 
 const styles = StyleSheet.create({
@@ -56,12 +56,15 @@ const networkInterface = createNetworkInterface({
 });
 
 const client = new ApolloClient({
+  fragmentMatcher,
   networkInterface,
-  fragmentMatcher
+  shouldBatch: true
 });
 
-storiesOf("AuthorProfile", module)
-  .add("AuthorProfile", () => {
+const AuthorProfileWithPageState = withPageState(AuthorProfile);
+
+storiesOf("Author Profile", module)
+  .add("Component", () => {
     const props = {
       data: Object.assign({}, example, {
         count: example.articles.count,
@@ -78,23 +81,20 @@ storiesOf("AuthorProfile", module)
 
     return story(<AuthorProfile {...props} />);
   })
-  .add("AuthorProfile Loading", () => {
+  .add("Loading", () => {
     const props = {
       isLoading: true
     };
 
     return story(<AuthorProfile {...props} />);
   })
-  .add("AuthorProfile Empty State", () => {
+  .add("Empty", () => {
     const props = {
       isLoading: false
     };
 
     return story(<AuthorProfile {...props} />);
-  });
-
-const AuthorProfileWithPageState = withPageState(AuthorProfile);
-storiesOf("Provider", module).add("AuthorProfileProvider", () =>
+  }).add("Provider", () =>
   <ApolloProvider client={client}>
     <AuthorProfileWithPageState
       generatePageLink={page => `https://www.thetimes.co.uk?page=${page}`}

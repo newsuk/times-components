@@ -8,12 +8,6 @@ export default gql`
     $imageRatio: Ratio!
   ) {
     author(slug: $slug) {
-      name
-      jobTitle
-      biography
-      image
-      twitter
-      url
       articles {
         count
         list(first: $first, skip: $skip) {
@@ -38,7 +32,7 @@ export default gql`
               }
             }
           }
-          teaser
+          content
         }
       }
     }

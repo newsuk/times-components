@@ -21,25 +21,13 @@ const styles = StyleSheet.create({
 
 const AuthorProfileHeader = ({
   count,
-  biography: bio,
-  page,
   generatePageLink,
-  image: uri,
-  jobTitle: title,
-  name,
   onNext,
   onPrev,
+  page,
   pageSize,
-  twitter
+  slug
 }) => {
-  const authorProps = {
-    bio,
-    name,
-    uri,
-    title,
-    twitter
-  };
-
   const paginationProps = {
     count,
     generatePageLink,
@@ -51,7 +39,7 @@ const AuthorProfileHeader = ({
 
   return (
     <View>
-      <AuthorHead {...authorProps} />
+      <AuthorHead slug={slug} />
       <View style={styles.container}>
         <View style={styles.spacing}>
           <Pagination {...paginationProps} />
@@ -62,31 +50,22 @@ const AuthorProfileHeader = ({
 };
 
 AuthorProfileHeader.propTypes = {
-  biography: AuthorHead.propTypes.bio,
   count: Pagination.propTypes.count,
-  image: AuthorHead.propTypes.uri,
   generatePageLink: Pagination.propTypes.generatePageLink,
-  jobTitle: AuthorHead.propTypes.title,
-  name: AuthorHead.propTypes.name,
   onNext: PropTypes.func,
   onPrev: PropTypes.func,
   page: Pagination.propTypes.page,
   pageSize: Pagination.propTypes.pageSize,
-  twitter: AuthorHead.propTypes.twitter
+  slug: PropTypes.string.isRequired
 };
 
 AuthorProfileHeader.defaultProps = {
   count: 0,
-  biography: null,
   page: 0,
   generatePageLink: page => `?page=${page}`,
-  image: null,
-  jobTitle: null,
-  name: null,
   onNext: () => {},
   onPrev: () => {},
-  pageSize: 20,
-  twitter: null
+  pageSize: 20
 };
 
 export default AuthorProfileHeader;

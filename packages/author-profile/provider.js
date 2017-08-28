@@ -1,6 +1,6 @@
 import get from "lodash.get";
 import connectGraphql from "@times-components/provider";
-import AuthorProfile from "./author-profile-component";
+import AuthorProfile from "./author-profile";
 import query from "./query";
 
 const propsToVariables = ({ slug, pageSize, page, imageRatio }) => ({

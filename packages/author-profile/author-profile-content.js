@@ -1,33 +1,56 @@
 import React from "react";
-import { ScrollView, View } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
-import AuthorProfileHeader from "./author-profile-header";
+import AuthorProfileEmpty from "./author-profile-empty";
+import AuthorProfileError from "./author-profile-error";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
+import AuthorProfileLoading from "./author-profile-loading";
 
-const AuthorProfile = props =>
-  <ScrollView>
-    <AuthorProfileHeader {...props} />
-    {props.articles.list.map((item, key) => {
-      const separatorComponent =
-        key > 0 ? <AuthorProfileItemSeparator /> : null;
+const AuthorProfile = props => {
+  if (props.isLoading) {
+    return <AuthorProfileLoading />;
+  }
 
-      return (
-        <View key={item.id}>
-          {separatorComponent}
-          <AuthorProfileItem {...item} />
-        </View>
-      );
-    })}
-  </ScrollView>;
+  if (props.error) {
+    return <AuthorProfileError {...props.error} />;
+  }
 
-AuthorProfile.propTypes = Object.assign(
-  {
+  if (!!props.data === true) {
+    return (
+      <View>
+        {props.data.articles.list.map((item, key) => {
+          const separatorComponent =
+            key > 0 ? <AuthorProfileItemSeparator /> : null;
+
+          return (
+            <View key={item.id}>
+              {separatorComponent}
+              <AuthorProfileItem {...item} />
+            </View>
+          );
+        })}
+      </View>
+    );
+  }
+
+  return <AuthorProfileEmpty />;
+}
+
+AuthorProfile.defaultProps = {
+  data: null,
+  error: null,
+  isLoading: true
+};
+
+AuthorProfile.propTypes = {
+  data: PropTypes.shape({
     articles: PropTypes.shape({
       list: PropTypes.arrayOf(PropTypes.shape(AuthorProfileItem.propTypes))
     })
-  },
-  AuthorProfileHeader.propTypes
-);
+  }),
+  error: PropTypes.shape(),
+  isLoading: PropTypes.bool,
+};
 
 export default AuthorProfile;
