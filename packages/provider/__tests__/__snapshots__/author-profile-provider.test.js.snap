@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders data 1`] = `
-<RCTScrollView>
+<RCTScrollView
+  testID="scroll-view"
+>
   <View>
     <View>
       <View
@@ -258,7 +260,9 @@ exports[`renders data 1`] = `
 `;
 
 exports[`renders data from graphql 1`] = `
-<RCTScrollView>
+<RCTScrollView
+  testID="scroll-view"
+>
   <View>
     <View>
       <View
