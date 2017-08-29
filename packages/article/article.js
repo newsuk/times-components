@@ -95,9 +95,11 @@ class ArticlePage extends React.Component {
       );
     } else if (rowData.type === "header") {
       return (
-        <View style={[styles.ArticleMainContentRow, styles.ArticleHeader]}>
+        <View style={[styles.ArticleMainContentRow]}>
           {rowData.data.label
-            ? <ArticleLabel title={rowData.data.label} color="#008347" />
+            ? <View style={styles.ArticleLabel}>
+                <ArticleLabel title={rowData.data.label} color="#008347" />
+              </View>
             : null}
           <View style={styles.ArticleHeadline}>
             <ArticleHeadline

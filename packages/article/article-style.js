@@ -16,9 +16,6 @@ const webStyles = StyleSheet.create({
   ArticleMiddleContainer: {
     marginTop: 19.5
   },
-  ArticleHeader: {
-    // paddingTop: 15
-  },
   ArticleHeadline: {
     marginBottom: 15
   },
@@ -73,56 +70,52 @@ const nativeStyles = StyleSheet.create({
   PageWrapper: {
     paddingBottom: 66
   },
-  // ArticleAd: {
-  //   borderBottomWidth: 1,
-  //   paddingBottom: 15,
-  //   paddingTop: 15,
-  //   borderBottomColor: "#DBDBDB"
-  // },
   ArticleMainContentRow: {
     paddingLeft: 10,
     paddingRight: 10
   },
   ArticleMiddleContainer: {
-    marginTop: 19.5
+    marginTop: 9
   },
-  ArticleHeader: {
-    // paddingTop: 15
+  ArticleLabel: {
+    marginTop: 4,
+    marginBottom: 3
   },
   ArticleHeadline: {
-    marginBottom: 15
+    marginBottom: 7
   },
   ArticleHeadLineText: {
     fontSize: 30,
     lineHeight: 32,
-    color: "#333333",
-    marginTop: 3,
+    color: "#000000",
     marginBottom: 0
   },
   StandFirst: {
     fontSize: 21,
     lineHeight: 23,
     fontFamily: "TimesModern-Regular",
-    paddingBottom: 14
+    paddingBottom: 9
   },
   ArticleFlag: {
-    marginBottom: 3,
+    marginBottom: 11,
     flexDirection: "row"
   },
   ArticleFlagContainer: {
     marginRight: 14
   },
   ArticleMeta: {
-    marginBottom: 10
+    marginBottom: 20,
+    borderBottomColor: "#d0cece",
+    borderBottomWidth: 1
   },
   ArticleMetaElement: {
     borderTopColor: "#d0cece",
     borderTopWidth: 1,
-    paddingTop: 5,
-    paddingBottom: 6
+    paddingTop: 6,
+    paddingBottom: 1
   },
   LeadAsset: {
-    marginBottom: 10
+    marginBottom: 6
   },
   ArticleText: {
     // color: "#333"
