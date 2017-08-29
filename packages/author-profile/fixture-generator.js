@@ -3,11 +3,11 @@ import Chance from "chance";
 
 const chance = new Chance(88888);
 
-const name = () => "Fiona Hamilton";
-const jobTitle = () => "Legal Editor";
-const image = () =>
+const name = "Fiona Hamilton";
+const jobTitle = "Legal Editor";
+const image =
   "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg";
-const twitter = () => "jdoe";
+const twitter = "jdoe";
 
 const article = () => ({
   id: chance.guid(),
@@ -78,7 +78,7 @@ const article = () => ({
   ]
 });
 
-const biography = () => [
+const biography = [
   {
     name: "text",
     children: [
@@ -151,10 +151,10 @@ const articles = n => ({
 });
 
 export default n => ({
-  name: name(),
-  jobTitle: jobTitle(),
-  biography: biography(),
-  image: image(),
-  twitter: twitter(),
+  name,
+  jobTitle,
+  biography,
+  image,
+  twitter,
   articles: articles(n)
 });
