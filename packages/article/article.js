@@ -83,7 +83,7 @@ class ArticlePage extends React.Component {
       return (
         <View style={styles.LeadAsset}>
           <Image source={{ uri: TEMP_HTTPS_IMAGE_URL }} />
-          {Platform.OS === "web"
+          {Platform.OS === "web" && rowData.data.leadAsset.caption
             ? <View style={styles.CaptionWrapper}>
                 <Caption
                   text={rowData.data.leadAsset.caption}
