@@ -26,6 +26,20 @@ describe("brightcove-video web component", () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it("renders correctly with a poster", () => {
+    const tree = renderer
+      .create(
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          poster="[POSTER_URI]"
+        />
+      )
+      .toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
   it("appends correct script tag to body when no playerId supplied", () => {
     renderer.create(
       <BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />

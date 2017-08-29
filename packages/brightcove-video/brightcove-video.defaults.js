@@ -1,5 +1,6 @@
 export default {
-  style: { width: 320, height: 180 },
+  width: 320,
+  height: 180,
   playerId: "default",
   onError: () => {},
   onChange: () => {},
