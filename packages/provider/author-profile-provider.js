@@ -20,7 +20,7 @@ const query = gql`
       articles {
         count
         list(first: $first, skip: $skip) {
-          content(maxWordCount: 25, markupType: "paragraph")
+          content(maxCharCount: 145, markupType: "paragraph")
           id
           label
           leadAsset {
