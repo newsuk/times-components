@@ -32,10 +32,13 @@ exports[`Article test renders native correctly 1`] = `
       </Text>
       <View
         style={
-          Object {
-            "alignItems": "center",
-            "flexDirection": "row",
-          }
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            },
+            undefined,
+          ]
         }
       >
         <View
@@ -77,6 +80,7 @@ exports[`Article test renders native correctly 1`] = `
               Object {
                 "color": "#E34605",
               },
+              undefined,
             ]
           }
         >

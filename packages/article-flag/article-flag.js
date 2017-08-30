@@ -1,12 +1,12 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 
 import Diamond from "./diamond";
 
 // When changing styles please debug both web, android and ios because
 // some styles are not working correctly on all platforms (namely, android)
-const styles = {
+const styles = StyleSheet.create({
   view: {
     flexDirection: "row",
     alignItems: "center"
@@ -20,24 +20,24 @@ const styles = {
     fontSize: 10,
     fontWeight: "400"
   }
-};
+});
 
 // apply transformations to add uppercase and letter spacing.
 // letterSpacing CSS prop does not work on android:
 // https://github.com/facebook/react-native/pull/13199
 const beautifyTitle = title => title.toUpperCase().split("").join(" ");
 
-const ArticleFlag = ({ title, color }) => {
+const ArticleFlag = ({ title, color, containerStyle, textStyle }) => {
   if (!title) {
     return null;
   }
 
   return (
-    <View style={styles.view}>
+    <View style={[styles.view, containerStyle]}>
       <View style={styles.diamond}>
         <Diamond height={7} width={7} color={color} />
       </View>
-      <Text style={[styles.title, { color }]}>
+      <Text style={[styles.title, { color }, textStyle]}>
         {beautifyTitle(title)}
       </Text>
     </View>
@@ -46,20 +46,25 @@ const ArticleFlag = ({ title, color }) => {
 
 ArticleFlag.propTypes = {
   title: PropTypes.string.isRequired,
-  color: PropTypes.string
+  color: PropTypes.string,
+  containerStyle: PropTypes.number,
+  textStyle: PropTypes.number
 };
 
 ArticleFlag.defaultProps = {
-  color: "black"
+  color: "black",
+  containerStyle: undefined,
+  textStyle: undefined
 };
 
-const NewArticleFlag = () => <ArticleFlag title="new" color="#E34605" />;
-const UpdatedArticleFlag = () =>
-  <ArticleFlag title="updated" color="#3C81BE" />;
-const ExclusiveArticleFlag = () =>
-  <ArticleFlag title="exclusive" color="#C51D24" />;
-const SponsoredArticleFlag = () =>
-  <ArticleFlag title="sponsored" color="#4D4D4D" />;
+const NewArticleFlag = props =>
+  <ArticleFlag title="new" color="#E34605" {...props} />;
+const UpdatedArticleFlag = props =>
+  <ArticleFlag title="updated" color="#3C81BE" {...props} />;
+const ExclusiveArticleFlag = props =>
+  <ArticleFlag title="exclusive" color="#C51D24" {...props} />;
+const SponsoredArticleFlag = props =>
+  <ArticleFlag title="sponsored" color="#4D4D4D" {...props} />;
 
 export default ArticleFlag;
 

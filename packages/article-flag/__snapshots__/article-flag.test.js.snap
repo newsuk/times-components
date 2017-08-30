@@ -3,10 +3,13 @@
 exports[`Article Flag renders Exclusive flag correctly 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "center",
-      "flexDirection": "row",
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
   }
 >
   <View
@@ -48,6 +51,7 @@ exports[`Article Flag renders Exclusive flag correctly 1`] = `
         Object {
           "color": "#C51D24",
         },
+        undefined,
       ]
     }
   >
@@ -59,10 +63,13 @@ exports[`Article Flag renders Exclusive flag correctly 1`] = `
 exports[`Article Flag renders New flag correctly 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "center",
-      "flexDirection": "row",
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
   }
 >
   <View
@@ -104,6 +111,7 @@ exports[`Article Flag renders New flag correctly 1`] = `
         Object {
           "color": "#E34605",
         },
+        undefined,
       ]
     }
   >
@@ -115,10 +123,13 @@ exports[`Article Flag renders New flag correctly 1`] = `
 exports[`Article Flag renders Sponsored flag correctly 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "center",
-      "flexDirection": "row",
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
   }
 >
   <View
@@ -160,6 +171,7 @@ exports[`Article Flag renders Sponsored flag correctly 1`] = `
         Object {
           "color": "#4D4D4D",
         },
+        undefined,
       ]
     }
   >
@@ -171,10 +183,13 @@ exports[`Article Flag renders Sponsored flag correctly 1`] = `
 exports[`Article Flag renders Updated flag correctly 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "center",
-      "flexDirection": "row",
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
   }
 >
   <View
@@ -216,6 +231,7 @@ exports[`Article Flag renders Updated flag correctly 1`] = `
         Object {
           "color": "#3C81BE",
         },
+        undefined,
       ]
     }
   >
@@ -224,4 +240,62 @@ exports[`Article Flag renders Updated flag correctly 1`] = `
 </View>
 `;
 
-exports[`Article Flag renders correctly 1`] = `null`;
+exports[`Article Flag renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "marginBottom": 1,
+        "marginRight": 5,
+      }
+    }
+  >
+    <svg
+      height={7}
+      style={Object {}}
+      viewBox="0 0 20 20"
+      width={7}
+    >
+      <g
+        fill="black"
+        style={Object {}}
+      >
+        <path
+          d="M 0,10 10,20 20,10 10,0 Z"
+          style={Object {}}
+        />
+      </g>
+    </svg>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "TimesDigital-RegularSC",
+          "fontSize": 10,
+          "fontWeight": "400",
+        },
+        Object {
+          "color": "black",
+        },
+        undefined,
+      ]
+    }
+  >
+    A R T I C L E F L A G
+  </Text>
+</View>
+`;
