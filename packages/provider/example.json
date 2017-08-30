@@ -62,7 +62,35 @@
   "image": "",
   "twitter": "jdoe",
   "articles": {
-    "count": 0,
-    "list": []
+    "count": 2,
+    "list": [{
+      "id": "97c64f20-cb67-11e4-a202-50ac5def393a",
+      "title": "British trio stopped on the way to join Isis",
+      "label": null,
+      "publicationName": "TIMES",
+      "publishedTime": "2015-03-23T23:06:34.000Z",
+      "leadAsset": {
+        "title": "British trio stopped on the way to join Isis",
+        "crop": {
+          "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+          "ratio": "3:2"
+        }
+      }
+    }, {
+      "id": "97c64f20-cb67-11e4-a202-50ac5def393a",
+      "title": "British trio stopped on the way to join Isis",
+      "label": null,
+      "publicationName": "TIMES",
+      "publishedTime": "2015-03-23T23:06:34.000Z",
+      "leadAsset": {
+        "posterImage": {
+          "title": "British trio stopped on the way to join Isis",
+          "crop": {
+            "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+            "ratio": "3:2"
+          }
+        }
+      }
+    }]
   }
 }
