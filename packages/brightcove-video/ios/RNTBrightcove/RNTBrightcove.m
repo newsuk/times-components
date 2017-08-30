@@ -76,7 +76,7 @@
 }
 
 - (void)initPlayerView {
-  if (_policyKey && _accountId && _videoId && _autoplayNumber != nil && _hideFullScreenButtonNumber != nil) {
+  if (_policyKey && _accountId && _videoId && _autoplayNumber && _hideFullScreenButtonNumber) {
     [self setup];
 
     BCOVPUIBasicControlView *controlsView = [BCOVPUIBasicControlView basicControlViewWithVODLayout];
@@ -85,7 +85,7 @@
     controlsView.currentTimeLabel.accessibilityIdentifier = @"current-time";
     controlsView.durationLabel.accessibilityIdentifier = @"duration";
     controlsView.screenModeButton.accessibilityIdentifier = @"screen-mode";
-    
+
     [controlsView.screenModeButton setHidden:[_hideFullScreenButtonNumber boolValue]];
 
     BCOVPUIPlayerViewOptions *options = [[BCOVPUIPlayerViewOptions alloc] init];
