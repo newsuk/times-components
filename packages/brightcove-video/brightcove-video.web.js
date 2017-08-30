@@ -2,6 +2,7 @@
 /* globals videojs, bc */
 
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 import propTypes from "./brightcove-video.proptypes";
 import defaults from "./brightcove-video.defaults";
@@ -174,13 +175,13 @@ class BrightcoveVideo extends Component {
 
   render() {
     /* eslint jsx-a11y/media-has-caption: "off" */
-    // Wrapping div required as brightcove adds siblings to the video tag
+    // Added a wrapping div as brightcove adds siblings to the video tag
     return (
       <div>
         <video
           id={this.state.id}
-          width={this.props.width}
-          height={this.props.height}
+          style={{ width: this.props.width, height: this.props.height }}
+          {...(this.props.poster ? { poster: this.props.poster } : {})}
           data-embed="default"
           data-video-id={this.props.videoId}
           data-account={this.props.accountId}
@@ -200,6 +201,10 @@ class BrightcoveVideo extends Component {
 BrightcoveVideo.globalErrors = [];
 
 BrightcoveVideo.defaultProps = defaults;
-BrightcoveVideo.propTypes = propTypes;
+
+BrightcoveVideo.propTypes = Object.assign(
+  { poster: PropTypes.string },
+  propTypes
+);
 
 export default BrightcoveVideo;

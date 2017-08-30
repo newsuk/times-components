@@ -26,6 +26,20 @@ describe("brightcove-video web component", () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it("renders correctly with a poster", () => {
+    const tree = renderer
+      .create(
+        <BrightcoveVideo
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          poster="[POSTER_URI]"
+        />
+      )
+      .toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
   it("appends correct script tag to body when no playerId supplied", () => {
     renderer.create(
       <BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />
@@ -65,8 +79,8 @@ describe("brightcove-video web component", () => {
       .create(<BrightcoveVideo accountId="[ACCOUNT_ID]" videoId="[VIDEO_ID]" />)
       .toJSON();
 
-    expect(tree.children[0].props.width).toBe(320);
-    expect(tree.children[0].props.height).toBe(180);
+    expect(tree.children[0].props.style.width).toBe(320);
+    expect(tree.children[0].props.style.height).toBe(180);
   });
 
   it("has width x height that can be overridden", () => {
@@ -81,8 +95,8 @@ describe("brightcove-video web component", () => {
       )
       .toJSON();
 
-    expect(tree.children[0].props.width).toBe(600);
-    expect(tree.children[0].props.height).toBe(400);
+    expect(tree.children[0].props.style.width).toBe(600);
+    expect(tree.children[0].props.style.height).toBe(400);
   });
 
   it("passes accountId, videoId & playerId to video correctly", () => {
