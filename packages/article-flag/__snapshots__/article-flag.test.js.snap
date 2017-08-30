@@ -45,13 +45,12 @@ exports[`Article Flag renders Exclusive flag correctly 1`] = `
       Array [
         Object {
           "fontFamily": "TimesDigital-RegularSC",
-          "fontSize": 10,
+          "fontSize": 12,
           "fontWeight": "400",
         },
         Object {
           "color": "#C51D24",
         },
-        undefined,
       ]
     }
   >
@@ -105,13 +104,12 @@ exports[`Article Flag renders New flag correctly 1`] = `
       Array [
         Object {
           "fontFamily": "TimesDigital-RegularSC",
-          "fontSize": 10,
+          "fontSize": 12,
           "fontWeight": "400",
         },
         Object {
           "color": "#E34605",
         },
-        undefined,
       ]
     }
   >
@@ -165,13 +163,12 @@ exports[`Article Flag renders Sponsored flag correctly 1`] = `
       Array [
         Object {
           "fontFamily": "TimesDigital-RegularSC",
-          "fontSize": 10,
+          "fontSize": 12,
           "fontWeight": "400",
         },
         Object {
           "color": "#4D4D4D",
         },
-        undefined,
       ]
     }
   >
@@ -225,13 +222,12 @@ exports[`Article Flag renders Updated flag correctly 1`] = `
       Array [
         Object {
           "fontFamily": "TimesDigital-RegularSC",
-          "fontSize": 10,
+          "fontSize": 12,
           "fontWeight": "400",
         },
         Object {
           "color": "#3C81BE",
         },
-        undefined,
       ]
     }
   >
@@ -285,13 +281,12 @@ exports[`Article Flag renders correctly 1`] = `
       Array [
         Object {
           "fontFamily": "TimesDigital-RegularSC",
-          "fontSize": 10,
+          "fontSize": 12,
           "fontWeight": "400",
         },
         Object {
           "color": "black",
         },
-        undefined,
       ]
     }
   >

@@ -74,13 +74,12 @@ exports[`Article test renders native correctly 1`] = `
             Array [
               Object {
                 "fontFamily": "TimesDigital-RegularSC",
-                "fontSize": 10,
+                "fontSize": 12,
                 "fontWeight": "400",
               },
               Object {
                 "color": "#E34605",
               },
-              undefined,
             ]
           }
         >

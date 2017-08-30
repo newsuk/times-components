@@ -19,14 +19,8 @@ const styles = StyleSheet.create({
 });
 
 storiesOf("ArticleFlag", module)
-  .add("ArticleFlag (New) with extra text style", () =>
-    <NewArticleFlag textStyle={styles.text} />
-  )
-  .add("ArticleFlag (New) with extra container style", () =>
+  .add("ArticleFlag (New) with extra styles", () =>
     <NewArticleFlag containerStyle={styles.container} />
-  )
-  .add("ArticleFlag (New) with extra style", () =>
-    <NewArticleFlag containerStyle={styles.container} textStyle={styles.text} />
   )
   .add("ArticleFlag (New)", () => <NewArticleFlag />)
   .add("ArticleFlag (Updated)", () => <UpdatedArticleFlag />)

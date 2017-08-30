@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: "TimesDigital-RegularSC",
-    fontSize: 10,
+    fontSize: 12,
     fontWeight: "400"
   }
 });
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
 // https://github.com/facebook/react-native/pull/13199
 const beautifyTitle = title => title.toUpperCase().split("").join(" ");
 
-const ArticleFlag = ({ title, color, containerStyle, textStyle }) => {
+const ArticleFlag = ({ title, color, containerStyle }) => {
   if (!title) {
     return null;
   }
@@ -37,7 +37,7 @@ const ArticleFlag = ({ title, color, containerStyle, textStyle }) => {
       <View style={styles.diamond}>
         <Diamond height={7} width={7} color={color} />
       </View>
-      <Text style={[styles.title, { color }, textStyle]}>
+      <Text style={[styles.title, { color }]}>
         {beautifyTitle(title)}
       </Text>
     </View>
@@ -47,14 +47,12 @@ const ArticleFlag = ({ title, color, containerStyle, textStyle }) => {
 ArticleFlag.propTypes = {
   title: PropTypes.string.isRequired,
   color: PropTypes.string,
-  containerStyle: PropTypes.number,
-  textStyle: PropTypes.number
+  containerStyle: PropTypes.number
 };
 
 ArticleFlag.defaultProps = {
   color: "black",
-  containerStyle: undefined,
-  textStyle: undefined
+  containerStyle: undefined
 };
 
 const NewArticleFlag = props =>
