@@ -3,9 +3,7 @@ import { Text } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
 
-const BrightcoveVideoLauncher = ({ poster, width, height }) => {
-  return <Image source={poster} style={{ width, height }}/>;
-};
+const BrightcoveVideoLauncher = ({ poster, width, height }) => <Image source={poster} style={{ width, height }}/>;
 
 const numberOrString = PropTypes.oneOfType([
   PropTypes.string,
