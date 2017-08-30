@@ -6,7 +6,7 @@ import { withPageState } from "@times-components/pagination";
 import {
   ApolloClient,
   ApolloProvider,
-  createNetworkInterface,
+  createBatchingNetworkInterface,
   IntrospectionFragmentMatcher
 } from "react-apollo";
 import AuthorProfile from "./";
@@ -51,14 +51,14 @@ const fragmentMatcher = new IntrospectionFragmentMatcher({
   }
 });
 
-const networkInterface = createNetworkInterface({
-  uri: "http://localhost:4000/graphql/"
+const networkInterface = createBatchingNetworkInterface({
+  uri: "http://localhost:4000/graphql/",
+  batchInterval: 50
 });
 
 const client = new ApolloClient({
   fragmentMatcher,
-  networkInterface,
-  shouldBatch: true
+  networkInterface
 });
 
 const AuthorProfileWithPageState = withPageState(AuthorProfile);
