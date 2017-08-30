@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.4"></a>
+## [0.5.4](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.5.2...@times-components/author-profile@0.5.4) (2017-08-29)
+
+
+### Bug Fixes
+
+* ensure no exception is thrown no asset ([#177](https://github.com/newsuk/times-components/issues/177)) ([05d573e](https://github.com/newsuk/times-components/commit/05d573e))
+
+
+
+
 <a name="0.5.3"></a>
 ## [0.5.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.5.2...@times-components/author-profile@0.5.3) (2017-08-25)
 

@@ -6,7 +6,7 @@ import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
 
 const AuthorProfile = props =>
-  <ScrollView>
+  <ScrollView testID="scroll-view">
     <AuthorProfileHeader {...props} />
     {props.articles.list.map((item, key) => {
       const separatorComponent =
