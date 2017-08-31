@@ -12,7 +12,7 @@ const bylineStyles = {
   },
   link: {
     color: "red",
-    textDecorationLine: "underline"
+    textDecorationLine: "none"
   }
 };
 
@@ -25,11 +25,23 @@ storiesOf("ArticleByline", module)
   .add("ArticleByline with a single author", () =>
     story(<ArticleByline ast={authorsAST.singleAuthor} />)
   )
+  .add("ArticleByline with a text only element", () =>
+    story(<ArticleByline ast={authorsAST.singleInlineElement} />)
+  )
   .add("ArticleByline with multiple authors", () =>
-    story(<ArticleByline ast={authorsAST.multipleAuthors} />)
+    story(<ArticleByline ast={authorsAST.multipleAuthorsCommaSeparated} />)
+  )
+  .add("ArticleByline with author in the beginning", () =>
+    story(<ArticleByline ast={authorsAST.authorInTheBeginning} />)
+  )
+  .add("ArticleByline with author at the end", () =>
+    story(<ArticleByline ast={authorsAST.authorAtTheEnd} />)
   )
   .add("ArticleByline with styles", () =>
     story(
-      <ArticleByline ast={authorsAST.multipleAuthors} style={bylineStyles} />
+      <ArticleByline
+        ast={authorsAST.multipleAuthorsCommaSeparated}
+        style={bylineStyles}
+      />
     )
   );

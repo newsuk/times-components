@@ -1,0 +1,6 @@
+{
+  "preset": "react-native",
+  "rootDir": "../../",
+  "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+  "testMatch": ["<rootDir>/packages/article-byline/__tests__/**.native.test.js"]
+}
