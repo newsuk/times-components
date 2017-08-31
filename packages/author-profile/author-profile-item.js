@@ -21,7 +21,7 @@ const AuthorProfileItem = item => {
         get(item, "leadAsset.posterImage.crop.url", null)
       )
     },
-    text: item.teaser,
+    text: item.content,
     label: item.label,
     publication: item.publicationName
   };
