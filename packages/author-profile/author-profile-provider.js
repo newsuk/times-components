@@ -22,6 +22,7 @@ const query = gql`
           content(maxCharCount: 145, markupType: "paragraph")
           id
           label
+          url
           leadAsset {
             ... on Image {
               title

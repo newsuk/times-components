@@ -52,8 +52,6 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/author-profile": "0.5.7",
-    "@times-components/pagination": "0.3.2",
     "graphql-tag": "2.4.2",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",
