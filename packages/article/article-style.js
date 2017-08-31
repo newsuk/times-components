@@ -133,7 +133,8 @@ const nativeStyles = StyleSheet.create({
     // backgroundColor: "yellow"
   },
   ArticleTextElement: {
-    fontFamily: "TimesDigitalW04-Regular",
+    fontFamily: "TimesDigitalW04",
+    fontStyle: "normal",
     lineHeight: 20,
     fontSize: 18,
     color: "#333"

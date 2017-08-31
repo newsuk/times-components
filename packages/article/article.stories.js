@@ -31,8 +31,20 @@ const client = new ApolloClient({
   networkInterface
 });
 
+// storiesOf("Article", module)
+//   .add("Apollo - Multiple Label", () =>
+//     <ApolloProvider client={client}>
+//       <ArticleProvider id="be725c01-dd7e-4c46-85b5-16ffc30c0b98" />
+//     </ApolloProvider>
+//   )
+//   .add("Fixtures - Basic", () => <Article {...articleFixture} />);
 storiesOf("Article", module)
-  .add("Apollo - Multiple Label", () =>
+  .add("Apollo - long article with italic and bold", () =>
+    <ApolloProvider client={client}>
+      <ArticleProvider id="ccf235b7-bc11-4c3f-bbe5-b0c5c6fc2b29" />
+    </ApolloProvider>
+  )
+  .add("Apollo - Multiple Label and italics", () =>
     <ApolloProvider client={client}>
       <ArticleProvider id="be725c01-dd7e-4c46-85b5-16ffc30c0b98" />
     </ApolloProvider>
