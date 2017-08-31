@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.5"></a>
+## [0.5.5](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.5.4...@times-components/author-profile@0.5.5) (2017-08-31)
+
+
+### Bug Fixes
+
+* change teaser to content with 145 chars ([#182](https://github.com/newsuk/times-components/issues/182)) ([389a54e](https://github.com/newsuk/times-components/commit/389a54e))
+
+
+
+
 <a name="0.5.4"></a>
 ## [0.5.4](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.5.2...@times-components/author-profile@0.5.4) (2017-08-29)
 
