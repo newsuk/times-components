@@ -16,6 +16,12 @@ class BrightcoveVideoLauncher extends Component {
     this.state = {
       launched: false
     };
+
+    this.launchVideo = this.launchVideo.bind(this);
+  }
+
+  launchVideo() {
+    this.setState({ launched: true });
   }
 
   render() {
@@ -24,11 +30,7 @@ class BrightcoveVideoLauncher extends Component {
     }
 
     return (
-      <TouchableWithoutFeedback
-        onPress={() => {
-          this.setState({ launched: true });
-        }}
-      >
+      <TouchableWithoutFeedback onPress={this.launchVideo}>
         <View>
           <TimesImage
             source={this.props.poster}

@@ -1,6 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`launches a video correctly 1`] = `
+<RNTBrightcove
+  accountId="[ACCOUNT_ID]"
+  autoplay={true}
+  hideFullScreenButton={false}
+  onChange={[Function]}
+  onIOSError={[Function]}
+  onLoadingError={[Function]}
+  policyKey="[POLICY_KEY]"
+  style={
+    Object {
+      "height": 180,
+      "width": 320,
+    }
+  }
+  videoId="[VIDEO_ID]"
+/>
+`;
+
+exports[`renders poster correctly before launch 1`] = `
 <View
   accessibilityComponentType={undefined}
   accessibilityLabel={undefined}
@@ -77,6 +96,75 @@ exports[`renders correctly 1`] = `
         style={Object {}}
       />
     </svg>
+  </View>
+</View>
+`;
+
+exports[`renders poster with custom play icon if specified 1`] = `
+<View
+  accessibilityComponentType={undefined}
+  accessibilityLabel={undefined}
+  accessibilityTraits={undefined}
+  accessible={true}
+  hitSlop={undefined}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={undefined}
+  testID={undefined}
+>
+  <View
+    onLayout={[Function]}
+  >
+    <Image
+      onError={[Function]}
+      onLoad={[Function]}
+      source={
+        Object {
+          "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "height": 1,
+            "width": 750,
+          },
+          Object {
+            "height": 180,
+            "width": 320,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "height": 180,
+        "justifyContent": "center",
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+        "width": 320,
+      }
+    }
+  >
+    <Image
+      source={1}
+      style={
+        Object {
+          "height": 70,
+          "width": 70,
+        }
+      }
+    />
   </View>
 </View>
 `;
