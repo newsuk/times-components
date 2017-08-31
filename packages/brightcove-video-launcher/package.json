@@ -11,12 +11,8 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/brightcove-video-launcher/**.test.js"
-    ]
+    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+    "testMatch": ["<rootDir>/packages/brightcove-video-launcher/**.test.js"]
   },
   "repository": {
     "type": "git",
@@ -51,6 +47,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
+    "@times-components/brightcove-video": "*",
     "@times-components/image": "*",
     "prop-types": "15.5.10",
     "react-native-web": "0.0.119"
