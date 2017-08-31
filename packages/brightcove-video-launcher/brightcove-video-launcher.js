@@ -25,7 +25,7 @@ class BrightcoveVideoLauncher extends Component {
         }}
       >
         <Image
-          source={this.props.poster}
+          source={{ uri: this.props.poster }}
           style={{ width: this.props.width, height: this.props.height }}
         />
       </TouchableWithoutFeedback>
