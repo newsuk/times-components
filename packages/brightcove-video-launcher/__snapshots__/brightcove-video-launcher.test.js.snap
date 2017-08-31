@@ -2,41 +2,81 @@
 
 exports[`renders correctly 1`] = `
 <View
-  onLayout={[Function]}
+  accessibilityComponentType={undefined}
+  accessibilityLabel={undefined}
+  accessibilityTraits={undefined}
+  accessible={true}
+  hitSlop={undefined}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={undefined}
+  testID={undefined}
 >
-  <Image
-    accessibilityComponentType={undefined}
-    accessibilityLabel={undefined}
-    accessibilityTraits={undefined}
-    accessible={true}
-    hitSlop={undefined}
-    onError={[Function]}
-    onLayout={undefined}
-    onLoad={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    source={
+  <View
+    onLayout={[Function]}
+  >
+    <Image
+      onError={[Function]}
+      onLoad={[Function]}
+      source={
+        Object {
+          "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "height": 1,
+            "width": 750,
+          },
+          Object {
+            "height": 180,
+            "width": 320,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
       Object {
-        "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=",
+        "alignItems": "center",
+        "flex": 1,
+        "height": 180,
+        "justifyContent": "center",
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+        "width": 320,
       }
     }
-    style={
-      Array [
-        Object {
-          "height": 1,
-          "width": 750,
-        },
-        Object {
-          "height": 180,
-          "width": 320,
-        },
-      ]
-    }
-    testID={undefined}
-  />
+  >
+    <svg
+      height={70}
+      style={Object {}}
+      viewBox="0 0 100 100"
+      width={70}
+    >
+      <rect
+        fill="rgba(0,0,0)"
+        fillOpacity="0.4"
+        height="100"
+        stroke="rgb(255,255,255)"
+        strokeWidth="8"
+        style={Object {}}
+        width="100"
+      />
+      <polygon
+        fill="rgb(255,255,255)"
+        points="30,20 70,50 30,80"
+        style={Object {}}
+      />
+    </svg>
+  </View>
 </View>
 `;

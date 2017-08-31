@@ -50,7 +50,8 @@
     "@times-components/brightcove-video": "*",
     "@times-components/image": "*",
     "prop-types": "15.5.10",
-    "react-native-web": "0.0.119"
+    "react-native-web": "0.0.119",
+    "svgs": "2.3.0"
   },
   "peerDependencies": {
     "react": ">=15",
