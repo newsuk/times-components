@@ -5,8 +5,9 @@ import { storiesOf } from "@storybook/react-native";
 import Image from "@times-components/image";
 import Caption from "./caption";
 
-const captionText = "This is caption text";
-const credits = "And these are just credits";
+const captionText =
+  'The prime minister said HMS Queen Elizabeth was a symbol of Britain’s status as a "great maritime nation"';
+const credits = "BEN STANSALL/PA WIRE";
 const exampleImage = {
   uri:
     "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320"

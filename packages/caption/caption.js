@@ -8,14 +8,14 @@ const defaultStyle = StyleSheet.create({
     paddingTop: 10
   },
   text: {
-    lineHeight: 15,
+    lineHeight: 17,
     fontFamily: "GillSansMTStd-Medium",
     fontSize: 13,
     color: "#696969"
   },
   credits: {
     fontSize: 9,
-    marginTop: 2,
+    lineHeight: 17,
     color: "#333",
     letterSpacing: 1,
     fontWeight: "400"
