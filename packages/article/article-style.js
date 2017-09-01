@@ -64,7 +64,7 @@ const webStyles = StyleSheet.create({
     paddingRight: 10
   },
   ArticleTextElement: {
-    fontFamily: "TimesDigitalW04-Regular",
+    fontFamily: "TimesDigitalW04",
     lineHeight: 1.53,
     fontSize: 17,
     // reset the default p style just for the web (on the native we have <Text> element with no default style)
