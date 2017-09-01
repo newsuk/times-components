@@ -63,19 +63,6 @@ exports[`renders a snapshot 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-          "color": "#069",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 15,
-          "padding": 8,
-        }
-      }
-    />
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
           "color": "#333",
           "fontFamily": "TimesDigital-Regular",
           "fontSize": 15,
@@ -195,15 +182,25 @@ exports[`renders a snapshot with data 1`] = `
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
+      onPress={[Function]}
       style={
-        Object {
-          "color": "#069",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 15,
-          "padding": 8,
-        }
+        Array [
+          Object {
+            "color": "#069",
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#069",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 15,
+            "padding": 8,
+            "textDecorationLine": "none",
+          },
+        ]
       }
+      url="https://twitter.com/carolmidgley"
     >
+      @
       carolmidgley
     </Text>
     <Text
