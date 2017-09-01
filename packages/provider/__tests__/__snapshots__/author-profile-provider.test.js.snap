@@ -66,15 +66,25 @@ exports[`renders data 1`] = `
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
+            onPress={[Function]}
             style={
-              Object {
-                "color": "#069",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 15,
-                "padding": 8,
-              }
+              Array [
+                Object {
+                  "color": "#069",
+                  "textDecorationLine": "underline",
+                },
+                Object {
+                  "color": "#069",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 15,
+                  "padding": 8,
+                  "textDecorationLine": "none",
+                },
+              ]
             }
+            url="https://twitter.com/jdoe"
           >
+            @
             jdoe
           </Text>
           <Text
@@ -325,15 +335,25 @@ exports[`renders data from graphql 1`] = `
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
+            onPress={[Function]}
             style={
-              Object {
-                "color": "#069",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 15,
-                "padding": 8,
-              }
+              Array [
+                Object {
+                  "color": "#069",
+                  "textDecorationLine": "underline",
+                },
+                Object {
+                  "color": "#069",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 15,
+                  "padding": 8,
+                  "textDecorationLine": "none",
+                },
+              ]
             }
+            url="https://twitter.com/jdoe"
           >
+            @
             jdoe
           </Text>
           <Text
