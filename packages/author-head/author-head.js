@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 import Image from "@times-components/image";
 import Markup from "@times-components/markup";
+import Link from "@times-components/link";
 
 const styles = StyleSheet.create({
   container: {
@@ -42,7 +43,8 @@ const styles = StyleSheet.create({
     padding: 8,
     fontSize: 15,
     fontFamily: "GillSansMTStd-Medium",
-    color: "#069"
+    color: "#069",
+    textDecorationLine: "none"
   },
   bio: {
     fontFamily: "TimesDigital-Regular",
@@ -71,9 +73,7 @@ const AuthorHead = props => {
         <Text accessibilityRole="heading" aria-level="2" style={styles.title}>
           {title.toLowerCase()}
         </Text>
-        <Text style={styles.twitter}>
-          {twitter}
-        </Text>
+        <TwitterLink handle={twitter} />
         <Text style={styles.bio}>
           <Markup ast={bio} wrapIn="paragraph" />
         </Text>
@@ -99,6 +99,27 @@ AuthorHead.propTypes = {
   uri: PropTypes.string,
   bio: Markup.propTypes.ast,
   twitter: PropTypes.string
+};
+
+const TwitterLink = ({ handle }) => {
+  if (!handle) {
+    return null;
+  }
+  const target = `https://twitter.com/${handle}`;
+
+  return (
+    <Link style={styles.twitter} url={target}>
+      @{handle}
+    </Link>
+  );
+};
+
+TwitterLink.propTypes = {
+  handle: AuthorHead.propTypes.twitter
+};
+
+TwitterLink.defaultProps = {
+  handle: AuthorHead.defaultProps.twitter
 };
 
 export default AuthorHead;
