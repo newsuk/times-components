@@ -43,6 +43,17 @@ storiesOf("Image", module)
       <Image style={{ resizeMode: "center" }} source={exampleNonImage} />
     </View>
   )
+  .add("No schema url", () =>
+    <View style={{ width: 100, height: 100 }}>
+      <Image
+        resizeMode={"cover"}
+        source={{
+          uri:
+            "//www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320"
+        }}
+      />
+    </View>
+  )
   .add("Apply style to image", () =>
     <View style={{ width: 100, height: 100 }}>
       <Image

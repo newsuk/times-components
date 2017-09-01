@@ -107,3 +107,14 @@ it("ignores dimension if layout is 0", done => {
   comp.getSize = (uri, success) => success(40, 20);
   comp.handleLoad();
 });
+
+it("prepends https schema", () => {
+  const props = {
+    source: {
+      uri: "//example.com/image.jpg"
+    }
+  };
+
+  const tree = renderer.create(<Image {...props} />).toJSON();
+  expect(tree).toMatchSnapshot();
+});
