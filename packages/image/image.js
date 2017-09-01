@@ -1,5 +1,5 @@
 import React from "react";
-import { Dimensions, Image, View } from "react-native";
+import { Platform, Dimensions, Image, View } from "react-native";
 import placeholder from "./placeholder";
 
 const window = Dimensions.get("window");
@@ -8,8 +8,15 @@ class ImageComponent extends React.Component {
   constructor(props) {
     super(props);
 
+    const uri = props.source && props.source.uri;
+
     this.state = {
-      source: props.source,
+      source: {
+        uri:
+          Platform.OS !== "web" && uri && uri.indexOf("//") === 0
+            ? `https:${uri}`
+            : uri
+      },
       width: window.width,
       height: 1
     };

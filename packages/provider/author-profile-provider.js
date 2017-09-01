@@ -1,6 +1,5 @@
 import get from "lodash.get";
 import gql from "graphql-tag";
-import { Platform } from "react-native";
 import AuthorProfile from "@times-components/author-profile";
 import connectGraphql from "./connect";
 
@@ -57,18 +56,6 @@ const propsToVariables = ({ slug, pageSize, page, imageRatio }) => ({
 });
 
 const transformResponse = response => {
-  const resolve = url => {
-    if (Platform.OS === "web") {
-      return url;
-    }
-
-    if (url.indexOf("//") !== 0) {
-      return url;
-    }
-
-    return `https:${url}`;
-  };
-
   const author = get(response, "data.author");
   if (author) {
     return {
@@ -77,43 +64,10 @@ const transformResponse = response => {
         Object.assign({}, author, {
           articles: {
             count: author.articles.count,
-            list: author.articles.list.map(article => {
-              if (get(article, "leadAsset.crop.url", null)) {
-                return {
-                  ...article,
-                  publishedTime: new Date(article.publishedTime),
-                  leadAsset: {
-                    ...article.leadAsset,
-                    crop: {
-                      ...article.leadAsset.crop,
-                      url: resolve(article.leadAsset.crop.url)
-                    }
-                  }
-                };
-              }
-
-              if (get(article, "leadAsset.posterImage.crop.url", null)) {
-                return {
-                  ...article,
-                  publishedTime: new Date(article.publishedTime),
-                  leadAsset: {
-                    ...article.leadAsset,
-                    posterImage: {
-                      ...article.leadAsset.posterImage,
-                      crop: {
-                        ...article.leadAsset.posterImage.crop,
-                        url: resolve(article.leadAsset.posterImage.crop.url)
-                      }
-                    }
-                  }
-                };
-              }
-
-              return {
-                ...article,
-                publishedTime: new Date(article.publishedTime)
-              };
-            })
+            list: author.articles.list.map(article => ({
+              ...article,
+              publishedTime: new Date(article.publishedTime)
+            }))
           }
         }),
         {
