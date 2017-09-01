@@ -1,53 +1,7 @@
+import connectGraphql from "@times-components/provider";
 import get from "lodash.get";
-import gql from "graphql-tag";
-import AuthorProfile from "@times-components/author-profile";
-import connectGraphql from "./connect";
-
-const query = gql`
-  query ArticleQuery(
-    $slug: Slug!
-    $first: Int
-    $skip: Int
-    $imageRatio: Ratio!
-  ) {
-    author(slug: $slug) {
-      name
-      jobTitle
-      biography
-      image
-      twitter
-      articles {
-        count
-        list(first: $first, skip: $skip) {
-          content(maxCharCount: 145, markupType: "paragraph")
-          id
-          label
-          url
-          leadAsset {
-            ... on Image {
-              title
-              crop(ratio: $imageRatio) {
-                url
-              }
-            }
-            ... on Video {
-              posterImage {
-                title
-                crop(ratio: $imageRatio) {
-                  url
-                }
-              }
-            }
-          }
-          publicationName
-          publishedTime
-          title
-          url
-        }
-      }
-    }
-  }
-`;
+import query from "./author-profile-query";
+import Component from "./author-profile-component";
 
 const propsToVariables = ({ slug, pageSize, page, imageRatio }) => ({
   slug,
@@ -65,10 +19,11 @@ const transformResponse = response => {
         Object.assign({}, author, {
           articles: {
             count: author.articles.count,
-            list: author.articles.list.map(article => ({
-              ...article,
-              publishedTime: new Date(article.publishedTime)
-            }))
+            list: author.articles.list.map(article =>
+              Object.assign({}, article, {
+                publishedTime: new Date(article.publishedTime)
+              })
+            )
           }
         }),
         {
@@ -90,5 +45,5 @@ const transformResponse = response => {
 };
 
 export default connectGraphql(query, propsToVariables, transformResponse)(
-  AuthorProfile
+  Component
 );

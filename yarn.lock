@@ -194,6 +194,56 @@
     react-treebeard "^2.0.3"
     redux "^3.6.0"
 
+"@times-components/article-summary@0.2.13":
+  version "0.2.13"
+  resolved "https://registry.yarnpkg.com/@times-components/article-summary/-/article-summary-0.2.13.tgz#60c9103f4f81c9892aa9a800cf0aa2977de83c48"
+  dependencies:
+    "@times-components/date-publication" "0.0.8"
+    "@times-components/markup" "0.4.2"
+    date-fns "1.28.5"
+    prop-types "15.5.10"
+    react-native-web "0.0.119"
+    react-style-proptype "3.0.0"
+
+"@times-components/author-head@0.2.10":
+  version "0.2.10"
+  resolved "https://registry.yarnpkg.com/@times-components/author-head/-/author-head-0.2.10.tgz#8be366653cad9b5262efc6dc2ffe976508de2063"
+  dependencies:
+    "@times-components/image" "1.1.2"
+    "@times-components/markup" "0.4.3"
+    prop-types "15.5.10"
+    react-native-web "0.0.119"
+
+"@times-components/author-profile@0.5.5":
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/@times-components/author-profile/-/author-profile-0.5.5.tgz#04b525f630b4dccaca6d1f9b491d3b5267b13217"
+  dependencies:
+    "@times-components/author-head" "0.2.10"
+    "@times-components/card" "0.3.14"
+    "@times-components/pagination" "0.3.2"
+    jest-cli "20.0.4"
+    lodash.get "4.4.2"
+    lodash.merge "4.6.0"
+    prop-types "15.5.10"
+    react-native-web "0.0.119"
+    react-style-proptype "3.0.0"
+
+"@times-components/card@0.3.14":
+  version "0.3.14"
+  resolved "https://registry.yarnpkg.com/@times-components/card/-/card-0.3.14.tgz#11975fa5c2de36f66e932807eb535fd817b35328"
+  dependencies:
+    "@times-components/article-summary" "0.2.13"
+    "@times-components/image" "1.1.2"
+    react-native-web "0.0.119"
+
+"@times-components/date-publication@0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@times-components/date-publication/-/date-publication-0.0.8.tgz#921fe0d5466f516c6b6a2f72dec01ac91c21aadc"
+  dependencies:
+    date-fns "1.28.5"
+    prop-types "15.5.10"
+    react-native-web "0.0.119"
+
 "@times-components/fructose@1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-1.1.0.tgz#6d2e1e8126850e260316e65d83d2d5814fc58eb2"
@@ -209,6 +259,59 @@
     server-destroy "^1.0.1"
     socket.io "2.0.3"
     socket.io-client "2.0.3"
+
+"@times-components/image@1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@times-components/image/-/image-1.1.2.tgz#bca97320ba410cbfa6c49fc9d54d33d160cbcf6d"
+  dependencies:
+    prop-types "15.5.10"
+    react-native-web "0.0.119"
+    react-style-proptype "3.0.0"
+
+"@times-components/link@0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-0.3.2.tgz#110b8c8884b8eaf96d1ac8087b6210d23d6f368a"
+  dependencies:
+    lodash.pick "4.4.0"
+    prop-types "15.5.10"
+    react-native-web "0.0.119"
+
+"@times-components/markup@0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@times-components/markup/-/markup-0.4.2.tgz#03bdccfc5c5381d0a2eee9b545e3032c2f60965c"
+  dependencies:
+    "@times-components/link" "0.3.2"
+    prop-types "15.5.10"
+    react-native-web "0.0.119"
+
+"@times-components/markup@0.4.3":
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/@times-components/markup/-/markup-0.4.3.tgz#56977b4d9b2ee25bb90298aae2edba398617b7e6"
+  dependencies:
+    "@times-components/link" "0.3.2"
+    prop-types "15.5.10"
+    react-native-web "0.0.119"
+
+"@times-components/pagination@0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@times-components/pagination/-/pagination-0.3.2.tgz#1dc03bde24a2d45cddc3fcd10a7745021e0d4f10"
+  dependencies:
+    "@times-components/link" "0.3.2"
+    prop-types "15.5.10"
+    react-native-web "0.0.119"
+
+"@times-components/provider@0.3.5":
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/@times-components/provider/-/provider-0.3.5.tgz#d71a482035dbb5189d9b7c3fce3148cfe5e1bc71"
+  dependencies:
+    "@times-components/author-profile" "0.5.5"
+    "@times-components/pagination" "0.3.2"
+    graphql-tag "2.4.2"
+    lodash.get "4.4.2"
+    lodash.pick "4.4.0"
+    prop-types "15.5.10"
+    react-apollo "1.4.14"
+    react-native-web "0.0.119"
 
 "@types/graphql@0.10.2":
   version "0.10.2"
@@ -2278,8 +2381,8 @@ chokidar@^1.6.1, chokidar@^1.7.0:
     fsevents "^1.0.0"
 
 ci-info@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-1.0.0.tgz#dc5285f2b4e251821683681c381c3388f46ec534"
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-1.0.1.tgz#e5913b63f7e1fda8db99a3125d45cbabcde55ba9"
 
 cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
   version "1.0.4"
