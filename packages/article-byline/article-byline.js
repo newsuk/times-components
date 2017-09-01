@@ -1,6 +1,6 @@
 /* eslint-disable react/no-array-index-key */
 import React from "react";
-import { Text } from "react-native";
+import { View } from "react-native";
 import Link from "@times-components/link";
 import { builder } from "@times-components/markup";
 import styles from "./article-byline-styles";
@@ -11,17 +11,22 @@ import {
 } from "./article-byline-proptypes";
 
 const ArticleByline = ({ ast, style }) =>
-  <Text style={[styles.byline, style.byline]}>
-    {builder({ ast }).map((el, i) =>
-      React.cloneElement(el, {
+  <View style={[styles.container, style.container]}>
+    {builder({ ast }).map((el, i) => {
+      const customElementStyle = {
+        ...el.props.style, // Element styles
+        ...styles.byline, // base byline component styles
+        ...(style.byline && el.type !== Link ? style.byline : {}), // Custom text styles
+        ...(style.link && el.type === Link ? style.link : {}), // Custom Link styles
+        ...(el.type !== Link ? styles.bylineColor : {}) // Default byline text color
+      };
+
+      return React.cloneElement(el, {
         key: i,
-        style: {
-          ...el.props.style,
-          ...(style.link && el.type === Link ? style.link : {})
-        }
-      })
-    )}
-  </Text>;
+        style: customElementStyle
+      });
+    })}
+  </View>;
 
 export default ArticleByline;
 

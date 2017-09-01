@@ -1,7 +1,8 @@
 const styles = {
   byline: {
     fontSize: 13,
-    fontFamily: "GillSansMTStd-Medium"
+    fontFamily: "GillSansMTStd-Medium",
+    whiteSpace: "pre"
   },
   bylineColor: {
     color: "#696969"
