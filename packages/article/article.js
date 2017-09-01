@@ -32,13 +32,13 @@ class ArticlePage extends React.Component {
     const articleHeaderData = pick(articleData, [
       "id",
       "label",
-      "title"
-      // NOTE flags and standfirst fields are missed from the api
+      "title",
+      "standfirst"
+      // NOTE flags fields are missed from the api
     ]);
 
     // HACK for the flags and standfirst
     Object.assign(articleHeaderData, {
-      standfirst: "Cras mattis consectetur purus sit amet fermentum",
       newFlag: true,
       sponsoredFlag: true,
       updatedFlag: true,
@@ -78,11 +78,10 @@ class ArticlePage extends React.Component {
       );
     } else if (rowData.type === "leadAsset") {
       // HACK at the moment graphql just support http image (we need https for the mobile)
-      const TEMP_HTTPS_IMAGE_URL =
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F26cb2178-868c-11e7-9f10-c918952dd8f2.jpg?crop=1322%2C743%2C260%2C319&resize=685"; // eslint-disable-line
+      // rowData.data.crop.url = "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F26cb2178-868c-11e7-9f10-c918952dd8f2.jpg?crop=1322%2C743%2C260%2C319&resize=685"; // eslint-disable-line
       return (
         <View style={styles.LeadAsset}>
-          <Image source={{ uri: TEMP_HTTPS_IMAGE_URL }} />
+          <Image source={{ uri: `https:${rowData.data.leadAsset.crop.url}` }} />
           {Platform.OS === "web" && rowData.data.leadAsset.caption
             ? <View style={styles.CaptionWrapper}>
                 <Caption
@@ -107,9 +106,11 @@ class ArticlePage extends React.Component {
               style={styles.ArticleHeadLineText}
             />
           </View>
-          <Text style={styles.StandFirst}>
-            {rowData.data.standfirst}
-          </Text>
+          {rowData.data.standfirst
+            ? <Text style={styles.StandFirst}>
+                {rowData.data.standfirst}
+              </Text>
+            : null}
           <View style={styles.ArticleFlag}>
             {rowData.data.newFlag
               ? <View style={styles.ArticleFlagContainer}>

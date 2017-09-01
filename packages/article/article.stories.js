@@ -12,7 +12,7 @@ import ArticleProvider from "./article-provider";
 const articleFixture = require("./fixtures/article.json").fixture;
 
 const networkInterface = createNetworkInterface({
-  uri: "http://localhost:4000/graphql/"
+  uri: "https://hknmtcy3aj.execute-api.eu-west-1.amazonaws.com/prod/graphql"
 });
 
 // TEMP disable warning for rapid iteration
@@ -34,13 +34,6 @@ const client = new ApolloClient({
   networkInterface
 });
 
-// storiesOf("Article", module)
-//   .add("Apollo - Multiple Label", () =>
-//     <ApolloProvider client={client}>
-//       <ArticleProvider id="be725c01-dd7e-4c46-85b5-16ffc30c0b98" />
-//     </ApolloProvider>
-//   )
-//   .add("Fixtures - Basic", () => <Article {...articleFixture} />);
 storiesOf("Article", module)
   .add("Apollo - long article with italic and bold", () =>
     <ApolloProvider client={client}>
@@ -50,6 +43,16 @@ storiesOf("Article", module)
   .add("Apollo - Multiple Label and italics", () =>
     <ApolloProvider client={client}>
       <ArticleProvider id="be725c01-dd7e-4c46-85b5-16ffc30c0b98" />
+    </ApolloProvider>
+  )
+  .add("Apollo - Production Article", () =>
+    <ApolloProvider client={client}>
+      <ArticleProvider id="5cbac836-8eea-11e7-86bd-27eb324693e0" />
+    </ApolloProvider>
+  )
+  .add("Apollo - Production Article bold", () =>
+    <ApolloProvider client={client}>
+      <ArticleProvider id="978ecf38-8eff-11e7-86bd-27eb324693e0" />
     </ApolloProvider>
   )
   .add("Fixtures - Basic", () => <Article {...articleFixture} />);
