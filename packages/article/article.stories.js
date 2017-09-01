@@ -15,6 +15,9 @@ const networkInterface = createNetworkInterface({
   uri: "http://localhost:4000/graphql/"
 });
 
+// TEMP disable warning for rapid iteration
+// console.disableYellowBox = true;
+
 networkInterface.use([
   {
     applyMiddleware(req, next) {

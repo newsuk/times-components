@@ -154,18 +154,13 @@ class ArticlePage extends React.Component {
       );
     } else if (rowData.type === "article_body_row") {
       return (
-        <View
-          className="markup-wrapper-outer"
-          style={[styles.ArticleMainContentRow, styles.ArticleText]}
-        >
+        <View style={[styles.ArticleMainContentRow, styles.ArticleText]}>
           {builder({ ast: [rowData.data] }).map(el =>
             <View
-              className="markup-wrapper"
               style={styles.ArticleTextWrapper}
               key={`paragraph-${Date.now().toLocaleString()}`}
             >
               {React.cloneElement(el, {
-                className: "single-element",
                 style: StyleSheet.flatten([styles.ArticleTextElement])
               })}
             </View>
@@ -189,10 +184,7 @@ class ArticlePage extends React.Component {
     };
     return (
       <View style={styles.PageWrapper}>
-        <View
-          className="navigation"
-          style={{ height: 66, backgroundColor: "#003d58" }}
-        >
+        <View style={{ height: 66, backgroundColor: "#003d58" }}>
           <Text
             style={{
               fontFamily: "TimesModern-Bold",
