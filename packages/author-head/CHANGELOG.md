@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.12"></a>
+## [0.2.12](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.2.9...@times-components/author-head@0.2.12) (2017-09-01)
+
+
+### Bug Fixes
+
+* Twitter profile look ([#195](https://github.com/newsuk/times-components/issues/195)) ([9989006](https://github.com/newsuk/times-components/commit/9989006))
+
+
+
+
 <a name="0.2.11"></a>
 ## [0.2.11](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.2.9...@times-components/author-head@0.2.11) (2017-09-01)
 
