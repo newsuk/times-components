@@ -11,7 +11,7 @@ astType.children = PropTypes.arrayOf(PropTypes.shape(astType));
 export const articleBylinePropTypes = {
   ast: PropTypes.arrayOf(PropTypes.shape(astType)).isRequired,
   style: PropTypes.shape({
-    containter: View.propTypes.style,
+    container: View.propTypes.style,
     byline: Text.propTypes.style,
     link: Text.propTypes.style
   })
