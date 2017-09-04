@@ -3,32 +3,48 @@
     {
       "name": "author",
       "attributes": {
-        "slug": "fiona-hamilton"
+        "slug": "alexandra-frean"
       },
       "children": [
         {
           "name": "text",
           "children": [
             {
-              "text": "Fiona Hamilton"
+              "text": "Alexandra Frean"
             }
           ]
         }
       ]
     }
   ],
-  "multipleAuthors": [
+  "singleInlineElement": [
+    {
+      "name": "inline",
+      "attributes": {},
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": "Lindsay McIntosh Scottish Political Editor"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorInTheBeginning": [
     {
       "name": "author",
       "attributes": {
-        "slug": "greg-hurst"
+        "slug": "camilla-long"
       },
       "children": [
         {
           "name": "text",
           "children": [
             {
-              "text": "Greg Hurst"
+              "text": "Camilla Long"
             }
           ]
         }
@@ -42,7 +58,23 @@
           "name": "text",
           "children": [
             {
-              "text": ", Social Affairs Correspondent | Mark Bridge, Technology Correspondent | "
+              "text": ", Environment Editor"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorAtTheEnd": [
+    {
+      "name": "inline",
+      "attributes": {},
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": "RBS Six Nations "
             }
           ]
         }
@@ -51,14 +83,170 @@
     {
       "name": "author",
       "attributes": {
-        "slug": "fiona-hamilton"
+        "slug": "mike-atherton"
       },
       "children": [
         {
           "name": "text",
           "children": [
             {
-              "text": "Fiona Hamilton"
+              "text": "Mike Atherton"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "multipleAuthorsCommaSeparated": [
+    {
+      "name": "author",
+      "attributes": {
+        "slug": "camilla-long"
+      },
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": "Camilla Long"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "inline",
+      "attributes": {},
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": ", "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "author",
+      "attributes": {
+        "slug": "mike-atherton"
+      },
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": "Mike Atherton"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "inline",
+      "attributes": {},
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": ", "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "author",
+      "attributes": {
+        "slug": "alexandra-frean"
+      },
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": "Alexandra Frean"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "multipleAuthorsSpaceSeparated": [
+    {
+      "name": "author",
+      "attributes": {
+        "slug": "camilla-long"
+      },
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": "Camilla Long"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "inline",
+      "attributes": {},
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": " "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "author",
+      "attributes": {
+        "slug": "mike-atherton"
+      },
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": "Mike Atherton"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "inline",
+      "attributes": {},
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": " "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "author",
+      "attributes": {
+        "slug": "alexandra-frean"
+      },
+      "children": [
+        {
+          "name": "text",
+          "children": [
+            {
+              "text": "Alexandra Frean"
             }
           ]
         }

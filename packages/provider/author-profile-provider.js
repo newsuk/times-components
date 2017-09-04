@@ -16,15 +16,12 @@ const query = gql`
       biography
       image
       twitter
-      url
       articles {
         count
         list(first: $first, skip: $skip) {
+          content(maxCharCount: 145, markupType: "paragraph")
           id
-          title
           label
-          publicationName
-          publishedTime
           leadAsset {
             ... on Image {
               title
@@ -41,7 +38,10 @@ const query = gql`
               }
             }
           }
-          teaser
+          publicationName
+          publishedTime
+          title
+          url
         }
       }
     }

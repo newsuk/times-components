@@ -57,6 +57,10 @@
     "preset": "react-native",
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules/"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|react-navigation|@times-components)",
+      "packages/?!author-profile"
     ]
   },
   "config": {
@@ -93,10 +97,10 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@storybook/addon-actions": "3.1.8",
-    "@storybook/react": "3.2.4",
-    "@storybook/react-native": "3.1.8",
-    "@times-components/fructose": "1.0.0",
+    "@storybook/addon-actions": "3.2.6",
+    "@storybook/react": "3.2.6",
+    "@storybook/react-native": "3.2.6",
+    "@times-components/fructose": "1.1.0",
     "coveralls": "2.13.1",
     "detox": "5.5.1",
     "eslint": "3.19.0",
@@ -105,7 +109,6 @@
     "eslint-plugin-import": "2.6.1",
     "eslint-plugin-jsx-a11y": "5.1.1",
     "eslint-plugin-react": "7.1.0",
-    "@times-components/fructose": "1.1.0",
     "jest": "20.0.4",
     "lcov-result-merger": "1.2.0",
     "lerna": "2.0.0",

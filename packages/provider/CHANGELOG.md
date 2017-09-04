@@ -3,6 +3,61 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.8"></a>
+## [0.3.8](https://github.com/newsuk/times-components/compare/@times-components/provider@0.3.7...@times-components/provider@0.3.8) (2017-09-01)
+
+
+### Bug Fixes
+
+* Twitter profile look ([#195](https://github.com/newsuk/times-components/issues/195)) ([9989006](https://github.com/newsuk/times-components/commit/9989006))
+
+
+
+
+<a name="0.3.7"></a>
+## [0.3.7](https://github.com/newsuk/times-components/compare/@times-components/provider@0.3.6...@times-components/provider@0.3.7) (2017-09-01)
+
+
+### Bug Fixes
+
+* fetch https images on native ([#189](https://github.com/newsuk/times-components/issues/189)) ([ae6f658](https://github.com/newsuk/times-components/commit/ae6f658))
+
+
+
+
+<a name="0.3.6"></a>
+## [0.3.6](https://github.com/newsuk/times-components/compare/@times-components/provider@0.3.5...@times-components/provider@0.3.6) (2017-08-31)
+
+
+### Bug Fixes
+
+* change provider query ([f12bb27](https://github.com/newsuk/times-components/commit/f12bb27))
+
+
+
+
+<a name="0.3.5"></a>
+## [0.3.5](https://github.com/newsuk/times-components/compare/@times-components/provider@0.3.4...@times-components/provider@0.3.5) (2017-08-31)
+
+
+### Bug Fixes
+
+* change teaser to content with 145 chars ([#182](https://github.com/newsuk/times-components/issues/182)) ([389a54e](https://github.com/newsuk/times-components/commit/389a54e))
+
+
+
+
+<a name="0.3.4"></a>
+## [0.3.4](https://github.com/newsuk/times-components/compare/@times-components/provider@0.3.2...@times-components/provider@0.3.4) (2017-08-29)
+
+
+### Bug Fixes
+
+* ensure no exception is thrown no asset ([#177](https://github.com/newsuk/times-components/issues/177)) ([05d573e](https://github.com/newsuk/times-components/commit/05d573e))
+
+
+
+
 <a name="0.3.3"></a>
 ## [0.3.3](https://github.com/newsuk/times-components/compare/@times-components/provider@0.3.2...@times-components/provider@0.3.3) (2017-08-25)
 

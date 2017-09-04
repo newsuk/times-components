@@ -1,0 +1,330 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleByline Web renders correctly with a single author 1`] = `
+<div
+  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-18u37iz rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+>
+  <a
+    className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-wordWrap-qvutc0"
+    dir="auto"
+    href="/profile/alexandra-frean"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="link"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
+        "textDecoration": "underline",
+        "whiteSpace": "pre",
+      }
+    }
+  >
+    Alexandra Frean
+  </a>
+</div>
+`;
+
+exports[`ArticleByline Web renders correctly with a single inline element 1`] = `
+<div
+  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-18u37iz rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+>
+  <span
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "whiteSpace": "pre",
+      }
+    }
+  >
+    Lindsay McIntosh Scottish Political Editor
+  </span>
+</div>
+`;
+
+exports[`ArticleByline Web renders correctly with an empty AST (empty byline on DB) 1`] = `
+<div
+  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-18u37iz rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+/>
+`;
+
+exports[`ArticleByline Web renders correctly with multiple authors separated by spaces 1`] = `
+<div
+  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-18u37iz rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+>
+  <a
+    className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-wordWrap-qvutc0"
+    dir="auto"
+    href="/profile/camilla-long"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="link"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
+        "textDecoration": "underline",
+        "whiteSpace": "pre",
+      }
+    }
+  >
+    Camilla Long
+  </a>
+  <span
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "whiteSpace": "pre",
+      }
+    }
+  >
+     
+  </span>
+  <a
+    className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-wordWrap-qvutc0"
+    dir="auto"
+    href="/profile/mike-atherton"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="link"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
+        "textDecoration": "underline",
+        "whiteSpace": "pre",
+      }
+    }
+  >
+    Mike Atherton
+  </a>
+  <span
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "whiteSpace": "pre",
+      }
+    }
+  >
+     
+  </span>
+  <a
+    className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-wordWrap-qvutc0"
+    dir="auto"
+    href="/profile/alexandra-frean"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="link"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
+        "textDecoration": "underline",
+        "whiteSpace": "pre",
+      }
+    }
+  >
+    Alexandra Frean
+  </a>
+</div>
+`;
+
+exports[`ArticleByline Web renders correctly with multiple authors separated by text with commas 1`] = `
+<div
+  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-18u37iz rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+>
+  <a
+    className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-wordWrap-qvutc0"
+    dir="auto"
+    href="/profile/camilla-long"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="link"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
+        "textDecoration": "underline",
+        "whiteSpace": "pre",
+      }
+    }
+  >
+    Camilla Long
+  </a>
+  <span
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "whiteSpace": "pre",
+      }
+    }
+  >
+    , 
+  </span>
+  <a
+    className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-wordWrap-qvutc0"
+    dir="auto"
+    href="/profile/mike-atherton"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="link"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
+        "textDecoration": "underline",
+        "whiteSpace": "pre",
+      }
+    }
+  >
+    Mike Atherton
+  </a>
+  <span
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "whiteSpace": "pre",
+      }
+    }
+  >
+    , 
+  </span>
+  <a
+    className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-wordWrap-qvutc0"
+    dir="auto"
+    href="/profile/alexandra-frean"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="link"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
+        "textDecoration": "underline",
+        "whiteSpace": "pre",
+      }
+    }
+  >
+    Alexandra Frean
+  </a>
+</div>
+`;
+
+exports[`ArticleByline Web renders correctly with styles 1`] = `
+<div
+  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-18u37iz rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+>
+  <a
+    className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-wordWrap-qvutc0"
+    dir="auto"
+    href="/profile/alexandra-frean"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="link"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
+        "textDecoration": "underline",
+        "whiteSpace": "pre",
+      }
+    }
+  >
+    Alexandra Frean
+  </a>
+</div>
+`;
+
+exports[`ArticleByline Web renders correctly with the author at the end 1`] = `
+<div
+  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-18u37iz rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+>
+  <span
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "whiteSpace": "pre",
+      }
+    }
+  >
+    RBS Six Nations 
+  </span>
+  <a
+    className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-wordWrap-qvutc0"
+    dir="auto"
+    href="/profile/mike-atherton"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="link"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
+        "textDecoration": "underline",
+        "whiteSpace": "pre",
+      }
+    }
+  >
+    Mike Atherton
+  </a>
+</div>
+`;
+
+exports[`ArticleByline Web renders correctly with the author in the begining 1`] = `
+<div
+  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-18u37iz rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+>
+  <a
+    className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-wordWrap-qvutc0"
+    dir="auto"
+    href="/profile/camilla-long"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="link"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
+        "textDecoration": "underline",
+        "whiteSpace": "pre",
+      }
+    }
+  >
+    Camilla Long
+  </a>
+  <span
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "whiteSpace": "pre",
+      }
+    }
+  >
+    , Environment Editor
+  </span>
+</div>
+`;
