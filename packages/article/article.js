@@ -33,17 +33,9 @@ class ArticlePage extends React.Component {
       "id",
       "label",
       "title",
-      "standfirst"
-      // NOTE flags fields are missed from the api
+      "standfirst",
+      "flags"
     ]);
-
-    // HACK for the flags and standfirst
-    Object.assign(articleHeaderData, {
-      newFlag: true,
-      sponsoredFlag: true,
-      updatedFlag: true,
-      exclusiveFlag: true
-    });
 
     const articleMidContainerData = pick(articleData, [
       "publicationName",
@@ -62,8 +54,8 @@ class ArticlePage extends React.Component {
         type: "article_body_row",
         data: i
       }))
-      // multiParagraph.map(i => ({ type: "article_body_row", data: i }))
     );
+    // flag
     return ArticleArray;
   }
 
@@ -78,10 +70,12 @@ class ArticlePage extends React.Component {
       );
     } else if (rowData.type === "leadAsset") {
       // HACK at the moment graphql just support http image (we need https for the mobile)
-      // rowData.data.crop.url = "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F26cb2178-868c-11e7-9f10-c918952dd8f2.jpg?crop=1322%2C743%2C260%2C319&resize=685"; // eslint-disable-line
+      // rowData.data.crop.url =  // eslint-disable-line
+      const TEMP_IMAGE_HTTP =
+        "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F26cb2178-868c-11e7-9f10-c918952dd8f2.jpg?crop=1322%2C743%2C260%2C319&resize=685";
       return (
         <View style={styles.LeadAsset}>
-          <Image source={{ uri: `https:${rowData.data.leadAsset.crop.url}` }} />
+          <Image source={{ uri: `https:${TEMP_IMAGE_HTTP}` }} />
           {Platform.OS === "web" && rowData.data.leadAsset.caption
             ? <View style={styles.CaptionWrapper}>
                 <Caption
@@ -112,22 +106,22 @@ class ArticlePage extends React.Component {
               </Text>
             : null}
           <View style={styles.ArticleFlag}>
-            {rowData.data.newFlag
+            {rowData.data.flags.includes("NEW")
               ? <View style={styles.ArticleFlagContainer}>
                   <NewArticleFlag />
                 </View>
               : null}
-            {rowData.data.updatedFlag
+            {rowData.data.flags.includes("UPDATED")
               ? <View style={styles.ArticleFlagContainer}>
                   <UpdatedArticleFlag />
                 </View>
               : null}
-            {rowData.data.exclusiveFlag
+            {rowData.data.flags.includes("EXCLUSIVE")
               ? <View style={styles.ArticleFlagContainer}>
                   <ExclusiveArticleFlag />
                 </View>
               : null}
-            {rowData.data.sponsoredFlag
+            {rowData.data.flags.includes("SPONSORED")
               ? <View style={styles.ArticleFlagContainer}>
                   <SponsoredArticleFlag />
                 </View>

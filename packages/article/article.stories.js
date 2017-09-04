@@ -12,11 +12,8 @@ import ArticleProvider from "./article-provider";
 const articleFixture = require("./fixtures/article.json").fixture;
 
 const networkInterface = createNetworkInterface({
-  uri: "https://hknmtcy3aj.execute-api.eu-west-1.amazonaws.com/prod/graphql"
+  uri: "http://localhost:4000/graphql"
 });
-
-// TEMP disable warning for rapid iteration
-// console.disableYellowBox = true;
 
 networkInterface.use([
   {
@@ -38,6 +35,11 @@ storiesOf("Article", module)
   .add("Apollo - long article with italic and bold", () =>
     <ApolloProvider client={client}>
       <ArticleProvider id="ccf235b7-bc11-4c3f-bbe5-b0c5c6fc2b29" />
+    </ApolloProvider>
+  )
+  .add("Apollo - Flags", () =>
+    <ApolloProvider client={client}>
+      <ArticleProvider id="198c4b2f-ecec-4f34-be53-c89f83bc1b44" />
     </ApolloProvider>
   )
   .add("Apollo - Multiple Label and italics", () =>

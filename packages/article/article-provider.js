@@ -11,6 +11,7 @@ const query = gql`
       publishedTime
       label
       standfirst
+      flags
       byline
       content
       leadAsset {
