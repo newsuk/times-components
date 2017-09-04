@@ -8,7 +8,7 @@ exports[`Article Flag renders Exclusive flag correctly 1`] = `
         "alignItems": "center",
         "flexDirection": "row",
       },
-      undefined,
+      Object {},
     ]
   }
 >
@@ -60,7 +60,7 @@ exports[`Article Flag renders New flag correctly 1`] = `
         "alignItems": "center",
         "flexDirection": "row",
       },
-      undefined,
+      Object {},
     ]
   }
 >
@@ -112,7 +112,7 @@ exports[`Article Flag renders Sponsored flag correctly 1`] = `
         "alignItems": "center",
         "flexDirection": "row",
       },
-      undefined,
+      Object {},
     ]
   }
 >
@@ -164,7 +164,7 @@ exports[`Article Flag renders Updated flag correctly 1`] = `
         "alignItems": "center",
         "flexDirection": "row",
       },
-      undefined,
+      Object {},
     ]
   }
 >
@@ -216,7 +216,7 @@ exports[`Article Flag renders correctly 1`] = `
         "alignItems": "center",
         "flexDirection": "row",
       },
-      undefined,
+      Object {},
     ]
   }
 >

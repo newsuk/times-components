@@ -37,7 +37,7 @@ exports[`Article test renders native correctly 1`] = `
               "alignItems": "center",
               "flexDirection": "row",
             },
-            undefined,
+            Object {},
           ]
         }
       >

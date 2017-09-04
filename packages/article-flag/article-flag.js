@@ -43,52 +43,52 @@ const ArticleFlag = ({ title, color, style }) => {
 ArticleFlag.propTypes = {
   title: PropTypes.string.isRequired,
   color: PropTypes.string,
-  style: PropTypes.number
+  style: View.propTypes.style
 };
 
 ArticleFlag.defaultProps = {
   color: "black",
-  style: undefined
+  style: {}
 };
 
 export const NewArticleFlag = props =>
   <ArticleFlag title="new" color="#E34605" style={props.style} />;
 
 NewArticleFlag.propTypes = {
-  style: PropTypes.string
+  style: View.propTypes.style
 };
 NewArticleFlag.defaultProps = {
-  style: undefined
+  style: {}
 };
 
 export const UpdatedArticleFlag = props =>
   <ArticleFlag title="updated" color="#3C81BE" style={props.style} />;
 
 UpdatedArticleFlag.propTypes = {
-  style: PropTypes.string
+  style: View.propTypes.style
 };
 UpdatedArticleFlag.defaultProps = {
-  style: undefined
+  style: {}
 };
 
 export const ExclusiveArticleFlag = props =>
   <ArticleFlag title="exclusive" color="#C51D24" style={props.style} />;
 
 ExclusiveArticleFlag.propTypes = {
-  style: PropTypes.string
+  style: View.propTypes.style
 };
 ExclusiveArticleFlag.defaultProps = {
-  style: undefined
+  style: {}
 };
 
 export const SponsoredArticleFlag = props =>
   <ArticleFlag title="sponsored" color="#4D4D4D" style={props.style} />;
 
 SponsoredArticleFlag.propTypes = {
-  style: PropTypes.string
+  style: View.propTypes.style
 };
 SponsoredArticleFlag.defaultProps = {
-  style: undefined
+  style: {}
 };
 
 export default ArticleFlag;

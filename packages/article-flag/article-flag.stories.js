@@ -12,15 +12,12 @@ import {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "#EAFF00"
-  },
-  text: {
-    fontSize: 12
   }
 });
 
 storiesOf("ArticleFlag", module)
-  .add("ArticleFlag (New) with extra styles", () =>
-    <NewArticleFlag containerStyle={styles.container} />
+  .add("ArticleFlag (New) extra styles", () =>
+    <NewArticleFlag style={styles.container} />
   )
   .add("ArticleFlag (New)", () => <NewArticleFlag />)
   .add("ArticleFlag (Updated)", () => <UpdatedArticleFlag />)
