@@ -4,7 +4,7 @@ import ReactNative from "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 
-import Article from "./article";
+import Article from "../article";
 
 describe("Article test", () => {
   it("renders native correctly", () => {
