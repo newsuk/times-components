@@ -105,28 +105,30 @@ class ArticlePage extends React.Component {
                 {rowData.data.standfirst}
               </Text>
             : null}
-          <View style={styles.ArticleFlag}>
-            {rowData.data.flags.includes("NEW")
-              ? <View style={styles.ArticleFlagContainer}>
-                  <NewArticleFlag />
-                </View>
-              : null}
-            {rowData.data.flags.includes("UPDATED")
-              ? <View style={styles.ArticleFlagContainer}>
-                  <UpdatedArticleFlag />
-                </View>
-              : null}
-            {rowData.data.flags.includes("EXCLUSIVE")
-              ? <View style={styles.ArticleFlagContainer}>
-                  <ExclusiveArticleFlag />
-                </View>
-              : null}
-            {rowData.data.flags.includes("SPONSORED")
-              ? <View style={styles.ArticleFlagContainer}>
-                  <SponsoredArticleFlag />
-                </View>
-              : null}
-          </View>
+          {rowData.data.flags.length
+            ? <View style={styles.ArticleFlag}>
+                {rowData.data.flags.includes("NEW")
+                  ? <View style={styles.ArticleFlagContainer}>
+                      <NewArticleFlag />
+                    </View>
+                  : null}
+                {rowData.data.flags.includes("UPDATED")
+                  ? <View style={styles.ArticleFlagContainer}>
+                      <UpdatedArticleFlag />
+                    </View>
+                  : null}
+                {rowData.data.flags.includes("EXCLUSIVE")
+                  ? <View style={styles.ArticleFlagContainer}>
+                      <ExclusiveArticleFlag />
+                    </View>
+                  : null}
+                {rowData.data.flags.includes("SPONSORED")
+                  ? <View style={styles.ArticleFlagContainer}>
+                      <SponsoredArticleFlag />
+                    </View>
+                  : null}
+              </View>
+            : null}
         </View>
       );
     } else if (rowData.type === "middleContaner") {
