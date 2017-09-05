@@ -1,4 +1,4 @@
 import test from "./link-helper";
-import Link from "../link.js";
+import Link, { TextLink } from "../link.js";
 
-test(Link);
+test(Link, TextLink);
