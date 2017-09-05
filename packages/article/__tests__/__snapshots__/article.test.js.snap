@@ -1,5 +1,1060 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Article test renders article no flags 1`] = `
+<View
+  style={
+    Object {
+      "paddingBottom": 66,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#003d58",
+        "height": 66,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#fff",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 20,
+          "fontWeight": "bold",
+          "paddingTop": 31,
+          "textAlign": "center",
+        }
+      }
+    >
+      News
+    </Text>
+  </View>
+  <RCTScrollView
+    dataSource={
+      ListViewDataSource {
+        "items": 5,
+      }
+    }
+    initialListSize={10}
+    pageSize={1}
+    renderRow={[Function]}
+    renderScrollComponent={[Function]}
+    scrollRenderAheadDistance={10}
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "marginBottom": 6,
+          }
+        }
+      >
+        <View
+          onLayout={[Function]}
+        >
+          <Image
+            onError={[Function]}
+            onLoad={[Function]}
+            source={
+              Object {
+                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F26cb2178-868c-11e7-9f10-c918952dd8f2.jpg?crop=1322%2C743%2C260%2C319&resize=685",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 1,
+                  "width": 750,
+                },
+                undefined,
+              ]
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingBottom": 3,
+              "paddingTop": 4,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                },
+                Object {
+                  "color": "#008347",
+                },
+              ]
+            }
+          >
+            R A N D O M   L A B E L
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "paddingBottom": 7,
+              },
+            ]
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": "#1D1D1B",
+                  "fontFamily": "TimesModern-Bold",
+                  "fontSize": 22,
+                  "fontWeight": "400",
+                  "lineHeight": 25,
+                  "marginBottom": 8,
+                },
+                Object {
+                  "color": "#000000",
+                  "fontSize": 30,
+                  "lineHeight": 32,
+                  "marginBottom": 0,
+                },
+              ]
+            }
+          >
+            Supplement In Depth Template (Style)
+          </Text>
+        </View>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "fontFamily": "TimesModern-Regular",
+                "fontSize": 21,
+                "lineHeight": 23,
+                "paddingBottom": 9,
+              },
+            ]
+          }
+        >
+          How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            Object {
+              "paddingTop": 9,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "borderBottomColor": "#d0cece",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "borderTopColor": "#d0cece",
+                  "borderTopWidth": 0.5,
+                  "paddingTop": 6,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                  }
+                }
+              >
+                Rick Broadbent
+              </Text>
+            </View>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "borderTopColor": "#d0cece",
+                  "borderTopWidth": 0.5,
+                  "paddingTop": 6,
+                },
+              ]
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                  },
+                  Object {},
+                ]
+              }
+            >
+              Friday March 13 2015
+              , The Times
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#333",
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "lineHeight": 20,
+              }
+            }
+          >
+            Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontStyle": "italic",
+                }
+              }
+            >
+              Telegraph 
+            </Text>
+            last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`Article test renders article no flags no standfirst 1`] = `
+<View
+  style={
+    Object {
+      "paddingBottom": 66,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#003d58",
+        "height": 66,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#fff",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 20,
+          "fontWeight": "bold",
+          "paddingTop": 31,
+          "textAlign": "center",
+        }
+      }
+    >
+      News
+    </Text>
+  </View>
+  <RCTScrollView
+    dataSource={
+      ListViewDataSource {
+        "items": 5,
+      }
+    }
+    initialListSize={10}
+    pageSize={1}
+    renderRow={[Function]}
+    renderScrollComponent={[Function]}
+    scrollRenderAheadDistance={10}
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "marginBottom": 6,
+          }
+        }
+      >
+        <View
+          onLayout={[Function]}
+        >
+          <Image
+            onError={[Function]}
+            onLoad={[Function]}
+            source={
+              Object {
+                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F26cb2178-868c-11e7-9f10-c918952dd8f2.jpg?crop=1322%2C743%2C260%2C319&resize=685",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 1,
+                  "width": 750,
+                },
+                undefined,
+              ]
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingBottom": 3,
+              "paddingTop": 4,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                },
+                Object {
+                  "color": "#008347",
+                },
+              ]
+            }
+          >
+            R A N D O M   L A B E L
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "paddingBottom": 7,
+              },
+            ]
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": "#1D1D1B",
+                  "fontFamily": "TimesModern-Bold",
+                  "fontSize": 22,
+                  "fontWeight": "400",
+                  "lineHeight": 25,
+                  "marginBottom": 8,
+                },
+                Object {
+                  "color": "#000000",
+                  "fontSize": 30,
+                  "lineHeight": 32,
+                  "marginBottom": 0,
+                },
+              ]
+            }
+          >
+            Supplement In Depth Template (Style)
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            Object {
+              "paddingTop": 9,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "borderBottomColor": "#d0cece",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "borderTopColor": "#d0cece",
+                  "borderTopWidth": 0.5,
+                  "paddingTop": 6,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                  }
+                }
+              >
+                Rick Broadbent
+              </Text>
+            </View>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "borderTopColor": "#d0cece",
+                  "borderTopWidth": 0.5,
+                  "paddingTop": 6,
+                },
+              ]
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                  },
+                  Object {},
+                ]
+              }
+            >
+              Friday March 13 2015
+              , The Times
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#333",
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "lineHeight": 20,
+              }
+            }
+          >
+            Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontStyle": "italic",
+                }
+              }
+            >
+              Telegraph 
+            </Text>
+            last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`Article test renders full article correctly 1`] = `
+<View
+  style={
+    Object {
+      "paddingBottom": 66,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#003d58",
+        "height": 66,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#fff",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 20,
+          "fontWeight": "bold",
+          "paddingTop": 31,
+          "textAlign": "center",
+        }
+      }
+    >
+      News
+    </Text>
+  </View>
+  <RCTScrollView
+    dataSource={
+      ListViewDataSource {
+        "items": 5,
+      }
+    }
+    initialListSize={10}
+    pageSize={1}
+    renderRow={[Function]}
+    renderScrollComponent={[Function]}
+    scrollRenderAheadDistance={10}
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "marginBottom": 6,
+          }
+        }
+      >
+        <View
+          onLayout={[Function]}
+        >
+          <Image
+            onError={[Function]}
+            onLoad={[Function]}
+            source={
+              Object {
+                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F26cb2178-868c-11e7-9f10-c918952dd8f2.jpg?crop=1322%2C743%2C260%2C319&resize=685",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 1,
+                  "width": 750,
+                },
+                undefined,
+              ]
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingBottom": 3,
+              "paddingTop": 4,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                },
+                Object {
+                  "color": "#008347",
+                },
+              ]
+            }
+          >
+            R A N D O M   L A B E L
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "paddingBottom": 7,
+              },
+            ]
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": "#1D1D1B",
+                  "fontFamily": "TimesModern-Bold",
+                  "fontSize": 22,
+                  "fontWeight": "400",
+                  "lineHeight": 25,
+                  "marginBottom": 8,
+                },
+                Object {
+                  "color": "#000000",
+                  "fontSize": 30,
+                  "lineHeight": 32,
+                  "marginBottom": 0,
+                },
+              ]
+            }
+          >
+            Supplement In Depth Template (Style)
+          </Text>
+        </View>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "fontFamily": "TimesModern-Regular",
+                "fontSize": 21,
+                "lineHeight": 23,
+                "paddingBottom": 9,
+              },
+            ]
+          }
+        >
+          How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "flexDirection": "row",
+                "marginBottom": 11,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Object {
+                "marginRight": 14,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "marginBottom": 1,
+                    "marginRight": 5,
+                  }
+                }
+              >
+                <svg
+                  height={7}
+                  style={Object {}}
+                  viewBox="0 0 20 20"
+                  width={7}
+                >
+                  <g
+                    fill="#E34605"
+                    style={Object {}}
+                  >
+                    <path
+                      d="M 0,10 10,20 20,10 10,0 Z"
+                      style={Object {}}
+                    />
+                  </g>
+                </svg>
+              </View>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "TimesDigital-RegularSC",
+                      "fontSize": 10,
+                      "fontWeight": "400",
+                    },
+                    Object {
+                      "color": "#E34605",
+                    },
+                  ]
+                }
+              >
+                N E W
+              </Text>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "marginRight": 14,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "marginBottom": 1,
+                    "marginRight": 5,
+                  }
+                }
+              >
+                <svg
+                  height={7}
+                  style={Object {}}
+                  viewBox="0 0 20 20"
+                  width={7}
+                >
+                  <g
+                    fill="#C51D24"
+                    style={Object {}}
+                  >
+                    <path
+                      d="M 0,10 10,20 20,10 10,0 Z"
+                      style={Object {}}
+                    />
+                  </g>
+                </svg>
+              </View>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "TimesDigital-RegularSC",
+                      "fontSize": 10,
+                      "fontWeight": "400",
+                    },
+                    Object {
+                      "color": "#C51D24",
+                    },
+                  ]
+                }
+              >
+                E X C L U S I V E
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            Object {
+              "paddingTop": 9,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "borderBottomColor": "#d0cece",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "borderTopColor": "#d0cece",
+                  "borderTopWidth": 0.5,
+                  "paddingTop": 6,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                  }
+                }
+              >
+                Rick Broadbent
+              </Text>
+            </View>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "borderTopColor": "#d0cece",
+                  "borderTopWidth": 0.5,
+                  "paddingTop": 6,
+                },
+              ]
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                  },
+                  Object {},
+                ]
+              }
+            >
+              Friday March 13 2015
+              , The Times
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#333",
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "lineHeight": 20,
+              }
+            }
+          >
+            Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontStyle": "italic",
+                }
+              }
+            >
+              Telegraph 
+            </Text>
+            last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
 exports[`Article test renders native correctly 1`] = `
 <View
   style={undefined}

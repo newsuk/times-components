@@ -9,7 +9,7 @@ import React from "react";
 import Article from "./article";
 import ArticleProvider from "./article-provider";
 
-const articleFixture = require("./fixtures/article.json").fixture;
+const fullArticleFixture = require("./fixtures/full-article.json");
 
 const networkInterface = createNetworkInterface({
   uri: "http://localhost:4000/graphql"
@@ -57,4 +57,4 @@ storiesOf("Article", module)
       <ArticleProvider id="978ecf38-8eff-11e7-86bd-27eb324693e0" />
     </ApolloProvider>
   )
-  .add("Fixtures - Basic", () => <Article {...articleFixture} />);
+  .add("Fixtures - Full", () => <Article {...fullArticleFixture} />);
