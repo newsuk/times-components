@@ -1,5 +1,12 @@
 import React from "react";
-import { Text, View, ListView, Platform, StyleSheet } from "react-native";
+import {
+  Text,
+  View,
+  ListView,
+  Platform,
+  StyleSheet,
+  ActivityIndicator
+} from "react-native";
 import PropTypes from "prop-types";
 import Ad, { AdComposer } from "@times-components/ad"; // , { AdComposer }
 import {
@@ -171,7 +178,11 @@ class ArticlePage extends React.Component {
 
   render() {
     if (this.props.data.loading) {
-      return <Text>Loading ....</Text>;
+      return (
+        <View style={styles.Container}>
+          <ActivityIndicator size={"large"} />
+        </View>
+      );
     }
 
     this.state = {

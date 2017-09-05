@@ -1,6 +1,13 @@
 import { StyleSheet, Platform } from "react-native";
 
-const globalStyle = StyleSheet.create({});
+const globalStyle = StyleSheet.create({
+  container: {
+    alignItems: "center",
+    flex: 1,
+    flexBasis: "100%",
+    justifyContent: "center"
+  }
+});
 
 const webStyles = StyleSheet.create({
   // ArticleAd: {
