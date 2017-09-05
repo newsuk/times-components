@@ -14,7 +14,7 @@ const webStyles = StyleSheet.create({
     paddingRight: 10
   },
   ArticleMiddleContainer: {
-    marginTop: 9
+    paddingTop: 9
   },
   ArticleLabel: {
     marginTop: 4,
@@ -45,19 +45,16 @@ const webStyles = StyleSheet.create({
   ArticleMeta: {
     marginBottom: 20,
     borderBottomColor: "#d0cece",
-    borderBottomWidth: 1
+    borderBottomWidth: StyleSheet.hairlineWidth
   },
   ArticleMetaElement: {
     borderTopColor: "#d0cece",
-    borderTopWidth: 1,
+    borderTopWidth: StyleSheet.hairlineWidth,
     paddingTop: 6,
     paddingBottom: 1
   },
   LeadAsset: {
     marginBottom: 6
-  },
-  ArticleText: {
-    // color: "#333"
   },
   CaptionWrapper: {
     paddingLeft: 10,
@@ -83,14 +80,14 @@ const nativeStyles = StyleSheet.create({
     paddingRight: 10
   },
   ArticleMiddleContainer: {
-    marginTop: 9
+    paddingTop: 9
   },
   ArticleLabel: {
-    marginTop: 4,
-    marginBottom: 3
+    paddingTop: 4,
+    paddingBottom: 3
   },
   ArticleHeadline: {
-    marginBottom: 7
+    paddingBottom: 7
   },
   ArticleHeadLineText: {
     fontSize: 30,
@@ -114,23 +111,18 @@ const nativeStyles = StyleSheet.create({
   ArticleMeta: {
     marginBottom: 20,
     borderBottomColor: "#d0cece",
-    borderBottomWidth: 1
+    borderBottomWidth: StyleSheet.hairlineWidth
   },
   ArticleMetaElement: {
     borderTopColor: "#d0cece",
-    borderTopWidth: 1,
-    paddingTop: 6,
-    paddingBottom: 1
+    borderTopWidth: StyleSheet.hairlineWidth,
+    paddingTop: 6
   },
   LeadAsset: {
     marginBottom: 6
   },
-  ArticleText: {
-    // color: "#333"
-  },
   ArticleTextWrapper: {
     marginBottom: 20
-    // backgroundColor: "yellow"
   },
   ArticleTextElement: {
     fontFamily: "TimesDigitalW04",

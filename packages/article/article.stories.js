@@ -37,7 +37,7 @@ storiesOf("Article", module)
       <ArticleProvider id="ccf235b7-bc11-4c3f-bbe5-b0c5c6fc2b29" />
     </ApolloProvider>
   )
-  .add("Apollo - Flags", () =>
+  .add("Apollo - Label, Flags, Standfirst", () =>
     <ApolloProvider client={client}>
       <ArticleProvider id="198c4b2f-ecec-4f34-be53-c89f83bc1b44" />
     </ApolloProvider>

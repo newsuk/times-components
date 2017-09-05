@@ -94,19 +94,19 @@ class ArticlePage extends React.Component {
                 <ArticleLabel title={rowData.data.label} color="#008347" />
               </View>
             : null}
-          <View style={styles.ArticleHeadline}>
+          <View style={[styles.ArticleHeadline]}>
             <ArticleHeadline
               title={rowData.data.title}
               style={styles.ArticleHeadLineText}
             />
           </View>
           {rowData.data.standfirst
-            ? <Text style={styles.StandFirst}>
+            ? <Text style={[styles.StandFirst]}>
                 {rowData.data.standfirst}
               </Text>
             : null}
           {rowData.data.flags.length
-            ? <View style={styles.ArticleFlag}>
+            ? <View style={[styles.ArticleFlag]}>
                 {rowData.data.flags.includes("NEW")
                   ? <View style={styles.ArticleFlagContainer}>
                       <NewArticleFlag />
