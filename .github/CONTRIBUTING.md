@@ -92,6 +92,24 @@ Fructose also relies on an application existing within the project, in this case
 If you run `npm run test:fructose` in the root directory it will run fructose tests for all of the components.
 
 
+## Local App Deployment
+
+### Android
+Follow these steps to deploy the times component to a real android device
+Make sure you android device has trusted the connected computer and that `usb debugging / developer mode` has been turned on.
+Follow the below steps
+
+
+* Plug device into computer
+* Use `adb devices` and verify that your device is shown
+* Run `Yarn`
+* Run  `storybook-native`
+* Start [The Times Public Api](https://github.com/newsuk/times-public-api)
+
+
+
+
+
 ## Folder Structure
 
 An example component/package looks like this:
