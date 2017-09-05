@@ -7585,13 +7585,23 @@ exports[`renders profile header 1`] = `
 `;
 
 exports[`renders profile loading 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexBasis": "100%",
+      "justifyContent": "center",
+    }
+  }
 >
-  Loading...
-</Text>
+  <ActivityIndicator
+    animating={true}
+    color="#999999"
+    hidesWhenStopped={true}
+    size="large"
+  />
+</View>
 `;
 
 exports[`renders profile separator 1`] = `
