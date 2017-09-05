@@ -95,19 +95,28 @@ If you run `npm run test:fructose` in the root directory it will run fructose te
 ## Local App Deployment
 
 ### Android
-Follow these steps to deploy the times component to a real android device
-Make sure you android device has trusted the connected computer and that `usb debugging / developer mode` has been turned on.
+Follow these steps to deploy storybook native to a real android device.
+Make sure your android device has trusted the connected computer and that `usb debugging / developer mode` has been turned on.
 Follow the below steps
 
+* Plug the device into the computer
+* Run `adb devices` and verify that your device is shown
+* Start a local instance of [The Times Public Api](https://github.com/newsuk/times-public-api)
+* Run `yarn`
+* Run  `yarn storybook-native`
+* Run `yarn android` this should install the app to your device
+* Once installed it is likely you will see `Failed to connect to localhost *`
+* Run `adb reverse tcp:4000 tcp:4000`
+* Run `adb reverse tcp:8081 tcp:8081`
+* Run `adb reverse tcp:7007 tcp:7007`
+* Shake the device and reload
+* Open story book on your computer and load a story
 
-* Plug device into computer
-* Use `adb devices` and verify that your device is shown
-* Run `Yarn`
-* Run  `storybook-native`
-* Start [The Times Public Api](https://github.com/newsuk/times-public-api)
-
-
-
+#### Trouble Shooting
+- If your device is complaining about about `story-loader.js` not existing - run `yarn storybook-native` before `yarn android`. This should generate the missing file.
+- If your device is complaining about being unable to reach `localhost` use the `abd reverse` commands
+- If still struggling; shake the device and `debug js remotely`. Open a console on your computer for more info on the error
+- If you're still struggling verify that you are able to run `yarn storybook` and that it works in web view.
 
 
 ## Folder Structure
