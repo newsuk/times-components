@@ -1,6 +1,6 @@
 {
   "name": "@times-components/error-view",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "Handles errors",
   "main": "error-view.js",
   "scripts": {
@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/brightcove-video": "0.3.6",
+    "@times-components/brightcove-video": "0.3.7",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-loader": "7.0.0",

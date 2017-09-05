@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.7"></a>
+## [0.3.7](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@0.3.6...@times-components/brightcove-video@0.3.7) (2017-09-05)
+
+
+### Bug Fixes
+
+* use 4.x version of brightcove android SDK ([#200](https://github.com/newsuk/times-components/issues/200)) ([16b79f9](https://github.com/newsuk/times-components/commit/16b79f9))
+
+
+
+
 <a name="0.3.6"></a>
 ## [0.3.6](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@0.3.5...@times-components/brightcove-video@0.3.6) (2017-08-30)
 
