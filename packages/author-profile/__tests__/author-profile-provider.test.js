@@ -3,7 +3,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import { resetMockGraphQLProps, setMockGraphQLProps } from "react-apollo";
-import { AuthorProfileProvider } from "../provider";
+import AuthorProfile from "../author-profile-provider";
 import example from "../example.json";
 
 beforeEach(() => {
@@ -19,7 +19,7 @@ it("renders data", () => {
   });
 
   const tree = renderer
-    .create(<AuthorProfileProvider slug="fiona-hamilton" />)
+    .create(<AuthorProfile slug="fiona-hamilton" />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
@@ -31,7 +31,7 @@ it("renders loading state", () => {
     }
   });
 
-  const tree = renderer.create(<AuthorProfileProvider />).toJSON();
+  const tree = renderer.create(<AuthorProfile />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -48,8 +48,6 @@ it("renders data from graphql", done => {
     return done();
   });
 
-  const tree = renderer
-    .create(<AuthorProfileProvider slug="slug-value" />)
-    .toJSON();
+  const tree = renderer.create(<AuthorProfile slug="slug-value" />).toJSON();
   expect(tree).toMatchSnapshot();
 });

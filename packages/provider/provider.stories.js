@@ -2,7 +2,6 @@ import React from "react";
 import { Text } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
-import { withPageState } from "@times-components/pagination";
 
 import {
   ApolloClient,
@@ -12,7 +11,7 @@ import {
   gql
 } from "react-apollo";
 
-import connectGraphql, { AuthorProfileProvider } from "./provider.js";
+import connectGraphql from "./provider.js";
 
 const Component = props =>
   <Text>
@@ -65,16 +64,3 @@ storiesOf("Provider", module).add("Provider", () => {
     </ApolloProvider>
   );
 });
-
-const AuthorProfileWithPageState = withPageState(AuthorProfileProvider);
-storiesOf("Provider", module).add("AuthorProfileProvider", () =>
-  <ApolloProvider client={client}>
-    <AuthorProfileWithPageState
-      generatePageLink={page => `https://www.thetimes.co.uk?page=${page}`}
-      imageRatio="3:2"
-      slug="fiona-hamilton"
-      page={1}
-      pageSize={3}
-    />
-  </ApolloProvider>
-);

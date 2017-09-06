@@ -1,7 +1,7 @@
 /* globals withComponent test expect element by beforeEach */
 import { StyleSheet, View } from "react-native";
 import React from "react";
-import AuthorProfile from "./author-profile";
+import { Component as AuthorProfile } from "./author-profile";
 import authorProfileGenerator from "./fixture-generator";
 
 const styles = StyleSheet.create({
