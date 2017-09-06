@@ -16,12 +16,12 @@ example.articles.list = example.articles.list.map(el => ({
 }));
 
 const props = {
-  data: Object.assign({}, example, {
+  result: Object.assign({}, example, {
     count: example.articles.count,
     page: 1,
     pageSize: 10
   }),
-  isLoading: false
+  loading: false
 };
 
 export default AuthorProfileContent => {
@@ -39,8 +39,8 @@ export default AuthorProfileContent => {
 
   it("renders profile loading", () => {
     const p = Object.assign({}, props, {
-      data: null,
-      isLoading: true
+      result: null,
+      loading: true
     });
     const component = renderer.create(<AuthorProfile {...p} />);
 
@@ -49,8 +49,8 @@ export default AuthorProfileContent => {
 
   it("renders profile empty", () => {
     const p = Object.assign({}, props, {
-      data: null,
-      isLoading: false
+      result: null,
+      loading: false
     });
 
     const component = renderer.create(<AuthorProfile {...p} />);
@@ -60,7 +60,7 @@ export default AuthorProfileContent => {
 
   it("renders profile error", () => {
     const p = Object.assign({}, props, {
-      data: null,
+      result: null,
       error: {
         error: "error"
       }
@@ -72,7 +72,9 @@ export default AuthorProfileContent => {
   });
 
   it("renders profile header", () => {
-    const component = renderer.create(<AuthorProfileHeader {...props.data} />);
+    const component = renderer.create(
+      <AuthorProfileHeader {...props.result} />
+    );
 
     expect(component).toMatchSnapshot();
   });
@@ -84,7 +86,9 @@ export default AuthorProfileContent => {
   });
 
   it("renders profile content component", () => {
-    const component = renderer.create(<AuthorProfileContent {...props.data} />);
+    const component = renderer.create(
+      <AuthorProfileContent {...props} {...props.result} />
+    );
 
     expect(component).toMatchSnapshot();
   });

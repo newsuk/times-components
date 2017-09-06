@@ -1,8 +1,9 @@
+/* eslint-disable graphql/template-strings */
+
 import React from "react";
 import { Text } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
-import { withPageState } from "@times-components/pagination";
 
 import {
   ApolloClient,
@@ -12,17 +13,7 @@ import {
   gql
 } from "react-apollo";
 
-import connectGraphql, { AuthorProfileProvider } from "./provider.js";
-
-const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
-
-const query = gql`
-  {
-    author(slug: "fiona-hamilton") {
-      name
-    }
-  }
-`;
+import connect, { AuthorProfileProvider } from "./provider.js";
 
 const fragmentMatcher = new IntrospectionFragmentMatcher({
   introspectionQueryResultData: {
@@ -54,24 +45,53 @@ const client = new ApolloClient({
   fragmentMatcher
 });
 
-storiesOf("Provider", module).add("Provider", () => {
-  const WithData = connectGraphql(query)(Component);
-  return (
-    <ApolloProvider client={client}>
-      <WithData />
-    </ApolloProvider>
-  );
-});
+storiesOf("Provider", module)
+  .add("Default", () => {
+    const query = gql`
+      {
+        author(slug: "fiona-hamilton") {
+          name
+        }
+      }
+    `;
 
-const AuthorProfileWithPageState = withPageState(AuthorProfileProvider);
+    const Query = connect(query);
+    return (
+      <ApolloProvider client={client}>
+        <Query>
+          {(...props) => <Text>{JSON.stringify(props, null, 2)}</Text>}
+        </Query>
+      </ApolloProvider>
+    );
+  })
+  .add("Error", () => {
+    const query = gql`
+      {
+        error(slug: "fiona-hamilton") {
+          name
+        }
+      }
+    `;
+
+    const Query = connect(query);
+    return (
+      <ApolloProvider client={client}>
+        <Query>
+          {(...props) => <Text>{JSON.stringify(props, null, 2)}</Text>}
+        </Query>
+      </ApolloProvider>
+    );
+  });
+
 storiesOf("Provider", module).add("AuthorProfileProvider", () => (
   <ApolloProvider client={client}>
-    <AuthorProfileWithPageState
-      generatePageLink={page => `https://www.thetimes.co.uk?page=${page}`}
+    <AuthorProfileProvider
       imageRatio="3:2"
       slug="fiona-hamilton"
       page={1}
       pageSize={3}
-    />
+    >
+      {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+    </AuthorProfileProvider>
   </ApolloProvider>
 ));

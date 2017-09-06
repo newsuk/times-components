@@ -7,8 +7,7 @@ import AuthorProfileItemSeparator from "./author-profile-item-separator";
 
 const AuthorProfile = props => (
   <ScrollView testID="scroll-view">
-    <AuthorProfileHeader {...props} />
-    {props.articles.list.map((item, key) => {
+    {props.list.map((item, key) => {
       const separatorComponent =
         key > 0 ? <AuthorProfileItemSeparator /> : null;
 

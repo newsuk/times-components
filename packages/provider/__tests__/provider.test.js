@@ -1,10 +1,11 @@
 /* eslint-env jest */
+/* eslint-disable graphql/template-strings */
 
 import React from "react";
 import renderer from "react-test-renderer";
 import { resetMockGraphQLProps, setMockGraphQLProps, gql } from "react-apollo";
 import { Text } from "react-native";
-import connectGraphql from "../provider";
+import connect from "../provider";
 
 beforeEach(() => {
   resetMockGraphQLProps();
@@ -15,16 +16,16 @@ it("renders data", () => {
 
   const query = gql`
     query Query($slug: Slug!) {
-      author(slug: $slug) {
-        name
-      }
+      random
     }
   `;
-  const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
+  const Query = connect(query);
 
-  const ComponentWithData = connectGraphql(query)(Component);
-
-  const tree = renderer.create(<ComponentWithData />).toJSON();
+  const tree = renderer
+    .create(
+      <Query>{props => <Text>{JSON.stringify(props, null, 2)}</Text>}</Query>
+    )
+    .toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -33,16 +34,16 @@ it("renders loading state", () => {
 
   const query = gql`
     {
-      article(id: "foo") {
-        label
-      }
+      random
     }
   `;
-  const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
+  const Query = connect(query);
 
-  const ComponentWithData = connectGraphql(query)(Component);
-
-  const tree = renderer.create(<ComponentWithData />).toJSON();
+  const tree = renderer
+    .create(
+      <Query>{props => <Text>{JSON.stringify(props, null, 2)}</Text>}</Query>
+    )
+    .toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -54,27 +55,25 @@ it("renders data from graphql", () => {
     }
   };
 
-  setMockGraphQLProps(data, (query, extras) => {
-    expect(extras.options.variables.slug).toEqual("slug-value");
-  });
+  setMockGraphQLProps(data);
 
   const query = gql`
     query Query($slug: Slug!) {
-      author(slug: $slug) {
-        twitter
-      }
+      random
     }
   `;
-  const Component = params => {
-    expect(params.data).toEqual(data.data);
-    expect(params.slug).toEqual("slug-value");
-    return <Text>{JSON.stringify(params, null, 2)}</Text>;
-  };
-
-  const ComponentWithData = connectGraphql(query)(Component);
+  const Query = connect(query);
 
   const tree = renderer
-    .create(<ComponentWithData slug={"slug-value"} />)
+    .create(
+      <Query slug="slug-value">
+        {props => {
+          expect(props.slug).toEqual("slug-value");
+          expect(props.data).toEqual("data");
+          return <Text>{JSON.stringify(props, null, 2)}</Text>;
+        }}
+      </Query>
+    )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
@@ -94,14 +93,17 @@ it("renders data using prop variables", done => {
 
   const query = gql`
     query Query($slug: Slug!) {
-      author(slug: $slug) {
-        name
-      }
+      random
     }
   `;
-  const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
+  const Query = connect(query);
 
-  const ComponentWithData = connectGraphql(query)(Component);
-
-  renderer.create(<ComponentWithData slug={"slug-value"} />).toJSON();
+  const tree = renderer
+    .create(
+      <Query slug="slug-value">
+        {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+      </Query>
+    )
+    .toJSON();
+  expect(tree).toMatchSnapshot();
 });

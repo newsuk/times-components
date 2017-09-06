@@ -1,6 +1,7 @@
 import connect from "./connect";
+import AuthorHeadProvider from "./author-head-provider";
 import AuthorProfileProvider from "./author-profile-provider";
 
 export default connect;
 
-export { AuthorProfileProvider };
+export { AuthorHeadProvider, AuthorProfileProvider };

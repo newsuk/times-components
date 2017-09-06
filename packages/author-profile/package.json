@@ -2,7 +2,7 @@
   "name": "@times-components/author-profile",
   "version": "0.6.4",
   "description": "Author info along with articles they have written",
-  "main": "author-profile.js",
+  "main": "index.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
@@ -41,6 +41,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "graphql": "0.11.3",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-loader": "7.0.0",
@@ -60,18 +61,21 @@
     "jest": "20.0.4",
     "jsdom": "11.1.0",
     "react": "15.4.2",
+    "react-apollo": "1.4.14",
     "react-dom": "15.4.2",
     "react-native": "0.42.3",
     "react-test-renderer": "15.4.2",
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/author-head": "0.3.2",
-    "@times-components/card": "0.4.2",
-    "@times-components/pagination": "0.4.1",
+    "@times-components/author-head": "0.3.1",
+    "@times-components/card": "0.4.1",
+    "@times-components/pagination": "0.4.0",
+    "@times-components/provider": "0.3.8",
     "jest-cli": "20.0.4",
     "lodash.get": "4.4.2",
     "lodash.merge": "4.6.0",
+    "graphql-tag": "2.4.2",
     "prop-types": "15.5.10",
     "react-native-web": "0.0.119",
     "react-style-proptype": "3.0.0"

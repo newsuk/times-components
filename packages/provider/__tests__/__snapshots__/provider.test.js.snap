@@ -7,10 +7,8 @@ exports[`renders data 1`] = `
   ellipsizeMode="tail"
 >
   {
-    "data": {
-      "loading": false,
-      "data": "data"
-    }
+    "loading": false,
+    "data": "data"
   }
 </Text>
 `;
@@ -23,10 +21,22 @@ exports[`renders data from graphql 1`] = `
 >
   {
     "slug": "slug-value",
-    "data": {
-      "loading": false,
-      "data": "data"
-    }
+    "loading": false,
+    "data": "data"
+  }
+</Text>
+`;
+
+exports[`renders data using prop variables 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+  {
+    "slug": "slug-value",
+    "loading": false,
+    "data": "data"
   }
 </Text>
 `;
@@ -38,9 +48,7 @@ exports[`renders loading state 1`] = `
   ellipsizeMode="tail"
 >
   {
-    "data": {
-      "loading": true
-    }
+    "loading": true
   }
 </Text>
 `;

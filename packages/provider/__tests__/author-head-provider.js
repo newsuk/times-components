@@ -26,7 +26,7 @@ it("renders data", () => {
       <AuthorProfileProvider slug="fiona-hamilton">
         {props => {
           expect(props.loading).toEqual(false);
-          expect(props.author).toEqual(example);
+          expect(props.result.author).toEqual(example);
           return <Text>{JSON.stringify(props, null, 2)}</Text>;
         }}
       </AuthorProfileProvider>
