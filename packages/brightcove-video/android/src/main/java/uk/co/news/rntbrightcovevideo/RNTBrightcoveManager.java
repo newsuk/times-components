@@ -20,7 +20,6 @@ public class RNTBrightcoveManager extends SimpleViewManager<RNTBrightcoveView> {
     private static final int PAUSE_VALUE = 2;
 
     public static final String REACT_CLASS = "RNTBrightcove";
-    private RNTBrightcoveView mView;
 
     @Override
     public String getName() {
@@ -29,27 +28,27 @@ public class RNTBrightcoveManager extends SimpleViewManager<RNTBrightcoveView> {
 
     @ReactProp(name = "videoId")
     public void setVideoId(RNTBrightcoveView view, String videoId) {
-        mView.setVideoId(videoId);
+        view.setVideoId(videoId);
     }
 
     @ReactProp(name = "accountId")
     public void setAccountId(RNTBrightcoveView view, String accountId) {
-        mView.setAccountId(accountId);
+        view.setAccountId(accountId);
     }
 
     @ReactProp(name = "policyKey")
     public void setPolicyKey(RNTBrightcoveView view, String policyKey) {
-        mView.setPolicyKey(policyKey);
+        view.setPolicyKey(policyKey);
     }
 
     @ReactProp(name = "autoplay")
     public void setAutoplay(RNTBrightcoveView view, Boolean autoplay) {
-        mView.setAutoplay(autoplay);
+        view.setAutoplay(autoplay);
     }
 
     @ReactProp(name = "hideFullScreenButton")
     public void setHideFullScreenButton(RNTBrightcoveView view, Boolean hideFullScreenButton) {
-        mView.setHideFullScreenButton(hideFullScreenButton);
+        view.setHideFullScreenButton(hideFullScreenButton);
     }
 
     @Override
@@ -76,7 +75,6 @@ public class RNTBrightcoveManager extends SimpleViewManager<RNTBrightcoveView> {
 
     @Override
     public RNTBrightcoveView createViewInstance(ThemedReactContext context) {
-        mView = new RNTBrightcoveView(context);
-        return mView;
+        return new RNTBrightcoveView(context);
     }
 }
