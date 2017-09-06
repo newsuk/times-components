@@ -10,12 +10,6 @@ const globalStyle = StyleSheet.create({
 });
 
 const webStyles = StyleSheet.create({
-  // ArticleAd: {
-  //   borderBottomWidth: 1,
-  //   paddingBottom: 15,
-  //   paddingTop: 15,
-  //   borderBottomColor: "#DBDBDB"
-  // },
   ArticleMainContentRow: {
     paddingLeft: 10,
     paddingRight: 10
@@ -71,7 +65,6 @@ const webStyles = StyleSheet.create({
     fontFamily: "TimesDigitalW04",
     lineHeight: 1.53,
     fontSize: 17,
-    // reset the default p style just for the web (on the native we have <Text> element with no default style)
     marginBottom: 25,
     marginTop: 0,
     color: "#333"
@@ -142,7 +135,7 @@ const nativeStyles = StyleSheet.create({
 
 const styles = {};
 
-if (Platform.OS === "android" || Platform.OS === "ios") {
+if (Platform.OS !== "web") {
   Object.assign(styles, globalStyle, nativeStyles);
 } else {
   Object.assign(styles, globalStyle, webStyles);

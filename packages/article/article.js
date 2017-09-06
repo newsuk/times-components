@@ -8,7 +8,7 @@ import {
   ActivityIndicator
 } from "react-native";
 import PropTypes from "prop-types";
-import Ad, { AdComposer } from "@times-components/ad"; // , { AdComposer }
+import Ad, { AdComposer } from "@times-components/ad";
 import {
   NewArticleFlag,
   SponsoredArticleFlag,
@@ -26,8 +26,6 @@ import pick from "lodash.pick";
 import get from "lodash.get";
 
 import styles from "./article-style";
-
-// const multiParagraph = require("./fixtures/multi-para.json").fixture;
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 
