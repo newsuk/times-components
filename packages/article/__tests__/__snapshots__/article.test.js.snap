@@ -646,7 +646,7 @@ exports[`Article test renders full article correctly 1`] = `
   <RCTScrollView
     dataSource={
       ListViewDataSource {
-        "items": 5,
+        "items": 9,
       }
     }
     initialListSize={10}
@@ -1047,6 +1047,161 @@ exports[`Article test renders full article correctly 1`] = `
               Telegraph 
             </Text>
             last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#333",
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "lineHeight": 20,
+              }
+            }
+          >
+            Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. 
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#333",
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "lineHeight": 20,
+              }
+            }
+          >
+            She led the Conservative Party for 15 years, won three general elections in succession, and never lost a significant vote in the House of Commons. Since Walpole in effect invented the role, only six men have served for longer than her as prime minister: Walpole himself, Pitt, Lord Liverpool, Lord Salisbury, Gladstone and Lord North. She fully earned her place in this company. 
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#333",
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "lineHeight": 20,
+              }
+            }
+          >
+            Thatcher set out, first as party leader and then as prime minister, to overturn the consensus that had shaped postwar British politics and to replace it with a more competitive ethos of free enterprise. She wanted to rescue Britain from the debilitated state to which she believed it had been reduced by socialism and, in the words of her last bravura speech as Prime Minister to the House of Commons, to give back “control to people over their own lives and over their livelihood”. 
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#333",
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "lineHeight": 20,
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontWeight": "bold",
+                }
+              }
+            >
+              Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
+            </Text>
           </Text>
         </View>
       </View>

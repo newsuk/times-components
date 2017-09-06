@@ -9,23 +9,14 @@ import {
 } from "react-native";
 import PropTypes from "prop-types";
 import Ad, { AdComposer } from "@times-components/ad";
-import {
-  NewArticleFlag,
-  SponsoredArticleFlag,
-  UpdatedArticleFlag,
-  ExclusiveArticleFlag
-} from "@times-components/article-flag";
-import ArticleLabel from "@times-components/article-label";
-import ArticleHeadline from "@times-components/article-headline";
-import DatePublication from "@times-components/date-publication";
-import Image from "@times-components/image";
-import Caption from "@times-components/caption";
 import { builder } from "@times-components/markup";
-import ArticleByline from "@times-components/article-byline";
+import Image from "@times-components/image";
 import pick from "lodash.pick";
 import get from "lodash.get";
 
 import styles from "./article-style";
+import ArticleHeader from "./article-header";
+import ArticleMeta from "./article-meta";
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 
@@ -52,7 +43,7 @@ class ArticlePage extends React.Component {
         { type: "ads", data: adsData },
         { type: "leadAsset", data: leadAssetData },
         { type: "header", data: articleHeaderData },
-        { type: "middleContaner", data: articleMidContainerData }
+        { type: "middleContainer", data: articleMidContainerData }
       ],
       // NOTE failing gracefully
       get(articleData, "content", []).map(i => ({
@@ -60,7 +51,6 @@ class ArticlePage extends React.Component {
         data: i
       }))
     );
-    // flag
     return ArticleArray;
   }
 
@@ -81,78 +71,26 @@ class ArticlePage extends React.Component {
       return (
         <View style={styles.LeadAsset}>
           <Image source={{ uri: `https:${TEMP_IMAGE_HTTP}` }} />
-          {Platform.OS === "web" && rowData.data.leadAsset.caption
-            ? <View style={styles.CaptionWrapper}>
-                <Caption
-                  text={rowData.data.leadAsset.caption}
-                  credits={rowData.data.leadAsset.credits}
-                />
-              </View>
-            : null}
         </View>
       );
     } else if (rowData.type === "header") {
+      const { title, flags, standfirst, label } = rowData.data;
       return (
-        <View style={[styles.ArticleMainContentRow]}>
-          {rowData.data.label
-            ? <View style={styles.ArticleLabel}>
-                <ArticleLabel title={rowData.data.label} color="#008347" />
-              </View>
-            : null}
-          <View style={[styles.ArticleHeadline]}>
-            <ArticleHeadline
-              title={rowData.data.title}
-              style={styles.ArticleHeadLineText}
-            />
-          </View>
-          {rowData.data.standfirst
-            ? <Text style={[styles.StandFirst]}>
-                {rowData.data.standfirst}
-              </Text>
-            : null}
-          {rowData.data.flags.length
-            ? <View style={[styles.ArticleFlag]}>
-                {rowData.data.flags.includes("NEW")
-                  ? <View style={styles.ArticleFlagContainer}>
-                      <NewArticleFlag />
-                    </View>
-                  : null}
-                {rowData.data.flags.includes("UPDATED")
-                  ? <View style={styles.ArticleFlagContainer}>
-                      <UpdatedArticleFlag />
-                    </View>
-                  : null}
-                {rowData.data.flags.includes("EXCLUSIVE")
-                  ? <View style={styles.ArticleFlagContainer}>
-                      <ExclusiveArticleFlag />
-                    </View>
-                  : null}
-                {rowData.data.flags.includes("SPONSORED")
-                  ? <View style={styles.ArticleFlagContainer}>
-                      <SponsoredArticleFlag />
-                    </View>
-                  : null}
-              </View>
-            : null}
-        </View>
+        <ArticleHeader
+          title={title}
+          flags={flags}
+          standfirst={standfirst}
+          label={label}
+        />
       );
-    } else if (rowData.type === "middleContaner") {
+    } else if (rowData.type === "middleContainer") {
+      const { byline, publishedTime, publicationName } = rowData.data;
       return (
-        <View
-          style={[styles.ArticleMainContentRow, styles.ArticleMiddleContainer]}
-        >
-          <View style={styles.ArticleMeta}>
-            <View style={[styles.ArticleMetaElement]}>
-              <ArticleByline ast={rowData.data.byline} />
-            </View>
-            <View style={[styles.ArticleMetaElement]}>
-              <DatePublication
-                date={new Date(rowData.data.publishedTime)}
-                publication={rowData.data.publicationName}
-              />
-            </View>
-          </View>
-        </View>
+        <ArticleMeta
+          byline={byline}
+          publishedTime={publishedTime}
+          publicationName={publicationName}
+        />
       );
     } else if (rowData.type === "article_body_row") {
       return (
