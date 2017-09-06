@@ -5,16 +5,16 @@ import AuthorProfileEmpty from "./author-profile-empty";
 import AuthorProfileError from "./author-profile-error";
 import AuthorProfileLoading from "./author-profile-loading";
 
-const AuthorProfile = props => {
-  if (props.isLoading) {
+const AuthorProfile = ({ loading, error, result, ...props }) => {
+  if (loading) {
     return <AuthorProfileLoading />;
   }
 
-  if (props.error) {
-    return <AuthorProfileError {...props.error} />;
+  if (error) {
+    return <AuthorProfileError {...error} />;
   }
 
-  if (!!props.data === true) {
+  if (!!props.result === true) {
     const extra = {
       onNext: props.onNext,
       onPrev: props.onPrev,
@@ -22,7 +22,7 @@ const AuthorProfile = props => {
       pageSize: props.pageSize,
       onTwitterLinkPress: props.onTwitterLinkPress
     };
-    return <AuthorProfileContent {...props.data} {...extra} />;
+    return <AuthorProfileContent {...props.result} {...extra} />;
   }
 
   return <AuthorProfileEmpty />;
@@ -38,9 +38,9 @@ const {
 } = AuthorProfileContent.propTypes;
 
 AuthorProfile.propTypes = {
-  data: PropTypes.shape(data),
+  result: PropTypes.shape(data),
   error: PropTypes.shape(),
-  isLoading: PropTypes.bool,
+  loading: PropTypes.bool,
   onNext,
   onPrev,
   page,
@@ -51,9 +51,9 @@ AuthorProfile.propTypes = {
 };
 
 AuthorProfile.defaultProps = {
-  data: null,
+  result: null,
   error: null,
-  isLoading: true,
+  loading: true,
   onNext: () => {},
   onPrev: () => {},
   page: 1,

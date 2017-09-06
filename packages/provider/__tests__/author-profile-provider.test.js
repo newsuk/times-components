@@ -2,6 +2,7 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
+import { Text } from "react-native";
 import { resetMockGraphQLProps, setMockGraphQLProps } from "react-apollo";
 import { AuthorProfileProvider } from "../provider";
 import example from "../example.json";
@@ -14,12 +15,26 @@ it("renders data", () => {
   setMockGraphQLProps({
     data: {
       loading: false,
-      author: example
+      data: {
+        author: example
+      }
     }
   });
 
   const tree = renderer
-    .create(<AuthorProfileProvider slug="fiona-hamilton" />)
+    .create(
+      <AuthorProfileProvider slug="fiona-hamilton">
+        {props => {
+          expect(props.loading).toEqual(false);
+          expect(props.result.author).toEqual(example);
+          return (
+            <Text>
+              {JSON.stringify(props, null, 2)}
+            </Text>
+          );
+        }}
+      </AuthorProfileProvider>
+    )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
@@ -31,11 +46,24 @@ it("renders loading state", () => {
     }
   });
 
-  const tree = renderer.create(<AuthorProfileProvider />).toJSON();
+  const tree = renderer
+    .create(
+      <AuthorProfileProvider slug="fiona-hamilton">
+        {props => {
+          expect(props.loading).toEqual(true);
+          return (
+            <Text>
+              {JSON.stringify(props, null, 2)}
+            </Text>
+          );
+        }}
+      </AuthorProfileProvider>
+    )
+    .toJSON();
   expect(tree).toMatchSnapshot();
 });
 
-it("renders data from graphql", done => {
+it("renders data from graphql", () => {
   const data = {
     data: {
       loading: false,
@@ -43,13 +71,21 @@ it("renders data from graphql", done => {
     }
   };
 
-  setMockGraphQLProps(data, (query, extras) => {
-    expect(extras.options.variables.slug).toEqual("slug-value");
-    return done();
-  });
+  setMockGraphQLProps(data);
 
   const tree = renderer
-    .create(<AuthorProfileProvider slug="slug-value" />)
+    .create(
+      <AuthorProfileProvider slug="fiona-hamilton">
+        {props => {
+          expect(props.loading).toEqual(false);
+          return (
+            <Text>
+              {JSON.stringify(props, null, 2)}
+            </Text>
+          );
+        }}
+      </AuthorProfileProvider>
+    )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
