@@ -1,6 +1,7 @@
 package uk.co.news.rntbrightcovevideo;
 
 import android.content.res.Configuration;
+import android.graphics.Color;
 import android.util.Log;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
@@ -28,21 +29,25 @@ public class RNTBrightcoveView extends RelativeLayout {
     public RNTBrightcoveView(final ThemedReactContext context) {
         super(context);
         mContext = context;
-        this.setBackgroundColor(0xFF000000);
+        this.setBackgroundColor(Color.BLACK);
     }
 
     @Override
     protected void onConfigurationChanged(Configuration newConfig) {
         Log.d(TAG, "onConfigurationChanged");
 
-        mAutoplay = mPlayerView.getPlayerStatus() == "playing";
+        mAutoplay = isPlaying();
         mSavedPlayheadPosition = mPlayerView.getPlayheadPosition();
 
-        this.removeAllViews();
+        removeAllViews();
 
         initPlayerView();
 
         super.onConfigurationChanged(newConfig);
+    }
+
+    private boolean isPlaying() {
+        return mPlayerView.getPlayerStatus() == "playing";
     }
 
     public void play() {
@@ -94,7 +99,7 @@ public class RNTBrightcoveView extends RelativeLayout {
 
             mPlayerView = new BrightcovePlayerView(mContext);
 
-            RNTBrightcoveView.this.addView(mPlayerView, new ViewGroup.LayoutParams(LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+            addView(mPlayerView, new ViewGroup.LayoutParams(LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 
             mPlayerView.setStartPlayheadPosition(mSavedPlayheadPosition);
 
