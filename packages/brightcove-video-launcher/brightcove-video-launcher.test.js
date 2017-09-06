@@ -18,6 +18,10 @@ it("renders poster correctly before launch", () => {
         policyKey={policyKey}
         videoId={videoId}
         accountId={accountId}
+        poster={{
+          uri:
+            "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs="
+        }}
       />
     )
     .toJSON();
@@ -33,6 +37,10 @@ it("renders poster with custom play icon if specified", () => {
         videoId={videoId}
         accountId={accountId}
         playIcon={customPlayIcon}
+        poster={{
+          uri:
+            "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs="
+        }}
       />
     )
     .toJSON();
@@ -46,6 +54,10 @@ it("launches a video correctly", () => {
       policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
+      poster={{
+        uri:
+          "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs="
+      }}
     />
   );
 

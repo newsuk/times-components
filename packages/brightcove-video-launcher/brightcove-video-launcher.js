@@ -5,10 +5,6 @@ import TimesImage from "@times-components/image";
 import BrightcoveVideo from "@times-components/brightcove-video";
 import PlayIcon from "./play-icon";
 
-const defaultImg = {
-  uri: "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs="
-};
-
 class BrightcoveVideoLauncher extends Component {
   constructor(props) {
     super(props);
@@ -72,7 +68,7 @@ class BrightcoveVideoLauncher extends Component {
 
 BrightcoveVideoLauncher.propTypes = Object.assign(
   {
-    poster: Image.propTypes.source,
+    poster: Image.propTypes.source.isRequired,
     playIcon: Image.propTypes.source,
     playIconWidth: PropTypes.number,
     playIconHeight: PropTypes.number
@@ -82,7 +78,6 @@ BrightcoveVideoLauncher.propTypes = Object.assign(
 
 BrightcoveVideoLauncher.defaultProps = Object.assign(
   {
-    poster: defaultImg,
     playIcon: null,
     playIconWidth: 70,
     playIconHeight: 70

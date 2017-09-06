@@ -14,14 +14,7 @@ const posterImageURI =
   "https://clips.news.co.uk/thetimes/p5dzhoYzE6kYmndXxYdBsfnnyMzDVTyD/Ut_HKthATH4eww8X4xMDoxOmFkOxyVqc";
 
 storiesOf("BrightcoveVideoLauncher", module)
-  .add("with default poster & icon", () =>
-    <BrightcoveVideoLauncher
-      policyKey={policyKey}
-      videoId={videoId}
-      accountId={accountId}
-    />
-  )
-  .add("with custom poster", () =>
+  .add("with default play icon", () =>
     <BrightcoveVideoLauncher
       policyKey={policyKey}
       videoId={videoId}
@@ -29,7 +22,7 @@ storiesOf("BrightcoveVideoLauncher", module)
       poster={{ uri: posterImageURI }}
     />
   )
-  .add("with custom poster & play icon", () =>
+  .add("with custom play icon", () =>
     <BrightcoveVideoLauncher
       policyKey={policyKey}
       videoId={videoId}
