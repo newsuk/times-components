@@ -41,7 +41,7 @@ exports[`renders data 1`] = `
                 "fontSize": 30,
                 "fontWeight": "400",
                 "lineHeight": 30,
-                "padding": 8,
+                "paddingTop": 32,
               }
             }
           >
@@ -56,7 +56,6 @@ exports[`renders data 1`] = `
             style={
               Object {
                 "fontFamily": "TimesDigital-RegularSC",
-                "padding": 8,
               }
             }
           >
@@ -77,7 +76,7 @@ exports[`renders data 1`] = `
                   "color": "#069",
                   "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 15,
-                  "padding": 8,
+                  "paddingTop": 16,
                   "textDecorationLine": "none",
                 },
               ]
@@ -97,7 +96,8 @@ exports[`renders data 1`] = `
                 "fontFamily": "TimesDigital-Regular",
                 "fontSize": 15,
                 "lineHeight": 25,
-                "padding": 8,
+                "maxWidth": "66%",
+                "paddingBottom": 32,
                 "textAlign": "center",
               }
             }
@@ -451,7 +451,7 @@ exports[`renders data from graphql 1`] = `
                 "fontSize": 30,
                 "fontWeight": "400",
                 "lineHeight": 30,
-                "padding": 8,
+                "paddingTop": 32,
               }
             }
           >
@@ -466,7 +466,6 @@ exports[`renders data from graphql 1`] = `
             style={
               Object {
                 "fontFamily": "TimesDigital-RegularSC",
-                "padding": 8,
               }
             }
           >
@@ -487,7 +486,7 @@ exports[`renders data from graphql 1`] = `
                   "color": "#069",
                   "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 15,
-                  "padding": 8,
+                  "paddingTop": 16,
                   "textDecorationLine": "none",
                 },
               ]
@@ -507,7 +506,8 @@ exports[`renders data from graphql 1`] = `
                 "fontFamily": "TimesDigital-Regular",
                 "fontSize": 15,
                 "lineHeight": 25,
-                "padding": 8,
+                "maxWidth": "66%",
+                "paddingBottom": 32,
                 "textAlign": "center",
               }
             }

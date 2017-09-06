@@ -786,7 +786,7 @@ exports[`renders profile content 1`] = `
                 "fontSize": 30,
                 "fontWeight": "400",
                 "lineHeight": 30,
-                "padding": 8,
+                "paddingTop": 32,
               }
             }
           >
@@ -801,7 +801,6 @@ exports[`renders profile content 1`] = `
             style={
               Object {
                 "fontFamily": "TimesDigital-RegularSC",
-                "padding": 8,
               }
             }
           >
@@ -822,7 +821,7 @@ exports[`renders profile content 1`] = `
                   "color": "#069",
                   "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 15,
-                  "padding": 8,
+                  "paddingTop": 16,
                   "textDecorationLine": "none",
                 },
               ]
@@ -842,7 +841,8 @@ exports[`renders profile content 1`] = `
                 "fontFamily": "TimesDigital-Regular",
                 "fontSize": 15,
                 "lineHeight": 25,
-                "padding": 8,
+                "maxWidth": "66%",
+                "paddingBottom": 32,
                 "textAlign": "center",
               }
             }
@@ -4044,7 +4044,7 @@ exports[`renders profile content component 1`] = `
               "fontSize": 30,
               "fontWeight": "400",
               "lineHeight": 30,
-              "padding": 8,
+              "paddingTop": 32,
             }
           }
         >
@@ -4059,7 +4059,6 @@ exports[`renders profile content component 1`] = `
           style={
             Object {
               "fontFamily": "TimesDigital-RegularSC",
-              "padding": 8,
             }
           }
         >
@@ -4080,7 +4079,7 @@ exports[`renders profile content component 1`] = `
                 "color": "#069",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 15,
-                "padding": 8,
+                "paddingTop": 16,
                 "textDecorationLine": "none",
               },
             ]
@@ -4100,7 +4099,8 @@ exports[`renders profile content component 1`] = `
               "fontFamily": "TimesDigital-Regular",
               "fontSize": 15,
               "lineHeight": 25,
-              "padding": 8,
+              "maxWidth": "66%",
+              "paddingBottom": 32,
               "textAlign": "center",
             }
           }
@@ -7457,7 +7457,7 @@ exports[`renders profile header 1`] = `
             "fontSize": 30,
             "fontWeight": "400",
             "lineHeight": 30,
-            "padding": 8,
+            "paddingTop": 32,
           }
         }
       >
@@ -7472,7 +7472,6 @@ exports[`renders profile header 1`] = `
         style={
           Object {
             "fontFamily": "TimesDigital-RegularSC",
-            "padding": 8,
           }
         }
       >
@@ -7493,7 +7492,7 @@ exports[`renders profile header 1`] = `
               "color": "#069",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 15,
-              "padding": 8,
+              "paddingTop": 16,
               "textDecorationLine": "none",
             },
           ]
@@ -7513,7 +7512,8 @@ exports[`renders profile header 1`] = `
             "fontFamily": "TimesDigital-Regular",
             "fontSize": 15,
             "lineHeight": 25,
-            "padding": 8,
+            "maxWidth": "66%",
+            "paddingBottom": 32,
             "textAlign": "center",
           }
         }

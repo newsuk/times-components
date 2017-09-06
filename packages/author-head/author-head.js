@@ -32,18 +32,17 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: "400",
     lineHeight: 30,
-    padding: 8,
-    color: "#1D1D1B"
+    color: "#1D1D1B",
+    paddingTop: 32
   },
   title: {
-    padding: 8,
     fontFamily: "TimesDigital-RegularSC"
   },
   twitter: {
-    padding: 8,
     fontSize: 15,
     fontFamily: "GillSansMTStd-Medium",
     color: "#069",
+    paddingTop: 16,
     textDecorationLine: "none"
   },
   bio: {
@@ -51,8 +50,9 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 15,
     lineHeight: 25,
-    padding: 8,
-    color: "#333"
+    color: "#333",
+    maxWidth: "66%",
+    paddingBottom: 32
   },
   wrapper: {
     alignItems: "center",
