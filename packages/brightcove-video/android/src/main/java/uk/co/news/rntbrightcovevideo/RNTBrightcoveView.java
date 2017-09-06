@@ -106,9 +106,6 @@ public class RNTBrightcoveView extends RelativeLayout {
             boolean isFullscreenButtonHidden = mHideFullScreenButton != null ? mHideFullScreenButton : false;
 
             mPlayerView.initVideo(mVideoId, mAccountId, mPolicyKey, mAutoplay, isFullscreenButtonHidden);
-
-            requestLayout();
-            invalidate();
         }
     }
 
