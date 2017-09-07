@@ -2,6 +2,7 @@
 /* globals videojs, bc */
 
 import React, { Component } from "react";
+import { Image } from "react-native";
 import PropTypes from "prop-types";
 
 import propTypes from "./brightcove-video.proptypes";
@@ -181,7 +182,7 @@ class BrightcoveVideo extends Component {
         <video
           id={this.state.id}
           style={{ width: this.props.width, height: this.props.height }}
-          {...(this.props.poster ? { poster: this.props.poster } : {})}
+          {...(this.props.poster ? { poster: this.props.poster.uri } : {})}
           data-embed="default"
           data-video-id={this.props.videoId}
           data-account={this.props.accountId}
@@ -203,7 +204,7 @@ BrightcoveVideo.globalErrors = [];
 BrightcoveVideo.defaultProps = defaults;
 
 BrightcoveVideo.propTypes = Object.assign(
-  { poster: PropTypes.string },
+  { poster: Image.propTypes.source },
   propTypes
 );
 

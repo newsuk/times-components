@@ -194,6 +194,13 @@
     react-treebeard "^2.0.3"
     redux "^3.6.0"
 
+"@times-components/brightcove-video@0.3.9":
+  version "0.3.9"
+  resolved "https://registry.yarnpkg.com/@times-components/brightcove-video/-/brightcove-video-0.3.9.tgz#29310b8b7ef9cc96387c27ab1f83ccd202161892"
+  dependencies:
+    prop-types "15.5.10"
+    react-native-web "0.0.119"
+
 "@times-components/fructose@1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-1.1.0.tgz#6d2e1e8126850e260316e65d83d2d5814fc58eb2"

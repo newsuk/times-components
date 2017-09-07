@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { TouchableWithoutFeedback, View, Image } from "react-native";
+import { TouchableWithoutFeedback, View } from "react-native";
 import PropTypes from "prop-types";
-import TimesImage from "@times-components/image";
+
 import BrightcoveVideo from "@times-components/brightcove-video";
-import PlayIcon from "./play-icon";
+import Splash from "./splash";
 
 class BrightcoveVideoLauncher extends Component {
   constructor(props) {
@@ -27,39 +27,8 @@ class BrightcoveVideoLauncher extends Component {
 
     return (
       <TouchableWithoutFeedback onPress={this.launchVideo}>
-        <View>
-          <TimesImage
-            source={this.props.poster}
-            style={{
-              width: this.props.width,
-              height: this.props.height
-            }}
-          />
-          <View
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: this.props.width,
-              height: this.props.height,
-              flex: 1,
-              justifyContent: "center",
-              alignItems: "center"
-            }}
-          >
-            {this.props.playIcon
-              ? <Image
-                  source={this.props.playIcon}
-                  style={{
-                    width: this.props.playIconWidth,
-                    height: this.props.playIconHeight
-                  }}
-                />
-              : <PlayIcon
-                  width={this.props.playIconWidth}
-                  height={this.props.playIconHeight}
-                />}
-          </View>
+        <View style={{ width: this.props.width, height: this.props.height }}>
+          <Splash {...this.props} />
         </View>
       </TouchableWithoutFeedback>
     );
@@ -67,21 +36,14 @@ class BrightcoveVideoLauncher extends Component {
 }
 
 BrightcoveVideoLauncher.propTypes = Object.assign(
-  {
-    poster: Image.propTypes.source.isRequired,
-    playIcon: Image.propTypes.source,
-    playIconWidth: PropTypes.number,
-    playIconHeight: PropTypes.number
-  },
+  {},
+  Splash.propTypes,
   BrightcoveVideo.propTypes
 );
 
 BrightcoveVideoLauncher.defaultProps = Object.assign(
-  {
-    playIcon: null,
-    playIconWidth: 70,
-    playIconHeight: 70
-  },
+  {},
+  Splash.defaultProps,
   BrightcoveVideo.defaultProps
 );
 
