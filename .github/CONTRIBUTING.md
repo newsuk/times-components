@@ -96,14 +96,12 @@ If you run `npm run test:fructose` in the root directory it will run fructose te
 
 ### Android
 Follow these steps to deploy storybook native to a real android device.
-Make sure your android device has trusted the connected computer and that `usb debugging / developer mode` has been turned on.
-
-For Android <4.2 go to Developer Options => Enable USB Debugging, and for Android >=4.2 go to About Phone/Tablet => Tap Build Number 7 Times => Developer Options => Enable USB Debugging.
-Follow the below steps
 
 * Plug the device into the computer
+* Make sure your android device has trusted the connected computer and that `usb debugging / developer mode` has been turned on.
+* For Android <4.2 go to Developer Options => Enable USB Debugging, and for Android >=4.2 go to About Phone/Tablet => Tap Build Number 7 Times => Developer Options => Enable USB Debugging
 * Install android tooling through `brew cask install android-platform-tools`
-* Run `adb devices` and verify that your device is shown
+* Run `abd devices` and verify that your device is shown
 * Optionally start a local instance of [The Times Public Api](https://github.com/newsuk/times-public-api) (dependent on the stories you intend to view)
 * Run `yarn`
 * Run  `yarn storybook-native`
@@ -115,7 +113,7 @@ Follow the below steps
 
 #### Troublshooting
 - If your device is complaining about about `story-loader.js` not existing - run `yarn storybook-native` before `yarn android`. This should generate the missing file.
-- If your device is complaining about being unable to reach `localhost` or `404` use the `abd` commands. Shake the device to bring up the developer menu and reload the app
+- If your device is complaining about being unable to reach `localhost` or `404` use the `adb` commands. Shake the device to bring up the developer menu and reload the app
 - If still struggling; shake the device and `debug js remotely`. Open a console on your computer for more info on the error
 - If you're still struggling verify that you are able to run `yarn storybook` and that it works in web view.
 
