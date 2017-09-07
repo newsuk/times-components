@@ -101,7 +101,7 @@ Follow these steps to deploy storybook native to a real android device.
 * Make sure your android device has trusted the connected computer and that `usb debugging / developer mode` has been turned on.
 * For Android <4.2 go to Developer Options => Enable USB Debugging, and for Android >=4.2 go to About Phone/Tablet => Tap Build Number 7 Times => Developer Options => Enable USB Debugging
 * Install android tooling through `brew cask install android-platform-tools`
-* Run `abd devices` and verify that your device is shown
+* Run `adb devices` and verify that your device is shown
 * Optionally start a local instance of [The Times Public Api](https://github.com/newsuk/times-public-api) (dependent on the stories you intend to view)
 * Run `yarn`
 * Run  `yarn storybook-native`
