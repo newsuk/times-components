@@ -32,6 +32,7 @@ const client = new ApolloClient({
 });
 
 storiesOf("Article", module)
+  .add("Fixtures - Full", () => <Article {...fullArticleFixture} />)
   .add("Apollo - long article with italic and bold", () =>
     <ApolloProvider client={client}>
       <ArticleProvider id="ccf235b7-bc11-4c3f-bbe5-b0c5c6fc2b29" />(Article)
@@ -56,5 +57,4 @@ storiesOf("Article", module)
     <ApolloProvider client={client}>
       <ArticleProvider id="978ecf38-8eff-11e7-86bd-27eb324693e0" />(Article)
     </ApolloProvider>
-  )
-  .add("Fixtures - Full", () => <Article {...fullArticleFixture} />);
+  );

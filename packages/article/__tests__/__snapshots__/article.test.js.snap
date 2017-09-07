@@ -62,7 +62,7 @@ exports[`Article test renders article no flags 1`] = `
             onLoad={[Function]}
             source={
               Object {
-                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F26cb2178-868c-11e7-9f10-c918952dd8f2.jpg?crop=1322%2C743%2C260%2C319&resize=685",
+                "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/40fb3ec0fba1497ae220b48173860aa08c3e595c.jpg?crop=620%2C349%2C0%2C32",
               }
             }
             style={
@@ -375,7 +375,7 @@ exports[`Article test renders article no flags no standfirst 1`] = `
             onLoad={[Function]}
             source={
               Object {
-                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F26cb2178-868c-11e7-9f10-c918952dd8f2.jpg?crop=1322%2C743%2C260%2C319&resize=685",
+                "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/40fb3ec0fba1497ae220b48173860aa08c3e595c.jpg?crop=620%2C349%2C0%2C32",
               }
             }
             style={
@@ -646,7 +646,7 @@ exports[`Article test renders full article correctly 1`] = `
   <RCTScrollView
     dataSource={
       ListViewDataSource {
-        "items": 9,
+        "items": 17,
       }
     }
     initialListSize={10}
@@ -671,7 +671,7 @@ exports[`Article test renders full article correctly 1`] = `
             onLoad={[Function]}
             source={
               Object {
-                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F26cb2178-868c-11e7-9f10-c918952dd8f2.jpg?crop=1322%2C743%2C260%2C319&resize=685",
+                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
               }
             }
             style={
@@ -721,7 +721,7 @@ exports[`Article test renders full article correctly 1`] = `
               ]
             }
           >
-            R A N D O M   L A B E L
+            H U R R I C A N E   I R M A
           </Text>
         </View>
         <View
@@ -756,7 +756,7 @@ exports[`Article test renders full article correctly 1`] = `
               ]
             }
           >
-            Supplement In Depth Template (Style)
+            Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
           </Text>
         </View>
         <Text
@@ -965,7 +965,7 @@ exports[`Article test renders full article correctly 1`] = `
                   }
                 }
               >
-                Rick Broadbent
+                Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
               </Text>
             </View>
           </View>
@@ -1047,6 +1047,209 @@ exports[`Article test renders full article correctly 1`] = `
               Telegraph 
             </Text>
             last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontWeight": "bold",
+                }
+              }
+            >
+              When Thatcher joined the campaign trail for the 2001 general election...
+            </Text>
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#333",
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "lineHeight": 20,
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontWeight": "bold",
+                }
+              }
+            >
+              Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
+            </Text>
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#333",
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "lineHeight": 20,
+              }
+            }
+          >
+            When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#333",
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "lineHeight": 20,
+              }
+            }
+          >
+            Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#333",
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "lineHeight": 20,
+              }
+            }
+          >
+            By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill. 
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#333",
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "lineHeight": 20,
+              }
+            }
+          >
+            She was driven by those beliefs to tackle the task of halting and reversing her country’s decline and to ensure that it played its full part in defending the freedoms of the democratic West. Her record and her personality will be the subject of continuing controversy. But no one will ever doubt her sincerity and her courage, and most will concede that the far-reaching changes she made would have been impossible without her. 
           </Text>
         </View>
       </View>
@@ -1190,18 +1393,115 @@ exports[`Article test renders full article correctly 1`] = `
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
+            It was time to depart, and she announced this to a meeting of the Cabinet on November 22. With typical courage she then went to the House of Commons to speak in a confidence debate. It was a rousing performance, a reminder of her gallantry, flair and conviction. She had not tired of her mission, but those whom she had led had tired of her. 
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#333",
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "lineHeight": 20,
               }
-            >
-              Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
-            </Text>
+            }
+          >
+            Thatcher resigned as Prime Minister on November 28, leaving Downing Street, a little tearfully, though with the partial satisfaction of knowing that she was not to be succeeded by Heseltine but by her own favourite, Major, who had defeated Heseltine and Hurd in the parliamentary ballot to follow her. 
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#333",
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "lineHeight": 20,
+              }
+            }
+          >
+            Life out of office was initially miserable. Like her predecessor, Heath, she seemed disorientated by the loss of power. But with typical gumption she threw herself into establishing a foundation (named after her) to support business training projects in Eastern Europe and the former Soviet Union and the establishment of a chair of Enterprise Studies at Cambridge University. She toured the world, speaking for large fees in the foundation’s name and to its great financial benefit. She remained immensely popular in several countries, particularly the US, Japan and Eastern Europe. She was the symbol of the defeat of communism and the triumph in the 1980s of market economics. 
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#333",
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "lineHeight": 20,
+              }
+            }
+          >
+            She returned sporadically, and not always helpfully, to the political fray. Her support for Major waned as he set out on a more pragmatic European policy than her own. She allowed her own more nationalist opinions to seep out into the public domain, and became ever more forceful, outspoken and extreme in her denunciations of the moves towards political and monetary union in Europe. 
           </Text>
         </View>
       </View>

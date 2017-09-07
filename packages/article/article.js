@@ -64,13 +64,9 @@ class ArticlePage extends React.Component {
         </View>
       );
     } else if (rowData.type === "leadAsset") {
-      // HACK at the moment graphql just support http image (we need https for the mobile)
-      // rowData.data.crop.url =  // eslint-disable-line
-      const TEMP_IMAGE_HTTP =
-        "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F26cb2178-868c-11e7-9f10-c918952dd8f2.jpg?crop=1322%2C743%2C260%2C319&resize=685";
       return (
         <View style={styles.LeadAsset}>
-          <Image source={{ uri: `https:${TEMP_IMAGE_HTTP}` }} />
+          <Image source={{ uri: rowData.data.leadAsset.crop.url }} />
         </View>
       );
     } else if (rowData.type === "header") {
