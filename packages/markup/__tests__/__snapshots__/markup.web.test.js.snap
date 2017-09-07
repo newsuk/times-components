@@ -6,24 +6,7 @@ exports[`Markup Web does not render an image tag 1`] = `<div />`;
 
 exports[`Markup Web renders a mixture of tags 1`] = `
 <div>
-  <div>
-    <a
-      className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-      dir="auto"
-      href="http://www.google.com"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      role="link"
-      style={
-        Object {
-          "color": "rgba(0,102,153,1)",
-          "textDecoration": "underline",
-        }
-      }
-    >
-      some link here
-    </a>
-  </div>
+  <div />
   <div>
     <strong>
       some text here
@@ -48,12 +31,8 @@ exports[`Markup Web renders a single paragraph 1`] = `
 </p>
 `;
 
-exports[`Markup Web renders an empty component 1`] = `<div />`;
-
 exports[`Markup Web renders multiple children 1`] = `
-<div
-  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-  dir="auto"
+<p
   style={
     Object {
       "color": "red",
@@ -66,7 +45,7 @@ exports[`Markup Web renders multiple children 1`] = `
   <p>
     This is the text for paragraph two
   </p>
-</div>
+</p>
 `;
 
 exports[`Markup Web renders multiple paragraphs 1`] = `
@@ -98,22 +77,11 @@ exports[`Markup Web renders nested tags 1`] = `
 `;
 
 exports[`Markup Web renders the anchor tag 1`] = `
-<a
-  className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-  dir="auto"
+<p
   href="www.google.com"
-  onClick={[Function]}
-  onKeyDown={[Function]}
-  role="link"
-  style={
-    Object {
-      "color": "rgba(0,102,153,1)",
-      "textDecoration": "underline",
-    }
-  }
 >
   some link here
-</a>
+</p>
 `;
 
 exports[`Markup Web renders the bold tag 1`] = `
