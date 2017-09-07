@@ -23,27 +23,27 @@ const styles = StyleSheet.create({
 });
 
 storiesOf("Image", module)
-  .add("Adjusted to parent view size", () =>
+  .add("Adjusted to parent view size", () => (
     <View style={[styles.container]}>
       <Image style={{ resizeMode: "center" }} source={exampleImage} />
     </View>
-  )
-  .add("Resized to half of full width, keeping aspect ratio", () =>
+  ))
+  .add("Resized to half of full width, keeping aspect ratio", () => (
     <View style={[styles.container, styles.halfWidthView]}>
       <Image source={exampleImage} />
     </View>
-  )
-  .add("Show default image on error", () =>
+  ))
+  .add("Show default image on error", () => (
     <View style={styles.container}>
       <Image source={exampleNonImage} />
     </View>
-  )
-  .add("Show default image on error centered", () =>
+  ))
+  .add("Show default image on error centered", () => (
     <View>
       <Image style={{ resizeMode: "center" }} source={exampleNonImage} />
     </View>
-  )
-  .add("No schema url", () =>
+  ))
+  .add("No schema url", () => (
     <View style={{ width: 100, height: 100 }}>
       <Image
         resizeMode={"cover"}
@@ -53,8 +53,8 @@ storiesOf("Image", module)
         }}
       />
     </View>
-  )
-  .add("Apply style to image", () =>
+  ))
+  .add("Apply style to image", () => (
     <View style={{ width: 100, height: 100 }}>
       <Image
         resizeMode={"cover"}
@@ -62,4 +62,4 @@ storiesOf("Image", module)
         source={exampleImage}
       />
     </View>
-  );
+  ));

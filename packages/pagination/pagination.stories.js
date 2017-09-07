@@ -6,10 +6,7 @@ import { storiesOf } from "@storybook/react-native";
 import { action } from "@storybook/addon-actions";
 import Pagination, { withPageState } from "./pagination";
 
-const story = m =>
-  <View style={{ paddingTop: 20 }}>
-    {m}
-  </View>;
+const story = m => <View style={{ paddingTop: 20 }}>{m}</View>;
 
 storiesOf("Pagination", module)
   .add("First page", () =>

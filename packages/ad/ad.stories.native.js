@@ -9,12 +9,12 @@ import TimesWatermark from "./times-watermark";
 
 export default () =>
   storiesOf("Ad", module)
-    .add("render one native ad", () =>
+    .add("render one native ad", () => (
       <ScrollView>
         <Ad code="intervention" section="article" />
       </ScrollView>
-    )
-    .add("render one native ad and some text", () =>
+    ))
+    .add("render one native ad and some text", () => (
       <ScrollView>
         <Text style={{ color: "blue" }}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
@@ -28,14 +28,14 @@ export default () =>
           eu a nulla. Donec egestas ex quis enim porttitor consequat.
         </Text>
       </ScrollView>
-    )
-    .add("render two native ads", () =>
+    ))
+    .add("render two native ads", () => (
       <ScrollView>
         <Ad code="intervention" section="article" />
         <Ad code="intervention" section="article" />
       </ScrollView>
-    )
-    .add("render two native ads and some text", () =>
+    ))
+    .add("render two native ads and some text", () => (
       <ScrollView>
         <Text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
@@ -65,8 +65,8 @@ export default () =>
           lobortis mattis enim, eu porta mi.
         </Text>
       </ScrollView>
-    )
+    ))
     .add("Placeholder", () => <Placeholder width={300} height={250} />)
-    .add("TimesWatermark (MPU)", () =>
+    .add("TimesWatermark (MPU)", () => (
       <TimesWatermark width={300} height={250} />
-    );
+    ));

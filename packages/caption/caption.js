@@ -22,20 +22,19 @@ const defaultStyle = StyleSheet.create({
   }
 });
 
-const Caption = ({ text, credits, style, children }) =>
+const Caption = ({ text, credits, style, children }) => (
   <View>
     {children}
     <View style={[defaultStyle.container, style.container]}>
-      {text &&
-        <Text style={[defaultStyle.text, style.text]}>
-          {text}
-        </Text>}
-      {credits &&
+      {text && <Text style={[defaultStyle.text, style.text]}>{text}</Text>}
+      {credits && (
         <Text style={[defaultStyle.text, defaultStyle.credits, style.text]}>
           {credits.toUpperCase()}
-        </Text>}
+        </Text>
+      )}
     </View>
-  </View>;
+  </View>
+);
 
 Caption.defaultProps = {
   text: null,

@@ -10,7 +10,7 @@ import {
   articleBylineDefaultPropTypes
 } from "./article-byline-proptypes";
 
-const ArticleByline = ({ ast, style }) =>
+const ArticleByline = ({ ast, style }) => (
   <View style={[styles.container, style.container]}>
     {builder({ ast }).map((el, i) => {
       const customElementStyle = {
@@ -26,7 +26,8 @@ const ArticleByline = ({ ast, style }) =>
         style: customElementStyle
       });
     })}
-  </View>;
+  </View>
+);
 
 export default ArticleByline;
 

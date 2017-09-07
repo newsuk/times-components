@@ -13,7 +13,13 @@ beforeEach(() => {
 it("renders data", () => {
   setMockGraphQLProps({ data: { loading: false, data: "data" } });
 
-  const query = gql`query Query($slug: Slug!) { random }`;
+  const query = gql`
+    query Query($slug: Slug!) {
+      author(slug: $slug) {
+        name
+      }
+    }
+  `;
   const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
 
   const ComponentWithData = connectGraphql(query)(Component);
@@ -25,7 +31,13 @@ it("renders data", () => {
 it("renders loading state", () => {
   setMockGraphQLProps({ data: { loading: true } });
 
-  const query = gql`{ random }`;
+  const query = gql`
+    {
+      article(id: "foo") {
+        flags
+      }
+    }
+  `;
   const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
 
   const ComponentWithData = connectGraphql(query)(Component);
@@ -46,7 +58,13 @@ it("renders data from graphql", () => {
     expect(extras.options.variables.slug).toEqual("slug-value");
   });
 
-  const query = gql`query Query($slug: Slug!) { random }`;
+  const query = gql`
+    query Query($slug: Slug!) {
+      author(slug: $slug) {
+        twitter
+      }
+    }
+  `;
   const Component = params => {
     expect(params.data).toEqual(data.data);
     expect(params.slug).toEqual("slug-value");
@@ -74,7 +92,13 @@ it("renders data using prop variables", done => {
     return done();
   });
 
-  const query = gql`query Query($slug: Slug!) { random }`;
+  const query = gql`
+    query Query($slug: Slug!) {
+      author(slug: $slug) {
+        name
+      }
+    }
+  `;
   const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
 
   const ComponentWithData = connectGraphql(query)(Component);

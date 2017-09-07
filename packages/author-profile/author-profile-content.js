@@ -5,7 +5,7 @@ import AuthorProfileHeader from "./author-profile-header";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
 
-const AuthorProfile = props =>
+const AuthorProfile = props => (
   <ScrollView testID="scroll-view">
     <AuthorProfileHeader {...props} />
     {props.articles.list.map((item, key) => {
@@ -19,7 +19,8 @@ const AuthorProfile = props =>
         </View>
       );
     })}
-  </ScrollView>;
+  </ScrollView>
+);
 
 AuthorProfile.propTypes = Object.assign(
   {

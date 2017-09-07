@@ -15,12 +15,13 @@ const styles = StyleSheet.create({
   }
 });
 
-const story = m =>
+const story = m => (
   <View style={styles.background}>
     <View style={styles.container} testID="author-profile">
       {m}
     </View>
-  </View>;
+  </View>
+);
 
 const example = authorProfileGenerator(2);
 

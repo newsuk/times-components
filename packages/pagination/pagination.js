@@ -104,51 +104,45 @@ class Pagination extends React.Component {
     const message = `Showing ${startResult} - ${finalResult} of ${count} results`;
 
     const prevComponent =
-      startResult > pageSize
-        ? <Link
-            style={styles.arrow}
-            onPress={(...params) => onPrev(page - 1, ...params)}
-            url={generatePageLink(page - 1)}
-          >
-            {"< Previous page"}
-          </Link>
-        : null;
+      startResult > pageSize ? (
+        <Link
+          style={styles.arrow}
+          onPress={(...params) => onPrev(page - 1, ...params)}
+          url={generatePageLink(page - 1)}
+        >
+          {"< Previous page"}
+        </Link>
+      ) : null;
 
     const nextComponent =
-      finalResult < count
-        ? <Link
-            style={styles.arrow}
-            onPress={(...params) => onNext(page + 1, ...params)}
-            url={generatePageLink(page + 1)}
-          >
-            {"Next page >"}
-          </Link>
-        : null;
-
-    const messageComponent = !hideResults
-      ? <View
-          style={[
-            styles.horizontal,
-            styles.message,
-            this.state.absolutePosition ? styles.absolute : null
-          ]}
+      finalResult < count ? (
+        <Link
+          style={styles.arrow}
+          onPress={(...params) => onNext(page + 1, ...params)}
+          url={generatePageLink(page + 1)}
         >
-          <Text style={[styles.label]}>
-            {message}
-          </Text>
-        </View>
-      : null;
+          {"Next page >"}
+        </Link>
+      ) : null;
+
+    const messageComponent = !hideResults ? (
+      <View
+        style={[
+          styles.horizontal,
+          styles.message,
+          this.state.absolutePosition ? styles.absolute : null
+        ]}
+      >
+        <Text style={[styles.label]}>{message}</Text>
+      </View>
+    ) : null;
 
     return (
       <View style={styles.container} onLayout={this.handleLayout}>
         {messageComponent}
         <View style={[styles.horizontal, styles.border]}>
-          <View>
-            {prevComponent}
-          </View>
-          <View>
-            {nextComponent}
-          </View>
+          <View>{prevComponent}</View>
+          <View>{nextComponent}</View>
         </View>
       </View>
     );

@@ -16,10 +16,7 @@ const bylineStyles = {
   }
 };
 
-const story = m =>
-  <View style={{ padding: 20 }}>
-    {m}
-  </View>;
+const story = m => <View style={{ padding: 20 }}>{m}</View>;
 
 storiesOf("ArticleByline", module)
   .add("ArticleByline with a single author", () =>

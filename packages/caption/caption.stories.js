@@ -24,11 +24,11 @@ storiesOf("Caption", module)
   .add("Without credits", () => <Caption text={captionText} />)
   .add("With credits", () => <Caption text={captionText} credits={credits} />)
   .add("Credits only", () => <Caption credits={credits} />)
-  .add("With specific styles", () =>
+  .add("With specific styles", () => (
     <Caption text={captionText} credits={credits} style={style} />
-  )
-  .add("Image with caption", () =>
+  ))
+  .add("Image with caption", () => (
     <Caption text={captionText} credits={credits}>
       <Image source={exampleImage} />
     </Caption>
-  );
+  ));

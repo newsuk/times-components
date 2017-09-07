@@ -18,11 +18,7 @@ export default Link => {
 
   it("renders correctly with children", () => {
     const tree = renderer
-      .create(
-        <Link url="http://thetimes.co.uk">
-          The Times
-        </Link>
-      )
+      .create(<Link url="http://thetimes.co.uk">The Times</Link>)
       .toJSON();
 
     expect(tree).toMatchSnapshot();

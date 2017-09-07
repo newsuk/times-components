@@ -8,6 +8,6 @@ const props = {
   publication: "SUNDAYTIMES"
 };
 
-storiesOf("DatePublication", module).add("DatePublication", () =>
+storiesOf("DatePublication", module).add("DatePublication", () => (
   <DatePublication {...props} />
-);
+));

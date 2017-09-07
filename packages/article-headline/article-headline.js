@@ -13,10 +13,9 @@ const styles = {
   }
 };
 
-const ArticleHeadline = ({ title, style }) =>
-  <Text style={[styles.title, style]}>
-    {title}
-  </Text>;
+const ArticleHeadline = ({ title, style }) => (
+  <Text style={[styles.title, style]}>{title}</Text>
+);
 
 ArticleHeadline.propTypes = {
   title: PropTypes.string.isRequired,

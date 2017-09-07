@@ -172,13 +172,13 @@ class Ad extends Component {
       </html>
       `;
 
-    const placeholderComponent = !this.state.adReady
-      ? <Placeholder
-          width={this.config.maxSizes.width}
-          height={this.config.maxSizes.height}
-          style={styles.children}
-        />
-      : null;
+    const placeholderComponent = !this.state.adReady ? (
+      <Placeholder
+        width={this.config.maxSizes.width}
+        height={this.config.maxSizes.height}
+        style={styles.children}
+      />
+    ) : null;
 
     const webviewStyles = !this.state.adReady
       ? {

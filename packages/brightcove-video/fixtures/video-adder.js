@@ -34,11 +34,7 @@ class VideoAdder extends Component {
       i += 1;
     }
 
-    return (
-      <View>
-        {videos}
-      </View>
-    );
+    return <View>{videos}</View>;
   }
 
   render() {

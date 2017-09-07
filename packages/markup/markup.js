@@ -82,8 +82,9 @@ const tagMap = new Map([
   ]
 ]);
 
-const MarkupNative = ({ ast, wrapIn }) =>
-  <Markup ast={ast} tagMap={tagMap} wrapIn={wrapIn} />;
+const MarkupNative = ({ ast, wrapIn }) => (
+  <Markup ast={ast} tagMap={tagMap} wrapIn={wrapIn} />
+);
 
 MarkupNative.propTypes = propTypes;
 
