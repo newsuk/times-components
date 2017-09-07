@@ -17,14 +17,14 @@ const Splash = ({
       ? <TimesImage
           source={poster}
           style={{
-            width: width,
-            height: height
+            width,
+            height
           }}
         />
       : <View
           style={{
-            width: width,
-            height: height,
+            width,
+            height,
             backgroundColor: "black"
           }}
         />}
@@ -33,8 +33,8 @@ const Splash = ({
         position: "absolute",
         top: 0,
         left: 0,
-        width: width,
-        height: height,
+        width,
+        height,
         flex: 1,
         justifyContent: "center",
         alignItems: "center"

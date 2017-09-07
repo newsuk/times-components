@@ -3,7 +3,6 @@
 
 import React, { Component } from "react";
 import { Image } from "react-native";
-import PropTypes from "prop-types";
 
 import propTypes from "./brightcove-video.proptypes";
 import defaults from "./brightcove-video.defaults";

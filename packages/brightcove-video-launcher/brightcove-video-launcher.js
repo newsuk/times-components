@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { TouchableWithoutFeedback, View } from "react-native";
-import PropTypes from "prop-types";
 
 import BrightcoveVideo from "@times-components/brightcove-video";
 import Splash from "./splash";
