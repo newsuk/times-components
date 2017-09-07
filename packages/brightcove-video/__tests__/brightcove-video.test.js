@@ -49,21 +49,3 @@ it("renders poster with custom play icon if specified", () => {
 
   expect(tree).toMatchSnapshot();
 });
-
-it.skip("launches a video correctly", () => {
-  const video = mount(
-    <BrightcoveVideo
-      policyKey={policyKey}
-      videoId={videoId}
-      accountId={accountId}
-      poster={{
-        uri:
-          "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs="
-      }}
-    />
-  );
-
-  video.find("TouchableWithoutFeedback").first().props().onPress();
-  //console.log(video);
-  //expect(video).toMatchSnapshot();
-});
