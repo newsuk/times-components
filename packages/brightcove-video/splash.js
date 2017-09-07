@@ -62,7 +62,9 @@ Splash.propTypes = {
   poster: Image.propTypes.source,
   playIcon: Image.propTypes.source,
   playIconWidth: PropTypes.number,
-  playIconHeight: PropTypes.number
+  playIconHeight: PropTypes.number,
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired
 };
 
 export default Splash;

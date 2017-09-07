@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { TouchableWithoutFeedback, View } from "react-native";
+import { TouchableWithoutFeedback } from "react-native";
+import PropTypes from "prop-types";
 
 class TapToLaunch extends Component {
   constructor(props) {
@@ -24,5 +25,9 @@ class TapToLaunch extends Component {
     );
   }
 }
+
+TapToLaunch.propTypes = {
+  children: PropTypes.func.isRequired
+};
 
 export default TapToLaunch;

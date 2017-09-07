@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NativeModules } from "react-native";
 
-import BrightcoveVideo from "./brightcove-video.native";
+import BrightcoveVideo from "./brightcove-player.native";
 
 import propTypes from "./brightcove-player.proptypes";
 import defaults from "./brightcove-player.defaults";

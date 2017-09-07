@@ -16,8 +16,6 @@ it("renders correctly pre launch", () => {
     </TapToLaunch>
   );
 
-  const rootInstance = root.getInstance();
-
   expect(root.toJSON()).toMatchSnapshot();
 });
 

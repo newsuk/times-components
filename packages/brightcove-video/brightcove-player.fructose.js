@@ -2,7 +2,7 @@
 import { View } from "react-native";
 import React from "react";
 import BrightcoveVideo from "./brightcove-player";
-import VideoWithExternalControls from "./fixtures/video-with-external-controls";
+import VideoWithExternalControls from "./fixtures/player-with-external-controls";
 
 const policyKey =
   "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U";

@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { TouchableWithoutFeedback, View } from "react-native";
+import React from "react";
+import { View } from "react-native";
 
 import Player from "./brightcove-player";
 import Splash from "./splash";
