@@ -71,13 +71,7 @@ exports[`renders a snapshot 1`] = `
           "textAlign": "center",
         }
       }
-    >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      />
-    </Text>
+    />
   </View>
   <View
     style={
@@ -179,14 +173,15 @@ exports[`renders a snapshot with data 1`] = `
       columnist
     </Text>
     <Text
+      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
+      href="https://twitter.com/carolmidgley"
       onPress={[Function]}
       style={
         Array [
           Object {
-            "color": "#069",
             "textDecorationLine": "underline",
           },
           Object {
@@ -198,7 +193,6 @@ exports[`renders a snapshot with data 1`] = `
           },
         ]
       }
-      url="https://twitter.com/carolmidgley"
     >
       @
       carolmidgley
@@ -218,39 +212,33 @@ exports[`renders a snapshot with data 1`] = `
         }
       }
     >
+      Carol Midgley joined 
       <Text
         accessible={true}
         allowFontScaling={true}
         ellipsizeMode="tail"
+        style={
+          Object {
+            "fontStyle": "italic",
+          }
+        }
       >
-        Carol Midgley joined 
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "fontStyle": "italic",
-            }
-          }
-        >
-          The Times
-        </Text>
-         in 1996, and won feature writer of the year in 2004. Find her Wednesday column in 
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "fontStyle": "italic",
-            }
-          }
-        >
-          Times2
-        </Text>
-         each week and a weekly comment piece on Fridays.
+        The Times
       </Text>
+       in 1996, and won feature writer of the year in 2004. Find her Wednesday column in 
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontStyle": "italic",
+          }
+        }
+      >
+        Times2
+      </Text>
+       each week and a weekly comment piece on Fridays.
     </Text>
   </View>
   <View

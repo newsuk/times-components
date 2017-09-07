@@ -63,14 +63,15 @@ exports[`renders data 1`] = `
             legal editor
           </Text>
           <Text
+            accessibilityRole="link"
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
+            href="https://twitter.com/jdoe"
             onPress={[Function]}
             style={
               Array [
                 Object {
-                  "color": "#069",
                   "textDecorationLine": "underline",
                 },
                 Object {
@@ -82,7 +83,6 @@ exports[`renders data 1`] = `
                 },
               ]
             }
-            url="https://twitter.com/jdoe"
           >
             @
             jdoe
@@ -102,38 +102,32 @@ exports[`renders data 1`] = `
               }
             }
           >
+            Lorem 
             <Text
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontWeight": "bold",
+                }
+              }
             >
-              Lorem 
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "fontWeight": "bold",
-                  }
+              ipsum
+            </Text>
+             testbr 
+            More text 
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontStyle": "italic",
                 }
-              >
-                ipsum
-              </Text>
-               testbr 
-              More text 
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "fontStyle": "italic",
-                  }
-                }
-              >
-                 last 
-              </Text>
+              }
+            >
+               last 
             </Text>
           </Text>
         </View>
@@ -473,14 +467,15 @@ exports[`renders data from graphql 1`] = `
             legal editor
           </Text>
           <Text
+            accessibilityRole="link"
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
+            href="https://twitter.com/jdoe"
             onPress={[Function]}
             style={
               Array [
                 Object {
-                  "color": "#069",
                   "textDecorationLine": "underline",
                 },
                 Object {
@@ -492,7 +487,6 @@ exports[`renders data from graphql 1`] = `
                 },
               ]
             }
-            url="https://twitter.com/jdoe"
           >
             @
             jdoe
@@ -512,38 +506,32 @@ exports[`renders data from graphql 1`] = `
               }
             }
           >
+            Lorem 
             <Text
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontWeight": "bold",
+                }
+              }
             >
-              Lorem 
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "fontWeight": "bold",
-                  }
+              ipsum
+            </Text>
+             testbr 
+            More text 
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontStyle": "italic",
                 }
-              >
-                ipsum
-              </Text>
-               testbr 
-              More text 
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "fontStyle": "italic",
-                  }
-                }
-              >
-                 last 
-              </Text>
+              }
+            >
+               last 
             </Text>
           </Text>
         </View>
