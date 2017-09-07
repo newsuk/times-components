@@ -7388,7 +7388,7 @@ exports[`renders profile header 1`] = `
           }
         }
       >
-        Fiona Hamilton
+        
       </Text>
       <Text
         accessibilityRole="heading"
@@ -7404,32 +7404,7 @@ exports[`renders profile header 1`] = `
           }
         }
       >
-        legal editor
-      </Text>
-      <Text
-        accessibilityRole="link"
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        href="https://twitter.com/jdoe"
-        onPress={[Function]}
-        style={
-          Array [
-            Object {
-              "textDecorationLine": "underline",
-            },
-            Object {
-              "color": "#006699",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 18,
-              "paddingTop": 16,
-              "textDecorationLine": "none",
-            },
-          ]
-        }
-      >
-        @
-        jdoe
+        
       </Text>
       <Text
         accessible={true}
@@ -7446,35 +7421,7 @@ exports[`renders profile header 1`] = `
             "textAlign": "center",
           }
         }
-      >
-        Lorem 
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "fontWeight": "bold",
-            }
-          }
-        >
-          ipsum
-        </Text>
-         testbr 
-        More text 
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "fontStyle": "italic",
-            }
-          }
-        >
-           last 
-        </Text>
-      </Text>
+      />
     </View>
     <View
       style={
@@ -7494,7 +7441,7 @@ exports[`renders profile header 1`] = `
           onLoad={[Function]}
           source={
             Object {
-              "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg",
+              "uri": null,
             }
           }
           style={
@@ -7575,7 +7522,7 @@ exports[`renders profile header 1`] = `
               ]
             }
           >
-            Showing 1 - 10 of 24 results
+            Showing -19 - 0 of 0 results
           </Text>
         </View>
         <View
@@ -7598,30 +7545,7 @@ exports[`renders profile header 1`] = `
           }
         >
           <View />
-          <View>
-            <Text
-              accessibilityRole="link"
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              href="?page=2"
-              onPress={[Function]}
-              style={
-                Array [
-                  Object {
-                    "textDecorationLine": "underline",
-                  },
-                  Object {
-                    "color": "#006699",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 14,
-                  },
-                ]
-              }
-            >
-              Next page &gt;
-            </Text>
-          </View>
+          <View />
         </View>
       </View>
     </View>

@@ -88,7 +88,11 @@ export default AuthorProfileContent => {
 
   it("renders profile content component", () => {
     const component = renderer.create(
-      <AuthorProfileContent onTwitterLinkPress={() => {}} {...props} {...props.result} />
+      <AuthorProfileContent
+        onTwitterLinkPress={() => {}}
+        {...props}
+        {...props.result}
+      />
     );
 
     expect(component).toMatchSnapshot();

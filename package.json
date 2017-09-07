@@ -86,7 +86,7 @@
     "@storybook/addon-actions": "3.2.6",
     "@storybook/react": "3.2.6",
     "@storybook/react-native": "3.2.6",
-    "@times-components/fructose":"2.0.0",
+    "@times-components/fructose": "2.0.0",
     "coveralls": "2.13.1",
     "detox": "5.5.1",
     "eslint": "3.19.0",

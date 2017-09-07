@@ -6,23 +6,16 @@ import AuthorProfileError from "./author-profile-error";
 import AuthorProfileLoading from "./author-profile-loading";
 
 const AuthorProfile = ({ loading, error, result, ...props }) => {
-  if (loading) {
-    return <AuthorProfileLoading />;
-  }
-
   if (error) {
     return <AuthorProfileError {...error} />;
   }
 
-  if (!!props.result === true) {
-    const extra = {
-      onNext: props.onNext,
-      onPrev: props.onPrev,
-      page: props.page,
-      pageSize: props.pageSize,
-      onTwitterLinkPress: props.onTwitterLinkPress
-    };
-    return <AuthorProfileContent {...props.result} {...extra} />;
+  if (loading) {
+    return <AuthorProfileLoading />;
+  }
+
+  if (result) {
+    return <AuthorProfileContent {...props} {...result} />;
   }
 
   return <AuthorProfileEmpty />;

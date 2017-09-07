@@ -43,51 +43,26 @@ const client = new ApolloClient({
   fragmentMatcher
 });
 
-storiesOf("Provider", module)
-  .add("Default", () => {
-    const query = gql`
-      {
-        author(slug: "fiona-hamilton") {
-          name
-        }
+storiesOf("Provider", module).add("Default", () => {
+  const query = gql`
+    {
+      author(slug: "fiona-hamilton") {
+        name
       }
-    `;
+    }
+  `;
 
-    const Query = connect(query);
-    return (
-      <ApolloProvider client={client}>
-        <Query>
-          {(...props) =>
-            <Text>
-              {JSON.stringify(props, null, 2)}
-            </Text>}
-        </Query>
-      </ApolloProvider>
-    );
-  })
-  .add("Error", () => {
-    const query = gql`
-      {
-        error(slug: "fiona-hamilton") {
-          name
-        }
-      }
-    `;
+  const Query = connect(query);
+  return (
+    <ApolloProvider client={client}>
+      <Query>
+        {(...props) => <Text>{JSON.stringify(props, null, 2)}</Text>}
+      </Query>
+    </ApolloProvider>
+  );
+});
 
-    const Query = connect(query);
-    return (
-      <ApolloProvider client={client}>
-        <Query>
-          {(...props) =>
-            <Text>
-              {JSON.stringify(props, null, 2)}
-            </Text>}
-        </Query>
-      </ApolloProvider>
-    );
-  });
-
-storiesOf("Provider", module).add("AuthorProfileProvider", () =>
+storiesOf("Provider", module).add("AuthorProfileProvider", () => (
   <ApolloProvider client={client}>
     <AuthorProfileProvider
       imageRatio="3:2"
@@ -95,10 +70,7 @@ storiesOf("Provider", module).add("AuthorProfileProvider", () =>
       page={1}
       pageSize={3}
     >
-      {props =>
-        <Text>
-          {JSON.stringify(props, null, 2)}
-        </Text>}
+      {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
     </AuthorProfileProvider>
   </ApolloProvider>
 ));

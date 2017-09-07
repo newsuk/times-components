@@ -1,4 +1,4 @@
-import Provider from "./author-profile-provider";
+import Provider from "./provider";
 import AuthorProfile from "./author-profile";
 
 export default AuthorProfile;

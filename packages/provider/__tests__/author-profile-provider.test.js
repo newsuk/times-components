@@ -15,23 +15,17 @@ it("renders data", () => {
   setMockGraphQLProps({
     data: {
       loading: false,
-      data: {
-        author: example
-      }
+      author: example
     }
   });
 
   const tree = renderer
     .create(
       <AuthorProfileProvider slug="fiona-hamilton">
-        {props => {
-          expect(props.loading).toEqual(false);
-          expect(props.result.author).toEqual(example);
-          return (
-            <Text>
-              {JSON.stringify(props, null, 2)}
-            </Text>
-          );
+        {({ loading, author }) => {
+          expect(loading).toEqual(false);
+          expect(author).toEqual(example);
+          return <Text>{JSON.stringify(author, null, 2)}</Text>;
         }}
       </AuthorProfileProvider>
     )
@@ -51,11 +45,7 @@ it("renders loading state", () => {
       <AuthorProfileProvider slug="fiona-hamilton">
         {props => {
           expect(props.loading).toEqual(true);
-          return (
-            <Text>
-              {JSON.stringify(props, null, 2)}
-            </Text>
-          );
+          return <Text>{JSON.stringify(props, null, 2)}</Text>;
         }}
       </AuthorProfileProvider>
     )
@@ -78,11 +68,7 @@ it("renders data from graphql", () => {
       <AuthorProfileProvider slug="fiona-hamilton">
         {props => {
           expect(props.loading).toEqual(false);
-          return (
-            <Text>
-              {JSON.stringify(props, null, 2)}
-            </Text>
-          );
+          return <Text>{JSON.stringify(props, null, 2)}</Text>;
         }}
       </AuthorProfileProvider>
     )

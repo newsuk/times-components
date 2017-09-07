@@ -12,7 +12,7 @@ import { storiesOf } from "@storybook/react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { decorateAction } from "@storybook/addon-actions";
 import AuthorProfile from "./author-profile";
-import AuthorProfileProvider from "./author-profile-provider";
+import AuthorProfileProvider from "./provider";
 import example from "./example.json";
 
 const styles = StyleSheet.create({

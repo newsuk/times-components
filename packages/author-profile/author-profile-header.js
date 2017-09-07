@@ -80,16 +80,16 @@ AuthorProfileHeader.propTypes = {
 
 AuthorProfileHeader.defaultProps = {
   count: 0,
-  biography: null,
+  biography: [],
   page: 0,
   generatePageLink: page => `?page=${page}`,
   image: null,
-  jobTitle: null,
-  name: null,
+  jobTitle: "",
+  name: "",
   onNext: () => {},
   onPrev: () => {},
   pageSize: 20,
-  twitter: null
+  twitter: ""
 };
 
 export default AuthorProfileHeader;
