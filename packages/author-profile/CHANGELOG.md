@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.8"></a>
+## [0.5.8](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.5.6...@times-components/author-profile@0.5.8) (2017-09-07)
+
+
+### Bug Fixes
+
+* replace loading text by an activity indicator ([0258fd9](https://github.com/newsuk/times-components/commit/0258fd9))
+* Twitter profile look ([#195](https://github.com/newsuk/times-components/issues/195)) ([9989006](https://github.com/newsuk/times-components/commit/9989006))
+
+
+
+
 <a name="0.5.7"></a>
 ## [0.5.7](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.5.6...@times-components/author-profile@0.5.7) (2017-09-01)
 
