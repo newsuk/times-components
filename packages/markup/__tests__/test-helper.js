@@ -1,6 +1,5 @@
 /* eslint-env jest */
 
-import { Text } from "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 
@@ -16,89 +15,107 @@ const bio = require("../fixtures/bio.json").fixture;
 const script = require("../fixtures/script.json").fixture;
 const image = require("../fixtures/image.json").fixture;
 
-export default (Markup, builder) => () => {
-  it("renders an empty component", () => {
-    const ast = [];
-    const tree = renderer.create(<Markup ast={ast} />).toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
-
+export default (
+  renderTree,
+  renderTrees,
+  TextComponent,
+  BlockComponent
+) => () => {
   it("renders a single paragraph", () => {
-    const tree = renderer.create(<Markup ast={singleParagraph} />).toJSON();
+    const output = renderer.create(renderTree(singleParagraph[0])).toJSON();
 
-    expect(tree).toMatchSnapshot();
+    expect(output).toMatchSnapshot();
   });
 
   it("renders multiple paragraphs", () => {
-    const tree = renderer.create(<Markup ast={multiParagraph} />).toJSON();
+    const output = renderer
+      .create(<BlockComponent>{renderTrees(multiParagraph)}</BlockComponent>)
+      .toJSON();
 
-    expect(tree).toMatchSnapshot();
+    expect(output).toMatchSnapshot();
   });
 
   it("renders the anchor tag", () => {
-    const tree = renderer.create(<Markup ast={anchor} />).toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("renders the bold tag", () => {
-    const tree = renderer.create(<Markup ast={bold} />).toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("renders the italic tag", () => {
-    const tree = renderer.create(<Markup ast={italic} />).toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("renders the span tag", () => {
-    const tree = renderer.create(<Markup ast={span} />).toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("renders a mixture of tags", () => {
-    const tree = renderer.create(<Markup ast={mixture} />).toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("renders nested tags", () => {
-    const tree = renderer.create(<Markup ast={nested} />).toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("renders wrapped tags", () => {
-    const tree = renderer
-      .create(<Markup ast={bio} wrapIn="paragraph" />)
-      .toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("renders multiple children", () => {
-    const tree = renderer
+    const output = renderer
       .create(
-        <Text style={{ color: "red" }}>{builder({ ast: multiParagraph })}</Text>
+        renderTree(anchor[0], {
+          link(key, { href }, children) {
+            return (
+              <TextComponent key={key} href={href}>
+                {children}
+              </TextComponent>
+            );
+          }
+        })
       )
       .toJSON();
 
-    expect(tree).toMatchSnapshot();
+    expect(output).toMatchSnapshot();
+  });
+
+  it("renders the bold tag", () => {
+    const output = renderer.create(renderTree(bold[0])).toJSON();
+
+    expect(output).toMatchSnapshot();
+  });
+
+  it("renders the italic tag", () => {
+    const output = renderer.create(renderTree(italic[0])).toJSON();
+
+    expect(output).toMatchSnapshot();
+  });
+
+  it("renders the span tag", () => {
+    const output = renderer.create(renderTree(span[0])).toJSON();
+
+    expect(output).toMatchSnapshot();
+  });
+
+  it("renders a mixture of tags", () => {
+    const output = renderer.create(renderTree(mixture[0])).toJSON();
+
+    expect(output).toMatchSnapshot();
+  });
+
+  it("renders nested tags", () => {
+    const output = renderer.create(renderTree(nested[0])).toJSON();
+
+    expect(output).toMatchSnapshot();
+  });
+
+  it("renders wrapped tags", () => {
+    const output = renderer
+      .create(<TextComponent>{renderTrees(bio)}</TextComponent>)
+      .toJSON();
+
+    expect(output).toMatchSnapshot();
+  });
+
+  it("renders multiple children", () => {
+    const output = renderer
+      .create(
+        <TextComponent style={{ color: "red" }}>
+          {renderTrees(multiParagraph)}
+        </TextComponent>
+      )
+      .toJSON();
+
+    expect(output).toMatchSnapshot();
   });
 
   it("does not render a script tag", () => {
-    const tree = renderer.create(<Markup ast={script} />).toJSON();
+    const output = renderer
+      .create(<BlockComponent>{renderTrees(script)}</BlockComponent>)
+      .toJSON();
 
-    expect(tree).toMatchSnapshot();
+    expect(output).toMatchSnapshot();
   });
 
   it("does not render an image tag", () => {
-    const tree = renderer.create(<Markup ast={image} />).toJSON();
+    const output = renderer
+      .create(<BlockComponent>{renderTrees(image)}</BlockComponent>)
+      .toJSON();
 
-    expect(tree).toMatchSnapshot();
+    expect(output).toMatchSnapshot();
   });
 };

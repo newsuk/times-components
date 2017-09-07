@@ -6,26 +6,7 @@ exports[`Markup Native does not render an image tag 1`] = `<View />`;
 
 exports[`Markup Native renders a mixture of tags 1`] = `
 <View>
-  <View>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      onPress={[Function]}
-      style={
-        Array [
-          Object {
-            "color": "#069",
-            "textDecorationLine": "underline",
-          },
-          Object {},
-        ]
-      }
-      url="http://www.google.com"
-    >
-      some link here
-    </Text>
-  </View>
+  <View />
   <View>
     <Text
       accessible={true}
@@ -76,8 +57,6 @@ exports[`Markup Native renders a single paragraph 1`] = `
 </Text>
 `;
 
-exports[`Markup Native renders an empty component 1`] = `<View />`;
-
 exports[`Markup Native renders multiple children 1`] = `
 <Text
   accessible={true}
@@ -127,29 +106,11 @@ exports[`Markup Native renders multiple paragraphs 1`] = `
 
 exports[`Markup Native renders nested tags 1`] = `
 <View>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
-    Some text is here 
-  </Text>
+  Some text is here 
   <View>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
-      and there is some 
-    </Text>
+    and there is some 
     <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
-        more text 
-      </Text>
+      more text 
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -158,21 +119,9 @@ exports[`Markup Native renders nested tags 1`] = `
         and in here
       </Text>
     </View>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
-       after it too
-    </Text>
+     after it too
   </View>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
-     and here
-  </Text>
+   and here
 </View>
 `;
 
@@ -181,17 +130,7 @@ exports[`Markup Native renders the anchor tag 1`] = `
   accessible={true}
   allowFontScaling={true}
   ellipsizeMode="tail"
-  onPress={[Function]}
-  style={
-    Array [
-      Object {
-        "color": "#069",
-        "textDecorationLine": "underline",
-      },
-      Object {},
-    ]
-  }
-  url="www.google.com"
+  href="www.google.com"
 >
   some link here
 </Text>
