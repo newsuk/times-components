@@ -3,36 +3,15 @@ import { TouchableWithoutFeedback, View } from "react-native";
 
 import BrightcoveVideo from "@times-components/brightcove-video";
 import Splash from "./splash";
+import TapToLaunch from "./tap-to-launch";
 
-class BrightcoveVideoLauncher extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      launched: false
-    };
-
-    this.launchVideo = this.launchVideo.bind(this);
-  }
-
-  launchVideo() {
-    this.setState({ launched: true });
-  }
-
-  render() {
-    if (this.state.launched) {
-      return <BrightcoveVideo {...this.props} />;
-    }
-
-    return (
-      <TouchableWithoutFeedback onPress={this.launchVideo}>
-        <View style={{ width: this.props.width, height: this.props.height }}>
-          <Splash {...this.props} />
-        </View>
-      </TouchableWithoutFeedback>
-    );
-  }
-}
+const BrightcoveVideoLauncher = props =>
+  <TapToLaunch>
+    {isLaunched =>
+      <View style={{ width: props.width, height: props.height }}>
+        {isLaunched ? <BrightcoveVideo {...props} /> : <Splash {...props} />}
+      </View>}
+  </TapToLaunch>;
 
 BrightcoveVideoLauncher.propTypes = Object.assign(
   {},
