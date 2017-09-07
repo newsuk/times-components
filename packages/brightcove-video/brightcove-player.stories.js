@@ -1,45 +1,46 @@
-import "react-native";
+/* eslint import/no-unresolved: "off" */
+
 import React from "react";
+import { View } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
-import BrightcoveVideo from "./brightcove-video";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { decorateAction } from "@storybook/addon-actions";
 
-import customPlayIcon from "./fixtures/customPlayIcon.png";
+import Player from "./brightcove-player";
+import VideoAdder from "./fixtures/player-adder";
+import VideoWithExternalControls from "./fixtures/player-with-external-controls";
 
 const policyKey =
   "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U";
 const accountId = "57838016001";
 const videoId = "4084164751001";
-const posterImageURI =
-  "https://clips.news.co.uk/thetimes/p5dzhoYzE6kYmndXxYdBsfnnyMzDVTyD/Ut_HKthATH4eww8X4xMDoxOmFkOxyVqc";
 
-storiesOf("BrightcoveVideo", module)
-  .add("Default values", () => (
-    <BrightcoveVideo
-      policyKey={policyKey}
-      videoId={videoId}
-      accountId={accountId}
-    />
-  ))
-  .add("Large player", () => (
-    <BrightcoveVideo
+const firstArgJSONAction = decorateAction([args => [JSON.stringify(args[0])]]);
+
+storiesOf("Brightcove Player", module)
+  .add("Default values", () =>
+    <Player policyKey={policyKey} videoId={videoId} accountId={accountId} />
+  )
+  .add("Large player", () =>
+    <Player
       width={800}
       height={600}
       policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
     />
-  ))
-  .add("Hidden Fullscreen button", () => (
-    <BrightcoveVideo
+  )
+  .add("Hidden Fullscreen button", () =>
+    <Player
       policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
       hideFullScreenButton
     />
-  ))
-  .add("Fullscreen player with hidden Fullscreen button", () => (
-    <BrightcoveVideo
+  )
+  .add("Fullscreen player with hidden Fullscreen button", () =>
+    <Player
       width="100%"
       height="100%"
       policyKey={policyKey}
@@ -47,17 +48,17 @@ storiesOf("BrightcoveVideo", module)
       accountId={accountId}
       hideFullScreenButton
     />
-  ))
-  .add("Two players", () => (
+  )
+  .add("Two players", () =>
     <View>
-      <BrightcoveVideo
+      <Player
         width={300}
         height={200}
         policyKey={policyKey}
         videoId={videoId}
         accountId={accountId}
       />
-      <BrightcoveVideo
+      <Player
         width={320}
         height={200}
         policyKey={policyKey}
@@ -65,20 +66,20 @@ storiesOf("BrightcoveVideo", module)
         accountId={accountId}
       />
     </View>
-  ))
-  .add("Lazy load players", () => (
+  )
+  .add("Lazy load players", () =>
     <VideoAdder policyKey={policyKey} videoId={videoId} accountId={accountId} />
-  ))
-  .add("With different videos", () => (
+  )
+  .add("With different videos", () =>
     <View>
-      <BrightcoveVideo
+      <Player
         width={320}
         height={200}
         policyKey={policyKey}
         videoId={videoId}
         accountId={accountId}
       />
-      <BrightcoveVideo
+      <Player
         width={320}
         height={200}
         policyKey={policyKey}
@@ -86,9 +87,9 @@ storiesOf("BrightcoveVideo", module)
         accountId={accountId}
       />
     </View>
-  ))
-  .add("With poster image", () => (
-    <BrightcoveVideo
+  )
+  .add("With poster image", () =>
+    <Player
       width={320}
       height={200}
       policyKey={policyKey}
@@ -96,9 +97,9 @@ storiesOf("BrightcoveVideo", module)
       videoId="1532562858001"
       accountId={accountId}
     />
-  ))
-  .add("Bad video id", () => (
-    <BrightcoveVideo
+  )
+  .add("Bad video id", () =>
+    <Player
       width={800}
       height={600}
       policyKey={policyKey}
@@ -106,9 +107,9 @@ storiesOf("BrightcoveVideo", module)
       accountId={accountId}
       onError={firstArgJSONAction("error")}
     />
-  ))
-  .add("Bad account id", () => (
-    <BrightcoveVideo
+  )
+  .add("Bad account id", () =>
+    <Player
       width={800}
       height={600}
       policyKey={policyKey}
@@ -116,36 +117,36 @@ storiesOf("BrightcoveVideo", module)
       accountId="x"
       onError={firstArgJSONAction("error")}
     />
-  ))
-  .add("With event listener", () => (
-    <BrightcoveVideo
+  )
+  .add("With event listener", () =>
+    <Player
       policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
       onChange={firstArgJSONAction("change")}
     />
-  ))
-  .add("With external controls", () => (
+  )
+  .add("With external controls", () =>
     <VideoWithExternalControls
       policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
     />
-  ))
-  .add("with default play icon", () =>
-    <BrightcoveVideo
+  )
+  .add("With autoplay", () =>
+    <Player
       policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
-      poster={{ uri: posterImageURI }}
+      autoplay
     />
-  ))
-  .add("with custom play icon", () =>
-    <BrightcoveVideo
+  )
+  .add("With autoplay & event listner", () =>
+    <Player
       policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
-      poster={{ uri: posterImageURI }}
-      playIcon={customPlayIcon}
+      onChange={firstArgJSONAction("change")}
+      autoplay
     />
-  ));
+  );

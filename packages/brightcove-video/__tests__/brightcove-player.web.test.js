@@ -4,7 +4,7 @@ import { View } from "react-native";
 import React from "react";
 import ReactDOM from "react-dom";
 import renderer from "react-test-renderer";
-import BrightcoveVideo from "../brightcove-video.web";
+import BrightcoveVideo from "../brightcove-player.web";
 
 describe("brightcove-video web component", () => {
   afterEach(() => {
@@ -32,7 +32,7 @@ describe("brightcove-video web component", () => {
         <BrightcoveVideo
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
-          poster="[POSTER_URI]"
+          poster={{ uri: "[POSTER_URI]" }}
         />
       )
       .toJSON();

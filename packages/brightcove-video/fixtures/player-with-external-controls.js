@@ -5,7 +5,7 @@ import { View } from "react-native";
 import PropTypes from "prop-types";
 
 import Button from "./button";
-import BrightcoveVideo from "../brightcove-video";
+import BrightcoveVideo from "../brightcove-player";
 
 class VideoWithExternalControls extends Component {
   render() {

@@ -3,15 +3,14 @@ import { NativeModules } from "react-native";
 
 import BrightcoveVideo from "./brightcove-video.native";
 
-import propTypes from "./brightcove-video.proptypes";
-import defaults from "./brightcove-video.defaults";
+import propTypes from "./brightcove-player.proptypes";
+import defaults from "./brightcove-player.defaults";
 
 function withNativeCommand(WrappedComponent) {
-  class IOSNative extends Component {
-    static managerCommand(name) {
-      return NativeModules[`${WrappedComponent.getNativeClassName()}Manager`][
-        name
-      ];
+  class AndroidNative extends Component {
+    static uiManagerCommand(name) {
+      return NativeModules.UIManager[WrappedComponent.getNativeClassName()]
+        .Commands[name];
     }
 
     constructor(props) {
@@ -29,7 +28,11 @@ function withNativeCommand(WrappedComponent) {
     }
 
     runNativeCommand(name, args) {
-      IOSNative.managerCommand(name)(this.bcv.getNodeHandle(), ...args);
+      NativeModules.UIManager.dispatchViewManagerCommand(
+        this.bcv.getNodeHandle(),
+        AndroidNative.uiManagerCommand(name),
+        args
+      );
     }
 
     render() {
@@ -49,10 +52,10 @@ function withNativeCommand(WrappedComponent) {
     }
   }
 
-  IOSNative.defaultProps = defaults;
-  IOSNative.propTypes = propTypes;
+  AndroidNative.defaultProps = defaults;
+  AndroidNative.propTypes = propTypes;
 
-  return IOSNative;
+  return AndroidNative;
 }
 
 export default withNativeCommand(BrightcoveVideo);

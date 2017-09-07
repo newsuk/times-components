@@ -1,7 +1,7 @@
 /* globals withComponent test expect element by waitFor beforeEach */
 import { View } from "react-native";
 import React from "react";
-import BrightcoveVideo from "./brightcove-video";
+import BrightcoveVideo from "./brightcove-player";
 import VideoWithExternalControls from "./fixtures/video-with-external-controls";
 
 const policyKey =

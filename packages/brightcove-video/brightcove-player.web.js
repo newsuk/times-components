@@ -4,8 +4,8 @@
 import React, { Component } from "react";
 import { Image } from "react-native";
 
-import propTypes from "./brightcove-video.proptypes";
-import defaults from "./brightcove-video.defaults";
+import propTypes from "./brightcove-player.proptypes";
+import defaults from "./brightcove-player.defaults";
 
 let index = 0;
 

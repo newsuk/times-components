@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { findNodeHandle, requireNativeComponent, AppState } from "react-native";
 import PropTypes from "prop-types";
 
-import propTypes from "./brightcove-video.proptypes";
-import defaults from "./brightcove-video.defaults";
+import propTypes from "./brightcove-player.proptypes";
+import defaults from "./brightcove-player.defaults";
 
 const nativeClassName = "RNTBrightcove";
 const RNTBrightcove = requireNativeComponent(nativeClassName, null);

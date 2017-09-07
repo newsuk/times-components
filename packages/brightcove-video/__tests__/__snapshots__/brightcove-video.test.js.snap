@@ -1,24 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`launches a video correctly 1`] = `
-<RNTBrightcove
-  accountId="[ACCOUNT_ID]"
-  autoplay={true}
-  hideFullScreenButton={false}
-  onChange={[Function]}
-  onIOSError={[Function]}
-  onLoadingError={[Function]}
-  policyKey="[POLICY_KEY]"
-  style={
-    Object {
-      "height": 180,
-      "width": 320,
-    }
-  }
-  videoId="[VIDEO_ID]"
-/>
-`;
-
 exports[`renders poster correctly before launch 1`] = `
 <View
   accessibilityComponentType={undefined}
