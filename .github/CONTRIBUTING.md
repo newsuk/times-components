@@ -100,24 +100,22 @@ Make sure your android device has trusted the connected computer and that `usb d
 Follow the below steps
 
 * Plug the device into the computer
+* Install android tooling through `brew cask install android-platform-tools`
 * Run `adb devices` and verify that your device is shown
-* Start a local instance of [The Times Public Api](https://github.com/newsuk/times-public-api)
+* Optionally start a local instance of [The Times Public Api](https://github.com/newsuk/times-public-api) (dependent on the stories you intend to view)
 * Run `yarn`
 * Run  `yarn storybook-native`
+* Run `adb reverse tcp:4000 tcp:4000` (to enable Times API)
+* Run `adb reverse tcp:8081 tcp:8081` (to enable live reloading)
+* Run `adb reverse tcp:7007 tcp:7007` (to enable Storybook native
 * Run `yarn android` this should install the app to your device
-* Once installed it is likely you will see `Failed to connect to localhost *`
-* Run `adb reverse tcp:4000 tcp:4000`
-* Run `adb reverse tcp:8081 tcp:8081`
-* Run `adb reverse tcp:7007 tcp:7007`
-* Shake the device and reload
-* Open story book on your computer and load a story
+* Open [storybooknative](http:localhost:7007)  on your computer and load a story
 
-#### Trouble Shooting
+#### Troublshooting
 - If your device is complaining about about `story-loader.js` not existing - run `yarn storybook-native` before `yarn android`. This should generate the missing file.
-- If your device is complaining about being unable to reach `localhost` use the `abd reverse` commands
+- If your device is complaining about being unable to reach `localhost` or `404` use the `abd` commands. Shake the device to bring up the developer menu and reload the app
 - If still struggling; shake the device and `debug js remotely`. Open a console on your computer for more info on the error
 - If you're still struggling verify that you are able to run `yarn storybook` and that it works in web view.
-
 
 ## Folder Structure
 
