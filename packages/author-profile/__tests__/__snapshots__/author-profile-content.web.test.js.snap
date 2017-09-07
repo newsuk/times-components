@@ -807,14 +807,15 @@ exports[`renders profile content 1`] = `
             legal editor
           </Text>
           <Text
+            accessibilityRole="link"
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
+            href="https://twitter.com/jdoe"
             onPress={[Function]}
             style={
               Array [
                 Object {
-                  "color": "#069",
                   "textDecorationLine": "underline",
                 },
                 Object {
@@ -826,7 +827,6 @@ exports[`renders profile content 1`] = `
                 },
               ]
             }
-            url="https://twitter.com/jdoe"
           >
             @
             jdoe
@@ -847,38 +847,32 @@ exports[`renders profile content 1`] = `
               }
             }
           >
+            Lorem 
             <Text
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontWeight": "bold",
+                }
+              }
             >
-              Lorem 
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "fontWeight": "bold",
-                  }
+              ipsum
+            </Text>
+             testbr 
+            More text 
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontStyle": "italic",
                 }
-              >
-                ipsum
-              </Text>
-               testbr 
-              More text 
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "fontStyle": "italic",
-                  }
-                }
-              >
-                 last 
-              </Text>
+              }
+            >
+               last 
             </Text>
           </Text>
         </View>
@@ -1006,14 +1000,15 @@ exports[`renders profile content 1`] = `
               <View />
               <View>
                 <Text
+                  accessibilityRole="link"
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
+                  href="?page=2"
                   onPress={[Function]}
                   style={
                     Array [
                       Object {
-                        "color": "#069",
                         "textDecorationLine": "underline",
                       },
                       Object {
@@ -1023,7 +1018,6 @@ exports[`renders profile content 1`] = `
                       },
                     ]
                   }
-                  url="?page=2"
                 >
                   Next page &gt;
                 </Text>
@@ -4083,14 +4077,15 @@ exports[`renders profile content component 1`] = `
           legal editor
         </Text>
         <Text
+          accessibilityRole="link"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
+          href="https://twitter.com/jdoe"
           onPress={[Function]}
           style={
             Array [
               Object {
-                "color": "#069",
                 "textDecorationLine": "underline",
               },
               Object {
@@ -4102,7 +4097,6 @@ exports[`renders profile content component 1`] = `
               },
             ]
           }
-          url="https://twitter.com/jdoe"
         >
           @
           jdoe
@@ -4123,38 +4117,32 @@ exports[`renders profile content component 1`] = `
             }
           }
         >
+          Lorem 
           <Text
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
           >
-            Lorem 
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
+            ipsum
+          </Text>
+           testbr 
+          More text 
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontStyle": "italic",
               }
-            >
-              ipsum
-            </Text>
-             testbr 
-            More text 
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontStyle": "italic",
-                }
-              }
-            >
-               last 
-            </Text>
+            }
+          >
+             last 
           </Text>
         </Text>
       </View>
@@ -4282,14 +4270,15 @@ exports[`renders profile content component 1`] = `
             <View />
             <View>
               <Text
+                accessibilityRole="link"
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail"
+                href="?page=2"
                 onPress={[Function]}
                 style={
                   Array [
                     Object {
-                      "color": "#069",
                       "textDecorationLine": "underline",
                     },
                     Object {
@@ -4299,7 +4288,6 @@ exports[`renders profile content component 1`] = `
                     },
                   ]
                 }
-                url="?page=2"
               >
                 Next page &gt;
               </Text>
@@ -7514,14 +7502,15 @@ exports[`renders profile header 1`] = `
         legal editor
       </Text>
       <Text
+        accessibilityRole="link"
         accessible={true}
         allowFontScaling={true}
         ellipsizeMode="tail"
+        href="https://twitter.com/jdoe"
         onPress={[Function]}
         style={
           Array [
             Object {
-              "color": "#069",
               "textDecorationLine": "underline",
             },
             Object {
@@ -7533,7 +7522,6 @@ exports[`renders profile header 1`] = `
             },
           ]
         }
-        url="https://twitter.com/jdoe"
       >
         @
         jdoe
@@ -7554,38 +7542,32 @@ exports[`renders profile header 1`] = `
           }
         }
       >
+        Lorem 
         <Text
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
+          style={
+            Object {
+              "fontWeight": "bold",
+            }
+          }
         >
-          Lorem 
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "fontWeight": "bold",
-              }
+          ipsum
+        </Text>
+         testbr 
+        More text 
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "fontStyle": "italic",
             }
-          >
-            ipsum
-          </Text>
-           testbr 
-          More text 
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "fontStyle": "italic",
-              }
-            }
-          >
-             last 
-          </Text>
+          }
+        >
+           last 
         </Text>
       </Text>
     </View>
@@ -7713,14 +7695,15 @@ exports[`renders profile header 1`] = `
           <View />
           <View>
             <Text
+              accessibilityRole="link"
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
+              href="?page=2"
               onPress={[Function]}
               style={
                 Array [
                   Object {
-                    "color": "#069",
                     "textDecorationLine": "underline",
                   },
                   Object {
@@ -7730,7 +7713,6 @@ exports[`renders profile header 1`] = `
                   },
                 ]
               }
-              url="?page=2"
             >
               Next page &gt;
             </Text>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
-import Markup, { builder } from "@times-components/markup";
+import { renderTrees } from "@times-components/markup";
 import DatePublication from "@times-components/date-publication";
 
 const styles = {
@@ -32,14 +32,14 @@ const styles = {
 };
 
 const ArticleSummary = props => {
-  const { label, headline, text: ast, date, publication } = props;
+  const { label, headline, text, date, publication } = props;
 
   const labelText = label && label.toUpperCase && label.toUpperCase();
   return (
     <View style={styles.container}>
       <Text style={styles.label}>{labelText}</Text>
       <Text style={styles.headline}>{headline}</Text>
-      <Text style={styles.text}>{builder({ ast })}</Text>
+      <Text style={styles.text}>{renderTrees(text)}</Text>
       <DatePublication date={date} publication={publication} />
     </View>
   );
@@ -48,7 +48,7 @@ const ArticleSummary = props => {
 ArticleSummary.propTypes = {
   label: PropTypes.string,
   headline: PropTypes.string,
-  text: Markup.propTypes.ast,
+  text: PropTypes.arrayOf(PropTypes.object),
   date: PropTypes.instanceOf(Date),
   publication: PropTypes.string
 };
