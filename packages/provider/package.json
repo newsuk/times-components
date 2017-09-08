@@ -54,6 +54,7 @@
   "dependencies": {
     "@times-components/author-profile": "0.5.7",
     "@times-components/pagination": "0.3.2",
+    "@times-components/article": "0.4.3",
     "graphql-tag": "2.4.2",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",

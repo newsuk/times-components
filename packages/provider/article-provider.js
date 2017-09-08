@@ -1,4 +1,5 @@
 import gql from "graphql-tag";
+import Article from "@times-components/article";
 import connectGraphql from "./provider";
 
 const query = gql`
@@ -31,4 +32,4 @@ const query = gql`
 
 const propsToVariables = id => id;
 
-export default connectGraphql(query, propsToVariables);
+export default connectGraphql(query, propsToVariables)(Article);
