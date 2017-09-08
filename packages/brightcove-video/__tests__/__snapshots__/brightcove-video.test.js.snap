@@ -23,31 +23,19 @@ exports[`renders poster correctly before launch 1`] = `
   testID={undefined}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
-      <Image
-        onError={[Function]}
-        onLoad={[Function]}
-        source={
-          Object {
-            "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=",
-          }
+    <Image
+      source={
+        Object {
+          "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=",
         }
-        style={
-          Array [
-            Object {
-              "height": 1,
-              "width": 750,
-            },
-            Object {
-              "height": 180,
-              "width": 320,
-            },
-          ]
+      }
+      style={
+        Object {
+          "height": 180,
+          "width": 320,
         }
-      />
-    </View>
+      }
+    />
     <View
       style={
         Object {
@@ -111,31 +99,19 @@ exports[`renders poster with custom play icon if specified 1`] = `
   testID={undefined}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
-      <Image
-        onError={[Function]}
-        onLoad={[Function]}
-        source={
-          Object {
-            "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=",
-          }
+    <Image
+      source={
+        Object {
+          "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=",
         }
-        style={
-          Array [
-            Object {
-              "height": 1,
-              "width": 750,
-            },
-            Object {
-              "height": 180,
-              "width": 320,
-            },
-          ]
+      }
+      style={
+        Object {
+          "height": 180,
+          "width": 320,
         }
-      />
-    </View>
+      }
+    />
     <View
       style={
         Object {

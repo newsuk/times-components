@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, Image } from "react-native";
-import TimesImage from "@times-components/image";
 import PlayIcon from "./play-icon";
 
 const Splash = ({
@@ -14,7 +13,7 @@ const Splash = ({
 }) =>
   <View>
     {poster
-      ? <TimesImage
+      ? <Image
           source={poster}
           style={{
             width,
