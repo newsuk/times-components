@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.4.3...@times-components/article@0.5.0) (2017-09-08)
+
+
+### Features
+
+* add graphql integration ([#205](https://github.com/newsuk/times-components/issues/205)) ([cdd268a](https://github.com/newsuk/times-components/commit/cdd268a))
+
+
+
+
 <a name="0.4.3"></a>
 ## [0.4.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.4.2...@times-components/article@0.4.3) (2017-08-24)
 

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "0.2.14",
+  "version": "0.3.0",
   "main": "article-summary.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -58,8 +58,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/date-publication": "0.0.8",
-    "@times-components/markup": "0.4.3",
+    "@times-components/date-publication": "0.1.0",
+    "@times-components/markup": "0.5.0",
     "date-fns": "1.28.5",
     "prop-types": "15.5.10",
     "react-native-web": "0.0.119",

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/card@0.3.9...@times-components/card@0.4.0) (2017-09-08)
+
+
+### Bug Fixes
+
+* ensure no exception is thrown no asset ([#177](https://github.com/newsuk/times-components/issues/177)) ([05d573e](https://github.com/newsuk/times-components/commit/05d573e))
+
+
+### Features
+
+* add graphql integration ([#205](https://github.com/newsuk/times-components/issues/205)) ([cdd268a](https://github.com/newsuk/times-components/commit/cdd268a))
+
+
+
+
 <a name="0.3.15"></a>
 ## [0.3.15](https://github.com/newsuk/times-components/compare/@times-components/card@0.3.9...@times-components/card@0.3.15) (2017-09-01)
 
