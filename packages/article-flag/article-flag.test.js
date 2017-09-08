@@ -12,7 +12,7 @@ import ArticleFlag, {
 
 describe("Article Flag", () => {
   it("renders correctly", () => {
-    const tree = renderer.create(<ArticleFlag />).toJSON();
+    const tree = renderer.create(<ArticleFlag title="articleFlag" />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
