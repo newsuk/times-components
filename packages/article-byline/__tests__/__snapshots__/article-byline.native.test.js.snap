@@ -26,6 +26,7 @@ exports[`ArticleByline Native renders correctly with a single author 1`] = `
           "color": "#696969",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 14,
         },
       ]
     }
@@ -56,6 +57,7 @@ exports[`ArticleByline Native renders correctly with a single inline element 1`]
         "color": "#696969",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
+        "lineHeight": 14,
       }
     }
   >
@@ -103,6 +105,7 @@ exports[`ArticleByline Native renders correctly with multiple authors separated 
           "color": "#696969",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 14,
         },
       ]
     }
@@ -119,6 +122,7 @@ exports[`ArticleByline Native renders correctly with multiple authors separated 
         "color": "#696969",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
+        "lineHeight": 14,
       }
     }
   >
@@ -139,6 +143,7 @@ exports[`ArticleByline Native renders correctly with multiple authors separated 
           "color": "#696969",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 14,
         },
       ]
     }
@@ -155,6 +160,7 @@ exports[`ArticleByline Native renders correctly with multiple authors separated 
         "color": "#696969",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
+        "lineHeight": 14,
       }
     }
   >
@@ -175,6 +181,7 @@ exports[`ArticleByline Native renders correctly with multiple authors separated 
           "color": "#696969",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 14,
         },
       ]
     }
@@ -211,6 +218,7 @@ exports[`ArticleByline Native renders correctly with multiple authors separated 
           "color": "#696969",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 14,
         },
       ]
     }
@@ -227,6 +235,7 @@ exports[`ArticleByline Native renders correctly with multiple authors separated 
         "color": "#696969",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
+        "lineHeight": 14,
       }
     }
   >
@@ -247,6 +256,7 @@ exports[`ArticleByline Native renders correctly with multiple authors separated 
           "color": "#696969",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 14,
         },
       ]
     }
@@ -263,6 +273,7 @@ exports[`ArticleByline Native renders correctly with multiple authors separated 
         "color": "#696969",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
+        "lineHeight": 14,
       }
     }
   >
@@ -283,6 +294,7 @@ exports[`ArticleByline Native renders correctly with multiple authors separated 
           "color": "#696969",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 14,
         },
       ]
     }
@@ -319,6 +331,7 @@ exports[`ArticleByline Native renders correctly with styles 1`] = `
           "color": "#696969",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 14,
         },
       ]
     }
@@ -349,6 +362,7 @@ exports[`ArticleByline Native renders correctly with the author at the end 1`] =
         "color": "#696969",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
+        "lineHeight": 14,
       }
     }
   >
@@ -369,6 +383,7 @@ exports[`ArticleByline Native renders correctly with the author at the end 1`] =
           "color": "#696969",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 14,
         },
       ]
     }
@@ -405,6 +420,7 @@ exports[`ArticleByline Native renders correctly with the author in the begining 
           "color": "#696969",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 14,
         },
       ]
     }
@@ -421,6 +437,7 @@ exports[`ArticleByline Native renders correctly with the author in the begining 
         "color": "#696969",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
+        "lineHeight": 14,
       }
     }
   >
