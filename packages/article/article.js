@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Text,
   View,
   ListView,
   Platform,
@@ -124,20 +123,6 @@ class ArticlePage extends React.Component {
     };
     return (
       <View style={styles.PageWrapper}>
-        <View style={{ height: 66, backgroundColor: "#003d58" }}>
-          <Text
-            style={{
-              fontFamily: "TimesModern-Bold",
-              fontSize: 20,
-              fontWeight: "bold",
-              color: "#fff",
-              textAlign: "center",
-              paddingTop: 31
-            }}
-          >
-            News
-          </Text>
-        </View>
         <ListView
           dataSource={this.state.dataSource}
           renderRow={ArticlePage.renderRow}

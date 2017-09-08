@@ -32,8 +32,9 @@ const webStyles = StyleSheet.create({
   },
   StandFirst: {
     fontSize: 21,
-    lineHeight: 23,
+    lineHeight: 26,
     fontFamily: "TimesModern-Regular",
+    color: "#333333",
     paddingBottom: 9
   },
   ArticleFlag: {
@@ -51,11 +52,11 @@ const webStyles = StyleSheet.create({
   ArticleMetaElement: {
     borderTopColor: "#d0cece",
     borderTopWidth: StyleSheet.hairlineWidth,
-    paddingTop: 6,
-    paddingBottom: 1
+    paddingTop: 9,
+    paddingBottom: 5
   },
   LeadAsset: {
-    marginBottom: 6
+    marginBottom: 10
   },
   CaptionWrapper: {
     paddingLeft: 10,
@@ -72,9 +73,6 @@ const webStyles = StyleSheet.create({
 });
 
 const nativeStyles = StyleSheet.create({
-  PageWrapper: {
-    paddingBottom: 66
-  },
   ArticleMainContentRow: {
     paddingLeft: 10,
     paddingRight: 10
@@ -90,14 +88,16 @@ const nativeStyles = StyleSheet.create({
     paddingBottom: 7
   },
   ArticleHeadLineText: {
-    fontSize: 30,
-    lineHeight: 32,
+    fontSize: Platform.OS === "android" ? 28 : 30,
+    lineHeight: Platform.OS === "android" ? 37 : 32,
     color: "#000000",
+    fontWeight: Platform.OS === "android" ? "400" : "700",
     marginBottom: 0
   },
   StandFirst: {
     fontSize: 21,
-    lineHeight: 23,
+    lineHeight: Platform.OS === "android" ? 29 : 25,
+    color: "#333333",
     fontFamily: "TimesModern-Regular",
     paddingBottom: 9
   },
@@ -116,20 +116,22 @@ const nativeStyles = StyleSheet.create({
   ArticleMetaElement: {
     borderTopColor: "#d0cece",
     borderTopWidth: StyleSheet.hairlineWidth,
-    paddingTop: 6
+    paddingTop: Platform.OS === "android" ? 6 : 9,
+    paddingBottom: Platform.OS === "android" ? 8 : 4
   },
   LeadAsset: {
-    marginBottom: 6
+    marginBottom: Platform.OS === "android" ? 6 : 10
   },
   ArticleTextWrapper: {
     marginBottom: 20
   },
   ArticleTextElement: {
-    fontFamily: "TimesDigitalW04",
+    fontFamily:
+      Platform.OS === "android" ? "TimesDigitalW04-Regular" : "TimesDigitalW04",
     fontStyle: "normal",
-    lineHeight: 20,
-    fontSize: 18,
-    color: "#333"
+    lineHeight: 26,
+    fontSize: Platform.OS === "android" ? 16 : 17,
+    color: "#333333"
   }
 });
 

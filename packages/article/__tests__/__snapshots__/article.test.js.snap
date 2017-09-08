@@ -2,38 +2,8 @@
 
 exports[`Article test renders article no flags 1`] = `
 <View
-  style={
-    Object {
-      "paddingBottom": 66,
-    }
-  }
+  style={undefined}
 >
-  <View
-    style={
-      Object {
-        "backgroundColor": "#003d58",
-        "height": 66,
-      }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#fff",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 20,
-          "fontWeight": "bold",
-          "paddingTop": 31,
-          "textAlign": "center",
-        }
-      }
-    >
-      News
-    </Text>
-  </View>
   <RCTScrollView
     dataSource={
       ListViewDataSource {
@@ -50,7 +20,7 @@ exports[`Article test renders article no flags 1`] = `
       <View
         style={
           Object {
-            "marginBottom": 6,
+            "marginBottom": 10,
           }
         }
       >
@@ -103,16 +73,18 @@ exports[`Article test renders article no flags 1`] = `
               Array [
                 Object {
                   "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 10,
+                  "fontSize": 12,
                   "fontWeight": "400",
+                  "letterSpacing": 1.2,
+                  "lineHeight": 12,
                 },
                 Object {
-                  "color": "#008347",
+                  "color": "#13354E",
                 },
               ]
             }
           >
-            H U R R I C A N E   I R M A
+            HURRICANE IRMA
           </Text>
         </View>
         <View
@@ -141,6 +113,7 @@ exports[`Article test renders article no flags 1`] = `
                 Object {
                   "color": "#000000",
                   "fontSize": 30,
+                  "fontWeight": "700",
                   "lineHeight": 32,
                   "marginBottom": 0,
                 },
@@ -157,9 +130,10 @@ exports[`Article test renders article no flags 1`] = `
           style={
             Array [
               Object {
+                "color": "#333333",
                 "fontFamily": "TimesModern-Regular",
                 "fontSize": 21,
-                "lineHeight": 23,
+                "lineHeight": 25,
                 "paddingBottom": 9,
               },
             ]
@@ -196,7 +170,8 @@ exports[`Article test renders article no flags 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingTop": 6,
+                  "paddingBottom": 4,
+                  "paddingTop": 9,
                 },
               ]
             }
@@ -220,6 +195,7 @@ exports[`Article test renders article no flags 1`] = `
                     "color": "#696969",
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
+                    "lineHeight": 14,
                   }
                 }
               >
@@ -233,7 +209,8 @@ exports[`Article test renders article no flags 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingTop": 6,
+                  "paddingBottom": 4,
+                  "paddingTop": 9,
                 },
               ]
             }
@@ -248,6 +225,7 @@ exports[`Article test renders article no flags 1`] = `
                     "color": "#696969",
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
+                    "lineHeight": 15,
                   },
                   Object {},
                 ]
@@ -283,11 +261,11 @@ exports[`Article test renders article no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -344,11 +322,11 @@ exports[`Article test renders article no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -391,11 +369,11 @@ exports[`Article test renders article no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -427,11 +405,11 @@ exports[`Article test renders article no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -463,11 +441,11 @@ exports[`Article test renders article no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -499,11 +477,11 @@ exports[`Article test renders article no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -535,11 +513,11 @@ exports[`Article test renders article no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -571,11 +549,11 @@ exports[`Article test renders article no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -607,11 +585,11 @@ exports[`Article test renders article no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -643,11 +621,11 @@ exports[`Article test renders article no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -679,11 +657,11 @@ exports[`Article test renders article no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -715,11 +693,11 @@ exports[`Article test renders article no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -751,11 +729,11 @@ exports[`Article test renders article no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -770,38 +748,8 @@ exports[`Article test renders article no flags 1`] = `
 
 exports[`Article test renders article no label 1`] = `
 <View
-  style={
-    Object {
-      "paddingBottom": 66,
-    }
-  }
+  style={undefined}
 >
-  <View
-    style={
-      Object {
-        "backgroundColor": "#003d58",
-        "height": 66,
-      }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#fff",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 20,
-          "fontWeight": "bold",
-          "paddingTop": 31,
-          "textAlign": "center",
-        }
-      }
-    >
-      News
-    </Text>
-  </View>
   <RCTScrollView
     dataSource={
       ListViewDataSource {
@@ -818,7 +766,7 @@ exports[`Article test renders article no label 1`] = `
       <View
         style={
           Object {
-            "marginBottom": 6,
+            "marginBottom": 10,
           }
         }
       >
@@ -881,6 +829,7 @@ exports[`Article test renders article no label 1`] = `
                 Object {
                   "color": "#000000",
                   "fontSize": 30,
+                  "fontWeight": "700",
                   "lineHeight": 32,
                   "marginBottom": 0,
                 },
@@ -897,9 +846,10 @@ exports[`Article test renders article no label 1`] = `
           style={
             Array [
               Object {
+                "color": "#333333",
                 "fontFamily": "TimesModern-Regular",
                 "fontSize": 21,
-                "lineHeight": 23,
+                "lineHeight": 25,
                 "paddingBottom": 9,
               },
             ]
@@ -965,8 +915,9 @@ exports[`Article test renders article no label 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigital-RegularSC",
-                      "fontSize": 10,
+                      "fontSize": 12,
                       "fontWeight": "400",
+                      "letterSpacing": 1.4,
                     },
                     Object {
                       "color": "#E34605",
@@ -974,7 +925,7 @@ exports[`Article test renders article no label 1`] = `
                   ]
                 }
               >
-                N E W
+                NEW
               </Text>
             </View>
           </View>
@@ -1026,8 +977,9 @@ exports[`Article test renders article no label 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigital-RegularSC",
-                      "fontSize": 10,
+                      "fontSize": 12,
                       "fontWeight": "400",
+                      "letterSpacing": 1.4,
                     },
                     Object {
                       "color": "#C51D24",
@@ -1035,7 +987,7 @@ exports[`Article test renders article no label 1`] = `
                   ]
                 }
               >
-                E X C L U S I V E
+                EXCLUSIVE
               </Text>
             </View>
           </View>
@@ -1069,7 +1021,8 @@ exports[`Article test renders article no label 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingTop": 6,
+                  "paddingBottom": 4,
+                  "paddingTop": 9,
                 },
               ]
             }
@@ -1093,6 +1046,7 @@ exports[`Article test renders article no label 1`] = `
                     "color": "#696969",
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
+                    "lineHeight": 14,
                   }
                 }
               >
@@ -1106,7 +1060,8 @@ exports[`Article test renders article no label 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingTop": 6,
+                  "paddingBottom": 4,
+                  "paddingTop": 9,
                 },
               ]
             }
@@ -1121,6 +1076,7 @@ exports[`Article test renders article no label 1`] = `
                     "color": "#696969",
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
+                    "lineHeight": 15,
                   },
                   Object {},
                 ]
@@ -1156,11 +1112,11 @@ exports[`Article test renders article no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -1217,11 +1173,11 @@ exports[`Article test renders article no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -1264,11 +1220,11 @@ exports[`Article test renders article no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -1300,11 +1256,11 @@ exports[`Article test renders article no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -1336,11 +1292,11 @@ exports[`Article test renders article no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -1372,11 +1328,11 @@ exports[`Article test renders article no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -1408,11 +1364,11 @@ exports[`Article test renders article no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -1444,11 +1400,11 @@ exports[`Article test renders article no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -1480,11 +1436,11 @@ exports[`Article test renders article no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -1516,11 +1472,11 @@ exports[`Article test renders article no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -1552,11 +1508,11 @@ exports[`Article test renders article no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -1588,11 +1544,11 @@ exports[`Article test renders article no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -1624,11 +1580,11 @@ exports[`Article test renders article no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -1643,38 +1599,8 @@ exports[`Article test renders article no label 1`] = `
 
 exports[`Article test renders article no label no flags 1`] = `
 <View
-  style={
-    Object {
-      "paddingBottom": 66,
-    }
-  }
+  style={undefined}
 >
-  <View
-    style={
-      Object {
-        "backgroundColor": "#003d58",
-        "height": 66,
-      }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#fff",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 20,
-          "fontWeight": "bold",
-          "paddingTop": 31,
-          "textAlign": "center",
-        }
-      }
-    >
-      News
-    </Text>
-  </View>
   <RCTScrollView
     dataSource={
       ListViewDataSource {
@@ -1691,7 +1617,7 @@ exports[`Article test renders article no label no flags 1`] = `
       <View
         style={
           Object {
-            "marginBottom": 6,
+            "marginBottom": 10,
           }
         }
       >
@@ -1754,6 +1680,7 @@ exports[`Article test renders article no label no flags 1`] = `
                 Object {
                   "color": "#000000",
                   "fontSize": 30,
+                  "fontWeight": "700",
                   "lineHeight": 32,
                   "marginBottom": 0,
                 },
@@ -1770,9 +1697,10 @@ exports[`Article test renders article no label no flags 1`] = `
           style={
             Array [
               Object {
+                "color": "#333333",
                 "fontFamily": "TimesModern-Regular",
                 "fontSize": 21,
-                "lineHeight": 23,
+                "lineHeight": 25,
                 "paddingBottom": 9,
               },
             ]
@@ -1780,139 +1708,6 @@ exports[`Article test renders article no label no flags 1`] = `
         >
           How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life
         </Text>
-        <View
-          style={
-            Array [
-              Object {
-                "flexDirection": "row",
-                "marginBottom": 11,
-              },
-            ]
-          }
-        >
-          <View
-            style={
-              Object {
-                "marginRight": 14,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "marginBottom": 1,
-                    "marginRight": 5,
-                  }
-                }
-              >
-                <svg
-                  height={7}
-                  style={Object {}}
-                  viewBox="0 0 20 20"
-                  width={7}
-                >
-                  <g
-                    fill="#E34605"
-                    style={Object {}}
-                  >
-                    <path
-                      d="M 0,10 10,20 20,10 10,0 Z"
-                      style={Object {}}
-                    />
-                  </g>
-                </svg>
-              </View>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "fontFamily": "TimesDigital-RegularSC",
-                      "fontSize": 10,
-                      "fontWeight": "400",
-                    },
-                    Object {
-                      "color": "#E34605",
-                    },
-                  ]
-                }
-              >
-                N E W
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              Object {
-                "marginRight": 14,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "marginBottom": 1,
-                    "marginRight": 5,
-                  }
-                }
-              >
-                <svg
-                  height={7}
-                  style={Object {}}
-                  viewBox="0 0 20 20"
-                  width={7}
-                >
-                  <g
-                    fill="#C51D24"
-                    style={Object {}}
-                  >
-                    <path
-                      d="M 0,10 10,20 20,10 10,0 Z"
-                      style={Object {}}
-                    />
-                  </g>
-                </svg>
-              </View>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "fontFamily": "TimesDigital-RegularSC",
-                      "fontSize": 10,
-                      "fontWeight": "400",
-                    },
-                    Object {
-                      "color": "#C51D24",
-                    },
-                  ]
-                }
-              >
-                E X C L U S I V E
-              </Text>
-            </View>
-          </View>
-        </View>
       </View>
       <View
         style={
@@ -1942,7 +1737,8 @@ exports[`Article test renders article no label no flags 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingTop": 6,
+                  "paddingBottom": 4,
+                  "paddingTop": 9,
                 },
               ]
             }
@@ -1966,6 +1762,7 @@ exports[`Article test renders article no label no flags 1`] = `
                     "color": "#696969",
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
+                    "lineHeight": 14,
                   }
                 }
               >
@@ -1979,7 +1776,8 @@ exports[`Article test renders article no label no flags 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingTop": 6,
+                  "paddingBottom": 4,
+                  "paddingTop": 9,
                 },
               ]
             }
@@ -1994,6 +1792,7 @@ exports[`Article test renders article no label no flags 1`] = `
                     "color": "#696969",
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
+                    "lineHeight": 15,
                   },
                   Object {},
                 ]
@@ -2029,11 +1828,11 @@ exports[`Article test renders article no label no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -2090,11 +1889,11 @@ exports[`Article test renders article no label no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -2137,11 +1936,11 @@ exports[`Article test renders article no label no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -2173,11 +1972,11 @@ exports[`Article test renders article no label no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -2209,11 +2008,11 @@ exports[`Article test renders article no label no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -2245,11 +2044,11 @@ exports[`Article test renders article no label no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -2281,11 +2080,11 @@ exports[`Article test renders article no label no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -2317,11 +2116,11 @@ exports[`Article test renders article no label no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -2353,11 +2152,11 @@ exports[`Article test renders article no label no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -2389,11 +2188,11 @@ exports[`Article test renders article no label no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -2425,11 +2224,11 @@ exports[`Article test renders article no label no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -2461,11 +2260,11 @@ exports[`Article test renders article no label no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -2497,11 +2296,11 @@ exports[`Article test renders article no label no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -2516,38 +2315,8 @@ exports[`Article test renders article no label no flags 1`] = `
 
 exports[`Article test renders article no label no flags no standfirst 1`] = `
 <View
-  style={
-    Object {
-      "paddingBottom": 66,
-    }
-  }
+  style={undefined}
 >
-  <View
-    style={
-      Object {
-        "backgroundColor": "#003d58",
-        "height": 66,
-      }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#fff",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 20,
-          "fontWeight": "bold",
-          "paddingTop": 31,
-          "textAlign": "center",
-        }
-      }
-    >
-      News
-    </Text>
-  </View>
   <RCTScrollView
     dataSource={
       ListViewDataSource {
@@ -2564,7 +2333,7 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
       <View
         style={
           Object {
-            "marginBottom": 6,
+            "marginBottom": 10,
           }
         }
       >
@@ -2627,6 +2396,7 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
                 Object {
                   "color": "#000000",
                   "fontSize": 30,
+                  "fontWeight": "700",
                   "lineHeight": 32,
                   "marginBottom": 0,
                 },
@@ -2665,7 +2435,8 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingTop": 6,
+                  "paddingBottom": 4,
+                  "paddingTop": 9,
                 },
               ]
             }
@@ -2689,6 +2460,7 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
                     "color": "#696969",
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
+                    "lineHeight": 14,
                   }
                 }
               >
@@ -2702,7 +2474,8 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingTop": 6,
+                  "paddingBottom": 4,
+                  "paddingTop": 9,
                 },
               ]
             }
@@ -2717,6 +2490,7 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
                     "color": "#696969",
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
+                    "lineHeight": 15,
                   },
                   Object {},
                 ]
@@ -2752,11 +2526,11 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -2813,11 +2587,11 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -2860,11 +2634,11 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -2896,11 +2670,11 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -2932,11 +2706,11 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -2968,11 +2742,11 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -3004,11 +2778,11 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -3040,11 +2814,11 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -3076,11 +2850,11 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -3112,11 +2886,11 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -3148,11 +2922,11 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -3184,11 +2958,11 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -3220,11 +2994,11 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -3239,38 +3013,8 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
 
 exports[`Article test renders article no standfirst 1`] = `
 <View
-  style={
-    Object {
-      "paddingBottom": 66,
-    }
-  }
+  style={undefined}
 >
-  <View
-    style={
-      Object {
-        "backgroundColor": "#003d58",
-        "height": 66,
-      }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#fff",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 20,
-          "fontWeight": "bold",
-          "paddingTop": 31,
-          "textAlign": "center",
-        }
-      }
-    >
-      News
-    </Text>
-  </View>
   <RCTScrollView
     dataSource={
       ListViewDataSource {
@@ -3287,7 +3031,7 @@ exports[`Article test renders article no standfirst 1`] = `
       <View
         style={
           Object {
-            "marginBottom": 6,
+            "marginBottom": 10,
           }
         }
       >
@@ -3340,16 +3084,18 @@ exports[`Article test renders article no standfirst 1`] = `
               Array [
                 Object {
                   "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 10,
+                  "fontSize": 12,
                   "fontWeight": "400",
+                  "letterSpacing": 1.2,
+                  "lineHeight": 12,
                 },
                 Object {
-                  "color": "#008347",
+                  "color": "#13354E",
                 },
               ]
             }
           >
-            H U R R I C A N E   I R M A
+            HURRICANE IRMA
           </Text>
         </View>
         <View
@@ -3378,6 +3124,7 @@ exports[`Article test renders article no standfirst 1`] = `
                 Object {
                   "color": "#000000",
                   "fontSize": 30,
+                  "fontWeight": "700",
                   "lineHeight": 32,
                   "marginBottom": 0,
                 },
@@ -3445,8 +3192,9 @@ exports[`Article test renders article no standfirst 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigital-RegularSC",
-                      "fontSize": 10,
+                      "fontSize": 12,
                       "fontWeight": "400",
+                      "letterSpacing": 1.4,
                     },
                     Object {
                       "color": "#E34605",
@@ -3454,7 +3202,7 @@ exports[`Article test renders article no standfirst 1`] = `
                   ]
                 }
               >
-                N E W
+                NEW
               </Text>
             </View>
           </View>
@@ -3506,8 +3254,9 @@ exports[`Article test renders article no standfirst 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigital-RegularSC",
-                      "fontSize": 10,
+                      "fontSize": 12,
                       "fontWeight": "400",
+                      "letterSpacing": 1.4,
                     },
                     Object {
                       "color": "#C51D24",
@@ -3515,7 +3264,7 @@ exports[`Article test renders article no standfirst 1`] = `
                   ]
                 }
               >
-                E X C L U S I V E
+                EXCLUSIVE
               </Text>
             </View>
           </View>
@@ -3549,7 +3298,8 @@ exports[`Article test renders article no standfirst 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingTop": 6,
+                  "paddingBottom": 4,
+                  "paddingTop": 9,
                 },
               ]
             }
@@ -3573,6 +3323,7 @@ exports[`Article test renders article no standfirst 1`] = `
                     "color": "#696969",
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
+                    "lineHeight": 14,
                   }
                 }
               >
@@ -3586,7 +3337,8 @@ exports[`Article test renders article no standfirst 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingTop": 6,
+                  "paddingBottom": 4,
+                  "paddingTop": 9,
                 },
               ]
             }
@@ -3601,6 +3353,7 @@ exports[`Article test renders article no standfirst 1`] = `
                     "color": "#696969",
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
+                    "lineHeight": 15,
                   },
                   Object {},
                 ]
@@ -3636,11 +3389,11 @@ exports[`Article test renders article no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -3697,11 +3450,11 @@ exports[`Article test renders article no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -3744,11 +3497,11 @@ exports[`Article test renders article no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -3780,11 +3533,11 @@ exports[`Article test renders article no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -3816,11 +3569,11 @@ exports[`Article test renders article no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -3852,11 +3605,11 @@ exports[`Article test renders article no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -3888,11 +3641,11 @@ exports[`Article test renders article no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -3924,11 +3677,11 @@ exports[`Article test renders article no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -3960,11 +3713,11 @@ exports[`Article test renders article no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -3996,11 +3749,11 @@ exports[`Article test renders article no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -4032,11 +3785,11 @@ exports[`Article test renders article no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -4068,11 +3821,11 @@ exports[`Article test renders article no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -4104,11 +3857,11 @@ exports[`Article test renders article no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -4123,38 +3876,8 @@ exports[`Article test renders article no standfirst 1`] = `
 
 exports[`Article test renders article no standfirst no flags 1`] = `
 <View
-  style={
-    Object {
-      "paddingBottom": 66,
-    }
-  }
+  style={undefined}
 >
-  <View
-    style={
-      Object {
-        "backgroundColor": "#003d58",
-        "height": 66,
-      }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#fff",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 20,
-          "fontWeight": "bold",
-          "paddingTop": 31,
-          "textAlign": "center",
-        }
-      }
-    >
-      News
-    </Text>
-  </View>
   <RCTScrollView
     dataSource={
       ListViewDataSource {
@@ -4171,7 +3894,7 @@ exports[`Article test renders article no standfirst no flags 1`] = `
       <View
         style={
           Object {
-            "marginBottom": 6,
+            "marginBottom": 10,
           }
         }
       >
@@ -4224,16 +3947,18 @@ exports[`Article test renders article no standfirst no flags 1`] = `
               Array [
                 Object {
                   "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 10,
+                  "fontSize": 12,
                   "fontWeight": "400",
+                  "letterSpacing": 1.2,
+                  "lineHeight": 12,
                 },
                 Object {
-                  "color": "#008347",
+                  "color": "#13354E",
                 },
               ]
             }
           >
-            H U R R I C A N E   I R M A
+            HURRICANE IRMA
           </Text>
         </View>
         <View
@@ -4262,6 +3987,7 @@ exports[`Article test renders article no standfirst no flags 1`] = `
                 Object {
                   "color": "#000000",
                   "fontSize": 30,
+                  "fontWeight": "700",
                   "lineHeight": 32,
                   "marginBottom": 0,
                 },
@@ -4300,7 +4026,8 @@ exports[`Article test renders article no standfirst no flags 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingTop": 6,
+                  "paddingBottom": 4,
+                  "paddingTop": 9,
                 },
               ]
             }
@@ -4324,6 +4051,7 @@ exports[`Article test renders article no standfirst no flags 1`] = `
                     "color": "#696969",
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
+                    "lineHeight": 14,
                   }
                 }
               >
@@ -4337,7 +4065,8 @@ exports[`Article test renders article no standfirst no flags 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingTop": 6,
+                  "paddingBottom": 4,
+                  "paddingTop": 9,
                 },
               ]
             }
@@ -4352,6 +4081,7 @@ exports[`Article test renders article no standfirst no flags 1`] = `
                     "color": "#696969",
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
+                    "lineHeight": 15,
                   },
                   Object {},
                 ]
@@ -4387,11 +4117,11 @@ exports[`Article test renders article no standfirst no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -4448,11 +4178,11 @@ exports[`Article test renders article no standfirst no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -4495,11 +4225,11 @@ exports[`Article test renders article no standfirst no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -4531,11 +4261,11 @@ exports[`Article test renders article no standfirst no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -4567,11 +4297,11 @@ exports[`Article test renders article no standfirst no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -4603,11 +4333,11 @@ exports[`Article test renders article no standfirst no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -4639,11 +4369,11 @@ exports[`Article test renders article no standfirst no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -4675,11 +4405,11 @@ exports[`Article test renders article no standfirst no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -4711,11 +4441,11 @@ exports[`Article test renders article no standfirst no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -4747,11 +4477,11 @@ exports[`Article test renders article no standfirst no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -4783,11 +4513,11 @@ exports[`Article test renders article no standfirst no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -4819,11 +4549,11 @@ exports[`Article test renders article no standfirst no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -4855,11 +4585,11 @@ exports[`Article test renders article no standfirst no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -4874,38 +4604,8 @@ exports[`Article test renders article no standfirst no flags 1`] = `
 
 exports[`Article test renders article no standfirst no label 1`] = `
 <View
-  style={
-    Object {
-      "paddingBottom": 66,
-    }
-  }
+  style={undefined}
 >
-  <View
-    style={
-      Object {
-        "backgroundColor": "#003d58",
-        "height": 66,
-      }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#fff",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 20,
-          "fontWeight": "bold",
-          "paddingTop": 31,
-          "textAlign": "center",
-        }
-      }
-    >
-      News
-    </Text>
-  </View>
   <RCTScrollView
     dataSource={
       ListViewDataSource {
@@ -4922,7 +4622,7 @@ exports[`Article test renders article no standfirst no label 1`] = `
       <View
         style={
           Object {
-            "marginBottom": 6,
+            "marginBottom": 10,
           }
         }
       >
@@ -4985,6 +4685,7 @@ exports[`Article test renders article no standfirst no label 1`] = `
                 Object {
                   "color": "#000000",
                   "fontSize": 30,
+                  "fontWeight": "700",
                   "lineHeight": 32,
                   "marginBottom": 0,
                 },
@@ -5052,8 +4753,9 @@ exports[`Article test renders article no standfirst no label 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigital-RegularSC",
-                      "fontSize": 10,
+                      "fontSize": 12,
                       "fontWeight": "400",
+                      "letterSpacing": 1.4,
                     },
                     Object {
                       "color": "#E34605",
@@ -5061,7 +4763,7 @@ exports[`Article test renders article no standfirst no label 1`] = `
                   ]
                 }
               >
-                N E W
+                NEW
               </Text>
             </View>
           </View>
@@ -5113,8 +4815,9 @@ exports[`Article test renders article no standfirst no label 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigital-RegularSC",
-                      "fontSize": 10,
+                      "fontSize": 12,
                       "fontWeight": "400",
+                      "letterSpacing": 1.4,
                     },
                     Object {
                       "color": "#C51D24",
@@ -5122,7 +4825,7 @@ exports[`Article test renders article no standfirst no label 1`] = `
                   ]
                 }
               >
-                E X C L U S I V E
+                EXCLUSIVE
               </Text>
             </View>
           </View>
@@ -5156,7 +4859,8 @@ exports[`Article test renders article no standfirst no label 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingTop": 6,
+                  "paddingBottom": 4,
+                  "paddingTop": 9,
                 },
               ]
             }
@@ -5180,6 +4884,7 @@ exports[`Article test renders article no standfirst no label 1`] = `
                     "color": "#696969",
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
+                    "lineHeight": 14,
                   }
                 }
               >
@@ -5193,7 +4898,8 @@ exports[`Article test renders article no standfirst no label 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingTop": 6,
+                  "paddingBottom": 4,
+                  "paddingTop": 9,
                 },
               ]
             }
@@ -5208,6 +4914,7 @@ exports[`Article test renders article no standfirst no label 1`] = `
                     "color": "#696969",
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
+                    "lineHeight": 15,
                   },
                   Object {},
                 ]
@@ -5243,11 +4950,11 @@ exports[`Article test renders article no standfirst no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -5304,11 +5011,11 @@ exports[`Article test renders article no standfirst no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -5351,11 +5058,11 @@ exports[`Article test renders article no standfirst no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -5387,11 +5094,11 @@ exports[`Article test renders article no standfirst no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -5423,11 +5130,11 @@ exports[`Article test renders article no standfirst no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -5459,11 +5166,11 @@ exports[`Article test renders article no standfirst no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -5495,11 +5202,11 @@ exports[`Article test renders article no standfirst no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -5531,11 +5238,11 @@ exports[`Article test renders article no standfirst no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -5567,11 +5274,11 @@ exports[`Article test renders article no standfirst no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -5603,11 +5310,11 @@ exports[`Article test renders article no standfirst no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -5639,11 +5346,11 @@ exports[`Article test renders article no standfirst no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -5675,11 +5382,11 @@ exports[`Article test renders article no standfirst no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -5711,11 +5418,11 @@ exports[`Article test renders article no standfirst no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -5743,38 +5450,8 @@ exports[`Article test renders empty article 1`] = `
 
 exports[`Article test renders full article 1`] = `
 <View
-  style={
-    Object {
-      "paddingBottom": 66,
-    }
-  }
+  style={undefined}
 >
-  <View
-    style={
-      Object {
-        "backgroundColor": "#003d58",
-        "height": 66,
-      }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#fff",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 20,
-          "fontWeight": "bold",
-          "paddingTop": 31,
-          "textAlign": "center",
-        }
-      }
-    >
-      News
-    </Text>
-  </View>
   <RCTScrollView
     dataSource={
       ListViewDataSource {
@@ -5791,7 +5468,7 @@ exports[`Article test renders full article 1`] = `
       <View
         style={
           Object {
-            "marginBottom": 6,
+            "marginBottom": 10,
           }
         }
       >
@@ -5844,16 +5521,18 @@ exports[`Article test renders full article 1`] = `
               Array [
                 Object {
                   "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 10,
+                  "fontSize": 12,
                   "fontWeight": "400",
+                  "letterSpacing": 1.2,
+                  "lineHeight": 12,
                 },
                 Object {
-                  "color": "#008347",
+                  "color": "#13354E",
                 },
               ]
             }
           >
-            H U R R I C A N E   I R M A
+            HURRICANE IRMA
           </Text>
         </View>
         <View
@@ -5882,6 +5561,7 @@ exports[`Article test renders full article 1`] = `
                 Object {
                   "color": "#000000",
                   "fontSize": 30,
+                  "fontWeight": "700",
                   "lineHeight": 32,
                   "marginBottom": 0,
                 },
@@ -5898,9 +5578,10 @@ exports[`Article test renders full article 1`] = `
           style={
             Array [
               Object {
+                "color": "#333333",
                 "fontFamily": "TimesModern-Regular",
                 "fontSize": 21,
-                "lineHeight": 23,
+                "lineHeight": 25,
                 "paddingBottom": 9,
               },
             ]
@@ -5966,8 +5647,9 @@ exports[`Article test renders full article 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigital-RegularSC",
-                      "fontSize": 10,
+                      "fontSize": 12,
                       "fontWeight": "400",
+                      "letterSpacing": 1.4,
                     },
                     Object {
                       "color": "#E34605",
@@ -5975,7 +5657,7 @@ exports[`Article test renders full article 1`] = `
                   ]
                 }
               >
-                N E W
+                NEW
               </Text>
             </View>
           </View>
@@ -6027,8 +5709,9 @@ exports[`Article test renders full article 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigital-RegularSC",
-                      "fontSize": 10,
+                      "fontSize": 12,
                       "fontWeight": "400",
+                      "letterSpacing": 1.4,
                     },
                     Object {
                       "color": "#C51D24",
@@ -6036,7 +5719,7 @@ exports[`Article test renders full article 1`] = `
                   ]
                 }
               >
-                E X C L U S I V E
+                EXCLUSIVE
               </Text>
             </View>
           </View>
@@ -6070,7 +5753,8 @@ exports[`Article test renders full article 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingTop": 6,
+                  "paddingBottom": 4,
+                  "paddingTop": 9,
                 },
               ]
             }
@@ -6094,6 +5778,7 @@ exports[`Article test renders full article 1`] = `
                     "color": "#696969",
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
+                    "lineHeight": 14,
                   }
                 }
               >
@@ -6107,7 +5792,8 @@ exports[`Article test renders full article 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingTop": 6,
+                  "paddingBottom": 4,
+                  "paddingTop": 9,
                 },
               ]
             }
@@ -6122,6 +5808,7 @@ exports[`Article test renders full article 1`] = `
                     "color": "#696969",
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
+                    "lineHeight": 15,
                   },
                   Object {},
                 ]
@@ -6157,11 +5844,11 @@ exports[`Article test renders full article 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -6218,11 +5905,11 @@ exports[`Article test renders full article 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -6265,11 +5952,11 @@ exports[`Article test renders full article 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -6301,11 +5988,11 @@ exports[`Article test renders full article 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -6337,11 +6024,11 @@ exports[`Article test renders full article 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -6373,11 +6060,11 @@ exports[`Article test renders full article 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -6409,11 +6096,11 @@ exports[`Article test renders full article 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -6445,11 +6132,11 @@ exports[`Article test renders full article 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -6481,11 +6168,11 @@ exports[`Article test renders full article 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -6517,11 +6204,11 @@ exports[`Article test renders full article 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -6553,11 +6240,11 @@ exports[`Article test renders full article 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -6589,11 +6276,11 @@ exports[`Article test renders full article 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >
@@ -6625,11 +6312,11 @@ exports[`Article test renders full article 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
+                "fontSize": 17,
                 "fontStyle": "normal",
-                "lineHeight": 20,
+                "lineHeight": 26,
               }
             }
           >

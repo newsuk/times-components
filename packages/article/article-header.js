@@ -15,7 +15,7 @@ const ArticleHeader = ({ label, title, standfirst, flags }) =>
   <View style={[styles.ArticleMainContentRow]}>
     {label
       ? <View style={styles.ArticleLabel}>
-          <ArticleLabel title={label} color="#008347" />
+          <ArticleLabel title={label} color="#13354E" />
         </View>
       : null}
     <View style={[styles.ArticleHeadline]}>
