@@ -34,7 +34,7 @@ it("renders loading state", () => {
   const query = gql`
     {
       article(id: "foo") {
-        flags
+        label
       }
     }
   `;

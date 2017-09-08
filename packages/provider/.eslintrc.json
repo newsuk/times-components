@@ -8,7 +8,7 @@
       "error",
       {
         "env": "apollo",
-        "schemaJsonFilepath": "./dist/schema.json"
+        "schemaJsonFilepath": "./schema.json"
       }
     ]
   },
