@@ -56,9 +56,6 @@ When developing a component it's easiest to use the
 `npm run storybook:build` will output the built web storybook into the default `storybook-static`
  folder that is synced to the `gh_pages` branch to demo the components in the web
 
- `npm run prettier:diff` is used by the test script to enforce the code style at the CI level but
- can be run across all packages as a check too
-
  When the CI passes `packages:publish` will be run that uses
   [conventional commits](https://conventionalcommits.org/) to bump to the correct semver version,
   create a CHANGELOG and push to the `@times-components` org on npm
@@ -90,7 +87,6 @@ Fructose uses detox to instrument the tests. In order to run the tests you will 
 Fructose also relies on an application existing within the project, in this case we are using the storybook app. If you have not installed it, you can do so by running `npm run ios`. You will need to terminate the server that is run with this as fructose will run its own at the time of testing. As long as you do not delete the app, you will only have to build the app once.
 
 If you run `npm run test:fructose` in the root directory it will run fructose tests for all of the components.
-
 
 ## Local App Deployment
 
@@ -152,6 +148,12 @@ An example component/package looks like this:
 2. Run `yarn` in the root folder.
 
 Once it is done, you can run `npm run storybook` and/or `npm run storybook-native`
+
+## Provider package
+
+The `Provider package` is home to any GraphQL queries that should be shared across the various platforms. The [Times Public API](https://github.com/newsuk/times-public-api)
+ schema is checked in as `schema.json` which should be updated when any fields are changed. The packages linting will
+ then check that each of the `gql` queries within the package are properly formed
 
 ## Cutting a Release
 
