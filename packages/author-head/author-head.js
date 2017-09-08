@@ -29,29 +29,29 @@ const styles = StyleSheet.create({
   },
   name: {
     fontFamily: "TimesModern-Bold",
-    fontSize: 30,
-    fontWeight: "400",
-    lineHeight: 30,
-    color: "#1D1D1B",
+    fontSize: 45,
+    color: "#000",
     paddingTop: 32
   },
   title: {
-    fontFamily: "TimesDigital-RegularSC"
+    fontFamily: "TimesDigital-RegularSC",
+    fontSize: 15,
+    color: "#696969"
   },
   twitter: {
-    fontSize: 15,
+    fontSize: 18,
     fontFamily: "GillSansMTStd-Medium",
-    color: "#069",
+    color: "#006699",
     paddingTop: 16,
     textDecorationLine: "none"
   },
   bio: {
     fontFamily: "TimesDigital-Regular",
     textAlign: "center",
-    fontSize: 15,
-    lineHeight: 25,
+    fontSize: 16,
+    lineHeight: 26,
     color: "#333",
-    maxWidth: "66%",
+    maxWidth: "88%",
     paddingBottom: 32
   },
   wrapper: {
