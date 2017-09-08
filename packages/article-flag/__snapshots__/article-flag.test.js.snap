@@ -52,7 +52,7 @@ exports[`Article Flag renders Exclusive flag correctly 1`] = `
       ]
     }
   >
-    exclusive
+    EXCLUSIVE
   </Text>
 </View>
 `;
@@ -109,7 +109,7 @@ exports[`Article Flag renders New flag correctly 1`] = `
       ]
     }
   >
-    new
+    NEW
   </Text>
 </View>
 `;
@@ -166,7 +166,7 @@ exports[`Article Flag renders Sponsored flag correctly 1`] = `
       ]
     }
   >
-    sponsored
+    SPONSORED
   </Text>
 </View>
 `;
@@ -223,7 +223,7 @@ exports[`Article Flag renders Updated flag correctly 1`] = `
       ]
     }
   >
-    updated
+    UPDATED
   </Text>
 </View>
 `;
@@ -280,7 +280,7 @@ exports[`Article Flag renders correctly 1`] = `
       ]
     }
   >
-    articleFlag
+    ARTICLEFLAG
   </Text>
 </View>
 `;

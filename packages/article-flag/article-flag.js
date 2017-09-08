@@ -30,7 +30,7 @@ const beautifyTitle = title => {
   if (Platform.OS === "android") {
     return title.toUpperCase().split("").join("\u200A");
   }
-  return title;
+  return title.toUpperCase();
 };
 
 const ArticleFlag = ({ title, color }) => {
