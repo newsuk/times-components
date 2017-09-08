@@ -22,9 +22,9 @@ const renderIframe = () => {
   );
 };
 
-storiesOf("Article", module).add("Article", () =>
+storiesOf("Article", module).add("Article", () => (
   <View>
     {renderIframe()}
     <Article />
   </View>
-);
+));

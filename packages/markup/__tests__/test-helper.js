@@ -83,9 +83,7 @@ export default (Markup, builder) => () => {
   it("renders multiple children", () => {
     const tree = renderer
       .create(
-        <Text style={{ color: "red" }}>
-          {builder({ ast: multiParagraph })}
-        </Text>
+        <Text style={{ color: "red" }}>{builder({ ast: multiParagraph })}</Text>
       )
       .toJSON();
 

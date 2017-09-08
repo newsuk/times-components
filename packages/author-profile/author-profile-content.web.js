@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   }
 });
 
-const AuthorProfile = props =>
+const AuthorProfile = props => (
   <View>
     <AuthorProfileHeader {...props} />
     {props.articles.list.map((item, key) => {
@@ -26,7 +26,8 @@ const AuthorProfile = props =>
         </View>
       );
     })}
-  </View>;
+  </View>
+);
 
 AuthorProfile.propTypes = Object.assign(
   {

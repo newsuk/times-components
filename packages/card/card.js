@@ -61,17 +61,17 @@ class CardComponent extends React.Component {
     } = this.props;
 
     const imageComponent =
-      image && image.uri
-        ? <View
-            style={[
-              styles.imageContainer,
-              styles.childrenContainer,
-              isHorizontal ? styles.horizontalImageContainer : null
-            ]}
-          >
-            <Image style={styles.image} source={image} />
-          </View>
-        : null;
+      image && image.uri ? (
+        <View
+          style={[
+            styles.imageContainer,
+            styles.childrenContainer,
+            isHorizontal ? styles.horizontalImageContainer : null
+          ]}
+        >
+          <Image style={styles.image} source={image} />
+        </View>
+      ) : null;
 
     return (
       <View

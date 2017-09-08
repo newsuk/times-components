@@ -19,14 +19,14 @@ const videoId = "4084164751001";
 const firstArgJSONAction = decorateAction([args => [JSON.stringify(args[0])]]);
 
 storiesOf("BrightcoveVideo", module)
-  .add("Default values", () =>
+  .add("Default values", () => (
     <BrightcoveVideo
       policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
     />
-  )
-  .add("Large player", () =>
+  ))
+  .add("Large player", () => (
     <BrightcoveVideo
       width={800}
       height={600}
@@ -34,16 +34,16 @@ storiesOf("BrightcoveVideo", module)
       videoId={videoId}
       accountId={accountId}
     />
-  )
-  .add("Hidden Fullscreen button", () =>
+  ))
+  .add("Hidden Fullscreen button", () => (
     <BrightcoveVideo
       policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
       hideFullScreenButton
     />
-  )
-  .add("Fullscreen player with hidden Fullscreen button", () =>
+  ))
+  .add("Fullscreen player with hidden Fullscreen button", () => (
     <BrightcoveVideo
       width="100%"
       height="100%"
@@ -52,8 +52,8 @@ storiesOf("BrightcoveVideo", module)
       accountId={accountId}
       hideFullScreenButton
     />
-  )
-  .add("Two players", () =>
+  ))
+  .add("Two players", () => (
     <View>
       <BrightcoveVideo
         width={300}
@@ -70,11 +70,11 @@ storiesOf("BrightcoveVideo", module)
         accountId={accountId}
       />
     </View>
-  )
-  .add("Lazy load players", () =>
+  ))
+  .add("Lazy load players", () => (
     <VideoAdder policyKey={policyKey} videoId={videoId} accountId={accountId} />
-  )
-  .add("With different videos", () =>
+  ))
+  .add("With different videos", () => (
     <View>
       <BrightcoveVideo
         width={320}
@@ -91,8 +91,8 @@ storiesOf("BrightcoveVideo", module)
         accountId={accountId}
       />
     </View>
-  )
-  .add("With poster image", () =>
+  ))
+  .add("With poster image", () => (
     <BrightcoveVideo
       width={320}
       height={200}
@@ -101,8 +101,8 @@ storiesOf("BrightcoveVideo", module)
       videoId="1532562858001"
       accountId={accountId}
     />
-  )
-  .add("Bad video id", () =>
+  ))
+  .add("Bad video id", () => (
     <BrightcoveVideo
       width={800}
       height={600}
@@ -111,8 +111,8 @@ storiesOf("BrightcoveVideo", module)
       accountId={accountId}
       onError={firstArgJSONAction("error")}
     />
-  )
-  .add("Bad account id", () =>
+  ))
+  .add("Bad account id", () => (
     <BrightcoveVideo
       width={800}
       height={600}
@@ -121,31 +121,31 @@ storiesOf("BrightcoveVideo", module)
       accountId="x"
       onError={firstArgJSONAction("error")}
     />
-  )
-  .add("With event listener", () =>
+  ))
+  .add("With event listener", () => (
     <BrightcoveVideo
       policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
       onChange={firstArgJSONAction("change")}
     />
-  )
-  .add("With external controls", () =>
+  ))
+  .add("With external controls", () => (
     <VideoWithExternalControls
       policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
     />
-  )
-  .add("With autoplay", () =>
+  ))
+  .add("With autoplay", () => (
     <BrightcoveVideo
       policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
       autoplay
     />
-  )
-  .add("With autoplay & event listner", () =>
+  ))
+  .add("With autoplay & event listner", () => (
     <BrightcoveVideo
       policyKey={policyKey}
       videoId={videoId}
@@ -153,4 +153,4 @@ storiesOf("BrightcoveVideo", module)
       onChange={firstArgJSONAction("change")}
       autoplay
     />
-  );
+  ));

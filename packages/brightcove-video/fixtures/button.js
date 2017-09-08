@@ -2,7 +2,7 @@ import React from "react";
 import { TouchableOpacity, Text } from "react-native";
 import PropTypes from "prop-types";
 
-const Button = props =>
+const Button = props => (
   <TouchableOpacity
     testID={props.testID}
     style={{
@@ -13,7 +13,8 @@ const Button = props =>
     onPress={props.onPress}
   >
     <Text style={{ color: "white" }}>{props.buttonText}</Text>
-  </TouchableOpacity>;
+  </TouchableOpacity>
+);
 
 Button.propTypes = {
   onPress: PropTypes.func.isRequired,

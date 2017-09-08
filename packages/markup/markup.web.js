@@ -63,8 +63,9 @@ const tagMap = new Map([
   ]
 ]);
 
-const MarkupWeb = ({ ast, wrapIn }) =>
-  <Markup ast={ast} tagMap={tagMap} wrapIn={wrapIn} />;
+const MarkupWeb = ({ ast, wrapIn }) => (
+  <Markup ast={ast} tagMap={tagMap} wrapIn={wrapIn} />
+);
 
 MarkupWeb.propTypes = propTypes;
 

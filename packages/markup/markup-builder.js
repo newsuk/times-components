@@ -6,7 +6,10 @@ const bump = value => {
   const levels = value.split(".");
   const current = parseInt(levels[levels.length - 1], 10);
 
-  return levels.slice(0, levels.length - 1).concat(current + 1).join(".");
+  return levels
+    .slice(0, levels.length - 1)
+    .concat(current + 1)
+    .join(".");
 };
 
 const descend = value => `${value}.1`;

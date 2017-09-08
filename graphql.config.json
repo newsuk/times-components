@@ -1,0 +1,15 @@
+{
+  "schema": {
+    "request": {
+      "url": "http://localhost:4000/graphql",
+      "method": "POST",
+      "postIntrospectionQuery": true
+    }
+  },
+  "endpoints": [
+    {
+      "name": "Default (http://localhost:4000/graphql)",
+      "url": "http://localhost:4000/graphql"
+    }
+  ]
+}

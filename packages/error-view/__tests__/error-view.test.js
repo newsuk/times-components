@@ -10,7 +10,7 @@ import ChangingComponent from "./changing";
 
 it("renders an ErrorView", () => {
   const tree = renderer
-    .create(<ErrorView errors={[{code: "code", message: "message"}]} />)
+    .create(<ErrorView errors={[{ code: "code", message: "message" }]} />)
     .toJSON();
 
   expect(tree).toMatchSnapshot();
@@ -18,9 +18,7 @@ it("renders an ErrorView", () => {
 
 it("renders a simple component with no errors", () => {
   const ErrorText = addErrorHandler(Text);
-  const tree = renderer
-    .create(<ErrorText>Just a test</ErrorText>)
-    .toJSON();
+  const tree = renderer.create(<ErrorText>Just a test</ErrorText>).toJSON();
 
   expect(tree).toMatchSnapshot();
 });

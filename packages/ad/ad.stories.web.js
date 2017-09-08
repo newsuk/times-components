@@ -10,7 +10,7 @@ import TimesWatermark from "./times-watermark";
 
 export default () =>
   storiesOf("Ad", module)
-    .add("render one ad in article page", () =>
+    .add("render one ad in article page", () => (
       // Hack, gpt map sizes don't seem to work inside iframes as such this is a
       // temporary fix, while waiting for https://github.com/storybooks/storybook/issues/862
       <div>
@@ -25,8 +25,8 @@ export default () =>
           <Ad code="intervention" />
         </AdComposer>
       </div>
-    )
-    .add("render two ads in article page", () =>
+    ))
+    .add("render two ads in article page", () => (
       // Hack, gpt map sizes don't seem to work inside iframes as such this is a
       // temporary fix, while waiting for https://github.com/storybooks/storybook/issues/862
       <div>
@@ -42,14 +42,14 @@ export default () =>
           <Ad code="intervention" />
         </AdComposer>
       </div>
-    )
+    ))
     .add("Placeholder", () => <Placeholder width={300} height={250} />)
-    .add("TimesWatermark (Default)", () =>
+    .add("TimesWatermark (Default)", () => (
       <TimesWatermark width={832} height={300} />
-    )
-    .add("TimesWatermark (MPU)", () =>
+    ))
+    .add("TimesWatermark (MPU)", () => (
       <TimesWatermark width={300} height={250} />
-    )
-    .add("TimesWatermark (Billboard)", () =>
+    ))
+    .add("TimesWatermark (Billboard)", () => (
       <TimesWatermark width={970} height={250} />
-    );
+    ));

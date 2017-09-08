@@ -14,10 +14,7 @@ import {
 
 import connectGraphql, { AuthorProfileProvider } from "./provider.js";
 
-const Component = props =>
-  <Text>
-    {JSON.stringify(props, null, 2)}
-  </Text>;
+const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
 
 const query = gql`
   {
@@ -67,7 +64,7 @@ storiesOf("Provider", module).add("Provider", () => {
 });
 
 const AuthorProfileWithPageState = withPageState(AuthorProfileProvider);
-storiesOf("Provider", module).add("AuthorProfileProvider", () =>
+storiesOf("Provider", module).add("AuthorProfileProvider", () => (
   <ApolloProvider client={client}>
     <AuthorProfileWithPageState
       generatePageLink={page => `https://www.thetimes.co.uk?page=${page}`}
@@ -77,4 +74,4 @@ storiesOf("Provider", module).add("AuthorProfileProvider", () =>
       pageSize={3}
     />
   </ApolloProvider>
-);
+));

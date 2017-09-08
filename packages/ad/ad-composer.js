@@ -34,9 +34,7 @@ class AdComposer extends Component {
   render() {
     return (
       <Broadcast channel="adChannel" value={this.adManager}>
-        <div>
-          {this.props.children}
-        </div>
+        <div>{this.props.children}</div>
       </Broadcast>
     );
   }

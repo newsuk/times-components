@@ -2,9 +2,10 @@ import React from "react";
 import { View } from "react-native";
 import ArticleContent from "./article-content";
 
-const Article = () =>
+const Article = () => (
   <View>
     <ArticleContent code="intervention" />
-  </View>;
+  </View>
+);
 
 export default Article;

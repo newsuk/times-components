@@ -11,17 +11,13 @@ const styles = StyleSheet.create({
 });
 
 const ErrorView = ({ style, errors }) => {
-  const errorItems = errors.map(error =>
+  const errorItems = errors.map(error => (
     <Text key={`${error.code}_${error.message}`} style={styles.text}>
       {error.code} - {error.message}
     </Text>
-  );
+  ));
 
-  return (
-    <View style={[style, styles.background]}>
-      {errorItems}
-    </View>
-  );
+  return <View style={[style, styles.background]}>{errorItems}</View>;
 };
 const errorPropType = PropTypes.shape({
   code: PropTypes.string,
