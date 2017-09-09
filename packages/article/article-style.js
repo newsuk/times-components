@@ -1,7 +1,7 @@
 import { StyleSheet, Platform } from "react-native";
 
 const globalStyle = StyleSheet.create({
-  container: {
+  Container: {
     alignItems: "center",
     flex: 1,
     flexBasis: "100%",

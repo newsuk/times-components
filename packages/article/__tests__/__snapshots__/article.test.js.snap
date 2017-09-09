@@ -1,5 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Article test renders activity indicator  1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexBasis": "100%",
+      "justifyContent": "center",
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="#999999"
+    hidesWhenStopped={true}
+    size="large"
+  />
+</View>
+`;
+
 exports[`Article test renders article no flags 1`] = `
 <View
   style={undefined}
@@ -5432,19 +5452,6 @@ exports[`Article test renders article no standfirst no label 1`] = `
       </View>
     </View>
   </RCTScrollView>
-</View>
-`;
-
-exports[`Article test renders empty article 1`] = `
-<View
-  style={undefined}
->
-  <ActivityIndicator
-    animating={true}
-    color="#999999"
-    hidesWhenStopped={true}
-    size="large"
-  />
 </View>
 `;
 

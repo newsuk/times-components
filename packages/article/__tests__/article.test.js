@@ -13,8 +13,8 @@ const articleFixtureNoLabelNoFlags = require("../fixtures/no-label-no-flags.json
 const articleFixtureNoLabelNoFlagsNoStandFirst = require("../fixtures/no-label-no-flags-no-standfirst.json");
 
 describe("Article test", () => {
-  it("renders empty article", () => {
-    const tree = renderer.create(<Article />).toJSON();
+  it("renders activity indicator ", () => {
+    const tree = renderer.create(<Article data={{ loading: true }} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
