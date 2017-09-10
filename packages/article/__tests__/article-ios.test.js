@@ -12,7 +12,7 @@ const articleFixtureNoStandfirstNoFlags = require("../fixtures/no-standfirst-no-
 const articleFixtureNoLabelNoFlags = require("../fixtures/no-label-no-flags.json");
 const articleFixtureNoLabelNoFlagsNoStandFirst = require("../fixtures/no-label-no-flags-no-standfirst.json");
 
-describe("Article test", () => {
+describe("Article test on ios", () => {
   it("renders activity indicator ", () => {
     const tree = renderer.create(<Article data={{ loading: true }} />).toJSON();
     expect(tree).toMatchSnapshot();

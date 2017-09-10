@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Article test renders activity indicator  1`] = `
+exports[`Article test on ios renders activity indicator  1`] = `
 <View
   style={
     Object {
@@ -20,7 +20,7 @@ exports[`Article test renders activity indicator  1`] = `
 </View>
 `;
 
-exports[`Article test renders article no flags 1`] = `
+exports[`Article test on ios renders article no flags 1`] = `
 <View
   style={undefined}
 >
@@ -766,7 +766,7 @@ exports[`Article test renders article no flags 1`] = `
 </View>
 `;
 
-exports[`Article test renders article no label 1`] = `
+exports[`Article test on ios renders article no label 1`] = `
 <View
   style={undefined}
 >
@@ -1617,7 +1617,7 @@ exports[`Article test renders article no label 1`] = `
 </View>
 `;
 
-exports[`Article test renders article no label no flags 1`] = `
+exports[`Article test on ios renders article no label no flags 1`] = `
 <View
   style={undefined}
 >
@@ -2333,7 +2333,7 @@ exports[`Article test renders article no label no flags 1`] = `
 </View>
 `;
 
-exports[`Article test renders article no label no flags no standfirst 1`] = `
+exports[`Article test on ios renders article no label no flags no standfirst 1`] = `
 <View
   style={undefined}
 >
@@ -3031,7 +3031,7 @@ exports[`Article test renders article no label no flags no standfirst 1`] = `
 </View>
 `;
 
-exports[`Article test renders article no standfirst 1`] = `
+exports[`Article test on ios renders article no standfirst 1`] = `
 <View
   style={undefined}
 >
@@ -3894,7 +3894,7 @@ exports[`Article test renders article no standfirst 1`] = `
 </View>
 `;
 
-exports[`Article test renders article no standfirst no flags 1`] = `
+exports[`Article test on ios renders article no standfirst no flags 1`] = `
 <View
   style={undefined}
 >
@@ -4622,7 +4622,7 @@ exports[`Article test renders article no standfirst no flags 1`] = `
 </View>
 `;
 
-exports[`Article test renders article no standfirst no label 1`] = `
+exports[`Article test on ios renders article no standfirst no label 1`] = `
 <View
   style={undefined}
 >
@@ -5455,7 +5455,7 @@ exports[`Article test renders article no standfirst no label 1`] = `
 </View>
 `;
 
-exports[`Article test renders full article 1`] = `
+exports[`Article test on ios renders full article 1`] = `
 <View
   style={undefined}
 >
