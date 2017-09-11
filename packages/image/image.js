@@ -11,6 +11,7 @@ class ImageComponent extends React.Component {
     const uri = props.source && props.source.uri;
 
     this.state = {
+      height: 1,
       source: {
         uri:
           Platform.OS !== "web" && uri && uri.indexOf("//") === 0
@@ -18,7 +19,12 @@ class ImageComponent extends React.Component {
             : uri
       },
       width: window.width,
-      height: 1
+      ...Platform.select({
+        web: {
+          height: null,
+          width: null
+        }
+      })
     };
 
     this.getSize = Image.getSize;
