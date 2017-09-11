@@ -6,16 +6,17 @@ import Splash from "./splash";
 import TapToLaunch from "./tap-to-launch";
 
 const BrightcoveVideo = props =>
-  props.autoplay
-    ? <Player {...props} />
-    : <TapToLaunch>
-        {isLaunched =>
-          <View style={{ width: props.width, height: props.height }}>
-            {isLaunched
-              ? <Player {...props} autoplay />
-              : <Splash {...props} />}
-          </View>}
-      </TapToLaunch>;
+  props.autoplay ? (
+    <Player {...props} />
+  ) : (
+    <TapToLaunch>
+      {isLaunched => (
+        <View style={{ width: props.width, height: props.height }}>
+          {isLaunched ? <Player {...props} autoplay /> : <Splash {...props} />}
+        </View>
+      )}
+    </TapToLaunch>
+  );
 
 BrightcoveVideo.propTypes = Object.assign(
   {},

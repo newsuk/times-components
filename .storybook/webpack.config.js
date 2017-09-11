@@ -1,19 +1,6 @@
 const webpack = require("webpack");
 
 module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.(png|jpg|gif)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {}
-          }
-        ]
-      }
-    ]
-  },
   resolve: {
     // Maps the 'react-native' import to 'react-native-web'.
     alias: {

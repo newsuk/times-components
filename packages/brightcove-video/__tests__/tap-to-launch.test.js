@@ -10,21 +10,13 @@ const launchController = isLaunched =>
   isLaunched ? <div>Launched</div> : <div>Not Launched</div>;
 
 it("renders correctly pre launch", () => {
-  const root = renderer.create(
-    <TapToLaunch>
-      {launchController}
-    </TapToLaunch>
-  );
+  const root = renderer.create(<TapToLaunch>{launchController}</TapToLaunch>);
 
   expect(root.toJSON()).toMatchSnapshot();
 });
 
 it("launches correctly", () => {
-  const root = renderer.create(
-    <TapToLaunch>
-      {launchController}
-    </TapToLaunch>
-  );
+  const root = renderer.create(<TapToLaunch>{launchController}</TapToLaunch>);
 
   const rootInstance = root.getInstance();
 

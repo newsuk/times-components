@@ -3,30 +3,25 @@ import PropTypes from "prop-types";
 import { View, Image } from "react-native";
 import PlayIcon from "./play-icon";
 
-const Splash = ({
-  poster,
-  width,
-  height,
-  playIcon,
-  playIconWidth,
-  playIconHeight
-}) =>
+const Splash = ({ poster, width, height, playIcon }) => (
   <View>
-    {poster
-      ? <Image
-          source={poster}
-          style={{
-            width,
-            height
-          }}
-        />
-      : <View
-          style={{
-            width,
-            height,
-            backgroundColor: "black"
-          }}
-        />}
+    {poster ? (
+      <Image
+        source={poster}
+        style={{
+          width,
+          height
+        }}
+      />
+    ) : (
+      <View
+        style={{
+          width,
+          height,
+          backgroundColor: "black"
+        }}
+      />
+    )}
     <View
       style={{
         position: "absolute",
@@ -39,29 +34,19 @@ const Splash = ({
         alignItems: "center"
       }}
     >
-      {playIcon
-        ? <Image
-            source={playIcon}
-            style={{
-              width: playIconWidth,
-              height: playIconHeight
-            }}
-          />
-        : <PlayIcon width={playIconWidth} height={playIconHeight} />}
+      <PlayIcon icon={playIcon} />
     </View>
-  </View>;
+  </View>
+);
 
 Splash.defaultProps = {
   poster: null,
-  playIcon: null,
-  playIconWidth: 70,
-  playIconHeight: 70
+  playIcon: null
 };
+
 Splash.propTypes = {
   poster: Image.propTypes.source,
-  playIcon: Image.propTypes.source,
-  playIconWidth: PropTypes.number,
-  playIconHeight: PropTypes.number,
+  playIcon: PropTypes.node,
   width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired
 };

@@ -50,27 +50,29 @@ exports[`renders poster correctly before launch 1`] = `
         }
       }
     >
-      <svg
-        height={70}
-        style={Object {}}
-        viewBox="0 0 100 100"
-        width={70}
-      >
-        <rect
-          fill="rgba(0,0,0)"
-          fillOpacity="0.4"
-          height="100"
-          stroke="rgb(255,255,255)"
-          strokeWidth="8"
+      <View>
+        <svg
+          height={70}
           style={Object {}}
-          width="100"
-        />
-        <polygon
-          fill="rgb(255,255,255)"
-          points="30,20 70,50 30,80"
-          style={Object {}}
-        />
-      </svg>
+          viewBox="0 0 100 100"
+          width={70}
+        >
+          <rect
+            fill="rgba(0,0,0)"
+            fillOpacity="0.4"
+            height="100"
+            stroke="rgb(255,255,255)"
+            strokeWidth="8"
+            style={Object {}}
+            width="100"
+          />
+          <polygon
+            fill="rgb(255,255,255)"
+            points="30,20 70,50 30,80"
+            style={Object {}}
+          />
+        </svg>
+      </View>
     </View>
   </View>
 </View>
@@ -126,15 +128,14 @@ exports[`renders poster with custom play icon if specified 1`] = `
         }
       }
     >
-      <Image
-        source={1}
-        style={
-          Object {
-            "height": 70,
-            "width": 70,
-          }
-        }
-      />
+      <View>
+        <span
+          aria-label="play-video"
+          role="img"
+        >
+          ▶️
+        </span>
+      </View>
     </View>
   </View>
 </View>

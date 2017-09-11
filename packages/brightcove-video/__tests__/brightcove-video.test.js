@@ -6,11 +6,15 @@ import renderer from "react-test-renderer";
 
 import BrightcoveVideo from "../brightcove-video";
 
-import customPlayIcon from "../fixtures/customPlayIcon.png";
-
 const policyKey = "[POLICY_KEY]";
 const accountId = "[ACCOUNT_ID]";
 const videoId = "[VIDEO_ID]";
+
+const playIconEmoji = () => (
+  <span role="img" aria-label="play-video">
+    ▶️
+  </span>
+);
 
 it("renders poster correctly before launch", () => {
   const tree = renderer
@@ -37,7 +41,7 @@ it("renders poster with custom play icon if specified", () => {
         policyKey={policyKey}
         videoId={videoId}
         accountId={accountId}
-        playIcon={customPlayIcon}
+        playIcon={playIconEmoji()}
         poster={{
           uri:
             "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs="
