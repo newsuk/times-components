@@ -1,5 +1,11 @@
 import { StyleSheet, Platform } from "react-native";
 
+const standFirstFontFamily = "TimesModern-Regular";
+const bodyFontFamilyWebIos = "TimesDigitalW04";
+const bodyFontFamilyAndroid = "TimesDigitalW04-Regular";
+const borderColor = "#d0cece";
+const borderWidth = StyleSheet.hairlineWidth;
+
 const globalStyle = StyleSheet.create({
   Container: {
     alignItems: "center",
@@ -33,7 +39,7 @@ const webStyles = StyleSheet.create({
   StandFirst: {
     fontSize: 21,
     lineHeight: 26,
-    fontFamily: "TimesModern-Regular",
+    fontFamily: standFirstFontFamily,
     color: "#333333",
     paddingBottom: 9
   },
@@ -46,12 +52,12 @@ const webStyles = StyleSheet.create({
   },
   ArticleMeta: {
     marginBottom: 20,
-    borderBottomColor: "#d0cece",
-    borderBottomWidth: StyleSheet.hairlineWidth
+    borderBottomColor: borderColor,
+    borderBottomWidth: borderWidth
   },
   ArticleMetaElement: {
-    borderTopColor: "#d0cece",
-    borderTopWidth: StyleSheet.hairlineWidth,
+    borderTopColor: borderColor,
+    borderTopWidth: borderWidth,
     paddingTop: 9,
     paddingBottom: 5
   },
@@ -63,7 +69,7 @@ const webStyles = StyleSheet.create({
     paddingRight: 10
   },
   ArticleTextElement: {
-    fontFamily: "TimesDigitalW04",
+    fontFamily: bodyFontFamilyWebIos,
     lineHeight: 1.53,
     fontSize: 17,
     marginBottom: 25,
@@ -98,7 +104,7 @@ const nativeStyles = StyleSheet.create({
     fontSize: 21,
     lineHeight: Platform.OS === "android" ? 29 : 25,
     color: "#333333",
-    fontFamily: "TimesModern-Regular",
+    fontFamily: standFirstFontFamily,
     paddingBottom: 9
   },
   ArticleFlag: {
@@ -110,12 +116,12 @@ const nativeStyles = StyleSheet.create({
   },
   ArticleMeta: {
     marginBottom: 20,
-    borderBottomColor: "#d0cece",
-    borderBottomWidth: StyleSheet.hairlineWidth
+    borderBottomColor: borderColor,
+    borderBottomWidth: borderWidth
   },
   ArticleMetaElement: {
-    borderTopColor: "#d0cece",
-    borderTopWidth: StyleSheet.hairlineWidth,
+    borderTopColor: borderColor,
+    borderTopWidth: borderWidth,
     paddingTop: Platform.OS === "android" ? 6 : 9,
     paddingBottom: Platform.OS === "android" ? 8 : 4
   },
@@ -127,7 +133,7 @@ const nativeStyles = StyleSheet.create({
   },
   ArticleTextElement: {
     fontFamily:
-      Platform.OS === "android" ? "TimesDigitalW04-Regular" : "TimesDigitalW04",
+      Platform.OS === "android" ? bodyFontFamilyAndroid : bodyFontFamilyWebIos,
     fontStyle: "normal",
     lineHeight: 26,
     fontSize: Platform.OS === "android" ? 16 : 17,
