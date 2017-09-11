@@ -3,10 +3,10 @@ import CaptionShared from "./shared";
 
 const defaultStyle = {
   text: {
-    lineHeight: 17
+    lineHeight: 16
   },
   credits: {
-    lineHeight: 17
+    lineHeight: 16
   }
 };
 
