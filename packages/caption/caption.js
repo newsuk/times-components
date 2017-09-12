@@ -1,24 +1,36 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Platform } from "react-native";
 import StylePropTypes from "react-style-proptype";
+
+const lineHeightStyle = Platform.select({
+  ios: {
+    lineHeight: 16
+  },
+  android: {
+    lineHeight: 20
+  },
+  web: {
+    lineHeight: 17
+  }
+});
 
 const defaultStyle = StyleSheet.create({
   container: {
     paddingTop: 10
   },
   text: {
-    lineHeight: 17,
     fontFamily: "GillSansMTStd-Medium",
     fontSize: 13,
-    color: "#696969"
+    color: "#696969",
+    ...lineHeightStyle
   },
   credits: {
     fontSize: 9,
-    lineHeight: 17,
     color: "#333",
     letterSpacing: 1,
-    fontWeight: "400"
+    fontWeight: "400",
+    ...lineHeightStyle
   }
 });
 

@@ -15,7 +15,7 @@
       "node_modules/(?!@times-components)/"
     ],
     "testMatch": [
-      "<rootDir>/packages/caption/**.test.js"
+      "<rootDir>/packages/caption/__tests__/**.test.js"
     ]
   },
   "repository": {
