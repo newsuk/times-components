@@ -44,10 +44,9 @@ exports[`renders an image with a caption 1`] = `
             "color": "#696969",
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 13,
+            "lineHeight": 17,
           },
-          Object {
-            "lineHeight": 16,
-          },
+          undefined,
         ]
       }
     >
@@ -63,16 +62,16 @@ exports[`renders an image with a caption 1`] = `
             "color": "#696969",
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 13,
+            "lineHeight": 17,
           },
           Object {
             "color": "#333",
             "fontSize": 9,
             "fontWeight": "400",
             "letterSpacing": 1,
+            "lineHeight": 17,
           },
-          Object {
-            "lineHeight": 16,
-          },
+          undefined,
         ]
       }
     >
@@ -104,10 +103,9 @@ exports[`renders correctly with credits 1`] = `
             "color": "#696969",
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 13,
+            "lineHeight": 17,
           },
-          Object {
-            "lineHeight": 16,
-          },
+          undefined,
         ]
       }
     >
@@ -123,16 +121,16 @@ exports[`renders correctly with credits 1`] = `
             "color": "#696969",
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 13,
+            "lineHeight": 17,
           },
           Object {
             "color": "#333",
             "fontSize": 9,
             "fontWeight": "400",
             "letterSpacing": 1,
+            "lineHeight": 17,
           },
-          Object {
-            "lineHeight": 16,
-          },
+          undefined,
         ]
       }
     >
@@ -164,16 +162,16 @@ exports[`renders correctly with credits only 1`] = `
             "color": "#696969",
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 13,
+            "lineHeight": 17,
           },
           Object {
             "color": "#333",
             "fontSize": 9,
             "fontWeight": "400",
             "letterSpacing": 1,
+            "lineHeight": 17,
           },
-          Object {
-            "lineHeight": 16,
-          },
+          undefined,
         ]
       }
     >
@@ -207,6 +205,7 @@ exports[`renders correctly with specific styles 1`] = `
             "color": "#696969",
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 13,
+            "lineHeight": 17,
           },
           Object {
             "color": "green",
@@ -226,12 +225,14 @@ exports[`renders correctly with specific styles 1`] = `
             "color": "#696969",
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 13,
+            "lineHeight": 17,
           },
           Object {
             "color": "#333",
             "fontSize": 9,
             "fontWeight": "400",
             "letterSpacing": 1,
+            "lineHeight": 17,
           },
           Object {
             "color": "green",
@@ -267,10 +268,9 @@ exports[`renders correctly without credits 1`] = `
             "color": "#696969",
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 13,
+            "lineHeight": 17,
           },
-          Object {
-            "lineHeight": 16,
-          },
+          undefined,
         ]
       }
     >
