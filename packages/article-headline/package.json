@@ -2,7 +2,7 @@
   "name": "@times-components/article-headline",
   "version": "0.4.0",
   "description": "The article headline",
-  "main": "article-headline.js",
+  "main": "article-headline",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
