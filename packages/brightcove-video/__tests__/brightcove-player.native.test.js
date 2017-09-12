@@ -3,13 +3,13 @@
 import "react-native";
 import React, { Component } from "react";
 import renderer from "react-test-renderer";
-import BrightcoveVideo from "../brightcove-video.native";
+import BrightcovePlayer from "../brightcove-player.native";
 
-describe("brightcove-video native component", () => {
+describe("brightcove-player native component", () => {
   it("renders correctly", () => {
     const tree = renderer
       .create(
-        <BrightcoveVideo
+        <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
           policyKey="[POLICY_KEY]"
@@ -23,7 +23,7 @@ describe("brightcove-video native component", () => {
   it("width x height default to 320 x 180", () => {
     const tree = renderer
       .create(
-        <BrightcoveVideo
+        <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
           policyKey="[POLICY_KEY]"
@@ -38,7 +38,7 @@ describe("brightcove-video native component", () => {
   it("width x height can be overridden", () => {
     const tree = renderer
       .create(
-        <BrightcoveVideo
+        <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
           policyKey="[POLICY_KEY]"
@@ -55,7 +55,7 @@ describe("brightcove-video native component", () => {
   it("passes accountId, videoId & policyKey to video correctly", () => {
     const tree = renderer
       .create(
-        <BrightcoveVideo
+        <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
           policyKey="[POLICY_KEY]"
@@ -70,7 +70,7 @@ describe("brightcove-video native component", () => {
 
   it("will call passed 'runNativeCommand' method property with 'play' when play is called", done => {
     const root = renderer.create(
-      <BrightcoveVideo
+      <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
         videoId="[VIDEO_ID]"
         policyKey="[POLICY_KEY]"
@@ -89,7 +89,7 @@ describe("brightcove-video native component", () => {
 
   it("will call passed 'runNativeCommand' method property with 'pause' when pause is called", done => {
     const root = renderer.create(
-      <BrightcoveVideo
+      <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
         videoId="[VIDEO_ID]"
         policyKey="[POLICY_KEY]"
@@ -107,7 +107,7 @@ describe("brightcove-video native component", () => {
   });
 
   it("will return the native class name", () => {
-    expect(BrightcoveVideo.getNativeClassName()).toBe("RNTBrightcove");
+    expect(BrightcovePlayer.getNativeClassName()).toBe("RNTBrightcove");
   });
 
   describe("Component App State handling", () => {
@@ -117,7 +117,7 @@ describe("brightcove-video native component", () => {
 
     beforeEach(() => {
       const root = renderer.create(
-        <BrightcoveVideo
+        <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
           policyKey="[POLICY_KEY]"
@@ -208,7 +208,7 @@ describe("brightcove-video native component", () => {
       };
 
       getNativeBrightcoveComponentSpy = jest
-        .spyOn(BrightcoveVideo, "getNativeBrightcoveComponent")
+        .spyOn(BrightcovePlayer, "getNativeBrightcoveComponent")
         .mockImplementation(() => mockRNTBrightcove);
     });
 
@@ -218,7 +218,7 @@ describe("brightcove-video native component", () => {
 
     it("will propagate change events from the native component", done => {
       renderer.create(
-        <BrightcoveVideo
+        <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
           policyKey="[POLICY_KEY]"
@@ -234,7 +234,7 @@ describe("brightcove-video native component", () => {
 
     it("will not error if there is no chnage handler", () => {
       renderer.create(
-        <BrightcoveVideo
+        <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
           policyKey="[POLICY_KEY]"
@@ -246,7 +246,7 @@ describe("brightcove-video native component", () => {
 
     it("will correctly handle native (android) errors", done => {
       renderer.create(
-        <BrightcoveVideo
+        <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
           policyKey="[POLICY_KEY]"
@@ -262,7 +262,7 @@ describe("brightcove-video native component", () => {
 
     it("will correctly handle native (iOS) errors", done => {
       renderer.create(
-        <BrightcoveVideo
+        <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
           policyKey="[POLICY_KEY]"

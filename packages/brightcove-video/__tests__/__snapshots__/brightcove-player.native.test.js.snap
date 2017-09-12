@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`brightcove-video native component renders correctly 1`] = `
+exports[`brightcove-player native component renders correctly 1`] = `
 <RNTBrightcove
   accountId="[ACCOUNT_ID]"
   autoplay={false}
