@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@0.4.0...@times-components/brightcove-video@1.0.0) (2017-09-12)
+
+
+* BREAKING CHANGE: Brightcove video launcher (#191) ([c9ec88f](https://github.com/newsuk/times-components/commit/c9ec88f))
+
+
+### BREAKING CHANGES
+
+* merge bc video & launcher
+
+* test: tap-to-launch
+
+* test: eslint
+
+* review: autoplay
+
+* review: use standard image component
+
+* Review: Merge video and player stories
+
+* Review: Generalise play icon component
+
+
+
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@0.3.9...@times-components/brightcove-video@0.4.0) (2017-09-08)
 

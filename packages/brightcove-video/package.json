@@ -1,6 +1,6 @@
 {
   "name": "@times-components/brightcove-video",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "main": "brightcove-video",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -13,8 +13,12 @@
     "preset": "react-native",
     "rootDir": "../../",
     "testEnvironment": "jsdom",
-    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-    "testMatch": ["<rootDir>/packages/brightcove-video/__tests__/*"]
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/brightcove-video/__tests__/*"
+    ]
   },
   "repository": {
     "type": "git",
@@ -41,13 +45,13 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
+    "enzyme": "2.9.1",
     "eslint": "3.19.0",
     "eslint-config-airbnb": "15.0.1",
     "eslint-config-prettier": "2.3.0",
     "eslint-plugin-import": "2.6.1",
     "eslint-plugin-jsx-a11y": "5.1.1",
     "eslint-plugin-react": "7.1.0",
-    "enzyme": "2.9.1",
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
     "react": "15.4.2",
