@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, Platform } from "react-native";
 import PropTypes from "prop-types";
 
 import Diamond from "./diamond";
@@ -17,19 +17,24 @@ const styles = {
   },
   title: {
     fontFamily: "TimesDigital-RegularSC",
-    fontSize: 10,
-    fontWeight: "400"
+    fontSize: Platform.OS === "android" ? 10 : 12,
+    fontWeight: "400",
+    letterSpacing: 1.4
   }
 };
 
 // apply transformations to add uppercase and letter spacing.
 // letterSpacing CSS prop does not work on android:
 // https://github.com/facebook/react-native/pull/13199
-const beautifyTitle = title =>
-  title
-    .toUpperCase()
-    .split("")
-    .join(" ");
+const beautifyTitle = title => {
+  if (Platform.OS === "android") {
+    return title
+      .toUpperCase()
+      .split("")
+      .join("\u200A");
+  }
+  return title.toUpperCase();
+};
 
 const ArticleFlag = ({ title, color }) => {
   if (!title) {

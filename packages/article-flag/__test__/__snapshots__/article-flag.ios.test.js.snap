@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Article Flag renders Exclusive flag correctly 1`] = `
+exports[`Article test on ios renders Exclusive flag correctly 1`] = `
 <View
   style={
     Object {
@@ -42,8 +42,9 @@ exports[`Article Flag renders Exclusive flag correctly 1`] = `
       Array [
         Object {
           "fontFamily": "TimesDigital-RegularSC",
-          "fontSize": 10,
+          "fontSize": 12,
           "fontWeight": "400",
+          "letterSpacing": 1.4,
         },
         Object {
           "color": "#C51D24",
@@ -51,12 +52,12 @@ exports[`Article Flag renders Exclusive flag correctly 1`] = `
       ]
     }
   >
-    E X C L U S I V E
+    EXCLUSIVE
   </Text>
 </View>
 `;
 
-exports[`Article Flag renders New flag correctly 1`] = `
+exports[`Article test on ios renders New flag correctly 1`] = `
 <View
   style={
     Object {
@@ -98,8 +99,9 @@ exports[`Article Flag renders New flag correctly 1`] = `
       Array [
         Object {
           "fontFamily": "TimesDigital-RegularSC",
-          "fontSize": 10,
+          "fontSize": 12,
           "fontWeight": "400",
+          "letterSpacing": 1.4,
         },
         Object {
           "color": "#E34605",
@@ -107,12 +109,12 @@ exports[`Article Flag renders New flag correctly 1`] = `
       ]
     }
   >
-    N E W
+    NEW
   </Text>
 </View>
 `;
 
-exports[`Article Flag renders Sponsored flag correctly 1`] = `
+exports[`Article test on ios renders Sponsored flag correctly 1`] = `
 <View
   style={
     Object {
@@ -154,8 +156,9 @@ exports[`Article Flag renders Sponsored flag correctly 1`] = `
       Array [
         Object {
           "fontFamily": "TimesDigital-RegularSC",
-          "fontSize": 10,
+          "fontSize": 12,
           "fontWeight": "400",
+          "letterSpacing": 1.4,
         },
         Object {
           "color": "#4D4D4D",
@@ -163,12 +166,12 @@ exports[`Article Flag renders Sponsored flag correctly 1`] = `
       ]
     }
   >
-    S P O N S O R E D
+    SPONSORED
   </Text>
 </View>
 `;
 
-exports[`Article Flag renders Updated flag correctly 1`] = `
+exports[`Article test on ios renders Updated flag correctly 1`] = `
 <View
   style={
     Object {
@@ -210,8 +213,9 @@ exports[`Article Flag renders Updated flag correctly 1`] = `
       Array [
         Object {
           "fontFamily": "TimesDigital-RegularSC",
-          "fontSize": 10,
+          "fontSize": 12,
           "fontWeight": "400",
+          "letterSpacing": 1.4,
         },
         Object {
           "color": "#3C81BE",
@@ -219,9 +223,64 @@ exports[`Article Flag renders Updated flag correctly 1`] = `
       ]
     }
   >
-    U P D A T E D
+    UPDATED
   </Text>
 </View>
 `;
 
-exports[`Article Flag renders correctly 1`] = `null`;
+exports[`Article test on ios renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "marginBottom": 1,
+        "marginRight": 5,
+      }
+    }
+  >
+    <svg
+      height={7}
+      style={Object {}}
+      viewBox="0 0 20 20"
+      width={7}
+    >
+      <g
+        fill="black"
+        style={Object {}}
+      >
+        <path
+          d="M 0,10 10,20 20,10 10,0 Z"
+          style={Object {}}
+        />
+      </g>
+    </svg>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "TimesDigital-RegularSC",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.4,
+        },
+        Object {
+          "color": "black",
+        },
+      ]
+    }
+  >
+    ARTICLEFLAG
+  </Text>
+</View>
+`;
