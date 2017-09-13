@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Article test on android renders Exclusive flag correctly 1`] = `
+exports[`Article Flag test on android renders Exclusive flag correctly 1`] = `
 <View
   style={
     Object {
@@ -57,7 +57,7 @@ exports[`Article test on android renders Exclusive flag correctly 1`] = `
 </View>
 `;
 
-exports[`Article test on android renders New flag correctly 1`] = `
+exports[`Article Flag test on android renders New flag correctly 1`] = `
 <View
   style={
     Object {
@@ -114,7 +114,7 @@ exports[`Article test on android renders New flag correctly 1`] = `
 </View>
 `;
 
-exports[`Article test on android renders Sponsored flag correctly 1`] = `
+exports[`Article Flag test on android renders Sponsored flag correctly 1`] = `
 <View
   style={
     Object {
@@ -171,7 +171,7 @@ exports[`Article test on android renders Sponsored flag correctly 1`] = `
 </View>
 `;
 
-exports[`Article test on android renders Updated flag correctly 1`] = `
+exports[`Article Flag test on android renders Updated flag correctly 1`] = `
 <View
   style={
     Object {
@@ -228,7 +228,7 @@ exports[`Article test on android renders Updated flag correctly 1`] = `
 </View>
 `;
 
-exports[`Article test on android renders correctly 1`] = `
+exports[`Article Flag test on android renders correctly 1`] = `
 <View
   style={
     Object {
