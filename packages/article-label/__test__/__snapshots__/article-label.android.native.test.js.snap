@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article test on android renders ArticleLabel 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 10,
+        "fontWeight": "400",
+      },
+      Object {
+        "color": "#008347",
+      },
+    ]
+  }
+>
+  S W I M M I N G
+</Text>
+`;

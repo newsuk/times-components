@@ -17,7 +17,7 @@
       "node_modules/(?!@times-components)/"
     ],
     "testMatch": [
-      "<rootDir>/packages/article-label/**.test.js"
+      "<rootDir>/packages/article-label/__test__/**.test.js"
     ]
   },
   "repository": {
