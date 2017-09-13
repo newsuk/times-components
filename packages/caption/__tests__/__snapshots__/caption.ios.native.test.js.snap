@@ -16,8 +16,8 @@ exports[`renders an image with a caption 1`] = `
       style={
         Array [
           Object {
-            "height": 1,
-            "width": 750,
+            "height": undefined,
+            "width": undefined,
           },
           undefined,
         ]

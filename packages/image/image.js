@@ -1,32 +1,13 @@
 import React from "react";
-import { Platform, Dimensions, Image, View } from "react-native";
+import { Image, View } from "react-native";
 import placeholder from "./placeholder";
-
-const window = Dimensions.get("window");
+import mapPropsToState from "./props-to-state";
 
 class ImageComponent extends React.Component {
   constructor(props) {
     super(props);
 
-    const uri = props.source && props.source.uri;
-
-    this.state = {
-      height: 1,
-      source: {
-        uri:
-          Platform.OS !== "web" && uri && uri.indexOf("//") === 0
-            ? `https:${uri}`
-            : uri
-      },
-      width: window.width,
-      ...Platform.select({
-        web: {
-          height: null,
-          width: null
-        }
-      })
-    };
-
+    this.state = mapPropsToState(props);
     this.getSize = Image.getSize;
     this.handleError = this.handleError.bind(this);
     this.handleLayout = this.handleLayout.bind(this);

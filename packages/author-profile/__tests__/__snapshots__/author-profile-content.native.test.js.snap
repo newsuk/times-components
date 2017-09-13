@@ -893,7 +893,7 @@ exports[`renders profile content 1`] = `
               }
             }
           >
-            Lorem 
+            Lorem
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -906,8 +906,8 @@ exports[`renders profile content 1`] = `
             >
               ipsum
             </Text>
-             testbr 
-            More text 
+             testbr
+            More text
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -918,7 +918,7 @@ exports[`renders profile content 1`] = `
                 }
               }
             >
-               last 
+               last
             </Text>
           </Text>
         </View>
@@ -1218,7 +1218,7 @@ exports[`renders profile content 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                   >
-                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State,
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -1414,7 +1414,7 @@ exports[`renders profile content 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                   >
-                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State,
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -1610,7 +1610,7 @@ exports[`renders profile content 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                   >
-                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State,
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -1806,7 +1806,7 @@ exports[`renders profile content 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                   >
-                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State,
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -2186,7 +2186,7 @@ exports[`renders profile content 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                   >
-                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State,
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -4236,7 +4236,7 @@ exports[`renders profile content 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                   >
-                    Terry Pratchett, who died last week, began his career on the 
+                    Terry Pratchett, who died last week, began his career on the
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -4433,7 +4433,7 @@ exports[`renders profile content 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                   >
-                    Is poetry best when written down or is it nobler in the mind? Is it enough to read a great verse off the page, or is it 
+                    Is poetry best when written down or is it nobler in the mind? Is it enough to read a great verse off the page, or is it
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -4580,7 +4580,7 @@ exports[`renders profile content component 1`] = `
               }
             }
           >
-            Lorem 
+            Lorem
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -4593,8 +4593,8 @@ exports[`renders profile content component 1`] = `
             >
               ipsum
             </Text>
-             testbr 
-            More text 
+             testbr
+            More text
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -4605,7 +4605,7 @@ exports[`renders profile content component 1`] = `
                 }
               }
             >
-               last 
+               last
             </Text>
           </Text>
         </View>
@@ -4905,7 +4905,7 @@ exports[`renders profile content component 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                   >
-                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State,
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -5101,7 +5101,7 @@ exports[`renders profile content component 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                   >
-                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State,
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -5297,7 +5297,7 @@ exports[`renders profile content component 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                   >
-                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State,
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -5493,7 +5493,7 @@ exports[`renders profile content component 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                   >
-                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State,
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -5873,7 +5873,7 @@ exports[`renders profile content component 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                   >
-                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State,
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -7923,7 +7923,7 @@ exports[`renders profile content component 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                   >
-                    Terry Pratchett, who died last week, began his career on the 
+                    Terry Pratchett, who died last week, began his career on the
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -8120,7 +8120,7 @@ exports[`renders profile content component 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                   >
-                    Is poetry best when written down or is it nobler in the mind? Is it enough to read a great verse off the page, or is it 
+                    Is poetry best when written down or is it nobler in the mind? Is it enough to read a great verse off the page, or is it
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -8294,7 +8294,7 @@ exports[`renders profile header 1`] = `
           }
         }
       >
-        Lorem 
+        Lorem
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -8307,8 +8307,8 @@ exports[`renders profile header 1`] = `
         >
           ipsum
         </Text>
-         testbr 
-        More text 
+         testbr
+        More text
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -8319,7 +8319,7 @@ exports[`renders profile header 1`] = `
             }
           }
         >
-           last 
+           last
         </Text>
       </Text>
     </View>

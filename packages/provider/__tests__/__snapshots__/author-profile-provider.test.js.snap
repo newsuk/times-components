@@ -131,6 +131,48 @@ exports[`renders data 1`] = `
             </Text>
           </Text>
         </View>
+<<<<<<< HEAD
+=======
+        <View
+          style={
+            Object {
+              "bottom": 0,
+              "height": 100,
+              "position": "absolute",
+              "width": 100,
+            }
+          }
+        >
+          <View
+            onLayout={[Function]}
+          >
+            <Image
+              onError={[Function]}
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": undefined,
+                    "width": undefined,
+                  },
+                  Object {
+                    "borderColor": "#FFF",
+                    "borderRadius": 50,
+                    "borderWidth": 5,
+                    "height": 100,
+                    "width": 100,
+                  },
+                ]
+              }
+            />
+          </View>
+        </View>
+>>>>>>> 67b993e... chore: create state conversion for web
       </View>
       <View
         style={
@@ -267,6 +309,7 @@ exports[`renders data 1`] = `
               style={
                 Array [
                   Object {
+<<<<<<< HEAD
                     "paddingBottom": 15,
                   },
                   Object {
@@ -299,6 +342,21 @@ exports[`renders data 1`] = `
                   }
                 />
               </View>
+=======
+                    "uri": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "height": undefined,
+                      "width": undefined,
+                    },
+                    undefined,
+                  ]
+                }
+              />
+>>>>>>> 67b993e... chore: create state conversion for web
             </View>
             <View
               style={
@@ -520,6 +578,48 @@ exports[`renders data from graphql 1`] = `
             </Text>
           </Text>
         </View>
+<<<<<<< HEAD
+=======
+        <View
+          style={
+            Object {
+              "bottom": 0,
+              "height": 100,
+              "position": "absolute",
+              "width": 100,
+            }
+          }
+        >
+          <View
+            onLayout={[Function]}
+          >
+            <Image
+              onError={[Function]}
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": undefined,
+                    "width": undefined,
+                  },
+                  Object {
+                    "borderColor": "#FFF",
+                    "borderRadius": 50,
+                    "borderWidth": 5,
+                    "height": 100,
+                    "width": 100,
+                  },
+                ]
+              }
+            />
+          </View>
+        </View>
+>>>>>>> 67b993e... chore: create state conversion for web
       </View>
       <View
         style={
@@ -656,6 +756,7 @@ exports[`renders data from graphql 1`] = `
               style={
                 Array [
                   Object {
+<<<<<<< HEAD
                     "paddingBottom": 15,
                   },
                   Object {
@@ -688,6 +789,21 @@ exports[`renders data from graphql 1`] = `
                   }
                 />
               </View>
+=======
+                    "uri": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "height": undefined,
+                      "width": undefined,
+                    },
+                    undefined,
+                  ]
+                }
+              />
+>>>>>>> 67b993e... chore: create state conversion for web
             </View>
             <View
               style={
