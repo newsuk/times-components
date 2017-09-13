@@ -393,6 +393,7 @@ exports[`renders data 1`] = `
                       "color": "#696969",
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
+                      "lineHeight": 15,
                     },
                     Object {},
                   ]
@@ -803,6 +804,7 @@ exports[`renders data from graphql 1`] = `
                       "color": "#696969",
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
+                      "lineHeight": 15,
                     },
                     Object {},
                   ]

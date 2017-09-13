@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders a DatePublication component with content 1`] = `
+exports[`Date Publication test on android renders a DatePublication component with content 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
@@ -11,6 +11,7 @@ exports[`renders a DatePublication component with content 1`] = `
         "color": "#696969",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
+        "lineHeight": 15,
       },
       Object {},
     ]
@@ -21,7 +22,7 @@ exports[`renders a DatePublication component with content 1`] = `
 </Text>
 `;
 
-exports[`renders a DatePublication component with red font color 1`] = `
+exports[`Date Publication test on android renders a DatePublication component with red font color 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
@@ -32,6 +33,7 @@ exports[`renders a DatePublication component with red font color 1`] = `
         "color": "#696969",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
+        "lineHeight": 15,
       },
       Object {
         "color": "red",
