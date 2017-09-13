@@ -927,8 +927,8 @@ exports[`renders profile content 1`] = `
               style={
                 Array [
                   Object {
-                    "height": 1,
-                    "width": 750,
+                    "height": undefined,
+                    "width": undefined,
                   },
                   Object {
                     "borderColor": "#FFF",
@@ -1103,8 +1103,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -1274,8 +1274,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -1447,8 +1447,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -1620,8 +1620,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -1793,8 +1793,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -1954,8 +1954,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -2127,8 +2127,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -2288,8 +2288,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -2449,8 +2449,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -2610,8 +2610,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -2771,8 +2771,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -2932,8 +2932,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -3093,8 +3093,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -3254,8 +3254,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -3422,8 +3422,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -3583,8 +3583,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -3751,8 +3751,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -3925,8 +3925,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -4200,8 +4200,8 @@ exports[`renders profile content component 1`] = `
               style={
                 Array [
                   Object {
-                    "height": 1,
-                    "width": 750,
+                    "height": undefined,
+                    "width": undefined,
                   },
                   Object {
                     "borderColor": "#FFF",
@@ -4376,8 +4376,8 @@ exports[`renders profile content component 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -4547,8 +4547,8 @@ exports[`renders profile content component 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -4720,8 +4720,8 @@ exports[`renders profile content component 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -4893,8 +4893,8 @@ exports[`renders profile content component 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -5066,8 +5066,8 @@ exports[`renders profile content component 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -5227,8 +5227,8 @@ exports[`renders profile content component 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -5400,8 +5400,8 @@ exports[`renders profile content component 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -5561,8 +5561,8 @@ exports[`renders profile content component 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -5722,8 +5722,8 @@ exports[`renders profile content component 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -5883,8 +5883,8 @@ exports[`renders profile content component 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -6044,8 +6044,8 @@ exports[`renders profile content component 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -6205,8 +6205,8 @@ exports[`renders profile content component 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -6366,8 +6366,8 @@ exports[`renders profile content component 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -6527,8 +6527,8 @@ exports[`renders profile content component 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -6695,8 +6695,8 @@ exports[`renders profile content component 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -6856,8 +6856,8 @@ exports[`renders profile content component 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -7024,8 +7024,8 @@ exports[`renders profile content component 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -7198,8 +7198,8 @@ exports[`renders profile content component 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 1,
-                      "width": 750,
+                      "height": undefined,
+                      "width": undefined,
                     },
                     undefined,
                   ]
@@ -7500,8 +7500,8 @@ exports[`renders profile header 1`] = `
           style={
             Array [
               Object {
-                "height": 1,
-                "width": 750,
+                "height": undefined,
+                "width": undefined,
               },
               Object {
                 "borderColor": "#FFF",
