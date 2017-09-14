@@ -9,14 +9,14 @@ exports[`prepends https schema 1`] = `
     onLoad={[Function]}
     source={
       Object {
-        "uri": "//example.com/image.jpg",
+        "uri": "https://example.com/image.jpg",
       }
     }
     style={
       Array [
         Object {
-          "height": undefined,
-          "width": undefined,
+          "height": 1,
+          "width": 750,
         },
         undefined,
       ]
@@ -40,8 +40,8 @@ exports[`renders correctly with no dimensions and given URI 1`] = `
     style={
       Array [
         Object {
-          "height": undefined,
-          "width": undefined,
+          "height": 1,
+          "width": 750,
         },
         undefined,
       ]

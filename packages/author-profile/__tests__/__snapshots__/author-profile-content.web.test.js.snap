@@ -946,8 +946,8 @@ exports[`renders profile content 1`] = `
               style={
                 Array [
                   Object {
-                    "height": undefined,
-                    "width": undefined,
+                    "height": 1,
+                    "width": 750,
                   },
                   Object {
                     "borderColor": "#FFF",
@@ -1139,6 +1139,7 @@ exports[`renders profile content 1`] = `
                   source={
                     Object {
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                     }
                   }
@@ -1156,6 +1157,10 @@ exports[`renders profile content 1`] = `
 =======
                       "height": undefined,
                       "width": undefined,
+=======
+                      "height": 1,
+                      "width": 750,
+>>>>>>> 5e388c3... feat: map props depending on platform
                     },
                     undefined,
                   ]
@@ -1343,6 +1348,7 @@ exports[`renders profile content 1`] = `
                   source={
                     Object {
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                     }
                   }
@@ -1360,6 +1366,10 @@ exports[`renders profile content 1`] = `
 =======
                       "height": undefined,
                       "width": undefined,
+=======
+                      "height": 1,
+                      "width": 750,
+>>>>>>> 5e388c3... feat: map props depending on platform
                     },
                     undefined,
                   ]
@@ -1549,6 +1559,7 @@ exports[`renders profile content 1`] = `
                   source={
                     Object {
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                     }
                   }
@@ -1566,6 +1577,10 @@ exports[`renders profile content 1`] = `
 =======
                       "height": undefined,
                       "width": undefined,
+=======
+                      "height": 1,
+                      "width": 750,
+>>>>>>> 5e388c3... feat: map props depending on platform
                     },
                     undefined,
                   ]
@@ -1755,6 +1770,7 @@ exports[`renders profile content 1`] = `
                   source={
                     Object {
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                     }
                   }
@@ -1772,6 +1788,10 @@ exports[`renders profile content 1`] = `
 =======
                       "height": undefined,
                       "width": undefined,
+=======
+                      "height": 1,
+                      "width": 750,
+>>>>>>> 5e388c3... feat: map props depending on platform
                     },
                     undefined,
                   ]
@@ -1961,6 +1981,7 @@ exports[`renders profile content 1`] = `
                   source={
                     Object {
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
                     }
                   }
@@ -1978,6 +1999,10 @@ exports[`renders profile content 1`] = `
 =======
                       "height": undefined,
                       "width": undefined,
+=======
+                      "height": 1,
+                      "width": 750,
+>>>>>>> 5e388c3... feat: map props depending on platform
                     },
                     undefined,
                   ]
@@ -2155,6 +2180,7 @@ exports[`renders profile content 1`] = `
                   source={
                     Object {
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                     }
                   }
@@ -2172,6 +2198,10 @@ exports[`renders profile content 1`] = `
 =======
                       "height": undefined,
                       "width": undefined,
+=======
+                      "height": 1,
+                      "width": 750,
+>>>>>>> 5e388c3... feat: map props depending on platform
                     },
                     undefined,
                   ]
@@ -2360,6 +2390,7 @@ exports[`renders profile content 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
+<<<<<<< HEAD
                       "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
                     }
                   }
@@ -2374,6 +2405,15 @@ exports[`renders profile content 1`] = `
                   }
                 />
               </View>
+=======
+                      "height": 1,
+                      "width": 750,
+                    },
+                    undefined,
+                  ]
+                }
+              />
+>>>>>>> 5e388c3... feat: map props depending on platform
             </View>
             <View
               style={
@@ -2730,8 +2770,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": undefined,
-                      "width": undefined,
+                      "height": 1,
+                      "width": 750,
                     },
                     undefined,
                   ]
@@ -2897,8 +2937,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": undefined,
-                      "width": undefined,
+                      "height": 1,
+                      "width": 750,
                     },
                     undefined,
                   ]
@@ -3065,8 +3105,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": undefined,
-                      "width": undefined,
+                      "height": 1,
+                      "width": 750,
                     },
                     undefined,
                   ]
@@ -3277,6 +3317,7 @@ exports[`renders profile content 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
+<<<<<<< HEAD
                       "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
                     }
                   }
@@ -3291,6 +3332,15 @@ exports[`renders profile content 1`] = `
                   }
                 />
               </View>
+=======
+                      "height": 1,
+                      "width": 750,
+                    },
+                    undefined,
+                  ]
+                }
+              />
+>>>>>>> 5e388c3... feat: map props depending on platform
             </View>
             <View
               style={
@@ -3453,8 +3503,45 @@ exports[`renders profile content 1`] = `
               style={
                 Array [
                   Object {
+<<<<<<< HEAD
                     "paddingBottom": 15,
                   },
+=======
+                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "height": 1,
+                      "width": 750,
+                    },
+                    undefined,
+                  ]
+                }
+              />
+            </View>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              style={Object {}}
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+>>>>>>> 5e388c3... feat: map props depending on platform
                   Object {
                     "flexGrow": 1,
                     "flexShrink": 1,
@@ -3656,6 +3743,7 @@ exports[`renders profile content 1`] = `
                   source={
                     Object {
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
                     }
                   }
@@ -3673,6 +3761,10 @@ exports[`renders profile content 1`] = `
 =======
                       "height": undefined,
                       "width": undefined,
+=======
+                      "height": 1,
+                      "width": 750,
+>>>>>>> 5e388c3... feat: map props depending on platform
                     },
                     undefined,
                   ]
@@ -3850,6 +3942,7 @@ exports[`renders profile content 1`] = `
                   source={
                     Object {
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C520%2C0%2C0",
                     }
                   }
@@ -3867,6 +3960,10 @@ exports[`renders profile content 1`] = `
 =======
                       "height": undefined,
                       "width": undefined,
+=======
+                      "height": 1,
+                      "width": 750,
+>>>>>>> 5e388c3... feat: map props depending on platform
                     },
                     undefined,
                   ]
@@ -4041,8 +4138,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": undefined,
-                      "width": undefined,
+                      "height": 1,
+                      "width": 750,
                     },
                     undefined,
                   ]
@@ -4277,6 +4374,7 @@ exports[`renders profile content 1`] = `
                   source={
                     Object {
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/e1099c348c8c727584842b53d5e708a0377770a2.jpg?crop=620%2C413%2C0%2C0",
                     }
                   }
@@ -4294,6 +4392,10 @@ exports[`renders profile content 1`] = `
 =======
                       "height": undefined,
                       "width": undefined,
+=======
+                      "height": 1,
+                      "width": 750,
+>>>>>>> 5e388c3... feat: map props depending on platform
                     },
                     undefined,
                   ]
@@ -4462,8 +4564,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": undefined,
-                      "width": undefined,
+                      "height": 1,
+                      "width": 750,
                     },
                     undefined,
                   ]
@@ -4903,8 +5005,8 @@ exports[`renders profile content 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": undefined,
-                      "width": undefined,
+                      "height": 1,
+                      "width": 750,
                     },
                     undefined,
                   ]
@@ -5226,8 +5328,8 @@ exports[`renders profile content component 1`] = `
             style={
               Array [
                 Object {
-                  "height": undefined,
-                  "width": undefined,
+                  "height": 1,
+                  "width": 750,
                 },
                 Object {
                   "borderColor": "#FFF",
@@ -5411,8 +5513,8 @@ exports[`renders profile content component 1`] = `
               style={
                 Array [
                   Object {
-                    "height": undefined,
-                    "width": undefined,
+                    "height": 1,
+                    "width": 750,
                   },
                   undefined,
                 ]
@@ -5568,7 +5670,49 @@ exports[`renders profile content component 1`] = `
           style={
             Array [
               Object {
+<<<<<<< HEAD
                 "flexDirection": "column",
+=======
+                "paddingBottom": 15,
+              },
+              Object {
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+              null,
+            ]
+          }
+        >
+          <View
+            onLayout={[Function]}
+          >
+            <Image
+              onError={[Function]}
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "flexGrow": 1,
+                "flexShrink": 1,
+>>>>>>> 5e388c3... feat: map props depending on platform
               },
               null,
               undefined,
@@ -5809,6 +5953,7 @@ exports[`renders profile content component 1`] = `
                 source={
                   Object {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                   }
                 }
@@ -5826,6 +5971,10 @@ exports[`renders profile content component 1`] = `
 =======
                     "height": undefined,
                     "width": undefined,
+=======
+                    "height": 1,
+                    "width": 750,
+>>>>>>> 5e388c3... feat: map props depending on platform
                   },
                   undefined,
                 ]
@@ -6022,6 +6171,7 @@ exports[`renders profile content component 1`] = `
                 source={
                   Object {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                   }
                 }
@@ -6039,6 +6189,10 @@ exports[`renders profile content component 1`] = `
 =======
                     "height": undefined,
                     "width": undefined,
+=======
+                    "height": 1,
+                    "width": 750,
+>>>>>>> 5e388c3... feat: map props depending on platform
                   },
                   undefined,
                 ]
@@ -6235,6 +6389,7 @@ exports[`renders profile content component 1`] = `
                 source={
                   Object {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                   }
                 }
@@ -6252,6 +6407,10 @@ exports[`renders profile content component 1`] = `
 =======
                     "height": undefined,
                     "width": undefined,
+=======
+                    "height": 1,
+                    "width": 750,
+>>>>>>> 5e388c3... feat: map props depending on platform
                   },
                   undefined,
                 ]
@@ -6448,6 +6607,7 @@ exports[`renders profile content component 1`] = `
                 source={
                   Object {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
                   }
                 }
@@ -6465,6 +6625,10 @@ exports[`renders profile content component 1`] = `
 =======
                     "height": undefined,
                     "width": undefined,
+=======
+                    "height": 1,
+                    "width": 750,
+>>>>>>> 5e388c3... feat: map props depending on platform
                   },
                   undefined,
                 ]
@@ -6649,6 +6813,7 @@ exports[`renders profile content component 1`] = `
                 source={
                   Object {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                   }
                 }
@@ -6666,6 +6831,10 @@ exports[`renders profile content component 1`] = `
 =======
                     "height": undefined,
                     "width": undefined,
+=======
+                    "height": 1,
+                    "width": 750,
+>>>>>>> 5e388c3... feat: map props depending on platform
                   },
                   undefined,
                 ]
@@ -6870,8 +7039,8 @@ exports[`renders profile content component 1`] = `
               style={
                 Array [
                   Object {
-                    "height": undefined,
-                    "width": undefined,
+                    "height": 1,
+                    "width": 750,
                   },
                   undefined,
                 ]
@@ -7307,6 +7476,7 @@ exports[`renders profile content component 1`] = `
                 source={
                   Object {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
                   }
                 }
@@ -7324,6 +7494,10 @@ exports[`renders profile content component 1`] = `
 =======
                     "height": undefined,
                     "width": undefined,
+=======
+                    "height": 1,
+                    "width": 750,
+>>>>>>> 5e388c3... feat: map props depending on platform
                   },
                   undefined,
                 ]
@@ -7508,6 +7682,7 @@ exports[`renders profile content component 1`] = `
                 source={
                   Object {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
                   }
                 }
@@ -7525,6 +7700,10 @@ exports[`renders profile content component 1`] = `
 =======
                     "height": undefined,
                     "width": undefined,
+=======
+                    "height": 1,
+                    "width": 750,
+>>>>>>> 5e388c3... feat: map props depending on platform
                   },
                   undefined,
                 ]
@@ -7691,8 +7870,8 @@ exports[`renders profile content component 1`] = `
               style={
                 Array [
                   Object {
-                    "height": undefined,
-                    "width": undefined,
+                    "height": 1,
+                    "width": 750,
                   },
                   undefined,
                 ]
@@ -7918,8 +8097,8 @@ exports[`renders profile content component 1`] = `
               style={
                 Array [
                   Object {
-                    "height": undefined,
-                    "width": undefined,
+                    "height": 1,
+                    "width": 750,
                   },
                   undefined,
                 ]
@@ -8136,8 +8315,45 @@ exports[`renders profile content component 1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
                   "paddingBottom": 15,
                 },
+=======
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C520%2C0%2C0",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+              null,
+            ]
+          }
+        >
+          <View
+            style={Object {}}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+>>>>>>> 5e388c3... feat: map props depending on platform
                 Object {
                   "flexGrow": 1,
                   "flexShrink": 1,
@@ -8337,8 +8553,45 @@ exports[`renders profile content component 1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
                   "paddingBottom": 15,
                 },
+=======
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0a36e5e3aa3fa281979258f23ec7d9bb0b1316b7.jpg?crop=780%2C520%2C0%2C0",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+              null,
+            ]
+          }
+        >
+          <View
+            style={Object {}}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+>>>>>>> 5e388c3... feat: map props depending on platform
                 Object {
                   "flexGrow": 1,
                   "flexShrink": 1,
@@ -8563,6 +8816,7 @@ exports[`renders profile content component 1`] = `
                 onLoad={[Function]}
                 source={
                   Object {
+<<<<<<< HEAD
                     "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/e1099c348c8c727584842b53d5e708a0377770a2.jpg?crop=620%2C413%2C0%2C0",
                   }
                 }
@@ -8577,6 +8831,15 @@ exports[`renders profile content component 1`] = `
                 }
               />
             </View>
+=======
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
+>>>>>>> 5e388c3... feat: map props depending on platform
           </View>
           <View
             style={
@@ -8764,6 +9027,7 @@ exports[`renders profile content component 1`] = `
                 onLoad={[Function]}
                 source={
                   Object {
+<<<<<<< HEAD
                     "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/eee1c7f320c3690dce7ee275ceb77e915c61c4f3.jpg?crop=780%2C520%2C0%2C0",
                   }
                 }
@@ -8778,6 +9042,15 @@ exports[`renders profile content component 1`] = `
                 }
               />
             </View>
+=======
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
+>>>>>>> 5e388c3... feat: map props depending on platform
           </View>
           <View
             style={
@@ -8963,6 +9236,7 @@ exports[`renders profile content component 1`] = `
                 source={
                   Object {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
                   }
                 }
@@ -8980,6 +9254,10 @@ exports[`renders profile content component 1`] = `
 =======
                     "height": undefined,
                     "width": undefined,
+=======
+                    "height": 1,
+                    "width": 750,
+>>>>>>> 5e388c3... feat: map props depending on platform
                   },
                   undefined,
                 ]
@@ -9177,6 +9455,7 @@ exports[`renders profile content component 1`] = `
                 source={
                   Object {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0d5fa06d6b10cfbbc2dade5f0d7b0271fccd994b.jpg?crop=780%2C520%2C0%2C0",
                   }
                 }
@@ -9194,6 +9473,10 @@ exports[`renders profile content component 1`] = `
 =======
                     "height": undefined,
                     "width": undefined,
+=======
+                    "height": 1,
+                    "width": 750,
+>>>>>>> 5e388c3... feat: map props depending on platform
                   },
                   undefined,
                 ]
@@ -9494,8 +9777,8 @@ exports[`renders profile header 1`] = `
           style={
             Array [
               Object {
-                "height": undefined,
-                "width": undefined,
+                "height": 1,
+                "width": 750,
               },
               Object {
                 "borderColor": "#FFF",
