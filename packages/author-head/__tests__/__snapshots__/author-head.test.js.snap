@@ -97,8 +97,8 @@ exports[`renders a snapshot 1`] = `
         style={
           Array [
             Object {
-              "height": undefined,
-              "width": undefined,
+              "height": 1,
+              "width": 750,
             },
             Object {
               "borderColor": "#FFF",
@@ -265,8 +265,8 @@ exports[`renders a snapshot with data 1`] = `
         style={
           Array [
             Object {
-              "height": undefined,
-              "width": undefined,
+              "height": 1,
+              "width": 750,
             },
             Object {
               "borderColor": "#FFF",

@@ -155,8 +155,8 @@ exports[`renders data 1`] = `
               style={
                 Array [
                   Object {
-                    "height": undefined,
-                    "width": undefined,
+                    "height": 1,
+                    "width": 750,
                   },
                   Object {
                     "borderColor": "#FFF",
@@ -302,14 +302,14 @@ exports[`renders data 1`] = `
                 onLoad={[Function]}
                 source={
                   Object {
-                    "uri": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                    "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                   }
                 }
                 style={
                   Array [
                     Object {
-                      "height": undefined,
-                      "width": undefined,
+                      "height": 1,
+                      "width": 750,
                     },
                     undefined,
                   ]
@@ -560,8 +560,8 @@ exports[`renders data from graphql 1`] = `
               style={
                 Array [
                   Object {
-                    "height": undefined,
-                    "width": undefined,
+                    "height": 1,
+                    "width": 750,
                   },
                   Object {
                     "borderColor": "#FFF",
@@ -707,14 +707,14 @@ exports[`renders data from graphql 1`] = `
                 onLoad={[Function]}
                 source={
                   Object {
-                    "uri": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                    "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                   }
                 }
                 style={
                   Array [
                     Object {
-                      "height": undefined,
-                      "width": undefined,
+                      "height": 1,
+                      "width": 750,
                     },
                     undefined,
                   ]
