@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Date Publication test on ios/android renders a DatePublication component with content 1`] = `
+exports[`Date Publication test renders a DatePublication component with content 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
@@ -22,7 +22,7 @@ exports[`Date Publication test on ios/android renders a DatePublication componen
 </Text>
 `;
 
-exports[`Date Publication test on ios/android renders a DatePublication component with red font color 1`] = `
+exports[`Date Publication test renders a DatePublication component with red font color 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
