@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Author info along with articles they have written",
   "main": "author-profile.js",
   "scripts": {
@@ -66,7 +66,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/author-head": "0.3.0",
+    "@times-components/author-head": "0.3.1",
     "@times-components/card": "0.4.0",
     "@times-components/pagination": "0.4.0",
     "jest-cli": "20.0.4",
