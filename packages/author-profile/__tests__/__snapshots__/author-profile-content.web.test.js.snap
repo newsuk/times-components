@@ -781,12 +781,10 @@ exports[`renders profile content 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#1D1D1B",
+                "color": "#000",
                 "fontFamily": "TimesModern-Bold",
-                "fontSize": 30,
-                "fontWeight": "400",
-                "lineHeight": 30,
-                "padding": 8,
+                "fontSize": 45,
+                "paddingTop": 32,
               }
             }
           >
@@ -800,8 +798,9 @@ exports[`renders profile content 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
+                "color": "#696969",
                 "fontFamily": "TimesDigital-RegularSC",
-                "padding": 8,
+                "fontSize": 15,
               }
             }
           >
@@ -819,10 +818,10 @@ exports[`renders profile content 1`] = `
                   "textDecorationLine": "underline",
                 },
                 Object {
-                  "color": "#069",
+                  "color": "#006699",
                   "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 15,
-                  "padding": 8,
+                  "fontSize": 18,
+                  "paddingTop": 16,
                   "textDecorationLine": "none",
                 },
               ]
@@ -840,9 +839,10 @@ exports[`renders profile content 1`] = `
               Object {
                 "color": "#333",
                 "fontFamily": "TimesDigital-Regular",
-                "fontSize": 15,
-                "lineHeight": 25,
-                "padding": 8,
+                "fontSize": 16,
+                "lineHeight": 26,
+                "maxWidth": "88%",
+                "paddingBottom": 32,
                 "textAlign": "center",
               }
             }
@@ -4039,12 +4039,10 @@ exports[`renders profile content component 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#1D1D1B",
+              "color": "#000",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "fontWeight": "400",
-              "lineHeight": 30,
-              "padding": 8,
+              "fontSize": 45,
+              "paddingTop": 32,
             }
           }
         >
@@ -4058,8 +4056,9 @@ exports[`renders profile content component 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
+              "color": "#696969",
               "fontFamily": "TimesDigital-RegularSC",
-              "padding": 8,
+              "fontSize": 15,
             }
           }
         >
@@ -4077,10 +4076,10 @@ exports[`renders profile content component 1`] = `
                 "textDecorationLine": "underline",
               },
               Object {
-                "color": "#069",
+                "color": "#006699",
                 "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 15,
-                "padding": 8,
+                "fontSize": 18,
+                "paddingTop": 16,
                 "textDecorationLine": "none",
               },
             ]
@@ -4098,9 +4097,10 @@ exports[`renders profile content component 1`] = `
             Object {
               "color": "#333",
               "fontFamily": "TimesDigital-Regular",
-              "fontSize": 15,
-              "lineHeight": 25,
-              "padding": 8,
+              "fontSize": 16,
+              "lineHeight": 26,
+              "maxWidth": "88%",
+              "paddingBottom": 32,
               "textAlign": "center",
             }
           }
@@ -7452,12 +7452,10 @@ exports[`renders profile header 1`] = `
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#1D1D1B",
+            "color": "#000",
             "fontFamily": "TimesModern-Bold",
-            "fontSize": 30,
-            "fontWeight": "400",
-            "lineHeight": 30,
-            "padding": 8,
+            "fontSize": 45,
+            "paddingTop": 32,
           }
         }
       >
@@ -7471,8 +7469,9 @@ exports[`renders profile header 1`] = `
         ellipsizeMode="tail"
         style={
           Object {
+            "color": "#696969",
             "fontFamily": "TimesDigital-RegularSC",
-            "padding": 8,
+            "fontSize": 15,
           }
         }
       >
@@ -7490,10 +7489,10 @@ exports[`renders profile header 1`] = `
               "textDecorationLine": "underline",
             },
             Object {
-              "color": "#069",
+              "color": "#006699",
               "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 15,
-              "padding": 8,
+              "fontSize": 18,
+              "paddingTop": 16,
               "textDecorationLine": "none",
             },
           ]
@@ -7511,9 +7510,10 @@ exports[`renders profile header 1`] = `
           Object {
             "color": "#333",
             "fontFamily": "TimesDigital-Regular",
-            "fontSize": 15,
-            "lineHeight": 25,
-            "padding": 8,
+            "fontSize": 16,
+            "lineHeight": 26,
+            "maxWidth": "88%",
+            "paddingBottom": 32,
             "textAlign": "center",
           }
         }
