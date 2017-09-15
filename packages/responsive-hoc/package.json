@@ -1,10 +1,11 @@
 {
-  "name": "@times-components/author-head",
-  "version": "0.2.12",
-  "main": "author-head.js",
+  "name": "@times-components/responsive-hoc",
+  "version": "0.0.1",
+  "description": "HOC to add responsive styles for web",
+  "main": "responsive-hoc",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
-    "test:watch": "jest --bail --verbose --watch",
+    "test:watch": "jest --bail --verbose --watchAll",
     "test": "jest --bail --ci --coverage"
   },
   "jest": {
@@ -14,7 +15,7 @@
       "node_modules/(?!@times-components)/"
     ],
     "testMatch": [
-      "<rootDir>/packages/author-head/__tests__/*.test.js"
+      "<rootDir>/packages/responsive-hoc/**.test.js"
     ]
   },
   "repository": {
@@ -26,7 +27,7 @@
     "react",
     "native",
     "web",
-    "author-head",
+    "responsive-hoc",
     "component"
   ],
   "license": "BSD-3-Clause",
@@ -50,10 +51,6 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/image": "1.1.3",
-    "@times-components/link": "0.3.2",
-    "@times-components/markup": "0.4.3",
-    "@times-components/responsive-hoc": "0.0.1",
     "prop-types": "15.5.10",
     "react-native-web": "0.0.119"
   },
