@@ -26,12 +26,8 @@ const story = m => (
 const example = authorProfileGenerator(2);
 
 const props = {
-  result: Object.assign({}, example, {
-    count: example.articles.count,
-    pageSize: 10,
-    page: 1
-  }),
-  loading: false
+  slug: "fiona-hamilton",
+  imageRatio: "3:2"
 };
 
 withComponent(

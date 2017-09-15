@@ -3,11 +3,8 @@
 import "jsdom";
 import "react-native";
 import React from "react";
-import { shallow } from "enzyme";
+import { resetMockGraphQLProps, setMockGraphQLProps } from "react-apollo";
 import renderer from "react-test-renderer";
-import AuthorProfile from "../author-profile";
-import AuthorProfileHeader from "../author-profile-header";
-import AuthorProfileItemSeparator from "../author-profile-item-separator";
 import example from "../example.json";
 
 example.articles.list = example.articles.list.map(el => ({
@@ -16,80 +13,65 @@ example.articles.list = example.articles.list.map(el => ({
 }));
 
 const props = {
-  result: Object.assign({}, example, {
-    count: example.articles.count,
-    page: 1,
-    pageSize: 10
-  }),
-  loading: false
+  slug: "fiona-hamilton",
+  imageRatio: "3:2"
 };
 
-export default AuthorProfileContent => {
-  it("renders profile", () => {
-    const wrapper = shallow(<AuthorProfile {...props} />);
+beforeEach(() => {
+  resetMockGraphQLProps();
+});
 
+export default AuthorProfile => {
+  it("renders profile", () => {
+    setMockGraphQLProps({
+      data: {
+        loading: false,
+        author: example
+      }
+    });
+
+    const wrapper = renderer.create(<AuthorProfile {...props} />);
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("renders profile content", () => {
-    const component = renderer.create(<AuthorProfile {...props} />);
-
-    expect(component).toMatchSnapshot();
-  });
-
   it("renders profile loading", () => {
-    const p = Object.assign({}, props, {
-      result: null,
-      loading: true
+    setMockGraphQLProps({
+      data: {
+        loading: true
+      }
     });
-    const component = renderer.create(<AuthorProfile {...p} />);
 
+    const component = renderer.create(<AuthorProfile {...props} />);
     expect(component).toMatchSnapshot();
   });
 
   it("renders profile empty", () => {
-    const p = Object.assign({}, props, {
-      result: null,
-      loading: false
+    setMockGraphQLProps({
+      data: {
+        loading: false,
+        author: {
+          ...example,
+          articles: {
+            count: 0,
+            list: []
+          }
+        }
+      }
     });
 
-    const component = renderer.create(<AuthorProfile {...p} />);
-
+    const component = renderer.create(<AuthorProfile {...props} />);
     expect(component).toMatchSnapshot();
   });
 
   it("renders profile error", () => {
-    const p = Object.assign({}, props, {
-      result: null,
-      error: {
+    setMockGraphQLProps({
+      data: {
+        loading: false,
         error: "error"
       }
     });
 
-    const component = renderer.create(<AuthorProfile {...p} />);
-
-    expect(component).toMatchSnapshot();
-  });
-
-  it("renders profile header", () => {
-    const component = renderer.create(
-      <AuthorProfileHeader {...props.result} />
-    );
-
-    expect(component).toMatchSnapshot();
-  });
-
-  it("renders profile separator", () => {
-    const component = renderer.create(<AuthorProfileItemSeparator />);
-
-    expect(component).toMatchSnapshot();
-  });
-
-  it("renders profile content component", () => {
-    const component = renderer.create(
-      <AuthorProfileContent {...props} {...props.result} />
-    );
-
+    const component = renderer.create(<AuthorProfile {...props} />);
     expect(component).toMatchSnapshot();
   });
 };

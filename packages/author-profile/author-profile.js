@@ -16,9 +16,9 @@ const styles = StyleSheet.create({
 const AuthorProfile = ({ onNext, onPrev, ...props }) => (
   <ScrollView containerStyle={styles.container}>
     <AuthorProfileHeader {...props} />
-    <AuthorProfilePagination onNext={onNext} onPrev={onPrev} {...props} />
+    <AuthorProfilePagination {...props} onNext={onNext} onPrev={onPrev} />
     <AuthorProfileArticles {...props} />
-    <AuthorProfilePagination onNext={onNext} onPrev={onPrev} {...props} />
+    <AuthorProfilePagination {...props} onNext={onNext} onPrev={onPrev} />
   </ScrollView>
 );
 

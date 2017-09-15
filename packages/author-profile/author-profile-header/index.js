@@ -1,13 +1,13 @@
+import AuthorHead from "@times-components/author-head";
+import { AuthorHeadProvider } from "@times-components/provider";
 import PropTypes from "prop-types";
 import React from "react";
-import AuthorHead from "@times-components/author-head";
-import Error from "../error";
+import { Text } from "react-native";
 import Loading from "./loading";
-import Provider from "./provider";
 
 const Component = ({ error, loading, author }) => {
   if (error) {
-    return <Error error={error} />;
+    return <Text>{JSON.stringify(error, null, 2)}</Text>;
   }
 
   if (loading) {
@@ -27,14 +27,15 @@ const Component = ({ error, loading, author }) => {
 
 Component.defaultProps = {
   error: null,
-  loading: false,
   author: null
 };
 
 Component.propTypes = {
   error: PropTypes.shape(),
-  loading: PropTypes.bool,
+  loading: PropTypes.bool.isRequired,
   author: PropTypes.shape()
 };
 
-export default props => <Provider {...props}>{Component}</Provider>;
+export default props => (
+  <AuthorHeadProvider {...props}>{Component}</AuthorHeadProvider>
+);
