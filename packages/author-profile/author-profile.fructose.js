@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
 });
 
 const story = m => (
-  <View style={styles.background}>
+  <View fructoseID="authorProfile" style={styles.background}>
     <View style={styles.container} testID="author-profile">
       {m}
     </View>
