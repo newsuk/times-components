@@ -12,7 +12,7 @@
   "scripts": {
     "native": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest ./lib && lerna run test",
-    "test:fructose": "FRUCTOSE=true IOS=true jest .fructose/components.test.js --setupTestFrameworkScriptFile ./.fructose/setup.js --forceExit --verbose",
+    "test:fructose": "IOS=true jest .fructose/components.test.js --setupTestFrameworkScriptFile ./.fructose/setup.js --forceExit --verbose",
     "pretest:fructose": "npm run fetch-fonts && npm run write-test-components",
     "coverage:publish": "lcov-result-merger ./packages/**/lcov.info | coveralls",
     "lint": "lerna run lint",
