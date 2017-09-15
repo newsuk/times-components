@@ -3,16 +3,21 @@ import fructose from "@times-components/fructose/setup";
 import detox from "detox";
 import config from "../package";
 
-if (process.env.FRUCTOSE) {
-  fructose.withComponent();
+// this sets up the with component global, issue logged in fructose
+fructose.withComponent();
 
-  beforeAll(async () => {
-    await fructose.hooks.setup();
+beforeAll(async () => {
+  if (process.env.IOS) {
+    await fructose.hooks.mobile.setup();
     await detox.init(config.detox);
-  }, 180000);
+  } else {
+    throw new Error("invalid platform - Could not run tests");
+  }
+}, 180000);
 
-  afterAll(async () => {
+afterAll(async () => {
+  if (process.env.IOS) {
     await detox.cleanup();
-    await fructose.hooks.cleanup();
-  });
-}
+    await fructose.hooks.mobile.cleanup();
+  }
+});
