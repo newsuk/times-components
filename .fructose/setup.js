@@ -1,7 +1,6 @@
 /* globals beforeAll afterAll */
 import fructose from "@times-components/fructose/setup";
 import detox from "detox";
-import { spawn } from "child_process";
 import config from "../package";
 
 // this sets up the with component global, issue logged in fructose
