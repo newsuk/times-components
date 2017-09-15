@@ -102,7 +102,6 @@
     "@storybook/react-native": "3.2.6",
     "@times-components/fructose":"2.0.0",
     "coveralls": "2.13.1",
-    "chromeless":"1.3.0",
     "detox": "5.5.1",
     "eslint": "3.19.0",
     "eslint-config-airbnb": "15.0.1",
@@ -116,7 +115,6 @@
     "lerna": "2.0.0",
     "lint-staged": "4.0.0",
     "node-fetch": "1.7.2",
-    "portscanner":"2.1.1",
     "pre-commit": "1.2.2",
     "prettier": "1.6.1",
     "react": "15.4.2",
@@ -126,7 +124,6 @@
     "react-native-web": "0.0.119",
     "rimraf": "2.6.1",
     "url": "0.11.0",
-    "webdriverio":"4.8.0",
     "webpack": "3.3.0"
   },
   "dependencies": {
