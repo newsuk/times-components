@@ -65,6 +65,7 @@
     "@times-components/link": "0.10.1",
     "@times-components/markup": "0.12.3",
     "@times-components/tracking": "0.2.1",
+    "@times-components/responsive-hoc": "0.0.1",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.7"
   },

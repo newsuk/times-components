@@ -3,6 +3,8 @@ import { View, StyleSheet, Text, Platform } from "react-native";
 import PropTypes from "prop-types";
 
 import Image from "@times-components/image";
+import withResponsiveStyle, { Breakpoints } from "@times-components/responsive-hoc";
+
 import { TextLink } from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import { renderTrees, treePropType } from "@times-components/markup";
@@ -12,6 +14,7 @@ const fontFamilyAndroid = "TimesDigitalW04-Regular";
 
 const styles = StyleSheet.create({
   container: {
+    display: 'flex',
     width: "100%",
     alignItems: "center",
     flexDirection: "column",
@@ -19,10 +22,11 @@ const styles = StyleSheet.create({
     paddingBottom: 50
   },
   photoContainer: {
-    width: 100,
-    height: 100,
-    bottom: 0,
-    position: "absolute"
+    "width": 100,
+    "height": 100,
+    "order": 1,
+    "paddingTop": 16,
+    "paddingBottom": 16
   },
   roundImage: {
     width: 100,
@@ -36,7 +40,8 @@ const styles = StyleSheet.create({
     fontFamily: "TimesModern-Bold",
     fontSize: 45,
     color: "#000",
-    paddingTop: 32
+    paddingTop: 32,
+    order: 2
   },
   title: {
     fontFamily: "TimesDigitalW04-RegularSC",
@@ -47,14 +52,16 @@ const styles = StyleSheet.create({
         WebkitFontSmoothing: "antialiased",
         MozOsxFontSmoothing: "grayscale"
       }
-    })
+    }),
+    order: 3
   },
   twitter: {
     fontSize: 18,
     fontFamily: "GillSansMTStd-Medium",
     color: "#006699",
     paddingTop: 16,
-    textDecorationLine: "none"
+    textDecorationLine: "none",
+    order: 4
   },
   bio: {
     fontFamily:
@@ -65,6 +72,7 @@ const styles = StyleSheet.create({
     color: "#333",
     maxWidth: "88%",
     paddingBottom: 32,
+    order: 3,
     ...Platform.select({
       web: {
         WebkitFontSmoothing: "antialiased",
@@ -78,6 +86,25 @@ const styles = StyleSheet.create({
     paddingBottom: 50
   }
 });
+
+const ResponsiveStyles = {
+  web: {
+    [Breakpoints.MEDIUM]: StyleSheet.create({
+      photoContainer: {
+        "display": "none"
+      }
+    }),
+    [Breakpoints.LARGE]: StyleSheet.create({
+      photoContainer: {
+        "order": 6,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "bottom": -50,
+        "position": "absolute"
+      }
+    })
+  }
+}
 
 const AuthorHead = props => {
   const { name, title, twitter, bio, uri, onTwitterLinkPress } = props;
@@ -99,11 +126,14 @@ const AuthorHead = props => {
         >
           {name}
         </Text>
-        <Text accessibilityRole="heading" aria-level="2" style={styles.title}>
+        <Text accessibilityRole="heading" aria-level="2" style={[styles.title]}>
           {title.toLowerCase()}
         </Text>
         <TwitterLink handle={twitter} onPress={onTwitterLinkPress} />
-        <Text style={styles.bio}>{renderTrees(bio)}</Text>
+        <Text style={[styles.bio]}>{renderTrees(bio)}</Text>
+        <View style={[styles.photoContainer]}>
+          <Image source={{ uri }} style={[styles.roundImage]} />
+        </View>
       </View>
       {imageComponent}
     </View>
@@ -153,16 +183,19 @@ TwitterLink.defaultProps = {
   handle: AuthorHead.defaultProps.twitter
 };
 
-export default withTrackEvents(AuthorHead, {
-  analyticsEvents: [
-    {
-      eventName: "onTwitterLinkPress",
-      actionName: "Pressed",
-      trackingName: "TwitterLink",
-      getAttrs: (props, eventArgs) => ({
-        twitterHandle: props.twitter,
-        url: eventArgs[1] && eventArgs[1].url
-      })
-    }
-  ]
-});
+export default withResponsiveStyle(
+  withTrackEvents(AuthorHead, {
+    analyticsEvents: [
+      {
+        eventName: "onTwitterLinkPress",
+        actionName: "Pressed",
+        trackingName: "TwitterLink",
+        getAttrs: (props, eventArgs) => ({
+          twitterHandle: props.twitter,
+          url: eventArgs[1] && eventArgs[1].url
+        })
+      }
+    ]
+  }),
+  ResponsiveStyles
+);
