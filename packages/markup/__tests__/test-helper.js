@@ -72,13 +72,33 @@ export default (
   });
 
   it("renders a mixture of tags", () => {
-    const output = renderer.create(renderTree(mixture[0])).toJSON();
+    const output = renderer
+      .create(
+        renderTree(mixture[0], {
+          block(key, attributes, renderedChildren) {
+            return (
+              <BlockComponent key={key}>{renderedChildren}</BlockComponent>
+            );
+          }
+        })
+      )
+      .toJSON();
 
     expect(output).toMatchSnapshot();
   });
 
   it("renders nested tags", () => {
-    const output = renderer.create(renderTree(nested[0])).toJSON();
+    const output = renderer
+      .create(
+        renderTree(nested[0], {
+          block(key, attributes, renderedChildren) {
+            return (
+              <BlockComponent key={key}>{renderedChildren}</BlockComponent>
+            );
+          }
+        })
+      )
+      .toJSON();
 
     expect(output).toMatchSnapshot();
   });
