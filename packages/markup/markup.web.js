@@ -16,9 +16,6 @@ const defaultRenderers = {
   },
   inline(key, attributes, renderedChildren) {
     return <span key={key}>{renderedChildren}</span>;
-  },
-  block(key, attributes, renderedChildren) {
-    return <div key={key}>{renderedChildren}</div>;
   }
 };
 

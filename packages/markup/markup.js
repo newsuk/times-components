@@ -34,9 +34,6 @@ const defaultRenderers = {
   },
   inline(key, attributes, renderedChildren) {
     return <Text key={key}>{renderedChildren}</Text>;
-  },
-  block(key, attributes, renderedChildren) {
-    return <View key={key}>{renderedChildren}</View>;
   }
 };
 
