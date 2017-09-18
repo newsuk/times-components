@@ -7,14 +7,22 @@ class TapToLaunch extends Component {
     super(props);
 
     this.state = {
-      isLaunched: false
+      isLaunched: props.launched
     };
 
     this.launch = this.launch.bind(this);
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (this.state.isLaunched !== nextProps.launched) {
+      this.setState({ isLaunched: nextProps.launched });
+    }
+  }
+
   launch() {
-    this.setState({ isLaunched: true });
+    if (!this.state.isLaunched) {
+      this.setState({ isLaunched: true });
+    }
   }
 
   render() {
@@ -27,7 +35,12 @@ class TapToLaunch extends Component {
 }
 
 TapToLaunch.propTypes = {
+  launched: PropTypes.bool,
   children: PropTypes.func.isRequired
+};
+
+TapToLaunch.defaultProps = {
+  launched: false
 };
 
 export default TapToLaunch;

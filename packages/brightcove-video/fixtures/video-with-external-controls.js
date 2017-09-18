@@ -5,7 +5,7 @@ import { View } from "react-native";
 import PropTypes from "prop-types";
 
 import Button from "./button";
-import BrightcoveVideo from "../brightcove-player";
+import BrightcoveVideo from "../brightcove-video";
 
 class VideoWithExternalControls extends Component {
   render() {
@@ -31,6 +31,13 @@ class VideoWithExternalControls extends Component {
           buttonText="pause"
           onPress={() => {
             this.bcVideo.pause();
+          }}
+        />
+        <Button
+          testID="external-reset"
+          buttonText="reset"
+          onPress={() => {
+            this.bcVideo.reset();
           }}
         />
       </View>
