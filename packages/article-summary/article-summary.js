@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
-import { renderTrees } from "@times-components/markup";
+import { renderTrees, treePropType } from "@times-components/markup";
 import DatePublication from "@times-components/date-publication";
 
 const styles = {
@@ -48,7 +48,7 @@ const ArticleSummary = props => {
 ArticleSummary.propTypes = {
   label: PropTypes.string,
   headline: PropTypes.string,
-  text: PropTypes.arrayOf(PropTypes.object),
+  text: PropTypes.arrayOf(treePropType),
   date: PropTypes.instanceOf(Date),
   publication: PropTypes.string
 };
