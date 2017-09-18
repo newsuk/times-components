@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 import Image from "@times-components/image";
 import { TextLink } from "@times-components/link";
-import { renderTrees } from "@times-components/markup";
+import { renderTrees, treePropType } from "@times-components/markup";
 
 const styles = StyleSheet.create({
   container: {
@@ -95,7 +95,7 @@ AuthorHead.propTypes = {
   name: PropTypes.string,
   title: PropTypes.string,
   uri: PropTypes.string,
-  bio: PropTypes.arrayOf(PropTypes.object),
+  bio: PropTypes.arrayOf(treePropType),
   twitter: PropTypes.string
 };
 
