@@ -15,8 +15,12 @@ class BrightcoveVideo extends Component {
     this.play = this.play.bind(this);
   }
 
+  // specifically check if is launched has changed and block update if it has not;
+  // this is so we don't keep reseting our player reference
   shouldComponentUpdate(nextProps, nextState) {
-    return nextState.isLaunched !== this.state.isLaunched;
+    return (
+      nextState.isLaunched !== this.state.isLaunched || nextProps !== this.props
+    );
   }
 
   play() {
