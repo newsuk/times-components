@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { Text } from "react-native";
 import renderTreeWithoutDefaults from "./render-tree-without-defaults";
 
 const styles = {
