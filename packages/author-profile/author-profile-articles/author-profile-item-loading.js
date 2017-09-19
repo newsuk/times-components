@@ -10,10 +10,10 @@ const styles = StyleSheet.create({
   }
 });
 
-const AuthorProfileItem = () => (
+const AuthorProfileLoading = () => (
   <View style={styles.container}>
     <ActivityIndicator type="large" />
   </View>
 );
 
-export default AuthorProfileItem;
+export default AuthorProfileLoading;
