@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Dimensions } from 'react-native';
+import React from "react";
+import { View, Dimensions } from "react-native";
 
 const Breakpoints = {
   LARGE: Symbol("large"),
@@ -8,7 +8,7 @@ const Breakpoints = {
 };
 
 const checkSize = (minWidth, maxWidth) => {
-  return (w) => w >= minWidth && (!maxWidth || w < maxWidth);
+  return w => w >= minWidth && (!maxWidth || w < maxWidth);
 };
 
 const Sizes = {
@@ -26,8 +26,8 @@ const StyleHOC = (WrappedComponent, Styles) => {
       super(props);
 
       this.state = {
-        width : Dimensions.get('window').width,
-        style: { }
+        width: Dimensions.get("window").width,
+        style: {}
       };
 
       this.handleLayout = this.handleLayout.bind(this);
@@ -39,28 +39,28 @@ const StyleHOC = (WrappedComponent, Styles) => {
         <View onLayout={this.handleLayout}>
           <WrappedComponent responsive={this.state.style} {...this.props} />
         </View>
-      )
+      );
     }
 
     handleLayout(event) {
-      const width = Dimensions.get('window').width;
+      const width = Dimensions.get("window").width;
       const style = this.handleResponsiveStyle(width);
 
       this.setState({
         width,
         style
-      })
+      });
     }
 
     handleResponsiveStyle(width) {
       const breakpointStyles = Object.getOwnPropertySymbols(Sizes)
-                        .filter(sz => Sizes[sz](width))
-                        .map(sz => Styles.web[sz]);
+        .filter(sz => Sizes[sz](width))
+        .map(sz => Styles.web[sz]);
 
       return Object.assign({}, Styles.default, ...breakpointStyles);
     }
-  }
-}
+  };
+};
 
 export default StyleHOC;
 

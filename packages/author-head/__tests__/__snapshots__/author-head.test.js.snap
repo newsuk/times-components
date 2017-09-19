@@ -2,27 +2,22 @@
 
 exports[`renders 1`] = `
 <View
-  pointerEvents="box-none"
-  style={
-    Object {
-      "alignItems": "center",
-      "backgroundColor": "transparent",
-      "paddingBottom": 50,
-    }
-  }
+  onLayout={[Function]}
 >
   <View
-    accessibilityRole="banner"
+    pointerEvents="box-none"
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#F9F8F3",
-        "flexDirection": "column",
-        "paddingBottom": 50,
-        "width": "100%",
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "paddingBottom": 50,
+        },
+        undefined,
+      ]
     }
   >
+<<<<<<< HEAD
     <Text
       accessibilityRole="heading"
       accessible={true}
@@ -30,16 +25,25 @@ exports[`renders 1`] = `
       aria-level="1"
       disabled={false}
       ellipsizeMode="tail"
+=======
+    <View
+      accessibilityRole="banner"
+>>>>>>> chore: fix snaphshots
       style={
-        Object {
-          "color": "#000",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 45,
-          "paddingTop": 32,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F9F8F3",
+            "flexDirection": "column",
+            "paddingBottom": 50,
+            "width": "100%",
+          },
+          undefined,
+        ]
       }
       testID="author-name"
     >
+<<<<<<< HEAD
       
     </Text>
     <Text
@@ -183,12 +187,54 @@ exports[`renders with data 1`] = `
       }
     >
       Carol Midgley joined 
+=======
+      <Text
+        accessibilityRole="heading"
+        accessible={true}
+        allowFontScaling={true}
+        aria-level="1"
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#000",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 45,
+              "paddingTop": 32,
+            },
+            undefined,
+          ]
+        }
+      >
+        
+      </Text>
+      <Text
+        accessibilityRole="heading"
+        accessible={true}
+        allowFontScaling={true}
+        aria-level="2"
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#696969",
+              "fontFamily": "TimesDigital-RegularSC",
+              "fontSize": 15,
+            },
+            undefined,
+          ]
+        }
+      >
+        
+      </Text>
+>>>>>>> chore: fix snaphshots
       <Text
         accessible={true}
         allowFontScaling={true}
         disabled={false}
         ellipsizeMode="tail"
         style={
+<<<<<<< HEAD
           Object {
             "fontStyle": "italic",
           }
@@ -251,33 +297,87 @@ exports[`renders with data 1`] = `
         }
       />
     </Image>
+=======
+          Object {
+            "color": "#333",
+            "fontFamily": "TimesDigital-Regular",
+            "fontSize": 16,
+            "lineHeight": 26,
+            "maxWidth": "88%",
+            "paddingBottom": 32,
+            "textAlign": "center",
+          }
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "height": 100,
+              "paddingBottom": 16,
+              "paddingTop": 16,
+              "width": 100,
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          onLayout={[Function]}
+        >
+          <Image
+            onError={[Function]}
+            onLoad={[Function]}
+            source={
+              Object {
+                "uri": "",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 1,
+                  "width": 750,
+                },
+                Array [
+                  Object {
+                    "borderColor": "#FFF",
+                    "borderRadius": 50,
+                    "borderWidth": 5,
+                    "height": 100,
+                    "width": 100,
+                  },
+                  undefined,
+                ],
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+>>>>>>> chore: fix snaphshots
   </View>
 </View>
 `;
 
 exports[`renders without profile picture 1`] = `
 <View
-  pointerEvents="box-none"
-  style={
-    Object {
-      "alignItems": "center",
-      "backgroundColor": "transparent",
-      "paddingBottom": 50,
-    }
-  }
+  onLayout={[Function]}
 >
   <View
-    accessibilityRole="banner"
+    pointerEvents="box-none"
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#F9F8F3",
-        "flexDirection": "column",
-        "paddingBottom": 50,
-        "width": "100%",
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "paddingBottom": 50,
+        },
+        undefined,
+      ]
     }
   >
+<<<<<<< HEAD
     <Text
       accessibilityRole="heading"
       accessible={true}
@@ -333,10 +433,24 @@ exports[`renders without profile picture 1`] = `
             "fontSize": 18,
             "paddingTop": 16,
             "textDecorationLine": "none",
+=======
+    <View
+      accessibilityRole="banner"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F9F8F3",
+            "flexDirection": "column",
+            "paddingBottom": 50,
+            "width": "100%",
+>>>>>>> chore: fix snaphshots
           },
+          undefined,
         ]
       }
     >
+<<<<<<< HEAD
       @
       carolmidgley
     </Text>
@@ -358,6 +472,72 @@ exports[`renders without profile picture 1`] = `
       }
     >
       Carol Midgley joined 
+=======
+      <Text
+        accessibilityRole="heading"
+        accessible={true}
+        allowFontScaling={true}
+        aria-level="1"
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#000",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 45,
+              "paddingTop": 32,
+            },
+            undefined,
+          ]
+        }
+      >
+        Carol Midgley
+      </Text>
+      <Text
+        accessibilityRole="heading"
+        accessible={true}
+        allowFontScaling={true}
+        aria-level="2"
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#696969",
+              "fontFamily": "TimesDigital-RegularSC",
+              "fontSize": 15,
+            },
+            undefined,
+          ]
+        }
+      >
+        columnist
+      </Text>
+      <Text
+        accessibilityRole="link"
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        href="https://twitter.com/carolmidgley"
+        onPress={[Function]}
+        style={
+          Array [
+            Object {
+              "textDecorationLine": "underline",
+            },
+            Object {
+              "color": "#006699",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 18,
+              "paddingTop": 16,
+              "textDecorationLine": "none",
+            },
+          ]
+        }
+      >
+        @
+        carolmidgley
+      </Text>
+>>>>>>> chore: fix snaphshots
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -365,6 +545,7 @@ exports[`renders without profile picture 1`] = `
         ellipsizeMode="tail"
         style={
           Object {
+<<<<<<< HEAD
             "fontStyle": "italic",
           }
         }
@@ -387,6 +568,92 @@ exports[`renders without profile picture 1`] = `
       </Text>
        each week and a weekly comment piece on Fridays.
     </Text>
+=======
+            "color": "#333",
+            "fontFamily": "TimesDigital-Regular",
+            "fontSize": 16,
+            "lineHeight": 26,
+            "maxWidth": "88%",
+            "paddingBottom": 32,
+            "textAlign": "center",
+          }
+        }
+      >
+        Carol Midgley joined 
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "fontStyle": "italic",
+            }
+          }
+        >
+          The Times
+        </Text>
+         in 1996, and won feature writer of the year in 2004. Find her Wednesday column in 
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "fontStyle": "italic",
+            }
+          }
+        >
+          Times2
+        </Text>
+         each week and a weekly comment piece on Fridays.
+      </Text>
+      <View
+        style={
+          Array [
+            Object {
+              "height": 100,
+              "paddingBottom": 16,
+              "paddingTop": 16,
+              "width": 100,
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          onLayout={[Function]}
+        >
+          <Image
+            onError={[Function]}
+            onLoad={[Function]}
+            source={
+              Object {
+                "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 1,
+                  "width": 750,
+                },
+                Array [
+                  Object {
+                    "borderColor": "#FFF",
+                    "borderRadius": 50,
+                    "borderWidth": 5,
+                    "height": 100,
+                    "width": 100,
+                  },
+                  undefined,
+                ],
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+>>>>>>> chore: fix snaphshots
   </View>
 </View>
 `;

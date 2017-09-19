@@ -72,105 +72,115 @@ exports[`renders data 1`] = `
   <View>
     <View>
       <View
-        pointerEvents="box-none"
-        style={
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "transparent",
-            "paddingBottom": 50,
-          }
-        }
+        onLayout={[Function]}
       >
         <View
-          accessibilityRole="banner"
+          pointerEvents="box-none"
           style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F9F8F3",
-              "flexDirection": "column",
-              "paddingBottom": 50,
-              "width": "100%",
-            }
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "paddingBottom": 50,
+              },
+              undefined,
+            ]
           }
         >
-          <Text
-            accessibilityRole="heading"
-            accessible={true}
-            allowFontScaling={true}
-            aria-level="1"
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#000",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 45,
-                "paddingTop": 32,
-              }
-            }
-          >
-            Fiona Hamilton
-          </Text>
-          <Text
-            accessibilityRole="heading"
-            accessible={true}
-            allowFontScaling={true}
-            aria-level="2"
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "TimesDigital-RegularSC",
-                "fontSize": 15,
-              }
-            }
-          >
-            legal editor
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            onPress={[Function]}
+          <View
+            accessibilityRole="banner"
             style={
               Array [
                 Object {
-                  "color": "#069",
-                  "textDecorationLine": "underline",
+                  "alignItems": "center",
+                  "backgroundColor": "#F9F8F3",
+                  "flexDirection": "column",
+                  "paddingBottom": 50,
+                  "width": "100%",
                 },
-                Object {
-                  "color": "#006699",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 18,
-                  "paddingTop": 16,
-                  "textDecorationLine": "none",
-                },
+                undefined,
               ]
             }
-            url="https://twitter.com/jdoe"
           >
-            @
-            jdoe
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333",
-                "fontFamily": "TimesDigital-Regular",
-                "fontSize": 16,
-                "lineHeight": 26,
-                "maxWidth": "88%",
-                "paddingBottom": 32,
-                "textAlign": "center",
+            <Text
+              accessibilityRole="heading"
+              accessible={true}
+              allowFontScaling={true}
+              aria-level="1"
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#000",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontSize": 45,
+                    "paddingTop": 32,
+                  },
+                  undefined,
+                ]
               }
-            }
-          >
+            >
+              Fiona Hamilton
+            </Text>
+            <Text
+              accessibilityRole="heading"
+              accessible={true}
+              allowFontScaling={true}
+              aria-level="2"
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontSize": 15,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              legal editor
+            </Text>
+            <Text
+              accessibilityRole="link"
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              href="https://twitter.com/jdoe"
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "textDecorationLine": "underline",
+                  },
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 18,
+                    "paddingTop": 16,
+                    "textDecorationLine": "none",
+                  },
+                ]
+              }
+            >
+              @
+              jdoe
+            </Text>
             <Text
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#333",
+                  "fontFamily": "TimesDigital-Regular",
+                  "fontSize": 16,
+                  "lineHeight": 26,
+                  "maxWidth": "88%",
+                  "paddingBottom": 32,
+                  "textAlign": "center",
+                }
+              }
             >
               Lorem 
               <Text
@@ -200,45 +210,51 @@ exports[`renders data 1`] = `
                  last 
               </Text>
             </Text>
-          </Text>
-        </View>
-        <View
-          style={
-            Object {
-              "bottom": 0,
-              "height": 100,
-              "position": "absolute",
-              "width": 100,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-          >
-            <Image
-              onError={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "",
-                }
-              }
+            <View
               style={
                 Array [
                   Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  Object {
-                    "borderColor": "#FFF",
-                    "borderRadius": 50,
-                    "borderWidth": 5,
                     "height": 100,
+                    "paddingBottom": 16,
+                    "paddingTop": 16,
                     "width": 100,
                   },
+                  undefined,
                 ]
               }
-            />
+            >
+              <View
+                onLayout={[Function]}
+              >
+                <Image
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "",
+                    }
+                  }
+                  style={
+                    Array [
+                      Object {
+                        "height": 1,
+                        "width": 750,
+                      },
+                      Array [
+                        Object {
+                          "borderColor": "#FFF",
+                          "borderRadius": 50,
+                          "borderWidth": 5,
+                          "height": 100,
+                          "width": 100,
+                        },
+                        undefined,
+                      ],
+                    ]
+                  }
+                />
+              </View>
+            </View>
           </View>
         </View>
       </View>
@@ -458,6 +474,7 @@ exports[`renders data 1`] = `
                       "color": "#696969",
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
+                      "lineHeight": 15,
                     },
                     Object {},
                   ]
@@ -482,105 +499,115 @@ exports[`renders data from graphql 1`] = `
   <View>
     <View>
       <View
-        pointerEvents="box-none"
-        style={
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "transparent",
-            "paddingBottom": 50,
-          }
-        }
+        onLayout={[Function]}
       >
         <View
-          accessibilityRole="banner"
+          pointerEvents="box-none"
           style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F9F8F3",
-              "flexDirection": "column",
-              "paddingBottom": 50,
-              "width": "100%",
-            }
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "paddingBottom": 50,
+              },
+              undefined,
+            ]
           }
         >
-          <Text
-            accessibilityRole="heading"
-            accessible={true}
-            allowFontScaling={true}
-            aria-level="1"
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#000",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 45,
-                "paddingTop": 32,
-              }
-            }
-          >
-            Fiona Hamilton
-          </Text>
-          <Text
-            accessibilityRole="heading"
-            accessible={true}
-            allowFontScaling={true}
-            aria-level="2"
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "TimesDigital-RegularSC",
-                "fontSize": 15,
-              }
-            }
-          >
-            legal editor
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            onPress={[Function]}
+          <View
+            accessibilityRole="banner"
             style={
               Array [
                 Object {
-                  "color": "#069",
-                  "textDecorationLine": "underline",
+                  "alignItems": "center",
+                  "backgroundColor": "#F9F8F3",
+                  "flexDirection": "column",
+                  "paddingBottom": 50,
+                  "width": "100%",
                 },
-                Object {
-                  "color": "#006699",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 18,
-                  "paddingTop": 16,
-                  "textDecorationLine": "none",
-                },
+                undefined,
               ]
             }
-            url="https://twitter.com/jdoe"
           >
-            @
-            jdoe
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333",
-                "fontFamily": "TimesDigital-Regular",
-                "fontSize": 16,
-                "lineHeight": 26,
-                "maxWidth": "88%",
-                "paddingBottom": 32,
-                "textAlign": "center",
+            <Text
+              accessibilityRole="heading"
+              accessible={true}
+              allowFontScaling={true}
+              aria-level="1"
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#000",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontSize": 45,
+                    "paddingTop": 32,
+                  },
+                  undefined,
+                ]
               }
-            }
-          >
+            >
+              Fiona Hamilton
+            </Text>
+            <Text
+              accessibilityRole="heading"
+              accessible={true}
+              allowFontScaling={true}
+              aria-level="2"
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontSize": 15,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              legal editor
+            </Text>
+            <Text
+              accessibilityRole="link"
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              href="https://twitter.com/jdoe"
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "textDecorationLine": "underline",
+                  },
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 18,
+                    "paddingTop": 16,
+                    "textDecorationLine": "none",
+                  },
+                ]
+              }
+            >
+              @
+              jdoe
+            </Text>
             <Text
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#333",
+                  "fontFamily": "TimesDigital-Regular",
+                  "fontSize": 16,
+                  "lineHeight": 26,
+                  "maxWidth": "88%",
+                  "paddingBottom": 32,
+                  "textAlign": "center",
+                }
+              }
             >
               Lorem 
               <Text
@@ -610,45 +637,51 @@ exports[`renders data from graphql 1`] = `
                  last 
               </Text>
             </Text>
-          </Text>
-        </View>
-        <View
-          style={
-            Object {
-              "bottom": 0,
-              "height": 100,
-              "position": "absolute",
-              "width": 100,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-          >
-            <Image
-              onError={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "",
-                }
-              }
+            <View
               style={
                 Array [
                   Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  Object {
-                    "borderColor": "#FFF",
-                    "borderRadius": 50,
-                    "borderWidth": 5,
                     "height": 100,
+                    "paddingBottom": 16,
+                    "paddingTop": 16,
                     "width": 100,
                   },
+                  undefined,
                 ]
               }
-            />
+            >
+              <View
+                onLayout={[Function]}
+              >
+                <Image
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "",
+                    }
+                  }
+                  style={
+                    Array [
+                      Object {
+                        "height": 1,
+                        "width": 750,
+                      },
+                      Array [
+                        Object {
+                          "borderColor": "#FFF",
+                          "borderRadius": 50,
+                          "borderWidth": 5,
+                          "height": 100,
+                          "width": 100,
+                        },
+                        undefined,
+                      ],
+                    ]
+                  }
+                />
+              </View>
+            </View>
           </View>
         </View>
       </View>
@@ -868,6 +901,7 @@ exports[`renders data from graphql 1`] = `
                       "color": "#696969",
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
+                      "lineHeight": 15,
                     },
                     Object {},
                   ]
@@ -886,12 +920,27 @@ exports[`renders data from graphql 1`] = `
 `;
 
 exports[`renders loading state 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexBasis": "100%",
+      "justifyContent": "center",
+    }
+  }
 >
+<<<<<<< HEAD
   Loading...
 </Text>
 >>>>>>> fix: adds visual fixes to author head
+=======
+  <ActivityIndicator
+    animating={true}
+    color="#999999"
+    hidesWhenStopped={true}
+    size="large"
+  />
+</View>
+>>>>>>> chore: fix snaphshots
 `;
