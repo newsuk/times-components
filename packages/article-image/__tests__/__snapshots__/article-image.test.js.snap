@@ -128,7 +128,7 @@ exports[`renders inline image (landscape) correctly 1`] = `
                   "color": "#696969",
                   "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 13,
-                  "lineHeight": 15,
+                  "lineHeight": 16,
                 },
                 undefined,
               ]
@@ -146,14 +146,14 @@ exports[`renders inline image (landscape) correctly 1`] = `
                   "color": "#696969",
                   "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 13,
-                  "lineHeight": 15,
+                  "lineHeight": 16,
                 },
                 Object {
                   "color": "#333",
                   "fontSize": 9,
                   "fontWeight": "400",
                   "letterSpacing": 1,
-                  "marginTop": 2,
+                  "lineHeight": 16,
                 },
                 undefined,
               ]
@@ -240,7 +240,7 @@ exports[`renders inline image (portrait) correctly 1`] = `
                   "color": "#696969",
                   "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 13,
-                  "lineHeight": 15,
+                  "lineHeight": 16,
                 },
                 undefined,
               ]
@@ -258,14 +258,14 @@ exports[`renders inline image (portrait) correctly 1`] = `
                   "color": "#696969",
                   "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 13,
-                  "lineHeight": 15,
+                  "lineHeight": 16,
                 },
                 Object {
                   "color": "#333",
                   "fontSize": 9,
                   "fontWeight": "400",
                   "letterSpacing": 1,
-                  "marginTop": 2,
+                  "lineHeight": 16,
                 },
                 undefined,
               ]
@@ -348,7 +348,7 @@ exports[`renders primary image correctly 1`] = `
                   "color": "#696969",
                   "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 13,
-                  "lineHeight": 15,
+                  "lineHeight": 16,
                 },
                 undefined,
               ]
@@ -366,14 +366,14 @@ exports[`renders primary image correctly 1`] = `
                   "color": "#696969",
                   "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 13,
-                  "lineHeight": 15,
+                  "lineHeight": 16,
                 },
                 Object {
                   "color": "#333",
                   "fontSize": 9,
                   "fontWeight": "400",
                   "letterSpacing": 1,
-                  "marginTop": 2,
+                  "lineHeight": 16,
                 },
                 undefined,
               ]
@@ -469,7 +469,7 @@ exports[`renders secondary image correctly 1`] = `
                   "color": "#696969",
                   "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 13,
-                  "lineHeight": 15,
+                  "lineHeight": 16,
                 },
                 undefined,
               ]
@@ -487,14 +487,14 @@ exports[`renders secondary image correctly 1`] = `
                   "color": "#696969",
                   "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 13,
-                  "lineHeight": 15,
+                  "lineHeight": 16,
                 },
                 Object {
                   "color": "#333",
                   "fontSize": 9,
                   "fontWeight": "400",
                   "letterSpacing": 1,
-                  "marginTop": 2,
+                  "lineHeight": 16,
                 },
                 undefined,
               ]
