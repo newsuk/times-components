@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "The article",
   "main": "article.js",
   "scripts": {
@@ -60,8 +60,8 @@
   },
   "dependencies": {
     "@times-components/ad": "0.1.0",
-    "@times-components/article-flag": "0.4.0",
-    "@times-components/article-label": "0.1.0",
+    "@times-components/article-flag": "0.4.1",
+    "@times-components/article-label": "0.1.1",
     "prop-types": "15.5.10",
     "react-native-web": "0.0.119"
   },
