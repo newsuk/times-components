@@ -293,6 +293,14 @@ storiesOf("BrightcoveVideo", module)
       onChange={firstArgJSONAction("change")}
     />
   ))
+  .add("BrightcoveVideo with event listener", () => (
+    <BrightcoveVideo
+      policyKey={policyKey}
+      videoId={videoId}
+      accountId={accountId}
+      onChange={firstArgJSONAction("change")}
+    />
+  ))
   .add("Player with external controls", () => (
     <VideoWithExternalControls
       policyKey={policyKey}

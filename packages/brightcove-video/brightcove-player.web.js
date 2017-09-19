@@ -42,6 +42,7 @@ class BrightcoveVideo extends Component {
       playerId: props.playerId,
       errors: [].concat(BrightcoveVideo.globalErrors),
       playerStatus: "paused",
+      finished: false,
       playheadPosition: 0
     };
   }
@@ -94,16 +95,20 @@ class BrightcoveVideo extends Component {
   onPlay(player) {
     this.setState({
       playerStatus: "playing",
-      playheadPosition: player.currentTime()
+      playheadPosition: player.currentTime(),
+      finished: false
     });
 
     this.emitState();
   }
 
   onPause(player) {
+    const playheadPosition = player.currentTime();
+
     this.setState({
       playerStatus: "paused",
-      playheadPosition: player.currentTime()
+      playheadPosition,
+      finished: playheadPosition === player.duration()
     });
 
     this.emitState();
@@ -111,7 +116,8 @@ class BrightcoveVideo extends Component {
 
   onSeeked(player) {
     this.setState({
-      playheadPosition: player.currentTime()
+      playheadPosition: player.currentTime(),
+      finished: false
     });
 
     this.emitState();

@@ -274,6 +274,8 @@ describe("brightcove-video web component", () => {
         beforeEach(() => {
           evtReg = {};
 
+          dummyPlayer.duration = () => "Once in a blue moon";
+
           dummyPlayer.on = (evtType, fn) => {
             evtReg[evtType] = fn;
           };

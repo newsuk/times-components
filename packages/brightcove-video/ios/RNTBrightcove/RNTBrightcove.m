@@ -16,7 +16,7 @@
 @implementation RNTBrightcove {
   RCTEventDispatcher *_eventDispatcher;
   NSString *_playerStatus;
-  NSString *_playheadPosition;
+  NSNumber *_playheadPosition;
   NSNumber *_autoplayNumber;
   NSNumber *_hideFullScreenButtonNumber;
 }
@@ -41,7 +41,7 @@
 
 - (void)setup {
   _playerStatus = @"paused";
-  _playheadPosition = @"0";
+  _playheadPosition = 0;
 
   BCOVPlayerSDKManager *manager = [BCOVPlayerSDKManager sharedManager];
 
@@ -187,8 +187,15 @@
   #pragma unused (session)
 
   NSNumber *progressNumber = [NSNumber numberWithDouble:progress];
+  NSNumber *zero = [NSNumber numberWithDouble:0];
 
-  _playheadPosition = [progressNumber stringValue];
+  NSComparisonResult result = [zero compare: progressNumber];
+  
+  if (result == NSOrderedDescending) {
+    _playheadPosition = zero;
+  } else {
+    _playheadPosition = progressNumber;
+  }
 
   [self emitStatus];
 }
