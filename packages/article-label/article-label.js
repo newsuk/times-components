@@ -24,13 +24,9 @@ const beautifyTitle = title => {
   }
   return title.toUpperCase();
 };
-const ArticleLabel = ({ title, color }) => {
-  if (!title) {
-    return null;
-  }
-
-  return <Text style={[styles.title, { color }]}>{beautifyTitle(title)}</Text>;
-};
+const ArticleLabel = ({ title, color }) => (
+  <Text style={[styles.title, { color }]}>{beautifyTitle(title)}</Text>
+);
 
 ArticleLabel.propTypes = {
   title: PropTypes.string.isRequired,
