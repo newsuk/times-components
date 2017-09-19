@@ -31,6 +31,8 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
     }
 
     private EventEmitter setupEventEmitter() {
+        final BrightcovePlayerView playerView = BrightcovePlayerView.this;
+
         EventEmitter eventEmitter = this.getEventEmitter();
         eventEmitter.on(EventType.VIDEO_SIZE_KNOWN, new EventListener() {
             @Override
@@ -38,23 +40,31 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
                fixVideoLayout();
             }
         });
-
-
         eventEmitter.on(EventType.PLAY, onEvent("playing"));
         eventEmitter.on(EventType.PAUSE, onEvent("paused"));
+        eventEmitter.on(EventType.COMPLETED, new EventListener() {
+            @Override
+            public void processEvent(Event e) {
+                playerView.bubbleState("paused", ((float) playerView.getDuration() / 1000));
+            }
+        });
         eventEmitter.on(EventType.SEEK_TO, new EventListener() {
             @Override
             public void processEvent(Event e) {
-                ((RNTBrightcoveView) BrightcovePlayerView.this.getParent()).emitState();
+                playerView.bubbleState(playerView.getPlayerStatus(), playerView.getPlayheadPosition() / 1000);
             }
         });
         eventEmitter.on(EventType.ERROR, new EventListener() {
             @Override
             public void processEvent(Event e) {
-                ((RNTBrightcoveView) BrightcovePlayerView.this.getParent()).emitError(e);
+                ((RNTBrightcoveView) playerView.getParent()).emitError(e);
             }
         });
         return eventEmitter;
+    }
+
+    private void bubbleState(String status, Float headPos) {
+        ((RNTBrightcoveView) this.getParent()).emitState(status, headPos);
     }
 
     public void initVideo(String videoId, String accountId, String policyKey, Boolean autoplay, Boolean isFullscreenButtonHidden) {
@@ -70,11 +80,12 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
     }
 
     private EventListener onEvent(final String playerStatus) {
+        final BrightcovePlayerView playerView = BrightcovePlayerView.this;
+
         return new EventListener() {
             @Override
             public void processEvent(Event event) {
-                mPlayerStatus = playerStatus;
-                ((RNTBrightcoveView) BrightcovePlayerView.this.getParent()).emitState();
+                playerView.bubbleState(playerStatus, playerView.getPlayheadPosition() / 1000);
             }
         };
     }

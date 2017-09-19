@@ -109,12 +109,18 @@ public class RNTBrightcoveView extends RelativeLayout {
         }
     }
 
-    public void emitState() {
+    public void emitState(final String playerStatus, final Float playheadPosition) {
         WritableMap event = Arguments.createMap();
-        event.putString("playerStatus", mPlayerView.getPlayerStatus());
-        event.putString("playheadPosition", Float.toString(mPlayerView.getPlayheadPosition() / 1000));
-        ReactContext reactContext = (ReactContext) getContext();
-        reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
+
+        //String playerStatus = mPlayerView.getPlayerStatus();
+
+        if (playerStatus != null) {
+            event.putString("playerStatus", playerStatus);
+            //event.putString("playheadPosition", Float.toString(mPlayerView.getPlayheadPosition() / 1000));
+            event.putDouble("playheadPosition", playheadPosition);
+            ReactContext reactContext = (ReactContext) getContext();
+            reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
+        }
     }
 
     public void emitError(Event e) {
