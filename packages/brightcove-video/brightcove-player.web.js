@@ -16,6 +16,7 @@ class BrightcoveVideo extends Component {
     this.on("play", context.onPlay.bind(context, this));
     this.on("pause", context.onPause.bind(context, this));
     this.on("seeked", context.onSeeked.bind(context, this));
+    this.on("timeupdate", context.onPlay.bind(context, this));
 
     this.contextmenu({ disabled: true });
   }
