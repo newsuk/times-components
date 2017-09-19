@@ -12,9 +12,34 @@ const checkSize = (minWidth, maxWidth) => {
 };
 
 const Sizes = {
-  [Breakpoints.SMALL]: checkSize(0, 768),
-  [Breakpoints.MEDIUM]: checkSize(768, 1024),
-  [Breakpoints.LARGE]: checkSize(1024)
+  [Breakpoints.SMALL]: 0,
+  [Breakpoints.MEDIUM]: 768,
+  [Breakpoints.LARGE]: 1024
+};
+
+const SizeBoundaries = {
+  [Breakpoints.SMALL]: checkSize(
+    Sizes[Breakpoints.SMALL],
+    Sizes[Breakpoints.MEDIUM]
+  ),
+  [Breakpoints.MEDIUM]: checkSize(
+    Sizes[Breakpoints.MEDIUM],
+    Sizes[Breakpoints.LARGE]
+  ),
+  [Breakpoints.LARGE]: checkSize(Sizes[Breakpoints.LARGE])
+};
+
+const resolveSize = (size, styles) => {
+  if (styles[size]) {
+    return styles[size];
+  }
+
+  const currentSize = Sizes[size];
+  const closestSize = Object.getOwnPropertySymbols(Sizes)
+    .reverse()
+    .find(bp => Sizes[bp] <= currentSize && styles[bp]);
+
+  return closestSize ? styles[closestSize] : null;
 };
 
 const StyleHOC = (WrappedComponent, Styles) => {
@@ -42,7 +67,7 @@ const StyleHOC = (WrappedComponent, Styles) => {
       );
     }
 
-    handleLayout(event) {
+    handleLayout() {
       const width = Dimensions.get("window").width;
       const style = this.handleResponsiveStyle(width);
 
@@ -53,9 +78,9 @@ const StyleHOC = (WrappedComponent, Styles) => {
     }
 
     handleResponsiveStyle(width) {
-      const breakpointStyles = Object.getOwnPropertySymbols(Sizes)
-        .filter(sz => Sizes[sz](width))
-        .map(sz => Styles.web[sz]);
+      const breakpointStyles = Object.getOwnPropertySymbols(SizeBoundaries)
+        .filter(sz => SizeBoundaries[sz](width))
+        .map(sz => resolveSize(sz, Styles.web));
 
       return Object.assign({}, Styles.default, ...breakpointStyles);
     }
@@ -64,4 +89,4 @@ const StyleHOC = (WrappedComponent, Styles) => {
 
 export default StyleHOC;
 
-export { checkSize, Breakpoints, Sizes };
+export { checkSize, Breakpoints, SizeBoundaries };
