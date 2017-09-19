@@ -1,9 +1,9 @@
 <!--
 Thank you for your PR!
 
-If you changed any code, please provide clear instructions on how you verified your changes work.
+Please provide clear instructions on how you verified your work.
 
-Screenshots are most welcome!
+If there are any visual changes, include screenshots and demo videos (try giphy.com/apps/giphycapture).
 
 :-)
 -->
