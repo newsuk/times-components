@@ -65,7 +65,6 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "create-react-class": "^15.6.0",
     "lodash.pick": "4.4.0",
     "prop-types": "15.5.10",
     "react-native-web": "0.0.119"
