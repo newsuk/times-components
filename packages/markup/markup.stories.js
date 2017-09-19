@@ -32,7 +32,20 @@ const Centered = ({ children }) => (
 storiesOf("Markup", module)
   .addDecorator(story => <Centered>{story()}</Centered>)
   .add("Multiple paragraphs", () => <View>{renderTrees(multiParagraph)}</View>)
-  .add("Mixture of tags", () => renderTree(mixture[0]))
+  .add("Mixture of tags", () =>
+    renderTree(mixture[0], {
+      block(key, attributes, renderedChildren) {
+        return <View key={key}>{renderedChildren}</View>;
+      },
+      link(key, attributes, renderedChildren) {
+        return (
+          <Text key={key} href={attributes.href}>
+            {renderedChildren}
+          </Text>
+        );
+      }
+    })
+  )
   .add("Biography", () => <Text>{renderTrees(bio)}</Text>)
   .add("Multiple children with styling", () => (
     <View>
