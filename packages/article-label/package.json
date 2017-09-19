@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-label",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The article label",
   "main": "article-label.js",
   "scripts": {
@@ -17,7 +17,7 @@
       "node_modules/(?!@times-components)/"
     ],
     "testMatch": [
-      "<rootDir>/packages/article-label/**.test.js"
+      "<rootDir>/packages/article-label/__test__/**.test.js"
     ]
   },
   "repository": {

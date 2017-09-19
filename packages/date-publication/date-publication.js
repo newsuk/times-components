@@ -7,6 +7,7 @@ const styles = {
   default: {
     color: "#696969",
     fontSize: 13,
+    lineHeight: 15,
     fontFamily: "GillSansMTStd-Medium"
   }
 };

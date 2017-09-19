@@ -62,6 +62,7 @@ exports[`renders an article-summary component 1`] = `
           "color": "#696969",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 15,
         },
         Object {},
       ]
@@ -177,6 +178,7 @@ exports[`renders an article-summary component with content 1`] = `
           "color": "#696969",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 15,
         },
         Object {},
       ]
