@@ -14,7 +14,9 @@ const tree = {
   "children": [
     {
       "name": "text",
-      "value": "I am bold"
+      "attributes": {
+        "value": "I am bold"
+      }
       "children": []
     }
   ]
@@ -41,7 +43,9 @@ const tree = {
   "children": [
     {
       "name": "text",
-      "value": "I am fancy"
+      "attributes": {
+        "value": "I am fancy"
+      }
       "children": []
     }
   ]
@@ -81,7 +85,9 @@ const trees = [
     "children": [
       {
         "name": "text",
-        "value": "I am one paragraph"
+        "attributes": {
+          "value": "I am one paragraph"
+        }
         "children": []
       }
     ]
@@ -92,7 +98,9 @@ const trees = [
     "children": [
       {
         "name": "text",
-        "value": "I am another paragraph"
+        "attributes": {
+          "value": "I am another paragraph"
+        }
         "children": []
       }
     ]
