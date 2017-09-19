@@ -17,7 +17,10 @@
   RCTEventDispatcher *_eventDispatcher;
   NSString *_playerStatus;
   NSNumber *_playheadPosition;
+  NSNumber *_duration;
+  NSNumber *_zero;
   NSNumber *_autoplayNumber;
+  Boolean _finished;
   NSNumber *_hideFullScreenButtonNumber;
 }
 
@@ -42,6 +45,8 @@
 - (void)setup {
   _playerStatus = @"paused";
   _playheadPosition = 0;
+  _finished = NO;
+  _zero = [NSNumber numberWithDouble:0];
 
   BCOVPlayerSDKManager *manager = [BCOVPlayerSDKManager sharedManager];
 
@@ -58,6 +63,8 @@
   [self.playbackService findVideoWithVideoID:_videoId parameters:nil completion:^(BCOVVideo *video, NSDictionary *jsonResponse, NSError *error) {
     #pragma unused (jsonResponse)
     if (video) {
+      _duration = [NSNumber numberWithFloat:[video.properties[@"duration"] floatValue] / 1000];
+      
       [self.playbackController setVideos:@[ video ]];
     } else {
       [self emitError:error];
@@ -141,8 +148,12 @@
   if (!self.onChange) {
     return;
   }
-
-  self.onChange(@{@"playerStatus": _playerStatus, @"playheadPosition": _playheadPosition});
+  
+  self.onChange(@{
+    @"playerStatus": _playerStatus,
+    @"playheadPosition": _playheadPosition,
+    @"finished": [NSNumber numberWithBool:_finished]
+  });
 }
 
 - (void)playVideo {
@@ -176,6 +187,10 @@
 
   if ([kBCOVPlaybackSessionLifecycleEventPause isEqualToString:lifecycleEvent.eventType]) {
     _playerStatus = @"paused";
+    
+    if([_playheadPosition isEqualToNumber:_duration]) {
+      _finished = YES;
+    }
 
     [self emitStatus];
   }
@@ -185,14 +200,18 @@
 
   #pragma unused (controller)
   #pragma unused (session)
+  
+  _finished = NO;
 
   NSNumber *progressNumber = [NSNumber numberWithDouble:progress];
-  NSNumber *zero = [NSNumber numberWithDouble:0];
 
-  NSComparisonResult result = [zero compare: progressNumber];
+  NSComparisonResult compareZeroResult = [_zero compare:progressNumber];
+  NSComparisonResult compareDurationResult = [_duration compare:progressNumber];
   
-  if (result == NSOrderedDescending) {
-    _playheadPosition = zero;
+  if (compareZeroResult == NSOrderedDescending) { // result less than zero - default to zero
+    _playheadPosition = _zero;
+  } else if (compareDurationResult == NSOrderedAscending) { // result greater than duration - default to duration
+    _playheadPosition = _duration;
   } else {
     _playheadPosition = progressNumber;
   }
