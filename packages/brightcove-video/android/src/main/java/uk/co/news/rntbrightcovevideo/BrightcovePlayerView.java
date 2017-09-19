@@ -21,7 +21,7 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
     public static final String TAG = BrightcovePlayerView.class.getSimpleName();
 
     private Boolean mAutoplay;
-    private String mPlayerStatus;
+    private String mPlayerStatus = "paused";
     private float mStartPlayheadPosition = 0;
 
     public BrightcovePlayerView(final Context context) {
@@ -42,16 +42,17 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
         });
         eventEmitter.on(EventType.PLAY, onEvent("playing"));
         eventEmitter.on(EventType.PAUSE, onEvent("paused"));
+        eventEmitter.on(EventType.PROGRESS, onEvent("playing"));
         eventEmitter.on(EventType.COMPLETED, new EventListener() {
             @Override
             public void processEvent(Event e) {
-                playerView.bubbleState("paused", ((float) playerView.getDuration() / 1000));
+                playerView.bubbleState("paused", playerView.getDurationSecs());
             }
         });
         eventEmitter.on(EventType.SEEK_TO, new EventListener() {
             @Override
             public void processEvent(Event e) {
-                playerView.bubbleState(playerView.getPlayerStatus(), playerView.getPlayheadPosition() / 1000);
+                playerView.bubbleState(playerView.getPlayerStatus(), playerView.getPlayheadPositionSecs());
             }
         });
         eventEmitter.on(EventType.ERROR, new EventListener() {
@@ -63,7 +64,16 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
         return eventEmitter;
     }
 
+    public float getDurationSecs() {
+        return (float) this.getDuration() / 1000;
+    }
+
+    public float getPlayheadPositionSecs() {
+        return this.getPlayheadPosition() / 1000;
+    }
+
     private void bubbleState(String status, Float headPos) {
+        mPlayerStatus = status;
         ((RNTBrightcoveView) this.getParent()).emitState(status, headPos);
     }
 
@@ -85,7 +95,7 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
         return new EventListener() {
             @Override
             public void processEvent(Event event) {
-                playerView.bubbleState(playerStatus, playerView.getPlayheadPosition() / 1000);
+                playerView.bubbleState(playerStatus, playerView.getPlayheadPositionSecs());
             }
         };
     }
