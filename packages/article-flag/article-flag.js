@@ -36,20 +36,14 @@ const beautifyTitle = title => {
   return title.toUpperCase();
 };
 
-const ArticleFlag = ({ title, color }) => {
-  if (!title) {
-    return null;
-  }
-
-  return (
-    <View style={styles.view}>
-      <View style={styles.diamond}>
-        <Diamond height={7} width={7} color={color} />
-      </View>
-      <Text style={[styles.title, { color }]}>{beautifyTitle(title)}</Text>
+const ArticleFlag = ({ title, color }) => (
+  <View style={styles.view}>
+    <View style={styles.diamond}>
+      <Diamond height={7} width={7} color={color} />
     </View>
-  );
-};
+    <Text style={[styles.title, { color }]}>{beautifyTitle(title)}</Text>
+  </View>
+);
 
 ArticleFlag.propTypes = {
   title: PropTypes.string.isRequired,
