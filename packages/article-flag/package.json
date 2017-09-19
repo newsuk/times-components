@@ -17,7 +17,7 @@
       "node_modules/(?!@times-components)/"
     ],
     "testMatch": [
-      "<rootDir>/packages/article-flag/**.test.js"
+      "<rootDir>/packages/article-flag/__test__/**.test.js"
     ]
   },
   "repository": {
