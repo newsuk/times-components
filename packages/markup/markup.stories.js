@@ -1,12 +1,14 @@
 /* eslint-disable react/no-array-index-key */
-
-import { View, Text } from "react-native";
+import { AdComposer } from "@times-components/ad";
+import { View, Text, Platform } from "react-native";
 import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
 import { renderTree, renderTrees } from "./markup";
 
 const multiParagraph = require("./fixtures/multi-paragraph.json").fixture;
+const multiParagraphWithAds = require("./fixtures/multi-paragraph-with-ads.json")
+  .fixture;
 const mixture = require("./fixtures/tag-mixture.json").fixture;
 const bio = require("./fixtures/bio.json").fixture;
 
@@ -32,6 +34,18 @@ const Centered = ({ children }) => (
 storiesOf("Markup", module)
   .addDecorator(story => <Centered>{story()}</Centered>)
   .add("Multiple paragraphs", () => <View>{renderTrees(multiParagraph)}</View>)
+  .add("Multiple paragraphs with ads", () => {
+    if (Platform.OS === "web") {
+      return (
+        <View>
+          <AdComposer section="article">
+            {renderTrees(multiParagraphWithAds)}
+          </AdComposer>
+        </View>
+      );
+    }
+    return <View>{renderTrees(multiParagraphWithAds)}</View>;
+  })
   .add("Mixture of tags", () =>
     renderTree(mixture[0], {
       block(key, attributes, renderedChildren) {

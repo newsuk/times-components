@@ -1,3 +1,4 @@
+import Ad from "@times-components/ad";
 import React from "react";
 import { Text } from "react-native";
 import renderTreeWithoutDefaults from "./render-tree-without-defaults";
@@ -34,6 +35,9 @@ const defaultRenderers = {
   },
   inline(key, attributes, renderedChildren) {
     return <Text key={key}>{renderedChildren}</Text>;
+  },
+  ad(key) {
+    return <Ad key={key} code="intervention" section="article" />;
   }
 };
 

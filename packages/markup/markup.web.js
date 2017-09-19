@@ -1,3 +1,4 @@
+import Ad from "@times-components/ad";
 import React from "react";
 import renderTreeWithoutDefaults from "./render-tree-without-defaults";
 
@@ -16,6 +17,9 @@ const defaultRenderers = {
   },
   inline(key, attributes, renderedChildren) {
     return <span key={key}>{renderedChildren}</span>;
+  },
+  ad(key) {
+    return <Ad key={key} code="intervention" />;
   }
 };
 
