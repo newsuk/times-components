@@ -15,17 +15,19 @@ it("renders data", () => {
   setMockGraphQLProps({
     data: {
       loading: false,
-      author: example
+      data: {
+        author: example
+      }
     }
   });
 
   const tree = renderer
     .create(
       <AuthorProfileProvider slug="fiona-hamilton">
-        {({ loading, author }) => {
-          expect(loading).toEqual(false);
-          expect(author).toEqual(example);
-          return <Text>{JSON.stringify(author, null, 2)}</Text>;
+        {props => {
+          expect(props.loading).toEqual(false);
+          expect(props.result.author).toEqual(example);
+          return <Text>{JSON.stringify(props, null, 2)}</Text>;
         }}
       </AuthorProfileProvider>
     )

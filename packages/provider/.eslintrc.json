@@ -3,14 +3,7 @@
   "parser": "babel-eslint",
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
-    "import/extensions": "off",
-    "graphql/template-strings": [
-      "error",
-      {
-        "env": "apollo",
-        "schemaJsonFilepath": "./schema.json"
-      }
-    ]
+    "import/extensions": "off"
   },
   "plugins": ["graphql"],
   "settings": {

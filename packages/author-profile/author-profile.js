@@ -1,50 +1,40 @@
 import React from "react";
 import PropTypes from "prop-types";
-import AuthorProfileContent from "./author-profile-content";
-import AuthorProfileEmpty from "./author-profile-empty";
-import AuthorProfileError from "./author-profile-error";
-import AuthorProfileLoading from "./author-profile-loading";
+import { ScrollView, StyleSheet } from "react-native";
+import { withPageState } from "@times-components/pagination";
+import AuthorProfileArticles from "./author-profile-articles";
+import AuthorProfileHeader from "./author-profile-header";
+import AuthorProfilePagination from "./author-profile-pagination";
 
-const AuthorProfile = props => {
-  if (props.isLoading) {
-    return <AuthorProfileLoading />;
+const styles = StyleSheet.create({
+  container: {
+    alignSelf: "center",
+    maxWidth: 800
   }
+});
 
-  if (props.error) {
-    return <AuthorProfileError {...props.error} />;
-  }
-
-  if (!!props.data === true) {
-    const extra = {
-      onNext: props.onNext,
-      onPrev: props.onPrev,
-      page: props.page,
-      pageSize: props.pageSize
-    };
-    return <AuthorProfileContent {...props.data} {...extra} />;
-  }
-
-  return <AuthorProfileEmpty />;
-};
+const AuthorProfile = ({ onNext, onPrev, ...props }) => (
+  <ScrollView containerStyle={styles.container}>
+    <AuthorProfileHeader {...props} />
+    <AuthorProfilePagination {...props} onNext={onNext} onPrev={onPrev} />
+    <AuthorProfileArticles {...props} />
+    <AuthorProfilePagination {...props} onNext={onNext} onPrev={onPrev} />
+  </ScrollView>
+);
 
 AuthorProfile.propTypes = {
-  data: PropTypes.shape(AuthorProfileContent.propTypes),
-  error: PropTypes.shape(),
-  isLoading: PropTypes.bool,
-  onNext: AuthorProfileContent.propTypes.onNext,
-  onPrev: AuthorProfileContent.propTypes.onPrev,
-  page: AuthorProfileContent.propTypes.page,
-  pageSize: AuthorProfileContent.propTypes.pageSize
+  onNext: PropTypes.func,
+  onPrev: PropTypes.func
 };
 
 AuthorProfile.defaultProps = {
-  data: null,
+  result: null,
   error: null,
-  isLoading: true,
+  loading: true,
   onNext: () => {},
   onPrev: () => {},
   page: 1,
   pageSize: 10
 };
 
-export default AuthorProfile;
+export default withPageState(AuthorProfile);

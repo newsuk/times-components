@@ -4,15 +4,15 @@ import { ActivityIndicator, StyleSheet, View } from "react-native";
 const styles = StyleSheet.create({
   container: {
     alignItems: "center",
-    flex: 1,
-    flexBasis: "100%",
-    justifyContent: "center"
+    height: 128,
+    justifyContent: "center",
+    padding: 4
   }
 });
 
 const AuthorProfileLoading = () => (
   <View style={styles.container}>
-    <ActivityIndicator size={"large"} />
+    <ActivityIndicator type="large" />
   </View>
 );
 

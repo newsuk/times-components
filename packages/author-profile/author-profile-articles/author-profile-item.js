@@ -5,8 +5,10 @@ import Card from "@times-components/card";
 
 const styles = StyleSheet.create({
   container: {
-    paddingLeft: 10,
-    paddingRight: 10
+    paddingBottom: 8,
+    paddingTop: 8,
+    paddingLeft: 8,
+    paddingRight: 8
   }
 });
 
