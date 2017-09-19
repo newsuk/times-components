@@ -1,25 +1,30 @@
 import React, { Component } from "react";
-import { View } from "react-native";
+import { View, TouchableWithoutFeedback } from "react-native";
 
 import Player from "./brightcove-player";
 import Splash from "./splash";
-import TapToLaunch from "./tap-to-launch";
 
 class BrightcoveVideo extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      launched: props.autoplay
+      isLaunched: props.autoplay
     };
+
+    this.play = this.play.bind(this);
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    return nextState.isLaunched !== this.state.isLaunched;
   }
 
   play() {
-    if (!this.state.launched) {
-      this.setState({ launched: true });
-    } else if (this.playerRef) {
+    if (this.playerRef) {
       this.playerRef.play();
     }
+
+    this.setState({ isLaunched: true });
   }
 
   pause() {
@@ -29,32 +34,30 @@ class BrightcoveVideo extends Component {
   }
 
   reset() {
-    if (this.state.launched) {
-      this.setState({ launched: false });
-    }
+    this.setState({ isLaunched: false });
   }
 
   render() {
     this.playerRef = null;
 
+    if (this.state.isLaunched) {
+      return (
+        <Player
+          ref={ref => {
+            this.playerRef = ref;
+          }}
+          {...this.props}
+          autoplay
+        />
+      );
+    }
+
     return (
-      <TapToLaunch launched={this.state.launched}>
-        {isLaunched => (
-          <View style={{ width: this.props.width, height: this.props.height }}>
-            {isLaunched ? (
-              <Player
-                ref={ref => {
-                  this.playerRef = ref;
-                }}
-                {...this.props}
-                autoplay
-              />
-            ) : (
-              <Splash {...this.props} />
-            )}
-          </View>
-        )}
-      </TapToLaunch>
+      <TouchableWithoutFeedback onPress={this.play}>
+        <View style={{ width: this.props.width, height: this.props.height }}>
+          <Splash {...this.props} />
+        </View>
+      </TouchableWithoutFeedback>
     );
   }
 }
