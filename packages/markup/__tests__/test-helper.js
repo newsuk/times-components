@@ -79,6 +79,13 @@ export default (
             return (
               <BlockComponent key={key}>{renderedChildren}</BlockComponent>
             );
+          },
+          link(key, attributes, renderedChildren) {
+            return (
+              <TextComponent key={key} href={attributes.href}>
+                {renderedChildren}
+              </TextComponent>
+            );
           }
         })
       )
@@ -87,7 +94,7 @@ export default (
     expect(output).toMatchSnapshot();
   });
 
-  it("renders nested tags", () => {
+  it("renders tags nested within blocks", () => {
     const output = renderer
       .create(
         renderTree(nested[0], {

@@ -6,7 +6,16 @@ exports[`Markup Native does not render an image tag 1`] = `<View />`;
 
 exports[`Markup Native renders a mixture of tags 1`] = `
 <View>
-  <View />
+  <View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="http://www.google.com"
+    >
+      some link here
+    </Text>
+  </View>
   <View>
     <Text
       accessible={true}
@@ -104,7 +113,7 @@ exports[`Markup Native renders multiple paragraphs 1`] = `
 </View>
 `;
 
-exports[`Markup Native renders nested tags 1`] = `
+exports[`Markup Native renders tags nested within blocks 1`] = `
 <View>
   Some text is here 
   <View>
