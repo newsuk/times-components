@@ -41,7 +41,9 @@ class BrightcoveVideo extends Component {
   }
 
   componentWillUnmount() {
-    AppState.removeEventListener("change", this.handleAppStateChange);
+    if (AppState.removeEventListener) {
+      AppState.removeEventListener("change", this.handleAppStateChange);
+    }
   }
 
   onChange(evt) {

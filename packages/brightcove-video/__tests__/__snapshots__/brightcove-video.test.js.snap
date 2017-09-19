@@ -140,3 +140,122 @@ exports[`renders poster with custom play icon if specified 1`] = `
   </View>
 </View>
 `;
+
+exports[`will launch if play is called 1`] = `
+<View
+  accessibilityComponentType={undefined}
+  accessibilityLabel={undefined}
+  accessibilityTraits={undefined}
+  accessible={true}
+  hitSlop={undefined}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": 180,
+      "width": 320,
+    }
+  }
+  testID={undefined}
+>
+  <RNTBrightcove
+    accountId="[ACCOUNT_ID]"
+    autoplay={true}
+    hideFullScreenButton={false}
+    onChange={[Function]}
+    onIOSError={[Function]}
+    onLoadingError={[Function]}
+    policyKey="[POLICY_KEY]"
+    style={
+      Object {
+        "height": 180,
+        "width": 320,
+      }
+    }
+    videoId="[VIDEO_ID]"
+  />
+</View>
+`;
+
+exports[`will reset properly 1`] = `
+<View
+  accessibilityComponentType={undefined}
+  accessibilityLabel={undefined}
+  accessibilityTraits={undefined}
+  accessible={true}
+  hitSlop={undefined}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": 180,
+      "width": 320,
+    }
+  }
+  testID={undefined}
+>
+  <View>
+    <Image
+      source={
+        Object {
+          "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=",
+        }
+      }
+      style={
+        Object {
+          "height": 180,
+          "width": 320,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "height": 180,
+          "justifyContent": "center",
+          "left": 0,
+          "position": "absolute",
+          "top": 0,
+          "width": 320,
+        }
+      }
+    >
+      <View>
+        <svg
+          height={70}
+          style={Object {}}
+          viewBox="0 0 100 100"
+          width={70}
+        >
+          <rect
+            fill="rgba(0,0,0)"
+            fillOpacity="0.4"
+            height="100"
+            stroke="rgb(255,255,255)"
+            strokeWidth="8"
+            style={Object {}}
+            width="100"
+          />
+          <polygon
+            fill="rgb(255,255,255)"
+            points="30,20 70,50 30,80"
+            style={Object {}}
+          />
+        </svg>
+      </View>
+    </View>
+  </View>
+</View>
+`;
