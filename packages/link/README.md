@@ -20,4 +20,4 @@ import Link, { TextLink } from "@times-components/link";
 </TextLink>
 ```
 
-Typically, apps will need use the `onPress` callback to bubble up navigation so that the parent native Activity or UIViewContoller can handle the navigation, rather than multiple Activities or UIViewContollers mistakingly navigating multiple times in native land.
+Typically, apps will need to use the `onPress` callback to bubble up navigation so that the parent native Activity or UIViewContoller can handle the navigation, rather than multiple Activities or UIViewContollers mistakingly navigating multiple times in native land.
