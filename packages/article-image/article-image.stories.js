@@ -12,7 +12,27 @@ const portraitInlineImage = require("./fixtures/portrait-inline-image.json")
   .fixture;
 
 storiesOf("ArticleImage", module)
-  .add("Primary", () => <ArticleImage ast={primaryImage} />)
-  .add("Secondary", () => <ArticleImage ast={secondaryImage} />)
-  .add("Inline (portrait)", () => <ArticleImage ast={portraitInlineImage} />)
-  .add("Inline (landscape)", () => <ArticleImage ast={landscapeInlineImage} />);
+  .add("Primary", () => (
+    <ArticleImage
+      imageOptions={primaryImage.imageOptions}
+      captionOptions={primaryImage.captionOptions}
+    />
+  ))
+  .add("Secondary", () => (
+    <ArticleImage
+      imageOptions={secondaryImage.imageOptions}
+      captionOptions={secondaryImage.captionOptions}
+    />
+  ))
+  .add("Inline (portrait)", () => (
+    <ArticleImage
+      imageOptions={portraitInlineImage.imageOptions}
+      captionOptions={portraitInlineImage.captionOptions}
+    />
+  ))
+  .add("Inline (landscape)", () => (
+    <ArticleImage
+      imageOptions={landscapeInlineImage.imageOptions}
+      captionOptions={landscapeInlineImage.captionOptions}
+    />
+  ));

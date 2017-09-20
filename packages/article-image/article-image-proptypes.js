@@ -1,16 +1,21 @@
 import PropTypes from "prop-types";
 
-const astType = {
-  name: PropTypes.string,
-  attributes: PropTypes.object
-};
-
-astType.children = PropTypes.arrayOf(PropTypes.shape(astType));
-
 export const articleImagePropTypes = {
-  ast: PropTypes.arrayOf(PropTypes.shape(astType)).isRequired
+  imageOptions: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    display: PropTypes.string.isRequired,
+    ratio: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+  }).isRequired,
+  captionOptions: PropTypes.shape({
+    caption: PropTypes.string,
+    credit: PropTypes.string
+  })
 };
 
 export const articleImageDefaultPropTypes = {
-  ast: {}
+  captionOptions: {
+    caption: "",
+    credit: ""
+  }
 };

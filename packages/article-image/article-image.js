@@ -1,6 +1,5 @@
 import React from "react";
 import { View, StyleSheet, Platform } from "react-native";
-import { renderTrees } from "@times-components/markup";
 import Image from "@times-components/image";
 import Caption from "@times-components/caption";
 
@@ -85,37 +84,28 @@ const renderCaption = (display, caption, credits) => {
   );
 };
 
-const ArticleImage = ({ ast }) => (
-  <View>
-    {renderTrees(ast, {
-      image(key, attributes) {
-        const { id, display, caption, credits, ratio, url } = attributes;
+const ArticleImage = ({ imageOptions, captionOptions }) => {
+  const { id, display, ratio, url } = imageOptions;
+  const { caption, credits } = captionOptions;
 
-        if (!id || !display || !ratio || !url) {
-          return null;
-        }
+  const source = {
+    uri: url
+  };
 
-        const source = {
-          uri: url
-        };
-
-        const ratioStyle = getImageRatioBox(ratio);
-        return (
-          <View key={id} style={styles[display]}>
-            <View style={styles[`${display}Image`]}>
-              <View style={ratioStyle.ratioBox}>
-                <View style={ratioStyle.ratioBoxInside}>
-                  <Image source={source} />
-                </View>
-              </View>
-            </View>
-            {renderCaption(display, caption, credits)}
+  const ratioStyle = getImageRatioBox(ratio);
+  return (
+    <View key={id} style={styles[display]}>
+      <View style={styles[`${display}Image`]}>
+        <View style={ratioStyle.ratioBox}>
+          <View style={ratioStyle.ratioBoxInside}>
+            <Image source={source} />
           </View>
-        );
-      }
-    })}
-  </View>
-);
+        </View>
+      </View>
+      {renderCaption(display, caption, credits)}
+    </View>
+  );
+};
 
 ArticleImage.propTypes = articleImagePropTypes;
 ArticleImage.defaultProps = articleImageDefaultPropTypes;
