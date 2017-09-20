@@ -37,6 +37,7 @@ exports[`renders a snapshot 1`] = `
           "paddingTop": 32,
         }
       }
+      testID="author-name"
     >
       
     </Text>
@@ -158,6 +159,7 @@ exports[`renders a snapshot with data 1`] = `
           "paddingTop": 32,
         }
       }
+      testID="author-name"
     >
       Carol Midgley
     </Text>

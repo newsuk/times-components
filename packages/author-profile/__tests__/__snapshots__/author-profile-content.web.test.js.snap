@@ -787,6 +787,7 @@ exports[`renders profile content 1`] = `
                 "paddingTop": 32,
               }
             }
+            testID="author-name"
           >
             Fiona Hamilton
           </Text>
@@ -1002,6 +1003,7 @@ exports[`renders profile content 1`] = `
                   },
                 ]
               }
+              testID="author-pagination"
             >
               <View />
               <View>
@@ -4063,6 +4065,7 @@ exports[`renders profile content component 1`] = `
               "paddingTop": 32,
             }
           }
+          testID="author-name"
         >
           Fiona Hamilton
         </Text>
@@ -4278,6 +4281,7 @@ exports[`renders profile content component 1`] = `
                 },
               ]
             }
+            testID="author-pagination"
           >
             <View />
             <View>
@@ -4316,6 +4320,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-0"
   >
     <View
       style={
@@ -4485,6 +4490,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-1"
   >
     <View
       style={
@@ -4665,6 +4671,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-2"
   >
     <View
       style={
@@ -4845,6 +4852,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-3"
   >
     <View
       style={
@@ -5025,6 +5033,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-4"
   >
     <View
       style={
@@ -5193,6 +5202,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-5"
   >
     <View
       style={
@@ -5373,6 +5383,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-6"
   >
     <View
       style={
@@ -5541,6 +5552,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-7"
   >
     <View
       style={
@@ -5709,6 +5721,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-8"
   >
     <View
       style={
@@ -5877,6 +5890,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-9"
   >
     <View
       style={
@@ -6045,6 +6059,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-10"
   >
     <View
       style={
@@ -6213,6 +6228,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-11"
   >
     <View
       style={
@@ -6381,6 +6397,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-12"
   >
     <View
       style={
@@ -6549,6 +6566,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-13"
   >
     <View
       style={
@@ -6724,6 +6742,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-14"
   >
     <View
       style={
@@ -6892,6 +6911,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-15"
   >
     <View
       style={
@@ -7067,6 +7087,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-16"
   >
     <View
       style={
@@ -7248,6 +7269,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-17"
   >
     <View
       style={
@@ -7494,6 +7516,7 @@ exports[`renders profile header 1`] = `
             "paddingTop": 32,
           }
         }
+        testID="author-name"
       >
         Fiona Hamilton
       </Text>
@@ -7709,6 +7732,7 @@ exports[`renders profile header 1`] = `
               },
             ]
           }
+          testID="author-pagination"
         >
           <View />
           <View>

@@ -42,6 +42,7 @@ exports[`renders data 1`] = `
                 "paddingTop": 32,
               }
             }
+            testID="author-name"
           >
             Fiona Hamilton
           </Text>
@@ -257,6 +258,7 @@ exports[`renders data 1`] = `
                   },
                 ]
               }
+              testID="author-pagination"
             >
               <View />
               <View />
@@ -453,6 +455,7 @@ exports[`renders data from graphql 1`] = `
                 "paddingTop": 32,
               }
             }
+            testID="author-name"
           >
             Fiona Hamilton
           </Text>
@@ -668,6 +671,7 @@ exports[`renders data from graphql 1`] = `
                   },
                 ]
               }
+              testID="author-pagination"
             >
               <View />
               <View />

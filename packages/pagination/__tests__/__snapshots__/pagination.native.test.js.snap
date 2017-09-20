@@ -35,6 +35,7 @@ ShallowWrapper {
                 },
               ]
         }
+        testID="author-pagination"
     >
         <View />
         <View>
@@ -82,6 +83,7 @@ ShallowWrapper {
                         },
                       ]
             }
+            testID="author-pagination"
       >
             <View />
             <View>
@@ -189,6 +191,7 @@ ShallowWrapper {
                                         },
                                       ]
                     }
+                    testID="author-pagination"
           >
                     <View />
                     <View>
@@ -236,6 +239,7 @@ ShallowWrapper {
                                         },
                                       ]
                     }
+                    testID="author-pagination"
           >
                     <View />
                     <View>
@@ -346,6 +350,7 @@ ShallowWrapper {
                 },
               ]
         }
+        testID="author-pagination"
     >
         <View />
         <View>
@@ -426,6 +431,7 @@ ShallowWrapper {
                         },
                       ]
             }
+            testID="author-pagination"
       >
             <View />
             <View>
@@ -566,6 +572,7 @@ ShallowWrapper {
                                         },
                                       ]
                     }
+                    testID="author-pagination"
           >
                     <View />
                     <View>
@@ -646,6 +653,7 @@ ShallowWrapper {
                                         },
                                       ]
                     }
+                    testID="author-pagination"
           >
                     <View />
                     <View>
@@ -756,6 +764,7 @@ ShallowWrapper {
                 },
               ]
         }
+        testID="author-pagination"
     >
         <View>
             <Link
@@ -850,6 +859,7 @@ ShallowWrapper {
                         },
                       ]
             }
+            testID="author-pagination"
       >
             <View>
                   <Link
@@ -1004,6 +1014,7 @@ ShallowWrapper {
                                         },
                                       ]
                     }
+                    testID="author-pagination"
           >
                     <View>
                               <Link
@@ -1098,6 +1109,7 @@ ShallowWrapper {
                                         },
                                       ]
                     }
+                    testID="author-pagination"
           >
                     <View>
                               <Link
@@ -1222,6 +1234,7 @@ ShallowWrapper {
                 },
               ]
         }
+        testID="author-pagination"
     >
         <View>
             <Link
@@ -1302,6 +1315,7 @@ ShallowWrapper {
                         },
                       ]
             }
+            testID="author-pagination"
       >
             <View>
                   <Link
@@ -1442,6 +1456,7 @@ ShallowWrapper {
                                         },
                                       ]
                     }
+                    testID="author-pagination"
           >
                     <View>
                               <Link
@@ -1522,6 +1537,7 @@ ShallowWrapper {
                                         },
                                       ]
                     }
+                    testID="author-pagination"
           >
                     <View>
                               <Link
@@ -1632,6 +1648,7 @@ ShallowWrapper {
                 },
               ]
         }
+        testID="author-pagination"
     >
         <View />
         <View>
@@ -1712,6 +1729,7 @@ ShallowWrapper {
                         },
                       ]
             }
+            testID="author-pagination"
       >
             <View />
             <View>
@@ -1852,6 +1870,7 @@ ShallowWrapper {
                                         },
                                       ]
                     }
+                    testID="author-pagination"
           >
                     <View />
                     <View>
@@ -1932,6 +1951,7 @@ ShallowWrapper {
                                         },
                                       ]
                     }
+                    testID="author-pagination"
           >
                     <View />
                     <View>
