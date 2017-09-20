@@ -1,10 +1,22 @@
 import { Platform } from "react-native";
 
+const lineHeightStyle = Platform.select({
+  ios: {
+    lineHeight: 14
+  },
+  android: {
+    lineHeight: 17
+  },
+  web: {
+    lineHeight: 13
+  }
+});
+
 const styles = {
   byline: {
     fontSize: 13,
-    lineHeight: Platform.OS === "android" ? 17 : 14,
-    fontFamily: "GillSansMTStd-Medium"
+    fontFamily: "GillSansMTStd-Medium",
+    ...lineHeightStyle
   },
   bylineColor: {
     color: "#696969"

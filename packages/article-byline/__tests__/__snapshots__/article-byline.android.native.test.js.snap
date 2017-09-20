@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ArticleByline Native renders correctly with a single author 1`] = `
+exports[`renders correctly with a single author 1`] = `
 <View
   style={
     Array [
@@ -20,13 +20,11 @@ exports[`ArticleByline Native renders correctly with a single author 1`] = `
         Object {
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 17,
         },
         undefined,
         Object {
           "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 14,
         },
       ]
     }
@@ -56,7 +54,7 @@ exports[`ArticleByline Native renders correctly with a single author 1`] = `
 </View>
 `;
 
-exports[`ArticleByline Native renders correctly with a single inline element 1`] = `
+exports[`renders correctly with a single inline element 1`] = `
 <View
   style={
     Array [
@@ -72,12 +70,17 @@ exports[`ArticleByline Native renders correctly with a single inline element 1`]
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 14,
-      }
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 17,
+        },
+        undefined,
+        Object {
+          "color": "#696969",
+        },
+      ]
     }
   >
     <Text
@@ -91,7 +94,7 @@ exports[`ArticleByline Native renders correctly with a single inline element 1`]
 </View>
 `;
 
-exports[`ArticleByline Native renders correctly with an empty AST (empty byline on DB) 1`] = `
+exports[`renders correctly with an empty AST (empty byline on DB) 1`] = `
 <View
   style={
     Array [
@@ -111,45 +114,11 @@ exports[`ArticleByline Native renders correctly with an empty AST (empty byline 
         Object {
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
-          "lineHeight": 14,
+          "lineHeight": 17,
         },
-      ]
-    }
-    url="profile/camilla-long"
-  >
-    Camilla Long
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 14,
-      }
-    }
-  >
-
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    onPress={[Function]}
-    style={
-      Array [
-        Object {
-          "color": "#069",
-          "textDecorationLine": "underline",
-        },
+        undefined,
         Object {
           "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 14,
         },
       ]
     }
@@ -157,20 +126,17 @@ exports[`ArticleByline Native renders correctly with an empty AST (empty byline 
 </View>
 `;
 
-exports[`ArticleByline Native renders correctly with multiple authors separated by spaces 1`] = `
+exports[`renders correctly with multiple authors separated by spaces 1`] = `
 <View
   style={
     Array [
       Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 14,
-      }
-    }
-  >
-
-  </Text>
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
+  }
+>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -180,13 +146,11 @@ exports[`ArticleByline Native renders correctly with multiple authors separated 
         Object {
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 17,
         },
         undefined,
         Object {
           "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 14,
         },
       ]
     }
@@ -217,7 +181,7 @@ exports[`ArticleByline Native renders correctly with multiple authors separated 
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
-
+       
     </Text>
     <Text
       accessibilityRole="link"
@@ -245,7 +209,7 @@ exports[`ArticleByline Native renders correctly with multiple authors separated 
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
-
+       
     </Text>
     <Text
       accessibilityRole="link"
@@ -272,7 +236,7 @@ exports[`ArticleByline Native renders correctly with multiple authors separated 
 </View>
 `;
 
-exports[`ArticleByline Native renders correctly with multiple authors separated by text with commas 1`] = `
+exports[`renders correctly with multiple authors separated by text with commas 1`] = `
 <View
   style={
     Array [
@@ -292,93 +256,97 @@ exports[`ArticleByline Native renders correctly with multiple authors separated 
         Object {
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
-          "lineHeight": 14,
+          "lineHeight": 17,
         },
-      ]
-    }
-    url="profile/camilla-long"
-  >
-    Camilla Long
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 14,
-      }
-    }
-  >
-    ,
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    onPress={[Function]}
-    style={
-      Array [
-        Object {
-          "color": "#069",
-          "textDecorationLine": "underline",
-        },
+        undefined,
         Object {
           "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 14,
         },
       ]
     }
   >
-    Mike Atherton
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 14,
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="/profile/camilla-long"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#069",
+          },
+          undefined,
+        ]
       }
-    }
-  >
-    ,
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    onPress={[Function]}
-    style={
-      Array [
-        Object {
-          "color": "#069",
-          "textDecorationLine": "underline",
-        },
-        Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 14,
-        },
-      ]
-    }
-    url="profile/alexandra-frean"
-  >
-    Alexandra Frean
+    >
+      Camilla Long
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      , 
+    </Text>
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="/profile/mike-atherton"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#069",
+          },
+          undefined,
+        ]
+      }
+    >
+      Mike Atherton
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      , 
+    </Text>
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="/profile/alexandra-frean"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#069",
+          },
+          undefined,
+        ]
+      }
+    >
+      Alexandra Frean
+    </Text>
   </Text>
 </View>
 `;
 
-exports[`ArticleByline Native renders correctly with styles 1`] = `
+exports[`renders correctly with styles 1`] = `
 <View
   style={
     Array [
@@ -398,15 +366,13 @@ exports[`ArticleByline Native renders correctly with styles 1`] = `
         Object {
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 17,
         },
         Object {
           "color": "blue",
         },
         Object {
           "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 14,
         },
       ]
     }
@@ -439,7 +405,7 @@ exports[`ArticleByline Native renders correctly with styles 1`] = `
 </View>
 `;
 
-exports[`ArticleByline Native renders correctly with the author at the end 1`] = `
+exports[`renders correctly with the author at the end 1`] = `
 <View
   style={
     Array [
@@ -455,33 +421,15 @@ exports[`ArticleByline Native renders correctly with the author at the end 1`] =
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 14,
-      }
-    }
-  >
-    RBS Six Nations
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    onPress={[Function]}
-    style={
       Array [
         Object {
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 17,
         },
         undefined,
         Object {
           "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 14,
         },
       ]
     }
@@ -491,7 +439,7 @@ exports[`ArticleByline Native renders correctly with the author at the end 1`] =
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
-      RBS Six Nations
+      RBS Six Nations 
     </Text>
     <Text
       accessibilityRole="link"
@@ -518,7 +466,7 @@ exports[`ArticleByline Native renders correctly with the author at the end 1`] =
 </View>
 `;
 
-exports[`ArticleByline Native renders correctly with the author in the begining 1`] = `
+exports[`renders correctly with the author in the begining 1`] = `
 <View
   style={
     Array [
@@ -538,29 +486,32 @@ exports[`ArticleByline Native renders correctly with the author in the begining 
         Object {
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 17,
         },
         undefined,
         Object {
           "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 14,
         },
       ]
     }
   >
-    Camilla Long
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 14,
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="/profile/camilla-long"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#069",
+          },
+          undefined,
+        ]
       }
     >
       Camilla Long
