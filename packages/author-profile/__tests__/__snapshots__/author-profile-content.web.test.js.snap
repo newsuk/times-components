@@ -839,7 +839,7 @@ exports[`renders profile content 1`] = `
             style={
               Object {
                 "color": "#333",
-                "fontFamily": "TimesDigital-Regular",
+                "fontFamily": "TimesDigitalW04",
                 "fontSize": 15,
                 "lineHeight": 25,
                 "padding": 8,
@@ -1144,7 +1144,7 @@ exports[`renders profile content 1`] = `
                   Object {
                     "color": "#696969",
                     "flexWrap": "wrap",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 14,
                     "lineHeight": 20,
                     "marginBottom": 10,
@@ -1316,7 +1316,7 @@ exports[`renders profile content 1`] = `
                   Object {
                     "color": "#696969",
                     "flexWrap": "wrap",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 14,
                     "lineHeight": 20,
                     "marginBottom": 10,
@@ -1488,7 +1488,7 @@ exports[`renders profile content 1`] = `
                   Object {
                     "color": "#696969",
                     "flexWrap": "wrap",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 14,
                     "lineHeight": 20,
                     "marginBottom": 10,
@@ -1660,7 +1660,7 @@ exports[`renders profile content 1`] = `
                   Object {
                     "color": "#696969",
                     "flexWrap": "wrap",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 14,
                     "lineHeight": 20,
                     "marginBottom": 10,
@@ -1832,7 +1832,7 @@ exports[`renders profile content 1`] = `
                   Object {
                     "color": "#696969",
                     "flexWrap": "wrap",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 14,
                     "lineHeight": 20,
                     "marginBottom": 10,
@@ -1992,7 +1992,7 @@ exports[`renders profile content 1`] = `
                   Object {
                     "color": "#696969",
                     "flexWrap": "wrap",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 14,
                     "lineHeight": 20,
                     "marginBottom": 10,
@@ -2164,7 +2164,7 @@ exports[`renders profile content 1`] = `
                   Object {
                     "color": "#696969",
                     "flexWrap": "wrap",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 14,
                     "lineHeight": 20,
                     "marginBottom": 10,
@@ -2324,7 +2324,7 @@ exports[`renders profile content 1`] = `
                   Object {
                     "color": "#696969",
                     "flexWrap": "wrap",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 14,
                     "lineHeight": 20,
                     "marginBottom": 10,
@@ -2484,7 +2484,7 @@ exports[`renders profile content 1`] = `
                   Object {
                     "color": "#696969",
                     "flexWrap": "wrap",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 14,
                     "lineHeight": 20,
                     "marginBottom": 10,
@@ -2644,7 +2644,7 @@ exports[`renders profile content 1`] = `
                   Object {
                     "color": "#696969",
                     "flexWrap": "wrap",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 14,
                     "lineHeight": 20,
                     "marginBottom": 10,
@@ -2804,7 +2804,7 @@ exports[`renders profile content 1`] = `
                   Object {
                     "color": "#696969",
                     "flexWrap": "wrap",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 14,
                     "lineHeight": 20,
                     "marginBottom": 10,
@@ -2964,7 +2964,7 @@ exports[`renders profile content 1`] = `
                   Object {
                     "color": "#696969",
                     "flexWrap": "wrap",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 14,
                     "lineHeight": 20,
                     "marginBottom": 10,
@@ -3124,7 +3124,7 @@ exports[`renders profile content 1`] = `
                   Object {
                     "color": "#696969",
                     "flexWrap": "wrap",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 14,
                     "lineHeight": 20,
                     "marginBottom": 10,
@@ -3284,7 +3284,7 @@ exports[`renders profile content 1`] = `
                   Object {
                     "color": "#696969",
                     "flexWrap": "wrap",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 14,
                     "lineHeight": 20,
                     "marginBottom": 10,
@@ -3451,7 +3451,7 @@ exports[`renders profile content 1`] = `
                   Object {
                     "color": "#696969",
                     "flexWrap": "wrap",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 14,
                     "lineHeight": 20,
                     "marginBottom": 10,
@@ -3611,7 +3611,7 @@ exports[`renders profile content 1`] = `
                   Object {
                     "color": "#696969",
                     "flexWrap": "wrap",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 14,
                     "lineHeight": 20,
                     "marginBottom": 10,
@@ -3778,7 +3778,7 @@ exports[`renders profile content 1`] = `
                   Object {
                     "color": "#696969",
                     "flexWrap": "wrap",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 14,
                     "lineHeight": 20,
                     "marginBottom": 10,
@@ -3951,7 +3951,7 @@ exports[`renders profile content 1`] = `
                   Object {
                     "color": "#696969",
                     "flexWrap": "wrap",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 14,
                     "lineHeight": 20,
                     "marginBottom": 10,
@@ -4097,7 +4097,7 @@ exports[`renders profile content component 1`] = `
           style={
             Object {
               "color": "#333",
-              "fontFamily": "TimesDigital-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 15,
               "lineHeight": 25,
               "padding": 8,
@@ -4409,7 +4409,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -4588,7 +4588,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -4767,7 +4767,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -4946,7 +4946,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -5125,7 +5125,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -5292,7 +5292,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -5471,7 +5471,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -5638,7 +5638,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -5805,7 +5805,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -5972,7 +5972,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -6139,7 +6139,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -6306,7 +6306,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -6473,7 +6473,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -6640,7 +6640,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -6814,7 +6814,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -6981,7 +6981,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -7155,7 +7155,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -7335,7 +7335,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -7510,7 +7510,7 @@ exports[`renders profile header 1`] = `
         style={
           Object {
             "color": "#333",
-            "fontFamily": "TimesDigital-Regular",
+            "fontFamily": "TimesDigitalW04",
             "fontSize": 15,
             "lineHeight": 25,
             "padding": 8,

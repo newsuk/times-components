@@ -1,8 +1,11 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, View, Platform } from "react-native";
 import PropTypes from "prop-types";
 import Markup, { builder } from "@times-components/markup";
 import DatePublication from "@times-components/date-publication";
+
+const fontFamilyWebAndIos = "TimesDigitalW04";
+const fontFamilyAndroid = "TimesDigitalW04-Regular";
 
 const styles = {
   container: {},
@@ -24,7 +27,8 @@ const styles = {
   text: {
     color: "#696969",
     fontSize: 14,
-    fontFamily: "TimesDigital-Regular",
+    fontFamily:
+      Platform.OS === "android" ? fontFamilyAndroid : fontFamilyWebAndIos,
     lineHeight: 20,
     marginBottom: 10,
     flexWrap: "wrap"

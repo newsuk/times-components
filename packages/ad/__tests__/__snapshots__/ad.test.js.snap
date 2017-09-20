@@ -187,7 +187,7 @@ exports[`Native Ad test renders a native ad slot 1`] = `
             "borderStyle": "solid",
             "borderWidth": 1,
             "color": "#696969",
-            "fontFamily": "TimesDigital-Regular",
+            "fontFamily": "TimesDigitalW04",
             "fontSize": 12,
             "letterSpacing": 1.5,
             "paddingBottom": 5,
