@@ -4,6 +4,7 @@
   "biography": [
     {
       "name": "text",
+      "attributes": {},
       "children": [
         {
           "text": "Lorem "
@@ -26,6 +27,7 @@
     },
     {
       "name": "text",
+      "attributes": {},
       "children": [
         {
           "text": " testbr "
@@ -34,10 +36,12 @@
     },
     {
       "name": "break",
-      "attributes": {}
+      "attributes": {},
+      "children": []
     },
     {
       "name": "text",
+      "attributes": {},
       "children": [
         {
           "text": "More text "

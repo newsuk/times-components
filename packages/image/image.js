@@ -72,6 +72,10 @@ class ImageComponent extends React.Component {
   }
 
   render() {
+    if (!this.props.source && !this.props.source.uri) {
+      return null;
+    }
+
     const props = Object.assign({}, this.props, {
       source: this.state.source,
       style: [
