@@ -1,6 +1,6 @@
-import { Platform } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 
-const lineHeightStyle = Platform.select({
+const customStyle = Platform.select({
   ios: {
     lineHeight: 14
   },
@@ -8,15 +8,16 @@ const lineHeightStyle = Platform.select({
     lineHeight: 17
   },
   web: {
+    whiteSpace: "pre",
     lineHeight: 13
   }
 });
 
-const styles = {
+const styles = StyleSheet.create({
   byline: {
     fontSize: 13,
     fontFamily: "GillSansMTStd-Medium",
-    ...lineHeightStyle
+    ...customStyle
   },
   bylineColor: {
     color: "#696969"
@@ -24,6 +25,6 @@ const styles = {
   container: {
     flexDirection: "row"
   }
-};
+});
 
 export default styles;
