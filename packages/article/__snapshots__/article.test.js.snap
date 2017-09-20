@@ -12,8 +12,10 @@ exports[`Article test renders native correctly 1`] = `
           Array [
             Object {
               "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 10,
+              "fontSize": 12,
               "fontWeight": "400",
+              "letterSpacing": 1.2,
+              "lineHeight": 12,
             },
             Object {
               "color": "#008347",
@@ -21,7 +23,7 @@ exports[`Article test renders native correctly 1`] = `
           ]
         }
       >
-        S W I M M I N G
+        SWIMMING
       </Text>
       <Text
         accessible={true}
@@ -71,8 +73,9 @@ exports[`Article test renders native correctly 1`] = `
             Array [
               Object {
                 "fontFamily": "TimesDigital-RegularSC",
-                "fontSize": 10,
+                "fontSize": 12,
                 "fontWeight": "400",
+                "letterSpacing": 1.4,
               },
               Object {
                 "color": "#E34605",
@@ -80,7 +83,7 @@ exports[`Article test renders native correctly 1`] = `
             ]
           }
         >
-          N E W
+          NEW
         </Text>
       </View>
       <View

@@ -1,6 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly with children 1`] = `
+exports[`Link renders correctly 1`] = `
+<a
+  href="http://thetimes.co.uk"
+  onClick={[Function]}
+/>
+`;
+
+exports[`TextLink renders correctly with children 1`] = `
 <Text
   accessibilityRole="link"
   accessible={true}
@@ -11,7 +18,6 @@ exports[`renders correctly with children 1`] = `
   style={
     Array [
       Object {
-        "color": "#069",
         "textDecorationLine": "underline",
       },
       Object {},
@@ -22,7 +28,7 @@ exports[`renders correctly with children 1`] = `
 </Text>
 `;
 
-exports[`renders correctly with specifc styles 1`] = `
+exports[`TextLink renders correctly with multiple styles 1`] = `
 <Text
   accessibilityRole="link"
   accessible={true}
@@ -33,7 +39,32 @@ exports[`renders correctly with specifc styles 1`] = `
   style={
     Array [
       Object {
-        "color": "#069",
+        "textDecorationLine": "underline",
+      },
+      Object {
+        "backgroundColor": "blue",
+      },
+      Object {
+        "color": "red",
+      },
+    ]
+  }
+>
+  The Times
+</Text>
+`;
+
+exports[`TextLink renders correctly with specific styles 1`] = `
+<Text
+  accessibilityRole="link"
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  href="http://thetimes.co.uk"
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
         "textDecorationLine": "underline",
       },
       Object {

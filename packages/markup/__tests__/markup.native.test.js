@@ -1,6 +1,6 @@
 /* eslint-env jest */
-
+import { Text, View } from "react-native";
 import runTests from "./test-helper";
-import Markup, { builder } from "../markup";
+import { renderTree, renderTrees } from "../markup";
 
-describe("Markup Native", runTests(Markup, builder));
+describe("Markup Native", runTests(renderTree, renderTrees, Text, View));

@@ -1,8 +1,6 @@
 import React from "react";
-import { View, Text } from "react-native";
-import Link from "@times-components/link";
-import Markup, { builder as mb } from "./markup-builder";
-import propTypes from "./markup-proptype";
+import { Text } from "react-native";
+import renderTreeWithoutDefaults from "./render-tree-without-defaults";
 
 const styles = {
   italic: {
@@ -13,81 +11,40 @@ const styles = {
   }
 };
 
-const tagMap = new Map([
-  [
-    "paragraph",
-    {
-      tag: Text,
-      attrs() {}
-    }
-  ],
-  [
-    "link",
-    {
-      tag: Link,
-      attrs({ href }) {
-        return {
-          url: href
-        };
-      }
-    }
-  ],
-  [
-    "bold",
-    {
-      tag: Text,
-      attrs() {
-        return {
-          style: styles.bold
-        };
-      }
-    }
-  ],
-  [
-    "italic",
-    {
-      tag: Text,
-      attrs() {
-        return {
-          style: styles.italic
-        };
-      }
-    }
-  ],
-  [
-    "inline",
-    {
-      tag: Text,
-      attrs() {}
-    }
-  ],
-  [
-    "author",
-    {
-      tag: Link,
-      attrs({ slug }) {
-        return {
-          url: `profile/${slug}`
-        };
-      }
-    }
-  ],
-  [
-    "block",
-    {
-      tag: View,
-      attrs() {},
-      wrapText: Text
-    }
-  ]
-]);
+const defaultRenderers = {
+  paragraph(key, attributes, renderedChildren) {
+    return <Text key={key}>{renderedChildren}</Text>;
+  },
+  text(key, { value }) {
+    return value;
+  },
+  bold(key, attributes, renderedChildren) {
+    return (
+      <Text key={key} style={styles.bold}>
+        {renderedChildren}
+      </Text>
+    );
+  },
+  italic(key, attributes, renderedChildren) {
+    return (
+      <Text key={key} style={styles.italic}>
+        {renderedChildren}
+      </Text>
+    );
+  },
+  inline(key, attributes, renderedChildren) {
+    return <Text key={key}>{renderedChildren}</Text>;
+  }
+};
 
-const MarkupNative = ({ ast, wrapIn }) => (
-  <Markup ast={ast} tagMap={tagMap} wrapIn={wrapIn} />
-);
+export const renderTree = (tree, renderers, key = "") =>
+  renderTreeWithoutDefaults(
+    tree,
+    Object.assign({}, defaultRenderers, renderers),
+    key
+  );
 
-MarkupNative.propTypes = propTypes;
+export const renderTrees = (trees, renderers) =>
+  trees.map((tree, index) => renderTree(tree, renderers, index));
 
-export default MarkupNative;
-
-export const builder = mb(tagMap);
+export { default as treePropType } from "./tree-proptype";

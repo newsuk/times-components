@@ -3,8 +3,8 @@ import { View, StyleSheet, Text } from "react-native";
 import PropTypes from "prop-types";
 
 import Image from "@times-components/image";
-import Markup from "@times-components/markup";
-import Link from "@times-components/link";
+import { TextLink } from "@times-components/link";
+import { renderTrees, treePropType } from "@times-components/markup";
 
 const styles = StyleSheet.create({
   container: {
@@ -74,9 +74,7 @@ const AuthorHead = props => {
           {title.toLowerCase()}
         </Text>
         <TwitterLink handle={twitter} />
-        <Text style={styles.bio}>
-          <Markup ast={bio} wrapIn="paragraph" />
-        </Text>
+        <Text style={styles.bio}>{renderTrees(bio)}</Text>
       </View>
       <View style={styles.photoContainer}>
         <Image source={{ uri }} style={styles.roundImage} />
@@ -97,7 +95,7 @@ AuthorHead.propTypes = {
   name: PropTypes.string,
   title: PropTypes.string,
   uri: PropTypes.string,
-  bio: Markup.propTypes.ast,
+  bio: PropTypes.arrayOf(treePropType),
   twitter: PropTypes.string
 };
 
@@ -108,9 +106,9 @@ const TwitterLink = ({ handle }) => {
   const target = `https://twitter.com/${handle}`;
 
   return (
-    <Link style={styles.twitter} url={target}>
+    <TextLink style={styles.twitter} url={target} onPress={() => {}}>
       @{handle}
-    </Link>
+    </TextLink>
   );
 };
 

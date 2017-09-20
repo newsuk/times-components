@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`Article Label test on web and ios renders ArticleLabel 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
@@ -9,8 +9,10 @@ exports[`renders correctly 1`] = `
     Array [
       Object {
         "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 10,
+        "fontSize": 12,
         "fontWeight": "400",
+        "letterSpacing": 1.2,
+        "lineHeight": 12,
       },
       Object {
         "color": "#008347",
@@ -18,6 +20,6 @@ exports[`renders correctly 1`] = `
     ]
   }
 >
-  S W I M M I N G
+  SWIMMING
 </Text>
 `;
