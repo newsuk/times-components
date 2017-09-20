@@ -3,8 +3,8 @@ import { View, StyleSheet, Text } from "react-native";
 import PropTypes from "prop-types";
 
 import Image from "@times-components/image";
-import Markup from "@times-components/markup";
-import Link from "@times-components/link";
+import { TextLink } from "@times-components/link";
+import { renderTrees, treePropType } from "@times-components/markup";
 
 const styles = StyleSheet.create({
   container: {
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
 });
 
 const AuthorHead = props => {
-  const { name, title, twitter, bio, uri } = props;
+  const { name, title, twitter, bio, uri, onTwitterLinkPress } = props;
 
   return (
     <View style={styles.wrapper} pointerEvents="box-none">
@@ -73,10 +73,8 @@ const AuthorHead = props => {
         <Text accessibilityRole="heading" aria-level="2" style={styles.title}>
           {title.toLowerCase()}
         </Text>
-        <TwitterLink handle={twitter} />
-        <Text style={styles.bio}>
-          <Markup ast={bio} wrapIn="paragraph" />
-        </Text>
+        <TwitterLink handle={twitter} onPress={onTwitterLinkPress} />
+        <Text style={styles.bio}>{renderTrees(bio)}</Text>
       </View>
       <View style={styles.photoContainer}>
         <Image source={{ uri }} style={styles.roundImage} />
@@ -97,25 +95,31 @@ AuthorHead.propTypes = {
   name: PropTypes.string,
   title: PropTypes.string,
   uri: PropTypes.string,
-  bio: Markup.propTypes.ast,
-  twitter: PropTypes.string
+  bio: PropTypes.arrayOf(treePropType),
+  twitter: PropTypes.string,
+  onTwitterLinkPress: PropTypes.func.isRequired
 };
 
-const TwitterLink = ({ handle }) => {
+const TwitterLink = ({ handle, onPress }) => {
   if (!handle) {
     return null;
   }
-  const target = `https://twitter.com/${handle}`;
+  const url = `https://twitter.com/${handle}`;
 
   return (
-    <Link style={styles.twitter} url={target}>
+    <TextLink
+      style={styles.twitter}
+      url={url}
+      onPress={e => onPress(e, { handle, url })}
+    >
       @{handle}
-    </Link>
+    </TextLink>
   );
 };
 
 TwitterLink.propTypes = {
-  handle: AuthorHead.propTypes.twitter
+  handle: AuthorHead.propTypes.twitter,
+  onPress: PropTypes.func.isRequired
 };
 
 TwitterLink.defaultProps = {

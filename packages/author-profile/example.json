@@ -4,6 +4,7 @@
   "biography": [
     {
       "name": "text",
+      "attributes": {},
       "children": [
         {
           "text": "Lorem "
@@ -26,6 +27,7 @@
     },
     {
       "name": "text",
+      "attributes": {},
       "children": [
         {
           "text": " testbr "
@@ -34,10 +36,12 @@
     },
     {
       "name": "break",
-      "attributes": {}
+      "attributes": {},
+      "children": []
     },
     {
       "name": "text",
+      "attributes": {},
       "children": [
         {
           "text": "More text "
@@ -79,9 +83,11 @@
         "content": [
           {
             "name": "paragraph",
+            "attributes": {},
             "children": [
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, "
@@ -90,6 +96,7 @@
               },
               {
                 "name": "italic",
+                "attributes": {},
                 "children": [
                   {
                     "name": "text",
@@ -122,9 +129,11 @@
         "content": [
           {
             "name": "paragraph",
+            "attributes": {},
             "children": [
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, "
@@ -133,6 +142,7 @@
               },
               {
                 "name": "italic",
+                "attributes": {},
                 "children": [
                   {
                     "name": "text",
@@ -165,9 +175,11 @@
         "content": [
           {
             "name": "paragraph",
+            "attributes": {},
             "children": [
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, "
@@ -176,6 +188,7 @@
               },
               {
                 "name": "italic",
+                "attributes": {},
                 "children": [
                   {
                     "name": "text",
@@ -208,9 +221,11 @@
         "content": [
           {
             "name": "paragraph",
+            "attributes": {},
             "children": [
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, "
@@ -219,6 +234,7 @@
               },
               {
                 "name": "italic",
+                "attributes": {},
                 "children": [
                   {
                     "name": "text",
@@ -251,9 +267,11 @@
         "content": [
           {
             "name": "paragraph",
+            "attributes": {},
             "children": [
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": "GAY and lesbian couples and those who have children using IVF treatment or a surrogate make better parents than heterosexual couples, according"
@@ -280,9 +298,11 @@
         "content": [
           {
             "name": "paragraph",
+            "attributes": {},
             "children": [
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, "
@@ -291,6 +311,7 @@
               },
               {
                 "name": "italic",
+                "attributes": {},
                 "children": [
                   {
                     "name": "text",
@@ -323,9 +344,11 @@
         "content": [
           {
             "name": "paragraph",
+            "attributes": {},
             "children": [
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": "A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to"
@@ -352,9 +375,11 @@
         "content": [
           {
             "name": "paragraph",
+            "attributes": {},
             "children": [
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": "A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to"
@@ -381,9 +406,11 @@
         "content": [
           {
             "name": "paragraph",
+            "attributes": {},
             "children": [
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": "A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to"
@@ -410,9 +437,11 @@
         "content": [
           {
             "name": "paragraph",
+            "attributes": {},
             "children": [
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": "A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to"
@@ -439,9 +468,11 @@
         "content": [
           {
             "name": "paragraph",
+            "attributes": {},
             "children": [
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": "A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to"
@@ -468,9 +499,11 @@
         "content": [
           {
             "name": "paragraph",
+            "attributes": {},
             "children": [
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": "A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to"
@@ -497,9 +530,11 @@
         "content": [
           {
             "name": "paragraph",
+            "attributes": {},
             "children": [
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": "Tony Blair’s main contribution to Middle East peace as the Quartet’s special envoy was the idea that prosperity in the Palestinian territories"
@@ -526,9 +561,11 @@
         "content": [
           {
             "name": "paragraph",
+            "attributes": {},
             "children": [
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": "It was a celebration of the life of one of the greatest champions of the arts, a luvvie who was universally loved."
@@ -540,9 +577,11 @@
           },
           {
             "name": "paragraph",
+            "attributes": {},
             "children": [
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": "Dames, lords, actors"
@@ -569,9 +608,11 @@
         "content": [
           {
             "name": "paragraph",
+            "attributes": {},
             "children": [
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": "The funding of British faith schools run by an extreme religious sect is under investigation by the taxman over multi-million pound gift aid"
@@ -598,9 +639,11 @@
         "content": [
           {
             "name": "paragraph",
+            "attributes": {},
             "children": [
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": "A Teach First-style scheme for mental health social workers aimed at recruiting top graduates to the profession is to be launched today."
@@ -612,9 +655,11 @@
           },
           {
             "name": "paragraph",
+            "attributes": {},
             "children": [
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": "The Think"
@@ -641,9 +686,11 @@
         "content": [
           {
             "name": "paragraph",
+            "attributes": {},
             "children": [
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": "Terry Pratchett, who died last week, began his career on the "
@@ -652,6 +699,7 @@
               },
               {
                 "name": "italic",
+                "attributes": {},
                 "children": [
                   {
                     "name": "text",
@@ -666,6 +714,7 @@
               },
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": " in 1965, aged 17, and the paper recalls in a tribute that he wore"
@@ -692,9 +741,11 @@
         "content": [
           {
             "name": "paragraph",
+            "attributes": {},
             "children": [
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": "Is poetry best when written down or is it nobler in the mind? Is it enough to read a great verse off the page, or is it "
@@ -703,6 +754,7 @@
               },
               {
                 "name": "italic",
+                "attributes": {},
                 "children": [
                   {
                     "name": "text",
@@ -717,6 +769,7 @@
               },
               {
                 "name": "text",
+                "attributes": {},
                 "children": [
                   {
                     "text": " to"

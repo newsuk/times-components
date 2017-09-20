@@ -1,15 +1,9 @@
 import PropTypes from "prop-types";
 import { Text, View } from "react-native";
-
-const astType = {
-  name: PropTypes.string,
-  attributes: PropTypes.object
-};
-
-astType.children = PropTypes.arrayOf(PropTypes.shape(astType));
+import { treePropType } from "@times-components/markup";
 
 export const articleBylinePropTypes = {
-  ast: PropTypes.arrayOf(PropTypes.shape(astType)).isRequired,
+  ast: PropTypes.arrayOf(treePropType).isRequired,
   style: PropTypes.shape({
     container: View.propTypes.style,
     byline: Text.propTypes.style,

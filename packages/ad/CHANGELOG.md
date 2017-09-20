@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.2"></a>
+## [0.1.2](https://github.com/newsuk/times-components/compare/@times-components/ad@0.1.0...@times-components/ad@0.1.2) (2017-09-19)
+
+
+### Bug Fixes
+
+* ad-composer children prop-types ([b294a06](https://github.com/newsuk/times-components/commit/b294a06))
+
+
+
+
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/newsuk/times-components/compare/@times-components/ad@0.1.0...@times-components/ad@0.1.1) (2017-09-19)
+
+
+### Bug Fixes
+
+* ad-composer children prop-types ([b294a06](https://github.com/newsuk/times-components/commit/b294a06))
+
+
+
+
 <a name="0.1.0"></a>
 # [0.1.0](https://github.com/newsuk/times-components/compare/@times-components/ad@0.0.8...@times-components/ad@0.1.0) (2017-09-08)
 

@@ -30,7 +30,6 @@
     "android": "react-native run-android",
     "prettier:diff": "prettier --list-different 'packages/**/*.js'",
     "fmt": "prettier --write 'packages/**/*.js'",
-    "lint-staged": "lint-staged",
     "packages:publish": "lerna publish --conventional-commits --yes --concurrency=1 --exact",
     "packages:publish-dry-run": "npm run packages:publish -- --skip-git --skip-npm",
     "update-deps": "lerna bootstrap --hoist --npm-client=yarn --concurrency=1",
@@ -47,18 +46,6 @@
     "write-test-web-components": "npm run compile-fructose-web-components && compile-tests",
     "compile-fructose-web-components": "rnstl --searchDir ./packages --pattern './*/*.fructose.web.js' --outputFile ./.fructose/components.js",
     "fructose-app": "export CWD=$(pwd) && export FRC=$CWD/.fructose && react-native start --projectRoots $CWD,$FRC --resetCache"
-  },
-  "pre-commit": [
-    "precommit-msg",
-    "lint-staged",
-    "test"
-  ],
-  "lint-staged": {
-    "**/*.js": [
-      "eslint --fix",
-      "prettier --write",
-      "git add"
-    ]
   },
   "jest": {
     "preset": "react-native",
@@ -125,7 +112,6 @@
     "jest": "20.0.4",
     "lcov-result-merger": "1.2.0",
     "lerna": "2.0.0",
-    "lint-staged": "4.0.0",
     "node-fetch": "1.7.2",
     "offline-plugin":"4.8.3",
     "portscanner":"2.1.1",

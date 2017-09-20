@@ -21,7 +21,8 @@ const props = {
     page: 1,
     pageSize: 10
   }),
-  isLoading: false
+  isLoading: false,
+  onTwitterLinkPress: () => {}
 };
 
 export default AuthorProfileContent => {
@@ -72,7 +73,9 @@ export default AuthorProfileContent => {
   });
 
   it("renders profile header", () => {
-    const component = renderer.create(<AuthorProfileHeader {...props.data} />);
+    const component = renderer.create(
+      <AuthorProfileHeader onTwitterLinkPress={() => {}} {...props.data} />
+    );
 
     expect(component).toMatchSnapshot();
   });
@@ -84,7 +87,9 @@ export default AuthorProfileContent => {
   });
 
   it("renders profile content component", () => {
-    const component = renderer.create(<AuthorProfileContent {...props.data} />);
+    const component = renderer.create(
+      <AuthorProfileContent onTwitterLinkPress={() => {}} {...props.data} />
+    );
 
     expect(component).toMatchSnapshot();
   });

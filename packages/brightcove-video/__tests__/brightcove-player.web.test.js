@@ -164,7 +164,7 @@ describe("brightcove-video web component", () => {
       </View>
     );
 
-    expect(initVideoSpy.mock.calls.length).toBe(2);
+    expect(initVideoSpy.mock.calls).toHaveLength(2);
     expect(window.bc.mock.calls).toHaveLength(2);
     expect(window.videojs.mock.calls).toHaveLength(2);
 

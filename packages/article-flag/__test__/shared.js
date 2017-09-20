@@ -2,17 +2,19 @@
 
 import "react-native";
 import React from "react";
+// eslint-disable-next-line import/no-extraneous-dependencies
 import renderer from "react-test-renderer";
+
 import ArticleFlag, {
   NewArticleFlag,
   UpdatedArticleFlag,
   ExclusiveArticleFlag,
   SponsoredArticleFlag
-} from "./article-flag";
+} from "../article-flag";
 
-describe("Article Flag", () => {
+module.exports = () => {
   it("renders correctly", () => {
-    const tree = renderer.create(<ArticleFlag />).toJSON();
+    const tree = renderer.create(<ArticleFlag title="articleFlag" />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
@@ -35,4 +37,4 @@ describe("Article Flag", () => {
     const tree = renderer.create(<SponsoredArticleFlag />).toJSON();
     expect(tree).toMatchSnapshot();
   });
-});
+};

@@ -3,6 +3,7 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
+import ArticleByline from "../article-byline";
 
 const authorsAST = require("../fixtures/authors.json");
 
@@ -16,7 +17,7 @@ const bylineStyles = {
   }
 };
 
-export default ArticleByline => () => {
+module.exports = () => {
   it("renders correctly with a single author", () => {
     const tree = renderer
       .create(<ArticleByline ast={authorsAST.singleAuthor} />)

@@ -1,19 +1,8 @@
 import PropTypes from "prop-types";
-import { Text } from "react-native";
 
 const propTypes = {
-  style: Text.propTypes.style,
   url: PropTypes.string.isRequired,
-  children: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.element,
-    PropTypes.arrayOf(PropTypes.string),
-    PropTypes.arrayOf(PropTypes.element)
-  ]).isRequired
+  onPress: PropTypes.func.isRequired
 };
 
-const defaultProps = {
-  style: {}
-};
-
-export { defaultProps, propTypes };
+export default propTypes;

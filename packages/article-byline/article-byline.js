@@ -1,8 +1,8 @@
 /* eslint-disable react/no-array-index-key */
 import React from "react";
-import { View } from "react-native";
-import Link from "@times-components/link";
-import { builder } from "@times-components/markup";
+import { View, Text, StyleSheet } from "react-native";
+import { TextLink } from "@times-components/link";
+import { renderTrees } from "@times-components/markup";
 import styles from "./article-byline-styles";
 
 import {
@@ -10,22 +10,31 @@ import {
   articleBylineDefaultPropTypes
 } from "./article-byline-proptypes";
 
+const linkStyles = StyleSheet.create({
+  link: {
+    color: "#069"
+  }
+});
+
 const ArticleByline = ({ ast, style }) => (
   <View style={[styles.container, style.container]}>
-    {builder({ ast }).map((el, i) => {
-      const customElementStyle = {
-        ...el.props.style, // Element styles
-        ...styles.byline, // base byline component styles
-        ...(style.byline && el.type !== Link ? style.byline : {}), // Custom text styles
-        ...(style.link && el.type === Link ? style.link : {}), // Custom Link styles
-        ...(el.type !== Link ? styles.bylineColor : {}) // Default byline text color
-      };
-
-      return React.cloneElement(el, {
-        key: i,
-        style: customElementStyle
-      });
-    })}
+    <Text style={[styles.byline, style.byline, styles.bylineColor]}>
+      {renderTrees(ast, {
+        author(key, attributes, children) {
+          const url = `/profile/${attributes.slug}`;
+          return (
+            <TextLink
+              style={[linkStyles.link, style.link]}
+              key={key}
+              url={url}
+              onPress={() => {}}
+            >
+              {children}
+            </TextLink>
+          );
+        }
+      })}
+    </Text>
   </View>
 );
 

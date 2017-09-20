@@ -1,74 +1,32 @@
 import React from "react";
-import Link from "@times-components/link";
-import Markup, { builder as mb } from "./markup-builder";
-import propTypes from "./markup-proptype";
+import renderTreeWithoutDefaults from "./render-tree-without-defaults";
 
-const tagMap = new Map([
-  [
-    "paragraph",
-    {
-      tag: "p",
-      attrs() {}
-    }
-  ],
-  [
-    "link",
-    {
-      tag: Link,
-      attrs({ href }) {
-        return {
-          url: href
-        };
-      }
-    }
-  ],
-  [
-    "bold",
-    {
-      tag: "strong",
-      attrs() {}
-    }
-  ],
-  [
-    "italic",
-    {
-      tag: "em",
-      attrs() {}
-    }
-  ],
-  [
-    "inline",
-    {
-      tag: "span",
-      attrs() {}
-    }
-  ],
-  [
-    "author",
-    {
-      tag: Link,
-      attrs({ slug }) {
-        return {
-          url: `/profile/${slug}`
-        };
-      }
-    }
-  ],
-  [
-    "block",
-    {
-      tag: "div",
-      attrs() {}
-    }
-  ]
-]);
+const defaultRenderers = {
+  paragraph(key, attributes, renderedChildren) {
+    return <p key={key}>{renderedChildren}</p>;
+  },
+  text(key, { value }) {
+    return value;
+  },
+  bold(key, attributes, renderedChildren) {
+    return <strong key={key}>{renderedChildren}</strong>;
+  },
+  italic(key, attributes, renderedChildren) {
+    return <em key={key}>{renderedChildren}</em>;
+  },
+  inline(key, attributes, renderedChildren) {
+    return <span key={key}>{renderedChildren}</span>;
+  }
+};
 
-const MarkupWeb = ({ ast, wrapIn }) => (
-  <Markup ast={ast} tagMap={tagMap} wrapIn={wrapIn} />
-);
+export const renderTree = (tree, renderers, key = "") =>
+  renderTreeWithoutDefaults(
+    tree,
+    Object.assign({}, defaultRenderers, renderers),
+    key
+  );
 
-MarkupWeb.propTypes = propTypes;
+export const renderTrees = (trees, renderers) =>
+  trees.map((tree, index) => renderTree(tree, renderers, index));
 
-export default MarkupWeb;
-
-export const builder = mb(tagMap);
+export { default as treePropType } from "./tree-proptype";

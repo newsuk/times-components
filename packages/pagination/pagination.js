@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import PropTypes from "prop-types";
-import Link from "@times-components/link";
+import { TextLink } from "@times-components/link";
 import withPageState from "./pagination-wrapper";
 
 const styles = StyleSheet.create({
@@ -105,24 +105,24 @@ class Pagination extends React.Component {
 
     const prevComponent =
       startResult > pageSize ? (
-        <Link
+        <TextLink
           style={styles.arrow}
           onPress={(...params) => onPrev(page - 1, ...params)}
           url={generatePageLink(page - 1)}
         >
           {"< Previous page"}
-        </Link>
+        </TextLink>
       ) : null;
 
     const nextComponent =
       finalResult < count ? (
-        <Link
+        <TextLink
           style={styles.arrow}
           onPress={(...params) => onNext(page + 1, ...params)}
           url={generatePageLink(page + 1)}
         >
           {"Next page >"}
-        </Link>
+        </TextLink>
       ) : null;
 
     const messageComponent = !hideResults ? (

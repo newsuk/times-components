@@ -39,7 +39,7 @@ ShallowWrapper {
     >
         <View />
         <View>
-            <Link
+            <TextLink
                 onPress={[Function]}
                 style={
                     Object {
@@ -51,7 +51,7 @@ ShallowWrapper {
                 url="./2"
             >
                 Next page &gt;
-            </Link>
+            </TextLink>
         </View>
     </View>
 </View>,
@@ -87,7 +87,7 @@ ShallowWrapper {
       >
             <View />
             <View>
-                  <Link
+                  <TextLink
                         onPress={[Function]}
                         style={
                               Object {
@@ -99,7 +99,7 @@ ShallowWrapper {
                         url="./2"
                   >
                         Next page &gt;
-                  </Link>
+                  </TextLink>
             </View>
       </View>
 </View>,
@@ -195,7 +195,7 @@ ShallowWrapper {
           >
                     <View />
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -207,7 +207,7 @@ ShallowWrapper {
                                         url="./2"
                               >
                                         Next page &gt;
-                              </Link>
+                              </TextLink>
                     </View>
           </View>
 </View>,
@@ -243,7 +243,7 @@ ShallowWrapper {
           >
                     <View />
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -255,7 +255,7 @@ ShallowWrapper {
                                         url="./2"
                               >
                                         Next page &gt;
-                              </Link>
+                              </TextLink>
                     </View>
           </View>
 </View>,
@@ -354,7 +354,7 @@ ShallowWrapper {
     >
         <View />
         <View>
-            <Link
+            <TextLink
                 onPress={[Function]}
                 style={
                     Object {
@@ -366,7 +366,7 @@ ShallowWrapper {
                 url="./2"
             >
                 Next page &gt;
-            </Link>
+            </TextLink>
         </View>
     </View>
 </View>,
@@ -435,7 +435,7 @@ ShallowWrapper {
       >
             <View />
             <View>
-                  <Link
+                  <TextLink
                         onPress={[Function]}
                         style={
                               Object {
@@ -447,7 +447,7 @@ ShallowWrapper {
                         url="./2"
                   >
                         Next page &gt;
-                  </Link>
+                  </TextLink>
             </View>
       </View>
 </View>,
@@ -576,7 +576,7 @@ ShallowWrapper {
           >
                     <View />
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -588,7 +588,7 @@ ShallowWrapper {
                                         url="./2"
                               >
                                         Next page &gt;
-                              </Link>
+                              </TextLink>
                     </View>
           </View>
 </View>,
@@ -657,7 +657,7 @@ ShallowWrapper {
           >
                     <View />
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -669,7 +669,7 @@ ShallowWrapper {
                                         url="./2"
                               >
                                         Next page &gt;
-                              </Link>
+                              </TextLink>
                     </View>
           </View>
 </View>,
@@ -767,7 +767,7 @@ ShallowWrapper {
         testID="author-pagination"
     >
         <View>
-            <Link
+            <TextLink
                 onPress={[Function]}
                 style={
                     Object {
@@ -779,10 +779,10 @@ ShallowWrapper {
                 url="./1"
             >
                 &lt; Previous page
-            </Link>
+            </TextLink>
         </View>
         <View>
-            <Link
+            <TextLink
                 onPress={[Function]}
                 style={
                     Object {
@@ -794,7 +794,7 @@ ShallowWrapper {
                 url="./3"
             >
                 Next page &gt;
-            </Link>
+            </TextLink>
         </View>
     </View>
 </View>,
@@ -862,7 +862,7 @@ ShallowWrapper {
             testID="author-pagination"
       >
             <View>
-                  <Link
+                  <TextLink
                         onPress={[Function]}
                         style={
                               Object {
@@ -874,10 +874,10 @@ ShallowWrapper {
                         url="./1"
                   >
                         &lt; Previous page
-                  </Link>
+                  </TextLink>
             </View>
             <View>
-                  <Link
+                  <TextLink
                         onPress={[Function]}
                         style={
                               Object {
@@ -889,7 +889,7 @@ ShallowWrapper {
                         url="./3"
                   >
                         Next page &gt;
-                  </Link>
+                  </TextLink>
             </View>
       </View>
 </View>,
@@ -1017,7 +1017,7 @@ ShallowWrapper {
                     testID="author-pagination"
           >
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -1029,10 +1029,10 @@ ShallowWrapper {
                                         url="./1"
                               >
                                         &lt; Previous page
-                              </Link>
+                              </TextLink>
                     </View>
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -1044,7 +1044,7 @@ ShallowWrapper {
                                         url="./3"
                               >
                                         Next page &gt;
-                              </Link>
+                              </TextLink>
                     </View>
           </View>
 </View>,
@@ -1112,7 +1112,7 @@ ShallowWrapper {
                     testID="author-pagination"
           >
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -1124,10 +1124,10 @@ ShallowWrapper {
                                         url="./1"
                               >
                                         &lt; Previous page
-                              </Link>
+                              </TextLink>
                     </View>
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -1139,7 +1139,7 @@ ShallowWrapper {
                                         url="./3"
                               >
                                         Next page &gt;
-                              </Link>
+                              </TextLink>
                     </View>
           </View>
 </View>,
@@ -1237,7 +1237,7 @@ ShallowWrapper {
         testID="author-pagination"
     >
         <View>
-            <Link
+            <TextLink
                 onPress={[Function]}
                 style={
                     Object {
@@ -1249,7 +1249,7 @@ ShallowWrapper {
                 url="./2"
             >
                 &lt; Previous page
-            </Link>
+            </TextLink>
         </View>
         <View />
     </View>
@@ -1318,7 +1318,7 @@ ShallowWrapper {
             testID="author-pagination"
       >
             <View>
-                  <Link
+                  <TextLink
                         onPress={[Function]}
                         style={
                               Object {
@@ -1330,7 +1330,7 @@ ShallowWrapper {
                         url="./2"
                   >
                         &lt; Previous page
-                  </Link>
+                  </TextLink>
             </View>
             <View />
       </View>
@@ -1459,7 +1459,7 @@ ShallowWrapper {
                     testID="author-pagination"
           >
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -1471,7 +1471,7 @@ ShallowWrapper {
                                         url="./2"
                               >
                                         &lt; Previous page
-                              </Link>
+                              </TextLink>
                     </View>
                     <View />
           </View>
@@ -1540,7 +1540,7 @@ ShallowWrapper {
                     testID="author-pagination"
           >
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -1552,7 +1552,7 @@ ShallowWrapper {
                                         url="./2"
                               >
                                         &lt; Previous page
-                              </Link>
+                              </TextLink>
                     </View>
                     <View />
           </View>
@@ -1652,7 +1652,7 @@ ShallowWrapper {
     >
         <View />
         <View>
-            <Link
+            <TextLink
                 onPress={[Function]}
                 style={
                     Object {
@@ -1664,7 +1664,7 @@ ShallowWrapper {
                 url="./2"
             >
                 Next page &gt;
-            </Link>
+            </TextLink>
         </View>
     </View>
 </View>,
@@ -1733,7 +1733,7 @@ ShallowWrapper {
       >
             <View />
             <View>
-                  <Link
+                  <TextLink
                         onPress={[Function]}
                         style={
                               Object {
@@ -1745,7 +1745,7 @@ ShallowWrapper {
                         url="./2"
                   >
                         Next page &gt;
-                  </Link>
+                  </TextLink>
             </View>
       </View>
 </View>,
@@ -1874,7 +1874,7 @@ ShallowWrapper {
           >
                     <View />
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -1886,7 +1886,7 @@ ShallowWrapper {
                                         url="./2"
                               >
                                         Next page &gt;
-                              </Link>
+                              </TextLink>
                     </View>
           </View>
 </View>,
@@ -1955,7 +1955,7 @@ ShallowWrapper {
           >
                     <View />
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -1967,7 +1967,7 @@ ShallowWrapper {
                                         url="./2"
                               >
                                         Next page &gt;
-                              </Link>
+                              </TextLink>
                     </View>
           </View>
 </View>,

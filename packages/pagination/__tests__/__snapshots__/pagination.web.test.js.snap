@@ -10,52 +10,52 @@ ShallowWrapper {
   "length": 1,
   "node": <View
     onLayout={[Function]}
-    style={67}
+    style={68}
 >
     <View
         style={
             Array [
-                68,
-                66,
+                69,
+                67,
               ]
         }
         testID="author-pagination"
     >
         <View />
         <View>
-            <Link
+            <TextLink
                 onPress={[Function]}
-                style={65}
+                style={66}
                 url="./2"
             >
                 Next page &gt;
-            </Link>
+            </TextLink>
         </View>
     </View>
 </View>,
   "nodes": Array [
     <View
       onLayout={[Function]}
-      style={67}
+      style={68}
 >
       <View
             style={
                   Array [
-                        68,
-                        66,
+                        69,
+                        67,
                       ]
             }
             testID="author-pagination"
       >
             <View />
             <View>
-                  <Link
+                  <TextLink
                         onPress={[Function]}
-                        style={65}
+                        style={66}
                         url="./2"
                   >
                         Next page &gt;
-                  </Link>
+                  </TextLink>
             </View>
       </View>
 </View>,
@@ -122,52 +122,52 @@ ShallowWrapper {
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <View
           onLayout={[Function]}
-          style={67}
+          style={68}
 >
           <View
                     style={
                               Array [
-                                        68,
-                                        66,
+                                        69,
+                                        67,
                                       ]
                     }
                     testID="author-pagination"
           >
                     <View />
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
-                                        style={65}
+                                        style={66}
                                         url="./2"
                               >
                                         Next page &gt;
-                              </Link>
+                              </TextLink>
                     </View>
           </View>
 </View>,
         "_debugID": 4,
         "_renderedOutput": <View
           onLayout={[Function]}
-          style={67}
+          style={68}
 >
           <View
                     style={
                               Array [
-                                        68,
-                                        66,
+                                        69,
+                                        67,
                                       ]
                     }
                     testID="author-pagination"
           >
                     <View />
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
-                                        style={65}
+                                        style={66}
                                         url="./2"
                               >
                                         Next page &gt;
-                              </Link>
+                              </TextLink>
                     </View>
           </View>
 </View>,
@@ -204,13 +204,13 @@ ShallowWrapper {
   "length": 1,
   "node": <View
     onLayout={[Function]}
-    style={67}
+    style={68}
 >
     <View
         style={
             Array [
-                68,
-                70,
+                69,
+                71,
                 null,
               ]
         }
@@ -218,7 +218,7 @@ ShallowWrapper {
         <Text
             style={
                 Array [
-                    69,
+                    70,
                   ]
             }
         >
@@ -228,34 +228,34 @@ ShallowWrapper {
     <View
         style={
             Array [
-                68,
-                66,
+                69,
+                67,
               ]
         }
         testID="author-pagination"
     >
         <View />
         <View>
-            <Link
+            <TextLink
                 onPress={[Function]}
-                style={65}
+                style={66}
                 url="./2"
             >
                 Next page &gt;
-            </Link>
+            </TextLink>
         </View>
     </View>
 </View>,
   "nodes": Array [
     <View
       onLayout={[Function]}
-      style={67}
+      style={68}
 >
       <View
             style={
                   Array [
-                        68,
-                        70,
+                        69,
+                        71,
                         null,
                       ]
             }
@@ -263,7 +263,7 @@ ShallowWrapper {
             <Text
                   style={
                         Array [
-                              69,
+                              70,
                             ]
                   }
             >
@@ -273,21 +273,21 @@ ShallowWrapper {
       <View
             style={
                   Array [
-                        68,
-                        66,
+                        69,
+                        67,
                       ]
             }
             testID="author-pagination"
       >
             <View />
             <View>
-                  <Link
+                  <TextLink
                         onPress={[Function]}
-                        style={65}
+                        style={66}
                         url="./2"
                   >
                         Next page &gt;
-                  </Link>
+                  </TextLink>
             </View>
       </View>
 </View>,
@@ -354,13 +354,13 @@ ShallowWrapper {
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <View
           onLayout={[Function]}
-          style={67}
+          style={68}
 >
           <View
                     style={
                               Array [
-                                        68,
-                                        70,
+                                        69,
+                                        71,
                                         null,
                                       ]
                     }
@@ -368,7 +368,7 @@ ShallowWrapper {
                     <Text
                               style={
                                         Array [
-                                                  69,
+                                                  70,
                                                 ]
                               }
                     >
@@ -378,34 +378,34 @@ ShallowWrapper {
           <View
                     style={
                               Array [
-                                        68,
-                                        66,
+                                        69,
+                                        67,
                                       ]
                     }
                     testID="author-pagination"
           >
                     <View />
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
-                                        style={65}
+                                        style={66}
                                         url="./2"
                               >
                                         Next page &gt;
-                              </Link>
+                              </TextLink>
                     </View>
           </View>
 </View>,
         "_debugID": 2,
         "_renderedOutput": <View
           onLayout={[Function]}
-          style={67}
+          style={68}
 >
           <View
                     style={
                               Array [
-                                        68,
-                                        70,
+                                        69,
+                                        71,
                                         null,
                                       ]
                     }
@@ -413,7 +413,7 @@ ShallowWrapper {
                     <Text
                               style={
                                         Array [
-                                                  69,
+                                                  70,
                                                 ]
                               }
                     >
@@ -423,21 +423,21 @@ ShallowWrapper {
           <View
                     style={
                               Array [
-                                        68,
-                                        66,
+                                        69,
+                                        67,
                                       ]
                     }
                     testID="author-pagination"
           >
                     <View />
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
-                                        style={65}
+                                        style={66}
                                         url="./2"
                               >
                                         Next page &gt;
-                              </Link>
+                              </TextLink>
                     </View>
           </View>
 </View>,
@@ -474,13 +474,13 @@ ShallowWrapper {
   "length": 1,
   "node": <View
     onLayout={[Function]}
-    style={67}
+    style={68}
 >
     <View
         style={
             Array [
-                68,
-                70,
+                69,
+                71,
                 null,
               ]
         }
@@ -488,7 +488,7 @@ ShallowWrapper {
         <Text
             style={
                 Array [
-                    69,
+                    70,
                   ]
             }
         >
@@ -498,42 +498,42 @@ ShallowWrapper {
     <View
         style={
             Array [
-                68,
-                66,
+                69,
+                67,
               ]
         }
         testID="author-pagination"
     >
         <View>
-            <Link
+            <TextLink
                 onPress={[Function]}
-                style={65}
+                style={66}
                 url="./1"
             >
                 &lt; Previous page
-            </Link>
+            </TextLink>
         </View>
         <View>
-            <Link
+            <TextLink
                 onPress={[Function]}
-                style={65}
+                style={66}
                 url="./3"
             >
                 Next page &gt;
-            </Link>
+            </TextLink>
         </View>
     </View>
 </View>,
   "nodes": Array [
     <View
       onLayout={[Function]}
-      style={67}
+      style={68}
 >
       <View
             style={
                   Array [
-                        68,
-                        70,
+                        69,
+                        71,
                         null,
                       ]
             }
@@ -541,7 +541,7 @@ ShallowWrapper {
             <Text
                   style={
                         Array [
-                              69,
+                              70,
                             ]
                   }
             >
@@ -551,29 +551,29 @@ ShallowWrapper {
       <View
             style={
                   Array [
-                        68,
-                        66,
+                        69,
+                        67,
                       ]
             }
             testID="author-pagination"
       >
             <View>
-                  <Link
+                  <TextLink
                         onPress={[Function]}
-                        style={65}
+                        style={66}
                         url="./1"
                   >
                         &lt; Previous page
-                  </Link>
+                  </TextLink>
             </View>
             <View>
-                  <Link
+                  <TextLink
                         onPress={[Function]}
-                        style={65}
+                        style={66}
                         url="./3"
                   >
                         Next page &gt;
-                  </Link>
+                  </TextLink>
             </View>
       </View>
 </View>,
@@ -640,13 +640,13 @@ ShallowWrapper {
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <View
           onLayout={[Function]}
-          style={67}
+          style={68}
 >
           <View
                     style={
                               Array [
-                                        68,
-                                        70,
+                                        69,
+                                        71,
                                         null,
                                       ]
                     }
@@ -654,7 +654,7 @@ ShallowWrapper {
                     <Text
                               style={
                                         Array [
-                                                  69,
+                                                  70,
                                                 ]
                               }
                     >
@@ -664,42 +664,42 @@ ShallowWrapper {
           <View
                     style={
                               Array [
-                                        68,
-                                        66,
+                                        69,
+                                        67,
                                       ]
                     }
                     testID="author-pagination"
           >
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
-                                        style={65}
+                                        style={66}
                                         url="./1"
                               >
                                         &lt; Previous page
-                              </Link>
+                              </TextLink>
                     </View>
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
-                                        style={65}
+                                        style={66}
                                         url="./3"
                               >
                                         Next page &gt;
-                              </Link>
+                              </TextLink>
                     </View>
           </View>
 </View>,
         "_debugID": 8,
         "_renderedOutput": <View
           onLayout={[Function]}
-          style={67}
+          style={68}
 >
           <View
                     style={
                               Array [
-                                        68,
-                                        70,
+                                        69,
+                                        71,
                                         null,
                                       ]
                     }
@@ -707,7 +707,7 @@ ShallowWrapper {
                     <Text
                               style={
                                         Array [
-                                                  69,
+                                                  70,
                                                 ]
                               }
                     >
@@ -717,29 +717,29 @@ ShallowWrapper {
           <View
                     style={
                               Array [
-                                        68,
-                                        66,
+                                        69,
+                                        67,
                                       ]
                     }
                     testID="author-pagination"
           >
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
-                                        style={65}
+                                        style={66}
                                         url="./1"
                               >
                                         &lt; Previous page
-                              </Link>
+                              </TextLink>
                     </View>
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
-                                        style={65}
+                                        style={66}
                                         url="./3"
                               >
                                         Next page &gt;
-                              </Link>
+                              </TextLink>
                     </View>
           </View>
 </View>,
@@ -776,13 +776,13 @@ ShallowWrapper {
   "length": 1,
   "node": <View
     onLayout={[Function]}
-    style={67}
+    style={68}
 >
     <View
         style={
             Array [
-                68,
-                70,
+                69,
+                71,
                 null,
               ]
         }
@@ -790,7 +790,7 @@ ShallowWrapper {
         <Text
             style={
                 Array [
-                    69,
+                    70,
                   ]
             }
         >
@@ -800,20 +800,20 @@ ShallowWrapper {
     <View
         style={
             Array [
-                68,
-                66,
+                69,
+                67,
               ]
         }
         testID="author-pagination"
     >
         <View>
-            <Link
+            <TextLink
                 onPress={[Function]}
-                style={65}
+                style={66}
                 url="./2"
             >
                 &lt; Previous page
-            </Link>
+            </TextLink>
         </View>
         <View />
     </View>
@@ -821,13 +821,13 @@ ShallowWrapper {
   "nodes": Array [
     <View
       onLayout={[Function]}
-      style={67}
+      style={68}
 >
       <View
             style={
                   Array [
-                        68,
-                        70,
+                        69,
+                        71,
                         null,
                       ]
             }
@@ -835,7 +835,7 @@ ShallowWrapper {
             <Text
                   style={
                         Array [
-                              69,
+                              70,
                             ]
                   }
             >
@@ -845,20 +845,20 @@ ShallowWrapper {
       <View
             style={
                   Array [
-                        68,
-                        66,
+                        69,
+                        67,
                       ]
             }
             testID="author-pagination"
       >
             <View>
-                  <Link
+                  <TextLink
                         onPress={[Function]}
-                        style={65}
+                        style={66}
                         url="./2"
                   >
                         &lt; Previous page
-                  </Link>
+                  </TextLink>
             </View>
             <View />
       </View>
@@ -926,13 +926,13 @@ ShallowWrapper {
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <View
           onLayout={[Function]}
-          style={67}
+          style={68}
 >
           <View
                     style={
                               Array [
-                                        68,
-                                        70,
+                                        69,
+                                        71,
                                         null,
                                       ]
                     }
@@ -940,7 +940,7 @@ ShallowWrapper {
                     <Text
                               style={
                                         Array [
-                                                  69,
+                                                  70,
                                                 ]
                               }
                     >
@@ -950,20 +950,20 @@ ShallowWrapper {
           <View
                     style={
                               Array [
-                                        68,
-                                        66,
+                                        69,
+                                        67,
                                       ]
                     }
                     testID="author-pagination"
           >
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
-                                        style={65}
+                                        style={66}
                                         url="./2"
                               >
                                         &lt; Previous page
-                              </Link>
+                              </TextLink>
                     </View>
                     <View />
           </View>
@@ -971,13 +971,13 @@ ShallowWrapper {
         "_debugID": 6,
         "_renderedOutput": <View
           onLayout={[Function]}
-          style={67}
+          style={68}
 >
           <View
                     style={
                               Array [
-                                        68,
-                                        70,
+                                        69,
+                                        71,
                                         null,
                                       ]
                     }
@@ -985,7 +985,7 @@ ShallowWrapper {
                     <Text
                               style={
                                         Array [
-                                                  69,
+                                                  70,
                                                 ]
                               }
                     >
@@ -995,20 +995,20 @@ ShallowWrapper {
           <View
                     style={
                               Array [
-                                        68,
-                                        66,
+                                        69,
+                                        67,
                                       ]
                     }
                     testID="author-pagination"
           >
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
-                                        style={65}
+                                        style={66}
                                         url="./2"
                               >
                                         &lt; Previous page
-                              </Link>
+                              </TextLink>
                     </View>
                     <View />
           </View>
@@ -1046,13 +1046,13 @@ ShallowWrapper {
   "length": 1,
   "node": <View
     onLayout={[Function]}
-    style={67}
+    style={68}
 >
     <View
         style={
             Array [
-                68,
-                70,
+                69,
+                71,
                 null,
               ]
         }
@@ -1060,7 +1060,7 @@ ShallowWrapper {
         <Text
             style={
                 Array [
-                    69,
+                    70,
                   ]
             }
         >
@@ -1070,34 +1070,34 @@ ShallowWrapper {
     <View
         style={
             Array [
-                68,
-                66,
+                69,
+                67,
               ]
         }
         testID="author-pagination"
     >
         <View />
         <View>
-            <Link
+            <TextLink
                 onPress={[Function]}
-                style={65}
+                style={66}
                 url="./2"
             >
                 Next page &gt;
-            </Link>
+            </TextLink>
         </View>
     </View>
 </View>,
   "nodes": Array [
     <View
       onLayout={[Function]}
-      style={67}
+      style={68}
 >
       <View
             style={
                   Array [
-                        68,
-                        70,
+                        69,
+                        71,
                         null,
                       ]
             }
@@ -1105,7 +1105,7 @@ ShallowWrapper {
             <Text
                   style={
                         Array [
-                              69,
+                              70,
                             ]
                   }
             >
@@ -1115,21 +1115,21 @@ ShallowWrapper {
       <View
             style={
                   Array [
-                        68,
-                        66,
+                        69,
+                        67,
                       ]
             }
             testID="author-pagination"
       >
             <View />
             <View>
-                  <Link
+                  <TextLink
                         onPress={[Function]}
-                        style={65}
+                        style={66}
                         url="./2"
                   >
                         Next page &gt;
-                  </Link>
+                  </TextLink>
             </View>
       </View>
 </View>,
@@ -1196,13 +1196,13 @@ ShallowWrapper {
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <View
           onLayout={[Function]}
-          style={67}
+          style={68}
 >
           <View
                     style={
                               Array [
-                                        68,
-                                        70,
+                                        69,
+                                        71,
                                         null,
                                       ]
                     }
@@ -1210,7 +1210,7 @@ ShallowWrapper {
                     <Text
                               style={
                                         Array [
-                                                  69,
+                                                  70,
                                                 ]
                               }
                     >
@@ -1220,34 +1220,34 @@ ShallowWrapper {
           <View
                     style={
                               Array [
-                                        68,
-                                        66,
+                                        69,
+                                        67,
                                       ]
                     }
                     testID="author-pagination"
           >
                     <View />
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
-                                        style={65}
+                                        style={66}
                                         url="./2"
                               >
                                         Next page &gt;
-                              </Link>
+                              </TextLink>
                     </View>
           </View>
 </View>,
         "_debugID": 10,
         "_renderedOutput": <View
           onLayout={[Function]}
-          style={67}
+          style={68}
 >
           <View
                     style={
                               Array [
-                                        68,
-                                        70,
+                                        69,
+                                        71,
                                         null,
                                       ]
                     }
@@ -1255,7 +1255,7 @@ ShallowWrapper {
                     <Text
                               style={
                                         Array [
-                                                  69,
+                                                  70,
                                                 ]
                               }
                     >
@@ -1265,21 +1265,21 @@ ShallowWrapper {
           <View
                     style={
                               Array [
-                                        68,
-                                        66,
+                                        69,
+                                        67,
                                       ]
                     }
                     testID="author-pagination"
           >
                     <View />
                     <View>
-                              <Link
+                              <TextLink
                                         onPress={[Function]}
-                                        style={65}
+                                        style={66}
                                         url="./2"
                               >
                                         Next page &gt;
-                              </Link>
+                              </TextLink>
                     </View>
           </View>
 </View>,

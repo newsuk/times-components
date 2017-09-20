@@ -1,8 +1,8 @@
 /* globals withComponent test expect element by waitFor beforeEach */
 import { View } from "react-native";
 import React from "react";
-import BrightcoveVideo from "./brightcove-player";
-import VideoWithExternalControls from "./fixtures/player-with-external-controls";
+import BrightcovePlayer from "./brightcove-player";
+import VideoWithExternalControls from "./fixtures/video-with-external-controls";
 
 const policyKey =
   "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U";
@@ -10,7 +10,7 @@ const accountId = "57838016001";
 const videoId = "4084164751001";
 
 withComponent(
-  <BrightcoveVideo
+  <BrightcovePlayer
     fructoseID="brightcove video renders"
     policyKey={policyKey}
     videoId={videoId}
@@ -49,14 +49,14 @@ withComponent(
 withComponent(
   <View fructoseID="multiple brightcove players">
     <View testID="player1">
-      <BrightcoveVideo
+      <BrightcovePlayer
         policyKey={policyKey}
         videoId={videoId}
         accountId={accountId}
       />
     </View>
     <View testID="player2">
-      <BrightcoveVideo
+      <BrightcovePlayer
         policyKey={policyKey}
         videoId={videoId}
         accountId={accountId}
@@ -106,20 +106,22 @@ withComponent(
     test("renders", async () => {
       await expect(element(by.id("external-play"))).toBeVisible();
       await expect(element(by.id("external-pause"))).toBeVisible();
-      await expect(element(by.id("jump-back"))).toBeVisible();
-      await expect(element(by.id("current-time"))).toBeVisible();
-      await expect(element(by.id("duration"))).toBeVisible();
-      await expect(element(by.id("screen-mode"))).toBeVisible();
+      await expect(element(by.id("external-reset"))).toBeVisible();
+      await expect(element(by.id("splash-component"))).toBeVisible();
     });
 
-    test("video plays when external play button is pressed", async () => {
-      await element(by.id("external-play")).tap();
-      await waitFor(element(by.id("current-time")))
-        .toHaveText("00:01")
-        .withTimeout(1500);
-      await expect(
-        element(by.id("current-time").and(by.text("00:00")))
-      ).toNotExist();
-    });
+    test(
+      "video plays when external play button is pressed",
+      async () => {
+        await element(by.id("external-play")).tap();
+        await waitFor(element(by.id("current-time")))
+          .toHaveText("00:01")
+          .withTimeout(5000);
+        await expect(
+          element(by.id("current-time").and(by.text("00:00")))
+        ).toNotExist();
+      },
+      10000
+    );
   }
 );

@@ -1,6 +1,15 @@
 /* eslint-env jest */
 
-import tests from "./test-helper";
-import ArticleByline from "../article-byline";
+import "react-native";
+import shared from "./shared";
 
-describe("ArticleByline Web", tests(ArticleByline));
+jest.mock("react-native", () => {
+  const reactNative = require.requireActual("react-native");
+  reactNative.Platform.OS = "web";
+  jest
+    .spyOn(reactNative.Platform, "select")
+    .mockImplementation(obj => obj.web || obj.default);
+  return reactNative;
+});
+
+shared();
