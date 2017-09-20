@@ -1,264 +1,272 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders data 1`] = `
-<RCTScrollView
-  testID="scroll-view"
->
+<View>
   <View>
-    <View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "paddingBottom": 50,
+        }
+      }
+    >
       <View
-        pointerEvents="box-none"
+        accessibilityRole="banner"
         style={
           Object {
             "alignItems": "center",
-            "backgroundColor": "transparent",
+            "backgroundColor": "#F9F8F3",
+            "flexDirection": "column",
             "paddingBottom": 50,
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          accessibilityRole="heading"
+          accessible={true}
+          allowFontScaling={true}
+          aria-level="1"
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#000",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 45,
+              "paddingTop": 32,
+            }
+          }
+        >
+          Fiona Hamilton
+        </Text>
+        <Text
+          accessibilityRole="heading"
+          accessible={true}
+          allowFontScaling={true}
+          aria-level="2"
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#696969",
+              "fontFamily": "TimesDigital-RegularSC",
+              "fontSize": 15,
+            }
+          }
+        >
+          legal editor
+        </Text>
+        <Text
+          accessibilityRole="link"
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          href="https://twitter.com/jdoe"
+          onPress={[Function]}
+          style={
+            Array [
+              Object {
+                "textDecorationLine": "underline",
+              },
+              Object {
+                "color": "#006699",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 18,
+                "paddingTop": 16,
+                "textDecorationLine": "none",
+              },
+            ]
+          }
+        >
+          @
+          jdoe
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#333",
+              "fontFamily": "TimesDigital-Regular",
+              "fontSize": 16,
+              "lineHeight": 26,
+              "maxWidth": "88%",
+              "paddingBottom": 32,
+              "textAlign": "center",
+            }
+          }
+        >
+          Lorem 
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            ipsum
+          </Text>
+           testbr 
+          More text 
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontStyle": "italic",
+              }
+            }
+          >
+             last 
+          </Text>
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "bottom": 0,
+            "height": 100,
+            "position": "absolute",
+            "width": 100,
           }
         }
       >
         <View
-          accessibilityRole="banner"
-          style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F9F8F3",
-              "flexDirection": "column",
-              "paddingBottom": 50,
-              "width": "100%",
-            }
-          }
+          onLayout={[Function]}
         >
-          <Text
-            accessibilityRole="heading"
-            accessible={true}
-            allowFontScaling={true}
-            aria-level="1"
-            ellipsizeMode="tail"
-            style={
+          <Image
+            onError={[Function]}
+            onLoad={[Function]}
+            source={
               Object {
-                "color": "#000",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 45,
-                "paddingTop": 32,
+                "uri": "",
               }
             }
-          >
-            Fiona Hamilton
-          </Text>
-          <Text
-            accessibilityRole="heading"
-            accessible={true}
-            allowFontScaling={true}
-            aria-level="2"
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "TimesDigital-RegularSC",
-                "fontSize": 15,
-              }
-            }
-          >
-            legal editor
-          </Text>
-          <Text
-            accessibilityRole="link"
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            href="https://twitter.com/jdoe"
-            onPress={[Function]}
             style={
               Array [
                 Object {
-                  "textDecorationLine": "underline",
+                  "height": 1,
+                  "width": 750,
                 },
                 Object {
-                  "color": "#006699",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 18,
-                  "paddingTop": 16,
-                  "textDecorationLine": "none",
+                  "borderColor": "#FFF",
+                  "borderRadius": 50,
+                  "borderWidth": 5,
+                  "height": 100,
+                  "width": 100,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "stretch",
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "marginBottom": 10,
+            "marginLeft": 10,
+            "marginRight": 10,
+            "maxWidth": 800,
+          }
+        }
+      >
+        <View
+          onLayout={[Function]}
+          style={
+            Object {
+              "alignItems": "stretch",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "justifyContent": "center",
+                },
+                null,
+              ]
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 15,
+                  },
+                ]
+              }
+            >
+              Showing 1 - 2 of 2 results
+            </Text>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#dbdbdb",
+                  "borderTopWidth": 1,
                 },
               ]
             }
           >
-            @
-            jdoe
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333",
-                "fontFamily": "TimesDigital-Regular",
-                "fontSize": 16,
-                "lineHeight": 26,
-                "maxWidth": "88%",
-                "paddingBottom": 32,
-                "textAlign": "center",
-              }
-            }
-          >
-            Lorem 
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              ipsum
-            </Text>
-             testbr 
-            More text 
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontStyle": "italic",
-                }
-              }
-            >
-               last 
-            </Text>
-          </Text>
-        </View>
-        <View
-          style={
-            Object {
-              "bottom": 0,
-              "height": 100,
-              "position": "absolute",
-              "width": 100,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-          >
-            <Image
-              onError={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  Object {
-                    "borderColor": "#FFF",
-                    "borderRadius": 50,
-                    "borderWidth": 5,
-                    "height": 100,
-                    "width": 100,
-                  },
-                ]
-              }
-            />
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "alignItems": "stretch",
-            "flexDirection": "row",
-            "justifyContent": "center",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "flex": 1,
-              "marginBottom": 10,
-              "marginLeft": 10,
-              "marginRight": 10,
-              "maxWidth": 800,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Object {
-                "alignItems": "stretch",
-                "flexDirection": "column",
-              }
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 40,
-                    "justifyContent": "space-between",
-                  },
-                  Object {
-                    "justifyContent": "center",
-                  },
-                  null,
-                ]
-              }
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 15,
-                    },
-                  ]
-                }
-              >
-                Showing 1 - 2 of 2 results
-              </Text>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 40,
-                    "justifyContent": "space-between",
-                  },
-                  Object {
-                    "borderBottomColor": "#dbdbdb",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
-                    "borderTopWidth": 1,
-                  },
-                ]
-              }
-            >
-              <View />
-              <View />
-            </View>
+            <View />
+            <View />
           </View>
         </View>
       </View>
     </View>
+  </View>
+  <RCTScrollView
+    dataSource={
+      ListViewDataSource {
+        "items": 2,
+      }
+    }
+    onChangeVisibleRows={[Function]}
+    renderRow={[Function]}
+    renderScrollComponent={[Function]}
+    renderSeparator={[Function]}
+  >
     <View>
       <View
         style={
@@ -269,6 +277,148 @@ exports[`renders data 1`] = `
         }
       >
         <View
+          id="97c64f20-cb67-11e4-a202-50ac5def393a"
+          onLayout={[Function]}
+          style={
+            Array [
+              Object {
+                "flexDirection": "column",
+              },
+              null,
+              undefined,
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "paddingBottom": 15,
+                },
+                Object {
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              onLayout={[Function]}
+            >
+              <Image
+                onError={[Function]}
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "height": 1,
+                      "width": 750,
+                    },
+                    undefined,
+                  ]
+                }
+              />
+            </View>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              style={Object {}}
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 12,
+                    "letterSpacing": 1,
+                    "marginBottom": 2,
+                  }
+                }
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontSize": 22,
+                    "fontWeight": "400",
+                    "lineHeight": 22,
+                    "marginBottom": 8,
+                  }
+                }
+              >
+                British trio stopped on the way to join Isis
+              </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#696969",
+                    "flexWrap": "wrap",
+                    "fontFamily": "TimesDigital-Regular",
+                    "fontSize": 14,
+                    "lineHeight": 20,
+                    "marginBottom": 10,
+                  }
+                }
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                Monday March 23 2015
+                , The Times
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <View
+          id="97c64f20-cb67-11e4-a202-50ac5def393a"
           onLayout={[Function]}
           style={
             Array [
@@ -401,269 +551,277 @@ exports[`renders data 1`] = `
         </View>
       </View>
     </View>
-  </View>
-</RCTScrollView>
+  </RCTScrollView>
+</View>
 `;
 
 exports[`renders data from graphql 1`] = `
-<RCTScrollView
-  testID="scroll-view"
->
+<View>
   <View>
-    <View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "paddingBottom": 50,
+        }
+      }
+    >
       <View
-        pointerEvents="box-none"
+        accessibilityRole="banner"
         style={
           Object {
             "alignItems": "center",
-            "backgroundColor": "transparent",
+            "backgroundColor": "#F9F8F3",
+            "flexDirection": "column",
             "paddingBottom": 50,
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          accessibilityRole="heading"
+          accessible={true}
+          allowFontScaling={true}
+          aria-level="1"
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#000",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 45,
+              "paddingTop": 32,
+            }
+          }
+        >
+          Fiona Hamilton
+        </Text>
+        <Text
+          accessibilityRole="heading"
+          accessible={true}
+          allowFontScaling={true}
+          aria-level="2"
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#696969",
+              "fontFamily": "TimesDigital-RegularSC",
+              "fontSize": 15,
+            }
+          }
+        >
+          legal editor
+        </Text>
+        <Text
+          accessibilityRole="link"
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          href="https://twitter.com/jdoe"
+          onPress={[Function]}
+          style={
+            Array [
+              Object {
+                "textDecorationLine": "underline",
+              },
+              Object {
+                "color": "#006699",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 18,
+                "paddingTop": 16,
+                "textDecorationLine": "none",
+              },
+            ]
+          }
+        >
+          @
+          jdoe
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#333",
+              "fontFamily": "TimesDigital-Regular",
+              "fontSize": 16,
+              "lineHeight": 26,
+              "maxWidth": "88%",
+              "paddingBottom": 32,
+              "textAlign": "center",
+            }
+          }
+        >
+          Lorem 
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            ipsum
+          </Text>
+           testbr 
+          More text 
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontStyle": "italic",
+              }
+            }
+          >
+             last 
+          </Text>
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "bottom": 0,
+            "height": 100,
+            "position": "absolute",
+            "width": 100,
           }
         }
       >
         <View
-          accessibilityRole="banner"
-          style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F9F8F3",
-              "flexDirection": "column",
-              "paddingBottom": 50,
-              "width": "100%",
-            }
-          }
+          onLayout={[Function]}
         >
-          <Text
-            accessibilityRole="heading"
-            accessible={true}
-            allowFontScaling={true}
-            aria-level="1"
-            ellipsizeMode="tail"
-            style={
+          <Image
+            onError={[Function]}
+            onLoad={[Function]}
+            source={
               Object {
-                "color": "#000",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 45,
-                "paddingTop": 32,
+                "uri": "",
               }
             }
-          >
-            Fiona Hamilton
-          </Text>
-          <Text
-            accessibilityRole="heading"
-            accessible={true}
-            allowFontScaling={true}
-            aria-level="2"
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "TimesDigital-RegularSC",
-                "fontSize": 15,
-              }
-            }
-          >
-            legal editor
-          </Text>
-          <Text
-            accessibilityRole="link"
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            href="https://twitter.com/jdoe"
-            onPress={[Function]}
             style={
               Array [
                 Object {
-                  "textDecorationLine": "underline",
+                  "height": 1,
+                  "width": 750,
                 },
                 Object {
-                  "color": "#006699",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 18,
-                  "paddingTop": 16,
-                  "textDecorationLine": "none",
+                  "borderColor": "#FFF",
+                  "borderRadius": 50,
+                  "borderWidth": 5,
+                  "height": 100,
+                  "width": 100,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "stretch",
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "marginBottom": 10,
+            "marginLeft": 10,
+            "marginRight": 10,
+            "maxWidth": 800,
+          }
+        }
+      >
+        <View
+          onLayout={[Function]}
+          style={
+            Object {
+              "alignItems": "stretch",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "justifyContent": "center",
+                },
+                null,
+              ]
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 15,
+                  },
+                ]
+              }
+            >
+              Showing 1 - 2 of 2 results
+            </Text>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#dbdbdb",
+                  "borderTopWidth": 1,
                 },
               ]
             }
           >
-            @
-            jdoe
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333",
-                "fontFamily": "TimesDigital-Regular",
-                "fontSize": 16,
-                "lineHeight": 26,
-                "maxWidth": "88%",
-                "paddingBottom": 32,
-                "textAlign": "center",
-              }
-            }
-          >
-            Lorem 
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              ipsum
-            </Text>
-             testbr 
-            More text 
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontStyle": "italic",
-                }
-              }
-            >
-               last 
-            </Text>
-          </Text>
-        </View>
-        <View
-          style={
-            Object {
-              "bottom": 0,
-              "height": 100,
-              "position": "absolute",
-              "width": 100,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-          >
-            <Image
-              onError={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  Object {
-                    "borderColor": "#FFF",
-                    "borderRadius": 50,
-                    "borderWidth": 5,
-                    "height": 100,
-                    "width": 100,
-                  },
-                ]
-              }
-            />
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "alignItems": "stretch",
-            "flexDirection": "row",
-            "justifyContent": "center",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "flex": 1,
-              "marginBottom": 10,
-              "marginLeft": 10,
-              "marginRight": 10,
-              "maxWidth": 800,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Object {
-                "alignItems": "stretch",
-                "flexDirection": "column",
-              }
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 40,
-                    "justifyContent": "space-between",
-                  },
-                  Object {
-                    "justifyContent": "center",
-                  },
-                  null,
-                ]
-              }
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 15,
-                    },
-                  ]
-                }
-              >
-                Showing 1 - 2 of 2 results
-              </Text>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 40,
-                    "justifyContent": "space-between",
-                  },
-                  Object {
-                    "borderBottomColor": "#dbdbdb",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
-                    "borderTopWidth": 1,
-                  },
-                ]
-              }
-            >
-              <View />
-              <View />
-            </View>
+            <View />
+            <View />
           </View>
         </View>
       </View>
     </View>
+  </View>
+  <RCTScrollView
+    dataSource={
+      ListViewDataSource {
+        "items": 2,
+      }
+    }
+    onChangeVisibleRows={[Function]}
+    renderRow={[Function]}
+    renderScrollComponent={[Function]}
+    renderSeparator={[Function]}
+  >
     <View>
       <View
         style={
@@ -674,6 +832,148 @@ exports[`renders data from graphql 1`] = `
         }
       >
         <View
+          id="97c64f20-cb67-11e4-a202-50ac5def393a"
+          onLayout={[Function]}
+          style={
+            Array [
+              Object {
+                "flexDirection": "column",
+              },
+              null,
+              undefined,
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "paddingBottom": 15,
+                },
+                Object {
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              onLayout={[Function]}
+            >
+              <Image
+                onError={[Function]}
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "height": 1,
+                      "width": 750,
+                    },
+                    undefined,
+                  ]
+                }
+              />
+            </View>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              style={Object {}}
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 12,
+                    "letterSpacing": 1,
+                    "marginBottom": 2,
+                  }
+                }
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontSize": 22,
+                    "fontWeight": "400",
+                    "lineHeight": 22,
+                    "marginBottom": 8,
+                  }
+                }
+              >
+                British trio stopped on the way to join Isis
+              </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#696969",
+                    "flexWrap": "wrap",
+                    "fontFamily": "TimesDigital-Regular",
+                    "fontSize": 14,
+                    "lineHeight": 20,
+                    "marginBottom": 10,
+                  }
+                }
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                Monday March 23 2015
+                , The Times
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <View
+          id="97c64f20-cb67-11e4-a202-50ac5def393a"
           onLayout={[Function]}
           style={
             Array [
@@ -806,8 +1106,8 @@ exports[`renders data from graphql 1`] = `
         </View>
       </View>
     </View>
-  </View>
-</RCTScrollView>
+  </RCTScrollView>
+</View>
 `;
 
 exports[`renders loading state 1`] = `

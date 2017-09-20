@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
 
 const AuthorProfileItem = item => {
   const props = {
+    id: item.id,
     date: item.publishedTime,
     headline: item.title,
     image: {
