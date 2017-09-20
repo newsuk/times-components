@@ -8,11 +8,14 @@ const Button = props => (
     style={{
       backgroundColor: "blue",
       padding: 5,
-      margin: 5
+      margin: 5,
+      width: 200
     }}
     onPress={props.onPress}
   >
-    <Text style={{ color: "white" }}>{props.buttonText}</Text>
+    <Text style={{ color: "white", textAlign: "center" }}>
+      {props.buttonText}
+    </Text>
   </TouchableOpacity>
 );
 

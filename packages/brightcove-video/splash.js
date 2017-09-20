@@ -4,7 +4,7 @@ import { View, Image } from "react-native";
 import PlayIcon from "./play-icon";
 
 const Splash = ({ poster, width, height, playIcon }) => (
-  <View>
+  <View testID="splash-component">
     {poster ? (
       <Image
         source={poster}
