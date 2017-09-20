@@ -67,7 +67,7 @@ const AuthorHead = props => {
   return (
     <View style={styles.wrapper} pointerEvents="box-none">
       <View accessibilityRole="banner" style={styles.container}>
-        <Text accessibilityRole="heading" aria-level="1" style={styles.name}>
+        <Text testID="author-name" accessibilityRole="heading" aria-level="1" style={styles.name}>
           {name}
         </Text>
         <Text accessibilityRole="heading" aria-level="2" style={styles.title}>
