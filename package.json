@@ -34,18 +34,10 @@
     "android": "react-native run-android",
     "prettier:diff": "prettier --list-different 'packages/**/*.js'",
     "fmt": "prettier --write 'packages/**/*.js'",
-    "lint-staged": "lint-staged",
     "packages:publish": "lerna publish --conventional-commits --yes --concurrency=1 --exact",
     "packages:publish-dry-run": "npm run packages:publish -- --skip-git --skip-npm",
     "update-deps": "lerna bootstrap --hoist --npm-client=yarn --concurrency=1",
     "postinstall": "npm run update-deps --silent"
-  },
-  "lint-staged": {
-    "**/*.js": [
-      "eslint --fix",
-      "prettier --write",
-      "git add"
-    ]
   },
   "jest": {
     "preset": "react-native",
@@ -107,7 +99,6 @@
     "jest": "20.0.4",
     "lcov-result-merger": "1.2.0",
     "lerna": "2.0.0",
-    "lint-staged": "4.0.0",
     "node-fetch": "1.7.2",
     "prettier": "1.6.1",
     "react": "15.4.2",
