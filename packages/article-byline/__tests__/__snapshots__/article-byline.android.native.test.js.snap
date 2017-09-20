@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ArticleByline Native renders correctly with a single author 1`] = `
+exports[`renders correctly with a single author 1`] = `
 <View
   style={
     Array [
@@ -20,6 +20,7 @@ exports[`ArticleByline Native renders correctly with a single author 1`] = `
         Object {
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 17,
         },
         undefined,
         Object {
@@ -53,7 +54,7 @@ exports[`ArticleByline Native renders correctly with a single author 1`] = `
 </View>
 `;
 
-exports[`ArticleByline Native renders correctly with a single inline element 1`] = `
+exports[`renders correctly with a single inline element 1`] = `
 <View
   style={
     Array [
@@ -73,6 +74,7 @@ exports[`ArticleByline Native renders correctly with a single inline element 1`]
         Object {
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 17,
         },
         undefined,
         Object {
@@ -92,7 +94,7 @@ exports[`ArticleByline Native renders correctly with a single inline element 1`]
 </View>
 `;
 
-exports[`ArticleByline Native renders correctly with an empty AST (empty byline on DB) 1`] = `
+exports[`renders correctly with an empty AST (empty byline on DB) 1`] = `
 <View
   style={
     Array [
@@ -112,6 +114,7 @@ exports[`ArticleByline Native renders correctly with an empty AST (empty byline 
         Object {
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 17,
         },
         undefined,
         Object {
@@ -123,7 +126,7 @@ exports[`ArticleByline Native renders correctly with an empty AST (empty byline 
 </View>
 `;
 
-exports[`ArticleByline Native renders correctly with multiple authors separated by spaces 1`] = `
+exports[`renders correctly with multiple authors separated by spaces 1`] = `
 <View
   style={
     Array [
@@ -143,6 +146,7 @@ exports[`ArticleByline Native renders correctly with multiple authors separated 
         Object {
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 17,
         },
         undefined,
         Object {
@@ -232,7 +236,7 @@ exports[`ArticleByline Native renders correctly with multiple authors separated 
 </View>
 `;
 
-exports[`ArticleByline Native renders correctly with multiple authors separated by text with commas 1`] = `
+exports[`renders correctly with multiple authors separated by text with commas 1`] = `
 <View
   style={
     Array [
@@ -252,6 +256,7 @@ exports[`ArticleByline Native renders correctly with multiple authors separated 
         Object {
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 17,
         },
         undefined,
         Object {
@@ -341,7 +346,7 @@ exports[`ArticleByline Native renders correctly with multiple authors separated 
 </View>
 `;
 
-exports[`ArticleByline Native renders correctly with styles 1`] = `
+exports[`renders correctly with styles 1`] = `
 <View
   style={
     Array [
@@ -361,6 +366,7 @@ exports[`ArticleByline Native renders correctly with styles 1`] = `
         Object {
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 17,
         },
         Object {
           "color": "blue",
@@ -399,7 +405,7 @@ exports[`ArticleByline Native renders correctly with styles 1`] = `
 </View>
 `;
 
-exports[`ArticleByline Native renders correctly with the author at the end 1`] = `
+exports[`renders correctly with the author at the end 1`] = `
 <View
   style={
     Array [
@@ -419,6 +425,7 @@ exports[`ArticleByline Native renders correctly with the author at the end 1`] =
         Object {
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 17,
         },
         undefined,
         Object {
@@ -459,7 +466,7 @@ exports[`ArticleByline Native renders correctly with the author at the end 1`] =
 </View>
 `;
 
-exports[`ArticleByline Native renders correctly with the author in the begining 1`] = `
+exports[`renders correctly with the author in the begining 1`] = `
 <View
   style={
     Array [
@@ -479,6 +486,7 @@ exports[`ArticleByline Native renders correctly with the author in the begining 
         Object {
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
+          "lineHeight": 17,
         },
         undefined,
         Object {
