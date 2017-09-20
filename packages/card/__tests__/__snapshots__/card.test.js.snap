@@ -111,28 +111,25 @@ exports[`renders vertical by default 1`] = `
       ]
     }
   >
-    <View
+    <Image
+      onError={[Function]}
       onLayout={[Function]}
-    >
-      <Image
-        onError={[Function]}
-        onLoad={[Function]}
-        source={
+      onLoad={[Function]}
+      source={
+        Object {
+          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320",
+        }
+      }
+      style={
+        Array [
           Object {
-            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320",
-          }
-        }
-        style={
-          Array [
-            Object {
-              "height": 1,
-              "width": 750,
-            },
-            undefined,
-          ]
-        }
-      />
-    </View>
+            "height": 1,
+            "width": 750,
+          },
+          undefined,
+        ]
+      }
+    />
   </View>
   <View
     style={

@@ -143,34 +143,31 @@ exports[`renders data 1`] = `
             }
           }
         >
-          <View
+          <Image
+            onError={[Function]}
             onLayout={[Function]}
-          >
-            <Image
-              onError={[Function]}
-              onLoad={[Function]}
-              source={
+            onLoad={[Function]}
+            source={
+              Object {
+                "uri": "",
+              }
+            }
+            style={
+              Array [
                 Object {
-                  "uri": "",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  Object {
-                    "borderColor": "#FFF",
-                    "borderRadius": 50,
-                    "borderWidth": 5,
-                    "height": 100,
-                    "width": 100,
-                  },
-                ]
-              }
-            />
-          </View>
+                  "height": 1,
+                  "width": 750,
+                },
+                Object {
+                  "borderColor": "#FFF",
+                  "borderRadius": 50,
+                  "borderWidth": 5,
+                  "height": 100,
+                  "width": 100,
+                },
+              ]
+            }
+          />
         </View>
 >>>>>>> 67b993e... chore: create state conversion for web
       </View>
@@ -305,6 +302,7 @@ exports[`renders data 1`] = `
               ]
             }
           >
+<<<<<<< HEAD
             <View
               style={
                 Array [
@@ -362,6 +360,39 @@ exports[`renders data 1`] = `
               />
 >>>>>>> 67b993e... chore: create state conversion for web
             </View>
+=======
+            <Image
+              onError={[Function]}
+              onLayout={[Function]}
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                },
+                null,
+              ]
+            }
+          >
+>>>>>>> 1d7173d... fix: fixes image size with ssr
             <View
               style={
                 Array [
@@ -594,34 +625,31 @@ exports[`renders data from graphql 1`] = `
             }
           }
         >
-          <View
+          <Image
+            onError={[Function]}
             onLayout={[Function]}
-          >
-            <Image
-              onError={[Function]}
-              onLoad={[Function]}
-              source={
+            onLoad={[Function]}
+            source={
+              Object {
+                "uri": "",
+              }
+            }
+            style={
+              Array [
                 Object {
-                  "uri": "",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  Object {
-                    "borderColor": "#FFF",
-                    "borderRadius": 50,
-                    "borderWidth": 5,
-                    "height": 100,
-                    "width": 100,
-                  },
-                ]
-              }
-            />
-          </View>
+                  "height": 1,
+                  "width": 750,
+                },
+                Object {
+                  "borderColor": "#FFF",
+                  "borderRadius": 50,
+                  "borderWidth": 5,
+                  "height": 100,
+                  "width": 100,
+                },
+              ]
+            }
+          />
         </View>
 >>>>>>> 67b993e... chore: create state conversion for web
       </View>
@@ -756,6 +784,7 @@ exports[`renders data from graphql 1`] = `
               ]
             }
           >
+<<<<<<< HEAD
             <View
               style={
                 Array [
@@ -813,6 +842,39 @@ exports[`renders data from graphql 1`] = `
               />
 >>>>>>> 67b993e... chore: create state conversion for web
             </View>
+=======
+            <Image
+              onError={[Function]}
+              onLayout={[Function]}
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                },
+                null,
+              ]
+            }
+          >
+>>>>>>> 1d7173d... fix: fixes image size with ssr
             <View
               style={
                 Array [
