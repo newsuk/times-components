@@ -18,7 +18,6 @@
   NSString *_playerStatus;
   NSInteger _playheadPosition;
   NSInteger _duration;
-  NSInteger _zero;
   NSNumber *_autoplayNumber;
   Boolean _finished;
   NSNumber *_hideFullScreenButtonNumber;
@@ -46,7 +45,6 @@
   _playerStatus = @"paused";
   _playheadPosition = 0;
   _finished = NO;
-  _zero = 0;
 
   BCOVPlayerSDKManager *manager = [BCOVPlayerSDKManager sharedManager];
 
@@ -64,7 +62,7 @@
     #pragma unused (jsonResponse)
     if (video) {
       _duration = [video.properties[@"duration"] intValue];
-      
+
       [self.playbackController setVideos:@[ video ]];
     } else {
       [self emitError:error];
@@ -148,7 +146,7 @@
   if (!self.onChange) {
     return;
   }
-  
+
   self.onChange(@{
     @"playerStatus": _playerStatus,
     @"playheadPosition": [NSNumber numberWithLong:_playheadPosition],
@@ -188,7 +186,7 @@
 
   if ([kBCOVPlaybackSessionLifecycleEventPause isEqualToString:lifecycleEvent.eventType]) {
     _playerStatus = @"paused";
-    
+
     if(_playheadPosition == _duration) {
       _finished = YES;
     }
@@ -201,7 +199,7 @@
 
   #pragma unused (controller)
   #pragma unused (session)
-  
+
   _finished = NO;
 
   if (progress == -INFINITY) {
