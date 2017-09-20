@@ -765,6 +765,7 @@ exports[`renders profile 1`] = `
   name="Fiona Hamilton"
   onNext={[Function]}
   onPrev={[Function]}
+  onTwitterLinkPress={[Function]}
   page={1}
   pageSize={10}
   twitter="jdoe"

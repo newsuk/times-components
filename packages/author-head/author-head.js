@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
 });
 
 const AuthorHead = props => {
-  const { name, title, twitter, bio, uri } = props;
+  const { name, title, twitter, bio, uri, onTwitterLinkPress } = props;
 
   return (
     <View style={styles.wrapper} pointerEvents="box-none">
@@ -73,7 +73,7 @@ const AuthorHead = props => {
         <Text accessibilityRole="heading" aria-level="2" style={styles.title}>
           {title.toLowerCase()}
         </Text>
-        <TwitterLink handle={twitter} />
+        <TwitterLink handle={twitter} onPress={onTwitterLinkPress} />
         <Text style={styles.bio}>{renderTrees(bio)}</Text>
       </View>
       <View style={styles.photoContainer}>
@@ -96,24 +96,30 @@ AuthorHead.propTypes = {
   title: PropTypes.string,
   uri: PropTypes.string,
   bio: PropTypes.arrayOf(treePropType),
-  twitter: PropTypes.string
+  twitter: PropTypes.string,
+  onTwitterLinkPress: PropTypes.func.isRequired
 };
 
-const TwitterLink = ({ handle }) => {
+const TwitterLink = ({ handle, onPress }) => {
   if (!handle) {
     return null;
   }
-  const target = `https://twitter.com/${handle}`;
+  const url = `https://twitter.com/${handle}`;
 
   return (
-    <TextLink style={styles.twitter} url={target} onPress={() => {}}>
+    <TextLink
+      style={styles.twitter}
+      url={url}
+      onPress={e => onPress(e, { handle, url })}
+    >
       @{handle}
     </TextLink>
   );
 };
 
 TwitterLink.propTypes = {
-  handle: AuthorHead.propTypes.twitter
+  handle: AuthorHead.propTypes.twitter,
+  onPress: PropTypes.func.isRequired
 };
 
 TwitterLink.defaultProps = {

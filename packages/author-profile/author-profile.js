@@ -19,7 +19,8 @@ const AuthorProfile = props => {
       onNext: props.onNext,
       onPrev: props.onPrev,
       page: props.page,
-      pageSize: props.pageSize
+      pageSize: props.pageSize,
+      onTwitterLinkPress: props.onTwitterLinkPress
     };
     return <AuthorProfileContent {...props.data} {...extra} />;
   }
@@ -27,14 +28,26 @@ const AuthorProfile = props => {
   return <AuthorProfileEmpty />;
 };
 
+const {
+  onNext,
+  onPrev,
+  page,
+  pageSize,
+  onTwitterLinkPress,
+  ...data
+} = AuthorProfileContent.propTypes;
+
 AuthorProfile.propTypes = {
-  data: PropTypes.shape(AuthorProfileContent.propTypes),
+  data: PropTypes.shape(data),
   error: PropTypes.shape(),
   isLoading: PropTypes.bool,
-  onNext: AuthorProfileContent.propTypes.onNext,
-  onPrev: AuthorProfileContent.propTypes.onPrev,
-  page: AuthorProfileContent.propTypes.page,
-  pageSize: AuthorProfileContent.propTypes.pageSize
+  onNext,
+  onPrev,
+  page,
+  pageSize,
+  // eslint doesnt follow the reference. AuthorProfileContent.propTypes.onTwitterLinkPress is actually marked as required.
+  // eslint-disable-next-line react/require-default-props
+  onTwitterLinkPress
 };
 
 AuthorProfile.defaultProps = {
