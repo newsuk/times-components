@@ -68,6 +68,12 @@ const styles = StyleSheet.create({
 const AuthorHead = props => {
   const { name, title, twitter, bio, uri, onTwitterLinkPress } = props;
 
+  const imageComponent = uri ? (
+    <View style={styles.photoContainer}>
+      <Image source={{ uri }} style={styles.roundImage} />
+    </View>
+  ) : null;
+
   return (
     <View style={styles.wrapper} pointerEvents="box-none">
       <View accessibilityRole="banner" style={styles.container}>
@@ -80,9 +86,7 @@ const AuthorHead = props => {
         <TwitterLink handle={twitter} onPress={onTwitterLinkPress} />
         <Text style={styles.bio}>{renderTrees(bio)}</Text>
       </View>
-      <View style={styles.photoContainer}>
-        <Image source={{ uri }} style={styles.roundImage} />
-      </View>
+      {imageComponent}
     </View>
   );
 };
