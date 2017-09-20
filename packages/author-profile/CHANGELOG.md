@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.6.4...@times-components/author-profile@0.7.0) (2017-09-20)
+
+
+### Features
+
+* added onTwitterLinkPress so native can handle links ([0775bd5](https://github.com/newsuk/times-components/commit/0775bd5))
+
+
+
+
 <a name="0.6.4"></a>
 ## [0.6.4](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.6.3...@times-components/author-profile@0.6.4) (2017-09-19)
 
