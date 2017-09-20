@@ -36,7 +36,6 @@ class Ad extends Component {
     super(props);
     const { width } = Dimensions.get("window");
     this.config = getSlotConfig(props.section, props.code, width);
-    this.viewBorder = 10;
 
     this.handleOriginChange = this.handleOriginChange.bind(this);
     this.handleNavigationChange = this.handleNavigationChange.bind(this);
@@ -186,7 +185,7 @@ class Ad extends Component {
           height: 0
         }
       : {
-          height: this.config.maxSizes.height + this.viewBorder
+          height: this.config.maxSizes.height
         };
 
     const webviewComponent = (
@@ -216,7 +215,7 @@ Ad.propTypes = {
   code: PropTypes.string.isRequired,
   section: PropTypes.string.isRequired,
   baseUrl: PropTypes.string,
-  style: PropTypes.instanceOf(StyleSheet)
+  style: View.propTypes.style
 };
 
 Ad.defaultProps = {

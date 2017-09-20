@@ -1,6 +1,7 @@
 /* eslint-disable react/no-array-index-key */
+/* eslint-env browser */
 import { AdComposer } from "@times-components/ad";
-import { View, Text, Platform } from "react-native";
+import { View, Text, Platform, ScrollView } from "react-native";
 import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
@@ -37,14 +38,21 @@ storiesOf("Markup", module)
   .add("Multiple paragraphs with ads", () => {
     if (Platform.OS === "web") {
       return (
-        <View>
+        <div>
+          <a
+            href={`/iframe.html${window.top.location.search}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Click to render the ads
+          </a>
           <AdComposer section="article">
             {renderTrees(multiParagraphWithAds)}
           </AdComposer>
-        </View>
+        </div>
       );
     }
-    return <View>{renderTrees(multiParagraphWithAds)}</View>;
+    return <ScrollView>{renderTrees(multiParagraphWithAds)}</ScrollView>;
   })
   .add("Mixture of tags", () =>
     renderTree(mixture[0], {
