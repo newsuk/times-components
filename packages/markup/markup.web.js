@@ -5,8 +5,12 @@ import renderTreeWithoutDefaults from "./render-tree-without-defaults";
 
 const styles = StyleSheet.create({
   ad: {
-    borderTop: "1px solid #bdbdbd",
-    borderBottom: "1px solid #bdbdbd"
+    borderTopColor: "#dbdbdb",
+    borderBottomColor: "#dbdbdb",
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
+    paddingTop: 10,
+    paddingBottom: 10
   }
 });
 const defaultRenderers = {
