@@ -1,9 +1,12 @@
 import React from "react";
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View, Text, Platform } from "react-native";
 import ReactStyleProp from "react-style-proptype";
 import PropTypes from "prop-types";
 
 import TimesWatermark from "./times-watermark";
+
+const fontFamilyWebAndIos = "TimesDigitalW04";
+const fontFamilyAndroid = "TimesDigitalW04-Regular";
 
 const getStyles = (width, height) =>
   StyleSheet.create({
@@ -21,7 +24,8 @@ const getStyles = (width, height) =>
     },
     placeholderText: {
       fontSize: 12,
-      fontFamily: "TimesDigital-Regular",
+      fontFamily:
+        Platform.OS === "android" ? fontFamilyAndroid : fontFamilyWebAndIos,
       backgroundColor: "#F9F9F9",
       color: "#696969",
       borderColor: "#D8D8D8",

@@ -1,10 +1,13 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet, Text, Platform } from "react-native";
 import PropTypes from "prop-types";
 
 import Image from "@times-components/image";
 import { TextLink } from "@times-components/link";
 import { renderTrees, treePropType } from "@times-components/markup";
+
+const fontFamilyWebAndIos = "TimesDigitalW04";
+const fontFamilyAndroid = "TimesDigitalW04-Regular";
 
 const styles = StyleSheet.create({
   container: {
@@ -46,7 +49,7 @@ const styles = StyleSheet.create({
     textDecorationLine: "none"
   },
   bio: {
-    fontFamily: "TimesDigital-Regular",
+    fontFamily: Platform.OS === "android" ? fontFamilyAndroid : fontFamilyWebAndIos,
     textAlign: "center",
     fontSize: 16,
     lineHeight: 26,
