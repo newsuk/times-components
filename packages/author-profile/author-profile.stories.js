@@ -2,6 +2,8 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { decorateAction } from "@storybook/addon-actions";
 import AuthorProfile from "./author-profile";
 import example from "./example.json";
 
@@ -22,6 +24,13 @@ const story = m => (
   </View>
 );
 
+const preventDefaultedAction = decorateAction([
+  ([e, ...args]) => {
+    e.preventDefault();
+    return ["[SyntheticEvent (storybook prevented default)]", ...args];
+  }
+]);
+
 storiesOf("AuthorProfile", module)
   .add("AuthorProfile", () => {
     const props = {
@@ -30,7 +39,8 @@ storiesOf("AuthorProfile", module)
         pageSize: 10,
         page: 1
       }),
-      isLoading: false
+      isLoading: false,
+      onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress")
     };
 
     props.data.articles.list.forEach(article => {
@@ -42,14 +52,16 @@ storiesOf("AuthorProfile", module)
   })
   .add("AuthorProfile Loading", () => {
     const props = {
-      isLoading: true
+      isLoading: true,
+      onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress")
     };
 
     return story(<AuthorProfile {...props} />);
   })
   .add("AuthorProfile Empty State", () => {
     const props = {
-      isLoading: false
+      isLoading: false,
+      onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress")
     };
 
     return story(<AuthorProfile {...props} />);
