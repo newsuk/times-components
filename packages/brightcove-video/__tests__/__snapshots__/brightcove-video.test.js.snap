@@ -22,7 +22,9 @@ exports[`renders poster correctly before launch 1`] = `
   }
   testID={undefined}
 >
-  <View>
+  <View
+    testID="splash-component"
+  >
     <Image
       source={
         Object {
@@ -100,7 +102,9 @@ exports[`renders poster with custom play icon if specified 1`] = `
   }
   testID={undefined}
 >
-  <View>
+  <View
+    testID="splash-component"
+  >
     <Image
       source={
         Object {
@@ -182,7 +186,9 @@ exports[`will reset properly 1`] = `
   }
   testID={undefined}
 >
-  <View>
+  <View
+    testID="splash-component"
+  >
     <Image
       source={
         Object {
