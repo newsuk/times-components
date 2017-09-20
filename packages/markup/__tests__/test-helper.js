@@ -5,6 +5,8 @@ import renderer from "react-test-renderer";
 
 const singleParagraph = require("../fixtures/single-paragraph.json").fixture;
 const multiParagraph = require("../fixtures/multi-paragraph.json").fixture;
+const multiParagraphWithAds = require("../fixtures/multi-paragraph-with-ads.json")
+  .fixture;
 const anchor = require("../fixtures/anchor.json").fixture;
 const bold = require("../fixtures/bold.json").fixture;
 const italic = require("../fixtures/italic.json").fixture;
@@ -19,7 +21,8 @@ export default (
   renderTree,
   renderTrees,
   TextComponent,
-  BlockComponent
+  BlockComponent,
+  AdComposer
 ) => () => {
   it("renders a single paragraph", () => {
     const output = renderer.create(renderTree(singleParagraph[0])).toJSON();
@@ -30,6 +33,22 @@ export default (
   it("renders multiple paragraphs", () => {
     const output = renderer
       .create(<BlockComponent>{renderTrees(multiParagraph)}</BlockComponent>)
+      .toJSON();
+
+    expect(output).toMatchSnapshot();
+  });
+
+  it("renders multiple paragraphs with ads", () => {
+    const output = renderer
+      .create(
+        AdComposer ? (
+          <AdComposer section="article">
+            {renderTrees(multiParagraphWithAds)}
+          </AdComposer>
+        ) : (
+          <BlockComponent>{renderTrees(multiParagraphWithAds)}</BlockComponent>
+        )
+      )
       .toJSON();
 
     expect(output).toMatchSnapshot();
