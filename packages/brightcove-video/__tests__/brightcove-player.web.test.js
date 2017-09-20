@@ -282,7 +282,7 @@ describe("brightcove-video web component", () => {
         });
 
         it("will emit a 'play' event", done => {
-          dummyPlayer.currentTime = () => "Judgement Day";
+          dummyPlayer.currentTime = () => 0.5;
 
           const component = (
             <BrightcoveVideo
@@ -290,7 +290,7 @@ describe("brightcove-video web component", () => {
               videoId="[X]"
               onChange={state => {
                 expect(state.playerStatus).toBe("playing");
-                expect(state.playheadPosition).toBe("Judgement Day");
+                expect(state.playheadPosition).toBe(500);
 
                 done();
               }}
@@ -309,7 +309,7 @@ describe("brightcove-video web component", () => {
         });
 
         it("will emit a 'pause' event", done => {
-          dummyPlayer.currentTime = () => "Super inflation";
+          dummyPlayer.currentTime = () => 0.25;
 
           const component = (
             <BrightcoveVideo
@@ -317,7 +317,7 @@ describe("brightcove-video web component", () => {
               videoId="[X]"
               onChange={state => {
                 expect(state.playerStatus).toBe("paused");
-                expect(state.playheadPosition).toBe("Super inflation");
+                expect(state.playheadPosition).toBe(250);
 
                 done();
               }}
@@ -336,7 +336,7 @@ describe("brightcove-video web component", () => {
         });
 
         it("will emit a 'seeked' event", done => {
-          dummyPlayer.currentTime = () => "Seek & ye will find";
+          dummyPlayer.currentTime = () => 0.1;
 
           const component = (
             <BrightcoveVideo
@@ -344,7 +344,7 @@ describe("brightcove-video web component", () => {
               videoId="[X]"
               onChange={state => {
                 expect(state.playerStatus).toBe("paused");
-                expect(state.playheadPosition).toBe("Seek & ye will find");
+                expect(state.playheadPosition).toBe(100);
 
                 done();
               }}

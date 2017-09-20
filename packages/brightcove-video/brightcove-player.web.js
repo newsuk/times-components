@@ -29,6 +29,10 @@ class BrightcoveVideo extends Component {
     return `//players.brightcove.net/${accountId}/${playerId}_default/index.min.js`;
   }
 
+  static getCurrentTimeMs(player) {
+    return Math.round(player.currentTime() * 1000);
+  }
+
   constructor(props) {
     super(props);
 
@@ -96,7 +100,7 @@ class BrightcoveVideo extends Component {
   onPlay(player) {
     this.setState({
       playerStatus: "playing",
-      playheadPosition: player.currentTime(),
+      playheadPosition: BrightcoveVideo.getCurrentTimeMs(player),
       finished: false
     });
 
@@ -104,12 +108,10 @@ class BrightcoveVideo extends Component {
   }
 
   onPause(player) {
-    const playheadPosition = player.currentTime();
-
     this.setState({
       playerStatus: "paused",
-      playheadPosition,
-      finished: playheadPosition === player.duration()
+      playheadPosition: BrightcoveVideo.getCurrentTimeMs(player),
+      finished: player.currentTime() === player.duration()
     });
 
     this.emitState();
@@ -117,7 +119,7 @@ class BrightcoveVideo extends Component {
 
   onSeeked(player) {
     this.setState({
-      playheadPosition: player.currentTime(),
+      playheadPosition: BrightcoveVideo.getCurrentTimeMs(player),
       finished: false
     });
 

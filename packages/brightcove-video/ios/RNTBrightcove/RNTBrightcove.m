@@ -16,9 +16,9 @@
 @implementation RNTBrightcove {
   RCTEventDispatcher *_eventDispatcher;
   NSString *_playerStatus;
-  NSNumber *_playheadPosition;
-  NSNumber *_duration;
-  NSNumber *_zero;
+  NSInteger _playheadPosition;
+  NSInteger _duration;
+  NSInteger _zero;
   NSNumber *_autoplayNumber;
   Boolean _finished;
   NSNumber *_hideFullScreenButtonNumber;
@@ -46,7 +46,7 @@
   _playerStatus = @"paused";
   _playheadPosition = 0;
   _finished = NO;
-  _zero = [NSNumber numberWithDouble:0];
+  _zero = 0;
 
   BCOVPlayerSDKManager *manager = [BCOVPlayerSDKManager sharedManager];
 
@@ -63,7 +63,7 @@
   [self.playbackService findVideoWithVideoID:_videoId parameters:nil completion:^(BCOVVideo *video, NSDictionary *jsonResponse, NSError *error) {
     #pragma unused (jsonResponse)
     if (video) {
-      _duration = [NSNumber numberWithFloat:[video.properties[@"duration"] floatValue] / 1000];
+      _duration = [video.properties[@"duration"] intValue];
       
       [self.playbackController setVideos:@[ video ]];
     } else {
@@ -151,7 +151,8 @@
   
   self.onChange(@{
     @"playerStatus": _playerStatus,
-    @"playheadPosition": _playheadPosition,
+    @"playheadPosition": [NSNumber numberWithLong:_playheadPosition],
+    @"duration": [NSNumber numberWithLong:_duration],
     @"finished": [NSNumber numberWithBool:_finished]
   });
 }
@@ -188,7 +189,7 @@
   if ([kBCOVPlaybackSessionLifecycleEventPause isEqualToString:lifecycleEvent.eventType]) {
     _playerStatus = @"paused";
     
-    if([_playheadPosition isEqualToNumber:_duration]) {
+    if(_playheadPosition == _duration) {
       _finished = YES;
     }
 
@@ -203,17 +204,12 @@
   
   _finished = NO;
 
-  NSNumber *progressNumber = [NSNumber numberWithDouble:progress];
-
-  NSComparisonResult compareZeroResult = [_zero compare:progressNumber];
-  NSComparisonResult compareDurationResult = [_duration compare:progressNumber];
-  
-  if (compareZeroResult == NSOrderedDescending) { // result less than zero - default to zero
-    _playheadPosition = _zero;
-  } else if (compareDurationResult == NSOrderedAscending) { // result greater than duration - default to duration
+  if (progress == -INFINITY) {
+    _playheadPosition = 0;
+  } else if (progress == INFINITY) {
     _playheadPosition = _duration;
   } else {
-    _playheadPosition = progressNumber;
+    _playheadPosition = progress * 1000;
   }
 
   [self emitStatus];

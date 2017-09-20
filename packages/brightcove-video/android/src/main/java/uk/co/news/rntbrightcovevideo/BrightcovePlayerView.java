@@ -46,13 +46,13 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
         eventEmitter.on(EventType.COMPLETED, new EventListener() {
             @Override
             public void processEvent(Event e) {
-                playerView.bubbleState("paused", playerView.getDurationSecs());
+                playerView.bubbleState("paused", playerView.getDuration());
             }
         });
         eventEmitter.on(EventType.SEEK_TO, new EventListener() {
             @Override
             public void processEvent(Event e) {
-                playerView.bubbleState(playerView.getPlayerStatus(), playerView.getPlayheadPositionSecs());
+                playerView.bubbleState(playerView.getPlayerStatus(), (int) playerView.getPlayheadPosition());
             }
         });
         eventEmitter.on(EventType.ERROR, new EventListener() {
@@ -64,15 +64,7 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
         return eventEmitter;
     }
 
-    public float getDurationSecs() {
-        return (float) this.getDuration() / 1000;
-    }
-
-    public float getPlayheadPositionSecs() {
-        return this.getPlayheadPosition() / 1000;
-    }
-
-    private void bubbleState(String status, Float headPos) {
+    private void bubbleState(String status, int headPos) {
         mPlayerStatus = status;
         ((RNTBrightcoveView) this.getParent()).emitState(status, headPos);
     }
@@ -95,7 +87,7 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
         return new EventListener() {
             @Override
             public void processEvent(Event event) {
-                playerView.bubbleState(playerStatus, playerView.getPlayheadPositionSecs());
+                playerView.bubbleState(playerStatus, (int) playerView.getPlayheadPosition());
             }
         };
     }
