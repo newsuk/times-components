@@ -49,7 +49,8 @@ const styles = StyleSheet.create({
     textDecorationLine: "none"
   },
   bio: {
-    fontFamily: Platform.OS === "android" ? fontFamilyAndroid : fontFamilyWebAndIos,
+    fontFamily:
+      Platform.OS === "android" ? fontFamilyAndroid : fontFamilyWebAndIos,
     textAlign: "center",
     fontSize: 16,
     lineHeight: 26,
