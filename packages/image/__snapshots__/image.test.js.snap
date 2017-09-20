@@ -1,51 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`prepends https schema 1`] = `
-<View
+<Image
+  onError={[Function]}
   onLayout={[Function]}
->
-  <Image
-    onError={[Function]}
-    onLoad={[Function]}
-    source={
+  onLoad={[Function]}
+  source={
+    Object {
+      "uri": "https://example.com/image.jpg",
+    }
+  }
+  style={
+    Array [
       Object {
-        "uri": "https://example.com/image.jpg",
-      }
-    }
-    style={
-      Array [
-        Object {
-          "height": 1,
-          "width": 750,
-        },
-        undefined,
-      ]
-    }
-  />
-</View>
+        "height": 1,
+        "width": 750,
+      },
+      undefined,
+    ]
+  }
+/>
 `;
 
 exports[`renders correctly with no dimensions and given URI 1`] = `
-<View
+<Image
+  onError={[Function]}
   onLayout={[Function]}
->
-  <Image
-    onError={[Function]}
-    onLoad={[Function]}
-    source={
+  onLoad={[Function]}
+  source={
+    Object {
+      "uri": "http://example.com/image.jpg",
+    }
+  }
+  style={
+    Array [
       Object {
-        "uri": "http://example.com/image.jpg",
-      }
-    }
-    style={
-      Array [
-        Object {
-          "height": 1,
-          "width": 750,
-        },
-        undefined,
-      ]
-    }
-  />
-</View>
+        "height": 1,
+        "width": 750,
+      },
+      undefined,
+    ]
+  }
+/>
 `;
