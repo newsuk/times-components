@@ -16,7 +16,7 @@
 @implementation RNTBrightcove {
   RCTEventDispatcher *_eventDispatcher;
   NSString *_playerStatus;
-  NSInteger _playheadPosition;
+  NSInteger _playheadPositionMs;
   NSInteger _duration;
   NSNumber *_autoplayNumber;
   Boolean _finished;
@@ -43,7 +43,7 @@
 
 - (void)setup {
   _playerStatus = @"paused";
-  _playheadPosition = 0;
+  _playheadPositionMs = 0;
   _finished = NO;
 
   BCOVPlayerSDKManager *manager = [BCOVPlayerSDKManager sharedManager];
@@ -149,7 +149,7 @@
 
   self.onChange(@{
     @"playerStatus": _playerStatus,
-    @"playheadPosition": [NSNumber numberWithLong:_playheadPosition],
+    @"playheadPosition": [NSNumber numberWithLong:_playheadPositionMs],
     @"duration": [NSNumber numberWithLong:_duration],
     @"finished": [NSNumber numberWithBool:_finished]
   });
@@ -187,7 +187,7 @@
   if ([kBCOVPlaybackSessionLifecycleEventPause isEqualToString:lifecycleEvent.eventType]) {
     _playerStatus = @"paused";
 
-    if(_playheadPosition == _duration) {
+    if(_playheadPositionMs >= _duration) {
       _finished = YES;
     }
 
@@ -202,12 +202,14 @@
 
   _finished = NO;
 
+  // for some reason the brightcove SDK returns infinities at the begining and end of videos,
+  // this code normalises playhead position if they are encountered
   if (progress == -INFINITY) {
-    _playheadPosition = 0;
+    _playheadPositionMs = 0;
   } else if (progress == INFINITY) {
-    _playheadPosition = _duration;
+    _playheadPositionMs = _duration;
   } else {
-    _playheadPosition = progress * 1000;
+    _playheadPositionMs = progress * 1000;
   }
 
   [self emitStatus];
