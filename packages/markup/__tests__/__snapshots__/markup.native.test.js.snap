@@ -193,7 +193,7 @@ exports[`Markup Native renders multiple paragraphs with ads 1`] = `
                 <body>
                   <div id='intervention'>
                   </div>
-
+        
                   <script>
                     var i = 0;
                     const config = {\\"code\\":\\"intervention\\",\\"sizes\\":[[300,250],[320,50],[320,48],[300,50]],\\"maxSizes\\":{\\"width\\":320,\\"height\\":250},\\"mappings\\":[{\\"width\\":0,\\"height\\":0,\\"sizes\\":[]},{\\"width\\":300,\\"height\\":100,\\"sizes\\":[[300,250],[320,50],[320,48],[300,50]]},{\\"width\\":768,\\"height\\":90,\\"sizes\\":[[728,90]]},{\\"width\\":1024,\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]]}],\\"bids\\":[{\\"bidder\\":\\"appnexus\\",\\"params\\":{\\"placementId\\":\\"5823281\\",\\"section\\":\\"article\\"}},{\\"bidder\\":\\"rubicon\\",\\"params\\":{\\"accountId\\":\\"14062\\",\\"siteId\\":\\"70608\\",\\"zoneId\\":\\"335918\\",\\"inventory\\":{\\"section\\":\\"article\\"}}},{\\"bidder\\":\\"indexExchange\\",\\"params\\":{\\"id\\":\\"intervention\\",\\"siteID\\":\\"1234\\"}},{\\"bidder\\":\\"pubmatic\\",\\"params\\":{\\"publisherId\\":\\"01234\\",\\"adSlot\\":\\"TheTimes@300x250\\",\\"section\\":\\"article\\"}},{\\"bidder\\":\\"criteo\\",\\"params\\":{\\"zoneId\\":\\"764879\\"}},{\\"bidder\\":\\"pubmatic\\",\\"params\\":{\\"publisherId\\":\\"01234\\",\\"adSlot\\":\\"TheTimes@320x50\\",\\"section\\":\\"article\\"}},{\\"bidder\\":\\"criteo\\",\\"params\\":{\\"zoneId\\":\\"764882\\"}},{\\"bidder\\":\\"pubmatic\\",\\"params\\":{\\"publisherId\\":\\"01234\\",\\"adSlot\\":\\"TheTimes@320x48\\",\\"section\\":\\"article\\"}},{\\"bidder\\":\\"pubmatic\\",\\"params\\":{\\"publisherId\\":\\"01234\\",\\"adSlot\\":\\"TheTimes@300x50\\",\\"section\\":\\"article\\"}}]};
@@ -203,29 +203,29 @@ exports[`Markup Native renders multiple paragraphs with ads 1`] = `
                         sizes: config.sizes,
                         bids: config.bids
                     }];
-
+        
                     function notifyAdReady() {
                       document.title = 'AD_READY';
                       window.location.hash = ++i;
                     }
-
+        
                     function initPrebidDefaults() {
                       window.pbjs = window.pbjs || {};
                       pbjs.que = pbjs.que || [];
                     }
-
+        
                     function addServices () {
                       googletag.cmd.push(function () {
                         const slotName = '/25436805/d.thetimes.co.uk/article';
                         googletag
                           .defineSlot(slotName, config.sizes, config.code)
                           .addService(googletag.pubads());
-
+        
                         googletag.pubads().enableSingleRequest();
                         googletag.enableServices();
                       });
                     }
-
+        
                     function sendAdserverRequest () {
                       if (pbjs.adserverRequestSent) return;
                       notifyAdReady();
@@ -238,34 +238,34 @@ exports[`Markup Native renders multiple paragraphs with ads 1`] = `
                         });
                       });
                     }
-
+        
                     function initGoogleTagDefaults () {
                       window.googletag = window.googletag || {};
                       googletag.cmd = googletag.cmd || [];
                       googletag.cmd.push(function() {
                         googletag.pubads().disableInitialLoad();
                       });
-
+        
                       addServices();
-
+        
                       pbjs.que.push(function() {
                         pbjs.addAdUnits(adUnits);
                         pbjs.requestBids({
                           bidsBackHandler: sendAdserverRequest
                         });
                       });
-
+        
                       setTimeout(function() {
                         sendAdserverRequest();
                       }, PREBID_TIMEOUT);
                     }
-
+        
                     function init () {
                       initPrebidDefaults();
                       initGoogleTagDefaults();
                     }
                     init();
-
+        
                   </script>
                 </body>
               </html>
@@ -343,7 +343,7 @@ exports[`Markup Native renders multiple paragraphs with ads 1`] = `
               "borderStyle": "solid",
               "borderWidth": 1,
               "color": "#696969",
-              "fontFamily": "TimesDigital-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 12,
               "letterSpacing": 1.5,
               "paddingBottom": 5,
