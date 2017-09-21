@@ -13,12 +13,8 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/ad/__tests__/**.test.js"
-    ],
+    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+    "testMatch": ["<rootDir>/packages/ad/__tests__/**.test.js"],
     "testEnvironment": "jsdom"
   },
   "repository": {
@@ -65,7 +61,6 @@
     "prop-types": "15.5.10",
     "react-broadcast": "0.1.2",
     "react-native-web": "0.0.119",
-    "react-style-proptype": "3.0.0",
     "svgs": "2.3.0"
   },
   "peerDependencies": {

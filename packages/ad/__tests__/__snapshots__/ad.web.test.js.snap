@@ -10,7 +10,7 @@ exports[`AdComposer renders with more than one ad slot 1`] = `
     style={
       Array [
         Object {
-          "height": 50,
+          "minHeight": 50,
         },
         null,
       ]
@@ -24,7 +24,7 @@ exports[`AdComposer renders with more than one ad slot 1`] = `
             "flex": 1,
             "justifyContent": "center",
           },
-          Object {},
+          null,
         ]
       }
     >
@@ -95,7 +95,7 @@ exports[`AdComposer renders with more than one ad slot 1`] = `
     style={
       Array [
         Object {
-          "height": 250,
+          "minHeight": 250,
         },
         null,
       ]
@@ -109,7 +109,7 @@ exports[`AdComposer renders with more than one ad slot 1`] = `
             "flex": 1,
             "justifyContent": "center",
           },
-          Object {},
+          null,
         ]
       }
     >
@@ -185,7 +185,7 @@ exports[`AdComposer renders with one ad slot 1`] = `
     style={
       Array [
         Object {
-          "height": 50,
+          "minHeight": 50,
         },
         null,
       ]
@@ -199,7 +199,7 @@ exports[`AdComposer renders with one ad slot 1`] = `
             "flex": 1,
             "justifyContent": "center",
           },
-          Object {},
+          null,
         ]
       }
     >
