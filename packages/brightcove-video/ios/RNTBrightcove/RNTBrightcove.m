@@ -15,11 +15,11 @@
 
 @implementation RNTBrightcove {
   RCTEventDispatcher *_eventDispatcher;
-  NSString *_playerStatus;
-  NSInteger _playheadPositionMs;
+  Boolean _isPlaying;
+  NSInteger _progress;
   NSInteger _duration;
   NSNumber *_autoplayNumber;
-  Boolean _finished;
+  Boolean _isFinished;
   NSNumber *_hideFullScreenButtonNumber;
 }
 
@@ -42,9 +42,9 @@
 }
 
 - (void)setup {
-  _playerStatus = @"paused";
-  _playheadPositionMs = 0;
-  _finished = NO;
+  _isPlaying = NO;
+  _progress = 0;
+  _isFinished = NO;
 
   BCOVPlayerSDKManager *manager = [BCOVPlayerSDKManager sharedManager];
 
@@ -148,10 +148,10 @@
   }
 
   self.onChange(@{
-    @"playerStatus": _playerStatus,
-    @"playheadPosition": [NSNumber numberWithLong:_playheadPositionMs],
+    @"isPlaying": [NSNumber numberWithBool:_isPlaying],
+    @"progress": [NSNumber numberWithLong:_progress],
     @"duration": [NSNumber numberWithLong:_duration],
-    @"finished": [NSNumber numberWithBool:_finished]
+    @"isFinished": [NSNumber numberWithBool:_isFinished]
   });
 }
 
@@ -179,16 +179,16 @@
   #pragma unused (session)
 
   if ([kBCOVPlaybackSessionLifecycleEventPlay isEqualToString:lifecycleEvent.eventType]) {
-    _playerStatus = @"playing";
+    _isPlaying = YES;
 
     [self emitStatus];
   }
 
   if ([kBCOVPlaybackSessionLifecycleEventPause isEqualToString:lifecycleEvent.eventType]) {
-    _playerStatus = @"paused";
+    _isPlaying = NO;
 
-    if(_playheadPositionMs >= _duration) {
-      _finished = YES;
+    if(_progress >= _duration) {
+      _isFinished = YES;
     }
 
     [self emitStatus];
@@ -200,16 +200,16 @@
   #pragma unused (controller)
   #pragma unused (session)
 
-  _finished = NO;
+  _isFinished = NO;
 
   // for some reason the brightcove SDK returns infinities at the begining and end of videos,
-  // this code normalises playhead position if they are encountered
+  // this code normalises progress if they are encountered
   if (progress == -INFINITY) {
-    _playheadPositionMs = 0;
+    _progress = 0;
   } else if (progress == INFINITY) {
-    _playheadPositionMs = _duration;
+    _progress = _duration;
   } else {
-    _playheadPositionMs = progress * 1000;
+    _progress = progress * 1000;
   }
 
   [self emitStatus];

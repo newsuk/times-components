@@ -47,7 +47,7 @@ public class RNTBrightcoveView extends RelativeLayout {
     }
 
     private boolean isPlaying() {
-        return mPlayerView.getPlayerStatus() == "playing";
+        return mPlayerView.getIsPlaying();
     }
 
     public void play() {
@@ -109,20 +109,20 @@ public class RNTBrightcoveView extends RelativeLayout {
         }
     }
 
-    public void emitState(final String playerStatus, final int playheadPosition) {
+    public void emitState(final Boolean isPlaying, final int progress) {
         WritableMap event = Arguments.createMap();
 
-        if (playerStatus != null) {
+        if (isPlaying != null) {
             Integer duration = mPlayerView.getDuration();
 
-            event.putString("playerStatus", playerStatus);
-            event.putDouble("playheadPosition", playheadPosition);
+            event.putBoolean("isPlaying", isPlaying);
+            event.putDouble("progress", progress);
 
             if (duration > 0) {
                 event.putDouble("duration", duration);
             }
 
-            event.putBoolean("finished", duration == playheadPosition);
+            event.putBoolean("isFinished", duration == progress);
             ReactContext reactContext = (ReactContext) getContext();
             reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
         }

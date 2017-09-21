@@ -51,10 +51,10 @@ class BrightcoveVideo extends Component {
 
   handleChange(evt) {
     const newState = {
-      isPlaying: evt.nativeEvent.playerStatus === "playing",
+      isPlaying: evt.nativeEvent.isPlaying,
       duration: evt.nativeEvent.duration,
-      progress: evt.nativeEvent.playheadPosition,
-      finished: evt.nativeEvent.finished
+      progress: evt.nativeEvent.progress,
+      isFinished: evt.nativeEvent.isFinished
     };
 
     const playerStatusChanged = newState.isPlaying !== this.state.isPlaying;
