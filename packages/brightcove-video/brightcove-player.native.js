@@ -22,10 +22,13 @@ class BrightcoveVideo extends Component {
 
     this.state = {
       errors: [],
-      appState: AppState.currentState
+      appState: AppState.currentState,
+      isPlaying: false,
+      isFinished: false,
+      progress: 0
     };
 
-    this.onChange = this.onChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
     this.onError = this.onError.bind(this);
     this.componentWillUnmount = this.componentWillUnmount.bind(this);
     this.handleAppStateChange = this.handleAppStateChange.bind(this);
@@ -46,10 +49,37 @@ class BrightcoveVideo extends Component {
     }
   }
 
-  onChange(evt) {
-    this.props.onChange(evt.nativeEvent);
+  handleChange(evt) {
+    const newState = {
+      isPlaying: evt.nativeEvent.playerStatus === "playing",
+      duration: evt.nativeEvent.duration,
+      progress: evt.nativeEvent.playheadPosition,
+      finished: evt.nativeEvent.finished
+    };
 
-    this.setState({ playing: evt.nativeEvent.playerStatus === "playing" });
+    const playerStatusChanged = newState.isPlaying !== this.state.isPlaying;
+
+    if (newState.duration !== this.state.duration) {
+      this.props.onDuration(newState.duration);
+    }
+
+    if (playerStatusChanged && newState.isPlaying) {
+      this.props.onPlay();
+    }
+
+    if (newState.progress !== this.state.progress) {
+      this.props.onProgress(newState.progress);
+    }
+
+    if (playerStatusChanged && !newState.isPlaying) {
+      this.props.onPause();
+    }
+
+    if (newState.isFinished !== this.state.isFinished && newState.isFinished) {
+      this.props.onFinish();
+    }
+
+    this.setState(newState);
   }
 
   onError(evt) {
@@ -71,7 +101,7 @@ class BrightcoveVideo extends Component {
         ) {
           nextState.wasPlayingBeforeAppBackgrounded = false;
           this.play();
-        } else if (prevState.playing && nextAppState !== "active") {
+        } else if (prevState.isPlaying && nextAppState !== "active") {
           nextState.wasPlayingBeforeAppBackgrounded = true;
           this.pause();
         }
@@ -103,7 +133,7 @@ class BrightcoveVideo extends Component {
         videoId={this.props.videoId}
         autoplay={this.props.autoplay}
         hideFullScreenButton={this.props.hideFullScreenButton}
-        onChange={this.onChange}
+        onChange={this.handleChange}
         onLoadingError={this.onError} // android handler seems to be reserved on iOS
         onIOSError={this.onError} // so we use this instead
       />

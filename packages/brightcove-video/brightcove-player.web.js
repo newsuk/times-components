@@ -47,13 +47,11 @@ class BrightcoveVideo extends Component {
 
     this.state = {
       id: `${props.videoId}-${props.accountId}-${index}`,
-      accountId: props.accountId,
-      videoId: props.videoId,
-      playerId: props.playerId,
       errors: [].concat(BrightcoveVideo.globalErrors),
-      playerStatus: "paused",
-      finished: false,
-      playheadPosition: 0
+      isPlaying: "paused",
+      isFinished: false,
+      fullscreen: false,
+      progress: 0
     };
   }
 
@@ -98,44 +96,66 @@ class BrightcoveVideo extends Component {
     }
   }
 
+  componentWillUpdate(nextProps, nextState) {
+    const playerStatusChanged = this.state.isPlaying !== nextState.isPlaying;
+
+    if (this.state.duration !== nextState.duration) {
+      this.props.onDuration(nextState.duration);
+    }
+
+    if (playerStatusChanged && nextState.isPlaying) {
+      this.props.onPlay();
+    }
+
+    if (this.state.progress !== nextState.progress) {
+      this.props.onProgress(nextState.progress);
+    }
+
+    if (playerStatusChanged && !nextState.isPlaying) {
+      this.props.onPause();
+    }
+
+    if (
+      this.state.isFinished !== nextState.isFinished &&
+      nextState.isFinished
+    ) {
+      this.props.onFinish();
+    }
+
+    return this.props !== nextProps;
+  }
+
   onError(player) {
     this.props.onError(player.error());
   }
 
   onPlay(player) {
     this.setState({
-      playerStatus: "playing",
-      playheadPosition: BrightcoveVideo.getCurrentTimeMs(player),
-      finished: false
+      isPlaying: true,
+      progress: BrightcoveVideo.getCurrentTimeMs(player),
+      isFinished: false
     });
-
-    this.emitState();
   }
 
   onPause(player) {
     const playheadPosition = BrightcoveVideo.getCurrentTimeMs(player);
 
     this.setState({
-      playerStatus: "paused",
+      isPlaying: false,
       playheadPosition,
-      finished: playheadPosition === this.state.duration
+      isFinished: playheadPosition === this.state.duration
     });
-
-    this.emitState();
   }
 
   onSeeked(player) {
     this.setState({
       playheadPosition: BrightcoveVideo.getCurrentTimeMs(player),
-      finished: false
+      isFinished: false
     });
-
-    this.emitState();
   }
 
   onDurationChange(player) {
     this.setState({ duration: BrightcoveVideo.getDurationMs(player) });
-    this.emitState();
   }
 
   setPlayer(player) {
@@ -150,10 +170,6 @@ class BrightcoveVideo extends Component {
     );
 
     return s;
-  }
-
-  emitState() {
-    this.props.onChange(this.state);
   }
 
   initVideoJS(id) {

@@ -4,7 +4,7 @@ import { View, Image } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { decorateAction } from "@storybook/addon-actions";
+import { action, decorateAction } from "@storybook/addon-actions";
 import BrightcoveVideo from "./brightcove-video";
 import Player from "./brightcove-player";
 
@@ -20,6 +20,7 @@ const posterImageURI =
 const playIconURI = "https://i.imgur.com/qvmvjzE.png";
 
 const firstArgJSONAction = decorateAction([args => [JSON.stringify(args[0])]]);
+const firstArgAction = decorateAction([args => [args[0]]]);
 
 storiesOf("BrightcoveVideo", module)
   .add("Launcher with default values", () => (
@@ -285,12 +286,16 @@ storiesOf("BrightcoveVideo", module)
       onError={firstArgJSONAction("error")}
     />
   ))
-  .add("Player with event listener", () => (
+  .add("Player with event listeners", () => (
     <Player
       policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
-      onChange={firstArgJSONAction("change")}
+      onPlay={action("play")}
+      onPause={firstArgJSONAction("pause")}
+      onProgress={firstArgJSONAction("progress")}
+      onFinish={firstArgJSONAction("finish")}
+      onDuration={firstArgJSONAction("duration")}
     />
   ))
   .add("BrightcoveVideo with event listener", () => (
@@ -298,7 +303,11 @@ storiesOf("BrightcoveVideo", module)
       policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
-      onChange={firstArgJSONAction("change")}
+      onPlay={action("play")}
+      onPause={action("pause")}
+      onProgress={firstArgAction("progress")}
+      onFinish={action("finish")}
+      onDuration={firstArgAction("duration")}
     />
   ))
   .add("Player with external controls", () => (

@@ -13,7 +13,11 @@ export default {
   width: numberOrString,
   height: numberOrString,
   onError: PropTypes.func,
-  onChange: PropTypes.func,
+  onPlay: PropTypes.func,
+  onPause: PropTypes.func,
+  onFinish: PropTypes.func,
+  onProgress: PropTypes.func,
+  onDuration: PropTypes.func,
   autoplay: PropTypes.bool,
   hideFullScreenButton: PropTypes.bool
 };
