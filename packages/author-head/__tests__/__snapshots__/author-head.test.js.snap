@@ -63,7 +63,7 @@ exports[`renders a snapshot 1`] = `
       style={
         Object {
           "color": "#333",
-          "fontFamily": "TimesDigital-Regular",
+          "fontFamily": "TimesDigitalW04",
           "fontSize": 16,
           "lineHeight": 26,
           "maxWidth": "88%",
@@ -203,7 +203,7 @@ exports[`renders a snapshot with data 1`] = `
       style={
         Object {
           "color": "#333",
-          "fontFamily": "TimesDigital-Regular",
+          "fontFamily": "TimesDigitalW04",
           "fontSize": 16,
           "lineHeight": 26,
           "maxWidth": "88%",
