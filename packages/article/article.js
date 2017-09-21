@@ -1,11 +1,146 @@
 import React from "react";
-import { View } from "react-native";
-import ArticleContent from "./article-content";
+import {
+  View,
+  ListView,
+  Platform,
+  StyleSheet,
+  ActivityIndicator
+} from "react-native";
+import PropTypes from "prop-types";
+import Ad, { AdComposer } from "@times-components/ad";
+// import { builder } from "@times-components/markup";
+import Image from "@times-components/image";
+import pick from "lodash.pick";
+import get from "lodash.get";
 
-const Article = () => (
-  <View>
-    <ArticleContent code="intervention" />
-  </View>
-);
+import styles from "./article-style";
+import ArticleHeader from "./article-header";
+import ArticleMeta from "./article-meta";
 
-export default Article;
+const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
+
+class ArticlePage extends React.Component {
+  static prepareDataForListView(props) {
+    const articleData = props.data.article;
+    const adsData = { code: "intervention", section: "article" };
+    const leadAssetData = pick(articleData, ["leadAsset"]);
+    const articleHeaderData = pick(articleData, [
+      "id",
+      "label",
+      "title",
+      "standfirst",
+      "flags"
+    ]);
+
+    const articleMidContainerData = pick(articleData, [
+      "publicationName",
+      "publishedTime",
+      "byline"
+    ]);
+    const ArticleArray = Array.prototype.concat(
+      [
+        { type: "ads", data: adsData },
+        { type: "leadAsset", data: leadAssetData },
+        { type: "header", data: articleHeaderData },
+        { type: "middleContainer", data: articleMidContainerData }
+      ],
+      // NOTE failing gracefully
+      get(articleData, "content", []).map(i => ({
+        type: "article_body_row",
+        data: i
+      }))
+    );
+    return ArticleArray;
+  }
+
+  static renderRow(rowData) {
+    if (rowData.type === "leadAsset") {
+      return (
+        <View style={styles.leadAsset}>
+          <Image source={{ uri: rowData.data.leadAsset.crop.url }} />
+        </View>
+      );
+    } else if (rowData.type === "header") {
+      const { title, flags, standfirst, label } = rowData.data;
+      return (
+        <ArticleHeader
+          title={title}
+          flags={flags}
+          standfirst={standfirst}
+          label={label}
+        />
+      );
+    } else if (rowData.type === "middleContainer") {
+      const { byline, publishedTime, publicationName } = rowData.data;
+      return (
+        <ArticleMeta
+          byline={byline}
+          publishedTime={publishedTime}
+          publicationName={publicationName}
+        />
+      );
+    } else if (rowData.type === "article_body_row") {
+      // return (
+      //   <View style={[styles.articleMainContentRow, styles.articleText]}>
+      //     {builder({ ast: [rowData.data] }).map(el =>
+      //       <View
+      //         style={styles.articleTextWrapper}
+      //         key={`paragraph-${Date.now().toLocaleString()}`}
+      //       >
+      //         {React.cloneElement(el, {
+      //           style: StyleSheet.flatten([styles.articleTextElement])
+      //         })}
+      //       </View>
+      //     )}
+      //   </View>
+      // );
+      // TODO :: fix this, builder does not exit now
+      return null;
+    }
+
+    return null;
+  }
+
+  render() {
+    if (this.props.data.loading) {
+      return (
+        <View style={styles.container}>
+          <ActivityIndicator size={"large"} />
+        </View>
+      );
+    }
+
+    this.state = {
+      dataSource: ds.cloneWithRows(
+        ArticlePage.prepareDataForListView(this.props)
+      )
+    };
+    return (
+      <View style={styles.pageWrapper}>
+        <ListView
+          dataSource={this.state.dataSource}
+          renderRow={ArticlePage.renderRow}
+          initialListSize={10}
+          scrollRenderAheadDistance={10}
+          pageSize={1}
+        />
+      </View>
+    );
+  }
+}
+
+ArticlePage.propTypes = {
+  data: PropTypes.shape({
+    article: PropTypes.object,
+    loading: PropTypes.boolean
+  })
+};
+
+ArticlePage.defaultProps = {
+  data: {
+    loading: true,
+    article: {}
+  }
+};
+
+export default ArticlePage;
