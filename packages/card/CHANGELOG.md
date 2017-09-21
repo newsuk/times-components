@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.3"></a>
+## [0.4.3](https://github.com/newsuk/times-components/compare/@times-components/card@0.4.2...@times-components/card@0.4.3) (2017-09-21)
+
+
+### Bug Fixes
+
+* fetching fonts ([#227](https://github.com/newsuk/times-components/issues/227)) ([614e6d3](https://github.com/newsuk/times-components/commit/614e6d3))
+
+
+
+
 <a name="0.4.2"></a>
 ## [0.4.2](https://github.com/newsuk/times-components/compare/@times-components/card@0.4.1...@times-components/card@0.4.2) (2017-09-19)
 
