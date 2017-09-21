@@ -14,20 +14,20 @@ const articleFixtureNoLabelNoFlagsNoStandFirst = require("./fixtures/no-label-no
 
 storiesOf("Article", module)
   .add("Fixtures - Full", () => <Article {...fullArticleFixture} />)
-  .add("Fixtures - No standfirst", () =>
+  .add("Fixtures - No standfirst", () => (
     <Article {...articleFixtureNoStandfirst} />
-  )
+  ))
   .add("Fixtures - No label", () => <Article {...articleFixtureNoLabel} />)
   .add("Fixtures - No flags", () => <Article {...articleFixtureNoFlags} />)
-  .add("Fixtures - No standfirst, no label", () =>
+  .add("Fixtures - No standfirst, no label", () => (
     <Article {...articleFixtureNoStandfirstNoLabel} />
-  )
-  .add("Fixtures - No standfirst, no flags", () =>
+  ))
+  .add("Fixtures - No standfirst, no flags", () => (
     <Article {...articleFixtureNoStandfirstNoFlags} />
-  )
-  .add("Fixtures - No label, no flags", () =>
+  ))
+  .add("Fixtures - No label, no flags", () => (
     <Article {...articleFixtureNoLabelNoFlags} />
-  )
-  .add("Fixtures - No label, no flags, no standfirst", () =>
+  ))
+  .add("Fixtures - No label, no flags, no standfirst", () => (
     <Article {...articleFixtureNoLabelNoFlagsNoStandFirst} />
-  );
+  ));

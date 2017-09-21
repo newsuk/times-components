@@ -11,46 +11,43 @@ import ArticleLabel from "@times-components/article-label";
 import { Text, View } from "react-native";
 import styles from "./article-style";
 
-const ArticleHeader = ({ label, title, standfirst, flags }) =>
+const ArticleHeader = ({ label, title, standfirst, flags }) => (
   <View style={[styles.ArticleMainContentRow]}>
-    {label
-      ? <View style={styles.ArticleLabel}>
-          <ArticleLabel title={label} color="#13354E" />
-        </View>
-      : null}
+    {label ? (
+      <View style={styles.ArticleLabel}>
+        <ArticleLabel title={label} color="#13354E" />
+      </View>
+    ) : null}
     <View style={[styles.ArticleHeadline]}>
       <ArticleHeadline title={title} style={styles.ArticleHeadLineText} />
     </View>
-    {standfirst
-      ? <Text style={[styles.StandFirst]}>
-          {standfirst}
-        </Text>
-      : null}
-    {flags.length
-      ? <View style={[styles.ArticleFlag]}>
-          {flags.includes("NEW")
-            ? <View style={styles.ArticleFlagContainer}>
-                <NewArticleFlag />
-              </View>
-            : null}
-          {flags.includes("UPDATED")
-            ? <View style={styles.ArticleFlagContainer}>
-                <UpdatedArticleFlag />
-              </View>
-            : null}
-          {flags.includes("EXCLUSIVE")
-            ? <View style={styles.ArticleFlagContainer}>
-                <ExclusiveArticleFlag />
-              </View>
-            : null}
-          {flags.includes("SPONSORED")
-            ? <View style={styles.ArticleFlagContainer}>
-                <SponsoredArticleFlag />
-              </View>
-            : null}
-        </View>
-      : null}
-  </View>;
+    {standfirst ? <Text style={[styles.StandFirst]}>{standfirst}</Text> : null}
+    {flags.length ? (
+      <View style={[styles.ArticleFlag]}>
+        {flags.includes("NEW") ? (
+          <View style={styles.ArticleFlagContainer}>
+            <NewArticleFlag />
+          </View>
+        ) : null}
+        {flags.includes("UPDATED") ? (
+          <View style={styles.ArticleFlagContainer}>
+            <UpdatedArticleFlag />
+          </View>
+        ) : null}
+        {flags.includes("EXCLUSIVE") ? (
+          <View style={styles.ArticleFlagContainer}>
+            <ExclusiveArticleFlag />
+          </View>
+        ) : null}
+        {flags.includes("SPONSORED") ? (
+          <View style={styles.ArticleFlagContainer}>
+            <SponsoredArticleFlag />
+          </View>
+        ) : null}
+      </View>
+    ) : null}
+  </View>
+);
 
 ArticleHeader.propTypes = {
   title: PropTypes.string.isRequired,

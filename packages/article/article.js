@@ -1,14 +1,13 @@
 import React from "react";
 import {
+  Text,
   View,
   ListView,
-  Platform,
   StyleSheet,
   ActivityIndicator
 } from "react-native";
 import PropTypes from "prop-types";
-import Ad, { AdComposer } from "@times-components/ad";
-// import { builder } from "@times-components/markup";
+import { renderTrees } from "@times-components/markup";
 import Image from "@times-components/image";
 import pick from "lodash.pick";
 import get from "lodash.get";
@@ -18,11 +17,13 @@ import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
+const pageSize = 1;
+const listViewSize = 10;
+const scrollRenderAheadDistance = 10;
 
 class ArticlePage extends React.Component {
   static prepareDataForListView(props) {
     const articleData = props.data.article;
-    const adsData = { code: "intervention", section: "article" };
     const leadAssetData = pick(articleData, ["leadAsset"]);
     const articleHeaderData = pick(articleData, [
       "id",
@@ -39,7 +40,6 @@ class ArticlePage extends React.Component {
     ]);
     const ArticleArray = Array.prototype.concat(
       [
-        { type: "ads", data: adsData },
         { type: "leadAsset", data: leadAssetData },
         { type: "header", data: articleHeaderData },
         { type: "middleContainer", data: articleMidContainerData }
@@ -54,15 +54,7 @@ class ArticlePage extends React.Component {
   }
 
   static renderRow(rowData) {
-    if (rowData.type === "ads" && Platform.OS === "web") {
-      return (
-        <View style={styles.ArticleAd}>
-          <AdComposer section="article" networkId="25436805">
-            <Ad code={rowData.data.code} section={rowData.data.section} />
-          </AdComposer>
-        </View>
-      );
-    } else if (rowData.type === "leadAsset") {
+    if (rowData.type === "leadAsset") {
       return (
         <View style={styles.LeadAsset}>
           <Image source={{ uri: rowData.data.leadAsset.crop.url }} />
@@ -88,25 +80,41 @@ class ArticlePage extends React.Component {
         />
       );
     } else if (rowData.type === "article_body_row") {
-      // return (
-      //   <View style={[styles.ArticleMainContentRow, styles.ArticleText]}>
-      //     {builder({ ast: [rowData.data] }).map(el =>
-      //       <View
-      //         style={styles.ArticleTextWrapper}
-      //         key={`paragraph-${Date.now().toLocaleString()}`}
-      //       >
-      //         {React.cloneElement(el, {
-      //           style: StyleSheet.flatten([styles.ArticleTextElement])
-      //         })}
-      //       </View>
-      //     )}
-      //   </View>
-      // );
-      // TODO :: fix this, builder does not exit now
-      return null;
+      return (
+        <View style={[styles.ArticleMainContentRow]}>
+          {renderTrees([rowData.data], {
+            paragraph(key, attributes, children) {
+              return (
+                <Text
+                  key={key}
+                  style={StyleSheet.flatten([styles.ArticleTextElement])}
+                >
+                  {children}
+                </Text>
+              );
+            }
+          })}
+        </View>
+      );
     }
-
     return null;
+  }
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      dataSource: ds.cloneWithRows({})
+    };
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (!nextProps.data.loading) {
+      this.setState({
+        dataSource: ds.cloneWithRows(
+          ArticlePage.prepareDataForListView(nextProps)
+        )
+      });
+    }
   }
 
   render() {
@@ -118,19 +126,14 @@ class ArticlePage extends React.Component {
       );
     }
 
-    this.state = {
-      dataSource: ds.cloneWithRows(
-        ArticlePage.prepareDataForListView(this.props)
-      )
-    };
     return (
       <View style={styles.PageWrapper}>
         <ListView
           dataSource={this.state.dataSource}
           renderRow={ArticlePage.renderRow}
-          initialListSize={10}
-          scrollRenderAheadDistance={10}
-          pageSize={1}
+          initialListSize={listViewSize}
+          scrollRenderAheadDistance={scrollRenderAheadDistance}
+          pageSize={pageSize}
         />
       </View>
     );

@@ -70,7 +70,7 @@ const webStyles = StyleSheet.create({
   },
   ArticleTextElement: {
     fontFamily: bodyFontFamilyWebIos,
-    lineHeight: 1.53,
+    lineHeight: 26,
     fontSize: 17,
     marginBottom: 25,
     marginTop: 0,
