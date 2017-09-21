@@ -326,6 +326,35 @@ describe("brightcove-video web component", () => {
           }, 50);
         });
 
+        it("will emit a 'finish' event if time at pause is greater than or equal to video duration", done => {
+          dummyPlayer.currentTime = () => 11;
+          dummyPlayer.duration = () => 11;
+
+          const component = (
+            <BrightcoveVideo
+              accountId="57838016001"
+              videoId="[X]"
+              onFinish={() => {
+                done();
+              }}
+            />
+          );
+
+          ReactDOM.render(component, reactWrapper);
+
+          setTimeout(() => {
+            dummyScript.onload();
+          }, 50);
+
+          setTimeout(() => {
+            evtReg.durationchange();
+          }, 100);
+
+          setTimeout(() => {
+            evtReg.pause();
+          }, 150);
+        });
+
         it("will emit a 'progress' event", done => {
           dummyPlayer.currentTime = () => 0.1;
 
@@ -351,7 +380,33 @@ describe("brightcove-video web component", () => {
           }, 50);
         });
 
-        it("will not error if there is no change handler", done => {
+        it("will emit a 'duration' event", done => {
+          dummyPlayer.currentTime = () => 0.1;
+          dummyPlayer.duration = () => 0.85;
+
+          const component = (
+            <BrightcoveVideo
+              accountId="57838016001"
+              videoId="[X]"
+              onDuration={duration => {
+                expect(duration).toBe(850);
+                done();
+              }}
+            />
+          );
+
+          ReactDOM.render(component, reactWrapper);
+
+          setTimeout(() => {
+            dummyScript.onload();
+
+            setTimeout(() => {
+              evtReg.durationchange();
+            }, 50);
+          }, 50);
+        });
+
+        it("will not error if there are no handlers", done => {
           dummyPlayer.currentTime = () => "Seek & ye will find";
 
           const component = (
