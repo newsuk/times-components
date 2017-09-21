@@ -2,7 +2,6 @@
 
 exports[`renders horizontal above breakpoint 1`] = `
 <View
-  id="7f888af8-596c-4290-9798-78e209624b72"
   onLayout={[Function]}
   style={
     Array [
@@ -87,7 +86,6 @@ exports[`renders horizontal above breakpoint 1`] = `
 
 exports[`renders vertical by default 1`] = `
 <View
-  id="7f888af8-596c-4290-9798-78e209624b72"
   onLayout={[Function]}
   style={
     Array [
@@ -232,7 +230,6 @@ exports[`renders vertical by default 1`] = `
 
 exports[`renders without image 1`] = `
 <View
-  id="7f888af8-596c-4290-9798-78e209624b72"
   onLayout={[Function]}
   style={
     Array [
@@ -340,7 +337,6 @@ exports[`renders without image 1`] = `
 
 exports[`renders without image url 1`] = `
 <View
-  id="7f888af8-596c-4290-9798-78e209624b72"
   onLayout={[Function]}
   style={
     Array [

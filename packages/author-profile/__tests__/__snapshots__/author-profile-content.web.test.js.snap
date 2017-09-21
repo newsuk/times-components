@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders profile 1`] = `
-<AuthorProfileContent
+<AuthorProfile
   articles={
     Object {
       "count": 24,
@@ -739,7 +739,6 @@ exports[`renders profile 1`] = `
   name="Fiona Hamilton"
   onNext={[Function]}
   onPrev={[Function]}
-  onViewed={[Function]}
   page={1}
   pageSize={10}
   twitter="jdoe"
@@ -747,295 +746,287 @@ exports[`renders profile 1`] = `
 `;
 
 exports[`renders profile content 1`] = `
-<View>
+<RCTScrollView
+  testID="scroll-view"
+>
   <View>
-    <View
-      pointerEvents="box-none"
-      style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "transparent",
-          "paddingBottom": 50,
-        }
-      }
-    >
+    <View>
       <View
-        accessibilityRole="banner"
+        pointerEvents="box-none"
         style={
           Object {
             "alignItems": "center",
-            "backgroundColor": "#F9F8F3",
-            "flexDirection": "column",
+            "backgroundColor": "transparent",
             "paddingBottom": 50,
-            "width": "100%",
-          }
-        }
-      >
-        <Text
-          accessibilityRole="heading"
-          accessible={true}
-          allowFontScaling={true}
-          aria-level="1"
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#000",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 45,
-              "paddingTop": 32,
-            }
-          }
-        >
-          Fiona Hamilton
-        </Text>
-        <Text
-          accessibilityRole="heading"
-          accessible={true}
-          allowFontScaling={true}
-          aria-level="2"
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#696969",
-              "fontFamily": "TimesDigital-RegularSC",
-              "fontSize": 15,
-            }
-          }
-        >
-          legal editor
-        </Text>
-        <Text
-          accessibilityRole="link"
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          href="https://twitter.com/jdoe"
-          onPress={[Function]}
-          style={
-            Array [
-              Object {
-                "textDecorationLine": "underline",
-              },
-              Object {
-                "color": "#006699",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 18,
-                "paddingTop": 16,
-                "textDecorationLine": "none",
-              },
-            ]
-          }
-        >
-          @
-          jdoe
-        </Text>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#333",
-              "fontFamily": "TimesDigital-Regular",
-              "fontSize": 16,
-              "lineHeight": 26,
-              "maxWidth": "88%",
-              "paddingBottom": 32,
-              "textAlign": "center",
-            }
-          }
-        >
-          Lorem 
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "fontWeight": "bold",
-              }
-            }
-          >
-            ipsum
-          </Text>
-           testbr 
-          More text 
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "fontStyle": "italic",
-              }
-            }
-          >
-             last 
-          </Text>
-        </Text>
-      </View>
-      <View
-        style={
-          Object {
-            "bottom": 0,
-            "height": 100,
-            "position": "absolute",
-            "width": 100,
           }
         }
       >
         <View
-          onLayout={[Function]}
-        >
-          <Image
-            onError={[Function]}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                Object {
-                  "borderColor": "#FFF",
-                  "borderRadius": 50,
-                  "borderWidth": 5,
-                  "height": 100,
-                  "width": 100,
-                },
-              ]
-            }
-          />
-        </View>
-      </View>
-    </View>
-    <View
-      style={
-        Object {
-          "alignItems": "stretch",
-          "flexDirection": "row",
-          "justifyContent": "center",
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "flex": 1,
-            "marginBottom": 10,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "maxWidth": 800,
-          }
-        }
-      >
-        <View
-          onLayout={[Function]}
+          accessibilityRole="banner"
           style={
             Object {
-              "alignItems": "stretch",
+              "alignItems": "center",
+              "backgroundColor": "#F9F8F3",
               "flexDirection": "column",
+              "paddingBottom": 50,
+              "width": "100%",
             }
           }
         >
-          <View
+          <Text
+            accessibilityRole="heading"
+            accessible={true}
+            allowFontScaling={true}
+            aria-level="1"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#000",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 45,
+                "paddingTop": 32,
+              }
+            }
+          >
+            Fiona Hamilton
+          </Text>
+          <Text
+            accessibilityRole="heading"
+            accessible={true}
+            allowFontScaling={true}
+            aria-level="2"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "TimesDigital-RegularSC",
+                "fontSize": 15,
+              }
+            }
+          >
+            legal editor
+          </Text>
+          <Text
+            accessibilityRole="link"
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            href="https://twitter.com/jdoe"
+            onPress={[Function]}
             style={
               Array [
                 Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                  "height": 40,
-                  "justifyContent": "space-between",
+                  "textDecorationLine": "underline",
                 },
                 Object {
-                  "justifyContent": "center",
+                  "color": "#006699",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 18,
+                  "paddingTop": 16,
+                  "textDecorationLine": "none",
                 },
-                null,
               ]
             }
           >
+            @
+            jdoe
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#333",
+                "fontFamily": "TimesDigital-Regular",
+                "fontSize": 16,
+                "lineHeight": 26,
+                "maxWidth": "88%",
+                "paddingBottom": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            Lorem 
             <Text
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
+                Object {
+                  "fontWeight": "bold",
+                }
+              }
+            >
+              ipsum
+            </Text>
+             testbr 
+            More text 
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontStyle": "italic",
+                }
+              }
+            >
+               last 
+            </Text>
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "bottom": 0,
+              "height": 100,
+              "position": "absolute",
+              "width": 100,
+            }
+          }
+        >
+          <View
+            onLayout={[Function]}
+          >
+            <Image
+              onError={[Function]}
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg",
+                }
+              }
+              style={
                 Array [
                   Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 15,
+                    "height": 1,
+                    "width": 750,
+                  },
+                  Object {
+                    "borderColor": "#FFF",
+                    "borderRadius": 50,
+                    "borderWidth": 5,
+                    "height": 100,
+                    "width": 100,
                   },
                 ]
               }
-            >
-              Showing 1 - 10 of 24 results
-            </Text>
+            />
           </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "stretch",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "marginBottom": 10,
+              "marginLeft": 10,
+              "marginRight": 10,
+              "maxWidth": 800,
+            }
+          }
+        >
           <View
+            onLayout={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                  "height": 40,
-                  "justifyContent": "space-between",
-                },
-                Object {
-                  "borderBottomColor": "#dbdbdb",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
-                  "borderTopWidth": 1,
-                },
-              ]
+              Object {
+                "alignItems": "stretch",
+                "flexDirection": "column",
+              }
             }
           >
-            <View />
-            <View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 40,
+                    "justifyContent": "space-between",
+                  },
+                  Object {
+                    "justifyContent": "center",
+                  },
+                  null,
+                ]
+              }
+            >
               <Text
-                accessibilityRole="link"
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail"
-                href="?page=2"
-                onPress={[Function]}
                 style={
                   Array [
                     Object {
-                      "textDecorationLine": "underline",
-                    },
-                    Object {
-                      "color": "#006699",
+                      "color": "#696969",
                       "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 14,
+                      "fontSize": 15,
                     },
                   ]
                 }
               >
-                Next page &gt;
+                Showing 1 - 10 of 24 results
               </Text>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 40,
+                    "justifyContent": "space-between",
+                  },
+                  Object {
+                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomWidth": 1,
+                    "borderStyle": "solid",
+                    "borderTopColor": "#dbdbdb",
+                    "borderTopWidth": 1,
+                  },
+                ]
+              }
+            >
+              <View />
+              <View>
+                <Text
+                  accessibilityRole="link"
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  href="?page=2"
+                  onPress={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "textDecorationLine": "underline",
+                      },
+                      Object {
+                        "color": "#006699",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 14,
+                      },
+                    ]
+                  }
+                >
+                  Next page &gt;
+                </Text>
+              </View>
             </View>
           </View>
         </View>
       </View>
     </View>
-  </View>
-  <RCTScrollView
-    dataSource={
-      ListViewDataSource {
-        "items": 18,
-      }
-    }
-    onChangeVisibleRows={[Function]}
-    renderRow={[Function]}
-    renderScrollComponent={[Function]}
-    renderSeparator={[Function]}
-  >
     <View>
       <View
         style={
@@ -1046,7 +1037,6 @@ exports[`renders profile content 1`] = `
         }
       >
         <View
-          id="97c64f20-cb67-11e4-a202-50ac5def393a"
           onLayout={[Function]}
           style={
             Array [
@@ -1198,6 +1188,17 @@ exports[`renders profile content 1`] = `
           </View>
         </View>
       </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
       <View
         style={
           Object {
@@ -1207,7 +1208,6 @@ exports[`renders profile content 1`] = `
         }
       >
         <View
-          id="61143932-6f49-4720-9506-10f32f2eca0d"
           onLayout={[Function]}
           style={
             Array [
@@ -1361,6 +1361,17 @@ exports[`renders profile content 1`] = `
           </View>
         </View>
       </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
       <View
         style={
           Object {
@@ -1370,7 +1381,6 @@ exports[`renders profile content 1`] = `
         }
       >
         <View
-          id="08fc89f8-bbe1-4ba1-9fd3-39607ea9bc49"
           onLayout={[Function]}
           style={
             Array [
@@ -1524,6 +1534,17 @@ exports[`renders profile content 1`] = `
           </View>
         </View>
       </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
       <View
         style={
           Object {
@@ -1533,7 +1554,6 @@ exports[`renders profile content 1`] = `
         }
       >
         <View
-          id="d9851f3a-a67f-4249-b16a-1b0cb5bec915"
           onLayout={[Function]}
           style={
             Array [
@@ -1687,6 +1707,17 @@ exports[`renders profile content 1`] = `
           </View>
         </View>
       </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
       <View
         style={
           Object {
@@ -1696,7 +1727,6 @@ exports[`renders profile content 1`] = `
         }
       >
         <View
-          id="be9dfdb0-a21e-45d5-93a5-76fa6d748b7b"
           onLayout={[Function]}
           style={
             Array [
@@ -1838,6 +1868,17 @@ exports[`renders profile content 1`] = `
           </View>
         </View>
       </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
       <View
         style={
           Object {
@@ -1847,7 +1888,6 @@ exports[`renders profile content 1`] = `
         }
       >
         <View
-          id="6674e762-f171-4885-820d-ea067ec66a74"
           onLayout={[Function]}
           style={
             Array [
@@ -2001,6 +2041,17 @@ exports[`renders profile content 1`] = `
           </View>
         </View>
       </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
       <View
         style={
           Object {
@@ -2010,7 +2061,6 @@ exports[`renders profile content 1`] = `
         }
       >
         <View
-          id="89bd6c18-ccf9-11e4-81dd-064fe933cd40"
           onLayout={[Function]}
           style={
             Array [
@@ -2152,6 +2202,17 @@ exports[`renders profile content 1`] = `
           </View>
         </View>
       </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
       <View
         style={
           Object {
@@ -2161,7 +2222,6 @@ exports[`renders profile content 1`] = `
         }
       >
         <View
-          id="88152206-eaaa-4c19-940e-a1a2a9b80b62"
           onLayout={[Function]}
           style={
             Array [
@@ -2303,6 +2363,17 @@ exports[`renders profile content 1`] = `
           </View>
         </View>
       </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
       <View
         style={
           Object {
@@ -2312,7 +2383,6 @@ exports[`renders profile content 1`] = `
         }
       >
         <View
-          id="89bd6c18-ccf9-11e4-81dd-064fe933cd41"
           onLayout={[Function]}
           style={
             Array [
@@ -2454,6 +2524,17 @@ exports[`renders profile content 1`] = `
           </View>
         </View>
       </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
       <View
         style={
           Object {
@@ -2463,7 +2544,6 @@ exports[`renders profile content 1`] = `
         }
       >
         <View
-          id="aaa93b19-e26e-4ee5-81de-3e8090b5a1a1"
           onLayout={[Function]}
           style={
             Array [
@@ -2605,6 +2685,17 @@ exports[`renders profile content 1`] = `
           </View>
         </View>
       </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
       <View
         style={
           Object {
@@ -2614,7 +2705,6 @@ exports[`renders profile content 1`] = `
         }
       >
         <View
-          id="9b16fbe5-958d-4874-9d2e-b6d29dbcbe9f"
           onLayout={[Function]}
           style={
             Array [
@@ -2756,6 +2846,17 @@ exports[`renders profile content 1`] = `
           </View>
         </View>
       </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
       <View
         style={
           Object {
@@ -2765,7 +2866,6 @@ exports[`renders profile content 1`] = `
         }
       >
         <View
-          id="0407b30e-0751-403a-a39c-f30ff6c3f5bb"
           onLayout={[Function]}
           style={
             Array [
@@ -2907,6 +3007,17 @@ exports[`renders profile content 1`] = `
           </View>
         </View>
       </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
       <View
         style={
           Object {
@@ -2916,7 +3027,6 @@ exports[`renders profile content 1`] = `
         }
       >
         <View
-          id="7966deb9-b1f7-447c-81c5-51fa88b935ee"
           onLayout={[Function]}
           style={
             Array [
@@ -3058,6 +3168,17 @@ exports[`renders profile content 1`] = `
           </View>
         </View>
       </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
       <View
         style={
           Object {
@@ -3067,7 +3188,6 @@ exports[`renders profile content 1`] = `
         }
       >
         <View
-          id="7b3e8143-d446-4cd8-b330-0dacc5f818c4"
           onLayout={[Function]}
           style={
             Array [
@@ -3216,6 +3336,17 @@ exports[`renders profile content 1`] = `
           </View>
         </View>
       </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
       <View
         style={
           Object {
@@ -3225,7 +3356,6 @@ exports[`renders profile content 1`] = `
         }
       >
         <View
-          id="aa3ccb09-2407-4151-b1d8-a9ec55487d05"
           onLayout={[Function]}
           style={
             Array [
@@ -3367,6 +3497,17 @@ exports[`renders profile content 1`] = `
           </View>
         </View>
       </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
       <View
         style={
           Object {
@@ -3376,7 +3517,6 @@ exports[`renders profile content 1`] = `
         }
       >
         <View
-          id="5a33a77b-c24e-41b6-9876-32b83a336da9"
           onLayout={[Function]}
           style={
             Array [
@@ -3525,6 +3665,17 @@ exports[`renders profile content 1`] = `
           </View>
         </View>
       </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
       <View
         style={
           Object {
@@ -3534,7 +3685,6 @@ exports[`renders profile content 1`] = `
         }
       >
         <View
-          id="fcc85270-54c9-4938-a0fc-5de8e3628885"
           onLayout={[Function]}
           style={
             Array [
@@ -3689,6 +3839,17 @@ exports[`renders profile content 1`] = `
           </View>
         </View>
       </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
       <View
         style={
           Object {
@@ -3698,7 +3859,6 @@ exports[`renders profile content 1`] = `
         }
       >
         <View
-          id="be725c01-dd7e-4c46-85b5-16ffc30c0b98"
           onLayout={[Function]}
           style={
             Array [
@@ -3854,8 +4014,8 @@ exports[`renders profile content 1`] = `
         </View>
       </View>
     </View>
-  </RCTScrollView>
-</View>
+  </View>
+</RCTScrollView>
 `;
 
 exports[`renders profile content component 1`] = `
@@ -4154,7 +4314,6 @@ exports[`renders profile content component 1`] = `
       }
     >
       <View
-        id="97c64f20-cb67-11e4-a202-50ac5def393a"
         onLayout={[Function]}
         style={
           Array [
@@ -4333,7 +4492,6 @@ exports[`renders profile content component 1`] = `
       }
     >
       <View
-        id="61143932-6f49-4720-9506-10f32f2eca0d"
         onLayout={[Function]}
         style={
           Array [
@@ -4514,7 +4672,6 @@ exports[`renders profile content component 1`] = `
       }
     >
       <View
-        id="08fc89f8-bbe1-4ba1-9fd3-39607ea9bc49"
         onLayout={[Function]}
         style={
           Array [
@@ -4695,7 +4852,6 @@ exports[`renders profile content component 1`] = `
       }
     >
       <View
-        id="d9851f3a-a67f-4249-b16a-1b0cb5bec915"
         onLayout={[Function]}
         style={
           Array [
@@ -4876,7 +5032,6 @@ exports[`renders profile content component 1`] = `
       }
     >
       <View
-        id="be9dfdb0-a21e-45d5-93a5-76fa6d748b7b"
         onLayout={[Function]}
         style={
           Array [
@@ -5045,7 +5200,6 @@ exports[`renders profile content component 1`] = `
       }
     >
       <View
-        id="6674e762-f171-4885-820d-ea067ec66a74"
         onLayout={[Function]}
         style={
           Array [
@@ -5226,7 +5380,6 @@ exports[`renders profile content component 1`] = `
       }
     >
       <View
-        id="89bd6c18-ccf9-11e4-81dd-064fe933cd40"
         onLayout={[Function]}
         style={
           Array [
@@ -5395,7 +5548,6 @@ exports[`renders profile content component 1`] = `
       }
     >
       <View
-        id="88152206-eaaa-4c19-940e-a1a2a9b80b62"
         onLayout={[Function]}
         style={
           Array [
@@ -5564,7 +5716,6 @@ exports[`renders profile content component 1`] = `
       }
     >
       <View
-        id="89bd6c18-ccf9-11e4-81dd-064fe933cd41"
         onLayout={[Function]}
         style={
           Array [
@@ -5733,7 +5884,6 @@ exports[`renders profile content component 1`] = `
       }
     >
       <View
-        id="aaa93b19-e26e-4ee5-81de-3e8090b5a1a1"
         onLayout={[Function]}
         style={
           Array [
@@ -5902,7 +6052,6 @@ exports[`renders profile content component 1`] = `
       }
     >
       <View
-        id="9b16fbe5-958d-4874-9d2e-b6d29dbcbe9f"
         onLayout={[Function]}
         style={
           Array [
@@ -6071,7 +6220,6 @@ exports[`renders profile content component 1`] = `
       }
     >
       <View
-        id="0407b30e-0751-403a-a39c-f30ff6c3f5bb"
         onLayout={[Function]}
         style={
           Array [
@@ -6240,7 +6388,6 @@ exports[`renders profile content component 1`] = `
       }
     >
       <View
-        id="7966deb9-b1f7-447c-81c5-51fa88b935ee"
         onLayout={[Function]}
         style={
           Array [
@@ -6409,7 +6556,6 @@ exports[`renders profile content component 1`] = `
       }
     >
       <View
-        id="7b3e8143-d446-4cd8-b330-0dacc5f818c4"
         onLayout={[Function]}
         style={
           Array [
@@ -6585,7 +6731,6 @@ exports[`renders profile content component 1`] = `
       }
     >
       <View
-        id="aa3ccb09-2407-4151-b1d8-a9ec55487d05"
         onLayout={[Function]}
         style={
           Array [
@@ -6754,7 +6899,6 @@ exports[`renders profile content component 1`] = `
       }
     >
       <View
-        id="5a33a77b-c24e-41b6-9876-32b83a336da9"
         onLayout={[Function]}
         style={
           Array [
@@ -6930,7 +7074,6 @@ exports[`renders profile content component 1`] = `
       }
     >
       <View
-        id="fcc85270-54c9-4938-a0fc-5de8e3628885"
         onLayout={[Function]}
         style={
           Array [
@@ -7112,7 +7255,6 @@ exports[`renders profile content component 1`] = `
       }
     >
       <View
-        id="be725c01-dd7e-4c46-85b5-16ffc30c0b98"
         onLayout={[Function]}
         style={
           Array [
