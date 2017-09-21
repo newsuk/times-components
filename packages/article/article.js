@@ -54,17 +54,9 @@ class ArticlePage extends React.Component {
   }
 
   static renderRow(rowData) {
-    if (rowData.type === "ads" && Platform.OS === "web") {
+    if (rowData.type === "leadAsset") {
       return (
-        <View style={styles.ArticleAd}>
-          <AdComposer section="article" networkId="25436805">
-            <Ad code={rowData.data.code} section={rowData.data.section} />
-          </AdComposer>
-        </View>
-      );
-    } else if (rowData.type === "leadAsset") {
-      return (
-        <View style={styles.LeadAsset}>
+        <View style={styles.leadAsset}>
           <Image source={{ uri: rowData.data.leadAsset.crop.url }} />
         </View>
       );
@@ -89,14 +81,14 @@ class ArticlePage extends React.Component {
       );
     } else if (rowData.type === "article_body_row") {
       // return (
-      //   <View style={[styles.ArticleMainContentRow, styles.ArticleText]}>
+      //   <View style={[styles.articleMainContentRow, styles.articleText]}>
       //     {builder({ ast: [rowData.data] }).map(el =>
       //       <View
-      //         style={styles.ArticleTextWrapper}
+      //         style={styles.articleTextWrapper}
       //         key={`paragraph-${Date.now().toLocaleString()}`}
       //       >
       //         {React.cloneElement(el, {
-      //           style: StyleSheet.flatten([styles.ArticleTextElement])
+      //           style: StyleSheet.flatten([styles.articleTextElement])
       //         })}
       //       </View>
       //     )}
@@ -112,7 +104,7 @@ class ArticlePage extends React.Component {
   render() {
     if (this.props.data.loading) {
       return (
-        <View style={styles.Container}>
+        <View style={styles.container}>
           <ActivityIndicator size={"large"} />
         </View>
       );
@@ -124,7 +116,7 @@ class ArticlePage extends React.Component {
       )
     };
     return (
-      <View style={styles.PageWrapper}>
+      <View style={styles.pageWrapper}>
         <ListView
           dataSource={this.state.dataSource}
           renderRow={ArticlePage.renderRow}
@@ -146,7 +138,8 @@ ArticlePage.propTypes = {
 
 ArticlePage.defaultProps = {
   data: {
-    loading: true
+    loading: true,
+    article: {}
   }
 };
 
