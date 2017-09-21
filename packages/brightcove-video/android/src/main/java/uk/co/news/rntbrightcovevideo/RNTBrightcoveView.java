@@ -113,9 +113,16 @@ public class RNTBrightcoveView extends RelativeLayout {
         WritableMap event = Arguments.createMap();
 
         if (playerStatus != null) {
+            Integer duration = mPlayerView.getDuration();
+
             event.putString("playerStatus", playerStatus);
             event.putDouble("playheadPosition", playheadPosition);
-            event.putBoolean("finished", mPlayerView.getDuration() == playheadPosition);
+
+            if (duration > 0) {
+                event.putDouble("duration", duration);
+            }
+
+            event.putBoolean("finished", duration == playheadPosition);
             ReactContext reactContext = (ReactContext) getContext();
             reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
         }
