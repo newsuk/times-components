@@ -1,12 +1,14 @@
 {
   "name": "@times-components/article",
-  "version": "0.4.3",
+  "version": "0.5.3",
   "description": "The article",
   "main": "article.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
-    "test": "jest --bail --ci --coverage"
+    "test": "jest --bail --ci --coverage",
+    "prettier:diff": "prettier --list-different '**/*.js'",
+    "lint": "eslint . && npm run prettier:diff"
   },
   "jest": {
     "preset": "react-native",
