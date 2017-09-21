@@ -65,7 +65,7 @@ storiesOf("Provider", module).add("Default", () => {
 storiesOf("Provider", module).add("AuthorProfileProvider", () => (
   <ApolloProvider client={client}>
     <AuthorProfileProvider
-      imageRatio="3:2"
+      articleImageRatio="3:2"
       slug="fiona-hamilton"
       page={1}
       pageSize={3}

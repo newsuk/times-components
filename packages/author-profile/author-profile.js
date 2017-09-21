@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import AuthorProfileProvider from "./provider";
 import AuthorProfileContent from "./author-profile-content";
 import AuthorProfileEmpty from "./author-profile-empty";
 import AuthorProfileError from "./author-profile-error";
@@ -54,3 +55,5 @@ AuthorProfile.defaultProps = {
 };
 
 export default AuthorProfile;
+
+export { AuthorProfileProvider };

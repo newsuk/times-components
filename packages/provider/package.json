@@ -13,6 +13,9 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
+    "collectCoverageFrom": [
+      "!<rootDir>/**/__tests__/**"
+    ],
     "transformIgnorePatterns": [
       "node_modules/(?!@times-components)/"
     ],

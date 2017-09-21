@@ -11,9 +11,15 @@ import {
 import { storiesOf } from "@storybook/react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { decorateAction } from "@storybook/addon-actions";
-import AuthorProfile from "./author-profile";
-import AuthorProfileProvider from "./provider";
+import AuthorProfile, { AuthorProfileProvider } from "./author-profile";
 import example from "./example.json";
+
+const preventDefaultedAction = decorateAction([
+  ([e, ...args]) => {
+    e.preventDefault();
+    return ["[SyntheticEvent (storybook prevented default)]", ...args];
+  }
+]);
 
 const styles = StyleSheet.create({
   background: {
@@ -57,17 +63,12 @@ const client = new ApolloClient({
 });
 
 const story = m => (
-  <View style={styles.background}>
-    <View style={styles.container}>{m}</View>
-  </View>
+  <ApolloProvider client={client}>
+    <View style={styles.background}>
+      <View style={styles.container}>{m}</View>
+    </View>
+  </ApolloProvider>
 );
-
-const preventDefaultedAction = decorateAction([
-  ([e, ...args]) => {
-    e.preventDefault();
-    return ["[SyntheticEvent (storybook prevented default)]", ...args];
-  }
-]);
 
 storiesOf("AuthorProfile", module)
   .add("Default", () => {
@@ -104,15 +105,19 @@ storiesOf("AuthorProfile", module)
 
     return story(<AuthorProfile {...props} />);
   })
-  .add("Provider", () =>
-    story(
-      <ApolloProvider client={client}>
-        <AuthorProfileProvider
-          imageRatio="3:2"
-          slug="fiona-hamilton"
-          page={1}
-          pageSize={3}
-        />
-      </ApolloProvider>
-    )
-  );
+  .add("Provider", () => {
+    const onTwitterLinkPress = preventDefaultedAction("onTwitterLinkPress");
+
+    return story(
+      <AuthorProfileProvider
+        articleImageRatio="3:2"
+        slug="fiona-hamilton"
+        page={1}
+        pageSize={3}
+      >
+        {props => (
+          <AuthorProfile onTwitterLinkPress={onTwitterLinkPress} {...props} />
+        )}
+      </AuthorProfileProvider>
+    );
+  });

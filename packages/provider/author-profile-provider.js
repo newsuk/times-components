@@ -41,11 +41,11 @@ const query = gql`
   }
 `;
 
-const propsToVariables = ({ slug, pageSize, page, imageRatio }) => ({
+const propsToVariables = ({ slug, pageSize, page, articleImageRatio }) => ({
   slug,
   first: pageSize,
   skip: pageSize * (page - 1),
-  imageRatio
+  imageRatio: articleImageRatio
 });
 
 export default connect(query, propsToVariables);

@@ -2,7 +2,7 @@
   "name": "@times-components/author-profile",
   "version": "0.7.1",
   "description": "Author info along with articles they have written",
-  "main": "index.js",
+  "main": "author-profile",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
@@ -41,7 +41,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/provider": "0.4.0",
+    "@times-components/provider": "0.4.6",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-loader": "7.0.0",

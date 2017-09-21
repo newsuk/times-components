@@ -3,51 +3,38 @@ import React from "react";
 import PropTypes from "prop-types";
 import { AuthorProfileProvider } from "@times-components/provider";
 import { withPageState } from "@times-components/pagination";
-import AuthorProfile from "./author-profile";
 
 const AuthorProfileWithPageState = withPageState(AuthorProfileProvider);
 
-const AuthorProfileComponent = ({ error, loading, result, ...extras }) => {
-  if (result.author) {
-    const author = Object.assign(
-      {},
-      Object.assign({}, result.author, {
-        articles: {
-          count: get(result, "author.articles.count", 0),
-          list: get(result, "author.articles.list", []).map(article => ({
-            ...article,
-            publishedTime: new Date(article.publishedTime)
-          }))
-        }
-      }),
-      {
-        count: get(result, "author.articles.count")
-      }
-    );
-
-    return (
-      <AuthorProfile
-        error={error}
-        loading={loading}
-        data={author}
-        {...extras}
-      />
-    );
+const AuthorProfileComponent = ({ author, children, ...props }) => {
+  if (!author) {
+    return children(props);
   }
 
-  return <AuthorProfile error={error} loading={loading} {...extras} />;
+  const result = {
+    ...author,
+    articles: {
+      ...author.articles,
+      list: get(author, "articles.list", []).map(article => ({
+        ...article,
+        publishedTime: new Date(article.publishedTime)
+      }))
+    },
+    count: get(author, "articles.count")
+  };
+
+  return children({
+    ...props,
+    result
+  });
 };
 
 AuthorProfileComponent.propTypes = {
-  error: PropTypes.shape(),
-  loading: PropTypes.bool,
-  result: PropTypes.shape()
+  author: PropTypes.shape()
 };
 
 AuthorProfileComponent.defaultProps = {
-  error: null,
-  loading: true,
-  result: null
+  author: null
 };
 
 export default props => (

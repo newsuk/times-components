@@ -2,11 +2,11 @@
 
 import "jsdom";
 import "react-native";
+import get from "lodash.get";
 import React from "react";
 import { shallow } from "enzyme";
 import renderer from "react-test-renderer";
 import AuthorProfile from "../author-profile";
-import AuthorProfileHeader from "../author-profile-header";
 import AuthorProfileItemSeparator from "../author-profile-item-separator";
 import example from "../example.json";
 
@@ -16,16 +16,25 @@ example.articles.list = example.articles.list.map(el => ({
 }));
 
 const props = {
-  result: Object.assign({}, example, {
-    count: example.articles.count,
-    page: 1,
-    pageSize: 10
-  }),
+  slug: "fiona-hamilton",
+  page: 1,
+  pageSize: 2,
+  result: {
+    ...example,
+    articles: {
+      count: get(example, "articles.count", 0),
+      list: get(example, "articles.list", []).map(article => ({
+        ...article,
+        publishedTime: new Date(article.publishedTime)
+      }))
+    },
+    count: get(example, "articles.count")
+  },
   loading: false,
   onTwitterLinkPress: () => {}
 };
 
-export default AuthorProfileContent => {
+export default () => {
   it("renders profile", () => {
     const wrapper = shallow(<AuthorProfile {...props} />);
 
@@ -72,28 +81,8 @@ export default AuthorProfileContent => {
     expect(component).toMatchSnapshot();
   });
 
-  it("renders profile header", () => {
-    const component = renderer.create(
-      <AuthorProfileHeader onTwitterLinkPress={() => {}} {...props.data} />
-    );
-
-    expect(component).toMatchSnapshot();
-  });
-
   it("renders profile separator", () => {
     const component = renderer.create(<AuthorProfileItemSeparator />);
-
-    expect(component).toMatchSnapshot();
-  });
-
-  it("renders profile content component", () => {
-    const component = renderer.create(
-      <AuthorProfileContent
-        onTwitterLinkPress={() => {}}
-        {...props}
-        {...props.result}
-      />
-    );
 
     expect(component).toMatchSnapshot();
   });
