@@ -38,7 +38,9 @@ withComponent(
 
         // exists needs to be replaced with .visible currently in chromeless backlog
         // https://github.com/graphcool/chromeless/issues/33
-        const result = await chromeless.exists('[data-testid="articleList-10"]');
+        const result = await chromeless.exists(
+          '[data-testid="articleList-10"]'
+        );
         expect(result).toBe(true);
 
         await chromeless.end();
