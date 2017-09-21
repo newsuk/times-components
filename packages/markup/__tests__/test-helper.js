@@ -21,8 +21,7 @@ export default (
   renderTree,
   renderTrees,
   TextComponent,
-  BlockComponent,
-  AdComposer
+  BlockComponent
 ) => () => {
   it("renders a single paragraph", () => {
     const output = renderer.create(renderTree(singleParagraph[0])).toJSON();
@@ -41,13 +40,7 @@ export default (
   it("renders multiple paragraphs with ads", () => {
     const output = renderer
       .create(
-        AdComposer ? (
-          <AdComposer section="article">
-            {renderTrees(multiParagraphWithAds)}
-          </AdComposer>
-        ) : (
-          <BlockComponent>{renderTrees(multiParagraphWithAds)}</BlockComponent>
-        )
+        <BlockComponent>{renderTrees(multiParagraphWithAds)}</BlockComponent>
       )
       .toJSON();
 
