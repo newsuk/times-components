@@ -292,10 +292,10 @@ storiesOf("BrightcoveVideo", module)
       videoId={videoId}
       accountId={accountId}
       onPlay={action("play")}
-      onPause={firstArgJSONAction("pause")}
-      onProgress={firstArgJSONAction("progress")}
-      onFinish={firstArgJSONAction("finish")}
-      onDuration={firstArgJSONAction("duration")}
+      onPause={action("pause")}
+      onProgress={firstArgAction("progress")}
+      onFinish={action("finish")}
+      onDuration={firstArgAction("duration")}
     />
   ))
   .add("BrightcoveVideo with event listener", () => (

@@ -154,7 +154,7 @@ describe("brightcove-player native component", () => {
     });
 
     it("will handle an app state update (not active) whilst playing - causing player to pause & flag to start again when app is active again", () => {
-      rootInstance.state.playing = true;
+      rootInstance.state.isPlaying = true;
 
       rootInstance.handleAppStateChange("inactive");
 
@@ -216,23 +216,19 @@ describe("brightcove-player native component", () => {
       getNativeBrightcoveComponentSpy.mockRestore();
     });
 
-    it("will propagate change events from the native component", done => {
+    it("will ignore unrecognised props in native change event", () => {
       renderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
           policyKey="[POLICY_KEY]"
-          onChange={evt => {
-            expect(evt).toBe("random act of kindness");
-            done();
-          }}
         />
       );
 
-      propsCache.onChange({ nativeEvent: "random act of kindness" });
+      propsCache.onChange({ nativeEvent: { random: "act of kindness" } });
     });
 
-    it("will not error if there is no chnage handler", () => {
+    it("will not error if there is no change handler", () => {
       renderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"

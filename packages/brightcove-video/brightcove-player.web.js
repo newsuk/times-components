@@ -90,12 +90,6 @@ class BrightcoveVideo extends Component {
     this.init();
   }
 
-  componentWillUnmount() {
-    if (this.player) {
-      this.player.dispose();
-    }
-  }
-
   componentWillUpdate(nextProps, nextState) {
     const playerStatusChanged = this.state.isPlaying !== nextState.isPlaying;
 
@@ -125,6 +119,12 @@ class BrightcoveVideo extends Component {
     return this.props !== nextProps;
   }
 
+  componentWillUnmount() {
+    if (this.player) {
+      this.player.dispose();
+    }
+  }
+
   onError(player) {
     this.props.onError(player.error());
   }
@@ -138,18 +138,18 @@ class BrightcoveVideo extends Component {
   }
 
   onPause(player) {
-    const playheadPosition = BrightcoveVideo.getCurrentTimeMs(player);
+    const progress = BrightcoveVideo.getCurrentTimeMs(player);
 
     this.setState({
       isPlaying: false,
-      playheadPosition,
-      isFinished: playheadPosition === this.state.duration
+      progress,
+      isFinished: progress >= this.state.duration
     });
   }
 
   onSeeked(player) {
     this.setState({
-      playheadPosition: BrightcoveVideo.getCurrentTimeMs(player),
+      progress: BrightcoveVideo.getCurrentTimeMs(player),
       isFinished: false
     });
   }

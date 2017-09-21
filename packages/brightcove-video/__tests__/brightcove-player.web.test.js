@@ -275,6 +275,7 @@ describe("brightcove-video web component", () => {
           evtReg = {};
 
           dummyPlayer.duration = () => "Once in a blue moon";
+          dummyPlayer.currentTime = () => 2.5;
 
           dummyPlayer.on = (evtType, fn) => {
             evtReg[evtType] = fn;
@@ -282,16 +283,11 @@ describe("brightcove-video web component", () => {
         });
 
         it("will emit a 'play' event", done => {
-          dummyPlayer.currentTime = () => 0.5;
-
           const component = (
             <BrightcoveVideo
               accountId="57838016001"
               videoId="[X]"
-              onChange={state => {
-                expect(state.playerStatus).toBe("playing");
-                expect(state.playheadPosition).toBe(500);
-
+              onPlay={() => {
                 done();
               }}
             />
@@ -309,16 +305,11 @@ describe("brightcove-video web component", () => {
         });
 
         it("will emit a 'pause' event", done => {
-          dummyPlayer.currentTime = () => 0.25;
-
           const component = (
             <BrightcoveVideo
               accountId="57838016001"
               videoId="[X]"
-              onChange={state => {
-                expect(state.playerStatus).toBe("paused");
-                expect(state.playheadPosition).toBe(250);
-
+              onPause={() => {
                 done();
               }}
             />
@@ -335,17 +326,15 @@ describe("brightcove-video web component", () => {
           }, 50);
         });
 
-        it("will emit a 'seeked' event", done => {
+        it("will emit a 'progress' event", done => {
           dummyPlayer.currentTime = () => 0.1;
 
           const component = (
             <BrightcoveVideo
               accountId="57838016001"
               videoId="[X]"
-              onChange={state => {
-                expect(state.playerStatus).toBe("paused");
-                expect(state.playheadPosition).toBe(100);
-
+              onProgress={progress => {
+                expect(progress).toBe(100);
                 done();
               }}
             />

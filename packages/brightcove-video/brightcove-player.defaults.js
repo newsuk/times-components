@@ -3,7 +3,11 @@ export default {
   height: 180,
   playerId: "default",
   onError: () => {},
-  onChange: () => {},
+  onPlay: () => {},
+  onPause: () => {},
+  onFinish: () => {},
+  onProgress: () => {},
+  onDuration: () => {},
   autoplay: false,
   hideFullScreenButton: false
 };
