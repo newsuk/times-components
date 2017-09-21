@@ -17,6 +17,7 @@ class BrightcoveVideo extends Component {
     this.on("pause", context.onPause.bind(context, this));
     this.on("seeked", context.onSeeked.bind(context, this));
     this.on("timeupdate", context.onPlay.bind(context, this));
+    this.on("durationchange", context.onDurationChange.bind(context, this));
 
     this.contextmenu({ disabled: true });
   }
@@ -31,6 +32,10 @@ class BrightcoveVideo extends Component {
 
   static getCurrentTimeMs(player) {
     return Math.round(player.currentTime() * 1000);
+  }
+
+  static getDurationMs(player) {
+    return Math.round(player.duration() * 1000);
   }
 
   constructor(props) {
@@ -108,10 +113,12 @@ class BrightcoveVideo extends Component {
   }
 
   onPause(player) {
+    const playheadPosition = BrightcoveVideo.getCurrentTimeMs(player);
+
     this.setState({
       playerStatus: "paused",
-      playheadPosition: BrightcoveVideo.getCurrentTimeMs(player),
-      finished: player.currentTime() === player.duration()
+      playheadPosition,
+      finished: playheadPosition === this.state.duration
     });
 
     this.emitState();
@@ -123,6 +130,11 @@ class BrightcoveVideo extends Component {
       finished: false
     });
 
+    this.emitState();
+  }
+
+  onDurationChange(player) {
+    this.setState({ duration: BrightcoveVideo.getDurationMs(player) });
     this.emitState();
   }
 
