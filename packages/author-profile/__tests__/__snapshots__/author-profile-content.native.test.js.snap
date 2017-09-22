@@ -913,34 +913,31 @@ exports[`renders profile content 1`] = `
             }
           }
         >
-          <View
+          <Image
+            onError={[Function]}
             onLayout={[Function]}
-          >
-            <Image
-              onError={[Function]}
-              onLoad={[Function]}
-              source={
+            onLoad={[Function]}
+            source={
+              Object {
+                "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg",
+              }
+            }
+            style={
+              Array [
                 Object {
-                  "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  Object {
-                    "borderColor": "#FFF",
-                    "borderRadius": 50,
-                    "borderWidth": 5,
-                    "height": 100,
-                    "width": 100,
-                  },
-                ]
-              }
-            />
-          </View>
+                  "height": 1,
+                  "width": 750,
+                },
+                Object {
+                  "borderColor": "#FFF",
+                  "borderRadius": 50,
+                  "borderWidth": 5,
+                  "height": 100,
+                  "width": 100,
+                },
+              ]
+            }
+          />
         </View>
       </View>
       <View
@@ -1089,28 +1086,25 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -1260,28 +1254,25 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -1433,28 +1424,25 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -1606,28 +1594,25 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -1779,28 +1764,25 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -1940,28 +1922,25 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -2113,28 +2092,25 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -2274,28 +2250,25 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -2435,28 +2408,25 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -2596,28 +2566,25 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -2757,28 +2724,25 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -2918,28 +2882,25 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -3079,28 +3040,25 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C520%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C520%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -3240,28 +3198,25 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0a36e5e3aa3fa281979258f23ec7d9bb0b1316b7.jpg?crop=780%2C520%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0a36e5e3aa3fa281979258f23ec7d9bb0b1316b7.jpg?crop=780%2C520%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -3408,28 +3363,25 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/e1099c348c8c727584842b53d5e708a0377770a2.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/e1099c348c8c727584842b53d5e708a0377770a2.jpg?crop=620%2C413%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -3569,28 +3521,25 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/eee1c7f320c3690dce7ee275ceb77e915c61c4f3.jpg?crop=780%2C520%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/eee1c7f320c3690dce7ee275ceb77e915c61c4f3.jpg?crop=780%2C520%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -3737,28 +3686,25 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -3911,28 +3857,25 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0d5fa06d6b10cfbbc2dade5f0d7b0271fccd994b.jpg?crop=780%2C520%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0d5fa06d6b10cfbbc2dade5f0d7b0271fccd994b.jpg?crop=780%2C520%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -4186,34 +4129,31 @@ exports[`renders profile content component 1`] = `
             }
           }
         >
-          <View
+          <Image
+            onError={[Function]}
             onLayout={[Function]}
-          >
-            <Image
-              onError={[Function]}
-              onLoad={[Function]}
-              source={
+            onLoad={[Function]}
+            source={
+              Object {
+                "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg",
+              }
+            }
+            style={
+              Array [
                 Object {
-                  "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  Object {
-                    "borderColor": "#FFF",
-                    "borderRadius": 50,
-                    "borderWidth": 5,
-                    "height": 100,
-                    "width": 100,
-                  },
-                ]
-              }
-            />
-          </View>
+                  "height": 1,
+                  "width": 750,
+                },
+                Object {
+                  "borderColor": "#FFF",
+                  "borderRadius": 50,
+                  "borderWidth": 5,
+                  "height": 100,
+                  "width": 100,
+                },
+              ]
+            }
+          />
         </View>
       </View>
       <View
@@ -4362,28 +4302,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -4533,28 +4470,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -4706,28 +4640,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -4879,28 +4810,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -5052,28 +4980,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -5213,28 +5138,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -5386,28 +5308,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -5547,28 +5466,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -5708,28 +5624,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -5869,28 +5782,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -6030,28 +5940,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -6191,28 +6098,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -6352,28 +6256,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C520%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C520%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -6513,28 +6414,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0a36e5e3aa3fa281979258f23ec7d9bb0b1316b7.jpg?crop=780%2C520%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0a36e5e3aa3fa281979258f23ec7d9bb0b1316b7.jpg?crop=780%2C520%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -6681,28 +6579,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/e1099c348c8c727584842b53d5e708a0377770a2.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/e1099c348c8c727584842b53d5e708a0377770a2.jpg?crop=620%2C413%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -6842,28 +6737,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/eee1c7f320c3690dce7ee275ceb77e915c61c4f3.jpg?crop=780%2C520%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/eee1c7f320c3690dce7ee275ceb77e915c61c4f3.jpg?crop=780%2C520%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -7010,28 +6902,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -7184,28 +7073,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0d5fa06d6b10cfbbc2dade5f0d7b0271fccd994b.jpg?crop=780%2C520%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0d5fa06d6b10cfbbc2dade5f0d7b0271fccd994b.jpg?crop=780%2C520%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -7486,34 +7372,31 @@ exports[`renders profile header 1`] = `
         }
       }
     >
-      <View
+      <Image
+        onError={[Function]}
         onLayout={[Function]}
-      >
-        <Image
-          onError={[Function]}
-          onLoad={[Function]}
-          source={
+        onLoad={[Function]}
+        source={
+          Object {
+            "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg",
+          }
+        }
+        style={
+          Array [
             Object {
-              "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg",
-            }
-          }
-          style={
-            Array [
-              Object {
-                "height": 1,
-                "width": 750,
-              },
-              Object {
-                "borderColor": "#FFF",
-                "borderRadius": 50,
-                "borderWidth": 5,
-                "height": 100,
-                "width": 100,
-              },
-            ]
-          }
-        />
-      </View>
+              "height": 1,
+              "width": 750,
+            },
+            Object {
+              "borderColor": "#FFF",
+              "borderRadius": 50,
+              "borderWidth": 5,
+              "height": 100,
+              "width": 100,
+            },
+          ]
+        }
+      />
     </View>
   </View>
   <View
