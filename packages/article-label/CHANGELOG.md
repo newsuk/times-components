@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/article-label@0.1.2...@times-components/article-label@0.3.0) (2017-09-22)
+
+
+### Features
+
+* update prettier ([#235](https://github.com/newsuk/times-components/issues/235)) ([c9ab71b](https://github.com/newsuk/times-components/commit/c9ab71b))
+
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/article-label@0.1.2...@times-components/article-label@0.2.0) (2017-09-22)
 
