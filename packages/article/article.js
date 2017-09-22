@@ -3,8 +3,8 @@ import { Text, View, ListView, ActivityIndicator } from "react-native";
 import PropTypes from "prop-types";
 import { renderTrees } from "@times-components/markup";
 import Image from "@times-components/image";
-import pick from "lodash.pick";
 
+import listViewDataHelper from "./data-helper";
 import styles from "./article-style";
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
@@ -15,34 +15,6 @@ const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
 
 class ArticlePage extends React.Component {
-  static prepareDataForListView(props) {
-    const articleData = props.data.article;
-    const leadAssetData = pick(articleData, ["leadAsset"]);
-    const articleHeaderData = pick(articleData, [
-      "label",
-      "title",
-      "standfirst",
-      "flags"
-    ]);
-
-    const articleMidContainerData = pick(articleData, [
-      "publicationName",
-      "publishedTime",
-      "byline"
-    ]);
-    return Array.prototype.concat(
-      [
-        { type: "leadAsset", data: leadAssetData },
-        { type: "header", data: articleHeaderData },
-        { type: "middleContainer", data: articleMidContainerData }
-      ],
-      articleData.content.map(i => ({
-        type: "article_body_row",
-        data: i
-      }))
-    );
-  }
-
   static renderRow(rowData) {
     if (rowData.type === "leadAsset") {
       return (
@@ -97,9 +69,7 @@ class ArticlePage extends React.Component {
   componentWillReceiveProps(nextProps) {
     if (!nextProps.data.loading) {
       this.setState({
-        dataSource: ds.cloneWithRows(
-          ArticlePage.prepareDataForListView(nextProps)
-        )
+        dataSource: ds.cloneWithRows(listViewDataHelper(nextProps.data.article))
       });
     }
   }
