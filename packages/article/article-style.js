@@ -133,7 +133,7 @@ const nativeStyles = StyleSheet.create({
       Platform.OS === "android" ? bodyFontFamilyAndroid : bodyFontFamilyWebIos,
     fontStyle: "normal",
     lineHeight: 26,
-    marginBottom: 25,
+    marginBottom: 20,
     fontSize: Platform.OS === "android" ? 16 : 17,
     color: "#333333"
   }

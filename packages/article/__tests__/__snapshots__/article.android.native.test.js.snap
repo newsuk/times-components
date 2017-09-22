@@ -27,6 +27,7 @@ exports[`Article test on android renders article no flags 1`] = `
       "items": 0,
     }
   }
+  enableEmptySections={true}
   initialListSize={10}
   pageSize={1}
   renderRow={[Function]}
@@ -44,6 +45,7 @@ exports[`Article test on android renders article no label 1`] = `
       "items": 0,
     }
   }
+  enableEmptySections={true}
   initialListSize={10}
   pageSize={1}
   renderRow={[Function]}
@@ -61,6 +63,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
       "items": 0,
     }
   }
+  enableEmptySections={true}
   initialListSize={10}
   pageSize={1}
   renderRow={[Function]}
@@ -78,6 +81,7 @@ exports[`Article test on android renders article no label no flags no standfirst
       "items": 0,
     }
   }
+  enableEmptySections={true}
   initialListSize={10}
   pageSize={1}
   renderRow={[Function]}
@@ -95,6 +99,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
       "items": 0,
     }
   }
+  enableEmptySections={true}
   initialListSize={10}
   pageSize={1}
   renderRow={[Function]}
@@ -112,6 +117,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
       "items": 0,
     }
   }
+  enableEmptySections={true}
   initialListSize={10}
   pageSize={1}
   renderRow={[Function]}
@@ -129,6 +135,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
       "items": 0,
     }
   }
+  enableEmptySections={true}
   initialListSize={10}
   pageSize={1}
   renderRow={[Function]}
@@ -146,6 +153,7 @@ exports[`Article test on android renders full article 1`] = `
       "items": 0,
     }
   }
+  enableEmptySections={true}
   initialListSize={10}
   pageSize={1}
   renderRow={[Function]}
