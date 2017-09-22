@@ -120,6 +120,7 @@ class ArticlePage extends React.Component {
         initialListSize={listViewSize}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
         pageSize={listViewPageSize}
+        enableEmptySections
       />
     );
   }
