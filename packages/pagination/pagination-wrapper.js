@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import getDisplayName from "react-display-name";
 
 export default Component => {
   class Helper extends React.Component {
@@ -34,7 +35,7 @@ export default Component => {
     }
   }
 
-  Helper.displayName = `Pagination Helper (${Component.displayName})`;
+  Helper.displayName = `Pagination Helper (${getDisplayName(Component)})`;
   Helper.propTypes = {
     page: PropTypes.number
   };
