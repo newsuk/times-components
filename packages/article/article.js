@@ -46,7 +46,7 @@ class ArticlePage extends React.Component {
   static renderRow(rowData) {
     if (rowData.type === "leadAsset") {
       return (
-        <View style={styles.LeadAsset}>
+        <View style={styles.leadAsset}>
           <Image source={{ uri: rowData.data.leadAsset.crop.url }} />
         </View>
       );
@@ -71,11 +71,11 @@ class ArticlePage extends React.Component {
       );
     } else if (rowData.type === "article_body_row") {
       return (
-        <View style={[styles.ArticleMainContentRow]}>
+        <View style={[styles.articleMainContentRow]}>
           {renderTrees([rowData.data], {
             paragraph(key, attributes, children) {
               return (
-                <Text key={key} style={styles.ArticleTextElement}>
+                <Text key={key} style={styles.articleTextElement}>
                   {children}
                 </Text>
               );
@@ -107,22 +107,20 @@ class ArticlePage extends React.Component {
   render() {
     if (this.props.data.loading) {
       return (
-        <View style={styles.Container}>
+        <View style={styles.container}>
           <ActivityIndicator size={"large"} />
         </View>
       );
     }
 
     return (
-      <View style={styles.PageWrapper}>
-        <ListView
-          dataSource={this.state.dataSource}
-          renderRow={ArticlePage.renderRow}
-          initialListSize={listViewSize}
-          scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
-          pageSize={listViewPageSize}
-        />
-      </View>
+      <ListView
+        dataSource={this.state.dataSource}
+        renderRow={ArticlePage.renderRow}
+        initialListSize={listViewSize}
+        scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
+        pageSize={listViewPageSize}
+      />
     );
   }
 }

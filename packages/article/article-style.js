@@ -7,7 +7,7 @@ const borderColor = "#d0cece";
 const borderWidth = StyleSheet.hairlineWidth;
 
 const globalStyle = StyleSheet.create({
-  Container: {
+  container: {
     alignItems: "center",
     flex: 1,
     flexBasis: "100%",
@@ -16,59 +16,59 @@ const globalStyle = StyleSheet.create({
 });
 
 const webStyles = StyleSheet.create({
-  ArticleMainContentRow: {
+  articleMainContentRow: {
     paddingLeft: 10,
     paddingRight: 10
   },
-  ArticleMiddleContainer: {
+  articleMiddleContainer: {
     paddingTop: 9
   },
-  ArticleLabel: {
+  articleLabel: {
     marginTop: 4,
     marginBottom: 3
   },
-  ArticleHeadline: {
+  articleHeadline: {
     marginBottom: 7
   },
-  ArticleHeadLineText: {
+  articleHeadLineText: {
     fontSize: 30,
     lineHeight: 32,
     color: "#000000",
     marginBottom: 0
   },
-  StandFirst: {
+  standFirst: {
     fontSize: 21,
     lineHeight: 26,
     fontFamily: standFirstFontFamily,
     color: "#333333",
     paddingBottom: 9
   },
-  ArticleFlag: {
+  articleFlag: {
     marginBottom: 11,
     flexDirection: "row"
   },
-  ArticleFlagContainer: {
+  articleFlagContainer: {
     marginRight: 14
   },
-  ArticleMeta: {
+  articleMeta: {
     marginBottom: 20,
     borderBottomColor: borderColor,
     borderBottomWidth: borderWidth
   },
-  ArticleMetaElement: {
+  articleMetaElement: {
     borderTopColor: borderColor,
     borderTopWidth: borderWidth,
     paddingTop: 9,
     paddingBottom: 5
   },
-  LeadAsset: {
+  leadAsset: {
     marginBottom: 10
   },
-  CaptionWrapper: {
+  captionWrapper: {
     paddingLeft: 10,
     paddingRight: 10
   },
-  ArticleTextElement: {
+  articleTextElement: {
     fontFamily: bodyFontFamilyWebIos,
     lineHeight: 26,
     fontSize: 17,
@@ -79,56 +79,56 @@ const webStyles = StyleSheet.create({
 });
 
 const nativeStyles = StyleSheet.create({
-  ArticleMainContentRow: {
+  articleMainContentRow: {
     paddingLeft: 10,
     paddingRight: 10
   },
-  ArticleMiddleContainer: {
+  articleMiddleContainer: {
     paddingTop: 9
   },
-  ArticleLabel: {
+  articleLabel: {
     paddingTop: 4,
     paddingBottom: 3
   },
-  ArticleHeadline: {
+  articleHeadline: {
     paddingBottom: 7
   },
-  ArticleHeadLineText: {
+  articleHeadLineText: {
     fontSize: Platform.OS === "android" ? 28 : 30,
     lineHeight: Platform.OS === "android" ? 37 : 32,
     color: "#000000",
     fontWeight: Platform.OS === "android" ? "400" : "700",
     marginBottom: 0
   },
-  StandFirst: {
+  standFirst: {
     fontSize: 21,
     lineHeight: Platform.OS === "android" ? 29 : 25,
     color: "#333333",
     fontFamily: standFirstFontFamily,
     paddingBottom: 9
   },
-  ArticleFlag: {
+  articleFlag: {
     marginBottom: 11,
     flexDirection: "row"
   },
-  ArticleFlagContainer: {
+  articleFlagContainer: {
     marginRight: 14
   },
-  ArticleMeta: {
+  articleMeta: {
     marginBottom: 20,
     borderBottomColor: borderColor,
     borderBottomWidth: borderWidth
   },
-  ArticleMetaElement: {
+  articleMetaElement: {
     borderTopColor: borderColor,
     borderTopWidth: borderWidth,
     paddingTop: Platform.OS === "android" ? 6 : 9,
     paddingBottom: Platform.OS === "android" ? 8 : 4
   },
-  LeadAsset: {
+  leadAsset: {
     marginBottom: Platform.OS === "android" ? 6 : 10
   },
-  ArticleTextElement: {
+  articleTextElement: {
     fontFamily:
       Platform.OS === "android" ? bodyFontFamilyAndroid : bodyFontFamilyWebIos,
     fontStyle: "normal",
