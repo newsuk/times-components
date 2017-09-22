@@ -20,7 +20,6 @@ const posterImageURI =
 const playIconURI = "https://i.imgur.com/qvmvjzE.png";
 
 const firstArgJSONAction = decorateAction([args => [JSON.stringify(args[0])]]);
-const firstArgAction = decorateAction([args => [args[0]]]);
 
 storiesOf("BrightcoveVideo", module)
   .add("Launcher with default values", () => (
@@ -293,21 +292,21 @@ storiesOf("BrightcoveVideo", module)
       accountId={accountId}
       onPlay={action("play")}
       onPause={action("pause")}
-      onProgress={firstArgAction("progress")}
+      onProgress={action("progress")}
       onFinish={action("finish")}
-      onDuration={firstArgAction("duration")}
+      onDuration={action("duration")}
     />
   ))
-  .add("BrightcoveVideo with event listener", () => (
+  .add("Launcher with event listeners", () => (
     <BrightcoveVideo
       policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
       onPlay={action("play")}
       onPause={action("pause")}
-      onProgress={firstArgAction("progress")}
+      onProgress={action("progress")}
       onFinish={action("finish")}
-      onDuration={firstArgAction("duration")}
+      onDuration={action("duration")}
     />
   ))
   .add("Player with external controls", () => (
@@ -330,7 +329,11 @@ storiesOf("BrightcoveVideo", module)
       policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
-      onChange={firstArgJSONAction("change")}
+      onPlay={action("play")}
+      onPause={action("pause")}
+      onProgress={action("progress")}
+      onFinish={action("finish")}
+      onDuration={action("duration")}
       autoplay
     />
   ));
