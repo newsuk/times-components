@@ -15,9 +15,11 @@
 
 @implementation RNTBrightcove {
   RCTEventDispatcher *_eventDispatcher;
-  NSString *_playerStatus;
-  NSString *_playheadPosition;
+  Boolean _isPlaying;
+  NSInteger _progress;
+  NSInteger _duration;
   NSNumber *_autoplayNumber;
+  Boolean _isFinished;
   NSNumber *_hideFullScreenButtonNumber;
 }
 
@@ -40,8 +42,9 @@
 }
 
 - (void)setup {
-  _playerStatus = @"paused";
-  _playheadPosition = @"0";
+  _isPlaying = NO;
+  _progress = 0;
+  _isFinished = NO;
 
   BCOVPlayerSDKManager *manager = [BCOVPlayerSDKManager sharedManager];
 
@@ -58,6 +61,8 @@
   [self.playbackService findVideoWithVideoID:_videoId parameters:nil completion:^(BCOVVideo *video, NSDictionary *jsonResponse, NSError *error) {
     #pragma unused (jsonResponse)
     if (video) {
+      _duration = [video.properties[@"duration"] intValue];
+
       [self.playbackController setVideos:@[ video ]];
     } else {
       [self emitError:error];
@@ -142,7 +147,12 @@
     return;
   }
 
-  self.onChange(@{@"playerStatus": _playerStatus, @"playheadPosition": _playheadPosition});
+  self.onChange(@{
+    @"isPlaying": [NSNumber numberWithBool:_isPlaying],
+    @"progress": [NSNumber numberWithLong:_progress],
+    @"duration": [NSNumber numberWithLong:_duration],
+    @"isFinished": [NSNumber numberWithBool:_isFinished]
+  });
 }
 
 - (void)playVideo {
@@ -169,13 +179,17 @@
   #pragma unused (session)
 
   if ([kBCOVPlaybackSessionLifecycleEventPlay isEqualToString:lifecycleEvent.eventType]) {
-    _playerStatus = @"playing";
+    _isPlaying = YES;
 
     [self emitStatus];
   }
 
   if ([kBCOVPlaybackSessionLifecycleEventPause isEqualToString:lifecycleEvent.eventType]) {
-    _playerStatus = @"paused";
+    _isPlaying = NO;
+
+    if(_progress >= _duration) {
+      _isFinished = YES;
+    }
 
     [self emitStatus];
   }
@@ -186,9 +200,17 @@
   #pragma unused (controller)
   #pragma unused (session)
 
-  NSNumber *progressNumber = [NSNumber numberWithDouble:progress];
+  _isFinished = NO;
 
-  _playheadPosition = [progressNumber stringValue];
+  // for some reason the brightcove SDK returns infinities at the begining and end of videos,
+  // this code normalises progress if they are encountered
+  if (progress == -INFINITY) {
+    _progress = 0;
+  } else if (progress == INFINITY) {
+    _progress = _duration;
+  } else {
+    _progress = progress * 1000;
+  }
 
   [self emitStatus];
 }

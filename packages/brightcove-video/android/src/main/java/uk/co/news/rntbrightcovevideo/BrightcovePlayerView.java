@@ -21,8 +21,8 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
     public static final String TAG = BrightcovePlayerView.class.getSimpleName();
 
     private Boolean mAutoplay;
-    private String mPlayerStatus;
-    private float mStartPlayheadPosition = 0;
+    private Boolean mIsPlaying = false;
+    private float mProgress = 0;
 
     public BrightcovePlayerView(final Context context) {
         super(context);
@@ -31,6 +31,8 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
     }
 
     private EventEmitter setupEventEmitter() {
+        final BrightcovePlayerView playerView = BrightcovePlayerView.this;
+
         EventEmitter eventEmitter = this.getEventEmitter();
         eventEmitter.on(EventType.VIDEO_SIZE_KNOWN, new EventListener() {
             @Override
@@ -38,23 +40,33 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
                fixVideoLayout();
             }
         });
-
-
-        eventEmitter.on(EventType.PLAY, onEvent("playing"));
-        eventEmitter.on(EventType.PAUSE, onEvent("paused"));
+        eventEmitter.on(EventType.PLAY, onEvent(true));
+        eventEmitter.on(EventType.PAUSE, onEvent(false));
+        eventEmitter.on(EventType.PROGRESS, onEvent(true));
+        eventEmitter.on(EventType.COMPLETED, new EventListener() {
+            @Override
+            public void processEvent(Event e) {
+                playerView.bubbleState(false, playerView.getDuration());
+            }
+        });
         eventEmitter.on(EventType.SEEK_TO, new EventListener() {
             @Override
             public void processEvent(Event e) {
-                ((RNTBrightcoveView) BrightcovePlayerView.this.getParent()).emitState();
+                playerView.bubbleState(playerView.getIsPlaying(), (int) playerView.getPlayheadPosition());
             }
         });
         eventEmitter.on(EventType.ERROR, new EventListener() {
             @Override
             public void processEvent(Event e) {
-                ((RNTBrightcoveView) BrightcovePlayerView.this.getParent()).emitError(e);
+                ((RNTBrightcoveView) playerView.getParent()).emitError(e);
             }
         });
         return eventEmitter;
+    }
+
+    private void bubbleState(Boolean isPlaying, int headPos) {
+        mIsPlaying = isPlaying;
+        ((RNTBrightcoveView) this.getParent()).emitState(mIsPlaying, headPos);
     }
 
     public void initVideo(String videoId, String accountId, String policyKey, Boolean autoplay, Boolean isFullscreenButtonHidden) {
@@ -69,12 +81,13 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
             catalog.findVideoByID(videoId, createVideoListener());
     }
 
-    private EventListener onEvent(final String playerStatus) {
+    private EventListener onEvent(final Boolean isPlaying) {
+        final BrightcovePlayerView playerView = BrightcovePlayerView.this;
+
         return new EventListener() {
             @Override
             public void processEvent(Event event) {
-                mPlayerStatus = playerStatus;
-                ((RNTBrightcoveView) BrightcovePlayerView.this.getParent()).emitState();
+                playerView.bubbleState(isPlaying, (int) playerView.getPlayheadPosition());
             }
         };
     }
@@ -86,7 +99,7 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
             public void onVideo(final Video video) {
                 BrightcovePlayerView.this.add(video);
 
-                BrightcovePlayerView.this.seekTo((int) mStartPlayheadPosition);
+                BrightcovePlayerView.this.seekTo((int) mProgress);
 
                 BrightcovePlayerView.this.invalidate();
                 BrightcovePlayerView.this.requestLayout();
@@ -123,11 +136,11 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
     }
 
     public void setStartPlayheadPosition(float startPlayheadPosition) {
-        mStartPlayheadPosition = startPlayheadPosition;
+        mProgress = startPlayheadPosition;
     }
 
-    public String getPlayerStatus() {
-        return mPlayerStatus;
+    public Boolean getIsPlaying() {
+        return mIsPlaying;
     }
 
     public float getPlayheadPosition() {

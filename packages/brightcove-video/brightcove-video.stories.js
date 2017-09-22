@@ -4,7 +4,7 @@ import { View, Image } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { decorateAction } from "@storybook/addon-actions";
+import { action, decorateAction } from "@storybook/addon-actions";
 import BrightcoveVideo from "./brightcove-video";
 import Player from "./brightcove-player";
 
@@ -97,7 +97,7 @@ storiesOf("BrightcoveVideo", module)
       width={320}
       height={200}
       policyKey={policyKey}
-      poster="http://i.imgur.com/Pb5osPZ.jpg"
+      poster={{ uri: "http://i.imgur.com/Pb5osPZ.jpg" }}
       videoId="1532562858001"
       accountId={accountId}
     />
@@ -260,7 +260,7 @@ storiesOf("BrightcoveVideo", module)
       width={320}
       height={200}
       policyKey={policyKey}
-      poster="http://i.imgur.com/Pb5osPZ.jpg"
+      poster={{ uri: "http://i.imgur.com/Pb5osPZ.jpg" }}
       videoId="1532562858001"
       accountId={accountId}
     />
@@ -285,12 +285,28 @@ storiesOf("BrightcoveVideo", module)
       onError={firstArgJSONAction("error")}
     />
   ))
-  .add("Player with event listener", () => (
+  .add("Player with event listeners", () => (
     <Player
       policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
-      onChange={firstArgJSONAction("change")}
+      onPlay={action("play")}
+      onPause={action("pause")}
+      onProgress={action("progress")}
+      onFinish={action("finish")}
+      onDuration={action("duration")}
+    />
+  ))
+  .add("Launcher with event listeners", () => (
+    <BrightcoveVideo
+      policyKey={policyKey}
+      videoId={videoId}
+      accountId={accountId}
+      onPlay={action("play")}
+      onPause={action("pause")}
+      onProgress={action("progress")}
+      onFinish={action("finish")}
+      onDuration={action("duration")}
     />
   ))
   .add("Player with external controls", () => (
@@ -313,7 +329,11 @@ storiesOf("BrightcoveVideo", module)
       policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
-      onChange={firstArgJSONAction("change")}
+      onPlay={action("play")}
+      onPause={action("pause")}
+      onProgress={action("progress")}
+      onFinish={action("finish")}
+      onDuration={action("duration")}
       autoplay
     />
   ));

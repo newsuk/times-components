@@ -154,7 +154,7 @@ describe("brightcove-player native component", () => {
     });
 
     it("will handle an app state update (not active) whilst playing - causing player to pause & flag to start again when app is active again", () => {
-      rootInstance.state.playing = true;
+      rootInstance.state.isPlaying = true;
 
       rootInstance.handleAppStateChange("inactive");
 
@@ -216,32 +216,72 @@ describe("brightcove-player native component", () => {
       getNativeBrightcoveComponentSpy.mockRestore();
     });
 
-    it("will propagate change events from the native component", done => {
+    it("will ignore unrecognised props in native change event", () => {
       renderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
           policyKey="[POLICY_KEY]"
-          onChange={evt => {
-            expect(evt).toBe("random act of kindness");
+        />
+      );
+
+      propsCache.onChange({ nativeEvent: { random: "act of kindness" } });
+    });
+
+    it("trigger a play event", done => {
+      renderer.create(
+        <BrightcovePlayer
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          policyKey="[POLICY_KEY]"
+          onPlay={done}
+        />
+      );
+
+      propsCache.onChange({ nativeEvent: { isPlaying: true } });
+    });
+
+    it("trigger a pause event", done => {
+      renderer.create(
+        <BrightcovePlayer
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          policyKey="[POLICY_KEY]"
+          onPause={done}
+        />
+      );
+
+      propsCache.onChange({ nativeEvent: { isPlaying: true } });
+      propsCache.onChange({ nativeEvent: { isPlaying: false } });
+    });
+
+    it("trigger a pause event", done => {
+      renderer.create(
+        <BrightcovePlayer
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          policyKey="[POLICY_KEY]"
+          onDuration={duration => {
+            expect(duration).toBe(999);
             done();
           }}
         />
       );
 
-      propsCache.onChange({ nativeEvent: "random act of kindness" });
+      propsCache.onChange({ nativeEvent: { duration: 999 } });
     });
 
-    it("will not error if there is no chnage handler", () => {
+    it("trigger a finish event", done => {
       renderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
           policyKey="[POLICY_KEY]"
+          onFinish={done}
         />
       );
 
-      propsCache.onChange({ nativeEvent: "random act of kindness" });
+      propsCache.onChange({ nativeEvent: { isFinished: true } });
     });
 
     it("will correctly handle native (android) errors", done => {
