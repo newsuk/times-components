@@ -221,6 +221,22 @@
     socket.io "2.0.3"
     socket.io-client "2.0.3"
 
+"@times-components/link@0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-0.4.1.tgz#33a2859be81696ec2414b5be40aae1f7ea0d62c3"
+  dependencies:
+    lodash.pick "4.4.0"
+    prop-types "15.5.10"
+    react-native-web "0.0.119"
+
+"@times-components/pagination@0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@times-components/pagination/-/pagination-0.4.1.tgz#06b14f53223d68129555cd2d3e52a4030d147d19"
+  dependencies:
+    "@times-components/link" "0.4.1"
+    prop-types "15.5.10"
+    react-native-web "0.0.119"
+
 "@types/graphql@0.10.2":
   version "0.10.2"
   resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.10.2.tgz#d7c79acbaa17453b6681c80c34b38fcb10c4c08c"
@@ -6027,6 +6043,10 @@ lodash.memoize@^4.1.2:
 lodash.merge@4.6.0, lodash.merge@^4.4.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.0.tgz#69884ba144ac33fe699737a6086deffadd0f89c5"
+
+lodash.omit@4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.omit/-/lodash.omit-4.5.0.tgz#6eb19ae5a1ee1dd9df0b969e66ce0b7fa30b5e60"
 
 lodash.omitby@^4.5.0:
   version "4.6.0"

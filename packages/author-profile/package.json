@@ -2,7 +2,7 @@
   "name": "@times-components/author-profile",
   "version": "0.7.1",
   "description": "Author info along with articles they have written",
-  "main": "author-profile.js",
+  "main": "author-profile",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
@@ -41,6 +41,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@times-components/provider": "0.4.6",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-loader": "7.0.0",
@@ -61,6 +62,7 @@
     "jsdom": "11.1.0",
     "prettier": "1.7.0",
     "react": "15.4.2",
+    "react-apollo": "1.4.14",
     "react-dom": "15.4.2",
     "react-native": "0.42.3",
     "react-test-renderer": "15.4.2",

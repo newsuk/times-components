@@ -16,26 +16,51 @@ const getQueryVariables = definitions =>
     )
   );
 
-const connectGraphql = (
-  query,
-  propsToVariables = identity,
-  transformResponse = identity
-) => Component => {
+const connectGraphql = (query, propsToVariables = identity) => {
   const variableNames = getQueryVariables(query.definitions);
-  return props => {
-    const Wrapper = data => (
-      <Component {...props} {...transformResponse(data)} />
-    );
+  class Children extends React.Component {
+    constructor(props) {
+      super(props);
 
+      this.state = props;
+    }
+
+    componentWillReceiveProps(nextProps) {
+      return this.setState(nextProps);
+    }
+
+    render() {
+      const { data, children, ...props } = this.state;
+
+      const { error, loading, ...result } = data;
+
+      return children(
+        Object.assign(
+          {},
+          props,
+          {
+            error,
+            loading
+          },
+          result
+        )
+      );
+    }
+  }
+
+  const Component = props => {
     const variables = pick(propsToVariables(props), variableNames);
-    const WithGraphql = graphql(query, {
+
+    const Graphql = graphql(query, {
       options: {
         variables
       }
-    })(Wrapper);
+    })(Children);
 
-    return <WithGraphql />;
+    return <Graphql {...props} />;
   };
+
+  return Component;
 };
 
 export default connectGraphql;

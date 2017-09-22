@@ -13,6 +13,9 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
+    "collectCoverageFrom": [
+      "!<rootDir>/**/__tests__/**"
+    ],
     "transformIgnorePatterns": [
       "node_modules/(?!@times-components)/"
     ],
@@ -67,11 +70,11 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/author-profile": "0.7.1",
-    "@times-components/pagination": "0.4.2",
+    "@times-components/pagination": "0.4.1",
     "graphql-tag": "2.4.2",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",
+    "lodash.omit": "4.5.0",
     "prop-types": "15.5.10",
     "react-apollo": "1.4.14",
     "react-native-web": "0.0.119"
