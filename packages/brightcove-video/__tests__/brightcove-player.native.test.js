@@ -228,16 +228,60 @@ describe("brightcove-player native component", () => {
       propsCache.onChange({ nativeEvent: { random: "act of kindness" } });
     });
 
-    it("will not error if there is no change handler", () => {
+    it("trigger a play event", done => {
       renderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           videoId="[VIDEO_ID]"
           policyKey="[POLICY_KEY]"
+          onPlay={done}
         />
       );
 
-      propsCache.onChange({ nativeEvent: "random act of kindness" });
+      propsCache.onChange({ nativeEvent: { isPlaying: true } });
+    });
+
+    it("trigger a pause event", done => {
+      renderer.create(
+        <BrightcovePlayer
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          policyKey="[POLICY_KEY]"
+          onPause={done}
+        />
+      );
+
+      propsCache.onChange({ nativeEvent: { isPlaying: true } });
+      propsCache.onChange({ nativeEvent: { isPlaying: false } });
+    });
+
+    it("trigger a pause event", done => {
+      renderer.create(
+        <BrightcovePlayer
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          policyKey="[POLICY_KEY]"
+          onDuration={duration => {
+            expect(duration).toBe(999);
+            done();
+          }}
+        />
+      );
+
+      propsCache.onChange({ nativeEvent: { duration: 999 } });
+    });
+
+    it("trigger a finish event", done => {
+      renderer.create(
+        <BrightcovePlayer
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          policyKey="[POLICY_KEY]"
+          onFinish={done}
+        />
+      );
+
+      propsCache.onChange({ nativeEvent: { isFinished: true } });
     });
 
     it("will correctly handle native (android) errors", done => {
