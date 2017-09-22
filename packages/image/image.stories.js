@@ -1,4 +1,6 @@
+/* eslint-disable react/no-danger */
 import React from "react";
+import ReactDOMServer from "react-dom/server";
 import { StyleSheet, View } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
@@ -62,4 +64,14 @@ storiesOf("Image", module)
         source={exampleImage}
       />
     </View>
-  ));
+  ))
+  .add("Server side rendered Image", () => {
+    const comp = (
+      <View style={[styles.container, styles.halfWidthView]}>
+        <Image style={{ resizeMode: "center" }} source={exampleImage} />
+      </View>
+    );
+    const markup = { __html: ReactDOMServer.renderToStaticMarkup(comp) };
+
+    return <div dangerouslySetInnerHTML={markup} />;
+  });
