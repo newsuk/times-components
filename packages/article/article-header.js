@@ -12,35 +12,35 @@ import { Text, View } from "react-native";
 import styles from "./article-style";
 
 const ArticleHeader = ({ label, title, standfirst, flags }) => (
-  <View style={[styles.ArticleMainContentRow]}>
+  <View style={[styles.articleMainContentRow]}>
     {label ? (
-      <View style={styles.ArticleLabel}>
+      <View style={styles.articleLabel}>
         <ArticleLabel title={label} color="#13354E" />
       </View>
     ) : null}
-    <View style={[styles.ArticleHeadline]}>
-      <ArticleHeadline title={title} style={styles.ArticleHeadLineText} />
+    <View style={[styles.articleHeadline]}>
+      <ArticleHeadline title={title} style={styles.articleHeadLineText} />
     </View>
-    {standfirst ? <Text style={[styles.StandFirst]}>{standfirst}</Text> : null}
+    {standfirst ? <Text style={[styles.standFirst]}>{standfirst}</Text> : null}
     {flags.length ? (
-      <View style={[styles.ArticleFlag]}>
+      <View style={[styles.articleFlag]}>
         {flags.includes("NEW") ? (
-          <View style={styles.ArticleFlagContainer}>
+          <View style={styles.articleFlagContainer}>
             <NewArticleFlag />
           </View>
         ) : null}
         {flags.includes("UPDATED") ? (
-          <View style={styles.ArticleFlagContainer}>
+          <View style={styles.articleFlagContainer}>
             <UpdatedArticleFlag />
           </View>
         ) : null}
         {flags.includes("EXCLUSIVE") ? (
-          <View style={styles.ArticleFlagContainer}>
+          <View style={styles.articleFlagContainer}>
             <ExclusiveArticleFlag />
           </View>
         ) : null}
         {flags.includes("SPONSORED") ? (
-          <View style={styles.ArticleFlagContainer}>
+          <View style={styles.articleFlagContainer}>
             <SponsoredArticleFlag />
           </View>
         ) : null}

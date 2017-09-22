@@ -7,13 +7,13 @@ import DatePublication from "@times-components/date-publication";
 
 import styles from "./article-style";
 
-const ArticleHeader = ({ byline, publishedTime, publicationName }) => (
-  <View style={[styles.ArticleMainContentRow, styles.ArticleMiddleContainer]}>
-    <View style={styles.ArticleMeta}>
-      <View style={[styles.ArticleMetaElement]}>
+const ArticleMeta = ({ byline, publishedTime, publicationName }) => (
+  <View style={[styles.articleMainContentRow, styles.articleMiddleContainer]}>
+    <View style={styles.articleMeta}>
+      <View style={[styles.articleMetaElement]}>
         <ArticleByline ast={byline} />
       </View>
-      <View style={[styles.ArticleMetaElement]}>
+      <View style={[styles.articleMetaElement]}>
         <DatePublication
           date={new Date(publishedTime)}
           publication={publicationName}
@@ -23,16 +23,16 @@ const ArticleHeader = ({ byline, publishedTime, publicationName }) => (
   </View>
 );
 
-ArticleHeader.propTypes = {
+ArticleMeta.propTypes = {
   byline: PropTypes.arrayOf(PropTypes.object),
   publishedTime: PropTypes.string,
   publicationName: PropTypes.string
 };
 
-ArticleHeader.defaultProps = {
+ArticleMeta.defaultProps = {
   byline: [],
   publishedTime: null,
   publicationName: null
 };
 
-export default ArticleHeader;
+export default ArticleMeta;
