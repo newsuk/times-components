@@ -34,7 +34,7 @@ export default Component => {
     }
   }
 
-  Helper.displayName = `Pagination Helper (${Component.displayName})`;
+  Helper.displayName = `Pagination Helper (${Component.displayName || Component.name || "Component"})`;
   Helper.propTypes = {
     page: PropTypes.number
   };
