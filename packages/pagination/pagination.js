@@ -140,7 +140,10 @@ class Pagination extends React.Component {
     return (
       <View style={styles.container} onLayout={this.handleLayout}>
         {messageComponent}
-        <View style={[styles.horizontal, styles.border]}>
+        <View
+          testID="author-pagination"
+          style={[styles.horizontal, styles.border]}
+        >
           <View>{prevComponent}</View>
           <View>{nextComponent}</View>
         </View>
