@@ -1,9 +1,13 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { View } from "react-native";
 
 import ArticleByline from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
+
+import {
+  articleMetaPropTypes,
+  articleMetaDefaultPropTypes
+} from "./article-meta.proptypes";
 
 import styles from "./article-style";
 
@@ -23,16 +27,8 @@ const ArticleMeta = ({ byline, publishedTime, publicationName }) => (
   </View>
 );
 
-ArticleMeta.propTypes = {
-  byline: PropTypes.arrayOf(PropTypes.object),
-  publishedTime: PropTypes.string,
-  publicationName: PropTypes.string
-};
+ArticleMeta.propTypes = articleMetaPropTypes;
 
-ArticleMeta.defaultProps = {
-  byline: [],
-  publishedTime: null,
-  publicationName: null
-};
+ArticleMeta.defaultProps = articleMetaDefaultPropTypes;
 
 export default ArticleMeta;
