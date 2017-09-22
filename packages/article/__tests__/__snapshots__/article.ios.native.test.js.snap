@@ -21,169 +21,137 @@ exports[`Article test on ios renders activity indicator  1`] = `
 `;
 
 exports[`Article test on ios renders article no flags 1`] = `
-<View
-  style={undefined}
->
-  <RCTScrollView
-    dataSource={
-      ListViewDataSource {
-        "items": 0,
-      }
+<RCTScrollView
+  dataSource={
+    ListViewDataSource {
+      "items": 0,
     }
-    initialListSize={10}
-    pageSize={1}
-    renderRow={[Function]}
-    renderScrollComponent={[Function]}
-    scrollRenderAheadDistance={10}
-  >
-    <View />
-  </RCTScrollView>
-</View>
+  }
+  initialListSize={10}
+  pageSize={1}
+  renderRow={[Function]}
+  renderScrollComponent={[Function]}
+  scrollRenderAheadDistance={10}
+>
+  <View />
+</RCTScrollView>
 `;
 
 exports[`Article test on ios renders article no label 1`] = `
-<View
-  style={undefined}
->
-  <RCTScrollView
-    dataSource={
-      ListViewDataSource {
-        "items": 0,
-      }
+<RCTScrollView
+  dataSource={
+    ListViewDataSource {
+      "items": 0,
     }
-    initialListSize={10}
-    pageSize={1}
-    renderRow={[Function]}
-    renderScrollComponent={[Function]}
-    scrollRenderAheadDistance={10}
-  >
-    <View />
-  </RCTScrollView>
-</View>
+  }
+  initialListSize={10}
+  pageSize={1}
+  renderRow={[Function]}
+  renderScrollComponent={[Function]}
+  scrollRenderAheadDistance={10}
+>
+  <View />
+</RCTScrollView>
 `;
 
 exports[`Article test on ios renders article no label no flags 1`] = `
-<View
-  style={undefined}
->
-  <RCTScrollView
-    dataSource={
-      ListViewDataSource {
-        "items": 0,
-      }
+<RCTScrollView
+  dataSource={
+    ListViewDataSource {
+      "items": 0,
     }
-    initialListSize={10}
-    pageSize={1}
-    renderRow={[Function]}
-    renderScrollComponent={[Function]}
-    scrollRenderAheadDistance={10}
-  >
-    <View />
-  </RCTScrollView>
-</View>
+  }
+  initialListSize={10}
+  pageSize={1}
+  renderRow={[Function]}
+  renderScrollComponent={[Function]}
+  scrollRenderAheadDistance={10}
+>
+  <View />
+</RCTScrollView>
 `;
 
 exports[`Article test on ios renders article no label no flags no standfirst 1`] = `
-<View
-  style={undefined}
->
-  <RCTScrollView
-    dataSource={
-      ListViewDataSource {
-        "items": 0,
-      }
+<RCTScrollView
+  dataSource={
+    ListViewDataSource {
+      "items": 0,
     }
-    initialListSize={10}
-    pageSize={1}
-    renderRow={[Function]}
-    renderScrollComponent={[Function]}
-    scrollRenderAheadDistance={10}
-  >
-    <View />
-  </RCTScrollView>
-</View>
+  }
+  initialListSize={10}
+  pageSize={1}
+  renderRow={[Function]}
+  renderScrollComponent={[Function]}
+  scrollRenderAheadDistance={10}
+>
+  <View />
+</RCTScrollView>
 `;
 
 exports[`Article test on ios renders article no standfirst 1`] = `
-<View
-  style={undefined}
->
-  <RCTScrollView
-    dataSource={
-      ListViewDataSource {
-        "items": 0,
-      }
+<RCTScrollView
+  dataSource={
+    ListViewDataSource {
+      "items": 0,
     }
-    initialListSize={10}
-    pageSize={1}
-    renderRow={[Function]}
-    renderScrollComponent={[Function]}
-    scrollRenderAheadDistance={10}
-  >
-    <View />
-  </RCTScrollView>
-</View>
+  }
+  initialListSize={10}
+  pageSize={1}
+  renderRow={[Function]}
+  renderScrollComponent={[Function]}
+  scrollRenderAheadDistance={10}
+>
+  <View />
+</RCTScrollView>
 `;
 
 exports[`Article test on ios renders article no standfirst no flags 1`] = `
-<View
-  style={undefined}
->
-  <RCTScrollView
-    dataSource={
-      ListViewDataSource {
-        "items": 0,
-      }
+<RCTScrollView
+  dataSource={
+    ListViewDataSource {
+      "items": 0,
     }
-    initialListSize={10}
-    pageSize={1}
-    renderRow={[Function]}
-    renderScrollComponent={[Function]}
-    scrollRenderAheadDistance={10}
-  >
-    <View />
-  </RCTScrollView>
-</View>
+  }
+  initialListSize={10}
+  pageSize={1}
+  renderRow={[Function]}
+  renderScrollComponent={[Function]}
+  scrollRenderAheadDistance={10}
+>
+  <View />
+</RCTScrollView>
 `;
 
 exports[`Article test on ios renders article no standfirst no label 1`] = `
-<View
-  style={undefined}
->
-  <RCTScrollView
-    dataSource={
-      ListViewDataSource {
-        "items": 0,
-      }
+<RCTScrollView
+  dataSource={
+    ListViewDataSource {
+      "items": 0,
     }
-    initialListSize={10}
-    pageSize={1}
-    renderRow={[Function]}
-    renderScrollComponent={[Function]}
-    scrollRenderAheadDistance={10}
-  >
-    <View />
-  </RCTScrollView>
-</View>
+  }
+  initialListSize={10}
+  pageSize={1}
+  renderRow={[Function]}
+  renderScrollComponent={[Function]}
+  scrollRenderAheadDistance={10}
+>
+  <View />
+</RCTScrollView>
 `;
 
 exports[`Article test on ios renders full article 1`] = `
-<View
-  style={undefined}
->
-  <RCTScrollView
-    dataSource={
-      ListViewDataSource {
-        "items": 0,
-      }
+<RCTScrollView
+  dataSource={
+    ListViewDataSource {
+      "items": 0,
     }
-    initialListSize={10}
-    pageSize={1}
-    renderRow={[Function]}
-    renderScrollComponent={[Function]}
-    scrollRenderAheadDistance={10}
-  >
-    <View />
-  </RCTScrollView>
-</View>
+  }
+  initialListSize={10}
+  pageSize={1}
+  renderRow={[Function]}
+  renderScrollComponent={[Function]}
+  scrollRenderAheadDistance={10}
+>
+  <View />
+</RCTScrollView>
 `;
