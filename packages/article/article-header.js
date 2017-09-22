@@ -11,6 +11,12 @@ import ArticleLabel from "@times-components/article-label";
 import { Text, View } from "react-native";
 import styles from "./article-style";
 
+const flagsMapping = new Map([
+  ["NEW", <NewArticleFlag />],
+  ["UPDATED", <UpdatedArticleFlag />],
+  ["EXCLUSIVE", <ExclusiveArticleFlag />],
+  ["SPONSORED", <SponsoredArticleFlag />]
+]);
 const ArticleHeader = ({ label, title, standfirst, flags }) => (
   <View style={[styles.articleMainContentRow]}>
     {label ? (
@@ -24,26 +30,11 @@ const ArticleHeader = ({ label, title, standfirst, flags }) => (
     {standfirst ? <Text style={[styles.standFirst]}>{standfirst}</Text> : null}
     {flags.length ? (
       <View style={[styles.articleFlag]}>
-        {flags.includes("NEW") ? (
-          <View style={styles.articleFlagContainer}>
-            <NewArticleFlag />
+        {flags.map(i => (
+          <View key={i} style={styles.articleFlagContainer}>
+            {flagsMapping.get(i)}
           </View>
-        ) : null}
-        {flags.includes("UPDATED") ? (
-          <View style={styles.articleFlagContainer}>
-            <UpdatedArticleFlag />
-          </View>
-        ) : null}
-        {flags.includes("EXCLUSIVE") ? (
-          <View style={styles.articleFlagContainer}>
-            <ExclusiveArticleFlag />
-          </View>
-        ) : null}
-        {flags.includes("SPONSORED") ? (
-          <View style={styles.articleFlagContainer}>
-            <SponsoredArticleFlag />
-          </View>
-        ) : null}
+        ))}
       </View>
     ) : null}
   </View>
