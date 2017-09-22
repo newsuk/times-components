@@ -8,6 +8,14 @@ import listViewDataHelper from "./data-helper";
 import styles from "./article-style";
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
+import {
+  articleHeaderPropTypes,
+  articleHeaderDefaultPropTypes
+} from "./article-header.proptypes";
+import {
+  articleMetaPropTypes,
+  articleMetaDefaultPropTypes
+} from "./article-meta.proptypes";
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 const listViewPageSize = 1;
@@ -98,15 +106,21 @@ class ArticlePage extends React.Component {
 
 ArticlePage.propTypes = {
   data: PropTypes.shape({
-    article: PropTypes.object,
-    loading: PropTypes.boolean
+    loading: PropTypes.boolean,
+    article: PropTypes.shape({
+      ...articleHeaderPropTypes,
+      ...articleMetaPropTypes
+    })
   })
 };
 
 ArticlePage.defaultProps = {
   data: {
     loading: true,
-    article: {}
+    article: {
+      ...articleHeaderDefaultPropTypes,
+      ...articleMetaDefaultPropTypes
+    }
   }
 };
 
