@@ -49,6 +49,14 @@ class BrightcoveVideo extends Component {
     }
   }
 
+  onError(evt) {
+    this.props.onError(evt.nativeEvent);
+  }
+
+  getNodeHandle() {
+    return findNodeHandle(this.bcPlayer);
+  }
+
   handleChange(evt) {
     const newState = {
       isPlaying: evt.nativeEvent.isPlaying,
@@ -80,14 +88,6 @@ class BrightcoveVideo extends Component {
     }
 
     this.setState(newState);
-  }
-
-  onError(evt) {
-    this.props.onError(evt.nativeEvent);
-  }
-
-  getNodeHandle() {
-    return findNodeHandle(this.bcPlayer);
   }
 
   handleAppStateChange(nextAppState) {
