@@ -26,7 +26,7 @@
     "storybook:publish": "./lib/publish_storybook.sh",
     "prestorybook-native": "node ./node_modules/.bin/rnstl && node ./lib/fetch-fonts",
     "storybook-native": "storybook -c .storybook.native start -p 7007",
-    "compile-fructose-components": "rnstl --searchDir ./packages --pattern './*/*.fructose.js' --outputFile ./.fructose/components.js",
+    "compile-fructose-components": "node ./node_modules/.bin/rnstl --searchDir ./packages --pattern './*/*.fructose.js' --outputFile ./.fructose/components.js",
     "write-test-components": "npm run compile-fructose-components && compile-tests",
     "fructose-app": "export CWD=$(pwd) && export FRC=$CWD/.fructose && react-native start --projectRoots $CWD,$FRC --resetCache",
     "preios": "npm run fetch-fonts",
