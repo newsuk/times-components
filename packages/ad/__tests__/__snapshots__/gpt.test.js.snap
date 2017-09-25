@@ -5,9 +5,12 @@ exports[`Gpt test renders an ad-header ad slot 1`] = `
   id="ad-header"
   onLayout={[Function]}
   style={
-    Object {
-      "height": 50,
-    }
+    Array [
+      Object {
+        "minHeight": 50,
+      },
+      null,
+    ]
   }
 >
   <View
@@ -18,7 +21,7 @@ exports[`Gpt test renders an ad-header ad slot 1`] = `
           "flex": 1,
           "justifyContent": "center",
         },
-        Object {},
+        null,
       ]
     }
   >
@@ -90,9 +93,12 @@ exports[`Gpt test renders an ad-pixel ad slot 1`] = `
   id="ad-pixel"
   onLayout={[Function]}
   style={
-    Object {
-      "height": 0,
-    }
+    Array [
+      Object {
+        "minHeight": 0,
+      },
+      null,
+    ]
   }
 >
   <View
@@ -103,7 +109,7 @@ exports[`Gpt test renders an ad-pixel ad slot 1`] = `
           "flex": 1,
           "justifyContent": "center",
         },
-        Object {},
+        null,
       ]
     }
   >

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ad",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Ad component",
   "main": "ad",
   "scripts": {
@@ -65,7 +65,6 @@
     "prop-types": "15.5.10",
     "react-broadcast": "0.1.2",
     "react-native-web": "0.0.119",
-    "react-style-proptype": "3.0.0",
     "svgs": "2.3.0"
   },
   "peerDependencies": {

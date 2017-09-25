@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.7.2"></a>
+## [0.7.2](https://github.com/newsuk/times-components/compare/@times-components/markup@0.7.1...@times-components/markup@0.7.2) (2017-09-25)
+
+
+### Bug Fixes
+
+* use the correct version of ad on markup ([#242](https://github.com/newsuk/times-components/issues/242)) ([b60241b](https://github.com/newsuk/times-components/commit/b60241b))
+
+
+
+
+<a name="0.7.1"></a>
+## [0.7.1](https://github.com/newsuk/times-components/compare/@times-components/markup@0.7.0...@times-components/markup@0.7.1) (2017-09-25)
+
+
+
+
 <a name="0.7.0"></a>
 # [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/markup@0.5.2...@times-components/markup@0.7.0) (2017-09-22)
 

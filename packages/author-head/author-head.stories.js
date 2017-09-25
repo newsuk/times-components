@@ -21,6 +21,12 @@ const extras = {
   onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress")
 };
 
-storiesOf("AuthorHead", module).add("Full Header", () =>
-  story(<AuthorHead {...data} {...extras} />)
-);
+storiesOf("AuthorHead", module)
+  .add("Full Header", () => story(<AuthorHead {...data} {...extras} />))
+  .add("No profile picture", () => {
+    const props = {
+      ...data,
+      uri: ""
+    };
+    return story(<AuthorHead {...props} {...extras} />);
+  });
