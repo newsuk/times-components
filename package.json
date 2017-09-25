@@ -12,7 +12,7 @@
   },
   "scripts": {
     "native": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest ./lib && lerna run test",
+    "test": "npm run storybook:build && jest ./lib && lerna run test",
     "test:fructose": "IOS=true jest .fructose/components.test.js --setupTestFrameworkScriptFile ./.fructose/setup.js --forceExit --verbose",
     "pretest:fructose": "npm run fetch-fonts && npm run write-test-components",
     "coverage:publish": "lcov-result-merger ./packages/**/lcov.info | coveralls",
@@ -20,7 +20,7 @@
     "fetch-fonts": "node ./lib/fetch-fonts",
     "prestorybook": "npm run fetch-fonts && npm run storybook:build-vendor",
     "storybook": "start-storybook -p 9001 -c .storybook -s ./dist/public",
-    "prestorybook:build": "node ./lib/fetch-fonts",
+    "prestorybook:build": "npm run prestorybook",
     "storybook:build-vendor": "webpack --config ./.storybook/vendor.webpack.config.js",
     "storybook:build": "build-storybook -c .storybook -s ./dist/public",
     "storybook:publish": "./lib/publish_storybook.sh",

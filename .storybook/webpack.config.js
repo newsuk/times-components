@@ -1,3 +1,4 @@
+const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
@@ -18,7 +19,7 @@ module.exports = {
     // Use the DLL in development.
     new webpack.DllReferencePlugin({
       context: __dirname,
-      manifest: require("../dist/public/vendor-manifest.json")
+      manifest: path.resolve("./dist/public/vendor-manifest.json")
     })
   ]
 };
