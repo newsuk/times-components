@@ -20,6 +20,20 @@ const flagsMapping = new Map([
   ["EXCLUSIVE", <ExclusiveArticleFlag />],
   ["SPONSORED", <SponsoredArticleFlag />]
 ]);
+
+const getFlags = flags => {
+  if (!flags.length) return null;
+  return (
+    <View style={[styles.articleFlag]}>
+      {flags.map(flag => (
+        <View key={flag} style={styles.articleFlagContainer}>
+          {flagsMapping.get(flag)}
+        </View>
+      ))}
+    </View>
+  );
+};
+
 const ArticleHeader = ({ label, title, standfirst, flags }) => (
   <View style={[styles.articleMainContentRow]}>
     {label ? (
@@ -31,15 +45,7 @@ const ArticleHeader = ({ label, title, standfirst, flags }) => (
       <ArticleHeadline title={title} style={styles.articleHeadLineText} />
     </View>
     {standfirst ? <Text style={[styles.standFirst]}>{standfirst}</Text> : null}
-    {flags.length ? (
-      <View style={[styles.articleFlag]}>
-        {flags.map(i => (
-          <View key={i} style={styles.articleFlagContainer}>
-            {flagsMapping.get(i)}
-          </View>
-        ))}
-      </View>
-    ) : null}
+    {getFlags(flags)}
   </View>
 );
 
