@@ -2,7 +2,7 @@
   "name": "@times-components/date-publication",
   "version": "0.3.0",
   "description": "Date and Publication properties",
-  "main": "date-publication.js",
+  "main": "date-publication",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
