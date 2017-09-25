@@ -24,7 +24,7 @@
     "storybook:build-vendor": "webpack --config ./.storybook/vendor.webpack.config.js",
     "storybook:build": "build-storybook -c .storybook -s ./dist/public",
     "storybook:publish": "./lib/publish_storybook.sh",
-    "prestorybook-native": "node ./node_modules/.bin/rnstl && node ./lib/fetch-fonts",
+    "prestorybook-native": "rnstl && node ./lib/fetch-fonts",
     "storybook-native": "storybook -c .storybook.native start -p 7007",
     "compile-fructose-components": "rnstl --searchDir ./packages --pattern './*/*.fructose.js' --outputFile ./.fructose/components.js",
     "write-test-components": "npm run compile-fructose-components && compile-tests",
