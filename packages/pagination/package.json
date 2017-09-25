@@ -1,7 +1,7 @@
 {
   "name": "@times-components/pagination",
   "version": "0.6.2",
-  "main": "pagination.js",
+  "main": "pagination",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "npm run test:native -- --bail --verbose --watchAll",

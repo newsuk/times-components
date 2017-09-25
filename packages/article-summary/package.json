@@ -1,7 +1,7 @@
 {
   "name": "@times-components/article-summary",
   "version": "0.5.2",
-  "main": "article-summary.js",
+  "main": "article-summary",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",

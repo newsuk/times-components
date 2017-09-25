@@ -2,7 +2,7 @@
   "name": "@times-components/article-flag",
   "version": "0.6.0",
   "description": "The article flag (sponsored, new, updated, etc)",
-  "main": "article-flag.js",
+  "main": "article-flag",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
