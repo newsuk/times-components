@@ -1,6 +1,6 @@
 {
   "name": "@times-components/error-view",
-  "version": "0.2.4",
+  "version": "0.4.0",
   "description": "Handles errors",
   "main": "error-view.js",
   "scripts": {
@@ -38,7 +38,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/brightcove-video": "1.0.3",
+    "@times-components/brightcove-video": "1.2.0",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-loader": "7.0.0",
@@ -53,7 +53,7 @@
     "eslint-plugin-react": "7.1.0",
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
-    "prettier": "1.6.1",
+    "prettier": "1.7.0",
     "react": "15.4.2",
     "react-dom": "15.4.2",
     "react-native": "0.42.3",

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { View } from "react-native";
 
 import { Subscriber } from "react-broadcast";
 
@@ -8,7 +9,13 @@ import GPT from "./gpt";
 
 class Ad extends Component {
   renderGpt(adManager) {
-    return <GPT adManager={adManager} code={this.props.code} />;
+    return (
+      <GPT
+        adManager={adManager}
+        code={this.props.code}
+        style={this.props.style}
+      />
+    );
   }
 
   render() {
@@ -21,7 +28,12 @@ class Ad extends Component {
 }
 
 Ad.propTypes = {
-  code: PropTypes.string.isRequired
+  code: PropTypes.string.isRequired,
+  style: View.propTypes.style
+};
+
+Ad.defaultProps = {
+  style: null
 };
 
 export default Ad;

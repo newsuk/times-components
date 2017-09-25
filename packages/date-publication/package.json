@@ -1,6 +1,6 @@
 {
   "name": "@times-components/date-publication",
-  "version": "0.1.2",
+  "version": "0.3.0",
   "description": "Date and Publication properties",
   "main": "date-publication.js",
   "scripts": {
@@ -52,7 +52,7 @@
     "eslint-plugin-react": "7.1.0",
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
-    "prettier": "1.6.1",
+    "prettier": "1.7.0",
     "react": "15.4.2",
     "react-dom": "15.4.2",
     "react-native": "0.42.3",

@@ -1,6 +1,5 @@
 import React from "react";
 import { StyleSheet, View, Text, Platform } from "react-native";
-import ReactStyleProp from "react-style-proptype";
 import PropTypes from "prop-types";
 
 import TimesWatermark from "./times-watermark";
@@ -55,11 +54,11 @@ const Placeholder = ({ width, height, style }) => {
 Placeholder.propTypes = {
   width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired,
-  style: ReactStyleProp
+  style: View.propTypes.style
 };
 
 Placeholder.defaultProps = {
-  style: {}
+  style: null
 };
 
 export default Placeholder;

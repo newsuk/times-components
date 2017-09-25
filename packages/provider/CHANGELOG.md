@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.2"></a>
+## [0.6.2](https://github.com/newsuk/times-components/compare/@times-components/provider@0.6.1...@times-components/provider@0.6.2) (2017-09-25)
+
+
+
+
+<a name="0.6.1"></a>
+## [0.6.1](https://github.com/newsuk/times-components/compare/@times-components/provider@0.6.0...@times-components/provider@0.6.1) (2017-09-25)
+
+
+### Bug Fixes
+
+* ensure author-head doesn't crash without image ([6f1890f](https://github.com/newsuk/times-components/commit/6f1890f))
+
+
+
+
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.4.5...@times-components/provider@0.6.0) (2017-09-22)
+
+
+### Bug Fixes
+
+* fetching fonts ([#227](https://github.com/newsuk/times-components/issues/227)) ([614e6d3](https://github.com/newsuk/times-components/commit/614e6d3))
+
+
+### Features
+
+* update prettier ([#235](https://github.com/newsuk/times-components/issues/235)) ([c9ab71b](https://github.com/newsuk/times-components/commit/c9ab71b))
+
+
+
+
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.4.5...@times-components/provider@0.5.0) (2017-09-22)
+
+
+### Bug Fixes
+
+* fetching fonts ([#227](https://github.com/newsuk/times-components/issues/227)) ([614e6d3](https://github.com/newsuk/times-components/commit/614e6d3))
+
+
+### Features
+
+* update prettier ([#235](https://github.com/newsuk/times-components/issues/235)) ([c9ab71b](https://github.com/newsuk/times-components/commit/c9ab71b))
+
+
+
+
 <a name="0.4.6"></a>
 ## [0.4.6](https://github.com/newsuk/times-components/compare/@times-components/provider@0.4.5...@times-components/provider@0.4.6) (2017-09-21)
 

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "0.3.3",
+  "version": "0.5.1",
   "main": "article-summary.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -51,7 +51,7 @@
     "eslint-plugin-react": "7.1.0",
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
-    "prettier": "1.6.1",
+    "prettier": "1.7.0",
     "react": "15.4.2",
     "react-dom": "15.4.2",
     "react-native": "0.42.3",
@@ -59,8 +59,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/date-publication": "0.1.2",
-    "@times-components/markup": "0.5.2",
+    "@times-components/date-publication": "0.3.0",
+    "@times-components/markup": "0.7.1",
     "date-fns": "1.28.5",
     "prop-types": "15.5.10",
     "react-native-web": "0.0.119",

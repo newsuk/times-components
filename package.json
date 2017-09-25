@@ -4,7 +4,8 @@
   "description": "A collection of presentational components for The Times and Sunday Times",
   "main": "index.js",
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=8.0.0",
+    "yarn": "1.1.0"
   },
   "bin": {
     "times-components": "times-components"
@@ -86,7 +87,7 @@
     "@storybook/addon-actions": "3.2.6",
     "@storybook/react": "3.2.6",
     "@storybook/react-native": "3.2.6",
-    "@times-components/fructose":"2.0.0",
+    "@times-components/fructose": "2.0.0",
     "coveralls": "2.13.1",
     "detox": "5.5.1",
     "eslint": "3.19.0",
@@ -100,7 +101,7 @@
     "lcov-result-merger": "1.2.0",
     "lerna": "2.0.0",
     "node-fetch": "1.7.2",
-    "prettier": "1.6.1",
+    "prettier": "1.7.0",
     "react": "15.4.2",
     "react-dom": "15.4.2",
     "react-native": "0.42.3",

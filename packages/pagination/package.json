@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pagination",
-  "version": "0.4.2",
+  "version": "0.6.0",
   "main": "pagination.js",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -58,7 +58,7 @@
     "eslint-plugin-react": "7.1.0",
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
-    "prettier": "1.6.1",
+    "prettier": "1.7.0",
     "react": "15.4.2",
     "react-dom": "15.4.2",
     "react-native": "0.42.3",
@@ -66,8 +66,9 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/link": "0.4.2",
+    "@times-components/link": "0.6.0",
     "prop-types": "15.5.10",
+    "react-display-name": "0.2.3",
     "react-native-web": "0.0.119"
   },
   "peerDependencies": {

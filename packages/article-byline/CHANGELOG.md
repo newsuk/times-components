@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.1"></a>
+## [0.5.1](https://github.com/newsuk/times-components/compare/@times-components/article-byline@0.5.0...@times-components/article-byline@0.5.1) (2017-09-25)
+
+
+
+
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/article-byline@0.3.4...@times-components/article-byline@0.5.0) (2017-09-22)
+
+
+### Features
+
+* update prettier ([#235](https://github.com/newsuk/times-components/issues/235)) ([c9ab71b](https://github.com/newsuk/times-components/commit/c9ab71b))
+
+
+
+
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/article-byline@0.3.4...@times-components/article-byline@0.4.0) (2017-09-22)
+
+
+### Features
+
+* update prettier ([#235](https://github.com/newsuk/times-components/issues/235)) ([c9ab71b](https://github.com/newsuk/times-components/commit/c9ab71b))
+
+
+
+
 <a name="0.3.4"></a>
 ## [0.3.4](https://github.com/newsuk/times-components/compare/@times-components/article-byline@0.3.3...@times-components/article-byline@0.3.4) (2017-09-21)
 

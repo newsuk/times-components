@@ -16,6 +16,8 @@ class BrightcoveVideo extends Component {
     this.on("play", context.onPlay.bind(context, this));
     this.on("pause", context.onPause.bind(context, this));
     this.on("seeked", context.onSeeked.bind(context, this));
+    this.on("timeupdate", context.onPlay.bind(context, this));
+    this.on("durationchange", context.onDurationChange.bind(context, this));
 
     this.contextmenu({ disabled: true });
   }
@@ -28,6 +30,14 @@ class BrightcoveVideo extends Component {
     return `//players.brightcove.net/${accountId}/${playerId}_default/index.min.js`;
   }
 
+  static getCurrentTimeMs(player) {
+    return Math.round(player.currentTime() * 1000);
+  }
+
+  static getDurationMs(player) {
+    return Math.round(player.duration() * 1000);
+  }
+
   constructor(props) {
     super(props);
 
@@ -37,12 +47,11 @@ class BrightcoveVideo extends Component {
 
     this.state = {
       id: `${props.videoId}-${props.accountId}-${index}`,
-      accountId: props.accountId,
-      videoId: props.videoId,
-      playerId: props.playerId,
       errors: [].concat(BrightcoveVideo.globalErrors),
-      playerStatus: "paused",
-      playheadPosition: 0
+      isPlaying: "paused",
+      isFinished: false,
+      fullscreen: false,
+      progress: 0
     };
   }
 
@@ -81,6 +90,35 @@ class BrightcoveVideo extends Component {
     this.init();
   }
 
+  componentWillUpdate(nextProps, nextState) {
+    const playerStatusChanged = this.state.isPlaying !== nextState.isPlaying;
+
+    if (this.state.duration !== nextState.duration) {
+      this.props.onDuration(nextState.duration);
+    }
+
+    if (playerStatusChanged && nextState.isPlaying) {
+      this.props.onPlay();
+    }
+
+    if (this.state.progress !== nextState.progress) {
+      this.props.onProgress(nextState.progress);
+    }
+
+    if (playerStatusChanged && !nextState.isPlaying) {
+      this.props.onPause();
+    }
+
+    if (
+      this.state.isFinished !== nextState.isFinished &&
+      nextState.isFinished
+    ) {
+      this.props.onFinish();
+    }
+
+    return this.props !== nextProps;
+  }
+
   componentWillUnmount() {
     if (this.player) {
       this.player.dispose();
@@ -93,28 +131,31 @@ class BrightcoveVideo extends Component {
 
   onPlay(player) {
     this.setState({
-      playerStatus: "playing",
-      playheadPosition: player.currentTime()
+      isPlaying: true,
+      progress: BrightcoveVideo.getCurrentTimeMs(player),
+      isFinished: false
     });
-
-    this.emitState();
   }
 
   onPause(player) {
-    this.setState({
-      playerStatus: "paused",
-      playheadPosition: player.currentTime()
-    });
+    const progress = BrightcoveVideo.getCurrentTimeMs(player);
 
-    this.emitState();
+    this.setState({
+      isPlaying: false,
+      progress,
+      isFinished: progress >= this.state.duration
+    });
   }
 
   onSeeked(player) {
     this.setState({
-      playheadPosition: player.currentTime()
+      progress: BrightcoveVideo.getCurrentTimeMs(player),
+      isFinished: false
     });
+  }
 
-    this.emitState();
+  onDurationChange(player) {
+    this.setState({ duration: BrightcoveVideo.getDurationMs(player) });
   }
 
   setPlayer(player) {
@@ -129,10 +170,6 @@ class BrightcoveVideo extends Component {
     );
 
     return s;
-  }
-
-  emitState() {
-    this.props.onChange(this.state);
   }
 
   initVideoJS(id) {

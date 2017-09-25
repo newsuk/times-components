@@ -63,7 +63,8 @@ const PbjsManager = class PbjsManager {
                 return options.minPrice.toFixed(2);
               }
               return (bidResponse.cpm -
-                bidResponse.cpm % options.bucketSize).toFixed(2);
+                bidResponse.cpm % options.bucketSize
+              ).toFixed(2);
             }
           },
           {

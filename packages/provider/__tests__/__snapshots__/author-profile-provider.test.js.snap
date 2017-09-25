@@ -131,45 +131,6 @@ exports[`renders data 1`] = `
             </Text>
           </Text>
         </View>
-        <View
-          style={
-            Object {
-              "bottom": 0,
-              "height": 100,
-              "position": "absolute",
-              "width": 100,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-          >
-            <Image
-              onError={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  Object {
-                    "borderColor": "#FFF",
-                    "borderRadius": 50,
-                    "borderWidth": 5,
-                    "height": 100,
-                    "width": 100,
-                  },
-                ]
-              }
-            />
-          </View>
-        </View>
       </View>
       <View
         style={
@@ -535,45 +496,6 @@ exports[`renders data from graphql 1`] = `
                last 
             </Text>
           </Text>
-        </View>
-        <View
-          style={
-            Object {
-              "bottom": 0,
-              "height": 100,
-              "position": "absolute",
-              "width": 100,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-          >
-            <Image
-              onError={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  Object {
-                    "borderColor": "#FFF",
-                    "borderRadius": 50,
-                    "borderWidth": 5,
-                    "height": 100,
-                    "width": 100,
-                  },
-                ]
-              }
-            />
-          </View>
         </View>
       </View>
       <View

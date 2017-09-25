@@ -8,7 +8,7 @@ Home of The Times' `react`/`react native` components, using
 
 ### Dev Environment
 
-We require MacOS with [Node.js](https://nodejs.org) (version 8 with npm v5), [yarn](https://yarnpkg.com) (latest) and [watchman](https://facebook.github.io/watchman) installed. Native development requires [Xcode](https://developer.apple.com/xcode) and [Android Studio](https://developer.android.com/studio/index.html).
+We require MacOS with [Node.js](https://nodejs.org) (version >=8 with npm v5), [yarn](https://yarnpkg.com) (latest) and [watchman](https://facebook.github.io/watchman) installed. Native development requires [Xcode](https://developer.apple.com/xcode) and [Android Studio](https://developer.android.com/studio/index.html).
 
 You can try without these requirements, but you'd be on your own.
 

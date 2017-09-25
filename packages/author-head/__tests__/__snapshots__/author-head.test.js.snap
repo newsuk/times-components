@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders a snapshot 1`] = `
+exports[`renders 1`] = `
 <View
   pointerEvents="box-none"
   style={
@@ -73,49 +73,10 @@ exports[`renders a snapshot 1`] = `
       }
     />
   </View>
-  <View
-    style={
-      Object {
-        "bottom": 0,
-        "height": 100,
-        "position": "absolute",
-        "width": 100,
-      }
-    }
-  >
-    <View
-      onLayout={[Function]}
-    >
-      <Image
-        onError={[Function]}
-        onLoad={[Function]}
-        source={
-          Object {
-            "uri": "",
-          }
-        }
-        style={
-          Array [
-            Object {
-              "height": 1,
-              "width": 750,
-            },
-            Object {
-              "borderColor": "#FFF",
-              "borderRadius": 50,
-              "borderWidth": 5,
-              "height": 100,
-              "width": 100,
-            },
-          ]
-        }
-      />
-    </View>
-  </View>
 </View>
 `;
 
-exports[`renders a snapshot with data 1`] = `
+exports[`renders with data 1`] = `
 <View
   pointerEvents="box-none"
   style={
@@ -279,6 +240,135 @@ exports[`renders a snapshot with data 1`] = `
         }
       />
     </View>
+  </View>
+</View>
+`;
+
+exports[`renders without profile picture 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "transparent",
+      "paddingBottom": 50,
+    }
+  }
+>
+  <View
+    accessibilityRole="banner"
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F9F8F3",
+        "flexDirection": "column",
+        "paddingBottom": 50,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="1"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#000",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 45,
+          "paddingTop": 32,
+        }
+      }
+    >
+      Carol Midgley
+    </Text>
+    <Text
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="2"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "TimesDigital-RegularSC",
+          "fontSize": 15,
+        }
+      }
+    >
+      columnist
+    </Text>
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="https://twitter.com/carolmidgley"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#006699",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 18,
+            "paddingTop": 16,
+            "textDecorationLine": "none",
+          },
+        ]
+      }
+    >
+      @
+      carolmidgley
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#333",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 16,
+          "lineHeight": 26,
+          "maxWidth": "88%",
+          "paddingBottom": 32,
+          "textAlign": "center",
+        }
+      }
+    >
+      Carol Midgley joined 
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontStyle": "italic",
+          }
+        }
+      >
+        The Times
+      </Text>
+       in 1996, and won feature writer of the year in 2004. Find her Wednesday column in 
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontStyle": "italic",
+          }
+        }
+      >
+        Times2
+      </Text>
+       each week and a weekly comment piece on Fridays.
+    </Text>
   </View>
 </View>
 `;

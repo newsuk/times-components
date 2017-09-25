@@ -9,7 +9,7 @@ import { getSlotConfig } from "./generate-config";
 const getStyles = config =>
   StyleSheet.create({
     container: {
-      height: config.maxSizes.height
+      minHeight: config.maxSizes.height
     }
   });
 
@@ -59,7 +59,7 @@ class GPT extends Component {
 
     return (
       <View
-        style={styles.container}
+        style={[styles.container, this.props.style]}
         id={this.props.code}
         onLayout={this.handleLayout}
       >
@@ -74,7 +74,11 @@ class GPT extends Component {
 
 GPT.propTypes = {
   code: PropTypes.string.isRequired,
+  style: View.propTypes.style,
   adManager: PropTypes.instanceOf(AdManager).isRequired
+};
+GPT.defaultProps = {
+  style: null
 };
 
 export default GPT;

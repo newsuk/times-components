@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "0.7.1",
+  "version": "0.9.2",
   "description": "Author info along with articles they have written",
   "main": "author-profile.js",
   "scripts": {
@@ -59,7 +59,7 @@
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
     "jsdom": "11.1.0",
-    "prettier": "1.6.1",
+    "prettier": "1.7.0",
     "react": "15.4.2",
     "react-dom": "15.4.2",
     "react-native": "0.42.3",
@@ -67,9 +67,9 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/author-head": "0.4.1",
-    "@times-components/card": "0.4.3",
-    "@times-components/pagination": "0.4.2",
+    "@times-components/author-head": "0.6.2",
+    "@times-components/card": "0.6.1",
+    "@times-components/pagination": "0.6.0",
     "jest-cli": "20.0.4",
     "lodash.get": "4.4.2",
     "lodash.merge": "4.6.0",
