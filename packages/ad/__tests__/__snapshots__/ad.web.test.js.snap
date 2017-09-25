@@ -8,9 +8,12 @@ exports[`AdComposer renders with more than one ad slot 1`] = `
     id="ad-header"
     onLayout={[Function]}
     style={
-      Object {
-        "height": 50,
-      }
+      Array [
+        Object {
+          "minHeight": 50,
+        },
+        null,
+      ]
     }
   >
     <View
@@ -21,7 +24,7 @@ exports[`AdComposer renders with more than one ad slot 1`] = `
             "flex": 1,
             "justifyContent": "center",
           },
-          Object {},
+          null,
         ]
       }
     >
@@ -90,9 +93,12 @@ exports[`AdComposer renders with more than one ad slot 1`] = `
     id="intervention"
     onLayout={[Function]}
     style={
-      Object {
-        "height": 250,
-      }
+      Array [
+        Object {
+          "minHeight": 250,
+        },
+        null,
+      ]
     }
   >
     <View
@@ -103,7 +109,7 @@ exports[`AdComposer renders with more than one ad slot 1`] = `
             "flex": 1,
             "justifyContent": "center",
           },
-          Object {},
+          null,
         ]
       }
     >
@@ -177,9 +183,12 @@ exports[`AdComposer renders with one ad slot 1`] = `
     id="ad-header"
     onLayout={[Function]}
     style={
-      Object {
-        "height": 50,
-      }
+      Array [
+        Object {
+          "minHeight": 50,
+        },
+        null,
+      ]
     }
   >
     <View
@@ -190,7 +199,7 @@ exports[`AdComposer renders with one ad slot 1`] = `
             "flex": 1,
             "justifyContent": "center",
           },
-          Object {},
+          null,
         ]
       }
     >
