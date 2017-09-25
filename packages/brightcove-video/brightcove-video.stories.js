@@ -336,4 +336,12 @@ storiesOf("BrightcoveVideo", module)
       onDuration={action("duration")}
       autoplay
     />
+  ))
+  .add("Launcher with reset on finish", () => (
+    <BrightcoveVideo
+      policyKey={policyKey}
+      videoId={videoId}
+      accountId={accountId}
+      resetOnFinish={true}
+    />
   ));
