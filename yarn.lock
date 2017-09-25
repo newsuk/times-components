@@ -205,16 +205,6 @@
     react-treebeard "^2.0.3"
     redux "^3.6.0"
 
-"@times-components/ad@0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@times-components/ad/-/ad-0.1.2.tgz#9d2b2c5a3c4bee00c50f838f45049af7e8f11e70"
-  dependencies:
-    prop-types "15.5.10"
-    react-broadcast "0.1.2"
-    react-native-web "0.0.119"
-    react-style-proptype "3.0.0"
-    svgs "2.3.0"
-
 "@times-components/fructose@2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-2.0.0.tgz#beabb18bda9738193cd251e47d0884272f84e233"
