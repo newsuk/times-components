@@ -1,9 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Link doesnt change inner text styles 1`] = `
+<a
+  href="http://thetimes.co.uk"
+  onClick={[Function]}
+  style={
+    Object {
+      "textDecoration": "none",
+    }
+  }
+>
+  <p>
+    Hello
+  </p>
+</a>
+`;
+
 exports[`Link renders correctly 1`] = `
 <a
   href="http://thetimes.co.uk"
   onClick={[Function]}
+  style={
+    Object {
+      "textDecoration": "none",
+    }
+  }
 />
 `;
 
