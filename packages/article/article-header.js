@@ -34,17 +34,27 @@ const getFlags = flags => {
   );
 };
 
+const getStandfirst = standfirst => {
+  if (!standfirst) return null;
+  return <Text style={[styles.standFirst]}>{standfirst}</Text>;
+};
+
+const getLabel = label => {
+  if (!label) return null;
+  return (
+    <View style={styles.articleLabel}>
+      <ArticleLabel title={label} color="#13354E" />
+    </View>
+  );
+};
+
 const ArticleHeader = ({ label, title, standfirst, flags }) => (
   <View style={[styles.articleMainContentRow]}>
-    {label ? (
-      <View style={styles.articleLabel}>
-        <ArticleLabel title={label} color="#13354E" />
-      </View>
-    ) : null}
+    {getLabel(label)}
     <View style={[styles.articleHeadline]}>
       <ArticleHeadline title={title} style={styles.articleHeadLineText} />
     </View>
-    {standfirst ? <Text style={[styles.standFirst]}>{standfirst}</Text> : null}
+    {getStandfirst(standfirst)}
     {getFlags(flags)}
   </View>
 );
