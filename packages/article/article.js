@@ -69,13 +69,20 @@ class ArticlePage extends React.Component {
   }
   constructor(props) {
     super(props);
-    this.state = {
-      dataSource: ds.cloneWithRows({})
-    };
+
+    if (props.data.article) {
+      this.state = {
+        dataSource: ds.cloneWithRows(listViewDataHelper(props.data.article))
+      };
+    } else {
+      this.state = {
+        dataSource: ds.cloneWithRows({})
+      };
+    }
   }
 
   componentWillReceiveProps(nextProps) {
-    if (!nextProps.data.loading) {
+    if (!nextProps.isLoading) {
       this.setState({
         dataSource: ds.cloneWithRows(listViewDataHelper(nextProps.data.article))
       });
@@ -83,7 +90,7 @@ class ArticlePage extends React.Component {
   }
 
   render() {
-    if (this.props.data.loading) {
+    if (this.props.isLoading) {
       return (
         <View style={styles.container}>
           <ActivityIndicator size={"large"} />
@@ -106,22 +113,22 @@ class ArticlePage extends React.Component {
 
 ArticlePage.propTypes = {
   data: PropTypes.shape({
-    loading: PropTypes.boolean,
     article: PropTypes.shape({
       ...articleHeaderPropTypes,
       ...articleMetaPropTypes
     })
-  })
+  }),
+  isLoading: PropTypes.boolean
 };
 
 ArticlePage.defaultProps = {
   data: {
-    loading: true,
     article: {
       ...articleHeaderDefaultPropTypes,
       ...articleMetaDefaultPropTypes
     }
-  }
+  },
+  isLoading: true
 };
 
 export default ArticlePage;

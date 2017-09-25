@@ -194,5 +194,6 @@
         }
       ]
     }
-  }
+  },
+  "isLoading": false
 }
