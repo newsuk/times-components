@@ -9,7 +9,7 @@ import {
   articleMetaDefaultPropTypes
 } from "./article-meta.proptypes";
 
-import styles from "./article-style";
+import styles from "./styles/article-meta-style";
 
 const ArticleMeta = ({ byline, publishedTime, publicationName }) => (
   <View style={[styles.articleMainContentRow, styles.articleMiddleContainer]}>

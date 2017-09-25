@@ -8,7 +8,7 @@ import {
 } from "@times-components/article-flag";
 import ArticleLabel from "@times-components/article-label";
 import { Text, View } from "react-native";
-import styles from "./article-style";
+import styles from "./styles/article-header-style";
 import {
   articleHeaderPropTypes,
   articleHeaderDefaultPropTypes
