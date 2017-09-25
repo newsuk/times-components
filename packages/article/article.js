@@ -5,7 +5,7 @@ import { renderTrees } from "@times-components/markup";
 import Image from "@times-components/image";
 
 import listViewDataHelper from "./data-helper";
-import styles from "./article-style";
+import styles from "./styles/article-style";
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
 import {
