@@ -8,14 +8,18 @@ import AuthorProfileItemSeparator from "./author-profile-item-separator";
 const AuthorProfile = props => (
   <ScrollView testID="scroll-view">
     <AuthorProfileHeader {...props} />
-    {props.articles.list.map((item, key) => {
+    {props.articles.list.map((article, key) => {
+      const { id, url } = article;
       const separatorComponent =
         key > 0 ? <AuthorProfileItemSeparator /> : null;
 
       return (
-        <View key={item.id}>
+        <View key={id}>
           {separatorComponent}
-          <AuthorProfileItem {...item} />
+          <AuthorProfileItem
+            {...article}
+            onPress={e => props.onArticlePress(e, { id, url })}
+          />
         </View>
       );
     })}
@@ -23,6 +27,7 @@ const AuthorProfile = props => (
 );
 
 AuthorProfile.propTypes = Object.assign(
+  { onArticlePress: PropTypes.func.isRequired },
   {
     articles: PropTypes.shape({
       list: PropTypes.arrayOf(PropTypes.shape(AuthorProfileItem.propTypes))

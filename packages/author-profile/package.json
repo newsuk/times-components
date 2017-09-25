@@ -69,6 +69,7 @@
   "dependencies": {
     "@times-components/author-head": "0.6.3",
     "@times-components/card": "0.6.2",
+    "@times-components/link": "0.6.0",
     "@times-components/pagination": "0.6.0",
     "jest-cli": "20.0.4",
     "lodash.get": "4.4.2",
