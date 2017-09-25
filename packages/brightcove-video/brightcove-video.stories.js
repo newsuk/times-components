@@ -342,6 +342,6 @@ storiesOf("BrightcoveVideo", module)
       policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
-      resetOnFinish={true}
+      resetOnFinish
     />
   ));
