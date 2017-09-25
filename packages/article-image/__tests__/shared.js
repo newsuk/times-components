@@ -13,36 +13,9 @@ const portraitInlineImage = require("../fixtures/portrait-inline-image.json")
   .fixture;
 
 module.exports = () => {
-  it("does not render Article Image if id is not received", () => {
-    const noId = {
-      imageOptions: {
-        id: null,
-        display: "primary",
-        ratio: "16:9",
-        url:
-          "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0"
-      },
-      captionOptions: {
-        caption: "All the latest stories in culture and books.",
-        credits: "The credits"
-      }
-    };
-
-    const tree = renderer
-      .create(
-        <ArticleImage
-          imageOptions={noId.imageOptions}
-          captionOptions={noId.captionOptions}
-        />
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
   it("does not render Article Image display display is not received", () => {
     const noDisplay = {
       imageOptions: {
-        id: "c7831d5d-c6a6-4792-9059-218ffd56f65b",
         display: null,
         ratio: "16:9",
         url:
@@ -68,7 +41,6 @@ module.exports = () => {
   it("does not render Article Image if ratio is not received", () => {
     const noRatio = {
       imageOptions: {
-        id: "c7831d5d-c6a6-4792-9059-218ffd56f65b",
         display: "primary",
         ratio: null,
         url:
@@ -95,7 +67,6 @@ module.exports = () => {
   it("does not render Article Image if url is not received", () => {
     const noUrl = {
       imageOptions: {
-        id: "c7831d5d-c6a6-4792-9059-218ffd56f65b",
         display: "primary",
         ratio: "16:9",
         url: null
@@ -120,7 +91,6 @@ module.exports = () => {
   it("does not render Caption on Article Image if both caption and credits are not received", () => {
     const noCredits = {
       imageOptions: {
-        id: "c7831d5d-c6a6-4792-9059-218ffd56f65b",
         display: "primary",
         ratio: "16:9",
         url:

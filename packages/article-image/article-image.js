@@ -85,7 +85,7 @@ const renderCaption = (display, caption, credits) => {
 };
 
 const ArticleImage = ({ imageOptions, captionOptions }) => {
-  const { id, display, ratio, url } = imageOptions;
+  const { display, ratio, url } = imageOptions;
   const { caption, credits } = captionOptions;
 
   const source = {
@@ -94,7 +94,7 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
 
   const ratioStyle = getImageRatioBox(ratio);
   return (
-    <View key={id} style={styles[display]}>
+    <View key={url} style={styles[display]}>
       <View style={styles[`${display}Image`]}>
         <View style={ratioStyle.ratioBox}>
           <View style={ratioStyle.ratioBoxInside}>
