@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.6"></a>
+## [0.6.6](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.6.5...@times-components/author-head@0.6.6) (2017-09-25)
+
+
+### Bug Fixes
+
+* package.json main ([ed150b8](https://github.com/newsuk/times-components/commit/ed150b8))
+
+
+
+
 <a name="0.6.5"></a>
 ## [0.6.5](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.6.3...@times-components/author-head@0.6.5) (2017-09-25)
 

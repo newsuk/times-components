@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "main": "provider",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -67,8 +67,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/author-profile": "0.11.0",
-    "@times-components/pagination": "0.6.2",
+    "@times-components/author-profile": "0.12.0",
+    "@times-components/pagination": "0.6.3",
     "graphql-tag": "2.4.2",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",
