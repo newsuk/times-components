@@ -1,18 +1,6 @@
-import Ad from "@times-components/ad";
 import React from "react";
-import { StyleSheet } from "react-native";
 import renderTreeWithoutDefaults from "./render-tree-without-defaults";
 
-const styles = StyleSheet.create({
-  ad: {
-    borderTopColor: "#dbdbdb",
-    borderBottomColor: "#dbdbdb",
-    borderTopWidth: 1,
-    borderBottomWidth: 1,
-    paddingTop: 10,
-    paddingBottom: 10
-  }
-});
 const defaultRenderers = {
   paragraph(key, attributes, renderedChildren) {
     return <p key={key}>{renderedChildren}</p>;
@@ -28,9 +16,6 @@ const defaultRenderers = {
   },
   inline(key, attributes, renderedChildren) {
     return <span key={key}>{renderedChildren}</span>;
-  },
-  ad(key) {
-    return <Ad key={key} code="intervention" style={styles.ad} />;
   }
 };
 
