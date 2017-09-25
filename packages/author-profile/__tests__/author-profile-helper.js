@@ -22,7 +22,8 @@ const props = {
     pageSize: 10
   }),
   isLoading: false,
-  onTwitterLinkPress: () => {}
+  onTwitterLinkPress: () => {},
+  onArticlePress: () => {}
 };
 
 export default AuthorProfileContent => {
@@ -74,7 +75,11 @@ export default AuthorProfileContent => {
 
   it("renders profile header", () => {
     const component = renderer.create(
-      <AuthorProfileHeader onTwitterLinkPress={() => {}} {...props.data} />
+      <AuthorProfileHeader
+        onTwitterLinkPress={() => {}}
+        onArticlePress={() => {}}
+        {...props.data}
+      />
     );
 
     expect(component).toMatchSnapshot();
@@ -88,7 +93,11 @@ export default AuthorProfileContent => {
 
   it("renders profile content component", () => {
     const component = renderer.create(
-      <AuthorProfileContent onTwitterLinkPress={() => {}} {...props.data} />
+      <AuthorProfileContent
+        onTwitterLinkPress={() => {}}
+        onArticlePress={() => {}}
+        {...props.data}
+      />
     );
 
     expect(component).toMatchSnapshot();

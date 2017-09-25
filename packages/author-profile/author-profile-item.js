@@ -2,6 +2,7 @@ import React from "react";
 import get from "lodash.get";
 import { StyleSheet, View } from "react-native";
 import Card from "@times-components/card";
+import Link from "@times-components/link";
 
 const styles = StyleSheet.create({
   container: {
@@ -11,25 +12,34 @@ const styles = StyleSheet.create({
 });
 
 const AuthorProfileItem = item => {
-  const props = {
-    date: item.publishedTime,
-    headline: item.title,
-    image: {
-      uri: get(
-        item,
-        "leadAsset.crop.url",
-        get(item, "leadAsset.posterImage.crop.url", null)
-      )
-    },
-    text: item.content,
-    label: item.label,
-    publication: item.publicationName
-  };
+  const {
+    title,
+    content,
+    publishedTime,
+    label,
+    publicationName,
+    url,
+    onPress
+  } = item;
+  const imageUri = get(
+    item,
+    "leadAsset.crop.url",
+    get(item, "leadAsset.posterImage.crop.url", null)
+  );
 
   return (
-    <View style={styles.container}>
-      <Card {...props} />
-    </View>
+    <Link url={url} onPress={onPress}>
+      <View style={styles.container}>
+        <Card
+          headline={title}
+          text={content}
+          image={{ uri: imageUri }}
+          date={publishedTime}
+          label={label}
+          publication={publicationName}
+        />
+      </View>
+    </Link>
   );
 };
 
