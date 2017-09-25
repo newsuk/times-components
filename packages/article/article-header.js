@@ -21,7 +21,7 @@ const flagsMapping = new Map([
   ["SPONSORED", <SponsoredArticleFlag />]
 ]);
 
-const getFlags = flags => {
+const renderFlags = flags => {
   if (!flags.length) return null;
   return (
     <View style={[styles.articleFlag]}>
@@ -34,12 +34,12 @@ const getFlags = flags => {
   );
 };
 
-const getStandfirst = standfirst => {
+const renderStandfirst = standfirst => {
   if (!standfirst) return null;
   return <Text style={[styles.standFirst]}>{standfirst}</Text>;
 };
 
-const getLabel = label => {
+const renderLabel = label => {
   if (!label) return null;
   return (
     <View style={styles.articleLabel}>
@@ -50,12 +50,12 @@ const getLabel = label => {
 
 const ArticleHeader = ({ label, title, standfirst, flags }) => (
   <View style={[styles.articleMainContentRow]}>
-    {getLabel(label)}
+    {renderLabel(label)}
     <View style={[styles.articleHeadline]}>
       <ArticleHeadline title={title} style={styles.articleHeadLineText} />
     </View>
-    {getStandfirst(standfirst)}
-    {getFlags(flags)}
+    {renderStandfirst(standfirst)}
+    {renderFlags(flags)}
   </View>
 );
 
