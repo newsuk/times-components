@@ -65,42 +65,6 @@ exports[`Markup Web renders multiple paragraphs 1`] = `
 </div>
 `;
 
-exports[`Markup Web renders multiple paragraphs with ads 1`] = `
-<div>
-  <p>
-    This is the text for paragraph one
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <Ad
-    code="intervention"
-    style={64}
-  />
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-</div>
-`;
-
 exports[`Markup Web renders tags nested within blocks 1`] = `
 <div>
   Some text is here 

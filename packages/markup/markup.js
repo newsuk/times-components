@@ -1,4 +1,3 @@
-import Ad from "@times-components/ad";
 import React from "react";
 import { Text, StyleSheet } from "react-native";
 import renderTreeWithoutDefaults from "./render-tree-without-defaults";
@@ -9,14 +8,6 @@ const styles = StyleSheet.create({
   },
   bold: {
     fontWeight: "bold"
-  },
-  ad: {
-    borderTopColor: "#dbdbdb",
-    borderBottomColor: "#dbdbdb",
-    borderTopWidth: 1,
-    borderBottomWidth: 1,
-    paddingTop: 10,
-    paddingBottom: 10
   }
 });
 
@@ -43,11 +34,6 @@ const defaultRenderers = {
   },
   inline(key, attributes, renderedChildren) {
     return <Text key={key}>{renderedChildren}</Text>;
-  },
-  ad(key) {
-    return (
-      <Ad key={key} code="intervention" section="article" style={styles.ad} />
-    );
   }
 };
 

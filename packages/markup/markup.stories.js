@@ -1,15 +1,12 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-env browser */
-import { AdComposer } from "@times-components/ad";
-import { View, Text, Platform, ScrollView } from "react-native";
+import { View, Text } from "react-native";
 import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
 import { renderTree, renderTrees } from "./markup";
 
 const multiParagraph = require("./fixtures/multi-paragraph.json").fixture;
-const multiParagraphWithAds = require("./fixtures/multi-paragraph-with-ads.json")
-  .fixture;
 const mixture = require("./fixtures/tag-mixture.json").fixture;
 const bio = require("./fixtures/bio.json").fixture;
 
@@ -35,25 +32,6 @@ const Centered = ({ children }) => (
 storiesOf("Markup", module)
   .addDecorator(story => <Centered>{story()}</Centered>)
   .add("Multiple paragraphs", () => <View>{renderTrees(multiParagraph)}</View>)
-  .add("Multiple paragraphs with ads", () => {
-    if (Platform.OS === "web") {
-      return (
-        <div>
-          <a
-            href={`/iframe.html${window.top.location.search}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Click to render the ads
-          </a>
-          <AdComposer section="article">
-            {renderTrees(multiParagraphWithAds)}
-          </AdComposer>
-        </div>
-      );
-    }
-    return <ScrollView>{renderTrees(multiParagraphWithAds)}</ScrollView>;
-  })
   .add("Mixture of tags", () =>
     renderTree(mixture[0], {
       block(key, attributes, renderedChildren) {
