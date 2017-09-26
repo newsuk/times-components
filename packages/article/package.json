@@ -53,13 +53,13 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/article-byline": "0.5.1",
+    "@times-components/article-byline": "0.5.6",
     "@times-components/article-flag": "0.6.2",
     "@times-components/article-headline": "0.6.0",
     "@times-components/article-label": "0.3.1",
-    "@times-components/date-publication": "0.3.0",
-    "@times-components/image": "1.4.0",
-    "@times-components/markup": "0.7.1",
+    "@times-components/date-publication": "0.3.1",
+    "@times-components/image": "1.4.1",
+    "@times-components/markup": "0.7.3",
     "eslint": "3.19.0",
     "eslint-config-airbnb": "15.0.1",
     "eslint-config-prettier": "2.3.0",
