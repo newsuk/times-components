@@ -27,7 +27,7 @@ class ArticlePage extends React.Component {
     if (rowData.type === "leadAsset") {
       return (
         <View style={styles.leadAsset}>
-          <Image source={{ uri: rowData.data.leadAsset.crop.url }} />
+          <Image source={{ uri: rowData.data.crop.url }} />
         </View>
       );
     } else if (rowData.type === "header") {

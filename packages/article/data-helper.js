@@ -1,19 +1,16 @@
-import pick from "lodash.pick";
-
 const prepareDataForListView = articleData => {
-  const leadAssetData = pick(articleData, ["leadAsset"]);
-  const articleHeaderData = pick(articleData, [
-    "label",
-    "title",
-    "standfirst",
-    "flags"
-  ]);
-
-  const articleMidContainerData = pick(articleData, [
-    "publicationName",
-    "publishedTime",
-    "byline"
-  ]);
+  const leadAssetData = articleData.leadAsset;
+  const articleHeaderData = {
+    label: articleData.label,
+    title: articleData.title,
+    standfirst: articleData.standfirst,
+    flags: articleData.flags
+  };
+  const articleMidContainerData = {
+    publicationName: articleData.publicationName,
+    publishedTime: articleData.publishedTime,
+    byline: articleData.byline
+  };
 
   return [
     { type: "leadAsset", data: leadAssetData },
