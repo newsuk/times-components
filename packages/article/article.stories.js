@@ -1,4 +1,5 @@
 /* eslint-env browser */
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
 import React from "react";
 import Article from "./article";
