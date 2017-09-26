@@ -49,7 +49,7 @@ class ArticlePage extends React.Component {
           publicationName={publicationName}
         />
       );
-    } else if (rowData.type === "article_body_row") {
+    } else if (rowData.type === "articleBodyRow") {
       return (
         <View style={[styles.articleMainContentRow]}>
           {renderTrees([rowData.data], {

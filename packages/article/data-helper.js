@@ -18,7 +18,7 @@ const prepareDataForListView = articleData => {
     { type: "middleContainer", data: articleMidContainerData }
   ].concat(
     articleData.content.map(i => ({
-      type: "article_body_row",
+      type: "articleBodyRow",
       data: i
     }))
   );
