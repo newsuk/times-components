@@ -105,42 +105,32 @@ exports[`Article test on android renders article no flags 1`] = `
           H U R R I C A N E   I R M A
         </Text>
       </View>
-      <View
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
         style={
           Array [
             Object {
-              "paddingBottom": 7,
+              "color": "#1D1D1B",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 22,
+              "fontWeight": "400",
+              "lineHeight": 25,
+              "marginBottom": 8,
+            },
+            Object {
+              "color": "#000000",
+              "fontSize": 28,
+              "fontWeight": "400",
+              "lineHeight": 37,
+              "marginBottom": 7,
             },
           ]
         }
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 28,
-                "fontWeight": "400",
-                "lineHeight": 37,
-                "marginBottom": 0,
-              },
-            ]
-          }
-        >
-          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-        </Text>
-      </View>
+        Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
+      </Text>
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -725,42 +715,32 @@ exports[`Article test on android renders article no label 1`] = `
         ]
       }
     >
-      <View
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
         style={
           Array [
             Object {
-              "paddingBottom": 7,
+              "color": "#1D1D1B",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 22,
+              "fontWeight": "400",
+              "lineHeight": 25,
+              "marginBottom": 8,
+            },
+            Object {
+              "color": "#000000",
+              "fontSize": 28,
+              "fontWeight": "400",
+              "lineHeight": 37,
+              "marginBottom": 7,
             },
           ]
         }
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 28,
-                "fontWeight": "400",
-                "lineHeight": 37,
-                "marginBottom": 0,
-              },
-            ]
-          }
-        >
-          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-        </Text>
-      </View>
+        Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
+      </Text>
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -1480,42 +1460,32 @@ exports[`Article test on android renders article no label no flags 1`] = `
         ]
       }
     >
-      <View
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
         style={
           Array [
             Object {
-              "paddingBottom": 7,
+              "color": "#1D1D1B",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 22,
+              "fontWeight": "400",
+              "lineHeight": 25,
+              "marginBottom": 8,
+            },
+            Object {
+              "color": "#000000",
+              "fontSize": 28,
+              "fontWeight": "400",
+              "lineHeight": 37,
+              "marginBottom": 7,
             },
           ]
         }
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 28,
-                "fontWeight": "400",
-                "lineHeight": 37,
-                "marginBottom": 0,
-              },
-            ]
-          }
-        >
-          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-        </Text>
-      </View>
+        Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
+      </Text>
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -2100,42 +2070,32 @@ exports[`Article test on android renders article no label no flags no standfirst
         ]
       }
     >
-      <View
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
         style={
           Array [
             Object {
-              "paddingBottom": 7,
+              "color": "#1D1D1B",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 22,
+              "fontWeight": "400",
+              "lineHeight": 25,
+              "marginBottom": 8,
+            },
+            Object {
+              "color": "#000000",
+              "fontSize": 28,
+              "fontWeight": "400",
+              "lineHeight": 37,
+              "marginBottom": 7,
             },
           ]
         }
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 28,
-                "fontWeight": "400",
-                "lineHeight": 37,
-                "marginBottom": 0,
-              },
-            ]
-          }
-        >
-          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-        </Text>
-      </View>
+        Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
+      </Text>
     </View>
     <View
       style={
@@ -2732,42 +2692,32 @@ exports[`Article test on android renders article no standfirst 1`] = `
           H U R R I C A N E   I R M A
         </Text>
       </View>
-      <View
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
         style={
           Array [
             Object {
-              "paddingBottom": 7,
+              "color": "#1D1D1B",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 22,
+              "fontWeight": "400",
+              "lineHeight": 25,
+              "marginBottom": 8,
+            },
+            Object {
+              "color": "#000000",
+              "fontSize": 28,
+              "fontWeight": "400",
+              "lineHeight": 37,
+              "marginBottom": 7,
             },
           ]
         }
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 28,
-                "fontWeight": "400",
-                "lineHeight": 37,
-                "marginBottom": 0,
-              },
-            ]
-          }
-        >
-          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-        </Text>
-      </View>
+        Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
+      </Text>
       <View
         style={
           Array [
@@ -3499,42 +3449,32 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           H U R R I C A N E   I R M A
         </Text>
       </View>
-      <View
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
         style={
           Array [
             Object {
-              "paddingBottom": 7,
+              "color": "#1D1D1B",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 22,
+              "fontWeight": "400",
+              "lineHeight": 25,
+              "marginBottom": 8,
+            },
+            Object {
+              "color": "#000000",
+              "fontSize": 28,
+              "fontWeight": "400",
+              "lineHeight": 37,
+              "marginBottom": 7,
             },
           ]
         }
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 28,
-                "fontWeight": "400",
-                "lineHeight": 37,
-                "marginBottom": 0,
-              },
-            ]
-          }
-        >
-          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-        </Text>
-      </View>
+        Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
+      </Text>
     </View>
     <View
       style={
@@ -4101,42 +4041,32 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         ]
       }
     >
-      <View
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
         style={
           Array [
             Object {
-              "paddingBottom": 7,
+              "color": "#1D1D1B",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 22,
+              "fontWeight": "400",
+              "lineHeight": 25,
+              "marginBottom": 8,
+            },
+            Object {
+              "color": "#000000",
+              "fontSize": 28,
+              "fontWeight": "400",
+              "lineHeight": 37,
+              "marginBottom": 7,
             },
           ]
         }
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 28,
-                "fontWeight": "400",
-                "lineHeight": 37,
-                "marginBottom": 0,
-              },
-            ]
-          }
-        >
-          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-        </Text>
-      </View>
+        Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
+      </Text>
       <View
         style={
           Array [
@@ -4868,42 +4798,32 @@ exports[`Article test on android renders full article 1`] = `
           H U R R I C A N E   I R M A
         </Text>
       </View>
-      <View
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
         style={
           Array [
             Object {
-              "paddingBottom": 7,
+              "color": "#1D1D1B",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 22,
+              "fontWeight": "400",
+              "lineHeight": 25,
+              "marginBottom": 8,
+            },
+            Object {
+              "color": "#000000",
+              "fontSize": 28,
+              "fontWeight": "400",
+              "lineHeight": 37,
+              "marginBottom": 7,
             },
           ]
         }
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 28,
-                "fontWeight": "400",
-                "lineHeight": 37,
-                "marginBottom": 0,
-              },
-            ]
-          }
-        >
-          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-        </Text>
-      </View>
+        Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
+      </Text>
       <Text
         accessible={true}
         allowFontScaling={true}

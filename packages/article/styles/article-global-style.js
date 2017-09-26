@@ -21,9 +21,6 @@ const globalStyle = StyleSheet.create({
     paddingTop: 4,
     paddingBottom: 3
   },
-  articleHeadline: {
-    paddingBottom: 7
-  },
   articleFlag: {
     marginBottom: 11,
     flexDirection: "row"

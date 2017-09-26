@@ -51,9 +51,7 @@ const renderLabel = label => {
 const ArticleHeader = ({ label, title, standfirst, flags }) => (
   <View style={[styles.articleMainContentRow]}>
     {renderLabel(label)}
-    <View style={[styles.articleHeadline]}>
-      <ArticleHeadline title={title} style={styles.articleHeadLineText} />
-    </View>
+    <ArticleHeadline title={title} style={styles.articleHeadLineText} />
     {renderStandfirst(standfirst)}
     {renderFlags(flags)}
   </View>
