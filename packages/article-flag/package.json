@@ -56,20 +56,19 @@
     "react": "15.4.2",
     "react-dom": "15.4.2",
     "react-native": "0.42.3",
-    "react-native-svg": "5.1.7",
     "react-test-renderer": "15.4.2",
     "webpack": "3.3.0"
   },
   "dependencies": {
     "prop-types": "15.5.10",
+    "react-native-svg": "5.1.7",
     "react-native-web": "0.0.119",
     "svgs": "2.3.0"
   },
   "peerDependencies": {
     "react": ">=15",
     "react-dom": ">=15",
-    "react-native": ">=0.42",
-    "react-native-svg": "5.1.7"
+    "react-native": ">=0.42"
   },
   "publishConfig": {
     "access": "public"
