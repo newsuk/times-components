@@ -118,7 +118,7 @@ ArticlePage.propTypes = {
       ...articleMetaPropTypes
     })
   }),
-  isLoading: PropTypes.boolean
+  isLoading: PropTypes.bool
 };
 
 ArticlePage.defaultProps = {
