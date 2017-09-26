@@ -14,7 +14,7 @@ const articleStyle = StyleSheet.create({
     fontStyle: "normal",
     lineHeight: 26,
     marginBottom: 20,
-    fontSize: 16 ,
+    fontSize: 16,
     color: "#333333"
   }
 });
