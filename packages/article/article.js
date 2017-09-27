@@ -57,9 +57,7 @@ class ArticlePage extends React.Component {
             paragraph(key, attributes, children) {
               return (
                 <View key={key} style={[styles.articleMainContentRow]}>
-                  <Text style={styles.articleTextElement}>
-                    {children}
-                  </Text>
+                  <Text style={styles.articleTextElement}>{children}</Text>
                 </View>
               );
             },
