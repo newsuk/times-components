@@ -6,12 +6,10 @@
   "bio": [
     {
       "name": "text",
-      "attributes": {},
-      "children": [
-        {
-          "text": "Carol Midgley joined "
-        }
-      ]
+      "attributes": {
+        "value": "Carol Midgley joined "
+      },
+      "children": []
     },
     {
       "name": "italic",
@@ -19,22 +17,19 @@
       "children": [
         {
           "name": "text",
-          "children": [
-            {
-              "text": "The Times"
-            }
-          ]
+          "attributes": {
+            "value": "The Times"
+          },
+          "children": []
         }
       ]
     },
     {
       "name": "text",
-      "attributes": {},
-      "children": [
-        {
-          "text": " in 1996, and won feature writer of the year in 2004. Find her Wednesday column in "
-        }
-      ]
+      "attributes": {
+        "value": " in 1996, and won feature writer of the year in 2004. Find her Wednesday column in "
+      },
+      "children": []
     },
     {
       "name": "italic",
@@ -42,22 +37,19 @@
       "children": [
         {
           "name": "text",
-          "children": [
-            {
-              "text": "Times2"
-            }
-          ]
+          "attributes": {
+            "value": "Times2"
+          },
+          "children": []
         }
       ]
     },
     {
       "name": "text",
-      "attributes": {},
-      "children": [
-        {
-          "text": " each week and a weekly comment piece on Fridays."
-        }
-      ]
+      "attributes": {
+        "value": " each week and a weekly comment piece on Fridays."
+      },
+      "children": []
     }
   ]
 }
