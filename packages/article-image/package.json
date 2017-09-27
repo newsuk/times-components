@@ -59,8 +59,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/caption": "0.3.1",
-    "@times-components/image": "1.2.0",
+    "@times-components/caption": "0.5.1",
+    "@times-components/image": "1.4.1",
     "prop-types": "15.5.10",
     "react-native-web": "0.0.119"
   },

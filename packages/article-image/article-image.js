@@ -27,12 +27,50 @@ const styles = StyleSheet.create({
     paddingTop: 0
   },
   inline: {
-    width: "35%",
-    flexDirection: "column",
-    marginTop: 0,
-    marginBottom: 10,
-    marginLeft: 0,
-    marginRight: 10
+    ...Platform.select({
+      web: {
+        width: "35%",
+        flexDirection: "column",
+        marginTop: 0,
+        marginBottom: 10,
+        marginLeft: 0,
+        marginRight: 10
+      },
+      ios: {
+        width: "100%",
+        flexDirection: "row",
+        flexWrap: "nowrap"
+      },
+      android: {
+        width: "100%",
+        flexDirection: "row",
+        flexWrap: "nowrap"
+      }
+    })
+  },
+  inlineImage: {
+    ...Platform.select({
+      ios: {
+        width: "50%"
+      },
+      android: {
+        width: "50%"
+      }
+    })
+  },
+  inlineCaption: {
+    ...Platform.select({
+      ios: {
+        width: "50%",
+        paddingLeft: 10,
+        paddingTop: 0
+      },
+      android: {
+        width: "50%",
+        paddingLeft: 10,
+        paddingTop: 0
+      }
+    })
   }
 });
 
