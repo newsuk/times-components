@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.7.3...@times-components/article@0.8.0) (2017-09-27)
+
+
+### Features
+
+* default article replat 304 ([#234](https://github.com/newsuk/times-components/issues/234)) ([0ad7843](https://github.com/newsuk/times-components/commit/0ad7843))
+
+
+
+
 <a name="0.7.3"></a>
 ## [0.7.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.7.2...@times-components/article@0.7.3) (2017-09-26)
 
