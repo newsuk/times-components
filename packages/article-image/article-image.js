@@ -14,17 +14,55 @@ const styles = StyleSheet.create({
     flexDirection: "column"
   },
   secondary: {
-    width: "100%",
-    flexDirection: "row",
-    flexWrap: "nowrap"
+    ...Platform.select({
+      web: {
+        width: "100%",
+        flexDirection: "row",
+        flexWrap: "nowrap"
+      },
+      ios: {
+        width: "100%",
+        flexDirection: "row",
+        flexWrap: "nowrap"
+      },
+      android: {
+        width: "100%",
+        flexDirection: "row",
+        flexWrap: "nowrap"
+      }
+    })
   },
   secondaryImage: {
-    width: "70%"
+    ...Platform.select({
+      web: {
+        width: "70%"
+      },
+      ios: {
+        width: "50%"
+      },
+      android: {
+        width: "50%"
+      }
+    })
   },
   secondaryCaption: {
-    width: "30%",
-    paddingLeft: 10,
-    paddingTop: 0
+    ...Platform.select({
+      web: {
+        width: "30%",
+        paddingLeft: 10,
+        paddingTop: 0
+      },
+      ios: {
+        width: "50%",
+        paddingLeft: 10,
+        paddingTop: 0
+      },
+      android: {
+        width: "50%",
+        paddingLeft: 10,
+        paddingTop: 0
+      }
+    })
   },
   inline: {
     ...Platform.select({

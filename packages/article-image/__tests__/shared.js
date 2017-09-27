@@ -13,7 +13,7 @@ const portraitInlineImage = require("../fixtures/portrait-inline-image.json")
   .fixture;
 
 module.exports = () => {
-  it("does not render Article Image display display is not received", () => {
+  it("does not render Article Image display is not received", () => {
     const noDisplay = {
       imageOptions: {
         display: null,

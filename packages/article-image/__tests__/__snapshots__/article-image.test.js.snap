@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`does not render Article Image display display is not received 1`] = `
+exports[`does not render Article Image display is not received 1`] = `
 <View
   style={undefined}
 >
@@ -257,17 +257,18 @@ exports[`renders inline image (landscape) correctly 1`] = `
 <View
   style={
     Object {
-      "flexDirection": "column",
-      "marginBottom": 10,
-      "marginLeft": 0,
-      "marginRight": 10,
-      "marginTop": 0,
-      "width": "35%",
+      "flexDirection": "row",
+      "flexWrap": "nowrap",
+      "width": "100%",
     }
   }
 >
   <View
-    style={undefined}
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
   >
     <View
       style={Object {}}
@@ -301,7 +302,13 @@ exports[`renders inline image (landscape) correctly 1`] = `
     </View>
   </View>
   <View
-    style={undefined}
+    style={
+      Object {
+        "paddingLeft": 10,
+        "paddingTop": 0,
+        "width": "50%",
+      }
+    }
   >
     <View>
       <View
@@ -367,17 +374,18 @@ exports[`renders inline image (portrait) correctly 1`] = `
 <View
   style={
     Object {
-      "flexDirection": "column",
-      "marginBottom": 10,
-      "marginLeft": 0,
-      "marginRight": 10,
-      "marginTop": 0,
-      "width": "35%",
+      "flexDirection": "row",
+      "flexWrap": "nowrap",
+      "width": "100%",
     }
   }
 >
   <View
-    style={undefined}
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
   >
     <View
       style={Object {}}
@@ -411,7 +419,13 @@ exports[`renders inline image (portrait) correctly 1`] = `
     </View>
   </View>
   <View
-    style={undefined}
+    style={
+      Object {
+        "paddingLeft": 10,
+        "paddingTop": 0,
+        "width": "50%",
+      }
+    }
   >
     <View>
       <View
@@ -592,7 +606,7 @@ exports[`renders secondary image correctly 1`] = `
   <View
     style={
       Object {
-        "width": "70%",
+        "width": "50%",
       }
     }
   >
@@ -632,7 +646,7 @@ exports[`renders secondary image correctly 1`] = `
       Object {
         "paddingLeft": 10,
         "paddingTop": 0,
-        "width": "30%",
+        "width": "50%",
       }
     }
   >

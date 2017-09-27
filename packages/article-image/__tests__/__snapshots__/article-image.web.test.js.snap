@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`does not render Article Image display display is not received 1`] = `
+exports[`does not render Article Image display is not received 1`] = `
 <View
   style={undefined}
 >
@@ -312,7 +312,7 @@ exports[`renders inline image (landscape) correctly 1`] = `
   }
 >
   <View
-    style={undefined}
+    style={Object {}}
   >
     <View
       style={
@@ -361,7 +361,7 @@ exports[`renders inline image (landscape) correctly 1`] = `
     </View>
   </View>
   <View
-    style={undefined}
+    style={Object {}}
   >
     <View>
       <View
@@ -437,7 +437,7 @@ exports[`renders inline image (portrait) correctly 1`] = `
   }
 >
   <View
-    style={undefined}
+    style={Object {}}
   >
     <View
       style={
@@ -486,7 +486,7 @@ exports[`renders inline image (portrait) correctly 1`] = `
     </View>
   </View>
   <View
-    style={undefined}
+    style={Object {}}
   >
     <View>
       <View
