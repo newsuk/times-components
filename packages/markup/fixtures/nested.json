@@ -1,16 +1,24 @@
 {
-  "fixture": [
+  "name": "block",
+  "attributes": {},
+  "children": [
+    {
+      "name": "text",
+      "attributes": {
+        "value": "Some text is here "
+      },
+      "children": []
+    },
     {
       "name": "block",
       "attributes": {},
       "children": [
         {
           "name": "text",
-          "children": [
-            {
-              "text": "Some text is here "
-            }
-          ]
+          "attributes": {
+            "value": "and there is some "
+          },
+          "children": []
         },
         {
           "name": "block",
@@ -18,45 +26,21 @@
           "children": [
             {
               "name": "text",
-              "children": [
-                {
-                  "text": "and there is some "
-                }
-              ]
+              "attributes": {
+                "value": "more text "
+              },
+              "children": []
             },
             {
-              "name": "block",
+              "name": "inline",
               "attributes": {},
               "children": [
                 {
                   "name": "text",
-                  "children": [
-                    {
-                      "text": "more text "
-                    }
-                  ]
-                },
-                {
-                  "name": "inline",
-                  "attributes": {},
-                  "children": [
-                    {
-                      "name": "text",
-                      "children": [
-                        {
-                          "text": "and in here"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "text",
-              "children": [
-                {
-                  "text": " after it too"
+                  "attributes": {
+                    "value": "and in here"
+                  },
+                  "children": []
                 }
               ]
             }
@@ -64,13 +48,19 @@
         },
         {
           "name": "text",
-          "children": [
-            {
-              "text": " and here"
-            }
-          ]
+          "attributes": {
+            "value": " after it too"
+          },
+          "children": []
         }
       ]
+    },
+    {
+      "name": "text",
+      "attributes": {
+        "value": " and here"
+      },
+      "children": []
     }
   ]
 }

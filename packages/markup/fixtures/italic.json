@@ -1,18 +1,13 @@
 {
-  "fixture": [
+  "name": "italic",
+  "attributes": {},
+  "children": [
     {
-      "name": "italic",
-      "attributes": {},
-      "children": [
-        {
-          "name": "text",
-          "children": [
-            {
-              "text": " some more text here"
-            }
-          ]
-        }
-      ]
+      "name": "text",
+      "attributes": {
+        "value": " some more text here"
+      },
+      "children": []
     }
   ]
 }
