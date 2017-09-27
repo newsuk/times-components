@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { renderTrees } from "@times-components/markup";
 import Image from "@times-components/image";
 import ArticleImage from "@times-components/article-image";
+import { AdComposer } from "@times-components/ad";
 
 import listViewDataHelper from "./data-helper";
 import styles from "./styles/article-style";
@@ -116,14 +117,16 @@ class ArticlePage extends React.Component {
     }
 
     return (
-      <ListView
-        dataSource={this.state.dataSource}
-        renderRow={ArticlePage.renderRow}
-        initialListSize={listViewSize}
-        scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
-        pageSize={listViewPageSize}
-        enableEmptySections
-      />
+      <AdComposer section="article">
+        <ListView
+          dataSource={this.state.dataSource}
+          renderRow={ArticlePage.renderRow}
+          initialListSize={listViewSize}
+          scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
+          pageSize={listViewPageSize}
+          enableEmptySections
+        />
+      </AdComposer>
     );
   }
 }
