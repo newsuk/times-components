@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Platform } from "react-native";
 import PropTypes from "prop-types";
 import { TextLink } from "@times-components/link";
 import withPageState from "./pagination-wrapper";
@@ -35,7 +35,13 @@ const styles = StyleSheet.create({
   label: {
     color: "#696969",
     fontFamily: "GillSansMTStd-Medium",
-    fontSize: 15
+    fontSize: 15,
+    ...Platform.select({
+      web: {
+        WebkitFontSmoothing: "antialiased",
+        MozOsxFontSmoothing: "grayscale"
+      }
+    })
   },
   message: {
     justifyContent: "center"
