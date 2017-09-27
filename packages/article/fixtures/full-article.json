@@ -87,7 +87,7 @@
           "attributes": {
             "display": "primary",
             "ratio": "16:9",
-            "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0",
+            "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=1600%2C900%2C-0%2C-0",
             "caption": "All the latest stories in culture and books.",
             "credits": "The credits"
           },
@@ -104,11 +104,6 @@
           }]
         },
         {
-          "name": "ad",
-          "attributes": {},
-          "children": []
-        },
-        {
           "name": "paragraph",
           "attributes": {},
           "children": [{
@@ -123,7 +118,7 @@
           "attributes": {
             "display": "secondary",
             "ratio": "3:2",
-            "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=600%2C400%2C-0%2C-0",
+            "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=1200%2C800%2C-0%2C-0",
             "caption": "All the latest stories in culture and books.",
             "credits": "The credits"
           },
@@ -153,8 +148,8 @@
           "name": "image",
           "attributes": {
             "display": "inline",
-            "ratio": "1:50",
-            "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=100%2C150%2C-0%2C-0",
+            "ratio": "1:1.50",
+            "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=800%2C1200%2C-0%2C-0",
             "caption": "All the latest stories in culture and books.",
             "credits": "The credits"
           },
@@ -175,7 +170,7 @@
           "attributes": {
             "display": "inline",
             "ratio": "3:2",
-            "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=300%2C200%2C-0%2C-0",
+            "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=600%2C400%2C-0%2C-0",
             "caption": "All the latest stories in culture and books.",
             "credits": "The credits"
           },

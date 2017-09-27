@@ -52,13 +52,15 @@ class ArticlePage extends React.Component {
       );
     } else if (rowData.type === "articleBodyRow") {
       return (
-        <View style={[styles.articleMainContentRow]}>
+        <View>
           {renderTrees([rowData.data], {
             paragraph(key, attributes, children) {
               return (
-                <Text key={key} style={styles.articleTextElement}>
-                  {children}
-                </Text>
+                <View key={key} style={[styles.articleMainContentRow]}>
+                  <Text style={styles.articleTextElement}>
+                    {children}
+                  </Text>
+                </View>
               );
             },
             image(key, attributes, children) {
