@@ -317,7 +317,9 @@ exports[`renders inline image (landscape) correctly 1`] = `
             Object {
               "paddingTop": 10,
             },
-            undefined,
+            Object {
+              "paddingTop": 0,
+            },
           ]
         }
       >
@@ -434,7 +436,9 @@ exports[`renders inline image (portrait) correctly 1`] = `
             Object {
               "paddingTop": 10,
             },
-            undefined,
+            Object {
+              "paddingTop": 0,
+            },
           ]
         }
       >

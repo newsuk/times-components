@@ -47,28 +47,12 @@ const styles = StyleSheet.create({
     flexWrap: "nowrap"
   },
   inlineImage: {
-    ...Platform.select({
-      ios: {
-        width: "50%"
-      },
-      android: {
-        width: "50%"
-      }
-    })
+    width: "50%"
   },
   inlineCaption: {
-    ...Platform.select({
-      ios: {
-        width: "50%",
-        paddingLeft: 10,
-        paddingTop: 0
-      },
-      android: {
-        width: "50%",
-        paddingLeft: 10,
-        paddingTop: 0
-      }
-    })
+    width: "50%",
+    paddingLeft: 10,
+    paddingTop: 0
   }
 });
 
@@ -103,6 +87,11 @@ const getImageRatioBox = ratio => {
 
 const captionStyle = {
   secondary: {
+    container: {
+      paddingTop: 0
+    }
+  },
+  inline: {
     container: {
       paddingTop: 0
     }

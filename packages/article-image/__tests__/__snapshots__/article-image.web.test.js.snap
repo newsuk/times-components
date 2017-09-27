@@ -309,7 +309,11 @@ exports[`renders inline image (landscape) correctly 1`] = `
   }
 >
   <View
-    style={Object {}}
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
   >
     <View
       style={
@@ -358,7 +362,13 @@ exports[`renders inline image (landscape) correctly 1`] = `
     </View>
   </View>
   <View
-    style={Object {}}
+    style={
+      Object {
+        "paddingLeft": 10,
+        "paddingTop": 0,
+        "width": "50%",
+      }
+    }
   >
     <View>
       <View
@@ -367,7 +377,9 @@ exports[`renders inline image (landscape) correctly 1`] = `
             Object {
               "paddingTop": 10,
             },
-            undefined,
+            Object {
+              "paddingTop": 0,
+            },
           ]
         }
       >
@@ -431,7 +443,11 @@ exports[`renders inline image (portrait) correctly 1`] = `
   }
 >
   <View
-    style={Object {}}
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
   >
     <View
       style={
@@ -480,7 +496,13 @@ exports[`renders inline image (portrait) correctly 1`] = `
     </View>
   </View>
   <View
-    style={Object {}}
+    style={
+      Object {
+        "paddingLeft": 10,
+        "paddingTop": 0,
+        "width": "50%",
+      }
+    }
   >
     <View>
       <View
@@ -489,7 +511,9 @@ exports[`renders inline image (portrait) correctly 1`] = `
             Object {
               "paddingTop": 10,
             },
-            undefined,
+            Object {
+              "paddingTop": 0,
+            },
           ]
         }
       >
