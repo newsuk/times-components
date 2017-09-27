@@ -67,11 +67,10 @@ exports[`renders horizontal above breakpoint 1`] = `
             "attributes": Object {},
             "children": Array [
               Object {
-                "children": Array [
-                  Object {
-                    "text": "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, ",
-                  },
-                ],
+                "attributes": Object {
+                  "value": "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, ",
+                },
+                "children": Array [],
                 "name": "text",
               },
             ],
