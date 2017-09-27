@@ -3,6 +3,7 @@ import { Text, View, ListView, ActivityIndicator } from "react-native";
 import PropTypes from "prop-types";
 import { renderTrees } from "@times-components/markup";
 import Image from "@times-components/image";
+import ArticleImage from "@times-components/article-image";
 
 import listViewDataHelper from "./data-helper";
 import styles from "./styles/article-style";
@@ -58,6 +59,22 @@ class ArticlePage extends React.Component {
                 <Text key={key} style={styles.articleTextElement}>
                   {children}
                 </Text>
+              );
+            },
+            image(key, attributes, children) {
+              return (
+                <ArticleImage
+                  key={key}
+                  imageOptions={{
+                    display: attributes.display,
+                    ratio: attributes.ratio,
+                    url: attributes.url
+                  }}
+                  captionOptions={{
+                    caption: attributes.caption,
+                    credits: attributes.credits
+                  }}
+                />
               );
             }
           })}
