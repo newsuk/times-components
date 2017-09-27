@@ -8,10 +8,10 @@ exports[`does not render Article Image display is not received 1`] = `
     style={undefined}
   >
     <View
-      style={Object {}}
+      style={undefined}
     >
       <View
-        style={Object {}}
+        style={undefined}
       >
         <View
           onLayout={[Function]}
@@ -114,10 +114,10 @@ exports[`does not render Article Image if url is not received 1`] = `
     style={undefined}
   >
     <View
-      style={Object {}}
+      style={undefined}
     >
       <View
-        style={Object {}}
+        style={undefined}
       >
         <View
           onLayout={[Function]}
@@ -220,10 +220,10 @@ exports[`does not render Caption on Article Image if both caption and credits ar
     style={undefined}
   >
     <View
-      style={Object {}}
+      style={undefined}
     >
       <View
-        style={Object {}}
+        style={undefined}
       >
         <View
           onLayout={[Function]}
@@ -271,10 +271,10 @@ exports[`renders inline image (landscape) correctly 1`] = `
     }
   >
     <View
-      style={Object {}}
+      style={undefined}
     >
       <View
-        style={Object {}}
+        style={undefined}
       >
         <View
           onLayout={[Function]}
@@ -390,10 +390,10 @@ exports[`renders inline image (portrait) correctly 1`] = `
     }
   >
     <View
-      style={Object {}}
+      style={undefined}
     >
       <View
-        style={Object {}}
+        style={undefined}
       >
         <View
           onLayout={[Function]}
@@ -504,10 +504,10 @@ exports[`renders primary image correctly 1`] = `
     style={undefined}
   >
     <View
-      style={Object {}}
+      style={undefined}
     >
       <View
-        style={Object {}}
+        style={undefined}
       >
         <View
           onLayout={[Function]}
@@ -615,10 +615,10 @@ exports[`renders secondary image correctly 1`] = `
     }
   >
     <View
-      style={Object {}}
+      style={undefined}
     >
       <View
-        style={Object {}}
+        style={undefined}
       >
         <View
           onLayout={[Function]}

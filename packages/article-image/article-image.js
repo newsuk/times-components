@@ -19,20 +19,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "nowrap"
   },
-  secondaryImageDesktop: {
-    width: "70%"
-  },
-  secondaryCaptionDesktop: {
-    width: "30%"
-  },
-  inlineDesktopWeb: {
-    width: "35%",
-    flexDirection: "column",
-    marginTop: 0,
-    marginBottom: 10,
-    marginLeft: 0,
-    marginRight: 10
-  },
   secondaryImage: {
     width: "50%"
   },
@@ -61,27 +47,23 @@ const getImageRatioBox = ratio => {
   const padding = tokens[1] / tokens[0] * 100;
 
   return StyleSheet.create({
-    ratioBox: {
-      ...Platform.select({
-        web: {
+    ...Platform.select({
+      web: {
+        ratioBox: {
           height: 0,
           overflow: "hidden",
           paddingBottom: `${padding.toFixed(2)}%`,
           position: "relative"
-        }
-      })
-    },
-    ratioBoxInside: {
-      ...Platform.select({
-        web: {
+        },
+        ratioBoxInside: {
           position: "absolute",
           top: 0,
           left: 0,
           width: "100%",
           height: "100%"
         }
-      })
-    }
+      }
+    })
   });
 };
 
