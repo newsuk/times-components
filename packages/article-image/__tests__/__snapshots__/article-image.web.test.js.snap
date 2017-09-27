@@ -1,0 +1,822 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`does not render Article Image display is not received 1`] = `
+<View
+  style={undefined}
+>
+  <View
+    style={undefined}
+  >
+    <View
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+          "paddingBottom": "56.25%",
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "height": "100%",
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          onLayout={[Function]}
+        >
+          <Image
+            onError={[Function]}
+            onLoad={[Function]}
+            source={
+              Object {
+                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 1,
+                  "width": 750,
+                },
+                undefined,
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={undefined}
+  >
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingTop": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 17,
+              },
+              undefined,
+            ]
+          }
+        >
+          All the latest stories in culture and books.
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 17,
+              },
+              Object {
+                "color": "#333",
+                "fontSize": 9,
+                "fontWeight": "400",
+                "letterSpacing": 1,
+                "lineHeight": 17,
+              },
+              undefined,
+            ]
+          }
+        >
+          THE CREDITS
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`does not render Article Image if url is not received 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "column",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={undefined}
+  >
+    <View
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+          "paddingBottom": "56.25%",
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "height": "100%",
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          onLayout={[Function]}
+        >
+          <Image
+            onError={[Function]}
+            onLoad={[Function]}
+            source={
+              Object {
+                "uri": null,
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 1,
+                  "width": 750,
+                },
+                undefined,
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={undefined}
+  >
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingTop": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 17,
+              },
+              undefined,
+            ]
+          }
+        >
+          All the latest stories in culture and books.
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 17,
+              },
+              Object {
+                "color": "#333",
+                "fontSize": 9,
+                "fontWeight": "400",
+                "letterSpacing": 1,
+                "lineHeight": 17,
+              },
+              undefined,
+            ]
+          }
+        >
+          THE CREDITS
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`does not render Caption on Article Image if both caption and credits are not received 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "column",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={undefined}
+  >
+    <View
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+          "paddingBottom": "56.25%",
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "height": "100%",
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          onLayout={[Function]}
+        >
+          <Image
+            onError={[Function]}
+            onLoad={[Function]}
+            source={
+              Object {
+                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 1,
+                  "width": 750,
+                },
+                undefined,
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders inline image (landscape) correctly 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "flexWrap": "nowrap",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+          "paddingBottom": "66.67%",
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "height": "100%",
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          onLayout={[Function]}
+        >
+          <Image
+            onError={[Function]}
+            onLoad={[Function]}
+            source={
+              Object {
+                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=300%2C200%2C-0%2C-0",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 1,
+                  "width": 750,
+                },
+                undefined,
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "paddingLeft": 10,
+        "paddingTop": 0,
+        "width": "50%",
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingTop": 10,
+            },
+            Object {
+              "paddingTop": 0,
+            },
+          ]
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 17,
+              },
+              undefined,
+            ]
+          }
+        >
+          All the latest stories in culture and books.
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 17,
+              },
+              Object {
+                "color": "#333",
+                "fontSize": 9,
+                "fontWeight": "400",
+                "letterSpacing": 1,
+                "lineHeight": 17,
+              },
+              undefined,
+            ]
+          }
+        >
+          THE CREDITS
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders inline image (portrait) correctly 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "flexWrap": "nowrap",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+          "paddingBottom": "150.00%",
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "height": "100%",
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          onLayout={[Function]}
+        >
+          <Image
+            onError={[Function]}
+            onLoad={[Function]}
+            source={
+              Object {
+                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=100%2C150%2C-0%2C-0",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 1,
+                  "width": 750,
+                },
+                undefined,
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "paddingLeft": 10,
+        "paddingTop": 0,
+        "width": "50%",
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingTop": 10,
+            },
+            Object {
+              "paddingTop": 0,
+            },
+          ]
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 17,
+              },
+              undefined,
+            ]
+          }
+        >
+          All the latest stories in culture and books.
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 17,
+              },
+              Object {
+                "color": "#333",
+                "fontSize": 9,
+                "fontWeight": "400",
+                "letterSpacing": 1,
+                "lineHeight": 17,
+              },
+              undefined,
+            ]
+          }
+        >
+          THE CREDITS
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders primary image correctly 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "column",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={undefined}
+  >
+    <View
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+          "paddingBottom": "56.25%",
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "height": "100%",
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          onLayout={[Function]}
+        >
+          <Image
+            onError={[Function]}
+            onLoad={[Function]}
+            source={
+              Object {
+                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 1,
+                  "width": 750,
+                },
+                undefined,
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={undefined}
+  >
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingTop": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 17,
+              },
+              undefined,
+            ]
+          }
+        >
+          All the latest stories in culture and books.
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 17,
+              },
+              Object {
+                "color": "#333",
+                "fontSize": 9,
+                "fontWeight": "400",
+                "letterSpacing": 1,
+                "lineHeight": 17,
+              },
+              undefined,
+            ]
+          }
+        >
+          THE CREDITS
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders secondary image correctly 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "flexWrap": "nowrap",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+          "paddingBottom": "66.67%",
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "height": "100%",
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          onLayout={[Function]}
+        >
+          <Image
+            onError={[Function]}
+            onLoad={[Function]}
+            source={
+              Object {
+                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=600%2C400%2C-0%2C-0",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 1,
+                  "width": 750,
+                },
+                undefined,
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "paddingLeft": 10,
+        "paddingTop": 0,
+        "width": "50%",
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingTop": 10,
+            },
+            Object {
+              "paddingTop": 0,
+            },
+          ]
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 17,
+              },
+              undefined,
+            ]
+          }
+        >
+          All the latest stories in culture and books.
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 17,
+              },
+              Object {
+                "color": "#333",
+                "fontSize": 9,
+                "fontWeight": "400",
+                "letterSpacing": 1,
+                "lineHeight": 17,
+              },
+              undefined,
+            ]
+          }
+        >
+          THE CREDITS
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
