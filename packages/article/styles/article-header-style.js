@@ -13,7 +13,7 @@ const webStyles = StyleSheet.create({
         fontSize: 30,
         lineHeight: 32,
         color: "#000000",
-        marginBottom: 0
+        marginBottom: 7
     },
     standFirst: {
         fontSize: 21,
@@ -30,7 +30,7 @@ const nativeStyles = StyleSheet.create({
         lineHeight: Platform.OS === "android" ? 37 : 32,
         color: "#000000",
         fontWeight: Platform.OS === "android" ? "400" : "700",
-        marginBottom: 0
+        marginBottom: 7
     },
     standFirst: {
         fontSize: 21,
