@@ -61,7 +61,7 @@ class ArticlePage extends React.Component {
                 </View>
               );
             },
-            image(key, attributes, children) {
+            image(key, attributes) {
               return (
                 <ArticleImage
                   key={key}
