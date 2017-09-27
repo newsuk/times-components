@@ -14,23 +14,9 @@ const styles = StyleSheet.create({
     flexDirection: "column"
   },
   secondary: {
-    ...Platform.select({
-      web: {
-        width: "100%",
-        flexDirection: "row",
-        flexWrap: "nowrap"
-      },
-      ios: {
-        width: "100%",
-        flexDirection: "row",
-        flexWrap: "nowrap"
-      },
-      android: {
-        width: "100%",
-        flexDirection: "row",
-        flexWrap: "nowrap"
-      }
-    })
+    width: "100%",
+    flexDirection: "row",
+    flexWrap: "nowrap"
   },
   secondaryImage: {
     ...Platform.select({
@@ -46,21 +32,17 @@ const styles = StyleSheet.create({
     })
   },
   secondaryCaption: {
+    paddingLeft: 10,
+    paddingTop: 0,
     ...Platform.select({
       web: {
-        width: "30%",
-        paddingLeft: 10,
-        paddingTop: 0
+        width: "30%"
       },
       ios: {
-        width: "50%",
-        paddingLeft: 10,
-        paddingTop: 0
+        width: "50%"
       },
       android: {
-        width: "50%",
-        paddingLeft: 10,
-        paddingTop: 0
+        width: "50%"
       }
     })
   },
