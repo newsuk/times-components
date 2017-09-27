@@ -8,65 +8,43 @@ import {
   articleImageDefaultPropTypes
 } from "./article-image-proptypes";
 
+// NOTE: We support only Mobile web, ios and android. Desktop to follow after responsive design
 const styles = StyleSheet.create({
-  primary: {
+  primaryContainer: {
     width: "100%",
     flexDirection: "column"
   },
-  secondary: {
+  secondaryContainer: {
     width: "100%",
     flexDirection: "row",
     flexWrap: "nowrap"
   },
+  secondaryImageDesktop: {
+    width: "70%"
+  },
+  secondaryCaptionDesktop: {
+    width: "30%"
+  },
+  inlineDesktopWeb: {
+    width: "35%",
+    flexDirection: "column",
+    marginTop: 0,
+    marginBottom: 10,
+    marginLeft: 0,
+    marginRight: 10
+  },
   secondaryImage: {
-    ...Platform.select({
-      web: {
-        width: "70%"
-      },
-      ios: {
-        width: "50%"
-      },
-      android: {
-        width: "50%"
-      }
-    })
+    width: "50%"
   },
   secondaryCaption: {
     paddingLeft: 10,
     paddingTop: 0,
-    ...Platform.select({
-      web: {
-        width: "30%"
-      },
-      ios: {
-        width: "50%"
-      },
-      android: {
-        width: "50%"
-      }
-    })
+    width: "50%"
   },
-  inline: {
-    ...Platform.select({
-      web: {
-        width: "35%",
-        flexDirection: "column",
-        marginTop: 0,
-        marginBottom: 10,
-        marginLeft: 0,
-        marginRight: 10
-      },
-      ios: {
-        width: "100%",
-        flexDirection: "row",
-        flexWrap: "nowrap"
-      },
-      android: {
-        width: "100%",
-        flexDirection: "row",
-        flexWrap: "nowrap"
-      }
-    })
+  inlineContainer: {
+    width: "100%",
+    flexDirection: "row",
+    flexWrap: "nowrap"
   },
   inlineImage: {
     ...Platform.select({
@@ -152,7 +130,7 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
 
   const ratioStyle = getImageRatioBox(ratio);
   return (
-    <View key={url} style={styles[display]}>
+    <View key={url} style={styles[`${display}Container`]}>
       <View style={styles[`${display}Image`]}>
         <View style={ratioStyle.ratioBox}>
           <View style={ratioStyle.ratioBoxInside}>
