@@ -12,12 +12,16 @@ import {
 const styles = StyleSheet.create({
   primaryContainer: {
     width: "100%",
-    flexDirection: "column"
+    flexDirection: "column",
+    paddingBottom: 25
   },
   secondaryContainer: {
     width: "100%",
     flexDirection: "row",
-    flexWrap: "nowrap"
+    flexWrap: "nowrap",
+    paddingBottom: 25,
+    paddingLeft: 10,
+    paddingRight: 10
   },
   secondaryImage: {
     width: "50%"
@@ -30,7 +34,10 @@ const styles = StyleSheet.create({
   inlineContainer: {
     width: "100%",
     flexDirection: "row",
-    flexWrap: "nowrap"
+    flexWrap: "nowrap",
+    paddingBottom: 25,
+    paddingLeft: 10,
+    paddingRight: 10
   },
   inlineImage: {
     width: "50%"

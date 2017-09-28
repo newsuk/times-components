@@ -3,6 +3,7 @@ import { Text, View, ListView, ActivityIndicator } from "react-native";
 import PropTypes from "prop-types";
 import { renderTrees } from "@times-components/markup";
 import Image from "@times-components/image";
+import ArticleImage from "@times-components/article-image";
 
 import listViewDataHelper from "./data-helper";
 import styles from "./styles/article-style";
@@ -51,13 +52,29 @@ class ArticlePage extends React.Component {
       );
     } else if (rowData.type === "articleBodyRow") {
       return (
-        <View style={[styles.articleMainContentRow]}>
+        <View>
           {renderTrees([rowData.data], {
             paragraph(key, attributes, children) {
               return (
-                <Text key={key} style={styles.articleTextElement}>
-                  {children}
-                </Text>
+                <View key={key} style={[styles.articleMainContentRow]}>
+                  <Text style={styles.articleTextElement}>{children}</Text>
+                </View>
+              );
+            },
+            image(key, attributes) {
+              return (
+                <ArticleImage
+                  key={key}
+                  imageOptions={{
+                    display: attributes.display,
+                    ratio: attributes.ratio,
+                    url: attributes.url
+                  }}
+                  captionOptions={{
+                    caption: attributes.caption,
+                    credits: attributes.credits
+                  }}
+                />
               );
             }
           })}

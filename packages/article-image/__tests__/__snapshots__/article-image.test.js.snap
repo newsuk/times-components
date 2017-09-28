@@ -106,6 +106,7 @@ exports[`does not render Article Image if url is not received 1`] = `
   style={
     Object {
       "flexDirection": "column",
+      "paddingBottom": 25,
       "width": "100%",
     }
   }
@@ -212,6 +213,7 @@ exports[`does not render Caption on Article Image if both caption and credits ar
   style={
     Object {
       "flexDirection": "column",
+      "paddingBottom": 25,
       "width": "100%",
     }
   }
@@ -259,6 +261,9 @@ exports[`renders inline image (landscape) correctly 1`] = `
     Object {
       "flexDirection": "row",
       "flexWrap": "nowrap",
+      "paddingBottom": 25,
+      "paddingLeft": 10,
+      "paddingRight": 10,
       "width": "100%",
     }
   }
@@ -378,6 +383,9 @@ exports[`renders inline image (portrait) correctly 1`] = `
     Object {
       "flexDirection": "row",
       "flexWrap": "nowrap",
+      "paddingBottom": 25,
+      "paddingLeft": 10,
+      "paddingRight": 10,
       "width": "100%",
     }
   }
@@ -496,6 +504,7 @@ exports[`renders primary image correctly 1`] = `
   style={
     Object {
       "flexDirection": "column",
+      "paddingBottom": 25,
       "width": "100%",
     }
   }
@@ -603,6 +612,9 @@ exports[`renders secondary image correctly 1`] = `
     Object {
       "flexDirection": "row",
       "flexWrap": "nowrap",
+      "paddingBottom": 25,
+      "paddingLeft": 10,
+      "paddingRight": 10,
       "width": "100%",
     }
   }
