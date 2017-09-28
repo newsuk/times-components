@@ -98,7 +98,7 @@ class ArticlePage extends React.Component {
   constructor(props) {
     super(props);
 
-    if (props.data.article) {
+    if (props.data && props.data.article) {
       this.state = {
         dataSource: ds.cloneWithRows(listViewDataHelper(props.data.article))
       };

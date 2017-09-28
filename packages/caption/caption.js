@@ -34,16 +34,32 @@ const defaultStyle = StyleSheet.create({
   }
 });
 
+const renderCredits = (style, credits) => {
+  if (!credits || credits === "") {
+    return null;
+  }
+  return (
+    <Text style={[defaultStyle.text, defaultStyle.credits, style.text]}>
+      {credits.toUpperCase()}
+    </Text>
+  );
+}
+const renderText = (style, text) => {
+  if (!text || text === "") {
+    return null;
+  }
+
+  return (
+    <Text style={[defaultStyle.text, style.text]}>{text}</Text>
+  );
+}
+
 const Caption = ({ text, credits, style, children }) => (
   <View>
     {children}
     <View style={[defaultStyle.container, style.container]}>
-      {text && <Text style={[defaultStyle.text, style.text]}>{text}</Text>}
-      {credits && (
-        <Text style={[defaultStyle.text, defaultStyle.credits, style.text]}>
-          {credits.toUpperCase()}
-        </Text>
-      )}
+      {renderText(style, text)}
+      {renderCredits(style, credits)}
     </View>
   </View>
 );
