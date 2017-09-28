@@ -17,7 +17,7 @@ const exampleNonImage = {
 
 const styles = StyleSheet.create({
   container: {
-    height: 256
+    width: 320
   },
   halfWidthView: {
     width: "50%"
@@ -32,7 +32,7 @@ storiesOf("Image", module)
   ))
   .add("Resized to half of full width, keeping aspect ratio", () => (
     <View style={[styles.container, styles.halfWidthView]}>
-      <Image source={exampleImage} />
+      <Image style={{ resizeMode: "center" }} source={exampleImage} />
     </View>
   ))
   .add("Show default image on error", () => (
@@ -46,9 +46,9 @@ storiesOf("Image", module)
     </View>
   ))
   .add("No schema url", () => (
-    <View style={{ width: 100, height: 100 }}>
+    <View style={[styles.container]}>
       <Image
-        resizeMode={"cover"}
+        style={{ resizeMode: "cover" }}
         source={{
           uri:
             "//www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320"
@@ -59,7 +59,6 @@ storiesOf("Image", module)
   .add("Apply style to image", () => (
     <View style={{ width: 100, height: 100 }}>
       <Image
-        resizeMode={"cover"}
         style={{ borderRadius: 50, width: 100, height: 100 }}
         source={exampleImage}
       />
