@@ -32,7 +32,7 @@ storiesOf("Article", module)
         </div>
       );
     }
-    return <Article {...fullArticleFixture} />
+    return <Article {...fullArticleFixture} />;
   })
   .add("Fixtures - No ads", () => <Article {...articleFixtureNoAds} />)
   .add("Fixtures - No standfirst", () => (

@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import { renderTrees } from "@times-components/markup";
 import Image from "@times-components/image";
 import ArticleImage from "@times-components/article-image";
-import { AdComposer } from "@times-components/ad";
 
 import listViewDataHelper from "./data-helper";
 import styles from "./styles/article-style";
@@ -18,6 +17,7 @@ import {
   articleMetaPropTypes,
   articleMetaDefaultPropTypes
 } from "./article-meta.proptypes";
+import ArticleContent from "./article-content";
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 const listViewPageSize = 1;
@@ -117,7 +117,7 @@ class ArticlePage extends React.Component {
     }
 
     return (
-      <AdComposer section="article">
+      <ArticleContent>
         <ListView
           dataSource={this.state.dataSource}
           renderRow={ArticlePage.renderRow}
@@ -126,7 +126,7 @@ class ArticlePage extends React.Component {
           pageSize={listViewPageSize}
           enableEmptySections
         />
-      </AdComposer>
+      </ArticleContent>
     );
   }
 }
