@@ -10,32 +10,38 @@ const flatten = l =>
 const getQueryVariables = definitions =>
   flatten(
     definitions.map(definition =>
-      (definition.variableDefinitions || []).map(
-        variable => variable.variable.name.value
-      )
+      (definition.variableDefinitions || [])
+        .map(variable => variable.variable.name.value)
     )
   );
 
-const connectGraphql = (
-  query,
-  propsToVariables = identity,
-  transformResponse = identity
-) => Component => {
+const connectGraphql = (query, propsToVariables = identity) => {
   const variableNames = getQueryVariables(query.definitions);
-  return props => {
-    const Wrapper = data => (
-      <Component {...props} {...transformResponse(data)} />
-    );
+  const Wrapper = ({
+    data: { error, loading, ...result },
+    children,
+    ...props
+  }) =>
+    children({
+      error,
+      isLoading: loading,
+      ...result,
+      ...props
+    });
 
+  const Component = props => {
     const variables = pick(propsToVariables(props), variableNames);
-    const WithGraphql = graphql(query, {
+
+    const Graphql = graphql(query, {
       options: {
         variables
       }
     })(Wrapper);
 
-    return <WithGraphql />;
+    return <Graphql {...props} />;
   };
+
+  return Component;
 };
 
 export default connectGraphql;

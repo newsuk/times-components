@@ -2,11 +2,14 @@
 
 exports[`renders profile 1`] = `
 <AuthorProfile
+  __typename="Author"
   articles={
     Object {
+      "__typename": "Articles",
       "count": 24,
       "list": Array [
         Object {
+          "__typename": "Article",
           "content": Array [
             Object {
               "attributes": Object {},
@@ -38,17 +41,42 @@ exports[`renders profile 1`] = `
           "id": "97c64f20-cb67-11e4-a202-50ac5def393a",
           "label": null,
           "leadAsset": Object {
+            "__typename": "Image",
             "crop": Object {
-              "url": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+              "__typename": "Crop",
+              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
             },
             "title": "British trio stopped on the way to join Isis",
           },
           "publicationName": "TIMES",
           "publishedTime": 2015-03-23T23:06:34.000Z,
           "title": "British trio stopped on the way to join Isis",
-          "url": "https://www.thetimes.co.uk/article/carol-midgley-my-labrador-isnt-fat-from-eating-chocolates-its-scientifically-proven-zw0380pp2",
+          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/british-trio-stopped-on-the-way-to-join-isis-57nwljmbn",
         },
         Object {
+          "__typename": "Article",
+          "content": Array [],
+          "id": "1f18ebd0-671f-40e0-a190-82dd8af1a294",
+          "label": null,
+          "leadAsset": null,
+          "publicationName": "TIMES",
+          "publishedTime": 2015-03-23T23:06:34.000Z,
+          "title": "A blank article with a server rendered component",
+          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/a-blank-article-with-a-server-rendered-component-d06vmvz08",
+        },
+        Object {
+          "__typename": "Article",
+          "content": Array [],
+          "id": "2c18ebd0-671f-40e0-a190-82dd8af1a294",
+          "label": null,
+          "leadAsset": null,
+          "publicationName": "TIMES",
+          "publishedTime": 2015-03-23T23:06:34.000Z,
+          "title": "A blank article with a server rendered component",
+          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/a-blank-article-with-a-server-rendered-component-35pjwxj8n",
+        },
+        Object {
+          "__typename": "Article",
           "content": Array [
             Object {
               "attributes": Object {},
@@ -80,17 +108,20 @@ exports[`renders profile 1`] = `
           "id": "61143932-6f49-4720-9506-10f32f2eca0d",
           "label": "Politics",
           "leadAsset": Object {
+            "__typename": "Image",
             "crop": Object {
-              "url": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+              "__typename": "Crop",
+              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
             },
             "title": "British trio stopped on the way to join Isis",
           },
           "publicationName": "TIMES",
           "publishedTime": 2015-03-20T23:06:34.000Z,
           "title": "British trio stopped on the way to join Isis",
-          "url": "https://www.thetimes.co.uk/article/carol-midgley-my-labrador-isnt-fat-from-eating-chocolates-its-scientifically-proven-zw0380pp2",
+          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/british-trio-stopped-on-the-way-to-join-isis-6583gb80g",
         },
         Object {
+          "__typename": "Article",
           "content": Array [
             Object {
               "attributes": Object {},
@@ -122,17 +153,20 @@ exports[`renders profile 1`] = `
           "id": "08fc89f8-bbe1-4ba1-9fd3-39607ea9bc49",
           "label": "Science",
           "leadAsset": Object {
+            "__typename": "Image",
             "crop": Object {
-              "url": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+              "__typename": "Crop",
+              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
             },
             "title": "British trio stopped on the way to join Isis",
           },
           "publicationName": "TIMES",
           "publishedTime": 2015-03-19T23:06:34.000Z,
           "title": "British trio stopped on the way to join Isis",
-          "url": "https://www.thetimes.co.uk/article/carol-midgley-my-labrador-isnt-fat-from-eating-chocolates-its-scientifically-proven-zw0380pp2",
+          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/british-trio-stopped-on-the-way-to-join-isis-5xm7x7rxt",
         },
         Object {
+          "__typename": "Article",
           "content": Array [
             Object {
               "attributes": Object {},
@@ -164,17 +198,20 @@ exports[`renders profile 1`] = `
           "id": "d9851f3a-a67f-4249-b16a-1b0cb5bec915",
           "label": "Science",
           "leadAsset": Object {
+            "__typename": "Image",
             "crop": Object {
-              "url": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+              "__typename": "Crop",
+              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
             },
             "title": "British trio stopped on the way to join Isis",
           },
           "publicationName": "TIMES",
           "publishedTime": 2015-03-18T23:06:34.000Z,
           "title": "British trio stopped on the way to join Isis",
-          "url": "https://www.thetimes.co.uk/article/carol-midgley-my-labrador-isnt-fat-from-eating-chocolates-its-scientifically-proven-zw0380pp2",
+          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/british-trio-stopped-on-the-way-to-join-isis-5wrj5sc7p",
         },
         Object {
+          "__typename": "Article",
           "content": Array [
             Object {
               "attributes": Object {},
@@ -193,17 +230,20 @@ exports[`renders profile 1`] = `
           "id": "be9dfdb0-a21e-45d5-93a5-76fa6d748b7b",
           "label": "Health",
           "leadAsset": Object {
+            "__typename": "Image",
             "crop": Object {
-              "url": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
+              "__typename": "Crop",
+              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
             },
             "title": "Gay and IVF couples ‘better at raising children’",
           },
           "publicationName": "SUNDAYTIMES",
           "publishedTime": 2015-03-17T23:37:49.000Z,
           "title": "Gay and IVF couples ‘better at raising children’",
-          "url": "https://www.thetimes.co.uk/article/carol-midgley-my-labrador-isnt-fat-from-eating-chocolates-its-scientifically-proven-zw0380pp2",
+          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/gay-and-ivf-couples-better-at-raising-children-zzngv7vz3",
         },
         Object {
+          "__typename": "Article",
           "content": Array [
             Object {
               "attributes": Object {},
@@ -235,17 +275,20 @@ exports[`renders profile 1`] = `
           "id": "6674e762-f171-4885-820d-ea067ec66a74",
           "label": "Science",
           "leadAsset": Object {
+            "__typename": "Image",
             "crop": Object {
-              "url": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+              "__typename": "Crop",
+              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
             },
             "title": "British trio stopped on the way to join Isis",
           },
           "publicationName": "TIMES",
           "publishedTime": 2015-03-17T23:06:34.000Z,
           "title": "British trio stopped on the way to join Isis",
-          "url": "https://www.thetimes.co.uk/article/carol-midgley-my-labrador-isnt-fat-from-eating-chocolates-its-scientifically-proven-zw0380pp2",
+          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/british-trio-stopped-on-the-way-to-join-isis-gpqs3t7fz",
         },
         Object {
+          "__typename": "Article",
           "content": Array [
             Object {
               "attributes": Object {},
@@ -264,17 +307,20 @@ exports[`renders profile 1`] = `
           "id": "89bd6c18-ccf9-11e4-81dd-064fe933cd40",
           "label": "Environment",
           "leadAsset": Object {
+            "__typename": "Image",
             "crop": Object {
-              "url": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+              "__typename": "Crop",
+              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
             },
             "title": "Fourth Briton is seized trying to join Isis",
           },
           "publicationName": "TIMES",
           "publishedTime": 2015-03-17T23:01:44.000Z,
           "title": "Fourth Briton is seized trying to join Isis",
-          "url": "https://www.thetimes.co.uk/article/carol-midgley-my-labrador-isnt-fat-from-eating-chocolates-its-scientifically-proven-zw0380pp2",
+          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/fourth-briton-is-seized-trying-to-join-isis-6nxtx6kg3",
         },
         Object {
+          "__typename": "Article",
           "content": Array [
             Object {
               "attributes": Object {},
@@ -293,371 +339,17 @@ exports[`renders profile 1`] = `
           "id": "88152206-eaaa-4c19-940e-a1a2a9b80b62",
           "label": "Politics",
           "leadAsset": Object {
+            "__typename": "Image",
             "crop": Object {
-              "url": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+              "__typename": "Crop",
+              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
             },
             "title": "Fourth Briton is seized trying to join Isis",
           },
           "publicationName": "TIMES",
           "publishedTime": 2015-03-17T23:01:44.000Z,
           "title": "Fourth Briton is seized trying to join Isis",
-          "url": "https://www.thetimes.co.uk/article/carol-midgley-my-labrador-isnt-fat-from-eating-chocolates-its-scientifically-proven-zw0380pp2",
-        },
-        Object {
-          "content": Array [
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "paragraph",
-            },
-          ],
-          "id": "89bd6c18-ccf9-11e4-81dd-064fe933cd41",
-          "label": "Health",
-          "leadAsset": Object {
-            "crop": Object {
-              "url": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-            },
-            "title": "Fourth Briton is seized trying to join Isis",
-          },
-          "publicationName": "TIMES",
-          "publishedTime": 2015-03-17T23:01:44.000Z,
-          "title": "Fourth Briton is seized trying to join Isis",
-          "url": "https://www.thetimes.co.uk/article/carol-midgley-my-labrador-isnt-fat-from-eating-chocolates-its-scientifically-proven-zw0380pp2",
-        },
-        Object {
-          "content": Array [
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "paragraph",
-            },
-          ],
-          "id": "aaa93b19-e26e-4ee5-81de-3e8090b5a1a1",
-          "label": "Science",
-          "leadAsset": Object {
-            "crop": Object {
-              "url": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-            },
-            "title": "Fourth Briton is seized trying to join Isis",
-          },
-          "publicationName": "TIMES",
-          "publishedTime": 2015-03-17T23:01:44.000Z,
-          "title": "Fourth Briton is seized trying to join Isis",
-          "url": "https://www.thetimes.co.uk/article/carol-midgley-my-labrador-isnt-fat-from-eating-chocolates-its-scientifically-proven-zw0380pp2",
-        },
-        Object {
-          "content": Array [
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "paragraph",
-            },
-          ],
-          "id": "9b16fbe5-958d-4874-9d2e-b6d29dbcbe9f",
-          "label": "Health",
-          "leadAsset": Object {
-            "crop": Object {
-              "url": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-            },
-            "title": "Fourth Briton is seized trying to join Isis",
-          },
-          "publicationName": "TIMES",
-          "publishedTime": 2015-03-17T23:01:44.000Z,
-          "title": "Fourth Briton is seized trying to join Isis",
-          "url": "https://www.thetimes.co.uk/article/carol-midgley-my-labrador-isnt-fat-from-eating-chocolates-its-scientifically-proven-zw0380pp2",
-        },
-        Object {
-          "content": Array [
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "paragraph",
-            },
-          ],
-          "id": "0407b30e-0751-403a-a39c-f30ff6c3f5bb",
-          "label": "Environment",
-          "leadAsset": Object {
-            "crop": Object {
-              "url": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-            },
-            "title": "Fourth Briton is seized trying to join Isis",
-          },
-          "publicationName": "TIMES",
-          "publishedTime": 2015-03-17T23:01:44.000Z,
-          "title": "Fourth Briton is seized trying to join Isis",
-          "url": "https://www.thetimes.co.uk/article/carol-midgley-my-labrador-isnt-fat-from-eating-chocolates-its-scientifically-proven-zw0380pp2",
-        },
-        Object {
-          "content": Array [
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "Tony Blair’s main contribution to Middle East peace as the Quartet’s special envoy was the idea that prosperity in the Palestinian territories",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "paragraph",
-            },
-          ],
-          "id": "7966deb9-b1f7-447c-81c5-51fa88b935ee",
-          "label": "Science",
-          "leadAsset": Object {
-            "crop": Object {
-              "url": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C520%2C0%2C0",
-            },
-            "title": "Clash of interests tarnished the project",
-          },
-          "publicationName": "TIMES",
-          "publishedTime": 2015-03-17T22:11:25.000Z,
-          "title": "Clash of interests tarnished the project",
-          "url": "https://www.thetimes.co.uk/article/carol-midgley-my-labrador-isnt-fat-from-eating-chocolates-its-scientifically-proven-zw0380pp2",
-        },
-        Object {
-          "content": Array [
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "It was a celebration of the life of one of the greatest champions of the arts, a luvvie who was universally loved.",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "paragraph",
-            },
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "Dames, lords, actors",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "paragraph",
-            },
-          ],
-          "id": "7b3e8143-d446-4cd8-b330-0dacc5f818c4",
-          "label": "Science",
-          "leadAsset": Object {
-            "crop": Object {
-              "url": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0a36e5e3aa3fa281979258f23ec7d9bb0b1316b7.jpg?crop=780%2C520%2C0%2C0",
-            },
-            "title": "Giant brings out the stars for one last time",
-          },
-          "publicationName": "TIMES",
-          "publishedTime": 2015-03-17T21:49:11.000Z,
-          "title": "Giant brings out the stars for one last time",
-          "url": "https://www.thetimes.co.uk/article/carol-midgley-my-labrador-isnt-fat-from-eating-chocolates-its-scientifically-proven-zw0380pp2",
-        },
-        Object {
-          "content": Array [
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "The funding of British faith schools run by an extreme religious sect is under investigation by the taxman over multi-million pound gift aid",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "paragraph",
-            },
-          ],
-          "id": "aa3ccb09-2407-4151-b1d8-a9ec55487d05",
-          "label": "Science",
-          "leadAsset": Object {
-            "crop": Object {
-              "url": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/e1099c348c8c727584842b53d5e708a0377770a2.jpg?crop=620%2C413%2C0%2C0",
-            },
-            "title": "Inquiry at sect schools that banned books",
-          },
-          "publicationName": "TIMES",
-          "publishedTime": 2015-03-17T21:25:02.000Z,
-          "title": "Inquiry at sect schools that banned books",
-          "url": "https://www.thetimes.co.uk/article/carol-midgley-my-labrador-isnt-fat-from-eating-chocolates-its-scientifically-proven-zw0380pp2",
-        },
-        Object {
-          "content": Array [
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "A Teach First-style scheme for mental health social workers aimed at recruiting top graduates to the profession is to be launched today.",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "paragraph",
-            },
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "The Think",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "paragraph",
-            },
-          ],
-          "id": "5a33a77b-c24e-41b6-9876-32b83a336da9",
-          "label": "Health",
-          "leadAsset": Object {
-            "crop": Object {
-              "url": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/eee1c7f320c3690dce7ee275ceb77e915c61c4f3.jpg?crop=780%2C520%2C0%2C0",
-            },
-            "title": "Top graduates drawn to jobs in social work",
-          },
-          "publicationName": "TIMES",
-          "publishedTime": 2015-03-17T20:51:44.000Z,
-          "title": "Top graduates drawn to jobs in social work",
-          "url": "https://www.thetimes.co.uk/article/carol-midgley-my-labrador-isnt-fat-from-eating-chocolates-its-scientifically-proven-zw0380pp2",
-        },
-        Object {
-          "content": Array [
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "Terry Pratchett, who died last week, began his career on the ",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "Bucks Free Press",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "italic",
-                },
-                Object {
-                  "attributes": Object {
-                    "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "paragraph",
-            },
-          ],
-          "id": "fcc85270-54c9-4938-a0fc-5de8e3628885",
-          "label": "Health",
-          "leadAsset": Object {
-            "crop": Object {
-              "url": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
-            },
-            "title": "TMS: Pratchett’s law of the jungle",
-          },
-          "publicationName": "TIMES",
-          "publishedTime": 2015-03-17T19:39:39.000Z,
-          "title": "TMS: Pratchett’s law of the jungle",
-          "url": "https://www.thetimes.co.uk/article/carol-midgley-my-labrador-isnt-fat-from-eating-chocolates-its-scientifically-proven-zw0380pp2",
-        },
-        Object {
-          "content": Array [
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "Is poetry best when written down or is it nobler in the mind? Is it enough to read a great verse off the page, or is it ",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "dulce et decorum",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "italic",
-                },
-                Object {
-                  "attributes": Object {
-                    "value": " to",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "paragraph",
-            },
-          ],
-          "id": "be725c01-dd7e-4c46-85b5-16ffc30c0b98",
-          "label": "Environment",
-          "leadAsset": Object {
-            "crop": Object {
-              "url": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0d5fa06d6b10cfbbc2dade5f0d7b0271fccd994b.jpg?crop=780%2C520%2C0%2C0",
-            },
-            "title": "Learning by rote ‘will put pupils off poetry’",
-          },
-          "publicationName": "TIMES",
-          "publishedTime": 2015-03-17T19:36:43.000Z,
-          "title": "Learning by rote ‘will put pupils off poetry’",
-          "url": "https://www.thetimes.co.uk/article/carol-midgley-my-labrador-isnt-fat-from-eating-chocolates-its-scientifically-proven-zw0380pp2",
+          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/fourth-briton-is-seized-trying-to-join-isis-svbdhdcvx",
         },
       ],
     }
@@ -719,7 +411,7 @@ exports[`renders profile 1`] = `
     ]
   }
   count={24}
-  image="https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg"
+  image={null}
   jobTitle="Legal Editor"
   name="Fiona Hamilton"
   onArticlePress={[Function]}
@@ -862,45 +554,6 @@ exports[`renders profile content 1`] = `
                last 
             </Text>
           </Text>
-        </View>
-        <View
-          style={
-            Object {
-              "bottom": 0,
-              "height": 100,
-              "position": "absolute",
-              "width": 100,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-          >
-            <Image
-              onError={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  Object {
-                    "borderColor": "#FFF",
-                    "borderRadius": 50,
-                    "borderWidth": 5,
-                    "height": 100,
-                    "width": 100,
-                  },
-                ]
-              }
-            />
-          </View>
         </View>
       </View>
       <View
@@ -1079,7 +732,7 @@ exports[`renders profile content 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                     }
                   }
                   style={
@@ -1255,6 +908,280 @@ exports[`renders profile content 1`] = `
               style={
                 Array [
                   Object {
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                  null,
+                ]
+              }
+            >
+              <View
+                style={Object {}}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 12,
+                      "letterSpacing": 1,
+                      "marginBottom": 2,
+                    }
+                  }
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "TimesModern-Bold",
+                      "fontSize": 22,
+                      "fontWeight": "400",
+                      "lineHeight": 22,
+                      "marginBottom": 8,
+                    }
+                  }
+                >
+                  A blank article with a server rendered component
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "flexWrap": "wrap",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 14,
+                      "lineHeight": 20,
+                      "marginBottom": 10,
+                    }
+                  }
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  Monday March 23 2015
+                  , The Times
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            }
+          }
+        >
+          <View
+            onLayout={[Function]}
+            style={
+              Array [
+                Object {
+                  "flexDirection": "column",
+                },
+                null,
+                undefined,
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                  null,
+                ]
+              }
+            >
+              <View
+                style={Object {}}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 12,
+                      "letterSpacing": 1,
+                      "marginBottom": 2,
+                    }
+                  }
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "TimesModern-Bold",
+                      "fontSize": 22,
+                      "fontWeight": "400",
+                      "lineHeight": 22,
+                      "marginBottom": 8,
+                    }
+                  }
+                >
+                  A blank article with a server rendered component
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "flexWrap": "wrap",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 14,
+                      "lineHeight": 20,
+                      "marginBottom": 10,
+                    }
+                  }
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  Monday March 23 2015
+                  , The Times
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            }
+          }
+        >
+          <View
+            onLayout={[Function]}
+            style={
+              Array [
+                Object {
+                  "flexDirection": "column",
+                },
+                null,
+                undefined,
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
                     "paddingBottom": 15,
                   },
                   Object {
@@ -1273,7 +1200,7 @@ exports[`renders profile content 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                     }
                   }
                   style={
@@ -1469,7 +1396,7 @@ exports[`renders profile content 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                     }
                   }
                   style={
@@ -1665,7 +1592,7 @@ exports[`renders profile content 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                     }
                   }
                   style={
@@ -1861,7 +1788,7 @@ exports[`renders profile content 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
+                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
                     }
                   }
                   style={
@@ -2045,7 +1972,7 @@ exports[`renders profile content 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                     }
                   }
                   style={
@@ -2241,7 +2168,7 @@ exports[`renders profile content 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
                     }
                   }
                   style={
@@ -2425,7 +2352,7 @@ exports[`renders profile content 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
                     }
                   }
                   style={
@@ -2508,1886 +2435,6 @@ exports[`renders profile content 1`] = `
                     ellipsizeMode="tail"
                   >
                     A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
-                  </Text>
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Tuesday March 17 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                >
-                  HEALTH
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  Fourth Briton is seized trying to join Isis
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
-                  </Text>
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Tuesday March 17 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                >
-                  SCIENCE
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  Fourth Briton is seized trying to join Isis
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
-                  </Text>
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Tuesday March 17 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                >
-                  HEALTH
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  Fourth Briton is seized trying to join Isis
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
-                  </Text>
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Tuesday March 17 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                >
-                  ENVIRONMENT
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  Fourth Briton is seized trying to join Isis
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
-                  </Text>
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Tuesday March 17 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C520%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                >
-                  SCIENCE
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  Clash of interests tarnished the project
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    Tony Blair’s main contribution to Middle East peace as the Quartet’s special envoy was the idea that prosperity in the Palestinian territories
-                  </Text>
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Tuesday March 17 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0a36e5e3aa3fa281979258f23ec7d9bb0b1316b7.jpg?crop=780%2C520%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                >
-                  SCIENCE
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  Giant brings out the stars for one last time
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    It was a celebration of the life of one of the greatest champions of the arts, a luvvie who was universally loved.
-                  </Text>
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    Dames, lords, actors
-                  </Text>
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Tuesday March 17 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/e1099c348c8c727584842b53d5e708a0377770a2.jpg?crop=620%2C413%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                >
-                  SCIENCE
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  Inquiry at sect schools that banned books
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    The funding of British faith schools run by an extreme religious sect is under investigation by the taxman over multi-million pound gift aid
-                  </Text>
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Tuesday March 17 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/eee1c7f320c3690dce7ee275ceb77e915c61c4f3.jpg?crop=780%2C520%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                >
-                  HEALTH
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  Top graduates drawn to jobs in social work
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    A Teach First-style scheme for mental health social workers aimed at recruiting top graduates to the profession is to be launched today.
-                  </Text>
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    The Think
-                  </Text>
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Tuesday March 17 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                >
-                  HEALTH
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  TMS: Pratchett’s law of the jungle
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    Terry Pratchett, who died last week, began his career on the 
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                      style={
-                        Object {
-                          "fontStyle": "italic",
-                        }
-                      }
-                    >
-                      Bucks Free Press
-                    </Text>
-                     in 1965, aged 17, and the paper recalls in a tribute that he wore
-                  </Text>
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Tuesday March 17 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0d5fa06d6b10cfbbc2dade5f0d7b0271fccd994b.jpg?crop=780%2C520%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                >
-                  ENVIRONMENT
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  Learning by rote ‘will put pupils off poetry’
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    Is poetry best when written down or is it nobler in the mind? Is it enough to read a great verse off the page, or is it 
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                      style={
-                        Object {
-                          "fontStyle": "italic",
-                        }
-                      }
-                    >
-                      dulce et decorum
-                    </Text>
-                     to
                   </Text>
                 </Text>
                 <Text
@@ -4550,45 +2597,6 @@ exports[`renders profile content component 1`] = `
             </Text>
           </Text>
         </View>
-        <View
-          style={
-            Object {
-              "bottom": 0,
-              "height": 100,
-              "position": "absolute",
-              "width": 100,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-          >
-            <Image
-              onError={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  Object {
-                    "borderColor": "#FFF",
-                    "borderRadius": 50,
-                    "borderWidth": 5,
-                    "height": 100,
-                    "width": 100,
-                  },
-                ]
-              }
-            />
-          </View>
-        </View>
       </View>
       <View
         style={
@@ -4766,7 +2774,7 @@ exports[`renders profile content component 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                     }
                   }
                   style={
@@ -4942,6 +2950,280 @@ exports[`renders profile content component 1`] = `
               style={
                 Array [
                   Object {
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                  null,
+                ]
+              }
+            >
+              <View
+                style={Object {}}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 12,
+                      "letterSpacing": 1,
+                      "marginBottom": 2,
+                    }
+                  }
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "TimesModern-Bold",
+                      "fontSize": 22,
+                      "fontWeight": "400",
+                      "lineHeight": 22,
+                      "marginBottom": 8,
+                    }
+                  }
+                >
+                  A blank article with a server rendered component
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "flexWrap": "wrap",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 14,
+                      "lineHeight": 20,
+                      "marginBottom": 10,
+                    }
+                  }
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  Monday March 23 2015
+                  , The Times
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            }
+          }
+        >
+          <View
+            onLayout={[Function]}
+            style={
+              Array [
+                Object {
+                  "flexDirection": "column",
+                },
+                null,
+                undefined,
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                  null,
+                ]
+              }
+            >
+              <View
+                style={Object {}}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 12,
+                      "letterSpacing": 1,
+                      "marginBottom": 2,
+                    }
+                  }
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "TimesModern-Bold",
+                      "fontSize": 22,
+                      "fontWeight": "400",
+                      "lineHeight": 22,
+                      "marginBottom": 8,
+                    }
+                  }
+                >
+                  A blank article with a server rendered component
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "flexWrap": "wrap",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 14,
+                      "lineHeight": 20,
+                      "marginBottom": 10,
+                    }
+                  }
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  Monday March 23 2015
+                  , The Times
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#dbdbdb",
+            "height": 1,
+            "margin": 10,
+          }
+        }
+      />
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            }
+          }
+        >
+          <View
+            onLayout={[Function]}
+            style={
+              Array [
+                Object {
+                  "flexDirection": "column",
+                },
+                null,
+                undefined,
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
                     "paddingBottom": 15,
                   },
                   Object {
@@ -4960,7 +3242,7 @@ exports[`renders profile content component 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                     }
                   }
                   style={
@@ -5156,7 +3438,7 @@ exports[`renders profile content component 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                     }
                   }
                   style={
@@ -5352,7 +3634,7 @@ exports[`renders profile content component 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                     }
                   }
                   style={
@@ -5548,7 +3830,7 @@ exports[`renders profile content component 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
+                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
                     }
                   }
                   style={
@@ -5732,7 +4014,7 @@ exports[`renders profile content component 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
                     }
                   }
                   style={
@@ -5928,7 +4210,7 @@ exports[`renders profile content component 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
                     }
                   }
                   style={
@@ -6112,7 +4394,7 @@ exports[`renders profile content component 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
                     }
                   }
                   style={
@@ -6195,1886 +4477,6 @@ exports[`renders profile content component 1`] = `
                     ellipsizeMode="tail"
                   >
                     A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
-                  </Text>
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Tuesday March 17 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                >
-                  HEALTH
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  Fourth Briton is seized trying to join Isis
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
-                  </Text>
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Tuesday March 17 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                >
-                  SCIENCE
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  Fourth Briton is seized trying to join Isis
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
-                  </Text>
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Tuesday March 17 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                >
-                  HEALTH
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  Fourth Briton is seized trying to join Isis
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
-                  </Text>
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Tuesday March 17 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                >
-                  ENVIRONMENT
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  Fourth Briton is seized trying to join Isis
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
-                  </Text>
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Tuesday March 17 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C520%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                >
-                  SCIENCE
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  Clash of interests tarnished the project
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    Tony Blair’s main contribution to Middle East peace as the Quartet’s special envoy was the idea that prosperity in the Palestinian territories
-                  </Text>
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Tuesday March 17 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0a36e5e3aa3fa281979258f23ec7d9bb0b1316b7.jpg?crop=780%2C520%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                >
-                  SCIENCE
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  Giant brings out the stars for one last time
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    It was a celebration of the life of one of the greatest champions of the arts, a luvvie who was universally loved.
-                  </Text>
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    Dames, lords, actors
-                  </Text>
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Tuesday March 17 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/e1099c348c8c727584842b53d5e708a0377770a2.jpg?crop=620%2C413%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                >
-                  SCIENCE
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  Inquiry at sect schools that banned books
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    The funding of British faith schools run by an extreme religious sect is under investigation by the taxman over multi-million pound gift aid
-                  </Text>
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Tuesday March 17 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/eee1c7f320c3690dce7ee275ceb77e915c61c4f3.jpg?crop=780%2C520%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                >
-                  HEALTH
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  Top graduates drawn to jobs in social work
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    A Teach First-style scheme for mental health social workers aimed at recruiting top graduates to the profession is to be launched today.
-                  </Text>
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    The Think
-                  </Text>
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Tuesday March 17 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                >
-                  HEALTH
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  TMS: Pratchett’s law of the jungle
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    Terry Pratchett, who died last week, began his career on the 
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                      style={
-                        Object {
-                          "fontStyle": "italic",
-                        }
-                      }
-                    >
-                      Bucks Free Press
-                    </Text>
-                     in 1965, aged 17, and the paper recalls in a tribute that he wore
-                  </Text>
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Tuesday March 17 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0d5fa06d6b10cfbbc2dade5f0d7b0271fccd994b.jpg?crop=780%2C520%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                >
-                  ENVIRONMENT
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  Learning by rote ‘will put pupils off poetry’
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    Is poetry best when written down or is it nobler in the mind? Is it enough to read a great verse off the page, or is it 
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                      style={
-                        Object {
-                          "fontStyle": "italic",
-                        }
-                      }
-                    >
-                      dulce et decorum
-                    </Text>
-                     to
                   </Text>
                 </Text>
                 <Text
@@ -8263,45 +4665,6 @@ exports[`renders profile header 1`] = `
            last 
         </Text>
       </Text>
-    </View>
-    <View
-      style={
-        Object {
-          "bottom": 0,
-          "height": 100,
-          "position": "absolute",
-          "width": 100,
-        }
-      }
-    >
-      <View
-        onLayout={[Function]}
-      >
-        <Image
-          onError={[Function]}
-          onLoad={[Function]}
-          source={
-            Object {
-              "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg",
-            }
-          }
-          style={
-            Array [
-              Object {
-                "height": 1,
-                "width": 750,
-              },
-              Object {
-                "borderColor": "#FFF",
-                "borderRadius": 50,
-                "borderWidth": 5,
-                "height": 100,
-                "width": 100,
-              },
-            ]
-          }
-        />
-      </View>
     </View>
   </View>
   <View

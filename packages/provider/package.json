@@ -38,6 +38,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "apollo-client": "1.9.3",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-eslint": "7.2.3",
@@ -67,13 +68,12 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/author-profile": "0.15.0",
     "@times-components/pagination": "0.6.4",
     "graphql-tag": "2.4.2",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",
     "prop-types": "15.5.10",
-    "react-apollo": "1.4.14",
+    "react-apollo": "1.4.16",
     "react-native-web": "0.0.119"
   },
   "peerDependencies": {

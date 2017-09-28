@@ -2,76 +2,134 @@ import React from "react";
 import { Text } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
-import { withPageState } from "@times-components/pagination";
-
-import {
-  ApolloClient,
-  ApolloProvider,
-  createNetworkInterface,
-  IntrospectionFragmentMatcher,
-  gql
-} from "react-apollo";
-
+import { gql } from "react-apollo";
+import { ApolloClient, IntrospectionFragmentMatcher } from "react-apollo";
+import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { addTypenameToDocument } from "apollo-client";
 import connectGraphql, { AuthorProfileProvider } from "./provider.js";
+import { query as authorProfileQuery } from "./author-profile-provider";
+import fixture from "./fixtures/author-profile.json";
 
-const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
+storiesOf("Provider", module)
+  .add("Props and fetched data", () => {
+    const query = gql`
+      {
+        author(slug: "fiona-hamilton") {
+          name
+        }
+      }
+    `;
 
-const query = gql`
-  {
-    author(slug: "fiona-hamilton") {
-      name
-    }
-  }
-`;
+    const WithData = connectGraphql(query);
 
-const fragmentMatcher = new IntrospectionFragmentMatcher({
-  introspectionQueryResultData: {
-    __schema: {
-      types: [
-        {
-          kind: "UNION",
-          name: "Media",
-          possibleTypes: [
+    const mocks = [
+      {
+        request: {
+          query
+        },
+        result: {
+          data: {
+            author: {
+              name: "fiona-hamilton"
+            }
+          }
+        }
+      }
+    ];
+
+    return (
+      <MockedProvider mocks={mocks} removeTypename>
+        <WithData prop1={1} prop2={2}>
+          {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+        </WithData>
+      </MockedProvider>
+    );
+  })
+  .add("Errors", () => {
+    const query = gql`
+      {
+        author(slug: "fiona-hamilton") {
+          name
+        }
+      }
+    `;
+
+    const WithData = connectGraphql(query);
+
+    const mocks = [
+      {
+        request: {
+          query
+        },
+        error: {
+          message: "some error from the server"
+        }
+      }
+    ];
+
+    return (
+      <MockedProvider mocks={mocks} removeTypename>
+        <WithData prop1={1} prop2={2}>
+          {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+        </WithData>
+      </MockedProvider>
+    );
+  })
+  .add("Author Profile", () => {
+    const mocks = [
+      {
+        request: {
+          query: addTypenameToDocument(authorProfileQuery),
+          variables: {
+            slug: "fiona-hamilton",
+            first: 3,
+            skip: 9,
+            imageRatio: "16:9"
+          }
+        },
+        result: fixture
+      }
+    ];
+
+    const networkInterface = mockNetworkInterface(...mocks);
+
+    const fragmentMatcher = new IntrospectionFragmentMatcher({
+      introspectionQueryResultData: {
+        __schema: {
+          types: [
             {
-              name: "Image"
-            },
-            {
-              name: "Video"
+              kind: "UNION",
+              name: "Media",
+              possibleTypes: [
+                {
+                  name: "Image"
+                },
+                {
+                  name: "Video"
+                }
+              ]
             }
           ]
         }
-      ]
-    }
-  }
-});
+      }
+    });
 
-const networkInterface = createNetworkInterface({
-  uri: "http://localhost:4000/graphql/"
-});
+    const client = new ApolloClient({
+      networkInterface,
+      fragmentMatcher
+    });
 
-const client = new ApolloClient({
-  networkInterface,
-  fragmentMatcher
-});
-
-storiesOf("Provider", module).add("Provider", () => {
-  const WithData = connectGraphql(query)(Component);
-  return (
-    <ApolloProvider client={client}>
-      <WithData />
-    </ApolloProvider>
-  );
-});
-
-const AuthorProfileWithPageState = withPageState(AuthorProfileProvider);
-storiesOf("Provider", module).add("AuthorProfileProvider", () => (
-  <ApolloProvider client={client}>
-    <AuthorProfileWithPageState
-      generatePageLink={page => `https://www.thetimes.co.uk?page=${page}`}
-      imageRatio="3:2"
-      slug="fiona-hamilton"
-      page={1}
-      pageSize={3}
-    />
-  </ApolloProvider>
-));
+    return (
+      <MockedProvider mocks={mocks} client={client}>
+        <AuthorProfileProvider
+          slug="fiona-hamilton"
+          pageSize={3}
+          page={4}
+          articleImageRatio="16:9"
+        >
+          {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+        </AuthorProfileProvider>
+      </MockedProvider>
+    );
+  });

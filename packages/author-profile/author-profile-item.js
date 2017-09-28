@@ -33,7 +33,7 @@ const AuthorProfileItem = item => {
         <Card
           headline={title}
           text={content}
-          image={{ uri: imageUri }}
+          image={imageUri ? { uri: imageUri } : null}
           date={publishedTime}
           label={label}
           publication={publicationName}

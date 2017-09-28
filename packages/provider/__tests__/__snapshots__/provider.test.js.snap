@@ -1,46 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders data 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
->
-  {
-    "data": {
-      "loading": false,
-      "data": "data"
-    }
-  }
-</Text>
+exports[`returns an error 1`] = `[Error: Network error: some error from the server]`;
+
+exports[`returns config data 1`] = `
+Object {
+  "config1": "c1",
+  "config2": "c2",
+}
 `;
 
-exports[`renders data from graphql 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
->
-  {
-    "slug": "slug-value",
-    "data": {
-      "loading": false,
-      "data": "data"
-    }
-  }
-</Text>
-`;
+exports[`returns loading state with no author 1`] = `undefined`;
 
-exports[`renders loading state 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
->
-  {
-    "data": {
-      "loading": true
-    }
-  }
-</Text>
+exports[`returns query result 1`] = `
+Object {
+  "name": "fiona-hamilton",
+  Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"fiona-hamilton\\"})",
+}
 `;
