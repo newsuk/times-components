@@ -53,8 +53,9 @@ workflows:
 
             defaults write ~/Library/Preferences/com.apple.iphonesimulator SimulatorWindowLastScale-com.apple.CoreSimulator.SimDeviceType.iPhone-7 "0.55"
 
-            yarn write-test-components
-            yarn test:fructose
+         
+            yarn test:fructose:ios
+            yarn test:fructose:web
     - script@1.1.4:
         title: screenshot of desktop
         inputs:
