@@ -4754,7 +4754,6 @@ exports[`renders profile content component 1`] = `
                 Next page &gt;
               </Text>
             </View>
-<<<<<<< HEAD
           </View>
         </View>
       </View>
@@ -4768,178 +4767,6 @@ exports[`renders profile content component 1`] = `
       }
     }
     testID="articleList-0"
-  >
-    <View
-      style={
-        Object {
-          "paddingLeft": 10,
-          "paddingRight": 10,
-        }
-      }
-    >
-      <View
-        onLayout={[Function]}
-        style={
-          Array [
-            Object {
-              "flexDirection": "column",
-            },
-            null,
-            undefined,
-          ]
-        }
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "paddingBottom": 15,
-              },
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              null,
-            ]
-          }
-        >
-          <View
-            onLayout={[Function]}
-          >
-            <Image
-              onError={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              null,
-            ]
-          }
-        >
-          <View
-            style={Object {}}
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#333333",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 12,
-                  "letterSpacing": 1,
-                  "marginBottom": 2,
-                }
-              }
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#333333",
-                  "fontFamily": "TimesModern-Bold",
-                  "fontSize": 22,
-                  "fontWeight": "400",
-                  "lineHeight": 22,
-                  "marginBottom": 8,
-                }
-              }
-            >
-              British trio stopped on the way to join Isis
-            </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#696969",
-                  "flexWrap": "wrap",
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 14,
-                  "lineHeight": 20,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-              >
-                A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "fontStyle": "italic",
-                    }
-                  }
-                >
-                  The
-                </Text>
-              </Text>
-            </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
-              }
-            >
-              Monday March 23 2015
-              , The Times
-            </Text>
-=======
->>>>>>> master
-          </View>
-        </View>
-      </View>
-    </View>
-  </View>
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "maxWidth": 820,
-      }
-    }
-    testID="articleList-1"
   >
     <View
       accessibilityComponentType={undefined}
@@ -5132,7 +4959,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
-    testID="articleList-2"
+    testID="articleList-1"
   >
     <View
       style={
@@ -5336,7 +5163,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
-    testID="articleList-3"
+    testID="articleList-2"
   >
     <View
       style={
@@ -5540,7 +5367,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
-    testID="articleList-4"
+    testID="articleList-3"
   >
     <View
       style={
@@ -5744,7 +5571,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
-    testID="articleList-5"
+    testID="articleList-4"
   >
     <View
       style={
@@ -5936,7 +5763,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
-    testID="articleList-6"
+    testID="articleList-5"
   >
     <View
       style={
@@ -6140,7 +5967,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
-    testID="articleList-7"
+    testID="articleList-6"
   >
     <View
       style={
@@ -6332,7 +6159,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
-    testID="articleList-8"
+    testID="articleList-7"
   >
     <View
       style={
@@ -6524,7 +6351,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
-    testID="articleList-9"
+    testID="articleList-8"
   >
     <View
       style={
@@ -6643,6 +6470,198 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 HEALTH
+              </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontSize": 22,
+                    "fontWeight": "400",
+                    "lineHeight": 22,
+                    "marginBottom": 8,
+                  }
+                }
+              >
+                Fourth Briton is seized trying to join Isis
+              </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#696969",
+                    "flexWrap": "wrap",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 14,
+                    "lineHeight": 20,
+                    "marginBottom": 10,
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                >
+                  A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
+                </Text>
+              </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                Tuesday March 17 2015
+                , The Times
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignSelf": "center",
+        "maxWidth": 820,
+      }
+    }
+    testID="articleList-9"
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#dbdbdb",
+          "height": 1,
+          "margin": 10,
+        }
+      }
+    />
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <View
+          onLayout={[Function]}
+          style={
+            Array [
+              Object {
+                "flexDirection": "column",
+              },
+              null,
+              undefined,
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "paddingBottom": 15,
+                },
+                Object {
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              onLayout={[Function]}
+            >
+              <Image
+                onError={[Function]}
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "height": 1,
+                      "width": 750,
+                    },
+                    undefined,
+                  ]
+                }
+              />
+            </View>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              style={Object {}}
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 12,
+                    "letterSpacing": 1,
+                    "marginBottom": 2,
+                  }
+                }
+              >
+                SCIENCE
               </Text>
               <Text
                 accessible={true}
@@ -6834,7 +6853,7 @@ exports[`renders profile content component 1`] = `
                   }
                 }
               >
-                SCIENCE
+                HEALTH
               </Text>
               <Text
                 accessible={true}
@@ -7026,198 +7045,6 @@ exports[`renders profile content component 1`] = `
                   }
                 }
               >
-                HEALTH
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#333333",
-                    "fontFamily": "TimesModern-Bold",
-                    "fontSize": 22,
-                    "fontWeight": "400",
-                    "lineHeight": 22,
-                    "marginBottom": 8,
-                  }
-                }
-              >
-                Fourth Briton is seized trying to join Isis
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "flexWrap": "wrap",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 14,
-                    "lineHeight": 20,
-                    "marginBottom": 10,
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
-                </Text>
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 15,
-                    },
-                    Object {},
-                  ]
-                }
-              >
-                Tuesday March 17 2015
-                , The Times
-              </Text>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-  </View>
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "maxWidth": 820,
-      }
-    }
-    testID="articleList-12"
-  >
-    <View
-      style={
-        Object {
-          "backgroundColor": "#dbdbdb",
-          "height": 1,
-          "margin": 10,
-        }
-      }
-    />
-    <View
-      accessibilityComponentType={undefined}
-      accessibilityLabel={undefined}
-      accessibilityTraits={undefined}
-      accessible={true}
-      hitSlop={undefined}
-      isTVSelectable={true}
-      onLayout={undefined}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "opacity": 1,
-        }
-      }
-      testID={undefined}
-      tvParallaxProperties={undefined}
-    >
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <View
-          onLayout={[Function]}
-          style={
-            Array [
-              Object {
-                "flexDirection": "column",
-              },
-              null,
-              undefined,
-            ]
-          }
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "paddingBottom": 15,
-                },
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
-            <View
-              onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
-                  Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
-            <View
-              style={Object {}}
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#333333",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 12,
-                    "letterSpacing": 1,
-                    "marginBottom": 2,
-                  }
-                }
-              >
                 ENVIRONMENT
               </Text>
               <Text
@@ -7292,7 +7119,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
-    testID="articleList-13"
+    testID="articleList-12"
   >
     <View
       style={
@@ -7484,7 +7311,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
-    testID="articleList-14"
+    testID="articleList-13"
   >
     <View
       style={
@@ -7683,7 +7510,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
-    testID="articleList-15"
+    testID="articleList-14"
   >
     <View
       style={
@@ -7875,6 +7702,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-15"
   >
     <View
       style={

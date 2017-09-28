@@ -21,11 +21,7 @@ const AuthorProfile = props => (
         key > 0 ? <AuthorProfileItemSeparator /> : null;
 
       return (
-<<<<<<< HEAD
-        <View   testID={`articleList-${key}`} key={item.id} style={styles.container}>
-=======
-        <View key={id} style={styles.container}>
->>>>>>> master
+        <View testID={`articleList-${key}`} key={id} style={styles.container}>
           {separatorComponent}
           <AuthorProfileItem
             {...article}
