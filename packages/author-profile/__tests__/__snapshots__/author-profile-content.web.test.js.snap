@@ -1113,7 +1113,6 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-<<<<<<< HEAD
             <View
               style={
                 Array [
@@ -1128,77 +1127,26 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-=======
-                      "height": undefined,
-                      "width": undefined,
-=======
                       "height": 1,
                       "width": 750,
->>>>>>> 5e388c3... feat: map props depending on platform
                     },
                     undefined,
                   ]
                 }
               />
->>>>>>> 67b993e... chore: create state conversion for web
             </View>
-=======
-            <Image
-              onError={[Function]}
-              onLayout={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
->>>>>>> 1d7173d... fix: fixes image size with ssr
             <View
               style={
                 Array [
@@ -1356,7 +1304,6 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-<<<<<<< HEAD
             <View
               style={
                 Array [
@@ -1371,77 +1318,26 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-=======
-                      "height": undefined,
-                      "width": undefined,
-=======
                       "height": 1,
                       "width": 750,
->>>>>>> 5e388c3... feat: map props depending on platform
                     },
                     undefined,
                   ]
                 }
               />
->>>>>>> 67b993e... chore: create state conversion for web
             </View>
-=======
-            <Image
-              onError={[Function]}
-              onLayout={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
->>>>>>> 1d7173d... fix: fixes image size with ssr
             <View
               style={
                 Array [
@@ -1601,7 +1497,6 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-<<<<<<< HEAD
             <View
               style={
                 Array [
@@ -1616,77 +1511,26 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-=======
-                      "height": undefined,
-                      "width": undefined,
-=======
                       "height": 1,
                       "width": 750,
->>>>>>> 5e388c3... feat: map props depending on platform
                     },
                     undefined,
                   ]
                 }
               />
->>>>>>> 67b993e... chore: create state conversion for web
             </View>
-=======
-            <Image
-              onError={[Function]}
-              onLayout={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
->>>>>>> 1d7173d... fix: fixes image size with ssr
             <View
               style={
                 Array [
@@ -1846,7 +1690,6 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-<<<<<<< HEAD
             <View
               style={
                 Array [
@@ -1861,77 +1704,26 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-=======
-                      "height": undefined,
-                      "width": undefined,
-=======
                       "height": 1,
                       "width": 750,
->>>>>>> 5e388c3... feat: map props depending on platform
                     },
                     undefined,
                   ]
                 }
               />
->>>>>>> 67b993e... chore: create state conversion for web
             </View>
-=======
-            <Image
-              onError={[Function]}
-              onLayout={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
->>>>>>> 1d7173d... fix: fixes image size with ssr
             <View
               style={
                 Array [
@@ -2091,7 +1883,6 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-<<<<<<< HEAD
             <View
               style={
                 Array [
@@ -2106,77 +1897,26 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-=======
-                      "height": undefined,
-                      "width": undefined,
-=======
                       "height": 1,
                       "width": 750,
->>>>>>> 5e388c3... feat: map props depending on platform
                     },
                     undefined,
                   ]
                 }
               />
->>>>>>> 67b993e... chore: create state conversion for web
             </View>
-=======
-            <Image
-              onError={[Function]}
-              onLayout={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
->>>>>>> 1d7173d... fix: fixes image size with ssr
             <View
               style={
                 Array [
@@ -2324,7 +2064,6 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-<<<<<<< HEAD
             <View
               style={
                 Array [
@@ -2339,77 +2078,26 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-=======
-                      "height": undefined,
-                      "width": undefined,
-=======
                       "height": 1,
                       "width": 750,
->>>>>>> 5e388c3... feat: map props depending on platform
                     },
                     undefined,
                   ]
                 }
               />
->>>>>>> 67b993e... chore: create state conversion for web
             </View>
-=======
-            <Image
-              onError={[Function]}
-              onLayout={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
->>>>>>> 1d7173d... fix: fixes image size with ssr
             <View
               style={
                 Array [
@@ -2569,7 +2257,6 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-<<<<<<< HEAD
             <View
               style={
                 Array [
@@ -2584,30 +2271,18 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-<<<<<<< HEAD
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-=======
                       "height": 1,
                       "width": 750,
                     },
@@ -2615,41 +2290,7 @@ exports[`renders profile content 1`] = `
                   ]
                 }
               />
->>>>>>> 5e388c3... feat: map props depending on platform
             </View>
-=======
-            <Image
-              onError={[Function]}
-              onLayout={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
->>>>>>> 1d7173d... fix: fixes image size with ssr
             <View
               style={
                 Array [
@@ -2686,7 +2327,6 @@ exports[`renders profile content 1`] = `
                   ellipsizeMode="tail"
                   style={
                     Object {
-<<<<<<< HEAD
                       "color": "#333333",
                       "fontFamily": "TimesModern-Bold",
                       "fontSize": 22,
@@ -2741,15 +2381,6 @@ exports[`renders profile content 1`] = `
                   , The Times
                 </Text>
               </View>
-=======
-                      "height": undefined,
-                      "width": undefined,
-                    },
-                    undefined,
-                  ]
-                }
-              />
->>>>>>> 67b993e... chore: create state conversion for web
             </View>
           </View>
         </View>
@@ -2821,28 +2452,25 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
+                      "height": 1,
+                      "width": 750,
+                    },
+                    undefined,
+                  ]
+                }
+              />
             </View>
             <View
               style={
@@ -2991,59 +2619,12 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-<<<<<<< HEAD
             <View
               style={
                 Array [
                   Object {
-<<<<<<< HEAD
                     "paddingBottom": 15,
                   },
-=======
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                  }
-=======
-            <Image
-              onError={[Function]}
-              onLayout={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
->>>>>>> 1d7173d... fix: fixes image size with ssr
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
-            <View
-              style={Object {}}
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
->>>>>>> 67b993e... chore: create state conversion for web
                   Object {
                     "flexGrow": 1,
                     "flexShrink": 1,
@@ -3052,28 +2633,25 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
+                      "height": 1,
+                      "width": 750,
+                    },
+                    undefined,
+                  ]
+                }
+              />
             </View>
             <View
               style={
@@ -3093,326 +2671,14 @@ exports[`renders profile content 1`] = `
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
-<<<<<<< HEAD
                   style={
-=======
-                >
-                  A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
-                </Text>
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 15,
-                    },
-                    Object {},
-                  ]
-                }
-              >
-                Tuesday March 17 2015
-                , The Times
-              </Text>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <View
-          onLayout={[Function]}
-          style={
-            Array [
-              Object {
-                "flexDirection": "column",
-              },
-              null,
-              undefined,
-            ]
-          }
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "paddingBottom": 15,
-                },
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
-            <Image
-              onError={[Function]}
-              onLayout={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
-            <View
-              style={Object {}}
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#333333",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 12,
-                    "letterSpacing": 1,
-                    "marginBottom": 2,
-                  }
-                }
-              >
-                HEALTH
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#333333",
-                    "fontFamily": "TimesModern-Bold",
-                    "fontSize": 22,
-                    "fontWeight": "400",
-                    "lineHeight": 22,
-                    "marginBottom": 8,
-                  }
-                }
-              >
-                Fourth Briton is seized trying to join Isis
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "flexWrap": "wrap",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 14,
-                    "lineHeight": 20,
-                    "marginBottom": 10,
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
-                </Text>
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Array [
->>>>>>> 67b993e... chore: create state conversion for web
                     Object {
                       "color": "#333333",
                       "fontFamily": "GillSansMTStd-Medium",
-<<<<<<< HEAD
                       "fontSize": 12,
                       "letterSpacing": 1,
                       "marginBottom": 2,
                     }
-=======
-                      "fontSize": 13,
-                      "lineHeight": 15,
-                    },
-                    Object {},
-                  ]
-                }
-              >
-                Tuesday March 17 2015
-                , The Times
-              </Text>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <View
-          onLayout={[Function]}
-          style={
-            Array [
-              Object {
-                "flexDirection": "column",
-              },
-              null,
-              undefined,
-            ]
-          }
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "paddingBottom": 15,
-                },
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
-            <Image
-              onError={[Function]}
-              onLayout={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
-            <View
-              style={Object {}}
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#333333",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 12,
-                    "letterSpacing": 1,
-                    "marginBottom": 2,
-                  }
-                }
-              >
-                SCIENCE
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#333333",
-                    "fontFamily": "TimesModern-Bold",
-                    "fontSize": 22,
-                    "fontWeight": "400",
-                    "lineHeight": 22,
-                    "marginBottom": 8,
-                  }
-                }
-              >
-                Fourth Briton is seized trying to join Isis
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "flexWrap": "wrap",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 14,
-                    "lineHeight": 20,
-                    "marginBottom": 10,
->>>>>>> 67b993e... chore: create state conversion for web
                   }
                 >
                   HEALTH
@@ -3534,7 +2800,6 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-<<<<<<< HEAD
             <View
               style={
                 Array [
@@ -3549,30 +2814,18 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-<<<<<<< HEAD
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-=======
                       "height": 1,
                       "width": 750,
                     },
@@ -3580,41 +2833,7 @@ exports[`renders profile content 1`] = `
                   ]
                 }
               />
->>>>>>> 5e388c3... feat: map props depending on platform
             </View>
-=======
-            <Image
-              onError={[Function]}
-              onLayout={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
->>>>>>> 1d7173d... fix: fixes image size with ssr
             <View
               style={
                 Array [
@@ -3651,7 +2870,6 @@ exports[`renders profile content 1`] = `
                   ellipsizeMode="tail"
                   style={
                     Object {
-<<<<<<< HEAD
                       "color": "#333333",
                       "fontFamily": "TimesModern-Bold",
                       "fontSize": 22,
@@ -3706,15 +2924,6 @@ exports[`renders profile content 1`] = `
                   , The Times
                 </Text>
               </View>
-=======
-                      "height": undefined,
-                      "width": undefined,
-                    },
-                    undefined,
-                  ]
-                }
-              />
->>>>>>> 67b993e... chore: create state conversion for web
             </View>
           </View>
         </View>
@@ -3772,15 +2981,26 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-<<<<<<< HEAD
             <View
               style={
                 Array [
                   Object {
-<<<<<<< HEAD
                     "paddingBottom": 15,
                   },
-=======
+                  Object {
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                  null,
+                ]
+              }
+            >
+              <Image
+                onError={[Function]}
+                onLayout={[Function]}
+                onLoad={[Function]}
+                source={
+                  Object {
                     "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
                   }
                 }
@@ -3792,78 +3012,8 @@ exports[`renders profile content 1`] = `
                     },
                     undefined,
                   ]
-=======
-            <Image
-              onError={[Function]}
-              onLayout={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
->>>>>>> 1d7173d... fix: fixes image size with ssr
                 }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
-            <View
-              style={Object {}}
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
->>>>>>> 5e388c3... feat: map props depending on platform
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
+              />
             </View>
             <View
               style={
@@ -4012,7 +3162,6 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-<<<<<<< HEAD
             <View
               style={
                 Array [
@@ -4027,77 +3176,26 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-=======
-                      "height": undefined,
-                      "width": undefined,
-=======
                       "height": 1,
                       "width": 750,
->>>>>>> 5e388c3... feat: map props depending on platform
                     },
                     undefined,
                   ]
                 }
               />
->>>>>>> 67b993e... chore: create state conversion for web
             </View>
-=======
-            <Image
-              onError={[Function]}
-              onLayout={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C520%2C0%2C0",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
->>>>>>> 1d7173d... fix: fixes image size with ssr
             <View
               style={
                 Array [
@@ -4245,7 +3343,6 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-<<<<<<< HEAD
             <View
               style={
                 Array [
@@ -4260,77 +3357,26 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C520%2C0%2C0",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C520%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-=======
-                      "height": undefined,
-                      "width": undefined,
-=======
                       "height": 1,
                       "width": 750,
->>>>>>> 5e388c3... feat: map props depending on platform
                     },
                     undefined,
                   ]
                 }
               />
->>>>>>> 67b993e... chore: create state conversion for web
             </View>
-=======
-            <Image
-              onError={[Function]}
-              onLayout={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0a36e5e3aa3fa281979258f23ec7d9bb0b1316b7.jpg?crop=780%2C520%2C0%2C0",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
->>>>>>> 1d7173d... fix: fixes image size with ssr
             <View
               style={
                 Array [
@@ -4471,66 +3517,7 @@ exports[`renders profile content 1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
                   "flexDirection": "column",
-=======
-                  "paddingBottom": 15,
-                },
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
-            <Image
-              onError={[Function]}
-              onLayout={[Function]}
-<<<<<<< HEAD
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
-                  Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0a36e5e3aa3fa281979258f23ec7d9bb0b1316b7.jpg?crop=780%2C520%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-=======
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/e1099c348c8c727584842b53d5e708a0377770a2.jpg?crop=620%2C413%2C0%2C0",
->>>>>>> 1d7173d... fix: fixes image size with ssr
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
->>>>>>> 67b993e... chore: create state conversion for web
                 },
                 null,
                 undefined,
@@ -4551,28 +3538,25 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0a36e5e3aa3fa281979258f23ec7d9bb0b1316b7.jpg?crop=780%2C520%2C0%2C0",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0a36e5e3aa3fa281979258f23ec7d9bb0b1316b7.jpg?crop=780%2C520%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
+                      "height": 1,
+                      "width": 750,
+                    },
+                    undefined,
+                  ]
+                }
+              />
             </View>
             <View
               style={
@@ -4728,7 +3712,6 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-<<<<<<< HEAD
             <View
               style={
                 Array [
@@ -4743,77 +3726,26 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/e1099c348c8c727584842b53d5e708a0377770a2.jpg?crop=620%2C413%2C0%2C0",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/e1099c348c8c727584842b53d5e708a0377770a2.jpg?crop=620%2C413%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-=======
-                      "height": undefined,
-                      "width": undefined,
-=======
                       "height": 1,
                       "width": 750,
->>>>>>> 5e388c3... feat: map props depending on platform
                     },
                     undefined,
                   ]
                 }
               />
->>>>>>> 67b993e... chore: create state conversion for web
             </View>
-=======
-            <Image
-              onError={[Function]}
-              onLayout={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/eee1c7f320c3690dce7ee275ceb77e915c61c4f3.jpg?crop=780%2C520%2C0%2C0",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
->>>>>>> 1d7173d... fix: fixes image size with ssr
             <View
               style={
                 Array [
@@ -4961,15 +3893,26 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-<<<<<<< HEAD
             <View
               style={
                 Array [
                   Object {
-<<<<<<< HEAD
                     "paddingBottom": 15,
                   },
-=======
+                  Object {
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                  null,
+                ]
+              }
+            >
+              <Image
+                onError={[Function]}
+                onLayout={[Function]}
+                onLoad={[Function]}
+                source={
+                  Object {
                     "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/eee1c7f320c3690dce7ee275ceb77e915c61c4f3.jpg?crop=780%2C520%2C0%2C0",
                   }
                 }
@@ -4981,78 +3924,8 @@ exports[`renders profile content 1`] = `
                     },
                     undefined,
                   ]
-=======
-            <Image
-              onError={[Function]}
-              onLayout={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
->>>>>>> 1d7173d... fix: fixes image size with ssr
                 }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
-            <View
-              style={Object {}}
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
->>>>>>> 67b993e... chore: create state conversion for web
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/eee1c7f320c3690dce7ee275ceb77e915c61c4f3.jpg?crop=780%2C520%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
+              />
             </View>
             <View
               style={
@@ -5208,7 +4081,6 @@ exports[`renders profile content 1`] = `
               ]
             }
           >
-<<<<<<< HEAD
             <View
               style={
                 Array [
@@ -5223,38 +4095,25 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-<<<<<<< HEAD
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-=======
-                      "height": undefined,
-                      "width": undefined,
+                      "height": 1,
+                      "width": 750,
                     },
                     undefined,
                   ]
                 }
               />
->>>>>>> 67b993e... chore: create state conversion for web
             </View>
             <View
               style={
@@ -5409,67 +4268,7 @@ exports[`renders profile content 1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
                   "flexDirection": "column",
-=======
-                  "paddingBottom": 15,
-                },
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
-            <View
-              onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
-                  Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0d5fa06d6b10cfbbc2dade5f0d7b0271fccd994b.jpg?crop=780%2C520%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-=======
-            <Image
-              onError={[Function]}
-              onLayout={[Function]}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0d5fa06d6b10cfbbc2dade5f0d7b0271fccd994b.jpg?crop=780%2C520%2C0%2C0",
->>>>>>> 1d7173d... fix: fixes image size with ssr
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "height": 1,
-                    "width": 750,
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
->>>>>>> 67b993e... chore: create state conversion for web
                 },
                 null,
                 undefined,
@@ -5490,28 +4289,25 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0d5fa06d6b10cfbbc2dade5f0d7b0271fccd994b.jpg?crop=780%2C520%2C0%2C0",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-                      "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0d5fa06d6b10cfbbc2dade5f0d7b0271fccd994b.jpg?crop=780%2C520%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
+                      "height": 1,
+                      "width": 750,
+                    },
+                    undefined,
+                  ]
+                }
+              />
             </View>
             <View
               style={
@@ -5894,327 +4690,8 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 Next page &gt;
-<<<<<<< HEAD
-=======
               </Text>
             </View>
-          </View>
-        </View>
-      </View>
-    </View>
-  </View>
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "maxWidth": 820,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "paddingLeft": 10,
-          "paddingRight": 10,
-        }
-      }
-    >
-      <View
-        onLayout={[Function]}
-        style={
-          Array [
-            Object {
-              "flexDirection": "column",
-            },
-            null,
-            undefined,
-          ]
-        }
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "paddingBottom": 15,
-              },
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              null,
-            ]
-          }
-        >
-          <Image
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              null,
-            ]
-          }
-        >
-          <View
-            style={Object {}}
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#333333",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 12,
-                  "letterSpacing": 1,
-                  "marginBottom": 2,
-                }
-              }
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#333333",
-                  "fontFamily": "TimesModern-Bold",
-                  "fontSize": 22,
-                  "fontWeight": "400",
-                  "lineHeight": 22,
-                  "marginBottom": 8,
-                }
-              }
-            >
-              British trio stopped on the way to join Isis
-            </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#696969",
-                  "flexWrap": "wrap",
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 14,
-                  "lineHeight": 20,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-              >
-                A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "fontStyle": "italic",
-                    }
-                  }
-                >
-                  The
-                </Text>
->>>>>>> 1d7173d... fix: fixes image size with ssr
-              </Text>
-            </View>
-<<<<<<< HEAD
-=======
-          </View>
-        </View>
-      </View>
-    </View>
-  </View>
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "maxWidth": 820,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "paddingLeft": 10,
-          "paddingRight": 10,
-        }
-      }
-    >
-      <View
-        onLayout={[Function]}
-        style={
-          Array [
-            Object {
-              "flexDirection": "column",
-            },
-            null,
-            undefined,
-          ]
-        }
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "paddingBottom": 15,
-              },
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              null,
-            ]
-          }
-        >
-          <Image
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              null,
-            ]
-          }
-        >
-          <View
-            style={Object {}}
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#333333",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 12,
-                  "letterSpacing": 1,
-                  "marginBottom": 2,
-                }
-              }
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#333333",
-                  "fontFamily": "TimesModern-Bold",
-                  "fontSize": 22,
-                  "fontWeight": "400",
-                  "lineHeight": 22,
-                  "marginBottom": 8,
-                }
-              }
-            >
-              British trio stopped on the way to join Isis
-            </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#696969",
-                  "flexWrap": "wrap",
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 14,
-                  "lineHeight": 20,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-              >
-                A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "fontStyle": "italic",
-                    }
-                  }
-                >
-                  The
-                </Text>
-              </Text>
-            </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
-              }
-            >
-              Monday March 23 2015
-              , The Times
-            </Text>
->>>>>>> 67b993e... chore: create state conversion for web
           </View>
         </View>
       </View>
@@ -6263,46 +4740,7 @@ exports[`renders profile content component 1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
                 "flexDirection": "column",
-=======
-                "paddingBottom": 15,
-              },
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              null,
-            ]
-          }
-        >
-          <Image
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> 5e388c3... feat: map props depending on platform
               },
               null,
               undefined,
@@ -6323,38 +4761,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-<<<<<<< HEAD
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
-=======
-                    "height": undefined,
-                    "width": undefined,
+                    "height": 1,
+                    "width": 750,
                   },
                   undefined,
                 ]
               }
             />
->>>>>>> 67b993e... chore: create state conversion for web
           </View>
           <View
             style={
@@ -6520,7 +4945,6 @@ exports[`renders profile content component 1`] = `
             ]
           }
         >
-<<<<<<< HEAD
           <View
             style={
               Array [
@@ -6535,43 +4959,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
-=======
-                    "height": undefined,
-                    "width": undefined,
-=======
                     "height": 1,
                     "width": 750,
->>>>>>> 5e388c3... feat: map props depending on platform
                   },
                   undefined,
                 ]
               }
             />
->>>>>>> 67b993e... chore: create state conversion for web
           </View>
           <View
             style={
@@ -6676,27 +5082,6 @@ exports[`renders profile content component 1`] = `
               </Text>
             </View>
           </View>
-=======
-          <Image
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
->>>>>>> 1d7173d... fix: fixes image size with ssr
         </View>
       </View>
     </View>
@@ -6774,43 +5159,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
-=======
-                    "height": undefined,
-                    "width": undefined,
-=======
                     "height": 1,
                     "width": 750,
->>>>>>> 5e388c3... feat: map props depending on platform
                   },
                   undefined,
                 ]
               }
             />
->>>>>>> 67b993e... chore: create state conversion for web
           </View>
           <View
             style={
@@ -6978,54 +5345,12 @@ exports[`renders profile content component 1`] = `
             ]
           }
         >
-<<<<<<< HEAD
           <View
             style={
               Array [
                 Object {
                   "paddingBottom": 15,
                 },
-=======
-          <Image
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              null,
-            ]
-          }
-        >
-          <View
-            style={Object {}}
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
->>>>>>> 1d7173d... fix: fixes image size with ssr
                 Object {
                   "flexGrow": 1,
                   "flexShrink": 1,
@@ -7034,43 +5359,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
-=======
-                    "height": undefined,
-                    "width": undefined,
-=======
                     "height": 1,
                     "width": 750,
->>>>>>> 5e388c3... feat: map props depending on platform
                   },
                   undefined,
                 ]
               }
             />
->>>>>>> 67b993e... chore: create state conversion for web
           </View>
           <View
             style={
@@ -7238,7 +5545,6 @@ exports[`renders profile content component 1`] = `
             ]
           }
         >
-<<<<<<< HEAD
           <View
             style={
               Array [
@@ -7253,77 +5559,26 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
+                }
+              }
+              style={
+                Array [
                   Object {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
-=======
-                    "height": undefined,
-                    "width": undefined,
-=======
                     "height": 1,
                     "width": 750,
->>>>>>> 5e388c3... feat: map props depending on platform
                   },
                   undefined,
                 ]
               }
             />
->>>>>>> 67b993e... chore: create state conversion for web
           </View>
-=======
-          <Image
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              null,
-            ]
-          }
-        >
->>>>>>> 1d7173d... fix: fixes image size with ssr
           <View
             style={
               Array [
@@ -7478,7 +5733,6 @@ exports[`renders profile content component 1`] = `
             ]
           }
         >
-<<<<<<< HEAD
           <View
             style={
               Array [
@@ -7493,77 +5747,26 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
-=======
-                    "height": undefined,
-                    "width": undefined,
-=======
                     "height": 1,
                     "width": 750,
->>>>>>> 5e388c3... feat: map props depending on platform
                   },
                   undefined,
                 ]
               }
             />
->>>>>>> 67b993e... chore: create state conversion for web
           </View>
-=======
-          <Image
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              null,
-            ]
-          }
-        >
->>>>>>> 1d7173d... fix: fixes image size with ssr
           <View
             style={
               Array [
@@ -7707,7 +5910,6 @@ exports[`renders profile content component 1`] = `
           "opacity": 1,
         }
       }
-<<<<<<< HEAD
       testID={undefined}
       tvParallaxProperties={undefined}
     >
@@ -7719,55 +5921,6 @@ exports[`renders profile content component 1`] = `
           }
         }
       >
-=======
-    >
-      <View
-        onLayout={[Function]}
-        style={
-          Array [
-            Object {
-              "flexDirection": "column",
-            },
-            null,
-            undefined,
-          ]
-        }
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "paddingBottom": 15,
-              },
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              null,
-            ]
-          }
-        >
-          <Image
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
->>>>>>> 67b993e... chore: create state conversion for web
         <View
           onLayout={[Function]}
           style={
@@ -7794,28 +5947,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -7971,7 +6121,6 @@ exports[`renders profile content component 1`] = `
             ]
           }
         >
-<<<<<<< HEAD
           <View
             style={
               Array [
@@ -7986,38 +6135,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                }
+              }
+              style={
+                Array [
                   Object {
-<<<<<<< HEAD
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
-=======
-                    "height": undefined,
-                    "width": undefined,
+                    "height": 1,
+                    "width": 750,
                   },
                   undefined,
                 ]
               }
             />
->>>>>>> 67b993e... chore: create state conversion for web
           </View>
           <View
             style={
@@ -8110,27 +6246,6 @@ exports[`renders profile content component 1`] = `
               </Text>
             </View>
           </View>
-=======
-          <Image
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
->>>>>>> 1d7173d... fix: fixes image size with ssr
         </View>
       </View>
     </View>
@@ -8208,43 +6323,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                }
+              }
+              style={
+                Array [
                   Object {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
-=======
-                    "height": undefined,
-                    "width": undefined,
-=======
                     "height": 1,
                     "width": 750,
->>>>>>> 5e388c3... feat: map props depending on platform
                   },
                   undefined,
                 ]
               }
             />
->>>>>>> 67b993e... chore: create state conversion for web
           </View>
           <View
             style={
@@ -8400,7 +6497,6 @@ exports[`renders profile content component 1`] = `
             ]
           }
         >
-<<<<<<< HEAD
           <View
             style={
               Array [
@@ -8415,77 +6511,26 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                }
+              }
+              style={
+                Array [
                   Object {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
-=======
-                    "height": undefined,
-                    "width": undefined,
-=======
                     "height": 1,
                     "width": 750,
->>>>>>> 5e388c3... feat: map props depending on platform
                   },
                   undefined,
                 ]
               }
             />
->>>>>>> 67b993e... chore: create state conversion for web
           </View>
-=======
-          <Image
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              null,
-            ]
-          }
-        >
->>>>>>> 1d7173d... fix: fixes image size with ssr
           <View
             style={
               Array [
@@ -8626,32 +6671,8 @@ exports[`renders profile content component 1`] = `
             "paddingLeft": 10,
             "paddingRight": 10,
           }
-<<<<<<< HEAD
         }
       >
-=======
-        >
-          <Image
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
->>>>>>> 67b993e... chore: create state conversion for web
         <View
           onLayout={[Function]}
           style={
@@ -8678,28 +6699,25 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                }
+              }
+              style={
+                Array [
                   Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+                    "height": 1,
+                    "width": 750,
+                  },
+                  undefined,
+                ]
+              }
+            />
           </View>
           <View
             style={
@@ -8855,16 +6873,27 @@ exports[`renders profile content component 1`] = `
             ]
           }
         >
-<<<<<<< HEAD
           <View
             style={
               Array [
                 Object {
-<<<<<<< HEAD
                   "paddingBottom": 15,
                 },
-=======
-                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C520%2C0%2C0",
+                Object {
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <Image
+              onError={[Function]}
+              onLayout={[Function]}
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
                 }
               }
               style={
@@ -8875,78 +6904,8 @@ exports[`renders profile content component 1`] = `
                   },
                   undefined,
                 ]
-=======
-          <Image
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
->>>>>>> 1d7173d... fix: fixes image size with ssr
               }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              null,
-            ]
-          }
-        >
-          <View
-            style={Object {}}
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
->>>>>>> 67b993e... chore: create state conversion for web
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
-            <View
-              onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
-                  Object {
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+            />
           </View>
           <View
             style={
@@ -9102,15 +7061,26 @@ exports[`renders profile content component 1`] = `
             ]
           }
         >
-<<<<<<< HEAD
           <View
             style={
               Array [
                 Object {
-<<<<<<< HEAD
                   "paddingBottom": 15,
                 },
-=======
+                Object {
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <Image
+              onError={[Function]}
+              onLayout={[Function]}
+              onLoad={[Function]}
+              source={
+                Object {
                   "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C520%2C0%2C0",
                 }
               }
@@ -9122,88 +7092,8 @@ exports[`renders profile content component 1`] = `
                   },
                   undefined,
                 ]
-=======
-          <Image
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C520%2C0%2C0",
->>>>>>> 1d7173d... fix: fixes image size with ssr
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              null,
-            ]
-          }
-        >
-          <View
-            style={Object {}}
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
->>>>>>> 5e388c3... feat: map props depending on platform
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
-            <View
-              onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
-                  Object {
-<<<<<<< HEAD
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C520%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
-=======
-                    "height": undefined,
-                    "width": undefined,
-                  },
-                  undefined,
-                ]
               }
             />
->>>>>>> 67b993e... chore: create state conversion for web
           </View>
           <View
             style={
@@ -9359,15 +7249,26 @@ exports[`renders profile content component 1`] = `
             ]
           }
         >
-<<<<<<< HEAD
           <View
             style={
               Array [
                 Object {
-<<<<<<< HEAD
                   "paddingBottom": 15,
                 },
-=======
+                Object {
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <Image
+              onError={[Function]}
+              onLayout={[Function]}
+              onLoad={[Function]}
+              source={
+                Object {
                   "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0a36e5e3aa3fa281979258f23ec7d9bb0b1316b7.jpg?crop=780%2C520%2C0%2C0",
                 }
               }
@@ -9379,88 +7280,8 @@ exports[`renders profile content component 1`] = `
                   },
                   undefined,
                 ]
-=======
-          <Image
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0a36e5e3aa3fa281979258f23ec7d9bb0b1316b7.jpg?crop=780%2C520%2C0%2C0",
->>>>>>> 1d7173d... fix: fixes image size with ssr
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              null,
-            ]
-          }
-        >
-          <View
-            style={Object {}}
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
->>>>>>> 5e388c3... feat: map props depending on platform
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
-            <View
-              onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
-                  Object {
-<<<<<<< HEAD
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0a36e5e3aa3fa281979258f23ec7d9bb0b1316b7.jpg?crop=780%2C520%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
-=======
-                    "height": undefined,
-                    "width": undefined,
-                  },
-                  undefined,
-                ]
               }
             />
->>>>>>> 67b993e... chore: create state conversion for web
           </View>
           <View
             style={
@@ -9623,7 +7444,6 @@ exports[`renders profile content component 1`] = `
             ]
           }
         >
-<<<<<<< HEAD
           <View
             style={
               Array [
@@ -9638,30 +7458,18 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/e1099c348c8c727584842b53d5e708a0377770a2.jpg?crop=620%2C413%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-<<<<<<< HEAD
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/e1099c348c8c727584842b53d5e708a0377770a2.jpg?crop=620%2C413%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
-=======
                     "height": 1,
                     "width": 750,
                   },
@@ -9669,41 +7477,7 @@ exports[`renders profile content component 1`] = `
                 ]
               }
             />
->>>>>>> 5e388c3... feat: map props depending on platform
           </View>
-=======
-          <Image
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/e1099c348c8c727584842b53d5e708a0377770a2.jpg?crop=620%2C413%2C0%2C0",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              null,
-            ]
-          }
-        >
->>>>>>> 1d7173d... fix: fixes image size with ssr
           <View
             style={
               Array [
@@ -9740,7 +7514,6 @@ exports[`renders profile content component 1`] = `
                 ellipsizeMode="tail"
                 style={
                   Object {
-<<<<<<< HEAD
                     "color": "#333333",
                     "fontFamily": "TimesModern-Bold",
                     "fontSize": 22,
@@ -9795,15 +7568,6 @@ exports[`renders profile content component 1`] = `
                 , The Times
               </Text>
             </View>
-=======
-                    "height": undefined,
-                    "width": undefined,
-                  },
-                  undefined,
-                ]
-              }
-            />
->>>>>>> 67b993e... chore: create state conversion for web
           </View>
         </View>
       </View>
@@ -9868,7 +7632,6 @@ exports[`renders profile content component 1`] = `
             ]
           }
         >
-<<<<<<< HEAD
           <View
             style={
               Array [
@@ -9883,30 +7646,18 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/eee1c7f320c3690dce7ee275ceb77e915c61c4f3.jpg?crop=780%2C520%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-<<<<<<< HEAD
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/eee1c7f320c3690dce7ee275ceb77e915c61c4f3.jpg?crop=780%2C520%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
-=======
                     "height": 1,
                     "width": 750,
                   },
@@ -9914,41 +7665,7 @@ exports[`renders profile content component 1`] = `
                 ]
               }
             />
->>>>>>> 5e388c3... feat: map props depending on platform
           </View>
-=======
-          <Image
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/eee1c7f320c3690dce7ee275ceb77e915c61c4f3.jpg?crop=780%2C520%2C0%2C0",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              null,
-            ]
-          }
-        >
->>>>>>> 1d7173d... fix: fixes image size with ssr
           <View
             style={
               Array [
@@ -10110,7 +7827,6 @@ exports[`renders profile content component 1`] = `
             ]
           }
         >
-<<<<<<< HEAD
           <View
             style={
               Array [
@@ -10125,77 +7841,26 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
-=======
-                    "height": undefined,
-                    "width": undefined,
-=======
                     "height": 1,
                     "width": 750,
->>>>>>> 5e388c3... feat: map props depending on platform
                   },
                   undefined,
                 ]
               }
             />
->>>>>>> 67b993e... chore: create state conversion for web
           </View>
-=======
-          <Image
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              null,
-            ]
-          }
-        >
->>>>>>> 1d7173d... fix: fixes image size with ssr
           <View
             style={
               Array [
@@ -10363,7 +8028,6 @@ exports[`renders profile content component 1`] = `
             ]
           }
         >
-<<<<<<< HEAD
           <View
             style={
               Array [
@@ -10378,77 +8042,26 @@ exports[`renders profile content component 1`] = `
               ]
             }
           >
-            <View
+            <Image
+              onError={[Function]}
               onLayout={[Function]}
-            >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0d5fa06d6b10cfbbc2dade5f0d7b0271fccd994b.jpg?crop=780%2C520%2C0%2C0",
+                }
+              }
+              style={
+                Array [
                   Object {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0d5fa06d6b10cfbbc2dade5f0d7b0271fccd994b.jpg?crop=780%2C520%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
-=======
-                    "height": undefined,
-                    "width": undefined,
-=======
                     "height": 1,
                     "width": 750,
->>>>>>> 5e388c3... feat: map props depending on platform
                   },
                   undefined,
                 ]
               }
             />
->>>>>>> 67b993e... chore: create state conversion for web
           </View>
-=======
-          <Image
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/0d5fa06d6b10cfbbc2dade5f0d7b0271fccd994b.jpg?crop=780%2C520%2C0%2C0",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              null,
-            ]
-          }
-        >
->>>>>>> 1d7173d... fix: fixes image size with ssr
           <View
             style={
               Array [

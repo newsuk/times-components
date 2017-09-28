@@ -42,28 +42,25 @@ exports[`Article test on ios renders article no flags 1`] = `
         }
       }
     >
-      <View
+      <Image
+        onError={[Function]}
         onLayout={[Function]}
-      >
-        <Image
-          onError={[Function]}
-          onLoad={[Function]}
-          source={
+        onLoad={[Function]}
+        source={
+          Object {
+            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+          }
+        }
+        style={
+          Array [
             Object {
-              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
-            }
-          }
-          style={
-            Array [
-              Object {
-                "height": 1,
-                "width": 750,
-              },
-              undefined,
-            ]
-          }
-        />
-      </View>
+              "height": 1,
+              "width": 750,
+            },
+            undefined,
+          ]
+        }
+      />
     </View>
     <View
       style={
@@ -708,28 +705,25 @@ exports[`Article test on ios renders article no label 1`] = `
         }
       }
     >
-      <View
+      <Image
+        onError={[Function]}
         onLayout={[Function]}
-      >
-        <Image
-          onError={[Function]}
-          onLoad={[Function]}
-          source={
+        onLoad={[Function]}
+        source={
+          Object {
+            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+          }
+        }
+        style={
+          Array [
             Object {
-              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
-            }
-          }
-          style={
-            Array [
-              Object {
-                "height": 1,
-                "width": 750,
-              },
-              undefined,
-            ]
-          }
-        />
-      </View>
+              "height": 1,
+              "width": 750,
+            },
+            undefined,
+          ]
+        }
+      />
     </View>
     <View
       style={
@@ -1479,28 +1473,25 @@ exports[`Article test on ios renders article no label no flags 1`] = `
         }
       }
     >
-      <View
+      <Image
+        onError={[Function]}
         onLayout={[Function]}
-      >
-        <Image
-          onError={[Function]}
-          onLoad={[Function]}
-          source={
+        onLoad={[Function]}
+        source={
+          Object {
+            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+          }
+        }
+        style={
+          Array [
             Object {
-              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
-            }
-          }
-          style={
-            Array [
-              Object {
-                "height": 1,
-                "width": 750,
-              },
-              undefined,
-            ]
-          }
-        />
-      </View>
+              "height": 1,
+              "width": 750,
+            },
+            undefined,
+          ]
+        }
+      />
     </View>
     <View
       style={
@@ -2115,28 +2106,25 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
         }
       }
     >
-      <View
+      <Image
+        onError={[Function]}
         onLayout={[Function]}
-      >
-        <Image
-          onError={[Function]}
-          onLoad={[Function]}
-          source={
+        onLoad={[Function]}
+        source={
+          Object {
+            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+          }
+        }
+        style={
+          Array [
             Object {
-              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
-            }
-          }
-          style={
-            Array [
-              Object {
-                "height": 1,
-                "width": 750,
-              },
-              undefined,
-            ]
-          }
-        />
-      </View>
+              "height": 1,
+              "width": 750,
+            },
+            undefined,
+          ]
+        }
+      />
     </View>
     <View
       style={
@@ -2733,28 +2721,25 @@ exports[`Article test on ios renders article no standfirst 1`] = `
         }
       }
     >
-      <View
+      <Image
+        onError={[Function]}
         onLayout={[Function]}
-      >
-        <Image
-          onError={[Function]}
-          onLoad={[Function]}
-          source={
+        onLoad={[Function]}
+        source={
+          Object {
+            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+          }
+        }
+        style={
+          Array [
             Object {
-              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
-            }
-          }
-          style={
-            Array [
-              Object {
-                "height": 1,
-                "width": 750,
-              },
-              undefined,
-            ]
-          }
-        />
-      </View>
+              "height": 1,
+              "width": 750,
+            },
+            undefined,
+          ]
+        }
+      />
     </View>
     <View
       style={
@@ -3516,28 +3501,25 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
         }
       }
     >
-      <View
+      <Image
+        onError={[Function]}
         onLayout={[Function]}
-      >
-        <Image
-          onError={[Function]}
-          onLoad={[Function]}
-          source={
+        onLoad={[Function]}
+        source={
+          Object {
+            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+          }
+        }
+        style={
+          Array [
             Object {
-              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
-            }
-          }
-          style={
-            Array [
-              Object {
-                "height": 1,
-                "width": 750,
-              },
-              undefined,
-            ]
-          }
-        />
-      </View>
+              "height": 1,
+              "width": 750,
+            },
+            undefined,
+          ]
+        }
+      />
     </View>
     <View
       style={
@@ -4164,28 +4146,25 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
         }
       }
     >
-      <View
+      <Image
+        onError={[Function]}
         onLayout={[Function]}
-      >
-        <Image
-          onError={[Function]}
-          onLoad={[Function]}
-          source={
+        onLoad={[Function]}
+        source={
+          Object {
+            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+          }
+        }
+        style={
+          Array [
             Object {
-              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
-            }
-          }
-          style={
-            Array [
-              Object {
-                "height": 1,
-                "width": 750,
-              },
-              undefined,
-            ]
-          }
-        />
-      </View>
+              "height": 1,
+              "width": 750,
+            },
+            undefined,
+          ]
+        }
+      />
     </View>
     <View
       style={
@@ -4917,28 +4896,25 @@ exports[`Article test on ios renders full article 1`] = `
         }
       }
     >
-      <View
+      <Image
+        onError={[Function]}
         onLayout={[Function]}
-      >
-        <Image
-          onError={[Function]}
-          onLoad={[Function]}
-          source={
+        onLoad={[Function]}
+        source={
+          Object {
+            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+          }
+        }
+        style={
+          Array [
             Object {
-              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
-            }
-          }
-          style={
-            Array [
-              Object {
-                "height": 1,
-                "width": 750,
-              },
-              undefined,
-            ]
-          }
-        />
-      </View>
+              "height": 1,
+              "width": 750,
+            },
+            undefined,
+          ]
+        }
+      />
     </View>
     <View
       style={
@@ -5381,28 +5357,25 @@ exports[`Article test on ios renders full article 1`] = `
             <View
               style={undefined}
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=1600%2C900%2C-0%2C-0",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=1600%2C900%2C-0%2C-0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
+                      "height": 1,
+                      "width": 750,
+                    },
+                    undefined,
+                  ]
+                }
+              />
             </View>
           </View>
         </View>
@@ -5554,28 +5527,25 @@ exports[`Article test on ios renders full article 1`] = `
             <View
               style={undefined}
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=1200%2C800%2C-0%2C-0",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=1200%2C800%2C-0%2C-0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
+                      "height": 1,
+                      "width": 750,
+                    },
+                    undefined,
+                  ]
+                }
+              />
             </View>
           </View>
         </View>
@@ -5735,28 +5705,25 @@ exports[`Article test on ios renders full article 1`] = `
             <View
               style={undefined}
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=800%2C1200%2C-0%2C-0",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=800%2C1200%2C-0%2C-0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
+                      "height": 1,
+                      "width": 750,
+                    },
+                    undefined,
+                  ]
+                }
+              />
             </View>
           </View>
         </View>
@@ -5886,28 +5853,25 @@ exports[`Article test on ios renders full article 1`] = `
             <View
               style={undefined}
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=600%2C400%2C-0%2C-0",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=600%2C400%2C-0%2C-0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
+                      "height": 1,
+                      "width": 750,
+                    },
+                    undefined,
+                  ]
+                }
+              />
             </View>
           </View>
         </View>
