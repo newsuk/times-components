@@ -61,15 +61,12 @@
     "@times-components/image": "1.4.1",
     "@times-components/markup": "0.7.4",
     "prop-types": "15.5.10",
-    "react": "15.4.2",
-    "react-dom": "15.4.2",
-    "react-native": "0.42.3",
     "react-native-web": "0.0.119"
   },
   "peerDependencies": {
-    "react": "15.4.x",
-    "react-dom": "15.4.x",
-    "react-native": "0.42.x"
+    "react": ">=15",
+    "react-dom": ">=15",
+    "react-native": ">=0.42"
   },
   "publishConfig": {
     "access": "public"
