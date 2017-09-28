@@ -15,14 +15,22 @@ const styles = StyleSheet.create({
 const AuthorProfile = props => (
   <View>
     <AuthorProfileHeader {...props} />
-    {props.articles.list.map((item, key) => {
+    {props.articles.list.map((article, key) => {
+      const { id, url } = article;
       const separatorComponent =
         key > 0 ? <AuthorProfileItemSeparator /> : null;
 
       return (
+<<<<<<< HEAD
         <View   testID={`articleList-${key}`} key={item.id} style={styles.container}>
+=======
+        <View key={id} style={styles.container}>
+>>>>>>> master
           {separatorComponent}
-          <AuthorProfileItem {...item} />
+          <AuthorProfileItem
+            {...article}
+            onPress={e => props.onArticlePress(e, { id, url })}
+          />
         </View>
       );
     })}
@@ -30,6 +38,7 @@ const AuthorProfile = props => (
 );
 
 AuthorProfile.propTypes = Object.assign(
+  { onArticlePress: PropTypes.func.isRequired },
   {
     articles: PropTypes.shape({
       list: PropTypes.arrayOf(PropTypes.shape(AuthorProfileItem.propTypes))

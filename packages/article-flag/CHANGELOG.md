@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.2"></a>
+## [0.6.2](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.6.1...@times-components/article-flag@0.6.2) (2017-09-26)
+
+
+### Bug Fixes
+
+* add missing dependency for ads and article flags ([#247](https://github.com/newsuk/times-components/issues/247)) ([2238ccb](https://github.com/newsuk/times-components/commit/2238ccb))
+
+
+
+
+<a name="0.6.1"></a>
+## [0.6.1](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.6.0...@times-components/article-flag@0.6.1) (2017-09-25)
+
+
+### Bug Fixes
+
+* package.json main ([ed150b8](https://github.com/newsuk/times-components/commit/ed150b8))
+
+
+
+
 <a name="0.6.0"></a>
 # [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.4.2...@times-components/article-flag@0.6.0) (2017-09-22)
 

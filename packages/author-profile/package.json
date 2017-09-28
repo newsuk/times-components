@@ -1,8 +1,8 @@
 {
   "name": "@times-components/author-profile",
-  "version": "0.9.3",
+  "version": "0.13.0",
   "description": "Author info along with articles they have written",
-  "main": "author-profile.js",
+  "main": "author-profile",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
@@ -67,9 +67,10 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/author-head": "0.6.3",
-    "@times-components/card": "0.6.2",
-    "@times-components/pagination": "0.6.0",
+    "@times-components/author-head": "0.6.7",
+    "@times-components/card": "0.6.4",
+    "@times-components/link": "0.8.0",
+    "@times-components/pagination": "0.6.3",
     "jest-cli": "20.0.4",
     "lodash.get": "4.4.2",
     "lodash.merge": "4.6.0",

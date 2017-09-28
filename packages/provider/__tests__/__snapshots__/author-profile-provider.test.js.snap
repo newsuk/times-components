@@ -223,141 +223,164 @@ exports[`renders data 1`] = `
     </View>
     <View>
       <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
+            "opacity": 1,
           }
         }
+        testID={undefined}
+        tvParallaxProperties={undefined}
       >
         <View
-          onLayout={[Function]}
           style={
-            Array [
-              Object {
-                "flexDirection": "column",
-              },
-              null,
-              undefined,
-            ]
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            }
           }
         >
           <View
+            onLayout={[Function]}
             style={
               Array [
                 Object {
-                  "paddingBottom": 15,
-                },
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
+                  "flexDirection": "column",
                 },
                 null,
+                undefined,
               ]
             }
           >
             <View
-              onLayout={[Function]}
+              style={
+                Array [
+                  Object {
+                    "paddingBottom": 15,
+                  },
+                  Object {
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                  null,
+                ]
+              }
             >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
-                  Object {
-                    "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
-            <View
-              style={Object {}}
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#333333",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 12,
-                    "letterSpacing": 1,
-                    "marginBottom": 2,
-                  }
-                }
-              />
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#333333",
-                    "fontFamily": "TimesModern-Bold",
-                    "fontSize": 22,
-                    "fontWeight": "400",
-                    "lineHeight": 22,
-                    "marginBottom": 8,
-                  }
-                }
+              <View
+                onLayout={[Function]}
               >
-                British trio stopped on the way to join Isis
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "flexWrap": "wrap",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 14,
-                    "lineHeight": 20,
-                    "marginBottom": 10,
+                <Image
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                    }
                   }
-                }
-              />
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Array [
+                  style={
+                    Array [
+                      Object {
+                        "height": 1,
+                        "width": 750,
+                      },
+                      undefined,
+                    ]
+                  }
+                />
+              </View>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                  null,
+                ]
+              }
+            >
+              <View
+                style={Object {}}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 12,
+                      "letterSpacing": 1,
+                      "marginBottom": 2,
+                    }
+                  }
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "TimesModern-Bold",
+                      "fontSize": 22,
+                      "fontWeight": "400",
+                      "lineHeight": 22,
+                      "marginBottom": 8,
+                    }
+                  }
+                >
+                  British trio stopped on the way to join Isis
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
                     Object {
                       "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 15,
-                    },
-                    Object {},
-                  ]
-                }
-              >
-                Monday March 23 2015
-                , The Times
-              </Text>
+                      "flexWrap": "wrap",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 14,
+                      "lineHeight": 20,
+                      "marginBottom": 10,
+                    }
+                  }
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  Monday March 23 2015
+                  , The Times
+                </Text>
+              </View>
             </View>
           </View>
         </View>
@@ -590,141 +613,164 @@ exports[`renders data from graphql 1`] = `
     </View>
     <View>
       <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
+            "opacity": 1,
           }
         }
+        testID={undefined}
+        tvParallaxProperties={undefined}
       >
         <View
-          onLayout={[Function]}
           style={
-            Array [
-              Object {
-                "flexDirection": "column",
-              },
-              null,
-              undefined,
-            ]
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            }
           }
         >
           <View
+            onLayout={[Function]}
             style={
               Array [
                 Object {
-                  "paddingBottom": 15,
-                },
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
+                  "flexDirection": "column",
                 },
                 null,
+                undefined,
               ]
             }
           >
             <View
-              onLayout={[Function]}
+              style={
+                Array [
+                  Object {
+                    "paddingBottom": 15,
+                  },
+                  Object {
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                  null,
+                ]
+              }
             >
-              <Image
-                onError={[Function]}
-                onLoad={[Function]}
-                source={
-                  Object {
-                    "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "height": 1,
-                      "width": 750,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                null,
-              ]
-            }
-          >
-            <View
-              style={Object {}}
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#333333",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 12,
-                    "letterSpacing": 1,
-                    "marginBottom": 2,
-                  }
-                }
-              />
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#333333",
-                    "fontFamily": "TimesModern-Bold",
-                    "fontSize": 22,
-                    "fontWeight": "400",
-                    "lineHeight": 22,
-                    "marginBottom": 8,
-                  }
-                }
+              <View
+                onLayout={[Function]}
               >
-                British trio stopped on the way to join Isis
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "flexWrap": "wrap",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 14,
-                    "lineHeight": 20,
-                    "marginBottom": 10,
+                <Image
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                    }
                   }
-                }
-              />
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Array [
+                  style={
+                    Array [
+                      Object {
+                        "height": 1,
+                        "width": 750,
+                      },
+                      undefined,
+                    ]
+                  }
+                />
+              </View>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                  null,
+                ]
+              }
+            >
+              <View
+                style={Object {}}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 12,
+                      "letterSpacing": 1,
+                      "marginBottom": 2,
+                    }
+                  }
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "TimesModern-Bold",
+                      "fontSize": 22,
+                      "fontWeight": "400",
+                      "lineHeight": 22,
+                      "marginBottom": 8,
+                    }
+                  }
+                >
+                  British trio stopped on the way to join Isis
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
                     Object {
                       "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 15,
-                    },
-                    Object {},
-                  ]
-                }
-              >
-                Monday March 23 2015
-                , The Times
-              </Text>
+                      "flexWrap": "wrap",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 14,
+                      "lineHeight": 20,
+                      "marginBottom": 10,
+                    }
+                  }
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  Monday March 23 2015
+                  , The Times
+                </Text>
+              </View>
             </View>
           </View>
         </View>
