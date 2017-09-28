@@ -8,9 +8,7 @@ beforeAll(async() => {
   if (process.env.IOS) {
     await fructose.hooks.mobile.setup();
     await detox.init(config.detox);
-  }
-
-  if (process.env.WEB) {
+  } else if (process.env.WEB) {
     const portToStartOn = 3000;
     const timeoutToCheckForWebStarted = 60000;
     await fructose.hooks.web.setup(portToStartOn, timeoutToCheckForWebStarted);
