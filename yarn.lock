@@ -4576,11 +4576,17 @@ graphql-tag@2.4.2, graphql-tag@^2.0.0, graphql-tag@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.4.2.tgz#6a63297d8522d03a2b72d26f1b239aab343840cd"
 
-graphql@0.11.3, "graphql@0.7.1 - 1.0.0":
+graphql@0.11.3:
   version "0.11.3"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.11.3.tgz#9934e2df28f17d397a85f83cb39d1d179bffef47"
   dependencies:
     iterall "^1.1.0"
+
+"graphql@0.7.1 - 1.0.0":
+  version "0.11.4"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.11.4.tgz#03e0f86f35a252a5cab79d921a1aaabc7eec621c"
+  dependencies:
+    iterall "1.1.2"
 
 graphql@^0.10.0, graphql@^0.10.1, graphql@^0.10.3:
   version "0.10.5"
@@ -5329,9 +5335,9 @@ istanbul-reports@^1.1.2:
   dependencies:
     handlebars "^4.0.3"
 
-iterall@^1.1.0:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/iterall/-/iterall-1.1.1.tgz#f7f0af11e9a04ec6426260f5019d9fcca4d50214"
+iterall@1.1.2, iterall@^1.1.0:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/iterall/-/iterall-1.1.2.tgz#413332b3cdb46f8f5ede57d6cd8e3ca8a9df8816"
 
 jest-changed-files@^20.0.3:
   version "20.0.3"
