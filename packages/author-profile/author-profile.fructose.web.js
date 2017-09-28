@@ -10,32 +10,28 @@ const setup = () => {
   chromeless = new Chromeless();
 };
 
-
 const preventDefaultedAction = decorateAction([
-    ([e, ...args]) => {
-      e.preventDefault();
-      return ["[SyntheticEvent (storybook prevented default)]", ...args];
-    }
-  ]);
-
+  ([e, ...args]) => {
+    e.preventDefault();
+    return ["[SyntheticEvent (storybook prevented default)]", ...args];
+  }
+]);
 
 const examples = authorProfileGenerator(11);
 const props = {
-    data: Object.assign({}, examples, {
-      count: examples.articles.count,
-      pageSize: 10,
-      page: 1
-    }),
-    isLoading: false,
-    onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress")
-  };
+  data: Object.assign({}, examples, {
+    count: examples.articles.count,
+    pageSize: 10,
+    page: 1
+  }),
+  isLoading: false,
+  onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress")
+};
 
-
-  props.data.articles.list.forEach(article => {
-    // eslint-disable-next-line
-    article.publishedTime = new Date(article.publishedTime);
-  });
-
+props.data.articles.list.forEach(article => {
+  // eslint-disable-next-line
+  article.publishedTime = new Date(article.publishedTime);
+});
 
 withComponent(
   <AuthorProfile fructoseID="authorProfile" {...props} />,
