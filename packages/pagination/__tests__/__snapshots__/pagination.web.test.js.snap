@@ -46,7 +46,7 @@ ShallowWrapper {
                 style={66}
                 url="./2"
             >
-                Next page &gt;
+                Next &gt;
             </TextLink>
         </View>
     </View>
@@ -90,7 +90,7 @@ ShallowWrapper {
                         style={66}
                         url="./2"
                   >
-                        Next page &gt;
+                        Next &gt;
                   </TextLink>
             </View>
       </View>
@@ -194,7 +194,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./2"
                               >
-                                        Next page &gt;
+                                        Next &gt;
                               </TextLink>
                     </View>
           </View>
@@ -238,7 +238,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./2"
                               >
-                                        Next page &gt;
+                                        Next &gt;
                               </TextLink>
                     </View>
           </View>
@@ -311,7 +311,7 @@ ShallowWrapper {
                 style={66}
                 url="./1"
             >
-                &lt; Previous page
+                &lt; Previous
             </TextLink>
         </View>
         <View>
@@ -320,7 +320,7 @@ ShallowWrapper {
                 style={66}
                 url="./3"
             >
-                Next page &gt;
+                Next &gt;
             </TextLink>
         </View>
     </View>
@@ -363,7 +363,7 @@ ShallowWrapper {
                         style={66}
                         url="./1"
                   >
-                        &lt; Previous page
+                        &lt; Previous
                   </TextLink>
             </View>
             <View>
@@ -372,7 +372,7 @@ ShallowWrapper {
                         style={66}
                         url="./3"
                   >
-                        Next page &gt;
+                        Next &gt;
                   </TextLink>
             </View>
       </View>
@@ -475,7 +475,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./1"
                               >
-                                        &lt; Previous page
+                                        &lt; Previous
                               </TextLink>
                     </View>
                     <View>
@@ -484,7 +484,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./3"
                               >
-                                        Next page &gt;
+                                        Next &gt;
                               </TextLink>
                     </View>
           </View>
@@ -527,7 +527,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./1"
                               >
-                                        &lt; Previous page
+                                        &lt; Previous
                               </TextLink>
                     </View>
                     <View>
@@ -536,7 +536,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./3"
                               >
-                                        Next page &gt;
+                                        Next &gt;
                               </TextLink>
                     </View>
           </View>
@@ -609,7 +609,7 @@ ShallowWrapper {
                 style={66}
                 url="./2"
             >
-                &lt; Previous page
+                &lt; Previous
             </TextLink>
         </View>
         <View />
@@ -653,7 +653,7 @@ ShallowWrapper {
                         style={66}
                         url="./2"
                   >
-                        &lt; Previous page
+                        &lt; Previous
                   </TextLink>
             </View>
             <View />
@@ -757,7 +757,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./2"
                               >
-                                        &lt; Previous page
+                                        &lt; Previous
                               </TextLink>
                     </View>
                     <View />
@@ -801,7 +801,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./2"
                               >
-                                        &lt; Previous page
+                                        &lt; Previous
                               </TextLink>
                     </View>
                     <View />
@@ -876,7 +876,7 @@ ShallowWrapper {
                 style={66}
                 url="./2"
             >
-                Next page &gt;
+                Next &gt;
             </TextLink>
         </View>
     </View>
@@ -920,7 +920,7 @@ ShallowWrapper {
                         style={66}
                         url="./2"
                   >
-                        Next page &gt;
+                        Next &gt;
                   </TextLink>
             </View>
       </View>
@@ -1024,7 +1024,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./2"
                               >
-                                        Next page &gt;
+                                        Next &gt;
                               </TextLink>
                     </View>
           </View>
@@ -1068,7 +1068,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./2"
                               >
-                                        Next page &gt;
+                                        Next &gt;
                               </TextLink>
                     </View>
           </View>
@@ -1123,7 +1123,7 @@ ShallowWrapper {
                 style={66}
                 url="./2"
             >
-                Next page &gt;
+                Next &gt;
             </TextLink>
         </View>
     </View>
@@ -1148,7 +1148,7 @@ ShallowWrapper {
                         style={66}
                         url="./2"
                   >
-                        Next page &gt;
+                        Next &gt;
                   </TextLink>
             </View>
       </View>
@@ -1233,7 +1233,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./2"
                               >
-                                        Next page &gt;
+                                        Next &gt;
                               </TextLink>
                     </View>
           </View>
@@ -1258,7 +1258,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./2"
                               >
-                                        Next page &gt;
+                                        Next &gt;
                               </TextLink>
                     </View>
           </View>

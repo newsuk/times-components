@@ -116,7 +116,7 @@ class Pagination extends React.Component {
           onPress={(...params) => onPrev(page - 1, ...params)}
           url={generatePageLink(page - 1)}
         >
-          {"< Previous page"}
+          {"< Previous"}
         </TextLink>
       ) : null;
 
@@ -127,7 +127,7 @@ class Pagination extends React.Component {
           onPress={(...params) => onNext(page + 1, ...params)}
           url={generatePageLink(page + 1)}
         >
-          {"Next page >"}
+          {"Next >"}
         </TextLink>
       ) : null;
 
