@@ -1006,7 +1006,7 @@ exports[`renders profile content 1`] = `
                     ]
                   }
                 >
-                  Next page &gt;
+                  Next &gt;
                 </Text>
               </View>
             </View>
@@ -4415,6 +4415,83 @@ exports[`renders profile content 1`] = `
         </View>
       </View>
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "stretch",
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "marginLeft": 10,
+            "marginRight": 10,
+            "marginTop": 10,
+            "maxWidth": 800,
+          }
+        }
+      >
+        <View
+          onLayout={[Function]}
+          style={
+            Object {
+              "alignItems": "stretch",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#dbdbdb",
+                  "borderTopWidth": 1,
+                },
+              ]
+            }
+          >
+            <View />
+            <View>
+              <Text
+                accessibilityRole="link"
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                href="?page=2"
+                onPress={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "textDecorationLine": "underline",
+                    },
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 14,
+                    },
+                  ]
+                }
+              >
+                Next &gt;
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
   </View>
 </RCTScrollView>
 `;
@@ -4690,7 +4767,7 @@ exports[`renders profile content component 1`] = `
                   ]
                 }
               >
-                Next page &gt;
+                Next &gt;
               </Text>
             </View>
           </View>
@@ -8225,6 +8302,83 @@ exports[`renders profile content component 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginLeft": 10,
+          "marginRight": 10,
+          "marginTop": 10,
+          "maxWidth": 800,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          Object {
+            "alignItems": "stretch",
+            "flexDirection": "column",
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 40,
+                "justifyContent": "space-between",
+              },
+              Object {
+                "borderBottomColor": "#dbdbdb",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+                "borderTopColor": "#dbdbdb",
+                "borderTopWidth": 1,
+              },
+            ]
+          }
+        >
+          <View />
+          <View>
+            <Text
+              accessibilityRole="link"
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              href="?page=2"
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "textDecorationLine": "underline",
+                  },
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  },
+                ]
+              }
+            >
+              Next &gt;
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
 </View>
 `;
 
@@ -8529,7 +8683,7 @@ exports[`renders profile header 1`] = `
                 ]
               }
             >
-              Next page &gt;
+              Next &gt;
             </Text>
           </View>
         </View>
