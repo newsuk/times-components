@@ -59,10 +59,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "hoist-non-react-statics": "2.3.1",
     "lodash.get": "4.4.2",
     "prop-types": "15.5.10",
-    "react-display-name": "0.2.3",
     "react-native-web": "0.0.119"
   },
   "peerDependencies": {

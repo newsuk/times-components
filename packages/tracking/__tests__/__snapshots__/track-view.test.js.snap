@@ -1,16 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`WithTrackView forwards props to wrapped component 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
->
-  bar
-</Text>
-`;
-
-exports[`WithTrackView renders when tracking context is missing 1`] = `
+exports[`TrackView renders when tracking context is missing 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
@@ -18,4 +8,16 @@ exports[`WithTrackView renders when tracking context is missing 1`] = `
 >
   foo
 </Text>
+`;
+
+exports[`TrackView withTrackView wraps component with view tracking 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {},
+      "component": "TestComponent",
+    },
+  ],
+]
 `;
