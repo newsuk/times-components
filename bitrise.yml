@@ -53,12 +53,12 @@ workflows:
 
             defaults write ~/Library/Preferences/com.apple.iphonesimulator SimulatorWindowLastScale-com.apple.CoreSimulator.SimDeviceType.iPhone-7 "0.55"
          
-            yarn test:fructose:ios
+            yarn test:ios
 
             brew tap caskroom/cask
             brew cask install google-chrome
-            
-            yarn test:fructose:web
+
+            yarn test:web
     - script@1.1.4:
         title: screenshot of desktop
         inputs:
