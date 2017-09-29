@@ -2,6 +2,7 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
+import { renderTree, renderTrees } from "../markup";
 
 const singleParagraph = require("../fixtures/single-paragraph.json");
 const multiParagraph = require("../fixtures/multi-paragraph.json");
@@ -16,12 +17,7 @@ const bio = require("../fixtures/bio.json");
 const script = require("../fixtures/script.json");
 const image = require("../fixtures/image.json");
 
-export default (
-  renderTree,
-  renderTrees,
-  TextComponent,
-  BlockComponent
-) => () => {
+export default (TextComponent, BlockComponent) => () => {
   it("renders a single paragraph", () => {
     const output = renderer.create(renderTree(singleParagraph)).toJSON();
 
