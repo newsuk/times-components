@@ -52,22 +52,22 @@
     "eslint-plugin-react": "7.1.0",
     "flow-bin": "0.42.0",
     "jest": "20.0.4",
-    "react": "15.4.2",
-    "react-dom": "15.4.2",
-    "react-native": "0.42.3",
-    "react-test-renderer": "15.4.2",
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "react-native": "0.48.4",
+    "react-test-renderer": "16.0.0",
     "webpack": "3.3.0"
   },
   "dependencies": {
     "@times-components/caption": "0.5.1",
     "@times-components/image": "1.4.1",
-    "prop-types": "15.5.10",
-    "react-native-web": "0.0.119"
+    "prop-types": "15.6.0",
+    "react-native-web": "0.1.0"
   },
   "peerDependencies": {
-    "react": ">=15",
-    "react-dom": ">=15",
-    "react-native": ">=0.42"
+    "react": ">=16",
+    "react-dom": ">=16",
+    "react-native": ">=0.48"
   },
   "publishConfig": {
     "access": "public"
