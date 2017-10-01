@@ -51,8 +51,10 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "prop-types": "15.6.0",
-    "react-native-web": "0.1.7"
+    "hoist-non-react-statics": "2.3.1",
+    "prop-types": "15.5.10",
+    "react-display-name": "0.2.3",
+    "react-native-web": "0.0.119"
   },
   "peerDependencies": {
     "react": ">=16",

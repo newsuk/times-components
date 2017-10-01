@@ -124,12 +124,6 @@ const ResponsiveStyles = {
 const AuthorHead = props => {
   const { name, title, twitter, bio, uri, onTwitterLinkPress } = props;
 
-  const imageComponent = uri ? (
-    <View style={styles.photoContainer}>
-      <Image uri={uri} style={styles.roundImage} aspectRatio={1 / 1} />
-    </View>
-  ) : null;
-
   return (
     <View style={styles.wrapper} pointerEvents="box-none">
       <View accessibilityRole="banner" style={styles.container}>
@@ -150,11 +144,9 @@ const AuthorHead = props => {
           <Image source={{ uri }} style={[styles.roundImage]} />
         </View>
       </View>
-      {imageComponent}
     </View>
   );
 };
-
 AuthorHead.defaultProps = {
   name: "",
   title: "",

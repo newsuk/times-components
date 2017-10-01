@@ -1,5 +1,7 @@
 import React from "react";
-import { View, Dimensions } from "react-native";
+import { View, Dimensions, Platform } from "react-native";
+import getDisplayName from "react-display-name";
+import hoistNonReactStatic from "hoist-non-react-statics";
 
 const Breakpoints = {
   LARGE: Symbol("large"),
@@ -7,9 +9,8 @@ const Breakpoints = {
   SMALL: Symbol("small")
 };
 
-const checkSize = (minWidth, maxWidth) => {
-  return w => w >= minWidth && (!maxWidth || w < maxWidth);
-};
+const checkSize = (minWidth, maxWidth) => w =>
+  w >= minWidth && (!maxWidth || w < maxWidth);
 
 const Sizes = {
   [Breakpoints.SMALL]: 0,
@@ -42,11 +43,10 @@ const resolveSize = (size, styles) => {
   return closestSize ? styles[closestSize] : null;
 };
 
-const StyleHOC = (WrappedComponent, Styles) => {
-  return class extends React.Component {
-    static propTypes = WrappedComponent.propTypes;
-    static defaultProps = WrappedComponent.defaultProps;
+export default (WrappedComponent, Styles) => {
+  const componentName = getDisplayName(WrappedComponent);
 
+  class WithResponsiveStyles extends React.Component {
     constructor(props) {
       super(props);
 
@@ -59,14 +59,6 @@ const StyleHOC = (WrappedComponent, Styles) => {
       this.handleResponsiveStyle = this.handleResponsiveStyle.bind(this);
     }
 
-    render() {
-      return (
-        <View onLayout={this.handleLayout}>
-          <WrappedComponent responsive={this.state.style} {...this.props} />
-        </View>
-      );
-    }
-
     handleLayout() {
       const width = Dimensions.get("window").width;
       const style = this.handleResponsiveStyle(width);
@@ -77,6 +69,7 @@ const StyleHOC = (WrappedComponent, Styles) => {
       });
     }
 
+    // eslint-disable-next-line class-methods-use-this
     handleResponsiveStyle(width) {
       const breakpointStyles = Object.getOwnPropertySymbols(SizeBoundaries)
         .filter(sz => SizeBoundaries[sz](width))
@@ -84,9 +77,30 @@ const StyleHOC = (WrappedComponent, Styles) => {
 
       return Object.assign({}, Styles.default, ...breakpointStyles);
     }
-  };
-};
 
-export default StyleHOC;
+    render() {
+      const { style, ...props } = this.props;
+
+      if (Platform.OS !== "web") {
+        return <WrappedComponent {...this.props} />;
+      }
+
+      const newStyle = Object.assign({}, style, this.state.style);
+
+      return (
+        <View onLayout={this.handleLayout}>
+          <WrappedComponent style={newStyle} {...props} />
+        </View>
+      );
+    }
+  }
+
+  WithResponsiveStyles.displayName = `WithResponsiveStyles(${componentName})`;
+  WithResponsiveStyles.propTypes = WrappedComponent.propTypes;
+  WithResponsiveStyles.defaultProps = WrappedComponent.defaultProps;
+  hoistNonReactStatic(WithResponsiveStyles, WrappedComponent);
+
+  return WithResponsiveStyles;
+};
 
 export { checkSize, Breakpoints, SizeBoundaries };
