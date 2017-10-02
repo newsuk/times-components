@@ -54,15 +54,15 @@ ArticleFlag.defaultProps = {
   color: "black"
 };
 
-const NewArticleFlag = () => <ArticleFlag title="new" color="#E34605" />;
+const NewArticleFlag = () => <ArticleFlag testID="flag-new" title="new" color="#E34605" />;
 const UpdatedArticleFlag = () => (
-  <ArticleFlag title="updated" color="#3C81BE" />
+  <ArticleFlag testID="flag-updated" title="updated" color="#3C81BE" />
 );
 const ExclusiveArticleFlag = () => (
-  <ArticleFlag title="exclusive" color="#C51D24" />
+  <ArticleFlag testID="flag-exclusive" title="exclusive" color="#C51D24" />
 );
 const SponsoredArticleFlag = () => (
-  <ArticleFlag title="sponsored" color="#4D4D4D" />
+  <ArticleFlag testID="flag-sponsored" title="sponsored" color="#4D4D4D" />
 );
 
 export default ArticleFlag;
