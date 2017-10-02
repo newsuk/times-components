@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.5"></a>
+## [0.8.5](https://github.com/newsuk/times-components/compare/@times-components/provider@0.8.4...@times-components/provider@0.8.5) (2017-10-02)
+
+
+### Bug Fixes
+
+* move files around; organization ([#262](https://github.com/newsuk/times-components/issues/262)) ([d68ebce](https://github.com/newsuk/times-components/commit/d68ebce))
+
+
+
+
 <a name="0.8.4"></a>
 ## [0.8.4](https://github.com/newsuk/times-components/compare/@times-components/provider@0.8.3...@times-components/provider@0.8.4) (2017-09-29)
 
