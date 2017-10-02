@@ -10,20 +10,6 @@ beforeEach(() => {
   resetMockGraphQLProps();
 });
 
-it("renders data", () => {
-  setMockGraphQLProps({
-    data: {
-      loading: false,
-      author: example
-    }
-  });
-
-  const tree = renderer
-    .create(<AuthorProfileProvider slug="fiona-hamilton" />)
-    .toJSON();
-  expect(tree).toMatchSnapshot();
-});
-
 it("renders loading state", () => {
   setMockGraphQLProps({
     data: {
