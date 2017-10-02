@@ -40,7 +40,7 @@ workflows:
 
             # debug log
             set -x
-
+            #iOS setup
             # install fbsimctl
             export CODE_SIGNING_REQUIRED=NO
             git clone https://github.com/facebook/FBSimulatorControl.git
@@ -53,14 +53,13 @@ workflows:
             brew tap wix/brew
             brew install applesimutils --HEAD
             # set device scale
-            defaults write ~/Library/Preferences/com.apple.iphonesimulator SimulatorWindowLastScale-com.apple.CoreSimulator.SimDeviceType.iPhone-7 "0.55"  
-            # iOS tests
-            yarn test:ios
-
-            # web tests
+            defaults write ~/Library/Preferences/com.apple.iphonesimulator SimulatorWindowLastScale-com.apple.CoreSimulator.SimDeviceType.iPhone-7 "0.55" 
+            #web setup
             brew tap caskroom/cask
             brew cask install google-chrome
-            yarn test:web
+            # tests
+            yarn functional-test:ios
+            yarn functional-test:web
     - script@1.1.4:
         title: screenshot of desktop
         inputs:
