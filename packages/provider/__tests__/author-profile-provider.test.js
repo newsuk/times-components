@@ -4,7 +4,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { resetMockGraphQLProps, setMockGraphQLProps } from "react-apollo";
 import { AuthorProfileProvider } from "../provider";
-import example from "../example.json";
+import example from "../provider-fixtures/author-profile.json";
 
 beforeEach(() => {
   resetMockGraphQLProps();
