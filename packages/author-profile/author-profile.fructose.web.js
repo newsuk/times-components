@@ -57,7 +57,7 @@ withComponent(
         );
         expect(result).toBe(true);
 
-        // await chromeless.end();
+        await chromeless.end();
       },
       30000
     );
