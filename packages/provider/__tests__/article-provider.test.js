@@ -4,7 +4,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { resetMockGraphQLProps, setMockGraphQLProps } from "react-apollo";
 import { ArticleProvider } from "../provider";
-import articleFixture from "../fixtures/article.json";
+import articleFixture from "../provider-fixtures/article.json";
 
 beforeEach(() => {
   resetMockGraphQLProps();
@@ -31,7 +31,9 @@ it("renders data from graphql", done => {
   };
 
   setMockGraphQLProps(data, (query, extras) => {
-    expect(extras.options.variables.id).toEqual("3107c018-cb60-11e4-81dd-064fe933cd41");
+    expect(extras.options.variables.id).toEqual(
+      "3107c018-cb60-11e4-81dd-064fe933cd41"
+    );
     return done();
   });
 

@@ -1,3 +1,4 @@
+/* eslint-env browser */
 import React from "react";
 import { Platform, Text } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
@@ -79,32 +80,27 @@ storiesOf("Provider", module).add("AuthorProfileProvider", () => (
   </ApolloProvider>
 ));
 
-storiesOf("Provider", module)
-  .add("ArticleProvider", () => {
-    if (Platform.OS === "web") {
-      return (
-        <div>
-          <a
-            href={`/iframe.html${window.top.location.search}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Click to render the ads
-          </a>
-          <ApolloProvider client={client}>
-            <ArticleProvider
-              id="3107c018-cb60-11e4-81dd-064fe933cd41"
-            />
-          </ApolloProvider>
-        </div>
-      );
-    }
-
+storiesOf("Provider", module).add("ArticleProvider", () => {
+  if (Platform.OS === "web") {
     return (
-      <ApolloProvider client={client}>
-        <ArticleProvider
-          id="3107c018-cb60-11e4-81dd-064fe933cd41"
-        />
-      </ApolloProvider>
+      <div>
+        <a
+          href={`/iframe.html${window.top.location.search}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Click to render the ads
+        </a>
+        <ApolloProvider client={client}>
+          <ArticleProvider id="3107c018-cb60-11e4-81dd-064fe933cd41" />
+        </ApolloProvider>
+      </div>
     );
-  });
+  }
+
+  return (
+    <ApolloProvider client={client}>
+      <ArticleProvider id="3107c018-cb60-11e4-81dd-064fe933cd41" />
+    </ApolloProvider>
+  );
+});

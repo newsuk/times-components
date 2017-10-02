@@ -43,16 +43,14 @@ const renderCredits = (style, credits) => {
       {credits.toUpperCase()}
     </Text>
   );
-}
+};
 const renderText = (style, text) => {
   if (!text || text === "") {
     return null;
   }
 
-  return (
-    <Text style={[defaultStyle.text, style.text]}>{text}</Text>
-  );
-}
+  return <Text style={[defaultStyle.text, style.text]}>{text}</Text>;
+};
 
 const Caption = ({ text, credits, style, children }) => (
   <View>

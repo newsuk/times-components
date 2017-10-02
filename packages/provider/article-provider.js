@@ -51,4 +51,6 @@ const transformResponse = response => {
   };
 };
 
-export default connectGraphql(query, propsToVariables, transformResponse)(Article);
+export default connectGraphql(query, propsToVariables, transformResponse)(
+  Article
+);
