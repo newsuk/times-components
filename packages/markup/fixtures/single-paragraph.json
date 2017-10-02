@@ -1,18 +1,13 @@
 {
-  "fixture": [
+  "name": "paragraph",
+  "attributes": {},
+  "children": [
     {
-      "name": "paragraph",
-      "attributes": {},
-      "children": [
-        {
-          "name": "text",
-          "children": [
-            {
-              "text": "This is the text for paragraph one"
-            }
-          ]
-        }
-      ]
+      "name": "text",
+      "attributes": {
+        "value": "This is the text for paragraph one"
+      },
+      "children": []
     }
   ]
 }

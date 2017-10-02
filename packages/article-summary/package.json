@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "main": "article-summary",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -60,7 +60,7 @@
   },
   "dependencies": {
     "@times-components/date-publication": "0.3.1",
-    "@times-components/markup": "0.7.3",
+    "@times-components/markup": "0.7.4",
     "date-fns": "1.28.5",
     "prop-types": "15.5.10",
     "react-native-web": "0.0.119",

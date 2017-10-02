@@ -1,88 +1,80 @@
 {
-  "fixture": [
+  "name": "block",
+  "attributes": {},
+  "children": [
     {
       "name": "block",
       "attributes": {},
       "children": [
         {
-          "name": "block",
-          "attributes": {},
+          "name": "link",
+          "attributes": {
+            "href": "http://www.google.com"
+          },
           "children": [
             {
-              "name": "link",
+              "name": "text",
               "attributes": {
-                "href": "http://www.google.com"
+                "value": "some link here"
               },
-              "children": [
-                {
-                  "name": "text",
-                  "children": [
-                    {
-                      "text": "some link here"
-                    }
-                  ]
-                }
-              ]
+              "children": []
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "block",
+      "attributes": {},
+      "children": [
         {
-          "name": "block",
+          "name": "bold",
           "attributes": {},
           "children": [
             {
-              "name": "bold",
-              "attributes": {},
-              "children": [
-                {
-                  "name": "text",
-                  "children": [
-                    {
-                      "text": "some text here"
-                    }
-                  ]
-                }
-              ]
+              "name": "text",
+              "attributes": {
+                "value": "some text here"
+              },
+              "children": []
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "block",
+      "attributes": {},
+      "children": [
         {
-          "name": "block",
+          "name": "italic",
           "attributes": {},
           "children": [
             {
-              "name": "italic",
-              "attributes": {},
-              "children": [
-                {
-                  "name": "text",
-                  "children": [
-                    {
-                      "text": " some more text here"
-                    }
-                  ]
-                }
-              ]
+              "name": "text",
+              "attributes": {
+                "value": " some more text here"
+              },
+              "children": []
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "block",
+      "attributes": {},
+      "children": [
         {
-          "name": "block",
+          "name": "inline",
           "attributes": {},
           "children": [
             {
-              "name": "inline",
-              "attributes": {},
-              "children": [
-                {
-                  "name": "text",
-                  "children": [
-                    {
-                      "text": "some other text here"
-                    }
-                  ]
-                }
-              ]
+              "name": "text",
+              "attributes": {
+                "value": "some other text here"
+              },
+              "children": []
             }
           ]
         }

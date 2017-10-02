@@ -9,11 +9,10 @@
       "children": [
         {
           "name": "text",
-          "children": [
-            {
-              "text": "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, "
-            }
-          ]
+          "attributes": {
+            "value": "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, "
+          },
+          "children": []
         }
       ],
       "attributes": {}

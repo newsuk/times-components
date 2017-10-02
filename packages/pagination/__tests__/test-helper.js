@@ -15,7 +15,7 @@ export default Pagination => () => {
     expect(component).toMatchSnapshot();
   });
 
-  it("renders compact above breakpoint", () => {
+  it("renders with hidden results above breakpoint", () => {
     const props = {
       count: 21,
       page: 1
@@ -60,7 +60,7 @@ export default Pagination => () => {
     expect(component).toMatchSnapshot();
   });
 
-  it("set compact above breakpoint", done => {
+  it("set results hidden above breakpoint", done => {
     const comp = new Pagination({
       count: 21,
       page: 1
@@ -82,7 +82,7 @@ export default Pagination => () => {
     });
   });
 
-  it("set not compact below breakpoint", done => {
+  it("set results showing below breakpoint", done => {
     const comp = new Pagination({
       count: 21,
       page: 1

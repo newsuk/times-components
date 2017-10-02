@@ -28,34 +28,31 @@ const article = () => ({
       children: [
         {
           name: "text",
-          children: [
-            {
-              text:
-                "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, "
-            }
-          ]
+          attributes: {
+            value:
+              "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, "
+          },
+          children: []
         },
         {
           name: "em",
           children: [
             {
               name: "text",
-              children: [
-                {
-                  text: "The Times"
-                }
-              ]
+              attributes: {
+                value: "The Times"
+              },
+              children: []
             }
           ],
           attributes: {}
         },
         {
           name: "text",
-          children: [
-            {
-              text: " has learnt."
-            }
-          ]
+          attributes: {
+            value: " has learnt."
+          },
+          children: []
         }
       ],
       attributes: {}
@@ -65,12 +62,11 @@ const article = () => ({
       children: [
         {
           name: "text",
-          children: [
-            {
-              text:
-                "Two 17-year-old Muslim schoolboys from the Pakistani community in Brent, northwest London, and a 19-year-old man were intercepted in Istanbul at the weekend and swiftly returned to England. They were questioned by counterterrorism officials last night."
-            }
-          ]
+          attributes: {
+            value:
+              "Two 17-year-old Muslim schoolboys from the Pakistani community in Brent, northwest London, and a 19-year-old man were intercepted in Istanbul at the weekend and swiftly returned to England. They were questioned by counterterrorism officials last night."
+          },
+          children: []
         }
       ],
       attributes: {}
@@ -81,11 +77,10 @@ const article = () => ({
 const biography = [
   {
     name: "text",
-    children: [
-      {
-        text: "Lorem "
-      }
-    ]
+    attributes: {
+      value: "Lorem "
+    },
+    children: []
   },
   {
     name: "b",
@@ -93,33 +88,31 @@ const biography = [
     children: [
       {
         name: "text",
-        children: [
-          {
-            text: "ipsum"
-          }
-        ]
+        attributes: {
+          value: "ipsum"
+        },
+        children: []
       }
     ]
   },
   {
     name: "text",
-    children: [
-      {
-        text: " testbr "
-      }
-    ]
+    attributes: {
+      value: " testbr "
+    },
+    children: []
   },
   {
     name: "br",
-    attributes: {}
+    attributes: {},
+    children: []
   },
   {
     name: "text",
-    children: [
-      {
-        text: "More text "
-      }
-    ]
+    attributes: {
+      value: "More text "
+    },
+    children: []
   },
   {
     name: "i",
@@ -127,11 +120,10 @@ const biography = [
     children: [
       {
         name: "text",
-        children: [
-          {
-            text: " last "
-          }
-        ]
+        attributes: {
+          value: " last "
+        },
+        children: []
       }
     ]
   }

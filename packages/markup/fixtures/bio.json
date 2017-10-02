@@ -1,55 +1,48 @@
-{
-  "fixture": [
-    {
-      "name": "text",
-      "children": [
-        {
-          "text": "Camilla Long is "
-        }
-      ]
+[
+  {
+    "name": "text",
+    "attributes": {
+      "value": "Camilla Long is "
     },
-    {
-      "name": "italic",
-      "attributes": {},
-      "children": [
-        {
-          "name": "text",
-          "children": [
-            {
-              "text": "the Sunday Times"
-            }
-          ]
-        }
-      ]
+    "children": []
+  },
+  {
+    "name": "italic",
+    "attributes": {},
+    "children": [
+      {
+        "name": "text",
+        "attributes": {
+          "value": "the Sunday Times"
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "text",
+    "attributes": {
+      "value": " film critic. She also writes interviews and a column, and was named "
     },
-    {
-      "name": "text",
-      "children": [
-        {
-          "text": " film critic. She also writes interviews and a column, and was named "
-        }
-      ]
+    "children": []
+  },
+  {
+    "name": "bold",
+    "children": [
+      {
+        "name": "text",
+        "attributes": {
+          "value": "interviewer of the year"
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "text",
+    "attributes": {
+      "value": " at the British Press Awards in 2010 and 2016."
     },
-    {
-      "name": "bold",
-      "children": [
-        {
-          "name": "text",
-          "children": [
-            {
-              "text": "interviewer of the year"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "text",
-      "children": [
-        {
-          "text": " at the British Press Awards in 2010 and 2016."
-        }
-      ]
-    }
-  ]
-}
+    "children": []
+  }
+]
