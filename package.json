@@ -38,7 +38,7 @@
     "packages:publish": "lerna publish --conventional-commits --yes --concurrency=1 --exact",
     "packages:publish-dry-run": "npm run packages:publish -- --skip-git --skip-npm",
     "update-deps": "lerna bootstrap --hoist --npm-client=yarn --concurrency=1",
-    "postinstall": "npm run update-deps --silent"
+    "postinstall": "npm run update-deps --silent && rm -f node_modules/enzyme/.babelrc && rm -f node_modules/enzyme-adapter-react-16/.babelrc && rm -f node_modules/enzyme-adapter-utils/.babelrc"
   },
   "jest": {
     "preset": "react-native",
