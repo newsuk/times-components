@@ -1,26 +1,13 @@
 import React from "react";
-import { Platform, Dimensions, Image, View } from "react-native";
+import { Image } from "react-native";
 import placeholder from "./placeholder";
-
-const window = Dimensions.get("window");
+import mapPropsToState from "./props-to-state";
 
 class ImageComponent extends React.Component {
   constructor(props) {
     super(props);
 
-    const uri = props.source && props.source.uri;
-
-    this.state = {
-      source: {
-        uri:
-          Platform.OS !== "web" && uri && uri.indexOf("//") === 0
-            ? `https:${uri}`
-            : uri
-      },
-      width: window.width,
-      height: 1
-    };
-
+    this.state = mapPropsToState(props);
     this.getSize = Image.getSize;
     this.handleError = this.handleError.bind(this);
     this.handleLayout = this.handleLayout.bind(this);
@@ -76,17 +63,20 @@ class ImageComponent extends React.Component {
       source: this.state.source,
       style: [
         {
-          height: this.state.height,
-          width: this.state.width
+          height: this.state.height || "inherit",
+          width: this.state.width || "inherit"
         },
         this.props.style
       ]
     });
 
     return (
-      <View onLayout={this.handleLayout}>
-        <Image {...props} onError={this.handleError} onLoad={this.handleLoad} />
-      </View>
+      <Image
+        {...props}
+        onLayout={this.handleLayout}
+        onError={this.handleError}
+        onLoad={this.handleLoad}
+      />
     );
   }
 }

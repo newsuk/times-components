@@ -277,28 +277,25 @@ exports[`renders data 1`] = `
                 ]
               }
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
+                      "height": 1,
+                      "width": 750,
+                    },
+                    undefined,
+                  ]
+                }
+              />
             </View>
             <View
               style={
@@ -666,28 +663,25 @@ exports[`renders data from graphql 1`] = `
                 ]
               }
             >
-              <View
+              <Image
+                onError={[Function]}
                 onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                  }
+                }
+                style={
+                  Array [
                     Object {
-                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
+                      "height": 1,
+                      "width": 750,
+                    },
+                    undefined,
+                  ]
+                }
+              />
             </View>
             <View
               style={

@@ -13,28 +13,25 @@ exports[`does not render Article Image display is not received 1`] = `
       <View
         style={undefined}
       >
-        <View
+        <Image
+          onError={[Function]}
           onLayout={[Function]}
-        >
-          <Image
-            onError={[Function]}
-            onLoad={[Function]}
-            source={
+          onLoad={[Function]}
+          source={
+            Object {
+              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0",
+            }
+          }
+          style={
+            Array [
               Object {
-                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
+                "height": 1,
+                "width": 750,
+              },
+              undefined,
+            ]
+          }
+        />
       </View>
     </View>
   </View>
@@ -120,28 +117,25 @@ exports[`does not render Article Image if url is not received 1`] = `
       <View
         style={undefined}
       >
-        <View
+        <Image
+          onError={[Function]}
           onLayout={[Function]}
-        >
-          <Image
-            onError={[Function]}
-            onLoad={[Function]}
-            source={
+          onLoad={[Function]}
+          source={
+            Object {
+              "uri": null,
+            }
+          }
+          style={
+            Array [
               Object {
-                "uri": null,
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
+                "height": 1,
+                "width": 750,
+              },
+              undefined,
+            ]
+          }
+        />
       </View>
     </View>
   </View>
@@ -227,28 +221,25 @@ exports[`does not render Caption on Article Image if both caption and credits ar
       <View
         style={undefined}
       >
-        <View
+        <Image
+          onError={[Function]}
           onLayout={[Function]}
-        >
-          <Image
-            onError={[Function]}
-            onLoad={[Function]}
-            source={
+          onLoad={[Function]}
+          source={
+            Object {
+              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0",
+            }
+          }
+          style={
+            Array [
               Object {
-                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
+                "height": 1,
+                "width": 750,
+              },
+              undefined,
+            ]
+          }
+        />
       </View>
     </View>
   </View>
@@ -281,28 +272,25 @@ exports[`renders inline image (landscape) correctly 1`] = `
       <View
         style={undefined}
       >
-        <View
+        <Image
+          onError={[Function]}
           onLayout={[Function]}
-        >
-          <Image
-            onError={[Function]}
-            onLoad={[Function]}
-            source={
+          onLoad={[Function]}
+          source={
+            Object {
+              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=300%2C200%2C-0%2C-0",
+            }
+          }
+          style={
+            Array [
               Object {
-                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=300%2C200%2C-0%2C-0",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
+                "height": 1,
+                "width": 750,
+              },
+              undefined,
+            ]
+          }
+        />
       </View>
     </View>
   </View>
@@ -403,28 +391,25 @@ exports[`renders inline image (portrait) correctly 1`] = `
       <View
         style={undefined}
       >
-        <View
+        <Image
+          onError={[Function]}
           onLayout={[Function]}
-        >
-          <Image
-            onError={[Function]}
-            onLoad={[Function]}
-            source={
+          onLoad={[Function]}
+          source={
+            Object {
+              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=100%2C150%2C-0%2C-0",
+            }
+          }
+          style={
+            Array [
               Object {
-                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=100%2C150%2C-0%2C-0",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
+                "height": 1,
+                "width": 750,
+              },
+              undefined,
+            ]
+          }
+        />
       </View>
     </View>
   </View>
@@ -518,28 +503,25 @@ exports[`renders primary image correctly 1`] = `
       <View
         style={undefined}
       >
-        <View
+        <Image
+          onError={[Function]}
           onLayout={[Function]}
-        >
-          <Image
-            onError={[Function]}
-            onLoad={[Function]}
-            source={
+          onLoad={[Function]}
+          source={
+            Object {
+              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0",
+            }
+          }
+          style={
+            Array [
               Object {
-                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
+                "height": 1,
+                "width": 750,
+              },
+              undefined,
+            ]
+          }
+        />
       </View>
     </View>
   </View>
@@ -632,28 +614,25 @@ exports[`renders secondary image correctly 1`] = `
       <View
         style={undefined}
       >
-        <View
+        <Image
+          onError={[Function]}
           onLayout={[Function]}
-        >
-          <Image
-            onError={[Function]}
-            onLoad={[Function]}
-            source={
+          onLoad={[Function]}
+          source={
+            Object {
+              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=600%2C400%2C-0%2C-0",
+            }
+          }
+          style={
+            Array [
               Object {
-                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=600%2C400%2C-0%2C-0",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 1,
-                  "width": 750,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
+                "height": 1,
+                "width": 750,
+              },
+              undefined,
+            ]
+          }
+        />
       </View>
     </View>
   </View>
