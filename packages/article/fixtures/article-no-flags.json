@@ -13,11 +13,10 @@
             "children": [
               {
                 "name": "text",
-                "children": [
-                  {
-                    "text": "Rick Broadbent"
-                  }
-                ]
+                "attributes": {
+                  "value": "Rick Broadbent"
+                },
+                "children": []
               }
             ]
           }
@@ -31,11 +30,10 @@
                 "children": [
                   {
                     "name": "text",
-                    "children": [
-                      {
-                        "text": "Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the "
-                      }
-                    ]
+                    "attributes": {
+                      "value": "Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the "
+                    },
+                    "children": []
                   },
                   {
                     "name": "italic",
@@ -43,21 +41,19 @@
                     "children": [
                       {
                         "name": "text",
-                        "children": [
-                          {
-                            "text": "Telegraph "
-                          }
-                        ]
+                        "attributes": {
+                          "value": "Telegraph "
+                        },
+                        "children": []
                       }
                     ]
                   },
                   {
                     "name": "text",
-                    "children": [
-                      {
-                        "text": "last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”"
-                      }
-                    ]
+                    "attributes": {
+                      "value": "last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”"
+                    },
+                    "children": []
                   },
                   {
                     "name": "break",
@@ -69,11 +65,10 @@
                         "children": [
                           {
                             "name": "text",
-                            "children": [
-                              {
-                                "text": "See leading article"
-                              }
-                            ]
+                            "attributes": {
+                              "value": "See leading article"
+                            },
+                            "children": []
                           }
                         ]
                       }
