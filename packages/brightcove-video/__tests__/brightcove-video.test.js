@@ -114,10 +114,11 @@ it("will reset if 'resetOnFinish' is true & video finishes", done => {
 
   rootInstance.handleFinish();
 
+  // handleFinish calls reset asyc - wait for it
   setTimeout(() => {
     expect(root.toJSON()).toMatchSnapshot();
     done();
-  }, 20);
+  }, 0);
 });
 
 it("will call child components play and pause methods if child component is ready", () => {
