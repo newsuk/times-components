@@ -2,129 +2,83 @@ import { Text } from "react-native";
 import React from "react";
 import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
-import TrackView, { withTrackView } from "../track-view";
+import { withTrackView } from "../tracking";
 import trackingContextTypes from "../tracking-context-types";
 
-describe("TrackView", () => {
-  const TestComponent = () => <Text>foo</Text>;
+describe("WithTrackView", () => {
+  const TestComponent = props => <Text>{props.someProp}</Text>;
+  TestComponent.propTypes = { someProp: PropTypes.string };
+  TestComponent.defaultProps = { someProp: "foo" };
+  TestComponent.someStatic = { foo: "bar" };
 
-  class TestContext extends React.Component {
-    static get childContextTypes() {
-      return trackingContextTypes;
-    }
-    static get propTypes() {
-      return { children: PropTypes.element.isRequired };
-    }
-    getChildContext() {
-      const self = this;
-      return {
-        tracking: {
-          analytics(...args) {
-            self.props.analyticsStream(...args);
+  const withTestContext = WrappedComponent => {
+    class TestContext extends React.Component {
+      getChildContext() {
+        const self = this;
+        return {
+          tracking: {
+            analytics(...args) {
+              self.props.analyticsStream(...args);
+            }
           }
-        }
-      };
+        };
+      }
+      render() {
+        return <WrappedComponent {...this.props} />;
+      }
     }
-    render() {
-      return this.props.children;
-    }
-  }
+    TestContext.childContextTypes = trackingContextTypes;
+    return TestContext;
+  };
 
   it("renders when tracking context is missing", () => {
-    const tree = renderer
-      .create(
-        <TrackView>
-          <TestComponent />
-        </TrackView>
-      )
-      .toJSON();
+    const WithTracking = withTrackView(TestComponent);
+
+    const tree = renderer.create(<WithTracking />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
-  it("raises component viewed event", () => {
+  it("raises event on wrapped component render", () => {
+    const WithTrackingAndContext = withTestContext(
+      withTrackView(TestComponent)
+    );
     const reporter = jest.fn();
 
-    renderer.create(
-      <TestContext analyticsStream={reporter}>
-        <TrackView>
-          <TestComponent />
-        </TrackView>
-      </TestContext>
-    );
+    renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
 
-    expect(reporter).toHaveBeenCalledWith(
-      expect.objectContaining({ action: "Viewed" })
-    );
-  });
-
-  it("infers name of functional component", () => {
-    const reporter = jest.fn();
-
-    renderer.create(
-      <TestContext analyticsStream={reporter}>
-        <TrackView>
-          <TestComponent />
-        </TrackView>
-      </TestContext>
-    );
-
-    expect(reporter).toHaveBeenCalledWith(
-      expect.objectContaining({ component: "TestComponent" })
-    );
-  });
-
-  it("infers name of class component", () => {
-    // eslint-disable-next-line react/no-multi-comp, react/prefer-stateless-function
-    class TestClassComponent extends React.Component {
-      render() {
-        return <Text>foo</Text>;
-      }
-    }
-    const reporter = jest.fn();
-
-    renderer.create(
-      <TestContext analyticsStream={reporter}>
-        <TrackView>
-          <TestClassComponent />
-        </TrackView>
-      </TestContext>
-    );
-
-    expect(reporter).toHaveBeenCalledWith(
-      expect.objectContaining({
-        component: "TestClassComponent"
-      })
-    );
+    expect(reporter).toHaveBeenCalledWith({
+      action: "Viewed",
+      attrs: {},
+      component: "TestComponent"
+    });
   });
 
   it("accepts component name override", () => {
+    const WithTrackingAndContext = withTestContext(
+      withTrackView(TestComponent, { trackingName: "TrackedThing" })
+    );
     const reporter = jest.fn();
 
-    renderer.create(
-      <TestContext analyticsStream={reporter}>
-        <TrackView trackingName="TrackedThing">
-          <TestComponent />
-        </TrackView>
-      </TestContext>
-    );
+    renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
 
-    expect(reporter).toHaveBeenCalledWith(
-      expect.objectContaining({
-        component: "TrackedThing"
-      })
-    );
+    expect(reporter).toHaveBeenCalledWith({
+      action: "Viewed",
+      attrs: {},
+      component: "TrackedThing"
+    });
   });
 
   it("applies tracking attrs", () => {
+    const WithTrackingAndContext = withTestContext(
+      withTrackView(TestComponent, {
+        getAttrs: props => ({ one: props.keyTwo, three: "four" })
+      })
+    );
     const reporter = jest.fn();
 
     renderer.create(
-      <TestContext analyticsStream={reporter}>
-        <TrackView getAttrs={props => ({ one: props.keyTwo, three: "four" })}>
-          <TestComponent keyTwo="two" />
-        </TrackView>
-      </TestContext>
+      <WithTrackingAndContext keyTwo="two" analyticsStream={reporter} />
     );
 
     expect(reporter).toHaveBeenCalledWith(
@@ -134,17 +88,28 @@ describe("TrackView", () => {
     );
   });
 
-  describe("withTrackView", () => {
-    it("wraps component with view tracking", () => {
-      const reporter = jest.fn();
-      const ComponentWithTrackView = withTrackView(TestComponent);
-      renderer.create(
-        <TestContext analyticsStream={reporter}>
-          <ComponentWithTrackView />
-        </TestContext>
-      );
+  it("forwards props to wrapped component", () => {
+    const WithTracking = withTrackView(TestComponent);
+    const tree = renderer.create(<WithTracking someProp="bar" />);
 
-      expect(reporter.mock.calls).toMatchSnapshot();
-    });
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("hoists wrapped propTypes", () => {
+    const WithTracking = withTrackView(TestComponent);
+
+    expect(WithTracking.propTypes).toEqual(TestComponent.propTypes);
+  });
+
+  it("hoists wrapped defaultProps", () => {
+    const WithTracking = withTrackView(TestComponent);
+
+    expect(WithTracking.defaultProps).toEqual(TestComponent.defaultProps);
+  });
+
+  it("hoists wrapped statics", () => {
+    const WithTracking = withTrackView(TestComponent);
+
+    expect(WithTracking.someStatic).toEqual(TestComponent.someStatic);
   });
 });
