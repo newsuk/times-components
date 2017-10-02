@@ -14,7 +14,7 @@ const query = gql`
       standfirst
       flags
       byline
-      content(markupType:"image")
+      content
       leadAsset {
         ... on Image {
           id
@@ -37,7 +37,6 @@ const transformResponse = response => {
   const article = get(response, "data.article");
 
   if (article) {
-    console.log(article)
     return {
       data: { article },
       error: null,
