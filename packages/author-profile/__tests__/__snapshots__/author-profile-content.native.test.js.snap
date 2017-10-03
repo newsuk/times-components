@@ -774,6 +774,7 @@ exports[`renders profile content 1`] = `
                 "paddingTop": 32,
               }
             }
+            testID="author-name"
           >
             Fiona Hamilton
           </Text>
@@ -4538,6 +4539,7 @@ exports[`renders profile content component 1`] = `
                 "paddingTop": 32,
               }
             }
+            testID="author-name"
           >
             Fiona Hamilton
           </Text>
@@ -8329,6 +8331,7 @@ exports[`renders profile header 1`] = `
             "paddingTop": 32,
           }
         }
+        testID="author-name"
       >
         Fiona Hamilton
       </Text>
