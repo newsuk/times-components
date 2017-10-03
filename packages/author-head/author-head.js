@@ -39,7 +39,13 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: "TimesDigital-RegularSC",
     fontSize: 15,
-    color: "#696969"
+    color: "#696969",
+    ...Platform.select({
+      web: {
+        WebkitFontSmoothing: "antialiased",
+        MozOsxFontSmoothing: "grayscale"
+      }
+    })
   },
   twitter: {
     fontSize: 18,
@@ -56,7 +62,13 @@ const styles = StyleSheet.create({
     lineHeight: 26,
     color: "#333",
     maxWidth: "88%",
-    paddingBottom: 32
+    paddingBottom: 32,
+    ...Platform.select({
+      web: {
+        WebkitFontSmoothing: "antialiased",
+        MozOsxFontSmoothing: "grayscale"
+      }
+    })
   },
   wrapper: {
     alignItems: "center",
