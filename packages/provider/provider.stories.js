@@ -1,5 +1,6 @@
+/* eslint-env browser */
 import React from "react";
-import { Text } from "react-native";
+import { Platform, Text } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
 import { withPageState } from "@times-components/pagination";
@@ -12,7 +13,10 @@ import {
   gql
 } from "react-apollo";
 
-import connectGraphql, { AuthorProfileProvider } from "./provider.js";
+import connectGraphql, {
+  AuthorProfileProvider,
+  ArticleProvider
+} from "./provider.js";
 
 const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
 
@@ -75,3 +79,28 @@ storiesOf("Provider", module).add("AuthorProfileProvider", () => (
     />
   </ApolloProvider>
 ));
+
+storiesOf("Provider", module).add("ArticleProvider", () => {
+  if (Platform.OS === "web") {
+    return (
+      <div>
+        <a
+          href={`/iframe.html${window.top.location.search}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Click to render the ads
+        </a>
+        <ApolloProvider client={client}>
+          <ArticleProvider id="3107c018-cb60-11e4-81dd-064fe933cd41" />
+        </ApolloProvider>
+      </div>
+    );
+  }
+
+  return (
+    <ApolloProvider client={client}>
+      <ArticleProvider id="3107c018-cb60-11e4-81dd-064fe933cd41" />
+    </ApolloProvider>
+  );
+});

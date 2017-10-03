@@ -98,7 +98,7 @@ class ArticlePage extends React.Component {
   constructor(props) {
     super(props);
 
-    if (props.data.article) {
+    if (props.data && props.data.article) {
       this.state = {
         dataSource: ds.cloneWithRows(listViewDataHelper(props.data.article))
       };
@@ -110,7 +110,7 @@ class ArticlePage extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (!nextProps.isLoading) {
+    if (!nextProps.isLoading && nextProps.data) {
       this.setState({
         dataSource: ds.cloneWithRows(listViewDataHelper(nextProps.data.article))
       });
