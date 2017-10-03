@@ -3,7 +3,7 @@
 import "react-native";
 import React from "react";
 import Enzyme, { shallow } from "enzyme";
-import React16Adapter from 'enzyme-adapter-react-16'
+import React16Adapter from "enzyme-adapter-react-16";
 
 Enzyme.configure({ adapter: new React16Adapter() });
 

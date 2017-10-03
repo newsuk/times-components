@@ -4,7 +4,7 @@ import "jsdom";
 import "react-native";
 import React from "react";
 import Enzyme, { shallow } from "enzyme";
-import React16Adapter from 'enzyme-adapter-react-16'
+import React16Adapter from "enzyme-adapter-react-16";
 import renderer from "react-test-renderer";
 import AuthorProfile from "../author-profile";
 import AuthorProfileHeader from "../author-profile-header";

@@ -2,7 +2,7 @@
 
 import "react-native";
 import Enzyme, { shallow } from "enzyme";
-import React16Adapter from 'enzyme-adapter-react-16'
+import React16Adapter from "enzyme-adapter-react-16";
 import React from "react";
 import renderer from "react-test-renderer";
 import Card from "../card";
