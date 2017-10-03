@@ -141,7 +141,7 @@ repositories {
 dependencies {
     implementation project(':react-native-svg')
     implementation project(path: ':rntbrightcovevideo')
-    implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation "com.facebook.react:react-native:0.48.4"  // From node_modules
 }
 
 // Run this once to be able to run the application with BUCK
