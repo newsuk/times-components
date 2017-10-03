@@ -36,7 +36,11 @@ const renderFlags = flags => {
 
 const renderStandfirst = standfirst => {
   if (!standfirst) return null;
-  return <Text testID="standfirst" style={[styles.standFirst]}>{standfirst}</Text>;
+  return (
+    <Text testID="standfirst" style={[styles.standFirst]}>
+      {standfirst}
+    </Text>
+  );
 };
 
 const renderLabel = label => {

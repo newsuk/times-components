@@ -6,9 +6,7 @@ import Article from "./article";
 const fullArticleFixture = require("./fixtures/full-article.json");
 
 withComponent(
-  <Article
-  fructoseID="defaultArticle"
-  {...fullArticleFixture} />,
+  <Article fructoseID="defaultArticle" {...fullArticleFixture} />,
   "default non interactive article",
   async fructose => {
     beforeEach(async () => {
@@ -18,7 +16,7 @@ withComponent(
 
     afterEach(async () => {
       await device.reloadReactNative();
-    })
+    });
 
     test("default Article should render correctly", async () => {
       await expect(element(by.id("leadAsset"))).toBeVisible();

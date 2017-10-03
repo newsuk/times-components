@@ -14,7 +14,9 @@ const styles = {
 };
 
 const ArticleHeadline = ({ title, style }) => (
-  <Text testID="headline" style={[styles.title, style]}>{title}</Text>
+  <Text testID="headline" style={[styles.title, style]}>
+    {title}
+  </Text>
 );
 
 ArticleHeadline.propTypes = {
