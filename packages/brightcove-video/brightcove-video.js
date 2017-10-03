@@ -47,7 +47,11 @@ class BrightcoveVideo extends Component {
   handleFinish() {
     if (this.props.resetOnFinish) {
       // calling syncronously here inteferes with player and causes errors to be thrown
-      setTimeout(this.reset, 0);
+      this.reset();
+
+      //setTimeout(this.reset, 0);
+      //this.setState(() => ({ isLaunched: false }));
+      //this.setState({}, this.reset);
     }
 
     this.props.onFinish();
