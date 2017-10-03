@@ -765,6 +765,7 @@ exports[`renders profile content 1`] = `
             accessible={true}
             allowFontScaling={true}
             aria-level="1"
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -782,6 +783,7 @@ exports[`renders profile content 1`] = `
             accessible={true}
             allowFontScaling={true}
             aria-level="2"
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -797,6 +799,7 @@ exports[`renders profile content 1`] = `
             accessibilityRole="link"
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             href="https://twitter.com/jdoe"
             onPress={[Function]}
@@ -821,6 +824,7 @@ exports[`renders profile content 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -838,6 +842,7 @@ exports[`renders profile content 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -852,6 +857,7 @@ exports[`renders profile content 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -951,6 +957,7 @@ exports[`renders profile content 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -990,6 +997,7 @@ exports[`renders profile content 1`] = `
                   accessibilityRole="link"
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   href="?page=2"
                   onPress={[Function]}
@@ -1020,8 +1028,10 @@ exports[`renders profile content 1`] = `
         accessibilityLabel={undefined}
         accessibilityTraits={undefined}
         accessible={true}
+        collapsable={undefined}
         hitSlop={undefined}
         isTVSelectable={true}
+        nativeID={undefined}
         onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -1111,6 +1121,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -1125,6 +1136,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -1142,6 +1154,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -1157,12 +1170,14 @@ exports[`renders profile content 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                   >
                     A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
                     <Text
                       accessible={true}
                       allowFontScaling={true}
+                      disabled={false}
                       ellipsizeMode="tail"
                       style={
                         Object {
@@ -1177,6 +1192,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -1214,8 +1230,10 @@ exports[`renders profile content 1`] = `
         accessibilityLabel={undefined}
         accessibilityTraits={undefined}
         accessible={true}
+        collapsable={undefined}
         hitSlop={undefined}
         isTVSelectable={true}
+        nativeID={undefined}
         onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -1305,6 +1323,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -1321,6 +1340,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -1338,6 +1358,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -1353,12 +1374,14 @@ exports[`renders profile content 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                   >
                     A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
                     <Text
                       accessible={true}
                       allowFontScaling={true}
+                      disabled={false}
                       ellipsizeMode="tail"
                       style={
                         Object {
@@ -1373,6 +1396,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -1410,8 +1434,10 @@ exports[`renders profile content 1`] = `
         accessibilityLabel={undefined}
         accessibilityTraits={undefined}
         accessible={true}
+        collapsable={undefined}
         hitSlop={undefined}
         isTVSelectable={true}
+        nativeID={undefined}
         onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -1501,6 +1527,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -1517,6 +1544,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -1534,6 +1562,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -1549,12 +1578,14 @@ exports[`renders profile content 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                   >
                     A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
                     <Text
                       accessible={true}
                       allowFontScaling={true}
+                      disabled={false}
                       ellipsizeMode="tail"
                       style={
                         Object {
@@ -1569,6 +1600,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -1606,8 +1638,10 @@ exports[`renders profile content 1`] = `
         accessibilityLabel={undefined}
         accessibilityTraits={undefined}
         accessible={true}
+        collapsable={undefined}
         hitSlop={undefined}
         isTVSelectable={true}
+        nativeID={undefined}
         onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -1697,6 +1731,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -1713,6 +1748,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -1730,6 +1766,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -1745,12 +1782,14 @@ exports[`renders profile content 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                   >
                     A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
                     <Text
                       accessible={true}
                       allowFontScaling={true}
+                      disabled={false}
                       ellipsizeMode="tail"
                       style={
                         Object {
@@ -1765,6 +1804,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -1802,8 +1842,10 @@ exports[`renders profile content 1`] = `
         accessibilityLabel={undefined}
         accessibilityTraits={undefined}
         accessible={true}
+        collapsable={undefined}
         hitSlop={undefined}
         isTVSelectable={true}
+        nativeID={undefined}
         onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -1893,6 +1935,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -1909,6 +1952,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -1926,6 +1970,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -1941,6 +1986,7 @@ exports[`renders profile content 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                   >
                     GAY and lesbian couples and those who have children using IVF treatment or a surrogate make better parents than heterosexual couples, according
@@ -1949,6 +1995,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -1986,8 +2033,10 @@ exports[`renders profile content 1`] = `
         accessibilityLabel={undefined}
         accessibilityTraits={undefined}
         accessible={true}
+        collapsable={undefined}
         hitSlop={undefined}
         isTVSelectable={true}
+        nativeID={undefined}
         onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -2077,6 +2126,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -2093,6 +2143,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -2110,6 +2161,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -2125,12 +2177,14 @@ exports[`renders profile content 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                   >
                     A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
                     <Text
                       accessible={true}
                       allowFontScaling={true}
+                      disabled={false}
                       ellipsizeMode="tail"
                       style={
                         Object {
@@ -2145,6 +2199,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -2182,8 +2237,10 @@ exports[`renders profile content 1`] = `
         accessibilityLabel={undefined}
         accessibilityTraits={undefined}
         accessible={true}
+        collapsable={undefined}
         hitSlop={undefined}
         isTVSelectable={true}
+        nativeID={undefined}
         onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -2273,6 +2330,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -2289,6 +2347,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -2306,6 +2365,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -2321,6 +2381,7 @@ exports[`renders profile content 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                   >
                     A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
@@ -2329,6 +2390,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -2366,8 +2428,10 @@ exports[`renders profile content 1`] = `
         accessibilityLabel={undefined}
         accessibilityTraits={undefined}
         accessible={true}
+        collapsable={undefined}
         hitSlop={undefined}
         isTVSelectable={true}
+        nativeID={undefined}
         onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -2457,6 +2521,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -2473,6 +2538,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -2490,6 +2556,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -2505,6 +2572,7 @@ exports[`renders profile content 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                   >
                     A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
@@ -2513,6 +2581,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -2550,8 +2619,10 @@ exports[`renders profile content 1`] = `
         accessibilityLabel={undefined}
         accessibilityTraits={undefined}
         accessible={true}
+        collapsable={undefined}
         hitSlop={undefined}
         isTVSelectable={true}
+        nativeID={undefined}
         onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -2641,6 +2712,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -2657,6 +2729,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -2674,6 +2747,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -2689,6 +2763,7 @@ exports[`renders profile content 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                   >
                     A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
@@ -2697,6 +2772,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -2734,8 +2810,10 @@ exports[`renders profile content 1`] = `
         accessibilityLabel={undefined}
         accessibilityTraits={undefined}
         accessible={true}
+        collapsable={undefined}
         hitSlop={undefined}
         isTVSelectable={true}
+        nativeID={undefined}
         onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -2825,6 +2903,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -2841,6 +2920,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -2858,6 +2938,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -2873,6 +2954,7 @@ exports[`renders profile content 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                   >
                     A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
@@ -2881,6 +2963,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -2918,8 +3001,10 @@ exports[`renders profile content 1`] = `
         accessibilityLabel={undefined}
         accessibilityTraits={undefined}
         accessible={true}
+        collapsable={undefined}
         hitSlop={undefined}
         isTVSelectable={true}
+        nativeID={undefined}
         onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -3009,6 +3094,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -3025,6 +3111,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -3042,6 +3129,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -3057,6 +3145,7 @@ exports[`renders profile content 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                   >
                     A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
@@ -3065,6 +3154,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -3102,8 +3192,10 @@ exports[`renders profile content 1`] = `
         accessibilityLabel={undefined}
         accessibilityTraits={undefined}
         accessible={true}
+        collapsable={undefined}
         hitSlop={undefined}
         isTVSelectable={true}
+        nativeID={undefined}
         onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -3193,6 +3285,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -3209,6 +3302,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -3226,6 +3320,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -3241,6 +3336,7 @@ exports[`renders profile content 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                   >
                     A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
@@ -3249,6 +3345,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -3286,8 +3383,10 @@ exports[`renders profile content 1`] = `
         accessibilityLabel={undefined}
         accessibilityTraits={undefined}
         accessible={true}
+        collapsable={undefined}
         hitSlop={undefined}
         isTVSelectable={true}
+        nativeID={undefined}
         onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -3377,6 +3476,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -3393,6 +3493,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -3410,6 +3511,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -3425,6 +3527,7 @@ exports[`renders profile content 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                   >
                     Tony Blair’s main contribution to Middle East peace as the Quartet’s special envoy was the idea that prosperity in the Palestinian territories
@@ -3433,6 +3536,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -3470,8 +3574,10 @@ exports[`renders profile content 1`] = `
         accessibilityLabel={undefined}
         accessibilityTraits={undefined}
         accessible={true}
+        collapsable={undefined}
         hitSlop={undefined}
         isTVSelectable={true}
+        nativeID={undefined}
         onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -3561,6 +3667,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -3577,6 +3684,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -3594,6 +3702,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -3609,6 +3718,7 @@ exports[`renders profile content 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                   >
                     It was a celebration of the life of one of the greatest champions of the arts, a luvvie who was universally loved.
@@ -3616,6 +3726,7 @@ exports[`renders profile content 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                   >
                     Dames, lords, actors
@@ -3624,6 +3735,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -3661,8 +3773,10 @@ exports[`renders profile content 1`] = `
         accessibilityLabel={undefined}
         accessibilityTraits={undefined}
         accessible={true}
+        collapsable={undefined}
         hitSlop={undefined}
         isTVSelectable={true}
+        nativeID={undefined}
         onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -3752,6 +3866,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -3768,6 +3883,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -3785,6 +3901,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -3800,6 +3917,7 @@ exports[`renders profile content 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                   >
                     The funding of British faith schools run by an extreme religious sect is under investigation by the taxman over multi-million pound gift aid
@@ -3808,6 +3926,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -3845,8 +3964,10 @@ exports[`renders profile content 1`] = `
         accessibilityLabel={undefined}
         accessibilityTraits={undefined}
         accessible={true}
+        collapsable={undefined}
         hitSlop={undefined}
         isTVSelectable={true}
+        nativeID={undefined}
         onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -3936,6 +4057,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -3952,6 +4074,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -3969,6 +4092,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -3984,6 +4108,7 @@ exports[`renders profile content 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                   >
                     A Teach First-style scheme for mental health social workers aimed at recruiting top graduates to the profession is to be launched today.
@@ -3991,6 +4116,7 @@ exports[`renders profile content 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                   >
                     The Think
@@ -3999,6 +4125,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -4036,8 +4163,10 @@ exports[`renders profile content 1`] = `
         accessibilityLabel={undefined}
         accessibilityTraits={undefined}
         accessible={true}
+        collapsable={undefined}
         hitSlop={undefined}
         isTVSelectable={true}
+        nativeID={undefined}
         onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -4127,6 +4256,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -4143,6 +4273,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -4160,6 +4291,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -4175,12 +4307,14 @@ exports[`renders profile content 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                   >
                     Terry Pratchett, who died last week, began his career on the 
                     <Text
                       accessible={true}
                       allowFontScaling={true}
+                      disabled={false}
                       ellipsizeMode="tail"
                       style={
                         Object {
@@ -4196,6 +4330,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -4233,8 +4368,10 @@ exports[`renders profile content 1`] = `
         accessibilityLabel={undefined}
         accessibilityTraits={undefined}
         accessible={true}
+        collapsable={undefined}
         hitSlop={undefined}
         isTVSelectable={true}
+        nativeID={undefined}
         onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -4324,6 +4461,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -4340,6 +4478,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -4357,6 +4496,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -4372,12 +4512,14 @@ exports[`renders profile content 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                   >
                     Is poetry best when written down or is it nobler in the mind? Is it enough to read a great verse off the page, or is it 
                     <Text
                       accessible={true}
                       allowFontScaling={true}
+                      disabled={false}
                       ellipsizeMode="tail"
                       style={
                         Object {
@@ -4393,6 +4535,7 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -4449,6 +4592,7 @@ exports[`renders profile content component 1`] = `
           accessible={true}
           allowFontScaling={true}
           aria-level="1"
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4466,6 +4610,7 @@ exports[`renders profile content component 1`] = `
           accessible={true}
           allowFontScaling={true}
           aria-level="2"
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4481,6 +4626,7 @@ exports[`renders profile content component 1`] = `
           accessibilityRole="link"
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           href="https://twitter.com/jdoe"
           onPress={[Function]}
@@ -4505,6 +4651,7 @@ exports[`renders profile content component 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4522,6 +4669,7 @@ exports[`renders profile content component 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -4536,6 +4684,7 @@ exports[`renders profile content component 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -4635,6 +4784,7 @@ exports[`renders profile content component 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -4674,6 +4824,7 @@ exports[`renders profile content component 1`] = `
                 accessibilityRole="link"
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 href="?page=2"
                 onPress={[Function]}
@@ -4711,8 +4862,10 @@ exports[`renders profile content component 1`] = `
       accessibilityLabel={undefined}
       accessibilityTraits={undefined}
       accessible={true}
+      collapsable={undefined}
       hitSlop={undefined}
       isTVSelectable={true}
+      nativeID={undefined}
       onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -4802,6 +4955,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -4816,6 +4970,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -4833,6 +4988,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -4848,12 +5004,14 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                 >
                   A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -4868,6 +5026,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -4912,8 +5071,10 @@ exports[`renders profile content component 1`] = `
       accessibilityLabel={undefined}
       accessibilityTraits={undefined}
       accessible={true}
+      collapsable={undefined}
       hitSlop={undefined}
       isTVSelectable={true}
+      nativeID={undefined}
       onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -5003,6 +5164,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -5019,6 +5181,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -5036,6 +5199,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -5051,12 +5215,14 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                 >
                   A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -5071,6 +5237,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -5115,8 +5282,10 @@ exports[`renders profile content component 1`] = `
       accessibilityLabel={undefined}
       accessibilityTraits={undefined}
       accessible={true}
+      collapsable={undefined}
       hitSlop={undefined}
       isTVSelectable={true}
+      nativeID={undefined}
       onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -5206,6 +5375,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -5222,6 +5392,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -5239,6 +5410,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -5254,12 +5426,14 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                 >
                   A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -5274,6 +5448,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -5318,8 +5493,10 @@ exports[`renders profile content component 1`] = `
       accessibilityLabel={undefined}
       accessibilityTraits={undefined}
       accessible={true}
+      collapsable={undefined}
       hitSlop={undefined}
       isTVSelectable={true}
+      nativeID={undefined}
       onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -5409,6 +5586,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -5425,6 +5603,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -5442,6 +5621,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -5457,12 +5637,14 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                 >
                   A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -5477,6 +5659,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -5521,8 +5704,10 @@ exports[`renders profile content component 1`] = `
       accessibilityLabel={undefined}
       accessibilityTraits={undefined}
       accessible={true}
+      collapsable={undefined}
       hitSlop={undefined}
       isTVSelectable={true}
+      nativeID={undefined}
       onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -5612,6 +5797,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -5628,6 +5814,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -5645,6 +5832,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -5660,6 +5848,7 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                 >
                   GAY and lesbian couples and those who have children using IVF treatment or a surrogate make better parents than heterosexual couples, according
@@ -5668,6 +5857,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -5712,8 +5902,10 @@ exports[`renders profile content component 1`] = `
       accessibilityLabel={undefined}
       accessibilityTraits={undefined}
       accessible={true}
+      collapsable={undefined}
       hitSlop={undefined}
       isTVSelectable={true}
+      nativeID={undefined}
       onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -5803,6 +5995,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -5819,6 +6012,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -5836,6 +6030,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -5851,12 +6046,14 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                 >
                   A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -5871,6 +6068,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -5915,8 +6113,10 @@ exports[`renders profile content component 1`] = `
       accessibilityLabel={undefined}
       accessibilityTraits={undefined}
       accessible={true}
+      collapsable={undefined}
       hitSlop={undefined}
       isTVSelectable={true}
+      nativeID={undefined}
       onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -6006,6 +6206,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -6022,6 +6223,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -6039,6 +6241,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -6054,6 +6257,7 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                 >
                   A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
@@ -6062,6 +6266,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -6106,8 +6311,10 @@ exports[`renders profile content component 1`] = `
       accessibilityLabel={undefined}
       accessibilityTraits={undefined}
       accessible={true}
+      collapsable={undefined}
       hitSlop={undefined}
       isTVSelectable={true}
+      nativeID={undefined}
       onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -6197,6 +6404,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -6213,6 +6421,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -6230,6 +6439,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -6245,6 +6455,7 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                 >
                   A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
@@ -6253,6 +6464,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -6297,8 +6509,10 @@ exports[`renders profile content component 1`] = `
       accessibilityLabel={undefined}
       accessibilityTraits={undefined}
       accessible={true}
+      collapsable={undefined}
       hitSlop={undefined}
       isTVSelectable={true}
+      nativeID={undefined}
       onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -6388,6 +6602,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -6404,6 +6619,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -6421,6 +6637,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -6436,6 +6653,7 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                 >
                   A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
@@ -6444,6 +6662,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -6488,8 +6707,10 @@ exports[`renders profile content component 1`] = `
       accessibilityLabel={undefined}
       accessibilityTraits={undefined}
       accessible={true}
+      collapsable={undefined}
       hitSlop={undefined}
       isTVSelectable={true}
+      nativeID={undefined}
       onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -6579,6 +6800,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -6595,6 +6817,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -6612,6 +6835,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -6627,6 +6851,7 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                 >
                   A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
@@ -6635,6 +6860,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -6679,8 +6905,10 @@ exports[`renders profile content component 1`] = `
       accessibilityLabel={undefined}
       accessibilityTraits={undefined}
       accessible={true}
+      collapsable={undefined}
       hitSlop={undefined}
       isTVSelectable={true}
+      nativeID={undefined}
       onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -6770,6 +6998,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -6786,6 +7015,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -6803,6 +7033,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -6818,6 +7049,7 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                 >
                   A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
@@ -6826,6 +7058,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -6870,8 +7103,10 @@ exports[`renders profile content component 1`] = `
       accessibilityLabel={undefined}
       accessibilityTraits={undefined}
       accessible={true}
+      collapsable={undefined}
       hitSlop={undefined}
       isTVSelectable={true}
+      nativeID={undefined}
       onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -6961,6 +7196,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -6977,6 +7213,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -6994,6 +7231,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -7009,6 +7247,7 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                 >
                   A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to
@@ -7017,6 +7256,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -7061,8 +7301,10 @@ exports[`renders profile content component 1`] = `
       accessibilityLabel={undefined}
       accessibilityTraits={undefined}
       accessible={true}
+      collapsable={undefined}
       hitSlop={undefined}
       isTVSelectable={true}
+      nativeID={undefined}
       onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -7152,6 +7394,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -7168,6 +7411,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -7185,6 +7429,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -7200,6 +7445,7 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                 >
                   Tony Blair’s main contribution to Middle East peace as the Quartet’s special envoy was the idea that prosperity in the Palestinian territories
@@ -7208,6 +7454,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -7252,8 +7499,10 @@ exports[`renders profile content component 1`] = `
       accessibilityLabel={undefined}
       accessibilityTraits={undefined}
       accessible={true}
+      collapsable={undefined}
       hitSlop={undefined}
       isTVSelectable={true}
+      nativeID={undefined}
       onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -7343,6 +7592,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -7359,6 +7609,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -7376,6 +7627,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -7391,6 +7643,7 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                 >
                   It was a celebration of the life of one of the greatest champions of the arts, a luvvie who was universally loved.
@@ -7398,6 +7651,7 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                 >
                   Dames, lords, actors
@@ -7406,6 +7660,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -7450,8 +7705,10 @@ exports[`renders profile content component 1`] = `
       accessibilityLabel={undefined}
       accessibilityTraits={undefined}
       accessible={true}
+      collapsable={undefined}
       hitSlop={undefined}
       isTVSelectable={true}
+      nativeID={undefined}
       onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -7541,6 +7798,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -7557,6 +7815,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -7574,6 +7833,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -7589,6 +7849,7 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                 >
                   The funding of British faith schools run by an extreme religious sect is under investigation by the taxman over multi-million pound gift aid
@@ -7597,6 +7858,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -7641,8 +7903,10 @@ exports[`renders profile content component 1`] = `
       accessibilityLabel={undefined}
       accessibilityTraits={undefined}
       accessible={true}
+      collapsable={undefined}
       hitSlop={undefined}
       isTVSelectable={true}
+      nativeID={undefined}
       onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -7732,6 +7996,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -7748,6 +8013,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -7765,6 +8031,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -7780,6 +8047,7 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                 >
                   A Teach First-style scheme for mental health social workers aimed at recruiting top graduates to the profession is to be launched today.
@@ -7787,6 +8055,7 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                 >
                   The Think
@@ -7795,6 +8064,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -7839,8 +8109,10 @@ exports[`renders profile content component 1`] = `
       accessibilityLabel={undefined}
       accessibilityTraits={undefined}
       accessible={true}
+      collapsable={undefined}
       hitSlop={undefined}
       isTVSelectable={true}
+      nativeID={undefined}
       onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -7930,6 +8202,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -7946,6 +8219,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -7963,6 +8237,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -7978,12 +8253,14 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                 >
                   Terry Pratchett, who died last week, began his career on the 
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -7999,6 +8276,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -8043,8 +8321,10 @@ exports[`renders profile content component 1`] = `
       accessibilityLabel={undefined}
       accessibilityTraits={undefined}
       accessible={true}
+      collapsable={undefined}
       hitSlop={undefined}
       isTVSelectable={true}
+      nativeID={undefined}
       onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -8134,6 +8414,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -8150,6 +8431,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -8167,6 +8449,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -8182,12 +8465,14 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
+                  disabled={false}
                   ellipsizeMode="tail"
                 >
                   Is poetry best when written down or is it nobler in the mind? Is it enough to read a great verse off the page, or is it 
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -8203,6 +8488,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -8232,6 +8518,7 @@ exports[`renders profile empty 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
 >
   Empty
@@ -8243,6 +8530,7 @@ exports[`renders profile error 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
   >
     An error ocurred
@@ -8250,6 +8538,7 @@ exports[`renders profile error 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
   >
     {
@@ -8288,6 +8577,7 @@ exports[`renders profile header 1`] = `
         accessible={true}
         allowFontScaling={true}
         aria-level="1"
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Object {
@@ -8305,6 +8595,7 @@ exports[`renders profile header 1`] = `
         accessible={true}
         allowFontScaling={true}
         aria-level="2"
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Object {
@@ -8320,6 +8611,7 @@ exports[`renders profile header 1`] = `
         accessibilityRole="link"
         accessible={true}
         allowFontScaling={true}
+        disabled={false}
         ellipsizeMode="tail"
         href="https://twitter.com/jdoe"
         onPress={[Function]}
@@ -8344,6 +8636,7 @@ exports[`renders profile header 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Object {
@@ -8361,6 +8654,7 @@ exports[`renders profile header 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -8375,6 +8669,7 @@ exports[`renders profile header 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -8474,6 +8769,7 @@ exports[`renders profile header 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -8513,6 +8809,7 @@ exports[`renders profile header 1`] = `
               accessibilityRole="link"
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               href="?page=2"
               onPress={[Function]}

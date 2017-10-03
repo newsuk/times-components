@@ -38,7 +38,7 @@
     "packages:publish": "lerna publish --conventional-commits --yes --concurrency=1 --exact",
     "packages:publish-dry-run": "npm run packages:publish -- --skip-git --skip-npm",
     "update-deps": "lerna bootstrap --hoist --npm-client=yarn --concurrency=1",
-    "postinstall": "npm run update-deps --silent && rm -f node_modules/enzyme/.babelrc && rm -f node_modules/enzyme-adapter-react-16/.babelrc && rm -f node_modules/enzyme-adapter-utils/.babelrc"
+    "postinstall": "npm run update-deps --silent"
   },
   "jest": {
     "preset": "react-native",
@@ -106,7 +106,7 @@
     "react-dom": "16.0.0",
     "react-native": "0.48.4",
     "react-native-storybook-loader": "1.5.1",
-    "react-native-web": "0.1.0",
+    "react-native-web": "0.1.3",
     "rimraf": "2.6.1",
     "url": "0.11.0",
     "webpack": "3.3.0"

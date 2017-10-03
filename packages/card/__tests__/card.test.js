@@ -1,7 +1,8 @@
 /* eslint-env jest */
 
 import "react-native";
-import { shallow } from "enzyme";
+import Enzyme, { shallow } from "enzyme";
+import React16Adapter from 'enzyme-adapter-react-16'
 import React from "react";
 import renderer from "react-test-renderer";
 import Card from "../card";
@@ -36,6 +37,7 @@ it("renders without image url", () => {
 });
 
 it("renders horizontal above breakpoint", () => {
+  Enzyme.configure({ adapter: new React16Adapter() });
   const wrapper = shallow(<Card {...props} />);
   wrapper.setState({
     isHorizontal: true

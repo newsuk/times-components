@@ -28,6 +28,7 @@ exports[`renders 1`] = `
       accessible={true}
       allowFontScaling={true}
       aria-level="1"
+      disabled={false}
       ellipsizeMode="tail"
       style={
         Object {
@@ -45,6 +46,7 @@ exports[`renders 1`] = `
       accessible={true}
       allowFontScaling={true}
       aria-level="2"
+      disabled={false}
       ellipsizeMode="tail"
       style={
         Object {
@@ -59,6 +61,7 @@ exports[`renders 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
       style={
         Object {
@@ -104,6 +107,7 @@ exports[`renders with data 1`] = `
       accessible={true}
       allowFontScaling={true}
       aria-level="1"
+      disabled={false}
       ellipsizeMode="tail"
       style={
         Object {
@@ -121,6 +125,7 @@ exports[`renders with data 1`] = `
       accessible={true}
       allowFontScaling={true}
       aria-level="2"
+      disabled={false}
       ellipsizeMode="tail"
       style={
         Object {
@@ -136,6 +141,7 @@ exports[`renders with data 1`] = `
       accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
       href="https://twitter.com/carolmidgley"
       onPress={[Function]}
@@ -160,6 +166,7 @@ exports[`renders with data 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
       style={
         Object {
@@ -177,6 +184,7 @@ exports[`renders with data 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Object {
@@ -190,6 +198,7 @@ exports[`renders with data 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Object {
@@ -272,6 +281,7 @@ exports[`renders without profile picture 1`] = `
       accessible={true}
       allowFontScaling={true}
       aria-level="1"
+      disabled={false}
       ellipsizeMode="tail"
       style={
         Object {
@@ -289,6 +299,7 @@ exports[`renders without profile picture 1`] = `
       accessible={true}
       allowFontScaling={true}
       aria-level="2"
+      disabled={false}
       ellipsizeMode="tail"
       style={
         Object {
@@ -304,6 +315,7 @@ exports[`renders without profile picture 1`] = `
       accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
       href="https://twitter.com/carolmidgley"
       onPress={[Function]}
@@ -328,6 +340,7 @@ exports[`renders without profile picture 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
       style={
         Object {
@@ -345,6 +358,7 @@ exports[`renders without profile picture 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Object {
@@ -358,6 +372,7 @@ exports[`renders without profile picture 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Object {

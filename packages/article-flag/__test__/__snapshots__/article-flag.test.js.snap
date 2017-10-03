@@ -37,6 +37,7 @@ exports[`Article Flag test on web and ios renders Exclusive flag correctly 1`] =
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -94,6 +95,7 @@ exports[`Article Flag test on web and ios renders New flag correctly 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -151,6 +153,7 @@ exports[`Article Flag test on web and ios renders Sponsored flag correctly 1`] =
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -208,6 +211,7 @@ exports[`Article Flag test on web and ios renders Updated flag correctly 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -265,6 +269,7 @@ exports[`Article Flag test on web and ios renders correctly 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [

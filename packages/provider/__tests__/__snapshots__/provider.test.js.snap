@@ -4,6 +4,7 @@ exports[`renders data 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
 >
   {
@@ -19,6 +20,7 @@ exports[`renders data from graphql 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
 >
   {
@@ -35,6 +37,7 @@ exports[`renders loading state 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
 >
   {

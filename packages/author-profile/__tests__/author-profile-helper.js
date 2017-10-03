@@ -3,12 +3,15 @@
 import "jsdom";
 import "react-native";
 import React from "react";
-import { shallow } from "enzyme";
+import Enzyme, { shallow } from "enzyme";
+import React16Adapter from 'enzyme-adapter-react-16'
 import renderer from "react-test-renderer";
 import AuthorProfile from "../author-profile";
 import AuthorProfileHeader from "../author-profile-header";
 import AuthorProfileItemSeparator from "../author-profile-item-separator";
 import example from "../example.json";
+
+Enzyme.configure({ adapter: new React16Adapter() });
 
 example.articles.list = example.articles.list.map(el => ({
   ...el,
