@@ -56,7 +56,7 @@
     "eslint-plugin-react": "7.1.0",
     "flow-bin": "0.42.0",
     "graphql": "0.11.3",
-    "jest": "20.0.4",
+    "jest": "21.2.1",
     "mkdirp": "0.5.1",
     "nock": "9.0.14",
     "node-fetch": "1.7.2",

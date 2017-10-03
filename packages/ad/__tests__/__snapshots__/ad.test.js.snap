@@ -15,105 +15,105 @@ exports[`Native Ad test renders a native ad slot 1`] = `
       Object {
         "baseUrl": "https://mock-url.com/",
         "html": "
-            <html>
-              <head>
-                <style>
-                  body {
-                    display: table;
-                    height: 100%;
-                    margin: 0 auto;
-                    overflow:hidden;
-                    text-align: center;
-                    width: 100%;
-                  }
-                  div#mock-code {
-                    display: table-cell;
-                    vertical-align: middle;
-                  }
-                </style>
-                <script async src=\\"https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js\\"></script>
-                <script async src=\\"https://www.googletagservices.com/tag/js/gpt.js\\"></script>
-              </head>
-              <body>
-                <div id='mock-code'>
-                </div>
-      
-                <script>
-                  var i = 0;
-                  const config = {\\"code\\":\\"mock-code\\",\\"sizes\\":[[300,250],[320,50],[320,48],[300,50]],\\"maxSizes\\":{\\"width\\":320,\\"height\\":250},\\"mappings\\":[{\\"width\\":0,\\"height\\":0,\\"sizes\\":[]},{\\"width\\":300,\\"height\\":100,\\"sizes\\":[[300,250],[320,50],[320,48],[300,50]]},{\\"width\\":768,\\"height\\":90,\\"sizes\\":[[728,90]]},{\\"width\\":1024,\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]]}],\\"bids\\":[{\\"bidder\\":\\"appnexus\\",\\"params\\":{\\"placementId\\":\\"5823281\\",\\"section\\":\\"mock-section\\"}},{\\"bidder\\":\\"rubicon\\",\\"params\\":{\\"accountId\\":\\"14062\\",\\"siteId\\":\\"70608\\",\\"zoneId\\":\\"335918\\",\\"inventory\\":{\\"section\\":\\"mock-section\\"}}},{\\"bidder\\":\\"indexExchange\\",\\"params\\":{\\"id\\":\\"mock-code\\",\\"siteID\\":\\"1234\\"}},{\\"bidder\\":\\"pubmatic\\",\\"params\\":{\\"publisherId\\":\\"01234\\",\\"adSlot\\":\\"TheTimes@300x250\\",\\"section\\":\\"mock-section\\"}},{\\"bidder\\":\\"criteo\\",\\"params\\":{\\"zoneId\\":\\"764879\\"}},{\\"bidder\\":\\"pubmatic\\",\\"params\\":{\\"publisherId\\":\\"01234\\",\\"adSlot\\":\\"TheTimes@320x50\\",\\"section\\":\\"mock-section\\"}},{\\"bidder\\":\\"criteo\\",\\"params\\":{\\"zoneId\\":\\"764882\\"}},{\\"bidder\\":\\"pubmatic\\",\\"params\\":{\\"publisherId\\":\\"01234\\",\\"adSlot\\":\\"TheTimes@320x48\\",\\"section\\":\\"mock-section\\"}},{\\"bidder\\":\\"pubmatic\\",\\"params\\":{\\"publisherId\\":\\"01234\\",\\"adSlot\\":\\"TheTimes@300x50\\",\\"section\\":\\"mock-section\\"}}]};
-                  var PREBID_TIMEOUT = 1000;
-                  var adUnits = [{
-                      code: config.code,
-                      sizes: config.sizes,
-                      bids: config.bids
-                  }];
-      
-                  function notifyAdReady() {
-                    document.title = 'AD_READY';
-                    window.location.hash = ++i;
-                  }
-      
-                  function initPrebidDefaults() {
-                    window.pbjs = window.pbjs || {};
-                    pbjs.que = pbjs.que || [];
-                  }
-      
-                  function addServices () {
-                    googletag.cmd.push(function () {
-                      const slotName = '/mock-network-id/mock-ad-unit/mock-section';
-                      googletag
-                        .defineSlot(slotName, config.sizes, config.code)
-                        .addService(googletag.pubads());
-      
-                      googletag.pubads().enableSingleRequest();
-                      googletag.enableServices();
-                    });
-                  }
-      
-                  function sendAdserverRequest () {
-                    if (pbjs.adserverRequestSent) return;
-                    notifyAdReady();
-                    pbjs.adserverRequestSent = true;
-                    googletag.cmd.push(function() {
-                      pbjs.que.push(function() {
-                        pbjs.setTargetingForGPTAsync();
-                        googletag.display(config.code);
-                        googletag.pubads().refresh();
-                      });
-                    });
-                  }
-      
-                  function initGoogleTagDefaults () {
-                    window.googletag = window.googletag || {};
-                    googletag.cmd = googletag.cmd || [];
-                    googletag.cmd.push(function() {
-                      googletag.pubads().disableInitialLoad();
-                    });
-      
-                    addServices();
-      
-                    pbjs.que.push(function() {
-                      pbjs.addAdUnits(adUnits);
-                      pbjs.requestBids({
-                        bidsBackHandler: sendAdserverRequest
-                      });
-                    });
-      
-                    setTimeout(function() {
-                      sendAdserverRequest();
-                    }, PREBID_TIMEOUT);
-                  }
-      
-                  function init () {
-                    initPrebidDefaults();
-                    initGoogleTagDefaults();
-                  }
-                  init();
-      
-                </script>
-              </body>
-            </html>
-            ",
+      <html>
+        <head>
+          <style>
+            body {
+              display: table;
+              height: 100%;
+              margin: 0 auto;
+              overflow:hidden;
+              text-align: center;
+              width: 100%;
+            }
+            div#mock-code {
+              display: table-cell;
+              vertical-align: middle;
+            }
+          </style>
+          <script async src=\\"https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js\\"></script>
+          <script async src=\\"https://www.googletagservices.com/tag/js/gpt.js\\"></script>
+        </head>
+        <body>
+          <div id='mock-code'>
+          </div>
+
+          <script>
+            var i = 0;
+            const config = {\\"code\\":\\"mock-code\\",\\"sizes\\":[[300,250],[320,50],[320,48],[300,50]],\\"maxSizes\\":{\\"width\\":320,\\"height\\":250},\\"mappings\\":[{\\"width\\":0,\\"height\\":0,\\"sizes\\":[]},{\\"width\\":300,\\"height\\":100,\\"sizes\\":[[300,250],[320,50],[320,48],[300,50]]},{\\"width\\":768,\\"height\\":90,\\"sizes\\":[[728,90]]},{\\"width\\":1024,\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]]}],\\"bids\\":[{\\"bidder\\":\\"appnexus\\",\\"params\\":{\\"placementId\\":\\"5823281\\",\\"section\\":\\"mock-section\\"}},{\\"bidder\\":\\"rubicon\\",\\"params\\":{\\"accountId\\":\\"14062\\",\\"siteId\\":\\"70608\\",\\"zoneId\\":\\"335918\\",\\"inventory\\":{\\"section\\":\\"mock-section\\"}}},{\\"bidder\\":\\"indexExchange\\",\\"params\\":{\\"id\\":\\"mock-code\\",\\"siteID\\":\\"1234\\"}},{\\"bidder\\":\\"pubmatic\\",\\"params\\":{\\"publisherId\\":\\"01234\\",\\"adSlot\\":\\"TheTimes@300x250\\",\\"section\\":\\"mock-section\\"}},{\\"bidder\\":\\"criteo\\",\\"params\\":{\\"zoneId\\":\\"764879\\"}},{\\"bidder\\":\\"pubmatic\\",\\"params\\":{\\"publisherId\\":\\"01234\\",\\"adSlot\\":\\"TheTimes@320x50\\",\\"section\\":\\"mock-section\\"}},{\\"bidder\\":\\"criteo\\",\\"params\\":{\\"zoneId\\":\\"764882\\"}},{\\"bidder\\":\\"pubmatic\\",\\"params\\":{\\"publisherId\\":\\"01234\\",\\"adSlot\\":\\"TheTimes@320x48\\",\\"section\\":\\"mock-section\\"}},{\\"bidder\\":\\"pubmatic\\",\\"params\\":{\\"publisherId\\":\\"01234\\",\\"adSlot\\":\\"TheTimes@300x50\\",\\"section\\":\\"mock-section\\"}}]};
+            var PREBID_TIMEOUT = 1000;
+            var adUnits = [{
+                code: config.code,
+                sizes: config.sizes,
+                bids: config.bids
+            }];
+
+            function notifyAdReady() {
+              document.title = 'AD_READY';
+              window.location.hash = ++i;
+            }
+
+            function initPrebidDefaults() {
+              window.pbjs = window.pbjs || {};
+              pbjs.que = pbjs.que || [];
+            }
+
+            function addServices () {
+              googletag.cmd.push(function () {
+                const slotName = '/mock-network-id/mock-ad-unit/mock-section';
+                googletag
+                  .defineSlot(slotName, config.sizes, config.code)
+                  .addService(googletag.pubads());
+
+                googletag.pubads().enableSingleRequest();
+                googletag.enableServices();
+              });
+            }
+
+            function sendAdserverRequest () {
+              if (pbjs.adserverRequestSent) return;
+              notifyAdReady();
+              pbjs.adserverRequestSent = true;
+              googletag.cmd.push(function() {
+                pbjs.que.push(function() {
+                  pbjs.setTargetingForGPTAsync();
+                  googletag.display(config.code);
+                  googletag.pubads().refresh();
+                });
+              });
+            }
+
+            function initGoogleTagDefaults () {
+              window.googletag = window.googletag || {};
+              googletag.cmd = googletag.cmd || [];
+              googletag.cmd.push(function() {
+                googletag.pubads().disableInitialLoad();
+              });
+
+              addServices();
+
+              pbjs.que.push(function() {
+                pbjs.addAdUnits(adUnits);
+                pbjs.requestBids({
+                  bidsBackHandler: sendAdserverRequest
+                });
+              });
+
+              setTimeout(function() {
+                sendAdserverRequest();
+              }, PREBID_TIMEOUT);
+            }
+
+            function init () {
+              initPrebidDefaults();
+              initGoogleTagDefaults();
+            }
+            init();
+
+          </script>
+        </body>
+      </html>
+      ",
       }
     }
     style={
