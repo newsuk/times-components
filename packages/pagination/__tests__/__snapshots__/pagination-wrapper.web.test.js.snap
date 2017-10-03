@@ -6,7 +6,7 @@ exports[`Pagination Wrapper Web renders inner component with page 1 1`] = `
   dir="auto"
 >
   {
-    "page": 1
-  }
+  "page": 1
+}
 </div>
 `;

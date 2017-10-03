@@ -12,7 +12,7 @@ ShallowWrapper {
     onPrev={[Function]}
     page={1}
     pageSize={20}
-/>,
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -29,40 +29,40 @@ ShallowWrapper {
         null,
         <View
           style={
-                    Array [
-                              Object {
-                                "alignItems": "center",
-                                "flexDirection": "row",
-                                "height": 40,
-                                "justifyContent": "space-between",
-                              },
-                              Object {
-                                "borderBottomColor": "#dbdbdb",
-                                "borderBottomWidth": 1,
-                                "borderStyle": "solid",
-                                "borderTopColor": "#dbdbdb",
-                                "borderTopWidth": 1,
-                              },
-                            ]
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 40,
+                "justifyContent": "space-between",
+              },
+              Object {
+                "borderBottomColor": "#dbdbdb",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+                "borderTopColor": "#dbdbdb",
+                "borderTopWidth": 1,
+              },
+            ]
           }
->
+        >
           <View />
           <View>
-                    <TextLink
-                              onPress={[Function]}
-                              style={
-                                        Object {
-                                                  "color": "#006699",
-                                                  "fontFamily": "GillSansMTStd-Medium",
-                                                  "fontSize": 14,
-                                                }
-                              }
-                              url="./2"
-                    >
-                              Next page &gt;
-                    </TextLink>
+            <TextLink
+              onPress={[Function]}
+              style={
+                Object {
+                  "color": "#006699",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 14,
+                }
+              }
+              url="./2"
+            >
+              Next page &gt;
+            </TextLink>
           </View>
-</View>,
+        </View>,
       ],
       "onLayout": [Function],
       "style": Object {
@@ -82,19 +82,19 @@ ShallowWrapper {
             <View />,
             <View>
               <TextLink
-                            onPress={[Function]}
-                            style={
-                                          Object {
-                                                        "color": "#006699",
-                                                        "fontFamily": "GillSansMTStd-Medium",
-                                                        "fontSize": 14,
-                                                      }
-                            }
-                            url="./2"
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
+                }
+                url="./2"
               >
-                            Next page &gt;
+                Next page &gt;
               </TextLink>
-</View>,
+            </View>,
           ],
           "style": Array [
             Object {
@@ -133,16 +133,16 @@ ShallowWrapper {
               "children": <TextLink
                 onPress={[Function]}
                 style={
-                                Object {
-                                                "color": "#006699",
-                                                "fontFamily": "GillSansMTStd-Medium",
-                                                "fontSize": 14,
-                                              }
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
                 }
                 url="./2"
->
+              >
                 Next page &gt;
-</TextLink>,
+              </TextLink>,
             },
             "ref": null,
             "rendered": Object {
@@ -181,40 +181,40 @@ ShallowWrapper {
           null,
           <View
             style={
-                        Array [
-                                    Object {
-                                      "alignItems": "center",
-                                      "flexDirection": "row",
-                                      "height": 40,
-                                      "justifyContent": "space-between",
-                                    },
-                                    Object {
-                                      "borderBottomColor": "#dbdbdb",
-                                      "borderBottomWidth": 1,
-                                      "borderStyle": "solid",
-                                      "borderTopColor": "#dbdbdb",
-                                      "borderTopWidth": 1,
-                                    },
-                                  ]
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#dbdbdb",
+                  "borderTopWidth": 1,
+                },
+              ]
             }
->
+          >
             <View />
             <View>
-                        <TextLink
-                                    onPress={[Function]}
-                                    style={
-                                                Object {
-                                                            "color": "#006699",
-                                                            "fontFamily": "GillSansMTStd-Medium",
-                                                            "fontSize": 14,
-                                                          }
-                                    }
-                                    url="./2"
-                        >
-                                    Next page &gt;
-                        </TextLink>
+              <TextLink
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
+                }
+                url="./2"
+              >
+                Next page &gt;
+              </TextLink>
             </View>
-</View>,
+          </View>,
         ],
         "onLayout": [Function],
         "style": Object {
@@ -234,19 +234,19 @@ ShallowWrapper {
               <View />,
               <View>
                 <TextLink
-                                onPress={[Function]}
-                                style={
-                                                Object {
-                                                                "color": "#006699",
-                                                                "fontFamily": "GillSansMTStd-Medium",
-                                                                "fontSize": 14,
-                                                              }
-                                }
-                                url="./2"
+                  onPress={[Function]}
+                  style={
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 14,
+                    }
+                  }
+                  url="./2"
                 >
-                                Next page &gt;
+                  Next page &gt;
                 </TextLink>
-</View>,
+              </View>,
             ],
             "style": Array [
               Object {
@@ -285,16 +285,16 @@ ShallowWrapper {
                 "children": <TextLink
                   onPress={[Function]}
                   style={
-                                    Object {
-                                                      "color": "#006699",
-                                                      "fontFamily": "GillSansMTStd-Medium",
-                                                      "fontSize": 14,
-                                                    }
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 14,
+                    }
                   }
                   url="./2"
->
+                >
                   Next page &gt;
-</TextLink>,
+                </TextLink>,
               },
               "ref": null,
               "rendered": Object {
@@ -346,7 +346,7 @@ ShallowWrapper {
     onPrev={[Function]}
     page={1}
     pageSize={20}
-/>,
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -362,74 +362,74 @@ ShallowWrapper {
       "children": Array [
         <View
           style={
-                    Array [
-                              Object {
-                                "alignItems": "center",
-                                "flexDirection": "row",
-                                "height": 40,
-                                "justifyContent": "space-between",
-                              },
-                              Object {
-                                "justifyContent": "center",
-                              },
-                              null,
-                            ]
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 40,
+                "justifyContent": "space-between",
+              },
+              Object {
+                "justifyContent": "center",
+              },
+              null,
+            ]
           }
->
+        >
           <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    disabled={false}
-                    ellipsizeMode="tail"
-                    style={
-                              Array [
-                                        Object {
-                                          "color": "#696969",
-                                          "fontFamily": "GillSansMTStd-Medium",
-                                          "fontSize": 15,
-                                        },
-                                      ]
-                    }
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 15,
+                },
+              ]
+            }
           >
-                    Showing 1 - 20 of 21 results
+            Showing 1 - 20 of 21 results
           </Text>
-</View>,
+        </View>,
         <View
           style={
-                    Array [
-                              Object {
-                                "alignItems": "center",
-                                "flexDirection": "row",
-                                "height": 40,
-                                "justifyContent": "space-between",
-                              },
-                              Object {
-                                "borderBottomColor": "#dbdbdb",
-                                "borderBottomWidth": 1,
-                                "borderStyle": "solid",
-                                "borderTopColor": "#dbdbdb",
-                                "borderTopWidth": 1,
-                              },
-                            ]
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 40,
+                "justifyContent": "space-between",
+              },
+              Object {
+                "borderBottomColor": "#dbdbdb",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+                "borderTopColor": "#dbdbdb",
+                "borderTopWidth": 1,
+              },
+            ]
           }
->
+        >
           <View />
           <View>
-                    <TextLink
-                              onPress={[Function]}
-                              style={
-                                        Object {
-                                                  "color": "#006699",
-                                                  "fontFamily": "GillSansMTStd-Medium",
-                                                  "fontSize": 14,
-                                                }
-                              }
-                              url="./2"
-                    >
-                              Next page &gt;
-                    </TextLink>
+            <TextLink
+              onPress={[Function]}
+              style={
+                Object {
+                  "color": "#006699",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 14,
+                }
+              }
+              url="./2"
+            >
+              Next page &gt;
+            </TextLink>
           </View>
-</View>,
+        </View>,
       ],
       "onLayout": [Function],
       "style": Object {
@@ -450,17 +450,17 @@ ShallowWrapper {
             disabled={false}
             ellipsizeMode="tail"
             style={
-                        Array [
-                                    Object {
-                                      "color": "#696969",
-                                      "fontFamily": "GillSansMTStd-Medium",
-                                      "fontSize": 15,
-                                    },
-                                  ]
+              Array [
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 15,
+                },
+              ]
             }
->
+          >
             Showing 1 - 20 of 21 results
-</Text>,
+          </Text>,
           "style": Array [
             Object {
               "alignItems": "center",
@@ -508,19 +508,19 @@ ShallowWrapper {
             <View />,
             <View>
               <TextLink
-                            onPress={[Function]}
-                            style={
-                                          Object {
-                                                        "color": "#006699",
-                                                        "fontFamily": "GillSansMTStd-Medium",
-                                                        "fontSize": 14,
-                                                      }
-                            }
-                            url="./2"
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
+                }
+                url="./2"
               >
-                            Next page &gt;
+                Next page &gt;
               </TextLink>
-</View>,
+            </View>,
           ],
           "style": Array [
             Object {
@@ -559,16 +559,16 @@ ShallowWrapper {
               "children": <TextLink
                 onPress={[Function]}
                 style={
-                                Object {
-                                                "color": "#006699",
-                                                "fontFamily": "GillSansMTStd-Medium",
-                                                "fontSize": 14,
-                                              }
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
                 }
                 url="./2"
->
+              >
                 Next page &gt;
-</TextLink>,
+              </TextLink>,
             },
             "ref": null,
             "rendered": Object {
@@ -606,74 +606,74 @@ ShallowWrapper {
         "children": Array [
           <View
             style={
-                        Array [
-                                    Object {
-                                      "alignItems": "center",
-                                      "flexDirection": "row",
-                                      "height": 40,
-                                      "justifyContent": "space-between",
-                                    },
-                                    Object {
-                                      "justifyContent": "center",
-                                    },
-                                    null,
-                                  ]
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "justifyContent": "center",
+                },
+                null,
+              ]
             }
->
+          >
             <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        disabled={false}
-                        ellipsizeMode="tail"
-                        style={
-                                    Array [
-                                                Object {
-                                                  "color": "#696969",
-                                                  "fontFamily": "GillSansMTStd-Medium",
-                                                  "fontSize": 15,
-                                                },
-                                              ]
-                        }
+              accessible={true}
+              allowFontScaling={true}
+              disabled={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 15,
+                  },
+                ]
+              }
             >
-                        Showing 1 - 20 of 21 results
+              Showing 1 - 20 of 21 results
             </Text>
-</View>,
+          </View>,
           <View
             style={
-                        Array [
-                                    Object {
-                                      "alignItems": "center",
-                                      "flexDirection": "row",
-                                      "height": 40,
-                                      "justifyContent": "space-between",
-                                    },
-                                    Object {
-                                      "borderBottomColor": "#dbdbdb",
-                                      "borderBottomWidth": 1,
-                                      "borderStyle": "solid",
-                                      "borderTopColor": "#dbdbdb",
-                                      "borderTopWidth": 1,
-                                    },
-                                  ]
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#dbdbdb",
+                  "borderTopWidth": 1,
+                },
+              ]
             }
->
+          >
             <View />
             <View>
-                        <TextLink
-                                    onPress={[Function]}
-                                    style={
-                                                Object {
-                                                            "color": "#006699",
-                                                            "fontFamily": "GillSansMTStd-Medium",
-                                                            "fontSize": 14,
-                                                          }
-                                    }
-                                    url="./2"
-                        >
-                                    Next page &gt;
-                        </TextLink>
+              <TextLink
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
+                }
+                url="./2"
+              >
+                Next page &gt;
+              </TextLink>
             </View>
-</View>,
+          </View>,
         ],
         "onLayout": [Function],
         "style": Object {
@@ -694,17 +694,17 @@ ShallowWrapper {
               disabled={false}
               ellipsizeMode="tail"
               style={
-                            Array [
-                                          Object {
-                                            "color": "#696969",
-                                            "fontFamily": "GillSansMTStd-Medium",
-                                            "fontSize": 15,
-                                          },
-                                        ]
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 15,
+                  },
+                ]
               }
->
+            >
               Showing 1 - 20 of 21 results
-</Text>,
+            </Text>,
             "style": Array [
               Object {
                 "alignItems": "center",
@@ -752,19 +752,19 @@ ShallowWrapper {
               <View />,
               <View>
                 <TextLink
-                                onPress={[Function]}
-                                style={
-                                                Object {
-                                                                "color": "#006699",
-                                                                "fontFamily": "GillSansMTStd-Medium",
-                                                                "fontSize": 14,
-                                                              }
-                                }
-                                url="./2"
+                  onPress={[Function]}
+                  style={
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 14,
+                    }
+                  }
+                  url="./2"
                 >
-                                Next page &gt;
+                  Next page &gt;
                 </TextLink>
-</View>,
+              </View>,
             ],
             "style": Array [
               Object {
@@ -803,16 +803,16 @@ ShallowWrapper {
                 "children": <TextLink
                   onPress={[Function]}
                   style={
-                                    Object {
-                                                      "color": "#006699",
-                                                      "fontFamily": "GillSansMTStd-Medium",
-                                                      "fontSize": 14,
-                                                    }
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 14,
+                    }
                   }
                   url="./2"
->
+                >
                   Next page &gt;
-</TextLink>,
+                </TextLink>,
               },
               "ref": null,
               "rendered": Object {
@@ -864,7 +864,7 @@ ShallowWrapper {
     onPrev={[Function]}
     page={2}
     pageSize={20}
-/>,
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -880,88 +880,88 @@ ShallowWrapper {
       "children": Array [
         <View
           style={
-                    Array [
-                              Object {
-                                "alignItems": "center",
-                                "flexDirection": "row",
-                                "height": 40,
-                                "justifyContent": "space-between",
-                              },
-                              Object {
-                                "justifyContent": "center",
-                              },
-                              null,
-                            ]
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 40,
+                "justifyContent": "space-between",
+              },
+              Object {
+                "justifyContent": "center",
+              },
+              null,
+            ]
           }
->
+        >
           <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    disabled={false}
-                    ellipsizeMode="tail"
-                    style={
-                              Array [
-                                        Object {
-                                          "color": "#696969",
-                                          "fontFamily": "GillSansMTStd-Medium",
-                                          "fontSize": 15,
-                                        },
-                                      ]
-                    }
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 15,
+                },
+              ]
+            }
           >
-                    Showing 21 - 40 of 41 results
+            Showing 21 - 40 of 41 results
           </Text>
-</View>,
+        </View>,
         <View
           style={
-                    Array [
-                              Object {
-                                "alignItems": "center",
-                                "flexDirection": "row",
-                                "height": 40,
-                                "justifyContent": "space-between",
-                              },
-                              Object {
-                                "borderBottomColor": "#dbdbdb",
-                                "borderBottomWidth": 1,
-                                "borderStyle": "solid",
-                                "borderTopColor": "#dbdbdb",
-                                "borderTopWidth": 1,
-                              },
-                            ]
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 40,
+                "justifyContent": "space-between",
+              },
+              Object {
+                "borderBottomColor": "#dbdbdb",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+                "borderTopColor": "#dbdbdb",
+                "borderTopWidth": 1,
+              },
+            ]
           }
->
+        >
           <View>
-                    <TextLink
-                              onPress={[Function]}
-                              style={
-                                        Object {
-                                                  "color": "#006699",
-                                                  "fontFamily": "GillSansMTStd-Medium",
-                                                  "fontSize": 14,
-                                                }
-                              }
-                              url="./1"
-                    >
-                              &lt; Previous page
-                    </TextLink>
+            <TextLink
+              onPress={[Function]}
+              style={
+                Object {
+                  "color": "#006699",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 14,
+                }
+              }
+              url="./1"
+            >
+              &lt; Previous page
+            </TextLink>
           </View>
           <View>
-                    <TextLink
-                              onPress={[Function]}
-                              style={
-                                        Object {
-                                                  "color": "#006699",
-                                                  "fontFamily": "GillSansMTStd-Medium",
-                                                  "fontSize": 14,
-                                                }
-                              }
-                              url="./3"
-                    >
-                              Next page &gt;
-                    </TextLink>
+            <TextLink
+              onPress={[Function]}
+              style={
+                Object {
+                  "color": "#006699",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 14,
+                }
+              }
+              url="./3"
+            >
+              Next page &gt;
+            </TextLink>
           </View>
-</View>,
+        </View>,
       ],
       "onLayout": [Function],
       "style": Object {
@@ -982,17 +982,17 @@ ShallowWrapper {
             disabled={false}
             ellipsizeMode="tail"
             style={
-                        Array [
-                                    Object {
-                                      "color": "#696969",
-                                      "fontFamily": "GillSansMTStd-Medium",
-                                      "fontSize": 15,
-                                    },
-                                  ]
+              Array [
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 15,
+                },
+              ]
             }
->
+          >
             Showing 21 - 40 of 41 results
-</Text>,
+          </Text>,
           "style": Array [
             Object {
               "alignItems": "center",
@@ -1039,34 +1039,34 @@ ShallowWrapper {
           "children": Array [
             <View>
               <TextLink
-                            onPress={[Function]}
-                            style={
-                                          Object {
-                                                        "color": "#006699",
-                                                        "fontFamily": "GillSansMTStd-Medium",
-                                                        "fontSize": 14,
-                                                      }
-                            }
-                            url="./1"
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
+                }
+                url="./1"
               >
-                            &lt; Previous page
+                &lt; Previous page
               </TextLink>
-</View>,
+            </View>,
             <View>
               <TextLink
-                            onPress={[Function]}
-                            style={
-                                          Object {
-                                                        "color": "#006699",
-                                                        "fontFamily": "GillSansMTStd-Medium",
-                                                        "fontSize": 14,
-                                                      }
-                            }
-                            url="./3"
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
+                }
+                url="./3"
               >
-                            Next page &gt;
+                Next page &gt;
               </TextLink>
-</View>,
+            </View>,
           ],
           "style": Array [
             Object {
@@ -1094,16 +1094,16 @@ ShallowWrapper {
               "children": <TextLink
                 onPress={[Function]}
                 style={
-                                Object {
-                                                "color": "#006699",
-                                                "fontFamily": "GillSansMTStd-Medium",
-                                                "fontSize": 14,
-                                              }
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
                 }
                 url="./1"
->
+              >
                 &lt; Previous page
-</TextLink>,
+              </TextLink>,
             },
             "ref": null,
             "rendered": Object {
@@ -1134,16 +1134,16 @@ ShallowWrapper {
               "children": <TextLink
                 onPress={[Function]}
                 style={
-                                Object {
-                                                "color": "#006699",
-                                                "fontFamily": "GillSansMTStd-Medium",
-                                                "fontSize": 14,
-                                              }
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
                 }
                 url="./3"
->
+              >
                 Next page &gt;
-</TextLink>,
+              </TextLink>,
             },
             "ref": null,
             "rendered": Object {
@@ -1181,88 +1181,88 @@ ShallowWrapper {
         "children": Array [
           <View
             style={
-                        Array [
-                                    Object {
-                                      "alignItems": "center",
-                                      "flexDirection": "row",
-                                      "height": 40,
-                                      "justifyContent": "space-between",
-                                    },
-                                    Object {
-                                      "justifyContent": "center",
-                                    },
-                                    null,
-                                  ]
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "justifyContent": "center",
+                },
+                null,
+              ]
             }
->
+          >
             <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        disabled={false}
-                        ellipsizeMode="tail"
-                        style={
-                                    Array [
-                                                Object {
-                                                  "color": "#696969",
-                                                  "fontFamily": "GillSansMTStd-Medium",
-                                                  "fontSize": 15,
-                                                },
-                                              ]
-                        }
+              accessible={true}
+              allowFontScaling={true}
+              disabled={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 15,
+                  },
+                ]
+              }
             >
-                        Showing 21 - 40 of 41 results
+              Showing 21 - 40 of 41 results
             </Text>
-</View>,
+          </View>,
           <View
             style={
-                        Array [
-                                    Object {
-                                      "alignItems": "center",
-                                      "flexDirection": "row",
-                                      "height": 40,
-                                      "justifyContent": "space-between",
-                                    },
-                                    Object {
-                                      "borderBottomColor": "#dbdbdb",
-                                      "borderBottomWidth": 1,
-                                      "borderStyle": "solid",
-                                      "borderTopColor": "#dbdbdb",
-                                      "borderTopWidth": 1,
-                                    },
-                                  ]
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#dbdbdb",
+                  "borderTopWidth": 1,
+                },
+              ]
             }
->
+          >
             <View>
-                        <TextLink
-                                    onPress={[Function]}
-                                    style={
-                                                Object {
-                                                            "color": "#006699",
-                                                            "fontFamily": "GillSansMTStd-Medium",
-                                                            "fontSize": 14,
-                                                          }
-                                    }
-                                    url="./1"
-                        >
-                                    &lt; Previous page
-                        </TextLink>
+              <TextLink
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
+                }
+                url="./1"
+              >
+                &lt; Previous page
+              </TextLink>
             </View>
             <View>
-                        <TextLink
-                                    onPress={[Function]}
-                                    style={
-                                                Object {
-                                                            "color": "#006699",
-                                                            "fontFamily": "GillSansMTStd-Medium",
-                                                            "fontSize": 14,
-                                                          }
-                                    }
-                                    url="./3"
-                        >
-                                    Next page &gt;
-                        </TextLink>
+              <TextLink
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
+                }
+                url="./3"
+              >
+                Next page &gt;
+              </TextLink>
             </View>
-</View>,
+          </View>,
         ],
         "onLayout": [Function],
         "style": Object {
@@ -1283,17 +1283,17 @@ ShallowWrapper {
               disabled={false}
               ellipsizeMode="tail"
               style={
-                            Array [
-                                          Object {
-                                            "color": "#696969",
-                                            "fontFamily": "GillSansMTStd-Medium",
-                                            "fontSize": 15,
-                                          },
-                                        ]
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 15,
+                  },
+                ]
               }
->
+            >
               Showing 21 - 40 of 41 results
-</Text>,
+            </Text>,
             "style": Array [
               Object {
                 "alignItems": "center",
@@ -1340,34 +1340,34 @@ ShallowWrapper {
             "children": Array [
               <View>
                 <TextLink
-                                onPress={[Function]}
-                                style={
-                                                Object {
-                                                                "color": "#006699",
-                                                                "fontFamily": "GillSansMTStd-Medium",
-                                                                "fontSize": 14,
-                                                              }
-                                }
-                                url="./1"
+                  onPress={[Function]}
+                  style={
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 14,
+                    }
+                  }
+                  url="./1"
                 >
-                                &lt; Previous page
+                  &lt; Previous page
                 </TextLink>
-</View>,
+              </View>,
               <View>
                 <TextLink
-                                onPress={[Function]}
-                                style={
-                                                Object {
-                                                                "color": "#006699",
-                                                                "fontFamily": "GillSansMTStd-Medium",
-                                                                "fontSize": 14,
-                                                              }
-                                }
-                                url="./3"
+                  onPress={[Function]}
+                  style={
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 14,
+                    }
+                  }
+                  url="./3"
                 >
-                                Next page &gt;
+                  Next page &gt;
                 </TextLink>
-</View>,
+              </View>,
             ],
             "style": Array [
               Object {
@@ -1395,16 +1395,16 @@ ShallowWrapper {
                 "children": <TextLink
                   onPress={[Function]}
                   style={
-                                    Object {
-                                                      "color": "#006699",
-                                                      "fontFamily": "GillSansMTStd-Medium",
-                                                      "fontSize": 14,
-                                                    }
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 14,
+                    }
                   }
                   url="./1"
->
+                >
                   &lt; Previous page
-</TextLink>,
+                </TextLink>,
               },
               "ref": null,
               "rendered": Object {
@@ -1435,16 +1435,16 @@ ShallowWrapper {
                 "children": <TextLink
                   onPress={[Function]}
                   style={
-                                    Object {
-                                                      "color": "#006699",
-                                                      "fontFamily": "GillSansMTStd-Medium",
-                                                      "fontSize": 14,
-                                                    }
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 14,
+                    }
                   }
                   url="./3"
->
+                >
                   Next page &gt;
-</TextLink>,
+                </TextLink>,
               },
               "ref": null,
               "rendered": Object {
@@ -1496,7 +1496,7 @@ ShallowWrapper {
     onPrev={[Function]}
     page={3}
     pageSize={20}
-/>,
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -1512,74 +1512,74 @@ ShallowWrapper {
       "children": Array [
         <View
           style={
-                    Array [
-                              Object {
-                                "alignItems": "center",
-                                "flexDirection": "row",
-                                "height": 40,
-                                "justifyContent": "space-between",
-                              },
-                              Object {
-                                "justifyContent": "center",
-                              },
-                              null,
-                            ]
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 40,
+                "justifyContent": "space-between",
+              },
+              Object {
+                "justifyContent": "center",
+              },
+              null,
+            ]
           }
->
+        >
           <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    disabled={false}
-                    ellipsizeMode="tail"
-                    style={
-                              Array [
-                                        Object {
-                                          "color": "#696969",
-                                          "fontFamily": "GillSansMTStd-Medium",
-                                          "fontSize": 15,
-                                        },
-                                      ]
-                    }
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 15,
+                },
+              ]
+            }
           >
-                    Showing 41 - 41 of 41 results
+            Showing 41 - 41 of 41 results
           </Text>
-</View>,
+        </View>,
         <View
           style={
-                    Array [
-                              Object {
-                                "alignItems": "center",
-                                "flexDirection": "row",
-                                "height": 40,
-                                "justifyContent": "space-between",
-                              },
-                              Object {
-                                "borderBottomColor": "#dbdbdb",
-                                "borderBottomWidth": 1,
-                                "borderStyle": "solid",
-                                "borderTopColor": "#dbdbdb",
-                                "borderTopWidth": 1,
-                              },
-                            ]
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 40,
+                "justifyContent": "space-between",
+              },
+              Object {
+                "borderBottomColor": "#dbdbdb",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+                "borderTopColor": "#dbdbdb",
+                "borderTopWidth": 1,
+              },
+            ]
           }
->
+        >
           <View>
-                    <TextLink
-                              onPress={[Function]}
-                              style={
-                                        Object {
-                                                  "color": "#006699",
-                                                  "fontFamily": "GillSansMTStd-Medium",
-                                                  "fontSize": 14,
-                                                }
-                              }
-                              url="./2"
-                    >
-                              &lt; Previous page
-                    </TextLink>
+            <TextLink
+              onPress={[Function]}
+              style={
+                Object {
+                  "color": "#006699",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 14,
+                }
+              }
+              url="./2"
+            >
+              &lt; Previous page
+            </TextLink>
           </View>
           <View />
-</View>,
+        </View>,
       ],
       "onLayout": [Function],
       "style": Object {
@@ -1600,17 +1600,17 @@ ShallowWrapper {
             disabled={false}
             ellipsizeMode="tail"
             style={
-                        Array [
-                                    Object {
-                                      "color": "#696969",
-                                      "fontFamily": "GillSansMTStd-Medium",
-                                      "fontSize": 15,
-                                    },
-                                  ]
+              Array [
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 15,
+                },
+              ]
             }
->
+          >
             Showing 41 - 41 of 41 results
-</Text>,
+          </Text>,
           "style": Array [
             Object {
               "alignItems": "center",
@@ -1657,19 +1657,19 @@ ShallowWrapper {
           "children": Array [
             <View>
               <TextLink
-                            onPress={[Function]}
-                            style={
-                                          Object {
-                                                        "color": "#006699",
-                                                        "fontFamily": "GillSansMTStd-Medium",
-                                                        "fontSize": 14,
-                                                      }
-                            }
-                            url="./2"
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
+                }
+                url="./2"
               >
-                            &lt; Previous page
+                &lt; Previous page
               </TextLink>
-</View>,
+            </View>,
             <View />,
           ],
           "style": Array [
@@ -1698,16 +1698,16 @@ ShallowWrapper {
               "children": <TextLink
                 onPress={[Function]}
                 style={
-                                Object {
-                                                "color": "#006699",
-                                                "fontFamily": "GillSansMTStd-Medium",
-                                                "fontSize": 14,
-                                              }
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
                 }
                 url="./2"
->
+              >
                 &lt; Previous page
-</TextLink>,
+              </TextLink>,
             },
             "ref": null,
             "rendered": Object {
@@ -1756,74 +1756,74 @@ ShallowWrapper {
         "children": Array [
           <View
             style={
-                        Array [
-                                    Object {
-                                      "alignItems": "center",
-                                      "flexDirection": "row",
-                                      "height": 40,
-                                      "justifyContent": "space-between",
-                                    },
-                                    Object {
-                                      "justifyContent": "center",
-                                    },
-                                    null,
-                                  ]
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "justifyContent": "center",
+                },
+                null,
+              ]
             }
->
+          >
             <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        disabled={false}
-                        ellipsizeMode="tail"
-                        style={
-                                    Array [
-                                                Object {
-                                                  "color": "#696969",
-                                                  "fontFamily": "GillSansMTStd-Medium",
-                                                  "fontSize": 15,
-                                                },
-                                              ]
-                        }
+              accessible={true}
+              allowFontScaling={true}
+              disabled={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 15,
+                  },
+                ]
+              }
             >
-                        Showing 41 - 41 of 41 results
+              Showing 41 - 41 of 41 results
             </Text>
-</View>,
+          </View>,
           <View
             style={
-                        Array [
-                                    Object {
-                                      "alignItems": "center",
-                                      "flexDirection": "row",
-                                      "height": 40,
-                                      "justifyContent": "space-between",
-                                    },
-                                    Object {
-                                      "borderBottomColor": "#dbdbdb",
-                                      "borderBottomWidth": 1,
-                                      "borderStyle": "solid",
-                                      "borderTopColor": "#dbdbdb",
-                                      "borderTopWidth": 1,
-                                    },
-                                  ]
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#dbdbdb",
+                  "borderTopWidth": 1,
+                },
+              ]
             }
->
+          >
             <View>
-                        <TextLink
-                                    onPress={[Function]}
-                                    style={
-                                                Object {
-                                                            "color": "#006699",
-                                                            "fontFamily": "GillSansMTStd-Medium",
-                                                            "fontSize": 14,
-                                                          }
-                                    }
-                                    url="./2"
-                        >
-                                    &lt; Previous page
-                        </TextLink>
+              <TextLink
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
+                }
+                url="./2"
+              >
+                &lt; Previous page
+              </TextLink>
             </View>
             <View />
-</View>,
+          </View>,
         ],
         "onLayout": [Function],
         "style": Object {
@@ -1844,17 +1844,17 @@ ShallowWrapper {
               disabled={false}
               ellipsizeMode="tail"
               style={
-                            Array [
-                                          Object {
-                                            "color": "#696969",
-                                            "fontFamily": "GillSansMTStd-Medium",
-                                            "fontSize": 15,
-                                          },
-                                        ]
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 15,
+                  },
+                ]
               }
->
+            >
               Showing 41 - 41 of 41 results
-</Text>,
+            </Text>,
             "style": Array [
               Object {
                 "alignItems": "center",
@@ -1901,19 +1901,19 @@ ShallowWrapper {
             "children": Array [
               <View>
                 <TextLink
-                                onPress={[Function]}
-                                style={
-                                                Object {
-                                                                "color": "#006699",
-                                                                "fontFamily": "GillSansMTStd-Medium",
-                                                                "fontSize": 14,
-                                                              }
-                                }
-                                url="./2"
+                  onPress={[Function]}
+                  style={
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 14,
+                    }
+                  }
+                  url="./2"
                 >
-                                &lt; Previous page
+                  &lt; Previous page
                 </TextLink>
-</View>,
+              </View>,
               <View />,
             ],
             "style": Array [
@@ -1942,16 +1942,16 @@ ShallowWrapper {
                 "children": <TextLink
                   onPress={[Function]}
                   style={
-                                    Object {
-                                                      "color": "#006699",
-                                                      "fontFamily": "GillSansMTStd-Medium",
-                                                      "fontSize": 14,
-                                                    }
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 14,
+                    }
                   }
                   url="./2"
->
+                >
                   &lt; Previous page
-</TextLink>,
+                </TextLink>,
               },
               "ref": null,
               "rendered": Object {
@@ -2014,7 +2014,7 @@ ShallowWrapper {
     onPrev={[Function]}
     page={1}
     pageSize={20}
-/>,
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -2030,74 +2030,74 @@ ShallowWrapper {
       "children": Array [
         <View
           style={
-                    Array [
-                              Object {
-                                "alignItems": "center",
-                                "flexDirection": "row",
-                                "height": 40,
-                                "justifyContent": "space-between",
-                              },
-                              Object {
-                                "justifyContent": "center",
-                              },
-                              null,
-                            ]
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 40,
+                "justifyContent": "space-between",
+              },
+              Object {
+                "justifyContent": "center",
+              },
+              null,
+            ]
           }
->
+        >
           <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    disabled={false}
-                    ellipsizeMode="tail"
-                    style={
-                              Array [
-                                        Object {
-                                          "color": "#696969",
-                                          "fontFamily": "GillSansMTStd-Medium",
-                                          "fontSize": 15,
-                                        },
-                                      ]
-                    }
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 15,
+                },
+              ]
+            }
           >
-                    Showing 1 - 20 of 41 results
+            Showing 1 - 20 of 41 results
           </Text>
-</View>,
+        </View>,
         <View
           style={
-                    Array [
-                              Object {
-                                "alignItems": "center",
-                                "flexDirection": "row",
-                                "height": 40,
-                                "justifyContent": "space-between",
-                              },
-                              Object {
-                                "borderBottomColor": "#dbdbdb",
-                                "borderBottomWidth": 1,
-                                "borderStyle": "solid",
-                                "borderTopColor": "#dbdbdb",
-                                "borderTopWidth": 1,
-                              },
-                            ]
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 40,
+                "justifyContent": "space-between",
+              },
+              Object {
+                "borderBottomColor": "#dbdbdb",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+                "borderTopColor": "#dbdbdb",
+                "borderTopWidth": 1,
+              },
+            ]
           }
->
+        >
           <View />
           <View>
-                    <TextLink
-                              onPress={[Function]}
-                              style={
-                                        Object {
-                                                  "color": "#006699",
-                                                  "fontFamily": "GillSansMTStd-Medium",
-                                                  "fontSize": 14,
-                                                }
-                              }
-                              url="./2"
-                    >
-                              Next page &gt;
-                    </TextLink>
+            <TextLink
+              onPress={[Function]}
+              style={
+                Object {
+                  "color": "#006699",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 14,
+                }
+              }
+              url="./2"
+            >
+              Next page &gt;
+            </TextLink>
           </View>
-</View>,
+        </View>,
       ],
       "onLayout": [Function],
       "style": Object {
@@ -2118,17 +2118,17 @@ ShallowWrapper {
             disabled={false}
             ellipsizeMode="tail"
             style={
-                        Array [
-                                    Object {
-                                      "color": "#696969",
-                                      "fontFamily": "GillSansMTStd-Medium",
-                                      "fontSize": 15,
-                                    },
-                                  ]
+              Array [
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 15,
+                },
+              ]
             }
->
+          >
             Showing 1 - 20 of 41 results
-</Text>,
+          </Text>,
           "style": Array [
             Object {
               "alignItems": "center",
@@ -2176,19 +2176,19 @@ ShallowWrapper {
             <View />,
             <View>
               <TextLink
-                            onPress={[Function]}
-                            style={
-                                          Object {
-                                                        "color": "#006699",
-                                                        "fontFamily": "GillSansMTStd-Medium",
-                                                        "fontSize": 14,
-                                                      }
-                            }
-                            url="./2"
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
+                }
+                url="./2"
               >
-                            Next page &gt;
+                Next page &gt;
               </TextLink>
-</View>,
+            </View>,
           ],
           "style": Array [
             Object {
@@ -2227,16 +2227,16 @@ ShallowWrapper {
               "children": <TextLink
                 onPress={[Function]}
                 style={
-                                Object {
-                                                "color": "#006699",
-                                                "fontFamily": "GillSansMTStd-Medium",
-                                                "fontSize": 14,
-                                              }
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
                 }
                 url="./2"
->
+              >
                 Next page &gt;
-</TextLink>,
+              </TextLink>,
             },
             "ref": null,
             "rendered": Object {
@@ -2274,74 +2274,74 @@ ShallowWrapper {
         "children": Array [
           <View
             style={
-                        Array [
-                                    Object {
-                                      "alignItems": "center",
-                                      "flexDirection": "row",
-                                      "height": 40,
-                                      "justifyContent": "space-between",
-                                    },
-                                    Object {
-                                      "justifyContent": "center",
-                                    },
-                                    null,
-                                  ]
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "justifyContent": "center",
+                },
+                null,
+              ]
             }
->
+          >
             <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        disabled={false}
-                        ellipsizeMode="tail"
-                        style={
-                                    Array [
-                                                Object {
-                                                  "color": "#696969",
-                                                  "fontFamily": "GillSansMTStd-Medium",
-                                                  "fontSize": 15,
-                                                },
-                                              ]
-                        }
+              accessible={true}
+              allowFontScaling={true}
+              disabled={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 15,
+                  },
+                ]
+              }
             >
-                        Showing 1 - 20 of 41 results
+              Showing 1 - 20 of 41 results
             </Text>
-</View>,
+          </View>,
           <View
             style={
-                        Array [
-                                    Object {
-                                      "alignItems": "center",
-                                      "flexDirection": "row",
-                                      "height": 40,
-                                      "justifyContent": "space-between",
-                                    },
-                                    Object {
-                                      "borderBottomColor": "#dbdbdb",
-                                      "borderBottomWidth": 1,
-                                      "borderStyle": "solid",
-                                      "borderTopColor": "#dbdbdb",
-                                      "borderTopWidth": 1,
-                                    },
-                                  ]
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#dbdbdb",
+                  "borderTopWidth": 1,
+                },
+              ]
             }
->
+          >
             <View />
             <View>
-                        <TextLink
-                                    onPress={[Function]}
-                                    style={
-                                                Object {
-                                                            "color": "#006699",
-                                                            "fontFamily": "GillSansMTStd-Medium",
-                                                            "fontSize": 14,
-                                                          }
-                                    }
-                                    url="./2"
-                        >
-                                    Next page &gt;
-                        </TextLink>
+              <TextLink
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
+                }
+                url="./2"
+              >
+                Next page &gt;
+              </TextLink>
             </View>
-</View>,
+          </View>,
         ],
         "onLayout": [Function],
         "style": Object {
@@ -2362,17 +2362,17 @@ ShallowWrapper {
               disabled={false}
               ellipsizeMode="tail"
               style={
-                            Array [
-                                          Object {
-                                            "color": "#696969",
-                                            "fontFamily": "GillSansMTStd-Medium",
-                                            "fontSize": 15,
-                                          },
-                                        ]
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 15,
+                  },
+                ]
               }
->
+            >
               Showing 1 - 20 of 41 results
-</Text>,
+            </Text>,
             "style": Array [
               Object {
                 "alignItems": "center",
@@ -2420,19 +2420,19 @@ ShallowWrapper {
               <View />,
               <View>
                 <TextLink
-                                onPress={[Function]}
-                                style={
-                                                Object {
-                                                                "color": "#006699",
-                                                                "fontFamily": "GillSansMTStd-Medium",
-                                                                "fontSize": 14,
-                                                              }
-                                }
-                                url="./2"
+                  onPress={[Function]}
+                  style={
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 14,
+                    }
+                  }
+                  url="./2"
                 >
-                                Next page &gt;
+                  Next page &gt;
                 </TextLink>
-</View>,
+              </View>,
             ],
             "style": Array [
               Object {
@@ -2471,16 +2471,16 @@ ShallowWrapper {
                 "children": <TextLink
                   onPress={[Function]}
                   style={
-                                    Object {
-                                                      "color": "#006699",
-                                                      "fontFamily": "GillSansMTStd-Medium",
-                                                      "fontSize": 14,
-                                                    }
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 14,
+                    }
                   }
                   url="./2"
->
+                >
                   Next page &gt;
-</TextLink>,
+                </TextLink>,
               },
               "ref": null,
               "rendered": Object {
