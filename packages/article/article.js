@@ -67,7 +67,7 @@ class ArticlePage extends React.Component {
           {renderTrees([rowData.data], {
             paragraph(key, attributes, children) {
               return (
-                <View   testID={`paragraph${rowData.index}`} key={key} style={[styles.articleMainContentRow]}>
+                <View testID={`paragraph-${rowData.index}`} key={key} style={[styles.articleMainContentRow]}>
                   <Text style={styles.articleTextElement}>{children}</Text>
                 </View>
               );

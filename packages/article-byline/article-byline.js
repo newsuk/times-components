@@ -18,7 +18,7 @@ const linkStyles = StyleSheet.create({
 
 const ArticleByline = ({ ast, style }) => (
   <View style={[styles.container, style.container]}>
-    <Text style={[styles.byline, style.byline, styles.bylineColor]}>
+    <Text testID="articleByline" style={[styles.byline, style.byline, styles.bylineColor]}>
       {renderTrees(ast, {
         author(key, attributes, children) {
           const url = `/profile/${attributes.slug}`;

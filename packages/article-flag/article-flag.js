@@ -41,7 +41,7 @@ const ArticleFlag = ({ title, color }) => (
     <View style={styles.diamond}>
       <Diamond height={7} width={7} color={color} />
     </View>
-    <Text style={[styles.title, { color }]}>{beautifyTitle(title)}</Text>
+    <Text testID={`flag-${title}`} style={[styles.title, { color }]}>{beautifyTitle(title)}</Text>
   </View>
 );
 
@@ -56,13 +56,13 @@ ArticleFlag.defaultProps = {
 
 const NewArticleFlag = () => <ArticleFlag testID="flag-new" title="new" color="#E34605" />;
 const UpdatedArticleFlag = () => (
-  <ArticleFlag testID="flag-updated" title="updated" color="#3C81BE" />
+  <ArticleFlag title="updated" color="#3C81BE" />
 );
 const ExclusiveArticleFlag = () => (
-  <ArticleFlag testID="flag-exclusive" title="exclusive" color="#C51D24" />
+  <ArticleFlag title="exclusive" color="#C51D24" />
 );
 const SponsoredArticleFlag = () => (
-  <ArticleFlag testID="flag-sponsored" title="sponsored" color="#4D4D4D" />
+  <ArticleFlag  title="sponsored" color="#4D4D4D" />
 );
 
 export default ArticleFlag;

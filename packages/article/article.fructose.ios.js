@@ -1,4 +1,4 @@
-/* globals withComponent test expect element by beforeEach waitFor */
+/* globals withComponent device  afterEach test expect element by beforeEach waitFor */
 
 import React from "react";
 import Article from "./article";
@@ -9,12 +9,16 @@ withComponent(
   <Article
   fructoseID="defaultArticle"
   {...fullArticleFixture} />,
-  "default Non interactive Article",
+  "default non interactive article",
   async fructose => {
     beforeEach(async () => {
       await fructose.loadComponent();
-      await waitFor(element(by.id("leadAsset")));
+      await waitFor(element(by.id("listView")));
     });
+
+    afterEach(async () => {
+      await device.reloadReactNative();
+    })
 
     test("default Article should render correctly", async () => {
       await expect(element(by.id("leadAsset"))).toBeVisible();
@@ -30,10 +34,10 @@ withComponent(
       await expect(element(by.id("flag-sponsored"))).toNotExist();
     });
 
-    test("should be able to scroll down the page", async () => {
-      await expect(element(by.id("paragraph2"))).toBeNotVisible();
-      await element(by.id("listView")).scroll(800, "down");
-      await expect(element(by.id("paragraph2"))).toBeVisible();
+    test("default Article should be able to scroll down the page", async () => {
+      await expect(element(by.id("paragraph-3"))).toBeNotVisible();
+      await element(by.id("listView")).scroll(900, "down");
+      await expect(element(by.id("paragraph-3"))).toBeVisible();
     });
   }
 );

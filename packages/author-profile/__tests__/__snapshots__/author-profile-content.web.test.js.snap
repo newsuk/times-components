@@ -774,6 +774,7 @@ exports[`renders profile content 1`] = `
                 "paddingTop": 32,
               }
             }
+            testID="author-name"
           >
             Fiona Hamilton
           </Text>
@@ -1006,7 +1007,7 @@ exports[`renders profile content 1`] = `
                     ]
                   }
                 >
-                  Next page &gt;
+                  Next &gt;
                 </Text>
               </View>
             </View>
@@ -1189,6 +1190,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Monday March 23 2015
                   , The Times
@@ -1385,6 +1387,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Friday March 20 2015
                   , The Times
@@ -1581,6 +1584,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Thursday March 19 2015
                   , The Times
@@ -1777,6 +1781,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Wednesday March 18 2015
                   , The Times
@@ -1961,6 +1966,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Sunday Times
@@ -2157,6 +2163,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Times
@@ -2341,6 +2348,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Times
@@ -2525,6 +2533,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Times
@@ -2709,6 +2718,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Times
@@ -2893,6 +2903,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Times
@@ -3077,6 +3088,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Times
@@ -3261,6 +3273,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Times
@@ -3445,6 +3458,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Times
@@ -3636,6 +3650,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Times
@@ -3820,6 +3835,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Times
@@ -4011,6 +4027,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Times
@@ -4208,6 +4225,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Times
@@ -4405,11 +4423,89 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Times
                 </Text>
               </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "stretch",
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "marginLeft": 10,
+            "marginRight": 10,
+            "marginTop": 10,
+            "maxWidth": 800,
+          }
+        }
+      >
+        <View
+          onLayout={[Function]}
+          style={
+            Object {
+              "alignItems": "stretch",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#dbdbdb",
+                  "borderTopWidth": 1,
+                },
+              ]
+            }
+          >
+            <View />
+            <View>
+              <Text
+                accessibilityRole="link"
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                href="?page=2"
+                onPress={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "textDecorationLine": "underline",
+                    },
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 14,
+                    },
+                  ]
+                }
+              >
+                Next &gt;
+              </Text>
             </View>
           </View>
         </View>
@@ -4458,6 +4554,7 @@ exports[`renders profile content component 1`] = `
               "paddingTop": 32,
             }
           }
+          testID="author-name"
         >
           Fiona Hamilton
         </Text>
@@ -4690,7 +4787,7 @@ exports[`renders profile content component 1`] = `
                   ]
                 }
               >
-                Next page &gt;
+                Next &gt;
               </Text>
             </View>
           </View>
@@ -4705,6 +4802,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-0"
   >
     <View
       accessibilityComponentType={undefined}
@@ -4880,6 +4978,7 @@ exports[`renders profile content component 1`] = `
                     Object {},
                   ]
                 }
+                testID="datePublication"
               >
                 Monday March 23 2015
                 , The Times
@@ -4897,6 +4996,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-1"
   >
     <View
       style={
@@ -5083,6 +5183,7 @@ exports[`renders profile content component 1`] = `
                     Object {},
                   ]
                 }
+                testID="datePublication"
               >
                 Friday March 20 2015
                 , The Times
@@ -5100,6 +5201,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-2"
   >
     <View
       style={
@@ -5286,6 +5388,7 @@ exports[`renders profile content component 1`] = `
                     Object {},
                   ]
                 }
+                testID="datePublication"
               >
                 Thursday March 19 2015
                 , The Times
@@ -5303,6 +5406,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-3"
   >
     <View
       style={
@@ -5489,6 +5593,7 @@ exports[`renders profile content component 1`] = `
                     Object {},
                   ]
                 }
+                testID="datePublication"
               >
                 Wednesday March 18 2015
                 , The Times
@@ -5506,6 +5611,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-4"
   >
     <View
       style={
@@ -5680,6 +5786,7 @@ exports[`renders profile content component 1`] = `
                     Object {},
                   ]
                 }
+                testID="datePublication"
               >
                 Tuesday March 17 2015
                 , The Sunday Times
@@ -5697,6 +5804,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-5"
   >
     <View
       style={
@@ -5883,6 +5991,7 @@ exports[`renders profile content component 1`] = `
                     Object {},
                   ]
                 }
+                testID="datePublication"
               >
                 Tuesday March 17 2015
                 , The Times
@@ -5900,6 +6009,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-6"
   >
     <View
       style={
@@ -6074,6 +6184,7 @@ exports[`renders profile content component 1`] = `
                     Object {},
                   ]
                 }
+                testID="datePublication"
               >
                 Tuesday March 17 2015
                 , The Times
@@ -6091,6 +6202,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-7"
   >
     <View
       style={
@@ -6265,6 +6377,7 @@ exports[`renders profile content component 1`] = `
                     Object {},
                   ]
                 }
+                testID="datePublication"
               >
                 Tuesday March 17 2015
                 , The Times
@@ -6282,6 +6395,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-8"
   >
     <View
       style={
@@ -6456,6 +6570,7 @@ exports[`renders profile content component 1`] = `
                     Object {},
                   ]
                 }
+                testID="datePublication"
               >
                 Tuesday March 17 2015
                 , The Times
@@ -6473,6 +6588,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-9"
   >
     <View
       style={
@@ -6647,6 +6763,7 @@ exports[`renders profile content component 1`] = `
                     Object {},
                   ]
                 }
+                testID="datePublication"
               >
                 Tuesday March 17 2015
                 , The Times
@@ -6664,6 +6781,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-10"
   >
     <View
       style={
@@ -6838,6 +6956,7 @@ exports[`renders profile content component 1`] = `
                     Object {},
                   ]
                 }
+                testID="datePublication"
               >
                 Tuesday March 17 2015
                 , The Times
@@ -6855,6 +6974,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-11"
   >
     <View
       style={
@@ -7029,6 +7149,7 @@ exports[`renders profile content component 1`] = `
                     Object {},
                   ]
                 }
+                testID="datePublication"
               >
                 Tuesday March 17 2015
                 , The Times
@@ -7046,6 +7167,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-12"
   >
     <View
       style={
@@ -7220,6 +7342,7 @@ exports[`renders profile content component 1`] = `
                     Object {},
                   ]
                 }
+                testID="datePublication"
               >
                 Tuesday March 17 2015
                 , The Times
@@ -7237,6 +7360,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-13"
   >
     <View
       style={
@@ -7418,6 +7542,7 @@ exports[`renders profile content component 1`] = `
                     Object {},
                   ]
                 }
+                testID="datePublication"
               >
                 Tuesday March 17 2015
                 , The Times
@@ -7435,6 +7560,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-14"
   >
     <View
       style={
@@ -7609,6 +7735,7 @@ exports[`renders profile content component 1`] = `
                     Object {},
                   ]
                 }
+                testID="datePublication"
               >
                 Tuesday March 17 2015
                 , The Times
@@ -7626,6 +7753,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-15"
   >
     <View
       style={
@@ -7807,6 +7935,7 @@ exports[`renders profile content component 1`] = `
                     Object {},
                   ]
                 }
+                testID="datePublication"
               >
                 Tuesday March 17 2015
                 , The Times
@@ -7824,6 +7953,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-16"
   >
     <View
       style={
@@ -8011,6 +8141,7 @@ exports[`renders profile content component 1`] = `
                     Object {},
                   ]
                 }
+                testID="datePublication"
               >
                 Tuesday March 17 2015
                 , The Times
@@ -8028,6 +8159,7 @@ exports[`renders profile content component 1`] = `
         "maxWidth": 820,
       }
     }
+    testID="articleList-17"
   >
     <View
       style={
@@ -8215,11 +8347,89 @@ exports[`renders profile content component 1`] = `
                     Object {},
                   ]
                 }
+                testID="datePublication"
               >
                 Tuesday March 17 2015
                 , The Times
               </Text>
             </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginLeft": 10,
+          "marginRight": 10,
+          "marginTop": 10,
+          "maxWidth": 800,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          Object {
+            "alignItems": "stretch",
+            "flexDirection": "column",
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 40,
+                "justifyContent": "space-between",
+              },
+              Object {
+                "borderBottomColor": "#dbdbdb",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+                "borderTopColor": "#dbdbdb",
+                "borderTopWidth": 1,
+              },
+            ]
+          }
+        >
+          <View />
+          <View>
+            <Text
+              accessibilityRole="link"
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              href="?page=2"
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "textDecorationLine": "underline",
+                  },
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  },
+                ]
+              }
+            >
+              Next &gt;
+            </Text>
           </View>
         </View>
       </View>
@@ -8297,6 +8507,7 @@ exports[`renders profile header 1`] = `
             "paddingTop": 32,
           }
         }
+        testID="author-name"
       >
         Fiona Hamilton
       </Text>
@@ -8529,7 +8740,7 @@ exports[`renders profile header 1`] = `
                 ]
               }
             >
-              Next page &gt;
+              Next &gt;
             </Text>
           </View>
         </View>

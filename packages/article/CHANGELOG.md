@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.14.0"></a>
+# [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.8.0...@times-components/article@0.14.0) (2017-10-03)
+
+
+### Bug Fixes
+
+* update no-ads article fixture ([55ad0d3](https://github.com/newsuk/times-components/commit/55ad0d3))
+
+
+### Features
+
+* add images to article ([#249](https://github.com/newsuk/times-components/issues/249)) ([0387409](https://github.com/newsuk/times-components/commit/0387409))
+* render ads in the article article body ([#258](https://github.com/newsuk/times-components/issues/258)) ([3240a73](https://github.com/newsuk/times-components/commit/3240a73))
+
+
+
+
 <a name="0.13.0"></a>
 # [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.8.0...@times-components/article@0.13.0) (2017-10-02)
 

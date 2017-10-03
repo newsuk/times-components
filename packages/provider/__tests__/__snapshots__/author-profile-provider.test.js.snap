@@ -42,6 +42,7 @@ exports[`renders data 1`] = `
                 "paddingTop": 32,
               }
             }
+            testID="author-name"
           >
             Fiona Hamilton
           </Text>
@@ -375,12 +376,67 @@ exports[`renders data 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Monday March 23 2015
                   , The Times
                 </Text>
               </View>
             </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "stretch",
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "marginLeft": 10,
+            "marginRight": 10,
+            "marginTop": 10,
+            "maxWidth": 800,
+          }
+        }
+      >
+        <View
+          onLayout={[Function]}
+          style={
+            Object {
+              "alignItems": "stretch",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#dbdbdb",
+                  "borderTopWidth": 1,
+                },
+              ]
+            }
+          >
+            <View />
+            <View />
           </View>
         </View>
       </View>
@@ -431,6 +487,7 @@ exports[`renders data from graphql 1`] = `
                 "paddingTop": 32,
               }
             }
+            testID="author-name"
           >
             Fiona Hamilton
           </Text>
@@ -764,12 +821,67 @@ exports[`renders data from graphql 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Monday March 23 2015
                   , The Times
                 </Text>
               </View>
             </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "stretch",
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "marginLeft": 10,
+            "marginRight": 10,
+            "marginTop": 10,
+            "maxWidth": 800,
+          }
+        }
+      >
+        <View
+          onLayout={[Function]}
+          style={
+            Object {
+              "alignItems": "stretch",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#dbdbdb",
+                  "borderTopWidth": 1,
+                },
+              ]
+            }
+          >
+            <View />
+            <View />
           </View>
         </View>
       </View>
