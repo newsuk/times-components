@@ -29,12 +29,12 @@ public class MainApplication extends Application implements ReactApplication {
             new SvgPackage(), new BrightcovePackage()
       );
     }
-  };
 
-  @Override
-  protected String getJSMainModuleName() {
-    return "index";
-  }
+    @Override
+    protected String getJSMainModuleName() {
+      return "index";
+    }
+  };
 
   @Override
   public ReactNativeHost getReactNativeHost() {
