@@ -8,10 +8,8 @@ import Caption from "../caption";
 
 const captionText = "Some caption text goes in here";
 const credits = "Just credits";
-const exampleImage = {
-  uri:
-    "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320"
-};
+const exampleImage =
+  "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7d2fd06c-a460-11e7-8955-1ad2a9a7928d.jpg?crop=1500%2C844%2C0%2C78&resize=685";
 const style = {
   container: {
     backgroundColor: "red"
@@ -54,7 +52,7 @@ module.exports = () => {
     const tree = renderer
       .create(
         <Caption text={captionText} credits={credits}>
-          <Image source={exampleImage} />
+          <Image uri={exampleImage} aspectRatio={16 / 9} />
         </Caption>
       )
       .toJSON();
