@@ -8,10 +8,8 @@ import Caption from "./caption";
 const captionText =
   'The prime minister said HMS Queen Elizabeth was a symbol of Britain’s status as a "great maritime nation"';
 const credits = "BEN STANSALL/PA WIRE";
-const exampleImage = {
-  uri:
-    "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320"
-};
+const exampleImage =
+  "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7d2fd06c-a460-11e7-8955-1ad2a9a7928d.jpg?crop=1500%2C844%2C0%2C78&resize=685";
 const style = {
   container: {
     backgroundColor: "blue"
@@ -30,6 +28,6 @@ storiesOf("Caption", module)
   ))
   .add("Image with caption", () => (
     <Caption text={captionText} credits={credits}>
-      <Image source={exampleImage} />
+      <Image uri={exampleImage} aspectRatio={16 / 9} />
     </Caption>
   ));

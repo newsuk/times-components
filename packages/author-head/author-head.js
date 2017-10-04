@@ -28,7 +28,8 @@ const styles = StyleSheet.create({
     height: 100,
     borderColor: "#FFF",
     borderRadius: 50,
-    borderWidth: 5
+    borderWidth: 5,
+    overflow: "hidden"
   },
   name: {
     fontFamily: "TimesModern-Bold",
@@ -82,7 +83,7 @@ const AuthorHead = props => {
 
   const imageComponent = uri ? (
     <View style={styles.photoContainer}>
-      <Image source={{ uri }} style={styles.roundImage} />
+      <Image uri={uri} style={styles.roundImage} aspectRatio={1 / 1} />
     </View>
   ) : null;
 
