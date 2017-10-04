@@ -76,7 +76,7 @@
     "lodash.get": "4.4.2",
     "lodash.merge": "4.6.0",
     "prop-types": "15.5.10",
-    "react-apollo": "1.4.14",
+    "react-apollo": "1.4.16",
     "react-native-web": "0.0.119",
     "react-style-proptype": "3.0.0"
   },
