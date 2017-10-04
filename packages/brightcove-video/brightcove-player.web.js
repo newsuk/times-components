@@ -18,6 +18,7 @@ class BrightcoveVideo extends Component {
     this.on("seeked", context.onSeeked.bind(context, this));
     this.on("timeupdate", context.onPlay.bind(context, this));
     this.on("durationchange", context.onDurationChange.bind(context, this));
+    this.on("ended", context.onEnded.bind(context, this));
 
     this.contextmenu({ disabled: true });
   }
@@ -142,8 +143,7 @@ class BrightcoveVideo extends Component {
 
     this.setState({
       isPlaying: false,
-      progress,
-      isFinished: progress >= this.state.duration
+      progress
     });
   }
 
@@ -156,6 +156,13 @@ class BrightcoveVideo extends Component {
 
   onDurationChange(player) {
     this.setState({ duration: BrightcoveVideo.getDurationMs(player) });
+  }
+
+  onEnded() {
+    // calling syncronously here inteferes with player and causes errors to be thrown
+    setTimeout(() => {
+      this.setState({ isFinished: true });
+    }, 0);
   }
 
   setPlayer(player) {
