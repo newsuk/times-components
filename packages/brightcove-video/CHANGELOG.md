@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.2.1...@times-components/brightcove-video@1.3.0) (2017-10-04)
+
+
+### Features
+
+* set presenting view controller to fix fullscreen ([#269](https://github.com/newsuk/times-components/issues/269)) ([7166adc](https://github.com/newsuk/times-components/commit/7166adc))
+
+
+
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.2.0...@times-components/brightcove-video@1.2.1) (2017-10-03)
 
