@@ -61,7 +61,7 @@
     "prettier": "1.7.0",
     "react": "16.0.0",
     "react-dom": "16.0.0",
-    "react-native": "0.48.4",
+    "react-native": "0.49.0",
     "react-test-renderer": "16.0.0",
     "webpack": "3.3.0"
   },

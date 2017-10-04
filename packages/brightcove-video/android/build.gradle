@@ -25,6 +25,6 @@ repositories {
 }
 
 dependencies {
-    implementation "com.facebook.react:react-native:0.48.4"
+    implementation "com.facebook.react:react-native:0.49.0"
     implementation "com.brightcove.player:exoplayer:4.13.7"
 }
