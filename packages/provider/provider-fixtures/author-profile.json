@@ -4,12 +4,10 @@
   "biography": [
     {
       "name": "text",
-      "attributes": {},
-      "children": [
-        {
-          "text": "Lorem "
-        }
-      ]
+      "attributes": {
+        "value": "Lorem "
+      },
+      "children": []
     },
     {
       "name": "bold",
@@ -17,23 +15,19 @@
       "children": [
         {
           "name": "text",
-          "attributes": {},
-          "children": [
-            {
-              "text": "ipsum"
-            }
-          ]
+          "attributes": {
+            "value": "ipsum"
+          },
+          "children": []
         }
       ]
     },
     {
       "name": "text",
-      "attributes": {},
-      "children": [
-        {
-          "text": " testbr "
-        }
-      ]
+      "attributes": {
+        "value": " testbr "
+      },
+      "children": []
     },
     {
       "name": "break",
@@ -41,12 +35,10 @@
     },
     {
       "name": "text",
-      "attributes": {},
-      "children": [
-        {
-          "text": "More text "
-        }
-      ]
+      "attributes": {
+        "value": "More text "
+      },
+      "children": []
     },
     {
       "name": "italic",
@@ -54,12 +46,10 @@
       "children": [
         {
           "name": "text",
-          "attributes": {},
-          "children": [
-            {
-              "text": " last "
-            }
-          ]
+          "attributes": {
+            "value": " last "
+          },
+          "children": []
         }
       ]
     }

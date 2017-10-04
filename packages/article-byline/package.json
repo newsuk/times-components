@@ -1,8 +1,8 @@
 {
   "name": "@times-components/article-byline",
-  "version": "0.5.2",
+  "version": "0.5.7",
   "description": "Article byline information",
-  "main": "article-byline.js",
+  "main": "article-byline",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "npm run test:native -- --bail --verbose --watchAll",
@@ -52,8 +52,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/link": "0.6.0",
-    "@times-components/markup": "0.7.2",
+    "@times-components/link": "0.8.0",
+    "@times-components/markup": "0.7.4",
     "prop-types": "15.5.10",
     "react-native-web": "0.0.119"
   },

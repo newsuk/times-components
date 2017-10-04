@@ -1,7 +1,7 @@
 {
   "name": "@times-components/article-summary",
-  "version": "0.5.2",
-  "main": "article-summary.js",
+  "version": "0.5.5",
+  "main": "article-summary",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
@@ -59,8 +59,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/date-publication": "0.3.0",
-    "@times-components/markup": "0.7.2",
+    "@times-components/date-publication": "0.3.1",
+    "@times-components/markup": "0.7.4",
     "date-fns": "1.28.5",
     "prop-types": "15.5.10",
     "react-native-web": "0.0.119",

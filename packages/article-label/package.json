@@ -1,8 +1,8 @@
 {
   "name": "@times-components/article-label",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "The article label",
-  "main": "article-label.js",
+  "main": "article-label",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",

@@ -8,11 +8,10 @@
       "children": [
         {
           "name": "text",
-          "children": [
-            {
-              "text": "Alexandra Frean"
-            }
-          ]
+          "attributes": {
+            "value": "Alexandra Frean"
+          },
+          "children": []
         }
       ]
     }
@@ -24,11 +23,10 @@
       "children": [
         {
           "name": "text",
-          "children": [
-            {
-              "text": "Lindsay McIntosh Scottish Political Editor"
-            }
-          ]
+          "attributes": {
+            "value": "Lindsay McIntosh Scottish Political Editor"
+          },
+          "children": []
         }
       ]
     }
@@ -42,11 +40,10 @@
       "children": [
         {
           "name": "text",
-          "children": [
-            {
-              "text": "Camilla Long"
-            }
-          ]
+          "attributes": {
+            "value": "Camilla Long"
+          },
+          "children": []
         }
       ]
     },
@@ -56,11 +53,10 @@
       "children": [
         {
           "name": "text",
-          "children": [
-            {
-              "text": ", Environment Editor"
-            }
-          ]
+          "attributes": {
+            "value": ", Environment Editor"
+          },
+          "children": []
         }
       ]
     }
@@ -72,11 +68,10 @@
       "children": [
         {
           "name": "text",
-          "children": [
-            {
-              "text": "RBS Six Nations "
-            }
-          ]
+          "attributes": {
+            "value": "RBS Six Nations "
+          },
+          "children": []
         }
       ]
     },
@@ -88,11 +83,10 @@
       "children": [
         {
           "name": "text",
-          "children": [
-            {
-              "text": "Mike Atherton"
-            }
-          ]
+          "attributes": {
+            "value": "Mike Atherton"
+          },
+          "children": []
         }
       ]
     }
@@ -106,11 +100,10 @@
       "children": [
         {
           "name": "text",
-          "children": [
-            {
-              "text": "Camilla Long"
-            }
-          ]
+          "attributes": {
+            "value": "Camilla Long"
+          },
+          "children": []
         }
       ]
     },
@@ -120,11 +113,10 @@
       "children": [
         {
           "name": "text",
-          "children": [
-            {
-              "text": ", "
-            }
-          ]
+          "attributes": {
+            "value": ", "
+          },
+          "children": []
         }
       ]
     },
@@ -136,11 +128,10 @@
       "children": [
         {
           "name": "text",
-          "children": [
-            {
-              "text": "Mike Atherton"
-            }
-          ]
+          "attributes": {
+            "value": "Mike Atherton"
+          },
+          "children": []
         }
       ]
     },
@@ -150,11 +141,10 @@
       "children": [
         {
           "name": "text",
-          "children": [
-            {
-              "text": ", "
-            }
-          ]
+          "attributes": {
+            "value": ", "
+          },
+          "children": []
         }
       ]
     },
@@ -166,11 +156,10 @@
       "children": [
         {
           "name": "text",
-          "children": [
-            {
-              "text": "Alexandra Frean"
-            }
-          ]
+          "attributes": {
+            "value": "Alexandra Frean"
+          },
+          "children": []
         }
       ]
     }
@@ -184,11 +173,10 @@
       "children": [
         {
           "name": "text",
-          "children": [
-            {
-              "text": "Camilla Long"
-            }
-          ]
+          "attributes": {
+            "value": "Camilla Long"
+          },
+          "children": []
         }
       ]
     },
@@ -198,11 +186,10 @@
       "children": [
         {
           "name": "text",
-          "children": [
-            {
-              "text": " "
-            }
-          ]
+          "attributes": {
+            "value": " "
+          },
+          "children": []
         }
       ]
     },
@@ -214,11 +201,10 @@
       "children": [
         {
           "name": "text",
-          "children": [
-            {
-              "text": "Mike Atherton"
-            }
-          ]
+          "attributes": {
+            "value": "Mike Atherton"
+          },
+          "children": []
         }
       ]
     },
@@ -228,11 +214,10 @@
       "children": [
         {
           "name": "text",
-          "children": [
-            {
-              "text": " "
-            }
-          ]
+          "attributes": {
+            "value": " "
+          },
+          "children": []
         }
       ]
     },
@@ -244,11 +229,10 @@
       "children": [
         {
           "name": "text",
-          "children": [
-            {
-              "text": "Alexandra Frean"
-            }
-          ]
+          "attributes": {
+            "value": "Alexandra Frean"
+          },
+          "children": []
         }
       ]
     }

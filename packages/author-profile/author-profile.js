@@ -20,7 +20,8 @@ const AuthorProfile = props => {
       onPrev: props.onPrev,
       page: props.page,
       pageSize: props.pageSize,
-      onTwitterLinkPress: props.onTwitterLinkPress
+      onTwitterLinkPress: props.onTwitterLinkPress,
+      onArticlePress: props.onArticlePress
     };
     return <AuthorProfileContent {...props.data} {...extra} />;
   }
@@ -34,6 +35,7 @@ const {
   page,
   pageSize,
   onTwitterLinkPress,
+  onArticlePress,
   ...data
 } = AuthorProfileContent.propTypes;
 
@@ -47,7 +49,9 @@ AuthorProfile.propTypes = {
   pageSize,
   // eslint doesnt follow the reference. AuthorProfileContent.propTypes.onTwitterLinkPress is actually marked as required.
   // eslint-disable-next-line react/require-default-props
-  onTwitterLinkPress
+  onTwitterLinkPress,
+  // eslint-disable-next-line react/require-default-props
+  onArticlePress
 };
 
 AuthorProfile.defaultProps = {

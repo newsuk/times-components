@@ -1,7 +1,7 @@
 {
   "name": "@times-components/author-head",
-  "version": "0.6.3",
-  "main": "author-head.js",
+  "version": "0.6.10",
+  "main": "author-head",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watch",
@@ -59,9 +59,9 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/image": "1.4.0",
-    "@times-components/link": "0.6.0",
-    "@times-components/markup": "0.7.2",
+    "@times-components/image": "1.4.1",
+    "@times-components/link": "0.8.0",
+    "@times-components/markup": "0.7.4",
     "prop-types": "15.5.10",
     "react-native-web": "0.0.119"
   },

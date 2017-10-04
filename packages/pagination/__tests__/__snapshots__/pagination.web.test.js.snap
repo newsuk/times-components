@@ -1,195 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pagination Web renders compact above breakpoint 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <View
-    onLayout={[Function]}
-    style={68}
->
-    <View
-        style={
-            Array [
-                69,
-                67,
-              ]
-        }
-    >
-        <View />
-        <View>
-            <TextLink
-                onPress={[Function]}
-                style={66}
-                url="./2"
-            >
-                Next page &gt;
-            </TextLink>
-        </View>
-    </View>
-</View>,
-  "nodes": Array [
-    <View
-      onLayout={[Function]}
-      style={68}
->
-      <View
-            style={
-                  Array [
-                        69,
-                        67,
-                      ]
-            }
-      >
-            <View />
-            <View>
-                  <TextLink
-                        onPress={[Function]}
-                        style={66}
-                        url="./2"
-                  >
-                        Next page &gt;
-                  </TextLink>
-            </View>
-      </View>
-</View>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 0,
-      "_context": Object {},
-      "_currentElement": <Pagination
-        count={21}
-        generatePageLink={[Function]}
-        hideResults={false}
-        onNext={[Function]}
-        onPrev={[Function]}
-        page={1}
-        pageSize={20}
-/>,
-      "_debugID": 3,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": Pagination {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "handleLayout": [Function],
-        "props": Object {
-          "count": 21,
-          "generatePageLink": [Function],
-          "hideResults": false,
-          "onNext": [Function],
-          "onPrev": [Function],
-          "page": 1,
-          "pageSize": 20,
-        },
-        "refs": Object {},
-        "state": Object {
-          "absolutePosition": false,
-          "count": 21,
-          "generatePageLink": [Function],
-          "hideResults": true,
-          "onNext": [Function],
-          "onPrev": [Function],
-          "page": 1,
-          "pageSize": 20,
-        },
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 2,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <View
-          onLayout={[Function]}
-          style={68}
->
-          <View
-                    style={
-                              Array [
-                                        69,
-                                        67,
-                                      ]
-                    }
-          >
-                    <View />
-                    <View>
-                              <TextLink
-                                        onPress={[Function]}
-                                        style={66}
-                                        url="./2"
-                              >
-                                        Next page &gt;
-                              </TextLink>
-                    </View>
-          </View>
-</View>,
-        "_debugID": 4,
-        "_renderedOutput": <View
-          onLayout={[Function]}
-          style={68}
->
-          <View
-                    style={
-                              Array [
-                                        69,
-                                        67,
-                                      ]
-                    }
-          >
-                    <View />
-                    <View>
-                              <TextLink
-                                        onPress={[Function]}
-                                        style={66}
-                                        url="./2"
-                              >
-                                        Next page &gt;
-                              </TextLink>
-                    </View>
-          </View>
-</View>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Pagination
-    count={21}
-    generatePageLink={[Function]}
-    hideResults={false}
-    onNext={[Function]}
-    onPrev={[Function]}
-    page={1}
-    pageSize={20}
-/>,
-}
-`;
-
 exports[`Pagination Web renders correctly 1`] = `
 ShallowWrapper {
   "complexSelector": ComplexSelector {
@@ -236,7 +46,7 @@ ShallowWrapper {
                 style={66}
                 url="./2"
             >
-                Next page &gt;
+                Next &gt;
             </TextLink>
         </View>
     </View>
@@ -280,7 +90,7 @@ ShallowWrapper {
                         style={66}
                         url="./2"
                   >
-                        Next page &gt;
+                        Next &gt;
                   </TextLink>
             </View>
       </View>
@@ -384,7 +194,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./2"
                               >
-                                        Next page &gt;
+                                        Next &gt;
                               </TextLink>
                     </View>
           </View>
@@ -428,7 +238,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./2"
                               >
-                                        Next page &gt;
+                                        Next &gt;
                               </TextLink>
                     </View>
           </View>
@@ -501,7 +311,7 @@ ShallowWrapper {
                 style={66}
                 url="./1"
             >
-                &lt; Previous page
+                &lt; Previous
             </TextLink>
         </View>
         <View>
@@ -510,7 +320,7 @@ ShallowWrapper {
                 style={66}
                 url="./3"
             >
-                Next page &gt;
+                Next &gt;
             </TextLink>
         </View>
     </View>
@@ -553,7 +363,7 @@ ShallowWrapper {
                         style={66}
                         url="./1"
                   >
-                        &lt; Previous page
+                        &lt; Previous
                   </TextLink>
             </View>
             <View>
@@ -562,7 +372,7 @@ ShallowWrapper {
                         style={66}
                         url="./3"
                   >
-                        Next page &gt;
+                        Next &gt;
                   </TextLink>
             </View>
       </View>
@@ -665,7 +475,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./1"
                               >
-                                        &lt; Previous page
+                                        &lt; Previous
                               </TextLink>
                     </View>
                     <View>
@@ -674,7 +484,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./3"
                               >
-                                        Next page &gt;
+                                        Next &gt;
                               </TextLink>
                     </View>
           </View>
@@ -717,7 +527,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./1"
                               >
-                                        &lt; Previous page
+                                        &lt; Previous
                               </TextLink>
                     </View>
                     <View>
@@ -726,7 +536,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./3"
                               >
-                                        Next page &gt;
+                                        Next &gt;
                               </TextLink>
                     </View>
           </View>
@@ -799,7 +609,7 @@ ShallowWrapper {
                 style={66}
                 url="./2"
             >
-                &lt; Previous page
+                &lt; Previous
             </TextLink>
         </View>
         <View />
@@ -843,7 +653,7 @@ ShallowWrapper {
                         style={66}
                         url="./2"
                   >
-                        &lt; Previous page
+                        &lt; Previous
                   </TextLink>
             </View>
             <View />
@@ -947,7 +757,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./2"
                               >
-                                        &lt; Previous page
+                                        &lt; Previous
                               </TextLink>
                     </View>
                     <View />
@@ -991,7 +801,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./2"
                               >
-                                        &lt; Previous page
+                                        &lt; Previous
                               </TextLink>
                     </View>
                     <View />
@@ -1066,7 +876,7 @@ ShallowWrapper {
                 style={66}
                 url="./2"
             >
-                Next page &gt;
+                Next &gt;
             </TextLink>
         </View>
     </View>
@@ -1110,7 +920,7 @@ ShallowWrapper {
                         style={66}
                         url="./2"
                   >
-                        Next page &gt;
+                        Next &gt;
                   </TextLink>
             </View>
       </View>
@@ -1214,7 +1024,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./2"
                               >
-                                        Next page &gt;
+                                        Next &gt;
                               </TextLink>
                     </View>
           </View>
@@ -1258,7 +1068,7 @@ ShallowWrapper {
                                         style={66}
                                         url="./2"
                               >
-                                        Next page &gt;
+                                        Next &gt;
                               </TextLink>
                     </View>
           </View>
@@ -1276,6 +1086,196 @@ ShallowWrapper {
   "root": [Circular],
   "unrendered": <Pagination
     count={41}
+    generatePageLink={[Function]}
+    hideResults={false}
+    onNext={[Function]}
+    onPrev={[Function]}
+    page={1}
+    pageSize={20}
+/>,
+}
+`;
+
+exports[`Pagination Web renders with hidden results above breakpoint 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <View
+    onLayout={[Function]}
+    style={68}
+>
+    <View
+        style={
+            Array [
+                69,
+                67,
+              ]
+        }
+    >
+        <View />
+        <View>
+            <TextLink
+                onPress={[Function]}
+                style={66}
+                url="./2"
+            >
+                Next &gt;
+            </TextLink>
+        </View>
+    </View>
+</View>,
+  "nodes": Array [
+    <View
+      onLayout={[Function]}
+      style={68}
+>
+      <View
+            style={
+                  Array [
+                        69,
+                        67,
+                      ]
+            }
+      >
+            <View />
+            <View>
+                  <TextLink
+                        onPress={[Function]}
+                        style={66}
+                        url="./2"
+                  >
+                        Next &gt;
+                  </TextLink>
+            </View>
+      </View>
+</View>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <Pagination
+        count={21}
+        generatePageLink={[Function]}
+        hideResults={false}
+        onNext={[Function]}
+        onPrev={[Function]}
+        page={1}
+        pageSize={20}
+/>,
+      "_debugID": 3,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": Pagination {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "handleLayout": [Function],
+        "props": Object {
+          "count": 21,
+          "generatePageLink": [Function],
+          "hideResults": false,
+          "onNext": [Function],
+          "onPrev": [Function],
+          "page": 1,
+          "pageSize": 20,
+        },
+        "refs": Object {},
+        "state": Object {
+          "absolutePosition": false,
+          "count": 21,
+          "generatePageLink": [Function],
+          "hideResults": true,
+          "onNext": [Function],
+          "onPrev": [Function],
+          "page": 1,
+          "pageSize": 20,
+        },
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 2,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <View
+          onLayout={[Function]}
+          style={68}
+>
+          <View
+                    style={
+                              Array [
+                                        69,
+                                        67,
+                                      ]
+                    }
+          >
+                    <View />
+                    <View>
+                              <TextLink
+                                        onPress={[Function]}
+                                        style={66}
+                                        url="./2"
+                              >
+                                        Next &gt;
+                              </TextLink>
+                    </View>
+          </View>
+</View>,
+        "_debugID": 4,
+        "_renderedOutput": <View
+          onLayout={[Function]}
+          style={68}
+>
+          <View
+                    style={
+                              Array [
+                                        69,
+                                        67,
+                                      ]
+                    }
+          >
+                    <View />
+                    <View>
+                              <TextLink
+                                        onPress={[Function]}
+                                        style={66}
+                                        url="./2"
+                              >
+                                        Next &gt;
+                              </TextLink>
+                    </View>
+          </View>
+</View>,
+      },
+      "_renderedNodeType": 1,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Pagination
+    count={21}
     generatePageLink={[Function]}
     hideResults={false}
     onNext={[Function]}

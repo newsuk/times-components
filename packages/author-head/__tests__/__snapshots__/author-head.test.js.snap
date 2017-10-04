@@ -37,6 +37,7 @@ exports[`renders 1`] = `
           "paddingTop": 32,
         }
       }
+      testID="author-name"
     >
       
     </Text>
@@ -113,6 +114,7 @@ exports[`renders with data 1`] = `
           "paddingTop": 32,
         }
       }
+      testID="author-name"
     >
       Carol Midgley
     </Text>
@@ -281,6 +283,7 @@ exports[`renders without profile picture 1`] = `
           "paddingTop": 32,
         }
       }
+      testID="author-name"
     >
       Carol Midgley
     </Text>

@@ -1,18 +1,13 @@
 {
-  "fixture": [
+  "name": "inline",
+  "attributes": {},
+  "children": [
     {
-      "name": "inline",
-      "attributes": {},
-      "children": [
-        {
-          "name": "text",
-          "children": [
-            {
-              "text": "some other text here"
-            }
-          ]
-        }
-      ]
+      "name": "text",
+      "attributes": {
+        "value": "some other text here"
+      },
+      "children": []
     }
   ]
 }

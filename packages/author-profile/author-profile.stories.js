@@ -40,11 +40,12 @@ storiesOf("AuthorProfile", module)
         page: 1
       }),
       isLoading: false,
-      onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress")
+      onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
+      onArticlePress: preventDefaultedAction("onArticlePress")
     };
 
     props.data.articles.list.forEach(article => {
-      // eslint-disable-next-line
+      // eslint-disable-next-line no-param-reassign
       article.publishedTime = new Date(article.publishedTime);
     });
 
@@ -53,7 +54,8 @@ storiesOf("AuthorProfile", module)
   .add("AuthorProfile Loading", () => {
     const props = {
       isLoading: true,
-      onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress")
+      onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
+      onArticlePress: preventDefaultedAction("onArticlePress")
     };
 
     return story(<AuthorProfile {...props} />);
@@ -61,7 +63,8 @@ storiesOf("AuthorProfile", module)
   .add("AuthorProfile Empty State", () => {
     const props = {
       isLoading: false,
-      onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress")
+      onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
+      onArticlePress: preventDefaultedAction("onArticlePress")
     };
 
     return story(<AuthorProfile {...props} />);
