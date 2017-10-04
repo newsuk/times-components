@@ -158,7 +158,7 @@ class BrightcoveVideo extends Component {
     this.setState({ duration: BrightcoveVideo.getDurationMs(player) });
   }
 
-  onEnded(player) {
+  onEnded() {
     setTimeout(() => {
       this.setState({ isFinished: true });
     }, 0);
