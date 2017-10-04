@@ -59,7 +59,7 @@
 
 - (void)requestContentFromPlaybackService {
   [self.playbackService findVideoWithVideoID:_videoId parameters:nil completion:^(BCOVVideo *video, NSDictionary *jsonResponse, NSError *error) {
-    #pragma unused (jsonResponse)
+#pragma unused (jsonResponse)
     if (video) {
       _duration = [video.properties[@"duration"] intValue];
 
@@ -94,6 +94,8 @@
     [controlsView.screenModeButton setHidden:[_hideFullScreenButtonNumber boolValue]];
 
     BCOVPUIPlayerViewOptions *options = [[BCOVPUIPlayerViewOptions alloc] init];
+
+    options.presentingViewController = [self rootViewController];
 
     BCOVPUIPlayerView *playerView = [[BCOVPUIPlayerView alloc] initWithPlaybackController:self.playbackController options:options controlsView:controlsView ];
     playerView.delegate = self;
@@ -175,8 +177,8 @@
 
 - (void)playbackController:(id<BCOVPlaybackController>)controller playbackSession:(id<BCOVPlaybackSession>)session didReceiveLifecycleEvent:(BCOVPlaybackSessionLifecycleEvent *)lifecycleEvent {
 
-  #pragma unused (controller)
-  #pragma unused (session)
+#pragma unused (controller)
+#pragma unused (session)
 
   if ([kBCOVPlaybackSessionLifecycleEventPlay isEqualToString:lifecycleEvent.eventType]) {
     _isPlaying = YES;
@@ -197,8 +199,8 @@
 
 - (void)playbackController:(id<BCOVPlaybackController>)controller playbackSession:(id<BCOVPlaybackSession>)session didProgressTo:(NSTimeInterval)progress {
 
-  #pragma unused (controller)
-  #pragma unused (session)
+#pragma unused (controller)
+#pragma unused (session)
 
   _isFinished = NO;
 
@@ -213,6 +215,10 @@
   }
 
   [self emitStatus];
+}
+
+- (UIViewController *)rootViewController{
+  return [[[[UIApplication sharedApplication] delegate] window] rootViewController];
 }
 
 @end
