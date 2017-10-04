@@ -1,96 +1,45 @@
-import React from "react";
-import { Platform, Dimensions, Image, View } from "react-native";
+import React, { Component } from "react";
+import { Image } from "react-native";
 import placeholder from "./placeholder";
+import imagePropTypes from "./image-prop-types";
 
-const window = Dimensions.get("window");
+const addMissingProtocol = uri => (uri.startsWith("//") ? `https:${uri}` : uri);
 
-class ImageComponent extends React.Component {
+class TimesImage extends Component {
   constructor(props) {
     super(props);
 
-    const uri = props.source && props.source.uri;
-
     this.state = {
-      source: {
-        uri:
-          Platform.OS !== "web" && uri && uri.indexOf("//") === 0
-            ? `https:${uri}`
-            : uri
-      },
-      width: window.width,
-      height: 1
+      isLoaded: false
     };
-
-    this.getSize = Image.getSize;
-    this.handleError = this.handleError.bind(this);
-    this.handleLayout = this.handleLayout.bind(this);
     this.handleLoad = this.handleLoad.bind(this);
   }
 
-  calculateDimensions(props) {
-    const state = Object.assign({}, this.state, props);
-    if (!state.layout) {
-      return this.setState(props);
-    }
-
-    return this.setState(
-      Object.assign(state, {
-        width: state.layout.width,
-        height: state.layout.width * state.height / state.width
-      })
-    );
-  }
-
-  handleError() {
-    this.calculateDimensions({
-      source: {
-        uri: placeholder
-      },
-      width: 800,
-      height: 600
-    });
-  }
-
   handleLoad() {
-    return this.getSize(this.state.source.uri, (width, height) =>
-      this.calculateDimensions({
-        width,
-        height
-      })
-    );
-  }
-
-  handleLayout({ nativeEvent }) {
-    const { height, width } = nativeEvent.layout;
-
-    this.calculateDimensions({
-      layout: {
-        width,
-        height
-      }
-    });
+    this.setState({ isLoaded: true });
   }
 
   render() {
-    const props = Object.assign({}, this.props, {
-      source: this.state.source,
-      style: [
-        {
-          height: this.state.height,
-          width: this.state.width
-        },
-        this.props.style
-      ]
-    });
+    const { uri: dirtyUri, aspectRatio, style } = this.props;
+    const { isLoaded } = this.state;
+    // web handles missing protocols just fine, native doesnt. This evens out support.
+    const uri = addMissingProtocol(dirtyUri);
 
     return (
-      <View onLayout={this.handleLayout}>
-        <Image {...props} onError={this.handleError} onLoad={this.handleLoad} />
-      </View>
+      <Image
+        style={style}
+        source={{ uri }}
+        aspectRatio={aspectRatio}
+        onLoad={this.handleLoad}
+      >
+        {isLoaded ? null : (
+          <Image source={{ uri: placeholder }} aspectRatio={aspectRatio} />
+        )}
+      </Image>
     );
   }
 }
 
-ImageComponent.propTypes = Image.propTypes;
+TimesImage.propTypes = imagePropTypes;
 
-export default ImageComponent;
+export default TimesImage;
