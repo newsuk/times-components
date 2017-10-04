@@ -159,6 +159,7 @@ class BrightcoveVideo extends Component {
   }
 
   onEnded() {
+    // calling syncronously here inteferes with player and causes errors to be thrown
     setTimeout(() => {
       this.setState({ isFinished: true });
     }, 0);
