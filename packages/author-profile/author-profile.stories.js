@@ -45,7 +45,7 @@ storiesOf("AuthorProfile", module)
     };
 
     props.data.articles.list.forEach(article => {
-      // eslint-disable-next-line
+      // eslint-disable-next-line no-param-reassign
       article.publishedTime = new Date(article.publishedTime);
     });
 

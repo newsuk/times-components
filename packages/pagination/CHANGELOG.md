@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.6.4...@times-components/pagination@0.7.0) (2017-10-03)
+
+
+### Bug Fixes
+
+* web font smoothing ([c3aa351](https://github.com/newsuk/times-components/commit/c3aa351))
+
+
+### Features
+
+* add basic pagination footer to author profile ([1581114](https://github.com/newsuk/times-components/commit/1581114))
+
+
+
+
+<a name="0.6.4"></a>
+## [0.6.4](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.6.3...@times-components/pagination@0.6.4) (2017-09-29)
+
+
+
+
 <a name="0.6.3"></a>
 ## [0.6.3](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.6.2...@times-components/pagination@0.6.3) (2017-09-25)
 

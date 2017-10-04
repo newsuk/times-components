@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.1"></a>
+## [0.9.1](https://github.com/newsuk/times-components/compare/@times-components/provider@0.9.0...@times-components/provider@0.9.1) (2017-10-03)
+
+
+
+
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.8.5...@times-components/provider@0.9.0) (2017-10-03)
+
+
+### Features
+
+* add basic pagination footer to author profile ([1581114](https://github.com/newsuk/times-components/commit/1581114))
+
+
+
+
+<a name="0.8.5"></a>
+## [0.8.5](https://github.com/newsuk/times-components/compare/@times-components/provider@0.8.4...@times-components/provider@0.8.5) (2017-10-02)
+
+
+### Bug Fixes
+
+* move files around; organization ([#262](https://github.com/newsuk/times-components/issues/262)) ([d68ebce](https://github.com/newsuk/times-components/commit/d68ebce))
+
+
+
+
+<a name="0.8.4"></a>
+## [0.8.4](https://github.com/newsuk/times-components/compare/@times-components/provider@0.8.3...@times-components/provider@0.8.4) (2017-09-29)
+
+
+
+
 <a name="0.8.3"></a>
 ## [0.8.3](https://github.com/newsuk/times-components/compare/@times-components/provider@0.8.2...@times-components/provider@0.8.3) (2017-09-28)
 

@@ -10,5 +10,6 @@
     "web.js",
     "js",
     "json"
-  ]
+  ],
+  "testEnvironment": "jsdom"
 }

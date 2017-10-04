@@ -1,339 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pagination Native renders compact above breakpoint 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Pagination
-    count={21}
-    generatePageLink={[Function]}
-    hideResults={false}
-    onNext={[Function]}
-    onPrev={[Function]}
-    page={1}
-    pageSize={20}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": null,
-    "nodeType": "class",
-    "props": Object {
-      "children": Array [
-        null,
-        <View
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "height": 40,
-                "justifyContent": "space-between",
-              },
-              Object {
-                "borderBottomColor": "#dbdbdb",
-                "borderBottomWidth": 1,
-                "borderStyle": "solid",
-                "borderTopColor": "#dbdbdb",
-                "borderTopWidth": 1,
-              },
-            ]
-          }
-        >
-          <View />
-          <View>
-            <TextLink
-              onPress={[Function]}
-              style={
-                Object {
-                  "color": "#006699",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 14,
-                }
-              }
-              url="./2"
-            >
-              Next page &gt;
-            </TextLink>
-          </View>
-        </View>,
-      ],
-      "onLayout": [Function],
-      "style": Object {
-        "alignItems": "stretch",
-        "flexDirection": "column",
-      },
-    },
-    "ref": null,
-    "rendered": Array [
-      null,
-      Object {
-        "instance": null,
-        "key": null,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <View />,
-            <View>
-              <TextLink
-                onPress={[Function]}
-                style={
-                  Object {
-                    "color": "#006699",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 14,
-                  }
-                }
-                url="./2"
-              >
-                Next page &gt;
-              </TextLink>
-            </View>,
-          ],
-          "style": Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "height": 40,
-              "justifyContent": "space-between",
-            },
-            Object {
-              "borderBottomColor": "#dbdbdb",
-              "borderBottomWidth": 1,
-              "borderStyle": "solid",
-              "borderTopColor": "#dbdbdb",
-              "borderTopWidth": 1,
-            },
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": null,
-            "nodeType": "class",
-            "props": Object {
-              "children": null,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": null,
-            "nodeType": "class",
-            "props": Object {
-              "children": <TextLink
-                onPress={[Function]}
-                style={
-                  Object {
-                    "color": "#006699",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 14,
-                  }
-                }
-                url="./2"
-              >
-                Next page &gt;
-              </TextLink>,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": null,
-              "nodeType": "function",
-              "props": Object {
-                "children": "Next page >",
-                "onPress": [Function],
-                "style": Object {
-                  "color": "#006699",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 14,
-                },
-                "url": "./2",
-              },
-              "ref": null,
-              "rendered": "Next page >",
-              "type": [Function],
-            },
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": null,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          null,
-          <View
-            style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                  "height": 40,
-                  "justifyContent": "space-between",
-                },
-                Object {
-                  "borderBottomColor": "#dbdbdb",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
-                  "borderTopWidth": 1,
-                },
-              ]
-            }
-          >
-            <View />
-            <View>
-              <TextLink
-                onPress={[Function]}
-                style={
-                  Object {
-                    "color": "#006699",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 14,
-                  }
-                }
-                url="./2"
-              >
-                Next page &gt;
-              </TextLink>
-            </View>
-          </View>,
-        ],
-        "onLayout": [Function],
-        "style": Object {
-          "alignItems": "stretch",
-          "flexDirection": "column",
-        },
-      },
-      "ref": null,
-      "rendered": Array [
-        null,
-        Object {
-          "instance": null,
-          "key": null,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <View />,
-              <View>
-                <TextLink
-                  onPress={[Function]}
-                  style={
-                    Object {
-                      "color": "#006699",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 14,
-                    }
-                  }
-                  url="./2"
-                >
-                  Next page &gt;
-                </TextLink>
-              </View>,
-            ],
-            "style": Array [
-              Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "height": 40,
-                "justifyContent": "space-between",
-              },
-              Object {
-                "borderBottomColor": "#dbdbdb",
-                "borderBottomWidth": 1,
-                "borderStyle": "solid",
-                "borderTopColor": "#dbdbdb",
-                "borderTopWidth": 1,
-              },
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": null,
-              "nodeType": "class",
-              "props": Object {
-                "children": null,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": null,
-              "nodeType": "class",
-              "props": Object {
-                "children": <TextLink
-                  onPress={[Function]}
-                  style={
-                    Object {
-                      "color": "#006699",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 14,
-                    }
-                  }
-                  url="./2"
-                >
-                  Next page &gt;
-                </TextLink>,
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": null,
-                "nodeType": "function",
-                "props": Object {
-                  "children": "Next page >",
-                  "onPress": [Function],
-                  "style": Object {
-                    "color": "#006699",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 14,
-                  },
-                  "url": "./2",
-                },
-                "ref": null,
-                "rendered": "Next page >",
-                "type": [Function],
-              },
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
-`;
-
 exports[`Pagination Native renders correctly 1`] = `
 ShallowWrapper {
   "length": 1,
@@ -426,7 +92,7 @@ ShallowWrapper {
               }
               url="./2"
             >
-              Next page &gt;
+              Next &gt;
             </TextLink>
           </View>
         </View>,
@@ -518,7 +184,7 @@ ShallowWrapper {
                 }
                 url="./2"
               >
-                Next page &gt;
+                Next &gt;
               </TextLink>
             </View>,
           ],
@@ -567,7 +233,7 @@ ShallowWrapper {
                 }
                 url="./2"
               >
-                Next page &gt;
+                Next &gt;
               </TextLink>,
             },
             "ref": null,
@@ -576,7 +242,7 @@ ShallowWrapper {
               "key": null,
               "nodeType": "function",
               "props": Object {
-                "children": "Next page >",
+                "children": "Next >",
                 "onPress": [Function],
                 "style": Object {
                   "color": "#006699",
@@ -586,7 +252,7 @@ ShallowWrapper {
                 "url": "./2",
               },
               "ref": null,
-              "rendered": "Next page >",
+              "rendered": "Next >",
               "type": [Function],
             },
             "type": [Function],
@@ -670,7 +336,7 @@ ShallowWrapper {
                 }
                 url="./2"
               >
-                Next page &gt;
+                Next &gt;
               </TextLink>
             </View>
           </View>,
@@ -762,7 +428,7 @@ ShallowWrapper {
                   }
                   url="./2"
                 >
-                  Next page &gt;
+                  Next &gt;
                 </TextLink>
               </View>,
             ],
@@ -811,7 +477,7 @@ ShallowWrapper {
                   }
                   url="./2"
                 >
-                  Next page &gt;
+                  Next &gt;
                 </TextLink>,
               },
               "ref": null,
@@ -820,7 +486,7 @@ ShallowWrapper {
                 "key": null,
                 "nodeType": "function",
                 "props": Object {
-                  "children": "Next page >",
+                  "children": "Next >",
                   "onPress": [Function],
                   "style": Object {
                     "color": "#006699",
@@ -830,7 +496,7 @@ ShallowWrapper {
                   "url": "./2",
                 },
                 "ref": null,
-                "rendered": "Next page >",
+                "rendered": "Next >",
                 "type": [Function],
               },
               "type": [Function],
@@ -943,7 +609,7 @@ ShallowWrapper {
               }
               url="./1"
             >
-              &lt; Previous page
+              &lt; Previous
             </TextLink>
           </View>
           <View>
@@ -958,7 +624,7 @@ ShallowWrapper {
               }
               url="./3"
             >
-              Next page &gt;
+              Next &gt;
             </TextLink>
           </View>
         </View>,
@@ -1049,7 +715,7 @@ ShallowWrapper {
                 }
                 url="./1"
               >
-                &lt; Previous page
+                &lt; Previous
               </TextLink>
             </View>,
             <View>
@@ -1064,7 +730,7 @@ ShallowWrapper {
                 }
                 url="./3"
               >
-                Next page &gt;
+                Next &gt;
               </TextLink>
             </View>,
           ],
@@ -1102,7 +768,7 @@ ShallowWrapper {
                 }
                 url="./1"
               >
-                &lt; Previous page
+                &lt; Previous
               </TextLink>,
             },
             "ref": null,
@@ -1111,7 +777,7 @@ ShallowWrapper {
               "key": null,
               "nodeType": "function",
               "props": Object {
-                "children": "< Previous page",
+                "children": "< Previous",
                 "onPress": [Function],
                 "style": Object {
                   "color": "#006699",
@@ -1121,7 +787,7 @@ ShallowWrapper {
                 "url": "./1",
               },
               "ref": null,
-              "rendered": "< Previous page",
+              "rendered": "< Previous",
               "type": [Function],
             },
             "type": [Function],
@@ -1142,7 +808,7 @@ ShallowWrapper {
                 }
                 url="./3"
               >
-                Next page &gt;
+                Next &gt;
               </TextLink>,
             },
             "ref": null,
@@ -1151,7 +817,7 @@ ShallowWrapper {
               "key": null,
               "nodeType": "function",
               "props": Object {
-                "children": "Next page >",
+                "children": "Next >",
                 "onPress": [Function],
                 "style": Object {
                   "color": "#006699",
@@ -1161,7 +827,7 @@ ShallowWrapper {
                 "url": "./3",
               },
               "ref": null,
-              "rendered": "Next page >",
+              "rendered": "Next >",
               "type": [Function],
             },
             "type": [Function],
@@ -1244,7 +910,7 @@ ShallowWrapper {
                 }
                 url="./1"
               >
-                &lt; Previous page
+                &lt; Previous
               </TextLink>
             </View>
             <View>
@@ -1259,7 +925,7 @@ ShallowWrapper {
                 }
                 url="./3"
               >
-                Next page &gt;
+                Next &gt;
               </TextLink>
             </View>
           </View>,
@@ -1350,7 +1016,7 @@ ShallowWrapper {
                   }
                   url="./1"
                 >
-                  &lt; Previous page
+                  &lt; Previous
                 </TextLink>
               </View>,
               <View>
@@ -1365,7 +1031,7 @@ ShallowWrapper {
                   }
                   url="./3"
                 >
-                  Next page &gt;
+                  Next &gt;
                 </TextLink>
               </View>,
             ],
@@ -1403,7 +1069,7 @@ ShallowWrapper {
                   }
                   url="./1"
                 >
-                  &lt; Previous page
+                  &lt; Previous
                 </TextLink>,
               },
               "ref": null,
@@ -1412,7 +1078,7 @@ ShallowWrapper {
                 "key": null,
                 "nodeType": "function",
                 "props": Object {
-                  "children": "< Previous page",
+                  "children": "< Previous",
                   "onPress": [Function],
                   "style": Object {
                     "color": "#006699",
@@ -1422,7 +1088,7 @@ ShallowWrapper {
                   "url": "./1",
                 },
                 "ref": null,
-                "rendered": "< Previous page",
+                "rendered": "< Previous",
                 "type": [Function],
               },
               "type": [Function],
@@ -1443,7 +1109,7 @@ ShallowWrapper {
                   }
                   url="./3"
                 >
-                  Next page &gt;
+                  Next &gt;
                 </TextLink>,
               },
               "ref": null,
@@ -1452,7 +1118,7 @@ ShallowWrapper {
                 "key": null,
                 "nodeType": "function",
                 "props": Object {
-                  "children": "Next page >",
+                  "children": "Next >",
                   "onPress": [Function],
                   "style": Object {
                     "color": "#006699",
@@ -1462,7 +1128,7 @@ ShallowWrapper {
                   "url": "./3",
                 },
                 "ref": null,
-                "rendered": "Next page >",
+                "rendered": "Next >",
                 "type": [Function],
               },
               "type": [Function],
@@ -1575,7 +1241,7 @@ ShallowWrapper {
               }
               url="./2"
             >
-              &lt; Previous page
+              &lt; Previous
             </TextLink>
           </View>
           <View />
@@ -1667,7 +1333,7 @@ ShallowWrapper {
                 }
                 url="./2"
               >
-                &lt; Previous page
+                &lt; Previous
               </TextLink>
             </View>,
             <View />,
@@ -1706,7 +1372,7 @@ ShallowWrapper {
                 }
                 url="./2"
               >
-                &lt; Previous page
+                &lt; Previous
               </TextLink>,
             },
             "ref": null,
@@ -1715,7 +1381,7 @@ ShallowWrapper {
               "key": null,
               "nodeType": "function",
               "props": Object {
-                "children": "< Previous page",
+                "children": "< Previous",
                 "onPress": [Function],
                 "style": Object {
                   "color": "#006699",
@@ -1725,7 +1391,7 @@ ShallowWrapper {
                 "url": "./2",
               },
               "ref": null,
-              "rendered": "< Previous page",
+              "rendered": "< Previous",
               "type": [Function],
             },
             "type": [Function],
@@ -1819,7 +1485,7 @@ ShallowWrapper {
                 }
                 url="./2"
               >
-                &lt; Previous page
+                &lt; Previous
               </TextLink>
             </View>
             <View />
@@ -1911,7 +1577,7 @@ ShallowWrapper {
                   }
                   url="./2"
                 >
-                  &lt; Previous page
+                  &lt; Previous
                 </TextLink>
               </View>,
               <View />,
@@ -1950,7 +1616,7 @@ ShallowWrapper {
                   }
                   url="./2"
                 >
-                  &lt; Previous page
+                  &lt; Previous
                 </TextLink>,
               },
               "ref": null,
@@ -1959,7 +1625,7 @@ ShallowWrapper {
                 "key": null,
                 "nodeType": "function",
                 "props": Object {
-                  "children": "< Previous page",
+                  "children": "< Previous",
                   "onPress": [Function],
                   "style": Object {
                     "color": "#006699",
@@ -1969,7 +1635,7 @@ ShallowWrapper {
                   "url": "./2",
                 },
                 "ref": null,
-                "rendered": "< Previous page",
+                "rendered": "< Previous",
                 "type": [Function],
               },
               "type": [Function],
@@ -2094,7 +1760,7 @@ ShallowWrapper {
               }
               url="./2"
             >
-              Next page &gt;
+              Next &gt;
             </TextLink>
           </View>
         </View>,
@@ -2186,7 +1852,7 @@ ShallowWrapper {
                 }
                 url="./2"
               >
-                Next page &gt;
+                Next &gt;
               </TextLink>
             </View>,
           ],
@@ -2235,7 +1901,7 @@ ShallowWrapper {
                 }
                 url="./2"
               >
-                Next page &gt;
+                Next &gt;
               </TextLink>,
             },
             "ref": null,
@@ -2244,7 +1910,7 @@ ShallowWrapper {
               "key": null,
               "nodeType": "function",
               "props": Object {
-                "children": "Next page >",
+                "children": "Next >",
                 "onPress": [Function],
                 "style": Object {
                   "color": "#006699",
@@ -2254,7 +1920,7 @@ ShallowWrapper {
                 "url": "./2",
               },
               "ref": null,
-              "rendered": "Next page >",
+              "rendered": "Next >",
               "type": [Function],
             },
             "type": [Function],
@@ -2338,7 +2004,7 @@ ShallowWrapper {
                 }
                 url="./2"
               >
-                Next page &gt;
+                Next &gt;
               </TextLink>
             </View>
           </View>,
@@ -2430,7 +2096,7 @@ ShallowWrapper {
                   }
                   url="./2"
                 >
-                  Next page &gt;
+                  Next &gt;
                 </TextLink>
               </View>,
             ],
@@ -2479,7 +2145,7 @@ ShallowWrapper {
                   }
                   url="./2"
                 >
-                  Next page &gt;
+                  Next &gt;
                 </TextLink>,
               },
               "ref": null,
@@ -2488,7 +2154,7 @@ ShallowWrapper {
                 "key": null,
                 "nodeType": "function",
                 "props": Object {
-                  "children": "Next page >",
+                  "children": "Next >",
                   "onPress": [Function],
                   "style": Object {
                     "color": "#006699",
@@ -2498,7 +2164,341 @@ ShallowWrapper {
                   "url": "./2",
                 },
                 "ref": null,
-                "rendered": "Next page >",
+                "rendered": "Next >",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Pagination Native renders with hidden results above breakpoint 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Pagination
+    count={21}
+    generatePageLink={[Function]}
+    hideResults={false}
+    onNext={[Function]}
+    onPrev={[Function]}
+    page={1}
+    pageSize={20}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        null,
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 40,
+                "justifyContent": "space-between",
+              },
+              Object {
+                "borderBottomColor": "#dbdbdb",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+                "borderTopColor": "#dbdbdb",
+                "borderTopWidth": 1,
+              },
+            ]
+          }
+        >
+          <View />
+          <View>
+            <TextLink
+              onPress={[Function]}
+              style={
+                Object {
+                  "color": "#006699",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 14,
+                }
+              }
+              url="./2"
+            >
+              Next &gt;
+            </TextLink>
+          </View>
+        </View>,
+      ],
+      "onLayout": [Function],
+      "style": Object {
+        "alignItems": "stretch",
+        "flexDirection": "column",
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      null,
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <View />,
+            <View>
+              <TextLink
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
+                }
+                url="./2"
+              >
+                Next &gt;
+              </TextLink>
+            </View>,
+          ],
+          "style": Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 40,
+              "justifyContent": "space-between",
+            },
+            Object {
+              "borderBottomColor": "#dbdbdb",
+              "borderBottomWidth": 1,
+              "borderStyle": "solid",
+              "borderTopColor": "#dbdbdb",
+              "borderTopWidth": 1,
+            },
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "class",
+            "props": Object {
+              "children": null,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "class",
+            "props": Object {
+              "children": <TextLink
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
+                }
+                url="./2"
+              >
+                Next &gt;
+              </TextLink>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Next >",
+                "onPress": [Function],
+                "style": Object {
+                  "color": "#006699",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 14,
+                },
+                "url": "./2",
+              },
+              "ref": null,
+              "rendered": "Next >",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          null,
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                },
+                Object {
+                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#dbdbdb",
+                  "borderTopWidth": 1,
+                },
+              ]
+            }
+          >
+            <View />
+            <View>
+              <TextLink
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  }
+                }
+                url="./2"
+              >
+                Next &gt;
+              </TextLink>
+            </View>
+          </View>,
+        ],
+        "onLayout": [Function],
+        "style": Object {
+          "alignItems": "stretch",
+          "flexDirection": "column",
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        null,
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <View />,
+              <View>
+                <TextLink
+                  onPress={[Function]}
+                  style={
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 14,
+                    }
+                  }
+                  url="./2"
+                >
+                  Next &gt;
+                </TextLink>
+              </View>,
+            ],
+            "style": Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 40,
+                "justifyContent": "space-between",
+              },
+              Object {
+                "borderBottomColor": "#dbdbdb",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+                "borderTopColor": "#dbdbdb",
+                "borderTopWidth": 1,
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "children": null,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "children": <TextLink
+                  onPress={[Function]}
+                  style={
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 14,
+                    }
+                  }
+                  url="./2"
+                >
+                  Next &gt;
+                </TextLink>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Next >",
+                  "onPress": [Function],
+                  "style": Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 14,
+                  },
+                  "url": "./2",
+                },
+                "ref": null,
+                "rendered": "Next >",
                 "type": [Function],
               },
               "type": [Function],
