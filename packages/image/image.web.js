@@ -21,19 +21,19 @@ class TimesImage extends Component {
     const { uri, aspectRatio, style } = this.props;
     const { isLoaded } = this.state;
 
-    const aspectRatioCss = {
+    const aspectRatioStyle = {
       height: 0,
       overflow: "hidden",
       paddingBottom: `${100 / aspectRatio}%`
     };
-    const placeholderCss = {
+    const placeholderStyle = {
       backgroundImage: `url(${placeholder})`,
       backgroundSize: "cover",
       backgroundPosition: "center"
     };
     const boundingStyle = isLoaded
-      ? aspectRatioCss
-      : { ...aspectRatioCss, ...placeholderCss };
+      ? aspectRatioStyle
+      : { ...aspectRatioStyle, ...placeholderStyle };
 
     const boundedImg = (
       <div style={boundingStyle}>
