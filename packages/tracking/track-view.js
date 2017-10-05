@@ -6,7 +6,7 @@ import resolveAttrs from "./resolve-attrs";
 
 export default (
   WrappedComponent,
-  { trackingName, getAttrs = () => ({}) } = {}
+  { trackingName, actionName, getAttrs = () => ({}) } = {}
 ) => {
   const componentName = getDisplayName(WrappedComponent);
 
@@ -18,7 +18,7 @@ export default (
 
       this.context.tracking.analytics({
         component: trackingName || componentName,
-        action: "Viewed",
+        action: actionName || "Rendered",
         attrs: resolveAttrs(getAttrs, this.props)
       });
     }

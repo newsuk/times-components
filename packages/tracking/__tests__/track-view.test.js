@@ -48,7 +48,7 @@ describe("WithTrackView", () => {
     renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
 
     expect(reporter).toHaveBeenCalledWith({
-      action: "Viewed",
+      action: "Rendered",
       attrs: {},
       component: "TestComponent"
     });
@@ -62,11 +62,22 @@ describe("WithTrackView", () => {
 
     renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
 
-    expect(reporter).toHaveBeenCalledWith({
-      action: "Viewed",
-      attrs: {},
-      component: "TrackedThing"
-    });
+    expect(reporter).toHaveBeenCalledWith(
+      expect.objectContaining({ component: "TrackedThing" })
+    );
+  });
+
+  it("accepts action name override", () => {
+    const WithTrackingAndContext = withTestContext(
+      withTrackView(TestComponent, { actionName: "Viewed" })
+    );
+    const reporter = jest.fn();
+
+    renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
+
+    expect(reporter).toHaveBeenCalledWith(
+      expect.objectContaining({ action: "Viewed" })
+    );
   });
 
   it("applies tracking attrs", () => {
