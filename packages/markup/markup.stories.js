@@ -7,11 +7,10 @@ import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import { renderTree, renderTrees } from "./markup";
 
-const multiParagraph = require("./fixtures/multi-paragraph.json").fixture;
-const multiParagraphWithAds = require("./fixtures/multi-paragraph-with-ads.json")
-  .fixture;
-const mixture = require("./fixtures/tag-mixture.json").fixture;
-const bio = require("./fixtures/bio.json").fixture;
+const multiParagraph = require("./fixtures/multi-paragraph.json");
+const multiParagraphWithAds = require("./fixtures/multi-paragraph-with-ads.json");
+const mixture = require("./fixtures/tag-mixture.json");
+const bio = require("./fixtures/bio.json");
 
 // eslint-disable-next-line react/prop-types
 const Centered = ({ children }) => (
@@ -55,7 +54,7 @@ storiesOf("Markup", module)
     return <ScrollView>{renderTrees(multiParagraphWithAds)}</ScrollView>;
   })
   .add("Mixture of tags", () =>
-    renderTree(mixture[0], {
+    renderTree(mixture, {
       block(key, attributes, renderedChildren) {
         return <View key={key}>{renderedChildren}</View>;
       },

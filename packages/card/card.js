@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { View, StyleSheet } from "react-native";
 import ArticleSummary from "@times-components/article-summary";
 import Image from "@times-components/image";
@@ -69,7 +70,7 @@ class CardComponent extends React.Component {
             isHorizontal ? styles.horizontalImageContainer : null
           ]}
         >
-          <Image style={styles.image} source={image} />
+          <Image style={styles.image} uri={image.uri} aspectRatio={3 / 2} />
         </View>
       ) : null;
 
@@ -104,7 +105,7 @@ class CardComponent extends React.Component {
 
 CardComponent.propTypes = Object.assign(
   {
-    image: Image.propTypes.source
+    image: PropTypes.shape({ uri: PropTypes.string })
   },
   ArticleSummary.propTypes
 );

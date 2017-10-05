@@ -61,9 +61,13 @@ Properties types are defined in `./brightcove-video.proptypes.js`
 | `width` | number | width of the player
 | `height` | number | height of the player
 | `onError` | function | Handle errors
-| `onChange` | function |
-| `autoplay` | boolean | Should the video autoplay
-| `hideFullScreenButton` | boolean | Should the full screen button be hidden
+| `onPlay` | function | Handles play events
+| `onPause` | function | Handles pause events
+| `onProgress` | function | Handles progress events
+| `onFinish` | function | Handles video finish events
+| `autoplay` | boolean | Should the video autoplay? (default false)
+| `hideFullScreenButton` | boolean | Should the full screen button be hidden? (default false)
+| `resetOnFinish` | boolean | Should the video reset to poster image when video finishes? (default false)
 
 ## Usage
 

@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 import PropTypes from "prop-types";
 import AuthorProfileHeader from "./author-profile-header";
+import AuthorProfileFooter from "./author-profile-footer";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
 
@@ -21,7 +22,7 @@ const AuthorProfile = props => (
         key > 0 ? <AuthorProfileItemSeparator /> : null;
 
       return (
-        <View key={id} style={styles.container}>
+        <View testID={`articleList-${key}`} key={id} style={styles.container}>
           {separatorComponent}
           <AuthorProfileItem
             {...article}
@@ -30,6 +31,7 @@ const AuthorProfile = props => (
         </View>
       );
     })}
+    <AuthorProfileFooter {...props} />
   </View>
 );
 
