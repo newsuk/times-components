@@ -173,6 +173,7 @@ exports[`will reset if 'resetOnFinish' is true & video finishes 1`] = `
   accessibilityTraits={undefined}
   accessible={true}
   hitSlop={undefined}
+  nativeID={undefined}
   onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
