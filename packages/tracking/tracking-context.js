@@ -19,18 +19,18 @@ const withTrackingContext = (
 
       return {
         tracking: {
-          analytics(e) {
+          analytics({ object, component, action, attrs }) {
             const trackingEvent = {
-              component: e.component,
-              action: e.action,
+              component,
+              action,
               attrs: {
                 ...resolveAttrs(getAttrs, self.props),
-                ...e.attrs
+                ...attrs
               }
             };
 
-            if (e.object || trackingObject) {
-              trackingEvent.object = e.object || trackingObject;
+            if (object || trackingObject) {
+              trackingEvent.object = object || trackingObject;
             }
 
             if (self.isRootTrackingContext()) {
