@@ -10,8 +10,9 @@ const flatten = l =>
 const getQueryVariables = definitions =>
   flatten(
     definitions.map(definition =>
-      (definition.variableDefinitions || [])
-        .map(variable => variable.variable.name.value)
+      (definition.variableDefinitions || []).map(
+        variable => variable.variable.name.value
+      )
     )
   );
 

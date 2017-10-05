@@ -7,6 +7,7 @@ import { withPageState } from "@times-components/pagination";
 import { AuthorProfileProvider } from "@times-components/provider";
 import { ApolloClient, IntrospectionFragmentMatcher } from "react-apollo";
 import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { addTypenameToDocument } from "apollo-client";
 import { query as authorProfileQuery } from "@times-components/provider/author-profile-provider";
 import AuthorProfile from "./author-profile";

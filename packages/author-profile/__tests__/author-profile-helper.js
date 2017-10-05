@@ -10,10 +10,12 @@ import AuthorProfileHeader from "../author-profile-header";
 import AuthorProfileItemSeparator from "../author-profile-item-separator";
 import example from "../example.json";
 
-example.data.author.articles.list = example.data.author.articles.list.map(el => ({
-  ...el,
-  publishedTime: new Date(el.publishedTime)
-}));
+example.data.author.articles.list = example.data.author.articles.list.map(
+  el => ({
+    ...el,
+    publishedTime: new Date(el.publishedTime)
+  })
+);
 
 const props = {
   author: Object.assign({}, example.data.author, {
