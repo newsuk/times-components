@@ -46,17 +46,6 @@ storiesOf("Image", module)
       </View>
     </View>
   ))
-  .add("Resized to half of full width, keeping aspect ratio", () => (
-    <View style={{ width: "50%" }}>
-      <SquareImage />
-    </View>
-  ))
-  .add("Defaults schema to https", () => (
-    <Image
-      uri="//feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=400"
-      aspectRatio={1 / 1}
-    />
-  ))
   .add("Can be styled and keep aspect ratio", () => (
     <View>
       <SquareImage
@@ -80,6 +69,19 @@ storiesOf("Image", module)
       />
     </View>
   ))
+  .add(
+    "Handles incorrect aspect ratios inconsistently (web native mismatch)",
+    () => (
+      <View>
+        <View style={{ width: 200, borderWidth: 1, borderColor: "black" }}>
+          <Image uri={sixteenNineUri} aspectRatio={1 / 1} />
+        </View>
+        <View style={{ width: 200, borderWidth: 1, borderColor: "black" }}>
+          <Image uri={squareUri} aspectRatio={16 / 9} />
+        </View>
+      </View>
+    )
+  )
   .add("Server side rendered Image (web only)", () => {
     if (Platform.OS !== "web") {
       return <Text>N/A</Text>;
@@ -117,4 +119,12 @@ storiesOf("Image", module)
     };
 
     return <div dangerouslySetInnerHTML={markup} />;
-  });
+  })
+  .add("Defaults schema to https", () => (
+    <View style={{ width: 300 }}>
+      <Image
+        uri="//feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=400"
+        aspectRatio={1 / 1}
+      />
+    </View>
+  ));
