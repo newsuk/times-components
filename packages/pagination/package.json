@@ -7,22 +7,17 @@
     "test:watch": "npm run test:native -- --bail --verbose --watchAll",
     "test:native": "jest --config='./jest.config.json'",
     "test:web": "jest --config='./jest.config.web.json'",
-    "test": "npm run test:native -- --ci --bail && npm run test:web -- --ci --bail --coverage",
-    "prettier:diff": "prettier --list-different '**/*.js'",
+    "test":
+      "npm run test:native -- --ci --bail && npm run test:web -- --ci --bail --coverage",
+    "prettier:diff": "prettier --list-different '**/*.+(js|json)'",
     "lint": "eslint . && npm run prettier:diff"
   },
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
-    "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/pagination/__tests__/**.test.js"
-    ]
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+    "testMatch": ["<rootDir>/packages/pagination/__tests__/**.test.js"]
   },
   "repository": {
     "type": "git",

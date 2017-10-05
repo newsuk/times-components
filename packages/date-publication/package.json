@@ -7,18 +7,14 @@
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
     "test": "jest --bail --ci --coverage",
-    "prettier:diff": "prettier --list-different '**/*.js'",
+    "prettier:diff": "prettier --list-different '**/*.+(js|json)'",
     "lint": "eslint . && npm run prettier:diff"
   },
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/date-publication/**.test.js"
-    ]
+    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+    "testMatch": ["<rootDir>/packages/date-publication/**.test.js"]
   },
   "repository": {
     "type": "git",

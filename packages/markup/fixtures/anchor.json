@@ -1,15 +1,15 @@
 {
-   "name": "link",
-   "attributes": {
-     "href": "www.google.com"
-   },
-   "children": [
-     {
-       "name": "text",
-       "attributes": {
-         "value": "some link here"
-       },
-       "children": []
-     }
-   ]
- }
+  "name": "link",
+  "attributes": {
+    "href": "www.google.com"
+  },
+  "children": [
+    {
+      "name": "text",
+      "attributes": {
+        "value": "some link here"
+      },
+      "children": []
+    }
+  ]
+}

@@ -6,21 +6,15 @@
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
     "test": "jest --bail --ci --coverage",
-    "prettier:diff": "prettier --list-different '**/*.js'",
+    "prettier:diff": "prettier --list-different '**/*.+(js|json)'",
     "lint": "eslint . && npm run prettier:diff"
   },
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
-    "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/image/**.test.js"
-    ]
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+    "testMatch": ["<rootDir>/packages/image/**.test.js"]
   },
   "repository": {
     "type": "git",
