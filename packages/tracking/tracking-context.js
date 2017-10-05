@@ -61,7 +61,7 @@ const withTrackingContext = (
     }
 
     isRootTrackingContext() {
-      return !_get(this.context, "tracking");
+      return !this.context || !this.context.tracking;
     }
 
     analyticsStream(...args) {
