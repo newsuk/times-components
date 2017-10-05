@@ -13,7 +13,7 @@ describe("resolveAttrs", () => {
     expect(attrs).toEqual({});
   });
 
-  it("forwards props amd eventArgs to getAttrs", () => {
+  it("forwards props and eventArgs to getAttrs", () => {
     const getAttrs = (props, eventArgs) => ({
       someProp: props.one,
       someArg: eventArgs[0].three
