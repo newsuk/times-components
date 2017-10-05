@@ -21,43 +21,26 @@ const preventDefaultedAction = decorateAction([
 ]);
 
 const mocks = [
-  {
-    request: {
-      query: addTypenameToDocument(authorProfileQuery),
-      variables: {
-        slug: "fiona-hamilton",
-        first: 3,
-        skip: 0,
-        imageRatio: "3:2"
-      }
-    },
-    result: example
+  { first: 3, skip: 0 },
+  { first: 6, skip: 3 },
+  { first: 9, skip: 6 },
+  { first: 12, skip: 9 },
+  { first: 15, skip: 12 },
+  { first: 18, skip: 15 },
+  { first: 21, skip: 18 },
+  { first: 24, skip: 21 }
+].map(({ first, skip }) => ({
+  request: {
+    query: addTypenameToDocument(authorProfileQuery),
+    variables: {
+      slug: "fiona-hamilton",
+      first,
+      skip,
+      imageRatio: "3:2"
+    }
   },
-  {
-    request: {
-      query: addTypenameToDocument(authorProfileQuery),
-      variables: {
-        slug: "fiona-hamilton",
-        first: 6,
-        skip: 3,
-        imageRatio: "3:2"
-      }
-    },
-    result: example
-  },
-  {
-    request: {
-      query: addTypenameToDocument(authorProfileQuery),
-      variables: {
-        slug: "fiona-hamilton",
-        first: 9,
-        skip: 6,
-        imageRatio: "3:2"
-      }
-    },
-    result: example
-  }
-];
+  result: example
+}));
 
 const fragmentMatcher = new IntrospectionFragmentMatcher({
   introspectionQueryResultData: {
