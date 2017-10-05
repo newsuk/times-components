@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "0.14.1",
+  "version": "0.14.2",
   "description": "The article",
   "main": "article",
   "scripts": {
@@ -56,10 +56,10 @@
     "@times-components/article-byline": "0.5.8",
     "@times-components/article-flag": "0.6.2",
     "@times-components/article-headline": "0.6.0",
-    "@times-components/article-image": "0.2.0",
+    "@times-components/article-image": "0.2.1",
     "@times-components/article-label": "0.3.1",
     "@times-components/date-publication": "0.3.1",
-    "@times-components/image": "1.4.1",
+    "@times-components/image": "1.4.2",
     "@times-components/markup": "0.7.5",
     "prop-types": "15.5.10",
     "react-native-web": "0.0.119"

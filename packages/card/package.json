@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "0.6.6",
+  "version": "0.6.7",
   "main": "card",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -65,7 +65,7 @@
   },
   "dependencies": {
     "@times-components/article-summary": "0.5.6",
-    "@times-components/image": "1.4.1",
+    "@times-components/image": "1.4.2",
     "prop-types": "15.5.10",
     "react-native-web": "0.0.119"
   },
