@@ -14,6 +14,23 @@ const withTrackingContext = (
   const componentName = getDisplayName(WrappedComponent);
 
   class WithTrackingContext extends Component {
+    constructor(props, context) {
+      super(props, context);
+
+      if (this.isRootTrackingContext()) {
+        if (!trackingObject) {
+          throw new TypeError(
+            "Missing argument trackingObject of withTrackingContext()"
+          );
+        }
+        if (!this.props.analyticsStream) {
+          throw new TypeError(
+            "Missing prop analyticsStream of WithTrackingContext"
+          );
+        }
+      }
+    }
+
     getChildContext() {
       const self = this;
 
@@ -41,21 +58,6 @@ const withTrackingContext = (
           }
         }
       };
-    }
-
-    componentWillMount() {
-      if (this.isRootTrackingContext()) {
-        if (!trackingObject) {
-          throw new TypeError(
-            "Missing argument trackingObject of withTrackingContext()"
-          );
-        }
-        if (!this.props.analyticsStream) {
-          throw new TypeError(
-            "Missing prop analyticsStream of WithTrackingContext"
-          );
-        }
-      }
     }
 
     isRootTrackingContext() {
