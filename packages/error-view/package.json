@@ -17,7 +17,7 @@
       "node_modules/(?!@times-components)/"
     ],
     "testMatch": [
-      "<rootDir>/packages/error/__tests__/*.test.js"
+      "<rootDir>/packages/error-view/__tests__/*.test.js"
     ]
   },
   "repository": {
