@@ -20,7 +20,7 @@ const withTrackingContext = (
       return {
         tracking: {
           analytics({ object, component, action, attrs }) {
-            const trackingEvent = {
+            const decoratedEvent = {
               component,
               action,
               attrs: {
@@ -30,14 +30,14 @@ const withTrackingContext = (
             };
 
             if (object || trackingObject) {
-              trackingEvent.object = object || trackingObject;
+              decoratedEvent.object = object || trackingObject;
             }
 
             if (self.isRootTrackingContext()) {
-              trackingEvent.attrs.eventTime = new Date().toISOString();
+              decoratedEvent.attrs.eventTime = new Date().toISOString();
             }
 
-            self.analyticsStream(trackingEvent);
+            self.analyticsStream(decoratedEvent);
           }
         }
       };
