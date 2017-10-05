@@ -2,10 +2,10 @@ import { Text } from "react-native";
 import React from "react";
 import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
-import { withTrackView } from "../tracking";
+import { withTrackRender } from "../tracking";
 import trackingContextTypes from "../tracking-context-types";
 
-describe("WithTrackView", () => {
+describe("WithTrackRender", () => {
   const TestComponent = props => <Text>{props.someProp}</Text>;
   TestComponent.propTypes = { someProp: PropTypes.string };
   TestComponent.defaultProps = { someProp: "foo" };
@@ -32,16 +32,16 @@ describe("WithTrackView", () => {
   };
 
   it("renders when tracking context is missing", () => {
-    const WithTracking = withTrackView(TestComponent);
+    const WithTracking = withTrackRender(TestComponent);
 
     const tree = renderer.create(<WithTracking />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
-  it("raises event on wrapped component render", () => {
+  it("raises event on wrapped component first render", () => {
     const WithTrackingAndContext = withTestContext(
-      withTrackView(TestComponent)
+      withTrackRender(TestComponent)
     );
     const reporter = jest.fn();
 
@@ -56,7 +56,7 @@ describe("WithTrackView", () => {
 
   it("accepts component name override", () => {
     const WithTrackingAndContext = withTestContext(
-      withTrackView(TestComponent, { trackingName: "TrackedThing" })
+      withTrackRender(TestComponent, { trackingName: "TrackedThing" })
     );
     const reporter = jest.fn();
 
@@ -69,7 +69,7 @@ describe("WithTrackView", () => {
 
   it("accepts action name override", () => {
     const WithTrackingAndContext = withTestContext(
-      withTrackView(TestComponent, { actionName: "Viewed" })
+      withTrackRender(TestComponent, { actionName: "Viewed" })
     );
     const reporter = jest.fn();
 
@@ -82,7 +82,7 @@ describe("WithTrackView", () => {
 
   it("applies tracking attrs", () => {
     const WithTrackingAndContext = withTestContext(
-      withTrackView(TestComponent, {
+      withTrackRender(TestComponent, {
         getAttrs: props => ({ one: props.keyTwo, three: "four" })
       })
     );
@@ -100,26 +100,26 @@ describe("WithTrackView", () => {
   });
 
   it("forwards props to wrapped component", () => {
-    const WithTracking = withTrackView(TestComponent);
+    const WithTracking = withTrackRender(TestComponent);
     const tree = renderer.create(<WithTracking someProp="bar" />);
 
     expect(tree).toMatchSnapshot();
   });
 
   it("hoists wrapped propTypes", () => {
-    const WithTracking = withTrackView(TestComponent);
+    const WithTracking = withTrackRender(TestComponent);
 
     expect(WithTracking.propTypes).toEqual(TestComponent.propTypes);
   });
 
   it("hoists wrapped defaultProps", () => {
-    const WithTracking = withTrackView(TestComponent);
+    const WithTracking = withTrackRender(TestComponent);
 
     expect(WithTracking.defaultProps).toEqual(TestComponent.defaultProps);
   });
 
   it("hoists wrapped statics", () => {
-    const WithTracking = withTrackView(TestComponent);
+    const WithTracking = withTrackRender(TestComponent);
 
     expect(WithTracking.someStatic).toEqual(TestComponent.someStatic);
   });

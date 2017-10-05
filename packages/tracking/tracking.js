@@ -1,2 +1,2 @@
 export { default as withTrackingContext } from "./tracking-context";
-export { default as withTrackView } from "./track-view";
+export { default as withTrackRender } from "./track-render";

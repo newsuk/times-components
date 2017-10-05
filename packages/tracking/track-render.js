@@ -10,7 +10,7 @@ export default (
 ) => {
   const componentName = getDisplayName(WrappedComponent);
 
-  class WithTrackView extends Component {
+  class WithTrackRender extends Component {
     componentDidMount() {
       if (!this.context || !this.context.tracking) {
         return;
@@ -27,11 +27,11 @@ export default (
     }
   }
 
-  WithTrackView.contextTypes = trackingContextTypes;
-  WithTrackView.displayName = `WithTrackView(${componentName})`;
-  WithTrackView.propTypes = WrappedComponent.propTypes;
-  WithTrackView.defaultProps = WrappedComponent.defaultProps;
-  hoistNonReactStatic(WithTrackView, WrappedComponent);
+  WithTrackRender.contextTypes = trackingContextTypes;
+  WithTrackRender.displayName = `WithTrackRender(${componentName})`;
+  WithTrackRender.propTypes = WrappedComponent.propTypes;
+  WithTrackRender.defaultProps = WrappedComponent.defaultProps;
+  hoistNonReactStatic(WithTrackRender, WrappedComponent);
 
-  return WithTrackView;
+  return WithTrackRender;
 };

@@ -4,7 +4,7 @@ import getDisplayName from "react-display-name";
 import _get from "lodash.get";
 import hoistNonReactStatic from "hoist-non-react-statics";
 import trackingContextTypes from "./tracking-context-types";
-import withTrackView from "./track-view";
+import withTrackRender from "./track-render";
 import resolveAttrs from "./resolve-attrs";
 
 const withTrackingContext = (
@@ -70,7 +70,7 @@ const withTrackingContext = (
 
     render() {
       const Wrapped = this.isRootTrackingContext()
-        ? withTrackView(WrappedComponent, {
+        ? withTrackRender(WrappedComponent, {
             trackView: true,
             trackingName: "Page",
             actionName: "Viewed"
