@@ -61,7 +61,7 @@
     "configurations": {
       "ios.sim.debug": {
         "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/storybooknative.app",
-        "type": "ios.none",
+        "type": "ios.simulator",
         "name": "iPhone 7"
       }
     }
