@@ -987,28 +987,73 @@ exports[`renders profile content 1`] = `
             >
               <View />
               <View>
-                <Text
-                  accessibilityRole="link"
+                <View
+                  accessibilityComponentType={undefined}
+                  accessibilityLabel={undefined}
+                  accessibilityTraits={undefined}
                   accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  href="?page=2"
-                  onPress={[Function]}
+                  hitSlop={undefined}
+                  isTVSelectable={true}
+                  onLayout={undefined}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
                   style={
-                    Array [
-                      Object {
-                        "textDecorationLine": "underline",
-                      },
-                      Object {
-                        "color": "#006699",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 14,
-                      },
-                    ]
+                    Object {
+                      "opacity": 1,
+                    }
                   }
+                  testID={undefined}
+                  tvParallaxProperties={undefined}
                 >
-                  Next &gt;
-                </Text>
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "flex-start",
+                        "flexDirection": "row",
+                        "paddingLeft": 10,
+                        "paddingRight": 12,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#006699",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 15,
+                          "height": 15,
+                          "paddingRight": 10,
+                          "textAlign": "right",
+                        }
+                      }
+                    >
+                      Next
+                    </Text>
+                    <svg
+                      height={12}
+                      style={Object {}}
+                      viewBox="0 0 144 144"
+                      width={12}
+                    >
+                      <g
+                        fill="#006699"
+                        style={Object {}}
+                      >
+                        <path
+                          d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                          style={Object {}}
+                        />
+                      </g>
+                    </svg>
+                  </View>
+                </View>
               </View>
             </View>
           </View>
@@ -4412,28 +4457,73 @@ exports[`renders profile content 1`] = `
           >
             <View />
             <View>
-              <Text
-                accessibilityRole="link"
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
                 accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                href="?page=2"
-                onPress={[Function]}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
-                  Array [
-                    Object {
-                      "textDecorationLine": "underline",
-                    },
-                    Object {
-                      "color": "#006699",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 14,
-                    },
-                  ]
+                  Object {
+                    "opacity": 1,
+                  }
                 }
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                Next &gt;
-              </Text>
+                <View
+                  style={
+                    Object {
+                      "alignItems": "flex-start",
+                      "flexDirection": "row",
+                      "paddingLeft": 10,
+                      "paddingRight": 12,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#006699",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 15,
+                        "height": 15,
+                        "paddingRight": 10,
+                        "textAlign": "right",
+                      }
+                    }
+                  >
+                    Next
+                  </Text>
+                  <svg
+                    height={12}
+                    style={Object {}}
+                    viewBox="0 0 144 144"
+                    width={12}
+                  >
+                    <g
+                      fill="#006699"
+                      style={Object {}}
+                    >
+                      <path
+                        d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                        style={Object {}}
+                      />
+                    </g>
+                  </svg>
+                </View>
+              </View>
             </View>
           </View>
         </View>
@@ -4695,28 +4785,73 @@ exports[`renders profile content component 1`] = `
           >
             <View />
             <View>
-              <Text
-                accessibilityRole="link"
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
                 accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                href="?page=2"
-                onPress={[Function]}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
-                  Array [
-                    Object {
-                      "textDecorationLine": "underline",
-                    },
-                    Object {
-                      "color": "#006699",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 14,
-                    },
-                  ]
+                  Object {
+                    "opacity": 1,
+                  }
                 }
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                Next &gt;
-              </Text>
+                <View
+                  style={
+                    Object {
+                      "alignItems": "flex-start",
+                      "flexDirection": "row",
+                      "paddingLeft": 10,
+                      "paddingRight": 12,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#006699",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 15,
+                        "height": 15,
+                        "paddingRight": 10,
+                        "textAlign": "right",
+                      }
+                    }
+                  >
+                    Next
+                  </Text>
+                  <svg
+                    height={12}
+                    style={Object {}}
+                    viewBox="0 0 144 144"
+                    width={12}
+                  >
+                    <g
+                      fill="#006699"
+                      style={Object {}}
+                    >
+                      <path
+                        d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                        style={Object {}}
+                      />
+                    </g>
+                  </svg>
+                </View>
+              </View>
             </View>
           </View>
         </View>
@@ -8264,28 +8399,73 @@ exports[`renders profile content component 1`] = `
         >
           <View />
           <View>
-            <Text
-              accessibilityRole="link"
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
               accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              href="?page=2"
-              onPress={[Function]}
+              hitSlop={undefined}
+              isTVSelectable={true}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
               style={
-                Array [
-                  Object {
-                    "textDecorationLine": "underline",
-                  },
-                  Object {
-                    "color": "#006699",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 14,
-                  },
-                ]
+                Object {
+                  "opacity": 1,
+                }
               }
+              testID={undefined}
+              tvParallaxProperties={undefined}
             >
-              Next &gt;
-            </Text>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "flexDirection": "row",
+                    "paddingLeft": 10,
+                    "paddingRight": 12,
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 15,
+                      "height": 15,
+                      "paddingRight": 10,
+                      "textAlign": "right",
+                    }
+                  }
+                >
+                  Next
+                </Text>
+                <svg
+                  height={12}
+                  style={Object {}}
+                  viewBox="0 0 144 144"
+                  width={12}
+                >
+                  <g
+                    fill="#006699"
+                    style={Object {}}
+                  >
+                    <path
+                      d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                      style={Object {}}
+                    />
+                  </g>
+                </svg>
+              </View>
+            </View>
           </View>
         </View>
       </View>
@@ -8576,28 +8756,73 @@ exports[`renders profile header 1`] = `
         >
           <View />
           <View>
-            <Text
-              accessibilityRole="link"
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
               accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              href="?page=2"
-              onPress={[Function]}
+              hitSlop={undefined}
+              isTVSelectable={true}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
               style={
-                Array [
-                  Object {
-                    "textDecorationLine": "underline",
-                  },
-                  Object {
-                    "color": "#006699",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 14,
-                  },
-                ]
+                Object {
+                  "opacity": 1,
+                }
               }
+              testID={undefined}
+              tvParallaxProperties={undefined}
             >
-              Next &gt;
-            </Text>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "flexDirection": "row",
+                    "paddingLeft": 10,
+                    "paddingRight": 12,
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 15,
+                      "height": 15,
+                      "paddingRight": 10,
+                      "textAlign": "right",
+                    }
+                  }
+                >
+                  Next
+                </Text>
+                <svg
+                  height={12}
+                  style={Object {}}
+                  viewBox="0 0 144 144"
+                  width={12}
+                >
+                  <g
+                    fill="#006699"
+                    style={Object {}}
+                  >
+                    <path
+                      d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                      style={Object {}}
+                    />
+                  </g>
+                </svg>
+              </View>
+            </View>
           </View>
         </View>
       </View>
