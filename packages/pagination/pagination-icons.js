@@ -21,13 +21,13 @@ const container = {
   paddingLeft: 10,
   ...Platform.select({
     web: {
-      alignItems: "center"
+      alignItems: "flex-start"
     },
     android: {
-      alignItems: "baseline"
+      alignItems: "flex-end"
     },
     ios: {
-      alignItems: "center"
+      alignItems: "flex-start"
     }
   })
 };
@@ -61,42 +61,27 @@ const styles = StyleSheet.create({
   )
 });
 
-const svgData = {
-  next: {
-    d: "M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-  },
-  previous: {
-    d: "M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
-  }
-};
-
-const IconSvg = d => (
-  <Svg width={12} height={12} viewBox="0 0 144 144">
-    <G fill="#006699">
-      <Path d={d} />
-    </G>
-  </Svg>
+export const NextPageIcon = props => (
+  <View style={styles.nextContainer}>
+    <Text style={styles.nextText}>{props.label}</Text>
+    <Svg width={12} height={12} viewBox="0 0 144 144">
+      <G fill="#006699">
+        <Path d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z" />
+      </G>
+    </Svg>
+  </View>
 );
 
-export const NextPageIcon = props => {
-  const iconData = svgData.next;
-  return (
-    <View style={styles.nextContainer}>
-      <Text style={styles.nextText}>{props.label}</Text>
-      {IconSvg(iconData.d)}
-    </View>
-  );
-};
-
-export const PreviousPageIcon = props => {
-  const iconData = svgData.previous;
-  return (
-    <View style={styles.previousContainer}>
-      {IconSvg(iconData.d)}
-      <Text style={styles.previousText}>{props.label}</Text>
-    </View>
-  );
-};
+export const PreviousPageIcon = props => (
+  <View style={styles.previousContainer}>
+    <Svg width={12} height={12} viewBox="0 0 144 144">
+      <G fill="#006699">
+        <Path d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z" />
+      </G>
+    </Svg>
+    <Text style={styles.previousText}>{props.label}</Text>
+  </View>
+);
 
 NextPageIcon.propTypes = {
   label: PropTypes.string.isRequired
