@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { View, TouchableWithoutFeedback } from "react-native";
+import PropTypes from "prop-types";
 
 import Player from "./brightcove-player";
 import Splash from "./splash";
@@ -13,6 +14,8 @@ class BrightcoveVideo extends Component {
     };
 
     this.play = this.play.bind(this);
+    this.reset = this.reset.bind(this);
+    this.handleFinish = this.handleFinish.bind(this);
   }
 
   // specifically check if is launched has changed and block update if it has not;
@@ -41,6 +44,14 @@ class BrightcoveVideo extends Component {
     this.setState({ isLaunched: false });
   }
 
+  handleFinish() {
+    if (this.props.resetOnFinish) {
+      this.reset();
+    }
+
+    this.props.onFinish();
+  }
+
   render() {
     this.playerRef = null;
 
@@ -51,6 +62,7 @@ class BrightcoveVideo extends Component {
             this.playerRef = ref;
           }}
           {...this.props}
+          onFinish={this.handleFinish}
           autoplay
         />
       );
@@ -67,13 +79,17 @@ class BrightcoveVideo extends Component {
 }
 
 BrightcoveVideo.propTypes = Object.assign(
-  {},
+  {
+    resetOnFinish: PropTypes.bool
+  },
   Splash.propTypes,
   Player.propTypes
 );
 
 BrightcoveVideo.defaultProps = Object.assign(
-  {},
+  {
+    resetOnFinish: false
+  },
   Splash.defaultProps,
   Player.defaultProps
 );

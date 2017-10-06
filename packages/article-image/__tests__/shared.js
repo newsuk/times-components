@@ -64,30 +64,6 @@ module.exports = () => {
     }).toThrowError();
   });
 
-  it("does not render Article Image if url is not received", () => {
-    const noUrl = {
-      imageOptions: {
-        display: "primary",
-        ratio: "16:9",
-        url: null
-      },
-      captionOptions: {
-        caption: "All the latest stories in culture and books.",
-        credits: "The credits"
-      }
-    };
-
-    const tree = renderer
-      .create(
-        <ArticleImage
-          imageOptions={noUrl.imageOptions}
-          captionOptions={noUrl.captionOptions}
-        />
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
   it("does not render Caption on Article Image if both caption and credits are not received", () => {
     const noCredits = {
       imageOptions: {

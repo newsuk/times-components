@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.7"></a>
+## [0.6.7](https://github.com/newsuk/times-components/compare/@times-components/card@0.6.6...@times-components/card@0.6.7) (2017-10-05)
+
+
+
+
+<a name="0.6.6"></a>
+## [0.6.6](https://github.com/newsuk/times-components/compare/@times-components/card@0.6.5...@times-components/card@0.6.6) (2017-10-04)
+
+
+
+
 <a name="0.6.5"></a>
 ## [0.6.5](https://github.com/newsuk/times-components/compare/@times-components/card@0.6.4...@times-components/card@0.6.5) (2017-09-28)
 

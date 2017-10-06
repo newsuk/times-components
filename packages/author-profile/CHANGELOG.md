@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.16.3"></a>
+## [0.16.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.16.2...@times-components/author-profile@0.16.3) (2017-10-05)
+
+
+
+
+<a name="0.16.2"></a>
+## [0.16.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.16.1...@times-components/author-profile@0.16.2) (2017-10-04)
+
+
+
+
+<a name="0.16.1"></a>
+## [0.16.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.16.0...@times-components/author-profile@0.16.1) (2017-10-03)
+
+
+
+
 <a name="0.16.0"></a>
 # [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.9.3...@times-components/author-profile@0.16.0) (2017-10-03)
 

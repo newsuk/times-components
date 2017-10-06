@@ -39,7 +39,7 @@ class ArticlePage extends React.Component {
     if (rowData.type === "leadAsset") {
       return (
         <View testID="leadAsset" style={styles.leadAsset}>
-          <Image source={{ uri: rowData.data.crop.url }} />
+          <Image uri={rowData.data.crop.url} aspectRatio={16 / 9} />
         </View>
       );
     } else if (rowData.type === "header") {
