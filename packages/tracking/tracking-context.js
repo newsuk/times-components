@@ -73,7 +73,6 @@ const withTrackingContext = (
     render() {
       const Wrapped = this.isRootTrackingContext()
         ? withTrackRender(WrappedComponent, {
-            trackView: true,
             trackingName: "Page",
             actionName: "Viewed"
           })
