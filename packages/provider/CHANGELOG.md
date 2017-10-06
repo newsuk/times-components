@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.9.3...@times-components/provider@0.10.0) (2017-10-06)
+
+
+### Features
+
+* use funcs as children ([8892564](https://github.com/newsuk/times-components/commit/8892564))
+
+
+
+
 <a name="0.9.3"></a>
 ## [0.9.3](https://github.com/newsuk/times-components/compare/@times-components/provider@0.9.2...@times-components/provider@0.9.3) (2017-10-05)
 
