@@ -1,0 +1,457 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaginationIcons Native Next page icon renders out an svg and the passed in label 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <View
+    style={
+        Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "paddingLeft": 10,
+            "paddingRight": 12,
+          }
+    }
+>
+    <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+            Object {
+                "color": "#006699",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 15,
+                "height": 15,
+                "paddingRight": 10,
+                "textAlign": "right",
+              }
+        }
+    >
+        a label
+    </Text>
+    <Svg
+        height={12}
+        viewBox="0 0 144 144"
+        width={12}
+    >
+        <G
+            fill="#006699"
+        >
+            <Path
+                d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+            />
+        </G>
+    </Svg>
+</View>,
+  "nodes": Array [
+    <View
+      style={
+            Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "paddingLeft": 10,
+                  "paddingRight": 12,
+                }
+      }
+>
+      <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+                  Object {
+                        "color": "#006699",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 15,
+                        "height": 15,
+                        "paddingRight": 10,
+                        "textAlign": "right",
+                      }
+            }
+      >
+            a label
+      </Text>
+      <Svg
+            height={12}
+            viewBox="0 0 144 144"
+            width={12}
+      >
+            <G
+                  fill="#006699"
+            >
+                  <Path
+                        d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                  />
+            </G>
+      </Svg>
+</View>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <NextPageIcon
+        label="a label"
+/>,
+      "_debugID": 3,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "label": "a label",
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 2,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <View
+          style={
+                    Object {
+                              "alignItems": "center",
+                              "flexDirection": "row",
+                              "paddingLeft": 10,
+                              "paddingRight": 12,
+                            }
+          }
+>
+          <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                              Object {
+                                        "color": "#006699",
+                                        "fontFamily": "GillSansMTStd-Medium",
+                                        "fontSize": 15,
+                                        "height": 15,
+                                        "paddingRight": 10,
+                                        "textAlign": "right",
+                                      }
+                    }
+          >
+                    a label
+          </Text>
+          <Svg
+                    height={12}
+                    viewBox="0 0 144 144"
+                    width={12}
+          >
+                    <G
+                              fill="#006699"
+                    >
+                              <Path
+                                        d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                              />
+                    </G>
+          </Svg>
+</View>,
+        "_debugID": 4,
+        "_renderedOutput": <View
+          style={
+                    Object {
+                              "alignItems": "center",
+                              "flexDirection": "row",
+                              "paddingLeft": 10,
+                              "paddingRight": 12,
+                            }
+          }
+>
+          <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                              Object {
+                                        "color": "#006699",
+                                        "fontFamily": "GillSansMTStd-Medium",
+                                        "fontSize": 15,
+                                        "height": 15,
+                                        "paddingRight": 10,
+                                        "textAlign": "right",
+                                      }
+                    }
+          >
+                    a label
+          </Text>
+          <Svg
+                    height={12}
+                    viewBox="0 0 144 144"
+                    width={12}
+          >
+                    <G
+                              fill="#006699"
+                    >
+                              <Path
+                                        d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                              />
+                    </G>
+          </Svg>
+</View>,
+      },
+      "_renderedNodeType": 1,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <NextPageIcon
+    label="a label"
+/>,
+}
+`;
+
+exports[`PaginationIcons Native Previous page icon renders out an svg and the passed in label 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <View
+    style={
+        Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "paddingLeft": 10,
+          }
+    }
+>
+    <Svg
+        height={12}
+        viewBox="0 0 144 144"
+        width={12}
+    >
+        <G
+            fill="#006699"
+        >
+            <Path
+                d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
+            />
+        </G>
+    </Svg>
+    <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+            Object {
+                "color": "#006699",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 15,
+                "height": 15,
+                "paddingLeft": 10,
+                "textAlign": "left",
+              }
+        }
+    >
+        a label
+    </Text>
+</View>,
+  "nodes": Array [
+    <View
+      style={
+            Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "paddingLeft": 10,
+                }
+      }
+>
+      <Svg
+            height={12}
+            viewBox="0 0 144 144"
+            width={12}
+      >
+            <G
+                  fill="#006699"
+            >
+                  <Path
+                        d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
+                  />
+            </G>
+      </Svg>
+      <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+                  Object {
+                        "color": "#006699",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 15,
+                        "height": 15,
+                        "paddingLeft": 10,
+                        "textAlign": "left",
+                      }
+            }
+      >
+            a label
+      </Text>
+</View>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <PreviousPageIcon
+        label="a label"
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "label": "a label",
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <View
+          style={
+                    Object {
+                              "alignItems": "center",
+                              "flexDirection": "row",
+                              "paddingLeft": 10,
+                            }
+          }
+>
+          <Svg
+                    height={12}
+                    viewBox="0 0 144 144"
+                    width={12}
+          >
+                    <G
+                              fill="#006699"
+                    >
+                              <Path
+                                        d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
+                              />
+                    </G>
+          </Svg>
+          <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                              Object {
+                                        "color": "#006699",
+                                        "fontFamily": "GillSansMTStd-Medium",
+                                        "fontSize": 15,
+                                        "height": 15,
+                                        "paddingLeft": 10,
+                                        "textAlign": "left",
+                                      }
+                    }
+          >
+                    a label
+          </Text>
+</View>,
+        "_debugID": 2,
+        "_renderedOutput": <View
+          style={
+                    Object {
+                              "alignItems": "center",
+                              "flexDirection": "row",
+                              "paddingLeft": 10,
+                            }
+          }
+>
+          <Svg
+                    height={12}
+                    viewBox="0 0 144 144"
+                    width={12}
+          >
+                    <G
+                              fill="#006699"
+                    >
+                              <Path
+                                        d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
+                              />
+                    </G>
+          </Svg>
+          <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                              Object {
+                                        "color": "#006699",
+                                        "fontFamily": "GillSansMTStd-Medium",
+                                        "fontSize": 15,
+                                        "height": 15,
+                                        "paddingLeft": 10,
+                                        "textAlign": "left",
+                                      }
+                    }
+          >
+                    a label
+          </Text>
+</View>,
+      },
+      "_renderedNodeType": 1,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <PreviousPageIcon
+    label="a label"
+/>,
+}
+`;

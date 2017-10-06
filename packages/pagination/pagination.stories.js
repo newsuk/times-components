@@ -5,6 +5,7 @@ import { storiesOf } from "@storybook/react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { action } from "@storybook/addon-actions";
 import Pagination, { withPageState } from "./pagination";
+import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
 
 storiesOf("Pagination", module)
   .addDecorator(story => <View style={{ paddingTop: 20 }}>{story()}</View>)
@@ -76,3 +77,8 @@ storiesOf("Pagination Helper", module)
   .add("Last page without results information", () => (
     <PageChanger page={3} count={60} hideResults />
   ));
+
+storiesOf("Pagination Icons", module)
+  .addDecorator(story => <View style={{ paddingTop: 20 }}>{story()}</View>)
+  .add("previous page icon", () => <PreviousPageIcon label="Previous Page" />)
+  .add("next page icon", () => <NextPageIcon label="Next Page" />);
