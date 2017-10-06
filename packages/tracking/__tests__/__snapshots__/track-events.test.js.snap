@@ -10,16 +10,6 @@ exports[`TrackEvents forwards props to wrapped component 1`] = `
 </Text>
 `;
 
-exports[`TrackEvents ignores events not exposed by tracked component 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
->
-  foo
-</Text>
-`;
-
 exports[`TrackEvents raises error when trying to track the same event more than once 1`] = `"Event onShow was tracked multiple times when calling withTrackEvents()"`;
 
 exports[`TrackEvents renders when tracking context is missing 1`] = `

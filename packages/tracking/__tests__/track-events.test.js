@@ -25,17 +25,17 @@ describe("TrackEvents", () => {
   });
 
   it("ignores events not exposed by tracked component", () => {
+    const reporter = jest.fn();
+
     const WithTrackingAndContext = withTrackingContext(
       withTrackEvents(TestComponent, {
-        analyticsEvents: [{ eventName: "onScroll", actionName: "Scrolled" }]
+        analyticsEvents: [{ eventName: "unknownEvent", actionName: "happened" }]
       })
     );
 
-    const tree = renderer.create(
-      <WithTrackingAndContext analyticsStream={() => {}} />
-    );
+    renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
 
-    expect(tree).toMatchSnapshot();
+    expect(reporter).not.toHaveBeenCalled();
   });
 
   it("tracks specified child events", () => {
@@ -78,11 +78,9 @@ describe("TrackEvents", () => {
 
     renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
 
-    expect(reporter).toHaveBeenCalledWith({
-      action: "Shown",
-      attrs: {},
-      component: "OverriddenName"
-    });
+    expect(reporter).toHaveBeenCalledWith(
+      expect.objectContaining({ component: "OverriddenName" })
+    );
   });
 
   it("applies tracking attrs", () => {
