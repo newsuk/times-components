@@ -3,15 +3,16 @@ import React from "react";
 import { storiesOf } from "@storybook/react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { decorateAction } from "@storybook/addon-actions";
-import { withPageState } from "@times-components/pagination";
 import { AuthorProfileProvider } from "@times-components/provider";
 import { ApolloClient, IntrospectionFragmentMatcher } from "react-apollo";
 import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { addTypenameToDocument } from "apollo-client";
 import { query as authorProfileQuery } from "@times-components/provider/author-profile-provider";
+import { query as articleListQuery } from "@times-components/provider/article-list-provider";
 import AuthorProfile from "./author-profile";
-import example from "./example.json";
+import authorProfileFixture from "./fixtures/author-profile.json";
+import articleListFixture from "./fixtures/article-list.json";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
@@ -21,26 +22,52 @@ const preventDefaultedAction = decorateAction([
 ]);
 
 const mocks = [
-  { first: 3, skip: 0 },
-  { first: 6, skip: 3 },
-  { first: 9, skip: 6 },
-  { first: 12, skip: 9 },
-  { first: 15, skip: 12 },
-  { first: 18, skip: 15 },
-  { first: 21, skip: 18 },
-  { first: 24, skip: 21 }
-].map(({ first, skip }) => ({
-  request: {
-    query: addTypenameToDocument(authorProfileQuery),
-    variables: {
-      slug: "fiona-hamilton",
-      first,
-      skip,
-      imageRatio: "3:2"
-    }
+  {
+    request: {
+      query: addTypenameToDocument(authorProfileQuery),
+      variables: {
+        slug: "fiona-hamilton"
+      }
+    },
+    result: authorProfileFixture
   },
-  result: example
-}));
+  {
+    request: {
+      query: addTypenameToDocument(articleListQuery),
+      variables: {
+        slug: "fiona-hamilton",
+        first: 6,
+        skip: 3,
+        imageRatio: "3:2"
+      }
+    },
+    result: articleListFixture
+  },
+  {
+    request: {
+      query: addTypenameToDocument(articleListQuery),
+      variables: {
+        slug: "fiona-hamilton",
+        first: 6,
+        skip: 3,
+        imageRatio: "3:2"
+      }
+    },
+    result: articleListFixture
+  },
+  {
+    request: {
+      query: addTypenameToDocument(articleListQuery),
+      variables: {
+        slug: "fiona-hamilton",
+        first: 9,
+        skip: 6,
+        imageRatio: "3:2"
+      }
+    },
+    result: articleListFixture
+  }
+];
 
 const fragmentMatcher = new IntrospectionFragmentMatcher({
   introspectionQueryResultData: {
@@ -70,10 +97,13 @@ const client = new ApolloClient({
   fragmentMatcher
 });
 
+const withMockProvider = child =>
+  <MockedProvider mocks={mocks} client={client}>{child}</MockedProvider>;
+
 storiesOf("AuthorProfile", module)
   .add("Default", () => {
     const props = {
-      ...example.data,
+      ...authorProfileFixture.data,
       isLoading: false,
       page: 2,
       pageSize: 3,
@@ -81,7 +111,7 @@ storiesOf("AuthorProfile", module)
       onArticlePress: preventDefaultedAction("onArticlePress")
     };
 
-    return <AuthorProfile {...props} />;
+    return withMockProvider(<AuthorProfile {...props} />);
   })
   .add("Loading", () => {
     const props = {
@@ -90,7 +120,7 @@ storiesOf("AuthorProfile", module)
       onArticlePress: preventDefaultedAction("onArticlePress")
     };
 
-    return <AuthorProfile {...props} />;
+    return withMockProvider(<AuthorProfile {...props} />);
   })
   .add("Empty State", () => {
     const props = {
@@ -99,37 +129,24 @@ storiesOf("AuthorProfile", module)
       onArticlePress: preventDefaultedAction("onArticlePress")
     };
 
-    return <AuthorProfile {...props} />;
+    return withMockProvider(<AuthorProfile {...props} />);
   })
   .add("With Page State", () => {
-    const AuthorProfileProviderWithPageState = withPageState(
-      AuthorProfileProvider
-    );
     const onTwitterLinkPress = preventDefaultedAction("onTwitterLinkPress");
     const onArticlePress = preventDefaultedAction("onArticlePress");
 
-    return (
-      <MockedProvider mocks={mocks} client={client}>
-        <AuthorProfileProviderWithPageState
-          articleImageRatio="3:2"
-          slug="fiona-hamilton"
-          page={1}
-          pageSize={3}
-        >
-          {({ author, isLoading, error, page, pageSize, onNext, onPrev }) => (
-            <AuthorProfile
-              author={author}
-              isLoading={isLoading}
-              error={error}
-              page={page}
-              pageSize={pageSize}
-              onTwitterLinkPress={onTwitterLinkPress}
-              onArticlePress={onArticlePress}
-              onNext={onNext}
-              onPrev={onPrev}
-            />
-          )}
-        </AuthorProfileProviderWithPageState>
-      </MockedProvider>
+    return withMockProvider(
+      <AuthorProfileProvider slug="fiona-hamilton">
+        {({ author, isLoading, error }) =>
+          <AuthorProfile
+            author={author}
+            page={1}
+            pageSize={3}
+            isLoading={isLoading}
+            error={error}
+            onTwitterLinkPress={onTwitterLinkPress}
+            onArticlePress={onArticlePress}
+          />}
+      </AuthorProfileProvider>
     );
   });

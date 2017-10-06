@@ -14,13 +14,13 @@ const styles = StyleSheet.create({
   }
 });
 
-const AuthorProfile = props => (
+const AuthorProfile = ({ articles }) =>
   <View>
-    <AuthorProfileHeader {...props} />
-    {props.articles.list.map((article, key) => {
+    {articles.map((article, key) => {
       const { id, url } = article;
-      const separatorComponent =
-        key > 0 ? <AuthorProfileItemSeparator /> : null;
+      const separatorComponent = key > 0
+        ? <AuthorProfileItemSeparator />
+        : null;
 
       return (
         <View testID={`articleList-${key}`} key={id} style={styles.container}>
@@ -32,18 +32,13 @@ const AuthorProfile = props => (
         </View>
       );
     })}
-    <AuthorProfileFooter {...props} />
-  </View>
-);
+</View>;
 
 AuthorProfile.propTypes = Object.assign(
   { onArticlePress: PropTypes.func.isRequired },
   {
-    articles: PropTypes.shape({
-      list: PropTypes.arrayOf(PropTypes.shape(AuthorProfileItem.propTypes))
-    })
-  },
-  AuthorProfileHeader.propTypes
+    articles: PropTypes.arrayOf(PropTypes.shape(AuthorProfileItem.propTypes))
+  }
 );
 
 export default AuthorProfile;

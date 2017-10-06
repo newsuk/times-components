@@ -20,7 +20,7 @@
     "prelint": "prettier --list-different '+(.storybook.native|storybook|lib)/**/*.+(js|json)'",
     "lint": "lerna run lint",
     "fetch-fonts": "node ./lib/fetch-fonts",
-    "prestorybook": "npm run fetch-fonts && npm run storybook:build-vendor",
+    "pprestorybook": "npm run fetch-fonts && npm run storybook:build-vendor",
     "storybook": "start-storybook -p 9001 -c .storybook -s ./dist/public",
     "prestorybook:build": "npm run prestorybook",
     "storybook:build-vendor":
