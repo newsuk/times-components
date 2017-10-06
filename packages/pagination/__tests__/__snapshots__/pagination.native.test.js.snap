@@ -71,7 +71,7 @@ ShallowWrapper {
     >
         <View />
         <View>
-            <TextLink
+            <Link
                 onPress={[Function]}
                 style={
                     Object {
@@ -82,8 +82,10 @@ ShallowWrapper {
                 }
                 url="./2"
             >
-                Next &gt;
-            </TextLink>
+                <NextPageIcon
+                    label="Next"
+                />
+            </Link>
         </View>
     </View>
 </View>,
@@ -151,7 +153,7 @@ ShallowWrapper {
       >
             <View />
             <View>
-                  <TextLink
+                  <Link
                         onPress={[Function]}
                         style={
                               Object {
@@ -162,8 +164,10 @@ ShallowWrapper {
                         }
                         url="./2"
                   >
-                        Next &gt;
-                  </TextLink>
+                        <NextPageIcon
+                              label="Next"
+                        />
+                  </Link>
             </View>
       </View>
 </View>,
@@ -291,7 +295,7 @@ ShallowWrapper {
           >
                     <View />
                     <View>
-                              <TextLink
+                              <Link
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -302,8 +306,10 @@ ShallowWrapper {
                                         }
                                         url="./2"
                               >
-                                        Next &gt;
-                              </TextLink>
+                                        <NextPageIcon
+                                                  label="Next"
+                                        />
+                              </Link>
                     </View>
           </View>
 </View>,
@@ -371,7 +377,7 @@ ShallowWrapper {
           >
                     <View />
                     <View>
-                              <TextLink
+                              <Link
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -382,8 +388,10 @@ ShallowWrapper {
                                         }
                                         url="./2"
                               >
-                                        Next &gt;
-                              </TextLink>
+                                        <NextPageIcon
+                                                  label="Next"
+                                        />
+                              </Link>
                     </View>
           </View>
 </View>,
@@ -480,7 +488,7 @@ ShallowWrapper {
         }
     >
         <View>
-            <TextLink
+            <Link
                 onPress={[Function]}
                 style={
                     Object {
@@ -491,11 +499,13 @@ ShallowWrapper {
                 }
                 url="./1"
             >
-                &lt; Previous
-            </TextLink>
+                <PreviousPageIcon
+                    label="Previous"
+                />
+            </Link>
         </View>
         <View>
-            <TextLink
+            <Link
                 onPress={[Function]}
                 style={
                     Object {
@@ -506,8 +516,10 @@ ShallowWrapper {
                 }
                 url="./3"
             >
-                Next &gt;
-            </TextLink>
+                <NextPageIcon
+                    label="Next"
+                />
+            </Link>
         </View>
     </View>
 </View>,
@@ -574,7 +586,7 @@ ShallowWrapper {
             }
       >
             <View>
-                  <TextLink
+                  <Link
                         onPress={[Function]}
                         style={
                               Object {
@@ -585,11 +597,13 @@ ShallowWrapper {
                         }
                         url="./1"
                   >
-                        &lt; Previous
-                  </TextLink>
+                        <PreviousPageIcon
+                              label="Previous"
+                        />
+                  </Link>
             </View>
             <View>
-                  <TextLink
+                  <Link
                         onPress={[Function]}
                         style={
                               Object {
@@ -600,8 +614,10 @@ ShallowWrapper {
                         }
                         url="./3"
                   >
-                        Next &gt;
-                  </TextLink>
+                        <NextPageIcon
+                              label="Next"
+                        />
+                  </Link>
             </View>
       </View>
 </View>,
@@ -728,7 +744,7 @@ ShallowWrapper {
                     }
           >
                     <View>
-                              <TextLink
+                              <Link
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -739,11 +755,13 @@ ShallowWrapper {
                                         }
                                         url="./1"
                               >
-                                        &lt; Previous
-                              </TextLink>
+                                        <PreviousPageIcon
+                                                  label="Previous"
+                                        />
+                              </Link>
                     </View>
                     <View>
-                              <TextLink
+                              <Link
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -754,8 +772,10 @@ ShallowWrapper {
                                         }
                                         url="./3"
                               >
-                                        Next &gt;
-                              </TextLink>
+                                        <NextPageIcon
+                                                  label="Next"
+                                        />
+                              </Link>
                     </View>
           </View>
 </View>,
@@ -822,7 +842,7 @@ ShallowWrapper {
                     }
           >
                     <View>
-                              <TextLink
+                              <Link
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -833,11 +853,13 @@ ShallowWrapper {
                                         }
                                         url="./1"
                               >
-                                        &lt; Previous
-                              </TextLink>
+                                        <PreviousPageIcon
+                                                  label="Previous"
+                                        />
+                              </Link>
                     </View>
                     <View>
-                              <TextLink
+                              <Link
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -848,8 +870,10 @@ ShallowWrapper {
                                         }
                                         url="./3"
                               >
-                                        Next &gt;
-                              </TextLink>
+                                        <NextPageIcon
+                                                  label="Next"
+                                        />
+                              </Link>
                     </View>
           </View>
 </View>,
@@ -946,7 +970,7 @@ ShallowWrapper {
         }
     >
         <View>
-            <TextLink
+            <Link
                 onPress={[Function]}
                 style={
                     Object {
@@ -957,8 +981,10 @@ ShallowWrapper {
                 }
                 url="./2"
             >
-                &lt; Previous
-            </TextLink>
+                <PreviousPageIcon
+                    label="Previous"
+                />
+            </Link>
         </View>
         <View />
     </View>
@@ -1026,7 +1052,7 @@ ShallowWrapper {
             }
       >
             <View>
-                  <TextLink
+                  <Link
                         onPress={[Function]}
                         style={
                               Object {
@@ -1037,8 +1063,10 @@ ShallowWrapper {
                         }
                         url="./2"
                   >
-                        &lt; Previous
-                  </TextLink>
+                        <PreviousPageIcon
+                              label="Previous"
+                        />
+                  </Link>
             </View>
             <View />
       </View>
@@ -1166,7 +1194,7 @@ ShallowWrapper {
                     }
           >
                     <View>
-                              <TextLink
+                              <Link
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -1177,8 +1205,10 @@ ShallowWrapper {
                                         }
                                         url="./2"
                               >
-                                        &lt; Previous
-                              </TextLink>
+                                        <PreviousPageIcon
+                                                  label="Previous"
+                                        />
+                              </Link>
                     </View>
                     <View />
           </View>
@@ -1246,7 +1276,7 @@ ShallowWrapper {
                     }
           >
                     <View>
-                              <TextLink
+                              <Link
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -1257,8 +1287,10 @@ ShallowWrapper {
                                         }
                                         url="./2"
                               >
-                                        &lt; Previous
-                              </TextLink>
+                                        <PreviousPageIcon
+                                                  label="Previous"
+                                        />
+                              </Link>
                     </View>
                     <View />
           </View>
@@ -1357,7 +1389,7 @@ ShallowWrapper {
     >
         <View />
         <View>
-            <TextLink
+            <Link
                 onPress={[Function]}
                 style={
                     Object {
@@ -1368,8 +1400,10 @@ ShallowWrapper {
                 }
                 url="./2"
             >
-                Next &gt;
-            </TextLink>
+                <NextPageIcon
+                    label="Next"
+                />
+            </Link>
         </View>
     </View>
 </View>,
@@ -1437,7 +1471,7 @@ ShallowWrapper {
       >
             <View />
             <View>
-                  <TextLink
+                  <Link
                         onPress={[Function]}
                         style={
                               Object {
@@ -1448,8 +1482,10 @@ ShallowWrapper {
                         }
                         url="./2"
                   >
-                        Next &gt;
-                  </TextLink>
+                        <NextPageIcon
+                              label="Next"
+                        />
+                  </Link>
             </View>
       </View>
 </View>,
@@ -1577,7 +1613,7 @@ ShallowWrapper {
           >
                     <View />
                     <View>
-                              <TextLink
+                              <Link
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -1588,8 +1624,10 @@ ShallowWrapper {
                                         }
                                         url="./2"
                               >
-                                        Next &gt;
-                              </TextLink>
+                                        <NextPageIcon
+                                                  label="Next"
+                                        />
+                              </Link>
                     </View>
           </View>
 </View>,
@@ -1657,7 +1695,7 @@ ShallowWrapper {
           >
                     <View />
                     <View>
-                              <TextLink
+                              <Link
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -1668,8 +1706,10 @@ ShallowWrapper {
                                         }
                                         url="./2"
                               >
-                                        Next &gt;
-                              </TextLink>
+                                        <NextPageIcon
+                                                  label="Next"
+                                        />
+                              </Link>
                     </View>
           </View>
 </View>,
@@ -1734,7 +1774,7 @@ ShallowWrapper {
     >
         <View />
         <View>
-            <TextLink
+            <Link
                 onPress={[Function]}
                 style={
                     Object {
@@ -1745,8 +1785,10 @@ ShallowWrapper {
                 }
                 url="./2"
             >
-                Next &gt;
-            </TextLink>
+                <NextPageIcon
+                    label="Next"
+                />
+            </Link>
         </View>
     </View>
 </View>,
@@ -1781,7 +1823,7 @@ ShallowWrapper {
       >
             <View />
             <View>
-                  <TextLink
+                  <Link
                         onPress={[Function]}
                         style={
                               Object {
@@ -1792,8 +1834,10 @@ ShallowWrapper {
                         }
                         url="./2"
                   >
-                        Next &gt;
-                  </TextLink>
+                        <NextPageIcon
+                              label="Next"
+                        />
+                  </Link>
             </View>
       </View>
 </View>,
@@ -1888,7 +1932,7 @@ ShallowWrapper {
           >
                     <View />
                     <View>
-                              <TextLink
+                              <Link
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -1899,8 +1943,10 @@ ShallowWrapper {
                                         }
                                         url="./2"
                               >
-                                        Next &gt;
-                              </TextLink>
+                                        <NextPageIcon
+                                                  label="Next"
+                                        />
+                              </Link>
                     </View>
           </View>
 </View>,
@@ -1935,7 +1981,7 @@ ShallowWrapper {
           >
                     <View />
                     <View>
-                              <TextLink
+                              <Link
                                         onPress={[Function]}
                                         style={
                                                   Object {
@@ -1946,8 +1992,10 @@ ShallowWrapper {
                                         }
                                         url="./2"
                               >
-                                        Next &gt;
-                              </TextLink>
+                                        <NextPageIcon
+                                                  label="Next"
+                                        />
+                              </Link>
                     </View>
           </View>
 </View>,
