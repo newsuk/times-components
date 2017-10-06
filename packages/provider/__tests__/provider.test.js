@@ -2,106 +2,95 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
-import { resetMockGraphQLProps, setMockGraphQLProps, gql } from "react-apollo";
-import { Text } from "react-native";
+import { gql } from "react-apollo";
+import { MockedProvider } from "react-apollo/test-utils";
 import connectGraphql from "../provider";
 
-beforeEach(() => {
-  resetMockGraphQLProps();
-});
+const query = gql`
+  {
+    author(slug: "fiona-hamilton") {
+      name
+    }
+  }
+`;
 
-it("renders data", () => {
-  setMockGraphQLProps({ data: { loading: false, data: "data" } });
-
-  const query = gql`
-    query Query($slug: Slug!) {
-      author(slug: $slug) {
-        name
+const mocks = [
+  {
+    request: {
+      query
+    },
+    result: {
+      data: {
+        author: {
+          name: "fiona-hamilton"
+        }
       }
     }
-  `;
-  const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
+  }
+];
 
-  const ComponentWithData = connectGraphql(query)(Component);
+const ConnectedComponent = connectGraphql(query);
 
-  const tree = renderer.create(<ComponentWithData />).toJSON();
-  expect(tree).toMatchSnapshot();
+const renderComponent = (child, customMocks) =>
+  renderer.create(
+    <MockedProvider mocks={customMocks || mocks} removeTypename>
+      <ConnectedComponent config1="c1" config2="c2">
+        {child}
+      </ConnectedComponent>
+    </MockedProvider>
+  );
+
+it("returns query result", done => {
+  renderComponent(({ isLoading, author }) => {
+    if (!isLoading) {
+      expect(author).toMatchSnapshot();
+      done();
+    }
+
+    return null;
+  });
 });
 
-it("renders loading state", () => {
-  setMockGraphQLProps({ data: { loading: true } });
+it("returns loading state with no author", done => {
+  renderComponent(({ isLoading, author }) => {
+    if (isLoading) {
+      expect(author).toMatchSnapshot();
+      done();
+    }
 
-  const query = gql`
+    return null;
+  });
+});
+
+it("returns config data", done => {
+  renderComponent(({ isLoading, config1, config2 }) => {
+    if (!isLoading) {
+      expect({ config1, config2 }).toMatchSnapshot();
+      done();
+    }
+
+    return null;
+  });
+});
+
+it("returns an error", done => {
+  const customMocks = [
     {
-      article(id: "foo") {
-        label
+      request: {
+        query
+      },
+      error: {
+        message: "some error from the server"
       }
     }
-  `;
-  const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
+  ];
 
-  const ComponentWithData = connectGraphql(query)(Component);
-
-  const tree = renderer.create(<ComponentWithData />).toJSON();
-  expect(tree).toMatchSnapshot();
-});
-
-it("renders data from graphql", () => {
-  const data = {
-    data: {
-      loading: false,
-      data: "data"
+  renderComponent(({ isLoading, error }) => {
+    if (!isLoading) {
+      expect(error).toMatchSnapshot();
+      done();
     }
-  };
 
-  setMockGraphQLProps(data, (query, extras) => {
-    expect(extras.options.variables.slug).toEqual("slug-value");
-  });
-
-  const query = gql`
-    query Query($slug: Slug!) {
-      author(slug: $slug) {
-        twitter
-      }
-    }
-  `;
-  const Component = params => {
-    expect(params.data).toEqual(data.data);
-    expect(params.slug).toEqual("slug-value");
-    return <Text>{JSON.stringify(params, null, 2)}</Text>;
-  };
-
-  const ComponentWithData = connectGraphql(query)(Component);
-
-  const tree = renderer
-    .create(<ComponentWithData slug={"slug-value"} />)
-    .toJSON();
-  expect(tree).toMatchSnapshot();
-});
-
-it("renders data using prop variables", done => {
-  const data = {
-    data: {
-      loading: false,
-      data: "data"
-    }
-  };
-
-  setMockGraphQLProps(data, (query, extras) => {
-    expect(extras.options.variables.slug).toEqual("slug-value");
-    return done();
-  });
-
-  const query = gql`
-    query Query($slug: Slug!) {
-      author(slug: $slug) {
-        name
-      }
-    }
-  `;
-  const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
-
-  const ComponentWithData = connectGraphql(query)(Component);
-
-  renderer.create(<ComponentWithData slug={"slug-value"} />).toJSON();
+    return null;
+  }, customMocks);
 });

@@ -71,10 +71,12 @@
     "@times-components/card": "0.6.7",
     "@times-components/link": "0.8.0",
     "@times-components/pagination": "0.7.0",
+    "@times-components/provider": "0.9.3",
     "jest-cli": "20.0.4",
     "lodash.get": "4.4.2",
     "lodash.merge": "4.6.0",
     "prop-types": "15.5.10",
+    "react-apollo": "1.4.16",
     "react-native-web": "0.0.119",
     "react-style-proptype": "3.0.0"
   },

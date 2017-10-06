@@ -143,10 +143,13 @@ const articles = n => ({
 });
 
 export default n => ({
-  name,
-  jobTitle,
-  biography,
-  image,
-  twitter,
-  articles: articles(n)
+  author: {
+    name,
+    jobTitle,
+    biography,
+    image,
+    twitter,
+    articles: articles(n),
+    __typename: "Author"
+  }
 });

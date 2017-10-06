@@ -156,7 +156,7 @@ class Pagination extends React.Component {
 }
 
 Pagination.propTypes = {
-  count: PropTypes.number.isRequired,
+  count: PropTypes.number,
   generatePageLink: PropTypes.func,
   onNext: PropTypes.func,
   onPrev: PropTypes.func,
@@ -166,6 +166,7 @@ Pagination.propTypes = {
 };
 
 Pagination.defaultProps = {
+  count: 0,
   generatePageLink: page => `./${page}`,
   onNext: () => {},
   onPrev: () => {},

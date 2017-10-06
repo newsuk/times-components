@@ -1,29 +1,54 @@
 import React from "react";
 import PropTypes from "prop-types";
+import get from "lodash.get";
 import AuthorProfileContent from "./author-profile-content";
 import AuthorProfileEmpty from "./author-profile-empty";
 import AuthorProfileError from "./author-profile-error";
 import AuthorProfileLoading from "./author-profile-loading";
 
-const AuthorProfile = props => {
-  if (props.isLoading) {
+const AuthorProfile = ({
+  isLoading,
+  error,
+  author,
+  page,
+  pageSize,
+  onTwitterLinkPress,
+  onArticlePress,
+  onNext,
+  onPrev
+}) => {
+  if (error) {
+    return <AuthorProfileError {...error} />;
+  }
+
+  if (isLoading) {
     return <AuthorProfileLoading />;
   }
 
-  if (props.error) {
-    return <AuthorProfileError {...props.error} />;
-  }
-
-  if (!!props.data === true) {
-    const extra = {
-      onNext: props.onNext,
-      onPrev: props.onPrev,
-      page: props.page,
-      pageSize: props.pageSize,
-      onTwitterLinkPress: props.onTwitterLinkPress,
-      onArticlePress: props.onArticlePress
+  if (author) {
+    const data = {
+      ...author,
+      articles: {
+        ...author.articles,
+        list: get(author, "articles.list", []).map(article => ({
+          ...article,
+          publishedTime: new Date(article.publishedTime)
+        }))
+      },
+      count: get(author, "articles.count"),
+      page,
+      pageSize
     };
-    return <AuthorProfileContent {...props.data} {...extra} />;
+
+    return (
+      <AuthorProfileContent
+        {...data}
+        onTwitterLinkPress={onTwitterLinkPress}
+        onArticlePress={onArticlePress}
+        onNext={onNext}
+        onPrev={onPrev}
+      />
+    );
   }
 
   return <AuthorProfileEmpty />;
@@ -36,11 +61,11 @@ const {
   pageSize,
   onTwitterLinkPress,
   onArticlePress,
-  ...data
+  ...author
 } = AuthorProfileContent.propTypes;
 
 AuthorProfile.propTypes = {
-  data: PropTypes.shape(data),
+  author: PropTypes.shape(author),
   error: PropTypes.shape(),
   isLoading: PropTypes.bool,
   onNext,
@@ -55,7 +80,7 @@ AuthorProfile.propTypes = {
 };
 
 AuthorProfile.defaultProps = {
-  data: null,
+  author: null,
   error: null,
   isLoading: true,
   onNext: () => {},

@@ -2,54 +2,71 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
-import { resetMockGraphQLProps, setMockGraphQLProps } from "react-apollo";
+import { ApolloClient, IntrospectionFragmentMatcher } from "react-apollo";
+import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";
+import { addTypenameToDocument } from "apollo-client";
 import { AuthorProfileProvider } from "../provider";
-import example from "../provider-fixtures/author-profile.json";
+import { query as authorProfileQuery } from "../author-profile-provider";
+import fixture from "../fixtures/author-profile.json";
 
-beforeEach(() => {
-  resetMockGraphQLProps();
+const mocks = [
+  {
+    request: {
+      query: addTypenameToDocument(authorProfileQuery)
+    },
+    result: fixture
+  }
+];
+
+const fragmentMatcher = new IntrospectionFragmentMatcher({
+  introspectionQueryResultData: {
+    __schema: {
+      types: [
+        {
+          kind: "UNION",
+          name: "Media",
+          possibleTypes: [
+            {
+              name: "Image"
+            },
+            {
+              name: "Video"
+            }
+          ]
+        }
+      ]
+    }
+  }
 });
 
-it("renders data", () => {
-  setMockGraphQLProps({
-    data: {
-      loading: false,
-      author: example
-    }
-  });
+const networkInterface = mockNetworkInterface(...mocks);
 
-  const tree = renderer
-    .create(<AuthorProfileProvider slug="fiona-hamilton" />)
-    .toJSON();
-  expect(tree).toMatchSnapshot();
+const client = new ApolloClient({
+  networkInterface,
+  fragmentMatcher
 });
 
-it("renders loading state", () => {
-  setMockGraphQLProps({
-    data: {
-      loading: true
+const renderComponent = child =>
+  renderer.create(
+    <MockedProvider mocks={mocks} client={client}>
+      <AuthorProfileProvider
+        slug="fiona-hamilton"
+        pageSize={3}
+        page={4}
+        articleImageRatio="16:9"
+      >
+        {child}
+      </AuthorProfileProvider>
+    </MockedProvider>
+  );
+
+it("returns query result", done => {
+  renderComponent(({ isLoading, author }) => {
+    if (!isLoading) {
+      expect(author).toMatchSnapshot();
+      done();
     }
+
+    return null;
   });
-
-  const tree = renderer.create(<AuthorProfileProvider />).toJSON();
-  expect(tree).toMatchSnapshot();
-});
-
-it("renders data from graphql", done => {
-  const data = {
-    data: {
-      loading: false,
-      author: example
-    }
-  };
-
-  setMockGraphQLProps(data, (query, extras) => {
-    expect(extras.options.variables.slug).toEqual("slug-value");
-    return done();
-  });
-
-  const tree = renderer
-    .create(<AuthorProfileProvider slug="slug-value" />)
-    .toJSON();
-  expect(tree).toMatchSnapshot();
 });
