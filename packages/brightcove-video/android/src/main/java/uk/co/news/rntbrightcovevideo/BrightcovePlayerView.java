@@ -38,6 +38,7 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
             @Override
             public void processEvent(Event e) {
                fixVideoLayout();
+               //BrightcovePlayerView.this.finishInitialization();
             }
         });
         eventEmitter.on(EventType.PLAY, onEvent(true));
@@ -55,6 +56,18 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
                 playerView.bubbleState(playerView.getIsPlaying(), (int) playerView.getPlayheadPosition());
             }
         });
+        eventEmitter.on(EventType.DID_ENTER_FULL_SCREEN, new EventListener() {
+            @Override
+            public void processEvent(Event e) {
+                //fixFullscreenVideoLayout();
+            }
+        });
+        eventEmitter.on(EventType.EXIT_FULL_SCREEN, new EventListener() {
+            @Override
+            public void processEvent(Event e) {
+
+            }
+        });
         eventEmitter.on(EventType.ERROR, new EventListener() {
             @Override
             public void processEvent(Event e) {
@@ -70,8 +83,8 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
     }
 
     public void initVideo(String videoId, String accountId, String policyKey, Boolean autoplay, Boolean isFullscreenButtonHidden) {
-            View fullScreenButton = this.findViewById(com.brightcove.player.R.id.full_screen);
-            fullScreenButton.setVisibility(isFullscreenButtonHidden ? View.GONE : View.VISIBLE);
+//            View fullScreenButton = this.findViewById(com.brightcove.player.R.id.full_screen);
+//            fullScreenButton.setVisibility(isFullscreenButtonHidden ? View.GONE : View.VISIBLE);
 
             mAutoplay = autoplay;
 

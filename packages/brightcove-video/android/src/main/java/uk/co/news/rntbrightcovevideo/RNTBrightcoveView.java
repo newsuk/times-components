@@ -1,10 +1,14 @@
 package uk.co.news.rntbrightcovevideo;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.ContextWrapper;
 import android.content.res.Configuration;
 import android.graphics.Color;
+import android.support.annotation.NonNull;
 import android.util.Log;
-import android.view.ViewGroup;
-import android.widget.RelativeLayout;
+import android.view.ViewParent;
+import android.widget.FrameLayout;
 
 import com.brightcove.player.event.Event;
 import com.facebook.react.bridge.Arguments;
@@ -13,7 +17,7 @@ import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.events.RCTEventEmitter;
 
-public class RNTBrightcoveView extends RelativeLayout {
+public class RNTBrightcoveView extends FrameLayout {
     public static final String TAG = RNTBrightcoveView.class.getSimpleName();
 
     private String mVideoId;
@@ -22,7 +26,7 @@ public class RNTBrightcoveView extends RelativeLayout {
     private Boolean mAutoplay;
     private Boolean mHideFullScreenButton;
     private BrightcovePlayerView mPlayerView;
-    private ThemedReactContext mContext;
+    private Context mContext;
 
     private float mSavedPlayheadPosition = 0;
 
@@ -97,16 +101,27 @@ public class RNTBrightcoveView extends RelativeLayout {
         if (parametersSet()) {
             Log.d(TAG, "adding player view");
 
-            mPlayerView = new BrightcovePlayerView(mContext);
 
-            addView(mPlayerView, new ViewGroup.LayoutParams(LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+            mPlayerView = new BrightcovePlayerView(getActivity());
+
+            addView(mPlayerView);
 
             mPlayerView.setStartPlayheadPosition(mSavedPlayheadPosition);
 
             boolean isFullscreenButtonHidden = mHideFullScreenButton != null ? mHideFullScreenButton : false;
-
             mPlayerView.initVideo(mVideoId, mAccountId, mPolicyKey, mAutoplay, isFullscreenButtonHidden);
         }
+    }
+
+    private Activity getActivity() {
+        Context context = getContext();
+        while (context instanceof ContextWrapper) {
+            if (context instanceof Activity) {
+                return (Activity)context;
+            }
+            context = ((ContextWrapper)context).getBaseContext();
+        }
+        return null;
     }
 
     public void emitState(final Boolean isPlaying, final int progress) {
