@@ -131,7 +131,7 @@ storiesOf("AuthorProfile", module)
 
     return withMockProvider(<AuthorProfile {...props} />);
   })
-  .add("With Page State", () => {
+  .add("With Provider", () => {
     const onTwitterLinkPress = preventDefaultedAction("onTwitterLinkPress");
     const onArticlePress = preventDefaultedAction("onArticlePress");
 

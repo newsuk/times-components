@@ -1,44 +1,85 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import PropTypes from "prop-types";
-import AuthorProfileHeader from "./author-profile-header";
-import AuthorProfileFooter from "./author-profile-footer";
+import Pagination from "@times-components/pagination";
+import AuthorHead from "@times-components/author-head";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
 
 const styles = StyleSheet.create({
   container: {
-    width: "100%",
+    alignItems: "stretch",
+    flexDirection: "row",
+    justifyContent: "center"
+  },
+  spacing: {
+    flex: 1,
+    marginLeft: 10,
+    marginRight: 10,
+    marginBottom: 10,
+    maxWidth: 800
+  }
+});
+
+const itemStyles = StyleSheet.create({
+  container: {
     maxWidth: 820,
     alignSelf: "center"
   }
 });
 
-const AuthorProfile = ({ articles }) =>
+export default ({
+  name,
+  biography,
+  uri,
+  jobTitle,
+  twitter,
+  onTwitterLinkPress,
+  count,
+  onNext,
+  onPrev,
+  page,
+  pageSize,
+  articles,
+  onArticlePress
+}) =>
   <View>
-    {articles.map((article, key) => {
-      const { id, url } = article;
-      const separatorComponent = key > 0
-        ? <AuthorProfileItemSeparator />
-        : null;
+    <AuthorHead
+      name={name}
+      bio={biography}
+      uri={uri}
+      title={jobTitle}
+      twitter={twitter}
+      onTwitterLinkPress={onTwitterLinkPress}
+    />
 
-      return (
-        <View testID={`articleList-${key}`} key={id} style={styles.container}>
-          {separatorComponent}
-          <AuthorProfileItem
-            {...article}
-            onPress={e => props.onArticlePress(e, { id, url })}
+    <View>
+      <View style={styles.container}>
+        <View style={styles.spacing}>
+          <Pagination
+            count={count}
+            generatePageLink={pageNum => `?page=${pageNum}`}
+            onNext={onNext}
+            onPrev={onPrev}
+            page={page}
+            pageSize={pageSize}
           />
         </View>
-      );
-    })}
-</View>;
+      </View>
+      {articles.map((article, key) => {
+        const { id, url } = article;
+        const separatorComponent = key > 0
+          ? <AuthorProfileItemSeparator />
+          : null;
 
-AuthorProfile.propTypes = Object.assign(
-  { onArticlePress: PropTypes.func.isRequired },
-  {
-    articles: PropTypes.arrayOf(PropTypes.shape(AuthorProfileItem.propTypes))
-  }
-);
-
-export default AuthorProfile;
+        return (
+          <View key={id} style={itemStyles.container}>
+            {separatorComponent}
+            <AuthorProfileItem
+              {...article}
+              onPress={e => onArticlePress(e, { id, url })}
+            />
+          </View>
+        );
+      })}
+    </View>
+  </View>;
