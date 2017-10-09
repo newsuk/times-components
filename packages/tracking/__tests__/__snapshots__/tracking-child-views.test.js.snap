@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WithTrackChildViews forwards props to wrapped component 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+  bar
+</Text>
+`;
+
+exports[`WithTrackChildViews renders when tracking context is missing 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+  foo
+</Text>
+`;
+
+exports[`WithTrackChildViews tracks child views 1`] = `Array []`;

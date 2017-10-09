@@ -1,32 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Button, StyleSheet, View } from "react-native";
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { action } from "@storybook/addon-actions";
+import { Button, View } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
-import { withTrackingContext, withTrackEvents } from "./tracking";
-
-const storybookReporter = action("analytics-event");
-
-const styles = StyleSheet.create({
-  box: {
-    borderWidth: 2,
-    borderColor: "black",
-    borderStyle: "solid",
-    height: 200,
-    width: 200
-  }
-});
-const Box = props => (
-  <View style={[styles.box, { backgroundColor: props.color }]} />
-);
-Box.propTypes = {
-  color: PropTypes.string.isRequired
-};
+import {
+  withTrackingContext,
+  withTrackEvents,
+  withTrackChildViews
+} from "./tracking";
+import storybookReporter from "./tealium/storybook-reporter";
+import Box, { boxStyles } from "./components/Box";
+import Boxes from "./components/Boxes";
 
 const BoxWithButtons = props => (
-  <View style={[styles.box, { backgroundColor: props.color }]}>
+  <View style={[boxStyles.box, { backgroundColor: props.color }]}>
     <Button onPress={() => props.onPress("button 1")} title="Press me" />
     <Button
       color="limegreen"
@@ -69,4 +56,24 @@ storiesOf("Tracking", module)
       color="red"
       onPress={() => {}}
     />
-  ));
+  ))
+  .add("Child view tracking", () => {
+    const boxes = [...Array(50).keys()].map(i => ({
+      id: `box-${i + 1}`,
+      color: i % 2 === 0 ? "green" : "blue"
+    }));
+    const BoxesWithTrackingContext = withTrackingContext(
+      withTrackChildViews(Boxes, {
+        childIdPropKey: "id",
+        getAttrs: ({ id, index }) => ({ id, index })
+      }),
+      { trackingObject: "Story" }
+    );
+    return (
+      <BoxesWithTrackingContext
+        onViewed={() => {}}
+        boxes={boxes}
+        analyticsStream={storybookReporter}
+      />
+    );
+  });

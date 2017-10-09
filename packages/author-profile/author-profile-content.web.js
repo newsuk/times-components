@@ -81,6 +81,7 @@ const AuthorProfileContent = ({
                   key={id}
                   accessibilityLabel={`articleList-${key}`}
                   testID={`articleList-${key}`}
+                  id={id}
                 >
                   {separatorComponent}
                   <AuthorProfileItem

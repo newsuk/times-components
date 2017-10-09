@@ -2,7 +2,7 @@ import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { decorateAction, action } from "@storybook/addon-actions";
+import { decorateAction } from "@storybook/addon-actions";
 import { AuthorProfileProvider } from "@times-components/provider";
 import { ApolloClient, IntrospectionFragmentMatcher } from "react-apollo";
 import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";
@@ -14,6 +14,7 @@ import AuthorProfile from "./author-profile";
 import AuthorProfileContent from "./author-profile-content";
 import authorProfileFixture from "./fixtures/author-profile.json";
 import articleListFixture from "./fixtures/article-list.json";
+import storybookReporter from "../tracking/tealium/storybook-reporter";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
@@ -148,7 +149,7 @@ storiesOf("AuthorProfile", module)
       pageSize: 3,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
       onArticlePress: preventDefaultedAction("onArticlePress"),
-      analyticsStream: () => {}
+      analyticsStream: storybookReporter
     };
 
     return withMockProvider(<AuthorProfile {...props} />);
@@ -160,7 +161,7 @@ storiesOf("AuthorProfile", module)
       pageSize: 3,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
       onArticlePress: preventDefaultedAction("onArticlePress"),
-      analyticsStream: () => {}
+      analyticsStream: storybookReporter
     };
 
     return <AuthorProfileContent {...props} />;
@@ -182,7 +183,7 @@ storiesOf("AuthorProfile", module)
             error={error}
             onTwitterLinkPress={onTwitterLinkPress}
             onArticlePress={onArticlePress}
-            analyticsStream={() => {}}
+            analyticsStream={storybookReporter}
           />
         )}
       </AuthorProfileProvider>
@@ -197,8 +198,20 @@ storiesOf("AuthorProfile", module)
       pageSize: 3,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
       onArticlePress: preventDefaultedAction("onArticlePress"),
-      analyticsStream: action("analytics-event")
+      analyticsStream: storybookReporter
     };
+    const slug = "fiona-hamilton";
 
-    return withMockProvider(<AuthorProfile {...props} />);
+    return withMockProvider(
+      <AuthorProfileProvider slug={slug}>
+        {({ author, isLoading, error }) => (
+          <AuthorProfile
+            {...props}
+            author={author}
+            isLoading={isLoading}
+            error={error}
+          />
+        )}
+      </AuthorProfileProvider>
+    );
   });

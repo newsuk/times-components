@@ -3,7 +3,10 @@ import PropTypes from "prop-types";
 import AuthorHead from "@times-components/author-head";
 import { withPageState } from "@times-components/pagination";
 import { ArticleListProvider } from "@times-components/provider";
-import { withTrackingContext } from "@times-components/tracking";
+import {
+  withTrackingContext,
+  withTrackChildViews
+} from "@times-components/tracking";
 import get from "lodash.get";
 import AuthorProfileError from "./author-profile-error";
 import AuthorProfileContent from "./author-profile-content";
@@ -17,7 +20,9 @@ const AuthorProfile = ({
   onTwitterLinkPress,
   page: initPage,
   pageSize: initPageSize,
-  slug
+  slug,
+  getChildList,
+  onViewed
 }) => {
   if (error) {
     return <AuthorProfileError {...error} />;
@@ -40,28 +45,38 @@ const AuthorProfile = ({
         page,
         pageSize,
         isLoading: articlesLoading
-      }) => (
-        <AuthorProfileContent
-          isLoading={isLoading}
-          name={name}
-          biography={biography}
-          uri={uri}
-          jobTitle={jobTitle}
-          twitter={twitter}
-          onTwitterLinkPress={onTwitterLinkPress}
-          count={get(articles, "count", 0)}
-          onNext={onNext}
-          onPrev={onPrev}
-          page={page}
-          pageSize={pageSize}
-          articlesLoading={articlesLoading}
-          articles={get(data, "articles.list", []).map(article => ({
+      }) => {
+        const articlesWithPublishTime = get(data, "articles.list", []).map(
+          article => ({
             ...article,
+            author,
+            page,
+            pageSize,
             publishedTime: new Date(article.publishedTime)
-          }))}
-          onArticlePress={onArticlePress}
-        />
-      )}
+          })
+        );
+        getChildList(articlesWithPublishTime);
+        return (
+          <AuthorProfileContent
+            isLoading={isLoading}
+            name={name}
+            biography={biography}
+            uri={uri}
+            jobTitle={jobTitle}
+            twitter={twitter}
+            onTwitterLinkPress={onTwitterLinkPress}
+            count={get(articles, "count", 0)}
+            onNext={onNext}
+            onPrev={onPrev}
+            page={page}
+            pageSize={pageSize}
+            articlesLoading={articlesLoading}
+            articles={articlesWithPublishTime}
+            onArticlePress={onArticlePress}
+            onViewed={onViewed}
+          />
+        );
+      }}
     </ArticleListProviderWithPageState>
   );
 };
@@ -72,6 +87,8 @@ AuthorProfile.defaultProps = {
   isLoading: true,
   onArticlePress: () => {},
   onTwitterLinkPress: () => {},
+  getChildList: () => {},
+  onViewed: () => {},
   page: 1,
   pageSize: 10
 };
@@ -90,14 +107,22 @@ AuthorProfile.propTypes = {
   pageSize: PropTypes.number,
   onTwitterLinkPress: PropTypes.func,
   onArticlePress: PropTypes.func,
+  getChildList: PropTypes.func,
+  onViewed: PropTypes.func,
   slug: PropTypes.string.isRequired
 };
 
-export default withTrackingContext(AuthorProfile, {
-  trackingObject: "AuthorProfile",
-  getAttrs: ({ author, page, pageSize } = {}) => ({
-    authorName: author && author.name,
-    page,
-    pageSize
-  })
-});
+export default withTrackingContext(
+  withTrackChildViews(AuthorProfile, {
+    childIdPropKey: "id",
+    actionName: "Scrolled"
+  }),
+  {
+    getAttrs: ({ author, page, pageSize } = {}) => ({
+      authorName: author && author.name,
+      page,
+      pageSize
+    }),
+    trackingObject: "AuthorProfile"
+  }
+);

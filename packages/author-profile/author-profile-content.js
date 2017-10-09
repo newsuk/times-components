@@ -13,6 +13,11 @@ const styles = StyleSheet.create({
   }
 });
 
+const viewabilityConfig = {
+  viewAreaCoveragePercentThreshold: 100,
+  waitForInteraction: false
+};
+
 class AuthorProfileContent extends React.Component {
   constructor(props) {
     super(props);
@@ -20,6 +25,7 @@ class AuthorProfileContent extends React.Component {
     this.state = {
       count: props.count
     };
+    this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -27,6 +33,16 @@ class AuthorProfileContent extends React.Component {
       this.setState({
         count: nextProps.count
       });
+    }
+  }
+
+  onViewableItemsChanged(info) {
+    if (info.changed) {
+      info.changed
+        .filter(viewableItem => viewableItem.isViewable)
+        .map(viewableItem =>
+          this.props.onViewed(viewableItem.item, this.props.articles)
+        );
     }
   }
 
@@ -85,6 +101,8 @@ class AuthorProfileContent extends React.Component {
           />
         )}
         initialListSize={pageSize}
+        onViewableItemsChanged={this.onViewableItemsChanged}
+        viewabilityConfig={viewabilityConfig}
         scrollRenderAheadDistance={2}
         pageSize={pageSize}
         ListHeaderComponent={

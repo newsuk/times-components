@@ -45,8 +45,15 @@ exports[`does re-render the author head if the loading state changes 1`] = `
 `;
 
 exports[`renders profile 1`] = `
-<Pagination Helper (Apollo(Wrapper))
-  articleImageRatio="3:2"
+<AuthorProfile
+  analyticsStream={[Function]}
+  author={null}
+  error={null}
+  getChildList={[Function]}
+  isLoading={true}
+  onArticlePress={[Function]}
+  onTwitterLinkPress={[Function]}
+  onViewed={[Function]}
   page={1}
   pageSize={10}
   slug="fiona-hamilton"
@@ -203,6 +210,7 @@ exports[`renders profile content 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
+  onViewableItemsChanged={[Function]}
   pageSize={10}
   renderItem={[Function]}
   scrollEventThrottle={50}
@@ -210,7 +218,23 @@ exports[`renders profile content 1`] = `
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
+  viewabilityConfig={
+    Object {
+      "viewAreaCoveragePercentThreshold": 100,
+      "waitForInteraction": false,
+    }
+  }
+  viewabilityConfigCallbackPairs={
+    Array [
+      Object {
+        "onViewableItemsChanged": [Function],
+        "viewabilityConfig": Object {
+          "viewAreaCoveragePercentThreshold": 100,
+          "waitForInteraction": false,
+        },
+      },
+    ]
+  }
   windowSize={21}
 >
   <View>
@@ -4326,6 +4350,7 @@ exports[`renders profile content component 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
+  onViewableItemsChanged={[Function]}
   pageSize={3}
   renderItem={[Function]}
   scrollEventThrottle={50}
@@ -4333,7 +4358,23 @@ exports[`renders profile content component 1`] = `
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
+  viewabilityConfig={
+    Object {
+      "viewAreaCoveragePercentThreshold": 100,
+      "waitForInteraction": false,
+    }
+  }
+  viewabilityConfigCallbackPairs={
+    Array [
+      Object {
+        "onViewableItemsChanged": [Function],
+        "viewabilityConfig": Object {
+          "viewAreaCoveragePercentThreshold": 100,
+          "waitForInteraction": false,
+        },
+      },
+    ]
+  }
   windowSize={21}
 >
   <View>
@@ -6091,6 +6132,7 @@ exports[`renders profile empty 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
+  onViewableItemsChanged={[Function]}
   pageSize={undefined}
   renderItem={[Function]}
   scrollEventThrottle={50}
@@ -6098,7 +6140,23 @@ exports[`renders profile empty 1`] = `
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
+  viewabilityConfig={
+    Object {
+      "viewAreaCoveragePercentThreshold": 100,
+      "waitForInteraction": false,
+    }
+  }
+  viewabilityConfigCallbackPairs={
+    Array [
+      Object {
+        "onViewableItemsChanged": [Function],
+        "viewabilityConfig": Object {
+          "viewAreaCoveragePercentThreshold": 100,
+          "waitForInteraction": false,
+        },
+      },
+    ]
+  }
   windowSize={21}
 >
   <View>
@@ -6467,6 +6525,7 @@ exports[`renders profile loading 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
+  onViewableItemsChanged={[Function]}
   pageSize={undefined}
   renderItem={[Function]}
   scrollEventThrottle={50}
@@ -6474,7 +6533,23 @@ exports[`renders profile loading 1`] = `
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
+  viewabilityConfig={
+    Object {
+      "viewAreaCoveragePercentThreshold": 100,
+      "waitForInteraction": false,
+    }
+  }
+  viewabilityConfigCallbackPairs={
+    Array [
+      Object {
+        "onViewableItemsChanged": [Function],
+        "viewabilityConfig": Object {
+          "viewAreaCoveragePercentThreshold": 100,
+          "waitForInteraction": false,
+        },
+      },
+    ]
+  }
   windowSize={21}
 >
   <View>

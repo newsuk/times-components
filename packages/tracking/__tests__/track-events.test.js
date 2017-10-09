@@ -4,6 +4,7 @@ import renderer from "react-test-renderer";
 import PropTypes from "prop-types";
 import { withTrackEvents } from "../tracking";
 import withTrackingContext from "./test-tracking-context";
+import sharedTrackingTests from "./shared-tracking-tests";
 
 describe("TrackEvents", () => {
   const TestComponent = ({ event1, event2, ...props }) => {
@@ -23,15 +24,10 @@ describe("TrackEvents", () => {
   };
   TestComponent.someStatic = { foo: "bar" };
 
-  it("renders when tracking context is missing", () => {
-    const WithTracking = withTrackEvents(TestComponent, {
-      analyticsEvents: [{ eventName: "event1", actionName: "event1ed" }]
-    });
-
-    const tree = renderer.create(<WithTracking />).toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
+  const props = {
+    event1: () => {},
+    event2: () => {}
+  };
 
   it("ignores events not exposed by tracked component", () => {
     const reporter = jest.fn();
@@ -42,7 +38,9 @@ describe("TrackEvents", () => {
       })
     );
 
-    renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
+    renderer.create(
+      <WithTrackingAndContext analyticsStream={reporter} {...props} />
+    );
 
     expect(reporter).not.toHaveBeenCalled();
   });
@@ -55,7 +53,9 @@ describe("TrackEvents", () => {
       })
     );
 
-    renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
+    renderer.create(
+      <WithTrackingAndContext analyticsStream={reporter} {...props} />
+    );
 
     expect(reporter).toHaveBeenCalledWith({
       action: "event1ed",
@@ -108,7 +108,9 @@ describe("TrackEvents", () => {
       })
     );
 
-    renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
+    renderer.create(
+      <WithTrackingAndContext analyticsStream={reporter} {...props} />
+    );
 
     expect(reporter).toHaveBeenCalledWith(
       expect.objectContaining({ component: "OverriddenName" })
@@ -122,8 +124,8 @@ describe("TrackEvents", () => {
           {
             eventName: "event1",
             actionName: "event1ed",
-            getAttrs: (props, eventArgs) => ({
-              fromProps: props.aProp,
+            getAttrs: ({ aProp }, eventArgs) => ({
+              fromProps: aProp,
               static: "value",
               args: eventArgs
             })
@@ -134,7 +136,11 @@ describe("TrackEvents", () => {
     const reporter = jest.fn();
 
     renderer.create(
-      <WithTrackingAndContext aProp="propValue" analyticsStream={reporter} />
+      <WithTrackingAndContext
+        aProp="propValue"
+        analyticsStream={reporter}
+        {...props}
+      />
     );
 
     expect(reporter).toHaveBeenCalledWith(
@@ -155,8 +161,8 @@ describe("TrackEvents", () => {
           {
             eventName: "event1",
             actionName: "event1ed",
-            getAttrs: (props, eventArgs) => ({
-              fromProps: props.aProp,
+            getAttrs: ({ aProp }, eventArgs) => ({
+              fromProps: aProp,
               static: "value",
               args: eventArgs
             })
@@ -164,8 +170,8 @@ describe("TrackEvents", () => {
           {
             eventName: "event2",
             actionName: "event2ed",
-            getAttrs: (props, eventArgs) => ({
-              fromProps: props.aProp,
+            getAttrs: ({ aProp }, eventArgs) => ({
+              fromProps: aProp,
               static: "otherValue",
               args: eventArgs
             })
@@ -176,7 +182,11 @@ describe("TrackEvents", () => {
     const reporter = jest.fn();
 
     renderer.create(
-      <WithTrackingAndContext aProp="propValue" analyticsStream={reporter} />
+      <WithTrackingAndContext
+        aProp="propValue"
+        analyticsStream={reporter}
+        {...props}
+      />
     );
 
     expect(reporter.mock.calls).toMatchSnapshot();
@@ -192,35 +202,16 @@ describe("TrackEvents", () => {
     );
 
     renderer.create(
-      <WithTrackingAndContext analyticsStream={reporter} event1={handler} />
+      <WithTrackingAndContext
+        analyticsStream={reporter}
+        {...props}
+        event1={handler}
+      />
     );
 
     expect(reporter).toHaveBeenCalled();
     expect(handler).toHaveBeenCalledWith("event1 arg");
   });
 
-  it("forwards props to wrapped component", () => {
-    const WithTracking = withTrackEvents(TestComponent);
-    const tree = renderer.create(<WithTracking someProp="bar" />);
-
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("hoists wrapped propTypes", () => {
-    const WithTracking = withTrackEvents(TestComponent);
-
-    expect(WithTracking.propTypes).toEqual(TestComponent.propTypes);
-  });
-
-  it("hoists wrapped defaultProps", () => {
-    const WithTracking = withTrackEvents(TestComponent);
-
-    expect(WithTracking.defaultProps).toEqual(TestComponent.defaultProps);
-  });
-
-  it("hoists wrapped statics", () => {
-    const WithTracking = withTrackEvents(TestComponent);
-
-    expect(WithTracking.someStatic).toEqual(TestComponent.someStatic);
-  });
+  sharedTrackingTests(withTrackEvents);
 });

@@ -5,3 +5,4 @@ dist
 **/android/*
 **/ios/*
 .storybook.native/story-loader.js
+**/package-lock.json
