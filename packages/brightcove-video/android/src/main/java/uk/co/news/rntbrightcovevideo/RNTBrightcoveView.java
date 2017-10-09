@@ -113,6 +113,7 @@ public class RNTBrightcoveView extends FrameLayout {
         }
     }
 
+    // Required for brightcove player full screen (context type has to be Activity)
     private Activity getActivity() {
         Context context = getContext();
         while (context instanceof ContextWrapper) {
