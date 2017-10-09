@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.14.4"></a>
+## [0.14.4](https://github.com/newsuk/times-components/compare/@times-components/article@0.14.2...@times-components/article@0.14.4) (2017-10-09)
+
+
+### Bug Fixes
+
+* article condition missing ([#280](https://github.com/newsuk/times-components/issues/280)) ([8aef4bb](https://github.com/newsuk/times-components/commit/8aef4bb))
+
+
+
+
 <a name="0.14.3"></a>
 ## [0.14.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.14.2...@times-components/article@0.14.3) (2017-10-09)
 
