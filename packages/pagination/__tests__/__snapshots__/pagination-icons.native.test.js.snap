@@ -11,10 +11,10 @@ ShallowWrapper {
   "node": <View
     style={
         Object {
-            "alignItems": "flex-start",
+            "alignItems": "center",
             "flexDirection": "row",
-            "paddingLeft": 10,
-            "paddingRight": 12,
+            "marginLeft": 10,
+            "marginRight": 12,
           }
     }
 >
@@ -28,7 +28,7 @@ ShallowWrapper {
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 15,
                 "height": 15,
-                "paddingRight": 10,
+                "marginRight": 10,
                 "textAlign": "right",
               }
         }
@@ -36,9 +36,9 @@ ShallowWrapper {
         a label
     </Text>
     <Svg
-        height={12}
-        viewBox="0 0 144 144"
-        width={12}
+        height={9}
+        viewBox="42 12 60 120"
+        width={5}
     >
         <G
             fill="#006699"
@@ -53,10 +53,10 @@ ShallowWrapper {
     <View
       style={
             Object {
-                  "alignItems": "flex-start",
+                  "alignItems": "center",
                   "flexDirection": "row",
-                  "paddingLeft": 10,
-                  "paddingRight": 12,
+                  "marginLeft": 10,
+                  "marginRight": 12,
                 }
       }
 >
@@ -70,7 +70,7 @@ ShallowWrapper {
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 15,
                         "height": 15,
-                        "paddingRight": 10,
+                        "marginRight": 10,
                         "textAlign": "right",
                       }
             }
@@ -78,9 +78,9 @@ ShallowWrapper {
             a label
       </Text>
       <Svg
-            height={12}
-            viewBox="0 0 144 144"
-            width={12}
+            height={9}
+            viewBox="42 12 60 120"
+            width={5}
       >
             <G
                   fill="#006699"
@@ -133,10 +133,10 @@ ShallowWrapper {
         "_currentElement": <View
           style={
                     Object {
-                              "alignItems": "flex-start",
+                              "alignItems": "center",
                               "flexDirection": "row",
-                              "paddingLeft": 10,
-                              "paddingRight": 12,
+                              "marginLeft": 10,
+                              "marginRight": 12,
                             }
           }
 >
@@ -150,7 +150,7 @@ ShallowWrapper {
                                         "fontFamily": "GillSansMTStd-Medium",
                                         "fontSize": 15,
                                         "height": 15,
-                                        "paddingRight": 10,
+                                        "marginRight": 10,
                                         "textAlign": "right",
                                       }
                     }
@@ -158,9 +158,9 @@ ShallowWrapper {
                     a label
           </Text>
           <Svg
-                    height={12}
-                    viewBox="0 0 144 144"
-                    width={12}
+                    height={9}
+                    viewBox="42 12 60 120"
+                    width={5}
           >
                     <G
                               fill="#006699"
@@ -175,10 +175,10 @@ ShallowWrapper {
         "_renderedOutput": <View
           style={
                     Object {
-                              "alignItems": "flex-start",
+                              "alignItems": "center",
                               "flexDirection": "row",
-                              "paddingLeft": 10,
-                              "paddingRight": 12,
+                              "marginLeft": 10,
+                              "marginRight": 12,
                             }
           }
 >
@@ -192,7 +192,7 @@ ShallowWrapper {
                                         "fontFamily": "GillSansMTStd-Medium",
                                         "fontSize": 15,
                                         "height": 15,
-                                        "paddingRight": 10,
+                                        "marginRight": 10,
                                         "textAlign": "right",
                                       }
                     }
@@ -200,9 +200,9 @@ ShallowWrapper {
                     a label
           </Text>
           <Svg
-                    height={12}
-                    viewBox="0 0 144 144"
-                    width={12}
+                    height={9}
+                    viewBox="42 12 60 120"
+                    width={5}
           >
                     <G
                               fill="#006699"
@@ -241,16 +241,16 @@ ShallowWrapper {
   "node": <View
     style={
         Object {
-            "alignItems": "flex-start",
+            "alignItems": "center",
             "flexDirection": "row",
-            "paddingLeft": 10,
+            "marginLeft": 10,
           }
     }
 >
     <Svg
-        height={12}
-        viewBox="0 0 144 144"
-        width={12}
+        height={9}
+        viewBox="42 12 60 120"
+        width={5}
     >
         <G
             fill="#006699"
@@ -270,7 +270,7 @@ ShallowWrapper {
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 15,
                 "height": 15,
-                "paddingLeft": 10,
+                "marginLeft": 10,
                 "textAlign": "left",
               }
         }
@@ -282,16 +282,16 @@ ShallowWrapper {
     <View
       style={
             Object {
-                  "alignItems": "flex-start",
+                  "alignItems": "center",
                   "flexDirection": "row",
-                  "paddingLeft": 10,
+                  "marginLeft": 10,
                 }
       }
 >
       <Svg
-            height={12}
-            viewBox="0 0 144 144"
-            width={12}
+            height={9}
+            viewBox="42 12 60 120"
+            width={5}
       >
             <G
                   fill="#006699"
@@ -311,7 +311,7 @@ ShallowWrapper {
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 15,
                         "height": 15,
-                        "paddingLeft": 10,
+                        "marginLeft": 10,
                         "textAlign": "left",
                       }
             }
@@ -361,16 +361,16 @@ ShallowWrapper {
         "_currentElement": <View
           style={
                     Object {
-                              "alignItems": "flex-start",
+                              "alignItems": "center",
                               "flexDirection": "row",
-                              "paddingLeft": 10,
+                              "marginLeft": 10,
                             }
           }
 >
           <Svg
-                    height={12}
-                    viewBox="0 0 144 144"
-                    width={12}
+                    height={9}
+                    viewBox="42 12 60 120"
+                    width={5}
           >
                     <G
                               fill="#006699"
@@ -390,7 +390,7 @@ ShallowWrapper {
                                         "fontFamily": "GillSansMTStd-Medium",
                                         "fontSize": 15,
                                         "height": 15,
-                                        "paddingLeft": 10,
+                                        "marginLeft": 10,
                                         "textAlign": "left",
                                       }
                     }
@@ -402,16 +402,16 @@ ShallowWrapper {
         "_renderedOutput": <View
           style={
                     Object {
-                              "alignItems": "flex-start",
+                              "alignItems": "center",
                               "flexDirection": "row",
-                              "paddingLeft": 10,
+                              "marginLeft": 10,
                             }
           }
 >
           <Svg
-                    height={12}
-                    viewBox="0 0 144 144"
-                    width={12}
+                    height={9}
+                    viewBox="42 12 60 120"
+                    width={5}
           >
                     <G
                               fill="#006699"
@@ -431,7 +431,7 @@ ShallowWrapper {
                                         "fontFamily": "GillSansMTStd-Medium",
                                         "fontSize": 15,
                                         "height": 15,
-                                        "paddingLeft": 10,
+                                        "marginLeft": 10,
                                         "textAlign": "left",
                                       }
                     }

@@ -17,9 +17,9 @@ ShallowWrapper {
         a label
     </Text>
     <Svg
-        height={12}
-        viewBox="0 0 144 144"
-        width={12}
+        height={9}
+        viewBox="42 12 60 120"
+        width={5}
     >
         <G
             fill="#006699"
@@ -40,9 +40,9 @@ ShallowWrapper {
             a label
       </Text>
       <Svg
-            height={12}
-            viewBox="0 0 144 144"
-            width={12}
+            height={9}
+            viewBox="42 12 60 120"
+            width={5}
       >
             <G
                   fill="#006699"
@@ -101,9 +101,9 @@ ShallowWrapper {
                     a label
           </Text>
           <Svg
-                    height={12}
-                    viewBox="0 0 144 144"
-                    width={12}
+                    height={9}
+                    viewBox="42 12 60 120"
+                    width={5}
           >
                     <G
                               fill="#006699"
@@ -124,9 +124,9 @@ ShallowWrapper {
                     a label
           </Text>
           <Svg
-                    height={12}
-                    viewBox="0 0 144 144"
-                    width={12}
+                    height={9}
+                    viewBox="42 12 60 120"
+                    width={5}
           >
                     <G
                               fill="#006699"
@@ -166,9 +166,9 @@ ShallowWrapper {
     style={65}
 >
     <Svg
-        height={12}
-        viewBox="0 0 144 144"
-        width={12}
+        height={9}
+        viewBox="42 12 60 120"
+        width={5}
     >
         <G
             fill="#006699"
@@ -189,9 +189,9 @@ ShallowWrapper {
       style={65}
 >
       <Svg
-            height={12}
-            viewBox="0 0 144 144"
-            width={12}
+            height={9}
+            viewBox="42 12 60 120"
+            width={5}
       >
             <G
                   fill="#006699"
@@ -250,9 +250,9 @@ ShallowWrapper {
           style={65}
 >
           <Svg
-                    height={12}
-                    viewBox="0 0 144 144"
-                    width={12}
+                    height={9}
+                    viewBox="42 12 60 120"
+                    width={5}
           >
                     <G
                               fill="#006699"
@@ -273,9 +273,9 @@ ShallowWrapper {
           style={65}
 >
           <Svg
-                    height={12}
-                    viewBox="0 0 144 144"
-                    width={12}
+                    height={9}
+                    viewBox="42 12 60 120"
+                    width={5}
           >
                     <G
                               fill="#006699"

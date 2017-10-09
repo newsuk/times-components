@@ -665,10 +665,10 @@ exports[`renders profile content 1`] = `
                   <View
                     style={
                       Object {
-                        "alignItems": "flex-start",
+                        "alignItems": "center",
                         "flexDirection": "row",
-                        "paddingLeft": 10,
-                        "paddingRight": 12,
+                        "marginLeft": 10,
+                        "marginRight": 12,
                       }
                     }
                   >
@@ -682,7 +682,7 @@ exports[`renders profile content 1`] = `
                           "fontFamily": "GillSansMTStd-Medium",
                           "fontSize": 15,
                           "height": 15,
-                          "paddingRight": 10,
+                          "marginRight": 10,
                           "textAlign": "right",
                         }
                       }
@@ -690,10 +690,10 @@ exports[`renders profile content 1`] = `
                       Next
                     </Text>
                     <svg
-                      height={12}
+                      height={9}
                       style={Object {}}
-                      viewBox="0 0 144 144"
-                      width={12}
+                      viewBox="42 12 60 120"
+                      width={5}
                     >
                       <g
                         fill="#006699"
@@ -2559,10 +2559,10 @@ exports[`renders profile content 1`] = `
                 <View
                   style={
                     Object {
-                      "alignItems": "flex-start",
+                      "alignItems": "center",
                       "flexDirection": "row",
-                      "paddingLeft": 10,
-                      "paddingRight": 12,
+                      "marginLeft": 10,
+                      "marginRight": 12,
                     }
                   }
                 >
@@ -2576,7 +2576,7 @@ exports[`renders profile content 1`] = `
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 15,
                         "height": 15,
-                        "paddingRight": 10,
+                        "marginRight": 10,
                         "textAlign": "right",
                       }
                     }
@@ -2584,10 +2584,10 @@ exports[`renders profile content 1`] = `
                     Next
                   </Text>
                   <svg
-                    height={12}
+                    height={9}
                     style={Object {}}
-                    viewBox="0 0 144 144"
-                    width={12}
+                    viewBox="42 12 60 120"
+                    width={5}
                   >
                     <g
                       fill="#006699"
@@ -2851,10 +2851,10 @@ exports[`renders profile content component 1`] = `
                   <View
                     style={
                       Object {
-                        "alignItems": "flex-start",
+                        "alignItems": "center",
                         "flexDirection": "row",
-                        "paddingLeft": 10,
-                        "paddingRight": 12,
+                        "marginLeft": 10,
+                        "marginRight": 12,
                       }
                     }
                   >
@@ -2868,7 +2868,7 @@ exports[`renders profile content component 1`] = `
                           "fontFamily": "GillSansMTStd-Medium",
                           "fontSize": 15,
                           "height": 15,
-                          "paddingRight": 10,
+                          "marginRight": 10,
                           "textAlign": "right",
                         }
                       }
@@ -2876,10 +2876,10 @@ exports[`renders profile content component 1`] = `
                       Next
                     </Text>
                     <svg
-                      height={12}
+                      height={9}
                       style={Object {}}
-                      viewBox="0 0 144 144"
-                      width={12}
+                      viewBox="42 12 60 120"
+                      width={5}
                     >
                       <g
                         fill="#006699"
@@ -4745,10 +4745,10 @@ exports[`renders profile content component 1`] = `
                 <View
                   style={
                     Object {
-                      "alignItems": "flex-start",
+                      "alignItems": "center",
                       "flexDirection": "row",
-                      "paddingLeft": 10,
-                      "paddingRight": 12,
+                      "marginLeft": 10,
+                      "marginRight": 12,
                     }
                   }
                 >
@@ -4762,7 +4762,7 @@ exports[`renders profile content component 1`] = `
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 15,
                         "height": 15,
-                        "paddingRight": 10,
+                        "marginRight": 10,
                         "textAlign": "right",
                       }
                     }
@@ -4770,10 +4770,10 @@ exports[`renders profile content component 1`] = `
                     Next
                   </Text>
                   <svg
-                    height={12}
+                    height={9}
                     style={Object {}}
-                    viewBox="0 0 144 144"
-                    width={12}
+                    viewBox="42 12 60 120"
+                    width={5}
                   >
                     <g
                       fill="#006699"
@@ -5064,10 +5064,10 @@ exports[`renders profile header 1`] = `
               <View
                 style={
                   Object {
-                    "alignItems": "flex-start",
+                    "alignItems": "center",
                     "flexDirection": "row",
-                    "paddingLeft": 10,
-                    "paddingRight": 12,
+                    "marginLeft": 10,
+                    "marginRight": 12,
                   }
                 }
               >
@@ -5081,7 +5081,7 @@ exports[`renders profile header 1`] = `
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 15,
                       "height": 15,
-                      "paddingRight": 10,
+                      "marginRight": 10,
                       "textAlign": "right",
                     }
                   }
@@ -5089,10 +5089,10 @@ exports[`renders profile header 1`] = `
                   Next
                 </Text>
                 <svg
-                  height={12}
+                  height={9}
                   style={Object {}}
-                  viewBox="0 0 144 144"
-                  width={12}
+                  viewBox="42 12 60 120"
+                  width={5}
                 >
                   <g
                     fill="#006699"
