@@ -1,11 +1,8 @@
 import React from "react";
-import { Text, View, Platform } from "react-native";
+import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import { renderTrees, treePropType } from "@times-components/markup";
 import DatePublication from "@times-components/date-publication";
-
-const fontFamilyWebAndIos = "TimesDigitalW04";
-const fontFamilyAndroid = "TimesDigitalW04-Regular";
 
 const styles = {
   container: {},
@@ -27,11 +24,11 @@ const styles = {
   text: {
     color: "#696969",
     fontSize: 14,
-    fontFamily:
-      Platform.OS === "android" ? fontFamilyAndroid : fontFamilyWebAndIos,
+    fontFamily: "TimesDigitalW04-Regular",
     lineHeight: 20,
     marginBottom: 10,
-    flexWrap: "wrap"
+    flexWrap: "wrap",
+    letterSpacing: 0.35
   }
 };
 
