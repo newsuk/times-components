@@ -1,6 +1,6 @@
 {
   "name": "@times-components/error-view",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "Handles errors",
   "main": "error-view",
   "scripts": {
@@ -17,7 +17,7 @@
       "node_modules/(?!@times-components)/"
     ],
     "testMatch": [
-      "<rootDir>/packages/error/__tests__/*.test.js"
+      "<rootDir>/packages/error-view/__tests__/*.test.js"
     ]
   },
   "repository": {
@@ -68,7 +68,7 @@
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16",
-    "react-native": ">=0.48"
+    "react-native": ">=0.49"
   },
   "publishConfig": {
     "access": "public"

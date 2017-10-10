@@ -71,7 +71,7 @@
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16",
-    "react-native": ">=0.48"
+    "react-native": ">=0.49"
   },
   "_timesComponentsCliVariables": {
     "component": "BrightcoveVideo",

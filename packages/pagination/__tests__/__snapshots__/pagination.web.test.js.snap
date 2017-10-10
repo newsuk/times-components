@@ -29,8 +29,8 @@ ShallowWrapper {
         <View
           style={
             Array [
-              69,
-              71,
+              73,
+              75,
               null,
             ]
           }
@@ -38,7 +38,7 @@ ShallowWrapper {
           <Text
             style={
               Array [
-                70,
+                74,
               ]
             }
           >
@@ -48,25 +48,27 @@ ShallowWrapper {
         <View
           style={
             Array [
-              69,
-              67,
+              73,
+              71,
             ]
           }
         >
           <View />
           <View>
-            <TextLink
+            <Link
               onPress={[Function]}
-              style={66}
+              style={70}
               url="./2"
             >
-              Next &gt;
-            </TextLink>
+              <NextPageIcon
+                label="Next"
+              />
+            </Link>
           </View>
         </View>,
       ],
       "onLayout": [Function],
-      "style": 68,
+      "style": 72,
     },
     "ref": null,
     "rendered": Array [
@@ -78,15 +80,15 @@ ShallowWrapper {
           "children": <Text
             style={
               Array [
-                70,
+                74,
               ]
             }
           >
             Showing 1 - 20 of 21 results
           </Text>,
           "style": Array [
-            69,
-            71,
+            73,
+            75,
             null,
           ],
         },
@@ -98,7 +100,7 @@ ShallowWrapper {
           "props": Object {
             "children": "Showing 1 - 20 of 21 results",
             "style": Array [
-              70,
+              74,
             ],
           },
           "ref": null,
@@ -115,18 +117,20 @@ ShallowWrapper {
           "children": Array [
             <View />,
             <View>
-              <TextLink
+              <Link
                 onPress={[Function]}
-                style={66}
+                style={70}
                 url="./2"
               >
-                Next &gt;
-              </TextLink>
+                <NextPageIcon
+                  label="Next"
+                />
+              </Link>
             </View>,
           ],
           "style": Array [
-            69,
-            67,
+            73,
+            71,
           ],
         },
         "ref": null,
@@ -147,13 +151,15 @@ ShallowWrapper {
             "key": null,
             "nodeType": "class",
             "props": Object {
-              "children": <TextLink
+              "children": <Link
                 onPress={[Function]}
-                style={66}
+                style={70}
                 url="./2"
               >
-                Next &gt;
-              </TextLink>,
+                <NextPageIcon
+                  label="Next"
+                />
+              </Link>,
             },
             "ref": null,
             "rendered": Object {
@@ -161,13 +167,25 @@ ShallowWrapper {
               "key": null,
               "nodeType": "function",
               "props": Object {
-                "children": "Next >",
+                "children": <NextPageIcon
+                  label="Next"
+                />,
                 "onPress": [Function],
-                "style": 66,
+                "style": 70,
                 "url": "./2",
               },
               "ref": null,
-              "rendered": "Next >",
+              "rendered": Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "function",
+                "props": Object {
+                  "label": "Next",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
               "type": [Function],
             },
             "type": [Function],
@@ -188,8 +206,8 @@ ShallowWrapper {
           <View
             style={
               Array [
-                69,
-                71,
+                73,
+                75,
                 null,
               ]
             }
@@ -197,7 +215,7 @@ ShallowWrapper {
             <Text
               style={
                 Array [
-                  70,
+                  74,
                 ]
               }
             >
@@ -207,25 +225,27 @@ ShallowWrapper {
           <View
             style={
               Array [
-                69,
-                67,
+                73,
+                71,
               ]
             }
           >
             <View />
             <View>
-              <TextLink
+              <Link
                 onPress={[Function]}
-                style={66}
+                style={70}
                 url="./2"
               >
-                Next &gt;
-              </TextLink>
+                <NextPageIcon
+                  label="Next"
+                />
+              </Link>
             </View>
           </View>,
         ],
         "onLayout": [Function],
-        "style": 68,
+        "style": 72,
       },
       "ref": null,
       "rendered": Array [
@@ -237,15 +257,15 @@ ShallowWrapper {
             "children": <Text
               style={
                 Array [
-                  70,
+                  74,
                 ]
               }
             >
               Showing 1 - 20 of 21 results
             </Text>,
             "style": Array [
-              69,
-              71,
+              73,
+              75,
               null,
             ],
           },
@@ -257,7 +277,7 @@ ShallowWrapper {
             "props": Object {
               "children": "Showing 1 - 20 of 21 results",
               "style": Array [
-                70,
+                74,
               ],
             },
             "ref": null,
@@ -274,18 +294,20 @@ ShallowWrapper {
             "children": Array [
               <View />,
               <View>
-                <TextLink
+                <Link
                   onPress={[Function]}
-                  style={66}
+                  style={70}
                   url="./2"
                 >
-                  Next &gt;
-                </TextLink>
+                  <NextPageIcon
+                    label="Next"
+                  />
+                </Link>
               </View>,
             ],
             "style": Array [
-              69,
-              67,
+              73,
+              71,
             ],
           },
           "ref": null,
@@ -306,13 +328,15 @@ ShallowWrapper {
               "key": null,
               "nodeType": "class",
               "props": Object {
-                "children": <TextLink
+                "children": <Link
                   onPress={[Function]}
-                  style={66}
+                  style={70}
                   url="./2"
                 >
-                  Next &gt;
-                </TextLink>,
+                  <NextPageIcon
+                    label="Next"
+                  />
+                </Link>,
               },
               "ref": null,
               "rendered": Object {
@@ -320,13 +344,25 @@ ShallowWrapper {
                 "key": null,
                 "nodeType": "function",
                 "props": Object {
-                  "children": "Next >",
+                  "children": <NextPageIcon
+                    label="Next"
+                  />,
                   "onPress": [Function],
-                  "style": 66,
+                  "style": 70,
                   "url": "./2",
                 },
                 "ref": null,
-                "rendered": "Next >",
+                "rendered": Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "function",
+                  "props": Object {
+                    "label": "Next",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
                 "type": [Function],
               },
               "type": [Function],
@@ -377,8 +413,8 @@ ShallowWrapper {
         <View
           style={
             Array [
-              69,
-              71,
+              73,
+              75,
               null,
             ]
           }
@@ -386,7 +422,7 @@ ShallowWrapper {
           <Text
             style={
               Array [
-                70,
+                74,
               ]
             }
           >
@@ -396,33 +432,37 @@ ShallowWrapper {
         <View
           style={
             Array [
-              69,
-              67,
+              73,
+              71,
             ]
           }
         >
           <View>
-            <TextLink
+            <Link
               onPress={[Function]}
-              style={66}
+              style={70}
               url="./1"
             >
-              &lt; Previous
-            </TextLink>
+              <PreviousPageIcon
+                label="Previous"
+              />
+            </Link>
           </View>
           <View>
-            <TextLink
+            <Link
               onPress={[Function]}
-              style={66}
+              style={70}
               url="./3"
             >
-              Next &gt;
-            </TextLink>
+              <NextPageIcon
+                label="Next"
+              />
+            </Link>
           </View>
         </View>,
       ],
       "onLayout": [Function],
-      "style": 68,
+      "style": 72,
     },
     "ref": null,
     "rendered": Array [
@@ -434,15 +474,15 @@ ShallowWrapper {
           "children": <Text
             style={
               Array [
-                70,
+                74,
               ]
             }
           >
             Showing 21 - 40 of 41 results
           </Text>,
           "style": Array [
-            69,
-            71,
+            73,
+            75,
             null,
           ],
         },
@@ -454,7 +494,7 @@ ShallowWrapper {
           "props": Object {
             "children": "Showing 21 - 40 of 41 results",
             "style": Array [
-              70,
+              74,
             ],
           },
           "ref": null,
@@ -470,27 +510,31 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <View>
-              <TextLink
+              <Link
                 onPress={[Function]}
-                style={66}
+                style={70}
                 url="./1"
               >
-                &lt; Previous
-              </TextLink>
+                <PreviousPageIcon
+                  label="Previous"
+                />
+              </Link>
             </View>,
             <View>
-              <TextLink
+              <Link
                 onPress={[Function]}
-                style={66}
+                style={70}
                 url="./3"
               >
-                Next &gt;
-              </TextLink>
+                <NextPageIcon
+                  label="Next"
+                />
+              </Link>
             </View>,
           ],
           "style": Array [
-            69,
-            67,
+            73,
+            71,
           ],
         },
         "ref": null,
@@ -500,13 +544,15 @@ ShallowWrapper {
             "key": null,
             "nodeType": "class",
             "props": Object {
-              "children": <TextLink
+              "children": <Link
                 onPress={[Function]}
-                style={66}
+                style={70}
                 url="./1"
               >
-                &lt; Previous
-              </TextLink>,
+                <PreviousPageIcon
+                  label="Previous"
+                />
+              </Link>,
             },
             "ref": null,
             "rendered": Object {
@@ -514,13 +560,25 @@ ShallowWrapper {
               "key": null,
               "nodeType": "function",
               "props": Object {
-                "children": "< Previous",
+                "children": <PreviousPageIcon
+                  label="Previous"
+                />,
                 "onPress": [Function],
-                "style": 66,
+                "style": 70,
                 "url": "./1",
               },
               "ref": null,
-              "rendered": "< Previous",
+              "rendered": Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "function",
+                "props": Object {
+                  "label": "Previous",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
               "type": [Function],
             },
             "type": [Function],
@@ -530,13 +588,15 @@ ShallowWrapper {
             "key": null,
             "nodeType": "class",
             "props": Object {
-              "children": <TextLink
+              "children": <Link
                 onPress={[Function]}
-                style={66}
+                style={70}
                 url="./3"
               >
-                Next &gt;
-              </TextLink>,
+                <NextPageIcon
+                  label="Next"
+                />
+              </Link>,
             },
             "ref": null,
             "rendered": Object {
@@ -544,13 +604,25 @@ ShallowWrapper {
               "key": null,
               "nodeType": "function",
               "props": Object {
-                "children": "Next >",
+                "children": <NextPageIcon
+                  label="Next"
+                />,
                 "onPress": [Function],
-                "style": 66,
+                "style": 70,
                 "url": "./3",
               },
               "ref": null,
-              "rendered": "Next >",
+              "rendered": Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "function",
+                "props": Object {
+                  "label": "Next",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
               "type": [Function],
             },
             "type": [Function],
@@ -571,8 +643,8 @@ ShallowWrapper {
           <View
             style={
               Array [
-                69,
-                71,
+                73,
+                75,
                 null,
               ]
             }
@@ -580,7 +652,7 @@ ShallowWrapper {
             <Text
               style={
                 Array [
-                  70,
+                  74,
                 ]
               }
             >
@@ -590,33 +662,37 @@ ShallowWrapper {
           <View
             style={
               Array [
-                69,
-                67,
+                73,
+                71,
               ]
             }
           >
             <View>
-              <TextLink
+              <Link
                 onPress={[Function]}
-                style={66}
+                style={70}
                 url="./1"
               >
-                &lt; Previous
-              </TextLink>
+                <PreviousPageIcon
+                  label="Previous"
+                />
+              </Link>
             </View>
             <View>
-              <TextLink
+              <Link
                 onPress={[Function]}
-                style={66}
+                style={70}
                 url="./3"
               >
-                Next &gt;
-              </TextLink>
+                <NextPageIcon
+                  label="Next"
+                />
+              </Link>
             </View>
           </View>,
         ],
         "onLayout": [Function],
-        "style": 68,
+        "style": 72,
       },
       "ref": null,
       "rendered": Array [
@@ -628,15 +704,15 @@ ShallowWrapper {
             "children": <Text
               style={
                 Array [
-                  70,
+                  74,
                 ]
               }
             >
               Showing 21 - 40 of 41 results
             </Text>,
             "style": Array [
-              69,
-              71,
+              73,
+              75,
               null,
             ],
           },
@@ -648,7 +724,7 @@ ShallowWrapper {
             "props": Object {
               "children": "Showing 21 - 40 of 41 results",
               "style": Array [
-                70,
+                74,
               ],
             },
             "ref": null,
@@ -664,27 +740,31 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <View>
-                <TextLink
+                <Link
                   onPress={[Function]}
-                  style={66}
+                  style={70}
                   url="./1"
                 >
-                  &lt; Previous
-                </TextLink>
+                  <PreviousPageIcon
+                    label="Previous"
+                  />
+                </Link>
               </View>,
               <View>
-                <TextLink
+                <Link
                   onPress={[Function]}
-                  style={66}
+                  style={70}
                   url="./3"
                 >
-                  Next &gt;
-                </TextLink>
+                  <NextPageIcon
+                    label="Next"
+                  />
+                </Link>
               </View>,
             ],
             "style": Array [
-              69,
-              67,
+              73,
+              71,
             ],
           },
           "ref": null,
@@ -694,13 +774,15 @@ ShallowWrapper {
               "key": null,
               "nodeType": "class",
               "props": Object {
-                "children": <TextLink
+                "children": <Link
                   onPress={[Function]}
-                  style={66}
+                  style={70}
                   url="./1"
                 >
-                  &lt; Previous
-                </TextLink>,
+                  <PreviousPageIcon
+                    label="Previous"
+                  />
+                </Link>,
               },
               "ref": null,
               "rendered": Object {
@@ -708,13 +790,25 @@ ShallowWrapper {
                 "key": null,
                 "nodeType": "function",
                 "props": Object {
-                  "children": "< Previous",
+                  "children": <PreviousPageIcon
+                    label="Previous"
+                  />,
                   "onPress": [Function],
-                  "style": 66,
+                  "style": 70,
                   "url": "./1",
                 },
                 "ref": null,
-                "rendered": "< Previous",
+                "rendered": Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "function",
+                  "props": Object {
+                    "label": "Previous",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
                 "type": [Function],
               },
               "type": [Function],
@@ -724,13 +818,15 @@ ShallowWrapper {
               "key": null,
               "nodeType": "class",
               "props": Object {
-                "children": <TextLink
+                "children": <Link
                   onPress={[Function]}
-                  style={66}
+                  style={70}
                   url="./3"
                 >
-                  Next &gt;
-                </TextLink>,
+                  <NextPageIcon
+                    label="Next"
+                  />
+                </Link>,
               },
               "ref": null,
               "rendered": Object {
@@ -738,13 +834,25 @@ ShallowWrapper {
                 "key": null,
                 "nodeType": "function",
                 "props": Object {
-                  "children": "Next >",
+                  "children": <NextPageIcon
+                    label="Next"
+                  />,
                   "onPress": [Function],
-                  "style": 66,
+                  "style": 70,
                   "url": "./3",
                 },
                 "ref": null,
-                "rendered": "Next >",
+                "rendered": Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "function",
+                  "props": Object {
+                    "label": "Next",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
                 "type": [Function],
               },
               "type": [Function],
@@ -795,8 +903,8 @@ ShallowWrapper {
         <View
           style={
             Array [
-              69,
-              71,
+              73,
+              75,
               null,
             ]
           }
@@ -804,7 +912,7 @@ ShallowWrapper {
           <Text
             style={
               Array [
-                70,
+                74,
               ]
             }
           >
@@ -814,25 +922,27 @@ ShallowWrapper {
         <View
           style={
             Array [
-              69,
-              67,
+              73,
+              71,
             ]
           }
         >
           <View>
-            <TextLink
+            <Link
               onPress={[Function]}
-              style={66}
+              style={70}
               url="./2"
             >
-              &lt; Previous
-            </TextLink>
+              <PreviousPageIcon
+                label="Previous"
+              />
+            </Link>
           </View>
           <View />
         </View>,
       ],
       "onLayout": [Function],
-      "style": 68,
+      "style": 72,
     },
     "ref": null,
     "rendered": Array [
@@ -844,15 +954,15 @@ ShallowWrapper {
           "children": <Text
             style={
               Array [
-                70,
+                74,
               ]
             }
           >
             Showing 41 - 41 of 41 results
           </Text>,
           "style": Array [
-            69,
-            71,
+            73,
+            75,
             null,
           ],
         },
@@ -864,7 +974,7 @@ ShallowWrapper {
           "props": Object {
             "children": "Showing 41 - 41 of 41 results",
             "style": Array [
-              70,
+              74,
             ],
           },
           "ref": null,
@@ -880,19 +990,21 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <View>
-              <TextLink
+              <Link
                 onPress={[Function]}
-                style={66}
+                style={70}
                 url="./2"
               >
-                &lt; Previous
-              </TextLink>
+                <PreviousPageIcon
+                  label="Previous"
+                />
+              </Link>
             </View>,
             <View />,
           ],
           "style": Array [
-            69,
-            67,
+            73,
+            71,
           ],
         },
         "ref": null,
@@ -902,13 +1014,15 @@ ShallowWrapper {
             "key": null,
             "nodeType": "class",
             "props": Object {
-              "children": <TextLink
+              "children": <Link
                 onPress={[Function]}
-                style={66}
+                style={70}
                 url="./2"
               >
-                &lt; Previous
-              </TextLink>,
+                <PreviousPageIcon
+                  label="Previous"
+                />
+              </Link>,
             },
             "ref": null,
             "rendered": Object {
@@ -916,13 +1030,25 @@ ShallowWrapper {
               "key": null,
               "nodeType": "function",
               "props": Object {
-                "children": "< Previous",
+                "children": <PreviousPageIcon
+                  label="Previous"
+                />,
                 "onPress": [Function],
-                "style": 66,
+                "style": 70,
                 "url": "./2",
               },
               "ref": null,
-              "rendered": "< Previous",
+              "rendered": Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "function",
+                "props": Object {
+                  "label": "Previous",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
               "type": [Function],
             },
             "type": [Function],
@@ -954,8 +1080,8 @@ ShallowWrapper {
           <View
             style={
               Array [
-                69,
-                71,
+                73,
+                75,
                 null,
               ]
             }
@@ -963,7 +1089,7 @@ ShallowWrapper {
             <Text
               style={
                 Array [
-                  70,
+                  74,
                 ]
               }
             >
@@ -973,25 +1099,27 @@ ShallowWrapper {
           <View
             style={
               Array [
-                69,
-                67,
+                73,
+                71,
               ]
             }
           >
             <View>
-              <TextLink
+              <Link
                 onPress={[Function]}
-                style={66}
+                style={70}
                 url="./2"
               >
-                &lt; Previous
-              </TextLink>
+                <PreviousPageIcon
+                  label="Previous"
+                />
+              </Link>
             </View>
             <View />
           </View>,
         ],
         "onLayout": [Function],
-        "style": 68,
+        "style": 72,
       },
       "ref": null,
       "rendered": Array [
@@ -1003,15 +1131,15 @@ ShallowWrapper {
             "children": <Text
               style={
                 Array [
-                  70,
+                  74,
                 ]
               }
             >
               Showing 41 - 41 of 41 results
             </Text>,
             "style": Array [
-              69,
-              71,
+              73,
+              75,
               null,
             ],
           },
@@ -1023,7 +1151,7 @@ ShallowWrapper {
             "props": Object {
               "children": "Showing 41 - 41 of 41 results",
               "style": Array [
-                70,
+                74,
               ],
             },
             "ref": null,
@@ -1039,19 +1167,21 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <View>
-                <TextLink
+                <Link
                   onPress={[Function]}
-                  style={66}
+                  style={70}
                   url="./2"
                 >
-                  &lt; Previous
-                </TextLink>
+                  <PreviousPageIcon
+                    label="Previous"
+                  />
+                </Link>
               </View>,
               <View />,
             ],
             "style": Array [
-              69,
-              67,
+              73,
+              71,
             ],
           },
           "ref": null,
@@ -1061,13 +1191,15 @@ ShallowWrapper {
               "key": null,
               "nodeType": "class",
               "props": Object {
-                "children": <TextLink
+                "children": <Link
                   onPress={[Function]}
-                  style={66}
+                  style={70}
                   url="./2"
                 >
-                  &lt; Previous
-                </TextLink>,
+                  <PreviousPageIcon
+                    label="Previous"
+                  />
+                </Link>,
               },
               "ref": null,
               "rendered": Object {
@@ -1075,13 +1207,25 @@ ShallowWrapper {
                 "key": null,
                 "nodeType": "function",
                 "props": Object {
-                  "children": "< Previous",
+                  "children": <PreviousPageIcon
+                    label="Previous"
+                  />,
                   "onPress": [Function],
-                  "style": 66,
+                  "style": 70,
                   "url": "./2",
                 },
                 "ref": null,
-                "rendered": "< Previous",
+                "rendered": Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "function",
+                  "props": Object {
+                    "label": "Previous",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
                 "type": [Function],
               },
               "type": [Function],
@@ -1143,8 +1287,8 @@ ShallowWrapper {
         <View
           style={
             Array [
-              69,
-              71,
+              73,
+              75,
               null,
             ]
           }
@@ -1152,7 +1296,7 @@ ShallowWrapper {
           <Text
             style={
               Array [
-                70,
+                74,
               ]
             }
           >
@@ -1162,25 +1306,27 @@ ShallowWrapper {
         <View
           style={
             Array [
-              69,
-              67,
+              73,
+              71,
             ]
           }
         >
           <View />
           <View>
-            <TextLink
+            <Link
               onPress={[Function]}
-              style={66}
+              style={70}
               url="./2"
             >
-              Next &gt;
-            </TextLink>
+              <NextPageIcon
+                label="Next"
+              />
+            </Link>
           </View>
         </View>,
       ],
       "onLayout": [Function],
-      "style": 68,
+      "style": 72,
     },
     "ref": null,
     "rendered": Array [
@@ -1192,15 +1338,15 @@ ShallowWrapper {
           "children": <Text
             style={
               Array [
-                70,
+                74,
               ]
             }
           >
             Showing 1 - 20 of 41 results
           </Text>,
           "style": Array [
-            69,
-            71,
+            73,
+            75,
             null,
           ],
         },
@@ -1212,7 +1358,7 @@ ShallowWrapper {
           "props": Object {
             "children": "Showing 1 - 20 of 41 results",
             "style": Array [
-              70,
+              74,
             ],
           },
           "ref": null,
@@ -1229,18 +1375,20 @@ ShallowWrapper {
           "children": Array [
             <View />,
             <View>
-              <TextLink
+              <Link
                 onPress={[Function]}
-                style={66}
+                style={70}
                 url="./2"
               >
-                Next &gt;
-              </TextLink>
+                <NextPageIcon
+                  label="Next"
+                />
+              </Link>
             </View>,
           ],
           "style": Array [
-            69,
-            67,
+            73,
+            71,
           ],
         },
         "ref": null,
@@ -1261,13 +1409,15 @@ ShallowWrapper {
             "key": null,
             "nodeType": "class",
             "props": Object {
-              "children": <TextLink
+              "children": <Link
                 onPress={[Function]}
-                style={66}
+                style={70}
                 url="./2"
               >
-                Next &gt;
-              </TextLink>,
+                <NextPageIcon
+                  label="Next"
+                />
+              </Link>,
             },
             "ref": null,
             "rendered": Object {
@@ -1275,13 +1425,25 @@ ShallowWrapper {
               "key": null,
               "nodeType": "function",
               "props": Object {
-                "children": "Next >",
+                "children": <NextPageIcon
+                  label="Next"
+                />,
                 "onPress": [Function],
-                "style": 66,
+                "style": 70,
                 "url": "./2",
               },
               "ref": null,
-              "rendered": "Next >",
+              "rendered": Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "function",
+                "props": Object {
+                  "label": "Next",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
               "type": [Function],
             },
             "type": [Function],
@@ -1302,8 +1464,8 @@ ShallowWrapper {
           <View
             style={
               Array [
-                69,
-                71,
+                73,
+                75,
                 null,
               ]
             }
@@ -1311,7 +1473,7 @@ ShallowWrapper {
             <Text
               style={
                 Array [
-                  70,
+                  74,
                 ]
               }
             >
@@ -1321,25 +1483,27 @@ ShallowWrapper {
           <View
             style={
               Array [
-                69,
-                67,
+                73,
+                71,
               ]
             }
           >
             <View />
             <View>
-              <TextLink
+              <Link
                 onPress={[Function]}
-                style={66}
+                style={70}
                 url="./2"
               >
-                Next &gt;
-              </TextLink>
+                <NextPageIcon
+                  label="Next"
+                />
+              </Link>
             </View>
           </View>,
         ],
         "onLayout": [Function],
-        "style": 68,
+        "style": 72,
       },
       "ref": null,
       "rendered": Array [
@@ -1351,15 +1515,15 @@ ShallowWrapper {
             "children": <Text
               style={
                 Array [
-                  70,
+                  74,
                 ]
               }
             >
               Showing 1 - 20 of 41 results
             </Text>,
             "style": Array [
-              69,
-              71,
+              73,
+              75,
               null,
             ],
           },
@@ -1371,7 +1535,7 @@ ShallowWrapper {
             "props": Object {
               "children": "Showing 1 - 20 of 41 results",
               "style": Array [
-                70,
+                74,
               ],
             },
             "ref": null,
@@ -1388,18 +1552,20 @@ ShallowWrapper {
             "children": Array [
               <View />,
               <View>
-                <TextLink
+                <Link
                   onPress={[Function]}
-                  style={66}
+                  style={70}
                   url="./2"
                 >
-                  Next &gt;
-                </TextLink>
+                  <NextPageIcon
+                    label="Next"
+                  />
+                </Link>
               </View>,
             ],
             "style": Array [
-              69,
-              67,
+              73,
+              71,
             ],
           },
           "ref": null,
@@ -1420,13 +1586,15 @@ ShallowWrapper {
               "key": null,
               "nodeType": "class",
               "props": Object {
-                "children": <TextLink
+                "children": <Link
                   onPress={[Function]}
-                  style={66}
+                  style={70}
                   url="./2"
                 >
-                  Next &gt;
-                </TextLink>,
+                  <NextPageIcon
+                    label="Next"
+                  />
+                </Link>,
               },
               "ref": null,
               "rendered": Object {
@@ -1434,13 +1602,25 @@ ShallowWrapper {
                 "key": null,
                 "nodeType": "function",
                 "props": Object {
-                  "children": "Next >",
+                  "children": <NextPageIcon
+                    label="Next"
+                  />,
                   "onPress": [Function],
-                  "style": 66,
+                  "style": 70,
                   "url": "./2",
                 },
                 "ref": null,
-                "rendered": "Next >",
+                "rendered": Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "function",
+                  "props": Object {
+                    "label": "Next",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
                 "type": [Function],
               },
               "type": [Function],
@@ -1492,25 +1672,27 @@ ShallowWrapper {
         <View
           style={
             Array [
-              69,
-              67,
+              73,
+              71,
             ]
           }
         >
           <View />
           <View>
-            <TextLink
+            <Link
               onPress={[Function]}
-              style={66}
+              style={70}
               url="./2"
             >
-              Next &gt;
-            </TextLink>
+              <NextPageIcon
+                label="Next"
+              />
+            </Link>
           </View>
         </View>,
       ],
       "onLayout": [Function],
-      "style": 68,
+      "style": 72,
     },
     "ref": null,
     "rendered": Array [
@@ -1523,18 +1705,20 @@ ShallowWrapper {
           "children": Array [
             <View />,
             <View>
-              <TextLink
+              <Link
                 onPress={[Function]}
-                style={66}
+                style={70}
                 url="./2"
               >
-                Next &gt;
-              </TextLink>
+                <NextPageIcon
+                  label="Next"
+                />
+              </Link>
             </View>,
           ],
           "style": Array [
-            69,
-            67,
+            73,
+            71,
           ],
         },
         "ref": null,
@@ -1555,13 +1739,15 @@ ShallowWrapper {
             "key": null,
             "nodeType": "class",
             "props": Object {
-              "children": <TextLink
+              "children": <Link
                 onPress={[Function]}
-                style={66}
+                style={70}
                 url="./2"
               >
-                Next &gt;
-              </TextLink>,
+                <NextPageIcon
+                  label="Next"
+                />
+              </Link>,
             },
             "ref": null,
             "rendered": Object {
@@ -1569,13 +1755,25 @@ ShallowWrapper {
               "key": null,
               "nodeType": "function",
               "props": Object {
-                "children": "Next >",
+                "children": <NextPageIcon
+                  label="Next"
+                />,
                 "onPress": [Function],
-                "style": 66,
+                "style": 70,
                 "url": "./2",
               },
               "ref": null,
-              "rendered": "Next >",
+              "rendered": Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "function",
+                "props": Object {
+                  "label": "Next",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
               "type": [Function],
             },
             "type": [Function],
@@ -1597,25 +1795,27 @@ ShallowWrapper {
           <View
             style={
               Array [
-                69,
-                67,
+                73,
+                71,
               ]
             }
           >
             <View />
             <View>
-              <TextLink
+              <Link
                 onPress={[Function]}
-                style={66}
+                style={70}
                 url="./2"
               >
-                Next &gt;
-              </TextLink>
+                <NextPageIcon
+                  label="Next"
+                />
+              </Link>
             </View>
           </View>,
         ],
         "onLayout": [Function],
-        "style": 68,
+        "style": 72,
       },
       "ref": null,
       "rendered": Array [
@@ -1628,18 +1828,20 @@ ShallowWrapper {
             "children": Array [
               <View />,
               <View>
-                <TextLink
+                <Link
                   onPress={[Function]}
-                  style={66}
+                  style={70}
                   url="./2"
                 >
-                  Next &gt;
-                </TextLink>
+                  <NextPageIcon
+                    label="Next"
+                  />
+                </Link>
               </View>,
             ],
             "style": Array [
-              69,
-              67,
+              73,
+              71,
             ],
           },
           "ref": null,
@@ -1660,13 +1862,15 @@ ShallowWrapper {
               "key": null,
               "nodeType": "class",
               "props": Object {
-                "children": <TextLink
+                "children": <Link
                   onPress={[Function]}
-                  style={66}
+                  style={70}
                   url="./2"
                 >
-                  Next &gt;
-                </TextLink>,
+                  <NextPageIcon
+                    label="Next"
+                  />
+                </Link>,
               },
               "ref": null,
               "rendered": Object {
@@ -1674,13 +1878,25 @@ ShallowWrapper {
                 "key": null,
                 "nodeType": "function",
                 "props": Object {
-                  "children": "Next >",
+                  "children": <NextPageIcon
+                    label="Next"
+                  />,
                   "onPress": [Function],
-                  "style": 66,
+                  "style": 70,
                   "url": "./2",
                 },
                 "ref": null,
-                "rendered": "Next >",
+                "rendered": Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "function",
+                  "props": Object {
+                    "label": "Next",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
                 "type": [Function],
               },
               "type": [Function],

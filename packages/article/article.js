@@ -39,7 +39,7 @@ class ArticlePage extends React.Component {
     if (rowData.type === "leadAsset") {
       return (
         <View style={styles.leadAsset}>
-          <Image source={{ uri: rowData.data.crop.url }} />
+          <Image uri={rowData.data.crop.url} aspectRatio={16 / 9} />
         </View>
       );
     } else if (rowData.type === "header") {
@@ -110,7 +110,7 @@ class ArticlePage extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (!nextProps.isLoading) {
+    if (!nextProps.isLoading && nextProps.data) {
       this.setState({
         dataSource: ds.cloneWithRows(listViewDataHelper(nextProps.data.article))
       });

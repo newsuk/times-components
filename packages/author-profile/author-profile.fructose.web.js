@@ -1,7 +1,5 @@
 /* globals withComponent Chromeless test expect beforeEach */
 import React from "react";
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { decorateAction } from "@storybook/addon-actions";
 import AuthorProfile from "./author-profile";
 import authorProfileGenerator from "./fixture-generator";
 
@@ -10,27 +8,13 @@ const setup = () => {
   chromeless = new Chromeless();
 };
 
-const preventDefaultedAction = decorateAction([
-  ([e, ...args]) => {
-    e.preventDefault();
-    return ["[SyntheticEvent (storybook prevented default)]", ...args];
-  }
-]);
-
-const examples = authorProfileGenerator(11);
-const props = {
-  data: Object.assign({}, examples, {
-    count: examples.articles.count,
-    pageSize: 10,
-    page: 1
-  }),
+const example = authorProfileGenerator(11);
+const props = Object.assign({}, example, {
   isLoading: false,
-  onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress")
-};
-
-props.data.articles.list.forEach(article => {
-  // eslint-disable-next-line no-param-reassign
-  article.publishedTime = new Date(article.publishedTime);
+  page: 1,
+  pageSize: 10,
+  onTwitterLinkPress: () => {},
+  onArticlePress: () => {}
 });
 
 withComponent(

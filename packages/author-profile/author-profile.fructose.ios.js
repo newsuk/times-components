@@ -25,14 +25,13 @@ const story = m => (
 
 const example = authorProfileGenerator(2);
 
-const props = {
-  data: Object.assign({}, example, {
-    count: example.articles.count,
-    pageSize: 10,
-    page: 1
-  }),
-  isLoading: false
-};
+const props = Object.assign({}, example, {
+  isLoading: false,
+  page: 1,
+  pageSize: 10,
+  onTwitterLinkPress: () => {},
+  onArticlePress: () => {}
+});
 
 withComponent(
   story(<AuthorProfile {...props} />),
@@ -45,10 +44,10 @@ withComponent(
     test(
       "renders and swipes",
       async () => {
-        await expect(element(by.text(example.name))).toBeVisible();
+        await expect(element(by.text(example.author.name))).toBeVisible();
         await element(by.id("scroll-view")).swipe("up", "fast");
         await expect(
-          element(by.text(example.articles.list[1].title))
+          element(by.text(example.author.articles.list[1].title))
         ).toBeVisible();
       },
       10000

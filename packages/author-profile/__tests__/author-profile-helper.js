@@ -13,14 +13,16 @@ import example from "../example.json";
 
 Enzyme.configure({ adapter: new React16Adapter() });
 
-example.articles.list = example.articles.list.map(el => ({
-  ...el,
-  publishedTime: new Date(el.publishedTime)
-}));
+example.data.author.articles.list = example.data.author.articles.list.map(
+  el => ({
+    ...el,
+    publishedTime: new Date(el.publishedTime)
+  })
+);
 
 const props = {
-  data: Object.assign({}, example, {
-    count: example.articles.count,
+  author: Object.assign({}, example.data.author, {
+    count: example.data.author.articles.count,
     page: 1,
     pageSize: 10
   }),
@@ -44,7 +46,7 @@ export default AuthorProfileContent => {
 
   it("renders profile loading", () => {
     const p = Object.assign({}, props, {
-      data: null,
+      author: null,
       isLoading: true
     });
     const component = renderer.create(<AuthorProfile {...p} />);
@@ -54,7 +56,7 @@ export default AuthorProfileContent => {
 
   it("renders profile empty", () => {
     const p = Object.assign({}, props, {
-      data: null,
+      author: null,
       isLoading: false
     });
 
@@ -65,7 +67,7 @@ export default AuthorProfileContent => {
 
   it("renders profile error", () => {
     const p = Object.assign({}, props, {
-      data: null,
+      author: null,
       error: {
         error: "error"
       }
@@ -81,7 +83,7 @@ export default AuthorProfileContent => {
       <AuthorProfileHeader
         onTwitterLinkPress={() => {}}
         onArticlePress={() => {}}
-        {...props.data}
+        {...props.author}
       />
     );
 
@@ -99,7 +101,7 @@ export default AuthorProfileContent => {
       <AuthorProfileContent
         onTwitterLinkPress={() => {}}
         onArticlePress={() => {}}
-        {...props.data}
+        {...props.author}
       />
     );
 

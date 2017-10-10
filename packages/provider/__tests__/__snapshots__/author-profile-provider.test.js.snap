@@ -1,1295 +1,442 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders data 1`] = `
-<RCTScrollView
-  testID="scroll-view"
->
-  <View>
-    <View>
-      <View
-        pointerEvents="box-none"
-        style={
+exports[`returns query result 1`] = `
+Object {
+  "__typename": "Author",
+  "articles": Object {
+    "__typename": "Articles",
+    "count": 24,
+    "list": Array [
+      Object {
+        "__typename": "Article",
+        "content": Array [
           Object {
-            "alignItems": "center",
-            "backgroundColor": "transparent",
-            "paddingBottom": 50,
-          }
-        }
-      >
-        <View
-          accessibilityRole="banner"
-          style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F9F8F3",
-              "flexDirection": "column",
-              "paddingBottom": 50,
-              "width": "100%",
-            }
-          }
-        >
-          <Text
-            accessibilityRole="heading"
-            accessible={true}
-            allowFontScaling={true}
-            aria-level="1"
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
+            "attributes": Object {},
+            "children": Array [
               Object {
-                "color": "#000",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 45,
-                "paddingTop": 32,
-              }
-            }
-            testID="author-name"
-          >
-            Fiona Hamilton
-          </Text>
-          <Text
-            accessibilityRole="heading"
-            accessible={true}
-            allowFontScaling={true}
-            aria-level="2"
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "TimesDigital-RegularSC",
-                "fontSize": 15,
-              }
-            }
-          >
-            legal editor
-          </Text>
-          <Text
-            accessibilityRole="link"
-            accessible={true}
-            allowFontScaling={true}
-            disabled={false}
-            ellipsizeMode="tail"
-            href="https://twitter.com/jdoe"
-            onPress={[Function]}
-            style={
-              Array [
-                Object {
-                  "textDecorationLine": "underline",
+                "attributes": Object {
+                  "value": "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, ",
                 },
-                Object {
-                  "color": "#006699",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 18,
-                  "paddingTop": 16,
-                  "textDecorationLine": "none",
-                },
-              ]
-            }
-          >
-            @
-            jdoe
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
+                "children": Array [],
+                "name": "text",
+              },
               Object {
-                "color": "#333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
-                "lineHeight": 26,
-                "maxWidth": "88%",
-                "paddingBottom": 32,
-                "textAlign": "center",
-              }
-            }
-          >
-            Lorem 
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              disabled={false}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              ipsum
-            </Text>
-             testbr 
-            More text 
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              disabled={false}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontStyle": "italic",
-                }
-              }
-            >
-               last 
-            </Text>
-          </Text>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "alignItems": "stretch",
-            "flexDirection": "row",
-            "justifyContent": "center",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "flex": 1,
-              "marginBottom": 10,
-              "marginLeft": 10,
-              "marginRight": 10,
-              "maxWidth": 800,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Object {
-                "alignItems": "stretch",
-                "flexDirection": "column",
-              }
-            }
-          >
-            <View
-              style={
-                Array [
+                "attributes": Object {},
+                "children": Array [
                   Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 40,
-                    "justifyContent": "space-between",
-                  },
-                  Object {
-                    "justifyContent": "center",
-                  },
-                  null,
-                ]
-              }
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                disabled={false}
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 15,
+                    "attributes": Object {
+                      "value": "The",
                     },
-                  ]
-                }
-              >
-                Showing 1 - 2 of 2 results
-              </Text>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 40,
-                    "justifyContent": "space-between",
+                    "children": Array [],
+                    "name": "text",
                   },
-                  Object {
-                    "borderBottomColor": "#dbdbdb",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
-                    "borderTopWidth": 1,
-                  },
-                ]
-              }
-            >
-              <View />
-              <View />
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        collapsable={undefined}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
+                ],
+                "name": "italic",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "id": "97c64f20-cb67-11e4-a202-50ac5def393a",
+        "label": null,
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+            Symbol(id): "$Article:97c64f20-cb67-11e4-a202-50ac5def393a.leadAsset.crop({\\"ratio\\":\\"16:9\\"})",
+          },
+          "title": "British trio stopped on the way to join Isis",
+          Symbol(id): "$Article:97c64f20-cb67-11e4-a202-50ac5def393a.leadAsset",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-23T23:06:34.000Z",
+        "title": "British trio stopped on the way to join Isis",
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/british-trio-stopped-on-the-way-to-join-isis-57nwljmbn",
+        Symbol(id): "Article:97c64f20-cb67-11e4-a202-50ac5def393a",
+      },
+      Object {
+        "__typename": "Article",
+        "content": Array [],
+        "id": "1f18ebd0-671f-40e0-a190-82dd8af1a294",
+        "label": null,
+        "leadAsset": null,
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-23T23:06:34.000Z",
+        "title": "A blank article with a server rendered component",
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/a-blank-article-with-a-server-rendered-component-d06vmvz08",
+        Symbol(id): "Article:1f18ebd0-671f-40e0-a190-82dd8af1a294",
+      },
+      Object {
+        "__typename": "Article",
+        "content": Array [],
+        "id": "2c18ebd0-671f-40e0-a190-82dd8af1a294",
+        "label": null,
+        "leadAsset": null,
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-23T23:06:34.000Z",
+        "title": "A blank article with a server rendered component",
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/a-blank-article-with-a-server-rendered-component-35pjwxj8n",
+        Symbol(id): "Article:2c18ebd0-671f-40e0-a190-82dd8af1a294",
+      },
+      Object {
+        "__typename": "Article",
+        "content": Array [
           Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  disabled={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                />
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  disabled={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  British trio stopped on the way to join Isis
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  disabled={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                />
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  disabled={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Monday March 23 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        collapsable={undefined}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
-                },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  disabled={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                />
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  disabled={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  British trio stopped on the way to join Isis
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  disabled={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                />
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  disabled={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Monday March 23 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View
-      style={
-        Object {
-          "alignItems": "stretch",
-          "flexDirection": "row",
-          "justifyContent": "center",
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "flex": 1,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "marginTop": 10,
-            "maxWidth": 800,
-          }
-        }
-      >
-        <View
-          onLayout={[Function]}
-          style={
-            Object {
-              "alignItems": "stretch",
-              "flexDirection": "column",
-            }
-          }
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                  "height": 40,
-                  "justifyContent": "space-between",
-                },
-                Object {
-                  "borderBottomColor": "#dbdbdb",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
-                  "borderTopWidth": 1,
-                },
-              ]
-            }
-          >
-            <View />
-            <View />
-          </View>
-        </View>
-      </View>
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`renders data from graphql 1`] = `
-<RCTScrollView
-  testID="scroll-view"
->
-  <View>
-    <View>
-      <View
-        pointerEvents="box-none"
-        style={
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "transparent",
-            "paddingBottom": 50,
-          }
-        }
-      >
-        <View
-          accessibilityRole="banner"
-          style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F9F8F3",
-              "flexDirection": "column",
-              "paddingBottom": 50,
-              "width": "100%",
-            }
-          }
-        >
-          <Text
-            accessibilityRole="heading"
-            accessible={true}
-            allowFontScaling={true}
-            aria-level="1"
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
+            "attributes": Object {},
+            "children": Array [
               Object {
-                "color": "#000",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 45,
-                "paddingTop": 32,
-              }
-            }
-            testID="author-name"
-          >
-            Fiona Hamilton
-          </Text>
-          <Text
-            accessibilityRole="heading"
-            accessible={true}
-            allowFontScaling={true}
-            aria-level="2"
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "TimesDigital-RegularSC",
-                "fontSize": 15,
-              }
-            }
-          >
-            legal editor
-          </Text>
-          <Text
-            accessibilityRole="link"
-            accessible={true}
-            allowFontScaling={true}
-            disabled={false}
-            ellipsizeMode="tail"
-            href="https://twitter.com/jdoe"
-            onPress={[Function]}
-            style={
-              Array [
-                Object {
-                  "textDecorationLine": "underline",
+                "attributes": Object {
+                  "value": "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, ",
                 },
-                Object {
-                  "color": "#006699",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 18,
-                  "paddingTop": 16,
-                  "textDecorationLine": "none",
-                },
-              ]
-            }
-          >
-            @
-            jdoe
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
+                "children": Array [],
+                "name": "text",
+              },
               Object {
-                "color": "#333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
-                "lineHeight": 26,
-                "maxWidth": "88%",
-                "paddingBottom": 32,
-                "textAlign": "center",
-              }
-            }
-          >
-            Lorem 
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              disabled={false}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              ipsum
-            </Text>
-             testbr 
-            More text 
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              disabled={false}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontStyle": "italic",
-                }
-              }
-            >
-               last 
-            </Text>
-          </Text>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "alignItems": "stretch",
-            "flexDirection": "row",
-            "justifyContent": "center",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "flex": 1,
-              "marginBottom": 10,
-              "marginLeft": 10,
-              "marginRight": 10,
-              "maxWidth": 800,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Object {
-                "alignItems": "stretch",
-                "flexDirection": "column",
-              }
-            }
-          >
-            <View
-              style={
-                Array [
+                "attributes": Object {},
+                "children": Array [
                   Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 40,
-                    "justifyContent": "space-between",
-                  },
-                  Object {
-                    "justifyContent": "center",
-                  },
-                  null,
-                ]
-              }
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                disabled={false}
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 15,
+                    "attributes": Object {
+                      "value": "The",
                     },
-                  ]
-                }
-              >
-                Showing 1 - 2 of 2 results
-              </Text>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 40,
-                    "justifyContent": "space-between",
+                    "children": Array [],
+                    "name": "text",
                   },
-                  Object {
-                    "borderBottomColor": "#dbdbdb",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
-                    "borderTopWidth": 1,
-                  },
-                ]
-              }
-            >
-              <View />
-              <View />
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        collapsable={undefined}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
+                ],
+                "name": "italic",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "id": "61143932-6f49-4720-9506-10f32f2eca0d",
+        "label": "Politics",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+            Symbol(id): "$Article:61143932-6f49-4720-9506-10f32f2eca0d.leadAsset.crop({\\"ratio\\":\\"16:9\\"})",
+          },
+          "title": "British trio stopped on the way to join Isis",
+          Symbol(id): "$Article:61143932-6f49-4720-9506-10f32f2eca0d.leadAsset",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-20T23:06:34.000Z",
+        "title": "British trio stopped on the way to join Isis",
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/british-trio-stopped-on-the-way-to-join-isis-6583gb80g",
+        Symbol(id): "Article:61143932-6f49-4720-9506-10f32f2eca0d",
+      },
+      Object {
+        "__typename": "Article",
+        "content": Array [
           Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, ",
                 },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
+                "children": Array [],
+                "name": "text",
+              },
+              Object {
+                "attributes": Object {},
+                "children": Array [
                   Object {
-                    "paddingBottom": 15,
+                    "attributes": Object {
+                      "value": "The",
+                    },
+                    "children": Array [],
+                    "name": "text",
                   },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  disabled={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                />
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  disabled={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  British trio stopped on the way to join Isis
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  disabled={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                />
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  disabled={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Monday March 23 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
+                ],
+                "name": "italic",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "id": "08fc89f8-bbe1-4ba1-9fd3-39607ea9bc49",
+        "label": "Science",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+            Symbol(id): "$Article:08fc89f8-bbe1-4ba1-9fd3-39607ea9bc49.leadAsset.crop({\\"ratio\\":\\"16:9\\"})",
+          },
+          "title": "British trio stopped on the way to join Isis",
+          Symbol(id): "$Article:08fc89f8-bbe1-4ba1-9fd3-39607ea9bc49.leadAsset",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-19T23:06:34.000Z",
+        "title": "British trio stopped on the way to join Isis",
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/british-trio-stopped-on-the-way-to-join-isis-5xm7x7rxt",
+        Symbol(id): "Article:08fc89f8-bbe1-4ba1-9fd3-39607ea9bc49",
+      },
+      Object {
+        "__typename": "Article",
+        "content": Array [
           Object {
-            "backgroundColor": "#dbdbdb",
-            "height": 1,
-            "margin": 10,
-          }
-        }
-      />
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        collapsable={undefined}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, ",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+              Object {
+                "attributes": Object {},
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "The",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "italic",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "id": "d9851f3a-a67f-4249-b16a-1b0cb5bec915",
+        "label": "Science",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+            Symbol(id): "$Article:d9851f3a-a67f-4249-b16a-1b0cb5bec915.leadAsset.crop({\\"ratio\\":\\"16:9\\"})",
+          },
+          "title": "British trio stopped on the way to join Isis",
+          Symbol(id): "$Article:d9851f3a-a67f-4249-b16a-1b0cb5bec915.leadAsset",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-18T23:06:34.000Z",
+        "title": "British trio stopped on the way to join Isis",
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/british-trio-stopped-on-the-way-to-join-isis-5wrj5sc7p",
+        Symbol(id): "Article:d9851f3a-a67f-4249-b16a-1b0cb5bec915",
+      },
+      Object {
+        "__typename": "Article",
+        "content": Array [
           Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            }
-          }
-        >
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flexDirection": "column",
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "GAY and lesbian couples and those who have children using IVF treatment or a surrogate make better parents than heterosexual couples, according",
                 },
-                null,
-                undefined,
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 15,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-              >
-                <Image
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "height": 1,
-                        "width": 750,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  null,
-                ]
-              }
-            >
-              <View
-                style={Object {}}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  disabled={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "letterSpacing": 1,
-                      "marginBottom": 2,
-                    }
-                  }
-                />
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  disabled={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 22,
-                      "marginBottom": 8,
-                    }
-                  }
-                >
-                  British trio stopped on the way to join Isis
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  disabled={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                />
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  disabled={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Monday March 23 2015
-                  , The Times
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View
-      style={
-        Object {
-          "alignItems": "stretch",
-          "flexDirection": "row",
-          "justifyContent": "center",
-        }
-      }
-    >
-      <View
-        style={
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "id": "be9dfdb0-a21e-45d5-93a5-76fa6d748b7b",
+        "label": "Health",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/10a7a0fb2847e9187b442e405f648f6f3e0602e8?crop=520%2C347%2C0%2C173",
+            Symbol(id): "$Article:be9dfdb0-a21e-45d5-93a5-76fa6d748b7b.leadAsset.crop({\\"ratio\\":\\"16:9\\"})",
+          },
+          "title": "Gay and IVF couples ‘better at raising children’",
+          Symbol(id): "$Article:be9dfdb0-a21e-45d5-93a5-76fa6d748b7b.leadAsset",
+        },
+        "publicationName": "SUNDAYTIMES",
+        "publishedTime": "2015-03-17T23:37:49.000Z",
+        "title": "Gay and IVF couples ‘better at raising children’",
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/gay-and-ivf-couples-better-at-raising-children-zzngv7vz3",
+        Symbol(id): "Article:be9dfdb0-a21e-45d5-93a5-76fa6d748b7b",
+      },
+      Object {
+        "__typename": "Article",
+        "content": Array [
           Object {
-            "flex": 1,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "marginTop": 10,
-            "maxWidth": 800,
-          }
-        }
-      >
-        <View
-          onLayout={[Function]}
-          style={
-            Object {
-              "alignItems": "stretch",
-              "flexDirection": "column",
-            }
-          }
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                  "height": 40,
-                  "justifyContent": "space-between",
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, ",
                 },
-                Object {
-                  "borderBottomColor": "#dbdbdb",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
-                  "borderTopWidth": 1,
+                "children": Array [],
+                "name": "text",
+              },
+              Object {
+                "attributes": Object {},
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "The",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "italic",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "id": "6674e762-f171-4885-820d-ea067ec66a74",
+        "label": "Science",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+            Symbol(id): "$Article:6674e762-f171-4885-820d-ea067ec66a74.leadAsset.crop({\\"ratio\\":\\"16:9\\"})",
+          },
+          "title": "British trio stopped on the way to join Isis",
+          Symbol(id): "$Article:6674e762-f171-4885-820d-ea067ec66a74.leadAsset",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-17T23:06:34.000Z",
+        "title": "British trio stopped on the way to join Isis",
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/british-trio-stopped-on-the-way-to-join-isis-gpqs3t7fz",
+        Symbol(id): "Article:6674e762-f171-4885-820d-ea067ec66a74",
+      },
+      Object {
+        "__typename": "Article",
+        "content": Array [
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to",
                 },
-              ]
-            }
-          >
-            <View />
-            <View />
-          </View>
-        </View>
-      </View>
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`renders loading state 1`] = `
-<View
-  style={
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "id": "89bd6c18-ccf9-11e4-81dd-064fe933cd40",
+        "label": "Environment",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+            Symbol(id): "$Article:89bd6c18-ccf9-11e4-81dd-064fe933cd40.leadAsset.crop({\\"ratio\\":\\"16:9\\"})",
+          },
+          "title": "Fourth Briton is seized trying to join Isis",
+          Symbol(id): "$Article:89bd6c18-ccf9-11e4-81dd-064fe933cd40.leadAsset",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-17T23:01:44.000Z",
+        "title": "Fourth Briton is seized trying to join Isis",
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/fourth-briton-is-seized-trying-to-join-isis-6nxtx6kg3",
+        Symbol(id): "Article:89bd6c18-ccf9-11e4-81dd-064fe933cd40",
+      },
+      Object {
+        "__typename": "Article",
+        "content": Array [
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "id": "88152206-eaaa-4c19-940e-a1a2a9b80b62",
+        "label": "Politics",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+            Symbol(id): "$Article:88152206-eaaa-4c19-940e-a1a2a9b80b62.leadAsset.crop({\\"ratio\\":\\"16:9\\"})",
+          },
+          "title": "Fourth Briton is seized trying to join Isis",
+          Symbol(id): "$Article:88152206-eaaa-4c19-940e-a1a2a9b80b62.leadAsset",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-17T23:01:44.000Z",
+        "title": "Fourth Briton is seized trying to join Isis",
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/fourth-briton-is-seized-trying-to-join-isis-svbdhdcvx",
+        Symbol(id): "Article:88152206-eaaa-4c19-940e-a1a2a9b80b62",
+      },
+    ],
+    Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"fiona-hamilton\\"}).articles",
+  },
+  "biography": Array [
     Object {
-      "alignItems": "center",
-      "flex": 1,
-      "flexBasis": "100%",
-      "justifyContent": "center",
-    }
-  }
->
-  <ActivityIndicator
-    animating={true}
-    color="#999999"
-    hidesWhenStopped={true}
-    size="large"
-  />
-</View>
+      "attributes": Object {
+        "value": "Lorem ",
+      },
+      "children": Array [],
+      "name": "text",
+    },
+    Object {
+      "attributes": Object {},
+      "children": Array [
+        Object {
+          "attributes": Object {
+            "value": "ipsum",
+          },
+          "children": Array [],
+          "name": "text",
+        },
+      ],
+      "name": "bold",
+    },
+    Object {
+      "attributes": Object {
+        "value": " testbr ",
+      },
+      "children": Array [],
+      "name": "text",
+    },
+    Object {
+      "attributes": Object {},
+      "children": Array [],
+      "name": "break",
+    },
+    Object {
+      "attributes": Object {
+        "value": "More text ",
+      },
+      "children": Array [],
+      "name": "text",
+    },
+    Object {
+      "attributes": Object {},
+      "children": Array [
+        Object {
+          "attributes": Object {
+            "value": " last ",
+          },
+          "children": Array [],
+          "name": "text",
+        },
+      ],
+      "name": "italic",
+    },
+  ],
+  "image": null,
+  "jobTitle": "Legal Editor",
+  "name": "Fiona Hamilton",
+  "twitter": "jdoe",
+  Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"fiona-hamilton\\"})",
+}
 `;

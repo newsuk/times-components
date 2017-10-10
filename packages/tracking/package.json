@@ -1,0 +1,76 @@
+{
+  "name": "@times-components/tracking",
+  "version": "0.0.2",
+  "main": "tracking",
+  "scripts": {
+    "flow": "node_modules/flow-bin/cli.js",
+    "test:watch": "jest --bail --verbose --watchAll",
+    "test": "jest --bail --ci --coverage",
+    "prettier:diff": "prettier --list-different '**/*.js'",
+    "lint": "eslint . && npm run prettier:diff"
+  },
+  "jest": {
+    "preset": "react-native",
+    "rootDir": "../../",
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/tracking/**.test.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "keywords": [
+    "react-native-web",
+    "react",
+    "native",
+    "web",
+    "tracking",
+    "component"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "6.24.1",
+    "babel-loader": "7.0.0",
+    "babel-plugin-transform-react-remove-prop-types": "0.4.5",
+    "babel-preset-flow": "6.23.0",
+    "babel-preset-react-native": "1.9.2",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "15.0.1",
+    "eslint-config-prettier": "2.3.0",
+    "eslint-plugin-import": "2.6.1",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-react": "7.1.0",
+    "flow-bin": "0.42.0",
+    "jest": "21.2.1",
+    "prettier": "1.7.0",
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "react-native": "0.49.0",
+    "react-test-renderer": "16.0.0",
+    "webpack": "3.3.0"
+  },
+  "dependencies": {
+    "hoist-non-react-statics": "2.3.1",
+    "lodash.get": "4.4.2",
+    "prop-types": "15.6.0",
+    "react-display-name": "0.2.3",
+    "react-native-web": "0.1.3"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16",
+    "react-native": ">=0.49"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
