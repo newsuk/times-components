@@ -16,7 +16,7 @@ const articleFixtureNoLabelNoFlagsNoStandFirst = require("../fixtures/no-label-n
 
 module.exports = () => {
   it("renders activity indicator ", () => {
-    const tree = renderer.create(<Article isLoading={true} />).toJSON();
+    const tree = renderer.create(<Article isLoading="true" />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 

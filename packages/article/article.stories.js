@@ -3,6 +3,14 @@
 import { storiesOf } from "@storybook/react-native";
 import React from "react";
 import { Platform } from "react-native";
+
+import { ArticleProvider } from "@times-components/provider";
+import { ApolloClient, IntrospectionFragmentMatcher } from "react-apollo";
+import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { addTypenameToDocument } from "apollo-client";
+import { query as articleQuery } from "@times-components/provider/article-provider";
+
 import Article from "./article";
 
 const fullArticleTypenameFixture = require("./fixtures/full-article-typename.json");
@@ -15,13 +23,6 @@ const articleFixtureNoStandfirstNoLabel = require("./fixtures/no-standfirst-no-l
 const articleFixtureNoStandfirstNoFlags = require("./fixtures/no-standfirst-no-flags.json");
 const articleFixtureNoLabelNoFlags = require("./fixtures/no-label-no-flags.json");
 const articleFixtureNoLabelNoFlagsNoStandFirst = require("./fixtures/no-label-no-flags-no-standfirst.json");
-
-import { ArticleProvider } from "@times-components/provider";
-import { ApolloClient, IntrospectionFragmentMatcher } from "react-apollo";
-import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { addTypenameToDocument } from "apollo-client";
-import { query as articleQuery } from "@times-components/provider/article-provider";
 
 const mocks = [
   {

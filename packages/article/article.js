@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Platform,
-  Text,
-  View,
-  ListView,
-  ActivityIndicator
-} from "react-native";
+import { Platform, Text, View, ListView } from "react-native";
 import PropTypes from "prop-types";
 import { renderTrees } from "@times-components/markup";
 import Image from "@times-components/image";
@@ -126,7 +120,7 @@ class ArticlePage extends React.Component {
   }
 
   render() {
-    const { error, isLoading, article } = this.props;
+    const { error, isLoading } = this.props;
 
     if (error) {
       return <ArticleError {...error} />;
