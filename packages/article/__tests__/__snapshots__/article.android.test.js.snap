@@ -20,6 +20,27 @@ exports[`Article test on android renders activity indicator  1`] = `
 </View>
 `;
 
+exports[`Article test on android renders an error 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    An error ocurred
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    {
+      "message": "An example error."
+    }
+  </Text>
+</View>
+`;
+
 exports[`Article test on android renders article no flags 1`] = `
 <RCTScrollView
   dataSource={

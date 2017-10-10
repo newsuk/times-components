@@ -4,12 +4,6 @@ const borderColor = "#d0cece";
 const borderWidth = StyleSheet.hairlineWidth;
 
 const globalStyle = StyleSheet.create({
-  container: {
-    alignItems: "center",
-    flex: 1,
-    flexBasis: "100%",
-    justifyContent: "center"
-  },
   articleMainContentRow: {
     paddingLeft: 10,
     paddingRight: 10

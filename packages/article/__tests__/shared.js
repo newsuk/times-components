@@ -16,58 +16,69 @@ const articleFixtureNoLabelNoFlagsNoStandFirst = require("../fixtures/no-label-n
 
 module.exports = () => {
   it("renders activity indicator ", () => {
-    const tree = renderer.create(<Article data={{ loading: true }} />).toJSON();
+    const tree = renderer.create(<Article isLoading={true} />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders an error", () => {
+    const props = {
+      error: { message: "An example error." }
+    };
+
+    const tree = renderer.create(<Article {...props} />);
     expect(tree).toMatchSnapshot();
   });
 
   it("renders full article", () => {
-    const tree = renderer.create(<Article {...fullArticleFixture} />).toJSON();
+    const tree = renderer
+      .create(<Article {...fullArticleFixture.data} />)
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   it("renders article no flags", () => {
     const tree = renderer
-      .create(<Article {...articleFixtureNoFlags} />)
+      .create(<Article {...articleFixtureNoFlags.data} />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   it("renders article no label", () => {
     const tree = renderer
-      .create(<Article {...articleFixtureNoLabel} />)
+      .create(<Article {...articleFixtureNoLabel.data} />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   it("renders article no standfirst", () => {
     const tree = renderer
-      .create(<Article {...articleFixtureNoStandfirst} />)
+      .create(<Article {...articleFixtureNoStandfirst.data} />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   it("renders article no standfirst no flags", () => {
     const tree = renderer
-      .create(<Article {...articleFixtureNoStandfirstNoFlags} />)
+      .create(<Article {...articleFixtureNoStandfirstNoFlags.data} />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   it("renders article no standfirst no label", () => {
     const tree = renderer
-      .create(<Article {...articleFixtureNoStandfirstNoLabel} />)
+      .create(<Article {...articleFixtureNoStandfirstNoLabel.data} />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
   it("renders article no label no flags", () => {
     const tree = renderer
-      .create(<Article {...articleFixtureNoLabelNoFlags} />)
+      .create(<Article {...articleFixtureNoLabelNoFlags.data} />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
   it("renders article no label no flags no standfirst", () => {
     const tree = renderer
-      .create(<Article {...articleFixtureNoLabelNoFlagsNoStandFirst} />)
+      .create(<Article {...articleFixtureNoLabelNoFlagsNoStandFirst.data} />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

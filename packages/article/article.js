@@ -12,6 +12,9 @@ import Image from "@times-components/image";
 import ArticleImage from "@times-components/article-image";
 import { AdComposer } from "@times-components/ad";
 
+import ArticleError from "./article-error";
+import ArticleLoading from "./article-loading";
+
 import listViewDataHelper from "./data-helper";
 import styles from "./styles/article-style";
 import ArticleHeader from "./article-header";
@@ -99,12 +102,13 @@ class ArticlePage extends React.Component {
 
     return null;
   }
+
   constructor(props) {
     super(props);
 
-    if (props.data.article) {
+    if (props.article && !props.isLoading && !props.error) {
       this.state = {
-        dataSource: ds.cloneWithRows(listViewDataHelper(props.data.article))
+        dataSource: ds.cloneWithRows(listViewDataHelper(props.article))
       };
     } else {
       this.state = {
@@ -114,20 +118,22 @@ class ArticlePage extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (!nextProps.isLoading && nextProps.data) {
+    if (!nextProps.isLoading && !nextProps.error) {
       this.setState({
-        dataSource: ds.cloneWithRows(listViewDataHelper(nextProps.data.article))
+        dataSource: ds.cloneWithRows(listViewDataHelper(nextProps.article))
       });
     }
   }
 
   render() {
-    if (this.props.isLoading) {
-      return (
-        <View style={styles.container}>
-          <ActivityIndicator size={"large"} />
-        </View>
-      );
+    const { error, isLoading, article } = this.props;
+
+    if (error) {
+      return <ArticleError {...error} />;
+    }
+
+    if (isLoading) {
+      return <ArticleLoading />;
     }
 
     const ArticleListView = (
@@ -149,23 +155,21 @@ class ArticlePage extends React.Component {
 }
 
 ArticlePage.propTypes = {
-  data: PropTypes.shape({
-    article: PropTypes.shape({
-      ...articleHeaderPropTypes,
-      ...articleMetaPropTypes
-    })
+  article: PropTypes.shape({
+    ...articleHeaderPropTypes,
+    ...articleMetaPropTypes
   }),
-  isLoading: PropTypes.bool
+  isLoading: PropTypes.bool,
+  error: PropTypes.shape()
 };
 
 ArticlePage.defaultProps = {
-  data: {
-    article: {
-      ...articleHeaderDefaultPropTypes,
-      ...articleMetaDefaultPropTypes
-    }
+  article: {
+    ...articleHeaderDefaultPropTypes,
+    ...articleMetaDefaultPropTypes
   },
-  isLoading: true
+  isLoading: true,
+  error: null
 };
 
 export default ArticlePage;
