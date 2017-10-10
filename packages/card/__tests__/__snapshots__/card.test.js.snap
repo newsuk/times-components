@@ -182,8 +182,9 @@ exports[`renders vertical by default 1`] = `
           Object {
             "color": "#696969",
             "flexWrap": "wrap",
-            "fontFamily": "TimesDigitalW04",
+            "fontFamily": "TimesDigitalW04-Regular",
             "fontSize": 14,
+            "letterSpacing": 0.35,
             "lineHeight": 20,
             "marginBottom": 10,
           }
@@ -289,8 +290,9 @@ exports[`renders without image 1`] = `
           Object {
             "color": "#696969",
             "flexWrap": "wrap",
-            "fontFamily": "TimesDigitalW04",
+            "fontFamily": "TimesDigitalW04-Regular",
             "fontSize": 14,
+            "letterSpacing": 0.35,
             "lineHeight": 20,
             "marginBottom": 10,
           }
@@ -396,8 +398,9 @@ exports[`renders without image url 1`] = `
           Object {
             "color": "#696969",
             "flexWrap": "wrap",
-            "fontFamily": "TimesDigitalW04",
+            "fontFamily": "TimesDigitalW04-Regular",
             "fontSize": 14,
+            "letterSpacing": 0.35,
             "lineHeight": 20,
             "marginBottom": 10,
           }
