@@ -5,16 +5,19 @@ import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.res.Configuration;
 import android.graphics.Color;
-import android.support.annotation.NonNull;
 import android.util.Log;
-import android.view.ViewParent;
 import android.widget.FrameLayout;
 
 import com.brightcove.player.event.Event;
+import com.brightcove.player.event.EventListener;
+import com.brightcove.player.event.EventType;
 import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.Dynamic;
 import com.facebook.react.bridge.ReactContext;
+import com.facebook.react.bridge.ReadableType;
 import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.uimanager.ThemedReactContext;
+import com.facebook.react.uimanager.LayoutShadowNode;
+import com.facebook.react.uimanager.PixelUtil;
 import com.facebook.react.uimanager.events.RCTEventEmitter;
 
 public class RNTBrightcoveView extends FrameLayout {
@@ -26,13 +29,17 @@ public class RNTBrightcoveView extends FrameLayout {
     private Boolean mAutoplay;
     private Boolean mHideFullScreenButton;
     private BrightcovePlayerView mPlayerView;
-    private Context mContext;
+    private LayoutShadowNode mLayout;
 
     private float mSavedPlayheadPosition = 0;
 
-    public RNTBrightcoveView(final ThemedReactContext context) {
+    private float origWidth;
+    private float origHeight;
+
+
+    public RNTBrightcoveView(final Context context, final LayoutShadowNode layout) {
         super(context);
-        mContext = context;
+        mLayout = layout;
         this.setBackgroundColor(Color.BLACK);
     }
 
@@ -103,6 +110,58 @@ public class RNTBrightcoveView extends FrameLayout {
 
 
             mPlayerView = new BrightcovePlayerView(getActivity());
+
+            mPlayerView.getEventEmitter().on(EventType.ENTER_FULL_SCREEN, new EventListener() {
+                @Override
+                public void processEvent(Event event) {
+                    origWidth = PixelUtil.toDIPFromPixel(mLayout.getStyleWidth().value);
+                    origHeight = PixelUtil.toDIPFromPixel(mLayout.getStyleHeight().value);
+
+
+                    Dynamic percent100 = new ExtendedDynamic() {
+                        @Override
+                        public String asString() {
+                            return "100%";
+                        }
+
+                        @Override
+                        public ReadableType getType() {
+                            return ReadableType.String;
+                        }
+                    };
+                    mLayout.setWidth(percent100);
+                    mLayout.setHeight(percent100);
+                }
+            });
+
+            mPlayerView.getEventEmitter().on(EventType.EXIT_FULL_SCREEN, new EventListener() {
+                @Override
+                public void processEvent(Event event) {
+
+                    mLayout.setWidth(new ExtendedDynamic() {
+                        @Override
+                        public double asDouble() {
+                            return origWidth;
+                        }
+
+                        @Override
+                        public ReadableType getType() {
+                            return ReadableType.Number;
+                        }
+                    });
+                    mLayout.setHeight(new ExtendedDynamic() {
+                        @Override
+                        public double asDouble() {
+                            return origHeight;
+                        }
+
+                        @Override
+                        public ReadableType getType() {
+                            return ReadableType.Number;
+                        }
+                    });
+                }
+            });
 
             addView(mPlayerView);
 

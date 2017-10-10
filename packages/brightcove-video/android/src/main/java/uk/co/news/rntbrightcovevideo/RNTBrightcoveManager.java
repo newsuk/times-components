@@ -1,10 +1,12 @@
 package uk.co.news.rntbrightcovevideo;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.ContextWrapper;
 import android.util.Log;
 
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.common.MapBuilder;
-import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
 
@@ -12,7 +14,7 @@ import java.util.Map;
 
 import javax.annotation.Nullable;
 
-public class RNTBrightcoveManager extends SimpleViewManager<RNTBrightcoveView> {
+public class RNTBrightcoveManager extends NotSoSimpleViewManager<RNTBrightcoveView> {
 
     public static final String TAG = RNTBrightcoveManager.class.getSimpleName();
     public static final String REACT_CLASS = "RNTBrightcove";
@@ -78,6 +80,17 @@ public class RNTBrightcoveManager extends SimpleViewManager<RNTBrightcoveView> {
 
     @Override
     public RNTBrightcoveView createViewInstance(ThemedReactContext context) {
-        return new RNTBrightcoveView(context);
+        return new RNTBrightcoveView(getActivity(context), getLayout());
+    }
+
+    private Activity getActivity(Context context) {
+
+        while (context instanceof ContextWrapper) {
+            if (context instanceof Activity) {
+                return (Activity)context;
+            }
+            context = ((ContextWrapper)context).getBaseContext();
+        }
+        return null;
     }
 }
