@@ -64,9 +64,27 @@ describe("TrackEvents", () => {
     const addTracking = () =>
       withTrackEvents(TestComponent, {
         analyticsEvents: [
-          { eventName: "event1", actionName: "event1ed1" },
-          { eventName: "event1", actionName: "event1ed2" }
+          { eventName: "event1", actionName: "event1ed" },
+          { eventName: "event1", actionName: "event1ed" }
         ]
+      });
+
+    expect(addTracking).toThrowErrorMatchingSnapshot();
+  });
+
+  it("raises error when action name is not set", () => {
+    const addTracking = () =>
+      withTrackEvents(TestComponent, {
+        analyticsEvents: [{ eventName: "event1" }]
+      });
+
+    expect(addTracking).toThrowErrorMatchingSnapshot();
+  });
+
+  it("raises error when event name is not set", () => {
+    const addTracking = () =>
+      withTrackEvents(TestComponent, {
+        analyticsEvents: [{ actionName: "event1ed" }]
       });
 
     expect(addTracking).toThrowErrorMatchingSnapshot();

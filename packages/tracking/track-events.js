@@ -6,7 +6,17 @@ import resolveAttrs from "./resolve-attrs";
 
 const validateEvents = events => {
   const nameMap = new Set();
-  events.forEach(e => {
+  events.forEach((e, i) => {
+    if (e.eventName === undefined) {
+      throw new Error(
+        `Missing eventName of analyticsEvents[${i}] when calling withTrackEvents()`
+      );
+    }
+    if (e.actionName === undefined) {
+      throw new Error(
+        `Missing eventName of analyticsEvents[${i}] when calling withTrackEvents()`
+      );
+    }
     if (nameMap.has(e.eventName)) {
       throw new Error(
         `Event ${e.eventName} was tracked multiple times when calling withTrackEvents()`
