@@ -1,8 +1,9 @@
 import React from "react";
 import { StyleSheet, Text, View, Platform } from "react-native";
 import PropTypes from "prop-types";
-import { TextLink } from "@times-components/link";
+import Link from "@times-components/link";
 import withPageState from "./pagination-wrapper";
+import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
 
 const styles = StyleSheet.create({
   absolute: {
@@ -108,27 +109,31 @@ class Pagination extends React.Component {
     const startResult = (page - 1) * pageSize + 1;
     const finalResult = Math.min(count, page * pageSize);
     const message = `Showing ${startResult} - ${finalResult} of ${count} results`;
+    const previousLabel = this.state.absolutePosition
+      ? "Previous Page"
+      : "Previous";
+    const nextLabel = this.state.absolutePosition ? "Next Page" : "Next";
 
     const prevComponent =
       startResult > pageSize ? (
-        <TextLink
+        <Link
           style={styles.arrow}
           onPress={(...params) => onPrev(page - 1, ...params)}
           url={generatePageLink(page - 1)}
         >
-          {"< Previous"}
-        </TextLink>
+          <PreviousPageIcon label={previousLabel} />
+        </Link>
       ) : null;
 
     const nextComponent =
       finalResult < count ? (
-        <TextLink
+        <Link
           style={styles.arrow}
           onPress={(...params) => onNext(page + 1, ...params)}
           url={generatePageLink(page + 1)}
         >
-          {"Next >"}
-        </TextLink>
+          <NextPageIcon label={nextLabel} />
+        </Link>
       ) : null;
 
     const messageComponent = !hideResults ? (
@@ -156,7 +161,7 @@ class Pagination extends React.Component {
 }
 
 Pagination.propTypes = {
-  count: PropTypes.number.isRequired,
+  count: PropTypes.number,
   generatePageLink: PropTypes.func,
   onNext: PropTypes.func,
   onPrev: PropTypes.func,
@@ -166,6 +171,7 @@ Pagination.propTypes = {
 };
 
 Pagination.defaultProps = {
+  count: 0,
   generatePageLink: page => `./${page}`,
   onNext: () => {},
   onPrev: () => {},

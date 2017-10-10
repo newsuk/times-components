@@ -1,0 +1,212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`returns query result 1`] = `
+Object {
+  "__typename": "Article",
+  "byline": Array [],
+  "content": Array [
+    Object {
+      "attributes": Object {},
+      "children": Array [
+        Object {
+          "attributes": Object {
+            "value": "Tony Blair’s main contribution to Middle East peace as the Quartet’s special envoy was the idea that prosperity in the Palestinian territories would help. It was never much more than an idea.",
+          },
+          "children": Array [],
+          "name": "text",
+        },
+      ],
+      "name": "paragraph",
+    },
+    Object {
+      "attributes": Object {},
+      "children": Array [
+        Object {
+          "attributes": Object {
+            "value": "His own prosperity as a result of his broad web of post prime ministerial business interests — including in the Middle East — is not in doubt.",
+          },
+          "children": Array [],
+          "name": "text",
+        },
+      ],
+      "name": "paragraph",
+    },
+    Object {
+      "attributes": Object {},
+      "children": Array [
+        Object {
+          "attributes": Object {
+            "value": "As it is confirmed that Mr Blair’s most controversial role since leaving No 10 is changing, leading figures in the region and Washington are breaking cover to say what they have been too polite to say until now. He has achieved precious little in the role.",
+          },
+          "children": Array [],
+          "name": "text",
+        },
+      ],
+      "name": "paragraph",
+    },
+    Object {
+      "attributes": Object {
+        "display": "secondary",
+        "id": "05fccd35-d872-40a0-b33c-07470d2048dd",
+      },
+      "children": Array [],
+      "name": "interactive",
+    },
+    Object {
+      "attributes": Object {},
+      "children": Array [
+        Object {
+          "attributes": Object {
+            "value": "He thrust himself into the peace process in 2007 to put his stature to good use and, surely, to assuage his conscience after the Iraq war. Eight years on, peace between Israel and Palestine is more remote than ever and he cuts a fringe figure in negotiations mediated by the US.",
+          },
+          "children": Array [],
+          "name": "text",
+        },
+      ],
+      "name": "paragraph",
+    },
+    Object {
+      "attributes": Object {},
+      "children": Array [
+        Object {
+          "attributes": Object {
+            "value": "Mr Blair’s office says that he spends a week a month in Jerusalem. In practice nowadays, sources say, he tends to arrive on a Monday and leave three days later. He has lobbied hard for Palestinian development projects but has never enjoyed the Palesintians’ trust because of his role in the Iraq conflict and his perceived closeness to George W Bush’s administration.",
+          },
+          "children": Array [],
+          "name": "text",
+        },
+      ],
+      "name": "paragraph",
+    },
+    Object {
+      "attributes": Object {},
+      "children": Array [],
+      "name": "ad",
+    },
+    Object {
+      "attributes": Object {},
+      "children": Array [
+        Object {
+          "attributes": Object {
+            "value": "Worse, his pet projects have too often been tarnished with the appearance of potential conflicts of interest.",
+          },
+          "children": Array [],
+          "name": "text",
+        },
+      ],
+      "name": "paragraph",
+    },
+    Object {
+      "attributes": Object {},
+      "children": Array [
+        Object {
+          "attributes": Object {
+            "value": "Handed the Quartet role on the day he left No 10, Mr Blair was within six months named to the board of JP Morgan Chase. The American bank was later an adviser on a mobile telecommunications project that he promoted as essential to the West Bank’s economic infrastructure. He was probably right. The trouble was that no one could be sure if they were talking to Mr Blair the peace envoy, or Mr Blair the globe-trotting tycoon.",
+          },
+          "children": Array [],
+          "name": "text",
+        },
+      ],
+      "name": "paragraph",
+    },
+    Object {
+      "attributes": Object {
+        "caption": "All the latest stories in culture and books.",
+        "credits": "",
+        "display": "secondary",
+        "ratio": "3:2",
+        "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/75af7a1e03f4d1b4f337969a29f9303047b81c78.png?crop=720%2C480%2C140%2C0",
+      },
+      "children": Array [],
+      "name": "image",
+    },
+    Object {
+      "attributes": Object {},
+      "children": Array [
+        Object {
+          "attributes": Object {
+            "value": "One American businessman said to have been close to him told the authors of the recent exposé ",
+          },
+          "children": Array [],
+          "name": "text",
+        },
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "Blair Inc",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "italic",
+        },
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": " ",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "italic",
+            },
+          ],
+          "name": "bold",
+        },
+        Object {
+          "attributes": Object {
+            "value": "there was “no evidence he’s ever done anything positive” in his work for the Quartet. There is, however, plenty of evidence that his contacts in the regime and around the world have combined to enrich him mightily. A single deal with the PetroSaudi energy group is said to have been worth £41,000 a month.",
+          },
+          "children": Array [],
+          "name": "text",
+        },
+      ],
+      "name": "paragraph",
+    },
+    Object {
+      "attributes": Object {},
+      "children": Array [
+        Object {
+          "attributes": Object {
+            "value": "When former western ambassadors to Middle Eastern countries discuss ways of removing Mr Blair from the scene, as they have, it is clear that what influence he may once have promised has come to very little. This experiment has failed for everyone but Mr Blair.",
+          },
+          "children": Array [],
+          "name": "text",
+        },
+      ],
+      "name": "paragraph",
+    },
+  ],
+  "flags": Array [],
+  "id": "3107c018-cb60-11e4-81dd-064fe933cd41",
+  "label": null,
+  "leadAsset": Object {
+    "__typename": "Image",
+    "caption": null,
+    "credits": null,
+    "crop": Object {
+      "__typename": "Crop",
+      "ratio": "16:9",
+      "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C439%2C0%2C40",
+      Symbol(id): "$Image:3a599303-239f-47c5-a52f-75e37d4674ae.crop({\\"ratio\\":\\"16:9\\"})",
+    },
+    "id": "3a599303-239f-47c5-a52f-75e37d4674ae",
+    "title": "Clash of interests tarnished the project",
+    Symbol(id): "Image:3a599303-239f-47c5-a52f-75e37d4674ae",
+  },
+  "publicationName": "TIMES",
+  "publishedTime": "2015-03-23T22:11:25.000Z",
+  "standfirst": null,
+  "title": "Clash of interests tarnished the project",
+  Symbol(id): "Article:3107c018-cb60-11e4-81dd-064fe933cd41",
+}
+`;

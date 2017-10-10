@@ -1,7 +1,8 @@
 {
   "name": "times-components",
   "version": "0.0.1",
-  "description": "A collection of presentational components for The Times and Sunday Times",
+  "description":
+    "A collection of presentational components for The Times and Sunday Times",
   "main": "index.js",
   "engines": {
     "node": ">=8.0.0",
@@ -21,7 +22,8 @@
     "prestorybook": "npm run fetch-fonts && npm run storybook:build-vendor",
     "storybook": "start-storybook -p 9001 -c .storybook -s ./dist/public",
     "prestorybook:build": "npm run prestorybook",
-    "storybook:build-vendor": "webpack --config ./.storybook/vendor.webpack.config.js",
+    "storybook:build-vendor":
+      "webpack --config ./.storybook/vendor.webpack.config.js",
     "storybook:build": "build-storybook -c .storybook -s ./dist/public",
     "storybook:publish": "./lib/publish_storybook.sh",
     "prestorybook-native": "rnstl && node ./lib/fetch-fonts",
@@ -32,17 +34,17 @@
     "android": "react-native run-android",
     "prettier:diff": "prettier --list-different 'packages/**/*.js'",
     "fmt": "prettier --write 'packages/**/*.js'",
-    "packages:publish": "lerna publish --conventional-commits --yes --concurrency=1 --exact",
-    "packages:publish-dry-run": "npm run packages:publish -- --skip-git --skip-npm",
+    "packages:publish":
+      "lerna publish --conventional-commits --yes --concurrency=1 --exact",
+    "packages:publish-dry-run":
+      "npm run packages:publish -- --skip-git --skip-npm",
     "update-deps": "lerna bootstrap --hoist --npm-client=yarn --concurrency=1",
     "postinstall": "npm run update-deps --silent",
     "fructose-app": "export CWD=$(pwd) && export FRC=$CWD/.fructose && react-native start --projectRoots $CWD,$FRC --resetCache"
   },
   "jest": {
     "preset": "react-native",
-    "testPathIgnorePatterns": [
-      "<rootDir>/node_modules/"
-    ],
+    "testPathIgnorePatterns": ["<rootDir>/node_modules/"],
     "transformIgnorePatterns": [
       "node_modules/(?!react-native|react-navigation|@times-components)",
       "packages/?!author-profile"
@@ -50,9 +52,7 @@
   },
   "config": {
     "react-native-storybook-loader": {
-      "searchDir": [
-        "./packages"
-      ],
+      "searchDir": ["./packages"],
       "pattern": "**!(node_modules)/*.stories.js",
       "outputFile": "./.storybook.native/story-loader.js"
     }
@@ -60,7 +60,8 @@
   "detox": {
     "configurations": {
       "ios.sim.debug": {
-        "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/storybooknative.app",
+        "binaryPath":
+          "ios/build/Build/Products/Debug-iphonesimulator/storybooknative.app",
         "type": "ios.simulator",
         "name": "iPhone 7"
       }
@@ -70,11 +71,7 @@
     "type": "git",
     "url": "git+https://github.com/newsuk/times-components.git"
   },
-  "keywords": [
-    "react",
-    "native",
-    "web"
-  ],
+  "keywords": ["react", "native", "web"],
   "author": "News UK & Ireland Ltd",
   "license": "BSD-3-Clause",
   "bugs": {
@@ -82,9 +79,9 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@storybook/addon-actions": "3.2.6",
-    "@storybook/react": "3.2.6",
-    "@storybook/react-native": "3.2.6",
+    "@storybook/addon-actions": "3.2.11",
+    "@storybook/react": "3.2.11",
+    "@storybook/react-native": "3.2.11",
     "@times-components/fructose": "2.2.1",
     "coveralls": "2.13.1",
     "chromeless":"1.3.0",

@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.17.2"></a>
+## [0.17.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.17.1...@times-components/author-profile@0.17.2) (2017-10-09)
+
+
+
+
+<a name="0.17.1"></a>
+## [0.17.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.17.0...@times-components/author-profile@0.17.1) (2017-10-09)
+
+
+
+
+<a name="0.17.0"></a>
+# [0.17.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.16.3...@times-components/author-profile@0.17.0) (2017-10-06)
+
+
+### Bug Fixes
+
+* react-apollo version ([87a4176](https://github.com/newsuk/times-components/commit/87a4176))
+
+
+### Features
+
+* use funcs as children ([8892564](https://github.com/newsuk/times-components/commit/8892564))
+
+
+
+
 <a name="0.16.3"></a>
 ## [0.16.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.16.2...@times-components/author-profile@0.16.3) (2017-10-05)
 

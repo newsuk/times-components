@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.1"></a>
+## [0.11.1](https://github.com/newsuk/times-components/compare/@times-components/provider@0.11.0...@times-components/provider@0.11.1) (2017-10-09)
+
+
+
+
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.10.0...@times-components/provider@0.11.0) (2017-10-09)
+
+
+### Features
+
+* article provider ([#278](https://github.com/newsuk/times-components/issues/278)) ([c43ea39](https://github.com/newsuk/times-components/commit/c43ea39))
+
+
+
+
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.9.3...@times-components/provider@0.10.0) (2017-10-06)
+
+
+### Features
+
+* use funcs as children ([8892564](https://github.com/newsuk/times-components/commit/8892564))
+
+
+
+
 <a name="0.9.3"></a>
 ## [0.9.3](https://github.com/newsuk/times-components/compare/@times-components/provider@0.9.2...@times-components/provider@0.9.3) (2017-10-05)
 

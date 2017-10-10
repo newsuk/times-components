@@ -114,7 +114,7 @@ class ArticlePage extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (!nextProps.isLoading) {
+    if (!nextProps.isLoading && nextProps.data) {
       this.setState({
         dataSource: ds.cloneWithRows(listViewDataHelper(nextProps.data.article))
       });
