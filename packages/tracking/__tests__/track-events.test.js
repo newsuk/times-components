@@ -6,8 +6,13 @@ import { withTrackEvents } from "../tracking";
 import withTrackingContext from "./test-tracking-context";
 
 describe("TrackEvents", () => {
-  const TestComponent = ({ onShow = () => ({}), ...props }) => {
-    onShow("onShow arg");
+  const TestComponent = ({
+    event1 = () => ({}),
+    event2 = () => ({}),
+    ...props
+  }) => {
+    event1("event1 arg");
+    event2("event2 arg");
     return <Text>{props.someProp}</Text>;
   };
   TestComponent.propTypes = { someProp: PropTypes.string };
@@ -16,7 +21,7 @@ describe("TrackEvents", () => {
 
   it("renders when tracking context is missing", () => {
     const WithTracking = withTrackEvents(TestComponent, {
-      analyticsEvents: [{ eventName: "onShow", actionName: "Shown" }]
+      analyticsEvents: [{ eventName: "event1", actionName: "event1ed" }]
     });
 
     const tree = renderer.create(<WithTracking />).toJSON();
@@ -42,14 +47,14 @@ describe("TrackEvents", () => {
     const reporter = jest.fn();
     const WithTrackingAndContext = withTrackingContext(
       withTrackEvents(TestComponent, {
-        analyticsEvents: [{ eventName: "onShow", actionName: "Shown" }]
+        analyticsEvents: [{ eventName: "event1", actionName: "event1ed" }]
       })
     );
 
     renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
 
     expect(reporter).toHaveBeenCalledWith({
-      action: "Shown",
+      action: "event1ed",
       attrs: {},
       component: "TestComponent"
     });
@@ -59,8 +64,8 @@ describe("TrackEvents", () => {
     const addTracking = () =>
       withTrackEvents(TestComponent, {
         analyticsEvents: [
-          { eventName: "onShow", actionName: "Shown1" },
-          { eventName: "onShow", actionName: "Shown2" }
+          { eventName: "event1", actionName: "event1ed1" },
+          { eventName: "event1", actionName: "event1ed2" }
         ]
       });
 
@@ -72,7 +77,7 @@ describe("TrackEvents", () => {
     const WithTrackingAndContext = withTrackingContext(
       withTrackEvents(TestComponent, {
         trackingName: "OverriddenName",
-        analyticsEvents: [{ eventName: "onShow", actionName: "Shown" }]
+        analyticsEvents: [{ eventName: "event1", actionName: "event1ed" }]
       })
     );
 
@@ -86,12 +91,17 @@ describe("TrackEvents", () => {
   it("applies tracking attrs", () => {
     const WithTrackingAndContext = withTrackingContext(
       withTrackEvents(TestComponent, {
-        analyticsEvents: [{ eventName: "onShow", actionName: "Shown" }],
-        getAttrs: (props, eventArgs) => ({
-          fromProps: props.aProp,
-          static: "value",
-          args: eventArgs
-        })
+        analyticsEvents: [
+          {
+            eventName: "event1",
+            actionName: "event1ed",
+            getAttrs: (props, eventArgs) => ({
+              fromProps: props.aProp,
+              static: "value",
+              args: eventArgs
+            })
+          }
+        ]
       })
     );
     const reporter = jest.fn();
@@ -105,25 +115,59 @@ describe("TrackEvents", () => {
         attrs: expect.objectContaining({
           fromProps: "propValue",
           static: "value",
-          args: ["onShow arg"]
+          args: ["event1 arg"]
         })
       })
     );
+  });
+
+  it("tracks multiple events", () => {
+    const WithTrackingAndContext = withTrackingContext(
+      withTrackEvents(TestComponent, {
+        analyticsEvents: [
+          {
+            eventName: "event1",
+            actionName: "event1ed",
+            getAttrs: (props, eventArgs) => ({
+              fromProps: props.aProp,
+              static: "value",
+              args: eventArgs
+            })
+          },
+          {
+            eventName: "event2",
+            actionName: "event2ed",
+            getAttrs: (props, eventArgs) => ({
+              fromProps: props.aProp,
+              static: "otherValue",
+              args: eventArgs
+            })
+          }
+        ]
+      })
+    );
+    const reporter = jest.fn();
+
+    renderer.create(
+      <WithTrackingAndContext aProp="propValue" analyticsStream={reporter} />
+    );
+
+    expect(reporter.mock.calls).toMatchSnapshot();
   });
 
   it("does not overwrite existing event handlers", () => {
     const handler = jest.fn();
     const WithTrackingAndContext = withTrackingContext(
       withTrackEvents(TestComponent, {
-        analyticsEvents: [{ eventName: "onShow", actionName: "Shown" }]
+        analyticsEvents: [{ eventName: "event1", actionName: "event1ed" }]
       })
     );
 
     renderer.create(
-      <WithTrackingAndContext analyticsStream={() => {}} onShow={handler} />
+      <WithTrackingAndContext analyticsStream={() => {}} event1={handler} />
     );
 
-    expect(handler).toHaveBeenCalledWith("onShow arg");
+    expect(handler).toHaveBeenCalledWith("event1 arg");
   });
 
   it("forwards props to wrapped component", () => {
