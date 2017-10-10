@@ -41,7 +41,7 @@ export default ({
   pageSize,
   articles,
   onArticlePress
-}) =>
+}) => (
   <View>
     <AuthorHead
       name={name}
@@ -67,9 +67,8 @@ export default ({
       </View>
       {articles.map((article, key) => {
         const { id, url } = article;
-        const separatorComponent = key > 0
-          ? <AuthorProfileItemSeparator />
-          : null;
+        const separatorComponent =
+          key > 0 ? <AuthorProfileItemSeparator /> : null;
 
         return (
           <View key={id} style={itemStyles.container}>
@@ -82,4 +81,5 @@ export default ({
         );
       })}
     </View>
-  </View>;
+  </View>
+);

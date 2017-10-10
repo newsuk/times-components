@@ -15,7 +15,8 @@ const AuthorProfile = ({
   page: initPage,
   pageSize: initPageSize,
   onTwitterLinkPress,
-  onArticlePress
+  onArticlePress,
+  slug
 }) => {
   if (error) {
     return <AuthorProfileError {...error} />;
@@ -29,9 +30,23 @@ const AuthorProfile = ({
     const { biography, name, uri, jobTitle, twitter } = author;
     const ArticleListProviderWithPageState = withPageState(ArticleListProvider);
 
+    debugger;
     return (
-      <ArticleListProviderWithPageState page={initPage} pageSize={initPageSize}>
-        {({ author: data, onNext, onPrev, page, pageSize, isLoading, error }) =>
+      <ArticleListProviderWithPageState
+        articleImageRatio={"3:2"}
+        slug={slug}
+        page={initPage}
+        pageSize={initPageSize}
+      >
+        {({
+          author: data,
+          onNext,
+          onPrev,
+          page,
+          pageSize,
+          isLoading,
+          error
+        }) => (
           <AuthorProfileContent
             name={name}
             biography={biography}
@@ -49,7 +64,8 @@ const AuthorProfile = ({
               publishedTime: new Date(article.publishedTime)
             }))}
             onArticlePress={onArticlePress}
-          />}
+          />
+        )}
       </ArticleListProviderWithPageState>
     );
   }

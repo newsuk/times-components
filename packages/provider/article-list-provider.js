@@ -41,7 +41,12 @@ export const query = gql`
   }
 `;
 
-const propsToVariables = ({ slug, pageSize, page, articleImageRatio }) => ({
+const propsToVariables = ({
+  slug,
+  pageSize,
+  page,
+  articleImageRatio = "3:2"
+}) => ({
   slug,
   first: pageSize,
   skip: pageSize * (page - 1),

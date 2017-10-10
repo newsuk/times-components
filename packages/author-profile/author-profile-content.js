@@ -32,16 +32,17 @@ export default class AuthorProfileContent extends Component {
     return (
       <ListView
         dataSource={this.state.dataSource}
-        renderRow={({ article }) =>
+        renderRow={({ article }) => (
           <AuthorProfileItem
             {...article}
             onPress={e =>
               onArticlePress(e, { id: article.id, url: article.url })}
-          />}
+          />
+        )}
         initialListSize={pageSize}
         scrollRenderAheadDistance={2}
         pageSize={pageSize}
-        renderHeader={() =>
+        renderHeader={() => (
           <AuthorHead
             name={name}
             bio={biography}
@@ -49,7 +50,8 @@ export default class AuthorProfileContent extends Component {
             title={jobTitle}
             twitter={twitter}
             onTwitterLinkPress={onTwitterLinkPress}
-          />}
+          />
+        )}
         renderSeparator={() => <AuthorProfileItemSeparator />}
         onEndReached={() => onNext()}
       />
