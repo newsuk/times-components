@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View, Platform } from "react-native";
 import PropTypes from "prop-types";
 import Link from "@times-components/link";
+import { withTrackEvents } from "@times-components/tracking";
 import withPageState from "./pagination-wrapper";
 import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
 
@@ -180,6 +181,27 @@ Pagination.defaultProps = {
   hideResults: false
 };
 
+const PaginationTracked = withTrackEvents(Pagination, {
+  analyticsEvents: [
+    {
+      eventName: "onNext",
+      actionName: "Pressed",
+      getAttrs: (props, args) => ({
+        nextPage: args[1],
+        direction: "forward"
+      })
+    },
+    {
+      eventName: "onPrev",
+      actionName: "Pressed",
+      getAttrs: (props, args) => ({
+        nextPage: args[1],
+        direction: "back"
+      })
+    }
+  ]
+});
+
 export default Pagination;
 
-export { withPageState };
+export { withPageState, PaginationTracked };

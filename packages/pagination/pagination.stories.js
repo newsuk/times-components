@@ -4,7 +4,8 @@ import { View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { action } from "@storybook/addon-actions";
-import Pagination, { withPageState } from "./pagination";
+import { withTrackingContext } from "@times-components/tracking";
+import Pagination, { withPageState, PaginationTracked } from "./pagination";
 import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
 import LateralSpacingDecorator from "../../storybook/decorators/lateral-spacing";
 
@@ -60,7 +61,24 @@ storiesOf("Pagination", module)
       onNext={action("last-page-next-compact")}
       onPrev={action("last-page-prev-compact")}
     />
-  ));
+  ))
+  .add("With tracking", () => {
+    const pageHandler = e => e.preventDefault();
+    const PaginationWithTrackingContext = withTrackingContext(
+      PaginationTracked,
+      { trackingObject: "Story" }
+    );
+    return (
+      <PaginationWithTrackingContext
+        page={2}
+        count={60}
+        hideResults
+        analyticsStream={action("analytics-event")}
+        onNext={pageHandler}
+        onPrev={pageHandler}
+      />
+    );
+  });
 
 const PageChanger = withPageState(Pagination);
 
