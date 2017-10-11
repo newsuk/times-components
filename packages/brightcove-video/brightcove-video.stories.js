@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Image } from "react-native";
+import { View, Image, Text } from "react-native";
 
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
@@ -23,11 +23,31 @@ const firstArgJSONAction = decorateAction([args => [JSON.stringify(args[0])]]);
 
 storiesOf("BrightcoveVideo", module)
   .add("Launcher with default values", () => (
+    <View style={{width: "100%", height: "100%"}}>
+    <Text>Brightcove test</Text>
+<Text>Brightcove test</Text>
+<Text>Brightcove test</Text>
+<Text>Brightcove test</Text>
+<Text>Brightcove test</Text>
+<Text>Brightcove test</Text>
+<Text>Brightcove test</Text>
+<Text>Brightcove test</Text>
+    <Text>Brightcove test</Text>
+    <Text>Brightcove test</Text>
+<Text>Brightcove test</Text>
+<Text>Brightcove test</Text>
+<Text>Brightcove test</Text>
+<Text>Brightcove test</Text>
+<Text>Brightcove test</Text>
+<Text>Brightcove test</Text>
+<Text>Brightcove test</Text>
+    <Text>Brightcove test</Text>
     <BrightcoveVideo
       policyKey={policyKey}
       videoId={videoId}
       accountId={accountId}
     />
+    </View>
   ))
   .add("Launcher with large player", () => (
     <BrightcoveVideo

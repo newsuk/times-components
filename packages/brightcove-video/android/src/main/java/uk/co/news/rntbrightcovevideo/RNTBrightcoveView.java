@@ -5,12 +5,17 @@ import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.res.Configuration;
 import android.graphics.Color;
+import android.os.Handler;
 import android.util.Log;
+import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 
 import com.brightcove.player.event.Event;
 import com.brightcove.player.event.EventListener;
 import com.brightcove.player.event.EventType;
+import com.brightcove.player.mediacontroller.BrightcoveControlBar;
+import com.brightcove.player.mediacontroller.BrightcoveMediaController;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.Dynamic;
 import com.facebook.react.bridge.ReactContext;
@@ -19,6 +24,10 @@ import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.uimanager.LayoutShadowNode;
 import com.facebook.react.uimanager.PixelUtil;
 import com.facebook.react.uimanager.events.RCTEventEmitter;
+import com.facebook.yoga.YogaEdge;
+import com.facebook.yoga.YogaJustify;
+
+import static com.facebook.yoga.YogaEdge.*;
 
 public class RNTBrightcoveView extends FrameLayout {
     public static final String TAG = RNTBrightcoveView.class.getSimpleName();
@@ -109,10 +118,8 @@ public class RNTBrightcoveView extends FrameLayout {
             mPlayerView.getEventEmitter().on(EventType.ENTER_FULL_SCREEN, new EventListener() {
                 @Override
                 public void processEvent(Event event) {
-
-
-                    origWidth = PixelUtil.toDIPFromPixel(mLayout.getStyleWidth().value);
-                    origHeight = PixelUtil.toDIPFromPixel(mLayout.getStyleHeight().value);
+                    origWidth = mLayout.getStyleWidth().value;
+                    origHeight = mLayout.getStyleHeight().value;
 
 
                     Dynamic percent100 = new ExtendedDynamic() {
@@ -126,8 +133,14 @@ public class RNTBrightcoveView extends FrameLayout {
                             return ReadableType.String;
                         }
                     };
+
+                    final int height = mLayout.getScreenHeight();
+                    final int width = mLayout.getScreenWidth();
+
                     mLayout.setWidth(percent100);
                     mLayout.setHeight(percent100);
+
+                    mLayout.setPosition("absolute");
 
                     mPlayerView.getEventEmitter().emit(EventType.CONFIGURATION_CHANGED);
                 }
@@ -136,30 +149,46 @@ public class RNTBrightcoveView extends FrameLayout {
             mPlayerView.getEventEmitter().on(EventType.EXIT_FULL_SCREEN, new EventListener() {
                 @Override
                 public void processEvent(Event event) {
+                    final int screenWidth = mLayout.getScreenWidth();
+                    final int screenHeight = mLayout.getScreenHeight();
+
                     mLayout.setWidth(new ExtendedDynamic() {
                         @Override
-                        public double asDouble() {
-                            return origWidth;
+                        public String asString() {
+                            return ((origWidth / screenWidth) * 100) + "%";
                         }
 
                         @Override
                         public ReadableType getType() {
-                            return ReadableType.Number;
+                            return ReadableType.String;
                         }
                     });
                     mLayout.setHeight(new ExtendedDynamic() {
                         @Override
-                        public double asDouble() {
-                            return origHeight;
+                        public String asString() {
+                            return ((origHeight / screenHeight) * 100) + "%";
                         }
 
                         @Override
                         public ReadableType getType() {
-                            return ReadableType.Number;
+                            return ReadableType.String;
                         }
                     });
+                    mLayout.setPosition("relative");
+                    //mLayout.setStyleWidth(origWidth);
+                    //mLayout.setStyleHeight(origHeight);
+
 
                     mPlayerView.getEventEmitter().emit(EventType.CONFIGURATION_CHANGED);
+
+                    final Handler handler = new Handler();
+                    handler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            mLayout.setStyleWidth(origWidth);
+                            mLayout.setStyleHeight(origHeight);
+                        }
+                    }, 1);
                 }
             });
 
