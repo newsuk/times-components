@@ -1,7 +1,6 @@
 /* eslint-disable react/no-danger */
 import React from "react";
-import ReactDOMServer from "react-dom/server";
-import { View, Text, Platform } from "react-native";
+import { View } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
 import Image from "./image";
@@ -82,44 +81,6 @@ storiesOf("Image", module)
       </View>
     )
   )
-  .add("Server side rendered Image (web only)", () => {
-    if (Platform.OS !== "web") {
-      return <Text>N/A</Text>;
-    }
-
-    const markup = {
-      __html: ReactDOMServer.renderToStaticMarkup(
-        <View>
-          <SquareImage
-            style={{
-              width: 200,
-              height: 200,
-              borderRadius: 100,
-              overflow: "hidden"
-            }}
-          />
-          <SquareImage
-            style={{
-              width: 100,
-              height: 100,
-              borderRadius: 50,
-              overflow: "hidden"
-            }}
-          />
-          <SquareImage
-            style={{
-              width: 50,
-              height: 50,
-              borderRadius: 25,
-              overflow: "hidden"
-            }}
-          />
-        </View>
-      )
-    };
-
-    return <div dangerouslySetInnerHTML={markup} />;
-  })
   .add("Defaults schema to https", () => (
     <View style={{ width: 300 }}>
       <Image
