@@ -47,12 +47,7 @@ public class RNTBrightcoveView extends FrameLayout {
     protected void onConfigurationChanged(Configuration newConfig) {
         Log.d(TAG, "onConfigurationChanged");
 
-        mAutoplay = isPlaying();
-        mSavedPlayheadPosition = mPlayerView.getPlayheadPosition();
-
-        removeAllViews();
-
-        initPlayerView();
+        mPlayerView.getEventEmitter().emit(EventType.CONFIGURATION_CHANGED);
 
         super.onConfigurationChanged(newConfig);
     }
@@ -114,6 +109,8 @@ public class RNTBrightcoveView extends FrameLayout {
             mPlayerView.getEventEmitter().on(EventType.ENTER_FULL_SCREEN, new EventListener() {
                 @Override
                 public void processEvent(Event event) {
+
+
                     origWidth = PixelUtil.toDIPFromPixel(mLayout.getStyleWidth().value);
                     origHeight = PixelUtil.toDIPFromPixel(mLayout.getStyleHeight().value);
 
@@ -131,13 +128,14 @@ public class RNTBrightcoveView extends FrameLayout {
                     };
                     mLayout.setWidth(percent100);
                     mLayout.setHeight(percent100);
+
+                    mPlayerView.getEventEmitter().emit(EventType.CONFIGURATION_CHANGED);
                 }
             });
 
             mPlayerView.getEventEmitter().on(EventType.EXIT_FULL_SCREEN, new EventListener() {
                 @Override
                 public void processEvent(Event event) {
-
                     mLayout.setWidth(new ExtendedDynamic() {
                         @Override
                         public double asDouble() {
@@ -160,6 +158,8 @@ public class RNTBrightcoveView extends FrameLayout {
                             return ReadableType.Number;
                         }
                     });
+
+                    mPlayerView.getEventEmitter().emit(EventType.CONFIGURATION_CHANGED);
                 }
             });
 
