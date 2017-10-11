@@ -26,10 +26,7 @@ const validateEvents = events => {
   });
 };
 
-export default (
-  WrappedComponent,
-  { trackingName, analyticsEvents = [] } = {}
-) => {
+export default (WrappedComponent, { analyticsEvents = [] } = {}) => {
   validateEvents(analyticsEvents);
   const componentName = getDisplayName(WrappedComponent);
 
@@ -37,7 +34,7 @@ export default (
     getWrappedAnalyticsEvents() {
       return this.wrapWithTracking(
         analyticsEvents,
-        (attrs, actionName) =>
+        (attrs, actionName, trackingName) =>
           this.context.tracking &&
           this.context.tracking.analytics({
             component: trackingName || componentName,
@@ -49,10 +46,13 @@ export default (
 
     wrapWithTracking(eventNames, tracking) {
       return eventNames.reduce(
-        (wrappedFuncProps, { eventName, actionName, getAttrs }) => {
+        (
+          wrappedFuncProps,
+          { eventName, actionName, getAttrs, trackingName }
+        ) => {
           const funcWrapped = (...args) => {
             const attrs = resolveAttrs(getAttrs, this.props, args);
-            tracking(attrs, actionName);
+            tracking(attrs, actionName, trackingName);
             return this.props[eventName] && this.props[eventName](...args);
           };
 

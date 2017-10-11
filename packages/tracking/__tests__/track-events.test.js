@@ -94,8 +94,13 @@ describe("TrackEvents", () => {
     const reporter = jest.fn();
     const WithTrackingAndContext = withTrackingContext(
       withTrackEvents(TestComponent, {
-        trackingName: "OverriddenName",
-        analyticsEvents: [{ eventName: "event1", actionName: "event1ed" }]
+        analyticsEvents: [
+          {
+            eventName: "event1",
+            actionName: "event1ed",
+            trackingName: "OverriddenName"
+          }
+        ]
       })
     );
 
