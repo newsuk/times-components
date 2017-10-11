@@ -4,6 +4,7 @@ import Pagination from "@times-components/pagination";
 import AuthorHead from "@times-components/author-head";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
+import propTypes from "./author-profile-content-prop-types";
 
 const styles = StyleSheet.create({
   container: {
@@ -27,7 +28,7 @@ const itemStyles = StyleSheet.create({
   }
 });
 
-export default ({
+const AuthorProfileContent = ({
   name,
   biography,
   uri,
@@ -65,21 +66,25 @@ export default ({
           />
         </View>
       </View>
-      {articles.map((article, key) => {
-        const { id, url } = article;
-        const separatorComponent =
-          key > 0 ? <AuthorProfileItemSeparator /> : null;
+      {articles &&
+        articles.map((article, key) => {
+          const { id, url } = article;
+          const separatorComponent =
+            key > 0 ? <AuthorProfileItemSeparator /> : null;
 
-        return (
-          <View key={id} style={itemStyles.container}>
-            {separatorComponent}
-            <AuthorProfileItem
-              {...article}
-              onPress={e => onArticlePress(e, { id, url })}
-            />
-          </View>
-        );
-      })}
+          return (
+            <View key={id} style={itemStyles.container}>
+              {separatorComponent}
+              <AuthorProfileItem
+                {...article}
+                onPress={e => onArticlePress(e, { id, url })}
+              />
+            </View>
+          );
+        })}
     </View>
   </View>
 );
+
+AuthorProfileContent.propTypes = propTypes;
+export default AuthorProfileContent;

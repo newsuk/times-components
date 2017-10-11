@@ -3,14 +3,16 @@ import { ListView } from "react-native";
 import AuthorHead from "@times-components/author-head";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
+import propTypes from "./author-profile-content-prop-types";
 
-export default class AuthorProfileContent extends Component {
+class AuthorProfileContent extends Component {
   constructor(props) {
     super();
 
     const ds = new ListView.DataSource({
       rowHasChanged: (r1, r2) => r1 !== r2
     });
+
     this.state = {
       dataSource: ds.cloneWithRows(props.articles)
     };
@@ -32,8 +34,9 @@ export default class AuthorProfileContent extends Component {
     return (
       <ListView
         dataSource={this.state.dataSource}
-        renderRow={({ article }) => (
+        renderRow={article => (
           <AuthorProfileItem
+            key={article.id}
             {...article}
             onPress={e =>
               onArticlePress(e, { id: article.id, url: article.url })}
@@ -58,3 +61,6 @@ export default class AuthorProfileContent extends Component {
     );
   }
 }
+
+AuthorProfileContent.propTypes = propTypes;
+export default AuthorProfileContent;
