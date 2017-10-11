@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 import Image from "@times-components/image";
 import { TextLink } from "@times-components/link";
+import { withTrackEvents } from "@times-components/tracking";
 import { renderTrees, treePropType } from "@times-components/markup";
 
 const fontFamilyWebAndIos = "TimesDigitalW04";
@@ -153,3 +154,17 @@ TwitterLink.defaultProps = {
 };
 
 export default AuthorHead;
+
+export const AuthorHeadTracked = withTrackEvents(AuthorHead, {
+  analyticsEvents: [
+    {
+      eventName: "onTwitterLinkPress",
+      actionName: "Pressed",
+      trackingName: "TwitterLink",
+      getAttrs: (props, eventArgs) => ({
+        twitterHandle: props.twitter,
+        url: eventArgs[1] && eventArgs[1].url
+      })
+    }
+  ]
+});

@@ -2,8 +2,9 @@ import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { decorateAction } from "@storybook/addon-actions";
-import AuthorHead from "./author-head";
+import { decorateAction, action } from "@storybook/addon-actions";
+import { withTrackingContext } from "@times-components/tracking";
+import AuthorHead, { AuthorHeadTracked } from "./author-head";
 import LateralSpacingDecorator from "../../storybook/decorators/lateral-spacing";
 
 const data = require("./fixtures/profile.json");
@@ -28,4 +29,17 @@ storiesOf("AuthorHead", module)
       uri: ""
     };
     return <AuthorHead {...props} {...extras} />;
+  })
+  .add("With tracking", () => {
+    const AuthorHeadWithTrackingContext = withTrackingContext(
+      AuthorHeadTracked,
+      { trackingObject: "Story" }
+    );
+    return (
+      <AuthorHeadWithTrackingContext
+        {...data}
+        {...extras}
+        analyticsStream={action("analytics-event")}
+      />
+    );
   });
