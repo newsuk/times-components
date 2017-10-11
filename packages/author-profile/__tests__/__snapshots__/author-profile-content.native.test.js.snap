@@ -561,8 +561,11 @@ exports[`renders profile content 1`] = `
         style={
           Object {
             "alignItems": "stretch",
+            "alignSelf": "center",
             "flexDirection": "row",
             "justifyContent": "center",
+            "maxWidth": 800,
+            "width": "100%",
           }
         }
       >
@@ -2498,8 +2501,11 @@ exports[`renders profile content 1`] = `
       style={
         Object {
           "alignItems": "stretch",
+          "alignSelf": "center",
           "flexDirection": "row",
           "justifyContent": "center",
+          "maxWidth": 800,
+          "width": "100%",
         }
       }
     >
@@ -2757,8 +2763,11 @@ exports[`renders profile content component 1`] = `
         style={
           Object {
             "alignItems": "stretch",
+            "alignSelf": "center",
             "flexDirection": "row",
             "justifyContent": "center",
+            "maxWidth": 800,
+            "width": "100%",
           }
         }
       >
@@ -4694,8 +4703,11 @@ exports[`renders profile content component 1`] = `
       style={
         Object {
           "alignItems": "stretch",
+          "alignSelf": "center",
           "flexDirection": "row",
           "justifyContent": "center",
+          "maxWidth": 800,
+          "width": "100%",
         }
       }
     >
@@ -4980,8 +4992,11 @@ exports[`renders profile header 1`] = `
     style={
       Object {
         "alignItems": "stretch",
+        "alignSelf": "center",
         "flexDirection": "row",
         "justifyContent": "center",
+        "maxWidth": 800,
+        "width": "100%",
       }
     }
   >
