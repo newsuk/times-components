@@ -53,7 +53,7 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
         eventEmitter.on(EventType.SEEK_TO, new EventListener() {
             @Override
             public void processEvent(Event e) {
-                playerView.bubbleState(playerView.getIsPlaying(), (int) playerView.getPlayheadPosition());
+                playerView.bubbleState(mIsPlaying, (int) playerView.getPlayheadPosition());
             }
         });
         eventEmitter.on(EventType.ERROR, new EventListener() {
@@ -133,14 +133,6 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
                 leftOffset + surfaceW,
                 topOffset + surfaceH
         );
-    }
-
-    public void setStartPlayheadPosition(float startPlayheadPosition) {
-        mProgress = startPlayheadPosition;
-    }
-
-    public Boolean getIsPlaying() {
-        return mIsPlaying;
     }
 
     public float getPlayheadPosition() {

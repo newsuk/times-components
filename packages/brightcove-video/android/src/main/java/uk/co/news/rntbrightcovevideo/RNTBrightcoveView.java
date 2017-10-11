@@ -40,8 +40,6 @@ public class RNTBrightcoveView extends FrameLayout {
     private BrightcovePlayerView mPlayerView;
     private LayoutShadowNode mLayout;
 
-    private float mSavedPlayheadPosition = 0;
-
     private float origWidth;
     private float origHeight;
 
@@ -59,10 +57,6 @@ public class RNTBrightcoveView extends FrameLayout {
         mPlayerView.getEventEmitter().emit(EventType.CONFIGURATION_CHANGED);
 
         super.onConfigurationChanged(newConfig);
-    }
-
-    private boolean isPlaying() {
-        return mPlayerView.getIsPlaying();
     }
 
     public void play() {
@@ -175,9 +169,6 @@ public class RNTBrightcoveView extends FrameLayout {
                         }
                     });
                     mLayout.setPosition("relative");
-                    //mLayout.setStyleWidth(origWidth);
-                    //mLayout.setStyleHeight(origHeight);
-
 
                     mPlayerView.getEventEmitter().emit(EventType.CONFIGURATION_CHANGED);
 
@@ -193,8 +184,6 @@ public class RNTBrightcoveView extends FrameLayout {
             });
 
             addView(mPlayerView);
-
-            mPlayerView.setStartPlayheadPosition(mSavedPlayheadPosition);
 
             boolean isFullscreenButtonHidden = mHideFullScreenButton != null ? mHideFullScreenButton : false;
             mPlayerView.initVideo(mVideoId, mAccountId, mPolicyKey, mAutoplay, isFullscreenButtonHidden);
