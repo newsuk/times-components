@@ -885,6 +885,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Monday March 23 2015
                   , The Times
@@ -1022,6 +1023,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Monday March 23 2015
                   , The Times
@@ -1159,6 +1161,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Monday March 23 2015
                   , The Times
@@ -1352,6 +1355,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Friday March 20 2015
                   , The Times
@@ -1545,6 +1549,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Thursday March 19 2015
                   , The Times
@@ -1738,6 +1743,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Wednesday March 18 2015
                   , The Times
@@ -1919,6 +1925,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Sunday Times
@@ -2112,6 +2119,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Times
@@ -2293,6 +2301,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Times
@@ -2474,6 +2483,7 @@ exports[`renders profile content 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Times
@@ -3071,6 +3081,7 @@ exports[`renders profile content component 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Monday March 23 2015
                   , The Times
@@ -3208,6 +3219,7 @@ exports[`renders profile content component 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Monday March 23 2015
                   , The Times
@@ -3345,6 +3357,7 @@ exports[`renders profile content component 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Monday March 23 2015
                   , The Times
@@ -3538,6 +3551,7 @@ exports[`renders profile content component 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Friday March 20 2015
                   , The Times
@@ -3731,6 +3745,7 @@ exports[`renders profile content component 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Thursday March 19 2015
                   , The Times
@@ -3924,6 +3939,7 @@ exports[`renders profile content component 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Wednesday March 18 2015
                   , The Times
@@ -4105,6 +4121,7 @@ exports[`renders profile content component 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Sunday Times
@@ -4298,6 +4315,7 @@ exports[`renders profile content component 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Times
@@ -4479,6 +4497,7 @@ exports[`renders profile content component 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Times
@@ -4660,6 +4679,7 @@ exports[`renders profile content component 1`] = `
                       Object {},
                     ]
                   }
+                  testID="datePublication"
                 >
                   Tuesday March 17 2015
                   , The Times

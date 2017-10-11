@@ -212,6 +212,7 @@ exports[`renders vertical by default 1`] = `
             Object {},
           ]
         }
+        testID="datePublication"
       >
         Saturday July 01 2017
         , The Sunday Times
@@ -319,6 +320,7 @@ exports[`renders without image 1`] = `
             Object {},
           ]
         }
+        testID="datePublication"
       >
         Saturday July 01 2017
         , The Sunday Times
@@ -426,6 +428,7 @@ exports[`renders without image url 1`] = `
             Object {},
           ]
         }
+        testID="datePublication"
       >
         Saturday July 01 2017
         , The Sunday Times
