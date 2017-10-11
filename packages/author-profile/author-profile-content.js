@@ -1,9 +1,25 @@
 import React, { Component } from "react";
-import { ListView } from "react-native";
+import { ListView, StyleSheet, View } from "react-native";
 import AuthorHead from "@times-components/author-head";
+import Pagination from "@times-components/pagination";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
 import propTypes from "./author-profile-content-prop-types";
+
+const styles = StyleSheet.create({
+  container: {
+    alignItems: "stretch",
+    flexDirection: "row",
+    justifyContent: "center"
+  },
+  spacing: {
+    flex: 1,
+    marginLeft: 10,
+    marginRight: 10,
+    marginBottom: 10,
+    maxWidth: 800
+  }
+});
 
 const cloneArticlesWithRows = articles => {
   const ds = new ListView.DataSource({
@@ -18,12 +34,14 @@ class AuthorProfileContent extends Component {
     super();
 
     this.state = {
+      count: props.count,
       dataSource: cloneArticlesWithRows(props.articles)
     };
   }
 
   componentWillReceiveProps(nextProps) {
     this.setState({
+      count: nextProps.count,
       dataSource: cloneArticlesWithRows(nextProps.articles)
     });
   }
@@ -36,14 +54,18 @@ class AuthorProfileContent extends Component {
       jobTitle,
       twitter,
       onTwitterLinkPress,
-      // onNext,
+      onNext,
+      onPrev,
+      page,
       pageSize,
       onArticlePress
     } = this.props;
 
+    const { count, dataSource } = this.state;
+
     return (
       <ListView
-        dataSource={this.state.dataSource}
+        dataSource={dataSource}
         renderRow={article => (
           <AuthorProfileItem
             {...article}
@@ -56,17 +78,30 @@ class AuthorProfileContent extends Component {
         scrollRenderAheadDistance={2}
         pageSize={pageSize}
         renderHeader={() => (
-          <AuthorHead
-            name={name}
-            bio={biography}
-            uri={uri}
-            title={jobTitle}
-            twitter={twitter}
-            onTwitterLinkPress={onTwitterLinkPress}
-          />
+          <View>
+            <AuthorHead
+              name={name}
+              bio={biography}
+              uri={uri}
+              title={jobTitle}
+              twitter={twitter}
+              onTwitterLinkPress={onTwitterLinkPress}
+            />
+            <View style={styles.container}>
+              <View style={styles.spacing}>
+                <Pagination
+                  count={count}
+                  generatePageLink={pageNum => `?page=${pageNum}`}
+                  onNext={onNext}
+                  onPrev={onPrev}
+                  page={page}
+                  pageSize={pageSize}
+                />
+              </View>
+            </View>
+          </View>
         )}
         renderSeparator={() => <AuthorProfileItemSeparator />}
-        // onEndReached={() => onNext()}
       />
     );
   }

@@ -38,28 +38,18 @@ exports[`renders profile content component 1`] = `
   scrollRenderAheadDistance={2}
 >
   <View>
-    <View
-      pointerEvents="box-none"
-      style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "transparent",
-          "paddingBottom": 50,
-        }
-      }
-    >
+    <View>
       <View
-        accessibilityRole="banner"
+        pointerEvents="box-none"
         style={
           Object {
             "alignItems": "center",
-            "backgroundColor": "#F9F8F3",
-            "flexDirection": "column",
+            "backgroundColor": "transparent",
             "paddingBottom": 50,
-            "width": "100%",
           }
         }
       >
+<<<<<<< HEAD
         <Text
           accessibilityRole="heading"
           accessible={true}
@@ -67,16 +57,21 @@ exports[`renders profile content component 1`] = `
           aria-level="1"
           disabled={false}
           ellipsizeMode="tail"
+=======
+        <View
+          accessibilityRole="banner"
+>>>>>>> feat: pagination on native profile
           style={
             Object {
-              "color": "#000",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 45,
-              "paddingTop": 32,
+              "alignItems": "center",
+              "backgroundColor": "#F9F8F3",
+              "flexDirection": "column",
+              "paddingBottom": 50,
+              "width": "100%",
             }
           }
-          testID="author-name"
         >
+<<<<<<< HEAD
 <<<<<<< HEAD
           <Text
             accessibilityRole="heading"
@@ -212,6 +207,8 @@ exports[`renders profile content component 1`] = `
       >
         <View
 =======
+=======
+>>>>>>> feat: pagination on native profile
           
         </Text>
         <Text
@@ -227,8 +224,68 @@ exports[`renders profile content component 1`] = `
               "color": "#696969",
               "fontFamily": "TimesDigital-RegularSC",
               "fontSize": 15,
+=======
+          <Text
+            accessibilityRole="heading"
+            accessible={true}
+            allowFontScaling={true}
+            aria-level="1"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#000",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 45,
+                "paddingTop": 32,
+              }
             }
+            testID="author-name"
+          >
+            
+          </Text>
+          <Text
+            accessibilityRole="heading"
+            accessible={true}
+            allowFontScaling={true}
+            aria-level="2"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "TimesDigital-RegularSC",
+                "fontSize": 15,
+              }
+>>>>>>> feat: pagination on native profile
+            }
+          >
+            
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#333",
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 16,
+                "lineHeight": 26,
+                "maxWidth": "88%",
+                "paddingBottom": 32,
+                "textAlign": "center",
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "stretch",
+            "flexDirection": "row",
+            "justifyContent": "center",
           }
+<<<<<<< HEAD
         >
           
         </Text>
@@ -237,18 +294,87 @@ exports[`renders profile content component 1`] = `
           allowFontScaling={true}
           disabled={false}
           ellipsizeMode="tail"
+=======
+        }
+      >
+        <View
+>>>>>>> feat: pagination on native profile
           style={
             Object {
-              "color": "#333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 16,
-              "lineHeight": 26,
-              "maxWidth": "88%",
-              "paddingBottom": 32,
-              "textAlign": "center",
+              "flex": 1,
+              "marginBottom": 10,
+              "marginLeft": 10,
+              "marginRight": 10,
+              "maxWidth": 800,
             }
           }
-        />
+        >
+          <View
+            onLayout={[Function]}
+            style={
+              Object {
+                "alignItems": "stretch",
+                "flexDirection": "column",
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 40,
+                    "justifyContent": "space-between",
+                  },
+                  Object {
+                    "justifyContent": "center",
+                  },
+                  null,
+                ]
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 15,
+                    },
+                  ]
+                }
+              >
+                Showing 1 - 0 of 0 results
+              </Text>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 40,
+                    "justifyContent": "space-between",
+                  },
+                  Object {
+                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomWidth": 1,
+                    "borderStyle": "solid",
+                    "borderTopColor": "#dbdbdb",
+                    "borderTopWidth": 1,
+                  },
+                ]
+              }
+            >
+              <View />
+              <View />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
     <View
