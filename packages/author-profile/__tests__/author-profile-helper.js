@@ -20,6 +20,7 @@ import articleListFixture from "../fixtures/article-list.json";
 Enzyme.configure({ adapter: new React16Adapter() });
 
 const props = {
+  slug: "fiona-hamilton",
   onTwitterLinkPress: () => {},
   onArticlePress: () => {}
 };
@@ -150,6 +151,7 @@ export default AuthorProfileContent => {
 
   it("renders profile loading", () => {
     const p = Object.assign({}, props, {
+      slug: "fiona-hamilton",
       author: null,
       isLoading: true
     });
@@ -160,6 +162,7 @@ export default AuthorProfileContent => {
 
   it("renders profile empty", () => {
     const p = Object.assign({}, props, {
+      slug: "fiona-hamilton",
       author: null,
       isLoading: false
     });
@@ -171,6 +174,7 @@ export default AuthorProfileContent => {
 
   it("renders profile error", () => {
     const p = Object.assign({}, props, {
+      slug: "fiona-hamilton",
       author: null,
       error: {
         error: "error"
@@ -201,6 +205,7 @@ export default AuthorProfileContent => {
         <AuthorProfileContent
           {...contentProps}
           {...authorProfileFixture}
+          slug={"fiona-hamilton"}
           page={1}
           pageSize={10}
           onTwitterLinkPress={() => {}}

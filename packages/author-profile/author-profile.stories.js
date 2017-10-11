@@ -133,7 +133,8 @@ const withMockProvider = child => (
 storiesOf("AuthorProfile", module)
   .add("Default", () => {
     const props = {
-      ...authorProfileFixture.data,
+      slug: "fiona-hamilton",
+      author: authorProfileFixture.data.author,
       isLoading: false,
       page: 2,
       pageSize: 3,
@@ -145,6 +146,7 @@ storiesOf("AuthorProfile", module)
   })
   .add("Loading", () => {
     const props = {
+      slug: "fiona-hamilton",
       isLoading: true,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
       onArticlePress: preventDefaultedAction("onArticlePress")
@@ -154,6 +156,14 @@ storiesOf("AuthorProfile", module)
   })
   .add("Empty State", () => {
     const props = {
+      slug: "fiona-hamilton",
+      author: {
+        ...authorProfileFixture.data.author,
+        articles: {
+          count: 0,
+          list: []
+        }
+      },
       isLoading: false,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
       onArticlePress: preventDefaultedAction("onArticlePress")

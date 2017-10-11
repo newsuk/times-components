@@ -30,7 +30,6 @@ exports[`renders profile content component 1`] = `
     }
   }
   initialListSize={10}
-  onEndReached={[Function]}
   pageSize={10}
   renderHeader={[Function]}
   renderRow={[Function]}

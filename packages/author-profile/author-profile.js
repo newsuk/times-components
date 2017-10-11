@@ -75,7 +75,7 @@ AuthorProfile.defaultProps = {
 };
 
 AuthorProfile.propTypes = {
-  isLoading: PropTypes.boolean,
+  isLoading: PropTypes.bool,
   error: PropTypes.shape(),
   author: PropTypes.shape(),
   page: PropTypes.number,

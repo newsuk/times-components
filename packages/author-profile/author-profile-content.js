@@ -5,17 +5,27 @@ import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
 import propTypes from "./author-profile-content-prop-types";
 
+const cloneArticlesWithRows = articles => {
+  const ds = new ListView.DataSource({
+    rowHasChanged: (r1, r2) => r1 !== r2
+  });
+
+  return ds.cloneWithRows(articles);
+};
+
 class AuthorProfileContent extends Component {
   constructor(props) {
     super();
 
-    const ds = new ListView.DataSource({
-      rowHasChanged: (r1, r2) => r1 !== r2
-    });
-
     this.state = {
-      dataSource: ds.cloneWithRows(props.articles)
+      dataSource: cloneArticlesWithRows(props.articles)
     };
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      dataSource: cloneArticlesWithRows(nextProps.articles)
+    });
   }
 
   render() {
@@ -26,7 +36,7 @@ class AuthorProfileContent extends Component {
       jobTitle,
       twitter,
       onTwitterLinkPress,
-      onNext,
+      // onNext,
       pageSize,
       onArticlePress
     } = this.props;
@@ -36,8 +46,8 @@ class AuthorProfileContent extends Component {
         dataSource={this.state.dataSource}
         renderRow={article => (
           <AuthorProfileItem
-            key={article.id}
             {...article}
+            key={article.id}
             onPress={e =>
               onArticlePress(e, { id: article.id, url: article.url })}
           />
@@ -56,7 +66,7 @@ class AuthorProfileContent extends Component {
           />
         )}
         renderSeparator={() => <AuthorProfileItemSeparator />}
-        onEndReached={() => onNext()}
+        // onEndReached={() => onNext()}
       />
     );
   }
