@@ -157,6 +157,7 @@ exports[`will launch if play is called 1`] = `
   style={
     Object {
       "height": 180,
+      "position": "relative",
       "width": 320,
     }
   }

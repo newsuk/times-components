@@ -131,7 +131,11 @@ class BrightcoveVideo extends Component {
         ref={ref => {
           this.bcPlayer = ref;
         }}
-        style={{ height: this.props.height, width: this.props.width }}
+        style={{
+          height: this.props.height,
+          width: this.props.width,
+          position: this.props.position
+        }}
         policyKey={this.props.policyKey}
         accountId={this.props.accountId}
         videoId={this.props.videoId}
@@ -146,11 +150,15 @@ class BrightcoveVideo extends Component {
 }
 
 BrightcoveVideo.defaultProps = Object.assign(
-  { runNativeCommand: () => {}, onChange: () => {} },
+  { runNativeCommand: () => {}, onChange: () => {}, position: "relative" },
   defaults
 );
 BrightcoveVideo.propTypes = Object.assign(
-  { runNativeCommand: PropTypes.func.isRequired, onChange: PropTypes.func },
+  {
+    runNativeCommand: PropTypes.func.isRequired,
+    onChange: PropTypes.func,
+    position: PropTypes.string
+  },
   propTypes
 );
 

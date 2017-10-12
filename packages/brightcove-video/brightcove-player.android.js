@@ -52,6 +52,7 @@ function withNativeCommand(WrappedComponent) {
       if (this.state.isFullscreen) {
         androidSpecificProps.width = "100%";
         androidSpecificProps.height = "100%";
+        androidSpecificProps.position = "absolute";
       }
 
       const props = Object.assign(

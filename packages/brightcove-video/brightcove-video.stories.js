@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Image } from "react-native";
+import { View, Image, Text } from "react-native";
 
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
@@ -54,6 +54,21 @@ storiesOf("BrightcoveVideo", module)
       videoId={videoId}
       accountId={accountId}
     />
+  ))
+  .add("Inline launcher with default values to demonstrate fullscreen", () => (
+    <View style={{ width: "100%", height: "100%" }}>
+      <Text>Line 1</Text>
+      <Text>Line 2</Text>
+      <Text>Line 3</Text>
+      <BrightcoveVideo
+        policyKey={policyKey}
+        videoId={videoId}
+        accountId={accountId}
+      />
+      <Text>Line 4</Text>
+      <Text>Line 5</Text>
+      <Text>Line 6</Text>
+    </View>
   ))
   .add("Launcher fullscreen player with hidden Fullscreen button", () => (
     <BrightcoveVideo
