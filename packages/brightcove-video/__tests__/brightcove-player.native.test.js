@@ -228,6 +228,22 @@ describe("brightcove-player native component", () => {
       propsCache.onChange({ nativeEvent: { random: "act of kindness" } });
     });
 
+    it("trigger a general change event", done => {
+      renderer.create(
+        <BrightcovePlayer
+          accountId="[ACCOUNT_ID]"
+          videoId="[VIDEO_ID]"
+          policyKey="[POLICY_KEY]"
+          onChange={evt => {
+            expect(evt.something).toBe(true);
+            done();
+          }}
+        />
+      );
+
+      propsCache.onChange({ nativeEvent: { something: true } });
+    });
+
     it("trigger a play event", done => {
       renderer.create(
         <BrightcovePlayer

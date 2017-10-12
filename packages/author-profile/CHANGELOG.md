@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.17.5"></a>
+## [0.17.5](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.17.4...@times-components/author-profile@0.17.5) (2017-10-12)
+
+
+
+
+<a name="0.17.4"></a>
+## [0.17.4](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.17.3...@times-components/author-profile@0.17.4) (2017-10-12)
+
+
+### Bug Fixes
+
+* author profile issues in internet explorer 11 ([5af5396](https://github.com/newsuk/times-components/commit/5af5396))
+
+
+
+
 <a name="0.17.3"></a>
 ## [0.17.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.17.2...@times-components/author-profile@0.17.3) (2017-10-11)
 

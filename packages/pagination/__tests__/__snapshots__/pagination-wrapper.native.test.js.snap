@@ -4,10 +4,11 @@ exports[`Pagination Wrapper Native renders inner component with page 1 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
 >
   {
-    "page": 1
-  }
+  "page": 1
+}
 </Text>
 `;

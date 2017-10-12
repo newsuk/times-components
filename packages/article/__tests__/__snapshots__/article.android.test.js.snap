@@ -86,6 +86,7 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Array [
@@ -108,6 +109,7 @@ exports[`Article test on android renders article no flags 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Array [
@@ -135,6 +137,7 @@ exports[`Article test on android renders article no flags 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Array [
@@ -199,6 +202,7 @@ exports[`Article test on android renders article no flags 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -218,6 +222,7 @@ exports[`Article test on android renders article no flags 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
               >
                 Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -240,6 +245,7 @@ exports[`Article test on android renders article no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -275,6 +281,7 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -291,6 +298,7 @@ exports[`Article test on android renders article no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -304,6 +312,7 @@ exports[`Article test on android renders article no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -331,6 +340,7 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -346,6 +356,7 @@ exports[`Article test on android renders article no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -373,6 +384,7 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -404,6 +416,7 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -435,6 +448,7 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -466,6 +480,7 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -497,6 +512,7 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -528,6 +544,7 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -559,6 +576,7 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -590,6 +608,7 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -621,6 +640,7 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -652,6 +672,7 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -683,6 +704,7 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -760,6 +782,7 @@ exports[`Article test on android renders article no label 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Array [
@@ -787,6 +810,7 @@ exports[`Article test on android renders article no label 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Array [
@@ -856,6 +880,7 @@ exports[`Article test on android renders article no label 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -919,6 +944,7 @@ exports[`Article test on android renders article no label 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -988,6 +1014,7 @@ exports[`Article test on android renders article no label 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -1007,6 +1034,7 @@ exports[`Article test on android renders article no label 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
               >
                 Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -1029,6 +1057,7 @@ exports[`Article test on android renders article no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -1064,6 +1093,7 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1080,6 +1110,7 @@ exports[`Article test on android renders article no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -1093,6 +1124,7 @@ exports[`Article test on android renders article no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -1120,6 +1152,7 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1135,6 +1168,7 @@ exports[`Article test on android renders article no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -1162,6 +1196,7 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1193,6 +1228,7 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1224,6 +1260,7 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1255,6 +1292,7 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1286,6 +1324,7 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1317,6 +1356,7 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1348,6 +1388,7 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1379,6 +1420,7 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1410,6 +1452,7 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1441,6 +1484,7 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1472,6 +1516,7 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1549,6 +1594,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Array [
@@ -1576,6 +1622,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Array [
@@ -1640,6 +1687,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -1659,6 +1707,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
               >
                 Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -1681,6 +1730,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -1716,6 +1766,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1732,6 +1783,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -1745,6 +1797,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -1772,6 +1825,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1787,6 +1841,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -1814,6 +1869,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1845,6 +1901,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1876,6 +1933,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1907,6 +1965,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1938,6 +1997,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1969,6 +2029,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2000,6 +2061,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2031,6 +2093,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2062,6 +2125,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2093,6 +2157,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2124,6 +2189,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2201,6 +2267,7 @@ exports[`Article test on android renders article no label no flags no standfirst
       <Text
         accessible={true}
         allowFontScaling={true}
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Array [
@@ -2273,6 +2340,7 @@ exports[`Article test on android renders article no label no flags no standfirst
             <Text
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -2292,6 +2360,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
               >
                 Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -2314,6 +2383,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -2349,6 +2419,7 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2365,6 +2436,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -2378,6 +2450,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -2405,6 +2478,7 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2420,6 +2494,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -2447,6 +2522,7 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2478,6 +2554,7 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2509,6 +2586,7 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2540,6 +2618,7 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2571,6 +2650,7 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2602,6 +2682,7 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2633,6 +2714,7 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2664,6 +2746,7 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2695,6 +2778,7 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2726,6 +2810,7 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2757,6 +2842,7 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2843,6 +2929,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Array [
@@ -2865,6 +2952,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Array [
@@ -2942,6 +3030,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -3005,6 +3094,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -3074,6 +3164,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -3093,6 +3184,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
               >
                 Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -3115,6 +3207,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -3150,6 +3243,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3166,6 +3260,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -3179,6 +3274,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -3206,6 +3302,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3221,6 +3318,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -3248,6 +3346,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3279,6 +3378,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3310,6 +3410,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3341,6 +3442,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3372,6 +3474,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3403,6 +3506,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3434,6 +3538,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3465,6 +3570,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3496,6 +3602,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3527,6 +3634,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3558,6 +3666,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3644,6 +3753,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Array [
@@ -3666,6 +3776,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Array [
@@ -3738,6 +3849,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -3757,6 +3869,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
               >
                 Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -3779,6 +3892,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -3814,6 +3928,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3830,6 +3945,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -3843,6 +3959,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -3870,6 +3987,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3885,6 +4003,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -3912,6 +4031,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3943,6 +4063,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3974,6 +4095,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4005,6 +4127,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4036,6 +4159,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4067,6 +4191,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4098,6 +4223,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4129,6 +4255,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4160,6 +4287,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4191,6 +4319,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4222,6 +4351,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4299,6 +4429,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Array [
@@ -4376,6 +4507,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -4439,6 +4571,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -4508,6 +4641,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -4527,6 +4661,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
               >
                 Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -4549,6 +4684,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -4584,6 +4720,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4600,6 +4737,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -4613,6 +4751,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -4640,6 +4779,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4655,6 +4795,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -4682,6 +4823,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4713,6 +4855,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4744,6 +4887,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4775,6 +4919,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4806,6 +4951,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4837,6 +4983,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4868,6 +5015,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4899,6 +5047,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4930,6 +5079,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4961,6 +5111,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4992,6 +5143,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -5078,6 +5230,7 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Array [
@@ -5100,6 +5253,7 @@ exports[`Article test on android renders full article 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Array [
@@ -5127,6 +5281,7 @@ exports[`Article test on android renders full article 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Array [
@@ -5196,6 +5351,7 @@ exports[`Article test on android renders full article 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -5259,6 +5415,7 @@ exports[`Article test on android renders full article 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -5328,6 +5485,7 @@ exports[`Article test on android renders full article 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -5347,6 +5505,7 @@ exports[`Article test on android renders full article 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
               >
                 Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -5369,6 +5528,7 @@ exports[`Article test on android renders full article 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -5404,6 +5564,7 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -5420,6 +5581,7 @@ exports[`Article test on android renders full article 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -5433,6 +5595,7 @@ exports[`Article test on android renders full article 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -5460,6 +5623,7 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -5475,6 +5639,7 @@ exports[`Article test on android renders full article 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -5537,6 +5702,7 @@ exports[`Article test on android renders full article 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -5555,6 +5721,7 @@ exports[`Article test on android renders full article 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -5597,6 +5764,7 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -5628,6 +5796,7 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -5709,6 +5878,7 @@ exports[`Article test on android renders full article 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -5727,6 +5897,7 @@ exports[`Article test on android renders full article 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -5769,6 +5940,7 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -5807,105 +5979,105 @@ exports[`Article test on android renders full article 1`] = `
             Object {
               "baseUrl": "https://www.thetimes.co.uk/",
               "html": "
-                  <html>
-                    <head>
-                      <style>
-                        body {
-                          display: table;
-                          height: 100%;
-                          margin: 0 auto;
-                          overflow:hidden;
-                          text-align: center;
-                          width: 100%;
-                        }
-                        div#intervention {
-                          display: table-cell;
-                          vertical-align: middle;
-                        }
-                      </style>
-                      <script async src=\\"https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js\\"></script>
-                      <script async src=\\"https://www.googletagservices.com/tag/js/gpt.js\\"></script>
-                    </head>
-                    <body>
-                      <div id='intervention'>
-                      </div>
-            
-                      <script>
-                        var i = 0;
-                        const config = {\\"code\\":\\"intervention\\",\\"sizes\\":[[300,250],[320,50],[320,48],[300,50]],\\"maxSizes\\":{\\"width\\":320,\\"height\\":250},\\"mappings\\":[{\\"width\\":0,\\"height\\":0,\\"sizes\\":[]},{\\"width\\":300,\\"height\\":100,\\"sizes\\":[[300,250],[320,50],[320,48],[300,50]]},{\\"width\\":768,\\"height\\":90,\\"sizes\\":[[728,90]]},{\\"width\\":1024,\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]]}],\\"bids\\":[{\\"bidder\\":\\"appnexus\\",\\"params\\":{\\"placementId\\":\\"5823281\\",\\"section\\":\\"article\\"}},{\\"bidder\\":\\"rubicon\\",\\"params\\":{\\"accountId\\":\\"14062\\",\\"siteId\\":\\"70608\\",\\"zoneId\\":\\"335918\\",\\"inventory\\":{\\"section\\":\\"article\\"}}},{\\"bidder\\":\\"indexExchange\\",\\"params\\":{\\"id\\":\\"intervention\\",\\"siteID\\":\\"1234\\"}},{\\"bidder\\":\\"pubmatic\\",\\"params\\":{\\"publisherId\\":\\"01234\\",\\"adSlot\\":\\"TheTimes@300x250\\",\\"section\\":\\"article\\"}},{\\"bidder\\":\\"criteo\\",\\"params\\":{\\"zoneId\\":\\"764879\\"}},{\\"bidder\\":\\"pubmatic\\",\\"params\\":{\\"publisherId\\":\\"01234\\",\\"adSlot\\":\\"TheTimes@320x50\\",\\"section\\":\\"article\\"}},{\\"bidder\\":\\"criteo\\",\\"params\\":{\\"zoneId\\":\\"764882\\"}},{\\"bidder\\":\\"pubmatic\\",\\"params\\":{\\"publisherId\\":\\"01234\\",\\"adSlot\\":\\"TheTimes@320x48\\",\\"section\\":\\"article\\"}},{\\"bidder\\":\\"pubmatic\\",\\"params\\":{\\"publisherId\\":\\"01234\\",\\"adSlot\\":\\"TheTimes@300x50\\",\\"section\\":\\"article\\"}}]};
-                        var PREBID_TIMEOUT = 1000;
-                        var adUnits = [{
-                            code: config.code,
-                            sizes: config.sizes,
-                            bids: config.bids
-                        }];
-            
-                        function notifyAdReady() {
-                          document.title = 'AD_READY';
-                          window.location.hash = ++i;
-                        }
-            
-                        function initPrebidDefaults() {
-                          window.pbjs = window.pbjs || {};
-                          pbjs.que = pbjs.que || [];
-                        }
-            
-                        function addServices () {
-                          googletag.cmd.push(function () {
-                            const slotName = '/25436805/d.thetimes.co.uk/article';
-                            googletag
-                              .defineSlot(slotName, config.sizes, config.code)
-                              .addService(googletag.pubads());
-            
-                            googletag.pubads().enableSingleRequest();
-                            googletag.enableServices();
-                          });
-                        }
-            
-                        function sendAdserverRequest () {
-                          if (pbjs.adserverRequestSent) return;
-                          notifyAdReady();
-                          pbjs.adserverRequestSent = true;
-                          googletag.cmd.push(function() {
-                            pbjs.que.push(function() {
-                              pbjs.setTargetingForGPTAsync();
-                              googletag.display(config.code);
-                              googletag.pubads().refresh();
-                            });
-                          });
-                        }
-            
-                        function initGoogleTagDefaults () {
-                          window.googletag = window.googletag || {};
-                          googletag.cmd = googletag.cmd || [];
-                          googletag.cmd.push(function() {
-                            googletag.pubads().disableInitialLoad();
-                          });
-            
-                          addServices();
-            
-                          pbjs.que.push(function() {
-                            pbjs.addAdUnits(adUnits);
-                            pbjs.requestBids({
-                              bidsBackHandler: sendAdserverRequest
-                            });
-                          });
-            
-                          setTimeout(function() {
-                            sendAdserverRequest();
-                          }, PREBID_TIMEOUT);
-                        }
-            
-                        function init () {
-                          initPrebidDefaults();
-                          initGoogleTagDefaults();
-                        }
-                        init();
-            
-                      </script>
-                    </body>
-                  </html>
-                  ",
+      <html>
+        <head>
+          <style>
+            body {
+              display: table;
+              height: 100%;
+              margin: 0 auto;
+              overflow:hidden;
+              text-align: center;
+              width: 100%;
+            }
+            div#intervention {
+              display: table-cell;
+              vertical-align: middle;
+            }
+          </style>
+          <script async src=\\"https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js\\"></script>
+          <script async src=\\"https://www.googletagservices.com/tag/js/gpt.js\\"></script>
+        </head>
+        <body>
+          <div id='intervention'>
+          </div>
+
+          <script>
+            var i = 0;
+            const config = {\\"code\\":\\"intervention\\",\\"sizes\\":[[300,250],[320,50],[320,48],[300,50]],\\"maxSizes\\":{\\"width\\":320,\\"height\\":250},\\"mappings\\":[{\\"width\\":0,\\"height\\":0,\\"sizes\\":[]},{\\"width\\":300,\\"height\\":100,\\"sizes\\":[[300,250],[320,50],[320,48],[300,50]]},{\\"width\\":768,\\"height\\":90,\\"sizes\\":[[728,90]]},{\\"width\\":1024,\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]]}],\\"bids\\":[{\\"bidder\\":\\"appnexus\\",\\"params\\":{\\"placementId\\":\\"5823281\\",\\"section\\":\\"article\\"}},{\\"bidder\\":\\"rubicon\\",\\"params\\":{\\"accountId\\":\\"14062\\",\\"siteId\\":\\"70608\\",\\"zoneId\\":\\"335918\\",\\"inventory\\":{\\"section\\":\\"article\\"}}},{\\"bidder\\":\\"indexExchange\\",\\"params\\":{\\"id\\":\\"intervention\\",\\"siteID\\":\\"1234\\"}},{\\"bidder\\":\\"pubmatic\\",\\"params\\":{\\"publisherId\\":\\"01234\\",\\"adSlot\\":\\"TheTimes@300x250\\",\\"section\\":\\"article\\"}},{\\"bidder\\":\\"criteo\\",\\"params\\":{\\"zoneId\\":\\"764879\\"}},{\\"bidder\\":\\"pubmatic\\",\\"params\\":{\\"publisherId\\":\\"01234\\",\\"adSlot\\":\\"TheTimes@320x50\\",\\"section\\":\\"article\\"}},{\\"bidder\\":\\"criteo\\",\\"params\\":{\\"zoneId\\":\\"764882\\"}},{\\"bidder\\":\\"pubmatic\\",\\"params\\":{\\"publisherId\\":\\"01234\\",\\"adSlot\\":\\"TheTimes@320x48\\",\\"section\\":\\"article\\"}},{\\"bidder\\":\\"pubmatic\\",\\"params\\":{\\"publisherId\\":\\"01234\\",\\"adSlot\\":\\"TheTimes@300x50\\",\\"section\\":\\"article\\"}}]};
+            var PREBID_TIMEOUT = 1000;
+            var adUnits = [{
+                code: config.code,
+                sizes: config.sizes,
+                bids: config.bids
+            }];
+
+            function notifyAdReady() {
+              document.title = 'AD_READY';
+              window.location.hash = ++i;
+            }
+
+            function initPrebidDefaults() {
+              window.pbjs = window.pbjs || {};
+              pbjs.que = pbjs.que || [];
+            }
+
+            function addServices () {
+              googletag.cmd.push(function () {
+                const slotName = '/25436805/d.thetimes.co.uk/article';
+                googletag
+                  .defineSlot(slotName, config.sizes, config.code)
+                  .addService(googletag.pubads());
+
+                googletag.pubads().enableSingleRequest();
+                googletag.enableServices();
+              });
+            }
+
+            function sendAdserverRequest () {
+              if (pbjs.adserverRequestSent) return;
+              notifyAdReady();
+              pbjs.adserverRequestSent = true;
+              googletag.cmd.push(function() {
+                pbjs.que.push(function() {
+                  pbjs.setTargetingForGPTAsync();
+                  googletag.display(config.code);
+                  googletag.pubads().refresh();
+                });
+              });
+            }
+
+            function initGoogleTagDefaults () {
+              window.googletag = window.googletag || {};
+              googletag.cmd = googletag.cmd || [];
+              googletag.cmd.push(function() {
+                googletag.pubads().disableInitialLoad();
+              });
+
+              addServices();
+
+              pbjs.que.push(function() {
+                pbjs.addAdUnits(adUnits);
+                pbjs.requestBids({
+                  bidsBackHandler: sendAdserverRequest
+                });
+              });
+
+              setTimeout(function() {
+                sendAdserverRequest();
+              }, PREBID_TIMEOUT);
+            }
+
+            function init () {
+              initPrebidDefaults();
+              initGoogleTagDefaults();
+            }
+            init();
+
+          </script>
+        </body>
+      </html>
+      ",
             }
           }
           style={
@@ -5971,6 +6143,7 @@ exports[`Article test on android renders full article 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -6011,6 +6184,7 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -6092,6 +6266,7 @@ exports[`Article test on android renders full article 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -6110,6 +6285,7 @@ exports[`Article test on android renders full article 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -6152,6 +6328,7 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -6233,6 +6410,7 @@ exports[`Article test on android renders full article 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -6251,6 +6429,7 @@ exports[`Article test on android renders full article 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -6293,6 +6472,7 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -6324,6 +6504,7 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -6355,6 +6536,7 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -6386,6 +6568,7 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -6417,6 +6600,7 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -6448,6 +6632,7 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
