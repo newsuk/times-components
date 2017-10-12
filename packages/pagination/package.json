@@ -69,6 +69,7 @@
     "@times-components/link": "0.8.0",
     "prop-types": "15.5.10",
     "react-display-name": "0.2.3",
+    "react-native-svg": "5.1.7",
     "react-native-web": "0.0.119",
     "svgs": "2.3.0"
   },
