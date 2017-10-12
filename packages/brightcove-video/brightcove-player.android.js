@@ -32,16 +32,16 @@ function withNativeCommand(WrappedComponent) {
       });
     }
 
+    onChange(evt) {
+      this.setState({ isFullscreen: evt.isFullscreen });
+    }
+
     runNativeCommand(name, args) {
       NativeModules.UIManager.dispatchViewManagerCommand(
         this.bcv.getNodeHandle(),
         AndroidNative.uiManagerCommand(name),
         args
       );
-    }
-
-    onChange(evt) {
-      this.setState({ isFullscreen: evt.isFullscreen });
     }
 
     render() {
