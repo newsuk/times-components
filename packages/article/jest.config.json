@@ -2,5 +2,7 @@
   "preset": "react-native",
   "rootDir": "../../",
   "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-  "testMatch": ["<rootDir>/packages/article/__tests__/article.(ios|android).test.js"]
+  "testMatch": [
+    "<rootDir>/packages/article/__tests__/article.(ios|android).test.js"
+  ]
 }

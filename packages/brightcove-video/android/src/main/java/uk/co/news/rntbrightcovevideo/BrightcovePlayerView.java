@@ -22,6 +22,7 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
 
     private Boolean mAutoplay;
     private Boolean mIsPlaying = false;
+    private Boolean mIsFullscreen = false;
     private float mProgress = 0;
 
     public BrightcovePlayerView(final Context context) {
@@ -52,7 +53,23 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
         eventEmitter.on(EventType.SEEK_TO, new EventListener() {
             @Override
             public void processEvent(Event e) {
-                playerView.bubbleState(playerView.getIsPlaying(), (int) playerView.getPlayheadPosition());
+                playerView.bubbleCurrentState();
+            }
+        });
+        eventEmitter.on(EventType.ENTER_FULL_SCREEN, new EventListener() {
+            @Override
+            public void processEvent(Event e) {
+                mIsFullscreen = true;
+                playerView.bubbleCurrentState();
+                playerView.getEventEmitter().emit(EventType.CONFIGURATION_CHANGED);
+            }
+        });
+        eventEmitter.on(EventType.EXIT_FULL_SCREEN, new EventListener() {
+            @Override
+            public void processEvent(Event e) {
+                mIsFullscreen = false;
+                playerView.bubbleCurrentState();
+                playerView.getEventEmitter().emit(EventType.CONFIGURATION_CHANGED);
             }
         });
         eventEmitter.on(EventType.ERROR, new EventListener() {
@@ -62,6 +79,10 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
             }
         });
         return eventEmitter;
+    }
+
+    private void bubbleCurrentState() {
+        bubbleState(getIsPlaying(), (int) getPlayheadPosition());
     }
 
     private void bubbleState(Boolean isPlaying, int headPos) {
@@ -135,12 +156,11 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
         );
     }
 
-    public void setStartPlayheadPosition(float startPlayheadPosition) {
-        mProgress = startPlayheadPosition;
-    }
-
     public Boolean getIsPlaying() {
         return mIsPlaying;
+    }
+    public Boolean getIsFullscreen() {
+        return mIsFullscreen;
     }
 
     public float getPlayheadPosition() {

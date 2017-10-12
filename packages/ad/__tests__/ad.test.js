@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import TestUtils from "react-addons-test-utils";
+import ReactTestUtils from "react-dom/test-utils";
 
 import Ad from "../ad";
 
@@ -145,7 +145,7 @@ describe("Native Ad test", () => {
   });
 
   it("handleOriginChange should not do anything if the origin is the same", () => {
-    const tree = TestUtils.renderIntoDocument(ad);
+    const tree = ReactTestUtils.renderIntoDocument(ad);
     const hasDifferentOriginSpy = jest.spyOn(Ad, "hasDifferentOrigin");
     const onOriginChangeSpy = jest.spyOn(Ad, "onOriginChange");
     tree.handleOriginChange(adProps.baseUrl);
@@ -155,7 +155,7 @@ describe("Native Ad test", () => {
 
   it("handleOriginChange should prevent webview from loading and handle different origin if the origin is different", () => {
     const fakeUrl = "http://another-mock-url.com";
-    const tree = TestUtils.renderIntoDocument(ad);
+    const tree = ReactTestUtils.renderIntoDocument(ad);
     tree.webview = {
       stopLoading: jest.fn()
     };
@@ -179,7 +179,7 @@ describe("Native Ad test", () => {
   });
 
   it("handleNavigationChange should verify if origin is different", () => {
-    const tree = TestUtils.renderIntoDocument(ad);
+    const tree = ReactTestUtils.renderIntoDocument(ad);
     const navState = {
       url: "http://another-mock-url.com"
     };
@@ -189,7 +189,7 @@ describe("Native Ad test", () => {
   });
 
   it("handleNavigationChange should verify if ad is ready to be shown and show it", () => {
-    const tree = TestUtils.renderIntoDocument(ad);
+    const tree = ReactTestUtils.renderIntoDocument(ad);
     const navState = {
       title: "AD_READYTEST"
     };

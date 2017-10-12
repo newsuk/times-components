@@ -16,7 +16,7 @@ workflows:
             export NVM_DIR=~/.nvm
             nvm install stable
             nvm use stable
-            npm install --global yarn@1.1.0
+            npm install --global yarn@1.2.1
             # debug log
             set -x
             rm -rf ios/build

@@ -2,28 +2,148 @@
 
 exports[`PaginationIcons Native Next page icon renders out an svg and the passed in label 1`] = `
 ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
   "length": 1,
-  "node": <View
-    style={
-        Object {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "marginLeft": 10,
-            "marginRight": 12,
-          }
-    }
->
-    <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <NextPageIcon
+    label="a label"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
             Object {
+              "color": "#006699",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 15,
+              "height": 15,
+              "marginRight": 10,
+              "textAlign": "right",
+            }
+          }
+        >
+          a label
+        </Text>,
+        <Svg
+          height={9}
+          viewBox="42 12 60 120"
+          width={5}
+        >
+          <G
+            fill="#006699"
+          >
+            <Path
+              d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+            />
+          </G>
+        </Svg>,
+      ],
+      "style": Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "marginLeft": 10,
+        "marginRight": 12,
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "class",
+        "props": Object {
+          "accessible": true,
+          "allowFontScaling": true,
+          "children": "a label",
+          "disabled": false,
+          "ellipsizeMode": "tail",
+          "style": Object {
+            "color": "#006699",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 15,
+            "height": 15,
+            "marginRight": 10,
+            "textAlign": "right",
+          },
+        },
+        "ref": null,
+        "rendered": "a label",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "function",
+        "props": Object {
+          "children": <G
+            fill="#006699"
+          >
+            <Path
+              d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+            />
+          </G>,
+          "height": 9,
+          "viewBox": "42 12 60 120",
+          "width": 5,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "function",
+          "props": Object {
+            "children": <Path
+              d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+            />,
+            "fill": "#006699",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "function",
+            "props": Object {
+              "d": "M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
                 "color": "#006699",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 15,
@@ -31,241 +151,269 @@ ShallowWrapper {
                 "marginRight": 10,
                 "textAlign": "right",
               }
-        }
-    >
-        a label
-    </Text>
-    <Svg
-        height={9}
-        viewBox="42 12 60 120"
-        width={5}
-    >
-        <G
-            fill="#006699"
-        >
-            <Path
-                d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-            />
-        </G>
-    </Svg>
-</View>,
-  "nodes": Array [
-    <View
-      style={
-            Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                  "marginLeft": 10,
-                  "marginRight": 12,
-                }
-      }
->
-      <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-                  Object {
-                        "color": "#006699",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 15,
-                        "height": 15,
-                        "marginRight": 10,
-                        "textAlign": "right",
-                      }
             }
-      >
+          >
             a label
-      </Text>
-      <Svg
+          </Text>,
+          <Svg
             height={9}
             viewBox="42 12 60 120"
             width={5}
-      >
+          >
             <G
-                  fill="#006699"
+              fill="#006699"
             >
-                  <Path
-                        d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-                  />
+              <Path
+                d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+              />
             </G>
-      </Svg>
-</View>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <NextPageIcon
-        label="a label"
-/>,
-      "_debugID": 3,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "label": "a label",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
+          </Svg>,
+        ],
+        "style": Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "marginLeft": 10,
+          "marginRight": 12,
         },
       },
-      "_mountOrder": 2,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <View
-          style={
-                    Object {
-                              "alignItems": "center",
-                              "flexDirection": "row",
-                              "marginLeft": 10,
-                              "marginRight": 12,
-                            }
-          }
->
-          <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                              Object {
-                                        "color": "#006699",
-                                        "fontFamily": "GillSansMTStd-Medium",
-                                        "fontSize": 15,
-                                        "height": 15,
-                                        "marginRight": 10,
-                                        "textAlign": "right",
-                                      }
-                    }
-          >
-                    a label
-          </Text>
-          <Svg
-                    height={9}
-                    viewBox="42 12 60 120"
-                    width={5}
-          >
-                    <G
-                              fill="#006699"
-                    >
-                              <Path
-                                        d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-                              />
-                    </G>
-          </Svg>
-</View>,
-        "_debugID": 4,
-        "_renderedOutput": <View
-          style={
-                    Object {
-                              "alignItems": "center",
-                              "flexDirection": "row",
-                              "marginLeft": 10,
-                              "marginRight": 12,
-                            }
-          }
->
-          <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                              Object {
-                                        "color": "#006699",
-                                        "fontFamily": "GillSansMTStd-Medium",
-                                        "fontSize": 15,
-                                        "height": 15,
-                                        "marginRight": 10,
-                                        "textAlign": "right",
-                                      }
-                    }
-          >
-                    a label
-          </Text>
-          <Svg
-                    height={9}
-                    viewBox="42 12 60 120"
-                    width={5}
-          >
-                    <G
-                              fill="#006699"
-                    >
-                              <Path
-                                        d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-                              />
-                    </G>
-          </Svg>
-</View>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "class",
+          "props": Object {
+            "accessible": true,
+            "allowFontScaling": true,
+            "children": "a label",
+            "disabled": false,
+            "ellipsizeMode": "tail",
+            "style": Object {
+              "color": "#006699",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 15,
+              "height": 15,
+              "marginRight": 10,
+              "textAlign": "right",
+            },
+          },
+          "ref": null,
+          "rendered": "a label",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "function",
+          "props": Object {
+            "children": <G
+              fill="#006699"
+            >
+              <Path
+                d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+              />
+            </G>,
+            "height": 9,
+            "viewBox": "42 12 60 120",
+            "width": 5,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "function",
+            "props": Object {
+              "children": <Path
+                d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+              />,
+              "fill": "#006699",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "function",
+              "props": Object {
+                "d": "M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
     },
-    "getRenderOutput": [Function],
-    "render": [Function],
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
   },
-  "root": [Circular],
-  "unrendered": <NextPageIcon
-    label="a label"
-/>,
 }
 `;
 
 exports[`PaginationIcons Native Previous page icon renders out an svg and the passed in label 1`] = `
 ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
   "length": 1,
-  "node": <View
-    style={
-        Object {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "marginLeft": 10,
-          }
-    }
->
-    <Svg
-        height={9}
-        viewBox="42 12 60 120"
-        width={5}
-    >
-        <G
-            fill="#006699"
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PreviousPageIcon
+    label="a label"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Svg
+          height={9}
+          viewBox="42 12 60 120"
+          width={5}
         >
+          <G
+            fill="#006699"
+          >
             <Path
-                d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
+              d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
             />
-        </G>
-    </Svg>
-    <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
+          </G>
+        </Svg>,
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
             Object {
+              "color": "#006699",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 15,
+              "height": 15,
+              "marginLeft": 10,
+              "textAlign": "left",
+            }
+          }
+        >
+          a label
+        </Text>,
+      ],
+      "style": Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "marginLeft": 10,
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "function",
+        "props": Object {
+          "children": <G
+            fill="#006699"
+          >
+            <Path
+              d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
+            />
+          </G>,
+          "height": 9,
+          "viewBox": "42 12 60 120",
+          "width": 5,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "function",
+          "props": Object {
+            "children": <Path
+              d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
+            />,
+            "fill": "#006699",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "function",
+            "props": Object {
+              "d": "M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "class",
+        "props": Object {
+          "accessible": true,
+          "allowFontScaling": true,
+          "children": "a label",
+          "disabled": false,
+          "ellipsizeMode": "tail",
+          "style": Object {
+            "color": "#006699",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 15,
+            "height": 15,
+            "marginLeft": 10,
+            "textAlign": "left",
+          },
+        },
+        "ref": null,
+        "rendered": "a label",
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Svg
+            height={9}
+            viewBox="42 12 60 120"
+            width={5}
+          >
+            <G
+              fill="#006699"
+            >
+              <Path
+                d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
+              />
+            </G>
+          </Svg>,
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
                 "color": "#006699",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 15,
@@ -273,185 +421,95 @@ ShallowWrapper {
                 "marginLeft": 10,
                 "textAlign": "left",
               }
-        }
-    >
-        a label
-    </Text>
-</View>,
-  "nodes": Array [
-    <View
-      style={
-            Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                  "marginLeft": 10,
-                }
-      }
->
-      <Svg
-            height={9}
-            viewBox="42 12 60 120"
-            width={5}
-      >
-            <G
-                  fill="#006699"
-            >
-                  <Path
-                        d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
-                  />
-            </G>
-      </Svg>
-      <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-                  Object {
-                        "color": "#006699",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 15,
-                        "height": 15,
-                        "marginLeft": 10,
-                        "textAlign": "left",
-                      }
             }
-      >
+          >
             a label
-      </Text>
-</View>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <PreviousPageIcon
-        label="a label"
-/>,
-      "_debugID": 1,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "label": "a label",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
+          </Text>,
+        ],
+        "style": Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "marginLeft": 10,
         },
       },
-      "_mountOrder": 1,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <View
-          style={
-                    Object {
-                              "alignItems": "center",
-                              "flexDirection": "row",
-                              "marginLeft": 10,
-                            }
-          }
->
-          <Svg
-                    height={9}
-                    viewBox="42 12 60 120"
-                    width={5}
-          >
-                    <G
-                              fill="#006699"
-                    >
-                              <Path
-                                        d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
-                              />
-                    </G>
-          </Svg>
-          <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                              Object {
-                                        "color": "#006699",
-                                        "fontFamily": "GillSansMTStd-Medium",
-                                        "fontSize": 15,
-                                        "height": 15,
-                                        "marginLeft": 10,
-                                        "textAlign": "left",
-                                      }
-                    }
-          >
-                    a label
-          </Text>
-</View>,
-        "_debugID": 2,
-        "_renderedOutput": <View
-          style={
-                    Object {
-                              "alignItems": "center",
-                              "flexDirection": "row",
-                              "marginLeft": 10,
-                            }
-          }
->
-          <Svg
-                    height={9}
-                    viewBox="42 12 60 120"
-                    width={5}
-          >
-                    <G
-                              fill="#006699"
-                    >
-                              <Path
-                                        d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
-                              />
-                    </G>
-          </Svg>
-          <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                              Object {
-                                        "color": "#006699",
-                                        "fontFamily": "GillSansMTStd-Medium",
-                                        "fontSize": 15,
-                                        "height": 15,
-                                        "marginLeft": 10,
-                                        "textAlign": "left",
-                                      }
-                    }
-          >
-                    a label
-          </Text>
-</View>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "function",
+          "props": Object {
+            "children": <G
+              fill="#006699"
+            >
+              <Path
+                d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
+              />
+            </G>,
+            "height": 9,
+            "viewBox": "42 12 60 120",
+            "width": 5,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "function",
+            "props": Object {
+              "children": <Path
+                d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
+              />,
+              "fill": "#006699",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "function",
+              "props": Object {
+                "d": "M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "class",
+          "props": Object {
+            "accessible": true,
+            "allowFontScaling": true,
+            "children": "a label",
+            "disabled": false,
+            "ellipsizeMode": "tail",
+            "style": Object {
+              "color": "#006699",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 15,
+              "height": 15,
+              "marginLeft": 10,
+              "textAlign": "left",
+            },
+          },
+          "ref": null,
+          "rendered": "a label",
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
     },
-    "getRenderOutput": [Function],
-    "render": [Function],
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
   },
-  "root": [Circular],
-  "unrendered": <PreviousPageIcon
-    label="a label"
-/>,
 }
 `;

@@ -3,7 +3,8 @@
     "imageOptions": {
       "display": "primary",
       "ratio": "16:9",
-      "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0"
+      "url":
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0"
     },
     "captionOptions": {
       "caption": "All the latest stories in culture and books.",

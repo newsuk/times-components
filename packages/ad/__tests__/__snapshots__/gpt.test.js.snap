@@ -62,6 +62,7 @@ exports[`Gpt test renders an ad-header ad slot 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Object {
@@ -150,6 +151,7 @@ exports[`Gpt test renders an ad-pixel ad slot 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
+        disabled={false}
         ellipsizeMode="tail"
         style={
           Object {

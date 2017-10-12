@@ -14,6 +14,7 @@ exports[`renders correctly with a single author 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -34,6 +35,7 @@ exports[`renders correctly with a single author 1`] = `
       accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
       href="/profile/alexandra-frean"
       onPress={[Function]}
@@ -69,6 +71,7 @@ exports[`renders correctly with a single inline element 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -88,6 +91,7 @@ exports[`renders correctly with a single inline element 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
     >
       Lindsay McIntosh Scottish Political Editor
@@ -110,6 +114,7 @@ exports[`renders correctly with an empty AST (empty byline on DB) 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -143,6 +148,7 @@ exports[`renders correctly with multiple authors separated by spaces 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -163,6 +169,7 @@ exports[`renders correctly with multiple authors separated by spaces 1`] = `
       accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
       href="/profile/camilla-long"
       onPress={[Function]}
@@ -183,6 +190,7 @@ exports[`renders correctly with multiple authors separated by spaces 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
     >
        
@@ -191,6 +199,7 @@ exports[`renders correctly with multiple authors separated by spaces 1`] = `
       accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
       href="/profile/mike-atherton"
       onPress={[Function]}
@@ -211,6 +220,7 @@ exports[`renders correctly with multiple authors separated by spaces 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
     >
        
@@ -219,6 +229,7 @@ exports[`renders correctly with multiple authors separated by spaces 1`] = `
       accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
       href="/profile/alexandra-frean"
       onPress={[Function]}
@@ -254,6 +265,7 @@ exports[`renders correctly with multiple authors separated by text with commas 1
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -274,6 +286,7 @@ exports[`renders correctly with multiple authors separated by text with commas 1
       accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
       href="/profile/camilla-long"
       onPress={[Function]}
@@ -294,6 +307,7 @@ exports[`renders correctly with multiple authors separated by text with commas 1
     <Text
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
     >
       , 
@@ -302,6 +316,7 @@ exports[`renders correctly with multiple authors separated by text with commas 1
       accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
       href="/profile/mike-atherton"
       onPress={[Function]}
@@ -322,6 +337,7 @@ exports[`renders correctly with multiple authors separated by text with commas 1
     <Text
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
     >
       , 
@@ -330,6 +346,7 @@ exports[`renders correctly with multiple authors separated by text with commas 1
       accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
       href="/profile/alexandra-frean"
       onPress={[Function]}
@@ -365,6 +382,7 @@ exports[`renders correctly with styles 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -387,6 +405,7 @@ exports[`renders correctly with styles 1`] = `
       accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
       href="/profile/alexandra-frean"
       onPress={[Function]}
@@ -425,6 +444,7 @@ exports[`renders correctly with the author at the end 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -444,6 +464,7 @@ exports[`renders correctly with the author at the end 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
     >
       RBS Six Nations 
@@ -452,6 +473,7 @@ exports[`renders correctly with the author at the end 1`] = `
       accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
       href="/profile/mike-atherton"
       onPress={[Function]}
@@ -487,6 +509,7 @@ exports[`renders correctly with the author in the begining 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -507,6 +530,7 @@ exports[`renders correctly with the author in the begining 1`] = `
       accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
       href="/profile/camilla-long"
       onPress={[Function]}
@@ -527,6 +551,7 @@ exports[`renders correctly with the author in the begining 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
+      disabled={false}
       ellipsizeMode="tail"
     >
       , Environment Editor

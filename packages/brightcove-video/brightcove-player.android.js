@@ -16,7 +16,12 @@ function withNativeCommand(WrappedComponent) {
     constructor(props) {
       super(props);
 
+      this.state = {
+        isFullscreen: false
+      };
+
       this.runNativeCommand = this.runNativeCommand.bind(this);
+      this.onChange = this.onChange.bind(this);
     }
 
     componentDidMount() {
@@ -25,6 +30,10 @@ function withNativeCommand(WrappedComponent) {
       publicMethods.forEach(name => {
         this[name] = this.bcv.publicMethods[name];
       });
+    }
+
+    onChange(evt) {
+      this.setState({ isFullscreen: evt.isFullscreen });
     }
 
     runNativeCommand(name, args) {
@@ -36,9 +45,21 @@ function withNativeCommand(WrappedComponent) {
     }
 
     render() {
+      const androidSpecificProps = {
+        onChange: this.onChange
+      };
+
+      if (this.state.isFullscreen) {
+        androidSpecificProps.width = "100%";
+        androidSpecificProps.height = "100%";
+        androidSpecificProps.position = "absolute";
+        androidSpecificProps.zIndex = 9999;
+      }
+
       const props = Object.assign(
         { runNativeCommand: this.runNativeCommand },
-        this.props
+        this.props,
+        androidSpecificProps
       );
 
       return (

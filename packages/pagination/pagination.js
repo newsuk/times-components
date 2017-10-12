@@ -118,7 +118,7 @@ class Pagination extends React.Component {
       startResult > pageSize ? (
         <Link
           style={styles.arrow}
-          onPress={(...params) => onPrev(page - 1, ...params)}
+          onPress={e => onPrev(e, page - 1)}
           url={generatePageLink(page - 1)}
         >
           <PreviousPageIcon label={previousLabel} />
@@ -129,7 +129,7 @@ class Pagination extends React.Component {
       finalResult < count ? (
         <Link
           style={styles.arrow}
-          onPress={(...params) => onNext(page + 1, ...params)}
+          onPress={e => onNext(e, page + 1)}
           url={generatePageLink(page + 1)}
         >
           <NextPageIcon label={nextLabel} />
