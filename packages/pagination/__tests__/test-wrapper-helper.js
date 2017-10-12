@@ -45,9 +45,7 @@ export default withPageState => () => {
     };
 
     const wrapper = shallow(<PageChanger {...props} />);
-    wrapper.instance().handleChangePage(1, {
-      preventDefault: () => {}
-    });
+    wrapper.instance().handleChangePage({ preventDefault: () => {} }, 1);
     wrapper.update();
 
     expect(wrapper.state().page).toEqual(1);
@@ -62,9 +60,7 @@ export default withPageState => () => {
     };
 
     const wrapper = shallow(<PageChanger {...props} />);
-    wrapper.instance().handleChangePage(3, {
-      preventDefault: () => {}
-    });
+    wrapper.instance().handleChangePage({ preventDefault: () => {} }, 3);
     wrapper.update();
 
     expect(wrapper.state().page).toEqual(3);
