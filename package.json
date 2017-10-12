@@ -2,7 +2,7 @@
   "name": "times-components",
   "version": "0.0.1",
   "description":
-    "A collection of presentational components for The Times and Sunday Times",
+  "A collection of presentational components for The Times and Sunday Times",
   "main": "index.js",
   "engines": {
     "node": ">=8.0.0",
@@ -23,7 +23,7 @@
     "storybook": "start-storybook -p 9001 -c .storybook -s ./dist/public",
     "prestorybook:build": "npm run prestorybook",
     "storybook:build-vendor":
-      "webpack --config ./.storybook/vendor.webpack.config.js",
+    "webpack --config ./.storybook/vendor.webpack.config.js",
     "storybook:build": "build-storybook -c .storybook -s ./dist/public",
     "storybook:publish": "./lib/publish_storybook.sh",
     "prestorybook-native": "rnstl && node ./lib/fetch-fonts",
@@ -32,12 +32,12 @@
     "ios": "react-native run-ios",
     "preandroid": "npm run fetch-fonts",
     "android": "react-native run-android",
-    "prettier:diff": "prettier --list-different 'packages/**/*.js'",
-    "fmt": "prettier --write 'packages/**/*.js'",
+    "prettier:diff": "prettier --list-different 'packages/**/*.+(js|json)'",
+    "fmt": "prettier --write 'packages/**/*.+(js|json)'",
     "packages:publish":
-      "lerna publish --conventional-commits --yes --concurrency=1 --exact",
+    "lerna publish --conventional-commits --yes --concurrency=1 --exact",
     "packages:publish-dry-run":
-      "npm run packages:publish -- --skip-git --skip-npm",
+    "npm run packages:publish -- --skip-git --skip-npm",
     "update-deps": "lerna bootstrap --hoist --npm-client=yarn --concurrency=1",
     "postinstall": "npm run update-deps --silent",
     "fructose-app": "export CWD=$(pwd) && export FRC=$CWD/.fructose && react-native start --projectRoots $CWD,$FRC --resetCache"
@@ -61,7 +61,7 @@
     "configurations": {
       "ios.sim.debug": {
         "binaryPath":
-          "ios/build/Build/Products/Debug-iphonesimulator/storybooknative.app",
+        "ios/build/Build/Products/Debug-iphonesimulator/storybooknative.app",
         "type": "ios.simulator",
         "name": "iPhone 7"
       }
