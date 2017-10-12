@@ -29,6 +29,7 @@ exports[`renders correctly with a single author 1`] = `
         },
       ]
     }
+    testID="articleByline"
   >
     <Text
       accessibilityRole="link"
@@ -85,6 +86,7 @@ exports[`renders correctly with a single inline element 1`] = `
         },
       ]
     }
+    testID="articleByline"
   >
     <Text
       accessible={true}
@@ -127,6 +129,7 @@ exports[`renders correctly with an empty AST (empty byline on DB) 1`] = `
         },
       ]
     }
+    testID="articleByline"
   />
 </View>
 `;
@@ -160,6 +163,7 @@ exports[`renders correctly with multiple authors separated by spaces 1`] = `
         },
       ]
     }
+    testID="articleByline"
   >
     <Text
       accessibilityRole="link"
@@ -276,6 +280,7 @@ exports[`renders correctly with multiple authors separated by text with commas 1
         },
       ]
     }
+    testID="articleByline"
   >
     <Text
       accessibilityRole="link"
@@ -394,6 +399,7 @@ exports[`renders correctly with styles 1`] = `
         },
       ]
     }
+    testID="articleByline"
   >
     <Text
       accessibilityRole="link"
@@ -453,6 +459,7 @@ exports[`renders correctly with the author at the end 1`] = `
         },
       ]
     }
+    testID="articleByline"
   >
     <Text
       accessible={true}
@@ -517,6 +524,7 @@ exports[`renders correctly with the author in the begining 1`] = `
         },
       ]
     }
+    testID="articleByline"
   >
     <Text
       accessibilityRole="link"

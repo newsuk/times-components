@@ -18,7 +18,7 @@ const publications = {
 };
 
 const DatePublication = ({ date, publication, style }) => (
-  <Text style={[styles.default, style]}>
+  <Text testID="datePublication" style={[styles.default, style]}>
     {format(date, "dddd MMMM DD YYYY")}
     {publications[publication] ? `, ${publications[publication]}` : ""}
   </Text>

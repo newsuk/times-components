@@ -17,6 +17,7 @@ exports[`Date Publication test renders a DatePublication component with content 
       Object {},
     ]
   }
+  testID="datePublication"
 >
   Saturday July 01 2017
   , The Times
@@ -42,6 +43,7 @@ exports[`Date Publication test renders a DatePublication component with red font
       },
     ]
   }
+  testID="datePublication"
 >
   Saturday July 01 2017
   , The Times

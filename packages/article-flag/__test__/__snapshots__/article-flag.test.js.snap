@@ -52,6 +52,7 @@ exports[`Article Flag test on web and ios renders Exclusive flag correctly 1`] =
         },
       ]
     }
+    testID="flag-exclusive"
   >
     EXCLUSIVE
   </Text>
@@ -110,6 +111,7 @@ exports[`Article Flag test on web and ios renders New flag correctly 1`] = `
         },
       ]
     }
+    testID="flag-new"
   >
     NEW
   </Text>
@@ -168,6 +170,7 @@ exports[`Article Flag test on web and ios renders Sponsored flag correctly 1`] =
         },
       ]
     }
+    testID="flag-sponsored"
   >
     SPONSORED
   </Text>
@@ -226,6 +229,7 @@ exports[`Article Flag test on web and ios renders Updated flag correctly 1`] = `
         },
       ]
     }
+    testID="flag-updated"
   >
     UPDATED
   </Text>
@@ -284,6 +288,7 @@ exports[`Article Flag test on web and ios renders correctly 1`] = `
         },
       ]
     }
+    testID="flag-articleFlag"
   >
     ARTICLEFLAG
   </Text>

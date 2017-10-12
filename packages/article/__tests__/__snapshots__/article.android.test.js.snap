@@ -33,6 +33,7 @@ exports[`Article test on android renders article no flags 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
+  testID="listView"
 >
   <View>
     <View
@@ -41,6 +42,7 @@ exports[`Article test on android renders article no flags 1`] = `
           "marginBottom": 6,
         }
       }
+      testID="leadAsset"
     >
       <Image
         aspectRatio={1.7777777777777777}
@@ -79,6 +81,7 @@ exports[`Article test on android renders article no flags 1`] = `
             "paddingTop": 4,
           }
         }
+        testID="label"
       >
         <Text
           accessible={true}
@@ -127,6 +130,7 @@ exports[`Article test on android renders article no flags 1`] = `
             },
           ]
         }
+        testID="headline"
       >
         Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
       </Text>
@@ -146,6 +150,7 @@ exports[`Article test on android renders article no flags 1`] = `
             },
           ]
         }
+        testID="standfirst"
       >
         How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life
       </Text>
@@ -212,6 +217,7 @@ exports[`Article test on android renders article no flags 1`] = `
                   },
                 ]
               }
+              testID="articleByline"
             >
               <Text
                 accessible={true}
@@ -252,6 +258,7 @@ exports[`Article test on android renders article no flags 1`] = `
                 Object {},
               ]
             }
+            testID="datePublication"
           >
             Friday March 13 2015
             , The Times
@@ -269,6 +276,7 @@ exports[`Article test on android renders article no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-0"
       >
         <Text
           accessible={true}
@@ -327,6 +335,7 @@ exports[`Article test on android renders article no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-1"
       >
         <Text
           accessible={true}
@@ -370,6 +379,7 @@ exports[`Article test on android renders article no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-2"
       >
         <Text
           accessible={true}
@@ -401,6 +411,7 @@ exports[`Article test on android renders article no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-3"
       >
         <Text
           accessible={true}
@@ -432,6 +443,7 @@ exports[`Article test on android renders article no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-4"
       >
         <Text
           accessible={true}
@@ -463,6 +475,7 @@ exports[`Article test on android renders article no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-5"
       >
         <Text
           accessible={true}
@@ -494,6 +507,7 @@ exports[`Article test on android renders article no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-6"
       >
         <Text
           accessible={true}
@@ -525,6 +539,7 @@ exports[`Article test on android renders article no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-7"
       >
         <Text
           accessible={true}
@@ -556,6 +571,7 @@ exports[`Article test on android renders article no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-8"
       >
         <Text
           accessible={true}
@@ -587,6 +603,7 @@ exports[`Article test on android renders article no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-9"
       >
         <Text
           accessible={true}
@@ -618,6 +635,7 @@ exports[`Article test on android renders article no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-10"
       >
         <Text
           accessible={true}
@@ -649,6 +667,7 @@ exports[`Article test on android renders article no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-11"
       >
         <Text
           accessible={true}
@@ -680,6 +699,7 @@ exports[`Article test on android renders article no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-12"
       >
         <Text
           accessible={true}
@@ -718,6 +738,7 @@ exports[`Article test on android renders article no label 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
+  testID="listView"
 >
   <View>
     <View
@@ -726,6 +747,7 @@ exports[`Article test on android renders article no label 1`] = `
           "marginBottom": 6,
         }
       }
+      testID="leadAsset"
     >
       <Image
         aspectRatio={1.7777777777777777}
@@ -781,6 +803,7 @@ exports[`Article test on android renders article no label 1`] = `
             },
           ]
         }
+        testID="headline"
       >
         Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
       </Text>
@@ -800,6 +823,7 @@ exports[`Article test on android renders article no label 1`] = `
             },
           ]
         }
+        testID="standfirst"
       >
         How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life
       </Text>
@@ -871,6 +895,7 @@ exports[`Article test on android renders article no label 1`] = `
                   },
                 ]
               }
+              testID="flag-new"
             >
               N E W
             </Text>
@@ -934,6 +959,7 @@ exports[`Article test on android renders article no label 1`] = `
                   },
                 ]
               }
+              testID="flag-exclusive"
             >
               E X C L U S I V E
             </Text>
@@ -1003,6 +1029,7 @@ exports[`Article test on android renders article no label 1`] = `
                   },
                 ]
               }
+              testID="articleByline"
             >
               <Text
                 accessible={true}
@@ -1043,6 +1070,7 @@ exports[`Article test on android renders article no label 1`] = `
                 Object {},
               ]
             }
+            testID="datePublication"
           >
             Friday March 13 2015
             , The Times
@@ -1060,6 +1088,7 @@ exports[`Article test on android renders article no label 1`] = `
             },
           ]
         }
+        testID="paragraph-0"
       >
         <Text
           accessible={true}
@@ -1118,6 +1147,7 @@ exports[`Article test on android renders article no label 1`] = `
             },
           ]
         }
+        testID="paragraph-1"
       >
         <Text
           accessible={true}
@@ -1161,6 +1191,7 @@ exports[`Article test on android renders article no label 1`] = `
             },
           ]
         }
+        testID="paragraph-2"
       >
         <Text
           accessible={true}
@@ -1192,6 +1223,7 @@ exports[`Article test on android renders article no label 1`] = `
             },
           ]
         }
+        testID="paragraph-3"
       >
         <Text
           accessible={true}
@@ -1223,6 +1255,7 @@ exports[`Article test on android renders article no label 1`] = `
             },
           ]
         }
+        testID="paragraph-4"
       >
         <Text
           accessible={true}
@@ -1254,6 +1287,7 @@ exports[`Article test on android renders article no label 1`] = `
             },
           ]
         }
+        testID="paragraph-5"
       >
         <Text
           accessible={true}
@@ -1285,6 +1319,7 @@ exports[`Article test on android renders article no label 1`] = `
             },
           ]
         }
+        testID="paragraph-6"
       >
         <Text
           accessible={true}
@@ -1316,6 +1351,7 @@ exports[`Article test on android renders article no label 1`] = `
             },
           ]
         }
+        testID="paragraph-7"
       >
         <Text
           accessible={true}
@@ -1347,6 +1383,7 @@ exports[`Article test on android renders article no label 1`] = `
             },
           ]
         }
+        testID="paragraph-8"
       >
         <Text
           accessible={true}
@@ -1378,6 +1415,7 @@ exports[`Article test on android renders article no label 1`] = `
             },
           ]
         }
+        testID="paragraph-9"
       >
         <Text
           accessible={true}
@@ -1409,6 +1447,7 @@ exports[`Article test on android renders article no label 1`] = `
             },
           ]
         }
+        testID="paragraph-10"
       >
         <Text
           accessible={true}
@@ -1440,6 +1479,7 @@ exports[`Article test on android renders article no label 1`] = `
             },
           ]
         }
+        testID="paragraph-11"
       >
         <Text
           accessible={true}
@@ -1471,6 +1511,7 @@ exports[`Article test on android renders article no label 1`] = `
             },
           ]
         }
+        testID="paragraph-12"
       >
         <Text
           accessible={true}
@@ -1509,6 +1550,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
+  testID="listView"
 >
   <View>
     <View
@@ -1517,6 +1559,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           "marginBottom": 6,
         }
       }
+      testID="leadAsset"
     >
       <Image
         aspectRatio={1.7777777777777777}
@@ -1572,6 +1615,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
             },
           ]
         }
+        testID="headline"
       >
         Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
       </Text>
@@ -1591,6 +1635,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
             },
           ]
         }
+        testID="standfirst"
       >
         How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life
       </Text>
@@ -1657,6 +1702,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
                   },
                 ]
               }
+              testID="articleByline"
             >
               <Text
                 accessible={true}
@@ -1697,6 +1743,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
                 Object {},
               ]
             }
+            testID="datePublication"
           >
             Friday March 13 2015
             , The Times
@@ -1714,6 +1761,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-0"
       >
         <Text
           accessible={true}
@@ -1772,6 +1820,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-1"
       >
         <Text
           accessible={true}
@@ -1815,6 +1864,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-2"
       >
         <Text
           accessible={true}
@@ -1846,6 +1896,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-3"
       >
         <Text
           accessible={true}
@@ -1877,6 +1928,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-4"
       >
         <Text
           accessible={true}
@@ -1908,6 +1960,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-5"
       >
         <Text
           accessible={true}
@@ -1939,6 +1992,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-6"
       >
         <Text
           accessible={true}
@@ -1970,6 +2024,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-7"
       >
         <Text
           accessible={true}
@@ -2001,6 +2056,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-8"
       >
         <Text
           accessible={true}
@@ -2032,6 +2088,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-9"
       >
         <Text
           accessible={true}
@@ -2063,6 +2120,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-10"
       >
         <Text
           accessible={true}
@@ -2094,6 +2152,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-11"
       >
         <Text
           accessible={true}
@@ -2125,6 +2184,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-12"
       >
         <Text
           accessible={true}
@@ -2163,6 +2223,7 @@ exports[`Article test on android renders article no label no flags no standfirst
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
+  testID="listView"
 >
   <View>
     <View
@@ -2171,6 +2232,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           "marginBottom": 6,
         }
       }
+      testID="leadAsset"
     >
       <Image
         aspectRatio={1.7777777777777777}
@@ -2226,6 +2288,7 @@ exports[`Article test on android renders article no label no flags no standfirst
             },
           ]
         }
+        testID="headline"
       >
         Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
       </Text>
@@ -2292,6 +2355,7 @@ exports[`Article test on android renders article no label no flags no standfirst
                   },
                 ]
               }
+              testID="articleByline"
             >
               <Text
                 accessible={true}
@@ -2332,6 +2396,7 @@ exports[`Article test on android renders article no label no flags no standfirst
                 Object {},
               ]
             }
+            testID="datePublication"
           >
             Friday March 13 2015
             , The Times
@@ -2349,6 +2414,7 @@ exports[`Article test on android renders article no label no flags no standfirst
             },
           ]
         }
+        testID="paragraph-0"
       >
         <Text
           accessible={true}
@@ -2407,6 +2473,7 @@ exports[`Article test on android renders article no label no flags no standfirst
             },
           ]
         }
+        testID="paragraph-1"
       >
         <Text
           accessible={true}
@@ -2450,6 +2517,7 @@ exports[`Article test on android renders article no label no flags no standfirst
             },
           ]
         }
+        testID="paragraph-2"
       >
         <Text
           accessible={true}
@@ -2481,6 +2549,7 @@ exports[`Article test on android renders article no label no flags no standfirst
             },
           ]
         }
+        testID="paragraph-3"
       >
         <Text
           accessible={true}
@@ -2512,6 +2581,7 @@ exports[`Article test on android renders article no label no flags no standfirst
             },
           ]
         }
+        testID="paragraph-4"
       >
         <Text
           accessible={true}
@@ -2543,6 +2613,7 @@ exports[`Article test on android renders article no label no flags no standfirst
             },
           ]
         }
+        testID="paragraph-5"
       >
         <Text
           accessible={true}
@@ -2574,6 +2645,7 @@ exports[`Article test on android renders article no label no flags no standfirst
             },
           ]
         }
+        testID="paragraph-6"
       >
         <Text
           accessible={true}
@@ -2605,6 +2677,7 @@ exports[`Article test on android renders article no label no flags no standfirst
             },
           ]
         }
+        testID="paragraph-7"
       >
         <Text
           accessible={true}
@@ -2636,6 +2709,7 @@ exports[`Article test on android renders article no label no flags no standfirst
             },
           ]
         }
+        testID="paragraph-8"
       >
         <Text
           accessible={true}
@@ -2667,6 +2741,7 @@ exports[`Article test on android renders article no label no flags no standfirst
             },
           ]
         }
+        testID="paragraph-9"
       >
         <Text
           accessible={true}
@@ -2698,6 +2773,7 @@ exports[`Article test on android renders article no label no flags no standfirst
             },
           ]
         }
+        testID="paragraph-10"
       >
         <Text
           accessible={true}
@@ -2729,6 +2805,7 @@ exports[`Article test on android renders article no label no flags no standfirst
             },
           ]
         }
+        testID="paragraph-11"
       >
         <Text
           accessible={true}
@@ -2760,6 +2837,7 @@ exports[`Article test on android renders article no label no flags no standfirst
             },
           ]
         }
+        testID="paragraph-12"
       >
         <Text
           accessible={true}
@@ -2798,6 +2876,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
+  testID="listView"
 >
   <View>
     <View
@@ -2806,6 +2885,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           "marginBottom": 6,
         }
       }
+      testID="leadAsset"
     >
       <Image
         aspectRatio={1.7777777777777777}
@@ -2844,6 +2924,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             "paddingTop": 4,
           }
         }
+        testID="label"
       >
         <Text
           accessible={true}
@@ -2892,6 +2973,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             },
           ]
         }
+        testID="headline"
       >
         Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
       </Text>
@@ -2963,6 +3045,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
                   },
                 ]
               }
+              testID="flag-new"
             >
               N E W
             </Text>
@@ -3026,6 +3109,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
                   },
                 ]
               }
+              testID="flag-exclusive"
             >
               E X C L U S I V E
             </Text>
@@ -3095,6 +3179,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
                   },
                 ]
               }
+              testID="articleByline"
             >
               <Text
                 accessible={true}
@@ -3135,6 +3220,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
                 Object {},
               ]
             }
+            testID="datePublication"
           >
             Friday March 13 2015
             , The Times
@@ -3152,6 +3238,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             },
           ]
         }
+        testID="paragraph-0"
       >
         <Text
           accessible={true}
@@ -3210,6 +3297,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             },
           ]
         }
+        testID="paragraph-1"
       >
         <Text
           accessible={true}
@@ -3253,6 +3341,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             },
           ]
         }
+        testID="paragraph-2"
       >
         <Text
           accessible={true}
@@ -3284,6 +3373,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             },
           ]
         }
+        testID="paragraph-3"
       >
         <Text
           accessible={true}
@@ -3315,6 +3405,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             },
           ]
         }
+        testID="paragraph-4"
       >
         <Text
           accessible={true}
@@ -3346,6 +3437,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             },
           ]
         }
+        testID="paragraph-5"
       >
         <Text
           accessible={true}
@@ -3377,6 +3469,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             },
           ]
         }
+        testID="paragraph-6"
       >
         <Text
           accessible={true}
@@ -3408,6 +3501,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             },
           ]
         }
+        testID="paragraph-7"
       >
         <Text
           accessible={true}
@@ -3439,6 +3533,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             },
           ]
         }
+        testID="paragraph-8"
       >
         <Text
           accessible={true}
@@ -3470,6 +3565,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             },
           ]
         }
+        testID="paragraph-9"
       >
         <Text
           accessible={true}
@@ -3501,6 +3597,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             },
           ]
         }
+        testID="paragraph-10"
       >
         <Text
           accessible={true}
@@ -3532,6 +3629,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             },
           ]
         }
+        testID="paragraph-11"
       >
         <Text
           accessible={true}
@@ -3563,6 +3661,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             },
           ]
         }
+        testID="paragraph-12"
       >
         <Text
           accessible={true}
@@ -3601,6 +3700,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
+  testID="listView"
 >
   <View>
     <View
@@ -3609,6 +3709,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           "marginBottom": 6,
         }
       }
+      testID="leadAsset"
     >
       <Image
         aspectRatio={1.7777777777777777}
@@ -3647,6 +3748,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             "paddingTop": 4,
           }
         }
+        testID="label"
       >
         <Text
           accessible={true}
@@ -3695,6 +3797,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             },
           ]
         }
+        testID="headline"
       >
         Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
       </Text>
@@ -3761,6 +3864,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
                   },
                 ]
               }
+              testID="articleByline"
             >
               <Text
                 accessible={true}
@@ -3801,6 +3905,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
                 Object {},
               ]
             }
+            testID="datePublication"
           >
             Friday March 13 2015
             , The Times
@@ -3818,6 +3923,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-0"
       >
         <Text
           accessible={true}
@@ -3876,6 +3982,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-1"
       >
         <Text
           accessible={true}
@@ -3919,6 +4026,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-2"
       >
         <Text
           accessible={true}
@@ -3950,6 +4058,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-3"
       >
         <Text
           accessible={true}
@@ -3981,6 +4090,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-4"
       >
         <Text
           accessible={true}
@@ -4012,6 +4122,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-5"
       >
         <Text
           accessible={true}
@@ -4043,6 +4154,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-6"
       >
         <Text
           accessible={true}
@@ -4074,6 +4186,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-7"
       >
         <Text
           accessible={true}
@@ -4105,6 +4218,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-8"
       >
         <Text
           accessible={true}
@@ -4136,6 +4250,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-9"
       >
         <Text
           accessible={true}
@@ -4167,6 +4282,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-10"
       >
         <Text
           accessible={true}
@@ -4198,6 +4314,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-11"
       >
         <Text
           accessible={true}
@@ -4229,6 +4346,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             },
           ]
         }
+        testID="paragraph-12"
       >
         <Text
           accessible={true}
@@ -4267,6 +4385,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
+  testID="listView"
 >
   <View>
     <View
@@ -4275,6 +4394,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           "marginBottom": 6,
         }
       }
+      testID="leadAsset"
     >
       <Image
         aspectRatio={1.7777777777777777}
@@ -4330,6 +4450,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             },
           ]
         }
+        testID="headline"
       >
         Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
       </Text>
@@ -4401,6 +4522,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
                   },
                 ]
               }
+              testID="flag-new"
             >
               N E W
             </Text>
@@ -4464,6 +4586,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
                   },
                 ]
               }
+              testID="flag-exclusive"
             >
               E X C L U S I V E
             </Text>
@@ -4533,6 +4656,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
                   },
                 ]
               }
+              testID="articleByline"
             >
               <Text
                 accessible={true}
@@ -4573,6 +4697,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
                 Object {},
               ]
             }
+            testID="datePublication"
           >
             Friday March 13 2015
             , The Times
@@ -4590,6 +4715,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             },
           ]
         }
+        testID="paragraph-0"
       >
         <Text
           accessible={true}
@@ -4648,6 +4774,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             },
           ]
         }
+        testID="paragraph-1"
       >
         <Text
           accessible={true}
@@ -4691,6 +4818,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             },
           ]
         }
+        testID="paragraph-2"
       >
         <Text
           accessible={true}
@@ -4722,6 +4850,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             },
           ]
         }
+        testID="paragraph-3"
       >
         <Text
           accessible={true}
@@ -4753,6 +4882,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             },
           ]
         }
+        testID="paragraph-4"
       >
         <Text
           accessible={true}
@@ -4784,6 +4914,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             },
           ]
         }
+        testID="paragraph-5"
       >
         <Text
           accessible={true}
@@ -4815,6 +4946,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             },
           ]
         }
+        testID="paragraph-6"
       >
         <Text
           accessible={true}
@@ -4846,6 +4978,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             },
           ]
         }
+        testID="paragraph-7"
       >
         <Text
           accessible={true}
@@ -4877,6 +5010,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             },
           ]
         }
+        testID="paragraph-8"
       >
         <Text
           accessible={true}
@@ -4908,6 +5042,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             },
           ]
         }
+        testID="paragraph-9"
       >
         <Text
           accessible={true}
@@ -4939,6 +5074,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             },
           ]
         }
+        testID="paragraph-10"
       >
         <Text
           accessible={true}
@@ -4970,6 +5106,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             },
           ]
         }
+        testID="paragraph-11"
       >
         <Text
           accessible={true}
@@ -5001,6 +5138,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             },
           ]
         }
+        testID="paragraph-12"
       >
         <Text
           accessible={true}
@@ -5039,6 +5177,7 @@ exports[`Article test on android renders full article 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
+  testID="listView"
 >
   <View>
     <View
@@ -5047,6 +5186,7 @@ exports[`Article test on android renders full article 1`] = `
           "marginBottom": 6,
         }
       }
+      testID="leadAsset"
     >
       <Image
         aspectRatio={1.7777777777777777}
@@ -5085,6 +5225,7 @@ exports[`Article test on android renders full article 1`] = `
             "paddingTop": 4,
           }
         }
+        testID="label"
       >
         <Text
           accessible={true}
@@ -5133,6 +5274,7 @@ exports[`Article test on android renders full article 1`] = `
             },
           ]
         }
+        testID="headline"
       >
         Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
       </Text>
@@ -5152,6 +5294,7 @@ exports[`Article test on android renders full article 1`] = `
             },
           ]
         }
+        testID="standfirst"
       >
         How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life
       </Text>
@@ -5223,6 +5366,7 @@ exports[`Article test on android renders full article 1`] = `
                   },
                 ]
               }
+              testID="flag-new"
             >
               N E W
             </Text>
@@ -5286,6 +5430,7 @@ exports[`Article test on android renders full article 1`] = `
                   },
                 ]
               }
+              testID="flag-exclusive"
             >
               E X C L U S I V E
             </Text>
@@ -5355,6 +5500,7 @@ exports[`Article test on android renders full article 1`] = `
                   },
                 ]
               }
+              testID="articleByline"
             >
               <Text
                 accessible={true}
@@ -5395,6 +5541,7 @@ exports[`Article test on android renders full article 1`] = `
                 Object {},
               ]
             }
+            testID="datePublication"
           >
             Friday March 13 2015
             , The Times
@@ -5412,6 +5559,7 @@ exports[`Article test on android renders full article 1`] = `
             },
           ]
         }
+        testID="paragraph-0"
       >
         <Text
           accessible={true}
@@ -5470,6 +5618,7 @@ exports[`Article test on android renders full article 1`] = `
             },
           ]
         }
+        testID="paragraph-1"
       >
         <Text
           accessible={true}
@@ -5610,6 +5759,7 @@ exports[`Article test on android renders full article 1`] = `
             },
           ]
         }
+        testID="paragraph-3"
       >
         <Text
           accessible={true}
@@ -5641,6 +5791,7 @@ exports[`Article test on android renders full article 1`] = `
             },
           ]
         }
+        testID="paragraph-4"
       >
         <Text
           accessible={true}
@@ -5784,6 +5935,7 @@ exports[`Article test on android renders full article 1`] = `
             },
           ]
         }
+        testID="paragraph-6"
       >
         <Text
           accessible={true}
@@ -6027,6 +6179,7 @@ exports[`Article test on android renders full article 1`] = `
             },
           ]
         }
+        testID="paragraph-8"
       >
         <Text
           accessible={true}
@@ -6170,6 +6323,7 @@ exports[`Article test on android renders full article 1`] = `
             },
           ]
         }
+        testID="paragraph-10"
       >
         <Text
           accessible={true}
@@ -6313,6 +6467,7 @@ exports[`Article test on android renders full article 1`] = `
             },
           ]
         }
+        testID="paragraph-12"
       >
         <Text
           accessible={true}
@@ -6344,6 +6499,7 @@ exports[`Article test on android renders full article 1`] = `
             },
           ]
         }
+        testID="paragraph-13"
       >
         <Text
           accessible={true}
@@ -6375,6 +6531,7 @@ exports[`Article test on android renders full article 1`] = `
             },
           ]
         }
+        testID="paragraph-14"
       >
         <Text
           accessible={true}
@@ -6406,6 +6563,7 @@ exports[`Article test on android renders full article 1`] = `
             },
           ]
         }
+        testID="paragraph-15"
       >
         <Text
           accessible={true}
@@ -6437,6 +6595,7 @@ exports[`Article test on android renders full article 1`] = `
             },
           ]
         }
+        testID="paragraph-16"
       >
         <Text
           accessible={true}
@@ -6468,6 +6627,7 @@ exports[`Article test on android renders full article 1`] = `
             },
           ]
         }
+        testID="paragraph-17"
       >
         <Text
           accessible={true}

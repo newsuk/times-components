@@ -36,13 +36,17 @@ const renderFlags = flags => {
 
 const renderStandfirst = standfirst => {
   if (!standfirst) return null;
-  return <Text style={[styles.standFirst]}>{standfirst}</Text>;
+  return (
+    <Text testID="standfirst" style={[styles.standFirst]}>
+      {standfirst}
+    </Text>
+  );
 };
 
 const renderLabel = label => {
   if (!label) return null;
   return (
-    <View style={styles.articleLabel}>
+    <View testID="label" style={styles.articleLabel}>
       <ArticleLabel title={label} color="#13354E" />
     </View>
   );

@@ -71,6 +71,7 @@ exports[`renders an article-summary component 1`] = `
         Object {},
       ]
     }
+    testID="datePublication"
   >
     Thursday January 01 1970
     
@@ -196,6 +197,7 @@ exports[`renders an article-summary component with content 1`] = `
         Object {},
       ]
     }
+    testID="datePublication"
   >
     Saturday July 01 2017
     , The Sunday Times

@@ -38,7 +38,7 @@ class ArticlePage extends React.Component {
   static renderRow(rowData) {
     if (rowData.type === "leadAsset") {
       return (
-        <View style={styles.leadAsset}>
+        <View testID="leadAsset" style={styles.leadAsset}>
           <Image uri={rowData.data.crop.url} aspectRatio={16 / 9} />
         </View>
       );
@@ -67,7 +67,11 @@ class ArticlePage extends React.Component {
           {renderTrees([rowData.data], {
             paragraph(key, attributes, children) {
               return (
-                <View key={key} style={[styles.articleMainContentRow]}>
+                <View
+                  testID={`paragraph-${rowData.index}`}
+                  key={key}
+                  style={[styles.articleMainContentRow]}
+                >
                   <Text style={styles.articleTextElement}>{children}</Text>
                 </View>
               );
@@ -128,6 +132,7 @@ class ArticlePage extends React.Component {
 
     const ArticleListView = (
       <ListView
+        testID="listView"
         dataSource={this.state.dataSource}
         renderRow={ArticlePage.renderRow}
         initialListSize={listViewSize}

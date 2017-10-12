@@ -52,6 +52,7 @@ exports[`Article Flag test on android renders Exclusive flag correctly 1`] = `
         },
       ]
     }
+    testID="flag-exclusive"
   >
     E X C L U S I V E
   </Text>
@@ -110,6 +111,7 @@ exports[`Article Flag test on android renders New flag correctly 1`] = `
         },
       ]
     }
+    testID="flag-new"
   >
     N E W
   </Text>
@@ -168,6 +170,7 @@ exports[`Article Flag test on android renders Sponsored flag correctly 1`] = `
         },
       ]
     }
+    testID="flag-sponsored"
   >
     S P O N S O R E D
   </Text>
@@ -226,6 +229,7 @@ exports[`Article Flag test on android renders Updated flag correctly 1`] = `
         },
       ]
     }
+    testID="flag-updated"
   >
     U P D A T E D
   </Text>
@@ -284,6 +288,7 @@ exports[`Article Flag test on android renders correctly 1`] = `
         },
       ]
     }
+    testID="flag-articleFlag"
   >
     A R T I C L E F L A G
   </Text>

@@ -4,6 +4,8 @@ import detox from "detox";
 import config from "../package";
 
 beforeAll(async() => {
+    // increasing timeout to deal with long running detox commands
+    jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
     await fructose.hooks.mobile.setup();
     await detox.init(config.detox);
 }, 180000);
