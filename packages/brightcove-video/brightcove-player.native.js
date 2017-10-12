@@ -146,11 +146,11 @@ class BrightcoveVideo extends Component {
 }
 
 BrightcoveVideo.defaultProps = Object.assign(
-  { runNativeCommand: () => {} },
+  { runNativeCommand: () => {}, onChange: () => {} },
   defaults
 );
 BrightcoveVideo.propTypes = Object.assign(
-  { runNativeCommand: PropTypes.func.isRequired },
+  { runNativeCommand: PropTypes.func.isRequired, onChange: PropTypes.func },
   propTypes
 );
 
