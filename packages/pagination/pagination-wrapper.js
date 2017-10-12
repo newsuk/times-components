@@ -19,7 +19,7 @@ export default Component => {
       );
     }
 
-    handleChangePage(page, event) {
+    handleChangePage(event, page) {
       this.setState({ page });
       event.preventDefault();
     }

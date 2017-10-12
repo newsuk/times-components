@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         minSdkVersion 16
@@ -26,5 +26,5 @@ repositories {
 
 dependencies {
     implementation "com.facebook.react:react-native:0.49.3"
-    implementation "com.brightcove.player:exoplayer:4.13.7"
+    implementation "com.brightcove.player:exoplayer:5.2.0"
 }

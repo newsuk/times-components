@@ -567,8 +567,11 @@ exports[`renders profile content 1`] = `
         style={
           Object {
             "alignItems": "stretch",
+            "alignSelf": "center",
             "flexDirection": "row",
             "justifyContent": "center",
+            "maxWidth": 800,
+            "width": "100%",
           }
         }
       >
@@ -2581,8 +2584,11 @@ exports[`renders profile content 1`] = `
       style={
         Object {
           "alignItems": "stretch",
+          "alignSelf": "center",
           "flexDirection": "row",
           "justifyContent": "center",
+          "maxWidth": 800,
+          "width": "100%",
         }
       }
     >
@@ -2846,8 +2852,11 @@ exports[`renders profile content component 1`] = `
       style={
         Object {
           "alignItems": "stretch",
+          "alignSelf": "center",
           "flexDirection": "row",
           "justifyContent": "center",
+          "maxWidth": 800,
+          "width": "100%",
         }
       }
     >
@@ -3007,6 +3016,7 @@ exports[`renders profile content component 1`] = `
       Object {
         "alignSelf": "center",
         "maxWidth": 820,
+        "width": "100%",
       }
     }
     testID="articleList-0"
@@ -3206,6 +3216,7 @@ exports[`renders profile content component 1`] = `
       Object {
         "alignSelf": "center",
         "maxWidth": 820,
+        "width": "100%",
       }
     }
     testID="articleList-1"
@@ -3358,6 +3369,7 @@ exports[`renders profile content component 1`] = `
       Object {
         "alignSelf": "center",
         "maxWidth": 820,
+        "width": "100%",
       }
     }
     testID="articleList-2"
@@ -3510,6 +3522,7 @@ exports[`renders profile content component 1`] = `
       Object {
         "alignSelf": "center",
         "maxWidth": 820,
+        "width": "100%",
       }
     }
     testID="articleList-3"
@@ -3720,6 +3733,7 @@ exports[`renders profile content component 1`] = `
       Object {
         "alignSelf": "center",
         "maxWidth": 820,
+        "width": "100%",
       }
     }
     testID="articleList-4"
@@ -3930,6 +3944,7 @@ exports[`renders profile content component 1`] = `
       Object {
         "alignSelf": "center",
         "maxWidth": 820,
+        "width": "100%",
       }
     }
     testID="articleList-5"
@@ -4140,6 +4155,7 @@ exports[`renders profile content component 1`] = `
       Object {
         "alignSelf": "center",
         "maxWidth": 820,
+        "width": "100%",
       }
     }
     testID="articleList-6"
@@ -4337,6 +4353,7 @@ exports[`renders profile content component 1`] = `
       Object {
         "alignSelf": "center",
         "maxWidth": 820,
+        "width": "100%",
       }
     }
     testID="articleList-7"
@@ -4547,6 +4564,7 @@ exports[`renders profile content component 1`] = `
       Object {
         "alignSelf": "center",
         "maxWidth": 820,
+        "width": "100%",
       }
     }
     testID="articleList-8"
@@ -4744,6 +4762,7 @@ exports[`renders profile content component 1`] = `
       Object {
         "alignSelf": "center",
         "maxWidth": 820,
+        "width": "100%",
       }
     }
     testID="articleList-9"
@@ -4940,8 +4959,11 @@ exports[`renders profile content component 1`] = `
     style={
       Object {
         "alignItems": "stretch",
+        "alignSelf": "center",
         "flexDirection": "row",
         "justifyContent": "center",
+        "maxWidth": 800,
+        "width": "100%",
       }
     }
   >
@@ -5237,8 +5259,11 @@ exports[`renders profile header 1`] = `
     style={
       Object {
         "alignItems": "stretch",
+        "alignSelf": "center",
         "flexDirection": "row",
         "justifyContent": "center",
+        "maxWidth": 800,
+        "width": "100%",
       }
     }
   >

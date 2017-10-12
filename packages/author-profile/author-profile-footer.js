@@ -7,7 +7,10 @@ const styles = StyleSheet.create({
   container: {
     alignItems: "stretch",
     flexDirection: "row",
-    justifyContent: "center"
+    justifyContent: "center",
+    alignSelf: "center",
+    width: "100%",
+    maxWidth: 800
   },
   spacing: {
     flex: 1,
