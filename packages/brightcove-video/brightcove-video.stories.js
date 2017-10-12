@@ -81,7 +81,7 @@ storiesOf("BrightcoveVideo", module)
     />
   ))
   .add("Two launchers", () => (
-    <View>
+    <View style={{ width: "100%", height: "100%" }}>
       <BrightcoveVideo
         width={300}
         height={200}
@@ -99,7 +99,7 @@ storiesOf("BrightcoveVideo", module)
     </View>
   ))
   .add("Launcher with different videos", () => (
-    <View>
+    <View style={{ width: "100%", height: "100%" }}>
       <BrightcoveVideo
         width={320}
         height={200}

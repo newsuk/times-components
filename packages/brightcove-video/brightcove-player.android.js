@@ -53,6 +53,7 @@ function withNativeCommand(WrappedComponent) {
         androidSpecificProps.width = "100%";
         androidSpecificProps.height = "100%";
         androidSpecificProps.position = "absolute";
+        androidSpecificProps.zIndex = 9999;
       }
 
       const props = Object.assign(
