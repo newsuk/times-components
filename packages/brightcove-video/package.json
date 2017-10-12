@@ -64,6 +64,7 @@
   },
   "dependencies": {
     "prop-types": "15.5.10",
+    "react-native-svg": "5.1.7",
     "react-native-web": "0.0.119",
     "svgs": "2.3.0"
   },
