@@ -3,8 +3,6 @@ package com.storybooknative;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import com.facebook.react.ReactRootView;
-import com.facebook.react.views.text.ReactTextView;
 import com.facebook.stetho.Stetho;
 import com.horcrux.svg.SvgPackage;
 import com.facebook.react.ReactNativeHost;
