@@ -159,6 +159,7 @@ exports[`will launch if play is called 1`] = `
       "height": 180,
       "position": "relative",
       "width": 320,
+      "zIndex": 0,
     }
   }
   videoId="[VIDEO_ID]"
