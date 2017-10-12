@@ -46,8 +46,9 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
-    "enzyme": "2.9.1",
-    "enzyme-to-json": "1.5.1",
+    "enzyme": "3.1.0",
+    "enzyme-adapter-react-16": "1.0.1",
+    "enzyme-to-json": "3.0.1",
     "eslint": "3.19.0",
     "eslint-config-airbnb": "15.0.1",
     "eslint-config-prettier": "2.3.0",
@@ -55,23 +56,23 @@
     "eslint-plugin-jsx-a11y": "5.1.1",
     "eslint-plugin-react": "7.1.0",
     "flow-bin": "0.42.0",
-    "jest": "20.0.4",
+    "jest": "21.2.1",
     "prettier": "1.7.0",
-    "react": "15.4.2",
-    "react-dom": "15.4.2",
-    "react-native": "0.42.3",
-    "react-test-renderer": "15.4.2",
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "react-native": "0.49.3",
+    "react-test-renderer": "16.0.0",
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "prop-types": "15.5.10",
-    "react-native-web": "0.0.119",
+    "prop-types": "15.6.0",
+    "react-native-web": "0.1.7",
     "react-style-proptype": "3.0.0"
   },
   "peerDependencies": {
-    "react": ">=15",
-    "react-dom": ">=15",
-    "react-native": ">=0.42"
+    "react": ">=16",
+    "react-dom": ">=16",
+    "react-native": ">=0.49"
   },
   "publishConfig": {
     "access": "public"

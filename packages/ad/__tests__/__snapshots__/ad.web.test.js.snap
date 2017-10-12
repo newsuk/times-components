@@ -65,6 +65,7 @@ exports[`AdComposer renders with more than one ad slot 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -150,6 +151,7 @@ exports[`AdComposer renders with more than one ad slot 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -240,6 +242,7 @@ exports[`AdComposer renders with one ad slot 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
+          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {

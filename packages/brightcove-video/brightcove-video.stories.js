@@ -169,23 +169,6 @@ storiesOf("BrightcoveVideo", module)
       poster={{ uri: posterImageURI }}
     />
   ))
-  .add("Launcher with custom play icon defined by emoji", () => {
-    const playIconEmoji = () => (
-      <span role="img" aria-label="play-video">
-        ▶️
-      </span>
-    );
-
-    return (
-      <BrightcoveVideo
-        policyKey={policyKey}
-        videoId={videoId}
-        accountId={accountId}
-        poster={{ uri: posterImageURI }}
-        playIcon={playIconEmoji()}
-      />
-    );
-  })
   .add("Launcher with play icon defined by Image component", () => {
     const playIconImage = () => (
       <Image source={{ uri: playIconURI }} style={{ width: 70, height: 70 }} />

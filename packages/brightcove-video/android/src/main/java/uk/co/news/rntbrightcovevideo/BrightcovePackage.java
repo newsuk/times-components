@@ -12,13 +12,7 @@ import java.util.List;
 
 public class BrightcovePackage implements ReactPackage {
   @Override
-  public List<NativeModule>
-  createNativeModules(ReactApplicationContext reactContext) {
-    return Collections.emptyList();
-  }
-
-  @Override
-  public List<Class<? extends JavaScriptModule>> createJSModules() {
+  public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
     return Collections.emptyList();
   }
 
