@@ -39,6 +39,11 @@ const Splash = ({ poster, width, height, playIcon }) => (
   </View>
 );
 
+const numberOrString = PropTypes.oneOfType([
+  PropTypes.string,
+  PropTypes.number
+]);
+
 Splash.defaultProps = {
   poster: null,
   playIcon: null
@@ -47,8 +52,8 @@ Splash.defaultProps = {
 Splash.propTypes = {
   poster: Image.propTypes.source,
   playIcon: PropTypes.node,
-  width: PropTypes.number.isRequired,
-  height: PropTypes.number.isRequired
+  width: numberOrString.isRequired,
+  height: numberOrString.isRequired
 };
 
 export default Splash;

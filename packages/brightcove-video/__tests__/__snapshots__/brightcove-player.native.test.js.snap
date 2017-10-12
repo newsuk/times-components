@@ -12,7 +12,9 @@ exports[`brightcove-player native component renders correctly 1`] = `
   style={
     Object {
       "height": 180,
+      "position": "relative",
       "width": 320,
+      "zIndex": 0,
     }
   }
   videoId="[VIDEO_ID]"
