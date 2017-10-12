@@ -11,7 +11,7 @@
     "test:web": "jest --config='./jest.config.web.json'",
     "test":
       "npm run test:native -- --ci --bail && npm run test:web -- --ci --bail --coverage",
-    "prettier:diff": "prettier --list-different '**/*.js'",
+    "prettier:diff": "prettier --list-different '**/*.+(js|json)'",
     "lint": "eslint . && npm run prettier:diff"
   },
   "repository": {
