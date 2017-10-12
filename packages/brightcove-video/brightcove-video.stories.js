@@ -46,6 +46,15 @@ storiesOf("BrightcoveVideo", module)
       hideFullScreenButton
     />
   ))
+  .add("Launcher fullscreen player", () => (
+    <BrightcoveVideo
+      width="100%"
+      height="100%"
+      policyKey={policyKey}
+      videoId={videoId}
+      accountId={accountId}
+    />
+  ))
   .add("Launcher fullscreen player with hidden Fullscreen button", () => (
     <BrightcoveVideo
       width="100%"

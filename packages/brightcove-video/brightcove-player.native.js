@@ -87,6 +87,10 @@ class BrightcoveVideo extends Component {
       this.props.onFinish();
     }
 
+    if (this.props.onChange) {
+      this.props.onChange(evt.nativeEvent);
+    }
+
     this.setState(newState);
   }
 

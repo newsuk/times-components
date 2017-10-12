@@ -5,12 +5,11 @@ import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.res.Configuration;
 import android.graphics.Color;
-import android.support.annotation.NonNull;
 import android.util.Log;
-import android.view.ViewParent;
 import android.widget.FrameLayout;
 
 import com.brightcove.player.event.Event;
+import com.brightcove.player.event.EventType;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.WritableMap;
@@ -26,13 +25,9 @@ public class RNTBrightcoveView extends FrameLayout {
     private Boolean mAutoplay;
     private Boolean mHideFullScreenButton;
     private BrightcovePlayerView mPlayerView;
-    private Context mContext;
-
-    private float mSavedPlayheadPosition = 0;
 
     public RNTBrightcoveView(final ThemedReactContext context) {
         super(context);
-        mContext = context;
         this.setBackgroundColor(Color.BLACK);
     }
 
@@ -40,18 +35,9 @@ public class RNTBrightcoveView extends FrameLayout {
     protected void onConfigurationChanged(Configuration newConfig) {
         Log.d(TAG, "onConfigurationChanged");
 
-        mAutoplay = isPlaying();
-        mSavedPlayheadPosition = mPlayerView.getPlayheadPosition();
-
-        removeAllViews();
-
-        initPlayerView();
+        mPlayerView.getEventEmitter().emit(EventType.CONFIGURATION_CHANGED);
 
         super.onConfigurationChanged(newConfig);
-    }
-
-    private boolean isPlaying() {
-        return mPlayerView.getIsPlaying();
     }
 
     public void play() {
@@ -101,12 +87,9 @@ public class RNTBrightcoveView extends FrameLayout {
         if (parametersSet()) {
             Log.d(TAG, "adding player view");
 
-
             mPlayerView = new BrightcovePlayerView(getActivity());
 
             addView(mPlayerView);
-
-            mPlayerView.setStartPlayheadPosition(mSavedPlayheadPosition);
 
             boolean isFullscreenButtonHidden = mHideFullScreenButton != null ? mHideFullScreenButton : false;
             mPlayerView.initVideo(mVideoId, mAccountId, mPolicyKey, mAutoplay, isFullscreenButtonHidden);
@@ -132,6 +115,7 @@ public class RNTBrightcoveView extends FrameLayout {
             Integer duration = mPlayerView.getDuration();
 
             event.putBoolean("isPlaying", isPlaying);
+            event.putBoolean("isFullscreen", mPlayerView.getIsFullscreen());
             event.putDouble("progress", progress);
 
             if (duration > 0) {
