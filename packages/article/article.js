@@ -13,14 +13,6 @@ import listViewDataHelper from "./data-helper";
 import styles from "./styles/article-style";
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
-import {
-  articleHeaderPropTypes,
-  articleHeaderDefaultPropTypes
-} from "./article-header.proptypes";
-import {
-  articleMetaPropTypes,
-  articleMetaDefaultPropTypes
-} from "./article-meta.proptypes";
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 const listViewPageSize = 1;
@@ -40,10 +32,10 @@ class ArticlePage extends React.Component {
         </View>
       );
     } else if (rowData.type === "header") {
-      const { title, flags, standfirst, label } = rowData.data;
+      const { headline, flags, standfirst, label } = rowData.data;
       return (
         <ArticleHeader
-          title={title}
+          headline={headline}
           flags={flags}
           standfirst={standfirst}
           label={label}
@@ -150,20 +142,11 @@ class ArticlePage extends React.Component {
 
 ArticlePage.propTypes = {
   article: PropTypes.shape({
-    ...articleHeaderPropTypes,
-    ...articleMetaPropTypes
+    ...ArticleHeader.propTypes,
+    ...ArticleMeta.propTypes
   }),
   isLoading: PropTypes.bool,
   error: PropTypes.shape()
-};
-
-ArticlePage.defaultProps = {
-  article: {
-    ...articleHeaderDefaultPropTypes,
-    ...articleMetaDefaultPropTypes
-  },
-  isLoading: true,
-  error: null
 };
 
 export default ArticlePage;

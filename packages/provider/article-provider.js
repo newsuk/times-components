@@ -5,7 +5,7 @@ export const query = gql`
   query ArticleQuery($id: ID!) {
     article(id: $id) {
       id
-      title
+      headline
       publicationName
       publishedTime
       label
@@ -29,6 +29,4 @@ export const query = gql`
   }
 `;
 
-const propsToVariables = id => id;
-
-export default connectGraphql(query, propsToVariables);
+export default connectGraphql(query);

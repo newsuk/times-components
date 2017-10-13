@@ -25,6 +25,7 @@ exports[`Article test on android renders an error 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
   >
     An error ocurred
@@ -32,11 +33,12 @@ exports[`Article test on android renders an error 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
   >
     {
-      "message": "An example error."
-    }
+  "message": "An example error."
+}
   </Text>
 </View>
 `;

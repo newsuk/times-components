@@ -187,6 +187,7 @@ Object {
     },
   ],
   "flags": Array [],
+  "headline": "Clash of interests tarnished the project",
   "id": "3107c018-cb60-11e4-81dd-064fe933cd41",
   "label": null,
   "leadAsset": Object {
@@ -206,7 +207,6 @@ Object {
   "publicationName": "TIMES",
   "publishedTime": "2015-03-23T22:11:25.000Z",
   "standfirst": null,
-  "title": "Clash of interests tarnished the project",
   Symbol(id): "Article:3107c018-cb60-11e4-81dd-064fe933cd41",
 }
 `;
