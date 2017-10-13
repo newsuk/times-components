@@ -31,7 +31,7 @@ export default (WrappedComponent, { analyticsEvents = [] } = {}) => {
   validateEvents(analyticsEvents, componentName);
 
   class WithTrackEvents extends Component {
-    getWrappedAnalyticsEvents() {
+    get wrappedAnalyticsEvents() {
       return this.wrapWithTracking(
         analyticsEvents,
         (attrs, actionName, trackingName) =>
@@ -68,7 +68,7 @@ export default (WrappedComponent, { analyticsEvents = [] } = {}) => {
     render() {
       const wrappedProps = {
         ...this.props,
-        ...this.getWrappedAnalyticsEvents()
+        ...this.wrappedAnalyticsEvents
       };
 
       return <WrappedComponent {...wrappedProps} />;
