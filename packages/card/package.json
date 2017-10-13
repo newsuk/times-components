@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "0.6.9",
+  "version": "0.7.0",
   "main": "card",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -12,9 +12,15 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "snapshotSerializers": ["enzyme-to-json/serializer"],
-    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-    "testMatch": ["<rootDir>/packages/card/**.test.js"]
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/card/**.test.js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -59,8 +65,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/article-summary": "0.5.8",
-    "@times-components/image": "1.4.3",
+    "@times-components/article-summary": "0.6.0",
+    "@times-components/image": "1.5.0",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.7"
   },

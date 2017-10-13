@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "0.17.5",
+  "version": "0.18.0",
   "description": "Author info along with articles they have written",
   "main": "author-profile",
   "scripts": {
@@ -13,9 +13,15 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "snapshotSerializers": ["enzyme-to-json/serializer"],
-    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-    "testMatch": ["<rootDir>/packages/author-profile/__tests__/**.test.js"]
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/author-profile/__tests__/**.test.js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -62,11 +68,11 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/author-head": "0.6.13",
-    "@times-components/card": "0.6.9",
-    "@times-components/link": "0.8.1",
-    "@times-components/pagination": "0.8.3",
-    "@times-components/provider": "0.11.3",
+    "@times-components/author-head": "0.7.0",
+    "@times-components/card": "0.7.0",
+    "@times-components/link": "0.9.0",
+    "@times-components/pagination": "0.9.0",
+    "@times-components/provider": "0.12.0",
     "jest-cli": "20.0.4",
     "lodash.get": "4.4.2",
     "lodash.merge": "4.6.0",

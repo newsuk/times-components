@@ -1,6 +1,6 @@
 {
   "name": "@times-components/link",
-  "version": "0.8.1",
+  "version": "0.9.0",
   "description": "component to handle links and navigation",
   "main": "link",
   "scripts": {
@@ -17,8 +17,12 @@
       "**/packages/link/*.js",
       "!**/packages/link/*.stories.js"
     ],
-    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-    "testMatch": ["<rootDir>/packages/link/__tests__/**/*.test.js"]
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/link/__tests__/**/*.test.js"
+    ]
   },
   "repository": {
     "type": "git",

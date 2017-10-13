@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "0.5.8",
+  "version": "0.6.0",
   "main": "article-summary",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -12,8 +12,12 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-    "testMatch": ["<rootDir>/packages/article-summary/__tests__/**.test.js"]
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/article-summary/__tests__/**.test.js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -55,8 +59,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/date-publication": "0.3.3",
-    "@times-components/markup": "0.7.6",
+    "@times-components/date-publication": "0.4.0",
+    "@times-components/markup": "0.8.0",
     "date-fns": "1.28.5",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.7",

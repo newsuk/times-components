@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/link@0.8.1...@times-components/link@0.9.0) (2017-10-13)
+
+
+### Bug Fixes
+
+* update coverage patterns ([#293](https://github.com/newsuk/times-components/issues/293)) ([6cb2b53](https://github.com/newsuk/times-components/commit/6cb2b53))
+
+
+### Features
+
+* add json files to lint and fmt ([#274](https://github.com/newsuk/times-components/issues/274)) ([f008b0f](https://github.com/newsuk/times-components/commit/f008b0f))
+
+
+
+
 <a name="0.8.1"></a>
 ## 0.8.1 (2017-10-12)
 

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/date-publication",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "description": "Date and Publication properties",
   "main": "date-publication",
   "scripts": {
@@ -13,8 +13,12 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-    "testMatch": ["<rootDir>/packages/date-publication/**.test.js"]
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/date-publication/**.test.js"
+    ]
   },
   "repository": {
     "type": "git",

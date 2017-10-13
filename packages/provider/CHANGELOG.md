@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.12.0"></a>
+# [0.12.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.11.3...@times-components/provider@0.12.0) (2017-10-13)
+
+
+### Features
+
+* add json files to lint and fmt ([#274](https://github.com/newsuk/times-components/issues/274)) ([f008b0f](https://github.com/newsuk/times-components/commit/f008b0f))
+
+
+
+
 <a name="0.11.3"></a>
 ## [0.11.3](https://github.com/newsuk/times-components/compare/@times-components/provider@0.11.2...@times-components/provider@0.11.3) (2017-10-12)
 

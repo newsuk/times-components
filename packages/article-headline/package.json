@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-headline",
-  "version": "0.6.2",
+  "version": "0.7.0",
   "description": "The article headline",
   "main": "article-headline",
   "scripts": {
@@ -13,8 +13,12 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-    "testMatch": ["<rootDir>/packages/article-headline/**.test.js"]
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/article-headline/**.test.js"
+    ]
   },
   "repository": {
     "type": "git",

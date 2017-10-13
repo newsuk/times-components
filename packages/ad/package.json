@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ad",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "description": "Ad component",
   "main": "ad",
   "scripts": {
@@ -13,8 +13,12 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-    "testMatch": ["<rootDir>/packages/ad/__tests__/**.test.js"],
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/ad/__tests__/**.test.js"
+    ],
     "testEnvironment": "jsdom"
   },
   "repository": {

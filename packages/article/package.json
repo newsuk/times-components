@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "0.14.6",
+  "version": "0.15.0",
   "description": "The article",
   "main": "article",
   "scripts": {
@@ -8,8 +8,7 @@
     "test:watch": "npm run test:native -- --bail --verbose --watchAll",
     "test:native": "jest --config='./jest.config.json'",
     "test:web": "jest --config='./jest.config.web.json'",
-    "test":
-      "npm run test:native -- --ci --bail && npm run test:web -- --ci --bail --coverage",
+    "test": "npm run test:native -- --ci --bail && npm run test:web -- --ci --bail --coverage",
     "prettier:diff": "prettier --list-different '**/*.+(js|json)'",
     "lint": "eslint . && npm run prettier:diff"
   },
@@ -53,15 +52,15 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/ad": "0.3.3",
-    "@times-components/article-byline": "0.5.10",
-    "@times-components/article-flag": "0.6.4",
-    "@times-components/article-headline": "0.6.2",
-    "@times-components/article-image": "0.2.4",
-    "@times-components/article-label": "0.3.2",
-    "@times-components/date-publication": "0.3.3",
-    "@times-components/image": "1.4.3",
-    "@times-components/markup": "0.7.6",
+    "@times-components/ad": "0.4.0",
+    "@times-components/article-byline": "0.6.0",
+    "@times-components/article-flag": "0.7.0",
+    "@times-components/article-headline": "0.7.0",
+    "@times-components/article-image": "0.3.0",
+    "@times-components/article-label": "0.4.0",
+    "@times-components/date-publication": "0.4.0",
+    "@times-components/image": "1.5.0",
+    "@times-components/markup": "0.8.0",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.7"
   },

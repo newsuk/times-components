@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-label",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "The article label",
   "main": "article-label",
   "scripts": {
@@ -13,8 +13,12 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-    "testMatch": ["<rootDir>/packages/article-label/__test__/**.test.js"]
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/article-label/__test__/**.test.js"
+    ]
   },
   "repository": {
     "type": "git",
