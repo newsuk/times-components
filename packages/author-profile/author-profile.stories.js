@@ -134,7 +134,7 @@ storiesOf("AuthorProfile", module)
   .add("Default", () => {
     const props = {
       slug: "fiona-hamilton",
-      author: authorProfileFixture.data.author,
+      articleImageRatio: "3:2",
       isLoading: false,
       page: 2,
       pageSize: 3,
@@ -147,6 +147,7 @@ storiesOf("AuthorProfile", module)
   })
   .add("Loading", () => {
     const props = {
+      articleImageRatio: "3:2",
       slug: "fiona-hamilton",
       isLoading: true,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
@@ -194,12 +195,13 @@ storiesOf("AuthorProfile", module)
 
     const emptyNetworkInterface = mockNetworkInterface(...emptyMocks);
     const props = {
-      slug: "no-results",
+      articleImageRatio: "3:2",
       author: authorProfileFixture.data.author,
       isLoading: false,
-      onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
       onArticlePress: preventDefaultedAction("onArticlePress"),
-      analyticsStream: () => {}
+      onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
+      analyticsStream: () => {},
+      slug: "no-results"
     };
 
     const client = new ApolloClient({
