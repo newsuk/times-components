@@ -65,6 +65,8 @@ Properties types are defined in `./brightcove-video.proptypes.js`
 | `onPause` | function | Handles pause events
 | `onProgress` | function | Handles progress events
 | `onFinish` | function | Handles video finish events
+| `onEnterFullscreen` | function | Handles video entering fullscreen (Android only)
+| `onExitFullscreen` | function | Handles video exiting fullscreen (Android only)
 | `autoplay` | boolean | Should the video autoplay? (default false)
 | `hideFullScreenButton` | boolean | Should the full screen button be hidden? (default false)
 | `resetOnFinish` | boolean | Should the video reset to poster image when video finishes? (default false)
