@@ -49,18 +49,8 @@ exports[`renders profile content component 1`] = `
           }
         }
       >
-<<<<<<< HEAD
-        <Text
-          accessibilityRole="heading"
-          accessible={true}
-          allowFontScaling={true}
-          aria-level="1"
-          disabled={false}
-          ellipsizeMode="tail"
-=======
         <View
           accessibilityRole="banner"
->>>>>>> feat: pagination on native profile
           style={
             Object {
               "alignItems": "center",
@@ -71,6 +61,7 @@ exports[`renders profile content component 1`] = `
             }
           }
         >
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
           <Text
@@ -225,11 +216,14 @@ exports[`renders profile content component 1`] = `
               "fontFamily": "TimesDigital-RegularSC",
               "fontSize": 15,
 =======
+=======
+>>>>>>> chore: run fmt and lint
           <Text
             accessibilityRole="heading"
             accessible={true}
             allowFontScaling={true}
             aria-level="1"
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -248,6 +242,7 @@ exports[`renders profile content component 1`] = `
             accessible={true}
             allowFontScaling={true}
             aria-level="2"
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -255,7 +250,6 @@ exports[`renders profile content component 1`] = `
                 "fontFamily": "TimesDigital-RegularSC",
                 "fontSize": 15,
               }
->>>>>>> feat: pagination on native profile
             }
           >
             
@@ -263,6 +257,7 @@ exports[`renders profile content component 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
+            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -285,20 +280,9 @@ exports[`renders profile content component 1`] = `
             "flexDirection": "row",
             "justifyContent": "center",
           }
-<<<<<<< HEAD
-        >
-          
-        </Text>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          disabled={false}
-          ellipsizeMode="tail"
-=======
         }
       >
         <View
->>>>>>> feat: pagination on native profile
           style={
             Object {
               "flex": 1,
@@ -337,6 +321,7 @@ exports[`renders profile content component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
