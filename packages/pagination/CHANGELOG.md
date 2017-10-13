@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.1"></a>
+## [0.9.1](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.9.0...@times-components/pagination@0.9.1) (2017-10-13)
+
+
+### Bug Fixes
+
+* ignore package.json ([#295](https://github.com/newsuk/times-components/issues/295)) ([3614c6e](https://github.com/newsuk/times-components/commit/3614c6e))
+
+
+
+
 <a name="0.9.0"></a>
 # [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.8.3...@times-components/pagination@0.9.0) (2017-10-13)
 
