@@ -23,6 +23,13 @@ const styles = StyleSheet.create({
   }
 });
 const Box = props => (
+  <View style={[styles.box, { backgroundColor: props.color }]} />
+);
+Box.propTypes = {
+  color: PropTypes.string.isRequired
+};
+
+const BoxWithButtons = props => (
   <View style={[styles.box, { backgroundColor: props.color }]}>
     <Button onPress={() => props.onPress("button 1")} title="Press me" />
     <Button
@@ -32,7 +39,7 @@ const Box = props => (
     />
   </View>
 );
-Box.propTypes = {
+BoxWithButtons.propTypes = {
   color: PropTypes.string.isRequired,
   onPress: PropTypes.func.isRequired
 };
@@ -56,7 +63,7 @@ storiesOf("Tracking", module)
   })
   .add("Event tracking", () => {
     const BoxWithPressTrackingAndContext = withTrackingContext(
-      withTrackEvents(Box, {
+      withTrackEvents(BoxWithButtons, {
         trackingName: "ColoredBox",
         getAttrs: (props, eventArgs) => ({ button: eventArgs[0] }),
         analyticsEvents: [{ eventName: "onPress", actionName: "Pressed" }]
@@ -68,6 +75,7 @@ storiesOf("Tracking", module)
       <BoxWithPressTrackingAndContext
         analyticsStream={storybookReporter}
         color="red"
+        onPress={() => {}}
       />
     );
   });
