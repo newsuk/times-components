@@ -2,6 +2,7 @@ import React from "react";
 import { Text, View, Platform } from "react-native";
 import PropTypes from "prop-types";
 import { renderTrees, treePropType } from "@times-components/markup";
+import { renderer } from './article-summary-renderer';
 import DatePublication from "@times-components/date-publication";
 
 const fontFamilyWebAndIos = "TimesDigitalW04";
@@ -41,15 +42,6 @@ const ArticleSummary = props => {
   const teaser = text.pop();
   teaser.name = 'teaser';
   text.push(teaser);
-
-  const renderer = {
-    paragraph(key, attributes, renderedChildren) {
-      return <span key={key}>{renderedChildren}. </span>;
-    },
-    teaser(key, attributes, renderedChildren) {
-      return <span key={key}>{renderedChildren}...</span>;
-    }
-  }
 
   const labelText = label && label.toUpperCase && label.toUpperCase();
   return (
