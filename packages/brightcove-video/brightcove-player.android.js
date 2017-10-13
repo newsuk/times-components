@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { NativeModules } from "react-native";
+import PropTypes from "prop-types";
 
 import BrightcoveVideo from "./brightcove-player.native";
 
@@ -33,7 +34,15 @@ function withNativeCommand(WrappedComponent) {
     }
 
     onChange(evt) {
-      this.setState({ isFullscreen: evt.isFullscreen });
+      if (evt.isFullscreen !== this.state.isFullscreen) {
+        this.setState({ isFullscreen: evt.isFullscreen });
+
+        if (evt.isFullscreen) {
+          this.props.onEnterFullscreen();
+        } else {
+          this.props.onExitFullscreen();
+        }
+      }
     }
 
     runNativeCommand(name, args) {
@@ -58,7 +67,12 @@ function withNativeCommand(WrappedComponent) {
 
       const props = Object.assign(
         { runNativeCommand: this.runNativeCommand },
-        this.props,
+        Object.keys(this.props) // filter out android only props
+          .filter(key => Object.keys(propTypes).includes(key))
+          .reduce((obj, key) => {
+            obj[key] = this.props[key];
+            return obj;
+          }, {}),
         androidSpecificProps
       );
 
@@ -73,8 +87,14 @@ function withNativeCommand(WrappedComponent) {
     }
   }
 
-  AndroidNative.defaultProps = defaults;
-  AndroidNative.propTypes = propTypes;
+  AndroidNative.defaultProps = Object.assign(defaults, {
+    onEnterFullscreen: () => {},
+    onExitFullscreen: () => {}
+  });
+  AndroidNative.propTypes = Object.assign(propTypes, {
+    onEnterFullscreen: PropTypes.func,
+    onExitFullscreen: PropTypes.func
+  });
 
   return AndroidNative;
 }

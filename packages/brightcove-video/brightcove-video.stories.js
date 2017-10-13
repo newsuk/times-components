@@ -146,14 +146,6 @@ storiesOf("BrightcoveVideo", module)
       onError={firstArgJSONAction("error")}
     />
   ))
-  .add("Launcher with event listener", () => (
-    <BrightcoveVideo
-      policyKey={policyKey}
-      videoId={videoId}
-      accountId={accountId}
-      onChange={firstArgJSONAction("change")}
-    />
-  ))
   .add("Launcher with external controls", () => (
     <VideoWithExternalControls
       policyKey={policyKey}
@@ -314,6 +306,15 @@ storiesOf("BrightcoveVideo", module)
       onProgress={action("progress")}
       onFinish={action("finish")}
       onDuration={action("duration")}
+    />
+  ))
+  .add("Launcher with (android only) fullscreen event listeners", () => (
+    <BrightcoveVideo
+      policyKey={policyKey}
+      videoId={videoId}
+      accountId={accountId}
+      onEnterFullscreen={firstArgJSONAction("enter fullscreen")}
+      onExitFullscreen={firstArgJSONAction("exit fullscreen")}
     />
   ))
   .add("Player with external controls", () => (
