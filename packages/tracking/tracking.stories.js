@@ -64,9 +64,14 @@ storiesOf("Tracking", module)
   .add("Event tracking", () => {
     const BoxWithPressTrackingAndContext = withTrackingContext(
       withTrackEvents(BoxWithButtons, {
-        trackingName: "ColoredBox",
-        getAttrs: (props, eventArgs) => ({ button: eventArgs[0] }),
-        analyticsEvents: [{ eventName: "onPress", actionName: "Pressed" }]
+        analyticsEvents: [
+          {
+            eventName: "onPress",
+            actionName: "Pressed",
+            trackingName: "ColoredBox",
+            getAttrs: (props, eventArgs) => ({ button: eventArgs[0] })
+          }
+        ]
       }),
       { trackingObject: "TrackRenderStory" }
     );
