@@ -3,3 +3,7 @@
 dist
 **/package.json
 **/android/*
+<<<<<<< HEAD
+=======
+**/ios/*
+>>>>>>> master
