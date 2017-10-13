@@ -38,9 +38,16 @@ const styles = {
 const ArticleSummary = props => {
   const { label, headline, text, date, publication } = props;
 
+  const teaser = text.pop();
+  teaser.name = 'teaser';
+  text.push(teaser);
+
   const renderer = {
     paragraph(key, attributes, renderedChildren) {
-      return <span key={key}>{renderedChildren} </span>;
+      return <span key={key}>{renderedChildren}. </span>;
+    },
+    teaser(key, attributes, renderedChildren) {
+      return <span key={key}>{renderedChildren}...</span>;
     }
   }
 
