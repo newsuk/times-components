@@ -70,8 +70,9 @@ function withNativeCommand(WrappedComponent) {
         Object.keys(this.props) // filter out android only props
           .filter(key => Object.keys(propTypes).includes(key))
           .reduce((obj, key) => {
-            obj[key] = this.props[key];
-            return obj;
+            const newObj = Object.assign({}, obj);
+            newObj[key] = this.props[key];
+            return newObj;
           }, {}),
         androidSpecificProps
       );

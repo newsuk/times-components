@@ -2,3 +2,4 @@
 **/coverage/*
 dist
 **/package.json
+**/android/*
