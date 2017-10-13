@@ -11,11 +11,11 @@ exports[`TrackEvents forwards props to wrapped component 1`] = `
 </Text>
 `;
 
-exports[`TrackEvents raises error when action name is not set 1`] = `"Missing eventName of analyticsEvents[0] when calling withTrackEvents()"`;
+exports[`TrackEvents raises error when action name is not set 1`] = `"WithTrackEvents(TestComponent): Missing actionName at position 0, eventName event1"`;
 
-exports[`TrackEvents raises error when event name is not set 1`] = `"Missing eventName of analyticsEvents[0] when calling withTrackEvents()"`;
+exports[`TrackEvents raises error when event name is not set 1`] = `"WithTrackEvents(TestComponent): Missing eventName at position 0, actionName event1ed"`;
 
-exports[`TrackEvents raises error when trying to track the same event more than once 1`] = `"Event event1 was tracked multiple times when calling withTrackEvents()"`;
+exports[`TrackEvents raises error when trying to track the same event more than once 1`] = `"WithTrackEvents(TestComponent): Event event1 was tracked multiple times"`;
 
 exports[`TrackEvents renders when tracking context is missing 1`] = `
 <Text

@@ -4,22 +4,22 @@ import hoistNonReactStatic from "hoist-non-react-statics";
 import trackingContextTypes from "./tracking-context-types";
 import resolveAttrs from "./resolve-attrs";
 
-const validateEvents = events => {
+const validateEvents = (events, componentName) => {
   const nameMap = new Set();
   events.forEach((e, i) => {
     if (e.eventName === undefined) {
       throw new Error(
-        `Missing eventName of analyticsEvents[${i}] when calling withTrackEvents()`
+        `WithTrackEvents(${componentName}): Missing eventName at position ${i}, actionName ${e.actionName}`
       );
     }
     if (e.actionName === undefined) {
       throw new Error(
-        `Missing eventName of analyticsEvents[${i}] when calling withTrackEvents()`
+        `WithTrackEvents(${componentName}): Missing actionName at position ${i}, eventName ${e.eventName}`
       );
     }
     if (nameMap.has(e.eventName)) {
       throw new Error(
-        `Event ${e.eventName} was tracked multiple times when calling withTrackEvents()`
+        `WithTrackEvents(${componentName}): Event ${e.eventName} was tracked multiple times`
       );
     }
     nameMap.add(e.eventName);
@@ -27,8 +27,8 @@ const validateEvents = events => {
 };
 
 export default (WrappedComponent, { analyticsEvents = [] } = {}) => {
-  validateEvents(analyticsEvents);
   const componentName = getDisplayName(WrappedComponent);
+  validateEvents(analyticsEvents, componentName);
 
   class WithTrackEvents extends Component {
     getWrappedAnalyticsEvents() {
