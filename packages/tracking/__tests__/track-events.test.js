@@ -178,8 +178,9 @@ describe("TrackEvents", () => {
     expect(reporter.mock.calls).toMatchSnapshot();
   });
 
-  it("does not overwrite existing event handlers", () => {
+  it("supports handling of tracked events", () => {
     const handler = jest.fn();
+    const reporter = jest.fn();
     const WithTrackingAndContext = withTrackingContext(
       withTrackEvents(TestComponent, {
         analyticsEvents: [{ eventName: "event1", actionName: "event1ed" }]
@@ -187,9 +188,10 @@ describe("TrackEvents", () => {
     );
 
     renderer.create(
-      <WithTrackingAndContext analyticsStream={() => {}} event1={handler} />
+      <WithTrackingAndContext analyticsStream={reporter} event1={handler} />
     );
 
+    expect(reporter).toHaveBeenCalled();
     expect(handler).toHaveBeenCalledWith("event1 arg");
   });
 
