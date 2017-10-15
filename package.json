@@ -33,7 +33,7 @@
     "preandroid": "npm run fetch-fonts",
     "android": "react-native run-android",
     "prettier:diff": "prettier --list-different 'packages/**/*.+(js|json)'",
-    "fmt": "prettier --write 'packages/**/*.+(js|json)'",
+    "fmt": "prettier --write '+(packages|storybook)/**/*.+(js|json)'",
     "packages:publish":
     "lerna publish --conventional-commits --yes --concurrency=1 --exact",
     "packages:publish-dry-run":

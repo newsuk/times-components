@@ -6,9 +6,10 @@ import { storiesOf } from "@storybook/react-native";
 import { action } from "@storybook/addon-actions";
 import Pagination, { withPageState } from "./pagination";
 import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
+import LateralSpacingDecorator from "../../storybook/decorators/lateral-spacing";
 
 storiesOf("Pagination", module)
-  .addDecorator(story => <View style={{ paddingTop: 20 }}>{story()}</View>)
+  .addDecorator(LateralSpacingDecorator)
   .add("First page", () => (
     <Pagination
       page={1}

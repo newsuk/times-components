@@ -1,14 +1,12 @@
 import React from "react";
-import { View } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
 import ArticleSummary from "./article-summary";
 import props from "./fixtures/article.json";
+import LateralSpacingDecorator from "../../storybook/decorators/lateral-spacing";
 
 props.date = new Date(props.date);
 
-const story = m => <View style={{ padding: 20 }}>{m}</View>;
-
-storiesOf("ArticleSummary", module).add("ArticleSummary", () =>
-  story(<ArticleSummary {...props} />)
-);
+storiesOf("ArticleSummary", module)
+  .addDecorator(LateralSpacingDecorator)
+  .add("ArticleSummary", () => <ArticleSummary {...props} />);
