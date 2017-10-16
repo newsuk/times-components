@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.13.0"></a>
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.12.2...@times-components/provider@0.13.0) (2017-10-16)
+
+
+### Features
+
+* article with provider ([#283](https://github.com/newsuk/times-components/issues/283)) ([d0c0792](https://github.com/newsuk/times-components/commit/d0c0792))
+
+
+
+
 <a name="0.12.2"></a>
 ## [0.12.2](https://github.com/newsuk/times-components/compare/@times-components/provider@0.12.1...@times-components/provider@0.12.2) (2017-10-13)
 

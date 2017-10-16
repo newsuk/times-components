@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "0.18.2",
+  "version": "0.18.3",
   "description": "Author info along with articles they have written",
   "main": "author-profile",
   "scripts": {
@@ -72,7 +72,7 @@
     "@times-components/card": "0.7.2",
     "@times-components/link": "0.9.2",
     "@times-components/pagination": "0.9.2",
-    "@times-components/provider": "0.12.2",
+    "@times-components/provider": "0.13.0",
     "jest-cli": "20.0.4",
     "lodash.get": "4.4.2",
     "lodash.merge": "4.6.0",
