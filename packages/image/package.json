@@ -12,15 +12,9 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
-    "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/image/**.test.js"
-    ]
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+    "testMatch": ["<rootDir>/packages/image/**.test.js"]
   },
   "repository": {
     "type": "git",

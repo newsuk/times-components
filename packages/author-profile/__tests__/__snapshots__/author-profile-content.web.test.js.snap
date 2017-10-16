@@ -965,11 +965,346 @@ exports[`renders profile loading 1`] = `
               "strokeDashoffset": 60,
             }
           }
+<<<<<<< HEAD
         />
       </svg>
     </div>
   </div>
 </div>
+=======
+        >
+          <View />
+          <View>
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              collapsable={undefined}
+              hitSlop={undefined}
+              isTVSelectable={true}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "opacity": 1,
+                }
+              }
+              testID={undefined}
+              tvParallaxProperties={undefined}
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "marginLeft": 10,
+                    "marginRight": 12,
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  disabled={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 15,
+                      "height": 15,
+                      "marginRight": 10,
+                      "textAlign": "right",
+                    }
+                  }
+                >
+                  Next
+                </Text>
+                <svg
+                  height={9}
+                  style={Object {}}
+                  viewBox="42 12 60 120"
+                  width={5}
+                >
+                  <g
+                    fill="#006699"
+                    style={Object {}}
+                  >
+                    <path
+                      d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                      style={Object {}}
+                    />
+                  </g>
+                </svg>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders profile loading 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "padding": 4,
+    }
+  }
+>
+  <View
+    onLayout={[Function]}
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "margin": 4,
+          },
+          Object {
+            "height": NaN,
+          },
+        ]
+      }
+    >
+      <BVLinearGradient
+        colors={
+          Array [
+            4293717228,
+            4294440951,
+          ]
+        }
+        end={
+          Object {
+            "x": 1,
+            "y": 0.08645454235739902,
+          }
+        }
+        locations={
+          Array [
+            0.25,
+            1,
+          ]
+        }
+        start={
+          Object {
+            "x": 0,
+            "y": 1,
+          }
+        }
+        style={
+          Array [
+            Object {
+              "flex": 1,
+              "padding": 4,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "margin": 4,
+        },
+        Object {
+          "height": 24,
+          "maxWidth": 600,
+        },
+      ]
+    }
+  >
+    <BVLinearGradient
+      colors={
+        Array [
+          4293717228,
+          4294440951,
+        ]
+      }
+      end={
+        Object {
+          "x": 1,
+          "y": 0.25685517452260576,
+        }
+      }
+      locations={
+        Array [
+          0.25,
+          1,
+        ]
+      }
+      start={
+        Object {
+          "x": 0,
+          "y": 1,
+        }
+      }
+      style={
+        Array [
+          Object {
+            "flex": 1,
+            "padding": 4,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "margin": 4,
+        },
+        Object {
+          "height": 10,
+        },
+      ]
+    }
+  >
+    <BVLinearGradient
+      colors={
+        Array [
+          4293717228,
+          4294440951,
+        ]
+      }
+      end={
+        Object {
+          "x": 1,
+          "y": 0.27462562898771226,
+        }
+      }
+      locations={
+        Array [
+          0.25,
+          1,
+        ]
+      }
+      start={
+        Object {
+          "x": 0,
+          "y": 1,
+        }
+      }
+      style={
+        Array [
+          Object {
+            "flex": 1,
+            "padding": 4,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "margin": 4,
+        },
+        Object {
+          "height": 10,
+        },
+      ]
+    }
+  >
+    <BVLinearGradient
+      colors={
+        Array [
+          4293717228,
+          4294440951,
+        ]
+      }
+      end={
+        Object {
+          "x": 1,
+          "y": 0.2627226631898759,
+        }
+      }
+      locations={
+        Array [
+          0.25,
+          1,
+        ]
+      }
+      start={
+        Object {
+          "x": 0,
+          "y": 1,
+        }
+      }
+      style={
+        Array [
+          Object {
+            "flex": 1,
+            "padding": 4,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "margin": 4,
+        },
+        Object {
+          "height": 10,
+          "width": 300,
+        },
+      ]
+    }
+  >
+    <BVLinearGradient
+      colors={
+        Array [
+          4293717228,
+          4294440951,
+        ]
+      }
+      end={
+        Object {
+          "x": 1,
+          "y": 0.2627226631898759,
+        }
+      }
+      locations={
+        Array [
+          0.25,
+          1,
+        ]
+      }
+      start={
+        Object {
+          "x": 0,
+          "y": 1,
+        }
+      }
+      style={
+        Array [
+          Object {
+            "flex": 1,
+            "padding": 4,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+>>>>>>> feat: loading gradients for article
 `;
 
 exports[`renders profile separator 1`] = `

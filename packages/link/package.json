@@ -17,12 +17,8 @@
       "**/packages/link/*.js",
       "!**/packages/link/*.stories.js"
     ],
-    "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/link/__tests__/**/*.test.js"
-    ]
+    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+    "testMatch": ["<rootDir>/packages/link/__tests__/**/*.test.js"]
   },
   "repository": {
     "type": "git",

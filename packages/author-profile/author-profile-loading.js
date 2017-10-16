@@ -28,26 +28,25 @@ const Gradient = ({ angle, style }) => (
 Gradient.defaultProps = {
   angle: 265,
   style: null
-}
+};
 
 Gradient.propTypes = {
   angle: PropTypes.number,
   style: ViewPropTypes.style
-}
+};
 
-const calculateRatio = (ratio) => {
-  const [w, h] = ratio.split(":")
+const calculateRatio = ratio => {
+  const [w, h] = ratio.split(":");
   return h / w;
-}
+};
 
 class AuthorProfileLoading extends React.Component {
   constructor(props) {
-    super(props)
-
+    super(props);
 
     this.state = {
       ratio: calculateRatio(props.ratio)
-    }
+    };
 
     this.handleLayout = this.handleLayout.bind(this);
   }
@@ -55,52 +54,78 @@ class AuthorProfileLoading extends React.Component {
   componentWillReceiveProps(nextProps) {
     this.setState({
       ratio: calculateRatio(nextProps.ratio)
-    })
+    });
   }
 
-  handleLayout({nativeEvent: { layout: { width}}}) {
+  handleLayout({ nativeEvent: { layout: { width } } }) {
     this.setState({
       width
-    })
+    });
   }
 
   render() {
-    const {
-      ratio,
-      width
-    } = this.state;
+    const { ratio, width } = this.state;
 
     return (
       <View style={styles.container}>
         <View onLayout={this.handleLayout}>
-          <Gradient angle={228} style={[styles.gradient, {
-            height: width * ratio
-          }]} />
+          <Gradient
+            angle={228}
+            style={[
+              styles.gradient,
+              {
+                height: width * ratio
+              }
+            ]}
+          />
         </View>
-        <Gradient angle={264} style={[styles.gradient, {
-          height: 24
-        }]} />
-        <Gradient angle={267} style={[styles.gradient, {
-          height: 10
-        }]} />
-        <Gradient style={[styles.gradient, {
-          height: 10
-        }]} />
-        <Gradient style={[styles.gradient, {
-          height: 10,
-          width: 300
-        }]} />
+        <Gradient
+          angle={264}
+          style={[
+            styles.gradient,
+            {
+              maxWidth: 600,
+              height: 24
+            }
+          ]}
+        />
+        <Gradient
+          angle={267}
+          style={[
+            styles.gradient,
+            {
+              height: 10
+            }
+          ]}
+        />
+        <Gradient
+          style={[
+            styles.gradient,
+            {
+              height: 10
+            }
+          ]}
+        />
+        <Gradient
+          style={[
+            styles.gradient,
+            {
+              height: 10,
+              width: 300
+            }
+          ]}
+        />
       </View>
-    )
+    );
   }
 }
 
 AuthorProfileLoading.defaultProps = {
   ratio: "3:2"
-}
+};
 
 AuthorProfileLoading.propTypes = {
   ratio: PropTypes.string
-}
+};
 
 export default AuthorProfileLoading;
