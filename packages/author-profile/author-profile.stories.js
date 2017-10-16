@@ -16,7 +16,7 @@ import articleListFixture from "./fixtures/article-list.json";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
-    e.preventDefault();
+    e.preventDefaFult();
     return ["[SyntheticEvent (storybook prevented default)]", ...args];
   }
 ]);
@@ -119,12 +119,12 @@ const fragmentMatcher = new IntrospectionFragmentMatcher({
 
 const networkInterface = mockNetworkInterface(...mocks);
 
-const client = new ApolloClient({
+const defaultClient = new ApolloClient({
   networkInterface,
   fragmentMatcher
 });
 
-const withMockProvider = child => (
+const withMockProvider = (child, client = defaultClient) => (
   <MockedProvider mocks={mocks} client={client}>
     {child}
   </MockedProvider>
@@ -155,21 +155,53 @@ storiesOf("AuthorProfile", module)
     return withMockProvider(<AuthorProfile {...props} />);
   })
   .add("Empty State", () => {
-    const props = {
-      slug: "fiona-hamilton",
-      author: {
-        ...authorProfileFixture.data.author,
-        articles: {
-          count: 0,
-          list: []
+    const emptyMocks = [{
+      request: {
+        query: addTypenameToDocument(authorProfileQuery),
+        variables: {
+          slug: "no-results"
         }
       },
+      result: authorProfileFixture
+    }, {
+      request: {
+        query: addTypenameToDocument(articleListQuery),
+        variables: {
+          slug: "no-results",
+          first: 3,
+          skip: 0,
+          imageRatio: "3:2"
+        }
+      },
+      result: {
+        data: {
+          author: {
+            ...articleListFixture.data.author,
+            articles: {
+              ...articleListFixture.data.author.articles,
+              count: 0,
+              list: []
+            }
+          }
+        }
+      }
+    }];
+
+    const emptyNetworkInterface = mockNetworkInterface(...emptyMocks);
+    const props = {
+      slug: "no-results",
+      author: authorProfileFixture.data.author,
       isLoading: false,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
       onArticlePress: preventDefaultedAction("onArticlePress")
     };
 
-    return withMockProvider(<AuthorProfile {...props} />);
+    const client = new ApolloClient({
+      networkInterface: emptyNetworkInterface,
+      fragmentMatcher
+    });
+
+    return withMockProvider(<AuthorProfile {...props} />, client);
   })
   .add("With Provider", () => {
     const onTwitterLinkPress = preventDefaultedAction("onTwitterLinkPress");
