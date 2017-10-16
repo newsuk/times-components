@@ -4,12 +4,14 @@
 #import <React/RCTLog.h>
 
 #import "RNTBrightcove.h"
+#import "storybooknative-Swift.h"
 
 @interface RNTBrightcove () <BCOVPlaybackControllerDelegate, BCOVPUIPlayerViewDelegate>
 
 @property (nonatomic, strong) BCOVPlaybackService *playbackService;
 @property (nonatomic, strong) id<BCOVPlaybackController> playbackController;
 @property (nonatomic) BCOVPUIPlayerView *playerView;
+@property (nonatomic, strong) FullscreenPresentingAutoRotatingViewController* fullscreenViewController;
 
 @end
 
@@ -95,7 +97,7 @@
 
     BCOVPUIPlayerViewOptions *options = [[BCOVPUIPlayerViewOptions alloc] init];
 
-    options.presentingViewController = [self rootViewController];
+    options.presentingViewController = [self fullscreenViewController];
 
     BCOVPUIPlayerView *playerView = [[BCOVPUIPlayerView alloc] initWithPlaybackController:self.playbackController options:options controlsView:controlsView ];
     playerView.delegate = self;
@@ -219,6 +221,21 @@
 
 - (UIViewController *)rootViewController{
   return [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+}
+
+- (FullscreenPresentingAutoRotatingViewController *)fullscreenViewController {
+  
+  if (_fullscreenViewController) {
+    return _fullscreenViewController;
+  }
+  
+  FullscreenPresentingAutoRotatingViewController* vc = [FullscreenPresentingAutoRotatingViewController new];
+  vc.viewControllerToPresentFrom = [self rootViewController];
+
+  _fullscreenViewController = vc;
+  
+  return _fullscreenViewController;
+
 }
 
 @end
