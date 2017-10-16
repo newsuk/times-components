@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   }
 });
 
-const AuthorProfileContent = (props) => {
+const AuthorProfileContent = props => {
   const {
     name,
     articles,
@@ -45,14 +45,13 @@ const AuthorProfileContent = (props) => {
       renderItem={({ item }) => (
         <AuthorProfileItem
           {...item}
-          onPress={e =>
-            onArticlePress(e, { id: item.id, url: item.url })}
+          onPress={e => onArticlePress(e, { id: item.id, url: item.url })}
         />
       )}
       initialListSize={pageSize}
       scrollRenderAheadDistance={2}
       pageSize={pageSize}
-      ListHeaderComponent={(
+      ListHeaderComponent={
         <View>
           <AuthorHead
             name={name}
@@ -75,11 +74,11 @@ const AuthorProfileContent = (props) => {
             </View>
           </View>
         </View>
-      )}
+      }
       ItemSeparatorComponent={() => <AuthorProfileItemSeparator />}
     />
   );
-}
+};
 
 AuthorProfileContent.propTypes = propTypes;
 export default AuthorProfileContent;

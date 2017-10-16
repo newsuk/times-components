@@ -155,37 +155,40 @@ storiesOf("AuthorProfile", module)
     return withMockProvider(<AuthorProfile {...props} />);
   })
   .add("Empty State", () => {
-    const emptyMocks = [{
-      request: {
-        query: addTypenameToDocument(authorProfileQuery),
-        variables: {
-          slug: "no-results"
-        }
+    const emptyMocks = [
+      {
+        request: {
+          query: addTypenameToDocument(authorProfileQuery),
+          variables: {
+            slug: "no-results"
+          }
+        },
+        result: authorProfileFixture
       },
-      result: authorProfileFixture
-    }, {
-      request: {
-        query: addTypenameToDocument(articleListQuery),
-        variables: {
-          slug: "no-results",
-          first: 3,
-          skip: 0,
-          imageRatio: "3:2"
-        }
-      },
-      result: {
-        data: {
-          author: {
-            ...articleListFixture.data.author,
-            articles: {
-              ...articleListFixture.data.author.articles,
-              count: 0,
-              list: []
+      {
+        request: {
+          query: addTypenameToDocument(articleListQuery),
+          variables: {
+            slug: "no-results",
+            first: 3,
+            skip: 0,
+            imageRatio: "3:2"
+          }
+        },
+        result: {
+          data: {
+            author: {
+              ...articleListFixture.data.author,
+              articles: {
+                ...articleListFixture.data.author.articles,
+                count: 0,
+                list: []
+              }
             }
           }
         }
       }
-    }];
+    ];
 
     const emptyNetworkInterface = mockNetworkInterface(...emptyMocks);
     const props = {
