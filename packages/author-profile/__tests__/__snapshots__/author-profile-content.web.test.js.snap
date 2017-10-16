@@ -44,7 +44,7 @@ exports[`renders profile 1`] = `
             "title": "",
           },
           "publicationName": "TIMES",
-          "publishedTime": 2017-10-11T23:01:00.000Z,
+          "publishedTime": 2017-03-11T23:01:00.000Z,
           "title": "Isis ‘White Widow’ killed by US drone strike",
           "url": "https://www.thetimes.co.uk/article/isis-white-widow-sally-jones-is-killed-by-us-drone-strike-sdn3sgzj5",
         },
@@ -86,7 +86,7 @@ exports[`renders profile 1`] = `
             "title": "HMS Queen Elizabeth",
           },
           "publicationName": "TIMES",
-          "publishedTime": 2017-10-09T23:01:00.000Z,
+          "publishedTime": 2017-03-09T23:01:00.000Z,
           "title": "Doubts over delivery of carrier jets",
           "url": "https://www.thetimes.co.uk/article/doubts-over-delivery-of-lockheed-martin-f-35-jets-3hmrfttpx",
         },
@@ -115,7 +115,7 @@ exports[`renders profile 1`] = `
             "title": "HMS Ocean Embarks British Marines",
           },
           "publicationName": "TIMES",
-          "publishedTime": 2017-10-06T23:01:00.000Z,
+          "publishedTime": 2017-03-06T23:01:00.000Z,
           "title": "Admiral quits as budget cuts loom over Marines",
           "url": "https://www.thetimes.co.uk/article/rear-admiral-alex-burton-quits-as-budget-cuts-loom-over-marines-nmx5jdwx7",
         },
@@ -144,7 +144,7 @@ exports[`renders profile 1`] = `
             "title": "HMS Ocean Embarks British Marines",
           },
           "publicationName": "TIMES",
-          "publishedTime": 2017-10-05T23:01:00.000Z,
+          "publishedTime": 2017-03-05T23:01:00.000Z,
           "title": "Threat to marine landing ships and navy helicopters in defence review",
           "url": "https://www.thetimes.co.uk/article/threat-to-marine-landing-ships-and-navy-helicopters-in-defence-review-5kmpwgtd8",
         },
@@ -173,7 +173,7 @@ exports[`renders profile 1`] = `
             "title": "",
           },
           "publicationName": "TIMES",
-          "publishedTime": 2017-10-04T11:00:00.000Z,
+          "publishedTime": 2017-03-04T11:00:00.000Z,
           "title": "RAF jets escort Ryanair plane to Stansted after bomb hoax",
           "url": "https://www.thetimes.co.uk/article/raf-jets-escort-ryanair-plane-to-stansted-after-bomb-hoax-hb9ssx5c5",
         },
@@ -215,7 +215,7 @@ exports[`renders profile 1`] = `
             "title": "Prince Harry tour of duty in Afghanistan",
           },
           "publicationName": "TIMES",
-          "publishedTime": 2017-10-03T23:01:00.000Z,
+          "publishedTime": 2017-03-03T23:01:00.000Z,
           "title": "Prince Harry’s flying force to be cut by quarter in defence revamp",
           "url": "https://www.thetimes.co.uk/article/the-army-air-corps-prince-harry-s-flying-force-to-be-cut-in-defence-revamp-pjrmx7pw9",
         },
@@ -244,7 +244,7 @@ exports[`renders profile 1`] = `
             "title": "HMS Ocean Embarks British Marines",
           },
           "publicationName": "TIMES",
-          "publishedTime": 2017-10-03T23:01:00.000Z,
+          "publishedTime": 2017-03-03T23:01:00.000Z,
           "title": "I’ll press for cash to fight security threats, vows Fallon",
           "url": "https://www.thetimes.co.uk/article/i-ll-press-for-cash-to-fight-security-threats-vows-michael-fallon-g3tm65sbj",
         },
@@ -286,7 +286,7 @@ exports[`renders profile 1`] = `
             "title": "Conservative Party Conference 2017",
           },
           "publicationName": "TIMES",
-          "publishedTime": 2017-10-02T23:01:00.000Z,
+          "publishedTime": 2017-03-02T23:01:00.000Z,
           "title": "Forces need more money, Fallon told",
           "url": "https://www.thetimes.co.uk/article/forces-need-more-money-fallon-told-98tfb359m",
         },
@@ -315,7 +315,7 @@ exports[`renders profile 1`] = `
             "title": "",
           },
           "publicationName": "TIMES",
-          "publishedTime": 2017-10-02T23:01:00.000Z,
+          "publishedTime": 2017-03-02T23:01:00.000Z,
           "title": "Nuclear sub captain is recalled over ‘relationship’ on board",
           "url": "https://www.thetimes.co.uk/article/stuart-armstrong-captain-of-nuclear-sub-hms-vigilant-is-recalled-over-relationship-on-board-tcbb995dl",
         },
@@ -357,7 +357,7 @@ exports[`renders profile 1`] = `
             "title": "Sir Michael Fallon visit to HM Naval Base Clyde",
           },
           "publicationName": "TIMES",
-          "publishedTime": 2017-09-29T23:01:00.000Z,
+          "publishedTime": 2017-03-01T23:01:00.000Z,
           "title": "Nato ‘must act quicker’ in a nuclear crisis",
           "url": "https://www.thetimes.co.uk/article/britain-and-us-trying-to-speed-up-defence-decision-making-at-nato-says-sir-michael-fallon-p3kfh5whq",
         },
@@ -926,7 +926,7 @@ exports[`renders profile content 1`] = `
                   }
                   testID="datePublication"
                 >
-                  Thursday October 12 2017
+                  Saturday March 11 2017
                   , The Times
                 </Text>
               </View>
@@ -1125,7 +1125,7 @@ exports[`renders profile content 1`] = `
                   }
                   testID="datePublication"
                 >
-                  Tuesday October 10 2017
+                  Thursday March 09 2017
                   , The Times
                 </Text>
               </View>
@@ -1315,7 +1315,7 @@ exports[`renders profile content 1`] = `
                   }
                   testID="datePublication"
                 >
-                  Saturday October 07 2017
+                  Monday March 06 2017
                   , The Times
                 </Text>
               </View>
@@ -1505,7 +1505,7 @@ exports[`renders profile content 1`] = `
                   }
                   testID="datePublication"
                 >
-                  Friday October 06 2017
+                  Sunday March 05 2017
                   , The Times
                 </Text>
               </View>
@@ -1695,7 +1695,7 @@ exports[`renders profile content 1`] = `
                   }
                   testID="datePublication"
                 >
-                  Wednesday October 04 2017
+                  Saturday March 04 2017
                   , The Times
                 </Text>
               </View>
@@ -1894,7 +1894,7 @@ exports[`renders profile content 1`] = `
                   }
                   testID="datePublication"
                 >
-                  Wednesday October 04 2017
+                  Friday March 03 2017
                   , The Times
                 </Text>
               </View>
@@ -2084,7 +2084,7 @@ exports[`renders profile content 1`] = `
                   }
                   testID="datePublication"
                 >
-                  Wednesday October 04 2017
+                  Friday March 03 2017
                   , The Times
                 </Text>
               </View>
@@ -2283,7 +2283,7 @@ exports[`renders profile content 1`] = `
                   }
                   testID="datePublication"
                 >
-                  Tuesday October 03 2017
+                  Thursday March 02 2017
                   , The Times
                 </Text>
               </View>
@@ -2473,7 +2473,7 @@ exports[`renders profile content 1`] = `
                   }
                   testID="datePublication"
                 >
-                  Tuesday October 03 2017
+                  Thursday March 02 2017
                   , The Times
                 </Text>
               </View>
@@ -2672,7 +2672,7 @@ exports[`renders profile content 1`] = `
                   }
                   testID="datePublication"
                 >
-                  Saturday September 30 2017
+                  Wednesday March 01 2017
                   , The Times
                 </Text>
               </View>
@@ -3311,7 +3311,7 @@ exports[`renders profile content component 1`] = `
                 }
                 testID="datePublication"
               >
-                Thursday October 12 2017
+                Saturday March 11 2017
                 , The Times
               </Text>
             </View>
@@ -3519,7 +3519,7 @@ exports[`renders profile content component 1`] = `
                 }
                 testID="datePublication"
               >
-                Tuesday October 10 2017
+                Thursday March 09 2017
                 , The Times
               </Text>
             </View>
@@ -3718,7 +3718,7 @@ exports[`renders profile content component 1`] = `
                 }
                 testID="datePublication"
               >
-                Saturday October 07 2017
+                Monday March 06 2017
                 , The Times
               </Text>
             </View>
@@ -3917,7 +3917,7 @@ exports[`renders profile content component 1`] = `
                 }
                 testID="datePublication"
               >
-                Friday October 06 2017
+                Sunday March 05 2017
                 , The Times
               </Text>
             </View>
@@ -4116,7 +4116,7 @@ exports[`renders profile content component 1`] = `
                 }
                 testID="datePublication"
               >
-                Wednesday October 04 2017
+                Saturday March 04 2017
                 , The Times
               </Text>
             </View>
@@ -4324,7 +4324,7 @@ exports[`renders profile content component 1`] = `
                 }
                 testID="datePublication"
               >
-                Wednesday October 04 2017
+                Friday March 03 2017
                 , The Times
               </Text>
             </View>
@@ -4523,7 +4523,7 @@ exports[`renders profile content component 1`] = `
                 }
                 testID="datePublication"
               >
-                Wednesday October 04 2017
+                Friday March 03 2017
                 , The Times
               </Text>
             </View>
@@ -4731,7 +4731,7 @@ exports[`renders profile content component 1`] = `
                 }
                 testID="datePublication"
               >
-                Tuesday October 03 2017
+                Thursday March 02 2017
                 , The Times
               </Text>
             </View>
@@ -4930,7 +4930,7 @@ exports[`renders profile content component 1`] = `
                 }
                 testID="datePublication"
               >
-                Tuesday October 03 2017
+                Thursday March 02 2017
                 , The Times
               </Text>
             </View>
@@ -5138,7 +5138,7 @@ exports[`renders profile content component 1`] = `
                 }
                 testID="datePublication"
               >
-                Saturday September 30 2017
+                Wednesday March 01 2017
                 , The Times
               </Text>
             </View>
