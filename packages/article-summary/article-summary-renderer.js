@@ -1,7 +1,7 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { Text } from "react-native";
 
-export const renderer = {
+export default {
   paragraph(key, attributes, renderedChildren) {
     return <Text key={key}>{renderedChildren}. </Text>;
   },

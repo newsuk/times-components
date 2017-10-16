@@ -1,6 +1,6 @@
 import React from "react";
 
-export const renderer = {
+export default {
   paragraph(key, attributes, renderedChildren) {
     return <span key={key}>{renderedChildren}. </span>;
   },
