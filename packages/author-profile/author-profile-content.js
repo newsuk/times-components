@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { ListView, StyleSheet, View } from "react-native";
+import React from "react";
+import { FlatList, StyleSheet, View } from "react-native";
 import AuthorHead from "@times-components/author-head";
 import Pagination from "@times-components/pagination";
 import AuthorProfileItem from "./author-profile-item";
@@ -21,90 +21,64 @@ const styles = StyleSheet.create({
   }
 });
 
-const cloneArticlesWithRows = articles => {
-  const ds = new ListView.DataSource({
-    rowHasChanged: (r1, r2) => r1 !== r2
-  });
+const AuthorProfileContent = (props) => {
+  const {
+    name,
+    articles,
+    count,
+    biography,
+    uri,
+    jobTitle,
+    twitter,
+    onTwitterLinkPress,
+    onNext,
+    onPrev,
+    page,
+    pageSize,
+    onArticlePress
+  } = props;
 
-  return ds.cloneWithRows(articles);
-};
-
-class AuthorProfileContent extends Component {
-  constructor(props) {
-    super();
-
-    this.state = {
-      count: props.count,
-      dataSource: cloneArticlesWithRows(props.articles)
-    };
-  }
-
-  componentWillReceiveProps(nextProps) {
-    this.setState({
-      count: nextProps.count,
-      dataSource: cloneArticlesWithRows(nextProps.articles)
-    });
-  }
-
-  render() {
-    const {
-      name,
-      biography,
-      uri,
-      jobTitle,
-      twitter,
-      onTwitterLinkPress,
-      onNext,
-      onPrev,
-      page,
-      pageSize,
-      onArticlePress
-    } = this.props;
-
-    const { count, dataSource } = this.state;
-
-    return (
-      <ListView
-        dataSource={dataSource}
-        renderRow={article => (
-          <AuthorProfileItem
-            {...article}
-            key={article.id}
-            onPress={e =>
-              onArticlePress(e, { id: article.id, url: article.url })}
+  return (
+    <FlatList
+      data={articles}
+      keyExtractor={item => item.id}
+      renderItem={({ item }) => (
+        <AuthorProfileItem
+          {...item}
+          onPress={e =>
+            onArticlePress(e, { id: item.id, url: item.url })}
+        />
+      )}
+      initialListSize={pageSize}
+      scrollRenderAheadDistance={2}
+      pageSize={pageSize}
+      ListHeaderComponent={(
+        <View>
+          <AuthorHead
+            name={name}
+            bio={biography}
+            uri={uri}
+            title={jobTitle}
+            twitter={twitter}
+            onTwitterLinkPress={onTwitterLinkPress}
           />
-        )}
-        initialListSize={pageSize}
-        scrollRenderAheadDistance={2}
-        pageSize={pageSize}
-        renderHeader={() => (
-          <View>
-            <AuthorHead
-              name={name}
-              bio={biography}
-              uri={uri}
-              title={jobTitle}
-              twitter={twitter}
-              onTwitterLinkPress={onTwitterLinkPress}
-            />
-            <View style={styles.container}>
-              <View style={styles.spacing}>
-                <Pagination
-                  count={count}
-                  generatePageLink={pageNum => `?page=${pageNum}`}
-                  onNext={onNext}
-                  onPrev={onPrev}
-                  page={page}
-                  pageSize={pageSize}
-                />
-              </View>
+          <View style={styles.container}>
+            <View style={styles.spacing}>
+              <Pagination
+                count={count}
+                generatePageLink={pageNum => `?page=${pageNum}`}
+                onNext={onNext}
+                onPrev={onPrev}
+                page={page}
+                pageSize={pageSize}
+              />
             </View>
           </View>
-        )}
-        renderSeparator={() => <AuthorProfileItemSeparator />}
-      />
-    );
-  }
+        </View>
+      )}
+      ItemSeparatorComponent={() => <AuthorProfileItemSeparator />}
+    />
+  );
 }
 
 AuthorProfileContent.propTypes = propTypes;

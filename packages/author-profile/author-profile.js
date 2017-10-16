@@ -32,7 +32,7 @@ const AuthorProfile = ({
 
     return (
       <ArticleListProviderWithPageState
-        articleImageRatio={"3:2"}
+        articleImageRatio="3:2"
         slug={slug}
         page={initPage}
         pageSize={initPageSize}
