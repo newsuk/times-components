@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import AuthorHead from "@times-components/author-head";
 import { withPageState } from "@times-components/pagination";
 import { ArticleListProvider } from "@times-components/provider";
 import get from "lodash.get";
@@ -77,7 +78,13 @@ AuthorProfile.defaultProps = {
 AuthorProfile.propTypes = {
   isLoading: PropTypes.bool,
   error: PropTypes.shape(),
-  author: PropTypes.shape(),
+  author: PropTypes.shape({
+    name: PropTypes.string,
+    jobTitle: PropTypes.string,
+    biography: AuthorHead.propTypes.bio,
+    image: PropTypes.string,
+    twitter: PropTypes.string
+  }),
   page: PropTypes.number,
   pageSize: PropTypes.number,
   onTwitterLinkPress: PropTypes.func,

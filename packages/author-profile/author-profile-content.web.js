@@ -82,6 +82,18 @@ const AuthorProfileContent = ({
             </View>
           );
         })}
+        <View style={styles.container}>
+          <View style={styles.spacing}>
+            <Pagination
+              count={count}
+              generatePageLink={pageNum => `?page=${pageNum}`}
+              onNext={onNext}
+              onPrev={onPrev}
+              page={page}
+              pageSize={pageSize}
+            />
+          </View>
+        </View>
     </View>
   </View>
 );
