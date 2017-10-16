@@ -4,7 +4,7 @@ import React from "react";
 import { View } from "react-native";
 
 const BarSpacingDecorator = storyFn => (
-  <View style={{ marginTop: 20, backgroundColor: "red" }}>{storyFn()}</View>
+  <View style={{ marginTop: 20 }}>{storyFn()}</View>
 );
 
 export default BarSpacingDecorator;
