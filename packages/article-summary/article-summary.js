@@ -38,12 +38,18 @@ const styles = {
 const ArticleSummary = props => {
   const { label, headline, text, date, publication } = props;
 
+  const renderer = {
+    paragraph(key, attributes, renderedChildren) {
+      return <span key={key}>{renderedChildren} </span>;
+    }
+  }
+
   const labelText = label && label.toUpperCase && label.toUpperCase();
   return (
     <View style={styles.container}>
       <Text style={styles.label}>{labelText}</Text>
       <Text style={styles.headline}>{headline}</Text>
-      <Text style={styles.text}>{renderTrees(text)}</Text>
+      <Text style={styles.text}>{renderTrees(text, renderer)}</Text>
       <DatePublication date={date} publication={publication} />
     </View>
   );

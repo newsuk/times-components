@@ -10,8 +10,20 @@
         {
           "name": "text",
           "attributes": {
-            "value":
-              "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, "
+            "value": "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic Stat."
+          },
+          "children": []
+        }
+      ],
+      "attributes": {}
+    },
+    {
+      "name": "paragraph",
+      "children": [
+        {
+          "name": "text",
+          "attributes": {
+            "value": "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State."
           },
           "children": []
         }
