@@ -17,6 +17,7 @@
     "functional-test:web": "./lib/functional_tests/run-web.sh",
     "functional-test:ios": "./lib/functional_tests/run-ios.sh",
     "coverage:publish": "lcov-result-merger ./packages/**/lcov.info | coveralls",
+    "prelint": "prettier --list-different '+(.storybook.native|storybook|lib)/**/*.+(js|json)'",
     "lint": "lerna run lint",
     "fetch-fonts": "node ./lib/fetch-fonts",
     "prestorybook": "npm run fetch-fonts && npm run storybook:build-vendor",
@@ -33,7 +34,7 @@
     "preandroid": "npm run fetch-fonts",
     "android": "react-native run-android",
     "prettier:diff": "prettier --list-different 'packages/**/*.+(js|json)'",
-    "fmt": "prettier --write 'packages/**/*.+(js|json)'",
+    "fmt": "prettier --write '+(packages|storybook|.storybook.native|lib)/**/*.+(js|json)'",
     "packages:publish":
     "lerna publish --conventional-commits --yes --concurrency=1 --exact",
     "packages:publish-dry-run":

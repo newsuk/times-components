@@ -5,25 +5,7 @@ import { storiesOf } from "@storybook/react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { action } from "@storybook/addon-actions";
 import Link, { TextLink } from "./link";
-
-// eslint-disable-next-line react/prop-types
-const Centered = ({ children }) => (
-  <View
-    style={{
-      flex: 1,
-      position: "absolute",
-      top: 0,
-      bottom: 0,
-      left: 0,
-      right: 0,
-      flexDirection: "row",
-      alignItems: "center",
-      justifyContent: "center"
-    }}
-  >
-    {children}
-  </View>
-);
+import CenteredDecorator from "../../storybook/decorators/centered";
 
 const BigPinkSquare = props => (
   <View
@@ -33,7 +15,7 @@ const BigPinkSquare = props => (
 );
 
 storiesOf("Link", module)
-  .addDecorator(story => <Centered>{story()}</Centered>)
+  .addDecorator(CenteredDecorator)
   .add("Link with big content", () => (
     <Link url="https://thetimes.co.uk" onPress={action("onPress")}>
       <View style={{ width: 100, height: 100, backgroundColor: "pink" }} />

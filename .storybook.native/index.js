@@ -1,8 +1,17 @@
 import url from "url";
-import { AppRegistry, NativeModules } from "react-native";
-import { getStorybookUI, configure } from "@storybook/react-native";
+import { AppRegistry, NativeModules, Platform } from "react-native";
+import {
+  getStorybookUI,
+  configure,
+  addDecorator
+} from "@storybook/react-native";
 import { loadStories } from "./story-loader";
 import "./addons";
+import IosBarSpacingDecorator from "../storybook/decorators/ios-bar-spacing";
+
+if (Platform.OS === "ios") {
+  addDecorator(IosBarSpacingDecorator);
+}
 
 configure(loadStories, module);
 
