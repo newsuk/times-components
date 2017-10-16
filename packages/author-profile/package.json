@@ -13,6 +13,13 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
+    "collectCoverageFrom": [
+      "*.js",
+      "!fixture-generator.js",
+      "!*.fructose.*.js",
+      "!*.stories.js",
+      "!__tests__/**.test.js"
+    ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],

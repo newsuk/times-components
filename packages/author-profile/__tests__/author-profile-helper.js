@@ -1,7 +1,6 @@
 /* eslint-env jest */
 
 import "jsdom";
-import "react-native";
 import React from "react";
 import Enzyme, { shallow } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
@@ -13,6 +12,7 @@ import { addTypenameToDocument } from "apollo-client";
 import { query as authorProfileQuery } from "@times-components/provider/author-profile-provider";
 import { query as articleListQuery } from "@times-components/provider/article-list-provider";
 import AuthorProfile from "../author-profile";
+import AuthorProfileItem from "../author-profile-item";
 import AuthorProfileItemSeparator from "../author-profile-item-separator";
 import authorProfileFixture from "../fixtures/author-profile.json";
 import articleListFixture from "../fixtures/article-list.json";
@@ -25,16 +25,18 @@ const props = {
   onArticlePress: () => {}
 };
 
-const articlesList = (skip, first) => ({
+const pagedResult = (skip, first) => ({
   data: {
     author: {
       ...articleListFixture.data.author,
       articles: {
         ...articleListFixture.data.author.articles,
-        list: articleListFixture.data.author.articles.list.slice(
-          skip,
-          skip + first
-        )
+        list: articleListFixture.data.author.articles.list
+          .map(el => ({
+            ...el,
+            publishedTime: new Date(el.publishedTime)
+          }))
+          .slice(skip, skip + first)
       }
     }
   }
@@ -60,7 +62,7 @@ const mocks = [
         imageRatio: "3:2"
       }
     },
-    result: articlesList(0, 3)
+    result: pagedResult(0, 3)
   },
   {
     request: {
@@ -72,7 +74,7 @@ const mocks = [
         imageRatio: "3:2"
       }
     },
-    result: articlesList(3, 3)
+    result: pagedResult(3, 3)
   },
   {
     request: {
@@ -84,7 +86,7 @@ const mocks = [
         imageRatio: "3:2"
       }
     },
-    result: articlesList(6, 3)
+    result: pagedResult(6, 3)
   },
   {
     request: {
@@ -96,7 +98,7 @@ const mocks = [
         imageRatio: "3:2"
       }
     },
-    result: articlesList(9, 3)
+    result: pagedResult(9, 3)
   }
 ];
 
@@ -149,6 +151,25 @@ export default AuthorProfileContent => {
     expect(component).toMatchSnapshot();
   });
 
+  it("renders profile content", () => {
+    const component = renderer.create(
+      withMockProvider(
+        <AuthorProfile
+          {...props}
+          author={authorProfileFixture.data.author}
+          isLoading={false}
+          slug={"fiona-hamilton"}
+          page={1}
+          pageSize={10}
+          onTwitterLinkPress={() => {}}
+          onArticlePress={() => {}}
+        />
+      )
+    );
+
+    expect(component).toMatchSnapshot();
+  });
+
   it("renders profile loading", () => {
     const p = Object.assign({}, props, {
       slug: "fiona-hamilton",
@@ -193,25 +214,35 @@ export default AuthorProfileContent => {
   });
 
   it("renders profile content component", () => {
-    const contentProps = {
-      articles: articleListFixture.data.author.articles.list.map(el => ({
-        ...el,
-        publishedTime: new Date(el.publishedTime)
-      }))
-    };
-
+    const results = pagedResult(0, 3);
     const component = renderer.create(
-      withMockProvider(
-        <AuthorProfileContent
-          {...contentProps}
-          {...authorProfileFixture}
-          slug={"fiona-hamilton"}
-          page={1}
-          pageSize={10}
-          onTwitterLinkPress={() => {}}
-          onArticlePress={() => {}}
-        />
-      )
+      <AuthorProfileContent
+        articles={results.data.author.articles.list}
+        author={authorProfileFixture.data.author}
+        slug={"fiona-hamilton"}
+        page={1}
+        pageSize={3}
+        onTwitterLinkPress={() => {}}
+        onArticlePress={() => {}}
+      />
+    );
+
+    expect(component).toMatchSnapshot();
+  });
+
+  it("renders profile content item component", () => {
+    const item = pagedResult(0, 1).data.author.articles.list[0];
+    const component = renderer.create(
+      <AuthorProfileItem {...item} onPress={() => {}} />
+    );
+
+    expect(component).toMatchSnapshot();
+  });
+
+  it("renders profile content item component with no image ", () => {
+    const item = pagedResult(0, 1).data.author.articles.list[0];
+    const component = renderer.create(
+      <AuthorProfileItem {...item} imageUri={null} onPress={() => {}} />
     );
 
     expect(component).toMatchSnapshot();

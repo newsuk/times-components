@@ -42,61 +42,56 @@ const AuthorProfileContent = ({
   pageSize,
   articles,
   onArticlePress
-}) => (
-  <View>
-    <AuthorHead
-      name={name}
-      bio={biography}
-      uri={uri}
-      title={jobTitle}
-      twitter={twitter}
-      onTwitterLinkPress={onTwitterLinkPress}
-    />
-
-    <View>
-      <View style={styles.container}>
-        <View style={styles.spacing}>
-          <Pagination
-            count={count}
-            generatePageLink={pageNum => `?page=${pageNum}`}
-            onNext={onNext}
-            onPrev={onPrev}
-            page={page}
-            pageSize={pageSize}
-          />
-        </View>
-      </View>
-      {articles &&
-        articles.map((article, key) => {
-          const { id, url } = article;
-          const separatorComponent =
-            key > 0 ? <AuthorProfileItemSeparator /> : null;
-
-          return (
-            <View key={id} style={itemStyles.container}>
-              {separatorComponent}
-              <AuthorProfileItem
-                {...article}
-                onPress={e => onArticlePress(e, { id, url })}
-              />
-            </View>
-          );
-        })}
-      <View style={styles.container}>
-        <View style={styles.spacing}>
-          <Pagination
-            count={count}
-            generatePageLink={pageNum => `?page=${pageNum}`}
-            onNext={onNext}
-            onPrev={onPrev}
-            page={page}
-            pageSize={pageSize}
-          />
-        </View>
+}) => {
+  const paginationComponent = (
+    <View style={styles.container}>
+      <View style={styles.spacing}>
+        <Pagination
+          count={count}
+          generatePageLink={pageNum => `?page=${pageNum}`}
+          onNext={onNext}
+          onPrev={onPrev}
+          page={page}
+          pageSize={pageSize}
+        />
       </View>
     </View>
-  </View>
-);
+  );
+
+  return (
+    <View>
+      <AuthorHead
+        name={name}
+        bio={biography}
+        uri={uri}
+        title={jobTitle}
+        twitter={twitter}
+        onTwitterLinkPress={onTwitterLinkPress}
+      />
+
+      <View>
+        {paginationComponent}
+        {articles &&
+          articles.map((article, key) => {
+            const { id, url } = article;
+            const separatorComponent =
+              key > 0 ? <AuthorProfileItemSeparator /> : null;
+
+            return (
+              <View key={id} style={itemStyles.container}>
+                {separatorComponent}
+                <AuthorProfileItem
+                  {...article}
+                  onPress={e => onArticlePress(e, { id, url })}
+                />
+              </View>
+            );
+          })}
+        {paginationComponent}
+      </View>
+    </View>
+  );
+};
 
 AuthorProfileContent.propTypes = propTypes;
 export default AuthorProfileContent;
