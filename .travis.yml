@@ -4,6 +4,7 @@ before_install:
   - export PATH="$HOME/.yarn/bin:$PATH"
 before_script:
   - chmod +x ./lib/publish.sh
+  - export TZ=Europe/London
 script:
   - yarn lint
   - yarn test
