@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article Summary Renderer Native renders a paragraph ending with a full stop and a space with no new line 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  disabled={false}
+  ellipsizeMode="tail"
+>
+  Content
+  . 
+</Text>
+`;
+
+exports[`Article Summary Renderer Native renders a teaser with an ellipsis at the end 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  disabled={false}
+  ellipsizeMode="tail"
+>
+  Content
+  ...
+</Text>
+`;

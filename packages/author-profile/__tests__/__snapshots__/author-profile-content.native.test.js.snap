@@ -882,21 +882,31 @@ exports[`renders profile content 1`] = `
                     Object {
                       "color": "#696969",
                       "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": 14,
                       "lineHeight": 20,
                       "marginBottom": 10,
                     }
                   }
                 >
-                  <span>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night
                     . 
-                  </span>
-                  <span>
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     The former punk
                     ...
-                  </span>
+                  </Text>
                 </Text>
                 <Text
                   accessible={true}
@@ -1071,21 +1081,31 @@ exports[`renders profile content 1`] = `
                     Object {
                       "color": "#696969",
                       "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": 14,
                       "lineHeight": 20,
                       "marginBottom": 10,
                     }
                   }
                 >
-                  <span>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     Britain’s next generation of fast jets are less likely to be delivered as planned because of concerns over simulators, software and weapons
                     . 
-                  </span>
-                  <span>
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     The
                     ...
-                  </span>
+                  </Text>
                 </Text>
                 <Text
                   accessible={true}
@@ -1260,17 +1280,22 @@ exports[`renders profile content 1`] = `
                     Object {
                       "color": "#696969",
                       "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": 14,
                       "lineHeight": 20,
                       "marginBottom": 10,
                     }
                   }
                 >
-                  <span>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     A senior Royal Navy officer has decided to resign as his service considers axing two beach-assaulting warships and 1,000 Royal Marines to save
                     ...
-                  </span>
+                  </Text>
                 </Text>
                 <Text
                   accessible={true}
@@ -1445,17 +1470,22 @@ exports[`renders profile content 1`] = `
                     Object {
                       "color": "#696969",
                       "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": 14,
                       "lineHeight": 20,
                       "marginBottom": 10,
                     }
                   }
                 >
-                  <span>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     The Royal Marines may lose their ability to storm beaches from the sea while the Royal Navy could scrap a helicopter fleet under cost-saving
                     ...
-                  </span>
+                  </Text>
                 </Text>
                 <Text
                   accessible={true}
@@ -1630,17 +1660,22 @@ exports[`renders profile content 1`] = `
                     Object {
                       "color": "#696969",
                       "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": 14,
                       "lineHeight": 20,
                       "marginBottom": 10,
                     }
                   }
                 >
-                  <span>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     Two RAF fast jets were scrambled this morning to intercept a Ryanair flight from Lithuania that was diverted to Stansted following a suspected
                     ...
-                  </span>
+                  </Text>
                 </Text>
                 <Text
                   accessible={true}
@@ -1815,21 +1850,31 @@ exports[`renders profile content 1`] = `
                     Object {
                       "color": "#696969",
                       "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": 14,
                       "lineHeight": 20,
                       "marginBottom": 10,
                     }
                   }
                 >
-                  <span>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     The army’s air force is to shrink by almost a quarter in a cost-cutting measure that will change the shape of military aviation
                     . 
-                  </span>
-                  <span>
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     The Army Air Corps
                     ...
-                  </span>
+                  </Text>
                 </Text>
                 <Text
                   accessible={true}
@@ -2004,17 +2049,22 @@ exports[`renders profile content 1`] = `
                     Object {
                       "color": "#696969",
                       "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": 14,
                       "lineHeight": 20,
                       "marginBottom": 10,
                     }
                   }
                 >
-                  <span>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     Sir Michael Fallon has promised to push the Treasury for more money for the armed forces following months of pressure about a deepening hole in
                     ...
-                  </span>
+                  </Text>
                 </Text>
                 <Text
                   accessible={true}
@@ -2189,21 +2239,31 @@ exports[`renders profile content 1`] = `
                     Object {
                       "color": "#696969",
                       "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": 14,
                       "lineHeight": 20,
                       "marginBottom": 10,
                     }
                   }
                 >
-                  <span>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     Sir Michael Fallon is being challenged to fight for money for defence or risk a further erosion in the armed forces
                     . 
-                  </span>
-                  <span>
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     In an intervention timed to
                     ...
-                  </span>
+                  </Text>
                 </Text>
                 <Text
                   accessible={true}
@@ -2378,17 +2438,22 @@ exports[`renders profile content 1`] = `
                     Object {
                       "color": "#696969",
                       "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": 14,
                       "lineHeight": 20,
                       "marginBottom": 10,
                     }
                   }
                 >
-                  <span>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     The captain of a British nuclear deterrent submarine has been removed after allegations of an “inappropriate relationship” with a female crew
                     ...
-                  </span>
+                  </Text>
                 </Text>
                 <Text
                   accessible={true}
@@ -2563,21 +2628,31 @@ exports[`renders profile content 1`] = `
                     Object {
                       "color": "#696969",
                       "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": 14,
                       "lineHeight": 20,
                       "marginBottom": 10,
                     }
                   }
                 >
-                  <span>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     Britain and the United States are urging Nato to speed up its ability to respond in a nuclear weapons crisis, the defence secretary has said
                     . 
-                  </span>
-                  <span>
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     Sir
                     ...
-                  </span>
+                  </Text>
                 </Text>
                 <Text
                   accessible={true}
@@ -3186,21 +3261,31 @@ exports[`renders profile content component 1`] = `
                     Object {
                       "color": "#696969",
                       "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": 14,
                       "lineHeight": 20,
                       "marginBottom": 10,
                     }
                   }
                 >
-                  <span>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night
                     . 
-                  </span>
-                  <span>
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     The former punk
                     ...
-                  </span>
+                  </Text>
                 </Text>
                 <Text
                   accessible={true}
@@ -3375,21 +3460,31 @@ exports[`renders profile content component 1`] = `
                     Object {
                       "color": "#696969",
                       "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": 14,
                       "lineHeight": 20,
                       "marginBottom": 10,
                     }
                   }
                 >
-                  <span>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     Britain’s next generation of fast jets are less likely to be delivered as planned because of concerns over simulators, software and weapons
                     . 
-                  </span>
-                  <span>
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     The
                     ...
-                  </span>
+                  </Text>
                 </Text>
                 <Text
                   accessible={true}
@@ -3564,17 +3659,22 @@ exports[`renders profile content component 1`] = `
                     Object {
                       "color": "#696969",
                       "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": 14,
                       "lineHeight": 20,
                       "marginBottom": 10,
                     }
                   }
                 >
-                  <span>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     A senior Royal Navy officer has decided to resign as his service considers axing two beach-assaulting warships and 1,000 Royal Marines to save
                     ...
-                  </span>
+                  </Text>
                 </Text>
                 <Text
                   accessible={true}
@@ -3749,17 +3849,22 @@ exports[`renders profile content component 1`] = `
                     Object {
                       "color": "#696969",
                       "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": 14,
                       "lineHeight": 20,
                       "marginBottom": 10,
                     }
                   }
                 >
-                  <span>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     The Royal Marines may lose their ability to storm beaches from the sea while the Royal Navy could scrap a helicopter fleet under cost-saving
                     ...
-                  </span>
+                  </Text>
                 </Text>
                 <Text
                   accessible={true}
@@ -3934,17 +4039,22 @@ exports[`renders profile content component 1`] = `
                     Object {
                       "color": "#696969",
                       "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": 14,
                       "lineHeight": 20,
                       "marginBottom": 10,
                     }
                   }
                 >
-                  <span>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     Two RAF fast jets were scrambled this morning to intercept a Ryanair flight from Lithuania that was diverted to Stansted following a suspected
                     ...
-                  </span>
+                  </Text>
                 </Text>
                 <Text
                   accessible={true}
@@ -4119,21 +4229,31 @@ exports[`renders profile content component 1`] = `
                     Object {
                       "color": "#696969",
                       "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": 14,
                       "lineHeight": 20,
                       "marginBottom": 10,
                     }
                   }
                 >
-                  <span>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     The army’s air force is to shrink by almost a quarter in a cost-cutting measure that will change the shape of military aviation
                     . 
-                  </span>
-                  <span>
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     The Army Air Corps
                     ...
-                  </span>
+                  </Text>
                 </Text>
                 <Text
                   accessible={true}
@@ -4308,17 +4428,22 @@ exports[`renders profile content component 1`] = `
                     Object {
                       "color": "#696969",
                       "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": 14,
                       "lineHeight": 20,
                       "marginBottom": 10,
                     }
                   }
                 >
-                  <span>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     Sir Michael Fallon has promised to push the Treasury for more money for the armed forces following months of pressure about a deepening hole in
                     ...
-                  </span>
+                  </Text>
                 </Text>
                 <Text
                   accessible={true}
@@ -4493,21 +4618,31 @@ exports[`renders profile content component 1`] = `
                     Object {
                       "color": "#696969",
                       "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": 14,
                       "lineHeight": 20,
                       "marginBottom": 10,
                     }
                   }
                 >
-                  <span>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     Sir Michael Fallon is being challenged to fight for money for defence or risk a further erosion in the armed forces
                     . 
-                  </span>
-                  <span>
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     In an intervention timed to
                     ...
-                  </span>
+                  </Text>
                 </Text>
                 <Text
                   accessible={true}
@@ -4682,17 +4817,22 @@ exports[`renders profile content component 1`] = `
                     Object {
                       "color": "#696969",
                       "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": 14,
                       "lineHeight": 20,
                       "marginBottom": 10,
                     }
                   }
                 >
-                  <span>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     The captain of a British nuclear deterrent submarine has been removed after allegations of an “inappropriate relationship” with a female crew
                     ...
-                  </span>
+                  </Text>
                 </Text>
                 <Text
                   accessible={true}
@@ -4867,21 +5007,31 @@ exports[`renders profile content component 1`] = `
                     Object {
                       "color": "#696969",
                       "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": 14,
                       "lineHeight": 20,
                       "marginBottom": 10,
                     }
                   }
                 >
-                  <span>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     Britain and the United States are urging Nato to speed up its ability to respond in a nuclear weapons crisis, the defence secretary has said
                     . 
-                  </span>
-                  <span>
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
                     Sir
                     ...
-                  </span>
+                  </Text>
                 </Text>
                 <Text
                   accessible={true}
