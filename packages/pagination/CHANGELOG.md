@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.9.2...@times-components/pagination@0.10.0) (2017-10-16)
+
+
+### Features
+
+* add storybook decorators ([#300](https://github.com/newsuk/times-components/issues/300)) ([9247723](https://github.com/newsuk/times-components/commit/9247723))
+
+
+
+
 <a name="0.9.2"></a>
 ## [0.9.2](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.9.1...@times-components/pagination@0.9.2) (2017-10-13)
 
