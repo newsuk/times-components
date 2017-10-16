@@ -16,7 +16,7 @@ import articleListFixture from "./fixtures/article-list.json";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
-    e.preventDefaFult();
+    e.preventDefault();
     return ["[SyntheticEvent (storybook prevented default)]", ...args];
   }
 ]);
