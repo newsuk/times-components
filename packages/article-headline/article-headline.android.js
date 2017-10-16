@@ -6,7 +6,7 @@ import StylePropTypes from "react-style-proptype";
 import PropTypes from "prop-types";
 import WebViewAutoHeight from "./WebView-auto-height";
 
-const ArticleHeadline = ({ title, style, baseUrl }) => {
+const ArticleHeadline = ({ text, style, baseUrl }) => {
   const html = `
     <div>
       <style>
@@ -26,7 +26,7 @@ const ArticleHeadline = ({ title, style, baseUrl }) => {
           letter-spacing: 0.5px;
         }
       </style>
-      <p>${title}</p>
+      <p>${text}</p>
     </div>
   `;
 
@@ -34,7 +34,7 @@ const ArticleHeadline = ({ title, style, baseUrl }) => {
 };
 
 ArticleHeadline.propTypes = {
-  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
   style: StylePropTypes,
   baseUrl: PropTypes.string
 };
