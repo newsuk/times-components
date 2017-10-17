@@ -29,7 +29,7 @@
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
 
-  return UIInterfaceOrientationMaskAll;
+  return UIInterfaceOrientationMaskAllButUpsideDown;
   
 }
 
