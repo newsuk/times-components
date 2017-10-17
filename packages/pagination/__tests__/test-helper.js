@@ -14,7 +14,7 @@ export default Pagination => () => {
       page: 1
     };
 
-    const component = shallow(<Pagination {...props} />);
+    const component = shallow(<Pagination {...props} />).dive();
     expect(component).toMatchSnapshot();
   });
 
@@ -24,7 +24,7 @@ export default Pagination => () => {
       page: 1
     };
 
-    const component = shallow(<Pagination {...props} />);
+    const component = shallow(<Pagination {...props} />).dive();
     component.setState({
       hideResults: true
     });
@@ -39,7 +39,7 @@ export default Pagination => () => {
       page: 3
     };
 
-    const component = shallow(<Pagination {...props} />);
+    const component = shallow(<Pagination {...props} />).dive();
     expect(component).toMatchSnapshot();
   });
 
@@ -49,7 +49,7 @@ export default Pagination => () => {
       page: 2
     };
 
-    const component = shallow(<Pagination {...props} />);
+    const component = shallow(<Pagination {...props} />).dive();
     expect(component).toMatchSnapshot();
   });
 
@@ -59,23 +59,27 @@ export default Pagination => () => {
       page: 1
     };
 
-    const component = shallow(<Pagination {...props} />);
+    const component = shallow(<Pagination {...props} />).dive();
     expect(component).toMatchSnapshot();
   });
 
   it("set results hidden above breakpoint", done => {
-    const comp = new Pagination({
+    const props = {
       count: 21,
       page: 1
-    });
+    };
 
-    comp.setState = ({ absolutePosition }) => {
+    const component = shallow(<Pagination {...props} />)
+      .dive()
+      .instance();
+
+    component.setState = ({ absolutePosition }) => {
       expect(absolutePosition).toEqual(true);
 
       return done();
     };
 
-    comp.handleLayout({
+    component.handleLayout({
       nativeEvent: {
         layout: {
           width: 800,
@@ -86,23 +90,69 @@ export default Pagination => () => {
   });
 
   it("set results showing below breakpoint", done => {
-    const comp = new Pagination({
+    const props = {
       count: 21,
       page: 1
-    });
+    };
 
-    comp.setState = ({ absolutePosition }) => {
+    const component = shallow(<Pagination {...props} />)
+      .dive()
+      .instance();
+
+    component.setState = ({ absolutePosition }) => {
       expect(absolutePosition).toEqual(false);
 
       return done();
     };
 
-    comp.handleLayout({
+    component.handleLayout({
       nativeEvent: {
         layout: {
           width: 400,
           height: 300
         }
+      }
+    });
+  });
+
+  it("tracks next page interaction", () => {
+    const stream = jest.fn();
+    const component = shallow(<Pagination count={21} page={1} />, {
+      context: { tracking: { analytics: stream } }
+    });
+
+    component
+      .dive()
+      .find("Link")
+      .simulate("press");
+
+    expect(stream).toHaveBeenCalledWith({
+      component: "Pagination",
+      action: "Pressed",
+      attrs: {
+        direction: "forward",
+        nextPage: 2
+      }
+    });
+  });
+
+  it("tracks previous page interaction", () => {
+    const stream = jest.fn();
+    const component = shallow(<Pagination count={21} page={2} />, {
+      context: { tracking: { analytics: stream } }
+    });
+
+    component
+      .dive()
+      .find("Link")
+      .simulate("press");
+
+    expect(stream).toHaveBeenCalledWith({
+      component: "Pagination",
+      action: "Pressed",
+      attrs: {
+        direction: "back",
+        nextPage: 1
       }
     });
   });

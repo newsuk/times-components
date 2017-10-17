@@ -181,7 +181,7 @@ Pagination.defaultProps = {
   hideResults: false
 };
 
-const PaginationTracked = withTrackEvents(Pagination, {
+export default withTrackEvents(Pagination, {
   analyticsEvents: [
     {
       eventName: "onNext",
@@ -202,6 +202,4 @@ const PaginationTracked = withTrackEvents(Pagination, {
   ]
 });
 
-export default Pagination;
-
-export { withPageState, PaginationTracked };
+export { withPageState };

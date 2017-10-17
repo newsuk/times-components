@@ -2,6 +2,5 @@
   "preset": "react-native",
   "rootDir": "../../",
   "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-  "testMatch": ["<rootDir>/packages/pagination/__tests__/**.test.js"],
-  "testPathIgnorePatterns": ["web.test.js$"]
+  "testMatch": ["<rootDir>/packages/pagination/__tests__/**.native.test.js"]
 }
