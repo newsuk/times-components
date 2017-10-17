@@ -5,8 +5,13 @@ import Article from "./article";
 
 const fullArticleFixture = require("./fixtures/full-article.json");
 
+const props = {
+  ...fullArticleFixture.data,
+  isLoading: false,
+  fructoseID: "defaultArticle"
+};
 withComponent(
-  <Article fructoseID="defaultArticle" {...fullArticleFixture} />,
+  <Article {...props} />,
   "default non interactive article",
   async fructose => {
     beforeEach(async () => {
