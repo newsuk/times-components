@@ -1,7 +1,3 @@
-//
-//  Copyright © 2017 Facebook. All rights reserved.
-//
-
 import UIKit
 
 @objc
