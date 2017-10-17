@@ -1,5 +1,5 @@
 //
-//  Copyright © 2017 Facebook. All rights reserved.
+//  Copyright © 2017 News UK. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
