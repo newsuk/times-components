@@ -1,12 +1,21 @@
 import React from "react";
+import { View } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
 import ArticleSummary from "./article-summary";
-import props from "./fixtures/article.json";
 import LateralSpacingDecorator from "../../storybook/decorators/lateral-spacing";
+import articleFixture from "./fixtures/article.json";
+import reviewFixture from "./fixtures/review.json";
 
-props.date = new Date(props.date);
+[articleFixture, reviewFixture].forEach(fixture => fixture.date = new Date(fixture.date));
+
+const story = m => <View style={{ padding: 20 }}>{m}</View>;
 
 storiesOf("ArticleSummary", module)
   .addDecorator(LateralSpacingDecorator)
-  .add("ArticleSummary", () => <ArticleSummary {...props} />);
+  .add("Paragraph Summary", () =>
+    story(<ArticleSummary {...articleFixture} />)
+  )
+  .add("Review/Rating Summary", () =>
+    story(<ArticleSummary {...reviewFixture} />)
+  );
