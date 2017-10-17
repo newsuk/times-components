@@ -25,7 +25,7 @@ public class BrightcovePlayerJavaModule extends ReactContextBaseJavaModule {
 
     @Override
     public String getName() {
-        return "BrightcovePlayerJavaModule";
+        return "BrightcoveFullscreenPlayer";
     }
 
     @ReactMethod

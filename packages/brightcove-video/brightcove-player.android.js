@@ -12,8 +12,6 @@ import BrightcoveVideo from "./brightcove-player.native";
 import propTypes from "./brightcove-player.proptypes";
 import defaults from "./brightcove-player.defaults";
 
-const BrightcovePlayerJavaModule = NativeModules.BrightcovePlayerJavaModule;
-
 function withNativeCommand(WrappedComponent) {
   class AndroidNative extends Component {
     static uiManagerCommand(name) {
@@ -71,25 +69,12 @@ function withNativeCommand(WrappedComponent) {
       );
 
       return (
-        <View>
-          <TouchableWithoutFeedback
-            onPress={() => {
-              BrightcovePlayerJavaModule.playVideo({
-                accountId: this.props.accountId,
-                videoId: this.props.videoId,
-                policyKey: this.props.policyKey
-              });
-            }}
-          >
-            <Text>play fullscreen</Text>
-          </TouchableWithoutFeedback>
-          <WrappedComponent
-            ref={ref => {
-              this.bcv = ref;
-            }}
-            {...props}
-          />
-        </View>
+        <WrappedComponent
+          ref={ref => {
+            this.bcv = ref;
+          }}
+          {...props}
+        />
       );
     }
   }
