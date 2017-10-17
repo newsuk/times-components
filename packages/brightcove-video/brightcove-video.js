@@ -9,6 +9,10 @@ const BrightcoveFullscreenPlayerModule =
   NativeModules.BrightcoveFullscreenPlayer;
 
 class BrightcoveVideo extends Component {
+  static getBrightcoveFullscreenPlayerModule() {
+    return BrightcoveFullscreenPlayerModule;
+  }
+
   constructor(props) {
     super(props);
 
@@ -30,8 +34,10 @@ class BrightcoveVideo extends Component {
   }
 
   play() {
-    if (BrightcoveFullscreenPlayerModule && this.props.directToFullscreen) {
-      BrightcoveFullscreenPlayerModule.playVideo({
+    const nativeModule = BrightcoveVideo.getBrightcoveFullscreenPlayerModule();
+
+    if (nativeModule && this.props.directToFullscreen) {
+      nativeModule.playVideo({
         accountId: this.props.accountId,
         videoId: this.props.videoId,
         policyKey: this.props.policyKey
