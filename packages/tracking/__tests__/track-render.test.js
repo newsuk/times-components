@@ -3,33 +3,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
 import { withTrackRender } from "../tracking";
-import trackingContextTypes from "../tracking-context-types";
+import withTestContext from "./test-tracking-context";
 
 describe("WithTrackRender", () => {
   const TestComponent = props => <Text>{props.someProp}</Text>;
   TestComponent.propTypes = { someProp: PropTypes.string };
   TestComponent.defaultProps = { someProp: "foo" };
   TestComponent.someStatic = { foo: "bar" };
-
-  const withTestContext = WrappedComponent => {
-    class TestContext extends React.Component {
-      getChildContext() {
-        const self = this;
-        return {
-          tracking: {
-            analytics(...args) {
-              self.props.analyticsStream(...args);
-            }
-          }
-        };
-      }
-      render() {
-        return <WrappedComponent {...this.props} />;
-      }
-    }
-    TestContext.childContextTypes = trackingContextTypes;
-    return TestContext;
-  };
 
   it("renders when tracking context is missing", () => {
     const WithTracking = withTrackRender(TestComponent);

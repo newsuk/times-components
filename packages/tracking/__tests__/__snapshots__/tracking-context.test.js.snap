@@ -10,3 +10,7 @@ exports[`WithTrackingContext forwards props to wrapped component 1`] = `
   bar
 </Text>
 `;
+
+exports[`WithTrackingContext raises error when analyticsStream not supplied to top-level context 1`] = `"Missing prop analyticsStream of WithTrackingContext"`;
+
+exports[`WithTrackingContext raises error when tracking object not supplied to top-level context 1`] = `"Missing argument trackingObject of withTrackingContext()"`;

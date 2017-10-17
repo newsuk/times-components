@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.18.5"></a>
+## [0.18.5](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.18.4...@times-components/author-profile@0.18.5) (2017-10-17)
+
+
+
+
+<a name="0.18.4"></a>
+## [0.18.4](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.18.3...@times-components/author-profile@0.18.4) (2017-10-16)
+
+
+
+
+<a name="0.18.3"></a>
+## [0.18.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.18.2...@times-components/author-profile@0.18.3) (2017-10-16)
+
+
+
+
+<a name="0.18.2"></a>
+## [0.18.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.18.1...@times-components/author-profile@0.18.2) (2017-10-13)
+
+
+### Bug Fixes
+
+* prettier to ignore native code ([#296](https://github.com/newsuk/times-components/issues/296)) ([d6d24ed](https://github.com/newsuk/times-components/commit/d6d24ed))
+
+
+
+
 <a name="0.18.1"></a>
 ## [0.18.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.18.0...@times-components/author-profile@0.18.1) (2017-10-13)
 

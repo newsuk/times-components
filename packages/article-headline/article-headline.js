@@ -3,7 +3,7 @@ import { Text } from "react-native";
 import PropTypes from "prop-types";
 
 const styles = {
-  title: {
+  text: {
     color: "#1D1D1B",
     fontSize: 22,
     lineHeight: 25,
@@ -13,14 +13,14 @@ const styles = {
   }
 };
 
-const ArticleHeadline = ({ title, style }) => (
-  <Text testID="headline" style={[styles.title, style]}>
-    {title}
+const ArticleHeadline = ({ text, style }) => (
+  <Text testID="headline" style={[styles.text, style]}>
+    {text}
   </Text>
 );
 
 ArticleHeadline.propTypes = {
-  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
   style: Text.propTypes.style
 };
 

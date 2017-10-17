@@ -1,14 +1,13 @@
 import React from "react";
-import { View } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { decorateAction } from "@storybook/addon-actions";
+import { decorateAction, action } from "@storybook/addon-actions";
+import { withTrackingContext } from "@times-components/tracking";
 import AuthorHead from "./author-head";
+import LateralSpacingDecorator from "../../storybook/decorators/lateral-spacing";
 
 const data = require("./fixtures/profile.json");
-
-const story = m => <View style={{ padding: 20 }}>{m}</View>;
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
@@ -22,11 +21,24 @@ const extras = {
 };
 
 storiesOf("AuthorHead", module)
-  .add("Full Header", () => story(<AuthorHead {...data} {...extras} />))
+  .addDecorator(LateralSpacingDecorator)
+  .add("Full Header", () => <AuthorHead {...data} {...extras} />)
   .add("No profile picture", () => {
     const props = {
       ...data,
       uri: ""
     };
-    return story(<AuthorHead {...props} {...extras} />);
+    return <AuthorHead {...props} {...extras} />;
+  })
+  .add("Tracking", () => {
+    const AuthorHeadWithTrackingContext = withTrackingContext(AuthorHead, {
+      trackingObject: "Story"
+    });
+    return (
+      <AuthorHeadWithTrackingContext
+        {...data}
+        {...extras}
+        analyticsStream={action("analytics-event")}
+      />
+    );
   });

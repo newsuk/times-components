@@ -119,7 +119,7 @@ describe("WithTrackingContext", () => {
     const render = () =>
       renderer.create(<WithTrackingAndContext analyticsStream={() => {}} />);
 
-    expect(render).toThrow(TypeError);
+    expect(render).toThrowErrorMatchingSnapshot();
   });
 
   it("root context tracks page views", () => {
@@ -163,7 +163,7 @@ describe("WithTrackingContext", () => {
 
     const render = () => renderer.create(<WithTrackingAndContext />);
 
-    expect(render).toThrow(TypeError);
+    expect(render).toThrowErrorMatchingSnapshot();
   });
 
   it("forwards props to wrapped component", () => {

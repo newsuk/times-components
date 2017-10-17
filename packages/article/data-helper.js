@@ -2,7 +2,7 @@ const prepareDataForListView = articleData => {
   const leadAssetData = articleData.leadAsset;
   const articleHeaderData = {
     label: articleData.label,
-    title: articleData.title,
+    headline: articleData.headline,
     standfirst: articleData.standfirst,
     flags: articleData.flags
   };

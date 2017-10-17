@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import ArticleHeadline from "@times-components/article-headline";
 import {
   NewArticleFlag,
@@ -9,10 +10,6 @@ import {
 import ArticleLabel from "@times-components/article-label";
 import { Text, View } from "react-native";
 import styles from "./styles/article-header-style";
-import {
-  articleHeaderPropTypes,
-  articleHeaderDefaultPropTypes
-} from "./article-header.proptypes";
 
 const flagsMapping = new Map([
   ["NEW", <NewArticleFlag />],
@@ -52,17 +49,26 @@ const renderLabel = label => {
   );
 };
 
-const ArticleHeader = ({ label, title, standfirst, flags }) => (
+const ArticleHeader = ({ label, headline, standfirst, flags }) => (
   <View style={[styles.articleMainContentRow]}>
     {renderLabel(label)}
-    <ArticleHeadline title={title} style={styles.articleHeadLineText} />
+    <ArticleHeadline text={headline} style={styles.articleHeadLineText} />
     {renderStandfirst(standfirst)}
     {renderFlags(flags)}
   </View>
 );
 
-ArticleHeader.propTypes = articleHeaderPropTypes;
+ArticleHeader.propTypes = {
+  headline: PropTypes.string.isRequired,
+  label: PropTypes.string,
+  standfirst: PropTypes.string,
+  flags: PropTypes.arrayOf(PropTypes.string)
+};
 
-ArticleHeader.defaultProps = articleHeaderDefaultPropTypes;
+ArticleHeader.defaultProps = {
+  label: null,
+  standfirst: null,
+  flags: []
+};
 
 export default ArticleHeader;
