@@ -20,6 +20,9 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		274E65B41F962AEA008777EB /* RNTFullscreenPresentingAutoRotatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E65B31F962AEA008777EB /* RNTFullscreenPresentingAutoRotatingViewController.m */; };
+		274E65D91F963235008777EB /* RNTFullscreenAutoPresentingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E65D81F963235008777EB /* RNTFullscreenAutoPresentingView.m */; };
+		274E65DB1F9632A3008777EB /* RNTFullscreenAutoPresentingView.h in Sources */ = {isa = PBXBuildFile; fileRef = 274E65DA1F9632A3008777EB /* RNTFullscreenAutoPresentingView.h */; };
 		515F7D171F0E7BA000966DF3 /* GillSansMTStd-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 515F7D131F0E7BA000966DF3 /* GillSansMTStd-Medium.ttf */; };
 		515F7D191F0E7BA000966DF3 /* TimesDigital-RegularSC.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 515F7D151F0E7BA000966DF3 /* TimesDigital-RegularSC.ttf */; };
 		515F7D1A1F0E7BA000966DF3 /* TimesModern-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 515F7D161F0E7BA000966DF3 /* TimesModern-Bold.ttf */; };
@@ -100,6 +103,62 @@
 			proxyType = 2;
 			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
 			remoteInfo = React;
+		};
+		271B6EC41F94FF20008F64FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ADD01A681E09402E00F6D226;
+			remoteInfo = "RCTBlob-tvOS";
+		};
+		271B6ED61F94FF20008F64FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3DBE0D001F3B181A0099AA32;
+			remoteInfo = fishhook;
+		};
+		271B6ED81F94FF20008F64FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3DBE0D0D1F3B181C0099AA32;
+			remoteInfo = "fishhook-tvOS";
+		};
+		271B6EE61F94FF20008F64FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 139D7ECE1E25DB7D00323FB7;
+			remoteInfo = "third-party";
+		};
+		271B6EE81F94FF20008F64FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D383D3C1EBD27B6005632C8;
+			remoteInfo = "third-party-tvOS";
+		};
+		271B6EEA1F94FF20008F64FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 139D7E881E25C6D100323FB7;
+			remoteInfo = "double-conversion";
+		};
+		271B6EEC1F94FF20008F64FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D383D621EBD27B9005632C8;
+			remoteInfo = "double-conversion-tvOS";
+		};
+		271B6EF01F94FF20008F64FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6062F30799E544E8909E64C2 /* RNSVG.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 271B6EBB1F94FC4A008F64FC;
+			remoteInfo = "RNSVG-tvOS";
 		};
 		3DAD3E831DF850E9000B6D8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -253,6 +312,10 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = storybooknative/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = storybooknative/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		274E65B21F962AEA008777EB /* RNTFullscreenPresentingAutoRotatingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNTFullscreenPresentingAutoRotatingViewController.h; path = storybooknative/RNTFullscreenPresentingAutoRotatingViewController.h; sourceTree = "<group>"; };
+		274E65B31F962AEA008777EB /* RNTFullscreenPresentingAutoRotatingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RNTFullscreenPresentingAutoRotatingViewController.m; path = storybooknative/RNTFullscreenPresentingAutoRotatingViewController.m; sourceTree = "<group>"; };
+		274E65D81F963235008777EB /* RNTFullscreenAutoPresentingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RNTFullscreenAutoPresentingView.m; path = storybooknative/RNTFullscreenAutoPresentingView.m; sourceTree = "<group>"; };
+		274E65DA1F9632A3008777EB /* RNTFullscreenAutoPresentingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNTFullscreenAutoPresentingView.h; path = storybooknative/RNTFullscreenAutoPresentingView.h; sourceTree = "<group>"; };
 		515F7D131F0E7BA000966DF3 /* GillSansMTStd-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GillSansMTStd-Medium.ttf"; path = "../dist/public/fonts/GillSansMTStd-Medium.ttf"; sourceTree = "<group>"; };
 		515F7D151F0E7BA000966DF3 /* TimesDigital-RegularSC.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TimesDigital-RegularSC.ttf"; path = "../dist/public/fonts/TimesDigital-RegularSC.ttf"; sourceTree = "<group>"; };
 		515F7D161F0E7BA000966DF3 /* TimesModern-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TimesModern-Bold.ttf"; path = "../dist/public/fonts/TimesModern-Bold.ttf"; sourceTree = "<group>"; };
@@ -370,6 +433,8 @@
 			children = (
 				139FDEF41B06529B00C62182 /* libRCTWebSocket.a */,
 				3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */,
+				271B6ED71F94FF20008F64FC /* libfishhook.a */,
+				271B6ED91F94FF20008F64FC /* libfishhook-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -400,8 +465,20 @@
 				3DAD3EAB1DF850E9000B6D8A /* libcxxreact.a */,
 				3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */,
 				3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */,
+				271B6EE71F94FF20008F64FC /* libthird-party.a */,
+				271B6EE91F94FF20008F64FC /* libthird-party.a */,
+				271B6EEB1F94FF20008F64FC /* libdouble-conversion.a */,
+				271B6EED1F94FF20008F64FC /* libdouble-conversion.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		27452CBA1F94F7AC00226439 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				F99A760D4DBA4C06BAA2763C /* libRNSVG.a */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		515F7CF91F0E7B5600966DF3 /* Fonts */ = {
@@ -422,7 +499,7 @@
 			isa = PBXGroup;
 			children = (
 				5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */,
-				5E9157351DD0AC6500FF2AA8 /* libRCTAnimation-tvOS.a */,
+				5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -473,6 +550,7 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				87396A0C1EF3E8F70076CBAD /* Frameworks */,
+				27452CBA1F94F7AC00226439 /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -505,27 +583,33 @@
 		87396A3A1EF3EA130076CBAD /* brightcove-video */ = {
 			isa = PBXGroup;
 			children = (
+				87396A381EF3E9F10076CBAD /* bcovpuiiconfont.ttf */,
 				ED3A0BAC1F38C8F300048867 /* RNTBrightcove.h */,
 				ED3A0BAD1F38C8F300048867 /* RNTBrightcove.m */,
 				ED3A0BAE1F38C8F300048867 /* RNTBrightcoveManager.h */,
 				ED3A0BAF1F38C8F300048867 /* RNTBrightcoveManager.m */,
-				87396A381EF3E9F10076CBAD /* bcovpuiiconfont.ttf */,
+				274E65DA1F9632A3008777EB /* RNTFullscreenAutoPresentingView.h */,
+				274E65D81F963235008777EB /* RNTFullscreenAutoPresentingView.m */,
+				274E65B21F962AEA008777EB /* RNTFullscreenPresentingAutoRotatingViewController.h */,
+				274E65B31F962AEA008777EB /* RNTFullscreenPresentingAutoRotatingViewController.m */,
 			);
 			name = "brightcove-video";
-			sourceTree = "<group>";
-		};
-		ED3A0B8E1F38C8B200048867 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				ED3A0BAB1F38C8B300048867 /* libRNSVG.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		ADBDB9201DFEBF0600ED6528 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */,
+				271B6EC51F94FF20008F64FC /* libRCTBlob-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED3A0B8E1F38C8B200048867 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED3A0BAB1F38C8B300048867 /* libRNSVG.a */,
+				271B6EF11F94FF20008F64FC /* libRNSVG-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -559,6 +643,11 @@
 			attributes = {
 				LastUpgradeCheck = 610;
 				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 0900;
+					};
+				};
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "storybooknative" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -689,6 +778,62 @@
 			remoteRef = 146834031AC3E56700842450 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		271B6EC51F94FF20008F64FC /* libRCTBlob-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTBlob-tvOS.a";
+			remoteRef = 271B6EC41F94FF20008F64FC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		271B6ED71F94FF20008F64FC /* libfishhook.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libfishhook.a;
+			remoteRef = 271B6ED61F94FF20008F64FC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		271B6ED91F94FF20008F64FC /* libfishhook-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfishhook-tvOS.a";
+			remoteRef = 271B6ED81F94FF20008F64FC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		271B6EE71F94FF20008F64FC /* libthird-party.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libthird-party.a";
+			remoteRef = 271B6EE61F94FF20008F64FC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		271B6EE91F94FF20008F64FC /* libthird-party.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libthird-party.a";
+			remoteRef = 271B6EE81F94FF20008F64FC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		271B6EEB1F94FF20008F64FC /* libdouble-conversion.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libdouble-conversion.a";
+			remoteRef = 271B6EEA1F94FF20008F64FC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		271B6EED1F94FF20008F64FC /* libdouble-conversion.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libdouble-conversion.a";
+			remoteRef = 271B6EEC1F94FF20008F64FC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		271B6EF11F94FF20008F64FC /* libRNSVG-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNSVG-tvOS.a";
+			remoteRef = 271B6EF01F94FF20008F64FC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -787,10 +932,10 @@
 			remoteRef = 5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		5E9157351DD0AC6500FF2AA8 /* libRCTAnimation-tvOS.a */ = {
+		5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = "libRCTAnimation-tvOS.a";
+			path = libRCTAnimation.a;
 			remoteRef = 5E9157341DD0AC6500FF2AA8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -868,8 +1013,11 @@
 			files = (
 				ED3A0BB01F38C8F300048867 /* RNTBrightcove.m in Sources */,
 				ED3A0BB11F38C8F300048867 /* RNTBrightcoveManager.m in Sources */,
+				274E65B41F962AEA008777EB /* RNTFullscreenPresentingAutoRotatingViewController.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				274E65DB1F9632A3008777EB /* RNTFullscreenAutoPresentingView.h in Sources */,
+				274E65D91F963235008777EB /* RNTFullscreenAutoPresentingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -892,6 +1040,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -910,6 +1059,9 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = storybooknative;
+				SWIFT_OBJC_BRIDGING_HEADER = "storybooknative-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -918,6 +1070,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -935,6 +1088,8 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = storybooknative;
+				SWIFT_OBJC_BRIDGING_HEADER = "storybooknative-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
