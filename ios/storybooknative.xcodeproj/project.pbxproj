@@ -20,7 +20,9 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
-		271B6EBE1F94FF20008F64FC /* FullscreenPresentingAutorotatableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B6EBD1F94FF20008F64FC /* FullscreenPresentingAutorotatableViewController.swift */; };
+		274E65B41F962AEA008777EB /* RNTFullscreenPresentingAutoRotatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E65B31F962AEA008777EB /* RNTFullscreenPresentingAutoRotatingViewController.m */; };
+		274E65D91F963235008777EB /* RNTFullscreenAutoPresentingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E65D81F963235008777EB /* RNTFullscreenAutoPresentingView.m */; };
+		274E65DB1F9632A3008777EB /* RNTFullscreenAutoPresentingView.h in Sources */ = {isa = PBXBuildFile; fileRef = 274E65DA1F9632A3008777EB /* RNTFullscreenAutoPresentingView.h */; };
 		515F7D171F0E7BA000966DF3 /* GillSansMTStd-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 515F7D131F0E7BA000966DF3 /* GillSansMTStd-Medium.ttf */; };
 		515F7D191F0E7BA000966DF3 /* TimesDigital-RegularSC.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 515F7D151F0E7BA000966DF3 /* TimesDigital-RegularSC.ttf */; };
 		515F7D1A1F0E7BA000966DF3 /* TimesModern-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 515F7D161F0E7BA000966DF3 /* TimesModern-Bold.ttf */; };
@@ -311,7 +313,10 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = storybooknative/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		271B6EBC1F94FF1F008F64FC /* storybooknative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "storybooknative-Bridging-Header.h"; sourceTree = "<group>"; };
-		271B6EBD1F94FF20008F64FC /* FullscreenPresentingAutorotatableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenPresentingAutorotatableViewController.swift; sourceTree = "<group>"; };
+		274E65B21F962AEA008777EB /* RNTFullscreenPresentingAutoRotatingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNTFullscreenPresentingAutoRotatingViewController.h; path = storybooknative/RNTFullscreenPresentingAutoRotatingViewController.h; sourceTree = "<group>"; };
+		274E65B31F962AEA008777EB /* RNTFullscreenPresentingAutoRotatingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RNTFullscreenPresentingAutoRotatingViewController.m; path = storybooknative/RNTFullscreenPresentingAutoRotatingViewController.m; sourceTree = "<group>"; };
+		274E65D81F963235008777EB /* RNTFullscreenAutoPresentingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RNTFullscreenAutoPresentingView.m; path = storybooknative/RNTFullscreenAutoPresentingView.m; sourceTree = "<group>"; };
+		274E65DA1F9632A3008777EB /* RNTFullscreenAutoPresentingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNTFullscreenAutoPresentingView.h; path = storybooknative/RNTFullscreenAutoPresentingView.h; sourceTree = "<group>"; };
 		515F7D131F0E7BA000966DF3 /* GillSansMTStd-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GillSansMTStd-Medium.ttf"; path = "../dist/public/fonts/GillSansMTStd-Medium.ttf"; sourceTree = "<group>"; };
 		515F7D151F0E7BA000966DF3 /* TimesDigital-RegularSC.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TimesDigital-RegularSC.ttf"; path = "../dist/public/fonts/TimesDigital-RegularSC.ttf"; sourceTree = "<group>"; };
 		515F7D161F0E7BA000966DF3 /* TimesModern-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TimesModern-Bold.ttf"; path = "../dist/public/fonts/TimesModern-Bold.ttf"; sourceTree = "<group>"; };
@@ -579,12 +584,15 @@
 		87396A3A1EF3EA130076CBAD /* brightcove-video */ = {
 			isa = PBXGroup;
 			children = (
+				87396A381EF3E9F10076CBAD /* bcovpuiiconfont.ttf */,
 				ED3A0BAC1F38C8F300048867 /* RNTBrightcove.h */,
 				ED3A0BAD1F38C8F300048867 /* RNTBrightcove.m */,
 				ED3A0BAE1F38C8F300048867 /* RNTBrightcoveManager.h */,
 				ED3A0BAF1F38C8F300048867 /* RNTBrightcoveManager.m */,
-				87396A381EF3E9F10076CBAD /* bcovpuiiconfont.ttf */,
-				271B6EBD1F94FF20008F64FC /* FullscreenPresentingAutorotatableViewController.swift */,
+				274E65DA1F9632A3008777EB /* RNTFullscreenAutoPresentingView.h */,
+				274E65D81F963235008777EB /* RNTFullscreenAutoPresentingView.m */,
+				274E65B21F962AEA008777EB /* RNTFullscreenPresentingAutoRotatingViewController.h */,
+				274E65B31F962AEA008777EB /* RNTFullscreenPresentingAutoRotatingViewController.m */,
 				271B6EBC1F94FF1F008F64FC /* storybooknative-Bridging-Header.h */,
 			);
 			name = "brightcove-video";
@@ -1007,9 +1015,11 @@
 			files = (
 				ED3A0BB01F38C8F300048867 /* RNTBrightcove.m in Sources */,
 				ED3A0BB11F38C8F300048867 /* RNTBrightcoveManager.m in Sources */,
+				274E65B41F962AEA008777EB /* RNTFullscreenPresentingAutoRotatingViewController.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				271B6EBE1F94FF20008F64FC /* FullscreenPresentingAutorotatableViewController.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				274E65DB1F9632A3008777EB /* RNTFullscreenAutoPresentingView.h in Sources */,
+				274E65D91F963235008777EB /* RNTFullscreenAutoPresentingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

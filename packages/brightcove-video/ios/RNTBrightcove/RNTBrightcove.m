@@ -4,17 +4,20 @@
 #import <React/RCTLog.h>
 
 #import "RNTBrightcove.h"
-#import "storybooknative-Swift.h"
+#import "RNTFullscreenPresentingAutoRotatingViewController.h"
+
+#pragma mark - Private Properties -
 
 @interface RNTBrightcove () <BCOVPlaybackControllerDelegate, BCOVPUIPlayerViewDelegate>
 
 @property (nonatomic, strong) BCOVPlaybackService *playbackService;
 @property (nonatomic, strong) id<BCOVPlaybackController> playbackController;
 @property (nonatomic) BCOVPUIPlayerView *playerView;
-@property (nonatomic, strong) FullscreenPresentingAutoRotatingViewController* fullscreenViewController;
+@property (nonatomic, strong) RNTFullscreenPresentingAutoRotatingViewController* fullscreenViewController;
 
 @end
 
+#pragma mark -
 @implementation RNTBrightcove {
   RCTEventDispatcher *_eventDispatcher;
   Boolean _isPlaying;
@@ -223,13 +226,13 @@
   return [[[[UIApplication sharedApplication] delegate] window] rootViewController];
 }
 
-- (FullscreenPresentingAutoRotatingViewController *)fullscreenViewController {
+- (RNTFullscreenPresentingAutoRotatingViewController *)fullscreenViewController {
   
   if (_fullscreenViewController) {
     return _fullscreenViewController;
   }
   
-  FullscreenPresentingAutoRotatingViewController* vc = [FullscreenPresentingAutoRotatingViewController new];
+  RNTFullscreenPresentingAutoRotatingViewController* vc = [RNTFullscreenPresentingAutoRotatingViewController new];
   vc.viewControllerToPresentFrom = [self rootViewController];
 
   _fullscreenViewController = vc;
