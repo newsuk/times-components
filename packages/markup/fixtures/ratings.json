@@ -1,0 +1,45 @@
+[
+  {
+    "name": "paragraph",
+    "attributes": {},
+    "children": [
+      {
+        "name": "bold",
+        "attributes": {},
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": "Victoria"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "break",
+        "attributes": {},
+        "children": []
+      },
+      {
+        "name": "text",
+        "attributes": {
+          "value": " ITV"
+        },
+        "children": []
+      },
+      {
+        "name": "break",
+        "attributes": {},
+        "children": []
+      },
+      {
+        "name": "text",
+        "attributes": {
+          "value": "★★★★☆"
+        },
+        "children": []
+      }
+    ]
+  }
+]

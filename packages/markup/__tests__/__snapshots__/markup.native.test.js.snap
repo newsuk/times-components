@@ -476,6 +476,18 @@ exports[`Markup Native renders the italic tag 1`] = `
 </Text>
 `;
 
+exports[`Markup Native renders the line break tag 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  disabled={false}
+  ellipsizeMode="tail"
+>
+  
+
+</Text>
+`;
+
 exports[`Markup Native renders the span tag 1`] = `
 <Text
   accessible={true}

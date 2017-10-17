@@ -31,6 +31,9 @@ const defaultRenderers = {
   },
   ad(key) {
     return <Ad key={key} code="intervention" style={styles.ad} />;
+  },
+  break(key) {
+    return <br key={key} />;
   }
 };
 

@@ -10,6 +10,7 @@ const anchor = require("../fixtures/anchor.json");
 const bold = require("../fixtures/bold.json");
 const italic = require("../fixtures/italic.json");
 const span = require("../fixtures/span.json");
+const lineBreak = require("../fixtures/line-break.json");
 const mixture = require("../fixtures/tag-mixture.json");
 const nested = require("../fixtures/nested.json");
 const bio = require("../fixtures/bio.json");
@@ -78,6 +79,12 @@ export default (
 
   it("renders the span tag", () => {
     const output = renderer.create(renderTree(span)).toJSON();
+
+    expect(output).toMatchSnapshot();
+  });
+
+  it("renders the line break tag", () => {
+    const output = renderer.create(renderTree(lineBreak)).toJSON();
 
     expect(output).toMatchSnapshot();
   });

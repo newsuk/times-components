@@ -12,6 +12,7 @@ const multiParagraph = require("./fixtures/multi-paragraph.json");
 const multiParagraphWithAds = require("./fixtures/multi-paragraph-with-ads.json");
 const mixture = require("./fixtures/tag-mixture.json");
 const bio = require("./fixtures/bio.json");
+const ratings = require("./fixtures/ratings.json");
 
 storiesOf("Markup", module)
   .addDecorator(CenteredDecorator)
@@ -50,6 +51,7 @@ storiesOf("Markup", module)
     })
   )
   .add("Biography", () => <Text>{renderTrees(bio)}</Text>)
+  .add("Ratings", () => <View>{renderTrees(ratings)}</View>)
   .add("Multiple children with styling", () => (
     <View>
       {renderTrees(multiParagraph, {
