@@ -7,7 +7,10 @@ import LateralSpacingDecorator from "../../storybook/decorators/lateral-spacing"
 import articleFixture from "./fixtures/article.json";
 import reviewFixture from "./fixtures/review.json";
 
-[articleFixture, reviewFixture].forEach(fixture => fixture.date = new Date(fixture.date));
+[articleFixture, reviewFixture].forEach(fixture => {
+  // eslint-disable-next-line no-param-reassign
+  fixture.date = new Date(fixture.date);
+});
 
 const story = m => <View style={{ padding: 20 }}>{m}</View>;
 
