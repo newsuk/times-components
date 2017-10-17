@@ -141,6 +141,7 @@ class BrightcoveVideo extends Component {
         accountId={this.props.accountId}
         videoId={this.props.videoId}
         autoplay={this.props.autoplay}
+        directToFullscreen={this.props.directToFullscreen}
         hideFullScreenButton={this.props.hideFullScreenButton}
         onChange={this.handleChange}
         onLoadingError={this.onError} // android handler seems to be reserved on iOS
@@ -155,7 +156,8 @@ BrightcoveVideo.defaultProps = Object.assign(
     runNativeCommand: () => {},
     onChange: () => {},
     position: "relative",
-    zIndex: 0
+    zIndex: 0,
+    directToFullscreen: false
   },
   defaults
 );
@@ -164,7 +166,8 @@ BrightcoveVideo.propTypes = Object.assign(
     runNativeCommand: PropTypes.func.isRequired,
     onChange: PropTypes.func,
     position: PropTypes.string,
-    zIndex: PropTypes.number
+    zIndex: PropTypes.number,
+    directToFullscreen: false
   },
   propTypes
 );
