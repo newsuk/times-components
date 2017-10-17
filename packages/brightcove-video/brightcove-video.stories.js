@@ -351,4 +351,12 @@ storiesOf("BrightcoveVideo", module)
       accountId={accountId}
       resetOnFinish
     />
+  ))
+  .add("Launcher direct to fullscreen (android only)", () => (
+    <BrightcoveVideo
+      policyKey={policyKey}
+      videoId={videoId}
+      accountId={accountId}
+      directToFullscreen
+    />
   ));

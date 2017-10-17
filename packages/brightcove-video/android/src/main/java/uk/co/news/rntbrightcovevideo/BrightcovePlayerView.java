@@ -89,7 +89,7 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
 
     private void bubbleState(Boolean isPlaying, int headPos) {
         mIsPlaying = isPlaying;
-        
+
         try {
             RNTBrightcoveView parentView = (RNTBrightcoveView) this.getParent();
             parentView.emitState(mIsPlaying, headPos);

@@ -101,7 +101,7 @@ BrightcoveVideo.propTypes = Object.assign(
 BrightcoveVideo.defaultProps = Object.assign(
   {
     resetOnFinish: false,
-    directToFullscreen: true
+    directToFullscreen: false
   },
   Splash.defaultProps,
   Player.defaultProps
