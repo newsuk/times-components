@@ -153,9 +153,7 @@ TwitterLink.defaultProps = {
   handle: AuthorHead.defaultProps.twitter
 };
 
-export default AuthorHead;
-
-export const AuthorHeadTracked = withTrackEvents(AuthorHead, {
+export default withTrackEvents(AuthorHead, {
   analyticsEvents: [
     {
       eventName: "onTwitterLinkPress",
