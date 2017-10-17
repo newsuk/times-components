@@ -130,8 +130,8 @@ export default Pagination => () => {
       component: "Pagination",
       action: "Pressed",
       attrs: {
-        direction: "forward",
-        nextPage: 2
+        direction: "next",
+        destinationPage: 2
       }
     });
   });
@@ -151,8 +151,8 @@ export default Pagination => () => {
       component: "Pagination",
       action: "Pressed",
       attrs: {
-        direction: "back",
-        nextPage: 1
+        direction: "previous",
+        destinationPage: 1
       }
     });
   });
