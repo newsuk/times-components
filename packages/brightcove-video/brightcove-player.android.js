@@ -1,11 +1,5 @@
 import React, { Component } from "react";
-import {
-  NativeModules,
-  requireNativeComponent,
-  TouchableWithoutFeedback,
-  Text,
-  View
-} from "react-native";
+import { NativeModules } from "react-native";
 
 import BrightcoveVideo from "./brightcove-player.native";
 
