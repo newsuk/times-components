@@ -10,6 +10,7 @@
 @property (nonatomic, copy) NSString *accountId;
 @property (nonatomic, copy) NSString *videoId;
 @property (nonatomic, assign) BOOL autoplay;
+@property (nonatomic, assign) BOOL hideFullScreenButton;
 @property (nonatomic, copy) RCTBubblingEventBlock onChange;
 @property (nonatomic, copy) RCTBubblingEventBlock onIOSError;
 
