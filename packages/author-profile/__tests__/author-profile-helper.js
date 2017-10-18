@@ -22,7 +22,8 @@ Enzyme.configure({ adapter: new React16Adapter() });
 const props = {
   slug: "fiona-hamilton",
   onTwitterLinkPress: () => {},
-  onArticlePress: () => {}
+  onArticlePress: () => {},
+  analyticsStream: () => {}
 };
 
 const pagedResult = (skip, first) => ({
@@ -138,7 +139,9 @@ const withMockProvider = child => (
 
 export default AuthorProfileContent => {
   it("renders profile", () => {
-    const wrapper = shallow(<AuthorProfile {...props} />);
+    const wrapper = shallow(<AuthorProfile {...props} />)
+      .dive()
+      .dive();
 
     expect(wrapper).toMatchSnapshot();
   });
@@ -197,6 +200,36 @@ export default AuthorProfileContent => {
     const component = renderer.create(<AuthorProfile {...p} />);
 
     expect(component).toMatchSnapshot();
+  });
+
+  it("adds author profile fields to tracking context", () => {
+    const reporter = jest.fn();
+    renderer.create(
+      withMockProvider(
+        <AuthorProfile
+          {...props}
+          author={authorProfileFixture.data.author}
+          isLoading={false}
+          slug={"fiona-hamilton"}
+          page={1}
+          pageSize={10}
+          onTwitterLinkPress={() => {}}
+          onArticlePress={() => {}}
+          analyticsStream={reporter}
+        />
+      )
+    );
+
+    expect(reporter).toHaveBeenCalledWith(
+      expect.objectContaining({
+        object: "AuthorProfile",
+        attrs: expect.objectContaining({
+          authorName: "Fiona Hamilton",
+          page: 1,
+          pageSize: 10
+        })
+      })
+    );
   });
 
   it("renders profile separator", () => {

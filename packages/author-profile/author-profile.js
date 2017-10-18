@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import AuthorHead from "@times-components/author-head";
 import { withPageState } from "@times-components/pagination";
 import { ArticleListProvider } from "@times-components/provider";
+import { withTrackingContext } from "@times-components/tracking";
 import get from "lodash.get";
 import AuthorProfileEmpty from "./author-profile-empty";
 import AuthorProfileError from "./author-profile-error";
@@ -92,4 +93,11 @@ AuthorProfile.propTypes = {
   slug: PropTypes.string.isRequired
 };
 
-export default AuthorProfile;
+export default withTrackingContext(AuthorProfile, {
+  trackingObject: "AuthorProfile",
+  getAttrs: ({ author, page, pageSize } = {}) => ({
+    authorName: author && author.name,
+    page,
+    pageSize
+  })
+});
