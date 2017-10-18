@@ -240,4 +240,26 @@ export default AuthorProfileContent => {
 
     expect(component).toMatchSnapshot();
   });
+
+  it("tracks author profile item interactions", () => {
+    const item = pagedResult(0, 1).data.author.articles.list[0];
+    const stream = jest.fn();
+    const component = shallow(<AuthorProfileItem {...item} />, {
+      context: { tracking: { analytics: stream } }
+    });
+
+    component
+      .dive()
+      .find("Link")
+      .simulate("press");
+
+    expect(stream).toHaveBeenCalledWith({
+      component: "AuthorProfileItem",
+      action: "Pressed",
+      attrs: {
+        articleId: "97c64f20-cb67-11e4-a202-50ac5def393a",
+        articleTitle: "British trio stopped on the way to join Isis"
+      }
+    });
+  });
 };
