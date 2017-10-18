@@ -1,5 +1,6 @@
-#import "RNTBrightcoveFullscreenManager.h"
 #import "RNTBrightcove.h"
+#import "RNTBrightcoveFullscreenManager.h"
+#import "RNTBrightcoveViewController.h"
 #import <React/RCTLog.h>
 
 @interface RNTBrightcoveFullscreenManager ()
@@ -23,15 +24,25 @@ RCT_EXPORT_METHOD(playVideo:(NSDictionary *)video) {
   
   RNTBrightcove* brightcoveView = [[RNTBrightcove alloc] initWithEventDispatcher:nil];
   
+  brightcoveView.translatesAutoresizingMaskIntoConstraints = NO;
+  
   brightcoveView.videoId = video[@"videoId"];
   brightcoveView.accountId = video[@"accountId"];
   brightcoveView.policyKey = video[@"policyKey"];
   brightcoveView.autoplay = YES;
   brightcoveView.hideFullScreenButton = YES;
   
-  self.videoContainerViewController = [UIViewController new];
-  self.videoContainerViewController.view = brightcoveView;
+  self.videoContainerViewController = [RNTBrightcoveViewController new];
+  [self.videoContainerViewController.view addSubview:brightcoveView];
   
+  NSDictionary *views = NSDictionaryOfVariableBindings(brightcoveView);
+
+  NSArray* horizontalConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|[brightcoveView]|" options: 0 metrics: nil views: views];
+  NSArray* verticalConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[brightcoveView]|" options: 0 metrics: nil views: views];
+
+  [self.videoContainerViewController.view addConstraints:horizontalConstraints];
+  [self.videoContainerViewController.view addConstraints:verticalConstraints];
+
   [[self rootViewController] presentViewController:self.videoContainerViewController animated:YES completion:nil];
   
 }
