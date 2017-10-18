@@ -26,7 +26,7 @@ const AuthorProfile = ({
   }
 
   if (isLoading) {
-    return <AuthorProfileLoading ratio={articleImageRatio} />;
+    return <AuthorProfileLoading ratio={articleImageRatio}/>;
   }
 
   if (author) {
@@ -79,6 +79,7 @@ AuthorProfile.defaultProps = {
 };
 
 AuthorProfile.propTypes = {
+  articleImageRatio: 2 / 3,
   isLoading: PropTypes.bool,
   error: PropTypes.shape(),
   author: PropTypes.shape({

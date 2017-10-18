@@ -8,19 +8,29 @@ import { withTrackEvents } from "@times-components/tracking";
 const AuthorProfileItem = item => {
   const {
     style,
-    title,
     content,
-    publishedTime,
     label,
+    loading,
+    onPress,
     publicationName,
-    url,
-    onPress
+    publishedTime,
+    title,
+    url
   } = item;
+
   const imageUri = get(
     item,
     "leadAsset.crop.url",
     get(item, "leadAsset.posterImage.crop.url", null)
   );
+
+  if (loading) {
+    return (
+      <View>
+        <Card loading={loading} />
+      </View>
+    )
+  }
 
   return (
     <Link url={url} onPress={onPress}>

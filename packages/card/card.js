@@ -1,37 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, StyleSheet } from "react-native";
+import { View } from "react-native";
 import ArticleSummary from "@times-components/article-summary";
 import Image from "@times-components/image";
+import Loading from "./card-loading";
+import styles from "./card-styles";
 
 const horizontalBreakpoint = 500;
-
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: "column"
-  },
-  childrenContainer: {
-    flexGrow: 1,
-    flexShrink: 1
-  },
-  imageContainer: {
-    paddingBottom: 15
-  },
-  horizontalContainer: {
-    flexDirection: "row"
-  },
-  horizontalImageContainer: {
-    flexGrow: 2,
-    flexBasis: 0,
-    paddingBottom: 0
-  },
-  horizontalSummaryContainer: {
-    flexGrow: 3,
-    flexBasis: 0,
-    paddingLeft: 15
-  }
-});
-
 const isOrientationHorizontal = width => width > horizontalBreakpoint;
 
 class CardComponent extends React.Component {
@@ -42,6 +17,7 @@ class CardComponent extends React.Component {
       isHorizontal: false
     };
   }
+
   handleLayout(event) {
     const { nativeEvent: { layout: { width } } } = event;
     const isHorizontal = isOrientationHorizontal(width);
@@ -51,6 +27,15 @@ class CardComponent extends React.Component {
   }
   render() {
     const { isHorizontal } = this.state;
+
+    if (this.props.loading) {
+      return (
+        <View onLayout={this.handleLayout}>
+          <Loading horizontal={isHorizontal} />
+        </View>
+      );
+    }
+
     const {
       date,
       headline,
@@ -61,42 +46,40 @@ class CardComponent extends React.Component {
       text
     } = this.props;
 
+    const layoutStyles = isHorizontal ? styles.horizontal : styles.vertical;
     const imageComponent =
       image && image.uri ? (
         <View
           style={[
-            styles.imageContainer,
-            styles.childrenContainer,
-            isHorizontal ? styles.horizontalImageContainer : null
+            layoutStyles.imageContainer,
+            layoutStyles.childrenContainer
           ]}
         >
-          <Image style={styles.image} uri={image.uri} aspectRatio={3 / 2} />
+          <Image style={layoutStyles.image} uri={image.uri} aspectRatio={3 / 2} />
         </View>
       ) : null;
 
     return (
-      <View
-        onLayout={this.handleLayout}
-        style={[
-          styles.container,
-          isHorizontal ? styles.horizontalContainer : null,
+      <View onLayout={this.handleLayout}>
+        <View style={[
+          layoutStyles.container,
           style
-        ]}
-      >
-        {imageComponent}
-        <View
-          style={[
-            styles.childrenContainer,
-            isHorizontal ? styles.horizontalSummaryContainer : null
-          ]}
-        >
-          <ArticleSummary
-            label={label}
-            headline={headline}
-            text={text}
-            date={date}
-            publication={publication}
-          />
+        ]}>
+          {imageComponent}
+          <View
+            style={[
+              layoutStyles.childrenContainer,
+              layoutStyles.summaryContainer
+            ]}
+          >
+            <ArticleSummary
+              label={label}
+              headline={headline}
+              text={text}
+              date={date}
+              publication={publication}
+            />
+          </View>
         </View>
       </View>
     );
