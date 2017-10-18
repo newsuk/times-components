@@ -152,3 +152,30 @@ it("will call child components play and pause methods if child component is read
   expect(rootInstance.playerRef.play.mock.calls).toHaveLength(1);
   expect(rootInstance.playerRef.pause.mock.calls).toHaveLength(1);
 });
+
+it("will call native fullscreen player if 'directToFullscreen option passed'", () => {
+  const root = renderer.create(
+    <BrightcoveVideo
+      policyKey={policyKey}
+      videoId={videoId}
+      accountId={accountId}
+      poster={{
+        uri:
+          "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs="
+      }}
+      directToFullscreen
+    />
+  );
+
+  const rootInstance = root.getInstance();
+
+  const mockNativeModule = {
+    playVideo: jest.fn()
+  };
+
+  BrightcoveVideo.getBrightcoveFullscreenPlayerModule = () => mockNativeModule;
+
+  rootInstance.play();
+
+  expect(mockNativeModule.playVideo.mock.calls).toHaveLength(1);
+});

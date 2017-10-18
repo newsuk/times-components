@@ -57,7 +57,7 @@ function withNativeCommand(WrappedComponent) {
       }
 
       const props = Object.assign(
-        { runNativeCommand: this.runNativeCommand },
+        { runNativeCommand: this.runNativeCommand, directToFullscreen: true },
         this.props,
         androidSpecificProps
       );

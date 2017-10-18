@@ -1,6 +1,7 @@
 package uk.co.news.rntbrightcovevideo;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.SurfaceView;
@@ -27,6 +28,7 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
 
     public BrightcovePlayerView(final Context context) {
         super(context);
+        this.setBackgroundColor(Color.BLACK);
         finishInitialization();
         this.setMediaController(new BrightcoveMediaController(this));
     }
@@ -87,7 +89,13 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
 
     private void bubbleState(Boolean isPlaying, int headPos) {
         mIsPlaying = isPlaying;
-        ((RNTBrightcoveView) this.getParent()).emitState(mIsPlaying, headPos);
+
+        try {
+            RNTBrightcoveView parentView = (RNTBrightcoveView) this.getParent();
+            parentView.emitState(mIsPlaying, headPos);
+        } catch (ClassCastException exc) {
+            // ignore
+        }
     }
 
     public void initVideo(String videoId, String accountId, String policyKey, Boolean autoplay, Boolean isFullscreenButtonHidden) {
