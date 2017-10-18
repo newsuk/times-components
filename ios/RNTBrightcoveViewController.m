@@ -1,14 +1,11 @@
-//
-//  Copyright © 2017 Facebook. All rights reserved.
-//
-
 #import "RNTBrightcoveViewController.h"
-
+#import "CloseButtonView.h"
 
 @interface RNTBrightcoveCloseButtonView: UIView
 
 @property (nonatomic, weak) id<RNTBrightcoveCloseButtonViewDelegate> delegate;
 @property (nonatomic, strong) UIButton *closeButton;
+@property (nonatomic, strong) CloseButtonView* closeButtonView;
 
 @end
 
@@ -37,15 +34,13 @@
 }
 
 - (void)configureCloseButton {
-  
   UIButton * closeButton = [UIButton buttonWithType:(UIButtonTypeCustom)];
-  [closeButton setTitle:@"X" forState:(UIControlStateNormal)];
+
   [closeButton setFrame:CGRectMake(20, 20, 44, 44)];
-  
+  [closeButton addSubview:[[CloseButtonView alloc] initWithFrame: CGRectZero]];
   [closeButton addTarget:self action:@selector(closeButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
   
   self.closeButton = closeButton;
-  
 }
 
 - (void)closeButtonTapped:(UIButton *)sender {
@@ -94,3 +89,6 @@
 }
 
 @end
+
+
+

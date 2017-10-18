@@ -31,6 +31,7 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		873591831F9765970019E66D /* RNTBrightcoveFullscreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 873591821F9765970019E66D /* RNTBrightcoveFullscreenManager.m */; };
 		873591941F9789520019E66D /* RNTBrightcoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 873591931F9789520019E66D /* RNTBrightcoveViewController.m */; };
+		873591BA1F97AA740019E66D /* CloseButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 873591B91F97AA740019E66D /* CloseButtonView.m */; };
 		87396A0E1EF3E8F70076CBAD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87396A0D1EF3E8F70076CBAD /* AVFoundation.framework */; };
 		87396A291EF3E9030076CBAD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87396A281EF3E9030076CBAD /* CoreMedia.framework */; };
 		87396A2B1EF3E9110076CBAD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87396A2A1EF3E9110076CBAD /* CoreMotion.framework */; };
@@ -329,6 +330,8 @@
 		873591821F9765970019E66D /* RNTBrightcoveFullscreenManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNTBrightcoveFullscreenManager.m; sourceTree = "<group>"; };
 		873591921F9789520019E66D /* RNTBrightcoveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTBrightcoveViewController.h; sourceTree = "<group>"; };
 		873591931F9789520019E66D /* RNTBrightcoveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNTBrightcoveViewController.m; sourceTree = "<group>"; };
+		873591B81F97AA740019E66D /* CloseButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CloseButtonView.h; sourceTree = "<group>"; };
+		873591B91F97AA740019E66D /* CloseButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloseButtonView.m; sourceTree = "<group>"; };
 		87396A0D1EF3E8F70076CBAD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		87396A281EF3E9030076CBAD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		87396A2A1EF3E9110076CBAD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -590,18 +593,20 @@
 			isa = PBXGroup;
 			children = (
 				87396A381EF3E9F10076CBAD /* bcovpuiiconfont.ttf */,
-				ED3A0BAC1F38C8F300048867 /* RNTBrightcoveView.h */,
-				ED3A0BAD1F38C8F300048867 /* RNTBrightcoveView.m */,
 				8735915E1F97652C0019E66D /* RNTBrightcoveFullscreenManager.h */,
 				873591821F9765970019E66D /* RNTBrightcoveFullscreenManager.m */,
 				ED3A0BAE1F38C8F300048867 /* RNTBrightcoveManager.h */,
 				ED3A0BAF1F38C8F300048867 /* RNTBrightcoveManager.m */,
+				ED3A0BAC1F38C8F300048867 /* RNTBrightcoveView.h */,
+				ED3A0BAD1F38C8F300048867 /* RNTBrightcoveView.m */,
 				873591921F9789520019E66D /* RNTBrightcoveViewController.h */,
 				873591931F9789520019E66D /* RNTBrightcoveViewController.m */,
 				274E65DA1F9632A3008777EB /* RNTFullscreenAutoPresentingView.h */,
 				274E65D81F963235008777EB /* RNTFullscreenAutoPresentingView.m */,
 				274E65B21F962AEA008777EB /* RNTFullscreenPresentingAutoRotatingViewController.h */,
 				274E65B31F962AEA008777EB /* RNTFullscreenPresentingAutoRotatingViewController.m */,
+				873591B81F97AA740019E66D /* CloseButtonView.h */,
+				873591B91F97AA740019E66D /* CloseButtonView.m */,
 			);
 			name = "brightcove-video";
 			sourceTree = "<group>";
@@ -1029,6 +1034,7 @@
 				873591831F9765970019E66D /* RNTBrightcoveFullscreenManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				274E65DB1F9632A3008777EB /* RNTFullscreenAutoPresentingView.h in Sources */,
+				873591BA1F97AA740019E66D /* CloseButtonView.m in Sources */,
 				274E65D91F963235008777EB /* RNTFullscreenAutoPresentingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

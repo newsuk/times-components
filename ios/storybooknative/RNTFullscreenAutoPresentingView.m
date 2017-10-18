@@ -1,7 +1,3 @@
-//
-//  Copyright © 2017 News UK. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
 #import "RNTFullscreenPresentingAutoRotatingViewController.h"
