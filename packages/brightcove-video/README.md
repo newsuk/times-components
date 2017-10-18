@@ -1,7 +1,5 @@
 # Times Component - Brightcove Video
 
-The integration with [react-native-web](https://github.com/necolas/react-native-web) has NOT been tested on our end.
-
 # Native
 
 ## Getting started
@@ -66,7 +64,7 @@ Properties types are defined in `./brightcove-video.proptypes.js`
 | `onProgress` | function | Handles progress events
 | `onFinish` | function | Handles video finish events
 | `autoplay` | boolean | Should the video autoplay? (default false)
-| `directToFullscreen` | boolean | Should the video play directly in fullscreen? (default false) (Android only)
+| `directToFullscreen` | boolean | Should the video play directly in fullscreen? (default false) (Native only)
 | `hideFullScreenButton` | boolean | Should the full screen button be hidden? (default false)
 | `resetOnFinish` | boolean | Should the video reset to poster image when video finishes? (default false)
 
