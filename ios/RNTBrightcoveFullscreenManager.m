@@ -1,4 +1,4 @@
-#import "RNTBrightcove.h"
+#import "RNTBrightcoveView.h"
 #import "RNTBrightcoveFullscreenManager.h"
 #import "RNTBrightcoveViewController.h"
 #import <React/RCTLog.h>
@@ -22,7 +22,7 @@ RCT_EXPORT_METHOD(playVideo:(NSDictionary *)video) {
 
 - (void)presentFullscreenVideo:(NSDictionary *)video {
   
-  RNTBrightcove* brightcoveView = [[RNTBrightcove alloc] initWithEventDispatcher:nil];
+  RNTBrightcoveView* brightcoveView = [[RNTBrightcoveView alloc] initWithEventDispatcher:nil];
   
   brightcoveView.translatesAutoresizingMaskIntoConstraints = NO;
   

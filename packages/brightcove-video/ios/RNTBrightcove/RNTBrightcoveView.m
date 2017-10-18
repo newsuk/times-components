@@ -3,12 +3,12 @@
 #import <React/UIView+React.h>
 #import <React/RCTLog.h>
 
-#import "RNTBrightcove.h"
+#import "RNTBrightcoveView.h"
 #import "RNTFullscreenPresentingAutoRotatingViewController.h"
 
 #pragma mark - Private Properties -
 
-@interface RNTBrightcove () <BCOVPlaybackControllerDelegate, BCOVPUIPlayerViewDelegate>
+@interface RNTBrightcoveView () <BCOVPlaybackControllerDelegate, BCOVPUIPlayerViewDelegate>
 
 @property (nonatomic, strong) BCOVPlaybackService *playbackService;
 @property (nonatomic, strong) id<BCOVPlaybackController> playbackController;
@@ -18,7 +18,7 @@
 @end
 
 #pragma mark -
-@implementation RNTBrightcove {
+@implementation RNTBrightcoveView {
   RCTEventDispatcher *_eventDispatcher;
   Boolean _isPlaying;
   NSInteger _progress;

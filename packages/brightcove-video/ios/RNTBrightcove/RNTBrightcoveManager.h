@@ -1,5 +1,5 @@
 #import <React/RCTViewManager.h>
-#import "RNTBrightcove.h"
+#import "RNTBrightcoveView.h"
 
 @interface RNTBrightcoveManager : RCTViewManager
 

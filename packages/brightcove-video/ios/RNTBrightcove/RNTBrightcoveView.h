@@ -4,7 +4,7 @@
 
 @class RCTEventDispatcher;
 
-@interface RNTBrightcove : UIView
+@interface RNTBrightcoveView : UIView
 
 @property (nonatomic, copy) NSString *policyKey;
 @property (nonatomic, copy) NSString *accountId;

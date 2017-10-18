@@ -17,10 +17,10 @@ RCT_EXPORT_METHOD(play:(nonnull NSNumber *)reactTag)
 {
   [self.bridge.uiManager addUIBlock:^(__unused RCTUIManager *uiManager, NSDictionary<NSNumber *, UIView *> *viewRegistry) {
     id view = viewRegistry[reactTag];
-    if (![view isKindOfClass:[RNTBrightcove class]]) {
-      RCTLogError(@"Invalid view returned from registry, expecting RNTBrightcove, got: %@", view);
+    if (![view isKindOfClass:[RNTBrightcoveView class]]) {
+      RCTLogError(@"Invalid view returned from registry, expecting RNTBrightcoveView, got: %@", view);
     } else {
-      RNTBrightcove *videoView = (RNTBrightcove *)view;
+      RNTBrightcoveView *videoView = (RNTBrightcoveView *)view;
       [videoView playVideo];
     }
   }];
@@ -30,10 +30,10 @@ RCT_EXPORT_METHOD(pause:(nonnull NSNumber *)reactTag)
 {
   [self.bridge.uiManager addUIBlock:^(__unused RCTUIManager *uiManager, NSDictionary<NSNumber *, UIView *> *viewRegistry) {
     id view = viewRegistry[reactTag];
-    if (![view isKindOfClass:[RNTBrightcove class]]) {
-      RCTLogError(@"Invalid view returned from registry, expecting RNTBrightcove, got: %@", view);
+    if (![view isKindOfClass:[RNTBrightcoveView class]]) {
+      RCTLogError(@"Invalid view returned from registry, expecting RNTBrightcoveView, got: %@", view);
     } else {
-      RNTBrightcove *videoView = (RNTBrightcove *)view;
+      RNTBrightcoveView *videoView = (RNTBrightcoveView *)view;
       [videoView pauseVideo];
     }
   }];
@@ -42,7 +42,7 @@ RCT_EXPORT_METHOD(pause:(nonnull NSNumber *)reactTag)
 @synthesize bridge = _bridge;
 
 - (UIView *)view {
-  return [[RNTBrightcove alloc] initWithEventDispatcher:self.bridge.eventDispatcher];
+  return [[RNTBrightcoveView alloc] initWithEventDispatcher:self.bridge.eventDispatcher];
 }
 
 @end
