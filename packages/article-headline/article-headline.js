@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text, Platform } from "react-native";
 import PropTypes from "prop-types";
 
 const styles = {
@@ -12,6 +12,10 @@ const styles = {
     fontWeight: "400"
   }
 };
+
+if (Platform.OS === "android") {
+  styles.text.letterSpacing = "0.5px";
+}
 
 const ArticleHeadline = ({ text, style }) => (
   <Text testID="headline" style={[styles.text, style]}>
