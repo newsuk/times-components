@@ -4,15 +4,20 @@
 #import <React/RCTLog.h>
 
 #import "RNTBrightcove.h"
+#import "RNTFullscreenPresentingAutoRotatingViewController.h"
+
+#pragma mark - Private Properties -
 
 @interface RNTBrightcove () <BCOVPlaybackControllerDelegate, BCOVPUIPlayerViewDelegate>
 
 @property (nonatomic, strong) BCOVPlaybackService *playbackService;
 @property (nonatomic, strong) id<BCOVPlaybackController> playbackController;
 @property (nonatomic) BCOVPUIPlayerView *playerView;
+@property (nonatomic, strong) RNTFullscreenPresentingAutoRotatingViewController* fullscreenViewController;
 
 @end
 
+#pragma mark -
 @implementation RNTBrightcove {
   RCTEventDispatcher *_eventDispatcher;
   Boolean _isPlaying;
@@ -95,7 +100,7 @@
 
     BCOVPUIPlayerViewOptions *options = [[BCOVPUIPlayerViewOptions alloc] init];
 
-    options.presentingViewController = [self rootViewController];
+    options.presentingViewController = [self fullscreenViewController];
 
     BCOVPUIPlayerView *playerView = [[BCOVPUIPlayerView alloc] initWithPlaybackController:self.playbackController options:options controlsView:controlsView ];
     playerView.delegate = self;
@@ -219,6 +224,21 @@
 
 - (UIViewController *)rootViewController{
   return [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+}
+
+- (RNTFullscreenPresentingAutoRotatingViewController *)fullscreenViewController {
+  
+  if (_fullscreenViewController) {
+    return _fullscreenViewController;
+  }
+  
+  RNTFullscreenPresentingAutoRotatingViewController* vc = [RNTFullscreenPresentingAutoRotatingViewController new];
+  vc.viewControllerToPresentFrom = [self rootViewController];
+
+  _fullscreenViewController = vc;
+  
+  return _fullscreenViewController;
+
 }
 
 @end
