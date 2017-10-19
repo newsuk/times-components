@@ -16,9 +16,7 @@ const story = m => <View style={{ padding: 20 }}>{m}</View>;
 
 storiesOf("ArticleSummary", module)
   .addDecorator(LateralSpacingDecorator)
-  .add("Paragraph Summary", () =>
-    story(<ArticleSummary {...articleFixture} />)
-  )
+  .add("Paragraph Summary", () => story(<ArticleSummary {...articleFixture} />))
   .add("Review/Rating Summary", () =>
     story(<ArticleSummary {...reviewFixture} />)
   );
