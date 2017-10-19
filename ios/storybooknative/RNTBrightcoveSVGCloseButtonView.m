@@ -1,6 +1,8 @@
-#import "CloseButtonView.h"
 
-@implementation CloseButtonView
+#import <UIKit/UIKit.h>
+#import "RNTBrightcoveSVGCloseButtonView.h"
+
+@implementation RNTBrightcoveSVGCloseButtonView
 
 - (instancetype)initWithFrame:(CGRect)frame {
   self = [super initWithFrame:frame];

@@ -1,3 +1,4 @@
+
 #import <React/RCTViewManager.h>
 #import "RNTBrightcoveView.h"
 

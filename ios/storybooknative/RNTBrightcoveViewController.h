@@ -1,11 +1,7 @@
-#import <UIKit/UIKit.h>
 
-@protocol RNTBrightcoveCloseButtonViewDelegate
-- (void)closeButtonTapped;
-@end
+#import <UIKit/UIKit.h>
+#import "RNTBrightcoveCloseButtonView.h"
 
 @interface RNTBrightcoveViewController : UIViewController <RNTBrightcoveCloseButtonViewDelegate>
-
 - (void)closeButtonTapped;
-
 @end
