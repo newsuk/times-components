@@ -167,6 +167,7 @@ exports[`renders profile content 1`] = `
   scrollEventThrottle={50}
   scrollRenderAheadDistance={2}
   stickyHeaderIndices={Array []}
+  testID="scroll-view"
   updateCellsBatchingPeriod={50}
   windowSize={21}
 >
@@ -650,6 +651,7 @@ exports[`renders profile content component 1`] = `
   scrollEventThrottle={50}
   scrollRenderAheadDistance={2}
   stickyHeaderIndices={Array []}
+  testID="scroll-view"
   updateCellsBatchingPeriod={50}
   windowSize={21}
 >
