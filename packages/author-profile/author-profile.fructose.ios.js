@@ -24,14 +24,15 @@ const story = m => (
 );
 
 const example = authorProfileGenerator(2);
-
-const props = Object.assign({}, example, {
-  isLoading: false,
+const props = {
+  ...example.author,
   page: 1,
   pageSize: 10,
+  count: example.author.articles.count,
+  articles: example.author.articles.list,
   onTwitterLinkPress: () => {},
   onArticlePress: () => {}
-});
+};
 
 withComponent(
   story(<AuthorProfileContent {...props} />),
