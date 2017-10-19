@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { NativeModules } from "react-native";
+import PropTypes from "prop-types";
 
 import BrightcoveVideo from "./brightcove-player.native";
 
@@ -11,6 +12,16 @@ function withNativeCommand(WrappedComponent) {
     static uiManagerCommand(name) {
       return NativeModules.UIManager[WrappedComponent.getNativeClassName()]
         .Commands[name];
+    }
+
+    static filterKeys(objToFilter, allowedKeys) {
+      return Object.keys(objToFilter) // filter out android only props
+        .filter(key => allowedKeys.includes(key))
+        .reduce((obj, key) => {
+          const newObj = Object.assign({}, obj);
+          newObj[key] = objToFilter[key];
+          return newObj;
+        }, {});
     }
 
     constructor(props) {
@@ -33,7 +44,15 @@ function withNativeCommand(WrappedComponent) {
     }
 
     onChange(evt) {
-      this.setState({ isFullscreen: evt.isFullscreen });
+      if (evt.isFullscreen !== this.state.isFullscreen) {
+        this.setState({ isFullscreen: evt.isFullscreen });
+
+        if (evt.isFullscreen) {
+          this.props.onEnterFullscreen();
+        } else {
+          this.props.onExitFullscreen();
+        }
+      }
     }
 
     runNativeCommand(name, args) {
@@ -57,8 +76,8 @@ function withNativeCommand(WrappedComponent) {
       }
 
       const props = Object.assign(
-        { runNativeCommand: this.runNativeCommand, directToFullscreen: true },
-        this.props,
+        { runNativeCommand: this.runNativeCommand },
+        AndroidNative.filterKeys(this.props, Object.keys(propTypes)),
         androidSpecificProps
       );
 
@@ -73,8 +92,20 @@ function withNativeCommand(WrappedComponent) {
     }
   }
 
-  AndroidNative.defaultProps = defaults;
-  AndroidNative.propTypes = propTypes;
+  AndroidNative.defaultProps = Object.assign(
+    {
+      onEnterFullscreen: () => {},
+      onExitFullscreen: () => {}
+    },
+    defaults
+  );
+  AndroidNative.propTypes = Object.assign(
+    {
+      onEnterFullscreen: PropTypes.func,
+      onExitFullscreen: PropTypes.func
+    },
+    propTypes
+  );
 
   return AndroidNative;
 }
