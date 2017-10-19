@@ -22,29 +22,28 @@
   CAShapeLayer* circleLayer = [CAShapeLayer new];
   CAShapeLayer* crossLayer = [CAShapeLayer new];
   
-  CGFloat buttonSize = 35;
+  CGFloat buttonSize = 25;
   CGFloat buttonScale = buttonSize / 120;
   
-  CGAffineTransform scaleTransform = CGAffineTransformMakeScale(buttonScale, buttonScale);
-  
-  circleLayer.fillColor = [[UIColor grayColor] CGColor];
-  crossLayer.fillColor = [[UIColor whiteColor] CGColor];
-  
-  [circleLayer setPath: [self createCircularBezierPath]];
+  [crossLayer setFillColor: [[UIColor whiteColor] CGColor]];
   [crossLayer setPath: [self createCrossBezierPath]];
+
+  CGAffineTransform scaleTransform = CGAffineTransformMakeScale(buttonScale, buttonScale);
+
+  [circleLayer setPath: [self createCircularBezierPath]];
+
+  [circleLayer setFillColor: [[UIColor blackColor] colorWithAlphaComponent: 0.39].CGColor];
+  [circleLayer setStrokeColor: [[UIColor whiteColor] colorWithAlphaComponent: 0.39].CGColor];
+  [circleLayer setLineWidth: 1];
+  [circleLayer setAffineTransform: scaleTransform];
   
-  circleLayer.affineTransform = scaleTransform;
-  
-  [self.layer addSublayer: circleLayer];
   [circleLayer addSublayer: crossLayer];
-  
-  crossLayer.position = circleLayer.position;
+  [self.layer addSublayer: circleLayer];
 }
 
 - (CGPathRef)createCircularBezierPath {
-  int radius = 60;
-
-  return [[UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, radius * 2, radius * 2)] CGPath];
+  CGRect rect = CGRectMake(0, 0, 120, 120);
+  return [[UIBezierPath bezierPathWithOvalInRect: rect] CGPath];
 }
 
 - (CGPathRef)createCrossBezierPath {
