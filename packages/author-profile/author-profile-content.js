@@ -55,6 +55,7 @@ const AuthorProfileContent = props => {
 
   return (
     <FlatList
+      testID="scroll-view"
       data={articles}
       keyExtractor={item => item.id}
       renderItem={({ item }) => (

@@ -209,6 +209,7 @@ export default AuthorProfileContent => {
     const results = pagedResult(0, 3);
     const component = renderer.create(
       <AuthorProfileContent
+        count={10}
         articles={results.data.author.articles.list}
         author={authorProfileFixture.data.author}
         slug={"fiona-hamilton"}

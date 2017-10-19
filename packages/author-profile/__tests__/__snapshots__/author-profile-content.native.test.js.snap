@@ -30,7 +30,7 @@ exports[`renders profile content 1`] = `
           ]
         }
       >
-        <Pagination
+        <WithTrackEvents(Pagination)
           count={0}
           generatePageLink={[Function]}
           hideResults={true}
@@ -131,7 +131,7 @@ exports[`renders profile content 1`] = `
             ]
           }
         >
-          <Pagination
+          <WithTrackEvents(Pagination)
             count={0}
             generatePageLink={[Function]}
             hideResults={false}
@@ -498,8 +498,8 @@ exports[`renders profile content component 1`] = `
           ]
         }
       >
-        <Pagination
-          count={0}
+        <WithTrackEvents(Pagination)
+          count={10}
           generatePageLink={[Function]}
           hideResults={true}
           onNext={[Function]}
@@ -544,8 +544,8 @@ exports[`renders profile content component 1`] = `
             ]
           }
         >
-          <Pagination
-            count={0}
+          <WithTrackEvents(Pagination)
+            count={10}
             generatePageLink={[Function]}
             hideResults={false}
             onNext={[Function]}
@@ -4815,7 +4815,7 @@ exports[`renders profile content component 1`] = `
                     ]
                   }
                 >
-                  Showing 1 - 0 of 0 results
+                  Showing 1 - 3 of 10 results
                 </Text>
               </View>
               <View
@@ -4838,7 +4838,78 @@ exports[`renders profile content component 1`] = `
                 }
               >
                 <View />
-                <View />
+                <View>
+                  <View
+                    accessibilityComponentType={undefined}
+                    accessibilityLabel={undefined}
+                    accessibilityTraits={undefined}
+                    accessible={true}
+                    collapsable={undefined}
+                    hitSlop={undefined}
+                    isTVSelectable={true}
+                    nativeID={undefined}
+                    onLayout={undefined}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      Object {
+                        "opacity": 1,
+                      }
+                    }
+                    testID={undefined}
+                    tvParallaxProperties={undefined}
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "flexDirection": "row",
+                          "marginLeft": 10,
+                          "marginRight": 12,
+                        }
+                      }
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        disabled={false}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "color": "#006699",
+                            "fontFamily": "GillSansMTStd-Medium",
+                            "fontSize": 15,
+                            "height": 15,
+                            "marginRight": 10,
+                            "textAlign": "right",
+                          }
+                        }
+                      >
+                        Next
+                      </Text>
+                      <svg
+                        height={9}
+                        style={Object {}}
+                        viewBox="42 12 60 120"
+                        width={5}
+                      >
+                        <g
+                          fill="#006699"
+                          style={Object {}}
+                        >
+                          <path
+                            d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                            style={Object {}}
+                          />
+                        </g>
+                      </svg>
+                    </View>
+                  </View>
+                </View>
               </View>
             </View>
           </View>
@@ -5392,7 +5463,78 @@ exports[`renders profile content component 1`] = `
               }
             >
               <View />
-              <View />
+              <View>
+                <View
+                  accessibilityComponentType={undefined}
+                  accessibilityLabel={undefined}
+                  accessibilityTraits={undefined}
+                  accessible={true}
+                  collapsable={undefined}
+                  hitSlop={undefined}
+                  isTVSelectable={true}
+                  nativeID={undefined}
+                  onLayout={undefined}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "opacity": 1,
+                    }
+                  }
+                  testID={undefined}
+                  tvParallaxProperties={undefined}
+                >
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "marginLeft": 10,
+                        "marginRight": 12,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      disabled={false}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#006699",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 15,
+                          "height": 15,
+                          "marginRight": 10,
+                          "textAlign": "right",
+                        }
+                      }
+                    >
+                      Next
+                    </Text>
+                    <svg
+                      height={9}
+                      style={Object {}}
+                      viewBox="42 12 60 120"
+                      width={5}
+                    >
+                      <g
+                        fill="#006699"
+                        style={Object {}}
+                      >
+                        <path
+                          d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                          style={Object {}}
+                        />
+                      </g>
+                    </svg>
+                  </View>
+                </View>
+              </View>
             </View>
           </View>
         </View>

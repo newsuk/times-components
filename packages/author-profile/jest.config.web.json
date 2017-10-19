@@ -1,0 +1,20 @@
+{
+  "rootDir": "../../",
+  "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+  "testEnvironment": "jsdom",
+  "testMatch": ["<rootDir>/packages/author-profile/__tests__/**.web.test.js"],
+  "moduleNameMapper": {
+    "react-native": "react-native-web"
+  },
+  "collectCoverageFrom": [
+    "<rootDir>/packages/author-profile/*.js",
+    "!<rootDir>/packages/author-profile/fixture-generator.js",
+    "!<rootDir>/packages/author-profile/*.fructose.*.js",
+    "!<rootDir>/packages/author-profile/*.stories.js",
+    "!<rootDir>/packages/author-profile/__tests__/**.test.js",
+    "!<rootDir>/packages/author-profile/author-profile-content.js"
+  ],
+  "moduleFileExtensions": ["web.js", "js", "json"],
+  "snapshotSerializers": ["enzyme-to-json/serializer"],
+  "transformIgnorePatterns": ["node_modules/(?!@times-components)/"]
+}

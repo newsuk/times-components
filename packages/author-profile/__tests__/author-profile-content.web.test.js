@@ -47,31 +47,3 @@ it("renders profile articles and invoke callback on article press", done => {
     .find("Link")
     .simulate("press");
 });
-
-it("renders profile pagination renders page", () => {
-  const component = shallow(
-    <AuthorProfileContent
-      articles={results.data.author.articles.list}
-      author={authorProfileFixture.data.author}
-      slug={"fiona-hamilton"}
-      page={1}
-      pageSize={3}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
-    />
-  );
-
-  expect(
-    component
-      .find("Pagination")
-      .at(0)
-      .props()
-      .generatePageLink(1)
-  ).toEqual("?page=1");
-  component
-    .find("AuthorProfileItem")
-    .at(0)
-    .dive()
-    .find("Link")
-    .simulate("press");
-});
