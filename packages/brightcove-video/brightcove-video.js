@@ -1,11 +1,18 @@
 import React, { Component } from "react";
-import { View, TouchableWithoutFeedback } from "react-native";
+import { View, TouchableWithoutFeedback, NativeModules } from "react-native";
 import PropTypes from "prop-types";
 
 import Player from "./brightcove-player";
 import Splash from "./splash";
 
+const BrightcoveFullscreenPlayerModule =
+  NativeModules.BrightcoveFullscreenPlayer;
+
 class BrightcoveVideo extends Component {
+  static getBrightcoveFullscreenPlayerModule() {
+    return BrightcoveFullscreenPlayerModule;
+  }
+
   constructor(props) {
     super(props);
 
@@ -27,11 +34,21 @@ class BrightcoveVideo extends Component {
   }
 
   play() {
-    if (this.playerRef) {
-      this.playerRef.play();
-    }
+    const nativeModule = BrightcoveVideo.getBrightcoveFullscreenPlayerModule();
 
-    this.setState({ isLaunched: true });
+    if (nativeModule && this.props.directToFullscreen) {
+      nativeModule.playVideo({
+        accountId: this.props.accountId,
+        videoId: this.props.videoId,
+        policyKey: this.props.policyKey
+      });
+    } else {
+      if (this.playerRef) {
+        this.playerRef.play();
+      }
+
+      this.setState({ isLaunched: true });
+    }
   }
 
   pause() {
@@ -80,7 +97,8 @@ class BrightcoveVideo extends Component {
 
 BrightcoveVideo.propTypes = Object.assign(
   {
-    resetOnFinish: PropTypes.bool
+    resetOnFinish: PropTypes.bool,
+    directToFullscreen: PropTypes.bool
   },
   Splash.propTypes,
   Player.propTypes
@@ -88,7 +106,8 @@ BrightcoveVideo.propTypes = Object.assign(
 
 BrightcoveVideo.defaultProps = Object.assign(
   {
-    resetOnFinish: false
+    resetOnFinish: false,
+    directToFullscreen: false
   },
   Splash.defaultProps,
   Player.defaultProps

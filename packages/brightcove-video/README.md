@@ -68,6 +68,7 @@ Properties types are defined in `./brightcove-video.proptypes.js`
 | `onEnterFullscreen` | function | Handles video entering fullscreen (Android only)
 | `onExitFullscreen` | function | Handles video exiting fullscreen (Android only)
 | `autoplay` | boolean | Should the video autoplay? (default false)
+| `directToFullscreen` | boolean | Should the video play directly in fullscreen? (default false) (Android only)
 | `hideFullScreenButton` | boolean | Should the full screen button be hidden? (default false)
 | `resetOnFinish` | boolean | Should the video reset to poster image when video finishes? (default false)
 
