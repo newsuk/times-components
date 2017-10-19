@@ -48,6 +48,9 @@ const defaultRenderers = {
     return (
       <Ad key={key} code="intervention" section="article" style={styles.ad} />
     );
+  },
+  break(key) {
+    return <Text key={key}>{"\n"}</Text>;
   }
 };
 
