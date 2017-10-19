@@ -58,6 +58,7 @@ class ArticlePage extends React.Component {
               return (
                 <View
                   testID={`paragraph-${rowData.index}`}
+                  accessibilityLabel={`paragraph-${rowData.index}`}
                   key={key}
                   style={[styles.articleMainContentRow]}
                 >
