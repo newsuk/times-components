@@ -12,12 +12,15 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center"
   },
+  itemContainer: {
+    paddingLeft: 10,
+    paddingRight: 10
+  },
   spacing: {
     flex: 1,
-    marginLeft: 10,
-    marginRight: 10,
-    marginBottom: 10,
-    maxWidth: 800
+    maxWidth: 800,
+    paddingLeft: 10,
+    paddingRight: 10
   }
 });
 
@@ -38,6 +41,18 @@ const AuthorProfileContent = props => {
     onArticlePress
   } = props;
 
+  const paginationComponent = (hideResults = false) => (
+    <Pagination
+      count={count}
+      hideResults={hideResults}
+      generatePageLink={pageNum => `?page=${pageNum}`}
+      onNext={onNext}
+      onPrev={onPrev}
+      page={page}
+      pageSize={pageSize}
+    />
+  );
+
   return (
     <FlatList
       data={articles}
@@ -45,6 +60,7 @@ const AuthorProfileContent = props => {
       renderItem={({ item }) => (
         <AuthorProfileItem
           {...item}
+          style={styles.itemContainer}
           onPress={e => onArticlePress(e, { id: item.id, url: item.url })}
         />
       )}
@@ -62,16 +78,30 @@ const AuthorProfileContent = props => {
             onTwitterLinkPress={onTwitterLinkPress}
           />
           <View style={styles.container}>
-            <View style={styles.spacing}>
-              <Pagination
-                count={count}
-                generatePageLink={pageNum => `?page=${pageNum}`}
-                onNext={onNext}
-                onPrev={onPrev}
-                page={page}
-                pageSize={pageSize}
-              />
+            <View
+              style={[
+                styles.spacing,
+                {
+                  paddingBottom: 10
+                }
+              ]}
+            >
+              {paginationComponent()}
             </View>
+          </View>
+        </View>
+      }
+      ListFooterComponent={
+        <View style={styles.container}>
+          <View
+            style={[
+              styles.spacing,
+              {
+                paddingTop: 10
+              }
+            ]}
+          >
+            {paginationComponent(true)}
           </View>
         </View>
       }

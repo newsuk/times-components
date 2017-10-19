@@ -1,18 +1,12 @@
 import React from "react";
 import get from "lodash.get";
-import { StyleSheet, View } from "react-native";
+import { View } from "react-native";
 import Card from "@times-components/card";
 import Link from "@times-components/link";
 
-const styles = StyleSheet.create({
-  container: {
-    paddingLeft: 10,
-    paddingRight: 10
-  }
-});
-
 const AuthorProfileItem = item => {
   const {
+    style,
     title,
     content,
     publishedTime,
@@ -29,7 +23,7 @@ const AuthorProfileItem = item => {
 
   return (
     <Link url={url} onPress={onPress}>
-      <View style={styles.container}>
+      <View style={style}>
         <Card
           headline={title}
           text={content}

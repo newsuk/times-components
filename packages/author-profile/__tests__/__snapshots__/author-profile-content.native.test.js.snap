@@ -5,6 +5,43 @@ exports[`renders profile 1`] = `<AuthorProfileLoading />`;
 exports[`renders profile content 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
+  ListFooterComponent={
+    <View
+      style={
+        Object {
+          "alignItems": "stretch",
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "flex": 1,
+              "maxWidth": 800,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            Object {
+              "paddingTop": 10,
+            },
+          ]
+        }
+      >
+        <Pagination
+          count={0}
+          generatePageLink={[Function]}
+          hideResults={true}
+          onNext={[Function]}
+          onPrev={[Function]}
+          page={1}
+          pageSize={10}
+        />
+      </View>
+    </View>
+  }
   ListHeaderComponent={
     <View>
       <WithTrackEvents(AuthorHead)
@@ -81,13 +118,17 @@ exports[`renders profile content 1`] = `
       >
         <View
           style={
-            Object {
-              "flex": 1,
-              "marginBottom": 10,
-              "marginLeft": 10,
-              "marginRight": 10,
-              "maxWidth": 800,
-            }
+            Array [
+              Object {
+                "flex": 1,
+                "maxWidth": 800,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+              },
+              Object {
+                "paddingBottom": 10,
+              },
+            ]
           }
         >
           <Pagination
@@ -279,13 +320,17 @@ exports[`renders profile content 1`] = `
         >
           <View
             style={
-              Object {
-                "flex": 1,
-                "marginBottom": 10,
-                "marginLeft": 10,
-                "marginRight": 10,
-                "maxWidth": 800,
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "maxWidth": 800,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                },
+                Object {
+                  "paddingBottom": 10,
+                },
+              ]
             }
           >
             <View
@@ -358,6 +403,69 @@ exports[`renders profile content 1`] = `
         </View>
       </View>
     </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "stretch",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "flex": 1,
+                "maxWidth": 800,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+              },
+              Object {
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          <View
+            onLayout={[Function]}
+            style={
+              Object {
+                "alignItems": "stretch",
+                "flexDirection": "column",
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 40,
+                    "justifyContent": "space-between",
+                  },
+                  Object {
+                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomWidth": 1,
+                    "borderStyle": "solid",
+                    "borderTopColor": "#dbdbdb",
+                    "borderTopWidth": 1,
+                  },
+                ]
+              }
+            >
+              <View />
+              <View />
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
   </View>
 </RCTScrollView>
 `;
@@ -365,6 +473,43 @@ exports[`renders profile content 1`] = `
 exports[`renders profile content component 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
+  ListFooterComponent={
+    <View
+      style={
+        Object {
+          "alignItems": "stretch",
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "flex": 1,
+              "maxWidth": 800,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            Object {
+              "paddingTop": 10,
+            },
+          ]
+        }
+      >
+        <Pagination
+          count={0}
+          generatePageLink={[Function]}
+          hideResults={true}
+          onNext={[Function]}
+          onPrev={[Function]}
+          page={1}
+          pageSize={3}
+        />
+      </View>
+    </View>
+  }
   ListHeaderComponent={
     <View>
       <WithTrackEvents(AuthorHead)
@@ -386,13 +531,17 @@ exports[`renders profile content component 1`] = `
       >
         <View
           style={
-            Object {
-              "flex": 1,
-              "marginBottom": 10,
-              "marginLeft": 10,
-              "marginRight": 10,
-              "maxWidth": 800,
-            }
+            Array [
+              Object {
+                "flex": 1,
+                "maxWidth": 800,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+              },
+              Object {
+                "paddingBottom": 10,
+              },
+            ]
           }
         >
           <Pagination
@@ -4613,13 +4762,17 @@ exports[`renders profile content component 1`] = `
         >
           <View
             style={
-              Object {
-                "flex": 1,
-                "marginBottom": 10,
-                "marginLeft": 10,
-                "marginRight": 10,
-                "maxWidth": 800,
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "maxWidth": 800,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                },
+                Object {
+                  "paddingBottom": 10,
+                },
+              ]
             }
           >
             <View
@@ -4890,7 +5043,8 @@ exports[`renders profile content component 1`] = `
           Object {
             "backgroundColor": "#dbdbdb",
             "height": 1,
-            "margin": 10,
+            "marginBottom": 10,
+            "marginTop": 10,
           }
         }
       />
@@ -5037,7 +5191,8 @@ exports[`renders profile content component 1`] = `
           Object {
             "backgroundColor": "#dbdbdb",
             "height": 1,
-            "margin": 10,
+            "marginBottom": 10,
+            "marginTop": 10,
           }
         }
       />
@@ -5180,6 +5335,69 @@ exports[`renders profile content component 1`] = `
         </View>
       </View>
     </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "stretch",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "flex": 1,
+                "maxWidth": 800,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+              },
+              Object {
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          <View
+            onLayout={[Function]}
+            style={
+              Object {
+                "alignItems": "stretch",
+                "flexDirection": "column",
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 40,
+                    "justifyContent": "space-between",
+                  },
+                  Object {
+                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomWidth": 1,
+                    "borderStyle": "solid",
+                    "borderTopColor": "#dbdbdb",
+                    "borderTopWidth": 1,
+                  },
+                ]
+              }
+            >
+              <View />
+              <View />
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
   </View>
 </RCTScrollView>
 `;
@@ -5210,12 +5428,7 @@ exports[`renders profile content item component 1`] = `
   tvParallaxProperties={undefined}
 >
   <View
-    style={
-      Object {
-        "paddingLeft": 10,
-        "paddingRight": 10,
-      }
-    }
+    style={undefined}
   >
     <View
       onLayout={[Function]}
@@ -5402,12 +5615,7 @@ exports[`renders profile content item component with no image  1`] = `
   tvParallaxProperties={undefined}
 >
   <View
-    style={
-      Object {
-        "paddingLeft": 10,
-        "paddingRight": 10,
-      }
-    }
+    style={undefined}
   >
     <View
       onLayout={[Function]}
@@ -5940,7 +6148,8 @@ exports[`renders profile separator 1`] = `
     Object {
       "backgroundColor": "#dbdbdb",
       "height": 1,
-      "margin": 10,
+      "marginBottom": 10,
+      "marginTop": 10,
     }
   }
 />

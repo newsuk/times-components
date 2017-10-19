@@ -12,19 +12,21 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center"
   },
+  contentContainer: {
+    maxWidth: 800,
+    alignSelf: "center",
+    width: "100%"
+  },
   spacing: {
-    flex: 1,
-    marginLeft: 10,
-    marginRight: 10,
-    marginBottom: 10,
-    maxWidth: 800
+    flex: 1
   }
 });
 
 const itemStyles = StyleSheet.create({
   container: {
-    maxWidth: 820,
-    alignSelf: "center"
+    width: "100%",
+    paddingTop: 10,
+    paddingBottom: 10
   }
 });
 
@@ -43,11 +45,12 @@ const AuthorProfileContent = ({
   articles,
   onArticlePress
 }) => {
-  const paginationComponent = (
+  const paginationComponent = (hideResults = false) => (
     <View style={styles.container}>
       <View style={styles.spacing}>
         <Pagination
           count={count}
+          hideResults={hideResults}
           generatePageLink={pageNum => `?page=${pageNum}`}
           onNext={onNext}
           onPrev={onPrev}
@@ -68,26 +71,27 @@ const AuthorProfileContent = ({
         twitter={twitter}
         onTwitterLinkPress={onTwitterLinkPress}
       />
+      <View style={styles.contentContainer}>
+        {paginationComponent()}
+        <View style={itemStyles.container}>
+          {articles &&
+            articles.map((article, key) => {
+              const { id, url } = article;
+              const separatorComponent =
+                key > 0 ? <AuthorProfileItemSeparator /> : null;
 
-      <View>
-        {paginationComponent}
-        {articles &&
-          articles.map((article, key) => {
-            const { id, url } = article;
-            const separatorComponent =
-              key > 0 ? <AuthorProfileItemSeparator /> : null;
-
-            return (
-              <View key={id} style={itemStyles.container}>
-                {separatorComponent}
-                <AuthorProfileItem
-                  {...article}
-                  onPress={e => onArticlePress(e, { id, url })}
-                />
-              </View>
-            );
-          })}
-        {paginationComponent}
+              return (
+                <View key={id}>
+                  {separatorComponent}
+                  <AuthorProfileItem
+                    {...article}
+                    onPress={e => onArticlePress(e, { id, url })}
+                  />
+                </View>
+              );
+            })}
+        </View>
+        {paginationComponent(true)}
       </View>
     </View>
   );
