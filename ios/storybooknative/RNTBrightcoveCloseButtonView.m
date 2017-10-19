@@ -42,7 +42,7 @@
   UIButton * closeButton = [UIButton buttonWithType:(UIButtonTypeCustom)];
   
   [closeButton setFrame:CGRectMake(20, 20, 44, 44)];
-  [closeButton addSubview:[[RNTBrightcoveSVGCloseButtonView alloc] initWithFrame: CGRectZero]];
+  [closeButton addSubview:[[RNTBrightcoveSVGCloseButtonView alloc] initWithFrame: closeButton.bounds]];
   [closeButton addTarget:self action:@selector(closeButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
   
   self.closeButton = closeButton;
