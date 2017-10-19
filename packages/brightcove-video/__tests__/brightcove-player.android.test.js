@@ -40,7 +40,7 @@ describe("brightcove-player Android component", () => {
     expect(mockNativeFunc.mock.calls[0][1]).toEqual("PLAY_COMMAND");
   });
 
-  it("will go fullscreen if it recieves an 'onChange' event with 'isFullscreen' equal to true", () => {
+  it("will go fullscreen if it receives an 'onChange' event with 'isFullscreen' equal to true", () => {
     const brightcoveVideo = renderer.create(
       <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
@@ -56,7 +56,7 @@ describe("brightcove-player Android component", () => {
     expect(brightcoveVideo.toJSON()).toMatchSnapshot();
   });
 
-  it("will fire event if it recieves an 'onChange' event with 'isFullscreen' equal to true", done => {
+  it("will fire event if it receives an 'onChange' event with 'isFullscreen' equal to true", done => {
     const brightcoveVideo = renderer.create(
       <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
@@ -71,7 +71,7 @@ describe("brightcove-player Android component", () => {
     rootInstance.onChange({ isFullscreen: true });
   });
 
-  it("will fire event if it recieves an 'onChange' event with 'isFullscreen' equal to false", done => {
+  it("will fire event if it receives an 'onChange' event with 'isFullscreen' equal to false", done => {
     const brightcoveVideo = renderer.create(
       <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
