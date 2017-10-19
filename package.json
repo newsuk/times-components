@@ -33,6 +33,7 @@
     "ios": "react-native run-ios",
     "preandroid": "npm run fetch-fonts",
     "android": "react-native run-android",
+    "android:device": "./lib/setup_device_connections.sh && npm run android",
     "prettier:diff": "prettier --list-different 'packages/**/*.+(js|json)'",
     "fmt": "prettier --write '+(packages|storybook|.storybook.native|lib)/**/*.+(js|json)'",
     "packages:publish":
