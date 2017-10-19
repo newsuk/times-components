@@ -87,6 +87,28 @@ describe("brightcove-player Android component", () => {
     rootInstance.onChange({ isFullscreen: false });
   });
 
+  it("will filter android only props from being passed native component", () => {
+    const brightcoveVideo = renderer.create(
+      <BrightcovePlayer
+        accountId="[ACCOUNT_ID]"
+        videoId="[VIDEO_ID]"
+        policyKey="[POLICY_KEY]"
+      />
+    );
+
+    const rootInstance = brightcoveVideo.getInstance();
+
+    expect(rootInstance.bcv.props.videoId).toEqual("[VIDEO_ID]");
+    expect(rootInstance.bcv.props.accountId).toEqual("[ACCOUNT_ID]");
+    expect(rootInstance.bcv.props.policyKey).toEqual("[POLICY_KEY]");
+
+    expect(rootInstance.bcv.props.onPlay).toBeDefined();
+    expect(rootInstance.bcv.props.onPause).toBeDefined();
+
+    expect(rootInstance.bcv.props.onEnterFullscreen).toBeUndefined();
+    expect(rootInstance.bcv.props.onExitFullscreen).toBeUndefined();
+  });
+
   describe("static methods", () => {
     describe("AndroidNative.filterKeys(objToFilter, allowedKeys)", () => {
       it("it will filter out any keys that are not in allowed keys", () => {
