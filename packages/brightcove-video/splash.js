@@ -6,7 +6,7 @@ import PlayIcon from "./play-icon";
 const SourcePropType = Image.propTypes.source;
 
 const Splash = ({ poster, width, height, playIcon }) => (
-  <View testID="splash-component">
+  <View testID="splash-component" accessibilityLabel="splash-component" >
     {poster ? (
       <Image
         source={poster}

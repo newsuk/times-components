@@ -19,6 +19,7 @@ const linkStyles = StyleSheet.create({
 const ArticleByline = ({ ast, style }) => (
   <View style={[styles.container, style.container]}>
     <Text
+      accessibilityLabel="articleByline"
       testID="articleByline"
       style={[styles.byline, style.byline, styles.bylineColor]}
     >
