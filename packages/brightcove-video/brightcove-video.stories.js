@@ -352,7 +352,7 @@ storiesOf("BrightcoveVideo", module)
       resetOnFinish
     />
   ))
-  .add("Launcher direct to fullscreen (android only)", () => (
+  .add("Launcher direct to fullscreen (native only)", () => (
     <BrightcoveVideo
       policyKey={policyKey}
       videoId={videoId}

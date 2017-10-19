@@ -1,6 +1,3 @@
-//
-//  Copyright © 2017 News UK. All rights reserved.
-//
 
 #import "RNTFullscreenPresentingAutoRotatingViewController.h"
 #import "RNTFullscreenAutoPresentingView.h"
