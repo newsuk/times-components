@@ -14,6 +14,16 @@ function withNativeCommand(WrappedComponent) {
         .Commands[name];
     }
 
+    static filterKeys(objToFilter, allowedKeys) {
+      return Object.keys(objToFilter) // filter out android only props
+        .filter(key => allowedKeys.includes(key))
+        .reduce((obj, key) => {
+          const newObj = Object.assign({}, obj);
+          newObj[key] = objToFilter[key];
+          return newObj;
+        }, {});
+    }
+
     constructor(props) {
       super(props);
 
@@ -67,13 +77,7 @@ function withNativeCommand(WrappedComponent) {
 
       const props = Object.assign(
         { runNativeCommand: this.runNativeCommand },
-        Object.keys(this.props) // filter out android only props
-          .filter(key => Object.keys(propTypes).includes(key))
-          .reduce((obj, key) => {
-            const newObj = Object.assign({}, obj);
-            newObj[key] = this.props[key];
-            return newObj;
-          }, {}),
+        AndroidNative.filterKeys(this.props, Object.keys(propTypes)),
         androidSpecificProps
       );
 
@@ -88,14 +92,20 @@ function withNativeCommand(WrappedComponent) {
     }
   }
 
-  AndroidNative.defaultProps = Object.assign(defaults, {
-    onEnterFullscreen: () => {},
-    onExitFullscreen: () => {}
-  });
-  AndroidNative.propTypes = Object.assign(propTypes, {
-    onEnterFullscreen: PropTypes.func,
-    onExitFullscreen: PropTypes.func
-  });
+  AndroidNative.defaultProps = Object.assign(
+    {
+      onEnterFullscreen: () => {},
+      onExitFullscreen: () => {}
+    },
+    defaults
+  );
+  AndroidNative.propTypes = Object.assign(
+    {
+      onEnterFullscreen: PropTypes.func,
+      onExitFullscreen: PropTypes.func
+    },
+    propTypes
+  );
 
   return AndroidNative;
 }

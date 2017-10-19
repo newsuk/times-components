@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`brightcove-player Android component will go fullscreen if it recieves an 'onChange' event with 'isFullscreen' equal to true 1`] = `
+exports[`brightcove-player Android component will go fullscreen if it receives an 'onChange' event with 'isFullscreen' equal to true 1`] = `
 <RNTBrightcove
   accountId="[ACCOUNT_ID]"
   autoplay={false}

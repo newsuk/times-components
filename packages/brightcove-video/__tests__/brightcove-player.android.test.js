@@ -86,4 +86,18 @@ describe("brightcove-player Android component", () => {
     rootInstance.onChange({ isFullscreen: true });
     rootInstance.onChange({ isFullscreen: false });
   });
+
+  describe("static methods", () => {
+    describe("AndroidNative.filterKeys(objToFilter, allowedKeys)", () => {
+      it("it will filter out any keys that are not in allowed keys", () => {
+        expect(
+          BrightcovePlayer.filterKeys({ a: 1, b: 2, c: 3, d: 4, e: 5 }, [
+            "a",
+            "c",
+            "e"
+          ])
+        ).toEqual({ a: 1, c: 3, e: 5 });
+      });
+    });
+  });
 });
