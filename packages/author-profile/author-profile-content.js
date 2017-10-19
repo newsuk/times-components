@@ -58,9 +58,10 @@ const AuthorProfileContent = props => {
       testID="scroll-view"
       data={articles}
       keyExtractor={item => item.id}
-      renderItem={({ item }) => (
+      renderItem={({ item, index }) => (
         <AuthorProfileItem
           {...item}
+          testID={`articleList-${index}`}
           style={styles.itemContainer}
           onPress={e => onArticlePress(e, { id: item.id, url: item.url })}
         />
