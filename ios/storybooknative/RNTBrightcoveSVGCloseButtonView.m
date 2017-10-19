@@ -23,7 +23,7 @@
   CAShapeLayer* circleLayer = [CAShapeLayer new];
   CAShapeLayer* crossLayer = [CAShapeLayer new];
   
-  CATransform3D scaleTransform = CATransform3DMakeScale(0.3, 0.3, 1);
+  CGAffineTransform scaleTransform = CGAffineTransformMakeScale(0.3, 0.3);
   
   circleLayer.fillColor = [[UIColor grayColor] CGColor];
   crossLayer.fillColor = [[UIColor whiteColor] CGColor];
@@ -31,13 +31,12 @@
   [circleLayer setPath: [self createCircularBezierPath]];
   [crossLayer setPath: [self createCrossBezierPath]];
   
-  circleLayer.transform = scaleTransform;
-  crossLayer.transform = scaleTransform;
+  circleLayer.affineTransform = scaleTransform;
+  crossLayer.affineTransform = scaleTransform;
   
   [self.layer addSublayer: circleLayer];
   [self.layer addSublayer: crossLayer];
 }
-
 
 - (CGPathRef)createCircularBezierPath {
   UIBezierPath* bezierPath = [UIBezierPath bezierPath];
