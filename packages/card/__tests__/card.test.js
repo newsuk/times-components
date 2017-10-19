@@ -16,6 +16,12 @@ it("renders vertical by default", () => {
   expect(tree).toMatchSnapshot();
 });
 
+it("renders loading vertical by default", () => {
+  const tree = renderer.create(<Card loading />).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
 it("renders without image", () => {
   const noImageProps = Object.assign({}, props, {
     image: null
@@ -39,6 +45,17 @@ it("renders without image url", () => {
 it("renders horizontal above breakpoint", () => {
   Enzyme.configure({ adapter: new React16Adapter() });
   const wrapper = shallow(<Card {...props} />);
+  wrapper.setState({
+    isHorizontal: true
+  });
+
+  wrapper.update();
+  expect(wrapper).toMatchSnapshot();
+});
+
+it("renders loading horizontal above breakpoint", () => {
+  Enzyme.configure({ adapter: new React16Adapter() });
+  const wrapper = shallow(<Card loading />);
   wrapper.setState({
     isHorizontal: true
   });

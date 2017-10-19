@@ -3,9 +3,16 @@ import React from "react";
 import { View, ViewPropTypes } from "react-native";
 
 const Gradient = ({ angle, children, style }) => (
-  <View style={[{
-    backgroundImage: `linear-gradient(${angle}deg, #f9f9f9 0%, #ededed 100%)`
-  }, style]}>{children}</View>
+  <View
+    style={[
+      {
+        backgroundImage: `linear-gradient(${angle}deg, #f9f9f9 0%, #ededed 100%)`
+      },
+      style
+    ]}
+  >
+    {children}
+  </View>
 );
 
 Gradient.defaultProps = {

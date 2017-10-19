@@ -50,21 +50,19 @@ class CardComponent extends React.Component {
     const imageComponent =
       image && image.uri ? (
         <View
-          style={[
-            layoutStyles.imageContainer,
-            layoutStyles.childrenContainer
-          ]}
+          style={[layoutStyles.imageContainer, layoutStyles.childrenContainer]}
         >
-          <Image style={layoutStyles.image} uri={image.uri} aspectRatio={3 / 2} />
+          <Image
+            style={layoutStyles.image}
+            uri={image.uri}
+            aspectRatio={3 / 2}
+          />
         </View>
       ) : null;
 
     return (
       <View onLayout={this.handleLayout}>
-        <View style={[
-          layoutStyles.container,
-          style
-        ]}>
+        <View style={[layoutStyles.container, style]}>
           {imageComponent}
           <View
             style={[

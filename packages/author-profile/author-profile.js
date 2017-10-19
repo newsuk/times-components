@@ -7,11 +7,9 @@ import { withTrackingContext } from "@times-components/tracking";
 import get from "lodash.get";
 import AuthorProfileEmpty from "./author-profile-empty";
 import AuthorProfileError from "./author-profile-error";
-import AuthorProfileLoading from "./author-profile-loading";
 import AuthorProfileContent from "./author-profile-content";
 
 const AuthorProfile = ({
-  articleImageRatio,
   author,
   error,
   isLoading,
@@ -26,7 +24,18 @@ const AuthorProfile = ({
   }
 
   if (isLoading) {
-    return <AuthorProfileLoading ratio={articleImageRatio}/>;
+    return (
+      <AuthorProfileContent
+        articles={
+          Array(initPageSize)
+            .fill()
+            .map((_, id) => ({
+              id,
+              loading: true
+            }))
+        }
+      />
+    );
   }
 
   if (author) {
@@ -68,7 +77,6 @@ const AuthorProfile = ({
 };
 
 AuthorProfile.defaultProps = {
-  articleImageRatio: 2 / 3,
   author: null,
   error: null,
   isLoading: true,
@@ -79,7 +87,6 @@ AuthorProfile.defaultProps = {
 };
 
 AuthorProfile.propTypes = {
-  articleImageRatio: 2 / 3,
   isLoading: PropTypes.bool,
   error: PropTypes.shape(),
   author: PropTypes.shape({

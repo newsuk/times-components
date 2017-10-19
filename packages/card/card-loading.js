@@ -15,39 +15,39 @@ const gradientStyles = StyleSheet.create({
     height: 10,
     marginBottom: 10
   }
-})
+});
 
 const Loading = ({ horizontal, style }) => {
   const layoutStyles = horizontal ? styles.horizontal : styles.vertical;
 
   const imageComponent = (
-    <View
-      style={[
-        layoutStyles.imageContainer,
-        layoutStyles.childrenContainer
-      ]}
-    >
-      <CardImage style={[layoutStyles.image]} ratio={ 3 / 2 }/>
+    <View style={[layoutStyles.imageContainer, layoutStyles.childrenContainer]}>
+      <CardImage style={[layoutStyles.image]} ratio={3 / 2} />
     </View>
   );
 
   return (
     <View style={[layoutStyles.container, style]}>
       {imageComponent}
-      <View style={[
-        layoutStyles.childrenContainer,
-        layoutStyles.summaryContainer
-      ]}>
-        <Gradient style={[gradientStyles.headerContainer]} angle={264}/>
-        <Gradient style={[gradientStyles.textContainer]} angle={267}/>
-        <Gradient style={[gradientStyles.textContainer]} angle={267}/>
-        <Gradient style={[gradientStyles.textContainer, {
-          marginBottom: 0
-        }]} angle={267}/>
+      <View
+        style={[layoutStyles.childrenContainer, layoutStyles.summaryContainer]}
+      >
+        <Gradient style={[gradientStyles.headerContainer]} angle={264} />
+        <Gradient style={[gradientStyles.textContainer]} angle={267} />
+        <Gradient style={[gradientStyles.textContainer]} angle={267} />
+        <Gradient
+          style={[
+            gradientStyles.textContainer,
+            {
+              marginBottom: 0
+            }
+          ]}
+          angle={267}
+        />
       </View>
     </View>
-  )
-}
+  );
+};
 
 Loading.defaultProps = {
   style: null

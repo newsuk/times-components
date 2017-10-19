@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import React from "react";
-import { StyleSheet, View, ViewPropTypes } from "react-native"
+import { StyleSheet, View, ViewPropTypes } from "react-native";
 import Gradient from "./card-loading-gradient";
-import T from "./t"
+import T from "./t";
 
 const styles = StyleSheet.create({
   t: {
@@ -14,9 +14,9 @@ const styles = StyleSheet.create({
 
 class CardImage extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
 
-    this.state = {}
+    this.state = {};
     this.handleLayout = this.handleLayout.bind(this);
   }
 
@@ -27,18 +27,13 @@ class CardImage extends React.Component {
   }
 
   render() {
-    const {
-      ratio,
-      style
-    } = this.props
+    const { ratio, style } = this.props;
 
-    const {
-      width
-    } = this.state
+    const { width } = this.state;
 
     const tComponent = width ? (
       <View style={styles.t}>
-        <T width={width * 0.15} height={width * 0.15}/>
+        <T width={width * 0.15} height={width * 0.15} />
       </View>
     ) : null;
 
@@ -46,15 +41,18 @@ class CardImage extends React.Component {
       <View style={style} onLayout={this.handleLayout}>
         <Gradient
           angle={264}
-          style={[styles.gradient, {
-            width,
-            height: width / ratio
-          }]}
+          style={[
+            styles.gradient,
+            {
+              width,
+              height: width / ratio
+            }
+          ]}
         >
           {tComponent}
         </Gradient>
       </View>
-    )
+    );
   }
 }
 
