@@ -1,144 +1,101 @@
 import React from "react";
-import { FlatList, StyleSheet, View } from "react-native";
-import AuthorProfileAuthorHead from "./author-profile-author-head";
-import AuthorProfilePagination from "./author-profile-pagination";
+import { StyleSheet, View } from "react-native";
+import Pagination from "@times-components/pagination";
+import AuthorHead from "@times-components/author-head";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
 import propTypes from "./author-profile-content-prop-types";
 
 const styles = StyleSheet.create({
-  padding: {
-    paddingLeft: 10,
-    paddingRight: 10
+  container: {
+    alignItems: "stretch",
+    flexDirection: "row",
+    justifyContent: "center"
+  },
+  contentContainer: {
+    maxWidth: 800,
+    alignSelf: "center",
+    width: "100%"
+  },
+  spacing: {
+    flex: 1
   }
 });
 
-class AuthorProfileContent extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      count: props.count
-    };
+const itemStyles = StyleSheet.create({
+  container: {
+    width: "100%",
+    paddingTop: 10,
+    paddingBottom: 10
   }
+});
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.count) {
-      this.setState({
-        count: nextProps.count
-      });
-    }
-  }
-
-  render() {
-    const { count } = this.state;
-
-    const {
-      isLoading,
-      articles,
-      articlesLoading,
-      biography,
-      jobTitle,
-      name,
-      onArticlePress,
-      onNext,
-      onPrev,
-      onTwitterLinkPress,
-      page,
-      pageSize,
-      twitter,
-      uri
-    } = this.props;
-
-    const paginationComponent = (hideResults = false) => (
-      <AuthorProfilePagination
-        count={count}
-        hideResults={hideResults}
-        onNext={onNext}
-        onPrev={onPrev}
-        page={page}
-        pageSize={pageSize}
-      />
-    );
-
-<<<<<<< HEAD
-    const data = articlesLoading
-      ? Array(pageSize)
-          .fill()
-          .map((number, id) => ({
-            id,
-            isLoading: true
-          }))
-      : articles;
-
-    return (
-      <FlatList
-        testID="scroll-view"
-        data={data}
-        keyExtractor={item => item.id}
-        renderItem={({ item, index }) => (
-          <AuthorProfileItem
-            {...item}
-            style={styles.padding}
-            testID={`articleList-${index}`}
-            onPress={e => onArticlePress(e, { id: item.id, url: item.url })}
-=======
-  return (
-    <FlatList
-      testID="scroll-view"
-      accessibilityLabel="scroll-view"
-      data={articles}
-      keyExtractor={item => item.id}
-      renderItem={({ item, index }) => (
-        <AuthorProfileItem
-          {...item}
-          testID={`articleList-${index}`}
-          style={styles.itemContainer}
-          onPress={e => onArticlePress(e, { id: item.id, url: item.url })}
+const AuthorProfileContent = ({
+  name,
+  biography,
+  uri,
+  jobTitle,
+  twitter,
+  onTwitterLinkPress,
+  count,
+  onNext,
+  onPrev,
+  page,
+  pageSize,
+  articles,
+  onArticlePress
+}) => {
+  const paginationComponent = (hideResults = false) => (
+    <View style={styles.container}>
+      <View style={styles.spacing}>
+        <Pagination
+          count={count}
+          hideResults={hideResults}
+          generatePageLink={pageNum => `?page=${pageNum}`}
+          onNext={onNext}
+          onPrev={onPrev}
+          page={page}
+          pageSize={pageSize}
         />
-      )}
-      initialListSize={pageSize}
-      scrollRenderAheadDistance={2}
-      pageSize={pageSize}
-      ListHeaderComponent={
-        <View>
-          <AuthorHead
-            name={name}
-            bio={biography}
-            uri={uri}
-            title={jobTitle}
-            twitter={twitter}
-            onTwitterLinkPress={onTwitterLinkPress}
->>>>>>> 5fa63ed9... test: add accessibility labels for android tests :/
-          />
-        )}
-        initialListSize={pageSize}
-        scrollRenderAheadDistance={2}
-        pageSize={pageSize}
-        ListHeaderComponent={
-          <View>
-            <AuthorProfileAuthorHead
-              isLoading={isLoading}
-              name={name}
-              bio={biography}
-              uri={uri}
-              title={jobTitle}
-              twitter={twitter}
-              onTwitterLinkPress={onTwitterLinkPress}
-            />
-            {paginationComponent()}
-          </View>
-        }
-        ListFooterComponent={paginationComponent(true)}
-        ItemSeparatorComponent={() => (
-          <View style={styles.padding}>
-            <AuthorProfileItemSeparator />
-          </View>
-        )}
+      </View>
+    </View>
+  );
+
+  return (
+    <View>
+      <AuthorHead
+        name={name}
+        bio={biography}
+        uri={uri}
+        title={jobTitle}
+        twitter={twitter}
+        onTwitterLinkPress={onTwitterLinkPress}
       />
-    );
-  }
-}
+      <View style={styles.contentContainer}>
+        {paginationComponent()}
+        <View style={itemStyles.container}>
+          {articles &&
+            articles.map((article, key) => {
+              const { id, url } = article;
+              const separatorComponent =
+                key > 0 ? <AuthorProfileItemSeparator /> : null;
+
+              return (
+                <View key={id}  accessibilityLabel={`articleList-${key}`} testID={`articleList-${key}`}>
+                  {separatorComponent}
+                  <AuthorProfileItem
+                    {...article}
+                    onPress={e => onArticlePress(e, { id, url })}
+                  />
+                </View>
+              );
+            })}
+        </View>
+        {paginationComponent(true)}
+      </View>
+    </View>
+  );
+};
 
 AuthorProfileContent.propTypes = propTypes;
 export default AuthorProfileContent;
