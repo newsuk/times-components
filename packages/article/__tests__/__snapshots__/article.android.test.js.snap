@@ -55,7 +55,7 @@ exports[`Article test on android renders article no flags 1`] = `
   pageSize={1}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
-  scrollRenderAheadDistance={10}
+  scrollRenderAheadDistance={500}
   testID="listView"
 >
   <View>
@@ -760,7 +760,7 @@ exports[`Article test on android renders article no label 1`] = `
   pageSize={1}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
-  scrollRenderAheadDistance={10}
+  scrollRenderAheadDistance={500}
   testID="listView"
 >
   <View>
@@ -1572,7 +1572,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
   pageSize={1}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
-  scrollRenderAheadDistance={10}
+  scrollRenderAheadDistance={500}
   testID="listView"
 >
   <View>
@@ -2245,7 +2245,7 @@ exports[`Article test on android renders article no label no flags no standfirst
   pageSize={1}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
-  scrollRenderAheadDistance={10}
+  scrollRenderAheadDistance={500}
   testID="listView"
 >
   <View>
@@ -2898,7 +2898,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
   pageSize={1}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
-  scrollRenderAheadDistance={10}
+  scrollRenderAheadDistance={500}
   testID="listView"
 >
   <View>
@@ -3722,7 +3722,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
   pageSize={1}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
-  scrollRenderAheadDistance={10}
+  scrollRenderAheadDistance={500}
   testID="listView"
 >
   <View>
@@ -4407,7 +4407,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
   pageSize={1}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
-  scrollRenderAheadDistance={10}
+  scrollRenderAheadDistance={500}
   testID="listView"
 >
   <View>
@@ -5199,7 +5199,7 @@ exports[`Article test on android renders full article 1`] = `
   pageSize={1}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
-  scrollRenderAheadDistance={10}
+  scrollRenderAheadDistance={500}
   testID="listView"
 >
   <View>
