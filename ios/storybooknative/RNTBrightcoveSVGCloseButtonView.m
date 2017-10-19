@@ -28,14 +28,16 @@
   circleLayer.fillColor = [[UIColor grayColor] CGColor];
   crossLayer.fillColor = [[UIColor whiteColor] CGColor];
   
-  [circleLayer setPath: [self createCircularBezierPath]];
+  [circleLayer setPath: [self createCircularBezierPath2]];
   [crossLayer setPath: [self createCrossBezierPath]];
   
   circleLayer.affineTransform = scaleTransform;
-  crossLayer.affineTransform = scaleTransform;
   
   [self.layer addSublayer: circleLayer];
-  [self.layer addSublayer: crossLayer];
+  [circleLayer addSublayer: crossLayer];
+  
+  crossLayer.position = circleLayer.position;
+  
 }
 
 - (CGPathRef)createCircularBezierPath {
@@ -67,6 +69,16 @@
   [bezierPath addCurveToPoint: CGPointMake(90.81, 8.45) controlPoint1: CGPointMake(71.09, -0) controlPoint2: CGPointMake(81.61, 2.92)];
   [bezierPath addLineToPoint: CGPointMake(90.4, 8.2)];
   [bezierPath closePath];
+
+  return bezierPath.CGPath;
+}
+
+
+- (CGPathRef)createCircularBezierPath2 {
+
+  UIBezierPath* bezierPath = [UIBezierPath bezierPath];
+  
+  [bezierPath addArcWithCenter:CGPointMake(40, 40) radius: 80 startAngle:0 endAngle:M_2_PI clockwise:NO];
 
   return bezierPath.CGPath;
 }
