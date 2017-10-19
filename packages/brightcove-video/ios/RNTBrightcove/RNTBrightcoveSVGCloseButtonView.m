@@ -21,8 +21,8 @@
 - (void)setUp {
   CAShapeLayer* circleLayer = [CAShapeLayer new];
   CAShapeLayer* crossLayer = [CAShapeLayer new];
-  
-  CGFloat buttonSize = 25;
+
+  CGFloat buttonSize = 35;
   CGFloat buttonScale = buttonSize / 120;
   
   [crossLayer setFillColor: [[UIColor whiteColor] CGColor]];
