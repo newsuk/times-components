@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.5.5...@times-components/brightcove-video@1.6.0) (2017-10-19)
+
+
+### Features
+
+* bubble android fullscreen events outside component ([#294](https://github.com/newsuk/times-components/issues/294)) ([d95ac94](https://github.com/newsuk/times-components/commit/d95ac94))
+
+
+
+
 <a name="1.5.5"></a>
 ## [1.5.5](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.5.4...@times-components/brightcove-video@1.5.5) (2017-10-19)
 
