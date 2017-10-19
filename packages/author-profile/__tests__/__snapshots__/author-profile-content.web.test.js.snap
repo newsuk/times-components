@@ -2724,6 +2724,7 @@ exports[`renders profile content 1`] = `
 exports[`renders profile 1`] = `<AuthorProfileLoading />`;
 
 exports[`renders profile content 1`] = `
+<<<<<<< HEAD
 <View
   style={
     Object {
@@ -2745,6 +2746,8 @@ exports[`renders profile content 1`] = `
 `;
 
 exports[`renders profile content 2`] = `
+=======
+>>>>>>> test: rename test descriptions
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListHeaderComponent={

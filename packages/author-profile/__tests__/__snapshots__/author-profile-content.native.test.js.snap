@@ -3,26 +3,6 @@
 exports[`renders profile 1`] = `<AuthorProfileLoading />`;
 
 exports[`renders profile content 1`] = `
-<View
-  style={
-    Object {
-      "alignItems": "center",
-      "flex": 1,
-      "flexBasis": "100%",
-      "justifyContent": "center",
-    }
-  }
->
-  <ActivityIndicator
-    animating={true}
-    color="#999999"
-    hidesWhenStopped={true}
-    size="large"
-  />
-</View>
-`;
-
-exports[`renders profile content 2`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListHeaderComponent={

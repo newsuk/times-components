@@ -145,14 +145,6 @@ export default AuthorProfileContent => {
 
   it("renders profile content", () => {
     const component = renderer.create(
-      withMockProvider(<AuthorProfile {...props} />)
-    );
-
-    expect(component).toMatchSnapshot();
-  });
-
-  it("renders profile content", () => {
-    const component = renderer.create(
       withMockProvider(
         <AuthorProfile
           {...props}
@@ -176,8 +168,8 @@ export default AuthorProfileContent => {
       author: null,
       isLoading: true
     });
-    const component = renderer.create(<AuthorProfile {...p} />);
 
+    const component = renderer.create(<AuthorProfile {...p} />);
     expect(component).toMatchSnapshot();
   });
 
