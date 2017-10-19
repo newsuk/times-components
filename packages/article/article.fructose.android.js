@@ -4,10 +4,8 @@ import Article from "./article";
 const fullArticleFixture = require("./fixtures/full-article.json");
 const data = fullArticleFixture.data;
 
-const byText = (text) => `//*[@text="${text}"]`;
-
-const isTextVisible = async (text, timeout=2000, reverse=false) => {
-  await d.waitForElementsByXPath(byText(text), asserter.isVisible, timeout);
+const isComponentDisplayed = async (id, timeout=2000) => {
+  await d.waitForElementByAccessibilityId(id, timeout);
 }
 
 const props = {
@@ -21,26 +19,22 @@ withComponent(
   async fructose => {
     beforeEach(async () => {
       await fructose.loadComponent();
-      await isTextVisible(data.article.label);      
+      await isComponentDisplayed('listView');      
     });
 
     test("default Article should render correctly", async () => {
-      expect(true).toBe(true);
-      // await isTextVisible(data.article.headline);
-      // await isTextVisible(data.article.label);
-      // await isTextVisible(data.article.standfirst);
-      // await isTextVisible(data.article.flags[0]);
-      // await isTextVisible(data.article.flags[1]);
-      // await isTextVisible(data.article.byline.children[0].attributes.value);
+      await isComponentDisplayed('leadAsset');
+      await isComponentDisplayed('label');
+      //await isComponentDisplayed('headline');
+      await isComponentDisplayed('standfirst');
+      await isComponentDisplayed('flag-new');
+      await isComponentDisplayed('flag-exclusive');
+      await isComponentDisplayed('articleByline');
     });
 
     test("default Article should be able to scroll down the page", async () => {
-      expect(true).toBe(true);
-      // await driver.swipeUp('//android.widget.ScrollView', 5000);
-      // const e= await driver.elements(byText(data.article.label));
-      // console.error(e)
-      // const labelVisible = await driver.isVisible(byText(data.article.label));
-      // expect(labelVisible).toBe(false);
+      await d.flick(0, -900);
+      await d.waitForElementByXPath(`//*[contains(@content-desc, 'paragraph')]`);
     });
   }
 );

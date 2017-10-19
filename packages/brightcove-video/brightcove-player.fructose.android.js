@@ -10,19 +10,12 @@ const accountId = "57838016001";
 const videoId = "4084164751001";
 
 withComponent(
-  // <VideoWithExternalControls
-  //   fructoseID="brightcove with external controls"
-  //   policyKey={policyKey}
-  //   videoId={videoId}
-  //   accountId={accountId}
-  // />,
   <BrightcovePlayer
     fructoseID="brightcove video renders"
     policyKey={policyKey}
     videoId={videoId}
     accountId={accountId}
   />,
-
   "video with external controls",
   async fructose => {
     beforeEach(async () => {
@@ -30,7 +23,7 @@ withComponent(
     });
 
     test("renders", async () => {
-      await driver.waitForVisible('//*[@content-desc="Play" and @clickable="true"]', 10000);
+      await d.waitForElementByXPath('//*[@content-desc="Play" and @clickable="true"]', 10000);
     });
   }
 );
@@ -51,10 +44,11 @@ withComponent(
     test(
       "video plays when external play button is pressed",
       async () => {
-        await driver.waitForVisible('//*[@text="play"]', 2000);
-        await driver.touchAction('//*[@text="play"]', 'tap');
-        await driver.waitForVisible('//*[@content-desc="Play"]', 2000);
-      }
+        await d.waitForElementByXPath('//*[@text="play"]', 2000);
+        const e = await d.elementByXPath('//*[@text="play"]')
+        await d.tapElement(e);
+        await d.waitForElementByXPath('//*[@text="0:08"]', 10000)
+      }, 150000
     );
   }
 );

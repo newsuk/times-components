@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
 
 const story = m => (
   <View fructoseID="author profile" style={styles.background}>
-    <View style={styles.container} testID="author-profile">
+    <View style={styles.container} accessibilityLabel="author-profile">
       {m}
     </View>
   </View>
@@ -42,9 +42,10 @@ withComponent(
       "renders and swipes",
       async () => {
         await fructose.loadComponent();
-        await driver.waitForVisible('//*[@text="Fiona Hamilton"]', 10000)
-        await driver.swipeUp('//android.widget.ScrollView', 5000);
-        await driver.waitForVisible(`//*[@text="${example.author.articles.list[1].title}"]`);
+        await d.waitForElementByXPath('//*[@text="Fiona Hamilton"]', 10000)
+        await d.flick(0, -5000);
+        await d.flick(0, -5000);
+        await d.waitForElementByXPath(`//*[@text="${example.author.articles.list[1].title}"]`);
       },
       10000
     );

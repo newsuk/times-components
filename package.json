@@ -110,6 +110,7 @@
     "react-native-web": "0.1.7",
     "rimraf": "2.6.1",
     "url": "0.11.0",
+    "wd": "1.4.1",    
     "webpack": "3.3.0"
   },
   "dependencies": {
@@ -119,8 +120,6 @@
     "handlebars": "4.0.10",
     "mkdirp": "0.5.1",
     "sort-pkg": "1.1.0",
-    "subcommander": "1.0.0",
-    "wd": "1.4.1",
-    "webdriverio": "4.8.0"
+    "subcommander": "1.0.0"
   }
 }
