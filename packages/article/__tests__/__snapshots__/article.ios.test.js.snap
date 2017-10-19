@@ -32,7 +32,7 @@ exports[`Article test on ios renders article no flags 1`] = `
   pageSize={1}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
-  scrollRenderAheadDistance={10}
+  scrollRenderAheadDistance={500}
 >
   <View>
     <View
@@ -695,7 +695,7 @@ exports[`Article test on ios renders article no label 1`] = `
   pageSize={1}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
-  scrollRenderAheadDistance={10}
+  scrollRenderAheadDistance={500}
 >
   <View>
     <View
@@ -1463,7 +1463,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
   pageSize={1}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
-  scrollRenderAheadDistance={10}
+  scrollRenderAheadDistance={500}
 >
   <View>
     <View
@@ -2096,7 +2096,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
   pageSize={1}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
-  scrollRenderAheadDistance={10}
+  scrollRenderAheadDistance={500}
 >
   <View>
     <View
@@ -2711,7 +2711,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
   pageSize={1}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
-  scrollRenderAheadDistance={10}
+  scrollRenderAheadDistance={500}
 >
   <View>
     <View
@@ -3491,7 +3491,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
   pageSize={1}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
-  scrollRenderAheadDistance={10}
+  scrollRenderAheadDistance={500}
 >
   <View>
     <View
@@ -4136,7 +4136,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
   pageSize={1}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
-  scrollRenderAheadDistance={10}
+  scrollRenderAheadDistance={500}
 >
   <View>
     <View
@@ -4886,7 +4886,7 @@ exports[`Article test on ios renders full article 1`] = `
   pageSize={1}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
-  scrollRenderAheadDistance={10}
+  scrollRenderAheadDistance={500}
 >
   <View>
     <View
