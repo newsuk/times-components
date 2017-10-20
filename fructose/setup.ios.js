@@ -11,7 +11,7 @@ beforeAll(async () => {
   console.log("loaded Detox")
 }, 240000);
 
-afterAll(async() => {
+afterAll(async () => {
   await detox.cleanup();
   await fructose.hooks.mobile.cleanup();
 });

@@ -98,6 +98,7 @@ exports[`renders profile content 1`] = `
       />
     </View>
   }
+<<<<<<< HEAD
   data={
     Array [
       Object {
@@ -142,6 +143,10 @@ exports[`renders profile content 1`] = `
       },
     ]
   }
+=======
+  accessibilityLabel="scroll-view"
+  data={Array []}
+>>>>>>> a640f540... test: update snapshots and lint
   disableVirtualization={false}
   getItem={[Function]}
   getItemCount={[Function]}
@@ -197,6 +202,7 @@ exports[`renders profile content 1`] = `
             }
           >
             <Text
+              accessibility-label="author-name"
               accessibilityRole="heading"
               accessible={true}
               allowFontScaling={true}
@@ -823,6 +829,7 @@ exports[`renders profile content 1`] = `
         />
       </View>
     </View>
+<<<<<<< HEAD
     <View
       onLayout={[Function]}
       style={null}
@@ -849,6 +856,21 @@ exports[`renders profile content 1`] = `
               Array [
                 Object {
                   "flexDirection": "row",
+=======
+  }
+  accessibilityLabel="scroll-view"
+  data={
+    Array [
+      Object {
+        "__typename": "Article",
+        "content": Array [
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, ",
+>>>>>>> a640f540... test: update snapshots and lint
                 },
                 null,
               ]
@@ -5644,6 +5666,11 @@ exports[`renders profile content item component with no image  1`] = `
             style={Object {}}
           >
             <Text
+<<<<<<< HEAD
+=======
+              accessibility-label="author-name"
+              accessibilityRole="heading"
+>>>>>>> a640f540... test: update snapshots and lint
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
@@ -5924,6 +5951,7 @@ exports[`renders profile empty 1`] = `
                 }
               >
                 <Text
+                  accessibilityLabel="datePublication"
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
@@ -6367,6 +6395,7 @@ exports[`renders profile loading 1`] = `
                 }
               >
                 <Text
+                  accessibilityLabel="datePublication"
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
@@ -6495,6 +6524,7 @@ exports[`renders profile loading 1`] = `
                         "marginBottom": 2,
                       }
                     }
+<<<<<<< HEAD
                   >
                     
                   </Text>
@@ -6520,6 +6550,18 @@ exports[`renders profile loading 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                     style={
+=======
+                  }
+                />
+                <Text
+                  accessibilityLabel="datePublication"
+                  accessible={true}
+                  allowFontScaling={true}
+                  disabled={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+>>>>>>> a640f540... test: update snapshots and lint
                       Object {
                         "color": "#696969",
                         "flexWrap": "wrap",
@@ -6807,6 +6849,7 @@ exports[`renders profile loading 1`] = `
                   ]
                 }
               >
+<<<<<<< HEAD
                 <View
                   style={Object {}}
                 >
@@ -6882,6 +6925,35 @@ exports[`renders profile loading 1`] = `
               </View>
             </View>
           </View>
+=======
+                The
+              </Text>
+              ...
+            </Text>
+          </Text>
+          <Text
+            accessibilityLabel="datePublication"
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 15,
+                },
+                Object {},
+              ]
+            }
+            testID="datePublication"
+          >
+            Monday March 23 2015
+            , The Times
+          </Text>
+>>>>>>> a640f540... test: update snapshots and lint
         </View>
       </View>
     </View>
@@ -6936,10 +7008,52 @@ exports[`renders profile loading 1`] = `
                 ]
               }
             >
+<<<<<<< HEAD
               <View />
               <View />
             </View>
           </View>
+=======
+              A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State,
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                disabled={false}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontStyle": "italic",
+                  }
+                }
+              >
+                The
+              </Text>
+              ...
+            </Text>
+          </Text>
+          <Text
+            accessibilityLabel="datePublication"
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 15,
+                },
+                Object {},
+              ]
+            }
+            testID="datePublication"
+          >
+            Monday March 23 2015
+            , The Times
+          </Text>
+>>>>>>> a640f540... test: update snapshots and lint
         </View>
       </View>
     </View>
