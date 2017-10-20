@@ -1,5 +1,4 @@
-/* globals withComponent test expect element by waitFor beforeEach */
-import { View } from "react-native";
+/* globals withComponent test beforeEach driver */
 import React from "react";
 import BrightcovePlayer from "./brightcove-player";
 import VideoWithExternalControls from "./fixtures/video-with-external-controls";
@@ -23,7 +22,10 @@ withComponent(
     });
 
     test("renders", async () => {
-      await d.waitForElementByXPath('//*[@content-desc="Play" and @clickable="true"]', 10000);
+      await driver.waitForElementByXPath(
+        '//*[@content-desc="Play" and @clickable="true"]',
+        10000
+      );
     });
   }
 );
@@ -44,11 +46,12 @@ withComponent(
     test(
       "video plays when external play button is pressed",
       async () => {
-        await d.waitForElementByXPath('//*[@text="play"]', 2000);
-        const e = await d.elementByXPath('//*[@text="play"]')
-        await d.tapElement(e);
-        await d.waitForElementByXPath('//*[@text="0:08"]', 10000)
-      }, 150000
+        await driver.waitForElementByXPath('//*[@text="play"]', 2000);
+        const e = await driver.elementByXPath('//*[@text="play"]');
+        await driver.tapElement(e);
+        await driver.waitForElementByXPath('//*[@text="0:08"]', 10000);
+      },
+      150000
     );
   }
 );

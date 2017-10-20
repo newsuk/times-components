@@ -24,6 +24,7 @@ exports[`renders 1`] = `
     }
   >
     <Text
+      accessibility-label="author-name"
       accessibilityRole="heading"
       accessible={true}
       allowFontScaling={true}
@@ -104,6 +105,7 @@ exports[`renders with data 1`] = `
     }
   >
     <Text
+      accessibility-label="author-name"
       accessibilityRole="heading"
       accessible={true}
       allowFontScaling={true}
@@ -279,6 +281,7 @@ exports[`renders without profile picture 1`] = `
     }
   >
     <Text
+      accessibility-label="author-name"
       accessibilityRole="heading"
       accessible={true}
       allowFontScaling={true}

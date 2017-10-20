@@ -2,6 +2,7 @@
 
 exports[`Date Publication test renders a DatePublication component with content 1`] = `
 <Text
+  accessibilityLabel="datePublication"
   accessible={true}
   allowFontScaling={true}
   disabled={false}
@@ -26,6 +27,7 @@ exports[`Date Publication test renders a DatePublication component with content 
 
 exports[`Date Publication test renders a DatePublication component with red font color 1`] = `
 <Text
+  accessibilityLabel="datePublication"
   accessible={true}
   allowFontScaling={true}
   disabled={false}

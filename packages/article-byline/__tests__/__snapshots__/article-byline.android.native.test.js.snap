@@ -12,6 +12,7 @@ exports[`renders correctly with a single author 1`] = `
   }
 >
   <Text
+    accessibilityLabel="articleByline"
     accessible={true}
     allowFontScaling={true}
     disabled={false}
@@ -69,6 +70,7 @@ exports[`renders correctly with a single inline element 1`] = `
   }
 >
   <Text
+    accessibilityLabel="articleByline"
     accessible={true}
     allowFontScaling={true}
     disabled={false}
@@ -112,6 +114,7 @@ exports[`renders correctly with an empty AST (empty byline on DB) 1`] = `
   }
 >
   <Text
+    accessibilityLabel="articleByline"
     accessible={true}
     allowFontScaling={true}
     disabled={false}
@@ -146,6 +149,7 @@ exports[`renders correctly with multiple authors separated by spaces 1`] = `
   }
 >
   <Text
+    accessibilityLabel="articleByline"
     accessible={true}
     allowFontScaling={true}
     disabled={false}
@@ -263,6 +267,7 @@ exports[`renders correctly with multiple authors separated by text with commas 1
   }
 >
   <Text
+    accessibilityLabel="articleByline"
     accessible={true}
     allowFontScaling={true}
     disabled={false}
@@ -380,6 +385,7 @@ exports[`renders correctly with styles 1`] = `
   }
 >
   <Text
+    accessibilityLabel="articleByline"
     accessible={true}
     allowFontScaling={true}
     disabled={false}
@@ -442,6 +448,7 @@ exports[`renders correctly with the author at the end 1`] = `
   }
 >
   <Text
+    accessibilityLabel="articleByline"
     accessible={true}
     allowFontScaling={true}
     disabled={false}
@@ -507,6 +514,7 @@ exports[`renders correctly with the author in the begining 1`] = `
   }
 >
   <Text
+    accessibilityLabel="articleByline"
     accessible={true}
     allowFontScaling={true}
     disabled={false}

@@ -1,4 +1,4 @@
-/* globals withComponent test expect element by beforeEach */
+/* globals withComponent test driver */
 import { StyleSheet, View } from "react-native";
 import React from "react";
 import AuthorProfile from "./author-profile";
@@ -37,15 +37,19 @@ withComponent(
   story(<AuthorProfile {...props} />),
   "author profile",
   async fructose => {
-
     test(
       "renders and swipes",
       async () => {
         await fructose.loadComponent();
-        await d.waitForElementByXPath('//*[@text="Fiona Hamilton"]', 10000)
-        await d.flick(0, -5000);
-        await d.flick(0, -5000);
-        await d.waitForElementByXPath(`//*[@text="${example.author.articles.list[1].title}"]`);
+        await driver.waitForElementByXPath(
+          '//*[@text="Fiona Hamilton"]',
+          10000
+        );
+        await driver.flick(0, -5000);
+        await driver.flick(0, -5000);
+        await driver.waitForElementByXPath(
+          `//*[@text="${example.author.articles.list[1].title}"]`
+        );
       },
       10000
     );

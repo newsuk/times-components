@@ -41,7 +41,11 @@ const ArticleFlag = ({ title, color }) => (
     <View style={styles.diamond}>
       <Diamond height={7} width={7} color={color} />
     </View>
-    <Text accessibilityLabel={`flag-${title}`} testID={`flag-${title}`} style={[styles.title, { color }]}>
+    <Text
+      accessibilityLabel={`flag-${title}`}
+      testID={`flag-${title}`}
+      style={[styles.title, { color }]}
+    >
       {beautifyTitle(title)}
     </Text>
   </View>

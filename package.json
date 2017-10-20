@@ -33,7 +33,7 @@
     "android": "react-native run-android",
     "android:device": "./lib/setup_device_connections.sh && npm run android",
     "prettier:diff": "prettier --list-different 'packages/**/*.+(js|json)'",
-    "fmt": "prettier --write '+(packages|storybook|.storybook.native|lib)/**/*.+(js|json)'",
+    "fmt": "prettier --write '+(packages|storybook|.storybook.native|lib|.fructose)/**/*.+(js|json)'",
     "packages:publish": "lerna publish --conventional-commits --yes --concurrency=1 --exact",
     "packages:publish-dry-run": "npm run packages:publish -- --skip-git --skip-npm",
     "update-deps": "lerna bootstrap --hoist --npm-client=yarn --concurrency=1",

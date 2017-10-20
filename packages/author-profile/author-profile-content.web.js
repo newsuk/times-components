@@ -81,7 +81,11 @@ const AuthorProfileContent = ({
                 key > 0 ? <AuthorProfileItemSeparator /> : null;
 
               return (
-                <View key={id}  accessibilityLabel={`articleList-${key}`} testID={`articleList-${key}`}>
+                <View
+                  key={id}
+                  accessibilityLabel={`articleList-${key}`}
+                  testID={`articleList-${key}`}
+                >
                   {separatorComponent}
                   <AuthorProfileItem
                     {...article}

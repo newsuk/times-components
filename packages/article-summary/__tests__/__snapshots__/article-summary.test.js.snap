@@ -56,6 +56,7 @@ exports[`renders an article-summary component 1`] = `
     }
   />
   <Text
+    accessibilityLabel="datePublication"
     accessible={true}
     allowFontScaling={true}
     disabled={false}
@@ -182,6 +183,7 @@ exports[`renders an article-summary component with content 1`] = `
     </Text>
   </Text>
   <Text
+    accessibilityLabel="datePublication"
     accessible={true}
     allowFontScaling={true}
     disabled={false}

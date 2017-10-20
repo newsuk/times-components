@@ -144,6 +144,7 @@ exports[`renders profile content 1`] = `
       </View>
     </View>
   }
+  accessibilityLabel="scroll-view"
   data={Array []}
   disableVirtualization={false}
   getItem={[Function]}
@@ -200,6 +201,7 @@ exports[`renders profile content 1`] = `
             }
           >
             <Text
+              accessibility-label="author-name"
               accessibilityRole="heading"
               accessible={true}
               allowFontScaling={true}
@@ -567,6 +569,7 @@ exports[`renders profile content component 1`] = `
       </View>
     </View>
   }
+  accessibilityLabel="scroll-view"
   data={
     Array [
       Object {
@@ -693,6 +696,7 @@ exports[`renders profile content component 1`] = `
             }
           >
             <Text
+              accessibility-label="author-name"
               accessibilityRole="heading"
               accessible={true}
               allowFontScaling={true}
@@ -1080,6 +1084,7 @@ exports[`renders profile content component 1`] = `
                   </Text>
                 </Text>
                 <Text
+                  accessibilityLabel="datePublication"
                   accessible={true}
                   allowFontScaling={true}
                   disabled={false}
@@ -1228,6 +1233,7 @@ exports[`renders profile content component 1`] = `
                   }
                 />
                 <Text
+                  accessibilityLabel="datePublication"
                   accessible={true}
                   allowFontScaling={true}
                   disabled={false}
@@ -1376,6 +1382,7 @@ exports[`renders profile content component 1`] = `
                   }
                 />
                 <Text
+                  accessibilityLabel="datePublication"
                   accessible={true}
                   allowFontScaling={true}
                   disabled={false}
@@ -1700,6 +1707,7 @@ exports[`renders profile content item component 1`] = `
             </Text>
           </Text>
           <Text
+            accessibilityLabel="datePublication"
             accessible={true}
             allowFontScaling={true}
             disabled={false}
@@ -1887,6 +1895,7 @@ exports[`renders profile content item component with no image  1`] = `
             </Text>
           </Text>
           <Text
+            accessibilityLabel="datePublication"
             accessible={true}
             allowFontScaling={true}
             disabled={false}
