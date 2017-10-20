@@ -1,49 +1,101 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import PropTypes from "prop-types";
-import AuthorProfileHeader from "./author-profile-header";
-import AuthorProfileFooter from "./author-profile-footer";
+import Pagination from "@times-components/pagination";
+import AuthorHead from "@times-components/author-head";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
+import propTypes from "./author-profile-content-prop-types";
 
 const styles = StyleSheet.create({
   container: {
-    width: "100%",
-    maxWidth: 820,
-    alignSelf: "center"
+    alignItems: "stretch",
+    flexDirection: "row",
+    justifyContent: "center"
+  },
+  contentContainer: {
+    maxWidth: 800,
+    alignSelf: "center",
+    width: "100%"
+  },
+  spacing: {
+    flex: 1
   }
 });
 
-const AuthorProfile = props => (
-  <View>
-    <AuthorProfileHeader {...props} />
-    {props.articles.list.map((article, key) => {
-      const { id, url } = article;
-      const separatorComponent =
-        key > 0 ? <AuthorProfileItemSeparator /> : null;
+const itemStyles = StyleSheet.create({
+  container: {
+    width: "100%",
+    paddingTop: 10,
+    paddingBottom: 10
+  }
+});
 
-      return (
-        <View testID={`articleList-${key}`} key={id} style={styles.container}>
-          {separatorComponent}
-          <AuthorProfileItem
-            {...article}
-            onPress={e => props.onArticlePress(e, { id, url })}
-          />
+const AuthorProfileContent = ({
+  name,
+  biography,
+  uri,
+  jobTitle,
+  twitter,
+  onTwitterLinkPress,
+  count,
+  onNext,
+  onPrev,
+  page,
+  pageSize,
+  articles,
+  onArticlePress
+}) => {
+  const paginationComponent = (hideResults = false) => (
+    <View style={styles.container}>
+      <View style={styles.spacing}>
+        <Pagination
+          count={count}
+          hideResults={hideResults}
+          generatePageLink={pageNum => `?page=${pageNum}`}
+          onNext={onNext}
+          onPrev={onPrev}
+          page={page}
+          pageSize={pageSize}
+        />
+      </View>
+    </View>
+  );
+
+  return (
+    <View>
+      <AuthorHead
+        name={name}
+        bio={biography}
+        uri={uri}
+        title={jobTitle}
+        twitter={twitter}
+        onTwitterLinkPress={onTwitterLinkPress}
+      />
+      <View style={styles.contentContainer}>
+        {paginationComponent()}
+        <View style={itemStyles.container}>
+          {articles &&
+            articles.map((article, key) => {
+              const { id, url } = article;
+              const separatorComponent =
+                key > 0 ? <AuthorProfileItemSeparator /> : null;
+
+              return (
+                <View key={id} testID={`articleList-${key}`}>
+                  {separatorComponent}
+                  <AuthorProfileItem
+                    {...article}
+                    onPress={e => onArticlePress(e, { id, url })}
+                  />
+                </View>
+              );
+            })}
         </View>
-      );
-    })}
-    <AuthorProfileFooter {...props} />
-  </View>
-);
+        {paginationComponent(true)}
+      </View>
+    </View>
+  );
+};
 
-AuthorProfile.propTypes = Object.assign(
-  { onArticlePress: PropTypes.func.isRequired },
-  {
-    articles: PropTypes.shape({
-      list: PropTypes.arrayOf(PropTypes.shape(AuthorProfileItem.propTypes))
-    })
-  },
-  AuthorProfileHeader.propTypes
-);
-
-export default AuthorProfile;
+AuthorProfileContent.propTypes = propTypes;
+export default AuthorProfileContent;

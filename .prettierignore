@@ -4,3 +4,4 @@ dist
 **/package.json
 **/android/*
 **/ios/*
+.storybook.native/story-loader.js

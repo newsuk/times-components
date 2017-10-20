@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.1"></a>
+## [1.6.1](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.6.0...@times-components/brightcove-video@1.6.1) (2017-10-20)
+
+
+### Bug Fixes
+
+* react-native link ([d281e84](https://github.com/newsuk/times-components/commit/d281e84))
+
+
+
+
 <a name="1.6.0"></a>
 # [1.6.0](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.5.5...@times-components/brightcove-video@1.6.0) (2017-10-19)
 

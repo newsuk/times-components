@@ -1,7 +1,7 @@
 /* globals withComponent test expect element by beforeEach */
 import { StyleSheet, View } from "react-native";
 import React from "react";
-import AuthorProfile from "./author-profile";
+import AuthorProfileContent from "./author-profile-content";
 import authorProfileGenerator from "./fixture-generator";
 
 const styles = StyleSheet.create({
@@ -24,17 +24,18 @@ const story = m => (
 );
 
 const example = authorProfileGenerator(2);
-
-const props = Object.assign({}, example, {
-  isLoading: false,
+const props = {
+  ...example.author,
   page: 1,
   pageSize: 10,
+  count: example.author.articles.count,
+  articles: example.author.articles.list,
   onTwitterLinkPress: () => {},
   onArticlePress: () => {}
-});
+};
 
 withComponent(
-  story(<AuthorProfile {...props} />),
+  story(<AuthorProfileContent {...props} />),
   "author profile",
   async fructose => {
     beforeEach(async () => {
