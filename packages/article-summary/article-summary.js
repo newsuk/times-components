@@ -37,18 +37,18 @@ const styles = {
 };
 
 const format = {
-  content: (arr) =>  {
+  content(arr) {
     return arr.map(item => {
       let name = item.name;
       if (!item.children.find(child => child.name === "break"))
         name = "sentence";
       return Object.assign({}, item, { name });
-    })
+    });
   },
-  teaser: (item) => {
-    return Object.assign({}, item, { name: "teaser" })
+  teaser(item) {
+    return Object.assign({}, item, { name: "teaser" });
   }
-}
+};
 
 const summarise = text => {
   let summary = [];
@@ -56,7 +56,7 @@ const summarise = text => {
     const initial = text.slice(0, text.length - 1);
     const tail = text[text.length - 1];
 
-    const content = format.content(initial)
+    const content = format.content(initial);
     const teaser = format.teaser(tail);
 
     summary = [...content, teaser];
