@@ -41,8 +41,8 @@ class AdComposer extends Component {
 }
 
 AdComposer.propTypes = {
-  networkId: PropTypes.string.isRequired,
-  adUnit: PropTypes.string.isRequired,
+  networkId: PropTypes.string,
+  adUnit: PropTypes.string,
   section: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.element,

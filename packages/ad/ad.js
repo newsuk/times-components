@@ -1,10 +1,18 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { View, WebView, Dimensions, Linking, StyleSheet } from "react-native";
+import {
+  View,
+  ViewPropTypes,
+  WebView,
+  Dimensions,
+  Linking,
+  StyleSheet
+} from "react-native";
 import { getSlotConfig } from "./generate-config";
 import { pbjs as pbjsConfig } from "./config";
-
 import Placeholder from "./placeholder";
+
+const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 const styles = StyleSheet.create({
   children: {
@@ -215,7 +223,7 @@ Ad.propTypes = {
   code: PropTypes.string.isRequired,
   section: PropTypes.string.isRequired,
   baseUrl: PropTypes.string,
-  style: View.propTypes.style
+  style: ViewPropTypesStyle
 };
 
 Ad.defaultProps = {
