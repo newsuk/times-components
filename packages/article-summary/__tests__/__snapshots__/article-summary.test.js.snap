@@ -192,6 +192,7 @@ exports[`renders an article-summary component with content including line breaks
 
       </Text>
       ★★★★☆
+       
     </Text>
     <Text
       accessible={true}
@@ -232,6 +233,7 @@ exports[`renders an article-summary component with content including line breaks
 
       </Text>
       ★★★☆☆
+       
     </Text>
     <Text
       accessible={true}

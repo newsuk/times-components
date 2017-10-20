@@ -4,6 +4,13 @@ import "react-native";
 import renderer from "react-test-renderer";
 import ArticleSummaryRenderer from "../article-summary-renderer";
 
+it("renders a paragraph ending with a space with no new line", () => {
+  const output = renderer
+    .create(ArticleSummaryRenderer.paragraph("some-key", {}, "Content"))
+    .toJSON();
+  expect(output).toMatchSnapshot();
+});
+
 it("renders a sentence ending with a full stop and a space with no new line", () => {
   const output = renderer
     .create(ArticleSummaryRenderer.sentence("some-key", {}, "Content"))
