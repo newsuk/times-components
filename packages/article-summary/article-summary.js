@@ -36,17 +36,30 @@ const styles = {
   }
 };
 
+const format = {
+  content: (arr) =>  {
+    return arr.map(item => {
+      let name = item.name;
+      if (!item.children.find(child => child.name === "break"))
+        name = "sentence";
+      return Object.assign({}, item, { name });
+    })
+  },
+  teaser: (item) => {
+    return Object.assign({}, item, { name: "teaser" })
+  }
+}
+
 const summarise = text => {
   let summary = [];
-  if(text.length) {
-    const content = text.slice(0, text.length - 1);
-    const teaser = text[text.length - 1];
-    if(teaser) teaser.name = "teaser";
-    content.map(item => {
-      if (!item.children.find(child => child.name == "break"))
-        item.name = "sentence";
-    });
-    summary = [...content, teaser]
+  if (text.length) {
+    const initial = text.slice(0, text.length - 1);
+    const tail = text[text.length - 1];
+
+    const content = format.content(initial)
+    const teaser = format.teaser(tail);
+
+    summary = [...content, teaser];
   }
   return summary;
 };
