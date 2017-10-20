@@ -166,11 +166,16 @@ export default AuthorProfileContent => {
   });
 
   it("renders profile loading", () => {
-    const p = Object.assign({}, props, {
-      slug: "fiona-hamilton",
-      author: null,
-      isLoading: true
-    });
+    const p = {
+      ...props,
+      ...authorProfileFixture.data.author,
+      articles: Array(3)
+        .fill()
+        .map((_, id) => ({
+          id,
+          loading: true
+        }))
+    };
 
     const component = renderer.create(<AuthorProfile {...p} />);
     expect(component).toMatchSnapshot();
