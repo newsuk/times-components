@@ -1,4 +1,4 @@
-/* globals withComponent test expect element by waitFor beforeEach */
+/* globals withComponent test expect element by waitFor beforeEach device */
 import { View } from "react-native";
 import React from "react";
 import BrightcovePlayer from "./brightcove-player";
@@ -19,6 +19,7 @@ withComponent(
   "brightcove video",
   async fructose => {
     beforeEach(async () => {
+      await device.reloadReactNative();
       await fructose.loadComponent();
     });
 
@@ -69,6 +70,7 @@ withComponent(
     const player2 = id => element(by.id("player1").withDescendant(by.id(id)));
 
     beforeEach(async () => {
+      await device.launchApp({ newInstance: true });
       await fructose.loadComponent();
     });
 
@@ -100,6 +102,7 @@ withComponent(
   "video with external controls",
   async fructose => {
     beforeEach(async () => {
+      await device.launchApp({ newInstance: true });
       await fructose.loadComponent();
     });
 
