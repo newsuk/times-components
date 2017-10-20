@@ -1,35 +1,140 @@
 /* eslint-env jest */
 
 import "jsdom";
-import "react-native";
 import React from "react";
 import Enzyme, { shallow } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
 import renderer from "react-test-renderer";
+import { ApolloClient, IntrospectionFragmentMatcher } from "react-apollo";
+import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { addTypenameToDocument } from "apollo-client";
+import { query as authorProfileQuery } from "@times-components/provider/author-profile-provider";
+import { query as articleListQuery } from "@times-components/provider/article-list-provider";
 import AuthorProfile from "../author-profile";
-import AuthorProfileHeader from "../author-profile-header";
+import AuthorProfileItem from "../author-profile-item";
 import AuthorProfileItemSeparator from "../author-profile-item-separator";
-import example from "../example.json";
+import authorProfileFixture from "../fixtures/author-profile.json";
+import articleListFixture from "../fixtures/article-list.json";
 
 Enzyme.configure({ adapter: new React16Adapter() });
 
-example.data.author.articles.list = example.data.author.articles.list.map(
-  el => ({
-    ...el,
-    publishedTime: new Date(el.publishedTime)
-  })
-);
-
 const props = {
-  author: Object.assign({}, example.data.author, {
-    count: example.data.author.articles.count,
-    page: 1,
-    pageSize: 10
-  }),
-  isLoading: false,
+  slug: "fiona-hamilton",
   onTwitterLinkPress: () => {},
   onArticlePress: () => {}
 };
+
+const pagedResult = (skip, first) => ({
+  data: {
+    author: {
+      ...articleListFixture.data.author,
+      articles: {
+        ...articleListFixture.data.author.articles,
+        list: articleListFixture.data.author.articles.list
+          .map(el => ({
+            ...el,
+            publishedTime: new Date(el.publishedTime)
+          }))
+          .slice(skip, skip + first)
+      }
+    }
+  }
+});
+
+const mocks = [
+  {
+    request: {
+      query: addTypenameToDocument(authorProfileQuery),
+      variables: {
+        slug: "fiona-hamilton"
+      }
+    },
+    result: authorProfileFixture
+  },
+  {
+    request: {
+      query: addTypenameToDocument(articleListQuery),
+      variables: {
+        slug: "fiona-hamilton",
+        first: 3,
+        skip: 0,
+        imageRatio: "3:2"
+      }
+    },
+    result: pagedResult(0, 3)
+  },
+  {
+    request: {
+      query: addTypenameToDocument(articleListQuery),
+      variables: {
+        slug: "fiona-hamilton",
+        first: 3,
+        skip: 3,
+        imageRatio: "3:2"
+      }
+    },
+    result: pagedResult(3, 3)
+  },
+  {
+    request: {
+      query: addTypenameToDocument(articleListQuery),
+      variables: {
+        slug: "fiona-hamilton",
+        first: 3,
+        skip: 6,
+        imageRatio: "3:2"
+      }
+    },
+    result: pagedResult(6, 3)
+  },
+  {
+    request: {
+      query: addTypenameToDocument(articleListQuery),
+      variables: {
+        slug: "fiona-hamilton",
+        first: 3,
+        skip: 9,
+        imageRatio: "3:2"
+      }
+    },
+    result: pagedResult(9, 3)
+  }
+];
+
+const fragmentMatcher = new IntrospectionFragmentMatcher({
+  introspectionQueryResultData: {
+    __schema: {
+      types: [
+        {
+          kind: "UNION",
+          name: "Media",
+          possibleTypes: [
+            {
+              name: "Image"
+            },
+            {
+              name: "Video"
+            }
+          ]
+        }
+      ]
+    }
+  }
+});
+
+const networkInterface = mockNetworkInterface(...mocks);
+
+const client = new ApolloClient({
+  networkInterface,
+  fragmentMatcher
+});
+
+const withMockProvider = child => (
+  <MockedProvider mocks={mocks} client={client}>
+    {child}
+  </MockedProvider>
+);
 
 export default AuthorProfileContent => {
   it("renders profile", () => {
@@ -39,23 +144,38 @@ export default AuthorProfileContent => {
   });
 
   it("renders profile content", () => {
-    const component = renderer.create(<AuthorProfile {...props} />);
+    const component = renderer.create(
+      withMockProvider(
+        <AuthorProfile
+          {...props}
+          author={authorProfileFixture.data.author}
+          isLoading={false}
+          slug={"fiona-hamilton"}
+          page={1}
+          pageSize={10}
+          onTwitterLinkPress={() => {}}
+          onArticlePress={() => {}}
+        />
+      )
+    );
 
     expect(component).toMatchSnapshot();
   });
 
   it("renders profile loading", () => {
     const p = Object.assign({}, props, {
+      slug: "fiona-hamilton",
       author: null,
       isLoading: true
     });
-    const component = renderer.create(<AuthorProfile {...p} />);
 
+    const component = renderer.create(<AuthorProfile {...p} />);
     expect(component).toMatchSnapshot();
   });
 
   it("renders profile empty", () => {
     const p = Object.assign({}, props, {
+      slug: "fiona-hamilton",
       author: null,
       isLoading: false
     });
@@ -67,6 +187,7 @@ export default AuthorProfileContent => {
 
   it("renders profile error", () => {
     const p = Object.assign({}, props, {
+      slug: "fiona-hamilton",
       author: null,
       error: {
         error: "error"
@@ -78,18 +199,6 @@ export default AuthorProfileContent => {
     expect(component).toMatchSnapshot();
   });
 
-  it("renders profile header", () => {
-    const component = renderer.create(
-      <AuthorProfileHeader
-        onTwitterLinkPress={() => {}}
-        onArticlePress={() => {}}
-        {...props.author}
-      />
-    );
-
-    expect(component).toMatchSnapshot();
-  });
-
   it("renders profile separator", () => {
     const component = renderer.create(<AuthorProfileItemSeparator />);
 
@@ -97,12 +206,36 @@ export default AuthorProfileContent => {
   });
 
   it("renders profile content component", () => {
+    const results = pagedResult(0, 3);
     const component = renderer.create(
       <AuthorProfileContent
+        count={10}
+        articles={results.data.author.articles.list}
+        author={authorProfileFixture.data.author}
+        slug={"fiona-hamilton"}
+        page={1}
+        pageSize={3}
         onTwitterLinkPress={() => {}}
         onArticlePress={() => {}}
-        {...props.author}
       />
+    );
+
+    expect(component).toMatchSnapshot();
+  });
+
+  it("renders profile content item component", () => {
+    const item = pagedResult(0, 1).data.author.articles.list[0];
+    const component = renderer.create(
+      <AuthorProfileItem {...item} onPress={() => {}} />
+    );
+
+    expect(component).toMatchSnapshot();
+  });
+
+  it("renders profile content item component with no image ", () => {
+    const item = pagedResult(0, 1).data.author.articles.list[0];
+    const component = renderer.create(
+      <AuthorProfileItem {...item} imageUri={null} onPress={() => {}} />
     );
 
     expect(component).toMatchSnapshot();
