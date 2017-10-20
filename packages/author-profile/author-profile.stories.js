@@ -11,6 +11,7 @@ import { addTypenameToDocument } from "apollo-client";
 import { query as authorProfileQuery } from "@times-components/provider/author-profile-provider";
 import { query as articleListQuery } from "@times-components/provider/article-list-provider";
 import AuthorProfile from "./author-profile";
+import AuthorProfileContent from "./author-profile-content";
 import authorProfileFixture from "./fixtures/author-profile.json";
 import articleListFixture from "./fixtures/article-list.json";
 
@@ -36,8 +37,10 @@ const articlesList = (skip, first) => ({
   }
 });
 
+const delay = 1000;
 const mocks = [
   {
+    delay,
     request: {
       query: addTypenameToDocument(authorProfileQuery),
       variables: {
@@ -47,6 +50,7 @@ const mocks = [
     result: authorProfileFixture
   },
   {
+    delay,
     request: {
       query: addTypenameToDocument(articleListQuery),
       variables: {
@@ -59,6 +63,7 @@ const mocks = [
     result: articlesList(0, 3)
   },
   {
+    delay,
     request: {
       query: addTypenameToDocument(articleListQuery),
       variables: {
@@ -71,6 +76,7 @@ const mocks = [
     result: articlesList(3, 3)
   },
   {
+    delay,
     request: {
       query: addTypenameToDocument(articleListQuery),
       variables: {
@@ -83,6 +89,7 @@ const mocks = [
     result: articlesList(6, 3)
   },
   {
+    delay,
     request: {
       query: addTypenameToDocument(articleListQuery),
       variables: {
@@ -147,15 +154,15 @@ storiesOf("AuthorProfile", module)
   })
   .add("Loading", () => {
     const props = {
-      articleImageRatio: "3:2",
-      slug: "fiona-hamilton",
-      isLoading: true,
+      loading: true,
+      articlesLoading: true,
+      pageSize: 3,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
       onArticlePress: preventDefaultedAction("onArticlePress"),
       analyticsStream: () => {}
     };
 
-    return withMockProvider(<AuthorProfile {...props} />);
+    return <AuthorProfileContent {...props} />;
   })
   .add("Empty State", () => {
     const emptyMocks = [

@@ -109,7 +109,10 @@ class Pagination extends React.Component {
 
     const startResult = (page - 1) * pageSize + 1;
     const finalResult = Math.min(count, page * pageSize);
-    const message = `Showing ${startResult} - ${finalResult} of ${count} results`;
+    const message =
+      count > 0
+        ? `Showing ${startResult} - ${finalResult} of ${count} results`
+        : "";
     const previousLabel = this.state.absolutePosition
       ? "Previous Page"
       : "Previous";

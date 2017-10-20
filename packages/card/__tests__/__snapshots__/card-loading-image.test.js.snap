@@ -11,7 +11,7 @@ exports[`renders loading image when width set 1`] = `
       Array [
         undefined,
         Object {
-          "height": NaN,
+          "height": 300,
           "width": 300,
         },
       ]

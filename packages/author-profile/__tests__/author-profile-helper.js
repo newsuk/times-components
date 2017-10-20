@@ -177,7 +177,7 @@ export default AuthorProfileContent => {
         }))
     };
 
-    const component = renderer.create(<AuthorProfile {...p} />);
+    const component = renderer.create(<AuthorProfileContent {...p} />);
     expect(component).toMatchSnapshot();
   });
 
@@ -188,7 +188,7 @@ export default AuthorProfileContent => {
       isLoading: false
     });
 
-    const component = renderer.create(<AuthorProfile {...p} />);
+    const component = renderer.create(<AuthorProfileContent {...p} />);
 
     expect(component).toMatchSnapshot();
   });

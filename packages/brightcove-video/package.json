@@ -13,8 +13,12 @@
     "preset": "react-native",
     "rootDir": "../../",
     "testEnvironment": "jsdom",
-    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-    "testMatch": ["<rootDir>/packages/brightcove-video/__tests__/*"]
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/brightcove-video/__tests__/*"
+    ]
   },
   "repository": {
     "type": "git",

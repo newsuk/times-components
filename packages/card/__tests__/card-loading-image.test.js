@@ -9,7 +9,7 @@ import CardLoadingImage from "../card-loading-image";
 Enzyme.configure({ adapter: new React16Adapter() });
 
 it("renders loading image when width set", () => {
-  const wrapper = shallow(<CardLoadingImage />);
+  const wrapper = shallow(<CardLoadingImage ratio={1} />);
   wrapper.setState({
     width: 300
   });
@@ -19,7 +19,7 @@ it("renders loading image when width set", () => {
 });
 
 it("renders component and handles layout width", done => {
-  const comp = new CardLoadingImage();
+  const comp = new CardLoadingImage({ ratio: 1 });
 
   comp.setState = ({ width }) => {
     expect(width).toEqual(320);
