@@ -88,11 +88,7 @@
     "@storybook/addon-actions": "3.2.11",
     "@storybook/react": "3.2.11",
     "@storybook/react-native": "3.2.11",
-<<<<<<< HEAD
-    "@times-components/fructose": "3.0.0",
-=======
-    "@times-components/fructose": "2.2.16",
->>>>>>> adding android fructose tests
+    "@times-components/fructose": "3.1.1",
     "chromeless": "1.3.0",
     "coveralls": "2.13.1",
     "detox": "5.8.2",

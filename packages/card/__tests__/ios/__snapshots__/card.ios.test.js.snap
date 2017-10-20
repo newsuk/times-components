@@ -889,11 +889,23 @@ exports[`Card test on ios renders vertical by default 1`] = `
         >
           OK, so Putin’s not a lady, but he does have the wildest man‑PMT
         </Text>
+<<<<<<< HEAD
         <Text
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
           style={
+=======
+      </Text>
+      <Text
+        accessibilityLabel="datePublication"
+        accessible={true}
+        allowFontScaling={true}
+        disabled={false}
+        ellipsizeMode="tail"
+        style={
+          Array [
+>>>>>>> a640f540... test: update snapshots and lint
             Object {
               "color": "#696969",
               "flexWrap": "wrap",
@@ -1008,11 +1020,23 @@ exports[`Card test on ios renders without image 1`] = `
         >
           OK, so Putin’s not a lady, but he does have the wildest man‑PMT
         </Text>
+<<<<<<< HEAD
         <Text
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
           style={
+=======
+      </Text>
+      <Text
+        accessibilityLabel="datePublication"
+        accessible={true}
+        allowFontScaling={true}
+        disabled={false}
+        ellipsizeMode="tail"
+        style={
+          Array [
+>>>>>>> a640f540... test: update snapshots and lint
             Object {
               "color": "#696969",
               "flexWrap": "wrap",
@@ -1127,11 +1151,23 @@ exports[`Card test on ios renders without image url 1`] = `
         >
           OK, so Putin’s not a lady, but he does have the wildest man‑PMT
         </Text>
+<<<<<<< HEAD
         <Text
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
           style={
+=======
+      </Text>
+      <Text
+        accessibilityLabel="datePublication"
+        accessible={true}
+        allowFontScaling={true}
+        disabled={false}
+        ellipsizeMode="tail"
+        style={
+          Array [
+>>>>>>> a640f540... test: update snapshots and lint
             Object {
               "color": "#696969",
               "flexWrap": "wrap",

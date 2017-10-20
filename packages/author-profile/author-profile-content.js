@@ -61,7 +61,6 @@ class AuthorProfileContent extends React.Component {
       />
     );
 
-<<<<<<< HEAD
     const data = articlesLoading
       ? Array(pageSize)
           .fill()
@@ -74,6 +73,7 @@ class AuthorProfileContent extends React.Component {
     return (
       <FlatList
         testID="scroll-view"
+        accessibilityLabel="scroll-view"
         data={data}
         keyExtractor={item => item.id}
         renderItem={({ item, index }) => (
@@ -82,34 +82,6 @@ class AuthorProfileContent extends React.Component {
             style={styles.padding}
             testID={`articleList-${index}`}
             onPress={e => onArticlePress(e, { id: item.id, url: item.url })}
-=======
-  return (
-    <FlatList
-      testID="scroll-view"
-      accessibilityLabel="scroll-view"
-      data={articles}
-      keyExtractor={item => item.id}
-      renderItem={({ item, index }) => (
-        <AuthorProfileItem
-          {...item}
-          testID={`articleList-${index}`}
-          style={styles.itemContainer}
-          onPress={e => onArticlePress(e, { id: item.id, url: item.url })}
-        />
-      )}
-      initialListSize={pageSize}
-      scrollRenderAheadDistance={2}
-      pageSize={pageSize}
-      ListHeaderComponent={
-        <View>
-          <AuthorHead
-            name={name}
-            bio={biography}
-            uri={uri}
-            title={jobTitle}
-            twitter={twitter}
-            onTwitterLinkPress={onTwitterLinkPress}
->>>>>>> 5fa63ed9... test: add accessibility labels for android tests :/
           />
         )}
         initialListSize={pageSize}
