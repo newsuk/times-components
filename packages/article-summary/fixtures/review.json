@@ -22,10 +22,20 @@
           ]
         },
         {
+          "name": "break",
+          "attributes": {},
+          "children": []
+        },
+        {
           "name": "text",
           "attributes": {
             "value": " ITV"
           },
+          "children": []
+        },
+        {
+          "name": "break",
+          "attributes": {},
           "children": []
         },
         {
@@ -55,10 +65,20 @@
           ]
         },
         {
+          "name": "break",
+          "attributes": {},
+          "children": []
+        },
+        {
           "name": "text",
           "attributes": {
             "value": " BBC Two"
           },
+          "children": []
+        },
+        {
+          "name": "break",
+          "attributes": {},
           "children": []
         },
         {

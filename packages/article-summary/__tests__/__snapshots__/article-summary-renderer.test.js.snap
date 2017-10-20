@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders a paragraph ending with a full stop and a space with no new line 1`] = `
+exports[`renders a sentence ending with a full stop and a space with no new line 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}

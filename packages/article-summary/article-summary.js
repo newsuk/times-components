@@ -40,14 +40,16 @@ const summarise = text => {
   const content = text.slice(0, text.length - 1);
   const teaser = text[text.length - 1];
   teaser.name = "teaser";
+  content.map(item => {
+    if (!item.children.find(child => child.name == "break"))
+      item.name = "sentence";
+  });
   return [...content, teaser];
 };
 
 const ArticleSummary = props => {
   const { label, headline, text, date, publication } = props;
-
   const summary = summarise(text);
-
   const labelText = label && label.toUpperCase && label.toUpperCase();
   return (
     <View style={styles.container}>

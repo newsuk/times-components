@@ -4,10 +4,17 @@ import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 import ArticleSummary from "../article-summary";
-import props from "../fixtures/article.json";
+import articleFixture from "../fixtures/article.json";
+import reviewFixture from "../fixtures/review";
 
 it("renders an article-summary component with content", () => {
-  props.date = new Date("2017-07-01T14:32:00.000Z");
-  const tree = renderer.create(<ArticleSummary {...props} />).toJSON();
+  articleFixture.date = new Date("2017-07-01T14:32:00.000Z");
+  const tree = renderer.create(<ArticleSummary {...articleFixture} />).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders an article-summary component with content including line breaks", () => {
+  reviewFixture.date = new Date("2017-07-01T14:32:00.000Z");
+  const tree = renderer.create(<ArticleSummary {...reviewFixture} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
