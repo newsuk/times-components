@@ -22,6 +22,7 @@ const AuthorProfileItem = item => {
   );
 
   return (
+    // eslint-disable-next-line jsx-a11y/anchor-is-valid
     <Link url={url} onPress={onPress}>
       <View style={style}>
         <Card
