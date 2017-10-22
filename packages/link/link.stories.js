@@ -1,12 +1,10 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-
 import { View } from "react-native";
 import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { action } from "@storybook/addon-actions";
-import Link, { TextLink } from "./link";
+import LinkXP, { TextLink } from "./link";
 import CenteredDecorator from "../../storybook/decorators/centered";
 
 const BigPinkSquare = props => (
@@ -19,12 +17,12 @@ const BigPinkSquare = props => (
 storiesOf("Link", module)
   .addDecorator(CenteredDecorator)
   .add("Link with big content", () => (
-    <Link url="https://thetimes.co.uk" onPress={action("onPress")}>
+    <LinkXP url="https://thetimes.co.uk" onPress={action("onPress")}>
       <View style={{ width: 100, height: 100, backgroundColor: "pink" }} />
-    </Link>
+    </LinkXP>
   ))
   .add("Link can prevent browser navigation", () => (
-    <Link
+    <LinkXP
       url="https://thetimes.co.uk"
       onPress={e => {
         e.preventDefault();
@@ -32,7 +30,7 @@ storiesOf("Link", module)
       }}
     >
       <BigPinkSquare />
-    </Link>
+    </LinkXP>
   ))
   .add("TextLink", () => (
     <TextLink url="https://thetimes.co.uk/" onPress={action("onPress")}>

@@ -1,14 +1,13 @@
 /* eslint-env jest */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 
 import React from "react";
 import renderer from "react-test-renderer";
 
-export default (Link, TextLink, Text) => {
+export default (LinkXP, TextLink, Text) => {
   describe("Link", () => {
     it("renders correctly", () => {
       const tree = renderer
-        .create(<Link url="http://thetimes.co.uk" onPress={() => {}} />)
+        .create(<LinkXP url="http://thetimes.co.uk" onPress={() => {}} />)
         .toJSON();
 
       expect(tree).toMatchSnapshot();
@@ -16,9 +15,9 @@ export default (Link, TextLink, Text) => {
     it("doesnt change inner text styles", () => {
       const tree = renderer
         .create(
-          <Link url="http://thetimes.co.uk" onPress={() => {}}>
+          <LinkXP url="http://thetimes.co.uk" onPress={() => {}}>
             <Text>Hello</Text>
-          </Link>
+          </LinkXP>
         )
         .toJSON();
 

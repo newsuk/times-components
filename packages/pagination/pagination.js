@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View, Platform } from "react-native";
 import PropTypes from "prop-types";
-import Link from "@times-components/link";
+import LinkXP from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import withPageState from "./pagination-wrapper";
 import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
@@ -117,26 +117,24 @@ class Pagination extends React.Component {
 
     const prevComponent =
       startResult > pageSize ? (
-        // eslint-disable-next-line jsx-a11y/anchor-is-valid
-        <Link
+        <LinkXP
           style={styles.arrow}
           onPress={e => onPrev(e, page - 1)}
           url={generatePageLink(page - 1)}
         >
           <PreviousPageIcon label={previousLabel} />
-        </Link>
+        </LinkXP>
       ) : null;
 
     const nextComponent =
       finalResult < count ? (
-        // eslint-disable-next-line jsx-a11y/anchor-is-valid
-        <Link
+        <LinkXP
           style={styles.arrow}
           onPress={e => onNext(e, page + 1)}
           url={generatePageLink(page + 1)}
         >
           <NextPageIcon label={nextLabel} />
-        </Link>
+        </LinkXP>
       ) : null;
 
     const messageComponent = !hideResults ? (

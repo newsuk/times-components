@@ -2,7 +2,7 @@ import React from "react";
 import get from "lodash.get";
 import { View } from "react-native";
 import Card from "@times-components/card";
-import Link from "@times-components/link";
+import LinkXP from "@times-components/link";
 
 const AuthorProfileItem = item => {
   const {
@@ -22,8 +22,7 @@ const AuthorProfileItem = item => {
   );
 
   return (
-    // eslint-disable-next-line jsx-a11y/anchor-is-valid
-    <Link url={url} onPress={onPress}>
+    <LinkXP url={url} onPress={onPress}>
       <View style={style}>
         <Card
           headline={title}
@@ -34,7 +33,7 @@ const AuthorProfileItem = item => {
           publication={publicationName}
         />
       </View>
-    </Link>
+    </LinkXP>
   );
 };
 
