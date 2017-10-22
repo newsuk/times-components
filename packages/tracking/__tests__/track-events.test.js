@@ -15,7 +15,11 @@ describe("TrackEvents", () => {
     event2("event2 arg");
     return <Text>{props.someProp}</Text>;
   };
-  TestComponent.propTypes = { someProp: PropTypes.string };
+  TestComponent.propTypes = {
+    someProp: PropTypes.string,
+    event1: PropTypes.func.isRequired,
+    event2: PropTypes.func.isRequired
+  };
   TestComponent.defaultProps = { someProp: "foo" };
   TestComponent.someStatic = { foo: "bar" };
 
