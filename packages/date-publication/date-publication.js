@@ -2,6 +2,7 @@ import React from "react";
 import { Text } from "react-native";
 import format from "date-fns/format";
 import PropTypes from "prop-types";
+import StylePropTypes from "react-style-proptype";
 
 const styles = {
   default: {
@@ -25,14 +26,13 @@ const DatePublication = ({ date, publication, style }) => (
 );
 
 DatePublication.propTypes = {
-  date: PropTypes.instanceOf(Date).isRequired,
+  date: PropTypes.instanceOf(Date),
   publication: PropTypes.oneOf(Object.keys(publications)).isRequired,
-  style: Text.propTypes.style
+  style: StylePropTypes
 };
 
 DatePublication.defaultProps = {
   date: null,
-  publication: "",
   style: {}
 };
 
