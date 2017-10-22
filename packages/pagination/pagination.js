@@ -117,6 +117,7 @@ class Pagination extends React.Component {
 
     const prevComponent =
       startResult > pageSize ? (
+        // eslint-disable-next-line jsx-a11y/anchor-is-valid
         <Link
           style={styles.arrow}
           onPress={e => onPrev(e, page - 1)}
@@ -128,6 +129,7 @@ class Pagination extends React.Component {
 
     const nextComponent =
       finalResult < count ? (
+        // eslint-disable-next-line jsx-a11y/anchor-is-valid
         <Link
           style={styles.arrow}
           onPress={e => onNext(e, page + 1)}
