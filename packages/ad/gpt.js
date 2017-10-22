@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import { ViewPropTypes, Dimensions, StyleSheet, View } from "react-native";
+import { Dimensions, StyleSheet, View } from "react-native";
 import PropTypes from "prop-types";
+import StylePropTypes from "react-style-proptype";
 import AdManager from "./ad-manager";
 import Placeholder from "./placeholder";
 import { getSlotConfig } from "./generate-config";
-
-const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 const getStyles = config =>
   StyleSheet.create({
@@ -75,7 +74,7 @@ class GPT extends Component {
 
 GPT.propTypes = {
   code: PropTypes.string.isRequired,
-  style: ViewPropTypesStyle,
+  style: StylePropTypes,
   adManager: PropTypes.instanceOf(AdManager).isRequired
 };
 GPT.defaultProps = {

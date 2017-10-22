@@ -4,8 +4,7 @@
 import React from "react";
 import { WebView } from "react-native";
 import PropTypes from "prop-types";
-
-const { style: WebViewPropTypesStyle } = WebView.propTypes;
+import StylePropTypes from "react-style-proptype";
 
 const script = `
 <script>
@@ -95,7 +94,7 @@ WebViewAutoHeight.propTypes = {
   }).isRequired,
   minHeight: PropTypes.number,
   onNavigationStateChange: PropTypes.func,
-  style: WebViewPropTypesStyle
+  style: StylePropTypes
 };
 
 WebViewAutoHeight.defaultProps = {

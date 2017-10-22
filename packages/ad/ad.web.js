@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { ViewPropTypes } from "react-native";
+import StylePropTypes from "react-style-proptype";
 import { Subscriber } from "react-broadcast";
 import AdComposer from "./ad-composer";
 import GPT from "./gpt";
-
-const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 class Ad extends Component {
   renderGpt(adManager) {
@@ -29,7 +27,7 @@ class Ad extends Component {
 
 Ad.propTypes = {
   code: PropTypes.string.isRequired,
-  style: ViewPropTypesStyle
+  style: StylePropTypes
 };
 
 Ad.defaultProps = {
