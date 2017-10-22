@@ -99,13 +99,11 @@ function withNativeCommand(WrappedComponent) {
     },
     defaults
   );
-  AndroidNative.propTypes = Object.assign(
-    {
-      onEnterFullscreen: PropTypes.func,
-      onExitFullscreen: PropTypes.func
-    },
-    propTypes
-  );
+  AndroidNative.propTypes = {
+    onEnterFullscreen: PropTypes.func,
+    onExitFullscreen: PropTypes.func,
+    ...propTypes
+  };
 
   return AndroidNative;
 }
