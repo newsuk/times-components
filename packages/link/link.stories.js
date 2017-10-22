@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import { View } from "react-native";
 import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
