@@ -4,7 +4,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { action } from "@storybook/addon-actions";
-import LinkXP, { TextLink } from "./link";
+import Link, { TextLink } from "./link";
 import CenteredDecorator from "../../storybook/decorators/centered";
 
 const BigPinkSquare = props => (
@@ -17,12 +17,12 @@ const BigPinkSquare = props => (
 storiesOf("Link", module)
   .addDecorator(CenteredDecorator)
   .add("Link with big content", () => (
-    <LinkXP url="https://thetimes.co.uk" onPress={action("onPress")}>
+    <Link url="https://thetimes.co.uk" onPress={action("onPress")}>
       <View style={{ width: 100, height: 100, backgroundColor: "pink" }} />
-    </LinkXP>
+    </Link>
   ))
   .add("Link can prevent browser navigation", () => (
-    <LinkXP
+    <Link
       url="https://thetimes.co.uk"
       onPress={e => {
         e.preventDefault();
@@ -30,7 +30,7 @@ storiesOf("Link", module)
       }}
     >
       <BigPinkSquare />
-    </LinkXP>
+    </Link>
   ))
   .add("TextLink", () => (
     <TextLink url="https://thetimes.co.uk/" onPress={action("onPress")}>

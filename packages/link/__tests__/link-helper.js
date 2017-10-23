@@ -3,11 +3,11 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-export default (LinkXP, TextLink, Text) => {
+export default (Link, TextLink, Text) => {
   describe("Link", () => {
     it("renders correctly", () => {
       const tree = renderer
-        .create(<LinkXP url="http://thetimes.co.uk" onPress={() => {}} />)
+        .create(<Link url="http://thetimes.co.uk" onPress={() => {}} />)
         .toJSON();
 
       expect(tree).toMatchSnapshot();
@@ -15,9 +15,9 @@ export default (LinkXP, TextLink, Text) => {
     it("doesnt change inner text styles", () => {
       const tree = renderer
         .create(
-          <LinkXP url="http://thetimes.co.uk" onPress={() => {}}>
+          <Link url="http://thetimes.co.uk" onPress={() => {}}>
             <Text>Hello</Text>
-          </LinkXP>
+          </Link>
         )
         .toJSON();
 
