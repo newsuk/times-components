@@ -4,7 +4,9 @@ import PropTypes from "prop-types";
 
 import Image from "@times-components/image";
 import { TextLink } from "@times-components/link";
-import withResponsiveStyle, { Breakpoints } from "@times-components/responsive-hoc";
+import withResponsiveStyle, {
+  Breakpoints
+} from "@times-components/responsive-hoc";
 
 import { withTrackEvents } from "@times-components/tracking";
 import { renderTrees, treePropType } from "@times-components/markup";
@@ -70,7 +72,7 @@ const styles = StyleSheet.create({
     textDecorationLine: "none",
     ...Platform.select({
       web: {
-        order: 4
+        order: 3
       }
     })
   },
@@ -86,10 +88,10 @@ const styles = StyleSheet.create({
     ...Platform.select({
       web: {
         WebkitFontSmoothing: "antialiased",
-        MozOsxFontSmoothing: "grayscale"
+        MozOsxFontSmoothing: "grayscale",
+        order: 4
       }
-    }),
-    order: 3
+    })
   },
   wrapper: {
     alignItems: "center",
@@ -119,8 +121,9 @@ const ResponsiveStyles = {
 const AuthorHead = props => {
   const { name, title, twitter, bio, uri, onTwitterLinkPress } = props;
 
+  const responsive = props.responsive || {};
   const imageComponent = uri ? (
-    <View style={styles.photoContainer}>
+    <View style={[styles.photoContainer, responsive.photoContainer]}>
       <Image uri={uri} style={styles.roundImage} aspectRatio={1 / 1} />
     </View>
   ) : null;
@@ -189,8 +192,9 @@ TwitterLink.defaultProps = {
   handle: AuthorHead.defaultProps.twitter
 };
 
-export default withResponsiveStyle(
-  withTrackEvents(AuthorHead, {
+export default withTrackEvents(
+  withResponsiveStyle(AuthorHead, ResponsiveStyles),
+  {
     analyticsEvents: [
       {
         eventName: "onTwitterLinkPress",
@@ -202,6 +206,5 @@ export default withResponsiveStyle(
         })
       }
     ]
-  }),
-  ResponsiveStyles
+  }
 );

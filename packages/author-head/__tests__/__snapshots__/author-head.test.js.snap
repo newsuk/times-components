@@ -214,12 +214,15 @@ exports[`renders with data 1`] = `
     </Text>
     <View
       style={
-        Object {
-          "height": 100,
-          "paddingBottom": 16,
-          "paddingTop": 16,
-          "width": 100,
-        }
+        Array [
+          Object {
+            "height": 100,
+            "paddingBottom": 16,
+            "paddingTop": 16,
+            "width": 100,
+          },
+          undefined,
+        ]
       }
     >
       <Image

@@ -46,22 +46,29 @@ const resolveSize = (size, styles) => {
 export default (WrappedComponent, Styles) => {
   const componentName = getDisplayName(WrappedComponent);
 
+  const handleResponsiveStyle = width => {
+    const breakpointStyles = Object.getOwnPropertySymbols(SizeBoundaries)
+      .filter(sz => SizeBoundaries[sz](width))
+      .map(sz => resolveSize(sz, Styles.web));
+
+    return Object.assign({}, Styles.default, ...breakpointStyles);
+  };
+
   class WithResponsiveStyles extends React.Component {
     constructor(props) {
       super(props);
 
       this.state = {
         width: Dimensions.get("window").width,
-        style: {}
+        style: null
       };
 
       this.handleLayout = this.handleLayout.bind(this);
-      this.handleResponsiveStyle = this.handleResponsiveStyle.bind(this);
     }
 
     handleLayout() {
       const width = Dimensions.get("window").width;
-      const style = this.handleResponsiveStyle(width);
+      const style = handleResponsiveStyle(width);
 
       this.setState({
         width,
@@ -69,27 +76,14 @@ export default (WrappedComponent, Styles) => {
       });
     }
 
-    // eslint-disable-next-line class-methods-use-this
-    handleResponsiveStyle(width) {
-      const breakpointStyles = Object.getOwnPropertySymbols(SizeBoundaries)
-        .filter(sz => SizeBoundaries[sz](width))
-        .map(sz => resolveSize(sz, Styles.web));
-
-      return Object.assign({}, Styles.default, ...breakpointStyles);
-    }
-
     render() {
-      const { style, ...props } = this.props;
-
       if (Platform.OS !== "web") {
         return <WrappedComponent {...this.props} />;
       }
 
-      const newStyle = Object.assign({}, style, this.state.style);
-
       return (
         <View onLayout={this.handleLayout}>
-          <WrappedComponent style={newStyle} {...props} />
+          <WrappedComponent responsive={this.state.style} {...this.props} />
         </View>
       );
     }

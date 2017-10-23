@@ -4,6 +4,6 @@ import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import ResponsiveStyleHOC from "./responsive-hoc";
 
-storiesOf("ResponsiveStyleHOC", module).add("ResponsiveStyleHOC", () =>
+storiesOf("ResponsiveStyleHOC", module).add("ResponsiveStyleHOC", () => (
   <ResponsiveStyleHOC />
-);
+));
