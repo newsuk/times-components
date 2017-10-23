@@ -2,6 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <Text
+  accessibilityLabel="headline"
   accessible={true}
   allowFontScaling={true}
   disabled={false}

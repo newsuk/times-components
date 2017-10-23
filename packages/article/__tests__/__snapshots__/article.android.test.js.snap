@@ -45,6 +45,7 @@ exports[`Article test on android renders an error 1`] = `
 
 exports[`Article test on android renders article no flags 1`] = `
 <RCTScrollView
+  accessibilityLabel="listView"
   dataSource={
     ListViewDataSource {
       "items": 16,
@@ -56,16 +57,15 @@ exports[`Article test on android renders article no flags 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
-  testID="listView"
 >
   <View>
     <View
+      accessibilityLabel="leadAsset"
       style={
         Object {
           "marginBottom": 6,
         }
       }
-      testID="leadAsset"
     >
       <Image
         aspectRatio={1.7777777777777777}
@@ -98,6 +98,7 @@ exports[`Article test on android renders article no flags 1`] = `
       }
     >
       <View
+        accessibilityLabel="label"
         style={
           Object {
             "paddingBottom": 3,
@@ -130,6 +131,7 @@ exports[`Article test on android renders article no flags 1`] = `
         </Text>
       </View>
       <Text
+        accessibilityLabel="headline"
         accessible={true}
         allowFontScaling={true}
         disabled={false}
@@ -158,6 +160,7 @@ exports[`Article test on android renders article no flags 1`] = `
         Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
       </Text>
       <Text
+        accessibilityLabel="standfirst"
         accessible={true}
         allowFontScaling={true}
         disabled={false}
@@ -223,6 +226,7 @@ exports[`Article test on android renders article no flags 1`] = `
             }
           >
             <Text
+              accessibilityLabel="articleByline"
               accessible={true}
               allowFontScaling={true}
               disabled={false}
@@ -266,6 +270,7 @@ exports[`Article test on android renders article no flags 1`] = `
           }
         >
           <Text
+            accessibilityLabel="datePublication"
             accessible={true}
             allowFontScaling={true}
             disabled={false}
@@ -291,6 +296,7 @@ exports[`Article test on android renders article no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-0"
         style={
           Array [
             Object {
@@ -350,6 +356,7 @@ exports[`Article test on android renders article no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-1"
         style={
           Array [
             Object {
@@ -394,6 +401,7 @@ exports[`Article test on android renders article no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-2"
         style={
           Array [
             Object {
@@ -426,6 +434,7 @@ exports[`Article test on android renders article no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-3"
         style={
           Array [
             Object {
@@ -458,6 +467,7 @@ exports[`Article test on android renders article no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-4"
         style={
           Array [
             Object {
@@ -490,6 +500,7 @@ exports[`Article test on android renders article no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-5"
         style={
           Array [
             Object {
@@ -522,6 +533,7 @@ exports[`Article test on android renders article no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-6"
         style={
           Array [
             Object {
@@ -554,6 +566,7 @@ exports[`Article test on android renders article no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-7"
         style={
           Array [
             Object {
@@ -586,6 +599,7 @@ exports[`Article test on android renders article no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-8"
         style={
           Array [
             Object {
@@ -618,6 +632,7 @@ exports[`Article test on android renders article no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-9"
         style={
           Array [
             Object {
@@ -650,6 +665,7 @@ exports[`Article test on android renders article no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-10"
         style={
           Array [
             Object {
@@ -682,6 +698,7 @@ exports[`Article test on android renders article no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-11"
         style={
           Array [
             Object {
@@ -714,6 +731,7 @@ exports[`Article test on android renders article no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-12"
         style={
           Array [
             Object {
@@ -750,6 +768,7 @@ exports[`Article test on android renders article no flags 1`] = `
 
 exports[`Article test on android renders article no label 1`] = `
 <RCTScrollView
+  accessibilityLabel="listView"
   dataSource={
     ListViewDataSource {
       "items": 16,
@@ -761,16 +780,15 @@ exports[`Article test on android renders article no label 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
-  testID="listView"
 >
   <View>
     <View
+      accessibilityLabel="leadAsset"
       style={
         Object {
           "marginBottom": 6,
         }
       }
-      testID="leadAsset"
     >
       <Image
         aspectRatio={1.7777777777777777}
@@ -803,6 +821,7 @@ exports[`Article test on android renders article no label 1`] = `
       }
     >
       <Text
+        accessibilityLabel="headline"
         accessible={true}
         allowFontScaling={true}
         disabled={false}
@@ -831,6 +850,7 @@ exports[`Article test on android renders article no label 1`] = `
         Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
       </Text>
       <Text
+        accessibilityLabel="standfirst"
         accessible={true}
         allowFontScaling={true}
         disabled={false}
@@ -901,6 +921,7 @@ exports[`Article test on android renders article no label 1`] = `
               </svg>
             </View>
             <Text
+              accessibilityLabel="flag-new"
               accessible={true}
               allowFontScaling={true}
               disabled={false}
@@ -965,6 +986,7 @@ exports[`Article test on android renders article no label 1`] = `
               </svg>
             </View>
             <Text
+              accessibilityLabel="flag-exclusive"
               accessible={true}
               allowFontScaling={true}
               disabled={false}
@@ -1035,6 +1057,7 @@ exports[`Article test on android renders article no label 1`] = `
             }
           >
             <Text
+              accessibilityLabel="articleByline"
               accessible={true}
               allowFontScaling={true}
               disabled={false}
@@ -1078,6 +1101,7 @@ exports[`Article test on android renders article no label 1`] = `
           }
         >
           <Text
+            accessibilityLabel="datePublication"
             accessible={true}
             allowFontScaling={true}
             disabled={false}
@@ -1103,6 +1127,7 @@ exports[`Article test on android renders article no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-0"
         style={
           Array [
             Object {
@@ -1162,6 +1187,7 @@ exports[`Article test on android renders article no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-1"
         style={
           Array [
             Object {
@@ -1206,6 +1232,7 @@ exports[`Article test on android renders article no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-2"
         style={
           Array [
             Object {
@@ -1238,6 +1265,7 @@ exports[`Article test on android renders article no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-3"
         style={
           Array [
             Object {
@@ -1270,6 +1298,7 @@ exports[`Article test on android renders article no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-4"
         style={
           Array [
             Object {
@@ -1302,6 +1331,7 @@ exports[`Article test on android renders article no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-5"
         style={
           Array [
             Object {
@@ -1334,6 +1364,7 @@ exports[`Article test on android renders article no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-6"
         style={
           Array [
             Object {
@@ -1366,6 +1397,7 @@ exports[`Article test on android renders article no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-7"
         style={
           Array [
             Object {
@@ -1398,6 +1430,7 @@ exports[`Article test on android renders article no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-8"
         style={
           Array [
             Object {
@@ -1430,6 +1463,7 @@ exports[`Article test on android renders article no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-9"
         style={
           Array [
             Object {
@@ -1462,6 +1496,7 @@ exports[`Article test on android renders article no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-10"
         style={
           Array [
             Object {
@@ -1494,6 +1529,7 @@ exports[`Article test on android renders article no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-11"
         style={
           Array [
             Object {
@@ -1526,6 +1562,7 @@ exports[`Article test on android renders article no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-12"
         style={
           Array [
             Object {
@@ -1562,6 +1599,7 @@ exports[`Article test on android renders article no label 1`] = `
 
 exports[`Article test on android renders article no label no flags 1`] = `
 <RCTScrollView
+  accessibilityLabel="listView"
   dataSource={
     ListViewDataSource {
       "items": 16,
@@ -1573,16 +1611,15 @@ exports[`Article test on android renders article no label no flags 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
-  testID="listView"
 >
   <View>
     <View
+      accessibilityLabel="leadAsset"
       style={
         Object {
           "marginBottom": 6,
         }
       }
-      testID="leadAsset"
     >
       <Image
         aspectRatio={1.7777777777777777}
@@ -1615,6 +1652,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
       }
     >
       <Text
+        accessibilityLabel="headline"
         accessible={true}
         allowFontScaling={true}
         disabled={false}
@@ -1643,6 +1681,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
         Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
       </Text>
       <Text
+        accessibilityLabel="standfirst"
         accessible={true}
         allowFontScaling={true}
         disabled={false}
@@ -1708,6 +1747,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
             }
           >
             <Text
+              accessibilityLabel="articleByline"
               accessible={true}
               allowFontScaling={true}
               disabled={false}
@@ -1751,6 +1791,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           }
         >
           <Text
+            accessibilityLabel="datePublication"
             accessible={true}
             allowFontScaling={true}
             disabled={false}
@@ -1776,6 +1817,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-0"
         style={
           Array [
             Object {
@@ -1835,6 +1877,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-1"
         style={
           Array [
             Object {
@@ -1879,6 +1922,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-2"
         style={
           Array [
             Object {
@@ -1911,6 +1955,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-3"
         style={
           Array [
             Object {
@@ -1943,6 +1988,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-4"
         style={
           Array [
             Object {
@@ -1975,6 +2021,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-5"
         style={
           Array [
             Object {
@@ -2007,6 +2054,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-6"
         style={
           Array [
             Object {
@@ -2039,6 +2087,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-7"
         style={
           Array [
             Object {
@@ -2071,6 +2120,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-8"
         style={
           Array [
             Object {
@@ -2103,6 +2153,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-9"
         style={
           Array [
             Object {
@@ -2135,6 +2186,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-10"
         style={
           Array [
             Object {
@@ -2167,6 +2219,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-11"
         style={
           Array [
             Object {
@@ -2199,6 +2252,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-12"
         style={
           Array [
             Object {
@@ -2235,6 +2289,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
 
 exports[`Article test on android renders article no label no flags no standfirst 1`] = `
 <RCTScrollView
+  accessibilityLabel="listView"
   dataSource={
     ListViewDataSource {
       "items": 16,
@@ -2246,16 +2301,15 @@ exports[`Article test on android renders article no label no flags no standfirst
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
-  testID="listView"
 >
   <View>
     <View
+      accessibilityLabel="leadAsset"
       style={
         Object {
           "marginBottom": 6,
         }
       }
-      testID="leadAsset"
     >
       <Image
         aspectRatio={1.7777777777777777}
@@ -2288,6 +2342,7 @@ exports[`Article test on android renders article no label no flags no standfirst
       }
     >
       <Text
+        accessibilityLabel="headline"
         accessible={true}
         allowFontScaling={true}
         disabled={false}
@@ -2361,6 +2416,7 @@ exports[`Article test on android renders article no label no flags no standfirst
             }
           >
             <Text
+              accessibilityLabel="articleByline"
               accessible={true}
               allowFontScaling={true}
               disabled={false}
@@ -2404,6 +2460,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           }
         >
           <Text
+            accessibilityLabel="datePublication"
             accessible={true}
             allowFontScaling={true}
             disabled={false}
@@ -2429,6 +2486,7 @@ exports[`Article test on android renders article no label no flags no standfirst
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-0"
         style={
           Array [
             Object {
@@ -2488,6 +2546,7 @@ exports[`Article test on android renders article no label no flags no standfirst
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-1"
         style={
           Array [
             Object {
@@ -2532,6 +2591,7 @@ exports[`Article test on android renders article no label no flags no standfirst
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-2"
         style={
           Array [
             Object {
@@ -2564,6 +2624,7 @@ exports[`Article test on android renders article no label no flags no standfirst
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-3"
         style={
           Array [
             Object {
@@ -2596,6 +2657,7 @@ exports[`Article test on android renders article no label no flags no standfirst
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-4"
         style={
           Array [
             Object {
@@ -2628,6 +2690,7 @@ exports[`Article test on android renders article no label no flags no standfirst
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-5"
         style={
           Array [
             Object {
@@ -2660,6 +2723,7 @@ exports[`Article test on android renders article no label no flags no standfirst
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-6"
         style={
           Array [
             Object {
@@ -2692,6 +2756,7 @@ exports[`Article test on android renders article no label no flags no standfirst
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-7"
         style={
           Array [
             Object {
@@ -2724,6 +2789,7 @@ exports[`Article test on android renders article no label no flags no standfirst
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-8"
         style={
           Array [
             Object {
@@ -2756,6 +2822,7 @@ exports[`Article test on android renders article no label no flags no standfirst
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-9"
         style={
           Array [
             Object {
@@ -2788,6 +2855,7 @@ exports[`Article test on android renders article no label no flags no standfirst
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-10"
         style={
           Array [
             Object {
@@ -2820,6 +2888,7 @@ exports[`Article test on android renders article no label no flags no standfirst
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-11"
         style={
           Array [
             Object {
@@ -2852,6 +2921,7 @@ exports[`Article test on android renders article no label no flags no standfirst
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-12"
         style={
           Array [
             Object {
@@ -2888,6 +2958,7 @@ exports[`Article test on android renders article no label no flags no standfirst
 
 exports[`Article test on android renders article no standfirst 1`] = `
 <RCTScrollView
+  accessibilityLabel="listView"
   dataSource={
     ListViewDataSource {
       "items": 16,
@@ -2899,16 +2970,15 @@ exports[`Article test on android renders article no standfirst 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
-  testID="listView"
 >
   <View>
     <View
+      accessibilityLabel="leadAsset"
       style={
         Object {
           "marginBottom": 6,
         }
       }
-      testID="leadAsset"
     >
       <Image
         aspectRatio={1.7777777777777777}
@@ -2941,6 +3011,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
       }
     >
       <View
+        accessibilityLabel="label"
         style={
           Object {
             "paddingBottom": 3,
@@ -2973,6 +3044,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
         </Text>
       </View>
       <Text
+        accessibilityLabel="headline"
         accessible={true}
         allowFontScaling={true}
         disabled={false}
@@ -3051,6 +3123,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               </svg>
             </View>
             <Text
+              accessibilityLabel="flag-new"
               accessible={true}
               allowFontScaling={true}
               disabled={false}
@@ -3115,6 +3188,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               </svg>
             </View>
             <Text
+              accessibilityLabel="flag-exclusive"
               accessible={true}
               allowFontScaling={true}
               disabled={false}
@@ -3185,6 +3259,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             }
           >
             <Text
+              accessibilityLabel="articleByline"
               accessible={true}
               allowFontScaling={true}
               disabled={false}
@@ -3228,6 +3303,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           }
         >
           <Text
+            accessibilityLabel="datePublication"
             accessible={true}
             allowFontScaling={true}
             disabled={false}
@@ -3253,6 +3329,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-0"
         style={
           Array [
             Object {
@@ -3312,6 +3389,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-1"
         style={
           Array [
             Object {
@@ -3356,6 +3434,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-2"
         style={
           Array [
             Object {
@@ -3388,6 +3467,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-3"
         style={
           Array [
             Object {
@@ -3420,6 +3500,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-4"
         style={
           Array [
             Object {
@@ -3452,6 +3533,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-5"
         style={
           Array [
             Object {
@@ -3484,6 +3566,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-6"
         style={
           Array [
             Object {
@@ -3516,6 +3599,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-7"
         style={
           Array [
             Object {
@@ -3548,6 +3632,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-8"
         style={
           Array [
             Object {
@@ -3580,6 +3665,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-9"
         style={
           Array [
             Object {
@@ -3612,6 +3698,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-10"
         style={
           Array [
             Object {
@@ -3644,6 +3731,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-11"
         style={
           Array [
             Object {
@@ -3676,6 +3764,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-12"
         style={
           Array [
             Object {
@@ -3712,6 +3801,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
 
 exports[`Article test on android renders article no standfirst no flags 1`] = `
 <RCTScrollView
+  accessibilityLabel="listView"
   dataSource={
     ListViewDataSource {
       "items": 16,
@@ -3723,16 +3813,15 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
-  testID="listView"
 >
   <View>
     <View
+      accessibilityLabel="leadAsset"
       style={
         Object {
           "marginBottom": 6,
         }
       }
-      testID="leadAsset"
     >
       <Image
         aspectRatio={1.7777777777777777}
@@ -3765,6 +3854,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
       }
     >
       <View
+        accessibilityLabel="label"
         style={
           Object {
             "paddingBottom": 3,
@@ -3797,6 +3887,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         </Text>
       </View>
       <Text
+        accessibilityLabel="headline"
         accessible={true}
         allowFontScaling={true}
         disabled={false}
@@ -3870,6 +3961,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             }
           >
             <Text
+              accessibilityLabel="articleByline"
               accessible={true}
               allowFontScaling={true}
               disabled={false}
@@ -3913,6 +4005,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           }
         >
           <Text
+            accessibilityLabel="datePublication"
             accessible={true}
             allowFontScaling={true}
             disabled={false}
@@ -3938,6 +4031,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-0"
         style={
           Array [
             Object {
@@ -3997,6 +4091,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-1"
         style={
           Array [
             Object {
@@ -4041,6 +4136,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-2"
         style={
           Array [
             Object {
@@ -4073,6 +4169,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-3"
         style={
           Array [
             Object {
@@ -4105,6 +4202,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-4"
         style={
           Array [
             Object {
@@ -4137,6 +4235,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-5"
         style={
           Array [
             Object {
@@ -4169,6 +4268,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-6"
         style={
           Array [
             Object {
@@ -4201,6 +4301,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-7"
         style={
           Array [
             Object {
@@ -4233,6 +4334,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-8"
         style={
           Array [
             Object {
@@ -4265,6 +4367,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-9"
         style={
           Array [
             Object {
@@ -4297,6 +4400,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-10"
         style={
           Array [
             Object {
@@ -4329,6 +4433,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-11"
         style={
           Array [
             Object {
@@ -4361,6 +4466,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-12"
         style={
           Array [
             Object {
@@ -4397,6 +4503,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
 
 exports[`Article test on android renders article no standfirst no label 1`] = `
 <RCTScrollView
+  accessibilityLabel="listView"
   dataSource={
     ListViewDataSource {
       "items": 16,
@@ -4408,16 +4515,15 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
-  testID="listView"
 >
   <View>
     <View
+      accessibilityLabel="leadAsset"
       style={
         Object {
           "marginBottom": 6,
         }
       }
-      testID="leadAsset"
     >
       <Image
         aspectRatio={1.7777777777777777}
@@ -4450,6 +4556,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
       }
     >
       <Text
+        accessibilityLabel="headline"
         accessible={true}
         allowFontScaling={true}
         disabled={false}
@@ -4528,6 +4635,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               </svg>
             </View>
             <Text
+              accessibilityLabel="flag-new"
               accessible={true}
               allowFontScaling={true}
               disabled={false}
@@ -4592,6 +4700,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               </svg>
             </View>
             <Text
+              accessibilityLabel="flag-exclusive"
               accessible={true}
               allowFontScaling={true}
               disabled={false}
@@ -4662,6 +4771,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             }
           >
             <Text
+              accessibilityLabel="articleByline"
               accessible={true}
               allowFontScaling={true}
               disabled={false}
@@ -4705,6 +4815,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           }
         >
           <Text
+            accessibilityLabel="datePublication"
             accessible={true}
             allowFontScaling={true}
             disabled={false}
@@ -4730,6 +4841,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-0"
         style={
           Array [
             Object {
@@ -4789,6 +4901,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-1"
         style={
           Array [
             Object {
@@ -4833,6 +4946,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-2"
         style={
           Array [
             Object {
@@ -4865,6 +4979,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-3"
         style={
           Array [
             Object {
@@ -4897,6 +5012,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-4"
         style={
           Array [
             Object {
@@ -4929,6 +5045,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-5"
         style={
           Array [
             Object {
@@ -4961,6 +5078,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-6"
         style={
           Array [
             Object {
@@ -4993,6 +5111,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-7"
         style={
           Array [
             Object {
@@ -5025,6 +5144,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-8"
         style={
           Array [
             Object {
@@ -5057,6 +5177,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-9"
         style={
           Array [
             Object {
@@ -5089,6 +5210,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-10"
         style={
           Array [
             Object {
@@ -5121,6 +5243,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-11"
         style={
           Array [
             Object {
@@ -5153,6 +5276,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-12"
         style={
           Array [
             Object {
@@ -5189,6 +5313,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
 
 exports[`Article test on android renders full article 1`] = `
 <RCTScrollView
+  accessibilityLabel="listView"
   dataSource={
     ListViewDataSource {
       "items": 21,
@@ -5200,16 +5325,15 @@ exports[`Article test on android renders full article 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
-  testID="listView"
 >
   <View>
     <View
+      accessibilityLabel="leadAsset"
       style={
         Object {
           "marginBottom": 6,
         }
       }
-      testID="leadAsset"
     >
       <Image
         aspectRatio={1.7777777777777777}
@@ -5242,6 +5366,7 @@ exports[`Article test on android renders full article 1`] = `
       }
     >
       <View
+        accessibilityLabel="label"
         style={
           Object {
             "paddingBottom": 3,
@@ -5274,6 +5399,7 @@ exports[`Article test on android renders full article 1`] = `
         </Text>
       </View>
       <Text
+        accessibilityLabel="headline"
         accessible={true}
         allowFontScaling={true}
         disabled={false}
@@ -5302,6 +5428,7 @@ exports[`Article test on android renders full article 1`] = `
         Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
       </Text>
       <Text
+        accessibilityLabel="standfirst"
         accessible={true}
         allowFontScaling={true}
         disabled={false}
@@ -5372,6 +5499,7 @@ exports[`Article test on android renders full article 1`] = `
               </svg>
             </View>
             <Text
+              accessibilityLabel="flag-new"
               accessible={true}
               allowFontScaling={true}
               disabled={false}
@@ -5436,6 +5564,7 @@ exports[`Article test on android renders full article 1`] = `
               </svg>
             </View>
             <Text
+              accessibilityLabel="flag-exclusive"
               accessible={true}
               allowFontScaling={true}
               disabled={false}
@@ -5506,6 +5635,7 @@ exports[`Article test on android renders full article 1`] = `
             }
           >
             <Text
+              accessibilityLabel="articleByline"
               accessible={true}
               allowFontScaling={true}
               disabled={false}
@@ -5549,6 +5679,7 @@ exports[`Article test on android renders full article 1`] = `
           }
         >
           <Text
+            accessibilityLabel="datePublication"
             accessible={true}
             allowFontScaling={true}
             disabled={false}
@@ -5574,6 +5705,7 @@ exports[`Article test on android renders full article 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-0"
         style={
           Array [
             Object {
@@ -5633,6 +5765,7 @@ exports[`Article test on android renders full article 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-1"
         style={
           Array [
             Object {
@@ -5774,6 +5907,7 @@ exports[`Article test on android renders full article 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-3"
         style={
           Array [
             Object {
@@ -5806,6 +5940,7 @@ exports[`Article test on android renders full article 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-4"
         style={
           Array [
             Object {
@@ -5950,6 +6085,7 @@ exports[`Article test on android renders full article 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-6"
         style={
           Array [
             Object {
@@ -6194,6 +6330,7 @@ exports[`Article test on android renders full article 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-8"
         style={
           Array [
             Object {
@@ -6338,6 +6475,7 @@ exports[`Article test on android renders full article 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-10"
         style={
           Array [
             Object {
@@ -6482,6 +6620,7 @@ exports[`Article test on android renders full article 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-12"
         style={
           Array [
             Object {
@@ -6514,6 +6653,7 @@ exports[`Article test on android renders full article 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-13"
         style={
           Array [
             Object {
@@ -6546,6 +6686,7 @@ exports[`Article test on android renders full article 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-14"
         style={
           Array [
             Object {
@@ -6578,6 +6719,7 @@ exports[`Article test on android renders full article 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-15"
         style={
           Array [
             Object {
@@ -6610,6 +6752,7 @@ exports[`Article test on android renders full article 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-16"
         style={
           Array [
             Object {
@@ -6642,6 +6785,7 @@ exports[`Article test on android renders full article 1`] = `
     </View>
     <View>
       <View
+        accessibilityLabel="paragraph-17"
         style={
           Array [
             Object {
