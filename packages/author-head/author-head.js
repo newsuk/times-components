@@ -1,24 +1,19 @@
 import React from "react";
-import { Platform, View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet, Text, Platform } from "react-native";
 import PropTypes from "prop-types";
 
 import Image from "@times-components/image";
-import { renderTrees, treePropType } from "@times-components/markup";
 import { TextLink } from "@times-components/link";
 import withResponsiveStyle, { Breakpoints } from "@times-components/responsive-hoc";
 
 import { withTrackEvents } from "@times-components/tracking";
+import { renderTrees, treePropType } from "@times-components/markup";
 
 const fontFamilyWebAndIos = "TimesDigitalW04";
 const fontFamilyAndroid = "TimesDigitalW04-Regular";
 
 const styles = StyleSheet.create({
   container: {
-    ...Platform.select({
-      web: {
-        display: "flex"
-      }
-    }),
     width: "100%",
     alignItems: "center",
     flexDirection: "column",
@@ -88,13 +83,13 @@ const styles = StyleSheet.create({
     color: "#333",
     maxWidth: "88%",
     paddingBottom: 32,
-    order: 3,
     ...Platform.select({
       web: {
         WebkitFontSmoothing: "antialiased",
         MozOsxFontSmoothing: "grayscale"
       }
-    })
+    }),
+    order: 3
   },
   wrapper: {
     alignItems: "center",
@@ -124,6 +119,12 @@ const ResponsiveStyles = {
 const AuthorHead = props => {
   const { name, title, twitter, bio, uri, onTwitterLinkPress } = props;
 
+  const imageComponent = uri ? (
+    <View style={styles.photoContainer}>
+      <Image uri={uri} style={styles.roundImage} aspectRatio={1 / 1} />
+    </View>
+  ) : null;
+
   return (
     <View style={styles.wrapper} pointerEvents="box-none">
       <View accessibilityRole="banner" style={styles.container}>
@@ -135,14 +136,12 @@ const AuthorHead = props => {
         >
           {name}
         </Text>
-        <Text accessibilityRole="heading" aria-level="2" style={[styles.title]}>
+        <Text accessibilityRole="heading" aria-level="2" style={styles.title}>
           {title.toLowerCase()}
         </Text>
         <TwitterLink handle={twitter} onPress={onTwitterLinkPress} />
-        <Text style={[styles.bio]}>{renderTrees(bio)}</Text>
-        <View style={[styles.photoContainer]}>
-          <Image source={{ uri }} style={[styles.roundImage]} />
-        </View>
+        <Text style={styles.bio}>{renderTrees(bio)}</Text>
+        {imageComponent}
       </View>
     </View>
   );

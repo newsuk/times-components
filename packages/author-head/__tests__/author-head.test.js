@@ -38,6 +38,7 @@ it("tracks twitter link interactions", () => {
 
   component
     .dive()
+    .dive()
     .find("TwitterLink")
     .dive()
     .find("TextLink")
