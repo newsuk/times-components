@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.1"></a>
+## [0.8.1](https://github.com/newsuk/times-components/compare/@times-components/article-headline@0.8.0...@times-components/article-headline@0.8.1) (2017-10-23)
+
+
+### Bug Fixes
+
+* style warning on android. Styles are not used in WebView ([f897531](https://github.com/newsuk/times-components/commit/f897531))
+
+
+
+
 <a name="0.8.0"></a>
 # [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/article-headline@0.7.2...@times-components/article-headline@0.8.0) (2017-10-16)
 
