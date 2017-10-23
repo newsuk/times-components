@@ -18,6 +18,12 @@ withComponent(
   "video with external controls",
   async fructose => {
     beforeEach(async () => {
+      await driver.resetApp();
+      await global.driver.waitForElementsByXPath(
+        '//*[@text="Fructose"]',
+        global.asserter.isVisible,
+        10000
+      );    
       await fructose.loadComponent();
     });
 
@@ -40,6 +46,12 @@ withComponent(
   "video with external controls",
   async fructose => {
     beforeEach(async () => {
+      await driver.resetApp();
+      await global.driver.waitForElementsByXPath(
+        '//*[@text="Fructose"]',
+        global.asserter.isVisible,
+        10000
+      );    
       await fructose.loadComponent();
     });
 
@@ -49,9 +61,129 @@ withComponent(
         await driver.waitForElementByXPath('//*[@text="play"]', 2000);
         const e = await driver.elementByXPath('//*[@text="play"]');
         await driver.tapElement(e);
-        await driver.waitForElementByXPath('//*[@text="0:08"]', 10000);
+        await driver.waitForElementByXPath('//*[@text="0:01"]', 10000);
       },
-      150000
+      30000
+    );
+    test(
+      "video plays when external play button is pressed",
+      async () => {
+        await driver.waitForElementByXPath('//*[@text="play"]', 2000);
+        const e = await driver.elementByXPath('//*[@text="play"]');
+        await driver.tapElement(e);
+        await driver.waitForElementByXPath('//*[@text="0:01"]', 10000);
+      },
+      30000
+    );
+    test(
+      "video plays when external play button is pressed",
+      async () => {
+        await driver.waitForElementByXPath('//*[@text="play"]', 2000);
+        const e = await driver.elementByXPath('//*[@text="play"]');
+        await driver.tapElement(e);
+        await driver.waitForElementByXPath('//*[@text="0:01"]', 10000);
+      },
+      30000
+    );
+    test(
+      "video plays when external play button is pressed",
+      async () => {
+        await driver.waitForElementByXPath('//*[@text="play"]', 2000);
+        const e = await driver.elementByXPath('//*[@text="play"]');
+        await driver.tapElement(e);
+        await driver.waitForElementByXPath('//*[@text="0:01"]', 10000);
+      },
+      30000
+    );
+    test(
+      "video plays when external play button is pressed",
+      async () => {
+        await driver.waitForElementByXPath('//*[@text="play"]', 2000);
+        const e = await driver.elementByXPath('//*[@text="play"]');
+        await driver.tapElement(e);
+        await driver.waitForElementByXPath('//*[@text="0:01"]', 10000);
+      },
+      30000
+    );
+    test(
+      "video plays when external play button is pressed",
+      async () => {
+        await driver.waitForElementByXPath('//*[@text="play"]', 2000);
+        const e = await driver.elementByXPath('//*[@text="play"]');
+        await driver.tapElement(e);
+        await driver.waitForElementByXPath('//*[@text="0:01"]', 10000);
+      },
+      30000
+    );
+    test(
+      "video plays when external play button is pressed",
+      async () => {
+        await driver.waitForElementByXPath('//*[@text="play"]', 2000);
+        const e = await driver.elementByXPath('//*[@text="play"]');
+        await driver.tapElement(e);
+        await driver.waitForElementByXPath('//*[@text="0:01"]', 10000);
+      },
+      30000
+    );
+    test(
+      "video plays when external play button is pressed",
+      async () => {
+        await driver.waitForElementByXPath('//*[@text="play"]', 2000);
+        const e = await driver.elementByXPath('//*[@text="play"]');
+        await driver.tapElement(e);
+        await driver.waitForElementByXPath('//*[@text="0:01"]', 10000);
+      },
+      30000
+    );
+    test(
+      "video plays when external play button is pressed",
+      async () => {
+        await driver.waitForElementByXPath('//*[@text="play"]', 2000);
+        const e = await driver.elementByXPath('//*[@text="play"]');
+        await driver.tapElement(e);
+        await driver.waitForElementByXPath('//*[@text="0:01"]', 10000);
+      },
+      30000
+    );
+    test(
+      "video plays when external play button is pressed",
+      async () => {
+        await driver.waitForElementByXPath('//*[@text="play"]', 2000);
+        const e = await driver.elementByXPath('//*[@text="play"]');
+        await driver.tapElement(e);
+        await driver.waitForElementByXPath('//*[@text="0:01"]', 10000);
+      },
+      30000
+    );
+    test(
+      "video plays when external play button is pressed",
+      async () => {
+        await driver.waitForElementByXPath('//*[@text="play"]', 2000);
+        const e = await driver.elementByXPath('//*[@text="play"]');
+        await driver.tapElement(e);
+        await driver.waitForElementByXPath('//*[@text="0:01"]', 10000);
+      },
+      30000
+    );
+    test(
+      "video plays when external play button is pressed",
+      async () => {
+        await driver.waitForElementByXPath('//*[@text="play"]', 2000);
+        const e = await driver.elementByXPath('//*[@text="play"]');
+        await driver.tapElement(e);
+        await driver.waitForElementByXPath('//*[@text="0:01"]', 10000);
+      },
+      30000
+    );
+    test(
+      "video plays when external play button is pressed",
+      async () => {
+        await driver.waitForElementByXPath('//*[@text="play"]', 2000);
+        const e = await driver.elementByXPath('//*[@text="play"]');
+        await driver.tapElement(e);
+        await driver.waitForElementByXPath('//*[@text="0:01"]', 10000);
+      },
+      30000
     );
   }
 );

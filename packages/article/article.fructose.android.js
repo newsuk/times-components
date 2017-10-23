@@ -20,6 +20,12 @@ withComponent(
   "default non interactive article",
   async fructose => {
     beforeEach(async () => {
+      await driver.resetApp();
+      await global.driver.waitForElementsByXPath(
+        '//*[@text="Fructose"]',
+        global.asserter.isVisible,
+        10000
+      );    
       await fructose.loadComponent();
       await isComponentDisplayed("listView");
     });
