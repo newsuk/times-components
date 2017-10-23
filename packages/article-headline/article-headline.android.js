@@ -2,11 +2,10 @@
 // https://github.com/facebook/react-native/pull/13199
 
 import React from "react";
-import StylePropTypes from "react-style-proptype";
 import PropTypes from "prop-types";
 import WebViewAutoHeight from "./WebView-auto-height";
 
-const ArticleHeadline = ({ text, style, baseUrl }) => {
+const ArticleHeadline = ({ text, baseUrl }) => {
   const html = `
     <div>
       <style>
@@ -30,17 +29,15 @@ const ArticleHeadline = ({ text, style, baseUrl }) => {
     </div>
   `;
 
-  return <WebViewAutoHeight source={{ html, baseUrl }} style={style} />;
+  return <WebViewAutoHeight source={{ html, baseUrl }} />;
 };
 
 ArticleHeadline.propTypes = {
   text: PropTypes.string.isRequired,
-  style: StylePropTypes,
   baseUrl: PropTypes.string
 };
 
 ArticleHeadline.defaultProps = {
-  style: null,
   baseUrl: "https://www.thetimes.co.uk/"
 };
 
