@@ -71,7 +71,7 @@ exports[`renders horizontal above breakpoint 1`] = `
                 "name": "text",
               },
             ],
-            "name": "sentence",
+            "name": "paragraph",
           },
           Object {
             "attributes": Object {},
@@ -84,7 +84,7 @@ exports[`renders horizontal above breakpoint 1`] = `
                 "name": "text",
               },
             ],
-            "name": "teaser",
+            "name": "paragraph",
           },
         ]
       }
