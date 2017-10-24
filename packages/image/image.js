@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Image } from "react-native";
-import placeholder from "./placeholder";
+import Placeholder from "./placeholder";
 import imagePropTypes from "./image-prop-types";
 
 const addMissingProtocol = uri => (uri.startsWith("//") ? `https:${uri}` : uri);
@@ -24,7 +24,6 @@ class TimesImage extends Component {
     const { isLoaded } = this.state;
     // web handles missing protocols just fine, native doesnt. This evens out support.
     const uri = addMissingProtocol(dirtyUri);
-
     return (
       <Image
         style={style}
@@ -32,9 +31,7 @@ class TimesImage extends Component {
         aspectRatio={aspectRatio}
         onLoad={this.handleLoad}
       >
-        {isLoaded ? null : (
-          <Image source={{ uri: placeholder }} aspectRatio={aspectRatio} />
-        )}
+        {isLoaded ? null : <Placeholder />}
       </Image>
     );
   }

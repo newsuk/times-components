@@ -1,18 +1,19 @@
-import PropTypes from "prop-types";
 import React from "react";
 import { StyleSheet, View, ViewPropTypes } from "react-native";
-import Gradient from "./card-loading-gradient";
+import Gradient from "./gradient";
 import T from "./t";
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
   t: {
-    flex: 1,
     justifyContent: "center",
     alignItems: "center"
   }
 });
 
-class CardImage extends React.Component {
+class Placeholder extends React.Component {
   constructor(props) {
     super(props);
 
@@ -27,28 +28,19 @@ class CardImage extends React.Component {
   }
 
   render() {
-    const { ratio, style } = this.props;
+    const { style } = this.props;
 
     const { width } = this.state;
 
     const tComponent = width ? (
-      <View style={styles.t}>
-        <T width={width * 0.15} height={width * 0.15} />
+      <View style={[styles.container, styles.t]}>
+        <T width={64} height={64} />
       </View>
     ) : null;
 
     return (
-      <View style={style} onLayout={this.handleLayout}>
-        <Gradient
-          angle={264}
-          style={[
-            styles.gradient,
-            {
-              width,
-              height: width / ratio
-            }
-          ]}
-        >
+      <View style={[styles.container, style]}>
+        <Gradient angle={264} style={[styles.container, styles.gradient]}>
           {tComponent}
         </Gradient>
       </View>
@@ -56,13 +48,12 @@ class CardImage extends React.Component {
   }
 }
 
-CardImage.defaultProps = {
+Placeholder.defaultProps = {
   style: null
 };
 
-CardImage.propTypes = {
-  ratio: PropTypes.number.isRequired,
+Placeholder.propTypes = {
   style: ViewPropTypes.style
 };
 
-export default CardImage;
+export default Placeholder;

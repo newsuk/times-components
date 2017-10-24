@@ -1,12 +1,16 @@
 /* eslint-env jest */
 
-import "react-native";
+import { Dimensions } from "react-native";
 import Enzyme, { shallow } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
 import React from "react";
 import renderer from "react-test-renderer";
 import Card from "../card";
 import props from "../fixtures/card-props.json";
+
+Dimensions.get = jest.fn().mockReturnValue({
+  width: 200
+});
 
 props.date = new Date("2017-07-01T14:32:00.000Z");
 

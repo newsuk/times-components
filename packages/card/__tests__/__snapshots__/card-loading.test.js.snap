@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders loading card state 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "column",
+      },
+      null,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+        Object {
+          "paddingBottom": 10,
+        },
+      ]
+    }
+  >
+    <TimesImage
+      aspectRatio={1.5}
+      uri=""
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Gradient
+      angle={264}
+      style={
+        Array [
+          Object {
+            "height": 24,
+            "marginBottom": 10,
+            "maxWidth": 400,
+          },
+        ]
+      }
+    />
+    <Gradient
+      angle={267}
+      style={
+        Array [
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          },
+        ]
+      }
+    />
+    <Gradient
+      angle={267}
+      style={
+        Array [
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          },
+        ]
+      }
+    />
+    <Gradient
+      angle={267}
+      style={
+        Array [
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          },
+          Object {
+            "marginBottom": 0,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;

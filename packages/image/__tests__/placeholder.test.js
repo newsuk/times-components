@@ -4,12 +4,12 @@ import "react-native";
 import Enzyme, { shallow } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
 import React from "react";
-import CardLoadingImage from "../card-loading-image";
+import Placeholder from "../placeholder";
 
 Enzyme.configure({ adapter: new React16Adapter() });
 
 it("renders loading image when width set", () => {
-  const wrapper = shallow(<CardLoadingImage ratio={1} />);
+  const wrapper = shallow(<Placeholder uri={""} />);
   wrapper.setState({
     width: 300
   });
@@ -19,7 +19,7 @@ it("renders loading image when width set", () => {
 });
 
 it("renders component and handles layout width", done => {
-  const comp = new CardLoadingImage({ ratio: 1 });
+  const comp = new Placeholder({ uri: "" });
 
   comp.setState = ({ width }) => {
     expect(width).toEqual(320);

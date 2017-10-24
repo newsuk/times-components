@@ -1,0 +1,212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`allows styling 1`] = `
+<Image
+  aspectRatio={1}
+  onLoad={[Function]}
+  source={
+    Object {
+      "uri": "http://example.com/image.jpg",
+    }
+  }
+  style={
+    Object {
+      "width": 100,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        null,
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "flex": 1,
+          },
+          undefined,
+        ]
+      }
+    >
+      <BVLinearGradient
+        colors={
+          Array [
+            "#ededed",
+            "#f9f9f9",
+          ]
+        }
+        end={
+          Object {
+            "x": 1,
+            "y": 0.25685517452260576,
+          }
+        }
+        locations={
+          Array [
+            0,
+            1,
+          ]
+        }
+        start={
+          Object {
+            "x": 0,
+            "y": 1,
+          }
+        }
+        style={
+          Array [
+            Object {
+              "flex": 1,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</Image>
+`;
+
+exports[`prepends https schema 1`] = `
+<Image
+  aspectRatio={1}
+  onLoad={[Function]}
+  source={
+    Object {
+      "uri": "https://example.com/image.jpg",
+    }
+  }
+  style={undefined}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        null,
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "flex": 1,
+          },
+          undefined,
+        ]
+      }
+    >
+      <BVLinearGradient
+        colors={
+          Array [
+            "#ededed",
+            "#f9f9f9",
+          ]
+        }
+        end={
+          Object {
+            "x": 1,
+            "y": 0.25685517452260576,
+          }
+        }
+        locations={
+          Array [
+            0,
+            1,
+          ]
+        }
+        start={
+          Object {
+            "x": 0,
+            "y": 1,
+          }
+        }
+        style={
+          Array [
+            Object {
+              "flex": 1,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</Image>
+`;
+
+exports[`renders correctly 1`] = `
+<Image
+  aspectRatio={1}
+  onLoad={[Function]}
+  source={
+    Object {
+      "uri": "http://example.com/image.jpg",
+    }
+  }
+  style={undefined}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        null,
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "flex": 1,
+          },
+          undefined,
+        ]
+      }
+    >
+      <BVLinearGradient
+        colors={
+          Array [
+            "#ededed",
+            "#f9f9f9",
+          ]
+        }
+        end={
+          Object {
+            "x": 1,
+            "y": 0.25685517452260576,
+          }
+        }
+        locations={
+          Array [
+            0,
+            1,
+          ]
+        }
+        start={
+          Object {
+            "x": 0,
+            "y": 1,
+          }
+        }
+        style={
+          Array [
+            Object {
+              "flex": 1,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</Image>
+`;

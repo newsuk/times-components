@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { StyleSheet, View } from "react-native";
+import Image from "@times-components/image";
 import styles from "./card-styles";
-import CardImage from "./card-loading-image";
-import Gradient from "./card-loading-gradient";
+import Gradient from "./gradient";
 
 const gradientStyles = StyleSheet.create({
   headerContainer: {
@@ -25,7 +25,7 @@ const Loading = ({ horizontal, style }) => {
 
   const imageComponent = (
     <View style={[layoutStyles.childrenContainer, layoutStyles.imageContainer]}>
-      <CardImage style={[layoutStyles.image]} ratio={3 / 2} />
+      <Image uri={""} style={layoutStyles.image} aspectRatio={3 / 2} />
     </View>
   );
 
