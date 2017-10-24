@@ -58,8 +58,8 @@ class WebViewAutoHeight extends React.Component {
   }
 
   handleNavigationChange(navState) {
-    if (navState.text) {
-      const realContentHeight = parseInt(navState.text, 10) || 0; // turn NaN to 0
+    if (navState.title) {
+      const realContentHeight = parseInt(navState.title, 10) || 0; // turn NaN to 0
       this.setState({ realContentHeight });
     }
     if (typeof this.props.onNavigationStateChange === "function") {
