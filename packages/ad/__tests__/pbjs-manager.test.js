@@ -58,7 +58,7 @@ describe("PrebidManager", () => {
       pbjsManager.loadScript();
       const prebid = pbjsManager.pbjs;
       pbjsManager.setConfig();
-      adserverTargeting = prebid.bidderSettings.standard.adserverTargeting;
+      ({ bidderSettings: { standard: { adserverTargeting } } } = prebid);
 
       bidResponse = {
         bidder: "appnexus",

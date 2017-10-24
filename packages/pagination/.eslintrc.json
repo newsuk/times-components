@@ -2,7 +2,15 @@
   "extends": ["airbnb", "prettier", "prettier/react"],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
-    "import/extensions": "off"
+    "import/extensions": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["url"],
+        "aspects": ["noHref", "invalidHref", "preferButton"]
+      }
+    ]
   },
   "settings": {
     "import/resolver": {

@@ -150,7 +150,7 @@ export default AuthorProfileContent => {
           {...props}
           author={authorProfileFixture.data.author}
           isLoading={false}
-          slug={"fiona-hamilton"}
+          slug="fiona-hamilton"
           page={1}
           pageSize={10}
           onTwitterLinkPress={() => {}}
@@ -212,7 +212,7 @@ export default AuthorProfileContent => {
         count={10}
         articles={results.data.author.articles.list}
         author={authorProfileFixture.data.author}
-        slug={"fiona-hamilton"}
+        slug="fiona-hamilton"
         page={1}
         pageSize={3}
         onTwitterLinkPress={() => {}}

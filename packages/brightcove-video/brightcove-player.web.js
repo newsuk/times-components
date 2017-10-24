@@ -3,9 +3,10 @@
 
 import React, { Component } from "react";
 import { Image } from "react-native";
-
 import propTypes from "./brightcove-player.proptypes";
 import defaults from "./brightcove-player.defaults";
+
+const SourcePropType = Image.propTypes.source;
 
 let index = 0;
 
@@ -51,7 +52,6 @@ class BrightcoveVideo extends Component {
       errors: [].concat(BrightcoveVideo.globalErrors),
       isPlaying: "paused",
       isFinished: false,
-      fullscreen: false,
       progress: 0
     };
   }
@@ -246,9 +246,6 @@ BrightcoveVideo.globalErrors = [];
 
 BrightcoveVideo.defaultProps = defaults;
 
-BrightcoveVideo.propTypes = Object.assign(
-  { poster: Image.propTypes.source },
-  propTypes
-);
+BrightcoveVideo.propTypes = { poster: SourcePropType, ...propTypes };
 
 export default BrightcoveVideo;
