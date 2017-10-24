@@ -33,8 +33,7 @@ const PbjsManager = class PbjsManager {
   }
 
   setConfig() {
-    const pbjs = this.pbjs;
-    const options = this.options;
+    const { pbjs, options } = this;
 
     pbjs.bidderTimeout = options.timeout;
 

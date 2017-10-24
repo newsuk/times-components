@@ -1,6 +1,7 @@
 import React from "react";
 import { Text } from "react-native";
 import PropTypes from "prop-types";
+import StylePropTypes from "react-style-proptype";
 
 const styles = {
   text: {
@@ -21,7 +22,7 @@ const ArticleHeadline = ({ text, style }) => (
 
 ArticleHeadline.propTypes = {
   text: PropTypes.string.isRequired,
-  style: Text.propTypes.style
+  style: StylePropTypes
 };
 
 ArticleHeadline.defaultProps = {

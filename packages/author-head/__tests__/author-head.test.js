@@ -25,7 +25,7 @@ it("renders with data", () => {
 
 it("renders without profile picture", () => {
   const tree = renderer
-    .create(<AuthorHead {...data} {...extra} uri={""} />)
+    .create(<AuthorHead {...data} {...extra} uri="" />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

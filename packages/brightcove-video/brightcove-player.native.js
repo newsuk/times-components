@@ -21,7 +21,7 @@ class BrightcoveVideo extends Component {
     super(props);
 
     this.state = {
-      errors: [],
+      // eslint-disable-next-line react/no-unused-state
       appState: AppState.currentState,
       isPlaying: false,
       isFinished: false,
@@ -159,14 +159,12 @@ BrightcoveVideo.defaultProps = Object.assign(
   },
   defaults
 );
-BrightcoveVideo.propTypes = Object.assign(
-  {
-    runNativeCommand: PropTypes.func.isRequired,
-    onChange: PropTypes.func,
-    position: PropTypes.string,
-    zIndex: PropTypes.number
-  },
-  propTypes
-);
+BrightcoveVideo.propTypes = {
+  runNativeCommand: PropTypes.func.isRequired,
+  onChange: PropTypes.func,
+  position: PropTypes.string,
+  zIndex: PropTypes.number,
+  ...propTypes
+};
 
 export default BrightcoveVideo;

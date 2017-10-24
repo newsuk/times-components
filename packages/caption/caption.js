@@ -73,7 +73,7 @@ Caption.propTypes = {
   text: PropTypes.string,
   credits: PropTypes.string,
   style: PropTypes.shape({
-    text: Text.propTypes.style,
+    text: StylePropTypes,
     container: StylePropTypes
   }),
   children: PropTypes.element

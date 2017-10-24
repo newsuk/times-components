@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-byline",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "description": "Article byline information",
   "main": "article-byline",
   "scripts": {
@@ -36,12 +36,12 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
-    "eslint": "3.19.0",
-    "eslint-config-airbnb": "15.0.1",
-    "eslint-config-prettier": "2.3.0",
-    "eslint-plugin-import": "2.6.1",
-    "eslint-plugin-jsx-a11y": "5.1.1",
-    "eslint-plugin-react": "7.1.0",
+    "eslint": "4.9.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-config-prettier": "2.6.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.4.0",
     "flow-bin": "0.42.0",
     "jest": "21.2.1",
     "prettier": "1.7.0",
@@ -52,8 +52,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/link": "0.10.0",
-    "@times-components/markup": "0.11.0",
+    "@times-components/link": "0.10.1",
+    "@times-components/markup": "0.11.1",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.7"
   },

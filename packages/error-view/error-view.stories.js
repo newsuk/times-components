@@ -6,9 +6,10 @@ import { TouchableWithoutFeedback, View, Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { decorateAction } from "@storybook/addon-actions";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import BrightcoveVideo from "@times-components/brightcove-video";
 import PropTypes from "prop-types";
 import StylePropTypes from "react-style-proptype";
-import BrightcoveVideo from "@times-components/brightcove-video";
 
 import ErrorView, { addErrorHandler } from "./error-view";
 

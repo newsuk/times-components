@@ -28,7 +28,7 @@ exports[`Article test on ios renders an error 1`] = `
     disabled={false}
     ellipsizeMode="tail"
   >
-    An error ocurred
+    An error occurred
   </Text>
   <Text
     accessible={true}

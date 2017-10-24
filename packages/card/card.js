@@ -43,7 +43,7 @@ class CardComponent extends React.Component {
     };
   }
   handleLayout(event) {
-    const width = event.nativeEvent.layout.width;
+    const { nativeEvent: { layout: { width } } } = event;
     const isHorizontal = isOrientationHorizontal(width);
     if (isHorizontal !== this.state.isHorizontal) {
       this.setState({ isHorizontal });
@@ -103,12 +103,10 @@ class CardComponent extends React.Component {
   }
 }
 
-CardComponent.propTypes = Object.assign(
-  {
-    image: PropTypes.shape({ uri: PropTypes.string })
-  },
-  ArticleSummary.propTypes
-);
+CardComponent.propTypes = {
+  image: PropTypes.shape({ uri: PropTypes.string }),
+  ...ArticleSummary.propTypes
+};
 
 CardComponent.defaultProps = {
   image: {

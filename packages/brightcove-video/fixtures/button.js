@@ -20,14 +20,14 @@ const Button = props => (
 );
 
 Button.propTypes = {
-  onPress: PropTypes.func.isRequired,
-  buttonText: PropTypes.string.isRequired,
+  onPress: PropTypes.func,
+  buttonText: PropTypes.string,
   testID: PropTypes.string
 };
 
 Button.defaultProps = {
   onPress: () => {},
-  text: "click here",
+  buttonText: "click here",
   testID: "button"
 };
 

@@ -95,14 +95,12 @@ class BrightcoveVideo extends Component {
   }
 }
 
-BrightcoveVideo.propTypes = Object.assign(
-  {
-    resetOnFinish: PropTypes.bool,
-    directToFullscreen: PropTypes.bool
-  },
-  Splash.propTypes,
-  Player.propTypes
-);
+BrightcoveVideo.propTypes = {
+  resetOnFinish: PropTypes.bool,
+  directToFullscreen: PropTypes.bool,
+  ...Splash.propTypes,
+  ...Player.propTypes
+};
 
 BrightcoveVideo.defaultProps = Object.assign(
   {

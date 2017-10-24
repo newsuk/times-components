@@ -32,8 +32,8 @@ it("renders profile articles and invoke callback on article press", done => {
     <AuthorProfileContent
       articles={results.data.author.articles.list}
       author={authorProfileFixture.data.author}
-      slug={"fiona-hamilton"}
-      page={2}
+      slug="fiona-hamilton"
+      page={1}
       pageSize={3}
       onTwitterLinkPress={() => {}}
       onArticlePress={() => done()}
