@@ -33,8 +33,8 @@ const styles = StyleSheet.create({
   }
 });
 
-const AuthorProfileAuthorHead = ({ loading, ...props }) => {
-  if (loading) {
+const AuthorProfileAuthorHead = ({ isLoading, ...props }) => {
+  if (isLoading) {
     return (
       <View style={styles.wrapper}>
         <View style={styles.container} />

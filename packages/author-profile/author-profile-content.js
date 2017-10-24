@@ -34,7 +34,7 @@ class AuthorProfileContent extends React.Component {
     const { count } = this.state;
 
     const {
-      loading,
+      isLoading,
       articles,
       articlesLoading,
       biography,
@@ -66,7 +66,7 @@ class AuthorProfileContent extends React.Component {
           .fill()
           .map((_, id) => ({
             id,
-            loading: true
+            isLoading: true
           }))
       : articles;
 
@@ -89,7 +89,7 @@ class AuthorProfileContent extends React.Component {
         ListHeaderComponent={
           <View>
             <AuthorProfileAuthorHead
-              loading={loading}
+              isLoading={isLoading}
               name={name}
               bio={biography}
               uri={uri}

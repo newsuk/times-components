@@ -7,6 +7,6 @@ export default {
   ...Pagination.propTypes,
   articles: PropTypes.arrayOf(PropTypes.shape()),
   articlesLoading: PropTypes.bool,
-  loading: PropTypes.bool,
+  isLoading: PropTypes.bool,
   onArticlePress: PropTypes.func
 };

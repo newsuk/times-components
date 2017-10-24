@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     paddingRight: 10
   },
   contentContainer: {
-    maxWidth: 800,
+    maxWidth: 680,
     alignSelf: "center",
     width: "100%"
   }
@@ -25,7 +25,7 @@ const AuthorProfileContent = ({
   biography,
   count,
   jobTitle,
-  loading,
+  isLoading,
   name,
   onArticlePress,
   onNext,
@@ -52,14 +52,14 @@ const AuthorProfileContent = ({
         .fill()
         .map((_, id) => ({
           id,
-          loading: true
+          isLoading: true
         }))
     : articles;
 
   return (
     <View>
       <AuthorProfileAuthorHead
-        loading={loading}
+        isLoading={isLoading}
         name={name}
         bio={biography}
         uri={uri}

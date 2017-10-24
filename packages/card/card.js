@@ -22,7 +22,7 @@ class CardComponent extends React.Component {
   handleLayout(event) {
     const { nativeEvent: { layout: { width } } } = event;
     const isHorizontal = isOrientationHorizontal(width);
-    const isLoaded = this.state.isLoaded
+    const isLoaded = this.state.isLoaded;
     if (!isLoaded || isHorizontal !== this.state.isHorizontal) {
       this.setState({ isHorizontal, isLoaded: true });
     }
@@ -30,12 +30,10 @@ class CardComponent extends React.Component {
   render() {
     const { isLoaded, isHorizontal } = this.state;
 
-    if (this.props.loading) {
+    if (this.props.isLoading) {
       return (
         <View onLayout={this.handleLayout}>
-          { isLoaded ? (
-            <Loading horizontal={isHorizontal} />
-          ) : null }
+          {isLoaded ? <Loading horizontal={isHorizontal} /> : null}
         </View>
       );
     }

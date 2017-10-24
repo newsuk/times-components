@@ -154,7 +154,7 @@ storiesOf("AuthorProfile", module)
   })
   .add("Loading", () => {
     const props = {
-      loading: true,
+      isLoading: true,
       articlesLoading: true,
       pageSize: 3,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),

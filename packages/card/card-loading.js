@@ -14,6 +14,9 @@ const gradientStyles = StyleSheet.create({
   textContainer: {
     height: 10,
     marginBottom: 10
+  },
+  noMarginBottom: {
+    marginBottom: 0
   }
 });
 
@@ -36,12 +39,7 @@ const Loading = ({ horizontal, style }) => {
         <Gradient style={[gradientStyles.textContainer]} angle={267} />
         <Gradient style={[gradientStyles.textContainer]} angle={267} />
         <Gradient
-          style={[
-            gradientStyles.textContainer,
-            {
-              marginBottom: 0
-            }
-          ]}
+          style={[gradientStyles.textContainer, gradientStyles.noMarginBottom]}
           angle={267}
         />
       </View>

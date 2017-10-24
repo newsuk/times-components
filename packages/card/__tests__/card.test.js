@@ -97,7 +97,7 @@ it("renders component horizontal above breakpoint", done => {
 
 it("don't set same card orientation", done => {
   const comp = new Card(...props);
-
+  comp.state.isLoaded = true;
   comp.setState = ({ isHorizontal }) => {
     expect(isHorizontal).toBeTruthy();
 

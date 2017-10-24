@@ -17,7 +17,7 @@ const AuthorProfileItem = item => {
     style,
     content,
     label,
-    loading,
+    isLoading,
     onPress,
     publicationName,
     publishedTime,
@@ -31,10 +31,10 @@ const AuthorProfileItem = item => {
     get(item, "leadAsset.posterImage.crop.url", null)
   );
 
-  if (loading) {
+  if (isLoading) {
     return (
       <View style={[styles.container, style]}>
-        <Card loading={loading} />
+        <Card isLoading={isLoading} />
       </View>
     );
   }
