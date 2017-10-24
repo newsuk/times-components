@@ -14,24 +14,28 @@ class CardComponent extends React.Component {
     super(props);
     this.handleLayout = this.handleLayout.bind(this);
     this.state = {
-      isHorizontal: false
+      isHorizontal: false,
+      isLoaded: false
     };
   }
 
   handleLayout(event) {
     const { nativeEvent: { layout: { width } } } = event;
     const isHorizontal = isOrientationHorizontal(width);
-    if (isHorizontal !== this.state.isHorizontal) {
-      this.setState({ isHorizontal });
+    const isLoaded = this.state.isLoaded
+    if (!isLoaded || isHorizontal !== this.state.isHorizontal) {
+      this.setState({ isHorizontal, isLoaded: true });
     }
   }
   render() {
-    const { isHorizontal } = this.state;
+    const { isLoaded, isHorizontal } = this.state;
 
     if (this.props.loading) {
       return (
         <View onLayout={this.handleLayout}>
-          <Loading horizontal={isHorizontal} />
+          { isLoaded ? (
+            <Loading horizontal={isHorizontal} />
+          ) : null }
         </View>
       );
     }
@@ -50,7 +54,7 @@ class CardComponent extends React.Component {
     const imageComponent =
       image && image.uri ? (
         <View
-          style={[layoutStyles.imageContainer, layoutStyles.childrenContainer]}
+          style={[layoutStyles.childrenContainer, layoutStyles.imageContainer]}
         >
           <Image
             style={layoutStyles.image}
@@ -62,23 +66,25 @@ class CardComponent extends React.Component {
 
     return (
       <View onLayout={this.handleLayout}>
-        <View style={[layoutStyles.container, style]}>
-          {imageComponent}
-          <View
-            style={[
-              layoutStyles.childrenContainer,
-              layoutStyles.summaryContainer
-            ]}
-          >
-            <ArticleSummary
-              label={label}
-              headline={headline}
-              text={text}
-              date={date}
-              publication={publication}
-            />
+        {isLoaded ? (
+          <View style={[layoutStyles.container, style]}>
+            {imageComponent}
+            <View
+              style={[
+                layoutStyles.childrenContainer,
+                layoutStyles.summaryContainer
+              ]}
+            >
+              <ArticleSummary
+                label={label}
+                headline={headline}
+                text={text}
+                date={date}
+                publication={publication}
+              />
+            </View>
           </View>
-        </View>
+        ) : null}
       </View>
     );
   }

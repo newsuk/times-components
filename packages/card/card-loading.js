@@ -21,7 +21,7 @@ const Loading = ({ horizontal, style }) => {
   const layoutStyles = horizontal ? styles.horizontal : styles.vertical;
 
   const imageComponent = (
-    <View style={[layoutStyles.imageContainer, layoutStyles.childrenContainer]}>
+    <View style={[layoutStyles.childrenContainer, layoutStyles.imageContainer]}>
       <CardImage style={[layoutStyles.image]} ratio={3 / 2} />
     </View>
   );
