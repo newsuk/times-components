@@ -6,8 +6,9 @@ import ArticleSummary from "./article-summary";
 import LateralSpacingDecorator from "../../storybook/decorators/lateral-spacing";
 import articleFixture from "./fixtures/article.json";
 import reviewFixture from "./fixtures/review.json";
+import emptyParagraphFixture from "./fixtures/article-empty-paragraph.json";
 
-[articleFixture, reviewFixture].forEach(fixture => {
+[articleFixture, reviewFixture, emptyParagraphFixture].forEach(fixture => {
   // eslint-disable-next-line no-param-reassign
   fixture.date = new Date(fixture.date);
 });

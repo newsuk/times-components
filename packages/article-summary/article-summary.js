@@ -36,30 +36,20 @@ const styles = {
   }
 };
 
-const format = {
-  content(arr) {
-    return arr.map(item => {
-      let name = item.name;
-      if (!item.children.find(child => child.name === "break"))
-        name = "sentence";
-      return Object.assign({}, item, { name });
-    });
-  },
-  teaser(item) {
-    return Object.assign({}, item, { name: "teaser" });
-  }
+const trimEmptyContent = arr => {
+  const reversed = [...arr].reverse();
+  const firstElWithContent = reversed.findIndex(el => el.children.length > 0);
+  return reversed.slice(firstElWithContent).reverse();
 };
 
 const summarise = text => {
-  let summary = [];
-  if (text.length) {
-    const initial = text.slice(0, text.length - 1);
-    const tail = text[text.length - 1];
+  let summary = trimEmptyContent(text);
 
-    const content = format.content(initial);
-    const teaser = format.teaser(tail);
-
-    summary = [...content, teaser];
+  if (summary.length) {
+    const initial = summary.slice(0, summary.length - 1);
+    const last = summary[summary.length - 1];
+    const teaser = Object.assign({}, last, { name: "teaser" });
+    summary = [...initial, teaser];
   }
   return summary;
 };

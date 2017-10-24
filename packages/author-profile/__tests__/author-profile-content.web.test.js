@@ -33,7 +33,7 @@ it("renders profile articles and invoke callback on article press", done => {
       articles={results.data.author.articles.list}
       author={authorProfileFixture.data.author}
       slug={"fiona-hamilton"}
-      page={1}
+      page={2}
       pageSize={3}
       onTwitterLinkPress={() => {}}
       onArticlePress={() => done()}

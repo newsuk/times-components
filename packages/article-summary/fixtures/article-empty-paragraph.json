@@ -30,6 +30,11 @@
           "children": []
         }
       ]
+    },
+    {
+      "name": "paragraph",
+      "attributes": {},
+      "children": []
     }
   ]
 }
