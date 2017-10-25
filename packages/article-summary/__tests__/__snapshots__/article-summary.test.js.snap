@@ -181,7 +181,7 @@ exports[`renders an article-summary component with content including line breaks
         
 
       </Text>
-       ITV
+      ITV
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -222,7 +222,7 @@ exports[`renders an article-summary component with content including line breaks
         
 
       </Text>
-       BBC Two
+      BBC Two
       <Text
         accessible={true}
         allowFontScaling={true}
