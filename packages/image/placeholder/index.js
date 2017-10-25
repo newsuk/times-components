@@ -34,12 +34,12 @@ class Placeholder extends React.Component {
 
     const tComponent = width ? (
       <View style={[styles.container, styles.t]}>
-        <T width={64} height={64} />
+        <T width={width * 0.15} height={width * 0.15} />
       </View>
     ) : null;
 
     return (
-      <View style={[styles.container, style]}>
+      <View style={[styles.container, style]} onLayout={this.handleLayout}>
         <Gradient angle={264} style={[styles.container, styles.gradient]}>
           {tComponent}
         </Gradient>

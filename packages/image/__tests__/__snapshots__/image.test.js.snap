@@ -16,12 +16,15 @@ exports[`allows styling 1`] = `
   }
 >
   <View
+    onLayout={[Function]}
     style={
       Array [
         Object {
           "flex": 1,
         },
-        null,
+        Object {
+          "width": 100,
+        },
       ]
     }
   >
@@ -85,6 +88,7 @@ exports[`prepends https schema 1`] = `
   style={undefined}
 >
   <View
+    onLayout={[Function]}
     style={
       Array [
         Object {
@@ -154,6 +158,7 @@ exports[`renders correctly 1`] = `
   style={undefined}
 >
   <View
+    onLayout={[Function]}
     style={
       Array [
         Object {

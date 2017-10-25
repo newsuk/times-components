@@ -446,8 +446,8 @@ exports[`renders profile content 1`] = `
                   Object {
                     "flexBasis": 0,
                     "flexGrow": 2,
-                    "paddingBottom": 0,
-                    "paddingRight": 10,
+                    "marginBottom": 0,
+                    "marginRight": 10,
                   },
                 ]
               }
@@ -463,6 +463,7 @@ exports[`renders profile content 1`] = `
                 style={undefined}
               >
                 <View
+                  onLayout={[Function]}
                   style={
                     Array [
                       Object {
@@ -798,8 +799,8 @@ exports[`renders profile content 1`] = `
                   Object {
                     "flexBasis": 0,
                     "flexGrow": 2,
-                    "paddingBottom": 0,
-                    "paddingRight": 10,
+                    "marginBottom": 0,
+                    "marginRight": 10,
                   },
                 ]
               }
@@ -816,6 +817,7 @@ exports[`renders profile content 1`] = `
 >>>>>>> feat: move loading from the image to the image
               >
                 <View
+                  onLayout={[Function]}
                   style={
                     Array [
 <<<<<<< HEAD
@@ -1462,8 +1464,8 @@ exports[`renders profile content 1`] = `
                   Object {
                     "flexBasis": 0,
                     "flexGrow": 2,
-                    "paddingBottom": 0,
-                    "paddingRight": 10,
+                    "marginBottom": 0,
+                    "marginRight": 10,
                   },
                 ]
               }
@@ -1479,6 +1481,7 @@ exports[`renders profile content 1`] = `
                 style={undefined}
               >
                 <View
+                  onLayout={[Function]}
                   style={
                     Array [
                       Object {
@@ -1792,8 +1795,8 @@ exports[`renders profile content 1`] = `
                   Object {
                     "flexBasis": 0,
                     "flexGrow": 2,
-                    "paddingBottom": 0,
-                    "paddingRight": 10,
+                    "marginBottom": 0,
+                    "marginRight": 10,
                   },
                 ]
               }
@@ -1809,6 +1812,7 @@ exports[`renders profile content 1`] = `
                 style={undefined}
               >
                 <View
+                  onLayout={[Function]}
                   style={
                     Array [
                       Object {
@@ -2122,8 +2126,8 @@ exports[`renders profile content 1`] = `
                   Object {
                     "flexBasis": 0,
                     "flexGrow": 2,
-                    "paddingBottom": 0,
-                    "paddingRight": 10,
+                    "marginBottom": 0,
+                    "marginRight": 10,
                   },
                 ]
               }
@@ -2139,6 +2143,7 @@ exports[`renders profile content 1`] = `
                 style={undefined}
               >
                 <View
+                  onLayout={[Function]}
                   style={
                     Array [
                       Object {
@@ -2452,8 +2457,8 @@ exports[`renders profile content 1`] = `
                   Object {
                     "flexBasis": 0,
                     "flexGrow": 2,
-                    "paddingBottom": 0,
-                    "paddingRight": 10,
+                    "marginBottom": 0,
+                    "marginRight": 10,
                   },
                 ]
               }
@@ -2469,6 +2474,7 @@ exports[`renders profile content 1`] = `
                 style={undefined}
               >
                 <View
+                  onLayout={[Function]}
                   style={
                     Array [
                       Object {
@@ -2782,8 +2788,8 @@ exports[`renders profile content 1`] = `
                   Object {
                     "flexBasis": 0,
                     "flexGrow": 2,
-                    "paddingBottom": 0,
-                    "paddingRight": 10,
+                    "marginBottom": 0,
+                    "marginRight": 10,
                   },
                 ]
               }
@@ -2799,6 +2805,7 @@ exports[`renders profile content 1`] = `
                 style={undefined}
               >
                 <View
+                  onLayout={[Function]}
                   style={
                     Array [
                       Object {
@@ -3112,8 +3119,8 @@ exports[`renders profile content 1`] = `
                   Object {
                     "flexBasis": 0,
                     "flexGrow": 2,
-                    "paddingBottom": 0,
-                    "paddingRight": 10,
+                    "marginBottom": 0,
+                    "marginRight": 10,
                   },
                 ]
               }
@@ -3129,6 +3136,7 @@ exports[`renders profile content 1`] = `
                 style={undefined}
               >
                 <View
+                  onLayout={[Function]}
                   style={
                     Array [
                       Object {
@@ -3442,8 +3450,8 @@ exports[`renders profile content 1`] = `
                   Object {
                     "flexBasis": 0,
                     "flexGrow": 2,
-                    "paddingBottom": 0,
-                    "paddingRight": 10,
+                    "marginBottom": 0,
+                    "marginRight": 10,
                   },
                 ]
               }
@@ -3459,6 +3467,7 @@ exports[`renders profile content 1`] = `
                 style={undefined}
               >
                 <View
+                  onLayout={[Function]}
                   style={
                     Array [
                       Object {
@@ -3772,8 +3781,8 @@ exports[`renders profile content 1`] = `
                   Object {
                     "flexBasis": 0,
                     "flexGrow": 2,
-                    "paddingBottom": 0,
-                    "paddingRight": 10,
+                    "marginBottom": 0,
+                    "marginRight": 10,
                   },
                 ]
               }
@@ -3789,6 +3798,7 @@ exports[`renders profile content 1`] = `
                 style={undefined}
               >
                 <View
+                  onLayout={[Function]}
                   style={
                     Array [
                       Object {
@@ -4727,8 +4737,8 @@ exports[`renders profile content component 1`] = `
                     Object {
                       "flexBasis": 0,
                       "flexGrow": 2,
-                      "paddingBottom": 0,
-                      "paddingRight": 10,
+                      "marginBottom": 0,
+                      "marginRight": 10,
                     },
                   ]
                 }
@@ -4744,6 +4754,7 @@ exports[`renders profile content component 1`] = `
                   style={undefined}
                 >
                   <View
+                    onLayout={[Function]}
                     style={
                       Array [
                         Object {
@@ -5441,8 +5452,8 @@ exports[`renders profile content item component 1`] = `
               Object {
                 "flexBasis": 0,
                 "flexGrow": 2,
-                "paddingBottom": 0,
-                "paddingRight": 10,
+                "marginBottom": 0,
+                "marginRight": 10,
               },
             ]
           }
@@ -5458,6 +5469,7 @@ exports[`renders profile content item component 1`] = `
             style={undefined}
           >
             <View
+              onLayout={[Function]}
               style={
                 Array [
                   Object {
@@ -5690,8 +5702,8 @@ exports[`renders profile content item component with no image  1`] = `
               Object {
                 "flexBasis": 0,
                 "flexGrow": 2,
-                "paddingBottom": 0,
-                "paddingRight": 10,
+                "marginBottom": 0,
+                "marginRight": 10,
               },
             ]
           }
@@ -5707,6 +5719,7 @@ exports[`renders profile content item component with no image  1`] = `
             style={undefined}
           >
             <View
+              onLayout={[Function]}
               style={
                 Array [
                   Object {

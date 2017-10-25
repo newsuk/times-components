@@ -9,7 +9,7 @@ const styles = {
     flexShrink: 1
   },
   imageContainer: {
-    paddingBottom: 10
+    marginBottom: 10
   }
 };
 
@@ -24,8 +24,8 @@ export default {
       ...styles.imageContainer,
       flexGrow: 2,
       flexBasis: 0,
-      paddingRight: 10,
-      paddingBottom: 0
+      marginRight: 10,
+      marginBottom: 0
     },
     summaryContainer: {
       flexGrow: 3,

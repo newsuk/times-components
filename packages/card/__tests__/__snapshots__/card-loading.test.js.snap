@@ -19,7 +19,7 @@ exports[`renders loading card state 1`] = `
           "flexShrink": 1,
         },
         Object {
-          "paddingBottom": 10,
+          "marginBottom": 10,
         },
       ]
     }

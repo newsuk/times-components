@@ -31,7 +31,7 @@ class TimesImage extends Component {
         aspectRatio={aspectRatio}
         onLoad={this.handleLoad}
       >
-        {isLoaded ? null : <Placeholder />}
+        {isLoaded ? null : <Placeholder style={style} />}
       </Image>
     );
   }

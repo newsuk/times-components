@@ -24,8 +24,8 @@ exports[`renders horizontal above breakpoint 1`] = `
           Object {
             "flexBasis": 0,
             "flexGrow": 2,
-            "paddingBottom": 0,
-            "paddingRight": 10,
+            "marginBottom": 0,
+            "marginRight": 10,
           },
         ]
       }
@@ -245,7 +245,7 @@ exports[`renders vertical by default 1`] = `
             "flexShrink": 1,
           },
           Object {
-            "paddingBottom": 10,
+            "marginBottom": 10,
           },
         ]
       }
@@ -261,6 +261,7 @@ exports[`renders vertical by default 1`] = `
         style={undefined}
       >
         <View
+          onLayout={[Function]}
           style={
             Array [
               Object {
