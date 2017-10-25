@@ -34,11 +34,11 @@ class TimesImage extends Component {
       bottom: 0,
       left: 0,
       right: 0
-    }
+    };
 
     const placeholderComponent = isLoaded ? null : (
-      <Placeholder style={placeholderStyle}/>
-    )
+      <Placeholder style={placeholderStyle} />
+    );
 
     const boundedImg = (
       <div style={aspectRatioStyle}>
@@ -48,7 +48,7 @@ class TimesImage extends Component {
           onLoad={this.handleLoad}
           alt=""
         />
-        { placeholderComponent }
+        {placeholderComponent}
       </div>
     );
 
