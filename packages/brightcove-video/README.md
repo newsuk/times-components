@@ -58,6 +58,7 @@ Properties types are defined in `./brightcove-video.proptypes.js`
 | `playerId` | string | ID of the player (web only)
 | `width` | number | width of the player
 | `height` | number | height of the player
+| `poster` | object | poster [image source](https://facebook.github.io/react-native/docs/image.html#source)
 | `onError` | function | Handle errors
 | `onPlay` | function | Handles play events
 | `onPause` | function | Handles pause events
