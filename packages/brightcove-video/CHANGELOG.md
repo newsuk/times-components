@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.4"></a>
+## [1.6.4](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.6.3...@times-components/brightcove-video@1.6.4) (2017-10-25)
+
+
+### Bug Fixes
+
+* simple brightcove activity with fullscreen icon hidden ([#329](https://github.com/newsuk/times-components/issues/329)) ([e9439e6](https://github.com/newsuk/times-components/commit/e9439e6))
+
+
+
+
 <a name="1.6.3"></a>
 ## [1.6.3](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.6.2...@times-components/brightcove-video@1.6.3) (2017-10-25)
 
