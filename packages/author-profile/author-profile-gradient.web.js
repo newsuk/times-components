@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
-import { View, ViewPropTypes } from "react-native";
+import StylePropTypes from "react-style-proptype";
+import { View } from "react-native";
 
 const Gradient = ({ angle, children, style }) => (
   <View
@@ -28,7 +29,7 @@ Gradient.propTypes = {
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element)
   ]),
-  style: ViewPropTypes.style
+  style: StylePropTypes
 };
 
 export default Gradient;

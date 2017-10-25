@@ -9,7 +9,7 @@ import Placeholder from "../placeholder";
 Enzyme.configure({ adapter: new React16Adapter() });
 
 it("renders loading image when width set", () => {
-  const wrapper = shallow(<Placeholder uri={""} />);
+  const wrapper = shallow(<Placeholder uri="" />);
   wrapper.setState({
     width: 300
   });

@@ -25,7 +25,7 @@ const Loading = ({ horizontal, style }) => {
 
   const imageComponent = (
     <View style={[layoutStyles.childrenContainer, layoutStyles.imageContainer]}>
-      <Image uri={""} style={layoutStyles.image} aspectRatio={3 / 2} />
+      <Image uri="" style={layoutStyles.image} aspectRatio={3 / 2} />
     </View>
   );
 

@@ -1,5 +1,6 @@
 import React from "react";
-import { StyleSheet, View, ViewPropTypes } from "react-native";
+import { StyleSheet, View } from "react-native";
+import StylePropTypes from "react-style-proptype";
 import Gradient from "./gradient";
 import T from "./t";
 
@@ -53,7 +54,7 @@ Placeholder.defaultProps = {
 };
 
 Placeholder.propTypes = {
-  style: ViewPropTypes.style
+  style: StylePropTypes
 };
 
 export default Placeholder;
