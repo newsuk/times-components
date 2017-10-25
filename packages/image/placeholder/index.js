@@ -54,7 +54,8 @@ Placeholder.defaultProps = {
 };
 
 Placeholder.propTypes = {
-  style: StylePropTypes
+  // eslint-disable-next-line react/no-typos
+  style: StylePropTypes.supportingArrays
 };
 
 export default Placeholder;

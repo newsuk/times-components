@@ -9,7 +9,7 @@ const Gradient = ({ angle, children, style }) => (
       {
         backgroundImage: `linear-gradient(${angle}deg, #f9f9f9 0%, #ededed 100%)`
       },
-      style
+      ...style
     ]}
   >
     {children}
@@ -28,7 +28,8 @@ Gradient.propTypes = {
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element)
   ]),
-  style: StylePropTypes
+  // eslint-disable-next-line react/no-typos
+  style: StylePropTypes.supportingArrays
 };
 
 export default Gradient;

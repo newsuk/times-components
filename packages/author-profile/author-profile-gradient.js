@@ -36,7 +36,8 @@ Gradient.propTypes = {
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element)
   ]),
-  style: StylePropTypes
+  // eslint-disable-next-line react/no-typos
+  style: StylePropTypes.supportingArrays
 };
 
 export default Gradient;

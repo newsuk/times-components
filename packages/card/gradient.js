@@ -13,9 +13,9 @@ const styles = StyleSheet.create({
 const Gradient = ({ angle, children, style }) => (
   <View style={style}>
     <LinearGradient
-      start={{ x: 0, y: 1.0 }}
+      start={{ x: 0.0, y: 1.0 }}
       end={{ x: 1.0, y: 1 - Math.sin(angle * Math.PI / 360) }}
-      locations={[0, 1.0]}
+      locations={[0.0, 1.0]}
       colors={["#ededed", "#f9f9f9"]}
       style={[styles.container]}
     >
@@ -36,7 +36,8 @@ Gradient.propTypes = {
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element)
   ]),
-  style: StylePropTypes
+  // eslint-disable-next-line react/no-typos
+  style: StylePropTypes.supportingArrays
 };
 
 export default Gradient;
