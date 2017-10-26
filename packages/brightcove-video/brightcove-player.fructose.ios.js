@@ -67,7 +67,7 @@ withComponent(
   "multiple brightcove players",
   async fructose => {
     const player1 = id => element(by.id("player1").withDescendant(by.id(id)));
-    const player2 = id => element(by.id("player1").withDescendant(by.id(id)));
+    const player2 = id => element(by.id("player2").withDescendant(by.id(id)));
 
     beforeEach(async () => {
       await device.launchApp({ newInstance: true });
