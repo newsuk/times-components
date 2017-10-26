@@ -72,6 +72,8 @@ const styles = StyleSheet.create({
     textDecorationLine: "none",
     ...Platform.select({
       web: {
+        WebkitFontSmoothing: "antialiased",
+        MozOsxFontSmoothing: "grayscale",
         order: 3
       }
     })
@@ -83,8 +85,9 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 26,
     color: "#333",
-    maxWidth: "88%",
-    paddingBottom: 32,
+    maxWidth: 660,
+    paddingTop: 16,
+    paddingBottom: 16,
     ...Platform.select({
       web: {
         WebkitFontSmoothing: "antialiased",

@@ -70,8 +70,9 @@ exports[`renders 1`] = `
           "fontFamily": "TimesDigitalW04",
           "fontSize": 16,
           "lineHeight": 26,
-          "maxWidth": "88%",
-          "paddingBottom": 32,
+          "maxWidth": 660,
+          "paddingBottom": 16,
+          "paddingTop": 16,
           "textAlign": "center",
         }
       }
@@ -176,8 +177,9 @@ exports[`renders with data 1`] = `
           "fontFamily": "TimesDigitalW04",
           "fontSize": 16,
           "lineHeight": 26,
-          "maxWidth": "88%",
-          "paddingBottom": 32,
+          "maxWidth": 660,
+          "paddingBottom": 16,
+          "paddingTop": 16,
           "textAlign": "center",
         }
       }
@@ -354,8 +356,9 @@ exports[`renders without profile picture 1`] = `
           "fontFamily": "TimesDigitalW04",
           "fontSize": 16,
           "lineHeight": 26,
-          "maxWidth": "88%",
-          "paddingBottom": 32,
+          "maxWidth": 660,
+          "paddingBottom": 16,
+          "paddingTop": 16,
           "textAlign": "center",
         }
       }
