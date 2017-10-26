@@ -19,15 +19,18 @@ const getStyles = (width, height) =>
       alignItems: "center",
       backgroundColor: "#F9F9F9",
       width,
-      height
+      height,
+      borderColor: "#DBDBDB",
+      borderWidth: 1,
+      borderStyle: "solid"
     },
     placeholderText: {
-      fontSize: 12,
+      fontSize: 11,
       fontFamily:
         Platform.OS === "android" ? fontFamilyAndroid : fontFamilyWebAndIos,
       backgroundColor: "#F9F9F9",
       color: "#696969",
-      borderColor: "#D8D8D8",
+      borderColor: "#DBDBDB",
       borderWidth: 1,
       borderStyle: "solid",
       position: "absolute",

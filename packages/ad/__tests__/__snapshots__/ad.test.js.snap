@@ -147,6 +147,9 @@ exports[`Native Ad test renders a native ad slot 1`] = `
         Object {
           "alignItems": "center",
           "backgroundColor": "#F9F9F9",
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "borderWidth": 1,
           "height": 250,
           "justifyContent": "center",
           "width": 320,
@@ -156,14 +159,14 @@ exports[`Native Ad test renders a native ad slot 1`] = `
       <svg
         height={250}
         style={Object {}}
-        viewBox="-50 0 320 250"
+        viewBox="-15 0 269 250"
         width={320}
       >
         <g
           fill="none"
           fillRule="evenodd"
           id="Page-1"
-          opacity="0.049999997"
+          opacity="0.07"
           stroke="none"
           strokeWidth="1"
           style={Object {}}
@@ -184,12 +187,12 @@ exports[`Native Ad test renders a native ad slot 1`] = `
         style={
           Object {
             "backgroundColor": "#F9F9F9",
-            "borderColor": "#D8D8D8",
+            "borderColor": "#DBDBDB",
             "borderStyle": "solid",
             "borderWidth": 1,
             "color": "#696969",
             "fontFamily": "TimesDigitalW04",
-            "fontSize": 12,
+            "fontSize": 11,
             "letterSpacing": 1.5,
             "paddingBottom": 5,
             "paddingLeft": 10,
