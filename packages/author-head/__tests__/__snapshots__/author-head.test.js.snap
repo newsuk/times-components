@@ -52,7 +52,7 @@ exports[`renders 1`] = `
       style={
         Object {
           "color": "#696969",
-          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontFamily": "TimesDigital-RegularSC",
           "fontSize": 15,
         }
       }
@@ -71,8 +71,7 @@ exports[`renders 1`] = `
           "fontSize": 16,
           "lineHeight": 26,
           "maxWidth": 660,
-          "paddingBottom": 16,
-          "paddingTop": 16,
+          "padding": 16,
           "textAlign": "center",
         }
       }
@@ -133,7 +132,7 @@ exports[`renders with data 1`] = `
       style={
         Object {
           "color": "#696969",
-          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontFamily": "TimesDigital-RegularSC",
           "fontSize": 15,
         }
       }
@@ -178,8 +177,7 @@ exports[`renders with data 1`] = `
           "fontSize": 16,
           "lineHeight": 26,
           "maxWidth": 660,
-          "paddingBottom": 16,
-          "paddingTop": 16,
+          "padding": 16,
           "textAlign": "center",
         }
       }
@@ -312,7 +310,7 @@ exports[`renders without profile picture 1`] = `
       style={
         Object {
           "color": "#696969",
-          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontFamily": "TimesDigital-RegularSC",
           "fontSize": 15,
         }
       }
@@ -357,8 +355,7 @@ exports[`renders without profile picture 1`] = `
           "fontSize": 16,
           "lineHeight": 26,
           "maxWidth": 660,
-          "paddingBottom": 16,
-          "paddingTop": 16,
+          "padding": 16,
           "textAlign": "center",
         }
       }

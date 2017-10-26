@@ -11,9 +11,6 @@ import withResponsiveStyle, {
 import { withTrackEvents } from "@times-components/tracking";
 import { renderTrees, treePropType } from "@times-components/markup";
 
-const fontFamilyWebAndIos = "TimesDigitalW04";
-const fontFamilyAndroid = "TimesDigitalW04-Regular";
-
 const styles = StyleSheet.create({
   container: {
     width: "100%",
@@ -53,7 +50,7 @@ const styles = StyleSheet.create({
     })
   },
   title: {
-    fontFamily: "TimesDigitalW04-RegularSC",
+    fontFamily: "TimesDigital-RegularSC",
     fontSize: 15,
     color: "#696969",
     ...Platform.select({
@@ -79,15 +76,13 @@ const styles = StyleSheet.create({
     })
   },
   bio: {
-    fontFamily:
-      Platform.OS === "android" ? fontFamilyAndroid : fontFamilyWebAndIos,
+    fontFamily: "TimesDigitalW04",
     textAlign: "center",
     fontSize: 16,
     lineHeight: 26,
     color: "#333",
     maxWidth: 660,
-    paddingTop: 16,
-    paddingBottom: 16,
+    padding: 16,
     ...Platform.select({
       web: {
         WebkitFontSmoothing: "antialiased",
