@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.6"></a>
+## [1.6.6](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.6.5...@times-components/brightcove-video@1.6.6) (2017-10-26)
+
+
+### Bug Fixes
+
+* make tests more reliable ([#325](https://github.com/newsuk/times-components/issues/325)) ([d2d8090](https://github.com/newsuk/times-components/commit/d2d8090))
+
+
+
+
+<a name="1.6.5"></a>
+## [1.6.5](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.6.4...@times-components/brightcove-video@1.6.5) (2017-10-26)
+
+
+
+
+<a name="1.6.4"></a>
+## [1.6.4](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.6.3...@times-components/brightcove-video@1.6.4) (2017-10-25)
+
+
+### Bug Fixes
+
+* simple brightcove activity with fullscreen icon hidden ([#329](https://github.com/newsuk/times-components/issues/329)) ([e9439e6](https://github.com/newsuk/times-components/commit/e9439e6))
+
+
+
+
+<a name="1.6.3"></a>
+## [1.6.3](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.6.2...@times-components/brightcove-video@1.6.3) (2017-10-25)
+
+
+
+
 <a name="1.6.2"></a>
 ## [1.6.2](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.6.1...@times-components/brightcove-video@1.6.2) (2017-10-24)
 

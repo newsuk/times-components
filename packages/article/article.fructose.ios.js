@@ -1,4 +1,4 @@
-/* globals withComponent device  afterEach test expect element by beforeEach waitFor */
+/* globals withComponent device test expect element by beforeEach waitFor */
 
 import React from "react";
 import Article from "./article";
@@ -15,12 +15,9 @@ withComponent(
   "default non interactive article",
   async fructose => {
     beforeEach(async () => {
+      await device.launchApp({ newInstance: true });
       await fructose.loadComponent();
       await waitFor(element(by.id("listView")));
-    });
-
-    afterEach(async () => {
-      await device.reloadReactNative();
     });
 
     test("default Article should render correctly", async () => {
