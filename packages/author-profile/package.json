@@ -1,27 +1,19 @@
 {
   "name": "@times-components/author-profile",
-  "version": "0.18.6",
+  "version": "0.21.1",
   "description": "Author info along with articles they have written",
   "main": "author-profile",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
-    "test:watch": "jest --bail --verbose --watchAll",
-    "test": "jest --bail --ci --coverage",
+    "test:watch": "npm run test:native -- --bail --verbose --watchAll",
+    "test:native": "jest --config='./jest.config.json'",
+    "test:web": "jest --config='./jest.config.web.json'",
+    "test": "npm run test:native -- --ci --bail --coverage && npm run test:web -- --ci --bail --coverage",
     "prettier:diff": "prettier --list-different '**/*.+(js|json)'",
     "lint": "eslint . && npm run prettier:diff"
   },
   "jest": {
-    "preset": "react-native",
-    "rootDir": "../../",
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
-    "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/author-profile/__tests__/**.test.js"
-    ]
+    "rootDir": "../../"
   },
   "repository": {
     "type": "git",
@@ -51,12 +43,12 @@
     "enzyme": "3.1.0",
     "enzyme-adapter-react-16": "1.0.1",
     "enzyme-to-json": "3.0.1",
-    "eslint": "3.19.0",
-    "eslint-config-airbnb": "15.0.1",
-    "eslint-config-prettier": "2.3.0",
-    "eslint-plugin-import": "2.6.1",
-    "eslint-plugin-jsx-a11y": "5.1.1",
-    "eslint-plugin-react": "7.1.0",
+    "eslint": "4.9.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-config-prettier": "2.6.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.4.0",
     "flow-bin": "0.42.0",
     "jest": "21.2.1",
     "jsdom": "11.1.0",
@@ -68,11 +60,11 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/author-head": "0.8.1",
-    "@times-components/card": "0.8.0",
-    "@times-components/link": "0.10.0",
-    "@times-components/pagination": "0.10.1",
-    "@times-components/provider": "0.13.2",
+    "@times-components/author-head": "0.8.4",
+    "@times-components/card": "0.8.3",
+    "@times-components/link": "0.10.1",
+    "@times-components/pagination": "0.10.2",
+    "@times-components/provider": "0.14.1",
     "jest-cli": "20.0.4",
     "lodash.get": "4.4.2",
     "lodash.merge": "4.6.0",

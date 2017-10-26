@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
 
 const AuthorProfileLoading = () => (
   <View style={styles.container}>
-    <ActivityIndicator size={"large"} />
+    <ActivityIndicator size="large" />
   </View>
 );
 

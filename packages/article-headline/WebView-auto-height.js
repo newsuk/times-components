@@ -4,6 +4,7 @@
 import React from "react";
 import { WebView } from "react-native";
 import PropTypes from "prop-types";
+import StylePropTypes from "react-style-proptype";
 
 const script = `
 <script>
@@ -57,8 +58,8 @@ class WebViewAutoHeight extends React.Component {
   }
 
   handleNavigationChange(navState) {
-    if (navState.text) {
-      const realContentHeight = parseInt(navState.text, 10) || 0; // turn NaN to 0
+    if (navState.title) {
+      const realContentHeight = parseInt(navState.title, 10) || 0; // turn NaN to 0
       this.setState({ realContentHeight });
     }
     if (typeof this.props.onNavigationStateChange === "function") {
@@ -67,8 +68,7 @@ class WebViewAutoHeight extends React.Component {
   }
 
   render() {
-    const { source, style, minHeight } = this.props;
-    const html = source.html;
+    const { source: { baseUrl, html }, style, minHeight } = this.props;
 
     if (!html) {
       throw new Error("WebViewAutoHeight supports only source");
@@ -76,7 +76,7 @@ class WebViewAutoHeight extends React.Component {
 
     return (
       <WebView
-        source={{ html: codeInject(html), baseUrl: source.baseUrl }}
+        source={{ html: codeInject(html), baseUrl }}
         style={[
           style,
           { height: Math.max(this.state.realContentHeight, minHeight) }
@@ -94,7 +94,7 @@ WebViewAutoHeight.propTypes = {
   }).isRequired,
   minHeight: PropTypes.number,
   onNavigationStateChange: PropTypes.func,
-  style: WebView.propTypes.style
+  style: StylePropTypes
 };
 
 WebViewAutoHeight.defaultProps = {

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Dimensions, StyleSheet, View } from "react-native";
 import PropTypes from "prop-types";
-
+import StylePropTypes from "react-style-proptype";
 import AdManager from "./ad-manager";
 import Placeholder from "./placeholder";
 import { getSlotConfig } from "./generate-config";
@@ -42,7 +42,7 @@ class GPT extends Component {
   }
 
   handleLayout(event) {
-    const width = event.nativeEvent.layout.width;
+    const { nativeEvent: { layout: { width } } } = event;
     if (this.state.width !== width) {
       const config = getSlotConfig(
         this.props.adManager.section,
@@ -74,7 +74,7 @@ class GPT extends Component {
 
 GPT.propTypes = {
   code: PropTypes.string.isRequired,
-  style: View.propTypes.style,
+  style: StylePropTypes,
   adManager: PropTypes.instanceOf(AdManager).isRequired
 };
 GPT.defaultProps = {

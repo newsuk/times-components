@@ -3,6 +3,48 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.10"></a>
+## [0.5.10](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.5.9...@times-components/error-view@0.5.10) (2017-10-25)
+
+
+
+
+<a name="0.5.9"></a>
+## [0.5.9](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.5.8...@times-components/error-view@0.5.9) (2017-10-25)
+
+
+
+
+<a name="0.5.8"></a>
+## [0.5.8](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.5.7...@times-components/error-view@0.5.8) (2017-10-24)
+
+
+
+
+<a name="0.5.7"></a>
+## [0.5.7](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.5.6...@times-components/error-view@0.5.7) (2017-10-20)
+
+
+
+
+<a name="0.5.6"></a>
+## [0.5.6](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.5.5...@times-components/error-view@0.5.6) (2017-10-19)
+
+
+
+
+<a name="0.5.5"></a>
+## [0.5.5](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.5.4...@times-components/error-view@0.5.5) (2017-10-19)
+
+
+
+
+<a name="0.5.4"></a>
+## [0.5.4](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.5.3...@times-components/error-view@0.5.4) (2017-10-18)
+
+
+
+
 <a name="0.5.3"></a>
 ## [0.5.3](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.5.2...@times-components/error-view@0.5.3) (2017-10-17)
 

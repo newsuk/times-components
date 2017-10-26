@@ -3,6 +3,63 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.4"></a>
+## [1.6.4](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.6.3...@times-components/brightcove-video@1.6.4) (2017-10-25)
+
+
+### Bug Fixes
+
+* simple brightcove activity with fullscreen icon hidden ([#329](https://github.com/newsuk/times-components/issues/329)) ([e9439e6](https://github.com/newsuk/times-components/commit/e9439e6))
+
+
+
+
+<a name="1.6.3"></a>
+## [1.6.3](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.6.2...@times-components/brightcove-video@1.6.3) (2017-10-25)
+
+
+
+
+<a name="1.6.2"></a>
+## [1.6.2](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.6.1...@times-components/brightcove-video@1.6.2) (2017-10-24)
+
+
+
+
+<a name="1.6.1"></a>
+## [1.6.1](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.6.0...@times-components/brightcove-video@1.6.1) (2017-10-20)
+
+
+### Bug Fixes
+
+* react-native link ([d281e84](https://github.com/newsuk/times-components/commit/d281e84))
+
+
+
+
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.5.5...@times-components/brightcove-video@1.6.0) (2017-10-19)
+
+
+### Features
+
+* bubble android fullscreen events outside component ([#294](https://github.com/newsuk/times-components/issues/294)) ([d95ac94](https://github.com/newsuk/times-components/commit/d95ac94))
+
+
+
+
+<a name="1.5.5"></a>
+## [1.5.5](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.5.4...@times-components/brightcove-video@1.5.5) (2017-10-19)
+
+
+
+
+<a name="1.5.4"></a>
+## [1.5.4](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.5.3...@times-components/brightcove-video@1.5.4) (2017-10-18)
+
+
+
+
 <a name="1.5.3"></a>
 ## [1.5.3](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.5.2...@times-components/brightcove-video@1.5.3) (2017-10-17)
 

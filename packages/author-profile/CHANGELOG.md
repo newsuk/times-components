@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.21.1"></a>
+## [0.21.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.21.0...@times-components/author-profile@0.21.1) (2017-10-24)
+
+
+
+
+<a name="0.21.0"></a>
+# [0.21.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.20.0...@times-components/author-profile@0.21.0) (2017-10-20)
+
+
+### Features
+
+* separate providers ([#287](https://github.com/newsuk/times-components/issues/287)) ([252e996](https://github.com/newsuk/times-components/commit/252e996))
+
+
+
+
+<a name="0.20.0"></a>
+# [0.20.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.18.6...@times-components/author-profile@0.20.0) (2017-10-19)
+
+
+### Features
+
+* support line breaks ([#315](https://github.com/newsuk/times-components/issues/315)) ([307fe15](https://github.com/newsuk/times-components/commit/307fe15))
+
+
+
+
+<a name="0.19.0"></a>
+# [0.19.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.18.6...@times-components/author-profile@0.19.0) (2017-10-19)
+
+
+### Features
+
+* support line breaks ([#315](https://github.com/newsuk/times-components/issues/315)) ([307fe15](https://github.com/newsuk/times-components/commit/307fe15))
+
+
+
+
 <a name="0.18.6"></a>
 ## [0.18.6](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.18.5...@times-components/author-profile@0.18.6) (2017-10-17)
 

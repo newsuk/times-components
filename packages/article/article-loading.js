@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
 
 const ArticleLoading = () => (
   <View style={styles.container}>
-    <ActivityIndicator size={"large"} />
+    <ActivityIndicator size="large" />
   </View>
 );
 

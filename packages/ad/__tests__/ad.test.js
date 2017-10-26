@@ -133,7 +133,7 @@ describe("Native Ad test", () => {
       canOpenURL: jest
         .fn()
         .mockImplementation(
-          () => new Promise((resolve, reject) => reject("mock err"))
+          () => new Promise((resolve, reject) => reject(new Error("mock err")))
         )
     }));
 

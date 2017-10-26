@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import { View, Image } from "react-native";
 import PlayIcon from "./play-icon";
 
+const SourcePropType = Image.propTypes.source;
+
 const Splash = ({ poster, width, height, playIcon }) => (
   <View testID="splash-component">
     {poster ? (
@@ -39,21 +41,16 @@ const Splash = ({ poster, width, height, playIcon }) => (
   </View>
 );
 
-const numberOrString = PropTypes.oneOfType([
-  PropTypes.string,
-  PropTypes.number
-]);
-
 Splash.defaultProps = {
   poster: null,
   playIcon: null
 };
 
 Splash.propTypes = {
-  poster: Image.propTypes.source,
+  poster: SourcePropType,
   playIcon: PropTypes.node,
-  width: numberOrString.isRequired,
-  height: numberOrString.isRequired
+  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
 };
 
 export default Splash;

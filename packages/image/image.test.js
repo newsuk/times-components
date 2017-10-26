@@ -6,7 +6,7 @@ import Image from "./image";
 
 it("renders correctly", () => {
   const tree = renderer
-    .create(<Image uri={"http://example.com/image.jpg"} aspectRatio={1 / 1} />)
+    .create(<Image uri="http://example.com/image.jpg" aspectRatio={1 / 1} />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
@@ -16,7 +16,7 @@ it("allows styling", () => {
     .create(
       <Image
         style={{ width: 100 }}
-        uri={"http://example.com/image.jpg"}
+        uri="http://example.com/image.jpg"
         aspectRatio={1 / 1}
       />
     )
@@ -26,7 +26,7 @@ it("allows styling", () => {
 
 it("prepends https schema", () => {
   const tree = renderer
-    .create(<Image uri={"//example.com/image.jpg"} aspectRatio={1 / 1} />)
+    .create(<Image uri="//example.com/image.jpg" aspectRatio={1 / 1} />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

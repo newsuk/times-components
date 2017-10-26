@@ -32,7 +32,7 @@ const GptManager = class GptManager {
   }
 
   setConfig() {
-    const googletag = this.googletag;
+    const { googletag } = this;
 
     // See https://developers.google.com/doubleclick-gpt/reference#googletagpubadsservice
     return new Promise(resolve => {

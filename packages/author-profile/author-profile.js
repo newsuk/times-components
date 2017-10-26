@@ -1,21 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
+import AuthorHead from "@times-components/author-head";
+import { withPageState } from "@times-components/pagination";
+import { ArticleListProvider } from "@times-components/provider";
 import get from "lodash.get";
-import AuthorProfileContent from "./author-profile-content";
 import AuthorProfileEmpty from "./author-profile-empty";
 import AuthorProfileError from "./author-profile-error";
 import AuthorProfileLoading from "./author-profile-loading";
+import AuthorProfileContent from "./author-profile-content";
 
 const AuthorProfile = ({
   isLoading,
   error,
   author,
-  page,
-  pageSize,
+  page: initPage,
+  pageSize: initPageSize,
   onTwitterLinkPress,
   onArticlePress,
-  onNext,
-  onPrev
+  slug
 }) => {
   if (error) {
     return <AuthorProfileError {...error} />;
@@ -26,67 +28,68 @@ const AuthorProfile = ({
   }
 
   if (author) {
-    const data = {
-      ...author,
-      articles: {
-        ...author.articles,
-        list: get(author, "articles.list", []).map(article => ({
-          ...article,
-          publishedTime: new Date(article.publishedTime)
-        }))
-      },
-      count: get(author, "articles.count"),
-      page,
-      pageSize
-    };
+    const { biography, name, uri, jobTitle, twitter } = author;
+    const ArticleListProviderWithPageState = withPageState(ArticleListProvider);
 
     return (
-      <AuthorProfileContent
-        {...data}
-        onTwitterLinkPress={onTwitterLinkPress}
-        onArticlePress={onArticlePress}
-        onNext={onNext}
-        onPrev={onPrev}
-      />
+      <ArticleListProviderWithPageState
+        articleImageRatio="3:2"
+        slug={slug}
+        page={initPage}
+        pageSize={initPageSize}
+      >
+        {({ author: data, onNext, onPrev, page, pageSize }) => (
+          <AuthorProfileContent
+            name={name}
+            biography={biography}
+            uri={uri}
+            jobTitle={jobTitle}
+            twitter={twitter}
+            onTwitterLinkPress={onTwitterLinkPress}
+            count={get(data, "articles.count")}
+            onNext={onNext}
+            onPrev={onPrev}
+            page={page}
+            pageSize={pageSize}
+            articles={get(data, "articles.list", []).map(article => ({
+              ...article,
+              publishedTime: new Date(article.publishedTime)
+            }))}
+            onArticlePress={onArticlePress}
+          />
+        )}
+      </ArticleListProviderWithPageState>
     );
   }
 
   return <AuthorProfileEmpty />;
 };
 
-const {
-  onNext,
-  onPrev,
-  page,
-  pageSize,
-  onTwitterLinkPress,
-  onArticlePress,
-  ...author
-} = AuthorProfileContent.propTypes;
-
-AuthorProfile.propTypes = {
-  author: PropTypes.shape(author),
-  error: PropTypes.shape(),
-  isLoading: PropTypes.bool,
-  onNext,
-  onPrev,
-  page,
-  pageSize,
-  // eslint doesnt follow the reference. AuthorProfileContent.propTypes.onTwitterLinkPress is actually marked as required.
-  // eslint-disable-next-line react/require-default-props
-  onTwitterLinkPress,
-  // eslint-disable-next-line react/require-default-props
-  onArticlePress
+AuthorProfile.defaultProps = {
+  isLoading: true,
+  error: null,
+  author: null,
+  page: 1,
+  pageSize: 10,
+  onTwitterLinkPress: () => {},
+  onArticlePress: () => {}
 };
 
-AuthorProfile.defaultProps = {
-  author: null,
-  error: null,
-  isLoading: true,
-  onNext: () => {},
-  onPrev: () => {},
-  page: 1,
-  pageSize: 10
+AuthorProfile.propTypes = {
+  isLoading: PropTypes.bool,
+  error: PropTypes.shape(),
+  author: PropTypes.shape({
+    name: PropTypes.string,
+    jobTitle: PropTypes.string,
+    biography: AuthorHead.propTypes.bio,
+    image: PropTypes.string,
+    twitter: PropTypes.string
+  }),
+  page: PropTypes.number,
+  pageSize: PropTypes.number,
+  onTwitterLinkPress: PropTypes.func,
+  onArticlePress: PropTypes.func,
+  slug: PropTypes.string.isRequired
 };
 
 export default AuthorProfile;

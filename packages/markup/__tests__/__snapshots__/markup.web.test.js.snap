@@ -138,6 +138,8 @@ exports[`Markup Web renders the italic tag 1`] = `
 </em>
 `;
 
+exports[`Markup Web renders the line break tag 1`] = `<br />`;
+
 exports[`Markup Web renders the span tag 1`] = `
 <span>
   some other text here

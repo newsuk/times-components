@@ -146,7 +146,19 @@ ArticlePage.propTypes = {
     ...ArticleMeta.propTypes
   }),
   isLoading: PropTypes.bool,
-  error: PropTypes.shape()
+  error: PropTypes.shape({
+    graphQLErrors: PropTypes.array,
+    networkError: PropTypes.shape({
+      message: PropTypes.string
+    }),
+    message: PropTypes.string
+  })
+};
+
+ArticlePage.defaultProps = {
+  article: null,
+  isLoading: false,
+  error: null
 };
 
 export default ArticlePage;

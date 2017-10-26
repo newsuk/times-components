@@ -24,7 +24,7 @@ describe("GptManager", () => {
     const disableInitialLoad = jest.fn();
 
     gptManager.loadScript();
-    const googletag = gptManager.googletag;
+    const { googletag } = gptManager;
     googletag.pubads = () => ({
       enableSingleRequest,
       enableAsyncRendering,
@@ -45,7 +45,7 @@ describe("GptManager", () => {
     const enableServices = jest.fn();
 
     gptManager.loadScript();
-    const googletag = gptManager.googletag;
+    const { googletag } = gptManager;
     googletag.enableServices = enableServices;
 
     gptManager.init();
@@ -57,7 +57,7 @@ describe("GptManager", () => {
   });
 
   it("setConfig resolves if script was set and gpt is initialised", () => {
-    const googletag = gptManager.googletag;
+    const { googletag } = gptManager;
     googletag.cmd = jest.fn();
     gptManager.isReady = jest.fn().mockImplementation(() => true);
     gptManager.setConfig();
@@ -65,7 +65,7 @@ describe("GptManager", () => {
   });
 
   it("init resolves if script was set and gpt is initialised", () => {
-    const googletag = gptManager.googletag;
+    const { googletag } = gptManager;
     googletag.cmd = jest.fn();
     gptManager.isReady = jest.fn().mockImplementation(() => true);
     gptManager.init();
