@@ -1,4 +1,4 @@
-/* globals withComponent test expect element by beforeEach */
+/* globals withComponent test expect element by beforeEach device */
 import { StyleSheet, View } from "react-native";
 import React from "react";
 import AuthorProfileContent from "./author-profile-content";
@@ -39,6 +39,7 @@ withComponent(
   "author profile",
   async fructose => {
     beforeEach(async () => {
+      await device.launchApp({ newInstance: true });
       await fructose.loadComponent();
     });
 

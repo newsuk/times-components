@@ -41,14 +41,6 @@ workflows:
             # debug log
             set -x
             #iOS setup
-            # install fbsimctl
-            export CODE_SIGNING_REQUIRED=NO
-            git clone https://github.com/facebook/FBSimulatorControl.git
-            cd FBSimulatorControl
-            git checkout 4a3a339ca325ae2ac0b34fef92605204b79e0c09
-            ./build.sh fbsimctl build output
-            PATH=$PATH:$(pwd)/output/bin
-            cd ..
             # install applesmutils
             brew tap wix/brew
             brew install applesimutils --HEAD
