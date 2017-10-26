@@ -4,6 +4,7 @@ import { View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import ArticleSummary from "./article-summary";
 import reviewFixture from "./fixtures/review.json";
+import emptyParagraphFixture from "./fixtures/article-empty-paragraph.json";
 
 [reviewFixture, emptyParagraphFixture].forEach(fixture => {
   // eslint-disable-next-line no-param-reassign
