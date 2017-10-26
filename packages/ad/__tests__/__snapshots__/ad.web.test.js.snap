@@ -10,9 +10,16 @@ exports[`AdComposer renders with more than one ad slot 1`] = `
     style={
       Array [
         Object {
+          "marginBottom": 25,
           "minHeight": 50,
         },
-        null,
+        Array [
+          null,
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+          },
+        ],
       ]
     }
   >
@@ -96,9 +103,16 @@ exports[`AdComposer renders with more than one ad slot 1`] = `
     style={
       Array [
         Object {
+          "marginBottom": 25,
           "minHeight": 250,
         },
-        null,
+        Array [
+          null,
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+          },
+        ],
       ]
     }
   >
@@ -187,9 +201,16 @@ exports[`AdComposer renders with one ad slot 1`] = `
     style={
       Array [
         Object {
+          "marginBottom": 25,
           "minHeight": 50,
         },
-        null,
+        Array [
+          null,
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+          },
+        ],
       ]
     }
   >

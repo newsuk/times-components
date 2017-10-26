@@ -7,6 +7,7 @@ exports[`Gpt test renders an ad-header ad slot 1`] = `
   style={
     Array [
       Object {
+        "marginBottom": 25,
         "minHeight": 50,
       },
       null,
@@ -96,6 +97,7 @@ exports[`Gpt test renders an ad-pixel ad slot 1`] = `
   style={
     Array [
       Object {
+        "marginBottom": 25,
         "minHeight": 0,
       },
       null,

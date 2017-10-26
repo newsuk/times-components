@@ -9,7 +9,8 @@ import { getSlotConfig } from "./generate-config";
 const getStyles = config =>
   StyleSheet.create({
     container: {
-      minHeight: config.maxSizes.height
+      minHeight: config.maxSizes.height,
+      marginBottom: 25
     }
   });
 
