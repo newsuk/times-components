@@ -64,10 +64,8 @@
     "@times-components/watermark": "0.0.1",
     "prop-types": "15.6.0",
     "react-broadcast": "0.5.2",
-    "react-native-svg": "5.4.1",
     "react-native-web": "0.1.7",
-    "react-style-proptype": "3.0.0",
-    "svgs": "3.1.0"
+    "react-style-proptype": "3.0.0"
   },
   "peerDependencies": {
     "react": ">=16",
