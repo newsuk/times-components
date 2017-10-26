@@ -3,46 +3,7 @@ import PropTypes from "prop-types";
 
 import Svg, { G, Path } from "svgs";
 
-const calculateViewBox = (width, height) => {
-  if (width >= 970 && height >= 250) {
-    return {
-      marginLeft: 205,
-      marginTop: -40,
-      svgWidth: 584,
-      svgHeight: 220
-    };
-  }
-
-  if (width >= 728 && height >= 90) {
-    return {
-      marginLeft: 630,
-      marginTop: -120,
-      svgWidth: 1200,
-      svgHeight: 50
-    };
-  }
-
-  if (width >= 300 && height >= 250) {
-    // MPU
-    return {
-      marginLeft: 15,
-      marginTop: 0,
-      svgWidth: 269,
-      svgHeight: 250
-    };
-  }
-
-  return {
-    marginLeft: 50,
-    marginTop: 0,
-    svgWidth: width,
-    svgHeight: height
-  };
-};
-
-const TimesWatermark = ({ width, height }) => {
-  const box = calculateViewBox(width, height);
-  const viewBox = `${-box.marginLeft} ${-box.marginTop} ${box.svgWidth} ${box.svgHeight}`;
+const Watermark = ({ width, height, viewBox }) => {
   return (
     <Svg width={width} height={height} viewBox={viewBox}>
       <G
@@ -63,9 +24,14 @@ const TimesWatermark = ({ width, height }) => {
   );
 };
 
-TimesWatermark.propTypes = {
+Watermark.propTypes = {
   width: PropTypes.number.isRequired,
-  height: PropTypes.number.isRequired
+  height: PropTypes.number.isRequired,
+  viewBox: PropTypes.string
 };
 
-export default TimesWatermark;
+Watermark.defaultProps = {
+  viewBox: "0 0 300 250"
+};
+
+export default Watermark;

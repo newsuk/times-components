@@ -5,7 +5,7 @@ import { Text, ScrollView } from "react-native";
 
 import Ad from "./ad";
 import Placeholder from "./placeholder";
-import TimesWatermark from "./times-watermark";
+import TimesWatermark from "./ad-watermark";
 
 export default () =>
   storiesOf("Ad", module)
@@ -66,7 +66,6 @@ export default () =>
         </Text>
       </ScrollView>
     ))
-    .add("Placeholder", () => <Placeholder width={300} height={250} />)
-    .add("TimesWatermark (MPU)", () => (
-      <TimesWatermark width={300} height={250} />
+    .add("Placeholder (300x250 - MPU)", () => (
+      <Placeholder width={300} height={250} />
     ));

@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, View, Text, Platform } from "react-native";
 import PropTypes from "prop-types";
 
-import TimesWatermark from "./times-watermark";
+import TimesWatermark from "./ad-watermark";
 
 const fontFamilyWebAndIos = "TimesDigitalW04";
 const fontFamilyAndroid = "TimesDigitalW04-Regular";
