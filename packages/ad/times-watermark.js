@@ -22,7 +22,8 @@ const calculateViewBox = (width, height) => {
     };
   }
 
-  if (width >= 300 && height >= 250) { // MPU
+  if (width >= 300 && height >= 250) {
+    // MPU
     return {
       marginLeft: 15,
       marginTop: 0,
@@ -37,7 +38,7 @@ const calculateViewBox = (width, height) => {
     svgWidth: width,
     svgHeight: height
   };
-}
+};
 
 const TimesWatermark = ({ width, height }) => {
   const box = calculateViewBox(width, height);

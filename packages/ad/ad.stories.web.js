@@ -43,9 +43,13 @@ export default () =>
         </AdComposer>
       </div>
     ))
-    .add("Placeholder (300x250 - MPU)", () => <Placeholder width={300} height={250} />)
+    .add("Placeholder (300x250 - MPU)", () => (
+      <Placeholder width={300} height={250} />
+    ))
     .add("Placeholder (728x90)", () => <Placeholder width={728} height={90} />)
-    .add("Placeholder (970x250)", () => <Placeholder width={970} height={250} />)
+    .add("Placeholder (970x250)", () => (
+      <Placeholder width={970} height={250} />
+    ))
     .add("TimesWatermark (Default)", () => (
       <TimesWatermark width={832} height={300} />
     ))
