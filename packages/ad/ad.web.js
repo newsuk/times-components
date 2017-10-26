@@ -11,7 +11,10 @@ class Ad extends Component {
       <GPT
         adManager={adManager}
         code={this.props.code}
-        style={this.props.style}
+        style={[this.props.style, {
+          alignItems: "center",
+          flex: 1
+        }]}
       />
     );
   }
