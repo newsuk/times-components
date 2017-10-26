@@ -1170,7 +1170,7 @@ exports[`renders profile content component 1`] = `
                     disabled={false}
                     ellipsizeMode="tail"
                   >
-                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+                    A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State,
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -1397,7 +1397,7 @@ exports[`renders profile content component 1`] = `
                       
                       
                     </Text>
-                     ITV
+                    ITV
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -1438,7 +1438,7 @@ exports[`renders profile content component 1`] = `
                       
                       
                     </Text>
-                     BBC Two
+                    BBC Two
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -1917,7 +1917,7 @@ exports[`renders profile content item component 1`] = `
               disabled={false}
               ellipsizeMode="tail"
             >
-              A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+              A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State,
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -2105,7 +2105,7 @@ exports[`renders profile content item component with no image  1`] = `
               disabled={false}
               ellipsizeMode="tail"
             >
-              A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+              A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State,
               <Text
                 accessible={true}
                 allowFontScaling={true}
