@@ -1,6 +1,6 @@
 {
   "name": "@times-components/brightcove-video",
-  "version": "1.6.5",
+  "version": "1.6.6",
   "main": "brightcove-video",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
