@@ -207,6 +207,15 @@
     react-treebeard "^2.0.3"
     redux "^3.7.2"
 
+"@times-components/brightcove-video@1.6.4":
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/@times-components/brightcove-video/-/brightcove-video-1.6.4.tgz#038d1337baacf9b5cf38a054255771da0b47629e"
+  dependencies:
+    prop-types "15.6.0"
+    react-native-svg "5.4.1"
+    react-native-web "0.1.7"
+    svgs "3.1.0"
+
 "@times-components/fructose@2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-2.2.1.tgz#6235c445ba8b929cb4a9ef4a35693322e3da0ff1"
