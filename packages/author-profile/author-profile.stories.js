@@ -2,7 +2,7 @@ import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { decorateAction } from "@storybook/addon-actions";
+import { decorateAction, action } from "@storybook/addon-actions";
 import { AuthorProfileProvider } from "@times-components/provider";
 import { ApolloClient, IntrospectionFragmentMatcher } from "react-apollo";
 import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";
@@ -139,7 +139,8 @@ storiesOf("AuthorProfile", module)
       page: 2,
       pageSize: 3,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
-      onArticlePress: preventDefaultedAction("onArticlePress")
+      onArticlePress: preventDefaultedAction("onArticlePress"),
+      analyticsStream: () => {}
     };
 
     return withMockProvider(<AuthorProfile {...props} />);
@@ -149,7 +150,8 @@ storiesOf("AuthorProfile", module)
       slug: "fiona-hamilton",
       isLoading: true,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
-      onArticlePress: preventDefaultedAction("onArticlePress")
+      onArticlePress: preventDefaultedAction("onArticlePress"),
+      analyticsStream: () => {}
     };
 
     return withMockProvider(<AuthorProfile {...props} />);
@@ -196,7 +198,8 @@ storiesOf("AuthorProfile", module)
       author: authorProfileFixture.data.author,
       isLoading: false,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
-      onArticlePress: preventDefaultedAction("onArticlePress")
+      onArticlePress: preventDefaultedAction("onArticlePress"),
+      analyticsStream: () => {}
     };
 
     const client = new ApolloClient({
@@ -223,8 +226,23 @@ storiesOf("AuthorProfile", module)
             error={error}
             onTwitterLinkPress={onTwitterLinkPress}
             onArticlePress={onArticlePress}
+            analyticsStream={() => {}}
           />
         )}
       </AuthorProfileProvider>
     );
+  })
+  .add("Tracking", () => {
+    const props = {
+      slug: "fiona-hamilton",
+      author: authorProfileFixture.data.author,
+      isLoading: false,
+      page: 2,
+      pageSize: 3,
+      onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
+      onArticlePress: preventDefaultedAction("onArticlePress"),
+      analyticsStream: action("analytics-event")
+    };
+
+    return withMockProvider(<AuthorProfile {...props} />);
   });

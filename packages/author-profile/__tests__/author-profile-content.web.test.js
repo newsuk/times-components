@@ -4,6 +4,7 @@ import React from "react";
 import Enzyme, { shallow } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
 import test from "./author-profile-helper";
+import AuthorProfileItem from "../author-profile-item";
 import AuthorProfileContent from "../author-profile-content.web.js";
 import authorProfileFixture from "../fixtures/author-profile.json";
 import articleListFixture from "../fixtures/article-list.json";
@@ -41,8 +42,9 @@ it("renders profile articles and invoke callback on article press", done => {
   );
 
   component
-    .find("AuthorProfileItem")
+    .find(AuthorProfileItem)
     .at(0)
+    .dive()
     .dive()
     .find("Link")
     .simulate("press");

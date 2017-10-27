@@ -3,6 +3,7 @@ import get from "lodash.get";
 import { View } from "react-native";
 import Card from "@times-components/card";
 import Link from "@times-components/link";
+import { withTrackEvents } from "@times-components/tracking";
 
 const AuthorProfileItem = item => {
   const {
@@ -37,4 +38,12 @@ const AuthorProfileItem = item => {
   );
 };
 
-export default AuthorProfileItem;
+export default withTrackEvents(AuthorProfileItem, {
+  analyticsEvents: [
+    {
+      eventName: "onPress",
+      actionName: "Pressed",
+      getAttrs: ({ title, id }) => ({ articleTitle: title, articleId: id })
+    }
+  ]
+});

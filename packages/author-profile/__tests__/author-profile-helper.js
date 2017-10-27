@@ -22,7 +22,8 @@ Enzyme.configure({ adapter: new React16Adapter() });
 const props = {
   slug: "fiona-hamilton",
   onTwitterLinkPress: () => {},
-  onArticlePress: () => {}
+  onArticlePress: () => {},
+  analyticsStream: () => {}
 };
 
 const pagedResult = (skip, first) => ({
@@ -138,7 +139,9 @@ const withMockProvider = child => (
 
 export default AuthorProfileContent => {
   it("renders profile", () => {
-    const wrapper = shallow(<AuthorProfile {...props} />);
+    const wrapper = shallow(<AuthorProfile {...props} />)
+      .dive()
+      .dive();
 
     expect(wrapper).toMatchSnapshot();
   });
@@ -199,6 +202,36 @@ export default AuthorProfileContent => {
     expect(component).toMatchSnapshot();
   });
 
+  it("adds author profile fields to tracking context", () => {
+    const reporter = jest.fn();
+    renderer.create(
+      withMockProvider(
+        <AuthorProfile
+          {...props}
+          author={authorProfileFixture.data.author}
+          isLoading={false}
+          slug="fiona-hamilton"
+          page={1}
+          pageSize={10}
+          onTwitterLinkPress={() => {}}
+          onArticlePress={() => {}}
+          analyticsStream={reporter}
+        />
+      )
+    );
+
+    expect(reporter).toHaveBeenCalledWith(
+      expect.objectContaining({
+        object: "AuthorProfile",
+        attrs: expect.objectContaining({
+          authorName: "Fiona Hamilton",
+          page: 1,
+          pageSize: 10
+        })
+      })
+    );
+  });
+
   it("renders profile separator", () => {
     const component = renderer.create(<AuthorProfileItemSeparator />);
 
@@ -239,5 +272,27 @@ export default AuthorProfileContent => {
     );
 
     expect(component).toMatchSnapshot();
+  });
+
+  it("tracks author profile item interactions", () => {
+    const item = pagedResult(0, 1).data.author.articles.list[0];
+    const stream = jest.fn();
+    const component = shallow(<AuthorProfileItem {...item} />, {
+      context: { tracking: { analytics: stream } }
+    });
+
+    component
+      .dive()
+      .find("Link")
+      .simulate("press");
+
+    expect(stream).toHaveBeenCalledWith({
+      component: "AuthorProfileItem",
+      action: "Pressed",
+      attrs: {
+        articleId: "97c64f20-cb67-11e4-a202-50ac5def393a",
+        articleTitle: "British trio stopped on the way to join Isis"
+      }
+    });
   });
 };
