@@ -210,7 +210,7 @@ export default AuthorProfileContent => {
           {...props}
           author={authorProfileFixture.data.author}
           isLoading={false}
-          slug={"fiona-hamilton"}
+          slug="fiona-hamilton"
           page={1}
           pageSize={10}
           onTwitterLinkPress={() => {}}
