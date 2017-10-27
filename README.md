@@ -16,7 +16,8 @@ You can try without these requirements, but you'd be on your own.
 ## Getting Started
 
 1. Run `yarn` to install dependencies
-2. components can be seen running in a storybook:
+2. Install [fontforge](http://fontforge.github.io/en-US/): `brew install fontforge` (See [Fonts section](#fonts))
+3. components can be seen running in a storybook:
   * web storybook
     1. `yarn storybook`
     2. go to http://localhost:9001
@@ -25,16 +26,9 @@ You can try without these requirements, but you'd be on your own.
     2. `yarn ios` and/or `yarn android` to start the (sim|em)ulators
     3. go to http://localhost:7007
 
-⚠️ Native Storybook ⚠️
+### Fonts ⚠️
 
-In order to view the storybook on native, you'll need to fix a broken font which requires
- [fontforge](http://fontforge.github.io/en-US/)
-
-```ssh
-brew install fontforge
-```
-
-When you first get a local copy of the fonts you may see some warnings which you can ignore
+In order to view the storybook on native, you'll need to fix a broken font. This fix is done automatically when running storybook (both web and native), but requires that [fontforge](http://fontforge.github.io/en-US/) is installed, otherwise the fix won't be applied and you may see some errors in the console.
 
 ## Contributing
 
