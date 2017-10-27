@@ -61,8 +61,8 @@ exports[`renders an article-summary component with content 1`] = `
       disabled={false}
       ellipsizeMode="tail"
     >
+      
       Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.
-       
     </Text>
     <Text
       accessible={true}
@@ -159,6 +159,7 @@ exports[`renders an article-summary component with content including line breaks
       disabled={false}
       ellipsizeMode="tail"
     >
+      
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -192,7 +193,6 @@ exports[`renders an article-summary component with content including line breaks
 
       </Text>
       ★★★★☆
-       
     </Text>
     <Text
       accessible={true}
@@ -200,6 +200,7 @@ exports[`renders an article-summary component with content including line breaks
       disabled={false}
       ellipsizeMode="tail"
     >
+       
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -233,7 +234,6 @@ exports[`renders an article-summary component with content including line breaks
 
       </Text>
       ★★★☆☆
-       
     </Text>
     <Text
       accessible={true}
@@ -330,8 +330,8 @@ exports[`renders an article-summary component with empty content at the end trim
       disabled={false}
       ellipsizeMode="tail"
     >
+      
       Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.
-       
     </Text>
     <Text
       accessible={true}
@@ -339,7 +339,15 @@ exports[`renders an article-summary component with empty content at the end trim
       disabled={false}
       ellipsizeMode="tail"
     >
+       
       The former punk
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+    >
       ...
     </Text>
   </Text>

@@ -211,8 +211,8 @@ exports[`renders vertical by default 1`] = `
           disabled={false}
           ellipsizeMode="tail"
         >
+          
           Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.
-           
         </Text>
         <Text
           accessible={true}
@@ -334,8 +334,8 @@ exports[`renders without image 1`] = `
           disabled={false}
           ellipsizeMode="tail"
         >
+          
           Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.
-           
         </Text>
         <Text
           accessible={true}
@@ -457,8 +457,8 @@ exports[`renders without image url 1`] = `
           disabled={false}
           ellipsizeMode="tail"
         >
+          
           Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.
-           
         </Text>
         <Text
           accessible={true}

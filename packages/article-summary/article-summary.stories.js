@@ -14,7 +14,9 @@ import emptyParagraphFixture from "./fixtures/article-empty-paragraph.json";
 const story = m => <View style={{ padding: 20 }}>{m}</View>;
 
 storiesOf("ArticleSummary", module)
-  .add("Paragraph Summary", () => story(<ArticleSummary {...emptyParagraphFixture} />))
+  .add("Paragraph Summary", () =>
+    story(<ArticleSummary {...emptyParagraphFixture} />)
+  )
   .add("Review/Rating Summary", () =>
     story(<ArticleSummary {...reviewFixture} />)
   );

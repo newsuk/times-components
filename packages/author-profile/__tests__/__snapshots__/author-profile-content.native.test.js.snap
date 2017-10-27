@@ -1375,6 +1375,7 @@ exports[`renders profile content component 1`] = `
                     disabled={false}
                     ellipsizeMode="tail"
                   >
+                    
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -1408,7 +1409,6 @@ exports[`renders profile content component 1`] = `
                       
                     </Text>
                     ★★★★☆
-                     
                   </Text>
                   <Text
                     accessible={true}
@@ -1416,6 +1416,7 @@ exports[`renders profile content component 1`] = `
                     disabled={false}
                     ellipsizeMode="tail"
                   >
+                     
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -1449,7 +1450,6 @@ exports[`renders profile content component 1`] = `
                       
                     </Text>
                     ★★★☆☆
-                     
                   </Text>
                   <Text
                     accessible={true}

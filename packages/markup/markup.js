@@ -58,7 +58,7 @@ export const renderTree = (tree, renderers, index = 0) =>
   renderTreeWithoutDefaults(
     tree,
     Object.assign({}, defaultRenderers, renderers),
-    index ? `${index}` : '',
+    index ? `${index}` : "",
     index
   );
 
