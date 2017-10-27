@@ -1,9 +1,10 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import StylePropTypes from "react-style-proptype";
-import Gradient from "./gradient";
+import Gradient from "@times-components/gradient";
 import T from "./t";
 
+const { supportingArrays } = StylePropTypes;
 const styles = StyleSheet.create({
   container: {
     flex: 1
@@ -41,7 +42,7 @@ class Placeholder extends React.Component {
 
     return (
       <View style={[styles.container, style]} onLayout={this.handleLayout}>
-        <Gradient angle={264} style={[styles.container, styles.gradient]}>
+        <Gradient degrees={264} style={styles.container}>
           {tComponent}
         </Gradient>
       </View>
@@ -54,8 +55,7 @@ Placeholder.defaultProps = {
 };
 
 Placeholder.propTypes = {
-  // eslint-disable-next-line react/no-typos
-  style: StylePropTypes.supportingArrays
+  style: supportingArrays
 };
 
 export default Placeholder;

@@ -41,7 +41,7 @@ exports[`renders loading card state 1`] = `
     }
   >
     <Gradient
-      angle={264}
+      degrees={264}
       style={
         Array [
           Object {
@@ -53,7 +53,7 @@ exports[`renders loading card state 1`] = `
       }
     />
     <Gradient
-      angle={267}
+      degrees={267}
       style={
         Array [
           Object {
@@ -64,7 +64,7 @@ exports[`renders loading card state 1`] = `
       }
     />
     <Gradient
-      angle={267}
+      degrees={267}
       style={
         Array [
           Object {
@@ -75,7 +75,7 @@ exports[`renders loading card state 1`] = `
       }
     />
     <Gradient
-      angle={267}
+      degrees={267}
       style={
         Array [
           Object {

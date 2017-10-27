@@ -141,6 +141,7 @@ storiesOf("AuthorProfile", module)
   .add("Default", () => {
     const props = {
       slug: "fiona-hamilton",
+      author: authorProfileFixture.data.author,
       articleImageRatio: "3:2",
       isLoading: false,
       page: 2,

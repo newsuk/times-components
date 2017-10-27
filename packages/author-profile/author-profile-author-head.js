@@ -1,7 +1,7 @@
 import AuthorHead from "@times-components/author-head";
+import Gradient from "@times-components/gradient";
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import AuthorProfileGradient from "./author-profile-gradient";
 
 const styles = StyleSheet.create({
   container: {
@@ -17,6 +17,9 @@ const styles = StyleSheet.create({
     height: 100,
     bottom: 0,
     position: "absolute"
+  },
+  gradient: {
+    flex: 1
   },
   roundImage: {
     width: 100,
@@ -40,7 +43,7 @@ const AuthorProfileAuthorHead = ({ isLoading, ...props }) => {
         <View style={styles.container} />
         <View style={styles.photoContainer}>
           <View style={styles.roundImage}>
-            <AuthorProfileGradient />
+            <Gradient style={styles.gradient} />
           </View>
         </View>
       </View>

@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { StyleSheet, View } from "react-native";
 import Image from "@times-components/image";
+import Gradient from "@times-components/gradient";
 import styles from "./card-styles";
-import Gradient from "./gradient";
 
 const gradientStyles = StyleSheet.create({
   headerContainer: {
@@ -35,12 +35,12 @@ const Loading = ({ horizontal, style }) => {
       <View
         style={[layoutStyles.childrenContainer, layoutStyles.summaryContainer]}
       >
-        <Gradient style={[gradientStyles.headerContainer]} angle={264} />
-        <Gradient style={[gradientStyles.textContainer]} angle={267} />
-        <Gradient style={[gradientStyles.textContainer]} angle={267} />
+        <Gradient style={[gradientStyles.headerContainer]} degrees={264} />
+        <Gradient style={[gradientStyles.textContainer]} degrees={267} />
+        <Gradient style={[gradientStyles.textContainer]} degrees={267} />
         <Gradient
           style={[gradientStyles.textContainer, gradientStyles.noMarginBottom]}
-          angle={267}
+          degrees={267}
         />
       </View>
     </View>

@@ -66,6 +66,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
+    "@times-components/gradient": "0.1.0",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.7",
     "react-style-proptype": "3.0.0",

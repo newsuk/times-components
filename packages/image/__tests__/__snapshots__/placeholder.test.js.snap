@@ -13,14 +13,11 @@ exports[`renders loading image when width set 1`] = `
   }
 >
   <Gradient
-    angle={264}
+    degrees={264}
     style={
-      Array [
-        Object {
-          "flex": 1,
-        },
-        undefined,
-      ]
+      Object {
+        "flex": 1,
+      }
     }
   >
     <View
