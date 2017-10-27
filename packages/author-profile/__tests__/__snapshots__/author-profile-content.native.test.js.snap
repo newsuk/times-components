@@ -475,12 +475,9 @@ exports[`renders profile content 1`] = `
                 >
                   <View
                     style={
-                      Array [
-                        Object {
-                          "flex": 1,
-                        },
-                        undefined,
-                      ]
+                      Object {
+                        "flex": 1,
+                      }
                     }
                   >
                     <BVLinearGradient
@@ -865,6 +862,7 @@ exports[`renders profile content 1`] = `
                   <View
 >>>>>>> feat: move loading from the image to the image
                     style={
+<<<<<<< HEAD
                       Array [
                         Object {
                           "flex": 1,
@@ -878,6 +876,11 @@ exports[`renders profile content 1`] = `
 =======
                         undefined,
                       ]
+=======
+                      Object {
+                        "flex": 1,
+                      }
+>>>>>>> chore: update snapshots
                     }
                   >
                     <BVLinearGradient
@@ -1493,12 +1496,9 @@ exports[`renders profile content 1`] = `
                 >
                   <View
                     style={
-                      Array [
-                        Object {
-                          "flex": 1,
-                        },
-                        undefined,
-                      ]
+                      Object {
+                        "flex": 1,
+                      }
                     }
                   >
                     <BVLinearGradient
@@ -1824,12 +1824,9 @@ exports[`renders profile content 1`] = `
                 >
                   <View
                     style={
-                      Array [
-                        Object {
-                          "flex": 1,
-                        },
-                        undefined,
-                      ]
+                      Object {
+                        "flex": 1,
+                      }
                     }
                   >
                     <BVLinearGradient
@@ -2155,12 +2152,9 @@ exports[`renders profile content 1`] = `
                 >
                   <View
                     style={
-                      Array [
-                        Object {
-                          "flex": 1,
-                        },
-                        undefined,
-                      ]
+                      Object {
+                        "flex": 1,
+                      }
                     }
                   >
                     <BVLinearGradient
@@ -2486,12 +2480,9 @@ exports[`renders profile content 1`] = `
                 >
                   <View
                     style={
-                      Array [
-                        Object {
-                          "flex": 1,
-                        },
-                        undefined,
-                      ]
+                      Object {
+                        "flex": 1,
+                      }
                     }
                   >
                     <BVLinearGradient
@@ -2817,12 +2808,9 @@ exports[`renders profile content 1`] = `
                 >
                   <View
                     style={
-                      Array [
-                        Object {
-                          "flex": 1,
-                        },
-                        undefined,
-                      ]
+                      Object {
+                        "flex": 1,
+                      }
                     }
                   >
                     <BVLinearGradient
@@ -3148,12 +3136,9 @@ exports[`renders profile content 1`] = `
                 >
                   <View
                     style={
-                      Array [
-                        Object {
-                          "flex": 1,
-                        },
-                        undefined,
-                      ]
+                      Object {
+                        "flex": 1,
+                      }
                     }
                   >
                     <BVLinearGradient
@@ -3479,12 +3464,9 @@ exports[`renders profile content 1`] = `
                 >
                   <View
                     style={
-                      Array [
-                        Object {
-                          "flex": 1,
-                        },
-                        undefined,
-                      ]
+                      Object {
+                        "flex": 1,
+                      }
                     }
                   >
                     <BVLinearGradient
@@ -3810,12 +3792,9 @@ exports[`renders profile content 1`] = `
                 >
                   <View
                     style={
-                      Array [
-                        Object {
-                          "flex": 1,
-                        },
-                        undefined,
-                      ]
+                      Object {
+                        "flex": 1,
+                      }
                     }
                   >
                     <BVLinearGradient
@@ -4691,12 +4670,9 @@ exports[`renders profile content component 1`] = `
                   >
                     <View
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                          undefined,
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
                     >
                       <BVLinearGradient
@@ -4964,12 +4940,9 @@ exports[`renders profile content component 1`] = `
                   >
                     <View
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                          undefined,
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
                     >
                       <BVLinearGradient
@@ -5582,12 +5555,9 @@ exports[`renders profile content item component 1`] = `
             >
               <View
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                    undefined,
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               >
                 <BVLinearGradient
@@ -5833,12 +5803,9 @@ exports[`renders profile content item component with no image  1`] = `
             >
               <View
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                    undefined,
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               >
                 <BVLinearGradient

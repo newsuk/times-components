@@ -262,25 +262,22 @@ exports[`renders with data 1`] = `
       >
         <View
           style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-              undefined,
-            ]
+            Object {
+              "flex": 1,
+            }
           }
         >
           <BVLinearGradient
             colors={
               Array [
-                "#ededed",
                 "#f9f9f9",
+                "#ededed",
               ]
             }
             end={
               Object {
-                "x": 1,
-                "y": 0.25685517452260576,
+                "x": -0.09302964577578221,
+                "y": 0.11488204504197774,
               }
             }
             locations={
@@ -291,8 +288,8 @@ exports[`renders with data 1`] = `
             }
             start={
               Object {
-                "x": 0,
-                "y": 1,
+                "x": 1,
+                "y": 0,
               }
             }
             style={

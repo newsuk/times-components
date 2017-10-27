@@ -286,12 +286,9 @@ exports[`renders vertical by default 1`] = `
         >
           <View
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                },
-                undefined,
-              ]
+              Object {
+                "flex": 1,
+              }
             }
           >
             <BVLinearGradient
