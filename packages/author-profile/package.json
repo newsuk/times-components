@@ -65,7 +65,7 @@
     "@times-components/link": "0.10.1",
     "@times-components/pagination": "0.10.2",
     "@times-components/provider": "0.14.1",
-    "@times-components/tracking": "0.2.0",
+    "@times-components/tracking": "0.2.1",
     "jest-cli": "20.0.4",
     "lodash.get": "4.4.2",
     "lodash.merge": "4.6.0",
