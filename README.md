@@ -28,7 +28,7 @@ You can try without these requirements, but you'd be on your own.
 
 ### Fonts ⚠️
 
-In order to view the storybook on native, you'll need to fix a broken font. This fix is done automatically when running storybook (both web and native), but requires that [fontforge](http://fontforge.github.io/en-US/) is installed, otherwise the fix won't be applied and you may see some errors in the console.
+In order to view the storybook on native, you'll need to fix broken fonts. This fix is done automatically when running storybook (both web and native), but requires that [fontforge](http://fontforge.github.io/en-US/) is installed, otherwise the fix won't be applied and you'll get the classic red error screen when trying to use a broken font.
 
 ## Contributing
 
