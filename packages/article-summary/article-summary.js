@@ -36,22 +36,16 @@ const styles = {
   }
 };
 
-const trimEmptyContent = arr => {
-  const reversed = [...arr].reverse();
-  const firstElWithContent = reversed.findIndex(el => el.children.length > 0);
-  return reversed.slice(firstElWithContent).reverse();
-};
-
 const summarise = text => {
-  let summary = trimEmptyContent(text);
-
-  if (summary.length) {
-    const initial = summary.slice(0, summary.length - 1);
-    const last = summary[summary.length - 1];
-    const teaser = Object.assign({}, last, { name: "teaser" });
-    summary = [...initial, teaser];
+  if (!text.length) {
+    return text;
   }
-  return summary;
+
+  const initial = text.slice(0, text.length - 1);
+  const last = text[text.length - 1];
+  const teaser = Object.assign({}, last, { name: "teaser" });
+
+  return [...initial, teaser];
 };
 
 const ArticleSummary = props => {
