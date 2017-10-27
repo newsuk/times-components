@@ -2,11 +2,17 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import { View } from "react-native";
+import { StyleSheet, View } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import Gradient from "./gradient";
+
+const styles = StyleSheet.create({
+  container: {
+    margin: 10
+  }
+});
 
 const Component = ({ children, ...props }) => (
   <View
@@ -43,6 +49,18 @@ storiesOf("Gradient", module)
           width: 200
         },
         {
+          height: 200
+        }
+      ]}
+    />
+  ))
+  .add("With stylesheets", () => (
+    <Component
+      degrees={270}
+      style={[
+        styles.container,
+        {
+          width: 200,
           height: 200
         }
       ]}

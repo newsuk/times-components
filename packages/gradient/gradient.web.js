@@ -3,6 +3,7 @@ import React from "react";
 import { View } from "react-native";
 import StylePropTypes from "react-style-proptype";
 
+const { supportingArrays } = StylePropTypes;
 const Gradient = ({ degrees, children, style }) => (
   <View
     style={[
@@ -17,7 +18,7 @@ const Gradient = ({ degrees, children, style }) => (
 );
 
 Gradient.defaultProps = {
-  degrees: 0,
+  degrees: 265,
   children: null,
   style: null
 };
@@ -28,8 +29,7 @@ Gradient.propTypes = {
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element)
   ]),
-  // eslint-disable-next-line react/no-typos
-  style: StylePropTypes.supportingArrays
+  style: supportingArrays
 };
 
 export default Gradient;

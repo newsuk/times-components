@@ -13,8 +13,8 @@ exports[`renders a Gradient 1`] = `
     }
     end={
       Object {
-        "x": 0.9999999999999999,
-        "y": -2.220446049250313e-16,
+        "x": -0.07922796533956822,
+        "y": 0.09442021232736122,
       }
     }
     locations={
@@ -26,7 +26,7 @@ exports[`renders a Gradient 1`] = `
     start={
       Object {
         "x": 1,
-        "y": 1,
+        "y": 0,
       }
     }
     style={
@@ -40,7 +40,7 @@ exports[`renders a Gradient 1`] = `
 </View>
 `;
 
-exports[`renders a Gradient and uses array prop styles 1`] = `
+exports[`renders a Gradient using array prop styles 1`] = `
 <View
   style={
     Array [
@@ -62,8 +62,8 @@ exports[`renders a Gradient and uses array prop styles 1`] = `
     }
     end={
       Object {
-        "x": 0.9999999999999999,
-        "y": -2.220446049250313e-16,
+        "x": -0.07922796533956822,
+        "y": 0.09442021232736122,
       }
     }
     locations={
@@ -75,7 +75,7 @@ exports[`renders a Gradient and uses array prop styles 1`] = `
     start={
       Object {
         "x": 1,
-        "y": 1,
+        "y": 0,
       }
     }
     style={
@@ -89,7 +89,7 @@ exports[`renders a Gradient and uses array prop styles 1`] = `
 </View>
 `;
 
-exports[`renders a Gradient and uses prop styles 1`] = `
+exports[`renders a Gradient using prop styles 1`] = `
 <View
   style={
     Object {
@@ -107,8 +107,8 @@ exports[`renders a Gradient and uses prop styles 1`] = `
     }
     end={
       Object {
-        "x": 0.9999999999999999,
-        "y": -2.220446049250313e-16,
+        "x": -0.07922796533956822,
+        "y": 0.09442021232736122,
       }
     }
     locations={
@@ -120,7 +120,59 @@ exports[`renders a Gradient and uses prop styles 1`] = `
     start={
       Object {
         "x": 1,
-        "y": 1,
+        "y": 0,
+      }
+    }
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`renders a Gradient using stylesheets 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "margin": 10,
+      },
+      Object {
+        "height": 200,
+      },
+      Object {
+        "width": 200,
+      },
+    ]
+  }
+>
+  <BVLinearGradient
+    colors={
+      Array [
+        "#f9f9f9",
+        "#ededed",
+      ]
+    }
+    end={
+      Object {
+        "x": -0.07922796533956822,
+        "y": 0.09442021232736122,
+      }
+    }
+    locations={
+      Array [
+        0,
+        1,
+      ]
+    }
+    start={
+      Object {
+        "x": 1,
+        "y": 0,
       }
     }
     style={

@@ -4,6 +4,7 @@ import { StyleSheet, View } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
 import StylePropTypes from "react-style-proptype";
 
+const { supportingArrays } = StylePropTypes;
 const styles = StyleSheet.create({
   container: {
     flex: 1
@@ -48,7 +49,7 @@ const Gradient = ({ degrees, children, style }) => {
 };
 
 Gradient.defaultProps = {
-  degrees: 0,
+  degrees: 265,
   children: null,
   style: null
 };
@@ -59,8 +60,7 @@ Gradient.propTypes = {
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element)
   ]),
-  // eslint-disable-next-line react/no-typos
-  style: StylePropTypes.supportingArrays
+  style: supportingArrays
 };
 
 export default Gradient;

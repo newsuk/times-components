@@ -1,8 +1,15 @@
 /* eslint-env jest */
 
 import React from "react";
+import { StyleSheet } from "react-native";
 import renderer from "react-test-renderer";
 import Gradient from "../gradient";
+
+const styles = StyleSheet.create({
+  container: {
+    margin: 10
+  }
+});
 
 it("renders a Gradient", () => {
   const tree = renderer.create(<Gradient />);
@@ -10,7 +17,7 @@ it("renders a Gradient", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("renders a Gradient and uses prop styles", () => {
+it("renders a Gradient using prop styles", () => {
   const tree = renderer.create(
     <Gradient
       style={{
@@ -23,10 +30,28 @@ it("renders a Gradient and uses prop styles", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("renders a Gradient and uses array prop styles", () => {
+it("renders a Gradient using array prop styles", () => {
   const tree = renderer.create(
     <Gradient
       style={[
+        {
+          height: 200
+        },
+        {
+          width: 200
+        }
+      ]}
+    />
+  );
+
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders a Gradient using stylesheets", () => {
+  const tree = renderer.create(
+    <Gradient
+      style={[
+        styles.container,
         {
           height: 200
         },
