@@ -52,7 +52,7 @@ exports[`renders 1`] = `
       style={
         Object {
           "color": "#696969",
-          "fontFamily": "TimesDigital-RegularSC",
+          "fontFamily": "TimesDigitalW04-RegularSC",
           "fontSize": 15,
         }
       }
@@ -132,7 +132,7 @@ exports[`renders with data 1`] = `
       style={
         Object {
           "color": "#696969",
-          "fontFamily": "TimesDigital-RegularSC",
+          "fontFamily": "TimesDigitalW04-RegularSC",
           "fontSize": 15,
         }
       }
@@ -307,7 +307,7 @@ exports[`renders without profile picture 1`] = `
       style={
         Object {
           "color": "#696969",
-          "fontFamily": "TimesDigital-RegularSC",
+          "fontFamily": "TimesDigitalW04-RegularSC",
           "fontSize": 15,
         }
       }

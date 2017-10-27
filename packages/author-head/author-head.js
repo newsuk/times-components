@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     paddingTop: 32
   },
   title: {
-    fontFamily: "TimesDigital-RegularSC",
+    fontFamily: "TimesDigitalW04-RegularSC",
     fontSize: 15,
     color: "#696969",
     ...Platform.select({
