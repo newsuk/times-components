@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.7.4...@times-components/article-summary@0.8.0) (2017-10-27)
+
+
+### Features
+
+* article summary joining and ellipses ([#301](https://github.com/newsuk/times-components/issues/301)) ([be8d3a2](https://github.com/newsuk/times-components/commit/be8d3a2))
+
+
+
+
 <a name="0.7.4"></a>
 ## [0.7.4](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.7.3...@times-components/article-summary@0.7.4) (2017-10-26)
 

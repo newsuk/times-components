@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.16.12"></a>
+## [0.16.12](https://github.com/newsuk/times-components/compare/@times-components/article@0.16.11...@times-components/article@0.16.12) (2017-10-27)
+
+
+
+
 <a name="0.16.11"></a>
 ## [0.16.11](https://github.com/newsuk/times-components/compare/@times-components/article@0.16.10...@times-components/article@0.16.11) (2017-10-26)
 
