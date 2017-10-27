@@ -53,15 +53,124 @@
             "__typename": "Article"
           },
           {
-            "content": [],
+            "content": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "bold",
+                    "attributes": {},
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Victoria"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "attributes": {},
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": " ITV"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "attributes": {},
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★★☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "bold",
+                    "attributes": {},
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Lucy Worsley’s Nights at the Opera"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "attributes": {},
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": " BBC Two"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "attributes": {},
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★☆☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Poor old Harriet, Duchess of Sutherland. There she was giddily expecting a"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
             "id": "1f18ebd0-671f-40e0-a190-82dd8af1a294",
             "label": null,
-            "leadAsset": null,
+            "leadAsset": {
+              "title": "",
+              "crop": {
+                "url":
+                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2bb30674-b008-11e7-8f75-2b6f1159f66f.jpg?crop=4815%2C2708%2C85%2C1833",
+                "__typename": "Crop"
+              },
+              "__typename": "Image"
+            },
             "publicationName": "TIMES",
-            "publishedTime": "2015-03-23T23:06:34.000Z",
-            "title": "A blank article with a server rendered component",
+            "publishedTime": "2015-03-17T23:00:44.000Z",
+            "title": "TV review: Victoria; Lucy Worsley’s Nights at the Opera",
             "url":
-              "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/a-blank-article-with-a-server-rendered-component-d06vmvz08",
+              "https://www.thetimes.co.uk/article/tv-review-victoria-lucy-worsleys-nights-at-the-opera-x2q80h7gj",
             "__typename": "Article"
           },
           {
@@ -336,41 +445,6 @@
             "title": "Fourth Briton is seized trying to join Isis",
             "url":
               "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/fourth-briton-is-seized-trying-to-join-isis-6nxtx6kg3",
-            "__typename": "Article"
-          },
-          {
-            "content": [
-              {
-                "name": "paragraph",
-                "attributes": {},
-                "children": [
-                  {
-                    "name": "text",
-                    "attributes": {
-                      "value":
-                        "A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to"
-                    },
-                    "children": []
-                  }
-                ]
-              }
-            ],
-            "id": "88152206-eaaa-4c19-940e-a1a2a9b80b62",
-            "label": "Politics",
-            "leadAsset": {
-              "title": "Fourth Briton is seized trying to join Isis",
-              "crop": {
-                "url":
-                  "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
-            "publicationName": "TIMES",
-            "publishedTime": "2015-03-17T23:01:44.000Z",
-            "title": "Fourth Briton is seized trying to join Isis",
-            "url":
-              "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/fourth-briton-is-seized-trying-to-join-isis-svbdhdcvx",
             "__typename": "Article"
           }
         ],

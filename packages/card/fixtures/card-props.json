@@ -6,17 +6,30 @@
   "text": [
     {
       "name": "paragraph",
+      "attributes": {},
       "children": [
         {
           "name": "text",
           "attributes": {
             "value":
-              "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, "
+              "Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night."
           },
           "children": []
         }
-      ],
-      "attributes": {}
+      ]
+    },
+    {
+      "name": "paragraph",
+      "attributes": {},
+      "children": [
+        {
+          "name": "text",
+          "attributes": {
+            "value": "The former punk"
+          },
+          "children": []
+        }
+      ]
     }
   ],
   "image": {

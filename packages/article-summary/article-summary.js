@@ -3,6 +3,7 @@ import { Text, View, Platform } from "react-native";
 import PropTypes from "prop-types";
 import { renderTrees, treePropType } from "@times-components/markup";
 import DatePublication from "@times-components/date-publication";
+import renderer from "./article-summary-renderer";
 
 const fontFamilyWebAndIos = "TimesDigitalW04";
 const fontFamilyAndroid = "TimesDigitalW04-Regular";
@@ -35,15 +36,27 @@ const styles = {
   }
 };
 
+const summarise = text => {
+  if (!text.length) {
+    return text;
+  }
+
+  const initial = text.slice(0, text.length - 1);
+  const last = text[text.length - 1];
+  const teaser = Object.assign({}, last, { name: "teaser" });
+
+  return [...initial, teaser];
+};
+
 const ArticleSummary = props => {
   const { label, headline, text, date, publication } = props;
-
+  const summary = summarise(text);
   const labelText = label && label.toUpperCase && label.toUpperCase();
   return (
     <View style={styles.container}>
       <Text style={styles.label}>{labelText}</Text>
       <Text style={styles.headline}>{headline}</Text>
-      <Text style={styles.text}>{renderTrees(text)}</Text>
+      <Text style={styles.text}>{renderTrees(summary, renderer)}</Text>
       <DatePublication date={date} publication={publication} />
     </View>
   );

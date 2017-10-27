@@ -65,7 +65,20 @@ exports[`renders horizontal above breakpoint 1`] = `
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, ",
+                  "value": "Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "The former punk",
                 },
                 "children": Array [],
                 "name": "text",
@@ -198,7 +211,17 @@ exports[`renders vertical by default 1`] = `
           disabled={false}
           ellipsizeMode="tail"
         >
-          A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+          
+          Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+        >
+          The former punk
+          ...
         </Text>
       </Text>
       <Text
@@ -311,7 +334,17 @@ exports[`renders without image 1`] = `
           disabled={false}
           ellipsizeMode="tail"
         >
-          A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+          
+          Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+        >
+          The former punk
+          ...
         </Text>
       </Text>
       <Text
@@ -424,7 +457,17 @@ exports[`renders without image url 1`] = `
           disabled={false}
           ellipsizeMode="tail"
         >
-          A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, 
+          
+          Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+        >
+          The former punk
+          ...
         </Text>
       </Text>
       <Text
