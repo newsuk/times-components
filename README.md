@@ -17,7 +17,7 @@ You can try without these requirements, but you'd be on your own.
 
 1. Run `yarn` to install dependencies
 2. Install [fontforge](http://fontforge.github.io/en-US/): `brew install fontforge` (See [Fonts section](#fonts))
-3. components can be seen running in a storybook:
+3. Components can be seen running in a storybook:
   * web storybook
     1. `yarn storybook`
     2. go to http://localhost:9001
