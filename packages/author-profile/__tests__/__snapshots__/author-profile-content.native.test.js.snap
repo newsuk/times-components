@@ -763,33 +763,11 @@ exports[`renders profile content 1`] = `
                 null,
               ]
             }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> feat: move loading from the image to the image
           >
             <View
               style={
                 Array [
                   Object {
-<<<<<<< HEAD
-                    "paddingBottom": 10,
-                  },
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                ]
-              }
-            >
-              <View
-                onLayout={[Function]}
-                style={
-                  Array [
-                    undefined,
-                  ]
-                }
-=======
                     "flexGrow": 1,
                     "flexShrink": 1,
                   },
@@ -811,47 +789,11 @@ exports[`renders profile content 1`] = `
                   }
                 }
                 style={undefined}
->>>>>>> feat: move loading from the image to the image
               >
                 <View
                   onLayout={[Function]}
                   style={
                     Array [
-<<<<<<< HEAD
-                      undefined,
-                      Object {
-                        "height": NaN,
-                        "width": undefined,
-                      },
-                    ]
-                  }
-                >
-                  <BVLinearGradient
-                    colors={
-                      Array [
-                        "#ededed",
-                        "#f9f9f9",
-                      ]
-                    }
-                    end={
-                      Object {
-                        "x": 1,
-                        "y": 0.25685517452260576,
-                      }
-                    }
-                    locations={
-                      Array [
-                        0,
-                        1,
-                      ]
-                    }
-                    start={
-                      Object {
-                        "x": 0,
-                        "y": 1,
-                      }
-                    }
-=======
                       Object {
                         "flex": 1,
                       },
@@ -860,27 +802,10 @@ exports[`renders profile content 1`] = `
                   }
                 >
                   <View
->>>>>>> feat: move loading from the image to the image
                     style={
-<<<<<<< HEAD
-                      Array [
-                        Object {
-                          "flex": 1,
-                        },
-<<<<<<< HEAD
-                      ]
-                    }
-                  />
-                </View>
-              </View>
-=======
-                        undefined,
-                      ]
-=======
                       Object {
                         "flex": 1,
                       }
->>>>>>> chore: update snapshots
                     }
                   >
                     <BVLinearGradient
@@ -919,7 +844,6 @@ exports[`renders profile content 1`] = `
                   </View>
                 </View>
               </Image>
->>>>>>> feat: move loading from the image to the image
             </View>
             <View
               style={
@@ -928,238 +852,11 @@ exports[`renders profile content 1`] = `
                     "flexGrow": 1,
                     "flexShrink": 1,
                   },
-<<<<<<< HEAD
-<<<<<<< HEAD
-                ],
-                "name": "bold",
-              },
-              Object {
-                "attributes": Object {},
-                "children": Array [],
-                "name": "break",
-              },
-              Object {
-                "attributes": Object {
-                  "value": " BBC Two",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-              Object {
-                "attributes": Object {},
-                "children": Array [],
-                "name": "break",
-              },
-              Object {
-                "attributes": Object {
-                  "value": "★★★☆☆",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-            ],
-            "name": "paragraph",
-          },
-          Object {
-            "attributes": Object {},
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": "Poor old Harriet, Duchess of Sutherland. There she was giddily expecting a",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-            ],
-            "name": "paragraph",
-          },
-        ],
-        "id": "1f18ebd0-671f-40e0-a190-82dd8af1a294",
-        "label": null,
-        "leadAsset": Object {
-          "__typename": "Image",
-          "crop": Object {
-            "__typename": "Crop",
-            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2bb30674-b008-11e7-8f75-2b6f1159f66f.jpg?crop=4815%2C2708%2C85%2C1833",
-          },
-          "title": "",
-        },
-        "publicationName": "TIMES",
-        "publishedTime": 2015-03-17T23:00:44.000Z,
-        "title": "TV review: Victoria; Lucy Worsley’s Nights at the Opera",
-        "url": "https://www.thetimes.co.uk/article/tv-review-victoria-lucy-worsleys-nights-at-the-opera-x2q80h7gj",
-      },
-      Object {
-        "__typename": "Article",
-        "content": Array [],
-        "id": "2c18ebd0-671f-40e0-a190-82dd8af1a294",
-        "label": null,
-        "leadAsset": null,
-        "publicationName": "TIMES",
-        "publishedTime": 2015-03-23T23:06:34.000Z,
-        "title": "A blank article with a server rendered component",
-        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/a-blank-article-with-a-server-rendered-component-35pjwxj8n",
-      },
-    ]
-  }
-  disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
-  horizontal={false}
-  initialListSize={3}
-  initialNumToRender={10}
-  keyExtractor={[Function]}
-  maxToRenderPerBatch={10}
-  numColumns={1}
-  onContentSizeChange={[Function]}
-  onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  onViewableItemsChanged={undefined}
-  pageSize={3}
-  renderItem={[Function]}
-  scrollEventThrottle={50}
-  scrollRenderAheadDistance={2}
-  stickyHeaderIndices={Array []}
-  testID="scroll-view"
-  updateCellsBatchingPeriod={50}
-  windowSize={21}
->
-  <View>
-=======
-          }
-        />
-      </View>
-    </View>
->>>>>>> chore: update snapshots
-    <View
-      onLayout={[Function]}
-      style={null}
-    >
-<<<<<<< HEAD
-      <View>
-        <View
-          pointerEvents="box-none"
-          style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "paddingBottom": 50,
-            }
-          }
-        >
-          <View
-            accessibilityRole="banner"
-            style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#F9F8F3",
-                "flexDirection": "column",
-                "paddingBottom": 50,
-                "width": "100%",
-              }
-            }
-          >
-            <Text
-              accessibilityRole="heading"
-              accessible={true}
-              allowFontScaling={true}
-              aria-level="1"
-              disabled={false}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#000",
-                  "fontFamily": "TimesModern-Bold",
-                  "fontSize": 45,
-                  "paddingTop": 32,
-                }
-              }
-              testID="author-name"
-            >
-              
-            </Text>
-            <Text
-              accessibilityRole="heading"
-              accessible={true}
-              allowFontScaling={true}
-              aria-level="2"
-              disabled={false}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "TimesDigitalW04-RegularSC",
-                  "fontSize": 15,
-                }
-              }
-            >
-              
-            </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              disabled={false}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#333",
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 16,
-                  "lineHeight": 26,
-                  "maxWidth": "88%",
-                  "paddingBottom": 32,
-                  "textAlign": "center",
-                }
-              }
-            />
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "alignItems": "stretch",
-              "flexDirection": "row",
-              "justifyContent": "center",
-            }
-          }
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "flex": 1,
-                  "maxWidth": 800,
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
-                },
-                Object {
-                  "paddingBottom": 10,
-                },
-              ]
-            }
-          >
-            <View
-              onLayout={[Function]}
-              style={
-                Object {
-                  "alignItems": "stretch",
-                  "flexDirection": "column",
-                }
-=======
-                  undefined,
-                ]
->>>>>>> feat: skeleton state on articles
-=======
                   Object {
                     "flexBasis": 0,
                     "flexGrow": 3,
                   },
                 ]
->>>>>>> feat: move loading from the image to the image
               }
             >
               <View
@@ -1345,68 +1042,6 @@ exports[`renders profile content 1`] = `
             </View>
           </View>
         </View>
-<<<<<<< HEAD
-=======
-      <View
-        style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingTop": 10,
-            },
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            },
-          ]
-        }
-      >
-        <View
-          onLayout={[Function]}
-        />
->>>>>>> chore: update snapshots
-      </View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "backgroundColor": "#dbdbdb",
-              "height": 1,
-            }
-          }
-        />
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-      style={null}
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingTop": 10,
-            },
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            },
-          ]
-        }
-      >
-        <View
-          onLayout={[Function]}
-        />
-=======
->>>>>>> feat: move loading from the image to the image
       </View>
       <View
         style={
@@ -4390,7 +4025,7 @@ exports[`renders profile content component 1`] = `
               style={
                 Object {
                   "color": "#696969",
-                  "fontFamily": "TimesDigital-RegularSC",
+                  "fontFamily": "TimesDigitalW04-RegularSC",
                   "fontSize": 15,
                 }
               }
@@ -6081,7 +5716,7 @@ exports[`renders profile empty 1`] = `
               style={
                 Object {
                   "color": "#696969",
-                  "fontFamily": "TimesDigital-RegularSC",
+                  "fontFamily": "TimesDigitalW04-RegularSC",
                   "fontSize": 15,
                 }
               }
@@ -6469,7 +6104,7 @@ exports[`renders profile loading 1`] = `
               style={
                 Object {
                   "color": "#696969",
-                  "fontFamily": "TimesDigital-RegularSC",
+                  "fontFamily": "TimesDigitalW04-RegularSC",
                   "fontSize": 15,
                 }
               }
