@@ -5,9 +5,6 @@ import { renderTrees, treePropType } from "@times-components/markup";
 import DatePublication from "@times-components/date-publication";
 import renderer from "./article-summary-renderer";
 
-const fontFamilyWebAndIos = "TimesDigitalW04";
-const fontFamilyAndroid = "TimesDigitalW04-Regular";
-
 const styles = {
   container: {},
   label: {
@@ -22,14 +19,13 @@ const styles = {
     fontSize: 22,
     lineHeight: 22,
     marginBottom: 8,
-    fontFamily: "TimesModern-Bold",
-    fontWeight: "400"
+    fontFamily: "TimesModern",
+    fontWeight: "bold"
   },
   text: {
     color: "#696969",
     fontSize: 14,
-    fontFamily:
-      Platform.OS === "android" ? fontFamilyAndroid : fontFamilyWebAndIos,
+    fontFamily: "TimesDigitalW04",
     lineHeight: 20,
     marginBottom: 10,
     flexWrap: "wrap"

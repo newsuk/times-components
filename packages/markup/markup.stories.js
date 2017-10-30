@@ -62,7 +62,8 @@ storiesOf("Markup", module)
               style={{
                 margin: 10,
                 color: "red",
-                fontFamily: "TimesModern-Bold"
+                fontFamily: "TimesModern",
+                fontWeight: "bold"
               }}
             >
               {children}

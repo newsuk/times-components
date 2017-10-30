@@ -7,9 +7,6 @@ import { TextLink } from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import { renderTrees, treePropType } from "@times-components/markup";
 
-const fontFamilyWebAndIos = "TimesDigitalW04";
-const fontFamilyAndroid = "TimesDigitalW04-Regular";
-
 const styles = StyleSheet.create({
   container: {
     width: "100%",
@@ -33,7 +30,8 @@ const styles = StyleSheet.create({
     overflow: "hidden"
   },
   name: {
-    fontFamily: "TimesModern-Bold",
+    fontFamily: "TimesModern",
+    fontWeight: "bold",
     fontSize: 45,
     color: "#000",
     paddingTop: 32
@@ -57,8 +55,7 @@ const styles = StyleSheet.create({
     textDecorationLine: "none"
   },
   bio: {
-    fontFamily:
-      Platform.OS === "android" ? fontFamilyAndroid : fontFamilyWebAndIos,
+    fontFamily: "TimesDigitalW04",
     textAlign: "center",
     fontSize: 16,
     lineHeight: 26,

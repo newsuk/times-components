@@ -1,7 +1,7 @@
 import { StyleSheet, Platform } from "react-native";
 import globalStyle from "./article-global-style";
 
-const standFirstFontFamily = "TimesModern-Regular";
+const standFirstFontFamily = "TimesModern";
 
 const styles = {};
 

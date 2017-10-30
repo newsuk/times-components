@@ -9,8 +9,8 @@ const styles = {
     fontSize: 22,
     lineHeight: 25,
     marginBottom: 8,
-    fontFamily: "TimesModern-Bold",
-    fontWeight: "400"
+    fontFamily: "TimesModern",
+    fontWeight: "bold"
   }
 };
 
