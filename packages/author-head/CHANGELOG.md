@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.7"></a>
+## [0.8.7](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.8.6...@times-components/author-head@0.8.7) (2017-10-30)
+
+
+### Bug Fixes
+
+* rename TimesDigitalW04-RegularSC font ([#339](https://github.com/newsuk/times-components/issues/339)) ([de699f7](https://github.com/newsuk/times-components/commit/de699f7))
+
+
+
+
 <a name="0.8.6"></a>
 ## [0.8.6](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.8.5...@times-components/author-head@0.8.6) (2017-10-27)
 

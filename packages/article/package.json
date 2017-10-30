@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "0.16.12",
+  "version": "0.16.13",
   "description": "The article",
   "main": "article",
   "scripts": {
@@ -54,7 +54,7 @@
   "dependencies": {
     "@times-components/ad": "0.4.4",
     "@times-components/article-byline": "0.7.5",
-    "@times-components/article-flag": "0.7.3",
+    "@times-components/article-flag": "0.7.4",
     "@times-components/article-headline": "0.8.3",
     "@times-components/article-image": "0.3.3",
     "@times-components/article-label": "0.4.3",
