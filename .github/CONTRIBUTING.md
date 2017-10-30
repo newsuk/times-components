@@ -109,37 +109,41 @@ Follow these steps to deploy storybook native to a real android device.
 - If still struggling; shake the device and `debug js remotely`. Open a console on your computer for more info on the error
 - If you're still struggling verify that you are able to run `yarn storybook` and that it works in web view.
 
-### Fonts Naming Convention
+### Font Naming Convention
 
-Android and ios interpret fonts differently. The style property for fontFamily on iOS refers to the internal post script name of the font. The style property for fontFamily on Android refers to the filename of the font. React native android only supports 4 fonts weights https://github.com/facebook/react-native/blob/master/ReactAndroid/src/main/java/com/facebook/react/views/text/ReactFontManager.java, therefore comes out the following naming conventiosn for fonts
+Android and iOS interpret fonts differently. The style property for `fontFamily` on iOS refers to the internal post script name of the font. The style property for `fontFamily` on Android refers to the filename of the font. React Native Android only supports [4 font weights](https://github.com/facebook/react-native/blob/master/ReactAndroid/src/main/java/com/facebook/react/views/text/ReactFontManager.java), therefore we have made the following conventions
 
-##For all fonts which are regular, bold, italic, bold and italic variants, below is the format
+## For all fonts which are; regular, bold, italic, bold and italic variants
 
-- Filename format (physical file name): <fontname>_<weight> eg. So this means a regular does not have a suffix. Eg filename is TimesDigitalW04.ttf for a TimesDigitalW04-Regular.ttf font
+### Filename format (physical file name): <fontname>_<weight> eg
 
-TimesDigitalW04.ttf
-TimesDigitalW04_italic.ttf
-TimesDigitalW04_bold.ttf
+* TimesDigitalW04.ttf
+* TimesDigitalW04_italic.ttf
+* TimesDigitalW04_bold.ttf
 
-- FontName format (meta of the font) :  <fontname>-<weight>
-But the FontName will have the weight details, whatever it is. eg.
+EXCEPT FOR REGULAR eg
 
-TimesDigitalW04-Regular
-TimesDigitalW04-Italic
-TimesDigitalW04-Bold
+TimesDigitalW04.ttf for a TimesDigitalW04-Regular.ttf font
 
-- Family Name format (meta of the font) : <fontname>
-The font Family name should be constant across all of the above: eg.
+### FontName format (meta of the font): <fontname>-<weight> eg
 
-TimesDigitalW04
+* TimesDigitalW04-Regular
+* TimesDigitalW04-Italic
+* TimesDigitalW04-Bold
 
-##For fonts which have a  font weight  that is outside of above font weights and styles, eg GillSansMTStd-Medium, then the filename, font name and family name should refer to the complete font file name
+### Family Name format (meta of the font): <fontname> eg
+
+* TimesDigitalW04
+
+## For fonts which have a font weight that is outside of the above font weights and styles
+
+The filename, font name and family name should refer to the complete font file name
 
 Filename format: <fontname>-<weight>
 Font Name / Full name format : <fontname>-<weight>
 Family Name format: <fontname>-<weight>
 
-Eg.
+eg
 
 Filename = GillSansMTStd-Medium
 FontName / Full name = GillSansMTStd-Medium
