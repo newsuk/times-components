@@ -441,7 +441,7 @@ exports[`Article test on web renders article no label 1`] = `
                 style={
                   Object {
                     "color": "rgba(227,70,5,1)",
-                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
                     "fontSize": "12px",
                     "letterSpacing": "1.4px",
                   }
@@ -490,7 +490,7 @@ exports[`Article test on web renders article no label 1`] = `
                 style={
                   Object {
                     "color": "rgba(197,29,36,1)",
-                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
                     "fontSize": "12px",
                     "letterSpacing": "1.4px",
                   }
@@ -1253,7 +1253,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
                 style={
                   Object {
                     "color": "rgba(227,70,5,1)",
-                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
                     "fontSize": "12px",
                     "letterSpacing": "1.4px",
                   }
@@ -1302,7 +1302,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
                 style={
                   Object {
                     "color": "rgba(197,29,36,1)",
-                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
                     "fontSize": "12px",
                     "letterSpacing": "1.4px",
                   }
@@ -1830,7 +1830,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
                 style={
                   Object {
                     "color": "rgba(227,70,5,1)",
-                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
                     "fontSize": "12px",
                     "letterSpacing": "1.4px",
                   }
@@ -1879,7 +1879,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
                 style={
                   Object {
                     "color": "rgba(197,29,36,1)",
-                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
                     "fontSize": "12px",
                     "letterSpacing": "1.4px",
                   }
@@ -2186,7 +2186,7 @@ exports[`Article test on web renders full article 1`] = `
                 style={
                   Object {
                     "color": "rgba(227,70,5,1)",
-                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
                     "fontSize": "12px",
                     "letterSpacing": "1.4px",
                   }
@@ -2235,7 +2235,7 @@ exports[`Article test on web renders full article 1`] = `
                 style={
                   Object {
                     "color": "rgba(197,29,36,1)",
-                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
                     "fontSize": "12px",
                     "letterSpacing": "1.4px",
                   }

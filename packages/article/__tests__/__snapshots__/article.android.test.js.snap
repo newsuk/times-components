@@ -908,7 +908,7 @@ exports[`Article test on android renders article no label 1`] = `
               style={
                 Array [
                   Object {
-                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
                     "fontSize": 10,
                     "fontWeight": "400",
                     "letterSpacing": 1.4,
@@ -972,7 +972,7 @@ exports[`Article test on android renders article no label 1`] = `
               style={
                 Array [
                   Object {
-                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
                     "fontSize": 10,
                     "fontWeight": "400",
                     "letterSpacing": 1.4,
@@ -3058,7 +3058,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               style={
                 Array [
                   Object {
-                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
                     "fontSize": 10,
                     "fontWeight": "400",
                     "letterSpacing": 1.4,
@@ -3122,7 +3122,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               style={
                 Array [
                   Object {
-                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
                     "fontSize": 10,
                     "fontWeight": "400",
                     "letterSpacing": 1.4,
@@ -4535,7 +4535,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               style={
                 Array [
                   Object {
-                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
                     "fontSize": 10,
                     "fontWeight": "400",
                     "letterSpacing": 1.4,
@@ -4599,7 +4599,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               style={
                 Array [
                   Object {
-                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
                     "fontSize": 10,
                     "fontWeight": "400",
                     "letterSpacing": 1.4,
@@ -5379,7 +5379,7 @@ exports[`Article test on android renders full article 1`] = `
               style={
                 Array [
                   Object {
-                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
                     "fontSize": 10,
                     "fontWeight": "400",
                     "letterSpacing": 1.4,
@@ -5443,7 +5443,7 @@ exports[`Article test on android renders full article 1`] = `
               style={
                 Array [
                   Object {
-                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
                     "fontSize": 10,
                     "fontWeight": "400",
                     "letterSpacing": 1.4,

@@ -16,7 +16,7 @@ const styles = {
     marginBottom: 1
   },
   title: {
-    fontFamily: "TimesDigital-RegularSC",
+    fontFamily: "TimesDigitalW04-RegularSC",
     fontSize: Platform.OS === "android" ? 10 : 12,
     fontWeight: "400",
     letterSpacing: 1.4
