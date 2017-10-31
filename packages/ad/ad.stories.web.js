@@ -6,7 +6,6 @@ import { storiesOf } from "@storybook/react-native";
 import Ad, { AdComposer } from "./ad.web";
 
 import Placeholder from "./placeholder";
-import TimesWatermark from "./times-watermark";
 
 export default () =>
   storiesOf("Ad", module)
@@ -43,13 +42,12 @@ export default () =>
         </AdComposer>
       </div>
     ))
-    .add("Placeholder", () => <Placeholder width={300} height={250} />)
-    .add("TimesWatermark (Default)", () => (
-      <TimesWatermark width={832} height={300} />
+    .add("Placeholder (300x250 - MPU)", () => (
+      <Placeholder width={300} height={250} />
     ))
-    .add("TimesWatermark (MPU)", () => (
-      <TimesWatermark width={300} height={250} />
+    .add("Placeholder (728x90 - Default)", () => (
+      <Placeholder width={728} height={90} />
     ))
-    .add("TimesWatermark (Billboard)", () => (
-      <TimesWatermark width={970} height={250} />
+    .add("Placeholder (970x250 - Billboard)", () => (
+      <Placeholder width={970} height={250} />
     ));

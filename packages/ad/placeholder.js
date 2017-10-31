@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, View, Text, Platform } from "react-native";
 import PropTypes from "prop-types";
 
-import TimesWatermark from "./times-watermark";
+import TimesWatermark from "./ad-watermark";
 
 const fontFamilyWebAndIos = "TimesDigitalW04";
 const fontFamilyAndroid = "TimesDigitalW04-Regular";
@@ -19,15 +19,18 @@ const getStyles = (width, height) =>
       alignItems: "center",
       backgroundColor: "#F9F9F9",
       width,
-      height
+      height,
+      borderColor: "#DBDBDB",
+      borderWidth: 1,
+      borderStyle: "solid"
     },
     placeholderText: {
-      fontSize: 12,
+      fontSize: 11,
       fontFamily:
         Platform.OS === "android" ? fontFamilyAndroid : fontFamilyWebAndIos,
       backgroundColor: "#F9F9F9",
       color: "#696969",
-      borderColor: "#D8D8D8",
+      borderColor: "#DBDBDB",
       borderWidth: 1,
       borderStyle: "solid",
       position: "absolute",

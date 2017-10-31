@@ -1,8 +1,8 @@
 {
-  "name": "@times-components/ad",
-  "version": "0.4.4",
-  "description": "Ad component",
-  "main": "ad",
+  "name": "@times-components/watermark",
+  "version": "0.0.1",
+  "description": "Watermark",
+  "main": "watermark",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
@@ -13,13 +13,8 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/ad/__tests__/**.test.js"
-    ],
-    "testEnvironment": "jsdom"
+    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+    "testMatch": ["<rootDir>/packages/watermark/**.test.js"]
   },
   "repository": {
     "type": "git",
@@ -30,7 +25,7 @@
     "react",
     "native",
     "web",
-    "gpt",
+    "watermark",
     "component"
   ],
   "license": "BSD-3-Clause",
@@ -61,11 +56,10 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/watermark": "0.0.1",
     "prop-types": "15.6.0",
-    "react-broadcast": "0.5.2",
+    "react-native-svg": "5.4.1",
     "react-native-web": "0.1.7",
-    "react-style-proptype": "3.0.0"
+    "svgs": "3.1.0"
   },
   "peerDependencies": {
     "react": ">=16",
