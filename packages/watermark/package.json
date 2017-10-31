@@ -1,6 +1,6 @@
 {
   "name": "@times-components/watermark",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Watermark",
   "main": "watermark",
   "scripts": {
@@ -13,8 +13,12 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-    "testMatch": ["<rootDir>/packages/watermark/**.test.js"]
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/watermark/**.test.js"
+    ]
   },
   "repository": {
     "type": "git",
