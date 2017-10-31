@@ -108,6 +108,7 @@ Follow these steps to deploy storybook native to a real android device.
 - If your device is complaining about being unable to reach `localhost` or `404` use the `adb` commands. Shake the device to bring up the developer menu and reload the app
 - If still struggling; shake the device and `debug js remotely`. Open a console on your computer for more info on the error
 - If you're still struggling verify that you are able to run `yarn storybook` and that it works in web view.
+- If you receive a `":CFBundleIdentifier", Does Not Exist` error when trying to run `yarn ios`, try clearing your React Native cache with `rm -r ~/.rncache` and clearing third part libraries `rm -r <your-project>/node_modules/react-native/third_party`. This happens when React Native caches third party tools for previous versions of React Native.
 
 ## Folder Structure
 
