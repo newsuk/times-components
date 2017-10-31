@@ -29,9 +29,9 @@ exports[`renders an article-summary component with content 1`] = `
     style={
       Object {
         "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
+        "fontFamily": "TimesModern",
         "fontSize": 22,
-        "fontWeight": "400",
+        "fontWeight": "bold",
         "lineHeight": 22,
         "marginBottom": 8,
       }
@@ -127,9 +127,9 @@ exports[`renders an article-summary component with content including line breaks
     style={
       Object {
         "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
+        "fontFamily": "TimesModern",
         "fontSize": 22,
-        "fontWeight": "400",
+        "fontWeight": "bold",
         "lineHeight": 22,
         "marginBottom": 8,
       }
@@ -298,9 +298,9 @@ exports[`renders an article-summary component with empty content at the end trim
     style={
       Object {
         "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
+        "fontFamily": "TimesModern",
         "fontSize": 22,
-        "fontWeight": "400",
+        "fontWeight": "bold",
         "lineHeight": 22,
         "marginBottom": 8,
       }
@@ -404,9 +404,9 @@ exports[`renders an article-summary component with headline and no content 1`] =
     style={
       Object {
         "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
+        "fontFamily": "TimesModern",
         "fontSize": 22,
-        "fontWeight": "400",
+        "fontWeight": "bold",
         "lineHeight": 22,
         "marginBottom": 8,
       }

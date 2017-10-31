@@ -33,8 +33,9 @@ exports[`renders 1`] = `
       style={
         Object {
           "color": "#000",
-          "fontFamily": "TimesModern-Bold",
+          "fontFamily": "TimesModern",
           "fontSize": 45,
+          "fontWeight": "bold",
           "paddingTop": 32,
         }
       }
@@ -113,8 +114,9 @@ exports[`renders with data 1`] = `
       style={
         Object {
           "color": "#000",
-          "fontFamily": "TimesModern-Bold",
+          "fontFamily": "TimesModern",
           "fontSize": 45,
+          "fontWeight": "bold",
           "paddingTop": 32,
         }
       }
@@ -340,8 +342,9 @@ exports[`renders without profile picture 1`] = `
       style={
         Object {
           "color": "#000",
-          "fontFamily": "TimesModern-Bold",
+          "fontFamily": "TimesModern",
           "fontSize": 45,
+          "fontWeight": "bold",
           "paddingTop": 32,
         }
       }

@@ -206,8 +206,9 @@ exports[`renders profile content 1`] = `
               style={
                 Object {
                   "color": "#000",
-                  "fontFamily": "TimesModern-Bold",
+                  "fontFamily": "TimesModern",
                   "fontSize": 45,
+                  "fontWeight": "bold",
                   "paddingTop": 32,
                 }
               }
@@ -5595,11 +5596,11 @@ exports[`renders profile content item component with no image  1`] = `
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#333333",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 12,
-                  "letterSpacing": 1,
-                  "marginBottom": 2,
+                  "color": "#000",
+                  "fontFamily": "TimesModern",
+                  "fontSize": 45,
+                  "fontWeight": "bold",
+                  "paddingTop": 32,
                 }
               }
             />
@@ -5862,8 +5863,47 @@ exports[`renders profile empty 1`] = `
               }
             >
               <View
-                style={
-                  Array [
+                style={Object {}}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  disabled={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 12,
+                      "letterSpacing": 1,
+                      "marginBottom": 2,
+                    }
+                  }
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  disabled={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "TimesModern",
+                      "fontSize": 22,
+                      "fontWeight": "bold",
+                      "lineHeight": 22,
+                      "marginBottom": 8,
+                    }
+                  }
+                >
+                  British trio stopped on the way to join Isis
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  disabled={false}
+                  ellipsizeMode="tail"
+                  style={
                     Object {
                       "alignItems": "center",
                       "flexDirection": "row",
@@ -6245,91 +6285,150 @@ exports[`renders profile loading 1`] = `
                 }
               }
             >
-              Lorem 
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                disabled={false}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "fontWeight": "bold",
-                  }
-                }
-              >
-                ipsum
-              </Text>
-               testbr 
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                disabled={false}
-                ellipsizeMode="tail"
-              >
-                
-                
-              </Text>
-              More text 
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                disabled={false}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "fontStyle": "italic",
-                  }
-                }
-              >
-                 last 
-              </Text>
-            </Text>
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "alignItems": "stretch",
-              "flexDirection": "row",
-              "justifyContent": "center",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "maxWidth": 800,
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              }
-            }
-          >
-            <View
-              onLayout={[Function]}
-              style={
-                Object {
-                  "alignItems": "stretch",
-                  "flexDirection": "column",
-                }
-              }
-            >
               <View
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "flexDirection": "row",
-                      "height": 40,
-                      "justifyContent": "space-between",
-                    },
-                    Object {
-                      "justifyContent": "center",
-                    },
-                    null,
-                  ]
-                }
+                style={Object {}}
               >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  disabled={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 12,
+                      "letterSpacing": 1,
+                      "marginBottom": 2,
+                    }
+                  }
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  disabled={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "TimesModern",
+                      "fontSize": 22,
+                      "fontWeight": "bold",
+                      "lineHeight": 22,
+                      "marginBottom": 8,
+                    }
+                  }
+                >
+                  TV review: Victoria; Lucy Worsley’s Nights at the Opera
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  disabled={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "flexWrap": "wrap",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 14,
+                      "lineHeight": 20,
+                      "marginBottom": 10,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
+
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      disabled={false}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      Victoria
+                    </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      disabled={false}
+                      ellipsizeMode="tail"
+                    >
+
+
+                    </Text>
+                    ITV
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      disabled={false}
+                      ellipsizeMode="tail"
+                    >
+
+
+                    </Text>
+                    ★★★★☆
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
+
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      disabled={false}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      Lucy Worsley’s Nights at the Opera
+                    </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      disabled={false}
+                      ellipsizeMode="tail"
+                    >
+
+
+                    </Text>
+                    BBC Two
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      disabled={false}
+                      ellipsizeMode="tail"
+                    >
+
+
+                    </Text>
+                    ★★★☆☆
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                  >
+                    Poor old Harriet, Duchess of Sutherland. There she was giddily expecting a
+                    ...
+                  </Text>
+                </Text>
                 <Text
                   accessible={true}
                   allowFontScaling={true}
@@ -6438,14 +6537,14 @@ exports[`renders profile loading 1`] = `
                       "flexShrink": 1,
                     },
                     Object {
-                      "flexBasis": 0,
-                      "flexGrow": 3,
-                    },
-                  ]
-                }
-              >
-                <View
-                  style={Object {}}
+                      "color": "#333333",
+                      "fontFamily": "TimesModern",
+                      "fontSize": 22,
+                      "fontWeight": "bold",
+                      "lineHeight": 22,
+                      "marginBottom": 8,
+                    }
+                  }
                 >
                   <Text
                     accessible={true}
@@ -6747,14 +6846,14 @@ exports[`renders profile loading 1`] = `
                 "paddingTop": 10,
               },
               Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-        >
-          <View
-            onLayout={[Function]}
+                "color": "#333333",
+                "fontFamily": "TimesModern",
+                "fontSize": 22,
+                "fontWeight": "bold",
+                "lineHeight": 22,
+                "marginBottom": 8,
+              }
+            }
           >
             <View
               style={
@@ -6889,8 +6988,12 @@ exports[`renders profile loading 1`] = `
             onLayout={[Function]}
             style={
               Object {
-                "alignItems": "stretch",
-                "flexDirection": "column",
+                "color": "#333333",
+                "fontFamily": "TimesModern",
+                "fontSize": 22,
+                "fontWeight": "bold",
+                "lineHeight": 22,
+                "marginBottom": 8,
               }
             }
           >

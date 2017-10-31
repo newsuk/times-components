@@ -11,7 +11,7 @@ const ArticleHeadline = ({ text, baseUrl }) => {
       <style>
         @font-face {
           font-family: TimesModernBold;
-          src: url(/fonts/TimesModern-Bold.woff2) format("woff2"), url(/fonts/TimesModern-Bold.woff) format("woff"), url(/fonts/TimesModern-Bold.ttf) format("truetype");
+          src: url(/fonts/TimesModern_bold.woff2) format("woff2"), url(/fonts/TimesModern_bold.woff) format("woff"), url(/fonts/TimesModern_bold.ttf) format("truetype");
           font-weight: 400;
           font-style: normal;
         }

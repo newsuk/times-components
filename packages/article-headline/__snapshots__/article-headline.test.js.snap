@@ -10,9 +10,9 @@ exports[`renders correctly 1`] = `
     Array [
       Object {
         "color": "#1D1D1B",
-        "fontFamily": "TimesModern-Bold",
+        "fontFamily": "TimesModern",
         "fontSize": 22,
-        "fontWeight": "400",
+        "fontWeight": "bold",
         "lineHeight": 25,
         "marginBottom": 8,
       },

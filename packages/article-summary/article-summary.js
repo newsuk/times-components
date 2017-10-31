@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, Platform } from "react-native";
+import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import { renderTrees, treePropType } from "@times-components/markup";
 import DatePublication from "@times-components/date-publication";
