@@ -10,3 +10,8 @@ script:
 after_success:
   - yarn coverage:publish
   - ./lib/publish.sh
+deploy:
+  provider: script
+  script: lib/publish_storybook.sh
+  on:
+    branch: storybook-publish-ci
