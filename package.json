@@ -37,8 +37,7 @@
     "fmt": "prettier --write 'packages/**/*.js'",
     "packages:publish": "lerna publish --conventional-commits --yes --concurrency=1 --exact",
     "packages:publish-dry-run": "npm run packages:publish -- --skip-git --skip-npm",
-    "update-deps": "lerna bootstrap --hoist --npm-client=yarn --concurrency=1",
-    "postinstall": "npm run update-deps --silent"
+    "update-deps": "lerna bootstrap --hoist --npm-client=yarn --concurrency=1"
   },
   "jest": {
     "preset": "react-native",
