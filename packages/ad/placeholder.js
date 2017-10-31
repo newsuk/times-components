@@ -4,8 +4,6 @@ import PropTypes from "prop-types";
 
 import TimesWatermark from "./ad-watermark";
 
-const fontFamily = "TimesDigitalW04";
-
 const getStyles = (width, height) =>
   StyleSheet.create({
     container: {
@@ -25,7 +23,7 @@ const getStyles = (width, height) =>
     },
     placeholderText: {
       fontSize: 12,
-      fontFamily,
+      fontFamily: "TimesDigitalW04",
       backgroundColor: "#F9F9F9",
       color: "#696969",
       borderColor: "#DBDBDB",

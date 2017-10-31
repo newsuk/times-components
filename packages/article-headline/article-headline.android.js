@@ -10,18 +10,16 @@ const ArticleHeadline = ({ text, baseUrl }) => {
     <div>
       <style>
         @font-face {
-          font-family: TimesModernBold;
-          src: url(/fonts/TimesModern_bold.woff2) format("woff2"), url(/fonts/TimesModern_bold.woff) format("woff"), url(/fonts/TimesModern_bold.ttf) format("truetype");
-          font-weight: 400;
-          font-style: normal;
+          font-family: TimesModern;
+          src: url(/fonts/TimesModern.woff2) format("woff2"), url(/fonts/TimesModern.woff) format("woff"), url(/fonts/TimesModern.ttf) format("truetype");
         }
         p {
           color: #1D1D1B;
           font-size: 22px;
           line-height: 25px;
           margin-bottom: 8px;
-          font-family: TimesModernBold;
-          font-weight: 400;
+          font-family: TimesModern;
+          font-weight: bold;
           letter-spacing: 0.5px;
         }
       </style>
