@@ -1,4 +1,4 @@
-/* globals withComponent device test expect element by beforeEach waitFor */
+/* globals withComponent device test expect element by beforeEach */
 
 import React from "react";
 import Article from "./article";
@@ -17,10 +17,10 @@ withComponent(
     beforeEach(async () => {
       await device.launchApp({ newInstance: true });
       await fructose.loadComponent();
-      await waitFor(element(by.id("listView")));
     });
 
     test("default Article should render correctly", async () => {
+      await expect(element(by.id("listView"))).toBeVisible();
       await expect(element(by.id("leadAsset"))).toBeVisible();
       await expect(element(by.id("label"))).toBeVisible();
       await expect(element(by.id("headline"))).toBeVisible();
@@ -37,6 +37,7 @@ withComponent(
     test(
       "default Article should be able to scroll down the page",
       async () => {
+        await expect(element(by.id("listView"))).toBeVisible();
         await expect(element(by.id("paragraph-3"))).toBeNotVisible();
         await element(by.id("listView")).scroll(900, "down");
         await expect(element(by.id("paragraph-3"))).toBeVisible();
