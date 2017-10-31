@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "0.16.13",
+  "version": "0.16.14",
   "description": "The article",
   "main": "article",
   "scripts": {
@@ -52,15 +52,15 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/ad": "0.4.4",
-    "@times-components/article-byline": "0.7.5",
+    "@times-components/ad": "0.4.5",
+    "@times-components/article-byline": "0.7.6",
     "@times-components/article-flag": "0.7.4",
     "@times-components/article-headline": "0.8.3",
     "@times-components/article-image": "0.3.3",
     "@times-components/article-label": "0.4.3",
     "@times-components/date-publication": "0.4.3",
     "@times-components/image": "1.5.3",
-    "@times-components/markup": "0.12.0",
+    "@times-components/markup": "0.12.1",
     "@times-components/provider": "0.14.1",
     "prop-types": "15.6.0",
     "react-apollo": "1.4.16",

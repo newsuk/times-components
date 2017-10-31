@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.5"></a>
+## [0.4.5](https://github.com/newsuk/times-components/compare/@times-components/ad@0.4.4...@times-components/ad@0.4.5) (2017-10-31)
+
+
+### Bug Fixes
+
+* watermark view box is customizable based on width and height ([#336](https://github.com/newsuk/times-components/issues/336)) ([b3fc9ce](https://github.com/newsuk/times-components/commit/b3fc9ce))
+
+
+
+
 <a name="0.4.4"></a>
 ## [0.4.4](https://github.com/newsuk/times-components/compare/@times-components/ad@0.4.3...@times-components/ad@0.4.4) (2017-10-26)
 
