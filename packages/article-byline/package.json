@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-byline",
-  "version": "0.7.7",
+  "version": "0.7.8",
   "description": "Article byline information",
   "main": "article-byline",
   "scripts": {
@@ -53,7 +53,7 @@
   },
   "dependencies": {
     "@times-components/link": "0.10.1",
-    "@times-components/markup": "0.12.2",
+    "@times-components/markup": "0.12.3",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.7"
   },

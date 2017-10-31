@@ -1,6 +1,6 @@
 {
   "name": "@times-components/watermark",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Watermark",
   "main": "watermark",
   "scripts": {

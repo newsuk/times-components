@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.5.5"></a>
+## [1.5.5](https://github.com/newsuk/times-components/compare/@times-components/image@1.5.3...@times-components/image@1.5.5) (2017-10-31)
+
+
+### Bug Fixes
+
+* replaces View.propTypes with ViewPropTypes ([#346](https://github.com/newsuk/times-components/issues/346)) ([6406e60](https://github.com/newsuk/times-components/commit/6406e60))
+
+
+
+
 <a name="1.5.4"></a>
 ## [1.5.4](https://github.com/newsuk/times-components/compare/@times-components/image@1.5.3...@times-components/image@1.5.4) (2017-10-31)
 
