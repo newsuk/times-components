@@ -4,14 +4,6 @@
 
 set -e # exit with nonzero exit code if anything fails
 
-# get GIT url
-
-GIT_URL=`git config --get remote.origin.url`
-if [[ $GIT_URL == "" ]]; then
-  echo "This project is not configured with a remote git repo".
-  exit 1
-fi
-
 # clear and re-create the out directory
 rm -rf storybook-static || exit 0;
 mkdir storybook-static;
@@ -27,6 +19,9 @@ git init
 git config user.name "GH Pages Bot"
 git config user.email "hello@ghbot.com"
 
+# set origin url with token for write access
+git remote set-url origin https://${GH_TOKEN}@github.com/newsuk/times-components.git > /dev/null 2>&1
+
 # The first and only commit to this new Git repo contains all the
 # files present with the commit message "Deploy to GitHub Pages".
 git add .
@@ -36,7 +31,7 @@ git commit -m "Deploy Storybook to GitHub Pages"
 # repo's gh-pages branch. (All previous history on the gh-pages branch
 # will be lost, since we are overwriting it.) We redirect any output to
 # /dev/null to hide any sensitive credential data that might otherwise be exposed.
-git push --force --quiet $GIT_URL master:gh-pages > /dev/null 2>&1
+git push --force --quiet origin master:gh-pages > /dev/null 2>&1
 cd ..
 rm -rf storybook:build
 
