@@ -34,10 +34,14 @@ withComponent(
       await expect(element(by.id("flag-sponsored"))).toNotExist();
     });
 
-    test("default Article should be able to scroll down the page", async () => {
-      await expect(element(by.id("paragraph-3"))).toBeNotVisible();
-      await element(by.id("listView")).scroll(900, "down");
-      await expect(element(by.id("paragraph-3"))).toBeVisible();
-    });
+    test(
+      "default Article should be able to scroll down the page",
+      async () => {
+        await expect(element(by.id("paragraph-3"))).toBeNotVisible();
+        await element(by.id("listView")).scroll(900, "down");
+        await expect(element(by.id("paragraph-3"))).toBeVisible();
+      },
+      20000
+    );
   }
 );
