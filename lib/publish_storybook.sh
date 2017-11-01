@@ -20,7 +20,7 @@ git config user.name "GH Pages Bot"
 git config user.email "hello@ghbot.com"
 
 # set origin url with token for write access
-git remote set-url origin https://${GH_TOKEN}@github.com/newsuk/times-components.git > /dev/null 2>&1
+git remote add origin https://${GH_TOKEN}@github.com/newsuk/times-components.git > /dev/null 2>&1
 
 # The first and only commit to this new Git repo contains all the
 # files present with the commit message "Deploy to GitHub Pages".
