@@ -342,9 +342,6 @@ exports[`Article test on android renders article no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-0"
@@ -404,9 +401,6 @@ exports[`Article test on android renders article no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-1"
@@ -451,9 +445,6 @@ exports[`Article test on android renders article no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-2"
@@ -485,9 +476,6 @@ exports[`Article test on android renders article no flags 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -521,9 +509,6 @@ exports[`Article test on android renders article no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-4"
@@ -555,9 +540,6 @@ exports[`Article test on android renders article no flags 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -591,9 +573,6 @@ exports[`Article test on android renders article no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-6"
@@ -625,9 +604,6 @@ exports[`Article test on android renders article no flags 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -661,9 +637,6 @@ exports[`Article test on android renders article no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-8"
@@ -695,9 +668,6 @@ exports[`Article test on android renders article no flags 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -731,9 +701,6 @@ exports[`Article test on android renders article no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-10"
@@ -766,9 +733,6 @@ exports[`Article test on android renders article no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-11"
@@ -800,9 +764,6 @@ exports[`Article test on android renders article no flags 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -1238,9 +1199,6 @@ exports[`Article test on android renders article no label 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-0"
@@ -1300,9 +1258,6 @@ exports[`Article test on android renders article no label 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-1"
@@ -1347,9 +1302,6 @@ exports[`Article test on android renders article no label 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-2"
@@ -1381,9 +1333,6 @@ exports[`Article test on android renders article no label 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -1417,9 +1366,6 @@ exports[`Article test on android renders article no label 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-4"
@@ -1451,9 +1397,6 @@ exports[`Article test on android renders article no label 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -1487,9 +1430,6 @@ exports[`Article test on android renders article no label 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-6"
@@ -1521,9 +1461,6 @@ exports[`Article test on android renders article no label 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -1557,9 +1494,6 @@ exports[`Article test on android renders article no label 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-8"
@@ -1591,9 +1525,6 @@ exports[`Article test on android renders article no label 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -1627,9 +1558,6 @@ exports[`Article test on android renders article no label 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-10"
@@ -1662,9 +1590,6 @@ exports[`Article test on android renders article no label 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-11"
@@ -1696,9 +1621,6 @@ exports[`Article test on android renders article no label 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -1995,9 +1917,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-0"
@@ -2057,9 +1976,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-1"
@@ -2104,9 +2020,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-2"
@@ -2138,9 +2051,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -2174,9 +2084,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-4"
@@ -2208,9 +2115,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -2244,9 +2148,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-6"
@@ -2278,9 +2179,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -2314,9 +2212,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-8"
@@ -2348,9 +2243,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -2384,9 +2276,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-10"
@@ -2419,9 +2308,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-11"
@@ -2453,9 +2339,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -2732,9 +2615,6 @@ exports[`Article test on android renders article no label no flags no standfirst
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-0"
@@ -2794,9 +2674,6 @@ exports[`Article test on android renders article no label no flags no standfirst
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-1"
@@ -2841,9 +2718,6 @@ exports[`Article test on android renders article no label no flags no standfirst
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-2"
@@ -2875,9 +2749,6 @@ exports[`Article test on android renders article no label no flags no standfirst
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -2911,9 +2782,6 @@ exports[`Article test on android renders article no label no flags no standfirst
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-4"
@@ -2945,9 +2813,6 @@ exports[`Article test on android renders article no label no flags no standfirst
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -2981,9 +2846,6 @@ exports[`Article test on android renders article no label no flags no standfirst
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-6"
@@ -3015,9 +2877,6 @@ exports[`Article test on android renders article no label no flags no standfirst
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -3051,9 +2910,6 @@ exports[`Article test on android renders article no label no flags no standfirst
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-8"
@@ -3085,9 +2941,6 @@ exports[`Article test on android renders article no label no flags no standfirst
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -3121,9 +2974,6 @@ exports[`Article test on android renders article no label no flags no standfirst
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-10"
@@ -3156,9 +3006,6 @@ exports[`Article test on android renders article no label no flags no standfirst
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-11"
@@ -3190,9 +3037,6 @@ exports[`Article test on android renders article no label no flags no standfirst
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -3640,9 +3484,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-0"
@@ -3702,9 +3543,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-1"
@@ -3749,9 +3587,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-2"
@@ -3783,9 +3618,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -3819,9 +3651,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-4"
@@ -3853,9 +3682,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -3889,9 +3715,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-6"
@@ -3923,9 +3746,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -3959,9 +3779,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-8"
@@ -3993,9 +3810,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -4029,9 +3843,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-10"
@@ -4064,9 +3875,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-11"
@@ -4098,9 +3906,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -4409,9 +4214,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-0"
@@ -4471,9 +4273,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-1"
@@ -4518,9 +4317,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-2"
@@ -4552,9 +4348,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -4588,9 +4381,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-4"
@@ -4622,9 +4412,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -4658,9 +4445,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-6"
@@ -4692,9 +4476,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -4728,9 +4509,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-8"
@@ -4762,9 +4540,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -4798,9 +4573,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-10"
@@ -4833,9 +4605,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-11"
@@ -4867,9 +4636,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -5285,9 +5051,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-0"
@@ -5347,9 +5110,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-1"
@@ -5394,9 +5154,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-2"
@@ -5428,9 +5185,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -5464,9 +5218,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-4"
@@ -5498,9 +5249,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -5534,9 +5282,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-6"
@@ -5568,9 +5313,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -5604,9 +5346,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-8"
@@ -5638,9 +5377,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -5674,9 +5410,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-10"
@@ -5709,9 +5442,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-11"
@@ -5743,9 +5473,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -6213,9 +5940,6 @@ exports[`Article test on android renders full article 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-0"
@@ -6274,9 +5998,6 @@ exports[`Article test on android renders full article 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -6419,9 +6140,6 @@ exports[`Article test on android renders full article 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-3"
@@ -6453,9 +6171,6 @@ exports[`Article test on android renders full article 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -6600,9 +6315,6 @@ exports[`Article test on android renders full article 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -6851,9 +6563,6 @@ exports[`Article test on android renders full article 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-8"
@@ -6997,9 +6706,6 @@ exports[`Article test on android renders full article 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -7145,9 +6851,6 @@ exports[`Article test on android renders full article 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-12"
@@ -7179,9 +6882,6 @@ exports[`Article test on android renders full article 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -7215,9 +6915,6 @@ exports[`Article test on android renders full article 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-14"
@@ -7249,9 +6946,6 @@ exports[`Article test on android renders full article 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }
@@ -7285,9 +6979,6 @@ exports[`Article test on android renders full article 1`] = `
               "paddingLeft": 10,
               "paddingRight": 10,
             },
-            Object {
-              "marginBottom": 10,
-            },
           ]
         }
         testID="paragraph-16"
@@ -7319,9 +7010,6 @@ exports[`Article test on android renders full article 1`] = `
             Object {
               "paddingLeft": 10,
               "paddingRight": 10,
-            },
-            Object {
-              "marginBottom": 10,
             },
           ]
         }

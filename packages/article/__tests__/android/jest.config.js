@@ -1,3 +1,3 @@
-const config = require("../jest.config.native");
+const config = require("../../../../lib/jest.config.native");
 
 module.exports = config("android");

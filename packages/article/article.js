@@ -13,7 +13,6 @@ import listViewDataHelper from "./data-helper";
 import styles from "./styles/article-style";
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
-import James from "./styles/james-style";
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 const listViewPageSize = 1;
@@ -60,7 +59,7 @@ class ArticlePage extends React.Component {
                 <View
                   testID={`paragraph-${rowData.index}`}
                   key={key}
-                  style={[styles.articleMainContentRow, James]}
+                  style={[styles.articleMainContentRow]}
                 >
                   <Text style={styles.articleTextElement}>{children}</Text>
                 </View>
