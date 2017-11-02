@@ -446,6 +446,41 @@
             "url":
               "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/fourth-briton-is-seized-trying-to-join-isis-6nxtx6kg3",
             "__typename": "Article"
+          },
+          {
+            "content": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish authorities on suspicion of trying to"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "id": "89bd6c18-ccf9-11e4-81dd-064fe933cd40",
+            "label": "Environment",
+            "leadAsset": {
+              "title": "Fourth Briton is seized trying to join Isis",
+              "crop": {
+                "url":
+                  "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                "__typename": "Crop"
+              },
+              "__typename": "Image"
+            },
+            "publicationName": "TIMES",
+            "publishedTime": "2015-03-17T23:01:44.000Z",
+            "title": "Fourth Briton is seized trying to join Isis",
+            "url":
+              "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/fourth-briton-is-seized-trying-to-join-isis-6nxtx6kg3",
+            "__typename": "Article"
           }
         ],
         "__typename": "Articles"

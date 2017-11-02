@@ -50,7 +50,7 @@ const AuthorProfileContent = ({
   const data = articlesLoading
     ? Array(pageSize)
         .fill()
-        .map((_, id) => ({
+        .map((number, id) => ({
           id,
           isLoading: true
         }))

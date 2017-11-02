@@ -171,7 +171,7 @@ export default AuthorProfileContent => {
       ...authorProfileFixture.data.author,
       articles: Array(3)
         .fill()
-        .map((_, id) => ({
+        .map((number, id) => ({
           id,
           loading: true
         }))

@@ -7,7 +7,6 @@ const styles = StyleSheet.create({
   container: {
     alignItems: "center",
     backgroundColor: "#F9F8F3",
-    flexDirection: "column",
     minHeight: 264,
     paddingBottom: 50,
     width: "100%"

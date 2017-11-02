@@ -1,3 +1,4 @@
+import get from "lodash.get";
 import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
@@ -165,60 +166,6 @@ storiesOf("AuthorProfile", module)
 
     return <AuthorProfileContent {...props} />;
   })
-  .add("Empty State", () => {
-    const emptyMocks = [
-      {
-        request: {
-          query: addTypenameToDocument(authorProfileQuery),
-          variables: {
-            slug: "no-results"
-          }
-        },
-        result: authorProfileFixture
-      },
-      {
-        request: {
-          query: addTypenameToDocument(articleListQuery),
-          variables: {
-            slug: "no-results",
-            first: 3,
-            skip: 0,
-            imageRatio: "3:2"
-          }
-        },
-        result: {
-          data: {
-            author: {
-              ...articleListFixture.data.author,
-              articles: {
-                ...articleListFixture.data.author.articles,
-                count: 0,
-                list: []
-              }
-            }
-          }
-        }
-      }
-    ];
-
-    const emptyNetworkInterface = mockNetworkInterface(...emptyMocks);
-    const props = {
-      articleImageRatio: "3:2",
-      author: authorProfileFixture.data.author,
-      isLoading: false,
-      onArticlePress: preventDefaultedAction("onArticlePress"),
-      onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
-      analyticsStream: () => {},
-      slug: "no-results"
-    };
-
-    const client = new ApolloClient({
-      networkInterface: emptyNetworkInterface,
-      fragmentMatcher
-    });
-
-    return withMockProvider(<AuthorProfile {...props} />, client);
-  })
   .add("With Provider", () => {
     const onTwitterLinkPress = preventDefaultedAction("onTwitterLinkPress");
     const onArticlePress = preventDefaultedAction("onArticlePress");
@@ -228,7 +175,10 @@ storiesOf("AuthorProfile", module)
       <AuthorProfileProvider slug={slug}>
         {({ author, isLoading, error }) => (
           <AuthorProfile
-            author={author}
+            author={{
+              ...author,
+              uri: get(author, "image")
+            }}
             page={1}
             pageSize={3}
             slug={slug}
