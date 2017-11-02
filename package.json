@@ -120,5 +120,8 @@
     "mkdirp": "0.5.1",
     "sort-pkg": "1.1.0",
     "subcommander": "1.0.0"
+  },
+  "resolutions": {
+    "asn1.js": "4.9.2"
   }
 }
