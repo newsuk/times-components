@@ -1,13 +1,12 @@
 {
-  "name": "@times-components/author-head",
-  "version": "0.8.10",
-  "main": "author-head",
+  "name": "@times-components/responsive-hoc",
+  "version": "0.0.1",
+  "description": "HOC to add responsive styles for web",
+  "main": "responsive-hoc",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
-    "test:watch": "jest --bail --verbose --watch",
-    "test": "jest --bail --ci --coverage",
-    "prettier:diff": "prettier --list-different '**/*.+(js|json)'",
-    "lint": "eslint . && npm run prettier:diff"
+    "test:watch": "jest --bail --verbose --watchAll",
+    "test": "jest --bail --ci --coverage"
   },
   "jest": {
     "preset": "react-native",
@@ -16,7 +15,7 @@
       "node_modules/(?!@times-components)/"
     ],
     "testMatch": [
-      "<rootDir>/packages/author-head/__tests__/*.test.js"
+      "<rootDir>/packages/responsive-hoc/**.test.js"
     ]
   },
   "repository": {
@@ -28,7 +27,7 @@
     "react",
     "native",
     "web",
-    "author-head",
+    "responsive-hoc",
     "component"
   ],
   "license": "BSD-3-Clause",
@@ -43,17 +42,8 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
-    "enzyme": "3.1.0",
-    "enzyme-adapter-react-16": "1.0.1",
-    "eslint": "4.9.0",
-    "eslint-config-airbnb": "16.1.0",
-    "eslint-config-prettier": "2.6.0",
-    "eslint-plugin-import": "2.8.0",
-    "eslint-plugin-jsx-a11y": "6.0.2",
-    "eslint-plugin-react": "7.4.0",
     "flow-bin": "0.42.0",
     "jest": "21.2.1",
-    "prettier": "1.7.0",
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "react-native": "0.49.3",
@@ -61,12 +51,9 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/image": "1.5.5",
-    "@times-components/link": "0.10.1",
-    "@times-components/markup": "0.12.3",
-    "@times-components/tracking": "0.2.1",
-    "@times-components/responsive-hoc": "0.0.1",
+    "hoist-non-react-statics": "2.3.1",
     "prop-types": "15.6.0",
+    "react-display-name": "0.2.3",
     "react-native-web": "0.1.7"
   },
   "peerDependencies": {
