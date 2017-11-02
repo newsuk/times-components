@@ -3,5 +3,5 @@
  */
 
 module.exports = {
-    projects: [ "__tests__/android", "__tests__/ios", "__tests__/web" ]    
+  projects: ["__tests__/android", "__tests__/ios", "__tests__/web"]
 };
