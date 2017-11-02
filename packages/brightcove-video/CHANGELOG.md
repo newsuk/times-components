@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.9"></a>
+## [1.6.9](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.6.8...@times-components/brightcove-video@1.6.9) (2017-11-01)
+
+
+
+
+<a name="1.6.8"></a>
+## [1.6.8](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.6.7...@times-components/brightcove-video@1.6.8) (2017-10-31)
+
+
+
+
 <a name="1.6.7"></a>
 ## [1.6.7](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.6.6...@times-components/brightcove-video@1.6.7) (2017-10-26)
 

@@ -10,3 +10,9 @@ script:
 after_success:
   - yarn coverage:publish
   - ./lib/publish.sh
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: lib/publish_storybook.sh
+  on:
+    branch: master

@@ -9,6 +9,52 @@
 
 :warning: For native, the `policyKey` is required, see [Brightcove's Policy API](https://docs.brightcove.com/en/video-cloud/policy-api/getting-started/api-overview.html) for more details.
 
+## Android requirement
+
+To use this component, you need to upgrade your version of gradle. To do that:
+
+Change your `android/build.gradle`:
+
+```diff
+buildscript {
+    repositories {
+        jcenter()
++        google()
+    }
+    dependencies {
+-        classpath 'com.android.tools.build:gradle:2.2.3'
++        classpath 'com.android.tools.build:gradle:3.0.0-beta7'
+        classpath 'com.google.gms:google-services:3.1.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        jcenter()
+        maven {
+            // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+            url "$rootDir/../node_modules/react-native/android"
+        }
+    }
+}
+```
+
+and update the version of `gradlew` by changing one line in `android/gradle/wrapper/gradle-wrapper.properties`:
+
+```diff
+distributionBase=GRADLE_USER_HOME
+distributionPath=wrapper/dists
+zipStoreBase=GRADLE_USER_HOME
+zipStorePath=wrapper/dists
+distributionUrl=https://services.gradle.org/distributions/gradle-4.2-all.zip
+- distributionUrl=https\://services.gradle.org/distributions/gradle-2.14.1-all.zip
++ distributionUrl=https://services.gradle.org/distributions/gradle-4.2-all.zip
+```
+
 ## iOS Install of the Brightcove SDK
 
 ### Install with Cocoapods
