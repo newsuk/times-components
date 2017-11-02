@@ -300,7 +300,7 @@ exports[`renders profile content 1`] = `
                 ellipsizeMode="tail"
               >
                 
-                
+
               </Text>
               More text 
               <Text
@@ -1396,7 +1396,7 @@ exports[`renders profile content component 1`] = `
                       ellipsizeMode="tail"
                     >
                       
-                      
+
                     </Text>
                     ITV
                     <Text
@@ -1406,7 +1406,7 @@ exports[`renders profile content component 1`] = `
                       ellipsizeMode="tail"
                     >
                       
-                      
+
                     </Text>
                     ★★★★☆
                   </Text>
@@ -1437,7 +1437,7 @@ exports[`renders profile content component 1`] = `
                       ellipsizeMode="tail"
                     >
                       
-                      
+
                     </Text>
                     BBC Two
                     <Text
@@ -1447,7 +1447,7 @@ exports[`renders profile content component 1`] = `
                       ellipsizeMode="tail"
                     >
                       
-                      
+
                     </Text>
                     ★★★☆☆
                   </Text>
@@ -2178,8 +2178,8 @@ exports[`renders profile error 1`] = `
     ellipsizeMode="tail"
   >
     {
-      "error": "error"
-    }
+  "error": "error"
+}
   </Text>
 </View>
 `;
