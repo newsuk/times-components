@@ -11,10 +11,10 @@
     "test:android:watch": "yarn test:android -- --bail --verbose --watchAll",
     "test:ios:watch": "yarn test:ios -- --bail --verbose --watchAll",
     "test:web:watch": "yarn test:web -- --bail --verbose --watchAll",
-    "test:native": "jest --config='./jest.config.native.js' ",
+    "test:native": "jest --projects __tests__/android __tests__/ios ",
     "test:native:watch": "yarn test:native -- --bail --verbose --watchAll",
     "test": "yarn test:android -- --ci --bail && yarn test:ios -- --ci --bail && yarn test:web -- --ci --bail --coverage",
-    "test:watch": "jest --config='./jest.config.js' --watchAll",
+    "test:watch": "jest --projects */**/jest.config.js --watchAll",
     "prettier:diff": "prettier --list-different '**/*.+(js|json)'",
     "lint": "eslint . && npm run prettier:diff"
   },
