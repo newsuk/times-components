@@ -1,3 +1,3 @@
 const config = require("../../../../lib/jestConfigurator");
 
-module.exports = config("web");
+module.exports = config("article", "web");
