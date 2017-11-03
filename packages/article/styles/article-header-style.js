@@ -26,7 +26,7 @@ const nativeStyles = StyleSheet.create({
     fontSize: Platform.OS === "android" ? 28 : 30,
     lineHeight: Platform.OS === "android" ? 37 : 32,
     color: "#000000",
-    fontWeight: Platform.OS === "android" ? "400" : "700",
+    fontWeight: "bold",
     marginBottom: 7
   },
   standFirst: {
