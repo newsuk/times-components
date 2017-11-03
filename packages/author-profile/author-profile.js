@@ -22,7 +22,7 @@ const AuthorProfile = ({
     return <AuthorProfileError {...error} />;
   }
 
-  const { biography, name, uri, jobTitle, twitter } = author || {};
+  const { biography, name, image: uri, jobTitle, twitter } = author || {};
   const ArticleListProviderWithPageState = withPageState(ArticleListProvider);
 
   return (

@@ -1,4 +1,3 @@
-import get from "lodash.get";
 import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
@@ -175,10 +174,7 @@ storiesOf("AuthorProfile", module)
       <AuthorProfileProvider slug={slug}>
         {({ author, isLoading, error }) => (
           <AuthorProfile
-            author={{
-              ...author,
-              uri: get(author, "image")
-            }}
+            author={author}
             page={1}
             pageSize={3}
             slug={slug}
