@@ -1,8 +1,8 @@
 {
-  "name": "@times-components/utilities",
+  "name": "@times-components/jest-configurator",
   "version": "0.0.1",
-  "description": "Utility functions that aid the components",
-  "main": "index.js",
+  "description": "Cross platform Jest Config",
+  "main": "jest-configurator.js",
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",

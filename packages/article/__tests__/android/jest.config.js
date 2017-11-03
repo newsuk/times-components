@@ -1,3 +1,3 @@
-const Utilities = require("@times-components/utilities");
+const Utilities = require("@times-components/jest-configurator");
 
 module.exports = Utilities.jestConfigurator("article", "android");
