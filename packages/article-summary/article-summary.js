@@ -19,8 +19,8 @@ const styles = {
     fontSize: 22,
     lineHeight: 22,
     marginBottom: 8,
-    fontFamily: "TimesModern",
-    fontWeight: "bold"
+    fontFamily: "TimesModern-Bold",
+    fontWeight: "400"
   },
   text: {
     color: "#696969",

@@ -22,7 +22,7 @@ const getStyles = (width, height) =>
       borderStyle: "solid"
     },
     placeholderText: {
-      fontSize: 12,
+      fontSize: 11,
       fontFamily: "TimesDigitalW04",
       backgroundColor: "#F9F9F9",
       color: "#696969",

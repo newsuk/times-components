@@ -183,9 +183,9 @@ exports[`Article test on ios renders article no flags 1`] = `
           Array [
             Object {
               "color": "#1D1D1B",
-              "fontFamily": "TimesModern",
+              "fontFamily": "TimesModern-Bold",
               "fontSize": 22,
-              "fontWeight": "bold",
+              "fontWeight": "400",
               "lineHeight": 25,
               "marginBottom": 8,
             },
@@ -211,7 +211,7 @@ exports[`Article test on ios renders article no flags 1`] = `
           Array [
             Object {
               "color": "#333333",
-              "fontFamily": "TimesModern",
+              "fontFamily": "TimesModern-Regular",
               "fontSize": 21,
               "lineHeight": 25,
               "paddingBottom": 9,
@@ -888,9 +888,9 @@ exports[`Article test on ios renders article no label 1`] = `
           Array [
             Object {
               "color": "#1D1D1B",
-              "fontFamily": "TimesModern",
+              "fontFamily": "TimesModern-Bold",
               "fontSize": 22,
-              "fontWeight": "bold",
+              "fontWeight": "400",
               "lineHeight": 25,
               "marginBottom": 8,
             },
@@ -916,7 +916,7 @@ exports[`Article test on ios renders article no label 1`] = `
           Array [
             Object {
               "color": "#333333",
-              "fontFamily": "TimesModern",
+              "fontFamily": "TimesModern-Regular",
               "fontSize": 21,
               "lineHeight": 25,
               "paddingBottom": 9,
@@ -1732,9 +1732,9 @@ exports[`Article test on ios renders article no label no flags 1`] = `
           Array [
             Object {
               "color": "#1D1D1B",
-              "fontFamily": "TimesModern",
+              "fontFamily": "TimesModern-Bold",
               "fontSize": 22,
-              "fontWeight": "bold",
+              "fontWeight": "400",
               "lineHeight": 25,
               "marginBottom": 8,
             },
@@ -1760,7 +1760,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
           Array [
             Object {
               "color": "#333333",
-              "fontFamily": "TimesModern",
+              "fontFamily": "TimesModern-Regular",
               "fontSize": 21,
               "lineHeight": 25,
               "paddingBottom": 9,
@@ -2437,9 +2437,9 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
           Array [
             Object {
               "color": "#1D1D1B",
-              "fontFamily": "TimesModern",
+              "fontFamily": "TimesModern-Bold",
               "fontSize": 22,
-              "fontWeight": "bold",
+              "fontWeight": "400",
               "lineHeight": 25,
               "marginBottom": 8,
             },
@@ -3154,9 +3154,9 @@ exports[`Article test on ios renders article no standfirst 1`] = `
           Array [
             Object {
               "color": "#1D1D1B",
-              "fontFamily": "TimesModern",
+              "fontFamily": "TimesModern-Bold",
               "fontSize": 22,
-              "fontWeight": "bold",
+              "fontWeight": "400",
               "lineHeight": 25,
               "marginBottom": 8,
             },
@@ -4010,9 +4010,9 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
           Array [
             Object {
               "color": "#1D1D1B",
-              "fontFamily": "TimesModern",
+              "fontFamily": "TimesModern-Bold",
               "fontSize": 22,
-              "fontWeight": "bold",
+              "fontWeight": "400",
               "lineHeight": 25,
               "marginBottom": 8,
             },
@@ -4695,9 +4695,9 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
           Array [
             Object {
               "color": "#1D1D1B",
-              "fontFamily": "TimesModern",
+              "fontFamily": "TimesModern-Bold",
               "fontSize": 22,
-              "fontWeight": "bold",
+              "fontWeight": "400",
               "lineHeight": 25,
               "marginBottom": 8,
             },
@@ -5551,9 +5551,9 @@ exports[`Article test on ios renders full article 1`] = `
           Array [
             Object {
               "color": "#1D1D1B",
-              "fontFamily": "TimesModern",
+              "fontFamily": "TimesModern-Bold",
               "fontSize": 22,
-              "fontWeight": "bold",
+              "fontWeight": "400",
               "lineHeight": 25,
               "marginBottom": 8,
             },
@@ -5579,7 +5579,7 @@ exports[`Article test on ios renders full article 1`] = `
           Array [
             Object {
               "color": "#333333",
-              "fontFamily": "TimesModern",
+              "fontFamily": "TimesModern-Regular",
               "fontSize": 21,
               "lineHeight": 25,
               "paddingBottom": 9,

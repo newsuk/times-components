@@ -30,8 +30,8 @@ const styles = StyleSheet.create({
     overflow: "hidden"
   },
   name: {
-    fontFamily: "TimesModern",
-    fontWeight: "bold",
+    fontFamily: "TimesModern-Bold",
+    fontWeight: "400",
     fontSize: 45,
     color: "#000",
     paddingTop: 32

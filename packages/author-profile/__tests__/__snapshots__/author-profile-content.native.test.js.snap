@@ -206,9 +206,9 @@ exports[`renders profile content 1`] = `
               style={
                 Object {
                   "color": "#000",
-                  "fontFamily": "TimesModern",
+                  "fontFamily": "TimesModern-Bold",
                   "fontSize": 45,
-                  "fontWeight": "bold",
+                  "fontWeight": "400",
                   "paddingTop": 32,
                 }
               }
@@ -5791,6 +5791,7 @@ exports[`renders profile empty 1`] = `
                   "color": "#000",
                   "fontFamily": "TimesModern-Bold",
                   "fontSize": 45,
+                  "fontWeight": "400",
                   "paddingTop": 32,
                 }
               }
@@ -5888,9 +5889,9 @@ exports[`renders profile empty 1`] = `
                   style={
                     Object {
                       "color": "#333333",
-                      "fontFamily": "TimesModern",
+                      "fontFamily": "TimesModern-Bold",
                       "fontSize": 22,
-                      "fontWeight": "bold",
+                      "fontWeight": "400",
                       "lineHeight": 22,
                       "marginBottom": 8,
                     }
@@ -6311,9 +6312,9 @@ exports[`renders profile loading 1`] = `
                   style={
                     Object {
                       "color": "#333333",
-                      "fontFamily": "TimesModern",
+                      "fontFamily": "TimesModern-Bold",
                       "fontSize": 22,
-                      "fontWeight": "bold",
+                      "fontWeight": "400",
                       "lineHeight": 22,
                       "marginBottom": 8,
                     }
@@ -6538,9 +6539,9 @@ exports[`renders profile loading 1`] = `
                     },
                     Object {
                       "color": "#333333",
-                      "fontFamily": "TimesModern",
+                      "fontFamily": "TimesModern-Bold",
                       "fontSize": 22,
-                      "fontWeight": "bold",
+                      "fontWeight": "400",
                       "lineHeight": 22,
                       "marginBottom": 8,
                     }
@@ -6678,14 +6679,14 @@ exports[`renders profile loading 1`] = `
                 "paddingTop": 10,
               },
               Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-        >
-          <View
-            onLayout={[Function]}
+                "color": "#333333",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 22,
+                "fontWeight": "400",
+                "lineHeight": 22,
+                "marginBottom": 8,
+              }
+            }
           >
             <View
               style={
@@ -6847,9 +6848,9 @@ exports[`renders profile loading 1`] = `
               },
               Object {
                 "color": "#333333",
-                "fontFamily": "TimesModern",
+                "fontFamily": "TimesModern-Bold",
                 "fontSize": 22,
-                "fontWeight": "bold",
+                "fontWeight": "400",
                 "lineHeight": 22,
                 "marginBottom": 8,
               }

@@ -283,9 +283,9 @@ exports[`renders vertical by default 1`] = `
         style={
           Object {
             "color": "#333333",
-            "fontFamily": "TimesModern",
+            "fontFamily": "TimesModern-Bold",
             "fontSize": 22,
-            "fontWeight": "bold",
+            "fontWeight": "400",
             "lineHeight": 22,
             "marginBottom": 8,
           }
@@ -487,9 +487,9 @@ exports[`renders without image 1`] = `
         style={
           Object {
             "color": "#333333",
-            "fontFamily": "TimesModern",
+            "fontFamily": "TimesModern-Bold",
             "fontSize": 22,
-            "fontWeight": "bold",
+            "fontWeight": "400",
             "lineHeight": 22,
             "marginBottom": 8,
           }
@@ -653,9 +653,9 @@ exports[`renders without image url 1`] = `
         style={
           Object {
             "color": "#333333",
-            "fontFamily": "TimesModern",
+            "fontFamily": "TimesModern-Bold",
             "fontSize": 22,
-            "fontWeight": "bold",
+            "fontWeight": "400",
             "lineHeight": 22,
             "marginBottom": 8,
           }
