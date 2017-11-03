@@ -1,3 +1,3 @@
-const config = require("../../../../lib/jestConfigurator");
+const Utilities = require("@times-components/utilities");
 
-module.exports = config("article", "web");
+module.exports = Utilities.jestConfigurator("article", "web");

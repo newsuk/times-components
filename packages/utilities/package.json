@@ -1,0 +1,31 @@
+{
+  "name": "@times-components/utilities",
+  "version": "0.0.1",
+  "description": "Utility functions that aid the components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "keywords": [
+    "react-native-web",
+    "react",
+    "native",
+    "web",
+    "link",
+    "component",
+    "jest",
+    "eslint"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
