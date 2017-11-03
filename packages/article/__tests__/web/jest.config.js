@@ -1,3 +1,3 @@
-const Utilities = require("@times-components/jest-configurator");
+const jestConfigurator = require("@times-components/jest-configurator");
 
-module.exports = Utilities.jestConfigurator("article", "web");
+module.exports = jestConfigurator("article", "web");
