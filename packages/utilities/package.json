@@ -4,7 +4,9 @@
   "description": "Utility functions that aid the components",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watchAll --coverage"
   },
   "repository": {
     "type": "git",
@@ -29,19 +31,53 @@
     "access": "public"
   },
   "eslintConfig": {
-    "extends": ["airbnb", "prettier", "prettier/react"],
+    "extends": [
+      "airbnb",
+      "prettier",
+      "prettier/react",
+      "jest"
+    ],
     "rules": {
-      "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js"
+          ]
+        }
+      ],
       "import/extensions": "off"
     },
     "settings": {
       "import/resolver": {
         "node": {
-          "extensions": [".js", ".android.js", ".ios.js", ".web.js"]
+          "extensions": [
+            ".js",
+            ".android.js",
+            ".ios.js",
+            ".web.js"
+          ]
         }
       }
     },
     "root": true
   },
-  "eslintIgnore": ["**/node_modules/*", "**/coverage/*", "dist"]
+  "eslintIgnore": [
+    "**/node_modules/*",
+    "**/coverage/*",
+    "dist"
+  ],
+  "jest": {
+    "preset": "react-native",
+    "rootDir": "../../",
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/utilities/**/__tests__/*.js"
+    ]
+  },
+  "dependencies": {
+    "jest": "21.2.1"
+  }
 }
