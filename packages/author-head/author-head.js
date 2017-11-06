@@ -31,7 +31,6 @@ const styles = StyleSheet.create({
   },
   name: {
     fontFamily: "TimesModern-Bold",
-    fontWeight: "400",
     fontSize: 45,
     color: "#000",
     paddingTop: 32
