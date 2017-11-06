@@ -1,5 +1,7 @@
 import { StyleSheet } from "react-native";
-import { COLOUR_BORDER } from "./const";
+import constants from "./const";
+
+const { colourBorder } = constants;
 
 const globalStyle = StyleSheet.create({
   articleMainContentRow: {
@@ -22,7 +24,7 @@ const globalStyle = StyleSheet.create({
   },
   articleMeta: {
     marginBottom: 20,
-    borderBottomColor: COLOUR_BORDER,
+    borderBottomColor: colourBorder,
     borderBottomWidth: StyleSheet.hairlineWidth
   }
 });

@@ -1,22 +1,20 @@
 import { StyleSheet } from "react-native";
-import {
-  COLOUR_HEADLINE,
-  COLOUR_TEXT,
-  FONT_FAMILY_STAND_FIRST
-} from "../const";
+import constants from "../const";
+
+const { fontFamilyStandFirst, colourHeadline, colourText } = constants;
 
 const sharedStyles = StyleSheet.create({
   articleHeadLineText: {
     fontSize: 30,
     lineHeight: 32,
-    color: COLOUR_HEADLINE,
+    color: colourHeadline,
     marginBottom: 7
   },
   standFirst: {
     fontSize: 21,
     lineHeight: 26,
-    fontFamily: FONT_FAMILY_STAND_FIRST,
-    color: COLOUR_TEXT,
+    fontFamily: fontFamilyStandFirst,
+    color: colourText,
     paddingBottom: 9
   }
 });
