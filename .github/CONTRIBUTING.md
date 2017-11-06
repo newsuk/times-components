@@ -114,6 +114,8 @@ Follow these steps to deploy storybook native to a real android device.
 
 Android and iOS interpret fonts differently. The style property for `fontFamily` on iOS refers to the internal post script name of the font. The style property for `fontFamily` on Android refers to the filename of the font. React Native Android only supports [4 font weights](https://github.com/facebook/react-native/blob/master/ReactAndroid/src/main/java/com/facebook/react/views/text/ReactFontManager.java), therefore we have made the following conventions
 
+Also the fonts should have the correct `weight` and `style` meta attributes
+
 ## For all fonts which are; regular, bold, italic, bold and italic variants
 
 ### Filename format (physical file name): `<fontname>_<weight>` eg
