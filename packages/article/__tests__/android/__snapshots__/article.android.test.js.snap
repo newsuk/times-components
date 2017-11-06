@@ -239,7 +239,7 @@ exports[`Article test on android renders article no flags 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#d0cece",
+            "borderBottomColor": "#D0CECE",
             "borderBottomWidth": 0.5,
             "marginBottom": 20,
           }
@@ -1096,7 +1096,7 @@ exports[`Article test on android renders article no label 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#d0cece",
+            "borderBottomColor": "#D0CECE",
             "borderBottomWidth": 0.5,
             "marginBottom": 20,
           }
@@ -1814,7 +1814,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#d0cece",
+            "borderBottomColor": "#D0CECE",
             "borderBottomWidth": 0.5,
             "marginBottom": 20,
           }
@@ -2512,7 +2512,7 @@ exports[`Article test on android renders article no label no flags no standfirst
       <View
         style={
           Object {
-            "borderBottomColor": "#d0cece",
+            "borderBottomColor": "#D0CECE",
             "borderBottomWidth": 0.5,
             "marginBottom": 20,
           }
@@ -3381,7 +3381,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#d0cece",
+            "borderBottomColor": "#D0CECE",
             "borderBottomWidth": 0.5,
             "marginBottom": 20,
           }
@@ -4111,7 +4111,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#d0cece",
+            "borderBottomColor": "#D0CECE",
             "borderBottomWidth": 0.5,
             "marginBottom": 20,
           }
@@ -4948,7 +4948,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#d0cece",
+            "borderBottomColor": "#D0CECE",
             "borderBottomWidth": 0.5,
             "marginBottom": 20,
           }
@@ -5837,7 +5837,7 @@ exports[`Article test on android renders full article 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#d0cece",
+            "borderBottomColor": "#D0CECE",
             "borderBottomWidth": 0.5,
             "marginBottom": 20,
           }
