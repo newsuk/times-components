@@ -11,6 +11,7 @@ import { addTypenameToDocument } from "apollo-client";
 import { query as authorProfileQuery } from "@times-components/provider/author-profile-provider";
 import { query as articleListQuery } from "@times-components/provider/article-list-provider";
 import AuthorProfile from "./author-profile";
+import AuthorProfileContent from "./author-profile-content";
 import authorProfileFixture from "./fixtures/author-profile.json";
 import articleListFixture from "./fixtures/article-list.json";
 
@@ -36,8 +37,10 @@ const articlesList = (skip, first) => ({
   }
 });
 
+const delay = 1000;
 const mocks = [
   {
+    delay,
     request: {
       query: addTypenameToDocument(authorProfileQuery),
       variables: {
@@ -47,6 +50,7 @@ const mocks = [
     result: authorProfileFixture
   },
   {
+    delay,
     request: {
       query: addTypenameToDocument(articleListQuery),
       variables: {
@@ -59,6 +63,7 @@ const mocks = [
     result: articlesList(0, 3)
   },
   {
+    delay,
     request: {
       query: addTypenameToDocument(articleListQuery),
       variables: {
@@ -71,6 +76,7 @@ const mocks = [
     result: articlesList(3, 3)
   },
   {
+    delay,
     request: {
       query: addTypenameToDocument(articleListQuery),
       variables: {
@@ -83,6 +89,7 @@ const mocks = [
     result: articlesList(6, 3)
   },
   {
+    delay,
     request: {
       query: addTypenameToDocument(articleListQuery),
       variables: {
@@ -135,6 +142,7 @@ storiesOf("AuthorProfile", module)
     const props = {
       slug: "fiona-hamilton",
       author: authorProfileFixture.data.author,
+      articleImageRatio: "3:2",
       isLoading: false,
       page: 2,
       pageSize: 3,
@@ -147,67 +155,15 @@ storiesOf("AuthorProfile", module)
   })
   .add("Loading", () => {
     const props = {
-      slug: "fiona-hamilton",
       isLoading: true,
+      articlesLoading: true,
+      pageSize: 3,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
       onArticlePress: preventDefaultedAction("onArticlePress"),
       analyticsStream: () => {}
     };
 
-    return withMockProvider(<AuthorProfile {...props} />);
-  })
-  .add("Empty State", () => {
-    const emptyMocks = [
-      {
-        request: {
-          query: addTypenameToDocument(authorProfileQuery),
-          variables: {
-            slug: "no-results"
-          }
-        },
-        result: authorProfileFixture
-      },
-      {
-        request: {
-          query: addTypenameToDocument(articleListQuery),
-          variables: {
-            slug: "no-results",
-            first: 3,
-            skip: 0,
-            imageRatio: "3:2"
-          }
-        },
-        result: {
-          data: {
-            author: {
-              ...articleListFixture.data.author,
-              articles: {
-                ...articleListFixture.data.author.articles,
-                count: 0,
-                list: []
-              }
-            }
-          }
-        }
-      }
-    ];
-
-    const emptyNetworkInterface = mockNetworkInterface(...emptyMocks);
-    const props = {
-      slug: "no-results",
-      author: authorProfileFixture.data.author,
-      isLoading: false,
-      onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
-      onArticlePress: preventDefaultedAction("onArticlePress"),
-      analyticsStream: () => {}
-    };
-
-    const client = new ApolloClient({
-      networkInterface: emptyNetworkInterface,
-      fragmentMatcher
-    });
-
-    return withMockProvider(<AuthorProfile {...props} />, client);
+    return <AuthorProfileContent {...props} />;
   })
   .add("With Provider", () => {
     const onTwitterLinkPress = preventDefaultedAction("onTwitterLinkPress");

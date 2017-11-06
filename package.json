@@ -108,6 +108,7 @@
     "react-native": "0.49.3",
     "react-native-storybook-loader": "1.5.1",
     "react-native-web": "0.1.7",
+    "react-native-linear-gradient": "2.3.0",
     "rimraf": "2.6.1",
     "url": "0.11.0",
     "webpack": "3.3.0"

@@ -6,5 +6,7 @@ export default {
   ...AuthorHead.propTypes,
   ...Pagination.propTypes,
   articles: PropTypes.arrayOf(PropTypes.shape()),
+  articlesLoading: PropTypes.bool,
+  isLoading: PropTypes.bool,
   onArticlePress: PropTypes.func
 };

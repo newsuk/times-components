@@ -62,6 +62,7 @@
   "dependencies": {
     "@times-components/author-head": "0.8.10",
     "@times-components/card": "0.9.3",
+    "@times-components/gradient": "0.1.0",
     "@times-components/link": "0.10.1",
     "@times-components/pagination": "0.10.2",
     "@times-components/provider": "0.14.1",
