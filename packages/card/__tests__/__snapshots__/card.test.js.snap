@@ -273,21 +273,15 @@ exports[`renders vertical by default 1`] = `
         }
         style={undefined}
       >
-        CAMILLA LONG
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#333333",
-            "fontFamily": "TimesModern-Bold",
-            "fontSize": 22,
-            "fontWeight": "400",
-            "lineHeight": 22,
-            "marginBottom": 8,
+        <View
+          onLayout={[Function]}
+          style={
+            Array [
+              Object {
+                "flex": 1,
+              },
+              null,
+            ]
           }
         >
           <View
@@ -460,49 +454,8 @@ exports[`renders without image 1`] = `
     }
   >
     <View
-      style={Object {}}
-    >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#333333",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 12,
-            "letterSpacing": 1,
-            "marginBottom": 2,
-          }
-        }
-      >
-        CAMILLA LONG
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#333333",
-            "fontFamily": "TimesModern-Bold",
-            "fontSize": 22,
-            "fontWeight": "400",
-            "lineHeight": 22,
-            "marginBottom": 8,
-          }
-        }
-      >
-        OK, so Putin’s not a lady, but he does have the wildest man‑PMT
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
-        style={
+      style={
+        Array [
           Object {
             "flexGrow": 1,
             "flexShrink": 1,
@@ -626,49 +579,8 @@ exports[`renders without image url 1`] = `
     }
   >
     <View
-      style={Object {}}
-    >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#333333",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 12,
-            "letterSpacing": 1,
-            "marginBottom": 2,
-          }
-        }
-      >
-        CAMILLA LONG
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#333333",
-            "fontFamily": "TimesModern-Bold",
-            "fontSize": 22,
-            "fontWeight": "400",
-            "lineHeight": 22,
-            "marginBottom": 8,
-          }
-        }
-      >
-        OK, so Putin’s not a lady, but he does have the wildest man‑PMT
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
-        style={
+      style={
+        Array [
           Object {
             "flexGrow": 1,
             "flexShrink": 1,
