@@ -37,6 +37,7 @@ node_modules/
 lcov.info
 .coveralls.yml
 package-lock.json
+.json.lerna_backup
 
 # BUCK
 buck-out/

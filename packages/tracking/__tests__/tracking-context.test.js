@@ -139,6 +139,19 @@ describe("WithTrackingContext", () => {
     );
   });
 
+  /* It's important that if the root component re-renders, then the child doesn't unmount, otherwise multiple page view analytics events will be reported */
+  it("doesn't fire a second page view event if root element is re-rendered", () => {
+    const WithTrackingAndContext = withTrackingContext(TestComponent, {
+      trackingObject: "AuthorProfile"
+    });
+    const reporter = jest.fn();
+    const testRenderer = renderer.create(
+      <WithTrackingAndContext analyticsStream={reporter} />
+    );
+    testRenderer.update(<WithTrackingAndContext analyticsStream={reporter} />);
+    expect(reporter).toHaveBeenCalledTimes(1);
+  });
+
   it("applies timestamp to descendant events", () => {
     const WithTrackingAndContext = withTrackingContext(TestComponent, {
       trackingObject: "TestObject"
