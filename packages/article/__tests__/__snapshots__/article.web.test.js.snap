@@ -2352,7 +2352,7 @@ exports[`Article test on web renders full article 1`] = `
               <img
                 alt=""
                 onLoad={[Function]}
-                src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=1600%2C900%2C-0%2C-0"
+                src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0"
                 style={
                   Object {
                     "display": "block",
@@ -2442,7 +2442,7 @@ exports[`Article test on web renders full article 1`] = `
               <img
                 alt=""
                 onLoad={[Function]}
-                src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=1200%2C800%2C-0%2C-0"
+                src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0"
                 style={
                   Object {
                     "display": "block",
