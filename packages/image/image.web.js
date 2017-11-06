@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View } from "react-native";
 import imagePropTypes from "./image-prop-types";
-import placeholder from "./placeholder";
+import Placeholder from "./placeholder";
 
 class TimesImage extends Component {
   constructor(props) {
@@ -26,23 +26,29 @@ class TimesImage extends Component {
       overflow: "hidden",
       paddingBottom: `${100 / aspectRatio}%`
     };
+
     const placeholderStyle = {
-      backgroundImage: `url(${placeholder})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center"
+      flex: 1,
+      position: "absolute",
+      top: 0,
+      bottom: 0,
+      left: 0,
+      right: 0
     };
-    const boundingStyle = isLoaded
-      ? aspectRatioStyle
-      : { ...aspectRatioStyle, ...placeholderStyle };
+
+    const placeholderComponent = isLoaded ? null : (
+      <Placeholder style={placeholderStyle} />
+    );
 
     const boundedImg = (
-      <div style={boundingStyle}>
+      <div style={aspectRatioStyle}>
         <img
           src={uri}
           style={{ display: "block", width: "100%" }}
           onLoad={this.handleLoad}
           alt=""
         />
+        {placeholderComponent}
       </div>
     );
 

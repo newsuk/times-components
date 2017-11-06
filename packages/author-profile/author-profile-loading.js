@@ -1,19 +1,6 @@
 import React from "react";
-import { ActivityIndicator, StyleSheet, View } from "react-native";
+import AuthorProfileContent from "./author-profile-content";
 
-const styles = StyleSheet.create({
-  container: {
-    alignItems: "center",
-    flex: 1,
-    flexBasis: "100%",
-    justifyContent: "center"
-  }
-});
-
-const AuthorProfileLoading = () => (
-  <View style={styles.container}>
-    <ActivityIndicator size="large" />
-  </View>
+export default props => (
+  <AuthorProfileContent {...props} loading articlesLoading />
 );
-
-export default AuthorProfileLoading;
