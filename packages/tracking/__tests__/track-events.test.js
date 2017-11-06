@@ -6,21 +6,21 @@ import { withTrackEvents } from "../tracking";
 import withTrackingContext from "./test-tracking-context";
 
 describe("TrackEvents", () => {
-  const TestComponent = ({
-    event1 = () => ({}),
-    event2 = () => ({}),
-    ...props
-  }) => {
+  const TestComponent = ({ event1, event2, ...props }) => {
     event1("event1 arg");
     event2("event2 arg");
     return <Text>{props.someProp}</Text>;
   };
   TestComponent.propTypes = {
     someProp: PropTypes.string,
-    event1: PropTypes.func.isRequired,
-    event2: PropTypes.func.isRequired
+    event1: PropTypes.func,
+    event2: PropTypes.func
   };
-  TestComponent.defaultProps = { someProp: "foo" };
+  TestComponent.defaultProps = {
+    someProp: "foo",
+    event1: () => {},
+    event2: () => {}
+  };
   TestComponent.someStatic = { foo: "bar" };
 
   it("renders when tracking context is missing", () => {
