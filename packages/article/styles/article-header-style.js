@@ -1,5 +1,6 @@
 import { StyleSheet, Platform } from "react-native";
 import globalStyle from "./article-global-style";
+import { COLOUR_HEADLINE, COLOUR_TEXT } from './const/article-const';
 
 const standFirstFontFamily = "TimesModern-Regular";
 
@@ -9,30 +10,30 @@ const webStyles = StyleSheet.create({
   articleHeadLineText: {
     fontSize: 30,
     lineHeight: 32,
-    color: "#000000",
+    color: COLOUR_TEXT,
     marginBottom: 7
   },
   standFirst: {
     fontSize: 21,
     lineHeight: 26,
     fontFamily: standFirstFontFamily,
-    color: "#333333",
+    color: COLOUR_HEADLINE,
     paddingBottom: 9
   }
 });
 
-const nativeStyles = StyleSheet.create({
+export const nativeStyles = StyleSheet.create({
   articleHeadLineText: {
     fontSize: Platform.OS === "android" ? 28 : 30,
     lineHeight: Platform.OS === "android" ? 37 : 32,
-    color: "#000000",
+    color: COLOUR_TEXT,
     fontWeight: Platform.OS === "android" ? "400" : "700",
     marginBottom: 7
   },
   standFirst: {
     fontSize: 21,
     lineHeight: Platform.OS === "android" ? 29 : 25,
-    color: "#333333",
+    color: COLOUR_HEADLINE,
     fontFamily: standFirstFontFamily,
     paddingBottom: 9
   }

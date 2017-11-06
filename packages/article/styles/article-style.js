@@ -1,8 +1,7 @@
 import { StyleSheet, Platform } from "react-native";
 import globalStyle from "./article-global-style";
-
-const bodyFontFamilyWebIos = "TimesDigitalW04";
-const bodyFontFamilyAndroid = "TimesDigitalW04-Regular";
+import extendedStyles from './article-style-extension';
+import { FONT_FAMILY_BODY, COLOUR_TEXT } from './const/article-const';
 
 const styles = {};
 
@@ -11,32 +10,31 @@ const webStyles = StyleSheet.create({
     marginBottom: 10
   },
   articleTextElement: {
-    fontFamily: bodyFontFamilyWebIos,
+    fontFamily: FONT_FAMILY_BODY,
     lineHeight: 26,
     fontSize: 17,
     marginBottom: 25,
     marginTop: 0,
-    color: "#333"
+    color: COLOUR_TEXT
   }
 });
 
 const nativeStyles = StyleSheet.create({
   leadAsset: {
-    marginBottom: Platform.OS === "android" ? 6 : 10
+    marginBottom: 10
   },
   articleTextElement: {
-    fontFamily:
-      Platform.OS === "android" ? bodyFontFamilyAndroid : bodyFontFamilyWebIos,
+    fontFamily: FONT_FAMILY_BODY,
     fontStyle: "normal",
     lineHeight: 26,
     marginBottom: 20,
-    fontSize: Platform.OS === "android" ? 16 : 17,
-    color: "#333333"
+    fontSize: 17,
+    color: COLOUR_TEXT
   }
 });
 
 if (Platform.OS !== "web") {
-  Object.assign(styles, globalStyle, nativeStyles);
+  Object.assign(styles, globalStyle, nativeStyles, extendedStyles);
 } else {
   Object.assign(styles, globalStyle, webStyles);
 }
