@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.16"></a>
+## [0.5.16](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.5.15...@times-components/error-view@0.5.16) (2017-11-07)
+
+
+
+
 <a name="0.5.15"></a>
 ## [0.5.15](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.5.14...@times-components/error-view@0.5.15) (2017-11-01)
 
