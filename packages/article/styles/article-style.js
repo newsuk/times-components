@@ -1,8 +1,7 @@
 import { StyleSheet, Platform } from "react-native";
 import globalStyle from "./article-global-style";
 
-const bodyFontFamilyWebIos = "TimesDigitalW04";
-const bodyFontFamilyAndroid = "TimesDigitalW04-Regular";
+const fontFamily = "TimesDigitalW04";
 
 const styles = {};
 
@@ -11,7 +10,7 @@ const webStyles = StyleSheet.create({
     marginBottom: 10
   },
   articleTextElement: {
-    fontFamily: bodyFontFamilyWebIos,
+    fontFamily,
     lineHeight: 26,
     fontSize: 17,
     marginBottom: 25,
@@ -25,9 +24,7 @@ const nativeStyles = StyleSheet.create({
     marginBottom: Platform.OS === "android" ? 6 : 10
   },
   articleTextElement: {
-    fontFamily:
-      Platform.OS === "android" ? bodyFontFamilyAndroid : bodyFontFamilyWebIos,
-    fontStyle: "normal",
+    fontFamily,
     lineHeight: 26,
     marginBottom: 20,
     fontSize: Platform.OS === "android" ? 16 : 17,
