@@ -35,7 +35,6 @@ exports[`renders 1`] = `
           "color": "#000",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 45,
-          "fontWeight": "400",
           "paddingTop": 32,
         }
       }
@@ -116,7 +115,6 @@ exports[`renders with data 1`] = `
           "color": "#000",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 45,
-          "fontWeight": "400",
           "paddingTop": 32,
         }
       }
@@ -344,7 +342,6 @@ exports[`renders without profile picture 1`] = `
           "color": "#000",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 45,
-          "fontWeight": "400",
           "paddingTop": 32,
         }
       }

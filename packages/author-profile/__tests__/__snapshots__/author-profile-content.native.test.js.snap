@@ -208,7 +208,6 @@ exports[`renders profile content 1`] = `
                   "color": "#000",
                   "fontFamily": "TimesModern-Bold",
                   "fontSize": 45,
-                  "fontWeight": "400",
                   "paddingTop": 32,
                 }
               }
@@ -4100,7 +4099,6 @@ exports[`renders profile content component 1`] = `
                   "color": "#000",
                   "fontFamily": "TimesModern-Bold",
                   "fontSize": 45,
-                  "fontWeight": "400",
                   "paddingTop": 32,
                 }
               }
@@ -5792,7 +5790,6 @@ exports[`renders profile empty 1`] = `
                   "color": "#000",
                   "fontFamily": "TimesModern-Bold",
                   "fontSize": 45,
-                  "fontWeight": "400",
                   "paddingTop": 32,
                 }
               }
@@ -6181,7 +6178,6 @@ exports[`renders profile loading 1`] = `
                   "color": "#000",
                   "fontFamily": "TimesModern-Bold",
                   "fontSize": 45,
-                  "fontWeight": "400",
                   "paddingTop": 32,
                 }
               }
