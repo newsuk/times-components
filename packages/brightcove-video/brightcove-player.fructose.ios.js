@@ -35,15 +35,19 @@ withComponent(
       10000
     );
 
-    test("video plays", async () => {
-      await element(by.id("play")).tap();
-      await waitFor(element(by.id("current-time")))
-        .toHaveText("00:01")
-        .withTimeout(1500);
-      await expect(
-        element(by.id("current-time").and(by.text("00:00")))
-      ).toNotExist();
-    });
+    test(
+      "video plays",
+      async () => {
+        await element(by.id("play")).tap();
+        await waitFor(element(by.id("current-time")))
+          .toHaveText("00:01")
+          .withTimeout(1500);
+        await expect(
+          element(by.id("current-time").and(by.text("00:00")))
+        ).toNotExist();
+      },
+      20000
+    );
   }
 );
 

@@ -166,13 +166,18 @@ export default AuthorProfileContent => {
   });
 
   it("renders profile loading", () => {
-    const p = Object.assign({}, props, {
-      slug: "fiona-hamilton",
-      author: null,
-      isLoading: true
-    });
+    const p = {
+      ...props,
+      ...authorProfileFixture.data.author,
+      articles: Array(3)
+        .fill()
+        .map((number, id) => ({
+          id,
+          loading: true
+        }))
+    };
 
-    const component = renderer.create(<AuthorProfile {...p} />);
+    const component = renderer.create(<AuthorProfileContent {...p} />);
     expect(component).toMatchSnapshot();
   });
 
@@ -183,7 +188,7 @@ export default AuthorProfileContent => {
       isLoading: false
     });
 
-    const component = renderer.create(<AuthorProfile {...p} />);
+    const component = renderer.create(<AuthorProfileContent {...p} />);
 
     expect(component).toMatchSnapshot();
   });

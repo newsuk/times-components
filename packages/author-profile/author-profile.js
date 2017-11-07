@@ -5,75 +5,74 @@ import { withPageState } from "@times-components/pagination";
 import { ArticleListProvider } from "@times-components/provider";
 import { withTrackingContext } from "@times-components/tracking";
 import get from "lodash.get";
-import AuthorProfileEmpty from "./author-profile-empty";
 import AuthorProfileError from "./author-profile-error";
-import AuthorProfileLoading from "./author-profile-loading";
 import AuthorProfileContent from "./author-profile-content";
 
 const AuthorProfile = ({
-  isLoading,
-  error,
   author,
+  error,
+  isLoading,
+  onArticlePress,
+  onTwitterLinkPress,
   page: initPage,
   pageSize: initPageSize,
-  onTwitterLinkPress,
-  onArticlePress,
   slug
 }) => {
   if (error) {
     return <AuthorProfileError {...error} />;
   }
 
-  if (isLoading) {
-    return <AuthorProfileLoading />;
-  }
+  const { biography, name, image: uri, jobTitle, twitter } = author || {};
+  const ArticleListProviderWithPageState = withPageState(ArticleListProvider);
 
-  if (author) {
-    const { biography, name, uri, jobTitle, twitter } = author;
-    const ArticleListProviderWithPageState = withPageState(ArticleListProvider);
-
-    return (
-      <ArticleListProviderWithPageState
-        articleImageRatio="3:2"
-        slug={slug}
-        page={initPage}
-        pageSize={initPageSize}
-      >
-        {({ author: data, onNext, onPrev, page, pageSize }) => (
-          <AuthorProfileContent
-            name={name}
-            biography={biography}
-            uri={uri}
-            jobTitle={jobTitle}
-            twitter={twitter}
-            onTwitterLinkPress={onTwitterLinkPress}
-            count={get(data, "articles.count")}
-            onNext={onNext}
-            onPrev={onPrev}
-            page={page}
-            pageSize={pageSize}
-            articles={get(data, "articles.list", []).map(article => ({
-              ...article,
-              publishedTime: new Date(article.publishedTime)
-            }))}
-            onArticlePress={onArticlePress}
-          />
-        )}
-      </ArticleListProviderWithPageState>
-    );
-  }
-
-  return <AuthorProfileEmpty />;
+  return (
+    <ArticleListProviderWithPageState
+      articleImageRatio="3:2"
+      slug={slug}
+      page={initPage}
+      pageSize={initPageSize}
+    >
+      {({
+        author: data,
+        onNext,
+        onPrev,
+        page,
+        pageSize,
+        isLoading: articlesLoading
+      }) => (
+        <AuthorProfileContent
+          isLoading={isLoading}
+          name={name}
+          biography={biography}
+          uri={uri}
+          jobTitle={jobTitle}
+          twitter={twitter}
+          onTwitterLinkPress={onTwitterLinkPress}
+          count={get(data, "articles.count")}
+          onNext={onNext}
+          onPrev={onPrev}
+          page={page}
+          pageSize={pageSize}
+          articlesLoading={articlesLoading}
+          articles={get(data, "articles.list", []).map(article => ({
+            ...article,
+            publishedTime: new Date(article.publishedTime)
+          }))}
+          onArticlePress={onArticlePress}
+        />
+      )}
+    </ArticleListProviderWithPageState>
+  );
 };
 
 AuthorProfile.defaultProps = {
-  isLoading: true,
-  error: null,
   author: null,
-  page: 1,
-  pageSize: 10,
+  error: null,
+  isLoading: true,
+  onArticlePress: () => {},
   onTwitterLinkPress: () => {},
-  onArticlePress: () => {}
+  page: 1,
+  pageSize: 10
 };
 
 AuthorProfile.propTypes = {
