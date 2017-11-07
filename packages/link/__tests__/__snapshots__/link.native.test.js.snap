@@ -28,7 +28,6 @@ exports[`Link doesnt change inner text styles 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
   >
     Hello
@@ -68,7 +67,6 @@ exports[`TextLink renders correctly with children 1`] = `
   accessibilityRole="link"
   accessible={true}
   allowFontScaling={true}
-  disabled={false}
   ellipsizeMode="tail"
   href="http://thetimes.co.uk"
   onPress={[Function]}
@@ -90,7 +88,6 @@ exports[`TextLink renders correctly with multiple styles 1`] = `
   accessibilityRole="link"
   accessible={true}
   allowFontScaling={true}
-  disabled={false}
   ellipsizeMode="tail"
   href="http://thetimes.co.uk"
   onPress={[Function]}
@@ -117,7 +114,6 @@ exports[`TextLink renders correctly with specific styles 1`] = `
   accessibilityRole="link"
   accessible={true}
   allowFontScaling={true}
-  disabled={false}
   ellipsizeMode="tail"
   href="http://thetimes.co.uk"
   onPress={[Function]}

@@ -158,7 +158,6 @@ exports[`renders profile content 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
-  onViewableItemsChanged={undefined}
   pageSize={10}
   renderItem={[Function]}
   scrollEventThrottle={50}
@@ -166,6 +165,7 @@ exports[`renders profile content 1`] = `
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
+  viewabilityConfigCallbackPairs={Array []}
   windowSize={21}
 >
   <View>
@@ -201,7 +201,6 @@ exports[`renders profile content 1`] = `
               accessible={true}
               allowFontScaling={true}
               aria-level="1"
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -220,7 +219,6 @@ exports[`renders profile content 1`] = `
               accessible={true}
               allowFontScaling={true}
               aria-level="2"
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -236,7 +234,6 @@ exports[`renders profile content 1`] = `
               accessibilityRole="link"
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               href="https://twitter.com/jdoe"
               onPress={[Function]}
@@ -261,7 +258,6 @@ exports[`renders profile content 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -279,7 +275,6 @@ exports[`renders profile content 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -293,7 +288,6 @@ exports[`renders profile content 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
               >
                 
@@ -303,7 +297,6 @@ exports[`renders profile content 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -454,7 +447,6 @@ exports[`renders profile content 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
-                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -4049,7 +4041,6 @@ exports[`renders profile content component 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
-  onViewableItemsChanged={undefined}
   pageSize={3}
   renderItem={[Function]}
   scrollEventThrottle={50}
@@ -4057,6 +4048,7 @@ exports[`renders profile content component 1`] = `
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
+  viewabilityConfigCallbackPairs={Array []}
   windowSize={21}
 >
   <View>
@@ -4092,7 +4084,6 @@ exports[`renders profile content component 1`] = `
               accessible={true}
               allowFontScaling={true}
               aria-level="1"
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -4111,7 +4102,6 @@ exports[`renders profile content component 1`] = `
               accessible={true}
               allowFontScaling={true}
               aria-level="2"
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -4126,7 +4116,6 @@ exports[`renders profile content component 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -4189,7 +4178,6 @@ exports[`renders profile content component 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
-                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -4262,7 +4250,6 @@ exports[`renders profile content component 1`] = `
                       <Text
                         accessible={true}
                         allowFontScaling={true}
-                        disabled={false}
                         ellipsizeMode="tail"
                         style={
                           Object {
@@ -4458,7 +4445,6 @@ exports[`renders profile content component 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -4473,7 +4459,6 @@ exports[`renders profile content component 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -4491,7 +4476,6 @@ exports[`renders profile content component 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -4507,14 +4491,12 @@ exports[`renders profile content component 1`] = `
                     <Text
                       accessible={true}
                       allowFontScaling={true}
-                      disabled={false}
                       ellipsizeMode="tail"
                     >
                       A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State,
                       <Text
                         accessible={true}
                         allowFontScaling={true}
-                        disabled={false}
                         ellipsizeMode="tail"
                         style={
                           Object {
@@ -4530,7 +4512,6 @@ exports[`renders profile content component 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Array [
@@ -4728,7 +4709,6 @@ exports[`renders profile content component 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -4743,7 +4723,6 @@ exports[`renders profile content component 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -4761,7 +4740,6 @@ exports[`renders profile content component 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -4777,14 +4755,12 @@ exports[`renders profile content component 1`] = `
                     <Text
                       accessible={true}
                       allowFontScaling={true}
-                      disabled={false}
                       ellipsizeMode="tail"
                     >
                       
                       <Text
                         accessible={true}
                         allowFontScaling={true}
-                        disabled={false}
                         ellipsizeMode="tail"
                         style={
                           Object {
@@ -4797,7 +4773,6 @@ exports[`renders profile content component 1`] = `
                       <Text
                         accessible={true}
                         allowFontScaling={true}
-                        disabled={false}
                         ellipsizeMode="tail"
                       >
                         
@@ -4807,7 +4782,6 @@ exports[`renders profile content component 1`] = `
                       <Text
                         accessible={true}
                         allowFontScaling={true}
-                        disabled={false}
                         ellipsizeMode="tail"
                       >
                         
@@ -4818,14 +4792,12 @@ exports[`renders profile content component 1`] = `
                     <Text
                       accessible={true}
                       allowFontScaling={true}
-                      disabled={false}
                       ellipsizeMode="tail"
                     >
                        
                       <Text
                         accessible={true}
                         allowFontScaling={true}
-                        disabled={false}
                         ellipsizeMode="tail"
                         style={
                           Object {
@@ -4838,7 +4810,6 @@ exports[`renders profile content component 1`] = `
                       <Text
                         accessible={true}
                         allowFontScaling={true}
-                        disabled={false}
                         ellipsizeMode="tail"
                       >
                         
@@ -4848,7 +4819,6 @@ exports[`renders profile content component 1`] = `
                       <Text
                         accessible={true}
                         allowFontScaling={true}
-                        disabled={false}
                         ellipsizeMode="tail"
                       >
                         
@@ -4859,7 +4829,6 @@ exports[`renders profile content component 1`] = `
                     <Text
                       accessible={true}
                       allowFontScaling={true}
-                      disabled={false}
                       ellipsizeMode="tail"
                     >
                       Poor old Harriet, Duchess of Sutherland. There she was giddily expecting a
@@ -4869,7 +4838,6 @@ exports[`renders profile content component 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Array [
@@ -4986,7 +4954,6 @@ exports[`renders profile content component 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -5001,7 +4968,6 @@ exports[`renders profile content component 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -5019,7 +4985,6 @@ exports[`renders profile content component 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -5035,7 +5000,6 @@ exports[`renders profile content component 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Array [
@@ -5150,7 +5114,6 @@ exports[`renders profile content component 1`] = `
                     <Text
                       accessible={true}
                       allowFontScaling={true}
-                      disabled={false}
                       ellipsizeMode="tail"
                       style={
                         Object {
@@ -5343,7 +5306,6 @@ exports[`renders profile content item component 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -5358,7 +5320,6 @@ exports[`renders profile content item component 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -5376,7 +5337,6 @@ exports[`renders profile content item component 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -5392,14 +5352,12 @@ exports[`renders profile content item component 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
               >
                 A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State,
                 <Text
                   accessible={true}
                   allowFontScaling={true}
-                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -5415,7 +5373,6 @@ exports[`renders profile content item component 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -5591,7 +5548,6 @@ exports[`renders profile content item component with no image  1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -5606,7 +5562,6 @@ exports[`renders profile content item component with no image  1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -5624,7 +5579,6 @@ exports[`renders profile content item component with no image  1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -5640,14 +5594,12 @@ exports[`renders profile content item component with no image  1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
               >
                 A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State,
                 <Text
                   accessible={true}
                   allowFontScaling={true}
-                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
@@ -5663,7 +5615,6 @@ exports[`renders profile content item component with no image  1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -5740,7 +5691,6 @@ exports[`renders profile empty 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
-  onViewableItemsChanged={undefined}
   pageSize={undefined}
   renderItem={[Function]}
   scrollEventThrottle={50}
@@ -5748,6 +5698,7 @@ exports[`renders profile empty 1`] = `
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
+  viewabilityConfigCallbackPairs={Array []}
   windowSize={21}
 >
   <View>
@@ -5783,7 +5734,6 @@ exports[`renders profile empty 1`] = `
               accessible={true}
               allowFontScaling={true}
               aria-level="1"
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -5802,7 +5752,6 @@ exports[`renders profile empty 1`] = `
               accessible={true}
               allowFontScaling={true}
               aria-level="2"
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -5817,7 +5766,6 @@ exports[`renders profile empty 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -5880,7 +5828,6 @@ exports[`renders profile empty 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
-                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -5989,7 +5936,6 @@ exports[`renders profile error 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
   >
     An error ocurred
@@ -5997,7 +5943,6 @@ exports[`renders profile error 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
   >
     {
@@ -6128,7 +6073,6 @@ exports[`renders profile loading 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
-  onViewableItemsChanged={undefined}
   pageSize={undefined}
   renderItem={[Function]}
   scrollEventThrottle={50}
@@ -6136,6 +6080,7 @@ exports[`renders profile loading 1`] = `
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
+  viewabilityConfigCallbackPairs={Array []}
   windowSize={21}
 >
   <View>
@@ -6171,7 +6116,6 @@ exports[`renders profile loading 1`] = `
               accessible={true}
               allowFontScaling={true}
               aria-level="1"
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -6190,7 +6134,6 @@ exports[`renders profile loading 1`] = `
               accessible={true}
               allowFontScaling={true}
               aria-level="2"
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -6206,7 +6149,6 @@ exports[`renders profile loading 1`] = `
               accessibilityRole="link"
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               href="https://twitter.com/jdoe"
               onPress={[Function]}
@@ -6231,7 +6173,6 @@ exports[`renders profile loading 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -6249,7 +6190,6 @@ exports[`renders profile loading 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -6263,7 +6203,6 @@ exports[`renders profile loading 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
               >
                 
@@ -6273,7 +6212,6 @@ exports[`renders profile loading 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -6333,7 +6271,6 @@ exports[`renders profile loading 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
-                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Array [
@@ -6450,7 +6387,6 @@ exports[`renders profile loading 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -6467,7 +6403,6 @@ exports[`renders profile loading 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -6485,7 +6420,6 @@ exports[`renders profile loading 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -6501,7 +6435,6 @@ exports[`renders profile loading 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Array [
@@ -6618,7 +6551,6 @@ exports[`renders profile loading 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -6635,7 +6567,6 @@ exports[`renders profile loading 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -6653,7 +6584,6 @@ exports[`renders profile loading 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -6669,7 +6599,6 @@ exports[`renders profile loading 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Array [
@@ -6786,7 +6715,6 @@ exports[`renders profile loading 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -6803,7 +6731,6 @@ exports[`renders profile loading 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -6821,7 +6748,6 @@ exports[`renders profile loading 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -6837,7 +6763,6 @@ exports[`renders profile loading 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    disabled={false}
                     ellipsizeMode="tail"
                     style={
                       Array [
