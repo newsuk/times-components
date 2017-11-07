@@ -129,7 +129,7 @@ exports[`does not render Article Image display is not received 1`] = `
             ]
           }
         >
-          TIMES PHOTOGRAPHER JACK HILL
+          THE CREDITS
         </Text>
       </View>
     </View>
@@ -342,7 +342,7 @@ exports[`renders inline image (landscape) correctly 1`] = `
             ]
           }
         >
-          President Kennedy’s death in 1963 has spawned countless conspiracy theories
+          All the latest stories in culture and books.
         </Text>
         <Text
           accessible={true}
@@ -368,7 +368,7 @@ exports[`renders inline image (landscape) correctly 1`] = `
             ]
           }
         >
-          BETTMANN
+          TIMES PHOTOGRAPHER JACK HILL
         </Text>
       </View>
     </View>
@@ -500,7 +500,7 @@ exports[`renders inline image (portrait) correctly 1`] = `
             ]
           }
         >
-          From the spreadsheet: 1 Sir Michael Fallon, Admitted placing hand on knee of journalist 15 years ago. 2 Jake Berry, announced he had a baby with a Tory aide after an amicable divorce from his wife. 3 Amber Rudd, had a relationship with Kwasi Kwarteng, who is now an aide to the chancellor. 4 Liam Fox, had to resign over breach of ministerial code after suggestions that his position had benefited his friend Adam Werritty. No allegations were of a sexual nature. 5 Stephen Crabb, sent explicit messages to young women while married. 6 Mark Garnier, admitted asking his secretary to buy sex toys. 7 Liz Truss, had affair with Tory MP Mark Field
+          President Kennedy’s death in 1963 has spawned countless conspiracy theories
         </Text>
         <Text
           accessible={true}
@@ -526,7 +526,7 @@ exports[`renders inline image (portrait) correctly 1`] = `
             ]
           }
         >
-          TIMES PHOTOGRAPHER RICHARD POHLE  
+          BETTMANN
         </Text>
       </View>
     </View>
@@ -643,7 +643,7 @@ exports[`renders primary image correctly 1`] = `
             ]
           }
         >
-          Sebastian Schwarz, Glyndbourne’s general director, took issue with the BBC
+          From the spreadsheet: 1 Sir Michael Fallon, Admitted placing hand on knee of journalist 15 years ago. 2 Jake Berry, announced he had a baby with a Tory aide after an amicable divorce from his wife. 3 Amber Rudd, had a relationship with Kwasi Kwarteng, who is now an aide to the chancellor. 4 Liam Fox, had to resign over breach of ministerial code after suggestions that his position had benefited his friend Adam Werritty. No allegations were of a sexual nature. 5 Stephen Crabb, sent explicit messages to young women while married. 6 Mark Garnier, admitted asking his secretary to buy sex toys. 7 Liz Truss, had affair with Tory MP Mark Field
         </Text>
         <Text
           accessible={true}
@@ -801,7 +801,7 @@ exports[`renders secondary image correctly 1`] = `
             ]
           }
         >
-          All the latest stories in culture and books.
+          Sebastian Schwarz, Glyndbourne’s general director, took issue with the BBC
         </Text>
         <Text
           accessible={true}
@@ -827,7 +827,7 @@ exports[`renders secondary image correctly 1`] = `
             ]
           }
         >
-          THE CREDITS
+          TIMES PHOTOGRAPHER RICHARD POHLE  
         </Text>
       </View>
     </View>
