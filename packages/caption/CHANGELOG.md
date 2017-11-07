@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/caption@0.6.5...@times-components/caption@0.7.0) (2017-11-07)
+
+
+### Features
+
+* add article loading state ([#324](https://github.com/newsuk/times-components/issues/324)) ([b2c07fe](https://github.com/newsuk/times-components/commit/b2c07fe))
+
+
+
+
 <a name="0.6.5"></a>
 ## [0.6.5](https://github.com/newsuk/times-components/compare/@times-components/caption@0.6.3...@times-components/caption@0.6.5) (2017-10-31)
 
