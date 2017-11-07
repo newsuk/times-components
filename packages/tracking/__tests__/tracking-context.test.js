@@ -139,7 +139,7 @@ describe("WithTrackingContext", () => {
     );
   });
 
-  /* It's important that if the root component re-renders, then the child doesn't unmount, otherwise multiple page view analytics events will be reported */
+  /* This can occur if the child accidentally unmounts and is remounted */
   it("doesn't fire a second page view event if root element is re-rendered", () => {
     const WithTrackingAndContext = withTrackingContext(TestComponent, {
       trackingObject: "AuthorProfile"
