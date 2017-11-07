@@ -4,11 +4,12 @@
       "display": "inline",
       "ratio": "1:1.50",
       "url":
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=100%2C150%2C-0%2C-0"
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdb30ed6a-be62-11e7-b58a-4186f6049f2e.jpg?crop=384%2C576%2C0%2C0"
     },
     "captionOptions": {
-      "caption": "All the latest stories in culture and books.",
-      "credits": "The credits"
+      "caption":
+        "President Kennedy’s death in 1963 has spawned countless conspiracy theories",
+      "credits": "Bettmann"
     }
   }
 }
