@@ -1,9 +1,8 @@
-import { StyleSheet } from "react-native";
 import constants from "../const";
 
 const { fontFamilyStandFirst, colourHeadline, colourText } = constants;
 
-const sharedStyles = StyleSheet.create({
+const sharedStyles = {
   articleHeadLineText: {
     fontSize: 30,
     lineHeight: 32,
@@ -17,6 +16,6 @@ const sharedStyles = StyleSheet.create({
     color: colourText,
     paddingBottom: 9
   }
-});
+};
 
 export default sharedStyles;

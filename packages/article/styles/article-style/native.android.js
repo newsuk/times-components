@@ -1,10 +1,9 @@
-import { StyleSheet } from "react-native";
 import sharedStyles from "./shared";
 import constants from "../const";
 
 const { fontFamilyBody } = constants;
 
-const androidStyles = StyleSheet.create({
+const androidStyles = {
   leadAsset: Object.assign({}, sharedStyles.leadAsset, {
     marginBottom: 6
   }),
@@ -14,6 +13,6 @@ const androidStyles = StyleSheet.create({
     fontStyle: "normal",
     marginBottom: 20
   })
-});
+};
 
 export default Object.assign({}, sharedStyles, androidStyles);

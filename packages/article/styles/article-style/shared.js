@@ -1,9 +1,8 @@
-import { StyleSheet } from "react-native";
 import constants from "../const";
 
 const { fontFamilyBody, colourText } = constants;
 
-const sharedStyles = StyleSheet.create({
+const sharedStyles = {
   leadAsset: {
     marginBottom: 10
   },
@@ -14,6 +13,6 @@ const sharedStyles = StyleSheet.create({
     marginBottom: 25,
     color: colourText
   }
-});
+};
 
 export default sharedStyles;
