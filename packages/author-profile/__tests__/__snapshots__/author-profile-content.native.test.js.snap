@@ -6245,7 +6245,7 @@ exports[`renders profile loading 1`] = `
                 }
               }
             >
-              Lorem
+              Lorem 
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -6259,17 +6259,17 @@ exports[`renders profile loading 1`] = `
               >
                 ipsum
               </Text>
-               testbr
+               testbr 
               <Text
                 accessible={true}
                 allowFontScaling={true}
                 disabled={false}
                 ellipsizeMode="tail"
               >
-
-
+                
+                
               </Text>
-              More text
+              More text 
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -6281,7 +6281,7 @@ exports[`renders profile loading 1`] = `
                   }
                 }
               >
-                 last
+                 last 
               </Text>
             </Text>
           </View>
