@@ -15,6 +15,10 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     paddingBottom: 25
   },
+  primaryCaption: {
+    paddingLeft: 10,
+    paddingRight: 10
+  },
   secondaryContainer: {
     width: "100%",
     flexDirection: "row",

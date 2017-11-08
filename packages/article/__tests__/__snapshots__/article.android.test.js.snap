@@ -6021,7 +6021,12 @@ exports[`Article test on android renders full article 1`] = `
           </Image>
         </View>
         <View
-          style={undefined}
+          style={
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            }
+          }
         >
           <View>
             <View
