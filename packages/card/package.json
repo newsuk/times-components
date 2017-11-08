@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "main": "card",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -66,7 +66,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/article-summary": "0.8.3",
+    "@times-components/article-summary": "0.8.4",
     "@times-components/gradient": "0.1.0",
     "@times-components/image": "1.6.0",
     "prop-types": "15.6.0",

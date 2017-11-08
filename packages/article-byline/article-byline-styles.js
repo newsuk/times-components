@@ -8,7 +8,7 @@ const customStyle = Platform.select({
     lineHeight: 17
   },
   web: {
-    whiteSpace: "pre",
+    whiteSpace: "normal",
     lineHeight: 13
   }
 });

@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.17.4"></a>
+## [0.17.4](https://github.com/newsuk/times-components/compare/@times-components/article@0.17.3...@times-components/article@0.17.4) (2017-11-07)
+
+
+
+
+<a name="0.17.3"></a>
+## [0.17.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.17.2...@times-components/article@0.17.3) (2017-11-07)
+
+
+
+
+<a name="0.17.2"></a>
+## [0.17.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.17.1...@times-components/article@0.17.2) (2017-11-07)
+
+
+### Bug Fixes
+
+* word wrap on article byline ([#361](https://github.com/newsuk/times-components/issues/361)) ([914a8a3](https://github.com/newsuk/times-components/commit/914a8a3))
+
+
+
+
+<a name="0.17.1"></a>
+## [0.17.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.17.0...@times-components/article@0.17.1) (2017-11-07)
+
+
+
+
 <a name="0.17.0"></a>
 # [0.17.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.16.16...@times-components/article@0.17.0) (2017-11-07)
 

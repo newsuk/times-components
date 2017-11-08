@@ -196,7 +196,7 @@ exports[`Article test on android renders article no flags 1`] = `
     <div>
       <style>
         @font-face {
-          font-family: TimesModernBold;
+          font-family: TimesModern-Bold;
           src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
           font-weight: 400;
           font-style: normal;
@@ -206,7 +206,7 @@ exports[`Article test on android renders article no flags 1`] = `
           font-size: 22px;
           line-height: 25px;
           margin-bottom: 8px;
-          font-family: TimesModernBold;
+          font-family: TimesModern-Bold;
           font-weight: 400;
           letter-spacing: 0.5px;
         }
@@ -399,7 +399,7 @@ exports[`Article test on android renders article no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -458,7 +458,7 @@ exports[`Article test on android renders article no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -502,7 +502,7 @@ exports[`Article test on android renders article no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -534,7 +534,7 @@ exports[`Article test on android renders article no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -566,7 +566,7 @@ exports[`Article test on android renders article no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -598,7 +598,7 @@ exports[`Article test on android renders article no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -630,7 +630,7 @@ exports[`Article test on android renders article no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -662,7 +662,7 @@ exports[`Article test on android renders article no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -694,7 +694,7 @@ exports[`Article test on android renders article no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -726,7 +726,7 @@ exports[`Article test on android renders article no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -758,7 +758,7 @@ exports[`Article test on android renders article no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -790,7 +790,7 @@ exports[`Article test on android renders article no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -822,7 +822,7 @@ exports[`Article test on android renders article no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -959,7 +959,7 @@ exports[`Article test on android renders article no label 1`] = `
     <div>
       <style>
         @font-face {
-          font-family: TimesModernBold;
+          font-family: TimesModern-Bold;
           src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
           font-weight: 400;
           font-style: normal;
@@ -969,7 +969,7 @@ exports[`Article test on android renders article no label 1`] = `
           font-size: 22px;
           line-height: 25px;
           margin-bottom: 8px;
-          font-family: TimesModernBold;
+          font-family: TimesModern-Bold;
           font-weight: 400;
           letter-spacing: 0.5px;
         }
@@ -1301,7 +1301,7 @@ exports[`Article test on android renders article no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -1360,7 +1360,7 @@ exports[`Article test on android renders article no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -1404,7 +1404,7 @@ exports[`Article test on android renders article no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -1436,7 +1436,7 @@ exports[`Article test on android renders article no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -1468,7 +1468,7 @@ exports[`Article test on android renders article no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -1500,7 +1500,7 @@ exports[`Article test on android renders article no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -1532,7 +1532,7 @@ exports[`Article test on android renders article no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -1564,7 +1564,7 @@ exports[`Article test on android renders article no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -1596,7 +1596,7 @@ exports[`Article test on android renders article no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -1628,7 +1628,7 @@ exports[`Article test on android renders article no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -1660,7 +1660,7 @@ exports[`Article test on android renders article no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -1692,7 +1692,7 @@ exports[`Article test on android renders article no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -1724,7 +1724,7 @@ exports[`Article test on android renders article no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -1861,7 +1861,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
     <div>
       <style>
         @font-face {
-          font-family: TimesModernBold;
+          font-family: TimesModern-Bold;
           src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
           font-weight: 400;
           font-style: normal;
@@ -1871,7 +1871,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           font-size: 22px;
           line-height: 25px;
           margin-bottom: 8px;
-          font-family: TimesModernBold;
+          font-family: TimesModern-Bold;
           font-weight: 400;
           letter-spacing: 0.5px;
         }
@@ -2064,7 +2064,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -2123,7 +2123,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -2167,7 +2167,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -2199,7 +2199,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -2231,7 +2231,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -2263,7 +2263,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -2295,7 +2295,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -2327,7 +2327,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -2359,7 +2359,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -2391,7 +2391,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -2423,7 +2423,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -2455,7 +2455,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -2487,7 +2487,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -2624,7 +2624,7 @@ exports[`Article test on android renders article no label no flags no standfirst
     <div>
       <style>
         @font-face {
-          font-family: TimesModernBold;
+          font-family: TimesModern-Bold;
           src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
           font-weight: 400;
           font-style: normal;
@@ -2634,7 +2634,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           font-size: 22px;
           line-height: 25px;
           margin-bottom: 8px;
-          font-family: TimesModernBold;
+          font-family: TimesModern-Bold;
           font-weight: 400;
           letter-spacing: 0.5px;
         }
@@ -2807,7 +2807,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -2866,7 +2866,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -2910,7 +2910,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -2942,7 +2942,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -2974,7 +2974,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -3006,7 +3006,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -3038,7 +3038,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -3070,7 +3070,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -3102,7 +3102,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -3134,7 +3134,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -3166,7 +3166,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -3198,7 +3198,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -3230,7 +3230,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -3399,7 +3399,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
     <div>
       <style>
         @font-face {
-          font-family: TimesModernBold;
+          font-family: TimesModern-Bold;
           src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
           font-weight: 400;
           font-style: normal;
@@ -3409,7 +3409,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           font-size: 22px;
           line-height: 25px;
           margin-bottom: 8px;
-          font-family: TimesModernBold;
+          font-family: TimesModern-Bold;
           font-weight: 400;
           letter-spacing: 0.5px;
         }
@@ -3721,7 +3721,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -3780,7 +3780,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -3824,7 +3824,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -3856,7 +3856,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -3888,7 +3888,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -3920,7 +3920,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -3952,7 +3952,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -3984,7 +3984,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -4016,7 +4016,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -4048,7 +4048,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -4080,7 +4080,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -4112,7 +4112,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -4144,7 +4144,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -4313,7 +4313,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     <div>
       <style>
         @font-face {
-          font-family: TimesModernBold;
+          font-family: TimesModern-Bold;
           src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
           font-weight: 400;
           font-style: normal;
@@ -4323,7 +4323,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           font-size: 22px;
           line-height: 25px;
           margin-bottom: 8px;
-          font-family: TimesModernBold;
+          font-family: TimesModern-Bold;
           font-weight: 400;
           letter-spacing: 0.5px;
         }
@@ -4496,7 +4496,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -4555,7 +4555,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -4599,7 +4599,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -4631,7 +4631,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -4663,7 +4663,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -4695,7 +4695,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -4727,7 +4727,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -4759,7 +4759,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -4791,7 +4791,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -4823,7 +4823,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -4855,7 +4855,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -4887,7 +4887,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -4919,7 +4919,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -5056,7 +5056,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     <div>
       <style>
         @font-face {
-          font-family: TimesModernBold;
+          font-family: TimesModern-Bold;
           src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
           font-weight: 400;
           font-style: normal;
@@ -5066,7 +5066,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           font-size: 22px;
           line-height: 25px;
           margin-bottom: 8px;
-          font-family: TimesModernBold;
+          font-family: TimesModern-Bold;
           font-weight: 400;
           letter-spacing: 0.5px;
         }
@@ -5378,7 +5378,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -5437,7 +5437,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -5481,7 +5481,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -5513,7 +5513,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -5545,7 +5545,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -5577,7 +5577,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -5609,7 +5609,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -5641,7 +5641,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -5673,7 +5673,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -5705,7 +5705,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -5737,7 +5737,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -5769,7 +5769,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -5801,7 +5801,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -5970,7 +5970,7 @@ exports[`Article test on android renders full article 1`] = `
     <div>
       <style>
         @font-face {
-          font-family: TimesModernBold;
+          font-family: TimesModern-Bold;
           src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
           font-weight: 400;
           font-style: normal;
@@ -5980,7 +5980,7 @@ exports[`Article test on android renders full article 1`] = `
           font-size: 22px;
           line-height: 25px;
           margin-bottom: 8px;
-          font-family: TimesModernBold;
+          font-family: TimesModern-Bold;
           font-weight: 400;
           letter-spacing: 0.5px;
         }
@@ -6312,7 +6312,7 @@ exports[`Article test on android renders full article 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -6371,7 +6371,7 @@ exports[`Article test on android renders full article 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -6413,7 +6413,7 @@ exports[`Article test on android renders full article 1`] = `
             onLoad={[Function]}
             source={
               Object {
-                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=1600%2C900%2C-0%2C-0",
+                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0",
               }
             }
             style={undefined}
@@ -6557,7 +6557,7 @@ exports[`Article test on android renders full article 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -6589,7 +6589,7 @@ exports[`Article test on android renders full article 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -6626,7 +6626,7 @@ exports[`Article test on android renders full article 1`] = `
             onLoad={[Function]}
             source={
               Object {
-                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=1200%2C800%2C-0%2C-0",
+                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0",
               }
             }
             style={undefined}
@@ -6778,7 +6778,7 @@ exports[`Article test on android renders full article 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -6988,7 +6988,7 @@ exports[`Article test on android renders full article 1`] = `
                   "borderStyle": "solid",
                   "borderWidth": 1,
                   "color": "#696969",
-                  "fontFamily": "TimesDigitalW04-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 11,
                   "letterSpacing": 1.5,
                   "paddingBottom": 5,
@@ -7025,7 +7025,7 @@ exports[`Article test on android renders full article 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -7062,7 +7062,7 @@ exports[`Article test on android renders full article 1`] = `
             onLoad={[Function]}
             source={
               Object {
-                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=800%2C1200%2C-0%2C-0",
+                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdb30ed6a-be62-11e7-b58a-4186f6049f2e.jpg?crop=384%2C576%2C0%2C0",
               }
             }
             style={undefined}
@@ -7214,7 +7214,7 @@ exports[`Article test on android renders full article 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -7251,7 +7251,7 @@ exports[`Article test on android renders full article 1`] = `
             onLoad={[Function]}
             source={
               Object {
-                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=600%2C400%2C-0%2C-0",
+                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3ac674bc-beb2-11e7-8bb9-94e1372175c0.jpg?crop=5576%2C3717%2C0%2C0",
               }
             }
             style={undefined}
@@ -7403,7 +7403,7 @@ exports[`Article test on android renders full article 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -7435,7 +7435,7 @@ exports[`Article test on android renders full article 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -7467,7 +7467,7 @@ exports[`Article test on android renders full article 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -7499,7 +7499,7 @@ exports[`Article test on android renders full article 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -7531,7 +7531,7 @@ exports[`Article test on android renders full article 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,
@@ -7563,7 +7563,7 @@ exports[`Article test on android renders full article 1`] = `
           style={
             Object {
               "color": "#333333",
-              "fontFamily": "TimesDigitalW04-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "fontStyle": "normal",
               "lineHeight": 26,

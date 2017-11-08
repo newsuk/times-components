@@ -10,7 +10,7 @@ const ArticleHeadline = ({ text, baseUrl }) => {
     <div>
       <style>
         @font-face {
-          font-family: TimesModernBold;
+          font-family: TimesModern-Bold;
           src: url(/fonts/TimesModern-Bold.woff2) format("woff2"), url(/fonts/TimesModern-Bold.woff) format("woff"), url(/fonts/TimesModern-Bold.ttf) format("truetype");
           font-weight: 400;
           font-style: normal;
@@ -20,7 +20,7 @@ const ArticleHeadline = ({ text, baseUrl }) => {
           font-size: 22px;
           line-height: 25px;
           margin-bottom: 8px;
-          font-family: TimesModernBold;
+          font-family: TimesModern-Bold;
           font-weight: 400;
           letter-spacing: 0.5px;
         }
