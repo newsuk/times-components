@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "0.17.5",
+  "version": "0.17.6",
   "description": "The article",
   "main": "article",
   "scripts": {
@@ -61,7 +61,7 @@
     "@times-components/date-publication": "0.4.3",
     "@times-components/image": "1.6.0",
     "@times-components/markup": "0.12.4",
-    "@times-components/provider": "0.14.4",
+    "@times-components/provider": "0.14.5",
     "prop-types": "15.6.0",
     "react-apollo": "1.4.16",
     "react-native-web": "0.1.7"
