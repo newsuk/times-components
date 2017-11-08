@@ -139,8 +139,7 @@ const withMockProvider = child => (
 
 export default AuthorProfileContent => {
   it("renders profile", () => {
-    const wrapper = shallow(<AuthorProfile {...props} />)
-      .dive();
+    const wrapper = shallow(<AuthorProfile {...props} />).dive();
 
     expect(wrapper).toMatchSnapshot();
   });
