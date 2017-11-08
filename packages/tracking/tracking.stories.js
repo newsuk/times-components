@@ -5,11 +5,7 @@ import { Button, StyleSheet, View } from "react-native";
 import { action } from "@storybook/addon-actions";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
-import {
-  withTrackRender,
-  withTrackingContext,
-  withTrackEvents
-} from "./tracking";
+import { withTrackingContext, withTrackEvents } from "./tracking";
 
 const storybookReporter = action("analytics-event");
 
@@ -45,14 +41,11 @@ BoxWithButtons.propTypes = {
 };
 
 storiesOf("Tracking", module)
-  .add("Render tracking", () => {
-    const BoxWithTrackingAndContext = withTrackingContext(
-      withTrackRender(Box, {
-        trackingName: "ColoredBox",
-        getAttrs: props => ({ color: props.color })
-      }),
-      { trackingObject: "TrackRenderStory" }
-    );
+  .add("Page tracking", () => {
+    const BoxWithTrackingAndContext = withTrackingContext(Box, {
+      trackingObject: "TrackRenderStory",
+      getAttrs: props => ({ color: props.color })
+    });
 
     return (
       <BoxWithTrackingAndContext
