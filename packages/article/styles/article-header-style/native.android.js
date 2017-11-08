@@ -1,6 +1,7 @@
 import sharedStyles from "./shared";
 
 const androidStyles = {
+  ...sharedStyles,
   articleHeadLineText: Object.assign({}, sharedStyles.articleHeadLineText, {
     fontSize: 28,
     lineHeight: 37,
@@ -11,4 +12,4 @@ const androidStyles = {
   })
 };
 
-export default Object.assign({}, sharedStyles, androidStyles);
+export default androidStyles;

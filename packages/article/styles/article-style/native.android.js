@@ -4,6 +4,7 @@ import constants from "../const";
 const { fontFamilyBody } = constants;
 
 const androidStyles = {
+  ...sharedStyles,
   leadAsset: Object.assign({}, sharedStyles.leadAsset, {
     marginBottom: 6
   }),
@@ -15,4 +16,4 @@ const androidStyles = {
   })
 };
 
-export default Object.assign({}, sharedStyles, androidStyles);
+export default androidStyles;

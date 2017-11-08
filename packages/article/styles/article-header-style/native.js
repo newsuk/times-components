@@ -1,6 +1,7 @@
 import sharedStyles from "./shared";
 
 const nativeStyles = {
+  ...sharedStyles,
   articleHeadLineText: Object.assign({}, sharedStyles.articleHeadLineText, {
     fontWeight: "700"
   }),
@@ -9,4 +10,4 @@ const nativeStyles = {
   })
 };
 
-export default Object.assign({}, sharedStyles, nativeStyles);
+export default nativeStyles;
