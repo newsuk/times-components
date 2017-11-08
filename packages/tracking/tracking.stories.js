@@ -40,40 +40,33 @@ BoxWithButtons.propTypes = {
   onPress: PropTypes.func.isRequired
 };
 
+const BoxWithTrackingContext = withTrackingContext(Box, {
+  trackingObject: "TrackRenderStory",
+  getAttrs: props => ({ color: props.color })
+});
+
+const BoxWithPressTrackingAndContext = withTrackingContext(
+  withTrackEvents(BoxWithButtons, {
+    analyticsEvents: [
+      {
+        eventName: "onPress",
+        actionName: "Pressed",
+        trackingName: "ColoredBox",
+        getAttrs: (props, eventArgs) => ({ button: eventArgs[0] })
+      }
+    ]
+  }),
+  { trackingObject: "TrackRenderStory" }
+);
+
 storiesOf("Tracking", module)
-  .add("Page tracking", () => {
-    const BoxWithTrackingAndContext = withTrackingContext(Box, {
-      trackingObject: "TrackRenderStory",
-      getAttrs: props => ({ color: props.color })
-    });
-
-    return (
-      <BoxWithTrackingAndContext
-        analyticsStream={storybookReporter}
-        color="red"
-      />
-    );
-  })
-  .add("Event tracking", () => {
-    const BoxWithPressTrackingAndContext = withTrackingContext(
-      withTrackEvents(BoxWithButtons, {
-        analyticsEvents: [
-          {
-            eventName: "onPress",
-            actionName: "Pressed",
-            trackingName: "ColoredBox",
-            getAttrs: (props, eventArgs) => ({ button: eventArgs[0] })
-          }
-        ]
-      }),
-      { trackingObject: "TrackRenderStory" }
-    );
-
-    return (
-      <BoxWithPressTrackingAndContext
-        analyticsStream={storybookReporter}
-        color="red"
-        onPress={() => {}}
-      />
-    );
-  });
+  .add("Page tracking", () => (
+    <BoxWithTrackingContext analyticsStream={storybookReporter} color="red" />
+  ))
+  .add("Event tracking", () => (
+    <BoxWithPressTrackingAndContext
+      analyticsStream={storybookReporter}
+      color="red"
+      onPress={() => {}}
+    />
+  ));
