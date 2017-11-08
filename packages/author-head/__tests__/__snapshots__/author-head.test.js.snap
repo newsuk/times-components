@@ -214,25 +214,26 @@ exports[`renders with data 1`] = `
       }
     }
   >
-    <Image
-      aspectRatio={1}
-      onLoad={[Function]}
-      source={
-        Object {
-          "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200",
+    <View>
+      <Image
+        aspectRatio={1}
+        onLoad={[Function]}
+        source={
+          Object {
+            "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200",
+          }
         }
-      }
-      style={
-        Object {
-          "borderColor": "#FFF",
-          "borderRadius": 50,
-          "borderWidth": 5,
-          "height": 100,
-          "overflow": "hidden",
-          "width": 100,
+        style={
+          Object {
+            "borderColor": "#FFF",
+            "borderRadius": 50,
+            "borderWidth": 5,
+            "height": 100,
+            "overflow": "hidden",
+            "width": 100,
+          }
         }
-      }
-    >
+      />
       <View
         onLayout={[Function]}
         style={
@@ -241,12 +242,11 @@ exports[`renders with data 1`] = `
               "flex": 1,
             },
             Object {
-              "borderColor": "#FFF",
-              "borderRadius": 50,
-              "borderWidth": 5,
-              "height": 100,
-              "overflow": "hidden",
-              "width": 100,
+              "height": "100%",
+              "left": 0,
+              "position": "absolute",
+              "top": 0,
+              "width": "100%",
             },
           ]
         }
@@ -293,7 +293,7 @@ exports[`renders with data 1`] = `
           />
         </View>
       </View>
-    </Image>
+    </View>
   </View>
 </View>
 `;

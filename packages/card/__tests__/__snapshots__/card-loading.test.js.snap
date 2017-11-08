@@ -24,16 +24,17 @@ exports[`renders loading card state 1`] = `
       ]
     }
   >
-    <Image
-      aspectRatio={1.5}
-      onLoad={[Function]}
-      source={
-        Object {
-          "uri": "",
+    <View>
+      <Image
+        aspectRatio={1.5}
+        onLoad={[Function]}
+        source={
+          Object {
+            "uri": "",
+          }
         }
-      }
-      style={undefined}
-    >
+        style={undefined}
+      />
       <View
         onLayout={[Function]}
         style={
@@ -41,7 +42,13 @@ exports[`renders loading card state 1`] = `
             Object {
               "flex": 1,
             },
-            null,
+            Object {
+              "height": "100%",
+              "left": 0,
+              "position": "absolute",
+              "top": 0,
+              "width": "100%",
+            },
           ]
         }
       >
@@ -87,7 +94,7 @@ exports[`renders loading card state 1`] = `
           />
         </View>
       </View>
-    </Image>
+    </View>
   </View>
   <View
     style={

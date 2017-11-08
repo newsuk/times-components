@@ -259,16 +259,17 @@ exports[`renders vertical by default 1`] = `
         ]
       }
     >
-      <Image
-        aspectRatio={1.5}
-        onLoad={[Function]}
-        source={
-          Object {
-            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320",
+      <View>
+        <Image
+          aspectRatio={1.5}
+          onLoad={[Function]}
+          source={
+            Object {
+              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320",
+            }
           }
-        }
-        style={undefined}
-      >
+          style={undefined}
+        />
         <View
           onLayout={[Function]}
           style={
@@ -276,7 +277,13 @@ exports[`renders vertical by default 1`] = `
               Object {
                 "flex": 1,
               },
-              null,
+              Object {
+                "height": "100%",
+                "left": 0,
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              },
             ]
           }
         >
@@ -322,7 +329,7 @@ exports[`renders vertical by default 1`] = `
             />
           </View>
         </View>
-      </Image>
+      </View>
     </View>
     <View
       style={

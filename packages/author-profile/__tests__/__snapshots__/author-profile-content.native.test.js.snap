@@ -318,25 +318,26 @@ exports[`renders profile content 1`] = `
               }
             }
           >
-            <Image
-              aspectRatio={1}
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200",
+            <View>
+              <Image
+                aspectRatio={1}
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200",
+                  }
                 }
-              }
-              style={
-                Object {
-                  "borderColor": "#FFF",
-                  "borderRadius": 50,
-                  "borderWidth": 5,
-                  "height": 100,
-                  "overflow": "hidden",
-                  "width": 100,
+                style={
+                  Object {
+                    "borderColor": "#FFF",
+                    "borderRadius": 50,
+                    "borderWidth": 5,
+                    "height": 100,
+                    "overflow": "hidden",
+                    "width": 100,
+                  }
                 }
-              }
-            >
+              />
               <View
                 onLayout={[Function]}
                 style={
@@ -345,12 +346,11 @@ exports[`renders profile content 1`] = `
                       "flex": 1,
                     },
                     Object {
-                      "borderColor": "#FFF",
-                      "borderRadius": 50,
-                      "borderWidth": 5,
-                      "height": 100,
-                      "overflow": "hidden",
-                      "width": 100,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "top": 0,
+                      "width": "100%",
                     },
                   ]
                 }
@@ -397,7 +397,7 @@ exports[`renders profile content 1`] = `
                   />
                 </View>
               </View>
-            </Image>
+            </View>
           </View>
         </View>
         <View
@@ -535,16 +535,17 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <Image
-                aspectRatio={1.5}
-                onLoad={[Function]}
-                source={
-                  Object {
-                    "uri": "",
+              <View>
+                <Image
+                  aspectRatio={1.5}
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "",
+                    }
                   }
-                }
-                style={undefined}
-              >
+                  style={undefined}
+                />
                 <View
                   onLayout={[Function]}
                   style={
@@ -552,7 +553,13 @@ exports[`renders profile content 1`] = `
                       Object {
                         "flex": 1,
                       },
-                      null,
+                      Object {
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "width": "100%",
+                      },
                     ]
                   }
                 >
@@ -598,7 +605,7 @@ exports[`renders profile content 1`] = `
                     />
                   </View>
                 </View>
-              </Image>
+              </View>
             </View>
             <View
               style={
@@ -863,16 +870,17 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <Image
-                aspectRatio={1.5}
-                onLoad={[Function]}
-                source={
-                  Object {
-                    "uri": "",
+              <View>
+                <Image
+                  aspectRatio={1.5}
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "",
+                    }
                   }
-                }
-                style={undefined}
-              >
+                  style={undefined}
+                />
                 <View
                   onLayout={[Function]}
                   style={
@@ -880,7 +888,13 @@ exports[`renders profile content 1`] = `
                       Object {
                         "flex": 1,
                       },
-                      null,
+                      Object {
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "width": "100%",
+                      },
                     ]
                   }
                 >
@@ -926,7 +940,7 @@ exports[`renders profile content 1`] = `
                     />
                   </View>
                 </View>
-              </Image>
+              </View>
             </View>
             <View
               style={
@@ -1191,16 +1205,17 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <Image
-                aspectRatio={1.5}
-                onLoad={[Function]}
-                source={
-                  Object {
-                    "uri": "",
+              <View>
+                <Image
+                  aspectRatio={1.5}
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "",
+                    }
                   }
-                }
-                style={undefined}
-              >
+                  style={undefined}
+                />
                 <View
                   onLayout={[Function]}
                   style={
@@ -1208,7 +1223,13 @@ exports[`renders profile content 1`] = `
                       Object {
                         "flex": 1,
                       },
-                      null,
+                      Object {
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "width": "100%",
+                      },
                     ]
                   }
                 >
@@ -1254,7 +1275,7 @@ exports[`renders profile content 1`] = `
                     />
                   </View>
                 </View>
-              </Image>
+              </View>
             </View>
             <View
               style={
@@ -1519,16 +1540,17 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <Image
-                aspectRatio={1.5}
-                onLoad={[Function]}
-                source={
-                  Object {
-                    "uri": "",
+              <View>
+                <Image
+                  aspectRatio={1.5}
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "",
+                    }
                   }
-                }
-                style={undefined}
-              >
+                  style={undefined}
+                />
                 <View
                   onLayout={[Function]}
                   style={
@@ -1536,7 +1558,13 @@ exports[`renders profile content 1`] = `
                       Object {
                         "flex": 1,
                       },
-                      null,
+                      Object {
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "width": "100%",
+                      },
                     ]
                   }
                 >
@@ -1582,7 +1610,7 @@ exports[`renders profile content 1`] = `
                     />
                   </View>
                 </View>
-              </Image>
+              </View>
             </View>
             <View
               style={
@@ -1847,16 +1875,17 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <Image
-                aspectRatio={1.5}
-                onLoad={[Function]}
-                source={
-                  Object {
-                    "uri": "",
+              <View>
+                <Image
+                  aspectRatio={1.5}
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "",
+                    }
                   }
-                }
-                style={undefined}
-              >
+                  style={undefined}
+                />
                 <View
                   onLayout={[Function]}
                   style={
@@ -1864,7 +1893,13 @@ exports[`renders profile content 1`] = `
                       Object {
                         "flex": 1,
                       },
-                      null,
+                      Object {
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "width": "100%",
+                      },
                     ]
                   }
                 >
@@ -1910,7 +1945,7 @@ exports[`renders profile content 1`] = `
                     />
                   </View>
                 </View>
-              </Image>
+              </View>
             </View>
             <View
               style={
@@ -2175,16 +2210,17 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <Image
-                aspectRatio={1.5}
-                onLoad={[Function]}
-                source={
-                  Object {
-                    "uri": "",
+              <View>
+                <Image
+                  aspectRatio={1.5}
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "",
+                    }
                   }
-                }
-                style={undefined}
-              >
+                  style={undefined}
+                />
                 <View
                   onLayout={[Function]}
                   style={
@@ -2192,7 +2228,13 @@ exports[`renders profile content 1`] = `
                       Object {
                         "flex": 1,
                       },
-                      null,
+                      Object {
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "width": "100%",
+                      },
                     ]
                   }
                 >
@@ -2238,7 +2280,7 @@ exports[`renders profile content 1`] = `
                     />
                   </View>
                 </View>
-              </Image>
+              </View>
             </View>
             <View
               style={
@@ -2503,16 +2545,17 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <Image
-                aspectRatio={1.5}
-                onLoad={[Function]}
-                source={
-                  Object {
-                    "uri": "",
+              <View>
+                <Image
+                  aspectRatio={1.5}
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "",
+                    }
                   }
-                }
-                style={undefined}
-              >
+                  style={undefined}
+                />
                 <View
                   onLayout={[Function]}
                   style={
@@ -2520,7 +2563,13 @@ exports[`renders profile content 1`] = `
                       Object {
                         "flex": 1,
                       },
-                      null,
+                      Object {
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "width": "100%",
+                      },
                     ]
                   }
                 >
@@ -2566,7 +2615,7 @@ exports[`renders profile content 1`] = `
                     />
                   </View>
                 </View>
-              </Image>
+              </View>
             </View>
             <View
               style={
@@ -2831,16 +2880,17 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <Image
-                aspectRatio={1.5}
-                onLoad={[Function]}
-                source={
-                  Object {
-                    "uri": "",
+              <View>
+                <Image
+                  aspectRatio={1.5}
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "",
+                    }
                   }
-                }
-                style={undefined}
-              >
+                  style={undefined}
+                />
                 <View
                   onLayout={[Function]}
                   style={
@@ -2848,7 +2898,13 @@ exports[`renders profile content 1`] = `
                       Object {
                         "flex": 1,
                       },
-                      null,
+                      Object {
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "width": "100%",
+                      },
                     ]
                   }
                 >
@@ -2894,7 +2950,7 @@ exports[`renders profile content 1`] = `
                     />
                   </View>
                 </View>
-              </Image>
+              </View>
             </View>
             <View
               style={
@@ -3159,16 +3215,17 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <Image
-                aspectRatio={1.5}
-                onLoad={[Function]}
-                source={
-                  Object {
-                    "uri": "",
+              <View>
+                <Image
+                  aspectRatio={1.5}
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "",
+                    }
                   }
-                }
-                style={undefined}
-              >
+                  style={undefined}
+                />
                 <View
                   onLayout={[Function]}
                   style={
@@ -3176,7 +3233,13 @@ exports[`renders profile content 1`] = `
                       Object {
                         "flex": 1,
                       },
-                      null,
+                      Object {
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "width": "100%",
+                      },
                     ]
                   }
                 >
@@ -3222,7 +3285,7 @@ exports[`renders profile content 1`] = `
                     />
                   </View>
                 </View>
-              </Image>
+              </View>
             </View>
             <View
               style={
@@ -3487,16 +3550,17 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              <Image
-                aspectRatio={1.5}
-                onLoad={[Function]}
-                source={
-                  Object {
-                    "uri": "",
+              <View>
+                <Image
+                  aspectRatio={1.5}
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "",
+                    }
                   }
-                }
-                style={undefined}
-              >
+                  style={undefined}
+                />
                 <View
                   onLayout={[Function]}
                   style={
@@ -3504,7 +3568,13 @@ exports[`renders profile content 1`] = `
                       Object {
                         "flex": 1,
                       },
-                      null,
+                      Object {
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "width": "100%",
+                      },
                     ]
                   }
                 >
@@ -3550,7 +3620,7 @@ exports[`renders profile content 1`] = `
                     />
                   </View>
                 </View>
-              </Image>
+              </View>
             </View>
             <View
               style={
@@ -4360,16 +4430,17 @@ exports[`renders profile content component 1`] = `
                   ]
                 }
               >
-                <Image
-                  aspectRatio={1.5}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                <View>
+                  <Image
+                    aspectRatio={1.5}
+                    onLoad={[Function]}
+                    source={
+                      Object {
+                        "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                      }
                     }
-                  }
-                  style={undefined}
-                >
+                    style={undefined}
+                  />
                   <View
                     onLayout={[Function]}
                     style={
@@ -4377,7 +4448,13 @@ exports[`renders profile content component 1`] = `
                         Object {
                           "flex": 1,
                         },
-                        null,
+                        Object {
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "width": "100%",
+                        },
                       ]
                     }
                   >
@@ -4423,7 +4500,7 @@ exports[`renders profile content component 1`] = `
                       />
                     </View>
                   </View>
-                </Image>
+                </View>
               </View>
               <View
                 style={
@@ -4624,16 +4701,17 @@ exports[`renders profile content component 1`] = `
                   ]
                 }
               >
-                <Image
-                  aspectRatio={1.5}
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2bb30674-b008-11e7-8f75-2b6f1159f66f.jpg?crop=4815%2C2708%2C85%2C1833",
+                <View>
+                  <Image
+                    aspectRatio={1.5}
+                    onLoad={[Function]}
+                    source={
+                      Object {
+                        "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2bb30674-b008-11e7-8f75-2b6f1159f66f.jpg?crop=4815%2C2708%2C85%2C1833",
+                      }
                     }
-                  }
-                  style={undefined}
-                >
+                    style={undefined}
+                  />
                   <View
                     onLayout={[Function]}
                     style={
@@ -4641,7 +4719,13 @@ exports[`renders profile content component 1`] = `
                         Object {
                           "flex": 1,
                         },
-                        null,
+                        Object {
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "width": "100%",
+                        },
                       ]
                     }
                   >
@@ -4687,7 +4771,7 @@ exports[`renders profile content component 1`] = `
                       />
                     </View>
                   </View>
-                </Image>
+                </View>
               </View>
               <View
                 style={
@@ -5221,16 +5305,17 @@ exports[`renders profile content item component 1`] = `
             ]
           }
         >
-          <Image
-            aspectRatio={1.5}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+          <View>
+            <Image
+              aspectRatio={1.5}
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                }
               }
-            }
-            style={undefined}
-          >
+              style={undefined}
+            />
             <View
               onLayout={[Function]}
               style={
@@ -5238,7 +5323,13 @@ exports[`renders profile content item component 1`] = `
                   Object {
                     "flex": 1,
                   },
-                  null,
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 0,
+                    "width": "100%",
+                  },
                 ]
               }
             >
@@ -5284,7 +5375,7 @@ exports[`renders profile content item component 1`] = `
                 />
               </View>
             </View>
-          </Image>
+          </View>
         </View>
         <View
           style={
@@ -5463,16 +5554,17 @@ exports[`renders profile content item component with no image  1`] = `
             ]
           }
         >
-          <Image
-            aspectRatio={1.5}
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+          <View>
+            <Image
+              aspectRatio={1.5}
+              onLoad={[Function]}
+              source={
+                Object {
+                  "uri": "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0",
+                }
               }
-            }
-            style={undefined}
-          >
+              style={undefined}
+            />
             <View
               onLayout={[Function]}
               style={
@@ -5480,7 +5572,13 @@ exports[`renders profile content item component with no image  1`] = `
                   Object {
                     "flex": 1,
                   },
-                  null,
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 0,
+                    "width": "100%",
+                  },
                 ]
               }
             >
@@ -5526,7 +5624,7 @@ exports[`renders profile content item component with no image  1`] = `
                 />
               </View>
             </View>
-          </Image>
+          </View>
         </View>
         <View
           style={

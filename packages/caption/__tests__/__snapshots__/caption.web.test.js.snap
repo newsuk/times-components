@@ -2,16 +2,17 @@
 
 exports[`renders an image with a caption 1`] = `
 <View>
-  <Image
-    aspectRatio={1.7777777777777777}
-    onLoad={[Function]}
-    source={
-      Object {
-        "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7d2fd06c-a460-11e7-8955-1ad2a9a7928d.jpg?crop=1500%2C844%2C0%2C78&resize=685",
+  <View>
+    <Image
+      aspectRatio={1.7777777777777777}
+      onLoad={[Function]}
+      source={
+        Object {
+          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7d2fd06c-a460-11e7-8955-1ad2a9a7928d.jpg?crop=1500%2C844%2C0%2C78&resize=685",
+        }
       }
-    }
-    style={undefined}
-  >
+      style={undefined}
+    />
     <View
       onLayout={[Function]}
       style={
@@ -19,7 +20,13 @@ exports[`renders an image with a caption 1`] = `
           Object {
             "flex": 1,
           },
-          null,
+          Object {
+            "height": "100%",
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+            "width": "100%",
+          },
         ]
       }
     >
@@ -65,7 +72,7 @@ exports[`renders an image with a caption 1`] = `
         />
       </View>
     </View>
-  </Image>
+  </View>
   <View
     style={
       Array [
