@@ -571,7 +571,7 @@ exports[`renders primary image correctly 1`] = `
   >
     <View>
       <Image
-        aspectRatio={1.7777777777777777}
+        aspectRatio={1.25}
         onLoad={[Function]}
         source={
           Object {
@@ -859,7 +859,7 @@ exports[`renders secondary image correctly 1`] = `
             ]
           }
         >
-          TIMES PHOTOGRAPHER RICHARD POHLE  
+          TIMES PHOTOGRAPHER RICHARD POHLE
         </Text>
       </View>
     </View>

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.10.6"></a>
+## [0.10.6](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.10.5...@times-components/pagination@0.10.6) (2017-11-08)
+
+
+
+
+<a name="0.10.5"></a>
+## [0.10.5](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.10.4...@times-components/pagination@0.10.5) (2017-11-08)
+
+
+
+
 <a name="0.10.4"></a>
 ## [0.10.4](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.10.3...@times-components/pagination@0.10.4) (2017-11-07)
 

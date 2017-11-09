@@ -5846,7 +5846,7 @@ exports[`Article test on ios renders full article 1`] = `
         >
           <View>
             <Image
-              aspectRatio={1.7777777777777777}
+              aspectRatio={1.25}
               onLoad={[Function]}
               source={
                 Object {
