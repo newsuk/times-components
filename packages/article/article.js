@@ -123,18 +123,16 @@ class ArticlePage extends React.Component {
     if (isLoading) {
       return <ArticleLoading />;
     }
-
     const ArticleListView = (
       <FlatList
       // <ListView
-      //   testID="listView"
+        // testID="listView"
+        testID="scroll-view-article" // TODO
       //   dataSource={this.state.dataSource}
       //   renderRow={ArticlePage.renderRow}
-        // keyExtractor={item => item.id} // TODO
+        keyExtractor={item => item.type + item.index || item.type}
         data={this.state.dataSource}
-        renderItem={({item, index}) => {
-          return (<Text>some text</Text>);
-        }}
+        renderItem={({ item }) => ArticlePage.renderRow(item)}
         initialListSize={listViewSize}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
         pageSize={listViewPageSize}
