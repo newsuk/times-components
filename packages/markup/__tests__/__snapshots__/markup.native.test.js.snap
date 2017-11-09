@@ -10,7 +10,6 @@ exports[`Markup Native renders a mixture of tags 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
-      disabled={false}
       ellipsizeMode="tail"
       href="http://www.google.com"
     >
@@ -21,7 +20,6 @@ exports[`Markup Native renders a mixture of tags 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
-      disabled={false}
       ellipsizeMode="tail"
       style={
         Object {
@@ -36,7 +34,6 @@ exports[`Markup Native renders a mixture of tags 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
-      disabled={false}
       ellipsizeMode="tail"
       style={
         Object {
@@ -51,7 +48,6 @@ exports[`Markup Native renders a mixture of tags 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
-      disabled={false}
       ellipsizeMode="tail"
     >
       some other text here
@@ -64,7 +60,6 @@ exports[`Markup Native renders a single paragraph 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
-  disabled={false}
   ellipsizeMode="tail"
 >
   This is the text for paragraph one
@@ -75,7 +70,6 @@ exports[`Markup Native renders multiple children 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
-  disabled={false}
   ellipsizeMode="tail"
   style={
     Object {
@@ -86,7 +80,6 @@ exports[`Markup Native renders multiple children 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
   >
     This is the text for paragraph one
@@ -94,7 +87,6 @@ exports[`Markup Native renders multiple children 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
   >
     This is the text for paragraph two
@@ -107,7 +99,6 @@ exports[`Markup Native renders multiple paragraphs 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
   >
     This is the text for paragraph one
@@ -115,7 +106,6 @@ exports[`Markup Native renders multiple paragraphs 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
   >
     This is the text for paragraph two
@@ -128,7 +118,6 @@ exports[`Markup Native renders multiple paragraphs with ads 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
   >
     This is the text for paragraph one
@@ -136,7 +125,6 @@ exports[`Markup Native renders multiple paragraphs with ads 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
   >
     This is the text for paragraph two
@@ -144,7 +132,6 @@ exports[`Markup Native renders multiple paragraphs with ads 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
   >
     This is the text for paragraph two
@@ -152,7 +139,6 @@ exports[`Markup Native renders multiple paragraphs with ads 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
   >
     This is the text for paragraph two
@@ -160,7 +146,6 @@ exports[`Markup Native renders multiple paragraphs with ads 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
   >
     This is the text for paragraph two
@@ -353,7 +338,6 @@ exports[`Markup Native renders multiple paragraphs with ads 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -381,7 +365,6 @@ exports[`Markup Native renders multiple paragraphs with ads 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
   >
     This is the text for paragraph two
@@ -389,7 +372,6 @@ exports[`Markup Native renders multiple paragraphs with ads 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
   >
     This is the text for paragraph two
@@ -397,7 +379,6 @@ exports[`Markup Native renders multiple paragraphs with ads 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
   >
     This is the text for paragraph two
@@ -405,7 +386,6 @@ exports[`Markup Native renders multiple paragraphs with ads 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
   >
     This is the text for paragraph two
@@ -423,7 +403,6 @@ exports[`Markup Native renders tags nested within blocks 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
-        disabled={false}
         ellipsizeMode="tail"
       >
         and in here
@@ -439,7 +418,6 @@ exports[`Markup Native renders the anchor tag 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
-  disabled={false}
   ellipsizeMode="tail"
   href="www.google.com"
 >
@@ -451,7 +429,6 @@ exports[`Markup Native renders the bold tag 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
-  disabled={false}
   ellipsizeMode="tail"
   style={
     Object {
@@ -467,7 +444,6 @@ exports[`Markup Native renders the italic tag 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
-  disabled={false}
   ellipsizeMode="tail"
   style={
     Object {
@@ -483,7 +459,6 @@ exports[`Markup Native renders the line break tag 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
-  disabled={false}
   ellipsizeMode="tail"
 >
   
@@ -495,7 +470,6 @@ exports[`Markup Native renders the span tag 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
-  disabled={false}
   ellipsizeMode="tail"
 >
   some other text here
@@ -506,14 +480,12 @@ exports[`Markup Native renders wrapped tags 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
-  disabled={false}
   ellipsizeMode="tail"
 >
   Camilla Long is 
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
     style={
       Object {
@@ -527,7 +499,6 @@ exports[`Markup Native renders wrapped tags 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
     style={
       Object {

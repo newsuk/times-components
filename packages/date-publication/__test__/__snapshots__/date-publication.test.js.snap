@@ -4,7 +4,6 @@ exports[`Date Publication test renders a DatePublication component with content 
 <Text
   accessible={true}
   allowFontScaling={true}
-  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -28,7 +27,6 @@ exports[`Date Publication test renders a DatePublication component with red font
 <Text
   accessible={true}
   allowFontScaling={true}
-  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [

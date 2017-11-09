@@ -5,11 +5,7 @@ import { Button, StyleSheet, View } from "react-native";
 import { action } from "@storybook/addon-actions";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
-import {
-  withTrackRender,
-  withTrackingContext,
-  withTrackEvents
-} from "./tracking";
+import { withTrackingContext, withTrackEvents } from "./tracking";
 
 const storybookReporter = action("analytics-event");
 
@@ -44,43 +40,33 @@ BoxWithButtons.propTypes = {
   onPress: PropTypes.func.isRequired
 };
 
-storiesOf("Tracking", module)
-  .add("Render tracking", () => {
-    const BoxWithTrackingAndContext = withTrackingContext(
-      withTrackRender(Box, {
+const BoxWithTrackingContext = withTrackingContext(Box, {
+  trackingObject: "TrackRenderStory",
+  getAttrs: props => ({ color: props.color })
+});
+
+const BoxWithPressTrackingAndContext = withTrackingContext(
+  withTrackEvents(BoxWithButtons, {
+    analyticsEvents: [
+      {
+        eventName: "onPress",
+        actionName: "Pressed",
         trackingName: "ColoredBox",
-        getAttrs: props => ({ color: props.color })
-      }),
-      { trackingObject: "TrackRenderStory" }
-    );
+        getAttrs: (props, eventArgs) => ({ button: eventArgs[0] })
+      }
+    ]
+  }),
+  { trackingObject: "TrackRenderStory" }
+);
 
-    return (
-      <BoxWithTrackingAndContext
-        analyticsStream={storybookReporter}
-        color="red"
-      />
-    );
-  })
-  .add("Event tracking", () => {
-    const BoxWithPressTrackingAndContext = withTrackingContext(
-      withTrackEvents(BoxWithButtons, {
-        analyticsEvents: [
-          {
-            eventName: "onPress",
-            actionName: "Pressed",
-            trackingName: "ColoredBox",
-            getAttrs: (props, eventArgs) => ({ button: eventArgs[0] })
-          }
-        ]
-      }),
-      { trackingObject: "TrackRenderStory" }
-    );
-
-    return (
-      <BoxWithPressTrackingAndContext
-        analyticsStream={storybookReporter}
-        color="red"
-        onPress={() => {}}
-      />
-    );
-  });
+storiesOf("Tracking", module)
+  .add("Page tracking", () => (
+    <BoxWithTrackingContext analyticsStream={storybookReporter} color="red" />
+  ))
+  .add("Event tracking", () => (
+    <BoxWithPressTrackingAndContext
+      analyticsStream={storybookReporter}
+      color="red"
+      onPress={() => {}}
+    />
+  ));

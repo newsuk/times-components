@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tracking",
-  "version": "0.2.2",
+  "version": "0.2.5",
   "main": "tracking",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -54,7 +54,7 @@
     "prettier": "1.7.0",
     "react": "16.0.0",
     "react-dom": "16.0.0",
-    "react-native": "0.49.3",
+    "react-native": "0.50.1",
     "react-test-renderer": "16.0.0",
     "webpack": "3.3.0"
   },
@@ -68,7 +68,7 @@
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16",
-    "react-native": ">=0.49"
+    "react-native": ">=0.50"
   },
   "publishConfig": {
     "access": "public"

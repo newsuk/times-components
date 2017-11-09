@@ -23,7 +23,6 @@ ShallowWrapper {
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -69,7 +68,6 @@ ShallowWrapper {
           "accessible": true,
           "allowFontScaling": true,
           "children": "a label",
-          "disabled": false,
           "ellipsizeMode": "tail",
           "style": Object {
             "color": "#006699",
@@ -140,7 +138,6 @@ ShallowWrapper {
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -186,7 +183,6 @@ ShallowWrapper {
             "accessible": true,
             "allowFontScaling": true,
             "children": "a label",
-            "disabled": false,
             "ellipsizeMode": "tail",
             "style": Object {
               "color": "#006699",
@@ -294,7 +290,6 @@ ShallowWrapper {
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -369,7 +364,6 @@ ShallowWrapper {
           "accessible": true,
           "allowFontScaling": true,
           "children": "a label",
-          "disabled": false,
           "ellipsizeMode": "tail",
           "style": Object {
             "color": "#006699",
@@ -410,7 +404,6 @@ ShallowWrapper {
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -485,7 +478,6 @@ ShallowWrapper {
             "accessible": true,
             "allowFontScaling": true,
             "children": "a label",
-            "disabled": false,
             "ellipsizeMode": "tail",
             "style": Object {
               "color": "#006699",

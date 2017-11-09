@@ -4,7 +4,6 @@ import getDisplayName from "react-display-name";
 import _get from "lodash.get";
 import hoistNonReactStatic from "hoist-non-react-statics";
 import trackingContextTypes from "./tracking-context-types";
-import withTrackRender from "./track-render";
 import resolveAttrs from "./resolve-attrs";
 
 const withTrackingContext = (
@@ -16,7 +15,7 @@ const withTrackingContext = (
   class WithTrackingContext extends Component {
     constructor(props, context) {
       super(props, context);
-
+      this.fireAnalyticsEvent = this.fireAnalyticsEvent.bind(this);
       if (this.isRootTrackingContext()) {
         if (!trackingObject) {
           throw new TypeError(
@@ -32,32 +31,42 @@ const withTrackingContext = (
     }
 
     getChildContext() {
-      const self = this;
-
       return {
         tracking: {
-          analytics({ object, component, action, attrs }) {
-            const decoratedEvent = {
-              component,
-              action,
-              attrs: {
-                ...resolveAttrs(getAttrs, self.props),
-                ...attrs
-              }
-            };
-
-            if (object || trackingObject) {
-              decoratedEvent.object = object || trackingObject;
-            }
-
-            if (self.isRootTrackingContext()) {
-              decoratedEvent.attrs.eventTime = new Date().toISOString();
-            }
-
-            self.analyticsStream(decoratedEvent);
-          }
+          analytics: this.fireAnalyticsEvent
         }
       };
+    }
+
+    componentDidMount() {
+      if (this.isRootTrackingContext()) {
+        this.fireAnalyticsEvent({
+          component: "Page",
+          action: "Viewed",
+          attrs: resolveAttrs(getAttrs, this.props)
+        });
+      }
+    }
+
+    fireAnalyticsEvent({ object, component, action, attrs }) {
+      const decoratedEvent = {
+        component,
+        action,
+        attrs: {
+          ...resolveAttrs(getAttrs, this.props),
+          ...attrs
+        }
+      };
+
+      if (object || trackingObject) {
+        decoratedEvent.object = object || trackingObject;
+      }
+
+      if (this.isRootTrackingContext()) {
+        decoratedEvent.attrs.eventTime = new Date().toISOString();
+      }
+
+      this.analyticsStream(decoratedEvent);
     }
 
     isRootTrackingContext() {
@@ -71,14 +80,7 @@ const withTrackingContext = (
     }
 
     render() {
-      const Wrapped = this.isRootTrackingContext()
-        ? withTrackRender(WrappedComponent, {
-            trackingName: "Page",
-            actionName: "Viewed"
-          })
-        : WrappedComponent;
-
-      return <Wrapped {...this.props} />;
+      return <WrappedComponent {...this.props} />;
     }
   }
 

@@ -45,7 +45,6 @@ ShallowWrapper {
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -115,7 +114,6 @@ ShallowWrapper {
           "children": <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -151,7 +149,6 @@ ShallowWrapper {
             "accessible": true,
             "allowFontScaling": true,
             "children": "Showing 1 - 20 of 21 results",
-            "disabled": false,
             "ellipsizeMode": "tail",
             "style": Array [
               Object {
@@ -307,7 +304,6 @@ ShallowWrapper {
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -377,7 +373,6 @@ ShallowWrapper {
             "children": <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -413,7 +408,6 @@ ShallowWrapper {
               "accessible": true,
               "allowFontScaling": true,
               "children": "Showing 1 - 20 of 21 results",
-              "disabled": false,
               "ellipsizeMode": "tail",
               "style": Array [
                 Object {
@@ -599,7 +593,6 @@ ShallowWrapper {
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -685,7 +678,6 @@ ShallowWrapper {
           "children": <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -721,7 +713,6 @@ ShallowWrapper {
             "accessible": true,
             "allowFontScaling": true,
             "children": "Showing 21 - 40 of 41 results",
-            "disabled": false,
             "ellipsizeMode": "tail",
             "style": Array [
               Object {
@@ -936,7 +927,6 @@ ShallowWrapper {
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -1022,7 +1012,6 @@ ShallowWrapper {
             "children": <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -1058,7 +1047,6 @@ ShallowWrapper {
               "accessible": true,
               "allowFontScaling": true,
               "children": "Showing 21 - 40 of 41 results",
-              "disabled": false,
               "ellipsizeMode": "tail",
               "style": Array [
                 Object {
@@ -1303,7 +1291,6 @@ ShallowWrapper {
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -1373,7 +1360,6 @@ ShallowWrapper {
           "children": <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -1409,7 +1395,6 @@ ShallowWrapper {
             "accessible": true,
             "allowFontScaling": true,
             "children": "Showing 41 - 41 of 41 results",
-            "disabled": false,
             "ellipsizeMode": "tail",
             "style": Array [
               Object {
@@ -1565,7 +1550,6 @@ ShallowWrapper {
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -1635,7 +1619,6 @@ ShallowWrapper {
             "children": <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -1671,7 +1654,6 @@ ShallowWrapper {
               "accessible": true,
               "allowFontScaling": true,
               "children": "Showing 41 - 41 of 41 results",
-              "disabled": false,
               "ellipsizeMode": "tail",
               "style": Array [
                 Object {
@@ -1857,7 +1839,6 @@ ShallowWrapper {
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -1927,7 +1908,6 @@ ShallowWrapper {
           "children": <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -1963,7 +1943,6 @@ ShallowWrapper {
             "accessible": true,
             "allowFontScaling": true,
             "children": "Showing 1 - 20 of 41 results",
-            "disabled": false,
             "ellipsizeMode": "tail",
             "style": Array [
               Object {
@@ -2119,7 +2098,6 @@ ShallowWrapper {
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -2189,7 +2167,6 @@ ShallowWrapper {
             "children": <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -2225,7 +2202,6 @@ ShallowWrapper {
               "accessible": true,
               "allowFontScaling": true,
               "children": "Showing 1 - 20 of 41 results",
-              "disabled": false,
               "ellipsizeMode": "tail",
               "style": Array [
                 Object {

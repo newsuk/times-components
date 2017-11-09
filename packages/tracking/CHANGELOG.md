@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.5"></a>
+## [0.2.5](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.2.4...@times-components/tracking@0.2.5) (2017-11-09)
+
+
+
+
+<a name="0.2.4"></a>
+## [0.2.4](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.2.3...@times-components/tracking@0.2.4) (2017-11-08)
+
+
+
+
+<a name="0.2.3"></a>
+## [0.2.3](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.2.2...@times-components/tracking@0.2.3) (2017-11-08)
+
+
+### Bug Fixes
+
+* prevent tracked component from unmounting when HOC re-renders ([#362](https://github.com/newsuk/times-components/issues/362)) ([7dfdaa3](https://github.com/newsuk/times-components/commit/7dfdaa3))
+
+
+
+
 <a name="0.2.2"></a>
 ## 0.2.2 (2017-11-07)
 
