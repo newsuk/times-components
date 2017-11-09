@@ -9,7 +9,7 @@ const ArticleContent = ({
   pageSize
 }) => (
   <FlatList
-    testID="scroll-view-article" // TODO
+    testID="scroll-view-article"
     keyExtractor={item => item.type + item.index || item.type}
     data={data}
     renderItem={({ item }) => renderRow(item)}
