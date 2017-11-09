@@ -61,7 +61,7 @@
     "mkdirp": "0.5.1",
     "nock": "9.0.14",
     "node-fetch": "1.7.2",
-    "prettier": "1.7.0",
+    "prettier": "1.8.2",
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "react-native": "0.49.3",
