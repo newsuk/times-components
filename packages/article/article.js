@@ -1,10 +1,12 @@
 import React from "react";
 import { Platform, Text, View, ListView } from "react-native";
 import PropTypes from "prop-types";
+import get from "lodash.get";
 import { renderTrees } from "@times-components/markup";
 import Image from "@times-components/image";
 import ArticleImage from "@times-components/article-image";
 import { AdComposer } from "@times-components/ad";
+import { withTrackingContext } from "@times-components/tracking";
 
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
@@ -161,4 +163,11 @@ ArticlePage.defaultProps = {
   error: null
 };
 
-export default ArticlePage;
+export default withTrackingContext(ArticlePage, {
+  trackingObject: "Article",
+  getAttrs: ({ article } = {}) => ({
+    byline: get(article, "byline[0].children[0].attributes.value", ""),
+    headline: get(article, "headline", ""),
+    publishedTime: get(article, "publishedTime", "")
+  })
+});
