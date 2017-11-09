@@ -2414,7 +2414,7 @@ exports[`Article test on web renders full article 1`] = `
                 Object {
                   "height": 0,
                   "overflow": "hidden",
-                  "paddingBottom": "56.25%",
+                  "paddingBottom": "80%",
                 }
               }
             >
