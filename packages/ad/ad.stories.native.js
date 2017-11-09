@@ -1,7 +1,7 @@
 import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
-import { Text, ScrollView } from "react-native";
+import { Text, ScrollView, View } from "react-native";
 
 import Ad from "./ad";
 import Placeholder from "./placeholder";
@@ -66,5 +66,7 @@ export default () =>
       </ScrollView>
     ))
     .add("Placeholder (300x250 - MPU)", () => (
-      <Placeholder width={300} height={250} />
+      <View style={{ width: "100%", height: "100%" }}>
+        <Placeholder width={300} height={250} />
+      </View>
     ));
