@@ -121,7 +121,7 @@ storiesOf("BrightcoveVideo", module)
       width={320}
       height={200}
       policyKey={policyKey}
-      poster={{ uri: "http://i.imgur.com/Pb5osPZ.jpg" }}
+      poster={{ uri: posterImageURI }}
       videoId="1532562858001"
       accountId={accountId}
     />
