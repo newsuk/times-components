@@ -172,4 +172,3 @@ export default withTrackingContext(ArticlePage, {
     publishedTime: get(article, "publishedTime", "")
   })
 });
-export default ArticlePage;

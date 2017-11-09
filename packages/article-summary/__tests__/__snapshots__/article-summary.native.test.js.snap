@@ -70,6 +70,7 @@ exports[`renders an article-summary component with content 1`] = `
     </Text>
   </Text>
   <Text
+    accessibilityLabel="datePublication"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
@@ -168,7 +169,7 @@ exports[`renders an article-summary component with content including line breaks
         ellipsizeMode="tail"
       >
         
-
+        
       </Text>
       ITV
       <Text
@@ -177,7 +178,7 @@ exports[`renders an article-summary component with content including line breaks
         ellipsizeMode="tail"
       >
         
-
+        
       </Text>
       ★★★★☆
     </Text>
@@ -205,7 +206,7 @@ exports[`renders an article-summary component with content including line breaks
         ellipsizeMode="tail"
       >
         
-
+        
       </Text>
       BBC Two
       <Text
@@ -214,7 +215,7 @@ exports[`renders an article-summary component with content including line breaks
         ellipsizeMode="tail"
       >
         
-
+        
       </Text>
       ★★★☆☆
     </Text>
@@ -228,6 +229,7 @@ exports[`renders an article-summary component with content including line breaks
     </Text>
   </Text>
   <Text
+    accessibilityLabel="datePublication"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
@@ -327,6 +329,7 @@ exports[`renders an article-summary component with empty content at the end trim
     </Text>
   </Text>
   <Text
+    accessibilityLabel="datePublication"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
@@ -402,6 +405,7 @@ exports[`renders an article-summary component with headline and no content 1`] =
     }
   />
   <Text
+    accessibilityLabel="datePublication"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
