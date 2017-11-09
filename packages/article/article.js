@@ -10,7 +10,7 @@ import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
 
 import listViewDataHelper from "./data-helper";
-import styles from "./styles/article-style";
+import styles from "./styles/body";
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
 

@@ -239,7 +239,7 @@ exports[`Article test on ios renders article no flags 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#D0CECE",
+            "borderBottomColor": "#d0cece",
             "borderBottomWidth": 0.5,
             "marginBottom": 20,
           }
@@ -1083,7 +1083,7 @@ exports[`Article test on ios renders article no label 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#D0CECE",
+            "borderBottomColor": "#d0cece",
             "borderBottomWidth": 0.5,
             "marginBottom": 20,
           }
@@ -1788,7 +1788,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#D0CECE",
+            "borderBottomColor": "#d0cece",
             "borderBottomWidth": 0.5,
             "marginBottom": 20,
           }
@@ -2473,7 +2473,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
       <View
         style={
           Object {
-            "borderBottomColor": "#D0CECE",
+            "borderBottomColor": "#d0cece",
             "borderBottomWidth": 0.5,
             "marginBottom": 20,
           }
@@ -3329,7 +3329,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#D0CECE",
+            "borderBottomColor": "#d0cece",
             "borderBottomWidth": 0.5,
             "marginBottom": 20,
           }
@@ -4046,7 +4046,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#D0CECE",
+            "borderBottomColor": "#d0cece",
             "borderBottomWidth": 0.5,
             "marginBottom": 20,
           }
@@ -4870,7 +4870,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#D0CECE",
+            "borderBottomColor": "#d0cece",
             "borderBottomWidth": 0.5,
             "marginBottom": 20,
           }
@@ -5746,7 +5746,7 @@ exports[`Article test on ios renders full article 1`] = `
       <View
         style={
           Object {
-            "borderBottomColor": "#D0CECE",
+            "borderBottomColor": "#d0cece",
             "borderBottomWidth": 0.5,
             "marginBottom": 20,
           }

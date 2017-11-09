@@ -1,19 +1,15 @@
-import constants from "../const";
-
-const { fontFamilyStandFirst, colourHeadline, colourText } = constants;
-
 const sharedStyles = {
   articleHeadLineText: {
     fontSize: 30,
     lineHeight: 32,
-    color: colourHeadline,
+    color: "#000000",
     marginBottom: 7
   },
   standFirst: {
     fontSize: 21,
     lineHeight: 26,
-    fontFamily: fontFamilyStandFirst,
-    color: colourText,
+    fontFamily: "TimesModern-Regular",
+    color: "#333333",
     paddingBottom: 9
   }
 };

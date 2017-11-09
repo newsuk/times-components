@@ -1,3 +1,5 @@
+import { StyleSheet } from "react-native";
+import globalStyle from "../article-global-style";
 import sharedStyles from "./shared";
 
 const androidStyles = {
@@ -12,4 +14,9 @@ const androidStyles = {
   })
 };
 
-export default androidStyles;
+const styles = StyleSheet.create({
+  ...globalStyle,
+  ...androidStyles
+});
+
+export default styles;
