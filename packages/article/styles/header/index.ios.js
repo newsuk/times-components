@@ -11,7 +11,7 @@ const nativeStyles = {
   standFirst: {
     ...sharedStyles.standFirst,
     lineHeight: 25
-  },
+  }
 };
 
 const styles = StyleSheet.create({
