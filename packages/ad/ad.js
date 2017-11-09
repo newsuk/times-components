@@ -115,8 +115,9 @@ class Ad extends Component {
 
             function addServices () {
               googletag.cmd.push(function () {
-                const slotName = '/${this.props.networkId}/${this.props
-      .adUnit}/${this.props.section}';
+                const slotName = '/${this.props.networkId}/${
+      this.props.adUnit
+    }/${this.props.section}';
                 googletag
                   .defineSlot(slotName, config.sizes, config.code)
                   .addService(googletag.pubads());

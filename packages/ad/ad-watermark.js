@@ -41,7 +41,9 @@ const calculateViewBox = (width, height) => {
 
 const AdWatermark = ({ width, height }) => {
   const box = calculateViewBox(width, height);
-  const viewBox = `${-box.marginLeft} ${-box.marginTop} ${box.svgWidth} ${box.svgHeight}`;
+  const viewBox = `${-box.marginLeft} ${-box.marginTop} ${box.svgWidth} ${
+    box.svgHeight
+  }`;
   return <Watermark width={width} height={height} viewBox={viewBox} />;
 };
 

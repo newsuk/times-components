@@ -9,17 +9,23 @@ const validateEvents = (events, componentName) => {
   events.forEach((e, i) => {
     if (e.eventName === undefined) {
       throw new Error(
-        `WithTrackEvents(${componentName}): Missing eventName at position ${i}, actionName ${e.actionName}`
+        `WithTrackEvents(${componentName}): Missing eventName at position ${
+          i
+        }, actionName ${e.actionName}`
       );
     }
     if (e.actionName === undefined) {
       throw new Error(
-        `WithTrackEvents(${componentName}): Missing actionName at position ${i}, eventName ${e.eventName}`
+        `WithTrackEvents(${componentName}): Missing actionName at position ${
+          i
+        }, eventName ${e.eventName}`
       );
     }
     if (nameMap.has(e.eventName)) {
       throw new Error(
-        `WithTrackEvents(${componentName}): Event ${e.eventName} was tracked multiple times`
+        `WithTrackEvents(${componentName}): Event ${
+          e.eventName
+        } was tracked multiple times`
       );
     }
     nameMap.add(e.eventName);

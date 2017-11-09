@@ -207,6 +207,15 @@
     react-treebeard "^2.0.3"
     redux "^3.7.2"
 
+"@times-components/article-image@0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@times-components/article-image/-/article-image-0.4.1.tgz#1bdc4fafd0eed052dd8581a2afb819a463dd5b57"
+  dependencies:
+    "@times-components/caption" "0.7.0"
+    "@times-components/image" "1.6.0"
+    prop-types "15.6.0"
+    react-native-web "0.1.7"
+
 "@times-components/brightcove-video@1.6.4":
   version "1.6.4"
   resolved "https://registry.yarnpkg.com/@times-components/brightcove-video/-/brightcove-video-1.6.4.tgz#038d1337baacf9b5cf38a054255771da0b47629e"
@@ -215,6 +224,14 @@
     react-native-svg "5.4.1"
     react-native-web "0.1.7"
     svgs "3.1.0"
+
+"@times-components/caption@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@times-components/caption/-/caption-0.7.0.tgz#b5248e9f44b4b6ec0c2bf6ca8608dfa0d285e308"
+  dependencies:
+    prop-types "15.6.0"
+    react-native-web "0.1.7"
+    react-style-proptype "3.0.0"
 
 "@times-components/fructose@2.2.1":
   version "2.2.1"
@@ -248,6 +265,24 @@
     webpack "^3.6.0"
     webpack-dev-server "^2.8.2"
     webpack-merge "^4.1.0"
+
+"@times-components/gradient@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@times-components/gradient/-/gradient-0.1.0.tgz#ca7ef5071dc76fac9dc2e15d47559b2ba660cbcf"
+  dependencies:
+    prop-types "15.6.0"
+    react-native-web "0.1.7"
+    react-style-proptype "3.0.0"
+
+"@times-components/image@1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@times-components/image/-/image-1.6.0.tgz#7b9cb1ad1b162c5577c1f9cadb41e84d49b8d5c3"
+  dependencies:
+    "@times-components/gradient" "0.1.0"
+    prop-types "15.6.0"
+    react-native-web "0.1.7"
+    react-style-proptype "3.0.0"
+    svgs "3.1.0"
 
 "@types/core-js@^0.9.41":
   version "0.9.43"
@@ -8284,9 +8319,9 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-prettier@1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.7.0.tgz#47481588f41f7c90f63938feb202ac82554e7150"
+prettier@1.8.2:
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.8.2.tgz#bff83e7fd573933c607875e5ba3abbdffb96aeb8"
 
 pretty-error@^2.0.2:
   version "2.1.1"
@@ -8813,12 +8848,20 @@ react-style-proptype@^3.0.0:
   dependencies:
     prop-types "^15.5.4"
 
-react-test-renderer@16.0.0, react-test-renderer@^16.0.0-0:
+react-test-renderer@16.0.0:
   version "16.0.0"
   resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.0.0.tgz#9fe7b8308f2f71f29fc356d4102086f131c9cb15"
   dependencies:
     fbjs "^0.8.16"
     object-assign "^4.1.1"
+
+react-test-renderer@^16.0.0-0:
+  version "16.1.0"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.1.0.tgz#33a1d3ce896311e0dd1547649b1456ffa7fda415"
+  dependencies:
+    fbjs "^0.8.16"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
 
 react-timer-mixin@^0.13.2, react-timer-mixin@^0.13.3:
   version "0.13.3"
