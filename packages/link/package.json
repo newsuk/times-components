@@ -67,7 +67,7 @@
     "lodash.pick": "4.4.0",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.7",
-    "react-style-proptype": "3.0.0"
+    "react-style-proptype": "3.1.0"
   },
   "peerDependencies": {
     "react": ">=16",
