@@ -1,8 +1,9 @@
 import { StyleSheet } from "react-native";
-import globalStyle from "../article-global-style";
+import globalStyle from "../shared";
 import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
+  ...sharedStyles,
   articleMetaElement: {
     ...sharedStyles.articleMetaElement,
     paddingTop: 6,

@@ -11,7 +11,18 @@ const sharedStyles = {
     fontFamily: "TimesModern-Regular",
     color: "#333333",
     paddingBottom: 9
-  }
+  },
+  articleLabel: { // header
+    paddingTop: 4,
+    paddingBottom: 3
+  },
+  articleFlag: { // header
+    marginBottom: 11,
+    flexDirection: "row"
+  },
+  articleFlagContainer: { // header
+    marginRight: 14
+  },
 };
 
 export default sharedStyles;

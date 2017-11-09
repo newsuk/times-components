@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import globalStyle from "../article-global-style";
+import globalStyle from "../shared";
 import sharedStyles from "./shared";
 
 const nativeStyles = {
