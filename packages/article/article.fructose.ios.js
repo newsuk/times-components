@@ -7,6 +7,7 @@ const fullArticleFixture = require("./fixtures/full-article.json");
 
 const props = {
   ...fullArticleFixture.data,
+  analyticsStream: () => {},
   isLoading: false,
   fructoseID: "defaultArticle"
 };
