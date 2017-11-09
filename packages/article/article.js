@@ -100,7 +100,7 @@ class ArticlePage extends React.Component {
       };
     } else {
       this.state = {
-        dataSource: {}//ds.cloneWithRows({})
+        dataSource: {} //ds.cloneWithRows({})
       };
     }
   }
@@ -108,7 +108,7 @@ class ArticlePage extends React.Component {
   componentWillReceiveProps(nextProps) {
     if (!nextProps.isLoading && !nextProps.error) {
       this.setState({
-        dataSource: listViewDataHelper(nextProps.article)//ds.cloneWithRows(listViewDataHelper(nextProps.article))
+        dataSource: listViewDataHelper(nextProps.article) //ds.cloneWithRows(listViewDataHelper(nextProps.article))
       });
     }
   }

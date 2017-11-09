@@ -1,13 +1,13 @@
 import React from "react";
 import { FlatList } from "react-native";
 
-const ArticleContent = (
-  { data,
-    renderRow,
-    initialListSize,
-    scrollRenderAheadDistance,
-    pageSize
-  }) => (
+const ArticleContent = ({
+  data,
+  renderRow,
+  initialListSize,
+  scrollRenderAheadDistance,
+  pageSize
+}) => (
   <FlatList
     testID="scroll-view-article" // TODO
     keyExtractor={item => item.type + item.index || item.type}
@@ -17,14 +17,10 @@ const ArticleContent = (
     scrollRenderAheadDistance={scrollRenderAheadDistance}
     pageSize={pageSize}
   />
-)
+);
 
-ArticleContent.propTypes = {
+ArticleContent.propTypes = {};
 
-};
-
-ArticleContent.defaultProps = {
-
-};
+ArticleContent.defaultProps = {};
 
 export default ArticleContent;
