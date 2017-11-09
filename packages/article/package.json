@@ -36,6 +36,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@times-components/jest-configurator": "0.0.1",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-loader": "7.0.0",
@@ -66,7 +67,6 @@
     "@times-components/article-label": "0.4.3",
     "@times-components/date-publication": "0.4.3",
     "@times-components/image": "1.6.0",
-    "@times-components/jest-configurator": "0.0.1",
     "@times-components/markup": "0.12.4",
     "@times-components/provider": "0.14.3",
     "prop-types": "15.6.0",
