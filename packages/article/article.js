@@ -1,5 +1,5 @@
 import React from "react";
-import { Platform, Text, View, ListView } from "react-native";
+import { Platform, Text, View, /*ListView*/ FlatList } from "react-native";
 import PropTypes from "prop-types";
 import get from "lodash.get";
 import { renderTrees } from "@times-components/markup";
@@ -16,7 +16,7 @@ import styles from "./styles/body";
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
 
-const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
+// const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 const listViewPageSize = 1;
 const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
@@ -96,11 +96,11 @@ class ArticlePage extends React.Component {
 
     if (props.article && !props.isLoading && !props.error) {
       this.state = {
-        dataSource: ds.cloneWithRows(listViewDataHelper(props.article))
+        dataSource: listViewDataHelper(props.article) //ds.cloneWithRows(listViewDataHelper(props.article))
       };
     } else {
       this.state = {
-        dataSource: ds.cloneWithRows({})
+        dataSource: {}//ds.cloneWithRows({})
       };
     }
   }
@@ -108,7 +108,7 @@ class ArticlePage extends React.Component {
   componentWillReceiveProps(nextProps) {
     if (!nextProps.isLoading && !nextProps.error) {
       this.setState({
-        dataSource: ds.cloneWithRows(listViewDataHelper(nextProps.article))
+        dataSource: listViewDataHelper(nextProps.article)//ds.cloneWithRows(listViewDataHelper(nextProps.article))
       });
     }
   }
@@ -125,15 +125,22 @@ class ArticlePage extends React.Component {
     }
 
     const ArticleListView = (
-      <ListView
-        testID="listView"
-        dataSource={this.state.dataSource}
-        renderRow={ArticlePage.renderRow}
+      <FlatList
+      // <ListView
+      //   testID="listView"
+      //   dataSource={this.state.dataSource}
+      //   renderRow={ArticlePage.renderRow}
+        // keyExtractor={item => item.id} // TODO
+        data={this.state.dataSource}
+        renderItem={({item, index}) => {
+          return (<Text>some text</Text>);
+        }}
         initialListSize={listViewSize}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
         pageSize={listViewPageSize}
-        enableEmptySections
+      //   enableEmptySections
       />
+
     );
 
     return Platform.OS === "web"
