@@ -4,7 +4,6 @@ exports[`renders a simple component with no errors 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
-  disabled={false}
   ellipsizeMode="tail"
   onError={[Function]}
   style={undefined}
@@ -27,7 +26,6 @@ exports[`renders an ErrorView 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
     style={
       Object {
@@ -56,7 +54,6 @@ exports[`renders the errors from its child 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
     style={
       Object {
