@@ -1,5 +1,5 @@
 import React from "react";
-import { Platform, Text, View, /*ListView*/ FlatList } from "react-native";
+import { Platform, Text, View } from "react-native";
 import PropTypes from "prop-types";
 import get from "lodash.get";
 import { renderTrees } from "@times-components/markup";
@@ -8,6 +8,7 @@ import ArticleImage from "@times-components/article-image";
 import { AdComposer } from "@times-components/ad";
 import { withTrackingContext } from "@times-components/tracking";
 
+import ArticleContent from "./article-content";
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
 
@@ -16,7 +17,6 @@ import styles from "./styles/body";
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
 
-// const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 const listViewPageSize = 1;
 const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
@@ -124,21 +124,13 @@ class ArticlePage extends React.Component {
       return <ArticleLoading />;
     }
     const ArticleListView = (
-      <FlatList
-      // <ListView
-        // testID="listView"
-        testID="scroll-view-article" // TODO
-      //   dataSource={this.state.dataSource}
-      //   renderRow={ArticlePage.renderRow}
-        keyExtractor={item => item.type + item.index || item.type}
+      <ArticleContent
         data={this.state.dataSource}
-        renderItem={({ item }) => ArticlePage.renderRow(item)}
+        renderRow={ArticlePage.renderRow}
         initialListSize={listViewSize}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
         pageSize={listViewPageSize}
-      //   enableEmptySections
       />
-
     );
 
     return Platform.OS === "web"
