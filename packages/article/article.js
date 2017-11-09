@@ -96,11 +96,11 @@ class ArticlePage extends React.Component {
 
     if (props.article && !props.isLoading && !props.error) {
       this.state = {
-        dataSource: listViewDataHelper(props.article) //ds.cloneWithRows(listViewDataHelper(props.article))
+        dataSource: listViewDataHelper(props.article)
       };
     } else {
       this.state = {
-        dataSource: {} //ds.cloneWithRows({})
+        dataSource: {}
       };
     }
   }
@@ -108,7 +108,7 @@ class ArticlePage extends React.Component {
   componentWillReceiveProps(nextProps) {
     if (!nextProps.isLoading && !nextProps.error) {
       this.setState({
-        dataSource: listViewDataHelper(nextProps.article) //ds.cloneWithRows(listViewDataHelper(nextProps.article))
+        dataSource: listViewDataHelper(nextProps.article)
       });
     }
   }
