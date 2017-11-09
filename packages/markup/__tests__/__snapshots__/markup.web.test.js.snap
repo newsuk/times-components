@@ -84,7 +84,16 @@ exports[`Markup Web renders multiple paragraphs with ads 1`] = `
   </p>
   <Ad
     code="intervention"
-    style={64}
+    style={
+      Object {
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 1,
+        "borderTopColor": "#dbdbdb",
+        "borderTopWidth": 1,
+        "paddingBottom": 10,
+        "paddingTop": 10,
+      }
+    }
   />
   <p>
     This is the text for paragraph two

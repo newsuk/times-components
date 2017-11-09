@@ -43,6 +43,7 @@ exports[`Article test on ios renders an error 1`] = `
 
 exports[`Article test on ios renders article no flags 1`] = `
 <RCTScrollView
+  accessibilityLabel="listView"
   dataSource={
     ListViewDataSource {
       "items": 16,
@@ -54,16 +55,15 @@ exports[`Article test on ios renders article no flags 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
-  testID="listView"
 >
   <View>
     <View
+      accessibilityLabel="leadAsset"
       style={
         Object {
           "marginBottom": 10,
         }
       }
-      testID="leadAsset"
     >
       <View>
         <Image
@@ -783,6 +783,7 @@ exports[`Article test on ios renders article no flags 1`] = `
 
 exports[`Article test on ios renders article no label 1`] = `
 <RCTScrollView
+  accessibilityLabel="listView"
   dataSource={
     ListViewDataSource {
       "items": 16,
@@ -794,16 +795,15 @@ exports[`Article test on ios renders article no label 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
-  testID="listView"
 >
   <View>
     <View
+      accessibilityLabel="leadAsset"
       style={
         Object {
           "marginBottom": 10,
         }
       }
-      testID="leadAsset"
     >
       <View>
         <Image
@@ -1630,6 +1630,7 @@ exports[`Article test on ios renders article no label 1`] = `
 
 exports[`Article test on ios renders article no label no flags 1`] = `
 <RCTScrollView
+  accessibilityLabel="listView"
   dataSource={
     ListViewDataSource {
       "items": 16,
@@ -1641,16 +1642,15 @@ exports[`Article test on ios renders article no label no flags 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
-  testID="listView"
 >
   <View>
     <View
+      accessibilityLabel="leadAsset"
       style={
         Object {
           "marginBottom": 10,
         }
       }
-      testID="leadAsset"
     >
       <View>
         <Image
@@ -2338,6 +2338,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
 
 exports[`Article test on ios renders article no label no flags no standfirst 1`] = `
 <RCTScrollView
+  accessibilityLabel="listView"
   dataSource={
     ListViewDataSource {
       "items": 16,
@@ -2349,16 +2350,15 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
-  testID="listView"
 >
   <View>
     <View
+      accessibilityLabel="leadAsset"
       style={
         Object {
           "marginBottom": 10,
         }
       }
-      testID="leadAsset"
     >
       <View>
         <Image
@@ -3026,6 +3026,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
 
 exports[`Article test on ios renders article no standfirst 1`] = `
 <RCTScrollView
+  accessibilityLabel="listView"
   dataSource={
     ListViewDataSource {
       "items": 16,
@@ -3037,16 +3038,15 @@ exports[`Article test on ios renders article no standfirst 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
-  testID="listView"
 >
   <View>
     <View
+      accessibilityLabel="leadAsset"
       style={
         Object {
           "marginBottom": 10,
         }
       }
-      testID="leadAsset"
     >
       <View>
         <Image
@@ -3885,6 +3885,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
 
 exports[`Article test on ios renders article no standfirst no flags 1`] = `
 <RCTScrollView
+  accessibilityLabel="listView"
   dataSource={
     ListViewDataSource {
       "items": 16,
@@ -3896,16 +3897,15 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
-  testID="listView"
 >
   <View>
     <View
+      accessibilityLabel="leadAsset"
       style={
         Object {
           "marginBottom": 10,
         }
       }
-      testID="leadAsset"
     >
       <View>
         <Image
@@ -4605,6 +4605,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
 
 exports[`Article test on ios renders article no standfirst no label 1`] = `
 <RCTScrollView
+  accessibilityLabel="listView"
   dataSource={
     ListViewDataSource {
       "items": 16,
@@ -4616,16 +4617,15 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
-  testID="listView"
 >
   <View>
     <View
+      accessibilityLabel="leadAsset"
       style={
         Object {
           "marginBottom": 10,
         }
       }
-      testID="leadAsset"
     >
       <View>
         <Image
@@ -5432,6 +5432,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
 
 exports[`Article test on ios renders full article 1`] = `
 <RCTScrollView
+  accessibilityLabel="listView"
   dataSource={
     ListViewDataSource {
       "items": 21,
@@ -5443,16 +5444,15 @@ exports[`Article test on ios renders full article 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
-  testID="listView"
 >
   <View>
     <View
+      accessibilityLabel="leadAsset"
       style={
         Object {
           "marginBottom": 10,
         }
       }
-      testID="leadAsset"
     >
       <View>
         <Image
