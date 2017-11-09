@@ -5,7 +5,7 @@ import { View } from "react-native";
 import ArticleByline from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
 
-import styles from "./styles/article-meta-style";
+import styles from "./styles/meta";
 
 const ArticleMeta = ({ byline, publishedTime, publicationName }) => (
   <View style={[styles.articleMainContentRow, styles.articleMiddleContainer]}>

@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 import sharedStyles from "./shared";
 import globalStyle from "../article-global-style";
 
