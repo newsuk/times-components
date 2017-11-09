@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "0.17.7",
+  "version": "0.17.8",
   "description": "The article",
   "main": "article",
   "scripts": {
@@ -52,16 +52,16 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/ad": "0.4.8",
-    "@times-components/article-byline": "0.7.10",
-    "@times-components/article-flag": "0.7.4",
-    "@times-components/article-headline": "0.8.4",
-    "@times-components/article-image": "0.4.2",
-    "@times-components/article-label": "0.4.3",
-    "@times-components/date-publication": "0.4.3",
-    "@times-components/image": "1.6.0",
-    "@times-components/markup": "0.12.4",
-    "@times-components/provider": "0.14.5",
+    "@times-components/ad": "0.4.9",
+    "@times-components/article-byline": "0.7.11",
+    "@times-components/article-flag": "0.7.5",
+    "@times-components/article-headline": "0.8.5",
+    "@times-components/article-image": "0.4.3",
+    "@times-components/article-label": "0.4.4",
+    "@times-components/date-publication": "0.4.4",
+    "@times-components/image": "1.6.1",
+    "@times-components/markup": "0.12.5",
+    "@times-components/provider": "0.14.6",
     "prop-types": "15.6.0",
     "react-apollo": "1.4.16",
     "react-native-web": "0.1.7"
