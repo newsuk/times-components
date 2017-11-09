@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.10.3"></a>
+## [0.10.3](https://github.com/newsuk/times-components/compare/@times-components/card@0.10.2...@times-components/card@0.10.3) (2017-11-09)
+
+
+### Bug Fixes
+
+* upgrade react-style-proptype & fix text link proptypes ([#374](https://github.com/newsuk/times-components/issues/374)) ([1d20491](https://github.com/newsuk/times-components/commit/1d20491))
+
+
+
+
 <a name="0.10.2"></a>
 ## [0.10.2](https://github.com/newsuk/times-components/compare/@times-components/card@0.10.1...@times-components/card@0.10.2) (2017-11-09)
 
