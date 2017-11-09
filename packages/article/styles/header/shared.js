@@ -12,17 +12,17 @@ const sharedStyles = {
     color: "#333333",
     paddingBottom: 9
   },
-  articleLabel: { // header
+  articleLabel: {
     paddingTop: 4,
     paddingBottom: 3
   },
-  articleFlag: { // header
+  articleFlag: {
     marginBottom: 11,
     flexDirection: "row"
   },
-  articleFlagContainer: { // header
+  articleFlagContainer: {
     marginRight: 14
-  },
+  }
 };
 
 export default sharedStyles;

@@ -4,14 +4,16 @@ import sharedStyles from "./shared";
 
 const androidStyles = {
   ...sharedStyles,
-  articleHeadLineText: Object.assign({}, sharedStyles.articleHeadLineText, {
+  articleHeadLineText: {
+    ...sharedStyles.articleHeadLineText,
     fontSize: 28,
     lineHeight: 37,
     fontWeight: "400"
-  }),
-  standFirst: Object.assign({}, sharedStyles.standFirst, {
+  },
+  standFirst: {
+    ...sharedStyles.standFirst,
     lineHeight: 29
-  })
+  },
 };
 
 const styles = StyleSheet.create({

@@ -6,13 +6,13 @@ const sharedStyles = {
     borderBottomColor: "#d0cece",
     borderBottomWidth: StyleSheet.hairlineWidth
   },
-  articleMiddleContainer: { // meta
+  articleMiddleContainer: {
     paddingTop: 9
   },
   articleMetaElement: {
     borderTopColor: "#d0cece",
     borderTopWidth: StyleSheet.hairlineWidth
-  },
+  }
 };
 
 export default sharedStyles;

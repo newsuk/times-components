@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     ...sharedStyles.articleMetaElement,
     paddingTop: 6,
     paddingBottom: 8
-  },
+  }
 });
 
 export default styles;

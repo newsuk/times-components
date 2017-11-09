@@ -9,7 +9,7 @@ const sharedStyles = {
     marginBottom: 25,
     color: "#333333"
   },
-  articleMainContentRow: { // article.js
+  articleMainContentRow: {
     paddingLeft: 10,
     paddingRight: 10
   }
