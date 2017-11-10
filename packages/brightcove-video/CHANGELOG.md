@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.7.2"></a>
+## [1.7.2](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.7.1...@times-components/brightcove-video@1.7.2) (2017-11-09)
+
+
+### Bug Fixes
+
+* storybook brightcove-video poster image uri ([#369](https://github.com/newsuk/times-components/issues/369)) ([eeb46e8](https://github.com/newsuk/times-components/commit/eeb46e8))
+
+
+
+
+<a name="1.7.1"></a>
+## [1.7.1](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.7.0...@times-components/brightcove-video@1.7.1) (2017-11-09)
+
+
+
+
 <a name="1.7.0"></a>
 # [1.7.0](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.6.9...@times-components/brightcove-video@1.7.0) (2017-11-07)
 

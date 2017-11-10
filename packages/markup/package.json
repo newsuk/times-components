@@ -1,6 +1,6 @@
 {
   "name": "@times-components/markup",
-  "version": "0.12.4",
+  "version": "0.12.6",
   "description": "a component which takes an HTML ast and renders the platform specific markup",
   "main": "markup",
   "scripts": {
@@ -48,19 +48,19 @@
     "prettier": "1.8.2",
     "react": "16.0.0",
     "react-dom": "16.0.0",
-    "react-native": "0.49.3",
+    "react-native": "0.50.1",
     "react-test-renderer": "16.0.0",
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/ad": "0.4.8",
+    "@times-components/ad": "0.4.10",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.7"
   },
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16",
-    "react-native": ">=0.49"
+    "react-native": ">=0.50"
   },
   "publishConfig": {
     "access": "public"

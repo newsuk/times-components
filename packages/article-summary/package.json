@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "0.8.4",
+  "version": "0.8.6",
   "main": "article-summary",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -57,22 +57,22 @@
     "prettier": "1.8.2",
     "react": "16.0.0",
     "react-dom": "16.0.0",
-    "react-native": "0.49.3",
+    "react-native": "0.50.1",
     "react-test-renderer": "16.0.0",
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/date-publication": "0.4.3",
-    "@times-components/markup": "0.12.4",
+    "@times-components/date-publication": "0.4.5",
+    "@times-components/markup": "0.12.6",
     "date-fns": "1.28.5",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.7",
-    "react-style-proptype": "3.0.0"
+    "react-style-proptype": "3.1.0"
   },
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16",
-    "react-native": ">=0.49"
+    "react-native": ">=0.50"
   },
   "publishConfig": {
     "access": "public"

@@ -7,16 +7,17 @@ exports[`does not render Article Image display is not received 1`] = `
   <View
     style={undefined}
   >
-    <Image
-      aspectRatio={1.7777777777777777}
-      onLoad={[Function]}
-      source={
-        Object {
-          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0",
+    <View>
+      <Image
+        aspectRatio={1.7777777777777777}
+        onLoad={[Function]}
+        source={
+          Object {
+            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0",
+          }
         }
-      }
-      style={undefined}
-    >
+        style={undefined}
+      />
       <View
         onLayout={[Function]}
         style={
@@ -24,7 +25,13 @@ exports[`does not render Article Image display is not received 1`] = `
             Object {
               "flex": 1,
             },
-            null,
+            Object {
+              "height": "100%",
+              "left": 0,
+              "position": "absolute",
+              "top": 0,
+              "width": "100%",
+            },
           ]
         }
       >
@@ -70,7 +77,7 @@ exports[`does not render Article Image display is not received 1`] = `
           />
         </View>
       </View>
-    </Image>
+    </View>
   </View>
   <View
     style={undefined}
@@ -89,7 +96,6 @@ exports[`does not render Article Image display is not received 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Array [
@@ -108,7 +114,6 @@ exports[`does not render Article Image display is not received 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Array [
@@ -150,16 +155,17 @@ exports[`does not render Caption on Article Image if both caption and credits ar
   <View
     style={undefined}
   >
-    <Image
-      aspectRatio={1.7777777777777777}
-      onLoad={[Function]}
-      source={
-        Object {
-          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0",
+    <View>
+      <Image
+        aspectRatio={1.7777777777777777}
+        onLoad={[Function]}
+        source={
+          Object {
+            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0",
+          }
         }
-      }
-      style={undefined}
-    >
+        style={undefined}
+      />
       <View
         onLayout={[Function]}
         style={
@@ -167,7 +173,13 @@ exports[`does not render Caption on Article Image if both caption and credits ar
             Object {
               "flex": 1,
             },
-            null,
+            Object {
+              "height": "100%",
+              "left": 0,
+              "position": "absolute",
+              "top": 0,
+              "width": "100%",
+            },
           ]
         }
       >
@@ -213,7 +225,7 @@ exports[`does not render Caption on Article Image if both caption and credits ar
           />
         </View>
       </View>
-    </Image>
+    </View>
   </View>
 </View>
 `;
@@ -238,16 +250,17 @@ exports[`renders inline image (landscape) correctly 1`] = `
       }
     }
   >
-    <Image
-      aspectRatio={1.5}
-      onLoad={[Function]}
-      source={
-        Object {
-          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3ac674bc-beb2-11e7-8bb9-94e1372175c0.jpg?crop=5576%2C3717%2C0%2C0",
+    <View>
+      <Image
+        aspectRatio={1.5}
+        onLoad={[Function]}
+        source={
+          Object {
+            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3ac674bc-beb2-11e7-8bb9-94e1372175c0.jpg?crop=5576%2C3717%2C0%2C0",
+          }
         }
-      }
-      style={undefined}
-    >
+        style={undefined}
+      />
       <View
         onLayout={[Function]}
         style={
@@ -255,7 +268,13 @@ exports[`renders inline image (landscape) correctly 1`] = `
             Object {
               "flex": 1,
             },
-            null,
+            Object {
+              "height": "100%",
+              "left": 0,
+              "position": "absolute",
+              "top": 0,
+              "width": "100%",
+            },
           ]
         }
       >
@@ -301,7 +320,7 @@ exports[`renders inline image (landscape) correctly 1`] = `
           />
         </View>
       </View>
-    </Image>
+    </View>
   </View>
   <View
     style={
@@ -328,7 +347,6 @@ exports[`renders inline image (landscape) correctly 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Array [
@@ -347,7 +365,6 @@ exports[`renders inline image (landscape) correctly 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Array [
@@ -396,16 +413,17 @@ exports[`renders inline image (portrait) correctly 1`] = `
       }
     }
   >
-    <Image
-      aspectRatio={0.6666666666666666}
-      onLoad={[Function]}
-      source={
-        Object {
-          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdb30ed6a-be62-11e7-b58a-4186f6049f2e.jpg?crop=384%2C576%2C0%2C0",
+    <View>
+      <Image
+        aspectRatio={0.6666666666666666}
+        onLoad={[Function]}
+        source={
+          Object {
+            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdb30ed6a-be62-11e7-b58a-4186f6049f2e.jpg?crop=384%2C576%2C0%2C0",
+          }
         }
-      }
-      style={undefined}
-    >
+        style={undefined}
+      />
       <View
         onLayout={[Function]}
         style={
@@ -413,7 +431,13 @@ exports[`renders inline image (portrait) correctly 1`] = `
             Object {
               "flex": 1,
             },
-            null,
+            Object {
+              "height": "100%",
+              "left": 0,
+              "position": "absolute",
+              "top": 0,
+              "width": "100%",
+            },
           ]
         }
       >
@@ -459,7 +483,7 @@ exports[`renders inline image (portrait) correctly 1`] = `
           />
         </View>
       </View>
-    </Image>
+    </View>
   </View>
   <View
     style={
@@ -486,7 +510,6 @@ exports[`renders inline image (portrait) correctly 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Array [
@@ -505,7 +528,6 @@ exports[`renders inline image (portrait) correctly 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Array [
@@ -547,16 +569,17 @@ exports[`renders primary image correctly 1`] = `
   <View
     style={undefined}
   >
-    <Image
-      aspectRatio={1.25}
-      onLoad={[Function]}
-      source={
-        Object {
-          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0",
+    <View>
+      <Image
+        aspectRatio={1.25}
+        onLoad={[Function]}
+        source={
+          Object {
+            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0",
+          }
         }
-      }
-      style={undefined}
-    >
+        style={undefined}
+      />
       <View
         onLayout={[Function]}
         style={
@@ -564,7 +587,13 @@ exports[`renders primary image correctly 1`] = `
             Object {
               "flex": 1,
             },
-            null,
+            Object {
+              "height": "100%",
+              "left": 0,
+              "position": "absolute",
+              "top": 0,
+              "width": "100%",
+            },
           ]
         }
       >
@@ -610,7 +639,7 @@ exports[`renders primary image correctly 1`] = `
           />
         </View>
       </View>
-    </Image>
+    </View>
   </View>
   <View
     style={undefined}
@@ -629,7 +658,6 @@ exports[`renders primary image correctly 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Array [
@@ -648,7 +676,6 @@ exports[`renders primary image correctly 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Array [
@@ -697,16 +724,17 @@ exports[`renders secondary image correctly 1`] = `
       }
     }
   >
-    <Image
-      aspectRatio={1.5}
-      onLoad={[Function]}
-      source={
-        Object {
-          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0",
+    <View>
+      <Image
+        aspectRatio={1.5}
+        onLoad={[Function]}
+        source={
+          Object {
+            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0",
+          }
         }
-      }
-      style={undefined}
-    >
+        style={undefined}
+      />
       <View
         onLayout={[Function]}
         style={
@@ -714,7 +742,13 @@ exports[`renders secondary image correctly 1`] = `
             Object {
               "flex": 1,
             },
-            null,
+            Object {
+              "height": "100%",
+              "left": 0,
+              "position": "absolute",
+              "top": 0,
+              "width": "100%",
+            },
           ]
         }
       >
@@ -760,7 +794,7 @@ exports[`renders secondary image correctly 1`] = `
           />
         </View>
       </View>
-    </Image>
+    </View>
   </View>
   <View
     style={
@@ -787,7 +821,6 @@ exports[`renders secondary image correctly 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Array [
@@ -806,7 +839,6 @@ exports[`renders secondary image correctly 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Array [

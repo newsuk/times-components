@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.19"></a>
+## [0.5.19](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.5.18...@times-components/error-view@0.5.19) (2017-11-09)
+
+
+### Bug Fixes
+
+* upgrade react-style-proptype & fix text link proptypes ([#374](https://github.com/newsuk/times-components/issues/374)) ([1d20491](https://github.com/newsuk/times-components/commit/1d20491))
+
+
+
+
+<a name="0.5.18"></a>
+## [0.5.18](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.5.17...@times-components/error-view@0.5.18) (2017-11-09)
+
+
+
+
+<a name="0.5.17"></a>
+## [0.5.17](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.5.16...@times-components/error-view@0.5.17) (2017-11-09)
+
+
+
+
 <a name="0.5.16"></a>
 ## [0.5.16](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.5.15...@times-components/error-view@0.5.16) (2017-11-07)
 

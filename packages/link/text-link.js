@@ -21,7 +21,10 @@ const TextLink = ({ style, url, onPress, children }) => (
 );
 
 TextLink.propTypes = {
-  style: StylePropTypes,
+  style: PropTypes.oneOfType([
+    PropTypes.arrayOf(StylePropTypes),
+    StylePropTypes
+  ]),
   url: PropTypes.string.isRequired,
   onPress: PropTypes.func.isRequired,
   children: PropTypes.oneOfType([

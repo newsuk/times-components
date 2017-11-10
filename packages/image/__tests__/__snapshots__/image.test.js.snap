@@ -1,20 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`allows styling 1`] = `
-<Image
-  aspectRatio={1}
-  onLoad={[Function]}
-  source={
-    Object {
-      "uri": "http://example.com/image.jpg",
+<View>
+  <Image
+    aspectRatio={1}
+    onLoad={[Function]}
+    source={
+      Object {
+        "uri": "http://example.com/image.jpg",
+      }
     }
-  }
-  style={
-    Object {
-      "width": 100,
+    style={
+      Object {
+        "width": 100,
+      }
     }
-  }
->
+  />
   <View
     onLayout={[Function]}
     style={
@@ -23,7 +24,11 @@ exports[`allows styling 1`] = `
           "flex": 1,
         },
         Object {
-          "width": 100,
+          "height": "100%",
+          "left": 0,
+          "position": "absolute",
+          "top": 0,
+          "width": "100%",
         },
       ]
     }
@@ -70,20 +75,21 @@ exports[`allows styling 1`] = `
       />
     </View>
   </View>
-</Image>
+</View>
 `;
 
 exports[`prepends https schema 1`] = `
-<Image
-  aspectRatio={1}
-  onLoad={[Function]}
-  source={
-    Object {
-      "uri": "https://example.com/image.jpg",
+<View>
+  <Image
+    aspectRatio={1}
+    onLoad={[Function]}
+    source={
+      Object {
+        "uri": "https://example.com/image.jpg",
+      }
     }
-  }
-  style={undefined}
->
+    style={undefined}
+  />
   <View
     onLayout={[Function]}
     style={
@@ -91,7 +97,13 @@ exports[`prepends https schema 1`] = `
         Object {
           "flex": 1,
         },
-        null,
+        Object {
+          "height": "100%",
+          "left": 0,
+          "position": "absolute",
+          "top": 0,
+          "width": "100%",
+        },
       ]
     }
   >
@@ -137,20 +149,21 @@ exports[`prepends https schema 1`] = `
       />
     </View>
   </View>
-</Image>
+</View>
 `;
 
 exports[`renders correctly 1`] = `
-<Image
-  aspectRatio={1}
-  onLoad={[Function]}
-  source={
-    Object {
-      "uri": "http://example.com/image.jpg",
+<View>
+  <Image
+    aspectRatio={1}
+    onLoad={[Function]}
+    source={
+      Object {
+        "uri": "http://example.com/image.jpg",
+      }
     }
-  }
-  style={undefined}
->
+    style={undefined}
+  />
   <View
     onLayout={[Function]}
     style={
@@ -158,7 +171,13 @@ exports[`renders correctly 1`] = `
         Object {
           "flex": 1,
         },
-        null,
+        Object {
+          "height": "100%",
+          "left": 0,
+          "position": "absolute",
+          "top": 0,
+          "width": "100%",
+        },
       ]
     }
   >
@@ -204,5 +223,5 @@ exports[`renders correctly 1`] = `
       />
     </View>
   </View>
-</Image>
+</View>
 `;
