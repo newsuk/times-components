@@ -435,7 +435,7 @@
               "title": "Fourth Briton is seized trying to join Isis",
               "crop": {
                 "url":
-                  "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                  "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodmigration%2Fweb%2Fbin%2Fae6cad4f-dd7b-3bc7-a840-6d1700a28ce1.jpg?crop=1500%2C1000%2C0%2C0&resize=1200",
                 "__typename": "Crop"
               },
               "__typename": "Image"
@@ -470,7 +470,7 @@
               "title": "Fourth Briton is seized trying to join Isis",
               "crop": {
                 "url":
-                  "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                  "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodmigration%2Fweb%2Fbin%2Fae6cad4f-dd7b-3bc7-a840-6d1700a28ce1.jpg?crop=1500%2C1000%2C0%2C0&resize=1200",
                 "__typename": "Crop"
               },
               "__typename": "Image"
