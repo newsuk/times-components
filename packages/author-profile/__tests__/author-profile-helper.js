@@ -277,6 +277,35 @@ export default AuthorProfileContent => {
     expect(component).toMatchSnapshot();
   });
 
+  it("tracks page view", () => {
+    const stream = jest.fn();
+    renderer.create(
+      withMockProvider(
+        <AuthorProfile
+          {...props}
+          author={authorProfileFixture.data.author}
+          isLoading={false}
+          slug="fiona-hamilton"
+          page={1}
+          pageSize={10}
+          onTwitterLinkPress={() => {}}
+          onArticlePress={() => {}}
+          analyticsStream={stream}
+        />
+      )
+    );
+    expect(stream).toHaveBeenCalledWith({
+      object: "AuthorProfile",
+      component: "Page",
+      action: "Viewed",
+      attrs: expect.objectContaining({
+        authorName: "Fiona Hamilton",
+        page: 1,
+        pageSize: 10
+      })
+    });
+  });
+
   it("tracks author profile item interactions", () => {
     const item = pagedResult(0, 1).data.author.articles.list[0];
     const stream = jest.fn();

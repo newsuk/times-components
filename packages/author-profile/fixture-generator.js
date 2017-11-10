@@ -19,7 +19,7 @@ const article = () => ({
     title: "British trio stopped on the way to join Isis",
     crop: {
       url:
-        "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/90cfa89f4ebe003ab967e64b9c79c9afa520c273.jpg?crop=620%2C413%2C0%2C0"
+        "http://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Feb7842ee-748a-11e7-93f8-c74b9ea57adf.jpg?crop=2250%2C1500%2C-0%2C-0&resize=996"
     }
   },
   teaser: [

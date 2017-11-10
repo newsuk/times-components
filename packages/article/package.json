@@ -1,16 +1,21 @@
 {
   "name": "@times-components/article",
-  "version": "0.17.9",
+  "version": "0.17.10",
   "description": "The article",
   "main": "article",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
-    "test:watch": "npm run test:native -- --bail --verbose --watchAll",
-    "test:native": "jest --config='./jest.config.json'",
-    "test:web": "jest --config='./jest.config.web.json'",
-    "test": "npm run test:native -- --ci --bail && npm run test:web -- --ci --bail --coverage",
-    "fmt": "prettier --write '**/*.+(js|json|md)' '!**/CHANGELOG.md'",
-    "prettier:diff": "prettier --list-different '**/*.+(js|json|md)' '!**/CHANGELOG.md'",
+    "test:android": "jest --config='./__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test:android:watch": "yarn test:android -- --bail --verbose --watchAll",
+    "test:ios:watch": "yarn test:ios -- --bail --verbose --watchAll",
+    "test:web:watch": "yarn test:web -- --bail --verbose --watchAll",
+    "test:native": "jest --projects __tests__/android __tests__/ios ",
+    "test:native:watch": "yarn test:native -- --bail --verbose --watchAll",
+    "test": "yarn test:android -- --ci --bail && yarn test:ios -- --ci --bail && yarn test:web -- --ci --bail --coverage",
+    "test:watch": "jest --projects */**/jest.config.js --watchAll",
+    "prettier:diff": "prettier --list-different '**/*.+(js|json)'",
     "lint": "eslint . && npm run prettier:diff"
   },
   "repository": {
@@ -31,6 +36,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@times-components/jest-configurator": "0.0.1",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-loader": "7.0.0",
@@ -63,6 +69,8 @@
     "@times-components/image": "1.6.2",
     "@times-components/markup": "0.12.6",
     "@times-components/provider": "0.14.7",
+    "@times-components/tracking": "0.2.5",
+    "lodash.get": "4.4.2",
     "prop-types": "15.6.0",
     "react-apollo": "1.4.16",
     "react-native-web": "0.1.7"
