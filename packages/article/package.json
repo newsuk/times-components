@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "0.17.10",
+  "version": "0.17.11",
   "description": "The article",
   "main": "article",
   "scripts": {
@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/jest-configurator": "0.0.1",
+    "@times-components/jest-configurator": "0.0.2",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-loader": "7.0.0",
