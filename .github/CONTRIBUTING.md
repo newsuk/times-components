@@ -106,7 +106,8 @@ running `npm run ios`. You will need to terminate the server that is run with
 this as fructose will run its own at the time of testing. As long as you do not
 delete the app, you will only have to build the app once.
 
-If you run `npm run functional-test:ios` in the root directory it will run fructose tests for all of the components. Android support is being added.
+If you run `npm run functional-test:ios` in the root directory it will run
+fructose tests for all of the components. Android support is being added.
 
 ## Local App Deployment
 
