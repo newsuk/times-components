@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-headline",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "description": "The article headline",
   "main": "article-headline",
   "scripts": {
@@ -62,7 +62,7 @@
   "dependencies": {
     "prop-types": "15.6.0",
     "react-native-web": "0.1.7",
-    "react-style-proptype": "3.0.0"
+    "react-style-proptype": "3.1.0"
   },
   "peerDependencies": {
     "react": ">=16",

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "main": "article-summary",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -61,12 +61,12 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/date-publication": "0.4.4",
-    "@times-components/markup": "0.12.5",
+    "@times-components/date-publication": "0.4.5",
+    "@times-components/markup": "0.12.6",
     "date-fns": "1.28.5",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.7",
-    "react-style-proptype": "3.0.0"
+    "react-style-proptype": "3.1.0"
   },
   "peerDependencies": {
     "react": ">=16",

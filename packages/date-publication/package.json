@@ -1,6 +1,6 @@
 {
   "name": "@times-components/date-publication",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "Date and Publication properties",
   "main": "date-publication",
   "scripts": {
@@ -63,7 +63,7 @@
     "date-fns": "1.28.5",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.7",
-    "react-style-proptype": "3.0.0"
+    "react-style-proptype": "3.1.0"
   },
   "peerDependencies": {
     "react": ">=16",
