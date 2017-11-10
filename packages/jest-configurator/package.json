@@ -6,7 +6,9 @@
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "test:watch": "jest --watchAll --coverage"
+    "test:watch": "jest --watchAll --coverage",
+    "lint": "eslint . && npm run prettier:diff",
+    "prettier:diff": "prettier --list-different '**/*.+(js|json)'"
   },
   "repository": {
     "type": "git",
@@ -31,19 +33,12 @@
     "access": "public"
   },
   "eslintConfig": {
-    "extends": [
-      "airbnb",
-      "prettier",
-      "prettier/react",
-      "jest"
-    ],
+    "extends": ["airbnb", "prettier", "prettier/react"],
     "rules": {
       "react/jsx-filename-extension": [
         1,
         {
-          "extensions": [
-            ".js"
-          ]
+          "extensions": [".js"]
         }
       ],
       "import/extensions": "off"
@@ -51,33 +46,30 @@
     "settings": {
       "import/resolver": {
         "node": {
-          "extensions": [
-            ".js",
-            ".android.js",
-            ".ios.js",
-            ".web.js"
-          ]
+          "extensions": [".js", ".android.js", ".ios.js", ".web.js"]
         }
       }
     },
-    "root": true
+    "root": true,
+    "env": {
+      "jest": true
+    }
   },
-  "eslintIgnore": [
-    "**/node_modules/*",
-    "**/coverage/*",
-    "dist"
-  ],
+  "eslintIgnore": ["**/node_modules/*", "**/coverage/*", "dist"],
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/utilities/**/__tests__/*.js"
-    ]
+    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+    "testMatch": ["<rootDir>/packages/utilities/**/__tests__/*.js"]
   },
-  "dependencies": {
-    "jest": "21.2.1"
+  "devDependencies": {
+    "eslint": "4.9.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jest": "21.3.2",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.4.0",
+    "jest": "21.2.1",
+    "prettier": "1.7.0"
   }
 }
