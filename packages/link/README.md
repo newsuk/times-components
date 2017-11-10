@@ -1,10 +1,9 @@
-Link Component
-==============
+# Link Component
 
-This component wraps its children to make them clickable and turn them into hyperlinks for web.
+This component wraps its children to make them clickable and turn them into
+hyperlinks for web.
 
-How to use
-----------
+## How to use
 
 ```js
 import Link, { TextLink } from "@times-components/link";
@@ -20,4 +19,7 @@ import Link, { TextLink } from "@times-components/link";
 </TextLink>
 ```
 
-Typically, apps will need to use the `onPress` callback to bubble up navigation so that the parent native Activity or UIViewContoller can handle the navigation, rather than multiple Activities or UIViewContollers mistakingly navigating multiple times in native land.
+Typically, apps will need to use the `onPress` callback to bubble up navigation
+so that the parent native Activity or UIViewContoller can handle the navigation,
+rather than multiple Activities or UIViewContollers mistakingly navigating
+multiple times in native land.

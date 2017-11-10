@@ -1,10 +1,9 @@
-Markup Component
-================
+# Markup Component
 
 This component renders out markup trees into react components.
 
-How to use
-----------
+## How to use
+
 ```js
 import { renderTree } from "@times-components/markup";
 
@@ -27,11 +26,13 @@ const tree = {
 //   I am bold
 // </Text>
 const element = renderTree(tree)
-
 ```
-`renderTree` can also take an object of renderers to override or add to the individual default renderers.
+
+`renderTree` can also take an object of renderers to override or add to the
+individual default renderers.
 
 e.g
+
 ```js
 import { renderTree } from "@times-components/markup";
 
@@ -70,10 +71,10 @@ const renderers = {
 //   </Text>
 // </View>
 const element = renderTree(tree, renderers)
-
 ```
 
-`renderTrees` (note the plural) also exists as a connivence function to render an array of trees into an array of react elements.
+`renderTrees` (note the plural) also exists as a connivence function to render
+an array of trees into an array of react elements.
 
 ```js
 import { renderTree } from "@times-components/markup";
