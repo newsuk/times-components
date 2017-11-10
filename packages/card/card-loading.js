@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { StyleSheet, View } from "react-native";
-import Image from "@times-components/image";
+import { Placeholder } from "@times-components/image";
 import Gradient from "@times-components/gradient";
 import styles from "./card-styles";
 
-const gradientStyles = StyleSheet.create({
+const loadingStyles = StyleSheet.create({
   headerContainer: {
     height: 24,
     marginBottom: 10,
@@ -17,6 +17,16 @@ const gradientStyles = StyleSheet.create({
   },
   noMarginBottom: {
     marginBottom: 0
+  },
+  placeholder: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%"
+  },
+  spacer3x2: {
+    paddingBottom: "66.66%"
   }
 });
 
@@ -25,7 +35,8 @@ const Loading = ({ horizontal, style }) => {
 
   const imageComponent = (
     <View style={[layoutStyles.childrenContainer, layoutStyles.imageContainer]}>
-      <Image uri="" style={layoutStyles.image} aspectRatio={3 / 2} />
+      <View style={loadingStyles.spacer3x2} />
+      <Placeholder style={loadingStyles.placeholder} />
     </View>
   );
 
@@ -35,11 +46,11 @@ const Loading = ({ horizontal, style }) => {
       <View
         style={[layoutStyles.childrenContainer, layoutStyles.summaryContainer]}
       >
-        <Gradient style={[gradientStyles.headerContainer]} degrees={264} />
-        <Gradient style={[gradientStyles.textContainer]} degrees={267} />
-        <Gradient style={[gradientStyles.textContainer]} degrees={267} />
+        <Gradient style={[loadingStyles.headerContainer]} degrees={264} />
+        <Gradient style={[loadingStyles.textContainer]} degrees={267} />
+        <Gradient style={[loadingStyles.textContainer]} degrees={267} />
         <Gradient
-          style={[gradientStyles.textContainer, gradientStyles.noMarginBottom]}
+          style={[loadingStyles.textContainer, loadingStyles.noMarginBottom]}
           degrees={267}
         />
       </View>

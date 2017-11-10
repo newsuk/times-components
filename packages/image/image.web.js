@@ -60,4 +60,5 @@ class TimesImage extends Component {
 
 TimesImage.propTypes = imagePropTypes;
 
+export { Placeholder };
 export default TimesImage;
