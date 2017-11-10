@@ -1,21 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders horizontal above breakpoint 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <CardComponent
-    date={2017-07-01T14:32:00.000Z}
-    headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT"
-    image={
+<View
+  onLayout={[Function]}
+>
+  <View
+    style={
+      Array [
         Object {
-            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320",
-          }
+          "flexDirection": "row",
+        },
+        undefined,
+      ]
     }
-    label="Camilla Long"
-    publication="SUNDAYTIMES"
-    text={
+  >
+    <View
+      style={
         Array [
+          Object {
+            "flexGrow": 1,
+            "flexShrink": 1,
+          },
+          Object {
+            "flexBasis": 0,
+            "flexGrow": 2,
+            "marginBottom": 0,
+            "marginRight": 10,
+          },
+        ]
+      }
+    >
+      <TimesImage
+        aspectRatio={1.5}
+        uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320"
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "flexGrow": 1,
+            "flexShrink": 1,
+          },
+          Object {
+            "flexBasis": 0,
+            "flexGrow": 3,
+          },
+        ]
+      }
+    >
+      <ArticleSummary
+        date={2017-07-01T14:32:00.000Z}
+        headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT"
+        label="Camilla Long"
+        publication="SUNDAYTIMES"
+        text={
+          Array [
             Object {
               "attributes": Object {},
               "children": Array [
@@ -43,954 +83,51 @@ ShallowWrapper {
               "name": "paragraph",
             },
           ]
-    }
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "children": <View
-        style={
-                Array [
-                        Object {
-                          "flexDirection": "row",
-                        },
-                        undefined,
-                      ]
         }
->
-        <View
-                style={
-                        Array [
-                                Object {
-                                  "flexGrow": 1,
-                                  "flexShrink": 1,
-                                },
-                                Object {
-                                  "flexBasis": 0,
-                                  "flexGrow": 2,
-                                  "marginBottom": 0,
-                                  "marginRight": 10,
-                                },
-                              ]
-                }
-        >
-                <TimesImage
-                        aspectRatio={1.5}
-                        style={undefined}
-                        uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320"
-                />
-        </View>
-        <View
-                style={
-                        Array [
-                                Object {
-                                  "flexGrow": 1,
-                                  "flexShrink": 1,
-                                },
-                                Object {
-                                  "flexBasis": 0,
-                                  "flexGrow": 3,
-                                },
-                              ]
-                }
-        >
-                <ArticleSummary
-                        date={2017-07-01T14:32:00.000Z}
-                        headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT"
-                        label="Camilla Long"
-                        publication="SUNDAYTIMES"
-                        text={
-                                Array [
-                                        Object {
-                                          "attributes": Object {},
-                                          "children": Array [
-                                            Object {
-                                              "attributes": Object {
-                                                "value": "Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.",
-                                              },
-                                              "children": Array [],
-                                              "name": "text",
-                                            },
-                                          ],
-                                          "name": "paragraph",
-                                        },
-                                        Object {
-                                          "attributes": Object {},
-                                          "children": Array [
-                                            Object {
-                                              "attributes": Object {
-                                                "value": "The former punk",
-                                              },
-                                              "children": Array [],
-                                              "name": "text",
-                                            },
-                                          ],
-                                          "name": "paragraph",
-                                        },
-                                      ]
-                        }
-                />
-        </View>
-</View>,
-      "onLayout": [Function],
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <View
-            style={
-                        Array [
-                                    Object {
-                                      "flexGrow": 1,
-                                      "flexShrink": 1,
-                                    },
-                                    Object {
-                                      "flexBasis": 0,
-                                      "flexGrow": 2,
-                                      "marginBottom": 0,
-                                      "marginRight": 10,
-                                    },
-                                  ]
-            }
->
-            <TimesImage
-                        aspectRatio={1.5}
-                        style={undefined}
-                        uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320"
-            />
-</View>,
-          <View
-            style={
-                        Array [
-                                    Object {
-                                      "flexGrow": 1,
-                                      "flexShrink": 1,
-                                    },
-                                    Object {
-                                      "flexBasis": 0,
-                                      "flexGrow": 3,
-                                    },
-                                  ]
-            }
->
-            <ArticleSummary
-                        date={2017-07-01T14:32:00.000Z}
-                        headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT"
-                        label="Camilla Long"
-                        publication="SUNDAYTIMES"
-                        text={
-                                    Array [
-                                                Object {
-                                                  "attributes": Object {},
-                                                  "children": Array [
-                                                    Object {
-                                                      "attributes": Object {
-                                                        "value": "Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.",
-                                                      },
-                                                      "children": Array [],
-                                                      "name": "text",
-                                                    },
-                                                  ],
-                                                  "name": "paragraph",
-                                                },
-                                                Object {
-                                                  "attributes": Object {},
-                                                  "children": Array [
-                                                    Object {
-                                                      "attributes": Object {
-                                                        "value": "The former punk",
-                                                      },
-                                                      "children": Array [],
-                                                      "name": "text",
-                                                    },
-                                                  ],
-                                                  "name": "paragraph",
-                                                },
-                                              ]
-                        }
-            />
-</View>,
-        ],
-        "style": Array [
-          Object {
-            "flexDirection": "row",
-          },
-          undefined,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <TimesImage
-              aspectRatio={1.5}
-              style={undefined}
-              uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320"
-/>,
-            "style": Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              Object {
-                "flexBasis": 0,
-                "flexGrow": 2,
-                "marginBottom": 0,
-                "marginRight": 10,
-              },
-            ],
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "aspectRatio": 1.5,
-              "style": undefined,
-              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <ArticleSummary
-              date={2017-07-01T14:32:00.000Z}
-              headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT"
-              label="Camilla Long"
-              publication="SUNDAYTIMES"
-              text={
-                            Array [
-                                          Object {
-                                            "attributes": Object {},
-                                            "children": Array [
-                                              Object {
-                                                "attributes": Object {
-                                                  "value": "Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.",
-                                                },
-                                                "children": Array [],
-                                                "name": "text",
-                                              },
-                                            ],
-                                            "name": "paragraph",
-                                          },
-                                          Object {
-                                            "attributes": Object {},
-                                            "children": Array [
-                                              Object {
-                                                "attributes": Object {
-                                                  "value": "The former punk",
-                                                },
-                                                "children": Array [],
-                                                "name": "text",
-                                              },
-                                            ],
-                                            "name": "paragraph",
-                                          },
-                                        ]
-              }
-/>,
-            "style": Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              Object {
-                "flexBasis": 0,
-                "flexGrow": 3,
-              },
-            ],
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "date": 2017-07-01T14:32:00.000Z,
-              "headline": "OK, so Putin’s not a lady, but he does have the wildest man‑PMT",
-              "label": "Camilla Long",
-              "publication": "SUNDAYTIMES",
-              "text": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "The former punk",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-              ],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": <View
-          style={
-                    Array [
-                              Object {
-                                "flexDirection": "row",
-                              },
-                              undefined,
-                            ]
-          }
->
-          <View
-                    style={
-                              Array [
-                                        Object {
-                                          "flexGrow": 1,
-                                          "flexShrink": 1,
-                                        },
-                                        Object {
-                                          "flexBasis": 0,
-                                          "flexGrow": 2,
-                                          "marginBottom": 0,
-                                          "marginRight": 10,
-                                        },
-                                      ]
-                    }
-          >
-                    <TimesImage
-                              aspectRatio={1.5}
-                              style={undefined}
-                              uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320"
-                    />
-          </View>
-          <View
-                    style={
-                              Array [
-                                        Object {
-                                          "flexGrow": 1,
-                                          "flexShrink": 1,
-                                        },
-                                        Object {
-                                          "flexBasis": 0,
-                                          "flexGrow": 3,
-                                        },
-                                      ]
-                    }
-          >
-                    <ArticleSummary
-                              date={2017-07-01T14:32:00.000Z}
-                              headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT"
-                              label="Camilla Long"
-                              publication="SUNDAYTIMES"
-                              text={
-                                        Array [
-                                                  Object {
-                                                    "attributes": Object {},
-                                                    "children": Array [
-                                                      Object {
-                                                        "attributes": Object {
-                                                          "value": "Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.",
-                                                        },
-                                                        "children": Array [],
-                                                        "name": "text",
-                                                      },
-                                                    ],
-                                                    "name": "paragraph",
-                                                  },
-                                                  Object {
-                                                    "attributes": Object {},
-                                                    "children": Array [
-                                                      Object {
-                                                        "attributes": Object {
-                                                          "value": "The former punk",
-                                                        },
-                                                        "children": Array [],
-                                                        "name": "text",
-                                                      },
-                                                    ],
-                                                    "name": "paragraph",
-                                                  },
-                                                ]
-                              }
-                    />
-          </View>
-</View>,
-        "onLayout": [Function],
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <View
-              style={
-                            Array [
-                                          Object {
-                                            "flexGrow": 1,
-                                            "flexShrink": 1,
-                                          },
-                                          Object {
-                                            "flexBasis": 0,
-                                            "flexGrow": 2,
-                                            "marginBottom": 0,
-                                            "marginRight": 10,
-                                          },
-                                        ]
-              }
->
-              <TimesImage
-                            aspectRatio={1.5}
-                            style={undefined}
-                            uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320"
-              />
-</View>,
-            <View
-              style={
-                            Array [
-                                          Object {
-                                            "flexGrow": 1,
-                                            "flexShrink": 1,
-                                          },
-                                          Object {
-                                            "flexBasis": 0,
-                                            "flexGrow": 3,
-                                          },
-                                        ]
-              }
->
-              <ArticleSummary
-                            date={2017-07-01T14:32:00.000Z}
-                            headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT"
-                            label="Camilla Long"
-                            publication="SUNDAYTIMES"
-                            text={
-                                          Array [
-                                                        Object {
-                                                          "attributes": Object {},
-                                                          "children": Array [
-                                                            Object {
-                                                              "attributes": Object {
-                                                                "value": "Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.",
-                                                              },
-                                                              "children": Array [],
-                                                              "name": "text",
-                                                            },
-                                                          ],
-                                                          "name": "paragraph",
-                                                        },
-                                                        Object {
-                                                          "attributes": Object {},
-                                                          "children": Array [
-                                                            Object {
-                                                              "attributes": Object {
-                                                                "value": "The former punk",
-                                                              },
-                                                              "children": Array [],
-                                                              "name": "text",
-                                                            },
-                                                          ],
-                                                          "name": "paragraph",
-                                                        },
-                                                      ]
-                            }
-              />
-</View>,
-          ],
-          "style": Array [
-            Object {
-              "flexDirection": "row",
-            },
-            undefined,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <TimesImage
-                aspectRatio={1.5}
-                style={undefined}
-                uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320"
-/>,
-              "style": Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                Object {
-                  "flexBasis": 0,
-                  "flexGrow": 2,
-                  "marginBottom": 0,
-                  "marginRight": 10,
-                },
-              ],
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "aspectRatio": 1.5,
-                "style": undefined,
-                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <ArticleSummary
-                date={2017-07-01T14:32:00.000Z}
-                headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT"
-                label="Camilla Long"
-                publication="SUNDAYTIMES"
-                text={
-                                Array [
-                                                Object {
-                                                  "attributes": Object {},
-                                                  "children": Array [
-                                                    Object {
-                                                      "attributes": Object {
-                                                        "value": "Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.",
-                                                      },
-                                                      "children": Array [],
-                                                      "name": "text",
-                                                    },
-                                                  ],
-                                                  "name": "paragraph",
-                                                },
-                                                Object {
-                                                  "attributes": Object {},
-                                                  "children": Array [
-                                                    Object {
-                                                      "attributes": Object {
-                                                        "value": "The former punk",
-                                                      },
-                                                      "children": Array [],
-                                                      "name": "text",
-                                                    },
-                                                  ],
-                                                  "name": "paragraph",
-                                                },
-                                              ]
-                }
-/>,
-              "style": Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                Object {
-                  "flexBasis": 0,
-                  "flexGrow": 3,
-                },
-              ],
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "date": 2017-07-01T14:32:00.000Z,
-                "headline": "OK, so Putin’s not a lady, but he does have the wildest man‑PMT",
-                "label": "Camilla Long",
-                "publication": "SUNDAYTIMES",
-                "text": Array [
-                  Object {
-                    "attributes": Object {},
-                    "children": Array [
-                      Object {
-                        "attributes": Object {
-                          "value": "Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.",
-                        },
-                        "children": Array [],
-                        "name": "text",
-                      },
-                    ],
-                    "name": "paragraph",
-                  },
-                  Object {
-                    "attributes": Object {},
-                    "children": Array [
-                      Object {
-                        "attributes": Object {
-                          "value": "The former punk",
-                        },
-                        "children": Array [],
-                        "name": "text",
-                      },
-                    ],
-                    "name": "paragraph",
-                  },
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+      />
+    </View>
+  </View>
+</View>
 `;
 
 exports[`renders loading horizontal above breakpoint 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <CardComponent
-    image={
+<View
+  onLayout={[Function]}
+>
+  <View
+    style={
+      Array [
         Object {
-            "uri": "",
-          }
+          "flexDirection": "row",
+        },
+        undefined,
+      ]
     }
-    loading={true}
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "children": <View
-        style={
-                Array [
-                        Object {
-                          "flexDirection": "row",
-                        },
-                        undefined,
-                      ]
-        }
->
-        <View
-                style={
-                        Array [
-                                Object {
-                                  "flexGrow": 1,
-                                  "flexShrink": 1,
-                                },
-                                Object {
-                                  "flexBasis": 0,
-                                  "flexGrow": 3,
-                                },
-                              ]
-                }
-        >
-                <ArticleSummary
-                        date={null}
-                        headline=""
-                        label=""
-                        publication=""
-                        text={Array []}
-                />
-        </View>
-</View>,
-      "onLayout": [Function],
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          null,
-          <View
-            style={
-                        Array [
-                                    Object {
-                                      "flexGrow": 1,
-                                      "flexShrink": 1,
-                                    },
-                                    Object {
-                                      "flexBasis": 0,
-                                      "flexGrow": 3,
-                                    },
-                                  ]
-            }
->
-            <ArticleSummary
-                        date={null}
-                        headline=""
-                        label=""
-                        publication=""
-                        text={Array []}
-            />
-</View>,
-        ],
-        "style": Array [
+  >
+    <View
+      style={
+        Array [
           Object {
-            "flexDirection": "row",
+            "flexGrow": 1,
+            "flexShrink": 1,
           },
-          undefined,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        null,
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <ArticleSummary
-              date={null}
-              headline=""
-              label=""
-              publication=""
-              text={Array []}
-/>,
-            "style": Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              Object {
-                "flexBasis": 0,
-                "flexGrow": 3,
-              },
-            ],
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "date": null,
-              "headline": "",
-              "label": "",
-              "publication": "",
-              "text": Array [],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": <View
-          style={
-                    Array [
-                              Object {
-                                "flexDirection": "row",
-                              },
-                              undefined,
-                            ]
-          }
->
-          <View
-                    style={
-                              Array [
-                                        Object {
-                                          "flexGrow": 1,
-                                          "flexShrink": 1,
-                                        },
-                                        Object {
-                                          "flexBasis": 0,
-                                          "flexGrow": 3,
-                                        },
-                                      ]
-                    }
-          >
-                    <ArticleSummary
-                              date={null}
-                              headline=""
-                              label=""
-                              publication=""
-                              text={Array []}
-                    />
-          </View>
-</View>,
-        "onLayout": [Function],
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            null,
-            <View
-              style={
-                            Array [
-                                          Object {
-                                            "flexGrow": 1,
-                                            "flexShrink": 1,
-                                          },
-                                          Object {
-                                            "flexBasis": 0,
-                                            "flexGrow": 3,
-                                          },
-                                        ]
-              }
->
-              <ArticleSummary
-                            date={null}
-                            headline=""
-                            label=""
-                            publication=""
-                            text={Array []}
-              />
-</View>,
-          ],
-          "style": Array [
-            Object {
-              "flexDirection": "row",
-            },
-            undefined,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          null,
           Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <ArticleSummary
-                date={null}
-                headline=""
-                label=""
-                publication=""
-                text={Array []}
-/>,
-              "style": Array [
-                Object {
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                Object {
-                  "flexBasis": 0,
-                  "flexGrow": 3,
-                },
-              ],
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "date": null,
-                "headline": "",
-                "label": "",
-                "publication": "",
-                "text": Array [],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": [Function],
+            "flexBasis": 0,
+            "flexGrow": 3,
           },
-        ],
-        "type": [Function],
-      },
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+        ]
+      }
+    >
+      <ArticleSummary
+        date={null}
+        headline=""
+        label=""
+        publication=""
+        text={Array []}
+      />
+    </View>
+  </View>
+</View>
 `;
 
 exports[`renders loading vertical by default 1`] = `

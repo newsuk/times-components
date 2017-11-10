@@ -169,7 +169,7 @@ exports[`renders an article-summary component with content including line breaks
         ellipsizeMode="tail"
       >
         
-        
+
       </Text>
       ITV
       <Text
@@ -178,7 +178,7 @@ exports[`renders an article-summary component with content including line breaks
         ellipsizeMode="tail"
       >
         
-        
+
       </Text>
       ★★★★☆
     </Text>
@@ -206,7 +206,7 @@ exports[`renders an article-summary component with content including line breaks
         ellipsizeMode="tail"
       >
         
-        
+
       </Text>
       BBC Two
       <Text
@@ -215,7 +215,7 @@ exports[`renders an article-summary component with content including line breaks
         ellipsizeMode="tail"
       >
         
-        
+
       </Text>
       ★★★☆☆
     </Text>
