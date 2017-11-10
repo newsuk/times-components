@@ -25,7 +25,6 @@ exports[`Article test on android renders an error 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
   >
     An error occurred
@@ -33,7 +32,6 @@ exports[`Article test on android renders an error 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
-    disabled={false}
     ellipsizeMode="tail"
   >
     {
@@ -161,7 +159,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Array [
@@ -257,7 +254,6 @@ exports[`Article test on android renders article no flags 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
-        disabled={false}
         ellipsizeMode="tail"
         style={
           Array [
@@ -322,7 +318,6 @@ exports[`Article test on android renders article no flags 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -342,7 +337,6 @@ exports[`Article test on android renders article no flags 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
               >
                 Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -365,7 +359,6 @@ exports[`Article test on android renders article no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -401,7 +394,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -418,7 +410,6 @@ exports[`Article test on android renders article no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -432,7 +423,6 @@ exports[`Article test on android renders article no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -460,7 +450,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -476,7 +465,6 @@ exports[`Article test on android renders article no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -504,7 +492,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -536,7 +523,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -568,7 +554,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -600,7 +585,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -632,7 +616,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -664,7 +647,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -696,7 +678,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -728,7 +709,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -760,7 +740,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -792,7 +771,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -824,7 +802,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1027,7 +1004,6 @@ exports[`Article test on android renders article no label 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
-        disabled={false}
         ellipsizeMode="tail"
         style={
           Array [
@@ -1097,7 +1073,6 @@ exports[`Article test on android renders article no label 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -1161,7 +1136,6 @@ exports[`Article test on android renders article no label 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -1231,7 +1205,6 @@ exports[`Article test on android renders article no label 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -1251,7 +1224,6 @@ exports[`Article test on android renders article no label 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
               >
                 Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -1274,7 +1246,6 @@ exports[`Article test on android renders article no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -1310,7 +1281,6 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1327,7 +1297,6 @@ exports[`Article test on android renders article no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -1341,7 +1310,6 @@ exports[`Article test on android renders article no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -1369,7 +1337,6 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1385,7 +1352,6 @@ exports[`Article test on android renders article no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -1413,7 +1379,6 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1445,7 +1410,6 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1477,7 +1441,6 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1509,7 +1472,6 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1541,7 +1503,6 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1573,7 +1534,6 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1605,7 +1565,6 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1637,7 +1596,6 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1669,7 +1627,6 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1701,7 +1658,6 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1733,7 +1689,6 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -1936,7 +1891,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
-        disabled={false}
         ellipsizeMode="tail"
         style={
           Array [
@@ -2001,7 +1955,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -2021,7 +1974,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
               >
                 Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -2044,7 +1996,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -2080,7 +2031,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2097,7 +2047,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -2111,7 +2060,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -2139,7 +2087,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2155,7 +2102,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -2183,7 +2129,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2215,7 +2160,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2247,7 +2191,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2279,7 +2222,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2311,7 +2253,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2343,7 +2284,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2375,7 +2315,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2407,7 +2346,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2439,7 +2377,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2471,7 +2408,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2503,7 +2439,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2751,7 +2686,6 @@ exports[`Article test on android renders article no label no flags no standfirst
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -2771,7 +2705,6 @@ exports[`Article test on android renders article no label no flags no standfirst
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
               >
                 Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -2794,7 +2727,6 @@ exports[`Article test on android renders article no label no flags no standfirst
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -2830,7 +2762,6 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2847,7 +2778,6 @@ exports[`Article test on android renders article no label no flags no standfirst
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -2861,7 +2791,6 @@ exports[`Article test on android renders article no label no flags no standfirst
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -2889,7 +2818,6 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2905,7 +2833,6 @@ exports[`Article test on android renders article no label no flags no standfirst
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -2933,7 +2860,6 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2965,7 +2891,6 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -2997,7 +2922,6 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3029,7 +2953,6 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3061,7 +2984,6 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3093,7 +3015,6 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3125,7 +3046,6 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3157,7 +3077,6 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3189,7 +3108,6 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3221,7 +3139,6 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3253,7 +3170,6 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3392,7 +3308,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Array [
@@ -3538,7 +3453,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -3602,7 +3516,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -3672,7 +3585,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -3692,7 +3604,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
               >
                 Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -3715,7 +3626,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -3751,7 +3661,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3768,7 +3677,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -3782,7 +3690,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -3810,7 +3717,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3826,7 +3732,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -3854,7 +3759,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3886,7 +3790,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3918,7 +3821,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3950,7 +3852,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -3982,7 +3883,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4014,7 +3914,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4046,7 +3945,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4078,7 +3976,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4110,7 +4007,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4142,7 +4038,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4174,7 +4069,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4313,7 +4207,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Array [
@@ -4454,7 +4347,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -4474,7 +4366,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
               >
                 Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -4497,7 +4388,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -4533,7 +4423,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4550,7 +4439,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -4564,7 +4452,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -4592,7 +4479,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4608,7 +4494,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -4636,7 +4521,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4668,7 +4552,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4700,7 +4583,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4732,7 +4614,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4764,7 +4645,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4796,7 +4676,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4828,7 +4707,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4860,7 +4738,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4892,7 +4769,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4924,7 +4800,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -4956,7 +4831,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -5209,7 +5083,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -5273,7 +5146,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -5343,7 +5215,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -5363,7 +5234,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
               >
                 Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -5386,7 +5256,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -5422,7 +5291,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -5439,7 +5307,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -5453,7 +5320,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -5481,7 +5347,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -5497,7 +5362,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -5525,7 +5389,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -5557,7 +5420,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -5589,7 +5451,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -5621,7 +5482,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -5653,7 +5513,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -5685,7 +5544,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -5717,7 +5575,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -5749,7 +5606,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -5781,7 +5637,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -5813,7 +5668,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -5845,7 +5699,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -5984,7 +5837,6 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Array [
@@ -6080,7 +5932,6 @@ exports[`Article test on android renders full article 1`] = `
       <Text
         accessible={true}
         allowFontScaling={true}
-        disabled={false}
         ellipsizeMode="tail"
         style={
           Array [
@@ -6150,7 +6001,6 @@ exports[`Article test on android renders full article 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -6214,7 +6064,6 @@ exports[`Article test on android renders full article 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -6284,7 +6133,6 @@ exports[`Article test on android renders full article 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Array [
@@ -6304,7 +6152,6 @@ exports[`Article test on android renders full article 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
               >
                 Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -6327,7 +6174,6 @@ exports[`Article test on android renders full article 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Array [
@@ -6363,7 +6209,6 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -6380,7 +6225,6 @@ exports[`Article test on android renders full article 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -6394,7 +6238,6 @@ exports[`Article test on android renders full article 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -6422,7 +6265,6 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -6438,7 +6280,6 @@ exports[`Article test on android renders full article 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            disabled={false}
             ellipsizeMode="tail"
             style={
               Object {
@@ -6553,7 +6394,6 @@ exports[`Article test on android renders full article 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -6572,7 +6412,6 @@ exports[`Article test on android renders full article 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -6615,7 +6454,6 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -6647,7 +6485,6 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -6781,7 +6618,6 @@ exports[`Article test on android renders full article 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -6800,7 +6636,6 @@ exports[`Article test on android renders full article 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -6843,7 +6678,6 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -7049,7 +6883,6 @@ exports[`Article test on android renders full article 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              disabled={false}
               ellipsizeMode="tail"
               style={
                 Object {
@@ -7090,7 +6923,6 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -7224,7 +7056,6 @@ exports[`Article test on android renders full article 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -7243,7 +7074,6 @@ exports[`Article test on android renders full article 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -7286,7 +7116,6 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -7420,7 +7249,6 @@ exports[`Article test on android renders full article 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -7439,7 +7267,6 @@ exports[`Article test on android renders full article 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -7482,7 +7309,6 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -7514,7 +7340,6 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -7546,7 +7371,6 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -7578,7 +7402,6 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -7610,7 +7433,6 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
@@ -7642,7 +7464,6 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          disabled={false}
           ellipsizeMode="tail"
           style={
             Object {
