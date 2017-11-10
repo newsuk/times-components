@@ -32,7 +32,7 @@ ArticleContent.propTypes = {
 
 ArticleContent.defaultProps = {
   data: [],
-  renderRow: [],
+  renderRow: null,
   initialListSize: 0,
   scrollRenderAheadDistance: 0,
   pageSize: 0
