@@ -15,7 +15,8 @@
     "test:native:watch": "yarn test:native -- --bail --verbose --watchAll",
     "test": "yarn test:android -- --ci --bail && yarn test:ios -- --ci --bail && yarn test:web -- --ci --bail --coverage",
     "test:watch": "jest --projects */**/jest.config.js --watchAll",
-    "prettier:diff": "prettier --list-different '**/*.+(js|json)'",
+    "fmt": "prettier --write '**/*.+(js|json|md)' '!**/CHANGELOG.md'",
+    "prettier:diff": "prettier --list-different '**/*.+(js|json|md)' '!**/CHANGELOG.md'",
     "lint": "eslint . && npm run prettier:diff"
   },
   "repository": {
