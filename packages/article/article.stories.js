@@ -68,6 +68,7 @@ storiesOf("Article", module)
   .add("Default", () => {
     const props = {
       ...fullArticleFixture.data,
+      analyticsStream: () => {},
       isLoading: false
     };
 
@@ -75,6 +76,7 @@ storiesOf("Article", module)
   })
   .add("Loading", () => {
     const props = {
+      analyticsStream: () => {},
       isLoading: true
     };
 
@@ -82,6 +84,7 @@ storiesOf("Article", module)
   })
   .add("Error", () => {
     const props = {
+      analyticsStream: () => {},
       error: { message: "An example error." }
     };
 
@@ -91,7 +94,12 @@ storiesOf("Article", module)
     <MockedProvider mocks={mocks} client={client}>
       <ArticleProvider id="198c4b2f-ecec-4f34-be53-c89f83bc1b44">
         {({ article, isLoading, error }) => (
-          <Article article={article} isLoading={isLoading} error={error} />
+          <Article
+            article={article}
+            isLoading={isLoading}
+            error={error}
+            analyticsStream={() => {}}
+          />
         )}
       </ArticleProvider>
     </MockedProvider>
@@ -108,28 +116,46 @@ storiesOf("Article", module)
           >
             Click to render the ads
           </a>
-          <Article {...fullArticleFixture.data} />
+          <Article {...fullArticleFixture.data} analyticsStream={() => {}} />
         </div>
       );
     }
 
     return <Article {...fullArticleFixture.data} />;
   })
-  .add("Fixtures - No ads", () => <Article {...articleFixtureNoAds.data} />)
-  .add("Fixtures - No standfirst", () => (
-    <Article {...articleFixtureNoStandfirst.data} />
+  .add("Fixtures - No ads", () => (
+    <Article {...articleFixtureNoAds.data} analyticsStream={() => {}} />
   ))
-  .add("Fixtures - No label", () => <Article {...articleFixtureNoLabel.data} />)
-  .add("Fixtures - No flags", () => <Article {...articleFixtureNoFlags.data} />)
+  .add("Fixtures - No standfirst", () => (
+    <Article {...articleFixtureNoStandfirst.data} analyticsStream={() => {}} />
+  ))
+  .add("Fixtures - No label", () => (
+    <Article {...articleFixtureNoLabel.data} analyticsStream={() => {}} />
+  ))
+  .add("Fixtures - No flags", () => (
+    <Article {...articleFixtureNoFlags.data} analyticsStream={() => {}} />
+  ))
   .add("Fixtures - No standfirst, no label", () => (
-    <Article {...articleFixtureNoStandfirstNoLabel.data} />
+    <Article
+      {...articleFixtureNoStandfirstNoLabel.data}
+      analyticsStream={() => {}}
+    />
   ))
   .add("Fixtures - No standfirst, no flags", () => (
-    <Article {...articleFixtureNoStandfirstNoFlags.data} />
+    <Article
+      {...articleFixtureNoStandfirstNoFlags.data}
+      analyticsStream={() => {}}
+    />
   ))
   .add("Fixtures - No label, no flags", () => (
-    <Article {...articleFixtureNoLabelNoFlags.data} />
+    <Article
+      {...articleFixtureNoLabelNoFlags.data}
+      analyticsStream={() => {}}
+    />
   ))
   .add("Fixtures - No label, no flags, no standfirst", () => (
-    <Article {...articleFixtureNoLabelNoFlagsNoStandFirst.data} />
+    <Article
+      {...articleFixtureNoLabelNoFlagsNoStandFirst.data}
+      analyticsStream={() => {}}
+    />
   ));
