@@ -1,6 +1,6 @@
 {
   "name": "@times-components/jest-configurator",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Cross platform Jest Config",
   "main": "jest-configurator.js",
   "scripts": {
@@ -8,8 +8,7 @@
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watchAll --coverage",
     "fmt": "prettier --write '**/*.+(js|json|md)'",
-    "prettier:diff":
-      "prettier --list-different '**/*.+(js|json|md)'",
+    "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
     "lint": "eslint . && npm run prettier:diff"
   },
   "repository": {
