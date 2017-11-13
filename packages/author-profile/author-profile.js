@@ -23,7 +23,8 @@ const AuthorProfile = ({
     return <AuthorProfileError {...error} />;
   }
 
-  const { biography, name, image: uri, jobTitle, twitter } = author || {};
+  const { biography, name, image: uri, jobTitle, twitter, articles } =
+    author || {};
 
   return (
     <ArticleListProviderWithPageState
@@ -48,7 +49,7 @@ const AuthorProfile = ({
           jobTitle={jobTitle}
           twitter={twitter}
           onTwitterLinkPress={onTwitterLinkPress}
-          count={get(data, "articles.count")}
+          count={get(articles, "count", 0)}
           onNext={onNext}
           onPrev={onPrev}
           page={page}

@@ -9,6 +9,9 @@ export const query = gql`
       biography
       image
       twitter
+      articles {
+        count
+      }
     }
   }
 `;
