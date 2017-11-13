@@ -2,5 +2,5 @@
 **/coverage/*
 dist
 **/package.json
-**/android/*
-**/ios/*
+android/*
+ios/*
