@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.20"></a>
+## [0.5.20](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.5.19...@times-components/error-view@0.5.20) (2017-11-13)
+
+
+### Bug Fixes
+
+* bad property name ([#383](https://github.com/newsuk/times-components/issues/383)) ([612fd30](https://github.com/newsuk/times-components/commit/612fd30))
+
+
+
+
 <a name="0.5.19"></a>
 ## [0.5.19](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.5.18...@times-components/error-view@0.5.19) (2017-11-09)
 
