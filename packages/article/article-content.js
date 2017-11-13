@@ -2,10 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { FlatList } from "react-native";
 
-const ArticleContent = ({
-  data,
-  renderRow
-}) => (
+const ArticleContent = ({ data, renderRow }) => (
   <FlatList
     testID="scroll-view-article"
     keyExtractor={item => item.type + item.index || item.type}
