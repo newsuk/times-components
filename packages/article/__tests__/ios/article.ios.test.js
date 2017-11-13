@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-import shared from "./shared";
+import shared from "../shared";
 
 jest.mock("react-native", () => {
   const reactNative = require.requireActual("react-native");

@@ -178,33 +178,79 @@ exports[`Article test on android renders article no flags 1`] = `
           H U R R I C A N E   I R M A
         </Text>
       </View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      <WebView
+        onNavigationStateChange={[Function]}
+        source={
+          Object {
+            "baseUrl": "https://www.thetimes.co.uk/",
+            "html": "
+<style>
+  body, html, #height-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  #height-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+</style>
+
+    <div>
+      <style>
+        @font-face {
+          font-family: TimesModern-Bold;
+          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
+          font-weight: 400;
+          font-style: normal;
+        }
+        p {
+          color: #1D1D1B;
+          font-size: 22px;
+          line-height: 25px;
+          margin-bottom: 8px;
+          font-family: TimesModern-Bold;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+        }
+      </style>
+      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
+    </div>
+  
+<script>
+  ;(function() {
+  var wrapper = document.createElement(\\"div\\");
+  wrapper.id = \\"height-wrapper\\";
+  while (document.body.firstChild) {
+    wrapper.appendChild(document.body.firstChild);
+  }
+  document.body.appendChild(wrapper);
+  var i = 0;
+  function updateHeight() {
+    document.title = wrapper.clientHeight;
+    window.location.hash = ++i;
+  }
+  updateHeight();
+  window.addEventListener(\\"load\\", function() {
+    updateHeight();
+    setTimeout(updateHeight, 1000);
+  });
+  window.addEventListener(\\"resize\\", updateHeight);
+  }());
+</script>
+",
+          }
+        }
         style={
           Array [
+            null,
             Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
-              "fontWeight": "400",
-              "lineHeight": 25,
-              "marginBottom": 8,
-            },
-            Object {
-              "color": "#000000",
-              "fontSize": 28,
-              "fontWeight": "400",
-              "lineHeight": 37,
-              "marginBottom": 7,
+              "height": 20,
             },
           ]
         }
-        testID="headline"
-      >
-        Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-      </Text>
+      />
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -354,6 +400,7 @@ exports[`Article test on android renders article no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -409,6 +456,7 @@ exports[`Article test on android renders article no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -450,6 +498,7 @@ exports[`Article test on android renders article no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -480,6 +529,7 @@ exports[`Article test on android renders article no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -510,6 +560,7 @@ exports[`Article test on android renders article no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -540,6 +591,7 @@ exports[`Article test on android renders article no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -570,6 +622,7 @@ exports[`Article test on android renders article no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -600,6 +653,7 @@ exports[`Article test on android renders article no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -630,6 +684,7 @@ exports[`Article test on android renders article no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -660,6 +715,7 @@ exports[`Article test on android renders article no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -690,6 +746,7 @@ exports[`Article test on android renders article no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -720,6 +777,7 @@ exports[`Article test on android renders article no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -750,6 +808,7 @@ exports[`Article test on android renders article no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -869,33 +928,79 @@ exports[`Article test on android renders article no label 1`] = `
         ]
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      <WebView
+        onNavigationStateChange={[Function]}
+        source={
+          Object {
+            "baseUrl": "https://www.thetimes.co.uk/",
+            "html": "
+<style>
+  body, html, #height-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  #height-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+</style>
+
+    <div>
+      <style>
+        @font-face {
+          font-family: TimesModern-Bold;
+          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
+          font-weight: 400;
+          font-style: normal;
+        }
+        p {
+          color: #1D1D1B;
+          font-size: 22px;
+          line-height: 25px;
+          margin-bottom: 8px;
+          font-family: TimesModern-Bold;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+        }
+      </style>
+      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
+    </div>
+  
+<script>
+  ;(function() {
+  var wrapper = document.createElement(\\"div\\");
+  wrapper.id = \\"height-wrapper\\";
+  while (document.body.firstChild) {
+    wrapper.appendChild(document.body.firstChild);
+  }
+  document.body.appendChild(wrapper);
+  var i = 0;
+  function updateHeight() {
+    document.title = wrapper.clientHeight;
+    window.location.hash = ++i;
+  }
+  updateHeight();
+  window.addEventListener(\\"load\\", function() {
+    updateHeight();
+    setTimeout(updateHeight, 1000);
+  });
+  window.addEventListener(\\"resize\\", updateHeight);
+  }());
+</script>
+",
+          }
+        }
         style={
           Array [
+            null,
             Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
-              "fontWeight": "400",
-              "lineHeight": 25,
-              "marginBottom": 8,
-            },
-            Object {
-              "color": "#000000",
-              "fontSize": 28,
-              "fontWeight": "400",
-              "lineHeight": 37,
-              "marginBottom": 7,
+              "height": 20,
             },
           ]
         }
-        testID="headline"
-      >
-        Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-      </Text>
+      />
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -1182,6 +1287,7 @@ exports[`Article test on android renders article no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -1237,6 +1343,7 @@ exports[`Article test on android renders article no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -1278,6 +1385,7 @@ exports[`Article test on android renders article no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -1308,6 +1416,7 @@ exports[`Article test on android renders article no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -1338,6 +1447,7 @@ exports[`Article test on android renders article no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -1368,6 +1478,7 @@ exports[`Article test on android renders article no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -1398,6 +1509,7 @@ exports[`Article test on android renders article no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -1428,6 +1540,7 @@ exports[`Article test on android renders article no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -1458,6 +1571,7 @@ exports[`Article test on android renders article no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -1488,6 +1602,7 @@ exports[`Article test on android renders article no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -1518,6 +1633,7 @@ exports[`Article test on android renders article no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -1548,6 +1664,7 @@ exports[`Article test on android renders article no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -1578,6 +1695,7 @@ exports[`Article test on android renders article no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -1697,33 +1815,79 @@ exports[`Article test on android renders article no label no flags 1`] = `
         ]
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      <WebView
+        onNavigationStateChange={[Function]}
+        source={
+          Object {
+            "baseUrl": "https://www.thetimes.co.uk/",
+            "html": "
+<style>
+  body, html, #height-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  #height-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+</style>
+
+    <div>
+      <style>
+        @font-face {
+          font-family: TimesModern-Bold;
+          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
+          font-weight: 400;
+          font-style: normal;
+        }
+        p {
+          color: #1D1D1B;
+          font-size: 22px;
+          line-height: 25px;
+          margin-bottom: 8px;
+          font-family: TimesModern-Bold;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+        }
+      </style>
+      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
+    </div>
+  
+<script>
+  ;(function() {
+  var wrapper = document.createElement(\\"div\\");
+  wrapper.id = \\"height-wrapper\\";
+  while (document.body.firstChild) {
+    wrapper.appendChild(document.body.firstChild);
+  }
+  document.body.appendChild(wrapper);
+  var i = 0;
+  function updateHeight() {
+    document.title = wrapper.clientHeight;
+    window.location.hash = ++i;
+  }
+  updateHeight();
+  window.addEventListener(\\"load\\", function() {
+    updateHeight();
+    setTimeout(updateHeight, 1000);
+  });
+  window.addEventListener(\\"resize\\", updateHeight);
+  }());
+</script>
+",
+          }
+        }
         style={
           Array [
+            null,
             Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
-              "fontWeight": "400",
-              "lineHeight": 25,
-              "marginBottom": 8,
-            },
-            Object {
-              "color": "#000000",
-              "fontSize": 28,
-              "fontWeight": "400",
-              "lineHeight": 37,
-              "marginBottom": 7,
+              "height": 20,
             },
           ]
         }
-        testID="headline"
-      >
-        Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-      </Text>
+      />
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -1873,6 +2037,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -1928,6 +2093,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -1969,6 +2135,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -1999,6 +2166,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2029,6 +2197,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2059,6 +2228,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2089,6 +2259,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2119,6 +2290,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2149,6 +2321,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2179,6 +2352,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2209,6 +2383,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2239,6 +2414,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2269,6 +2445,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2388,33 +2565,79 @@ exports[`Article test on android renders article no label no flags no standfirst
         ]
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      <WebView
+        onNavigationStateChange={[Function]}
+        source={
+          Object {
+            "baseUrl": "https://www.thetimes.co.uk/",
+            "html": "
+<style>
+  body, html, #height-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  #height-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+</style>
+
+    <div>
+      <style>
+        @font-face {
+          font-family: TimesModern-Bold;
+          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
+          font-weight: 400;
+          font-style: normal;
+        }
+        p {
+          color: #1D1D1B;
+          font-size: 22px;
+          line-height: 25px;
+          margin-bottom: 8px;
+          font-family: TimesModern-Bold;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+        }
+      </style>
+      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
+    </div>
+  
+<script>
+  ;(function() {
+  var wrapper = document.createElement(\\"div\\");
+  wrapper.id = \\"height-wrapper\\";
+  while (document.body.firstChild) {
+    wrapper.appendChild(document.body.firstChild);
+  }
+  document.body.appendChild(wrapper);
+  var i = 0;
+  function updateHeight() {
+    document.title = wrapper.clientHeight;
+    window.location.hash = ++i;
+  }
+  updateHeight();
+  window.addEventListener(\\"load\\", function() {
+    updateHeight();
+    setTimeout(updateHeight, 1000);
+  });
+  window.addEventListener(\\"resize\\", updateHeight);
+  }());
+</script>
+",
+          }
+        }
         style={
           Array [
+            null,
             Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
-              "fontWeight": "400",
-              "lineHeight": 25,
-              "marginBottom": 8,
-            },
-            Object {
-              "color": "#000000",
-              "fontSize": 28,
-              "fontWeight": "400",
-              "lineHeight": 37,
-              "marginBottom": 7,
+              "height": 20,
             },
           ]
         }
-        testID="headline"
-      >
-        Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-      </Text>
+      />
     </View>
     <View
       style={
@@ -2545,6 +2768,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2600,6 +2824,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2641,6 +2866,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2671,6 +2897,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2701,6 +2928,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2731,6 +2959,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2761,6 +2990,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2791,6 +3021,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2821,6 +3052,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2851,6 +3083,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2881,6 +3114,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2911,6 +3145,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -2941,6 +3176,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -3091,33 +3327,79 @@ exports[`Article test on android renders article no standfirst 1`] = `
           H U R R I C A N E   I R M A
         </Text>
       </View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      <WebView
+        onNavigationStateChange={[Function]}
+        source={
+          Object {
+            "baseUrl": "https://www.thetimes.co.uk/",
+            "html": "
+<style>
+  body, html, #height-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  #height-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+</style>
+
+    <div>
+      <style>
+        @font-face {
+          font-family: TimesModern-Bold;
+          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
+          font-weight: 400;
+          font-style: normal;
+        }
+        p {
+          color: #1D1D1B;
+          font-size: 22px;
+          line-height: 25px;
+          margin-bottom: 8px;
+          font-family: TimesModern-Bold;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+        }
+      </style>
+      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
+    </div>
+  
+<script>
+  ;(function() {
+  var wrapper = document.createElement(\\"div\\");
+  wrapper.id = \\"height-wrapper\\";
+  while (document.body.firstChild) {
+    wrapper.appendChild(document.body.firstChild);
+  }
+  document.body.appendChild(wrapper);
+  var i = 0;
+  function updateHeight() {
+    document.title = wrapper.clientHeight;
+    window.location.hash = ++i;
+  }
+  updateHeight();
+  window.addEventListener(\\"load\\", function() {
+    updateHeight();
+    setTimeout(updateHeight, 1000);
+  });
+  window.addEventListener(\\"resize\\", updateHeight);
+  }());
+</script>
+",
+          }
+        }
         style={
           Array [
+            null,
             Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
-              "fontWeight": "400",
-              "lineHeight": 25,
-              "marginBottom": 8,
-            },
-            Object {
-              "color": "#000000",
-              "fontSize": 28,
-              "fontWeight": "400",
-              "lineHeight": 37,
-              "marginBottom": 7,
+              "height": 20,
             },
           ]
         }
-        testID="headline"
-      >
-        Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-      </Text>
+      />
       <View
         style={
           Array [
@@ -3385,6 +3667,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -3440,6 +3723,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -3481,6 +3765,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -3511,6 +3796,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -3541,6 +3827,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -3571,6 +3858,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -3601,6 +3889,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -3631,6 +3920,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -3661,6 +3951,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -3691,6 +3982,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -3721,6 +4013,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -3751,6 +4044,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -3781,6 +4075,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -3931,33 +4226,79 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           H U R R I C A N E   I R M A
         </Text>
       </View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      <WebView
+        onNavigationStateChange={[Function]}
+        source={
+          Object {
+            "baseUrl": "https://www.thetimes.co.uk/",
+            "html": "
+<style>
+  body, html, #height-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  #height-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+</style>
+
+    <div>
+      <style>
+        @font-face {
+          font-family: TimesModern-Bold;
+          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
+          font-weight: 400;
+          font-style: normal;
+        }
+        p {
+          color: #1D1D1B;
+          font-size: 22px;
+          line-height: 25px;
+          margin-bottom: 8px;
+          font-family: TimesModern-Bold;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+        }
+      </style>
+      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
+    </div>
+  
+<script>
+  ;(function() {
+  var wrapper = document.createElement(\\"div\\");
+  wrapper.id = \\"height-wrapper\\";
+  while (document.body.firstChild) {
+    wrapper.appendChild(document.body.firstChild);
+  }
+  document.body.appendChild(wrapper);
+  var i = 0;
+  function updateHeight() {
+    document.title = wrapper.clientHeight;
+    window.location.hash = ++i;
+  }
+  updateHeight();
+  window.addEventListener(\\"load\\", function() {
+    updateHeight();
+    setTimeout(updateHeight, 1000);
+  });
+  window.addEventListener(\\"resize\\", updateHeight);
+  }());
+</script>
+",
+          }
+        }
         style={
           Array [
+            null,
             Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
-              "fontWeight": "400",
-              "lineHeight": 25,
-              "marginBottom": 8,
-            },
-            Object {
-              "color": "#000000",
-              "fontSize": 28,
-              "fontWeight": "400",
-              "lineHeight": 37,
-              "marginBottom": 7,
+              "height": 20,
             },
           ]
         }
-        testID="headline"
-      >
-        Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-      </Text>
+      />
     </View>
     <View
       style={
@@ -4088,6 +4429,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -4143,6 +4485,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -4184,6 +4527,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -4214,6 +4558,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -4244,6 +4589,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -4274,6 +4620,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -4304,6 +4651,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -4334,6 +4682,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -4364,6 +4713,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -4394,6 +4744,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -4424,6 +4775,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -4454,6 +4806,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -4484,6 +4837,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -4603,33 +4957,79 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         ]
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      <WebView
+        onNavigationStateChange={[Function]}
+        source={
+          Object {
+            "baseUrl": "https://www.thetimes.co.uk/",
+            "html": "
+<style>
+  body, html, #height-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  #height-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+</style>
+
+    <div>
+      <style>
+        @font-face {
+          font-family: TimesModern-Bold;
+          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
+          font-weight: 400;
+          font-style: normal;
+        }
+        p {
+          color: #1D1D1B;
+          font-size: 22px;
+          line-height: 25px;
+          margin-bottom: 8px;
+          font-family: TimesModern-Bold;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+        }
+      </style>
+      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
+    </div>
+  
+<script>
+  ;(function() {
+  var wrapper = document.createElement(\\"div\\");
+  wrapper.id = \\"height-wrapper\\";
+  while (document.body.firstChild) {
+    wrapper.appendChild(document.body.firstChild);
+  }
+  document.body.appendChild(wrapper);
+  var i = 0;
+  function updateHeight() {
+    document.title = wrapper.clientHeight;
+    window.location.hash = ++i;
+  }
+  updateHeight();
+  window.addEventListener(\\"load\\", function() {
+    updateHeight();
+    setTimeout(updateHeight, 1000);
+  });
+  window.addEventListener(\\"resize\\", updateHeight);
+  }());
+</script>
+",
+          }
+        }
         style={
           Array [
+            null,
             Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
-              "fontWeight": "400",
-              "lineHeight": 25,
-              "marginBottom": 8,
-            },
-            Object {
-              "color": "#000000",
-              "fontSize": 28,
-              "fontWeight": "400",
-              "lineHeight": 37,
-              "marginBottom": 7,
+              "height": 20,
             },
           ]
         }
-        testID="headline"
-      >
-        Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-      </Text>
+      />
       <View
         style={
           Array [
@@ -4897,6 +5297,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -4952,6 +5353,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -4993,6 +5395,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -5023,6 +5426,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -5053,6 +5457,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -5083,6 +5488,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -5113,6 +5519,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -5143,6 +5550,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -5173,6 +5581,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -5203,6 +5612,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -5233,6 +5643,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -5263,6 +5674,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -5293,6 +5705,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -5443,33 +5856,79 @@ exports[`Article test on android renders full article 1`] = `
           H U R R I C A N E   I R M A
         </Text>
       </View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      <WebView
+        onNavigationStateChange={[Function]}
+        source={
+          Object {
+            "baseUrl": "https://www.thetimes.co.uk/",
+            "html": "
+<style>
+  body, html, #height-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  #height-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+</style>
+
+    <div>
+      <style>
+        @font-face {
+          font-family: TimesModern-Bold;
+          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
+          font-weight: 400;
+          font-style: normal;
+        }
+        p {
+          color: #1D1D1B;
+          font-size: 22px;
+          line-height: 25px;
+          margin-bottom: 8px;
+          font-family: TimesModern-Bold;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+        }
+      </style>
+      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
+    </div>
+  
+<script>
+  ;(function() {
+  var wrapper = document.createElement(\\"div\\");
+  wrapper.id = \\"height-wrapper\\";
+  while (document.body.firstChild) {
+    wrapper.appendChild(document.body.firstChild);
+  }
+  document.body.appendChild(wrapper);
+  var i = 0;
+  function updateHeight() {
+    document.title = wrapper.clientHeight;
+    window.location.hash = ++i;
+  }
+  updateHeight();
+  window.addEventListener(\\"load\\", function() {
+    updateHeight();
+    setTimeout(updateHeight, 1000);
+  });
+  window.addEventListener(\\"resize\\", updateHeight);
+  }());
+</script>
+",
+          }
+        }
         style={
           Array [
+            null,
             Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
-              "fontWeight": "400",
-              "lineHeight": 25,
-              "marginBottom": 8,
-            },
-            Object {
-              "color": "#000000",
-              "fontSize": 28,
-              "fontWeight": "400",
-              "lineHeight": 37,
-              "marginBottom": 7,
+              "height": 20,
             },
           ]
         }
-        testID="headline"
-      >
-        Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-      </Text>
+      />
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -5756,6 +6215,7 @@ exports[`Article test on android renders full article 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -5811,6 +6271,7 @@ exports[`Article test on android renders full article 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -5999,6 +6460,7 @@ exports[`Article test on android renders full article 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -6029,6 +6491,7 @@ exports[`Article test on android renders full article 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -6221,6 +6684,7 @@ exports[`Article test on android renders full article 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -6465,6 +6929,7 @@ exports[`Article test on android renders full article 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -6657,6 +7122,7 @@ exports[`Article test on android renders full article 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -6849,6 +7315,7 @@ exports[`Article test on android renders full article 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -6879,6 +7346,7 @@ exports[`Article test on android renders full article 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -6909,6 +7377,7 @@ exports[`Article test on android renders full article 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -6939,6 +7408,7 @@ exports[`Article test on android renders full article 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -6969,6 +7439,7 @@ exports[`Article test on android renders full article 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }
@@ -6999,6 +7470,7 @@ exports[`Article test on android renders full article 1`] = `
               "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
+              "fontStyle": "normal",
               "lineHeight": 26,
               "marginBottom": 20,
             }

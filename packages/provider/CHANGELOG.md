@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.14.8"></a>
+## [0.14.8](https://github.com/newsuk/times-components/compare/@times-components/provider@0.14.7...@times-components/provider@0.14.8) (2017-11-10)
+
+
+### Bug Fixes
+
+* don't point at dev imageserver ([#375](https://github.com/newsuk/times-components/issues/375)) ([fc8dcbc](https://github.com/newsuk/times-components/commit/fc8dcbc))
+
+
+
+
 <a name="0.14.7"></a>
 ## [0.14.7](https://github.com/newsuk/times-components/compare/@times-components/provider@0.14.6...@times-components/provider@0.14.7) (2017-11-09)
 

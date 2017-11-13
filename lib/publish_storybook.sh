@@ -22,6 +22,9 @@ git config user.email "hello@ghbot.com"
 # set origin url with token for write access
 git remote add origin https://${GH_TOKEN}@github.com/newsuk/times-components.git > /dev/null 2>&1
 
+# allow storybook to be served at http://components.thetimes.co.uk
+echo "components.thetimes.co.uk" > CNAME
+
 # The first and only commit to this new Git repo contains all the
 # files present with the commit message "Deploy to GitHub Pages".
 git add .

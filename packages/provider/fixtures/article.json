@@ -129,7 +129,7 @@
             "credits": "",
             "ratio": "3:2",
             "url":
-              "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/75af7a1e03f4d1b4f337969a29f9303047b81c78.png?crop=720%2C480%2C140%2C0"
+              "//www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F55d745e0-be2d-11e7-9a87-d1b2efaf80f8.jpg?crop=2667%2C1500%2C0%2C0&resize=1200"
           },
           "children": []
         },
@@ -210,7 +210,7 @@
         "crop": {
           "ratio": "16:9",
           "url":
-            "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/adb4a48fc124b9cd4cf98c3a793ddae80d870e2e.jpg?crop=780%2C439%2C0%2C40",
+            "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7b10771a-4362-11e6-a45d-8299bb50a973.jpg?crop=2048%2C1152%2C0%2C107&resize=1200",
           "__typename": "Crop"
         },
         "__typename": "Image"
