@@ -68,8 +68,8 @@ storiesOf("Article", module)
   .add("Default", () => {
     const props = {
       ...fullArticleFixture.data,
-      analyticsStream: () => {},
-      isLoading: false
+      isLoading: false,
+      analyticsStream: () => {}
     };
 
     return <Article {...props} />;
