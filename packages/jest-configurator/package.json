@@ -7,9 +7,9 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watchAll --coverage",
-    "fmt": "prettier --write '**/*.+(js|json|md)' '!**/CHANGELOG.md'",
+    "fmt": "prettier --write '**/*.+(js|json|md)'",
     "prettier:diff":
-      "prettier --list-different '**/*.+(js|json|md)' '!**/CHANGELOG.md'",
+      "prettier --list-different '**/*.+(js|json|md)'",
     "lint": "eslint . && npm run prettier:diff"
   },
   "repository": {
