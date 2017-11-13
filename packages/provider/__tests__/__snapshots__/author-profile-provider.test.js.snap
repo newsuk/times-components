@@ -3,6 +3,11 @@
 exports[`returns query result 1`] = `
 Object {
   "__typename": "Author",
+  "articles": Object {
+    "__typename": "Articles",
+    "count": 24,
+    Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"fiona-hamilton\\"}).articles",
+  },
   "biography": Array [
     Object {
       "attributes": Object {

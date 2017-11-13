@@ -56,7 +56,7 @@ exports[`renders profile content 1`] = `
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
     <AuthorProfilePagination
-      count={undefined}
+      count={10}
       hideResults={true}
       onNext={[Function]}
       onPrev={[Function]}
@@ -131,7 +131,7 @@ exports[`renders profile content 1`] = `
         uri="https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200"
       />
       <AuthorProfilePagination
-        count={undefined}
+        count={10}
         hideResults={false}
         onNext={[Function]}
         onPrev={[Function]}
@@ -500,7 +500,7 @@ exports[`renders profile content 1`] = `
                     ]
                   }
                 >
-                  Showing 1 - 0 of 0 results
+                  Showing 1 - 10 of 10 results
                 </Text>
               </View>
               <View
