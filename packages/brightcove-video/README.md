@@ -7,7 +7,9 @@
 * `yarn add @times-components/brightcove-video`
 * `react-native link`
 
-:warning: For native, the `policyKey` is required, see [Brightcove's Policy API](https://docs.brightcove.com/en/video-cloud/policy-api/getting-started/api-overview.html) for more details.
+:warning: For native, the `policyKey` is required, see
+[Brightcove's Policy API](https://docs.brightcove.com/en/video-cloud/policy-api/getting-started/api-overview.html)
+for more details.
 
 ## Android requirement
 
@@ -43,7 +45,8 @@ allprojects {
 }
 ```
 
-and update the version of `gradlew` by changing one line in `android/gradle/wrapper/gradle-wrapper.properties`:
+and update the version of `gradlew` by changing one line in
+`android/gradle/wrapper/gradle-wrapper.properties`:
 
 ```diff
 distributionBase=GRADLE_USER_HOME
@@ -80,7 +83,9 @@ pod repo update
 
 ### Install Manually
 
-To install the Brightcove SDK, follow Brightcove's instructions found [here](https://github.com/brightcove/brightcove-player-sdk-ios#manual). We recommend using `v5.3.3`, however any recent version should be fine.
+To install the Brightcove SDK, follow Brightcove's instructions found
+[here](https://github.com/brightcove/brightcove-player-sdk-ios#manual). We
+recommend using `v5.3.3`, however any recent version should be fine.
 
 ## Android install of the Brightcove SDK
 
@@ -96,26 +101,26 @@ repositories {
 
 Properties types are defined in `./brightcove-video.proptypes.js`
 
-| Property name | Property type | Comment
-| --- | --- | ---
-| `videoId` | string (required) | ID of the Brightcove video
-| `accountId` | string (required) | ID of the Brightcove account
-| `policyKey` | string | policy key (native only)
-| `playerId` | string | ID of the player (web only)
-| `width` | number | width of the player
-| `height` | number | height of the player
-| `poster` | object | poster [image source](https://facebook.github.io/react-native/docs/image.html#source)
-| `onError` | function | Handle errors
-| `onPlay` | function | Handles play events
-| `onPause` | function | Handles pause events
-| `onProgress` | function | Handles progress events
-| `onFinish` | function | Handles video finish events
-| `onEnterFullscreen` | function | Handles video entering fullscreen (Android only)
-| `onExitFullscreen` | function | Handles video exiting fullscreen (Android only)
-| `autoplay` | boolean | Should the video autoplay? (default false)
-| `directToFullscreen` | boolean | Should the video play directly in fullscreen? (default false) (Native only)
-| `hideFullScreenButton` | boolean | Should the full screen button be hidden? (default false)
-| `resetOnFinish` | boolean | Should the video reset to poster image when video finishes? (default false)
+| Property name          | Property type     | Comment                                                                               |
+| ---------------------- | ----------------- | ------------------------------------------------------------------------------------- |
+| `videoId`              | string (required) | ID of the Brightcove video                                                            |
+| `accountId`            | string (required) | ID of the Brightcove account                                                          |
+| `policyKey`            | string            | policy key (native only)                                                              |
+| `playerId`             | string            | ID of the player (web only)                                                           |
+| `width`                | number            | width of the player                                                                   |
+| `height`               | number            | height of the player                                                                  |
+| `poster`               | object            | poster [image source](https://facebook.github.io/react-native/docs/image.html#source) |
+| `onError`              | function          | Handle errors                                                                         |
+| `onPlay`               | function          | Handles play events                                                                   |
+| `onPause`              | function          | Handles pause events                                                                  |
+| `onProgress`           | function          | Handles progress events                                                               |
+| `onFinish`             | function          | Handles video finish events                                                           |
+| `onEnterFullscreen`    | function          | Handles video entering fullscreen (Android only)                                      |
+| `onExitFullscreen`     | function          | Handles video exiting fullscreen (Android only)                                       |
+| `autoplay`             | boolean           | Should the video autoplay? (default false)                                            |
+| `directToFullscreen`   | boolean           | Should the video play directly in fullscreen? (default false) (Native only)           |
+| `hideFullScreenButton` | boolean           | Should the full screen button be hidden? (default false)                              |
+| `resetOnFinish`        | boolean           | Should the video reset to poster image when video finishes? (default false)           |
 
 ## Usage
 
@@ -133,5 +138,4 @@ import BrightcoveVideo from '@times-component/brightcove-video';
     policyKey={BRIGHTCOVE_POLICY_KEY} // Required for native
     autoplay={true}
 />
-
 ```

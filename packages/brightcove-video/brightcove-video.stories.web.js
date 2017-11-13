@@ -11,23 +11,23 @@ const videoId = "4084164751001";
 const posterImageURI =
   "https://clips.news.co.uk/thetimes/p5dzhoYzE6kYmndXxYdBsfnnyMzDVTyD/Ut_HKthATH4eww8X4xMDoxOmFkOxyVqc";
 
-storiesOf(
-  "BrightcoveVideo (Web)",
-  module
-).add("Launcher with custom play icon defined by emoji", () => {
-  const playIconEmoji = () => (
-    <span role="img" aria-label="play-video">
-      ▶️
-    </span>
-  );
+storiesOf("BrightcoveVideo (Web)", module).add(
+  "Launcher with custom play icon defined by emoji",
+  () => {
+    const playIconEmoji = () => (
+      <span role="img" aria-label="play-video">
+        ▶️
+      </span>
+    );
 
-  return (
-    <BrightcoveVideo
-      policyKey={policyKey}
-      videoId={videoId}
-      accountId={accountId}
-      poster={{ uri: posterImageURI }}
-      playIcon={playIconEmoji()}
-    />
-  );
-});
+    return (
+      <BrightcoveVideo
+        policyKey={policyKey}
+        videoId={videoId}
+        accountId={accountId}
+        poster={{ uri: posterImageURI }}
+        playIcon={playIconEmoji()}
+      />
+    );
+  }
+);

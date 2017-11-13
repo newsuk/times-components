@@ -9,7 +9,8 @@
     "test:native": "jest --config='./jest.config.json'",
     "test:web": "jest --config='./jest.config.web.json'",
     "test": "npm run test:native -- --ci --bail && npm run test:web -- --ci --bail --coverage",
-    "prettier:diff": "prettier --list-different '**/*.+(js|json)'",
+    "fmt": "prettier --write '**/*.+(js|json|md)'",
+    "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
     "lint": "eslint . && npm run prettier:diff"
   },
   "repository": {
@@ -44,7 +45,7 @@
     "eslint-plugin-react": "7.4.0",
     "flow-bin": "0.42.0",
     "jest": "21.2.1",
-    "prettier": "1.7.0",
+    "prettier": "1.8.2",
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "react-native": "0.50.1",

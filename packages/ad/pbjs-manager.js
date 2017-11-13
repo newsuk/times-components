@@ -61,7 +61,8 @@ const PbjsManager = class PbjsManager {
               if (bidResponse.cpm < options.bucketSize) {
                 return options.minPrice.toFixed(2);
               }
-              return (bidResponse.cpm -
+              return (
+                bidResponse.cpm -
                 bidResponse.cpm % options.bucketSize
               ).toFixed(2);
             }
