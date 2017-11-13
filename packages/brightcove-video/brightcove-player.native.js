@@ -164,7 +164,8 @@ BrightcoveVideo.propTypes = {
   onChange: PropTypes.func,
   position: PropTypes.string,
   zIndex: PropTypes.number,
-  ...propTypes
+  ...propTypes,
+  policyKey: PropTypes.string.isRequired
 };
 
 export default BrightcoveVideo;

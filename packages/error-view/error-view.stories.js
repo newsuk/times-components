@@ -57,7 +57,7 @@ storiesOf("ErrorView", module)
       style={{ width: 400, height: 300 }}
       width={400}
       height={300}
-      policyId="x"
+      policyKey="x"
       videoId="y"
       accountId="z"
     />
