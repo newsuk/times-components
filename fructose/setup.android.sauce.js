@@ -16,7 +16,7 @@ if (!SAUCE_KEY || !SAUCE_USERNAME) {
 
 global.asserter = wd.asserters;
 const driver = wd.promiseChainRemote(
-  `https://tnlweb:7e884983-5d63-46f1-a511-d7101bc1b83a@ondemand.saucelabs.com:443/wd/hub`
+  `https://${SAUCE_USERNAME}:${SAUCE_KEY}@ondemand.saucelabs.com:443/wd/hub`
 );
 
 beforeAll(async () => {

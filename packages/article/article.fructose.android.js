@@ -33,7 +33,7 @@ withComponent(
     test("default Article should render correctly", async () => {
       await isComponentDisplayed("leadAsset");
       await isComponentDisplayed("label");
-      // await isComponentDisplayed('headline'); // commented out as the headline issue needs to be addressed
+      await isComponentDisplayed('headline');
       await isComponentDisplayed("standfirst");
       await isComponentDisplayed("flag-new");
       await isComponentDisplayed("flag-exclusive");
