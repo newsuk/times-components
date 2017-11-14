@@ -4,7 +4,7 @@ import { FlatList } from "react-native";
 
 const ArticleContent = ({ data, renderRow }) => (
   <FlatList
-    testID="scroll-view-article"
+    testID="flat-list-article"
     keyExtractor={item => item.type + item.index || item.type}
     data={data}
     renderItem={({ item }) => renderRow(item)}

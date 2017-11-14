@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Article test on ios renders activity indicator  1`] = `
+exports[`Article test on android renders activity indicator  1`] = `
 <View
   style={
     Object {
@@ -13,14 +13,14 @@ exports[`Article test on ios renders activity indicator  1`] = `
 >
   <ActivityIndicator
     animating={true}
-    color="#999999"
+    color={undefined}
     hidesWhenStopped={true}
     size="large"
   />
 </View>
 `;
 
-exports[`Article test on ios renders an error 1`] = `
+exports[`Article test on android renders an error 1`] = `
 <View>
   <Text
     accessible={true}
@@ -41,7 +41,7 @@ exports[`Article test on ios renders an error 1`] = `
 </View>
 `;
 
-exports[`Article test on ios renders article no flags 1`] = `
+exports[`Article test on android renders article no flags 1`] = `
 <RCTScrollView
   data={
     Array [
@@ -382,7 +382,7 @@ exports[`Article test on ios renders article no flags 1`] = `
       <View
         style={
           Object {
-            "marginBottom": 10,
+            "marginBottom": 6,
           }
         }
         testID="leadAsset"
@@ -522,36 +522,82 @@ exports[`Article test on ios renders article no flags 1`] = `
               ]
             }
           >
-            HURRICANE IRMA
+            H U R R I C A N E   I R M A
           </Text>
         </View>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
+        <WebView
+          onNavigationStateChange={[Function]}
+          source={
+            Object {
+              "baseUrl": "https://www.thetimes.co.uk/",
+              "html": "
+<style>
+  body, html, #height-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  #height-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+</style>
+
+    <div>
+      <style>
+        @font-face {
+          font-family: TimesModern-Bold;
+          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
+          font-weight: 400;
+          font-style: normal;
+        }
+        p {
+          color: #1D1D1B;
+          font-size: 22px;
+          line-height: 25px;
+          margin-bottom: 8px;
+          font-family: TimesModern-Bold;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+        }
+      </style>
+      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
+    </div>
+  
+<script>
+  ;(function() {
+  var wrapper = document.createElement(\\"div\\");
+  wrapper.id = \\"height-wrapper\\";
+  while (document.body.firstChild) {
+    wrapper.appendChild(document.body.firstChild);
+  }
+  document.body.appendChild(wrapper);
+  var i = 0;
+  function updateHeight() {
+    document.title = wrapper.clientHeight;
+    window.location.hash = ++i;
+  }
+  updateHeight();
+  window.addEventListener(\\"load\\", function() {
+    updateHeight();
+    setTimeout(updateHeight, 1000);
+  });
+  window.addEventListener(\\"resize\\", updateHeight);
+  }());
+</script>
+",
+            }
+          }
           style={
             Array [
+              null,
               Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 30,
-                "fontWeight": "700",
-                "lineHeight": 32,
-                "marginBottom": 7,
+                "height": 20,
               },
             ]
           }
-          testID="headline"
-        >
-          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-        </Text>
+        />
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -562,7 +608,7 @@ exports[`Article test on ios renders article no flags 1`] = `
                 "color": "#333333",
                 "fontFamily": "TimesModern-Regular",
                 "fontSize": 21,
-                "lineHeight": 25,
+                "lineHeight": 29,
                 "paddingBottom": 9,
               },
             ]
@@ -605,8 +651,8 @@ exports[`Article test on ios renders article no flags 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
+                  "paddingBottom": 8,
+                  "paddingTop": 6,
                 },
               ]
             }
@@ -630,7 +676,7 @@ exports[`Article test on ios renders article no flags 1`] = `
                     Object {
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
-                      "lineHeight": 14,
+                      "lineHeight": 17,
                     },
                     undefined,
                     Object {
@@ -656,8 +702,8 @@ exports[`Article test on ios renders article no flags 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
+                  "paddingBottom": 8,
+                  "paddingTop": 6,
                 },
               ]
             }
@@ -710,7 +756,8 @@ exports[`Article test on ios renders article no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -770,7 +817,8 @@ exports[`Article test on ios renders article no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -816,7 +864,8 @@ exports[`Article test on ios renders article no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -851,7 +900,8 @@ exports[`Article test on ios renders article no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -886,7 +936,8 @@ exports[`Article test on ios renders article no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -921,7 +972,8 @@ exports[`Article test on ios renders article no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -956,7 +1008,8 @@ exports[`Article test on ios renders article no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -978,7 +1031,7 @@ exports[`Article test on ios renders article no flags 1`] = `
 </RCTScrollView>
 `;
 
-exports[`Article test on ios renders article no label 1`] = `
+exports[`Article test on android renders article no label 1`] = `
 <RCTScrollView
   data={
     Array [
@@ -1322,7 +1375,7 @@ exports[`Article test on ios renders article no label 1`] = `
       <View
         style={
           Object {
-            "marginBottom": 10,
+            "marginBottom": 6,
           }
         }
         testID="leadAsset"
@@ -1434,33 +1487,79 @@ exports[`Article test on ios renders article no label 1`] = `
           ]
         }
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
+        <WebView
+          onNavigationStateChange={[Function]}
+          source={
+            Object {
+              "baseUrl": "https://www.thetimes.co.uk/",
+              "html": "
+<style>
+  body, html, #height-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  #height-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+</style>
+
+    <div>
+      <style>
+        @font-face {
+          font-family: TimesModern-Bold;
+          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
+          font-weight: 400;
+          font-style: normal;
+        }
+        p {
+          color: #1D1D1B;
+          font-size: 22px;
+          line-height: 25px;
+          margin-bottom: 8px;
+          font-family: TimesModern-Bold;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+        }
+      </style>
+      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
+    </div>
+  
+<script>
+  ;(function() {
+  var wrapper = document.createElement(\\"div\\");
+  wrapper.id = \\"height-wrapper\\";
+  while (document.body.firstChild) {
+    wrapper.appendChild(document.body.firstChild);
+  }
+  document.body.appendChild(wrapper);
+  var i = 0;
+  function updateHeight() {
+    document.title = wrapper.clientHeight;
+    window.location.hash = ++i;
+  }
+  updateHeight();
+  window.addEventListener(\\"load\\", function() {
+    updateHeight();
+    setTimeout(updateHeight, 1000);
+  });
+  window.addEventListener(\\"resize\\", updateHeight);
+  }());
+</script>
+",
+            }
+          }
           style={
             Array [
+              null,
               Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 30,
-                "fontWeight": "700",
-                "lineHeight": 32,
-                "marginBottom": 7,
+                "height": 20,
               },
             ]
           }
-          testID="headline"
-        >
-          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-        </Text>
+        />
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -1471,7 +1570,7 @@ exports[`Article test on ios renders article no label 1`] = `
                 "color": "#333333",
                 "fontFamily": "TimesModern-Regular",
                 "fontSize": 21,
-                "lineHeight": 25,
+                "lineHeight": 29,
                 "paddingBottom": 9,
               },
             ]
@@ -1538,7 +1637,7 @@ exports[`Article test on ios renders article no label 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 12,
+                      "fontSize": 10,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -1549,7 +1648,7 @@ exports[`Article test on ios renders article no label 1`] = `
                 }
                 testID="flag-new"
               >
-                NEW
+                N E W
               </Text>
             </View>
           </View>
@@ -1601,7 +1700,7 @@ exports[`Article test on ios renders article no label 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 12,
+                      "fontSize": 10,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -1612,7 +1711,7 @@ exports[`Article test on ios renders article no label 1`] = `
                 }
                 testID="flag-exclusive"
               >
-                EXCLUSIVE
+                E X C L U S I V E
               </Text>
             </View>
           </View>
@@ -1651,8 +1750,8 @@ exports[`Article test on ios renders article no label 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
+                  "paddingBottom": 8,
+                  "paddingTop": 6,
                 },
               ]
             }
@@ -1676,7 +1775,7 @@ exports[`Article test on ios renders article no label 1`] = `
                     Object {
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
-                      "lineHeight": 14,
+                      "lineHeight": 17,
                     },
                     undefined,
                     Object {
@@ -1702,8 +1801,8 @@ exports[`Article test on ios renders article no label 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
+                  "paddingBottom": 8,
+                  "paddingTop": 6,
                 },
               ]
             }
@@ -1756,7 +1855,8 @@ exports[`Article test on ios renders article no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -1816,7 +1916,8 @@ exports[`Article test on ios renders article no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -1862,7 +1963,8 @@ exports[`Article test on ios renders article no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -1897,7 +1999,8 @@ exports[`Article test on ios renders article no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -1932,7 +2035,8 @@ exports[`Article test on ios renders article no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -1967,7 +2071,8 @@ exports[`Article test on ios renders article no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -2002,7 +2107,8 @@ exports[`Article test on ios renders article no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -2024,7 +2130,7 @@ exports[`Article test on ios renders article no label 1`] = `
 </RCTScrollView>
 `;
 
-exports[`Article test on ios renders article no label no flags 1`] = `
+exports[`Article test on android renders article no label no flags 1`] = `
 <RCTScrollView
   data={
     Array [
@@ -2365,7 +2471,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
       <View
         style={
           Object {
-            "marginBottom": 10,
+            "marginBottom": 6,
           }
         }
         testID="leadAsset"
@@ -2477,33 +2583,79 @@ exports[`Article test on ios renders article no label no flags 1`] = `
           ]
         }
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
+        <WebView
+          onNavigationStateChange={[Function]}
+          source={
+            Object {
+              "baseUrl": "https://www.thetimes.co.uk/",
+              "html": "
+<style>
+  body, html, #height-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  #height-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+</style>
+
+    <div>
+      <style>
+        @font-face {
+          font-family: TimesModern-Bold;
+          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
+          font-weight: 400;
+          font-style: normal;
+        }
+        p {
+          color: #1D1D1B;
+          font-size: 22px;
+          line-height: 25px;
+          margin-bottom: 8px;
+          font-family: TimesModern-Bold;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+        }
+      </style>
+      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
+    </div>
+  
+<script>
+  ;(function() {
+  var wrapper = document.createElement(\\"div\\");
+  wrapper.id = \\"height-wrapper\\";
+  while (document.body.firstChild) {
+    wrapper.appendChild(document.body.firstChild);
+  }
+  document.body.appendChild(wrapper);
+  var i = 0;
+  function updateHeight() {
+    document.title = wrapper.clientHeight;
+    window.location.hash = ++i;
+  }
+  updateHeight();
+  window.addEventListener(\\"load\\", function() {
+    updateHeight();
+    setTimeout(updateHeight, 1000);
+  });
+  window.addEventListener(\\"resize\\", updateHeight);
+  }());
+</script>
+",
+            }
+          }
           style={
             Array [
+              null,
               Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 30,
-                "fontWeight": "700",
-                "lineHeight": 32,
-                "marginBottom": 7,
+                "height": 20,
               },
             ]
           }
-          testID="headline"
-        >
-          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-        </Text>
+        />
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -2514,7 +2666,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
                 "color": "#333333",
                 "fontFamily": "TimesModern-Regular",
                 "fontSize": 21,
-                "lineHeight": 25,
+                "lineHeight": 29,
                 "paddingBottom": 9,
               },
             ]
@@ -2557,8 +2709,8 @@ exports[`Article test on ios renders article no label no flags 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
+                  "paddingBottom": 8,
+                  "paddingTop": 6,
                 },
               ]
             }
@@ -2582,7 +2734,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
                     Object {
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
-                      "lineHeight": 14,
+                      "lineHeight": 17,
                     },
                     undefined,
                     Object {
@@ -2608,8 +2760,8 @@ exports[`Article test on ios renders article no label no flags 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
+                  "paddingBottom": 8,
+                  "paddingTop": 6,
                 },
               ]
             }
@@ -2662,7 +2814,8 @@ exports[`Article test on ios renders article no label no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -2722,7 +2875,8 @@ exports[`Article test on ios renders article no label no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -2768,7 +2922,8 @@ exports[`Article test on ios renders article no label no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -2803,7 +2958,8 @@ exports[`Article test on ios renders article no label no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -2838,7 +2994,8 @@ exports[`Article test on ios renders article no label no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -2873,7 +3030,8 @@ exports[`Article test on ios renders article no label no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -2908,7 +3066,8 @@ exports[`Article test on ios renders article no label no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -2930,7 +3089,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
 </RCTScrollView>
 `;
 
-exports[`Article test on ios renders article no label no flags no standfirst 1`] = `
+exports[`Article test on android renders article no label no flags no standfirst 1`] = `
 <RCTScrollView
   data={
     Array [
@@ -3271,7 +3430,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
       <View
         style={
           Object {
-            "marginBottom": 10,
+            "marginBottom": 6,
           }
         }
         testID="leadAsset"
@@ -3383,33 +3542,79 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
           ]
         }
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
+        <WebView
+          onNavigationStateChange={[Function]}
+          source={
+            Object {
+              "baseUrl": "https://www.thetimes.co.uk/",
+              "html": "
+<style>
+  body, html, #height-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  #height-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+</style>
+
+    <div>
+      <style>
+        @font-face {
+          font-family: TimesModern-Bold;
+          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
+          font-weight: 400;
+          font-style: normal;
+        }
+        p {
+          color: #1D1D1B;
+          font-size: 22px;
+          line-height: 25px;
+          margin-bottom: 8px;
+          font-family: TimesModern-Bold;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+        }
+      </style>
+      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
+    </div>
+  
+<script>
+  ;(function() {
+  var wrapper = document.createElement(\\"div\\");
+  wrapper.id = \\"height-wrapper\\";
+  while (document.body.firstChild) {
+    wrapper.appendChild(document.body.firstChild);
+  }
+  document.body.appendChild(wrapper);
+  var i = 0;
+  function updateHeight() {
+    document.title = wrapper.clientHeight;
+    window.location.hash = ++i;
+  }
+  updateHeight();
+  window.addEventListener(\\"load\\", function() {
+    updateHeight();
+    setTimeout(updateHeight, 1000);
+  });
+  window.addEventListener(\\"resize\\", updateHeight);
+  }());
+</script>
+",
+            }
+          }
           style={
             Array [
+              null,
               Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 30,
-                "fontWeight": "700",
-                "lineHeight": 32,
-                "marginBottom": 7,
+                "height": 20,
               },
             ]
           }
-          testID="headline"
-        >
-          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-        </Text>
+        />
       </View>
     </View>
     <View
@@ -3444,8 +3649,8 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
+                  "paddingBottom": 8,
+                  "paddingTop": 6,
                 },
               ]
             }
@@ -3469,7 +3674,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
                     Object {
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
-                      "lineHeight": 14,
+                      "lineHeight": 17,
                     },
                     undefined,
                     Object {
@@ -3495,8 +3700,8 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
+                  "paddingBottom": 8,
+                  "paddingTop": 6,
                 },
               ]
             }
@@ -3549,7 +3754,8 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -3609,7 +3815,8 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -3655,7 +3862,8 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -3690,7 +3898,8 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -3725,7 +3934,8 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -3760,7 +3970,8 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -3795,7 +4006,8 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -3817,7 +4029,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
 </RCTScrollView>
 `;
 
-exports[`Article test on ios renders article no standfirst 1`] = `
+exports[`Article test on android renders article no standfirst 1`] = `
 <RCTScrollView
   data={
     Array [
@@ -4161,7 +4373,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
       <View
         style={
           Object {
-            "marginBottom": 10,
+            "marginBottom": 6,
           }
         }
         testID="leadAsset"
@@ -4301,36 +4513,82 @@ exports[`Article test on ios renders article no standfirst 1`] = `
               ]
             }
           >
-            HURRICANE IRMA
+            H U R R I C A N E   I R M A
           </Text>
         </View>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
+        <WebView
+          onNavigationStateChange={[Function]}
+          source={
+            Object {
+              "baseUrl": "https://www.thetimes.co.uk/",
+              "html": "
+<style>
+  body, html, #height-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  #height-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+</style>
+
+    <div>
+      <style>
+        @font-face {
+          font-family: TimesModern-Bold;
+          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
+          font-weight: 400;
+          font-style: normal;
+        }
+        p {
+          color: #1D1D1B;
+          font-size: 22px;
+          line-height: 25px;
+          margin-bottom: 8px;
+          font-family: TimesModern-Bold;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+        }
+      </style>
+      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
+    </div>
+  
+<script>
+  ;(function() {
+  var wrapper = document.createElement(\\"div\\");
+  wrapper.id = \\"height-wrapper\\";
+  while (document.body.firstChild) {
+    wrapper.appendChild(document.body.firstChild);
+  }
+  document.body.appendChild(wrapper);
+  var i = 0;
+  function updateHeight() {
+    document.title = wrapper.clientHeight;
+    window.location.hash = ++i;
+  }
+  updateHeight();
+  window.addEventListener(\\"load\\", function() {
+    updateHeight();
+    setTimeout(updateHeight, 1000);
+  });
+  window.addEventListener(\\"resize\\", updateHeight);
+  }());
+</script>
+",
+            }
+          }
           style={
             Array [
+              null,
               Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 30,
-                "fontWeight": "700",
-                "lineHeight": 32,
-                "marginBottom": 7,
+                "height": 20,
               },
             ]
           }
-          testID="headline"
-        >
-          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-        </Text>
+        />
         <View
           style={
             Array [
@@ -4389,7 +4647,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 12,
+                      "fontSize": 10,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -4400,7 +4658,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
                 }
                 testID="flag-new"
               >
-                NEW
+                N E W
               </Text>
             </View>
           </View>
@@ -4452,7 +4710,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 12,
+                      "fontSize": 10,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -4463,7 +4721,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
                 }
                 testID="flag-exclusive"
               >
-                EXCLUSIVE
+                E X C L U S I V E
               </Text>
             </View>
           </View>
@@ -4502,8 +4760,8 @@ exports[`Article test on ios renders article no standfirst 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
+                  "paddingBottom": 8,
+                  "paddingTop": 6,
                 },
               ]
             }
@@ -4527,7 +4785,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
                     Object {
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
-                      "lineHeight": 14,
+                      "lineHeight": 17,
                     },
                     undefined,
                     Object {
@@ -4553,8 +4811,8 @@ exports[`Article test on ios renders article no standfirst 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
+                  "paddingBottom": 8,
+                  "paddingTop": 6,
                 },
               ]
             }
@@ -4607,7 +4865,8 @@ exports[`Article test on ios renders article no standfirst 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -4667,7 +4926,8 @@ exports[`Article test on ios renders article no standfirst 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -4713,7 +4973,8 @@ exports[`Article test on ios renders article no standfirst 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -4748,7 +5009,8 @@ exports[`Article test on ios renders article no standfirst 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -4783,7 +5045,8 @@ exports[`Article test on ios renders article no standfirst 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -4818,7 +5081,8 @@ exports[`Article test on ios renders article no standfirst 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -4853,7 +5117,8 @@ exports[`Article test on ios renders article no standfirst 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -4875,7 +5140,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
 </RCTScrollView>
 `;
 
-exports[`Article test on ios renders article no standfirst no flags 1`] = `
+exports[`Article test on android renders article no standfirst no flags 1`] = `
 <RCTScrollView
   data={
     Array [
@@ -5216,7 +5481,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
       <View
         style={
           Object {
-            "marginBottom": 10,
+            "marginBottom": 6,
           }
         }
         testID="leadAsset"
@@ -5356,36 +5621,82 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
               ]
             }
           >
-            HURRICANE IRMA
+            H U R R I C A N E   I R M A
           </Text>
         </View>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
+        <WebView
+          onNavigationStateChange={[Function]}
+          source={
+            Object {
+              "baseUrl": "https://www.thetimes.co.uk/",
+              "html": "
+<style>
+  body, html, #height-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  #height-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+</style>
+
+    <div>
+      <style>
+        @font-face {
+          font-family: TimesModern-Bold;
+          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
+          font-weight: 400;
+          font-style: normal;
+        }
+        p {
+          color: #1D1D1B;
+          font-size: 22px;
+          line-height: 25px;
+          margin-bottom: 8px;
+          font-family: TimesModern-Bold;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+        }
+      </style>
+      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
+    </div>
+  
+<script>
+  ;(function() {
+  var wrapper = document.createElement(\\"div\\");
+  wrapper.id = \\"height-wrapper\\";
+  while (document.body.firstChild) {
+    wrapper.appendChild(document.body.firstChild);
+  }
+  document.body.appendChild(wrapper);
+  var i = 0;
+  function updateHeight() {
+    document.title = wrapper.clientHeight;
+    window.location.hash = ++i;
+  }
+  updateHeight();
+  window.addEventListener(\\"load\\", function() {
+    updateHeight();
+    setTimeout(updateHeight, 1000);
+  });
+  window.addEventListener(\\"resize\\", updateHeight);
+  }());
+</script>
+",
+            }
+          }
           style={
             Array [
+              null,
               Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 30,
-                "fontWeight": "700",
-                "lineHeight": 32,
-                "marginBottom": 7,
+                "height": 20,
               },
             ]
           }
-          testID="headline"
-        >
-          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-        </Text>
+        />
       </View>
     </View>
     <View
@@ -5420,8 +5731,8 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
+                  "paddingBottom": 8,
+                  "paddingTop": 6,
                 },
               ]
             }
@@ -5445,7 +5756,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
                     Object {
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
-                      "lineHeight": 14,
+                      "lineHeight": 17,
                     },
                     undefined,
                     Object {
@@ -5471,8 +5782,8 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
+                  "paddingBottom": 8,
+                  "paddingTop": 6,
                 },
               ]
             }
@@ -5525,7 +5836,8 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -5585,7 +5897,8 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -5631,7 +5944,8 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -5666,7 +5980,8 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -5701,7 +6016,8 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -5736,7 +6052,8 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -5771,7 +6088,8 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -5793,7 +6111,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
 </RCTScrollView>
 `;
 
-exports[`Article test on ios renders article no standfirst no label 1`] = `
+exports[`Article test on android renders article no standfirst no label 1`] = `
 <RCTScrollView
   data={
     Array [
@@ -6137,7 +6455,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
       <View
         style={
           Object {
-            "marginBottom": 10,
+            "marginBottom": 6,
           }
         }
         testID="leadAsset"
@@ -6249,33 +6567,79 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
           ]
         }
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
+        <WebView
+          onNavigationStateChange={[Function]}
+          source={
+            Object {
+              "baseUrl": "https://www.thetimes.co.uk/",
+              "html": "
+<style>
+  body, html, #height-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  #height-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+</style>
+
+    <div>
+      <style>
+        @font-face {
+          font-family: TimesModern-Bold;
+          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
+          font-weight: 400;
+          font-style: normal;
+        }
+        p {
+          color: #1D1D1B;
+          font-size: 22px;
+          line-height: 25px;
+          margin-bottom: 8px;
+          font-family: TimesModern-Bold;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+        }
+      </style>
+      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
+    </div>
+  
+<script>
+  ;(function() {
+  var wrapper = document.createElement(\\"div\\");
+  wrapper.id = \\"height-wrapper\\";
+  while (document.body.firstChild) {
+    wrapper.appendChild(document.body.firstChild);
+  }
+  document.body.appendChild(wrapper);
+  var i = 0;
+  function updateHeight() {
+    document.title = wrapper.clientHeight;
+    window.location.hash = ++i;
+  }
+  updateHeight();
+  window.addEventListener(\\"load\\", function() {
+    updateHeight();
+    setTimeout(updateHeight, 1000);
+  });
+  window.addEventListener(\\"resize\\", updateHeight);
+  }());
+</script>
+",
+            }
+          }
           style={
             Array [
+              null,
               Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 30,
-                "fontWeight": "700",
-                "lineHeight": 32,
-                "marginBottom": 7,
+                "height": 20,
               },
             ]
           }
-          testID="headline"
-        >
-          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-        </Text>
+        />
         <View
           style={
             Array [
@@ -6334,7 +6698,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 12,
+                      "fontSize": 10,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -6345,7 +6709,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
                 }
                 testID="flag-new"
               >
-                NEW
+                N E W
               </Text>
             </View>
           </View>
@@ -6397,7 +6761,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 12,
+                      "fontSize": 10,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -6408,7 +6772,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
                 }
                 testID="flag-exclusive"
               >
-                EXCLUSIVE
+                E X C L U S I V E
               </Text>
             </View>
           </View>
@@ -6447,8 +6811,8 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
+                  "paddingBottom": 8,
+                  "paddingTop": 6,
                 },
               ]
             }
@@ -6472,7 +6836,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
                     Object {
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
-                      "lineHeight": 14,
+                      "lineHeight": 17,
                     },
                     undefined,
                     Object {
@@ -6498,8 +6862,8 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
+                  "paddingBottom": 8,
+                  "paddingTop": 6,
                 },
               ]
             }
@@ -6552,7 +6916,8 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -6612,7 +6977,8 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -6658,7 +7024,8 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -6693,7 +7060,8 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -6728,7 +7096,8 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -6763,7 +7132,8 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -6798,7 +7168,8 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -6820,7 +7191,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
 </RCTScrollView>
 `;
 
-exports[`Article test on ios renders full article 1`] = `
+exports[`Article test on android renders full article 1`] = `
 <RCTScrollView
   data={
     Array [
@@ -7233,7 +7604,7 @@ exports[`Article test on ios renders full article 1`] = `
       <View
         style={
           Object {
-            "marginBottom": 10,
+            "marginBottom": 6,
           }
         }
         testID="leadAsset"
@@ -7373,36 +7744,82 @@ exports[`Article test on ios renders full article 1`] = `
               ]
             }
           >
-            HURRICANE IRMA
+            H U R R I C A N E   I R M A
           </Text>
         </View>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
+        <WebView
+          onNavigationStateChange={[Function]}
+          source={
+            Object {
+              "baseUrl": "https://www.thetimes.co.uk/",
+              "html": "
+<style>
+  body, html, #height-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  #height-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+</style>
+
+    <div>
+      <style>
+        @font-face {
+          font-family: TimesModern-Bold;
+          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
+          font-weight: 400;
+          font-style: normal;
+        }
+        p {
+          color: #1D1D1B;
+          font-size: 22px;
+          line-height: 25px;
+          margin-bottom: 8px;
+          font-family: TimesModern-Bold;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+        }
+      </style>
+      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
+    </div>
+  
+<script>
+  ;(function() {
+  var wrapper = document.createElement(\\"div\\");
+  wrapper.id = \\"height-wrapper\\";
+  while (document.body.firstChild) {
+    wrapper.appendChild(document.body.firstChild);
+  }
+  document.body.appendChild(wrapper);
+  var i = 0;
+  function updateHeight() {
+    document.title = wrapper.clientHeight;
+    window.location.hash = ++i;
+  }
+  updateHeight();
+  window.addEventListener(\\"load\\", function() {
+    updateHeight();
+    setTimeout(updateHeight, 1000);
+  });
+  window.addEventListener(\\"resize\\", updateHeight);
+  }());
+</script>
+",
+            }
+          }
           style={
             Array [
+              null,
               Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 30,
-                "fontWeight": "700",
-                "lineHeight": 32,
-                "marginBottom": 7,
+                "height": 20,
               },
             ]
           }
-          testID="headline"
-        >
-          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-        </Text>
+        />
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -7413,7 +7830,7 @@ exports[`Article test on ios renders full article 1`] = `
                 "color": "#333333",
                 "fontFamily": "TimesModern-Regular",
                 "fontSize": 21,
-                "lineHeight": 25,
+                "lineHeight": 29,
                 "paddingBottom": 9,
               },
             ]
@@ -7480,7 +7897,7 @@ exports[`Article test on ios renders full article 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 12,
+                      "fontSize": 10,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -7491,7 +7908,7 @@ exports[`Article test on ios renders full article 1`] = `
                 }
                 testID="flag-new"
               >
-                NEW
+                N E W
               </Text>
             </View>
           </View>
@@ -7543,7 +7960,7 @@ exports[`Article test on ios renders full article 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 12,
+                      "fontSize": 10,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -7554,7 +7971,7 @@ exports[`Article test on ios renders full article 1`] = `
                 }
                 testID="flag-exclusive"
               >
-                EXCLUSIVE
+                E X C L U S I V E
               </Text>
             </View>
           </View>
@@ -7593,8 +8010,8 @@ exports[`Article test on ios renders full article 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
+                  "paddingBottom": 8,
+                  "paddingTop": 6,
                 },
               ]
             }
@@ -7618,7 +8035,7 @@ exports[`Article test on ios renders full article 1`] = `
                     Object {
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
-                      "lineHeight": 14,
+                      "lineHeight": 17,
                     },
                     undefined,
                     Object {
@@ -7644,8 +8061,8 @@ exports[`Article test on ios renders full article 1`] = `
                 Object {
                   "borderTopColor": "#d0cece",
                   "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
+                  "paddingBottom": 8,
+                  "paddingTop": 6,
                 },
               ]
             }
@@ -7698,7 +8115,8 @@ exports[`Article test on ios renders full article 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -7758,7 +8176,8 @@ exports[`Article test on ios renders full article 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -7913,7 +8332,7 @@ exports[`Article test on ios renders full article 1`] = `
                         "color": "#696969",
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 13,
-                        "lineHeight": 16,
+                        "lineHeight": 20,
                       },
                       undefined,
                     ]
@@ -7931,14 +8350,14 @@ exports[`Article test on ios renders full article 1`] = `
                         "color": "#696969",
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 13,
-                        "lineHeight": 16,
+                        "lineHeight": 20,
                       },
                       Object {
                         "color": "#333",
                         "fontSize": 9,
                         "fontWeight": "400",
                         "letterSpacing": 1,
-                        "lineHeight": 16,
+                        "lineHeight": 20,
                       },
                       undefined,
                     ]
@@ -7976,7 +8395,8 @@ exports[`Article test on ios renders full article 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -8011,7 +8431,8 @@ exports[`Article test on ios renders full article 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }
@@ -8170,7 +8591,7 @@ exports[`Article test on ios renders full article 1`] = `
                         "color": "#696969",
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 13,
-                        "lineHeight": 16,
+                        "lineHeight": 20,
                       },
                       undefined,
                     ]
@@ -8188,14 +8609,14 @@ exports[`Article test on ios renders full article 1`] = `
                         "color": "#696969",
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 13,
-                        "lineHeight": 16,
+                        "lineHeight": 20,
                       },
                       Object {
                         "color": "#333",
                         "fontSize": 9,
                         "fontWeight": "400",
                         "letterSpacing": 1,
-                        "lineHeight": 16,
+                        "lineHeight": 20,
                       },
                       undefined,
                     ]
@@ -8233,7 +8654,8 @@ exports[`Article test on ios renders full article 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
+                "fontSize": 16,
+                "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
               }

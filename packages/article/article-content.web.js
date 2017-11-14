@@ -3,7 +3,9 @@ import PropTypes from "prop-types";
 import { ScrollView } from "react-native";
 
 const ArticleContent = ({ data, renderRow }) => (
-  <ScrollView>{data.map(item => renderRow(item))}</ScrollView>
+  <ScrollView testID="scroll-view-article">
+    {data.map(item => renderRow(item))}
+  </ScrollView>
 );
 
 ArticleContent.propTypes = {
