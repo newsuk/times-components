@@ -355,10 +355,6 @@ exports[`Article test on android renders article no flags 1`] = `
   getItem={[Function]}
   getItemCount={[Function]}
   horizontal={false}
-<<<<<<< HEAD
-  initialListSize={10}
-=======
->>>>>>> merge pt 2
   initialNumToRender={10}
   keyExtractor={[Function]}
   maxToRenderPerBatch={10}
@@ -370,15 +366,8 @@ exports[`Article test on android renders article no flags 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
-<<<<<<< HEAD
-  pageSize={1}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  scrollRenderAheadDistance={10}
-=======
-  renderItem={[Function]}
-  scrollEventThrottle={50}
->>>>>>> merge pt 2
   stickyHeaderIndices={Array []}
   testID="scroll-view-article"
   updateCellsBatchingPeriod={50}
@@ -1359,10 +1348,6 @@ exports[`Article test on android renders article no label 1`] = `
   getItem={[Function]}
   getItemCount={[Function]}
   horizontal={false}
-<<<<<<< HEAD
-  initialListSize={10}
-=======
->>>>>>> merge pt 2
   initialNumToRender={10}
   keyExtractor={[Function]}
   maxToRenderPerBatch={10}
@@ -1374,15 +1359,8 @@ exports[`Article test on android renders article no label 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
-<<<<<<< HEAD
-  pageSize={1}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  scrollRenderAheadDistance={10}
-=======
-  renderItem={[Function]}
-  scrollEventThrottle={50}
->>>>>>> merge pt 2
   stickyHeaderIndices={Array []}
   testID="scroll-view-article"
   updateCellsBatchingPeriod={50}
@@ -2466,10 +2444,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
   getItem={[Function]}
   getItemCount={[Function]}
   horizontal={false}
-<<<<<<< HEAD
-  initialListSize={10}
-=======
->>>>>>> merge pt 2
   initialNumToRender={10}
   keyExtractor={[Function]}
   maxToRenderPerBatch={10}
@@ -2481,15 +2455,8 @@ exports[`Article test on android renders article no label no flags 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
-<<<<<<< HEAD
-  pageSize={1}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  scrollRenderAheadDistance={10}
-=======
-  renderItem={[Function]}
-  scrollEventThrottle={50}
->>>>>>> merge pt 2
   stickyHeaderIndices={Array []}
   testID="scroll-view-article"
   updateCellsBatchingPeriod={50}
@@ -3436,10 +3403,6 @@ exports[`Article test on android renders article no label no flags no standfirst
   getItem={[Function]}
   getItemCount={[Function]}
   horizontal={false}
-<<<<<<< HEAD
-  initialListSize={10}
-=======
->>>>>>> merge pt 2
   initialNumToRender={10}
   keyExtractor={[Function]}
   maxToRenderPerBatch={10}
@@ -3451,15 +3414,8 @@ exports[`Article test on android renders article no label no flags no standfirst
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
-<<<<<<< HEAD
-  pageSize={1}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  scrollRenderAheadDistance={10}
-=======
-  renderItem={[Function]}
-  scrollEventThrottle={50}
->>>>>>> merge pt 2
   stickyHeaderIndices={Array []}
   testID="scroll-view-article"
   updateCellsBatchingPeriod={50}
@@ -4390,10 +4346,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
   getItem={[Function]}
   getItemCount={[Function]}
   horizontal={false}
-<<<<<<< HEAD
-  initialListSize={10}
-=======
->>>>>>> merge pt 2
   initialNumToRender={10}
   keyExtractor={[Function]}
   maxToRenderPerBatch={10}
@@ -4405,15 +4357,8 @@ exports[`Article test on android renders article no standfirst 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
-<<<<<<< HEAD
-  pageSize={1}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  scrollRenderAheadDistance={10}
-=======
-  renderItem={[Function]}
-  scrollEventThrottle={50}
->>>>>>> merge pt 2
   stickyHeaderIndices={Array []}
   testID="scroll-view-article"
   updateCellsBatchingPeriod={50}
@@ -5509,10 +5454,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
   getItem={[Function]}
   getItemCount={[Function]}
   horizontal={false}
-<<<<<<< HEAD
-  initialListSize={10}
-=======
->>>>>>> merge pt 2
   initialNumToRender={10}
   keyExtractor={[Function]}
   maxToRenderPerBatch={10}
@@ -5524,15 +5465,8 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
-<<<<<<< HEAD
-  pageSize={1}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  scrollRenderAheadDistance={10}
-=======
-  renderItem={[Function]}
-  scrollEventThrottle={50}
->>>>>>> merge pt 2
   stickyHeaderIndices={Array []}
   testID="scroll-view-article"
   updateCellsBatchingPeriod={50}
@@ -6494,10 +6428,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
   getItem={[Function]}
   getItemCount={[Function]}
   horizontal={false}
-<<<<<<< HEAD
-  initialListSize={10}
-=======
->>>>>>> merge pt 2
   initialNumToRender={10}
   keyExtractor={[Function]}
   maxToRenderPerBatch={10}
@@ -6509,15 +6439,8 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
-<<<<<<< HEAD
-  pageSize={1}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  scrollRenderAheadDistance={10}
-=======
-  renderItem={[Function]}
-  scrollEventThrottle={50}
->>>>>>> merge pt 2
   stickyHeaderIndices={Array []}
   testID="scroll-view-article"
   updateCellsBatchingPeriod={50}
@@ -7654,10 +7577,6 @@ exports[`Article test on android renders full article 1`] = `
   getItem={[Function]}
   getItemCount={[Function]}
   horizontal={false}
-<<<<<<< HEAD
-  initialListSize={10}
-=======
->>>>>>> merge pt 2
   initialNumToRender={10}
   keyExtractor={[Function]}
   maxToRenderPerBatch={10}
@@ -7669,15 +7588,8 @@ exports[`Article test on android renders full article 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
-<<<<<<< HEAD
-  pageSize={1}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  scrollRenderAheadDistance={10}
-=======
-  renderItem={[Function]}
-  scrollEventThrottle={50}
->>>>>>> merge pt 2
   stickyHeaderIndices={Array []}
   testID="scroll-view-article"
   updateCellsBatchingPeriod={50}

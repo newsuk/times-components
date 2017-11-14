@@ -1,12 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ScrollView, View } from "react-native";
+import { ScrollView } from "react-native";
 
 const ArticleContent = ({ data, renderRow }) => (
   <ScrollView>
-    {data.map(item => {
-      return renderRow(item);
-    })}
+    {data.map(item => renderRow(item))}
   </ScrollView>
 );
 
