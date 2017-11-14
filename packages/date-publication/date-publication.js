@@ -19,7 +19,11 @@ const publications = {
 };
 
 const DatePublication = ({ date, publication, style }) => (
-  <Text accessibilityLabel="datePublication" testID="datePublication" style={[styles.default, style]}>
+  <Text
+    accessibilityLabel="datePublication"
+    testID="datePublication"
+    style={[styles.default, style]}
+  >
     {format(date, "dddd MMMM DD YYYY")}
     {publications[publication] ? `, ${publications[publication]}` : ""}
   </Text>

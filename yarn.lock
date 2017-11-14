@@ -216,9 +216,9 @@
     react-native-web "0.1.7"
     svgs "3.1.0"
 
-"@times-components/fructose@2.2.16":
-  version "2.2.16"
-  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-2.2.16.tgz#f271e57ab5d61aa258d48b9f56f533c40a6cb4d0"
+"@times-components/fructose@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.0.0.tgz#29cb4a8774ed400963bc16266f96139b00b69392"
   dependencies:
     babel-polyfill "^6.23.0"
     babel-preset-es2015 "^6.24.1"
@@ -8929,8 +8929,8 @@ react-test-renderer@16.0.0:
     object-assign "^4.1.1"
 
 react-test-renderer@^16.0.0-0:
-  version "16.1.0"
-  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.1.0.tgz#33a1d3ce896311e0dd1547649b1456ffa7fda415"
+  version "16.1.1"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.1.1.tgz#a05184688d564be799f212449262525d1e350537"
   dependencies:
     fbjs "^0.8.16"
     object-assign "^4.1.1"
