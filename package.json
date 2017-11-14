@@ -4,7 +4,7 @@
   "description": "A collection of presentational components for The Times and Sunday Times",
   "main": "index.js",
   "engines": {
-    "node": ">=8.6.0",
+    "node": ">=8.9.0",
     "yarn": "1.2.1"
   },
   "bin": {
