@@ -1,12 +1,13 @@
 {
   "name": "@times-components/provider",
-  "version": "0.14.8",
+  "version": "0.14.9",
   "main": "provider",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
     "test": "jest --bail --ci --coverage",
-    "prettier:diff": "prettier --list-different '**/*.+(js|json)'",
+    "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
+    "fmt": "prettier --write '**/*.+(js|json|md)'",
     "make-schema": "node ./scripts/fetch-gql-schema",
     "lint": "eslint . && npm run prettier:diff"
   },
@@ -61,7 +62,7 @@
     "mkdirp": "0.5.1",
     "nock": "9.0.14",
     "node-fetch": "1.7.2",
-    "prettier": "1.7.0",
+    "prettier": "1.8.2",
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "react-native": "0.50.1",
@@ -69,7 +70,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/pagination": "0.10.8",
+    "@times-components/pagination": "0.10.9",
     "graphql-tag": "2.4.2",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",

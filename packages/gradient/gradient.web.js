@@ -8,7 +8,9 @@ const Gradient = ({ degrees, children, style }) => (
   <View
     style={[
       {
-        backgroundImage: `linear-gradient(${degrees}deg, #f9f9f9 0%, #ededed 100%)`
+        backgroundImage: `linear-gradient(${
+          degrees
+        }deg, #f9f9f9 0%, #ededed 100%)`
       },
       style
     ]}
