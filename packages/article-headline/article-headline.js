@@ -16,7 +16,11 @@ const styles = {
 };
 
 const ArticleHeadline = ({ text, style }) => (
-  <Text accessibilityLabel="headline" testID="headline" style={[styles.text, style]}>
+  <Text
+    accessibilityLabel="headline"
+    testID="headline"
+    style={[styles.text, style]}
+  >
     {text}
   </Text>
 );

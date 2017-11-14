@@ -4,14 +4,12 @@ import Article from "./article";
 
 const fullArticleFixture = require("./fixtures/full-article.json");
 
-const data = fullArticleFixture.data;
-
 const isComponentDisplayed = async (id, timeout = 2000) => {
   await driver.waitForElementByAccessibilityId(id, timeout);
 };
 
 const props = {
-  ...data,
+  ...fullArticleFixture.data,
   isLoading: false,
   fructoseID: "defaultArticle"
 };
@@ -25,7 +23,7 @@ withComponent(
         '//*[@text="Fructose"]',
         global.asserter.isVisible,
         10000
-      );    
+      );
       await fructose.loadComponent();
       await isComponentDisplayed("listView");
     });
@@ -33,7 +31,7 @@ withComponent(
     test("default Article should render correctly", async () => {
       await isComponentDisplayed("leadAsset");
       await isComponentDisplayed("label");
-      await isComponentDisplayed('headline');
+      await isComponentDisplayed("headline");
       await isComponentDisplayed("standfirst");
       await isComponentDisplayed("flag-new");
       await isComponentDisplayed("flag-exclusive");
