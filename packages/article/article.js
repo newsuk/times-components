@@ -29,7 +29,7 @@ class ArticlePage extends React.Component {
   static renderRow(rowData) {
     if (rowData.type === "leadAsset") {
       return (
-        <View testID="leadAsset" style={styles.leadAsset}>
+        <View testID="leadAsset" key={rowData.type} style={styles.leadAsset}>
           <Image uri={rowData.data.crop.url} aspectRatio={16 / 9} />
         </View>
       );
@@ -37,6 +37,7 @@ class ArticlePage extends React.Component {
       const { headline, flags, standfirst, label } = rowData.data;
       return (
         <ArticleHeader
+          key={rowData.type}
           headline={headline}
           flags={flags}
           standfirst={standfirst}
@@ -47,6 +48,7 @@ class ArticlePage extends React.Component {
       const { byline, publishedTime, publicationName } = rowData.data;
       return (
         <ArticleMeta
+          key={rowData.type}
           byline={byline}
           publishedTime={publishedTime}
           publicationName={publicationName}
@@ -54,7 +56,7 @@ class ArticlePage extends React.Component {
       );
     } else if (rowData.type === "articleBodyRow") {
       return (
-        <View>
+        <View key={rowData.type + rowData.index}>
           {renderTrees([rowData.data], {
             paragraph(key, attributes, children) {
               return (
