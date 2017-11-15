@@ -1,10 +1,9 @@
 import PropTypes from "prop-types";
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, ViewPropTypes } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
-import StylePropTypes from "react-style-proptype";
 
-const { supportingArrays } = StylePropTypes;
+const { style: ViewPropTypesStyle } = ViewPropTypes;
 const styles = StyleSheet.create({
   container: {
     flex: 1
@@ -60,7 +59,7 @@ Gradient.propTypes = {
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element)
   ]),
-  style: supportingArrays
+  style: ViewPropTypesStyle
 };
 
 export default Gradient;

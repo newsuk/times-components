@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, Text, StyleSheet, Platform } from "react-native";
-import StylePropTypes from "react-style-proptype";
+import { View, ViewPropTypes, Text, StyleSheet, Platform } from "react-native";
+
+const { style: TextPropTypesStyle } = Text.propTypes;
+const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 const lineHeightStyle = Platform.select({
   ios: {
@@ -73,8 +75,8 @@ Caption.propTypes = {
   text: PropTypes.string,
   credits: PropTypes.string,
   style: PropTypes.shape({
-    text: StylePropTypes,
-    container: StylePropTypes
+    text: TextPropTypesStyle,
+    container: ViewPropTypesStyle
   }),
   children: PropTypes.element
 };

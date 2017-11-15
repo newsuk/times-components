@@ -66,8 +66,7 @@
     "@times-components/markup": "0.12.7",
     "date-fns": "1.28.5",
     "prop-types": "15.6.0",
-    "react-native-web": "0.1.7",
-    "react-style-proptype": "3.1.0"
+    "react-native-web": "0.1.7"
   },
   "peerDependencies": {
     "react": ">=16",
