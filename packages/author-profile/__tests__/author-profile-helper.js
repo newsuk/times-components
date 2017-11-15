@@ -280,14 +280,14 @@ export default AuthorProfileContent => {
 
   it("renders the author head", () => {
     const component = renderer.create(
-      <AuthorHead {...authorProfileFixture.data.author} />
+      <AuthorHead {...authorProfileFixture.data.author} onTwitterLinkPress={() => {}} />
     );
 
     expect(component).toMatchSnapshot();
   });
 
   it("does not re-render the author head if the name changes", () => {
-    const el = shallow(<AuthorHead {...authorProfileFixture.data.author} />);
+    const el = shallow(<AuthorHead {...authorProfileFixture.data.author} onTwitterLinkPress={() => {}} />);
 
     el.setProps({
       name: "second name"
@@ -303,7 +303,7 @@ export default AuthorProfileContent => {
   });
 
   it("does re-render the author head if the loading state changes", () => {
-    const el = shallow(<AuthorHead {...authorProfileFixture.data.author} />);
+    const el = shallow(<AuthorHead {...authorProfileFixture.data.author} onTwitterLinkPress={() => {}} />);
 
     el.setProps({
       name: "second name",
