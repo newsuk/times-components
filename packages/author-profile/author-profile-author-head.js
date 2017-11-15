@@ -35,22 +35,29 @@ const styles = StyleSheet.create({
   }
 });
 
-const AuthorProfileAuthorHead = ({ isLoading, ...props }) => {
-  if (isLoading) {
-    return (
-      <View style={styles.wrapper}>
-        <View style={styles.container} />
-        <View style={styles.photoContainer}>
-          <View style={styles.roundImage}>
-            <Gradient style={styles.gradient} />
-          </View>
-        </View>
-      </View>
-    );
+class AuthorProfileAuthorHead extends React.Component {
+  shouldComponentUpdate(nextProps) {
+    return this.props.isLoading !== nextProps.isLoading;
   }
 
-  return <AuthorHead {...props} />;
-};
+  render() {
+    const { isLoading, ...props } = this.props;
+    if (isLoading) {
+      return (
+        <View style={styles.wrapper}>
+          <View style={styles.container} />
+          <View style={styles.photoContainer}>
+            <View style={styles.roundImage}>
+              <Gradient style={styles.gradient} />
+            </View>
+          </View>
+        </View>
+      );
+    }
+
+    return <AuthorHead {...props} />;
+  }
+}
 
 AuthorProfileAuthorHead.propTypes = AuthorHead.propTypes;
 export default AuthorProfileAuthorHead;

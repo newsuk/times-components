@@ -1,7 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`does not re-render the author head if the name changes 1`] = `
+<Text
+  accessibilityRole="heading"
+  accessible={true}
+  allowFontScaling={true}
+  aria-level="1"
+  ellipsizeMode="tail"
+  style={
+    Object {
+      "color": "#000",
+      "fontFamily": "TimesModern-Bold",
+      "fontSize": 45,
+      "paddingTop": 32,
+    }
+  }
+  testID="author-name"
+>
+  Fiona Hamilton
+</Text>
+`;
+
+exports[`does re-render the author head if the loading state changes 1`] = `
+<Text
+  accessibilityRole="heading"
+  accessible={true}
+  allowFontScaling={true}
+  aria-level="1"
+  ellipsizeMode="tail"
+  style={
+    Object {
+      "color": "#000",
+      "fontFamily": "TimesModern-Bold",
+      "fontSize": 45,
+      "paddingTop": 32,
+    }
+  }
+  testID="author-name"
+>
+  second name
+</Text>
+`;
+
 exports[`renders profile 1`] = `
-<Pagination Helper (Component)
+<Pagination Helper (Apollo(Wrapper))
   articleImageRatio="3:2"
   page={1}
   pageSize={10}
@@ -6956,4 +6998,106 @@ exports[`renders profile separator 1`] = `
     }
   }
 />
+`;
+
+exports[`renders the author head 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "transparent",
+      "paddingBottom": 50,
+    }
+  }
+>
+  <View
+    accessibilityRole="banner"
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F9F8F3",
+        "flexDirection": "column",
+        "paddingBottom": 50,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="1"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#000",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 45,
+          "paddingTop": 32,
+        }
+      }
+      testID="author-name"
+    >
+      Fiona Hamilton
+    </Text>
+    <Text
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="2"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontSize": 15,
+        }
+      }
+    >
+      
+    </Text>
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="https://twitter.com/jdoe"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#006699",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 18,
+            "paddingTop": 16,
+            "textDecorationLine": "none",
+          },
+        ]
+      }
+    >
+      @
+      jdoe
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#333",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 16,
+          "lineHeight": 26,
+          "maxWidth": "88%",
+          "paddingBottom": 32,
+          "textAlign": "center",
+        }
+      }
+    />
+  </View>
+</View>
 `;

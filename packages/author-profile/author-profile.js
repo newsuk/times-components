@@ -8,6 +8,7 @@ import get from "lodash.get";
 import AuthorProfileError from "./author-profile-error";
 import AuthorProfileContent from "./author-profile-content";
 
+const ArticleListProviderWithPageState = withPageState(ArticleListProvider);
 const AuthorProfile = ({
   author,
   error,
@@ -23,7 +24,6 @@ const AuthorProfile = ({
   }
 
   const { biography, name, image: uri, jobTitle, twitter } = author || {};
-  const ArticleListProviderWithPageState = withPageState(ArticleListProvider);
 
   return (
     <ArticleListProviderWithPageState

@@ -13,6 +13,7 @@ import { query as authorProfileQuery } from "@times-components/provider/author-p
 import { query as articleListQuery } from "@times-components/provider/article-list-provider";
 import AuthorProfile from "../author-profile";
 import AuthorProfileItem from "../author-profile-item";
+import AuthorHead from "../author-profile-author-head";
 import AuthorProfileItemSeparator from "../author-profile-item-separator";
 import authorProfileFixture from "../fixtures/author-profile.json";
 import articleListFixture from "../fixtures/article-list.json";
@@ -275,6 +276,60 @@ export default AuthorProfileContent => {
     );
 
     expect(component).toMatchSnapshot();
+  });
+
+  it("renders the author head", () => {
+    const component = renderer.create(
+      <AuthorHead
+        {...authorProfileFixture.data.author}
+        onTwitterLinkPress={() => {}}
+      />
+    );
+
+    expect(component).toMatchSnapshot();
+  });
+
+  it("does not re-render the author head if the name changes", () => {
+    const el = shallow(
+      <AuthorHead
+        {...authorProfileFixture.data.author}
+        onTwitterLinkPress={() => {}}
+      />
+    );
+
+    el.setProps({
+      name: "second name"
+    });
+
+    expect(
+      el
+        .dive()
+        .dive()
+        .dive()
+        .find({ testID: "author-name" })
+    ).toMatchSnapshot();
+  });
+
+  it("does re-render the author head if the loading state changes", () => {
+    const el = shallow(
+      <AuthorHead
+        {...authorProfileFixture.data.author}
+        onTwitterLinkPress={() => {}}
+      />
+    );
+
+    el.setProps({
+      name: "second name",
+      isLoading: false
+    });
+
+    expect(
+      el
+        .dive()
+        .dive()
+        .dive()
+        .find({ testID: "author-name" })
+    ).toMatchSnapshot();
   });
 
   it("tracks page view", () => {

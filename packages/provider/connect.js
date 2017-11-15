@@ -1,4 +1,3 @@
-import React from "react";
 import pick from "lodash.pick";
 import { graphql } from "react-apollo";
 
@@ -30,19 +29,13 @@ const connectGraphql = (query, propsToVariables = identity) => {
       ...props
     });
 
-  const Component = props => {
-    const variables = pick(propsToVariables(props), variableNames);
-
-    const Graphql = graphql(query, {
-      options: {
-        variables
-      }
-    })(Wrapper);
-
-    return <Graphql {...props} />;
-  };
-
-  return Component;
+  return graphql(query, {
+    options(props) {
+      return {
+        variables: pick(propsToVariables(props), variableNames)
+      };
+    }
+  })(Wrapper);
 };
 
 export default connectGraphql;
