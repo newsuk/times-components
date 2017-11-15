@@ -37,7 +37,10 @@ const styles = StyleSheet.create({
 
 class AuthorProfileAuthorHead extends React.Component {
   shouldComponentUpdate(nextProps) {
-    return this.props.name !== nextProps.name;
+    return (
+      this.props.name !== nextProps.name ||
+      this.props.isLoading !== nextProps.isLoading
+    );
   }
 
   render() {
