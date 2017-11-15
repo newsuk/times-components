@@ -1,4 +1,3 @@
-import React from "react";
 import pick from "lodash.pick";
 import { graphql } from "react-apollo";
 
