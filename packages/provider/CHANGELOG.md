@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.14.10"></a>
+## [0.14.10](https://github.com/newsuk/times-components/compare/@times-components/provider@0.14.9...@times-components/provider@0.14.10) (2017-11-15)
+
+
+### Bug Fixes
+
+* stop unmounting and re-render ([#391](https://github.com/newsuk/times-components/issues/391)) ([3e70e31](https://github.com/newsuk/times-components/commit/3e70e31))
+
+
+
+
 <a name="0.14.9"></a>
 ## [0.14.9](https://github.com/newsuk/times-components/compare/@times-components/provider@0.14.8...@times-components/provider@0.14.9) (2017-11-13)
 
