@@ -207,6 +207,7 @@ exports[`renders loading vertical by default 1`] = `
           }
         />
         <Text
+          accessibilityLabel="datePublication"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
@@ -411,6 +412,7 @@ exports[`renders vertical by default 1`] = `
           </Text>
         </Text>
         <Text
+          accessibilityLabel="datePublication"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
@@ -530,6 +532,7 @@ exports[`renders without image 1`] = `
           </Text>
         </Text>
         <Text
+          accessibilityLabel="datePublication"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
@@ -649,6 +652,7 @@ exports[`renders without image url 1`] = `
           </Text>
         </Text>
         <Text
+          accessibilityLabel="datePublication"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"

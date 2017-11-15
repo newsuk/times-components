@@ -33,15 +33,35 @@
   "publishConfig": {
     "access": "public"
   },
+  "eslintConfig": {
+    "extends": ["airbnb", "prettier", "prettier/react"],
+    "rules": {
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [".js"]
+        }
+      ],
+      "import/extensions": "off"
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".android.js", ".ios.js", ".web.js"]
+        }
+      }
+    },
+    "root": true,
+    "env": {
+      "jest": true
+    }
+  },
+  "eslintIgnore": ["**/node_modules/*", "**/coverage/*", "dist"],
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
-    "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/utilities/**/__tests__/*.js"
-    ]
+    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+    "testMatch": ["<rootDir>/packages/utilities/**/__tests__/*.js"]
   },
   "devDependencies": {
     "eslint": "4.9.0",

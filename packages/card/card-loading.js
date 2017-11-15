@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, ViewPropTypes } from "react-native";
 import Image from "@times-components/image";
 import Gradient from "@times-components/gradient";
 import styles from "./card-styles";
@@ -53,7 +53,7 @@ Loading.defaultProps = {
 
 Loading.propTypes = {
   horizontal: PropTypes.bool.isRequired,
-  style: View.propTypes.style
+  style: ViewPropTypes.style
 };
 
 export default Loading;

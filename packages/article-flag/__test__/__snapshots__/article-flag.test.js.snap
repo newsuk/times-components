@@ -35,6 +35,7 @@ exports[`Article Flag test on web and ios renders Exclusive flag correctly 1`] =
     </svg>
   </View>
   <Text
+    accessibilityLabel="flag-exclusive"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
@@ -93,6 +94,7 @@ exports[`Article Flag test on web and ios renders New flag correctly 1`] = `
     </svg>
   </View>
   <Text
+    accessibilityLabel="flag-new"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
@@ -151,6 +153,7 @@ exports[`Article Flag test on web and ios renders Sponsored flag correctly 1`] =
     </svg>
   </View>
   <Text
+    accessibilityLabel="flag-sponsored"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
@@ -209,6 +212,7 @@ exports[`Article Flag test on web and ios renders Updated flag correctly 1`] = `
     </svg>
   </View>
   <Text
+    accessibilityLabel="flag-updated"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
@@ -267,6 +271,7 @@ exports[`Article Flag test on web and ios renders correctly 1`] = `
     </svg>
   </View>
   <Text
+    accessibilityLabel="flag-articleFlag"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
