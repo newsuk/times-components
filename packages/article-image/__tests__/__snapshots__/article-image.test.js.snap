@@ -147,13 +147,18 @@ exports[`does not render Caption on Article Image if both caption and credits ar
   style={
     Object {
       "flexDirection": "column",
+      "overflow": "hidden",
       "paddingBottom": 25,
       "width": "100%",
     }
   }
 >
   <View
-    style={undefined}
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
   >
     <View>
       <Image
@@ -236,6 +241,7 @@ exports[`renders inline image (landscape) correctly 1`] = `
     Object {
       "flexDirection": "row",
       "flexWrap": "nowrap",
+      "overflow": "hidden",
       "paddingBottom": 25,
       "paddingLeft": 10,
       "paddingRight": 10,
@@ -246,6 +252,7 @@ exports[`renders inline image (landscape) correctly 1`] = `
   <View
     style={
       Object {
+        "display": "flex",
         "width": "50%",
       }
     }
@@ -399,6 +406,7 @@ exports[`renders inline image (portrait) correctly 1`] = `
     Object {
       "flexDirection": "row",
       "flexWrap": "nowrap",
+      "overflow": "hidden",
       "paddingBottom": 25,
       "paddingLeft": 10,
       "paddingRight": 10,
@@ -409,6 +417,7 @@ exports[`renders inline image (portrait) correctly 1`] = `
   <View
     style={
       Object {
+        "display": "flex",
         "width": "50%",
       }
     }
@@ -561,13 +570,18 @@ exports[`renders primary image correctly 1`] = `
   style={
     Object {
       "flexDirection": "column",
+      "overflow": "hidden",
       "paddingBottom": 25,
       "width": "100%",
     }
   }
 >
   <View
-    style={undefined}
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
   >
     <View>
       <Image
@@ -710,16 +724,17 @@ exports[`renders secondary image correctly 1`] = `
     Object {
       "flexDirection": "row",
       "flexWrap": "nowrap",
+      "overflow": "hidden",
       "paddingBottom": 25,
       "paddingLeft": 10,
       "paddingRight": 10,
-      "width": "100%",
     }
   }
 >
   <View
     style={
       Object {
+        "display": "flex",
         "width": "50%",
       }
     }

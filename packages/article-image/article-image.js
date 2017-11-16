@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, Platform } from "react-native";
 import Image from "@times-components/image";
 import Caption from "@times-components/caption";
 
@@ -13,18 +13,43 @@ const styles = StyleSheet.create({
   primaryContainer: {
     width: "100%",
     flexDirection: "column",
-    paddingBottom: 25
+    paddingBottom: 25,
+    overflow: "hidden"
+  },
+  primaryImage: {
+    ...Platform.select({
+      web: {
+        display: "block"
+      },
+      ios: {
+        display: "flex"
+      },
+      android: {
+        display: "flex"
+      }
+    })
   },
   secondaryContainer: {
-    width: "100%",
     flexDirection: "row",
     flexWrap: "nowrap",
     paddingBottom: 25,
     paddingLeft: 10,
-    paddingRight: 10
+    paddingRight: 10,
+    overflow: "hidden"
   },
   secondaryImage: {
-    width: "50%"
+    width: "50%",
+    ...Platform.select({
+      web: {
+        display: "block"
+      },
+      ios: {
+        display: "flex"
+      },
+      android: {
+        display: "flex"
+      }
+    })
   },
   secondaryCaption: {
     paddingLeft: 10,
@@ -37,15 +62,27 @@ const styles = StyleSheet.create({
     flexWrap: "nowrap",
     paddingBottom: 25,
     paddingLeft: 10,
-    paddingRight: 10
+    paddingRight: 10,
+    overflow: "hidden"
   },
   inlineImage: {
-    width: "50%"
+    width: "50%",
+    ...Platform.select({
+      web: {
+        display: "block"
+      },
+      ios: {
+        display: "flex"
+      },
+      android: {
+        display: "flex"
+      }
+    })
   },
   inlineCaption: {
-    width: "50%",
     paddingLeft: 10,
-    paddingTop: 0
+    paddingTop: 0,
+    width: "50%"
   }
 });
 

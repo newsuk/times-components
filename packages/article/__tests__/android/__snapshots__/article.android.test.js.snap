@@ -6297,13 +6297,18 @@ exports[`Article test on android renders full article 1`] = `
         style={
           Object {
             "flexDirection": "column",
+            "overflow": "hidden",
             "paddingBottom": 25,
             "width": "100%",
           }
         }
       >
         <View
-          style={undefined}
+          style={
+            Object {
+              "display": "flex",
+            }
+          }
         >
           <View>
             <Image
@@ -6507,16 +6512,17 @@ exports[`Article test on android renders full article 1`] = `
           Object {
             "flexDirection": "row",
             "flexWrap": "nowrap",
+            "overflow": "hidden",
             "paddingBottom": 25,
             "paddingLeft": 10,
             "paddingRight": 10,
-            "width": "100%",
           }
         }
       >
         <View
           style={
             Object {
+              "display": "flex",
               "width": "50%",
             }
           }
@@ -6945,6 +6951,7 @@ exports[`Article test on android renders full article 1`] = `
           Object {
             "flexDirection": "row",
             "flexWrap": "nowrap",
+            "overflow": "hidden",
             "paddingBottom": 25,
             "paddingLeft": 10,
             "paddingRight": 10,
@@ -6955,6 +6962,7 @@ exports[`Article test on android renders full article 1`] = `
         <View
           style={
             Object {
+              "display": "flex",
               "width": "50%",
             }
           }
@@ -7138,6 +7146,7 @@ exports[`Article test on android renders full article 1`] = `
           Object {
             "flexDirection": "row",
             "flexWrap": "nowrap",
+            "overflow": "hidden",
             "paddingBottom": 25,
             "paddingLeft": 10,
             "paddingRight": 10,
@@ -7148,6 +7157,7 @@ exports[`Article test on android renders full article 1`] = `
         <View
           style={
             Object {
+              "display": "flex",
               "width": "50%",
             }
           }
