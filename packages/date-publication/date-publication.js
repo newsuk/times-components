@@ -29,7 +29,7 @@ const DatePublication = ({ date, publication, style }) => (
 DatePublication.propTypes = {
   date: PropTypes.instanceOf(Date),
   publication: PropTypes.oneOf(Object.keys(publications)),
-  style: StylePropTypes
+  style: TextPropTypesStyle
 };
 
 DatePublication.defaultProps = {
