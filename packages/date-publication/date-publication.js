@@ -28,13 +28,14 @@ const DatePublication = ({ date, publication, style }) => (
 
 DatePublication.propTypes = {
   date: PropTypes.instanceOf(Date),
-  publication: PropTypes.oneOf(Object.keys(publications)).isRequired,
-  style: TextPropTypesStyle
+  publication: PropTypes.oneOf(Object.keys(publications)),
+  style: StylePropTypes
 };
 
 DatePublication.defaultProps = {
   date: null,
-  style: {}
+  style: {},
+  publication: "TIMES"
 };
 
 export default DatePublication;

@@ -168,6 +168,7 @@ export default AuthorProfileContent => {
     const p = {
       ...props,
       ...authorProfileFixture.data.author,
+      articlesLoading: true,
       articles: Array(3)
         .fill()
         .map((number, id) => ({

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.24.0"></a>
+# [0.24.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.23.10...@times-components/author-profile@0.24.0) (2017-11-15)
+
+
+### Features
+
+* query pagination count ([17cb0d8](https://github.com/newsuk/times-components/commit/17cb0d8))
+
+
+
+
 <a name="0.23.10"></a>
 ## [0.23.10](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.23.9...@times-components/author-profile@0.23.10) (2017-11-15)
 
