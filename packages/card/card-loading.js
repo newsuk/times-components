@@ -48,11 +48,12 @@ const Loading = ({ horizontal, style }) => {
 };
 
 Loading.defaultProps = {
+  horizontal: false,
   style: null
 };
 
 Loading.propTypes = {
-  horizontal: PropTypes.bool.isRequired,
+  horizontal: PropTypes.bool,
   style: View.propTypes.style
 };
 
