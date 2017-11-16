@@ -1,6 +1,6 @@
 {
   "name": "@times-components/error-view",
-  "version": "0.5.21",
+  "version": "0.5.22",
   "description": "Handles errors",
   "main": "error-view",
   "scripts": {

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pagination",
-  "version": "0.10.10",
+  "version": "0.10.11",
   "main": "pagination",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -68,7 +68,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/link": "0.10.5",
+    "@times-components/link": "0.10.6",
     "@times-components/tracking": "0.2.6",
     "prop-types": "15.6.0",
     "react-display-name": "0.2.3",

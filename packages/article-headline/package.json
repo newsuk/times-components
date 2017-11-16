@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-headline",
-  "version": "0.8.7",
+  "version": "0.8.8",
   "description": "The article headline",
   "main": "article-headline",
   "scripts": {
