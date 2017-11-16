@@ -45,7 +45,8 @@ const config = (component, platform) => ({
   ],
   testPathIgnorePatterns: [
     `<rootDir>/packages/${component}/__tests__/${platform}/jest.config.js`
-  ]
+  ],
+  snapshotSerializers: ["enzyme-to-json/serializer"]
 });
 
 module.exports = config;

@@ -274,8 +274,8 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.66.tgz#5680b74a6135d33d4c00447e7c3dc691a4601625"
 
 "@types/react@^16.0.18":
-  version "16.0.22"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.22.tgz#19ad106e124aceebd2b4d430a278d55413ee8759"
+  version "16.0.23"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.23.tgz#f0f713b07912c6fd8e10c9ccc539443ceb06dbca"
 
 JSONStream@^1.0.4:
   version "1.3.1"
@@ -490,6 +490,10 @@ aproba@^1.0.3:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.2.0.tgz#6802e6264efd18c790a1b0d517f0f2627bf2c94a"
 
+arch@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/arch/-/arch-2.1.0.tgz#3613aa46149064b3c1f0607919bf1d4786e82889"
+
 are-we-there-yet@~1.1.2:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/are-we-there-yet/-/are-we-there-yet-1.1.4.tgz#bb5dca382bb94f05e15194373d16fd3ba1ca110d"
@@ -672,6 +676,10 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
+atob@~1.1.0:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/atob/-/atob-1.1.3.tgz#95f13629b12c3a51a5d215abdce2aa9f32f80773"
+
 autoprefixer@^6.3.1:
   version "6.7.7"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-6.7.7.tgz#1dbd1c835658e35ce3f9984099db00585c782014"
@@ -695,8 +703,8 @@ autoprefixer@^7.1.1:
     postcss-value-parser "^3.2.3"
 
 aws-sdk@^2.90.0:
-  version "2.149.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.149.0.tgz#76f53722a7780bdb3191e83f27c10108c6fe9813"
+  version "2.150.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.150.0.tgz#f4bc2bc0dd9b2b359e9f33b16fdab017c20d72b6"
   dependencies:
     buffer "4.9.1"
     crypto-browserify "1.0.9"
@@ -2281,6 +2289,13 @@ buffer@4.9.1, buffer@^4.3.0:
     ieee754 "^1.1.4"
     isarray "^1.0.0"
 
+buffer@^5.0.3:
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/buffer/-/buffer-5.0.8.tgz#84daa52e7cf2fa8ce4195bc5cf0f7809e0930b24"
+  dependencies:
+    base64-js "^1.0.2"
+    ieee754 "^1.1.4"
+
 builtin-modules@^1.0.0, builtin-modules@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-1.1.1.tgz#270f076c5a72c02f5b65a47df94c5fe3a278892f"
@@ -2376,12 +2391,12 @@ caniuse-api@^1.5.2:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000760"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000760.tgz#3ea29473eb78a6ccb09f2eb73ac9e1debfec528d"
+  version "1.0.30000764"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000764.tgz#d73ab11ae62f6a9e2f69867d6d9c23ae3f2e5d8d"
 
 caniuse-lite@^1.0.30000748, caniuse-lite@^1.0.30000760:
-  version "1.0.30000760"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000760.tgz#ec720395742f1c7ec8947fd6dd2604e77a8f98ff"
+  version "1.0.30000764"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000764.tgz#97ea7472f9d3e691eede34f21983cfc219ac7842"
 
 case-sensitive-paths-webpack-plugin@^2.0.0:
   version "2.1.1"
@@ -2543,9 +2558,10 @@ cli-width@^2.0.0:
   resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-2.2.0.tgz#ff19ede8a9a5e579324147b0c11f0fbcbabed639"
 
 clipboardy@^1.1.4:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/clipboardy/-/clipboardy-1.2.1.tgz#eb6123b2cc34079b6b3ae04b8e1e21a9a558b993"
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/clipboardy/-/clipboardy-1.2.2.tgz#2ce320b9ed9be1514f79878b53ff9765420903e2"
   dependencies:
+    arch "^2.1.0"
     execa "^0.8.0"
 
 cliui@^2.1.0:
@@ -3159,6 +3175,10 @@ csrf@~3.0.0:
     tsscmp "1.0.5"
     uid-safe "2.1.4"
 
+css-color-keywords@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/css-color-keywords/-/css-color-keywords-1.0.0.tgz#fea2616dc676b2962686b3af8dbdbe180b244e05"
+
 css-color-names@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/css-color-names/-/css-color-names-0.0.4.tgz#808adc2e79cf84738069b646cb20ec27beb629e0"
@@ -3205,9 +3225,26 @@ css-selector-tokenizer@^0.7.0:
     fastparse "^1.1.1"
     regexpu-core "^1.0.0"
 
+css-to-react-native@^2.0.3:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/css-to-react-native/-/css-to-react-native-2.0.4.tgz#cf4cc407558b3474d4ba8be1a2cd3b6ce713101b"
+  dependencies:
+    css-color-keywords "^1.0.0"
+    fbjs "^0.8.5"
+    postcss-value-parser "^3.3.0"
+
 css-what@2.1:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/css-what/-/css-what-2.1.0.tgz#9467d032c38cfaefb9f2d79501253062f87fa1bd"
+
+css@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/css/-/css-2.2.1.tgz#73a4c81de85db664d4ee674f7d47085e3b2d55dc"
+  dependencies:
+    inherits "^2.0.1"
+    source-map "^0.1.38"
+    source-map-resolve "^0.3.0"
+    urix "^0.1.0"
 
 cssesc@^0.1.0:
   version "0.1.0"
@@ -3779,8 +3816,8 @@ entities@^1.1.1, entities@~1.1.1:
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
 
 envinfo@^3.0.0:
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/envinfo/-/envinfo-3.9.0.tgz#eea5c3d5bce44ee9fc9a345ab9f44a616f45552a"
+  version "3.9.1"
+  resolved "https://registry.yarnpkg.com/envinfo/-/envinfo-3.9.1.tgz#78d5ccbea17ca2daefd8541561d1273813b96c4c"
   dependencies:
     copy-paste "^1.3.0"
     glob "^7.1.2"
@@ -4397,7 +4434,7 @@ fbjs-scripts@^0.8.1:
     semver "^5.1.0"
     through2 "^2.0.0"
 
-fbjs@^0.8.12, fbjs@^0.8.14, fbjs@^0.8.16, fbjs@^0.8.9:
+fbjs@^0.8.12, fbjs@^0.8.14, fbjs@^0.8.16, fbjs@^0.8.5, fbjs@^0.8.9:
   version "0.8.16"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.16.tgz#5e67432f550dc41b572bf55847b8aca64e5337db"
   dependencies:
@@ -5650,7 +5687,7 @@ is-plain-obj@^1.0.0, is-plain-obj@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-plain-obj/-/is-plain-obj-1.1.0.tgz#71a50c8429dfca773c92a390a4a03b39fcd51d3e"
 
-is-plain-object@^2.0.4:
+is-plain-object@^2.0.1, is-plain-object@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/is-plain-object/-/is-plain-object-2.0.4.tgz#2c163b3fafb1b606d9d17928f05c2a1c38e07677"
   dependencies:
@@ -6236,6 +6273,12 @@ jest-snapshot@^21.2.1:
     mkdirp "^0.5.1"
     natural-compare "^1.4.0"
     pretty-format "^21.2.1"
+
+jest-styled-components@4.9.0:
+  version "4.9.0"
+  resolved "https://registry.yarnpkg.com/jest-styled-components/-/jest-styled-components-4.9.0.tgz#459ccb37d0f5720007c8dba358bfff93c8cf4aed"
+  dependencies:
+    css "^2.2.1"
 
 jest-util@^20.0.3:
   version "20.0.3"
@@ -6863,8 +6906,8 @@ log4js@0.6.20:
     semver "~1.1.4"
 
 loglevel@^1.4.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.5.1.tgz#189078c94ab9053ee215a0acdbf24244ea0f6502"
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.6.0.tgz#ae0caa561111498c5ba13723d6fb631d24003934"
 
 longest@^1.0.1:
   version "1.0.1"
@@ -7252,8 +7295,8 @@ mute-stream@0.0.7:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
 
 nan@^2.3.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/nan/-/nan-2.7.0.tgz#d95bf721ec877e08db276ed3fc6eb78f9083ad46"
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.8.0.tgz#ed715f3fe9de02b57a5e6252d90a96675e1f085a"
 
 natural-compare@^1.4.0:
   version "1.4.0"
@@ -8796,8 +8839,8 @@ react-simple-di@^1.2.0:
     hoist-non-react-statics "1.x.x"
 
 react-split-pane@^0.1.68:
-  version "0.1.70"
-  resolved "https://registry.yarnpkg.com/react-split-pane/-/react-split-pane-0.1.70.tgz#0dcf3d8de17d54db6f6b7141386ec69a0cf45f48"
+  version "0.1.71"
+  resolved "https://registry.yarnpkg.com/react-split-pane/-/react-split-pane-0.1.71.tgz#19b1b30638655e655f9f5fe57b1ae7cc6c151829"
   dependencies:
     "@types/inline-style-prefixer" "^3.0.0"
     "@types/react" "^16.0.18"
@@ -9223,6 +9266,10 @@ resolve-from@^1.0.0:
 resolve-from@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-3.0.0.tgz#b22c7af7d9d6881bc8b6e653335eebcb0a188748"
+
+resolve-url@~0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/resolve-url/-/resolve-url-0.2.1.tgz#2c637fe77c893afd2a663fe21aa9080068e2052a"
 
 resolve@1.1.7:
   version "1.1.7"
@@ -9687,15 +9734,34 @@ source-list-map@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/source-list-map/-/source-list-map-2.0.0.tgz#aaa47403f7b245a92fbc97ea08f250d6087ed085"
 
+source-map-resolve@^0.3.0:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/source-map-resolve/-/source-map-resolve-0.3.1.tgz#610f6122a445b8dd51535a2a71b783dfc1248761"
+  dependencies:
+    atob "~1.1.0"
+    resolve-url "~0.2.1"
+    source-map-url "~0.3.0"
+    urix "~0.1.0"
+
 source-map-support@^0.4.15:
   version "0.4.18"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.18.tgz#0286a6de8be42641338594e97ccea75f0a2c585f"
   dependencies:
     source-map "^0.5.6"
 
+source-map-url@~0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/source-map-url/-/source-map-url-0.3.0.tgz#7ecaf13b57bcd09da8a40c5d269db33799d4aaf9"
+
 source-map@0.5.x, source-map@^0.5.0, source-map@^0.5.3, source-map@^0.5.6, source-map@~0.5.1, source-map@~0.5.6:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
+
+source-map@^0.1.38:
+  version "0.1.43"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.1.43.tgz#c24bc146ca517c1471f5dacbe2571b2b7f9e3346"
+  dependencies:
+    amdefine ">=0.0.4"
 
 source-map@^0.4.4:
   version "0.4.4"
@@ -9967,6 +10033,24 @@ style-loader@^0.17.0:
   resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-0.17.0.tgz#e8254bccdb7af74bd58274e36107b4d5ab4df310"
   dependencies:
     loader-utils "^1.0.2"
+
+styled-components@2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-2.2.3.tgz#154575c269880c840f903f580287dab155cf684c"
+  dependencies:
+    buffer "^5.0.3"
+    css-to-react-native "^2.0.3"
+    fbjs "^0.8.9"
+    hoist-non-react-statics "^1.2.0"
+    is-function "^1.0.1"
+    is-plain-object "^2.0.1"
+    prop-types "^15.5.4"
+    stylis "3.x"
+    supports-color "^3.2.3"
+
+stylis@3.x:
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.4.3.tgz#875bd0db3db37bb6de08f89275fc38ee2e32ee75"
 
 subcommander@1.0.0:
   version "1.0.0"
@@ -10420,6 +10504,10 @@ unpipe@1.0.0, unpipe@~1.0.0:
 upper-case@^1.1.1:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/upper-case/-/upper-case-1.1.3.tgz#f6b4501c2ec4cdd26ba78be7222961de77621598"
+
+urix@^0.1.0, urix@~0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
 
 url-loader@^0.5.8:
   version "0.5.9"

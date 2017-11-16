@@ -4115,7 +4115,7 @@ exports[`renders profile content component 1`] = `
           "__typename": "Image",
           "crop": Object {
             "__typename": "Crop",
-            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2bb30674-b008-11e7-8f75-2b6f1159f66f.jpg?crop=4815%2C2708%2C85%2C1833",
+            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2bb30674-b008-11e7-8f75-2b6f1159f66f.jpg?crop=4815%2C3210%2C85%2C1582&resize=640",
           },
           "title": "",
         },
@@ -4749,7 +4749,7 @@ exports[`renders profile content component 1`] = `
                     onLoad={[Function]}
                     source={
                       Object {
-                        "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2bb30674-b008-11e7-8f75-2b6f1159f66f.jpg?crop=4815%2C2708%2C85%2C1833",
+                        "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2bb30674-b008-11e7-8f75-2b6f1159f66f.jpg?crop=4815%2C3210%2C85%2C1582&resize=640",
                       }
                     }
                     style={undefined}
