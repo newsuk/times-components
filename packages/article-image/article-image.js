@@ -13,21 +13,32 @@ const styles = StyleSheet.create({
   primaryContainer: {
     width: "100%",
     flexDirection: "column",
-    paddingBottom: 25
+    paddingBottom: 25,
+    overflow: "hidden"
+  },
+  primaryImage: {
+    ...Platform.select({
+      web: {
+        display: "block"
+      },
+      ios: {
+        display: "flex"
+      },
+      android: {
+        display: "flex"
+      }
+    })
   },
   secondaryContainer: {
-    // width: "100%",
     flexDirection: "row",
     flexWrap: "nowrap",
     paddingBottom: 25,
     paddingLeft: 10,
     paddingRight: 10,
-    backgroundColor: "grey", //
     overflow: "hidden"
   },
   secondaryImage: {
     width: "50%",
-    backgroundColor: "red", //
     ...Platform.select({
       web: {
         display: "block"
@@ -44,7 +55,6 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     paddingTop: 0,
     width: "50%",
-    backgroundColor: "green" //
   },
   inlineContainer: {
     width: "100%",
@@ -52,15 +62,27 @@ const styles = StyleSheet.create({
     flexWrap: "nowrap",
     paddingBottom: 25,
     paddingLeft: 10,
-    paddingRight: 10
+    paddingRight: 10,
+    overflow: "hidden"
   },
   inlineImage: {
-    width: "50%"
+    width: "50%",
+    ...Platform.select({
+      web: {
+        display: "block"
+      },
+      ios: {
+        display: "flex"
+      },
+      android: {
+        display: "flex"
+      }
+    })
   },
   inlineCaption: {
-    width: "50%",
     paddingLeft: 10,
-    paddingTop: 0
+    paddingTop: 0,
+    width: "50%"
   }
 });
 

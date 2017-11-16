@@ -1,6 +1,19 @@
+import { Platform } from "react-native";
+
 const sharedStyles = {
   leadAsset: {
-    marginBottom: 10
+    marginBottom: 10,
+    ...Platform.select({
+      web: {
+        display: "block"
+      },
+      ios: {
+        display: "flex"
+      },
+      android: {
+        display: "flex"
+      }
+    })
   },
   articleTextElement: {
     fontFamily: "TimesDigitalW04",
