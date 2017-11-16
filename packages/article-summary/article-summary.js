@@ -63,7 +63,7 @@ ArticleSummary.propTypes = {
   headline: PropTypes.string,
   text: PropTypes.arrayOf(treePropType),
   date: PropTypes.instanceOf(Date),
-  publication: PropTypes.string
+  publication: DatePublication.propTypes.publication
 };
 
 ArticleSummary.defaultProps = {
@@ -71,7 +71,7 @@ ArticleSummary.defaultProps = {
   headline: "",
   text: [],
   date: null,
-  publication: ""
+  publication: DatePublication.defaultProps.publication
 };
 
 export default ArticleSummary;

@@ -21,7 +21,7 @@ it("renders vertical by default", () => {
 });
 
 it("renders loading vertical by default", () => {
-  const tree = renderer.create(<Card loading />).toJSON();
+  const tree = renderer.create(<Card isLoading />).toJSON();
 
   expect(tree).toMatchSnapshot();
 });
@@ -59,7 +59,7 @@ it("renders horizontal above breakpoint", () => {
 
 it("renders loading horizontal above breakpoint", () => {
   Enzyme.configure({ adapter: new React16Adapter() });
-  const wrapper = shallow(<Card loading />);
+  const wrapper = shallow(<Card isLoading />);
   wrapper.setState({
     isHorizontal: true
   });
