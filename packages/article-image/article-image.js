@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, Platform } from "react-native";
 import Image from "@times-components/image";
 import Caption from "@times-components/caption";
 
@@ -28,7 +28,17 @@ const styles = StyleSheet.create({
   secondaryImage: {
     width: "50%",
     backgroundColor: "red", //
-    display: "block"
+    ...Platform.select({
+      web: {
+        display: "block"
+      },
+      ios: {
+        display: "flex"
+      },
+      android: {
+        display: "flex"
+      }
+    })
   },
   secondaryCaption: {
     paddingLeft: 10,
