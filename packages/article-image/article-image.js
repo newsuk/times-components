@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   secondaryCaption: {
     paddingLeft: 10,
     paddingTop: 0,
-    width: "50%",
+    width: "50%"
   },
   inlineContainer: {
     width: "100%",

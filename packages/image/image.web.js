@@ -43,7 +43,7 @@ class TimesImage extends Component {
       <div style={aspectRatioStyle}>
         <img
           src={uri}
-          style={{ /*display: "block",*/ width: "100%" }}
+          style={{ width: "100%" }}
           onLoad={this.handleLoad}
           alt=""
         />
