@@ -17,11 +17,11 @@ const styles = StyleSheet.create({
   },
   secondaryContainer: {
     // width: "100%",
-    // flexDirection: "row",
-    // flexWrap: "nowrap",
-    // paddingBottom: 25,
-    // paddingLeft: 10,
-    // paddingRight: 10
+    flexDirection: "row",
+    flexWrap: "nowrap",
+    paddingBottom: 25,
+    paddingLeft: 10,
+    paddingRight: 10,
     backgroundColor: "grey", //
     overflow: "hidden"
   },
@@ -31,8 +31,8 @@ const styles = StyleSheet.create({
     display: "block"
   },
   secondaryCaption: {
-    // paddingLeft: 10,
-    // paddingTop: 0,
+    paddingLeft: 10,
+    paddingTop: 0,
     width: "50%",
     backgroundColor: "green" //
   },
