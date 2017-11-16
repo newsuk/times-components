@@ -95,14 +95,13 @@ exports[`Article test on web renders article no flags 1`] = `
       className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
     >
       <div
-        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1adg3ll rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
         data-testid="leadAsset"
       >
         <div
           style={
             Object {
-              "height": 0,
-              "overflow": "hidden",
+              "display": "contents",
               "paddingBottom": "56.25%",
             }
           }
@@ -113,7 +112,6 @@ exports[`Article test on web renders article no flags 1`] = `
             src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200"
             style={
               Object {
-                "display": "block",
                 "width": "100%",
               }
             }
@@ -358,14 +356,13 @@ exports[`Article test on web renders article no label 1`] = `
       className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
     >
       <div
-        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1adg3ll rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
         data-testid="leadAsset"
       >
         <div
           style={
             Object {
-              "height": 0,
-              "overflow": "hidden",
+              "display": "contents",
               "paddingBottom": "56.25%",
             }
           }
@@ -376,7 +373,6 @@ exports[`Article test on web renders article no label 1`] = `
             src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200"
             style={
               Object {
-                "display": "block",
                 "width": "100%",
               }
             }
@@ -704,14 +700,13 @@ exports[`Article test on web renders article no label no flags 1`] = `
       className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
     >
       <div
-        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1adg3ll rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
         data-testid="leadAsset"
       >
         <div
           style={
             Object {
-              "height": 0,
-              "overflow": "hidden",
+              "display": "contents",
               "paddingBottom": "56.25%",
             }
           }
@@ -722,7 +717,6 @@ exports[`Article test on web renders article no label no flags 1`] = `
             src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200"
             style={
               Object {
-                "display": "block",
                 "width": "100%",
               }
             }
@@ -948,14 +942,13 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
       className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
     >
       <div
-        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1adg3ll rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
         data-testid="leadAsset"
       >
         <div
           style={
             Object {
-              "height": 0,
-              "overflow": "hidden",
+              "display": "contents",
               "paddingBottom": "56.25%",
             }
           }
@@ -966,7 +959,6 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
             src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200"
             style={
               Object {
-                "display": "block",
                 "width": "100%",
               }
             }
@@ -1185,14 +1177,13 @@ exports[`Article test on web renders article no standfirst 1`] = `
       className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
     >
       <div
-        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1adg3ll rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
         data-testid="leadAsset"
       >
         <div
           style={
             Object {
-              "height": 0,
-              "overflow": "hidden",
+              "display": "contents",
               "paddingBottom": "56.25%",
             }
           }
@@ -1203,7 +1194,6 @@ exports[`Article test on web renders article no standfirst 1`] = `
             src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200"
             style={
               Object {
-                "display": "block",
                 "width": "100%",
               }
             }
@@ -1543,14 +1533,13 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
       className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
     >
       <div
-        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1adg3ll rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
         data-testid="leadAsset"
       >
         <div
           style={
             Object {
-              "height": 0,
-              "overflow": "hidden",
+              "display": "contents",
               "paddingBottom": "56.25%",
             }
           }
@@ -1561,7 +1550,6 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
             src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200"
             style={
               Object {
-                "display": "block",
                 "width": "100%",
               }
             }
@@ -1799,14 +1787,13 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
       className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
     >
       <div
-        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1adg3ll rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
         data-testid="leadAsset"
       >
         <div
           style={
             Object {
-              "height": 0,
-              "overflow": "hidden",
+              "display": "contents",
               "paddingBottom": "56.25%",
             }
           }
@@ -1817,7 +1804,6 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
             src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200"
             style={
               Object {
-                "display": "block",
                 "width": "100%",
               }
             }
@@ -2138,14 +2124,13 @@ exports[`Article test on web renders full article 1`] = `
       className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
     >
       <div
-        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1adg3ll rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
         data-testid="leadAsset"
       >
         <div
           style={
             Object {
-              "height": 0,
-              "overflow": "hidden",
+              "display": "contents",
               "paddingBottom": "56.25%",
             }
           }
@@ -2156,7 +2141,6 @@ exports[`Article test on web renders full article 1`] = `
             src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200"
             style={
               Object {
-                "display": "block",
                 "width": "100%",
               }
             }
@@ -2404,16 +2388,15 @@ exports[`Article test on web renders full article 1`] = `
         className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
       >
         <div
-          className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-b6sd5j rn-position-bnwqim rn-width-13qz1uu"
+          className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-overflowX-11yh6sk rn-overflowY-buy8e9 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-b6sd5j rn-position-bnwqim rn-width-13qz1uu"
         >
           <div
-            className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+            className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1adg3ll rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
           >
             <div
               style={
                 Object {
-                  "height": 0,
-                  "overflow": "hidden",
+                  "display": "contents",
                   "paddingBottom": "80%",
                 }
               }
@@ -2424,7 +2407,6 @@ exports[`Article test on web renders full article 1`] = `
                 src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0"
                 style={
                   Object {
-                    "display": "block",
                     "width": "100%",
                   }
                 }
@@ -2503,16 +2485,15 @@ exports[`Article test on web renders full article 1`] = `
         className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
       >
         <div
-          className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-flexWrap-tzz3ar rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingBottom-b6sd5j rn-paddingLeft-1hfyk0a rn-paddingRight-1qfoi16 rn-position-bnwqim rn-width-13qz1uu"
+          className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-flexWrap-tzz3ar rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-overflowX-11yh6sk rn-overflowY-buy8e9 rn-paddingTop-wk8lta rn-paddingBottom-b6sd5j rn-paddingLeft-1hfyk0a rn-paddingRight-1qfoi16 rn-position-bnwqim"
         >
           <div
-            className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-width-1f720gc"
+            className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1adg3ll rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-width-1f720gc"
           >
             <div
               style={
                 Object {
-                  "height": 0,
-                  "overflow": "hidden",
+                  "display": "contents",
                   "paddingBottom": "66.66666666666667%",
                 }
               }
@@ -2523,7 +2504,6 @@ exports[`Article test on web renders full article 1`] = `
                 src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0"
                 style={
                   Object {
-                    "display": "block",
                     "width": "100%",
                   }
                 }

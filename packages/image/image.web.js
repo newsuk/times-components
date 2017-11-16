@@ -22,8 +22,7 @@ class TimesImage extends Component {
     const { isLoaded } = this.state;
 
     const aspectRatioStyle = {
-      height: 0,
-      overflow: "hidden",
+      display: "contents",
       paddingBottom: `${100 / aspectRatio}%`
     };
 
@@ -44,7 +43,7 @@ class TimesImage extends Component {
       <div style={aspectRatioStyle}>
         <img
           src={uri}
-          style={{ display: "block", width: "100%" }}
+          style={{ width: "100%" }}
           onLoad={this.handleLoad}
           alt=""
         />
