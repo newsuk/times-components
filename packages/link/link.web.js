@@ -1,5 +1,5 @@
 import React from "react";
-import propTypes from "./link.proptypes";
+import PropTypes from "prop-types";
 
 const Link = ({ url, onPress, children }) => (
   <a href={url} onClick={onPress} style={{ textDecoration: "none" }}>
@@ -7,7 +7,11 @@ const Link = ({ url, onPress, children }) => (
   </a>
 );
 
-Link.propTypes = propTypes;
+Link.propTypes = {
+  url: PropTypes.string.isRequired,
+  onPress: PropTypes.func.isRequired,
+  children: PropTypes.node.isRequired
+};
 
 export default Link;
 export { default as TextLink } from "./text-link";

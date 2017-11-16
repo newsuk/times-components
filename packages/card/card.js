@@ -86,13 +86,16 @@ class CardComponent extends React.Component {
 
 CardComponent.propTypes = {
   image: PropTypes.shape({ uri: PropTypes.string }),
-  ...ArticleSummary.propTypes
+  ...ArticleSummary.propTypes,
+  isLoading: PropTypes.bool
 };
 
 CardComponent.defaultProps = {
   image: {
     uri: ""
-  }
+  },
+  isLoading: false,
+  ...ArticleSummary.defaultProps
 };
 
 export default CardComponent;
