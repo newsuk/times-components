@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.24.3"></a>
+## [0.24.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.24.2...@times-components/author-profile@0.24.3) (2017-11-16)
+
+
+### Bug Fixes
+
+* static rendering of card component ([#394](https://github.com/newsuk/times-components/issues/394)) ([955e8b0](https://github.com/newsuk/times-components/commit/955e8b0))
+
+
+
+
 <a name="0.24.2"></a>
 ## [0.24.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.24.1...@times-components/author-profile@0.24.2) (2017-11-16)
 

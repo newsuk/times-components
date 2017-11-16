@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "0.24.2",
+  "version": "0.24.3",
   "description": "Author info along with articles they have written",
   "main": "author-profile",
   "scripts": {
@@ -62,7 +62,7 @@
   },
   "dependencies": {
     "@times-components/author-head": "0.9.9",
-    "@times-components/card": "0.10.6",
+    "@times-components/card": "0.10.7",
     "@times-components/gradient": "0.1.4",
     "@times-components/link": "0.10.6",
     "@times-components/pagination": "0.10.11",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.0.5"></a>
+## [0.0.5](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.0.4...@times-components/jest-configurator@0.0.5) (2017-11-16)
+
+
+### Bug Fixes
+
+* static rendering of card component ([#394](https://github.com/newsuk/times-components/issues/394)) ([955e8b0](https://github.com/newsuk/times-components/commit/955e8b0))
+
+
+
+
 <a name="0.0.4"></a>
 ## [0.0.4](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.0.3...@times-components/jest-configurator@0.0.4) (2017-11-13)
 
