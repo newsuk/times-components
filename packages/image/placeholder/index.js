@@ -1,10 +1,10 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
-import StylePropTypes from "react-style-proptype";
+import { StyleSheet, View, ViewPropTypes } from "react-native";
 import Gradient from "@times-components/gradient";
 import T from "./t";
 
-const { supportingArrays } = StylePropTypes;
+const { style: ViewPropTypesStyle } = ViewPropTypes;
+
 const styles = StyleSheet.create({
   container: {
     flex: 1
@@ -55,7 +55,7 @@ Placeholder.defaultProps = {
 };
 
 Placeholder.propTypes = {
-  style: supportingArrays
+  style: ViewPropTypesStyle
 };
 
 export default Placeholder;

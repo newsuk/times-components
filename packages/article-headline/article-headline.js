@@ -1,7 +1,8 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text, ViewPropTypes } from "react-native";
 import PropTypes from "prop-types";
-import StylePropTypes from "react-style-proptype";
+
+const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 const styles = {
   text: {
@@ -22,7 +23,7 @@ const ArticleHeadline = ({ text, style }) => (
 
 ArticleHeadline.propTypes = {
   text: PropTypes.string.isRequired,
-  style: StylePropTypes
+  style: ViewPropTypesStyle
 };
 
 ArticleHeadline.defaultProps = {

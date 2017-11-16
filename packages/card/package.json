@@ -72,7 +72,6 @@
     "@times-components/image": "1.6.3",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.7",
-    "react-style-proptype": "3.1.0",
     "svgs": "3.1.0"
   },
   "peerDependencies": {

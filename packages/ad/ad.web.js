@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { StyleSheet } from "react-native";
-import StylePropTypes from "react-style-proptype";
+import { StyleSheet, ViewPropTypes } from "react-native";
 import { Subscriber } from "react-broadcast";
 import AdComposer from "./ad-composer";
 import GPT from "./gpt";
+
+const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 const styles = StyleSheet.create({
   container: {
@@ -35,7 +36,7 @@ class Ad extends Component {
 
 Ad.propTypes = {
   code: PropTypes.string.isRequired,
-  style: StylePropTypes
+  style: ViewPropTypesStyle
 };
 
 Ad.defaultProps = {

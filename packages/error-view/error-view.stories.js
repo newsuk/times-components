@@ -1,7 +1,12 @@
 /* eslint import/no-unresolved: "off" */
 
 import React from "react";
-import { TouchableWithoutFeedback, View, Text } from "react-native";
+import {
+  TouchableWithoutFeedback,
+  View,
+  ViewPropTypes,
+  Text
+} from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
@@ -9,9 +14,10 @@ import { decorateAction } from "@storybook/addon-actions";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import BrightcoveVideo from "@times-components/brightcove-video";
 import PropTypes from "prop-types";
-import StylePropTypes from "react-style-proptype";
 
 import ErrorView, { addErrorHandler } from "./error-view";
+
+const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 const stringifyAction = decorateAction([args => [JSON.stringify(args[0])]]);
 
@@ -26,7 +32,7 @@ const ErrorOnClick = ({ style, onError, ...otherProps }) => (
 );
 ErrorOnClick.defaultProps = { style: {}, onError: () => {} };
 ErrorOnClick.propTypes = {
-  style: StylePropTypes,
+  style: ViewPropTypesStyle,
   onError: PropTypes.func
 };
 

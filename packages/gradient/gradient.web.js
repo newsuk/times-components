@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import React from "react";
-import { View } from "react-native";
-import StylePropTypes from "react-style-proptype";
+import { View, ViewPropTypes } from "react-native";
 
-const { supportingArrays } = StylePropTypes;
+const { style: ViewPropTypesStyle } = ViewPropTypes;
+
 const Gradient = ({ degrees, children, style }) => (
   <View
     style={[
@@ -31,7 +31,7 @@ Gradient.propTypes = {
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element)
   ]),
-  style: supportingArrays
+  style: ViewPropTypesStyle
 };
 
 export default Gradient;

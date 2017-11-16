@@ -1,7 +1,8 @@
 import React from "react";
 import { Text, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
-import StylePropTypes from "react-style-proptype";
+
+const { style: StylePropType } = Text.propTypes;
 
 const styles = StyleSheet.create({
   textLink: {
@@ -21,10 +22,7 @@ const TextLink = ({ style, url, onPress, children }) => (
 );
 
 TextLink.propTypes = {
-  style: PropTypes.oneOfType([
-    PropTypes.arrayOf(StylePropTypes),
-    StylePropTypes
-  ]),
+  style: StylePropType,
   url: PropTypes.string.isRequired,
   onPress: PropTypes.func.isRequired,
   children: PropTypes.oneOfType([
