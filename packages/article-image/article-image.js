@@ -16,20 +16,25 @@ const styles = StyleSheet.create({
     paddingBottom: 25
   },
   secondaryContainer: {
-    width: "100%",
-    flexDirection: "row",
-    flexWrap: "nowrap",
-    paddingBottom: 25,
-    paddingLeft: 10,
-    paddingRight: 10
+    // width: "100%",
+    // flexDirection: "row",
+    // flexWrap: "nowrap",
+    // paddingBottom: 25,
+    // paddingLeft: 10,
+    // paddingRight: 10
+    backgroundColor: "grey", //
+    overflow: "hidden"
   },
   secondaryImage: {
-    width: "50%"
+    width: "50%",
+    backgroundColor: "red", //
+    display: "block"
   },
   secondaryCaption: {
-    paddingLeft: 10,
-    paddingTop: 0,
-    width: "50%"
+    // paddingLeft: 10,
+    // paddingTop: 0,
+    width: "50%",
+    backgroundColor: "green" //
   },
   inlineContainer: {
     width: "100%",
