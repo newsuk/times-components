@@ -20,12 +20,12 @@ const gradientStyles = StyleSheet.create({
   }
 });
 
-const Loading = ({ horizontal, style }) => {
+const Loading = ({ horizontal, aspectRatio, style }) => {
   const layoutStyles = horizontal ? styles.horizontal : styles.vertical;
 
   const imageComponent = (
     <View style={[layoutStyles.childrenContainer, layoutStyles.imageContainer]}>
-      <Image uri="" style={layoutStyles.image} aspectRatio={3 / 2} />
+      <Image style={layoutStyles.image} aspectRatio={aspectRatio} />
     </View>
   );
 
@@ -49,11 +49,13 @@ const Loading = ({ horizontal, style }) => {
 
 Loading.defaultProps = {
   horizontal: false,
+  aspectRatio: 1,
   style: null
 };
 
 Loading.propTypes = {
   horizontal: PropTypes.bool,
+  aspectRatio: PropTypes.number,
   style: View.propTypes.style
 };
 

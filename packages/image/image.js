@@ -1,19 +1,11 @@
 import React, { Component } from "react";
-import { Image, StyleSheet, View } from "react-native";
+import { ImageBackground, ViewPropTypes, View } from "react-native";
+import PropTypes from "prop-types";
 import Placeholder from "./placeholder";
-import imagePropTypes from "./image-prop-types";
+
+const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 const addMissingProtocol = uri => (uri.startsWith("//") ? `https:${uri}` : uri);
-
-const styles = StyleSheet.create({
-  placeholder: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%"
-  }
-});
 
 class TimesImage extends Component {
   constructor(props) {
@@ -30,25 +22,40 @@ class TimesImage extends Component {
   }
 
   render() {
-    const { uri: dirtyUri, aspectRatio, style } = this.props;
+    const { uri: dirtyUri, style, aspectRatio } = this.props;
     const { isLoaded } = this.state;
-    // web handles missing protocols just fine, native doesnt. This evens out support.
+    // web handles missing protocols just fine, native doesn't. This evens out support.
     const uri = addMissingProtocol(dirtyUri);
 
+    const props = {
+      style: [{ width: "100%", height: "100%" }].concat(style),
+      onLoad: this.handleLoad,
+      aspectRatio
+    };
+
+    if (uri) {
+      props.source = { uri };
+    }
+
     return (
-      <View>
-        <Image
-          style={style}
-          source={{ uri }}
-          aspectRatio={aspectRatio}
-          onLoad={this.handleLoad}
-        />
-        {isLoaded ? null : <Placeholder style={styles.placeholder} />}
+      <View aspectRatio={aspectRatio}>
+        <ImageBackground {...props}>
+          {isLoaded ? null : <Placeholder style={style} />}
+        </ImageBackground>
       </View>
     );
   }
 }
 
-TimesImage.propTypes = imagePropTypes;
+TimesImage.defaultProps = {
+  style: {},
+  uri: ""
+};
+
+TimesImage.propTypes = {
+  uri: PropTypes.string,
+  aspectRatio: PropTypes.number.isRequired,
+  style: ViewPropTypesStyle
+};
 
 export default TimesImage;
