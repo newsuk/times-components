@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders loading image when width set 1`] = `
+exports[`Placeholder test on ios renders loading image when width set 1`] = `
 <View
   onLayout={[Function]}
   style={

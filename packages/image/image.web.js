@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View } from "react-native";
-import imagePropTypes from "./image-prop-types";
 import Placeholder from "./placeholder";
+import { defaultProps, propTypes } from "./image-prop-types";
 
 class TimesImage extends Component {
   constructor(props) {
@@ -58,6 +58,8 @@ class TimesImage extends Component {
   }
 }
 
-TimesImage.propTypes = imagePropTypes;
+TimesImage.defaultProps = defaultProps;
+
+TimesImage.propTypes = propTypes;
 
 export default TimesImage;

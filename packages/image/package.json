@@ -4,8 +4,11 @@
   "main": "image",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
-    "test:watch": "jest --bail --verbose --watchAll",
-    "test": "jest --bail --ci --coverage",
+    "test:android": "jest --config='./__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test": "yarn test:android -- --ci --bail && yarn test:ios -- --ci --bail && yarn test:web -- --ci --bail --coverage",
+    "test:watch": "jest --projects */**/jest.config.js --watchAll",
     "fmt": "prettier --write '**/*.+(js|json|md)'",
     "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
     "lint": "eslint . && npm run prettier:diff"
@@ -68,6 +71,7 @@
   },
   "dependencies": {
     "@times-components/gradient": "0.1.4",
+    "@times-components/jest-configurator": "0.0.5",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.7",
     "svgs": "3.1.0"

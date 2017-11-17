@@ -1,19 +1,13 @@
 import React, { Component } from "react";
-import { Image, StyleSheet, View } from "react-native";
+import { ImageBackground, View, StyleSheet } from "react-native";
 import Placeholder from "./placeholder";
-import imagePropTypes from "./image-prop-types";
-
-const addMissingProtocol = uri => (uri.startsWith("//") ? `https:${uri}` : uri);
+import { defaultProps, propTypes } from "./image-prop-types";
 
 const styles = StyleSheet.create({
-  placeholder: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%"
-  }
+  imageBackground: { width: "100%", height: "100%" }
 });
+
+const addMissingProtocol = uri => (uri.startsWith("//") ? `https:${uri}` : uri);
 
 class TimesImage extends Component {
   constructor(props) {
@@ -30,25 +24,32 @@ class TimesImage extends Component {
   }
 
   render() {
-    const { uri: dirtyUri, aspectRatio, style } = this.props;
+    const { uri: dirtyUri, style, aspectRatio } = this.props;
     const { isLoaded } = this.state;
-    // web handles missing protocols just fine, native doesnt. This evens out support.
+    // web handles missing protocols just fine, native doesn't. This evens out support.
     const uri = addMissingProtocol(dirtyUri);
 
+    const props = {
+      style: styles.imageBackground,
+      onLoad: this.handleLoad
+    };
+
+    if (uri) {
+      props.source = { uri };
+    }
+
     return (
-      <View>
-        <Image
-          style={style}
-          source={{ uri }}
-          aspectRatio={aspectRatio}
-          onLoad={this.handleLoad}
-        />
-        {isLoaded ? null : <Placeholder style={styles.placeholder} />}
+      <View aspectRatio={aspectRatio} style={style}>
+        <ImageBackground {...props}>
+          {isLoaded ? null : <Placeholder />}
+        </ImageBackground>
       </View>
     );
   }
 }
 
-TimesImage.propTypes = imagePropTypes;
+TimesImage.defaultProps = defaultProps;
+
+TimesImage.propTypes = propTypes;
 
 export default TimesImage;

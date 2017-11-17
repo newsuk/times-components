@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Placeholder test on ios renders loading image when width set 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      64,
+      null,
+    ]
+  }
+>
+  <Gradient
+    degrees={264}
+    style={64}
+  >
+    <View
+      style={
+        Array [
+          64,
+          65,
+        ]
+      }
+    >
+      <T
+        height={45}
+        width={45}
+      />
+    </View>
+  </Gradient>
+</View>
+`;

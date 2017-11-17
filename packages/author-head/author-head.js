@@ -22,8 +22,6 @@ const styles = StyleSheet.create({
     position: "absolute"
   },
   roundImage: {
-    width: 100,
-    height: 100,
     borderColor: "#FFF",
     borderRadius: 50,
     borderWidth: 5,
@@ -80,7 +78,7 @@ const AuthorHead = props => {
 
   const imageComponent = uri ? (
     <View style={styles.photoContainer}>
-      <Image uri={uri} style={styles.roundImage} aspectRatio={1 / 1} />
+      <Image uri={uri} style={styles.roundImage} aspectRatio={1} />
     </View>
   ) : null;
 
