@@ -1,133 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card test on android renders horizontal above breakpoint 1`] = `
-<View
-  onLayout={[Function]}
->
-  <View
-    style={
-      Array [
-        Object {
-          "flexDirection": "row",
-        },
-        undefined,
-      ]
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "flexGrow": 1,
-            "flexShrink": 1,
-          },
-          Object {
-            "flexBasis": 0,
-            "flexGrow": 2,
-            "marginBottom": 0,
-            "marginRight": 10,
-          },
-        ]
-      }
-    >
-      <TimesImage
-        aspectRatio={1.5}
-        style={Object {}}
-        uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320"
-      />
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "flexGrow": 1,
-            "flexShrink": 1,
-          },
-          Object {
-            "flexBasis": 0,
-            "flexGrow": 3,
-          },
-        ]
-      }
-    >
-      <ArticleSummary
-        date={2017-07-01T14:32:00.000Z}
-        headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT"
-        label="Camilla Long"
-        publication="SUNDAYTIMES"
-        text={
-          Array [
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "paragraph",
-            },
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "The former punk",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "paragraph",
-            },
-          ]
-        }
-      />
-    </View>
-  </View>
-</View>
-`;
-
-exports[`Card test on android renders loading horizontal above breakpoint 1`] = `
-<View
-  onLayout={[Function]}
->
-  <Loading
-    aspectRatio={1.5}
-    horizontal={true}
-    style={null}
-  />
-</View>
-`;
-
 exports[`Card test on android renders loading state 1`] = `
-<View
-  onLayout={[Function]}
->
-  <View
-    style={
-      Array [
-        Object {
-          "flexDirection": "column",
-        },
-        null,
-      ]
-    }
-  >
+<View>
+  <View>
     <View
       style={
-        Array [
-          Object {
-            "flexGrow": 1,
-            "flexShrink": 1,
-          },
-          Object {
-            "marginBottom": 10,
-          },
-        ]
+        Object {
+          "marginBottom": 10,
+        }
       }
     >
       <View
@@ -217,327 +97,7 @@ exports[`Card test on android renders loading state 1`] = `
         </View>
       </View>
     </View>
-    <View
-      style={
-        Array [
-          Object {
-            "flexGrow": 1,
-            "flexShrink": 1,
-          },
-          undefined,
-        ]
-      }
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "height": 24,
-              "marginBottom": 10,
-              "maxWidth": 400,
-            },
-          ]
-        }
-      >
-        <BVLinearGradient
-          colors={
-            Array [
-              "#f9f9f9",
-              "#ededed",
-            ]
-          }
-          end={
-            Object {
-              "x": -0.09302964577578221,
-              "y": 0.11488204504197774,
-            }
-          }
-          locations={
-            Array [
-              0,
-              1,
-            ]
-          }
-          start={
-            Object {
-              "x": 1,
-              "y": 0,
-            }
-          }
-          style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-            ]
-          }
-        />
-      </View>
-      <View
-        style={
-          Array [
-            Object {
-              "height": 10,
-              "marginBottom": 10,
-            },
-          ]
-        }
-      >
-        <BVLinearGradient
-          colors={
-            Array [
-              "#f9f9f9",
-              "#ededed",
-            ]
-          }
-          end={
-            Object {
-              "x": -0.049525179317961854,
-              "y": 0.05500328394968961,
-            }
-          }
-          locations={
-            Array [
-              0,
-              1,
-            ]
-          }
-          start={
-            Object {
-              "x": 1,
-              "y": 0,
-            }
-          }
-          style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-            ]
-          }
-        />
-      </View>
-      <View
-        style={
-          Array [
-            Object {
-              "height": 10,
-              "marginBottom": 10,
-            },
-          ]
-        }
-      >
-        <BVLinearGradient
-          colors={
-            Array [
-              "#f9f9f9",
-              "#ededed",
-            ]
-          }
-          end={
-            Object {
-              "x": -0.049525179317961854,
-              "y": 0.05500328394968961,
-            }
-          }
-          locations={
-            Array [
-              0,
-              1,
-            ]
-          }
-          start={
-            Object {
-              "x": 1,
-              "y": 0,
-            }
-          }
-          style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-            ]
-          }
-        />
-      </View>
-      <View
-        style={
-          Array [
-            Object {
-              "height": 10,
-              "marginBottom": 10,
-            },
-            Object {
-              "marginBottom": 0,
-            },
-          ]
-        }
-      >
-        <BVLinearGradient
-          colors={
-            Array [
-              "#f9f9f9",
-              "#ededed",
-            ]
-          }
-          end={
-            Object {
-              "x": -0.049525179317961854,
-              "y": 0.05500328394968961,
-            }
-          }
-          locations={
-            Array [
-              0,
-              1,
-            ]
-          }
-          start={
-            Object {
-              "x": 1,
-              "y": 0,
-            }
-          }
-          style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-            ]
-          }
-        />
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`Card test on android renders loading vertical by default 1`] = `
-<View
-  onLayout={[Function]}
->
-  <View
-    style={
-      Array [
-        Object {
-          "flexDirection": "column",
-        },
-        null,
-      ]
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "flexGrow": 1,
-            "flexShrink": 1,
-          },
-          Object {
-            "marginBottom": 10,
-          },
-        ]
-      }
-    >
-      <View
-        aspectRatio={1.5}
-        style={Object {}}
-      >
-        <View
-          style={
-            Object {
-              "height": "100%",
-              "width": "100%",
-            }
-          }
-        >
-          <Image
-            onLoad={[Function]}
-            style={
-              Array [
-                Object {
-                  "bottom": 0,
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                },
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                },
-                undefined,
-              ]
-            }
-          />
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flex": 1,
-                },
-                null,
-              ]
-            }
-          >
-            <View
-              style={
-                Object {
-                  "flex": 1,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#f9f9f9",
-                    "#ededed",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.09302964577578221,
-                    "y": 0.11488204504197774,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
-                }
-              />
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "flexGrow": 1,
-            "flexShrink": 1,
-          },
-          undefined,
-        ]
-      }
-    >
+    <View>
       <View
         style={
           Array [
@@ -725,29 +285,16 @@ exports[`Card test on android renders loading vertical by default 1`] = `
 
 exports[`Card test on android renders vertical by default 1`] = `
 <View
-  onLayout={[Function]}
+  onLayout={undefined}
 >
   <View
-    style={
-      Array [
-        Object {
-          "flexDirection": "column",
-        },
-        undefined,
-      ]
-    }
+    style={undefined}
   >
     <View
       style={
-        Array [
-          Object {
-            "flexGrow": 1,
-            "flexShrink": 1,
-          },
-          Object {
-            "marginBottom": 10,
-          },
-        ]
+        Object {
+          "marginBottom": 10,
+        }
       }
     >
       <View
@@ -766,7 +313,7 @@ exports[`Card test on android renders vertical by default 1`] = `
             onLoad={[Function]}
             source={
               Object {
-                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320",
+                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360",
               }
             }
             style={
@@ -842,17 +389,7 @@ exports[`Card test on android renders vertical by default 1`] = `
         </View>
       </View>
     </View>
-    <View
-      style={
-        Array [
-          Object {
-            "flexGrow": 1,
-            "flexShrink": 1,
-          },
-          undefined,
-        ]
-      }
-    >
+    <View>
       <View
         style={Object {}}
       >
@@ -950,29 +487,12 @@ exports[`Card test on android renders vertical by default 1`] = `
 
 exports[`Card test on android renders without image 1`] = `
 <View
-  onLayout={[Function]}
+  onLayout={undefined}
 >
   <View
-    style={
-      Array [
-        Object {
-          "flexDirection": "column",
-        },
-        undefined,
-      ]
-    }
+    style={undefined}
   >
-    <View
-      style={
-        Array [
-          Object {
-            "flexGrow": 1,
-            "flexShrink": 1,
-          },
-          undefined,
-        ]
-      }
-    >
+    <View>
       <View
         style={Object {}}
       >
@@ -1070,29 +590,12 @@ exports[`Card test on android renders without image 1`] = `
 
 exports[`Card test on android renders without image url 1`] = `
 <View
-  onLayout={[Function]}
+  onLayout={undefined}
 >
   <View
-    style={
-      Array [
-        Object {
-          "flexDirection": "column",
-        },
-        undefined,
-      ]
-    }
+    style={undefined}
   >
-    <View
-      style={
-        Array [
-          Object {
-            "flexGrow": 1,
-            "flexShrink": 1,
-          },
-          undefined,
-        ]
-      }
-    >
+    <View>
       <View
         style={Object {}}
       >

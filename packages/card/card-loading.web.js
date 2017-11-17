@@ -1,10 +1,9 @@
 import React from "react";
-import { StyleSheet, ViewPropTypes } from "react-native";
+import { StyleSheet } from "react-native";
+import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import Gradient from "@times-components/gradient";
 import { ImageContainer, SummaryContainer, CardContainer } from "./card-styles";
-
-const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 const gradientStyles = StyleSheet.create({
   headerContainer: {
@@ -21,15 +20,15 @@ const gradientStyles = StyleSheet.create({
   }
 });
 
-const Loading = ({ style }) => {
+const Loading = ({ imageRatio }) => {
   const imageComponent = (
     <ImageContainer>
-      <Image uri="" aspectRatio={3 / 2} />
+      <Image uri="" aspectRatio={imageRatio} />
     </ImageContainer>
   );
 
   return (
-    <CardContainer style={style}>
+    <CardContainer>
       {imageComponent}
       <SummaryContainer>
         <Gradient style={[gradientStyles.headerContainer]} degrees={264} />
@@ -45,11 +44,11 @@ const Loading = ({ style }) => {
 };
 
 Loading.defaultProps = {
-  style: null
+  imageRatio: 1
 };
 
 Loading.propTypes = {
-  style: ViewPropTypesStyle
+  imageRatio: PropTypes.number
 };
 
 export default Loading;

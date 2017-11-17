@@ -22,7 +22,9 @@ const AuthorProfileItem = item => {
     publicationName,
     publishedTime,
     title,
-    url
+    url,
+    imageRatio,
+    imageSize
   } = item;
 
   const imageUri = get(
@@ -34,7 +36,7 @@ const AuthorProfileItem = item => {
   if (isLoading) {
     return (
       <View style={[styles.container, style]}>
-        <Card isLoading={isLoading} />
+        <Card isLoading={isLoading} imageRatio={imageRatio} />
       </View>
     );
   }
@@ -46,6 +48,8 @@ const AuthorProfileItem = item => {
           headline={title}
           text={content}
           image={imageUri ? { uri: imageUri } : null}
+          imageRatio={imageRatio}
+          imageSize={imageSize}
           date={publishedTime}
           label={label}
           publication={publicationName}

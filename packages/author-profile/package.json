@@ -51,6 +51,8 @@
     "flow-bin": "0.42.0",
     "jest": "21.2.1",
     "jsdom": "11.1.0",
+    "lodash.clonedeep": "4.5.0",
+    "lodash.set": "4.3.2",
     "prettier": "1.8.2",
     "react": "16.0.0",
     "react-dom": "16.0.0",

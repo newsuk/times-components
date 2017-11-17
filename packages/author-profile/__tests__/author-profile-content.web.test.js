@@ -1,17 +1,18 @@
 /* eslint-env jest */
 
 import React from "react";
-import Enzyme, { shallow } from "enzyme";
-import React16Adapter from "enzyme-adapter-react-16";
+import { shallow, mount } from "enzyme";
 import test from "./author-profile-helper";
 import AuthorProfileItem from "../author-profile-item";
 import AuthorProfileContent from "../author-profile-content.web.js";
 import authorProfileFixture from "../fixtures/author-profile.json";
 import articleListFixture from "../fixtures/article-list.json";
 
-Enzyme.configure({ adapter: new React16Adapter() });
-
 test(AuthorProfileContent);
+
+afterEach(() => {
+  delete window.IntersectionObserver;
+});
 
 const results = {
   data: {
@@ -36,6 +37,7 @@ it("renders profile articles and invoke callback on article press", done => {
       slug="fiona-hamilton"
       page={1}
       pageSize={3}
+      imageRatio={3 / 2}
       onTwitterLinkPress={() => {}}
       onArticlePress={() => done()}
     />
@@ -48,4 +50,171 @@ it("renders profile articles and invoke callback on article press", done => {
     .dive()
     .find("Link")
     .simulate("press");
+});
+
+it("renders with an intersection observer which uses the expected options", done => {
+  window.IntersectionObserver = class FakeIntersectionObserver {
+    constructor(cb, opts) {
+      expect(opts).toMatchSnapshot();
+      done();
+    }
+  };
+
+  shallow(
+    <AuthorProfileContent
+      articles={results.data.author.articles.list}
+      author={authorProfileFixture.data.author}
+      slug="fiona-hamilton"
+      page={1}
+      pageSize={3}
+      imageRatio={3 / 2}
+      onTwitterLinkPress={() => {}}
+      onArticlePress={() => {}}
+    />
+  );
+});
+
+it("renders a good quality image if it is visible", done => {
+  let component;
+  window.IntersectionObserver = class FakeIntersectionObserver {
+    constructor(cb) {
+      this.nodes = new Set();
+      setTimeout(() => {
+        const entries = [...this.nodes].map((node, indx) => ({
+          target: node,
+          isIntersecting: indx === 0
+        }));
+
+        cb(entries);
+
+        setTimeout(() => {
+          expect(
+            component
+              .find("TimesImage")
+              .at(0)
+              .render()
+          ).toMatchSnapshot();
+
+          done();
+        }, 0);
+      }, 0);
+    }
+
+    observe(node) {
+      Object.defineProperty(node, "clientWidth", {
+        value: 600
+      });
+      this.nodes.add(node);
+    }
+  };
+
+  component = mount(
+    <AuthorProfileContent
+      articles={results.data.author.articles.list}
+      author={authorProfileFixture.data.author}
+      slug="fiona-hamilton"
+      page={1}
+      pageSize={3}
+      imageRatio={3 / 2}
+      onTwitterLinkPress={() => {}}
+      onArticlePress={() => {}}
+    />
+  );
+
+  // prove the first image starts off as low quality
+  expect(
+    component
+      .find("TimesImage")
+      .at(0)
+      .props().uri
+  ).toEqual(
+    "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=100"
+  );
+});
+
+it("renders a poor quality image if it is not visible", done => {
+  let component;
+  window.IntersectionObserver = class FakeIntersectionObserver {
+    constructor(cb) {
+      this.nodes = new Set();
+      setTimeout(() => {
+        const entries = [...this.nodes].map((node, indx) => ({
+          target: node,
+          isIntersecting: indx === 0
+        }));
+
+        cb(entries);
+
+        setTimeout(() => {
+          expect(
+            component
+              .find("TimesImage")
+              .at(1)
+              .render()
+          ).toMatchSnapshot();
+
+          done();
+        }, 0);
+      }, 0);
+    }
+
+    observe(node) {
+      Object.defineProperty(node, "clientWidth", {
+        value: 600
+      });
+      this.nodes.add(node);
+    }
+  };
+
+  component = mount(
+    <AuthorProfileContent
+      articles={results.data.author.articles.list}
+      author={authorProfileFixture.data.author}
+      slug="fiona-hamilton"
+      page={1}
+      pageSize={3}
+      imageRatio={3 / 2}
+      onTwitterLinkPress={() => {}}
+      onArticlePress={() => {}}
+    />
+  );
+});
+
+it("renders good quality images if there is no IntersectionObserver", () => {
+  const component = mount(
+    <AuthorProfileContent
+      articles={results.data.author.articles.list.slice(0, 2)}
+      author={authorProfileFixture.data.author}
+      slug="fiona-hamilton"
+      page={1}
+      pageSize={3}
+      imageRatio={3 / 2}
+      onTwitterLinkPress={() => {}}
+      onArticlePress={() => {}}
+    />
+  );
+
+  // not ideal as this relies on the actual implementation but there's no "nice" way of setting clientWidth
+  const rn = component.instance().registerNode;
+  component.instance().registerNode = node => {
+    if (node) {
+      Object.defineProperty(node, "clientWidth", {
+        value: 600
+      });
+    }
+
+    rn.call(component.instance(), node);
+  };
+
+  // we have to force the render lifecycle that the lazy images rely on, in that first the nodes are registered
+  // and then when we render again after loading, we show the sized images
+  component.setProps({
+    isLoading: true
+  });
+
+  component.setProps({
+    isLoading: false
+  });
+
+  expect(component.find("TimesImage")).toMatchSnapshot();
 });

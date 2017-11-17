@@ -11,6 +11,8 @@ import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";
 import { addTypenameToDocument } from "apollo-client";
 import { query as authorProfileQuery } from "@times-components/provider/author-profile-provider";
 import { query as articleListQuery } from "@times-components/provider/article-list-provider";
+import set from "lodash.set";
+import cloneDeep from "lodash.clonedeep";
 import AuthorProfile from "../author-profile";
 import AuthorProfileItem from "../author-profile-item";
 import AuthorHead from "../author-profile-author-head";
@@ -174,7 +176,8 @@ export default AuthorProfileContent => {
         .map((number, id) => ({
           id,
           loading: true
-        }))
+        })),
+      imageRatio: 3 / 2
     };
 
     const component = renderer.create(<AuthorProfileContent {...p} />);
@@ -185,7 +188,8 @@ export default AuthorProfileContent => {
     const p = Object.assign({}, props, {
       slug: "fiona-hamilton",
       author: null,
-      isLoading: false
+      isLoading: false,
+      imageRatio: 16 / 9
     });
 
     const component = renderer.create(<AuthorProfileContent {...p} />);
@@ -253,6 +257,7 @@ export default AuthorProfileContent => {
         slug="fiona-hamilton"
         page={1}
         pageSize={3}
+        imageRatio={3 / 2}
         onTwitterLinkPress={() => {}}
         onArticlePress={() => {}}
       />
@@ -264,16 +269,36 @@ export default AuthorProfileContent => {
   it("renders profile content item component", () => {
     const item = pagedResult(0, 1).data.author.articles.list[0];
     const component = renderer.create(
-      <AuthorProfileItem {...item} onPress={() => {}} />
+      <AuthorProfileItem
+        {...item}
+        imageRatio={8 / 5}
+        imageSize={200}
+        onPress={() => {}}
+      />
     );
 
     expect(component).toMatchSnapshot();
   });
 
-  it("renders profile content item component with no image ", () => {
+  it("renders profile content item component with a specific image size", () => {
     const item = pagedResult(0, 1).data.author.articles.list[0];
     const component = renderer.create(
-      <AuthorProfileItem {...item} imageUri={null} onPress={() => {}} />
+      <AuthorProfileItem
+        {...item}
+        imageRatio={8 / 5}
+        imageSize={200}
+        onPress={() => {}}
+      />
+    );
+
+    expect(component).toMatchSnapshot();
+  });
+
+  it("renders profile content item component with no image", () => {
+    const item = cloneDeep(pagedResult(0, 1).data.author.articles.list[0]);
+    set(item, "leadAsset.crop.url", null);
+    const component = renderer.create(
+      <AuthorProfileItem {...item} imageRatio={20 / 3} onPress={() => {}} />
     );
 
     expect(component).toMatchSnapshot();
@@ -378,8 +403,9 @@ export default AuthorProfileContent => {
       component: "AuthorProfileItem",
       action: "Pressed",
       attrs: {
-        articleId: "97c64f20-cb67-11e4-a202-50ac5def393a",
-        articleTitle: "British trio stopped on the way to join Isis"
+        articleId: "d98c257c-cb16-11e7-b529-95e3fc05f40f",
+        articleTitle:
+          "Top medal for forces dog who took a bite out of the Taliban"
       }
     });
   });

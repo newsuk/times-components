@@ -1,5 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Card test on web does not re-render fixed prop changes 1`] = `"SUNDAYTIMES"`;
+
+exports[`Card test on web re-renders when image size changes 1`] = `"https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=620"`;
+
+exports[`Card test on web re-renders when image uri changes 1`] = `"http://foo &resize=360"`;
+
+exports[`Card test on web re-renders when is loading changes 1`] = `
+<TimesImage
+  aspectRatio={1.5}
+  style={Object {}}
+  uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
+/>
+`;
+
 exports[`Card test on web renders 1`] = `
 .c1 {
   -webkit-box-flex: 1;
@@ -78,7 +92,7 @@ exports[`Card test on web renders 1`] = `
         >
           <img
             alt=""
-            src="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320"
+            src="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
             style={
               Object {
                 "display": "block",
