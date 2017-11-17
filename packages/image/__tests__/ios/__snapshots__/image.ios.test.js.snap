@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card test on ios allows styling 1`] = `
+exports[`Image test on ios allows styling 1`] = `
 <View
   aspectRatio={1.5}
 >
@@ -101,7 +101,7 @@ exports[`Card test on ios allows styling 1`] = `
 </View>
 `;
 
-exports[`Card test on ios prepends https schema 1`] = `
+exports[`Image test on ios prepends https schema 1`] = `
 <View
   aspectRatio={1.5}
 >
@@ -198,7 +198,7 @@ exports[`Card test on ios prepends https schema 1`] = `
 </View>
 `;
 
-exports[`Card test on ios renders correctly 1`] = `
+exports[`Image test on ios renders correctly 1`] = `
 <View
   aspectRatio={1.5}
 >
