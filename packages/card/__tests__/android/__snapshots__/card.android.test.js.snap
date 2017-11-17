@@ -132,20 +132,17 @@ exports[`Card test on android renders loading state 1`] = `
     >
       <View
         aspectRatio={1.5}
+        style={Object {}}
       >
         <View
           style={
-            Array [
-              Object {
-                "height": "100%",
-                "width": "100%",
-              },
-              Object {},
-            ]
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
           }
         >
           <Image
-            aspectRatio={1.5}
             onLoad={[Function]}
             style={
               Array [
@@ -157,8 +154,8 @@ exports[`Card test on android renders loading state 1`] = `
                   "top": 0,
                 },
                 Object {
-                  "height": undefined,
-                  "width": undefined,
+                  "height": "100%",
+                  "width": "100%",
                 },
                 undefined,
               ]
@@ -171,7 +168,7 @@ exports[`Card test on android renders loading state 1`] = `
                 Object {
                   "flex": 1,
                 },
-                Object {},
+                null,
               ]
             }
           >
@@ -445,20 +442,17 @@ exports[`Card test on android renders loading vertical by default 1`] = `
     >
       <View
         aspectRatio={1.5}
+        style={Object {}}
       >
         <View
           style={
-            Array [
-              Object {
-                "height": "100%",
-                "width": "100%",
-              },
-              Object {},
-            ]
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
           }
         >
           <Image
-            aspectRatio={1.5}
             onLoad={[Function]}
             style={
               Array [
@@ -470,8 +464,8 @@ exports[`Card test on android renders loading vertical by default 1`] = `
                   "top": 0,
                 },
                 Object {
-                  "height": undefined,
-                  "width": undefined,
+                  "height": "100%",
+                  "width": "100%",
                 },
                 undefined,
               ]
@@ -484,7 +478,7 @@ exports[`Card test on android renders loading vertical by default 1`] = `
                 Object {
                   "flex": 1,
                 },
-                Object {},
+                null,
               ]
             }
           >
@@ -758,20 +752,17 @@ exports[`Card test on android renders vertical by default 1`] = `
     >
       <View
         aspectRatio={1.5}
+        style={Object {}}
       >
         <View
           style={
-            Array [
-              Object {
-                "height": "100%",
-                "width": "100%",
-              },
-              Object {},
-            ]
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
           }
         >
           <Image
-            aspectRatio={1.5}
             onLoad={[Function]}
             source={
               Object {
@@ -788,8 +779,8 @@ exports[`Card test on android renders vertical by default 1`] = `
                   "top": 0,
                 },
                 Object {
-                  "height": undefined,
-                  "width": undefined,
+                  "height": "100%",
+                  "width": "100%",
                 },
                 undefined,
               ]
@@ -802,7 +793,7 @@ exports[`Card test on android renders vertical by default 1`] = `
                 Object {
                   "flex": 1,
                 },
-                Object {},
+                null,
               ]
             }
           >

@@ -67,20 +67,17 @@ exports[`Article test on android renders article no flags 1`] = `
     >
       <View
         aspectRatio={1.7777777777777777}
+        style={Object {}}
       >
         <View
           style={
-            Array [
-              Object {
-                "height": "100%",
-                "width": "100%",
-              },
-              Object {},
-            ]
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
           }
         >
           <Image
-            aspectRatio={1.7777777777777777}
             onLoad={[Function]}
             source={
               Object {
@@ -97,8 +94,8 @@ exports[`Article test on android renders article no flags 1`] = `
                   "top": 0,
                 },
                 Object {
-                  "height": undefined,
-                  "width": undefined,
+                  "height": "100%",
+                  "width": "100%",
                 },
                 undefined,
               ]
@@ -111,7 +108,7 @@ exports[`Article test on android renders article no flags 1`] = `
                 Object {
                   "flex": 1,
                 },
-                Object {},
+                null,
               ]
             }
           >
@@ -871,20 +868,17 @@ exports[`Article test on android renders article no label 1`] = `
     >
       <View
         aspectRatio={1.7777777777777777}
+        style={Object {}}
       >
         <View
           style={
-            Array [
-              Object {
-                "height": "100%",
-                "width": "100%",
-              },
-              Object {},
-            ]
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
           }
         >
           <Image
-            aspectRatio={1.7777777777777777}
             onLoad={[Function]}
             source={
               Object {
@@ -901,8 +895,8 @@ exports[`Article test on android renders article no label 1`] = `
                   "top": 0,
                 },
                 Object {
-                  "height": undefined,
-                  "width": undefined,
+                  "height": "100%",
+                  "width": "100%",
                 },
                 undefined,
               ]
@@ -915,7 +909,7 @@ exports[`Article test on android renders article no label 1`] = `
                 Object {
                   "flex": 1,
                 },
-                Object {},
+                null,
               ]
             }
           >
@@ -1781,20 +1775,17 @@ exports[`Article test on android renders article no label no flags 1`] = `
     >
       <View
         aspectRatio={1.7777777777777777}
+        style={Object {}}
       >
         <View
           style={
-            Array [
-              Object {
-                "height": "100%",
-                "width": "100%",
-              },
-              Object {},
-            ]
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
           }
         >
           <Image
-            aspectRatio={1.7777777777777777}
             onLoad={[Function]}
             source={
               Object {
@@ -1811,8 +1802,8 @@ exports[`Article test on android renders article no label no flags 1`] = `
                   "top": 0,
                 },
                 Object {
-                  "height": undefined,
-                  "width": undefined,
+                  "height": "100%",
+                  "width": "100%",
                 },
                 undefined,
               ]
@@ -1825,7 +1816,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
                 Object {
                   "flex": 1,
                 },
-                Object {},
+                null,
               ]
             }
           >
@@ -2554,20 +2545,17 @@ exports[`Article test on android renders article no label no flags no standfirst
     >
       <View
         aspectRatio={1.7777777777777777}
+        style={Object {}}
       >
         <View
           style={
-            Array [
-              Object {
-                "height": "100%",
-                "width": "100%",
-              },
-              Object {},
-            ]
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
           }
         >
           <Image
-            aspectRatio={1.7777777777777777}
             onLoad={[Function]}
             source={
               Object {
@@ -2584,8 +2572,8 @@ exports[`Article test on android renders article no label no flags no standfirst
                   "top": 0,
                 },
                 Object {
-                  "height": undefined,
-                  "width": undefined,
+                  "height": "100%",
+                  "width": "100%",
                 },
                 undefined,
               ]
@@ -2598,7 +2586,7 @@ exports[`Article test on android renders article no label no flags no standfirst
                 Object {
                   "flex": 1,
                 },
-                Object {},
+                null,
               ]
             }
           >
@@ -3308,20 +3296,17 @@ exports[`Article test on android renders article no standfirst 1`] = `
     >
       <View
         aspectRatio={1.7777777777777777}
+        style={Object {}}
       >
         <View
           style={
-            Array [
-              Object {
-                "height": "100%",
-                "width": "100%",
-              },
-              Object {},
-            ]
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
           }
         >
           <Image
-            aspectRatio={1.7777777777777777}
             onLoad={[Function]}
             source={
               Object {
@@ -3338,8 +3323,8 @@ exports[`Article test on android renders article no standfirst 1`] = `
                   "top": 0,
                 },
                 Object {
-                  "height": undefined,
-                  "width": undefined,
+                  "height": "100%",
+                  "width": "100%",
                 },
                 undefined,
               ]
@@ -3352,7 +3337,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
                 Object {
                   "flex": 1,
                 },
-                Object {},
+                null,
               ]
             }
           >
@@ -4230,20 +4215,17 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     >
       <View
         aspectRatio={1.7777777777777777}
+        style={Object {}}
       >
         <View
           style={
-            Array [
-              Object {
-                "height": "100%",
-                "width": "100%",
-              },
-              Object {},
-            ]
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
           }
         >
           <Image
-            aspectRatio={1.7777777777777777}
             onLoad={[Function]}
             source={
               Object {
@@ -4260,8 +4242,8 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
                   "top": 0,
                 },
                 Object {
-                  "height": undefined,
-                  "width": undefined,
+                  "height": "100%",
+                  "width": "100%",
                 },
                 undefined,
               ]
@@ -4274,7 +4256,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
                 Object {
                   "flex": 1,
                 },
-                Object {},
+                null,
               ]
             }
           >
@@ -5015,20 +4997,17 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     >
       <View
         aspectRatio={1.7777777777777777}
+        style={Object {}}
       >
         <View
           style={
-            Array [
-              Object {
-                "height": "100%",
-                "width": "100%",
-              },
-              Object {},
-            ]
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
           }
         >
           <Image
-            aspectRatio={1.7777777777777777}
             onLoad={[Function]}
             source={
               Object {
@@ -5045,8 +5024,8 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
                   "top": 0,
                 },
                 Object {
-                  "height": undefined,
-                  "width": undefined,
+                  "height": "100%",
+                  "width": "100%",
                 },
                 undefined,
               ]
@@ -5059,7 +5038,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
                 Object {
                   "flex": 1,
                 },
-                Object {},
+                null,
               ]
             }
           >
@@ -5906,20 +5885,17 @@ exports[`Article test on android renders full article 1`] = `
     >
       <View
         aspectRatio={1.7777777777777777}
+        style={Object {}}
       >
         <View
           style={
-            Array [
-              Object {
-                "height": "100%",
-                "width": "100%",
-              },
-              Object {},
-            ]
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
           }
         >
           <Image
-            aspectRatio={1.7777777777777777}
             onLoad={[Function]}
             source={
               Object {
@@ -5936,8 +5912,8 @@ exports[`Article test on android renders full article 1`] = `
                   "top": 0,
                 },
                 Object {
-                  "height": undefined,
-                  "width": undefined,
+                  "height": "100%",
+                  "width": "100%",
                 },
                 undefined,
               ]
@@ -5950,7 +5926,7 @@ exports[`Article test on android renders full article 1`] = `
                 Object {
                   "flex": 1,
                 },
-                Object {},
+                null,
               ]
             }
           >
@@ -6491,20 +6467,17 @@ exports[`Article test on android renders full article 1`] = `
         >
           <View
             aspectRatio={1.25}
+            style={Object {}}
           >
             <View
               style={
-                Array [
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  },
-                  Object {},
-                ]
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
               }
             >
               <Image
-                aspectRatio={1.25}
                 onLoad={[Function]}
                 source={
                   Object {
@@ -6521,8 +6494,8 @@ exports[`Article test on android renders full article 1`] = `
                       "top": 0,
                     },
                     Object {
-                      "height": undefined,
-                      "width": undefined,
+                      "height": "100%",
+                      "width": "100%",
                     },
                     undefined,
                   ]
@@ -6535,7 +6508,7 @@ exports[`Article test on android renders full article 1`] = `
                     Object {
                       "flex": 1,
                     },
-                    Object {},
+                    null,
                   ]
                 }
               >
@@ -6730,20 +6703,17 @@ exports[`Article test on android renders full article 1`] = `
         >
           <View
             aspectRatio={1.5}
+            style={Object {}}
           >
             <View
               style={
-                Array [
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  },
-                  Object {},
-                ]
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
               }
             >
               <Image
-                aspectRatio={1.5}
                 onLoad={[Function]}
                 source={
                   Object {
@@ -6760,8 +6730,8 @@ exports[`Article test on android renders full article 1`] = `
                       "top": 0,
                     },
                     Object {
-                      "height": undefined,
-                      "width": undefined,
+                      "height": "100%",
+                      "width": "100%",
                     },
                     undefined,
                   ]
@@ -6774,7 +6744,7 @@ exports[`Article test on android renders full article 1`] = `
                     Object {
                       "flex": 1,
                     },
-                    Object {},
+                    null,
                   ]
                 }
               >
@@ -7191,20 +7161,17 @@ exports[`Article test on android renders full article 1`] = `
         >
           <View
             aspectRatio={0.6666666666666666}
+            style={Object {}}
           >
             <View
               style={
-                Array [
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  },
-                  Object {},
-                ]
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
               }
             >
               <Image
-                aspectRatio={0.6666666666666666}
                 onLoad={[Function]}
                 source={
                   Object {
@@ -7221,8 +7188,8 @@ exports[`Article test on android renders full article 1`] = `
                       "top": 0,
                     },
                     Object {
-                      "height": undefined,
-                      "width": undefined,
+                      "height": "100%",
+                      "width": "100%",
                     },
                     undefined,
                   ]
@@ -7235,7 +7202,7 @@ exports[`Article test on android renders full article 1`] = `
                     Object {
                       "flex": 1,
                     },
-                    Object {},
+                    null,
                   ]
                 }
               >
@@ -7407,20 +7374,17 @@ exports[`Article test on android renders full article 1`] = `
         >
           <View
             aspectRatio={1.5}
+            style={Object {}}
           >
             <View
               style={
-                Array [
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  },
-                  Object {},
-                ]
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
               }
             >
               <Image
-                aspectRatio={1.5}
                 onLoad={[Function]}
                 source={
                   Object {
@@ -7437,8 +7401,8 @@ exports[`Article test on android renders full article 1`] = `
                       "top": 0,
                     },
                     Object {
-                      "height": undefined,
-                      "width": undefined,
+                      "height": "100%",
+                      "width": "100%",
                     },
                     undefined,
                   ]
@@ -7451,7 +7415,7 @@ exports[`Article test on android renders full article 1`] = `
                     Object {
                       "flex": 1,
                     },
-                    Object {},
+                    null,
                   ]
                 }
               >

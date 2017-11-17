@@ -1,7 +1,11 @@
 import React, { Component } from "react";
-import { ImageBackground, View } from "react-native";
+import { ImageBackground, View, StyleSheet } from "react-native";
 import Placeholder from "./placeholder";
 import { defaultProps, propTypes } from "./image-prop-types";
+
+const styles = StyleSheet.create({
+  imageBackground: { width: "100%", height: "100%" }
+});
 
 const addMissingProtocol = uri => (uri.startsWith("//") ? `https:${uri}` : uri);
 
@@ -26,9 +30,8 @@ class TimesImage extends Component {
     const uri = addMissingProtocol(dirtyUri);
 
     const props = {
-      style: [{ width: "100%", height: "100%" }].concat(style),
-      onLoad: this.handleLoad,
-      aspectRatio
+      style: styles.imageBackground,
+      onLoad: this.handleLoad
     };
 
     if (uri) {
@@ -36,9 +39,9 @@ class TimesImage extends Component {
     }
 
     return (
-      <View aspectRatio={aspectRatio}>
+      <View aspectRatio={aspectRatio} style={style}>
         <ImageBackground {...props}>
-          {isLoaded ? null : <Placeholder style={style} />}
+          {isLoaded ? null : <Placeholder />}
         </ImageBackground>
       </View>
     );

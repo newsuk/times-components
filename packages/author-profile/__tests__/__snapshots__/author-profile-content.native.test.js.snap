@@ -362,25 +362,24 @@ exports[`renders profile content 1`] = `
           >
             <View
               aspectRatio={1}
+              style={
+                Object {
+                  "borderColor": "#FFF",
+                  "borderRadius": 50,
+                  "borderWidth": 5,
+                  "overflow": "hidden",
+                }
+              }
             >
               <View
                 style={
-                  Array [
-                    Object {
-                      "height": "100%",
-                      "width": "100%",
-                    },
-                    Object {
-                      "borderColor": "#FFF",
-                      "borderRadius": 50,
-                      "borderWidth": 5,
-                      "overflow": "hidden",
-                    },
-                  ]
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
                 }
               >
                 <Image
-                  aspectRatio={1}
                   onLoad={[Function]}
                   source={
                     Object {
@@ -397,8 +396,8 @@ exports[`renders profile content 1`] = `
                         "top": 0,
                       },
                       Object {
-                        "height": undefined,
-                        "width": undefined,
+                        "height": "100%",
+                        "width": "100%",
                       },
                       undefined,
                     ]
@@ -411,12 +410,7 @@ exports[`renders profile content 1`] = `
                       Object {
                         "flex": 1,
                       },
-                      Object {
-                        "borderColor": "#FFF",
-                        "borderRadius": 50,
-                        "borderWidth": 5,
-                        "overflow": "hidden",
-                      },
+                      null,
                     ]
                   }
                 >
@@ -603,20 +597,17 @@ exports[`renders profile content 1`] = `
             >
               <View
                 aspectRatio={1.5}
+                style={Object {}}
               >
                 <View
                   style={
-                    Array [
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      Object {},
-                    ]
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    }
                   }
                 >
                   <Image
-                    aspectRatio={1.5}
                     onLoad={[Function]}
                     style={
                       Array [
@@ -628,8 +619,8 @@ exports[`renders profile content 1`] = `
                           "top": 0,
                         },
                         Object {
-                          "height": undefined,
-                          "width": undefined,
+                          "height": "100%",
+                          "width": "100%",
                         },
                         undefined,
                       ]
@@ -642,7 +633,7 @@ exports[`renders profile content 1`] = `
                         Object {
                           "flex": 1,
                         },
-                        Object {},
+                        null,
                       ]
                     }
                   >
@@ -956,20 +947,17 @@ exports[`renders profile content 1`] = `
             >
               <View
                 aspectRatio={1.5}
+                style={Object {}}
               >
                 <View
                   style={
-                    Array [
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      Object {},
-                    ]
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    }
                   }
                 >
                   <Image
-                    aspectRatio={1.5}
                     onLoad={[Function]}
                     style={
                       Array [
@@ -981,8 +969,8 @@ exports[`renders profile content 1`] = `
                           "top": 0,
                         },
                         Object {
-                          "height": undefined,
-                          "width": undefined,
+                          "height": "100%",
+                          "width": "100%",
                         },
                         undefined,
                       ]
@@ -995,7 +983,7 @@ exports[`renders profile content 1`] = `
                         Object {
                           "flex": 1,
                         },
-                        Object {},
+                        null,
                       ]
                     }
                   >
@@ -1309,20 +1297,17 @@ exports[`renders profile content 1`] = `
             >
               <View
                 aspectRatio={1.5}
+                style={Object {}}
               >
                 <View
                   style={
-                    Array [
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      Object {},
-                    ]
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    }
                   }
                 >
                   <Image
-                    aspectRatio={1.5}
                     onLoad={[Function]}
                     style={
                       Array [
@@ -1334,8 +1319,8 @@ exports[`renders profile content 1`] = `
                           "top": 0,
                         },
                         Object {
-                          "height": undefined,
-                          "width": undefined,
+                          "height": "100%",
+                          "width": "100%",
                         },
                         undefined,
                       ]
@@ -1348,7 +1333,7 @@ exports[`renders profile content 1`] = `
                         Object {
                           "flex": 1,
                         },
-                        Object {},
+                        null,
                       ]
                     }
                   >
@@ -1662,20 +1647,17 @@ exports[`renders profile content 1`] = `
             >
               <View
                 aspectRatio={1.5}
+                style={Object {}}
               >
                 <View
                   style={
-                    Array [
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      Object {},
-                    ]
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    }
                   }
                 >
                   <Image
-                    aspectRatio={1.5}
                     onLoad={[Function]}
                     style={
                       Array [
@@ -1687,8 +1669,8 @@ exports[`renders profile content 1`] = `
                           "top": 0,
                         },
                         Object {
-                          "height": undefined,
-                          "width": undefined,
+                          "height": "100%",
+                          "width": "100%",
                         },
                         undefined,
                       ]
@@ -1701,7 +1683,7 @@ exports[`renders profile content 1`] = `
                         Object {
                           "flex": 1,
                         },
-                        Object {},
+                        null,
                       ]
                     }
                   >
@@ -2015,20 +1997,17 @@ exports[`renders profile content 1`] = `
             >
               <View
                 aspectRatio={1.5}
+                style={Object {}}
               >
                 <View
                   style={
-                    Array [
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      Object {},
-                    ]
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    }
                   }
                 >
                   <Image
-                    aspectRatio={1.5}
                     onLoad={[Function]}
                     style={
                       Array [
@@ -2040,8 +2019,8 @@ exports[`renders profile content 1`] = `
                           "top": 0,
                         },
                         Object {
-                          "height": undefined,
-                          "width": undefined,
+                          "height": "100%",
+                          "width": "100%",
                         },
                         undefined,
                       ]
@@ -2054,7 +2033,7 @@ exports[`renders profile content 1`] = `
                         Object {
                           "flex": 1,
                         },
-                        Object {},
+                        null,
                       ]
                     }
                   >
@@ -2368,20 +2347,17 @@ exports[`renders profile content 1`] = `
             >
               <View
                 aspectRatio={1.5}
+                style={Object {}}
               >
                 <View
                   style={
-                    Array [
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      Object {},
-                    ]
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    }
                   }
                 >
                   <Image
-                    aspectRatio={1.5}
                     onLoad={[Function]}
                     style={
                       Array [
@@ -2393,8 +2369,8 @@ exports[`renders profile content 1`] = `
                           "top": 0,
                         },
                         Object {
-                          "height": undefined,
-                          "width": undefined,
+                          "height": "100%",
+                          "width": "100%",
                         },
                         undefined,
                       ]
@@ -2407,7 +2383,7 @@ exports[`renders profile content 1`] = `
                         Object {
                           "flex": 1,
                         },
-                        Object {},
+                        null,
                       ]
                     }
                   >
@@ -2721,20 +2697,17 @@ exports[`renders profile content 1`] = `
             >
               <View
                 aspectRatio={1.5}
+                style={Object {}}
               >
                 <View
                   style={
-                    Array [
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      Object {},
-                    ]
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    }
                   }
                 >
                   <Image
-                    aspectRatio={1.5}
                     onLoad={[Function]}
                     style={
                       Array [
@@ -2746,8 +2719,8 @@ exports[`renders profile content 1`] = `
                           "top": 0,
                         },
                         Object {
-                          "height": undefined,
-                          "width": undefined,
+                          "height": "100%",
+                          "width": "100%",
                         },
                         undefined,
                       ]
@@ -2760,7 +2733,7 @@ exports[`renders profile content 1`] = `
                         Object {
                           "flex": 1,
                         },
-                        Object {},
+                        null,
                       ]
                     }
                   >
@@ -3074,20 +3047,17 @@ exports[`renders profile content 1`] = `
             >
               <View
                 aspectRatio={1.5}
+                style={Object {}}
               >
                 <View
                   style={
-                    Array [
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      Object {},
-                    ]
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    }
                   }
                 >
                   <Image
-                    aspectRatio={1.5}
                     onLoad={[Function]}
                     style={
                       Array [
@@ -3099,8 +3069,8 @@ exports[`renders profile content 1`] = `
                           "top": 0,
                         },
                         Object {
-                          "height": undefined,
-                          "width": undefined,
+                          "height": "100%",
+                          "width": "100%",
                         },
                         undefined,
                       ]
@@ -3113,7 +3083,7 @@ exports[`renders profile content 1`] = `
                         Object {
                           "flex": 1,
                         },
-                        Object {},
+                        null,
                       ]
                     }
                   >
@@ -3427,20 +3397,17 @@ exports[`renders profile content 1`] = `
             >
               <View
                 aspectRatio={1.5}
+                style={Object {}}
               >
                 <View
                   style={
-                    Array [
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      Object {},
-                    ]
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    }
                   }
                 >
                   <Image
-                    aspectRatio={1.5}
                     onLoad={[Function]}
                     style={
                       Array [
@@ -3452,8 +3419,8 @@ exports[`renders profile content 1`] = `
                           "top": 0,
                         },
                         Object {
-                          "height": undefined,
-                          "width": undefined,
+                          "height": "100%",
+                          "width": "100%",
                         },
                         undefined,
                       ]
@@ -3466,7 +3433,7 @@ exports[`renders profile content 1`] = `
                         Object {
                           "flex": 1,
                         },
-                        Object {},
+                        null,
                       ]
                     }
                   >
@@ -3780,20 +3747,17 @@ exports[`renders profile content 1`] = `
             >
               <View
                 aspectRatio={1.5}
+                style={Object {}}
               >
                 <View
                   style={
-                    Array [
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      Object {},
-                    ]
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    }
                   }
                 >
                   <Image
-                    aspectRatio={1.5}
                     onLoad={[Function]}
                     style={
                       Array [
@@ -3805,8 +3769,8 @@ exports[`renders profile content 1`] = `
                           "top": 0,
                         },
                         Object {
-                          "height": undefined,
-                          "width": undefined,
+                          "height": "100%",
+                          "width": "100%",
                         },
                         undefined,
                       ]
@@ -3819,7 +3783,7 @@ exports[`renders profile content 1`] = `
                         Object {
                           "flex": 1,
                         },
-                        Object {},
+                        null,
                       ]
                     }
                   >
@@ -4678,20 +4642,17 @@ exports[`renders profile content component 1`] = `
               >
                 <View
                   aspectRatio={1.5}
+                  style={Object {}}
                 >
                   <View
                     style={
-                      Array [
-                        Object {
-                          "height": "100%",
-                          "width": "100%",
-                        },
-                        Object {},
-                      ]
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
                     }
                   >
                     <Image
-                      aspectRatio={1.5}
                       onLoad={[Function]}
                       source={
                         Object {
@@ -4708,8 +4669,8 @@ exports[`renders profile content component 1`] = `
                             "top": 0,
                           },
                           Object {
-                            "height": undefined,
-                            "width": undefined,
+                            "height": "100%",
+                            "width": "100%",
                           },
                           undefined,
                         ]
@@ -4722,7 +4683,7 @@ exports[`renders profile content component 1`] = `
                           Object {
                             "flex": 1,
                           },
-                          Object {},
+                          null,
                         ]
                       }
                     >
@@ -4972,20 +4933,17 @@ exports[`renders profile content component 1`] = `
               >
                 <View
                   aspectRatio={1.5}
+                  style={Object {}}
                 >
                   <View
                     style={
-                      Array [
-                        Object {
-                          "height": "100%",
-                          "width": "100%",
-                        },
-                        Object {},
-                      ]
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
                     }
                   >
                     <Image
-                      aspectRatio={1.5}
                       onLoad={[Function]}
                       source={
                         Object {
@@ -5002,8 +4960,8 @@ exports[`renders profile content component 1`] = `
                             "top": 0,
                           },
                           Object {
-                            "height": undefined,
-                            "width": undefined,
+                            "height": "100%",
+                            "width": "100%",
                           },
                           undefined,
                         ]
@@ -5016,7 +4974,7 @@ exports[`renders profile content component 1`] = `
                           Object {
                             "flex": 1,
                           },
-                          Object {},
+                          null,
                         ]
                       }
                     >
@@ -5599,20 +5557,17 @@ exports[`renders profile content item component 1`] = `
         >
           <View
             aspectRatio={1.5}
+            style={Object {}}
           >
             <View
               style={
-                Array [
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  },
-                  Object {},
-                ]
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
               }
             >
               <Image
-                aspectRatio={1.5}
                 onLoad={[Function]}
                 source={
                   Object {
@@ -5629,8 +5584,8 @@ exports[`renders profile content item component 1`] = `
                       "top": 0,
                     },
                     Object {
-                      "height": undefined,
-                      "width": undefined,
+                      "height": "100%",
+                      "width": "100%",
                     },
                     undefined,
                   ]
@@ -5643,7 +5598,7 @@ exports[`renders profile content item component 1`] = `
                     Object {
                       "flex": 1,
                     },
-                    Object {},
+                    null,
                   ]
                 }
               >
@@ -5871,20 +5826,17 @@ exports[`renders profile content item component with no image  1`] = `
         >
           <View
             aspectRatio={1.5}
+            style={Object {}}
           >
             <View
               style={
-                Array [
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  },
-                  Object {},
-                ]
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
               }
             >
               <Image
-                aspectRatio={1.5}
                 onLoad={[Function]}
                 source={
                   Object {
@@ -5901,8 +5853,8 @@ exports[`renders profile content item component with no image  1`] = `
                       "top": 0,
                     },
                     Object {
-                      "height": undefined,
-                      "width": undefined,
+                      "height": "100%",
+                      "width": "100%",
                     },
                     undefined,
                   ]
@@ -5915,7 +5867,7 @@ exports[`renders profile content item component with no image  1`] = `
                     Object {
                       "flex": 1,
                     },
-                    Object {},
+                    null,
                   ]
                 }
               >
@@ -6789,20 +6741,17 @@ exports[`renders profile loading 1`] = `
             >
               <View
                 aspectRatio={1.5}
+                style={Object {}}
               >
                 <View
                   style={
-                    Array [
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      Object {},
-                    ]
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    }
                   }
                 >
                   <Image
-                    aspectRatio={1.5}
                     onLoad={[Function]}
                     style={
                       Array [
@@ -6814,8 +6763,8 @@ exports[`renders profile loading 1`] = `
                           "top": 0,
                         },
                         Object {
-                          "height": undefined,
-                          "width": undefined,
+                          "height": "100%",
+                          "width": "100%",
                         },
                         undefined,
                       ]
@@ -6828,7 +6777,7 @@ exports[`renders profile loading 1`] = `
                         Object {
                           "flex": 1,
                         },
-                        Object {},
+                        null,
                       ]
                     }
                   >

@@ -4,20 +4,17 @@ exports[`renders an image with a caption 1`] = `
 <View>
   <View
     aspectRatio={1.7777777777777777}
+    style={Object {}}
   >
     <View
       style={
-        Array [
-          Object {
-            "height": "100%",
-            "width": "100%",
-          },
-          Object {},
-        ]
+        Object {
+          "height": "100%",
+          "width": "100%",
+        }
       }
     >
       <Image
-        aspectRatio={1.7777777777777777}
         onLoad={[Function]}
         source={
           Object {
@@ -34,8 +31,8 @@ exports[`renders an image with a caption 1`] = `
               "top": 0,
             },
             Object {
-              "height": undefined,
-              "width": undefined,
+              "height": "100%",
+              "width": "100%",
             },
             undefined,
           ]
@@ -48,7 +45,7 @@ exports[`renders an image with a caption 1`] = `
             Object {
               "flex": 1,
             },
-            Object {},
+            null,
           ]
         }
       >

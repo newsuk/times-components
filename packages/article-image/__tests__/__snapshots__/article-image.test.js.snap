@@ -9,20 +9,17 @@ exports[`does not render Article Image display is not received 1`] = `
   >
     <View
       aspectRatio={1.7777777777777777}
+      style={Object {}}
     >
       <View
         style={
-          Array [
-            Object {
-              "height": "100%",
-              "width": "100%",
-            },
-            Object {},
-          ]
+          Object {
+            "height": "100%",
+            "width": "100%",
+          }
         }
       >
         <Image
-          aspectRatio={1.7777777777777777}
           onLoad={[Function]}
           source={
             Object {
@@ -39,8 +36,8 @@ exports[`does not render Article Image display is not received 1`] = `
                 "top": 0,
               },
               Object {
-                "height": undefined,
-                "width": undefined,
+                "height": "100%",
+                "width": "100%",
               },
               undefined,
             ]
@@ -53,7 +50,7 @@ exports[`does not render Article Image display is not received 1`] = `
               Object {
                 "flex": 1,
               },
-              Object {},
+              null,
             ]
           }
         >
@@ -180,20 +177,17 @@ exports[`does not render Caption on Article Image if both caption and credits ar
   >
     <View
       aspectRatio={1.7777777777777777}
+      style={Object {}}
     >
       <View
         style={
-          Array [
-            Object {
-              "height": "100%",
-              "width": "100%",
-            },
-            Object {},
-          ]
+          Object {
+            "height": "100%",
+            "width": "100%",
+          }
         }
       >
         <Image
-          aspectRatio={1.7777777777777777}
           onLoad={[Function]}
           source={
             Object {
@@ -210,8 +204,8 @@ exports[`does not render Caption on Article Image if both caption and credits ar
                 "top": 0,
               },
               Object {
-                "height": undefined,
-                "width": undefined,
+                "height": "100%",
+                "width": "100%",
               },
               undefined,
             ]
@@ -224,7 +218,7 @@ exports[`does not render Caption on Article Image if both caption and credits ar
               Object {
                 "flex": 1,
               },
-              Object {},
+              null,
             ]
           }
         >
@@ -298,20 +292,17 @@ exports[`renders inline image (landscape) correctly 1`] = `
   >
     <View
       aspectRatio={1.5}
+      style={Object {}}
     >
       <View
         style={
-          Array [
-            Object {
-              "height": "100%",
-              "width": "100%",
-            },
-            Object {},
-          ]
+          Object {
+            "height": "100%",
+            "width": "100%",
+          }
         }
       >
         <Image
-          aspectRatio={1.5}
           onLoad={[Function]}
           source={
             Object {
@@ -328,8 +319,8 @@ exports[`renders inline image (landscape) correctly 1`] = `
                 "top": 0,
               },
               Object {
-                "height": undefined,
-                "width": undefined,
+                "height": "100%",
+                "width": "100%",
               },
               undefined,
             ]
@@ -342,7 +333,7 @@ exports[`renders inline image (landscape) correctly 1`] = `
               Object {
                 "flex": 1,
               },
-              Object {},
+              null,
             ]
           }
         >
@@ -484,20 +475,17 @@ exports[`renders inline image (portrait) correctly 1`] = `
   >
     <View
       aspectRatio={0.6666666666666666}
+      style={Object {}}
     >
       <View
         style={
-          Array [
-            Object {
-              "height": "100%",
-              "width": "100%",
-            },
-            Object {},
-          ]
+          Object {
+            "height": "100%",
+            "width": "100%",
+          }
         }
       >
         <Image
-          aspectRatio={0.6666666666666666}
           onLoad={[Function]}
           source={
             Object {
@@ -514,8 +502,8 @@ exports[`renders inline image (portrait) correctly 1`] = `
                 "top": 0,
               },
               Object {
-                "height": undefined,
-                "width": undefined,
+                "height": "100%",
+                "width": "100%",
               },
               undefined,
             ]
@@ -528,7 +516,7 @@ exports[`renders inline image (portrait) correctly 1`] = `
               Object {
                 "flex": 1,
               },
-              Object {},
+              null,
             ]
           }
         >
@@ -663,20 +651,17 @@ exports[`renders primary image correctly 1`] = `
   >
     <View
       aspectRatio={1.25}
+      style={Object {}}
     >
       <View
         style={
-          Array [
-            Object {
-              "height": "100%",
-              "width": "100%",
-            },
-            Object {},
-          ]
+          Object {
+            "height": "100%",
+            "width": "100%",
+          }
         }
       >
         <Image
-          aspectRatio={1.25}
           onLoad={[Function]}
           source={
             Object {
@@ -693,8 +678,8 @@ exports[`renders primary image correctly 1`] = `
                 "top": 0,
               },
               Object {
-                "height": undefined,
-                "width": undefined,
+                "height": "100%",
+                "width": "100%",
               },
               undefined,
             ]
@@ -707,7 +692,7 @@ exports[`renders primary image correctly 1`] = `
               Object {
                 "flex": 1,
               },
-              Object {},
+              null,
             ]
           }
         >
@@ -841,20 +826,17 @@ exports[`renders secondary image correctly 1`] = `
   >
     <View
       aspectRatio={1.5}
+      style={Object {}}
     >
       <View
         style={
-          Array [
-            Object {
-              "height": "100%",
-              "width": "100%",
-            },
-            Object {},
-          ]
+          Object {
+            "height": "100%",
+            "width": "100%",
+          }
         }
       >
         <Image
-          aspectRatio={1.5}
           onLoad={[Function]}
           source={
             Object {
@@ -871,8 +853,8 @@ exports[`renders secondary image correctly 1`] = `
                 "top": 0,
               },
               Object {
-                "height": undefined,
-                "width": undefined,
+                "height": "100%",
+                "width": "100%",
               },
               undefined,
             ]
@@ -885,7 +867,7 @@ exports[`renders secondary image correctly 1`] = `
               Object {
                 "flex": 1,
               },
-              Object {},
+              null,
             ]
           }
         >

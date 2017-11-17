@@ -216,25 +216,24 @@ exports[`renders with data 1`] = `
   >
     <View
       aspectRatio={1}
+      style={
+        Object {
+          "borderColor": "#FFF",
+          "borderRadius": 50,
+          "borderWidth": 5,
+          "overflow": "hidden",
+        }
+      }
     >
       <View
         style={
-          Array [
-            Object {
-              "height": "100%",
-              "width": "100%",
-            },
-            Object {
-              "borderColor": "#FFF",
-              "borderRadius": 50,
-              "borderWidth": 5,
-              "overflow": "hidden",
-            },
-          ]
+          Object {
+            "height": "100%",
+            "width": "100%",
+          }
         }
       >
         <Image
-          aspectRatio={1}
           onLoad={[Function]}
           source={
             Object {
@@ -251,8 +250,8 @@ exports[`renders with data 1`] = `
                 "top": 0,
               },
               Object {
-                "height": undefined,
-                "width": undefined,
+                "height": "100%",
+                "width": "100%",
               },
               undefined,
             ]
@@ -265,12 +264,7 @@ exports[`renders with data 1`] = `
               Object {
                 "flex": 1,
               },
-              Object {
-                "borderColor": "#FFF",
-                "borderRadius": 50,
-                "borderWidth": 5,
-                "overflow": "hidden",
-              },
+              null,
             ]
           }
         >

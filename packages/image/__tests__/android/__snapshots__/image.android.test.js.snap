@@ -3,22 +3,21 @@
 exports[`Image test on android allows styling 1`] = `
 <View
   aspectRatio={1.5}
+  style={
+    Object {
+      "width": 100,
+    }
+  }
 >
   <View
     style={
-      Array [
-        Object {
-          "height": "100%",
-          "width": "100%",
-        },
-        Object {
-          "width": 100,
-        },
-      ]
+      Object {
+        "height": "100%",
+        "width": "100%",
+      }
     }
   >
     <Image
-      aspectRatio={1.5}
       onLoad={[Function]}
       source={
         Object {
@@ -35,8 +34,8 @@ exports[`Image test on android allows styling 1`] = `
             "top": 0,
           },
           Object {
-            "height": undefined,
-            "width": undefined,
+            "height": "100%",
+            "width": "100%",
           },
           undefined,
         ]
@@ -49,9 +48,7 @@ exports[`Image test on android allows styling 1`] = `
           Object {
             "flex": 1,
           },
-          Object {
-            "width": 100,
-          },
+          null,
         ]
       }
     >
@@ -104,20 +101,17 @@ exports[`Image test on android allows styling 1`] = `
 exports[`Image test on android prepends https schema 1`] = `
 <View
   aspectRatio={1.5}
+  style={Object {}}
 >
   <View
     style={
-      Array [
-        Object {
-          "height": "100%",
-          "width": "100%",
-        },
-        Object {},
-      ]
+      Object {
+        "height": "100%",
+        "width": "100%",
+      }
     }
   >
     <Image
-      aspectRatio={1.5}
       onLoad={[Function]}
       source={
         Object {
@@ -134,8 +128,8 @@ exports[`Image test on android prepends https schema 1`] = `
             "top": 0,
           },
           Object {
-            "height": undefined,
-            "width": undefined,
+            "height": "100%",
+            "width": "100%",
           },
           undefined,
         ]
@@ -148,7 +142,7 @@ exports[`Image test on android prepends https schema 1`] = `
           Object {
             "flex": 1,
           },
-          Object {},
+          null,
         ]
       }
     >
@@ -201,20 +195,17 @@ exports[`Image test on android prepends https schema 1`] = `
 exports[`Image test on android renders correctly 1`] = `
 <View
   aspectRatio={1.5}
+  style={Object {}}
 >
   <View
     style={
-      Array [
-        Object {
-          "height": "100%",
-          "width": "100%",
-        },
-        Object {},
-      ]
+      Object {
+        "height": "100%",
+        "width": "100%",
+      }
     }
   >
     <Image
-      aspectRatio={1.5}
       onLoad={[Function]}
       source={
         Object {
@@ -231,8 +222,8 @@ exports[`Image test on android renders correctly 1`] = `
             "top": 0,
           },
           Object {
-            "height": undefined,
-            "width": undefined,
+            "height": "100%",
+            "width": "100%",
           },
           undefined,
         ]
@@ -245,7 +236,7 @@ exports[`Image test on android renders correctly 1`] = `
           Object {
             "flex": 1,
           },
-          Object {},
+          null,
         ]
       }
     >
