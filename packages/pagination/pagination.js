@@ -37,13 +37,7 @@ const styles = StyleSheet.create({
   label: {
     color: "#696969",
     fontFamily: "GillSansMTStd-Medium",
-    fontSize: 15,
-    ...Platform.select({
-      web: {
-        WebkitFontSmoothing: "antialiased",
-        MozOsxFontSmoothing: "grayscale"
-      }
-    })
+    fontSize: 15
   },
   message: {
     justifyContent: "center"
