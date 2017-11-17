@@ -11,6 +11,6 @@ jest.mock("react-native", () => {
   return reactNative;
 });
 
-describe("Card test on ios", () => {
+describe("Image test on ios", () => {
   imageTests();
 });

@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import { ImageBackground, ViewPropTypes, View } from "react-native";
-import PropTypes from "prop-types";
+import { ImageBackground, View } from "react-native";
 import Placeholder from "./placeholder";
-
-const { style: ViewPropTypesStyle } = ViewPropTypes;
+import { defaultProps, propTypes } from "./image-prop-types";
 
 const addMissingProtocol = uri => (uri.startsWith("//") ? `https:${uri}` : uri);
 
@@ -47,15 +45,8 @@ class TimesImage extends Component {
   }
 }
 
-TimesImage.defaultProps = {
-  style: {},
-  uri: ""
-};
+TimesImage.defaultProps = defaultProps;
 
-TimesImage.propTypes = {
-  uri: PropTypes.string,
-  aspectRatio: PropTypes.number.isRequired,
-  style: ViewPropTypesStyle
-};
+TimesImage.propTypes = propTypes;
 
 export default TimesImage;
