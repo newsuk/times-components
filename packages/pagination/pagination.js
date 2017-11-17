@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, Platform } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import PropTypes from "prop-types";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
