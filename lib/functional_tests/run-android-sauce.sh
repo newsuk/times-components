@@ -14,5 +14,5 @@ curl -u $SAUCE_USERNAME:$SAUCE_KEY\
     https://saucelabs.com/rest/v1/storage/tnlweb/fructose-e2e.apk?overwrite=true\
     --data-binary @${PWD}/android/app/build/outputs/apk/release/app-release.apk
 
-npx compile-tests 
+npx compile-tests -d fructose
 jest fructose/components.test.js --setupTestFrameworkScriptFile ./fructose/setup.android.sauce.js --forceExit --verbose
