@@ -35,7 +35,6 @@ withComponent(
       await expect(element(by.id("flag-sponsored"))).toNotExist();
     });
 
-
     test(
       "default Article should be able to scroll down the page",
       async () => {
