@@ -38,8 +38,7 @@
     "packages:publish": "lerna publish --conventional-commits --yes --concurrency=1 --exact",
     "packages:publish-dry-run": "npm run packages:publish -- --skip-git --skip-npm",
     "update-deps": "lerna bootstrap --hoist --npm-client=yarn --concurrency=1",
-    "postinstall": "npm run update-deps --silent",
-    "fructose-app": "export CWD=$(pwd) && export FRC=$CWD/.fructose && react-native start --projectRoots $CWD,$FRC --resetCache"
+    "postinstall": "npm run update-deps --silent"
   },
   "jest": {
     "preset": "react-native",
@@ -88,7 +87,7 @@
     "@storybook/addon-actions": "3.2.11",
     "@storybook/react": "3.2.11",
     "@storybook/react-native": "3.2.11",
-    "@times-components/fructose": "2.2.1",
+    "@times-components/fructose": "3.1.0",
     "chromeless": "1.3.0",
     "coveralls": "2.13.1",
     "detox": "5.8.2",
