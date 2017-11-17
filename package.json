@@ -16,7 +16,7 @@
     "functional-test:web": "./lib/functional_tests/run-web.sh",
     "functional-test:ios": "./lib/functional_tests/run-ios.sh",
     "functional-test:android": "./lib/functional_tests/run-android.sh",
-    "functional-test:android-sauce": "./lib/functional_tests/run-android-sauce.sh",
+    "functional-test:android-sauce": "SAUCE_USERNAME=${SAUCE_USERNAME} SAUCE_KEY=${SAUCE_KEY} ./lib/functional_tests/run-android-sauce.sh",
     "coverage:publish": "lcov-result-merger ./packages/**/lcov.info | coveralls",
     "prelint": "prettier --list-different '+(.storybook.native|storybook|lib)/**/*.+(js|json)' '*.md' '.github/**/*.md'",
     "lint": "lerna run lint --since",
