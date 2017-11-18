@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, Text, Platform } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
 import PropTypes from "prop-types";
 
 import Image from "@times-components/image";
@@ -36,13 +36,7 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: "TimesDigitalW04-RegularSC",
     fontSize: 15,
-    color: "#696969",
-    ...Platform.select({
-      web: {
-        WebkitFontSmoothing: "antialiased",
-        MozOsxFontSmoothing: "grayscale"
-      }
-    })
+    color: "#696969"
   },
   twitter: {
     fontSize: 18,
@@ -58,13 +52,7 @@ const styles = StyleSheet.create({
     lineHeight: 26,
     color: "#333",
     maxWidth: "88%",
-    paddingBottom: 32,
-    ...Platform.select({
-      web: {
-        WebkitFontSmoothing: "antialiased",
-        MozOsxFontSmoothing: "grayscale"
-      }
-    })
+    paddingBottom: 32
   },
   wrapper: {
     alignItems: "center",

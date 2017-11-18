@@ -7,13 +7,7 @@ const textStyle = {
   height: 15,
   fontFamily: "GillSansMTStd-Medium",
   fontSize: 15,
-  color: "#006699",
-  ...Platform.select({
-    web: {
-      WebkitFontSmoothing: "antialiased",
-      MozOsxFontSmoothing: "grayscale"
-    }
-  })
+  color: "#006699"
 };
 
 const container = {
