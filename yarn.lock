@@ -216,9 +216,9 @@
     react-native-web "0.1.7"
     svgs "3.1.0"
 
-"@times-components/fructose@3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.1.0.tgz#9fca34afe1039a26940303844aa4a0b6e2c08f26"
+"@times-components/fructose@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.0.0.tgz#29cb4a8774ed400963bc16266f96139b00b69392"
   dependencies:
     babel-polyfill "^6.23.0"
     babel-preset-es2015 "^6.24.1"
