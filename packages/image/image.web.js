@@ -11,7 +11,6 @@ const TimesImage = ({ uri, aspectRatio, style }) => {
       paddingBottom: `${100 / aspectRatio}%`
     },
     placeholder: {
-      flex: 1,
       position: "absolute",
       top: 0,
       bottom: 0,
