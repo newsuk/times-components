@@ -14,6 +14,7 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
+    "coverageDirectory": "<rootDir>/packages/link/coverage/",
     "collectCoverageFrom": [
       "**/packages/link/*.js",
       "!**/packages/link/*.stories.js"

@@ -40,6 +40,7 @@ const config = (component, platform) => ({
   ...(platform === "web" ? webSpecific : nativeSpecific(platform)),
   rootDir: "../../../../",
   transformIgnorePatterns: ["node_modules/(?!@times-components)/"],
+  coverageDirectory: `<rootDir>/packages/${component}/coverage/${platform}/`,
   testMatch: [
     `<rootDir>/packages/${component}/__tests__/${platform}/*.test.js`
   ],

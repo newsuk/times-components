@@ -13,6 +13,7 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
+    "coverageDirectory": "<rootDir>/packages/tracking/coverage/",
     "transformIgnorePatterns": [
       "node_modules/(?!@times-components)/"
     ],

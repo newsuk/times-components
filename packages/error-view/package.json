@@ -14,6 +14,7 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
+    "coverageDirectory": "<rootDir>/packages/error-view/coverage/",
     "transformIgnorePatterns": [
       "node_modules/(?!@times-components)/"
     ],

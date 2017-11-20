@@ -13,6 +13,7 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
+    "coverageDirectory": "<rootDir>/packages/brightcove-video/coverage/",
     "testEnvironment": "jsdom",
     "transformIgnorePatterns": [
       "node_modules/(?!@times-components)/"
