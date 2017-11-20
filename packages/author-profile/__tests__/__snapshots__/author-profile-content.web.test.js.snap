@@ -2058,8 +2058,8 @@ exports[`renders profile error 1`] = `
     dir="auto"
   >
     {
-      "error": "error"
-    }
+  "error": "error"
+}
   </div>
 </div>
 `;

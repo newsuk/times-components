@@ -13,6 +13,5 @@
     "!<rootDir>/packages/author-profile/*.stories.js",
     "!<rootDir>/packages/author-profile/__tests__/**.test.js"
   ],
-  "snapshotSerializers": ["enzyme-to-json/serializer"],
-  "transformIgnorePatterns": ["node_modules/(?!@times-components)/"]
+  "snapshotSerializers": ["enzyme-to-json/serializer"]
 }
