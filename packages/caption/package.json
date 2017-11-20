@@ -42,6 +42,7 @@
     "@times-components/image": "1.6.5",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
+    "babel-jest": "21.2.0",
     "babel-loader": "7.0.0",
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
