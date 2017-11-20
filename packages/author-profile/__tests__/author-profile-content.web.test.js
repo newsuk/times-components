@@ -1,11 +1,7 @@
 /* eslint-env jest */
-
-import "raf/polyfill";
-
 import React from "react";
 import Enzyme, { shallow } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
-
 import test from "./author-profile-helper";
 import AuthorProfileItem from "../author-profile-item";
 import AuthorProfileContent from "../author-profile-content.web.js";
