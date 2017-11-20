@@ -9,13 +9,8 @@ const ArticleContent = ({ data, renderRow }) => (
 );
 
 ArticleContent.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.object),
-  renderRow: PropTypes.func
-};
-
-ArticleContent.defaultProps = {
-  data: [],
-  renderRow: null
+  data: PropTypes.arrayOf(PropTypes.object).isRequired,
+  renderRow: PropTypes.func.isRequired
 };
 
 export default ArticleContent;
