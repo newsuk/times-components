@@ -95,6 +95,7 @@ exports[`renders profile content 1`] = `
         <div
           style={
             Object {
+              "display": "contents",
               "height": 0,
               "overflow": "hidden",
               "paddingBottom": "100%",
@@ -189,6 +190,7 @@ exports[`renders profile content 1`] = `
                   <div
                     style={
                       Object {
+                        "display": "contents",
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": "66.66666666666667%",
@@ -287,6 +289,7 @@ exports[`renders profile content 1`] = `
                   <div
                     style={
                       Object {
+                        "display": "contents",
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": "66.66666666666667%",
@@ -385,6 +388,7 @@ exports[`renders profile content 1`] = `
                   <div
                     style={
                       Object {
+                        "display": "contents",
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": "66.66666666666667%",
@@ -483,6 +487,7 @@ exports[`renders profile content 1`] = `
                   <div
                     style={
                       Object {
+                        "display": "contents",
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": "66.66666666666667%",
@@ -581,6 +586,7 @@ exports[`renders profile content 1`] = `
                   <div
                     style={
                       Object {
+                        "display": "contents",
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": "66.66666666666667%",
@@ -679,6 +685,7 @@ exports[`renders profile content 1`] = `
                   <div
                     style={
                       Object {
+                        "display": "contents",
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": "66.66666666666667%",
@@ -777,6 +784,7 @@ exports[`renders profile content 1`] = `
                   <div
                     style={
                       Object {
+                        "display": "contents",
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": "66.66666666666667%",
@@ -875,6 +883,7 @@ exports[`renders profile content 1`] = `
                   <div
                     style={
                       Object {
+                        "display": "contents",
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": "66.66666666666667%",
@@ -973,6 +982,7 @@ exports[`renders profile content 1`] = `
                   <div
                     style={
                       Object {
+                        "display": "contents",
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": "66.66666666666667%",
@@ -1071,6 +1081,7 @@ exports[`renders profile content 1`] = `
                   <div
                     style={
                       Object {
+                        "display": "contents",
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": "66.66666666666667%",
@@ -1311,6 +1322,7 @@ exports[`renders profile content component 1`] = `
                     <div
                       style={
                         Object {
+                          "display": "contents",
                           "height": 0,
                           "overflow": "hidden",
                           "paddingBottom": "66.66666666666667%",
@@ -1454,6 +1466,7 @@ exports[`renders profile content component 1`] = `
                     <div
                       style={
                         Object {
+                          "display": "contents",
                           "height": 0,
                           "overflow": "hidden",
                           "paddingBottom": "66.66666666666667%",
@@ -1768,6 +1781,7 @@ exports[`renders profile content item component 1`] = `
             <div
               style={
                 Object {
+                  "display": "contents",
                   "height": 0,
                   "overflow": "hidden",
                   "paddingBottom": "66.66666666666667%",
@@ -1906,6 +1920,7 @@ exports[`renders profile content item component with no image  1`] = `
             <div
               style={
                 Object {
+                  "display": "contents",
                   "height": 0,
                   "overflow": "hidden",
                   "paddingBottom": "66.66666666666667%",
@@ -2251,6 +2266,7 @@ exports[`renders profile loading 1`] = `
                   <div
                     style={
                       Object {
+                        "display": "contents",
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": "66.66666666666667%",
