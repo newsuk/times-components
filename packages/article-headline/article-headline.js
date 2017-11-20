@@ -7,7 +7,7 @@ const { style: ViewPropTypesStyle } = ViewPropTypes;
 const styles = {
   text: {
     color: "#1D1D1B",
-    fontSize: 22,
+    fontSize: 21,
     lineHeight: 25,
     marginBottom: 8,
     fontFamily: "TimesModern-Bold",

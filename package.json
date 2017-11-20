@@ -12,7 +12,7 @@
   },
   "scripts": {
     "native": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "npm run storybook:build && jest ./lib && lerna run test",
+    "test": "npm run storybook:build && jest ./lib && lerna run test since master",
     "functional-test:web": "./lib/functional_tests/run-web.sh",
     "functional-test:ios": "./lib/functional_tests/run-ios.sh",
     "coverage:publish": "lcov-result-merger ./packages/**/lcov.info | coveralls",
