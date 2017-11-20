@@ -42,7 +42,7 @@
     "apollo-client": "1.9.3",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
-    "babel-jest": "21.2.0",
+    
     "babel-eslint": "7.2.3",
     "babel-loader": "7.0.0",
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
