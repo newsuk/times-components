@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.10.9"></a>
+## [0.10.9](https://github.com/newsuk/times-components/compare/@times-components/card@0.10.8...@times-components/card@0.10.9) (2017-11-20)
+
+
+### Bug Fixes
+
+* remove JS ([#403](https://github.com/newsuk/times-components/issues/403)) ([2b30b08](https://github.com/newsuk/times-components/commit/2b30b08))
+
+
+
+
 <a name="0.10.8"></a>
 ## [0.10.8](https://github.com/newsuk/times-components/compare/@times-components/card@0.10.7...@times-components/card@0.10.8) (2017-11-17)
 
