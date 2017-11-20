@@ -12,9 +12,13 @@ const isOrientationHorizontal = width => width > horizontalBreakpoint;
 class CardComponent extends React.Component {
   constructor(props) {
     super(props);
+
     this.handleLayout = this.handleLayout.bind(this);
+
+    const { width } = Dimensions.get("window");
+
     this.state = {
-      isHorizontal: isOrientationHorizontal(Dimensions.get("window").width)
+      isHorizontal: isOrientationHorizontal(width)
     };
   }
 
@@ -31,7 +35,7 @@ class CardComponent extends React.Component {
     if (this.props.isLoading) {
       return (
         <View onLayout={this.handleLayout}>
-          <Loading horizontal={isHorizontal} />
+          <Loading horizontal={isHorizontal} aspectRatio={3 / 2} />
         </View>
       );
     }
@@ -52,11 +56,7 @@ class CardComponent extends React.Component {
         <View
           style={[layoutStyles.childrenContainer, layoutStyles.imageContainer]}
         >
-          <Image
-            style={layoutStyles.image}
-            uri={image.uri}
-            aspectRatio={3 / 2}
-          />
+          <Image uri={image.uri} aspectRatio={3 / 2} />
         </View>
       ) : null;
 

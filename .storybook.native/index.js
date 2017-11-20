@@ -8,9 +8,14 @@ import {
 import { loadStories } from "./story-loader";
 import "./addons";
 import IosBarSpacingDecorator from "../storybook/decorators/ios-bar-spacing";
+import WhiteBgColorDecorator from "../storybook/decorators/white-bg-color";
 
 if (Platform.OS === "ios") {
   addDecorator(IosBarSpacingDecorator);
+}
+
+if (Platform.OS === "android") {
+  addDecorator(WhiteBgColorDecorator);
 }
 
 configure(loadStories, module);

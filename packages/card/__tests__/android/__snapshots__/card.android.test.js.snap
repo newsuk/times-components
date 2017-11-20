@@ -32,6 +32,7 @@ exports[`Card test on android renders horizontal above breakpoint 1`] = `
     >
       <TimesImage
         aspectRatio={1.5}
+        style={Object {}}
         uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320"
       />
     </View>
@@ -95,6 +96,7 @@ exports[`Card test on android renders loading horizontal above breakpoint 1`] = 
   onLayout={[Function]}
 >
   <Loading
+    aspectRatio={1.5}
     horizontal={true}
     style={null}
   />
@@ -128,74 +130,89 @@ exports[`Card test on android renders loading state 1`] = `
         ]
       }
     >
-      <View>
-        <Image
-          aspectRatio={1.5}
-          onLoad={[Function]}
-          source={
-            Object {
-              "uri": "",
-            }
-          }
-          style={undefined}
-        />
+      <View
+        aspectRatio={1.5}
+        style={Object {}}
+      >
         <View
-          onLayout={[Function]}
           style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-              Object {
-                "height": "100%",
-                "left": 0,
-                "position": "absolute",
-                "top": 0,
-                "width": "100%",
-              },
-            ]
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
           }
         >
-          <View
+          <Image
+            onLoad={[Function]}
             style={
-              Object {
-                "flex": 1,
-              }
+              Array [
+                Object {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                },
+                undefined,
+              ]
+            }
+          />
+          <View
+            onLayout={[Function]}
+            style={
+              Array [
+                Object {
+                  "flex": 1,
+                },
+                null,
+              ]
             }
           >
-            <BVLinearGradient
-              colors={
-                Array [
-                  "#f9f9f9",
-                  "#ededed",
-                ]
-              }
-              end={
-                Object {
-                  "x": -0.09302964577578221,
-                  "y": 0.11488204504197774,
-                }
-              }
-              locations={
-                Array [
-                  0,
-                  1,
-                ]
-              }
-              start={
-                Object {
-                  "x": 1,
-                  "y": 0,
-                }
-              }
+            <View
               style={
-                Array [
-                  Object {
-                    "flex": 1,
-                  },
-                ]
+                Object {
+                  "flex": 1,
+                }
               }
-            />
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#f9f9f9",
+                    "#ededed",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                    },
+                  ]
+                }
+              />
+            </View>
           </View>
         </View>
       </View>
@@ -423,74 +440,89 @@ exports[`Card test on android renders loading vertical by default 1`] = `
         ]
       }
     >
-      <View>
-        <Image
-          aspectRatio={1.5}
-          onLoad={[Function]}
-          source={
-            Object {
-              "uri": "",
-            }
-          }
-          style={undefined}
-        />
+      <View
+        aspectRatio={1.5}
+        style={Object {}}
+      >
         <View
-          onLayout={[Function]}
           style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-              Object {
-                "height": "100%",
-                "left": 0,
-                "position": "absolute",
-                "top": 0,
-                "width": "100%",
-              },
-            ]
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
           }
         >
-          <View
+          <Image
+            onLoad={[Function]}
             style={
-              Object {
-                "flex": 1,
-              }
+              Array [
+                Object {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                },
+                undefined,
+              ]
+            }
+          />
+          <View
+            onLayout={[Function]}
+            style={
+              Array [
+                Object {
+                  "flex": 1,
+                },
+                null,
+              ]
             }
           >
-            <BVLinearGradient
-              colors={
-                Array [
-                  "#f9f9f9",
-                  "#ededed",
-                ]
-              }
-              end={
-                Object {
-                  "x": -0.09302964577578221,
-                  "y": 0.11488204504197774,
-                }
-              }
-              locations={
-                Array [
-                  0,
-                  1,
-                ]
-              }
-              start={
-                Object {
-                  "x": 1,
-                  "y": 0,
-                }
-              }
+            <View
               style={
-                Array [
-                  Object {
-                    "flex": 1,
-                  },
-                ]
+                Object {
+                  "flex": 1,
+                }
               }
-            />
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#f9f9f9",
+                    "#ededed",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                    },
+                  ]
+                }
+              />
+            </View>
           </View>
         </View>
       </View>
@@ -718,74 +750,94 @@ exports[`Card test on android renders vertical by default 1`] = `
         ]
       }
     >
-      <View>
-        <Image
-          aspectRatio={1.5}
-          onLoad={[Function]}
-          source={
-            Object {
-              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320",
-            }
-          }
-          style={undefined}
-        />
+      <View
+        aspectRatio={1.5}
+        style={Object {}}
+      >
         <View
-          onLayout={[Function]}
           style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-              Object {
-                "height": "100%",
-                "left": 0,
-                "position": "absolute",
-                "top": 0,
-                "width": "100%",
-              },
-            ]
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
           }
         >
-          <View
-            style={
+          <Image
+            onLoad={[Function]}
+            source={
               Object {
-                "flex": 1,
+                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320",
               }
             }
+            style={
+              Array [
+                Object {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                },
+                undefined,
+              ]
+            }
+          />
+          <View
+            onLayout={[Function]}
+            style={
+              Array [
+                Object {
+                  "flex": 1,
+                },
+                null,
+              ]
+            }
           >
-            <BVLinearGradient
-              colors={
-                Array [
-                  "#f9f9f9",
-                  "#ededed",
-                ]
-              }
-              end={
-                Object {
-                  "x": -0.09302964577578221,
-                  "y": 0.11488204504197774,
-                }
-              }
-              locations={
-                Array [
-                  0,
-                  1,
-                ]
-              }
-              start={
-                Object {
-                  "x": 1,
-                  "y": 0,
-                }
-              }
+            <View
               style={
-                Array [
-                  Object {
-                    "flex": 1,
-                  },
-                ]
+                Object {
+                  "flex": 1,
+                }
               }
-            />
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#f9f9f9",
+                    "#ededed",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                    },
+                  ]
+                }
+              />
+            </View>
           </View>
         </View>
       </View>

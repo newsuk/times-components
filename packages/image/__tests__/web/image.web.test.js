@@ -2,11 +2,11 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
-import Image from "../image";
+import Image from "../../image";
 
 it("renders correctly", () => {
   const tree = renderer
-    .create(<Image uri="http://example.com/image.jpg" aspectRatio={1 / 1} />)
+    .create(<Image uri="http://example.com/image.jpg" aspectRatio={3 / 2} />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
@@ -17,7 +17,7 @@ it("allows styling", () => {
       <Image
         style={{ width: 100 }}
         uri="http://example.com/image.jpg"
-        aspectRatio={1 / 1}
+        aspectRatio={3 / 2}
       />
     )
     .toJSON();
@@ -26,7 +26,7 @@ it("allows styling", () => {
 
 it("prepends https schema", () => {
   const tree = renderer
-    .create(<Image uri="//example.com/image.jpg" aspectRatio={1 / 1} />)
+    .create(<Image uri="//example.com/image.jpg" aspectRatio={3 / 2} />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

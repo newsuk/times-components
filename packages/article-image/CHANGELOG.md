@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.7"></a>
+## [0.4.7](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.4.6...@times-components/article-image@0.4.7) (2017-11-17)
+
+
+### Bug Fixes
+
+* use ImageBackground wrapped in View ([#399](https://github.com/newsuk/times-components/issues/399)) ([e77bcde](https://github.com/newsuk/times-components/commit/e77bcde))
+
+
+
+
 <a name="0.4.6"></a>
 ## [0.4.6](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.4.5...@times-components/article-image@0.4.6) (2017-11-16)
 

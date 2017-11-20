@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, Platform } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import PropTypes from "prop-types";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
@@ -37,13 +37,7 @@ const styles = StyleSheet.create({
   label: {
     color: "#696969",
     fontFamily: "GillSansMTStd-Medium",
-    fontSize: 15,
-    ...Platform.select({
-      web: {
-        WebkitFontSmoothing: "antialiased",
-        MozOsxFontSmoothing: "grayscale"
-      }
-    })
+    fontSize: 15
   },
   message: {
     justifyContent: "center"
