@@ -69,6 +69,7 @@ exports[`Card test on web renders 1`] = `
         <div
           style={
             Object {
+              "display": "contents",
               "height": 0,
               "overflow": "hidden",
               "paddingBottom": "66.66666666666667%",
@@ -260,6 +261,7 @@ exports[`Card test on web renders loading state 1`] = `
         <div
           style={
             Object {
+              "display": "contents",
               "height": 0,
               "overflow": "hidden",
               "paddingBottom": "66.66666666666667%",
