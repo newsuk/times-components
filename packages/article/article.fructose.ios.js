@@ -21,7 +21,9 @@ withComponent(
     });
 
     test("default Article should render correctly", async () => {
-      await expect(element(by.id("flat-list-article")).atIndex(0)).toBeVisible();
+      await expect(
+        element(by.id("flat-list-article")).atIndex(0)
+      ).toBeVisible();
       await expect(element(by.id("leadAsset"))).toBeVisible();
       await expect(element(by.id("label"))).toBeVisible();
       await expect(element(by.id("headline"))).toBeVisible();
@@ -38,9 +40,13 @@ withComponent(
     test(
       "default Article should be able to scroll down the page",
       async () => {
-        await expect(element(by.id("flat-list-article")).atIndex(0)).toBeVisible();
+        await expect(
+          element(by.id("flat-list-article")).atIndex(0)
+        ).toBeVisible();
         await expect(element(by.id("paragraph-3"))).toBeNotVisible();
-        await element(by.id("flat-list-article")).atIndex(0).scroll(900, "down");
+        await element(by.id("flat-list-article"))
+          .atIndex(0)
+          .scroll(900, "down");
         await expect(element(by.id("paragraph-3"))).toBeVisible();
       },
       20000
