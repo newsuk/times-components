@@ -341,7 +341,7 @@ exports[`renders profile content 1`] = `
                 }
               }
             >
-              Lorem 
+              Lorem
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -354,16 +354,16 @@ exports[`renders profile content 1`] = `
               >
                 ipsum
               </Text>
-               testbr 
+               testbr
               <Text
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail"
               >
-                
+
 
               </Text>
-              More text 
+              More text
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -374,7 +374,7 @@ exports[`renders profile content 1`] = `
                   }
                 }
               >
-                 last 
+                 last
               </Text>
             </Text>
           </View>
@@ -4241,7 +4241,7 @@ exports[`renders profile content component 1`] = `
               },
               Object {
                 "attributes": Object {
-                  "value": "★★★★☆",
+                  "value": "���������������",
                 },
                 "children": Array [],
                 "name": "text",
@@ -4257,7 +4257,7 @@ exports[`renders profile content component 1`] = `
                 "children": Array [
                   Object {
                     "attributes": Object {
-                      "value": "Lucy Worsley’s Nights at the Opera",
+                      "value": "Lucy Worsley���s Nights at the Opera",
                     },
                     "children": Array [],
                     "name": "text",
@@ -4284,7 +4284,7 @@ exports[`renders profile content component 1`] = `
               },
               Object {
                 "attributes": Object {
-                  "value": "★★★☆☆",
+                  "value": "���������������",
                 },
                 "children": Array [],
                 "name": "text",
@@ -4318,7 +4318,7 @@ exports[`renders profile content component 1`] = `
         },
         "publicationName": "TIMES",
         "publishedTime": 2015-03-17T23:00:44.000Z,
-        "title": "TV review: Victoria; Lucy Worsley’s Nights at the Opera",
+        "title": "TV review: Victoria; Lucy Worsley���s Nights at the Opera",
         "url": "https://www.thetimes.co.uk/article/tv-review-victoria-lucy-worsleys-nights-at-the-opera-x2q80h7gj",
       },
       Object {
@@ -4422,7 +4422,7 @@ exports[`renders profile content component 1`] = `
               }
               testID="author-name"
             >
-              
+
             </Text>
             <Text
               accessibilityRole="heading"
@@ -4438,7 +4438,7 @@ exports[`renders profile content component 1`] = `
                 }
               }
             >
-              
+
             </Text>
             <Text
               accessible={true}
@@ -5117,7 +5117,7 @@ exports[`renders profile content component 1`] = `
                       }
                     }
                   >
-                    TV review: Victoria; Lucy Worsley’s Nights at the Opera
+                    TV review: Victoria; Lucy Worsley���s Nights at the Opera
                   </Text>
                   <Text
                     accessible={true}
@@ -5139,7 +5139,7 @@ exports[`renders profile content component 1`] = `
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                     >
-                      
+
                       <Text
                         accessible={true}
                         allowFontScaling={true}
@@ -5157,7 +5157,7 @@ exports[`renders profile content component 1`] = `
                         allowFontScaling={true}
                         ellipsizeMode="tail"
                       >
-                        
+
 
                       </Text>
                       ITV
@@ -5166,17 +5166,17 @@ exports[`renders profile content component 1`] = `
                         allowFontScaling={true}
                         ellipsizeMode="tail"
                       >
-                        
+
 
                       </Text>
-                      ★★★★☆
+                      ���������������
                     </Text>
                     <Text
                       accessible={true}
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                     >
-                       
+
                       <Text
                         accessible={true}
                         allowFontScaling={true}
@@ -5187,14 +5187,14 @@ exports[`renders profile content component 1`] = `
                           }
                         }
                       >
-                        Lucy Worsley’s Nights at the Opera
+                        Lucy Worsley���s Nights at the Opera
                       </Text>
                       <Text
                         accessible={true}
                         allowFontScaling={true}
                         ellipsizeMode="tail"
                       >
-                        
+
 
                       </Text>
                       BBC Two
@@ -5203,10 +5203,10 @@ exports[`renders profile content component 1`] = `
                         allowFontScaling={true}
                         ellipsizeMode="tail"
                       >
-                        
+
 
                       </Text>
-                      ★★★☆☆
+                      ���������������
                     </Text>
                     <Text
                       accessible={true}
@@ -6115,7 +6115,7 @@ exports[`renders profile empty 1`] = `
     </View>
   }
   accessibilityID="scroll-view"
-  data={undefined}
+  data={Array []}
   disableVirtualization={false}
   getItem={[Function]}
   getItemCount={[Function]}
@@ -6204,7 +6204,7 @@ exports[`renders profile empty 1`] = `
               }
               testID="author-name"
             >
-              
+
             </Text>
             <Text
               accessibilityRole="heading"
@@ -6220,7 +6220,7 @@ exports[`renders profile empty 1`] = `
                 }
               }
             >
-              
+
             </Text>
             <Text
               accessible={true}
@@ -6656,7 +6656,7 @@ exports[`renders profile loading 1`] = `
                 }
               }
             >
-              Lorem 
+              Lorem
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -6669,16 +6669,16 @@ exports[`renders profile loading 1`] = `
               >
                 ipsum
               </Text>
-               testbr 
+               testbr
               <Text
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail"
               >
-                
+
 
               </Text>
-              More text 
+              More text
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -6689,7 +6689,7 @@ exports[`renders profile loading 1`] = `
                   }
                 }
               >
-                 last 
+                 last
               </Text>
             </Text>
           </View>
@@ -7244,7 +7244,7 @@ exports[`renders the author head 1`] = `
         }
       }
     >
-      
+
     </Text>
     <Text
       accessibilityRole="link"

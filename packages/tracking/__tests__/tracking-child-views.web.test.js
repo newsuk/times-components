@@ -7,15 +7,6 @@ import withTestContext from "./test-tracking-context";
 import sharedTrackingTests from "./shared-tracking-tests";
 
 class FakeIntersectionObserver {
-  constructor(callback) {
-    this.constructor.observationCallback = callback;
-  }
-  observe(element) {
-    this.constructor.observing.push(element);
-  }
-  disconnect() {
-    this.constructor.clearObservering();
-  }
   static clearObservering() {
     FakeIntersectionObserver.observing.splice(0);
   }
@@ -27,6 +18,15 @@ class FakeIntersectionObserver {
         target: { id: element.id }
       }))
     );
+  }
+  constructor(callback) {
+    this.constructor.observationCallback = callback;
+  }
+  observe(element) {
+    this.constructor.observing.push(element);
+  }
+  disconnect() {
+    this.constructor.clearObservering();
   }
 }
 FakeIntersectionObserver.observing = [];

@@ -4,7 +4,7 @@ import AuthorProfileAuthorHead from "./author-profile-author-head";
 import AuthorProfilePagination from "./author-profile-pagination";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
-import propTypes from "./author-profile-content-prop-types";
+import {propTypes, defaultProps} from "./author-profile-content-prop-types";
 
 const styles = StyleSheet.create({
   padding: {
@@ -40,8 +40,10 @@ class AuthorProfileContent extends React.Component {
     if (info.changed) {
       info.changed
         .filter(viewableItem => viewableItem.isViewable)
-        .map(viewableItem =>
-          this.props.onViewed(viewableItem.item, this.props.articles)
+        .map(
+          viewableItem =>
+            this.props.onViewed &&
+            this.props.onViewed(viewableItem.item, this.props.articles)
         );
     }
   }
@@ -131,4 +133,5 @@ class AuthorProfileContent extends React.Component {
 }
 
 AuthorProfileContent.propTypes = propTypes;
+AuthorProfileContent.defaultProps = defaultProps;
 export default AuthorProfileContent;

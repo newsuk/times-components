@@ -87,8 +87,6 @@ AuthorProfile.defaultProps = {
   isLoading: true,
   onArticlePress: () => {},
   onTwitterLinkPress: () => {},
-  getChildList: () => {},
-  onViewed: () => {},
   page: 1,
   pageSize: 10
 };
@@ -107,8 +105,8 @@ AuthorProfile.propTypes = {
   pageSize: PropTypes.number,
   onTwitterLinkPress: PropTypes.func,
   onArticlePress: PropTypes.func,
-  getChildList: PropTypes.func,
-  onViewed: PropTypes.func,
+  getChildList: PropTypes.func.isRequired,
+  onViewed: PropTypes.func.isRequired,
   slug: PropTypes.string.isRequired
 };
 

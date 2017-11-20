@@ -24,7 +24,9 @@ const props = {
   slug: "fiona-hamilton",
   onTwitterLinkPress: () => {},
   onArticlePress: () => {},
-  analyticsStream: () => {}
+  analyticsStream: () => {},
+  onViewed: () => {},
+  getChildList: () => {},
 };
 
 const pagedResult = (skip, first) => ({
@@ -155,8 +157,6 @@ export default AuthorProfileContent => {
           slug="fiona-hamilton"
           page={1}
           pageSize={10}
-          onTwitterLinkPress={() => {}}
-          onArticlePress={() => {}}
         />
       )
     );
@@ -255,6 +255,7 @@ export default AuthorProfileContent => {
         pageSize={3}
         onTwitterLinkPress={() => {}}
         onArticlePress={() => {}}
+        onViewed={() => {}}
       />
     );
 
@@ -344,8 +345,6 @@ export default AuthorProfileContent => {
           slug="fiona-hamilton"
           page={1}
           pageSize={10}
-          onTwitterLinkPress={() => {}}
-          onArticlePress={() => {}}
           analyticsStream={stream}
         />
       )
