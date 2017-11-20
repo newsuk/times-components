@@ -17,7 +17,7 @@
     "functional-test:ios": "./lib/functional_tests/run-ios.sh",
     "coverage:publish": "lcov-result-merger ./packages/**/lcov.info | coveralls",
     "prelint": "prettier --list-different '+(.storybook.native|storybook|lib)/**/*.+(js|json)' '*.md' '.github/**/*.md'",
-    "lint": "lerna run lint",
+    "lint": "lerna run lint --since master",
     "fetch-fonts": "node ./lib/fetch-fonts",
     "prestorybook": "npm run fetch-fonts && npm run storybook:build-vendor",
     "storybook": "start-storybook -p 9001 -c .storybook -s ./dist/public",
