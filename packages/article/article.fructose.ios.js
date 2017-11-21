@@ -21,9 +21,7 @@ withComponent(
     });
 
     test("default Article should render correctly", () => {
-      expect(
-        element(by.id("flat-list-article")).atIndex(0)
-      ).toBeVisible();
+      expect(element(by.id("flat-list-article")).atIndex(0)).toBeVisible();
       expect(element(by.id("leadAsset"))).toBeVisible();
       expect(element(by.id("label"))).toBeVisible();
       expect(element(by.id("headline"))).toBeVisible();
