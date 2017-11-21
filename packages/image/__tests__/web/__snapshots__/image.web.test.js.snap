@@ -12,7 +12,7 @@ exports[`allows styling 1`] = `
   <div
     style={
       Object {
-        "display": "contents",
+        "display": "table",
         "height": 0,
         "overflow": "hidden",
         "paddingBottom": "66.66666666666667%",
@@ -54,7 +54,7 @@ exports[`prepends https schema 1`] = `
   <div
     style={
       Object {
-        "display": "contents",
+        "display": "table",
         "height": 0,
         "overflow": "hidden",
         "paddingBottom": "66.66666666666667%",
@@ -96,7 +96,7 @@ exports[`renders correctly 1`] = `
   <div
     style={
       Object {
-        "display": "contents",
+        "display": "table",
         "height": 0,
         "overflow": "hidden",
         "paddingBottom": "66.66666666666667%",
