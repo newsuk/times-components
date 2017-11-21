@@ -7,12 +7,12 @@
     "<rootDir>/packages/author-profile/__tests__/**.native.test.js"
   ],
   "collectCoverageFrom": [
-    "packages/author-profile/*.js",
-    "!packages/author-profile/**.web.js",
-    "!packages/author-profile/fixture-generator.js",
-    "!packages/author-profile/*.fructose.*.js",
-    "!packages/author-profile/*.stories.js",
-    "!packages/author-profile/__tests__/**.test.js"
+    "**/packages/author-profile/*.js",
+    "!**/packages/author-profile/**.web.js",
+    "!**/packages/author-profile/fixture-generator.js",
+    "!**/packages/author-profile/*.fructose.*.js",
+    "!**/packages/author-profile/*.stories.js",
+    "!**/packages/author-profile/__tests__/**.test.js"
   ],
   "snapshotSerializers": ["enzyme-to-json/serializer"]
 }
