@@ -36,7 +36,7 @@
     "prefmt": "prettier --write '+(storybook|.storybook.native|lib)/**/*.+(js|json)' '*.md' '.github/**/*.md'",
     "fmt": "lerna run fmt",
     "packages:publish": "lerna publish --conventional-commits --yes --concurrency=1 --exact",
-    "packages:publish-dry-run": "npm run packages:publish--skip-git --skip-npm",
+    "packages:publish-dry-run": "npm run packages:publish --skip-git --skip-npm",
     "update-deps": "lerna bootstrap --hoist --npm-client=yarn --concurrency=1",
     "postinstall": "npm run update-deps --silent"
   },
