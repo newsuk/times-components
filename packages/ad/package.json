@@ -44,7 +44,7 @@
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",
-    "babel-loader": "7.0.0",
+    "babel-loader": "7.1.2",
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
@@ -67,7 +67,7 @@
     "@times-components/watermark": "0.0.9",
     "prop-types": "15.6.0",
     "react-broadcast": "0.5.2",
-    "react-native-web": "0.1.7"
+    "react-native-web": "0.1.14"
   },
   "peerDependencies": {
     "react": ">=16",
