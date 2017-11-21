@@ -9,7 +9,13 @@ const ArticleContent = ({ data, renderRow }) => (
 );
 
 ArticleContent.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.object).isRequired,
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      data: PropTypes.object.isRequired,
+      type: PropTypes.string.isRequired,
+      index: PropTypes.number
+    })
+  ).isRequired,
   renderRow: PropTypes.func.isRequired
 };
 
