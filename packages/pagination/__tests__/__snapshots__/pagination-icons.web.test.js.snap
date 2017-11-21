@@ -21,7 +21,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Text
-          style={66}
+          style={65}
         >
           a label
         </Text>,
@@ -39,7 +39,7 @@ ShallowWrapper {
           </G>
         </Svg>,
       ],
-      "style": 64,
+      "style": 63,
     },
     "ref": null,
     "rendered": Array [
@@ -49,7 +49,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": "a label",
-          "style": 66,
+          "style": 65,
         },
         "ref": null,
         "rendered": "a label",
@@ -109,7 +109,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Text
-            style={66}
+            style={65}
           >
             a label
           </Text>,
@@ -127,7 +127,7 @@ ShallowWrapper {
             </G>
           </Svg>,
         ],
-        "style": 64,
+        "style": 63,
       },
       "ref": null,
       "rendered": Array [
@@ -137,7 +137,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": "a label",
-            "style": 66,
+            "style": 65,
           },
           "ref": null,
           "rendered": "a label",
@@ -234,12 +234,12 @@ ShallowWrapper {
           </G>
         </Svg>,
         <Text
-          style={67}
+          style={66}
         >
           a label
         </Text>,
       ],
-      "style": 65,
+      "style": 64,
     },
     "ref": null,
     "rendered": Array [
@@ -292,7 +292,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": "a label",
-          "style": 67,
+          "style": 66,
         },
         "ref": null,
         "rendered": "a label",
@@ -322,12 +322,12 @@ ShallowWrapper {
             </G>
           </Svg>,
           <Text
-            style={67}
+            style={66}
           >
             a label
           </Text>,
         ],
-        "style": 65,
+        "style": 64,
       },
       "ref": null,
       "rendered": Array [
@@ -380,7 +380,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": "a label",
-            "style": 67,
+            "style": 66,
           },
           "ref": null,
           "rendered": "a label",

@@ -1,5 +1,6 @@
 {
   "name": "times-components",
+  "private": true,
   "version": "0.0.1",
   "description": "A collection of presentational components for The Times and Sunday Times",
   "main": "index.js",
@@ -40,9 +41,7 @@
     "prefmt": "prettier --write '+(storybook|.storybook.native|lib)/**/*.+(js|json)' '*.md' '.github/**/*.md'",
     "fmt": "lerna run fmt",
     "packages:publish": "lerna publish --conventional-commits --yes --concurrency=1 --exact",
-    "packages:publish-dry-run": "yarn packages:publish --skip-git --skip-npm",
-    "update-deps": "lerna bootstrap --hoist --npm-client=yarn --concurrency=1",
-    "postinstall": "yarn update-deps --silent"
+    "packages:publish-dry-run": "yarn packages:publish --skip-git --skip-npm"
   },
   "jest": {
     "preset": "react-native",
@@ -72,6 +71,9 @@
       }
     }
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/newsuk/times-components.git"
@@ -91,7 +93,7 @@
     "@storybook/addon-actions": "3.2.11",
     "@storybook/react": "3.2.11",
     "@storybook/react-native": "3.2.11",
-    "@times-components/fructose": "3.1.1",
+    "@times-components/fructose": "3.1.3",
     "chromeless": "1.3.0",
     "coveralls": "2.13.1",
     "detox": "5.8.2",
@@ -104,7 +106,7 @@
     "fs-extra": "4.0.1",
     "jest": "21.2.1",
     "lcov-result-merger": "1.2.0",
-    "lerna": "2.0.0",
+    "lerna": "2.5.1",
     "node-fetch": "1.7.2",
     "prettier": "1.8.2",
     "react": "16.0.0",
@@ -112,7 +114,7 @@
     "react-native": "0.50.1",
     "react-native-linear-gradient": "2.3.0",
     "react-native-storybook-loader": "1.5.1",
-    "react-native-web": "0.1.7",
+    "react-native-web": "0.1.14",
     "rimraf": "2.6.1",
     "url": "0.11.0",
     "webpack": "3.3.0",

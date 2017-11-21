@@ -5,20 +5,20 @@ exports[`Placeholder test on ios renders loading image when width set 1`] = `
   onLayout={[Function]}
   style={
     Array [
-      64,
+      63,
       null,
     ]
   }
 >
   <Gradient
     degrees={264}
-    style={64}
+    style={63}
   >
     <View
       style={
         Array [
+          63,
           64,
-          65,
         ]
       }
     >

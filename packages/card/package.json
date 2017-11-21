@@ -35,13 +35,13 @@
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",
-    "babel-loader": "7.0.0",
+    "babel-loader": "7.1.2",
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
-    "enzyme": "3.1.0",
-    "enzyme-adapter-react-16": "1.0.1",
-    "enzyme-to-json": "3.0.1",
+    "enzyme": "3.2.0",
+    "enzyme-adapter-react-16": "1.1.0",
+    "enzyme-to-json": "3.2.2",
     "eslint": "4.9.0",
     "eslint-config-airbnb": "16.1.0",
     "eslint-config-prettier": "2.6.0",
@@ -55,7 +55,6 @@
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "react-native": "0.50.1",
-    "react-native-svg": "5.5.0",
     "react-test-renderer": "16.0.0",
     "webpack": "3.3.0"
   },
@@ -65,15 +64,15 @@
     "@times-components/image": "1.6.10",
     "@times-components/jest-configurator": "0.0.8",
     "prop-types": "15.6.0",
-    "react-native-web": "0.1.7",
+    "react-native-svg": "5.5.0",
+    "react-native-web": "0.1.14",
     "styled-components": "2.2.3",
-    "svgs": "3.1.0"
+    "svgs": "3.1.1"
   },
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16",
-    "react-native": ">=0.50",
-    "react-native-svg": ">=5.5"
+    "react-native": ">=0.50"
   },
   "publishConfig": {
     "access": "public"
