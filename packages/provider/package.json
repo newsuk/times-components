@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider",
-  "version": "0.15.4",
+  "version": "0.15.5",
   "main": "provider",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -43,8 +43,8 @@
     "apollo-client": "1.9.3",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
-    "babel-jest": "21.2.0",
     "babel-eslint": "7.2.3",
+    "babel-jest": "21.2.0",
     "babel-loader": "7.0.0",
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
@@ -72,7 +72,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/pagination": "0.10.13",
+    "@times-components/pagination": "0.10.14",
     "graphql-tag": "2.4.2",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",

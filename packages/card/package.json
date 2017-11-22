@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "0.10.10",
+  "version": "0.10.11",
   "main": "card",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/jest-configurator": "0.0.6",
+    "@times-components/jest-configurator": "0.0.7",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",
@@ -60,10 +60,10 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/article-summary": "0.8.10",
-    "@times-components/gradient": "0.1.5",
-    "@times-components/image": "1.6.7",
-    "@times-components/jest-configurator": "0.0.6",
+    "@times-components/article-summary": "0.8.11",
+    "@times-components/gradient": "0.1.6",
+    "@times-components/image": "1.6.8",
+    "@times-components/jest-configurator": "0.0.7",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.7",
     "styled-components": "2.2.3",
