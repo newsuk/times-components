@@ -50,7 +50,7 @@ exports[`Article test on ios renders article no flags 1`] = `
   }
   enableEmptySections={true}
   initialListSize={10}
-  pageSize={1}
+  pageSize={2}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
@@ -792,7 +792,7 @@ exports[`Article test on ios renders article no label 1`] = `
   }
   enableEmptySections={true}
   initialListSize={10}
-  pageSize={1}
+  pageSize={2}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
@@ -1640,7 +1640,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
   }
   enableEmptySections={true}
   initialListSize={10}
-  pageSize={1}
+  pageSize={2}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
@@ -2351,7 +2351,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
   }
   enableEmptySections={true}
   initialListSize={10}
-  pageSize={1}
+  pageSize={2}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
@@ -3043,7 +3043,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
   }
   enableEmptySections={true}
   initialListSize={10}
-  pageSize={1}
+  pageSize={2}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
@@ -3903,7 +3903,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
   }
   enableEmptySections={true}
   initialListSize={10}
-  pageSize={1}
+  pageSize={2}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
@@ -4626,7 +4626,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
   }
   enableEmptySections={true}
   initialListSize={10}
-  pageSize={1}
+  pageSize={2}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
@@ -5455,7 +5455,7 @@ exports[`Article test on ios renders full article 1`] = `
   }
   enableEmptySections={true}
   initialListSize={10}
-  pageSize={1}
+  pageSize={2}
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
