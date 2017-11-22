@@ -12,14 +12,14 @@
   },
   "scripts": {
     "native": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "yarn storybook:build && jest ./lib && lerna run test --since",
+    "test": "yarn storybook:build && jest ./lib && lerna run test --since master",
     "functional-test:web": "./lib/functional_tests/run-web.sh",
     "functional-test:ios": "./lib/functional_tests/run-ios.sh",
     "coverage:publish": "lcov-result-merger ./packages/**/lcov.info | coveralls",
     "prelint": "prettier --list-different '+(.storybook.native|storybook|lib)/**/*.+(js|json)' '*.md' '.github/**/*.md'",
-    "lint": "lerna run lint --since",
+    "lint": "lerna run lint --since master",
     "fetch-fonts": "node ./lib/fetch-fonts",
-    "prestorybook": "yarn fetch-fonts && yarn storybook:build-vendor",
+    "prestorybook": "yarn storybook:build-vendor",
     "storybook": "start-storybook -p 9001 -c .storybook -s ./dist/public",
     "prestorybook:build": "yarn prestorybook",
     "storybook:build-vendor": "webpack --config ./.storybook/vendor.webpack.config.js",
@@ -36,9 +36,7 @@
     "prefmt": "prettier --write '+(storybook|.storybook.native|lib)/**/*.+(js|json)' '*.md' '.github/**/*.md'",
     "fmt": "lerna run fmt",
     "packages:publish": "lerna publish --conventional-commits --yes --concurrency=1 --exact",
-    "packages:publish-dry-run": "yarn packages:publish --skip-git --skip-npm",
-    "update-deps": "lerna bootstrap --hoist --npm-client=yarn --concurrency=1",
-    "postinstall": "yarn update-deps --silent"
+    "packages:publish-dry-run": "yarn packages:publish -- --skip-git --skip-npm"
   },
   "jest": {
     "preset": "react-native",
