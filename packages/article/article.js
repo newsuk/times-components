@@ -17,7 +17,7 @@ import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
-const listViewPageSize = 1;
+const listViewPageSize = 2;
 const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
 
