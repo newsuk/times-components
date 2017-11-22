@@ -9,7 +9,7 @@
     "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
     "fmt": "prettier --write '**/*.+(js|json|md)'",
     "make-schema": "node ./scripts/fetch-gql-schema",
-    "lint": "eslint . && npm run prettier:diff"
+    "lint": "eslint . && yarn prettier:diff"
   },
   "jest": {
     "preset": "react-native",
