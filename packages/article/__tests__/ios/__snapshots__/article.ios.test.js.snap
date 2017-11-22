@@ -207,7 +207,7 @@ exports[`Article test on ios renders article no flags 1`] = `
             Object {
               "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
+              "fontSize": 21,
               "fontWeight": "400",
               "lineHeight": 25,
               "marginBottom": 8,
@@ -918,7 +918,7 @@ exports[`Article test on ios renders article no label 1`] = `
             Object {
               "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
+              "fontSize": 21,
               "fontWeight": "400",
               "lineHeight": 25,
               "marginBottom": 8,
@@ -1766,7 +1766,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
             Object {
               "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
+              "fontSize": 21,
               "fontWeight": "400",
               "lineHeight": 25,
               "marginBottom": 8,
@@ -2477,7 +2477,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
             Object {
               "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
+              "fontSize": 21,
               "fontWeight": "400",
               "lineHeight": 25,
               "marginBottom": 8,
@@ -3200,7 +3200,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
             Object {
               "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
+              "fontSize": 21,
               "fontWeight": "400",
               "lineHeight": 25,
               "marginBottom": 8,
@@ -4060,7 +4060,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
             Object {
               "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
+              "fontSize": 21,
               "fontWeight": "400",
               "lineHeight": 25,
               "marginBottom": 8,
@@ -4752,7 +4752,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
             Object {
               "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
+              "fontSize": 21,
               "fontWeight": "400",
               "lineHeight": 25,
               "marginBottom": 8,
@@ -5612,7 +5612,7 @@ exports[`Article test on ios renders full article 1`] = `
             Object {
               "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
+              "fontSize": 21,
               "fontWeight": "400",
               "lineHeight": 25,
               "marginBottom": 8,
