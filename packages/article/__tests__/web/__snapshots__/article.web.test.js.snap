@@ -104,6 +104,7 @@ exports[`Article test on web renders article no flags 1`] = `
           <div
             style={
               Object {
+                "display": "table",
                 "height": 0,
                 "overflow": "hidden",
                 "paddingBottom": "56.25%",
@@ -372,6 +373,7 @@ exports[`Article test on web renders article no label 1`] = `
           <div
             style={
               Object {
+                "display": "table",
                 "height": 0,
                 "overflow": "hidden",
                 "paddingBottom": "56.25%",
@@ -723,6 +725,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
           <div
             style={
               Object {
+                "display": "table",
                 "height": 0,
                 "overflow": "hidden",
                 "paddingBottom": "56.25%",
@@ -972,6 +975,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
           <div
             style={
               Object {
+                "display": "table",
                 "height": 0,
                 "overflow": "hidden",
                 "paddingBottom": "56.25%",
@@ -1214,6 +1218,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
           <div
             style={
               Object {
+                "display": "table",
                 "height": 0,
                 "overflow": "hidden",
                 "paddingBottom": "56.25%",
@@ -1577,6 +1582,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
           <div
             style={
               Object {
+                "display": "table",
                 "height": 0,
                 "overflow": "hidden",
                 "paddingBottom": "56.25%",
@@ -1838,6 +1844,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
           <div
             style={
               Object {
+                "display": "table",
                 "height": 0,
                 "overflow": "hidden",
                 "paddingBottom": "56.25%",
@@ -2182,6 +2189,7 @@ exports[`Article test on web renders full article 1`] = `
           <div
             style={
               Object {
+                "display": "table",
                 "height": 0,
                 "overflow": "hidden",
                 "paddingBottom": "56.25%",
@@ -2455,6 +2463,7 @@ exports[`Article test on web renders full article 1`] = `
               <div
                 style={
                   Object {
+                    "display": "table",
                     "height": 0,
                     "overflow": "hidden",
                     "paddingBottom": "80%",
@@ -2559,6 +2568,7 @@ exports[`Article test on web renders full article 1`] = `
               <div
                 style={
                   Object {
+                    "display": "table",
                     "height": 0,
                     "overflow": "hidden",
                     "paddingBottom": "66.66666666666667%",

@@ -8,7 +8,8 @@ const TimesImage = ({ uri, aspectRatio, style }) => {
     wrapper: {
       height: 0,
       overflow: "hidden",
-      paddingBottom: `${100 / aspectRatio}%`
+      paddingBottom: `${100 / aspectRatio}%`,
+      display: "table"
     },
     placeholder: {
       position: "absolute",
