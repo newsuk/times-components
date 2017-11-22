@@ -8,11 +8,12 @@
     "test": "jest --bail --ci --coverage",
     "fmt": "prettier --write '**/*.+(js|json|md)'",
     "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
-    "lint": "eslint . && npm run prettier:diff"
+    "lint": "eslint . && yarn prettier:diff"
   },
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
+    "coverageDirectory": "<rootDir>/packages/tracking/coverage/",
     "transformIgnorePatterns": [
       "node_modules/(?!@times-components)/"
     ],
@@ -40,6 +41,7 @@
   "devDependencies": {
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
+    "babel-jest": "21.2.0",
     "babel-loader": "7.0.0",
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",

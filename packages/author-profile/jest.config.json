@@ -1,18 +1,18 @@
 {
   "preset": "react-native",
   "rootDir": "../../",
+  "coverageDirectory": "<rootDir>/packages/author-profile/coverage/native/",
   "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
   "testMatch": [
     "<rootDir>/packages/author-profile/__tests__/**.native.test.js"
   ],
   "collectCoverageFrom": [
-    "<rootDir>/packages/author-profile/*.js",
-    "!<rootDir>/packages/author-profile/**.web.js",
-    "!<rootDir>/packages/author-profile/fixture-generator.js",
-    "!<rootDir>/packages/author-profile/*.fructose.*.js",
-    "!<rootDir>/packages/author-profile/*.stories.js",
-    "!<rootDir>/packages/author-profile/__tests__/**.test.js"
+    "**/packages/author-profile/*.js",
+    "!**/packages/author-profile/**.web.js",
+    "!**/packages/author-profile/fixture-generator.js",
+    "!**/packages/author-profile/*.fructose.*.js",
+    "!**/packages/author-profile/*.stories.js",
+    "!**/packages/author-profile/__tests__/**.test.js"
   ],
-  "snapshotSerializers": ["enzyme-to-json/serializer"],
-  "transformIgnorePatterns": ["node_modules/(?!@times-components)/"]
+  "snapshotSerializers": ["enzyme-to-json/serializer"]
 }
