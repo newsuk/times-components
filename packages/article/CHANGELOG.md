@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.17.26"></a>
+## [0.17.26](https://github.com/newsuk/times-components/compare/@times-components/article@0.17.25...@times-components/article@0.17.26) (2017-11-22)
+
+
+### Bug Fixes
+
+* browser issue ([#408](https://github.com/newsuk/times-components/issues/408)) ([b64fd7b](https://github.com/newsuk/times-components/commit/b64fd7b))
+
+
+
+
 <a name="0.17.25"></a>
 ## [0.17.25](https://github.com/newsuk/times-components/compare/@times-components/article@0.17.24...@times-components/article@0.17.25) (2017-11-22)
 
