@@ -3,7 +3,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import { withTrackingContext, withTrackChildViews } from "./tracking";
 import storybookReporter from "./tealium/storybook-reporter";
-import Boxes from "./components/Boxes";
+import Boxes from "./storybook-components/Boxes";
 
 storiesOf("Tracking", module).add("Scroll depth tracking", () => {
   const boxes = [...Array(50).keys()].map(i => ({

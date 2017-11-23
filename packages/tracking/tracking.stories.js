@@ -9,8 +9,8 @@ import {
   withTrackChildViews
 } from "./tracking";
 import storybookReporter from "./tealium/storybook-reporter";
-import Box, { boxStyles } from "./components/Box";
-import Boxes from "./components/Boxes";
+import Box, { boxStyles } from "./storybook-components/Box";
+import Boxes from "./storybook-components/Boxes";
 
 const BoxWithButtons = props => (
   <View style={[boxStyles.box, { backgroundColor: props.color }]}>
