@@ -28,9 +28,11 @@ const withAdComposer = (children, section = "article") => (
 class ArticlePage extends React.Component {
   static renderRow(rowData) {
     if (rowData.type === "leadAsset") {
+      const [ratioWidth, ratioHeight] = rowData.data.crop.ratio.split(":");
+      const aspectRatio = ratioWidth / ratioHeight;
       return (
         <View testID="leadAsset" key={rowData.type} style={styles.leadAsset}>
-          <Image uri={rowData.data.crop.url} aspectRatio={16 / 9} />
+          <Image uri={rowData.data.crop.url} aspectRatio={aspectRatio} />
         </View>
       );
     } else if (rowData.type === "header") {
