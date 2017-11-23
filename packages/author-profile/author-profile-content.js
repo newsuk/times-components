@@ -73,55 +73,6 @@ class AuthorProfileContent extends React.Component {
     return (
       <FlatList
         testID="scroll-view"
-        accessibilityLabel="scroll-view"
-        data={data}
-        keyExtractor={item => item.id}
-        renderItem={({ item, index }) => (
-          <AuthorProfileItem
-            {...item}
-            style={styles.padding}
-            testID={`articleList-${index}`}
-            onPress={e => onArticlePress(e, { id: item.id, url: item.url })}
-          />
-        )}
-        initialListSize={pageSize}
-        scrollRenderAheadDistance={2}
-        pageSize={pageSize}
-        ListHeaderComponent={
-          <View>
-            <AuthorProfileAuthorHead
-              isLoading={isLoading}
-              name={name}
-              bio={biography}
-              uri={uri}
-              title={jobTitle}
-              twitter={twitter}
-              onTwitterLinkPress={onTwitterLinkPress}
-            />
-            {paginationComponent()}
-          </View>
-        }
-        ListFooterComponent={paginationComponent(true)}
-        ItemSeparatorComponent={() => (
-          <View style={styles.padding}>
-            <AuthorProfileItemSeparator />
-          </View>
-        )}
-      />
-    );
-
-    const data = articlesLoading
-      ? Array(pageSize)
-          .fill()
-          .map((number, id) => ({
-            id,
-            isLoading: true
-          }))
-      : articles;
-
-    return (
-      <FlatList
-        testID="scroll-view"
         accessibilityID="scroll-view"
         data={data}
         keyExtractor={item => item.id}

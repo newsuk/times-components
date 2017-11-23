@@ -55,6 +55,7 @@ exports[`Article test on ios renders article no flags 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
+  testID="listView"
 >
   <View>
     <View
@@ -64,6 +65,7 @@ exports[`Article test on ios renders article no flags 1`] = `
           "marginBottom": 10,
         }
       }
+      testID="leadAsset"
     >
       <View
         aspectRatio={1.7777777777777777}
@@ -815,6 +817,7 @@ exports[`Article test on ios renders article no label 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
+  testID="listView"
 >
   <View>
     <View
@@ -824,6 +827,7 @@ exports[`Article test on ios renders article no label 1`] = `
           "marginBottom": 10,
         }
       }
+      testID="leadAsset"
     >
       <View
         aspectRatio={1.7777777777777777}
@@ -1682,6 +1686,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
+  testID="listView"
 >
   <View>
     <View
@@ -1691,6 +1696,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
           "marginBottom": 10,
         }
       }
+      testID="leadAsset"
     >
       <View
         aspectRatio={1.7777777777777777}
@@ -2410,6 +2416,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
+  testID="listView"
 >
   <View>
     <View
@@ -2419,6 +2426,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
           "marginBottom": 10,
         }
       }
+      testID="leadAsset"
     >
       <View
         aspectRatio={1.7777777777777777}
@@ -3118,6 +3126,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
+  testID="listView"
 >
   <View>
     <View
@@ -3127,6 +3136,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
           "marginBottom": 10,
         }
       }
+      testID="leadAsset"
     >
       <View
         aspectRatio={1.7777777777777777}
@@ -3997,6 +4007,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
+  testID="listView"
 >
   <View>
     <View
@@ -4006,6 +4017,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
           "marginBottom": 10,
         }
       }
+      testID="leadAsset"
     >
       <View
         aspectRatio={1.7777777777777777}
@@ -4737,6 +4749,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
+  testID="listView"
 >
   <View>
     <View
@@ -4746,6 +4759,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
           "marginBottom": 10,
         }
       }
+      testID="leadAsset"
     >
       <View
         aspectRatio={1.7777777777777777}
@@ -5584,6 +5598,7 @@ exports[`Article test on ios renders full article 1`] = `
   renderRow={[Function]}
   renderScrollComponent={[Function]}
   scrollRenderAheadDistance={10}
+  testID="listView"
 >
   <View>
     <View
@@ -5593,6 +5608,7 @@ exports[`Article test on ios renders full article 1`] = `
           "marginBottom": 10,
         }
       }
+      testID="leadAsset"
     >
       <View
         aspectRatio={1.7777777777777777}

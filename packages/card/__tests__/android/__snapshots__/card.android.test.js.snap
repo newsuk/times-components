@@ -922,6 +922,7 @@ exports[`Card test on android renders vertical by default 1`] = `
           </Text>
         </Text>
         <Text
+          accessibilityLabel="datePublication"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
@@ -1041,6 +1042,7 @@ exports[`Card test on android renders without image 1`] = `
           </Text>
         </Text>
         <Text
+          accessibilityLabel="datePublication"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
@@ -1160,6 +1162,7 @@ exports[`Card test on android renders without image url 1`] = `
           </Text>
         </Text>
         <Text
+          accessibilityLabel="datePublication"
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
