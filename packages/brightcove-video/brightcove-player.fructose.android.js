@@ -18,6 +18,7 @@ withComponent(
   "video with external controls",
   async fructose => {
     beforeEach(async () => {
+      await driver.resetApp();
       await fructose.loadComponent();
     });
 
