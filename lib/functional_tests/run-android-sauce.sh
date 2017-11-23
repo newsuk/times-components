@@ -7,7 +7,6 @@ popd
 npm run fetch-fonts
 npx rnstl --searchDir ./packages --pattern './*/*.fructose.android.js' --outputFile ./fructose/components.js
 
-
 curl -u $SAUCE_USERNAME:$SAUCE_KEY\
     -X POST \
     -H "Content-Type: application/octet-stream"\

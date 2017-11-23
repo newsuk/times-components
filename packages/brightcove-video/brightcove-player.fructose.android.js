@@ -49,7 +49,7 @@ withComponent(
         await driver.waitForElementByXPath('//*[@text="play"]', 2000);
         const e = await driver.elementByXPath('//*[@text="play"]');
         await driver.tapElement(e);
-        await driver.waitForElementByXPath('//*[@text="0:08"]', 10000);
+        await driver.waitForElementByXPath('//*[@text="0:08"]', 15000);
       },
       150000
     );
