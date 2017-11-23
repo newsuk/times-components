@@ -1,6 +1,7 @@
 {
   "preset": "react-native",
   "rootDir": "../../",
+  "coverageDirectory": "<rootDir>/packages/article-byline/coverage/native/",
   "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
   "testMatch": ["<rootDir>/packages/article-byline/__tests__/**.native.test.js"]
 }

@@ -1,6 +1,7 @@
 {
   "preset": "react-native",
   "rootDir": "../../",
+  "coverageDirectory": "<rootDir>/packages/markup/coverage/web/",
   "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
   "testMatch": ["<rootDir>/packages/markup/__tests__/markup.web.test.js"],
   "moduleNameMapper": {

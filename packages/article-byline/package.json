@@ -1,17 +1,17 @@
 {
   "name": "@times-components/article-byline",
-  "version": "0.7.15",
+  "version": "0.7.18",
   "description": "Article byline information",
   "main": "article-byline",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
-    "test:watch": "npm run test:native -- --bail --verbose --watchAll",
+    "test:watch": "yarn test:native --bail --verbose --watchAll",
     "test:native": "jest --config='./jest.config.json'",
     "test:web": "jest --config='./jest.config.web.json'",
-    "test": "npm run test:native -- --ci --bail && npm run test:web -- --ci --bail --coverage",
+    "test": "yarn test:native --ci --bail --coverage && yarn test:web --ci --bail --coverage",
     "fmt": "prettier --write '**/*.+(js|json|md)'",
     "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
-    "lint": "eslint . && npm run prettier:diff"
+    "lint": "eslint . && yarn prettier:diff"
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,7 @@
   "devDependencies": {
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
+    "babel-jest": "21.2.0",
     "babel-loader": "7.0.0",
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
@@ -53,8 +54,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/link": "0.10.6",
-    "@times-components/markup": "0.12.8",
+    "@times-components/link": "0.10.8",
+    "@times-components/markup": "0.12.11",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.7"
   },

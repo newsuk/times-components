@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.6"></a>
+## [0.1.6](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.1.5...@times-components/gradient@0.1.6) (2017-11-22)
+
+
+
+
+<a name="0.1.5"></a>
+## [0.1.5](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.1.4...@times-components/gradient@0.1.5) (2017-11-20)
+
+
+
+
 <a name="0.1.4"></a>
 ## [0.1.4](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.1.3...@times-components/gradient@0.1.4) (2017-11-16)
 

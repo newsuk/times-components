@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.0.9"></a>
+## [0.0.9](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.0.8...@times-components/watermark@0.0.9) (2017-11-22)
+
+
+### Bug Fixes
+
+* watermark svg android perf ([#393](https://github.com/newsuk/times-components/issues/393)) ([ba6ce8e](https://github.com/newsuk/times-components/commit/ba6ce8e))
+
+
+
+
+<a name="0.0.8"></a>
+## [0.0.8](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.0.7...@times-components/watermark@0.0.8) (2017-11-22)
+
+
+
+
+<a name="0.0.7"></a>
+## [0.0.7](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.0.6...@times-components/watermark@0.0.7) (2017-11-20)
+
+
+
+
 <a name="0.0.6"></a>
 ## [0.0.6](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.0.5...@times-components/watermark@0.0.6) (2017-11-13)
 

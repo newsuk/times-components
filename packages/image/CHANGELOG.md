@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.9"></a>
+## [1.6.9](https://github.com/newsuk/times-components/compare/@times-components/image@1.6.8...@times-components/image@1.6.9) (2017-11-22)
+
+
+### Bug Fixes
+
+* browser issue ([#408](https://github.com/newsuk/times-components/issues/408)) ([b64fd7b](https://github.com/newsuk/times-components/commit/b64fd7b))
+
+
+
+
+<a name="1.6.8"></a>
+## [1.6.8](https://github.com/newsuk/times-components/compare/@times-components/image@1.6.7...@times-components/image@1.6.8) (2017-11-22)
+
+
+
+
+<a name="1.6.7"></a>
+## [1.6.7](https://github.com/newsuk/times-components/compare/@times-components/image@1.6.6...@times-components/image@1.6.7) (2017-11-20)
+
+
+
+
+<a name="1.6.6"></a>
+## [1.6.6](https://github.com/newsuk/times-components/compare/@times-components/image@1.6.5...@times-components/image@1.6.6) (2017-11-20)
+
+
+### Bug Fixes
+
+* remove JS ([#403](https://github.com/newsuk/times-components/issues/403)) ([2b30b08](https://github.com/newsuk/times-components/commit/2b30b08))
+
+
+
+
 <a name="1.6.5"></a>
 ## [1.6.5](https://github.com/newsuk/times-components/compare/@times-components/image@1.6.4...@times-components/image@1.6.5) (2017-11-17)
 

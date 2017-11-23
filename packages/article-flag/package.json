@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-flag",
-  "version": "0.7.6",
+  "version": "0.7.8",
   "description": "The article flag (sponsored, new, updated, etc)",
   "main": "article-flag",
   "scripts": {
@@ -9,11 +9,12 @@
     "test": "jest --bail --ci --coverage",
     "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
     "fmt": "prettier --write '**/*.+(js|json|md)'",
-    "lint": "eslint . && npm run prettier:diff"
+    "lint": "eslint . && yarn prettier:diff"
   },
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
+    "coverageDirectory": "<rootDir>/packages/article-flag/coverage/",
     "transformIgnorePatterns": [
       "node_modules/(?!@times-components)/"
     ],
@@ -41,6 +42,7 @@
   "devDependencies": {
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
+    "babel-jest": "21.2.0",
     "babel-loader": "7.0.0",
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",

@@ -1,5 +1,6 @@
 {
   "rootDir": "../../",
+  "coverageDirectory": "<rootDir>/packages/pagination/coverage/web/",
   "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
   "testEnvironment": "jsdom",
   "testMatch": ["<rootDir>/packages/pagination/__tests__/**.web.test.js"],

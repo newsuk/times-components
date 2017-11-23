@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ad",
-  "version": "0.4.12",
+  "version": "0.4.15",
   "description": "Ad component",
   "main": "ad",
   "scripts": {
@@ -9,11 +9,12 @@
     "test": "jest --bail --ci --coverage",
     "fmt": "prettier --write '**/*.+(js|json|md)'",
     "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
-    "lint": "eslint . && npm run prettier:diff"
+    "lint": "eslint . && yarn prettier:diff"
   },
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
+    "coverageDirectory": "<rootDir>/packages/ad/coverage/",
     "transformIgnorePatterns": [
       "node_modules/(?!@times-components)/"
     ],
@@ -42,6 +43,7 @@
   "devDependencies": {
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
+    "babel-jest": "21.2.0",
     "babel-loader": "7.0.0",
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
@@ -62,7 +64,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/watermark": "0.0.6",
+    "@times-components/watermark": "0.0.9",
     "prop-types": "15.6.0",
     "react-broadcast": "0.5.2",
     "react-native-web": "0.1.7"

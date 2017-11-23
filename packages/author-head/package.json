@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-head",
-  "version": "0.9.11",
+  "version": "0.9.16",
   "main": "author-head",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -8,11 +8,12 @@
     "test": "jest --bail --ci --coverage",
     "fmt": "prettier --write '**/*.+(js|json|md)'",
     "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
-    "lint": "eslint . && npm run prettier:diff"
+    "lint": "eslint . && yarn prettier:diff"
   },
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
+    "coverageDirectory": "<rootDir>/packages/author-head/coverage/",
     "transformIgnorePatterns": [
       "node_modules/(?!@times-components)/"
     ],
@@ -40,6 +41,7 @@
   "devDependencies": {
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
+    "babel-jest": "21.2.0",
     "babel-loader": "7.0.0",
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
@@ -62,10 +64,10 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/image": "1.6.5",
-    "@times-components/link": "0.10.6",
-    "@times-components/markup": "0.12.8",
-    "@times-components/tracking": "0.2.6",
+    "@times-components/image": "1.6.9",
+    "@times-components/link": "0.10.8",
+    "@times-components/markup": "0.12.11",
+    "@times-components/tracking": "0.2.8",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.7"
   },

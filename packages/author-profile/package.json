@@ -1,20 +1,17 @@
 {
   "name": "@times-components/author-profile",
-  "version": "0.24.5",
+  "version": "0.24.10",
   "description": "Author info along with articles they have written",
   "main": "author-profile",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
-    "test:watch": "npm run test:native -- --bail --verbose --watchAll",
+    "test:watch": "yarn test:native --bail --verbose --watchAll",
     "test:native": "jest --config='./jest.config.json'",
     "test:web": "jest --config='./jest.config.web.json'",
-    "test": "npm run test:native -- --ci --bail --coverage && npm run test:web -- --ci --bail --coverage",
+    "test": "yarn test:native --ci --bail --coverage && yarn test:web --ci --bail --coverage",
     "fmt": "prettier --write '**/*.+(js|json|md)'",
     "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
-    "lint": "eslint . && npm run prettier:diff"
-  },
-  "jest": {
-    "rootDir": "../../"
+    "lint": "eslint . && yarn prettier:diff"
   },
   "repository": {
     "type": "git",
@@ -36,6 +33,7 @@
   "devDependencies": {
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
+    "babel-jest": "21.2.0",
     "babel-loader": "7.0.0",
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
@@ -61,14 +59,13 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/author-head": "0.9.11",
-    "@times-components/card": "0.10.8",
-    "@times-components/gradient": "0.1.4",
-    "@times-components/link": "0.10.6",
-    "@times-components/pagination": "0.10.12",
-    "@times-components/provider": "0.15.3",
-    "@times-components/tracking": "0.2.6",
-    "jest-cli": "20.0.4",
+    "@times-components/author-head": "0.9.16",
+    "@times-components/card": "0.10.13",
+    "@times-components/gradient": "0.1.6",
+    "@times-components/link": "0.10.8",
+    "@times-components/pagination": "0.10.14",
+    "@times-components/provider": "0.15.5",
+    "@times-components/tracking": "0.2.8",
     "lodash.get": "4.4.2",
     "lodash.merge": "4.6.0",
     "prop-types": "15.6.0",

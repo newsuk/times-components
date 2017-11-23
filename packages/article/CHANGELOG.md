@@ -3,6 +3,51 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.17.26"></a>
+## [0.17.26](https://github.com/newsuk/times-components/compare/@times-components/article@0.17.25...@times-components/article@0.17.26) (2017-11-22)
+
+
+### Bug Fixes
+
+* browser issue ([#408](https://github.com/newsuk/times-components/issues/408)) ([b64fd7b](https://github.com/newsuk/times-components/commit/b64fd7b))
+
+
+
+
+<a name="0.17.25"></a>
+## [0.17.25](https://github.com/newsuk/times-components/compare/@times-components/article@0.17.24...@times-components/article@0.17.25) (2017-11-22)
+
+
+### Bug Fixes
+
+* watermark svg android perf ([#393](https://github.com/newsuk/times-components/issues/393)) ([ba6ce8e](https://github.com/newsuk/times-components/commit/ba6ce8e))
+
+
+
+
+<a name="0.17.24"></a>
+## [0.17.24](https://github.com/newsuk/times-components/compare/@times-components/article@0.17.23...@times-components/article@0.17.24) (2017-11-22)
+
+
+
+
+<a name="0.17.23"></a>
+## [0.17.23](https://github.com/newsuk/times-components/compare/@times-components/article@0.17.22...@times-components/article@0.17.23) (2017-11-20)
+
+
+
+
+<a name="0.17.22"></a>
+## [0.17.22](https://github.com/newsuk/times-components/compare/@times-components/article@0.17.21...@times-components/article@0.17.22) (2017-11-20)
+
+
+### Bug Fixes
+
+* remove JS ([#403](https://github.com/newsuk/times-components/issues/403)) ([2b30b08](https://github.com/newsuk/times-components/commit/2b30b08))
+
+
+
+
 <a name="0.17.21"></a>
 ## [0.17.21](https://github.com/newsuk/times-components/compare/@times-components/article@0.17.20...@times-components/article@0.17.21) (2017-11-18)
 
