@@ -66,7 +66,8 @@
     "@times-components/caption": "0.7.9",
     "@times-components/image": "1.6.9",
     "prop-types": "15.6.0",
-    "react-native-web": "0.1.7"
+    "react-native-web": "0.1.7",
+    "styled-components": "2.2.3"
   },
   "peerDependencies": {
     "react": ">=16",
