@@ -4,7 +4,7 @@ import AuthorProfileAuthorHead from "./author-profile-author-head";
 import AuthorProfilePagination from "./author-profile-pagination";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
-import {propTypes, defaultProps} from "./author-profile-content-prop-types";
+import { propTypes, defaultProps } from "./author-profile-content-prop-types";
 
 const styles = StyleSheet.create({
   padding: {

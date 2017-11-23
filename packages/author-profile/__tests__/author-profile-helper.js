@@ -26,7 +26,7 @@ const props = {
   onArticlePress: () => {},
   analyticsStream: () => {},
   onViewed: () => {},
-  getChildList: () => {},
+  getChildList: () => {}
 };
 
 const pagedResult = (skip, first) => ({
