@@ -9,9 +9,12 @@ export const propTypes = {
   articlesLoading: PropTypes.bool,
   isLoading: PropTypes.bool,
   onArticlePress: PropTypes.func,
-  onViewed: PropTypes.func.isRequired
+  onViewed: PropTypes.func,
+  receiveChildList: PropTypes.func,
 };
 
 export const defaultProps = {
-  articles: []
+  articles: [],
+  onViewed: () => {},
+  receiveChildList: () => {}
 };

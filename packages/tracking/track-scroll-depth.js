@@ -15,12 +15,12 @@ export default (
 ) => {
   const componentName = getDisplayName(WrappedComponent);
 
-  class WithTrackChildView extends Component {
+  class WithTrackScrollDepth extends Component {
     constructor(props, context) {
       super(props, context);
       this.viewed = new Set();
       this.handleChildViewed = this.handleChildViewed.bind(this);
-      this.getChildList = this.getChildList.bind(this);
+      this.receiveChildList = this.receiveChildList.bind(this);
       this.childList = [];
     }
 
@@ -38,7 +38,7 @@ export default (
       });
     }
 
-    getChildList(childList) {
+    receiveChildList(childList) {
       this.childList = childList;
     }
 
@@ -63,17 +63,17 @@ export default (
         <WrappedComponent
           {...this.props}
           onViewed={this.handleChildViewed}
-          getChildList={this.getChildList}
+          receiveChildList={this.receiveChildList}
         />
       );
     }
   }
 
-  WithTrackChildView.contextTypes = trackingContextTypes;
-  WithTrackChildView.displayName = `WithTrackChildView(${componentName})`;
-  WithTrackChildView.propTypes = WrappedComponent.propTypes;
-  WithTrackChildView.defaultProps = WrappedComponent.defaultProps;
-  hoistNonReactStatic(WithTrackChildView, WrappedComponent);
+  WithTrackScrollDepth.contextTypes = trackingContextTypes;
+  WithTrackScrollDepth.displayName = `WithTrackScrollDepth(${componentName})`;
+  WithTrackScrollDepth.propTypes = WrappedComponent.propTypes;
+  WithTrackScrollDepth.defaultProps = WrappedComponent.defaultProps;
+  hoistNonReactStatic(WithTrackScrollDepth, WrappedComponent);
 
-  return WithTrackChildView;
+  return WithTrackScrollDepth;
 };

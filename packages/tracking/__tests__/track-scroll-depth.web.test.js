@@ -2,7 +2,7 @@ import { View, Text } from "react-native";
 import React from "react";
 import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
-import { withTrackChildViews } from "../tracking";
+import { withTrackScrollDepth } from "../tracking";
 import withTestContext from "./test-tracking-context";
 import sharedTrackingTests from "./shared-tracking-tests";
 
@@ -42,13 +42,13 @@ class ListComponent extends React.Component {
           someValue: PropTypes.string
         })
       ),
-      getChildList: PropTypes.func
+      receiveChildList: PropTypes.func
     };
   }
   static get defaultProps() {
     return {
       items: [{ someKey: "1", someValue: "one" }],
-      getChildList: () => {}
+      receiveChildList: () => {}
     };
   }
   static get someStatic() {
@@ -56,7 +56,7 @@ class ListComponent extends React.Component {
   }
   constructor(props) {
     super(props);
-    props.getChildList(props.items);
+    props.receiveChildList(props.items);
   }
   render() {
     return (
@@ -69,7 +69,7 @@ class ListComponent extends React.Component {
   }
 }
 
-describe("WithTrackChildViews", () => {
+describe("WithTrackScrollDepth", () => {
   let realGetElementById;
 
   beforeEach(() => {
@@ -90,7 +90,7 @@ describe("WithTrackChildViews", () => {
   it("tracks child views", () => {
     const reporter = jest.fn();
     const ListWithChildTracking = withTestContext(
-      withTrackChildViews(ListComponent, {
+      withTrackScrollDepth(ListComponent, {
         childIdPropKey: "someKey"
       }),
       { trackingObject: "TestObject" }
@@ -115,7 +115,7 @@ describe("WithTrackChildViews", () => {
   it("accepts component name override", () => {
     const reporter = jest.fn();
     const ListWithChildTracking = withTestContext(
-      withTrackChildViews(ListComponent, {
+      withTrackScrollDepth(ListComponent, {
         childIdPropKey: "someKey",
         trackingName: "SomeItem"
       })
@@ -140,7 +140,7 @@ describe("WithTrackChildViews", () => {
   it("accepts action name override", () => {
     const reporter = jest.fn();
     const ListWithChildTracking = withTestContext(
-      withTrackChildViews(ListComponent, {
+      withTrackScrollDepth(ListComponent, {
         childIdPropKey: "someKey",
         actionName: "Scrolled"
       })
@@ -165,7 +165,7 @@ describe("WithTrackChildViews", () => {
   it("applies tracking attrs", () => {
     const reporter = jest.fn();
     const ListWithChildTracking = withTestContext(
-      withTrackChildViews(ListComponent, {
+      withTrackScrollDepth(ListComponent, {
         childIdPropKey: "someKey",
         getAttrs: props => ({
           id: props.someKey,
@@ -200,7 +200,7 @@ describe("WithTrackChildViews", () => {
   it("can track scroll events", () => {
     const reporter = jest.fn();
     const ListWithChildTracking = withTestContext(
-      withTrackChildViews(ListComponent, {
+      withTrackScrollDepth(ListComponent, {
         childIdPropKey: "someKey",
         actionName: "Scrolled",
         getAttrs: props => ({ depth: (props.index + 1) / props.total * 100 })
@@ -234,7 +234,7 @@ describe("WithTrackChildViews", () => {
     );
 
     const ListWithChildTracking = withTestContext(
-      withTrackChildViews(ListComponent, {
+      withTrackScrollDepth(ListComponent, {
         childIdPropKey: "someKey",
         getChildren: props => props.items
       })
@@ -247,5 +247,5 @@ describe("WithTrackChildViews", () => {
     expect(disconnectSpy).toHaveBeenCalled();
   });
 
-  sharedTrackingTests(withTrackChildViews);
+  sharedTrackingTests(withTrackScrollDepth);
 });

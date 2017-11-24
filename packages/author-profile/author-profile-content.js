@@ -1,5 +1,6 @@
 import React from "react";
 import { FlatList, StyleSheet, View } from "react-native";
+import { withTrackScrollDepth } from "@times-components/tracking";
 import AuthorProfileAuthorHead from "./author-profile-author-head";
 import AuthorProfilePagination from "./author-profile-pagination";
 import AuthorProfileItem from "./author-profile-item";
@@ -34,6 +35,7 @@ class AuthorProfileContent extends React.Component {
         count: nextProps.count
       });
     }
+    this.props.receiveChildList(nextProps.articles);
   }
 
   onViewableItemsChanged(info) {
@@ -134,4 +136,7 @@ class AuthorProfileContent extends React.Component {
 
 AuthorProfileContent.propTypes = propTypes;
 AuthorProfileContent.defaultProps = defaultProps;
-export default AuthorProfileContent;
+export default withTrackScrollDepth(AuthorProfileContent, {
+  childIdPropKey: "id",
+  actionName: "Scrolled"
+});

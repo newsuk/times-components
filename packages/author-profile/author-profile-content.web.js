@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
+import { withTrackScrollDepth } from "@times-components/tracking";
 import AuthorProfileAuthorHead from "./author-profile-author-head";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
@@ -34,7 +35,8 @@ const AuthorProfileContent = ({
   page,
   pageSize,
   twitter,
-  uri
+  uri,
+  receiveChildList
 }) => {
   const paginationComponent = (hideResults = false) => (
     <AuthorProfilePagination
@@ -55,6 +57,8 @@ const AuthorProfileContent = ({
           isLoading: true
         }))
     : articles;
+
+  receiveChildList(articles);
 
   return (
     <View>
@@ -99,4 +103,7 @@ const AuthorProfileContent = ({
 };
 
 AuthorProfileContent.propTypes = propTypes;
-export default AuthorProfileContent;
+export default withTrackScrollDepth(AuthorProfileContent, {
+  childIdPropKey: "id",
+  actionName: "Scrolled"
+});

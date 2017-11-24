@@ -38,10 +38,13 @@ it("renders profile articles and invoke callback on article press", done => {
       pageSize={3}
       onTwitterLinkPress={() => {}}
       onArticlePress={() => done()}
+      onViewed={() => {}}
+      receiveChildList={() => (results.data.author.articles.list)}
     />
   );
 
   component
+    .dive()
     .find(AuthorProfileItem)
     .at(0)
     .dive()

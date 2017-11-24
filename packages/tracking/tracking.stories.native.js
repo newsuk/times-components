@@ -18,7 +18,7 @@ class Boxes extends React.Component {
   constructor(props) {
     super(props);
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
-    this.props.getChildList(this.props.boxes);
+    this.props.receiveChildList(this.props.boxes);
   }
   onViewableItemsChanged(info) {
     if (info.changed) {
@@ -46,11 +46,11 @@ class Boxes extends React.Component {
 Boxes.propTypes = {
   boxes: PropTypes.arrayOf(PropTypes.object).isRequired,
   onViewed: PropTypes.func,
-  getChildList: PropTypes.func
+  receiveChildList: PropTypes.func
 };
 Boxes.defaultProps = {
   onViewed: () => {},
-  getChildList: () => {}
+  receiveChildList: () => {}
 };
 
 storiesOf("Tracking", module).add("Scroll depth tracking", () => {

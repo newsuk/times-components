@@ -24,9 +24,7 @@ const props = {
   slug: "fiona-hamilton",
   onTwitterLinkPress: () => {},
   onArticlePress: () => {},
-  analyticsStream: () => {},
-  onViewed: () => {},
-  getChildList: () => {}
+  analyticsStream: () => {}
 };
 
 const pagedResult = (skip, first) => ({

@@ -12,13 +12,13 @@ class ListComponent extends React.Component {
           someValue: PropTypes.string
         })
       ),
-      getChildList: PropTypes.func
+      receiveChildList: PropTypes.func
     };
   }
   static get defaultProps() {
     return {
       items: [{ someKey: "1", someValue: "one" }],
-      getChildList: () => {}
+      receiveChildList: () => {}
     };
   }
   static get someStatic() {
@@ -27,7 +27,7 @@ class ListComponent extends React.Component {
   constructor(props, context) {
     super(props, context);
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
-    props.getChildList(props.items);
+    props.receiveChildList(props.items);
   }
   onViewableItemsChanged({ info }) {
     const filtered = info.changed.filter(item => item.isViewable);

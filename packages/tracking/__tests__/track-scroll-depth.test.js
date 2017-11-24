@@ -2,18 +2,18 @@ import React from "react";
 import renderer from "react-test-renderer";
 import Enzyme, { shallow } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
-import { withTrackChildViews } from "../tracking";
+import { withTrackScrollDepth } from "../tracking";
 import withTestContext from "./test-tracking-context";
 import sharedTrackingTests from "./shared-tracking-tests";
-import ListComponent from "./ListComponent";
+import ListComponent from "./list-component";
 
 Enzyme.configure({ adapter: new React16Adapter() });
 
-describe("WithTrackChildViews", () => {
+describe("WithTrackScrollDepth", () => {
   it("tracks child views", () => {
     const reporter = jest.fn();
     const ListWithChildTracking = withTestContext(
-      withTrackChildViews(ListComponent, {
+      withTrackScrollDepth(ListComponent, {
         childIdPropKey: "someKey",
         getChildren: props => props.items
       }),
@@ -38,7 +38,7 @@ describe("WithTrackChildViews", () => {
   it("accepts component name override", () => {
     const reporter = jest.fn();
     const ListWithChildTracking = withTestContext(
-      withTrackChildViews(ListComponent, {
+      withTrackScrollDepth(ListComponent, {
         childIdPropKey: "someKey",
         getChildren: props => props.items,
         trackingName: "SomeItem"
@@ -90,7 +90,7 @@ describe("WithTrackChildViews", () => {
   it("accepts action name override", () => {
     const reporter = jest.fn();
     const ListWithChildTracking = withTestContext(
-      withTrackChildViews(ListComponent, {
+      withTrackScrollDepth(ListComponent, {
         childIdPropKey: "someKey",
         getChildren: props => props.items,
         actionName: "Scrolled"
@@ -141,7 +141,7 @@ describe("WithTrackChildViews", () => {
   it("applies tracking attrs", () => {
     const reporter = jest.fn();
     const ListWithChildTracking = withTestContext(
-      withTrackChildViews(ListComponent, {
+      withTrackScrollDepth(ListComponent, {
         childIdPropKey: "someKey",
         getChildren: props => props.items,
         getAttrs: props => ({
@@ -197,7 +197,7 @@ describe("WithTrackChildViews", () => {
   it("can track scroll events", () => {
     const reporter = jest.fn();
     const ListWithChildTracking = withTestContext(
-      withTrackChildViews(ListComponent, {
+      withTrackScrollDepth(ListComponent, {
         childIdPropKey: "someKey",
         actionName: "Scrolled",
         getChildren: props => props.items,
@@ -247,5 +247,5 @@ describe("WithTrackChildViews", () => {
     );
   });
 
-  sharedTrackingTests(withTrackChildViews);
+  sharedTrackingTests(withTrackScrollDepth);
 });

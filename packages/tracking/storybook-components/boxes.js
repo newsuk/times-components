@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Text } from "react-native";
-import Box from "./Box";
+import Box from "./box";
 
 export default class Boxes extends React.Component {
   componentDidMount() {
-    this.props.getChildList(this.props.boxes);
+    this.props.receiveChildList(this.props.boxes);
   }
   render() {
     return this.props.boxes.map(item => (
@@ -17,8 +17,8 @@ export default class Boxes extends React.Component {
 }
 Boxes.propTypes = {
   boxes: PropTypes.arrayOf(PropTypes.object).isRequired,
-  getChildList: PropTypes.func
+  receiveChildList: PropTypes.func
 };
 Boxes.defaultProps = {
-  getChildList: () => {}
+  receiveChildList: () => {}
 };

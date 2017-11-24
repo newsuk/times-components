@@ -3,10 +3,7 @@ import PropTypes from "prop-types";
 import AuthorHead from "@times-components/author-head";
 import { withPageState } from "@times-components/pagination";
 import { ArticleListProvider } from "@times-components/provider";
-import {
-  withTrackingContext,
-  withTrackChildViews
-} from "@times-components/tracking";
+import { withTrackingContext } from "@times-components/tracking";
 import get from "lodash.get";
 import AuthorProfileError from "./author-profile-error";
 import AuthorProfileContent from "./author-profile-content";
@@ -20,9 +17,7 @@ const AuthorProfile = ({
   onTwitterLinkPress,
   page: initPage,
   pageSize: initPageSize,
-  slug,
-  getChildList,
-  onViewed
+  slug
 }) => {
   if (error) {
     return <AuthorProfileError {...error} />;
@@ -55,7 +50,6 @@ const AuthorProfile = ({
             publishedTime: new Date(article.publishedTime)
           })
         );
-        getChildList(articlesWithPublishTime);
         return (
           <AuthorProfileContent
             isLoading={isLoading}
@@ -73,7 +67,6 @@ const AuthorProfile = ({
             articlesLoading={articlesLoading}
             articles={articlesWithPublishTime}
             onArticlePress={onArticlePress}
-            onViewed={onViewed}
           />
         );
       }}
@@ -105,22 +98,14 @@ AuthorProfile.propTypes = {
   pageSize: PropTypes.number,
   onTwitterLinkPress: PropTypes.func,
   onArticlePress: PropTypes.func,
-  getChildList: PropTypes.func.isRequired,
-  onViewed: PropTypes.func.isRequired,
   slug: PropTypes.string.isRequired
 };
 
-export default withTrackingContext(
-  withTrackChildViews(AuthorProfile, {
-    childIdPropKey: "id",
-    actionName: "Scrolled"
+export default withTrackingContext(AuthorProfile, {
+  getAttrs: ({ author, page, pageSize } = {}) => ({
+    authorName: author && author.name,
+    page,
+    pageSize
   }),
-  {
-    getAttrs: ({ author, page, pageSize } = {}) => ({
-      authorName: author && author.name,
-      page,
-      pageSize
-    }),
-    trackingObject: "AuthorProfile"
-  }
-);
+  trackingObject: "AuthorProfile"
+});

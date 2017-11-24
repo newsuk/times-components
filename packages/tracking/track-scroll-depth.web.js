@@ -16,10 +16,10 @@ export default (
 ) => {
   const componentName = getDisplayName(WrappedComponent);
 
-  class WithTrackChildView extends Component {
+  class WithTrackScrollDepth extends Component {
     constructor(props, context) {
       super(props, context);
-      this.getChildList = this.getChildList.bind(this);
+      this.receiveChildList = this.receiveChildList.bind(this);
       this.childData = {};
       this.viewed = new Set();
       if (window.IntersectionObserver) {
@@ -77,20 +77,21 @@ export default (
       });
     }
 
-    getChildList(childList) {
+    receiveChildList(childList) {
       this.childList = childList;
     }
 
     observeChildren() {
-      this.childList.forEach((props, index) => {
-        if (!this.childData[props[childIdPropKey]]) {
-          this.observeChild({
-            ...props,
-            index,
-            total: this.childList.length
-          });
-        }
-      });
+      if (this.childList)
+        this.childList.forEach((props, index) => {
+          if (!this.childData[props[childIdPropKey]]) {
+            this.observeChild({
+              ...props,
+              index,
+              total: this.childList.length
+            });
+          }
+        });
     }
 
     observeChild(props) {
@@ -103,16 +104,19 @@ export default (
 
     render() {
       return (
-        <WrappedComponent {...this.props} getChildList={this.getChildList} />
+        <WrappedComponent
+          {...this.props}
+          receiveChildList={this.receiveChildList}
+        />
       );
     }
   }
 
-  WithTrackChildView.contextTypes = trackingContextTypes;
-  WithTrackChildView.displayName = `WithTrackChildView(${componentName})`;
-  WithTrackChildView.propTypes = WrappedComponent.propTypes;
-  WithTrackChildView.defaultProps = WrappedComponent.defaultProps;
-  hoistNonReactStatic(WithTrackChildView, WrappedComponent);
+  WithTrackScrollDepth.contextTypes = trackingContextTypes;
+  WithTrackScrollDepth.displayName = `WithTrackScrollDepth(${componentName})`;
+  WithTrackScrollDepth.propTypes = WrappedComponent.propTypes;
+  WithTrackScrollDepth.defaultProps = WrappedComponent.defaultProps;
+  hoistNonReactStatic(WithTrackScrollDepth, WrappedComponent);
 
-  return WithTrackChildView;
+  return WithTrackScrollDepth;
 };

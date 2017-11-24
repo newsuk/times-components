@@ -14,7 +14,7 @@ import AuthorProfile from "./author-profile";
 import AuthorProfileContent from "./author-profile-content";
 import authorProfileFixture from "./fixtures/author-profile.json";
 import articleListFixture from "./fixtures/article-list.json";
-import storybookReporter from "../tracking/tealium/storybook-reporter";
+import storybookReporter from "../../storybook/storybook-tealium-reporter";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
@@ -166,30 +166,7 @@ storiesOf("AuthorProfile", module)
 
     return <AuthorProfileContent {...props} />;
   })
-  .add("With Provider", () => {
-    const onTwitterLinkPress = preventDefaultedAction("onTwitterLinkPress");
-    const onArticlePress = preventDefaultedAction("onArticlePress");
-    const slug = "fiona-hamilton";
-
-    return withMockProvider(
-      <AuthorProfileProvider slug={slug}>
-        {({ author, isLoading, error }) => (
-          <AuthorProfile
-            author={author}
-            page={1}
-            pageSize={3}
-            slug={slug}
-            isLoading={isLoading}
-            error={error}
-            onTwitterLinkPress={onTwitterLinkPress}
-            onArticlePress={onArticlePress}
-            analyticsStream={storybookReporter}
-          />
-        )}
-      </AuthorProfileProvider>
-    );
-  })
-  .add("Tracking", () => {
+  .add("With Provider and Tracking", () => {
     const props = {
       slug: "fiona-hamilton",
       author: authorProfileFixture.data.author,
