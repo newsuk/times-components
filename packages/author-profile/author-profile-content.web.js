@@ -32,7 +32,7 @@ class AuthorProfileContent extends Component {
       images: new Map()
     };
 
-    if (!("IntersectionObserver" in window)) {
+    if (typeof window === "undefined" || !("IntersectionObserver" in window)) {
       return;
     }
 
