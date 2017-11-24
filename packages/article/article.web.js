@@ -65,7 +65,12 @@ class ArticlePage extends React.Component {
                 //   style={[styles.articleMainContentRow]}
                 // >
                 <ParagraphWrapper>
-                  <Text testID={`paragraph-${rowData.index}`} style={styles.articleTextElement}>{children}</Text>
+                  <Text
+                    testID={`paragraph-${rowData.index}`}
+                    style={styles.articleTextElement}
+                  >
+                    {children}
+                  </Text>
                 </ParagraphWrapper>
                 // </View>
               );
