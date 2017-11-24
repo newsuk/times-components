@@ -62,3 +62,6 @@ dist
 
 .fructose/components.js
 .fructose/components.test.js
+
+fructose/components.js
+fructose/components.test.js

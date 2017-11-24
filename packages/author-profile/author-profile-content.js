@@ -73,6 +73,7 @@ class AuthorProfileContent extends React.Component {
     return (
       <FlatList
         testID="scroll-view"
+        accessibilityID="scroll-view"
         data={data}
         keyExtractor={item => item.id}
         renderItem={({ item, index }) => (

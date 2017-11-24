@@ -75,6 +75,7 @@ const AuthorHead = props => {
       <View accessibilityRole="banner" style={styles.container}>
         <Text
           testID="author-name"
+          accessibility-label="author-name"
           accessibilityRole="heading"
           aria-level="1"
           style={styles.name}
