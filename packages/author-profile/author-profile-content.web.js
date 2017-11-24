@@ -31,10 +31,7 @@ class AuthorProfileContent extends Component {
       images: new Map()
     };
 
-    if (
-      typeof window === "undefined" ||
-      (typeof window !== "undefined" && !("IntersectionObserver" in window))
-    ) {
+    if (typeof window === "undefined" || !("IntersectionObserver" in window)) {
       return;
     }
 
