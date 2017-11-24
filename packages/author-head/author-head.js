@@ -66,11 +66,7 @@ const AuthorHead = props => {
 
   const imageComponent = uri ? (
     <View style={styles.photoContainer}>
-      <Image
-        uri={`${uri}?resize=200`}
-        style={styles.roundImage}
-        aspectRatio={1}
-      />
+      <Image uri={`${uri}`} style={styles.roundImage} aspectRatio={1} />
     </View>
   ) : null;
 
