@@ -16,7 +16,7 @@ import styles from "./styles/body";
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
 
-import ImageContainer from "./styles/body/styled-components";
+import ParagraphWrapper from "./styles/body/styled-components";
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 const listViewPageSize = 1;
@@ -60,13 +60,14 @@ class ArticlePage extends React.Component {
           {renderTrees([rowData.data], {
             paragraph(key, attributes, children) {
               return (
-                <View
-                  testID={`paragraph-${rowData.index}`}
-                  key={key}
-                  style={[styles.articleMainContentRow]}
-                >
-                  <Text style={styles.articleTextElement}>{children}</Text>
-                </View>
+                // <View
+                //   key={key}
+                //   style={[styles.articleMainContentRow]}
+                // >
+                <ParagraphWrapper>
+                  <Text testID={`paragraph-${rowData.index}`} style={styles.articleTextElement}>{children}</Text>
+                </ParagraphWrapper>
+                // </View>
               );
             },
             image(key, attributes) {

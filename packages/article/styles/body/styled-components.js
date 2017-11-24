@@ -3,10 +3,13 @@ import styled from "styled-components";
 
 const mediumBreakpoint = "768px";
 
-const ImageWrapper = styled(View)`
+const ParagraphWrapper = styled(View)`
   @media (min-width: ${mediumBreakpoint}) {
-    padding: 0px 10px;
+    width: 83.333333333333%;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 `;
 
-export default ImageWrapper;
+export default ParagraphWrapper;
