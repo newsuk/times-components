@@ -48,13 +48,11 @@ class ArticlePage extends React.Component {
     } else if (rowData.type === "middleContainer") {
       const { byline, publishedTime, publicationName } = rowData.data;
       return (
-        <ImageWrapper>
           <ArticleMeta
             byline={byline}
             publishedTime={publishedTime}
             publicationName={publicationName}
           />
-        </ImageWrapper>
       );
     } else if (rowData.type === "articleBodyRow") {
       return (
