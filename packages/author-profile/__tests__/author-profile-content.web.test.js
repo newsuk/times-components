@@ -29,6 +29,29 @@ const results = {
   }
 };
 
+class FakeIntersectionObserver {
+  constructor(cb) {
+    this.constructor.nodes = new Set();
+    this.constructor.cb = cb;
+  }
+
+  observe(node) {
+    Object.defineProperty(node, "clientWidth", {
+      value: 600
+    });
+    this.constructor.nodes.add(node);
+  }
+
+  static dispatchAll() {
+    const entries = [...this.nodes].map((node, indx) => ({
+      target: node,
+      isIntersecting: indx === 0
+    }));
+
+    this.cb(entries);
+  }
+}
+
 it("renders profile articles and invoke callback on article press", done => {
   const component = shallow(
     <AuthorProfileContent
@@ -53,7 +76,7 @@ it("renders profile articles and invoke callback on article press", done => {
 });
 
 it("renders with an intersection observer which uses the expected options", done => {
-  window.IntersectionObserver = class FakeIntersectionObserver {
+  window.IntersectionObserver = class {
     constructor(cb, opts) {
       expect(opts).toMatchSnapshot();
       done();
@@ -74,41 +97,10 @@ it("renders with an intersection observer which uses the expected options", done
   );
 });
 
-it("renders a good quality image if it is visible", done => {
-  let component;
-  window.IntersectionObserver = class FakeIntersectionObserver {
-    constructor(cb) {
-      this.nodes = new Set();
-      setTimeout(() => {
-        const entries = [...this.nodes].map((node, indx) => ({
-          target: node,
-          isIntersecting: indx === 0
-        }));
+it("renders a good quality image if it is visible", () => {
+  window.IntersectionObserver = FakeIntersectionObserver;
 
-        cb(entries);
-
-        setTimeout(() => {
-          expect(
-            component
-              .find("TimesImage")
-              .at(0)
-              .render()
-          ).toMatchSnapshot();
-
-          done();
-        }, 0);
-      }, 0);
-    }
-
-    observe(node) {
-      Object.defineProperty(node, "clientWidth", {
-        value: 600
-      });
-      this.nodes.add(node);
-    }
-  };
-
-  component = mount(
+  const component = mount(
     <AuthorProfileContent
       articles={results.data.author.articles.list}
       author={authorProfileFixture.data.author}
@@ -130,43 +122,21 @@ it("renders a good quality image if it is visible", done => {
   ).toEqual(
     "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=100"
   );
+
+  window.IntersectionObserver.dispatchAll();
+
+  expect(
+    component
+      .find("TimesImage")
+      .at(0)
+      .render()
+  ).toMatchSnapshot();
 });
 
-it("renders a poor quality image if it is not visible", done => {
-  let component;
-  window.IntersectionObserver = class FakeIntersectionObserver {
-    constructor(cb) {
-      this.nodes = new Set();
-      setTimeout(() => {
-        const entries = [...this.nodes].map((node, indx) => ({
-          target: node,
-          isIntersecting: indx === 0
-        }));
+it("renders a poor quality image if it is not visible", () => {
+  window.IntersectionObserver = FakeIntersectionObserver;
 
-        cb(entries);
-
-        setTimeout(() => {
-          expect(
-            component
-              .find("TimesImage")
-              .at(1)
-              .render()
-          ).toMatchSnapshot();
-
-          done();
-        }, 0);
-      }, 0);
-    }
-
-    observe(node) {
-      Object.defineProperty(node, "clientWidth", {
-        value: 600
-      });
-      this.nodes.add(node);
-    }
-  };
-
-  component = mount(
+  const component = mount(
     <AuthorProfileContent
       articles={results.data.author.articles.list}
       author={authorProfileFixture.data.author}
@@ -178,6 +148,15 @@ it("renders a poor quality image if it is not visible", done => {
       onArticlePress={() => {}}
     />
   );
+
+  window.IntersectionObserver.dispatchAll();
+
+  expect(
+    component
+      .find("TimesImage")
+      .at(1)
+      .render()
+  ).toMatchSnapshot();
 });
 
 it("renders good quality images if there is no IntersectionObserver", () => {
