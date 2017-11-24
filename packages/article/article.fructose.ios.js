@@ -20,30 +20,19 @@ withComponent(
       await fructose.loadComponent();
     });
 
-    test("default Article should render correctly", async () => {
-      await expect(element(by.id("listView"))).toBeVisible();
-      await expect(element(by.id("leadAsset"))).toBeVisible();
-      await expect(element(by.id("label"))).toBeVisible();
-      await expect(element(by.id("headline"))).toBeVisible();
-      await expect(element(by.id("standfirst"))).toBeVisible();
-      await expect(element(by.id("flag-new"))).toBeVisible();
-      await expect(element(by.id("flag-exclusive"))).toBeVisible();
-      await expect(element(by.id("articleByline"))).toBeVisible();
-      await expect(element(by.id("datePublication"))).toBeVisible();
+    test("default Article should render correctly", () => {
+      expect(element(by.id("flat-list-article")).atIndex(0)).toBeVisible();
+      expect(element(by.id("leadAsset"))).toBeVisible();
+      expect(element(by.id("label"))).toBeVisible();
+      expect(element(by.id("headline"))).toBeVisible();
+      expect(element(by.id("standfirst"))).toBeVisible();
+      expect(element(by.id("flag-new"))).toBeVisible();
+      expect(element(by.id("flag-exclusive"))).toBeVisible();
+      expect(element(by.id("articleByline"))).toBeVisible();
+      expect(element(by.id("datePublication"))).toBeVisible();
 
-      await expect(element(by.id("flag-updated"))).toNotExist();
-      await expect(element(by.id("flag-sponsored"))).toNotExist();
+      expect(element(by.id("flag-updated"))).toNotExist();
+      expect(element(by.id("flag-sponsored"))).toNotExist();
     });
-
-    test(
-      "default Article should be able to scroll down the page",
-      async () => {
-        await expect(element(by.id("listView"))).toBeVisible();
-        await expect(element(by.id("paragraph-3"))).toBeNotVisible();
-        await element(by.id("listView")).scroll(900, "down");
-        await expect(element(by.id("paragraph-3"))).toBeVisible();
-      },
-      20000
-    );
   }
 );
