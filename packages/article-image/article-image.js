@@ -28,17 +28,16 @@ const styles = StyleSheet.create({
     paddingBottom: 25,
     paddingLeft: 10,
     paddingRight: 10
-  },
+  }
 });
 
-const ArticleImageNative = (props) => {
-
+const ArticleImageNative = props => {
   const { display, url } = props.imageOptions;
 
   return (
-  <View key={url} style={styles[`${display}Container`]}>
-    <ArticleImage {...props} />
-  </View>
+    <View key={url} style={styles[`${display}Container`]}>
+      <ArticleImage {...props} />
+    </View>
   );
 };
 

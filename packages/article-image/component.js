@@ -53,19 +53,18 @@ const renderCaption = (display, caption, credits) => {
 };
 
 const ArticleImage = ({ imageOptions, captionOptions }) => {
-
   const { display, ratio, url } = imageOptions;
   const { caption, credits } = captionOptions;
 
   const [ratioWidth, ratioHeight] = ratio.split(":");
   const aspectRatio = ratioWidth / ratioHeight;
 
-  return (
-      [<View style={styles[`${display}Image`]}>
-        <Image uri={url} aspectRatio={aspectRatio} />
-      </View>,
-      renderCaption(display, caption, credits)]
-  );
+  return [
+    <View style={styles[`${display}Image`]}>
+      <Image uri={url} aspectRatio={aspectRatio} />
+    </View>,
+    renderCaption(display, caption, credits)
+  ];
 };
 
 ArticleImage.propTypes = articleImagePropTypes;

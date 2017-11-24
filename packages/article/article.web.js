@@ -71,18 +71,18 @@ class ArticlePage extends React.Component {
             },
             image(key, attributes) {
               return (
-                  <ArticleImage
-                    key={key}
-                    imageOptions={{
-                      display: attributes.display,
-                      ratio: attributes.ratio,
-                      url: attributes.url
-                    }}
-                    captionOptions={{
-                      caption: attributes.caption,
-                      credits: attributes.credits
-                    }}
-                  />
+                <ArticleImage
+                  key={key}
+                  imageOptions={{
+                    display: attributes.display,
+                    ratio: attributes.ratio,
+                    url: attributes.url
+                  }}
+                  captionOptions={{
+                    caption: attributes.caption,
+                    credits: attributes.credits
+                  }}
+                />
               );
             }
           })}
