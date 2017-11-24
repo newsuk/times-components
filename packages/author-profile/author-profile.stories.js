@@ -56,12 +56,12 @@ const mocks = [
       query: addTypenameToDocument(articleListQuery),
       variables: {
         slug: "fiona-hamilton",
-        first: 3,
+        first: 5,
         skip: 0,
         imageRatio: "3:2"
       }
     },
-    result: articlesList(0, 3)
+    result: articlesList(0, 5)
   },
   {
     delay,
@@ -69,12 +69,12 @@ const mocks = [
       query: addTypenameToDocument(articleListQuery),
       variables: {
         slug: "fiona-hamilton",
-        first: 3,
-        skip: 3,
+        first: 5,
+        skip: 5,
         imageRatio: "3:2"
       }
     },
-    result: articlesList(3, 3)
+    result: articlesList(5, 5)
   },
   {
     delay,
@@ -82,12 +82,12 @@ const mocks = [
       query: addTypenameToDocument(articleListQuery),
       variables: {
         slug: "fiona-hamilton",
-        first: 3,
-        skip: 6,
+        first: 5,
+        skip: 10,
         imageRatio: "3:2"
       }
     },
-    result: articlesList(6, 3)
+    result: articlesList(10, 5)
   },
   {
     delay,
@@ -95,12 +95,12 @@ const mocks = [
       query: addTypenameToDocument(articleListQuery),
       variables: {
         slug: "fiona-hamilton",
-        first: 3,
-        skip: 9,
+        first: 5,
+        skip: 15,
         imageRatio: "3:2"
       }
     },
-    result: articlesList(9, 3)
+    result: articlesList(15, 5)
   }
 ];
 
@@ -146,7 +146,7 @@ storiesOf("AuthorProfile", module)
       articleImageRatio: "3:2",
       isLoading: false,
       page: 2,
-      pageSize: 3,
+      pageSize: 5,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
       onArticlePress: preventDefaultedAction("onArticlePress"),
       analyticsStream: storybookReporter
@@ -185,6 +185,9 @@ storiesOf("AuthorProfile", module)
           <AuthorProfile
             {...props}
             author={author}
+            page={1}
+            pageSize={5}
+            slug={slug}
             isLoading={isLoading}
             error={error}
           />

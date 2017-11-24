@@ -1,11 +1,12 @@
 import React from "react";
-import { FlatList, StyleSheet, View } from "react-native";
+import { Dimensions, FlatList, StyleSheet, View } from "react-native";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import AuthorProfileAuthorHead from "./author-profile-author-head";
 import AuthorProfilePagination from "./author-profile-pagination";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
 import { propTypes, defaultProps } from "./author-profile-content-prop-types";
+import { normaliseWidth } from "./utils";
 
 const styles = StyleSheet.create({
   padding: {
@@ -23,8 +24,11 @@ class AuthorProfileContent extends React.Component {
   constructor(props) {
     super(props);
 
+    const { width } = Dimensions.get("window");
+
     this.state = {
-      count: props.count
+      count: props.count,
+      width: normaliseWidth(width)
     };
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
   }
@@ -67,7 +71,8 @@ class AuthorProfileContent extends React.Component {
       page,
       pageSize,
       twitter,
-      uri
+      uri,
+      imageRatio
     } = this.props;
 
     const paginationComponent = (hideResults = false) => (
@@ -99,6 +104,8 @@ class AuthorProfileContent extends React.Component {
         renderItem={({ item, index }) => (
           <AuthorProfileItem
             {...item}
+            imageRatio={imageRatio}
+            imageSize={this.state.width}
             style={styles.padding}
             testID={`articleList-${index}`}
             onPress={e => onArticlePress(e, { id: item.id, url: item.url })}

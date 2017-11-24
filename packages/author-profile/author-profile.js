@@ -8,6 +8,13 @@ import get from "lodash.get";
 import AuthorProfileError from "./author-profile-error";
 import AuthorProfileContent from "./author-profile-content";
 
+const ratioTextToFloat = s => {
+  const [w, h] = s.split(":");
+  const ratio = parseFloat(w) / parseFloat(h);
+
+  return !Number.isNaN(ratio) ? ratio : 1;
+};
+
 const ArticleListProviderWithPageState = withPageState(ArticleListProvider);
 const AuthorProfile = ({
   author,
@@ -39,7 +46,8 @@ const AuthorProfile = ({
         onPrev,
         page,
         pageSize,
-        isLoading: articlesLoading
+        isLoading: articlesLoading,
+        variables: { imageRatio }
       }) => {
         const articlesWithPublishTime = get(data, "articles.list", []).map(
           article => ({
@@ -64,6 +72,7 @@ const AuthorProfile = ({
             onPrev={onPrev}
             page={page}
             pageSize={pageSize}
+          imageRatio={ratioTextToFloat(imageRatio)}
             articlesLoading={articlesLoading}
             articles={articlesWithPublishTime}
             onArticlePress={onArticlePress}

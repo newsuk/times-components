@@ -1,4 +1,6 @@
-import React from "react";
+/* eslint-env browser */
+
+import React, { Component } from "react";
 import { StyleSheet, View } from "react-native";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import AuthorProfileAuthorHead from "./author-profile-author-head";
@@ -6,6 +8,7 @@ import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
 import AuthorProfilePagination from "./author-profile-pagination";
 import propTypes from "./author-profile-content-prop-types";
+import { normaliseWidth } from "./utils";
 
 const styles = StyleSheet.create({
   container: {
@@ -20,47 +23,114 @@ const styles = StyleSheet.create({
   }
 });
 
-const AuthorProfileContent = ({
-  articles,
-  articlesLoading,
-  biography,
-  count,
-  jobTitle,
-  isLoading,
-  name,
-  onArticlePress,
-  onNext,
-  onPrev,
-  onTwitterLinkPress,
-  page,
-  pageSize,
-  twitter,
-  uri,
-  receiveChildList
-}) => {
-  const paginationComponent = (hideResults = false) => (
-    <AuthorProfilePagination
-      count={count}
-      hideResults={hideResults}
-      onNext={onNext}
-      onPrev={onPrev}
-      page={page}
-      pageSize={pageSize}
-    />
-  );
+class AuthorProfileContent extends Component {
+  constructor(props) {
+    super(props);
 
-  const data = articlesLoading
-    ? Array(pageSize)
-        .fill()
-        .map((number, id) => ({
-          id,
-          isLoading: true
-        }))
-    : articles;
+    this.images = new Map();
+    this.state = {
+      images: new Map()
+    };
 
-  receiveChildList(articles);
+    if (!("IntersectionObserver" in window)) {
+      return;
+    }
 
-  return (
+    const options = {
+      rootMargin: "50px",
+      threshold: 1.0
+    };
+
+    this.observer = new window.IntersectionObserver(
+      this.handleObservation.bind(this),
+      options
+    );
+  }
+
+  componentWillUnmount() {
+    if (this.observer) {
+      this.observer.disconnect();
+    }
+  }
+
+  getImageSize(nodeId) {
+    if (this.observer) {
+      return this.state.images.get(nodeId);
+    }
+
+    return this.images.get(nodeId);
+  }
+
+  handleObservation(entries) {
+    const curImages = new Map();
+
+    entries.forEach(({ target, isIntersecting }) => {
+      if (isIntersecting && !this.state.images.get(target.id)) {
+        curImages.set(target.id, normaliseWidth(target.clientWidth));
+      }
+    });
+
+    if (curImages.size) {
+      this.setState({
+        images: new Map([...this.state.images, ...curImages])
+      });
+    }
+  }
+
+  registerNode(node) {
+    if (!node) {
+      return;
+    }
+
+    if (this.observer) {
+      this.observer.observe(node);
+    } else {
+      this.images.set(node.id, normaliseWidth(node.clientWidth));
+    }
+  }
+
+  render() {
+    const {
+      articles,
+      articlesLoading,
+      biography,
+      count,
+      jobTitle,
+      isLoading,
+      name,
+      onArticlePress,
+      onNext,
+      onPrev,
+      onTwitterLinkPress,
+      page,
+      pageSize,
+      twitter,
+      uri,
+      imageRatio,
+      receiveChildList
+    } = this.props;
+
+    const paginationComponent = (hideResults = false) => (
+      <AuthorProfilePagination
+        count={count}
+        hideResults={hideResults}
+        onNext={onNext}
+        onPrev={onPrev}
+        page={page}
+        pageSize={pageSize}
+      />
+    );
+
+    const data = articlesLoading
+      ? Array(pageSize)
+          .fill()
+          .map((number, id) => ({
+            id,
+            isLoading: true
+          }))
+      : articles;
+
+  receiveChildList(articles);return (
     <View>
       <AuthorProfileAuthorHead
         isLoading={isLoading}
@@ -78,21 +148,23 @@ const AuthorProfileContent = ({
             data.map((article, key) => {
               const { id, url } = article;
               const separatorComponent =
-                key > 0 ? <AuthorProfileItemSeparator /> : null;
+                key > 0 ? <AuthorProfileItemSeparator /> : null;const nodeId = `articleList-${page}-${key}`;
 
               return (
-                <View
+                <div
                   key={id}
-                  accessibilityLabel={`articleList-${key}`}
-                  testID={`articleList-${key}`}
-                  id={id}
-                >
+                  id={nodeId}
+                  accessibility-label={nodeId}
+                    data-testid={nodeId}
+                    ref={node => this.registerNode(node)}
+                id={id}>
                   {separatorComponent}
                   <AuthorProfileItem
                     {...article}
-                    onPress={e => onArticlePress(e, { id, url })}
+                    imageRatio={imageRatio}
+                      imageSize={this.getImageSize(nodeId)}onPress={e => onArticlePress(e, { id, url })}
                   />
-                </View>
+                </div>
               );
             })}
         </View>
@@ -100,9 +172,10 @@ const AuthorProfileContent = ({
       </View>
     </View>
   );
-};
+}}
 
 AuthorProfileContent.propTypes = propTypes;
+
 export default withTrackScrollDepth(AuthorProfileContent, {
   childIdPropKey: "id",
   actionName: "Scrolled"
