@@ -348,7 +348,7 @@ exports[`renders profile content 1`] = `
         >
           <img
             alt=""
-            src="//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg?resize=100"
+            src="//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
             style={
               Object {
                 "display": "block",

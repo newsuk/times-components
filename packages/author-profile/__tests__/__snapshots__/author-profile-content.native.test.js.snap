@@ -387,7 +387,7 @@ exports[`renders profile content 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg?resize=100",
+                      "uri": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
                     }
                   }
                   style={
