@@ -16,7 +16,7 @@ import styles from "./styles/body";
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
 
-import ImageContainer from "./styles/body/styled-components";
+import ImageWrapper from "./styles/body/styled-components";
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 const listViewPageSize = 1;
@@ -48,11 +48,13 @@ class ArticlePage extends React.Component {
     } else if (rowData.type === "middleContainer") {
       const { byline, publishedTime, publicationName } = rowData.data;
       return (
-        <ArticleMeta
-          byline={byline}
-          publishedTime={publishedTime}
-          publicationName={publicationName}
-        />
+        <ImageWrapper>
+          <ArticleMeta
+            byline={byline}
+            publishedTime={publishedTime}
+            publicationName={publicationName}
+          />
+        </ImageWrapper>
       );
     } else if (rowData.type === "articleBodyRow") {
       return (
@@ -71,6 +73,7 @@ class ArticlePage extends React.Component {
             },
             image(key, attributes) {
               return (
+
                   <ArticleImage
                     key={key}
                     imageOptions={{
@@ -83,6 +86,7 @@ class ArticlePage extends React.Component {
                       credits: attributes.credits
                     }}
                   />
+
               );
             }
           })}

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { View } from "react-native";
 
+const mediumBreakpoint = "768px";
+
 export const PrimaryContainer = styled(View)`
   width: "100%",
   flex-direction: "column",

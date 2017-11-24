@@ -5,22 +5,32 @@ import { View } from "react-native";
 import ArticleByline from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
 
-import styles from "./styles/meta";
+//import styles from "./styles/meta";
+import {ArticleMetaContainer, ArticleMetaElement, ArticleMiddleContainer} from "./styles/meta/styled-components";
+
 
 const ArticleMeta = ({ byline, publishedTime, publicationName }) => (
-  <View style={[styles.articleMainContentRow, styles.articleMiddleContainer]}>
-    <View style={styles.articleMeta}>
-      <View style={[styles.articleMetaElement]}>
-        <ArticleByline ast={byline} />
-      </View>
-      <View style={[styles.articleMetaElement]}>
-        <DatePublication
-          date={new Date(publishedTime)}
-          publication={publicationName}
-        />
-      </View>
+  <ArticleMiddleContainer>
+    <View>
+      <ArticleMetaContainer>
+        <View>
+          <ArticleMetaElement>
+            <View>
+              <ArticleByline ast={byline} />
+            </View>
+          </ArticleMetaElement>
+          <ArticleMetaElement>
+            <View>
+              <DatePublication
+                date={new Date(publishedTime)}
+                publication={publicationName}
+              />
+            </View>
+          </ArticleMetaElement>
+        </View>
+      </ArticleMetaContainer>
     </View>
-  </View>
+  </ArticleMiddleContainer>
 );
 
 const TextNode = PropTypes.shape({ text: PropTypes.string });
