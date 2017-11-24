@@ -2,6 +2,7 @@
 
 exports[`does not re-render the author head if the name changes 1`] = `
 <Text
+  accessibility-label="author-name"
   accessibilityRole="heading"
   accessible={true}
   allowFontScaling={true}
@@ -23,6 +24,7 @@ exports[`does not re-render the author head if the name changes 1`] = `
 
 exports[`does re-render the author head if the loading state changes 1`] = `
 <Text
+  accessibility-label="author-name"
   accessibilityRole="heading"
   accessible={true}
   allowFontScaling={true}
@@ -140,6 +142,7 @@ exports[`renders profile content 1`] = `
       />
     </View>
   }
+  accessibilityID="scroll-view"
   data={
     Array [
       Object {
@@ -239,6 +242,7 @@ exports[`renders profile content 1`] = `
             }
           >
             <Text
+              accessibility-label="author-name"
               accessibilityRole="heading"
               accessible={true}
               allowFontScaling={true}
@@ -4127,6 +4131,7 @@ exports[`renders profile content component 1`] = `
       />
     </View>
   }
+  accessibilityID="scroll-view"
   data={
     Array [
       Object {
@@ -4360,6 +4365,7 @@ exports[`renders profile content component 1`] = `
             }
           >
             <Text
+              accessibility-label="author-name"
               accessibilityRole="heading"
               accessible={true}
               allowFontScaling={true}
@@ -4817,6 +4823,7 @@ exports[`renders profile content component 1`] = `
                     </Text>
                   </Text>
                   <Text
+                    accessibilityLabel="datePublication"
                     accessible={true}
                     allowFontScaling={true}
                     ellipsizeMode="tail"
@@ -5170,6 +5177,7 @@ exports[`renders profile content component 1`] = `
                     </Text>
                   </Text>
                   <Text
+                    accessibilityLabel="datePublication"
                     accessible={true}
                     allowFontScaling={true}
                     ellipsizeMode="tail"
@@ -5332,6 +5340,7 @@ exports[`renders profile content component 1`] = `
                     }
                   />
                   <Text
+                    accessibilityLabel="datePublication"
                     accessible={true}
                     allowFontScaling={true}
                     ellipsizeMode="tail"
@@ -5732,6 +5741,7 @@ exports[`renders profile content item component 1`] = `
               </Text>
             </Text>
             <Text
+              accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
@@ -6001,6 +6011,7 @@ exports[`renders profile content item component with no image  1`] = `
               </Text>
             </Text>
             <Text
+              accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
@@ -6062,6 +6073,7 @@ exports[`renders profile empty 1`] = `
       />
     </View>
   }
+  accessibilityID="scroll-view"
   data={undefined}
   disableVirtualization={false}
   getItem={[Function]}
@@ -6118,6 +6130,7 @@ exports[`renders profile empty 1`] = `
             }
           >
             <Text
+              accessibility-label="author-name"
               accessibilityRole="heading"
               accessible={true}
               allowFontScaling={true}
@@ -6429,6 +6442,7 @@ exports[`renders profile loading 1`] = `
       />
     </View>
   }
+  accessibilityID="scroll-view"
   data={
     Array [
       Object {
@@ -6492,6 +6506,7 @@ exports[`renders profile loading 1`] = `
             }
           >
             <Text
+              accessibility-label="author-name"
               accessibilityRole="heading"
               accessible={true}
               allowFontScaling={true}
@@ -7122,6 +7137,7 @@ exports[`renders the author head 1`] = `
     }
   >
     <Text
+      accessibility-label="author-name"
       accessibilityRole="heading"
       accessible={true}
       allowFontScaling={true}
