@@ -130,49 +130,53 @@ class AuthorProfileContent extends Component {
           }))
       : articles;
 
-  receiveChildList(articles);return (
-    <View>
-      <AuthorProfileAuthorHead
-        isLoading={isLoading}
-        name={name}
-        bio={biography}
-        uri={uri}
-        title={jobTitle}
-        twitter={twitter}
-        onTwitterLinkPress={onTwitterLinkPress}
-      />
-      <View style={styles.contentContainer}>
-        {paginationComponent()}
-        <View style={styles.container}>
-          {data &&
-            data.map((article, key) => {
-              const { id, url } = article;
-              const separatorComponent =
-                key > 0 ? <AuthorProfileItemSeparator /> : null;const nodeId = `articleList-${page}-${key}`;
+    receiveChildList(articles);
+    return (
+      <View>
+        <AuthorProfileAuthorHead
+          isLoading={isLoading}
+          name={name}
+          bio={biography}
+          uri={uri}
+          title={jobTitle}
+          twitter={twitter}
+          onTwitterLinkPress={onTwitterLinkPress}
+        />
+        <View style={styles.contentContainer}>
+          {paginationComponent()}
+          <View style={styles.container}>
+            {data &&
+              data.map((article, key) => {
+                const { id, url } = article;
+                const separatorComponent =
+                  key > 0 ? <AuthorProfileItemSeparator /> : null;
+                const nodeId = `articleList-${page}-${key}`;
 
-              return (
-                <div
-                  key={id}
-                  id={nodeId}
-                  accessibility-label={nodeId}
+                return (
+                  <div
+                    key={id}
+                    id={nodeId}
+                    accessibility-label={nodeId}
                     data-testid={nodeId}
                     ref={node => this.registerNode(node)}
-                id={id}>
-                  {separatorComponent}
-                  <AuthorProfileItem
-                    {...article}
-                    imageRatio={imageRatio}
-                      imageSize={this.getImageSize(nodeId)}onPress={e => onArticlePress(e, { id, url })}
-                  />
-                </div>
-              );
-            })}
+                  >
+                    {separatorComponent}
+                    <AuthorProfileItem
+                      {...article}
+                      imageRatio={imageRatio}
+                      imageSize={this.getImageSize(nodeId)}
+                      onPress={e => onArticlePress(e, { id, url })}
+                    />
+                  </div>
+                );
+              })}
+          </View>
+          {paginationComponent(true)}
         </View>
-        {paginationComponent(true)}
       </View>
-    </View>
-  );
-}}
+    );
+  }
+}
 
 AuthorProfileContent.propTypes = propTypes;
 

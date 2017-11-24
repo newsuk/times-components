@@ -10,7 +10,7 @@ export const propTypes = {
   isLoading: PropTypes.bool,
   onArticlePress: PropTypes.func,
   onViewed: PropTypes.func,
-  receiveChildList: PropTypes.func,
+  receiveChildList: PropTypes.func
 };
 
 export const defaultProps = {

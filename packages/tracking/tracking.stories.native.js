@@ -5,7 +5,7 @@ import { Text, FlatList } from "react-native";
 import { action } from "@storybook/addon-actions";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
-import { withTrackingContext, withTrackChildViews } from "./tracking";
+import { withTrackingContext, withTrackScrollDepth } from "./tracking";
 
 const storybookReporter = action("analytics-event");
 
@@ -59,7 +59,7 @@ storiesOf("Tracking", module).add("Scroll depth tracking", () => {
     color: i % 2 === 0 ? "green" : "blue"
   }));
   const BoxesWithTrackingContext = withTrackingContext(
-    withTrackChildViews(Boxes, {
+    withTrackScrollDepth(Boxes, {
       childIdPropKey: "id",
       actionName: "Scrolled",
       getAttrs: props => ({

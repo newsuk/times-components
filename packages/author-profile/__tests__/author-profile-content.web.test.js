@@ -64,7 +64,7 @@ it("renders profile articles and invoke callback on article press", done => {
       onTwitterLinkPress={() => {}}
       onArticlePress={() => done()}
       onViewed={() => {}}
-      receiveChildList={() => (results.data.author.articles.list)}
+      receiveChildList={() => results.data.author.articles.list}
     />
   );
 

@@ -1,7 +1,7 @@
 import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
-import { withTrackingContext, withTrackChildViews } from "./tracking";
+import { withTrackingContext, withTrackScrollDepth } from "./tracking";
 import storybookReporter from "../../storybook/storybook-tealium-reporter";
 import Boxes from "./storybook-components/boxes";
 
@@ -11,7 +11,7 @@ storiesOf("Tracking", module).add("Scroll depth tracking", () => {
     color: i % 2 === 0 ? "green" : "blue"
   }));
   const BoxesWithTrackingContext = withTrackingContext(
-    withTrackChildViews(Boxes, {
+    withTrackScrollDepth(Boxes, {
       childIdPropKey: "id",
       actionName: "Scrolled",
       getAttrs: props => ({

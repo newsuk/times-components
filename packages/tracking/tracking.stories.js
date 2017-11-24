@@ -6,7 +6,7 @@ import { storiesOf } from "@storybook/react-native";
 import {
   withTrackingContext,
   withTrackEvents,
-  withTrackChildViews
+  withTrackScrollDepth
 } from "./tracking";
 import storybookReporter from "../../storybook/storybook-tealium-reporter";
 import Box, { boxStyles } from "./storybook-components/box";
@@ -63,7 +63,7 @@ storiesOf("Tracking", module)
       color: i % 2 === 0 ? "green" : "blue"
     }));
     const BoxesWithTrackingContext = withTrackingContext(
-      withTrackChildViews(Boxes, {
+      withTrackScrollDepth(Boxes, {
         childIdPropKey: "id",
         getAttrs: ({ id, index }) => ({ id, index })
       }),

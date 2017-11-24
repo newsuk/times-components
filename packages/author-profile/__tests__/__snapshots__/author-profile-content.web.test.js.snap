@@ -33,7 +33,7 @@ exports[`renders a good quality image if it is visible 1`] = `
   >
     <img
       alt=""
-      src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=440"
+      src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=100"
       style="display: block; width: 100%; z-index: 1; position: absolute;"
     />
     <div
@@ -75,7 +75,7 @@ Array [
   <TimesImage
     aspectRatio={1.5}
     style={Object {}}
-    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=440"
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=100"
   >
     <View
       style={Object {}}
@@ -95,7 +95,7 @@ Array [
         >
           <img
             alt=""
-            src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=440"
+            src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=100"
             style={
               Object {
                 "display": "block",
@@ -170,7 +170,7 @@ Array [
   <TimesImage
     aspectRatio={1.5}
     style={Object {}}
-    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745&resize=440"
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745&resize=100"
   >
     <View
       style={Object {}}
@@ -190,7 +190,7 @@ Array [
         >
           <img
             alt=""
-            src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745&resize=440"
+            src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745&resize=100"
             style={
               Object {
                 "display": "block",
@@ -318,15 +318,15 @@ exports[`renders profile content 1`] = `
         className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-1feecvn rn-fontSize-ubezar rn-lineHeight-eaezby rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-maxWidth-1eyxye4 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-11rk87y rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
         dir="auto"
       >
-        Lorem
+        Lorem 
         <strong>
           ipsum
         </strong>
-         testbr
+         testbr 
         <br />
-        More text
+        More text 
         <em>
-           last
+           last 
         </em>
       </div>
     </header>
@@ -452,7 +452,6 @@ exports[`renders profile content 1`] = `
       <div
         accessibility-label="articleList-1-0"
         data-testid="articleList-1-0"
-        id="articleList-1-0"
         id={0}
       >
         <div
@@ -550,7 +549,6 @@ exports[`renders profile content 1`] = `
       <div
         accessibility-label="articleList-1-1"
         data-testid="articleList-1-1"
-        id="articleList-1-1"
         id={1}
       >
         <div
@@ -651,7 +649,6 @@ exports[`renders profile content 1`] = `
       <div
         accessibility-label="articleList-1-2"
         data-testid="articleList-1-2"
-        id="articleList-1-2"
         id={2}
       >
         <div
@@ -752,7 +749,6 @@ exports[`renders profile content 1`] = `
       <div
         accessibility-label="articleList-1-3"
         data-testid="articleList-1-3"
-        id="articleList-1-3"
         id={3}
       >
         <div
@@ -853,7 +849,6 @@ exports[`renders profile content 1`] = `
       <div
         accessibility-label="articleList-1-4"
         data-testid="articleList-1-4"
-        id="articleList-1-4"
         id={4}
       >
         <div
@@ -954,7 +949,6 @@ exports[`renders profile content 1`] = `
       <div
         accessibility-label="articleList-1-5"
         data-testid="articleList-1-5"
-        id="articleList-1-5"
         id={5}
       >
         <div
@@ -1055,7 +1049,6 @@ exports[`renders profile content 1`] = `
       <div
         accessibility-label="articleList-1-6"
         data-testid="articleList-1-6"
-        id="articleList-1-6"
         id={6}
       >
         <div
@@ -1156,7 +1149,6 @@ exports[`renders profile content 1`] = `
       <div
         accessibility-label="articleList-1-7"
         data-testid="articleList-1-7"
-        id="articleList-1-7"
         id={7}
       >
         <div
@@ -1257,7 +1249,6 @@ exports[`renders profile content 1`] = `
       <div
         accessibility-label="articleList-1-8"
         data-testid="articleList-1-8"
-        id="articleList-1-8"
         id={8}
       >
         <div
@@ -1358,7 +1349,6 @@ exports[`renders profile content 1`] = `
       <div
         accessibility-label="articleList-1-9"
         data-testid="articleList-1-9"
-        id="articleList-1-9"
         id={9}
       >
         <div
@@ -1539,7 +1529,7 @@ exports[`renders profile content component 1`] = `
         dir="auto"
         role="heading"
       >
-
+        
       </h1>
       <h2
         aria-level="2"
@@ -1547,7 +1537,7 @@ exports[`renders profile content component 1`] = `
         dir="auto"
         role="heading"
       >
-
+        
       </h2>
       <div
         className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-1feecvn rn-fontSize-ubezar rn-lineHeight-eaezby rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-maxWidth-1eyxye4 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-11rk87y rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
@@ -1633,8 +1623,7 @@ exports[`renders profile content component 1`] = `
       <div
         accessibility-label="articleList-1-0"
         data-testid="articleList-1-0"
-        id="articleList-1-0"
-        id="97c64f20-cb67-11e4-a202-50ac5def393a"
+        id="d98c257c-cb16-11e7-b529-95e3fc05f40f"
       >
         <a
           href="https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f"
@@ -1714,7 +1703,7 @@ exports[`renders profile content component 1`] = `
                         }
                       }
                     >
-
+                      
                     </div>
                     <div
                       className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-iirzy8 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
@@ -1776,8 +1765,7 @@ exports[`renders profile content component 1`] = `
       <div
         accessibility-label="articleList-1-1"
         data-testid="articleList-1-1"
-        id="articleList-1-1"
-        id="1f18ebd0-671f-40e0-a190-82dd8af1a294"
+        id="4e6894ec-cb18-11e7-b529-95e3fc05f40f"
       >
         <div
           className="rn-alignItems-1oszu61 rn-backgroundColor-7ut9fm rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-109y4c4 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
@@ -1860,7 +1848,7 @@ exports[`renders profile content component 1`] = `
                         }
                       }
                     >
-
+                      
                     </div>
                     <div
                       className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-iirzy8 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
@@ -1922,8 +1910,7 @@ exports[`renders profile content component 1`] = `
       <div
         accessibility-label="articleList-1-2"
         data-testid="articleList-1-2"
-        id="articleList-1-2"
-        id="2c18ebd0-671f-40e0-a190-82dd8af1a294"
+        id="f79c9d8c-c95c-11e7-b529-95e3fc05f40f"
       >
         <div
           className="rn-alignItems-1oszu61 rn-backgroundColor-7ut9fm rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-109y4c4 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
@@ -2006,7 +1993,7 @@ exports[`renders profile content component 1`] = `
                         }
                       }
                     >
-
+                      
                     </div>
                     <div
                       className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-iirzy8 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
@@ -2039,7 +2026,7 @@ exports[`renders profile content component 1`] = `
                         className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-irrty rn-wordWrap-qvutc0"
                         dir="auto"
                       >
-                        Britain???s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a
+                        Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a
                         ...
                       </span>
                     </div>
@@ -2208,7 +2195,7 @@ exports[`renders profile content item component 1`] = `
                 }
               }
             >
-
+              
             </div>
             <div
               className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-iirzy8 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
@@ -2347,7 +2334,7 @@ exports[`renders profile content item component with a specific image size 1`] =
                 }
               }
             >
-
+              
             </div>
             <div
               className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-iirzy8 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
@@ -2443,7 +2430,7 @@ exports[`renders profile content item component with no image 1`] = `
                 }
               }
             >
-
+              
             </div>
             <div
               className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-iirzy8 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
@@ -2522,7 +2509,7 @@ exports[`renders profile empty 1`] = `
         dir="auto"
         role="heading"
       >
-
+        
       </h1>
       <h2
         aria-level="2"
@@ -2530,7 +2517,7 @@ exports[`renders profile empty 1`] = `
         dir="auto"
         role="heading"
       >
-
+        
       </h2>
       <div
         className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-1feecvn rn-fontSize-ubezar rn-lineHeight-eaezby rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-maxWidth-1eyxye4 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-11rk87y rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
@@ -2667,15 +2654,15 @@ exports[`renders profile loading 1`] = `
         className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-1feecvn rn-fontSize-ubezar rn-lineHeight-eaezby rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-maxWidth-1eyxye4 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-11rk87y rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
         dir="auto"
       >
-        Lorem
+        Lorem 
         <strong>
           ipsum
         </strong>
-         testbr
+         testbr 
         <br />
-        More text
+        More text 
         <em>
-           last
+           last 
         </em>
       </div>
     </header>
@@ -2721,7 +2708,6 @@ exports[`renders profile loading 1`] = `
       <div
         accessibility-label="articleList-undefined-0"
         data-testid="articleList-undefined-0"
-        id="articleList-undefined-0"
         id={0}
       >
         <div
@@ -2873,7 +2859,7 @@ exports[`renders the author head 1`] = `
       dir="auto"
       role="heading"
     >
-
+      
     </h2>
     <a
       className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-1i10wst rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-paddingTop-95jzfe rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
@@ -2896,7 +2882,8 @@ exports[`renders the author head 1`] = `
 
 exports[`renders with an intersection observer which uses the expected options 1`] = `
 Object {
-  "rootMargin": "50px",
+  "root": null,
+  "rootMargin": "0px",
   "threshold": 1,
 }
 `;
