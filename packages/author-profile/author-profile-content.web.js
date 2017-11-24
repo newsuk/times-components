@@ -131,6 +131,7 @@ class AuthorProfileContent extends Component {
       : articles;
 
     receiveChildList(articles);
+    
     return (
       <View>
         <AuthorProfileAuthorHead
