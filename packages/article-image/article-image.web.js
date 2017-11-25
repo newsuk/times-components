@@ -7,9 +7,7 @@ import {
 } from "./article-image-proptypes";
 
 const ArticleImageWeb = props => {
-  return (
-      <ArticleImage {...props} />
-  );
+  return <ArticleImage {...props} />;
 };
 
 ArticleImageWeb.propTypes = articleImagePropTypes;

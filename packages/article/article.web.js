@@ -12,11 +12,14 @@ import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
 
 import listViewDataHelper from "./data-helper";
-import styles from "./styles/body";
+import styles, {
+  ResponsiveWrapper,
+  PrimaryContainer,
+  SecondaryContainer,
+  InlineContainer
+} from "./styles/body";
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
-
-import {ResponsiveWrapper, PrimaryContainer, SecondaryContainer, InlineContainer} from "./styles/body/styled-components";
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 const listViewPageSize = 1;
@@ -75,7 +78,9 @@ class ArticlePage extends React.Component {
               );
             },
             image(key, attributes) {
-              const ImageContainer = ArticlePage.imageContainerChooser(attributes.display);
+              const ImageContainer = ArticlePage.imageContainerChooser(
+                attributes.display
+              );
               return (
                 <ImageContainer key={key}>
                   <ArticleImage
@@ -100,7 +105,7 @@ class ArticlePage extends React.Component {
     return null;
   }
 
-  static imageContainerChooser (imageType) {
+  static imageContainerChooser(imageType) {
     switch (imageType) {
       case "primary":
         return PrimaryContainer;
@@ -111,7 +116,7 @@ class ArticlePage extends React.Component {
       default:
         return null;
     }
-  };
+  }
 
   constructor(props) {
     super(props);

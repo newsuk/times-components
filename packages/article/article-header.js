@@ -49,12 +49,12 @@ const renderLabel = label => {
   );
 };
 
-const ArticleHeader = ({ label, headline, standfirst, flags }) => (
-    [renderLabel(label),
-    <ArticleHeadline text={headline} style={styles.articleHeadLineText} />,
-    renderStandfirst(standfirst),
-    renderFlags(flags)]
-);
+const ArticleHeader = ({ label, headline, standfirst, flags }) => [
+  renderLabel(label),
+  <ArticleHeadline text={headline} style={styles.articleHeadLineText} />,
+  renderStandfirst(standfirst),
+  renderFlags(flags)
+];
 
 ArticleHeader.propTypes = {
   headline: PropTypes.string.isRequired,
