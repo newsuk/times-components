@@ -8,7 +8,7 @@ import DatePublication from "@times-components/date-publication";
 import styles from "./styles/meta";
 
 const ArticleMeta = ({ byline, publishedTime, publicationName }) => (
-  <View style={[styles.articleMainContentRow, styles.articleMiddleContainer]}>
+  <View style={[styles.articleMiddleContainer]}>
     <View style={styles.articleMeta}>
       <View style={[styles.articleMetaElement]}>
         <ArticleByline ast={byline} />

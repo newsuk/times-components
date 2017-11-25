@@ -50,12 +50,10 @@ const renderLabel = label => {
 };
 
 const ArticleHeader = ({ label, headline, standfirst, flags }) => (
-  <View style={[styles.articleMainContentRow]}>
-    {renderLabel(label)}
-    <ArticleHeadline text={headline} style={styles.articleHeadLineText} />
-    {renderStandfirst(standfirst)}
-    {renderFlags(flags)}
-  </View>
+    [renderLabel(label),
+    <ArticleHeadline text={headline} style={styles.articleHeadLineText} />,
+    renderStandfirst(standfirst),
+    renderFlags(flags)]
 );
 
 ArticleHeader.propTypes = {
