@@ -5,7 +5,7 @@
         "count": 20,
         "list": [
           {
-            "content": [
+            "summary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -34,14 +34,14 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-17T00:01:00.000Z",
-            "title":
+            "headline":
               "Top medal for forces dog who took a bite out of the Taliban",
             "url":
               "https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f",
             "__typename": "Article"
           },
           {
-            "content": [
+            "summary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -70,14 +70,14 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-17T00:01:00.000Z",
-            "title":
+            "headline":
               "Social media must raise game to beat terrorists, says UN chief",
             "url":
               "https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0",
             "__typename": "Article"
           },
           {
-            "content": [
+            "summary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -106,14 +106,14 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-14T17:00:00.000Z",
-            "title":
+            "headline":
               "Cuts have left the army 20 years out of date, says former general",
             "url":
               "https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn",
             "__typename": "Article"
           },
           {
-            "content": [
+            "summary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -142,13 +142,13 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-11T00:01:00.000Z",
-            "title": "MoD recruits more civilians as Royal Marines face axe",
+            "headline": "MoD recruits more civilians as Royal Marines face axe",
             "url":
               "https://www.thetimes.co.uk/article/mod-recruits-more-civilians-as-royal-marines-face-axe-nqdh8v3zd",
             "__typename": "Article"
           },
           {
-            "content": [
+            "summary": [
               {
                 "name": "paragraph",
                 "attributes": {
@@ -192,14 +192,14 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-11T00:01:00.000Z",
-            "title":
+            "headline":
               "Suits you: poppy power is branching out for Remembrance appeal",
             "url":
               "https://www.thetimes.co.uk/article/remembrance-appeal-branches-out-with-poppy-onesies-mj2crrd8x",
             "__typename": "Article"
           },
           {
-            "content": [
+            "summary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -228,14 +228,14 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-10T00:01:00.000Z",
-            "title":
+            "headline":
               "MoD heralds a \u2018renewed\u2019 US special relationship",
             "url":
               "https://www.thetimes.co.uk/article/mod-heralds-a-renewed-special-relationship-with-us-d6wfnx3fs",
             "__typename": "Article"
           },
           {
-            "content": [
+            "summary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -264,14 +264,14 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-09T00:01:00.000Z",
-            "title":
+            "headline":
               "Defence cuts will hit Britain\u2019s standing, warns US general",
             "url":
               "https://www.thetimes.co.uk/article/us-general-ben-hodges-warns-britain-against-more-defence-cuts-wh7d6pn76",
             "__typename": "Article"
           },
           {
-            "content": [
+            "summary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -301,13 +301,13 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-04T00:00:00.000Z",
-            "title": "RAF ready to withdraw as Isis battle enters endgame",
+            "headline": "RAF ready to withdraw as Isis battle enters endgame",
             "url":
               "https://www.thetimes.co.uk/article/raf-ready-to-withdraw-as-isis-battle-enters-endgame-jj7l3b02v",
             "__typename": "Article"
           },
           {
-            "content": [
+            "summary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -349,14 +349,14 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-03T00:01:00.000Z",
-            "title":
+            "headline":
               "Fallon denies lewd comment about Leadsom\u2019s cold hands",
             "url":
               "https://www.thetimes.co.uk/article/fallon-denies-lewd-comment-about-leadsom-s-cold-hands-gkp3wnzn0",
             "__typename": "Article"
           },
           {
-            "content": [
+            "summary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -385,13 +385,13 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-03T00:01:00.000Z",
-            "title": "Gavin who? Shock at MoD\u2019s latest recruit",
+            "headline": "Gavin who? Shock at MoD\u2019s latest recruit",
             "url":
               "https://www.thetimes.co.uk/article/who-shock-at-mod-s-latest-recruit-gavin-williamson-968n7tdck",
             "__typename": "Article"
           },
           {
-            "content": [
+            "summary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -433,13 +433,13 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-02T00:01:00.000Z",
-            "title": "Fallon resigns as new sleaze claims emerge",
+            "headline": "Fallon resigns as new sleaze claims emerge",
             "url":
               "https://www.thetimes.co.uk/article/fallon-resigns-as-new-sleaze-claims-emerge-khsks7jpb",
             "__typename": "Article"
           },
           {
-            "content": [
+            "summary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -482,13 +482,14 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-02T00:01:00.000Z",
-            "title": "Fallon admits falling short and leaves the job he loved",
+            "headline":
+              "Fallon admits falling short and leaves the job he loved",
             "url":
               "https://www.thetimes.co.uk/article/sir-michael-fallon-admits-falling-short-and-leaves-the-job-he-loved-mdvrzvwq6",
             "__typename": "Article"
           },
           {
-            "content": [
+            "summary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -517,14 +518,14 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-01T00:01:00.000Z",
-            "title":
+            "headline":
               "Troops posted to Iraq face losing \u00a329 daily allowance",
             "url":
               "https://www.thetimes.co.uk/article/british-troops-posted-to-iraq-face-losing-29-daily-allowance-qnnk80qb9",
             "__typename": "Article"
           },
           {
-            "content": [
+            "summary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -553,13 +554,13 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-01T00:01:00.000Z",
-            "title": "Navy has to scavenge more parts",
+            "headline": "Navy has to scavenge more parts",
             "url":
               "https://www.thetimes.co.uk/article/royal-navy-has-to-scavenge-more-parts-national-audit-office-says-gzdxx7zpm",
             "__typename": "Article"
           },
           {
-            "content": [
+            "summary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -588,13 +589,14 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-10-30T00:01:00.000Z",
-            "title": "Scrapping assault ships risks Nato role, military told",
+            "headline":
+              "Scrapping assault ships risks Nato role, military told",
             "url":
               "https://www.thetimes.co.uk/article/scrapping-assault-ships-risks-nato-role-military-told-69ddr6qqr",
             "__typename": "Article"
           },
           {
-            "content": [
+            "summary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -623,13 +625,13 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-10-27T23:01:00.000Z",
-            "title": "New warplane costs $1\u00a0trillion to operate",
+            "headline": "New warplane costs $1\u00a0trillion to operate",
             "url":
               "https://www.thetimes.co.uk/article/new-f-35-warplane-costs-1-trillion-to-operate-sp6p3wdw2",
             "__typename": "Article"
           },
           {
-            "content": [
+            "summary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -658,13 +660,13 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-10-26T23:01:00.000Z",
-            "title": "Forces must find \u00a3300m for rising Trident costs",
+            "headline": "Forces must find \u00a3300m for rising Trident costs",
             "url":
               "https://www.thetimes.co.uk/article/forces-must-find-300m-for-rising-trident-costs-bmxnl9577",
             "__typename": "Article"
           },
           {
-            "content": [
+            "summary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -706,13 +708,13 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-10-25T23:01:00.000Z",
-            "title": "Britain mulls warships sale as military cuts deepen",
+            "headline": "Britain mulls warships sale as military cuts deepen",
             "url":
               "https://www.thetimes.co.uk/article/britain-mulls-warships-sale-as-military-cuts-deepen-2j0d0s5bs",
             "__typename": "Article"
           },
           {
-            "content": [
+            "summary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -754,13 +756,13 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-10-25T23:01:00.000Z",
-            "title": "\u2018MP criticism could harm arms deal\u2019",
+            "headline": "\u2018MP criticism could harm arms deal\u2019",
             "url":
               "https://www.thetimes.co.uk/article/mp-criticism-could-harm-saudi-arms-deal-warns-fallon-k97dxp3vj",
             "__typename": "Article"
           },
           {
-            "content": [
+            "summary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -803,7 +805,8 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-10-24T23:01:00.000Z",
-            "title": "US military officers raise fears over Royal Marine cuts",
+            "headline":
+              "US military officers raise fears over Royal Marine cuts",
             "url":
               "https://www.thetimes.co.uk/article/us-military-officers-raise-fears-over-royal-marine-cuts-gphqtd6pq",
             "__typename": "Article"

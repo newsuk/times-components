@@ -12,7 +12,7 @@ export const query = gql`
       articles {
         count
         list(first: $first, skip: $skip) {
-          content(maxCharCount: 145, markupType: "paragraph")
+          summary(maxCharCount: 145)
           id
           label
           leadAsset {
@@ -33,7 +33,7 @@ export const query = gql`
           }
           publicationName
           publishedTime
-          title
+          headline
           url
         }
       }

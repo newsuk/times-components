@@ -9916,8 +9916,8 @@ styled-components@2.2.3:
     supports-color "^3.2.3"
 
 stylis@3.x:
-  version "3.4.4"
-  resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.4.4.tgz#7dbc7e3ca3c8707b796cd217fe6f8fbe81e78464"
+  version "3.4.5"
+  resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.4.5.tgz#d7b9595fc18e7b9c8775eca8270a9a1d3e59806e"
 
 subcommander@1.0.0:
   version "1.0.0"
