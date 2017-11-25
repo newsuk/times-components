@@ -27,6 +27,8 @@ class AuthorProfileContent extends Component {
   constructor(props) {
     super(props);
 
+    this.pending = new Set();
+    this.pendingTimer = null;
     this.images = new Map();
     this.state = {
       images: new Map()
@@ -38,7 +40,7 @@ class AuthorProfileContent extends Component {
 
     const options = {
       rootMargin: "50px",
-      threshold: 1.0
+      threshold: 0.5
     };
 
     this.observer = new window.IntersectionObserver(
@@ -51,6 +53,10 @@ class AuthorProfileContent extends Component {
     if (this.observer) {
       this.observer.disconnect();
     }
+
+    clearTimeout(this.pendingTimer);
+    this.pending.clear();
+    this.images.clear();
   }
 
   getImageSize(nodeId) {
@@ -62,18 +68,32 @@ class AuthorProfileContent extends Component {
   }
 
   handleObservation(entries) {
-    const curImages = new Map();
-
-    entries.forEach(({ target, isIntersecting }) => {
-      if (isIntersecting && !this.state.images.get(target.id)) {
-        curImages.set(target.id, normaliseWidth(target.clientWidth));
+    entries.forEach(({ target, intersectionRatio }) => {
+      if (intersectionRatio >= 0.5 && !this.state.images.get(target.id)) {
+        this.pending.add(target);
+      } else if (intersectionRatio < 0.5 && this.pending.has(target)) {
+        this.pending.delete(target);
       }
     });
 
-    if (curImages.size) {
-      this.setState({
-        images: new Map([...this.state.images, ...curImages])
-      });
+    if (this.pending.size) {
+      clearTimeout(this.pendingTimer);
+      this.pendingTimer = setTimeout(() => {
+        if (!this.pending.size) {
+          return;
+        }
+
+        const curImages = new Map();
+
+        this.pending.forEach(node =>
+          curImages.set(node.id, normaliseWidth(node.clientWidth))
+        );
+
+        this.setState({
+          images: new Map([...this.state.images, ...curImages])
+        });
+        this.pending.clear();
+      }, 100);
     }
   }
 
