@@ -1,6 +1,6 @@
 import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { storiesOf } from "@storybook/react-native";
+import { storiesOf } from "../../storybook/storiesOfOverloader";
 import { Text, ScrollView, View } from "react-native";
 
 import Ad from "./ad";

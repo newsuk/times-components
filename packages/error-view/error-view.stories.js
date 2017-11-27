@@ -8,7 +8,7 @@ import {
   Text
 } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { storiesOf } from "@storybook/react-native";
+import { storiesOf } from "../../storybook/storiesOfOverloader";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { decorateAction } from "@storybook/addon-actions";
 // eslint-disable-next-line import/no-extraneous-dependencies

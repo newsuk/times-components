@@ -4,7 +4,7 @@ import { Button, StyleSheet, View } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { action } from "@storybook/addon-actions";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { storiesOf } from "@storybook/react-native";
+import { storiesOf } from "../../storybook/storiesOfOverloader";
 import { withTrackingContext, withTrackEvents } from "./tracking";
 
 const storybookReporter = action("analytics-event");
