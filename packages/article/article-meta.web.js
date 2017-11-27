@@ -4,22 +4,25 @@ import PropTypes from "prop-types";
 import ArticleByline from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
 
-import {ArticleMetaContainer, ArticleMetaElement, ArticleMiddleContainer} from "./styles/meta/styled-components";
-
+import {
+  ArticleMetaContainer,
+  ArticleMetaElement,
+  ArticleMiddleContainer
+} from "./styles/meta/styled-components";
 
 const ArticleMeta = ({ byline, publishedTime, publicationName }) => (
   <ArticleMiddleContainer>
-      <ArticleMetaContainer>
-          <ArticleMetaElement>
-              <ArticleByline ast={byline} />
-          </ArticleMetaElement>
-          <ArticleMetaElement>
-              <DatePublication
-                date={new Date(publishedTime)}
-                publication={publicationName}
-              />
-          </ArticleMetaElement>
-      </ArticleMetaContainer>
+    <ArticleMetaContainer>
+      <ArticleMetaElement>
+        <ArticleByline ast={byline} />
+      </ArticleMetaElement>
+      <ArticleMetaElement>
+        <DatePublication
+          date={new Date(publishedTime)}
+          publication={publicationName}
+        />
+      </ArticleMetaElement>
+    </ArticleMetaContainer>
   </ArticleMiddleContainer>
 );
 

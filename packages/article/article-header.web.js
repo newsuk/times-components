@@ -8,9 +8,15 @@ import {
   ExclusiveArticleFlag
 } from "@times-components/article-flag";
 import ArticleLabel from "@times-components/article-label";
-//import { Text, View } from "react-native";
+// import { Text, View } from "react-native";
 import styles from "./styles/header";
-import { StandFirst, ArticleLabelWrapper, ArticleFlag, ArticleFlagContainer, ArticleMainContentRow} from "./styles/header/styled-components";
+import {
+  StandFirst,
+  ArticleLabelWrapper,
+  ArticleFlag,
+  ArticleFlagContainer,
+  ArticleMainContentRow
+} from "./styles/header/styled-components";
 
 const flagsMapping = new Map([
   ["NEW", <NewArticleFlag />],
@@ -25,7 +31,7 @@ const renderFlags = flags => {
     <ArticleFlag>
       {flags.map(flag => (
         <ArticleFlagContainer key={flag}>
-            {flagsMapping.get(flag)}
+          {flagsMapping.get(flag)}
         </ArticleFlagContainer>
       ))}
     </ArticleFlag>
@@ -34,20 +40,15 @@ const renderFlags = flags => {
 
 const renderStandfirst = standfirst => {
   if (!standfirst) return null;
-  return (
-        <StandFirst testID="standfirst">
-          {standfirst}
-        </StandFirst>
-
-  );
+  return <StandFirst testID="standfirst">{standfirst}</StandFirst>;
 };
 
 const renderLabel = label => {
   if (!label) return null;
   return (
-      <ArticleLabelWrapper testID="label">
-        <ArticleLabel title={label} color="#13354E" />
-      </ArticleLabelWrapper>
+    <ArticleLabelWrapper testID="label">
+      <ArticleLabel title={label} color="#13354E" />
+    </ArticleLabelWrapper>
   );
 };
 
