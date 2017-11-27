@@ -249,11 +249,11 @@ exports[`Article test on ios renders article no flags 1`] = `
       style={
         Array [
           Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
+            "paddingTop": 9,
           },
           Object {
-            "paddingTop": 9,
+            "paddingLeft": 10,
+            "paddingRight": 10,
           },
         ]
       }
@@ -1097,11 +1097,11 @@ exports[`Article test on ios renders article no label 1`] = `
       style={
         Array [
           Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
+            "paddingTop": 9,
           },
           Object {
-            "paddingTop": 9,
+            "paddingLeft": 10,
+            "paddingRight": 10,
           },
         ]
       }
@@ -1808,11 +1808,11 @@ exports[`Article test on ios renders article no label no flags 1`] = `
       style={
         Array [
           Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
+            "paddingTop": 9,
           },
           Object {
-            "paddingTop": 9,
+            "paddingLeft": 10,
+            "paddingRight": 10,
           },
         ]
       }
@@ -2500,11 +2500,11 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
       style={
         Array [
           Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
+            "paddingTop": 9,
           },
           Object {
-            "paddingTop": 9,
+            "paddingLeft": 10,
+            "paddingRight": 10,
           },
         ]
       }
@@ -3360,11 +3360,11 @@ exports[`Article test on ios renders article no standfirst 1`] = `
       style={
         Array [
           Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
+            "paddingTop": 9,
           },
           Object {
-            "paddingTop": 9,
+            "paddingLeft": 10,
+            "paddingRight": 10,
           },
         ]
       }
@@ -4083,11 +4083,11 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
       style={
         Array [
           Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
+            "paddingTop": 9,
           },
           Object {
-            "paddingTop": 9,
+            "paddingLeft": 10,
+            "paddingRight": 10,
           },
         ]
       }
@@ -4912,11 +4912,11 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
       style={
         Array [
           Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
+            "paddingTop": 9,
           },
           Object {
-            "paddingTop": 9,
+            "paddingLeft": 10,
+            "paddingRight": 10,
           },
         ]
       }
@@ -5791,11 +5791,11 @@ exports[`Article test on ios renders full article 1`] = `
       style={
         Array [
           Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
+            "paddingTop": 9,
           },
           Object {
-            "paddingTop": 9,
+            "paddingLeft": 10,
+            "paddingRight": 10,
           },
         ]
       }

@@ -6,9 +6,7 @@ import {
   articleImageDefaultPropTypes
 } from "./article-image-proptypes";
 
-const ArticleImageWeb = props => {
-  return <ArticleImage {...props} />;
-};
+const ArticleImageWeb = props => <ArticleImage {...props} />;
 
 ArticleImageWeb.propTypes = articleImagePropTypes;
 ArticleImageWeb.defaultProps = articleImageDefaultPropTypes;

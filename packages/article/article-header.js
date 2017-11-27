@@ -8,8 +8,10 @@ import {
   ExclusiveArticleFlag
 } from "@times-components/article-flag";
 import ArticleLabel from "@times-components/article-label";
-import { Text, View } from "react-native";
+import { Text, View, ViewPropTypes } from "react-native";
 import styles from "./styles/header";
+
+const { style: ViewStylePropTypes } = ViewPropTypes;
 
 const flagsMapping = new Map([
   ["NEW", <NewArticleFlag />],
@@ -63,14 +65,14 @@ ArticleHeader.propTypes = {
   label: PropTypes.string,
   standfirst: PropTypes.string,
   flags: PropTypes.arrayOf(PropTypes.string),
-  style: PropTypes.arrayOf(PropTypes.number),
+  style: ViewStylePropTypes
 };
 
 ArticleHeader.defaultProps = {
   label: null,
   standfirst: null,
   flags: [],
-  style: []
+  style: {}
 };
 
 export default ArticleHeader;
