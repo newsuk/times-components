@@ -18,14 +18,14 @@ exports[`WithTrackScrollDepth renders when tracking context is missing 1`] = `
 </div>
 `;
 
-exports[`WithTrackScrollDepth tracks child views 1`] = `
+exports[`WithTrackScrollDepth tracks scroll depth 1`] = `
 Array [
   Array [
     Object {
-      "action": "Rendered",
+      "action": "Scrolled",
       "attrs": Object {
         "scrollDepth": Object {
-          "index": 1,
+          "itemNumber": 1,
           "total": 3,
         },
       },
@@ -34,10 +34,10 @@ Array [
   ],
   Array [
     Object {
-      "action": "Rendered",
+      "action": "Scrolled",
       "attrs": Object {
         "scrollDepth": Object {
-          "index": 2,
+          "itemNumber": 2,
           "total": 3,
         },
       },
@@ -46,10 +46,10 @@ Array [
   ],
   Array [
     Object {
-      "action": "Rendered",
+      "action": "Scrolled",
       "attrs": Object {
         "scrollDepth": Object {
-          "index": 3,
+          "itemNumber": 3,
           "total": 3,
         },
       },

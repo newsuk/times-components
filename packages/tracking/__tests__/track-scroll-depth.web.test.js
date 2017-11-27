@@ -62,7 +62,9 @@ class ListComponent extends React.Component {
     return (
       <View>
         {this.props.items.map(item => (
-          <Text key={item.someKey}>Item {item.someValue}</Text>
+          <Text key={item.someKey} id={item.elementId}>
+            Item {item.someValue}
+          </Text>
         ))}
       </View>
     );
@@ -87,12 +89,10 @@ describe("WithTrackScrollDepth", () => {
     FakeIntersectionObserver.clearObservering();
   });
 
-  it("tracks child views", () => {
+  it("tracks scroll depth", () => {
     const reporter = jest.fn();
     const ListWithChildTracking = withTestContext(
-      withTrackScrollDepth(ListComponent, {
-        childIdPropKey: "someKey"
-      }),
+      withTrackScrollDepth(ListComponent),
       { trackingObject: "TestObject" }
     );
 
@@ -100,9 +100,9 @@ describe("WithTrackScrollDepth", () => {
       <ListWithChildTracking
         analyticsStream={reporter}
         items={[
-          { someKey: "1", someValue: "one" },
-          { someKey: "2", someValue: "two" },
-          { someKey: "3", someValue: "three" }
+          { someKey: "1", someValue: "one", elementId: 1 },
+          { someKey: "2", someValue: "two", elementId: 2 },
+          { someKey: "3", someValue: "three", elementId: 3 }
         ]}
       />
     );
@@ -116,7 +116,6 @@ describe("WithTrackScrollDepth", () => {
     const reporter = jest.fn();
     const ListWithChildTracking = withTestContext(
       withTrackScrollDepth(ListComponent, {
-        childIdPropKey: "someKey",
         trackingName: "SomeItem"
       })
     );
@@ -124,7 +123,7 @@ describe("WithTrackScrollDepth", () => {
     renderer.create(
       <ListWithChildTracking
         analyticsStream={reporter}
-        items={[{ someKey: "1", someValue: "one" }]}
+        items={[{ someKey: "1", someValue: "one", elementId: 1 }]}
       />
     );
 
@@ -137,40 +136,13 @@ describe("WithTrackScrollDepth", () => {
     );
   });
 
-  it("accepts action name override", () => {
-    const reporter = jest.fn();
-    const ListWithChildTracking = withTestContext(
-      withTrackScrollDepth(ListComponent, {
-        childIdPropKey: "someKey",
-        actionName: "Scrolled"
-      })
-    );
-
-    renderer.create(
-      <ListWithChildTracking
-        analyticsStream={reporter}
-        items={[{ someKey: "1", someValue: "one" }]}
-      />
-    );
-
-    FakeIntersectionObserver.dispatchObservedAll();
-
-    expect(reporter).toHaveBeenCalledWith(
-      expect.objectContaining({
-        action: "Scrolled"
-      })
-    );
-  });
-
   it("applies tracking attrs", () => {
     const reporter = jest.fn();
     const ListWithChildTracking = withTestContext(
       withTrackScrollDepth(ListComponent, {
-        childIdPropKey: "someKey",
         getAttrs: props => ({
           id: props.someKey,
-          index: props.index,
-          total: props.total
+          myKey: "myVal"
         })
       })
     );
@@ -188,31 +160,24 @@ describe("WithTrackScrollDepth", () => {
       expect.objectContaining({
         attrs: expect.objectContaining({
           id: "1",
-          scrollDepth: {
-            index: 1,
-            total: 1
-          }
+          myKey: "myVal"
         })
       })
     );
   });
 
-  it("can track scroll events", () => {
+  it("emits events including scroll depth", () => {
     const reporter = jest.fn();
     const ListWithChildTracking = withTestContext(
-      withTrackScrollDepth(ListComponent, {
-        childIdPropKey: "someKey",
-        actionName: "Scrolled",
-        getAttrs: props => ({ depth: (props.index + 1) / props.total * 100 })
-      })
+      withTrackScrollDepth(ListComponent)
     );
 
     renderer.create(
       <ListWithChildTracking
         analyticsStream={reporter}
         items={[
-          { someKey: "1", someValue: "one" },
-          { someKey: "2", someValue: "two" }
+          { someKey: "1", someValue: "one", elementId: 1 },
+          { someKey: "2", someValue: "two", elementId: 2 }
         ]}
       />
     );
@@ -221,8 +186,9 @@ describe("WithTrackScrollDepth", () => {
 
     expect(reporter).toHaveBeenCalledWith(
       expect.objectContaining({
-        action: "Scrolled",
-        attrs: expect.objectContaining({ depth: 50 })
+        attrs: expect.objectContaining({
+          scrollDepth: { itemNumber: 2, total: 2 }
+        })
       })
     );
   });
@@ -234,10 +200,7 @@ describe("WithTrackScrollDepth", () => {
     );
 
     const ListWithChildTracking = withTestContext(
-      withTrackScrollDepth(ListComponent, {
-        childIdPropKey: "someKey",
-        getChildren: props => props.items
-      })
+      withTrackScrollDepth(ListComponent)
     );
 
     renderer

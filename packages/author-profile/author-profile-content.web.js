@@ -128,9 +128,12 @@ class AuthorProfileContent extends Component {
             id,
             isLoading: true
           }))
-      : articles;
+      : articles.map((article, idx) => ({
+          ...article,
+          elementId: `articleList-${page}-${idx}`
+        }));
 
-    receiveChildList(articles);
+    receiveChildList(data);
 
     return (
       <View>
@@ -151,21 +154,20 @@ class AuthorProfileContent extends Component {
                 const { id, url } = article;
                 const separatorComponent =
                   key > 0 ? <AuthorProfileItemSeparator /> : null;
-                const nodeId = `articleList-${page}-${key}`;
 
                 return (
                   <div
                     key={id}
-                    id={nodeId}
-                    accessibility-label={nodeId}
-                    data-testid={nodeId}
+                    id={article.elementId}
+                    accessibility-label={article.elementId}
+                    data-testid={article.elementId}
                     ref={node => this.registerNode(node)}
                   >
                     {separatorComponent}
                     <AuthorProfileItem
                       {...article}
                       imageRatio={imageRatio}
-                      imageSize={this.getImageSize(nodeId)}
+                      imageSize={this.getImageSize(article.elementId)}
                       onPress={e => onArticlePress(e, { id, url })}
                     />
                   </div>
@@ -181,7 +183,4 @@ class AuthorProfileContent extends Component {
 
 AuthorProfileContent.propTypes = propTypes;
 
-export default withTrackScrollDepth(AuthorProfileContent, {
-  childIdPropKey: "id",
-  actionName: "Scrolled"
-});
+export default withTrackScrollDepth(AuthorProfileContent);

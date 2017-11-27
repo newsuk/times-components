@@ -6,10 +6,7 @@ import resolveAttrs from "./resolve-attrs";
 
 export default (
   WrappedComponent,
-  {
-    trackingName,
-    getAttrs = () => ({})
-  } = {}
+  { trackingName, getAttrs = () => ({}) } = {}
 ) => {
   const componentName = getDisplayName(WrappedComponent);
 
@@ -29,7 +26,7 @@ export default (
         attrs: {
           ...resolveAttrs(getAttrs, childProps),
           scrollDepth: {
-            index: childProps.index + 1,
+            itemNumber: childProps.index + 1,
             total: childProps.total
           }
         }
@@ -37,11 +34,16 @@ export default (
     }
 
     receiveChildList(childList) {
+      childList.forEach(item => {
+        if (!item.elementId) {
+          console.error(`elementId missing for item: ${JSON.stringify(item)}`);
+        }
+      });
       this.childList = childList;
     }
 
     handleChildViewed(childData) {
-      const elementId = childData.elementId;
+      const { elementId } = childData;
 
       if (this.viewed.has(elementId)) {
         return;

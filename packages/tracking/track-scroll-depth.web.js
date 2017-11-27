@@ -7,10 +7,7 @@ import resolveAttrs from "./resolve-attrs";
 
 export default (
   WrappedComponent,
-  {
-    trackingName,
-    getAttrs = () => ({})
-  } = {}
+  { trackingName, getAttrs = () => ({}) } = {}
 ) => {
   const componentName = getDisplayName(WrappedComponent);
 
@@ -20,7 +17,7 @@ export default (
       this.receiveChildList = this.receiveChildList.bind(this);
       this.childData = {};
       this.viewed = new Set();
-      if (typeof window !== 'undefined' && window.IntersectionObserver) {
+      if (typeof window !== "undefined" && window.IntersectionObserver) {
         this.observer = new window.IntersectionObserver(
           this.onObserved.bind(this),
           {
@@ -68,7 +65,7 @@ export default (
         attrs: {
           ...resolveAttrs(getAttrs, childProps),
           scrollDepth: {
-            index: childProps.index + 1,
+            itemNumber: childProps.index + 1,
             total: childProps.total
           }
         }

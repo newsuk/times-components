@@ -20,4 +20,4 @@ exports[`WithTrackScrollDepth renders when tracking context is missing 1`] = `
 </Text>
 `;
 
-exports[`WithTrackScrollDepth tracks child views 1`] = `Array []`;
+exports[`WithTrackScrollDepth tracks scroll depth 1`] = `Array []`;

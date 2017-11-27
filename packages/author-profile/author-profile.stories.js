@@ -137,6 +137,33 @@ const withMockProvider = (child, client = defaultClient) => (
     {child}
   </MockedProvider>
 );
+const authProfileProviderProps = {
+  slug: "fiona-hamilton",
+  author: authorProfileFixture.data.author,
+  isLoading: false,
+  page: 2,
+  pageSize: 3,
+  onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
+  onArticlePress: preventDefaultedAction("onArticlePress"),
+  analyticsStream: storybookReporter
+};
+const slug = "fiona-hamilton";
+
+const authProfileProvider = withMockProvider(
+  <AuthorProfileProvider slug={slug}>
+    {({ author, isLoading, error }) => (
+      <AuthorProfile
+        {...authProfileProviderProps}
+        author={author}
+        page={1}
+        pageSize={5}
+        slug={slug}
+        isLoading={isLoading}
+        error={error}
+      />
+    )}
+  </AuthorProfileProvider>
+);
 
 storiesOf("AuthorProfile", module)
   .add("Default", () => {
@@ -166,32 +193,4 @@ storiesOf("AuthorProfile", module)
 
     return <AuthorProfileContent {...props} />;
   })
-  .add("With Provider and Tracking", () => {
-    const props = {
-      slug: "fiona-hamilton",
-      author: authorProfileFixture.data.author,
-      isLoading: false,
-      page: 2,
-      pageSize: 3,
-      onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
-      onArticlePress: preventDefaultedAction("onArticlePress"),
-      analyticsStream: storybookReporter
-    };
-    const slug = "fiona-hamilton";
-
-    return withMockProvider(
-      <AuthorProfileProvider slug={slug}>
-        {({ author, isLoading, error }) => (
-          <AuthorProfile
-            {...props}
-            author={author}
-            page={1}
-            pageSize={5}
-            slug={slug}
-            isLoading={isLoading}
-            error={error}
-          />
-        )}
-      </AuthorProfileProvider>
-    );
-  });
+  .add("With Provider and Tracking", () => authProfileProvider);

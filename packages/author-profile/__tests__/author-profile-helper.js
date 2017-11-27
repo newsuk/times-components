@@ -239,6 +239,55 @@ export default AuthorProfileContent => {
     );
   });
 
+  it("emits scroll tracking events for author profile content", () => {
+    const reporter = jest.fn();
+    const results = pagedResult(0, 3);
+    const authorProfileContent = shallow(
+      <AuthorProfileContent
+        count={10}
+        articles={results.data.author.articles.list}
+        author={authorProfileFixture.data.author}
+        slug="fiona-hamilton"
+        page={1}
+        pageSize={3}
+        imageRatio={3 / 2}
+        onTwitterLinkPress={() => {}}
+        onArticlePress={() => {}}
+      />,
+      {
+        context: {
+          tracking: {
+            analytics: reporter
+          }
+        }
+      }
+    );
+    authorProfileContent
+      .dive()
+      .instance()
+      .onViewableItemsChanged.call(authorProfileContent.instance(), {
+        changed: [
+          {
+            isViewable: true,
+            item: {
+              elementId: "articleList-1-2"
+            }
+          }
+        ]
+      });
+
+    expect(reporter).toHaveBeenCalledWith(
+      expect.objectContaining({
+        attrs: expect.objectContaining({
+          scrollDepth: {
+            itemNumber: 3,
+            total: 3
+          }
+        })
+      })
+    );
+  });
+
   it("renders profile separator", () => {
     const component = renderer.create(<AuthorProfileItemSeparator />);
 

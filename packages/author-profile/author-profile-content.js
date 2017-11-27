@@ -39,7 +39,6 @@ class AuthorProfileContent extends React.Component {
         count: nextProps.count
       });
     }
-    this.props.receiveChildList(nextProps.articles);
   }
 
   onViewableItemsChanged(info) {
@@ -93,7 +92,12 @@ class AuthorProfileContent extends React.Component {
             id,
             isLoading: true
           }))
-      : articles;
+      : articles.map((article, idx) => ({
+          ...article,
+          elementId: `articleList-${page}-${idx}`
+        }));
+
+    if (!articlesLoading) this.props.receiveChildList(data);
 
     return (
       <FlatList
@@ -143,7 +147,4 @@ class AuthorProfileContent extends React.Component {
 
 AuthorProfileContent.propTypes = propTypes;
 AuthorProfileContent.defaultProps = defaultProps;
-export default withTrackScrollDepth(AuthorProfileContent, {
-  childIdPropKey: "id",
-  actionName: "Scrolled"
-});
+export default withTrackScrollDepth(AuthorProfileContent);

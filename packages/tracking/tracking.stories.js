@@ -46,6 +46,15 @@ const BoxWithPressTrackingAndContext = withTrackingContext(
   { trackingObject: "TrackRenderStory" }
 );
 
+const BoxesWithTrackingContext = withTrackingContext(
+  withTrackScrollDepth(Boxes, {
+    getAttrs: props => ({
+      id: props.elementId
+    })
+  }),
+  { trackingObject: "Story" }
+);
+
 storiesOf("Tracking", module)
   .add("Page tracking", () => (
     <BoxWithTrackingContext analyticsStream={storybookReporter} color="red" />
@@ -57,18 +66,11 @@ storiesOf("Tracking", module)
       onPress={() => {}}
     />
   ))
-  .add("Child view tracking", () => {
+  .add("Scroll depth tracking", () => {
     const boxes = [...Array(50).keys()].map(i => ({
-      id: `box-${i + 1}`,
+      elementId: `box-${i + 1}`,
       color: i % 2 === 0 ? "green" : "blue"
     }));
-    const BoxesWithTrackingContext = withTrackingContext(
-      withTrackScrollDepth(Boxes, {
-        childIdPropKey: "id",
-        getAttrs: ({ id, index }) => ({ id, index })
-      }),
-      { trackingObject: "Story" }
-    );
     return (
       <BoxesWithTrackingContext
         onViewed={() => {}}
