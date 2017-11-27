@@ -12,13 +12,14 @@ import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
 
 import listViewDataHelper from "./data-helper";
-import styles, {
+import styles from "./styles/body";
+import {
   ResponsiveWrapper,
   PrimaryContainer,
   SecondaryContainer,
   InlineContainer,
   LeadAsset
-} from "./styles/body";
+} from "./styles/body/responsive";
 import ArticleHeader from "./article-header.web";
 import ArticleMeta from "./article-meta.web";
 
