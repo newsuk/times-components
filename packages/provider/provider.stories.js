@@ -1,7 +1,7 @@
 import React from "react";
 import { Text } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { storiesOf } from "@storybook/react-native";
+import { storiesOf } from "../../storybook/storiesOfOverloader";
 import { ApolloClient, IntrospectionFragmentMatcher, gql } from "react-apollo";
 import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";
 // eslint-disable-next-line import/no-extraneous-dependencies

@@ -2,7 +2,7 @@
 import React from "react";
 import ReactDOMServer from "react-dom/server";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { storiesOf } from "@storybook/react-native";
+import { storiesOf } from "../../storybook/storiesOfOverloader";
 import Card from "./card";
 import props from "./fixtures/card-props.json";
 import LateralSpacingDecorator from "../../storybook/decorators/lateral-spacing";
