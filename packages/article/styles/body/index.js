@@ -76,3 +76,20 @@ export const InlineContainer = styled(View)`
     padding-right: 0;
   }
 `;
+
+export const LeadAsset = styled(View)`
+  margin-bottom: 10px;
+`;
+
+export const ArticleTextElement = styled(View)`
+  font-family: "TimesDigitalW04";
+  line-height: 26px;
+  font-size: 17px;
+  margin-bottom: 25px;
+  color: "#333333";
+`;
+
+export const ArticleMainContentRow = styled(View)`
+  padding-left: 10px;
+  padding-right: 10px;
+`;

@@ -8,9 +8,9 @@ import {
   ExclusiveArticleFlag
 } from "@times-components/article-flag";
 import ArticleLabel from "@times-components/article-label";
-import { Text, View } from "react-native";
+//import { Text, View } from "react-native";
 import styles from "./styles/header";
-//import {ArticleHeadLineText, StandFirst, ArticleLabelWrapper, ArticleFlag, ArticleFlagContainer, ArticleMainContentRow} from "./styles/body/styled-components";
+import { StandFirst, ArticleLabelWrapper, ArticleFlag, ArticleFlagContainer, ArticleMainContentRow} from "./styles/header/styled-components";
 
 const flagsMapping = new Map([
   ["NEW", <NewArticleFlag />],
@@ -22,41 +22,42 @@ const flagsMapping = new Map([
 const renderFlags = flags => {
   if (!flags.length) return null;
   return (
-    <View style={[styles.articleFlag]}>
+    <ArticleFlag>
       {flags.map(flag => (
-        <View key={flag} style={styles.articleFlagContainer}>
-          {flagsMapping.get(flag)}
-        </View>
+        <ArticleFlagContainer key={flag}>
+            {flagsMapping.get(flag)}
+        </ArticleFlagContainer>
       ))}
-    </View>
+    </ArticleFlag>
   );
 };
 
 const renderStandfirst = standfirst => {
   if (!standfirst) return null;
   return (
-    <Text testID="standfirst" style={[styles.standFirst]}>
-      {standfirst}
-    </Text>
+        <StandFirst testID="standfirst">
+          {standfirst}
+        </StandFirst>
+
   );
 };
 
 const renderLabel = label => {
   if (!label) return null;
   return (
-    <View testID="label" style={styles.articleLabel}>
-      <ArticleLabel title={label} color="#13354E" />
-    </View>
+      <ArticleLabelWrapper testID="label">
+        <ArticleLabel title={label} color="#13354E" />
+      </ArticleLabelWrapper>
   );
 };
 
 const ArticleHeader = ({ label, headline, standfirst, flags }) => (
-  <View style={[styles.articleMainContentRow]}>
+  <ArticleMainContentRow>
     {renderLabel(label)}
     <ArticleHeadline text={headline} style={styles.articleHeadLineText} />
     {renderStandfirst(standfirst)}
     {renderFlags(flags)}
-  </View>
+  </ArticleMainContentRow>
 );
 
 ArticleHeader.propTypes = {

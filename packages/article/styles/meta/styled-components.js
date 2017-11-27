@@ -26,8 +26,8 @@ export const ArticleMetaElement = styled(View)`
 //  Added ArticleMainContentRow style in this
 export const ArticleMiddleContainer = styled(View)`
   padding-top: 9px ;
-  padding-left: 10px;
-  padding-right: 10px;
+  //padding-left: 10px;
+  //padding-right: 10px;
 `;
 
 // export const ArticleMainContentRow = styled(View)`

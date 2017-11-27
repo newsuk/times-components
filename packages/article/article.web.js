@@ -16,10 +16,11 @@ import styles, {
   ResponsiveWrapper,
   PrimaryContainer,
   SecondaryContainer,
-  InlineContainer
+  InlineContainer,
+  LeadAsset
 } from "./styles/body";
-import ArticleHeader from "./article-header";
-import ArticleMeta from "./article-meta";
+import ArticleHeader from "./article-header.web";
+import ArticleMeta from "./article-meta.web";
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 const listViewPageSize = 1;
@@ -34,9 +35,9 @@ class ArticlePage extends React.Component {
   static renderRow(rowData) {
     if (rowData.type === "leadAsset") {
       return (
-        <View testID="leadAsset" style={styles.leadAsset}>
+        <LeadAsset testID="leadAsset">
           <Image uri={rowData.data.crop.url} aspectRatio={16 / 9} />
-        </View>
+        </LeadAsset>
       );
     } else if (rowData.type === "header") {
       const { headline, flags, standfirst, label } = rowData.data;

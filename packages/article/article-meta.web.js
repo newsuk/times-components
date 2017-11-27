@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View} from "react-native";
 
 import ArticleByline from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
@@ -10,25 +9,17 @@ import {ArticleMetaContainer, ArticleMetaElement, ArticleMiddleContainer} from "
 
 const ArticleMeta = ({ byline, publishedTime, publicationName }) => (
   <ArticleMiddleContainer>
-    <View>
       <ArticleMetaContainer>
-        <View>
           <ArticleMetaElement>
-            <View>
               <ArticleByline ast={byline} />
-            </View>
           </ArticleMetaElement>
           <ArticleMetaElement>
-            <View>
               <DatePublication
                 date={new Date(publishedTime)}
                 publication={publicationName}
               />
-            </View>
           </ArticleMetaElement>
-        </View>
       </ArticleMetaContainer>
-    </View>
   </ArticleMiddleContainer>
 );
 
