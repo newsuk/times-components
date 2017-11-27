@@ -36,7 +36,11 @@ const renderFlags = flags => {
 const renderStandfirst = standfirst => {
   if (!standfirst) return null;
   return (
-    <Text testID="standfirst" style={[styles.standFirst]}>
+    <Text
+      accessibilityLabel="standfirst"
+      testID="standfirst"
+      style={[styles.standFirst]}
+    >
       {standfirst}
     </Text>
   );
@@ -45,7 +49,7 @@ const renderStandfirst = standfirst => {
 const renderLabel = label => {
   if (!label) return null;
   return (
-    <View testID="label" style={styles.articleLabel}>
+    <View accessibilityLabel="label" testID="label" style={styles.articleLabel}>
       <ArticleLabel title={label} color="#13354E" />
     </View>
   );

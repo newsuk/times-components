@@ -1,5 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Card test on web does not re-render fixed prop changes 1`] = `"SUNDAYTIMES"`;
+
+exports[`Card test on web re-renders when image size changes 1`] = `"https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=620"`;
+
+exports[`Card test on web re-renders when image uri changes 1`] = `"http://foo &resize=360"`;
+
+exports[`Card test on web re-renders when is loading changes 1`] = `
+<TimesImage
+  aspectRatio={1.5}
+  style={Object {}}
+  uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
+/>
+`;
+
 exports[`Card test on web renders 1`] = `
 .c1 {
   -webkit-box-flex: 1;
@@ -78,7 +92,7 @@ exports[`Card test on web renders 1`] = `
         >
           <img
             alt=""
-            src="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=320"
+            src="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
             style={
               Object {
                 "display": "block",
@@ -171,6 +185,7 @@ exports[`Card test on web renders 1`] = `
           </span>
         </div>
         <div
+          aria-label="datePublication"
           className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
           data-testid="datePublication"
           dir="auto"
@@ -442,6 +457,7 @@ exports[`Card test on web renders without image 1`] = `
           </span>
         </div>
         <div
+          aria-label="datePublication"
           className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
           data-testid="datePublication"
           dir="auto"
@@ -570,6 +586,7 @@ exports[`Card test on web renders without image url 1`] = `
           </span>
         </div>
         <div
+          aria-label="datePublication"
           className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
           data-testid="datePublication"
           dir="auto"

@@ -3,7 +3,12 @@ import PropTypes from "prop-types";
 import { StyleSheet, View } from "react-native";
 import Image from "@times-components/image";
 import Gradient from "@times-components/gradient";
-import styles from "./card-styles";
+
+const styles = StyleSheet.create({
+  imageContainer: {
+    marginBottom: 10
+  }
+});
 
 const gradientStyles = StyleSheet.create({
   headerContainer: {
@@ -20,21 +25,17 @@ const gradientStyles = StyleSheet.create({
   }
 });
 
-const Loading = ({ horizontal, aspectRatio, style }) => {
-  const layoutStyles = horizontal ? styles.horizontal : styles.vertical;
-
+const Loading = ({ aspectRatio }) => {
   const imageComponent = (
-    <View style={[layoutStyles.childrenContainer, layoutStyles.imageContainer]}>
-      <Image style={layoutStyles.image} aspectRatio={aspectRatio} />
+    <View style={styles.imageContainer}>
+      <Image aspectRatio={aspectRatio} />
     </View>
   );
 
   return (
-    <View style={[layoutStyles.container, style]}>
+    <View>
       {imageComponent}
-      <View
-        style={[layoutStyles.childrenContainer, layoutStyles.summaryContainer]}
-      >
+      <View>
         <Gradient style={[gradientStyles.headerContainer]} degrees={264} />
         <Gradient style={[gradientStyles.textContainer]} degrees={267} />
         <Gradient style={[gradientStyles.textContainer]} degrees={267} />
@@ -48,15 +49,11 @@ const Loading = ({ horizontal, aspectRatio, style }) => {
 };
 
 Loading.defaultProps = {
-  horizontal: false,
-  aspectRatio: 1,
-  style: null
+  aspectRatio: 1
 };
 
 Loading.propTypes = {
-  horizontal: PropTypes.bool,
-  aspectRatio: PropTypes.number,
-  style: View.propTypes.style
+  aspectRatio: PropTypes.number
 };
 
 export default Loading;

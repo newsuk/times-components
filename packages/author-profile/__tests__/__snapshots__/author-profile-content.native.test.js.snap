@@ -2,6 +2,7 @@
 
 exports[`does not re-render the author head if the name changes 1`] = `
 <Text
+  accessibility-label="author-name"
   accessibilityRole="heading"
   accessible={true}
   allowFontScaling={true}
@@ -23,6 +24,7 @@ exports[`does not re-render the author head if the name changes 1`] = `
 
 exports[`does re-render the author head if the loading state changes 1`] = `
 <Text
+  accessibility-label="author-name"
   accessibilityRole="heading"
   accessible={true}
   allowFontScaling={true}
@@ -56,7 +58,7 @@ exports[`renders profile content 1`] = `
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
     <AuthorProfilePagination
-      count={10}
+      count={20}
       hideResults={true}
       onNext={[Function]}
       onPrev={[Function]}
@@ -128,10 +130,10 @@ exports[`renders profile content 1`] = `
         onTwitterLinkPress={[Function]}
         title="Legal Editor"
         twitter="jdoe"
-        uri="https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200"
+        uri="//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
       />
       <AuthorProfilePagination
-        count={10}
+        count={20}
         hideResults={false}
         onNext={[Function]}
         onPrev={[Function]}
@@ -140,6 +142,7 @@ exports[`renders profile content 1`] = `
       />
     </View>
   }
+  accessibilityID="scroll-view"
   data={
     Array [
       Object {
@@ -239,6 +242,7 @@ exports[`renders profile content 1`] = `
             }
           >
             <Text
+              accessibility-label="author-name"
               accessibilityRole="heading"
               accessible={true}
               allowFontScaling={true}
@@ -383,7 +387,7 @@ exports[`renders profile content 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200",
+                      "uri": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
                     }
                   }
                   style={
@@ -518,7 +522,7 @@ exports[`renders profile content 1`] = `
                     ]
                   }
                 >
-                  Showing 1 - 10 of 10 results
+                  Showing 1 - 10 of 20 results
                 </Text>
               </View>
               <View
@@ -541,7 +545,77 @@ exports[`renders profile content 1`] = `
                 }
               >
                 <View />
-                <View />
+                <View>
+                  <View
+                    accessibilityComponentType={undefined}
+                    accessibilityLabel={undefined}
+                    accessibilityTraits={undefined}
+                    accessible={true}
+                    collapsable={undefined}
+                    hitSlop={undefined}
+                    isTVSelectable={true}
+                    nativeID={undefined}
+                    onLayout={undefined}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      Object {
+                        "opacity": 1,
+                      }
+                    }
+                    testID={undefined}
+                    tvParallaxProperties={undefined}
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "flexDirection": "row",
+                          "marginLeft": 10,
+                          "marginRight": 12,
+                        }
+                      }
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "color": "#006699",
+                            "fontFamily": "GillSansMTStd-Medium",
+                            "fontSize": 15,
+                            "height": 15,
+                            "marginRight": 10,
+                            "textAlign": "right",
+                          }
+                        }
+                      >
+                        Next
+                      </Text>
+                      <svg
+                        height={9}
+                        style={Object {}}
+                        viewBox="42 12 60 120"
+                        width={5}
+                      >
+                        <g
+                          fill="#006699"
+                          style={Object {}}
+                        >
+                          <path
+                            d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                            style={Object {}}
+                          />
+                        </g>
+                      </svg>
+                    </View>
+                  </View>
+                </View>
               </View>
             </View>
           </View>
@@ -566,33 +640,13 @@ exports[`renders profile content 1`] = `
           ]
         }
       >
-        <View
-          onLayout={[Function]}
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "flexDirection": "row",
-                },
-                null,
-              ]
-            }
-          >
+        <View>
+          <View>
             <View
               style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 2,
-                    "marginBottom": 0,
-                    "marginRight": 10,
-                  },
-                ]
+                Object {
+                  "marginBottom": 10,
+                }
               }
             >
               <View
@@ -682,20 +736,7 @@ exports[`renders profile content 1`] = `
                 </View>
               </View>
             </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 3,
-                  },
-                ]
-              }
-            >
+            <View>
               <View
                 style={
                   Array [
@@ -916,33 +957,13 @@ exports[`renders profile content 1`] = `
           ]
         }
       >
-        <View
-          onLayout={[Function]}
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "flexDirection": "row",
-                },
-                null,
-              ]
-            }
-          >
+        <View>
+          <View>
             <View
               style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 2,
-                    "marginBottom": 0,
-                    "marginRight": 10,
-                  },
-                ]
+                Object {
+                  "marginBottom": 10,
+                }
               }
             >
               <View
@@ -1032,20 +1053,7 @@ exports[`renders profile content 1`] = `
                 </View>
               </View>
             </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 3,
-                  },
-                ]
-              }
-            >
+            <View>
               <View
                 style={
                   Array [
@@ -1266,33 +1274,13 @@ exports[`renders profile content 1`] = `
           ]
         }
       >
-        <View
-          onLayout={[Function]}
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "flexDirection": "row",
-                },
-                null,
-              ]
-            }
-          >
+        <View>
+          <View>
             <View
               style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 2,
-                    "marginBottom": 0,
-                    "marginRight": 10,
-                  },
-                ]
+                Object {
+                  "marginBottom": 10,
+                }
               }
             >
               <View
@@ -1382,20 +1370,7 @@ exports[`renders profile content 1`] = `
                 </View>
               </View>
             </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 3,
-                  },
-                ]
-              }
-            >
+            <View>
               <View
                 style={
                   Array [
@@ -1616,33 +1591,13 @@ exports[`renders profile content 1`] = `
           ]
         }
       >
-        <View
-          onLayout={[Function]}
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "flexDirection": "row",
-                },
-                null,
-              ]
-            }
-          >
+        <View>
+          <View>
             <View
               style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 2,
-                    "marginBottom": 0,
-                    "marginRight": 10,
-                  },
-                ]
+                Object {
+                  "marginBottom": 10,
+                }
               }
             >
               <View
@@ -1732,20 +1687,7 @@ exports[`renders profile content 1`] = `
                 </View>
               </View>
             </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 3,
-                  },
-                ]
-              }
-            >
+            <View>
               <View
                 style={
                   Array [
@@ -1966,33 +1908,13 @@ exports[`renders profile content 1`] = `
           ]
         }
       >
-        <View
-          onLayout={[Function]}
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "flexDirection": "row",
-                },
-                null,
-              ]
-            }
-          >
+        <View>
+          <View>
             <View
               style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 2,
-                    "marginBottom": 0,
-                    "marginRight": 10,
-                  },
-                ]
+                Object {
+                  "marginBottom": 10,
+                }
               }
             >
               <View
@@ -2082,20 +2004,7 @@ exports[`renders profile content 1`] = `
                 </View>
               </View>
             </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 3,
-                  },
-                ]
-              }
-            >
+            <View>
               <View
                 style={
                   Array [
@@ -2316,33 +2225,13 @@ exports[`renders profile content 1`] = `
           ]
         }
       >
-        <View
-          onLayout={[Function]}
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "flexDirection": "row",
-                },
-                null,
-              ]
-            }
-          >
+        <View>
+          <View>
             <View
               style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 2,
-                    "marginBottom": 0,
-                    "marginRight": 10,
-                  },
-                ]
+                Object {
+                  "marginBottom": 10,
+                }
               }
             >
               <View
@@ -2432,20 +2321,7 @@ exports[`renders profile content 1`] = `
                 </View>
               </View>
             </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 3,
-                  },
-                ]
-              }
-            >
+            <View>
               <View
                 style={
                   Array [
@@ -2666,33 +2542,13 @@ exports[`renders profile content 1`] = `
           ]
         }
       >
-        <View
-          onLayout={[Function]}
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "flexDirection": "row",
-                },
-                null,
-              ]
-            }
-          >
+        <View>
+          <View>
             <View
               style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 2,
-                    "marginBottom": 0,
-                    "marginRight": 10,
-                  },
-                ]
+                Object {
+                  "marginBottom": 10,
+                }
               }
             >
               <View
@@ -2782,20 +2638,7 @@ exports[`renders profile content 1`] = `
                 </View>
               </View>
             </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 3,
-                  },
-                ]
-              }
-            >
+            <View>
               <View
                 style={
                   Array [
@@ -3016,33 +2859,13 @@ exports[`renders profile content 1`] = `
           ]
         }
       >
-        <View
-          onLayout={[Function]}
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "flexDirection": "row",
-                },
-                null,
-              ]
-            }
-          >
+        <View>
+          <View>
             <View
               style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 2,
-                    "marginBottom": 0,
-                    "marginRight": 10,
-                  },
-                ]
+                Object {
+                  "marginBottom": 10,
+                }
               }
             >
               <View
@@ -3132,20 +2955,7 @@ exports[`renders profile content 1`] = `
                 </View>
               </View>
             </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 3,
-                  },
-                ]
-              }
-            >
+            <View>
               <View
                 style={
                   Array [
@@ -3366,33 +3176,13 @@ exports[`renders profile content 1`] = `
           ]
         }
       >
-        <View
-          onLayout={[Function]}
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "flexDirection": "row",
-                },
-                null,
-              ]
-            }
-          >
+        <View>
+          <View>
             <View
               style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 2,
-                    "marginBottom": 0,
-                    "marginRight": 10,
-                  },
-                ]
+                Object {
+                  "marginBottom": 10,
+                }
               }
             >
               <View
@@ -3482,20 +3272,7 @@ exports[`renders profile content 1`] = `
                 </View>
               </View>
             </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 3,
-                  },
-                ]
-              }
-            >
+            <View>
               <View
                 style={
                   Array [
@@ -3716,33 +3493,13 @@ exports[`renders profile content 1`] = `
           ]
         }
       >
-        <View
-          onLayout={[Function]}
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "flexDirection": "row",
-                },
-                null,
-              ]
-            }
-          >
+        <View>
+          <View>
             <View
               style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 2,
-                    "marginBottom": 0,
-                    "marginRight": 10,
-                  },
-                ]
+                Object {
+                  "marginBottom": 10,
+                }
               }
             >
               <View
@@ -3832,20 +3589,7 @@ exports[`renders profile content 1`] = `
                 </View>
               </View>
             </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 3,
-                  },
-                ]
-              }
-            >
+            <View>
               <View
                 style={
                   Array [
@@ -4083,7 +3827,77 @@ exports[`renders profile content 1`] = `
               }
             >
               <View />
-              <View />
+              <View>
+                <View
+                  accessibilityComponentType={undefined}
+                  accessibilityLabel={undefined}
+                  accessibilityTraits={undefined}
+                  accessible={true}
+                  collapsable={undefined}
+                  hitSlop={undefined}
+                  isTVSelectable={true}
+                  nativeID={undefined}
+                  onLayout={undefined}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "opacity": 1,
+                    }
+                  }
+                  testID={undefined}
+                  tvParallaxProperties={undefined}
+                >
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "marginLeft": 10,
+                        "marginRight": 12,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#006699",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 15,
+                          "height": 15,
+                          "marginRight": 10,
+                          "textAlign": "right",
+                        }
+                      }
+                    >
+                      Next
+                    </Text>
+                    <svg
+                      height={9}
+                      style={Object {}}
+                      viewBox="42 12 60 120"
+                      width={5}
+                    >
+                      <g
+                        fill="#006699"
+                        style={Object {}}
+                      >
+                        <path
+                          d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                          style={Object {}}
+                        />
+                      </g>
+                    </svg>
+                  </View>
+                </View>
+              </View>
             </View>
           </View>
         </View>
@@ -4127,6 +3941,7 @@ exports[`renders profile content component 1`] = `
       />
     </View>
   }
+  accessibilityID="scroll-view"
   data={
     Array [
       Object {
@@ -4137,42 +3952,29 @@ exports[`renders profile content component 1`] = `
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, ",
+                  "value": "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and",
                 },
                 "children": Array [],
                 "name": "text",
-              },
-              Object {
-                "attributes": Object {},
-                "children": Array [
-                  Object {
-                    "attributes": Object {
-                      "value": "The",
-                    },
-                    "children": Array [],
-                    "name": "text",
-                  },
-                ],
-                "name": "italic",
               },
             ],
             "name": "paragraph",
           },
         ],
-        "id": "97c64f20-cb67-11e4-a202-50ac5def393a",
-        "label": null,
+        "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
+        "label": "",
         "leadAsset": Object {
           "__typename": "Image",
           "crop": Object {
             "__typename": "Crop",
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Feb7842ee-748a-11e7-93f8-c74b9ea57adf.jpg?crop=2250%2C1500%2C-0%2C-0&resize=996",
+            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0",
           },
-          "title": "British trio stopped on the way to join Isis",
+          "title": "Title",
         },
         "publicationName": "TIMES",
-        "publishedTime": 2015-03-23T23:06:34.000Z,
-        "title": "British trio stopped on the way to join Isis",
-        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/british-trio-stopped-on-the-way-to-join-isis-57nwljmbn",
+        "publishedTime": 2017-11-17T00:01:00.000Z,
+        "title": "Top medal for forces dog who took a bite out of the Taliban",
+        "url": "https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f",
       },
       Object {
         "__typename": "Article",
@@ -4181,94 +3983,8 @@ exports[`renders profile content component 1`] = `
             "attributes": Object {},
             "children": Array [
               Object {
-                "attributes": Object {},
-                "children": Array [
-                  Object {
-                    "attributes": Object {
-                      "value": "Victoria",
-                    },
-                    "children": Array [],
-                    "name": "text",
-                  },
-                ],
-                "name": "bold",
-              },
-              Object {
-                "attributes": Object {},
-                "children": Array [],
-                "name": "break",
-              },
-              Object {
                 "attributes": Object {
-                  "value": " ITV",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-              Object {
-                "attributes": Object {},
-                "children": Array [],
-                "name": "break",
-              },
-              Object {
-                "attributes": Object {
-                  "value": "★★★★☆",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-            ],
-            "name": "paragraph",
-          },
-          Object {
-            "attributes": Object {},
-            "children": Array [
-              Object {
-                "attributes": Object {},
-                "children": Array [
-                  Object {
-                    "attributes": Object {
-                      "value": "Lucy Worsley’s Nights at the Opera",
-                    },
-                    "children": Array [],
-                    "name": "text",
-                  },
-                ],
-                "name": "bold",
-              },
-              Object {
-                "attributes": Object {},
-                "children": Array [],
-                "name": "break",
-              },
-              Object {
-                "attributes": Object {
-                  "value": " BBC Two",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-              Object {
-                "attributes": Object {},
-                "children": Array [],
-                "name": "break",
-              },
-              Object {
-                "attributes": Object {
-                  "value": "★★★☆☆",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-            ],
-            "name": "paragraph",
-          },
-          Object {
-            "attributes": Object {},
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": "Poor old Harriet, Duchess of Sutherland. There she was giddily expecting a",
+                  "value": "The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist",
                 },
                 "children": Array [],
                 "name": "text",
@@ -4277,31 +3993,52 @@ exports[`renders profile content component 1`] = `
             "name": "paragraph",
           },
         ],
-        "id": "1f18ebd0-671f-40e0-a190-82dd8af1a294",
-        "label": null,
+        "id": "4e6894ec-cb18-11e7-b529-95e3fc05f40f",
+        "label": "",
         "leadAsset": Object {
           "__typename": "Image",
           "crop": Object {
             "__typename": "Crop",
-            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2bb30674-b008-11e7-8f75-2b6f1159f66f.jpg?crop=4815%2C3210%2C85%2C1582&resize=640",
+            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745",
           },
-          "title": "",
+          "title": "Title",
         },
         "publicationName": "TIMES",
-        "publishedTime": 2015-03-17T23:00:44.000Z,
-        "title": "TV review: Victoria; Lucy Worsley’s Nights at the Opera",
-        "url": "https://www.thetimes.co.uk/article/tv-review-victoria-lucy-worsleys-nights-at-the-opera-x2q80h7gj",
+        "publishedTime": 2017-11-17T00:01:00.000Z,
+        "title": "Social media must raise game to beat terrorists, says UN chief",
+        "url": "https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0",
       },
       Object {
         "__typename": "Article",
-        "content": Array [],
-        "id": "2c18ebd0-671f-40e0-a190-82dd8af1a294",
-        "label": null,
-        "leadAsset": null,
+        "content": Array [
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "id": "f79c9d8c-c95c-11e7-b529-95e3fc05f40f",
+        "label": "",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0",
+          },
+          "title": "Nad e Ali in Helmand province, Afghanistan.",
+        },
         "publicationName": "TIMES",
-        "publishedTime": 2015-03-23T23:06:34.000Z,
-        "title": "A blank article with a server rendered component",
-        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/a-blank-article-with-a-server-rendered-component-35pjwxj8n",
+        "publishedTime": 2017-11-14T17:00:00.000Z,
+        "title": "Cuts have left the army 20 years out of date, says former general",
+        "url": "https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn",
       },
     ]
   }
@@ -4360,6 +4097,7 @@ exports[`renders profile content component 1`] = `
             }
           >
             <Text
+              accessibility-label="author-name"
               accessibilityRole="heading"
               accessible={true}
               allowFontScaling={true}
@@ -4612,32 +4350,16 @@ exports[`renders profile content component 1`] = `
           }
         >
           <View
-            onLayout={[Function]}
+            onLayout={undefined}
           >
             <View
-              style={
-                Array [
-                  Object {
-                    "flexDirection": "row",
-                  },
-                  undefined,
-                ]
-              }
+              style={undefined}
             >
               <View
                 style={
-                  Array [
-                    Object {
-                      "flexGrow": 1,
-                      "flexShrink": 1,
-                    },
-                    Object {
-                      "flexBasis": 0,
-                      "flexGrow": 2,
-                      "marginBottom": 0,
-                      "marginRight": 10,
-                    },
-                  ]
+                  Object {
+                    "marginBottom": 10,
+                  }
                 }
               >
                 <View
@@ -4656,7 +4378,7 @@ exports[`renders profile content component 1`] = `
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Feb7842ee-748a-11e7-93f8-c74b9ea57adf.jpg?crop=2250%2C1500%2C-0%2C-0&resize=996",
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=660",
                         }
                       }
                       style={
@@ -4732,20 +4454,7 @@ exports[`renders profile content component 1`] = `
                   </View>
                 </View>
               </View>
-              <View
-                style={
-                  Array [
-                    Object {
-                      "flexGrow": 1,
-                      "flexShrink": 1,
-                    },
-                    Object {
-                      "flexBasis": 0,
-                      "flexGrow": 3,
-                    },
-                  ]
-                }
-              >
+              <View>
                 <View
                   style={Object {}}
                 >
@@ -4762,7 +4471,9 @@ exports[`renders profile content component 1`] = `
                         "marginBottom": 2,
                       }
                     }
-                  />
+                  >
+                    
+                  </Text>
                   <Text
                     accessible={true}
                     allowFontScaling={true}
@@ -4778,7 +4489,7 @@ exports[`renders profile content component 1`] = `
                       }
                     }
                   >
-                    British trio stopped on the way to join Isis
+                    Top medal for forces dog who took a bite out of the Taliban
                   </Text>
                   <Text
                     accessible={true}
@@ -4800,23 +4511,12 @@ exports[`renders profile content component 1`] = `
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                     >
-                      A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State,
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Object {
-                            "fontStyle": "italic",
-                          }
-                        }
-                      >
-                        The
-                      </Text>
+                      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
                       ...
                     </Text>
                   </Text>
                   <Text
+                    accessibilityLabel="datePublication"
                     accessible={true}
                     allowFontScaling={true}
                     ellipsizeMode="tail"
@@ -4833,7 +4533,7 @@ exports[`renders profile content component 1`] = `
                     }
                     testID="datePublication"
                   >
-                    Monday March 23 2015
+                    Friday November 17 2017
                     , The Times
                   </Text>
                 </View>
@@ -4903,32 +4603,16 @@ exports[`renders profile content component 1`] = `
           }
         >
           <View
-            onLayout={[Function]}
+            onLayout={undefined}
           >
             <View
-              style={
-                Array [
-                  Object {
-                    "flexDirection": "row",
-                  },
-                  undefined,
-                ]
-              }
+              style={undefined}
             >
               <View
                 style={
-                  Array [
-                    Object {
-                      "flexGrow": 1,
-                      "flexShrink": 1,
-                    },
-                    Object {
-                      "flexBasis": 0,
-                      "flexGrow": 2,
-                      "marginBottom": 0,
-                      "marginRight": 10,
-                    },
-                  ]
+                  Object {
+                    "marginBottom": 10,
+                  }
                 }
               >
                 <View
@@ -4947,7 +4631,7 @@ exports[`renders profile content component 1`] = `
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2bb30674-b008-11e7-8f75-2b6f1159f66f.jpg?crop=4815%2C3210%2C85%2C1582&resize=640",
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745&resize=660",
                         }
                       }
                       style={
@@ -5023,20 +4707,7 @@ exports[`renders profile content component 1`] = `
                   </View>
                 </View>
               </View>
-              <View
-                style={
-                  Array [
-                    Object {
-                      "flexGrow": 1,
-                      "flexShrink": 1,
-                    },
-                    Object {
-                      "flexBasis": 0,
-                      "flexGrow": 3,
-                    },
-                  ]
-                }
-              >
+              <View>
                 <View
                   style={Object {}}
                 >
@@ -5053,7 +4724,9 @@ exports[`renders profile content component 1`] = `
                         "marginBottom": 2,
                       }
                     }
-                  />
+                  >
+                    
+                  </Text>
                   <Text
                     accessible={true}
                     allowFontScaling={true}
@@ -5069,7 +4742,7 @@ exports[`renders profile content component 1`] = `
                       }
                     }
                   >
-                    TV review: Victoria; Lucy Worsley’s Nights at the Opera
+                    Social media must raise game to beat terrorists, says UN chief
                   </Text>
                   <Text
                     accessible={true}
@@ -5091,85 +4764,12 @@ exports[`renders profile content component 1`] = `
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                     >
-                      
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Object {
-                            "fontWeight": "bold",
-                          }
-                        }
-                      >
-                        Victoria
-                      </Text>
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                      >
-                        
-
-                      </Text>
-                      ITV
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                      >
-                        
-
-                      </Text>
-                      ★★★★☆
-                    </Text>
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
-                       
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Object {
-                            "fontWeight": "bold",
-                          }
-                        }
-                      >
-                        Lucy Worsley’s Nights at the Opera
-                      </Text>
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                      >
-                        
-
-                      </Text>
-                      BBC Two
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                      >
-                        
-
-                      </Text>
-                      ★★★☆☆
-                    </Text>
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
-                      Poor old Harriet, Duchess of Sutherland. There she was giddily expecting a
+                      The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist
                       ...
                     </Text>
                   </Text>
                   <Text
+                    accessibilityLabel="datePublication"
                     accessible={true}
                     allowFontScaling={true}
                     ellipsizeMode="tail"
@@ -5186,7 +4786,7 @@ exports[`renders profile content component 1`] = `
                     }
                     testID="datePublication"
                   >
-                    Tuesday March 17 2015
+                    Friday November 17 2017
                     , The Times
                   </Text>
                 </View>
@@ -5256,32 +4856,111 @@ exports[`renders profile content component 1`] = `
           }
         >
           <View
-            onLayout={[Function]}
+            onLayout={undefined}
           >
             <View
-              style={
-                Array [
-                  Object {
-                    "flexDirection": "row",
-                  },
-                  undefined,
-                ]
-              }
+              style={undefined}
             >
               <View
                 style={
-                  Array [
-                    Object {
-                      "flexGrow": 1,
-                      "flexShrink": 1,
-                    },
-                    Object {
-                      "flexBasis": 0,
-                      "flexGrow": 3,
-                    },
-                  ]
+                  Object {
+                    "marginBottom": 10,
+                  }
                 }
               >
+                <View
+                  aspectRatio={1.5}
+                  style={Object {}}
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0&resize=660",
+                        }
+                      }
+                      style={
+                        Array [
+                          Object {
+                            "bottom": 0,
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                          },
+                          Object {
+                            "height": "100%",
+                            "width": "100%",
+                          },
+                          undefined,
+                        ]
+                      }
+                    />
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "flex": 1,
+                          },
+                          null,
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "flex": 1,
+                          }
+                        }
+                      >
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#f9f9f9",
+                              "#ededed",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
+                          style={
+                            Array [
+                              Object {
+                                "flex": 1,
+                              },
+                            ]
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View>
                 <View
                   style={Object {}}
                 >
@@ -5298,7 +4977,9 @@ exports[`renders profile content component 1`] = `
                         "marginBottom": 2,
                       }
                     }
-                  />
+                  >
+                    
+                  </Text>
                   <Text
                     accessible={true}
                     allowFontScaling={true}
@@ -5314,7 +4995,7 @@ exports[`renders profile content component 1`] = `
                       }
                     }
                   >
-                    A blank article with a server rendered component
+                    Cuts have left the army 20 years out of date, says former general
                   </Text>
                   <Text
                     accessible={true}
@@ -5330,8 +5011,18 @@ exports[`renders profile content component 1`] = `
                         "marginBottom": 10,
                       }
                     }
-                  />
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                      Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a
+                      ...
+                    </Text>
+                  </Text>
                   <Text
+                    accessibilityLabel="datePublication"
                     accessible={true}
                     allowFontScaling={true}
                     ellipsizeMode="tail"
@@ -5348,7 +5039,7 @@ exports[`renders profile content component 1`] = `
                     }
                     testID="datePublication"
                   >
-                    Monday March 23 2015
+                    Tuesday November 14 2017
                     , The Times
                   </Text>
                 </View>
@@ -5527,36 +5218,20 @@ exports[`renders profile content item component 1`] = `
     }
   >
     <View
-      onLayout={[Function]}
+      onLayout={undefined}
     >
       <View
-        style={
-          Array [
-            Object {
-              "flexDirection": "row",
-            },
-            undefined,
-          ]
-        }
+        style={undefined}
       >
         <View
           style={
-            Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              Object {
-                "flexBasis": 0,
-                "flexGrow": 2,
-                "marginBottom": 0,
-                "marginRight": 10,
-              },
-            ]
+            Object {
+              "marginBottom": 10,
+            }
           }
         >
           <View
-            aspectRatio={1.5}
+            aspectRatio={1.6}
             style={Object {}}
           >
             <View
@@ -5571,7 +5246,7 @@ exports[`renders profile content item component 1`] = `
                 onLoad={[Function]}
                 source={
                   Object {
-                    "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Feb7842ee-748a-11e7-93f8-c74b9ea57adf.jpg?crop=2250%2C1500%2C-0%2C-0&resize=996",
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=200",
                   }
                 }
                 style={
@@ -5647,20 +5322,7 @@ exports[`renders profile content item component 1`] = `
             </View>
           </View>
         </View>
-        <View
-          style={
-            Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              Object {
-                "flexBasis": 0,
-                "flexGrow": 3,
-              },
-            ]
-          }
-        >
+        <View>
           <View
             style={Object {}}
           >
@@ -5677,7 +5339,9 @@ exports[`renders profile content item component 1`] = `
                   "marginBottom": 2,
                 }
               }
-            />
+            >
+              
+            </Text>
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -5693,7 +5357,7 @@ exports[`renders profile content item component 1`] = `
                 }
               }
             >
-              British trio stopped on the way to join Isis
+              Top medal for forces dog who took a bite out of the Taliban
             </Text>
             <Text
               accessible={true}
@@ -5715,23 +5379,12 @@ exports[`renders profile content item component 1`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
               >
-                A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State,
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "fontStyle": "italic",
-                    }
-                  }
-                >
-                  The
-                </Text>
+                The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
                 ...
               </Text>
             </Text>
             <Text
+              accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
@@ -5748,7 +5401,7 @@ exports[`renders profile content item component 1`] = `
               }
               testID="datePublication"
             >
-              Monday March 23 2015
+              Friday November 17 2017
               , The Times
             </Text>
           </View>
@@ -5759,7 +5412,7 @@ exports[`renders profile content item component 1`] = `
 </View>
 `;
 
-exports[`renders profile content item component with no image  1`] = `
+exports[`renders profile content item component with a specific image size 1`] = `
 <View
   accessibilityComponentType={undefined}
   accessibilityLabel={undefined}
@@ -5796,36 +5449,20 @@ exports[`renders profile content item component with no image  1`] = `
     }
   >
     <View
-      onLayout={[Function]}
+      onLayout={undefined}
     >
       <View
-        style={
-          Array [
-            Object {
-              "flexDirection": "row",
-            },
-            undefined,
-          ]
-        }
+        style={undefined}
       >
         <View
           style={
-            Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              Object {
-                "flexBasis": 0,
-                "flexGrow": 2,
-                "marginBottom": 0,
-                "marginRight": 10,
-              },
-            ]
+            Object {
+              "marginBottom": 10,
+            }
           }
         >
           <View
-            aspectRatio={1.5}
+            aspectRatio={1.6}
             style={Object {}}
           >
             <View
@@ -5840,7 +5477,7 @@ exports[`renders profile content item component with no image  1`] = `
                 onLoad={[Function]}
                 source={
                   Object {
-                    "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Feb7842ee-748a-11e7-93f8-c74b9ea57adf.jpg?crop=2250%2C1500%2C-0%2C-0&resize=996",
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=200",
                   }
                 }
                 style={
@@ -5916,20 +5553,7 @@ exports[`renders profile content item component with no image  1`] = `
             </View>
           </View>
         </View>
-        <View
-          style={
-            Array [
-              Object {
-                "flexGrow": 1,
-                "flexShrink": 1,
-              },
-              Object {
-                "flexBasis": 0,
-                "flexGrow": 3,
-              },
-            ]
-          }
-        >
+        <View>
           <View
             style={Object {}}
           >
@@ -5946,7 +5570,9 @@ exports[`renders profile content item component with no image  1`] = `
                   "marginBottom": 2,
                 }
               }
-            />
+            >
+              
+            </Text>
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -5962,7 +5588,7 @@ exports[`renders profile content item component with no image  1`] = `
                 }
               }
             >
-              British trio stopped on the way to join Isis
+              Top medal for forces dog who took a bite out of the Taliban
             </Text>
             <Text
               accessible={true}
@@ -5984,23 +5610,12 @@ exports[`renders profile content item component with no image  1`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
               >
-                A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State,
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "fontStyle": "italic",
-                    }
-                  }
-                >
-                  The
-                </Text>
+                The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
                 ...
               </Text>
             </Text>
             <Text
+              accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
@@ -6017,7 +5632,139 @@ exports[`renders profile content item component with no image  1`] = `
               }
               testID="datePublication"
             >
-              Monday March 23 2015
+              Friday November 17 2017
+              , The Times
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders profile content item component with no image 1`] = `
+<View
+  accessibilityComponentType={undefined}
+  accessibilityLabel={undefined}
+  accessibilityTraits={undefined}
+  accessible={true}
+  collapsable={undefined}
+  hitSlop={undefined}
+  isTVSelectable={true}
+  nativeID={undefined}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+  testID={undefined}
+  tvParallaxProperties={undefined}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "paddingBottom": 10,
+          "paddingTop": 10,
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      onLayout={undefined}
+    >
+      <View
+        style={undefined}
+      >
+        <View>
+          <View
+            style={Object {}}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#333333",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 12,
+                  "letterSpacing": 1,
+                  "marginBottom": 2,
+                }
+              }
+            >
+              
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#333333",
+                  "fontFamily": "TimesModern-Bold",
+                  "fontSize": 22,
+                  "fontWeight": "400",
+                  "lineHeight": 22,
+                  "marginBottom": 8,
+                }
+              }
+            >
+              Top medal for forces dog who took a bite out of the Taliban
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#696969",
+                  "flexWrap": "wrap",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 14,
+                  "lineHeight": 20,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+              >
+                The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
+                ...
+              </Text>
+            </Text>
+            <Text
+              accessibilityLabel="datePublication"
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                    "lineHeight": 15,
+                  },
+                  Object {},
+                ]
+              }
+              testID="datePublication"
+            >
+              Friday November 17 2017
               , The Times
             </Text>
           </View>
@@ -6062,6 +5809,7 @@ exports[`renders profile empty 1`] = `
       />
     </View>
   }
+  accessibilityID="scroll-view"
   data={undefined}
   disableVirtualization={false}
   getItem={[Function]}
@@ -6118,6 +5866,7 @@ exports[`renders profile empty 1`] = `
             }
           >
             <Text
+              accessibility-label="author-name"
               accessibilityRole="heading"
               accessible={true}
               allowFontScaling={true}
@@ -6429,6 +6178,7 @@ exports[`renders profile loading 1`] = `
       />
     </View>
   }
+  accessibilityID="scroll-view"
   data={
     Array [
       Object {
@@ -6492,6 +6242,7 @@ exports[`renders profile loading 1`] = `
             }
           >
             <Text
+              accessibility-label="author-name"
               accessibilityRole="heading"
               accessible={true}
               allowFontScaling={true}
@@ -6710,33 +6461,13 @@ exports[`renders profile loading 1`] = `
           ]
         }
       >
-        <View
-          onLayout={[Function]}
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "flexDirection": "row",
-                },
-                null,
-              ]
-            }
-          >
+        <View>
+          <View>
             <View
               style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 2,
-                    "marginBottom": 0,
-                    "marginRight": 10,
-                  },
-                ]
+                Object {
+                  "marginBottom": 10,
+                }
               }
             >
               <View
@@ -6826,20 +6557,7 @@ exports[`renders profile loading 1`] = `
                 </View>
               </View>
             </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                  },
-                  Object {
-                    "flexBasis": 0,
-                    "flexGrow": 3,
-                  },
-                ]
-              }
-            >
+            <View>
               <View
                 style={
                   Array [
@@ -7122,6 +6840,7 @@ exports[`renders the author head 1`] = `
     }
   >
     <Text
+      accessibility-label="author-name"
       accessibilityRole="heading"
       accessible={true}
       allowFontScaling={true}
