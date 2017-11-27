@@ -12,7 +12,7 @@
   },
   "scripts": {
     "native": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "yarn storybook:build && jest ./lib && lerna run test --since",
+    "test": "yarn storybook:test-build && jest ./lib && lerna run test --since",
     "functional-test:web": "./lib/functional_tests/run-web.sh",
     "functional-test:ios": "./lib/functional_tests/run-ios.sh",
     "functional-test:android": "./lib/functional_tests/run-android.sh",
@@ -26,6 +26,8 @@
     "prestorybook:build": "yarn prestorybook",
     "storybook:build-vendor": "webpack --config ./.storybook/vendor.webpack.config.js",
     "storybook:build": "build-storybook -c .storybook -s ./dist/public",
+    "prestorybook:test-build": "yarn storybook:build-vendor",
+    "storybook:test-build": "build-storybook -c .storybook -s ./dist/public",
     "storybook:publish": "./lib/publish_storybook.sh",
     "prestorybook-native": "rnstl && node ./lib/fetch-fonts",
     "storybook-native": "storybook -c .storybook.native start -p 7007",
