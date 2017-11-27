@@ -9,8 +9,6 @@ export default (
   WrappedComponent,
   {
     trackingName,
-    actionName = "Rendered",
-    childIdPropKey,
     getAttrs = () => ({})
   } = {}
 ) => {
@@ -22,7 +20,7 @@ export default (
       this.receiveChildList = this.receiveChildList.bind(this);
       this.childData = {};
       this.viewed = new Set();
-      if (window.IntersectionObserver) {
+      if (typeof window !== 'undefined' && window.IntersectionObserver) {
         this.observer = new window.IntersectionObserver(
           this.onObserved.bind(this),
           {
@@ -66,7 +64,7 @@ export default (
     onChildView(childProps) {
       this.context.tracking.analytics({
         component: `${trackingName || componentName}Child`,
-        action: actionName,
+        action: "Scrolled",
         attrs: {
           ...resolveAttrs(getAttrs, childProps),
           scrollDepth: {
@@ -84,7 +82,7 @@ export default (
     observeChildren() {
       if (this.childList)
         this.childList.forEach((props, index) => {
-          if (!this.childData[props[childIdPropKey]]) {
+          if (!this.childData.elementId) {
             this.observeChild({
               ...props,
               index,
@@ -95,10 +93,10 @@ export default (
     }
 
     observeChild(props) {
-      const el = document.getElementById(props[childIdPropKey]);
+      const el = document.getElementById(props.elementId);
       if (el) {
         this.observer.observe(el);
-        this.childData[props[childIdPropKey]] = props;
+        this.childData[props.elementId] = props;
       }
     }
 

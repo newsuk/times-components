@@ -8,8 +8,6 @@ export default (
   WrappedComponent,
   {
     trackingName,
-    actionName = "Rendered",
-    childIdPropKey,
     getAttrs = () => ({})
   } = {}
 ) => {
@@ -27,7 +25,7 @@ export default (
     onChildView(childProps) {
       this.context.tracking.analytics({
         component: `${trackingName || componentName}Child`,
-        action: actionName,
+        action: "Scrolled",
         attrs: {
           ...resolveAttrs(getAttrs, childProps),
           scrollDepth: {
@@ -43,16 +41,16 @@ export default (
     }
 
     handleChildViewed(childData) {
-      const id = childData[childIdPropKey];
+      const elementId = childData.elementId;
 
-      if (this.viewed.has(id)) {
+      if (this.viewed.has(elementId)) {
         return;
       }
 
-      this.viewed.add(id);
+      this.viewed.add(elementId);
 
       const index = this.childList.findIndex(
-        item => item[childIdPropKey] === id
+        item => item.elementId === elementId
       );
 
       this.onChildView({ ...childData, total: this.childList.length, index });
