@@ -49,8 +49,8 @@ const renderLabel = label => {
   );
 };
 
-const ArticleHeader = ({ label, headline, standfirst, flags }) => (
-  <View style={[styles.articleMainContentRow]}>
+const ArticleHeader = ({ label, headline, standfirst, flags, style }) => (
+  <View style={[...style]}>
     {renderLabel(label)}
     <ArticleHeadline text={headline} style={styles.articleHeadLineText} />
     {renderStandfirst(standfirst)}
@@ -62,13 +62,15 @@ ArticleHeader.propTypes = {
   headline: PropTypes.string.isRequired,
   label: PropTypes.string,
   standfirst: PropTypes.string,
-  flags: PropTypes.arrayOf(PropTypes.string)
+  flags: PropTypes.arrayOf(PropTypes.string),
+  style: PropTypes.arrayOf(PropTypes.number),
 };
 
 ArticleHeader.defaultProps = {
   label: null,
   standfirst: null,
-  flags: []
+  flags: [],
+  style: []
 };
 
 export default ArticleHeader;

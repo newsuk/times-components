@@ -41,6 +41,7 @@ class ArticlePage extends React.Component {
           flags={flags}
           standfirst={standfirst}
           label={label}
+          style={[styles.articleMainContentRow]}
         />
       );
     } else if (rowData.type === "middleContainer") {
@@ -50,6 +51,7 @@ class ArticlePage extends React.Component {
           byline={byline}
           publishedTime={publishedTime}
           publicationName={publicationName}
+          style={[styles.articleMainContentRow]}
         />
       );
     } else if (rowData.type === "articleBodyRow") {

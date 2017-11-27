@@ -12,11 +12,14 @@ import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
 
 import listViewDataHelper from "./data-helper";
-import styles from "./styles/body";
+import styles, {
+  ResponsiveWrapper,
+  PrimaryContainer,
+  SecondaryContainer,
+  InlineContainer
+} from "./styles/body";
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
-
-import ParagraphWrapper from "./styles/body/styled-components";
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 const listViewPageSize = 1;
@@ -38,21 +41,25 @@ class ArticlePage extends React.Component {
     } else if (rowData.type === "header") {
       const { headline, flags, standfirst, label } = rowData.data;
       return (
-        <ArticleHeader
-          headline={headline}
-          flags={flags}
-          standfirst={standfirst}
-          label={label}
-        />
+        <ResponsiveWrapper>
+          <ArticleHeader
+            headline={headline}
+            flags={flags}
+            standfirst={standfirst}
+            label={label}
+          />
+        </ResponsiveWrapper>
       );
     } else if (rowData.type === "middleContainer") {
       const { byline, publishedTime, publicationName } = rowData.data;
       return (
+        <ResponsiveWrapper>
           <ArticleMeta
             byline={byline}
             publishedTime={publishedTime}
             publicationName={publicationName}
           />
+        </ResponsiveWrapper>
       );
     } else if (rowData.type === "articleBodyRow") {
       return (
@@ -60,35 +67,34 @@ class ArticlePage extends React.Component {
           {renderTrees([rowData.data], {
             paragraph(key, attributes, children) {
               return (
-                // <View
-                //   key={key}
-                //   style={[styles.articleMainContentRow]}
-                // >
-                <ParagraphWrapper>
+                <ResponsiveWrapper>
                   <Text
                     testID={`paragraph-${rowData.index}`}
                     style={styles.articleTextElement}
                   >
                     {children}
                   </Text>
-                </ParagraphWrapper>
-                // </View>
+                </ResponsiveWrapper>
               );
             },
             image(key, attributes) {
+              const ImageContainer = ArticlePage.imageContainerChooser(
+                attributes.display
+              );
               return (
-                <ArticleImage
-                  key={key}
-                  imageOptions={{
-                    display: attributes.display,
-                    ratio: attributes.ratio,
-                    url: attributes.url
-                  }}
-                  captionOptions={{
-                    caption: attributes.caption,
-                    credits: attributes.credits
-                  }}
-                />
+                <ImageContainer key={key}>
+                  <ArticleImage
+                    imageOptions={{
+                      display: attributes.display,
+                      ratio: attributes.ratio,
+                      url: attributes.url
+                    }}
+                    captionOptions={{
+                      caption: attributes.caption,
+                      credits: attributes.credits
+                    }}
+                  />
+                </ImageContainer>
               );
             }
           })}
@@ -97,6 +103,19 @@ class ArticlePage extends React.Component {
     }
 
     return null;
+  }
+
+  static imageContainerChooser(imageType) {
+    switch (imageType) {
+      case "primary":
+        return PrimaryContainer;
+      case "secondary":
+        return SecondaryContainer;
+      case "inline":
+        return InlineContainer;
+      default:
+        return null;
+    }
   }
 
   constructor(props) {

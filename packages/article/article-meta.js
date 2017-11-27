@@ -7,8 +7,8 @@ import DatePublication from "@times-components/date-publication";
 
 import styles from "./styles/meta";
 
-const ArticleMeta = ({ byline, publishedTime, publicationName }) => (
-  <View style={[styles.articleMainContentRow, styles.articleMiddleContainer]}>
+const ArticleMeta = ({ byline, publishedTime, publicationName, style }) => (
+  <View style={[styles.articleMiddleContainer, ...style]}>
     <View style={styles.articleMeta}>
       <View style={[styles.articleMetaElement]}>
         <ArticleByline ast={byline} />
@@ -37,13 +37,15 @@ nodeShape.children = PropTypes.arrayOf(
 ArticleMeta.propTypes = {
   byline: PropTypes.arrayOf(PropTypes.shape(nodeShape)),
   publishedTime: PropTypes.string,
-  publicationName: PropTypes.string
+  publicationName: PropTypes.string,
+  style: PropTypes.arrayOf(PropTypes.number),
 };
 
 ArticleMeta.defaultProps = {
   byline: [],
   publishedTime: null,
-  publicationName: null
+  publicationName: null,
+  style: [],
 };
 
 export default ArticleMeta;
