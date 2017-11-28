@@ -7,7 +7,7 @@ import AuthorProfileAuthorHead from "./author-profile-author-head";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
 import AuthorProfilePagination from "./author-profile-pagination";
-import propTypes from "./author-profile-content-prop-types";
+import { propTypes, defaultProps } from "./author-profile-content-prop-types";
 import { normaliseWidth } from "./utils";
 
 const styles = StyleSheet.create({
@@ -182,5 +182,6 @@ class AuthorProfileContent extends Component {
 }
 
 AuthorProfileContent.propTypes = propTypes;
+AuthorProfileContent.defaultProps = defaultProps;
 
 export default withTrackScrollDepth(AuthorProfileContent);

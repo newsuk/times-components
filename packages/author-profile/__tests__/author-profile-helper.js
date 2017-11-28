@@ -18,7 +18,7 @@ import AuthorProfileItem from "../author-profile-item";
 import AuthorHead from "../author-profile-author-head";
 import AuthorProfileItemSeparator from "../author-profile-item-separator";
 import authorProfileFixture from "../fixtures/author-profile.json";
-import articleListFixture from "../fixtures/article-list.json";
+import pagedResult from "./paged-result";
 
 Enzyme.configure({ adapter: new React16Adapter() });
 
@@ -28,23 +28,6 @@ const props = {
   onArticlePress: () => {},
   analyticsStream: () => {}
 };
-
-const pagedResult = (skip, first) => ({
-  data: {
-    author: {
-      ...articleListFixture.data.author,
-      articles: {
-        ...articleListFixture.data.author.articles,
-        list: articleListFixture.data.author.articles.list
-          .map(el => ({
-            ...el,
-            publishedTime: new Date(el.publishedTime)
-          }))
-          .slice(skip, skip + first)
-      }
-    }
-  }
-});
 
 const mocks = [
   {
@@ -239,55 +222,6 @@ export default AuthorProfileContent => {
     );
   });
 
-  it("emits scroll tracking events for author profile content", () => {
-    const reporter = jest.fn();
-    const results = pagedResult(0, 3);
-    const authorProfileContent = shallow(
-      <AuthorProfileContent
-        count={10}
-        articles={results.data.author.articles.list}
-        author={authorProfileFixture.data.author}
-        slug="fiona-hamilton"
-        page={1}
-        pageSize={3}
-        imageRatio={3 / 2}
-        onTwitterLinkPress={() => {}}
-        onArticlePress={() => {}}
-      />,
-      {
-        context: {
-          tracking: {
-            analytics: reporter
-          }
-        }
-      }
-    );
-    authorProfileContent
-      .dive()
-      .instance()
-      .onViewableItemsChanged.call(authorProfileContent.instance(), {
-        changed: [
-          {
-            isViewable: true,
-            item: {
-              elementId: "articleList-1-2"
-            }
-          }
-        ]
-      });
-
-    expect(reporter).toHaveBeenCalledWith(
-      expect.objectContaining({
-        attrs: expect.objectContaining({
-          scrollDepth: {
-            itemNumber: 3,
-            total: 3
-          }
-        })
-      })
-    );
-  });
-
   it("renders profile separator", () => {
     const component = renderer.create(<AuthorProfileItemSeparator />);
 
@@ -450,7 +384,7 @@ export default AuthorProfileContent => {
       action: "Pressed",
       attrs: {
         articleId: "d98c257c-cb16-11e7-b529-95e3fc05f40f",
-        articleTitle:
+        articleHeadline:
           "Top medal for forces dog who took a bite out of the Taliban"
       }
     });
