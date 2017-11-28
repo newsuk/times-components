@@ -2882,8 +2882,7 @@ exports[`renders the author head 1`] = `
 
 exports[`renders with an intersection observer which uses the expected options 1`] = `
 Object {
-  "root": null,
-  "rootMargin": "0px",
+  "rootMargin": "50px",
   "threshold": 1,
 }
 `;

@@ -78,15 +78,19 @@ it("renders profile articles and invoke callback on article press", done => {
     .simulate("press");
 });
 
-it("renders with an intersection observer which uses the expected options", done => {
+it("renders with an intersection observer which uses the expected options", () => {
+  // IntersectionObserver is used twice by AuthorProfileContent, once for image
+  // resizing and once for scroll tracking. We capture the opts passed so that
+  // we can assert on them later.
+  const optsSpy = jest.fn();
   window.IntersectionObserver = class {
     constructor(cb, opts) {
-      expect(opts).toMatchSnapshot();
-      done();
+      optsSpy(opts);
     }
+    observe() {}
   };
 
-  shallow(
+  mount(
     <AuthorProfileContent
       articles={results.data.author.articles.list}
       author={authorProfileFixture.data.author}
@@ -98,6 +102,8 @@ it("renders with an intersection observer which uses the expected options", done
       onArticlePress={() => {}}
     />
   );
+
+  expect(optsSpy.mock.calls[1][0]).toMatchSnapshot();
 });
 
 it("renders a good quality image if it is visible", () => {
