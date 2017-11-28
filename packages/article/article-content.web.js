@@ -4,7 +4,7 @@ import { ScrollView } from "react-native";
 
 const ArticleContent = ({ data, renderRow }) => (
   <ScrollView testID="scroll-view-article">
-    {data.map(item => renderRow(item))}
+    {renderRow(data)}
   </ScrollView>
 );
 

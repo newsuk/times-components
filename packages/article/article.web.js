@@ -19,7 +19,12 @@ import {
   PrimaryContainer,
   SecondaryContainer,
   InlineContainer,
-  LeadAsset
+  LeadAsset,
+  ArticleBodyContainer,
+  ArticleMainContainer,
+  ArticleHeaderContainer,
+  ArticleLeadAssetContainer,
+  ArticleMetaContainer
 } from "./styles/body/responsive";
 import ArticleHeader from "./article-header.web";
 import ArticleMeta from "./article-meta.web";
@@ -33,6 +38,45 @@ const withAdComposer = (children, section = "article") => (
 );
 
 class ArticlePage extends React.Component {
+
+  static renderArticle(articleData) {
+    const [ratioWidth, ratioHeight] = articleData.leadAsset.crop.ratio.split(":");
+    const aspectRatio = ratioWidth / ratioHeight;
+    const LeadAssetMedia = articleData.leadAsset ?
+      (<LeadAsset testID="leadAsset">
+        <Image uri={articleData.leadAsset.crop.url} aspectRatio={aspectRatio} />
+       </LeadAsset>): null;
+
+    return (
+      <ArticleMainContainer>
+          {/* <ArticleHeaderContainer> */}
+            <ArticleHeader
+                headline={articleData.headline}
+                flags={articleData.flags}
+                standfirst={articleData.standfirst}
+                label={articleData.label}
+            />
+          {/* </ArticleHeaderContainer> */}
+
+        <ArticleBodyContainer>
+
+          <ArticleMetaContainer>
+            <ArticleMeta
+              byline={articleData.byline}
+              publishedTime={articleData.publishedTime}
+              publicationName={articleData.publicationName}
+              style={[styles.articleMainContentRow]}
+            />
+            </ArticleMetaContainer>
+          {/* <ArticleLeadAssetContainer> */}
+            {LeadAssetMedia}
+          {/* </ArticleLeadAssetContainer> */}
+        </ArticleBodyContainer>
+      </ArticleMainContainer>
+    )
+
+  }
+
   static renderRow(rowData) {
     if (rowData.type === "leadAsset") {
       const [ratioWidth, ratioHeight] = rowData.data.crop.ratio.split(":");
@@ -162,8 +206,8 @@ class ArticlePage extends React.Component {
 
     const ArticleListView = (
       <ArticleContent
-        data={this.state.dataSource}
-        renderRow={ArticlePage.renderRow}
+        data={this.props.article}
+        renderRow={ArticlePage.renderArticle}
         initialListSize={listViewSize}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
         pageSize={listViewPageSize}

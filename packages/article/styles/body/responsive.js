@@ -2,6 +2,7 @@ import { View } from "react-native";
 import styled from "styled-components";
 
 const mediumBreakpoint = "768px";
+const wideBreakpoint = "1024px";
 
 export const ResponsiveWrapper = styled(View)`
   padding-left: 10px;
@@ -60,6 +61,8 @@ export const InlineContainer = styled(View)`
 
 export const LeadAsset = styled(View)`
   margin-bottom: 10px;
+  width: 100%;
+  margin: 0 auto;
 `;
 
 export const ArticleTextElement = styled(View)`
@@ -70,7 +73,48 @@ export const ArticleTextElement = styled(View)`
   color: "#333333";
 `;
 
-export const ArticleMainContentRow = styled(View)`
+// export const ArticleMainContentRow = styled(View)`
+//   padding-left: 10px;
+//   padding-right: 10px;
+// `;
+
+export const ArticleMainContainer = styled(View)`
   padding-left: 10px;
   padding-right: 10px;
+  @media (min-width: ${wideBreakpoint}) {
+    padding-left: 0;
+    padding-right: 20px;
+    width: 58.33333%;
+    margin: 0 auto;
+    //flex-direction: row;
+  }
 `;
+
+export const ArticleBodyContainer = styled(View)`
+  @media (min-width: ${wideBreakpoint}) {
+    //display: flex;
+    //flex-direction: row;
+    //flex-wrap: nowrap;
+    //justify-content: flex-start;
+    // width: 58.33333%;
+    // margin: 0 auto;
+  }`;
+
+export const ArticleHeaderContainer = styled(View)`
+`;
+
+export const ArticleLeadAssetContainer = styled(View)`
+`;
+
+export const ArticleMetaContainer = styled(View)`
+  @media (min-width: ${wideBreakpoint}) {
+    margin-bottom: 20px;
+    //padding-right: 20px;
+    padding-left: 20px;
+    top: 0;
+    width: 35.71429%;
+    left: -35.71429%;
+    position: absolute;
+}`;
+
+
