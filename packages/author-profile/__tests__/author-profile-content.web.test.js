@@ -4,7 +4,7 @@ import React from "react";
 import { shallow, mount } from "enzyme";
 import test from "./author-profile-helper";
 import AuthorProfileItem from "../author-profile-item";
-import AuthorProfileContent from "../author-profile-content.web.js"; // TODO remove .web
+import AuthorProfileContent from "../author-profile-content.web.js";
 import authorProfileFixture from "../fixtures/author-profile.json";
 import articleListFixture from "../fixtures/article-list.json";
 import pagedResult from "./paged-result";
