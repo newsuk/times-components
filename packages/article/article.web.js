@@ -8,11 +8,9 @@ import ArticleImage from "@times-components/article-image";
 import { AdComposer } from "@times-components/ad";
 import { withTrackingContext } from "@times-components/tracking";
 
-import ArticleContent from "./article-content";
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
 
-import listViewDataHelper from "./data-helper";
 import styles from "./styles/body";
 import {
   ResponsiveWrapper,
@@ -28,9 +26,6 @@ import {
 import ArticleHeader from "./article-header.web";
 import ArticleMeta from "./article-meta.web";
 
-const listViewPageSize = 1;
-const listViewSize = 10;
-const listViewScrollRenderAheadDistance = 10;
 
 const withAdComposer = (children, section = "article") => (
   <AdComposer section={section}>{children}</AdComposer>
@@ -45,23 +40,23 @@ class ArticlePage extends React.Component {
       (<LeadAsset>
         <Image uri={articleData.leadAsset.crop.url} aspectRatio={aspectRatio} />
        </LeadAsset>): null;
-
+    const contentArray = articleData.content.map((i, index) => ({
+      data: i,
+      index
+    }));
+    const BodyView = contentArray.map((i) => ArticlePage.renderBody(i));
     return (
       <ArticleMainContainer>
           <ArticleLeadAssetContainerMobile>
             {LeadAssetMedia}
           </ArticleLeadAssetContainerMobile>
-          {/* <ArticleHeaderContainer> */}
             <ArticleHeader
                 headline={articleData.headline}
                 flags={articleData.flags}
                 standfirst={articleData.standfirst}
                 label={articleData.label}
             />
-          {/* </ArticleHeaderContainer> */}
-
         <View>
-
           <ArticleMetaContainer>
             <ArticleMeta
               byline={articleData.byline}
@@ -73,11 +68,54 @@ class ArticlePage extends React.Component {
           <ArticleLAContainerDesktop>
             {LeadAssetMedia}
           </ArticleLAContainerDesktop>
+          {BodyView}
         </View>
       </ArticleMainContainer>
     )
-
   }
+
+  static renderBody(content){
+    return (
+      <View>
+        {renderTrees([content.data], {
+          paragraph(key, attributes, children) {
+            return (
+                <View
+                testID={`paragraph-${content.index}`}
+                accessibilityLabel={`paragraph-${content.index}`}
+                key={key}
+                style={[styles.articleMainContentRow]}
+                >
+                <Text style={styles.articleTextElement}>{children}</Text>
+              </View>
+            );
+          },
+          image(key, attributes) {
+            const ImageContainer = ArticlePage.imageContainerChooser(
+              attributes.display
+            );
+            return (
+              <ImageContainer key={key}>
+                <ArticleImage
+                  key={key}
+                  imageOptions={{
+                    display: attributes.display,
+                    ratio: attributes.ratio,
+                    url: attributes.url
+                  }}
+                  captionOptions={{
+                    caption: attributes.caption,
+                    credits: attributes.credits
+                  }}
+                />
+              </ImageContainer>
+            );
+          }
+        })}
+      </View>
+    );
+  }
+
 
   static renderRow(rowData) {
     if (rowData.type === "leadAsset") {
@@ -173,28 +211,6 @@ class ArticlePage extends React.Component {
     }
   }
 
-  constructor(props) {
-    super(props);
-
-    if (props.article && !props.isLoading && !props.error) {
-      this.state = {
-        dataSource: listViewDataHelper(props.article)
-      };
-    } else {
-      this.state = {
-        dataSource: {}
-      };
-    }
-  }
-
-  componentWillReceiveProps(nextProps) {
-    if (!nextProps.isLoading && !nextProps.error) {
-      this.setState({
-        dataSource: listViewDataHelper(nextProps.article)
-      });
-    }
-  }
-
   render() {
     const { error, isLoading } = this.props;
 
@@ -206,15 +222,7 @@ class ArticlePage extends React.Component {
       return <ArticleLoading />;
     }
 
-    const ArticleListView = (
-      <ArticleContent
-        data={this.props.article}
-        renderRow={ArticlePage.renderArticle}
-        initialListSize={listViewSize}
-        scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
-        pageSize={listViewPageSize}
-      />
-    );
+    const ArticleListView = ArticlePage.renderArticle(this.props.article);
 
     return Platform.OS === "web"
       ? withAdComposer(ArticleListView)
