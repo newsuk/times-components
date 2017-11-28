@@ -121,17 +121,15 @@ class AuthorProfileContent extends Component {
       />
     );
 
-    const data = articlesLoading
+    const data = (articlesLoading
       ? Array(pageSize)
           .fill()
-          .map((number, id) => ({
-            id,
-            isLoading: true
-          }))
-      : articles.map((article, idx) => ({
-          ...article,
-          elementId: `articleList-${page}-${idx}`
-        }));
+          .map((number, id) => ({ id, isLoading: true }))
+      : articles
+    ).map((article, idx) => ({
+      ...article,
+      elementId: `articleList-${page}-${idx}`
+    }));
 
     if (!articlesLoading) receiveChildList(data);
 
@@ -149,7 +147,7 @@ class AuthorProfileContent extends Component {
         <View style={styles.contentContainer}>
           {paginationComponent()}
           <View style={styles.container}>
-            {!articlesLoading &&
+            {data &&
               data.map((article, key) => {
                 const { id, url } = article;
                 const separatorComponent =
