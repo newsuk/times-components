@@ -177,15 +177,16 @@ it("renders good quality images if there is no IntersectionObserver", () => {
   );
 
   // not ideal as this relies on the actual implementation but there's no "nice" way of setting clientWidth
-  const rn = component.instance().registerNode;
-  component.instance().registerNode = node => {
+  const authorProfileInstance = component.find('AuthorProfileContent').instance();
+  const rn = authorProfileInstance.registerNode;
+  authorProfileInstance.registerNode = node => {
     if (node) {
       Object.defineProperty(node, "clientWidth", {
         value: 600
       });
     }
 
-    rn.call(component.instance(), node);
+    rn.call(authorProfileInstance, node);
   };
 
   // we have to force the render lifecycle that the lazy images rely on, in that first the nodes are registered
