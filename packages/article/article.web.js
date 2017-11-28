@@ -22,6 +22,8 @@ import {
   ArticleLeadAssetContainerMobile,
   ArticleMetaContainer,
   ArticleLAContainerDesktop,
+  ArticleHeaderContainer,
+  ArticleBodyContainer
 } from "./styles/body/responsive";
 import ArticleHeader from "./article-header.web";
 import ArticleMeta from "./article-meta.web";
@@ -50,12 +52,14 @@ class ArticlePage extends React.Component {
           <ArticleLeadAssetContainerMobile>
             {LeadAssetMedia}
           </ArticleLeadAssetContainerMobile>
+          <ArticleHeaderContainer>
             <ArticleHeader
                 headline={articleData.headline}
                 flags={articleData.flags}
                 standfirst={articleData.standfirst}
                 label={articleData.label}
             />
+          </ArticleHeaderContainer>
         <View>
           <ArticleMetaContainer>
             <ArticleMeta
@@ -80,14 +84,13 @@ class ArticlePage extends React.Component {
         {renderTrees([content.data], {
           paragraph(key, attributes, children) {
             return (
-                <View
+                <ArticleBodyContainer
                 testID={`paragraph-${content.index}`}
                 accessibilityLabel={`paragraph-${content.index}`}
                 key={key}
-                style={[styles.articleMainContentRow]}
                 >
                 <Text style={styles.articleTextElement}>{children}</Text>
-              </View>
+              </ArticleBodyContainer>
             );
           },
           image(key, attributes) {

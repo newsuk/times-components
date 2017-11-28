@@ -14,6 +14,9 @@ export const ResponsiveWrapper = styled(View)`
     padding-left: 0px;
     padding-right: 0px;
   }
+  @media (min-width: ${wideBreakpoint}) {
+    width: 100%;
+  }
 `;
 
 export const PrimaryContainer = styled(View)`
@@ -24,6 +27,9 @@ export const PrimaryContainer = styled(View)`
   @media (min-width: ${mediumBreakpoint}) {
     width: 83.33333333%;
     margin: 0 auto;
+  }
+  @media (min-width: ${wideBreakpoint}) {
+    width: 100%;
   }
 `;
 
@@ -41,6 +47,9 @@ export const SecondaryContainer = styled(View)`
     padding-left: 0;
     padding-right: 0;
   }
+  @media (min-width: ${wideBreakpoint}) {
+    width: 100%;
+  }
 `;
 
 export const InlineContainer = styled(View)`
@@ -56,6 +65,9 @@ export const InlineContainer = styled(View)`
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
+  }
+  @media (min-width: ${wideBreakpoint}) {
+    width: 100%;
   }
 `;
 
@@ -81,14 +93,33 @@ export const ArticleTextElement = styled(View)`
 // `;
 
 export const ArticleMainContainer = styled(View)`
-  padding-left: 10px;
-  padding-right: 10px;
+  //padding-left: 10px;
+  //padding-right: 10px;
+  // @media (min-width: ${mediumBreakpoint}) {
+  //   padding-left: 0;
+  //   padding-right: 0;
+  // }
   @media (min-width: ${wideBreakpoint}) {
     padding-left: 0;
     padding-right: 20px;
     width: 58.33333%;
     margin: 0 auto;
     //flex-direction: row;
+  }
+`;
+
+export const ArticleHeaderContainer = styled(View)`
+padding-left: 10px;
+padding-right: 10px;
+
+@media (min-width: ${mediumBreakpoint}) {
+    width: 83.33333333%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media (min-width: ${wideBreakpoint}) {
+    width: 100%;
   }
 `;
 
@@ -105,15 +136,38 @@ display: none;
   }
 `;
 
-export const ArticleMetaContainer = styled(View)`
+export const ArticleBodyContainer = styled(View)`
+  padding-left: 10px;
+  padding-right: 10px;
+  @media (min-width: ${mediumBreakpoint}) {
+    width: 83.33333333%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
   @media (min-width: ${wideBreakpoint}) {
-    margin-bottom: 20px;
-    //padding-right: 20px;
-    padding-left: 20px;
-    top: 0;
-    width: 35.71429%;
-    left: -35.71429%;
-    position: absolute;
-}`;
+    width: 100%;
+  }
+`;
+
+export const ArticleMetaContainer = styled(View)`
+  padding-left: 10px;
+  padding-right: 10px;
+  @media (min-width: ${wideBreakpoint}) {
+      margin-bottom: 20px;
+      //padding-right: 20px;
+      padding-left: 20px;
+      top: 0;
+      width: 35.71429%;
+      left: -35.71429%;
+      position: absolute;
+  }
+  @media (min-width: ${mediumBreakpoint}) {
+    width: 83.33333333%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+`;
 
 
