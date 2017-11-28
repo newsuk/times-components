@@ -87,7 +87,7 @@ it("renders with an intersection observer which uses the expected options", () =
     constructor(cb, opts) {
       optsSpy(opts);
     }
-    observe() {}
+    observe() {} // eslint-disable-line class-methods-use-this
   };
 
   mount(
@@ -183,7 +183,9 @@ it("renders good quality images if there is no IntersectionObserver", () => {
   );
 
   // not ideal as this relies on the actual implementation but there's no "nice" way of setting clientWidth
-  const authorProfileInstance = component.find('AuthorProfileContent').instance();
+  const authorProfileInstance = component
+    .find("AuthorProfileContent")
+    .instance();
   const rn = authorProfileInstance.registerNode;
   authorProfileInstance.registerNode = node => {
     if (node) {

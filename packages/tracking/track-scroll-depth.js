@@ -34,11 +34,6 @@ export default (
     }
 
     receiveChildList(childList) {
-      childList.forEach(item => {
-        if (!item.elementId) {
-          console.error(`elementId missing for item: ${JSON.stringify(item)}`);
-        }
-      });
       this.childList = childList;
     }
 
