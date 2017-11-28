@@ -404,7 +404,7 @@ export default AuthorProfileContent => {
       action: "Pressed",
       attrs: {
         articleId: "d98c257c-cb16-11e7-b529-95e3fc05f40f",
-        articleTitle:
+        articleHeadline:
           "Top medal for forces dog who took a bite out of the Taliban"
       }
     });
