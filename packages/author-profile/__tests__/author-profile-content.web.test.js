@@ -66,8 +66,6 @@ it("renders profile articles and invoke callback on article press", done => {
       imageRatio={3 / 2}
       onTwitterLinkPress={() => {}}
       onArticlePress={() => done()}
-      onViewed={() => {}}
-      receiveChildList={() => results.data.author.articles.list}
     />
   );
 
