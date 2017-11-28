@@ -133,7 +133,7 @@ class AuthorProfileContent extends Component {
           elementId: `articleList-${page}-${idx}`
         }));
 
-    receiveChildList(data);
+    if (!articlesLoading) receiveChildList(data);
 
     return (
       <View>
@@ -149,7 +149,7 @@ class AuthorProfileContent extends Component {
         <View style={styles.contentContainer}>
           {paginationComponent()}
           <View style={styles.container}>
-            {data &&
+            {!articlesLoading &&
               data.map((article, key) => {
                 const { id, url } = article;
                 const separatorComponent =
