@@ -20,11 +20,10 @@ import {
   SecondaryContainer,
   InlineContainer,
   LeadAsset,
-  ArticleBodyContainer,
   ArticleMainContainer,
-  ArticleHeaderContainer,
-  ArticleLeadAssetContainer,
-  ArticleMetaContainer
+  ArticleLeadAssetContainerMobile,
+  ArticleMetaContainer,
+  ArticleLAContainerDesktop,
 } from "./styles/body/responsive";
 import ArticleHeader from "./article-header.web";
 import ArticleMeta from "./article-meta.web";
@@ -43,12 +42,15 @@ class ArticlePage extends React.Component {
     const [ratioWidth, ratioHeight] = articleData.leadAsset.crop.ratio.split(":");
     const aspectRatio = ratioWidth / ratioHeight;
     const LeadAssetMedia = articleData.leadAsset ?
-      (<LeadAsset testID="leadAsset">
+      (<LeadAsset>
         <Image uri={articleData.leadAsset.crop.url} aspectRatio={aspectRatio} />
        </LeadAsset>): null;
 
     return (
       <ArticleMainContainer>
+          <ArticleLeadAssetContainerMobile>
+            {LeadAssetMedia}
+          </ArticleLeadAssetContainerMobile>
           {/* <ArticleHeaderContainer> */}
             <ArticleHeader
                 headline={articleData.headline}
@@ -58,7 +60,7 @@ class ArticlePage extends React.Component {
             />
           {/* </ArticleHeaderContainer> */}
 
-        <ArticleBodyContainer>
+        <View>
 
           <ArticleMetaContainer>
             <ArticleMeta
@@ -68,10 +70,10 @@ class ArticlePage extends React.Component {
               style={[styles.articleMainContentRow]}
             />
             </ArticleMetaContainer>
-          {/* <ArticleLeadAssetContainer> */}
+          <ArticleLAContainerDesktop>
             {LeadAssetMedia}
-          {/* </ArticleLeadAssetContainer> */}
-        </ArticleBodyContainer>
+          </ArticleLAContainerDesktop>
+        </View>
       </ArticleMainContainer>
     )
 

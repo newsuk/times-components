@@ -61,8 +61,10 @@ export const InlineContainer = styled(View)`
 
 export const LeadAsset = styled(View)`
   margin-bottom: 10px;
-  width: 100%;
-  margin: 0 auto;
+  @media (min-width: ${wideBreakpoint}) {
+    width: 100%;
+    margin: 0 auto;
+  }
 `;
 
 export const ArticleTextElement = styled(View)`
@@ -90,20 +92,17 @@ export const ArticleMainContainer = styled(View)`
   }
 `;
 
-export const ArticleBodyContainer = styled(View)`
-  @media (min-width: ${wideBreakpoint}) {
-    //display: flex;
-    //flex-direction: row;
-    //flex-wrap: nowrap;
-    //justify-content: flex-start;
-    // width: 58.33333%;
-    // margin: 0 auto;
-  }`;
-
-export const ArticleHeaderContainer = styled(View)`
+export const ArticleLeadAssetContainerMobile = styled(View)`
+@media (min-width: ${wideBreakpoint}) {
+    display: none;
+  }
 `;
 
-export const ArticleLeadAssetContainer = styled(View)`
+export const ArticleLAContainerDesktop = styled(View)`
+display: none;
+@media (min-width: ${wideBreakpoint}) {
+    display: flex
+  }
 `;
 
 export const ArticleMetaContainer = styled(View)`
