@@ -73,9 +73,13 @@ export const InlineContainer = styled(View)`
 
 export const LeadAsset = styled(View)`
   margin-bottom: 10px;
+  @media (min-width: ${mediumBreakpoint}) {
+    margin-bottom: 20px;
+  }
   @media (min-width: ${wideBreakpoint}) {
     width: 100%;
     margin: 0 auto;
+
   }
 `;
 
@@ -83,12 +87,14 @@ export const ArticleTextElement = styled(Text)`
   font-family: "TimesDigitalW04";
   line-height: 26px;
   font-size: 17px;
+  line-height: 26px;
   margin-bottom: 25px;
   color: "#333333";
   margin-top: 0;
 
   @media (min-width: ${mediumBreakpoint}) {
     font-size: 18px;
+    line-height: 30px;
   }
 `;
 
@@ -208,5 +214,30 @@ export const HeadlineContainer = styled(Text)`
     line-height: 45px;
   }
 `
+export const LabelContainer = styled(View)`
+  @media (min-width: ${wideBreakpoint}) {
+    margin-top: 20px;
+  }
+`
 
+export const FlagContainer = styled(View)`
+  @media (min-width: ${wideBreakpoint}) {
+    margin-bottom: 30px;
+  }
+`;
 
+export const ArticleBylineContainer = styled(Text)`
+  padding: 12px 0 9px;
+  @media (min-width: ${wideBreakpoint}) {
+    line-height: 18px;
+    padding: 5px 0 25px;
+  }
+`
+
+export const ArticleDatelineContainer = styled(Text)`
+padding: 12px 0 9px;
+@media (min-width: ${wideBreakpoint}) {
+  line-height: 18px;
+  padding: 5px 0 25px;
+}
+`

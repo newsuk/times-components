@@ -10,7 +10,7 @@ import {
 import ArticleLabel from "@times-components/article-label";
 import { Text, View, ViewPropTypes } from "react-native";
 import styles from "./styles/header";
-import { HeadlineContainer } from "./styles/body/responsive";
+import { HeadlineContainer, LabelContainer, FlagContainer } from "./styles/body/responsive";
 
 const { style: ViewStylePropTypes } = ViewPropTypes;
 
@@ -24,13 +24,13 @@ const flagsMapping = new Map([
 const renderFlags = flags => {
   if (!flags.length) return null;
   return (
-    <View style={[styles.articleFlag]}>
+    <FlagContainer style={[styles.articleFlag]}>
       {flags.map(flag => (
         <View key={flag} style={styles.articleFlagContainer}>
           {flagsMapping.get(flag)}
         </View>
       ))}
-    </View>
+    </FlagContainer>
   );
 };
 
@@ -50,9 +50,9 @@ const renderStandfirst = standfirst => {
 const renderLabel = label => {
   if (!label) return null;
   return (
-    <View accessibilityLabel="label" testID="label" style={styles.articleLabel}>
+    <LabelContainer accessibilityLabel="label" testID="label" style={styles.articleLabel}>
       <ArticleLabel title={label} color="#13354E" />
-    </View>
+    </LabelContainer>
   );
 };
 

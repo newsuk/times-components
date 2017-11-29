@@ -19,27 +19,29 @@ const publications = {
   TIMES: "The Times"
 };
 
-const DatePublication = ({ date, publication, style }) => (
-  <Text
+const DatePublication = ({ date, publication, style, WrapperComponent }) => (
+  <WrapperComponent
     accessibilityLabel="datePublication"
     testID="datePublication"
     style={[styles.default, style]}
   >
     {format(date, "dddd MMMM DD YYYY")}
     {publications[publication] ? `, ${publications[publication]}` : ""}
-  </Text>
+  </WrapperComponent>
 );
 
 DatePublication.propTypes = {
   date: PropTypes.instanceOf(Date),
   publication: PropTypes.oneOf(Object.keys(publications)),
-  style: TextPropTypesStyle
+  style: TextPropTypesStyle,
+  WrapperComponent: PropTypes.element
 };
 
 DatePublication.defaultProps = {
   date: null,
   style: {},
-  publication: "TIMES"
+  publication: "TIMES",
+  WrapperComponent: Text
 };
 
 export default DatePublication;

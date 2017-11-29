@@ -6,7 +6,7 @@ const sharedStyles = {
     marginBottom: 7
   },
   standFirst: {
-    fontSize: 21,
+    fontSize: 20,
     lineHeight: 26,
     fontFamily: "TimesModern-Regular",
     color: "#333333",
@@ -14,7 +14,7 @@ const sharedStyles = {
   },
   articleLabel: {
     paddingTop: 4,
-    paddingBottom: 3
+    paddingBottom: 5
   },
   articleFlag: {
     marginBottom: 11,

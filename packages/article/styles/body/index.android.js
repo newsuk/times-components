@@ -10,7 +10,7 @@ const androidStyles = {
   articleTextElement: {
     ...sharedStyles.articleTextElement,
     fontFamily: "TimesDigitalW04",
-    fontSize: 16,
+    fontSize: 17,
     fontStyle: "normal",
     marginBottom: 20
   }

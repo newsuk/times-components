@@ -16,9 +16,10 @@ const linkStyles = StyleSheet.create({
   }
 });
 
-const ArticleByline = ({ ast, style }) => (
+const ArticleByline = ({ ast, style, WrapperComponent }) => {
+  return (
   <View style={[styles.container, style.container]}>
-    <Text
+    <WrapperComponent
       accessibilityLabel="articleByline"
       testID="articleByline"
       style={[styles.byline, style.byline, styles.bylineColor]}
@@ -38,9 +39,10 @@ const ArticleByline = ({ ast, style }) => (
           );
         }
       })}
-    </Text>
+    </WrapperComponent>
   </View>
 );
+}
 
 export default ArticleByline;
 
