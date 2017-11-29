@@ -155,7 +155,7 @@ export const ArticleMetaContainer = styled(View)`
   padding-right: 10px;
   @media (min-width: ${wideBreakpoint}) {
       margin-bottom: 20px;
-      //padding-right: 20px;
+      padding-right: 20px;
       padding-left: 20px;
       top: 0;
       width: 35.71429%;

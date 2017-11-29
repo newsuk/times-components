@@ -25,8 +25,8 @@ import {
   ArticleHeaderContainer,
   ArticleBodyContainer
 } from "./styles/body/responsive";
-import ArticleHeader from "./article-header.web";
-import ArticleMeta from "./article-meta.web";
+import ArticleHeader from "./article-header";
+import ArticleMeta from "./article-meta";
 
 
 const withAdComposer = (children, section = "article") => (
@@ -66,7 +66,6 @@ class ArticlePage extends React.Component {
               byline={articleData.byline}
               publishedTime={articleData.publishedTime}
               publicationName={articleData.publicationName}
-              style={[styles.articleMainContentRow]}
             />
             </ArticleMetaContainer>
           <ArticleLAContainerDesktop>
