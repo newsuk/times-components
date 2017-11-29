@@ -8,7 +8,7 @@ module.exports = {
       "error",
       {
         env: "apollo",
-        schemaJson: require("./schema.json")
+        schemaJson: require("@times-components/utils/schema.json")
       }
     ]
   },

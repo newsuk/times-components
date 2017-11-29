@@ -31,6 +31,8 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@times-components/utils": "0.0.1",
+    "apollo-utilities": "1.0.2",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",
@@ -70,7 +72,6 @@
     "lodash.get": "4.4.2",
     "lodash.merge": "4.6.0",
     "prop-types": "15.6.0",
-    "react-apollo": "1.4.16",
     "react-native-web": "0.1.14"
   },
   "peerDependencies": {

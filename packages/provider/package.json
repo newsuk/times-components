@@ -8,7 +8,6 @@
     "test": "jest --bail --ci --coverage",
     "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
     "fmt": "prettier --write '**/*.+(js|json|md)'",
-    "make-schema": "node ./scripts/fetch-gql-schema",
     "lint": "eslint . && yarn prettier:diff"
   },
   "jest": {
@@ -40,7 +39,8 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "apollo-client": "1.9.3",
+    "@times-components/utils": "0.0.1",
+    "apollo-utilities": "1.0.2",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-eslint": "7.2.3",
@@ -59,11 +59,8 @@
     "eslint-plugin-jsx-a11y": "6.0.2",
     "eslint-plugin-react": "7.4.0",
     "flow-bin": "0.42.0",
-    "graphql": "0.11.3",
+    "graphql": "0.11.7",
     "jest": "21.2.1",
-    "mkdirp": "0.5.1",
-    "nock": "9.0.14",
-    "node-fetch": "1.7.2",
     "prettier": "1.8.2",
     "react": "16.0.0",
     "react-dom": "16.0.0",
@@ -72,12 +69,12 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/pagination": "0.11.1",
+    "apollo-client": "2.1.0",
     "graphql-tag": "2.5.0",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",
     "prop-types": "15.6.0",
-    "react-apollo": "1.4.16",
+    "react-apollo": "2.0.1",
     "react-native-web": "0.1.14"
   },
   "peerDependencies": {
