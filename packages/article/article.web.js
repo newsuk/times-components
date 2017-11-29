@@ -31,21 +31,24 @@ import {
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
 
-
 const withAdComposer = (children, section = "article") => (
   <AdComposer section={section}>{children}</AdComposer>
 );
 
 class ArticlePage extends React.Component {
-
   static renderArticle(articleData) {
-    const [ratioWidth, ratioHeight] = articleData.leadAsset.crop.ratio.split(":");
+    const [ratioWidth, ratioHeight] = articleData.leadAsset.crop.ratio.split(
+      ":"
+    );
     const aspectRatio = ratioWidth / ratioHeight;
     const { leadAsset } = articleData;
-    const LeadAssetMedia = articleData.leadAsset ?
-      (<LeadAsset>
+    const LeadAssetMedia = articleData.leadAsset ? (
+      <LeadAsset>
         <LAImageContainer>
-          <Image uri={articleData.leadAsset.crop.url} aspectRatio={aspectRatio} />
+          <Image
+            uri={articleData.leadAsset.crop.url}
+            aspectRatio={aspectRatio}
+          />
         </LAImageContainer>
         <LAArticleImageContainer>
           <ArticleImage
@@ -59,25 +62,26 @@ class ArticlePage extends React.Component {
             }}
           />
         </LAArticleImageContainer>
-       </LeadAsset>): null;
+      </LeadAsset>
+    ) : null;
     const contentArray = articleData.content.map((i, index) => ({
       data: i,
       index
     }));
-    const BodyView = contentArray.map((i) => ArticlePage.renderBody(i));
+    const BodyView = contentArray.map(i => ArticlePage.renderBody(i));
     return (
       <ArticleMainContainer>
-          <ArticleLeadAssetContainerMobile>
-            {LeadAssetMedia}
-          </ArticleLeadAssetContainerMobile>
-          <ArticleHeaderContainer>
-            <ArticleHeader
-                headline={articleData.headline}
-                flags={articleData.flags}
-                standfirst={articleData.standfirst}
-                label={articleData.label}
-            />
-          </ArticleHeaderContainer>
+        <ArticleLeadAssetContainerMobile>
+          {LeadAssetMedia}
+        </ArticleLeadAssetContainerMobile>
+        <ArticleHeaderContainer>
+          <ArticleHeader
+            headline={articleData.headline}
+            flags={articleData.flags}
+            standfirst={articleData.standfirst}
+            label={articleData.label}
+          />
+        </ArticleHeaderContainer>
         <View>
           <ArticleMetaContainer>
             <ArticleMeta
@@ -85,27 +89,27 @@ class ArticlePage extends React.Component {
               publishedTime={articleData.publishedTime}
               publicationName={articleData.publicationName}
             />
-            </ArticleMetaContainer>
+          </ArticleMetaContainer>
           <ArticleLAContainerDesktop>
             {LeadAssetMedia}
           </ArticleLAContainerDesktop>
           {BodyView}
         </View>
       </ArticleMainContainer>
-    )
+    );
   }
 
-  static renderBody(content){
+  static renderBody(content) {
     return (
       <View>
         {renderTrees([content.data], {
           paragraph(key, attributes, children) {
             return (
-                <ArticleBodyContainer
+              <ArticleBodyContainer
                 testID={`paragraph-${content.index}`}
                 accessibilityLabel={`paragraph-${content.index}`}
                 key={key}
-                >
+              >
                 <ArticleTextElement>{children}</ArticleTextElement>
               </ArticleBodyContainer>
             );

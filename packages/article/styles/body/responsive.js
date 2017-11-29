@@ -79,7 +79,6 @@ export const LeadAsset = styled(View)`
   @media (min-width: ${wideBreakpoint}) {
     width: 100%;
     margin: 0 auto;
-
   }
 `;
 
@@ -120,10 +119,10 @@ export const ArticleMainContainer = styled(View)`
 `;
 
 export const ArticleHeaderContainer = styled(View)`
-padding-left: 10px;
-padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 
-@media (min-width: ${mediumBreakpoint}) {
+  @media (min-width: ${mediumBreakpoint}) {
     width: 83.33333333%;
     margin: 0 auto;
     padding-left: 0;
@@ -136,15 +135,15 @@ padding-right: 10px;
 `;
 
 export const ArticleLeadAssetContainerMobile = styled(View)`
-@media (min-width: ${wideBreakpoint}) {
+  @media (min-width: ${wideBreakpoint}) {
     display: none;
   }
 `;
 
 export const ArticleLAContainerDesktop = styled(View)`
-display: none;
-@media (min-width: ${wideBreakpoint}) {
-    display: flex
+  display: none;
+  @media (min-width: ${wideBreakpoint}) {
+    display: flex;
   }
 `;
 
@@ -174,36 +173,36 @@ export const ArticleMetaContainer = styled(View)`
   }
 
   @media (min-width: ${wideBreakpoint}) {
-      margin-bottom: 20px;
-      padding-right: 20px;
-      padding-left: 20px;
-      top: 0;
-      width: 20.8333%;
-      position: absolute;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    top: 0;
+    width: 20.8333%;
+    position: absolute;
   }
 `;
 
 export const LAImageContainer = styled(View)`
   display: flex;
-  @media (min-width: ${wideBreakpoint}){
+  @media (min-width: ${wideBreakpoint}) {
     display: none;
   }
-`
+`;
 
 export const LAArticleImageContainer = styled(View)`
   display: none;
-  @media (min-width: ${wideBreakpoint}){
+  @media (min-width: ${wideBreakpoint}) {
     width: 58.33333%;
     margin: 0 auto;
     display: flex;
     // Temp padding for feature flag release
     padding-bottom: 20px;
   }
-`
+`;
 
 export const HeadlineContainer = styled(Text)`
   font-size: 30px;
-  color: #1D1D1B;
+  color: #1d1d1b;
   margin-bottom: 8px;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -213,12 +212,12 @@ export const HeadlineContainer = styled(Text)`
     font-size: 45px;
     line-height: 45px;
   }
-`
+`;
 export const LabelContainer = styled(View)`
   @media (min-width: ${wideBreakpoint}) {
     margin-top: 20px;
   }
-`
+`;
 
 export const FlagContainer = styled(View)`
   @media (min-width: ${wideBreakpoint}) {
@@ -232,12 +231,12 @@ export const ArticleBylineContainer = styled(Text)`
     line-height: 18px;
     padding: 5px 0 25px;
   }
-`
+`;
 
 export const ArticleDatelineContainer = styled(Text)`
-padding: 12px 0 9px;
-@media (min-width: ${wideBreakpoint}) {
-  line-height: 18px;
-  padding: 5px 0 25px;
-}
-`
+  padding: 12px 0 9px;
+  @media (min-width: ${wideBreakpoint}) {
+    line-height: 18px;
+    padding: 5px 0 25px;
+  }
+`;

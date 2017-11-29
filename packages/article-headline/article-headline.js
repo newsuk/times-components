@@ -14,13 +14,13 @@ const styles = {
 };
 
 const ArticleHeadline = ({ text, style, WrapperComponent }) => (
-<WrapperComponent
+  <WrapperComponent
     accessibilityLabel="headline"
     testID="headline"
     style={[styles.text, style]}
   >
     {text}
-</WrapperComponent>
+  </WrapperComponent>
 );
 
 ArticleHeadline.propTypes = {

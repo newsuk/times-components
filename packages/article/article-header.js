@@ -10,7 +10,11 @@ import {
 import ArticleLabel from "@times-components/article-label";
 import { Text, View, ViewPropTypes } from "react-native";
 import styles from "./styles/header";
-import { HeadlineContainer, LabelContainer, FlagContainer } from "./styles/body/responsive";
+import {
+  HeadlineContainer,
+  LabelContainer,
+  FlagContainer
+} from "./styles/body/responsive";
 
 const { style: ViewStylePropTypes } = ViewPropTypes;
 
@@ -50,7 +54,11 @@ const renderStandfirst = standfirst => {
 const renderLabel = label => {
   if (!label) return null;
   return (
-    <LabelContainer accessibilityLabel="label" testID="label" style={styles.articleLabel}>
+    <LabelContainer
+      accessibilityLabel="label"
+      testID="label"
+      style={styles.articleLabel}
+    >
       <ArticleLabel title={label} color="#13354E" />
     </LabelContainer>
   );
@@ -59,7 +67,11 @@ const renderLabel = label => {
 const ArticleHeader = ({ label, headline, standfirst, flags, style }) => (
   <View style={[...style]}>
     {renderLabel(label)}
-    <ArticleHeadline text={headline} style={styles.articleHeadLineText} WrapperComponent={HeadlineContainer} />
+    <ArticleHeadline
+      text={headline}
+      style={styles.articleHeadLineText}
+      WrapperComponent={HeadlineContainer}
+    />
     {renderStandfirst(standfirst)}
     {renderFlags(flags)}
   </View>

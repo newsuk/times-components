@@ -15,7 +15,7 @@ const prepareDataForListView = articleData => {
   return [
     { type: "leadAsset", data: leadAssetData },
     { type: "header", data: articleHeaderData },
-    { type: "middleContainer", data: articleMidContainerData },
+    { type: "middleContainer", data: articleMidContainerData }
   ].concat(
     articleData.content.map((i, index) => ({
       type: "articleBodyRow",

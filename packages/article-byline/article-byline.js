@@ -18,31 +18,31 @@ const linkStyles = StyleSheet.create({
 
 const ArticleByline = ({ ast, style, WrapperComponent }) => {
   return (
-  <View style={[styles.container, style.container]}>
-    <WrapperComponent
-      accessibilityLabel="articleByline"
-      testID="articleByline"
-      style={[styles.byline, style.byline, styles.bylineColor]}
-    >
-      {renderTrees(ast, {
-        author(key, attributes, children) {
-          const url = `/profile/${attributes.slug}`;
-          return (
-            <TextLink
-              style={[linkStyles.link, style.link]}
-              key={key}
-              url={url}
-              onPress={() => {}}
-            >
-              {children}
-            </TextLink>
-          );
-        }
-      })}
-    </WrapperComponent>
-  </View>
-);
-}
+    <View style={[styles.container, style.container]}>
+      <WrapperComponent
+        accessibilityLabel="articleByline"
+        testID="articleByline"
+        style={[styles.byline, style.byline, styles.bylineColor]}
+      >
+        {renderTrees(ast, {
+          author(key, attributes, children) {
+            const url = `/profile/${attributes.slug}`;
+            return (
+              <TextLink
+                style={[linkStyles.link, style.link]}
+                key={key}
+                url={url}
+                onPress={() => {}}
+              >
+                {children}
+              </TextLink>
+            );
+          }
+        })}
+      </WrapperComponent>
+    </View>
+  );
+};
 
 export default ArticleByline;
 

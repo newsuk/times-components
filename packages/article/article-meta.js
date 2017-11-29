@@ -7,7 +7,10 @@ import DatePublication from "@times-components/date-publication";
 
 import styles from "./styles/meta";
 
-import { ArticleBylineContainer, ArticleDatelineContainer } from "./styles/body/responsive";
+import {
+  ArticleBylineContainer,
+  ArticleDatelineContainer
+} from "./styles/body/responsive";
 
 const { style: ViewStylePropTypes } = ViewPropTypes;
 
