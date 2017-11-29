@@ -10,6 +10,7 @@ import {
 import ArticleLabel from "@times-components/article-label";
 import { Text, View, ViewPropTypes } from "react-native";
 import styles from "./styles/header";
+import { HeadlineContainer } from "./styles/body/responsive";
 
 const { style: ViewStylePropTypes } = ViewPropTypes;
 
@@ -58,7 +59,7 @@ const renderLabel = label => {
 const ArticleHeader = ({ label, headline, standfirst, flags, style }) => (
   <View style={[...style]}>
     {renderLabel(label)}
-    <ArticleHeadline text={headline} style={styles.articleHeadLineText} />
+    <ArticleHeadline text={headline} style={styles.articleHeadLineText} WrapperComponent={HeadlineContainer} />
     {renderStandfirst(standfirst)}
     {renderFlags(flags)}
   </View>

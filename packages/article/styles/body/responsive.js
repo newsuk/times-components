@@ -193,5 +193,18 @@ export const LAArticleImageContainer = styled(View)`
   }
 `
 
+export const HeadlineContainer = styled(Text)`
+  font-size: 30px;
+  color: #1D1D1B;
+  margin-bottom: 8px;
+  font-family: "TimesModern-Bold";
+  font-weight: 400;
+  line-height: 30px;
+
+  @media (min-width: ${mediumBreakpoint}) {
+    font-size: 45px;
+    line-height: 45px;
+  }
+`
 
 

@@ -13,24 +13,26 @@ const styles = {
   }
 };
 
-const ArticleHeadline = ({ text, style }) => (
-  <Text
+const ArticleHeadline = ({ text, style, WrapperComponent }) => (
+<WrapperComponent
     accessibilityLabel="headline"
     testID="headline"
     style={[styles.text, style]}
   >
     {text}
-  </Text>
+</WrapperComponent>
 );
 
 ArticleHeadline.propTypes = {
   text: PropTypes.string.isRequired,
   // eslint-disable-next-line react/no-typos
-  style: Text.propTypes.style
+  style: Text.propTypes.style,
+  WrapperComponent: PropTypes.element
 };
 
 ArticleHeadline.defaultProps = {
-  style: null
+  style: null,
+  WrapperComponent: Text
 };
 
 export default ArticleHeadline;
