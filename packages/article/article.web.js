@@ -1,5 +1,5 @@
 import React from "react";
-import { Platform, Text, View } from "react-native";
+import { Platform, View } from "react-native";
 import PropTypes from "prop-types";
 import get from "lodash.get";
 import { renderTrees } from "@times-components/markup";
@@ -11,9 +11,7 @@ import { withTrackingContext } from "@times-components/tracking";
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
 
-import styles from "./styles/body";
 import {
-  ResponsiveWrapper,
   PrimaryContainer,
   SecondaryContainer,
   InlineContainer,

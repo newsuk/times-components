@@ -496,9 +496,10 @@ exports[`Article test on ios renders article no flags 1`] = `
       >
         <View
           accessibilityLabel="label"
+          className="sc-jTzLTM gXoRK"
           style={
             Object {
-              "paddingBottom": 3,
+              "paddingBottom": 5,
               "paddingTop": 4,
             }
           }
@@ -530,6 +531,7 @@ exports[`Article test on ios renders article no flags 1`] = `
           accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
+          className="sc-VigVT cJYVpY"
           ellipsizeMode="tail"
           style={
             Array [
@@ -564,7 +566,7 @@ exports[`Article test on ios renders article no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesModern-Regular",
-                "fontSize": 21,
+                "fontSize": 20,
                 "lineHeight": 25,
                 "paddingBottom": 9,
               },
@@ -628,6 +630,7 @@ exports[`Article test on ios renders article no flags 1`] = `
                 accessibilityLabel="articleByline"
                 accessible={true}
                 allowFontScaling={true}
+                className="sc-jzJRlG eBbDtK"
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -670,6 +673,7 @@ exports[`Article test on ios renders article no flags 1`] = `
               accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
+              className="sc-cSHVUG fvkmwf"
               ellipsizeMode="tail"
               style={
                 Array [
@@ -1450,6 +1454,7 @@ exports[`Article test on ios renders article no label 1`] = `
           accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
+          className="sc-VigVT cJYVpY"
           ellipsizeMode="tail"
           style={
             Array [
@@ -1484,7 +1489,7 @@ exports[`Article test on ios renders article no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesModern-Regular",
-                "fontSize": 21,
+                "fontSize": 20,
                 "lineHeight": 25,
                 "paddingBottom": 9,
               },
@@ -1495,6 +1500,7 @@ exports[`Article test on ios renders article no label 1`] = `
           How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life
         </Text>
         <View
+          className="sc-fjdhpX cMrWou"
           style={
             Array [
               Object {
@@ -1687,6 +1693,7 @@ exports[`Article test on ios renders article no label 1`] = `
                 accessibilityLabel="articleByline"
                 accessible={true}
                 allowFontScaling={true}
+                className="sc-jzJRlG eBbDtK"
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -1729,6 +1736,7 @@ exports[`Article test on ios renders article no label 1`] = `
               accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
+              className="sc-cSHVUG fvkmwf"
               ellipsizeMode="tail"
               style={
                 Array [
@@ -2506,6 +2514,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
           accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
+          className="sc-VigVT cJYVpY"
           ellipsizeMode="tail"
           style={
             Array [
@@ -2540,7 +2549,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesModern-Regular",
-                "fontSize": 21,
+                "fontSize": 20,
                 "lineHeight": 25,
                 "paddingBottom": 9,
               },
@@ -2604,6 +2613,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
                 accessibilityLabel="articleByline"
                 accessible={true}
                 allowFontScaling={true}
+                className="sc-jzJRlG eBbDtK"
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -2646,6 +2656,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
               accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
+              className="sc-cSHVUG fvkmwf"
               ellipsizeMode="tail"
               style={
                 Array [
@@ -3423,6 +3434,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
           accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
+          className="sc-VigVT cJYVpY"
           ellipsizeMode="tail"
           style={
             Array [
@@ -3501,6 +3513,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
                 accessibilityLabel="articleByline"
                 accessible={true}
                 allowFontScaling={true}
+                className="sc-jzJRlG eBbDtK"
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -3543,6 +3556,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
               accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
+              className="sc-cSHVUG fvkmwf"
               ellipsizeMode="tail"
               style={
                 Array [
@@ -4321,9 +4335,10 @@ exports[`Article test on ios renders article no standfirst 1`] = `
       >
         <View
           accessibilityLabel="label"
+          className="sc-jTzLTM gXoRK"
           style={
             Object {
-              "paddingBottom": 3,
+              "paddingBottom": 5,
               "paddingTop": 4,
             }
           }
@@ -4355,6 +4370,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
           accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
+          className="sc-VigVT cJYVpY"
           ellipsizeMode="tail"
           style={
             Array [
@@ -4380,6 +4396,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
         <View
+          className="sc-fjdhpX cMrWou"
           style={
             Array [
               Object {
@@ -4572,6 +4589,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
                 accessibilityLabel="articleByline"
                 accessible={true}
                 allowFontScaling={true}
+                className="sc-jzJRlG eBbDtK"
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -4614,6 +4632,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
               accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
+              className="sc-cSHVUG fvkmwf"
               ellipsizeMode="tail"
               style={
                 Array [
@@ -5389,9 +5408,10 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
       >
         <View
           accessibilityLabel="label"
+          className="sc-jTzLTM gXoRK"
           style={
             Object {
-              "paddingBottom": 3,
+              "paddingBottom": 5,
               "paddingTop": 4,
             }
           }
@@ -5423,6 +5443,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
           accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
+          className="sc-VigVT cJYVpY"
           ellipsizeMode="tail"
           style={
             Array [
@@ -5501,6 +5522,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
                 accessibilityLabel="articleByline"
                 accessible={true}
                 allowFontScaling={true}
+                className="sc-jzJRlG eBbDtK"
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -5543,6 +5565,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
               accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
+              className="sc-cSHVUG fvkmwf"
               ellipsizeMode="tail"
               style={
                 Array [
@@ -6323,6 +6346,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
           accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
+          className="sc-VigVT cJYVpY"
           ellipsizeMode="tail"
           style={
             Array [
@@ -6348,6 +6372,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
         <View
+          className="sc-fjdhpX cMrWou"
           style={
             Array [
               Object {
@@ -6540,6 +6565,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
                 accessibilityLabel="articleByline"
                 accessible={true}
                 allowFontScaling={true}
+                className="sc-jzJRlG eBbDtK"
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -6582,6 +6608,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
               accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
+              className="sc-cSHVUG fvkmwf"
               ellipsizeMode="tail"
               style={
                 Array [
@@ -7429,9 +7456,10 @@ exports[`Article test on ios renders full article 1`] = `
       >
         <View
           accessibilityLabel="label"
+          className="sc-jTzLTM gXoRK"
           style={
             Object {
-              "paddingBottom": 3,
+              "paddingBottom": 5,
               "paddingTop": 4,
             }
           }
@@ -7463,6 +7491,7 @@ exports[`Article test on ios renders full article 1`] = `
           accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
+          className="sc-VigVT cJYVpY"
           ellipsizeMode="tail"
           style={
             Array [
@@ -7497,7 +7526,7 @@ exports[`Article test on ios renders full article 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesModern-Regular",
-                "fontSize": 21,
+                "fontSize": 20,
                 "lineHeight": 25,
                 "paddingBottom": 9,
               },
@@ -7508,6 +7537,7 @@ exports[`Article test on ios renders full article 1`] = `
           How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life
         </Text>
         <View
+          className="sc-fjdhpX cMrWou"
           style={
             Array [
               Object {
@@ -7700,6 +7730,7 @@ exports[`Article test on ios renders full article 1`] = `
                 accessibilityLabel="articleByline"
                 accessible={true}
                 allowFontScaling={true}
+                className="sc-jzJRlG eBbDtK"
                 ellipsizeMode="tail"
                 style={
                   Array [
@@ -7742,6 +7773,7 @@ exports[`Article test on ios renders full article 1`] = `
               accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
+              className="sc-cSHVUG fvkmwf"
               ellipsizeMode="tail"
               style={
                 Array [

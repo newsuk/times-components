@@ -4,21 +4,6 @@ import styled from "styled-components";
 const mediumBreakpoint = "768px";
 const wideBreakpoint = "1024px";
 
-export const ResponsiveWrapper = styled(View)`
-  padding-left: 10px;
-  padding-right: 10px;
-
-  @media (min-width: ${mediumBreakpoint}) {
-    width: 83.333333333333%;
-    margin: 0 auto;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  @media (min-width: ${wideBreakpoint}) {
-    width: 100%;
-  }
-`;
-
 export const PrimaryContainer = styled(View)`
   width: 100%;
   flex-direction: column;
@@ -97,18 +82,7 @@ export const ArticleTextElement = styled(Text)`
   }
 `;
 
-// export const ArticleMainContentRow = styled(View)`
-//   padding-left: 10px;
-//   padding-right: 10px;
-// `;
-
 export const ArticleMainContainer = styled(View)`
-  //padding-left: 10px;
-  //padding-right: 10px;
-  // @media (min-width: ${mediumBreakpoint}) {
-  //   padding-left: 0;
-  //   padding-right: 0;
-  // }
   @media (min-width: ${wideBreakpoint}) {
     padding-left: 0;
     padding-right: 20px;

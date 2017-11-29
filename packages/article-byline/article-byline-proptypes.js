@@ -8,10 +8,12 @@ export const articleBylinePropTypes = {
     container: ViewPropTypes.style,
     byline: Text.propTypes.style,
     link: Text.propTypes.style
-  })
+  }),
+  WrapperComponent: PropTypes.element
 };
 
 export const articleBylineDefaultPropTypes = {
   ast: {},
-  style: {}
+  style: {},
+  WrapperComponent: Text
 };
