@@ -3601,8 +3601,9 @@ detox@5.8.2:
     telnet-client "0.15.3"
     ws "^1.1.1"
 
-dextrose@../dextrose:
-  version "1.1.0"
+dextrose@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.0.3.tgz#e633c7fbf1d991720159a0a6381620cc1f3b9c29"
   dependencies:
     "@times-components/fructose" "3.1.3"
     babel-core "6.26.0"
@@ -10582,8 +10583,8 @@ webpack@3.3.0:
     yargs "^6.0.0"
 
 "webpack@^2.5.1 || ^3.0.0", webpack@^3.8.1:
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-3.9.0.tgz#7d65ca4ba92ae1b67be2c00b217fb990b8ffa97f"
+  version "3.9.1"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-3.9.1.tgz#9a60aa544ed5d4d454c069e3f521aa007e02643c"
   dependencies:
     acorn "^5.0.0"
     acorn-dynamic-import "^2.0.0"

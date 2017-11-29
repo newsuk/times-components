@@ -1,7 +1,7 @@
 const dextrose = require("dextrose").default;
 const path = require("path");
 
-const config = {
+const config = {	
     snapPath: __dirname+'/snappy',
     automationName: "XCUITest",
     platformName: "iOS",
@@ -10,7 +10,15 @@ const config = {
     app: path.join(
         __dirname,
         "../ios/build/Build/Products/Debug-iphonesimulator/storybooknative.app"
-    )
+    ),
+    ignoredStories: [
+    	"AuthorHeadTracking",
+    	"AuthorProfileTracking",
+        "Brightcove",
+        "PaginationTracking",
+        "TrackingPage",
+        "TrackingEvent"
+    ]
 }
 
 dextrose(config);
