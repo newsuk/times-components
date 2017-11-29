@@ -29,7 +29,7 @@ export const PrimaryContainer = styled(View)`
     margin: 0 auto;
   }
   @media (min-width: ${wideBreakpoint}) {
-    width: 100%;
+    width: 58.33333%;
   }
 `;
 
@@ -48,7 +48,7 @@ export const SecondaryContainer = styled(View)`
     padding-right: 0;
   }
   @media (min-width: ${wideBreakpoint}) {
-    width: 100%;
+    width: 58.33333%;
   }
 `;
 
@@ -67,7 +67,7 @@ export const InlineContainer = styled(View)`
     padding-right: 0;
   }
   @media (min-width: ${wideBreakpoint}) {
-    width: 100%;
+    width: 58.33333%;
   }
 `;
 
@@ -107,7 +107,7 @@ export const ArticleMainContainer = styled(View)`
   @media (min-width: ${wideBreakpoint}) {
     padding-left: 0;
     padding-right: 20px;
-    width: 58.33333%;
+    // width: 58.33333%;
     margin: 0 auto;
     //flex-direction: row;
   }
@@ -125,6 +125,7 @@ padding-right: 10px;
   }
   @media (min-width: ${wideBreakpoint}) {
     width: 100%;
+    width: 58.33333%;
   }
 `;
 
@@ -151,7 +152,7 @@ export const ArticleBodyContainer = styled(View)`
     padding-right: 0;
   }
   @media (min-width: ${wideBreakpoint}) {
-    width: 100%;
+    width: 58.33333%;
   }
 `;
 
@@ -171,8 +172,7 @@ export const ArticleMetaContainer = styled(View)`
       padding-right: 20px;
       padding-left: 20px;
       top: 0;
-      width: 35.71429%;
-      left: -35.71429%;
+      width: 20.8333%;
       position: absolute;
   }
 `;
@@ -187,6 +187,8 @@ export const LAImageContainer = styled(View)`
 export const LAArticleImageContainer = styled(View)`
   display: none;
   @media (min-width: ${wideBreakpoint}){
+    width: 58.33333%;
+    margin: 0 auto;
     display: flex;
     // Temp padding for feature flag release
     padding-bottom: 20px;
