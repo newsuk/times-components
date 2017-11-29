@@ -121,7 +121,7 @@ storiesOf("Article", module)
       );
     }
 
-    return <Article {...fullArticleFixture.data} />;
+    return <Article {...fullArticleFixture.data} analyticsStream={() => {}} />;
   })
   .add("Fixtures - No ads", () => (
     <Article {...articleFixtureNoAds.data} analyticsStream={() => {}} />
