@@ -2,7 +2,7 @@ import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { decorateAction, action } from "@storybook/addon-actions";
+import { decorateAction } from "@storybook/addon-actions";
 import { AuthorProfileProvider } from "@times-components/provider";
 import { ApolloClient, IntrospectionFragmentMatcher } from "react-apollo";
 import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";
@@ -14,6 +14,7 @@ import AuthorProfile from "./author-profile";
 import AuthorProfileContent from "./author-profile-content";
 import authorProfileFixture from "./fixtures/author-profile.json";
 import articleListFixture from "./fixtures/article-list.json";
+import storybookReporter from "../../storybook/storybook-tealium-reporter";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
@@ -136,6 +137,33 @@ const withMockProvider = (child, client = defaultClient) => (
     {child}
   </MockedProvider>
 );
+const authProfileProviderProps = {
+  slug: "fiona-hamilton",
+  author: authorProfileFixture.data.author,
+  isLoading: false,
+  page: 2,
+  pageSize: 3,
+  onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
+  onArticlePress: preventDefaultedAction("onArticlePress"),
+  analyticsStream: storybookReporter
+};
+const slug = "fiona-hamilton";
+
+const authProfileProvider = withMockProvider(
+  <AuthorProfileProvider slug={slug}>
+    {({ author, isLoading, error }) => (
+      <AuthorProfile
+        {...authProfileProviderProps}
+        author={author}
+        page={1}
+        pageSize={5}
+        slug={slug}
+        isLoading={isLoading}
+        error={error}
+      />
+    )}
+  </AuthorProfileProvider>
+);
 
 storiesOf("AuthorProfile", module)
   .add("Default", () => {
@@ -148,7 +176,7 @@ storiesOf("AuthorProfile", module)
       pageSize: 5,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
       onArticlePress: preventDefaultedAction("onArticlePress"),
-      analyticsStream: () => {}
+      analyticsStream: storybookReporter
     };
 
     return withMockProvider(<AuthorProfile {...props} />);
@@ -160,45 +188,9 @@ storiesOf("AuthorProfile", module)
       pageSize: 3,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
       onArticlePress: preventDefaultedAction("onArticlePress"),
-      analyticsStream: () => {}
+      analyticsStream: storybookReporter
     };
 
     return <AuthorProfileContent {...props} />;
   })
-  .add("With Provider", () => {
-    const onTwitterLinkPress = preventDefaultedAction("onTwitterLinkPress");
-    const onArticlePress = preventDefaultedAction("onArticlePress");
-    const slug = "fiona-hamilton";
-
-    return withMockProvider(
-      <AuthorProfileProvider slug={slug}>
-        {({ author, isLoading, error }) => (
-          <AuthorProfile
-            author={author}
-            page={1}
-            pageSize={5}
-            slug={slug}
-            isLoading={isLoading}
-            error={error}
-            onTwitterLinkPress={onTwitterLinkPress}
-            onArticlePress={onArticlePress}
-            analyticsStream={() => {}}
-          />
-        )}
-      </AuthorProfileProvider>
-    );
-  })
-  .add("Tracking", () => {
-    const props = {
-      slug: "fiona-hamilton",
-      author: authorProfileFixture.data.author,
-      isLoading: false,
-      page: 2,
-      pageSize: 3,
-      onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
-      onArticlePress: preventDefaultedAction("onArticlePress"),
-      analyticsStream: action("analytics-event")
-    };
-
-    return withMockProvider(<AuthorProfile {...props} />);
-  });
+  .add("With Provider and Tracking", () => authProfileProvider);

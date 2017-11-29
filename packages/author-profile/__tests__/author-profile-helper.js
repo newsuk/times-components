@@ -18,7 +18,7 @@ import AuthorProfileItem from "../author-profile-item";
 import AuthorHead from "../author-profile-author-head";
 import AuthorProfileItemSeparator from "../author-profile-item-separator";
 import authorProfileFixture from "../fixtures/author-profile.json";
-import articleListFixture from "../fixtures/article-list.json";
+import pagedResult from "./paged-result";
 
 Enzyme.configure({ adapter: new React16Adapter() });
 
@@ -28,23 +28,6 @@ const props = {
   onArticlePress: () => {},
   analyticsStream: () => {}
 };
-
-const pagedResult = (skip, first) => ({
-  data: {
-    author: {
-      ...articleListFixture.data.author,
-      articles: {
-        ...articleListFixture.data.author.articles,
-        list: articleListFixture.data.author.articles.list
-          .map(el => ({
-            ...el,
-            publishedTime: new Date(el.publishedTime)
-          }))
-          .slice(skip, skip + first)
-      }
-    }
-  }
-});
 
 const mocks = [
   {
@@ -157,8 +140,6 @@ export default AuthorProfileContent => {
           slug="fiona-hamilton"
           page={1}
           pageSize={10}
-          onTwitterLinkPress={() => {}}
-          onArticlePress={() => {}}
         />
       )
     );
@@ -260,6 +241,7 @@ export default AuthorProfileContent => {
         imageRatio={3 / 2}
         onTwitterLinkPress={() => {}}
         onArticlePress={() => {}}
+        onViewed={() => {}}
       />
     );
 
@@ -369,8 +351,6 @@ export default AuthorProfileContent => {
           slug="fiona-hamilton"
           page={1}
           pageSize={10}
-          onTwitterLinkPress={() => {}}
-          onArticlePress={() => {}}
           analyticsStream={stream}
         />
       )

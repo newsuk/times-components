@@ -203,6 +203,7 @@ exports[`renders profile content 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
+  onViewableItemsChanged={[Function]}
   pageSize={10}
   renderItem={[Function]}
   scrollEventThrottle={50}
@@ -210,7 +211,23 @@ exports[`renders profile content 1`] = `
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
+  viewabilityConfig={
+    Object {
+      "viewAreaCoveragePercentThreshold": 100,
+      "waitForInteraction": false,
+    }
+  }
+  viewabilityConfigCallbackPairs={
+    Array [
+      Object {
+        "onViewableItemsChanged": [Function],
+        "viewabilityConfig": Object {
+          "viewAreaCoveragePercentThreshold": 100,
+          "waitForInteraction": false,
+        },
+      },
+    ]
+  }
   windowSize={21}
 >
   <View>
@@ -3946,6 +3963,7 @@ exports[`renders profile content component 1`] = `
     Array [
       Object {
         "__typename": "Article",
+        "elementId": "articleList-1-0",
         "headline": "Top medal for forces dog who took a bite out of the Taliban",
         "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
         "label": "",
@@ -3978,6 +3996,7 @@ exports[`renders profile content component 1`] = `
       },
       Object {
         "__typename": "Article",
+        "elementId": "articleList-1-1",
         "headline": "Social media must raise game to beat terrorists, says UN chief",
         "id": "4e6894ec-cb18-11e7-b529-95e3fc05f40f",
         "label": "",
@@ -4010,6 +4029,7 @@ exports[`renders profile content component 1`] = `
       },
       Object {
         "__typename": "Article",
+        "elementId": "articleList-1-2",
         "headline": "Cuts have left the army 20 years out of date, says former general",
         "id": "f79c9d8c-c95c-11e7-b529-95e3fc05f40f",
         "label": "",
@@ -4058,6 +4078,7 @@ exports[`renders profile content component 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
+  onViewableItemsChanged={[Function]}
   pageSize={3}
   renderItem={[Function]}
   scrollEventThrottle={50}
@@ -4065,7 +4086,23 @@ exports[`renders profile content component 1`] = `
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
+  viewabilityConfig={
+    Object {
+      "viewAreaCoveragePercentThreshold": 100,
+      "waitForInteraction": false,
+    }
+  }
+  viewabilityConfigCallbackPairs={
+    Array [
+      Object {
+        "onViewableItemsChanged": [Function],
+        "viewabilityConfig": Object {
+          "viewAreaCoveragePercentThreshold": 100,
+          "waitForInteraction": false,
+        },
+      },
+    ]
+  }
   windowSize={21}
 >
   <View>
@@ -5810,7 +5847,7 @@ exports[`renders profile empty 1`] = `
     </View>
   }
   accessibilityID="scroll-view"
-  data={undefined}
+  data={Array []}
   disableVirtualization={false}
   getItem={[Function]}
   getItemCount={[Function]}
@@ -5827,6 +5864,7 @@ exports[`renders profile empty 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
+  onViewableItemsChanged={[Function]}
   pageSize={undefined}
   renderItem={[Function]}
   scrollEventThrottle={50}
@@ -5834,7 +5872,23 @@ exports[`renders profile empty 1`] = `
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
+  viewabilityConfig={
+    Object {
+      "viewAreaCoveragePercentThreshold": 100,
+      "waitForInteraction": false,
+    }
+  }
+  viewabilityConfigCallbackPairs={
+    Array [
+      Object {
+        "onViewableItemsChanged": [Function],
+        "viewabilityConfig": Object {
+          "viewAreaCoveragePercentThreshold": 100,
+          "waitForInteraction": false,
+        },
+      },
+    ]
+  }
   windowSize={21}
 >
   <View>
@@ -6203,6 +6257,7 @@ exports[`renders profile loading 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
+  onViewableItemsChanged={[Function]}
   pageSize={undefined}
   renderItem={[Function]}
   scrollEventThrottle={50}
@@ -6210,7 +6265,23 @@ exports[`renders profile loading 1`] = `
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
+  viewabilityConfig={
+    Object {
+      "viewAreaCoveragePercentThreshold": 100,
+      "waitForInteraction": false,
+    }
+  }
+  viewabilityConfigCallbackPairs={
+    Array [
+      Object {
+        "onViewableItemsChanged": [Function],
+        "viewabilityConfig": Object {
+          "viewAreaCoveragePercentThreshold": 100,
+          "waitForInteraction": false,
+        },
+      },
+    ]
+  }
   windowSize={21}
 >
   <View>
