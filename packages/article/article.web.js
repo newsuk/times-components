@@ -23,7 +23,10 @@ import {
   ArticleMetaContainer,
   ArticleLAContainerDesktop,
   ArticleHeaderContainer,
-  ArticleBodyContainer
+  ArticleBodyContainer,
+  ArticleTextElement,
+  LAImageContainer,
+  LAArticleImageContainer
 } from "./styles/body/responsive";
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
@@ -38,9 +41,24 @@ class ArticlePage extends React.Component {
   static renderArticle(articleData) {
     const [ratioWidth, ratioHeight] = articleData.leadAsset.crop.ratio.split(":");
     const aspectRatio = ratioWidth / ratioHeight;
+    const { leadAsset } = articleData;
     const LeadAssetMedia = articleData.leadAsset ?
       (<LeadAsset>
-        <Image uri={articleData.leadAsset.crop.url} aspectRatio={aspectRatio} />
+        <LAImageContainer>
+          <Image uri={articleData.leadAsset.crop.url} aspectRatio={aspectRatio} />
+        </LAImageContainer>
+        <LAArticleImageContainer>
+          <ArticleImage
+            imageOptions={{
+              ratio: leadAsset.crop.ratio,
+              url: leadAsset.crop.url
+            }}
+            captionOptions={{
+              caption: leadAsset.caption,
+              credits: leadAsset.credits
+            }}
+          />
+        </LAArticleImageContainer>
        </LeadAsset>): null;
     const contentArray = articleData.content.map((i, index) => ({
       data: i,
@@ -88,7 +106,7 @@ class ArticlePage extends React.Component {
                 accessibilityLabel={`paragraph-${content.index}`}
                 key={key}
                 >
-                <Text style={styles.articleTextElement}>{children}</Text>
+                <ArticleTextElement>{children}</ArticleTextElement>
               </ArticleBodyContainer>
             );
           },
