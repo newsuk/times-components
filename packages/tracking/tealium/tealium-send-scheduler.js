@@ -1,3 +1,5 @@
+/* eslint-env browser */
+
 export default class TealiumSendScheduler {
   constructor(options, w, d) {
     this.queue = [];
@@ -76,8 +78,10 @@ export default class TealiumSendScheduler {
       }
 
       const e = this.queue.shift();
-      const method = e.component === "Page" ? "view" : "link";
-      this.w.utag[method](e);
+
+      if (typeof window.tealiumTrack === "function") {
+        window.tealiumTrack(e);
+      }
     } while (deadline.timeRemaining() > 0);
 
     if (this.queue.length > 0) {
