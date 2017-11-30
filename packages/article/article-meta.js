@@ -7,7 +7,7 @@ import DatePublication from "@times-components/date-publication";
 
 import styles from "./styles/meta";
 
-import { MetaElementContainer } from "./styles/body/responsive";
+import MetaElementContainer from "./styles/meta/responsive";
 
 const { style: ViewStylePropTypes } = ViewPropTypes;
 

@@ -14,7 +14,7 @@ import {
   HeadlineContainer,
   LabelContainer,
   FlagContainer
-} from "./styles/body/responsive";
+} from "./styles/header/responsive";
 
 const { style: ViewStylePropTypes } = ViewPropTypes;
 
