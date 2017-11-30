@@ -1,5 +1,5 @@
 /* eslint-env jest */
-import 'raf/polyfill';
+import "raf/polyfill";
 import "react-native";
 import shared from "./shared";
 
