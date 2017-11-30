@@ -1,4 +1,3 @@
-const dextrose = require("dextrose").default;
 const path = require("path");
 
 const config = {
@@ -20,4 +19,4 @@ const config = {
     ]
 }
 
-dextrose(config);
+module.exports = config;
