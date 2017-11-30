@@ -41,12 +41,12 @@ const captionStyle = {
   }
 };
 
-const renderCaption = (display, caption, credits) => {
+const renderCaption = (display, caption, credits, url) => {
   if (!caption && !credits) {
     return null;
   }
   return (
-    <View style={styles[`${display}Caption`]}>
+    <View key={`caption-${url}`} style={styles[`${display}Caption`]}>
       <Caption text={caption} credits={credits} style={captionStyle[display]} />
     </View>
   );
@@ -60,10 +60,10 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
   const aspectRatio = ratioWidth / ratioHeight;
 
   return [
-    <View style={styles[`${display}Image`]}>
+    <View key={url} style={styles[`${display}Image`]}>
       <Image uri={url} aspectRatio={aspectRatio} />
     </View>,
-    renderCaption(display, caption, credits)
+    renderCaption(display, caption, credits, url)
   ];
 };
 

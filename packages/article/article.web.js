@@ -48,11 +48,13 @@ class ArticlePage extends React.Component {
       leadAsset
     } = articleData;
     const LeadAssetMedia = ArticlePage.renderLeadAsset(leadAsset);
-    const contentArray = articleData.content.map((i, index) => ({
-      data: i,
+    const contentArray = articleData.content.map((data, index) => ({
+      data,
       index
     }));
-    const BodyView = contentArray.map((content, index)=> ArticlePage.renderBody(content, index));
+    const BodyView = contentArray.map((content, index) =>
+      ArticlePage.renderBody(content, index)
+    );
     return (
       <MainContainer>
         <MediaContainerMobile>{LeadAssetMedia}</MediaContainerMobile>
@@ -85,7 +87,7 @@ class ArticlePage extends React.Component {
         <LeadAssetMobile>
           <ArticleImage
             imageOptions={{
-              display: '',
+              display: "",
               ratio: leadAsset.crop.ratio,
               url: leadAsset.crop.url
             }}
@@ -94,7 +96,7 @@ class ArticlePage extends React.Component {
         <LeadAssetDesktop>
           <ArticleImage
             imageOptions={{
-              display: '',
+              display: "",
               ratio: leadAsset.crop.ratio,
               url: leadAsset.crop.url
             }}
@@ -150,14 +152,12 @@ class ArticlePage extends React.Component {
 
   static getImageContainer(imageType) {
     switch (imageType) {
-      case "primary":
-        return PrimaryImg;
       case "secondary":
         return SecondaryImg;
       case "inline":
         return InlineImg;
       default:
-        return null;
+        return PrimaryImg;
     }
   }
 
