@@ -1,13 +1,13 @@
 import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { storiesOf } from "@storybook/react-native";
+import { storiesOf } from "../../storybook/storiesOfOverloader";
 import { Text, ScrollView, View } from "react-native";
 
 import Ad from "./ad";
 import Placeholder from "./placeholder";
 
 export default () =>
-  storiesOf("Ad", module)
+  storiesOf("Advertisements", module)
     .add("render one native ad", () => (
       <ScrollView>
         <Ad code="intervention" section="article" />

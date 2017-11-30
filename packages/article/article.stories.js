@@ -1,6 +1,6 @@
 /* eslint-env browser */
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { storiesOf } from "@storybook/react-native";
+import { storiesOf } from "../../storybook/storiesOfOverloader";
 import React from "react";
 import { Platform } from "react-native";
 
@@ -131,7 +131,7 @@ storiesOf("Article", module)
       );
     }
 
-    return <Article {...fullArticleFixture.data} />;
+    return <Article {...fullArticleFixture.data} analyticsStream={() => {}} />;
   })
   .add("Fixtures - No ads", () => (
     <Article {...articleFixtureNoAds.data} analyticsStream={() => {}} />
