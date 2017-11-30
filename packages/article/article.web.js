@@ -1,5 +1,5 @@
 import React from "react";
-import { Platform, View } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import get from "lodash.get";
 import { renderTrees } from "@times-components/markup";
@@ -11,19 +11,22 @@ import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
 
 import {
-  PrimaryContainer,
-  SecondaryContainer,
-  InlineContainer,
-  LeadAsset,
   MainContainer,
-  MetaContainer,
   HeaderContainer,
+  MetaContainer
+} from "./styles/responsive";
+
+import {
   ParagraphContainer,
   Paragraph,
+  LeadAsset,
   LeadAssetMobile,
   LeadAssetDesktop,
   MediaContainerMobile,
-  MediaContainerDesktop
+  MediaContainerDesktop,
+  PrimaryImg,
+  SecondaryImg,
+  InlineImg
 } from "./styles/body/responsive";
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
@@ -34,8 +37,50 @@ const withAdComposer = (children, section = "article") => (
 
 class ArticlePage extends React.Component {
   static renderArticle(articleData) {
-    const { leadAsset } = articleData;
-    const LeadAssetMedia = articleData.leadAsset ? (
+    const {
+      headline,
+      flags,
+      standfirst,
+      label,
+      byline,
+      publishedTime,
+      publicationName,
+      leadAsset
+    } = articleData;
+    const LeadAssetMedia = ArticlePage.renderLeadAsset(leadAsset);
+    const contentArray = articleData.content.map((i, index) => ({
+      data: i,
+      index
+    }));
+    const BodyView = contentArray.map(i => ArticlePage.renderBody(i));
+    return (
+      <MainContainer>
+        <MediaContainerMobile>{LeadAssetMedia}</MediaContainerMobile>
+        <HeaderContainer>
+          <ArticleHeader
+            headline={headline}
+            flags={flags}
+            standfirst={standfirst}
+            label={label}
+          />
+        </HeaderContainer>
+        <View>
+          <MetaContainer>
+            <ArticleMeta
+              byline={byline}
+              publishedTime={publishedTime}
+              publicationName={publicationName}
+            />
+          </MetaContainer>
+          <MediaContainerDesktop>{LeadAssetMedia}</MediaContainerDesktop>
+          {BodyView}
+        </View>
+      </MainContainer>
+    );
+  }
+
+  static renderLeadAsset(leadAsset) {
+    return leadAsset ? (
       <LeadAsset>
         <LeadAssetMobile>
           <ArticleImage
@@ -59,35 +104,6 @@ class ArticlePage extends React.Component {
         </LeadAssetDesktop>
       </LeadAsset>
     ) : null;
-    const contentArray = articleData.content.map((i, index) => ({
-      data: i,
-      index
-    }));
-    const BodyView = contentArray.map(i => ArticlePage.renderBody(i));
-    return (
-      <MainContainer>
-        <MediaContainerMobile>{LeadAssetMedia}</MediaContainerMobile>
-        <HeaderContainer>
-          <ArticleHeader
-            headline={articleData.headline}
-            flags={articleData.flags}
-            standfirst={articleData.standfirst}
-            label={articleData.label}
-          />
-        </HeaderContainer>
-        <View>
-          <MetaContainer>
-            <ArticleMeta
-              byline={articleData.byline}
-              publishedTime={articleData.publishedTime}
-              publicationName={articleData.publicationName}
-            />
-          </MetaContainer>
-          <MediaContainerDesktop>{LeadAssetMedia}</MediaContainerDesktop>
-          {BodyView}
-        </View>
-      </MainContainer>
-    );
   }
 
   static renderBody(content) {
@@ -106,7 +122,7 @@ class ArticlePage extends React.Component {
             );
           },
           image(key, attributes) {
-            const ImageContainer = ArticlePage.imageContainerChooser(
+            const ImageContainer = ArticlePage.getImageContainer(
               attributes.display
             );
             return (
@@ -131,14 +147,14 @@ class ArticlePage extends React.Component {
     );
   }
 
-  static imageContainerChooser(imageType) {
+  static getImageContainer(imageType) {
     switch (imageType) {
       case "primary":
-        return PrimaryContainer;
+        return PrimaryImg;
       case "secondary":
-        return SecondaryContainer;
+        return SecondaryImg;
       case "inline":
-        return InlineContainer;
+        return InlineImg;
       default:
         return null;
     }
@@ -156,10 +172,7 @@ class ArticlePage extends React.Component {
     }
 
     const ArticleListView = ArticlePage.renderArticle(this.props.article);
-
-    return Platform.OS === "web"
-      ? withAdComposer(ArticleListView)
-      : ArticleListView;
+    return withAdComposer(ArticleListView);
   }
 }
 

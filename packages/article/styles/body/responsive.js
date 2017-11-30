@@ -2,36 +2,6 @@ import { View, Text } from "react-native";
 import styled from "styled-components";
 import config from "../responsive-config";
 
-export const MainContainer = styled(View)`
-  @media (min-width: ${config.wideBreakpoint}) {
-    padding-left: 0;
-    padding-right: 20px;
-    margin: 0 auto;
-  }
-`;
-
-/* --- Header --- */
-
-export const HeaderContainer = styled(View)`
-  ${config.articleContainerPadding} ${config.mediumBpPositioning} @media (min-width: ${config.wideBreakpoint}) {
-    width: 100%;
-    width: ${config.wideBpWidth};
-  }
-`;
-
-/* --- Meta --- */
-
-export const MetaContainer = styled(View)`
-  ${config.articleContainerPadding} ${config.mediumBpPositioning} @media (min-width: ${config.wideBreakpoint}) {
-    margin-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-    position: absolute;
-    top: 0;
-    width: 20.8333%;
-  }
-`;
-
 /* --- Body --- */
 
 export const ParagraphContainer = styled(View)`
@@ -92,7 +62,7 @@ export const MediaContainerDesktop = styled(View)`
 
 /* --- Article Images --- */
 
-export const PrimaryContainer = styled(View)`
+export const PrimaryImg = styled(View)`
   width: 100%;
   flex-direction: column;
   padding-bottom: 25px;
@@ -104,7 +74,7 @@ export const PrimaryContainer = styled(View)`
   ${config.wideBpPositioning};
 `;
 
-export const SecondaryContainer = styled(View)`
+export const SecondaryImg = styled(View)`
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -115,7 +85,7 @@ export const SecondaryContainer = styled(View)`
   ${config.mediumBpPositioning} ${config.wideBpPositioning};
 `;
 
-export const InlineContainer = styled(View)`
+export const InlineImg = styled(View)`
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;

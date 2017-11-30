@@ -24,14 +24,13 @@ const articleContainerPadding = `
   padding-right: 10px;
 `;
 
-const showHideToggle = (show, styles) =>
-  `
+const showHideToggle = (show, styles) => `
   display: ${show ? "flex" : "none"};
   @media (min-width: ${wideBreakpoint}) {
     display: ${show ? "none" : "flex"};
     ${styles || ""}
   }
-  `;
+`;
 
 export default {
   mediumBreakpoint,
