@@ -45,7 +45,7 @@ exports[`does re-render the author head if the loading state changes 1`] = `
 `;
 
 exports[`renders profile 1`] = `
-<Pagination Helper (Apollo(Wrapper))
+<Apollo(Wrapper)
   articleImageRatio="3:2"
   page={1}
   pageSize={10}

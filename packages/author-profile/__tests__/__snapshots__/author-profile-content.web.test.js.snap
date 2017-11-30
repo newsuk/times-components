@@ -266,7 +266,7 @@ Array [
 `;
 
 exports[`renders profile 1`] = `
-<Pagination Helper (Apollo(Wrapper))
+<Apollo(Wrapper)
   articleImageRatio="3:2"
   page={1}
   pageSize={10}
