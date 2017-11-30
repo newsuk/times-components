@@ -48,29 +48,37 @@ const AuthorProfile = ({
         pageSize,
         isLoading: articlesLoading,
         variables: { imageRatio }
-      }) => (
-        <AuthorProfileContent
-          isLoading={isLoading}
-          name={name}
-          biography={biography}
-          uri={uri}
-          jobTitle={jobTitle}
-          twitter={twitter}
-          onTwitterLinkPress={onTwitterLinkPress}
-          count={get(articles, "count", 0)}
-          onNext={onNext}
-          onPrev={onPrev}
-          page={page}
-          pageSize={pageSize}
-          imageRatio={ratioTextToFloat(imageRatio)}
-          articlesLoading={articlesLoading}
-          articles={get(data, "articles.list", []).map(article => ({
+      }) => {
+        const articlesWithPublishTime = get(data, "articles.list", []).map(
+          article => ({
             ...article,
+            author,
+            page,
+            pageSize,
             publishedTime: new Date(article.publishedTime)
-          }))}
-          onArticlePress={onArticlePress}
-        />
-      )}
+          })
+        );
+        return (
+          <AuthorProfileContent
+            isLoading={isLoading}
+            name={name}
+            biography={biography}
+            uri={uri}
+            jobTitle={jobTitle}
+            twitter={twitter}
+            onTwitterLinkPress={onTwitterLinkPress}
+            count={get(articles, "count", 0)}
+            onNext={onNext}
+            onPrev={onPrev}
+            page={page}
+            pageSize={pageSize}
+            imageRatio={ratioTextToFloat(imageRatio)}
+            articlesLoading={articlesLoading}
+            articles={articlesWithPublishTime}
+            onArticlePress={onArticlePress}
+          />
+        );
+      }}
     </ArticleListProviderWithPageState>
   );
 };
@@ -103,10 +111,10 @@ AuthorProfile.propTypes = {
 };
 
 export default withTrackingContext(AuthorProfile, {
-  trackingObject: "AuthorProfile",
   getAttrs: ({ author, page, pageSize } = {}) => ({
     authorName: author && author.name,
     page,
     pageSize
-  })
+  }),
+  trackingObject: "AuthorProfile"
 });

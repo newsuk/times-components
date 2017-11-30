@@ -203,6 +203,7 @@ exports[`renders profile content 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
+  onViewableItemsChanged={[Function]}
   pageSize={10}
   renderItem={[Function]}
   scrollEventThrottle={50}
@@ -210,7 +211,23 @@ exports[`renders profile content 1`] = `
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
+  viewabilityConfig={
+    Object {
+      "viewAreaCoveragePercentThreshold": 100,
+      "waitForInteraction": false,
+    }
+  }
+  viewabilityConfigCallbackPairs={
+    Array [
+      Object {
+        "onViewableItemsChanged": [Function],
+        "viewabilityConfig": Object {
+          "viewAreaCoveragePercentThreshold": 100,
+          "waitForInteraction": false,
+        },
+      },
+    ]
+  }
   windowSize={21}
 >
   <View>
@@ -3946,7 +3963,21 @@ exports[`renders profile content component 1`] = `
     Array [
       Object {
         "__typename": "Article",
-        "content": Array [
+        "elementId": "articleList-1-0",
+        "headline": "Top medal for forces dog who took a bite out of the Taliban",
+        "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
+        "label": "",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0",
+          },
+          "title": "Title",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": 2017-11-17T00:01:00.000Z,
+        "summary": Array [
           Object {
             "attributes": Object {},
             "children": Array [
@@ -3961,24 +3992,25 @@ exports[`renders profile content component 1`] = `
             "name": "paragraph",
           },
         ],
-        "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
+        "url": "https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f",
+      },
+      Object {
+        "__typename": "Article",
+        "elementId": "articleList-1-1",
+        "headline": "Social media must raise game to beat terrorists, says UN chief",
+        "id": "4e6894ec-cb18-11e7-b529-95e3fc05f40f",
         "label": "",
         "leadAsset": Object {
           "__typename": "Image",
           "crop": Object {
             "__typename": "Crop",
-            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0",
+            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745",
           },
           "title": "Title",
         },
         "publicationName": "TIMES",
         "publishedTime": 2017-11-17T00:01:00.000Z,
-        "title": "Top medal for forces dog who took a bite out of the Taliban",
-        "url": "https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f",
-      },
-      Object {
-        "__typename": "Article",
-        "content": Array [
+        "summary": Array [
           Object {
             "attributes": Object {},
             "children": Array [
@@ -3993,24 +4025,25 @@ exports[`renders profile content component 1`] = `
             "name": "paragraph",
           },
         ],
-        "id": "4e6894ec-cb18-11e7-b529-95e3fc05f40f",
+        "url": "https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0",
+      },
+      Object {
+        "__typename": "Article",
+        "elementId": "articleList-1-2",
+        "headline": "Cuts have left the army 20 years out of date, says former general",
+        "id": "f79c9d8c-c95c-11e7-b529-95e3fc05f40f",
         "label": "",
         "leadAsset": Object {
           "__typename": "Image",
           "crop": Object {
             "__typename": "Crop",
-            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745",
+            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0",
           },
-          "title": "Title",
+          "title": "Nad e Ali in Helmand province, Afghanistan.",
         },
         "publicationName": "TIMES",
-        "publishedTime": 2017-11-17T00:01:00.000Z,
-        "title": "Social media must raise game to beat terrorists, says UN chief",
-        "url": "https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0",
-      },
-      Object {
-        "__typename": "Article",
-        "content": Array [
+        "publishedTime": 2017-11-14T17:00:00.000Z,
+        "summary": Array [
           Object {
             "attributes": Object {},
             "children": Array [
@@ -4025,19 +4058,6 @@ exports[`renders profile content component 1`] = `
             "name": "paragraph",
           },
         ],
-        "id": "f79c9d8c-c95c-11e7-b529-95e3fc05f40f",
-        "label": "",
-        "leadAsset": Object {
-          "__typename": "Image",
-          "crop": Object {
-            "__typename": "Crop",
-            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0",
-          },
-          "title": "Nad e Ali in Helmand province, Afghanistan.",
-        },
-        "publicationName": "TIMES",
-        "publishedTime": 2017-11-14T17:00:00.000Z,
-        "title": "Cuts have left the army 20 years out of date, says former general",
         "url": "https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn",
       },
     ]
@@ -4058,6 +4078,7 @@ exports[`renders profile content component 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
+  onViewableItemsChanged={[Function]}
   pageSize={3}
   renderItem={[Function]}
   scrollEventThrottle={50}
@@ -4065,7 +4086,23 @@ exports[`renders profile content component 1`] = `
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
+  viewabilityConfig={
+    Object {
+      "viewAreaCoveragePercentThreshold": 100,
+      "waitForInteraction": false,
+    }
+  }
+  viewabilityConfigCallbackPairs={
+    Array [
+      Object {
+        "onViewableItemsChanged": [Function],
+        "viewabilityConfig": Object {
+          "viewAreaCoveragePercentThreshold": 100,
+          "waitForInteraction": false,
+        },
+      },
+    ]
+  }
   windowSize={21}
 >
   <View>
@@ -5810,7 +5847,7 @@ exports[`renders profile empty 1`] = `
     </View>
   }
   accessibilityID="scroll-view"
-  data={undefined}
+  data={Array []}
   disableVirtualization={false}
   getItem={[Function]}
   getItemCount={[Function]}
@@ -5827,6 +5864,7 @@ exports[`renders profile empty 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
+  onViewableItemsChanged={[Function]}
   pageSize={undefined}
   renderItem={[Function]}
   scrollEventThrottle={50}
@@ -5834,7 +5872,23 @@ exports[`renders profile empty 1`] = `
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
+  viewabilityConfig={
+    Object {
+      "viewAreaCoveragePercentThreshold": 100,
+      "waitForInteraction": false,
+    }
+  }
+  viewabilityConfigCallbackPairs={
+    Array [
+      Object {
+        "onViewableItemsChanged": [Function],
+        "viewabilityConfig": Object {
+          "viewAreaCoveragePercentThreshold": 100,
+          "waitForInteraction": false,
+        },
+      },
+    ]
+  }
   windowSize={21}
 >
   <View>
@@ -6203,6 +6257,7 @@ exports[`renders profile loading 1`] = `
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
+  onViewableItemsChanged={[Function]}
   pageSize={undefined}
   renderItem={[Function]}
   scrollEventThrottle={50}
@@ -6210,7 +6265,23 @@ exports[`renders profile loading 1`] = `
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
+  viewabilityConfig={
+    Object {
+      "viewAreaCoveragePercentThreshold": 100,
+      "waitForInteraction": false,
+    }
+  }
+  viewabilityConfigCallbackPairs={
+    Array [
+      Object {
+        "onViewableItemsChanged": [Function],
+        "viewabilityConfig": Object {
+          "viewAreaCoveragePercentThreshold": 100,
+          "waitForInteraction": false,
+        },
+      },
+    ]
+  }
   windowSize={21}
 >
   <View>

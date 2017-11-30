@@ -1,0 +1,7 @@
+{
+  "preset": "react-native",
+  "rootDir": "../../",
+  "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+  "testMatch": ["<rootDir>/packages/tracking/__tests__/**.test.js"],
+  "testPathIgnorePatterns": ["web.test.js$"]
+}

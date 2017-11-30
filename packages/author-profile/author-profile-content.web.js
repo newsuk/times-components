@@ -2,11 +2,12 @@
 
 import React, { Component } from "react";
 import { StyleSheet, View } from "react-native";
+import { withTrackScrollDepth } from "@times-components/tracking";
 import AuthorProfileAuthorHead from "./author-profile-author-head";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
 import AuthorProfilePagination from "./author-profile-pagination";
-import propTypes from "./author-profile-content-prop-types";
+import { propTypes, defaultProps } from "./author-profile-content-prop-types";
 import { normaliseWidth } from "./utils";
 
 const styles = StyleSheet.create({
@@ -105,7 +106,8 @@ class AuthorProfileContent extends Component {
       pageSize,
       twitter,
       uri,
-      imageRatio
+      imageRatio,
+      receiveChildList
     } = this.props;
 
     const paginationComponent = (hideResults = false) => (
@@ -119,14 +121,17 @@ class AuthorProfileContent extends Component {
       />
     );
 
-    const data = articlesLoading
+    const data = (articlesLoading
       ? Array(pageSize)
           .fill()
-          .map((number, id) => ({
-            id,
-            isLoading: true
-          }))
-      : articles;
+          .map((number, id) => ({ id, isLoading: true }))
+      : articles
+    ).map((article, idx) => ({
+      ...article,
+      elementId: `articleList-${page}-${idx}`
+    }));
+
+    if (!articlesLoading) receiveChildList(data);
 
     return (
       <View>
@@ -147,21 +152,20 @@ class AuthorProfileContent extends Component {
                 const { id, url } = article;
                 const separatorComponent =
                   key > 0 ? <AuthorProfileItemSeparator /> : null;
-                const nodeId = `articleList-${page}-${key}`;
 
                 return (
                   <div
                     key={id}
-                    id={nodeId}
-                    accessibility-label={nodeId}
-                    data-testid={nodeId}
+                    id={article.elementId}
+                    accessibility-label={article.elementId}
+                    data-testid={article.elementId}
                     ref={node => this.registerNode(node)}
                   >
                     {separatorComponent}
                     <AuthorProfileItem
                       {...article}
                       imageRatio={imageRatio}
-                      imageSize={this.getImageSize(nodeId)}
+                      imageSize={this.getImageSize(article.elementId)}
                       onPress={e => onArticlePress(e, { id, url })}
                     />
                   </div>
@@ -176,5 +180,6 @@ class AuthorProfileContent extends Component {
 }
 
 AuthorProfileContent.propTypes = propTypes;
+AuthorProfileContent.defaultProps = defaultProps;
 
-export default AuthorProfileContent;
+export default withTrackScrollDepth(AuthorProfileContent);
