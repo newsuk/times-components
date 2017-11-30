@@ -27,7 +27,7 @@ ArticleHeadline.propTypes = {
   text: PropTypes.string.isRequired,
   // eslint-disable-next-line react/no-typos
   style: Text.propTypes.style,
-  WrapperComponent: PropTypes.element
+  WrapperComponent: PropTypes.func
 };
 
 ArticleHeadline.defaultProps = {
