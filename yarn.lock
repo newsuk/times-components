@@ -3702,9 +3702,9 @@ detox@5.8.2:
     telnet-client "0.15.3"
     ws "^1.1.1"
 
-dextrose@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.0.3.tgz#e633c7fbf1d991720159a0a6381620cc1f3b9c29"
+dextrose@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.1.0.tgz#edac928107fa095ee224bf6636b04b020209c179"
   dependencies:
     "@times-components/fructose" "3.1.3"
     babel-core "6.26.0"
