@@ -1,4 +1,3 @@
-const dextrose = require("dextrose").default;
 const path = require("path");
 
 const config = {	
@@ -11,8 +10,8 @@ const config = {
         "Brightcove",
         "PaginationTracking",
         "TrackingPage",
-        "TrackingEvent"
+        "TrkingEvent"
     ]
 }
 
-dextrose(config);
+module.exports = config;
