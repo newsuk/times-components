@@ -4,173 +4,51 @@ import styled from "styled-components";
 const mediumBreakpoint = "768px";
 const wideBreakpoint = "1024px";
 
-export const PrimaryContainer = styled(View)`
-  width: 100%;
-  flex-direction: column;
-  padding-bottom: 25px;
+const mediumBpWidth = "83.33333333%";
+const wideBpWidth = "58.33333%";
 
+const mediumBpPositioning = `
   @media (min-width: ${mediumBreakpoint}) {
-    width: 83.33333333%;
-    margin: 0 auto;
-  }
-  @media (min-width: ${wideBreakpoint}) {
-    width: 58.33333%;
-  }
-`;
-
-export const SecondaryContainer = styled(View)`
-  width: 100%;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding-bottom: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
-
-  @media (min-width: ${mediumBreakpoint}) {
-    width: 83.33333333%;
+    width: ${mediumBpWidth};
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
   }
+`;
+const wideBpPositioning = `
   @media (min-width: ${wideBreakpoint}) {
-    width: 58.33333%;
+    width: ${wideBpWidth};
   }
 `;
 
-export const InlineContainer = styled(View)`
-  width: 100%;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding-bottom: 25px;
+const showHideToggle = (show, styles) =>
+  `
+  display: ${show ? "flex" : "none"};
+  @media (min-width: ${wideBreakpoint}) {
+    display: ${show ? "none" : "flex"};
+    ${styles || ""}
+  }
+  `;
+
+const articleContainerPadding = `
   padding-left: 10px;
   padding-right: 10px;
-
-  @media (min-width: ${mediumBreakpoint}) {
-    width: 83.33333333%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  @media (min-width: ${wideBreakpoint}) {
-    width: 58.33333%;
-  }
 `;
 
-export const LeadAsset = styled(View)`
-  margin-bottom: 10px;
-  @media (min-width: ${mediumBreakpoint}) {
-    margin-bottom: 20px;
-  }
-  @media (min-width: ${wideBreakpoint}) {
-    width: 100%;
-    margin: 0 auto;
-  }
-`;
-
-export const ArticleTextElement = styled(Text)`
-  font-family: "TimesDigitalW04";
-  line-height: 26px;
-  font-size: 17px;
-  line-height: 26px;
-  margin-bottom: 25px;
-  color: "#333333";
-  margin-top: 0;
-
-  @media (min-width: ${mediumBreakpoint}) {
-    font-size: 18px;
-    line-height: 30px;
-  }
-`;
-
-export const ArticleMainContainer = styled(View)`
+export const MainContainer = styled(View)`
   @media (min-width: ${wideBreakpoint}) {
     padding-left: 0;
     padding-right: 20px;
-    // width: 58.33333%;
     margin: 0 auto;
-    //flex-direction: row;
   }
 `;
 
-export const ArticleHeaderContainer = styled(View)`
-  padding-left: 10px;
-  padding-right: 10px;
+/* --- Header --- */
 
-  @media (min-width: ${mediumBreakpoint}) {
-    width: 83.33333333%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  @media (min-width: ${wideBreakpoint}) {
+export const HeaderContainer = styled(View)`
+  ${articleContainerPadding} ${mediumBpPositioning} @media (min-width: ${wideBreakpoint}) {
     width: 100%;
-    width: 58.33333%;
-  }
-`;
-
-export const ArticleLeadAssetContainerMobile = styled(View)`
-  @media (min-width: ${wideBreakpoint}) {
-    display: none;
-  }
-`;
-
-export const ArticleLAContainerDesktop = styled(View)`
-  display: none;
-  @media (min-width: ${wideBreakpoint}) {
-    display: flex;
-  }
-`;
-
-export const ArticleBodyContainer = styled(View)`
-  padding-left: 10px;
-  padding-right: 10px;
-  @media (min-width: ${mediumBreakpoint}) {
-    width: 83.33333333%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  @media (min-width: ${wideBreakpoint}) {
-    width: 58.33333%;
-  }
-`;
-
-export const ArticleMetaContainer = styled(View)`
-  padding-left: 10px;
-  padding-right: 10px;
-
-  @media (min-width: ${mediumBreakpoint}) {
-    width: 83.33333333%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  @media (min-width: ${wideBreakpoint}) {
-    margin-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-    top: 0;
-    width: 20.8333%;
-    position: absolute;
-  }
-`;
-
-export const LAImageContainer = styled(View)`
-  display: flex;
-  @media (min-width: ${wideBreakpoint}) {
-    display: none;
-  }
-`;
-
-export const LAArticleImageContainer = styled(View)`
-  display: none;
-  @media (min-width: ${wideBreakpoint}) {
-    width: 58.33333%;
-    margin: 0 auto;
-    display: flex;
-    // Temp padding for feature flag release
-    padding-bottom: 20px;
+    width: ${wideBpWidth};
   }
 `;
 
@@ -199,7 +77,20 @@ export const FlagContainer = styled(View)`
   }
 `;
 
-export const ArticleBylineContainer = styled(Text)`
+/* --- Meta --- */
+
+export const MetaContainer = styled(View)`
+  ${articleContainerPadding} ${mediumBpPositioning} @media (min-width: ${wideBreakpoint}) {
+    margin-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: absolute;
+    top: 0;
+    width: 20.8333%;
+  }
+`;
+
+export const MetaElementContainer = styled(Text)`
   padding: 12px 0 9px;
   @media (min-width: ${wideBreakpoint}) {
     line-height: 18px;
@@ -207,10 +98,97 @@ export const ArticleBylineContainer = styled(Text)`
   }
 `;
 
-export const ArticleDatelineContainer = styled(Text)`
-  padding: 12px 0 9px;
-  @media (min-width: ${wideBreakpoint}) {
-    line-height: 18px;
-    padding: 5px 0 25px;
+/* --- Body --- */
+
+export const ParagraphContainer = styled(View)`
+  ${articleContainerPadding} ${mediumBpPositioning} ${wideBpPositioning};
+`;
+
+export const Paragraph = styled(Text)`
+  color: "#333333";
+  font-family: "TimesDigitalW04";
+  line-height: 26px;
+  font-size: 17px;
+  line-height: 26px;
+  margin-bottom: 25px;
+
+  margin-top: 0;
+
+  @media (min-width: ${mediumBreakpoint}) {
+    font-size: 18px;
+    line-height: 30px;
   }
+`;
+
+/* --- Lead Asset Styles --- */
+
+export const LeadAsset = styled(View)`
+  margin-bottom: 10px;
+  @media (min-width: ${mediumBreakpoint}) {
+    margin-bottom: 20px;
+  }
+  @media (min-width: ${wideBreakpoint}) {
+    width: 100%;
+    margin: 0 auto;
+  }
+`;
+
+export const LeadAssetMobile = styled(View)`
+  ${showHideToggle(true)};
+`;
+
+export const LeadAssetDesktop = styled(View)`
+  ${showHideToggle(
+    false,
+    `
+    width: ${wideBpWidth};
+    margin: 0 auto;
+    // Temp padding for feature flag release
+    padding-bottom: 20px;
+  `
+  )};
+`;
+
+export const MediaContainerMobile = styled(View)`
+  ${showHideToggle(true)};
+`;
+
+export const MediaContainerDesktop = styled(View)`
+  ${showHideToggle()};
+`;
+
+/* --- Article Images --- */
+
+export const PrimaryContainer = styled(View)`
+  width: 100%;
+  flex-direction: column;
+  padding-bottom: 25px;
+
+  @media (min-width: ${mediumBreakpoint}) {
+    width: ${mediumBpWidth};
+    margin: 0 auto;
+  }
+  ${wideBpPositioning};
+`;
+
+export const SecondaryContainer = styled(View)`
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  ${mediumBpPositioning} ${wideBpPositioning};
+`;
+
+export const InlineContainer = styled(View)`
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  ${mediumBpPositioning} ${wideBpPositioning};
 `;

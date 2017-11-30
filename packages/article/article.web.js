@@ -3,7 +3,6 @@ import { Platform, View } from "react-native";
 import PropTypes from "prop-types";
 import get from "lodash.get";
 import { renderTrees } from "@times-components/markup";
-import Image from "@times-components/image";
 import ArticleImage from "@times-components/article-image";
 import { AdComposer } from "@times-components/ad";
 import { withTrackingContext } from "@times-components/tracking";
@@ -16,15 +15,15 @@ import {
   SecondaryContainer,
   InlineContainer,
   LeadAsset,
-  ArticleMainContainer,
-  ArticleLeadAssetContainerMobile,
-  ArticleMetaContainer,
-  ArticleLAContainerDesktop,
-  ArticleHeaderContainer,
-  ArticleBodyContainer,
-  ArticleTextElement,
-  LAImageContainer,
-  LAArticleImageContainer
+  MainContainer,
+  MetaContainer,
+  HeaderContainer,
+  ParagraphContainer,
+  Paragraph,
+  LeadAssetMobile,
+  LeadAssetDesktop,
+  MediaContainerMobile,
+  MediaContainerDesktop
 } from "./styles/body/responsive";
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
@@ -35,20 +34,18 @@ const withAdComposer = (children, section = "article") => (
 
 class ArticlePage extends React.Component {
   static renderArticle(articleData) {
-    const [ratioWidth, ratioHeight] = articleData.leadAsset.crop.ratio.split(
-      ":"
-    );
-    const aspectRatio = ratioWidth / ratioHeight;
     const { leadAsset } = articleData;
     const LeadAssetMedia = articleData.leadAsset ? (
       <LeadAsset>
-        <LAImageContainer>
-          <Image
-            uri={articleData.leadAsset.crop.url}
-            aspectRatio={aspectRatio}
+        <LeadAssetMobile>
+          <ArticleImage
+            imageOptions={{
+              ratio: leadAsset.crop.ratio,
+              url: leadAsset.crop.url
+            }}
           />
-        </LAImageContainer>
-        <LAArticleImageContainer>
+        </LeadAssetMobile>
+        <LeadAssetDesktop>
           <ArticleImage
             imageOptions={{
               ratio: leadAsset.crop.ratio,
@@ -59,7 +56,7 @@ class ArticlePage extends React.Component {
               credits: leadAsset.credits
             }}
           />
-        </LAArticleImageContainer>
+        </LeadAssetDesktop>
       </LeadAsset>
     ) : null;
     const contentArray = articleData.content.map((i, index) => ({
@@ -68,32 +65,28 @@ class ArticlePage extends React.Component {
     }));
     const BodyView = contentArray.map(i => ArticlePage.renderBody(i));
     return (
-      <ArticleMainContainer>
-        <ArticleLeadAssetContainerMobile>
-          {LeadAssetMedia}
-        </ArticleLeadAssetContainerMobile>
-        <ArticleHeaderContainer>
+      <MainContainer>
+        <MediaContainerMobile>{LeadAssetMedia}</MediaContainerMobile>
+        <HeaderContainer>
           <ArticleHeader
             headline={articleData.headline}
             flags={articleData.flags}
             standfirst={articleData.standfirst}
             label={articleData.label}
           />
-        </ArticleHeaderContainer>
+        </HeaderContainer>
         <View>
-          <ArticleMetaContainer>
+          <MetaContainer>
             <ArticleMeta
               byline={articleData.byline}
               publishedTime={articleData.publishedTime}
               publicationName={articleData.publicationName}
             />
-          </ArticleMetaContainer>
-          <ArticleLAContainerDesktop>
-            {LeadAssetMedia}
-          </ArticleLAContainerDesktop>
+          </MetaContainer>
+          <MediaContainerDesktop>{LeadAssetMedia}</MediaContainerDesktop>
           {BodyView}
         </View>
-      </ArticleMainContainer>
+      </MainContainer>
     );
   }
 
@@ -103,13 +96,13 @@ class ArticlePage extends React.Component {
         {renderTrees([content.data], {
           paragraph(key, attributes, children) {
             return (
-              <ArticleBodyContainer
+              <ParagraphContainer
                 testID={`paragraph-${content.index}`}
                 accessibilityLabel={`paragraph-${content.index}`}
                 key={key}
               >
-                <ArticleTextElement>{children}</ArticleTextElement>
-              </ArticleBodyContainer>
+                <Paragraph>{children}</Paragraph>
+              </ParagraphContainer>
             );
           },
           image(key, attributes) {

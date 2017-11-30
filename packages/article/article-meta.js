@@ -7,10 +7,7 @@ import DatePublication from "@times-components/date-publication";
 
 import styles from "./styles/meta";
 
-import {
-  ArticleBylineContainer,
-  ArticleDatelineContainer
-} from "./styles/body/responsive";
+import { MetaElementContainer } from "./styles/body/responsive";
 
 const { style: ViewStylePropTypes } = ViewPropTypes;
 
@@ -18,13 +15,13 @@ const ArticleMeta = ({ byline, publishedTime, publicationName, style }) => (
   <View style={[styles.articleMiddleContainer, ...style]}>
     <View style={styles.articleMeta}>
       <View style={[styles.articleMetaElement]}>
-        <ArticleByline ast={byline} WrapperComponent={ArticleBylineContainer} />
+        <ArticleByline ast={byline} WrapperComponent={MetaElementContainer} />
       </View>
       <View style={[styles.articleMetaElement]}>
         <DatePublication
           date={new Date(publishedTime)}
           publication={publicationName}
-          WrapperComponent={ArticleDatelineContainer}
+          WrapperComponent={MetaElementContainer}
         />
       </View>
     </View>
