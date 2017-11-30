@@ -4,7 +4,7 @@ const config = {
     snapPath: __dirname+'/snappy',
     platformName: "web",
     ignoredStories: [
-        "Ad",
+        "Advertisement",
     	"AuthorHeadTracking",
     	"AuthorProfileTracking",
         "Brightcove",

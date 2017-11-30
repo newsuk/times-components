@@ -11,6 +11,7 @@ const config = {
         "../ios/build/Build/Products/Debug-iphonesimulator/storybooknative.app"
     ),
     ignoredStories: [
+        "Advertisement",
     	"AuthorHeadTracking",
     	"AuthorProfileTracking",
         "Brightcove",
