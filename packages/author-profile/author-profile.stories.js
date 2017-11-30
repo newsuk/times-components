@@ -1,6 +1,6 @@
 import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { decorateAction, action } from "@storybook/addon-actions";
+import { decorateAction } from "@storybook/addon-actions";
 import { AuthorProfileProvider } from "@times-components/provider";
 import { ApolloClient, IntrospectionFragmentMatcher } from "react-apollo";
 import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";

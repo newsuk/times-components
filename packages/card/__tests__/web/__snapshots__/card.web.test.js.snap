@@ -17,8 +17,10 @@ exports[`Card test on web re-renders when is loading changes 1`] = `
 exports[`Card test on web renders 1`] = `
 .c1 {
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  -webkit-flex-shrink: 1 !important;
   -ms-flex-negative: 1 !important;
   flex-shrink: 1 !important;
   margin-bottom: 10px;
@@ -26,8 +28,10 @@ exports[`Card test on web renders 1`] = `
 
 .c2 {
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  -webkit-flex-shrink: 1 !important;
   -ms-flex-negative: 1 !important;
   flex-shrink: 1 !important;
 }
@@ -41,8 +45,10 @@ exports[`Card test on web renders 1`] = `
 @media (min-width:768px) {
   .c1 {
     -webkit-box-flex: 2;
+    -webkit-flex-grow: 2;
     -ms-flex-positive: 2;
     flex-grow: 2;
+    -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
     margin-right: 10px;
@@ -53,8 +59,10 @@ exports[`Card test on web renders 1`] = `
 @media (min-width:768px) {
   .c2 {
     -webkit-box-flex: 3;
+    -webkit-flex-grow: 3;
     -ms-flex-positive: 3;
     flex-grow: 3;
+    -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
   }
@@ -210,8 +218,10 @@ exports[`Card test on web renders 1`] = `
 exports[`Card test on web renders loading state 1`] = `
 .c1 {
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  -webkit-flex-shrink: 1 !important;
   -ms-flex-negative: 1 !important;
   flex-shrink: 1 !important;
   margin-bottom: 10px;
@@ -219,8 +229,10 @@ exports[`Card test on web renders loading state 1`] = `
 
 .c2 {
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  -webkit-flex-shrink: 1 !important;
   -ms-flex-negative: 1 !important;
   flex-shrink: 1 !important;
 }
@@ -234,8 +246,10 @@ exports[`Card test on web renders loading state 1`] = `
 @media (min-width:768px) {
   .c1 {
     -webkit-box-flex: 2;
+    -webkit-flex-grow: 2;
     -ms-flex-positive: 2;
     flex-grow: 2;
+    -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
     margin-right: 10px;
@@ -246,8 +260,10 @@ exports[`Card test on web renders loading state 1`] = `
 @media (min-width:768px) {
   .c2 {
     -webkit-box-flex: 3;
+    -webkit-flex-grow: 3;
     -ms-flex-positive: 3;
     flex-grow: 3;
+    -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
   }
@@ -353,8 +369,10 @@ exports[`Card test on web renders loading state 1`] = `
 exports[`Card test on web renders without image 1`] = `
 .c1 {
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  -webkit-flex-shrink: 1 !important;
   -ms-flex-negative: 1 !important;
   flex-shrink: 1 !important;
 }
@@ -368,8 +386,10 @@ exports[`Card test on web renders without image 1`] = `
 @media (min-width:768px) {
   .c1 {
     -webkit-box-flex: 3;
+    -webkit-flex-grow: 3;
     -ms-flex-positive: 3;
     flex-grow: 3;
+    -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
   }
@@ -482,8 +502,10 @@ exports[`Card test on web renders without image 1`] = `
 exports[`Card test on web renders without image url 1`] = `
 .c1 {
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  -webkit-flex-shrink: 1 !important;
   -ms-flex-negative: 1 !important;
   flex-shrink: 1 !important;
 }
@@ -497,8 +519,10 @@ exports[`Card test on web renders without image url 1`] = `
 @media (min-width:768px) {
   .c1 {
     -webkit-box-flex: 3;
+    -webkit-flex-grow: 3;
     -ms-flex-positive: 3;
     flex-grow: 3;
+    -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
   }
