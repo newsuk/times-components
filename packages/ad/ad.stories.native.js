@@ -7,7 +7,7 @@ import Ad from "./ad";
 import Placeholder from "./placeholder";
 
 export default () =>
-  storiesOf("Ad", module)
+  storiesOf("Advertisements", module)
     .add("render one native ad", () => (
       <ScrollView>
         <Ad code="intervention" section="article" />
