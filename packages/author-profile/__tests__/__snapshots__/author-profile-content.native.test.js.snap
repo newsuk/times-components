@@ -44,15 +44,6 @@ exports[`does re-render the author head if the loading state changes 1`] = `
 </Text>
 `;
 
-exports[`renders profile 1`] = `
-<Apollo(Wrapper)
-  articleImageRatio="3:2"
-  page={1}
-  pageSize={10}
-  slug="fiona-hamilton"
-/>
-`;
-
 exports[`renders profile content 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
