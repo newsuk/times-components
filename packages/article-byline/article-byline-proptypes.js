@@ -9,7 +9,7 @@ export const articleBylinePropTypes = {
     byline: Text.propTypes.style,
     link: Text.propTypes.style
   }),
-  WrapperComponent: PropTypes.element
+  WrapperComponent: PropTypes.func
 };
 
 export const articleBylineDefaultPropTypes = {
