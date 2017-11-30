@@ -1,5 +1,3 @@
-/* eslint-env browser */
-
 export default class TealiumSendScheduler {
   constructor(options, w, d) {
     this.queue = [];
@@ -79,8 +77,8 @@ export default class TealiumSendScheduler {
 
       const e = this.queue.shift();
 
-      if (typeof window.tealiumTrack === "function") {
-        window.tealiumTrack(e);
+      if (typeof this.w.tealiumTrack === "function") {
+        this.w.tealiumTrack(e);
       }
     } while (deadline.timeRemaining() > 0);
 
