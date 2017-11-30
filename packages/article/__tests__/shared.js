@@ -33,7 +33,7 @@ module.exports = () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders full article", () => {
+  it.only("renders full article", () => {
     const tree = renderer
       .create(
         <Article {...fullArticleFixture.data} analyticsStream={() => {}} />

@@ -52,7 +52,7 @@ class ArticlePage extends React.Component {
       data: i,
       index
     }));
-    const BodyView = contentArray.map(i => ArticlePage.renderBody(i));
+    const BodyView = contentArray.map((content, index)=> ArticlePage.renderBody(content, index));
     return (
       <MainContainer>
         <MediaContainerMobile>{LeadAssetMedia}</MediaContainerMobile>
@@ -80,11 +80,12 @@ class ArticlePage extends React.Component {
   }
 
   static renderLeadAsset(leadAsset) {
-    return leadAsset ? (
+    return (
       <LeadAsset>
         <LeadAssetMobile>
           <ArticleImage
             imageOptions={{
+              display: '',
               ratio: leadAsset.crop.ratio,
               url: leadAsset.crop.url
             }}
@@ -93,6 +94,7 @@ class ArticlePage extends React.Component {
         <LeadAssetDesktop>
           <ArticleImage
             imageOptions={{
+              display: '',
               ratio: leadAsset.crop.ratio,
               url: leadAsset.crop.url
             }}
@@ -103,12 +105,12 @@ class ArticlePage extends React.Component {
           />
         </LeadAssetDesktop>
       </LeadAsset>
-    ) : null;
+    );
   }
 
-  static renderBody(content) {
+  static renderBody(content, index) {
     return (
-      <View>
+      <View key={`content${index}`}>
         {renderTrees([content.data], {
           paragraph(key, attributes, children) {
             return (
@@ -128,7 +130,6 @@ class ArticlePage extends React.Component {
             return (
               <ImageContainer key={key}>
                 <ArticleImage
-                  key={key}
                   imageOptions={{
                     display: attributes.display,
                     ratio: attributes.ratio,
