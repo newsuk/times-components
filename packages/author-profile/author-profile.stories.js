@@ -1,7 +1,5 @@
 import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { storiesOf } from "../../storybook/storiesOfOverloader";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { decorateAction, action } from "@storybook/addon-actions";
 import { AuthorProfileProvider } from "@times-components/provider";
 import { ApolloClient, IntrospectionFragmentMatcher } from "react-apollo";
@@ -10,6 +8,8 @@ import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";
 import { addTypenameToDocument } from "apollo-client";
 import { query as authorProfileQuery } from "@times-components/provider/author-profile-provider";
 import { query as articleListQuery } from "@times-components/provider/article-list-provider";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { storiesOf } from "../../storybook/storiesOfOverloader";
 import AuthorProfile from "./author-profile";
 import AuthorProfileContent from "./author-profile-content";
 import authorProfileFixture from "./fixtures/author-profile.json";

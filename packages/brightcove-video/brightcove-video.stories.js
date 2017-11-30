@@ -2,9 +2,9 @@ import React from "react";
 import { View, Image, Text } from "react-native";
 
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { storiesOf } from "../../storybook/storiesOfOverloader";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { action, decorateAction } from "@storybook/addon-actions";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { storiesOf } from "../../storybook/storiesOfOverloader";
 import BrightcoveVideo from "./brightcove-video";
 import Player from "./brightcove-player";
 

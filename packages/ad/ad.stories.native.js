@@ -1,8 +1,7 @@
 import React from "react";
+import { Text, ScrollView, View } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "../../storybook/storiesOfOverloader";
-import { Text, ScrollView, View } from "react-native";
-
 import Ad from "./ad";
 import Placeholder from "./placeholder";
 

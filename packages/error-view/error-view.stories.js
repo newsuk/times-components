@@ -8,12 +8,12 @@ import {
   Text
 } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { storiesOf } from "../../storybook/storiesOfOverloader";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { decorateAction } from "@storybook/addon-actions";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import BrightcoveVideo from "@times-components/brightcove-video";
 import PropTypes from "prop-types";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { storiesOf } from "../../storybook/storiesOfOverloader";
 
 import ErrorView, { addErrorHandler } from "./error-view";
 

@@ -1,11 +1,11 @@
 import React from "react";
 import { Text } from "react-native";
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { storiesOf } from "../../storybook/storiesOfOverloader";
 import { ApolloClient, IntrospectionFragmentMatcher, gql } from "react-apollo";
 import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { addTypenameToDocument } from "apollo-client";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { storiesOf } from "../../storybook/storiesOfOverloader";
 import connectGraphql, {
   AuthorProfileProvider,
   ArticleProvider

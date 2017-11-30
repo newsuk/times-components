@@ -1,6 +1,4 @@
 /* eslint-env browser */
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { storiesOf } from "../../storybook/storiesOfOverloader";
 import React from "react";
 import { Platform } from "react-native";
 
@@ -10,7 +8,8 @@ import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { addTypenameToDocument } from "apollo-client";
 import { query as articleQuery } from "@times-components/provider/article-provider";
-
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { storiesOf } from "../../storybook/storiesOfOverloader";
 import Article from "./article";
 
 const fullArticleTypenameFixture = require("./fixtures/full-article-typename.json");
