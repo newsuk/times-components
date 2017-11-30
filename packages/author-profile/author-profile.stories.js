@@ -14,6 +14,7 @@ import AuthorProfile from "./author-profile";
 import AuthorProfileContent from "./author-profile-content";
 import authorProfileFixture from "./fixtures/author-profile.json";
 import articleListFixture from "./fixtures/article-list.json";
+import storybookReporter from "../../storybook/storybook-tealium-reporter";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
@@ -55,12 +56,12 @@ const mocks = [
       query: addTypenameToDocument(articleListQuery),
       variables: {
         slug: "fiona-hamilton",
-        first: 3,
+        first: 5,
         skip: 0,
         imageRatio: "3:2"
       }
     },
-    result: articlesList(0, 3)
+    result: articlesList(0, 5)
   },
   {
     delay,
@@ -68,12 +69,12 @@ const mocks = [
       query: addTypenameToDocument(articleListQuery),
       variables: {
         slug: "fiona-hamilton",
-        first: 3,
-        skip: 3,
+        first: 5,
+        skip: 5,
         imageRatio: "3:2"
       }
     },
-    result: articlesList(3, 3)
+    result: articlesList(5, 5)
   },
   {
     delay,
@@ -81,12 +82,12 @@ const mocks = [
       query: addTypenameToDocument(articleListQuery),
       variables: {
         slug: "fiona-hamilton",
-        first: 3,
-        skip: 6,
+        first: 5,
+        skip: 10,
         imageRatio: "3:2"
       }
     },
-    result: articlesList(6, 3)
+    result: articlesList(10, 5)
   },
   {
     delay,
@@ -94,12 +95,12 @@ const mocks = [
       query: addTypenameToDocument(articleListQuery),
       variables: {
         slug: "fiona-hamilton",
-        first: 3,
-        skip: 9,
+        first: 5,
+        skip: 15,
         imageRatio: "3:2"
       }
     },
-    result: articlesList(9, 3)
+    result: articlesList(15, 5)
   }
 ];
 
@@ -136,6 +137,33 @@ const withMockProvider = (child, client = defaultClient) => (
     {child}
   </MockedProvider>
 );
+const authProfileProviderProps = {
+  slug: "fiona-hamilton",
+  author: authorProfileFixture.data.author,
+  isLoading: false,
+  page: 2,
+  pageSize: 3,
+  onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
+  onArticlePress: preventDefaultedAction("onArticlePress"),
+  analyticsStream: storybookReporter
+};
+const slug = "fiona-hamilton";
+
+const authProfileProvider = withMockProvider(
+  <AuthorProfileProvider slug={slug}>
+    {({ author, isLoading, error }) => (
+      <AuthorProfile
+        {...authProfileProviderProps}
+        author={author}
+        page={1}
+        pageSize={5}
+        slug={slug}
+        isLoading={isLoading}
+        error={error}
+      />
+    )}
+  </AuthorProfileProvider>
+);
 
 storiesOf("AuthorProfile", module)
   .add("Default", () => {
@@ -145,10 +173,10 @@ storiesOf("AuthorProfile", module)
       articleImageRatio: "3:2",
       isLoading: false,
       page: 2,
-      pageSize: 3,
+      pageSize: 5,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
       onArticlePress: preventDefaultedAction("onArticlePress"),
-      analyticsStream: () => {}
+      analyticsStream: storybookReporter
     };
 
     return withMockProvider(<AuthorProfile {...props} />);
@@ -160,45 +188,9 @@ storiesOf("AuthorProfile", module)
       pageSize: 3,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
       onArticlePress: preventDefaultedAction("onArticlePress"),
-      analyticsStream: () => {}
+      analyticsStream: storybookReporter
     };
 
     return <AuthorProfileContent {...props} />;
   })
-  .add("With Provider", () => {
-    const onTwitterLinkPress = preventDefaultedAction("onTwitterLinkPress");
-    const onArticlePress = preventDefaultedAction("onArticlePress");
-    const slug = "fiona-hamilton";
-
-    return withMockProvider(
-      <AuthorProfileProvider slug={slug}>
-        {({ author, isLoading, error }) => (
-          <AuthorProfile
-            author={author}
-            page={1}
-            pageSize={3}
-            slug={slug}
-            isLoading={isLoading}
-            error={error}
-            onTwitterLinkPress={onTwitterLinkPress}
-            onArticlePress={onArticlePress}
-            analyticsStream={() => {}}
-          />
-        )}
-      </AuthorProfileProvider>
-    );
-  })
-  .add("Tracking", () => {
-    const props = {
-      slug: "fiona-hamilton",
-      author: authorProfileFixture.data.author,
-      isLoading: false,
-      page: 2,
-      pageSize: 3,
-      onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
-      onArticlePress: preventDefaultedAction("onArticlePress"),
-      analyticsStream: action("analytics-event")
-    };
-
-    return withMockProvider(<AuthorProfile {...props} />);
-  });
+  .add("With Provider and Tracking", () => authProfileProvider);

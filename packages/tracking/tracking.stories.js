@@ -1,32 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Button, StyleSheet, View } from "react-native";
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { action } from "@storybook/addon-actions";
+import { Button, View } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "../../storybook/storiesOfOverloader";
-import { withTrackingContext, withTrackEvents } from "./tracking";
-
-const storybookReporter = action("analytics-event");
-
-const styles = StyleSheet.create({
-  box: {
-    borderWidth: 2,
-    borderColor: "black",
-    borderStyle: "solid",
-    height: 200,
-    width: 200
-  }
-});
-const Box = props => (
-  <View style={[styles.box, { backgroundColor: props.color }]} />
-);
-Box.propTypes = {
-  color: PropTypes.string.isRequired
-};
+import {
+  withTrackingContext,
+  withTrackEvents,
+  withTrackScrollDepth
+} from "./tracking";
+import storybookReporter from "../../storybook/storybook-tealium-reporter";
+import Box, { boxStyles } from "./storybook-components/box";
+import Boxes from "./storybook-components/boxes";
 
 const BoxWithButtons = props => (
-  <View style={[styles.box, { backgroundColor: props.color }]}>
+  <View style={[boxStyles.box, { backgroundColor: props.color }]}>
     <Button onPress={() => props.onPress("button 1")} title="Press me" />
     <Button
       color="limegreen"
@@ -59,6 +46,15 @@ const BoxWithPressTrackingAndContext = withTrackingContext(
   { trackingObject: "TrackRenderStory" }
 );
 
+const BoxesWithTrackingContext = withTrackingContext(
+  withTrackScrollDepth(Boxes, {
+    getAttrs: props => ({
+      id: props.elementId
+    })
+  }),
+  { trackingObject: "Story" }
+);
+
 storiesOf("Tracking", module)
   .add("Page tracking", () => (
     <BoxWithTrackingContext analyticsStream={storybookReporter} color="red" />
@@ -69,4 +65,17 @@ storiesOf("Tracking", module)
       color="red"
       onPress={() => {}}
     />
-  ));
+  ))
+  .add("Scroll depth tracking", () => {
+    const boxes = [...Array(50).keys()].map(i => ({
+      elementId: `box-${i + 1}`,
+      color: i % 2 === 0 ? "green" : "blue"
+    }));
+    return (
+      <BoxesWithTrackingContext
+        onViewed={() => {}}
+        boxes={boxes}
+        analyticsStream={storybookReporter}
+      />
+    );
+  });

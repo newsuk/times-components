@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.2.8...@times-components/tracking@0.3.0) (2017-11-29)
+
+
+### Features
+
+* analytics - scroll tracking of component’s children ([#401](https://github.com/newsuk/times-components/issues/401)) ([1279f08](https://github.com/newsuk/times-components/commit/1279f08))
+
+
+
+
 <a name="0.2.8"></a>
 ## [0.2.8](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.2.7...@times-components/tracking@0.2.8) (2017-11-22)
 

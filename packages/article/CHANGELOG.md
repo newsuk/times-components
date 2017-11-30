@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.18.2"></a>
+## [0.18.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.18.1...@times-components/article@0.18.2) (2017-11-29)
+
+
+
+
+<a name="0.18.1"></a>
+## [0.18.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.18.0...@times-components/article@0.18.1) (2017-11-28)
+
+
+
+
+<a name="0.18.0"></a>
+# [0.18.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.17.27...@times-components/article@0.18.0) (2017-11-24)
+
+
+### Features
+
+* article flatlist ([#373](https://github.com/newsuk/times-components/issues/373)) ([62b5bbb](https://github.com/newsuk/times-components/commit/62b5bbb))
+
+
+
+
+<a name="0.17.27"></a>
+## [0.17.27](https://github.com/newsuk/times-components/compare/@times-components/article@0.17.26...@times-components/article@0.17.27) (2017-11-24)
+
+
+
+
 <a name="0.17.26"></a>
 ## [0.17.26](https://github.com/newsuk/times-components/compare/@times-components/article@0.17.25...@times-components/article@0.17.26) (2017-11-22)
 

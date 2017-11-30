@@ -3,9 +3,6 @@ import trackingContextTypes from "../tracking-context-types";
 
 export default WrappedComponent => {
   class TestContext extends Component {
-    static get childContextTypes() {
-      return trackingContextTypes;
-    }
     getChildContext() {
       const self = this;
       return {
@@ -20,6 +17,8 @@ export default WrappedComponent => {
       return <WrappedComponent {...this.props} />;
     }
   }
+
+  TestContext.childContextTypes = trackingContextTypes;
 
   return TestContext;
 };

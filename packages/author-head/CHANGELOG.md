@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.20"></a>
+## [0.9.20](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.9.19...@times-components/author-head@0.9.20) (2017-11-29)
+
+
+
+
+<a name="0.9.19"></a>
+## [0.9.19](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.9.18...@times-components/author-head@0.9.19) (2017-11-24)
+
+
+### Bug Fixes
+
+* test for window ([#415](https://github.com/newsuk/times-components/issues/415)) ([91ec448](https://github.com/newsuk/times-components/commit/91ec448))
+
+
+
+
+<a name="0.9.18"></a>
+## [0.9.18](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.9.17...@times-components/author-head@0.9.18) (2017-11-24)
+
+
+
+
+<a name="0.9.17"></a>
+## [0.9.17](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.9.16...@times-components/author-head@0.9.17) (2017-11-24)
+
+
+
+
 <a name="0.9.16"></a>
 ## [0.9.16](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.9.15...@times-components/author-head@0.9.16) (2017-11-22)
 
