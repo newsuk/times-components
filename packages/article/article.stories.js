@@ -15,6 +15,7 @@ import Article from "./article";
 
 const fullArticleTypenameFixture = require("./fixtures/full-article-typename.json");
 const fullArticleFixture = require("./fixtures/full-article.json");
+const fullLongArticleFixture = require("./fixtures/full-long-article.json");
 const articleFixtureNoStandfirst = require("./fixtures/no-standfirst.json");
 const articleFixtureNoLabel = require("./fixtures/no-label.json");
 const articleFixtureNoAds = require("./fixtures/no-ads.json");
@@ -68,8 +69,17 @@ storiesOf("Article", module)
   .add("Default", () => {
     const props = {
       ...fullArticleFixture.data,
-      analyticsStream: () => {},
-      isLoading: false
+      isLoading: false,
+      analyticsStream: () => {}
+    };
+
+    return <Article {...props} />;
+  })
+  .add("Long Article", () => {
+    const props = {
+      ...fullLongArticleFixture.data,
+      isLoading: false,
+      analyticsStream: () => {}
     };
 
     return <Article {...props} />;

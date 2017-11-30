@@ -1,10 +1,12 @@
 import React from "react";
-import { FlatList, StyleSheet, View } from "react-native";
+import { Dimensions, FlatList, StyleSheet, View } from "react-native";
+import { withTrackScrollDepth } from "@times-components/tracking";
 import AuthorProfileAuthorHead from "./author-profile-author-head";
 import AuthorProfilePagination from "./author-profile-pagination";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
-import propTypes from "./author-profile-content-prop-types";
+import { propTypes, defaultProps } from "./author-profile-content-prop-types";
+import { normaliseWidth } from "./utils";
 
 const styles = StyleSheet.create({
   padding: {
@@ -13,13 +15,22 @@ const styles = StyleSheet.create({
   }
 });
 
+const viewabilityConfig = {
+  viewAreaCoveragePercentThreshold: 100,
+  waitForInteraction: false
+};
+
 class AuthorProfileContent extends React.Component {
   constructor(props) {
     super(props);
 
+    const { width } = Dimensions.get("window");
+
     this.state = {
-      count: props.count
+      count: props.count,
+      width: normaliseWidth(width)
     };
+    this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -27,6 +38,18 @@ class AuthorProfileContent extends React.Component {
       this.setState({
         count: nextProps.count
       });
+    }
+  }
+
+  onViewableItemsChanged(info) {
+    if (info.changed) {
+      info.changed
+        .filter(viewableItem => viewableItem.isViewable)
+        .map(
+          viewableItem =>
+            this.props.onViewed &&
+            this.props.onViewed(viewableItem.item, this.props.articles)
+        );
     }
   }
 
@@ -47,7 +70,8 @@ class AuthorProfileContent extends React.Component {
       page,
       pageSize,
       twitter,
-      uri
+      uri,
+      imageRatio
     } = this.props;
 
     const paginationComponent = (hideResults = false) => (
@@ -68,7 +92,12 @@ class AuthorProfileContent extends React.Component {
             id,
             isLoading: true
           }))
-      : articles;
+      : articles.map((article, idx) => ({
+          ...article,
+          elementId: `articleList-${page}-${idx}`
+        }));
+
+    if (!articlesLoading) this.props.receiveChildList(data);
 
     return (
       <FlatList
@@ -79,12 +108,16 @@ class AuthorProfileContent extends React.Component {
         renderItem={({ item, index }) => (
           <AuthorProfileItem
             {...item}
+            imageRatio={imageRatio}
+            imageSize={this.state.width}
             style={styles.padding}
             testID={`articleList-${index}`}
             onPress={e => onArticlePress(e, { id: item.id, url: item.url })}
           />
         )}
         initialListSize={pageSize}
+        onViewableItemsChanged={this.onViewableItemsChanged}
+        viewabilityConfig={viewabilityConfig}
         scrollRenderAheadDistance={2}
         pageSize={pageSize}
         ListHeaderComponent={
@@ -113,4 +146,5 @@ class AuthorProfileContent extends React.Component {
 }
 
 AuthorProfileContent.propTypes = propTypes;
-export default AuthorProfileContent;
+AuthorProfileContent.defaultProps = defaultProps;
+export default withTrackScrollDepth(AuthorProfileContent);

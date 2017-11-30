@@ -1,4 +1,6 @@
 *.stories.js
+*.stories.native.js
+*.stories.web.js
 __tests__
 *.fructose.js
 *.test.js
@@ -6,3 +8,4 @@ fixtures
 coverage
 android/**/test
 android/**/androidTest
+storybook-components

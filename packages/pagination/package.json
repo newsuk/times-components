@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pagination",
-  "version": "0.10.14",
+  "version": "0.10.15",
   "main": "pagination",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "@times-components/link": "0.10.8",
-    "@times-components/tracking": "0.2.8",
+    "@times-components/tracking": "0.3.0",
     "prop-types": "15.6.0",
     "react-display-name": "0.2.3",
     "react-native-svg": "5.5.0",

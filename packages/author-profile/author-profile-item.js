@@ -15,14 +15,16 @@ const styles = StyleSheet.create({
 const AuthorProfileItem = item => {
   const {
     style,
-    content,
+    summary,
     label,
     isLoading,
     onPress,
     publicationName,
     publishedTime,
-    title,
-    url
+    headline,
+    url,
+    imageRatio,
+    imageSize
   } = item;
 
   const imageUri = get(
@@ -34,7 +36,7 @@ const AuthorProfileItem = item => {
   if (isLoading) {
     return (
       <View style={[styles.container, style]}>
-        <Card isLoading={isLoading} />
+        <Card isLoading={isLoading} imageRatio={imageRatio} />
       </View>
     );
   }
@@ -43,9 +45,11 @@ const AuthorProfileItem = item => {
     <Link url={url} onPress={onPress}>
       <View style={[styles.container, style]}>
         <Card
-          headline={title}
-          text={content}
+          headline={headline}
+          text={summary}
           image={imageUri ? { uri: imageUri } : null}
+          imageRatio={imageRatio}
+          imageSize={imageSize}
           date={publishedTime}
           label={label}
           publication={publicationName}
@@ -60,7 +64,10 @@ export default withTrackEvents(AuthorProfileItem, {
     {
       eventName: "onPress",
       actionName: "Pressed",
-      getAttrs: ({ title, id }) => ({ articleTitle: title, articleId: id })
+      getAttrs: ({ headline, id }) => ({
+        articleHeadline: headline,
+        articleId: id
+      })
     }
   ]
 });

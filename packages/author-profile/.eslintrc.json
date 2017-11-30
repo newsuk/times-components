@@ -19,5 +19,8 @@
       }
     }
   },
-  "root": true
+  "root": true,
+  "globals": {
+    "window": true
+  }
 }
