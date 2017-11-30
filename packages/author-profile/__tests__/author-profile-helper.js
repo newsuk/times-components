@@ -361,6 +361,7 @@ export default AuthorProfileContent => {
       action: "Viewed",
       attrs: expect.objectContaining({
         authorName: "Fiona Hamilton",
+        articlesCount: 20,
         page: 1,
         pageSize: 10
       })

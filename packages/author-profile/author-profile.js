@@ -114,7 +114,8 @@ export default withTrackingContext(AuthorProfile, {
   getAttrs: ({ author, page, pageSize } = {}) => ({
     authorName: author && author.name,
     page,
-    pageSize
+    pageSize,
+    articlesCount: get(author, "articles.count", 0)
   }),
   trackingObject: "AuthorProfile"
 });
