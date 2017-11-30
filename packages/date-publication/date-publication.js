@@ -34,7 +34,7 @@ DatePublication.propTypes = {
   date: PropTypes.instanceOf(Date),
   publication: PropTypes.oneOf(Object.keys(publications)),
   style: TextPropTypesStyle,
-  WrapperComponent: PropTypes.element
+  WrapperComponent: PropTypes.func
 };
 
 DatePublication.defaultProps = {
