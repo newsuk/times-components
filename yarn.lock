@@ -3702,9 +3702,9 @@ detox@5.8.2:
     telnet-client "0.15.3"
     ws "^1.1.1"
 
-dextrose@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.0.3.tgz#e633c7fbf1d991720159a0a6381620cc1f3b9c29"
+dextrose@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.1.0.tgz#edac928107fa095ee224bf6636b04b020209c179"
   dependencies:
     "@times-components/fructose" "3.1.3"
     babel-core "6.26.0"
@@ -8655,11 +8655,12 @@ react-modal@^2.2.4:
     prop-types "^15.5.10"
 
 react-modal@^3.1.2:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/react-modal/-/react-modal-3.1.5.tgz#9cfdb7634b5003148ffb7c8ead13a36f671d744e"
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/react-modal/-/react-modal-3.1.6.tgz#82e63f1ec86b80e242518250d066ee37fa035f8a"
   dependencies:
     exenv "^1.2.0"
     prop-types "^15.5.10"
+    warning "^3.0.0"
 
 react-native-compat@^1.0.0:
   version "1.0.0"
@@ -10816,8 +10817,8 @@ webpack@3.3.0:
     yargs "^6.0.0"
 
 "webpack@^2.5.1 || ^3.0.0", webpack@^3.6.0, webpack@^3.8.1:
-  version "3.8.1"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-3.8.1.tgz#b16968a81100abe61608b0153c9159ef8bb2bd83"
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-3.9.0.tgz#7d65ca4ba92ae1b67be2c00b217fb990b8ffa97f"
   dependencies:
     acorn "^5.0.0"
     acorn-dynamic-import "^2.0.0"

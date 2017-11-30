@@ -7,9 +7,10 @@ const config = {
     deviceName: "Nexus_5X_API_22",
     app: path.join(
         __dirname,
-        "../android/app/build/outputs/apk/release/app-release.apk"
+        "../android/app/build/outputs/apk/debug/app-debug.apk"
     ),
     ignoredStories: [
+        "Advertisements",
         "AuthorHeadTracking",
         "AuthorProfileTracking",
         "Brightcove",
