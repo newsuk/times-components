@@ -7,6 +7,8 @@ import { TextLink } from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import { renderTrees, treePropType } from "@times-components/markup";
 
+import AuthorTitle from "./author-title";
+
 const styles = StyleSheet.create({
   container: {
     width: "100%",
@@ -32,11 +34,6 @@ const styles = StyleSheet.create({
     fontSize: 45,
     color: "#000",
     paddingTop: 32
-  },
-  title: {
-    fontFamily: "TimesDigitalW04-RegularSC",
-    fontSize: 15,
-    color: "#696969"
   },
   twitter: {
     fontSize: 18,
@@ -82,9 +79,7 @@ const AuthorHead = props => {
         >
           {name}
         </Text>
-        <Text accessibilityRole="heading" aria-level="2" style={styles.title}>
-          {title.toLowerCase()}
-        </Text>
+        <AuthorTitle title={title} />
         <TwitterLink handle={twitter} onPress={onTwitterLinkPress} />
         <Text style={styles.bio}>{renderTrees(bio)}</Text>
       </View>
