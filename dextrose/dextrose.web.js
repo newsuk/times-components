@@ -5,12 +5,12 @@ const config = {
     platformName: "web",
     ignoredStories: [
         "Advertisement",
-    	"AuthorHeadTracking",
-    	"AuthorProfileTracking",
+        "AuthorHeadTracking",
+        "AuthorProfileTracking",
         "Brightcove",
         "PaginationTracking",
         "TrackingPage",
-        "TrkingEvent"
+        "TrackingEvent"
     ]
 }
 

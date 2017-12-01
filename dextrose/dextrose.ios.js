@@ -12,8 +12,8 @@ const config = {
     ),
     ignoredStories: [
         "Advertisement",
-    	"AuthorHeadTracking",
-    	"AuthorProfileTracking",
+        "AuthorHeadTracking",
+        "AuthorProfileTracking",
         "Brightcove",
         "PaginationTracking",
         "TrackingPage",
