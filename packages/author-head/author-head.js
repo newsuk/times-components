@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet, Text, Platform } from "react-native";
 import PropTypes from "prop-types";
 
 import Image from "@times-components/image";
@@ -8,6 +8,7 @@ import { withTrackEvents } from "@times-components/tracking";
 import { renderTrees, treePropType } from "@times-components/markup";
 
 import AuthorTitle from "./author-title";
+import TwitterIcon from "./twitter-icon";
 
 const styles = StyleSheet.create({
   container: {
@@ -36,11 +37,20 @@ const styles = StyleSheet.create({
     paddingTop: 32
   },
   twitter: {
+    paddingTop: 16,
+    flexDirection: "row",
+    ...Platform.select({
+      android: {
+        alignItems: "center"
+      }
+    })
+  },
+  twitterLink: {
     fontSize: 18,
     fontFamily: "GillSansMTStd-Medium",
     color: "#006699",
-    paddingTop: 16,
-    textDecorationLine: "none"
+    textDecorationLine: "none",
+    paddingLeft: 5
   },
   bio: {
     fontFamily: "TimesDigitalW04",
@@ -112,13 +122,16 @@ const TwitterLink = ({ handle, onPress }) => {
   const url = `https://twitter.com/${handle}`;
 
   return (
-    <TextLink
-      style={styles.twitter}
-      url={url}
-      onPress={e => onPress(e, { handle, url })}
-    >
-      @{handle}
-    </TextLink>
+    <View style={styles.twitter}>
+      <TwitterIcon />
+      <TextLink
+        style={styles.twitterLink}
+        url={url}
+        onPress={e => onPress(e, { handle, url })}
+      >
+        @{handle}
+      </TextLink>
+    </View>
   );
 };
 

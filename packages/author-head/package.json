@@ -77,7 +77,8 @@
     "@times-components/tracking": "0.4.3",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.14",
-    "styled-components": "2.2.3"
+    "styled-components": "2.2.3",
+    "svgs": "3.1.0"
   },
   "peerDependencies": {
     "react": ">=16",
