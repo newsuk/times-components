@@ -1,16 +1,7 @@
 import React from "react";
 import { Text, Platform } from "react-native";
 import PropTypes from "prop-types";
-
-const styles = {
-  title: {
-    fontFamily: "GillSansMTStd-Medium",
-    fontSize: 12,
-    lineHeight: 12,
-    fontWeight: "400",
-    letterSpacing: 1.2
-  }
-};
+import styles from "./style";
 
 // apply transformations to add uppercase and letter spacing.
 // letterSpacing CSS prop does not work on android:
