@@ -516,6 +516,8 @@ exports[`Article test on android renders article no flags 1`] = `
                   "fontWeight": "400",
                   "letterSpacing": 1.2,
                   "lineHeight": 12,
+                  "marginBottom": -4,
+                  "paddingTop": 5,
                 },
                 Object {
                   "color": "#13354E",
@@ -566,7 +568,8 @@ exports[`Article test on android renders article no flags 1`] = `
                 "fontFamily": "TimesModern-Regular",
                 "fontSize": 21,
                 "lineHeight": 29,
-                "paddingBottom": 9,
+                "marginTop": -7,
+                "paddingBottom": 15,
               },
             ]
           }
@@ -1493,7 +1496,8 @@ exports[`Article test on android renders article no label 1`] = `
                 "fontFamily": "TimesModern-Regular",
                 "fontSize": 21,
                 "lineHeight": 29,
-                "paddingBottom": 9,
+                "marginTop": -7,
+                "paddingBottom": 15,
               },
             ]
           }
@@ -2556,7 +2560,8 @@ exports[`Article test on android renders article no label no flags 1`] = `
                 "fontFamily": "TimesModern-Regular",
                 "fontSize": 21,
                 "lineHeight": 29,
-                "paddingBottom": 9,
+                "marginTop": -7,
+                "paddingBottom": 15,
               },
             ]
           }
@@ -4369,6 +4374,8 @@ exports[`Article test on android renders article no standfirst 1`] = `
                   "fontWeight": "400",
                   "letterSpacing": 1.2,
                   "lineHeight": 12,
+                  "marginBottom": -4,
+                  "paddingTop": 5,
                 },
                 Object {
                   "color": "#13354E",
@@ -5444,6 +5451,8 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
                   "fontWeight": "400",
                   "letterSpacing": 1.2,
                   "lineHeight": 12,
+                  "marginBottom": -4,
+                  "paddingTop": 5,
                 },
                 Object {
                   "color": "#13354E",
@@ -7498,6 +7507,8 @@ exports[`Article test on android renders full article 1`] = `
                   "fontWeight": "400",
                   "letterSpacing": 1.2,
                   "lineHeight": 12,
+                  "marginBottom": -4,
+                  "paddingTop": 5,
                 },
                 Object {
                   "color": "#13354E",
@@ -7548,7 +7559,8 @@ exports[`Article test on android renders full article 1`] = `
                 "fontFamily": "TimesModern-Regular",
                 "fontSize": 21,
                 "lineHeight": 29,
-                "paddingBottom": 9,
+                "marginTop": -7,
+                "paddingBottom": 15,
               },
             ]
           }

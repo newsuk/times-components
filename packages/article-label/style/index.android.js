@@ -6,6 +6,6 @@ const styles = {
     paddingTop: 5,
     marginBottom: -4
   }
-}
+};
 
 export default styles;
