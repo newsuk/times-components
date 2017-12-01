@@ -273,12 +273,13 @@ exports[`renders profile content 1`] = `
               accessible={true}
               allowFontScaling={true}
               aria-level="2"
+              className=""
               ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#696969",
                   "fontFamily": "TimesDigitalW04-RegularSC",
-                  "fontSize": 15,
+                  "fontSize": 14,
                 }
               }
             >
@@ -4148,12 +4149,13 @@ exports[`renders profile content component 1`] = `
               accessible={true}
               allowFontScaling={true}
               aria-level="2"
+              className=""
               ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#696969",
                   "fontFamily": "TimesDigitalW04-RegularSC",
-                  "fontSize": 15,
+                  "fontSize": 14,
                 }
               }
             >
@@ -5916,12 +5918,13 @@ exports[`renders profile empty 1`] = `
               accessible={true}
               allowFontScaling={true}
               aria-level="2"
+              className=""
               ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#696969",
                   "fontFamily": "TimesDigitalW04-RegularSC",
-                  "fontSize": 15,
+                  "fontSize": 14,
                 }
               }
             >
@@ -6309,12 +6312,13 @@ exports[`renders profile loading 1`] = `
               accessible={true}
               allowFontScaling={true}
               aria-level="2"
+              className=""
               ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#696969",
                   "fontFamily": "TimesDigitalW04-RegularSC",
-                  "fontSize": 15,
+                  "fontSize": 14,
                 }
               }
             >
@@ -6907,12 +6911,13 @@ exports[`renders the author head 1`] = `
       accessible={true}
       allowFontScaling={true}
       aria-level="2"
+      className=""
       ellipsizeMode="tail"
       style={
         Object {
           "color": "#696969",
           "fontFamily": "TimesDigitalW04-RegularSC",
-          "fontSize": 15,
+          "fontSize": 14,
         }
       }
     >
