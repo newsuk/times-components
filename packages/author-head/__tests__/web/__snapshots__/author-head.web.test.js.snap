@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthorHead test on web renders 1`] = `
+<div
+  className="rn-alignItems-1awozwy rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-5v6cpj rn-pointerEvents-12vffkv rn-position-bnwqim"
+>
+  <header
+    className="rn-alignItems-1awozwy rn-backgroundColor-1178u4u rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-5v6cpj rn-position-bnwqim rn-width-13qz1uu"
+    role="banner"
+  >
+    <h1
+      accessibility-label="author-name"
+      aria-level="1"
+      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-15b02fe rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-iirzy8 rn-fontSize-1tsn96g rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-paddingTop-fd4yh7 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      data-testid="author-name"
+      dir="auto"
+      role="heading"
+    >
+      
+    </h1>
+    <h2
+      aria-level="2"
+      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1x7yru4 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-yvv7r8 rn-fontSize-a023e6 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      dir="auto"
+      role="heading"
+    >
+      
+    </h2>
+    <div
+      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-1feecvn rn-fontSize-ubezar rn-lineHeight-eaezby rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-maxWidth-1eyxye4 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-11rk87y rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      dir="auto"
+    />
+  </header>
+</div>
+`;
+
+exports[`AuthorHead test on web renders with data 1`] = `
+<div
+  className="rn-alignItems-1awozwy rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-5v6cpj rn-pointerEvents-12vffkv rn-position-bnwqim"
+>
+  <header
+    className="rn-alignItems-1awozwy rn-backgroundColor-1178u4u rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-5v6cpj rn-position-bnwqim rn-width-13qz1uu"
+    role="banner"
+  >
+    <h1
+      accessibility-label="author-name"
+      aria-level="1"
+      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-15b02fe rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-iirzy8 rn-fontSize-1tsn96g rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-paddingTop-fd4yh7 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      data-testid="author-name"
+      dir="auto"
+      role="heading"
+    >
+      Carol Midgley
+    </h1>
+    <h2
+      aria-level="2"
+      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1x7yru4 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-yvv7r8 rn-fontSize-a023e6 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      dir="auto"
+      role="heading"
+    >
+      columnist
+    </h2>
+    <a
+      className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-1i10wst rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-paddingTop-95jzfe rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      dir="auto"
+      href="https://twitter.com/carolmidgley"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="link"
+    >
+      @
+      carolmidgley
+    </a>
+    <div
+      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-1feecvn rn-fontSize-ubezar rn-lineHeight-eaezby rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-maxWidth-1eyxye4 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-11rk87y rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      dir="auto"
+    >
+      Carol Midgley joined 
+      <em>
+        The Times
+      </em>
+       in 1996, and won feature writer of the year in 2004. Find her Wednesday column in 
+      <em>
+        Times2
+      </em>
+       each week and a weekly comment piece on Fridays.
+    </div>
+  </header>
+  <div
+    className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-o52ifk rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-b8lwoo"
+  >
+    <div
+      className="rn-alignItems-1oszu61 rn-borderTopColor-jebswk rn-borderRightColor-1y2kpd rn-borderBottomColor-1ykcu4d rn-borderLeftColor-lfc6mk rn-borderTopLeftRadius-yiz7ri rn-borderTopRightRadius-ktxk0b rn-borderBottomRightRadius-1k3rj54 rn-borderBottomLeftRadius-f19lg6 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-15tvil0 rn-borderRightWidth-1ytx3yt rn-borderBottomWidth-duaggd rn-borderLeftWidth-jjeupf rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-overflowX-11yh6sk rn-overflowY-buy8e9 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+    >
+      <div
+        style={
+          Object {
+            "display": "table",
+            "height": 0,
+            "overflow": "hidden",
+            "paddingBottom": "100%",
+          }
+        }
+      >
+        <img
+          alt=""
+          src="https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200"
+          style={
+            Object {
+              "display": "block",
+              "position": "absolute",
+              "width": "100%",
+              "zIndex": 1,
+            }
+          }
+        />
+        <div
+          className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
+        >
+          <div
+            className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+            style={
+              Object {
+                "backgroundImage": "linear-gradient(264deg, #f9f9f9 0%, #ededed 100%)",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AuthorHead test on web renders without profile picture 1`] = `
+<div
+  className="rn-alignItems-1awozwy rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-5v6cpj rn-pointerEvents-12vffkv rn-position-bnwqim"
+>
+  <header
+    className="rn-alignItems-1awozwy rn-backgroundColor-1178u4u rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-5v6cpj rn-position-bnwqim rn-width-13qz1uu"
+    role="banner"
+  >
+    <h1
+      accessibility-label="author-name"
+      aria-level="1"
+      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-15b02fe rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-iirzy8 rn-fontSize-1tsn96g rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-paddingTop-fd4yh7 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      data-testid="author-name"
+      dir="auto"
+      role="heading"
+    >
+      Carol Midgley
+    </h1>
+    <h2
+      aria-level="2"
+      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1x7yru4 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-yvv7r8 rn-fontSize-a023e6 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      dir="auto"
+      role="heading"
+    >
+      columnist
+    </h2>
+    <a
+      className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-1i10wst rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-paddingTop-95jzfe rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      dir="auto"
+      href="https://twitter.com/carolmidgley"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="link"
+    >
+      @
+      carolmidgley
+    </a>
+    <div
+      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-1feecvn rn-fontSize-ubezar rn-lineHeight-eaezby rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-maxWidth-1eyxye4 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-11rk87y rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      dir="auto"
+    >
+      Carol Midgley joined 
+      <em>
+        The Times
+      </em>
+       in 1996, and won feature writer of the year in 2004. Find her Wednesday column in 
+      <em>
+        Times2
+      </em>
+       each week and a weekly comment piece on Fridays.
+    </div>
+  </header>
+</div>
+`;

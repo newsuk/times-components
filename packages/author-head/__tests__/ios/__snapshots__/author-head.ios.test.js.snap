@@ -1,0 +1,450 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthorHead test on ios renders 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "transparent",
+      "paddingBottom": 50,
+    }
+  }
+>
+  <View
+    accessibilityRole="banner"
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F9F8F3",
+        "flexDirection": "column",
+        "paddingBottom": 50,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      accessibility-label="author-name"
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="1"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#000",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 45,
+          "paddingTop": 32,
+        }
+      }
+      testID="author-name"
+    >
+      
+    </Text>
+    <Text
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="2"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontSize": 15,
+        }
+      }
+    >
+      
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#333",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 16,
+          "lineHeight": 26,
+          "maxWidth": "88%",
+          "paddingBottom": 32,
+          "textAlign": "center",
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`AuthorHead test on ios renders with data 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "transparent",
+      "paddingBottom": 50,
+    }
+  }
+>
+  <View
+    accessibilityRole="banner"
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F9F8F3",
+        "flexDirection": "column",
+        "paddingBottom": 50,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      accessibility-label="author-name"
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="1"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#000",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 45,
+          "paddingTop": 32,
+        }
+      }
+      testID="author-name"
+    >
+      Carol Midgley
+    </Text>
+    <Text
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="2"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontSize": 15,
+        }
+      }
+    >
+      columnist
+    </Text>
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="https://twitter.com/carolmidgley"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#006699",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 18,
+            "paddingTop": 16,
+            "textDecorationLine": "none",
+          },
+        ]
+      }
+    >
+      @
+      carolmidgley
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#333",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 16,
+          "lineHeight": 26,
+          "maxWidth": "88%",
+          "paddingBottom": 32,
+          "textAlign": "center",
+        }
+      }
+    >
+      Carol Midgley joined 
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontStyle": "italic",
+          }
+        }
+      >
+        The Times
+      </Text>
+       in 1996, and won feature writer of the year in 2004. Find her Wednesday column in 
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontStyle": "italic",
+          }
+        }
+      >
+        Times2
+      </Text>
+       each week and a weekly comment piece on Fridays.
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "bottom": 0,
+        "height": 100,
+        "position": "absolute",
+        "width": 100,
+      }
+    }
+  >
+    <View
+      aspectRatio={1}
+      style={
+        Object {
+          "borderColor": "#FFF",
+          "borderRadius": 50,
+          "borderWidth": 5,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+      >
+        <Image
+          onLoad={[Function]}
+          source={
+            Object {
+              "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              Object {
+                "height": "100%",
+                "width": "100%",
+              },
+              undefined,
+            ]
+          }
+        />
+        <View
+          onLayout={[Function]}
+          style={
+            Array [
+              Object {
+                "flex": 1,
+              },
+              null,
+            ]
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
+            <BVLinearGradient
+              colors={
+                Array [
+                  "#f9f9f9",
+                  "#ededed",
+                ]
+              }
+              end={
+                Object {
+                  "x": -0.09302964577578221,
+                  "y": 0.11488204504197774,
+                }
+              }
+              locations={
+                Array [
+                  0,
+                  1,
+                ]
+              }
+              start={
+                Object {
+                  "x": 1,
+                  "y": 0,
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "flex": 1,
+                  },
+                ]
+              }
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`AuthorHead test on ios renders without profile picture 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "transparent",
+      "paddingBottom": 50,
+    }
+  }
+>
+  <View
+    accessibilityRole="banner"
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F9F8F3",
+        "flexDirection": "column",
+        "paddingBottom": 50,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      accessibility-label="author-name"
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="1"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#000",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 45,
+          "paddingTop": 32,
+        }
+      }
+      testID="author-name"
+    >
+      Carol Midgley
+    </Text>
+    <Text
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="2"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontSize": 15,
+        }
+      }
+    >
+      columnist
+    </Text>
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="https://twitter.com/carolmidgley"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#006699",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 18,
+            "paddingTop": 16,
+            "textDecorationLine": "none",
+          },
+        ]
+      }
+    >
+      @
+      carolmidgley
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#333",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 16,
+          "lineHeight": 26,
+          "maxWidth": "88%",
+          "paddingBottom": 32,
+          "textAlign": "center",
+        }
+      }
+    >
+      Carol Midgley joined 
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontStyle": "italic",
+          }
+        }
+      >
+        The Times
+      </Text>
+       in 1996, and won feature writer of the year in 2004. Find her Wednesday column in 
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontStyle": "italic",
+          }
+        }
+      >
+        Times2
+      </Text>
+       each week and a weekly comment piece on Fridays.
+    </Text>
+  </View>
+</View>
+`;

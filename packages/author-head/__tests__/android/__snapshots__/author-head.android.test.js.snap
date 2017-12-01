@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders 1`] = `
+exports[`AuthorHead test on android renders 1`] = `
 <View
   pointerEvents="box-none"
   style={
@@ -78,7 +78,7 @@ exports[`renders 1`] = `
 </View>
 `;
 
-exports[`renders with data 1`] = `
+exports[`AuthorHead test on android renders with data 1`] = `
 <View
   pointerEvents="box-none"
   style={
@@ -318,7 +318,7 @@ exports[`renders with data 1`] = `
 </View>
 `;
 
-exports[`renders without profile picture 1`] = `
+exports[`AuthorHead test on android renders without profile picture 1`] = `
 <View
   pointerEvents="box-none"
   style={
