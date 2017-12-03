@@ -29,17 +29,17 @@ const styles = {
 const beautifyTitle = title => {
   if (Platform.OS === "android") {
     return title
-      .toUpperCase()
+      .toLowerCase()
       .split("")
       .join("\u200A");
   }
-  return title.toUpperCase();
+  return title.toLowerCase();
 };
 
 const ArticleFlag = ({ title, color }) => (
   <View style={styles.view}>
     <View style={styles.diamond}>
-      <Diamond height={7} width={7} color={color} />
+      <Diamond height={8} width={8} color={color} />
     </View>
     <Text
       accessibilityLabel={`flag-${title}`}
