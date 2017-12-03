@@ -69,7 +69,6 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "apollo-client": "2.1.0",
     "graphql-tag": "2.5.0",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",

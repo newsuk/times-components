@@ -44,10 +44,18 @@ class MockedProvider extends Component {
   }
 }
 
+const GraphQLRequest = PropTypes.shape({
+  query: PropTypes.object.isRequired,
+  variables: PropTypes.object,
+  operationName: PropTypes.string,
+  context: PropTypes.object,
+  extensions: PropTypes.object
+});
+
 MockedProvider.propTypes = {
   mocks: PropTypes.arrayOf(
     PropTypes.shape({
-      request: PropTypes.object.isRequired,
+      request: GraphQLRequest.isRequired,
       result: PropTypes.object,
       error: PropTypes.object,
       delay: PropTypes.number,
