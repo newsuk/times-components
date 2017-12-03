@@ -1,8 +1,6 @@
 import { View } from "react-native";
 import React from "react";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { action } from "@storybook/addon-actions";
 import Link, { TextLink } from "./link";
 import CenteredDecorator from "../../storybook/decorators/centered";

@@ -1,7 +1,6 @@
 /* eslint-disable react/no-danger */
 import React from "react";
 import { View } from "react-native";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
 import Image from "./image";
 
