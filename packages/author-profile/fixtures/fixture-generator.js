@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import Chance from "chance";
 
 const chance = new Chance(88888);

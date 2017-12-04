@@ -3,9 +3,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { StyleSheet, View } from "react-native";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import Gradient from "./gradient";
 
 const styles = StyleSheet.create({

@@ -1,7 +1,7 @@
 /* globals withComponent Chromeless test expect beforeEach */
 import React from "react";
 import AuthorProfileContent from "./author-profile-content";
-import authorProfileGenerator from "./fixture-generator";
+import authorProfileGenerator from "./fixtures/fixture-generator";
 
 let chromeless;
 const setup = () => {
