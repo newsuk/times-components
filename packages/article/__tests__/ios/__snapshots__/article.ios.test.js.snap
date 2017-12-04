@@ -583,6 +583,7 @@ exports[`Article test on ios renders article no flags 1`] = `
       style={null}
     >
       <View
+        className="sc-ifAKCX gkdadk"
         style={
           Array [
             Object {
@@ -1646,6 +1647,7 @@ exports[`Article test on ios renders article no label 1`] = `
       style={null}
     >
       <View
+        className="sc-ifAKCX gkdadk"
         style={
           Array [
             Object {
@@ -2566,6 +2568,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
       style={null}
     >
       <View
+        className="sc-ifAKCX gkdadk"
         style={
           Array [
             Object {
@@ -3466,6 +3469,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
       style={null}
     >
       <View
+        className="sc-ifAKCX gkdadk"
         style={
           Array [
             Object {
@@ -4542,6 +4546,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
       style={null}
     >
       <View
+        className="sc-ifAKCX gkdadk"
         style={
           Array [
             Object {
@@ -5475,6 +5480,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
       style={null}
     >
       <View
+        className="sc-ifAKCX gkdadk"
         style={
           Array [
             Object {
@@ -6518,6 +6524,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
       style={null}
     >
       <View
+        className="sc-ifAKCX gkdadk"
         style={
           Array [
             Object {
@@ -7683,6 +7690,7 @@ exports[`Article test on ios renders full article 1`] = `
       style={null}
     >
       <View
+        className="sc-ifAKCX gkdadk"
         style={
           Array [
             Object {
