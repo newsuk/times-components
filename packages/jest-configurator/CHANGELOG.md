@@ -1,7 +1,15 @@
 # Change Log
 
 All notable changes to this project will be documented in this file.
-See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+<a name="0.0.9"></a>
+## [0.0.9](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.0.8...@times-components/jest-configurator@0.0.9) (2017-12-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/jest-configurator
 
 <a name="0.0.8"></a>
 ## [0.0.8](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.0.7...@times-components/jest-configurator@0.0.8) (2017-11-24)

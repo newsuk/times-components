@@ -1,6 +1,6 @@
 {
   "name": "@times-components/utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "make-schema": "node ./scripts/fetch-gql-schema",
     "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
