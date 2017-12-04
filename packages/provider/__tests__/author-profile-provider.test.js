@@ -2,9 +2,9 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
-import { ApolloClient, IntrospectionFragmentMatcher } from "react-apollo";
-import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";
-import { addTypenameToDocument } from "apollo-client";
+import { MockedProvider } from "@times-components/utils/graphql";
+// eslint-disable-next-line import/no-unresolved
+import { addTypenameToDocument } from "apollo-utilities";
 import { AuthorProfileProvider } from "../provider";
 import { query as authorProfileQuery } from "../author-profile-provider";
 import fixture from "../fixtures/author-profile.json";
@@ -18,37 +18,9 @@ const mocks = [
   }
 ];
 
-const fragmentMatcher = new IntrospectionFragmentMatcher({
-  introspectionQueryResultData: {
-    __schema: {
-      types: [
-        {
-          kind: "UNION",
-          name: "Media",
-          possibleTypes: [
-            {
-              name: "Image"
-            },
-            {
-              name: "Video"
-            }
-          ]
-        }
-      ]
-    }
-  }
-});
-
-const networkInterface = mockNetworkInterface(...mocks);
-
-const client = new ApolloClient({
-  networkInterface,
-  fragmentMatcher
-});
-
 const renderComponent = child =>
   renderer.create(
-    <MockedProvider mocks={mocks} client={client}>
+    <MockedProvider mocks={mocks}>
       <AuthorProfileProvider
         slug="fiona-hamilton"
         pageSize={3}
