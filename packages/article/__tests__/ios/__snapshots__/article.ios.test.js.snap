@@ -7032,8 +7032,8 @@ exports[`Article test on ios renders full article 1`] = `
             "caption": "All the latest stories in culture and books.",
             "credits": "The credits",
             "display": "primary",
-            "ratio": "1500:1200",
-            "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0",
+            "ratio": "1500:1000",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0&resize=600",
           },
           "children": Array [],
           "name": "image",
@@ -7889,7 +7889,7 @@ exports[`Article test on ios renders full article 1`] = `
             style={undefined}
           >
             <View
-              aspectRatio={1.25}
+              aspectRatio={1.5}
               style={Object {}}
             >
               <View
@@ -7904,7 +7904,7 @@ exports[`Article test on ios renders full article 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0",
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0&resize=600",
                     }
                   }
                   style={
