@@ -1,8 +1,8 @@
-import { Text } from "react-native";
+import { Text, View } from "react-native";
 import styled from "styled-components";
 import config from "../responsive-config";
 
-const MetaElementContainer = styled(Text)`
+export const MetaElement = styled(Text)`
   padding: 12px 0 9px;
   @media (min-width: ${config.wideBreakpoint}) {
     line-height: 18px;
@@ -10,4 +10,8 @@ const MetaElementContainer = styled(Text)`
   }
 `;
 
-export default MetaElementContainer;
+export const Meta = styled(View)`
+  @media (min-width: ${config.wideBreakpoint}) {
+    padding-top: 0px;
+  }
+`;
