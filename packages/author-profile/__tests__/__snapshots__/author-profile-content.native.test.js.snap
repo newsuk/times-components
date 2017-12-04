@@ -334,6 +334,7 @@ exports[`renders profile content 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              className=""
               ellipsizeMode="tail"
               style={
                 Object {
@@ -4185,6 +4186,7 @@ exports[`renders profile content component 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              className=""
               ellipsizeMode="tail"
               style={
                 Object {
@@ -5954,6 +5956,7 @@ exports[`renders profile empty 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              className=""
               ellipsizeMode="tail"
               style={
                 Object {
@@ -6394,6 +6397,7 @@ exports[`renders profile loading 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
+              className=""
               ellipsizeMode="tail"
               style={
                 Object {
@@ -7014,6 +7018,7 @@ exports[`renders the author head 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
+      className=""
       ellipsizeMode="tail"
       style={
         Object {
