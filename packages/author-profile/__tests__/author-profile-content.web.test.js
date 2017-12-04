@@ -377,27 +377,7 @@ it("disconnects from the IntersectionObserver when unmounting", async () => {
     />
   );
 
-  const makeEntries = nodes =>
-    [...nodes].map((node, indx) => ({
-      target: node,
-      intersectionRatio: indx === 0 ? 0.75 : 0
-    }));
-  window.IntersectionObserver.dispatchEntriesForInstance(1, makeEntries);
-
-  await delay(20);
-
-  const makeNewEntries = nodes =>
-    [...nodes].map((node, indx) => ({
-      target: node,
-      intersectionRatio: indx === 0 ? 0.25 : 0.75
-    }));
-  window.IntersectionObserver.dispatchEntriesForInstance(1, makeNewEntries);
-
-  await delay(0);
-
   component.unmount();
-
-  await delay(100);
 
   expect(disconnectSpy).toHaveBeenCalled();
 
