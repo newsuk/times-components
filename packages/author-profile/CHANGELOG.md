@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.28.0"></a>
+# [0.28.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.27.3...@times-components/author-profile@0.28.0) (2017-12-04)
+
+
+### Bug Fixes
+
+* align card loading to design ([#429](https://github.com/newsuk/times-components/issues/429)) ([4b35801](https://github.com/newsuk/times-components/commit/4b35801))
+
+
+### Features
+
+* add pending ([#416](https://github.com/newsuk/times-components/issues/416)) ([dceab47](https://github.com/newsuk/times-components/commit/dceab47))
+
+
+
+
 <a name="0.27.3"></a>
 ## [0.27.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.27.2...@times-components/author-profile@0.27.3) (2017-12-04)
 

@@ -1630,10 +1630,10 @@ exports[`Article test on android renders article no label 1`] = `
                 }
               >
                 <svg
-                  height={7}
+                  height={8}
                   style={Object {}}
                   viewBox="0 0 20 20"
-                  width={7}
+                  width={8}
                 >
                   <g
                     fill="#E34605"
@@ -1666,7 +1666,7 @@ exports[`Article test on android renders article no label 1`] = `
                 }
                 testID="flag-new"
               >
-                N E W
+                n e w
               </Text>
             </View>
           </View>
@@ -1694,10 +1694,10 @@ exports[`Article test on android renders article no label 1`] = `
                 }
               >
                 <svg
-                  height={7}
+                  height={8}
                   style={Object {}}
                   viewBox="0 0 20 20"
-                  width={7}
+                  width={8}
                 >
                   <g
                     fill="#C51D24"
@@ -1730,7 +1730,7 @@ exports[`Article test on android renders article no label 1`] = `
                 }
                 testID="flag-exclusive"
               >
-                E X C L U S I V E
+                e x c l u s i v e
               </Text>
             </View>
           </View>
@@ -4682,10 +4682,10 @@ exports[`Article test on android renders article no standfirst 1`] = `
                 }
               >
                 <svg
-                  height={7}
+                  height={8}
                   style={Object {}}
                   viewBox="0 0 20 20"
-                  width={7}
+                  width={8}
                 >
                   <g
                     fill="#E34605"
@@ -4718,7 +4718,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
                 }
                 testID="flag-new"
               >
-                N E W
+                n e w
               </Text>
             </View>
           </View>
@@ -4746,10 +4746,10 @@ exports[`Article test on android renders article no standfirst 1`] = `
                 }
               >
                 <svg
-                  height={7}
+                  height={8}
                   style={Object {}}
                   viewBox="0 0 20 20"
-                  width={7}
+                  width={8}
                 >
                   <g
                     fill="#C51D24"
@@ -4782,7 +4782,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
                 }
                 testID="flag-exclusive"
               >
-                E X C L U S I V E
+                e x c l u s i v e
               </Text>
             </View>
           </View>
@@ -6762,10 +6762,10 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
                 }
               >
                 <svg
-                  height={7}
+                  height={8}
                   style={Object {}}
                   viewBox="0 0 20 20"
-                  width={7}
+                  width={8}
                 >
                   <g
                     fill="#E34605"
@@ -6798,7 +6798,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
                 }
                 testID="flag-new"
               >
-                N E W
+                n e w
               </Text>
             </View>
           </View>
@@ -6826,10 +6826,10 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
                 }
               >
                 <svg
-                  height={7}
+                  height={8}
                   style={Object {}}
                   viewBox="0 0 20 20"
-                  width={7}
+                  width={8}
                 >
                   <g
                     fill="#C51D24"
@@ -6862,7 +6862,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
                 }
                 testID="flag-exclusive"
               >
-                E X C L U S I V E
+                e x c l u s i v e
               </Text>
             </View>
           </View>
@@ -7979,10 +7979,10 @@ exports[`Article test on android renders full article 1`] = `
                 }
               >
                 <svg
-                  height={7}
+                  height={8}
                   style={Object {}}
                   viewBox="0 0 20 20"
-                  width={7}
+                  width={8}
                 >
                   <g
                     fill="#E34605"
@@ -8015,7 +8015,7 @@ exports[`Article test on android renders full article 1`] = `
                 }
                 testID="flag-new"
               >
-                N E W
+                n e w
               </Text>
             </View>
           </View>
@@ -8043,10 +8043,10 @@ exports[`Article test on android renders full article 1`] = `
                 }
               >
                 <svg
-                  height={7}
+                  height={8}
                   style={Object {}}
                   viewBox="0 0 20 20"
-                  width={7}
+                  width={8}
                 >
                   <g
                     fill="#C51D24"
@@ -8079,7 +8079,7 @@ exports[`Article test on android renders full article 1`] = `
                 }
                 testID="flag-exclusive"
               >
-                E X C L U S I V E
+                e x c l u s i v e
               </Text>
             </View>
           </View>

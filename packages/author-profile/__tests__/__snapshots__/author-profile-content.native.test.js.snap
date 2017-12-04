@@ -751,7 +751,7 @@ exports[`renders profile content 1`] = `
                     Object {
                       "height": 24,
                       "marginBottom": 10,
-                      "maxWidth": 400,
+                      "maxWidth": 300,
                     },
                   ]
                 }
@@ -1068,7 +1068,7 @@ exports[`renders profile content 1`] = `
                     Object {
                       "height": 24,
                       "marginBottom": 10,
-                      "maxWidth": 400,
+                      "maxWidth": 300,
                     },
                   ]
                 }
@@ -1385,7 +1385,7 @@ exports[`renders profile content 1`] = `
                     Object {
                       "height": 24,
                       "marginBottom": 10,
-                      "maxWidth": 400,
+                      "maxWidth": 300,
                     },
                   ]
                 }
@@ -1702,7 +1702,7 @@ exports[`renders profile content 1`] = `
                     Object {
                       "height": 24,
                       "marginBottom": 10,
-                      "maxWidth": 400,
+                      "maxWidth": 300,
                     },
                   ]
                 }
@@ -2019,7 +2019,7 @@ exports[`renders profile content 1`] = `
                     Object {
                       "height": 24,
                       "marginBottom": 10,
-                      "maxWidth": 400,
+                      "maxWidth": 300,
                     },
                   ]
                 }
@@ -2336,7 +2336,7 @@ exports[`renders profile content 1`] = `
                     Object {
                       "height": 24,
                       "marginBottom": 10,
-                      "maxWidth": 400,
+                      "maxWidth": 300,
                     },
                   ]
                 }
@@ -2653,7 +2653,7 @@ exports[`renders profile content 1`] = `
                     Object {
                       "height": 24,
                       "marginBottom": 10,
-                      "maxWidth": 400,
+                      "maxWidth": 300,
                     },
                   ]
                 }
@@ -2970,7 +2970,7 @@ exports[`renders profile content 1`] = `
                     Object {
                       "height": 24,
                       "marginBottom": 10,
-                      "maxWidth": 400,
+                      "maxWidth": 300,
                     },
                   ]
                 }
@@ -3287,7 +3287,7 @@ exports[`renders profile content 1`] = `
                     Object {
                       "height": 24,
                       "marginBottom": 10,
-                      "maxWidth": 400,
+                      "maxWidth": 300,
                     },
                   ]
                 }
@@ -3604,7 +3604,7 @@ exports[`renders profile content 1`] = `
                     Object {
                       "height": 24,
                       "marginBottom": 10,
-                      "maxWidth": 400,
+                      "maxWidth": 300,
                     },
                   ]
                 }
@@ -6626,7 +6626,7 @@ exports[`renders profile loading 1`] = `
                     Object {
                       "height": 24,
                       "marginBottom": 10,
-                      "maxWidth": 400,
+                      "maxWidth": 300,
                     },
                   ]
                 }
