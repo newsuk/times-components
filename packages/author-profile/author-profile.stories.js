@@ -4,10 +4,10 @@ import { storiesOf } from "@storybook/react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { decorateAction } from "@storybook/addon-actions";
 import { AuthorProfileProvider } from "@times-components/provider";
-import { ApolloClient, IntrospectionFragmentMatcher } from "react-apollo";
-import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { addTypenameToDocument } from "apollo-client";
+import { MockedProvider } from "@times-components/utils/graphql";
+// eslint-disable-next-line import/no-extraneous-dependencies, import/no-unresolved
+import { addTypenameToDocument } from "apollo-utilities";
 import { query as authorProfileQuery } from "@times-components/provider/author-profile-provider";
 import { query as articleListQuery } from "@times-components/provider/article-list-provider";
 import AuthorProfile from "./author-profile";
@@ -104,38 +104,8 @@ const mocks = [
   }
 ];
 
-const fragmentMatcher = new IntrospectionFragmentMatcher({
-  introspectionQueryResultData: {
-    __schema: {
-      types: [
-        {
-          kind: "UNION",
-          name: "Media",
-          possibleTypes: [
-            {
-              name: "Image"
-            },
-            {
-              name: "Video"
-            }
-          ]
-        }
-      ]
-    }
-  }
-});
-
-const networkInterface = mockNetworkInterface(...mocks);
-
-const defaultClient = new ApolloClient({
-  networkInterface,
-  fragmentMatcher
-});
-
-const withMockProvider = (child, client = defaultClient) => (
-  <MockedProvider mocks={mocks} client={client}>
-    {child}
-  </MockedProvider>
+const withMockProvider = child => (
+  <MockedProvider mocks={mocks}>{child}</MockedProvider>
 );
 const authProfileProviderProps = {
   slug: "fiona-hamilton",

@@ -1,14 +1,12 @@
 /* eslint-env jest */
 
-import "jsdom";
 import React from "react";
 import Enzyme, { shallow } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
 import renderer from "react-test-renderer";
-import { ApolloClient, IntrospectionFragmentMatcher } from "react-apollo";
-import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { addTypenameToDocument } from "apollo-client";
+import { MockedProvider } from "@times-components/utils/graphql";
+// eslint-disable-next-line import/no-extraneous-dependencies, import/no-unresolved
+import { addTypenameToDocument } from "apollo-utilities";
 import { query as authorProfileQuery } from "@times-components/provider/author-profile-provider";
 import { query as articleListQuery } from "@times-components/provider/article-list-provider";
 import set from "lodash.set";
@@ -89,47 +87,11 @@ const mocks = [
   }
 ];
 
-const fragmentMatcher = new IntrospectionFragmentMatcher({
-  introspectionQueryResultData: {
-    __schema: {
-      types: [
-        {
-          kind: "UNION",
-          name: "Media",
-          possibleTypes: [
-            {
-              name: "Image"
-            },
-            {
-              name: "Video"
-            }
-          ]
-        }
-      ]
-    }
-  }
-});
-
-const networkInterface = mockNetworkInterface(...mocks);
-
-const client = new ApolloClient({
-  networkInterface,
-  fragmentMatcher
-});
-
 const withMockProvider = child => (
-  <MockedProvider mocks={mocks} client={client}>
-    {child}
-  </MockedProvider>
+  <MockedProvider mocks={mocks}>{child}</MockedProvider>
 );
 
 export default AuthorProfileContent => {
-  it("renders profile", () => {
-    const wrapper = shallow(<AuthorProfile {...props} />).dive();
-
-    expect(wrapper).toMatchSnapshot();
-  });
-
   it("renders profile content", () => {
     const component = renderer.create(
       withMockProvider(
@@ -361,6 +323,7 @@ export default AuthorProfileContent => {
       action: "Viewed",
       attrs: expect.objectContaining({
         authorName: "Fiona Hamilton",
+        articlesCount: 20,
         page: 1,
         pageSize: 10
       })

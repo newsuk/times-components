@@ -7,7 +7,7 @@ import tealiumReporter from "../packages/tracking/tealium/tealium-reporter";
 const trackingConfig = {
   enabled: true,
   account: "newsinternational",
-  profile: "thetimes.desktop.2017",
+  profile: "thetimes.2018",
   env: "dev"
 };
 

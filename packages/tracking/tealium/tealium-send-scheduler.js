@@ -76,8 +76,10 @@ export default class TealiumSendScheduler {
       }
 
       const e = this.queue.shift();
-      const method = e.component === "Page" ? "view" : "link";
-      this.w.utag[method](e);
+
+      if (typeof this.w.tealiumTrack === "function") {
+        this.w.tealiumTrack(e);
+      }
     } while (deadline.timeRemaining() > 0);
 
     if (this.queue.length > 0) {

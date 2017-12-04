@@ -2,8 +2,8 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
-import { gql } from "react-apollo";
-import { MockedProvider } from "react-apollo/test-utils";
+import gql from "graphql-tag";
+import { MockedProvider } from "@times-components/utils/graphql";
 import connectGraphql from "../provider";
 
 const query = gql`
