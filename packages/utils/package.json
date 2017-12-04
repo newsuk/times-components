@@ -1,6 +1,6 @@
 {
   "name": "@times-components/utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "make-schema": "node ./scripts/fetch-gql-schema",
     "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
@@ -12,7 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/newsuk/times-components.git"
   },
-  "keywords": ["utils", "graphql"],
+  "keywords": [
+    "utils",
+    "graphql"
+  ],
   "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/newsuk/times-components/issues"
