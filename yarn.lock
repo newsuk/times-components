@@ -296,7 +296,7 @@
   version "0.3.29"
   resolved "https://registry.yarnpkg.com/@types/mkdirp/-/mkdirp-0.3.29.tgz#7f2ad7ec55f914482fc9b1ec4bb1ae6028d46066"
 
-"@types/node@*", "@types/node@^8.0.19":
+"@types/node@*":
   version "8.0.54"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.54.tgz#3fd9357db4af388b79e03845340259440edffde6"
   dependencies:
@@ -305,6 +305,10 @@
 "@types/node@6.0.66":
   version "6.0.66"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.66.tgz#5680b74a6135d33d4c00447e7c3dc691a4601625"
+
+"@types/node@^8.0.19":
+  version "8.0.53"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.53.tgz#396b35af826fa66aad472c8cb7b8d5e277f4e6d8"
 
 "@types/react@^16.0.18":
   version "16.0.26"
@@ -9966,6 +9970,17 @@ svgo@^0.7.0:
     mkdirp "~0.5.1"
     sax "~1.2.1"
     whet.extend "~0.9.9"
+
+svgs@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/svgs/-/svgs-3.1.0.tgz#ae7bacdedee73a6ab491132c181c4faf646ff3d6"
+  dependencies:
+    babel-plugin-transform-object-rest-spread "^6.23.0"
+    babel-preset-es2015 "^6.24.1"
+    babel-preset-react "^6.24.1"
+    babelify "^7.3.0"
+    prop-types "^15.5.10"
+    rip-out "^1.0.0"
 
 svgs@3.1.1:
   version "3.1.1"

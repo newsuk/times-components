@@ -62,6 +62,7 @@ exports[`AuthorHead test on ios renders 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
+      className=""
       ellipsizeMode="tail"
       style={
         Object {
@@ -187,6 +188,7 @@ exports[`AuthorHead test on ios renders with data 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
+      className=""
       ellipsizeMode="tail"
       style={
         Object {
@@ -449,6 +451,7 @@ exports[`AuthorHead test on ios renders without profile picture 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
+      className=""
       ellipsizeMode="tail"
       style={
         Object {

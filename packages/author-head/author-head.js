@@ -5,10 +5,11 @@ import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import { TextLink } from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
-import { renderTrees, treePropType } from "@times-components/markup";
+import { treePropType } from "@times-components/markup";
 
 import AuthorTitle from "./author-title";
 import TwitterIcon from "./twitter-icon";
+import Bio from "./author-bio";
 
 const styles = StyleSheet.create({
   container: {
@@ -52,15 +53,6 @@ const styles = StyleSheet.create({
     textDecorationLine: "none",
     paddingLeft: 5
   },
-  bio: {
-    fontFamily: "TimesDigitalW04",
-    textAlign: "center",
-    fontSize: 16,
-    lineHeight: 26,
-    color: "#333",
-    maxWidth: "88%",
-    paddingBottom: 32
-  },
   wrapper: {
     alignItems: "center",
     backgroundColor: "transparent",
@@ -91,7 +83,7 @@ const AuthorHead = props => {
         </Text>
         <AuthorTitle title={title} />
         <TwitterLink handle={twitter} onPress={onTwitterLinkPress} />
-        <Text style={styles.bio}>{renderTrees(bio)}</Text>
+        <Bio bio={bio} />
       </View>
       {imageComponent}
     </View>
