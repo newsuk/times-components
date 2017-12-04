@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.19.3"></a>
+## [0.19.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.19.2...@times-components/article@0.19.3) (2017-12-04)
+
+
+### Bug Fixes
+
+* make flag font lowercase ([#427](https://github.com/newsuk/times-components/issues/427)) ([9905ee3](https://github.com/newsuk/times-components/commit/9905ee3))
+
+
+
+
 <a name="0.19.2"></a>
 ## [0.19.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.19.1...@times-components/article@0.19.2) (2017-12-04)
 

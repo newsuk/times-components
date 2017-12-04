@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "0.27.3",
+  "version": "0.28.0",
   "description": "Author info along with articles they have written",
   "main": "author-profile",
   "scripts": {
@@ -31,6 +31,8 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@storybook/addon-actions": "3.2.11",
+    "@storybook/react-native": "3.2.11",
     "@times-components/utils": "0.0.2",
     "apollo-utilities": "1.0.2",
     "babel-cli": "6.24.1",
@@ -63,7 +65,7 @@
   },
   "dependencies": {
     "@times-components/author-head": "0.10.1",
-    "@times-components/card": "0.11.0",
+    "@times-components/card": "0.11.1",
     "@times-components/gradient": "0.2.0",
     "@times-components/link": "0.11.0",
     "@times-components/pagination": "0.11.1",

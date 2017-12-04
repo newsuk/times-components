@@ -2,9 +2,8 @@ import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { decorateAction } from "@storybook/addon-actions";
 import { AuthorProfileProvider } from "@times-components/provider";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { MockedProvider } from "@times-components/utils/graphql";
-// eslint-disable-next-line import/no-extraneous-dependencies, import/no-unresolved
+// eslint-disable-next-line import/no-unresolved
 import { addTypenameToDocument } from "apollo-utilities";
 import { query as authorProfileQuery } from "@times-components/provider/author-profile-provider";
 import { query as articleListQuery } from "@times-components/provider/article-list-provider";

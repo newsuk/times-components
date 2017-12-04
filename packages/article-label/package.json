@@ -19,7 +19,7 @@
       "node_modules/(?!@times-components)/"
     ],
     "testMatch": [
-      "<rootDir>/packages/article-label/__test__/**.test.js"
+      "<rootDir>/packages/article-label/__tests__/**.test.js"
     ]
   },
   "repository": {
@@ -40,6 +40,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@storybook/react-native": "3.2.11",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",

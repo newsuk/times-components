@@ -9,6 +9,8 @@ import authorProfileFixture from "../fixtures/author-profile.json";
 import articleListFixture from "../fixtures/article-list.json";
 import pagedResult from "./paged-result";
 
+const delay = ms => new Promise(res => setTimeout(res, ms));
+
 test(AuthorProfileContent);
 
 const results = {
@@ -40,13 +42,14 @@ class FakeIntersectionObserver {
     intersectionObserverInstances[this.instanceId].nodes.add(node);
   }
 
-  static dispatchEntriesForInstance(instanceId) {
+  static dispatchEntriesForInstance(instanceId, makeEntries) {
     const instance = intersectionObserverInstances[instanceId];
-    const entries = [...instance.nodes].map((node, indx) => ({
-      target: node,
-      isIntersecting: indx === 0
-    }));
-    instance.cb(entries);
+
+    instance.cb(makeEntries(instance.nodes));
+  }
+
+  disconnect() {
+    return this;
   }
 }
 
@@ -107,7 +110,7 @@ it("renders with an intersection observer which uses the expected options", () =
   expect(optsSpy.mock.calls[1][0]).toMatchSnapshot();
 });
 
-it("renders a good quality image if it is visible", () => {
+it("renders a good quality image if it is visible", async () => {
   window.IntersectionObserver = FakeIntersectionObserver;
 
   const component = mount(
@@ -133,7 +136,15 @@ it("renders a good quality image if it is visible", () => {
     "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=100"
   );
 
-  window.IntersectionObserver.dispatchEntriesForInstance(1);
+  const makeEntries = nodes =>
+    [...nodes].map((node, indx) => ({
+      target: node,
+      intersectionRatio: indx === 0 ? 0.75 : 0
+    }));
+
+  window.IntersectionObserver.dispatchEntriesForInstance(1, makeEntries);
+
+  await delay(100);
 
   expect(
     component
@@ -143,7 +154,7 @@ it("renders a good quality image if it is visible", () => {
   ).toMatchSnapshot();
 });
 
-it("renders a poor quality image if it is not visible", () => {
+it("renders a poor quality image if it is not visible", async () => {
   window.IntersectionObserver = FakeIntersectionObserver;
 
   const component = mount(
@@ -159,7 +170,15 @@ it("renders a poor quality image if it is not visible", () => {
     />
   );
 
-  window.IntersectionObserver.dispatchEntriesForInstance(1);
+  const makeEntries = nodes =>
+    [...nodes].map((node, indx) => ({
+      target: node,
+      intersectionRatio: indx === 0 ? 0.75 : 0
+    }));
+
+  window.IntersectionObserver.dispatchEntriesForInstance(1, makeEntries);
+
+  await delay(100);
 
   expect(
     component
@@ -211,6 +230,179 @@ it("renders good quality images if there is no IntersectionObserver", () => {
   expect(component.find("TimesImage")).toMatchSnapshot();
 });
 
+it("does not render good quality images if the item is quickly scrolled passed", async () => {
+  window.IntersectionObserver = FakeIntersectionObserver;
+
+  const component = mount(
+    <AuthorProfileContent
+      articles={results.data.author.articles.list.slice(0, 5)}
+      author={authorProfileFixture.data.author}
+      slug="fiona-hamilton"
+      page={1}
+      pageSize={3}
+      imageRatio={3 / 2}
+      onTwitterLinkPress={() => {}}
+      onArticlePress={() => {}}
+    />
+  );
+
+  const makeEntries = nodes =>
+    [...nodes].map((node, indx) => ({
+      target: node,
+      intersectionRatio: indx === 0 ? 0.75 : 0
+    }));
+  window.IntersectionObserver.dispatchEntriesForInstance(1, makeEntries);
+
+  await delay(20);
+
+  const makeNewEntries = nodes =>
+    [...nodes].map((node, indx) => ({
+      target: node,
+      intersectionRatio: indx === 0 ? 0.25 : 0.75
+    }));
+  window.IntersectionObserver.dispatchEntriesForInstance(1, makeNewEntries);
+
+  await delay(100);
+
+  expect(component.render().find("img")).toMatchSnapshot();
+});
+
+it("does no work if there are no pending items", async () => {
+  window.IntersectionObserver = FakeIntersectionObserver;
+
+  const spy = jest.spyOn(AuthorProfileContent.prototype, "setState");
+
+  mount(
+    <AuthorProfileContent
+      articles={results.data.author.articles.list.slice(0, 5)}
+      author={authorProfileFixture.data.author}
+      slug="fiona-hamilton"
+      page={1}
+      pageSize={3}
+      imageRatio={3 / 2}
+      onTwitterLinkPress={() => {}}
+      onArticlePress={() => {}}
+    />
+  );
+
+  // View all items
+  const makeEntries = nodes =>
+    [...nodes].map(node => ({
+      target: node,
+      intersectionRatio: 0.75
+    }));
+  window.IntersectionObserver.dispatchEntriesForInstance(1, makeEntries);
+
+  await delay(20);
+
+  // Scroll passed all items before setting state
+  const makeNewEntries = nodes =>
+    [...nodes].map(node => ({
+      target: node,
+      intersectionRatio: 0
+    }));
+  window.IntersectionObserver.dispatchEntriesForInstance(1, makeNewEntries);
+
+  await delay(100);
+
+  // No work was done
+  expect(spy).not.toHaveBeenCalled();
+
+  spy.mockRestore();
+});
+
+it("does not set state after unmounting", async () => {
+  window.IntersectionObserver = FakeIntersectionObserver;
+
+  const setStateSpy = jest.spyOn(AuthorProfileContent.prototype, "setState");
+
+  const component = mount(
+    <AuthorProfileContent
+      articles={results.data.author.articles.list.slice(0, 5)}
+      author={authorProfileFixture.data.author}
+      slug="fiona-hamilton"
+      page={1}
+      pageSize={3}
+      imageRatio={3 / 2}
+      onTwitterLinkPress={() => {}}
+      onArticlePress={() => {}}
+    />
+  );
+
+  const makeEntries = nodes =>
+    [...nodes].map((node, indx) => ({
+      target: node,
+      intersectionRatio: indx === 0 ? 0.75 : 0
+    }));
+  window.IntersectionObserver.dispatchEntriesForInstance(1, makeEntries);
+
+  await delay(20);
+
+  const makeNewEntries = nodes =>
+    [...nodes].map((node, indx) => ({
+      target: node,
+      intersectionRatio: indx === 0 ? 0.25 : 0.75
+    }));
+  window.IntersectionObserver.dispatchEntriesForInstance(1, makeNewEntries);
+
+  await delay(0);
+
+  component.unmount();
+
+  await delay(100);
+
+  expect(setStateSpy.mock.calls.length).toBe(0);
+
+  setStateSpy.mockRestore();
+});
+
+it("disconnects from the IntersectionObserver when unmounting", async () => {
+  window.IntersectionObserver = FakeIntersectionObserver;
+
+  const disconnectSpy = jest.spyOn(
+    window.IntersectionObserver.prototype,
+    "disconnect"
+  );
+
+  const component = mount(
+    <AuthorProfileContent
+      articles={results.data.author.articles.list.slice(0, 5)}
+      author={authorProfileFixture.data.author}
+      slug="fiona-hamilton"
+      page={1}
+      pageSize={3}
+      imageRatio={3 / 2}
+      onTwitterLinkPress={() => {}}
+      onArticlePress={() => {}}
+    />
+  );
+
+  component.unmount();
+
+  expect(disconnectSpy).toHaveBeenCalled();
+
+  disconnectSpy.mockRestore();
+});
+
+it("does not throw when unmounting with no IntersectionObserver", async () => {
+  delete window.IntersectionObserver;
+
+  const component = mount(
+    <AuthorProfileContent
+      articles={results.data.author.articles.list.slice(0, 5)}
+      author={authorProfileFixture.data.author}
+      slug="fiona-hamilton"
+      page={1}
+      pageSize={3}
+      imageRatio={3 / 2}
+      onTwitterLinkPress={() => {}}
+      onArticlePress={() => {}}
+    />
+  );
+
+  expect(component.unmount.bind(component)).not.toThrow();
+});
+
 it("emits scroll tracking events for author profile content", () => {
   window.IntersectionObserver = FakeIntersectionObserver;
   const reporter = jest.fn();
@@ -241,7 +433,13 @@ it("emits scroll tracking events for author profile content", () => {
     }
   );
 
-  window.IntersectionObserver.dispatchEntriesForInstance(0);
+  const makeEntries = nodes =>
+    [...nodes].map((node, indx) => ({
+      target: node,
+      isIntersecting: indx === 0
+    }));
+
+  window.IntersectionObserver.dispatchEntriesForInstance(0, makeEntries);
 
   expect(reporter).toHaveBeenCalledWith(
     expect.objectContaining({

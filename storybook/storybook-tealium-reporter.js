@@ -1,7 +1,5 @@
 import { Platform } from "react-native";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { action } from "@storybook/addon-actions";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import tealiumReporter from "../packages/tracking/tealium/tealium-reporter";
 
 const trackingConfig = {

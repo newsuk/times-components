@@ -1,5 +1,4 @@
 import React from "react";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { decorateAction, action } from "@storybook/addon-actions";
 import { withTrackingContext } from "@times-components/tracking";
 // eslint-disable-next-line import/no-extraneous-dependencies

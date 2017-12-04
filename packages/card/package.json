@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "0.11.0",
+  "version": "0.11.1",
   "main": "card",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@storybook/react-native": "3.2.11",
     "@times-components/jest-configurator": "0.0.8",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",

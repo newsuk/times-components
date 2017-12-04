@@ -9,7 +9,7 @@ const gradientStyles = StyleSheet.create({
   headerContainer: {
     height: 24,
     marginBottom: 10,
-    maxWidth: 400
+    maxWidth: 300
   },
   textContainer: {
     height: 10,
@@ -44,7 +44,7 @@ const Loading = ({ imageRatio }) => {
 };
 
 Loading.defaultProps = {
-  imageRatio: 1
+  imageRatio: 3 / 2
 };
 
 Loading.propTypes = {
