@@ -1,9 +1,10 @@
 import React from "react";
 import { Text } from "react-native";
-import { ApolloClient, IntrospectionFragmentMatcher, gql } from "react-apollo";
-import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";
+// eslint-disable-next-line import/no-unresolved, import/no-extraneous-dependencies
+import { addTypenameToDocument } from "apollo-utilities";
+import gql from "graphql-tag";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { addTypenameToDocument } from "apollo-client";
+import { MockedProvider } from "@times-components/utils/graphql";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "../../storybook/storiesOfOverloader";
 import connectGraphql, {
@@ -96,36 +97,8 @@ storiesOf("Provider", module)
       }
     ];
 
-    const networkInterface = mockNetworkInterface(...mocks);
-
-    const fragmentMatcher = new IntrospectionFragmentMatcher({
-      introspectionQueryResultData: {
-        __schema: {
-          types: [
-            {
-              kind: "UNION",
-              name: "Media",
-              possibleTypes: [
-                {
-                  name: "Image"
-                },
-                {
-                  name: "Video"
-                }
-              ]
-            }
-          ]
-        }
-      }
-    });
-
-    const client = new ApolloClient({
-      networkInterface,
-      fragmentMatcher
-    });
-
     return (
-      <MockedProvider mocks={mocks} client={client}>
+      <MockedProvider mocks={mocks}>
         <AuthorProfileProvider
           slug="fiona-hamilton"
           pageSize={3}
@@ -150,36 +123,8 @@ storiesOf("Provider", module)
       }
     ];
 
-    const networkInterface = mockNetworkInterface(...mocks);
-
-    const fragmentMatcher = new IntrospectionFragmentMatcher({
-      introspectionQueryResultData: {
-        __schema: {
-          types: [
-            {
-              kind: "UNION",
-              name: "Media",
-              possibleTypes: [
-                {
-                  name: "Image"
-                },
-                {
-                  name: "Video"
-                }
-              ]
-            }
-          ]
-        }
-      }
-    });
-
-    const client = new ApolloClient({
-      networkInterface,
-      fragmentMatcher
-    });
-
     return (
-      <MockedProvider mocks={mocks} client={client}>
+      <MockedProvider mocks={mocks}>
         <ArticleProvider id="3107c018-cb60-11e4-81dd-064fe933cd41">
           {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
         </ArticleProvider>

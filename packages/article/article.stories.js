@@ -3,10 +3,10 @@ import React from "react";
 import { Platform } from "react-native";
 
 import { ArticleProvider } from "@times-components/provider";
-import { ApolloClient, IntrospectionFragmentMatcher } from "react-apollo";
-import { MockedProvider, mockNetworkInterface } from "react-apollo/test-utils";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { addTypenameToDocument } from "apollo-client";
+import { MockedProvider } from "@times-components/utils/graphql";
+// eslint-disable-next-line import/no-extraneous-dependencies, import/no-unresolved
+import { addTypenameToDocument } from "apollo-utilities";
 import { query as articleQuery } from "@times-components/provider/article-provider";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "../../storybook/storiesOfOverloader";
@@ -35,34 +35,6 @@ const mocks = [
     result: fullArticleTypenameFixture
   }
 ];
-
-const fragmentMatcher = new IntrospectionFragmentMatcher({
-  introspectionQueryResultData: {
-    __schema: {
-      types: [
-        {
-          kind: "UNION",
-          name: "Media",
-          possibleTypes: [
-            {
-              name: "Image"
-            },
-            {
-              name: "Video"
-            }
-          ]
-        }
-      ]
-    }
-  }
-});
-
-const networkInterface = mockNetworkInterface(...mocks);
-
-const client = new ApolloClient({
-  networkInterface,
-  fragmentMatcher
-});
 
 storiesOf("Article", module)
   .add("Default", () => {
@@ -100,7 +72,7 @@ storiesOf("Article", module)
     return <Article {...props} />;
   })
   .add("With Provider", () => (
-    <MockedProvider mocks={mocks} client={client}>
+    <MockedProvider mocks={mocks}>
       <ArticleProvider id="198c4b2f-ecec-4f34-be53-c89f83bc1b44">
         {({ article, isLoading, error }) => (
           <Article
