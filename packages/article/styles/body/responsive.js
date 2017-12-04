@@ -10,7 +10,7 @@ export const ParagraphContainer = styled(View)`
 
 export const Paragraph = styled(Text)`
   color: "#333333";
-  font-family: "TimesDigitalW04";
+  font-family: "TimesDigitalW04-Regular";
   line-height: 26px;
   font-size: 17px;
   line-height: 26px;
