@@ -11,8 +11,6 @@ jest.mock("react-native", () => {
   return reactNative;
 });
 
-jest.mock("WebView", () => "WebView");
-
 describe("Article test on ios", () => {
   shared();
 });
