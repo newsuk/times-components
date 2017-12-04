@@ -15,14 +15,15 @@ const ratioTextToFloat = s => {
   return !Number.isNaN(ratio) ? ratio : 1;
 };
 
-const ArticleListProviderWithPageState = withPageState(ArticleListProvider);
 const AuthorProfile = ({
   author,
   error,
   isLoading,
   onArticlePress,
   onTwitterLinkPress,
-  page: initPage,
+  page,
+  onNext,
+  onPrev,
   pageSize: initPageSize,
   slug
 }) => {
@@ -34,17 +35,14 @@ const AuthorProfile = ({
     author || {};
 
   return (
-    <ArticleListProviderWithPageState
+    <ArticleListProvider
       articleImageRatio="3:2"
       slug={slug}
-      page={initPage}
+      page={page}
       pageSize={initPageSize}
     >
       {({
         author: data,
-        onNext,
-        onPrev,
-        page,
         pageSize,
         isLoading: articlesLoading,
         variables: { imageRatio }
@@ -79,7 +77,7 @@ const AuthorProfile = ({
           />
         );
       }}
-    </ArticleListProviderWithPageState>
+    </ArticleListProvider>
   );
 };
 
@@ -90,6 +88,8 @@ AuthorProfile.defaultProps = {
   onArticlePress: () => {},
   onTwitterLinkPress: () => {},
   page: 1,
+  onNext: () => {},
+  onPrev: () => {},
   pageSize: 10
 };
 
@@ -104,17 +104,22 @@ AuthorProfile.propTypes = {
     twitter: PropTypes.string
   }),
   page: PropTypes.number,
+  onNext: PropTypes.func,
+  onPrev: PropTypes.func,
   pageSize: PropTypes.number,
   onTwitterLinkPress: PropTypes.func,
   onArticlePress: PropTypes.func,
   slug: PropTypes.string.isRequired
 };
 
-export default withTrackingContext(AuthorProfile, {
+const AuthorProfileWithTracking = withTrackingContext(AuthorProfile, {
   getAttrs: ({ author, page, pageSize } = {}) => ({
     authorName: author && author.name,
     page,
-    pageSize
+    pageSize,
+    articlesCount: get(author, "articles.count", 0)
   }),
   trackingObject: "AuthorProfile"
 });
+
+export default withPageState(AuthorProfileWithTracking);

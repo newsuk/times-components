@@ -1,6 +1,6 @@
 {
   "name": "@times-components/link",
-  "version": "0.10.8",
+  "version": "0.11.0",
   "description": "component to handle links and navigation",
   "main": "link",
   "scripts": {
@@ -47,7 +47,7 @@
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",
-    "babel-loader": "7.0.0",
+    "babel-loader": "7.1.2",
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
@@ -69,7 +69,7 @@
   "dependencies": {
     "lodash.pick": "4.4.0",
     "prop-types": "15.6.0",
-    "react-native-web": "0.1.7"
+    "react-native-web": "0.1.14"
   },
   "peerDependencies": {
     "react": ">=16",

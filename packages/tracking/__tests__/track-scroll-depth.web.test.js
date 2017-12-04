@@ -7,7 +7,7 @@ import withTestContext from "./test-tracking-context";
 import sharedTrackingTests from "./shared-tracking-tests";
 
 class FakeIntersectionObserver {
-  static clearObservering() {
+  static clearObserving() {
     FakeIntersectionObserver.observing.splice(0);
   }
   static dispatchObservedAll() {
@@ -26,7 +26,7 @@ class FakeIntersectionObserver {
     this.constructor.observing.push(element);
   }
   disconnect() {
-    this.constructor.clearObservering();
+    this.constructor.clearObserving();
   }
 }
 FakeIntersectionObserver.observing = [];
@@ -86,7 +86,7 @@ describe("WithTrackScrollDepth", () => {
 
     global.window.document.getElementById = realGetElementById;
 
-    FakeIntersectionObserver.clearObservering();
+    FakeIntersectionObserver.clearObserving();
   });
 
   it("tracks scroll depth", () => {

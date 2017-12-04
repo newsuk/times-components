@@ -1,6 +1,5 @@
 /* eslint-env jest */
 
-import "jsdom";
 import React from "react";
 import Enzyme, { shallow } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
@@ -124,12 +123,6 @@ const withMockProvider = child => (
 );
 
 export default AuthorProfileContent => {
-  it("renders profile", () => {
-    const wrapper = shallow(<AuthorProfile {...props} />).dive();
-
-    expect(wrapper).toMatchSnapshot();
-  });
-
   it("renders profile content", () => {
     const component = renderer.create(
       withMockProvider(
@@ -361,6 +354,7 @@ export default AuthorProfileContent => {
       action: "Viewed",
       attrs: expect.objectContaining({
         authorName: "Fiona Hamilton",
+        articlesCount: 20,
         page: 1,
         pageSize: 10
       })

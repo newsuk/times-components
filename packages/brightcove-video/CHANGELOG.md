@@ -1,7 +1,18 @@
 # Change Log
 
 All notable changes to this project will be documented in this file.
-See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+<a name="1.8.0"></a>
+# [1.8.0](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.7.7...@times-components/brightcove-video@1.8.0) (2017-12-03)
+
+
+### Features
+
+* use Yarn Workspaces ([55a7b88](https://github.com/newsuk/times-components/commit/55a7b88))
+
+
+
 
 <a name="1.7.7"></a>
 ## [1.7.7](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.7.6...@times-components/brightcove-video@1.7.7) (2017-11-24)

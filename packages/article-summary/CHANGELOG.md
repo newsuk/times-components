@@ -1,7 +1,18 @@
 # Change Log
 
 All notable changes to this project will be documented in this file.
-See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.8.13...@times-components/article-summary@0.9.0) (2017-12-03)
+
+
+### Features
+
+* use Yarn Workspaces ([55a7b88](https://github.com/newsuk/times-components/commit/55a7b88))
+
+
+
 
 <a name="0.8.13"></a>
 ## [0.8.13](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.8.12...@times-components/article-summary@0.8.13) (2017-11-24)

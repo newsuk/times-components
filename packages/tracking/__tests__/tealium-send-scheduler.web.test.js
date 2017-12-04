@@ -83,7 +83,7 @@ describe("TealiumSendScheduler", () => {
     const realRequestIdleCallback = global.window.requestIdleCallback;
 
     beforeEach(() => {
-      global.window.utag = { view: () => {}, link: () => {} };
+      global.window.tealiumTrack = jest.fn();
       TealiumSendScheduler.scriptLoaded = true;
       sendScheduler = new TealiumSendScheduler(
         trackingOptions,
@@ -122,54 +122,41 @@ describe("TealiumSendScheduler", () => {
       expect(spy).toHaveBeenCalled();
     });
 
-    it("sends page view events", () => {
-      const spy = jest.spyOn(global.window.utag, "view");
+    it("sends events", () => {
       const e = { component: "Page" };
       sendScheduler.queue.push(e);
       sendScheduler.sendEvents({ timeRemaining: () => 50 });
-      expect(spy).toHaveBeenCalledWith(e);
-    });
-
-    it("sends link events", () => {
-      const spy = jest.spyOn(global.window.utag, "link");
-      const e = { component: "Pagination" };
-      sendScheduler.queue.push(e);
-      sendScheduler.sendEvents({ timeRemaining: () => 50 });
-      expect(spy).toHaveBeenCalledWith(e);
+      expect(global.window.tealiumTrack).toHaveBeenCalledWith(e);
     });
 
     it("sends multiple events", () => {
-      const spy = jest.spyOn(global.window.utag, "link");
       sendScheduler.queue.push(
         { component: "Pagination" },
         { component: "Pagination" }
       );
       sendScheduler.sendEvents({ timeRemaining: () => 50 });
-      expect(spy).toHaveBeenCalledTimes(2);
+      expect(global.window.tealiumTrack).toHaveBeenCalledTimes(2);
     });
 
     it("sends at least 1 event", () => {
-      const spy = jest.spyOn(global.window.utag, "link");
       sendScheduler.queue.push({ component: "Pagination" });
       sendScheduler.sendEvents({ timeRemaining: () => 0 });
-      expect(spy).toHaveBeenCalledTimes(1);
+      expect(global.window.tealiumTrack).toHaveBeenCalledTimes(1);
     });
 
     it("does not attempt to send event when nothing is in queue", () => {
-      const spy = jest.spyOn(global.window.utag, "link");
       sendScheduler.sendEvents({ timeRemaining: () => 0 });
-      expect(spy).not.toHaveBeenCalled();
+      expect(global.window.tealiumTrack).not.toHaveBeenCalled();
     });
 
     it("schedules sending events when not all events sent in timeslot", () => {
-      const linkSpy = jest.spyOn(global.window.utag, "link");
       const schedulerSpy = jest.spyOn(sendScheduler, "scheduleSendEvents");
       sendScheduler.queue.push(
         { component: "Pagination" },
         { component: "Pagination" }
       );
       sendScheduler.sendEvents({ timeRemaining: () => 0 });
-      expect(linkSpy).toHaveBeenCalledTimes(1);
+      expect(global.window.tealiumTrack).toHaveBeenCalledTimes(1);
       expect(schedulerSpy).toHaveBeenCalledTimes(1);
     });
   });
