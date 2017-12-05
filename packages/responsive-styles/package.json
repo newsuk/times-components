@@ -1,0 +1,69 @@
+{
+  "name": "@times-components/responsive-styles",
+  "version": "0.0.1",
+  "description": "Higher-order component to apply responsive styles to a component (web usage only)",
+  "main": "responsive-styles",
+  "scripts": {
+    "flow": "node_modules/flow-bin/cli.js",
+    "fmt": "prettier --write '**/*.+(js|json|md)' '!**/CHANGELOG.md'",
+    "prettier:diff": "prettier --list-different '**/*.+(js|json|md)' '!**/CHANGELOG.md'",
+    "lint": "eslint . && yarn prettier:diff",
+    "test": "jest --config='./__tests__/web/jest.config.js' --ci --bail --coverage",
+    "test:watch": "yarn test --watchAll",
+    "jester": "jest --version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "keywords": [
+    "react-native-web",
+    "react",
+    "native",
+    "web",
+    "responsive-styles",
+    "component"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "devDependencies": {
+    "@storybook/react-native": "3.2.11",
+    "@times-components/jest-configurator": "0.0.8",
+    "babel-cli": "6.24.1",
+    "babel-core": "6.24.1",
+    "babel-jest": "21.2.0",
+    "babel-loader": "7.1.2",
+    "babel-plugin-transform-react-remove-prop-types": "0.4.5",
+    "babel-preset-flow": "6.23.0",
+    "babel-preset-react-native": "1.9.2",
+    "eslint": "4.9.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-config-prettier": "2.6.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.4.0",
+    "flow-bin": "0.42.0",
+    "jest": "21.2.1",
+    "prettier": "1.8.2",
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "react-native": "0.50.1",
+    "react-test-renderer": "16.0.0",
+    "webpack": "3.3.0"
+  },
+  "dependencies": {
+    "prop-types": "15.6.0",
+    "react-native-web": "0.1.14"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16",
+    "react-native": ">=0.50"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
