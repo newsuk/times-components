@@ -8,7 +8,6 @@ import {
   articleImageDefaultPropTypes
 } from "./article-image-proptypes";
 
-// NOTE: We support only Mobile web, ios and android. Desktop to follow after responsive design
 const styles = StyleSheet.create({
   secondaryImage: {
     width: "50%"
