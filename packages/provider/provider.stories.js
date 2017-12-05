@@ -1,11 +1,9 @@
 import React from "react";
 import { Text } from "react-native";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
-// eslint-disable-next-line import/no-unresolved, import/no-extraneous-dependencies
+// eslint-disable-next-line import/no-unresolved
 import { addTypenameToDocument } from "apollo-utilities";
 import gql from "graphql-tag";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { MockedProvider } from "@times-components/utils/graphql";
 import connectGraphql, {
   AuthorProfileProvider,

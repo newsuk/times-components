@@ -1,4 +1,4 @@
-/* eslint-disable import/no-extraneous-dependencies, no-console */
+/* eslint-disable no-console */
 
 const { introspectionQuery } = require("graphql");
 const fetch = require("node-fetch");
