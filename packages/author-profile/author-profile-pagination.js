@@ -14,9 +14,7 @@ const styles = StyleSheet.create({
   },
   spacing: {
     flex: 1,
-    maxWidth: 800,
-    paddingLeft: 10,
-    paddingRight: 10
+    maxWidth: 800
   }
 });
 

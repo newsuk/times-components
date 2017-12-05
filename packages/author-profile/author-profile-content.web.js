@@ -22,8 +22,16 @@ const ContentContainer = withResponsiveStyles(View, {
     align-self: center;
     width: 100%;
     max-width: 680px;
+    padding-left: 10px;
+    padding-right 10px;
   `,
-  hugeUp: () => "max-width: 760px;"
+  mediumUp: () => `
+    padding-left: 0;
+    padding-right 0;
+  `,
+  hugeUp: () => `
+    max-width: 760px;
+  `
 });
 
 class AuthorProfileContent extends Component {
