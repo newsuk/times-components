@@ -1,4 +1,18 @@
-import React from "react";
-import { Text } from "react-native";
+import styled from "styled-components";
 
-export default Component => Component;
+const withResponsiveStyles = (Component, styles = {}) => styled(Component)`
+  @media (min-width: 520px) {
+    ${styles.toSmall};
+  }
+  @media (min-width: 768px) {
+    ${styles.toMedium};
+  }
+  @media (min-width: 1024px) {
+    ${styles.toWide};
+  }
+  @media (min-width: 1320px) {
+    ${styles.toHuge};
+  }
+`;
+
+export default withResponsiveStyles;

@@ -3,8 +3,13 @@ import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import withResponsiveStyles from "./responsive-styles";
 
-const Enhanced = withResponsiveStyles("div");
+const WithColours = withResponsiveStyles("div", {
+  toSmall: () => "color: red",
+  toMedium: () => "color: blue",
+  toWide: () => "color: green",
+  toHuge: () => "color: purple"
+});
 
 storiesOf("ResponsiveStyles", module).add("ResponsiveStyles", () => (
-  <Enhanced>Test</Enhanced>
+  <WithColours>Hello</WithColours>
 ));
