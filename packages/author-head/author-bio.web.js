@@ -8,8 +8,8 @@ const BioContainer = withResponsiveStyles(View, {
     max-width: 88%;
     padding-bottom: 32px;
   `,
-  toMedium: () => "max-width: 680px",
-  toHuge: () => "max-width: 760px"
+  mediumUp: () => "max-width: 680px",
+  hugeUp: () => "max-width: 760px"
 });
 
 export default props => (

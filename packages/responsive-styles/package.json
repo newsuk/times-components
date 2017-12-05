@@ -9,8 +9,7 @@
     "prettier:diff": "prettier --list-different '**/*.+(js|json|md)' '!**/CHANGELOG.md'",
     "lint": "eslint . && yarn prettier:diff",
     "test": "jest --config='./__tests__/web/jest.config.js' --ci --bail --coverage",
-    "test:watch": "yarn test --watchAll",
-    "jester": "jest --version"
+    "test:watch": "yarn test --watchAll"
   },
   "repository": {
     "type": "git",

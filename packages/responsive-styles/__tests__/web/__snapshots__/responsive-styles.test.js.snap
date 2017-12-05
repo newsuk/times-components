@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`applies styles for all breakpoints 1`] = `
+.c0 {
+  color: orange;
+}
+
 @media (min-width:520px) {
   .c0 {
     color: red;

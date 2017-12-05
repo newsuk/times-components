@@ -28,10 +28,11 @@ it("handles empty styles object", () => {
 
 it("applies styles for all breakpoints", () => {
   const WithColours = withResponsiveStyles("div", {
-    toSmall: () => "color: red",
-    toMedium: () => "color: blue",
-    toWide: () => "color: green",
-    toHuge: () => "color: yellow"
+    base: () => "color: orange;",
+    smallUp: () => "color: red;",
+    mediumUp: () => "color: blue;",
+    wideUp: () => "color: green;",
+    hugeUp: () => "color: yellow;"
   });
   const tree = renderer.create(<WithColours>Foo</WithColours>).toJSON();
 
@@ -40,7 +41,7 @@ it("applies styles for all breakpoints", () => {
 
 it("optimises un-used breakpoints away", () => {
   const WithStyles = withResponsiveStyles("div", {
-    toMedium: () => "color: blue"
+    mediumUp: () => "color: blue;"
   });
   const tree = renderer.create(<WithStyles>Foo</WithStyles>).toJSON();
 
@@ -49,7 +50,7 @@ it("optimises un-used breakpoints away", () => {
 
 it("applies styles to custom components via className", () => {
   const BlueHello = withResponsiveStyles(Hello, {
-    toMedium: () => "color: blue"
+    mediumUp: () => "color: blue;"
   });
   const tree = renderer.create(<BlueHello>Foo</BlueHello>).toJSON();
 
@@ -58,7 +59,9 @@ it("applies styles to custom components via className", () => {
 
 it("supports responsive styles based on props", () => {
   const ResponsiveHello = withResponsiveStyles(Hello, {
-    toMedium: props => (props.special ? "color: red" : "color: blue")
+    mediumUp: props => `
+      color: ${props.special ? "red;" : "blue"};
+    `
   });
   const tree = renderer
     .create(<ResponsiveHello special>Foo</ResponsiveHello>)
