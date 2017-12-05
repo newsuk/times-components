@@ -23,7 +23,8 @@ const ContentContainer = withResponsiveStyles(View, {
     width: 100%;
     max-width: 680px;
     padding-left: 10px;
-    padding-right 10px;
+    padding-right: 10px;
+    padding-bottom: 32px;
   `,
   mediumUp: () => `
     padding-left: 0;
