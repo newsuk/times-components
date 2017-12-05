@@ -15,11 +15,12 @@ const ArticleMeta = ({ byline, publishedTime, publicationName, style }) => (
         <ArticleByline ast={byline} WrapperComponent={MetaElement} />
       </View>
       <View style={[styles.articleMetaElement]}>
-        <DatePublication
-          date={new Date(publishedTime)}
-          publication={publicationName}
-          WrapperComponent={MetaElement}
-        />
+        <MetaElement style={styles.datePublication}>
+          <DatePublication
+            date={new Date(publishedTime)}
+            publication={publicationName}
+          />
+        </MetaElement>
       </View>
     </View>
   </Meta>

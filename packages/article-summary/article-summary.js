@@ -29,6 +29,12 @@ const styles = {
     lineHeight: 20,
     marginBottom: 10,
     flexWrap: "wrap"
+  },
+  datePublication: {
+    color: "#696969",
+    fontSize: 13,
+    lineHeight: 15,
+    fontFamily: "GillSansMTStd-Medium"
   }
 };
 
@@ -53,7 +59,9 @@ const ArticleSummary = props => {
       <Text style={styles.label}>{labelText}</Text>
       <Text style={styles.headline}>{headline}</Text>
       <Text style={styles.text}>{renderTrees(summary, renderer)}</Text>
-      <DatePublication date={date} publication={publication} />
+      <Text style={styles.datePublication}>
+        <DatePublication date={date} publication={publication} />
+      </Text>
     </View>
   );
 };
