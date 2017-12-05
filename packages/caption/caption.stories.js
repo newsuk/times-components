@@ -1,6 +1,5 @@
 import "react-native";
 import React from "react";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import Image from "@times-components/image";
 import { storiesOf } from "../../storybook/storiesOfOverloader";
 import Caption from "./caption";

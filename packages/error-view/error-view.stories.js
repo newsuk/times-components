@@ -7,7 +7,6 @@ import {
   ViewPropTypes,
   Text
 } from "react-native";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { decorateAction } from "@storybook/addon-actions";
 import BrightcoveVideo from "@times-components/brightcove-video";
 import PropTypes from "prop-types";
