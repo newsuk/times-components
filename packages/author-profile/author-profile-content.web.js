@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import { StyleSheet, View } from "react-native";
+import withResponsiveStyles from "@times-components/responsive-styles";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import AuthorProfileAuthorHead from "./author-profile-author-head";
 import AuthorProfileItem from "./author-profile-item";
@@ -12,15 +13,17 @@ import { normaliseWidth } from "./utils";
 
 const styles = StyleSheet.create({
   container: {
-    width: "100%",
-    paddingLeft: 10,
-    paddingRight: 10
-  },
-  contentContainer: {
-    maxWidth: 680,
-    alignSelf: "center",
     width: "100%"
   }
+});
+
+const ContentContainer = withResponsiveStyles(View, {
+  base: () => `
+    align-self: center;
+    width: 100%;
+    max-width: 680px;
+  `,
+  hugeUp: () => "max-width: 760px;"
 });
 
 class AuthorProfileContent extends Component {
@@ -164,7 +167,7 @@ class AuthorProfileContent extends Component {
           twitter={twitter}
           onTwitterLinkPress={onTwitterLinkPress}
         />
-        <View style={styles.contentContainer}>
+        <ContentContainer>
           {paginationComponent()}
           <View style={styles.container}>
             {data &&
@@ -193,7 +196,7 @@ class AuthorProfileContent extends Component {
               })}
           </View>
           {paginationComponent(true)}
-        </View>
+        </ContentContainer>
       </View>
     );
   }

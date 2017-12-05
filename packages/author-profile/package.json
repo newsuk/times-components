@@ -73,6 +73,7 @@
     "@times-components/link": "0.11.3",
     "@times-components/pagination": "0.11.4",
     "@times-components/provider": "0.17.5",
+    "@times-components/responsive-styles": "0.1.0",
     "@times-components/tracking": "0.4.4",
     "lodash.get": "4.4.2",
     "lodash.merge": "4.6.0",
