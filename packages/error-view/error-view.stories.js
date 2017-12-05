@@ -11,7 +11,6 @@ import {
 import { decorateAction } from "@storybook/addon-actions";
 import BrightcoveVideo from "@times-components/brightcove-video";
 import PropTypes from "prop-types";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "../../storybook/storiesOfOverloader";
 
 import ErrorView, { addErrorHandler } from "./error-view";

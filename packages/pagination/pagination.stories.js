@@ -3,7 +3,6 @@ import { View } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { action } from "@storybook/addon-actions";
 import { withTrackingContext } from "@times-components/tracking";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "../../storybook/storiesOfOverloader";
 import Pagination, { withPageState } from "./pagination";
 import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";

@@ -1,6 +1,5 @@
 import React from "react";
 import { View } from "react-native";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "../../storybook/storiesOfOverloader";
 import ArticleSummary from "./article-summary";
 import reviewFixture from "./fixtures/review.json";

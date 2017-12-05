@@ -1,5 +1,4 @@
 import React from "react";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "../../storybook/storiesOfOverloader";
 import DatePublication from "./date-publication";
 

@@ -1,7 +1,6 @@
 import React from "react";
 import { decorateAction, action } from "@storybook/addon-actions";
 import { withTrackingContext } from "@times-components/tracking";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "../../storybook/storiesOfOverloader";
 import AuthorHead from "./author-head";
 import LateralSpacingDecorator from "../../storybook/decorators/lateral-spacing";

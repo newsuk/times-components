@@ -7,7 +7,6 @@ import { MockedProvider } from "@times-components/utils/graphql";
 // eslint-disable-next-line import/no-unresolved
 import { addTypenameToDocument } from "apollo-utilities";
 import { query as articleQuery } from "@times-components/provider/article-provider";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "../../storybook/storiesOfOverloader";
 import Article from "./article";
 
