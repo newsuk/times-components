@@ -2,6 +2,7 @@ import React from "react";
 import { Text } from "react-native";
 import format from "date-fns/format";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 
 const { style: TextPropTypesStyle } = Text.propTypes;
 
@@ -34,8 +35,16 @@ DatePublication.propTypes = {
   date: PropTypes.instanceOf(Date),
   publication: PropTypes.oneOf(Object.keys(publications)),
   style: TextPropTypesStyle,
-  WrapperComponent: PropTypes.func
+  WrapperComponent: (props, propName) => {
+    const styledCheck = styled(Text) ``;
+    if (props[propName] !== Text && props[propName].target !== styledCheck.target) {
+      return new Error('Not a text');
+    }
+    return null;
+  }
 };
+
+
 
 DatePublication.defaultProps = {
   date: null,
