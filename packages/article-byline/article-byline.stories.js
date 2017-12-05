@@ -6,9 +6,6 @@ import ArticleByline from "./article-byline";
 const authorsAST = require("./fixtures/authors.json");
 
 const bylineStyles = {
-  byline: {
-    color: "blue"
-  },
   link: {
     color: "red",
     textDecorationLine: "none"

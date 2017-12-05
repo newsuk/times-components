@@ -11,10 +11,12 @@ const { style: ViewStylePropTypes } = ViewPropTypes;
 const ArticleMeta = ({ byline, publishedTime, publicationName, style }) => (
   <Meta style={[styles.articleMiddleContainer, ...style]}>
     <View style={styles.articleMeta}>
-      <View style={[styles.articleMetaElement]}>
-        <ArticleByline ast={byline} WrapperComponent={MetaElement} />
+      <View style={styles.articleMetaElement}>
+        <MetaElement style={styles.byline}>
+          <ArticleByline ast={byline} />
+        </MetaElement>
       </View>
-      <View style={[styles.articleMetaElement]}>
+      <View style={styles.articleMetaElement}>
         <MetaElement style={styles.datePublication}>
           <DatePublication
             date={new Date(publishedTime)}

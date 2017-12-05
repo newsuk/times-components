@@ -1,5 +1,5 @@
 /* eslint-env jest */
-
+import "raf/polyfill";
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
@@ -8,16 +8,13 @@ import ArticleByline from "../article-byline";
 const authorsAST = require("../fixtures/authors.json");
 
 const bylineStyles = {
-  byline: {
-    color: "blue"
-  },
   link: {
     color: "red",
     textDecorationLine: "underline"
   }
 };
 
-module.exports = () => {
+describe('Article Byline Tests', () => {
   it("renders correctly with a single author", () => {
     const tree = renderer
       .create(<ArticleByline ast={authorsAST.singleAuthor} />)
@@ -73,4 +70,4 @@ module.exports = () => {
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
-};
+});
