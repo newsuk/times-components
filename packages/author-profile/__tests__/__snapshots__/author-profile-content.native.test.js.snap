@@ -520,8 +520,6 @@ exports[`renders profile content 1`] = `
               Object {
                 "flex": 1,
                 "maxWidth": 800,
-                "paddingLeft": 10,
-                "paddingRight": 10,
               }
             }
           >
@@ -3835,8 +3833,6 @@ exports[`renders profile content 1`] = `
             Object {
               "flex": 1,
               "maxWidth": 800,
-              "paddingLeft": 10,
-              "paddingRight": 10,
             }
           }
         >
@@ -4238,8 +4234,6 @@ exports[`renders profile content component 1`] = `
               Object {
                 "flex": 1,
                 "maxWidth": 800,
-                "paddingLeft": 10,
-                "paddingRight": 10,
               }
             }
           >
@@ -5142,8 +5136,6 @@ exports[`renders profile content component 1`] = `
             Object {
               "flex": 1,
               "maxWidth": 800,
-              "paddingLeft": 10,
-              "paddingRight": 10,
             }
           }
         >
@@ -6037,8 +6029,6 @@ exports[`renders profile empty 1`] = `
               Object {
                 "flex": 1,
                 "maxWidth": 800,
-                "paddingLeft": 10,
-                "paddingRight": 10,
               }
             }
           >
@@ -6129,8 +6119,6 @@ exports[`renders profile empty 1`] = `
             Object {
               "flex": 1,
               "maxWidth": 800,
-              "paddingLeft": 10,
-              "paddingRight": 10,
             }
           }
         >
@@ -6525,8 +6513,6 @@ exports[`renders profile loading 1`] = `
               Object {
                 "flex": 1,
                 "maxWidth": 800,
-                "paddingLeft": 10,
-                "paddingRight": 10,
               }
             }
           >
@@ -6917,8 +6903,6 @@ exports[`renders profile loading 1`] = `
             Object {
               "flex": 1,
               "maxWidth": 800,
-              "paddingLeft": 10,
-              "paddingRight": 10,
             }
           }
         >
