@@ -1,11 +1,19 @@
+import React from "react";
+import { View } from "react-native";
 import Bio from "./author-bio.base";
 import withResponsiveStyles from "./responsive-styles";
 
-export default withResponsiveStyles(Bio, {
-  medium() {
-    return "max-width: 680px";
-  },
-  huge() {
-    return "max-width: 760px";
-  }
+const BioContainer = withResponsiveStyles(View, {
+  base: () => `
+    max-width: 88%;
+    padding-bottom: 32px;
+  `,
+  medium: () => "max-width: 680px",
+  huge: () => "max-width: 760px"
 });
+
+export default props => (
+  <BioContainer>
+    <Bio {...props} />
+  </BioContainer>
+);

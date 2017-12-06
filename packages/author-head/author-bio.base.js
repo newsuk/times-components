@@ -9,22 +9,15 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 16,
     lineHeight: 26,
-    color: "#333",
-    maxWidth: "88%",
-    paddingBottom: 32
+    color: "#333"
   }
 });
 
-const Bio = ({ bio, className }) => (
-  <Text className={className} style={styles.bio}>
-    {renderTrees(bio)}
-  </Text>
-);
+const Bio = ({ bio }) => <Text style={styles.bio}>{renderTrees(bio)}</Text>;
 
 Bio.propTypes = {
-  bio: PropTypes.arrayOf(treePropType),
-  className: PropTypes.string
+  bio: PropTypes.arrayOf(treePropType)
 };
-Bio.defaultProps = { bio: [], className: "" };
+Bio.defaultProps = { bio: [] };
 
 export default Bio;
