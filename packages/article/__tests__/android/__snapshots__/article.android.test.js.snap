@@ -8433,7 +8433,9 @@ exports[`Article test on android renders full article 1`] = `
                     Object {
                       "paddingTop": 10,
                     },
-                    undefined,
+                    Object {
+                      "paddingLeft": 10,
+                    },
                   ]
                 }
               >

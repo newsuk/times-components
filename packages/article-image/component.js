@@ -1,10 +1,8 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 import Image from "@times-components/image";
+import Caption from "./captionComponent";
 import CaptionPrimary from "./caption-primary";
-import CaptionSecondary from "./caption-secondary";
-import CaptionInline from "./caption-inline";
-
 
 import {
   articleImagePropTypes,
@@ -30,28 +28,23 @@ const styles = StyleSheet.create({
   }
 });
 
-const captionChoser = (display, caption, credits) => {
-  switch (display) {
-    case "secondary":
-      return <CaptionSecondary caption={caption} credits={credits} display={display}/>;
-    case "inline":
-      return <CaptionInline caption={caption} credits={credits} display={display}/>;
-    default:
-      return <CaptionPrimary caption={caption} credits={credits} display={display}/>;
+const getCaption = (display, caption, credits) => {
+  if (display === "primary") {
+    return (
+      <CaptionPrimary caption={caption} credits={credits} display={display} />
+    );
   }
+
+  return <Caption caption={caption} credits={credits} display={display} />;
 };
 
 const renderCaption = (display, caption, credits) => {
   if (!caption && !credits) {
     return null;
   }
-  const CaptionComponent = captionChoser(display, caption, credits);
+  const CaptionComponent = getCaption(display, caption, credits);
 
-  return (
-    <View style={styles[`${display}Caption`]}>
-      {CaptionComponent}
-    </View>
-  );
+  return <View style={styles[`${display}Caption`]}>{CaptionComponent}</View>;
 };
 
 const ArticleImage = ({ imageOptions, captionOptions }) => {

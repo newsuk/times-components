@@ -751,7 +751,9 @@ exports[`renders primary image correctly 1`] = `
             Object {
               "paddingTop": 10,
             },
-            undefined,
+            Object {
+              "paddingLeft": 10,
+            },
           ]
         }
       >
