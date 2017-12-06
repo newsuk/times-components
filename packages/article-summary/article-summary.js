@@ -59,7 +59,11 @@ const ArticleSummary = props => {
       <Text style={styles.label}>{labelText}</Text>
       <Text style={styles.headline}>{headline}</Text>
       <Text style={styles.text}>{renderTrees(summary, renderer)}</Text>
-      <Text style={styles.datePublication}>
+      <Text
+        style={styles.datePublication}
+        accessibilityLabel="datePublication"
+        testID="datePublication"
+      >
         <DatePublication date={date} publication={publication} />
       </Text>
     </View>
