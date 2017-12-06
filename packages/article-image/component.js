@@ -30,9 +30,7 @@ const styles = StyleSheet.create({
 
 const getCaption = (display, caption, credits) => {
   if (display === "primary") {
-    return (
-      <CaptionPrimary caption={caption} credits={credits} display={display} />
-    );
+    return <CaptionPrimary caption={caption} credits={credits} display={display} />;
   }
 
   return <Caption caption={caption} credits={credits} display={display} />;
