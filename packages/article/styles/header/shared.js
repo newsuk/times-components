@@ -2,8 +2,10 @@ const sharedStyles = {
   articleHeadLineText: {
     fontSize: 30,
     lineHeight: 32,
-    color: "#000000",
-    marginBottom: 7
+    color: "#1d1d1b",
+    marginBottom: 7,
+    fontFamily: "TimesModern-Bold",
+    fontWeight: 400
   },
   standFirst: {
     fontSize: 20,

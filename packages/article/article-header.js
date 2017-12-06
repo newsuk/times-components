@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ArticleHeadline from "@times-components/article-headline";
 import {
   NewArticleFlag,
   SponsoredArticleFlag,
@@ -67,11 +66,9 @@ const renderLabel = label => {
 const ArticleHeader = ({ label, headline, standfirst, flags, style }) => (
   <View style={[...style]}>
     {renderLabel(label)}
-    <ArticleHeadline
-      text={headline}
-      style={styles.articleHeadLineText}
-      WrapperComponent={HeadlineContainer}
-    />
+    <HeadlineContainer style={styles.articleHeadLineText}>
+      {headline}
+    </HeadlineContainer>
     {renderStandfirst(standfirst)}
     {renderFlags(flags)}
   </View>
