@@ -273,14 +273,16 @@ exports[`renders profile content 1`] = `
               accessible={true}
               allowFontScaling={true}
               aria-level="2"
-              className=""
               ellipsizeMode="tail"
               style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "TimesDigitalW04-RegularSC",
-                  "fontSize": 14,
-                }
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
+                    "fontSize": 14,
+                  },
+                  Object {},
+                ]
               }
             >
               legal editor
@@ -4180,14 +4182,16 @@ exports[`renders profile content component 1`] = `
               accessible={true}
               allowFontScaling={true}
               aria-level="2"
-              className=""
               ellipsizeMode="tail"
               style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "TimesDigitalW04-RegularSC",
-                  "fontSize": 14,
-                }
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
+                    "fontSize": 14,
+                  },
+                  Object {},
+                ]
               }
             >
               
@@ -5959,14 +5963,16 @@ exports[`renders profile empty 1`] = `
               accessible={true}
               allowFontScaling={true}
               aria-level="2"
-              className=""
               ellipsizeMode="tail"
               style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "TimesDigitalW04-RegularSC",
-                  "fontSize": 14,
-                }
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
+                    "fontSize": 14,
+                  },
+                  Object {},
+                ]
               }
             >
               
@@ -6363,14 +6369,16 @@ exports[`renders profile loading 1`] = `
               accessible={true}
               allowFontScaling={true}
               aria-level="2"
-              className=""
               ellipsizeMode="tail"
               style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "TimesDigitalW04-RegularSC",
-                  "fontSize": 14,
-                }
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
+                    "fontSize": 14,
+                  },
+                  Object {},
+                ]
               }
             >
               legal editor
@@ -6993,14 +7001,16 @@ exports[`renders the author head 1`] = `
       accessible={true}
       allowFontScaling={true}
       aria-level="2"
-      className=""
       ellipsizeMode="tail"
       style={
-        Object {
-          "color": "#696969",
-          "fontFamily": "TimesDigitalW04-RegularSC",
-          "fontSize": 14,
-        }
+        Array [
+          Object {
+            "color": "#696969",
+            "fontFamily": "TimesDigitalW04-RegularSC",
+            "fontSize": 14,
+          },
+          Object {},
+        ]
       }
     >
       
