@@ -17,7 +17,9 @@
     "test:watch": "jest --projects */**/jest.config.js --watchAll",
     "fmt": "prettier --write '**/*.+(js|json|md)'",
     "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
-    "lint": "eslint . && yarn prettier:diff"
+    "lint": "eslint . && yarn prettier:diff",
+    "dextrose-copy": "for file in *stories*.js; do cp -pi \"$file\" \"${file%.*}.dextrose.tmp.js\"; done",
+    "dextrose-clean": "rm -rf *dextrose.tmp*"
   },
   "repository": {
     "type": "git",
