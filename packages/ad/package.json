@@ -10,8 +10,8 @@
     "fmt": "prettier --write '**/*.+(js|json|md)'",
     "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
     "lint": "eslint . && yarn prettier:diff",
-    "dextrose-copy": "../../lib/functional_tests/generate-dextrose-stories.sh",
-    "dextrose-clean": "rm -rf *dextrose.tmp*"
+    "dextrose-stories": "dextrose-stories",
+    "dextrose-clean": "dextrose-clean"
   },
   "jest": {
     "preset": "react-native",
@@ -44,6 +44,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.2.11",
+    "@times-components/utils": "0.0.2",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",

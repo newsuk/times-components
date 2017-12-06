@@ -7,6 +7,10 @@
     "fmt": "prettier --write '**/*.+(js|json|md)'",
     "lint": "eslint . && yarn prettier:diff"
   },
+  "bin": {
+    "dextrose-stories": "./scripts/dextrose-stories.sh",
+    "dextrose-clean": "./scripts/dextrose-clean.sh"
+  },
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "repository": {
     "type": "git",

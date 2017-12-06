@@ -18,8 +18,8 @@
     "fmt": "prettier --write '**/*.+(js|json|md)'",
     "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
     "lint": "eslint . && yarn prettier:diff",
-    "dextrose-copy": "for file in *stories*.js; do cp -pi \"$file\" \"${file%.*}.dextrose.tmp.js\" && sed -i 's/@storybook\/react-native/..\/..\/storybook\/storiesOfOverloader'; done",
-    "dextrose-clean": "rm -rf *dextrose.tmp*"
+    "dextrose-stories": "dextrose-stories",
+    "dextrose-clean": "dextrose-clean"
   },
   "repository": {
     "type": "git",

@@ -9,7 +9,7 @@ adb reverse tcp:8081 tcp:8081
 adb reverse tcp:7811 tcp:7811
 adb reverse tcp:4723 tcp:4723
 npm run fetch-fonts
-npx lerna run dextrose-copy --since
+npx lerna run dextrose-stories --since
 npx compile-tests -d fructose
 npx rnstl --searchDir ./packages --pattern './*/*.stories.js' --outputFile ./fructose/components.js
 react-native start --root fructose &
