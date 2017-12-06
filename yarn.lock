@@ -272,6 +272,31 @@
     webpack-dev-server "^2.8.2"
     webpack-merge "^4.1.0"
 
+"@times-components/fructose@3.1.5":
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.1.5.tgz#7acf6c80ff121848e866cbff379a9a539f989d4a"
+  dependencies:
+    babel-polyfill "^6.26.0"
+    babel-preset-es2015 "^6.24.1"
+    callsite "^1.0.0"
+    commander "^2.12.2"
+    enzyme-to-json "^3.2.2"
+    express "^4.16.2"
+    html-webpack-plugin "^2.28.0"
+    jimp "^0.2.28"
+    ngrok "^2.2.24"
+    npmlog "^4.1.2"
+    pixelmatch "^4.0.2"
+    pngjs "^3.3.1"
+    prop-types "^15.6.0"
+    request "^2.82.0"
+    server-destroy "^1.0.1"
+    socket.io "^2.0.4"
+    socket.io-client "^2.0.4"
+    webpack "^3.8.1"
+    webpack-dev-server "^2.9.5"
+    webpack-merge "^4.1.1"
+
 "@types/async@2.0.45":
   version "2.0.45"
   resolved "https://registry.yarnpkg.com/@types/async/-/async-2.0.45.tgz#0cfe971d7ed5542695740338e0455c91078a0e83"
@@ -890,7 +915,7 @@ babel-core@6.24.1:
     slash "^1.0.0"
     source-map "^0.5.0"
 
-babel-core@^6.0.0, babel-core@^6.0.14, babel-core@^6.24.1, babel-core@^6.26.0, babel-core@^6.7.2:
+babel-core@6.26.0, babel-core@^6.0.0, babel-core@^6.0.14, babel-core@^6.24.1, babel-core@^6.26.0, babel-core@^6.7.2:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-core/-/babel-core-6.26.0.tgz#af32f78b31a6fcef119c87b0fd8d9753f03a0bb8"
   dependencies:
@@ -1886,7 +1911,7 @@ babel-preset-react-native@1.9.2:
     babel-plugin-transform-regenerator "^6.5.0"
     react-transform-hmr "^1.0.4"
 
-babel-preset-react-native@^4.0.0:
+babel-preset-react-native@4.0.0, babel-preset-react-native@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/babel-preset-react-native/-/babel-preset-react-native-4.0.0.tgz#3df80dd33a453888cdd33bdb87224d17a5d73959"
   dependencies:
@@ -2769,11 +2794,15 @@ command-join@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/command-join/-/command-join-2.0.0.tgz#52e8b984f4872d952ff1bdc8b98397d27c7144cf"
 
+"commander@ 2.12.1":
+  version "2.12.1"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.12.1.tgz#468635c4168d06145b9323356d1da84d14ac4a7a"
+
 commander@2.1.x, commander@~2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.1.0.tgz#d121bbae860d9992a3d517ba96f56588e47c6781"
 
-commander@2.12.x, commander@^2.11.0, commander@^2.8.1, commander@^2.9.0, commander@~2.12.1:
+commander@2.12.x, commander@^2.11.0, commander@^2.12.2, commander@^2.8.1, commander@^2.9.0, commander@~2.12.1:
   version "2.12.2"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.12.2.tgz#0f5946c427ed9ec0d91a46bb9def53e54650e555"
 
@@ -3686,6 +3715,19 @@ detox@5.8.2:
     telnet-client "0.15.3"
     ws "^1.1.1"
 
+dextrose@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.1.0.tgz#edac928107fa095ee224bf6636b04b020209c179"
+  dependencies:
+    "@times-components/fructose" "3.1.3"
+    babel-core "6.26.0"
+    babel-preset-react-native "4.0.0"
+    commander " 2.12.1"
+    npmlog "4.1.2"
+    socket.io "^2.0.4"
+    socket.io-client "^2.0.4"
+    wd "1.4.1"
+
 diff@^3.2.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/diff/-/diff-3.4.0.tgz#b1d85507daf3964828de54b37d0d73ba67dda56c"
@@ -3977,7 +4019,7 @@ enzyme-adapter-utils@^1.0.0, enzyme-adapter-utils@^1.1.0:
     object.assign "^4.0.4"
     prop-types "^15.5.10"
 
-enzyme-to-json@3.2.2:
+enzyme-to-json@3.2.2, enzyme-to-json@^3.2.2:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/enzyme-to-json/-/enzyme-to-json-3.2.2.tgz#110047c68dda97aaeb7af3cee7d995fe3d17e82a"
   dependencies:
@@ -7414,15 +7456,7 @@ npm-run-path@^2.0.0:
   dependencies:
     path-key "^2.0.0"
 
-npmlog@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/npmlog/-/npmlog-2.0.4.tgz#98b52530f2514ca90d09ec5b22c8846722375692"
-  dependencies:
-    ansi "~0.3.1"
-    are-we-there-yet "~1.1.2"
-    gauge "~1.2.5"
-
-npmlog@^4.0.2, npmlog@^4.1.2:
+npmlog@4.1.2, npmlog@^4.0.2, npmlog@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/npmlog/-/npmlog-4.1.2.tgz#08a7f2a8bf734604779a9efa4ad5cc717abb954b"
   dependencies:
@@ -7430,6 +7464,14 @@ npmlog@^4.0.2, npmlog@^4.1.2:
     console-control-strings "~1.1.0"
     gauge "~2.7.3"
     set-blocking "~2.0.0"
+
+npmlog@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/npmlog/-/npmlog-2.0.4.tgz#98b52530f2514ca90d09ec5b22c8846722375692"
+  dependencies:
+    ansi "~0.3.1"
+    are-we-there-yet "~1.1.2"
+    gauge "~1.2.5"
 
 nth-check@~1.0.1:
   version "1.0.1"
@@ -7944,7 +7986,7 @@ pngjs@2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/pngjs/-/pngjs-2.3.1.tgz#11d1e12b9cb64d63e30c143a330f4c1f567da85f"
 
-pngjs@^3.0.0, pngjs@^3.0.1, pngjs@^3.3.0:
+pngjs@^3.0.0, pngjs@^3.0.1, pngjs@^3.3.0, pngjs@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/pngjs/-/pngjs-3.3.1.tgz#8e14e6679ee7424b544334c3b2d21cea6d8c209a"
 
@@ -8615,8 +8657,8 @@ react-modal@^2.2.4:
     prop-types "^15.5.10"
 
 react-modal@^3.1.4:
-  version "3.1.6"
-  resolved "https://registry.yarnpkg.com/react-modal/-/react-modal-3.1.6.tgz#82e63f1ec86b80e242518250d066ee37fa035f8a"
+  version "3.1.7"
+  resolved "https://registry.yarnpkg.com/react-modal/-/react-modal-3.1.7.tgz#21feb937c95cd722bf2d375cada751fdc8189c0e"
   dependencies:
     exenv "^1.2.0"
     prop-types "^15.5.10"
@@ -9527,7 +9569,7 @@ socket.io-client@2.0.3:
     socket.io-parser "~3.1.1"
     to-array "0.1.4"
 
-socket.io-client@~2.0.2:
+socket.io-client@2.0.4, socket.io-client@^2.0.4, socket.io-client@~2.0.2:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/socket.io-client/-/socket.io-client-2.0.4.tgz#0918a552406dc5e540b380dcd97afc4a64332f8e"
   dependencies:
@@ -9563,6 +9605,16 @@ socket.io@2.0.3:
     object-assign "~4.1.1"
     socket.io-adapter "~1.1.0"
     socket.io-client "~2.0.2"
+    socket.io-parser "~3.1.1"
+
+socket.io@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/socket.io/-/socket.io-2.0.4.tgz#c1a4590ceff87ecf13c72652f046f716b29e6014"
+  dependencies:
+    debug "~2.6.6"
+    engine.io "~3.1.0"
+    socket.io-adapter "~1.1.0"
+    socket.io-client "2.0.4"
     socket.io-parser "~3.1.1"
 
 sockjs-client@1.1.4:
@@ -10663,7 +10715,7 @@ webpack-dev-middleware@^1.10.2, webpack-dev-middleware@^1.11.0:
     range-parser "^1.0.3"
     time-stamp "^2.0.0"
 
-webpack-dev-server@^2.8.2:
+webpack-dev-server@^2.8.2, webpack-dev-server@^2.9.5:
   version "2.9.5"
   resolved "https://registry.yarnpkg.com/webpack-dev-server/-/webpack-dev-server-2.9.5.tgz#79336fba0087a66ae491f4869f6545775b18daa8"
   dependencies:
@@ -10704,7 +10756,7 @@ webpack-hot-middleware@^2.18.0:
     querystring "^0.2.0"
     strip-ansi "^3.0.0"
 
-webpack-merge@^4.1.0:
+webpack-merge@^4.1.0, webpack-merge@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-4.1.1.tgz#f1197a0a973e69c6fbeeb6d658219aa8c0c13555"
   dependencies:
@@ -10744,7 +10796,7 @@ webpack@3.3.0:
     webpack-sources "^1.0.1"
     yargs "^6.0.0"
 
-"webpack@^2.5.1 || ^3.0.0", webpack@^3.6.0:
+"webpack@^2.5.1 || ^3.0.0", webpack@^3.6.0, webpack@^3.8.1:
   version "3.9.1"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-3.9.1.tgz#9a60aa544ed5d4d454c069e3f521aa007e02643c"
   dependencies:

@@ -7,10 +7,10 @@ import {
   ViewPropTypes,
   Text
 } from "react-native";
-import { storiesOf } from "@storybook/react-native";
 import { decorateAction } from "@storybook/addon-actions";
 import BrightcoveVideo from "@times-components/brightcove-video";
 import PropTypes from "prop-types";
+import { storiesOf } from "../../storybook/storiesOfOverloader";
 
 import ErrorView, { addErrorHandler } from "./error-view";
 

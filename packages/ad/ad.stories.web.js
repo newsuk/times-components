@@ -1,13 +1,12 @@
 /* eslint-env browser */
 import React from "react";
-import { storiesOf } from "@storybook/react-native";
-
+import { storiesOf } from "../../storybook/storiesOfOverloader";
 import Ad, { AdComposer } from "./ad.web";
 
 import Placeholder from "./placeholder";
 
 export default () =>
-  storiesOf("Ad", module)
+  storiesOf("Advertisement", module)
     .add("render one ad in article page", () => (
       // Hack, gpt map sizes don't seem to work inside iframes as such this is a
       // temporary fix, while waiting for https://github.com/storybooks/storybook/issues/862

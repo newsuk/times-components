@@ -65,3 +65,5 @@ dist
 
 fructose/components.js
 fructose/components.test.js
+
+dextrose/snappy/**

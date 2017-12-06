@@ -1,12 +1,11 @@
 import React from "react";
-import { storiesOf } from "@storybook/react-native";
 import { Text, ScrollView, View } from "react-native";
-
+import { storiesOf } from "../../storybook/storiesOfOverloader";
 import Ad from "./ad";
 import Placeholder from "./placeholder";
 
 export default () =>
-  storiesOf("Ad", module)
+  storiesOf("Advertisement", module)
     .add("render one native ad", () => (
       <ScrollView>
         <Ad code="intervention" section="article" />

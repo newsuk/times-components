@@ -1,5 +1,5 @@
 import React from "react";
-import { storiesOf } from "@storybook/react-native";
+import { storiesOf } from "../../storybook/storiesOfOverloader";
 import ArticleByline from "./article-byline";
 
 const authorsAST = require("./fixtures/authors.json");

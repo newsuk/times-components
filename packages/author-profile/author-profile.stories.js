@@ -1,5 +1,4 @@
 import React from "react";
-import { storiesOf } from "@storybook/react-native";
 import { decorateAction } from "@storybook/addon-actions";
 import { AuthorProfileProvider } from "@times-components/provider";
 import { MockedProvider } from "@times-components/utils/graphql";
@@ -7,6 +6,7 @@ import { MockedProvider } from "@times-components/utils/graphql";
 import { addTypenameToDocument } from "apollo-utilities";
 import { query as authorProfileQuery } from "@times-components/provider/author-profile-provider";
 import { query as articleListQuery } from "@times-components/provider/article-list-provider";
+import { storiesOf } from "../../storybook/storiesOfOverloader";
 import AuthorProfile from "./author-profile";
 import AuthorProfileContent from "./author-profile-content";
 import authorProfileFixture from "./fixtures/author-profile.json";
