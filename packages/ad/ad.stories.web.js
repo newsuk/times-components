@@ -1,6 +1,6 @@
 /* eslint-env browser */
 import React from "react";
-import { storiesOf } from "../../storybook/storiesOfOverloader";
+import { storiesOf } from "@storybook/react-native";
 import Ad, { AdComposer } from "./ad.web";
 
 import Placeholder from "./placeholder";

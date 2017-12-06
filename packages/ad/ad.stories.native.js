@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, ScrollView, View } from "react-native";
-import { storiesOf } from "../../storybook/storiesOfOverloader";
+import { storiesOf } from "@storybook/react-native";
 import Ad from "./ad";
 import Placeholder from "./placeholder";
 
