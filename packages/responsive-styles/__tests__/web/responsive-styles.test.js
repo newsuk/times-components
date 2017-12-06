@@ -60,7 +60,7 @@ it("applies styles to custom components via className", () => {
 it("supports responsive styles based on props", () => {
   const ResponsiveHello = withResponsiveStyles(Hello, {
     mediumUp: props => `
-      color: ${props.special ? "red;" : "blue"};
+      color: ${props.special ? "red" : "blue"};
     `
   });
   const tree = renderer
