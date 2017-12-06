@@ -1,14 +1,16 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 import Image from "@times-components/image";
-import Caption from "@times-components/caption";
+import CaptionPrimary from "./caption-primary";
+import CaptionSecondary from "./caption-secondary";
+import CaptionInline from "./caption-inline";
+
 
 import {
   articleImagePropTypes,
   articleImageDefaultPropTypes
 } from "./article-image-proptypes";
 
-// NOTE: We support only Mobile web, ios and android. Desktop to follow after responsive design
 const styles = StyleSheet.create({
   secondaryImage: {
     width: "50%"
@@ -28,26 +30,26 @@ const styles = StyleSheet.create({
   }
 });
 
-const captionStyle = {
-  secondary: {
-    container: {
-      paddingTop: 0
-    }
-  },
-  inline: {
-    container: {
-      paddingTop: 0
-    }
+const captionChoser = (display, caption, credits) => {
+  switch (display) {
+    case "secondary":
+      return <CaptionSecondary caption={caption} credits={credits} display={display}/>;
+    case "inline":
+      return <CaptionInline caption={caption} credits={credits} display={display}/>;
+    default:
+      return <CaptionPrimary caption={caption} credits={credits} display={display}/>;
   }
 };
 
-const renderCaption = (display, caption, credits, url) => {
+const renderCaption = (display, caption, credits) => {
   if (!caption && !credits) {
     return null;
   }
+  const CaptionComponent = captionChoser(display, caption, credits);
+
   return (
-    <View key={`caption-${url}`} style={styles[`${display}Caption`]}>
-      <Caption text={caption} credits={credits} style={captionStyle[display]} />
+    <View style={styles[`${display}Caption`]}>
+      {CaptionComponent}
     </View>
   );
 };
