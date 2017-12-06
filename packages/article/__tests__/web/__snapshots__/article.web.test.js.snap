@@ -3235,7 +3235,7 @@ exports[`Article test on web renders full article 1`] = `
               >
                 <img
                   alt=""
-                  src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0"
+                  src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0"
                   style={
                     Object {
                       "display": "block",

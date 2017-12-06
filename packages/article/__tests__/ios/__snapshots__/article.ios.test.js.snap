@@ -7033,7 +7033,7 @@ exports[`Article test on ios renders full article 1`] = `
             "credits": "The credits",
             "display": "primary",
             "ratio": "1500:1000",
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0",
+            "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0",
           },
           "children": Array [],
           "name": "image",
