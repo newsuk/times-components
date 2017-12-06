@@ -28,19 +28,17 @@ const styles = StyleSheet.create({
   }
 });
 
-const getCaption = (display, caption, credits) => {
-  if (display === "primary") {
-    return <CaptionPrimary caption={caption} credits={credits} display={display} />;
-  }
-
-  return <Caption caption={caption} credits={credits} display={display} />;
-};
-
 const renderCaption = (display, caption, credits) => {
   if (!caption && !credits) {
     return null;
   }
-  const CaptionComponent = getCaption(display, caption, credits);
+
+  const CaptionComponent =
+    display === "primary" ? (
+      <CaptionPrimary caption={caption} credits={credits} display={display} />
+    ) : (
+      <Caption caption={caption} credits={credits} display={display} />
+    );
 
   return <View style={styles[`${display}Caption`]}>{CaptionComponent}</View>;
 };
