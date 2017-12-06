@@ -47,14 +47,16 @@ exports[`AuthorHead test on android renders 1`] = `
       accessible={true}
       allowFontScaling={true}
       aria-level="2"
-      className=""
       ellipsizeMode="tail"
       style={
-        Object {
-          "color": "#696969",
-          "fontFamily": "TimesDigitalW04-RegularSC",
-          "fontSize": 14,
-        }
+        Array [
+          Object {
+            "color": "#696969",
+            "fontFamily": "TimesDigitalW04-RegularSC",
+            "fontSize": 14,
+          },
+          Object {},
+        ]
       }
     >
       
@@ -136,14 +138,16 @@ exports[`AuthorHead test on android renders with data 1`] = `
       accessible={true}
       allowFontScaling={true}
       aria-level="2"
-      className=""
       ellipsizeMode="tail"
       style={
-        Object {
-          "color": "#696969",
-          "fontFamily": "TimesDigitalW04-RegularSC",
-          "fontSize": 14,
-        }
+        Array [
+          Object {
+            "color": "#696969",
+            "fontFamily": "TimesDigitalW04-RegularSC",
+            "fontSize": 14,
+          },
+          Object {},
+        ]
       }
     >
       columnist
@@ -409,14 +413,16 @@ exports[`AuthorHead test on android renders without profile picture 1`] = `
       accessible={true}
       allowFontScaling={true}
       aria-level="2"
-      className=""
       ellipsizeMode="tail"
       style={
-        Object {
-          "color": "#696969",
-          "fontFamily": "TimesDigitalW04-RegularSC",
-          "fontSize": 14,
-        }
+        Array [
+          Object {
+            "color": "#696969",
+            "fontFamily": "TimesDigitalW04-RegularSC",
+            "fontSize": 14,
+          },
+          Object {},
+        ]
       }
     >
       columnist

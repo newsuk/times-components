@@ -1,7 +1,6 @@
-import styled from "styled-components";
-
+import React from "react";
 import AuthorTitle from "./author-title.base";
 
-export default styled(AuthorTitle)`
-  -webkit-font-smoothing: antialiased;
-`;
+export default props => (
+  <AuthorTitle {...props} style={{ WebkitFontSmoothing: "antialiased" }} />
+);

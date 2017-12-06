@@ -2,6 +2,8 @@ import React from "react";
 import { StyleSheet, Text } from "react-native";
 import PropTypes from "prop-types";
 
+const { propTypes: { style: TextPropTypesStyle } } = Text;
+
 const styles = StyleSheet.create({
   title: {
     fontFamily: "TimesDigitalW04-RegularSC",
@@ -10,12 +12,11 @@ const styles = StyleSheet.create({
   }
 });
 
-const Title = ({ title, className }) => (
+const Title = ({ title, style }) => (
   <Text
-    className={className}
     accessibilityRole="heading"
     aria-level="2"
-    style={styles.title}
+    style={[styles.title, style]}
   >
     {title.toLowerCase()}
   </Text>
@@ -23,12 +24,12 @@ const Title = ({ title, className }) => (
 
 Title.defaultProps = {
   title: "",
-  className: ""
+  style: {}
 };
 
 Title.propTypes = {
   title: PropTypes.string,
-  className: PropTypes.string
+  style: TextPropTypesStyle
 };
 
 export default Title;
