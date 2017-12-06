@@ -14,7 +14,7 @@ const bylineStyles = {
   }
 };
 
-describe('Article Byline Tests', () => {
+describe("Article Byline Tests", () => {
   it("renders correctly with a single author", () => {
     const tree = renderer
       .create(<ArticleByline ast={authorsAST.singleAuthor} />)

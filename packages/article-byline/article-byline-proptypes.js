@@ -6,10 +6,10 @@ export const articleBylinePropTypes = {
   ast: PropTypes.arrayOf(treePropType).isRequired,
   style: PropTypes.shape({
     link: Text.propTypes.style
-  }),
+  })
 };
 
 export const articleBylineDefaultPropTypes = {
   ast: {},
-  style: {},
+  style: {}
 };

@@ -15,7 +15,7 @@ const linkStyles = StyleSheet.create({
   }
 });
 
-const ArticleByline = ({ ast, style }) => (
+const ArticleByline = ({ ast, style }) =>
   renderTrees(ast, {
     author(key, attributes, children) {
       const url = `/profile/${attributes.slug}`;
@@ -24,14 +24,13 @@ const ArticleByline = ({ ast, style }) => (
           style={[linkStyles.link, style.link]}
           key={key}
           url={url}
-          onPress={() => { }}
+          onPress={() => {}}
         >
           {children}
         </TextLink>
       );
     }
-  })
-);
+  });
 
 ArticleByline.propTypes = articleBylinePropTypes;
 ArticleByline.defaultProps = articleBylineDefaultPropTypes;

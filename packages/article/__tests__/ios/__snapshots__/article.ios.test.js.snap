@@ -528,31 +528,20 @@ exports[`Article test on ios renders article no flags 1`] = `
           </Text>
         </View>
         <Text
-          accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
           className="sc-bdVaJa jgzvie"
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 30,
-                "fontWeight": "700",
-                "lineHeight": 32,
-                "marginBottom": 7,
-              },
-            ]
+            Object {
+              "color": "#1d1d1b",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 30,
+              "fontWeight": "700",
+              "lineHeight": 32,
+              "marginBottom": 7,
+            }
           }
-          testID="headline"
         >
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
@@ -590,6 +579,11 @@ exports[`Article test on ios renders article no flags 1`] = `
               "paddingTop": 9,
             },
             Object {
+              "borderBottomColor": "#d0cece",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+            },
+            Object {
               "paddingLeft": 10,
               "paddingRight": 10,
             },
@@ -599,100 +593,63 @@ exports[`Article test on ios renders article no flags 1`] = `
         <View
           style={
             Object {
-              "borderBottomColor": "#d0cece",
-              "borderBottomWidth": 0.5,
-              "marginBottom": 20,
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 4,
+              "paddingTop": 9,
             }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
             style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
-                },
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexDirection": "row",
-                  },
-                  undefined,
-                ]
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 14,
               }
-            >
-              <Text
-                accessibilityLabel="articleByline"
-                accessible={true}
-                allowFontScaling={true}
-                className="sc-bxivhb bZsssb"
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 14,
-                    },
-                    undefined,
-                    Object {
-                      "color": "#696969",
-                    },
-                  ]
-                }
-                testID="articleByline"
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-                </Text>
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
-                },
-              ]
             }
           >
             <Text
-              accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
-              className="sc-bxivhb bZsssb"
               ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
-              }
-              testID="datePublication"
             >
-              Friday March 13 2015
-              , The Times
+              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
-          </View>
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 4,
+              "paddingTop": 9,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Friday March 13 2015
+            , The Times
+          </Text>
         </View>
       </View>
     </View>
@@ -1452,31 +1409,20 @@ exports[`Article test on ios renders article no label 1`] = `
         }
       >
         <Text
-          accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
           className="sc-bdVaJa jgzvie"
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 30,
-                "fontWeight": "700",
-                "lineHeight": 32,
-                "marginBottom": 7,
-              },
-            ]
+            Object {
+              "color": "#1d1d1b",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 30,
+              "fontWeight": "700",
+              "lineHeight": 32,
+              "marginBottom": 7,
+            }
           }
-          testID="headline"
         >
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
@@ -1654,6 +1600,11 @@ exports[`Article test on ios renders article no label 1`] = `
               "paddingTop": 9,
             },
             Object {
+              "borderBottomColor": "#d0cece",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+            },
+            Object {
               "paddingLeft": 10,
               "paddingRight": 10,
             },
@@ -1663,100 +1614,63 @@ exports[`Article test on ios renders article no label 1`] = `
         <View
           style={
             Object {
-              "borderBottomColor": "#d0cece",
-              "borderBottomWidth": 0.5,
-              "marginBottom": 20,
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 4,
+              "paddingTop": 9,
             }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
             style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
-                },
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexDirection": "row",
-                  },
-                  undefined,
-                ]
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 14,
               }
-            >
-              <Text
-                accessibilityLabel="articleByline"
-                accessible={true}
-                allowFontScaling={true}
-                className="sc-bxivhb bZsssb"
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 14,
-                    },
-                    undefined,
-                    Object {
-                      "color": "#696969",
-                    },
-                  ]
-                }
-                testID="articleByline"
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-                </Text>
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
-                },
-              ]
             }
           >
             <Text
-              accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
-              className="sc-bxivhb bZsssb"
               ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
-              }
-              testID="datePublication"
             >
-              Friday March 13 2015
-              , The Times
+              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
-          </View>
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 4,
+              "paddingTop": 9,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Friday March 13 2015
+            , The Times
+          </Text>
         </View>
       </View>
     </View>
@@ -2513,31 +2427,20 @@ exports[`Article test on ios renders article no label no flags 1`] = `
         }
       >
         <Text
-          accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
           className="sc-bdVaJa jgzvie"
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 30,
-                "fontWeight": "700",
-                "lineHeight": 32,
-                "marginBottom": 7,
-              },
-            ]
+            Object {
+              "color": "#1d1d1b",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 30,
+              "fontWeight": "700",
+              "lineHeight": 32,
+              "marginBottom": 7,
+            }
           }
-          testID="headline"
         >
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
@@ -2575,6 +2478,11 @@ exports[`Article test on ios renders article no label no flags 1`] = `
               "paddingTop": 9,
             },
             Object {
+              "borderBottomColor": "#d0cece",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+            },
+            Object {
               "paddingLeft": 10,
               "paddingRight": 10,
             },
@@ -2584,100 +2492,63 @@ exports[`Article test on ios renders article no label no flags 1`] = `
         <View
           style={
             Object {
-              "borderBottomColor": "#d0cece",
-              "borderBottomWidth": 0.5,
-              "marginBottom": 20,
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 4,
+              "paddingTop": 9,
             }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
             style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
-                },
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexDirection": "row",
-                  },
-                  undefined,
-                ]
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 14,
               }
-            >
-              <Text
-                accessibilityLabel="articleByline"
-                accessible={true}
-                allowFontScaling={true}
-                className="sc-bxivhb bZsssb"
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 14,
-                    },
-                    undefined,
-                    Object {
-                      "color": "#696969",
-                    },
-                  ]
-                }
-                testID="articleByline"
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-                </Text>
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
-                },
-              ]
             }
           >
             <Text
-              accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
-              className="sc-bxivhb bZsssb"
               ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
-              }
-              testID="datePublication"
             >
-              Friday March 13 2015
-              , The Times
+              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
-          </View>
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 4,
+              "paddingTop": 9,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Friday March 13 2015
+            , The Times
+          </Text>
         </View>
       </View>
     </View>
@@ -3434,31 +3305,20 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
         }
       >
         <Text
-          accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
           className="sc-bdVaJa jgzvie"
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 30,
-                "fontWeight": "700",
-                "lineHeight": 32,
-                "marginBottom": 7,
-              },
-            ]
+            Object {
+              "color": "#1d1d1b",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 30,
+              "fontWeight": "700",
+              "lineHeight": 32,
+              "marginBottom": 7,
+            }
           }
-          testID="headline"
         >
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
@@ -3476,6 +3336,11 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
               "paddingTop": 9,
             },
             Object {
+              "borderBottomColor": "#d0cece",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+            },
+            Object {
               "paddingLeft": 10,
               "paddingRight": 10,
             },
@@ -3485,100 +3350,63 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
         <View
           style={
             Object {
-              "borderBottomColor": "#d0cece",
-              "borderBottomWidth": 0.5,
-              "marginBottom": 20,
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 4,
+              "paddingTop": 9,
             }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
             style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
-                },
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexDirection": "row",
-                  },
-                  undefined,
-                ]
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 14,
               }
-            >
-              <Text
-                accessibilityLabel="articleByline"
-                accessible={true}
-                allowFontScaling={true}
-                className="sc-bxivhb bZsssb"
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 14,
-                    },
-                    undefined,
-                    Object {
-                      "color": "#696969",
-                    },
-                  ]
-                }
-                testID="articleByline"
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-                </Text>
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
-                },
-              ]
             }
           >
             <Text
-              accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
-              className="sc-bxivhb bZsssb"
               ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
-              }
-              testID="datePublication"
             >
-              Friday March 13 2015
-              , The Times
+              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
-          </View>
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 4,
+              "paddingTop": 9,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Friday March 13 2015
+            , The Times
+          </Text>
         </View>
       </View>
     </View>
@@ -4371,31 +4199,20 @@ exports[`Article test on ios renders article no standfirst 1`] = `
           </Text>
         </View>
         <Text
-          accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
           className="sc-bdVaJa jgzvie"
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 30,
-                "fontWeight": "700",
-                "lineHeight": 32,
-                "marginBottom": 7,
-              },
-            ]
+            Object {
+              "color": "#1d1d1b",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 30,
+              "fontWeight": "700",
+              "lineHeight": 32,
+              "marginBottom": 7,
+            }
           }
-          testID="headline"
         >
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
@@ -4553,6 +4370,11 @@ exports[`Article test on ios renders article no standfirst 1`] = `
               "paddingTop": 9,
             },
             Object {
+              "borderBottomColor": "#d0cece",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+            },
+            Object {
               "paddingLeft": 10,
               "paddingRight": 10,
             },
@@ -4562,100 +4384,63 @@ exports[`Article test on ios renders article no standfirst 1`] = `
         <View
           style={
             Object {
-              "borderBottomColor": "#d0cece",
-              "borderBottomWidth": 0.5,
-              "marginBottom": 20,
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 4,
+              "paddingTop": 9,
             }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
             style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
-                },
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexDirection": "row",
-                  },
-                  undefined,
-                ]
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 14,
               }
-            >
-              <Text
-                accessibilityLabel="articleByline"
-                accessible={true}
-                allowFontScaling={true}
-                className="sc-bxivhb bZsssb"
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 14,
-                    },
-                    undefined,
-                    Object {
-                      "color": "#696969",
-                    },
-                  ]
-                }
-                testID="articleByline"
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-                </Text>
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
-                },
-              ]
             }
           >
             <Text
-              accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
-              className="sc-bxivhb bZsssb"
               ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
-              }
-              testID="datePublication"
             >
-              Friday March 13 2015
-              , The Times
+              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
-          </View>
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 4,
+              "paddingTop": 9,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Friday March 13 2015
+            , The Times
+          </Text>
         </View>
       </View>
     </View>
@@ -5445,31 +5230,20 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
           </Text>
         </View>
         <Text
-          accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
           className="sc-bdVaJa jgzvie"
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 30,
-                "fontWeight": "700",
-                "lineHeight": 32,
-                "marginBottom": 7,
-              },
-            ]
+            Object {
+              "color": "#1d1d1b",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 30,
+              "fontWeight": "700",
+              "lineHeight": 32,
+              "marginBottom": 7,
+            }
           }
-          testID="headline"
         >
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
@@ -5487,6 +5261,11 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
               "paddingTop": 9,
             },
             Object {
+              "borderBottomColor": "#d0cece",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+            },
+            Object {
               "paddingLeft": 10,
               "paddingRight": 10,
             },
@@ -5496,100 +5275,63 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
         <View
           style={
             Object {
-              "borderBottomColor": "#d0cece",
-              "borderBottomWidth": 0.5,
-              "marginBottom": 20,
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 4,
+              "paddingTop": 9,
             }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
             style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
-                },
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexDirection": "row",
-                  },
-                  undefined,
-                ]
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 14,
               }
-            >
-              <Text
-                accessibilityLabel="articleByline"
-                accessible={true}
-                allowFontScaling={true}
-                className="sc-bxivhb bZsssb"
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 14,
-                    },
-                    undefined,
-                    Object {
-                      "color": "#696969",
-                    },
-                  ]
-                }
-                testID="articleByline"
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-                </Text>
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
-                },
-              ]
             }
           >
             <Text
-              accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
-              className="sc-bxivhb bZsssb"
               ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
-              }
-              testID="datePublication"
             >
-              Friday March 13 2015
-              , The Times
+              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
-          </View>
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 4,
+              "paddingTop": 9,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Friday March 13 2015
+            , The Times
+          </Text>
         </View>
       </View>
     </View>
@@ -6349,31 +6091,20 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
         }
       >
         <Text
-          accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
           className="sc-bdVaJa jgzvie"
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 30,
-                "fontWeight": "700",
-                "lineHeight": 32,
-                "marginBottom": 7,
-              },
-            ]
+            Object {
+              "color": "#1d1d1b",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 30,
+              "fontWeight": "700",
+              "lineHeight": 32,
+              "marginBottom": 7,
+            }
           }
-          testID="headline"
         >
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
@@ -6531,6 +6262,11 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
               "paddingTop": 9,
             },
             Object {
+              "borderBottomColor": "#d0cece",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+            },
+            Object {
               "paddingLeft": 10,
               "paddingRight": 10,
             },
@@ -6540,100 +6276,63 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
         <View
           style={
             Object {
-              "borderBottomColor": "#d0cece",
-              "borderBottomWidth": 0.5,
-              "marginBottom": 20,
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 4,
+              "paddingTop": 9,
             }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
             style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
-                },
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexDirection": "row",
-                  },
-                  undefined,
-                ]
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 14,
               }
-            >
-              <Text
-                accessibilityLabel="articleByline"
-                accessible={true}
-                allowFontScaling={true}
-                className="sc-bxivhb bZsssb"
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 14,
-                    },
-                    undefined,
-                    Object {
-                      "color": "#696969",
-                    },
-                  ]
-                }
-                testID="articleByline"
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-                </Text>
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
-                },
-              ]
             }
           >
             <Text
-              accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
-              className="sc-bxivhb bZsssb"
               ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
-              }
-              testID="datePublication"
             >
-              Friday March 13 2015
-              , The Times
+              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
-          </View>
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 4,
+              "paddingTop": 9,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Friday March 13 2015
+            , The Times
+          </Text>
         </View>
       </View>
     </View>
@@ -7495,31 +7194,20 @@ exports[`Article test on ios renders full article 1`] = `
           </Text>
         </View>
         <Text
-          accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
           className="sc-bdVaJa jgzvie"
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 30,
-                "fontWeight": "700",
-                "lineHeight": 32,
-                "marginBottom": 7,
-              },
-            ]
+            Object {
+              "color": "#1d1d1b",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 30,
+              "fontWeight": "700",
+              "lineHeight": 32,
+              "marginBottom": 7,
+            }
           }
-          testID="headline"
         >
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
@@ -7697,6 +7385,11 @@ exports[`Article test on ios renders full article 1`] = `
               "paddingTop": 9,
             },
             Object {
+              "borderBottomColor": "#d0cece",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+            },
+            Object {
               "paddingLeft": 10,
               "paddingRight": 10,
             },
@@ -7706,100 +7399,63 @@ exports[`Article test on ios renders full article 1`] = `
         <View
           style={
             Object {
-              "borderBottomColor": "#d0cece",
-              "borderBottomWidth": 0.5,
-              "marginBottom": 20,
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 4,
+              "paddingTop": 9,
             }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
             style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
-                },
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexDirection": "row",
-                  },
-                  undefined,
-                ]
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 14,
               }
-            >
-              <Text
-                accessibilityLabel="articleByline"
-                accessible={true}
-                allowFontScaling={true}
-                className="sc-bxivhb bZsssb"
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 14,
-                    },
-                    undefined,
-                    Object {
-                      "color": "#696969",
-                    },
-                  ]
-                }
-                testID="articleByline"
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-                </Text>
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 4,
-                  "paddingTop": 9,
-                },
-              ]
             }
           >
             <Text
-              accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
-              className="sc-bxivhb bZsssb"
               ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
-              }
-              testID="datePublication"
             >
-              Friday March 13 2015
-              , The Times
+              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
-          </View>
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 4,
+              "paddingTop": 9,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Friday March 13 2015
+            , The Times
+          </Text>
         </View>
       </View>
     </View>

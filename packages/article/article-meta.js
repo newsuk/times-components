@@ -4,27 +4,26 @@ import { View, ViewPropTypes } from "react-native";
 import ArticleByline from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
 import styles from "./styles/meta";
-import { MetaElement, Meta } from "./styles/meta/responsive";
+import { MetaTextElement, Meta } from "./styles/meta/responsive";
 
 const { style: ViewStylePropTypes } = ViewPropTypes;
 
+const ArticleMetaRow = (textStyle, component) => (
+  <View style={styles.articleMetaElement}>
+    <MetaTextElement style={textStyle}>{component}</MetaTextElement>
+  </View>
+);
+
 const ArticleMeta = ({ byline, publishedTime, publicationName, style }) => (
-  <Meta style={[styles.articleMiddleContainer, ...style]}>
-    <View style={styles.articleMeta}>
-      <View style={styles.articleMetaElement}>
-        <MetaElement style={styles.byline}>
-          <ArticleByline ast={byline} />
-        </MetaElement>
-      </View>
-      <View style={styles.articleMetaElement}>
-        <MetaElement style={styles.datePublication}>
-          <DatePublication
-            date={new Date(publishedTime)}
-            publication={publicationName}
-          />
-        </MetaElement>
-      </View>
-    </View>
+  <Meta style={[styles.articleMiddleContainer, styles.articleMeta, ...style]}>
+    {ArticleMetaRow(styles.byline, <ArticleByline ast={byline} />)}
+    {ArticleMetaRow(
+      styles.datePublication,
+      <DatePublication
+        date={new Date(publishedTime)}
+        publication={publicationName}
+      />
+    )}
   </Meta>
 );
 
