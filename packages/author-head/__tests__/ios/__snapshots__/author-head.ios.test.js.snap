@@ -62,20 +62,29 @@ exports[`AuthorHead test on ios renders 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
-      className=""
       ellipsizeMode="tail"
       style={
         Object {
-          "color": "#333",
-          "fontFamily": "TimesDigitalW04",
-          "fontSize": 16,
-          "lineHeight": 26,
           "maxWidth": "88%",
           "paddingBottom": 32,
-          "textAlign": "center",
         }
       }
-    />
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 26,
+            "textAlign": "center",
+          }
+        }
+      />
+    </Text>
   </View>
 </View>
 `;
@@ -188,47 +197,56 @@ exports[`AuthorHead test on ios renders with data 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
-      className=""
       ellipsizeMode="tail"
       style={
         Object {
-          "color": "#333",
-          "fontFamily": "TimesDigitalW04",
-          "fontSize": 16,
-          "lineHeight": 26,
           "maxWidth": "88%",
           "paddingBottom": 32,
-          "textAlign": "center",
         }
       }
     >
-      Carol Midgley joined 
       <Text
         accessible={true}
         allowFontScaling={true}
         ellipsizeMode="tail"
         style={
           Object {
-            "fontStyle": "italic",
+            "color": "#333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 26,
+            "textAlign": "center",
           }
         }
       >
-        The Times
-      </Text>
-       in 1996, and won feature writer of the year in 2004. Find her Wednesday column in 
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "fontStyle": "italic",
+        Carol Midgley joined 
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "fontStyle": "italic",
+            }
           }
-        }
-      >
-        Times2
+        >
+          The Times
+        </Text>
+         in 1996, and won feature writer of the year in 2004. Find her Wednesday column in 
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "fontStyle": "italic",
+            }
+          }
+        >
+          Times2
+        </Text>
+         each week and a weekly comment piece on Fridays.
       </Text>
-       each week and a weekly comment piece on Fridays.
     </Text>
   </View>
   <View
@@ -451,47 +469,56 @@ exports[`AuthorHead test on ios renders without profile picture 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
-      className=""
       ellipsizeMode="tail"
       style={
         Object {
-          "color": "#333",
-          "fontFamily": "TimesDigitalW04",
-          "fontSize": 16,
-          "lineHeight": 26,
           "maxWidth": "88%",
           "paddingBottom": 32,
-          "textAlign": "center",
         }
       }
     >
-      Carol Midgley joined 
       <Text
         accessible={true}
         allowFontScaling={true}
         ellipsizeMode="tail"
         style={
           Object {
-            "fontStyle": "italic",
+            "color": "#333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 26,
+            "textAlign": "center",
           }
         }
       >
-        The Times
-      </Text>
-       in 1996, and won feature writer of the year in 2004. Find her Wednesday column in 
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "fontStyle": "italic",
+        Carol Midgley joined 
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "fontStyle": "italic",
+            }
           }
-        }
-      >
-        Times2
+        >
+          The Times
+        </Text>
+         in 1996, and won feature writer of the year in 2004. Find her Wednesday column in 
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "fontStyle": "italic",
+            }
+          }
+        >
+          Times2
+        </Text>
+         each week and a weekly comment piece on Fridays.
       </Text>
-       each week and a weekly comment piece on Fridays.
     </Text>
   </View>
 </View>

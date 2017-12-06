@@ -334,54 +334,63 @@ exports[`renders profile content 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              className=""
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#333",
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 16,
-                  "lineHeight": 26,
                   "maxWidth": "88%",
                   "paddingBottom": 32,
-                  "textAlign": "center",
                 }
               }
             >
-              Lorem 
               <Text
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
                   Object {
-                    "fontWeight": "bold",
+                    "color": "#333",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 16,
+                    "lineHeight": 26,
+                    "textAlign": "center",
                   }
                 }
               >
-                ipsum
-              </Text>
-               testbr 
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-              >
-                
+                Lorem 
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  ipsum
+                </Text>
+                 testbr 
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                >
+                  
 
-              </Text>
-              More text 
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "fontStyle": "italic",
+                </Text>
+                More text 
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontStyle": "italic",
+                    }
                   }
-                }
-              >
-                 last 
+                >
+                   last 
+                </Text>
               </Text>
             </Text>
           </View>
@@ -4186,20 +4195,29 @@ exports[`renders profile content component 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              className=""
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#333",
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 16,
-                  "lineHeight": 26,
                   "maxWidth": "88%",
                   "paddingBottom": 32,
-                  "textAlign": "center",
                 }
               }
-            />
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#333",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 16,
+                    "lineHeight": 26,
+                    "textAlign": "center",
+                  }
+                }
+              />
+            </Text>
           </View>
         </View>
         <View
@@ -5956,20 +5974,29 @@ exports[`renders profile empty 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              className=""
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#333",
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 16,
-                  "lineHeight": 26,
                   "maxWidth": "88%",
                   "paddingBottom": 32,
-                  "textAlign": "center",
                 }
               }
-            />
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#333",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 16,
+                    "lineHeight": 26,
+                    "textAlign": "center",
+                  }
+                }
+              />
+            </Text>
           </View>
         </View>
         <View
@@ -6397,54 +6424,63 @@ exports[`renders profile loading 1`] = `
             <Text
               accessible={true}
               allowFontScaling={true}
-              className=""
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#333",
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 16,
-                  "lineHeight": 26,
                   "maxWidth": "88%",
                   "paddingBottom": 32,
-                  "textAlign": "center",
                 }
               }
             >
-              Lorem 
               <Text
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
                   Object {
-                    "fontWeight": "bold",
+                    "color": "#333",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 16,
+                    "lineHeight": 26,
+                    "textAlign": "center",
                   }
                 }
               >
-                ipsum
-              </Text>
-               testbr 
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-              >
-                
+                Lorem 
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  ipsum
+                </Text>
+                 testbr 
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                >
+                  
 
-              </Text>
-              More text 
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "fontStyle": "italic",
+                </Text>
+                More text 
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontStyle": "italic",
+                    }
                   }
-                }
-              >
-                 last 
+                >
+                   last 
+                </Text>
               </Text>
             </Text>
           </View>
@@ -7018,20 +7054,29 @@ exports[`renders the author head 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
-      className=""
       ellipsizeMode="tail"
       style={
         Object {
-          "color": "#333",
-          "fontFamily": "TimesDigitalW04",
-          "fontSize": 16,
-          "lineHeight": 26,
           "maxWidth": "88%",
           "paddingBottom": 32,
-          "textAlign": "center",
         }
       }
-    />
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 26,
+            "textAlign": "center",
+          }
+        }
+      />
+    </Text>
   </View>
 </View>
 `;

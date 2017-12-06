@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 const withResponsiveStyles = (Component, styles = {}) => styled(Component)`
+  ${styles.base};
+
   @media (min-width: 520px) {
     ${styles.small};
   }
