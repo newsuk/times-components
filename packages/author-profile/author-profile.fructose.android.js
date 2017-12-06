@@ -2,7 +2,7 @@
 import { StyleSheet, View } from "react-native";
 import React from "react";
 import AuthorProfile from "./author-profile";
-import authorProfileGenerator from "./fixture-generator";
+import authorProfileGenerator from "./fixtures/fixture-generator";
 
 const styles = StyleSheet.create({
   background: {

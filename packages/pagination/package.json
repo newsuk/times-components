@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pagination",
-  "version": "0.11.1",
+  "version": "0.11.3",
   "main": "pagination",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -30,6 +30,8 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@storybook/addon-actions": "3.2.11",
+    "@storybook/react-native": "3.2.11",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",
@@ -56,8 +58,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/link": "0.11.0",
-    "@times-components/tracking": "0.4.1",
+    "@times-components/link": "0.11.2",
+    "@times-components/tracking": "0.4.3",
     "prop-types": "15.6.0",
     "react-display-name": "0.2.3",
     "react-native-svg": "5.5.0",

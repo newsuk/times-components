@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "1.7.0",
+  "version": "1.7.2",
   "main": "image",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@storybook/react-native": "3.2.11",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",
@@ -58,8 +59,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/gradient": "0.2.0",
-    "@times-components/jest-configurator": "0.0.8",
+    "@times-components/gradient": "0.2.2",
+    "@times-components/jest-configurator": "0.0.10",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.14",
     "svgs": "3.1.1"

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/markup",
-  "version": "0.13.0",
+  "version": "0.13.2",
   "description": "a component which takes an HTML ast and renders the platform specific markup",
   "main": "markup",
   "scripts": {
@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@storybook/react-native": "3.2.11",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",
@@ -54,7 +55,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/ad": "0.5.0",
+    "@times-components/ad": "0.5.2",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.14"
   },

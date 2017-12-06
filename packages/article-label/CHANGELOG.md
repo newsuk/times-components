@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.3"></a>
+## [0.5.3](https://github.com/newsuk/times-components/compare/@times-components/article-label@0.5.2...@times-components/article-label@0.5.3) (2017-12-05)
+
+
+### Bug Fixes
+
+* update article header ([#431](https://github.com/newsuk/times-components/issues/431)) ([a9e894c](https://github.com/newsuk/times-components/commit/a9e894c))
+
+
+
+
+<a name="0.5.2"></a>
+## [0.5.2](https://github.com/newsuk/times-components/compare/@times-components/article-label@0.5.0...@times-components/article-label@0.5.2) (2017-12-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-label
+
+<a name="0.5.1"></a>
+## [0.5.1](https://github.com/newsuk/times-components/compare/@times-components/article-label@0.5.0...@times-components/article-label@0.5.1) (2017-12-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-label
+
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/article-label@0.4.7...@times-components/article-label@0.5.0) (2017-12-03)
 

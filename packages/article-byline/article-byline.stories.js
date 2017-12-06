@@ -1,6 +1,5 @@
 import React from "react";
 import { Text } from "react-native";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from "@storybook/react-native";
 import ArticleByline from "./article-byline";
 
