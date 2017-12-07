@@ -42,7 +42,7 @@ withComponent(
       async () => {
         await fructose.loadComponent();
         await driver.waitForElementByXPath(
-          '//*[@text="Fiona Hamilton"]',
+          '//*[@text="Deborah Haynes"]',
           10000
         );
         await driver.flick(0, -5000);

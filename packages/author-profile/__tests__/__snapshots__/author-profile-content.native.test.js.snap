@@ -18,7 +18,7 @@ exports[`does not re-render the author head if the name changes 1`] = `
   }
   testID="author-name"
 >
-  Fiona Hamilton
+  Deborah Haynes
 </Text>
 `;
 
@@ -64,7 +64,7 @@ exports[`renders profile content 1`] = `
           Array [
             Object {
               "attributes": Object {
-                "value": "Lorem ",
+                "value": "Deborah Haynes is the defence editor at ",
               },
               "children": Array [],
               "name": "text",
@@ -74,39 +74,7 @@ exports[`renders profile content 1`] = `
               "children": Array [
                 Object {
                   "attributes": Object {
-                    "value": "ipsum",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "bold",
-            },
-            Object {
-              "attributes": Object {
-                "value": " testbr ",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-            Object {
-              "attributes": Object {},
-              "children": Array [],
-              "name": "break",
-            },
-            Object {
-              "attributes": Object {
-                "value": "More text ",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": " last ",
+                    "value": "The Times",
                   },
                   "children": Array [],
                   "name": "text",
@@ -114,12 +82,19 @@ exports[`renders profile content 1`] = `
               ],
               "name": "italic",
             },
+            Object {
+              "attributes": Object {
+                "value": ", covering the most important defence & security news in the UK and around the world.",
+              },
+              "children": Array [],
+              "name": "text",
+            },
           ]
         }
         isLoading={false}
-        name="Fiona Hamilton"
+        name="Deborah Haynes"
         onTwitterLinkPress={[Function]}
-        title="Legal Editor"
+        title="Defence Editor"
         twitter="jdoe"
         uri="//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
       />
@@ -266,7 +241,7 @@ exports[`renders profile content 1`] = `
               }
               testID="author-name"
             >
-              Fiona Hamilton
+              Deborah Haynes
             </Text>
             <Text
               accessibilityRole="heading"
@@ -285,7 +260,7 @@ exports[`renders profile content 1`] = `
                 ]
               }
             >
-              legal editor
+              defence editor
             </Text>
             <View
               style={
@@ -358,29 +333,7 @@ exports[`renders profile content 1`] = `
                   }
                 }
               >
-                Lorem 
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "fontWeight": "bold",
-                    }
-                  }
-                >
-                  ipsum
-                </Text>
-                 testbr 
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  
-
-                </Text>
-                More text 
+                Deborah Haynes is the defence editor at 
                 <Text
                   accessible={true}
                   allowFontScaling={true}
@@ -391,8 +344,9 @@ exports[`renders profile content 1`] = `
                     }
                   }
                 >
-                   last 
+                  The Times
                 </Text>
+                , covering the most important defence & security news in the UK and around the world.
               </Text>
             </Text>
           </View>
@@ -6196,7 +6150,7 @@ exports[`renders profile loading 1`] = `
           Array [
             Object {
               "attributes": Object {
-                "value": "Lorem ",
+                "value": "Deborah Haynes is the defence editor at ",
               },
               "children": Array [],
               "name": "text",
@@ -6206,39 +6160,7 @@ exports[`renders profile loading 1`] = `
               "children": Array [
                 Object {
                   "attributes": Object {
-                    "value": "ipsum",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "bold",
-            },
-            Object {
-              "attributes": Object {
-                "value": " testbr ",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-            Object {
-              "attributes": Object {},
-              "children": Array [],
-              "name": "break",
-            },
-            Object {
-              "attributes": Object {
-                "value": "More text ",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": " last ",
+                    "value": "The Times",
                   },
                   "children": Array [],
                   "name": "text",
@@ -6246,12 +6168,19 @@ exports[`renders profile loading 1`] = `
               ],
               "name": "italic",
             },
+            Object {
+              "attributes": Object {
+                "value": ", covering the most important defence & security news in the UK and around the world.",
+              },
+              "children": Array [],
+              "name": "text",
+            },
           ]
         }
         isLoading={undefined}
-        name="Fiona Hamilton"
+        name="Deborah Haynes"
         onTwitterLinkPress={[Function]}
-        title="Legal Editor"
+        title="Defence Editor"
         twitter="jdoe"
         uri={undefined}
       />
@@ -6362,7 +6291,7 @@ exports[`renders profile loading 1`] = `
               }
               testID="author-name"
             >
-              Fiona Hamilton
+              Deborah Haynes
             </Text>
             <Text
               accessibilityRole="heading"
@@ -6381,7 +6310,7 @@ exports[`renders profile loading 1`] = `
                 ]
               }
             >
-              legal editor
+              defence editor
             </Text>
             <View
               style={
@@ -6454,29 +6383,7 @@ exports[`renders profile loading 1`] = `
                   }
                 }
               >
-                Lorem 
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "fontWeight": "bold",
-                    }
-                  }
-                >
-                  ipsum
-                </Text>
-                 testbr 
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  
-
-                </Text>
-                More text 
+                Deborah Haynes is the defence editor at 
                 <Text
                   accessible={true}
                   allowFontScaling={true}
@@ -6487,8 +6394,9 @@ exports[`renders profile loading 1`] = `
                     }
                   }
                 >
-                   last 
+                  The Times
                 </Text>
+                , covering the most important defence & security news in the UK and around the world.
               </Text>
             </Text>
           </View>
@@ -6994,7 +6902,7 @@ exports[`renders the author head 1`] = `
       }
       testID="author-name"
     >
-      Fiona Hamilton
+      Deborah Haynes
     </Text>
     <Text
       accessibilityRole="heading"

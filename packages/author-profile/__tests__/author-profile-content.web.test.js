@@ -63,7 +63,7 @@ it("renders profile articles and invoke callback on article press", done => {
     <AuthorProfileContent
       articles={results.data.author.articles.list}
       author={authorProfileFixture.data.author}
-      slug="fiona-hamilton"
+      slug="deborah-haynes"
       page={1}
       pageSize={3}
       imageRatio={3 / 2}
@@ -98,7 +98,7 @@ it("renders with an intersection observer which uses the expected options", () =
     <AuthorProfileContent
       articles={results.data.author.articles.list}
       author={authorProfileFixture.data.author}
-      slug="fiona-hamilton"
+      slug="deborah-haynes"
       page={1}
       pageSize={3}
       imageRatio={3 / 2}
@@ -117,7 +117,7 @@ it("renders a good quality image if it is visible", async () => {
     <AuthorProfileContent
       articles={results.data.author.articles.list}
       author={authorProfileFixture.data.author}
-      slug="fiona-hamilton"
+      slug="deborah-haynes"
       page={1}
       pageSize={3}
       imageRatio={3 / 2}
@@ -161,7 +161,7 @@ it("renders a poor quality image if it is not visible", async () => {
     <AuthorProfileContent
       articles={results.data.author.articles.list}
       author={authorProfileFixture.data.author}
-      slug="fiona-hamilton"
+      slug="deborah-haynes"
       page={1}
       pageSize={3}
       imageRatio={3 / 2}
@@ -193,7 +193,7 @@ it("renders good quality images if there is no IntersectionObserver", () => {
     <AuthorProfileContent
       articles={results.data.author.articles.list.slice(0, 2)}
       author={authorProfileFixture.data.author}
-      slug="fiona-hamilton"
+      slug="deborah-haynes"
       page={1}
       pageSize={3}
       imageRatio={3 / 2}
@@ -237,7 +237,7 @@ it("does not render good quality images if the item is quickly scrolled passed",
     <AuthorProfileContent
       articles={results.data.author.articles.list.slice(0, 5)}
       author={authorProfileFixture.data.author}
-      slug="fiona-hamilton"
+      slug="deborah-haynes"
       page={1}
       pageSize={3}
       imageRatio={3 / 2}
@@ -276,7 +276,7 @@ it("does no work if there are no pending items", async () => {
     <AuthorProfileContent
       articles={results.data.author.articles.list.slice(0, 5)}
       author={authorProfileFixture.data.author}
-      slug="fiona-hamilton"
+      slug="deborah-haynes"
       page={1}
       pageSize={3}
       imageRatio={3 / 2}
@@ -320,7 +320,7 @@ it("does not set state after unmounting", async () => {
     <AuthorProfileContent
       articles={results.data.author.articles.list.slice(0, 5)}
       author={authorProfileFixture.data.author}
-      slug="fiona-hamilton"
+      slug="deborah-haynes"
       page={1}
       pageSize={3}
       imageRatio={3 / 2}
@@ -368,7 +368,7 @@ it("disconnects from the IntersectionObserver when unmounting", async () => {
     <AuthorProfileContent
       articles={results.data.author.articles.list.slice(0, 5)}
       author={authorProfileFixture.data.author}
-      slug="fiona-hamilton"
+      slug="deborah-haynes"
       page={1}
       pageSize={3}
       imageRatio={3 / 2}
@@ -391,7 +391,7 @@ it("does not throw when unmounting with no IntersectionObserver", async () => {
     <AuthorProfileContent
       articles={results.data.author.articles.list.slice(0, 5)}
       author={authorProfileFixture.data.author}
-      slug="fiona-hamilton"
+      slug="deborah-haynes"
       page={1}
       pageSize={3}
       imageRatio={3 / 2}
@@ -416,7 +416,7 @@ it("emits scroll tracking events for author profile content", () => {
       count={10}
       articles={pageResults.data.author.articles.list}
       author={authorProfileFixture.data.author}
-      slug="fiona-hamilton"
+      slug="deborah-haynes"
       page={1}
       pageSize={3}
       imageRatio={3 / 2}

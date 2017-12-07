@@ -8,7 +8,7 @@ exports[`does not re-render the author head if the name changes 1`] = `
   style={73}
   testID="author-name"
 >
-  Fiona Hamilton
+  Deborah Haynes
 </Text>
 `;
 
@@ -314,7 +314,7 @@ exports[`renders profile content 1`] = `
         dir="auto"
         role="heading"
       >
-        Fiona Hamilton
+        Deborah Haynes
       </h1>
       <h2
         aria-level="2"
@@ -327,7 +327,7 @@ exports[`renders profile content 1`] = `
           }
         }
       >
-        legal editor
+        defence editor
       </h2>
       <div
         className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-paddingTop-95jzfe rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -363,16 +363,11 @@ exports[`renders profile content 1`] = `
           className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-1feecvn rn-fontSize-ubezar rn-lineHeight-eaezby rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
           dir="auto"
         >
-          Lorem 
-          <strong>
-            ipsum
-          </strong>
-           testbr 
-          <br />
-          More text 
+          Deborah Haynes is the defence editor at 
           <em>
-             last 
+            The Times
           </em>
+          , covering the most important defence & security news in the UK and around the world.
         </div>
       </div>
     </header>
@@ -2693,7 +2688,7 @@ exports[`renders profile loading 1`] = `
         dir="auto"
         role="heading"
       >
-        Fiona Hamilton
+        Deborah Haynes
       </h1>
       <h2
         aria-level="2"
@@ -2706,7 +2701,7 @@ exports[`renders profile loading 1`] = `
           }
         }
       >
-        legal editor
+        defence editor
       </h2>
       <div
         className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-paddingTop-95jzfe rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -2742,16 +2737,11 @@ exports[`renders profile loading 1`] = `
           className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-1feecvn rn-fontSize-ubezar rn-lineHeight-eaezby rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
           dir="auto"
         >
-          Lorem 
-          <strong>
-            ipsum
-          </strong>
-           testbr 
-          <br />
-          More text 
+          Deborah Haynes is the defence editor at 
           <em>
-             last 
+            The Times
           </em>
+          , covering the most important defence & security news in the UK and around the world.
         </div>
       </div>
     </header>
@@ -2940,7 +2930,7 @@ exports[`renders the author head 1`] = `
       dir="auto"
       role="heading"
     >
-      Fiona Hamilton
+      Deborah Haynes
     </h1>
     <h2
       aria-level="2"
