@@ -23,12 +23,11 @@ const Title = ({ title, style }) => (
 );
 
 Title.defaultProps = {
-  title: "",
   style: {}
 };
 
 Title.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   style: TextPropTypesStyle
 };
 
