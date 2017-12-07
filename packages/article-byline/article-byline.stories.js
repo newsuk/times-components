@@ -1,10 +1,6 @@
 import React from "react";
-<<<<<<< HEAD
-import { storiesOf } from "dextrose/storiesOfOverloader";
-=======
 import { Text } from "react-native";
-import { storiesOf } from "@storybook/react-native";
->>>>>>> master
+import { storiesOf } from "dextrose/storiesOfOverloader";
 import ArticleByline from "./article-byline";
 
 const authorsAST = require("./fixtures/authors.json");
