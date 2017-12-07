@@ -2,8 +2,8 @@ import PropTypes from "prop-types";
 
 export const articleImagePropTypes = {
   imageOptions: PropTypes.shape({
-    display: PropTypes.string.isRequired,
-    ratio: PropTypes.string.isRequired,
+    display: PropTypes.oneOf(["primary", "secondary", "inline"]),
+    ratio: PropTypes.string,
     url: PropTypes.string.isRequired
   }).isRequired,
   captionOptions: PropTypes.shape({
@@ -14,7 +14,7 @@ export const articleImagePropTypes = {
 
 export const articleImageDefaultPropTypes = {
   captionOptions: {
-    caption: "",
-    credits: ""
+    caption: null,
+    credits: null
   }
 };

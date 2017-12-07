@@ -2,6 +2,7 @@ import React from "react";
 import { View, StyleSheet } from "react-native";
 import Image from "@times-components/image";
 import Caption from "@times-components/caption";
+import InsetCaption from "./inset-caption";
 
 import {
   articleImagePropTypes,
@@ -40,13 +41,20 @@ const captionStyle = {
   }
 };
 
-const renderCaption = (display, caption, credits, url) => {
+const renderCaption = (display, caption, credits) => {
   if (!caption && !credits) {
     return null;
   }
-  return (
-    <View key={`caption-${url}`} style={styles[`${display}Caption`]}>
+  const CaptionComponent =
+    display === "primary" ? (
+      <InsetCaption caption={caption} credits={credits} />
+    ) : (
       <Caption text={caption} credits={credits} style={captionStyle[display]} />
+    );
+
+  return (
+    <View key="caption" style={styles[`${display}Caption`]}>
+      {CaptionComponent}
     </View>
   );
 };
@@ -55,14 +63,20 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
   const { display, ratio, url } = imageOptions;
   const { caption, credits } = captionOptions;
 
+  const children = [renderCaption(display, caption, credits)];
+
+  if (!display || !ratio) {
+    return children;
+  }
+
   const [ratioWidth, ratioHeight] = ratio.split(":");
   const aspectRatio = ratioWidth / ratioHeight;
 
   return [
-    <View key={url} style={styles[`${display}Image`]}>
+    <View key="img" style={styles[`${display}Image`]}>
       <Image uri={url} aspectRatio={aspectRatio} />
     </View>,
-    renderCaption(display, caption, credits, url)
+    ...children
   ];
 };
 

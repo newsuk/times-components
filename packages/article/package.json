@@ -73,6 +73,7 @@
     "@times-components/markup": "0.14.2",
     "@times-components/provider": "0.18.1",
     "@times-components/tracking": "0.5.4",
+    "@times-components/caption": "0.9.2",
     "lodash.get": "4.4.2",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.14",

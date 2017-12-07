@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ArticleImage from "@times-components/article-image";
+import Image from "@times-components/image";
+import Caption from "@times-components/caption";
 import {
   LeadAsset,
   MediaContainerDesktop,
@@ -11,29 +12,16 @@ import {
 
 function renderLeadAsset(leadAsset) {
   if (leadAsset) {
+    const [ratioWidth, ratioHeight] = leadAsset.crop.ratio.split(":");
+    const aspectRatio = ratioWidth / ratioHeight;
     return (
       <LeadAsset>
-        <LeadAssetMobile>
-          <ArticleImage
-            imageOptions={{
-              display: "",
-              ratio: leadAsset.crop.ratio,
-              url: leadAsset.crop.url
-            }}
-          />
+        <LeadAssetMobile key={`leadassetmob${leadAsset.crop.url}`}>
+          <Image uri={leadAsset.crop.url} aspectRatio={aspectRatio} />
         </LeadAssetMobile>
-        <LeadAssetDesktop>
-          <ArticleImage
-            imageOptions={{
-              display: "",
-              ratio: leadAsset.crop.ratio,
-              url: leadAsset.crop.url
-            }}
-            captionOptions={{
-              caption: leadAsset.caption,
-              credits: leadAsset.credits
-            }}
-          />
+        <LeadAssetDesktop key={`leadassetdesktop${leadAsset.crop.url}`}>
+          <Image uri={leadAsset.crop.url} aspectRatio={aspectRatio} />
+          <Caption text={leadAsset.caption} credits={leadAsset.credits} />
         </LeadAssetDesktop>
       </LeadAsset>
     );
