@@ -18,16 +18,17 @@ const Title = ({ title, style }) => (
     aria-level="2"
     style={[styles.title, style]}
   >
-    {title.toLowerCase()}
+    {title && title.toLowerCase()}
   </Text>
 );
 
 Title.defaultProps = {
+  title: "",
   style: {}
 };
 
 Title.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   style: TextPropTypesStyle
 };
 
