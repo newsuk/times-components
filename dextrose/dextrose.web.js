@@ -9,6 +9,7 @@ const config = {
     "AuthorProfileTracking",
     "Brightcove",
     "PaginationTracking",
+    "Provider",
     "TrackingPage",
     "TrackingEvent"
   ]

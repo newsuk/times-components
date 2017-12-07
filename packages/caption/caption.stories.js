@@ -1,6 +1,6 @@
 import "react-native";
 import React from "react";
-import { storiesOf } from "@storybook/react-native";
+import { storiesOf } from "dextrose/storiesOfOverloader";
 import Image from "@times-components/image";
 import Caption from "./caption";
 

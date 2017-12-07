@@ -1,5 +1,5 @@
 import React from "react";
-import { storiesOf } from "@storybook/react-native";
+import { storiesOf } from "dextrose/storiesOfOverloader";
 import { decorateAction, action } from "@storybook/addon-actions";
 import { withTrackingContext } from "@times-components/tracking";
 import AuthorHead from "./author-head";

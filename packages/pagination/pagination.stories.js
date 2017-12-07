@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import { storiesOf } from "@storybook/react-native";
+import { storiesOf } from "dextrose/storiesOfOverloader";
 import { action } from "@storybook/addon-actions";
 import { withTrackingContext } from "@times-components/tracking";
 import Pagination, { withPageState } from "./pagination";

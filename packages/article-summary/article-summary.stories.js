@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import { storiesOf } from "@storybook/react-native";
+import { storiesOf } from "dextrose/storiesOfOverloader";
 import ArticleSummary from "./article-summary";
 import reviewFixture from "./fixtures/review.json";
 import emptyParagraphFixture from "./fixtures/article-empty-paragraph.json";

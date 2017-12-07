@@ -1,5 +1,5 @@
 /* eslint-env browser */
-import { storiesOf } from "@storybook/react-native";
+import { storiesOf } from "dextrose/storiesOfOverloader";
 import React from "react";
 import { Platform } from "react-native";
 
