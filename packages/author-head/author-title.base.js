@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   }
 });
 
-const Title = ({ title, style }) => (
+const Title = ({ title = "", style }) => (
   <Text
     accessibilityRole="heading"
     aria-level="2"
@@ -23,12 +23,11 @@ const Title = ({ title, style }) => (
 );
 
 Title.defaultProps = {
-  title: "",
   style: {}
 };
 
 Title.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   style: TextPropTypesStyle
 };
 
