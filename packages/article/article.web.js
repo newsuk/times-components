@@ -9,6 +9,7 @@ import { withTrackingContext } from "@times-components/tracking";
 
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
+import LeadAssetComponent from "./article-lead-asset.web";
 
 import {
   MainContainer,
@@ -17,13 +18,9 @@ import {
 } from "./styles/responsive";
 
 import {
+  BodyContainer,
   ParagraphContainer,
   Paragraph,
-  LeadAsset,
-  LeadAssetMobile,
-  LeadAssetDesktop,
-  MediaContainerMobile,
-  MediaContainerDesktop,
   PrimaryImg,
   SecondaryImg,
   InlineImg
@@ -47,7 +44,7 @@ class ArticlePage extends React.Component {
       publicationName,
       leadAsset
     } = articleData;
-    const LeadAssetMedia = ArticlePage.renderLeadAsset(leadAsset);
+
     const contentArray = articleData.content.map((data, index) => ({
       data,
       index
@@ -57,7 +54,7 @@ class ArticlePage extends React.Component {
     );
     return (
       <MainContainer>
-        <MediaContainerMobile>{LeadAssetMedia}</MediaContainerMobile>
+        <LeadAssetComponent device="MOBILE" leadAsset={leadAsset} />
         <HeaderContainer>
           <ArticleHeader
             headline={headline}
@@ -74,39 +71,10 @@ class ArticlePage extends React.Component {
               publicationName={publicationName}
             />
           </MetaContainer>
-          <MediaContainerDesktop>{LeadAssetMedia}</MediaContainerDesktop>
-          {BodyView}
+          <LeadAssetComponent device="DESKTOP" leadAsset={leadAsset} />
+          <BodyContainer>{BodyView}</BodyContainer>
         </View>
       </MainContainer>
-    );
-  }
-
-  static renderLeadAsset(leadAsset) {
-    return (
-      <LeadAsset>
-        <LeadAssetMobile>
-          <ArticleImage
-            imageOptions={{
-              display: "",
-              ratio: leadAsset.crop.ratio,
-              url: leadAsset.crop.url
-            }}
-          />
-        </LeadAssetMobile>
-        <LeadAssetDesktop>
-          <ArticleImage
-            imageOptions={{
-              display: "",
-              ratio: leadAsset.crop.ratio,
-              url: leadAsset.crop.url
-            }}
-            captionOptions={{
-              caption: leadAsset.caption,
-              credits: leadAsset.credits
-            }}
-          />
-        </LeadAssetDesktop>
-      </LeadAsset>
     );
   }
 
