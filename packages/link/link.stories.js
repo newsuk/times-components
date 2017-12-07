@@ -1,7 +1,7 @@
 import { View } from "react-native";
 import React from "react";
-import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react-native";
+import { action } from "@storybook/addon-actions";
 import Link, { TextLink } from "./link";
 import CenteredDecorator from "../../storybook/decorators/centered";
 
