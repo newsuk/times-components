@@ -1,11 +1,10 @@
 import React from "react";
-import { Platform, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import get from "lodash.get";
 import { renderTrees } from "@times-components/markup";
 import Image from "@times-components/image";
 import ArticleImage from "@times-components/article-image";
-import { AdComposer } from "@times-components/ad";
 import { withTrackingContext } from "@times-components/tracking";
 
 import ArticleContent from "./article-content";
@@ -20,10 +19,6 @@ import ArticleMeta from "./article-meta";
 const listViewPageSize = 1;
 const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
-
-const withAdComposer = (children, section = "article") => (
-  <AdComposer section={section}>{children}</AdComposer>
-);
 
 class ArticlePage extends React.Component {
   static renderRow(rowData) {
@@ -44,6 +39,7 @@ class ArticlePage extends React.Component {
           flags={flags}
           standfirst={standfirst}
           label={label}
+          style={[styles.articleMainContentRow]}
         />
       );
     } else if (rowData.type === "middleContainer") {
@@ -54,6 +50,7 @@ class ArticlePage extends React.Component {
           byline={byline}
           publishedTime={publishedTime}
           publicationName={publicationName}
+          style={[styles.articleMainContentRow]}
         />
       );
     } else if (rowData.type === "articleBodyRow") {
@@ -138,9 +135,7 @@ class ArticlePage extends React.Component {
       />
     );
 
-    return Platform.OS === "web"
-      ? withAdComposer(ArticleListView)
-      : ArticleListView;
+    return ArticleListView;
   }
 }
 

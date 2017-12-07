@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ArticleHeadline from "@times-components/article-headline";
 import {
   NewArticleFlag,
   SponsoredArticleFlag,
@@ -8,8 +7,15 @@ import {
   ExclusiveArticleFlag
 } from "@times-components/article-flag";
 import ArticleLabel from "@times-components/article-label";
-import { Text, View } from "react-native";
+import { Text, View, ViewPropTypes } from "react-native";
 import styles from "./styles/header";
+import {
+  HeadlineContainer,
+  LabelContainer,
+  FlagContainer
+} from "./styles/header/responsive";
+
+const { style: ViewStylePropTypes } = ViewPropTypes;
 
 const flagsMapping = new Map([
   ["NEW", <NewArticleFlag />],
@@ -21,13 +27,13 @@ const flagsMapping = new Map([
 const renderFlags = flags => {
   if (!flags.length) return null;
   return (
-    <View style={[styles.articleFlag]}>
+    <FlagContainer style={[styles.articleFlag]}>
       {flags.map(flag => (
         <View key={flag} style={styles.articleFlagContainer}>
           {flagsMapping.get(flag)}
         </View>
       ))}
-    </View>
+    </FlagContainer>
   );
 };
 
@@ -47,16 +53,22 @@ const renderStandfirst = standfirst => {
 const renderLabel = label => {
   if (!label) return null;
   return (
-    <View accessibilityLabel="label" testID="label" style={styles.articleLabel}>
+    <LabelContainer
+      accessibilityLabel="label"
+      testID="label"
+      style={styles.articleLabel}
+    >
       <ArticleLabel title={label} color="#13354E" />
-    </View>
+    </LabelContainer>
   );
 };
 
-const ArticleHeader = ({ label, headline, standfirst, flags }) => (
-  <View style={[styles.articleMainContentRow]}>
+const ArticleHeader = ({ label, headline, standfirst, flags, style }) => (
+  <View style={[...style]}>
     {renderLabel(label)}
-    <ArticleHeadline text={headline} style={styles.articleHeadLineText} />
+    <HeadlineContainer style={styles.articleHeadLineText}>
+      {headline}
+    </HeadlineContainer>
     {renderStandfirst(standfirst)}
     {renderFlags(flags)}
   </View>
@@ -66,13 +78,15 @@ ArticleHeader.propTypes = {
   headline: PropTypes.string.isRequired,
   label: PropTypes.string,
   standfirst: PropTypes.string,
-  flags: PropTypes.arrayOf(PropTypes.string)
+  flags: PropTypes.arrayOf(PropTypes.string),
+  style: ViewStylePropTypes
 };
 
 ArticleHeader.defaultProps = {
   label: null,
   standfirst: null,
-  flags: []
+  flags: [],
+  style: {}
 };
 
 export default ArticleHeader;

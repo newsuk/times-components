@@ -4549,15 +4549,12 @@ exports[`renders profile content component 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#696969",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 13,
-                          "lineHeight": 15,
-                        },
-                        Object {},
-                      ]
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                      }
                     }
                     testID="datePublication"
                   >
@@ -4802,15 +4799,12 @@ exports[`renders profile content component 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#696969",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 13,
-                          "lineHeight": 15,
-                        },
-                        Object {},
-                      ]
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                      }
                     }
                     testID="datePublication"
                   >
@@ -5055,15 +5049,12 @@ exports[`renders profile content component 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#696969",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 13,
-                          "lineHeight": 15,
-                        },
-                        Object {},
-                      ]
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                      }
                     }
                     testID="datePublication"
                   >
@@ -5417,15 +5408,12 @@ exports[`renders profile content item component 1`] = `
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 15,
+                }
               }
               testID="datePublication"
             >
@@ -5648,15 +5636,12 @@ exports[`renders profile content item component with a specific image size 1`] =
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 15,
+                }
               }
               testID="datePublication"
             >
@@ -5780,15 +5765,12 @@ exports[`renders profile content item component with no image 1`] = `
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 15,
+                }
               }
               testID="datePublication"
             >

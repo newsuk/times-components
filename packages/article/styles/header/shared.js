@@ -2,11 +2,13 @@ const sharedStyles = {
   articleHeadLineText: {
     fontSize: 30,
     lineHeight: 32,
-    color: "#000000",
-    marginBottom: 7
+    color: "#1d1d1b",
+    marginBottom: 7,
+    fontFamily: "TimesModern-Bold",
+    fontWeight: 400
   },
   standFirst: {
-    fontSize: 21,
+    fontSize: 20,
     lineHeight: 26,
     fontFamily: "TimesModern-Regular",
     color: "#333333",
@@ -14,7 +16,7 @@ const sharedStyles = {
   },
   articleLabel: {
     paddingTop: 4,
-    paddingBottom: 3
+    paddingBottom: 5
   },
   articleFlag: {
     marginBottom: 11,

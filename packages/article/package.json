@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "0.19.8",
+  "version": "0.20.0",
   "description": "The article",
   "main": "article",
   "scripts": {
@@ -68,19 +68,19 @@
   },
   "dependencies": {
     "@times-components/ad": "0.5.2",
-    "@times-components/article-byline": "0.8.2",
+    "@times-components/article-byline": "0.9.0",
     "@times-components/article-flag": "0.8.3",
-    "@times-components/article-headline": "0.9.3",
-    "@times-components/article-image": "0.5.2",
+    "@times-components/article-image": "0.6.0",
     "@times-components/article-label": "0.5.3",
-    "@times-components/date-publication": "0.5.2",
+    "@times-components/date-publication": "0.6.0",
     "@times-components/image": "1.7.2",
     "@times-components/markup": "0.13.2",
     "@times-components/provider": "0.17.4",
     "@times-components/tracking": "0.4.3",
     "lodash.get": "4.4.2",
     "prop-types": "15.6.0",
-    "react-native-web": "0.1.14"
+    "react-native-web": "0.1.14",
+    "styled-components": "2.2.3"
   },
   "peerDependencies": {
     "react": ">=16",

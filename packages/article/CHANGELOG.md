@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.20.0"></a>
+# [0.20.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.19.8...@times-components/article@0.20.0) (2017-12-07)
+
+
+### Features
+
+* make article responsive ([#421](https://github.com/newsuk/times-components/issues/421)) ([3c2aaf7](https://github.com/newsuk/times-components/commit/3c2aaf7))
+
+
+
+
 <a name="0.19.8"></a>
 ## [0.19.8](https://github.com/newsuk/times-components/compare/@times-components/article@0.19.7...@times-components/article@0.19.8) (2017-12-06)
 

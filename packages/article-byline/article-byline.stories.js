@@ -1,13 +1,23 @@
 import React from "react";
+<<<<<<< HEAD
 import { storiesOf } from "dextrose/storiesOfOverloader";
+=======
+import { Text } from "react-native";
+import { storiesOf } from "@storybook/react-native";
+>>>>>>> master
 import ArticleByline from "./article-byline";
 
 const authorsAST = require("./fixtures/authors.json");
 
 const bylineStyles = {
-  byline: {
-    color: "blue"
-  },
+  fontSize: 13,
+  fontFamily: "GillSansMTStd-Medium",
+  color: "#696969",
+  lineHeight: 13,
+  flexDirection: "row"
+};
+
+const bylineLinkStyles = {
   link: {
     color: "red",
     textDecorationLine: "none"
@@ -16,23 +26,35 @@ const bylineStyles = {
 
 storiesOf("ArticleByline", module)
   .add("ArticleByline with a single author", () => (
-    <ArticleByline ast={authorsAST.singleAuthor} />
+    <Text style={bylineStyles}>
+      <ArticleByline ast={authorsAST.singleAuthor} />
+    </Text>
   ))
   .add("ArticleByline with a text only element", () => (
-    <ArticleByline ast={authorsAST.singleInlineElement} />
+    <Text style={bylineStyles}>
+      <ArticleByline ast={authorsAST.singleInlineElement} />
+    </Text>
   ))
   .add("ArticleByline with multiple authors", () => (
-    <ArticleByline ast={authorsAST.multipleAuthorsCommaSeparated} />
+    <Text style={bylineStyles}>
+      <ArticleByline ast={authorsAST.multipleAuthorsCommaSeparated} />
+    </Text>
   ))
   .add("ArticleByline with author in the beginning", () => (
-    <ArticleByline ast={authorsAST.authorInTheBeginning} />
+    <Text style={bylineStyles}>
+      <ArticleByline ast={authorsAST.authorInTheBeginning} />
+    </Text>
   ))
   .add("ArticleByline with author at the end", () => (
-    <ArticleByline ast={authorsAST.authorAtTheEnd} />
+    <Text style={bylineStyles}>
+      <ArticleByline ast={authorsAST.authorAtTheEnd} />
+    </Text>
   ))
   .add("ArticleByline with styles", () => (
-    <ArticleByline
-      ast={authorsAST.multipleAuthorsCommaSeparated}
-      style={bylineStyles}
-    />
+    <Text style={bylineStyles}>
+      <ArticleByline
+        ast={authorsAST.multipleAuthorsCommaSeparated}
+        style={bylineLinkStyles}
+      />
+    </Text>
   ));

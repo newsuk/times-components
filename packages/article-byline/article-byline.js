@@ -1,9 +1,8 @@
 /* eslint-disable react/no-array-index-key */
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 import { TextLink } from "@times-components/link";
 import { renderTrees } from "@times-components/markup";
-import styles from "./article-byline-styles";
 
 import {
   articleBylinePropTypes,
@@ -16,34 +15,24 @@ const linkStyles = StyleSheet.create({
   }
 });
 
-const ArticleByline = ({ ast, style }) => (
-  <View style={[styles.container, style.container]}>
-    <Text
-      accessibilityLabel="articleByline"
-      testID="articleByline"
-      style={[styles.byline, style.byline, styles.bylineColor]}
-    >
-      {renderTrees(ast, {
-        author(key, attributes, children) {
-          const url = `/profile/${attributes.slug}`;
-          return (
-            <TextLink
-              style={[linkStyles.link, style.link]}
-              key={key}
-              url={url}
-              onPress={() => {}}
-            >
-              {children}
-            </TextLink>
-          );
-        }
-      })}
-    </Text>
-  </View>
-);
-
-export default ArticleByline;
+const ArticleByline = ({ ast, style }) =>
+  renderTrees(ast, {
+    author(key, attributes, children) {
+      const url = `/profile/${attributes.slug}`;
+      return (
+        <TextLink
+          style={[linkStyles.link, style.link]}
+          key={key}
+          url={url}
+          onPress={() => {}}
+        >
+          {children}
+        </TextLink>
+      );
+    }
+  });
 
 ArticleByline.propTypes = articleBylinePropTypes;
-
 ArticleByline.defaultProps = articleBylineDefaultPropTypes;
+
+export default ArticleByline;

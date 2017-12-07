@@ -12,6 +12,18 @@ const sharedStyles = {
   articleMetaElement: {
     borderTopColor: "#d0cece",
     borderTopWidth: StyleSheet.hairlineWidth
+  },
+  datePublication: {
+    color: "#696969",
+    fontSize: 13,
+    lineHeight: 15,
+    fontFamily: "GillSansMTStd-Medium"
+  },
+  byline: {
+    fontSize: 13,
+    fontFamily: "GillSansMTStd-Medium",
+    color: "#696969",
+    lineHeight: 13
   }
 };
 

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/date-publication",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "description": "Date and Publication properties",
   "main": "date-publication",
   "scripts": {
@@ -64,6 +64,7 @@
     "react-dom": "16.0.0",
     "react-native": "0.50.1",
     "react-test-renderer": "16.0.0",
+    "styled-components": "2.2.3",
     "webpack": "3.3.0"
   },
   "dependencies": {
