@@ -7680,7 +7680,9 @@ exports[`Article test on ios renders full article 1`] = `
                     Object {
                       "paddingTop": 10,
                     },
-                    undefined,
+                    Object {
+                      "paddingLeft": 10,
+                    },
                   ]
                 }
               >

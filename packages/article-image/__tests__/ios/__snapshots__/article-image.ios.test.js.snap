@@ -1,8 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Article Image test on ios does not render Article Image display is not received 1`] = `
+exports[`Article Image test on ios Renders Article Image with no caption 1`] = `
 <View
-  style={undefined}
+  style={
+    Object {
+      "flexDirection": "column",
+      "paddingBottom": 25,
+      "width": "100%",
+    }
+  }
 >
   <View
     style={undefined}
@@ -99,6 +105,13 @@ exports[`Article Image test on ios does not render Article Image display is not 
       </View>
     </View>
   </View>
+</View>
+`;
+
+exports[`Article Image test on ios does not render Article Image if display is not received 1`] = `
+<View
+  style={undefined}
+>
   <View
     style={undefined}
   >
@@ -110,6 +123,81 @@ exports[`Article Image test on ios does not render Article Image display is not 
               "paddingTop": 10,
             },
             undefined,
+          ]
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 16,
+              },
+              undefined,
+            ]
+          }
+        >
+          All the latest stories in culture and books.
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 16,
+              },
+              Object {
+                "color": "#333",
+                "fontSize": 9,
+                "fontWeight": "400",
+                "letterSpacing": 1,
+                "lineHeight": 16,
+              },
+              undefined,
+            ]
+          }
+        >
+          THE CREDITS
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Article Image test on ios does not render Article Image if ratio is not received 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "column",
+      "paddingBottom": 25,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={undefined}
+  >
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingTop": 10,
+            },
+            Object {
+              "paddingLeft": 10,
+            },
           ]
         }
       >
@@ -751,7 +839,9 @@ exports[`Article Image test on ios renders primary image correctly 1`] = `
             Object {
               "paddingTop": 10,
             },
-            undefined,
+            Object {
+              "paddingLeft": 10,
+            },
           ]
         }
       >
