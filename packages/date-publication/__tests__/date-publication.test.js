@@ -11,19 +11,8 @@ describe("Date Publication test", () => {
     publication: "TIMES"
   };
 
-  it("renders a DatePublication component with content", () => {
+  it("renders a DatePublication component with full content", () => {
     const tree = renderer.create(<DatePublication {...props} />).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("renders a DatePublication component with red font color", () => {
-    const styleProps = {
-      ...props,
-      style: {
-        color: "red"
-      }
-    };
-    const tree = renderer.create(<DatePublication {...styleProps} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

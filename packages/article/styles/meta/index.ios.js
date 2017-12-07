@@ -9,6 +9,10 @@ const styles = StyleSheet.create({
     ...sharedStyles.articleMetaElement,
     paddingTop: 9,
     paddingBottom: 4
+  },
+  byline: {
+    ...sharedStyles.byline,
+    lineHeight: 14
   }
 });
 

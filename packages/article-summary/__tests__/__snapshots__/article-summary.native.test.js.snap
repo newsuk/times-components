@@ -75,15 +75,12 @@ exports[`renders an article-summary component with content 1`] = `
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 15,
-        },
-        Object {},
-      ]
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+      }
     }
     testID="datePublication"
   >
@@ -234,15 +231,12 @@ exports[`renders an article-summary component with content including line breaks
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 15,
-        },
-        Object {},
-      ]
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+      }
     }
     testID="datePublication"
   >
@@ -334,15 +328,12 @@ exports[`renders an article-summary component with empty content at the end trim
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 15,
-        },
-        Object {},
-      ]
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+      }
     }
     testID="datePublication"
   >
@@ -410,15 +401,12 @@ exports[`renders an article-summary component with headline and no content 1`] =
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 15,
-        },
-        Object {},
-      ]
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+      }
     }
     testID="datePublication"
   >

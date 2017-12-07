@@ -496,9 +496,10 @@ exports[`Article test on android renders article no flags 1`] = `
       >
         <View
           accessibilityLabel="label"
+          className="sc-bwzfXH jeBWru"
           style={
             Object {
-              "paddingBottom": 3,
+              "paddingBottom": 5,
               "paddingTop": 4,
             }
           }
@@ -529,30 +530,20 @@ exports[`Article test on android renders article no flags 1`] = `
           </Text>
         </View>
         <Text
-          accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
+          className="sc-bdVaJa jgzvie"
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 28,
-                "fontWeight": "400",
-                "lineHeight": 37,
-                "marginBottom": 7,
-              },
-            ]
+            Object {
+              "color": "#1d1d1b",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 28,
+              "fontWeight": "400",
+              "lineHeight": 37,
+              "marginBottom": 7,
+            }
           }
-          testID="headline"
         >
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
@@ -566,7 +557,7 @@ exports[`Article test on android renders article no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesModern-Regular",
-                "fontSize": 21,
+                "fontSize": 20,
                 "lineHeight": 29,
                 "marginTop": -7,
                 "paddingBottom": 15,
@@ -584,14 +575,20 @@ exports[`Article test on android renders article no flags 1`] = `
       style={null}
     >
       <View
+        className="sc-ifAKCX gkdadk"
         style={
           Array [
             Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
+              "paddingTop": 9,
             },
             Object {
-              "paddingTop": 9,
+              "borderBottomColor": "#d0cece",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+            },
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
             },
           ]
         }
@@ -599,98 +596,63 @@ exports[`Article test on android renders article no flags 1`] = `
         <View
           style={
             Object {
-              "borderBottomColor": "#d0cece",
-              "borderBottomWidth": 0.5,
-              "marginBottom": 20,
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 8,
+              "paddingTop": 6,
             }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
             style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 8,
-                  "paddingTop": 6,
-                },
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexDirection": "row",
-                  },
-                  undefined,
-                ]
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 17,
               }
-            >
-              <Text
-                accessibilityLabel="articleByline"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 17,
-                    },
-                    undefined,
-                    Object {
-                      "color": "#696969",
-                    },
-                  ]
-                }
-                testID="articleByline"
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-                </Text>
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 8,
-                  "paddingTop": 6,
-                },
-              ]
             }
           >
             <Text
-              accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
-              }
-              testID="datePublication"
             >
-              Friday March 13 2015
-              , The Times
+              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
-          </View>
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 8,
+              "paddingTop": 6,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Friday March 13 2015
+            , The Times
+          </Text>
         </View>
       </View>
     </View>
@@ -719,7 +681,7 @@ exports[`Article test on android renders article no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -781,7 +743,7 @@ exports[`Article test on android renders article no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -829,7 +791,7 @@ exports[`Article test on android renders article no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -866,7 +828,7 @@ exports[`Article test on android renders article no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -903,7 +865,7 @@ exports[`Article test on android renders article no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -940,7 +902,7 @@ exports[`Article test on android renders article no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -977,7 +939,7 @@ exports[`Article test on android renders article no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -1457,30 +1419,20 @@ exports[`Article test on android renders article no label 1`] = `
         }
       >
         <Text
-          accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
+          className="sc-bdVaJa jgzvie"
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 28,
-                "fontWeight": "400",
-                "lineHeight": 37,
-                "marginBottom": 7,
-              },
-            ]
+            Object {
+              "color": "#1d1d1b",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 28,
+              "fontWeight": "400",
+              "lineHeight": 37,
+              "marginBottom": 7,
+            }
           }
-          testID="headline"
         >
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
@@ -1494,7 +1446,7 @@ exports[`Article test on android renders article no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesModern-Regular",
-                "fontSize": 21,
+                "fontSize": 20,
                 "lineHeight": 29,
                 "marginTop": -7,
                 "paddingBottom": 15,
@@ -1506,6 +1458,7 @@ exports[`Article test on android renders article no label 1`] = `
           How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life
         </Text>
         <View
+          className="sc-htpNat hhKBzK"
           style={
             Array [
               Object {
@@ -1651,14 +1604,20 @@ exports[`Article test on android renders article no label 1`] = `
       style={null}
     >
       <View
+        className="sc-ifAKCX gkdadk"
         style={
           Array [
             Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
+              "paddingTop": 9,
             },
             Object {
-              "paddingTop": 9,
+              "borderBottomColor": "#d0cece",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+            },
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
             },
           ]
         }
@@ -1666,98 +1625,63 @@ exports[`Article test on android renders article no label 1`] = `
         <View
           style={
             Object {
-              "borderBottomColor": "#d0cece",
-              "borderBottomWidth": 0.5,
-              "marginBottom": 20,
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 8,
+              "paddingTop": 6,
             }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
             style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 8,
-                  "paddingTop": 6,
-                },
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexDirection": "row",
-                  },
-                  undefined,
-                ]
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 17,
               }
-            >
-              <Text
-                accessibilityLabel="articleByline"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 17,
-                    },
-                    undefined,
-                    Object {
-                      "color": "#696969",
-                    },
-                  ]
-                }
-                testID="articleByline"
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-                </Text>
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 8,
-                  "paddingTop": 6,
-                },
-              ]
             }
           >
             <Text
-              accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
-              }
-              testID="datePublication"
             >
-              Friday March 13 2015
-              , The Times
+              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
-          </View>
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 8,
+              "paddingTop": 6,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Friday March 13 2015
+            , The Times
+          </Text>
         </View>
       </View>
     </View>
@@ -1786,7 +1710,7 @@ exports[`Article test on android renders article no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -1848,7 +1772,7 @@ exports[`Article test on android renders article no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -1896,7 +1820,7 @@ exports[`Article test on android renders article no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -1933,7 +1857,7 @@ exports[`Article test on android renders article no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -1970,7 +1894,7 @@ exports[`Article test on android renders article no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -2007,7 +1931,7 @@ exports[`Article test on android renders article no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -2044,7 +1968,7 @@ exports[`Article test on android renders article no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -2521,30 +2445,20 @@ exports[`Article test on android renders article no label no flags 1`] = `
         }
       >
         <Text
-          accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
+          className="sc-bdVaJa jgzvie"
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 28,
-                "fontWeight": "400",
-                "lineHeight": 37,
-                "marginBottom": 7,
-              },
-            ]
+            Object {
+              "color": "#1d1d1b",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 28,
+              "fontWeight": "400",
+              "lineHeight": 37,
+              "marginBottom": 7,
+            }
           }
-          testID="headline"
         >
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
@@ -2558,7 +2472,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesModern-Regular",
-                "fontSize": 21,
+                "fontSize": 20,
                 "lineHeight": 29,
                 "marginTop": -7,
                 "paddingBottom": 15,
@@ -2576,14 +2490,20 @@ exports[`Article test on android renders article no label no flags 1`] = `
       style={null}
     >
       <View
+        className="sc-ifAKCX gkdadk"
         style={
           Array [
             Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
+              "paddingTop": 9,
             },
             Object {
-              "paddingTop": 9,
+              "borderBottomColor": "#d0cece",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+            },
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
             },
           ]
         }
@@ -2591,98 +2511,63 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <View
           style={
             Object {
-              "borderBottomColor": "#d0cece",
-              "borderBottomWidth": 0.5,
-              "marginBottom": 20,
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 8,
+              "paddingTop": 6,
             }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
             style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 8,
-                  "paddingTop": 6,
-                },
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexDirection": "row",
-                  },
-                  undefined,
-                ]
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 17,
               }
-            >
-              <Text
-                accessibilityLabel="articleByline"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 17,
-                    },
-                    undefined,
-                    Object {
-                      "color": "#696969",
-                    },
-                  ]
-                }
-                testID="articleByline"
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-                </Text>
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 8,
-                  "paddingTop": 6,
-                },
-              ]
             }
           >
             <Text
-              accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
-              }
-              testID="datePublication"
             >
-              Friday March 13 2015
-              , The Times
+              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
-          </View>
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 8,
+              "paddingTop": 6,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Friday March 13 2015
+            , The Times
+          </Text>
         </View>
       </View>
     </View>
@@ -2711,7 +2596,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -2773,7 +2658,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -2821,7 +2706,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -2858,7 +2743,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -2895,7 +2780,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -2932,7 +2817,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -2969,7 +2854,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -3446,30 +3331,20 @@ exports[`Article test on android renders article no label no flags no standfirst
         }
       >
         <Text
-          accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
+          className="sc-bdVaJa jgzvie"
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 28,
-                "fontWeight": "400",
-                "lineHeight": 37,
-                "marginBottom": 7,
-              },
-            ]
+            Object {
+              "color": "#1d1d1b",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 28,
+              "fontWeight": "400",
+              "lineHeight": 37,
+              "marginBottom": 7,
+            }
           }
-          testID="headline"
         >
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
@@ -3480,14 +3355,20 @@ exports[`Article test on android renders article no label no flags no standfirst
       style={null}
     >
       <View
+        className="sc-ifAKCX gkdadk"
         style={
           Array [
             Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
+              "paddingTop": 9,
             },
             Object {
-              "paddingTop": 9,
+              "borderBottomColor": "#d0cece",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+            },
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
             },
           ]
         }
@@ -3495,98 +3376,63 @@ exports[`Article test on android renders article no label no flags no standfirst
         <View
           style={
             Object {
-              "borderBottomColor": "#d0cece",
-              "borderBottomWidth": 0.5,
-              "marginBottom": 20,
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 8,
+              "paddingTop": 6,
             }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
             style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 8,
-                  "paddingTop": 6,
-                },
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexDirection": "row",
-                  },
-                  undefined,
-                ]
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 17,
               }
-            >
-              <Text
-                accessibilityLabel="articleByline"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 17,
-                    },
-                    undefined,
-                    Object {
-                      "color": "#696969",
-                    },
-                  ]
-                }
-                testID="articleByline"
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-                </Text>
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 8,
-                  "paddingTop": 6,
-                },
-              ]
             }
           >
             <Text
-              accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
-              }
-              testID="datePublication"
             >
-              Friday March 13 2015
-              , The Times
+              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
-          </View>
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 8,
+              "paddingTop": 6,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Friday March 13 2015
+            , The Times
+          </Text>
         </View>
       </View>
     </View>
@@ -3615,7 +3461,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -3677,7 +3523,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -3725,7 +3571,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -3762,7 +3608,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -3799,7 +3645,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -3836,7 +3682,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -3873,7 +3719,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -4354,9 +4200,10 @@ exports[`Article test on android renders article no standfirst 1`] = `
       >
         <View
           accessibilityLabel="label"
+          className="sc-bwzfXH jeBWru"
           style={
             Object {
-              "paddingBottom": 3,
+              "paddingBottom": 5,
               "paddingTop": 4,
             }
           }
@@ -4387,34 +4234,25 @@ exports[`Article test on android renders article no standfirst 1`] = `
           </Text>
         </View>
         <Text
-          accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
+          className="sc-bdVaJa jgzvie"
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 28,
-                "fontWeight": "400",
-                "lineHeight": 37,
-                "marginBottom": 7,
-              },
-            ]
+            Object {
+              "color": "#1d1d1b",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 28,
+              "fontWeight": "400",
+              "lineHeight": 37,
+              "marginBottom": 7,
+            }
           }
-          testID="headline"
         >
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
         <View
+          className="sc-htpNat hhKBzK"
           style={
             Array [
               Object {
@@ -4560,14 +4398,20 @@ exports[`Article test on android renders article no standfirst 1`] = `
       style={null}
     >
       <View
+        className="sc-ifAKCX gkdadk"
         style={
           Array [
             Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
+              "paddingTop": 9,
             },
             Object {
-              "paddingTop": 9,
+              "borderBottomColor": "#d0cece",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+            },
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
             },
           ]
         }
@@ -4575,98 +4419,63 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <View
           style={
             Object {
-              "borderBottomColor": "#d0cece",
-              "borderBottomWidth": 0.5,
-              "marginBottom": 20,
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 8,
+              "paddingTop": 6,
             }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
             style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 8,
-                  "paddingTop": 6,
-                },
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexDirection": "row",
-                  },
-                  undefined,
-                ]
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 17,
               }
-            >
-              <Text
-                accessibilityLabel="articleByline"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 17,
-                    },
-                    undefined,
-                    Object {
-                      "color": "#696969",
-                    },
-                  ]
-                }
-                testID="articleByline"
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-                </Text>
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 8,
-                  "paddingTop": 6,
-                },
-              ]
             }
           >
             <Text
-              accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
-              }
-              testID="datePublication"
             >
-              Friday March 13 2015
-              , The Times
+              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
-          </View>
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 8,
+              "paddingTop": 6,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Friday March 13 2015
+            , The Times
+          </Text>
         </View>
       </View>
     </View>
@@ -4695,7 +4504,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -4757,7 +4566,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -4805,7 +4614,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -4842,7 +4651,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -4879,7 +4688,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -4916,7 +4725,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -4953,7 +4762,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -5431,9 +5240,10 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
       >
         <View
           accessibilityLabel="label"
+          className="sc-bwzfXH jeBWru"
           style={
             Object {
-              "paddingBottom": 3,
+              "paddingBottom": 5,
               "paddingTop": 4,
             }
           }
@@ -5464,30 +5274,20 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           </Text>
         </View>
         <Text
-          accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
+          className="sc-bdVaJa jgzvie"
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 28,
-                "fontWeight": "400",
-                "lineHeight": 37,
-                "marginBottom": 7,
-              },
-            ]
+            Object {
+              "color": "#1d1d1b",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 28,
+              "fontWeight": "400",
+              "lineHeight": 37,
+              "marginBottom": 7,
+            }
           }
-          testID="headline"
         >
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
@@ -5498,14 +5298,20 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
       style={null}
     >
       <View
+        className="sc-ifAKCX gkdadk"
         style={
           Array [
             Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
+              "paddingTop": 9,
             },
             Object {
-              "paddingTop": 9,
+              "borderBottomColor": "#d0cece",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+            },
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
             },
           ]
         }
@@ -5513,98 +5319,63 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <View
           style={
             Object {
-              "borderBottomColor": "#d0cece",
-              "borderBottomWidth": 0.5,
-              "marginBottom": 20,
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 8,
+              "paddingTop": 6,
             }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
             style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 8,
-                  "paddingTop": 6,
-                },
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexDirection": "row",
-                  },
-                  undefined,
-                ]
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 17,
               }
-            >
-              <Text
-                accessibilityLabel="articleByline"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 17,
-                    },
-                    undefined,
-                    Object {
-                      "color": "#696969",
-                    },
-                  ]
-                }
-                testID="articleByline"
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-                </Text>
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 8,
-                  "paddingTop": 6,
-                },
-              ]
             }
           >
             <Text
-              accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
-              }
-              testID="datePublication"
             >
-              Friday March 13 2015
-              , The Times
+              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
-          </View>
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 8,
+              "paddingTop": 6,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Friday March 13 2015
+            , The Times
+          </Text>
         </View>
       </View>
     </View>
@@ -5633,7 +5404,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -5695,7 +5466,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -5743,7 +5514,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -5780,7 +5551,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -5817,7 +5588,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -5854,7 +5625,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -5891,7 +5662,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -6371,34 +6142,25 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         }
       >
         <Text
-          accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
+          className="sc-bdVaJa jgzvie"
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 28,
-                "fontWeight": "400",
-                "lineHeight": 37,
-                "marginBottom": 7,
-              },
-            ]
+            Object {
+              "color": "#1d1d1b",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 28,
+              "fontWeight": "400",
+              "lineHeight": 37,
+              "marginBottom": 7,
+            }
           }
-          testID="headline"
         >
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
         <View
+          className="sc-htpNat hhKBzK"
           style={
             Array [
               Object {
@@ -6544,14 +6306,20 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
       style={null}
     >
       <View
+        className="sc-ifAKCX gkdadk"
         style={
           Array [
             Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
+              "paddingTop": 9,
             },
             Object {
-              "paddingTop": 9,
+              "borderBottomColor": "#d0cece",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+            },
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
             },
           ]
         }
@@ -6559,98 +6327,63 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <View
           style={
             Object {
-              "borderBottomColor": "#d0cece",
-              "borderBottomWidth": 0.5,
-              "marginBottom": 20,
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 8,
+              "paddingTop": 6,
             }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
             style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 8,
-                  "paddingTop": 6,
-                },
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexDirection": "row",
-                  },
-                  undefined,
-                ]
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 17,
               }
-            >
-              <Text
-                accessibilityLabel="articleByline"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 17,
-                    },
-                    undefined,
-                    Object {
-                      "color": "#696969",
-                    },
-                  ]
-                }
-                testID="articleByline"
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-                </Text>
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 8,
-                  "paddingTop": 6,
-                },
-              ]
             }
           >
             <Text
-              accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
-              }
-              testID="datePublication"
             >
-              Friday March 13 2015
-              , The Times
+              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
-          </View>
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 8,
+              "paddingTop": 6,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Friday March 13 2015
+            , The Times
+          </Text>
         </View>
       </View>
     </View>
@@ -6679,7 +6412,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -6741,7 +6474,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -6789,7 +6522,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -6826,7 +6559,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -6863,7 +6596,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -6900,7 +6633,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -6937,7 +6670,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -7487,9 +7220,10 @@ exports[`Article test on android renders full article 1`] = `
       >
         <View
           accessibilityLabel="label"
+          className="sc-bwzfXH jeBWru"
           style={
             Object {
-              "paddingBottom": 3,
+              "paddingBottom": 5,
               "paddingTop": 4,
             }
           }
@@ -7520,30 +7254,20 @@ exports[`Article test on android renders full article 1`] = `
           </Text>
         </View>
         <Text
-          accessibilityLabel="headline"
           accessible={true}
           allowFontScaling={true}
+          className="sc-bdVaJa jgzvie"
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#1D1D1B",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "400",
-                "lineHeight": 25,
-                "marginBottom": 8,
-              },
-              Object {
-                "color": "#000000",
-                "fontSize": 28,
-                "fontWeight": "400",
-                "lineHeight": 37,
-                "marginBottom": 7,
-              },
-            ]
+            Object {
+              "color": "#1d1d1b",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 28,
+              "fontWeight": "400",
+              "lineHeight": 37,
+              "marginBottom": 7,
+            }
           }
-          testID="headline"
         >
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
@@ -7557,7 +7281,7 @@ exports[`Article test on android renders full article 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesModern-Regular",
-                "fontSize": 21,
+                "fontSize": 20,
                 "lineHeight": 29,
                 "marginTop": -7,
                 "paddingBottom": 15,
@@ -7569,6 +7293,7 @@ exports[`Article test on android renders full article 1`] = `
           How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life
         </Text>
         <View
+          className="sc-htpNat hhKBzK"
           style={
             Array [
               Object {
@@ -7714,14 +7439,20 @@ exports[`Article test on android renders full article 1`] = `
       style={null}
     >
       <View
+        className="sc-ifAKCX gkdadk"
         style={
           Array [
             Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
+              "paddingTop": 9,
             },
             Object {
-              "paddingTop": 9,
+              "borderBottomColor": "#d0cece",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 20,
+            },
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
             },
           ]
         }
@@ -7729,98 +7460,63 @@ exports[`Article test on android renders full article 1`] = `
         <View
           style={
             Object {
-              "borderBottomColor": "#d0cece",
-              "borderBottomWidth": 0.5,
-              "marginBottom": 20,
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 8,
+              "paddingTop": 6,
             }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
             style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 8,
-                  "paddingTop": 6,
-                },
-              ]
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "flexDirection": "row",
-                  },
-                  undefined,
-                ]
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 17,
               }
-            >
-              <Text
-                accessibilityLabel="articleByline"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 17,
-                    },
-                    undefined,
-                    Object {
-                      "color": "#696969",
-                    },
-                  ]
-                }
-                testID="articleByline"
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-                </Text>
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              Array [
-                Object {
-                  "borderTopColor": "#d0cece",
-                  "borderTopWidth": 0.5,
-                  "paddingBottom": 8,
-                  "paddingTop": 6,
-                },
-              ]
             }
           >
             <Text
-              accessibilityLabel="datePublication"
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                  },
-                  Object {},
-                ]
-              }
-              testID="datePublication"
             >
-              Friday March 13 2015
-              , The Times
+              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
-          </View>
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderTopColor": "#d0cece",
+              "borderTopWidth": 0.5,
+              "paddingBottom": 8,
+              "paddingTop": 6,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            className="sc-bxivhb bZsssb"
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#696969",
+                "fontFamily": "GillSansMTStd-Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Friday March 13 2015
+            , The Times
+          </Text>
         </View>
       </View>
     </View>
@@ -7849,7 +7545,7 @@ exports[`Article test on android renders full article 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -7911,7 +7607,7 @@ exports[`Article test on android renders full article 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -8131,7 +7827,7 @@ exports[`Article test on android renders full article 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -8168,7 +7864,7 @@ exports[`Article test on android renders full article 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
@@ -8392,7 +8088,7 @@ exports[`Article test on android renders full article 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesDigitalW04",
-                "fontSize": 16,
+                "fontSize": 17,
                 "fontStyle": "normal",
                 "lineHeight": 26,
                 "marginBottom": 20,
