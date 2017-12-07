@@ -57,10 +57,10 @@ LeadAssetComponent.propTypes = {
   leadAsset: PropTypes.shape({
     caption: PropTypes.string,
     credits: PropTypes.string,
-    crop: {
+    crop: PropTypes.shape({
       ratio: PropTypes.string,
       url: PropTypes.string
-    }
+    })
   })
 };
 
