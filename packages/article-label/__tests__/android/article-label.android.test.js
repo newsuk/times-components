@@ -4,13 +4,13 @@ import shared from "../shared";
 
 jest.mock("react-native", () => {
   const reactNative = require.requireActual("react-native");
-  reactNative.Platform.OS = "ios";
+  reactNative.Platform.OS = "android";
   jest
     .spyOn(reactNative.Platform, "select")
-    .mockImplementation(obj => obj.ios || obj.default);
+    .mockImplementation(obj => obj.android || obj.default);
   return reactNative;
 });
 
-describe("Article test on ios", () => {
+describe("Article Label test on android", () => {
   shared();
 });

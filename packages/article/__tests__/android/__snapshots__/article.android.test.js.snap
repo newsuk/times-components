@@ -516,6 +516,8 @@ exports[`Article test on android renders article no flags 1`] = `
                   "fontWeight": "400",
                   "letterSpacing": 1.2,
                   "lineHeight": 12,
+                  "marginBottom": -4,
+                  "paddingTop": 5,
                 },
                 Object {
                   "color": "#13354E",
@@ -526,79 +528,34 @@ exports[`Article test on android renders article no flags 1`] = `
             H U R R I C A N E   I R M A
           </Text>
         </View>
-        <WebView
-          onNavigationStateChange={[Function]}
-          source={
-            Object {
-              "baseUrl": "https://www.thetimes.co.uk/",
-              "html": "
-<style>
-  body, html, #height-wrapper {
-    margin: 0;
-    padding: 0;
-  }
-  #height-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-</style>
-
-    <div>
-      <style>
-        @font-face {
-          font-family: TimesModern-Bold;
-          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
-          font-weight: 400;
-          font-style: normal;
-        }
-        p {
-          color: #1D1D1B;
-          font-size: 22px;
-          line-height: 25px;
-          margin-bottom: 8px;
-          font-family: TimesModern-Bold;
-          font-weight: 400;
-          letter-spacing: 0.5px;
-        }
-      </style>
-      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
-    </div>
-  
-<script>
-  ;(function() {
-  var wrapper = document.createElement(\\"div\\");
-  wrapper.id = \\"height-wrapper\\";
-  while (document.body.firstChild) {
-    wrapper.appendChild(document.body.firstChild);
-  }
-  document.body.appendChild(wrapper);
-  var i = 0;
-  function updateHeight() {
-    document.title = wrapper.clientHeight;
-    window.location.hash = ++i;
-  }
-  updateHeight();
-  window.addEventListener(\\"load\\", function() {
-    updateHeight();
-    setTimeout(updateHeight, 1000);
-  });
-  window.addEventListener(\\"resize\\", updateHeight);
-  }());
-</script>
-",
-            }
-          }
+        <Text
+          accessibilityLabel="headline"
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
           style={
             Array [
-              null,
               Object {
-                "height": 20,
+                "color": "#1D1D1B",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 22,
+                "fontWeight": "400",
+                "lineHeight": 25,
+                "marginBottom": 8,
+              },
+              Object {
+                "color": "#000000",
+                "fontSize": 28,
+                "fontWeight": "400",
+                "lineHeight": 37,
+                "marginBottom": 7,
               },
             ]
           }
-        />
+          testID="headline"
+        >
+          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
+        </Text>
         <Text
           accessibilityLabel="standfirst"
           accessible={true}
@@ -611,7 +568,8 @@ exports[`Article test on android renders article no flags 1`] = `
                 "fontFamily": "TimesModern-Regular",
                 "fontSize": 21,
                 "lineHeight": 29,
-                "paddingBottom": 9,
+                "marginTop": -7,
+                "paddingBottom": 15,
               },
             ]
           }
@@ -1498,79 +1456,34 @@ exports[`Article test on android renders article no label 1`] = `
           ]
         }
       >
-        <WebView
-          onNavigationStateChange={[Function]}
-          source={
-            Object {
-              "baseUrl": "https://www.thetimes.co.uk/",
-              "html": "
-<style>
-  body, html, #height-wrapper {
-    margin: 0;
-    padding: 0;
-  }
-  #height-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-</style>
-
-    <div>
-      <style>
-        @font-face {
-          font-family: TimesModern-Bold;
-          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
-          font-weight: 400;
-          font-style: normal;
-        }
-        p {
-          color: #1D1D1B;
-          font-size: 22px;
-          line-height: 25px;
-          margin-bottom: 8px;
-          font-family: TimesModern-Bold;
-          font-weight: 400;
-          letter-spacing: 0.5px;
-        }
-      </style>
-      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
-    </div>
-  
-<script>
-  ;(function() {
-  var wrapper = document.createElement(\\"div\\");
-  wrapper.id = \\"height-wrapper\\";
-  while (document.body.firstChild) {
-    wrapper.appendChild(document.body.firstChild);
-  }
-  document.body.appendChild(wrapper);
-  var i = 0;
-  function updateHeight() {
-    document.title = wrapper.clientHeight;
-    window.location.hash = ++i;
-  }
-  updateHeight();
-  window.addEventListener(\\"load\\", function() {
-    updateHeight();
-    setTimeout(updateHeight, 1000);
-  });
-  window.addEventListener(\\"resize\\", updateHeight);
-  }());
-</script>
-",
-            }
-          }
+        <Text
+          accessibilityLabel="headline"
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
           style={
             Array [
-              null,
               Object {
-                "height": 20,
+                "color": "#1D1D1B",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 22,
+                "fontWeight": "400",
+                "lineHeight": 25,
+                "marginBottom": 8,
+              },
+              Object {
+                "color": "#000000",
+                "fontSize": 28,
+                "fontWeight": "400",
+                "lineHeight": 37,
+                "marginBottom": 7,
               },
             ]
           }
-        />
+          testID="headline"
+        >
+          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
+        </Text>
         <Text
           accessibilityLabel="standfirst"
           accessible={true}
@@ -1583,7 +1496,8 @@ exports[`Article test on android renders article no label 1`] = `
                 "fontFamily": "TimesModern-Regular",
                 "fontSize": 21,
                 "lineHeight": 29,
-                "paddingBottom": 9,
+                "marginTop": -7,
+                "paddingBottom": 15,
               },
             ]
           }
@@ -2606,79 +2520,34 @@ exports[`Article test on android renders article no label no flags 1`] = `
           ]
         }
       >
-        <WebView
-          onNavigationStateChange={[Function]}
-          source={
-            Object {
-              "baseUrl": "https://www.thetimes.co.uk/",
-              "html": "
-<style>
-  body, html, #height-wrapper {
-    margin: 0;
-    padding: 0;
-  }
-  #height-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-</style>
-
-    <div>
-      <style>
-        @font-face {
-          font-family: TimesModern-Bold;
-          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
-          font-weight: 400;
-          font-style: normal;
-        }
-        p {
-          color: #1D1D1B;
-          font-size: 22px;
-          line-height: 25px;
-          margin-bottom: 8px;
-          font-family: TimesModern-Bold;
-          font-weight: 400;
-          letter-spacing: 0.5px;
-        }
-      </style>
-      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
-    </div>
-  
-<script>
-  ;(function() {
-  var wrapper = document.createElement(\\"div\\");
-  wrapper.id = \\"height-wrapper\\";
-  while (document.body.firstChild) {
-    wrapper.appendChild(document.body.firstChild);
-  }
-  document.body.appendChild(wrapper);
-  var i = 0;
-  function updateHeight() {
-    document.title = wrapper.clientHeight;
-    window.location.hash = ++i;
-  }
-  updateHeight();
-  window.addEventListener(\\"load\\", function() {
-    updateHeight();
-    setTimeout(updateHeight, 1000);
-  });
-  window.addEventListener(\\"resize\\", updateHeight);
-  }());
-</script>
-",
-            }
-          }
+        <Text
+          accessibilityLabel="headline"
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
           style={
             Array [
-              null,
               Object {
-                "height": 20,
+                "color": "#1D1D1B",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 22,
+                "fontWeight": "400",
+                "lineHeight": 25,
+                "marginBottom": 8,
+              },
+              Object {
+                "color": "#000000",
+                "fontSize": 28,
+                "fontWeight": "400",
+                "lineHeight": 37,
+                "marginBottom": 7,
               },
             ]
           }
-        />
+          testID="headline"
+        >
+          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
+        </Text>
         <Text
           accessibilityLabel="standfirst"
           accessible={true}
@@ -2691,7 +2560,8 @@ exports[`Article test on android renders article no label no flags 1`] = `
                 "fontFamily": "TimesModern-Regular",
                 "fontSize": 21,
                 "lineHeight": 29,
-                "paddingBottom": 9,
+                "marginTop": -7,
+                "paddingBottom": 15,
               },
             ]
           }
@@ -3575,79 +3445,34 @@ exports[`Article test on android renders article no label no flags no standfirst
           ]
         }
       >
-        <WebView
-          onNavigationStateChange={[Function]}
-          source={
-            Object {
-              "baseUrl": "https://www.thetimes.co.uk/",
-              "html": "
-<style>
-  body, html, #height-wrapper {
-    margin: 0;
-    padding: 0;
-  }
-  #height-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-</style>
-
-    <div>
-      <style>
-        @font-face {
-          font-family: TimesModern-Bold;
-          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
-          font-weight: 400;
-          font-style: normal;
-        }
-        p {
-          color: #1D1D1B;
-          font-size: 22px;
-          line-height: 25px;
-          margin-bottom: 8px;
-          font-family: TimesModern-Bold;
-          font-weight: 400;
-          letter-spacing: 0.5px;
-        }
-      </style>
-      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
-    </div>
-  
-<script>
-  ;(function() {
-  var wrapper = document.createElement(\\"div\\");
-  wrapper.id = \\"height-wrapper\\";
-  while (document.body.firstChild) {
-    wrapper.appendChild(document.body.firstChild);
-  }
-  document.body.appendChild(wrapper);
-  var i = 0;
-  function updateHeight() {
-    document.title = wrapper.clientHeight;
-    window.location.hash = ++i;
-  }
-  updateHeight();
-  window.addEventListener(\\"load\\", function() {
-    updateHeight();
-    setTimeout(updateHeight, 1000);
-  });
-  window.addEventListener(\\"resize\\", updateHeight);
-  }());
-</script>
-",
-            }
-          }
+        <Text
+          accessibilityLabel="headline"
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
           style={
             Array [
-              null,
               Object {
-                "height": 20,
+                "color": "#1D1D1B",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 22,
+                "fontWeight": "400",
+                "lineHeight": 25,
+                "marginBottom": 8,
+              },
+              Object {
+                "color": "#000000",
+                "fontSize": 28,
+                "fontWeight": "400",
+                "lineHeight": 37,
+                "marginBottom": 7,
               },
             ]
           }
-        />
+          testID="headline"
+        >
+          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
+        </Text>
       </View>
     </View>
     <View
@@ -4549,6 +4374,8 @@ exports[`Article test on android renders article no standfirst 1`] = `
                   "fontWeight": "400",
                   "letterSpacing": 1.2,
                   "lineHeight": 12,
+                  "marginBottom": -4,
+                  "paddingTop": 5,
                 },
                 Object {
                   "color": "#13354E",
@@ -4559,79 +4386,34 @@ exports[`Article test on android renders article no standfirst 1`] = `
             H U R R I C A N E   I R M A
           </Text>
         </View>
-        <WebView
-          onNavigationStateChange={[Function]}
-          source={
-            Object {
-              "baseUrl": "https://www.thetimes.co.uk/",
-              "html": "
-<style>
-  body, html, #height-wrapper {
-    margin: 0;
-    padding: 0;
-  }
-  #height-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-</style>
-
-    <div>
-      <style>
-        @font-face {
-          font-family: TimesModern-Bold;
-          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
-          font-weight: 400;
-          font-style: normal;
-        }
-        p {
-          color: #1D1D1B;
-          font-size: 22px;
-          line-height: 25px;
-          margin-bottom: 8px;
-          font-family: TimesModern-Bold;
-          font-weight: 400;
-          letter-spacing: 0.5px;
-        }
-      </style>
-      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
-    </div>
-  
-<script>
-  ;(function() {
-  var wrapper = document.createElement(\\"div\\");
-  wrapper.id = \\"height-wrapper\\";
-  while (document.body.firstChild) {
-    wrapper.appendChild(document.body.firstChild);
-  }
-  document.body.appendChild(wrapper);
-  var i = 0;
-  function updateHeight() {
-    document.title = wrapper.clientHeight;
-    window.location.hash = ++i;
-  }
-  updateHeight();
-  window.addEventListener(\\"load\\", function() {
-    updateHeight();
-    setTimeout(updateHeight, 1000);
-  });
-  window.addEventListener(\\"resize\\", updateHeight);
-  }());
-</script>
-",
-            }
-          }
+        <Text
+          accessibilityLabel="headline"
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
           style={
             Array [
-              null,
               Object {
-                "height": 20,
+                "color": "#1D1D1B",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 22,
+                "fontWeight": "400",
+                "lineHeight": 25,
+                "marginBottom": 8,
+              },
+              Object {
+                "color": "#000000",
+                "fontSize": 28,
+                "fontWeight": "400",
+                "lineHeight": 37,
+                "marginBottom": 7,
               },
             ]
           }
-        />
+          testID="headline"
+        >
+          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
+        </Text>
         <View
           style={
             Array [
@@ -5669,6 +5451,8 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
                   "fontWeight": "400",
                   "letterSpacing": 1.2,
                   "lineHeight": 12,
+                  "marginBottom": -4,
+                  "paddingTop": 5,
                 },
                 Object {
                   "color": "#13354E",
@@ -5679,79 +5463,34 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             H U R R I C A N E   I R M A
           </Text>
         </View>
-        <WebView
-          onNavigationStateChange={[Function]}
-          source={
-            Object {
-              "baseUrl": "https://www.thetimes.co.uk/",
-              "html": "
-<style>
-  body, html, #height-wrapper {
-    margin: 0;
-    padding: 0;
-  }
-  #height-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-</style>
-
-    <div>
-      <style>
-        @font-face {
-          font-family: TimesModern-Bold;
-          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
-          font-weight: 400;
-          font-style: normal;
-        }
-        p {
-          color: #1D1D1B;
-          font-size: 22px;
-          line-height: 25px;
-          margin-bottom: 8px;
-          font-family: TimesModern-Bold;
-          font-weight: 400;
-          letter-spacing: 0.5px;
-        }
-      </style>
-      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
-    </div>
-  
-<script>
-  ;(function() {
-  var wrapper = document.createElement(\\"div\\");
-  wrapper.id = \\"height-wrapper\\";
-  while (document.body.firstChild) {
-    wrapper.appendChild(document.body.firstChild);
-  }
-  document.body.appendChild(wrapper);
-  var i = 0;
-  function updateHeight() {
-    document.title = wrapper.clientHeight;
-    window.location.hash = ++i;
-  }
-  updateHeight();
-  window.addEventListener(\\"load\\", function() {
-    updateHeight();
-    setTimeout(updateHeight, 1000);
-  });
-  window.addEventListener(\\"resize\\", updateHeight);
-  }());
-</script>
-",
-            }
-          }
+        <Text
+          accessibilityLabel="headline"
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
           style={
             Array [
-              null,
               Object {
-                "height": 20,
+                "color": "#1D1D1B",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 22,
+                "fontWeight": "400",
+                "lineHeight": 25,
+                "marginBottom": 8,
+              },
+              Object {
+                "color": "#000000",
+                "fontSize": 28,
+                "fontWeight": "400",
+                "lineHeight": 37,
+                "marginBottom": 7,
               },
             ]
           }
-        />
+          testID="headline"
+        >
+          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
+        </Text>
       </View>
     </View>
     <View
@@ -6631,79 +6370,34 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           ]
         }
       >
-        <WebView
-          onNavigationStateChange={[Function]}
-          source={
-            Object {
-              "baseUrl": "https://www.thetimes.co.uk/",
-              "html": "
-<style>
-  body, html, #height-wrapper {
-    margin: 0;
-    padding: 0;
-  }
-  #height-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-</style>
-
-    <div>
-      <style>
-        @font-face {
-          font-family: TimesModern-Bold;
-          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
-          font-weight: 400;
-          font-style: normal;
-        }
-        p {
-          color: #1D1D1B;
-          font-size: 22px;
-          line-height: 25px;
-          margin-bottom: 8px;
-          font-family: TimesModern-Bold;
-          font-weight: 400;
-          letter-spacing: 0.5px;
-        }
-      </style>
-      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
-    </div>
-  
-<script>
-  ;(function() {
-  var wrapper = document.createElement(\\"div\\");
-  wrapper.id = \\"height-wrapper\\";
-  while (document.body.firstChild) {
-    wrapper.appendChild(document.body.firstChild);
-  }
-  document.body.appendChild(wrapper);
-  var i = 0;
-  function updateHeight() {
-    document.title = wrapper.clientHeight;
-    window.location.hash = ++i;
-  }
-  updateHeight();
-  window.addEventListener(\\"load\\", function() {
-    updateHeight();
-    setTimeout(updateHeight, 1000);
-  });
-  window.addEventListener(\\"resize\\", updateHeight);
-  }());
-</script>
-",
-            }
-          }
+        <Text
+          accessibilityLabel="headline"
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
           style={
             Array [
-              null,
               Object {
-                "height": 20,
+                "color": "#1D1D1B",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 22,
+                "fontWeight": "400",
+                "lineHeight": 25,
+                "marginBottom": 8,
+              },
+              Object {
+                "color": "#000000",
+                "fontSize": 28,
+                "fontWeight": "400",
+                "lineHeight": 37,
+                "marginBottom": 7,
               },
             ]
           }
-        />
+          testID="headline"
+        >
+          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
+        </Text>
         <View
           style={
             Array [
@@ -7396,8 +7090,8 @@ exports[`Article test on android renders full article 1`] = `
             "caption": "All the latest stories in culture and books.",
             "credits": "The credits",
             "display": "primary",
-            "ratio": "1500:1200",
-            "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0",
+            "ratio": "1500:1000",
+            "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0",
           },
           "children": Array [],
           "name": "image",
@@ -7813,6 +7507,8 @@ exports[`Article test on android renders full article 1`] = `
                   "fontWeight": "400",
                   "letterSpacing": 1.2,
                   "lineHeight": 12,
+                  "marginBottom": -4,
+                  "paddingTop": 5,
                 },
                 Object {
                   "color": "#13354E",
@@ -7823,79 +7519,34 @@ exports[`Article test on android renders full article 1`] = `
             H U R R I C A N E   I R M A
           </Text>
         </View>
-        <WebView
-          onNavigationStateChange={[Function]}
-          source={
-            Object {
-              "baseUrl": "https://www.thetimes.co.uk/",
-              "html": "
-<style>
-  body, html, #height-wrapper {
-    margin: 0;
-    padding: 0;
-  }
-  #height-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-</style>
-
-    <div>
-      <style>
-        @font-face {
-          font-family: TimesModern-Bold;
-          src: url(/fonts/TimesModern-Bold.woff2) format(\\"woff2\\"), url(/fonts/TimesModern-Bold.woff) format(\\"woff\\"), url(/fonts/TimesModern-Bold.ttf) format(\\"truetype\\");
-          font-weight: 400;
-          font-style: normal;
-        }
-        p {
-          color: #1D1D1B;
-          font-size: 22px;
-          line-height: 25px;
-          margin-bottom: 8px;
-          font-family: TimesModern-Bold;
-          font-weight: 400;
-          letter-spacing: 0.5px;
-        }
-      </style>
-      <p>Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record</p>
-    </div>
-  
-<script>
-  ;(function() {
-  var wrapper = document.createElement(\\"div\\");
-  wrapper.id = \\"height-wrapper\\";
-  while (document.body.firstChild) {
-    wrapper.appendChild(document.body.firstChild);
-  }
-  document.body.appendChild(wrapper);
-  var i = 0;
-  function updateHeight() {
-    document.title = wrapper.clientHeight;
-    window.location.hash = ++i;
-  }
-  updateHeight();
-  window.addEventListener(\\"load\\", function() {
-    updateHeight();
-    setTimeout(updateHeight, 1000);
-  });
-  window.addEventListener(\\"resize\\", updateHeight);
-  }());
-</script>
-",
-            }
-          }
+        <Text
+          accessibilityLabel="headline"
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
           style={
             Array [
-              null,
               Object {
-                "height": 20,
+                "color": "#1D1D1B",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 22,
+                "fontWeight": "400",
+                "lineHeight": 25,
+                "marginBottom": 8,
+              },
+              Object {
+                "color": "#000000",
+                "fontSize": 28,
+                "fontWeight": "400",
+                "lineHeight": 37,
+                "marginBottom": 7,
               },
             ]
           }
-        />
+          testID="headline"
+        >
+          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
+        </Text>
         <Text
           accessibilityLabel="standfirst"
           accessible={true}
@@ -7908,7 +7559,8 @@ exports[`Article test on android renders full article 1`] = `
                 "fontFamily": "TimesModern-Regular",
                 "fontSize": 21,
                 "lineHeight": 29,
-                "paddingBottom": 9,
+                "marginTop": -7,
+                "paddingBottom": 15,
               },
             ]
           }
@@ -8300,7 +7952,7 @@ exports[`Article test on android renders full article 1`] = `
             style={undefined}
           >
             <View
-              aspectRatio={1.25}
+              aspectRatio={1.5}
               style={Object {}}
             >
               <View
@@ -8315,7 +7967,7 @@ exports[`Article test on android renders full article 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0",
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0",
                     }
                   }
                   style={

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-label",
-  "version": "0.5.0",
+  "version": "0.5.3",
   "description": "The article label",
   "main": "article-label",
   "scripts": {
@@ -44,6 +44,7 @@
   "devDependencies": {
     "@storybook/react-native": "3.2.11",
     "@times-components/utils": "0.0.2",
+    "@times-components/jest-configurator": "0.0.8",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",
