@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Button, View } from "react-native";
-import { storiesOf } from "../../storybook/storiesOfOverloader";
+import { storiesOf } from "@storybook/react-native";
 import {
   withTrackingContext,
   withTrackEvents,

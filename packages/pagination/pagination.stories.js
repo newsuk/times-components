@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import { action } from "@storybook/addon-actions";
 import { withTrackingContext } from "@times-components/tracking";
-import { storiesOf } from "../../storybook/storiesOfOverloader";
+import { storiesOf } from "@storybook/react-native";
 import Pagination, { withPageState } from "./pagination";
 import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
 import LateralSpacingDecorator from "../../storybook/decorators/lateral-spacing";

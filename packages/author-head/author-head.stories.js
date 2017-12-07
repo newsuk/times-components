@@ -1,7 +1,7 @@
 import React from "react";
 import { decorateAction, action } from "@storybook/addon-actions";
 import { withTrackingContext } from "@times-components/tracking";
-import { storiesOf } from "../../storybook/storiesOfOverloader";
+import { storiesOf } from "@storybook/react-native";
 import AuthorHead from "./author-head";
 import LateralSpacingDecorator from "../../storybook/decorators/lateral-spacing";
 

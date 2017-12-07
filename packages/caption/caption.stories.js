@@ -1,7 +1,7 @@
 import "react-native";
 import React from "react";
 import Image from "@times-components/image";
-import { storiesOf } from "../../storybook/storiesOfOverloader";
+import { storiesOf } from "@storybook/react-native";
 import Caption from "./caption";
 
 const captionText =
