@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.12.0"></a>
+# [0.12.0](https://github.com/newsuk/times-components/compare/@times-components/card@0.11.3...@times-components/card@0.12.0) (2017-12-07)
+
+
+### Features
+
+* make article responsive ([#421](https://github.com/newsuk/times-components/issues/421)) ([3c2aaf7](https://github.com/newsuk/times-components/commit/3c2aaf7))
+
+
+
+
 <a name="0.11.3"></a>
 ## [0.11.3](https://github.com/newsuk/times-components/compare/@times-components/card@0.11.1...@times-components/card@0.11.3) (2017-12-04)
 
