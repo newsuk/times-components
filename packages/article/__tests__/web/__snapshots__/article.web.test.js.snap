@@ -4549,13 +4549,13 @@ exports[`Article test on web renders full article 1`] = `
                     "display": "table",
                     "height": 0,
                     "overflow": "hidden",
-                    "paddingBottom": "80%",
+                    "paddingBottom": "66.66666666666667%",
                   }
                 }
               >
                 <img
                   alt=""
-                  src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0"
+                  src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0"
                   style={
                     Object {
                       "display": "block",
