@@ -1,6 +1,6 @@
 import "react-native";
 import React from "react";
-import { storiesOf } from "@storybook/react-native";
+import { storiesOf } from "dextrose/storiesOfOverloader";
 import Watermark from "./watermark";
 
 storiesOf("Watermark", module)

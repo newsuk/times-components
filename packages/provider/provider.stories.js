@@ -1,6 +1,6 @@
 import React from "react";
 import { Text } from "react-native";
-import { storiesOf } from "@storybook/react-native";
+import { storiesOf } from "dextrose/storiesOfOverloader";
 // eslint-disable-next-line import/no-unresolved
 import { addTypenameToDocument } from "apollo-utilities";
 import gql from "graphql-tag";

@@ -1,6 +1,6 @@
 import "react-native";
 import React from "react";
-import { storiesOf } from "@storybook/react-native";
+import { storiesOf } from "dextrose/storiesOfOverloader";
 import ArticleImage from "./article-image";
 
 const primaryImage = require("./fixtures/primary-image.json").fixture;

@@ -16,5 +16,6 @@ const reporter =
 
 export default e => {
   if (reporter) reporter.analytics(e);
-  action("analytics-event")(e);
+
+  if (!global.storiesOf) action("analytics-event")(e);
 };

@@ -8,7 +8,9 @@
     "test": "jest --bail --ci --coverage",
     "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
     "fmt": "prettier --write '**/*.+(js|json|md)'",
-    "lint": "eslint . && yarn prettier:diff"
+    "lint": "eslint . && yarn prettier:diff",
+    "dextrose-stories": "dextrose-stories",
+    "dextrose-clean": "dextrose-clean"
   },
   "jest": {
     "preset": "react-native",
@@ -50,6 +52,7 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
+    "dextrose": "1.2.5",
     "enzyme": "3.2.0",
     "enzyme-adapter-react-16": "1.1.0",
     "eslint": "4.9.0",
