@@ -206,8 +206,7 @@ exports[`Card test on web renders 1`] = `
             }
           }
         >
-          Saturday July 01 2017
-          , The Sunday Times
+          Saturday July 01 2017, The Sunday Times
         </div>
       </div>
     </div>
@@ -490,8 +489,7 @@ exports[`Card test on web renders without image 1`] = `
             }
           }
         >
-          Saturday July 01 2017
-          , The Sunday Times
+          Saturday July 01 2017, The Sunday Times
         </div>
       </div>
     </div>
@@ -623,8 +621,7 @@ exports[`Card test on web renders without image url 1`] = `
             }
           }
         >
-          Saturday July 01 2017
-          , The Sunday Times
+          Saturday July 01 2017, The Sunday Times
         </div>
       </div>
     </div>

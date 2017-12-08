@@ -1802,8 +1802,7 @@ exports[`renders profile content component 1`] = `
                         }
                       }
                     >
-                      Friday November 17 2017
-                      , The Times
+                      Friday November 17 2017, The Times
                     </div>
                   </div>
                 </div>
@@ -1947,8 +1946,7 @@ exports[`renders profile content component 1`] = `
                         }
                       }
                     >
-                      Friday November 17 2017
-                      , The Times
+                      Friday November 17 2017, The Times
                     </div>
                   </div>
                 </div>
@@ -2092,8 +2090,7 @@ exports[`renders profile content component 1`] = `
                         }
                       }
                     >
-                      Tuesday November 14 2017
-                      , The Times
+                      Tuesday November 14 2017, The Times
                     </div>
                   </div>
                 </div>
@@ -2294,8 +2291,7 @@ exports[`renders profile content item component 1`] = `
                 }
               }
             >
-              Friday November 17 2017
-              , The Times
+              Friday November 17 2017, The Times
             </div>
           </div>
         </div>
@@ -2433,8 +2429,7 @@ exports[`renders profile content item component with a specific image size 1`] =
                 }
               }
             >
-              Friday November 17 2017
-              , The Times
+              Friday November 17 2017, The Times
             </div>
           </div>
         </div>
@@ -2529,8 +2524,7 @@ exports[`renders profile content item component with no image 1`] = `
                 }
               }
             >
-              Friday November 17 2017
-              , The Times
+              Friday November 17 2017, The Times
             </div>
           </div>
         </div>
