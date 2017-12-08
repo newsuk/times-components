@@ -5,7 +5,6 @@ const sharedStyles = {
     color: "#1d1d1b",
     marginBottom: 7,
     fontFamily: "TimesModern-Bold",
-    fontWeight: 400
   },
   standFirst: {
     fontSize: 20,

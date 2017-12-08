@@ -21,7 +21,6 @@ export const HeaderContainer = styled(View)`
 /* --- Meta --- */
 
 export const MetaContainer = styled(View)`
-
   @media (min-width: ${config.mediumBreakpoint}) {
     width: ${config.mediumBpWidth};
     margin: 0 auto;
