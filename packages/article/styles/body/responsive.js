@@ -4,12 +4,6 @@ import config from "../responsive-config";
 
 /* --- Body --- */
 
-const leadAssetBehaviour = leadAsset => (leadAsset ? "0" : "-9px");
-
-export const BodyContainer = styled(View)`
-  margin-top: ${props => leadAssetBehaviour(props.leadAsset)};
-`;
-
 export const ParagraphContainer = styled(View)`
   ${config.articleContainerPadding} ${config.mediumBpPositioning} ${config.wideBpPositioning};
 `;

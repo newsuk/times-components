@@ -15,6 +15,7 @@ import listViewDataHelper from "./data-helper";
 import styles from "./styles/body";
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
+import ArticleBody from "./article-body";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
@@ -54,40 +55,7 @@ class ArticlePage extends React.Component {
         />
       );
     } else if (rowData.type === "articleBodyRow") {
-      return (
-        <View key={rowData.type + rowData.index}>
-          {renderTrees([rowData.data], {
-            paragraph(key, attributes, children) {
-              return (
-                <View
-                  testID={`paragraph-${rowData.index}`}
-                  accessibilityLabel={`paragraph-${rowData.index}`}
-                  key={key}
-                  style={[styles.articleMainContentRow]}
-                >
-                  <Text style={styles.articleTextElement}>{children}</Text>
-                </View>
-              );
-            },
-            image(key, attributes) {
-              return (
-                <ArticleImage
-                  key={key}
-                  imageOptions={{
-                    display: attributes.display,
-                    ratio: attributes.ratio,
-                    url: attributes.url
-                  }}
-                  captionOptions={{
-                    caption: attributes.caption,
-                    credits: attributes.credits
-                  }}
-                />
-              );
-            }
-          })}
-        </View>
-      );
+      return <ArticleBody content={rowData} index={rowData.index} />;
     }
 
     return null;
