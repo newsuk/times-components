@@ -1,9 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import get from "lodash.get";
 import { AdComposer } from "@times-components/ad";
-import { withTrackingContext } from "@times-components/tracking";
 
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
@@ -11,6 +9,8 @@ import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
 import ArticleBody from "./article-body";
 import LeadAssetComponent from "./article-lead-asset.web";
+
+import articleTrackingContext from "./article-tracking-context";
 
 import {
   MainContainer,
@@ -106,11 +106,4 @@ ArticlePage.defaultProps = {
   error: null
 };
 
-export default withTrackingContext(ArticlePage, {
-  trackingObject: "Article",
-  getAttrs: ({ article } = {}) => ({
-    byline: get(article, "byline[0].children[0].attributes.value", ""),
-    headline: get(article, "headline", ""),
-    publishedTime: get(article, "publishedTime", "")
-  })
-});
+export default articleTrackingContext(ArticlePage);

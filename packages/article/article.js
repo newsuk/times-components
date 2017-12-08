@@ -1,11 +1,7 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
-import get from "lodash.get";
-import { renderTrees } from "@times-components/markup";
 import Image from "@times-components/image";
-import ArticleImage from "@times-components/article-image";
-import { withTrackingContext } from "@times-components/tracking";
 
 import ArticleContent from "./article-content";
 import ArticleError from "./article-error";
@@ -16,6 +12,8 @@ import styles from "./styles/body";
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
 import ArticleBody from "./article-body";
+
+import articleTrackingContext from "./article-tracking-context";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
@@ -128,11 +126,4 @@ ArticlePage.defaultProps = {
   error: null
 };
 
-export default withTrackingContext(ArticlePage, {
-  trackingObject: "Article",
-  getAttrs: ({ article } = {}) => ({
-    byline: get(article, "byline[0].children[0].attributes.value", ""),
-    headline: get(article, "headline", ""),
-    publishedTime: get(article, "publishedTime", "")
-  })
-});
+export default articleTrackingContext(ArticlePage);
