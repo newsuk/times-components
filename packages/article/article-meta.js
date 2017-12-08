@@ -14,8 +14,8 @@ const ArticleMetaRow = (textStyle, component) => (
   </View>
 );
 
-const ArticleMeta = ({ byline, publishedTime, publicationName, style }) => (
-  <Meta style={[styles.articleMiddleContainer, styles.articleMeta, ...style]}>
+const ArticleMeta = ({ byline, publishedTime, publicationName }) => (
+  <Meta style={[styles.articleMiddleContainer, styles.articleMeta]}>
     {ArticleMetaRow(styles.byline, <ArticleByline ast={byline} />)}
     {ArticleMetaRow(
       styles.datePublication,

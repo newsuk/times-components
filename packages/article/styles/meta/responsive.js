@@ -11,6 +11,14 @@ export const MetaTextElement = styled(Text)`
 `;
 
 export const Meta = styled(View)`
+  margin-left: 10px;
+  margin-right: 10px;
+
+  @media (min-width: ${config.mediumBreakpoint}) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   @media (min-width: ${config.wideBreakpoint}) {
     padding-top: 0px;
   }

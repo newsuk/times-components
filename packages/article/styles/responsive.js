@@ -21,7 +21,13 @@ export const HeaderContainer = styled(View)`
 /* --- Meta --- */
 
 export const MetaContainer = styled(View)`
-  ${config.articleContainerPadding} ${config.mediumBpPositioning} @media (min-width: ${config.wideBreakpoint}) {
+
+  @media (min-width: ${config.mediumBreakpoint}) {
+    width: ${config.mediumBpWidth};
+    margin: 0 auto;
+  }
+
+  @media (min-width: ${config.wideBreakpoint}) {
     margin-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
