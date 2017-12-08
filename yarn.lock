@@ -274,9 +274,9 @@
     webpack-dev-server "^2.8.2"
     webpack-merge "^4.1.0"
 
-"@times-components/fructose@3.1.7":
-  version "3.1.7"
-  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.1.7.tgz#ed0eb137355ef6429cd57503658a946ece29b9fd"
+"@times-components/fructose@3.1.8":
+  version "3.1.8"
+  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.1.8.tgz#9d7c733c3d20c8e7f284cd4a26c1fd110efd6835"
   dependencies:
     babel-polyfill "^6.26.0"
     babel-preset-es2015 "^6.24.1"
@@ -3739,9 +3739,9 @@ dextrose@1.2.5:
     socket.io-client "^2.0.4"
     wd "1.4.1"
 
-dextrose@1.2.6:
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.2.6.tgz#37f41a2377a1aabc9650d0ba25b2016ae4dd9d4c"
+dextrose@1.2.8:
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.2.8.tgz#7bf7817af4410282c2116231c6fcc98625d143b8"
   dependencies:
     babel-core "6.26.0"
     babel-preset-react-native "4.0.0"

@@ -1,7 +1,21 @@
+## generic
 **/node_modules/*
 **/coverage/*
 dist
+__snapshots__
 **/package.json
-**/android/*
-**/ios/*
+android/*
+ios/*
+CHANGELOG.md
+.*
+LICENSE
+yarn.lock
+
+# specific to root
 .storybook.native/story-loader.js
+*.yml
+*.html
+*.sh
+packages
+settings.gradle
+build.gradle

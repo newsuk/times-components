@@ -1,14 +1,14 @@
 {
   "name": "@times-components/article-byline",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "Article byline information",
   "main": "article-byline",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "yarn test -- --watchAll",
     "test": "jest --config='./jest.config.json' --ci --bail --coverage",
-    "fmt": "prettier --write '**/*.+(js|json|md)'",
-    "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
+    "fmt": "prettier --write '**/*.*'",
+    "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "dextrose-stories": "dextrose-stories",
     "dextrose-clean": "dextrose-clean"
@@ -57,8 +57,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/link": "0.11.3",
-    "@times-components/markup": "0.13.3",
+    "@times-components/link": "0.11.4",
+    "@times-components/markup": "0.13.4",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.14"
   },

@@ -1,10 +1,10 @@
 {
   "name": "@times-components/utils",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "scripts": {
     "make-schema": "node ./scripts/fetch-gql-schema",
-    "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
-    "fmt": "prettier --write '**/*.+(js|json|md)'",
+    "prettier:diff": "prettier --list-different '**/*.*'",
+    "fmt": "prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff"
   },
   "description": "A set of helpers and/or workarounds to be shared across packages",
