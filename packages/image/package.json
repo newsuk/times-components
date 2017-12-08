@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "main": "image",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -62,7 +62,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/gradient": "0.2.2",
+    "@times-components/gradient": "0.2.3",
     "@times-components/jest-configurator": "0.0.10",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.14",

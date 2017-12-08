@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "0.12.0",
+  "version": "0.12.1",
   "main": "card",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -63,9 +63,9 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/article-summary": "0.10.0",
-    "@times-components/gradient": "0.2.2",
-    "@times-components/image": "1.7.2",
+    "@times-components/article-summary": "0.10.1",
+    "@times-components/gradient": "0.2.3",
+    "@times-components/image": "1.7.3",
     "@times-components/jest-configurator": "0.0.10",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.0",

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "0.29.0",
+  "version": "0.29.1",
   "description": "Author info along with articles they have written",
   "main": "author-profile",
   "scripts": {
@@ -67,13 +67,13 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/author-head": "0.10.3",
-    "@times-components/card": "0.12.0",
-    "@times-components/gradient": "0.2.2",
-    "@times-components/link": "0.11.2",
-    "@times-components/pagination": "0.11.3",
-    "@times-components/provider": "0.17.4",
-    "@times-components/tracking": "0.4.3",
+    "@times-components/author-head": "0.10.4",
+    "@times-components/card": "0.12.1",
+    "@times-components/gradient": "0.2.3",
+    "@times-components/link": "0.11.3",
+    "@times-components/pagination": "0.11.4",
+    "@times-components/provider": "0.17.5",
+    "@times-components/tracking": "0.4.4",
     "lodash.get": "4.4.2",
     "lodash.merge": "4.6.0",
     "prop-types": "15.6.0",
