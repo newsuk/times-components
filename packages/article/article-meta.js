@@ -1,12 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, ViewPropTypes } from "react-native";
+import { View } from "react-native";
 import ArticleByline from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
 import styles from "./styles/meta";
 import { MetaTextElement, Meta } from "./styles/meta/responsive";
-
-const { style: ViewStylePropTypes } = ViewPropTypes;
 
 const ArticleMetaRow = (textStyle, component) => (
   <View style={styles.articleMetaElement}>
@@ -41,15 +39,13 @@ nodeShape.children = PropTypes.arrayOf(
 ArticleMeta.propTypes = {
   byline: PropTypes.arrayOf(PropTypes.shape(nodeShape)),
   publishedTime: PropTypes.string,
-  publicationName: PropTypes.string,
-  style: ViewStylePropTypes
+  publicationName: PropTypes.string
 };
 
 ArticleMeta.defaultProps = {
   byline: [],
   publishedTime: null,
-  publicationName: null,
-  style: {}
+  publicationName: null
 };
 
 export default ArticleMeta;
