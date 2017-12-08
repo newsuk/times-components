@@ -8,15 +8,15 @@ Enzyme.configure({ adapter: new React16Adapter() });
 
 export default () => {
   describe("Previous page icon", () => {
-    it("renders out an svg and the passed in label", () => {
-      const icon = shallow(<PreviousPageIcon label="a label" />);
+    it("renders out an svg and label", () => {
+      const icon = shallow(<PreviousPageIcon />);
       expect(icon).toMatchSnapshot();
     });
   });
 
   describe("Next page icon", () => {
-    it("renders out an svg and the passed in label", () => {
-      const icon = shallow(<NextPageIcon label="a label" />);
+    it("renders out an svg and label", () => {
+      const icon = shallow(<NextPageIcon />);
       expect(icon).toMatchSnapshot();
     });
   });

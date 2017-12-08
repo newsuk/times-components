@@ -3,5 +3,11 @@
   "rootDir": "../../",
   "coverageDirectory": "<rootDir>/packages/pagination/coverage/native/",
   "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
-  "testMatch": ["<rootDir>/packages/pagination/__tests__/**.native.test.js"]
+  "testMatch": ["<rootDir>/packages/pagination/__tests__/**.native.test.js"],
+  "collectCoverageFrom": [
+    "**/packages/pagination/*.js",
+    "!**/packages/pagination/*.web.js",
+    "!**/packages/pagination/*.stories.js",
+    "!**/packages/pagination/__tests__/*-helper.js"
+  ]
 }

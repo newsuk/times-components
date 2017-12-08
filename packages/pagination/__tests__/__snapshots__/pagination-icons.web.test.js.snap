@@ -1,12 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PaginationIcons Web Next page icon renders out an svg and the passed in label 1`] = `
+exports[`PaginationIcons Web Next page icon renders out an svg and label 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <NextPageIcon
-    label="a label"
-  />,
+  Symbol(enzyme.__unrendered__): <NextPageIcon />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -23,7 +21,9 @@ ShallowWrapper {
         <Text
           style={65}
         >
-          a label
+          <PageLabel
+            direction="Next"
+          />
         </Text>,
         <Svg
           height={9}
@@ -48,11 +48,23 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "a label",
+          "children": <PageLabel
+            direction="Next"
+          />,
           "style": 65,
         },
         "ref": null,
-        "rendered": "a label",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "direction": "Next",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         "type": [Function],
       },
       Object {
@@ -111,7 +123,9 @@ ShallowWrapper {
           <Text
             style={65}
           >
-            a label
+            <PageLabel
+              direction="Next"
+            />
           </Text>,
           <Svg
             height={9}
@@ -136,11 +150,23 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "a label",
+            "children": <PageLabel
+              direction="Next"
+            />,
             "style": 65,
           },
           "ref": null,
-          "rendered": "a label",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "direction": "Next",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           "type": [Function],
         },
         Object {
@@ -200,13 +226,11 @@ ShallowWrapper {
 }
 `;
 
-exports[`PaginationIcons Web Previous page icon renders out an svg and the passed in label 1`] = `
+exports[`PaginationIcons Web Previous page icon renders out an svg and label 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PreviousPageIcon
-    label="a label"
-  />,
+  Symbol(enzyme.__unrendered__): <PreviousPageIcon />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -236,7 +260,9 @@ ShallowWrapper {
         <Text
           style={66}
         >
-          a label
+          <PageLabel
+            direction="Previous"
+          />
         </Text>,
       ],
       "style": 64,
@@ -291,11 +317,23 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "a label",
+          "children": <PageLabel
+            direction="Previous"
+          />,
           "style": 66,
         },
         "ref": null,
-        "rendered": "a label",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "direction": "Previous",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         "type": [Function],
       },
     ],
@@ -324,7 +362,9 @@ ShallowWrapper {
           <Text
             style={66}
           >
-            a label
+            <PageLabel
+              direction="Previous"
+            />
           </Text>,
         ],
         "style": 64,
@@ -379,11 +419,23 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "a label",
+            "children": <PageLabel
+              direction="Previous"
+            />,
             "style": 66,
           },
           "ref": null,
-          "rendered": "a label",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "direction": "Previous",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           "type": [Function],
         },
       ],
