@@ -1,45 +1,13 @@
 {
   "data": {
     "author": {
-      "name": "Fiona Hamilton",
-      "jobTitle": "Legal Editor",
+      "name": "Deborah Haynes",
+      "jobTitle": "Defence Editor",
       "biography": [
         {
           "name": "text",
           "attributes": {
-            "value": "Lorem "
-          },
-          "children": []
-        },
-        {
-          "name": "bold",
-          "attributes": {},
-          "children": [
-            {
-              "name": "text",
-              "attributes": {
-                "value": "ipsum"
-              },
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "text",
-          "attributes": {
-            "value": " testbr "
-          },
-          "children": []
-        },
-        {
-          "name": "break",
-          "attributes": {},
-          "children": []
-        },
-        {
-          "name": "text",
-          "attributes": {
-            "value": "More text "
+            "value": "Deborah Haynes is the defence editor at "
           },
           "children": []
         },
@@ -50,11 +18,19 @@
             {
               "name": "text",
               "attributes": {
-                "value": " last "
+                "value": "The Times"
               },
               "children": []
             }
           ]
+        },
+        {
+          "name": "text",
+          "attributes": {
+            "value":
+              ", covering the most important defence & security news in the UK and around the world."
+          },
+          "children": []
         }
       ],
       "image": "//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
