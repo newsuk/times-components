@@ -8,8 +8,8 @@
     "test:native": "jest --config='./jest.config.json'",
     "test:web": "jest --config='./jest.config.web.json'",
     "test": "yarn test:native --ci --bail --coverage && yarn test:web --ci --bail --coverage",
-    "fmt": "prettier --write '**/*.+(js|json|md)'",
-    "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
+    "fmt": "prettier --write '**/*.*'",
+    "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "dextrose-stories": "dextrose-stories",
     "dextrose-clean": "dextrose-clean"
