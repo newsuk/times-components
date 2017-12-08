@@ -8,7 +8,7 @@ beforeAll(async () => {
   jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
   await fructose.hooks.mobile.setup();
   await detox.init(config.detox);
-  console.log("loaded Detox")
+  console.log("loaded Detox");
 }, 240000);
 
 afterAll(async () => {
