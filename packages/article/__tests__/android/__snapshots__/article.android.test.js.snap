@@ -575,7 +575,7 @@ exports[`Article test on android renders article no flags 1`] = `
       style={null}
     >
       <View
-        className="sc-ifAKCX gkdadk"
+        className="sc-ifAKCX JuOZc"
         style={
           Array [
             Object {
@@ -585,10 +585,10 @@ exports[`Article test on android renders article no flags 1`] = `
               "borderBottomColor": "#d0cece",
               "borderBottomWidth": 0.5,
               "marginBottom": 20,
-            },
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
+              "marginLeft": 10,
+              "marginRight": 10,
+              "paddingLeft": 0,
+              "paddingRight": 0,
             },
           ]
         }
@@ -1603,7 +1603,7 @@ exports[`Article test on android renders article no label 1`] = `
       style={null}
     >
       <View
-        className="sc-ifAKCX gkdadk"
+        className="sc-ifAKCX JuOZc"
         style={
           Array [
             Object {
@@ -1613,10 +1613,10 @@ exports[`Article test on android renders article no label 1`] = `
               "borderBottomColor": "#d0cece",
               "borderBottomWidth": 0.5,
               "marginBottom": 20,
-            },
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
+              "marginLeft": 10,
+              "marginRight": 10,
+              "paddingLeft": 0,
+              "paddingRight": 0,
             },
           ]
         }
@@ -2488,7 +2488,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
       style={null}
     >
       <View
-        className="sc-ifAKCX gkdadk"
+        className="sc-ifAKCX JuOZc"
         style={
           Array [
             Object {
@@ -2498,10 +2498,10 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "borderBottomColor": "#d0cece",
               "borderBottomWidth": 0.5,
               "marginBottom": 20,
-            },
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
+              "marginLeft": 10,
+              "marginRight": 10,
+              "paddingLeft": 0,
+              "paddingRight": 0,
             },
           ]
         }
@@ -3352,7 +3352,7 @@ exports[`Article test on android renders article no label no flags no standfirst
       style={null}
     >
       <View
-        className="sc-ifAKCX gkdadk"
+        className="sc-ifAKCX JuOZc"
         style={
           Array [
             Object {
@@ -3362,10 +3362,10 @@ exports[`Article test on android renders article no label no flags no standfirst
               "borderBottomColor": "#d0cece",
               "borderBottomWidth": 0.5,
               "marginBottom": 20,
-            },
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
+              "marginLeft": 10,
+              "marginRight": 10,
+              "paddingLeft": 0,
+              "paddingRight": 0,
             },
           ]
         }
@@ -4394,7 +4394,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
       style={null}
     >
       <View
-        className="sc-ifAKCX gkdadk"
+        className="sc-ifAKCX JuOZc"
         style={
           Array [
             Object {
@@ -4404,10 +4404,10 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "borderBottomColor": "#d0cece",
               "borderBottomWidth": 0.5,
               "marginBottom": 20,
-            },
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
+              "marginLeft": 10,
+              "marginRight": 10,
+              "paddingLeft": 0,
+              "paddingRight": 0,
             },
           ]
         }
@@ -5293,7 +5293,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
       style={null}
     >
       <View
-        className="sc-ifAKCX gkdadk"
+        className="sc-ifAKCX JuOZc"
         style={
           Array [
             Object {
@@ -5303,10 +5303,10 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "borderBottomColor": "#d0cece",
               "borderBottomWidth": 0.5,
               "marginBottom": 20,
-            },
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
+              "marginLeft": 10,
+              "marginRight": 10,
+              "paddingLeft": 0,
+              "paddingRight": 0,
             },
           ]
         }
@@ -6300,7 +6300,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
       style={null}
     >
       <View
-        className="sc-ifAKCX gkdadk"
+        className="sc-ifAKCX JuOZc"
         style={
           Array [
             Object {
@@ -6310,10 +6310,10 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "borderBottomColor": "#d0cece",
               "borderBottomWidth": 0.5,
               "marginBottom": 20,
-            },
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
+              "marginLeft": 10,
+              "marginRight": 10,
+              "paddingLeft": 0,
+              "paddingRight": 0,
             },
           ]
         }
@@ -7432,7 +7432,7 @@ exports[`Article test on android renders full article 1`] = `
       style={null}
     >
       <View
-        className="sc-ifAKCX gkdadk"
+        className="sc-ifAKCX JuOZc"
         style={
           Array [
             Object {
@@ -7442,10 +7442,10 @@ exports[`Article test on android renders full article 1`] = `
               "borderBottomColor": "#d0cece",
               "borderBottomWidth": 0.5,
               "marginBottom": 20,
-            },
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
+              "marginLeft": 10,
+              "marginRight": 10,
+              "paddingLeft": 0,
+              "paddingRight": 0,
             },
           ]
         }

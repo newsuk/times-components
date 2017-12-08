@@ -4,7 +4,7 @@ const sharedStyles = {
     lineHeight: 32,
     color: "#1d1d1b",
     marginBottom: 7,
-    fontFamily: "TimesModern-Bold",
+    fontFamily: "TimesModern-Bold"
   },
   standFirst: {
     fontSize: 20,
