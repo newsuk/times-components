@@ -78,6 +78,7 @@ class ArticlePage extends React.Component {
                     ratio: attributes.ratio,
                     url: attributes.url
                   }}
+                  
                   captionOptions={{
                     caption: attributes.caption,
                     credits: attributes.credits
