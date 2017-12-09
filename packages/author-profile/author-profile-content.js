@@ -1,6 +1,7 @@
 import React from "react";
 import { Dimensions, FlatList, StyleSheet, View } from "react-native";
 import { withTrackScrollDepth } from "@times-components/tracking";
+import ErrorView from "@times-components/error-view";
 import AuthorProfileAuthorHead from "./author-profile-author-head";
 import AuthorProfilePagination from "./author-profile-pagination";
 import AuthorProfileItem from "./author-profile-item";
@@ -74,7 +75,7 @@ class AuthorProfileContent extends React.Component {
       imageRatio
     } = this.props;
 
-    const paginationComponent = (hideResults = false) => (
+    const paginationComponent = (hideResults = false) =>
       <AuthorProfilePagination
         count={count}
         hideResults={hideResults}
@@ -82,16 +83,13 @@ class AuthorProfileContent extends React.Component {
         onPrev={onPrev}
         page={page}
         pageSize={pageSize}
-      />
-    );
+      />;
 
     const data = articlesLoading
-      ? Array(pageSize)
-          .fill()
-          .map((number, id) => ({
-            id,
-            isLoading: true
-          }))
+      ? Array(pageSize).fill().map((number, id) => ({
+          id,
+          isLoading: true
+        }))
       : articles.map((article, idx) => ({
           ...article,
           elementId: `articleList-${page}-${idx}`
@@ -105,16 +103,21 @@ class AuthorProfileContent extends React.Component {
         accessibilityID="scroll-view"
         data={data}
         keyExtractor={item => item.id}
-        renderItem={({ item, index }) => (
-          <AuthorProfileItem
-            {...item}
-            imageRatio={imageRatio}
-            imageSize={this.state.width}
-            style={styles.padding}
-            testID={`articleList-${index}`}
-            onPress={e => onArticlePress(e, { id: item.id, url: item.url })}
-          />
-        )}
+        renderItem={({ item, index }) =>
+          <ErrorView>
+            {({ hasError }) =>
+              hasError
+                ? null
+                : <AuthorProfileItem
+                    {...item}
+                    imageRatio={imageRatio}
+                    imageSize={this.state.width}
+                    style={styles.padding}
+                    testID={`articleList-${index}`}
+                    onPress={e =>
+                      onArticlePress(e, { id: item.id, url: item.url })}
+                  />}
+          </ErrorView>}
         initialListSize={pageSize}
         onViewableItemsChanged={this.onViewableItemsChanged}
         viewabilityConfig={viewabilityConfig}
@@ -135,11 +138,10 @@ class AuthorProfileContent extends React.Component {
           </View>
         }
         ListFooterComponent={paginationComponent(true)}
-        ItemSeparatorComponent={() => (
+        ItemSeparatorComponent={() =>
           <View style={styles.padding}>
             <AuthorProfileItemSeparator />
-          </View>
-        )}
+          </View>}
       />
     );
   }

@@ -36,6 +36,7 @@
     "@storybook/addon-actions": "3.2.17",
     "@storybook/react-native": "3.2.17",
     "@times-components/eslint-config-thetimes": "0.0.2",
+    "@times-components/error-view": "0.6.4",
     "@times-components/tealium": "0.1.2",
     "@times-components/utils": "0.0.6",
     "apollo-utilities": "1.0.2",
@@ -57,8 +58,8 @@
     "lodash.clonedeep": "4.5.0",
     "lodash.set": "4.3.2",
     "prettier": "1.8.2",
-    "react": "16.0.0",
-    "react-dom": "16.0.0",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
     "react-native": "0.50.1",
     "react-test-renderer": "16.0.0",
     "webpack": "3.3.0"

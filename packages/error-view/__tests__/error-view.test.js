@@ -3,62 +3,64 @@
 import React from "react";
 import { Text } from "react-native";
 import renderer from "react-test-renderer";
+import PropTypes from "prop-types";
+import ErrorView from "../error-view";
+import InvokesError from "./invokes-error";
+import ThrowsError from "./throws-error";
 
-import ErrorView, { addErrorHandler } from "../error-view";
-import ErroringComponent from "./erroring";
-import ChangingComponent from "./changing";
+const ErrorState = ({ error }) => <Text>{error.toString()}</Text>;
 
-it("renders an ErrorView", () => {
+ErrorState.propTypes = {
+  error: PropTypes.shape({
+    message: PropTypes.string,
+    stack: PropTypes.string
+  }).isRequired
+};
+
+const GoodState = () => <Text>All good</Text>;
+
+it("renders the error state if a component throws an error", () => {
   const tree = renderer
-    .create(<ErrorView errors={[{ code: "code", message: "message" }]} />)
+    .create(
+      <ErrorView>
+        {({ hasError, error }) =>
+          hasError ? <ErrorState error={error} /> : <ThrowsError />
+        }
+      </ErrorView>
+    )
     .toJSON();
 
   expect(tree).toMatchSnapshot();
 });
 
-it("renders a simple component with no errors", () => {
-  const ErrorText = addErrorHandler(Text);
-  const tree = renderer.create(<ErrorText>Just a test</ErrorText>).toJSON();
+it("renders the error state if a component invokes an error", () => {
+  const tree = renderer
+    .create(
+      <ErrorView>
+        {({ hasError, onError, error }) =>
+          hasError ? (
+            <ErrorState error={error} />
+          ) : (
+            <InvokesError onError={onError} />
+          )
+        }
+      </ErrorView>
+    )
+    .toJSON();
 
   expect(tree).toMatchSnapshot();
 });
 
-it("renders the errors from its child", () => {
-  const WrappedErroringComponent = addErrorHandler(ErroringComponent);
-  const tree = renderer.create(<WrappedErroringComponent />).toJSON();
+it("does not render an error state if there is no error", () => {
+  const tree = renderer
+    .create(
+      <ErrorView>
+        {({ hasError, error }) =>
+          hasError ? <ErrorState error={error} /> : <GoodState />
+        }
+      </ErrorView>
+    )
+    .toJSON();
 
   expect(tree).toMatchSnapshot();
-});
-
-it("propagates error correctly", done => {
-  const WrappedErroringComponent = addErrorHandler(ErroringComponent);
-
-  renderer.create(
-    <WrappedErroringComponent
-      onError={err => {
-        expect(err).toMatchObject({
-          code: "[ERROR_CODE]",
-          message: "[ERROR_MESSAGE]"
-        });
-
-        done();
-      }}
-    />
-  );
-});
-
-it("propagates change correctly", done => {
-  const WrappedChangingComponent = addErrorHandler(ChangingComponent);
-
-  renderer.create(
-    <WrappedChangingComponent
-      onChange={state => {
-        expect(state).toMatchObject({
-          state: "boiled"
-        });
-
-        done();
-      }}
-    />
-  );
 });

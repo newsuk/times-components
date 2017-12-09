@@ -1,9 +1,10 @@
 /* eslint-env browser */
 
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { StyleSheet, View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 import { withTrackScrollDepth } from "@times-components/tracking";
+import ErrorView from "@times-components/error-view";
 import AuthorProfileAuthorHead from "./author-profile-author-head";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
@@ -141,7 +142,7 @@ class AuthorProfileContent extends Component {
       receiveChildList
     } = this.props;
 
-    const paginationComponent = (hideResults = false) => (
+    const paginationComponent = (hideResults = false) =>
       <AuthorProfilePagination
         count={count}
         hideResults={hideResults}
@@ -149,15 +150,11 @@ class AuthorProfileContent extends Component {
         onPrev={onPrev}
         page={page}
         pageSize={pageSize}
-      />
-    );
+      />;
 
     const data = (articlesLoading
-      ? Array(pageSize)
-          .fill()
-          .map((number, id) => ({ id, isLoading: true }))
-      : articles
-    ).map((article, idx) => ({
+      ? Array(pageSize).fill().map((number, id) => ({ id, isLoading: true }))
+      : articles).map((article, idx) => ({
       ...article,
       elementId: `articleList-${page}-${idx}`
     }));
@@ -181,8 +178,9 @@ class AuthorProfileContent extends Component {
             {data &&
               data.map((article, key) => {
                 const { id, url } = article;
-                const separatorComponent =
-                  key > 0 ? <AuthorProfileItemSeparator /> : null;
+                const separatorComponent = key > 0
+                  ? <AuthorProfileItemSeparator />
+                  : null;
 
                 return (
                   <div
@@ -192,13 +190,20 @@ class AuthorProfileContent extends Component {
                     data-testid={article.elementId}
                     ref={node => this.registerNode(node)}
                   >
-                    {separatorComponent}
-                    <AuthorProfileItem
-                      {...article}
-                      imageRatio={imageRatio}
-                      imageSize={this.getImageSize(article.elementId)}
-                      onPress={e => onArticlePress(e, { id, url })}
-                    />
+                    <ErrorView>
+                      {({ hasError }) =>
+                        hasError
+                          ? null
+                          : <Fragment>
+                              {separatorComponent}
+                              <AuthorProfileItem
+                                {...article}
+                                imageRatio={imageRatio}
+                                imageSize={this.getImageSize(article.elementId)}
+                                onPress={e => onArticlePress(e, { id, url })}
+                              />
+                            </Fragment>}
+                    </ErrorView>
                   </div>
                 );
               })}
