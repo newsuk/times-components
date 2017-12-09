@@ -1,4 +1,6 @@
-import TealiumSendScheduler from "../tealium/tealium-send-scheduler";
+/* eslint-env jest */
+
+import TealiumSendScheduler from "../tealium-send-scheduler";
 
 describe("TealiumSendScheduler", () => {
   const trackingOptions = {

@@ -44,10 +44,11 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@storybook/addon-actions": "3.2.11",
-    "@storybook/react-native": "3.2.11",
+    "@storybook/addon-actions": "3.2.17",
+    "@storybook/react-native": "3.2.17",
     "@times-components/eslint-config-thetimes": "0.0.1",
-    "@times-components/jest-configurator": "0.0.8",
+    "@times-components/jest-configurator": "0.0.11",
+    "@times-components/storybook": "0.0.1",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",
@@ -67,6 +68,7 @@
     "react-dom": "16.0.0",
     "react-native": "0.50.1",
     "react-test-renderer": "16.0.0",
+    "styled-components": "2.2.3",
     "webpack": "3.3.0"
   },
   "dependencies": {
@@ -77,7 +79,7 @@
     "@times-components/tracking": "0.4.5",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.14",
-    "svgs": "3.1.0"
+    "svgs": "3.1.1"
   },
   "peerDependencies": {
     "react": ">=16",

@@ -1,6 +1,6 @@
 import { Platform } from "react-native";
 import { action } from "@storybook/addon-actions";
-import tealiumReporter from "../packages/tracking/tealium/tealium-reporter";
+import tealiumReporter from "./tealium-reporter";
 
 const trackingConfig = {
   enabled: true,

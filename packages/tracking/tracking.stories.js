@@ -2,12 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Button, View } from "react-native";
 import { storiesOf } from "dextrose/storiesOfOverloader";
+import storybookReporter from "@times-components/tealium";
 import {
   withTrackingContext,
   withTrackEvents,
   withTrackScrollDepth
 } from "./tracking";
-import storybookReporter from "../../storybook/storybook-tealium-reporter";
 import Box, { boxStyles } from "./storybook-components/box";
 import Boxes from "./storybook-components/boxes";
 
