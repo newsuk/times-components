@@ -1,22 +1,7 @@
 module.exports = {
-  extends: ["airbnb", "prettier", "prettier/react"],
+  extends: ["@times-components/thetimes"],
   parser: "babel-eslint",
   rules: {
-    "react/jsx-filename-extension": [1, { extensions: [".js"] }],
-    "import/extensions": "off",
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        devDependencies: [
-          "**/__tests__/**",
-          "**/*.test.*",
-          "**/fixtures/**",
-          "**/*.stories*",
-          "**/scripts/**"
-        ],
-        optionalDependencies: false
-      }
-    ],
     "graphql/template-strings": [
       "error",
       {
@@ -25,13 +10,5 @@ module.exports = {
       }
     ]
   },
-  plugins: ["graphql"],
-  settings: {
-    "import/resolver": {
-      node: {
-        extensions: [".js", ".android.js", ".ios.js", ".web.js"]
-      }
-    }
-  },
-  root: true
+  plugins: ["graphql"]
 };

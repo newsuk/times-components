@@ -19,3 +19,4 @@ yarn.lock
 packages
 settings.gradle
 build.gradle
+*.log
