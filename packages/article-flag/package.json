@@ -17,6 +17,9 @@
     "preset": "react-native",
     "rootDir": "../../",
     "coverageDirectory": "<rootDir>/packages/article-flag/coverage/",
+    "collectCoverageFrom": [
+      "**/packages/article-flag/article-flag.js"
+    ],
     "transformIgnorePatterns": [
       "node_modules/(?!@times-components)/"
     ],

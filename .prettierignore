@@ -13,6 +13,7 @@ yarn.lock
 
 # specific to root
 .storybook.native/story-loader.js
+storybook-static
 *.yml
 *.html
 *.sh
@@ -20,5 +21,3 @@ yarn.lock
 packages
 settings.gradle
 build.gradle
-*.log
-storybook-static
