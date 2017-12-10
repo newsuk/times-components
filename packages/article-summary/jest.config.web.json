@@ -2,6 +2,11 @@
   "preset": "react-native",
   "rootDir": "../../",
   "coverageDirectory": "<rootDir>/packages/article-summary/coverage/web/",
+  "collectCoverageFrom": [
+    "**/packages/article-summary/*.js",
+    "!**/packages/article-summary/__tests__",
+    "!**/packages/article-summary/*.stories.js"
+  ],
   "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
   "testMatch": ["<rootDir>/packages/article-summary/__tests__/**.web.test.js"],
   "moduleNameMapper": {

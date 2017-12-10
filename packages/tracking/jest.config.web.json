@@ -1,5 +1,7 @@
 {
   "rootDir": "../../",
+  "coverageDirectory": "<rootDir>/packages/tracking/coverage/web",
+  "coveragePathIgnorePatterns": ["/__tests__/"],
   "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
   "testEnvironment": "jsdom",
   "testMatch": ["<rootDir>/packages/tracking/__tests__/**.web.test.js"],

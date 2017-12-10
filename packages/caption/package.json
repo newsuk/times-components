@@ -17,6 +17,7 @@
     "preset": "react-native",
     "rootDir": "../../",
     "coverageDirectory": "<rootDir>/packages/caption/coverage/",
+    "collectCoverageFrom": ["**/packages/caption/caption.js"],
     "transformIgnorePatterns": [
       "node_modules/(?!@times-components)/"
     ],
