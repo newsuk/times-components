@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PullQuotes test on android Pull Quotes with a Caption 1`] = `
+<View
+  style={
+    Object {
+      "marginBottom": 40,
+      "marginTop": 40,
+      "paddingLeft": 10,
+      "paddingRight": 10,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "TimesModern-Regular",
+          "fontSize": 75,
+          "lineHeight": 0,
+          "marginTop": 40,
+        },
+        Object {
+          "color": "#13354e",
+        },
+      ]
+    }
+  >
+    “
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontFamily": "TimesModern-Regular",
+        "fontSize": 30,
+        "lineHeight": 30,
+      }
+    }
+  >
+    [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "marginBottom": 10,
+          "marginTop": 10,
+        },
+        Object {
+          "color": "#696969",
+        },
+      ]
+    }
+  >
+    Judge Sapnara
+  </Text>
+</View>
+`;
+
+exports[`PullQuotes test on android Pull Quotes without a Caption 1`] = `
+<View
+  style={
+    Object {
+      "marginBottom": 40,
+      "marginTop": 40,
+      "paddingLeft": 10,
+      "paddingRight": 10,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "TimesModern-Regular",
+          "fontSize": 75,
+          "lineHeight": 0,
+          "marginTop": 40,
+        },
+        Object {
+          "color": "#13354e",
+        },
+      ]
+    }
+  >
+    “
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontFamily": "TimesModern-Regular",
+        "fontSize": 30,
+        "lineHeight": 30,
+      }
+    }
+  >
+    [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "marginBottom": 10,
+          "marginTop": 10,
+        },
+        Object {
+          "color": "#696969",
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`PullQuotes test on android Pull Quotes without a Caption and different colours 1`] = `
+<View
+  style={
+    Object {
+      "marginBottom": 40,
+      "marginTop": 40,
+      "paddingLeft": 10,
+      "paddingRight": 10,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "TimesModern-Regular",
+          "fontSize": 75,
+          "lineHeight": 0,
+          "marginTop": 40,
+        },
+        Object {
+          "color": "#850029",
+        },
+      ]
+    }
+  >
+    “
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontFamily": "TimesModern-Regular",
+        "fontSize": 30,
+        "lineHeight": 30,
+      }
+    }
+  >
+    [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "marginBottom": 10,
+          "marginTop": 10,
+        },
+        Object {
+          "color": "#850029",
+        },
+      ]
+    }
+  >
+    Judge Sapnara
+  </Text>
+</View>
+`;
