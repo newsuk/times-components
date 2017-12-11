@@ -1,9 +1,11 @@
 #!/bin/bash
+yarn clean-snaps
 npx selenium-standalone install &&
 npx selenium-standalone start & 
 npm run fetch-fonts  # fetch times fonts
+npx lerna run dextrose-clean
 npx lerna run dextrose-stories --since
-npx rnstl --searchDir ./packages --pattern './*/*.stories.js' --outputFile ./fructose/components.js
+npx rnstl --searchDir ./packages --pattern './*/*.dextrose.tmp.js' --outputFile ./fructose/components.js
 npx compile-tests -d fructose -t components.test.js -a components.js # single file for all the tests
 npx webpack --config fructose/vendor.webpack.config.js # build vendor package
 npx fructose-web -d fructose & # start the fructose web app
