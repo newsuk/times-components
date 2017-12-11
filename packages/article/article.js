@@ -11,7 +11,7 @@ import listViewDataHelper from "./data-helper";
 import styles from "./styles/body";
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
-import ArticleBody from "./article-body";
+import ArticleRow from "./article-body-row";
 
 import articleTrackingContext from "./article-tracking-context";
 
@@ -53,7 +53,7 @@ class ArticlePage extends React.Component {
         />
       );
     } else if (rowData.type === "articleBodyRow") {
-      return <ArticleBody content={rowData} index={rowData.index} />;
+      return <ArticleRow content={rowData} />;
     }
 
     return null;

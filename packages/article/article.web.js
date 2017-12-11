@@ -33,16 +33,10 @@ class ArticlePage extends React.Component {
       byline,
       publishedTime,
       publicationName,
-      leadAsset
+      leadAsset,
+      content
     } = articleData;
 
-    const contentArray = articleData.content.map((data, index) => ({
-      data,
-      index
-    }));
-    const BodyView = contentArray.map(content => (
-      <ArticleBody key={`cont-${content.index}`} content={content} />
-    ));
     return (
       <MainContainer>
         <LeadAssetComponent device="MOBILE" leadAsset={leadAsset} />
@@ -63,7 +57,9 @@ class ArticlePage extends React.Component {
             />
           </MetaContainer>
           <LeadAssetComponent device="DESKTOP" leadAsset={leadAsset} />
-          <BodyContainer>{BodyView}</BodyContainer>
+          <BodyContainer>
+            <ArticleBody content={content} />
+          </BodyContainer>
         </View>
       </MainContainer>
     );
