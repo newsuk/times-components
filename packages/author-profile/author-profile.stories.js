@@ -152,11 +152,13 @@ const brokenMocks = [
   }
 ];
 
-const withMockProvider = child =>
-  <MockedProvider mocks={mocks}>{child}</MockedProvider>;
+const withMockProvider = child => (
+  <MockedProvider mocks={mocks}>{child}</MockedProvider>
+);
 
-const withBrokenMockProvider = child =>
-  <MockedProvider mocks={brokenMocks}>{child}</MockedProvider>;
+const withBrokenMockProvider = child => (
+  <MockedProvider mocks={brokenMocks}>{child}</MockedProvider>
+);
 
 const authProfileProviderProps = {
   slug: "deborah-haynes",
@@ -172,7 +174,7 @@ const slug = "deborah-haynes";
 
 const authProfileProvider = withMockProvider(
   <AuthorProfileProvider slug={slug}>
-    {({ author, isLoading, error }) =>
+    {({ author, isLoading, error }) => (
       <AuthorProfile
         {...authProfileProviderProps}
         author={author}
@@ -181,7 +183,8 @@ const authProfileProvider = withMockProvider(
         slug={slug}
         isLoading={isLoading}
         error={error}
-      />}
+      />
+    )}
   </AuthorProfileProvider>
 );
 
