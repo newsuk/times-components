@@ -1,0 +1,49 @@
+{
+  "name": "@times-components/tealium",
+  "version": "0.0.1",
+  "description": "React storybook helpers for Times Components",
+  "main": "tealium.js",
+  "scripts": {
+    "test:watch": "jest --bail --verbose --watchAll",
+    "test": "jest --bail --ci --coverage",
+    "fmt": "prettier --write '**/*.*'",
+    "prettier:diff": "prettier --list-different '**/*.*'",
+    "lint": "eslint . && yarn prettier:diff"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "jest": {
+    "rootDir": "../../",
+    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+    "testEnvironment": "jsdom",
+    "testMatch": ["<rootDir>/packages/tealium/__tests__/**.web.test.js"],
+    "moduleNameMapper": {
+      "react-native": "react-native-web"
+    },
+    "moduleFileExtensions": ["web.js", "js", "json"],
+    "setupFiles": ["raf/polyfill"]
+  },
+  "devDependencies": {
+    "jest": "21.2.1",
+    "prettier": "1.8.2"
+  },
+  "dependencies": {
+    "@storybook/addon-actions": "3.2.17",
+    "eslint": "4.9.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-config-prettier": "2.6.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.4.0",
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "react-native": "0.50.1"
+  }
+}
