@@ -34,6 +34,7 @@ const AuthorProfile = ({
   const { biography, name, image: uri, jobTitle, twitter, articles } =
     author || {};
 
+    
   return (
     <ArticleListProvider
       articleImageRatio="3:2"
