@@ -2,8 +2,7 @@
 import fructose from "@times-components/fructose/setup";
 import wd from "wd";
 
-const SAUCE_USERNAME = process.env.SAUCE_USERNAME;
-const SAUCE_KEY = process.env.SAUCE_KEY;
+const { SAUCE_USERNAME, SAUCE_KEY } = process.env;
 
 if (!SAUCE_KEY || !SAUCE_USERNAME) {
   throw new Error(

@@ -322,9 +322,17 @@
   version "0.9.43"
   resolved "https://registry.yarnpkg.com/@types/core-js/-/core-js-0.9.43.tgz#65d646c5e8c0cd1bdee37065799f9d3d48748253"
 
+"@types/graphql@^0.11.6":
+  version "0.11.7"
+  resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.11.7.tgz#da39a2f7c74e793e32e2bb7b3b68da1691532dd5"
+
 "@types/inline-style-prefixer@^3.0.0":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@types/inline-style-prefixer/-/inline-style-prefixer-3.0.1.tgz#8541e636b029124b747952e9a28848286d2b5bf6"
+
+"@types/lodash@^4.14.85":
+  version "4.14.88"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.88.tgz#97eaf2dc668f33ed8e511a5b627035f4ea20b0f5"
 
 "@types/mkdirp@^0.3.29":
   version "0.3.29"
@@ -4244,9 +4252,9 @@ eslint-module-utils@^2.1.1:
     debug "^2.6.8"
     pkg-dir "^1.0.0"
 
-eslint-plugin-graphql@1.4.0-1:
-  version "1.4.0-1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-graphql/-/eslint-plugin-graphql-1.4.0-1.tgz#77e8adafcf82dfa233abf5ac0b8afcf71502429a"
+eslint-plugin-graphql@1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-graphql/-/eslint-plugin-graphql-1.4.1.tgz#8c7d49548a7fa47526a68255d80739ac3d018f4f"
   dependencies:
     graphql-config "^1.0.7"
     lodash "^4.11.1"
@@ -4265,10 +4273,6 @@ eslint-plugin-import@2.8.0:
     lodash.cond "^4.3.0"
     minimatch "^3.0.3"
     read-pkg-up "^2.0.0"
-
-eslint-plugin-jest@21.3.2:
-  version "21.3.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-21.3.2.tgz#b1cefc05f0fed700eb40185a94d16f6d575d1ef9"
 
 eslint-plugin-jsx-a11y@6.0.2:
   version "6.0.2"
@@ -5170,14 +5174,24 @@ graphql-anywhere@^4.0.1:
     apollo-utilities "^1.0.3"
 
 graphql-config@^1.0.7:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/graphql-config/-/graphql-config-1.0.9.tgz#8fa416a7c2bdb8f62f441324775dd3ff8a266652"
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/graphql-config/-/graphql-config-1.1.0.tgz#0d1089db1da7695f556ed9204099fea8a238af88"
   dependencies:
     graphql "^0.11.7"
+    graphql-import "^0.1.5"
     graphql-request "^1.4.0"
     js-yaml "^3.10.0"
     minimatch "^3.0.4"
     rimraf "^2.6.2"
+
+graphql-import@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/graphql-import/-/graphql-import-0.1.5.tgz#f1f6ae6e015adcea15c3e8bbe72247d3795113ea"
+  dependencies:
+    "@types/graphql" "^0.11.6"
+    "@types/lodash" "^4.14.85"
+    graphql "^0.11.7"
+    lodash "^4.17.4"
 
 graphql-request@^1.4.0:
   version "1.4.0"

@@ -1,0 +1,11 @@
+**/node_modules/*
+**/coverage/*
+dist
+__snapshots__
+**/package.json
+android/*
+ios/*
+CHANGELOG.md
+.*
+LICENSE
+yarn.lock

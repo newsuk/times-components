@@ -6,7 +6,18 @@
   ],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
-    "import/extensions": "off"
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/dextrose/**",
+          "**/fructose/**",
+          "**/storybook/**"
+        ],
+        "optionalDependencies": false
+      }
+    ]
   },
   "settings": {
     "import/resolver": {
