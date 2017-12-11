@@ -1,7 +1,7 @@
 const path = require("path");
 
 const config = {
-  snapPath: __dirname + "/snappy",
+  snapPath: path.join(__dirname, "/snappy"),
   platformName: "web",
   ignoredStories: [
     "Advertisement",
