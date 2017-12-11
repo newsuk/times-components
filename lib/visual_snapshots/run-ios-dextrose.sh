@@ -1,5 +1,4 @@
 #!/bin/bash
-yarn clean-snaps
 appium &
 APPIUM_PID=$!
 xcrun simctl boot 'iPhone 7'

@@ -1,5 +1,4 @@
 #!/bin/bash
-yarn clean-snaps
 npx selenium-standalone install &&
 npx selenium-standalone start & 
 npm run fetch-fonts  # fetch times fonts

@@ -1,5 +1,4 @@
 #!/bin/bash
-yarn clean-snaps
 npx appium &
 APPIUM_PID=$!
 LOCAL=true npx fructose-tunnel
