@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-image",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Article Image",
   "main": "article-image",
   "scripts": {
@@ -68,8 +68,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/caption": "0.8.3",
-    "@times-components/image": "1.7.3",
+    "@times-components/caption": "0.8.4",
+    "@times-components/image": "1.7.4",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.14"
   },
