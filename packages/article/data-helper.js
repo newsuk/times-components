@@ -24,7 +24,9 @@ const prepareDataForListView = articleData => {
     }))
   );
 
-  if(!leadAssetData) { data.splice(0, 1) }
+  if (!leadAssetData) {
+    data.splice(0, 1);
+  }
 
   return data;
 };
