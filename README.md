@@ -14,8 +14,9 @@ platforms
 We require MacOS with [Node.js](https://nodejs.org) (version >=8 with npm v5),
 [yarn](https://yarnpkg.com) (latest) and
 [watchman](https://facebook.github.io/watchman) installed. Native development
-requires [Xcode](https://developer.apple.com/xcode) and
-[Android Studio](https://developer.android.com/studio/index.html).
+requires [Xcode](https://developer.apple.com/xcode),
+[Android Studio](https://developer.android.com/studio/index.html) and
+[JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html).
 
 You can try without these requirements, but you'd be on your own.
 
@@ -31,8 +32,14 @@ You can try without these requirements, but you'd be on your own.
   2. go to http://localhost:9001
 * native storybook
   1. `yarn storybook-native` and leave it running
-  2. `yarn ios` and/or `yarn android` to start the (sim|em)ulators
-  3. go to http://localhost:7007
+  2. `yarn ios` to start the iOS app
+  3. To start the Android app:
+     * [Start a virtual device](https://developer.android.com/studio/run/managing-avds.html)
+     * `yarn android`
+     * If you get build errors, check your JDK version with `javac -version`,
+       which should print `javac 1.8.XXXX`. Earlier or later versions may not
+       work.
+  4. go to http://localhost:7007
 
 ### Fonts ⚠️
 
