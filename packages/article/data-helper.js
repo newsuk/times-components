@@ -12,7 +12,7 @@ const prepareDataForListView = articleData => {
     byline: articleData.byline
   };
 
-  return [
+  const data = [
     { type: "leadAsset", data: leadAssetData },
     { type: "header", data: articleHeaderData },
     { type: "middleContainer", data: articleMidContainerData }
@@ -23,6 +23,10 @@ const prepareDataForListView = articleData => {
       index
     }))
   );
+
+  if(!leadAssetData) { data.splice(0, 1) }
+
+  return data;
 };
 
 export default prepareDataForListView;
