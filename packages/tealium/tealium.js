@@ -1,21 +1,13 @@
-import { Platform } from "react-native";
-import { action } from "@storybook/addon-actions";
-import tealiumReporter from "./tealium-reporter";
+import TealiumSendScheduler from "./tealium-send-scheduler";
 
-const trackingConfig = {
-  enabled: true,
-  account: "newsinternational",
-  profile: "thetimes.2018",
-  env: "dev"
-};
+function createTealiumReporter(options, w, d) {
+  const utagSendScheduler = new TealiumSendScheduler(options, w, d);
 
-const reporter =
-  Platform.OS === "web"
-    ? tealiumReporter(trackingConfig, global.window, global.document)
-    : null;
+  return {
+    analytics(e) {
+      utagSendScheduler.enqueue(e);
+    }
+  };
+}
 
-export default e => {
-  if (reporter) reporter.analytics(e);
-
-  if (!global.storiesOf) action("analytics-event")(e);
-};
+export default createTealiumReporter;
