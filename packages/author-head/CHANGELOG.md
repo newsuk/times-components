@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.11.1"></a>
+## [0.11.1](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.11.0...@times-components/author-head@0.11.1) (2017-12-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.10.4...@times-components/author-head@0.11.0) (2017-12-08)
+
+
+### Features
+
+* make author head responsive ([#434](https://github.com/newsuk/times-components/issues/434)) ([5a07f59](https://github.com/newsuk/times-components/commit/5a07f59))
+
+
+
+
+<a name="0.10.4"></a>
+## [0.10.4](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.10.3...@times-components/author-head@0.10.4) (2017-12-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
 <a name="0.10.3"></a>
 ## [0.10.3](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.10.1...@times-components/author-head@0.10.3) (2017-12-04)
 

@@ -1,6 +1,7 @@
-/* globals beforeAll afterAll */
+/* globals beforeAll afterAll jasmine */
 import fructose from "@times-components/fructose/setup";
 import detox from "detox";
+// eslint-disable-next-line import/no-unresolved
 import config from "../package";
 
 beforeAll(async () => {
@@ -8,7 +9,8 @@ beforeAll(async () => {
   jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
   await fructose.hooks.mobile.setup();
   await detox.init(config.detox);
-  console.log("loaded Detox")
+  // eslint-disable-next-line no-console
+  console.log("loaded Detox");
 }, 240000);
 
 afterAll(async () => {

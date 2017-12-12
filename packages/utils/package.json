@@ -1,10 +1,10 @@
 {
   "name": "@times-components/utils",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "scripts": {
     "make-schema": "node ./scripts/fetch-gql-schema",
-    "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
-    "fmt": "prettier --write '**/*.+(js|json|md)'",
+    "prettier:diff": "prettier --list-different '**/*.*'",
+    "fmt": "prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff"
   },
   "description": "A set of helpers and/or workarounds to be shared across packages",
@@ -25,12 +25,8 @@
     "access": "public"
   },
   "devDependencies": {
+    "@times-components/eslint-config-thetimes": "0.0.1",
     "eslint": "4.9.0",
-    "eslint-config-airbnb": "16.1.0",
-    "eslint-config-prettier": "2.6.0",
-    "eslint-plugin-import": "2.8.0",
-    "eslint-plugin-jsx-a11y": "6.0.2",
-    "eslint-plugin-react": "7.4.0",
     "mkdirp": "0.5.1",
     "node-fetch": "1.7.2",
     "prettier": "1.8.2"

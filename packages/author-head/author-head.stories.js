@@ -2,8 +2,8 @@ import React from "react";
 import { storiesOf } from "dextrose/storiesOfOverloader";
 import { decorateAction, action } from "@storybook/addon-actions";
 import { withTrackingContext } from "@times-components/tracking";
+import { LateralSpacingDecorator } from "@times-components/storybook/decorators";
 import AuthorHead from "./author-head";
-import LateralSpacingDecorator from "../../storybook/decorators/lateral-spacing";
 
 const data = require("./fixtures/profile.json");
 

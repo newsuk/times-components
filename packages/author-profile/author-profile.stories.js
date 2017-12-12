@@ -7,11 +7,11 @@ import { MockedProvider } from "@times-components/utils/graphql";
 import { addTypenameToDocument } from "apollo-utilities";
 import { query as authorProfileQuery } from "@times-components/provider/author-profile-provider";
 import { query as articleListQuery } from "@times-components/provider/article-list-provider";
+import storybookReporter from "@times-components/tealium/storybook";
 import AuthorProfile from "./author-profile";
 import AuthorProfileContent from "./author-profile-content";
 import authorProfileFixture from "./fixtures/author-profile.json";
 import articleListFixture from "./fixtures/article-list.json";
-import storybookReporter from "../../storybook/storybook-tealium-reporter";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
@@ -42,7 +42,7 @@ const mocks = [
     request: {
       query: addTypenameToDocument(authorProfileQuery),
       variables: {
-        slug: "fiona-hamilton"
+        slug: "deborah-haynes"
       }
     },
     result: authorProfileFixture
@@ -52,7 +52,7 @@ const mocks = [
     request: {
       query: addTypenameToDocument(articleListQuery),
       variables: {
-        slug: "fiona-hamilton",
+        slug: "deborah-haynes",
         first: 5,
         skip: 0,
         imageRatio: "3:2"
@@ -65,7 +65,7 @@ const mocks = [
     request: {
       query: addTypenameToDocument(articleListQuery),
       variables: {
-        slug: "fiona-hamilton",
+        slug: "deborah-haynes",
         first: 5,
         skip: 5,
         imageRatio: "3:2"
@@ -78,7 +78,7 @@ const mocks = [
     request: {
       query: addTypenameToDocument(articleListQuery),
       variables: {
-        slug: "fiona-hamilton",
+        slug: "deborah-haynes",
         first: 5,
         skip: 10,
         imageRatio: "3:2"
@@ -91,7 +91,7 @@ const mocks = [
     request: {
       query: addTypenameToDocument(articleListQuery),
       variables: {
-        slug: "fiona-hamilton",
+        slug: "deborah-haynes",
         first: 5,
         skip: 15,
         imageRatio: "3:2"
@@ -105,7 +105,7 @@ const withMockProvider = child => (
   <MockedProvider mocks={mocks}>{child}</MockedProvider>
 );
 const authProfileProviderProps = {
-  slug: "fiona-hamilton",
+  slug: "deborah-haynes",
   author: authorProfileFixture.data.author,
   isLoading: false,
   page: 2,
@@ -114,7 +114,7 @@ const authProfileProviderProps = {
   onArticlePress: preventDefaultedAction("onArticlePress"),
   analyticsStream: storybookReporter
 };
-const slug = "fiona-hamilton";
+const slug = "deborah-haynes";
 
 const authProfileProvider = withMockProvider(
   <AuthorProfileProvider slug={slug}>
@@ -135,7 +135,7 @@ const authProfileProvider = withMockProvider(
 storiesOf("AuthorProfile", module)
   .add("Default", () => {
     const props = {
-      slug: "fiona-hamilton",
+      slug: "deborah-haynes",
       author: authorProfileFixture.data.author,
       articleImageRatio: "3:2",
       isLoading: false,
