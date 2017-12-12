@@ -2,16 +2,14 @@ import { StyleSheet } from "react-native";
 
 const webStyles = StyleSheet.create({
   container: {
-    marginTop: 40,
-    marginBottom: 40,
-    paddingLeft: 10,
-    paddingRight: 10
+    marginTop: 20,
+    marginBottom: 20,
   },
   quotes: {
     fontFamily: "TimesModern-Regular",
     fontSize: 75,
     lineHeight: 0,
-    marginTop: 40
+    marginTop: 20
   },
   content: {
     fontFamily: "TimesModern-Regular",

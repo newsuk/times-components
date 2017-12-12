@@ -6,6 +6,7 @@ import { renderTrees } from "@times-components/markup";
 import ArticleImage from "@times-components/article-image";
 import { AdComposer } from "@times-components/ad";
 import { withTrackingContext } from "@times-components/tracking";
+import PullQuote from "@times-components/pull-quote";
 
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
@@ -26,7 +27,9 @@ import {
   MediaContainerDesktop,
   PrimaryImg,
   SecondaryImg,
-  InlineImg
+  InlineImg,
+  PullQuoteContainer,
+  PullQuoteResp
 } from "./styles/body/responsive";
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
@@ -66,7 +69,7 @@ class ArticlePage extends React.Component {
             label={label}
           />
         </HeaderContainer>
-        <View>
+        <View style={{display: 'block'}}>
           <MetaContainer>
             <ArticleMeta
               byline={byline}
@@ -112,8 +115,8 @@ class ArticlePage extends React.Component {
 
   static renderBody(content, index) {
     return (
-      <View key={`content${index}`}>
-        {renderTrees([content.data], {
+      // <View key={`content${index}`}>
+        renderTrees([content.data], {
           paragraph(key, attributes, children) {
             return (
               <ParagraphContainer
@@ -144,9 +147,29 @@ class ArticlePage extends React.Component {
                 />
               </ImageContainer>
             );
+          },
+          pullquote(key, attributes) {
+            return (
+              <PullQuoteContainer
+              testID={`pullquote-${content.index}`}
+              accessibilityLabel={`pullquote-${content.index}`}
+              key={key}
+              >
+              <PullQuoteResp>
+                <PullQuote key={key} content={attributes.content} caption={attributes.caption.name} />
+              </PullQuoteResp>
+                {/* <PullQuoteResp /> */}
+                <p>A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. </p>
+
+                {/* <ParagraphContainer>
+                <Paragraph>A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. </Paragraph>
+                </ParagraphContainer> */}
+
+              </PullQuoteContainer>
+            );
           }
-        })}
-      </View>
+        })
+      // {/* </View> */}
     );
   }
 

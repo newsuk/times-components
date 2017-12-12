@@ -95,3 +95,22 @@ export const InlineImg = styled(View)`
 
   ${config.mediumBpPositioning} ${config.wideBpPositioning};
 `;
+
+/* --- Pull Quotes --- */
+
+export const PullQuoteResp = styled(View)`
+  @media (min-width: ${config.mediumBreakpoint}) {
+    width: 60%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom 0px;
+    // background-color: green;
+    // height: 100px;
+  }
+`;
+
+export const PullQuoteContainer = styled(View)`
+  display: block;
+  ${config.articleContainerPadding} ${config.mediumBpPositioning} ${config.wideBpPositioning}
+
+`;
