@@ -59,6 +59,7 @@
   },
   "dependencies": {
     "@times-components/ad": "0.5.2",
+    "@times-components/pull-quote": "0.0.1",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.14"
   },

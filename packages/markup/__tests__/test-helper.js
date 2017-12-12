@@ -6,6 +6,7 @@ import renderer from "react-test-renderer";
 const singleParagraph = require("../fixtures/single-paragraph.json");
 const multiParagraph = require("../fixtures/multi-paragraph.json");
 const multiParagraphWithAds = require("../fixtures/multi-paragraph-with-ads.json");
+const multiParagraphWithPullQuote = require("../fixtures/multi-paragraph-with-pullquote.json");
 const anchor = require("../fixtures/anchor.json");
 const bold = require("../fixtures/bold.json");
 const italic = require("../fixtures/italic.json");
@@ -32,6 +33,18 @@ export default (
   it("renders multiple paragraphs", () => {
     const output = renderer
       .create(<BlockComponent>{renderTrees(multiParagraph)}</BlockComponent>)
+      .toJSON();
+
+    expect(output).toMatchSnapshot();
+  });
+
+  it("renders multiple paragraphs with a pullquote", () => {
+    const output = renderer
+      .create(
+        <BlockComponent>
+          {renderTrees(multiParagraphWithPullQuote)}
+        </BlockComponent>
+      )
       .toJSON();
 
     expect(output).toMatchSnapshot();
