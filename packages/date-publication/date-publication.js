@@ -6,18 +6,15 @@ const publications = {
   TIMES: "The Times"
 };
 
-const DatePublication = ({ date, publication }) => [
-  format(date, "dddd MMMM DD YYYY"),
-  `, ${publications[publication]}`
-];
+const DatePublication = ({ date, publication }) =>
+  `${format(date, "dddd MMMM DD YYYY")}, ${publications[publication]}`;
 
 DatePublication.propTypes = {
-  date: PropTypes.instanceOf(Date),
+  date: PropTypes.instanceOf(Date).isRequired,
   publication: PropTypes.oneOf(Object.keys(publications))
 };
 
 DatePublication.defaultProps = {
-  date: null,
   publication: "TIMES"
 };
 
