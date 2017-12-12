@@ -1,5 +1,4 @@
 import React from "react";
-import { View } from "react-native";
 import PropTypes from "prop-types";
 import get from "lodash.get";
 import { renderTrees } from "@times-components/markup";
