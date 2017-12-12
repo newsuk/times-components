@@ -1,7 +1,7 @@
 const sharedStyles = {
   container: {
     marginTop: 0,
-    marginBottom: 30,
+    marginBottom: 30
   },
   quotes: {
     fontFamily: "TimesModern-Regular",

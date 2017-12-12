@@ -115,50 +115,52 @@ class ArticlePage extends React.Component {
   }
 
   static renderBody(content) {
-    return (
-        renderTrees([content.data], {
-          paragraph(key, attributes, children) {
-            return (
-              <ParagraphContainer
-                testID={`paragraph-${content.index}`}
-                accessibilityLabel={`paragraph-${content.index}`}
+    return renderTrees([content.data], {
+      paragraph(key, attributes, children) {
+        return (
+          <ParagraphContainer
+            testID={`paragraph-${content.index}`}
+            accessibilityLabel={`paragraph-${content.index}`}
+            key={key}
+          >
+            <Paragraph>{children}</Paragraph>
+          </ParagraphContainer>
+        );
+      },
+      image(key, attributes) {
+        const ImageContainer = ArticlePage.getImageContainer(
+          attributes.display
+        );
+        return (
+          <ImageContainer key={key}>
+            <ArticleImage
+              imageOptions={{
+                display: attributes.display,
+                ratio: attributes.ratio,
+                url: attributes.url
+              }}
+              captionOptions={{
+                caption: attributes.caption,
+                credits: attributes.credits
+              }}
+            />
+          </ImageContainer>
+        );
+      },
+      pullquote(key, attributes) {
+        return (
+          <PullQuoteContainer>
+            <PullQuoteResp>
+              <PullQuote
                 key={key}
-              >
-                <Paragraph>{children}</Paragraph>
-              </ParagraphContainer>
-            );
-          },
-          image(key, attributes) {
-            const ImageContainer = ArticlePage.getImageContainer(
-              attributes.display
-            );
-            return (
-              <ImageContainer key={key}>
-                <ArticleImage
-                  imageOptions={{
-                    display: attributes.display,
-                    ratio: attributes.ratio,
-                    url: attributes.url
-                  }}
-                  captionOptions={{
-                    caption: attributes.caption,
-                    credits: attributes.credits
-                  }}
-                />
-              </ImageContainer>
-            );
-          },
-          pullquote(key, attributes) {
-            return (
-              <PullQuoteContainer>
-              <PullQuoteResp>
-                <PullQuote key={key} content={attributes.content} caption={attributes.caption.name} />
-              </PullQuoteResp>
-              </PullQuoteContainer>
-            );
-          }
-        })
-    );
+                content={attributes.content}
+                caption={attributes.caption.name}
+              />
+            </PullQuoteResp>
+          </PullQuoteContainer>
+        );
+      }
+    });
   }
 
   static getImageContainer(imageType) {

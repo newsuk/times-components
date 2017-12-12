@@ -87,7 +87,13 @@ class ArticlePage extends React.Component {
               );
             },
             pullquote(key, attributes) {
-              return <PullQuote key={key} content={attributes.content} caption={attributes.caption.name} />;
+              return (
+                <PullQuote
+                  key={key}
+                  content={attributes.content}
+                  caption={attributes.caption.name}
+                />
+              );
             }
           })}
         </View>

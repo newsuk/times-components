@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import styled from "styled-components";
 import config from "../responsive-config";
 
@@ -117,6 +117,5 @@ export const PullQuoteResp = styled(View)`
 
 export const PullQuoteContainer = styled(View)`
   display: block;
-  ${config.mediumBpPositioning}
-  ${config.wideBpPositioning}
+  ${config.mediumBpPositioning} ${config.wideBpPositioning};
 `;
