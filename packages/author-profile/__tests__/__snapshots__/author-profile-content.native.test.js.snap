@@ -2,17 +2,16 @@
 
 exports[`does not re-render the author head if the name changes 1`] = `
 <Text
-  accessibility-label="author-name"
+  accessibilityLabel="author-name"
   accessibilityRole="heading"
   accessible={true}
   allowFontScaling={true}
-  aria-level="1"
   ellipsizeMode="tail"
   style={
     Object {
       "color": "#000",
       "fontFamily": "TimesModern-Bold",
-      "fontSize": 45,
+      "fontSize": 30,
       "paddingTop": 32,
     }
   }
@@ -24,17 +23,16 @@ exports[`does not re-render the author head if the name changes 1`] = `
 
 exports[`does re-render the author head if the loading state changes 1`] = `
 <Text
-  accessibility-label="author-name"
+  accessibilityLabel="author-name"
   accessibilityRole="heading"
   accessible={true}
   allowFontScaling={true}
-  aria-level="1"
   ellipsizeMode="tail"
   style={
     Object {
       "color": "#000",
       "fontFamily": "TimesModern-Bold",
-      "fontSize": 45,
+      "fontSize": 30,
       "paddingTop": 32,
     }
   }
@@ -225,17 +223,16 @@ exports[`renders profile content 1`] = `
             }
           >
             <Text
-              accessibility-label="author-name"
+              accessibilityLabel="author-name"
               accessibilityRole="heading"
               accessible={true}
               allowFontScaling={true}
-              aria-level="1"
               ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#000",
                   "fontFamily": "TimesModern-Bold",
-                  "fontSize": 45,
+                  "fontSize": 30,
                   "paddingTop": 32,
                 }
               }
@@ -4106,17 +4103,16 @@ exports[`renders profile content component 1`] = `
             }
           >
             <Text
-              accessibility-label="author-name"
+              accessibilityLabel="author-name"
               accessibilityRole="heading"
               accessible={true}
               allowFontScaling={true}
-              aria-level="1"
               ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#000",
                   "fontFamily": "TimesModern-Bold",
-                  "fontSize": 45,
+                  "fontSize": 30,
                   "paddingTop": 32,
                 }
               }
@@ -5874,17 +5870,16 @@ exports[`renders profile empty 1`] = `
             }
           >
             <Text
-              accessibility-label="author-name"
+              accessibilityLabel="author-name"
               accessibilityRole="heading"
               accessible={true}
               allowFontScaling={true}
-              aria-level="1"
               ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#000",
                   "fontFamily": "TimesModern-Bold",
-                  "fontSize": 45,
+                  "fontSize": 30,
                   "paddingTop": 32,
                 }
               }
@@ -6236,17 +6231,16 @@ exports[`renders profile loading 1`] = `
             }
           >
             <Text
-              accessibility-label="author-name"
+              accessibilityLabel="author-name"
               accessibilityRole="heading"
               accessible={true}
               allowFontScaling={true}
-              aria-level="1"
               ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#000",
                   "fontFamily": "TimesModern-Bold",
-                  "fontSize": 45,
+                  "fontSize": 30,
                   "paddingTop": 32,
                 }
               }
@@ -6828,17 +6822,16 @@ exports[`renders the author head 1`] = `
     }
   >
     <Text
-      accessibility-label="author-name"
+      accessibilityLabel="author-name"
       accessibilityRole="heading"
       accessible={true}
       allowFontScaling={true}
-      aria-level="1"
       ellipsizeMode="tail"
       style={
         Object {
           "color": "#000",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 45,
+          "fontSize": 30,
           "paddingTop": 32,
         }
       }

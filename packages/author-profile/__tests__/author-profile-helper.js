@@ -279,6 +279,7 @@ export default AuthorProfileContent => {
       el
         .dive()
         .dive()
+        .find("AuthorName")
         .dive()
         .find({ testID: "author-name" })
     ).toMatchSnapshot();
@@ -301,6 +302,7 @@ export default AuthorProfileContent => {
       el
         .dive()
         .dive()
+        .find("AuthorName")
         .dive()
         .find({ testID: "author-name" })
     ).toMatchSnapshot();
