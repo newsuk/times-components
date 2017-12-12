@@ -4,8 +4,8 @@ exports[`PullQuotes test on android Pull Quotes with a Caption 1`] = `
 <View
   style={
     Object {
-      "marginBottom": 40,
-      "marginTop": 40,
+      "marginBottom": 30,
+      "marginTop": 0,
       "paddingLeft": 10,
       "paddingRight": 10,
     }
@@ -20,8 +20,8 @@ exports[`PullQuotes test on android Pull Quotes with a Caption 1`] = `
         Object {
           "fontFamily": "TimesModern-Regular",
           "fontSize": 75,
-          "lineHeight": 0,
-          "marginTop": 40,
+          "marginBottom": -40,
+          "marginTop": 0,
         },
         Object {
           "color": "#13354e",
@@ -38,7 +38,7 @@ exports[`PullQuotes test on android Pull Quotes with a Caption 1`] = `
     style={
       Object {
         "fontFamily": "TimesModern-Regular",
-        "fontSize": 30,
+        "fontSize": 25,
         "lineHeight": 30,
       }
     }
@@ -54,7 +54,7 @@ exports[`PullQuotes test on android Pull Quotes with a Caption 1`] = `
         Object {
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
-          "marginBottom": 10,
+          "marginBottom": 0,
           "marginTop": 10,
         },
         Object {
@@ -72,8 +72,8 @@ exports[`PullQuotes test on android Pull Quotes without a Caption 1`] = `
 <View
   style={
     Object {
-      "marginBottom": 40,
-      "marginTop": 40,
+      "marginBottom": 30,
+      "marginTop": 0,
       "paddingLeft": 10,
       "paddingRight": 10,
     }
@@ -88,8 +88,8 @@ exports[`PullQuotes test on android Pull Quotes without a Caption 1`] = `
         Object {
           "fontFamily": "TimesModern-Regular",
           "fontSize": 75,
-          "lineHeight": 0,
-          "marginTop": 40,
+          "marginBottom": -40,
+          "marginTop": 0,
         },
         Object {
           "color": "#13354e",
@@ -106,7 +106,7 @@ exports[`PullQuotes test on android Pull Quotes without a Caption 1`] = `
     style={
       Object {
         "fontFamily": "TimesModern-Regular",
-        "fontSize": 30,
+        "fontSize": 25,
         "lineHeight": 30,
       }
     }
@@ -122,7 +122,7 @@ exports[`PullQuotes test on android Pull Quotes without a Caption 1`] = `
         Object {
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
-          "marginBottom": 10,
+          "marginBottom": 0,
           "marginTop": 10,
         },
         Object {
@@ -140,8 +140,8 @@ exports[`PullQuotes test on android Pull Quotes without a Caption and different 
 <View
   style={
     Object {
-      "marginBottom": 40,
-      "marginTop": 40,
+      "marginBottom": 30,
+      "marginTop": 0,
       "paddingLeft": 10,
       "paddingRight": 10,
     }
@@ -156,8 +156,8 @@ exports[`PullQuotes test on android Pull Quotes without a Caption and different 
         Object {
           "fontFamily": "TimesModern-Regular",
           "fontSize": 75,
-          "lineHeight": 0,
-          "marginTop": 40,
+          "marginBottom": -40,
+          "marginTop": 0,
         },
         Object {
           "color": "#850029",
@@ -174,7 +174,7 @@ exports[`PullQuotes test on android Pull Quotes without a Caption and different 
     style={
       Object {
         "fontFamily": "TimesModern-Regular",
-        "fontSize": 30,
+        "fontSize": 25,
         "lineHeight": 30,
       }
     }
@@ -190,7 +190,7 @@ exports[`PullQuotes test on android Pull Quotes without a Caption and different 
         Object {
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
-          "marginBottom": 10,
+          "marginBottom": 0,
           "marginTop": 10,
         },
         Object {

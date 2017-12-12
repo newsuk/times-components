@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.9.0"></a>
+# [1.9.0](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.8.4...@times-components/brightcove-video@1.9.0) (2017-12-12)
+
+
+### Features
+
+* refactor storybook package ([#453](https://github.com/newsuk/times-components/issues/453)) ([acadef3](https://github.com/newsuk/times-components/commit/acadef3))
+
+
+
+
+<a name="1.8.4"></a>
+## [1.8.4](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.8.3...@times-components/brightcove-video@1.8.4) (2017-12-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="1.8.3"></a>
+## [1.8.3](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.8.2...@times-components/brightcove-video@1.8.3) (2017-12-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
 <a name="1.8.2"></a>
 ## [1.8.2](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.8.0...@times-components/brightcove-video@1.8.2) (2017-12-04)
 

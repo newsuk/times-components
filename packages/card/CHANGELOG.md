@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.13.0"></a>
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/card@0.12.2...@times-components/card@0.13.0) (2017-12-12)
+
+
+### Bug Fixes
+
+* make article list layout responsive ([#443](https://github.com/newsuk/times-components/issues/443)) ([06a0f4a](https://github.com/newsuk/times-components/commit/06a0f4a))
+* resolve article tech debt ([#446](https://github.com/newsuk/times-components/issues/446)) ([4ff6a6b](https://github.com/newsuk/times-components/commit/4ff6a6b))
+
+
+### Features
+
+* refactor storybook package ([#453](https://github.com/newsuk/times-components/issues/453)) ([acadef3](https://github.com/newsuk/times-components/commit/acadef3))
+
+
+
+
+<a name="0.12.2"></a>
+## [0.12.2](https://github.com/newsuk/times-components/compare/@times-components/card@0.12.1...@times-components/card@0.12.2) (2017-12-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.12.1"></a>
+## [0.12.1](https://github.com/newsuk/times-components/compare/@times-components/card@0.12.0...@times-components/card@0.12.1) (2017-12-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
 <a name="0.12.0"></a>
 # [0.12.0](https://github.com/newsuk/times-components/compare/@times-components/card@0.11.3...@times-components/card@0.12.0) (2017-12-07)
 

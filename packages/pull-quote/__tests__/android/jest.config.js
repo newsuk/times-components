@@ -1,3 +1,3 @@
 const jestConfigurator = require("@times-components/jest-configurator");
 
-module.exports = jestConfigurator("pull-quotes", "android");
+module.exports = jestConfigurator("pull-quote", "android");

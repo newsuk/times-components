@@ -1,11 +1,15 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet, Text, Platform } from "react-native";
 import PropTypes from "prop-types";
 
 import Image from "@times-components/image";
 import { TextLink } from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
-import { renderTrees, treePropType } from "@times-components/markup";
+import { treePropType } from "@times-components/markup";
+
+import AuthorTitle from "./author-title";
+import TwitterIcon from "./twitter-icon";
+import Bio from "./author-bio";
 
 const styles = StyleSheet.create({
   container: {
@@ -33,26 +37,21 @@ const styles = StyleSheet.create({
     color: "#000",
     paddingTop: 32
   },
-  title: {
-    fontFamily: "TimesDigitalW04-RegularSC",
-    fontSize: 15,
-    color: "#696969"
-  },
   twitter: {
+    paddingTop: 16,
+    flexDirection: "row",
+    ...Platform.select({
+      android: {
+        alignItems: "center"
+      }
+    })
+  },
+  twitterLink: {
     fontSize: 18,
     fontFamily: "GillSansMTStd-Medium",
     color: "#006699",
-    paddingTop: 16,
-    textDecorationLine: "none"
-  },
-  bio: {
-    fontFamily: "TimesDigitalW04",
-    textAlign: "center",
-    fontSize: 16,
-    lineHeight: 26,
-    color: "#333",
-    maxWidth: "88%",
-    paddingBottom: 32
+    textDecorationLine: "none",
+    paddingLeft: 5
   },
   wrapper: {
     alignItems: "center",
@@ -82,11 +81,9 @@ const AuthorHead = props => {
         >
           {name}
         </Text>
-        <Text accessibilityRole="heading" aria-level="2" style={styles.title}>
-          {title.toLowerCase()}
-        </Text>
+        <AuthorTitle title={title} />
         <TwitterLink handle={twitter} onPress={onTwitterLinkPress} />
-        <Text style={styles.bio}>{renderTrees(bio)}</Text>
+        <Bio bio={bio} />
       </View>
       {imageComponent}
     </View>
@@ -117,13 +114,16 @@ const TwitterLink = ({ handle, onPress }) => {
   const url = `https://twitter.com/${handle}`;
 
   return (
-    <TextLink
-      style={styles.twitter}
-      url={url}
-      onPress={e => onPress(e, { handle, url })}
-    >
-      @{handle}
-    </TextLink>
+    <View style={styles.twitter}>
+      <TwitterIcon />
+      <TextLink
+        style={styles.twitterLink}
+        url={url}
+        onPress={e => onPress(e, { handle, url })}
+      >
+        @{handle}
+      </TextLink>
+    </View>
   );
 };
 

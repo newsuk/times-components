@@ -4,8 +4,8 @@ import { AdComposer } from "@times-components/ad";
 import { View, Text, Platform, ScrollView } from "react-native";
 import React from "react";
 import { storiesOf } from "dextrose/storiesOfOverloader";
+import { CenteredDecorator } from "@times-components/storybook/decorators";
 import { renderTree, renderTrees } from "./markup";
-import CenteredDecorator from "../../storybook/decorators/centered";
 
 const multiParagraph = require("./fixtures/multi-paragraph.json");
 const multiParagraphWithAds = require("./fixtures/multi-paragraph-with-ads.json");

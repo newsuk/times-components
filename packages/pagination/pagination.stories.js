@@ -3,9 +3,9 @@ import { View } from "react-native";
 import { storiesOf } from "dextrose/storiesOfOverloader";
 import { action } from "@storybook/addon-actions";
 import { withTrackingContext } from "@times-components/tracking";
+import { LateralSpacingDecorator } from "@times-components/storybook/decorators";
 import Pagination, { withPageState } from "./pagination";
 import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
-import LateralSpacingDecorator from "../../storybook/decorators/lateral-spacing";
 
 storiesOf("Pagination", module)
   .addDecorator(LateralSpacingDecorator)
