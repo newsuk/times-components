@@ -3,7 +3,7 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import PullQuotes from "../pull-quotes";
+import PullQuotes from "../pull-quote";
 
 const content = "[The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child";
 const caption = "Judge Sapnara";

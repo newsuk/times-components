@@ -2,7 +2,6 @@ import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import styles from "./styles";
-import { propTypes } from "../image/image-prop-types";
 
 const PullQuotes = props => (
   <View style={styles.container}>
