@@ -1,6 +1,6 @@
 {
   "name": "@times-components/utils",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "scripts": {
     "make-schema": "node ./scripts/fetch-gql-schema",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -25,7 +25,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@times-components/eslint-config-thetimes": "0.0.1",
+    "@times-components/eslint-config-thetimes": "0.0.2",
     "eslint": "4.9.0",
     "mkdirp": "0.5.1",
     "node-fetch": "1.7.2",

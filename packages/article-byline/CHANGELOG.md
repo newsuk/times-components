@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/article-byline@0.9.2...@times-components/article-byline@0.10.0) (2017-12-12)
+
+
+### Features
+
+* refactor storybook package ([#453](https://github.com/newsuk/times-components/issues/453)) ([acadef3](https://github.com/newsuk/times-components/commit/acadef3))
+
+
+
+
 <a name="0.9.2"></a>
 ## [0.9.2](https://github.com/newsuk/times-components/compare/@times-components/article-byline@0.9.1...@times-components/article-byline@0.9.2) (2017-12-08)
 
