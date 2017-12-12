@@ -16,5 +16,6 @@
     "!**/packages/author-profile/author-profile-content.js"
   ],
   "moduleFileExtensions": ["web.js", "js", "json"],
-  "snapshotSerializers": ["enzyme-to-json/serializer"]
+  "snapshotSerializers": ["enzyme-to-json/serializer"],
+  "setupFiles": ["raf/polyfill"]
 }
