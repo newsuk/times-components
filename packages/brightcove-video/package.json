@@ -1,6 +1,6 @@
 {
   "name": "@times-components/brightcove-video",
-  "version": "1.8.4",
+  "version": "1.9.0",
   "main": "brightcove-video",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -45,7 +45,7 @@
   "devDependencies": {
     "@storybook/addon-actions": "3.2.17",
     "@storybook/react-native": "3.2.17",
-    "@times-components/eslint-config-thetimes": "0.0.1",
+    "@times-components/eslint-config-thetimes": "0.0.2",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",

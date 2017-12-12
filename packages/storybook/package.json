@@ -1,6 +1,6 @@
 {
   "name": "@times-components/storybook",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "React storybook helpers for Times Components",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -30,5 +30,8 @@
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "react-native": "0.50.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

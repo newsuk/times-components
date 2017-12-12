@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tealium",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "React storybook helpers for Times Components",
   "main": "tealium.js",
   "scripts": {
@@ -21,14 +21,24 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "jest": {
     "rootDir": "../../",
-    "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
     "testEnvironment": "jsdom",
-    "testMatch": ["<rootDir>/packages/tealium/__tests__/**.web.test.js"],
+    "testMatch": [
+      "<rootDir>/packages/tealium/__tests__/**.web.test.js"
+    ],
     "moduleNameMapper": {
       "react-native": "react-native-web"
     },
-    "moduleFileExtensions": ["web.js", "js", "json"],
-    "setupFiles": ["raf/polyfill"]
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "json"
+    ],
+    "setupFiles": [
+      "raf/polyfill"
+    ]
   },
   "dependencies": {
     "@storybook/addon-actions": "3.2.17",
@@ -41,5 +51,8 @@
   },
   "peerDependencies": {
     "react-native-web": "0.1.14"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

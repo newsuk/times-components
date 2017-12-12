@@ -1,6 +1,6 @@
 {
   "name": "@times-components/date-publication",
-  "version": "0.6.2",
+  "version": "0.7.0",
   "description": "Date and Publication properties",
   "main": "date-publication",
   "scripts": {
@@ -43,7 +43,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.2.17",
-    "@times-components/eslint-config-thetimes": "0.0.1",
+    "@times-components/eslint-config-thetimes": "0.0.2",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",
@@ -52,6 +52,8 @@
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
     "dextrose": "1.2.8",
+    "enzyme": "3.2.0",
+    "enzyme-adapter-react-16": "1.1.0",
     "eslint": "4.9.0",
     "flow-bin": "0.42.0",
     "jest": "21.2.1",
