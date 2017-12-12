@@ -14,7 +14,8 @@ import ArticleLoading from "./article-loading";
 import {
   MainContainer,
   HeaderContainer,
-  MetaContainer
+  MetaContainer,
+  BodyContainer
 } from "./styles/responsive";
 
 import {
@@ -69,7 +70,7 @@ class ArticlePage extends React.Component {
             label={label}
           />
         </HeaderContainer>
-        <View style={{display: 'block'}}>
+        <BodyContainer>
           <MetaContainer>
             <ArticleMeta
               byline={byline}
@@ -79,7 +80,7 @@ class ArticlePage extends React.Component {
           </MetaContainer>
           <MediaContainerDesktop>{LeadAssetMedia}</MediaContainerDesktop>
           {BodyView}
-        </View>
+        </BodyContainer>
       </MainContainer>
     );
   }
@@ -113,9 +114,8 @@ class ArticlePage extends React.Component {
     );
   }
 
-  static renderBody(content, index) {
+  static renderBody(content) {
     return (
-      // <View key={`content${index}`}>
         renderTrees([content.data], {
           paragraph(key, attributes, children) {
             return (
@@ -150,26 +150,14 @@ class ArticlePage extends React.Component {
           },
           pullquote(key, attributes) {
             return (
-              <PullQuoteContainer
-              testID={`pullquote-${content.index}`}
-              accessibilityLabel={`pullquote-${content.index}`}
-              key={key}
-              >
+              <PullQuoteContainer>
               <PullQuoteResp>
                 <PullQuote key={key} content={attributes.content} caption={attributes.caption.name} />
               </PullQuoteResp>
-                {/* <PullQuoteResp /> */}
-                <p>A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. </p>
-
-                {/* <ParagraphContainer>
-                <Paragraph>A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. A load of teext that should be the next paragraph as it comes through. </Paragraph>
-                </ParagraphContainer> */}
-
               </PullQuoteContainer>
             );
           }
         })
-      // {/* </View> */}
     );
   }
 

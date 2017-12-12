@@ -4,11 +4,11 @@ import config from "../responsive-config";
 
 /* --- Body --- */
 
-export const ParagraphContainer = styled(View)`
+export const ParagraphContainer = styled.div`
   ${config.articleContainerPadding} ${config.mediumBpPositioning} ${config.wideBpPositioning};
 `;
 
-export const Paragraph = styled(Text)`
+export const Paragraph = styled.p`
   color: "#333333";
   font-family: "TimesDigitalW04-Regular";
   line-height: 26px;
@@ -99,18 +99,24 @@ export const InlineImg = styled(View)`
 /* --- Pull Quotes --- */
 
 export const PullQuoteResp = styled(View)`
+
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+
   @media (min-width: ${config.mediumBreakpoint}) {
     width: 60%;
     float: left;
     margin-right: 20px;
     margin-bottom 0px;
-    // background-color: green;
-    // height: 100px;
+    margin-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 `;
 
 export const PullQuoteContainer = styled(View)`
   display: block;
-  ${config.articleContainerPadding} ${config.mediumBpPositioning} ${config.wideBpPositioning}
-
+  ${config.mediumBpPositioning}
+  ${config.wideBpPositioning}
 `;

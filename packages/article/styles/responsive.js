@@ -30,3 +30,8 @@ export const MetaContainer = styled(View)`
     width: 20.8333%;
   }
 `;
+
+/* --- Body --- */
+export const BodyContainer = styled(View)`
+  display: block;
+`;

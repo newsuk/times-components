@@ -6,6 +6,7 @@ import { renderTrees } from "@times-components/markup";
 import Image from "@times-components/image";
 import ArticleImage from "@times-components/article-image";
 import { withTrackingContext } from "@times-components/tracking";
+import PullQuote from "@times-components/pull-quote";
 
 import ArticleContent from "./article-content";
 import ArticleError from "./article-error";
@@ -84,6 +85,9 @@ class ArticlePage extends React.Component {
                   }}
                 />
               );
+            },
+            pullquote(key, attributes) {
+              return <PullQuote key={key} content={attributes.content} caption={attributes.caption.name} />;
             }
           })}
         </View>
