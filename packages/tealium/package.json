@@ -45,5 +45,8 @@
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "react-native": "0.50.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -28,5 +28,8 @@
   },
   "peerDependencies": {
     "eslint": "4.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
