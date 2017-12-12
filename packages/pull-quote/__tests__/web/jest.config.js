@@ -1,3 +1,9 @@
 const jestConfigurator = require("@times-components/jest-configurator");
 
-module.exports = jestConfigurator("pull-quotes", "web");
+module.exports = Object.assign(jestConfigurator("pull-quotes", "web"), {
+  collectCoverageFrom: [
+    "**/packages/pull-quote/*.js",
+    "!**/packages/pull-quote/*stories.js",
+    "!**/packages/pull-quote/*.web.js"
+  ]
+});

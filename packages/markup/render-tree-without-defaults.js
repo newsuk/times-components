@@ -1,9 +1,10 @@
 const renderTree = (tree, renderers, key, indx = 0) => {
   const { name, attributes, children } = tree;
 
-  const newName = name.replace("-", "");
-  // console.log(newName);
-  const renderer = renderers[newName];
+  // To cope with hyphenated names from the API
+  const renderFunction = name.replace("-", "");
+
+  const renderer = renderers[renderFunction];
   if (!renderer) return null;
 
   const renderedChildren = children.map((child, index) =>
