@@ -21,3 +21,4 @@ packages
 settings.gradle
 build.gradle
 *.log
+storybook-static
