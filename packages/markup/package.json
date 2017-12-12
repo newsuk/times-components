@@ -51,7 +51,7 @@
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-native": "0.50.1",
-    "react-test-renderer": "16.0.0",
+    "react-test-renderer": "16.2.0",
     "webpack": "3.3.0"
   },
   "dependencies": {
