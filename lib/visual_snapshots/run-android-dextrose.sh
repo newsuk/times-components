@@ -13,7 +13,7 @@ npx lerna run dextrose-clean
 npx lerna run dextrose-stories --since
 npx compile-tests -d fructose
 npx rnstl --searchDir ./packages --pattern './*/*.dextrose.tmp.js' --outputFile ./fructose/components.js
-react-native start --root fructose &
+npx react-native start --root fructose --projectRoots $(pwd)/fructose,$(pwd) &
 react-native run-android --variant=debug --no-packager
 LOGLEVEL=verbose npx dextrose --config ./dextrose/dextrose.android.js --timeout 600000  --snapshotWait 2000
 npx lerna run dextrose-clean
