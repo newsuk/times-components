@@ -2,7 +2,7 @@ import Chance from "chance";
 
 const chance = new Chance(88888);
 
-const name = "Fiona Hamilton";
+const name = "Deborah Haynes";
 const jobTitle = "Legal Editor";
 const image =
   "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg";

@@ -13,7 +13,6 @@ export const Paragraph = styled(Text)`
   font-family: "TimesDigitalW04-Regular";
   line-height: 26px;
   font-size: 17px;
-  line-height: 26px;
   margin-bottom: 25px;
   margin-top: 0;
 

@@ -48,13 +48,8 @@ When developing a component it's easiest to use the
 [storybooks](https://github.com/storybooks/storybook) with hot reloading. Make
 sure you follow the
 [React Native instructions](https://facebook.github.io/react-native/docs/getting-started.html)
-to get up and running first
-
-* `npm run storybook` will build the storybook and allow you to develop
-  components in the browser
-* `npm run storybook-native` will build the storybook and watch for JS changes.
-  In a separate terminal run `react-native run-[platform]`. This will allow you
-  to develop in your storybook on a device or in an emulator.
+to get up and running first. See [README.md](../README.md) for commands to run
+the storybook.
 
 > #### Caution
 >

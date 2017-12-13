@@ -7,7 +7,7 @@ import {
   ViewPropTypes,
   Text
 } from "react-native";
-import { storiesOf } from "@storybook/react-native";
+import { storiesOf } from "dextrose/storiesOfOverloader";
 import { decorateAction } from "@storybook/addon-actions";
 import BrightcoveVideo from "@times-components/brightcove-video";
 import PropTypes from "prop-types";

@@ -24,6 +24,7 @@ exports[`renders an article-summary component with content 1`] = `
     dir="auto"
     style={
       Object {
+        "WebkitFontSmoothing": "auto",
         "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
@@ -80,8 +81,7 @@ exports[`renders an article-summary component with content 1`] = `
       }
     }
   >
-    Saturday July 01 2017
-    , The Sunday Times
+    Saturday July 01 2017, The Sunday Times
   </div>
 </div>
 `;
@@ -110,6 +110,7 @@ exports[`renders an article-summary component with content including line breaks
     dir="auto"
     style={
       Object {
+        "WebkitFontSmoothing": "auto",
         "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
@@ -185,8 +186,7 @@ exports[`renders an article-summary component with content including line breaks
       }
     }
   >
-    Saturday July 01 2017
-    , The Sunday Times
+    Saturday July 01 2017, The Sunday Times
   </div>
 </div>
 `;
@@ -215,6 +215,7 @@ exports[`renders an article-summary component with empty content at the end trim
     dir="auto"
     style={
       Object {
+        "WebkitFontSmoothing": "auto",
         "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
@@ -277,8 +278,7 @@ exports[`renders an article-summary component with empty content at the end trim
       }
     }
   >
-    Saturday July 01 2017
-    , The Sunday Times
+    Saturday July 01 2017, The Sunday Times
   </div>
 </div>
 `;
@@ -307,6 +307,7 @@ exports[`renders an article-summary component with headline and no content 1`] =
     dir="auto"
     style={
       Object {
+        "WebkitFontSmoothing": "auto",
         "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
@@ -348,8 +349,7 @@ exports[`renders an article-summary component with headline and no content 1`] =
       }
     }
   >
-    Saturday July 01 2017
-    , The Sunday Times
+    Saturday July 01 2017, The Sunday Times
   </div>
 </div>
 `;

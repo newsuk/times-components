@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "0.10.0",
+  "version": "0.12.0",
   "main": "article-summary",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -8,9 +8,11 @@
     "test:native": "jest --config='./jest.config.json'",
     "test:web": "jest --config='./jest.config.web.json'",
     "test": "yarn test:native --ci --bail --coverage && yarn test:web --ci --bail --coverage",
-    "fmt": "prettier --write '**/*.+(js|json|md)'",
-    "prettier:diff": "prettier --list-different '**/*.+(js|json|md)'",
-    "lint": "eslint . && yarn prettier:diff"
+    "fmt": "prettier --write '**/*.*'",
+    "prettier:diff": "prettier --list-different '**/*.*'",
+    "lint": "eslint . && yarn prettier:diff",
+    "dextrose-stories": "dextrose-stories",
+    "dextrose-clean": "dextrose-clean"
   },
   "repository": {
     "type": "git",
@@ -30,7 +32,8 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@storybook/react-native": "3.2.11",
+    "@storybook/react-native": "3.2.17",
+    "@times-components/eslint-config-thetimes": "0.0.2",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",
@@ -38,12 +41,8 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
+    "dextrose": "1.2.8",
     "eslint": "4.9.0",
-    "eslint-config-airbnb": "16.1.0",
-    "eslint-config-prettier": "2.6.0",
-    "eslint-plugin-import": "2.8.0",
-    "eslint-plugin-jsx-a11y": "6.0.2",
-    "eslint-plugin-react": "7.4.0",
     "flow-bin": "0.42.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
@@ -54,8 +53,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/date-publication": "0.6.0",
-    "@times-components/markup": "0.13.2",
+    "@times-components/date-publication": "0.7.0",
+    "@times-components/markup": "0.14.0",
     "date-fns": "1.28.5",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.14"

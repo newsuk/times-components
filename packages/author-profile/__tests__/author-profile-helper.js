@@ -21,7 +21,7 @@ import pagedResult from "./paged-result";
 Enzyme.configure({ adapter: new React16Adapter() });
 
 const props = {
-  slug: "fiona-hamilton",
+  slug: "deborah-haynes",
   onTwitterLinkPress: () => {},
   onArticlePress: () => {},
   analyticsStream: () => {}
@@ -32,7 +32,7 @@ const mocks = [
     request: {
       query: addTypenameToDocument(authorProfileQuery),
       variables: {
-        slug: "fiona-hamilton"
+        slug: "deborah-haynes"
       }
     },
     result: authorProfileFixture
@@ -41,7 +41,7 @@ const mocks = [
     request: {
       query: addTypenameToDocument(articleListQuery),
       variables: {
-        slug: "fiona-hamilton",
+        slug: "deborah-haynes",
         first: 3,
         skip: 0,
         imageRatio: "3:2"
@@ -53,7 +53,7 @@ const mocks = [
     request: {
       query: addTypenameToDocument(articleListQuery),
       variables: {
-        slug: "fiona-hamilton",
+        slug: "deborah-haynes",
         first: 3,
         skip: 3,
         imageRatio: "3:2"
@@ -65,7 +65,7 @@ const mocks = [
     request: {
       query: addTypenameToDocument(articleListQuery),
       variables: {
-        slug: "fiona-hamilton",
+        slug: "deborah-haynes",
         first: 3,
         skip: 6,
         imageRatio: "3:2"
@@ -77,7 +77,7 @@ const mocks = [
     request: {
       query: addTypenameToDocument(articleListQuery),
       variables: {
-        slug: "fiona-hamilton",
+        slug: "deborah-haynes",
         first: 3,
         skip: 9,
         imageRatio: "3:2"
@@ -99,7 +99,7 @@ export default AuthorProfileContent => {
           {...props}
           author={authorProfileFixture.data.author}
           isLoading={false}
-          slug="fiona-hamilton"
+          slug="deborah-haynes"
           page={1}
           pageSize={10}
         />
@@ -129,7 +129,7 @@ export default AuthorProfileContent => {
 
   it("renders profile empty", () => {
     const p = Object.assign({}, props, {
-      slug: "fiona-hamilton",
+      slug: "deborah-haynes",
       author: null,
       isLoading: false,
       imageRatio: 16 / 9
@@ -142,7 +142,7 @@ export default AuthorProfileContent => {
 
   it("renders profile error", () => {
     const p = Object.assign({}, props, {
-      slug: "fiona-hamilton",
+      slug: "deborah-haynes",
       author: null,
       error: {
         error: "error"
@@ -162,7 +162,7 @@ export default AuthorProfileContent => {
           {...props}
           author={authorProfileFixture.data.author}
           isLoading={false}
-          slug="fiona-hamilton"
+          slug="deborah-haynes"
           page={1}
           pageSize={10}
           onTwitterLinkPress={() => {}}
@@ -176,7 +176,7 @@ export default AuthorProfileContent => {
       expect.objectContaining({
         object: "AuthorProfile",
         attrs: expect.objectContaining({
-          authorName: "Fiona Hamilton",
+          authorName: "Deborah Haynes",
           page: 1,
           pageSize: 10
         })
@@ -197,7 +197,7 @@ export default AuthorProfileContent => {
         count={10}
         articles={results.data.author.articles.list}
         author={authorProfileFixture.data.author}
-        slug="fiona-hamilton"
+        slug="deborah-haynes"
         page={1}
         pageSize={3}
         imageRatio={3 / 2}
@@ -310,7 +310,7 @@ export default AuthorProfileContent => {
           {...props}
           author={authorProfileFixture.data.author}
           isLoading={false}
-          slug="fiona-hamilton"
+          slug="deborah-haynes"
           page={1}
           pageSize={10}
           analyticsStream={stream}
@@ -322,7 +322,7 @@ export default AuthorProfileContent => {
       component: "Page",
       action: "Viewed",
       attrs: expect.objectContaining({
-        authorName: "Fiona Hamilton",
+        authorName: "Deborah Haynes",
         articlesCount: 20,
         page: 1,
         pageSize: 10

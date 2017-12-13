@@ -51,17 +51,18 @@ exports[`Card test on web renders 1`] = `
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
-    margin-right: 10px;
     margin-bottom: 0;
   }
 }
 
 @media (min-width:768px) {
   .c2 {
-    -webkit-box-flex: 3;
-    -webkit-flex-grow: 3;
-    -ms-flex-positive: 3;
-    flex-grow: 3;
+    padding-left: 15px;
+    padding-right: 8.3333%;
+    -webkit-box-flex: 2.7;
+    -webkit-flex-grow: 2.7;
+    -ms-flex-positive: 2.7;
+    flex-grow: 2.7;
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -151,6 +152,7 @@ exports[`Card test on web renders 1`] = `
           dir="auto"
           style={
             Object {
+              "WebkitFontSmoothing": "auto",
               "color": "rgba(51,51,51,1)",
               "fontFamily": "TimesModern-Bold",
               "fontSize": "22px",
@@ -206,8 +208,7 @@ exports[`Card test on web renders 1`] = `
             }
           }
         >
-          Saturday July 01 2017
-          , The Sunday Times
+          Saturday July 01 2017, The Sunday Times
         </div>
       </div>
     </div>
@@ -252,17 +253,18 @@ exports[`Card test on web renders loading state 1`] = `
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
-    margin-right: 10px;
     margin-bottom: 0;
   }
 }
 
 @media (min-width:768px) {
   .c2 {
-    -webkit-box-flex: 3;
-    -webkit-flex-grow: 3;
-    -ms-flex-positive: 3;
-    flex-grow: 3;
+    padding-left: 15px;
+    padding-right: 8.3333%;
+    -webkit-box-flex: 2.7;
+    -webkit-flex-grow: 2.7;
+    -ms-flex-positive: 2.7;
+    flex-grow: 2.7;
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -385,10 +387,12 @@ exports[`Card test on web renders without image 1`] = `
 
 @media (min-width:768px) {
   .c1 {
-    -webkit-box-flex: 3;
-    -webkit-flex-grow: 3;
-    -ms-flex-positive: 3;
-    flex-grow: 3;
+    padding-left: 15px;
+    padding-right: 8.3333%;
+    -webkit-box-flex: 2.7;
+    -webkit-flex-grow: 2.7;
+    -ms-flex-positive: 2.7;
+    flex-grow: 2.7;
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -435,6 +439,7 @@ exports[`Card test on web renders without image 1`] = `
           dir="auto"
           style={
             Object {
+              "WebkitFontSmoothing": "auto",
               "color": "rgba(51,51,51,1)",
               "fontFamily": "TimesModern-Bold",
               "fontSize": "22px",
@@ -490,8 +495,7 @@ exports[`Card test on web renders without image 1`] = `
             }
           }
         >
-          Saturday July 01 2017
-          , The Sunday Times
+          Saturday July 01 2017, The Sunday Times
         </div>
       </div>
     </div>
@@ -518,10 +522,12 @@ exports[`Card test on web renders without image url 1`] = `
 
 @media (min-width:768px) {
   .c1 {
-    -webkit-box-flex: 3;
-    -webkit-flex-grow: 3;
-    -ms-flex-positive: 3;
-    flex-grow: 3;
+    padding-left: 15px;
+    padding-right: 8.3333%;
+    -webkit-box-flex: 2.7;
+    -webkit-flex-grow: 2.7;
+    -ms-flex-positive: 2.7;
+    flex-grow: 2.7;
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -568,6 +574,7 @@ exports[`Card test on web renders without image url 1`] = `
           dir="auto"
           style={
             Object {
+              "WebkitFontSmoothing": "auto",
               "color": "rgba(51,51,51,1)",
               "fontFamily": "TimesModern-Bold",
               "fontSize": "22px",
@@ -623,8 +630,7 @@ exports[`Card test on web renders without image url 1`] = `
             }
           }
         >
-          Saturday July 01 2017
-          , The Sunday Times
+          Saturday July 01 2017, The Sunday Times
         </div>
       </div>
     </div>
