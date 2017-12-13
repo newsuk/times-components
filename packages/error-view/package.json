@@ -1,6 +1,6 @@
 {
   "name": "@times-components/error-view",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Handles errors",
   "main": "error-view",
   "scripts": {
@@ -17,7 +17,9 @@
     "preset": "react-native",
     "rootDir": "../../",
     "coverageDirectory": "<rootDir>/packages/error-view/coverage/",
-    "coveragePathIgnorePatterns": ["/__tests__/"],
+    "coveragePathIgnorePatterns": [
+      "/__tests__/"
+    ],
     "transformIgnorePatterns": [
       "node_modules/(?!@times-components)/"
     ],
