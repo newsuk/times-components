@@ -16,7 +16,9 @@ yarn.lock
 *.yml
 *.html
 *.sh
+*.log
 packages
 settings.gradle
 build.gradle
 *.log
+storybook-static

@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.21.2"></a>
+## [0.21.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.21.0...@times-components/article@0.21.2) (2017-12-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.21.1"></a>
+## [0.21.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.21.0...@times-components/article@0.21.1) (2017-12-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.21.0"></a>
+# [0.21.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.20.2...@times-components/article@0.21.0) (2017-12-12)
+
+
+### Bug Fixes
+
+* resolve article tech debt ([#446](https://github.com/newsuk/times-components/issues/446)) ([4ff6a6b](https://github.com/newsuk/times-components/commit/4ff6a6b))
+* set font weight as a string ([#461](https://github.com/newsuk/times-components/issues/461)) ([7b93ea0](https://github.com/newsuk/times-components/commit/7b93ea0))
+
+
+### Features
+
+* refactor storybook package ([#453](https://github.com/newsuk/times-components/issues/453)) ([acadef3](https://github.com/newsuk/times-components/commit/acadef3))
+
+
+
+
 <a name="0.20.2"></a>
 ## [0.20.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.20.1...@times-components/article@0.20.2) (2017-12-08)
 

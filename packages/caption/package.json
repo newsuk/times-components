@@ -1,6 +1,6 @@
 {
   "name": "@times-components/caption",
-  "version": "0.8.4",
+  "version": "0.9.0",
   "description": "Media caption component",
   "main": "caption",
   "scripts": {
@@ -42,9 +42,9 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@storybook/react-native": "3.2.11",
-    "@times-components/eslint-config-thetimes": "0.0.1",
-    "@times-components/image": "1.7.4",
+    "@storybook/react-native": "3.2.17",
+    "@times-components/eslint-config-thetimes": "0.0.2",
+    "@times-components/image": "1.8.0",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",

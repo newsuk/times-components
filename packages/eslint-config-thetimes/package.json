@@ -1,6 +1,6 @@
 {
   "name": "@times-components/eslint-config-thetimes",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The eslint config for Times Components",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/newsuk/times-components.git"
   },
-  "keywords": ["eslint"],
+  "keywords": [
+    "eslint"
+  ],
   "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/newsuk/times-components/issues"
@@ -28,5 +30,8 @@
   },
   "peerDependencies": {
     "eslint": "4.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

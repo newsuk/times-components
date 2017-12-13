@@ -473,8 +473,7 @@ exports[`Card test on ios renders vertical by default 1`] = `
           }
           testID="datePublication"
         >
-          Saturday July 01 2017
-          , The Sunday Times
+          Saturday July 01 2017, The Sunday Times
         </Text>
       </View>
     </View>
@@ -573,8 +572,7 @@ exports[`Card test on ios renders without image 1`] = `
           }
           testID="datePublication"
         >
-          Saturday July 01 2017
-          , The Sunday Times
+          Saturday July 01 2017, The Sunday Times
         </Text>
       </View>
     </View>
@@ -673,8 +671,7 @@ exports[`Card test on ios renders without image url 1`] = `
           }
           testID="datePublication"
         >
-          Saturday July 01 2017
-          , The Sunday Times
+          Saturday July 01 2017, The Sunday Times
         </Text>
       </View>
     </View>

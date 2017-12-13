@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, View, Platform } from "react-native";
 import PropTypes from "prop-types";
 import { renderTrees, treePropType } from "@times-components/markup";
 import DatePublication from "@times-components/date-publication";
@@ -20,7 +20,10 @@ const styles = {
     lineHeight: 22,
     marginBottom: 8,
     fontFamily: "TimesModern-Bold",
-    fontWeight: "400"
+    fontWeight: "400",
+    ...Platform.select({
+      web: { WebkitFontSmoothing: "auto" }
+    })
   },
   text: {
     color: "#696969",
