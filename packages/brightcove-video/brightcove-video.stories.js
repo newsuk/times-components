@@ -134,6 +134,16 @@ storiesOf("BrightcoveVideo", module)
       onError={firstArgJSONAction("error")}
     />
   ))
+  .add("Launcher with poster image & bad video id", () => (
+    <BrightcoveVideo
+      width={440}
+      height={300}
+      policyKey={policyKey}
+      poster={{ uri: posterImageURI }}
+      videoId="x"
+      accountId={accountId}
+    />
+  ))
   .add("Launcher with bad account id", () => (
     <BrightcoveVideo
       width={800}
