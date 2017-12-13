@@ -17,7 +17,7 @@
     "preset": "react-native",
     "rootDir": "../../",
     "coverageDirectory": "<rootDir>/packages/error-view/coverage/",
-    "collectCoverageFrom": ["**/packages/error-view/error-view.js"],
+    "coveragePathIgnorePatterns": ["/__tests__/"],
     "transformIgnorePatterns": [
       "node_modules/(?!@times-components)/"
     ],
