@@ -25,14 +25,17 @@ export const fragmentMatcher = new IntrospectionFragmentMatcher({
   introspectionQueryResultData
 });
 
+export const createMockClient = (mocks, removeTypename) =>
+  new ApolloClient({
+    link: new MockLink(mocks),
+    cache: new Cache({ addTypename: !removeTypename, fragmentMatcher })
+  });
+
 class MockedProvider extends Component {
   constructor(props, context) {
     super(props, context);
 
-    this.client = new ApolloClient({
-      link: new MockLink(props.mocks),
-      cache: new Cache({ addTypename: !props.removeTypename, fragmentMatcher })
-    });
+    this.client = createMockClient(props.mocks, props.removeTypename);
   }
 
   render() {

@@ -18,6 +18,7 @@ const ratioTextToFloat = s => {
 const AuthorProfile = ({
   author,
   error,
+  refetch,
   isLoading,
   onArticlePress,
   onTwitterLinkPress,
@@ -28,7 +29,7 @@ const AuthorProfile = ({
   slug
 }) => {
   if (error) {
-    return <AuthorProfileError {...error} />;
+    return <AuthorProfileError refetch={refetch} />;
   }
 
   const { biography, name, image: uri, jobTitle, twitter, articles } =
@@ -45,6 +46,8 @@ const AuthorProfile = ({
         author: data,
         pageSize,
         isLoading: articlesLoading,
+        error: articlesError,
+        refetch: refetchArticles,
         variables: { imageRatio }
       }) => {
         const articlesWithPublishTime = get(data, "articles.list", []).map(
@@ -63,6 +66,8 @@ const AuthorProfile = ({
             name={name}
             biography={biography}
             uri={uri}
+            error={articlesError}
+            refetch={refetchArticles}
             jobTitle={jobTitle}
             twitter={twitter}
             onTwitterLinkPress={onTwitterLinkPress}
@@ -91,7 +96,8 @@ AuthorProfile.defaultProps = {
   page: 1,
   onNext: () => {},
   onPrev: () => {},
-  pageSize: 10
+  pageSize: 10,
+  refetch: () => {}
 };
 
 AuthorProfile.propTypes = {
@@ -110,7 +116,8 @@ AuthorProfile.propTypes = {
   pageSize: PropTypes.number,
   onTwitterLinkPress: PropTypes.func,
   onArticlePress: PropTypes.func,
-  slug: PropTypes.string.isRequired
+  slug: PropTypes.string.isRequired,
+  refetch: PropTypes.func
 };
 
 const AuthorProfileWithTracking = withTrackingContext(AuthorProfile, {

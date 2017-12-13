@@ -7,12 +7,17 @@ import AuthorProfilePagination from "./author-profile-pagination";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
 import { propTypes, defaultProps } from "./author-profile-content-prop-types";
+import AuthorProfileListingError from "./author-profile-listing-error";
 import { normaliseWidth } from "./utils";
 
 const styles = StyleSheet.create({
   padding: {
     paddingLeft: 10,
     paddingRight: 10
+  },
+  errorContainer: {
+    flex: 1,
+    margin: 15
   }
 });
 
@@ -72,7 +77,9 @@ class AuthorProfileContent extends React.Component {
       pageSize,
       twitter,
       uri,
-      imageRatio
+      imageRatio,
+      error,
+      refetch
     } = this.props;
 
     const paginationComponent = (hideResults = false) => (
@@ -85,6 +92,27 @@ class AuthorProfileContent extends React.Component {
         pageSize={pageSize}
       />
     );
+
+    const renderAuthorHead = () => (
+      <AuthorProfileAuthorHead
+        isLoading={isLoading}
+        name={name}
+        bio={biography}
+        uri={uri}
+        title={jobTitle}
+        twitter={twitter}
+        onTwitterLinkPress={onTwitterLinkPress}
+      />
+    );
+
+    if (error) {
+      return (
+        <View style={styles.errorContainer}>
+          {renderAuthorHead()}
+          <AuthorProfileListingError refetch={refetch} />
+        </View>
+      );
+    }
 
     const data = articlesLoading
       ? Array(pageSize)
@@ -131,15 +159,7 @@ class AuthorProfileContent extends React.Component {
         pageSize={pageSize}
         ListHeaderComponent={
           <View>
-            <AuthorProfileAuthorHead
-              isLoading={isLoading}
-              name={name}
-              bio={biography}
-              uri={uri}
-              title={jobTitle}
-              twitter={twitter}
-              onTwitterLinkPress={onTwitterLinkPress}
-            />
+            {renderAuthorHead()}
             {paginationComponent()}
           </View>
         }

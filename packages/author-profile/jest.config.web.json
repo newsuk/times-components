@@ -13,6 +13,8 @@
     "!**/packages/author-profile/*.fructose.*.js",
     "!**/packages/author-profile/*.stories.js",
     "!**/packages/author-profile/__tests__/**.test.js",
+    "!**/packages/author-profile/author-profile-error.js",
+    "!**/packages/author-profile/author-profile-listing-error.js",
     "!**/packages/author-profile/author-profile-content.js"
   ],
   "moduleFileExtensions": ["web.js", "js", "json"],
