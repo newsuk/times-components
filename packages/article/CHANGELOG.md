@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.21.4"></a>
+## [0.21.4](https://github.com/newsuk/times-components/compare/@times-components/article@0.21.3...@times-components/article@0.21.4) (2017-12-13)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.21.3"></a>
+## [0.21.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.21.2...@times-components/article@0.21.3) (2017-12-13)
+
+
+### Bug Fixes
+
+* refactor article code ([#449](https://github.com/newsuk/times-components/issues/449)) ([28c3d97](https://github.com/newsuk/times-components/commit/28c3d97))
+
+
+
+
+<a name="0.21.2"></a>
+## [0.21.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.21.0...@times-components/article@0.21.2) (2017-12-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.21.1"></a>
+## [0.21.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.21.0...@times-components/article@0.21.1) (2017-12-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
 <a name="0.21.0"></a>
 # [0.21.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.20.2...@times-components/article@0.21.0) (2017-12-12)
 

@@ -1,3 +1,10 @@
 const jestConfigurator = require("@times-components/jest-configurator");
 
-module.exports = jestConfigurator("author-head", "web");
+module.exports = Object.assign(jestConfigurator("author-head", "web"), {
+  collectCoverageFrom: [
+    "**/packages/author-head/*.js",
+    "!**/packages/author-head/author-bio.js",
+    "!**/packages/author-head/author-title.js",
+    "!**/packages/author-head/*.stories.js"
+  ]
+});

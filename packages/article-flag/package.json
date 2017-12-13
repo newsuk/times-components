@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-flag",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "The article flag (sponsored, new, updated, etc)",
   "main": "article-flag",
   "scripts": {
@@ -17,6 +17,9 @@
     "preset": "react-native",
     "rootDir": "../../",
     "coverageDirectory": "<rootDir>/packages/article-flag/coverage/",
+    "collectCoverageFrom": [
+      "**/packages/article-flag/article-flag.js"
+    ],
     "transformIgnorePatterns": [
       "node_modules/(?!@times-components)/"
     ],

@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.14.1"></a>
+## [0.14.1](https://github.com/newsuk/times-components/compare/@times-components/card@0.14.0...@times-components/card@0.14.1) (2017-12-13)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.14.0"></a>
+# [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/card@0.13.0...@times-components/card@0.14.0) (2017-12-13)
+
+
+### Features
+
+* remove font anti-aliasing of article headline on web ([#466](https://github.com/newsuk/times-components/issues/466)) ([6be8cbd](https://github.com/newsuk/times-components/commit/6be8cbd))
+
+
+
+
 <a name="0.13.0"></a>
 # [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/card@0.12.2...@times-components/card@0.13.0) (2017-12-12)
 

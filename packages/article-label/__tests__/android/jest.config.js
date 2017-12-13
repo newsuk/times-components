@@ -1,3 +1,5 @@
 const jestConfigurator = require("@times-components/jest-configurator");
 
-module.exports = jestConfigurator("article-label", "android");
+module.exports = Object.assign(jestConfigurator("article-label", "android"), {
+  collectCoverageFrom: ["**/packages/article-label/article-label.js"]
+});

@@ -1,15 +1,16 @@
 /* eslint-env jest */
 
-import "react-native";
-import shared from "./shared";
+import shared from "../shared";
 
 jest.mock("react-native", () => {
   const reactNative = require.requireActual("react-native");
-  reactNative.Platform.OS = "web";
+  reactNative.Platform.OS = "ios";
   jest
     .spyOn(reactNative.Platform, "select")
-    .mockImplementation(obj => obj.web || obj.default);
+    .mockImplementation(obj => obj.ios || obj.default);
   return reactNative;
 });
 
-shared();
+describe("Article Image test on ios", () => {
+  shared();
+});
