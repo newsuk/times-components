@@ -1760,6 +1760,7 @@ exports[`renders profile content component 1`] = `
                       dir="auto"
                       style={
                         Object {
+                          "WebkitFontSmoothing": "auto",
                           "fontSize": "22px",
                           "fontWeight": "400",
                           "lineHeight": "22px",
@@ -1904,6 +1905,7 @@ exports[`renders profile content component 1`] = `
                       dir="auto"
                       style={
                         Object {
+                          "WebkitFontSmoothing": "auto",
                           "fontSize": "22px",
                           "fontWeight": "400",
                           "lineHeight": "22px",
@@ -2048,6 +2050,7 @@ exports[`renders profile content component 1`] = `
                       dir="auto"
                       style={
                         Object {
+                          "WebkitFontSmoothing": "auto",
                           "fontSize": "22px",
                           "fontWeight": "400",
                           "lineHeight": "22px",
@@ -2249,6 +2252,7 @@ exports[`renders profile content item component 1`] = `
               dir="auto"
               style={
                 Object {
+                  "WebkitFontSmoothing": "auto",
                   "fontSize": "22px",
                   "fontWeight": "400",
                   "lineHeight": "22px",
@@ -2387,6 +2391,7 @@ exports[`renders profile content item component with a specific image size 1`] =
               dir="auto"
               style={
                 Object {
+                  "WebkitFontSmoothing": "auto",
                   "fontSize": "22px",
                   "fontWeight": "400",
                   "lineHeight": "22px",
@@ -2482,6 +2487,7 @@ exports[`renders profile content item component with no image 1`] = `
               dir="auto"
               style={
                 Object {
+                  "WebkitFontSmoothing": "auto",
                   "fontSize": "22px",
                   "fontWeight": "400",
                   "lineHeight": "22px",
