@@ -35,3 +35,11 @@ export const MetaContainer = styled(View)`
     width: 20.8333%;
   }
 `;
+
+/* --- Body --- */
+
+const leadAssetBehaviour = leadAsset => (leadAsset ? "0" : "-9px");
+
+export const BodyContainer = styled(View)`
+  margin-top: ${props => leadAssetBehaviour(props.leadAsset)};
+`;

@@ -21,6 +21,7 @@ const articleFixtureNoStandfirstNoLabel = require("./fixtures/no-standfirst-no-l
 const articleFixtureNoStandfirstNoFlags = require("./fixtures/no-standfirst-no-flags.json");
 const articleFixtureNoLabelNoFlags = require("./fixtures/no-label-no-flags.json");
 const articleFixtureNoLabelNoFlagsNoStandFirst = require("./fixtures/no-label-no-flags-no-standfirst.json");
+const articleFixtureNoLeadAsset = require("./fixtures/no-lead-asset.json");
 
 const mocks = [
   {
@@ -137,4 +138,7 @@ storiesOf("Article", module)
       {...articleFixtureNoLabelNoFlagsNoStandFirst.data}
       analyticsStream={() => {}}
     />
+  ))
+  .add("Fixtures - No lead asset", () => (
+    <Article {...articleFixtureNoLeadAsset.data} analyticsStream={() => {}} />
   ));

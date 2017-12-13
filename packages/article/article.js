@@ -1,11 +1,7 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
-import get from "lodash.get";
-import { renderTrees } from "@times-components/markup";
 import Image from "@times-components/image";
-import ArticleImage from "@times-components/article-image";
-import { withTrackingContext } from "@times-components/tracking";
 
 import ArticleContent from "./article-content";
 import ArticleError from "./article-error";
@@ -15,6 +11,9 @@ import listViewDataHelper from "./data-helper";
 import styles from "./styles/body";
 import ArticleHeader from "./article-header";
 import ArticleMeta from "./article-meta";
+import ArticleRow from "./article-body-row";
+
+import articleTrackingContext from "./article-tracking-context";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
@@ -53,40 +52,7 @@ class ArticlePage extends React.Component {
         />
       );
     } else if (rowData.type === "articleBodyRow") {
-      return (
-        <View key={rowData.type + rowData.index}>
-          {renderTrees([rowData.data], {
-            paragraph(key, attributes, children) {
-              return (
-                <View
-                  testID={`paragraph-${rowData.index}`}
-                  accessibilityLabel={`paragraph-${rowData.index}`}
-                  key={key}
-                  style={[styles.articleMainContentRow]}
-                >
-                  <Text style={styles.articleTextElement}>{children}</Text>
-                </View>
-              );
-            },
-            image(key, attributes) {
-              return (
-                <ArticleImage
-                  key={key}
-                  imageOptions={{
-                    display: attributes.display,
-                    ratio: attributes.ratio,
-                    url: attributes.url
-                  }}
-                  captionOptions={{
-                    caption: attributes.caption,
-                    credits: attributes.credits
-                  }}
-                />
-              );
-            }
-          })}
-        </View>
-      );
+      return <ArticleRow content={rowData} />;
     }
 
     return null;
@@ -159,11 +125,4 @@ ArticlePage.defaultProps = {
   error: null
 };
 
-export default withTrackingContext(ArticlePage, {
-  trackingObject: "Article",
-  getAttrs: ({ article } = {}) => ({
-    byline: get(article, "byline[0].children[0].attributes.value", ""),
-    headline: get(article, "headline", ""),
-    publishedTime: get(article, "publishedTime", "")
-  })
-});
+export default articleTrackingContext(ArticlePage);
