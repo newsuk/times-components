@@ -10,32 +10,35 @@ import {
 } from "./styles/body/responsive";
 
 function renderLeadAsset(leadAsset) {
-  return leadAsset ? (
-    <LeadAsset>
-      <LeadAssetMobile>
-        <ArticleImage
-          imageOptions={{
-            display: "",
-            ratio: leadAsset.crop.ratio,
-            url: leadAsset.crop.url
-          }}
-        />
-      </LeadAssetMobile>
-      <LeadAssetDesktop>
-        <ArticleImage
-          imageOptions={{
-            display: "",
-            ratio: leadAsset.crop.ratio,
-            url: leadAsset.crop.url
-          }}
-          captionOptions={{
-            caption: leadAsset.caption,
-            credits: leadAsset.credits
-          }}
-        />
-      </LeadAssetDesktop>
-    </LeadAsset>
-  ) : null;
+  if(leadAsset) {
+    return (
+      <LeadAsset>
+        <LeadAssetMobile>
+          <ArticleImage
+            imageOptions={{
+              display: "",
+              ratio: leadAsset.crop.ratio,
+              url: leadAsset.crop.url
+            }}
+          />
+        </LeadAssetMobile>
+        <LeadAssetDesktop>
+          <ArticleImage
+            imageOptions={{
+              display: "",
+              ratio: leadAsset.crop.ratio,
+              url: leadAsset.crop.url
+            }}
+            captionOptions={{
+              caption: leadAsset.caption,
+              credits: leadAsset.credits
+            }}
+          />
+        </LeadAssetDesktop>
+      </LeadAsset>
+    )
+  }
+  return null;
 }
 
 const LeadAssetComponent = props => {
