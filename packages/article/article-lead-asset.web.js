@@ -10,7 +10,7 @@ import {
 } from "./styles/body/responsive";
 
 function renderLeadAsset(leadAsset) {
-  if(leadAsset) {
+  if (leadAsset) {
     return (
       <LeadAsset>
         <LeadAssetMobile>
@@ -36,7 +36,7 @@ function renderLeadAsset(leadAsset) {
           />
         </LeadAssetDesktop>
       </LeadAsset>
-    )
+    );
   }
   return null;
 }
