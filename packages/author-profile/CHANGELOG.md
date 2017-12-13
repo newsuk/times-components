@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.32.0"></a>
+# [0.32.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.31.2...@times-components/author-profile@0.32.0) (2017-12-13)
+
+
+### Features
+
+* remove font anti-aliasing of article headline on web ([#466](https://github.com/newsuk/times-components/issues/466)) ([6be8cbd](https://github.com/newsuk/times-components/commit/6be8cbd))
+
+
+
+
 <a name="0.31.2"></a>
 ## [0.31.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.31.0...@times-components/author-profile@0.31.2) (2017-12-12)
 
