@@ -1,19 +1,30 @@
 import React from "react";
 import Svg, { Path, Circle } from "svgs";
 
-const ResetIcon = () => (
-  <Svg width={15} height={15.15} viewBox="0 0 100 114">
-    <Circle
-      r="43"
-      cy="64"
-      cx="50"
-      fill="none"
-      stroke="white"
-      strokeWidth={14}
-      strokeDasharray={1.5 * Math.PI * 43}
-    />
-    <Path fill="white" d="M50 0 L 85 21 L 50 42z" />
-  </Svg>
-);
+const ResetIcon = ({ width, strW = 14, svgW = 100 }) => {
+  const r = svgW / 2;
+
+  return (
+    <Svg
+      width={width}
+      height={width * ((svgW + strW) / svgW)}
+      viewBox={`0 0 ${svgW} ${svgW + strW}`}
+    >
+      <Circle
+        r={(svgW - strW) / 2}
+        cy={r + strW}
+        cx={r}
+        fill="none"
+        stroke="white"
+        strokeWidth={strW}
+        strokeDasharray={1.5 * Math.PI * ((svgW - strW) / 2)}
+      />
+      <Path
+        fill="white"
+        d={`M${r} 0 L ${r + strW * 2.5} ${strW * 1.5} L ${r} ${strW * 3}z`}
+      />
+    </Svg>
+  );
+};
 
 export default ResetIcon;

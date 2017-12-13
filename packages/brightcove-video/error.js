@@ -34,7 +34,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     backgroundColor: "#006699",
     paddingVertical: 12,
-    paddingHorizontal: 16
+    paddingHorizontal: 16,
+    borderRadius: 2
   },
   resetText: {
     color: "white",
@@ -74,7 +75,7 @@ const VideoError = ({ poster, width, height, onReset }) => (
       </Text>
       <TouchableOpacity onPress={onReset}>
         <View style={styles.resetButton}>
-          <ResetIcon />
+          <ResetIcon width={15} />
           <Text style={styles.resetText}>RETRY</Text>
         </View>
       </TouchableOpacity>
