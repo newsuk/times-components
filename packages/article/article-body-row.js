@@ -54,7 +54,7 @@ const ArticleRow = props => {
     },
     pullquote(key, attributes) {
       return (
-        <PullQuoteContainer>
+        <PullQuoteContainer key={key}>
           <PullQuoteResp>
             <PullQuote
               key={key}
