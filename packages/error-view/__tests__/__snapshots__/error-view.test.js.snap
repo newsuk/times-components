@@ -1,69 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders a simple component with no errors 1`] = `
+exports[`does not render an error state if there is no error 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
   ellipsizeMode="tail"
-  onError={[Function]}
-  style={undefined}
 >
-  Just a test
+  All good
 </Text>
 `;
 
-exports[`renders an ErrorView 1`] = `
-<View
-  style={
-    Array [
-      Object {},
-      Object {
-        "backgroundColor": "red",
-      },
-    ]
-  }
+exports[`renders the error state if a component invokes an error 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "white",
-      }
-    }
-  >
-    code
-     - 
-    message
-  </Text>
-</View>
+  Error: some error
+</Text>
 `;
 
-exports[`renders the errors from its child 1`] = `
-<View
-  style={
-    Array [
-      Object {},
-      Object {
-        "backgroundColor": "red",
-      },
-    ]
-  }
+exports[`renders the error state if a component throws an error 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "white",
-      }
-    }
-  >
-    [ERROR_CODE]
-     - 
-    [ERROR_MESSAGE]
-  </Text>
-</View>
+  Error: an error occurred
+</Text>
 `;

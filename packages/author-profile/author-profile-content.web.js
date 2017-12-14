@@ -1,9 +1,10 @@
 /* eslint-env browser */
 
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { StyleSheet, View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 import { withTrackScrollDepth } from "@times-components/tracking";
+import ErrorView from "@times-components/error-view";
 import AuthorProfileAuthorHead from "./author-profile-author-head";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
@@ -192,13 +193,21 @@ class AuthorProfileContent extends Component {
                     data-testid={article.elementId}
                     ref={node => this.registerNode(node)}
                   >
-                    {separatorComponent}
-                    <AuthorProfileItem
-                      {...article}
-                      imageRatio={imageRatio}
-                      imageSize={this.getImageSize(article.elementId)}
-                      onPress={e => onArticlePress(e, { id, url })}
-                    />
+                    <ErrorView>
+                      {({ hasError }) =>
+                        hasError ? null : (
+                          <Fragment>
+                            {separatorComponent}
+                            <AuthorProfileItem
+                              {...article}
+                              imageRatio={imageRatio}
+                              imageSize={this.getImageSize(article.elementId)}
+                              onPress={e => onArticlePress(e, { id, url })}
+                            />
+                          </Fragment>
+                        )
+                      }
+                    </ErrorView>
                   </div>
                 );
               })}
