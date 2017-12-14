@@ -68,6 +68,98 @@ exports[`PullQuotes test on ios Pull Quotes with a Caption 1`] = `
 </View>
 `;
 
+exports[`PullQuotes test on ios Pull Quotes with a Caption and a Twitter 1`] = `
+<View
+  style={
+    Object {
+      "marginBottom": 30,
+      "marginTop": 0,
+      "paddingLeft": 10,
+      "paddingRight": 10,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "TimesModern-Regular",
+          "fontSize": 75,
+          "marginBottom": -40,
+          "marginTop": 0,
+        },
+        Object {
+          "color": "#13354e",
+        },
+      ]
+    }
+  >
+    “
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontFamily": "TimesModern-Regular",
+        "fontSize": 25,
+        "lineHeight": 30,
+      }
+    }
+  >
+    [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "marginBottom": 0,
+          "marginTop": 10,
+        },
+        Object {
+          "color": "#696969",
+        },
+      ]
+    }
+  >
+    Judge Sapnara
+    , 
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="https://twitter.com/@henrywinter"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#696969",
+            "fontFamily": "TimesModern-Bold",
+            "fontStyle": "italic",
+            "textDecorationLine": "none",
+          },
+        ]
+      }
+    >
+      @henrywinter
+    </Text>
+  </Text>
+</View>
+`;
+
 exports[`PullQuotes test on ios Pull Quotes without a Caption 1`] = `
 <View
   style={

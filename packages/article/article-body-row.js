@@ -60,6 +60,7 @@ const ArticleRow = props => {
               key={key}
               content={attributes.content}
               caption={attributes.caption.name}
+              twitter={attributes.caption.twitter}
             />
           </PullQuoteResp>
         </PullQuoteContainer>
