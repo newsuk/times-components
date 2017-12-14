@@ -12,7 +12,8 @@ const sharedStyles = {
   content: {
     fontFamily: "TimesModern-Regular",
     fontSize: 25,
-    lineHeight: 30
+    lineHeight: 30,
+    color: "#333333"
   },
   caption: {
     fontFamily: "GillSansMTStd-Medium",
@@ -22,7 +23,6 @@ const sharedStyles = {
   },
   link: {
     color: "#696969",
-    fontStyle: "italic",
     fontFamily: "TimesModern-Bold",
     textDecorationLine: "none"
   }
