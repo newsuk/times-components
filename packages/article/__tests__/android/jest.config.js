@@ -7,6 +7,7 @@ module.exports = Object.assign(jestConfigurator("article", "android"), {
     "!**/packages/article/*stories*",
     "!**/packages/article/__tests__/**",
     "!**/packages/article/*fructose*",
-    "!**/packages/article/data-helper.js"
+    "!**/packages/article/data-helper.js",
+    "!**/packages/article/article-body.js"
   ]
 });
