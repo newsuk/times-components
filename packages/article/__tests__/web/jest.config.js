@@ -8,6 +8,8 @@ module.exports = Object.assign(jestConfigurator("article", "web"), {
     "!**/packages/article/*stories*",
     "!**/packages/article/__tests__/**",
     "!**/packages/article/*fructose*",
-    "!**/packages/article/data-helper.js"
+    "!**/packages/article/data-helper.js",
+    "!**/packages/article/article-body.js",
+    "!**/packages/article/article-tracking-context.js"
   ]
 });
