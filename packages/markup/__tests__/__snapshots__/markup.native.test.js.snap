@@ -186,6 +186,7 @@ exports[`Markup Native renders multiple paragraphs with a pullquote 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
+          "color": "#333333",
           "fontFamily": "TimesModern-Regular",
           "fontSize": 25,
           "lineHeight": 30,

@@ -37,6 +37,7 @@ exports[`PullQuotes test on android Pull Quotes with a Caption 1`] = `
     ellipsizeMode="tail"
     style={
       Object {
+        "color": "#333333",
         "fontFamily": "TimesModern-Regular",
         "fontSize": 25,
         "lineHeight": 30,
@@ -105,6 +106,7 @@ exports[`PullQuotes test on android Pull Quotes with a Caption and a Twitter 1`]
     ellipsizeMode="tail"
     style={
       Object {
+        "color": "#333333",
         "fontFamily": "TimesModern-Regular",
         "fontSize": 25,
         "lineHeight": 30,
@@ -148,7 +150,6 @@ exports[`PullQuotes test on android Pull Quotes with a Caption and a Twitter 1`]
           Object {
             "color": "#696969",
             "fontFamily": "TimesModern-Bold",
-            "fontStyle": "italic",
             "textDecorationLine": "none",
           },
         ]
@@ -197,6 +198,7 @@ exports[`PullQuotes test on android Pull Quotes without a Caption 1`] = `
     ellipsizeMode="tail"
     style={
       Object {
+        "color": "#333333",
         "fontFamily": "TimesModern-Regular",
         "fontSize": 25,
         "lineHeight": 30,
@@ -265,6 +267,7 @@ exports[`PullQuotes test on android Pull Quotes without a Caption and different 
     ellipsizeMode="tail"
     style={
       Object {
+        "color": "#333333",
         "fontFamily": "TimesModern-Regular",
         "fontSize": 25,
         "lineHeight": 30,
