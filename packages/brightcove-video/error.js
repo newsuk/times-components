@@ -88,7 +88,7 @@ VideoError.defaultProps = {
 };
 
 VideoError.propTypes = {
-  onReset: PropTypes.func,
+  onReset: PropTypes.func.isRequired,
   poster: SourcePropType,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired

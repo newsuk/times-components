@@ -1,5 +1,6 @@
 import React from "react";
 import Svg, { Path, Circle } from "svgs";
+import PropTypes from "prop-types";
 
 const ResetIcon = ({ width, strW = 14, svgW = 100 }) => {
   const r = svgW / 2;
@@ -25,6 +26,17 @@ const ResetIcon = ({ width, strW = 14, svgW = 100 }) => {
       />
     </Svg>
   );
+};
+
+ResetIcon.defaultProps = {
+  strW: 14,
+  svgW: 100
+};
+
+ResetIcon.propTypes = {
+  width: PropTypes.number.isRequired,
+  strW: PropTypes.number,
+  svgW: PropTypes.number
 };
 
 export default ResetIcon;
