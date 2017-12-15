@@ -659,80 +659,96 @@ exports[`Article test on android renders article no flags 1`] = `
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-0"
+      <View
+        accessibilityLabel="paragraph-0"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-0"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
           }
-          testID="paragraph-0"
         >
+          Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
+                "fontStyle": "italic",
               }
             }
           >
-            Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontStyle": "italic",
-                }
-              }
-            >
-              Telegraph 
-            </Text>
-            last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              When Thatcher joined the campaign trail for the 2001 general election...
-            </Text>
+            Telegraph 
           </Text>
-        </View>
+          last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            When Thatcher joined the campaign trail for the 2001 general election...
+          </Text>
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-1"
+      <View
+        accessibilityLabel="paragraph-1"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-1"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
           }
-          testID="paragraph-1"
         >
           <Text
             accessible={true}
@@ -740,214 +756,198 @@ exports[`Article test on android renders article no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
+                "fontWeight": "bold",
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
-            </Text>
+            Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
           </Text>
-        </View>
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-2"
+      <View
+        accessibilityLabel="paragraph-2"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-2"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-2"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
-          </Text>
-        </View>
+          }
+        >
+          When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-3"
+      <View
+        accessibilityLabel="paragraph-3"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-3"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-3"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
-          </Text>
-        </View>
+          }
+        >
+          Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-4"
+      <View
+        accessibilityLabel="paragraph-4"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-4"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-4"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill. 
-          </Text>
-        </View>
+          }
+        >
+          By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-5"
+      <View
+        accessibilityLabel="paragraph-5"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-5"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-5"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            She was driven by those beliefs to tackle the task of halting and reversing her country’s decline and to ensure that it played its full part in defending the freedoms of the democratic West. Her record and her personality will be the subject of continuing controversy. But no one will ever doubt her sincerity and her courage, and most will concede that the far-reaching changes she made would have been impossible without her. 
-          </Text>
-        </View>
+          }
+        >
+          She was driven by those beliefs to tackle the task of halting and reversing her country’s decline and to ensure that it played its full part in defending the freedoms of the democratic West. Her record and her personality will be the subject of continuing controversy. But no one will ever doubt her sincerity and her courage, and most will concede that the far-reaching changes she made would have been impossible without her. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-6"
+      <View
+        accessibilityLabel="paragraph-6"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-6"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-6"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. 
-          </Text>
-        </View>
+          }
+        >
+          Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. 
+        </Text>
       </View>
     </View>
     <View
@@ -1687,80 +1687,96 @@ exports[`Article test on android renders article no label 1`] = `
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-0"
+      <View
+        accessibilityLabel="paragraph-0"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-0"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
           }
-          testID="paragraph-0"
         >
+          Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
+                "fontStyle": "italic",
               }
             }
           >
-            Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontStyle": "italic",
-                }
-              }
-            >
-              Telegraph 
-            </Text>
-            last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              When Thatcher joined the campaign trail for the 2001 general election...
-            </Text>
+            Telegraph 
           </Text>
-        </View>
+          last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            When Thatcher joined the campaign trail for the 2001 general election...
+          </Text>
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-1"
+      <View
+        accessibilityLabel="paragraph-1"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-1"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
           }
-          testID="paragraph-1"
         >
           <Text
             accessible={true}
@@ -1768,214 +1784,198 @@ exports[`Article test on android renders article no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
+                "fontWeight": "bold",
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
-            </Text>
+            Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
           </Text>
-        </View>
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-2"
+      <View
+        accessibilityLabel="paragraph-2"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-2"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-2"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
-          </Text>
-        </View>
+          }
+        >
+          When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-3"
+      <View
+        accessibilityLabel="paragraph-3"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-3"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-3"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
-          </Text>
-        </View>
+          }
+        >
+          Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-4"
+      <View
+        accessibilityLabel="paragraph-4"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-4"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-4"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill. 
-          </Text>
-        </View>
+          }
+        >
+          By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-5"
+      <View
+        accessibilityLabel="paragraph-5"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-5"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-5"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            She was driven by those beliefs to tackle the task of halting and reversing her country’s decline and to ensure that it played its full part in defending the freedoms of the democratic West. Her record and her personality will be the subject of continuing controversy. But no one will ever doubt her sincerity and her courage, and most will concede that the far-reaching changes she made would have been impossible without her. 
-          </Text>
-        </View>
+          }
+        >
+          She was driven by those beliefs to tackle the task of halting and reversing her country’s decline and to ensure that it played its full part in defending the freedoms of the democratic West. Her record and her personality will be the subject of continuing controversy. But no one will ever doubt her sincerity and her courage, and most will concede that the far-reaching changes she made would have been impossible without her. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-6"
+      <View
+        accessibilityLabel="paragraph-6"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-6"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-6"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. 
-          </Text>
-        </View>
+          }
+        >
+          Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. 
+        </Text>
       </View>
     </View>
     <View
@@ -2572,80 +2572,96 @@ exports[`Article test on android renders article no label no flags 1`] = `
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-0"
+      <View
+        accessibilityLabel="paragraph-0"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-0"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
           }
-          testID="paragraph-0"
         >
+          Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
+                "fontStyle": "italic",
               }
             }
           >
-            Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontStyle": "italic",
-                }
-              }
-            >
-              Telegraph 
-            </Text>
-            last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              When Thatcher joined the campaign trail for the 2001 general election...
-            </Text>
+            Telegraph 
           </Text>
-        </View>
+          last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            When Thatcher joined the campaign trail for the 2001 general election...
+          </Text>
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-1"
+      <View
+        accessibilityLabel="paragraph-1"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-1"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
           }
-          testID="paragraph-1"
         >
           <Text
             accessible={true}
@@ -2653,214 +2669,198 @@ exports[`Article test on android renders article no label no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
+                "fontWeight": "bold",
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
-            </Text>
+            Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
           </Text>
-        </View>
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-2"
+      <View
+        accessibilityLabel="paragraph-2"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-2"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-2"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
-          </Text>
-        </View>
+          }
+        >
+          When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-3"
+      <View
+        accessibilityLabel="paragraph-3"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-3"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-3"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
-          </Text>
-        </View>
+          }
+        >
+          Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-4"
+      <View
+        accessibilityLabel="paragraph-4"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-4"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-4"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill. 
-          </Text>
-        </View>
+          }
+        >
+          By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-5"
+      <View
+        accessibilityLabel="paragraph-5"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-5"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-5"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            She was driven by those beliefs to tackle the task of halting and reversing her country’s decline and to ensure that it played its full part in defending the freedoms of the democratic West. Her record and her personality will be the subject of continuing controversy. But no one will ever doubt her sincerity and her courage, and most will concede that the far-reaching changes she made would have been impossible without her. 
-          </Text>
-        </View>
+          }
+        >
+          She was driven by those beliefs to tackle the task of halting and reversing her country’s decline and to ensure that it played its full part in defending the freedoms of the democratic West. Her record and her personality will be the subject of continuing controversy. But no one will ever doubt her sincerity and her courage, and most will concede that the far-reaching changes she made would have been impossible without her. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-6"
+      <View
+        accessibilityLabel="paragraph-6"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-6"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-6"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. 
-          </Text>
-        </View>
+          }
+        >
+          Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. 
+        </Text>
       </View>
     </View>
     <View
@@ -3436,80 +3436,96 @@ exports[`Article test on android renders article no label no flags no standfirst
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-0"
+      <View
+        accessibilityLabel="paragraph-0"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-0"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
           }
-          testID="paragraph-0"
         >
+          Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
+                "fontStyle": "italic",
               }
             }
           >
-            Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontStyle": "italic",
-                }
-              }
-            >
-              Telegraph 
-            </Text>
-            last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              When Thatcher joined the campaign trail for the 2001 general election...
-            </Text>
+            Telegraph 
           </Text>
-        </View>
+          last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            When Thatcher joined the campaign trail for the 2001 general election...
+          </Text>
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-1"
+      <View
+        accessibilityLabel="paragraph-1"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-1"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
           }
-          testID="paragraph-1"
         >
           <Text
             accessible={true}
@@ -3517,214 +3533,198 @@ exports[`Article test on android renders article no label no flags no standfirst
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
+                "fontWeight": "bold",
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
-            </Text>
+            Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
           </Text>
-        </View>
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-2"
+      <View
+        accessibilityLabel="paragraph-2"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-2"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-2"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
-          </Text>
-        </View>
+          }
+        >
+          When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-3"
+      <View
+        accessibilityLabel="paragraph-3"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-3"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-3"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
-          </Text>
-        </View>
+          }
+        >
+          Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-4"
+      <View
+        accessibilityLabel="paragraph-4"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-4"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-4"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill. 
-          </Text>
-        </View>
+          }
+        >
+          By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-5"
+      <View
+        accessibilityLabel="paragraph-5"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-5"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-5"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            She was driven by those beliefs to tackle the task of halting and reversing her country’s decline and to ensure that it played its full part in defending the freedoms of the democratic West. Her record and her personality will be the subject of continuing controversy. But no one will ever doubt her sincerity and her courage, and most will concede that the far-reaching changes she made would have been impossible without her. 
-          </Text>
-        </View>
+          }
+        >
+          She was driven by those beliefs to tackle the task of halting and reversing her country’s decline and to ensure that it played its full part in defending the freedoms of the democratic West. Her record and her personality will be the subject of continuing controversy. But no one will ever doubt her sincerity and her courage, and most will concede that the far-reaching changes she made would have been impossible without her. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-6"
+      <View
+        accessibilityLabel="paragraph-6"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-6"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-6"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. 
-          </Text>
-        </View>
+          }
+        >
+          Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. 
+        </Text>
       </View>
     </View>
     <View
@@ -4478,80 +4478,96 @@ exports[`Article test on android renders article no standfirst 1`] = `
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-0"
+      <View
+        accessibilityLabel="paragraph-0"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-0"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
           }
-          testID="paragraph-0"
         >
+          Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
+                "fontStyle": "italic",
               }
             }
           >
-            Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontStyle": "italic",
-                }
-              }
-            >
-              Telegraph 
-            </Text>
-            last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              When Thatcher joined the campaign trail for the 2001 general election...
-            </Text>
+            Telegraph 
           </Text>
-        </View>
+          last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            When Thatcher joined the campaign trail for the 2001 general election...
+          </Text>
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-1"
+      <View
+        accessibilityLabel="paragraph-1"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-1"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
           }
-          testID="paragraph-1"
         >
           <Text
             accessible={true}
@@ -4559,214 +4575,198 @@ exports[`Article test on android renders article no standfirst 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
+                "fontWeight": "bold",
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
-            </Text>
+            Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
           </Text>
-        </View>
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-2"
+      <View
+        accessibilityLabel="paragraph-2"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-2"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-2"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
-          </Text>
-        </View>
+          }
+        >
+          When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-3"
+      <View
+        accessibilityLabel="paragraph-3"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-3"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-3"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
-          </Text>
-        </View>
+          }
+        >
+          Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-4"
+      <View
+        accessibilityLabel="paragraph-4"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-4"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-4"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill. 
-          </Text>
-        </View>
+          }
+        >
+          By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-5"
+      <View
+        accessibilityLabel="paragraph-5"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-5"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-5"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            She was driven by those beliefs to tackle the task of halting and reversing her country’s decline and to ensure that it played its full part in defending the freedoms of the democratic West. Her record and her personality will be the subject of continuing controversy. But no one will ever doubt her sincerity and her courage, and most will concede that the far-reaching changes she made would have been impossible without her. 
-          </Text>
-        </View>
+          }
+        >
+          She was driven by those beliefs to tackle the task of halting and reversing her country’s decline and to ensure that it played its full part in defending the freedoms of the democratic West. Her record and her personality will be the subject of continuing controversy. But no one will ever doubt her sincerity and her courage, and most will concede that the far-reaching changes she made would have been impossible without her. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-6"
+      <View
+        accessibilityLabel="paragraph-6"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-6"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-6"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. 
-          </Text>
-        </View>
+          }
+        >
+          Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. 
+        </Text>
       </View>
     </View>
     <View
@@ -5377,80 +5377,96 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-0"
+      <View
+        accessibilityLabel="paragraph-0"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-0"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
           }
-          testID="paragraph-0"
         >
+          Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
+                "fontStyle": "italic",
               }
             }
           >
-            Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontStyle": "italic",
-                }
-              }
-            >
-              Telegraph 
-            </Text>
-            last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              When Thatcher joined the campaign trail for the 2001 general election...
-            </Text>
+            Telegraph 
           </Text>
-        </View>
+          last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            When Thatcher joined the campaign trail for the 2001 general election...
+          </Text>
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-1"
+      <View
+        accessibilityLabel="paragraph-1"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-1"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
           }
-          testID="paragraph-1"
         >
           <Text
             accessible={true}
@@ -5458,214 +5474,198 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
+                "fontWeight": "bold",
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
-            </Text>
+            Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
           </Text>
-        </View>
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-2"
+      <View
+        accessibilityLabel="paragraph-2"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-2"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-2"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
-          </Text>
-        </View>
+          }
+        >
+          When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-3"
+      <View
+        accessibilityLabel="paragraph-3"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-3"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-3"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
-          </Text>
-        </View>
+          }
+        >
+          Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-4"
+      <View
+        accessibilityLabel="paragraph-4"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-4"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-4"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill. 
-          </Text>
-        </View>
+          }
+        >
+          By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-5"
+      <View
+        accessibilityLabel="paragraph-5"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-5"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-5"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            She was driven by those beliefs to tackle the task of halting and reversing her country’s decline and to ensure that it played its full part in defending the freedoms of the democratic West. Her record and her personality will be the subject of continuing controversy. But no one will ever doubt her sincerity and her courage, and most will concede that the far-reaching changes she made would have been impossible without her. 
-          </Text>
-        </View>
+          }
+        >
+          She was driven by those beliefs to tackle the task of halting and reversing her country’s decline and to ensure that it played its full part in defending the freedoms of the democratic West. Her record and her personality will be the subject of continuing controversy. But no one will ever doubt her sincerity and her courage, and most will concede that the far-reaching changes she made would have been impossible without her. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-6"
+      <View
+        accessibilityLabel="paragraph-6"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-6"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-6"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. 
-          </Text>
-        </View>
+          }
+        >
+          Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. 
+        </Text>
       </View>
     </View>
     <View
@@ -6384,80 +6384,96 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-0"
+      <View
+        accessibilityLabel="paragraph-0"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-0"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
           }
-          testID="paragraph-0"
         >
+          Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
+                "fontStyle": "italic",
               }
             }
           >
-            Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontStyle": "italic",
-                }
-              }
-            >
-              Telegraph 
-            </Text>
-            last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              When Thatcher joined the campaign trail for the 2001 general election...
-            </Text>
+            Telegraph 
           </Text>
-        </View>
+          last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            When Thatcher joined the campaign trail for the 2001 general election...
+          </Text>
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-1"
+      <View
+        accessibilityLabel="paragraph-1"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-1"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
           }
-          testID="paragraph-1"
         >
           <Text
             accessible={true}
@@ -6465,214 +6481,198 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
+                "fontWeight": "bold",
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
-            </Text>
+            Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
           </Text>
-        </View>
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-2"
+      <View
+        accessibilityLabel="paragraph-2"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-2"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-2"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
-          </Text>
-        </View>
+          }
+        >
+          When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-3"
+      <View
+        accessibilityLabel="paragraph-3"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-3"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-3"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
-          </Text>
-        </View>
+          }
+        >
+          Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-4"
+      <View
+        accessibilityLabel="paragraph-4"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-4"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-4"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill. 
-          </Text>
-        </View>
+          }
+        >
+          By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-5"
+      <View
+        accessibilityLabel="paragraph-5"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-5"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-5"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            She was driven by those beliefs to tackle the task of halting and reversing her country’s decline and to ensure that it played its full part in defending the freedoms of the democratic West. Her record and her personality will be the subject of continuing controversy. But no one will ever doubt her sincerity and her courage, and most will concede that the far-reaching changes she made would have been impossible without her. 
-          </Text>
-        </View>
+          }
+        >
+          She was driven by those beliefs to tackle the task of halting and reversing her country’s decline and to ensure that it played its full part in defending the freedoms of the democratic West. Her record and her personality will be the subject of continuing controversy. But no one will ever doubt her sincerity and her courage, and most will concede that the far-reaching changes she made would have been impossible without her. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-6"
+      <View
+        accessibilityLabel="paragraph-6"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-6"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-6"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. 
-          </Text>
-        </View>
+          }
+        >
+          Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. 
+        </Text>
       </View>
     </View>
     <View
@@ -7516,18 +7516,96 @@ exports[`Article test on android renders full article 1`] = `
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-0"
+      <View
+        accessibilityLabel="paragraph-0"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-0"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
           }
-          testID="paragraph-0"
+        >
+          Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontStyle": "italic",
+              }
+            }
+          >
+            Telegraph 
+          </Text>
+          last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            When Thatcher joined the campaign trail for the 2001 general election...
+          </Text>
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessibilityLabel="paragraph-1"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-1"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
+          }
         >
           <Text
             accessible={true}
@@ -7535,98 +7613,22 @@ exports[`Article test on android renders full article 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
+                "fontWeight": "bold",
               }
             }
           >
-            Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontStyle": "italic",
-                }
-              }
-            >
-              Telegraph 
-            </Text>
-            last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              When Thatcher joined the campaign trail for the 2001 general election...
-            </Text>
+            Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
           </Text>
-        </View>
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-1"
-          style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-1"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
-            }
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
-            </Text>
-          </Text>
-        </View>
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-      style={null}
-    >
-      <View>
+      <View
+        className="sc-gqjmRU ljgiGc"
+      >
         <View
           style={
             Object {
@@ -7798,81 +7800,83 @@ exports[`Article test on android renders full article 1`] = `
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-3"
+      <View
+        accessibilityLabel="paragraph-3"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-3"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-3"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
-          </Text>
-        </View>
+          }
+        >
+          When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-4"
+      <View
+        accessibilityLabel="paragraph-4"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-4"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-4"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
-          </Text>
-        </View>
+          }
+        >
+          Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
+        </Text>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
+      <View
+        className="sc-VigVT kjtqqW"
+      >
         <View
           style={
             Object {
@@ -8059,37 +8063,37 @@ exports[`Article test on android renders full article 1`] = `
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <View
-          accessibilityLabel="paragraph-6"
+      <View
+        accessibilityLabel="paragraph-6"
+        className="sc-EHOje gZSaKg"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-6"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          className="sc-bZQynM ktuHXD"
+          ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
-          }
-          testID="paragraph-6"
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "fontStyle": "normal",
-                "lineHeight": 26,
-                "marginBottom": 20,
-              }
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
             }
-          >
-            By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill. 
-          </Text>
-        </View>
+          }
+        >
+          By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill. 
+        </Text>
       </View>
     </View>
     <View

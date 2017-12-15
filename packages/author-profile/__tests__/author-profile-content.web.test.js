@@ -74,6 +74,9 @@ it("renders profile articles and invoke callback on article press", done => {
 
   component
     .dive()
+    .find("ErrorView")
+    .at(0)
+    .dive()
     .find(AuthorProfileItem)
     .at(0)
     .dive()

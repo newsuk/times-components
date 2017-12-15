@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "1.8.0",
+  "version": "1.8.2",
   "main": "image",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -50,16 +50,16 @@
     "flow-bin": "0.42.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
-    "react": "16.0.0",
-    "react-dom": "16.0.0",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
     "react-native": "0.50.1",
     "react-native-linear-gradient": "2.3.0",
-    "react-test-renderer": "16.0.0",
+    "react-test-renderer": "16.2.0",
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/gradient": "0.3.0",
-    "@times-components/jest-configurator": "0.0.12",
+    "@times-components/gradient": "0.3.1",
+    "@times-components/jest-configurator": "0.0.13",
     "prop-types": "15.6.0",
     "react-native-web": "0.1.14",
     "svgs": "3.1.1"

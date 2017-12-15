@@ -1,14 +1,13 @@
 {
   "name": "@times-components/jest-configurator",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Cross platform Jest Config",
   "main": "jest-configurator.js",
   "scripts": {
-    "test": "jest",
-    "test:coverage": "jest --coverage",
-    "test:watch": "jest --watchAll --coverage",
-    "fmt": "prettier --write '**/*.*'",
+    "test:watch": "jest --bail --verbose --watchAll",
+    "test": "jest --bail --ci --coverage",
     "prettier:diff": "prettier --list-different '**/*.*'",
+    "fmt": "prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff"
   },
   "repository": {
@@ -40,7 +39,7 @@
       "node_modules/(?!@times-components)/"
     ],
     "testMatch": [
-      "<rootDir>/packages/utilities/**/__tests__/*.js"
+      "<rootDir>/packages/jest-configurator/__tests__/*.test.js"
     ]
   },
   "devDependencies": {

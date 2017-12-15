@@ -1,6 +1,6 @@
 {
   "name": "@times-components/caption",
-  "version": "0.9.0",
+  "version": "0.9.2",
   "description": "Media caption component",
   "main": "caption",
   "scripts": {
@@ -17,6 +17,9 @@
     "preset": "react-native",
     "rootDir": "../../",
     "coverageDirectory": "<rootDir>/packages/caption/coverage/",
+    "collectCoverageFrom": [
+      "**/packages/caption/caption.js"
+    ],
     "transformIgnorePatterns": [
       "node_modules/(?!@times-components)/"
     ],
@@ -44,7 +47,7 @@
   "devDependencies": {
     "@storybook/react-native": "3.2.17",
     "@times-components/eslint-config-thetimes": "0.0.2",
-    "@times-components/image": "1.8.0",
+    "@times-components/image": "1.8.2",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",
@@ -57,9 +60,9 @@
     "flow-bin": "0.42.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
-    "react": "16.0.0",
-    "react-dom": "16.0.0",
-    "react-test-renderer": "16.0.0",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-test-renderer": "16.2.0",
     "webpack": "3.3.0"
   },
   "dependencies": {

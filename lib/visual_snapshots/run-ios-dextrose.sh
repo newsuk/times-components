@@ -9,7 +9,7 @@ npx rnstl --searchDir ./packages --pattern './*/*.dextrose.tmp.js' --outputFile 
 npx compile-tests -d fructose
 export CWD=$(pwd) 
 export FRC=$CWD/fructose 
-react-native start --root fructose &
+npx react-native start --root fructose --projectRoots $(pwd)/fructose,$(pwd) &
 react-native run-ios --no-packager
 PACKAGER_PID=$!
 LOGLEVEL=verbose npx dextrose --config ./dextrose/dextrose.ios.js --snapshotWait 2000

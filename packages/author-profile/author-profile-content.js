@@ -1,6 +1,7 @@
 import React from "react";
 import { Dimensions, FlatList, StyleSheet, View } from "react-native";
 import { withTrackScrollDepth } from "@times-components/tracking";
+import ErrorView from "@times-components/error-view";
 import AuthorProfileAuthorHead from "./author-profile-author-head";
 import AuthorProfilePagination from "./author-profile-pagination";
 import AuthorProfileItem from "./author-profile-item";
@@ -106,14 +107,22 @@ class AuthorProfileContent extends React.Component {
         data={data}
         keyExtractor={item => item.id}
         renderItem={({ item, index }) => (
-          <AuthorProfileItem
-            {...item}
-            imageRatio={imageRatio}
-            imageSize={this.state.width}
-            style={styles.padding}
-            testID={`articleList-${index}`}
-            onPress={e => onArticlePress(e, { id: item.id, url: item.url })}
-          />
+          <ErrorView>
+            {({ hasError }) =>
+              hasError ? null : (
+                <AuthorProfileItem
+                  {...item}
+                  imageRatio={imageRatio}
+                  imageSize={this.state.width}
+                  style={styles.padding}
+                  testID={`articleList-${index}`}
+                  onPress={e =>
+                    onArticlePress(e, { id: item.id, url: item.url })
+                  }
+                />
+              )
+            }
+          </ErrorView>
         )}
         initialListSize={pageSize}
         onViewableItemsChanged={this.onViewableItemsChanged}
