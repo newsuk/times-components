@@ -1,10 +1,11 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import PropTypes from "prop-types";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import withPageState from "./pagination-wrapper";
 import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
+import Results from "./results";
 
 const styles = StyleSheet.create({
   absolute: {
@@ -22,140 +23,65 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderStyle: "solid",
     borderTopColor: "#dbdbdb",
-    borderTopWidth: 1
-  },
-  container: {
-    alignItems: "stretch",
-    flexDirection: "column"
-  },
-  horizontal: {
+    borderTopWidth: 1,
     alignItems: "center",
     flexDirection: "row",
     justifyContent: "space-between",
     height: 40
   },
-  label: {
-    color: "#696969",
-    fontFamily: "GillSansMTStd-Medium",
-    fontSize: 15
-  },
-  message: {
-    justifyContent: "center"
+  container: {
+    alignItems: "stretch",
+    flexDirection: "column"
   }
 });
 
-const shouldRenderOneLine = width => width >= 700;
+const Pagination = ({
+  count,
+  generatePageLink,
+  onNext,
+  onPrev,
+  page,
+  pageSize,
+  hideResults
+}) => {
+  const startResult = (page - 1) * pageSize + 1;
+  const finalResult = Math.min(count, page * pageSize);
+  const message = `Showing ${startResult} - ${finalResult} of ${count} results`;
 
-class Pagination extends React.Component {
-  constructor(props) {
-    super(props);
-
-    const {
-      count,
-      generatePageLink,
-      onNext,
-      onPrev,
-      page,
-      pageSize,
-      hideResults
-    } = props;
-
-    this.state = {
-      absolutePosition: false,
-      count,
-      generatePageLink,
-      onNext,
-      onPrev,
-      page,
-      pageSize,
-      hideResults
-    };
-
-    this.handleLayout = this.handleLayout.bind(this);
-  }
-
-  componentWillReceiveProps(nextProps) {
-    this.setState(
-      Object.assign({}, nextProps, {
-        absolutePosition: this.state.absolutePosition
-      })
-    );
-  }
-
-  handleLayout({ nativeEvent }) {
-    const { width } = nativeEvent.layout;
-
-    return this.setState({
-      absolutePosition: shouldRenderOneLine(width)
-    });
-  }
-
-  render() {
-    const {
-      count,
-      generatePageLink,
-      onNext,
-      onPrev,
-      page,
-      pageSize,
-      hideResults
-    } = this.state;
-
-    const startResult = (page - 1) * pageSize + 1;
-    const finalResult = Math.min(count, page * pageSize);
-    const message = `Showing ${startResult} - ${finalResult} of ${
-      count
-    } results`;
-    const previousLabel = this.state.absolutePosition
-      ? "Previous Page"
-      : "Previous";
-    const nextLabel = this.state.absolutePosition ? "Next Page" : "Next";
-
-    const prevComponent =
-      startResult > pageSize ? (
-        <Link
-          style={styles.arrow}
-          onPress={e => onPrev(e, page - 1)}
-          url={generatePageLink(page - 1)}
-        >
-          <PreviousPageIcon label={previousLabel} />
-        </Link>
-      ) : null;
-
-    const nextComponent =
-      finalResult < count ? (
-        <Link
-          style={styles.arrow}
-          onPress={e => onNext(e, page + 1)}
-          url={generatePageLink(page + 1)}
-        >
-          <NextPageIcon label={nextLabel} />
-        </Link>
-      ) : null;
-
-    const messageComponent = !hideResults ? (
-      <View
-        style={[
-          styles.horizontal,
-          styles.message,
-          this.state.absolutePosition ? styles.absolute : null
-        ]}
+  const prevComponent =
+    startResult > pageSize ? (
+      <Link
+        style={styles.arrow}
+        onPress={e => onPrev(e, page - 1)}
+        url={generatePageLink(page - 1)}
       >
-        <Text style={[styles.label]}>{message}</Text>
-      </View>
+        <PreviousPageIcon />
+      </Link>
     ) : null;
 
-    return (
-      <View style={styles.container} onLayout={this.handleLayout}>
-        {messageComponent}
-        <View style={[styles.horizontal, styles.border]}>
-          <View>{prevComponent}</View>
-          <View>{nextComponent}</View>
-        </View>
+  const nextComponent =
+    finalResult < count ? (
+      <Link
+        style={styles.arrow}
+        onPress={e => onNext(e, page + 1)}
+        url={generatePageLink(page + 1)}
+      >
+        <NextPageIcon />
+      </Link>
+    ) : null;
+
+  const messageComponent = !hideResults ? <Results>{message}</Results> : null;
+
+  return (
+    <View style={styles.container}>
+      {messageComponent}
+      <View style={styles.border}>
+        <View>{prevComponent}</View>
+        <View>{nextComponent}</View>
       </View>
-    );
-  }
-}
+    </View>
+  );
+};
 
 Pagination.propTypes = {
   count: PropTypes.number,

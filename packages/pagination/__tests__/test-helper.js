@@ -2,6 +2,7 @@
 
 import "react-native";
 import React from "react";
+import renderer from "react-test-renderer";
 import Enzyme, { shallow } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
 
@@ -14,21 +15,29 @@ export default Pagination => () => {
       page: 1
     };
 
-    const component = shallow(<Pagination {...props} />).dive();
+    const component = renderer.create(<Pagination {...props} />).toJSON();
     expect(component).toMatchSnapshot();
   });
 
-  it("renders with hidden results above breakpoint", () => {
+  it("renders results message", () => {
     const props = {
       count: 21,
       page: 1
     };
 
-    const component = shallow(<Pagination {...props} />).dive();
-    component.setState({
+    const component = renderer.create(<Pagination {...props} />).toJSON();
+
+    expect(component).toMatchSnapshot();
+  });
+
+  it("renders with hidden results", () => {
+    const props = {
+      count: 21,
+      page: 1,
       hideResults: true
-    });
-    component.update();
+    };
+
+    const component = renderer.create(<Pagination {...props} />).toJSON();
 
     expect(component).toMatchSnapshot();
   });
@@ -39,7 +48,7 @@ export default Pagination => () => {
       page: 3
     };
 
-    const component = shallow(<Pagination {...props} />).dive();
+    const component = renderer.create(<Pagination {...props} />).toJSON();
     expect(component).toMatchSnapshot();
   });
 
@@ -49,70 +58,19 @@ export default Pagination => () => {
       page: 2
     };
 
-    const component = shallow(<Pagination {...props} />).dive();
+    const component = renderer.create(<Pagination {...props} />).toJSON();
     expect(component).toMatchSnapshot();
   });
 
-  it("renders prev link", () => {
+  it("renders next link", () => {
     const props = {
       count: 41,
       page: 1
     };
 
-    const component = shallow(<Pagination {...props} />).dive();
+    const component = renderer.create(<Pagination {...props} />).toJSON();
+
     expect(component).toMatchSnapshot();
-  });
-
-  it("set results hidden above breakpoint", done => {
-    const props = {
-      count: 21,
-      page: 1
-    };
-
-    const component = shallow(<Pagination {...props} />)
-      .dive()
-      .instance();
-
-    component.setState = ({ absolutePosition }) => {
-      expect(absolutePosition).toEqual(true);
-
-      return done();
-    };
-
-    component.handleLayout({
-      nativeEvent: {
-        layout: {
-          width: 800,
-          height: 600
-        }
-      }
-    });
-  });
-
-  it("set results showing below breakpoint", done => {
-    const props = {
-      count: 21,
-      page: 1
-    };
-
-    const component = shallow(<Pagination {...props} />)
-      .dive()
-      .instance();
-
-    component.setState = ({ absolutePosition }) => {
-      expect(absolutePosition).toEqual(false);
-
-      return done();
-    };
-
-    component.handleLayout({
-      nativeEvent: {
-        layout: {
-          width: 400,
-          height: 300
-        }
-      }
-    });
   });
 
   it("tracks next page interaction", () => {

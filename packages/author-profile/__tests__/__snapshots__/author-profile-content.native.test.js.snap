@@ -478,7 +478,6 @@ exports[`renders profile content 1`] = `
             }
           >
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "alignItems": "stretch",
@@ -488,18 +487,12 @@ exports[`renders profile content 1`] = `
             >
               <View
                 style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "flexDirection": "row",
-                      "height": 40,
-                      "justifyContent": "space-between",
-                    },
-                    Object {
-                      "justifyContent": "center",
-                    },
-                    null,
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 40,
+                    "justifyContent": "center",
+                  }
                 }
               >
                 <Text
@@ -512,6 +505,7 @@ exports[`renders profile content 1`] = `
                         "color": "#696969",
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 15,
+                        "paddingTop": 4,
                       },
                     ]
                   }
@@ -521,21 +515,17 @@ exports[`renders profile content 1`] = `
               </View>
               <View
                 style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "flexDirection": "row",
-                      "height": 40,
-                      "justifyContent": "space-between",
-                    },
-                    Object {
-                      "borderBottomColor": "#dbdbdb",
-                      "borderBottomWidth": 1,
-                      "borderStyle": "solid",
-                      "borderTopColor": "#dbdbdb",
-                      "borderTopWidth": 1,
-                    },
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomWidth": 1,
+                    "borderStyle": "solid",
+                    "borderTopColor": "#dbdbdb",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "height": 40,
+                    "justifyContent": "space-between",
+                  }
                 }
               >
                 <View />
@@ -589,7 +579,13 @@ exports[`renders profile content 1`] = `
                           }
                         }
                       >
-                        Next
+                        <Text
+                          accessible={true}
+                          allowFontScaling={true}
+                          ellipsizeMode="tail"
+                        >
+                          Next
+                        </Text>
                       </Text>
                       <svg
                         height={9}
@@ -3791,7 +3787,6 @@ exports[`renders profile content 1`] = `
           }
         >
           <View
-            onLayout={[Function]}
             style={
               Object {
                 "alignItems": "stretch",
@@ -3801,21 +3796,17 @@ exports[`renders profile content 1`] = `
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 40,
-                    "justifyContent": "space-between",
-                  },
-                  Object {
-                    "borderBottomColor": "#dbdbdb",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
-                    "borderTopWidth": 1,
-                  },
-                ]
+                Object {
+                  "alignItems": "center",
+                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#dbdbdb",
+                  "borderTopWidth": 1,
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                }
               }
             >
               <View />
@@ -3869,7 +3860,13 @@ exports[`renders profile content 1`] = `
                         }
                       }
                     >
-                      Next
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                      >
+                        Next
+                      </Text>
                     </Text>
                     <svg
                       height={9}
@@ -4192,7 +4189,6 @@ exports[`renders profile content component 1`] = `
             }
           >
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "alignItems": "stretch",
@@ -4202,18 +4198,12 @@ exports[`renders profile content component 1`] = `
             >
               <View
                 style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "flexDirection": "row",
-                      "height": 40,
-                      "justifyContent": "space-between",
-                    },
-                    Object {
-                      "justifyContent": "center",
-                    },
-                    null,
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 40,
+                    "justifyContent": "center",
+                  }
                 }
               >
                 <Text
@@ -4226,6 +4216,7 @@ exports[`renders profile content component 1`] = `
                         "color": "#696969",
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 15,
+                        "paddingTop": 4,
                       },
                     ]
                   }
@@ -4235,21 +4226,17 @@ exports[`renders profile content component 1`] = `
               </View>
               <View
                 style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "flexDirection": "row",
-                      "height": 40,
-                      "justifyContent": "space-between",
-                    },
-                    Object {
-                      "borderBottomColor": "#dbdbdb",
-                      "borderBottomWidth": 1,
-                      "borderStyle": "solid",
-                      "borderTopColor": "#dbdbdb",
-                      "borderTopWidth": 1,
-                    },
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomWidth": 1,
+                    "borderStyle": "solid",
+                    "borderTopColor": "#dbdbdb",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "height": 40,
+                    "justifyContent": "space-between",
+                  }
                 }
               >
                 <View />
@@ -4303,7 +4290,13 @@ exports[`renders profile content component 1`] = `
                           }
                         }
                       >
-                        Next
+                        <Text
+                          accessible={true}
+                          allowFontScaling={true}
+                          ellipsizeMode="tail"
+                        >
+                          Next
+                        </Text>
                       </Text>
                       <svg
                         height={9}
@@ -5082,7 +5075,6 @@ exports[`renders profile content component 1`] = `
           }
         >
           <View
-            onLayout={[Function]}
             style={
               Object {
                 "alignItems": "stretch",
@@ -5092,21 +5084,17 @@ exports[`renders profile content component 1`] = `
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 40,
-                    "justifyContent": "space-between",
-                  },
-                  Object {
-                    "borderBottomColor": "#dbdbdb",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
-                    "borderTopWidth": 1,
-                  },
-                ]
+                Object {
+                  "alignItems": "center",
+                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#dbdbdb",
+                  "borderTopWidth": 1,
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                }
               }
             >
               <View />
@@ -5160,7 +5148,13 @@ exports[`renders profile content component 1`] = `
                         }
                       }
                     >
-                      Next
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                      >
+                        Next
+                      </Text>
                     </Text>
                     <svg
                       height={9}
@@ -5963,7 +5957,6 @@ exports[`renders profile empty 1`] = `
             }
           >
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "alignItems": "stretch",
@@ -5973,18 +5966,12 @@ exports[`renders profile empty 1`] = `
             >
               <View
                 style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "flexDirection": "row",
-                      "height": 40,
-                      "justifyContent": "space-between",
-                    },
-                    Object {
-                      "justifyContent": "center",
-                    },
-                    null,
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 40,
+                    "justifyContent": "center",
+                  }
                 }
               >
                 <Text
@@ -5997,6 +5984,7 @@ exports[`renders profile empty 1`] = `
                         "color": "#696969",
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 15,
+                        "paddingTop": 4,
                       },
                     ]
                   }
@@ -6006,21 +5994,17 @@ exports[`renders profile empty 1`] = `
               </View>
               <View
                 style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "flexDirection": "row",
-                      "height": 40,
-                      "justifyContent": "space-between",
-                    },
-                    Object {
-                      "borderBottomColor": "#dbdbdb",
-                      "borderBottomWidth": 1,
-                      "borderStyle": "solid",
-                      "borderTopColor": "#dbdbdb",
-                      "borderTopWidth": 1,
-                    },
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomWidth": 1,
+                    "borderStyle": "solid",
+                    "borderTopColor": "#dbdbdb",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "height": 40,
+                    "justifyContent": "space-between",
+                  }
                 }
               >
                 <View />
@@ -6053,7 +6037,6 @@ exports[`renders profile empty 1`] = `
           }
         >
           <View
-            onLayout={[Function]}
             style={
               Object {
                 "alignItems": "stretch",
@@ -6063,21 +6046,17 @@ exports[`renders profile empty 1`] = `
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 40,
-                    "justifyContent": "space-between",
-                  },
-                  Object {
-                    "borderBottomColor": "#dbdbdb",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
-                    "borderTopWidth": 1,
-                  },
-                ]
+                Object {
+                  "alignItems": "center",
+                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#dbdbdb",
+                  "borderTopWidth": 1,
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                }
               }
             >
               <View />
@@ -6401,7 +6380,6 @@ exports[`renders profile loading 1`] = `
             }
           >
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "alignItems": "stretch",
@@ -6411,18 +6389,12 @@ exports[`renders profile loading 1`] = `
             >
               <View
                 style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "flexDirection": "row",
-                      "height": 40,
-                      "justifyContent": "space-between",
-                    },
-                    Object {
-                      "justifyContent": "center",
-                    },
-                    null,
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 40,
+                    "justifyContent": "center",
+                  }
                 }
               >
                 <Text
@@ -6435,6 +6407,7 @@ exports[`renders profile loading 1`] = `
                         "color": "#696969",
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 15,
+                        "paddingTop": 4,
                       },
                     ]
                   }
@@ -6444,21 +6417,17 @@ exports[`renders profile loading 1`] = `
               </View>
               <View
                 style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "flexDirection": "row",
-                      "height": 40,
-                      "justifyContent": "space-between",
-                    },
-                    Object {
-                      "borderBottomColor": "#dbdbdb",
-                      "borderBottomWidth": 1,
-                      "borderStyle": "solid",
-                      "borderTopColor": "#dbdbdb",
-                      "borderTopWidth": 1,
-                    },
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomWidth": 1,
+                    "borderStyle": "solid",
+                    "borderTopColor": "#dbdbdb",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "height": 40,
+                    "justifyContent": "space-between",
+                  }
                 }
               >
                 <View />
@@ -6791,7 +6760,6 @@ exports[`renders profile loading 1`] = `
           }
         >
           <View
-            onLayout={[Function]}
             style={
               Object {
                 "alignItems": "stretch",
@@ -6801,21 +6769,17 @@ exports[`renders profile loading 1`] = `
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 40,
-                    "justifyContent": "space-between",
-                  },
-                  Object {
-                    "borderBottomColor": "#dbdbdb",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
-                    "borderTopWidth": 1,
-                  },
-                ]
+                Object {
+                  "alignItems": "center",
+                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#dbdbdb",
+                  "borderTopWidth": 1,
+                  "flexDirection": "row",
+                  "height": 40,
+                  "justifyContent": "space-between",
+                }
               }
             >
               <View />
