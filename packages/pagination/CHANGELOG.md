@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.12.5"></a>
+## [0.12.5](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.12.4...@times-components/pagination@0.12.5) (2017-12-15)
+
+
+### Bug Fixes
+
+* make pagination responsive on web and not on native ([#459](https://github.com/newsuk/times-components/issues/459)) ([1306daa](https://github.com/newsuk/times-components/commit/1306daa))
+
+
+
+
 <a name="0.12.4"></a>
 ## [0.12.4](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.12.3...@times-components/pagination@0.12.4) (2017-12-14)
 
