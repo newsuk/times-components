@@ -20,12 +20,15 @@ const styles = StyleSheet.create({
     paddingBottom: 50
   },
   photoContainer: {
-    width: 100,
+    width: "100%",
     height: 100,
     bottom: 0,
     position: "absolute"
   },
   roundImage: {
+    width: 100,
+    marginLeft: "auto",
+    marginRight: "auto",
     borderColor: "#FFF",
     borderRadius: 50,
     borderWidth: 5,
