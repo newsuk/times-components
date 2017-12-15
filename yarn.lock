@@ -8515,6 +8515,23 @@ react-native-web@0.1.14:
     prop-types "^15.6.0"
     react-timer-mixin "^0.13.3"
 
+react-native-web@>=0.1:
+  version "0.1.16"
+  resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.1.16.tgz#e0d1a43b3b59a8371cdb538c11088d206b29f2b1"
+  dependencies:
+    animated "^0.2.0"
+    array-find-index "^1.0.2"
+    babel-runtime "^6.26.0"
+    create-react-class "^15.6.2"
+    debounce "1.0.2"
+    deep-assign "^2.0.0"
+    fbjs "^0.8.16"
+    hyphenate-style-name "^1.0.2"
+    inline-style-prefixer "^3.0.8"
+    normalize-css-color "^1.0.2"
+    prop-types "^15.6.0"
+    react-timer-mixin "^0.13.3"
+
 react-native@0.50.1:
   version "0.50.1"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.50.1.tgz#3d8bb7c96dd3151788e795a22155d305f15abfd1"

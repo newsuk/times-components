@@ -50,7 +50,7 @@
     "prettier": "1.8.2"
   },
   "peerDependencies": {
-    "react-native-web": "0.1.14"
+    "react-native-web": ">=0.1"
   },
   "publishConfig": {
     "access": "public"

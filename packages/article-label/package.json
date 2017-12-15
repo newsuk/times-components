@@ -56,13 +56,13 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "prop-types": "15.6.0",
-    "react-native-web": "0.1.14"
+    "prop-types": "15.6.0"
   },
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16",
-    "react-native": ">=0.50"
+    "react-native": ">=0.50",
+    "react-native-web": ">=0.1"
   },
   "publishConfig": {
     "access": "public"

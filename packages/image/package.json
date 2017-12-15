@@ -61,14 +61,14 @@
     "@times-components/gradient": "0.3.1",
     "@times-components/jest-configurator": "0.0.13",
     "prop-types": "15.6.0",
-    "react-native-web": "0.1.14",
     "svgs": "3.1.1"
   },
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16",
     "react-native": ">=0.50",
-    "react-native-linear-gradient": ">=2.3"
+    "react-native-linear-gradient": ">=2.3",
+    "react-native-web": ">=0.1"
   },
   "publishConfig": {
     "access": "public"
