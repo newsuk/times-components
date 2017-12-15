@@ -1,67 +1,40 @@
-import React, { Component } from "react";
-import { View, ViewPropTypes, Text, StyleSheet } from "react-native";
+import { Component } from "react";
 import PropTypes from "prop-types";
 
-const { style: ViewPropTypesStyle } = ViewPropTypes;
+class ErrorView extends Component {
+  constructor(props) {
+    super(props);
 
-const styles = StyleSheet.create({
-  text: { color: "white" },
-  background: {
-    backgroundColor: "red"
+    this.state = {
+      error: null
+    };
+
+    this.handleError = this.handleError.bind(this);
   }
-});
 
-const ErrorView = ({ style, errors }) => {
-  const errorItems = errors.map(error => (
-    <Text key={`${error.code}_${error.message}`} style={styles.text}>
-      {error.code} - {error.message}
-    </Text>
-  ));
+  componentDidCatch(e) {
+    this.setState({
+      error: e
+    });
+  }
 
-  return <View style={[style, styles.background]}>{errorItems}</View>;
-};
-const errorPropType = PropTypes.shape({
-  code: PropTypes.string,
-  message: PropTypes.string
-});
+  handleError(e) {
+    this.setState({
+      error: e
+    });
+  }
 
-ErrorView.defaultProps = { style: {} };
+  render() {
+    return this.props.children({
+      hasError: !!this.state.error,
+      error: this.state.error,
+      onError: this.handleError
+    });
+  }
+}
 
 ErrorView.propTypes = {
-  style: ViewPropTypesStyle,
-  errors: PropTypes.arrayOf(errorPropType).isRequired
+  children: PropTypes.func.isRequired
 };
 
 export default ErrorView;
-
-export const addErrorHandler = WrappedComponent => {
-  class ErrorHandler extends Component {
-    constructor(props) {
-      super(props);
-      this.state = { errors: [] };
-    }
-    render() {
-      const { errors } = this.state;
-      const { onError, style, ...passThroughProps } = this.props;
-
-      if (errors.length) {
-        return <ErrorView style={style} errors={errors} />;
-      }
-      return (
-        <WrappedComponent
-          style={style}
-          onError={err => {
-            this.setState(prevState => ({
-              errors: [...prevState.errors, err]
-            }));
-            // bubble up errors if parent is listening
-            if (onError) onError(err);
-          }}
-          {...passThroughProps}
-        />
-      );
-    }
-  }
-  ErrorHandler.propTypes = WrappedComponent.propTypes;
-  return ErrorHandler;
-};

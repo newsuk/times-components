@@ -92,6 +92,10 @@ const withMockProvider = child => (
 );
 
 export default AuthorProfileContent => {
+  afterEach(() => {
+    jest.restoreAllMocks();
+  });
+
   it("renders profile content", () => {
     const component = renderer.create(
       withMockProvider(
@@ -351,5 +355,69 @@ export default AuthorProfileContent => {
           "Top medal for forces dog who took a bite out of the Taliban"
       }
     });
+  });
+
+  it("removes profile items that fail to render", () => {
+    jest.spyOn(console, "error").mockImplementation();
+
+    const makeArticleWithSummary = (id, summary) => ({
+      summary: [summary],
+      id,
+      leadAsset: {
+        title: "Title",
+        crop: {
+          url:
+            "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0",
+          __typename: "Crop"
+        },
+        __typename: "Image"
+      },
+      publicationName: "TIMES",
+      publishedTime: new Date("2017-11-17T00:01:00.000Z"),
+      headline: "Top medal for forces dog who took a bite out of the Taliban",
+      url:
+        "https://www.thetimes.co.uk/article/d98c257c-cb16-11e7-b529-95e3fc05f40f",
+      __typename: "Article",
+      page: 1,
+      pageSize: 2
+    });
+
+    const p = {
+      ...props,
+      ...authorProfileFixture.data.author,
+      articlesLoading: false,
+      articles: [
+        makeArticleWithSummary("d98c257c-cb16-11e7-b529-95e3fc05f40f", {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value: "This will error"
+              },
+              children: {} // Will cause exception
+            }
+          ]
+        }),
+        makeArticleWithSummary("4e6894ec-cb18-11e7-b529-95e3fc05f40f", {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value: "Did not error"
+              },
+              children: []
+            }
+          ]
+        })
+      ],
+      imageRatio: 3 / 2
+    };
+
+    const component = renderer.create(<AuthorProfileContent {...p} />);
+    expect(component.root.findAllByType(AuthorProfileItem)).toHaveLength(1);
   });
 };

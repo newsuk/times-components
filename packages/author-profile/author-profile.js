@@ -56,6 +56,7 @@ const AuthorProfile = ({
             publishedTime: new Date(article.publishedTime)
           })
         );
+
         return (
           <AuthorProfileContent
             isLoading={isLoading}

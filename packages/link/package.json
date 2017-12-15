@@ -1,6 +1,6 @@
 {
   "name": "@times-components/link",
-  "version": "0.12.0",
+  "version": "0.12.1",
   "description": "component to handle links and navigation",
   "main": "link",
   "scripts": {
@@ -49,7 +49,7 @@
     "@storybook/addon-actions": "3.2.17",
     "@storybook/react-native": "3.2.17",
     "@times-components/eslint-config-thetimes": "0.0.2",
-    "@times-components/storybook": "0.1.0",
+    "@times-components/storybook": "0.1.1",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",
@@ -62,10 +62,10 @@
     "flow-bin": "0.42.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
-    "react": "16.0.0",
-    "react-dom": "16.0.0",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
     "react-native": "0.50.1",
-    "react-test-renderer": "16.0.0",
+    "react-test-renderer": "16.2.0",
     "webpack": "3.3.0"
   },
   "dependencies": {
