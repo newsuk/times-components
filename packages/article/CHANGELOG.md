@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.21.7"></a>
+## [0.21.7](https://github.com/newsuk/times-components/compare/@times-components/article@0.21.6...@times-components/article@0.21.7) (2017-12-15)
+
+
+### Bug Fixes
+
+* add left padding for primary inline image for mob web and native ([6487884](https://github.com/newsuk/times-components/commit/6487884))
+
+
+
+
 <a name="0.21.6"></a>
 ## [0.21.6](https://github.com/newsuk/times-components/compare/@times-components/article@0.21.5...@times-components/article@0.21.6) (2017-12-15)
 
