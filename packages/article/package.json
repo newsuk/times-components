@@ -76,13 +76,13 @@
     "@times-components/tracking": "0.5.4",
     "lodash.get": "4.4.2",
     "prop-types": "15.6.0",
-    "react-native-web": "0.1.14",
     "styled-components": "2.2.3"
   },
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16",
-    "react-native": ">=0.50"
+    "react-native": ">=0.50",
+    "react-native-web": ">=0.1"
   },
   "publishConfig": {
     "access": "public"

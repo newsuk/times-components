@@ -55,13 +55,13 @@
   "dependencies": {
     "@times-components/link": "0.12.1",
     "@times-components/markup": "0.14.2",
-    "prop-types": "15.6.0",
-    "react-native-web": "0.1.14"
+    "prop-types": "15.6.0"
   },
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16",
-    "react-native": ">=0.50"
+    "react-native": ">=0.50",
+    "react-native-web": ">=0.1"
   },
   "publishConfig": {
     "access": "public"
