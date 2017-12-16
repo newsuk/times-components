@@ -353,7 +353,7 @@ exports[`renders profile content 1`] = `
                 "bottom": 0,
                 "height": 100,
                 "position": "absolute",
-                "width": 100,
+                "width": "100%",
               }
             }
           >
@@ -364,7 +364,10 @@ exports[`renders profile content 1`] = `
                   "borderColor": "#FFF",
                   "borderRadius": 50,
                   "borderWidth": 5,
+                  "marginLeft": "auto",
+                  "marginRight": "auto",
                   "overflow": "hidden",
+                  "width": 100,
                 }
               }
             >
