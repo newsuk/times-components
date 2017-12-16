@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.12.7"></a>
+## [0.12.7](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.12.5...@times-components/pagination@0.12.7) (2017-12-16)
+
+
+### Bug Fixes
+
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
 <a name="0.12.6"></a>
 ## [0.12.6](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.12.5...@times-components/pagination@0.12.6) (2017-12-16)
 
