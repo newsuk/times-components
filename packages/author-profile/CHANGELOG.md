@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.33.0"></a>
+# [0.33.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.32.3...@times-components/author-profile@0.33.0) (2017-12-16)
+
+
+### Features
+
+* make author name responsive on web ([#465](https://github.com/newsuk/times-components/issues/465)) ([a42538d](https://github.com/newsuk/times-components/commit/a42538d))
+
+
+
+
 <a name="0.32.3"></a>
 ## [0.32.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.32.2...@times-components/author-profile@0.32.3) (2017-12-15)
 
