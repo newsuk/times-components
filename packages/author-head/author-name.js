@@ -6,8 +6,7 @@ const styles = StyleSheet.create({
   name: {
     fontFamily: "TimesModern-Bold",
     fontSize: 30,
-    color: "#000",
-    paddingTop: 32
+    color: "#000"
   }
 });
 
