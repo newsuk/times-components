@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text } from "react-native";
+import { StyleSheet, View } from "react-native";
 import Bio from "./author-bio.base";
 
 const styles = StyleSheet.create({
@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
 });
 
 export default props => (
-  <Text style={styles.bio}>
+  <View style={styles.bio}>
     <Bio {...props} />
-  </Text>
+  </View>
 );
