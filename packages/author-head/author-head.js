@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
   },
   twitter: {
     paddingTop: 16,
+    paddingBottom: 16,
     flexDirection: "row",
     ...Platform.select({
       android: {
