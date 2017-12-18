@@ -18,7 +18,7 @@ const styles = {
     color: "#333333",
     fontSize: 22,
     lineHeight: 22,
-    marginBottom: 8,
+    marginBottom: 6,
     fontFamily: "TimesModern-Bold",
     fontWeight: "400",
     ...Platform.select({
@@ -37,7 +37,8 @@ const styles = {
     color: "#696969",
     fontSize: 13,
     lineHeight: 15,
-    fontFamily: "GillSansMTStd-Medium"
+    fontFamily: "GillSansMTStd-Medium",
+    marginBottom: 20
   }
 };
 
