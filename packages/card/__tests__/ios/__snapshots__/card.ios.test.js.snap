@@ -420,7 +420,7 @@ exports[`Card test on ios renders vertical by default 1`] = `
               "fontSize": 22,
               "fontWeight": "400",
               "lineHeight": 22,
-              "marginBottom": 8,
+              "marginBottom": 6,
             }
           }
         >
@@ -469,6 +469,7 @@ exports[`Card test on ios renders vertical by default 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 15,
+              "marginBottom": 20,
             }
           }
           testID="datePublication"
@@ -519,7 +520,7 @@ exports[`Card test on ios renders without image 1`] = `
               "fontSize": 22,
               "fontWeight": "400",
               "lineHeight": 22,
-              "marginBottom": 8,
+              "marginBottom": 6,
             }
           }
         >
@@ -568,6 +569,7 @@ exports[`Card test on ios renders without image 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 15,
+              "marginBottom": 20,
             }
           }
           testID="datePublication"
@@ -618,7 +620,7 @@ exports[`Card test on ios renders without image url 1`] = `
               "fontSize": 22,
               "fontWeight": "400",
               "lineHeight": 22,
-              "marginBottom": 8,
+              "marginBottom": 6,
             }
           }
         >
@@ -667,6 +669,7 @@ exports[`Card test on ios renders without image url 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 15,
+              "marginBottom": 20,
             }
           }
           testID="datePublication"

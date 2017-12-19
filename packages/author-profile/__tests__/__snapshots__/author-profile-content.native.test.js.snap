@@ -12,7 +12,6 @@ exports[`does not re-render the author head if the name changes 1`] = `
       "color": "#000",
       "fontFamily": "TimesModern-Bold",
       "fontSize": 30,
-      "paddingTop": 32,
     }
   }
   testID="author-name"
@@ -33,7 +32,6 @@ exports[`does re-render the author head if the loading state changes 1`] = `
       "color": "#000",
       "fontFamily": "TimesModern-Bold",
       "fontSize": 30,
-      "paddingTop": 32,
     }
   }
   testID="author-name"
@@ -206,7 +204,6 @@ exports[`renders profile content 1`] = `
             Object {
               "alignItems": "center",
               "backgroundColor": "transparent",
-              "paddingBottom": 50,
             }
           }
         >
@@ -217,11 +214,121 @@ exports[`renders profile content 1`] = `
                 "alignItems": "center",
                 "backgroundColor": "#F9F8F3",
                 "flexDirection": "column",
-                "paddingBottom": 50,
+                "paddingBottom": 30,
+                "paddingTop": 20,
                 "width": "100%",
               }
             }
           >
+            <View
+              style={
+                Object {
+                  "marginBottom": 20,
+                }
+              }
+            >
+              <View
+                aspectRatio={1}
+                style={
+                  Object {
+                    "borderColor": "#FFF",
+                    "borderRadius": 50,
+                    "borderWidth": 5,
+                    "marginLeft": "auto",
+                    "marginRight": "auto",
+                    "overflow": "hidden",
+                    "width": 100,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <Image
+                    onLoad={[Function]}
+                    source={
+                      Object {
+                        "uri": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "bottom": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                        },
+                        Object {
+                          "height": "100%",
+                          "width": "100%",
+                        },
+                        undefined,
+                      ]
+                    }
+                  />
+                  <View
+                    onLayout={[Function]}
+                    style={
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                        null,
+                      ]
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    >
+                      <BVLinearGradient
+                        colors={
+                          Array [
+                            "#f9f9f9",
+                            "#ededed",
+                          ]
+                        }
+                        end={
+                          Object {
+                            "x": -0.09302964577578221,
+                            "y": 0.11488204504197774,
+                          }
+                        }
+                        locations={
+                          Array [
+                            0,
+                            1,
+                          ]
+                        }
+                        start={
+                          Object {
+                            "x": 1,
+                            "y": 0,
+                          }
+                        }
+                        style={
+                          Array [
+                            Object {
+                              "flex": 1,
+                            },
+                          ]
+                        }
+                      />
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
             <Text
               accessibilityLabel="author-name"
               accessibilityRole="heading"
@@ -233,7 +340,6 @@ exports[`renders profile content 1`] = `
                   "color": "#000",
                   "fontFamily": "TimesModern-Bold",
                   "fontSize": 30,
-                  "paddingTop": 32,
                 }
               }
               testID="author-name"
@@ -263,6 +369,7 @@ exports[`renders profile content 1`] = `
               style={
                 Object {
                   "flexDirection": "row",
+                  "paddingBottom": 16,
                   "paddingTop": 16,
                 }
               }
@@ -305,14 +412,12 @@ exports[`renders profile content 1`] = `
                 jdoe
               </Text>
             </View>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
                 Object {
-                  "maxWidth": "88%",
                   "paddingBottom": 32,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
                 }
               }
             >
@@ -345,118 +450,6 @@ exports[`renders profile content 1`] = `
                 </Text>
                 , covering the most important defence & security news in the UK and around the world.
               </Text>
-            </Text>
-          </View>
-          <View
-            style={
-              Object {
-                "bottom": 0,
-                "height": 100,
-                "position": "absolute",
-                "width": "100%",
-              }
-            }
-          >
-            <View
-              aspectRatio={1}
-              style={
-                Object {
-                  "borderColor": "#FFF",
-                  "borderRadius": 50,
-                  "borderWidth": 5,
-                  "marginLeft": "auto",
-                  "marginRight": "auto",
-                  "overflow": "hidden",
-                  "width": 100,
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  }
-                }
-              >
-                <Image
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "bottom": 0,
-                        "left": 0,
-                        "position": "absolute",
-                        "right": 0,
-                        "top": 0,
-                      },
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-                <View
-                  onLayout={[Function]}
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                      null,
-                    ]
-                  }
-                >
-                  <View
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
-                  >
-                    <BVLinearGradient
-                      colors={
-                        Array [
-                          "#f9f9f9",
-                          "#ededed",
-                        ]
-                      }
-                      end={
-                        Object {
-                          "x": -0.09302964577578221,
-                          "y": 0.11488204504197774,
-                        }
-                      }
-                      locations={
-                        Array [
-                          0,
-                          1,
-                        ]
-                      }
-                      start={
-                        Object {
-                          "x": 1,
-                          "y": 0,
-                        }
-                      }
-                      style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                        ]
-                      }
-                    />
-                  </View>
-                </View>
-              </View>
             </View>
           </View>
         </View>
@@ -4089,7 +4082,6 @@ exports[`renders profile content component 1`] = `
             Object {
               "alignItems": "center",
               "backgroundColor": "transparent",
-              "paddingBottom": 50,
             }
           }
         >
@@ -4100,7 +4092,8 @@ exports[`renders profile content component 1`] = `
                 "alignItems": "center",
                 "backgroundColor": "#F9F8F3",
                 "flexDirection": "column",
-                "paddingBottom": 50,
+                "paddingBottom": 30,
+                "paddingTop": 20,
                 "width": "100%",
               }
             }
@@ -4116,7 +4109,6 @@ exports[`renders profile content component 1`] = `
                   "color": "#000",
                   "fontFamily": "TimesModern-Bold",
                   "fontSize": 30,
-                  "paddingTop": 32,
                 }
               }
               testID="author-name"
@@ -4142,14 +4134,12 @@ exports[`renders profile content component 1`] = `
             >
               
             </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
                 Object {
-                  "maxWidth": "88%",
                   "paddingBottom": 32,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
                 }
               }
             >
@@ -4167,7 +4157,7 @@ exports[`renders profile content component 1`] = `
                   }
                 }
               />
-            </Text>
+            </View>
           </View>
         </View>
         <View
@@ -4500,7 +4490,7 @@ exports[`renders profile content component 1`] = `
                         "fontSize": 22,
                         "fontWeight": "400",
                         "lineHeight": 22,
-                        "marginBottom": 8,
+                        "marginBottom": 6,
                       }
                     }
                   >
@@ -4541,6 +4531,7 @@ exports[`renders profile content component 1`] = `
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 13,
                         "lineHeight": 15,
+                        "marginBottom": 20,
                       }
                     }
                     testID="datePublication"
@@ -4749,7 +4740,7 @@ exports[`renders profile content component 1`] = `
                         "fontSize": 22,
                         "fontWeight": "400",
                         "lineHeight": 22,
-                        "marginBottom": 8,
+                        "marginBottom": 6,
                       }
                     }
                   >
@@ -4790,6 +4781,7 @@ exports[`renders profile content component 1`] = `
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 13,
                         "lineHeight": 15,
+                        "marginBottom": 20,
                       }
                     }
                     testID="datePublication"
@@ -4998,7 +4990,7 @@ exports[`renders profile content component 1`] = `
                         "fontSize": 22,
                         "fontWeight": "400",
                         "lineHeight": 22,
-                        "marginBottom": 8,
+                        "marginBottom": 6,
                       }
                     }
                   >
@@ -5039,6 +5031,7 @@ exports[`renders profile content component 1`] = `
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 13,
                         "lineHeight": 15,
+                        "marginBottom": 20,
                       }
                     }
                     testID="datePublication"
@@ -5355,7 +5348,7 @@ exports[`renders profile content item component 1`] = `
                   "fontSize": 22,
                   "fontWeight": "400",
                   "lineHeight": 22,
-                  "marginBottom": 8,
+                  "marginBottom": 6,
                 }
               }
             >
@@ -5396,6 +5389,7 @@ exports[`renders profile content item component 1`] = `
                   "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 13,
                   "lineHeight": 15,
+                  "marginBottom": 20,
                 }
               }
               testID="datePublication"
@@ -5582,7 +5576,7 @@ exports[`renders profile content item component with a specific image size 1`] =
                   "fontSize": 22,
                   "fontWeight": "400",
                   "lineHeight": 22,
-                  "marginBottom": 8,
+                  "marginBottom": 6,
                 }
               }
             >
@@ -5623,6 +5617,7 @@ exports[`renders profile content item component with a specific image size 1`] =
                   "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 13,
                   "lineHeight": 15,
+                  "marginBottom": 20,
                 }
               }
               testID="datePublication"
@@ -5710,7 +5705,7 @@ exports[`renders profile content item component with no image 1`] = `
                   "fontSize": 22,
                   "fontWeight": "400",
                   "lineHeight": 22,
-                  "marginBottom": 8,
+                  "marginBottom": 6,
                 }
               }
             >
@@ -5751,6 +5746,7 @@ exports[`renders profile content item component with no image 1`] = `
                   "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 13,
                   "lineHeight": 15,
+                  "marginBottom": 20,
                 }
               }
               testID="datePublication"
@@ -5856,7 +5852,6 @@ exports[`renders profile empty 1`] = `
             Object {
               "alignItems": "center",
               "backgroundColor": "transparent",
-              "paddingBottom": 50,
             }
           }
         >
@@ -5867,7 +5862,8 @@ exports[`renders profile empty 1`] = `
                 "alignItems": "center",
                 "backgroundColor": "#F9F8F3",
                 "flexDirection": "column",
-                "paddingBottom": 50,
+                "paddingBottom": 30,
+                "paddingTop": 20,
                 "width": "100%",
               }
             }
@@ -5883,7 +5879,6 @@ exports[`renders profile empty 1`] = `
                   "color": "#000",
                   "fontFamily": "TimesModern-Bold",
                   "fontSize": 30,
-                  "paddingTop": 32,
                 }
               }
               testID="author-name"
@@ -5909,14 +5904,12 @@ exports[`renders profile empty 1`] = `
             >
               
             </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
                 Object {
-                  "maxWidth": "88%",
                   "paddingBottom": 32,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
                 }
               }
             >
@@ -5934,7 +5927,7 @@ exports[`renders profile empty 1`] = `
                   }
                 }
               />
-            </Text>
+            </View>
           </View>
         </View>
         <View
@@ -6217,7 +6210,6 @@ exports[`renders profile loading 1`] = `
             Object {
               "alignItems": "center",
               "backgroundColor": "transparent",
-              "paddingBottom": 50,
             }
           }
         >
@@ -6228,7 +6220,8 @@ exports[`renders profile loading 1`] = `
                 "alignItems": "center",
                 "backgroundColor": "#F9F8F3",
                 "flexDirection": "column",
-                "paddingBottom": 50,
+                "paddingBottom": 30,
+                "paddingTop": 20,
                 "width": "100%",
               }
             }
@@ -6244,7 +6237,6 @@ exports[`renders profile loading 1`] = `
                   "color": "#000",
                   "fontFamily": "TimesModern-Bold",
                   "fontSize": 30,
-                  "paddingTop": 32,
                 }
               }
               testID="author-name"
@@ -6274,6 +6266,7 @@ exports[`renders profile loading 1`] = `
               style={
                 Object {
                   "flexDirection": "row",
+                  "paddingBottom": 16,
                   "paddingTop": 16,
                 }
               }
@@ -6316,14 +6309,12 @@ exports[`renders profile loading 1`] = `
                 jdoe
               </Text>
             </View>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
                 Object {
-                  "maxWidth": "88%",
                   "paddingBottom": 32,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
                 }
               }
             >
@@ -6356,7 +6347,7 @@ exports[`renders profile loading 1`] = `
                 </Text>
                 , covering the most important defence & security news in the UK and around the world.
               </Text>
-            </Text>
+            </View>
           </View>
         </View>
         <View
@@ -6808,7 +6799,6 @@ exports[`renders the author head 1`] = `
     Object {
       "alignItems": "center",
       "backgroundColor": "transparent",
-      "paddingBottom": 50,
     }
   }
 >
@@ -6819,7 +6809,8 @@ exports[`renders the author head 1`] = `
         "alignItems": "center",
         "backgroundColor": "#F9F8F3",
         "flexDirection": "column",
-        "paddingBottom": 50,
+        "paddingBottom": 30,
+        "paddingTop": 20,
         "width": "100%",
       }
     }
@@ -6835,7 +6826,6 @@ exports[`renders the author head 1`] = `
           "color": "#000",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 30,
-          "paddingTop": 32,
         }
       }
       testID="author-name"
@@ -6865,6 +6855,7 @@ exports[`renders the author head 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "paddingBottom": 16,
           "paddingTop": 16,
         }
       }
@@ -6907,14 +6898,12 @@ exports[`renders the author head 1`] = `
         jdoe
       </Text>
     </View>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <View
       style={
         Object {
-          "maxWidth": "88%",
           "paddingBottom": 32,
+          "paddingLeft": 10,
+          "paddingRight": 10,
         }
       }
     >
@@ -6932,7 +6921,7 @@ exports[`renders the author head 1`] = `
           }
         }
       />
-    </Text>
+    </View>
   </View>
 </View>
 `;
