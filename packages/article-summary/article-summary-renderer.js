@@ -14,7 +14,13 @@ export default {
   text(key, { value }) {
     return value.trim();
   },
-  teaser(key, attributes, renderedChildren) {
-    return <Text key={key}>{renderedChildren}...</Text>;
+  teaser(key, { isSingle }, renderedChildren) {
+    const padding = isSingle ? "" : " ";
+    return (
+      <Text key={key}>
+        {padding}
+        {renderedChildren}...
+      </Text>
+    );
   }
 };
