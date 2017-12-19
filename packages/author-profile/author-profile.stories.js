@@ -202,7 +202,13 @@ const withArticlesErroredMockProvider = child => {
           slug: "deborah-haynes"
         }
       },
-      result: authorProfileFixture
+      result: {
+        data: {
+          author: {
+            ...makeAuthor(5, { withImages: true })
+          }
+        }
+      }
     },
     {
       request: {
@@ -326,7 +332,8 @@ storiesOf("AuthorProfile", module)
       pageSize: 3,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
       onArticlePress: preventDefaultedAction("onArticlePress"),
-      analyticsStream: storybookReporter
+      analyticsStream: storybookReporter,
+      refetch: () => {}
     };
 
     return <AuthorProfileContent {...props} />;
@@ -356,7 +363,7 @@ storiesOf("AuthorProfile", module)
   .add("With an error getting articles", () => {
     const props = {
       slug: "deborah-haynes",
-      author: makeAuthor(5),
+      author: makeAuthor(5, { withImages: true }),
       isLoading: false,
       page: 1,
       pageSize: 5,
