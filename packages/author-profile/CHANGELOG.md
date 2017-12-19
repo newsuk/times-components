@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.34.0"></a>
+# [0.34.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.33.2...@times-components/author-profile@0.34.0) (2017-12-19)
+
+
+### Features
+
+* author and listing level error states ([#475](https://github.com/newsuk/times-components/issues/475)) ([ffb9620](https://github.com/newsuk/times-components/commit/ffb9620))
+
+
+
+
 <a name="0.33.2"></a>
 ## [0.33.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.33.0...@times-components/author-profile@0.33.2) (2017-12-16)
 
