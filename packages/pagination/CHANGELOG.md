@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.12.9"></a>
+## [0.12.9](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.12.8...@times-components/pagination@0.12.9) (2017-12-19)
+
+
+### Bug Fixes
+
+* limit the page to to the end ([6de396e](https://github.com/newsuk/times-components/commit/6de396e))
+
+
+
+
 <a name="0.12.8"></a>
 ## [0.12.8](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.12.7...@times-components/pagination@0.12.8) (2017-12-19)
 

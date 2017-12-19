@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.20.0"></a>
+# [0.20.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.19.0...@times-components/provider@0.20.0) (2017-12-19)
+
+
+### Features
+
+* add no images provider ([76df683](https://github.com/newsuk/times-components/commit/76df683))
+
+
+
+
 <a name="0.19.0"></a>
 # [0.19.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.18.3...@times-components/provider@0.19.0) (2017-12-19)
 

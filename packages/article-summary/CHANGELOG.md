@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.12.6"></a>
+## [0.12.6](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.12.5...@times-components/article-summary@0.12.6) (2017-12-19)
+
+
+### Bug Fixes
+
+* pad mutli paragraphs ([ba1f3e0](https://github.com/newsuk/times-components/commit/ba1f3e0))
+
+
+
+
 <a name="0.12.5"></a>
 ## [0.12.5](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.12.4...@times-components/article-summary@0.12.5) (2017-12-19)
 
