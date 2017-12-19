@@ -5,7 +5,7 @@
         "count": 20,
         "list": [
           {
-            "summary": [
+            "shortSummary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -14,7 +14,51 @@
                     "name": "text",
                     "attributes": {
                       "value":
-                        "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and"
+                        "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Mali sniffed out explosives and insurgents during a"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "longSummary": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Mali sniffed out explosives and insurgents during a gunfight that lasted seven and a half hours to help a team of Special Boat Service (SBS) operators hunt down and kill more than a dozen"
                     },
                     "children": []
                   }
@@ -23,15 +67,6 @@
             ],
             "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
             "label": "",
-            "leadAsset": {
-              "title": "Title",
-              "crop": {
-                "url":
-                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-17T00:01:00.000Z",
             "headline":
@@ -41,7 +76,7 @@
             "__typename": "Article"
           },
           {
-            "summary": [
+            "shortSummary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -50,7 +85,51 @@
                     "name": "text",
                     "attributes": {
                       "value":
-                        "The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist"
+                        "The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist material online."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Ant\u00f3nio Guterres said last night that Islamic State and"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "longSummary": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist material online."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Ant\u00f3nio Guterres said last night that Islamic State and other terrorist groups were losing physical ground in Iraq and Syria but were growing their presence in cyberspace. He described terrorism as"
                     },
                     "children": []
                   }
@@ -59,15 +138,6 @@
             ],
             "id": "4e6894ec-cb18-11e7-b529-95e3fc05f40f",
             "label": "",
-            "leadAsset": {
-              "title": "Title",
-              "crop": {
-                "url":
-                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-17T00:01:00.000Z",
             "headline":
@@ -77,7 +147,7 @@
             "__typename": "Article"
           },
           {
-            "summary": [
+            "shortSummary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -86,7 +156,50 @@
                     "name": "text",
                     "attributes": {
                       "value":
-                        "Britain\u2019s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a"
+                        "Britain\u2019s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a former military chief said today."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "General Sir Richard Barrons, the commander of"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "longSummary": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Britain\u2019s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a former military chief said today."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "General Sir Richard Barrons, the commander of Joint Forces Command until last year, warned that the entire armed forces were on the brink of operational or institutional failure unless"
                     },
                     "children": []
                   }
@@ -95,15 +208,6 @@
             ],
             "id": "f79c9d8c-c95c-11e7-b529-95e3fc05f40f",
             "label": "",
-            "leadAsset": {
-              "title": "Nad e Ali in Helmand province, Afghanistan.",
-              "crop": {
-                "url":
-                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-14T17:00:00.000Z",
             "headline":
@@ -113,7 +217,7 @@
             "__typename": "Article"
           },
           {
-            "summary": [
+            "shortSummary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -122,7 +226,50 @@
                     "name": "text",
                     "attributes": {
                       "value":
-                        "Britain\u2019s new defence secretary is facing questions over why his department has hired hundreds of civilians while it considers cutting 1,000"
+                        "Britain\u2019s new defence secretary is facing questions over why his department has hired hundreds of civilians while it considers cutting 1,000 frontline Royal Marines to save money."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Ruth Smeeth, a Labour member of the"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "longSummary": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Britain\u2019s new defence secretary is facing questions over why his department has hired hundreds of civilians while it considers cutting 1,000 frontline Royal Marines to save money."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Ruth Smeeth, a Labour member of the Commons defence select committee, has written to Gavin Williamson expressing her \u201cconcerns over the staffing priorities of the Ministry of"
                     },
                     "children": []
                   }
@@ -131,15 +278,6 @@
             ],
             "id": "21627e52-c651-11e7-92dc-06edfbca4aab",
             "label": "",
-            "leadAsset": {
-              "title": "HMS Ocean Embarks British Marines",
-              "crop": {
-                "url":
-                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F06c0e50a-c667-11e7-9914-a38dcc178fcd.jpg?crop=3600%2C2400%2C0%2C0",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-11T00:01:00.000Z",
             "headline": "MoD recruits more civilians as Royal Marines face axe",
@@ -148,7 +286,7 @@
             "__typename": "Article"
           },
           {
-            "summary": [
+            "shortSummary": [
               {
                 "name": "paragraph",
                 "attributes": {
@@ -172,7 +310,54 @@
                   {
                     "name": "text",
                     "attributes": {
-                      "value": "But when a group of"
+                      "value":
+                        "But when a group of Royal Navy sailors asked the Royal British Legion (RBL) to produce adult"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "longSummary": [
+              {
+                "name": "paragraph",
+                "attributes": {
+                  "class": "dropcap@1"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "The idea of selling anything other than a traditional paper poppy to mark Remembrance Sunday was unheard of a decade ago."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "But when a group of Royal Navy sailors asked the Royal British Legion (RBL) to produce adult \u201conesies\u201d emblazoned with poppies for this weekend the response was: \u201cWhy not!\u201d"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Charles Byrne, the RBL\u2019s director general, said that a decision to"
                     },
                     "children": []
                   }
@@ -181,15 +366,6 @@
             ],
             "id": "9c4991b8-c657-11e7-92dc-06edfbca4aab",
             "label": "",
-            "leadAsset": {
-              "title": "",
-              "crop": {
-                "url":
-                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1d663086-c625-11e7-9914-a38dcc178fcd.jpg?crop=907%2C605%2C87%2C93",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-11T00:01:00.000Z",
             "headline":
@@ -199,7 +375,7 @@
             "__typename": "Article"
           },
           {
-            "summary": [
+            "shortSummary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -208,7 +384,51 @@
                     "name": "text",
                     "attributes": {
                       "value":
-                        "The defence secretary will hold his first bilateral meeting in London today with James Mattis, his US counterpart, amid concerns over impending"
+                        "The defence secretary will hold his first bilateral meeting in London today with James Mattis, his US counterpart, amid concerns over impending cuts to the armed forces."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "It will be the second big test for Gavin Williamson"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "longSummary": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "The defence secretary will hold his first bilateral meeting in London today with James Mattis, his US counterpart, amid concerns over impending cuts to the armed forces."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "It will be the second big test for Gavin Williamson after he took part in two days of meetings with Mr Mattis and the defence ministers of the other 27 member states of Nato at the alliance\u2019s"
                     },
                     "children": []
                   }
@@ -217,15 +437,6 @@
             ],
             "id": "937bc97c-c597-11e7-92dc-06edfbca4aab",
             "label": "Politics",
-            "leadAsset": {
-              "title": "Britain's recently appointed Defence Min",
-              "crop": {
-                "url":
-                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c580c5a-c597-11e7-92dc-06edfbca4aab.jpg?crop=3656%2C2437%2C0%2C0",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-10T00:01:00.000Z",
             "headline":
@@ -235,7 +446,7 @@
             "__typename": "Article"
           },
           {
-            "summary": [
+            "shortSummary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -244,7 +455,64 @@
                     "name": "text",
                     "attributes": {
                       "value":
-                        "A leading US general warned yesterday against cost cuts to Britain\u2019s armed forces as the new defence secretary made his first outing on the world"
+                        "A leading US general warned yesterday against cost cuts to Britain\u2019s armed forces as the new defence secretary made his first outing on the world stage."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Gavin Williamson joined defence ministers from 28 other member"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "longSummary": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "A leading US general warned yesterday against cost cuts to Britain\u2019s armed forces as the new defence secretary made his first outing on the world stage."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Gavin Williamson joined defence ministers from 28 other member states, including James Mattis, his US opposite number, for two days of meetings at Nato headquarters in Brussels."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Topics for discussion included"
                     },
                     "children": []
                   }
@@ -253,15 +521,6 @@
             ],
             "id": "c6dfc060-c47b-11e7-9914-a38dcc178fcd",
             "label": "",
-            "leadAsset": {
-              "title": "British troops in Iraq",
-              "crop": {
-                "url":
-                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4c179870-c477-11e7-9914-a38dcc178fcd.jpg?crop=3484%2C2323%2C0%2C0",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-09T00:01:00.000Z",
             "headline":
@@ -271,7 +530,7 @@
             "__typename": "Article"
           },
           {
-            "summary": [
+            "shortSummary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -280,7 +539,50 @@
                     "name": "text",
                     "attributes": {
                       "value":
-                        "Britain\u2019s air war against Islamic State is set to wind down next year, with commanders looking at bringing Royal Air Force fast jets home from"
+                        "Britain\u2019s air war against Islamic State is set to wind down next year, with commanders looking at bringing Royal Air Force fast jets home from March, a senior officer said yesterday."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Air Commodore Johnny Stringer, who led"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "longSummary": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Britain\u2019s air war against Islamic State is set to wind down next year, with commanders looking at bringing Royal Air Force fast jets home from March, a senior officer said yesterday."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Air Commodore Johnny Stringer, who led the British air campaign against the terrorist group until last month, said that drones and other surveillance aircraft would continue to"
                     },
                     "children": []
                   }
@@ -289,16 +591,6 @@
             ],
             "id": "b8ed3dc0-c0b6-11e7-b58a-4186f6049f2e",
             "label": "",
-            "leadAsset": {
-              "title":
-                "Defence Secretary Visits UK Service Personnel in Cyprus",
-              "crop": {
-                "url":
-                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65c3ef0c-c0b8-11e7-b58a-4186f6049f2e.jpg?crop=1500%2C1000%2C0%2C0",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-04T00:00:00.000Z",
             "headline": "RAF ready to withdraw as Isis battle enters endgame",
@@ -307,7 +599,7 @@
             "__typename": "Article"
           },
           {
-            "summary": [
+            "shortSummary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -329,7 +621,51 @@
                   {
                     "name": "text",
                     "attributes": {
-                      "value": "Mrs"
+                      "value":
+                        "Mrs Leadsom, the Commons leader, was said to have handed over a dossier of"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "longSummary": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Sir Michael Fallon was reported to No 10 for inappropriate behaviour this week by his cabinet colleague Andrea Leadsom, it has been claimed."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Mrs Leadsom, the Commons leader, was said to have handed over a dossier of alleged comments made several years ago by the defence secretary. It was submitted to Downing Street on Wednesday, before he quit his role."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "She"
                     },
                     "children": []
                   }
@@ -338,15 +674,6 @@
             ],
             "id": "ec2ecc78-c014-11e7-8bb9-94e1372175c0",
             "label": "SEXUAL HARASSMENT",
-            "leadAsset": {
-              "title": "(FILES) This taken on October",
-              "crop": {
-                "url":
-                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe1cca1e6-c024-11e7-8bb9-94e1372175c0.jpg?crop=5472%2C3648%2C0%2C0",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-03T00:01:00.000Z",
             "headline":
@@ -356,7 +683,7 @@
             "__typename": "Article"
           },
           {
-            "summary": [
+            "shortSummary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -365,7 +692,65 @@
                     "name": "text",
                     "attributes": {
                       "value":
-                        "Shock and curiosity were the prevailing sentiments at the Ministry of Defence yesterday after Gavin Williamson was named the new secretary of"
+                        "Shock and curiosity were the prevailing sentiments at the Ministry of Defence yesterday after Gavin Williamson was named the new secretary of state."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "\u201cGavin who?\u201d said several insiders as the former chief whip\u2019s name"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "longSummary": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Shock and curiosity were the prevailing sentiments at the Ministry of Defence yesterday after Gavin Williamson was named the new secretary of state."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "\u201cGavin who?\u201d said several insiders as the former chief whip\u2019s name flashed up on television screens and across Twitter feeds."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Mr Williamson, 41, is the youngest person to take charge of Britain\u2019s armed forces"
                     },
                     "children": []
                   }
@@ -374,15 +759,6 @@
             ],
             "id": "2ddbb29e-c015-11e7-8bb9-94e1372175c0",
             "label": "TORY FALLOUT",
-            "leadAsset": {
-              "title": "Sexual harassment",
-              "crop": {
-                "url":
-                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fece59432-c008-11e7-b58a-4186f6049f2e.jpg?crop=2879%2C1920%2C377%2C10",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-03T00:01:00.000Z",
             "headline": "Gavin who? Shock at MoD\u2019s latest recruit",
@@ -391,7 +767,7 @@
             "__typename": "Article"
           },
           {
-            "summary": [
+            "shortSummary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -413,7 +789,38 @@
                   {
                     "name": "text",
                     "attributes": {
-                      "value": "The sexual"
+                      "value":
+                        "The sexual harassment scandal engulfing Westminster claimed its first cabinet casualty"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "longSummary": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Sir Michael Fallon resigned as defence secretary last night amid suggestions of inappropriate behaviour towards female journalists."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "The sexual harassment scandal engulfing Westminster claimed its first cabinet casualty when Sir Michael, 65, admitted that his personal conduct had \u201cfallen below the high standards we require of the armed forces\u201d. He stood down"
                     },
                     "children": []
                   }
@@ -422,15 +829,6 @@
             ],
             "id": "d14c8326-bf53-11e7-8bb9-94e1372175c0",
             "label": "",
-            "leadAsset": {
-              "title": "Britain's Defence Secretary Michael Fall",
-              "crop": {
-                "url":
-                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc142d236-bf3b-11e7-8bb9-94e1372175c0.jpg?crop=5472%2C3648%2C0%2C0",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-02T00:01:00.000Z",
             "headline": "Fallon resigns as new sleaze claims emerge",
@@ -439,7 +837,7 @@
             "__typename": "Article"
           },
           {
-            "summary": [
+            "shortSummary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -462,7 +860,64 @@
                     "name": "text",
                     "attributes": {
                       "value":
-                        "It would mark the moment he became the longest-serving Conservative defence"
+                        "It would mark the moment he became the longest-serving Conservative defence secretary in history \u2014 a point that the senior minister had been known to mention"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "longSummary": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Next February was to be a special month for Sir Michael Fallon."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "It would mark the moment he became the longest-serving Conservative defence secretary in history \u2014 a point that the senior minister had been known to mention among friends."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "It was a landmark that was never to be."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "The stern-faced attack dog of the Conservative Party and dominating power in defence"
                     },
                     "children": []
                   }
@@ -471,15 +926,6 @@
             ],
             "id": "a7d8364e-bf52-11e7-8bb9-94e1372175c0",
             "label": "sexual harassment",
-            "leadAsset": {
-              "title": "FILE - Defence Secretary Sir Michael Fallon Resigns",
-              "crop": {
-                "url":
-                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa16fe6f8-bf52-11e7-8bb9-94e1372175c0.jpg?crop=3000%2C2000%2C0%2C0",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-02T00:01:00.000Z",
             "headline":
@@ -489,7 +935,7 @@
             "__typename": "Article"
           },
           {
-            "summary": [
+            "shortSummary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -498,7 +944,65 @@
                     "name": "text",
                     "attributes": {
                       "value":
-                        "Defence chiefs are considering scrapping a special allowance given to soldiers serving in Iraq, provoking anger from troops, military sources"
+                        "Defence chiefs are considering scrapping a special allowance given to soldiers serving in Iraq, provoking anger from troops, military sources said last night."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "The move would save \u00a36 million a year but would be a blow to"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "longSummary": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Defence chiefs are considering scrapping a special allowance given to soldiers serving in Iraq, provoking anger from troops, military sources said last night."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "The move would save \u00a36 million a year but would be a blow to the hundreds of troops supporting Iraqi forces fighting Islamic State, they said."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "\u201cIf this cut comes to fruition, it will impact most heavily"
                     },
                     "children": []
                   }
@@ -507,15 +1011,6 @@
             ],
             "id": "d1efc37a-be85-11e7-8bb9-94e1372175c0",
             "label": "",
-            "leadAsset": {
-              "title": "British troops in Iraq",
-              "crop": {
-                "url":
-                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0f23034c-be95-11e7-b58a-4186f6049f2e.jpg?crop=3484%2C2323%2C0%2C0",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-01T00:01:00.000Z",
             "headline":
@@ -525,7 +1020,7 @@
             "__typename": "Article"
           },
           {
-            "summary": [
+            "shortSummary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -534,7 +1029,50 @@
                     "name": "text",
                     "attributes": {
                       "value":
-                        "The need to scavenge parts from warships and submarines to keep the rest of the Royal Navy\u2019s frontline fleet running has jumped by almost 50 per"
+                        "The need to scavenge parts from warships and submarines to keep the rest of the Royal Navy\u2019s frontline fleet running has jumped by almost 50 per cent in five years, it is revealed today."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "The rise in \u201ccannibalisation\u201d or"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "longSummary": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "The need to scavenge parts from warships and submarines to keep the rest of the Royal Navy\u2019s frontline fleet running has jumped by almost 50 per cent in five years, it is revealed today."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "The rise in \u201ccannibalisation\u201d or \u201cstore robbing\u201d is in part because of cost-saving cuts to a budget for providing sufficient spares and maintenance packages for all Type 45"
                     },
                     "children": []
                   }
@@ -543,15 +1081,6 @@
             ],
             "id": "ecf72512-be73-11e7-8bb9-94e1372175c0",
             "label": "",
-            "leadAsset": {
-              "title": "British Royal Navy shortage of ships for the fleet",
-              "crop": {
-                "url":
-                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0da1a784-be5f-11e7-b58a-4186f6049f2e.jpg?crop=3727%2C2485%2C0%2C0",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-01T00:01:00.000Z",
             "headline": "Navy has to scavenge more parts",
@@ -560,7 +1089,7 @@
             "__typename": "Article"
           },
           {
-            "summary": [
+            "shortSummary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -569,7 +1098,90 @@
                     "name": "text",
                     "attributes": {
                       "value":
-                        "Britain\u2019s ability to support Nato operations will be damaged if military chiefs scrap their only two amphibious assault ships to save money"
+                        "Britain\u2019s ability to support Nato operations will be damaged if military chiefs scrap their only two amphibious assault ships to save money, Whitehall sources warned last night."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Bilateral partnerships and accords with"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "longSummary": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Britain\u2019s ability to support Nato operations will be damaged if military chiefs scrap their only two amphibious assault ships to save money, Whitehall sources warned last night."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Bilateral partnerships and accords with other groups of countries, including a joint expeditionary force with six European states, could also be hurt if HMS "
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "italic",
+                    "attributes": {},
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Bulwark "
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "and HMS "
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "italic",
+                    "attributes": {},
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Albion "
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "are"
                     },
                     "children": []
                   }
@@ -578,15 +1190,6 @@
             ],
             "id": "20fb0c7c-bcdd-11e7-b58a-4186f6049f2e",
             "label": "Video",
-            "leadAsset": {
-              "title": "HMS Bulwark.",
-              "crop": {
-                "url":
-                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F419b3560-bcd3-11e7-8bb9-94e1372175c0.jpg?crop=3273%2C2182%2C430%2C55",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
             "publicationName": "TIMES",
             "publishedTime": "2017-10-30T00:01:00.000Z",
             "headline":
@@ -596,7 +1199,7 @@
             "__typename": "Article"
           },
           {
-            "summary": [
+            "shortSummary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -605,7 +1208,51 @@
                     "name": "text",
                     "attributes": {
                       "value":
-                        "The estimated lifetime cost to operate and support the world\u2019s most expensive warplane has risen by almost a quarter in four years, a US spending"
+                        "The estimated lifetime cost to operate and support the world\u2019s most expensive warplane has risen by almost a quarter in four years, a US spending watchdog has found."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "The figures on the US fleet of F-35 Lighting II, from"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "longSummary": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "The estimated lifetime cost to operate and support the world\u2019s most expensive warplane has risen by almost a quarter in four years, a US spending watchdog has found."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "The figures on the US fleet of F-35 Lighting II, from the Government Accountability Office (GAO) in the United States, were released on Thursday, barely a week after a British defence minister"
                     },
                     "children": []
                   }
@@ -614,15 +1261,6 @@
             ],
             "id": "47b13560-bb54-11e7-85ff-fb955b2fbca8",
             "label": "video",
-            "leadAsset": {
-              "title": "",
-              "crop": {
-                "url":
-                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe15fa92e-bb47-11e7-b7b5-90f864fcf112.jpg?crop=5076%2C3384%2C0%2C0",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
             "publicationName": "TIMES",
             "publishedTime": "2017-10-27T23:01:00.000Z",
             "headline": "New warplane costs $1\u00a0trillion to operate",
@@ -631,7 +1269,7 @@
             "__typename": "Article"
           },
           {
-            "summary": [
+            "shortSummary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -640,7 +1278,90 @@
                     "name": "text",
                     "attributes": {
                       "value":
-                        "Military chiefs must find an extra \u00a3300 million in savings this year to cover a rise in the cost of Britain\u2019s replacement fleet of Trident"
+                        "Military chiefs must find an extra \u00a3300 million in savings this year to cover a rise in the cost of Britain\u2019s replacement fleet of Trident submarines, "
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "italic",
+                    "attributes": {},
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "The Times "
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "can reveal."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "The army is set to take a hit, with commanders"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "longSummary": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Military chiefs must find an extra \u00a3300 million in savings this year to cover a rise in the cost of Britain\u2019s replacement fleet of Trident submarines, "
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "italic",
+                    "attributes": {},
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "The Times "
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "can reveal."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "The army is set to take a hit, with commanders ordered to make at least \u00a3100 million of efficiency savings on top of hundreds of millions of pounds that have already been squeezed out of"
                     },
                     "children": []
                   }
@@ -649,15 +1370,6 @@
             ],
             "id": "04f41572-ba81-11e7-85ff-fb955b2fbca8",
             "label": "",
-            "leadAsset": {
-              "title": "Defence Secretary visit to Faslane",
-              "crop": {
-                "url":
-                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe4a27532-ba78-11e7-85ff-fb955b2fbca8.jpg?crop=3495%2C2330%2C0%2C0",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
             "publicationName": "TIMES",
             "publishedTime": "2017-10-26T23:01:00.000Z",
             "headline": "Forces must find \u00a3300m for rising Trident costs",
@@ -666,7 +1378,7 @@
             "__typename": "Article"
           },
           {
-            "summary": [
+            "shortSummary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -688,7 +1400,52 @@
                   {
                     "name": "text",
                     "attributes": {
-                      "value": "Military chiefs met yesterday to"
+                      "value":
+                        "Military chiefs met yesterday to discuss a new round of cuts as they grapple with a gap in funding of \u00a320"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "longSummary": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Britain is considering selling frontline warships and has axed two mine-hunting vessels amid a funding crisis."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Military chiefs met yesterday to discuss a new round of cuts as they grapple with a gap in funding of \u00a320 billion to \u00a330 billion over the next decade."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Officials are reported to have discreetly advised the navies of Brazil and Chile that up to five"
                     },
                     "children": []
                   }
@@ -697,15 +1454,6 @@
             ],
             "id": "9360098e-b9c7-11e7-b7b5-90f864fcf112",
             "label": "",
-            "leadAsset": {
-              "title": "",
-              "crop": {
-                "url":
-                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa86af5e8-b9c5-11e7-85ff-fb955b2fbca8.jpg?crop=5616%2C3744%2C0%2C0",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
             "publicationName": "TIMES",
             "publishedTime": "2017-10-25T23:01:00.000Z",
             "headline": "Britain mulls warships sale as military cuts deepen",
@@ -714,7 +1462,7 @@
             "__typename": "Article"
           },
           {
-            "summary": [
+            "shortSummary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -736,7 +1484,38 @@
                   {
                     "name": "text",
                     "attributes": {
-                      "value": "He"
+                      "value":
+                        "Britain is pushing for a multibillion-pound contract with Saudi Arabia for"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "longSummary": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Criticism of Saudi Arabia by MPs is not helping British arms sales to the kingdom, Sir Michael Fallon, the defence secretary, said yesterday."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Britain is pushing for a multibillion-pound contract with Saudi Arabia for Eurofighter Typhoon jets, which would help to secure jobs at BAE Systems, one of the manufacturers of the aircraft. Sir Michael said that he had"
                     },
                     "children": []
                   }
@@ -745,15 +1524,6 @@
             ],
             "id": "0c95a3f6-b9c6-11e7-b7b5-90f864fcf112",
             "label": "",
-            "leadAsset": {
-              "title": "BAE Systems jobs",
-              "crop": {
-                "url":
-                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4321de8c-b9c4-11e7-85ff-fb955b2fbca8.jpg?crop=3499%2C2333%2C0%2C0",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
             "publicationName": "TIMES",
             "publishedTime": "2017-10-25T23:01:00.000Z",
             "headline": "\u2018MP criticism could harm arms deal\u2019",
@@ -762,7 +1532,7 @@
             "__typename": "Article"
           },
           {
-            "summary": [
+            "shortSummary": [
               {
                 "name": "paragraph",
                 "attributes": {},
@@ -784,7 +1554,51 @@
                   {
                     "name": "text",
                     "attributes": {
-                      "value": "Colonel"
+                      "value":
+                        "Colonel Dan Sullivan said that a possible cut of 1,000 Royal Marines and the loss"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "longSummary": [
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Senior US military officers are warning against cuts to the Royal Marines, with one Marine colonel saying that it would be very damaging."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value":
+                        "Colonel Dan Sullivan said that a possible cut of 1,000 Royal Marines and the loss of two amphibious assault ships would change the relationship between the US Marine Corps (USMC) and its British counterpart."
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "\u201cMy message is"
                     },
                     "children": []
                   }
@@ -793,16 +1607,6 @@
             ],
             "id": "3f434bca-b8f7-11e7-b7b5-90f864fcf112",
             "label": "",
-            "leadAsset": {
-              "title":
-                "Final Preparations Are Made Ahead Of The Opening Ceremony Of The Olympic Games",
-              "crop": {
-                "url":
-                  "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F6c937b1c-b8e4-11e7-b7b5-90f864fcf112.jpg?crop=2877%2C1918%2C0%2C0",
-                "__typename": "Crop"
-              },
-              "__typename": "Image"
-            },
             "publicationName": "TIMES",
             "publishedTime": "2017-10-24T23:01:00.000Z",
             "headline":
