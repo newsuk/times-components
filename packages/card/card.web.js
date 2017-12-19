@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View } from "react-native";
-import ArticleSummary from "@times-components/article-summary";
 import Image from "@times-components/image";
 import Loading from "./card-loading";
 import {
@@ -12,9 +11,9 @@ import {
 
 class CardComponent extends React.Component {
   shouldComponentUpdate(nextProps) {
-    const { image: { uri }, imageSize, isLoading } = this.props;
+    const { image, imageSize, isLoading } = this.props;
     return (
-      uri !== nextProps.image.uri ||
+      (image && image.uri !== nextProps.image.uri) ||
       imageSize !== nextProps.imageSize ||
       isLoading !== nextProps.isLoading
     );
@@ -22,21 +21,17 @@ class CardComponent extends React.Component {
   render() {
     const {
       isLoading,
-      date,
-      headline,
       image,
-      label,
-      publication,
-      style,
-      text,
       imageRatio,
-      imageSize
+      imageSize,
+      showImage,
+      children
     } = this.props;
 
     if (isLoading) {
       return (
         <View>
-          <Loading imageRatio={imageRatio} />
+          <Loading imageRatio={imageRatio} showImage={showImage} />
         </View>
       );
     }
@@ -53,17 +48,9 @@ class CardComponent extends React.Component {
 
     return (
       <View>
-        <CardContainer style={style}>
-          {imageComponent}
-          <SummaryContainer>
-            <ArticleSummary
-              label={label}
-              headline={headline}
-              text={text}
-              date={date}
-              publication={publication}
-            />
-          </SummaryContainer>
+        <CardContainer>
+          {showImage ? imageComponent : null}
+          <SummaryContainer>{children}</SummaryContainer>
         </CardContainer>
       </View>
     );
@@ -72,13 +59,22 @@ class CardComponent extends React.Component {
 
 CardComponent.propTypes = {
   image: PropTypes.shape({ uri: PropTypes.string }),
-  ...ArticleSummary.propTypes
+  imageRatio: PropTypes.number,
+  imageSize: PropTypes.number,
+  showImage: PropTypes.bool,
+  children: PropTypes.node,
+  isLoading: PropTypes.bool
 };
 
 CardComponent.defaultProps = {
   image: {
     uri: ""
-  }
+  },
+  imageRatio: 1,
+  imageSize: 100,
+  showImage: false,
+  children: [],
+  isLoading: false
 };
 
 export default CardComponent;
