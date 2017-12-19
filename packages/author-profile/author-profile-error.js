@@ -52,7 +52,7 @@ const AuthorProfileError = ({ refetch }) => (
     <View style={styles.imageContainer}>
       <Image
         uri="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
-        aspectRatio={0.9090909090909091}
+        aspectRatio={700/770}
       />
     </View>
     <View style={styles.body}>
