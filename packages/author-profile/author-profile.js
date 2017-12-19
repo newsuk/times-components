@@ -46,6 +46,7 @@ const AuthorProfile = ({
         imageRatio={ratioTextToFloat("3:2")}
         articlesLoading
         onTwitterLinkPress={() => {}}
+        refetch={() => {}}
       />
     );
   }
@@ -97,7 +98,7 @@ const AuthorProfile = ({
             biography={biography}
             uri={uri}
             error={articlesError}
-            refect={refetchArticles}
+            refetch={refetchArticles}
             jobTitle={jobTitle}
             twitter={twitter}
             onTwitterLinkPress={onTwitterLinkPress}
