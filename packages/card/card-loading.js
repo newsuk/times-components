@@ -25,7 +25,7 @@ const gradientStyles = StyleSheet.create({
   }
 });
 
-const Loading = ({ aspectRatio }) => {
+const Loading = ({ aspectRatio, showImage }) => {
   const imageComponent = (
     <View style={styles.imageContainer}>
       <Image aspectRatio={aspectRatio} />
@@ -34,7 +34,7 @@ const Loading = ({ aspectRatio }) => {
 
   return (
     <View>
-      {imageComponent}
+      {showImage && imageComponent}
       <View>
         <Gradient style={[gradientStyles.headerContainer]} degrees={264} />
         <Gradient style={[gradientStyles.textContainer]} degrees={267} />
@@ -49,11 +49,13 @@ const Loading = ({ aspectRatio }) => {
 };
 
 Loading.defaultProps = {
-  aspectRatio: 3 / 2
+  aspectRatio: 3 / 2,
+  showImage: false
 };
 
 Loading.propTypes = {
-  aspectRatio: PropTypes.number
+  aspectRatio: PropTypes.number,
+  showImage: PropTypes.bool
 };
 
 export default Loading;
