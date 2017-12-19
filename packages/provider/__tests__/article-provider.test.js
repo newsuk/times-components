@@ -6,7 +6,7 @@ import { MockedProvider } from "@times-components/utils/graphql";
 // eslint-disable-next-line import/no-unresolved
 import { addTypenameToDocument } from "apollo-utilities";
 import { ArticleProvider } from "../provider";
-import { query as articleQuery } from "../article-provider";
+import { query as articleQuery } from "../article";
 import fixture from "../fixtures/article.json";
 
 const mocks = [
