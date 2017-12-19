@@ -44,8 +44,8 @@ const Pagination = ({
   pageSize,
   hideResults
 }) => {
-  const startResult = (page - 1) * pageSize + 1;
   const finalResult = Math.min(count, page * pageSize);
+  const startResult = Math.min(finalResult, (page - 1) * pageSize + 1);
   const message = `Showing ${startResult} - ${finalResult} of ${count} results`;
 
   const prevComponent =
