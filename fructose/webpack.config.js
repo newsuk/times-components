@@ -8,7 +8,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      "react-native": "react-native-web"
+      "react-native": "react-native-web",
+      "@storybook/react-native": "@storybook/react"
     },
     extensions: [".web.js", ".js", ".ios.js", ".android.js"],
     mainFields: ["module", "main"],

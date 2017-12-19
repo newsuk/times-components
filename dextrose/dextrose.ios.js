@@ -5,7 +5,7 @@ const config = {
   automationName: "XCUITest",
   platformName: "iOS",
   deviceName: "iPhone 7",
-  platformVersion: "11.0",
+  platformVersion: "11.2",
   app: path.join(
     __dirname,
     "../ios/build/Build/Products/Debug-iphonesimulator/storybooknative.app"
