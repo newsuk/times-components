@@ -59,4 +59,8 @@ it("emits scroll tracking events for author profile content", () => {
   );
 });
 
+it("scrolls to top when next page is clicked");
+
+it("scrolls to top when prev page is clicked");
+
 test(AuthorProfileContent);
