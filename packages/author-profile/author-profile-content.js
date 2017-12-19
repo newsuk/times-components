@@ -93,8 +93,7 @@ class AuthorProfileContent extends React.Component {
       />
     );
 
-    const renderAuthorHead = () => (
-      <AuthorProfileAuthorHead
+    const renderAuthorHead = <AuthorProfileAuthorHead
         isLoading={isLoading}
         name={name}
         bio={biography}
@@ -102,13 +101,12 @@ class AuthorProfileContent extends React.Component {
         title={jobTitle}
         twitter={twitter}
         onTwitterLinkPress={onTwitterLinkPress}
-      />
-    );
+      />;
 
     if (error) {
       return (
         <View style={styles.errorContainer}>
-          {renderAuthorHead()}
+          {renderAuthorHead}
           <AuthorProfileListingError refetch={refetch} />
         </View>
       );
@@ -159,7 +157,7 @@ class AuthorProfileContent extends React.Component {
         pageSize={pageSize}
         ListHeaderComponent={
           <View>
-            {renderAuthorHead()}
+            {renderAuthorHead}
             {paginationComponent()}
           </View>
         }
