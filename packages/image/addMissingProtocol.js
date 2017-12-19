@@ -1,1 +1,2 @@
-export const addMissingProtocol = uri => (uri.startsWith("//") ? `https:${uri}` : uri);
+export const addMissingProtocol = uri =>
+  uri.startsWith("//") ? `https:${uri}` : uri;

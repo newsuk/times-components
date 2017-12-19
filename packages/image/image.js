@@ -6,13 +6,15 @@ import { activatePreviewImageContextTypes } from "./activatePreviewImage";
 
 class TimesImage extends Component {
   render() {
-    return this.context.previewImageActivated
-      ? <ImageWithPreview {...this.props} />
-      : <ImageWithoutPreview {...this.props} />
+    return this.context.previewImageActivated ? (
+      <ImageWithPreview {...this.props} />
+    ) : (
+      <ImageWithoutPreview {...this.props} />
+    );
   }
 }
 
-TimesImage.contextTypes = activatePreviewImageContextTypes
+TimesImage.contextTypes = activatePreviewImageContextTypes;
 TimesImage.defaultProps = defaultProps;
 TimesImage.propTypes = propTypes;
 
