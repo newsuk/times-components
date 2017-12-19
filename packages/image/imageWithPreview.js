@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { ImageBackground, View } from "react-native"
-import { style } from "./style"
+import { styles } from "./style"
 import { defaultProps, propTypes } from "./image-prop-types";
 import Placeholder from "./placeholder";
 import { addMissingProtocol } from "./addMissingProtocol";
