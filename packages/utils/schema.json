@@ -57,15 +57,27 @@
               "description": "",
               "args": [],
               "type": {
-                "kind": "LIST",
+                "kind": "NON_NULL",
                 "name": null,
-                "ofType": { "kind": "OBJECT", "name": "Sport", "ofType": null }
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Sport",
+                      "ofType": null
+                    }
+                  }
+                }
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "competition",
+              "name": "sportCompetition",
               "description": "",
               "args": [
                 {
@@ -81,7 +93,7 @@
               ],
               "type": {
                 "kind": "OBJECT",
-                "name": "Competition",
+                "name": "SportCompetition",
                 "ofType": null
               },
               "isDeprecated": false,
@@ -109,22 +121,10 @@
           "description": "An author of a piece of writing",
           "fields": [
             {
-              "name": "name",
-              "description": "The name of an author",
+              "name": "articles",
+              "description": "",
               "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "jobTitle",
-              "description": "The job title of an author",
-              "args": [],
-              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "type": { "kind": "OBJECT", "name": "Articles", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -145,6 +145,35 @@
               "deprecationReason": null
             },
             {
+              "name": "jobTitle",
+              "description": "",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "name",
+              "description": "The name of the author",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "hasLeadAssets",
+              "description":
+                "Some authors have poor article lead assets, this flag denotes that the lead assets are useful for presentation purposes",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "Boolean", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "twitter",
               "description":
                 "Twitter handle for an author (can be an empty string)",
@@ -152,49 +181,10 @@
               "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
-            },
-            {
-              "name": "articles",
-              "description": "",
-              "args": [],
-              "type": { "kind": "OBJECT", "name": "Articles", "ofType": null },
-              "isDeprecated": false,
-              "deprecationReason": null
             }
           ],
           "inputFields": null,
           "interfaces": [],
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "SCALAR",
-          "name": "String",
-          "description":
-            "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
-          "fields": null,
-          "inputFields": null,
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "SCALAR",
-          "name": "Markup",
-          "description": "An AST representing cross platform UI",
-          "fields": null,
-          "inputFields": null,
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "SCALAR",
-          "name": "URL",
-          "description": "Represents a URL",
-          "fields": null,
-          "inputFields": null,
-          "interfaces": null,
           "enumValues": null,
           "possibleTypes": null
         },
@@ -436,6 +426,27 @@
           "possibleTypes": null
         },
         {
+          "kind": "SCALAR",
+          "name": "Markup",
+          "description": "An AST representing cross platform UI",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "SCALAR",
+          "name": "String",
+          "description":
+            "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
           "kind": "ENUM",
           "name": "Flag",
           "description": "",
@@ -602,6 +613,16 @@
           "possibleTypes": null
         },
         {
+          "kind": "SCALAR",
+          "name": "URL",
+          "description": "Represents a URL",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
           "kind": "OBJECT",
           "name": "Video",
           "description": "",
@@ -666,6 +687,17 @@
           "possibleTypes": null
         },
         {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "description":
+            "The `Boolean` scalar type represents `true` or `false`.",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
           "kind": "OBJECT",
           "name": "Sport",
           "description": "A sport in the sports video hub",
@@ -686,7 +718,11 @@
               "name": "name",
               "description": "",
               "args": [],
-              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -695,12 +731,20 @@
               "description": "A list of competitions associated to a sport",
               "args": [],
               "type": {
-                "kind": "LIST",
+                "kind": "NON_NULL",
                 "name": null,
                 "ofType": {
-                  "kind": "OBJECT",
-                  "name": "Competition",
-                  "ofType": null
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "SportCompetition",
+                      "ofType": null
+                    }
+                  }
                 }
               },
               "isDeprecated": false,
@@ -714,7 +758,7 @@
         },
         {
           "kind": "OBJECT",
-          "name": "Competition",
+          "name": "SportCompetition",
           "description": "A sport competition in the sports video hub",
           "fields": [
             {
@@ -733,7 +777,11 @@
               "name": "name",
               "description": "",
               "args": [],
-              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -760,12 +808,20 @@
                 "A list of video groupings associated to a sport competition",
               "args": [],
               "type": {
-                "kind": "LIST",
+                "kind": "NON_NULL",
                 "name": null,
                 "ofType": {
-                  "kind": "OBJECT",
-                  "name": "SportVideoGroup",
-                  "ofType": null
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "SportVideoGroup",
+                      "ofType": null
+                    }
+                  }
                 }
               },
               "isDeprecated": false,
@@ -787,22 +843,34 @@
               "name": "name",
               "description": "",
               "args": [],
-              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "videos",
+              "name": "brightcoveVideos",
               "description":
                 "A list of sport videos ordered by time of creation",
               "args": [],
               "type": {
-                "kind": "LIST",
+                "kind": "NON_NULL",
                 "name": null,
                 "ofType": {
-                  "kind": "OBJECT",
-                  "name": "SportVideo",
-                  "ofType": null
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "BrightcoveSportVideo",
+                      "ofType": null
+                    }
+                  }
                 }
               },
               "isDeprecated": false,
@@ -816,15 +884,19 @@
         },
         {
           "kind": "OBJECT",
-          "name": "SportVideo",
+          "name": "BrightcoveSportVideo",
           "description":
             "A video in the sports video hub. Note that some of these videos are only licensed on mobile applications.",
           "fields": [
             {
-              "name": "brightcoveId",
-              "description": "Brightcove identifier of a sport video",
+              "name": "videoId",
+              "description": "",
               "args": [],
-              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -832,7 +904,11 @@
               "name": "title",
               "description": "",
               "args": [],
-              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -845,8 +921,20 @@
               "deprecationReason": null
             },
             {
-              "name": "imageUrl",
-              "description": "Poster image of a sport video",
+              "name": "posterImageUrl",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "URL", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "posterImageOverlayUrl",
+              "description": "",
               "args": [],
               "type": { "kind": "SCALAR", "name": "URL", "ofType": null },
               "isDeprecated": false,
@@ -856,23 +944,39 @@
               "name": "publishedTime",
               "description": "",
               "args": [],
-              "type": { "kind": "SCALAR", "name": "DateTime", "ofType": null },
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "DateTime",
+                  "ofType": null
+                }
+              },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "brightcoveAccountId",
+              "name": "accountId",
               "description": "",
               "args": [],
-              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "brightcovePolicyKey",
+              "name": "policyKey",
               "description": "",
               "args": [],
-              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -1213,17 +1317,6 @@
               "deprecationReason": null
             }
           ],
-          "possibleTypes": null
-        },
-        {
-          "kind": "SCALAR",
-          "name": "Boolean",
-          "description":
-            "The `Boolean` scalar type represents `true` or `false`.",
-          "fields": null,
-          "inputFields": null,
-          "interfaces": null,
-          "enumValues": null,
           "possibleTypes": null
         },
         {
