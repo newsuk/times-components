@@ -93,7 +93,8 @@ class AuthorProfileContent extends React.Component {
       />
     );
 
-    const renderAuthorHead = <AuthorProfileAuthorHead
+    const renderAuthorHead = (
+      <AuthorProfileAuthorHead
         isLoading={isLoading}
         name={name}
         bio={biography}
@@ -101,7 +102,8 @@ class AuthorProfileContent extends React.Component {
         title={jobTitle}
         twitter={twitter}
         onTwitterLinkPress={onTwitterLinkPress}
-      />;
+      />
+    );
 
     if (error) {
       return (

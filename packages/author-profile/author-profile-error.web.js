@@ -95,8 +95,8 @@ const AuthorProfileError = ({ refetch }) => (
     <MessagingContainer>
       <Heading>Something&apos;s gone wrong</Heading>
       <Message>
-        We can&apos;t load the page you have requested. Please check your network
-        connection and retry to continue
+        We can&apos;t load the page you have requested. Please check your
+        network connection and retry to continue
       </Message>
       <ButtonContainer>
         <Button
@@ -110,7 +110,7 @@ const AuthorProfileError = ({ refetch }) => (
     <ImageContainer>
       <Image
         uri="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
-        aspectRatio={700/770}
+        aspectRatio={700 / 770}
       />
     </ImageContainer>
   </ErrorContainer>
