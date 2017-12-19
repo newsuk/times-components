@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.35.0"></a>
+# [0.35.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.34.0...@times-components/author-profile@0.35.0) (2017-12-19)
+
+
+### Features
+
+* scroll to top of page when paging ([1c9b26c](https://github.com/newsuk/times-components/commit/1c9b26c))
+
+
+
+
 <a name="0.34.0"></a>
 # [0.34.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.33.2...@times-components/author-profile@0.34.0) (2017-12-19)
 
