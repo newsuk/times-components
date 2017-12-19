@@ -153,9 +153,15 @@ export default AuthorProfileContent => {
       }
     });
 
-    const component = renderer.create(<AuthorProfile {...p} />);
-
-    expect(component).toMatchSnapshot();
+    // react test renderer would be preferred here but there is a bug
+    // in RNW that throws an exception when rendering Button
+    const wrapper = shallow(<AuthorProfile {...p} />);
+    expect(
+      wrapper
+        .dive()
+        .dive()
+        .dive()
+    ).toMatchSnapshot();
   });
 
   it("adds author profile fields to tracking context", () => {
@@ -421,5 +427,56 @@ export default AuthorProfileContent => {
 
     const component = renderer.create(<AuthorProfileContent {...p} />);
     expect(component.root.findAllByType(AuthorProfileItem)).toHaveLength(1);
+  });
+
+  it("calls refetch when retrying from author error", done => {
+    const wrapper = shallow(
+      <AuthorProfile
+        {...props}
+        author={null}
+        refetch={done}
+        error={{ msg: "It went wrong" }}
+        isLoading={false}
+        slug="deborah-haynes"
+        page={1}
+        pageSize={10}
+      />
+    );
+
+    const authProfileError = wrapper.dive().dive();
+    expect(authProfileError.type().name).toEqual("AuthorProfileError");
+
+    authProfileError
+      .dive()
+      .dive()
+      .find("Button")
+      .simulate("press");
+  });
+
+  it("calls refetch when retrying from articles error", done => {
+    const wrapper = shallow(
+      <AuthorProfileContent
+        count={0}
+        articles={[]}
+        author={authorProfileFixture.data.author}
+        slug="deborah-haynes"
+        page={1}
+        pageSize={3}
+        imageRatio={3 / 2}
+        error={{ msg: "Failed" }}
+        refetch={done}
+        onTwitterLinkPress={() => {}}
+        onArticlePress={() => {}}
+        onViewed={() => {}}
+      />
+    );
+
+    wrapper
+      .dive()
+      .dive()
+      .find("AuthorProfileListingError")
+      .dive()
+      .find("Button")
+      .simulate("press");
   });
 };

@@ -20,7 +20,7 @@ export const CenteredDecorator = storyFn => (
 );
 
 export const BarSpacingDecorator = storyFn => (
-  <View style={{ marginTop: 20 }}>{storyFn()}</View>
+  <View style={{ marginTop: 20, flex: 1 }}>{storyFn()}</View>
 );
 
 export const LateralSpacingDecorator = storyFn => (

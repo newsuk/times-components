@@ -6069,23 +6069,100 @@ exports[`renders profile empty 1`] = `
 `;
 
 exports[`renders profile error 1`] = `
-<View>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+<View
+  style={
+    Object {
+      "flex": 1,
+      "margin": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignSelf": "center",
+        "marginBottom": 20,
+        "marginTop": 20,
+        "width": "90%",
+      }
+    }
   >
-    An error ocurred
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+    <TimesImage
+      aspectRatio={0.9090909090909091}
+      style={Object {}}
+      uri="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "justifyContent": "space-between",
+        "maxWidth": 548,
+      }
+    }
   >
-    {
-  "error": "error"
-}
-  </Text>
+    <View
+      style={
+        Object {
+          "alignSelf": "center",
+          "flex": 1,
+          "justifyContent": "flex-start",
+          "marginLeft": 5,
+          "marginRight": 5,
+          "marginTop": 20,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "alignSelf": "center",
+            "color": "#000000",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 35,
+            "marginBottom": 12,
+            "textAlign": "center",
+          }
+        }
+      >
+        Something's gone wrong
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "alignSelf": "center",
+            "color": "#696969",
+            "fontFamily": "TimesDigitalW04-Regular",
+            "fontSize": 18,
+            "textAlign": "center",
+          }
+        }
+      >
+        We can't load the page you have requested. Please check your network connection and retry to continue
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "justifyContent": "flex-end",
+        }
+      }
+    >
+      <Button
+        accessibilityLabel="Retry"
+        color="#006699"
+        onPress={[Function]}
+        title="Retry"
+      />
+    </View>
+  </View>
 </View>
 `;
 
