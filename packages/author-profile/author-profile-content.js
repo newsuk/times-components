@@ -78,9 +78,31 @@ class AuthorProfileContent extends React.Component {
       twitter,
       uri,
       imageRatio,
+      showImages,
       error,
       refetch
     } = this.props;
+
+    const AuthorHead = (
+      <AuthorProfileAuthorHead
+        isLoading={isLoading}
+        name={name}
+        bio={biography}
+        uri={uri}
+        title={jobTitle}
+        twitter={twitter}
+        onTwitterLinkPress={onTwitterLinkPress}
+      />
+    );
+
+    if (error) {
+      return (
+        <View style={styles.errorContainer}>
+          {AuthorHead}
+          <AuthorProfileListingError refetch={refetch} />
+        </View>
+      );
+    }
 
     const paginationComponent = (hideResults = false) => (
       <AuthorProfilePagination
@@ -104,27 +126,6 @@ class AuthorProfileContent extends React.Component {
         pageSize={pageSize}
       />
     );
-
-    const renderAuthorHead = (
-      <AuthorProfileAuthorHead
-        isLoading={isLoading}
-        name={name}
-        bio={biography}
-        uri={uri}
-        title={jobTitle}
-        twitter={twitter}
-        onTwitterLinkPress={onTwitterLinkPress}
-      />
-    );
-
-    if (error) {
-      return (
-        <View style={styles.errorContainer}>
-          {renderAuthorHead}
-          <AuthorProfileListingError refetch={refetch} />
-        </View>
-      );
-    }
 
     const data = articlesLoading
       ? Array(pageSize)
@@ -157,6 +158,7 @@ class AuthorProfileContent extends React.Component {
                   {...item}
                   imageRatio={imageRatio}
                   imageSize={this.state.width}
+                  showImage={showImages}
                   style={styles.padding}
                   testID={`articleList-${index}`}
                   onPress={e =>
@@ -174,7 +176,15 @@ class AuthorProfileContent extends React.Component {
         pageSize={pageSize}
         ListHeaderComponent={
           <View>
-            {renderAuthorHead}
+            <AuthorProfileAuthorHead
+              isLoading={isLoading}
+              name={name}
+              bio={biography}
+              uri={uri}
+              title={jobTitle}
+              twitter={twitter}
+              onTwitterLinkPress={onTwitterLinkPress}
+            />
             {paginationComponent()}
           </View>
         }
@@ -191,4 +201,5 @@ class AuthorProfileContent extends React.Component {
 
 AuthorProfileContent.propTypes = propTypes;
 AuthorProfileContent.defaultProps = defaultProps;
+
 export default withTrackScrollDepth(AuthorProfileContent);

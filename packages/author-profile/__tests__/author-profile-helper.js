@@ -7,8 +7,8 @@ import renderer from "react-test-renderer";
 import { MockedProvider } from "@times-components/utils/graphql";
 // eslint-disable-next-line import/no-unresolved
 import { addTypenameToDocument } from "apollo-utilities";
-import { query as authorProfileQuery } from "@times-components/provider/author-profile-provider";
-import { query as articleListQuery } from "@times-components/provider/article-list-provider";
+import { query as authorProfileQuery } from "@times-components/provider/author-profile";
+import { query as articleListWithImagesQuery } from "@times-components/provider/author-articles-with-images";
 import set from "lodash.set";
 import cloneDeep from "lodash.clonedeep";
 import AuthorProfile from "../author-profile";
@@ -27,6 +27,15 @@ const props = {
   analyticsStream: () => {}
 };
 
+const makeAuthor = ({ withImages }) => ({
+  data: {
+    author: {
+      ...authorProfileFixture,
+      hasLeadAssets: withImages
+    }
+  }
+});
+
 const mocks = [
   {
     request: {
@@ -35,11 +44,11 @@ const mocks = [
         slug: "deborah-haynes"
       }
     },
-    result: authorProfileFixture
+    result: makeAuthor({ withImages: true })
   },
   {
     request: {
-      query: addTypenameToDocument(articleListQuery),
+      query: addTypenameToDocument(articleListWithImagesQuery),
       variables: {
         slug: "deborah-haynes",
         first: 3,
@@ -51,7 +60,7 @@ const mocks = [
   },
   {
     request: {
-      query: addTypenameToDocument(articleListQuery),
+      query: addTypenameToDocument(articleListWithImagesQuery),
       variables: {
         slug: "deborah-haynes",
         first: 3,
@@ -63,7 +72,7 @@ const mocks = [
   },
   {
     request: {
-      query: addTypenameToDocument(articleListQuery),
+      query: addTypenameToDocument(articleListWithImagesQuery),
       variables: {
         slug: "deborah-haynes",
         first: 3,
@@ -75,7 +84,7 @@ const mocks = [
   },
   {
     request: {
-      query: addTypenameToDocument(articleListQuery),
+      query: addTypenameToDocument(articleListWithImagesQuery),
       variables: {
         slug: "deborah-haynes",
         first: 3,
@@ -116,7 +125,8 @@ export default AuthorProfileContent => {
   it("renders profile loading", () => {
     const p = {
       ...props,
-      ...authorProfileFixture.data.author,
+      ...makeAuthor({ withImages: true }).data.author,
+      showImages: true,
       articlesLoading: true,
       articles: Array(3)
         .fill()
@@ -133,7 +143,6 @@ export default AuthorProfileContent => {
 
   it("renders profile empty", () => {
     const p = Object.assign({}, props, {
-      slug: "deborah-haynes",
       author: null,
       isLoading: false,
       imageRatio: 16 / 9
@@ -204,13 +213,12 @@ export default AuthorProfileContent => {
     const results = pagedResult(0, 3);
     const component = renderer.create(
       <AuthorProfileContent
-        count={10}
+        {...makeAuthor({ withImages: true }).data.author}
         articles={results.data.author.articles.list}
-        author={authorProfileFixture.data.author}
-        slug="deborah-haynes"
         page={1}
         pageSize={3}
         imageRatio={3 / 2}
+        showImages
         onTwitterLinkPress={() => {}}
         onArticlePress={() => {}}
         onViewed={() => {}}
@@ -392,7 +400,8 @@ export default AuthorProfileContent => {
 
     const p = {
       ...props,
-      ...authorProfileFixture.data.author,
+      ...makeAuthor({ withImages: true }),
+      showImages: true,
       articlesLoading: false,
       articles: [
         makeArticleWithSummary("d98c257c-cb16-11e7-b529-95e3fc05f40f", {
