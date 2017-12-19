@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { defaultProps, propTypes } from "./image-prop-types";
-import PropTypes from "prop-types";
 import { ImageWithPreview } from "./imageWithPreview";
 import { ImageWithoutPreview } from "./imageWithoutPreview";
 import { activatePreviewImageContextTypes } from "./activatePreviewImage";
