@@ -12,7 +12,8 @@ const config = {
     "Provider",
     "TrackingPage",
     "TrackingEvent"
-  ]
+  ],
+  breakpoints: [520, 860, 1024, 1182]
 };
 
 module.exports = config;
