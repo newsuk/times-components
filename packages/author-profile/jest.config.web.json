@@ -9,6 +9,8 @@
   },
   "collectCoverageFrom": [
     "**/packages/author-profile/*.js",
+    "!**/packages/author-profile/author-profile-item.js",
+    "!**/packages/author-profile/author-profile-list-provider.js",
     "!**/packages/author-profile/fixture-generator.js",
     "!**/packages/author-profile/*.fructose.*.js",
     "!**/packages/author-profile/*.stories.js",

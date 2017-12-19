@@ -1,12 +1,12 @@
-import articleListFixture from "../fixtures/article-list.json";
+import articleListWithImagesFixture from "../fixtures/article-list-with-images.json";
 
 export default (skip, first) => ({
   data: {
     author: {
-      ...articleListFixture.data.author,
+      ...articleListWithImagesFixture.data.author,
       articles: {
-        ...articleListFixture.data.author.articles,
-        list: articleListFixture.data.author.articles.list
+        ...articleListWithImagesFixture.data.author.articles,
+        list: articleListWithImagesFixture.data.author.articles.list
           .map(el => ({
             ...el,
             publishedTime: new Date(el.publishedTime)

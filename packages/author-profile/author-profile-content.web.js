@@ -151,6 +151,7 @@ class AuthorProfileContent extends Component {
       twitter,
       uri,
       imageRatio,
+      showImages,
       receiveChildList,
       error,
       refetch
@@ -173,6 +174,15 @@ class AuthorProfileContent extends Component {
       />
     );
 
+    const ErrorComponent = (
+      <ContentContainer>
+        {paginationComponent()}
+        <View style={[styles.container, styles.errorContainer]}>
+          <AuthorProfileListingError refetch={refetch} />
+        </View>
+      </ContentContainer>
+    );
+
     const data = (articlesLoading
       ? Array(pageSize)
           .fill()
@@ -183,18 +193,7 @@ class AuthorProfileContent extends Component {
       elementId: `articleList-${page}-${idx}`
     }));
 
-    if (!articlesLoading) receiveChildList(data);
-
-    const renderError = () => (
-      <ContentContainer>
-        {paginationComponent()}
-        <View style={[styles.container, styles.errorContainer]}>
-          <AuthorProfileListingError refetch={refetch} />
-        </View>
-      </ContentContainer>
-    );
-
-    const renderArticles = () => (
+    const Contents = (
       <ContentContainer>
         {paginationComponent()}
         <View style={styles.container}>
@@ -221,6 +220,7 @@ class AuthorProfileContent extends Component {
                             {...article}
                             imageRatio={imageRatio}
                             imageSize={this.getImageSize(article.elementId)}
+                            showImage={showImages}
                             onPress={e => onArticlePress(e, { id, url })}
                           />
                         </Fragment>
@@ -235,6 +235,8 @@ class AuthorProfileContent extends Component {
       </ContentContainer>
     );
 
+    if (!articlesLoading) receiveChildList(data);
+
     return (
       <View>
         <AuthorProfileAuthorHead
@@ -246,7 +248,7 @@ class AuthorProfileContent extends Component {
           twitter={twitter}
           onTwitterLinkPress={onTwitterLinkPress}
         />
-        {error ? renderError() : renderArticles()}
+        {error ? ErrorComponent : Contents}
       </View>
     );
   }
