@@ -231,15 +231,6 @@
     react-treebeard "^2.0.3"
     redux "^3.7.2"
 
-"@times-components/article-summary@0.12.4":
-  version "0.12.4"
-  resolved "https://registry.yarnpkg.com/@times-components/article-summary/-/article-summary-0.12.4.tgz#7efa467f8d4b2a2a0c9cbfbd02f17c9396297204"
-  dependencies:
-    "@times-components/date-publication" "0.7.3"
-    "@times-components/markup" "0.14.4"
-    date-fns "1.28.5"
-    prop-types "15.6.0"
-
 "@times-components/fructose@3.1.8":
   version "3.1.8"
   resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.1.8.tgz#9d7c733c3d20c8e7f284cd4a26c1fd110efd6835"
@@ -264,13 +255,6 @@
     webpack "^3.8.1"
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
-
-"@times-components/markup@0.14.4":
-  version "0.14.4"
-  resolved "https://registry.yarnpkg.com/@times-components/markup/-/markup-0.14.4.tgz#213fe6d3feca1c890b1a65111dd551d7b8333f84"
-  dependencies:
-    "@times-components/ad" "0.6.3"
-    prop-types "15.6.0"
 
 "@types/async@2.0.45":
   version "2.0.45"
