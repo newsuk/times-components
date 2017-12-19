@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders an article-summary component with content 1`] = `
+exports[`renders an article-summary component with a single paragraph 1`] = `
 <View
   style={Object {}}
 >
@@ -18,7 +18,7 @@ exports[`renders an article-summary component with content 1`] = `
       }
     }
   >
-    CAMILLA LONG
+    
   </Text>
   <Text
     accessible={true}
@@ -35,7 +35,7 @@ exports[`renders an article-summary component with content 1`] = `
       }
     }
   >
-    OK, so Putin’s not a lady, but he does have the wildest man‑PMT
+    Top medal for forces dog who took a bite out of the Taliban
   </Text>
   <Text
     accessible={true}
@@ -58,14 +58,7 @@ exports[`renders an article-summary component with content 1`] = `
       ellipsizeMode="tail"
     >
       
-      Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
-      The former punk
+      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
       ...
     </Text>
   </Text>
@@ -84,7 +77,7 @@ exports[`renders an article-summary component with content 1`] = `
     }
     testID="datePublication"
   >
-    Saturday July 01 2017, The Sunday Times
+    Saturday July 01 2017, The Times
   </Text>
 </View>
 `;
@@ -220,6 +213,7 @@ exports[`renders an article-summary component with content including line breaks
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
+       
       Poor old Harriet, Duchess of Sutherland. There she was giddily expecting a
       ...
     </Text>
@@ -317,6 +311,7 @@ exports[`renders an article-summary component with empty content at the end trim
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
+       
       ...
     </Text>
   </Text>
@@ -408,6 +403,96 @@ exports[`renders an article-summary component with headline and no content 1`] =
     testID="datePublication"
   >
     Saturday July 01 2017, The Sunday Times
+  </Text>
+</View>
+`;
+
+exports[`renders an article-summary component with multiple paragraphs 1`] = `
+<View
+  style={Object {}}
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 12,
+        "letterSpacing": 1,
+        "marginBottom": 2,
+      }
+    }
+  >
+    
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 22,
+        "marginBottom": 8,
+      }
+    }
+  >
+    Top medal for forces dog who took a bite out of the Taliban
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "flexWrap": "wrap",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 14,
+        "lineHeight": 20,
+        "marginBottom": 10,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      
+      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+       
+      Mali sniffed out explosives and insurgents during a gunfight that lasted seven and a half hours to help a team of Special Boat Service (SBS) operators hunt down and kill more than a dozen
+      ...
+    </Text>
+  </Text>
+  <Text
+    accessibilityLabel="datePublication"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+      }
+    }
+    testID="datePublication"
+  >
+    Saturday July 01 2017, The Times
   </Text>
 </View>
 `;
