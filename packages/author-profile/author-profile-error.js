@@ -59,7 +59,7 @@ const AuthorProfileError = ({ refetch }) => (
       <View style={styles.messagingContainer}>
         <Text style={styles.heading}>Something&apos;s gone wrong</Text>
         <Text style={styles.message}>
-          We cant load the page you have requested. Please check your network
+          We can&apos;t load the page you have requested. Please check your network
           connection and retry to continue
         </Text>
       </View>

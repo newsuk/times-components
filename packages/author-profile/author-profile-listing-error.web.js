@@ -46,7 +46,7 @@ const AuthorProfileListingError = ({ refetch }) => (
   <ListingError>
     <Heading>Something&apos;s gone wrong</Heading>
     <Message>
-      We cant load the page you have requested. Please check your network
+      We can&apos;t load the page you have requested. Please check your network
       connection and retry to continue
     </Message>
     <ButtonContainer>
