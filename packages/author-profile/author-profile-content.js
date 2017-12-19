@@ -86,8 +86,20 @@ class AuthorProfileContent extends React.Component {
       <AuthorProfilePagination
         count={count}
         hideResults={hideResults}
-        onNext={onNext}
-        onPrev={onPrev}
+        onNext={(...args) => {
+          onNext(...args);
+          this.listRef.scrollToOffset({
+            offset: 0,
+            animated: true
+          });
+        }}
+        onPrev={(...args) => {
+          onPrev(...args);
+          this.listRef.scrollToOffset({
+            offset: 0,
+            animated: true
+          });
+        }}
         page={page}
         pageSize={pageSize}
       />
@@ -130,6 +142,9 @@ class AuthorProfileContent extends React.Component {
 
     return (
       <FlatList
+        ref={list => {
+          this.listRef = list;
+        }}
         testID="scroll-view"
         accessibilityID="scroll-view"
         data={data}

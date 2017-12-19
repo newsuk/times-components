@@ -3903,8 +3903,8 @@ exports[`renders profile content component 1`] = `
     <AuthorProfilePagination
       count={10}
       hideResults={true}
-      onNext={undefined}
-      onPrev={undefined}
+      onNext={[Function]}
+      onPrev={[Function]}
       page={1}
       pageSize={3}
     />
@@ -3923,8 +3923,8 @@ exports[`renders profile content component 1`] = `
       <AuthorProfilePagination
         count={10}
         hideResults={false}
-        onNext={undefined}
-        onPrev={undefined}
+        onNext={[Function]}
+        onPrev={[Function]}
         page={1}
         pageSize={3}
       />
@@ -5772,8 +5772,8 @@ exports[`renders profile empty 1`] = `
     <AuthorProfilePagination
       count={undefined}
       hideResults={true}
-      onNext={undefined}
-      onPrev={undefined}
+      onNext={[Function]}
+      onPrev={[Function]}
       page={undefined}
       pageSize={undefined}
     />
@@ -5792,8 +5792,8 @@ exports[`renders profile empty 1`] = `
       <AuthorProfilePagination
         count={undefined}
         hideResults={false}
-        onNext={undefined}
-        onPrev={undefined}
+        onNext={[Function]}
+        onPrev={[Function]}
         page={undefined}
         pageSize={undefined}
       />
@@ -6173,8 +6173,8 @@ exports[`renders profile loading 1`] = `
     <AuthorProfilePagination
       count={undefined}
       hideResults={true}
-      onNext={undefined}
-      onPrev={undefined}
+      onNext={[Function]}
+      onPrev={[Function]}
       page={undefined}
       pageSize={undefined}
     />
@@ -6223,8 +6223,8 @@ exports[`renders profile loading 1`] = `
       <AuthorProfilePagination
         count={undefined}
         hideResults={false}
-        onNext={undefined}
-        onPrev={undefined}
+        onNext={[Function]}
+        onPrev={[Function]}
         page={undefined}
         pageSize={undefined}
       />

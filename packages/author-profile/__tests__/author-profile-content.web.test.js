@@ -455,3 +455,15 @@ it("emits scroll tracking events for author profile content", () => {
     })
   );
 });
+
+it(
+  "does not scroll up when viewport is showing paging and next page is clicked"
+);
+
+it(
+  "does not scroll up when viewport is showing paging and prev page is clicked"
+);
+
+it("scrolls up when viewport is below paging and next page is clicked");
+
+it("scrolls up when viewport is below paging and prev page is clicked");
