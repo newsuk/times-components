@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Image test on android allows styling 1`] = `
+exports[`ImageWithoutPreview test on ios allows styling 1`] = `
 <View
   aspectRatio={1.5}
   style={
@@ -98,7 +98,7 @@ exports[`Image test on android allows styling 1`] = `
 </View>
 `;
 
-exports[`Image test on android prepends https schema 1`] = `
+exports[`ImageWithoutPreview test on ios prepends https schema 1`] = `
 <View
   aspectRatio={1.5}
   style={Object {}}
@@ -192,7 +192,7 @@ exports[`Image test on android prepends https schema 1`] = `
 </View>
 `;
 
-exports[`Image test on android renders correctly 1`] = `
+exports[`ImageWithoutPreview test on ios renders correctly 1`] = `
 <View
   aspectRatio={1.5}
   style={Object {}}
