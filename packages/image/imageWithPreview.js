@@ -13,16 +13,19 @@ export class ImageWithPreview extends Component {
       isLoaded: false,
       isHighResolutionLoaded: false
     };
+
+    this.handleLoad = this.handleLoad.bind(this);
+    this.handlePreviewLoad = this.handlePreviewLoad.bind(this);
   }
 
-  handleLoad = () => {
+  handleLoad() {
     this.setState({
       isLoaded: true,
       isHighResolutionLoaded: true
     });
   };
 
-  handlePreviewLoad = () => {
+  handlePreviewLoad() {
     this.setState({ isLoaded: true });
   };
 
@@ -33,7 +36,7 @@ export class ImageWithPreview extends Component {
     const uri = addMissingProtocol(dirtyUri);
     const previewUri = this.state.isHighResolutionLoaded
       ? null
-      : uri + "&preview=true"; // TODO: Implement a separate uri for preview
+      : `${uri}&preview=true`; // TODO: Implement a separate uri for preview
 
     const props = {
       style: styles.imageBackground,
