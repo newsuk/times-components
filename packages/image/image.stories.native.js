@@ -9,7 +9,7 @@ const squareUri =
 const SquareImage = props => (
   <Image uri={squareUri} aspectRatio={1 / 1} {...props} />
 );
-const SquareImageWithPreview = activatePreviewImage(SquareImage)
+const SquareImageWithPreview = activatePreviewImage(SquareImage);
 
 storiesOf("Image", module).add("With Preview Image (native only)", () => (
   <SquareImageWithPreview />
