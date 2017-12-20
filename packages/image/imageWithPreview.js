@@ -3,9 +3,9 @@ import { ImageBackground, View } from "react-native";
 import { styles } from "./style";
 import { defaultProps, propTypes } from "./image-prop-types";
 import Placeholder from "./placeholder";
-import { addMissingProtocol } from "./addMissingProtocol";
+import addMissingProtocol from "./addMissingProtocol";
 
-export class ImageWithPreview extends Component {
+export default class ImageWithPreview extends Component {
   constructor(props) {
     super(props);
 
@@ -23,11 +23,11 @@ export class ImageWithPreview extends Component {
       isLoaded: true,
       isHighResolutionLoaded: true
     });
-  };
+  }
 
   handlePreviewLoad() {
     this.setState({ isLoaded: true });
-  };
+  }
 
   render() {
     const { uri: dirtyUri, style, aspectRatio } = this.props;

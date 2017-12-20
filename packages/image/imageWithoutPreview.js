@@ -3,9 +3,9 @@ import { ImageBackground, View } from "react-native";
 import { styles } from "./style";
 import { defaultProps, propTypes } from "./image-prop-types";
 import Placeholder from "./placeholder";
-import { addMissingProtocol } from "./addMissingProtocol";
+import addMissingProtocol from "./addMissingProtocol";
 
-export class ImageWithoutPreview extends Component {
+export default class ImageWithoutPreview extends Component {
   constructor(props) {
     super(props);
 
