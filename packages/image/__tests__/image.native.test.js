@@ -17,7 +17,9 @@ export default () => {
     const ImageWithContext = activatePreviewImage(Image);
     const tree = renderer
       .create(
-        <ImageWithContext uri="http://example.com/image.jpg" aspectRatio={3 / 2}
+        <ImageWithContext
+          uri="http://example.com/image.jpg"
+          aspectRatio={3 / 2}
         />
       )
       .toJSON();
