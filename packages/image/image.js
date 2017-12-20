@@ -1,18 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import { defaultProps, propTypes } from "./image-prop-types";
 import { ImageWithPreview } from "./imageWithPreview";
 import { ImageWithoutPreview } from "./imageWithoutPreview";
 import { activatePreviewImageContextTypes } from "./activatePreviewImage";
 
-class TimesImage extends Component {
-  render() {
-    return this.context.previewImageActivated ? (
-      <ImageWithPreview {...this.props} />
-    ) : (
-      <ImageWithoutPreview {...this.props} />
-    );
-  }
-}
+const TimesImage = (props, context) => (
+  context.previewImageActivated ? (
+    <ImageWithPreview {...props} />
+  ) : (
+      <ImageWithoutPreview {...props} />
+    )
+)
 
 TimesImage.contextTypes = activatePreviewImageContextTypes;
 TimesImage.defaultProps = defaultProps;
