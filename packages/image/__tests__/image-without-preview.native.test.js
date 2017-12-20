@@ -2,7 +2,7 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
-import Image from "../../image/imageWithPreview";
+import Image from "../../image/image-without-preview";
 
 export default () => {
   it("renders correctly", () => {

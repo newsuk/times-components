@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-import imageTests from "../imageWithPreview.native.test";
+import imageTests from "../image-with-preview.native.test";
 
 jest.mock("react-native", () => {
   const reactNative = require.requireActual("react-native");

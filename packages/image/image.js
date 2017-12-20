@@ -1,8 +1,8 @@
 import React from "react";
 import { defaultProps, propTypes } from "./image-prop-types";
-import ImageWithPreview from "./imageWithPreview";
-import ImageWithoutPreview from "./imageWithoutPreview";
-import { activatePreviewImageContextTypes } from "./activatePreviewImage";
+import ImageWithPreview from "./image-with-preview";
+import ImageWithoutPreview from "./image-without-preview";
+import { activatePreviewImageContextTypes } from "./activate-preview-image";
 
 const TimesImage = (props, context) =>
   context.previewImageActivated ? (

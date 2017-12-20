@@ -3,7 +3,7 @@ import { ImageBackground, View } from "react-native";
 import styles from "./style";
 import { defaultProps, propTypes } from "./image-prop-types";
 import Placeholder from "./placeholder";
-import addMissingProtocol from "./addMissingProtocol";
+import addMissingProtocol from "./add-missing-protocol";
 
 export default class ImageWithoutPreview extends Component {
   constructor(props) {

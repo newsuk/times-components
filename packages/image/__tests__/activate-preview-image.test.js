@@ -2,7 +2,7 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
-import { activatePreviewImage } from "../../image/activatePreviewImage";
+import { activatePreviewImage } from "../../image/activate-preview-image";
 
 export default () => {
   it("renders correctly", () => {

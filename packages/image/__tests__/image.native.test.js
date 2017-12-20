@@ -3,7 +3,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import Image from "../../image/image";
-import { activatePreviewImage } from "../activatePreviewImage";
+import { activatePreviewImage } from "../activate-preview-image";
 
 export default () => {
   it("renders ImageWithoutPreview without a context", () => {
