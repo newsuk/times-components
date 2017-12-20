@@ -18,6 +18,9 @@ export const activatePreviewImageContextTypes = {
 };
 
 ActivatePreviewImage.childContextTypes = activatePreviewImageContextTypes;
+ActivatePreviewImage.propTypes = {
+  children: PropTypes.element.isRequired
+}
 
 export const activatePreviewImage = WrappedComponent => props => (
   <ActivatePreviewImage>
