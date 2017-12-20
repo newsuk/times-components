@@ -12,7 +12,7 @@ Enzyme.configure({ adapter: new React16Adapter() });
 
 describe("Date Publication test", () => {
   const props = {
-    date: new Date("2017-07-01T14:32:00.000Z"),
+    date: new Date("2017-07-01T02:35:00.000Z"),
     publication: "TIMES"
   };
 
