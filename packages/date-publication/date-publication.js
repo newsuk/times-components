@@ -7,7 +7,7 @@ const publications = {
 };
 
 const DatePublication = ({ date, publication }) =>
-  `${format(date, "dddd MMMM DD YYYY")}, ${publications[publication]}`;
+  `${format(date, "MMMM DD YYYY, hh:mma")}, ${publications[publication]}`;
 
 DatePublication.propTypes = {
   date: PropTypes.instanceOf(Date).isRequired,

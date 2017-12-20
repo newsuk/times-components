@@ -647,7 +647,7 @@ exports[`Article test on ios renders article no flags 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -1667,7 +1667,7 @@ exports[`Article test on ios renders article no label 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -2544,7 +2544,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -3401,7 +3401,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
               }
             }
           >
-            Friday March 13 2015, The Times
+            March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -4434,7 +4434,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -5324,7 +5324,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -6324,7 +6324,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -7446,7 +7446,7 @@ exports[`Article test on ios renders full article 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
