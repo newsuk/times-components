@@ -403,7 +403,7 @@ exports[`Article test on android renders article no flags 1`] = `
               onLoad={[Function]}
               source={
                 Object {
-                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200&preview=true",
                 }
               }
               style={
@@ -424,56 +424,89 @@ exports[`Article test on android renders article no flags 1`] = `
               }
             />
             <View
-              onLayout={[Function]}
               style={
-                Array [
-                  Object {
-                    "flex": 1,
-                  },
-                  null,
-                ]
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
               }
             >
-              <View
-                style={
+              <Image
+                onLoad={[Function]}
+                source={
                   Object {
-                    "flex": 1,
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
                   }
                 }
+                style={
+                  Array [
+                    Object {
+                      "bottom": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    },
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    },
+                    undefined,
+                  ]
+                }
+              />
+              <View
+                onLayout={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                    },
+                    null,
+                  ]
+                }
               >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#f9f9f9",
-                      "#ededed",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
+                <View
                   style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
+                    Object {
+                      "flex": 1,
+                    }
                   }
-                />
+                >
+                  <BVLinearGradient
+                    colors={
+                      Array [
+                        "#f9f9f9",
+                        "#ededed",
+                      ]
+                    }
+                    end={
+                      Object {
+                        "x": -0.09302964577578221,
+                        "y": 0.11488204504197774,
+                      }
+                    }
+                    locations={
+                      Array [
+                        0,
+                        1,
+                      ]
+                    }
+                    start={
+                      Object {
+                        "x": 1,
+                        "y": 0,
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                      ]
+                    }
+                  />
+                </View>
               </View>
             </View>
           </View>
@@ -1326,7 +1359,7 @@ exports[`Article test on android renders article no label 1`] = `
               onLoad={[Function]}
               source={
                 Object {
-                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200&preview=true",
                 }
               }
               style={
@@ -1347,56 +1380,89 @@ exports[`Article test on android renders article no label 1`] = `
               }
             />
             <View
-              onLayout={[Function]}
               style={
-                Array [
-                  Object {
-                    "flex": 1,
-                  },
-                  null,
-                ]
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
               }
             >
-              <View
-                style={
+              <Image
+                onLoad={[Function]}
+                source={
                   Object {
-                    "flex": 1,
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
                   }
                 }
+                style={
+                  Array [
+                    Object {
+                      "bottom": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    },
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    },
+                    undefined,
+                  ]
+                }
+              />
+              <View
+                onLayout={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                    },
+                    null,
+                  ]
+                }
               >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#f9f9f9",
-                      "#ededed",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
+                <View
                   style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
+                    Object {
+                      "flex": 1,
+                    }
                   }
-                />
+                >
+                  <BVLinearGradient
+                    colors={
+                      Array [
+                        "#f9f9f9",
+                        "#ededed",
+                      ]
+                    }
+                    end={
+                      Object {
+                        "x": -0.09302964577578221,
+                        "y": 0.11488204504197774,
+                      }
+                    }
+                    locations={
+                      Array [
+                        0,
+                        1,
+                      ]
+                    }
+                    start={
+                      Object {
+                        "x": 1,
+                        "y": 0,
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                      ]
+                    }
+                  />
+                </View>
               </View>
             </View>
           </View>
@@ -2351,7 +2417,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               onLoad={[Function]}
               source={
                 Object {
-                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200&preview=true",
                 }
               }
               style={
@@ -2372,56 +2438,89 @@ exports[`Article test on android renders article no label no flags 1`] = `
               }
             />
             <View
-              onLayout={[Function]}
               style={
-                Array [
-                  Object {
-                    "flex": 1,
-                  },
-                  null,
-                ]
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
               }
             >
-              <View
-                style={
+              <Image
+                onLoad={[Function]}
+                source={
                   Object {
-                    "flex": 1,
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
                   }
                 }
+                style={
+                  Array [
+                    Object {
+                      "bottom": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    },
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    },
+                    undefined,
+                  ]
+                }
+              />
+              <View
+                onLayout={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                    },
+                    null,
+                  ]
+                }
               >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#f9f9f9",
-                      "#ededed",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
+                <View
                   style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
+                    Object {
+                      "flex": 1,
+                    }
                   }
-                />
+                >
+                  <BVLinearGradient
+                    colors={
+                      Array [
+                        "#f9f9f9",
+                        "#ededed",
+                      ]
+                    }
+                    end={
+                      Object {
+                        "x": -0.09302964577578221,
+                        "y": 0.11488204504197774,
+                      }
+                    }
+                    locations={
+                      Array [
+                        0,
+                        1,
+                      ]
+                    }
+                    start={
+                      Object {
+                        "x": 1,
+                        "y": 0,
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                      ]
+                    }
+                  />
+                </View>
               </View>
             </View>
           </View>
@@ -3236,7 +3335,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               onLoad={[Function]}
               source={
                 Object {
-                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200&preview=true",
                 }
               }
               style={
@@ -3257,56 +3356,89 @@ exports[`Article test on android renders article no label no flags no standfirst
               }
             />
             <View
-              onLayout={[Function]}
               style={
-                Array [
-                  Object {
-                    "flex": 1,
-                  },
-                  null,
-                ]
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
               }
             >
-              <View
-                style={
+              <Image
+                onLoad={[Function]}
+                source={
                   Object {
-                    "flex": 1,
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
                   }
                 }
+                style={
+                  Array [
+                    Object {
+                      "bottom": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    },
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    },
+                    undefined,
+                  ]
+                }
+              />
+              <View
+                onLayout={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                    },
+                    null,
+                  ]
+                }
               >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#f9f9f9",
-                      "#ededed",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
+                <View
                   style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
+                    Object {
+                      "flex": 1,
+                    }
                   }
-                />
+                >
+                  <BVLinearGradient
+                    colors={
+                      Array [
+                        "#f9f9f9",
+                        "#ededed",
+                      ]
+                    }
+                    end={
+                      Object {
+                        "x": -0.09302964577578221,
+                        "y": 0.11488204504197774,
+                      }
+                    }
+                    locations={
+                      Array [
+                        0,
+                        1,
+                      ]
+                    }
+                    start={
+                      Object {
+                        "x": 1,
+                        "y": 0,
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                      ]
+                    }
+                  />
+                </View>
               </View>
             </View>
           </View>
@@ -4103,7 +4235,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               onLoad={[Function]}
               source={
                 Object {
-                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200&preview=true",
                 }
               }
               style={
@@ -4124,56 +4256,89 @@ exports[`Article test on android renders article no standfirst 1`] = `
               }
             />
             <View
-              onLayout={[Function]}
               style={
-                Array [
-                  Object {
-                    "flex": 1,
-                  },
-                  null,
-                ]
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
               }
             >
-              <View
-                style={
+              <Image
+                onLoad={[Function]}
+                source={
                   Object {
-                    "flex": 1,
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
                   }
                 }
+                style={
+                  Array [
+                    Object {
+                      "bottom": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    },
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    },
+                    undefined,
+                  ]
+                }
+              />
+              <View
+                onLayout={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                    },
+                    null,
+                  ]
+                }
               >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#f9f9f9",
-                      "#ededed",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
+                <View
                   style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
+                    Object {
+                      "flex": 1,
+                    }
                   }
-                />
+                >
+                  <BVLinearGradient
+                    colors={
+                      Array [
+                        "#f9f9f9",
+                        "#ededed",
+                      ]
+                    }
+                    end={
+                      Object {
+                        "x": -0.09302964577578221,
+                        "y": 0.11488204504197774,
+                      }
+                    }
+                    locations={
+                      Array [
+                        0,
+                        1,
+                      ]
+                    }
+                    start={
+                      Object {
+                        "x": 1,
+                        "y": 0,
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                      ]
+                    }
+                  />
+                </View>
               </View>
             </View>
           </View>
@@ -5142,7 +5307,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               onLoad={[Function]}
               source={
                 Object {
-                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200&preview=true",
                 }
               }
               style={
@@ -5163,56 +5328,89 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               }
             />
             <View
-              onLayout={[Function]}
               style={
-                Array [
-                  Object {
-                    "flex": 1,
-                  },
-                  null,
-                ]
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
               }
             >
-              <View
-                style={
+              <Image
+                onLoad={[Function]}
+                source={
                   Object {
-                    "flex": 1,
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
                   }
                 }
+                style={
+                  Array [
+                    Object {
+                      "bottom": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    },
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    },
+                    undefined,
+                  ]
+                }
+              />
+              <View
+                onLayout={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                    },
+                    null,
+                  ]
+                }
               >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#f9f9f9",
-                      "#ededed",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
+                <View
                   style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
+                    Object {
+                      "flex": 1,
+                    }
                   }
-                />
+                >
+                  <BVLinearGradient
+                    colors={
+                      Array [
+                        "#f9f9f9",
+                        "#ededed",
+                      ]
+                    }
+                    end={
+                      Object {
+                        "x": -0.09302964577578221,
+                        "y": 0.11488204504197774,
+                      }
+                    }
+                    locations={
+                      Array [
+                        0,
+                        1,
+                      ]
+                    }
+                    start={
+                      Object {
+                        "x": 1,
+                        "y": 0,
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                      ]
+                    }
+                  />
+                </View>
               </View>
             </View>
           </View>
@@ -6044,7 +6242,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               onLoad={[Function]}
               source={
                 Object {
-                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200&preview=true",
                 }
               }
               style={
@@ -6065,56 +6263,89 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               }
             />
             <View
-              onLayout={[Function]}
               style={
-                Array [
-                  Object {
-                    "flex": 1,
-                  },
-                  null,
-                ]
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
               }
             >
-              <View
-                style={
+              <Image
+                onLoad={[Function]}
+                source={
                   Object {
-                    "flex": 1,
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
                   }
                 }
+                style={
+                  Array [
+                    Object {
+                      "bottom": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    },
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    },
+                    undefined,
+                  ]
+                }
+              />
+              <View
+                onLayout={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                    },
+                    null,
+                  ]
+                }
               >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#f9f9f9",
-                      "#ededed",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
+                <View
                   style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
+                    Object {
+                      "flex": 1,
+                    }
                   }
-                />
+                >
+                  <BVLinearGradient
+                    colors={
+                      Array [
+                        "#f9f9f9",
+                        "#ededed",
+                      ]
+                    }
+                    end={
+                      Object {
+                        "x": -0.09302964577578221,
+                        "y": 0.11488204504197774,
+                      }
+                    }
+                    locations={
+                      Array [
+                        0,
+                        1,
+                      ]
+                    }
+                    start={
+                      Object {
+                        "x": 1,
+                        "y": 0,
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                      ]
+                    }
+                  />
+                </View>
               </View>
             </View>
           </View>
@@ -7120,7 +7351,7 @@ exports[`Article test on android renders full article 1`] = `
               onLoad={[Function]}
               source={
                 Object {
-                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200&preview=true",
                 }
               }
               style={
@@ -7141,56 +7372,89 @@ exports[`Article test on android renders full article 1`] = `
               }
             />
             <View
-              onLayout={[Function]}
               style={
-                Array [
-                  Object {
-                    "flex": 1,
-                  },
-                  null,
-                ]
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
               }
             >
-              <View
-                style={
+              <Image
+                onLoad={[Function]}
+                source={
                   Object {
-                    "flex": 1,
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
                   }
                 }
+                style={
+                  Array [
+                    Object {
+                      "bottom": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    },
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    },
+                    undefined,
+                  ]
+                }
+              />
+              <View
+                onLayout={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                    },
+                    null,
+                  ]
+                }
               >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#f9f9f9",
-                      "#ededed",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
+                <View
                   style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
+                    Object {
+                      "flex": 1,
+                    }
                   }
-                />
+                >
+                  <BVLinearGradient
+                    colors={
+                      Array [
+                        "#f9f9f9",
+                        "#ededed",
+                      ]
+                    }
+                    end={
+                      Object {
+                        "x": -0.09302964577578221,
+                        "y": 0.11488204504197774,
+                      }
+                    }
+                    locations={
+                      Array [
+                        0,
+                        1,
+                      ]
+                    }
+                    start={
+                      Object {
+                        "x": 1,
+                        "y": 0,
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                      ]
+                    }
+                  />
+                </View>
               </View>
             </View>
           </View>
@@ -7657,7 +7921,7 @@ exports[`Article test on android renders full article 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0",
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0&preview=true",
                     }
                   }
                   style={
@@ -7678,56 +7942,89 @@ exports[`Article test on android renders full article 1`] = `
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                      null,
-                    ]
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    }
                   }
                 >
-                  <View
-                    style={
+                  <Image
+                    onLoad={[Function]}
+                    source={
                       Object {
-                        "flex": 1,
+                        "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0",
                       }
                     }
+                    style={
+                      Array [
+                        Object {
+                          "bottom": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                        },
+                        Object {
+                          "height": "100%",
+                          "width": "100%",
+                        },
+                        undefined,
+                      ]
+                    }
+                  />
+                  <View
+                    onLayout={[Function]}
+                    style={
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                        null,
+                      ]
+                    }
                   >
-                    <BVLinearGradient
-                      colors={
-                        Array [
-                          "#f9f9f9",
-                          "#ededed",
-                        ]
-                      }
-                      end={
-                        Object {
-                          "x": -0.09302964577578221,
-                          "y": 0.11488204504197774,
-                        }
-                      }
-                      locations={
-                        Array [
-                          0,
-                          1,
-                        ]
-                      }
-                      start={
-                        Object {
-                          "x": 1,
-                          "y": 0,
-                        }
-                      }
+                    <View
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
-                    />
+                    >
+                      <BVLinearGradient
+                        colors={
+                          Array [
+                            "#f9f9f9",
+                            "#ededed",
+                          ]
+                        }
+                        end={
+                          Object {
+                            "x": -0.09302964577578221,
+                            "y": 0.11488204504197774,
+                          }
+                        }
+                        locations={
+                          Array [
+                            0,
+                            1,
+                          ]
+                        }
+                        start={
+                          Object {
+                            "x": 1,
+                            "y": 0,
+                          }
+                        }
+                        style={
+                          Array [
+                            Object {
+                              "flex": 1,
+                            },
+                          ]
+                        }
+                      />
+                    </View>
                   </View>
                 </View>
               </View>
@@ -7914,7 +8211,7 @@ exports[`Article test on android renders full article 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0",
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0&preview=true",
                     }
                   }
                   style={
@@ -7935,56 +8232,89 @@ exports[`Article test on android renders full article 1`] = `
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                      null,
-                    ]
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    }
                   }
                 >
-                  <View
-                    style={
+                  <Image
+                    onLoad={[Function]}
+                    source={
                       Object {
-                        "flex": 1,
+                        "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0",
                       }
                     }
+                    style={
+                      Array [
+                        Object {
+                          "bottom": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                        },
+                        Object {
+                          "height": "100%",
+                          "width": "100%",
+                        },
+                        undefined,
+                      ]
+                    }
+                  />
+                  <View
+                    onLayout={[Function]}
+                    style={
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                        null,
+                      ]
+                    }
                   >
-                    <BVLinearGradient
-                      colors={
-                        Array [
-                          "#f9f9f9",
-                          "#ededed",
-                        ]
-                      }
-                      end={
-                        Object {
-                          "x": -0.09302964577578221,
-                          "y": 0.11488204504197774,
-                        }
-                      }
-                      locations={
-                        Array [
-                          0,
-                          1,
-                        ]
-                      }
-                      start={
-                        Object {
-                          "x": 1,
-                          "y": 0,
-                        }
-                      }
+                    <View
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
-                    />
+                    >
+                      <BVLinearGradient
+                        colors={
+                          Array [
+                            "#f9f9f9",
+                            "#ededed",
+                          ]
+                        }
+                        end={
+                          Object {
+                            "x": -0.09302964577578221,
+                            "y": 0.11488204504197774,
+                          }
+                        }
+                        locations={
+                          Array [
+                            0,
+                            1,
+                          ]
+                        }
+                        start={
+                          Object {
+                            "x": 1,
+                            "y": 0,
+                          }
+                        }
+                        style={
+                          Array [
+                            Object {
+                              "flex": 1,
+                            },
+                          ]
+                        }
+                      />
+                    </View>
                   </View>
                 </View>
               </View>
