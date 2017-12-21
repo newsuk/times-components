@@ -98,10 +98,9 @@ running `yarn ios`. You will need to terminate the server that is run with
 this as fructose will run its own at the time of testing. As long as you do not
 delete the app, you will only have to build the app once.
 
-If you run `yarn functional-test:ios` in the root directory it will run
-fructose tests for all of the components on an iOS simulator. Similarly running
-`yarn functiona-test:android` and `yarn functiona-test:web` will run for 
-their respective platforms.
+If you run `npm run functional-test:ios` in the root directory it will run
+ fructose tests for all of the components. This will similarly work for android
+ and web.
 
 [Dextrose](https://github.com/newsuk/dextrose) is a visual snapshotting tool designed to make the visual inspection of
  components easier. 
