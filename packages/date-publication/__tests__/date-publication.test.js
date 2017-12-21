@@ -12,7 +12,7 @@ Enzyme.configure({ adapter: new React16Adapter() });
 
 describe("Date Publication test", () => {
   const props = {
-    date: new Date("2017-07-01T14:32:00.000Z"),
+    date: new Date(2017, 6, 1, 2, 35, 0, 0),
     publication: "TIMES"
   };
 
@@ -34,7 +34,9 @@ describe("Date Publication test", () => {
 
   it("date should follow the correct format", () => {
     const component = shallow(<DatePublication {...props} />);
-    expect(component.text()).toContain(format(props.date, "dddd MMMM DD YYYY"));
+    expect(component.text()).toContain(
+      format(props.date, "MMMM DD YYYY, hh:mma")
+    );
   });
 
   it("without providing a publication, The Times will be set as default", () => {
