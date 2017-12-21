@@ -32,8 +32,19 @@ const results = {
 const makeAuthor = ({ withImages }) => ({
   ...authorProfileFixture.data.author,
   hasLeadAssets: withImages,
-  showImages: true
+  showImages: withImages
 });
+
+const authorProfileContentProps = {
+  ...makeAuthor({ withImages: true }),
+  articles: results.data.author.articles.list,
+  page: 1,
+  pageSize: 3,
+  imageRatio: 3 / 2,
+  onTwitterLinkPress: () => {},
+  onArticlePress: () => {},
+  refetch: () => {}
+};
 
 const intersectionObserverInstances = [];
 class FakeIntersectionObserver {
@@ -68,13 +79,8 @@ afterEach(() => {
 it("renders profile articles and invoke callback on article press", done => {
   const component = shallow(
     <AuthorProfileContent
-      {...makeAuthor({ withImages: true })}
-      articles={results.data.author.articles.list}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => done()}
+      {...authorProfileContentProps}
+      onArticlePress={done}
     />
   );
 
@@ -103,17 +109,7 @@ it("renders with an intersection observer which uses the expected options", () =
     observe() {} // eslint-disable-line class-methods-use-this
   };
 
-  mount(
-    <AuthorProfileContent
-      {...makeAuthor({ withImages: true })}
-      articles={results.data.author.articles.list}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
-    />
-  );
+  mount(<AuthorProfileContent {...authorProfileContentProps} />);
 
   expect(optsSpy.mock.calls[1][0]).toMatchSnapshot();
 });
@@ -122,15 +118,7 @@ it("renders a good quality image if it is visible", async () => {
   window.IntersectionObserver = FakeIntersectionObserver;
 
   const component = mount(
-    <AuthorProfileContent
-      {...makeAuthor({ withImages: true })}
-      articles={results.data.author.articles.list}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
-    />
+    <AuthorProfileContent {...authorProfileContentProps} />
   );
 
   // prove the first image starts off as low quality
@@ -165,15 +153,7 @@ it("renders a poor quality image if it is not visible", async () => {
   window.IntersectionObserver = FakeIntersectionObserver;
 
   const component = mount(
-    <AuthorProfileContent
-      {...makeAuthor({ withImages: true })}
-      articles={results.data.author.articles.list}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
-    />
+    <AuthorProfileContent {...authorProfileContentProps} />
   );
 
   const makeEntries = nodes =>
@@ -197,13 +177,8 @@ it("renders a poor quality image if it is not visible", async () => {
 it("renders good quality images if there is no IntersectionObserver", () => {
   const component = mount(
     <AuthorProfileContent
-      {...makeAuthor({ withImage: true })}
+      {...authorProfileContentProps}
       articles={results.data.author.articles.list.slice(0, 2)}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />
   );
 
@@ -240,13 +215,8 @@ it("does not render good quality images if the item is quickly scrolled passed",
 
   const component = mount(
     <AuthorProfileContent
-      {...makeAuthor({ withImages: true })}
+      {...authorProfileContentProps}
       articles={results.data.author.articles.list.slice(0, 5)}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />
   );
 
@@ -278,13 +248,8 @@ it("does no work if there are no pending items", async () => {
 
   mount(
     <AuthorProfileContent
-      {...makeAuthor({ withImages: true })}
+      {...authorProfileContentProps}
       articles={results.data.author.articles.list.slice(0, 5)}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />
   );
 
@@ -321,13 +286,8 @@ it("does not set state after unmounting", async () => {
 
   const component = mount(
     <AuthorProfileContent
-      {...makeAuthor({ withImages: true })}
+      {...authorProfileContentProps}
       articles={results.data.author.articles.list.slice(0, 5)}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />
   );
 
@@ -368,13 +328,8 @@ it("disconnects from the IntersectionObserver when unmounting", async () => {
 
   const component = mount(
     <AuthorProfileContent
-      {...makeAuthor({ withImages: true })}
+      {...authorProfileContentProps}
       articles={results.data.author.articles.list.slice(0, 5)}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />
   );
 
@@ -390,13 +345,8 @@ it("does not throw when unmounting with no IntersectionObserver", async () => {
 
   const component = mount(
     <AuthorProfileContent
-      {...makeAuthor({ withImages: true })}
+      {...authorProfileContentProps}
       articles={results.data.author.articles.list.slice(0, 5)}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />
   );
 
@@ -413,13 +363,8 @@ it("emits scroll tracking events for author profile content", () => {
 
   mount(
     <AuthorProfileContent
-      {...makeAuthor({ withImages: true })}
+      {...authorProfileContentProps}
       articles={pageResults.data.author.articles.list}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />,
     {
       context: {

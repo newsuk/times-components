@@ -5,100 +5,24 @@ import Enzyme, { shallow } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
 import renderer from "react-test-renderer";
 import { MockedProvider } from "@times-components/utils/graphql";
-// eslint-disable-next-line import/no-unresolved
-import { addTypenameToDocument } from "apollo-utilities";
-import { query as authorProfileQuery } from "@times-components/provider/author-profile";
-import { query as articleListWithImagesQuery } from "@times-components/provider/author-articles-with-images";
 import set from "lodash.set";
 import cloneDeep from "lodash.clonedeep";
+import { makeAuthor, makeArticleMocks } from "../fixtures/fixture-generator";
 import AuthorProfile from "../author-profile";
 import AuthorProfileItem from "../author-profile-item";
 import AuthorHead from "../author-profile-author-head";
 import AuthorProfileItemSeparator from "../author-profile-item-separator";
-import authorProfileFixture from "../fixtures/author-profile.json";
 import pagedResult from "./paged-result";
 
 Enzyme.configure({ adapter: new React16Adapter() });
 
-const props = {
+const authorProfileProps = {
   slug: "deborah-haynes",
   onTwitterLinkPress: () => {},
   onArticlePress: () => {},
-  analyticsStream: () => {}
+  analyticsStream: () => {},
+  refetch: () => {}
 };
-
-const makeAuthor = ({ withImages }) => ({
-  data: {
-    author: {
-      ...authorProfileFixture,
-      hasLeadAssets: withImages
-    }
-  }
-});
-
-const mocks = [
-  {
-    request: {
-      query: addTypenameToDocument(authorProfileQuery),
-      variables: {
-        slug: "deborah-haynes"
-      }
-    },
-    result: makeAuthor({ withImages: true })
-  },
-  {
-    request: {
-      query: addTypenameToDocument(articleListWithImagesQuery),
-      variables: {
-        slug: "deborah-haynes",
-        first: 3,
-        skip: 0,
-        imageRatio: "3:2"
-      }
-    },
-    result: pagedResult(0, 3)
-  },
-  {
-    request: {
-      query: addTypenameToDocument(articleListWithImagesQuery),
-      variables: {
-        slug: "deborah-haynes",
-        first: 3,
-        skip: 3,
-        imageRatio: "3:2"
-      }
-    },
-    result: pagedResult(3, 3)
-  },
-  {
-    request: {
-      query: addTypenameToDocument(articleListWithImagesQuery),
-      variables: {
-        slug: "deborah-haynes",
-        first: 3,
-        skip: 6,
-        imageRatio: "3:2"
-      }
-    },
-    result: pagedResult(6, 3)
-  },
-  {
-    request: {
-      query: addTypenameToDocument(articleListWithImagesQuery),
-      variables: {
-        slug: "deborah-haynes",
-        first: 3,
-        skip: 9,
-        imageRatio: "3:2"
-      }
-    },
-    result: pagedResult(9, 3)
-  }
-];
-
-const withMockProvider = child => (
-  <MockedProvider mocks={mocks}>{child}</MockedProvider>
-);
 
 export default AuthorProfileContent => {
   afterEach(() => {
@@ -106,26 +30,26 @@ export default AuthorProfileContent => {
   });
 
   it("renders profile content", () => {
+    const pageSize = 10;
     const component = renderer.create(
-      withMockProvider(
+      <MockedProvider mocks={makeArticleMocks({ withImages: true, pageSize })}>
         <AuthorProfile
-          {...props}
-          author={authorProfileFixture.data.author}
+          {...authorProfileProps}
+          author={makeAuthor({ withImages: true })}
           isLoading={false}
-          slug="deborah-haynes"
           page={1}
-          pageSize={10}
+          pageSize={pageSize}
         />
-      )
+      </MockedProvider>
     );
 
     expect(component).toMatchSnapshot();
   });
 
   it("renders profile loading", () => {
-    const p = {
-      ...props,
-      ...makeAuthor({ withImages: true }).data.author,
+    const props = {
+      ...authorProfileProps,
+      ...makeAuthor({ withImages: true }),
       showImages: true,
       articlesLoading: true,
       articles: Array(3)
@@ -137,34 +61,33 @@ export default AuthorProfileContent => {
       imageRatio: 3 / 2
     };
 
-    const component = renderer.create(<AuthorProfileContent {...p} />);
+    const component = renderer.create(<AuthorProfileContent {...props} />);
+
     expect(component).toMatchSnapshot();
   });
 
   it("renders profile empty", () => {
-    const p = Object.assign({}, props, {
+    const props = {
+      ...authorProfileProps,
       author: null,
-      isLoading: false,
-      imageRatio: 16 / 9
-    });
+      isLoading: false
+    };
 
-    const component = renderer.create(<AuthorProfileContent {...p} />);
+    const component = renderer.create(<AuthorProfileContent {...props} />);
 
     expect(component).toMatchSnapshot();
   });
 
   it("renders profile error", () => {
-    const p = Object.assign({}, props, {
-      slug: "deborah-haynes",
-      author: null,
-      error: {
-        error: "error"
-      }
-    });
+    const props = {
+      ...authorProfileProps,
+      error: new Error("broken")
+    };
 
     // react test renderer would be preferred here but there is a bug
     // in RNW that throws an exception when rendering Button
-    const wrapper = shallow(<AuthorProfile {...p} />);
+    const wrapper = shallow(<AuthorProfile {...props} />);
+
     expect(
       wrapper
         .dive()
@@ -175,20 +98,18 @@ export default AuthorProfileContent => {
 
   it("adds author profile fields to tracking context", () => {
     const reporter = jest.fn();
+
     renderer.create(
-      withMockProvider(
+      <MockedProvider mocks={makeArticleMocks()}>
         <AuthorProfile
-          {...props}
-          author={authorProfileFixture.data.author}
+          {...authorProfileProps}
+          author={makeAuthor()}
           isLoading={false}
-          slug="deborah-haynes"
           page={1}
           pageSize={10}
-          onTwitterLinkPress={() => {}}
-          onArticlePress={() => {}}
           analyticsStream={reporter}
         />
-      )
+      </MockedProvider>
     );
 
     expect(reporter).toHaveBeenCalledWith(
@@ -213,15 +134,13 @@ export default AuthorProfileContent => {
     const results = pagedResult(0, 3);
     const component = renderer.create(
       <AuthorProfileContent
-        {...makeAuthor({ withImages: true }).data.author}
+        {...makeAuthor({ withImages: true })}
         articles={results.data.author.articles.list}
         page={1}
         pageSize={3}
         imageRatio={3 / 2}
         showImages
-        onTwitterLinkPress={() => {}}
-        onArticlePress={() => {}}
-        onViewed={() => {}}
+        {...authorProfileProps}
       />
     );
 
@@ -268,10 +187,7 @@ export default AuthorProfileContent => {
 
   it("renders the author head", () => {
     const component = renderer.create(
-      <AuthorHead
-        {...authorProfileFixture.data.author}
-        onTwitterLinkPress={() => {}}
-      />
+      <AuthorHead {...makeAuthor()} onTwitterLinkPress={() => {}} />
     );
 
     expect(component).toMatchSnapshot();
@@ -279,10 +195,7 @@ export default AuthorProfileContent => {
 
   it("does not re-render the author head if the name changes", () => {
     const el = shallow(
-      <AuthorHead
-        {...authorProfileFixture.data.author}
-        onTwitterLinkPress={() => {}}
-      />
+      <AuthorHead {...makeAuthor()} onTwitterLinkPress={() => {}} />
     );
 
     el.setProps({
@@ -301,10 +214,7 @@ export default AuthorProfileContent => {
 
   it("does re-render the author head if the loading state changes", () => {
     const el = shallow(
-      <AuthorHead
-        {...authorProfileFixture.data.author}
-        onTwitterLinkPress={() => {}}
-      />
+      <AuthorHead {...makeAuthor()} onTwitterLinkPress={() => {}} />
     );
 
     el.setProps({
@@ -324,19 +234,22 @@ export default AuthorProfileContent => {
 
   it("tracks page view", () => {
     const stream = jest.fn();
+    const pageSize = 10;
+    const withImages = true;
+
     renderer.create(
-      withMockProvider(
+      <MockedProvider mocks={makeArticleMocks({ pageSize, withImages })}>
         <AuthorProfile
-          {...props}
-          author={authorProfileFixture.data.author}
+          {...authorProfileProps}
+          author={makeAuthor({ withImages })}
           isLoading={false}
-          slug="deborah-haynes"
           page={1}
-          pageSize={10}
+          pageSize={pageSize}
           analyticsStream={stream}
         />
-      )
+      </MockedProvider>
     );
+
     expect(stream).toHaveBeenCalledWith({
       object: "AuthorProfile",
       component: "Page",
@@ -399,7 +312,7 @@ export default AuthorProfileContent => {
     });
 
     const p = {
-      ...props,
+      ...authorProfileProps,
       ...makeAuthor({ withImages: true }),
       showImages: true,
       articlesLoading: false,
@@ -441,7 +354,7 @@ export default AuthorProfileContent => {
   it("calls refetch when retrying from author error", done => {
     const wrapper = shallow(
       <AuthorProfile
-        {...props}
+        {...authorProfileProps}
         author={null}
         refetch={done}
         error={{ msg: "It went wrong" }}
@@ -467,7 +380,7 @@ export default AuthorProfileContent => {
       <AuthorProfileContent
         count={0}
         articles={[]}
-        author={authorProfileFixture.data.author}
+        author={makeAuthor()}
         slug="deborah-haynes"
         page={1}
         pageSize={3}
