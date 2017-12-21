@@ -29,12 +29,13 @@ export default AuthorProfileContent => {
     jest.restoreAllMocks();
   });
 
-  it("renders profile content", () => {
-    const pageSize = 10;
+  it("renders profile", () => {
+    const pageSize = 3;
     const component = renderer.create(
       <MockedProvider mocks={makeArticleMocks({ withImages: true, pageSize })}>
         <AuthorProfile
-          {...authorProfileProps}
+          slug={authorProfileProps.slug}
+          analyticsStream={() => {}}
           author={makeAuthor({ withImages: true })}
           isLoading={false}
           page={1}
@@ -47,9 +48,88 @@ export default AuthorProfileContent => {
   });
 
   it("renders profile loading", () => {
+    const pageSize = 3;
+    const component = renderer.create(
+      <MockedProvider mocks={makeArticleMocks({ withImages: true, pageSize })}>
+        <AuthorProfile
+          {...authorProfileProps}
+          isLoading
+          page={1}
+          pageSize={pageSize}
+        />
+      </MockedProvider>
+    );
+
+    expect(component).toMatchSnapshot();
+  });
+
+  it("renders with no author", () => {
+    const pageSize = 3;
+    const component = renderer.create(
+      <MockedProvider mocks={makeArticleMocks({ withImages: false, pageSize })}>
+        <AuthorProfile
+          {...authorProfileProps}
+          isLoading={false}
+          page={1}
+          pageSize={pageSize}
+        />
+      </MockedProvider>
+    );
+
+    expect(component).toMatchSnapshot();
+  });
+
+  it("adds author profile fields to tracking context", () => {
+    const reporter = jest.fn();
+    const pageSize = 3;
+
+    renderer.create(
+      <MockedProvider mocks={makeArticleMocks()}>
+        <AuthorProfile
+          {...authorProfileProps}
+          author={makeAuthor()}
+          isLoading={false}
+          page={1}
+          pageSize={pageSize}
+          analyticsStream={reporter}
+        />
+      </MockedProvider>
+    );
+
+    expect(reporter).toHaveBeenCalledWith(
+      expect.objectContaining({
+        object: "AuthorProfile",
+        attrs: expect.objectContaining({
+          authorName: "Deborah Haynes",
+          page: 1,
+          pageSize
+        })
+      })
+    );
+  });
+
+  it("renders profile content component", () => {
+    const pageSize = 3;
+    const results = pagedResult(0, pageSize);
+    const component = renderer.create(
+      <AuthorProfileContent
+        {...makeAuthor({ withImages: true })}
+        articles={results.data.author.articles.list}
+        page={1}
+        pageSize={pageSize}
+        imageRatio={3 / 2}
+        showImages
+        {...authorProfileProps}
+      />
+    );
+
+    expect(component).toMatchSnapshot();
+  });
+
+  it("renders profile content loading", () => {
     const props = {
       ...authorProfileProps,
-      ...makeAuthor({ withImages: true }),
+      isLoading: true,
       showImages: true,
       articlesLoading: true,
       articles: Array(3)
@@ -66,7 +146,7 @@ export default AuthorProfileContent => {
     expect(component).toMatchSnapshot();
   });
 
-  it("renders profile empty", () => {
+  it("renders profile content empty", () => {
     const props = {
       ...authorProfileProps,
       author: null,
@@ -74,75 +154,6 @@ export default AuthorProfileContent => {
     };
 
     const component = renderer.create(<AuthorProfileContent {...props} />);
-
-    expect(component).toMatchSnapshot();
-  });
-
-  it("renders profile error", () => {
-    const props = {
-      ...authorProfileProps,
-      error: new Error("broken")
-    };
-
-    // react test renderer would be preferred here but there is a bug
-    // in RNW that throws an exception when rendering Button
-    const wrapper = shallow(<AuthorProfile {...props} />);
-
-    expect(
-      wrapper
-        .dive()
-        .dive()
-        .dive()
-    ).toMatchSnapshot();
-  });
-
-  it("adds author profile fields to tracking context", () => {
-    const reporter = jest.fn();
-
-    renderer.create(
-      <MockedProvider mocks={makeArticleMocks()}>
-        <AuthorProfile
-          {...authorProfileProps}
-          author={makeAuthor()}
-          isLoading={false}
-          page={1}
-          pageSize={10}
-          analyticsStream={reporter}
-        />
-      </MockedProvider>
-    );
-
-    expect(reporter).toHaveBeenCalledWith(
-      expect.objectContaining({
-        object: "AuthorProfile",
-        attrs: expect.objectContaining({
-          authorName: "Deborah Haynes",
-          page: 1,
-          pageSize: 10
-        })
-      })
-    );
-  });
-
-  it("renders profile separator", () => {
-    const component = renderer.create(<AuthorProfileItemSeparator />);
-
-    expect(component).toMatchSnapshot();
-  });
-
-  it("renders profile content component", () => {
-    const results = pagedResult(0, 3);
-    const component = renderer.create(
-      <AuthorProfileContent
-        {...makeAuthor({ withImages: true })}
-        articles={results.data.author.articles.list}
-        page={1}
-        pageSize={3}
-        imageRatio={3 / 2}
-        showImages
-        {...authorProfileProps}
-      />
-    );
 
     expect(component).toMatchSnapshot();
   });
@@ -183,107 +194,6 @@ export default AuthorProfileContent => {
     );
 
     expect(component).toMatchSnapshot();
-  });
-
-  it("renders the author head", () => {
-    const component = renderer.create(
-      <AuthorHead {...makeAuthor()} onTwitterLinkPress={() => {}} />
-    );
-
-    expect(component).toMatchSnapshot();
-  });
-
-  it("does not re-render the author head if the name changes", () => {
-    const el = shallow(
-      <AuthorHead {...makeAuthor()} onTwitterLinkPress={() => {}} />
-    );
-
-    el.setProps({
-      name: "second name"
-    });
-
-    expect(
-      el
-        .dive()
-        .dive()
-        .find("AuthorName")
-        .dive()
-        .find({ testID: "author-name" })
-    ).toMatchSnapshot();
-  });
-
-  it("does re-render the author head if the loading state changes", () => {
-    const el = shallow(
-      <AuthorHead {...makeAuthor()} onTwitterLinkPress={() => {}} />
-    );
-
-    el.setProps({
-      name: "second name",
-      isLoading: false
-    });
-
-    expect(
-      el
-        .dive()
-        .dive()
-        .find("AuthorName")
-        .dive()
-        .find({ testID: "author-name" })
-    ).toMatchSnapshot();
-  });
-
-  it("tracks page view", () => {
-    const stream = jest.fn();
-    const pageSize = 10;
-    const withImages = true;
-
-    renderer.create(
-      <MockedProvider mocks={makeArticleMocks({ pageSize, withImages })}>
-        <AuthorProfile
-          {...authorProfileProps}
-          author={makeAuthor({ withImages })}
-          isLoading={false}
-          page={1}
-          pageSize={pageSize}
-          analyticsStream={stream}
-        />
-      </MockedProvider>
-    );
-
-    expect(stream).toHaveBeenCalledWith({
-      object: "AuthorProfile",
-      component: "Page",
-      action: "Viewed",
-      attrs: expect.objectContaining({
-        authorName: "Deborah Haynes",
-        articlesCount: 20,
-        page: 1,
-        pageSize: 10
-      })
-    });
-  });
-
-  it("tracks author profile item interactions", () => {
-    const item = pagedResult(0, 1).data.author.articles.list[0];
-    const stream = jest.fn();
-    const component = shallow(<AuthorProfileItem {...item} />, {
-      context: { tracking: { analytics: stream } }
-    });
-
-    component
-      .dive()
-      .find("Link")
-      .simulate("press");
-
-    expect(stream).toHaveBeenCalledWith({
-      component: "AuthorProfileItem",
-      action: "Pressed",
-      attrs: {
-        articleId: "d98c257c-cb16-11e7-b529-95e3fc05f40f",
-        articleHeadline:
-          "Top medal for forces dog who took a bite out of the Taliban"
-      }
-    });
   });
 
   it("removes profile items that fail to render", () => {
@@ -351,17 +261,124 @@ export default AuthorProfileContent => {
     expect(component.root.findAllByType(AuthorProfileItem)).toHaveLength(1);
   });
 
+  it("renders profile separator", () => {
+    const component = renderer.create(<AuthorProfileItemSeparator />);
+
+    expect(component).toMatchSnapshot();
+  });
+
+  it("renders the author head", () => {
+    const component = renderer.create(
+      <AuthorHead {...makeAuthor()} onTwitterLinkPress={() => {}} />
+    );
+
+    expect(component).toMatchSnapshot();
+  });
+
+  it("does not re-render the author head if the name changes", () => {
+    const el = shallow(
+      <AuthorHead {...makeAuthor()} onTwitterLinkPress={() => {}} />
+    );
+
+    el.setProps({
+      name: "second name"
+    });
+
+    expect(
+      el
+        .dive()
+        .dive()
+        .find("AuthorName")
+        .dive()
+        .find({ testID: "author-name" })
+    ).toMatchSnapshot();
+  });
+
+  it("does re-render the author head if the loading state changes", () => {
+    const el = shallow(
+      <AuthorHead {...makeAuthor()} onTwitterLinkPress={() => {}} />
+    );
+
+    el.setProps({
+      name: "second name",
+      isLoading: false
+    });
+
+    expect(
+      el
+        .dive()
+        .dive()
+        .find("AuthorName")
+        .dive()
+        .find({ testID: "author-name" })
+    ).toMatchSnapshot();
+  });
+
+  it("tracks page view", () => {
+    const stream = jest.fn();
+    const pageSize = 3;
+    const withImages = true;
+
+    renderer.create(
+      <MockedProvider mocks={makeArticleMocks({ pageSize, withImages })}>
+        <AuthorProfile
+          {...authorProfileProps}
+          author={makeAuthor({ withImages })}
+          isLoading={false}
+          page={1}
+          pageSize={pageSize}
+          analyticsStream={stream}
+        />
+      </MockedProvider>
+    );
+
+    expect(stream).toHaveBeenCalledWith({
+      object: "AuthorProfile",
+      component: "Page",
+      action: "Viewed",
+      attrs: expect.objectContaining({
+        authorName: "Deborah Haynes",
+        articlesCount: 20,
+        page: 1,
+        pageSize
+      })
+    });
+  });
+
+  it("tracks author profile item interactions", () => {
+    const item = pagedResult(0, 1).data.author.articles.list[0];
+    const stream = jest.fn();
+    const component = shallow(<AuthorProfileItem {...item} />, {
+      context: { tracking: { analytics: stream } }
+    });
+
+    component
+      .dive()
+      .find("Link")
+      .simulate("press");
+
+    expect(stream).toHaveBeenCalledWith({
+      component: "AuthorProfileItem",
+      action: "Pressed",
+      attrs: {
+        articleId: "d98c257c-cb16-11e7-b529-95e3fc05f40f",
+        articleHeadline:
+          "Top medal for forces dog who took a bite out of the Taliban"
+      }
+    });
+  });
+
   it("calls refetch when retrying from author error", done => {
     const wrapper = shallow(
       <AuthorProfile
         {...authorProfileProps}
         author={null}
         refetch={done}
-        error={{ msg: "It went wrong" }}
+        error={new Error("It went wrong")}
         isLoading={false}
         slug="deborah-haynes"
         page={1}
-        pageSize={10}
+        pageSize={3}
       />
     );
 
@@ -385,7 +402,7 @@ export default AuthorProfileContent => {
         page={1}
         pageSize={3}
         imageRatio={3 / 2}
-        error={{ msg: "Failed" }}
+        error={new Error("Failed")}
         refetch={done}
         onTwitterLinkPress={() => {}}
         onArticlePress={() => {}}

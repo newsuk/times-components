@@ -3,6 +3,7 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
 import test from "./author-profile-helper";
+import AuthorProfile from "../author-profile";
 import AuthorProfileItem from "../author-profile-item";
 import AuthorProfileContent from "../author-profile-content.web.js";
 import authorProfileFixture from "../fixtures/author-profile.json";
@@ -29,7 +30,7 @@ const results = {
   }
 };
 
-const makeAuthor = ({ withImages }) => ({
+const makeAuthor = ({ withImages } = {}) => ({
   ...authorProfileFixture.data.author,
   hasLeadAssets: withImages,
   showImages: withImages
@@ -38,6 +39,7 @@ const makeAuthor = ({ withImages }) => ({
 const authorProfileContentProps = {
   ...makeAuthor({ withImages: true }),
   articles: results.data.author.articles.list,
+  count: results.data.author.articles.list.length,
   page: 1,
   pageSize: 3,
   imageRatio: 3 / 2,
@@ -74,6 +76,41 @@ class FakeIntersectionObserver {
 afterEach(() => {
   delete window.IntersectionObserver;
   intersectionObserverInstances.splice(0);
+});
+
+it("renders profile error", () => {
+  const props = {
+    slug: "deborah-haynes",
+    analyticsStream: () => {},
+    error: new Error("broken")
+  };
+
+  // react test renderer would be preferred here but there is a bug
+  // in RNW that throws an exception when rendering Button
+  const wrapper = mount(<AuthorProfile {...props} />);
+
+  expect(wrapper.find("AuthorProfileError")).toMatchSnapshot();
+});
+
+it("renders page error", () => {
+  const wrapper = mount(
+    <AuthorProfileContent
+      count={0}
+      articles={[]}
+      author={makeAuthor()}
+      slug="deborah-haynes"
+      page={1}
+      pageSize={3}
+      imageRatio={3 / 2}
+      error={new Error("Failed")}
+      refetch={() => {}}
+      onTwitterLinkPress={() => {}}
+      onArticlePress={() => {}}
+      onViewed={() => {}}
+    />
+  );
+
+  expect(wrapper.find("AuthorProfileListingError")).toMatchSnapshot();
 });
 
 it("renders profile articles and invoke callback on article press", done => {
@@ -396,14 +433,40 @@ it("emits scroll tracking events for author profile content", () => {
   );
 });
 
-it(
-  "does not scroll up when viewport is showing paging and next page is clicked"
-);
+it("scrolls to the top when moving to the previous page", () => {
+  const onScroll = jest.spyOn(window, "scroll");
+  const onPrev = jest.fn();
+  const component = mount(
+    <AuthorProfileContent
+      {...authorProfileContentProps}
+      page={2}
+      onPrev={onPrev}
+    />
+  );
 
-it(
-  "does not scroll up when viewport is showing paging and prev page is clicked"
-);
+  component
+    .find({ href: "?page=1" })
+    .first()
+    .simulate("click");
 
-it("scrolls up when viewport is below paging and next page is clicked");
+  expect(onScroll).toHaveBeenCalledWith({ left: 0, top: 0 });
+});
 
-it("scrolls up when viewport is below paging and prev page is clicked");
+it("scrolls to the top when moving to the next page", () => {
+  const onScroll = jest.spyOn(window, "scroll");
+  const onNext = jest.fn();
+  const component = mount(
+    <AuthorProfileContent
+      {...authorProfileContentProps}
+      page={2}
+      onNext={onNext}
+    />
+  );
+
+  component
+    .find({ href: "?page=3" })
+    .first()
+    .simulate("click");
+
+  expect(onScroll).toHaveBeenCalledWith({ left: 0, top: 0 });
+});
