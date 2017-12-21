@@ -74,10 +74,10 @@ class BrightcoveVideo extends Component {
     this.props.onFinish();
   }
 
-  handleError(err) {
-    this.setState({ error: err });
+  handleError(error) {
+    this.setState({ error });
 
-    this.props.onError(err);
+    this.props.onError(error);
   }
 
   render() {
