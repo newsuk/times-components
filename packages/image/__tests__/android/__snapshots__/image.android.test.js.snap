@@ -1,9 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Image test on android renders ImageWithPreview if feature is activated 1`] = `
+exports[`Image test on android allows styling 1`] = `
 <View
   aspectRatio={1.5}
-  style={Object {}}
+  style={
+    Object {
+      "width": 100,
+    }
+  }
 >
   <View
     style={
@@ -127,7 +131,7 @@ exports[`Image test on android renders ImageWithPreview if feature is activated 
 </View>
 `;
 
-exports[`Image test on android renders ImageWithoutPreview without a context 1`] = `
+exports[`Image test on android prepends https schema 1`] = `
 <View
   aspectRatio={1.5}
   style={Object {}}
@@ -144,7 +148,7 @@ exports[`Image test on android renders ImageWithoutPreview without a context 1`]
       onLoad={[Function]}
       source={
         Object {
-          "uri": "http://example.com/image.jpg",
+          "uri": "https://example.com/image.jpg&preview=true",
         }
       }
       style={
@@ -165,56 +169,216 @@ exports[`Image test on android renders ImageWithoutPreview without a context 1`]
       }
     />
     <View
-      onLayout={[Function]}
+      style={
+        Object {
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    >
+      <Image
+        onLoad={[Function]}
+        source={
+          Object {
+            "uri": "https://example.com/image.jpg",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+            Object {
+              "height": "100%",
+              "width": "100%",
+            },
+            undefined,
+          ]
+        }
+      />
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flex": 1,
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <BVLinearGradient
+            colors={
+              Array [
+                "#f9f9f9",
+                "#ededed",
+              ]
+            }
+            end={
+              Object {
+                "x": -0.09302964577578221,
+                "y": 0.11488204504197774,
+              }
+            }
+            locations={
+              Array [
+                0,
+                1,
+              ]
+            }
+            start={
+              Object {
+                "x": 1,
+                "y": 0,
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "flex": 1,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Image test on android renders correctly 1`] = `
+<View
+  aspectRatio={1.5}
+  style={Object {}}
+>
+  <View
+    style={
+      Object {
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  >
+    <Image
+      onLoad={[Function]}
+      source={
+        Object {
+          "uri": "http://example.com/image.jpg&preview=true",
+        }
+      }
       style={
         Array [
           Object {
-            "flex": 1,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
           },
-          null,
+          Object {
+            "height": "100%",
+            "width": "100%",
+          },
+          undefined,
         ]
       }
+    />
+    <View
+      style={
+        Object {
+          "height": "100%",
+          "width": "100%",
+        }
+      }
     >
-      <View
-        style={
+      <Image
+        onLoad={[Function]}
+        source={
           Object {
-            "flex": 1,
+            "uri": "http://example.com/image.jpg",
           }
         }
+        style={
+          Array [
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+            Object {
+              "height": "100%",
+              "width": "100%",
+            },
+            undefined,
+          ]
+        }
+      />
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flex": 1,
+            },
+            null,
+          ]
+        }
       >
-        <BVLinearGradient
-          colors={
-            Array [
-              "#f9f9f9",
-              "#ededed",
-            ]
-          }
-          end={
-            Object {
-              "x": -0.09302964577578221,
-              "y": 0.11488204504197774,
-            }
-          }
-          locations={
-            Array [
-              0,
-              1,
-            ]
-          }
-          start={
-            Object {
-              "x": 1,
-              "y": 0,
-            }
-          }
+        <View
           style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-            ]
+            Object {
+              "flex": 1,
+            }
           }
-        />
+        >
+          <BVLinearGradient
+            colors={
+              Array [
+                "#f9f9f9",
+                "#ededed",
+              ]
+            }
+            end={
+              Object {
+                "x": -0.09302964577578221,
+                "y": 0.11488204504197774,
+              }
+            }
+            locations={
+              Array [
+                0,
+                1,
+              ]
+            }
+            start={
+              Object {
+                "x": 1,
+                "y": 0,
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "flex": 1,
+                },
+              ]
+            }
+          />
+        </View>
       </View>
     </View>
   </View>

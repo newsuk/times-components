@@ -1,5 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`ActivatePreviewImage test on web passes props to wrapped component correctly 1`] = `"hello world"`;
-
-exports[`ActivatePreviewImage test on web renders correctly 1`] = `null`;

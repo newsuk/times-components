@@ -5,7 +5,7 @@ import { defaultProps, propTypes } from "./image-prop-types";
 import Placeholder from "./placeholder";
 import addMissingProtocol from "./add-missing-protocol";
 
-export default class ImageWithPreview extends Component {
+class TimesImage extends Component {
   constructor(props) {
     super(props);
 
@@ -65,5 +65,7 @@ export default class ImageWithPreview extends Component {
   }
 }
 
-ImageWithPreview.defaultProps = defaultProps;
-ImageWithPreview.propTypes = propTypes;
+TimesImage.defaultProps = defaultProps;
+TimesImage.propTypes = propTypes;
+
+export default TimesImage;

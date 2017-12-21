@@ -2,26 +2,32 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
-import Image from "../../image/image";
-import { activatePreviewImage } from "../activate-preview-image";
+import Image from "../../image";
 
 export default () => {
-  it("renders ImageWithoutPreview without a context", () => {
+  it("renders correctly", () => {
     const tree = renderer
       .create(<Image uri="http://example.com/image.jpg" aspectRatio={3 / 2} />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders ImageWithPreview if feature is activated", () => {
-    const ImageWithContext = activatePreviewImage(Image);
+  it("allows styling", () => {
     const tree = renderer
       .create(
-        <ImageWithContext
+        <Image
+          style={{ width: 100 }}
           uri="http://example.com/image.jpg"
           aspectRatio={3 / 2}
         />
       )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("prepends https schema", () => {
+    const tree = renderer
+      .create(<Image uri="//example.com/image.jpg" aspectRatio={3 / 2} />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
