@@ -94,23 +94,26 @@ class AuthorProfileContent extends React.Component {
       );
     }
 
+    const scrollToTopNextFrame = () => {
+      setTimeout(() => {
+        this.listRef.scrollToOffset({
+          offset: 0,
+          animated: true
+        });
+      }, 0);
+    };
+
     const paginationComponent = (hideResults = false) => (
       <AuthorProfilePagination
         count={count}
         hideResults={hideResults}
         onNext={(...args) => {
           onNext(...args);
-          this.listRef.scrollToOffset({
-            offset: 0,
-            animated: true
-          });
+          scrollToTopNextFrame();
         }}
         onPrev={(...args) => {
           onPrev(...args);
-          this.listRef.scrollToOffset({
-            offset: 0,
-            animated: true
-          });
+          scrollToTopNextFrame();
         }}
         page={page}
         pageSize={pageSize}
