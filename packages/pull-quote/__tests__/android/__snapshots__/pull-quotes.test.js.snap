@@ -134,7 +134,7 @@ exports[`PullQuotes test on android Pull Quotes with a Caption and a Twitter 1`]
     }
   >
     Judge Sapnara
-    , 
+    , 
     <Text
       accessibilityRole="link"
       accessible={true}

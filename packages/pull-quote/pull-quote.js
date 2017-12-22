@@ -5,7 +5,7 @@ import { TextLink } from "@times-components/link";
 import styles from "./styles";
 
 const ShowTwitter = twitter => {
-  if(!twitter) {
+  if (!twitter) {
     return null;
   }
 
@@ -19,11 +19,9 @@ const ShowTwitter = twitter => {
       </TextLink>
     </React.Fragment>
   );
-
-
 };
 
-const {container, quotes, content, caption} = styles;
+const { container, quotes, content, caption } = styles;
 
 const PullQuotes = props => (
   <View style={container}>
