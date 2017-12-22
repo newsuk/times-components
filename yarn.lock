@@ -309,6 +309,13 @@
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/@times-components/jest-configurator/-/jest-configurator-0.0.8.tgz#9494c2609fcca3da09081cb15597a534b550793e"
 
+"@times-components/link@0.12.4":
+  version "0.12.4"
+  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-0.12.4.tgz#eaa7c10f31b71d180da751c9b571b2088a66eea5"
+  dependencies:
+    lodash.pick "4.4.0"
+    prop-types "15.6.0"
+
 "@types/async@2.0.45":
   version "2.0.45"
   resolved "https://registry.yarnpkg.com/@types/async/-/async-2.0.45.tgz#0cfe971d7ed5542695740338e0455c91078a0e83"

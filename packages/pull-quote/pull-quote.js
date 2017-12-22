@@ -5,23 +5,31 @@ import { TextLink } from "@times-components/link";
 import styles from "./styles";
 
 const ShowTwitter = twitter => {
-  if (twitter) {
-    const url = `https://twitter.com/${twitter}`;
-    return [
-      ", ",
+  if(!twitter) {
+    return null;
+  }
+
+  const url = `https://twitter.com/${twitter}`;
+
+  return (
+    <React.Fragment>
+      ,&nbsp;
       <TextLink key={url} style={styles.link} url={url} onPress={() => null}>
         {twitter}
       </TextLink>
-    ];
-  }
-  return null;
+    </React.Fragment>
+  );
+
+
 };
 
+const {container, quotes, content, caption} = styles;
+
 const PullQuotes = props => (
-  <View style={styles.container}>
-    <Text style={[styles.quotes, { color: props.quoteColour }]}>&ldquo;</Text>
-    <Text style={styles.content}>{props.content}</Text>
-    <Text style={[styles.caption, { color: props.captionColour }]}>
+  <View style={container}>
+    <Text style={[quotes, { color: props.quoteColour }]}>&ldquo;</Text>
+    <Text style={content}>{props.content}</Text>
+    <Text style={[caption, { color: props.captionColour }]}>
       {props.caption}
       {ShowTwitter(props.twitter)}
     </Text>

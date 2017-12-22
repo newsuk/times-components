@@ -52,15 +52,15 @@ const ArticleRow = props => {
         </ImageContainer>
       );
     },
-    pullquote(key, attributes) {
+    pullQuote(key, {content, caption: {name, twitter}}) {
       return (
         <PullQuoteContainer key={key}>
           <PullQuoteResp>
             <PullQuote
               key={key}
-              content={attributes.content}
-              caption={attributes.caption.name}
-              twitter={attributes.caption.twitter}
+              content={content}
+              caption={name}
+              twitter={twitter}
             />
           </PullQuoteResp>
         </PullQuoteContainer>
