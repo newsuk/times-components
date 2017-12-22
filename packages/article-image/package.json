@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-image",
-  "version": "0.7.7",
+  "version": "0.7.8",
   "description": "Article Image",
   "main": "article-image",
   "scripts": {
@@ -37,7 +37,7 @@
     "@storybook/react-native": "3.2.18",
     "@times-components/eslint-config-thetimes": "0.0.2",
     "@times-components/jest-configurator": "0.0.13",
-    "@times-components/utils": "0.0.8",
+    "@times-components/utils": "0.0.9",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",
