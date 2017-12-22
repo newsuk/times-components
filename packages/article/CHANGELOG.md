@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.23.0"></a>
+# [0.23.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.21.14...@times-components/article@0.23.0) (2017-12-22)
+
+
+### Features
+
+* support preview images on Android ([#480](https://github.com/newsuk/times-components/issues/480)) ([0840dd8](https://github.com/newsuk/times-components/commit/0840dd8))
+
+
+
+
 <a name="0.22.0"></a>
 # [0.22.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.21.14...@times-components/article@0.22.0) (2017-12-22)
 
