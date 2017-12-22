@@ -33,36 +33,26 @@ class AuthorProfileContent extends React.Component {
     const { width } = Dimensions.get("window");
 
     this.state = {
-      count: props.count,
       width: normaliseWidth(width)
     };
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.count) {
-      this.setState({
-        count: nextProps.count
-      });
-    }
-  }
-
   onViewableItemsChanged(info) {
-    if (info.changed) {
-      info.changed
-        .filter(viewableItem => viewableItem.isViewable)
-        .map(
-          viewableItem =>
-            this.props.onViewed &&
-            this.props.onViewed(viewableItem.item, this.props.articles)
-        );
-    }
+    if (!info.changed.length) return [];
+
+    return info.changed
+      .filter(viewableItem => viewableItem.isViewable)
+      .map(
+        viewableItem =>
+          this.props.onViewed &&
+          this.props.onViewed(viewableItem.item, this.props.articles)
+      );
   }
 
   render() {
-    const { count } = this.state;
-
     const {
+      count,
       isLoading,
       articles,
       articlesLoading,
