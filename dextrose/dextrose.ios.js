@@ -18,7 +18,8 @@ const config = {
     "PaginationTracking",
     "Provider",
     "TrackingPage",
-    "TrackingEvent"
+    "TrackingEvent",
+    "error"
   ]
 };
 
