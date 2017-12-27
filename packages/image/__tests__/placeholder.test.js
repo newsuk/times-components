@@ -1,12 +1,9 @@
 /* eslint-env jest */
 
 import "react-native";
-import Enzyme, { shallow } from "enzyme";
-import React16Adapter from "enzyme-adapter-react-16";
+import { shallow } from "enzyme";
 import React from "react";
 import Placeholder from "../placeholder";
-
-Enzyme.configure({ adapter: new React16Adapter() });
 
 export default () => {
   it("renders loading image when width set", () => {
