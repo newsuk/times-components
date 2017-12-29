@@ -1,5 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`handles refetch error 1`] = `
+Object {
+  "name": "fiona-hamilton",
+  Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"fiona-hamilton\\"})",
+}
+`;
+
+exports[`refetches 1`] = `
+Object {
+  "name": "fiona-hamilton",
+  Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"fiona-hamilton\\"})",
+}
+`;
+
 exports[`returns an error 1`] = `[Error: Network error: some error from the server]`;
 
 exports[`returns config data 1`] = `

@@ -1,5 +1,4 @@
-import React from "react";
-import pick from "lodash.pick";
+import _pick from "lodash.pick";
 import { graphql } from "react-apollo-temp";
 
 const identity = a => a;
@@ -18,52 +17,26 @@ const getQueryVariables = definitions =>
 
 const connectGraphql = (query, propsToVariables = identity) => {
   const variableNames = getQueryVariables(query.definitions);
-
-  class Wrapper extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = props;
-    }
-
-    componentWillReceiveProps(nextProps) {
-      this.setState(() => nextProps);
-    }
-
-    refetch() {
-      this.state.data.retry(); // FIXME: remove this after react-apollo fixes https://github.com/apollographql/apollo-client/issues/2513
-      this.state.data.refetch().then(response => {
-        this.setState(prevState => ({
-          ...prevState,
-          data: {
-            ...prevState.data,
-            ...response.data,
-            error: response.errors
-          }
-        }));
-      });
-    }
-
-    render() {
-      const {
-        data: { error, loading, refetch, ...result },
-        children,
-        ...props
-      } = this.state;
-
-      return children({
-        error,
-        refetch: this.refetch.bind(this),
-        isLoading: loading,
-        ...result,
-        ...props
-      });
-    }
-  }
+  const Wrapper = ({
+    data: { error, loading, refetch, retry, ...result },
+    children,
+    ...props
+  }) =>
+    children({
+      error,
+      refetch: () => {
+        retry(); // FIXME: remove this after react-apollo fixes https://github.com/apollographql/apollo-client/issues/2513
+        refetch();
+      },
+      isLoading: loading,
+      ...result,
+      ...props
+    });
 
   return graphql(query, {
     options(props) {
       return {
-        variables: pick(propsToVariables(props), variableNames)
+        variables: _pick(propsToVariables(props), variableNames)
       };
     }
   })(Wrapper);
