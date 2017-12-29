@@ -10,12 +10,22 @@ class TimesImage extends Component {
     super(props);
 
     this.state = {
-      isLoaded: false
+      isLoaded: false,
+      isHighResolutionLoaded: false
     };
+
     this.handleLoad = this.handleLoad.bind(this);
+    this.handlePreviewLoad = this.handlePreviewLoad.bind(this);
   }
 
   handleLoad() {
+    this.setState({
+      isLoaded: true,
+      isHighResolutionLoaded: true
+    });
+  }
+
+  handlePreviewLoad() {
     this.setState({ isLoaded: true });
   }
 
@@ -24,6 +34,9 @@ class TimesImage extends Component {
     const { isLoaded } = this.state;
     // web handles missing protocols just fine, native doesn't. This evens out support.
     const uri = addMissingProtocol(dirtyUri);
+    const previewUri = this.state.isHighResolutionLoaded
+      ? null
+      : `${uri}&preview=true`; // TODO: Implement a separate uri for preview
 
     const props = {
       style: styles.imageBackground,
@@ -34,10 +47,18 @@ class TimesImage extends Component {
       props.source = { uri };
     }
 
+    const previewProps = {
+      ...props,
+      source: { uri: previewUri },
+      onLoad: this.handlePreviewLoad
+    };
+
     return (
       <View aspectRatio={aspectRatio} style={style}>
-        <ImageBackground {...props}>
-          {isLoaded ? null : <Placeholder />}
+        <ImageBackground {...previewProps}>
+          <ImageBackground {...props}>
+            {isLoaded ? null : <Placeholder />}
+          </ImageBackground>
         </ImageBackground>
       </View>
     );

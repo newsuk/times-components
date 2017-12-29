@@ -3,6 +3,7 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
 import test from "./author-profile-helper";
+import AuthorProfile from "../author-profile";
 import AuthorProfileItem from "../author-profile-item";
 import AuthorProfileContent from "../author-profile-content.web.js";
 import authorProfileFixture from "../fixtures/author-profile.json";
@@ -29,11 +30,23 @@ const results = {
   }
 };
 
-const makeAuthor = ({ withImages }) => ({
+const makeAuthor = ({ withImages } = {}) => ({
   ...authorProfileFixture.data.author,
   hasLeadAssets: withImages,
-  showImages: true
+  showImages: withImages
 });
+
+const authorProfileContentProps = {
+  ...makeAuthor({ withImages: true }),
+  articles: results.data.author.articles.list,
+  count: results.data.author.articles.list.length,
+  page: 1,
+  pageSize: 3,
+  imageRatio: 3 / 2,
+  onTwitterLinkPress: () => {},
+  onArticlePress: () => {},
+  refetch: () => {}
+};
 
 const intersectionObserverInstances = [];
 class FakeIntersectionObserver {
@@ -65,16 +78,46 @@ afterEach(() => {
   intersectionObserverInstances.splice(0);
 });
 
-it("renders profile articles and invoke callback on article press", done => {
-  const component = shallow(
+it("renders profile error", () => {
+  const props = {
+    slug: "deborah-haynes",
+    analyticsStream: () => {},
+    error: new Error("broken")
+  };
+
+  // react test renderer would be preferred here but there is a bug
+  // in RNW that throws an exception when rendering Button
+  const wrapper = mount(<AuthorProfile {...props} />);
+
+  expect(wrapper.find("AuthorProfileError")).toMatchSnapshot();
+});
+
+it("renders page error", () => {
+  const wrapper = mount(
     <AuthorProfileContent
-      {...makeAuthor({ withImages: true })}
-      articles={results.data.author.articles.list}
+      count={0}
+      articles={[]}
+      author={makeAuthor()}
+      slug="deborah-haynes"
       page={1}
       pageSize={3}
       imageRatio={3 / 2}
+      error={new Error("Failed")}
+      refetch={() => {}}
       onTwitterLinkPress={() => {}}
-      onArticlePress={() => done()}
+      onArticlePress={() => {}}
+      onViewed={() => {}}
+    />
+  );
+
+  expect(wrapper.find("AuthorProfileListingError")).toMatchSnapshot();
+});
+
+it("renders profile articles and invoke callback on article press", done => {
+  const component = shallow(
+    <AuthorProfileContent
+      {...authorProfileContentProps}
+      onArticlePress={done}
     />
   );
 
@@ -103,17 +146,7 @@ it("renders with an intersection observer which uses the expected options", () =
     observe() {} // eslint-disable-line class-methods-use-this
   };
 
-  mount(
-    <AuthorProfileContent
-      {...makeAuthor({ withImages: true })}
-      articles={results.data.author.articles.list}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
-    />
-  );
+  mount(<AuthorProfileContent {...authorProfileContentProps} />);
 
   expect(optsSpy.mock.calls[1][0]).toMatchSnapshot();
 });
@@ -122,15 +155,7 @@ it("renders a good quality image if it is visible", async () => {
   window.IntersectionObserver = FakeIntersectionObserver;
 
   const component = mount(
-    <AuthorProfileContent
-      {...makeAuthor({ withImages: true })}
-      articles={results.data.author.articles.list}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
-    />
+    <AuthorProfileContent {...authorProfileContentProps} />
   );
 
   // prove the first image starts off as low quality
@@ -165,15 +190,7 @@ it("renders a poor quality image if it is not visible", async () => {
   window.IntersectionObserver = FakeIntersectionObserver;
 
   const component = mount(
-    <AuthorProfileContent
-      {...makeAuthor({ withImages: true })}
-      articles={results.data.author.articles.list}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
-    />
+    <AuthorProfileContent {...authorProfileContentProps} />
   );
 
   const makeEntries = nodes =>
@@ -197,13 +214,8 @@ it("renders a poor quality image if it is not visible", async () => {
 it("renders good quality images if there is no IntersectionObserver", () => {
   const component = mount(
     <AuthorProfileContent
-      {...makeAuthor({ withImage: true })}
+      {...authorProfileContentProps}
       articles={results.data.author.articles.list.slice(0, 2)}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />
   );
 
@@ -240,13 +252,8 @@ it("does not render good quality images if the item is quickly scrolled passed",
 
   const component = mount(
     <AuthorProfileContent
-      {...makeAuthor({ withImages: true })}
+      {...authorProfileContentProps}
       articles={results.data.author.articles.list.slice(0, 5)}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />
   );
 
@@ -278,13 +285,8 @@ it("does no work if there are no pending items", async () => {
 
   mount(
     <AuthorProfileContent
-      {...makeAuthor({ withImages: true })}
+      {...authorProfileContentProps}
       articles={results.data.author.articles.list.slice(0, 5)}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />
   );
 
@@ -321,13 +323,8 @@ it("does not set state after unmounting", async () => {
 
   const component = mount(
     <AuthorProfileContent
-      {...makeAuthor({ withImages: true })}
+      {...authorProfileContentProps}
       articles={results.data.author.articles.list.slice(0, 5)}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />
   );
 
@@ -368,13 +365,8 @@ it("disconnects from the IntersectionObserver when unmounting", async () => {
 
   const component = mount(
     <AuthorProfileContent
-      {...makeAuthor({ withImages: true })}
+      {...authorProfileContentProps}
       articles={results.data.author.articles.list.slice(0, 5)}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />
   );
 
@@ -390,13 +382,8 @@ it("does not throw when unmounting with no IntersectionObserver", async () => {
 
   const component = mount(
     <AuthorProfileContent
-      {...makeAuthor({ withImages: true })}
+      {...authorProfileContentProps}
       articles={results.data.author.articles.list.slice(0, 5)}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />
   );
 
@@ -413,13 +400,8 @@ it("emits scroll tracking events for author profile content", () => {
 
   mount(
     <AuthorProfileContent
-      {...makeAuthor({ withImages: true })}
+      {...authorProfileContentProps}
       articles={pageResults.data.author.articles.list}
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />,
     {
       context: {
@@ -451,14 +433,40 @@ it("emits scroll tracking events for author profile content", () => {
   );
 });
 
-it(
-  "does not scroll up when viewport is showing paging and next page is clicked"
-);
+it("scrolls to the top when moving to the previous page", () => {
+  const onScroll = jest.spyOn(window, "scroll");
+  const onPrev = jest.fn();
+  const component = mount(
+    <AuthorProfileContent
+      {...authorProfileContentProps}
+      page={2}
+      onPrev={onPrev}
+    />
+  );
 
-it(
-  "does not scroll up when viewport is showing paging and prev page is clicked"
-);
+  component
+    .find({ href: "?page=1" })
+    .first()
+    .simulate("click");
 
-it("scrolls up when viewport is below paging and next page is clicked");
+  expect(onScroll).toHaveBeenCalledWith({ left: 0, top: 0 });
+});
 
-it("scrolls up when viewport is below paging and prev page is clicked");
+it("scrolls to the top when moving to the next page", () => {
+  const onScroll = jest.spyOn(window, "scroll");
+  const onNext = jest.fn();
+  const component = mount(
+    <AuthorProfileContent
+      {...authorProfileContentProps}
+      page={2}
+      onNext={onNext}
+    />
+  );
+
+  component
+    .find({ href: "?page=3" })
+    .first()
+    .simulate("click");
+
+  expect(onScroll).toHaveBeenCalledWith({ left: 0, top: 0 });
+});

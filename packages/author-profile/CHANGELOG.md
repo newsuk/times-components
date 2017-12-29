@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.36.5"></a>
+## [0.36.5](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.36.3...@times-components/author-profile@0.36.5) (2017-12-22)
+
+
+### Bug Fixes
+
+* align author head in IE11 ([#483](https://github.com/newsuk/times-components/issues/483)) ([edbccc5](https://github.com/newsuk/times-components/commit/edbccc5))
+
+
+
+
+<a name="0.36.4"></a>
+## [0.36.4](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.36.3...@times-components/author-profile@0.36.4) (2017-12-22)
+
+
+### Bug Fixes
+
+* align author head in IE11 ([#483](https://github.com/newsuk/times-components/issues/483)) ([edbccc5](https://github.com/newsuk/times-components/commit/edbccc5))
+
+
+
+
+<a name="0.36.3"></a>
+## [0.36.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.36.2...@times-components/author-profile@0.36.3) (2017-12-22)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.36.2"></a>
+## [0.36.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.36.1...@times-components/author-profile@0.36.2) (2017-12-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
 <a name="0.36.1"></a>
 ## [0.36.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.36.0...@times-components/author-profile@0.36.1) (2017-12-19)
 

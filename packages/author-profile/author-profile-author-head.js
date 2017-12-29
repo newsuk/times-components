@@ -42,20 +42,19 @@ class AuthorProfileAuthorHead extends React.Component {
 
   render() {
     const { isLoading, ...props } = this.props;
-    if (isLoading) {
-      return (
-        <View style={styles.wrapper}>
-          <View style={styles.container} />
-          <View style={styles.photoContainer}>
-            <View style={styles.roundImage}>
-              <Gradient style={styles.gradient} />
-            </View>
+
+    if (!isLoading) return <AuthorHead {...props} />;
+
+    return (
+      <View style={styles.wrapper}>
+        <View style={styles.container} />
+        <View style={styles.photoContainer}>
+          <View style={styles.roundImage}>
+            <Gradient style={styles.gradient} />
           </View>
         </View>
-      );
-    }
-
-    return <AuthorHead {...props} />;
+      </View>
+    );
   }
 }
 

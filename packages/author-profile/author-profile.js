@@ -4,21 +4,18 @@ import AuthorHead from "@times-components/author-head";
 import { withPageState } from "@times-components/pagination";
 import { AuthorArticlesWithImagesProvider } from "@times-components/provider";
 import { withTrackingContext } from "@times-components/tracking";
+import { ratioTextToFloat } from "@times-components/utils/strings";
 import get from "lodash.get";
 import AuthorArticlesNoImagesProvider from "./author-profile-list-provider";
 import AuthorProfileError from "./author-profile-error";
 import AuthorProfileContent from "./author-profile-content";
 
-const ratioTextToFloat = s => {
-  if (!s || !s.length) {
-    return 1;
-  }
-
-  const [w, h] = s.split(":");
-  const ratio = parseFloat(w) / parseFloat(h);
-
-  return !Number.isNaN(ratio) ? ratio : 1;
-};
+const castArticle = (page, pageSize) => article => ({
+  ...article,
+  page,
+  pageSize,
+  publishedTime: new Date(article.publishedTime)
+});
 
 const AuthorProfile = ({
   author,
@@ -82,13 +79,7 @@ const AuthorProfile = ({
         variables: { imageRatio = "3:2" }
       }) => {
         const articlesWithPublishTime = get(data, "articles.list", []).map(
-          article => ({
-            ...article,
-            author,
-            page,
-            pageSize,
-            publishedTime: new Date(article.publishedTime)
-          })
+          castArticle(page, pageSize)
         );
 
         return (

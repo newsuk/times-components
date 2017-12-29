@@ -1,154 +1,191 @@
-import Chance from "chance";
+// eslint-disable-next-line import/no-unresolved
+import { addTypenameToDocument } from "apollo-utilities";
+import { query as authorProfileQuery } from "@times-components/provider/author-profile";
+import { query as articleListWithImagesQuery } from "@times-components/provider/author-articles-with-images";
+import { query as articleListNoImagesQuery } from "@times-components/provider/author-articles-no-images";
+import authorProfileFixture from "./author-profile.json";
+import articleListWithImagesFixture from "./article-list-with-images.json";
+import articleListNoImagesFixture from "./article-list-no-images.json";
 
-const chance = new Chance(88888);
+export const makeAuthor = ({ count = 20, withImages } = {}) => {
+  if (withImages) {
+    return {
+      ...authorProfileFixture.data.author,
+      hasLeadAssets: true,
+      articles: {
+        count,
+        __typename: "Articles"
+      }
+    };
+  }
 
-const name = "Deborah Haynes";
-const jobTitle = "Legal Editor";
-const image =
-  "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg";
-const twitter = "jdoe";
+  return {
+    ...authorProfileFixture.data.author,
+    hasLeadAssets: false,
+    articles: {
+      count,
+      __typename: "Articles"
+    }
+  };
+};
 
-const article = () => ({
-  id: chance.guid(),
-  title: chance.sentence(),
-  label: "Science",
-  publicationName: "TIMES",
-  publishedTime: new Date("2015-03-19T23:06:34.000Z"),
-  leadAsset: {
-    title: "British trio stopped on the way to join Isis",
-    crop: {
-      url:
-        "http://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Feb7842ee-748a-11e7-93f8-c74b9ea57adf.jpg?crop=2250%2C1500%2C-0%2C-0&resize=996"
+export const makeArticleList = (
+  { skip, first, withImages },
+  transform = id => id
+) => {
+  const articles = withImages
+    ? articleListWithImagesFixture.data.author.articles
+    : articleListNoImagesFixture.data.author.articles;
+  return {
+    data: {
+      author: {
+        articles: {
+          ...articles,
+          list: transform(articles.list.slice(skip, skip + first)),
+          __typename: "Articles"
+        },
+        __typename: "Author"
+      }
+    }
+  };
+};
+
+const delay = 1000;
+
+const makeAuthorMock = ({ count, withImages, slug }) => ({
+  delay,
+  request: {
+    query: addTypenameToDocument(authorProfileQuery),
+    variables: {
+      slug
     }
   },
-  teaser: [
-    {
-      name: "p",
-      children: [
+  result: {
+    data: {
+      author: {
+        ...makeAuthor({ count, withImages })
+      }
+    }
+  }
+});
+
+const query = ({ withImages }) =>
+  addTypenameToDocument(
+    withImages ? articleListWithImagesQuery : articleListNoImagesQuery
+  );
+
+const makeVariables = ({ withImages, skip, pageSize, slug }) => {
+  if (withImages) {
+    return {
+      slug,
+      first: pageSize,
+      skip,
+      imageRatio: "3:2"
+    };
+  }
+
+  return {
+    slug,
+    first: pageSize,
+    skip,
+    shortSummaryLength: 220,
+    longSummaryLength: 360
+  };
+};
+
+export const makeArticleMocks = (
+  {
+    count = 20,
+    pageSize = 5,
+    withImages = false,
+    slug = "deborah-haynes"
+  } = {},
+  transform
+) => [
+  makeAuthorMock({ count, withImages, slug }),
+  ...new Array(Math.ceil(count / pageSize)).fill(0).map((item, indx) => ({
+    delay,
+    request: {
+      query: query({ withImages }),
+      variables: makeVariables({
+        withImages,
+        skip: indx * pageSize,
+        pageSize,
+        slug
+      })
+    },
+    result: makeArticleList(
+      {
+        skip: indx * pageSize,
+        first: pageSize,
+        withImages
+      },
+      transform
+    )
+  }))
+];
+
+export const makeBrokenMocks = ({ count, withImages, pageSize }) =>
+  makeArticleMocks({ count, withImages, pageSize }, list =>
+    list.map((card, indx) => ({
+      ...card,
+      summary: [
         {
-          name: "text",
-          attributes: {
-            value:
-              "A tip-off from desperate parents led Turkish police to swoop on three British teenagers as they allegedly travelled to join Islamic State, "
-          },
-          children: []
-        },
-        {
-          name: "em",
+          name: "paragraph",
+          attributes: {},
           children: [
             {
               name: "text",
               attributes: {
-                value: "The Times"
+                value: indx === 2 ? "This will error" : "Did not error"
               },
-              children: []
+              children: indx === 2 ? {} : []
             }
-          ],
-          attributes: {}
-        },
-        {
-          name: "text",
-          attributes: {
-            value: " has learnt."
-          },
-          children: []
+          ]
         }
-      ],
-      attributes: {}
-    },
+      ]
+    }))
+  );
+
+export const makeMocksWithPageError = ({ withImages, pageSize }) => {
+  const [author, ...articles] = makeArticleMocks({
+    pageSize,
+    withImages
+  });
+  const [first, , ...last] = articles;
+
+  return [
+    author,
+    first,
     {
-      name: "p",
-      children: [
-        {
-          name: "text",
-          attributes: {
-            value:
-              "Two 17-year-old Muslim schoolboys from the Pakistani community in Brent, northwest London, and a 19-year-old man were intercepted in Istanbul at the weekend and swiftly returned to England. They were questioned by counterterrorism officials last night."
-          },
-          children: []
-        }
-      ],
-      attributes: {}
-    }
-  ]
-});
-
-const biography = [
-  {
-    name: "text",
-    attributes: {
-      value: "Lorem "
+      request: {
+        query: query({ withImages }),
+        variables: makeVariables({ withImages, skip: pageSize, pageSize })
+      },
+      error: new Error("Could not get articles")
     },
-    children: []
-  },
-  {
-    name: "b",
-    attributes: {},
-    children: [
-      {
-        name: "text",
-        attributes: {
-          value: "ipsum"
-        },
-        children: []
-      }
-    ]
-  },
-  {
-    name: "text",
-    attributes: {
-      value: " testbr "
-    },
-    children: []
-  },
-  {
-    name: "br",
-    attributes: {},
-    children: []
-  },
-  {
-    name: "text",
-    attributes: {
-      value: "More text "
-    },
-    children: []
-  },
-  {
-    name: "i",
-    attributes: {},
-    children: [
-      {
-        name: "text",
-        attributes: {
-          value: " last "
-        },
-        children: []
-      }
-    ]
-  }
-];
-
-const listOfArticles = n => {
-  const list = [];
-  for (let i = 0; i < n; i += 1) {
-    list.push(article());
-  }
-  return list;
+    ...last
+  ];
 };
 
-const articles = n => ({
-  count: n,
-  list: listOfArticles(n)
-});
+export const makeMocksWithAuthorError = ({ withImages, slug, pageSize }) => {
+  const [, ...articles] = makeArticleMocks({
+    withImages,
+    slug,
+    pageSize
+  });
 
-export default n => ({
-  author: {
-    name,
-    jobTitle,
-    biography,
-    image,
-    twitter,
-    articles: articles(n),
-    __typename: "Author"
-  }
-});
+  return [
+    {
+      request: {
+        query: addTypenameToDocument(authorProfileQuery),
+        variables: {
+          slug
+        }
+      },
+      error: new Error("Could not get author")
+    },
+    makeAuthorMock({ withImages, slug }),
+    ...articles
+  ];
+};
