@@ -19,13 +19,9 @@ const config = {
     "Provider",
     "TrackingPage",
     "TrackingEvent",
-<<<<<<< HEAD
     "Error",
     "error",
     "AuthorProfileLoading"
-=======
-    "error"
->>>>>>> master
   ]
 };
 
