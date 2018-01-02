@@ -53,7 +53,7 @@ const defaultRenderers = {
   break(key) {
     return <Text key={key}>{"\n"}</Text>;
   },
-  pullquote(key, attributes) {
+  pullQuote(key, attributes) {
     return (
       <PullQuote
         key={key}

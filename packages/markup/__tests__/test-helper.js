@@ -38,7 +38,7 @@ export default (
     expect(output).toMatchSnapshot();
   });
 
-  it("renders multiple paragraphs with a pullquote", () => {
+  it("renders multiple paragraphs with a pull quote", () => {
     const output = renderer
       .create(
         <BlockComponent>

@@ -36,7 +36,7 @@ const defaultRenderers = {
   break(key) {
     return <br key={key} />;
   },
-  pullquote(key, attributes) {
+  pullQuote(key, attributes) {
     return (
       <PullQuote
         key={key}
