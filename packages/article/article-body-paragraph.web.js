@@ -5,8 +5,6 @@ import styles from "./styles/body";
 
 const BodyParagraph = props => (
   <ParagraphContainer
-    testID={`paragraph-${props.uid}`}
-    accessibilityLabel={`paragraph-${props.uid}`}
     key={`paragraph-${props.uid}`}
     style={[styles.articleMainContentRow]}
   >
@@ -15,7 +13,7 @@ const BodyParagraph = props => (
 );
 
 BodyParagraph.propTypes = {
-  uid: PropTypes.string.isRequired,
+  uid: PropTypes.number.isRequired,
   children: PropTypes.arrayOf(
     PropTypes.oneOfType([PropTypes.string, PropTypes.element])
   ).isRequired

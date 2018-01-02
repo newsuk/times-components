@@ -25,11 +25,11 @@ const getImageContainer = imageType => {
 };
 
 const ArticleRow = props => {
-  const { data } = props.content;
+  const { data, index } = props.content;
   return renderTrees([data], {
     paragraph(key, attributes, children) {
       return (
-        <BodyParagraph key={key} uid={key}>
+        <BodyParagraph key={index} uid={index}>
           {children}
         </BodyParagraph>
       );

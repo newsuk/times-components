@@ -657,7 +657,7 @@ exports[`Article test on ios renders article no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-0"
         style={
           Array [
             Object {
@@ -666,7 +666,7 @@ exports[`Article test on ios renders article no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-0"
       >
         <Text
           accessible={true}
@@ -716,7 +716,7 @@ exports[`Article test on ios renders article no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-1"
         style={
           Array [
             Object {
@@ -725,7 +725,7 @@ exports[`Article test on ios renders article no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-1"
       >
         <Text
           accessible={true}
@@ -761,7 +761,7 @@ exports[`Article test on ios renders article no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-2"
         style={
           Array [
             Object {
@@ -770,7 +770,7 @@ exports[`Article test on ios renders article no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-2"
       >
         <Text
           accessible={true}
@@ -795,7 +795,7 @@ exports[`Article test on ios renders article no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-3"
         style={
           Array [
             Object {
@@ -804,7 +804,7 @@ exports[`Article test on ios renders article no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-3"
       >
         <Text
           accessible={true}
@@ -829,7 +829,7 @@ exports[`Article test on ios renders article no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-4"
         style={
           Array [
             Object {
@@ -838,7 +838,7 @@ exports[`Article test on ios renders article no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-4"
       >
         <Text
           accessible={true}
@@ -863,7 +863,7 @@ exports[`Article test on ios renders article no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-5"
         style={
           Array [
             Object {
@@ -872,7 +872,7 @@ exports[`Article test on ios renders article no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-5"
       >
         <Text
           accessible={true}
@@ -897,7 +897,7 @@ exports[`Article test on ios renders article no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-6"
         style={
           Array [
             Object {
@@ -906,7 +906,7 @@ exports[`Article test on ios renders article no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-6"
       >
         <Text
           accessible={true}
@@ -1663,7 +1663,7 @@ exports[`Article test on ios renders article no label 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-0"
         style={
           Array [
             Object {
@@ -1672,7 +1672,7 @@ exports[`Article test on ios renders article no label 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-0"
       >
         <Text
           accessible={true}
@@ -1722,7 +1722,7 @@ exports[`Article test on ios renders article no label 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-1"
         style={
           Array [
             Object {
@@ -1731,7 +1731,7 @@ exports[`Article test on ios renders article no label 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-1"
       >
         <Text
           accessible={true}
@@ -1767,7 +1767,7 @@ exports[`Article test on ios renders article no label 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-2"
         style={
           Array [
             Object {
@@ -1776,7 +1776,7 @@ exports[`Article test on ios renders article no label 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-2"
       >
         <Text
           accessible={true}
@@ -1801,7 +1801,7 @@ exports[`Article test on ios renders article no label 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-3"
         style={
           Array [
             Object {
@@ -1810,7 +1810,7 @@ exports[`Article test on ios renders article no label 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-3"
       >
         <Text
           accessible={true}
@@ -1835,7 +1835,7 @@ exports[`Article test on ios renders article no label 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-4"
         style={
           Array [
             Object {
@@ -1844,7 +1844,7 @@ exports[`Article test on ios renders article no label 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-4"
       >
         <Text
           accessible={true}
@@ -1869,7 +1869,7 @@ exports[`Article test on ios renders article no label 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-5"
         style={
           Array [
             Object {
@@ -1878,7 +1878,7 @@ exports[`Article test on ios renders article no label 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-5"
       >
         <Text
           accessible={true}
@@ -1903,7 +1903,7 @@ exports[`Article test on ios renders article no label 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-6"
         style={
           Array [
             Object {
@@ -1912,7 +1912,7 @@ exports[`Article test on ios renders article no label 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-6"
       >
         <Text
           accessible={true}
@@ -2526,7 +2526,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-0"
         style={
           Array [
             Object {
@@ -2535,7 +2535,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-0"
       >
         <Text
           accessible={true}
@@ -2585,7 +2585,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-1"
         style={
           Array [
             Object {
@@ -2594,7 +2594,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-1"
       >
         <Text
           accessible={true}
@@ -2630,7 +2630,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-2"
         style={
           Array [
             Object {
@@ -2639,7 +2639,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-2"
       >
         <Text
           accessible={true}
@@ -2664,7 +2664,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-3"
         style={
           Array [
             Object {
@@ -2673,7 +2673,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-3"
       >
         <Text
           accessible={true}
@@ -2698,7 +2698,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-4"
         style={
           Array [
             Object {
@@ -2707,7 +2707,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-4"
       >
         <Text
           accessible={true}
@@ -2732,7 +2732,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-5"
         style={
           Array [
             Object {
@@ -2741,7 +2741,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-5"
       >
         <Text
           accessible={true}
@@ -2766,7 +2766,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-6"
         style={
           Array [
             Object {
@@ -2775,7 +2775,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-6"
       >
         <Text
           accessible={true}
@@ -3369,7 +3369,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-0"
         style={
           Array [
             Object {
@@ -3378,7 +3378,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-0"
       >
         <Text
           accessible={true}
@@ -3428,7 +3428,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-1"
         style={
           Array [
             Object {
@@ -3437,7 +3437,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-1"
       >
         <Text
           accessible={true}
@@ -3473,7 +3473,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-2"
         style={
           Array [
             Object {
@@ -3482,7 +3482,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-2"
       >
         <Text
           accessible={true}
@@ -3507,7 +3507,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-3"
         style={
           Array [
             Object {
@@ -3516,7 +3516,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-3"
       >
         <Text
           accessible={true}
@@ -3541,7 +3541,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-4"
         style={
           Array [
             Object {
@@ -3550,7 +3550,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-4"
       >
         <Text
           accessible={true}
@@ -3575,7 +3575,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-5"
         style={
           Array [
             Object {
@@ -3584,7 +3584,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-5"
       >
         <Text
           accessible={true}
@@ -3609,7 +3609,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-6"
         style={
           Array [
             Object {
@@ -3618,7 +3618,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-6"
       >
         <Text
           accessible={true}
@@ -4388,7 +4388,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-0"
         style={
           Array [
             Object {
@@ -4397,7 +4397,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-0"
       >
         <Text
           accessible={true}
@@ -4447,7 +4447,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-1"
         style={
           Array [
             Object {
@@ -4456,7 +4456,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-1"
       >
         <Text
           accessible={true}
@@ -4492,7 +4492,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-2"
         style={
           Array [
             Object {
@@ -4501,7 +4501,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-2"
       >
         <Text
           accessible={true}
@@ -4526,7 +4526,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-3"
         style={
           Array [
             Object {
@@ -4535,7 +4535,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-3"
       >
         <Text
           accessible={true}
@@ -4560,7 +4560,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-4"
         style={
           Array [
             Object {
@@ -4569,7 +4569,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-4"
       >
         <Text
           accessible={true}
@@ -4594,7 +4594,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-5"
         style={
           Array [
             Object {
@@ -4603,7 +4603,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-5"
       >
         <Text
           accessible={true}
@@ -4628,7 +4628,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-6"
         style={
           Array [
             Object {
@@ -4637,7 +4637,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-6"
       >
         <Text
           accessible={true}
@@ -5264,7 +5264,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-0"
         style={
           Array [
             Object {
@@ -5273,7 +5273,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-0"
       >
         <Text
           accessible={true}
@@ -5323,7 +5323,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-1"
         style={
           Array [
             Object {
@@ -5332,7 +5332,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-1"
       >
         <Text
           accessible={true}
@@ -5368,7 +5368,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-2"
         style={
           Array [
             Object {
@@ -5377,7 +5377,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-2"
       >
         <Text
           accessible={true}
@@ -5402,7 +5402,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-3"
         style={
           Array [
             Object {
@@ -5411,7 +5411,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-3"
       >
         <Text
           accessible={true}
@@ -5436,7 +5436,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-4"
         style={
           Array [
             Object {
@@ -5445,7 +5445,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-4"
       >
         <Text
           accessible={true}
@@ -5470,7 +5470,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-5"
         style={
           Array [
             Object {
@@ -5479,7 +5479,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-5"
       >
         <Text
           accessible={true}
@@ -5504,7 +5504,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-6"
         style={
           Array [
             Object {
@@ -5513,7 +5513,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-6"
       >
         <Text
           accessible={true}
@@ -6250,7 +6250,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-0"
         style={
           Array [
             Object {
@@ -6259,7 +6259,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-0"
       >
         <Text
           accessible={true}
@@ -6309,7 +6309,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-1"
         style={
           Array [
             Object {
@@ -6318,7 +6318,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-1"
       >
         <Text
           accessible={true}
@@ -6354,7 +6354,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-2"
         style={
           Array [
             Object {
@@ -6363,7 +6363,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-2"
       >
         <Text
           accessible={true}
@@ -6388,7 +6388,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-3"
         style={
           Array [
             Object {
@@ -6397,7 +6397,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-3"
       >
         <Text
           accessible={true}
@@ -6422,7 +6422,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-4"
         style={
           Array [
             Object {
@@ -6431,7 +6431,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-4"
       >
         <Text
           accessible={true}
@@ -6456,7 +6456,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-5"
         style={
           Array [
             Object {
@@ -6465,7 +6465,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-5"
       >
         <Text
           accessible={true}
@@ -6490,7 +6490,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-6"
         style={
           Array [
             Object {
@@ -6499,7 +6499,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-6"
       >
         <Text
           accessible={true}
@@ -7373,7 +7373,7 @@ exports[`Article test on ios renders full article 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-0"
         style={
           Array [
             Object {
@@ -7382,7 +7382,7 @@ exports[`Article test on ios renders full article 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-0"
       >
         <Text
           accessible={true}
@@ -7432,7 +7432,7 @@ exports[`Article test on ios renders full article 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-1"
         style={
           Array [
             Object {
@@ -7441,7 +7441,7 @@ exports[`Article test on ios renders full article 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-1"
       >
         <Text
           accessible={true}
@@ -7653,7 +7653,7 @@ exports[`Article test on ios renders full article 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-3"
         style={
           Array [
             Object {
@@ -7662,7 +7662,7 @@ exports[`Article test on ios renders full article 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-3"
       >
         <Text
           accessible={true}
@@ -7687,7 +7687,7 @@ exports[`Article test on ios renders full article 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-4"
         style={
           Array [
             Object {
@@ -7696,7 +7696,7 @@ exports[`Article test on ios renders full article 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-4"
       >
         <Text
           accessible={true}
@@ -7910,7 +7910,7 @@ exports[`Article test on ios renders full article 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-"
+        accessibilityLabel="paragraph-6"
         style={
           Array [
             Object {
@@ -7919,7 +7919,7 @@ exports[`Article test on ios renders full article 1`] = `
             },
           ]
         }
-        testID="paragraph-"
+        testID="paragraph-6"
       >
         <Text
           accessible={true}
