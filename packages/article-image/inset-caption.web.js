@@ -3,7 +3,6 @@ import { View } from "react-native";
 import Caption from "@times-components/caption";
 import withResponsiveStyles from "@times-components/responsive-styles";
 
-
 const InsetCaptionStyle = withResponsiveStyles(View, {
   base: () => "padding-left: 10px;",
   mediumUp: () => "padding-left: 0px;"
