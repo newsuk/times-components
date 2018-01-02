@@ -12,12 +12,12 @@ const ShowTwitter = twitter => {
   const url = `https://twitter.com/${twitter}`;
 
   return (
-    <React.Fragment>
-      ,&nbsp;
+    [
+      ", ",
       <TextLink key={url} style={styles.link} url={url} onPress={() => null}>
         {twitter}
       </TextLink>
-    </React.Fragment>
+    ]
   );
 };
 
