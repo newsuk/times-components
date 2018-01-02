@@ -1,13 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link doesnt change inner text styles 1`] = `
-<Text
+<View
   accessibilityComponentType={undefined}
   accessibilityLabel={undefined}
   accessibilityTraits={undefined}
   accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
   hitSlop={undefined}
   nativeBackgroundAndroid={
     Object {
@@ -25,8 +23,14 @@ exports[`Link doesnt change inner text styles 1`] = `
   pointerEvents="box-only"
   testID={undefined}
 >
-  Hello
-</Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    Hello
+  </Text>
+</View>
 `;
 
 exports[`Link renders correctly 1`] = `
@@ -49,6 +53,7 @@ exports[`Link renders correctly 1`] = `
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
+  pointerEvents="box-only"
   testID={undefined}
 />
 `;

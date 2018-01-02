@@ -4,17 +4,12 @@ import PropTypes from "prop-types";
 
 const Link = ({ onPress, children }) => (
   <TouchableNativeFeedback onPress={onPress} useForeground delayPressIn={0}>
-    {children ? (
-      React.cloneElement(children, { pointerEvents: "box-only" })
-    ) : (
-      <View />
-    )}
+    <View pointerEvents="box-only">{children}</View>
   </TouchableNativeFeedback>
 );
 
 Link.propTypes = {
-  onPress: PropTypes.func.isRequired,
-  children: PropTypes.node.isRequired
+  onPress: PropTypes.func.isRequired
 };
 
 export default Link;
