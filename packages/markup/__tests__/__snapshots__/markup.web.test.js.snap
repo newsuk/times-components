@@ -65,7 +65,7 @@ exports[`Markup Web renders multiple paragraphs 1`] = `
 </div>
 `;
 
-exports[`Markup Web renders multiple paragraphs with a pullquote 1`] = `
+exports[`Markup Web renders multiple paragraphs with a pull quote 1`] = `
 <div>
   <p>
     This is the text for paragraph one

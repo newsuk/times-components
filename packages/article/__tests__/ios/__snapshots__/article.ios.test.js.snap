@@ -6835,7 +6835,7 @@ exports[`Article test on ios renders full article 1`] = `
             "content": "[The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child",
           },
           "children": Array [],
-          "name": "pull-quote",
+          "name": "pullQuote",
         },
         "index": 13,
         "type": "articleBodyRow",

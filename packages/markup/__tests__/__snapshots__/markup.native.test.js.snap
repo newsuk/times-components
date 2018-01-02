@@ -113,7 +113,7 @@ exports[`Markup Native renders multiple paragraphs 1`] = `
 </View>
 `;
 
-exports[`Markup Native renders multiple paragraphs with a pullquote 1`] = `
+exports[`Markup Native renders multiple paragraphs with a pull quote 1`] = `
 <View>
   <Text
     accessible={true}
