@@ -3,6 +3,85 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.7.8...@times-components/article-image@0.9.0) (2017-12-22)
+
+
+### Features
+
+* support preview images on Android ([#480](https://github.com/newsuk/times-components/issues/480)) ([0840dd8](https://github.com/newsuk/times-components/commit/0840dd8))
+
+
+
+
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.7.8...@times-components/article-image@0.8.0) (2017-12-22)
+
+
+### Features
+
+* support preview images on Android ([#480](https://github.com/newsuk/times-components/issues/480)) ([0840dd8](https://github.com/newsuk/times-components/commit/0840dd8))
+
+
+
+
+<a name="0.7.8"></a>
+## [0.7.8](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.7.7...@times-components/article-image@0.7.8) (2017-12-22)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-image
+
+<a name="0.7.7"></a>
+## [0.7.7](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.7.6...@times-components/article-image@0.7.7) (2017-12-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-image
+
+<a name="0.7.6"></a>
+## [0.7.6](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.7.5...@times-components/article-image@0.7.6) (2017-12-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-image
+
+<a name="0.7.5"></a>
+## [0.7.5](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.7.3...@times-components/article-image@0.7.5) (2017-12-16)
+
+
+### Bug Fixes
+
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
+<a name="0.7.4"></a>
+## [0.7.4](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.7.3...@times-components/article-image@0.7.4) (2017-12-16)
+
+
+### Bug Fixes
+
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
+<a name="0.7.3"></a>
+## [0.7.3](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.7.2...@times-components/article-image@0.7.3) (2017-12-15)
+
+
+### Bug Fixes
+
+* add left padding for primary inline image for mob web and native ([6487884](https://github.com/newsuk/times-components/commit/6487884))
+
+
+
+
 <a name="0.7.2"></a>
 ## [0.7.2](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.7.1...@times-components/article-image@0.7.2) (2017-12-14)
 

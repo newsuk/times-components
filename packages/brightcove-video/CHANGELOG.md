@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.9.4"></a>
+## [1.9.4](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.9.3...@times-components/brightcove-video@1.9.4) (2017-12-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="1.9.3"></a>
+## [1.9.3](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.9.1...@times-components/brightcove-video@1.9.3) (2017-12-16)
+
+
+### Bug Fixes
+
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
+<a name="1.9.2"></a>
+## [1.9.2](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.9.1...@times-components/brightcove-video@1.9.2) (2017-12-16)
+
+
+### Bug Fixes
+
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
 <a name="1.9.1"></a>
 ## [1.9.1](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.9.0...@times-components/brightcove-video@1.9.1) (2017-12-14)
 

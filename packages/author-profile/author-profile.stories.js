@@ -3,15 +3,16 @@ import { storiesOf } from "dextrose/storiesOfOverloader";
 import { decorateAction } from "@storybook/addon-actions";
 import { AuthorProfileProvider } from "@times-components/provider";
 import { MockedProvider } from "@times-components/utils/graphql";
-// eslint-disable-next-line import/no-unresolved
-import { addTypenameToDocument } from "apollo-utilities";
-import { query as authorProfileQuery } from "@times-components/provider/author-profile-provider";
-import { query as articleListQuery } from "@times-components/provider/article-list-provider";
 import storybookReporter from "@times-components/tealium/storybook";
 import AuthorProfile from "./author-profile";
 import AuthorProfileContent from "./author-profile-content";
-import authorProfileFixture from "./fixtures/author-profile.json";
-import articleListFixture from "./fixtures/article-list.json";
+import {
+  makeAuthor,
+  makeArticleMocks,
+  makeBrokenMocks,
+  makeMocksWithAuthorError,
+  makeMocksWithPageError
+} from "./fixtures/fixture-generator";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
@@ -20,215 +21,146 @@ const preventDefaultedAction = decorateAction([
   }
 ]);
 
-const makeAuthor = articleCount => ({
-  ...authorProfileFixture.data.author,
-  articles: {
-    count: articleCount,
-    __typename: "Articles"
-  }
-});
-
-const articlesList = (skip, first, transform = id => id) => ({
-  data: {
-    author: {
-      ...articleListFixture.data.author,
-      articles: {
-        ...articleListFixture.data.author.articles,
-        list: transform(
-          articleListFixture.data.author.articles.list.slice(skip, skip + first)
-        )
-      }
-    }
-  }
-});
-
-const delay = 1000;
-const mocks = [
-  {
-    delay,
-    request: {
-      query: addTypenameToDocument(authorProfileQuery),
-      variables: {
-        slug: "deborah-haynes"
-      }
-    },
-    result: authorProfileFixture
-  },
-  {
-    delay,
-    request: {
-      query: addTypenameToDocument(articleListQuery),
-      variables: {
-        slug: "deborah-haynes",
-        first: 5,
-        skip: 0,
-        imageRatio: "3:2"
-      }
-    },
-    result: articlesList(0, 5)
-  },
-  {
-    delay,
-    request: {
-      query: addTypenameToDocument(articleListQuery),
-      variables: {
-        slug: "deborah-haynes",
-        first: 5,
-        skip: 5,
-        imageRatio: "3:2"
-      }
-    },
-    result: articlesList(5, 5)
-  },
-  {
-    delay,
-    request: {
-      query: addTypenameToDocument(articleListQuery),
-      variables: {
-        slug: "deborah-haynes",
-        first: 5,
-        skip: 10,
-        imageRatio: "3:2"
-      }
-    },
-    result: articlesList(10, 5)
-  },
-  {
-    delay,
-    request: {
-      query: addTypenameToDocument(articleListQuery),
-      variables: {
-        slug: "deborah-haynes",
-        first: 5,
-        skip: 15,
-        imageRatio: "3:2"
-      }
-    },
-    result: articlesList(15, 5)
-  }
-];
-const brokenMocks = [
-  {
-    delay,
-    request: {
-      query: addTypenameToDocument(authorProfileQuery),
-      variables: {
-        slug: "deborah-haynes"
-      }
-    },
-    result: authorProfileFixture
-  },
-  {
-    delay,
-    request: {
-      query: addTypenameToDocument(articleListQuery),
-      variables: {
-        slug: "deborah-haynes",
-        first: 5,
-        skip: 0,
-        imageRatio: "3:2"
-      }
-    },
-    result: articlesList(0, 5, list =>
-      list.map((card, indx) => ({
-        ...card,
-        summary: [
-          {
-            name: "paragraph",
-            attributes: {},
-            children: [
-              {
-                name: "text",
-                attributes: {
-                  value: indx === 2 ? "This will error" : "Did not error"
-                },
-                children: indx === 2 ? {} : []
-              }
-            ]
-          }
-        ]
-      }))
-    )
-  }
-];
-
-const withMockProvider = child => (
-  <MockedProvider mocks={mocks}>{child}</MockedProvider>
-);
-
-const withBrokenMockProvider = child => (
-  <MockedProvider mocks={brokenMocks}>{child}</MockedProvider>
-);
-
-const authProfileProviderProps = {
-  slug: "deborah-haynes",
-  author: makeAuthor(20),
-  isLoading: false,
-  page: 2,
-  pageSize: 3,
-  onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
-  onArticlePress: preventDefaultedAction("onArticlePress"),
-  analyticsStream: storybookReporter
-};
 const slug = "deborah-haynes";
-
-const authProfileProvider = withMockProvider(
-  <AuthorProfileProvider slug={slug}>
-    {({ author, isLoading, error }) => (
-      <AuthorProfile
-        {...authProfileProviderProps}
-        author={author}
-        page={1}
-        pageSize={5}
-        slug={slug}
-        isLoading={isLoading}
-        error={error}
-      />
-    )}
-  </AuthorProfileProvider>
-);
+const pageSize = 5;
 
 storiesOf("AuthorProfile", module)
-  .add("Default", () => {
+  .add("Default with images", () => {
     const props = {
-      slug: "deborah-haynes",
-      author: makeAuthor(20),
+      slug,
+      author: makeAuthor({ withImages: true }),
       articleImageRatio: "3:2",
       isLoading: false,
       page: 2,
-      pageSize: 5,
+      pageSize,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
       onArticlePress: preventDefaultedAction("onArticlePress"),
       analyticsStream: storybookReporter
     };
 
-    return withMockProvider(<AuthorProfile {...props} />);
+    return (
+      <MockedProvider
+        mocks={makeArticleMocks({ withImages: true, slug, pageSize })}
+      >
+        <AuthorProfile {...props} />
+      </MockedProvider>
+    );
+  })
+  .add("Default without images", () => {
+    const props = {
+      slug: "deborah-haynes",
+      author: makeAuthor(),
+      articleImageRatio: "3:2",
+      isLoading: false,
+      page: 2,
+      pageSize,
+      onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
+      onArticlePress: preventDefaultedAction("onArticlePress"),
+      analyticsStream: storybookReporter
+    };
+
+    return (
+      <MockedProvider mocks={makeArticleMocks({ pageSize })}>
+        <AuthorProfile {...props} />
+      </MockedProvider>
+    );
   })
   .add("Loading", () => {
     const props = {
       isLoading: true,
       articlesLoading: true,
-      pageSize: 3,
+      pageSize,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
       onArticlePress: preventDefaultedAction("onArticlePress"),
-      analyticsStream: storybookReporter
+      analyticsStream: storybookReporter,
+      refetch: () => {}
     };
 
     return <AuthorProfileContent {...props} />;
   })
-  .add("With an error", () => {
+  .add("With an error getting author", () => (
+    <MockedProvider
+      mocks={makeMocksWithAuthorError({ slug, pageSize, withImages: true })}
+    >
+      <AuthorProfileProvider slug={slug}>
+        {({ author, isLoading, error, refetch }) => (
+          <AuthorProfile
+            author={author}
+            page={1}
+            refetch={refetch}
+            pageSize={pageSize}
+            slug={slug}
+            isLoading={isLoading}
+            error={error}
+            onTwitterLinkPress={preventDefaultedAction("onTwitterLinkPress")}
+            onArticlePress={preventDefaultedAction("onArticlePress")}
+            analyticsStream={storybookReporter}
+          />
+        )}
+      </AuthorProfileProvider>
+    </MockedProvider>
+  ))
+  .add("With an error getting articles", () => {
     const props = {
-      slug: "deborah-haynes",
-      author: makeAuthor(5),
-      articleImageRatio: "3:2",
+      slug,
+      author: makeAuthor({ withImages: true }),
       isLoading: false,
       page: 1,
-      pageSize: 5,
+      pageSize,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
       onArticlePress: preventDefaultedAction("onArticlePress"),
       analyticsStream: storybookReporter
     };
 
-    return withBrokenMockProvider(<AuthorProfile {...props} />);
+    return (
+      <MockedProvider
+        mocks={makeMocksWithPageError({ withImages: true, pageSize })}
+      >
+        <AuthorProfile {...props} />
+      </MockedProvider>
+    );
   })
-  .add("With Provider and Tracking", () => authProfileProvider);
+  .add("With an error rendering a card", () => {
+    const props = {
+      slug,
+      author: makeAuthor({ withImages: true }),
+      articleImageRatio: "3:2",
+      isLoading: false,
+      page: 1,
+      pageSize,
+      onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
+      onArticlePress: preventDefaultedAction("onArticlePress"),
+      analyticsStream: storybookReporter
+    };
+
+    return (
+      <MockedProvider mocks={makeBrokenMocks({ withImages: true, pageSize })}>
+        <AuthorProfile {...props} />
+      </MockedProvider>
+    );
+  })
+  .add("With Provider and Tracking", () => {
+    const props = {
+      slug,
+      page: 2,
+      pageSize,
+      onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
+      onArticlePress: preventDefaultedAction("onArticlePress"),
+      analyticsStream: storybookReporter
+    };
+
+    return (
+      <MockedProvider mocks={makeArticleMocks({ withImages: true, pageSize })}>
+        <AuthorProfileProvider slug={slug}>
+          {({ author, isLoading, error }) => (
+            <AuthorProfile
+              author={author}
+              isLoading={isLoading}
+              error={error}
+              {...props}
+            />
+          )}
+        </AuthorProfileProvider>
+      </MockedProvider>
+    );
+  });

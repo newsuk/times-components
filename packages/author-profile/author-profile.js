@@ -2,22 +2,25 @@ import React from "react";
 import PropTypes from "prop-types";
 import AuthorHead from "@times-components/author-head";
 import { withPageState } from "@times-components/pagination";
-import { ArticleListProvider } from "@times-components/provider";
+import { AuthorArticlesWithImagesProvider } from "@times-components/provider";
 import { withTrackingContext } from "@times-components/tracking";
+import { ratioTextToFloat } from "@times-components/utils/strings";
 import get from "lodash.get";
+import AuthorArticlesNoImagesProvider from "./author-profile-list-provider";
 import AuthorProfileError from "./author-profile-error";
 import AuthorProfileContent from "./author-profile-content";
 
-const ratioTextToFloat = s => {
-  const [w, h] = s.split(":");
-  const ratio = parseFloat(w) / parseFloat(h);
-
-  return !Number.isNaN(ratio) ? ratio : 1;
-};
+const castArticle = (page, pageSize) => article => ({
+  ...article,
+  page,
+  pageSize,
+  publishedTime: new Date(article.publishedTime)
+});
 
 const AuthorProfile = ({
   author,
   error,
+  refetch,
   isLoading,
   onArticlePress,
   onTwitterLinkPress,
@@ -28,14 +31,40 @@ const AuthorProfile = ({
   slug
 }) => {
   if (error) {
-    return <AuthorProfileError {...error} />;
+    return <AuthorProfileError refetch={refetch} />;
   }
 
-  const { biography, name, image: uri, jobTitle, twitter, articles } =
+  if (isLoading) {
+    return (
+      <AuthorProfileContent
+        isLoading
+        showImages
+        pageSize={initPageSize}
+        imageRatio={ratioTextToFloat("3:2")}
+        articlesLoading
+        onTwitterLinkPress={() => {}}
+        refetch={() => {}}
+      />
+    );
+  }
+
+  const {
+    biography,
+    name,
+    image: uri,
+    jobTitle,
+    twitter,
+    hasLeadAssets,
+    articles
+  } =
     author || {};
 
+  const SelectedProvider = hasLeadAssets
+    ? AuthorArticlesWithImagesProvider
+    : AuthorArticlesNoImagesProvider;
+
   return (
-    <ArticleListProvider
+    <SelectedProvider
       articleImageRatio="3:2"
       slug={slug}
       page={page}
@@ -45,16 +74,12 @@ const AuthorProfile = ({
         author: data,
         pageSize,
         isLoading: articlesLoading,
-        variables: { imageRatio }
+        error: articlesError,
+        refetch: refetchArticles,
+        variables: { imageRatio = "3:2" }
       }) => {
         const articlesWithPublishTime = get(data, "articles.list", []).map(
-          article => ({
-            ...article,
-            author,
-            page,
-            pageSize,
-            publishedTime: new Date(article.publishedTime)
-          })
+          castArticle(page, pageSize)
         );
 
         return (
@@ -63,6 +88,8 @@ const AuthorProfile = ({
             name={name}
             biography={biography}
             uri={uri}
+            error={articlesError}
+            refetch={refetchArticles}
             jobTitle={jobTitle}
             twitter={twitter}
             onTwitterLinkPress={onTwitterLinkPress}
@@ -72,13 +99,14 @@ const AuthorProfile = ({
             page={page}
             pageSize={pageSize}
             imageRatio={ratioTextToFloat(imageRatio)}
+            showImages={hasLeadAssets}
             articlesLoading={articlesLoading}
             articles={articlesWithPublishTime}
             onArticlePress={onArticlePress}
           />
         );
       }}
-    </ArticleListProvider>
+    </SelectedProvider>
   );
 };
 
@@ -91,7 +119,8 @@ AuthorProfile.defaultProps = {
   page: 1,
   onNext: () => {},
   onPrev: () => {},
-  pageSize: 10
+  pageSize: 10,
+  refetch: () => {}
 };
 
 AuthorProfile.propTypes = {
@@ -110,7 +139,8 @@ AuthorProfile.propTypes = {
   pageSize: PropTypes.number,
   onTwitterLinkPress: PropTypes.func,
   onArticlePress: PropTypes.func,
-  slug: PropTypes.string.isRequired
+  slug: PropTypes.string.isRequired,
+  refetch: PropTypes.func
 };
 
 const AuthorProfileWithTracking = withTrackingContext(AuthorProfile, {

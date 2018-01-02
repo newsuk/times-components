@@ -3,6 +3,97 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.15.0"></a>
+# [0.15.0](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.13.5...@times-components/author-head@0.15.0) (2017-12-22)
+
+
+### Bug Fixes
+
+* align author head in IE11 ([#483](https://github.com/newsuk/times-components/issues/483)) ([edbccc5](https://github.com/newsuk/times-components/commit/edbccc5))
+
+
+### Features
+
+* support preview images on Android ([#480](https://github.com/newsuk/times-components/issues/480)) ([0840dd8](https://github.com/newsuk/times-components/commit/0840dd8))
+
+
+
+
+<a name="0.14.0"></a>
+# [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.13.5...@times-components/author-head@0.14.0) (2017-12-22)
+
+
+### Bug Fixes
+
+* align author head in IE11 ([#483](https://github.com/newsuk/times-components/issues/483)) ([edbccc5](https://github.com/newsuk/times-components/commit/edbccc5))
+
+
+### Features
+
+* support preview images on Android ([#480](https://github.com/newsuk/times-components/issues/480)) ([0840dd8](https://github.com/newsuk/times-components/commit/0840dd8))
+
+
+
+
+<a name="0.13.5"></a>
+## [0.13.5](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.13.4...@times-components/author-head@0.13.5) (2017-12-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.13.4"></a>
+## [0.13.4](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.13.3...@times-components/author-head@0.13.4) (2017-12-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.13.3"></a>
+## [0.13.3](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.13.2...@times-components/author-head@0.13.3) (2017-12-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.13.2"></a>
+## [0.13.2](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.13.0...@times-components/author-head@0.13.2) (2017-12-16)
+
+
+### Bug Fixes
+
+* journalist roundel alignment on ipad web ([#471](https://github.com/newsuk/times-components/issues/471)) ([a5a2d53](https://github.com/newsuk/times-components/commit/a5a2d53))
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
+<a name="0.13.1"></a>
+## [0.13.1](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.13.0...@times-components/author-head@0.13.1) (2017-12-16)
+
+
+### Bug Fixes
+
+* journalist roundel alignment on ipad web ([#471](https://github.com/newsuk/times-components/issues/471)) ([a5a2d53](https://github.com/newsuk/times-components/commit/a5a2d53))
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
+<a name="0.13.0"></a>
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.12.4...@times-components/author-head@0.13.0) (2017-12-16)
+
+
+### Features
+
+* make author name responsive on web ([#465](https://github.com/newsuk/times-components/issues/465)) ([a42538d](https://github.com/newsuk/times-components/commit/a42538d))
+
+
+
+
 <a name="0.12.4"></a>
 ## [0.12.4](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.12.3...@times-components/author-head@0.12.4) (2017-12-14)
 

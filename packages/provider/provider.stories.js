@@ -9,9 +9,9 @@ import connectGraphql, {
   AuthorProfileProvider,
   ArticleProvider
 } from "./provider.js";
-import { query as authorProfileQuery } from "./author-profile-provider";
+import { query as authorProfileQuery } from "./author-profile";
 import fixture from "./fixtures/author-profile.json";
-import { query as articleQuery } from "./article-provider";
+import { query as articleQuery } from "./article";
 import articleFixture from "./fixtures/article.json";
 
 storiesOf("Provider", module)

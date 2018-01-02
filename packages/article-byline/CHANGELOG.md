@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.10.6"></a>
+## [0.10.6](https://github.com/newsuk/times-components/compare/@times-components/article-byline@0.10.5...@times-components/article-byline@0.10.6) (2017-12-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-byline
+
+<a name="0.10.5"></a>
+## [0.10.5](https://github.com/newsuk/times-components/compare/@times-components/article-byline@0.10.4...@times-components/article-byline@0.10.5) (2017-12-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-byline
+
+<a name="0.10.4"></a>
+## [0.10.4](https://github.com/newsuk/times-components/compare/@times-components/article-byline@0.10.2...@times-components/article-byline@0.10.4) (2017-12-16)
+
+
+### Bug Fixes
+
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
+<a name="0.10.3"></a>
+## [0.10.3](https://github.com/newsuk/times-components/compare/@times-components/article-byline@0.10.2...@times-components/article-byline@0.10.3) (2017-12-16)
+
+
+### Bug Fixes
+
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
 <a name="0.10.2"></a>
 ## [0.10.2](https://github.com/newsuk/times-components/compare/@times-components/article-byline@0.10.1...@times-components/article-byline@0.10.2) (2017-12-14)
 

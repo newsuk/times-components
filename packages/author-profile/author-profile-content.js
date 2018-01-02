@@ -7,12 +7,17 @@ import AuthorProfilePagination from "./author-profile-pagination";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
 import { propTypes, defaultProps } from "./author-profile-content-prop-types";
+import AuthorProfileListingError from "./author-profile-listing-error";
 import { normaliseWidth } from "./utils";
 
 const styles = StyleSheet.create({
   padding: {
     paddingLeft: 10,
     paddingRight: 10
+  },
+  errorContainer: {
+    flex: 1,
+    margin: 15
   }
 });
 
@@ -28,36 +33,26 @@ class AuthorProfileContent extends React.Component {
     const { width } = Dimensions.get("window");
 
     this.state = {
-      count: props.count,
       width: normaliseWidth(width)
     };
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.count) {
-      this.setState({
-        count: nextProps.count
-      });
-    }
-  }
-
   onViewableItemsChanged(info) {
-    if (info.changed) {
-      info.changed
-        .filter(viewableItem => viewableItem.isViewable)
-        .map(
-          viewableItem =>
-            this.props.onViewed &&
-            this.props.onViewed(viewableItem.item, this.props.articles)
-        );
-    }
+    if (!info.changed.length) return [];
+
+    return info.changed
+      .filter(viewableItem => viewableItem.isViewable)
+      .map(
+        viewableItem =>
+          this.props.onViewed &&
+          this.props.onViewed(viewableItem.item, this.props.articles)
+      );
   }
 
   render() {
-    const { count } = this.state;
-
     const {
+      count,
       isLoading,
       articles,
       articlesLoading,
@@ -72,15 +67,51 @@ class AuthorProfileContent extends React.Component {
       pageSize,
       twitter,
       uri,
-      imageRatio
+      imageRatio,
+      showImages,
+      error,
+      refetch
     } = this.props;
+
+    const AuthorHead = (
+      <AuthorProfileAuthorHead
+        isLoading={isLoading}
+        name={name}
+        bio={biography}
+        uri={uri}
+        title={jobTitle}
+        twitter={twitter}
+        onTwitterLinkPress={onTwitterLinkPress}
+      />
+    );
+
+    if (error) {
+      return (
+        <View style={styles.errorContainer}>
+          {AuthorHead}
+          <AuthorProfileListingError refetch={refetch} />
+        </View>
+      );
+    }
 
     const paginationComponent = (hideResults = false) => (
       <AuthorProfilePagination
         count={count}
         hideResults={hideResults}
-        onNext={onNext}
-        onPrev={onPrev}
+        onNext={(...args) => {
+          onNext(...args);
+          this.listRef.scrollToOffset({
+            offset: 0,
+            animated: true
+          });
+        }}
+        onPrev={(...args) => {
+          onPrev(...args);
+          this.listRef.scrollToOffset({
+            offset: 0,
+            animated: true
+          });
+        }}
         page={page}
         pageSize={pageSize}
       />
@@ -102,6 +133,9 @@ class AuthorProfileContent extends React.Component {
 
     return (
       <FlatList
+        ref={list => {
+          this.listRef = list;
+        }}
         testID="scroll-view"
         accessibilityID="scroll-view"
         data={data}
@@ -114,6 +148,7 @@ class AuthorProfileContent extends React.Component {
                   {...item}
                   imageRatio={imageRatio}
                   imageSize={this.state.width}
+                  showImage={showImages}
                   style={styles.padding}
                   testID={`articleList-${index}`}
                   onPress={e =>
@@ -156,4 +191,5 @@ class AuthorProfileContent extends React.Component {
 
 AuthorProfileContent.propTypes = propTypes;
 AuthorProfileContent.defaultProps = defaultProps;
+
 export default withTrackScrollDepth(AuthorProfileContent);

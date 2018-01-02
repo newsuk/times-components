@@ -4,6 +4,7 @@
   "coverageDirectory": "<rootDir>/packages/pagination/coverage/native/",
   "collectCoverageFrom": [
     "**/packages/pagination/*.js",
+    "!**/packages/pagination/*.web.js",
     "!**/packages/pagination/__tests__/**",
     "!**/packages/pagination/*.stories.js"
   ],

@@ -3,6 +3,66 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.20.2"></a>
+## [0.20.2](https://github.com/newsuk/times-components/compare/@times-components/provider@0.20.1...@times-components/provider@0.20.2) (2017-12-22)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.20.1"></a>
+## [0.20.1](https://github.com/newsuk/times-components/compare/@times-components/provider@0.20.0...@times-components/provider@0.20.1) (2017-12-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.20.0"></a>
+# [0.20.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.19.0...@times-components/provider@0.20.0) (2017-12-19)
+
+
+### Features
+
+* add no images provider ([76df683](https://github.com/newsuk/times-components/commit/76df683))
+
+
+
+
+<a name="0.19.0"></a>
+# [0.19.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.18.3...@times-components/provider@0.19.0) (2017-12-19)
+
+
+### Features
+
+* author and listing level error states ([#475](https://github.com/newsuk/times-components/issues/475)) ([ffb9620](https://github.com/newsuk/times-components/commit/ffb9620))
+
+
+
+
+<a name="0.18.3"></a>
+## [0.18.3](https://github.com/newsuk/times-components/compare/@times-components/provider@0.18.1...@times-components/provider@0.18.3) (2017-12-16)
+
+
+### Bug Fixes
+
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
+<a name="0.18.2"></a>
+## [0.18.2](https://github.com/newsuk/times-components/compare/@times-components/provider@0.18.1...@times-components/provider@0.18.2) (2017-12-16)
+
+
+### Bug Fixes
+
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
 <a name="0.18.1"></a>
 ## [0.18.1](https://github.com/newsuk/times-components/compare/@times-components/provider@0.18.0...@times-components/provider@0.18.1) (2017-12-14)
 

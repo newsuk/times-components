@@ -24,17 +24,16 @@ exports[`AuthorHead test on ios renders 1`] = `
     }
   >
     <Text
-      accessibility-label="author-name"
+      accessibilityLabel="author-name"
       accessibilityRole="heading"
       accessible={true}
       allowFontScaling={true}
-      aria-level="1"
       ellipsizeMode="tail"
       style={
         Object {
           "color": "#000",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 45,
+          "fontSize": 30,
           "paddingTop": 32,
         }
       }
@@ -115,17 +114,16 @@ exports[`AuthorHead test on ios renders with data 1`] = `
     }
   >
     <Text
-      accessibility-label="author-name"
+      accessibilityLabel="author-name"
       accessibilityRole="heading"
       accessible={true}
       allowFontScaling={true}
-      aria-level="1"
       ellipsizeMode="tail"
       style={
         Object {
           "color": "#000",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 45,
+          "fontSize": 30,
           "paddingTop": 32,
         }
       }
@@ -258,8 +256,10 @@ exports[`AuthorHead test on ios renders with data 1`] = `
       Object {
         "bottom": 0,
         "height": 100,
+        "left": 0,
         "position": "absolute",
-        "width": 100,
+        "right": 0,
+        "width": "100%",
       }
     }
   >
@@ -270,7 +270,10 @@ exports[`AuthorHead test on ios renders with data 1`] = `
           "borderColor": "#FFF",
           "borderRadius": 50,
           "borderWidth": 5,
+          "marginLeft": "auto",
+          "marginRight": "auto",
           "overflow": "hidden",
+          "width": 100,
         }
       }
     >
@@ -389,17 +392,16 @@ exports[`AuthorHead test on ios renders without profile picture 1`] = `
     }
   >
     <Text
-      accessibility-label="author-name"
+      accessibilityLabel="author-name"
       accessibilityRole="heading"
       accessible={true}
       allowFontScaling={true}
-      aria-level="1"
       ellipsizeMode="tail"
       style={
         Object {
           "color": "#000",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 45,
+          "fontSize": 30,
           "paddingTop": 32,
         }
       }

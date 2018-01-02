@@ -3,6 +3,131 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.36.5"></a>
+## [0.36.5](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.36.3...@times-components/author-profile@0.36.5) (2017-12-22)
+
+
+### Bug Fixes
+
+* align author head in IE11 ([#483](https://github.com/newsuk/times-components/issues/483)) ([edbccc5](https://github.com/newsuk/times-components/commit/edbccc5))
+
+
+
+
+<a name="0.36.4"></a>
+## [0.36.4](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.36.3...@times-components/author-profile@0.36.4) (2017-12-22)
+
+
+### Bug Fixes
+
+* align author head in IE11 ([#483](https://github.com/newsuk/times-components/issues/483)) ([edbccc5](https://github.com/newsuk/times-components/commit/edbccc5))
+
+
+
+
+<a name="0.36.3"></a>
+## [0.36.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.36.2...@times-components/author-profile@0.36.3) (2017-12-22)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.36.2"></a>
+## [0.36.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.36.1...@times-components/author-profile@0.36.2) (2017-12-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.36.1"></a>
+## [0.36.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.36.0...@times-components/author-profile@0.36.1) (2017-12-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.36.0"></a>
+# [0.36.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.35.0...@times-components/author-profile@0.36.0) (2017-12-19)
+
+
+### Features
+
+* use new card and toggle images ([21d6f81](https://github.com/newsuk/times-components/commit/21d6f81))
+
+
+
+
+<a name="0.35.0"></a>
+# [0.35.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.34.0...@times-components/author-profile@0.35.0) (2017-12-19)
+
+
+### Features
+
+* scroll to top of page when paging ([1c9b26c](https://github.com/newsuk/times-components/commit/1c9b26c))
+
+
+
+
+<a name="0.34.0"></a>
+# [0.34.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.33.2...@times-components/author-profile@0.34.0) (2017-12-19)
+
+
+### Features
+
+* author and listing level error states ([#475](https://github.com/newsuk/times-components/issues/475)) ([ffb9620](https://github.com/newsuk/times-components/commit/ffb9620))
+
+
+
+
+<a name="0.33.2"></a>
+## [0.33.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.33.0...@times-components/author-profile@0.33.2) (2017-12-16)
+
+
+### Bug Fixes
+
+* journalist roundel alignment on ipad web ([#471](https://github.com/newsuk/times-components/issues/471)) ([a5a2d53](https://github.com/newsuk/times-components/commit/a5a2d53))
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
+<a name="0.33.1"></a>
+## [0.33.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.33.0...@times-components/author-profile@0.33.1) (2017-12-16)
+
+
+### Bug Fixes
+
+* journalist roundel alignment on ipad web ([#471](https://github.com/newsuk/times-components/issues/471)) ([a5a2d53](https://github.com/newsuk/times-components/commit/a5a2d53))
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
+<a name="0.33.0"></a>
+# [0.33.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.32.3...@times-components/author-profile@0.33.0) (2017-12-16)
+
+
+### Features
+
+* make author name responsive on web ([#465](https://github.com/newsuk/times-components/issues/465)) ([a42538d](https://github.com/newsuk/times-components/commit/a42538d))
+
+
+
+
+<a name="0.32.3"></a>
+## [0.32.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.32.2...@times-components/author-profile@0.32.3) (2017-12-15)
+
+
+### Bug Fixes
+
+* make pagination responsive on web and not on native ([#459](https://github.com/newsuk/times-components/issues/459)) ([1306daa](https://github.com/newsuk/times-components/commit/1306daa))
+
+
+
+
 <a name="0.32.2"></a>
 ## [0.32.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.32.1...@times-components/author-profile@0.32.2) (2017-12-14)
 

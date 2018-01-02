@@ -3,6 +3,74 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.12.11"></a>
+## [0.12.11](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.12.10...@times-components/pagination@0.12.11) (2017-12-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.12.10"></a>
+## [0.12.10](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.12.9...@times-components/pagination@0.12.10) (2017-12-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.12.9"></a>
+## [0.12.9](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.12.8...@times-components/pagination@0.12.9) (2017-12-19)
+
+
+### Bug Fixes
+
+* limit the page to to the end ([6de396e](https://github.com/newsuk/times-components/commit/6de396e))
+
+
+
+
+<a name="0.12.8"></a>
+## [0.12.8](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.12.7...@times-components/pagination@0.12.8) (2017-12-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.12.7"></a>
+## [0.12.7](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.12.5...@times-components/pagination@0.12.7) (2017-12-16)
+
+
+### Bug Fixes
+
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
+<a name="0.12.6"></a>
+## [0.12.6](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.12.5...@times-components/pagination@0.12.6) (2017-12-16)
+
+
+### Bug Fixes
+
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
+<a name="0.12.5"></a>
+## [0.12.5](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.12.4...@times-components/pagination@0.12.5) (2017-12-15)
+
+
+### Bug Fixes
+
+* make pagination responsive on web and not on native ([#459](https://github.com/newsuk/times-components/issues/459)) ([1306daa](https://github.com/newsuk/times-components/commit/1306daa))
+
+
+
+
 <a name="0.12.4"></a>
 ## [0.12.4](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.12.3...@times-components/pagination@0.12.4) (2017-12-14)
 

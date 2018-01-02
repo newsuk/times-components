@@ -84,12 +84,9 @@ with discussions for whatever you are including.
 Every component should have a `XXXX.test.js` file with the component's Jest
 tests.
 
-It should also have a `XXXX.fructose.js` file with the component's Fructose
-tests.
-
-If required there should be additional functional tests written in
-[nightmare](http://www.nightmarejs.org/) and/or
-[fructose](https://github.com/rjanjua/fructose).
+If the component contains functionality that requires functional testing on a 
+device or browser, you can use [Fructose](https://github.com/newsuk/fructose). 
+This should follow the naming convention, `XXXX.fructose.js`.
 
 Fructose uses detox to instrument the tests. In order to run the tests you will
 need to install some additional dependencies. Follow steps 1-4 in these
@@ -97,12 +94,22 @@ need to install some additional dependencies. Follow steps 1-4 in these
 
 Fructose also relies on an application existing within the project, in this case
 we are using the storybook app. If you have not installed it, you can do so by
-running `npm run ios`. You will need to terminate the server that is run with
+running `yarn ios`. You will need to terminate the server that is run with
 this as fructose will run its own at the time of testing. As long as you do not
 delete the app, you will only have to build the app once.
 
 If you run `npm run functional-test:ios` in the root directory it will run
-fructose tests for all of the components. Android support is being added.
+ fructose tests for all of the components. This will similarly work for android
+ and web.
+
+[Dextrose](https://github.com/newsuk/dextrose) is a visual snapshotting tool designed to make the visual inspection of
+ components easier. 
+
+In order to run dextrose simply use `yarn visual-snapshot-web`, 
+`yarn visual-snapshot-ios` or `yarn visual-snapshot-android`. Each component 
+that has differences from master will be visually snapshotted and saved under the
+ /dextrose/snappy folder. This can be very useful for visually validating components.
+
 
 ## Local App Deployment
 

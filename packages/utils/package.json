@@ -1,13 +1,31 @@
 {
   "name": "@times-components/utils",
-  "version": "0.0.7",
+  "version": "0.0.9",
+  "description": "A set of helpers and/or workarounds to be shared across packages",
   "scripts": {
     "make-schema": "node ./scripts/fetch-gql-schema",
+    "test:watch": "jest --bail --verbose --watchAll",
+    "test": "jest --bail --ci --coverage",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff"
   },
-  "description": "A set of helpers and/or workarounds to be shared across packages",
+  "jest": {
+    "preset": "react-native",
+    "rootDir": "../../",
+    "coverageDirectory": "<rootDir>/packages/utils/coverage/",
+    "collectCoverageFrom": [
+      "**/packages/utils/*.js",
+      "!**/packages/utils/*.test.js",
+      "!**/packages/utils/graphql.js"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/utils/*.test.js"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/newsuk/times-components.git"
@@ -27,6 +45,7 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.0.2",
     "eslint": "4.9.0",
+    "jest": "21.2.1",
     "mkdirp": "0.5.1",
     "node-fetch": "1.7.2",
     "prettier": "1.8.2"

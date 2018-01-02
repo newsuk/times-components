@@ -1,5 +1,6 @@
 /* eslint-env jest */
 
+import "jest-styled-components";
 import tests from "./test-helper";
 import Pagination from "../pagination";
 

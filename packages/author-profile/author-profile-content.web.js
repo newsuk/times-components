@@ -10,6 +10,7 @@ import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
 import AuthorProfilePagination from "./author-profile-pagination";
 import { propTypes, defaultProps } from "./author-profile-content-prop-types";
+import AuthorProfileListingError from "./author-profile-listing-error";
 import { normaliseWidth } from "./utils";
 
 const styles = StyleSheet.create({
@@ -34,6 +35,17 @@ const ContentContainer = withResponsiveStyles(View, {
     max-width: 760px;
   `
 });
+
+const scrollUpToPaging = () => {
+  if (typeof window === "undefined") {
+    return;
+  }
+
+  window.scroll({
+    top: 0,
+    left: 0
+  });
+};
 
 class AuthorProfileContent extends Component {
   constructor(props) {
@@ -139,18 +151,36 @@ class AuthorProfileContent extends Component {
       twitter,
       uri,
       imageRatio,
-      receiveChildList
+      showImages,
+      receiveChildList,
+      error,
+      refetch
     } = this.props;
 
     const paginationComponent = (hideResults = false) => (
       <AuthorProfilePagination
         count={count}
         hideResults={hideResults}
-        onNext={onNext}
-        onPrev={onPrev}
+        onNext={(...args) => {
+          onNext(...args);
+          scrollUpToPaging();
+        }}
+        onPrev={(...args) => {
+          onPrev(...args);
+          scrollUpToPaging();
+        }}
         page={page}
         pageSize={pageSize}
       />
+    );
+
+    const ErrorComponent = (
+      <ContentContainer>
+        {paginationComponent()}
+        <View style={[styles.container, styles.errorContainer]}>
+          <AuthorProfileListingError refetch={refetch} />
+        </View>
+      </ContentContainer>
     );
 
     const data = (articlesLoading
@@ -162,6 +192,48 @@ class AuthorProfileContent extends Component {
       ...article,
       elementId: `articleList-${page}-${idx}`
     }));
+
+    const Contents = (
+      <ContentContainer>
+        {paginationComponent()}
+        <View style={styles.container}>
+          {data &&
+            data.map((article, key) => {
+              const { id, url } = article;
+              const separatorComponent =
+                key > 0 ? <AuthorProfileItemSeparator /> : null;
+
+              return (
+                <div
+                  key={id}
+                  id={article.elementId}
+                  accessibility-label={article.elementId}
+                  data-testid={article.elementId}
+                  ref={node => this.registerNode(node)}
+                >
+                  <ErrorView>
+                    {({ hasError }) =>
+                      hasError ? null : (
+                        <Fragment>
+                          {separatorComponent}
+                          <AuthorProfileItem
+                            {...article}
+                            imageRatio={imageRatio}
+                            imageSize={this.getImageSize(article.elementId)}
+                            showImage={showImages}
+                            onPress={e => onArticlePress(e, { id, url })}
+                          />
+                        </Fragment>
+                      )
+                    }
+                  </ErrorView>
+                </div>
+              );
+            })}
+        </View>
+        {paginationComponent(true)}
+      </ContentContainer>
+    );
 
     if (!articlesLoading) receiveChildList(data);
 
@@ -176,44 +248,7 @@ class AuthorProfileContent extends Component {
           twitter={twitter}
           onTwitterLinkPress={onTwitterLinkPress}
         />
-        <ContentContainer>
-          {paginationComponent()}
-          <View style={styles.container}>
-            {data &&
-              data.map((article, key) => {
-                const { id, url } = article;
-                const separatorComponent =
-                  key > 0 ? <AuthorProfileItemSeparator /> : null;
-
-                return (
-                  <div
-                    key={id}
-                    id={article.elementId}
-                    accessibility-label={article.elementId}
-                    data-testid={article.elementId}
-                    ref={node => this.registerNode(node)}
-                  >
-                    <ErrorView>
-                      {({ hasError }) =>
-                        hasError ? null : (
-                          <Fragment>
-                            {separatorComponent}
-                            <AuthorProfileItem
-                              {...article}
-                              imageRatio={imageRatio}
-                              imageSize={this.getImageSize(article.elementId)}
-                              onPress={e => onArticlePress(e, { id, url })}
-                            />
-                          </Fragment>
-                        )
-                      }
-                    </ErrorView>
-                  </div>
-                );
-              })}
-          </View>
-          {paginationComponent(true)}
-        </ContentContainer>
+        {error ? ErrorComponent : Contents}
       </View>
     );
   }

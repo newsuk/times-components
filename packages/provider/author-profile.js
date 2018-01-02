@@ -9,6 +9,7 @@ export const query = gql`
       biography
       image
       twitter
+      hasLeadAssets
       articles {
         count
       }

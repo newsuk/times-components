@@ -3,6 +3,58 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.10.0"></a>
+# [1.10.0](https://github.com/newsuk/times-components/compare/@times-components/image@1.8.5...@times-components/image@1.10.0) (2017-12-22)
+
+
+### Features
+
+* support preview images on Android ([#480](https://github.com/newsuk/times-components/issues/480)) ([0840dd8](https://github.com/newsuk/times-components/commit/0840dd8))
+
+
+
+
+<a name="1.9.0"></a>
+# [1.9.0](https://github.com/newsuk/times-components/compare/@times-components/image@1.8.5...@times-components/image@1.9.0) (2017-12-22)
+
+
+### Features
+
+* support preview images on Android ([#480](https://github.com/newsuk/times-components/issues/480)) ([0840dd8](https://github.com/newsuk/times-components/commit/0840dd8))
+
+
+
+
+<a name="1.8.5"></a>
+## [1.8.5](https://github.com/newsuk/times-components/compare/@times-components/image@1.8.4...@times-components/image@1.8.5) (2017-12-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.8.4"></a>
+## [1.8.4](https://github.com/newsuk/times-components/compare/@times-components/image@1.8.2...@times-components/image@1.8.4) (2017-12-16)
+
+
+### Bug Fixes
+
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
+<a name="1.8.3"></a>
+## [1.8.3](https://github.com/newsuk/times-components/compare/@times-components/image@1.8.2...@times-components/image@1.8.3) (2017-12-16)
+
+
+### Bug Fixes
+
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
 <a name="1.8.2"></a>
 ## [1.8.2](https://github.com/newsuk/times-components/compare/@times-components/image@1.8.1...@times-components/image@1.8.2) (2017-12-14)
 

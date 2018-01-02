@@ -13,7 +13,7 @@ const portraitInlineImage = require("../fixtures/portrait-inline-image.json")
   .fixture;
 
 module.exports = () => {
-  it("does not render Article Image display is not received", () => {
+  it("does not render Article Image if display is not received", () => {
     const noDisplay = {
       imageOptions: {
         display: null,
@@ -52,16 +52,33 @@ module.exports = () => {
       }
     };
 
-    expect(() => {
-      renderer
-        .create(
-          <ArticleImage
-            imageOptions={noRatio.imageOptions}
-            captionOptions={noRatio.captionOptions}
-          />
-        )
-        .toJSON();
-    }).toThrowError();
+    const tree = renderer
+      .create(
+        <ArticleImage
+          imageOptions={noRatio.imageOptions}
+          captionOptions={noRatio.captionOptions}
+        />
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("Renders Article Image with no caption", () => {
+    const primaryImageNoCaptionProps = {
+      imageOptions: {
+        display: "primary",
+        ratio: "16:9",
+        url:
+          "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0"
+      }
+    };
+
+    const tree = renderer
+      .create(
+        <ArticleImage imageOptions={primaryImageNoCaptionProps.imageOptions} />
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it("does not render Caption on Article Image if both caption and credits are not received", () => {

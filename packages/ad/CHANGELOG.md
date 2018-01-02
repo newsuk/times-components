@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.4"></a>
+## [0.6.4](https://github.com/newsuk/times-components/compare/@times-components/ad@0.6.3...@times-components/ad@0.6.4) (2017-12-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/ad
+
+<a name="0.6.3"></a>
+## [0.6.3](https://github.com/newsuk/times-components/compare/@times-components/ad@0.6.1...@times-components/ad@0.6.3) (2017-12-16)
+
+
+### Bug Fixes
+
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
+<a name="0.6.2"></a>
+## [0.6.2](https://github.com/newsuk/times-components/compare/@times-components/ad@0.6.1...@times-components/ad@0.6.2) (2017-12-16)
+
+
+### Bug Fixes
+
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
 <a name="0.6.1"></a>
 ## [0.6.1](https://github.com/newsuk/times-components/compare/@times-components/ad@0.6.0...@times-components/ad@0.6.1) (2017-12-14)
 

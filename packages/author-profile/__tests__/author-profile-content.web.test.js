@@ -3,10 +3,11 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
 import test from "./author-profile-helper";
+import AuthorProfile from "../author-profile";
 import AuthorProfileItem from "../author-profile-item";
 import AuthorProfileContent from "../author-profile-content.web.js";
 import authorProfileFixture from "../fixtures/author-profile.json";
-import articleListFixture from "../fixtures/article-list.json";
+import articleListWithImagesFixture from "../fixtures/article-list-with-images.json";
 import pagedResult from "./paged-result";
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
@@ -16,16 +17,35 @@ test(AuthorProfileContent);
 const results = {
   data: {
     author: {
-      ...articleListFixture.data.author,
       articles: {
-        ...articleListFixture.data.author.articles,
-        list: articleListFixture.data.author.articles.list.map(el => ({
-          ...el,
-          publishedTime: new Date(el.publishedTime)
-        }))
+        ...articleListWithImagesFixture.data.author.articles,
+        list: articleListWithImagesFixture.data.author.articles.list.map(
+          el => ({
+            ...el,
+            publishedTime: new Date(el.publishedTime)
+          })
+        )
       }
     }
   }
+};
+
+const makeAuthor = ({ withImages } = {}) => ({
+  ...authorProfileFixture.data.author,
+  hasLeadAssets: withImages,
+  showImages: withImages
+});
+
+const authorProfileContentProps = {
+  ...makeAuthor({ withImages: true }),
+  articles: results.data.author.articles.list,
+  count: results.data.author.articles.list.length,
+  page: 1,
+  pageSize: 3,
+  imageRatio: 3 / 2,
+  onTwitterLinkPress: () => {},
+  onArticlePress: () => {},
+  refetch: () => {}
 };
 
 const intersectionObserverInstances = [];
@@ -58,17 +78,46 @@ afterEach(() => {
   intersectionObserverInstances.splice(0);
 });
 
-it("renders profile articles and invoke callback on article press", done => {
-  const component = shallow(
+it("renders profile error", () => {
+  const props = {
+    slug: "deborah-haynes",
+    analyticsStream: () => {},
+    error: new Error("broken")
+  };
+
+  // react test renderer would be preferred here but there is a bug
+  // in RNW that throws an exception when rendering Button
+  const wrapper = mount(<AuthorProfile {...props} />);
+
+  expect(wrapper.find("AuthorProfileError")).toMatchSnapshot();
+});
+
+it("renders page error", () => {
+  const wrapper = mount(
     <AuthorProfileContent
-      articles={results.data.author.articles.list}
-      author={authorProfileFixture.data.author}
+      count={0}
+      articles={[]}
+      author={makeAuthor()}
       slug="deborah-haynes"
       page={1}
       pageSize={3}
       imageRatio={3 / 2}
+      error={new Error("Failed")}
+      refetch={() => {}}
       onTwitterLinkPress={() => {}}
-      onArticlePress={() => done()}
+      onArticlePress={() => {}}
+      onViewed={() => {}}
+    />
+  );
+
+  expect(wrapper.find("AuthorProfileListingError")).toMatchSnapshot();
+});
+
+it("renders profile articles and invoke callback on article press", done => {
+  const component = shallow(
+    <AuthorProfileContent
+      {...authorProfileContentProps}
+      onArticlePress={done}
     />
   );
 
@@ -97,18 +146,7 @@ it("renders with an intersection observer which uses the expected options", () =
     observe() {} // eslint-disable-line class-methods-use-this
   };
 
-  mount(
-    <AuthorProfileContent
-      articles={results.data.author.articles.list}
-      author={authorProfileFixture.data.author}
-      slug="deborah-haynes"
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
-    />
-  );
+  mount(<AuthorProfileContent {...authorProfileContentProps} />);
 
   expect(optsSpy.mock.calls[1][0]).toMatchSnapshot();
 });
@@ -117,16 +155,7 @@ it("renders a good quality image if it is visible", async () => {
   window.IntersectionObserver = FakeIntersectionObserver;
 
   const component = mount(
-    <AuthorProfileContent
-      articles={results.data.author.articles.list}
-      author={authorProfileFixture.data.author}
-      slug="deborah-haynes"
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
-    />
+    <AuthorProfileContent {...authorProfileContentProps} />
   );
 
   // prove the first image starts off as low quality
@@ -161,16 +190,7 @@ it("renders a poor quality image if it is not visible", async () => {
   window.IntersectionObserver = FakeIntersectionObserver;
 
   const component = mount(
-    <AuthorProfileContent
-      articles={results.data.author.articles.list}
-      author={authorProfileFixture.data.author}
-      slug="deborah-haynes"
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
-    />
+    <AuthorProfileContent {...authorProfileContentProps} />
   );
 
   const makeEntries = nodes =>
@@ -194,14 +214,8 @@ it("renders a poor quality image if it is not visible", async () => {
 it("renders good quality images if there is no IntersectionObserver", () => {
   const component = mount(
     <AuthorProfileContent
+      {...authorProfileContentProps}
       articles={results.data.author.articles.list.slice(0, 2)}
-      author={authorProfileFixture.data.author}
-      slug="deborah-haynes"
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />
   );
 
@@ -238,14 +252,8 @@ it("does not render good quality images if the item is quickly scrolled passed",
 
   const component = mount(
     <AuthorProfileContent
+      {...authorProfileContentProps}
       articles={results.data.author.articles.list.slice(0, 5)}
-      author={authorProfileFixture.data.author}
-      slug="deborah-haynes"
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />
   );
 
@@ -277,14 +285,8 @@ it("does no work if there are no pending items", async () => {
 
   mount(
     <AuthorProfileContent
+      {...authorProfileContentProps}
       articles={results.data.author.articles.list.slice(0, 5)}
-      author={authorProfileFixture.data.author}
-      slug="deborah-haynes"
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />
   );
 
@@ -321,14 +323,8 @@ it("does not set state after unmounting", async () => {
 
   const component = mount(
     <AuthorProfileContent
+      {...authorProfileContentProps}
       articles={results.data.author.articles.list.slice(0, 5)}
-      author={authorProfileFixture.data.author}
-      slug="deborah-haynes"
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />
   );
 
@@ -369,14 +365,8 @@ it("disconnects from the IntersectionObserver when unmounting", async () => {
 
   const component = mount(
     <AuthorProfileContent
+      {...authorProfileContentProps}
       articles={results.data.author.articles.list.slice(0, 5)}
-      author={authorProfileFixture.data.author}
-      slug="deborah-haynes"
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />
   );
 
@@ -392,14 +382,8 @@ it("does not throw when unmounting with no IntersectionObserver", async () => {
 
   const component = mount(
     <AuthorProfileContent
+      {...authorProfileContentProps}
       articles={results.data.author.articles.list.slice(0, 5)}
-      author={authorProfileFixture.data.author}
-      slug="deborah-haynes"
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />
   );
 
@@ -416,15 +400,8 @@ it("emits scroll tracking events for author profile content", () => {
 
   mount(
     <AuthorProfileContent
-      count={10}
+      {...authorProfileContentProps}
       articles={pageResults.data.author.articles.list}
-      author={authorProfileFixture.data.author}
-      slug="deborah-haynes"
-      page={1}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
     />,
     {
       context: {
@@ -454,4 +431,42 @@ it("emits scroll tracking events for author profile content", () => {
       })
     })
   );
+});
+
+it("scrolls to the top when moving to the previous page", () => {
+  const onScroll = jest.spyOn(window, "scroll");
+  const onPrev = jest.fn();
+  const component = mount(
+    <AuthorProfileContent
+      {...authorProfileContentProps}
+      page={2}
+      onPrev={onPrev}
+    />
+  );
+
+  component
+    .find({ href: "?page=1" })
+    .first()
+    .simulate("click");
+
+  expect(onScroll).toHaveBeenCalledWith({ left: 0, top: 0 });
+});
+
+it("scrolls to the top when moving to the next page", () => {
+  const onScroll = jest.spyOn(window, "scroll");
+  const onNext = jest.fn();
+  const component = mount(
+    <AuthorProfileContent
+      {...authorProfileContentProps}
+      page={2}
+      onNext={onNext}
+    />
+  );
+
+  component
+    .find({ href: "?page=3" })
+    .first()
+    .simulate("click");
+
+  expect(onScroll).toHaveBeenCalledWith({ left: 0, top: 0 });
 });

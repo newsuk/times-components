@@ -1,3 +1,4 @@
+import React from "react";
 import pick from "lodash.pick";
 import { graphql } from "react-apollo";
 
@@ -17,17 +18,46 @@ const getQueryVariables = definitions =>
 
 const connectGraphql = (query, propsToVariables = identity) => {
   const variableNames = getQueryVariables(query.definitions);
-  const Wrapper = ({
-    data: { error, loading, ...result },
-    children,
-    ...props
-  }) =>
-    children({
-      error,
-      isLoading: loading,
-      ...result,
-      ...props
-    });
+
+  class Wrapper extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = props;
+    }
+
+    componentWillReceiveProps(nextProps) {
+      this.setState(() => nextProps);
+    }
+
+    refetch() {
+      this.state.data.refetch().then(response => {
+        this.setState(prevState => ({
+          ...prevState,
+          data: {
+            ...prevState.data,
+            ...response.data,
+            error: response.errors
+          }
+        }));
+      });
+    }
+
+    render() {
+      const {
+        data: { error, loading, refetch, ...result },
+        children,
+        ...props
+      } = this.state;
+
+      return children({
+        error,
+        refetch: this.refetch.bind(this),
+        isLoading: loading,
+        ...result,
+        ...props
+      });
+    }
+  }
 
   return graphql(query, {
     options(props) {

@@ -77,7 +77,7 @@ export default (
     }
 
     observeChildren() {
-      if (this.childList)
+      if (this.observer && this.childList)
         this.childList.forEach((props, index) => {
           if (!this.childData.elementId) {
             this.observeChild({

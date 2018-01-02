@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.14.6"></a>
+## [0.14.6](https://github.com/newsuk/times-components/compare/@times-components/markup@0.14.5...@times-components/markup@0.14.6) (2017-12-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.14.5"></a>
+## [0.14.5](https://github.com/newsuk/times-components/compare/@times-components/markup@0.14.4...@times-components/markup@0.14.5) (2017-12-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.14.4"></a>
+## [0.14.4](https://github.com/newsuk/times-components/compare/@times-components/markup@0.14.2...@times-components/markup@0.14.4) (2017-12-16)
+
+
+### Bug Fixes
+
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
+<a name="0.14.3"></a>
+## [0.14.3](https://github.com/newsuk/times-components/compare/@times-components/markup@0.14.2...@times-components/markup@0.14.3) (2017-12-16)
+
+
+### Bug Fixes
+
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+
+
+
+
 <a name="0.14.2"></a>
 ## [0.14.2](https://github.com/newsuk/times-components/compare/@times-components/markup@0.14.1...@times-components/markup@0.14.2) (2017-12-14)
 

@@ -4,7 +4,7 @@ import config from "./responsive-config";
 
 export const MainContainer = styled(View)`
   @media (min-width: ${config.wideBreakpoint}) {
-    padding: 15px 20px 0 0;
+    padding-top: 15px;
     margin: 0 auto;
   }
 `;

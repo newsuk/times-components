@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pagination",
-  "version": "0.12.4",
+  "version": "0.12.11",
   "main": "pagination",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -32,10 +32,10 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@storybook/addon-actions": "3.2.17",
-    "@storybook/react-native": "3.2.17",
+    "@storybook/addon-actions": "3.2.18",
+    "@storybook/react-native": "3.2.18",
     "@times-components/eslint-config-thetimes": "0.0.2",
-    "@times-components/storybook": "0.1.1",
+    "@times-components/storybook": "0.2.1",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",
@@ -50,7 +50,9 @@
     "eslint": "4.9.0",
     "flow-bin": "0.42.0",
     "jest": "21.2.1",
+    "jest-styled-components": "4.9.0",
     "prettier": "1.8.2",
+    "raf": "3.4.0",
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-native": "0.50.1",
@@ -58,18 +60,19 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/link": "0.12.1",
-    "@times-components/tracking": "0.5.4",
+    "@times-components/link": "0.12.5",
+    "@times-components/responsive-styles": "0.2.5",
+    "@times-components/tracking": "0.5.9",
     "prop-types": "15.6.0",
     "react-display-name": "0.2.3",
     "react-native-svg": "5.5.0",
-    "react-native-web": "0.1.14",
     "svgs": "3.1.1"
   },
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16",
-    "react-native": ">=0.50"
+    "react-native": ">=0.50",
+    "react-native-web": ">=0.1"
   },
   "publishConfig": {
     "access": "public"

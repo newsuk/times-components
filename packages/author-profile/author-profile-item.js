@@ -4,6 +4,7 @@ import { StyleSheet, View } from "react-native";
 import Card from "@times-components/card";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
+import ArticleSummary from "@times-components/article-summary";
 
 const styles = StyleSheet.create({
   container: {
@@ -16,6 +17,7 @@ const AuthorProfileItem = item => {
   const {
     style,
     summary,
+    shortSummary,
     label,
     isLoading,
     onPress,
@@ -24,7 +26,8 @@ const AuthorProfileItem = item => {
     headline,
     url,
     imageRatio,
-    imageSize
+    imageSize,
+    showImage
   } = item;
 
   const imageUri = get(
@@ -36,7 +39,11 @@ const AuthorProfileItem = item => {
   if (isLoading) {
     return (
       <View style={[styles.container, style]}>
-        <Card isLoading={isLoading} imageRatio={imageRatio} />
+        <Card
+          isLoading={isLoading}
+          imageRatio={imageRatio}
+          showImage={showImage}
+        />
       </View>
     );
   }
@@ -45,15 +52,19 @@ const AuthorProfileItem = item => {
     <Link url={url} onPress={onPress}>
       <View style={[styles.container, style]}>
         <Card
-          headline={headline}
-          text={summary}
           image={imageUri ? { uri: imageUri } : null}
           imageRatio={imageRatio}
           imageSize={imageSize}
-          date={publishedTime}
-          label={label}
-          publication={publicationName}
-        />
+          showImage={showImage}
+        >
+          <ArticleSummary
+            label={label}
+            headline={headline}
+            text={showImage ? summary : shortSummary}
+            date={publishedTime}
+            publication={publicationName}
+          />
+        </Card>
       </View>
     </Link>
   );

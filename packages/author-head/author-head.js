@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, Text, Platform } from "react-native";
+import { View, StyleSheet, Platform } from "react-native";
 import PropTypes from "prop-types";
 
 import Image from "@times-components/image";
@@ -10,6 +10,7 @@ import { treePropType } from "@times-components/markup";
 import AuthorTitle from "./author-title";
 import TwitterIcon from "./twitter-icon";
 import Bio from "./author-bio";
+import AuthorName from "./author-name";
 
 const styles = StyleSheet.create({
   container: {
@@ -20,22 +21,21 @@ const styles = StyleSheet.create({
     paddingBottom: 50
   },
   photoContainer: {
-    width: 100,
+    width: "100%",
     height: 100,
     bottom: 0,
+    left: 0,
+    right: 0,
     position: "absolute"
   },
   roundImage: {
+    width: 100,
+    marginLeft: "auto",
+    marginRight: "auto",
     borderColor: "#FFF",
     borderRadius: 50,
     borderWidth: 5,
     overflow: "hidden"
-  },
-  name: {
-    fontFamily: "TimesModern-Bold",
-    fontSize: 45,
-    color: "#000",
-    paddingTop: 32
   },
   twitter: {
     paddingTop: 16,
@@ -72,15 +72,7 @@ const AuthorHead = props => {
   return (
     <View style={styles.wrapper} pointerEvents="box-none">
       <View accessibilityRole="banner" style={styles.container}>
-        <Text
-          testID="author-name"
-          accessibility-label="author-name"
-          accessibilityRole="heading"
-          aria-level="1"
-          style={styles.name}
-        >
-          {name}
-        </Text>
+        <AuthorName name={name} />
         <AuthorTitle title={title} />
         <TwitterLink handle={twitter} onPress={onTwitterLinkPress} />
         <Bio bio={bio} />
