@@ -48,7 +48,7 @@
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
     "chance": "1.0.10",
-    "dextrose":"1.2.14",
+    "dextrose": "1.2.14",
     "enzyme": "3.2.0",
     "enzyme-adapter-react-16": "1.1.0",
     "enzyme-to-json": "3.2.2",
