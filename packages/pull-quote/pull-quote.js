@@ -11,14 +11,12 @@ const ShowTwitter = twitter => {
 
   const url = `https://twitter.com/${twitter}`;
 
-  return (
-    [
-      ", ",
-      <TextLink key={url} style={styles.link} url={url} onPress={() => null}>
-        {twitter}
-      </TextLink>
-    ]
-  );
+  return [
+    ", ",
+    <TextLink key={url} style={styles.link} url={url} onPress={() => null}>
+      {twitter}
+    </TextLink>
+  ];
 };
 
 const { container, quotes, content, caption } = styles;
