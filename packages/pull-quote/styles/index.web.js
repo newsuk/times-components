@@ -1,13 +1,12 @@
 import { StyleSheet } from "react-native";
 import sharedStyles from "./shared";
 
-const iosStyles = StyleSheet.create({
+const webStyles = StyleSheet.create({
   ...sharedStyles,
   container: {
     ...sharedStyles.container,
-    paddingLeft: 10,
-    paddingRight: 10
+    marginBottom: 20
   }
 });
 
-export default iosStyles;
+export default webStyles;

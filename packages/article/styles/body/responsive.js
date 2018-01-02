@@ -97,7 +97,7 @@ export const InlineImg = styled(View)`
 
 /* --- Pull Quotes --- */
 
-export const PullQuoteResp = styled(View)`
+export const PullQuoteResp = styled.div`
 
   padding-left: 10px;
   padding-right: 10px;
@@ -114,7 +114,7 @@ export const PullQuoteResp = styled(View)`
   }
 `;
 
-export const PullQuoteContainer = styled(View)`
+export const PullQuoteContainer = styled.div`
   display: block;
   ${config.mediumBpPositioning} ${config.wideBpPositioning};
 `;
