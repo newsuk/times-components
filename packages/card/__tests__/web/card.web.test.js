@@ -1,8 +1,7 @@
 /* eslint-env jest */
 
 import React from "react";
-import Enzyme, { shallow } from "enzyme";
-import React16Adapter from "enzyme-adapter-react-16";
+import { shallow } from "enzyme";
 import renderer from "react-test-renderer";
 import "jest-styled-components";
 import Card from "../../card";
@@ -16,8 +15,6 @@ const cardProps = {
   imageSize: 360,
   showImage: true
 };
-
-Enzyme.configure({ adapter: new React16Adapter() });
 
 describe("Card test on web", () => {
   it("renders", () => {

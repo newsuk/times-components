@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-byline",
-  "version": "0.10.6",
+  "version": "0.10.7",
   "description": "Article byline information",
   "main": "article-byline",
   "scripts": {
@@ -40,7 +40,7 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
-    "dextrose": "1.2.8",
+    "dextrose": "1.2.14",
     "eslint": "4.9.0",
     "flow-bin": "0.42.0",
     "jest": "21.2.1",
@@ -53,8 +53,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/link": "0.12.5",
-    "@times-components/markup": "0.14.6",
+    "@times-components/link": "0.12.6",
+    "@times-components/markup": "0.14.7",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {

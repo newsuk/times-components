@@ -2,14 +2,11 @@
 
 import "react-native";
 import React from "react";
-import Enzyme, { shallow } from "enzyme";
-import React16Adapter from "enzyme-adapter-react-16";
+import { shallow } from "enzyme";
 import renderer from "react-test-renderer";
 import AuthorHead from "../author-head";
 
 const data = require("../fixtures/profile.json");
-
-Enzyme.configure({ adapter: new React16Adapter() });
 
 const extra = { onTwitterLinkPress: () => {} };
 

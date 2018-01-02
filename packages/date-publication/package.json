@@ -1,6 +1,6 @@
 {
   "name": "@times-components/date-publication",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "description": "Date and Publication properties",
   "main": "date-publication",
   "scripts": {
@@ -51,7 +51,7 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
-    "dextrose": "1.2.8",
+    "dextrose": "1.2.14",
     "enzyme": "3.2.0",
     "enzyme-adapter-react-16": "1.1.0",
     "eslint": "4.9.0",

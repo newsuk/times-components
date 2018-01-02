@@ -1,6 +1,6 @@
 {
   "name": "@times-components/jest-configurator",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Cross platform Jest Config",
   "main": "jest-configurator.js",
   "scripts": {
@@ -41,6 +41,10 @@
     "testMatch": [
       "<rootDir>/packages/jest-configurator/__tests__/*.test.js"
     ]
+  },
+  "dependencies": {
+    "enzyme": "3.2.0",
+    "enzyme-adapter-react-16": "1.1.0"
   },
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.0.2",

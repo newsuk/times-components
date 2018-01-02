@@ -1,6 +1,6 @@
 {
   "name": "@times-components/gradient",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Renders a gradient background",
   "main": "gradient",
   "scripts": {
@@ -43,7 +43,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.2.18",
-    "@times-components/brightcove-video": "1.9.4",
+    "@times-components/brightcove-video": "1.9.5",
     "@times-components/eslint-config-thetimes": "0.0.2",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
@@ -52,7 +52,7 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
-    "dextrose": "1.2.8",
+    "dextrose": "1.2.14",
     "eslint": "4.9.0",
     "flow-bin": "0.42.0",
     "jest": "21.2.1",

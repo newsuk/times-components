@@ -1,6 +1,6 @@
 {
   "name": "@times-components/markup",
-  "version": "0.14.6",
+  "version": "0.14.7",
   "description": "a component which takes an HTML ast and renders the platform specific markup",
   "main": "markup",
   "scripts": {
@@ -43,7 +43,7 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.5",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
-    "dextrose": "1.2.8",
+    "dextrose": "1.2.14",
     "eslint": "4.9.0",
     "flow-bin": "0.42.0",
     "jest": "21.2.1",
@@ -55,7 +55,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/ad": "0.6.4",
+    "@times-components/ad": "0.6.5",
     "@times-components/pull-quote": "0.0.1",
     "prop-types": "15.6.0"
   },
