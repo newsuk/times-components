@@ -42,6 +42,10 @@
       "<rootDir>/packages/jest-configurator/__tests__/*.test.js"
     ]
   },
+  "dependencies": {
+    "enzyme": "3.2.0",
+    "enzyme-adapter-react-16": "1.1.0"
+  },
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.0.2",
     "eslint": "4.9.0",
