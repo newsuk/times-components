@@ -72,7 +72,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/jest-configurator": "0.0.13",
+    "@times-components/jest-configurator": "0.0.14",
     "lodash.pick": "4.4.0",
     "prop-types": "15.6.0"
   },
