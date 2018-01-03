@@ -14,11 +14,7 @@ const Link = ({ onPress, children }) => (
 
 Link.propTypes = {
   onPress: PropTypes.func.isRequired,
-  children: PropTypes.node
-};
-
-Link.defaultProps = {
-  children: null
+  children: PropTypes.node.isRequired
 };
 
 export default Link;
