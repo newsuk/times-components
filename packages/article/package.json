@@ -73,6 +73,7 @@
     "@times-components/image": "1.10.2",
     "@times-components/markup": "0.14.7",
     "@times-components/provider": "0.20.3",
+    "@times-components/pull-quote": "0.0.1",
     "@times-components/tracking": "0.5.10",
     "lodash.get": "4.4.2",
     "prop-types": "15.6.0",

@@ -1,14 +1,14 @@
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import styled from "styled-components";
 import config from "../responsive-config";
 
 /* --- Body --- */
 
-export const ParagraphContainer = styled(View)`
+export const ParagraphContainer = styled.div`
   ${config.articleContainerPadding} ${config.mediumBpPositioning} ${config.wideBpPositioning};
 `;
 
-export const Paragraph = styled(Text)`
+export const Paragraph = styled.p`
   color: "#333333";
   font-family: "TimesDigitalW04-Regular";
   line-height: 26px;
@@ -92,5 +92,29 @@ export const InlineImg = styled(View)`
   padding-left: 10px;
   padding-right: 10px;
 
+  ${config.mediumBpPositioning} ${config.wideBpPositioning};
+`;
+
+/* --- Pull Quotes --- */
+
+export const PullQuoteResp = styled(View)`
+
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+
+  @media (min-width: ${config.mediumBreakpoint}) {
+    width: 60%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom 0px;
+    margin-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+`;
+
+export const PullQuoteContainer = styled(View)`
+  display: block;
   ${config.mediumBpPositioning} ${config.wideBpPositioning};
 `;
