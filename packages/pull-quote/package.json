@@ -46,7 +46,6 @@
     "flow-bin": "0.42.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
-    "prop-types": "15.6.0",
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-native": "0.50.1",
@@ -60,7 +59,8 @@
     "react": ">=16",
     "react-dom": ">=16",
     "react-native": ">=0.50",
-    "react-native-web": ">=0.1"
+    "react-native-web": ">=0.1",
+    "prop-types": "15.6.0"
   },
   "publishConfig": {
     "access": "public"
