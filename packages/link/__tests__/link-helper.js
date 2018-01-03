@@ -5,13 +5,6 @@ import renderer from "react-test-renderer";
 
 export default (Link, TextLink, Text) => {
   describe("Link", () => {
-    it("renders correctly", () => {
-      const tree = renderer
-        .create(<Link url="http://thetimes.co.uk" onPress={() => {}} />)
-        .toJSON();
-
-      expect(tree).toMatchSnapshot();
-    });
     it("doesnt change inner text styles", () => {
       const tree = renderer
         .create(
