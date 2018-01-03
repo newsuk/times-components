@@ -11,8 +11,7 @@ import { Text, View, ViewPropTypes } from "react-native";
 import styles from "./styles/header";
 import {
   HeadlineContainer,
-  LabelContainer,
-  FlagContainer
+  LabelContainer
 } from "./styles/header/responsive";
 
 const { style: ViewStylePropTypes } = ViewPropTypes;
@@ -27,13 +26,13 @@ const flagsMapping = new Map([
 const renderFlags = flags => {
   if (!flags.length) return null;
   return (
-    <FlagContainer style={[styles.articleFlag]}>
+    <View style={styles.articleFlag}>
       {flags.map(flag => (
-        <View key={flag} style={styles.articleFlagContainer}>
+        <Text key={flag} style={styles.articleFlagContainer}>
           {flagsMapping.get(flag)}
-        </View>
+        </Text>
       ))}
-    </FlagContainer>
+    </View>
   );
 };
 

@@ -15,6 +15,7 @@ export const HeaderContainer = styled(View)`
   ${config.articleContainerPadding} ${config.mediumBpPositioning} @media (min-width: ${config.wideBreakpoint}) {
     width: 100%;
     width: ${config.wideBpWidth};
+    margin-bottom: 15px;
   }
 `;
 

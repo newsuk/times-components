@@ -20,9 +20,3 @@ export const LabelContainer = styled(View)`
     margin-top: 20px;
   }
 `;
-
-export const FlagContainer = styled(View)`
-  @media (min-width: ${config.wideBreakpoint}) {
-    margin-bottom: 30px;
-  }
-`;
