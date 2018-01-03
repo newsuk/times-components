@@ -529,7 +529,7 @@ exports[`Article test on android renders article no flags 1`] = `
       >
         <View
           accessibilityLabel="label"
-          className="sc-bwzfXH jeBWru"
+          className="sc-bwzfXH koRhnn"
           style={
             Object {
               "paddingBottom": 5,
@@ -608,7 +608,7 @@ exports[`Article test on android renders article no flags 1`] = `
       style={null}
     >
       <View
-        className="sc-ifAKCX JuOZc"
+        className="sc-bxivhb akpSg"
         style={
           Array [
             Object {
@@ -639,7 +639,7 @@ exports[`Article test on android renders article no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-bxivhb bZsssb"
+            className="sc-htpNat eVmptQ"
             ellipsizeMode="tail"
             style={
               Object {
@@ -672,14 +672,14 @@ exports[`Article test on android renders article no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-bxivhb bZsssb"
+            className="sc-htpNat eVmptQ"
             ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 15,
+                "lineHeight": 13,
               }
             }
           >
@@ -1509,17 +1509,17 @@ exports[`Article test on android renders article no label 1`] = `
           How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life
         </Text>
         <View
-          className="sc-htpNat hhKBzK"
           style={
-            Array [
-              Object {
-                "flexDirection": "row",
-                "marginBottom": 11,
-              },
-            ]
+            Object {
+              "flexDirection": "row",
+              "marginBottom": 11,
+            }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
             style={
               Object {
                 "marginRight": 14,
@@ -1582,8 +1582,11 @@ exports[`Article test on android renders article no label 1`] = `
                 n e w
               </Text>
             </View>
-          </View>
-          <View
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
             style={
               Object {
                 "marginRight": 14,
@@ -1646,7 +1649,7 @@ exports[`Article test on android renders article no label 1`] = `
                 e x c l u s i v e
               </Text>
             </View>
-          </View>
+          </Text>
         </View>
       </View>
     </View>
@@ -1655,7 +1658,7 @@ exports[`Article test on android renders article no label 1`] = `
       style={null}
     >
       <View
-        className="sc-ifAKCX JuOZc"
+        className="sc-bxivhb akpSg"
         style={
           Array [
             Object {
@@ -1686,7 +1689,7 @@ exports[`Article test on android renders article no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-bxivhb bZsssb"
+            className="sc-htpNat eVmptQ"
             ellipsizeMode="tail"
             style={
               Object {
@@ -1719,14 +1722,14 @@ exports[`Article test on android renders article no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-bxivhb bZsssb"
+            className="sc-htpNat eVmptQ"
             ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 15,
+                "lineHeight": 13,
               }
             }
           >
@@ -2559,7 +2562,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
       style={null}
     >
       <View
-        className="sc-ifAKCX JuOZc"
+        className="sc-bxivhb akpSg"
         style={
           Array [
             Object {
@@ -2590,7 +2593,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-bxivhb bZsssb"
+            className="sc-htpNat eVmptQ"
             ellipsizeMode="tail"
             style={
               Object {
@@ -2623,14 +2626,14 @@ exports[`Article test on android renders article no label no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-bxivhb bZsssb"
+            className="sc-htpNat eVmptQ"
             ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 15,
+                "lineHeight": 13,
               }
             }
           >
@@ -3442,7 +3445,7 @@ exports[`Article test on android renders article no label no flags no standfirst
       style={null}
     >
       <View
-        className="sc-ifAKCX JuOZc"
+        className="sc-bxivhb akpSg"
         style={
           Array [
             Object {
@@ -3473,7 +3476,7 @@ exports[`Article test on android renders article no label no flags no standfirst
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-bxivhb bZsssb"
+            className="sc-htpNat eVmptQ"
             ellipsizeMode="tail"
             style={
               Object {
@@ -3506,14 +3509,14 @@ exports[`Article test on android renders article no label no flags no standfirst
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-bxivhb bZsssb"
+            className="sc-htpNat eVmptQ"
             ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 15,
+                "lineHeight": 13,
               }
             }
           >
@@ -4305,7 +4308,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
       >
         <View
           accessibilityLabel="label"
-          className="sc-bwzfXH jeBWru"
+          className="sc-bwzfXH koRhnn"
           style={
             Object {
               "paddingBottom": 5,
@@ -4357,17 +4360,17 @@ exports[`Article test on android renders article no standfirst 1`] = `
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
         <View
-          className="sc-htpNat hhKBzK"
           style={
-            Array [
-              Object {
-                "flexDirection": "row",
-                "marginBottom": 11,
-              },
-            ]
+            Object {
+              "flexDirection": "row",
+              "marginBottom": 11,
+            }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
             style={
               Object {
                 "marginRight": 14,
@@ -4430,8 +4433,11 @@ exports[`Article test on android renders article no standfirst 1`] = `
                 n e w
               </Text>
             </View>
-          </View>
-          <View
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
             style={
               Object {
                 "marginRight": 14,
@@ -4494,7 +4500,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
                 e x c l u s i v e
               </Text>
             </View>
-          </View>
+          </Text>
         </View>
       </View>
     </View>
@@ -4503,7 +4509,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
       style={null}
     >
       <View
-        className="sc-ifAKCX JuOZc"
+        className="sc-bxivhb akpSg"
         style={
           Array [
             Object {
@@ -4534,7 +4540,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-bxivhb bZsssb"
+            className="sc-htpNat eVmptQ"
             ellipsizeMode="tail"
             style={
               Object {
@@ -4567,14 +4573,14 @@ exports[`Article test on android renders article no standfirst 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-bxivhb bZsssb"
+            className="sc-htpNat eVmptQ"
             ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 15,
+                "lineHeight": 13,
               }
             }
           >
@@ -5363,7 +5369,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
       >
         <View
           accessibilityLabel="label"
-          className="sc-bwzfXH jeBWru"
+          className="sc-bwzfXH koRhnn"
           style={
             Object {
               "paddingBottom": 5,
@@ -5421,7 +5427,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
       style={null}
     >
       <View
-        className="sc-ifAKCX JuOZc"
+        className="sc-bxivhb akpSg"
         style={
           Array [
             Object {
@@ -5452,7 +5458,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-bxivhb bZsssb"
+            className="sc-htpNat eVmptQ"
             ellipsizeMode="tail"
             style={
               Object {
@@ -5485,14 +5491,14 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-bxivhb bZsssb"
+            className="sc-htpNat eVmptQ"
             ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 15,
+                "lineHeight": 13,
               }
             }
           >
@@ -6301,17 +6307,17 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
         <View
-          className="sc-htpNat hhKBzK"
           style={
-            Array [
-              Object {
-                "flexDirection": "row",
-                "marginBottom": 11,
-              },
-            ]
+            Object {
+              "flexDirection": "row",
+              "marginBottom": 11,
+            }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
             style={
               Object {
                 "marginRight": 14,
@@ -6374,8 +6380,11 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
                 n e w
               </Text>
             </View>
-          </View>
-          <View
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
             style={
               Object {
                 "marginRight": 14,
@@ -6438,7 +6447,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
                 e x c l u s i v e
               </Text>
             </View>
-          </View>
+          </Text>
         </View>
       </View>
     </View>
@@ -6447,7 +6456,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
       style={null}
     >
       <View
-        className="sc-ifAKCX JuOZc"
+        className="sc-bxivhb akpSg"
         style={
           Array [
             Object {
@@ -6478,7 +6487,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-bxivhb bZsssb"
+            className="sc-htpNat eVmptQ"
             ellipsizeMode="tail"
             style={
               Object {
@@ -6511,14 +6520,14 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-bxivhb bZsssb"
+            className="sc-htpNat eVmptQ"
             ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 15,
+                "lineHeight": 13,
               }
             }
           >
@@ -7394,7 +7403,7 @@ exports[`Article test on android renders full article 1`] = `
       >
         <View
           accessibilityLabel="label"
-          className="sc-bwzfXH jeBWru"
+          className="sc-bwzfXH koRhnn"
           style={
             Object {
               "paddingBottom": 5,
@@ -7467,17 +7476,17 @@ exports[`Article test on android renders full article 1`] = `
           How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life
         </Text>
         <View
-          className="sc-htpNat hhKBzK"
           style={
-            Array [
-              Object {
-                "flexDirection": "row",
-                "marginBottom": 11,
-              },
-            ]
+            Object {
+              "flexDirection": "row",
+              "marginBottom": 11,
+            }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
             style={
               Object {
                 "marginRight": 14,
@@ -7540,8 +7549,11 @@ exports[`Article test on android renders full article 1`] = `
                 n e w
               </Text>
             </View>
-          </View>
-          <View
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
             style={
               Object {
                 "marginRight": 14,
@@ -7604,7 +7616,7 @@ exports[`Article test on android renders full article 1`] = `
                 e x c l u s i v e
               </Text>
             </View>
-          </View>
+          </Text>
         </View>
       </View>
     </View>
@@ -7613,7 +7625,7 @@ exports[`Article test on android renders full article 1`] = `
       style={null}
     >
       <View
-        className="sc-ifAKCX JuOZc"
+        className="sc-bxivhb akpSg"
         style={
           Array [
             Object {
@@ -7644,7 +7656,7 @@ exports[`Article test on android renders full article 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-bxivhb bZsssb"
+            className="sc-htpNat eVmptQ"
             ellipsizeMode="tail"
             style={
               Object {
@@ -7677,14 +7689,14 @@ exports[`Article test on android renders full article 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-bxivhb bZsssb"
+            className="sc-htpNat eVmptQ"
             ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 15,
+                "lineHeight": 13,
               }
             }
           >
@@ -7804,7 +7816,7 @@ exports[`Article test on android renders full article 1`] = `
       style={null}
     >
       <View
-        className="sc-gqjmRU ljgiGc"
+        className="sc-gZMcBi kaPTEC"
       >
         <View
           style={
@@ -8083,7 +8095,7 @@ exports[`Article test on android renders full article 1`] = `
       style={null}
     >
       <View
-        className="sc-VigVT kjtqqW"
+        className="sc-gqjmRU fLtNIQ"
       >
         <View
           style={

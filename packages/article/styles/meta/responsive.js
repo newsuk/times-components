@@ -4,9 +4,15 @@ import config from "../responsive-config";
 
 export const MetaTextElement = styled(Text)`
   padding: 12px 0 9px;
+
+  @media (min-width: ${config.mediumBreakpoint}) {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
   @media (min-width: ${config.wideBreakpoint}) {
     line-height: 18px;
-    padding: 5px 0 25px;
+    padding-bottom: 25px;
   }
 `;
 

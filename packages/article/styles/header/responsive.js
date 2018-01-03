@@ -17,12 +17,6 @@ export const HeadlineContainer = styled(Text)`
 `;
 export const LabelContainer = styled(View)`
   @media (min-width: ${config.wideBreakpoint}) {
-    margin-top: 20px;
-  }
-`;
-
-export const FlagContainer = styled(View)`
-  @media (min-width: ${config.wideBreakpoint}) {
-    margin-bottom: 30px;
+    margin-top: 0px;
   }
 `;
