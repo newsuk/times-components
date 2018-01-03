@@ -67,16 +67,15 @@ storiesOf("AuthorProfile", module)
   })
   .add("Loading", () => {
     const props = {
+      slug: "deborah-haynes",
       isLoading: true,
-      articlesLoading: true,
       pageSize,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
       onArticlePress: preventDefaultedAction("onArticlePress"),
-      analyticsStream: storybookReporter,
-      refetch: () => {}
+      analyticsStream: storybookReporter
     };
 
-    return <AuthorProfileContent {...props} />;
+    return <AuthorProfile {...props} />;
   })
   .add("With an error getting author", () => (
     <MockedProvider
