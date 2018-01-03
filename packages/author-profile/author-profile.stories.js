@@ -5,7 +5,6 @@ import { AuthorProfileProvider } from "@times-components/provider";
 import { MockedProvider } from "@times-components/utils/graphql";
 import storybookReporter from "@times-components/tealium/storybook";
 import AuthorProfile from "./author-profile";
-import AuthorProfileContent from "./author-profile-content";
 import {
   makeAuthor,
   makeArticleMocks,
