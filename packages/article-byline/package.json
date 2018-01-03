@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-byline",
-  "version": "0.10.8",
+  "version": "0.10.9",
   "description": "Article byline information",
   "main": "article-byline",
   "scripts": {
@@ -53,8 +53,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/link": "0.12.6",
-    "@times-components/markup": "0.15.0",
+    "@times-components/link": "0.13.0",
+    "@times-components/markup": "0.15.1",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
