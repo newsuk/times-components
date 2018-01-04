@@ -16,21 +16,6 @@
     "dextrose-stories": "dextrose-stories",
     "dextrose-clean": "dextrose-clean"
   },
-  "jest": {
-    "preset": "react-native",
-    "rootDir": "../../",
-    "coverageDirectory": "<rootDir>/packages/link/coverage/",
-    "collectCoverageFrom": [
-      "**/packages/link/*.js",
-      "!**/packages/link/*.stories.js"
-    ],
-    "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/link/__tests__/**/*.test.js"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/newsuk/times-components.git"
@@ -52,6 +37,7 @@
     "@storybook/addon-actions": "3.2.18",
     "@storybook/react-native": "3.2.18",
     "@times-components/eslint-config-thetimes": "0.0.2",
+    "@times-components/jest-configurator": "0.0.14",
     "@times-components/storybook": "0.2.1",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
@@ -72,7 +58,6 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/jest-configurator": "0.0.14",
     "lodash.pick": "4.4.0",
     "prop-types": "15.6.0"
   },

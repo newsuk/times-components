@@ -1,4 +1,7 @@
-import test from "../link-helper";
+/* eslint-env jest */
+import test from "../shared";
 import Link, { TextLink } from "../../link.web.js";
 
-test(Link, TextLink, "p");
+describe("Link tests on Web", () => {
+  test(Link, TextLink, "p");
+});
