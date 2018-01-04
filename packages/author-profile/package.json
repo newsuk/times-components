@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "0.37.2",
+  "version": "0.37.3",
   "description": "Author info along with articles they have written",
   "main": "author-profile",
   "scripts": {
@@ -35,7 +35,7 @@
   "devDependencies": {
     "@storybook/addon-actions": "3.2.18",
     "@storybook/react-native": "3.2.18",
-    "@times-components/error-view": "0.7.6",
+    "@times-components/error-view": "0.7.7",
     "@times-components/eslint-config-thetimes": "0.0.2",
     "@times-components/tealium": "0.1.5",
     "@times-components/utils": "0.0.9",
@@ -67,11 +67,11 @@
   },
   "dependencies": {
     "@times-components/article-summary": "0.13.1",
-    "@times-components/author-head": "0.15.4",
-    "@times-components/card": "0.16.4",
-    "@times-components/error-view": "0.7.6",
-    "@times-components/gradient": "0.3.5",
-    "@times-components/image": "1.10.2",
+    "@times-components/author-head": "0.15.5",
+    "@times-components/card": "0.16.5",
+    "@times-components/error-view": "0.7.7",
+    "@times-components/gradient": "0.3.6",
+    "@times-components/image": "1.10.3",
     "@times-components/link": "0.13.0",
     "@times-components/pagination": "0.12.14",
     "@times-components/provider": "0.20.3",

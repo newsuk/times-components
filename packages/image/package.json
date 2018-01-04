@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "1.10.2",
+  "version": "1.10.3",
   "main": "image",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -57,7 +57,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/gradient": "0.3.5",
+    "@times-components/gradient": "0.3.6",
     "@times-components/jest-configurator": "0.0.14",
     "prop-types": "15.6.0",
     "svgs": "3.1.1"

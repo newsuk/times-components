@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "0.24.1",
+  "version": "0.24.2",
   "description": "The article",
   "main": "article",
   "scripts": {
@@ -66,11 +66,11 @@
     "@times-components/ad": "0.6.5",
     "@times-components/article-byline": "0.10.9",
     "@times-components/article-flag": "0.9.6",
-    "@times-components/article-image": "0.10.0",
+    "@times-components/article-image": "0.10.1",
     "@times-components/article-label": "0.6.7",
-    "@times-components/caption": "0.9.9",
+    "@times-components/caption": "0.9.10",
     "@times-components/date-publication": "0.7.5",
-    "@times-components/image": "1.10.2",
+    "@times-components/image": "1.10.3",
     "@times-components/markup": "0.15.1",
     "@times-components/provider": "0.20.3",
     "@times-components/pull-quote": "0.1.1",
