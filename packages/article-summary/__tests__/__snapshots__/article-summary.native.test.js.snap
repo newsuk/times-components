@@ -442,7 +442,7 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
         "fontSize": 22,
         "fontWeight": "400",
         "lineHeight": 22,
-        "marginBottom": 8,
+        "marginBottom": 6,
       }
     }
   >
@@ -492,6 +492,7 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 15,
+        "marginBottom": 20,
       }
     }
     testID="datePublication"
