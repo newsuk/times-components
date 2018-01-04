@@ -9,6 +9,7 @@ import { renderTree, renderTrees } from "./markup";
 
 const multiParagraph = require("./fixtures/multi-paragraph.json");
 const multiParagraphWithAds = require("./fixtures/multi-paragraph-with-ads.json");
+const multiParagraphWithPullQuote = require("./fixtures/multi-paragraph-with-pullquote.json");
 const mixture = require("./fixtures/tag-mixture.json");
 const bio = require("./fixtures/bio.json");
 const ratings = require("./fixtures/ratings.json");
@@ -69,5 +70,10 @@ storiesOf("Markup", module)
           );
         }
       })}
+    </View>
+  ))
+  .add("Multiple paragraphs with pull quote", () => (
+    <View style={{ width: 320 }}>
+      {renderTrees(multiParagraphWithPullQuote)}
     </View>
   ));

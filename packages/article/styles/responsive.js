@@ -41,5 +41,6 @@ export const MetaContainer = styled(View)`
 const leadAssetBehaviour = leadAsset => (leadAsset ? "0" : "-9px");
 
 export const BodyContainer = styled(View)`
+  display: block;
   margin-top: ${props => leadAssetBehaviour(props.leadAsset)};
 `;

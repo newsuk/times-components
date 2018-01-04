@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.24.1"></a>
+## [0.24.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.24.0...@times-components/article@0.24.1) (2018-01-03)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.24.0"></a>
+# [0.24.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.23.2...@times-components/article@0.24.0) (2018-01-03)
+
+
+### Features
+
+* REPLAT-602 Add Pull Quotes ([#469](https://github.com/newsuk/times-components/issues/469)) ([b2ac5a0](https://github.com/newsuk/times-components/commit/b2ac5a0))
+
+
+
+
 <a name="0.23.2"></a>
 ## [0.23.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.23.1...@times-components/article@0.23.2) (2018-01-02)
 

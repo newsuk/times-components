@@ -2,15 +2,16 @@ import React from "react";
 import PropTypes from "prop-types";
 import { renderTrees } from "@times-components/markup";
 import ArticleImage from "@times-components/article-image";
+import PullQuote from "@times-components/pull-quote";
+import BodyParagraph from "./article-body-paragraph";
 
 import {
-  ParagraphContainer,
-  Paragraph,
   PrimaryImg,
   SecondaryImg,
-  InlineImg
+  InlineImg,
+  PullQuoteContainer,
+  PullQuoteResp
 } from "./styles/body/responsive";
-import styles from "./styles/body";
 
 const getImageContainer = imageType => {
   switch (imageType) {
@@ -28,14 +29,9 @@ const ArticleRow = props => {
   return renderTrees([data], {
     paragraph(key, attributes, children) {
       return (
-        <ParagraphContainer
-          testID={`paragraph-${index}`}
-          accessibilityLabel={`paragraph-${index}`}
-          key={key}
-          style={[styles.articleMainContentRow]}
-        >
-          <Paragraph style={styles.articleTextElement}>{children}</Paragraph>
-        </ParagraphContainer>
+        <BodyParagraph key={index} uid={index}>
+          {children}
+        </BodyParagraph>
       );
     },
     image(key, attributes) {
@@ -54,6 +50,20 @@ const ArticleRow = props => {
             }}
           />
         </ImageContainer>
+      );
+    },
+    pullQuote(key, { content, caption: { name, twitter } }) {
+      return (
+        <PullQuoteContainer key={key}>
+          <PullQuoteResp>
+            <PullQuote
+              key={key}
+              content={content}
+              caption={name}
+              twitter={twitter}
+            />
+          </PullQuoteResp>
+        </PullQuoteContainer>
       );
     }
   });

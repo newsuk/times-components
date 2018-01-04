@@ -5,7 +5,6 @@ import { AuthorProfileProvider } from "@times-components/provider";
 import { MockedProvider } from "@times-components/utils/graphql";
 import storybookReporter from "@times-components/tealium/storybook";
 import AuthorProfile from "./author-profile";
-import AuthorProfileContent from "./author-profile-content";
 import {
   makeAuthor,
   makeArticleMocks,
@@ -67,16 +66,15 @@ storiesOf("AuthorProfile", module)
   })
   .add("Loading", () => {
     const props = {
+      slug: "deborah-haynes",
       isLoading: true,
-      articlesLoading: true,
       pageSize,
       onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress"),
       onArticlePress: preventDefaultedAction("onArticlePress"),
-      analyticsStream: storybookReporter,
-      refetch: () => {}
+      analyticsStream: storybookReporter
     };
 
-    return <AuthorProfileContent {...props} />;
+    return <AuthorProfile {...props} />;
   })
   .add("With an error getting author", () => (
     <MockedProvider

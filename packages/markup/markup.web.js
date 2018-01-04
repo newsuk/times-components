@@ -1,6 +1,7 @@
-import Ad from "@times-components/ad";
 import React from "react";
 import { StyleSheet } from "react-native";
+import Ad from "@times-components/ad";
+import PullQuote from "@times-components/pull-quote";
 import renderTreeWithoutDefaults from "./render-tree-without-defaults";
 
 const styles = StyleSheet.create({
@@ -34,6 +35,15 @@ const defaultRenderers = {
   },
   break(key) {
     return <br key={key} />;
+  },
+  pullQuote(key, attributes) {
+    return (
+      <PullQuote
+        key={key}
+        content={attributes.content}
+        caption={attributes.caption.name}
+      />
+    );
   }
 };
 

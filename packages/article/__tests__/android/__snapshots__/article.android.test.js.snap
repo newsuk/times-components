@@ -694,7 +694,6 @@ exports[`Article test on android renders article no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-0"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -708,7 +707,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -756,7 +754,6 @@ exports[`Article test on android renders article no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-1"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -770,7 +767,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -804,7 +800,6 @@ exports[`Article test on android renders article no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-2"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -818,7 +813,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -841,7 +835,6 @@ exports[`Article test on android renders article no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-3"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -855,7 +848,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -878,7 +870,6 @@ exports[`Article test on android renders article no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-4"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -892,7 +883,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -915,7 +905,6 @@ exports[`Article test on android renders article no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-5"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -929,7 +918,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -952,7 +940,6 @@ exports[`Article test on android renders article no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-6"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -966,7 +953,6 @@ exports[`Article test on android renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -1755,7 +1741,6 @@ exports[`Article test on android renders article no label 1`] = `
     >
       <View
         accessibilityLabel="paragraph-0"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -1769,7 +1754,6 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -1817,7 +1801,6 @@ exports[`Article test on android renders article no label 1`] = `
     >
       <View
         accessibilityLabel="paragraph-1"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -1831,7 +1814,6 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -1865,7 +1847,6 @@ exports[`Article test on android renders article no label 1`] = `
     >
       <View
         accessibilityLabel="paragraph-2"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -1879,7 +1860,6 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -1902,7 +1882,6 @@ exports[`Article test on android renders article no label 1`] = `
     >
       <View
         accessibilityLabel="paragraph-3"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -1916,7 +1895,6 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -1939,7 +1917,6 @@ exports[`Article test on android renders article no label 1`] = `
     >
       <View
         accessibilityLabel="paragraph-4"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -1953,7 +1930,6 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -1976,7 +1952,6 @@ exports[`Article test on android renders article no label 1`] = `
     >
       <View
         accessibilityLabel="paragraph-5"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -1990,7 +1965,6 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -2013,7 +1987,6 @@ exports[`Article test on android renders article no label 1`] = `
     >
       <View
         accessibilityLabel="paragraph-6"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -2027,7 +2000,6 @@ exports[`Article test on android renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -2673,7 +2645,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-0"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -2687,7 +2658,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -2735,7 +2705,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-1"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -2749,7 +2718,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -2783,7 +2751,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-2"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -2797,7 +2764,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -2820,7 +2786,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-3"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -2834,7 +2799,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -2857,7 +2821,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-4"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -2871,7 +2834,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -2894,7 +2856,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-5"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -2908,7 +2869,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -2931,7 +2891,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-6"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -2945,7 +2904,6 @@ exports[`Article test on android renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -3570,7 +3528,6 @@ exports[`Article test on android renders article no label no flags no standfirst
     >
       <View
         accessibilityLabel="paragraph-0"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -3584,7 +3541,6 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -3632,7 +3588,6 @@ exports[`Article test on android renders article no label no flags no standfirst
     >
       <View
         accessibilityLabel="paragraph-1"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -3646,7 +3601,6 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -3680,7 +3634,6 @@ exports[`Article test on android renders article no label no flags no standfirst
     >
       <View
         accessibilityLabel="paragraph-2"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -3694,7 +3647,6 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -3717,7 +3669,6 @@ exports[`Article test on android renders article no label no flags no standfirst
     >
       <View
         accessibilityLabel="paragraph-3"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -3731,7 +3682,6 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -3754,7 +3704,6 @@ exports[`Article test on android renders article no label no flags no standfirst
     >
       <View
         accessibilityLabel="paragraph-4"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -3768,7 +3717,6 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -3791,7 +3739,6 @@ exports[`Article test on android renders article no label no flags no standfirst
     >
       <View
         accessibilityLabel="paragraph-5"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -3805,7 +3752,6 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -3828,7 +3774,6 @@ exports[`Article test on android renders article no label no flags no standfirst
     >
       <View
         accessibilityLabel="paragraph-6"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -3842,7 +3787,6 @@ exports[`Article test on android renders article no label no flags no standfirst
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -4645,7 +4589,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
     >
       <View
         accessibilityLabel="paragraph-0"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -4659,7 +4602,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -4707,7 +4649,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
     >
       <View
         accessibilityLabel="paragraph-1"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -4721,7 +4662,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -4755,7 +4695,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
     >
       <View
         accessibilityLabel="paragraph-2"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -4769,7 +4708,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -4792,7 +4730,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
     >
       <View
         accessibilityLabel="paragraph-3"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -4806,7 +4743,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -4829,7 +4765,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
     >
       <View
         accessibilityLabel="paragraph-4"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -4843,7 +4778,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -4866,7 +4800,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
     >
       <View
         accessibilityLabel="paragraph-5"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -4880,7 +4813,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -4903,7 +4835,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
     >
       <View
         accessibilityLabel="paragraph-6"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -4917,7 +4848,6 @@ exports[`Article test on android renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -5577,7 +5507,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-0"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -5591,7 +5520,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -5639,7 +5567,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-1"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -5653,7 +5580,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -5687,7 +5613,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-2"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -5701,7 +5626,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -5724,7 +5648,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-3"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -5738,7 +5661,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -5761,7 +5683,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-4"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -5775,7 +5696,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -5798,7 +5718,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-5"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -5812,7 +5731,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -5835,7 +5753,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
     >
       <View
         accessibilityLabel="paragraph-6"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -5849,7 +5766,6 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -6617,7 +6533,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     >
       <View
         accessibilityLabel="paragraph-0"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -6631,7 +6546,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -6679,7 +6593,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     >
       <View
         accessibilityLabel="paragraph-1"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -6693,7 +6606,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -6727,7 +6639,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     >
       <View
         accessibilityLabel="paragraph-2"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -6741,7 +6652,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -6764,7 +6674,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     >
       <View
         accessibilityLabel="paragraph-3"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -6778,7 +6687,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -6801,7 +6709,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     >
       <View
         accessibilityLabel="paragraph-4"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -6815,7 +6722,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -6838,7 +6744,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     >
       <View
         accessibilityLabel="paragraph-5"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -6852,7 +6757,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -6875,7 +6779,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
     >
       <View
         accessibilityLabel="paragraph-6"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -6889,7 +6792,6 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -7214,17 +7116,15 @@ exports[`Article test on android renders full article 1`] = `
       },
       Object {
         "data": Object {
-          "attributes": Object {},
-          "children": Array [
-            Object {
-              "attributes": Object {
-                "value": "Thatcher set out, first as party leader and then as prime minister, to overturn the consensus that had shaped postwar British politics and to replace it with a more competitive ethos of free enterprise. She wanted to rescue Britain from the debilitated state to which she believed it had been reduced by socialism and, in the words of her last bravura speech as Prime Minister to the House of Commons, to give back “control to people over their own lives and over their livelihood”. ",
-              },
-              "children": Array [],
-              "name": "text",
+          "attributes": Object {
+            "caption": Object {
+              "name": "Katie Glass",
+              "twitter": "@KatieGlassST",
             },
-          ],
-          "name": "paragraph",
+            "content": "[The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child",
+          },
+          "children": Array [],
+          "name": "pullQuote",
         },
         "index": 13,
         "type": "articleBodyRow",
@@ -7235,7 +7135,7 @@ exports[`Article test on android renders full article 1`] = `
           "children": Array [
             Object {
               "attributes": Object {
-                "value": "It was time to depart, and she announced this to a meeting of the Cabinet on November 22. With typical courage she then went to the House of Commons to speak in a confidence debate. It was a rousing performance, a reminder of her gallantry, flair and conviction. She had not tired of her mission, but those whom she had led had tired of her. ",
+                "value": "Thatcher set out, first as party leader and then as prime minister, to overturn the consensus that had shaped postwar British politics and to replace it with a more competitive ethos of free enterprise. She wanted to rescue Britain from the debilitated state to which she believed it had been reduced by socialism and, in the words of her last bravura speech as Prime Minister to the House of Commons, to give back “control to people over their own lives and over their livelihood”. ",
               },
               "children": Array [],
               "name": "text",
@@ -7252,7 +7152,7 @@ exports[`Article test on android renders full article 1`] = `
           "children": Array [
             Object {
               "attributes": Object {
-                "value": "Thatcher resigned as Prime Minister on November 28, leaving Downing Street, a little tearfully, though with the partial satisfaction of knowing that she was not to be succeeded by Heseltine but by her own favourite, Major, who had defeated Heseltine and Hurd in the parliamentary ballot to follow her. ",
+                "value": "It was time to depart, and she announced this to a meeting of the Cabinet on November 22. With typical courage she then went to the House of Commons to speak in a confidence debate. It was a rousing performance, a reminder of her gallantry, flair and conviction. She had not tired of her mission, but those whom she had led had tired of her. ",
               },
               "children": Array [],
               "name": "text",
@@ -7269,7 +7169,7 @@ exports[`Article test on android renders full article 1`] = `
           "children": Array [
             Object {
               "attributes": Object {
-                "value": "Life out of office was initially miserable. Like her predecessor, Heath, she seemed disorientated by the loss of power. But with typical gumption she threw herself into establishing a foundation (named after her) to support business training projects in Eastern Europe and the former Soviet Union and the establishment of a chair of Enterprise Studies at Cambridge University. She toured the world, speaking for large fees in the foundation’s name and to its great financial benefit. She remained immensely popular in several countries, particularly the US, Japan and Eastern Europe. She was the symbol of the defeat of communism and the triumph in the 1980s of market economics. ",
+                "value": "Thatcher resigned as Prime Minister on November 28, leaving Downing Street, a little tearfully, though with the partial satisfaction of knowing that she was not to be succeeded by Heseltine but by her own favourite, Major, who had defeated Heseltine and Hurd in the parliamentary ballot to follow her. ",
               },
               "children": Array [],
               "name": "text",
@@ -7286,7 +7186,7 @@ exports[`Article test on android renders full article 1`] = `
           "children": Array [
             Object {
               "attributes": Object {
-                "value": "She returned sporadically, and not always helpfully, to the political fray. Her support for Major waned as he set out on a more pragmatic European policy than her own. She allowed her own more nationalist opinions to seep out into the public domain, and became ever more forceful, outspoken and extreme in her denunciations of the moves towards political and monetary union in Europe. ",
+                "value": "Life out of office was initially miserable. Like her predecessor, Heath, she seemed disorientated by the loss of power. But with typical gumption she threw herself into establishing a foundation (named after her) to support business training projects in Eastern Europe and the former Soviet Union and the establishment of a chair of Enterprise Studies at Cambridge University. She toured the world, speaking for large fees in the foundation’s name and to its great financial benefit. She remained immensely popular in several countries, particularly the US, Japan and Eastern Europe. She was the symbol of the defeat of communism and the triumph in the 1980s of market economics. ",
               },
               "children": Array [],
               "name": "text",
@@ -7295,6 +7195,23 @@ exports[`Article test on android renders full article 1`] = `
           "name": "paragraph",
         },
         "index": 17,
+        "type": "articleBodyRow",
+      },
+      Object {
+        "data": Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "She returned sporadically, and not always helpfully, to the political fray. Her support for Major waned as he set out on a more pragmatic European policy than her own. She allowed her own more nationalist opinions to seep out into the public domain, and became ever more forceful, outspoken and extreme in her denunciations of the moves towards political and monetary union in Europe. ",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "paragraph",
+        },
+        "index": 18,
         "type": "articleBodyRow",
       },
     ]
@@ -7782,7 +7699,6 @@ exports[`Article test on android renders full article 1`] = `
     >
       <View
         accessibilityLabel="paragraph-0"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -7796,7 +7712,6 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -7844,7 +7759,6 @@ exports[`Article test on android renders full article 1`] = `
     >
       <View
         accessibilityLabel="paragraph-1"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -7858,7 +7772,6 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -8101,7 +8014,6 @@ exports[`Article test on android renders full article 1`] = `
     >
       <View
         accessibilityLabel="paragraph-3"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -8115,7 +8027,6 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -8138,7 +8049,6 @@ exports[`Article test on android renders full article 1`] = `
     >
       <View
         accessibilityLabel="paragraph-4"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -8152,7 +8062,6 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {
@@ -8397,7 +8306,6 @@ exports[`Article test on android renders full article 1`] = `
     >
       <View
         accessibilityLabel="paragraph-6"
-        className="sc-EHOje gZSaKg"
         style={
           Array [
             Object {
@@ -8411,7 +8319,6 @@ exports[`Article test on android renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bZQynM ktuHXD"
           ellipsizeMode="tail"
           style={
             Object {

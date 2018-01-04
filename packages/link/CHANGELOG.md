@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.13.0"></a>
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/link@0.12.6...@times-components/link@0.13.0) (2018-01-03)
+
+
+### Features
+
+* Add Android Ripple effect for links ([#487](https://github.com/newsuk/times-components/issues/487)) ([d0c122d](https://github.com/newsuk/times-components/commit/d0c122d))
+
+
+
+
 <a name="0.12.6"></a>
 ## [0.12.6](https://github.com/newsuk/times-components/compare/@times-components/link@0.12.5...@times-components/link@0.12.6) (2018-01-02)
 

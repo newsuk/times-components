@@ -1,6 +1,7 @@
-import Ad from "@times-components/ad";
 import React from "react";
 import { Text, StyleSheet } from "react-native";
+import Ad from "@times-components/ad";
+import PullQuote from "@times-components/pull-quote";
 import renderTreeWithoutDefaults from "./render-tree-without-defaults";
 
 const styles = StyleSheet.create({
@@ -51,6 +52,15 @@ const defaultRenderers = {
   },
   break(key) {
     return <Text key={key}>{"\n"}</Text>;
+  },
+  pullQuote(key, attributes) {
+    return (
+      <PullQuote
+        key={key}
+        content={attributes.content}
+        caption={attributes.caption.name}
+      />
+    );
   }
 };
 
