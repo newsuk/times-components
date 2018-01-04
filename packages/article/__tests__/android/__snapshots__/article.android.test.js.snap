@@ -1516,10 +1516,7 @@ exports[`Article test on android renders article no label 1`] = `
             }
           }
         >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          <View
             style={
               Object {
                 "marginRight": 14,
@@ -1582,11 +1579,8 @@ exports[`Article test on android renders article no label 1`] = `
                 n e w
               </Text>
             </View>
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          </View>
+          <View
             style={
               Object {
                 "marginRight": 14,
@@ -1649,7 +1643,7 @@ exports[`Article test on android renders article no label 1`] = `
                 e x c l u s i v e
               </Text>
             </View>
-          </Text>
+          </View>
         </View>
       </View>
     </View>
@@ -4367,10 +4361,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             }
           }
         >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          <View
             style={
               Object {
                 "marginRight": 14,
@@ -4433,11 +4424,8 @@ exports[`Article test on android renders article no standfirst 1`] = `
                 n e w
               </Text>
             </View>
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          </View>
+          <View
             style={
               Object {
                 "marginRight": 14,
@@ -4500,7 +4488,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
                 e x c l u s i v e
               </Text>
             </View>
-          </Text>
+          </View>
         </View>
       </View>
     </View>
@@ -6314,10 +6302,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             }
           }
         >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          <View
             style={
               Object {
                 "marginRight": 14,
@@ -6380,11 +6365,8 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
                 n e w
               </Text>
             </View>
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          </View>
+          <View
             style={
               Object {
                 "marginRight": 14,
@@ -6447,7 +6429,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
                 e x c l u s i v e
               </Text>
             </View>
-          </Text>
+          </View>
         </View>
       </View>
     </View>
@@ -7483,10 +7465,7 @@ exports[`Article test on android renders full article 1`] = `
             }
           }
         >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          <View
             style={
               Object {
                 "marginRight": 14,
@@ -7549,11 +7528,8 @@ exports[`Article test on android renders full article 1`] = `
                 n e w
               </Text>
             </View>
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          </View>
+          <View
             style={
               Object {
                 "marginRight": 14,
@@ -7616,7 +7592,7 @@ exports[`Article test on android renders full article 1`] = `
                 e x c l u s i v e
               </Text>
             </View>
-          </Text>
+          </View>
         </View>
       </View>
     </View>

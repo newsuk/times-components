@@ -1439,10 +1439,7 @@ exports[`Article test on ios renders article no label 1`] = `
             }
           }
         >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          <View
             style={
               Object {
                 "marginRight": 14,
@@ -1505,11 +1502,8 @@ exports[`Article test on ios renders article no label 1`] = `
                 new
               </Text>
             </View>
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          </View>
+          <View
             style={
               Object {
                 "marginRight": 14,
@@ -1572,7 +1566,7 @@ exports[`Article test on ios renders article no label 1`] = `
                 exclusive
               </Text>
             </View>
-          </Text>
+          </View>
         </View>
       </View>
     </View>
@@ -4167,10 +4161,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
             }
           }
         >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          <View
             style={
               Object {
                 "marginRight": 14,
@@ -4233,11 +4224,8 @@ exports[`Article test on ios renders article no standfirst 1`] = `
                 new
               </Text>
             </View>
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          </View>
+          <View
             style={
               Object {
                 "marginRight": 14,
@@ -4300,7 +4288,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
                 exclusive
               </Text>
             </View>
-          </Text>
+          </View>
         </View>
       </View>
     </View>
@@ -6032,10 +6020,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
             }
           }
         >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          <View
             style={
               Object {
                 "marginRight": 14,
@@ -6098,11 +6083,8 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
                 new
               </Text>
             </View>
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          </View>
+          <View
             style={
               Object {
                 "marginRight": 14,
@@ -6165,7 +6147,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
                 exclusive
               </Text>
             </View>
-          </Text>
+          </View>
         </View>
       </View>
     </View>
@@ -7158,10 +7140,7 @@ exports[`Article test on ios renders full article 1`] = `
             }
           }
         >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          <View
             style={
               Object {
                 "marginRight": 14,
@@ -7224,11 +7203,8 @@ exports[`Article test on ios renders full article 1`] = `
                 new
               </Text>
             </View>
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          </View>
+          <View
             style={
               Object {
                 "marginRight": 14,
@@ -7291,7 +7267,7 @@ exports[`Article test on ios renders full article 1`] = `
                 exclusive
               </Text>
             </View>
-          </Text>
+          </View>
         </View>
       </View>
     </View>
