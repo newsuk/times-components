@@ -38,6 +38,10 @@ class AuthorProfileContent extends React.Component {
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
   }
 
+  componentWillUnmount() {
+    global.cancelAnimationFrame(this.scrollAnimationFrame);
+  }
+
   onViewableItemsChanged(info) {
     if (!info.changed.length) return [];
 
@@ -95,7 +99,7 @@ class AuthorProfileContent extends React.Component {
     }
 
     const scrollToTopNextFrame = () => {
-      setTimeout(() => {
+      this.scrollAnimationFrame = global.requestAnimationFrame(() => {
         this.listRef.scrollToOffset({
           offset: 0,
           animated: true
