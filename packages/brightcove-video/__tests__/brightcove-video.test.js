@@ -179,3 +179,52 @@ it("will call native fullscreen player if 'directToFullscreen option passed'", (
 
   expect(mockNativeModule.playVideo.mock.calls).toHaveLength(1);
 });
+
+it("will handle an error properly", () => {
+  const root = renderer.create(
+    <BrightcoveVideo
+      policyKey={policyKey}
+      videoId={videoId}
+      accountId={accountId}
+      poster={{
+        uri:
+          "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs="
+      }}
+      autoplay
+    />
+  );
+
+  const rootInstance = root.getInstance();
+
+  rootInstance.handleError({ code: "XxX", message: "a bad booboo occured" });
+
+  expect(root.toJSON()).toMatchSnapshot();
+});
+
+it("the player can trigger errors", () => {
+  const root = renderer.create(
+    <BrightcoveVideo
+      policyKey={policyKey}
+      videoId={videoId}
+      accountId={accountId}
+      poster={{
+        uri:
+          "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs="
+      }}
+      autoplay
+    />
+  );
+
+  const rootInstance = root.getInstance();
+
+  rootInstance.setState({ isLaunched: true });
+
+  rootInstance.playerRef.bcv.onError({
+    nativeEvent: {
+      code: "XxX",
+      message: "a bad booboo occured"
+    }
+  });
+
+  expect(root.toJSON()).toMatchSnapshot();
+});

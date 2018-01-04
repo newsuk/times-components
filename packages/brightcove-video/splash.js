@@ -1,9 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, Image } from "react-native";
+import { View, Image, StyleSheet } from "react-native";
 import PlayIcon from "./play-icon";
 
 const SourcePropType = Image.propTypes.source;
+
+const styles = StyleSheet.create({
+  overlay: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center"
+  }
+});
 
 const Splash = ({ poster, width, height, playIcon }) => (
   <View testID="splash-component" accessibilityLabel="splash-component">
@@ -24,18 +35,7 @@ const Splash = ({ poster, width, height, playIcon }) => (
         }}
       />
     )}
-    <View
-      style={{
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width,
-        height,
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
-      }}
-    >
+    <View style={[styles.overlay, { width, height }]}>
       <PlayIcon icon={playIcon} />
     </View>
   </View>

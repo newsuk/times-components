@@ -42,16 +42,20 @@ exports[`renders poster correctly before launch 1`] = `
     />
     <View
       style={
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "height": 180,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "top": 0,
-          "width": 320,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 180,
+            "width": 320,
+          },
+        ]
       }
     >
       <View>
@@ -124,16 +128,20 @@ exports[`renders poster with custom play icon if specified 1`] = `
     />
     <View
       style={
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "height": 180,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "top": 0,
-          "width": 320,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 180,
+            "width": 320,
+          },
+        ]
       }
     >
       <View>
@@ -143,6 +151,314 @@ exports[`renders poster with custom play icon if specified 1`] = `
         >
           ▶️
         </span>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`the player can trigger errors 1`] = `
+<View
+  accessibilityLabel="error-component"
+  testID="error-component"
+>
+  <Image
+    source={
+      Object {
+        "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=",
+      }
+    }
+    style={
+      Object {
+        "height": 180,
+        "width": 320,
+      }
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgba(0, 0, 0, 0.7)",
+          "flex": 1,
+          "justifyContent": "center",
+          "left": 0,
+          "position": "absolute",
+          "top": 0,
+        },
+        Object {
+          "height": 180,
+          "width": 320,
+        },
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "white",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 20,
+          "marginBottom": 5,
+        }
+      }
+    >
+      Something’s gone wrong
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "white",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 14,
+          "marginBottom": 15,
+          "opacity": 0.8,
+          "textAlign": "center",
+        }
+      }
+    >
+      Please check your network connection
+      
+
+      and tap retry to continue
+    </Text>
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      collapsable={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#006699",
+            "borderRadius": 2,
+            "flexDirection": "row",
+            "paddingHorizontal": 16,
+            "paddingVertical": 12,
+          }
+        }
+      >
+        <svg
+          height={17.099999999999998}
+          style={Object {}}
+          viewBox="0 0 100 114"
+          width={15}
+        >
+          <circle
+            cx={50}
+            cy={64}
+            fill="none"
+            r={43}
+            stroke="white"
+            strokeDasharray={202.63272615654165}
+            strokeWidth={14}
+            style={Object {}}
+          />
+          <path
+            d="M50 0 L 85 21 L 50 42z"
+            fill="white"
+            style={Object {}}
+          />
+        </svg>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "white",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "letterSpacing": 1,
+              "lineHeight": 15,
+              "paddingLeft": 5,
+              "position": "relative",
+              "top": 3,
+            }
+          }
+        >
+          RETRY
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`will handle an error properly 1`] = `
+<View
+  accessibilityLabel="error-component"
+  testID="error-component"
+>
+  <Image
+    source={
+      Object {
+        "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=",
+      }
+    }
+    style={
+      Object {
+        "height": 180,
+        "width": 320,
+      }
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgba(0, 0, 0, 0.7)",
+          "flex": 1,
+          "justifyContent": "center",
+          "left": 0,
+          "position": "absolute",
+          "top": 0,
+        },
+        Object {
+          "height": 180,
+          "width": 320,
+        },
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "white",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 20,
+          "marginBottom": 5,
+        }
+      }
+    >
+      Something’s gone wrong
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "white",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 14,
+          "marginBottom": 15,
+          "opacity": 0.8,
+          "textAlign": "center",
+        }
+      }
+    >
+      Please check your network connection
+      
+
+      and tap retry to continue
+    </Text>
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      collapsable={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#006699",
+            "borderRadius": 2,
+            "flexDirection": "row",
+            "paddingHorizontal": 16,
+            "paddingVertical": 12,
+          }
+        }
+      >
+        <svg
+          height={17.099999999999998}
+          style={Object {}}
+          viewBox="0 0 100 114"
+          width={15}
+        >
+          <circle
+            cx={50}
+            cy={64}
+            fill="none"
+            r={43}
+            stroke="white"
+            strokeDasharray={202.63272615654165}
+            strokeWidth={14}
+            style={Object {}}
+          />
+          <path
+            d="M50 0 L 85 21 L 50 42z"
+            fill="white"
+            style={Object {}}
+          />
+        </svg>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "white",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "letterSpacing": 1,
+              "lineHeight": 15,
+              "paddingLeft": 5,
+              "position": "relative",
+              "top": 3,
+            }
+          }
+        >
+          RETRY
+        </Text>
       </View>
     </View>
   </View>
@@ -212,16 +528,20 @@ exports[`will reset if 'resetOnFinish' is true & video finishes 1`] = `
     />
     <View
       style={
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "height": 180,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "top": 0,
-          "width": 320,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 180,
+            "width": 320,
+          },
+        ]
       }
     >
       <View>
@@ -294,16 +614,20 @@ exports[`will reset properly 1`] = `
     />
     <View
       style={
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "height": 180,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "top": 0,
-          "width": 320,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 180,
+            "width": 320,
+          },
+        ]
       }
     >
       <View>

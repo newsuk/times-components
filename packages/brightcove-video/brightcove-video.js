@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 import Player from "./brightcove-player";
 import Splash from "./splash";
+import VideoError from "./error";
 
 const BrightcoveFullscreenPlayerModule =
   NativeModules.BrightcoveFullscreenPlayer;
@@ -17,19 +18,23 @@ class BrightcoveVideo extends Component {
     super(props);
 
     this.state = {
-      isLaunched: props.autoplay
+      isLaunched: props.autoplay,
+      error: null
     };
 
     this.play = this.play.bind(this);
     this.reset = this.reset.bind(this);
     this.handleFinish = this.handleFinish.bind(this);
+    this.handleError = this.handleError.bind(this);
   }
 
   // specifically check if is launched has changed and block update if it has not;
   // this is so we don't keep reseting our player reference
   shouldComponentUpdate(nextProps, nextState) {
     return (
-      nextState.isLaunched !== this.state.isLaunched || nextProps !== this.props
+      nextState.isLaunched !== this.state.isLaunched ||
+      nextState.error !== this.state.error ||
+      nextProps !== this.props
     );
   }
 
@@ -58,7 +63,7 @@ class BrightcoveVideo extends Component {
   }
 
   reset() {
-    this.setState({ isLaunched: false });
+    this.setState({ isLaunched: false, error: null });
   }
 
   handleFinish() {
@@ -69,8 +74,18 @@ class BrightcoveVideo extends Component {
     this.props.onFinish();
   }
 
+  handleError(error) {
+    this.setState({ error });
+
+    this.props.onError(error);
+  }
+
   render() {
     this.playerRef = null;
+
+    if (this.state.error) {
+      return <VideoError {...this.props} onReset={this.reset} />;
+    }
 
     if (this.state.isLaunched) {
       return (
@@ -79,6 +94,7 @@ class BrightcoveVideo extends Component {
             this.playerRef = ref;
           }}
           {...this.props}
+          onError={this.handleError}
           onFinish={this.handleFinish}
           autoplay
         />
