@@ -2,8 +2,9 @@ const jestConfigurator = require("@times-components/jest-configurator");
 
 module.exports = Object.assign(jestConfigurator("article", "web"), {
   collectCoverageFrom: [
-    "**/packages/article/*.js",
+    "**/packages/article/**/*.js",
     "**/packages/article/**/*.web.js",
+    "!**/packages/article/styles/**/index.js",
     "!**/packages/article/article.js",
     "!**/packages/article/article-content.js",
     "!**/packages/article/*stories*",
@@ -11,5 +12,7 @@ module.exports = Object.assign(jestConfigurator("article", "web"), {
     "!**/packages/article/*fructose*",
     "!**/packages/article/data-helper.js",
     "!**/packages/article/**/*.android.js",
+    "!**/packages/article/coverage/**",
+    "!**/packages/article/__tests__/**"
   ]
 });
