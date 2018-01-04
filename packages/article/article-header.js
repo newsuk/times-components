@@ -25,9 +25,9 @@ const renderFlags = flags => {
   return (
     <View style={styles.articleFlag}>
       {flags.map(flag => (
-        <Text key={flag} style={styles.articleFlagContainer}>
+        <View key={flag} style={styles.articleFlagContainer}>
           {flagsMapping.get(flag)}
-        </Text>
+        </View>
       ))}
     </View>
   );
