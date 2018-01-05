@@ -33,11 +33,8 @@ export const MetaContainer = withResponsiveStyles(View, {
 
 /* --- Body --- */
 
-const leadAssetBehaviour = leadAsset => (leadAsset ? "0" : "-9px");
-
 export const BodyContainer = withResponsiveStyles(View, {
   base: () => `
     display: block;
-    margin-top: ${props => leadAssetBehaviour(props.leadAsset)};
   `
 });

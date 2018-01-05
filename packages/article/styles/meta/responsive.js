@@ -9,7 +9,7 @@ export const MetaTextElement = withResponsiveStyles(Text, {
   `,
   wideUp: () => `
     line-height: 18px;
-    padding: 25px;
+    padding-bottom: 25px;
   `
 });
 
