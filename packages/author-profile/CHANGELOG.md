@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.37.4"></a>
+## [0.37.4](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.37.3...@times-components/author-profile@0.37.4) (2018-01-05)
+
+
+### Bug Fixes
+
+* ensure consistent scrolling behaviour on author profile ([#488](https://github.com/newsuk/times-components/issues/488)) ([bf02cdd](https://github.com/newsuk/times-components/commit/bf02cdd))
+
+
+
+
 <a name="0.37.3"></a>
 ## [0.37.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.37.2...@times-components/author-profile@0.37.3) (2018-01-04)
 
