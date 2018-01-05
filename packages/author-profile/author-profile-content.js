@@ -38,6 +38,10 @@ class AuthorProfileContent extends React.Component {
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
   }
 
+  componentWillUnmount() {
+    global.cancelAnimationFrame(this.scrollAnimationFrame);
+  }
+
   onViewableItemsChanged(info) {
     if (!info.changed.length) return [];
 
@@ -94,23 +98,26 @@ class AuthorProfileContent extends React.Component {
       );
     }
 
+    const scrollToTopNextFrame = () => {
+      this.scrollAnimationFrame = global.requestAnimationFrame(() => {
+        this.listRef.scrollToOffset({
+          offset: 0,
+          animated: true
+        });
+      });
+    };
+
     const paginationComponent = (hideResults = false) => (
       <AuthorProfilePagination
         count={count}
         hideResults={hideResults}
         onNext={(...args) => {
           onNext(...args);
-          this.listRef.scrollToOffset({
-            offset: 0,
-            animated: true
-          });
+          scrollToTopNextFrame();
         }}
         onPrev={(...args) => {
           onPrev(...args);
-          this.listRef.scrollToOffset({
-            offset: 0,
-            animated: true
-          });
+          scrollToTopNextFrame();
         }}
         page={page}
         pageSize={pageSize}
