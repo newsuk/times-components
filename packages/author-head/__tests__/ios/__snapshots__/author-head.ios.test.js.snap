@@ -7,7 +7,6 @@ exports[`AuthorHead test on ios renders 1`] = `
     Object {
       "alignItems": "center",
       "backgroundColor": "transparent",
-      "paddingBottom": 50,
     }
   }
 >
@@ -18,7 +17,8 @@ exports[`AuthorHead test on ios renders 1`] = `
         "alignItems": "center",
         "backgroundColor": "#F9F8F3",
         "flexDirection": "column",
-        "paddingBottom": 50,
+        "paddingBottom": 30,
+        "paddingTop": 20,
         "width": "100%",
       }
     }
@@ -34,7 +34,6 @@ exports[`AuthorHead test on ios renders 1`] = `
           "color": "#000",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 30,
-          "paddingTop": 32,
         }
       }
       testID="author-name"
@@ -60,14 +59,12 @@ exports[`AuthorHead test on ios renders 1`] = `
     >
       
     </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <View
       style={
         Object {
-          "maxWidth": "88%",
           "paddingBottom": 32,
+          "paddingLeft": 10,
+          "paddingRight": 10,
         }
       }
     >
@@ -85,7 +82,7 @@ exports[`AuthorHead test on ios renders 1`] = `
           }
         }
       />
-    </Text>
+    </View>
   </View>
 </View>
 `;
@@ -97,7 +94,6 @@ exports[`AuthorHead test on ios renders with data 1`] = `
     Object {
       "alignItems": "center",
       "backgroundColor": "transparent",
-      "paddingBottom": 50,
     }
   }
 >
@@ -108,11 +104,121 @@ exports[`AuthorHead test on ios renders with data 1`] = `
         "alignItems": "center",
         "backgroundColor": "#F9F8F3",
         "flexDirection": "column",
-        "paddingBottom": 50,
+        "paddingBottom": 30,
+        "paddingTop": 20,
         "width": "100%",
       }
     }
   >
+    <View
+      style={
+        Object {
+          "marginBottom": 20,
+        }
+      }
+    >
+      <View
+        aspectRatio={1}
+        style={
+          Object {
+            "borderColor": "#FFF",
+            "borderRadius": 50,
+            "borderWidth": 5,
+            "marginLeft": "auto",
+            "marginRight": "auto",
+            "overflow": "hidden",
+            "width": 100,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          <Image
+            onLoad={[Function]}
+            source={
+              Object {
+                "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                },
+                undefined,
+              ]
+            }
+          />
+          <View
+            onLayout={[Function]}
+            style={
+              Array [
+                Object {
+                  "flex": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#f9f9f9",
+                    "#ededed",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                    },
+                  ]
+                }
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
     <Text
       accessibilityLabel="author-name"
       accessibilityRole="heading"
@@ -124,7 +230,6 @@ exports[`AuthorHead test on ios renders with data 1`] = `
           "color": "#000",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 30,
-          "paddingTop": 32,
         }
       }
       testID="author-name"
@@ -154,6 +259,7 @@ exports[`AuthorHead test on ios renders with data 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "paddingBottom": 16,
           "paddingTop": 16,
         }
       }
@@ -196,14 +302,12 @@ exports[`AuthorHead test on ios renders with data 1`] = `
         carolmidgley
       </Text>
     </View>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <View
       style={
         Object {
-          "maxWidth": "88%",
           "paddingBottom": 32,
+          "paddingLeft": 10,
+          "paddingRight": 10,
         }
       }
     >
@@ -249,120 +353,6 @@ exports[`AuthorHead test on ios renders with data 1`] = `
         </Text>
          each week and a weekly comment piece on Fridays.
       </Text>
-    </Text>
-  </View>
-  <View
-    style={
-      Object {
-        "bottom": 0,
-        "height": 100,
-        "left": 0,
-        "position": "absolute",
-        "right": 0,
-        "width": "100%",
-      }
-    }
-  >
-    <View
-      aspectRatio={1}
-      style={
-        Object {
-          "borderColor": "#FFF",
-          "borderRadius": 50,
-          "borderWidth": 5,
-          "marginLeft": "auto",
-          "marginRight": "auto",
-          "overflow": "hidden",
-          "width": 100,
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "height": "100%",
-            "width": "100%",
-          }
-        }
-      >
-        <Image
-          onLoad={[Function]}
-          source={
-            Object {
-              "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200",
-            }
-          }
-          style={
-            Array [
-              Object {
-                "bottom": 0,
-                "left": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-              },
-              Object {
-                "height": "100%",
-                "width": "100%",
-              },
-              undefined,
-            ]
-          }
-        />
-        <View
-          onLayout={[Function]}
-          style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-              null,
-            ]
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-              }
-            }
-          >
-            <BVLinearGradient
-              colors={
-                Array [
-                  "#f9f9f9",
-                  "#ededed",
-                ]
-              }
-              end={
-                Object {
-                  "x": -0.09302964577578221,
-                  "y": 0.11488204504197774,
-                }
-              }
-              locations={
-                Array [
-                  0,
-                  1,
-                ]
-              }
-              start={
-                Object {
-                  "x": 1,
-                  "y": 0,
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "flex": 1,
-                  },
-                ]
-              }
-            />
-          </View>
-        </View>
-      </View>
     </View>
   </View>
 </View>
@@ -375,7 +365,6 @@ exports[`AuthorHead test on ios renders without profile picture 1`] = `
     Object {
       "alignItems": "center",
       "backgroundColor": "transparent",
-      "paddingBottom": 50,
     }
   }
 >
@@ -386,7 +375,8 @@ exports[`AuthorHead test on ios renders without profile picture 1`] = `
         "alignItems": "center",
         "backgroundColor": "#F9F8F3",
         "flexDirection": "column",
-        "paddingBottom": 50,
+        "paddingBottom": 30,
+        "paddingTop": 20,
         "width": "100%",
       }
     }
@@ -402,7 +392,6 @@ exports[`AuthorHead test on ios renders without profile picture 1`] = `
           "color": "#000",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 30,
-          "paddingTop": 32,
         }
       }
       testID="author-name"
@@ -432,6 +421,7 @@ exports[`AuthorHead test on ios renders without profile picture 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "paddingBottom": 16,
           "paddingTop": 16,
         }
       }
@@ -474,14 +464,12 @@ exports[`AuthorHead test on ios renders without profile picture 1`] = `
         carolmidgley
       </Text>
     </View>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <View
       style={
         Object {
-          "maxWidth": "88%",
           "paddingBottom": 32,
+          "paddingLeft": 10,
+          "paddingRight": 10,
         }
       }
     >
@@ -527,7 +515,7 @@ exports[`AuthorHead test on ios renders without profile picture 1`] = `
         </Text>
          each week and a weekly comment piece on Fridays.
       </Text>
-    </Text>
+    </View>
   </View>
 </View>
 `;
