@@ -4,16 +4,7 @@ import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
   ...globalStyle,
-  ...sharedStyles,
-  articleMetaElement: {
-    ...sharedStyles.articleMetaElement,
-    paddingTop: 9,
-    paddingBottom: 4
-  },
-  byline: {
-    ...sharedStyles.byline,
-    lineHeight: 14
-  }
+  ...sharedStyles
 });
 
 export default styles;

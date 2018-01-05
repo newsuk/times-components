@@ -2,17 +2,17 @@ import { StyleSheet } from "react-native";
 import sharedStyles from "./shared";
 import globalStyle from "../shared";
 
-const webStyles = {
+const nativeStyles = {
   ...sharedStyles,
   articleTextElement: {
     ...sharedStyles.articleTextElement,
-    marginTop: 0
+    marginBottom: 20
   }
 };
 
 const styles = StyleSheet.create({
   ...globalStyle,
-  ...webStyles
+  ...nativeStyles
 });
 
 export default styles;
