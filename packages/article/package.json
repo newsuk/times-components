@@ -74,6 +74,7 @@
     "@times-components/markup": "0.15.1",
     "@times-components/provider": "0.20.3",
     "@times-components/pull-quote": "0.1.1",
+    "@times-components/responsive-styles": "0.2.6",
     "@times-components/tracking": "0.5.10",
     "lodash.get": "4.4.2",
     "prop-types": "15.6.0",

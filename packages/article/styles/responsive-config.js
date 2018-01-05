@@ -13,6 +13,13 @@ const mediumBpPositioning = `
   }
 `;
 
+const mediumBpPositioningRS = `
+  width: ${mediumBpWidth};
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+`;
+
 const wideBpPositioning = `
 @media (min-width: ${wideBreakpoint}) {
   width: ${wideBpWidth};
@@ -40,5 +47,6 @@ export default {
   mediumBpPositioning,
   wideBpPositioning,
   articleContainerPadding,
-  showHideToggle
+  showHideToggle,
+  mediumBpPositioningRS
 };
