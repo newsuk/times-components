@@ -1,25 +1,22 @@
 import { Text, View } from "react-native";
-import styled from "styled-components";
-import config from "../responsive-config";
+import withResponsiveStyles from "@times-components/responsive-styles";
 
-export const MetaTextElement = styled(Text)`
-  padding: 12px 0 9px;
-  @media (min-width: ${config.wideBreakpoint}) {
+export const MetaTextElement = withResponsiveStyles(Text, {
+  base: () => "padding: 12px 0 9px;",
+  wideUp: () => `
     line-height: 18px;
     padding: 5px 0 25px;
-  }
-`;
+  `
+});
 
-export const Meta = styled(View)`
-  margin-left: 10px;
-  margin-right: 10px;
-
-  @media (min-width: ${config.mediumBreakpoint}) {
+export const Meta = withResponsiveStyles(View, {
+  base: () => `
+    margin-left: 10px;
+    margin-right: 10px;
+  `,
+  mediumUp: () => `
     margin-left: 0;
     margin-right: 0;
-  }
-
-  @media (min-width: ${config.wideBreakpoint}) {
-    padding-top: 0px;
-  }
-`;
+  `,
+  wideUp: () => "padding-top: 0px;"
+});
