@@ -60,6 +60,7 @@
     "@times-components/gradient": "0.3.7",
     "@times-components/jest-configurator": "0.0.15",
     "prop-types": "15.6.0",
+    "react-native-svg": "5.5.0",
     "svgs": "3.1.1"
   },
   "peerDependencies": {
