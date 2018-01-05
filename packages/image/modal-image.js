@@ -11,9 +11,6 @@ const style = StyleSheet.create({
         height: "100%",
         flexDirection: "column"
     },
-    text: {
-        color: 'white'
-    },
     imageContainer: {
         flexGrow: 1,
         justifyContent: 'center'
