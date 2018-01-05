@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "0.24.6",
+  "version": "0.24.7",
   "description": "The article",
   "main": "article",
   "scripts": {
@@ -64,16 +64,16 @@
   },
   "dependencies": {
     "@times-components/ad": "0.6.6",
-    "@times-components/article-byline": "0.10.11",
+    "@times-components/article-byline": "0.10.12",
     "@times-components/article-flag": "0.9.6",
     "@times-components/article-image": "0.10.1",
     "@times-components/article-label": "0.6.8",
     "@times-components/caption": "0.9.10",
     "@times-components/date-publication": "0.7.5",
     "@times-components/image": "1.10.3",
-    "@times-components/markup": "0.15.3",
+    "@times-components/markup": "0.15.4",
     "@times-components/provider": "0.20.3",
-    "@times-components/pull-quote": "0.1.2",
+    "@times-components/pull-quote": "0.1.3",
     "@times-components/tracking": "0.5.10",
     "lodash.get": "4.4.2",
     "prop-types": "15.6.0",
