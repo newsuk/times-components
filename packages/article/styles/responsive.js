@@ -10,7 +10,7 @@ export const MainContainer = withResponsiveStyles(View, {
 
 export const HeaderContainer = withResponsiveStyles(View, {
   base: () => config.articleContainerPadding,
-  mediumUp: () => config.mediumBpPositioningRS,
+  mediumUp: () => config.mediumBpPositioning,
   wideUp: () => `width: ${config.wideBpWidth};`
 });
 

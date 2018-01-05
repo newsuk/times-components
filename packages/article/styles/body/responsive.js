@@ -6,7 +6,7 @@ import config from "../responsive-config";
 
 export const ParagraphContainer = withResponsiveStyles("div", {
   base: () => config.articleContainerPadding,
-  mediumUp: () => config.mediumBpPositioningRS,
+  mediumUp: () => config.mediumBpPositioning,
   wideUp: () => `width: ${config.wideBpWidth};`
 });
 
@@ -33,9 +33,9 @@ export const LeadAsset = withResponsiveStyles(View, {
   wideUp: () => "width: 100%; margin: 0 auto;"
 });
 
-export const LeadAssetMobile = config.showHideToggleRS(View, true);
+export const LeadAssetMobile = config.showHideToggle(View, true);
 
-export const LeadAssetDesktop = config.showHideToggleRS(
+export const LeadAssetDesktop = config.showHideToggle(
   View,
   false,
   `
@@ -46,9 +46,9 @@ export const LeadAssetDesktop = config.showHideToggleRS(
 `
 );
 
-export const MediaContainerMobile = config.showHideToggleRS(View, true);
+export const MediaContainerMobile = config.showHideToggle(View, true);
 
-export const MediaContainerDesktop = config.showHideToggleRS(View);
+export const MediaContainerDesktop = config.showHideToggle(View);
 
 /* --- Article Images --- */
 
@@ -74,7 +74,7 @@ export const SecondaryImg = withResponsiveStyles(View, {
     padding-left: 10px;
     padding-right: 10px;
   `,
-  mediumUp: () => config.mediumBpPositioningRS,
+  mediumUp: () => config.mediumBpPositioning,
   wideUp: () => `width: ${config.wideBpWidth};`
 });
 
@@ -87,7 +87,7 @@ export const InlineImg = withResponsiveStyles(View, {
     padding-left: 10px;
     padding-right: 10px;
   `,
-  mediumUp: () => config.mediumBpPositioningRS,
+  mediumUp: () => config.mediumBpPositioning,
   wideUp: () => `width: ${config.wideBpWidth};`
 });
 
@@ -112,6 +112,6 @@ export const PullQuoteResp = withResponsiveStyles(View, {
 
 export const PullQuoteContainer = withResponsiveStyles(View, {
   base: () => `display: block;`,
-  mediumUp: () => config.mediumBpPositioningRS,
+  mediumUp: () => config.mediumBpPositioning,
   wideUp: () => `width: ${config.wideBpWidth};`
 });
