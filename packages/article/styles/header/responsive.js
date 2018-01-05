@@ -1,28 +1,25 @@
 import { View, Text } from "react-native";
-import styled from "styled-components";
-import config from "../responsive-config";
+import withResponsiveStyles from "@times-components/responsive-styles";
 
-export const HeadlineContainer = styled(Text)`
-  font-size: 30px;
-  color: #1d1d1b;
-  margin-bottom: 8px;
-  font-family: "TimesModern-Bold";
-  font-weight: 400;
-  line-height: 30px;
-
-  @media (min-width: ${config.mediumBreakpoint}) {
+export const HeadlineContainer = withResponsiveStyles(Text, {
+  base: () => `
+    font-size: 30px;
+    color: #1d1d1b;
+    margin-bottom: 8px;
+    font-family: "TimesModern-Bold";
+    font-weight: 400;
+    line-height: 30px;
+  `,
+  mediumUp: () => `
     font-size: 45px;
     line-height: 45px;
-  }
-`;
-export const LabelContainer = styled(View)`
-  @media (min-width: ${config.wideBreakpoint}) {
-    margin-top: 20px;
-  }
-`;
+  `
+});
 
-export const FlagContainer = styled(View)`
-  @media (min-width: ${config.wideBreakpoint}) {
-    margin-bottom: 30px;
-  }
-`;
+export const LabelContainer = withResponsiveStyles(View, {
+  wideUp: () => "margin-top: 20px;"
+});
+
+export const FlagContainer = withResponsiveStyles(View, {
+  wideUp: () => "margin-bottom: 30px;"
+});
