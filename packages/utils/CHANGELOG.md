@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.0.10"></a>
+## [0.0.10](https://github.com/newsuk/times-components/compare/@times-components/utils@0.0.9...@times-components/utils@0.0.10) (2018-01-05)
+
+
+### Bug Fixes
+
+* clean up properly after a graphql error ([#501](https://github.com/newsuk/times-components/issues/501)) ([fbd30f0](https://github.com/newsuk/times-components/commit/fbd30f0))
+
+
+
+
 <a name="0.0.9"></a>
 ## [0.0.9](https://github.com/newsuk/times-components/compare/@times-components/utils@0.0.8...@times-components/utils@0.0.9) (2017-12-22)
 
