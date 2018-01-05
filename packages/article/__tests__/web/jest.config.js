@@ -4,6 +4,7 @@ module.exports = Object.assign(jestConfigurator("article", "web"), {
   collectCoverageFrom: [
     "**/packages/article/**/*.js",
     "**/packages/article/**/*.web.js",
+    "!**/packages/article/article-body-paragraph.js",
     "!**/packages/article/styles/**/index.js",
     "!**/packages/article/article.js",
     "!**/packages/article/article-content.js",
