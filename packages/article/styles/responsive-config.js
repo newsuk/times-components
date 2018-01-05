@@ -1,3 +1,4 @@
+import withResponsiveStlyes from "@times-components/responsive-styles";
 const mediumBreakpoint = "768px";
 const wideBreakpoint = "1024px";
 
@@ -39,6 +40,17 @@ const showHideToggle = (show, styles) => `
   }
 `;
 
+const showHideToggleRS = (component, show, styles = "") =>
+  withResponsiveStlyes(component, {
+    base: () => `
+      display: ${show ? "flex" : "none"};
+    `,
+    wideUp: () => `
+      display: ${show ? "none" : "flex"};
+      ${styles}
+    `
+  });
+
 export default {
   mediumBreakpoint,
   wideBreakpoint,
@@ -48,5 +60,6 @@ export default {
   wideBpPositioning,
   articleContainerPadding,
   showHideToggle,
-  mediumBpPositioningRS
+  mediumBpPositioningRS,
+  showHideToggleRS
 };
