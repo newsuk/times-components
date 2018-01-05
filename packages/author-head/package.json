@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-head",
-  "version": "0.15.8",
+  "version": "0.15.9",
   "main": "author-head",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
