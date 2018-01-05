@@ -56,6 +56,6 @@
     "graphql": "0.11.7",
     "prop-types": "15.6.0",
     "react": "16.2.0",
-    "react-apollo": "2.0.1"
+    "react-apollo-temp": "2.0.5"
   }
 }
