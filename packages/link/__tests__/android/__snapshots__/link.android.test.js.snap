@@ -1,18 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Link doesnt change inner text styles 1`] = `
+exports[`Link test on android Link doesnt change inner text styles 1`] = `
 <View
   accessibilityComponentType={undefined}
   accessibilityLabel={undefined}
   accessibilityTraits={undefined}
   accessible={true}
+  collapsable={undefined}
   hitSlop={undefined}
-  nativeBackgroundAndroid={
-    Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
-    }
-  }
+  isTVSelectable={true}
+  nativeID={undefined}
   onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -20,8 +17,13 @@ exports[`Link doesnt change inner text styles 1`] = `
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  pointerEvents="box-only"
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
   testID={undefined}
+  tvParallaxProperties={undefined}
 >
   <Text
     accessible={true}
@@ -33,7 +35,36 @@ exports[`Link doesnt change inner text styles 1`] = `
 </View>
 `;
 
-exports[`TextLink renders correctly with children 1`] = `
+exports[`Link test on android Link renders correctly 1`] = `
+<View
+  accessibilityComponentType={undefined}
+  accessibilityLabel={undefined}
+  accessibilityTraits={undefined}
+  accessible={true}
+  collapsable={undefined}
+  hitSlop={undefined}
+  isTVSelectable={true}
+  nativeID={undefined}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+  testID={undefined}
+  tvParallaxProperties={undefined}
+>
+  The Times
+</View>
+`;
+
+exports[`Link test on android TextLink renders correctly with children 1`] = `
 <Text
   accessibilityRole="link"
   accessible={true}
@@ -54,7 +85,7 @@ exports[`TextLink renders correctly with children 1`] = `
 </Text>
 `;
 
-exports[`TextLink renders correctly with multiple styles 1`] = `
+exports[`Link test on android TextLink renders correctly with multiple styles 1`] = `
 <Text
   accessibilityRole="link"
   accessible={true}
@@ -80,7 +111,7 @@ exports[`TextLink renders correctly with multiple styles 1`] = `
 </Text>
 `;
 
-exports[`TextLink renders correctly with specific styles 1`] = `
+exports[`Link test on android TextLink renders correctly with specific styles 1`] = `
 <Text
   accessibilityRole="link"
   accessible={true}

@@ -1,8 +1,7 @@
 /* eslint-env jest */
-
 import { Text } from "react-native";
-import test from "../link-helper";
-import Link, { TextLink } from "../../link.android.js";
+import test from "../shared";
+import Link, { TextLink } from "../../link.js";
 
 jest.mock("react-native", () => {
   const reactNative = require.requireActual("react-native");
@@ -13,4 +12,6 @@ jest.mock("react-native", () => {
   return reactNative;
 });
 
-test(Link, TextLink, Text);
+describe("Link test on android", () => {
+  test(Link, TextLink, Text);
+});
