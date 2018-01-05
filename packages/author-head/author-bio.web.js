@@ -5,10 +5,15 @@ import Bio from "./author-bio.base";
 
 const BioContainer = withResponsiveStyles(View, {
   base: () => `
-    max-width: 88%;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 32px;
   `,
-  mediumUp: () => "max-width: 680px",
+  mediumUp: () => `
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 680px
+  `,
   hugeUp: () => "max-width: 760px"
 });
 

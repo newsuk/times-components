@@ -1,7 +1,6 @@
 /* eslint-env jest */
-
 import { Text } from "react-native";
-import test from "../link-helper";
+import test from "../shared";
 import Link, { TextLink } from "../../link.js";
 
 jest.mock("react-native", () => {
@@ -9,8 +8,10 @@ jest.mock("react-native", () => {
   reactNative.Platform.OS = "ios";
   jest
     .spyOn(reactNative.Platform, "select")
-    .mockImplementation(obj => obj.android || obj.default);
+    .mockImplementation(obj => obj.ios || obj.default);
   return reactNative;
 });
 
-test(Link, TextLink, Text);
+describe("Link test on ios", () => {
+  test(Link, TextLink, Text);
+});

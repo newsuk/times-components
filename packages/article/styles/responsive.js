@@ -3,7 +3,7 @@ import withResponsiveStyles from "@times-components/responsive-styles";
 import config from "./responsive-config";
 
 export const MainContainer = withResponsiveStyles(View, {
-  wideUp: () => "padding-top: 15px; margin: 0 auto;"
+  wideUp: () => "padding-top: 20px; margin: 0 auto;"
 });
 
 /* --- Header --- */
@@ -11,7 +11,10 @@ export const MainContainer = withResponsiveStyles(View, {
 export const HeaderContainer = withResponsiveStyles(View, {
   base: () => config.articleContainerPadding,
   mediumUp: () => config.mediumBpPositioning,
-  wideUp: () => `width: ${config.wideBpWidth};`
+  wideUp: () => `
+    width: ${config.wideBpWidth};
+    margin-bottom: 15px;
+  `
 });
 
 /* --- Meta --- */

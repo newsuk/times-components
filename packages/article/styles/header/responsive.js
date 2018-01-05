@@ -17,9 +17,5 @@ export const HeadlineContainer = withResponsiveStyles(Text, {
 });
 
 export const LabelContainer = withResponsiveStyles(View, {
-  wideUp: () => "margin-top: 20px;"
-});
-
-export const FlagContainer = withResponsiveStyles(View, {
-  wideUp: () => "margin-bottom: 30px;"
+  wideUp: () => "margin-top: 0px;"
 });

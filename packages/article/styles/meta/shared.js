@@ -20,7 +20,7 @@ const sharedStyles = {
   datePublication: {
     color: "#696969",
     fontSize: 13,
-    lineHeight: 15,
+    lineHeight: 13,
     fontFamily: "GillSansMTStd-Medium"
   },
   byline: {

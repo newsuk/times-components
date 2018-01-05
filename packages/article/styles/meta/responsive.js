@@ -3,9 +3,13 @@ import withResponsiveStyles from "@times-components/responsive-styles";
 
 export const MetaTextElement = withResponsiveStyles(Text, {
   base: () => "padding: 12px 0 9px;",
+  mediumUp: () => `
+    padding-top: 4px;
+    padding-bottom: 4px;
+  `,
   wideUp: () => `
     line-height: 18px;
-    padding: 5px 0 25px;
+    padding: 25px;
   `
 });
 

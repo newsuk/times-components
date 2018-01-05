@@ -18,15 +18,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexDirection: "column",
     backgroundColor: "#F9F8F3",
-    paddingBottom: 50
+    paddingTop: 20,
+    paddingBottom: 30
   },
   photoContainer: {
-    width: "100%",
-    height: 100,
-    bottom: 0,
-    left: 0,
-    right: 0,
-    position: "absolute"
+    marginBottom: 20
   },
   roundImage: {
     width: 100,
@@ -39,6 +35,7 @@ const styles = StyleSheet.create({
   },
   twitter: {
     paddingTop: 16,
+    paddingBottom: 16,
     flexDirection: "row",
     ...Platform.select({
       android: {
@@ -55,8 +52,7 @@ const styles = StyleSheet.create({
   },
   wrapper: {
     alignItems: "center",
-    backgroundColor: "transparent",
-    paddingBottom: 50
+    backgroundColor: "transparent"
   }
 });
 
@@ -72,12 +68,12 @@ const AuthorHead = props => {
   return (
     <View style={styles.wrapper} pointerEvents="box-none">
       <View accessibilityRole="banner" style={styles.container}>
+        {imageComponent}
         <AuthorName name={name} />
         <AuthorTitle title={title} />
         <TwitterLink handle={twitter} onPress={onTwitterLinkPress} />
         <Bio bio={bio} />
       </View>
-      {imageComponent}
     </View>
   );
 };

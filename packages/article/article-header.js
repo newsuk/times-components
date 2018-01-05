@@ -9,11 +9,7 @@ import {
 import ArticleLabel from "@times-components/article-label";
 import { Text, View, ViewPropTypes } from "react-native";
 import styles from "./styles/header";
-import {
-  HeadlineContainer,
-  LabelContainer,
-  FlagContainer
-} from "./styles/header/responsive";
+import { HeadlineContainer, LabelContainer } from "./styles/header/responsive";
 
 const { style: ViewStylePropTypes } = ViewPropTypes;
 
@@ -27,13 +23,13 @@ const flagsMapping = new Map([
 const renderFlags = flags => {
   if (!flags.length) return null;
   return (
-    <FlagContainer style={[styles.articleFlag]}>
+    <View style={styles.articleFlag}>
       {flags.map(flag => (
         <View key={flag} style={styles.articleFlagContainer}>
           {flagsMapping.get(flag)}
         </View>
       ))}
-    </FlagContainer>
+    </View>
   );
 };
 
