@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.24.4"></a>
+## [0.24.4](https://github.com/newsuk/times-components/compare/@times-components/article@0.24.3...@times-components/article@0.24.4) (2018-01-05)
+
+
+### Bug Fixes
+
+* make styling updates to article header and article meta ([#492](https://github.com/newsuk/times-components/issues/492)) ([55537f8](https://github.com/newsuk/times-components/commit/55537f8))
+
+
+
+
 <a name="0.24.3"></a>
 ## [0.24.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.24.2...@times-components/article@0.24.3) (2018-01-05)
 
