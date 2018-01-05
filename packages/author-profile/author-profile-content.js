@@ -104,7 +104,7 @@ class AuthorProfileContent extends React.Component {
           offset: 0,
           animated: true
         });
-      }, 0);
+      });
     };
 
     const paginationComponent = (hideResults = false) => (
