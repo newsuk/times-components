@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.24.3"></a>
+## [0.24.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.24.2...@times-components/article@0.24.3) (2018-01-05)
+
+
+### Bug Fixes
+
+* REPLAT-1167 update web article snapshots ([#497](https://github.com/newsuk/times-components/issues/497)) ([60fea21](https://github.com/newsuk/times-components/commit/60fea21))
+
+
+
+
 <a name="0.24.2"></a>
 ## [0.24.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.24.1...@times-components/article@0.24.2) (2018-01-04)
 
