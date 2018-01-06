@@ -17,7 +17,7 @@ import {
   HeaderContainer,
   MetaContainer,
   BodyContainer
-} from "./styles/responsive";
+} from "./styles/responsive.web";
 
 const withAdComposer = (children, section = "article") => (
   <AdComposer section={section}>{children}</AdComposer>

@@ -44,7 +44,8 @@
   },
   "dependencies": {
     "enzyme": "3.2.0",
-    "enzyme-adapter-react-16": "1.1.0"
+    "enzyme-adapter-react-16": "1.1.0",
+    "recursive-readdir-synchronous": "0.0.3"
   },
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.0.2",

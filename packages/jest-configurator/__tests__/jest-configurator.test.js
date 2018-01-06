@@ -34,6 +34,16 @@ describe("Jest Configurator Tests", () => {
       const config = jestConfigurator("article", "android");
       expect(config.rootDir).toEqual("../../../../");
     });
+
+    it("should respect coverage ignore globs", () => {
+      const config = jestConfigurator("jest-configurator", "android", [
+        "setup-jest.js"
+      ]);
+      expect(config.collectCoverageFrom).toEqual([
+        "**/packages/jest-configurator/coverage.js",
+        "**/packages/jest-configurator/jest-configurator.js"
+      ]);
+    });
   });
 
   // Web specific

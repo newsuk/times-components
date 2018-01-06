@@ -1,3 +1,5 @@
+const getCoveragePaths = require("./coverage");
+
 /**
  * Jest platform specific configuration
  */
@@ -35,12 +37,17 @@ const webSpecific = {
  * @param {string} platform - platform you are using ["android", "ios", "web"]
  */
 
-const config = (component, platform) => ({
+const config = (component, platform, coverageIgnoreGlobs) => ({
   preset: "react-native",
   ...(platform === "web" ? webSpecific : nativeSpecific(platform)),
   rootDir: "../../../../",
   transformIgnorePatterns: ["node_modules/(?!@times-components)/"],
   coverageDirectory: `<rootDir>/packages/${component}/coverage/${platform}/`,
+  collectCoverageFrom: getCoveragePaths(
+    `../${component}`,
+    platform,
+    coverageIgnoreGlobs
+  ),
   testMatch: [
     `<rootDir>/packages/${component}/__tests__/${platform}/*.test.js`
   ],

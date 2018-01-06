@@ -13,7 +13,7 @@
   },
   "scripts": {
     "native": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "yarn storybook:test-build && jest ./lib && lerna run test --since",
+    "test": "yarn storybook:test-build && jest ./lib && lerna run test --since --stream",
     "functional-test:web": "./lib/functional_tests/run-web.sh",
     "functional-test:ios": "./lib/functional_tests/run-ios.sh",
     "functional-test:android": "./lib/functional_tests/run-android.sh",
