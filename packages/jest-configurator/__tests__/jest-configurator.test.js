@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-import jestConfigurator from "../";
+import jestConfigurator from "../src/jest-configurator";
 
 describe("Jest Configurator Tests", () => {
   describe("All platforms", () => {
@@ -37,11 +37,12 @@ describe("Jest Configurator Tests", () => {
 
     it("should respect coverage ignore globs", () => {
       const config = jestConfigurator("jest-configurator", "android", [
+        "lib",
         "setup-jest.js"
       ]);
       expect(config.collectCoverageFrom).toEqual([
-        "**/packages/jest-configurator/coverage.js",
-        "**/packages/jest-configurator/jest-configurator.js"
+        "**/packages/jest-configurator/src/coverage.js",
+        "**/packages/jest-configurator/src/jest-configurator.js"
       ]);
     });
   });

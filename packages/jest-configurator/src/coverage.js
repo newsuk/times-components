@@ -1,3 +1,5 @@
+// @flow
+
 const path = require("path");
 const recursive = require("recursive-readdir-synchronous");
 
@@ -19,7 +21,7 @@ const staticFilesAndFolders = [
 ];
 
 // group each file path by either universal, android, ios or web
-const toPlatformMap = filePath => (fileMap, file) => {
+const toPlatformMap = (filePath: string) => (fileMap, file) => {
   const { dir, name } = path.parse(path.relative(filePath, file));
   const { name: subName, ext } = path.parse(name);
   const platform = ext ? ext.substr(1) : "universal";
@@ -60,7 +62,11 @@ const makeCoveragePaths = (filePath, platform, files) => {
 // will return an array of paths which coverage will be chosen from
 // currently does not group and use wildcards with exclusions i.e.
 // is file specific and inclusive only
-module.exports = (filePath, platform, ignore = []) => {
+module.exports = (
+  filePath: string,
+  platform: string,
+  ignore: Array<string> = []
+) => {
   const files = recursive(filePath, [
     ...staticFilesAndFolders,
     configFiles,

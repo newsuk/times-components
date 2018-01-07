@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-const getCoveragePaths = require("../coverage");
+import getCoveragePaths from "../src/coverage";
 
 describe("getCoveragePaths should", () => {
   it("return a single universal file for web", () => {

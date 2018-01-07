@@ -1,6 +1,7 @@
 **/node_modules/*
 **/coverage/*
 dist
+lib
 __snapshots__
 **/package.json
 android/*
