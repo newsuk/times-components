@@ -26,6 +26,8 @@ class ModalImage extends Component {
     this.state = {
       showModal: false
     };
+    this.hideModal = this.hideModal.bind(this);
+    this.showModal = this.showModal.bind(this);
   }
 
   showModal() {
@@ -50,21 +52,17 @@ class ModalImage extends Component {
       <View>
         <Modal
           visible={this.state.showModal}
-          onRequestClose={() => this.hideModal()}
+          onRequestClose={this.hideModal}
           presentationStyle="fullScreen"
         >
           <View style={style.modal}>
-            <Link onPress={() => this.hideModal()}>{closeButton}</Link>
+            <Link onPress={this.hideModal}>{closeButton}</Link>
             <View style={style.imageContainer}>
               <Image {...this.props} style={style.image} />
             </View>
           </View>
         </Modal>
-        <Link
-          onPress={() => {
-            this.showModal();
-          }}
-        >
+        <Link onPress={this.showModal}>
           <Image {...this.props} />
         </Link>
       </View>
