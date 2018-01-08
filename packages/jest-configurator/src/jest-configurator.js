@@ -1,4 +1,4 @@
-const getCoveragePaths = require("./coverage");
+import getCoveragePaths from "./coverage";
 
 /**
  * Jest platform specific configuration
@@ -37,7 +37,7 @@ const webSpecific = {
  * @param {string} platform - platform you are using ["android", "ios", "web"]
  */
 
-const config = (component, platform, coverageIgnoreGlobs) => ({
+export default (component, platform, coverageIgnoreGlobs) => ({
   preset: "react-native",
   ...(platform === "web" ? webSpecific : nativeSpecific(platform)),
   rootDir: "../../../../",
@@ -58,5 +58,3 @@ const config = (component, platform, coverageIgnoreGlobs) => ({
   setupTestFrameworkScriptFile:
     "<rootDir>/packages/jest-configurator/setup-jest.js"
 });
-
-module.exports = config;

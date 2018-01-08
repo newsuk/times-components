@@ -5,7 +5,7 @@ const recursive = require("recursive-readdir-synchronous");
 
 // it's quite hard to match on things that start with dot seemingly?
 // these would be config files we'd never check for coverage
-const configFiles = file => path.basename(file)[0] === ".";
+const configFiles = file => path.basename(file).startsWith(".");
 
 // we'll never want coverage from these
 const staticFilesAndFolders = [
@@ -62,7 +62,7 @@ const makeCoveragePaths = (filePath, platform, files) => {
 // will return an array of paths which coverage will be chosen from
 // currently does not group and use wildcards with exclusions i.e.
 // is file specific and inclusive only
-module.exports = (
+export default (
   filePath: string,
   platform: string,
   ignore: Array<string> = []
