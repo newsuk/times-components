@@ -54,8 +54,8 @@ const defaultRenderers = {
   },
   link(key, attributes, renderedChildren) {
     return (
-      <TextLink key={key} style={styles.link} url={attributes.href}>
-        {renderedChildren}&nbsp;
+      <TextLink key={key} style={styles.link} url={attributes.href} onPress={() => null}>
+        {renderedChildren}
       </TextLink>
     );
   }
