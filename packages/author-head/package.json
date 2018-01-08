@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-head",
-  "version": "0.15.9",
+  "version": "0.15.10",
   "main": "author-head",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -46,8 +46,8 @@
   "devDependencies": {
     "@storybook/addon-actions": "3.2.18",
     "@storybook/react-native": "3.2.18",
-    "@times-components/eslint-config-thetimes": "0.0.2",
-    "@times-components/jest-configurator": "0.0.14",
+    "@times-components/eslint-config-thetimes": "0.1.0",
+    "@times-components/jest-configurator": "0.0.15",
     "@times-components/storybook": "0.2.1",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
@@ -70,11 +70,11 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/image": "1.10.3",
-    "@times-components/link": "0.13.1",
-    "@times-components/markup": "0.15.4",
-    "@times-components/responsive-styles": "0.2.6",
-    "@times-components/tracking": "0.5.10",
+    "@times-components/image": "1.10.4",
+    "@times-components/link": "0.13.2",
+    "@times-components/markup": "0.15.5",
+    "@times-components/responsive-styles": "0.2.7",
+    "@times-components/tracking": "0.5.11",
     "prop-types": "15.6.0",
     "styled-components": "2.2.3",
     "svgs": "3.1.1"

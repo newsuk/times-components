@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-byline",
-  "version": "0.10.12",
+  "version": "0.10.13",
   "description": "Article byline information",
   "main": "article-byline",
   "scripts": {
@@ -32,7 +32,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.2.18",
-    "@times-components/eslint-config-thetimes": "0.0.2",
+    "@times-components/eslint-config-thetimes": "0.1.0",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",
@@ -53,8 +53,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/link": "0.13.1",
-    "@times-components/markup": "0.15.4",
+    "@times-components/link": "0.13.2",
+    "@times-components/markup": "0.15.5",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
