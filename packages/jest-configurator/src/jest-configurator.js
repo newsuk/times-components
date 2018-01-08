@@ -1,13 +1,10 @@
-/**
- * Jest platform specific configuration
- */
+// @flow
 
-/**
- * iOS and Android specific configuration
- * @param {string} platform - platform you are using ["android", "ios", "web"]
- */
+import getCoveragePaths from "./coverage";
 
-const nativeSpecific = platform => ({
+export type Platform = "android" | "ios" | "web";
+
+const nativeSpecific = (platform: Platform) => ({
   haste: {
     defaultPlatform: platform,
     platforms: [platform],
@@ -15,10 +12,6 @@ const nativeSpecific = platform => ({
     moduleFileExtensions: [`${platform}.js`, "native.js", "js", "json"]
   }
 });
-
-/**
- * Web specific configuration
- */
 
 const webSpecific = {
   moduleNameMapper: {
@@ -28,19 +21,21 @@ const webSpecific = {
   moduleFileExtensions: ["web.js", "js", "json"]
 };
 
-/**
- * Exports a platform specific Jest config.
- * @constructor
- * @param {string} component - name of the foldername of the component
- * @param {string} platform - platform you are using ["android", "ios", "web"]
- */
-
-const config = (component, platform) => ({
+export default (
+  component: string,
+  platform: Platform,
+  coverageIgnoreGlobs: Array<string>
+) => ({
   preset: "react-native",
   ...(platform === "web" ? webSpecific : nativeSpecific(platform)),
   rootDir: "../../../../",
   transformIgnorePatterns: ["node_modules/(?!@times-components)/"],
   coverageDirectory: `<rootDir>/packages/${component}/coverage/${platform}/`,
+  collectCoverageFrom: getCoveragePaths(
+    `../${component}`,
+    platform,
+    coverageIgnoreGlobs
+  ),
   testMatch: [
     `<rootDir>/packages/${component}/__tests__/${platform}/*.test.js`
   ],
@@ -51,5 +46,3 @@ const config = (component, platform) => ({
   setupTestFrameworkScriptFile:
     "<rootDir>/packages/jest-configurator/setup-jest.js"
 });
-
-module.exports = config;

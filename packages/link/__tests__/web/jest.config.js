@@ -1,9 +1,3 @@
-const jestConfigurator = require("@times-components/jest-configurator");
+const jestConfigurator = require("@times-components/jest-configurator").default;
 
-module.exports = Object.assign(jestConfigurator("link", "web"), {
-  collectCoverageFrom: [
-    "**/packages/link/*.web.js",
-    "**/packages/link/text-link.js",
-    "!**/packages/link/*.stories.js"
-  ]
-});
+module.exports = jestConfigurator("link", "web");
