@@ -1,4 +1,4 @@
-import withResponsiveStlyes from "@times-components/responsive-styles";
+import withResponsiveStyles from "@times-components/responsive-styles";
 
 const mediumBpWidth = "83.33333333%";
 const wideBpWidth = "58.33333%";
@@ -16,7 +16,7 @@ const articleContainerPadding = `
 `;
 
 const showHideToggle = (component, show, styles = "") =>
-  withResponsiveStlyes(component, {
+  withResponsiveStyles(component, {
     base: () => `
       display: ${show ? "flex" : "none"};
     `,
