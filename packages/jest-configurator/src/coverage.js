@@ -45,13 +45,15 @@ const toPlatformMap = (filePath: string) => (
   const { dir, name } = path.parse(path.relative(filePath, file));
   const { name: subName, ext } = path.parse(name);
   const platform = toValidExt(ext);
-  const files = fileMap[platform || "universal"] || new Set();
+  const normalizedPlatform = platform || "universal";
+
+  const files = fileMap[normalizedPlatform] || new Set();
 
   files.add(path.join(dir, platform ? subName || name : `${subName}${ext}`));
 
   return {
     ...fileMap,
-    [platform || "universal"]: files
+    [normalizedPlatform]: files
   };
 };
 
