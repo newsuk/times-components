@@ -38,6 +38,7 @@ describe("Jest Configurator Tests", () => {
     it("should respect coverage ignore globs", () => {
       const config = jestConfigurator("jest-configurator", "android", [
         "lib",
+        "flow-typed",
         "setup-jest.js"
       ]);
       expect(config.collectCoverageFrom).toEqual([

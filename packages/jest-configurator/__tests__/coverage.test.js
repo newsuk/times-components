@@ -21,6 +21,12 @@ describe("getCoveragePaths should", () => {
     ]);
   });
 
+  it("return a universal file if extension is unknown", () => {
+    expect(getCoveragePaths("./fixtures/unknown", "ios")).toEqual([
+      "**/packages/unknown/unknown.platform.js"
+    ]);
+  });
+
   it("return files ignoring irrelevant files", () => {
     expect(getCoveragePaths("./fixtures/ignore", "web")).toEqual([
       "**/packages/ignore/data-helper.js",
