@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Modal, View, StyleSheet } from "react-native";
-import Link from "@times-components/link";
+import Button from "@times-components/link";
 import Svg, { Path, G } from "svgs";
 import Image from "./image";
 
@@ -56,15 +56,15 @@ class ModalImage extends Component {
           presentationStyle="fullScreen"
         >
           <View style={style.modal}>
-            <Link onPress={this.hideModal}>{closeButton}</Link>
+            <Button onPress={this.hideModal}>{closeButton}</Button>
             <View style={style.imageContainer}>
               <Image {...this.props} style={style.image} />
             </View>
           </View>
         </Modal>
-        <Link onPress={this.showModal}>
+        <Button onPress={this.showModal}>
           <Image {...this.props} />
-        </Link>
+        </Button>
       </View>
     );
   }
