@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Modal, View, StyleSheet, Text } from "react-native";
-import Image from "./image";
+import { Modal, View, StyleSheet } from "react-native";
 import Link from "@times-components/link";
 import Svg, { Path, G } from "svgs";
+import Image from "./image";
 
 const style = StyleSheet.create({
   modal: {
