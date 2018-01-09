@@ -19,6 +19,7 @@ export const query = gql`
           label
           publicationName
           publishedTime
+          isGMT
           headline
           url
         }

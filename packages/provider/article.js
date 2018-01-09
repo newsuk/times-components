@@ -8,6 +8,7 @@ export const query = gql`
       headline
       publicationName
       publishedTime
+      isGMT
       label
       standfirst
       flags

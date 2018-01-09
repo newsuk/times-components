@@ -42,12 +42,13 @@ class ArticlePage extends React.Component {
         />
       );
     } else if (rowData.type === "middleContainer") {
-      const { byline, publishedTime, publicationName } = rowData.data;
+      const { byline, publishedTime, publicationName, isGMT } = rowData.data;
       return (
         <ArticleMeta
           key={rowData.type}
           byline={byline}
           publishedTime={publishedTime}
+          isGMT={isGMT}
           publicationName={publicationName}
         />
       );

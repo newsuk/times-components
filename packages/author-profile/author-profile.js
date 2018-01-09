@@ -13,8 +13,7 @@ import AuthorProfileContent from "./author-profile-content";
 const castArticle = (page, pageSize) => article => ({
   ...article,
   page,
-  pageSize,
-  publishedTime: new Date(article.publishedTime)
+  pageSize
 });
 
 const AuthorProfile = ({

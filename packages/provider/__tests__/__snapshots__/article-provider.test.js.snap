@@ -189,6 +189,7 @@ Object {
   "flags": Array [],
   "headline": "Clash of interests tarnished the project",
   "id": "3107c018-cb60-11e4-81dd-064fe933cd41",
+  "isGMT": true,
   "label": null,
   "leadAsset": Object {
     "__typename": "Image",
