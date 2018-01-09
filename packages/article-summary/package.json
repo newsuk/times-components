@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "0.13.5",
+  "version": "0.13.6",
   "main": "article-summary",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -33,7 +33,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.2.18",
-    "@times-components/eslint-config-thetimes": "0.0.2",
+    "@times-components/eslint-config-thetimes": "0.1.0",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",
@@ -53,8 +53,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/date-publication": "0.7.5",
-    "@times-components/markup": "0.15.4",
+    "@times-components/date-publication": "0.7.6",
+    "@times-components/markup": "0.15.5",
     "date-fns": "1.28.5",
     "prop-types": "15.6.0"
   },

@@ -1,9 +1,3 @@
-const jestConfigurator = require("@times-components/jest-configurator");
+const jestConfigurator = require("@times-components/jest-configurator").default;
 
-module.exports = Object.assign(jestConfigurator("author-head", "android"), {
-  collectCoverageFrom: [
-    "**/packages/author-head/*.js",
-    "!**/packages/author-head/*.web.js",
-    "!**/packages/author-head/*.stories.js"
-  ]
-});
+module.exports = jestConfigurator("author-head", "android");

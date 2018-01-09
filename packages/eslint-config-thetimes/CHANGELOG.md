@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.0"></a>
+# 0.1.0 (2018-01-08)
+
+
+### Features
+
+* use new card and toggle images ([21d6f81](https://github.com/newsuk/times-components/commit/21d6f81))
+
+
+
+
 <a name="0.0.2"></a>
 ## 0.0.2 (2017-12-12)
 
