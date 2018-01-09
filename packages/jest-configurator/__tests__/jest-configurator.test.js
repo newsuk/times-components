@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-import jestConfigurator from "../";
+import jestConfigurator from "../src/jest-configurator";
 
 describe("Jest Configurator Tests", () => {
   describe("All platforms", () => {
@@ -33,6 +33,18 @@ describe("Jest Configurator Tests", () => {
     it("should make sure the root directory will always be 4 folders back", () => {
       const config = jestConfigurator("article", "android");
       expect(config.rootDir).toEqual("../../../../");
+    });
+
+    it("should respect coverage ignore globs", () => {
+      const config = jestConfigurator("jest-configurator", "android", [
+        "lib",
+        "flow-typed",
+        "setup-jest.js"
+      ]);
+      expect(config.collectCoverageFrom).toEqual([
+        "**/packages/jest-configurator/src/coverage.js",
+        "**/packages/jest-configurator/src/jest-configurator.js"
+      ]);
     });
   });
 

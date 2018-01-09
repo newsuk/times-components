@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider",
-  "version": "0.20.4",
+  "version": "0.20.5",
   "main": "provider",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -42,8 +42,8 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.2.18",
-    "@times-components/eslint-config-thetimes": "0.0.2",
-    "@times-components/utils": "0.0.10",
+    "@times-components/eslint-config-thetimes": "0.1.0",
+    "@times-components/utils": "0.0.11",
     "apollo-utilities": "1.0.2",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",

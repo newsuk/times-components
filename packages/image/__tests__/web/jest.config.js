@@ -1,14 +1,6 @@
-const jestConfigurator = require("@times-components/jest-configurator");
+const jestConfigurator = require("@times-components/jest-configurator").default;
 
-module.exports = Object.assign(jestConfigurator("image", "web"), {
-  collectCoverageFrom: [
-    "**/packages/image/**/*.js",
-    "!**/packages/image/**/image.js",
-    "!**/packages/image/**/image.android.js",
-    "!**/packages/image/**/add-missing-protocol.js",
-    "!**/packages/image/**/style-native.js",
-    "!**/packages/image/**/*stories*",
-    "!**/packages/image/__tests__/**",
-    "!**/packages/image/coverage/**"
-  ]
-});
+module.exports = jestConfigurator("image", "web", [
+  "add-missing-protocol.js",
+  "style-native.js"
+]);
