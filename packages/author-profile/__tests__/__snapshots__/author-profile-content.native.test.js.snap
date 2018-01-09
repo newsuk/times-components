@@ -120,6 +120,7 @@ exports[`renders profile 1`] = `
     <AuthorProfilePagination
       count={20}
       hideResults={true}
+      hideTopKeyline={false}
       onNext={[Function]}
       onPrev={[Function]}
       page={1}
@@ -170,6 +171,7 @@ exports[`renders profile 1`] = `
       <AuthorProfilePagination
         count={20}
         hideResults={false}
+        hideTopKeyline={true}
         onNext={[Function]}
         onPrev={[Function]}
         page={1}
@@ -554,17 +556,20 @@ exports[`renders profile 1`] = `
               </View>
               <View
                 style={
-                  Object {
-                    "alignItems": "center",
-                    "borderBottomColor": "#dbdbdb",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
-                    "borderTopWidth": 1,
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "space-between",
-                  }
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "borderStyle": "solid",
+                      "flexDirection": "row",
+                      "height": 50,
+                      "justifyContent": "space-between",
+                    },
+                    false,
+                    Object {
+                      "borderBottomColor": "#dbdbdb",
+                      "borderBottomWidth": 1,
+                    },
+                  ]
                 }
               >
                 <View />
@@ -1617,17 +1622,23 @@ exports[`renders profile 1`] = `
           >
             <View
               style={
-                Object {
-                  "alignItems": "center",
-                  "borderBottomColor": "#dbdbdb",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "height": 50,
-                  "justifyContent": "space-between",
-                }
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "borderStyle": "solid",
+                    "flexDirection": "row",
+                    "height": 50,
+                    "justifyContent": "space-between",
+                  },
+                  Object {
+                    "borderTopColor": "#dbdbdb",
+                    "borderTopWidth": 1,
+                  },
+                  Object {
+                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomWidth": 1,
+                  },
+                ]
               }
             >
               <View />
@@ -1724,6 +1735,7 @@ exports[`renders profile content component 1`] = `
     <AuthorProfilePagination
       count={undefined}
       hideResults={true}
+      hideTopKeyline={false}
       onNext={[Function]}
       onPrev={[Function]}
       page={1}
@@ -1774,6 +1786,7 @@ exports[`renders profile content component 1`] = `
       <AuthorProfilePagination
         count={undefined}
         hideResults={false}
+        hideTopKeyline={true}
         onNext={[Function]}
         onPrev={[Function]}
         page={1}
@@ -2136,17 +2149,20 @@ exports[`renders profile content component 1`] = `
               </View>
               <View
                 style={
-                  Object {
-                    "alignItems": "center",
-                    "borderBottomColor": "#dbdbdb",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
-                    "borderTopWidth": 1,
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "space-between",
-                  }
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "borderStyle": "solid",
+                      "flexDirection": "row",
+                      "height": 50,
+                      "justifyContent": "space-between",
+                    },
+                    false,
+                    Object {
+                      "borderBottomColor": "#dbdbdb",
+                      "borderBottomWidth": 1,
+                    },
+                  ]
                 }
               >
                 <View />
@@ -2925,17 +2941,23 @@ exports[`renders profile content component 1`] = `
           >
             <View
               style={
-                Object {
-                  "alignItems": "center",
-                  "borderBottomColor": "#dbdbdb",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "height": 50,
-                  "justifyContent": "space-between",
-                }
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "borderStyle": "solid",
+                    "flexDirection": "row",
+                    "height": 50,
+                    "justifyContent": "space-between",
+                  },
+                  Object {
+                    "borderTopColor": "#dbdbdb",
+                    "borderTopWidth": 1,
+                  },
+                  Object {
+                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomWidth": 1,
+                  },
+                ]
               }
             >
               <View />
@@ -2956,6 +2978,7 @@ exports[`renders profile content empty 1`] = `
     <AuthorProfilePagination
       count={undefined}
       hideResults={true}
+      hideTopKeyline={false}
       onNext={[Function]}
       onPrev={[Function]}
       page={undefined}
@@ -2976,6 +2999,7 @@ exports[`renders profile content empty 1`] = `
       <AuthorProfilePagination
         count={undefined}
         hideResults={false}
+        hideTopKeyline={true}
         onNext={[Function]}
         onPrev={[Function]}
         page={undefined}
@@ -3174,17 +3198,20 @@ exports[`renders profile content empty 1`] = `
               </View>
               <View
                 style={
-                  Object {
-                    "alignItems": "center",
-                    "borderBottomColor": "#dbdbdb",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
-                    "borderTopWidth": 1,
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "space-between",
-                  }
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "borderStyle": "solid",
+                      "flexDirection": "row",
+                      "height": 50,
+                      "justifyContent": "space-between",
+                    },
+                    false,
+                    Object {
+                      "borderBottomColor": "#dbdbdb",
+                      "borderBottomWidth": 1,
+                    },
+                  ]
                 }
               >
                 <View />
@@ -3227,17 +3254,23 @@ exports[`renders profile content empty 1`] = `
           >
             <View
               style={
-                Object {
-                  "alignItems": "center",
-                  "borderBottomColor": "#dbdbdb",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "height": 50,
-                  "justifyContent": "space-between",
-                }
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "borderStyle": "solid",
+                    "flexDirection": "row",
+                    "height": 50,
+                    "justifyContent": "space-between",
+                  },
+                  Object {
+                    "borderTopColor": "#dbdbdb",
+                    "borderTopWidth": 1,
+                  },
+                  Object {
+                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomWidth": 1,
+                  },
+                ]
               }
             >
               <View />
@@ -3618,6 +3651,7 @@ exports[`renders profile content loading 1`] = `
     <AuthorProfilePagination
       count={undefined}
       hideResults={true}
+      hideTopKeyline={false}
       onNext={[Function]}
       onPrev={[Function]}
       page={undefined}
@@ -3638,6 +3672,7 @@ exports[`renders profile content loading 1`] = `
       <AuthorProfilePagination
         count={undefined}
         hideResults={false}
+        hideTopKeyline={true}
         onNext={[Function]}
         onPrev={[Function]}
         page={undefined}
@@ -3845,17 +3880,20 @@ exports[`renders profile content loading 1`] = `
               </View>
               <View
                 style={
-                  Object {
-                    "alignItems": "center",
-                    "borderBottomColor": "#dbdbdb",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
-                    "borderTopWidth": 1,
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "space-between",
-                  }
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "borderStyle": "solid",
+                      "flexDirection": "row",
+                      "height": 50,
+                      "justifyContent": "space-between",
+                    },
+                    false,
+                    Object {
+                      "borderBottomColor": "#dbdbdb",
+                      "borderBottomWidth": 1,
+                    },
+                  ]
                 }
               >
                 <View />
@@ -4198,17 +4236,23 @@ exports[`renders profile content loading 1`] = `
           >
             <View
               style={
-                Object {
-                  "alignItems": "center",
-                  "borderBottomColor": "#dbdbdb",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "height": 50,
-                  "justifyContent": "space-between",
-                }
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "borderStyle": "solid",
+                    "flexDirection": "row",
+                    "height": 50,
+                    "justifyContent": "space-between",
+                  },
+                  Object {
+                    "borderTopColor": "#dbdbdb",
+                    "borderTopWidth": 1,
+                  },
+                  Object {
+                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomWidth": 1,
+                  },
+                ]
               }
             >
               <View />
@@ -4327,6 +4371,7 @@ exports[`renders profile loading 1`] = `
     <AuthorProfilePagination
       count={undefined}
       hideResults={true}
+      hideTopKeyline={false}
       onNext={[Function]}
       onPrev={[Function]}
       page={undefined}
@@ -4347,6 +4392,7 @@ exports[`renders profile loading 1`] = `
       <AuthorProfilePagination
         count={undefined}
         hideResults={false}
+        hideTopKeyline={true}
         onNext={[Function]}
         onPrev={[Function]}
         page={undefined}
@@ -4562,17 +4608,20 @@ exports[`renders profile loading 1`] = `
               </View>
               <View
                 style={
-                  Object {
-                    "alignItems": "center",
-                    "borderBottomColor": "#dbdbdb",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
-                    "borderTopWidth": 1,
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "space-between",
-                  }
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "borderStyle": "solid",
+                      "flexDirection": "row",
+                      "height": 50,
+                      "justifyContent": "space-between",
+                    },
+                    false,
+                    Object {
+                      "borderBottomColor": "#dbdbdb",
+                      "borderBottomWidth": 1,
+                    },
+                  ]
                 }
               >
                 <View />
@@ -5549,17 +5598,23 @@ exports[`renders profile loading 1`] = `
           >
             <View
               style={
-                Object {
-                  "alignItems": "center",
-                  "borderBottomColor": "#dbdbdb",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "height": 50,
-                  "justifyContent": "space-between",
-                }
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "borderStyle": "solid",
+                    "flexDirection": "row",
+                    "height": 50,
+                    "justifyContent": "space-between",
+                  },
+                  Object {
+                    "borderTopColor": "#dbdbdb",
+                    "borderTopWidth": 1,
+                  },
+                  Object {
+                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomWidth": 1,
+                  },
+                ]
               }
             >
               <View />
@@ -5725,6 +5780,7 @@ exports[`renders with no author 1`] = `
     <AuthorProfilePagination
       count={0}
       hideResults={true}
+      hideTopKeyline={false}
       onNext={[Function]}
       onPrev={[Function]}
       page={1}
@@ -5745,6 +5801,7 @@ exports[`renders with no author 1`] = `
       <AuthorProfilePagination
         count={0}
         hideResults={false}
+        hideTopKeyline={true}
         onNext={[Function]}
         onPrev={[Function]}
         page={1}
@@ -5958,17 +6015,20 @@ exports[`renders with no author 1`] = `
               </View>
               <View
                 style={
-                  Object {
-                    "alignItems": "center",
-                    "borderBottomColor": "#dbdbdb",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
-                    "borderTopWidth": 1,
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "space-between",
-                  }
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "borderStyle": "solid",
+                      "flexDirection": "row",
+                      "height": 50,
+                      "justifyContent": "space-between",
+                    },
+                    false,
+                    Object {
+                      "borderBottomColor": "#dbdbdb",
+                      "borderBottomWidth": 1,
+                    },
+                  ]
                 }
               >
                 <View />
@@ -6663,17 +6723,23 @@ exports[`renders with no author 1`] = `
           >
             <View
               style={
-                Object {
-                  "alignItems": "center",
-                  "borderBottomColor": "#dbdbdb",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "height": 50,
-                  "justifyContent": "space-between",
-                }
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "borderStyle": "solid",
+                    "flexDirection": "row",
+                    "height": 50,
+                    "justifyContent": "space-between",
+                  },
+                  Object {
+                    "borderTopColor": "#dbdbdb",
+                    "borderTopWidth": 1,
+                  },
+                  Object {
+                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomWidth": 1,
+                  },
+                ]
               }
             >
               <View />
