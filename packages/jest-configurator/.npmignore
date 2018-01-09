@@ -6,3 +6,6 @@ fixtures
 coverage
 android/**/test
 android/**/androidTest
+src
+flow-typed
+.*

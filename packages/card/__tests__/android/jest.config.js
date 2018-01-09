@@ -1,10 +1,3 @@
-const jestConfigurator = require("@times-components/jest-configurator");
+const jestConfigurator = require("@times-components/jest-configurator").default;
 
-module.exports = Object.assign(jestConfigurator("card", "android"), {
-  collectCoverageFrom: [
-    "**/packages/card/*.js",
-    "!**/packages/card/*stories*",
-    "!**/packages/card/*.web.js",
-    "!**/packages/card/__test__/**"
-  ]
-});
+module.exports = jestConfigurator("card", "android");

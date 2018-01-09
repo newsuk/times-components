@@ -1,6 +1,6 @@
 import React from "react";
 import pick from "lodash.pick";
-import { graphql } from "react-apollo";
+import { graphql } from "react-apollo-temp";
 
 const identity = a => a;
 
@@ -30,6 +30,7 @@ const connectGraphql = (query, propsToVariables = identity) => {
     }
 
     refetch() {
+      this.state.data.retry(); // FIXME: remove this after react-apollo fixes https://github.com/apollographql/apollo-client/issues/2513
       this.state.data.refetch().then(response => {
         this.setState(prevState => ({
           ...prevState,

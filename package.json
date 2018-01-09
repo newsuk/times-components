@@ -13,7 +13,7 @@
   },
   "scripts": {
     "native": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "yarn storybook:test-build && jest ./lib && lerna run test --since",
+    "test": "yarn storybook:test-build && jest ./lib && lerna run test --since --stream",
     "functional-test:web": "./lib/functional_tests/run-web.sh",
     "functional-test:ios": "./lib/functional_tests/run-ios.sh",
     "functional-test:android": "./lib/functional_tests/run-android.sh",
@@ -42,6 +42,7 @@
     "android:device": "./lib/setup_device_connections.sh && yarn android",
     "prefmt": "prettier --write '**/*.*'",
     "fmt": "lerna run fmt",
+    "postinstall": "lerna run prepublishOnly",
     "packages:publish": "lerna publish --conventional-commits --yes --concurrency=1 --exact",
     "packages:publish-dry-run": "yarn packages:publish --skip-git --skip-npm",
     "clean-snaps": "rm -rf dextrose/snappy/*.png"
