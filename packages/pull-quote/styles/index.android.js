@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 import sharedStyles from "./shared";
 
-const iosStyles = StyleSheet.create({
+const androidStyles = StyleSheet.create({
   ...sharedStyles,
   container: {
     ...sharedStyles.container,
@@ -10,4 +10,4 @@ const iosStyles = StyleSheet.create({
   }
 });
 
-export default iosStyles;
+export default androidStyles;
