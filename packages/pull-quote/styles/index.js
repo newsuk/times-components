@@ -4,9 +4,12 @@ import sharedStyles from "./shared";
 const iosStyles = StyleSheet.create({
   ...sharedStyles,
   container: {
-    ...sharedStyles.container,
+    ...sharedStyles.conpacktainer,
+    paddingTop: 5,
     paddingLeft: 10,
-    paddingRight: 10
+    paddingRight: 10,
+    paddingBottom: 25,
+    marginBottom: 0
   }
 });
 

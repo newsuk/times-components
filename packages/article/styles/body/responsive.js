@@ -65,7 +65,7 @@ export const PrimaryImg = withResponsiveStyles(View, {
   wideUp: () => `width: ${config.wideBpWidth};`
 });
 
-export const SecondaryImg = withResponsiveStyles(View, {
+const ImageStyles = withResponsiveStyles(View, {
   base: () => `
     width: 100%;
     flex-direction: row;
@@ -78,18 +78,8 @@ export const SecondaryImg = withResponsiveStyles(View, {
   wideUp: () => `width: ${config.wideBpWidth};`
 });
 
-export const InlineImg = withResponsiveStyles(View, {
-  base: () => `
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding-bottom: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
-  `,
-  mediumUp: () => config.mediumBpPositioning,
-  wideUp: () => `width: ${config.wideBpWidth};`
-});
+export const SecondaryImg = ImageStyles;
+export const InlineImg = ImageStyles;
 
 /* --- Pull Quotes --- */
 
