@@ -2,7 +2,6 @@ import React from "react";
 import { View, StyleSheet, Platform } from "react-native";
 import PropTypes from "prop-types";
 
-import Image from "@times-components/image";
 import { TextLink } from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import { treePropType } from "@times-components/markup";
@@ -11,6 +10,7 @@ import AuthorTitle from "./author-title";
 import TwitterIcon from "./twitter-icon";
 import Bio from "./author-bio";
 import AuthorName from "./author-name";
+import AuthorPhoto from "./author-photo";
 
 const styles = StyleSheet.create({
   container: {
@@ -20,17 +20,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#F9F8F3",
     paddingTop: 20,
     paddingBottom: 30
-  },
-  photoContainer: {
-    marginBottom: 20
-  },
-  roundImage: {
-    width: 100,
-    marginLeft: "auto",
-    marginRight: "auto",
-    borderColor: "#FFF",
-    borderRadius: 50,
-    overflow: "hidden"
   },
   twitter: {
     paddingTop: 16,
@@ -58,16 +47,10 @@ const styles = StyleSheet.create({
 const AuthorHead = props => {
   const { name, title, twitter, bio, uri, onTwitterLinkPress } = props;
 
-  const imageComponent = uri ? (
-    <View style={styles.photoContainer}>
-      <Image uri={`${uri}`} style={styles.roundImage} aspectRatio={1} />
-    </View>
-  ) : null;
-
   return (
     <View style={styles.wrapper} pointerEvents="box-none">
       <View accessibilityRole="banner" style={styles.container}>
-        {imageComponent}
+        <AuthorPhoto uri={uri} />
         <AuthorName name={name} />
         <AuthorTitle title={title} />
         <TwitterLink handle={twitter} onPress={onTwitterLinkPress} />
