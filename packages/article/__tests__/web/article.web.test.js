@@ -5,6 +5,8 @@ import renderer from "react-test-renderer";
 import Article from "../../article";
 import shared from "../shared";
 
+import "jest-styled-components";
+
 const articleFixtureNoLeadAsset = require("../../fixtures/no-lead-asset.json");
 
 describe("Article test on web", () => {
