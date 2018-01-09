@@ -6,10 +6,13 @@ exports[`Link test on android Link doesnt change inner text styles 1`] = `
   accessibilityLabel={undefined}
   accessibilityTraits={undefined}
   accessible={true}
-  collapsable={undefined}
   hitSlop={undefined}
-  isTVSelectable={true}
-  nativeID={undefined}
+  nativeBackgroundAndroid={
+    Object {
+      "attribute": "selectableItemBackground",
+      "type": "ThemeAttrAndroid",
+    }
+  }
   onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -17,13 +20,8 @@ exports[`Link test on android Link doesnt change inner text styles 1`] = `
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
+  pointerEvents="box-only"
   testID={undefined}
-  tvParallaxProperties={undefined}
 >
   <Text
     accessible={true}
@@ -41,10 +39,13 @@ exports[`Link test on android Link renders correctly 1`] = `
   accessibilityLabel={undefined}
   accessibilityTraits={undefined}
   accessible={true}
-  collapsable={undefined}
   hitSlop={undefined}
-  isTVSelectable={true}
-  nativeID={undefined}
+  nativeBackgroundAndroid={
+    Object {
+      "attribute": "selectableItemBackground",
+      "type": "ThemeAttrAndroid",
+    }
+  }
   onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -52,13 +53,8 @@ exports[`Link test on android Link renders correctly 1`] = `
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
+  pointerEvents="box-only"
   testID={undefined}
-  tvParallaxProperties={undefined}
 >
   The Times
 </View>

@@ -3702,7 +3702,6 @@ exports[`renders profile content loading 1`] = `
             Object {
               "alignItems": "center",
               "backgroundColor": "transparent",
-              "paddingBottom": 50,
             }
           }
         >
@@ -3712,7 +3711,6 @@ exports[`renders profile content loading 1`] = `
                 "alignItems": "center",
                 "backgroundColor": "#F9F8F3",
                 "minHeight": 264,
-                "paddingBottom": 50,
                 "width": "100%",
               }
             }
@@ -3720,9 +3718,9 @@ exports[`renders profile content loading 1`] = `
           <View
             style={
               Object {
-                "bottom": 0,
                 "height": 100,
                 "position": "absolute",
+                "top": 23,
                 "width": 100,
               }
             }
@@ -4417,7 +4415,6 @@ exports[`renders profile loading 1`] = `
             Object {
               "alignItems": "center",
               "backgroundColor": "transparent",
-              "paddingBottom": 50,
             }
           }
         >
@@ -4427,7 +4424,6 @@ exports[`renders profile loading 1`] = `
                 "alignItems": "center",
                 "backgroundColor": "#F9F8F3",
                 "minHeight": 264,
-                "paddingBottom": 50,
                 "width": "100%",
               }
             }
@@ -4435,9 +4431,9 @@ exports[`renders profile loading 1`] = `
           <View
             style={
               Object {
-                "bottom": 0,
                 "height": 100,
                 "position": "absolute",
+                "top": 23,
                 "width": 100,
               }
             }

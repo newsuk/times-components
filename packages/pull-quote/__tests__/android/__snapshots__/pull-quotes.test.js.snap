@@ -4,11 +4,10 @@ exports[`PullQuotes test on android Pull Quotes with a Caption 1`] = `
 <View
   style={
     Object {
-      "marginBottom": 0,
-      "paddingBottom": 25,
+      "marginBottom": 30,
+      "marginTop": 0,
       "paddingLeft": 10,
       "paddingRight": 10,
-      "paddingTop": 5,
     }
   }
 >
@@ -74,11 +73,10 @@ exports[`PullQuotes test on android Pull Quotes with a Caption and a Twitter 1`]
 <View
   style={
     Object {
-      "marginBottom": 0,
-      "paddingBottom": 25,
+      "marginBottom": 30,
+      "marginTop": 0,
       "paddingLeft": 10,
       "paddingRight": 10,
-      "paddingTop": 5,
     }
   }
 >
@@ -167,11 +165,10 @@ exports[`PullQuotes test on android Pull Quotes without a Caption 1`] = `
 <View
   style={
     Object {
-      "marginBottom": 0,
-      "paddingBottom": 25,
+      "marginBottom": 30,
+      "marginTop": 0,
       "paddingLeft": 10,
       "paddingRight": 10,
-      "paddingTop": 5,
     }
   }
 >
@@ -237,11 +234,10 @@ exports[`PullQuotes test on android Pull Quotes without a Caption and different 
 <View
   style={
     Object {
-      "marginBottom": 0,
-      "paddingBottom": 25,
+      "marginBottom": 30,
+      "marginTop": 0,
       "paddingLeft": 10,
       "paddingRight": 10,
-      "paddingTop": 5,
     }
   }
 >

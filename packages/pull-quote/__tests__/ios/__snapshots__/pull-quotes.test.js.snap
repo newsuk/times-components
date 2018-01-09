@@ -5,6 +5,7 @@ exports[`PullQuotes test on ios Pull Quotes with a Caption 1`] = `
   style={
     Object {
       "marginBottom": 0,
+      "marginTop": 0,
       "paddingBottom": 25,
       "paddingLeft": 10,
       "paddingRight": 10,
@@ -75,6 +76,7 @@ exports[`PullQuotes test on ios Pull Quotes with a Caption and a Twitter 1`] = `
   style={
     Object {
       "marginBottom": 0,
+      "marginTop": 0,
       "paddingBottom": 25,
       "paddingLeft": 10,
       "paddingRight": 10,
@@ -168,6 +170,7 @@ exports[`PullQuotes test on ios Pull Quotes without a Caption 1`] = `
   style={
     Object {
       "marginBottom": 0,
+      "marginTop": 0,
       "paddingBottom": 25,
       "paddingLeft": 10,
       "paddingRight": 10,
@@ -238,6 +241,7 @@ exports[`PullQuotes test on ios Pull Quotes without a Caption and different colo
   style={
     Object {
       "marginBottom": 0,
+      "marginTop": 0,
       "paddingBottom": 25,
       "paddingLeft": 10,
       "paddingRight": 10,

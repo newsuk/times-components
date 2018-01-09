@@ -154,6 +154,7 @@ exports[`Markup Native renders multiple paragraphs with a pull quote 1`] = `
     style={
       Object {
         "marginBottom": 0,
+        "marginTop": 0,
         "paddingBottom": 25,
         "paddingLeft": 10,
         "paddingRight": 10,
