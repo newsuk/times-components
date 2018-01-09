@@ -30,7 +30,6 @@ const styles = StyleSheet.create({
     marginRight: "auto",
     borderColor: "#FFF",
     borderRadius: 50,
-    borderWidth: 5,
     overflow: "hidden"
   },
   twitter: {
