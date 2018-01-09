@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.13.3"></a>
+## [0.13.3](https://github.com/newsuk/times-components/compare/@times-components/link@0.13.2...@times-components/link@0.13.3) (2018-01-09)
+
+
+### Bug Fixes
+
+* Revert an accidentally deleted link.android.js file. ([#504](https://github.com/newsuk/times-components/issues/504)) ([2dd07b3](https://github.com/newsuk/times-components/commit/2dd07b3))
+
+
+
+
 <a name="0.13.2"></a>
 ## [0.13.2](https://github.com/newsuk/times-components/compare/@times-components/link@0.13.1...@times-components/link@0.13.2) (2018-01-08)
 
