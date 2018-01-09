@@ -4,7 +4,7 @@ import sharedStyles from "./shared";
 const iosStyles = StyleSheet.create({
   ...sharedStyles,
   container: {
-    ...sharedStyles.conpacktainer,
+    ...sharedStyles.container,
     paddingTop: 5,
     paddingLeft: 10,
     paddingRight: 10,
