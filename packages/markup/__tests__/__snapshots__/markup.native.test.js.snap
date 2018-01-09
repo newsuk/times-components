@@ -153,10 +153,12 @@ exports[`Markup Native renders multiple paragraphs with a pull quote 1`] = `
   <View
     style={
       Object {
-        "marginBottom": 30,
+        "marginBottom": 0,
         "marginTop": 0,
+        "paddingBottom": 25,
         "paddingLeft": 10,
         "paddingRight": 10,
+        "paddingTop": 5,
       }
     }
   >

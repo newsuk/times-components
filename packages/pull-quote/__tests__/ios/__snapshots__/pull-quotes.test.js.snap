@@ -4,10 +4,12 @@ exports[`PullQuotes test on ios Pull Quotes with a Caption 1`] = `
 <View
   style={
     Object {
-      "marginBottom": 30,
+      "marginBottom": 0,
       "marginTop": 0,
+      "paddingBottom": 25,
       "paddingLeft": 10,
       "paddingRight": 10,
+      "paddingTop": 5,
     }
   }
 >
@@ -73,10 +75,12 @@ exports[`PullQuotes test on ios Pull Quotes with a Caption and a Twitter 1`] = `
 <View
   style={
     Object {
-      "marginBottom": 30,
+      "marginBottom": 0,
       "marginTop": 0,
+      "paddingBottom": 25,
       "paddingLeft": 10,
       "paddingRight": 10,
+      "paddingTop": 5,
     }
   }
 >
@@ -165,10 +169,12 @@ exports[`PullQuotes test on ios Pull Quotes without a Caption 1`] = `
 <View
   style={
     Object {
-      "marginBottom": 30,
+      "marginBottom": 0,
       "marginTop": 0,
+      "paddingBottom": 25,
       "paddingLeft": 10,
       "paddingRight": 10,
+      "paddingTop": 5,
     }
   }
 >
@@ -234,10 +240,12 @@ exports[`PullQuotes test on ios Pull Quotes without a Caption and different colo
 <View
   style={
     Object {
-      "marginBottom": 30,
+      "marginBottom": 0,
       "marginTop": 0,
+      "paddingBottom": 25,
       "paddingLeft": 10,
       "paddingRight": 10,
+      "paddingTop": 5,
     }
   }
 >
