@@ -18,13 +18,32 @@ const sharedStyles = {
   caption: {
     fontFamily: "GillSansMTStd-Medium",
     fontSize: 13,
-    marginTop: 10,
-    marginBottom: 0
+    marginBottom: 0,
+    lineHeight: 13
   },
   link: {
-    color: "#696969",
-    fontFamily: "TimesModern-Bold",
-    textDecorationLine: "none"
+    color: "#006699",
+    fontFamily: "GillSansMTStd-Medium",
+    textDecorationLine: "none",
+    fontSize: 13,
+    marginLeft: 3,
+    lineHeight: 13
+  },
+  captionContainer: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    marginTop: 10,
+    height: 13
+  },
+  twitterContainer: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    borderLeftWidth: 1,
+    borderLeftColor: "#696969",
+    marginLeft: 6,
+    paddingLeft: 6
   }
 };
 
