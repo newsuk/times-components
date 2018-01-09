@@ -8,13 +8,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#F9F8F3",
     minHeight: 264,
-    paddingBottom: 50,
     width: "100%"
   },
   photoContainer: {
     width: 100,
     height: 100,
-    bottom: 0,
+    top: 23,
     position: "absolute"
   },
   gradient: {
@@ -30,8 +29,7 @@ const styles = StyleSheet.create({
   },
   wrapper: {
     alignItems: "center",
-    backgroundColor: "transparent",
-    paddingBottom: 50
+    backgroundColor: "transparent"
   }
 });
 
