@@ -520,6 +520,7 @@ exports[`renders profile 1`] = `
                 Object {
                   "alignItems": "stretch",
                   "flexDirection": "column",
+                  "marginTop": 30,
                 }
               }
             >
@@ -528,7 +529,7 @@ exports[`renders profile 1`] = `
                   Object {
                     "alignItems": "center",
                     "flexDirection": "row",
-                    "height": 40,
+                    "height": 50,
                     "justifyContent": "center",
                   }
                 }
@@ -561,7 +562,7 @@ exports[`renders profile 1`] = `
                     "borderTopColor": "#dbdbdb",
                     "borderTopWidth": 1,
                     "flexDirection": "row",
-                    "height": 40,
+                    "height": 50,
                     "justifyContent": "space-between",
                   }
                 }
@@ -626,10 +627,10 @@ exports[`renders profile 1`] = `
                         </Text>
                       </Text>
                       <svg
-                        height={9}
+                        height={12}
                         style={Object {}}
                         viewBox="42 12 60 120"
-                        width={5}
+                        width={7}
                       >
                         <g
                           fill="#006699"
@@ -1610,6 +1611,7 @@ exports[`renders profile 1`] = `
               Object {
                 "alignItems": "stretch",
                 "flexDirection": "column",
+                "marginTop": 30,
               }
             }
           >
@@ -1623,7 +1625,7 @@ exports[`renders profile 1`] = `
                   "borderTopColor": "#dbdbdb",
                   "borderTopWidth": 1,
                   "flexDirection": "row",
-                  "height": 40,
+                  "height": 50,
                   "justifyContent": "space-between",
                 }
               }
@@ -1688,10 +1690,10 @@ exports[`renders profile 1`] = `
                       </Text>
                     </Text>
                     <svg
-                      height={9}
+                      height={12}
                       style={Object {}}
                       viewBox="42 12 60 120"
-                      width={5}
+                      width={7}
                     >
                       <g
                         fill="#006699"
@@ -2100,6 +2102,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "alignItems": "stretch",
                   "flexDirection": "column",
+                  "marginTop": 30,
                 }
               }
             >
@@ -2108,7 +2111,7 @@ exports[`renders profile content component 1`] = `
                   Object {
                     "alignItems": "center",
                     "flexDirection": "row",
-                    "height": 40,
+                    "height": 50,
                     "justifyContent": "center",
                   }
                 }
@@ -2141,7 +2144,7 @@ exports[`renders profile content component 1`] = `
                     "borderTopColor": "#dbdbdb",
                     "borderTopWidth": 1,
                     "flexDirection": "row",
-                    "height": 40,
+                    "height": 50,
                     "justifyContent": "space-between",
                   }
                 }
@@ -2916,6 +2919,7 @@ exports[`renders profile content component 1`] = `
               Object {
                 "alignItems": "stretch",
                 "flexDirection": "column",
+                "marginTop": 30,
               }
             }
           >
@@ -2929,7 +2933,7 @@ exports[`renders profile content component 1`] = `
                   "borderTopColor": "#dbdbdb",
                   "borderTopWidth": 1,
                   "flexDirection": "row",
-                  "height": 40,
+                  "height": 50,
                   "justifyContent": "space-between",
                 }
               }
@@ -3136,6 +3140,7 @@ exports[`renders profile content empty 1`] = `
                 Object {
                   "alignItems": "stretch",
                   "flexDirection": "column",
+                  "marginTop": 30,
                 }
               }
             >
@@ -3144,7 +3149,7 @@ exports[`renders profile content empty 1`] = `
                   Object {
                     "alignItems": "center",
                     "flexDirection": "row",
-                    "height": 40,
+                    "height": 50,
                     "justifyContent": "center",
                   }
                 }
@@ -3177,7 +3182,7 @@ exports[`renders profile content empty 1`] = `
                     "borderTopColor": "#dbdbdb",
                     "borderTopWidth": 1,
                     "flexDirection": "row",
-                    "height": 40,
+                    "height": 50,
                     "justifyContent": "space-between",
                   }
                 }
@@ -3216,6 +3221,7 @@ exports[`renders profile content empty 1`] = `
               Object {
                 "alignItems": "stretch",
                 "flexDirection": "column",
+                "marginTop": 30,
               }
             }
           >
@@ -3229,7 +3235,7 @@ exports[`renders profile content empty 1`] = `
                   "borderTopColor": "#dbdbdb",
                   "borderTopWidth": 1,
                   "flexDirection": "row",
-                  "height": 40,
+                  "height": 50,
                   "justifyContent": "space-between",
                 }
               }
@@ -3805,6 +3811,7 @@ exports[`renders profile content loading 1`] = `
                 Object {
                   "alignItems": "stretch",
                   "flexDirection": "column",
+                  "marginTop": 30,
                 }
               }
             >
@@ -3813,7 +3820,7 @@ exports[`renders profile content loading 1`] = `
                   Object {
                     "alignItems": "center",
                     "flexDirection": "row",
-                    "height": 40,
+                    "height": 50,
                     "justifyContent": "center",
                   }
                 }
@@ -3846,7 +3853,7 @@ exports[`renders profile content loading 1`] = `
                     "borderTopColor": "#dbdbdb",
                     "borderTopWidth": 1,
                     "flexDirection": "row",
-                    "height": 40,
+                    "height": 50,
                     "justifyContent": "space-between",
                   }
                 }
@@ -4185,6 +4192,7 @@ exports[`renders profile content loading 1`] = `
               Object {
                 "alignItems": "stretch",
                 "flexDirection": "column",
+                "marginTop": 30,
               }
             }
           >
@@ -4198,7 +4206,7 @@ exports[`renders profile content loading 1`] = `
                   "borderTopColor": "#dbdbdb",
                   "borderTopWidth": 1,
                   "flexDirection": "row",
-                  "height": 40,
+                  "height": 50,
                   "justifyContent": "space-between",
                 }
               }
@@ -4520,6 +4528,7 @@ exports[`renders profile loading 1`] = `
                 Object {
                   "alignItems": "stretch",
                   "flexDirection": "column",
+                  "marginTop": 30,
                 }
               }
             >
@@ -4528,7 +4537,7 @@ exports[`renders profile loading 1`] = `
                   Object {
                     "alignItems": "center",
                     "flexDirection": "row",
-                    "height": 40,
+                    "height": 50,
                     "justifyContent": "center",
                   }
                 }
@@ -4561,7 +4570,7 @@ exports[`renders profile loading 1`] = `
                     "borderTopColor": "#dbdbdb",
                     "borderTopWidth": 1,
                     "flexDirection": "row",
-                    "height": 40,
+                    "height": 50,
                     "justifyContent": "space-between",
                   }
                 }
@@ -5534,6 +5543,7 @@ exports[`renders profile loading 1`] = `
               Object {
                 "alignItems": "stretch",
                 "flexDirection": "column",
+                "marginTop": 30,
               }
             }
           >
@@ -5547,7 +5557,7 @@ exports[`renders profile loading 1`] = `
                   "borderTopColor": "#dbdbdb",
                   "borderTopWidth": 1,
                   "flexDirection": "row",
-                  "height": 40,
+                  "height": 50,
                   "justifyContent": "space-between",
                 }
               }
@@ -5914,6 +5924,7 @@ exports[`renders with no author 1`] = `
                 Object {
                   "alignItems": "stretch",
                   "flexDirection": "column",
+                  "marginTop": 30,
                 }
               }
             >
@@ -5922,7 +5933,7 @@ exports[`renders with no author 1`] = `
                   Object {
                     "alignItems": "center",
                     "flexDirection": "row",
-                    "height": 40,
+                    "height": 50,
                     "justifyContent": "center",
                   }
                 }
@@ -5955,7 +5966,7 @@ exports[`renders with no author 1`] = `
                     "borderTopColor": "#dbdbdb",
                     "borderTopWidth": 1,
                     "flexDirection": "row",
-                    "height": 40,
+                    "height": 50,
                     "justifyContent": "space-between",
                   }
                 }
@@ -6646,6 +6657,7 @@ exports[`renders with no author 1`] = `
               Object {
                 "alignItems": "stretch",
                 "flexDirection": "column",
+                "marginTop": 30,
               }
             }
           >
@@ -6659,7 +6671,7 @@ exports[`renders with no author 1`] = `
                   "borderTopColor": "#dbdbdb",
                   "borderTopWidth": 1,
                   "flexDirection": "row",
-                  "height": 40,
+                  "height": 50,
                   "justifyContent": "space-between",
                 }
               }

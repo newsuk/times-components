@@ -27,11 +27,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexDirection: "row",
     justifyContent: "space-between",
-    height: 40
+    height: 50
   },
   container: {
     alignItems: "stretch",
-    flexDirection: "column"
+    flexDirection: "column",
+    marginTop: 30
   }
 });
 

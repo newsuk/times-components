@@ -6,6 +6,7 @@ exports[`Pagination Native renders correctly 1`] = `
     Object {
       "alignItems": "stretch",
       "flexDirection": "column",
+      "marginTop": 30,
     }
   }
 >
@@ -14,7 +15,7 @@ exports[`Pagination Native renders correctly 1`] = `
       Object {
         "alignItems": "center",
         "flexDirection": "row",
-        "height": 40,
+        "height": 50,
         "justifyContent": "center",
       }
     }
@@ -47,7 +48,7 @@ exports[`Pagination Native renders correctly 1`] = `
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 1,
         "flexDirection": "row",
-        "height": 40,
+        "height": 50,
         "justifyContent": "space-between",
       }
     }
@@ -112,10 +113,10 @@ exports[`Pagination Native renders correctly 1`] = `
             </Text>
           </Text>
           <svg
-            height={9}
+            height={12}
             style={Object {}}
             viewBox="42 12 60 120"
-            width={5}
+            width={7}
           >
             <g
               fill="#006699"
@@ -140,6 +141,7 @@ exports[`Pagination Native renders next link 1`] = `
     Object {
       "alignItems": "stretch",
       "flexDirection": "column",
+      "marginTop": 30,
     }
   }
 >
@@ -148,7 +150,7 @@ exports[`Pagination Native renders next link 1`] = `
       Object {
         "alignItems": "center",
         "flexDirection": "row",
-        "height": 40,
+        "height": 50,
         "justifyContent": "center",
       }
     }
@@ -181,7 +183,7 @@ exports[`Pagination Native renders next link 1`] = `
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 1,
         "flexDirection": "row",
-        "height": 40,
+        "height": 50,
         "justifyContent": "space-between",
       }
     }
@@ -246,10 +248,10 @@ exports[`Pagination Native renders next link 1`] = `
             </Text>
           </Text>
           <svg
-            height={9}
+            height={12}
             style={Object {}}
             viewBox="42 12 60 120"
-            width={5}
+            width={7}
           >
             <g
               fill="#006699"
@@ -274,6 +276,7 @@ exports[`Pagination Native renders prev and next link 1`] = `
     Object {
       "alignItems": "stretch",
       "flexDirection": "column",
+      "marginTop": 30,
     }
   }
 >
@@ -282,7 +285,7 @@ exports[`Pagination Native renders prev and next link 1`] = `
       Object {
         "alignItems": "center",
         "flexDirection": "row",
-        "height": 40,
+        "height": 50,
         "justifyContent": "center",
       }
     }
@@ -315,7 +318,7 @@ exports[`Pagination Native renders prev and next link 1`] = `
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 1,
         "flexDirection": "row",
-        "height": 40,
+        "height": 50,
         "justifyContent": "space-between",
       }
     }
@@ -355,10 +358,10 @@ exports[`Pagination Native renders prev and next link 1`] = `
           }
         >
           <svg
-            height={9}
+            height={12}
             style={Object {}}
             viewBox="42 12 60 120"
-            width={5}
+            width={7}
           >
             <g
               fill="#006699"
@@ -455,10 +458,10 @@ exports[`Pagination Native renders prev and next link 1`] = `
             </Text>
           </Text>
           <svg
-            height={9}
+            height={12}
             style={Object {}}
             viewBox="42 12 60 120"
-            width={5}
+            width={7}
           >
             <g
               fill="#006699"
@@ -483,6 +486,7 @@ exports[`Pagination Native renders prev link 1`] = `
     Object {
       "alignItems": "stretch",
       "flexDirection": "column",
+      "marginTop": 30,
     }
   }
 >
@@ -491,7 +495,7 @@ exports[`Pagination Native renders prev link 1`] = `
       Object {
         "alignItems": "center",
         "flexDirection": "row",
-        "height": 40,
+        "height": 50,
         "justifyContent": "center",
       }
     }
@@ -524,7 +528,7 @@ exports[`Pagination Native renders prev link 1`] = `
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 1,
         "flexDirection": "row",
-        "height": 40,
+        "height": 50,
         "justifyContent": "space-between",
       }
     }
@@ -564,10 +568,10 @@ exports[`Pagination Native renders prev link 1`] = `
           }
         >
           <svg
-            height={9}
+            height={12}
             style={Object {}}
             viewBox="42 12 60 120"
-            width={5}
+            width={7}
           >
             <g
               fill="#006699"
@@ -616,6 +620,7 @@ exports[`Pagination Native renders results message 1`] = `
     Object {
       "alignItems": "stretch",
       "flexDirection": "column",
+      "marginTop": 30,
     }
   }
 >
@@ -624,7 +629,7 @@ exports[`Pagination Native renders results message 1`] = `
       Object {
         "alignItems": "center",
         "flexDirection": "row",
-        "height": 40,
+        "height": 50,
         "justifyContent": "center",
       }
     }
@@ -657,7 +662,7 @@ exports[`Pagination Native renders results message 1`] = `
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 1,
         "flexDirection": "row",
-        "height": 40,
+        "height": 50,
         "justifyContent": "space-between",
       }
     }
@@ -722,10 +727,10 @@ exports[`Pagination Native renders results message 1`] = `
             </Text>
           </Text>
           <svg
-            height={9}
+            height={12}
             style={Object {}}
             viewBox="42 12 60 120"
-            width={5}
+            width={7}
           >
             <g
               fill="#006699"
@@ -750,6 +755,7 @@ exports[`Pagination Native renders with hidden results 1`] = `
     Object {
       "alignItems": "stretch",
       "flexDirection": "column",
+      "marginTop": 30,
     }
   }
 >
@@ -763,7 +769,7 @@ exports[`Pagination Native renders with hidden results 1`] = `
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 1,
         "flexDirection": "row",
-        "height": 40,
+        "height": 50,
         "justifyContent": "space-between",
       }
     }
@@ -828,10 +834,10 @@ exports[`Pagination Native renders with hidden results 1`] = `
             </Text>
           </Text>
           <svg
-            height={9}
+            height={12}
             style={Object {}}
             viewBox="42 12 60 120"
-            width={5}
+            width={7}
           >
             <g
               fill="#006699"
