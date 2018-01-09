@@ -10,9 +10,17 @@ import DatePublication from "../date-publication";
 
 Enzyme.configure({ adapter: new React16Adapter() });
 
-describe("Date Publication test", () => {
+function gmtTests(gmtOffset, dateFormat) {
+  const { getTimezoneOffset } = Date.prototype;
+
+  beforeEach(() => {
+    global.Date.prototype.getTimezoneOffset = jest
+      .genMockFunction()
+      .mockReturnValue(gmtOffset); // eslint-disable-line no-extend-native
+  });
+
   const props = {
-    date: new Date("2017-07-01T14:32:00.000Z"),
+    date: new Date("2017-07-01T14:35:00.000Z"),
     publication: "TIMES"
   };
 
@@ -34,7 +42,14 @@ describe("Date Publication test", () => {
 
   it("date should follow the correct format", () => {
     const component = shallow(<DatePublication {...props} />);
-    expect(component.text()).toContain(format(props.date, "dddd MMMM DD YYYY"));
+    const UTCDate = new Date(
+      props.date.getUTCFullYear(),
+      props.date.getUTCMonth(),
+      props.date.getUTCDate(),
+      props.date.getUTCHours(),
+      props.date.getUTCMinutes()
+    );
+    expect(component.text()).toContain(format(UTCDate, dateFormat));
   });
 
   it("without providing a publication, The Times will be set as default", () => {
@@ -44,4 +59,16 @@ describe("Date Publication test", () => {
     const component = shallow(<DatePublication {...removePubProps} />);
     expect(component.text()).toContain("The Times");
   });
+
+  afterEach(() => {
+    global.Date.prototype.getTimezoneOffset = getTimezoneOffset; // eslint-disable-line no-extend-native
+  });
+}
+
+describe("Date Publication test GMT timezone", () => {
+  gmtTests(0, "dddd MMMM DD YYYY, hh:mma");
+});
+
+describe("Date Publication test non GMT timezone", () => {
+  gmtTests(60, "dddd MMMM DD YYYY, hh:mma [GMT]");
 });

@@ -15,6 +15,18 @@ const articleFixtureNoLabelNoFlags = require("../fixtures/no-label-no-flags.json
 const articleFixtureNoLabelNoFlagsNoStandFirst = require("../fixtures/no-label-no-flags-no-standfirst.json");
 
 module.exports = () => {
+  const { getTimezoneOffset } = Date.prototype;
+
+  beforeEach(() => {
+    global.Date.prototype.getTimezoneOffset = jest
+      .genMockFunction()
+      .mockReturnValue(0); // eslint-disable-line no-extend-native
+  });
+
+  afterEach(() => {
+    global.Date.prototype.getTimezoneOffset = getTimezoneOffset; // eslint-disable-line no-extend-native
+  });
+
   it("renders activity indicator ", () => {
     const tree = renderer
       .create(<Article isLoading analyticsStream={() => {}} />)

@@ -25,8 +25,17 @@ const authorProfileProps = {
 };
 
 export default AuthorProfileContent => {
+  const { getTimezoneOffset } = Date.prototype;
+
+  beforeEach(() => {
+    global.Date.prototype.getTimezoneOffset = jest
+      .genMockFunction()
+      .mockReturnValue(0); // eslint-disable-line no-extend-native
+  });
+
   afterEach(() => {
     jest.restoreAllMocks();
+    global.Date.prototype.getTimezoneOffset = getTimezoneOffset; // eslint-disable-line no-extend-native
   });
 
   it("renders profile", () => {

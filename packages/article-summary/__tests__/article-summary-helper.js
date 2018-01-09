@@ -9,6 +9,18 @@ import reviewFixture from "../fixtures/review.json";
 import blankFixture from "../fixtures/blank.json";
 
 export default ArticleSummary => {
+  const { getTimezoneOffset } = Date.prototype;
+
+  beforeEach(() => {
+    global.Date.prototype.getTimezoneOffset = jest
+      .genMockFunction()
+      .mockReturnValue(0); // eslint-disable-line no-extend-native
+  });
+
+  afterEach(() => {
+    global.Date.prototype.getTimezoneOffset = getTimezoneOffset; // eslint-disable-line no-extend-native
+  });
+
   it("renders an article-summary component with multiple paragraphs", () => {
     articleMultiFixture.date = new Date("2017-07-01T14:32:00.000Z");
 
