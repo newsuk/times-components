@@ -9,6 +9,7 @@ const prepareDataForListView = articleData => {
   const articleMidContainerData = {
     publicationName: articleData.publicationName,
     publishedTime: articleData.publishedTime,
+    isGMT: articleData.isGMT,
     byline: articleData.byline
   };
 

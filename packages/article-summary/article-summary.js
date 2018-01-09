@@ -58,7 +58,7 @@ const summarise = text => {
 };
 
 const ArticleSummary = props => {
-  const { label, headline, text, date, publication } = props;
+  const { label, headline, text, date, publication, isGMT } = props;
   const summary = summarise(text);
   const labelText = label && label.toUpperCase && label.toUpperCase();
   return (
@@ -71,7 +71,7 @@ const ArticleSummary = props => {
         accessibilityLabel="datePublication"
         testID="datePublication"
       >
-        <DatePublication date={date} publication={publication} />
+        <DatePublication date={date} publication={publication} isGMT={isGMT} />
       </Text>
     </View>
   );
@@ -81,8 +81,9 @@ ArticleSummary.propTypes = {
   label: PropTypes.string,
   headline: PropTypes.string,
   text: PropTypes.arrayOf(treePropType),
-  date: PropTypes.instanceOf(Date),
-  publication: DatePublication.propTypes.publication
+  date: DatePublication.propTypes.date,
+  publication: DatePublication.propTypes.publication,
+  isGMT: DatePublication.propTypes.isGMT
 };
 
 ArticleSummary.defaultProps = {
@@ -90,7 +91,8 @@ ArticleSummary.defaultProps = {
   headline: "",
   text: [],
   date: null,
-  publication: DatePublication.defaultProps.publication
+  publication: DatePublication.defaultProps.publication,
+  isGMT: DatePublication.defaultProps.isGMT
 };
 
 export default ArticleSummary;

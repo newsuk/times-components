@@ -34,6 +34,7 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-17T00:01:00.000Z",
+            "isGMT": true,
             "headline":
               "Top medal for forces dog who took a bite out of the Taliban",
             "url":
@@ -70,6 +71,7 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-17T00:01:00.000Z",
+            "isGMT": true,
             "headline":
               "Social media must raise game to beat terrorists, says UN chief",
             "url":
@@ -106,6 +108,7 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-14T17:00:00.000Z",
+            "isGMT": true,
             "headline":
               "Cuts have left the army 20 years out of date, says former general",
             "url":
@@ -142,6 +145,7 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-11T00:01:00.000Z",
+            "isGMT": true,
             "headline": "MoD recruits more civilians as Royal Marines face axe",
             "url":
               "https://www.thetimes.co.uk/article/mod-recruits-more-civilians-as-royal-marines-face-axe-nqdh8v3zd",
@@ -192,6 +196,7 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-11T00:01:00.000Z",
+            "isGMT": true,
             "headline":
               "Suits you: poppy power is branching out for Remembrance appeal",
             "url":
@@ -228,6 +233,7 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-10T00:01:00.000Z",
+            "isGMT": true,
             "headline":
               "MoD heralds a \u2018renewed\u2019 US special relationship",
             "url":
@@ -264,6 +270,7 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-09T00:01:00.000Z",
+            "isGMT": true,
             "headline":
               "Defence cuts will hit Britain\u2019s standing, warns US general",
             "url":
@@ -301,6 +308,7 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-04T00:00:00.000Z",
+            "isGMT": true,
             "headline": "RAF ready to withdraw as Isis battle enters endgame",
             "url":
               "https://www.thetimes.co.uk/article/raf-ready-to-withdraw-as-isis-battle-enters-endgame-jj7l3b02v",
@@ -349,6 +357,7 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-03T00:01:00.000Z",
+            "isGMT": true,
             "headline":
               "Fallon denies lewd comment about Leadsom\u2019s cold hands",
             "url":
@@ -385,6 +394,7 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-03T00:01:00.000Z",
+            "isGMT": true,
             "headline": "Gavin who? Shock at MoD\u2019s latest recruit",
             "url":
               "https://www.thetimes.co.uk/article/who-shock-at-mod-s-latest-recruit-gavin-williamson-968n7tdck",
@@ -433,6 +443,7 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-02T00:01:00.000Z",
+            "isGMT": true,
             "headline": "Fallon resigns as new sleaze claims emerge",
             "url":
               "https://www.thetimes.co.uk/article/fallon-resigns-as-new-sleaze-claims-emerge-khsks7jpb",
@@ -482,6 +493,7 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-02T00:01:00.000Z",
+            "isGMT": true,
             "headline":
               "Fallon admits falling short and leaves the job he loved",
             "url":
@@ -518,6 +530,7 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-01T00:01:00.000Z",
+            "isGMT": true,
             "headline":
               "Troops posted to Iraq face losing \u00a329 daily allowance",
             "url":
@@ -554,6 +567,7 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-11-01T00:01:00.000Z",
+            "isGMT": true,
             "headline": "Navy has to scavenge more parts",
             "url":
               "https://www.thetimes.co.uk/article/royal-navy-has-to-scavenge-more-parts-national-audit-office-says-gzdxx7zpm",
@@ -589,6 +603,7 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-10-30T00:01:00.000Z",
+            "isGMT": true,
             "headline":
               "Scrapping assault ships risks Nato role, military told",
             "url":
@@ -625,6 +640,7 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-10-27T23:01:00.000Z",
+            "isGMT": true,
             "headline": "New warplane costs $1\u00a0trillion to operate",
             "url":
               "https://www.thetimes.co.uk/article/new-f-35-warplane-costs-1-trillion-to-operate-sp6p3wdw2",
@@ -660,6 +676,7 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-10-26T23:01:00.000Z",
+            "isGMT": true,
             "headline": "Forces must find \u00a3300m for rising Trident costs",
             "url":
               "https://www.thetimes.co.uk/article/forces-must-find-300m-for-rising-trident-costs-bmxnl9577",
@@ -708,6 +725,7 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-10-25T23:01:00.000Z",
+            "isGMT": true,
             "headline": "Britain mulls warships sale as military cuts deepen",
             "url":
               "https://www.thetimes.co.uk/article/britain-mulls-warships-sale-as-military-cuts-deepen-2j0d0s5bs",
@@ -756,6 +774,7 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-10-25T23:01:00.000Z",
+            "isGMT": true,
             "headline": "\u2018MP criticism could harm arms deal\u2019",
             "url":
               "https://www.thetimes.co.uk/article/mp-criticism-could-harm-saudi-arms-deal-warns-fallon-k97dxp3vj",
@@ -805,6 +824,7 @@
             },
             "publicationName": "TIMES",
             "publishedTime": "2017-10-24T23:01:00.000Z",
+            "isGMT": true,
             "headline":
               "US military officers raise fears over Royal Marine cuts",
             "url":

@@ -34,6 +34,7 @@ const AuthorProfileItem = item => {
     isLoading,
     onPress,
     publicationName,
+    isGMT,
     publishedTime,
     headline,
     url,
@@ -64,6 +65,7 @@ const AuthorProfileItem = item => {
     label,
     headline,
     date: publishedTime,
+    isGMT,
     publication: publicationName
   };
 

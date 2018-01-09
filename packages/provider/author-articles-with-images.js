@@ -33,6 +33,7 @@ export const query = gql`
           }
           publicationName
           publishedTime
+          isGMT
           headline
           url
         }
