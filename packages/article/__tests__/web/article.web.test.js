@@ -2,10 +2,9 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
+import "jest-styled-components";
 import Article from "../../article";
 import shared from "../shared";
-
-import "jest-styled-components";
 
 const articleFixtureNoLeadAsset = require("../../fixtures/no-lead-asset.json");
 
