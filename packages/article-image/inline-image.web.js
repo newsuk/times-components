@@ -32,9 +32,11 @@ const InsetImageStyle = withResponsiveStyles(View, {
   base: () => `width: 50%;
                 display: inline-block;`,
   mediumUp: () => `width: 30%;
+                    clear:left;
                     float:left;
                     padding-right: 10px;`,
   wideUp: () => `width: 35.71429%;
+                  clear:left;
                   float:left;
                   padding-right: 10px;
                   `
