@@ -28,8 +28,17 @@ const authorProfileProps = {
 };
 
 export default AuthorProfileContent => {
+  const { getTimezoneOffset } = Date.prototype;
+
+  beforeEach(() => {
+    global.Date.prototype.getTimezoneOffset = jest
+      .genMockFunction()
+      .mockReturnValue(120); // eslint-disable-line no-extend-native
+  });
+
   afterEach(() => {
     jest.restoreAllMocks();
+    global.Date.prototype.getTimezoneOffset = getTimezoneOffset; // eslint-disable-line no-extend-native
   });
 
   it("renders profile", () => {
@@ -217,6 +226,7 @@ export default AuthorProfileContent => {
       publicationName: "TIMES",
       publishedTime: "2017-11-17T00:01:00.000Z",
       isGMT: true,
+      isDateGMT: true,
       headline: "Top medal for forces dog who took a bite out of the Taliban",
       url:
         "https://www.thetimes.co.uk/article/d98c257c-cb16-11e7-b529-95e3fc05f40f",
