@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.12.20"></a>
+## [0.12.20](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.12.19...@times-components/pagination@0.12.20) (2018-01-10)
+
+
+### Bug Fixes
+
+* apply the design review ([#512](https://github.com/newsuk/times-components/issues/512)) ([70561dd](https://github.com/newsuk/times-components/commit/70561dd))
+
+
+
+
 <a name="0.12.19"></a>
 ## [0.12.19](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.12.18...@times-components/pagination@0.12.19) (2018-01-10)
 
