@@ -55,6 +55,7 @@
     "eslint": "4.9.0",
     "flow-bin": "0.42.0",
     "jest": "21.2.1",
+    "jest-styled-components": "4.9.0",
     "prettier": "1.8.2",
     "react": "16.2.0",
     "react-dom": "16.2.0",
@@ -74,10 +75,10 @@
     "@times-components/markup": "0.15.8",
     "@times-components/provider": "0.20.5",
     "@times-components/pull-quote": "0.1.7",
+    "@times-components/responsive-styles": "0.2.7",
     "@times-components/tracking": "0.5.11",
     "lodash.get": "4.4.2",
-    "prop-types": "15.6.0",
-    "styled-components": "2.2.3"
+    "prop-types": "15.6.0"
   },
   "peerDependencies": {
     "react": ">=16",

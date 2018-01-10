@@ -496,7 +496,7 @@ exports[`Article test on ios renders article no flags 1`] = `
       >
         <View
           accessibilityLabel="label"
-          className="sc-bwzfXH koRhnn"
+          className="sc-bwzfXH cQdnDH"
           style={
             Object {
               "paddingBottom": 5,
@@ -530,7 +530,7 @@ exports[`Article test on ios renders article no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bdVaJa jgzvie"
+          className="sc-bdVaJa jVCmPv"
           ellipsizeMode="tail"
           style={
             Object {
@@ -572,7 +572,7 @@ exports[`Article test on ios renders article no flags 1`] = `
       style={null}
     >
       <View
-        className="sc-bxivhb akpSg"
+        className="sc-bxivhb kyhaWb"
         style={
           Array [
             Object {
@@ -603,7 +603,7 @@ exports[`Article test on ios renders article no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-htpNat eVmptQ"
+            className="sc-htpNat gQVyqP"
             ellipsizeMode="tail"
             style={
               Object {
@@ -636,7 +636,7 @@ exports[`Article test on ios renders article no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-htpNat eVmptQ"
+            className="sc-htpNat gQVyqP"
             ellipsizeMode="tail"
             style={
               Object {
@@ -1396,7 +1396,7 @@ exports[`Article test on ios renders article no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bdVaJa jgzvie"
+          className="sc-bdVaJa jVCmPv"
           ellipsizeMode="tail"
           style={
             Object {
@@ -1575,7 +1575,7 @@ exports[`Article test on ios renders article no label 1`] = `
       style={null}
     >
       <View
-        className="sc-bxivhb akpSg"
+        className="sc-bxivhb kyhaWb"
         style={
           Array [
             Object {
@@ -1606,7 +1606,7 @@ exports[`Article test on ios renders article no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-htpNat eVmptQ"
+            className="sc-htpNat gQVyqP"
             ellipsizeMode="tail"
             style={
               Object {
@@ -1639,7 +1639,7 @@ exports[`Article test on ios renders article no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-htpNat eVmptQ"
+            className="sc-htpNat gQVyqP"
             ellipsizeMode="tail"
             style={
               Object {
@@ -2396,7 +2396,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bdVaJa jgzvie"
+          className="sc-bdVaJa jVCmPv"
           ellipsizeMode="tail"
           style={
             Object {
@@ -2438,7 +2438,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
       style={null}
     >
       <View
-        className="sc-bxivhb akpSg"
+        className="sc-bxivhb kyhaWb"
         style={
           Array [
             Object {
@@ -2469,7 +2469,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-htpNat eVmptQ"
+            className="sc-htpNat gQVyqP"
             ellipsizeMode="tail"
             style={
               Object {
@@ -2502,7 +2502,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-htpNat eVmptQ"
+            className="sc-htpNat gQVyqP"
             ellipsizeMode="tail"
             style={
               Object {
@@ -3259,7 +3259,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bdVaJa jgzvie"
+          className="sc-bdVaJa jVCmPv"
           ellipsizeMode="tail"
           style={
             Object {
@@ -3281,7 +3281,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
       style={null}
     >
       <View
-        className="sc-bxivhb akpSg"
+        className="sc-bxivhb kyhaWb"
         style={
           Array [
             Object {
@@ -3312,7 +3312,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-htpNat eVmptQ"
+            className="sc-htpNat gQVyqP"
             ellipsizeMode="tail"
             style={
               Object {
@@ -3345,7 +3345,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-htpNat eVmptQ"
+            className="sc-htpNat gQVyqP"
             ellipsizeMode="tail"
             style={
               Object {
@@ -4104,7 +4104,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
       >
         <View
           accessibilityLabel="label"
-          className="sc-bwzfXH koRhnn"
+          className="sc-bwzfXH cQdnDH"
           style={
             Object {
               "paddingBottom": 5,
@@ -4138,7 +4138,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bdVaJa jgzvie"
+          className="sc-bdVaJa jVCmPv"
           ellipsizeMode="tail"
           style={
             Object {
@@ -4297,7 +4297,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
       style={null}
     >
       <View
-        className="sc-bxivhb akpSg"
+        className="sc-bxivhb kyhaWb"
         style={
           Array [
             Object {
@@ -4328,7 +4328,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-htpNat eVmptQ"
+            className="sc-htpNat gQVyqP"
             ellipsizeMode="tail"
             style={
               Object {
@@ -4361,7 +4361,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-htpNat eVmptQ"
+            className="sc-htpNat gQVyqP"
             ellipsizeMode="tail"
             style={
               Object {
@@ -5117,7 +5117,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
       >
         <View
           accessibilityLabel="label"
-          className="sc-bwzfXH koRhnn"
+          className="sc-bwzfXH cQdnDH"
           style={
             Object {
               "paddingBottom": 5,
@@ -5151,7 +5151,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bdVaJa jgzvie"
+          className="sc-bdVaJa jVCmPv"
           ellipsizeMode="tail"
           style={
             Object {
@@ -5173,7 +5173,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
       style={null}
     >
       <View
-        className="sc-bxivhb akpSg"
+        className="sc-bxivhb kyhaWb"
         style={
           Array [
             Object {
@@ -5204,7 +5204,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-htpNat eVmptQ"
+            className="sc-htpNat gQVyqP"
             ellipsizeMode="tail"
             style={
               Object {
@@ -5237,7 +5237,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-htpNat eVmptQ"
+            className="sc-htpNat gQVyqP"
             ellipsizeMode="tail"
             style={
               Object {
@@ -5997,7 +5997,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bdVaJa jgzvie"
+          className="sc-bdVaJa jVCmPv"
           ellipsizeMode="tail"
           style={
             Object {
@@ -6156,7 +6156,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
       style={null}
     >
       <View
-        className="sc-bxivhb akpSg"
+        className="sc-bxivhb kyhaWb"
         style={
           Array [
             Object {
@@ -6187,7 +6187,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-htpNat eVmptQ"
+            className="sc-htpNat gQVyqP"
             ellipsizeMode="tail"
             style={
               Object {
@@ -6220,7 +6220,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-htpNat eVmptQ"
+            className="sc-htpNat gQVyqP"
             ellipsizeMode="tail"
             style={
               Object {
@@ -7063,7 +7063,7 @@ exports[`Article test on ios renders full article 1`] = `
       >
         <View
           accessibilityLabel="label"
-          className="sc-bwzfXH koRhnn"
+          className="sc-bwzfXH cQdnDH"
           style={
             Object {
               "paddingBottom": 5,
@@ -7097,7 +7097,7 @@ exports[`Article test on ios renders full article 1`] = `
         <Text
           accessible={true}
           allowFontScaling={true}
-          className="sc-bdVaJa jgzvie"
+          className="sc-bdVaJa jVCmPv"
           ellipsizeMode="tail"
           style={
             Object {
@@ -7276,7 +7276,7 @@ exports[`Article test on ios renders full article 1`] = `
       style={null}
     >
       <View
-        className="sc-bxivhb akpSg"
+        className="sc-bxivhb kyhaWb"
         style={
           Array [
             Object {
@@ -7307,7 +7307,7 @@ exports[`Article test on ios renders full article 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-htpNat eVmptQ"
+            className="sc-htpNat gQVyqP"
             ellipsizeMode="tail"
             style={
               Object {
@@ -7340,7 +7340,7 @@ exports[`Article test on ios renders full article 1`] = `
           <Text
             accessible={true}
             allowFontScaling={true}
-            className="sc-htpNat eVmptQ"
+            className="sc-htpNat gQVyqP"
             ellipsizeMode="tail"
             style={
               Object {
@@ -7465,7 +7465,7 @@ exports[`Article test on ios renders full article 1`] = `
       style={null}
     >
       <View
-        className="sc-gZMcBi kaPTEC"
+        className="sc-gZMcBi cFanlN"
       >
         <View
           style={
@@ -7709,7 +7709,7 @@ exports[`Article test on ios renders full article 1`] = `
       style={null}
     >
       <View
-        className="sc-gqjmRU fLtNIQ"
+        className="sc-gqjmRU iPSktQ"
       >
         <View
           style={
