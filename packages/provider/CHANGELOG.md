@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.20.6"></a>
+## [0.20.6](https://github.com/newsuk/times-components/compare/@times-components/provider@0.20.5...@times-components/provider@0.20.6) (2018-01-10)
+
+
+### Bug Fixes
+
+* Add refetch tests and refactor ([#508](https://github.com/newsuk/times-components/issues/508)) ([4c0e259](https://github.com/newsuk/times-components/commit/4c0e259))
+
+
+
+
 <a name="0.20.5"></a>
 ## [0.20.5](https://github.com/newsuk/times-components/compare/@times-components/provider@0.20.4...@times-components/provider@0.20.5) (2018-01-08)
 

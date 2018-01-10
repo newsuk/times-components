@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider",
-  "version": "0.20.5",
+  "version": "0.20.6",
   "main": "provider",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
