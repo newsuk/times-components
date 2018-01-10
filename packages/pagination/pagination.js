@@ -27,12 +27,11 @@ const styles = StyleSheet.create({
   },
   borderTop: {
     borderTopColor: "#dbdbdb",
-    borderTopWidth: 1,
+    borderTopWidth: 1
   },
   borderBottom: {
     borderBottomColor: "#dbdbdb",
-    borderBottomWidth: 1,
-
+    borderBottomWidth: 1
   },
   container: {
     alignItems: "stretch",
@@ -85,10 +84,11 @@ const Pagination = ({
       {messageComponent}
       <View
         style={[
-        styles.border,
-        !hideTopKeyline && styles.borderTop,
-        !hideBottomKeyline && styles.borderBottom
-      ]}>
+          styles.border,
+          !hideTopKeyline && styles.borderTop,
+          !hideBottomKeyline && styles.borderBottom
+        ]}
+      >
         <View>{prevComponent}</View>
         <View>{nextComponent}</View>
       </View>
