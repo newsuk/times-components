@@ -21,6 +21,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "jest": {
     "rootDir": "../../",
+    "coverageDirectory": "<rootDir>/packages/tealium/coverage/web/",
     "transformIgnorePatterns": [
       "node_modules/(?!@times-components)/"
     ],
