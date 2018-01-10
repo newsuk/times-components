@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tracking",
-  "version": "0.5.11",
+  "version": "0.5.12",
   "main": "tracking",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -34,7 +34,7 @@
     "@storybook/react-native": "3.2.18",
     "@times-components/eslint-config-thetimes": "0.1.0",
     "@times-components/storybook": "0.2.1",
-    "@times-components/tealium": "0.1.6",
+    "@times-components/tealium": "0.1.7",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",
