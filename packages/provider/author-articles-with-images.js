@@ -34,6 +34,7 @@ export const query = gql`
           publicationName
           publishedTime
           isGMT
+          isDateGMT
           headline
           url
         }
