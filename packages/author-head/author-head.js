@@ -16,7 +16,7 @@ import AuthorHeadContainer from "./author-head-container";
 const styles = StyleSheet.create({
   twitter: {
     paddingTop: 16,
-    paddingBottom: 16,
+    paddingBottom: 8,
     flexDirection: "row",
     ...Platform.select({
       android: {
