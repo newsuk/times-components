@@ -18,24 +18,11 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     paddingTop: 0,
     width: "50%"
-  },
-  inlineImage: {
-    width: "50%"
-  },
-  inlineCaption: {
-    paddingLeft: 10,
-    paddingTop: 0,
-    width: "50%"
   }
 });
 
 const captionStyle = {
   secondary: {
-    container: {
-      paddingTop: 0
-    }
-  },
-  inline: {
     container: {
       paddingTop: 0
     }

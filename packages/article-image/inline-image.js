@@ -2,7 +2,6 @@ import React from "react";
 import { View, StyleSheet } from "react-native";
 import Image from "@times-components/image";
 import Caption from "@times-components/caption";
-import InsetCaption from "./inset-caption";
 
 import {
   articleImagePropTypes,
@@ -10,14 +9,6 @@ import {
 } from "./article-image-proptypes";
 
 const styles = StyleSheet.create({
-  //   secondaryImage: {
-  //     width: "50%"
-  //   },
-  //   secondaryCaption: {
-  //     paddingLeft: 10,
-  //     paddingTop: 0,
-  //     width: "50%"
-  //   },
   inlineImage: {
     width: "50%"
   },
@@ -29,11 +20,6 @@ const styles = StyleSheet.create({
 });
 
 const captionStyle = {
-  //   secondary: {
-  //     container: {
-  //       paddingTop: 0
-  //     }
-  //   },
   inline: {
     container: {
       paddingTop: 0
@@ -45,16 +31,10 @@ const renderCaption = (display, caption, credits) => {
   if (!caption && !credits) {
     return null;
   }
-  const CaptionComponent =
-    display === "primary" ? (
-      <InsetCaption caption={caption} credits={credits} />
-    ) : (
-      <Caption text={caption} credits={credits} style={captionStyle[display]} />
-    );
 
   return (
     <View key="caption" style={styles[`${display}Caption`]}>
-      {CaptionComponent}
+      <Caption text={caption} credits={credits} style={captionStyle[display]} />
     </View>
   );
 };

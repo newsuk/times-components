@@ -12,25 +12,25 @@ import {
 
 const InsetCaptionContainerStyle = withResponsiveStyles(View, {
   base: () => `width: 50%;
+                margin-top: -10px;
                 padding-top: 5px;
                 padding-left: 20px;
                 padding-right: 10px;
                 padding-bottom: 20px;
                 display: inline-block;
+                vertical-align:top;
                 `,
   mediumUp: () => `padding-left: 0px;
                      width: 30%;
                      clear: left;
                      float:left;
+                     margin-top: 0px;
                      padding-top: 0px;
                      padding-right: 20px;
                      padding-bottom: 40px;
                     `,
   wideUp: () => `padding-left: 0px;
                    width: 35.71429%;
-                  //  clear: left;
-                  //  float:left;
-                  //  padding-right: 20px;
                   `
 });
 
@@ -38,21 +38,14 @@ const InsetImageStyle = withResponsiveStyles(View, {
   base: () => `width: 50%;
                 padding-top: 5px;
                 padding-bottom: 20px;
-                display: inline-block;`,
+                display: inline-block;
+                vertical-align:top;`,
   mediumUp: () => `width: 30%;
                     clear:left;
                     float:left;
                     padding-bottom: 0px;
                     padding-right: 20px;`,
-  wideUp: () => `width: 35.71429%;
-                  // clear:left;
-                  // float:left;
-                  // padding-right: 20px;
-                  `
-});
-
-const CaptionStyle = withResponsiveStyles(View, {
-  base: () => "padding-top: 0px;"
+  wideUp: () => `width: 35.71429%;`
 });
 
 const renderCaption = (display, caption, credits) => {
@@ -62,9 +55,7 @@ const renderCaption = (display, caption, credits) => {
 
   return (
     <InsetCaptionContainerStyle key="caption">
-      <CaptionStyle>
         <Caption text={caption} credits={credits} />
-      </CaptionStyle>
     </InsetCaptionContainerStyle>
   );
 };
