@@ -382,6 +382,14 @@
               "deprecationReason": null
             },
             {
+              "name": "isDateGMT",
+              "description": "",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "Boolean", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "standfirst",
               "description":
                 "A brief introductory summary, typically appearing immediately after the headline and typographically distinct from the rest of the article",
