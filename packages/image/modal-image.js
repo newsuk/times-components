@@ -3,6 +3,7 @@ import { Modal, View, StyleSheet } from "react-native";
 import Button from "@times-components/link";
 import Svg, { Path, G } from "svgs";
 import Image from "./image";
+import { defaultProps, propTypes } from "./image-prop-types";
 
 const style = StyleSheet.create({
   modal: {
@@ -69,5 +70,8 @@ class ModalImage extends Component {
     );
   }
 }
+
+ModalImage.propTypes = propTypes;
+ModalImage.defaultProps = defaultProps;
 
 export default ModalImage;
