@@ -12,23 +12,29 @@ import {
   } from "./article-image-proptypes";
 
 const InsetCaptionContainerStyle = withResponsiveStyles(View, {
-    base: () => `padding-left: 10px;
-                 padding-top: 0px;
-                 width: 50%;
+    base: () => `width: 50%;
+                //padding-top: 0px;
+                padding-left: 20px;
+                display: inline-block;
                 `,
     mediumUp: () => `padding-left: 0px;
                      width: 30%;
+                     clear: left;
+                     float:left;
                     `,
     wideUp: () => `padding-left: 0px;
                    width: 35.71429%;
+                   clear: left;
+                   float:left;
                   `
 });
 
 const InsetImageStyle = withResponsiveStyles(View, {
-  base: () => `clear: left;
-              width: 100%;`,
-    base: () => "width: 50%;",
-    mediumUp: () => "width: 30%;",
+    base: () => `width: 50%;
+                display: inline-block;`,
+    mediumUp: () => `width: 30%;
+                    float:left;
+                    padding-right: 10px;`,
     wideUp: () => `width: 35.71429%;
                   float:left;
                   padding-right: 10px;
@@ -44,29 +50,22 @@ const renderCaption = (display, caption, credits) => {
   if (!caption && !credits) {
     return null;
   }
-  const CaptionComponent =
-    display === "primary" ? (
-      <InsetCaption caption={caption} credits={credits} />
-    ) : (
-      <CaptionStyle>
-        <Caption text={caption} credits={credits}/>
-      </CaptionStyle>
-    );
 
   return (
     <InsetCaptionContainerStyle key="caption">
-      {CaptionComponent}
+      <CaptionStyle>
+        <Caption text={caption} credits={credits}/>
+      </CaptionStyle>
     </InsetCaptionContainerStyle>
   );
 };
 
 const ArticleImage = ({ imageOptions, captionOptions }) => {
 
-  console.log('hey');
   const { display, ratio, url } = imageOptions;
   const { caption, credits } = captionOptions;
 
-  //const children = [renderCaption(display, caption, credits)];
+  const children = [renderCaption(display, caption, credits)];
 
   if (!display || !ratio) {
     return children;
@@ -79,7 +78,8 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
     <InsetImageStyle key="img">
       <Image uri={url} aspectRatio={aspectRatio} />
     </InsetImageStyle>,
-    //...children
+    ...children
+
   ];
 };
 
