@@ -24,6 +24,7 @@ const AuthorProfileItem = item => {
     publicationName,
     publishedTime,
     isGMT,
+    isDateGMT,
     headline,
     url,
     imageRatio,
@@ -64,6 +65,7 @@ const AuthorProfileItem = item => {
             text={showImage ? summary : shortSummary}
             date={publishedTime}
             isGMT={isGMT}
+            isDateGMT={isDateGMT}
             publication={publicationName}
           />
         </Card>
