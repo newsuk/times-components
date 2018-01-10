@@ -26,9 +26,9 @@ ShallowWrapper {
           />
         </Text>,
         <Svg
-          height={9}
+          height={12}
           viewBox="42 12 60 120"
-          width={5}
+          width={7}
         >
           <G
             fill="#006699"
@@ -79,9 +79,9 @@ ShallowWrapper {
               d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
             />
           </G>,
-          "height": 9,
+          "height": 12,
           "viewBox": "42 12 60 120",
-          "width": 5,
+          "width": 7,
         },
         "ref": null,
         "rendered": Object {
@@ -128,9 +128,9 @@ ShallowWrapper {
             />
           </Text>,
           <Svg
-            height={9}
+            height={12}
             viewBox="42 12 60 120"
-            width={5}
+            width={7}
           >
             <G
               fill="#006699"
@@ -181,9 +181,9 @@ ShallowWrapper {
                 d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
               />
             </G>,
-            "height": 9,
+            "height": 12,
             "viewBox": "42 12 60 120",
-            "width": 5,
+            "width": 7,
           },
           "ref": null,
           "rendered": Object {
@@ -245,9 +245,9 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Svg
-          height={9}
+          height={12}
           viewBox="42 12 60 120"
-          width={5}
+          width={7}
         >
           <G
             fill="#006699"
@@ -281,9 +281,9 @@ ShallowWrapper {
               d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
             />
           </G>,
-          "height": 9,
+          "height": 12,
           "viewBox": "42 12 60 120",
-          "width": 5,
+          "width": 7,
         },
         "ref": null,
         "rendered": Object {
@@ -347,9 +347,9 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Svg
-            height={9}
+            height={12}
             viewBox="42 12 60 120"
-            width={5}
+            width={7}
           >
             <G
               fill="#006699"
@@ -383,9 +383,9 @@ ShallowWrapper {
                 d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
               />
             </G>,
-            "height": 9,
+            "height": 12,
             "viewBox": "42 12 60 120",
-            "width": 5,
+            "width": 7,
           },
           "ref": null,
           "rendered": Object {

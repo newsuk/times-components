@@ -12,7 +12,7 @@ const ResponsiveLabel = withResponsiveStyles(Text, {
 const PageLabel = ({ direction }) => (
   <Text>
     {direction}
-    <ResponsiveLabel> Page</ResponsiveLabel>
+    <ResponsiveLabel> page</ResponsiveLabel>
   </Text>
 );
 

@@ -10,7 +10,7 @@ const MessageContainer = withResponsiveStyles(View, {
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    height: 40px;
+    height: 50px;
   `,
   mediumUp: () => `
     left: 0;
