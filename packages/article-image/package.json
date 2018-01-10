@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-image",
-  "version": "0.10.3",
+  "version": "0.10.4",
   "description": "Article Image",
   "main": "article-image",
   "scripts": {
