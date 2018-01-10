@@ -25,16 +25,14 @@ const InsetCaptionContainerStyle = withResponsiveStyles(View, {
 });
 
 const InsetImageStyle = withResponsiveStyles(View, {
-  base: () => "width: 100%;",
-    // base: () => "width: 50%;",
-    // mediumUp: () => "width: 30%;",
-    // wideUp: () => `width: 35.71429%;
-    //               //float:left;
-    //               display:block;
-    //               position: absolute;
-    //               padding-right: 10px;
-    //               margin-bottom:
-    //               `
+  base: () => `clear: left;
+              width: 100%;`,
+    base: () => "width: 50%;",
+    mediumUp: () => "width: 30%;",
+    wideUp: () => `width: 35.71429%;
+                  float:left;
+                  padding-right: 10px;
+                  `
 });
 
 const CaptionStyle = withResponsiveStyles(View, {

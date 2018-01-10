@@ -39,7 +39,7 @@ const ArticleRow = props => {
       const ImageContainer = getImageContainer(attributes.display);
       return (
         <ImageContainer key={key}>
-          <ArticleImgResp>
+
             <ArticleImage
               imageOptions={{
                 display: attributes.display,
@@ -51,7 +51,7 @@ const ArticleRow = props => {
                 credits: attributes.credits
               }}
             />
-          </ArticleImgResp>
+
         </ImageContainer>
       );
     },
