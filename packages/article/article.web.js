@@ -33,6 +33,7 @@ class ArticlePage extends React.Component {
       byline,
       publishedTime,
       isGMT,
+      isDateGMT,
       publicationName,
       leadAsset,
       content
@@ -55,6 +56,7 @@ class ArticlePage extends React.Component {
               byline={byline}
               publishedTime={publishedTime}
               isGMT={isGMT}
+              isDateGMT={isDateGMT}
               publicationName={publicationName}
             />
           </MetaContainer>
