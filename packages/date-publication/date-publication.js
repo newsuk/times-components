@@ -2,7 +2,6 @@ import format from "date-fns/format";
 import addMinutes from "date-fns/add_minutes";
 import PropTypes from "prop-types";
 import React from "react";
-import { isDate } from "util";
 
 const publications = {
   SUNDAYTIMES: "The Sunday Times",
@@ -20,7 +19,7 @@ class DatePublication extends React.Component {
     const userOffset = new Date().getTimezoneOffset();
     const currentOffset = this.props.isGMT ? 0 : 60;
     if (userOffset !== currentOffset) {
-      this.setState({ tz: this.props.isDateGMT ? "GMT" : "BST" }); // eslint-disable-line react/no-did-mount-set-state
+      this.setState({ tz: this.props.isDateGMT ? " GMT" : " BST" }); // eslint-disable-line react/no-did-mount-set-state
     }
   }
   render() {
@@ -36,7 +35,7 @@ class DatePublication extends React.Component {
 
     const offset = isDateGMT ? 0 : 60;
     const datetimeLondonTimezone = addMinutes(datetimeUTC, offset);
-    return `${format(datetimeLondonTimezone, "dddd MMMM DD YYYY, hh:mma")} ${
+    return `${format(datetimeLondonTimezone, "dddd MMMM DD YYYY, hh:mma")}${
       this.state.tz
     }, ${publications[publication]}`;
   }
