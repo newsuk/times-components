@@ -95,7 +95,7 @@ it("returns an error", done => {
   }, customMocks);
 });
 
-it("refetches", done => {
+it("re-renders with refetched data after error", done => {
   const customMocks = [
     {
       request: {
@@ -134,7 +134,7 @@ it("refetches", done => {
   }, customMocks);
 });
 
-it("handles refetch error", done => {
+it("supports another refetch after error during refetch", done => {
   const customMocks = [
     {
       request: {
