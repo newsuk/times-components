@@ -23,10 +23,13 @@ exports[`ModalImage test on android renders correctly 1`] = `
         accessibilityLabel={undefined}
         accessibilityTraits={undefined}
         accessible={true}
-        collapsable={undefined}
         hitSlop={undefined}
-        isTVSelectable={true}
-        nativeID={undefined}
+        nativeBackgroundAndroid={
+          Object {
+            "attribute": "selectableItemBackground",
+            "type": "ThemeAttrAndroid",
+          }
+        }
         onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -34,13 +37,8 @@ exports[`ModalImage test on android renders correctly 1`] = `
         onResponderTerminate={[Function]}
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
+        pointerEvents="box-only"
         testID={undefined}
-        tvParallaxProperties={undefined}
       >
         <svg
           height="48"
@@ -208,10 +206,13 @@ exports[`ModalImage test on android renders correctly 1`] = `
     accessibilityLabel={undefined}
     accessibilityTraits={undefined}
     accessible={true}
-    collapsable={undefined}
     hitSlop={undefined}
-    isTVSelectable={true}
-    nativeID={undefined}
+    nativeBackgroundAndroid={
+      Object {
+        "attribute": "selectableItemBackground",
+        "type": "ThemeAttrAndroid",
+      }
+    }
     onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -219,13 +220,8 @@ exports[`ModalImage test on android renders correctly 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "opacity": 1,
-      }
-    }
+    pointerEvents="box-only"
     testID={undefined}
-    tvParallaxProperties={undefined}
   >
     <View
       aspectRatio={1.5}
