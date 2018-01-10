@@ -18,7 +18,7 @@ exports[`AuthorHead test on ios renders 1`] = `
           "alignItems": "center",
           "backgroundColor": "#F9F8F3",
           "flexDirection": "column",
-          "paddingBottom": 30,
+          "paddingBottom": 40,
           "width": "100%",
         },
         Object {
@@ -109,7 +109,7 @@ exports[`AuthorHead test on ios renders with data 1`] = `
           "alignItems": "center",
           "backgroundColor": "#F9F8F3",
           "flexDirection": "column",
-          "paddingBottom": 30,
+          "paddingBottom": 40,
           "width": "100%",
         },
         Object {
@@ -380,7 +380,7 @@ exports[`AuthorHead test on ios renders without profile picture 1`] = `
           "alignItems": "center",
           "backgroundColor": "#F9F8F3",
           "flexDirection": "column",
-          "paddingBottom": 30,
+          "paddingBottom": 40,
           "width": "100%",
         },
         Object {
