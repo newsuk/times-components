@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "0.16.15",
+  "version": "0.16.16",
   "main": "card",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "@times-components/gradient": "0.3.7",
-    "@times-components/image": "1.10.4",
+    "@times-components/image": "1.11.0",
     "@times-components/jest-configurator": "0.0.15",
     "@times-components/responsive-styles": "0.2.7",
     "prop-types": "15.6.0",
