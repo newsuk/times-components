@@ -18,6 +18,7 @@ storiesOf("DatePublication", module)
       <DatePublication
         date="2017-02-01T14:32:00.000Z"
         publication="SUNDAYTIMES"
+        isDateGMT
         isGMT
       />
     </Text>
