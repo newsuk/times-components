@@ -223,12 +223,12 @@ describe("TealiumSendScheduler", () => {
 
       global.window.tealiumTrack = () => {
         let count = 100000000;
-        while(count) {
+        while (count) {
           count -= 1;
-        };
+        }
       };
 
-      jest.spyOn(global.window, 'tealiumTrack');
+      jest.spyOn(global.window, "tealiumTrack");
 
       sendScheduler.enqueue(e1);
       sendScheduler.enqueue(e2);
