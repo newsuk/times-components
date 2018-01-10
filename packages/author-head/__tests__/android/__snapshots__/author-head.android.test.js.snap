@@ -297,7 +297,7 @@ exports[`AuthorHead test on android renders with data 1`] = `
         Object {
           "alignItems": "center",
           "flexDirection": "row",
-          "paddingBottom": 16,
+          "paddingBottom": 8,
           "paddingTop": 16,
         }
       }
@@ -464,7 +464,7 @@ exports[`AuthorHead test on android renders without profile picture 1`] = `
         Object {
           "alignItems": "center",
           "flexDirection": "row",
-          "paddingBottom": 16,
+          "paddingBottom": 8,
           "paddingTop": 16,
         }
       }

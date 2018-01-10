@@ -263,7 +263,7 @@ exports[`AuthorHead test on ios renders with data 1`] = `
       style={
         Object {
           "flexDirection": "row",
-          "paddingBottom": 16,
+          "paddingBottom": 8,
           "paddingTop": 16,
         }
       }
@@ -429,7 +429,7 @@ exports[`AuthorHead test on ios renders without profile picture 1`] = `
       style={
         Object {
           "flexDirection": "row",
-          "paddingBottom": 16,
+          "paddingBottom": 8,
           "paddingTop": 16,
         }
       }
