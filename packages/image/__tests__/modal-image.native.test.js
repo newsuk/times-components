@@ -29,7 +29,7 @@ export default () => {
     imageLink.simulate("press");
     component.update();
 
-    const modal = component.children().at(0);
+    const modal = component.childAt(0);
     expect(modal.props().visible).toBe(true);
   });
 
@@ -46,7 +46,7 @@ export default () => {
     closeButton.simulate("press");
     component.update();
 
-    const modal = component.children().at(0);
+    const modal = component.childAt(0);
     expect(modal.props().visible).toBe(false);
   });
 };
