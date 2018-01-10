@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.24.14"></a>
+## [0.24.14](https://github.com/newsuk/times-components/compare/@times-components/article@0.24.12...@times-components/article@0.24.14) (2018-01-10)
+
+
+### Bug Fixes
+
+* REPLAT-1166 Responsive Article Patterns ([#500](https://github.com/newsuk/times-components/issues/500)) ([873a16e](https://github.com/newsuk/times-components/commit/873a16e))
+
+
+
+
 <a name="0.24.13"></a>
 ## [0.24.13](https://github.com/newsuk/times-components/compare/@times-components/article@0.24.12...@times-components/article@0.24.13) (2018-01-10)
 
