@@ -11,16 +11,9 @@ import TwitterIcon from "./twitter-icon";
 import Bio from "./author-bio";
 import AuthorName from "./author-name";
 import AuthorPhoto from "./author-photo";
+import AuthorHeadContainer from "./author-head-container";
 
 const styles = StyleSheet.create({
-  container: {
-    width: "100%",
-    alignItems: "center",
-    flexDirection: "column",
-    backgroundColor: "#F9F8F3",
-    paddingTop: 20,
-    paddingBottom: 30
-  },
   twitter: {
     paddingTop: 16,
     paddingBottom: 16,
@@ -37,10 +30,6 @@ const styles = StyleSheet.create({
     color: "#006699",
     textDecorationLine: "none",
     paddingLeft: 5
-  },
-  wrapper: {
-    alignItems: "center",
-    backgroundColor: "transparent"
   }
 });
 
@@ -48,15 +37,13 @@ const AuthorHead = props => {
   const { name, title, twitter, bio, uri, onTwitterLinkPress } = props;
 
   return (
-    <View style={styles.wrapper} pointerEvents="box-none">
-      <View accessibilityRole="banner" style={styles.container}>
-        <AuthorPhoto uri={uri} />
-        <AuthorName name={name} />
-        <AuthorTitle title={title} />
-        <TwitterLink handle={twitter} onPress={onTwitterLinkPress} />
-        <Bio bio={bio} />
-      </View>
-    </View>
+    <AuthorHeadContainer>
+      <AuthorPhoto uri={uri} />
+      <AuthorName name={name} />
+      <AuthorTitle title={title} />
+      <TwitterLink handle={twitter} onPress={onTwitterLinkPress} />
+      <Bio bio={bio} />
+    </AuthorHeadContainer>
   );
 };
 
