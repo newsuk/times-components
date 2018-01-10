@@ -10,14 +10,14 @@ import {
 } from "./article-image-proptypes";
 
 const styles = StyleSheet.create({
-//   secondaryImage: {
-//     width: "50%"
-//   },
-//   secondaryCaption: {
-//     paddingLeft: 10,
-//     paddingTop: 0,
-//     width: "50%"
-//   },
+  //   secondaryImage: {
+  //     width: "50%"
+  //   },
+  //   secondaryCaption: {
+  //     paddingLeft: 10,
+  //     paddingTop: 0,
+  //     width: "50%"
+  //   },
   inlineImage: {
     width: "50%"
   },
@@ -29,11 +29,11 @@ const styles = StyleSheet.create({
 });
 
 const captionStyle = {
-//   secondary: {
-//     container: {
-//       paddingTop: 0
-//     }
-//   },
+  //   secondary: {
+  //     container: {
+  //       paddingTop: 0
+  //     }
+  //   },
   inline: {
     container: {
       paddingTop: 0

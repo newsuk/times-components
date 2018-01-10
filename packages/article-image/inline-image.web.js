@@ -5,24 +5,23 @@ import Caption from "@times-components/caption";
 import InsetCaption from "./inset-caption";
 import withResponsiveStyles from "@times-components/responsive-styles";
 
-
 import {
-    articleImagePropTypes,
-    articleImageDefaultPropTypes
-  } from "./article-image-proptypes";
+  articleImagePropTypes,
+  articleImageDefaultPropTypes
+} from "./article-image-proptypes";
 
 const InsetCaptionContainerStyle = withResponsiveStyles(View, {
-    base: () => `width: 50%;
+  base: () => `width: 50%;
                 //padding-top: 0px;
                 padding-left: 20px;
                 display: inline-block;
                 `,
-    mediumUp: () => `padding-left: 0px;
+  mediumUp: () => `padding-left: 0px;
                      width: 30%;
                      clear: left;
                      float:left;
                     `,
-    wideUp: () => `padding-left: 0px;
+  wideUp: () => `padding-left: 0px;
                    width: 35.71429%;
                    clear: left;
                    float:left;
@@ -30,21 +29,20 @@ const InsetCaptionContainerStyle = withResponsiveStyles(View, {
 });
 
 const InsetImageStyle = withResponsiveStyles(View, {
-    base: () => `width: 50%;
+  base: () => `width: 50%;
                 display: inline-block;`,
-    mediumUp: () => `width: 30%;
+  mediumUp: () => `width: 30%;
                     float:left;
                     padding-right: 10px;`,
-    wideUp: () => `width: 35.71429%;
+  wideUp: () => `width: 35.71429%;
                   float:left;
                   padding-right: 10px;
                   `
 });
 
 const CaptionStyle = withResponsiveStyles(View, {
-    base: () => "padding-top: 0px;",
+  base: () => "padding-top: 0px;"
 });
-
 
 const renderCaption = (display, caption, credits) => {
   if (!caption && !credits) {
@@ -54,14 +52,13 @@ const renderCaption = (display, caption, credits) => {
   return (
     <InsetCaptionContainerStyle key="caption">
       <CaptionStyle>
-        <Caption text={caption} credits={credits}/>
+        <Caption text={caption} credits={credits} />
       </CaptionStyle>
     </InsetCaptionContainerStyle>
   );
 };
 
 const ArticleImage = ({ imageOptions, captionOptions }) => {
-
   const { display, ratio, url } = imageOptions;
   const { caption, credits } = captionOptions;
 
@@ -79,7 +76,6 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
       <Image uri={url} aspectRatio={aspectRatio} />
     </InsetImageStyle>,
     ...children
-
   ];
 };
 

@@ -61,13 +61,16 @@ const renderCaption = (display, caption, credits) => {
 };
 
 const ArticleImage = ({ imageOptions, captionOptions }) => {
-
   const { display, ratio, url } = imageOptions;
   const { caption, credits } = captionOptions;
 
-  if(display === 'inline') {
-    return <InsetInlineImage imageOptions={imageOptions}
-    captionOptions={captionOptions}/>;
+  if (display === "inline") {
+    return (
+      <InsetInlineImage
+        imageOptions={imageOptions}
+        captionOptions={captionOptions}
+      />
+    );
   }
 
   const children = [renderCaption(display, caption, credits)];

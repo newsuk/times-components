@@ -8,9 +8,7 @@ const captionStyle = {
       paddingLeft: 10
     }
   },
-  inline: {
-
-  }
+  inline: {}
 };
 
 const CaptionComponentPrimaryNative = ({ caption, credits }) => (
