@@ -10,7 +10,8 @@ import {
   SecondaryImg,
   InlineImg,
   PullQuoteContainer,
-  PullQuoteResp
+  PullQuoteResp,
+  ArticleImgResp
 } from "./styles/body/responsive";
 
 const getImageContainer = imageType => {
@@ -29,7 +30,7 @@ const ArticleRow = props => {
   return renderTrees([data], {
     paragraph(key, attributes, children) {
       return (
-        <BodyParagraph key={index} uid={index}>
+       <BodyParagraph key={index} uid={index}>
           {children}
         </BodyParagraph>
       );
@@ -38,17 +39,19 @@ const ArticleRow = props => {
       const ImageContainer = getImageContainer(attributes.display);
       return (
         <ImageContainer key={key}>
-          <ArticleImage
-            imageOptions={{
-              display: attributes.display,
-              ratio: attributes.ratio,
-              url: attributes.url
-            }}
-            captionOptions={{
-              caption: attributes.caption,
-              credits: attributes.credits
-            }}
-          />
+          <ArticleImgResp>
+            <ArticleImage
+              imageOptions={{
+                display: attributes.display,
+                ratio: attributes.ratio,
+                url: attributes.url
+              }}
+              captionOptions={{
+                caption: attributes.caption,
+                credits: attributes.credits
+              }}
+            />
+          </ArticleImgResp>
         </ImageContainer>
       );
     },

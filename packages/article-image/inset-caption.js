@@ -3,8 +3,13 @@ import React from "react";
 import Caption from "@times-components/caption";
 
 const captionStyle = {
-  container: {
-    paddingLeft: 10
+  priamry: {
+    container: {
+      paddingLeft: 10
+    }
+  },
+  inline: {
+
   }
 };
 

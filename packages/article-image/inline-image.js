@@ -3,7 +3,6 @@ import { View, StyleSheet } from "react-native";
 import Image from "@times-components/image";
 import Caption from "@times-components/caption";
 import InsetCaption from "./inset-caption";
-import InsetInlineImage from "./inline-image";
 
 import {
   articleImagePropTypes,
@@ -11,14 +10,14 @@ import {
 } from "./article-image-proptypes";
 
 const styles = StyleSheet.create({
-  secondaryImage: {
-    width: "50%"
-  },
-  secondaryCaption: {
-    paddingLeft: 10,
-    paddingTop: 0,
-    width: "50%"
-  },
+//   secondaryImage: {
+//     width: "50%"
+//   },
+//   secondaryCaption: {
+//     paddingLeft: 10,
+//     paddingTop: 0,
+//     width: "50%"
+//   },
   inlineImage: {
     width: "50%"
   },
@@ -30,11 +29,11 @@ const styles = StyleSheet.create({
 });
 
 const captionStyle = {
-  secondary: {
-    container: {
-      paddingTop: 0
-    }
-  },
+//   secondary: {
+//     container: {
+//       paddingTop: 0
+//     }
+//   },
   inline: {
     container: {
       paddingTop: 0
@@ -61,14 +60,8 @@ const renderCaption = (display, caption, credits) => {
 };
 
 const ArticleImage = ({ imageOptions, captionOptions }) => {
-
   const { display, ratio, url } = imageOptions;
   const { caption, credits } = captionOptions;
-
-  if(display === 'inline') {
-    return <InsetInlineImage imageOptions={imageOptions}
-    captionOptions={captionOptions}/>;
-  }
 
   const children = [renderCaption(display, caption, credits)];
 
