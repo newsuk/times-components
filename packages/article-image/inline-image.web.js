@@ -45,7 +45,8 @@ const InsetImageStyle = withResponsiveStyles(View, {
                     float:left;
                     padding-bottom: 0px;
                     padding-right: 20px;`,
-  wideUp: () => `width: 35.71429%;`
+  wideUp: () => `width: 35.71429%;
+                 clear: left;`
 });
 
 const renderCaption = (display, caption, credits) => {
@@ -55,7 +56,7 @@ const renderCaption = (display, caption, credits) => {
 
   return (
     <InsetCaptionContainerStyle key="caption">
-        <Caption text={caption} credits={credits} />
+      <Caption text={caption} credits={credits} />
     </InsetCaptionContainerStyle>
   );
 };
