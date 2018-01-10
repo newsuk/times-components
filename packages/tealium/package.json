@@ -41,8 +41,7 @@
     ]
   },
   "dependencies": {
-    "@storybook/addon-actions": "3.2.18",
-    "react-native": "0.50.1"
+    "@storybook/addon-actions": "3.2.18"
   },
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.1.0",
@@ -50,6 +49,7 @@
     "prettier": "1.8.2"
   },
   "peerDependencies": {
+    "react-native": ">=0.50",
     "react-native-web": ">=0.1"
   },
   "publishConfig": {
