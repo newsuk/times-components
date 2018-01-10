@@ -45,7 +45,8 @@
     "postinstall": "lerna run prepublishOnly",
     "packages:publish": "lerna publish --conventional-commits --yes --concurrency=1 --exact",
     "packages:publish-dry-run": "yarn packages:publish --skip-git --skip-npm",
-    "clean-snaps": "rm -rf dextrose/snappy/*.png"
+    "clean-snaps": "rm -rf dextrose/snappy/*.png",
+    "commit": "git-cz"
   },
   "jest": {
     "preset": "react-native",
@@ -64,6 +65,9 @@
       ],
       "pattern": "**!(node_modules)/*.stories!(.web).js",
       "outputFile": "./.storybook.native/story-loader.js"
+    },
+    "commitizen": {
+      "path": "cz-conventional-changelog"
     }
   },
   "detox": {
@@ -99,7 +103,9 @@
     "@storybook/react-native": "3.2.18",
     "@times-components/fructose": "3.1.11",
     "chromeless": "1.3.0",
+    "commitizen": "2.9.6",
     "coveralls": "2.13.1",
+    "cz-conventional-changelog": "2.1.0",
     "detox": "5.8.2",
     "dextrose": "1.2.14",
     "eslint": "4.9.0",
@@ -123,8 +129,8 @@
     "react-native-web": "0.1.14",
     "rimraf": "2.6.1",
     "url": "0.11.0",
-    "webpack": "3.3.0",
-    "wd": "1.4.1"
+    "wd": "1.4.1",
+    "webpack": "3.3.0"
   },
   "dependencies": {
     "babel-plugin-transform-class": "0.3.0",

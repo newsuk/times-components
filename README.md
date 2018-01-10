@@ -53,3 +53,7 @@ when trying to use a broken font.
 
 See the [CONTRIBUTING.md](.github/CONTRIBUTING.md) for an extensive breakdown of
 the project
+
+`yarn commit` will commit files (same as `git commit`), and will aid the
+contributor with adding a suitable commit message inline with
+[conventional changelog](https://github.com/commitizen/cz-cli)
