@@ -2393,7 +2393,7 @@ exports[`renders profile content component 1`] = `
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 13,
                         "lineHeight": 15,
-                        "marginBottom": 20,
+                        "marginBottom": 10,
                       }
                     }
                     testID="datePublication"
@@ -2644,7 +2644,7 @@ exports[`renders profile content component 1`] = `
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 13,
                         "lineHeight": 15,
-                        "marginBottom": 20,
+                        "marginBottom": 10,
                       }
                     }
                     testID="datePublication"
@@ -2895,7 +2895,7 @@ exports[`renders profile content component 1`] = `
                         "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 13,
                         "lineHeight": 15,
-                        "marginBottom": 20,
+                        "marginBottom": 10,
                       }
                     }
                     testID="datePublication"
@@ -3389,7 +3389,7 @@ exports[`renders profile content item component 1`] = `
                   "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 13,
                   "lineHeight": 15,
-                  "marginBottom": 20,
+                  "marginBottom": 10,
                 }
               }
               testID="datePublication"
@@ -3509,7 +3509,7 @@ exports[`renders profile content item component with a specific image size 1`] =
                   "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 13,
                   "lineHeight": 15,
-                  "marginBottom": 20,
+                  "marginBottom": 10,
                 }
               }
               testID="datePublication"
@@ -3629,7 +3629,7 @@ exports[`renders profile content item component with no image 1`] = `
                   "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 13,
                   "lineHeight": 15,
-                  "marginBottom": 20,
+                  "marginBottom": 10,
                 }
               }
               testID="datePublication"
