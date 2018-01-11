@@ -13,14 +13,18 @@ exports[`AuthorHead test on android renders 1`] = `
   <View
     accessibilityRole="banner"
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#F9F8F3",
-        "flexDirection": "column",
-        "paddingBottom": 30,
-        "paddingTop": 20,
-        "width": "100%",
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F9F8F3",
+          "flexDirection": "column",
+          "paddingBottom": 40,
+          "width": "100%",
+        },
+        Object {
+          "paddingTop": 30,
+        },
+      ]
     }
   >
     <Text
@@ -100,37 +104,70 @@ exports[`AuthorHead test on android renders with data 1`] = `
   <View
     accessibilityRole="banner"
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#F9F8F3",
-        "flexDirection": "column",
-        "paddingBottom": 30,
-        "paddingTop": 20,
-        "width": "100%",
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F9F8F3",
+          "flexDirection": "column",
+          "paddingBottom": 40,
+          "width": "100%",
+        },
+        Object {
+          "paddingTop": 30,
+        },
+      ]
     }
   >
     <View
+      aspectRatio={1}
       style={
-        Object {
-          "marginBottom": 20,
-        }
-      }
-    >
-      <View
-        aspectRatio={1}
-        style={
+        Array [
           Object {
             "borderColor": "#FFF",
-            "borderRadius": 50,
-            "borderWidth": 5,
+            "marginBottom": 20,
             "marginLeft": "auto",
             "marginRight": "auto",
             "overflow": "hidden",
+          },
+          Object {
+            "borderRadius": 50,
             "width": 100,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "height": "100%",
+            "width": "100%",
           }
         }
       >
+        <Image
+          onLoad={[Function]}
+          source={
+            Object {
+              "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200&preview=true",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              Object {
+                "height": "100%",
+                "width": "100%",
+              },
+              undefined,
+            ]
+          }
+        />
         <View
           style={
             Object {
@@ -143,7 +180,7 @@ exports[`AuthorHead test on android renders with data 1`] = `
             onLoad={[Function]}
             source={
               Object {
-                "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200&preview=true",
+                "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200",
               }
             }
             style={
@@ -164,89 +201,56 @@ exports[`AuthorHead test on android renders with data 1`] = `
             }
           />
           <View
+            onLayout={[Function]}
             style={
-              Object {
-                "height": "100%",
-                "width": "100%",
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                },
+                null,
+              ]
             }
           >
-            <Image
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "bottom": 0,
-                    "left": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                  },
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  },
-                  undefined,
-                ]
-              }
-            />
             <View
-              onLayout={[Function]}
               style={
-                Array [
-                  Object {
-                    "flex": 1,
-                  },
-                  null,
-                ]
+                Object {
+                  "flex": 1,
+                }
               }
             >
-              <View
-                style={
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#f9f9f9",
+                    "#ededed",
+                  ]
+                }
+                end={
                   Object {
-                    "flex": 1,
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
                   }
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#f9f9f9",
-                      "#ededed",
-                    ]
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  end={
+                }
+                style={
+                  Array [
                     Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
+                      "flex": 1,
+                    },
+                  ]
+                }
+              />
             </View>
           </View>
         </View>
@@ -293,7 +297,7 @@ exports[`AuthorHead test on android renders with data 1`] = `
         Object {
           "alignItems": "center",
           "flexDirection": "row",
-          "paddingBottom": 16,
+          "paddingBottom": 8,
           "paddingTop": 16,
         }
       }
@@ -325,7 +329,7 @@ exports[`AuthorHead test on android renders with data 1`] = `
             Object {
               "color": "#006699",
               "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 18,
+              "fontSize": 15,
               "paddingLeft": 5,
               "textDecorationLine": "none",
             },
@@ -405,14 +409,18 @@ exports[`AuthorHead test on android renders without profile picture 1`] = `
   <View
     accessibilityRole="banner"
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#F9F8F3",
-        "flexDirection": "column",
-        "paddingBottom": 30,
-        "paddingTop": 20,
-        "width": "100%",
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F9F8F3",
+          "flexDirection": "column",
+          "paddingBottom": 40,
+          "width": "100%",
+        },
+        Object {
+          "paddingTop": 30,
+        },
+      ]
     }
   >
     <Text
@@ -456,7 +464,7 @@ exports[`AuthorHead test on android renders without profile picture 1`] = `
         Object {
           "alignItems": "center",
           "flexDirection": "row",
-          "paddingBottom": 16,
+          "paddingBottom": 8,
           "paddingTop": 16,
         }
       }
@@ -488,7 +496,7 @@ exports[`AuthorHead test on android renders without profile picture 1`] = `
             Object {
               "color": "#006699",
               "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 18,
+              "fontSize": 15,
               "paddingLeft": 5,
               "textDecorationLine": "none",
             },
