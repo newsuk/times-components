@@ -16,16 +16,11 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     paddingTop: 0,
     width: "50%"
+  },
+  container: {
+    paddingTop: 0
   }
 });
-
-const captionStyle = {
-  inline: {
-    container: {
-      paddingTop: 0
-    }
-  }
-};
 
 const renderCaption = (display, caption, credits) => {
   if (!caption && !credits) {
@@ -34,7 +29,7 @@ const renderCaption = (display, caption, credits) => {
 
   return (
     <View key="caption" style={styles[`${display}Caption`]}>
-      <Caption text={caption} credits={credits} style={captionStyle[display]} />
+      <Caption text={caption} credits={credits} style={styles} />
     </View>
   );
 };
@@ -43,10 +38,10 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
   const { display, ratio, url } = imageOptions;
   const { caption, credits } = captionOptions;
 
-  const children = [renderCaption(display, caption, credits)];
+  const imgCaption = [renderCaption(display, caption, credits)];
 
   if (!display || !ratio) {
-    return children;
+    return imgCaption;
   }
 
   const [ratioWidth, ratioHeight] = ratio.split(":");
@@ -56,7 +51,7 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
     <View key="img" style={styles[`${display}Image`]}>
       <Image uri={url} aspectRatio={aspectRatio} />
     </View>,
-    ...children
+    ...imgCaption
   ];
 };
 

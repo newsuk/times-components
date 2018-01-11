@@ -1,8 +1,7 @@
-import React from "react";
-import { View, StyleSheet } from "react-native";
+import React, { Fragment } from "react";
+import { View } from "react-native";
 import Image from "@times-components/image";
 import Caption from "@times-components/caption";
-import InsetCaption from "./inset-caption";
 import withResponsiveStyles from "@times-components/responsive-styles";
 
 import {
@@ -27,7 +26,7 @@ const InsetCaptionContainerStyle = withResponsiveStyles(View, {
                      margin-top: 0px;
                      padding-top: 0px;
                      padding-right: 20px;
-                     padding-bottom: 40px;
+                     padding-bottom: 30px;
                     `,
   wideUp: () => `padding-left: 0px;
                    width: 35.71429%;
@@ -65,21 +64,23 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
   const { display, ratio, url } = imageOptions;
   const { caption, credits } = captionOptions;
 
-  const children = [renderCaption(display, caption, credits)];
+  const imgCaption = renderCaption(display, caption, credits);
 
   if (!display || !ratio) {
-    return children;
+    return imgCaption;
   }
 
   const [ratioWidth, ratioHeight] = ratio.split(":");
   const aspectRatio = ratioWidth / ratioHeight;
 
-  return [
-    <InsetImageStyle key="img">
-      <Image uri={url} aspectRatio={aspectRatio} />
-    </InsetImageStyle>,
-    ...children
-  ];
+  return (
+    <Fragment>
+      <InsetImageStyle key="img">
+        <Image uri={url} aspectRatio={aspectRatio} />
+      </InsetImageStyle>
+      {imgCaption}
+    </Fragment>
+  );
 };
 
 ArticleImage.propTypes = articleImagePropTypes;
