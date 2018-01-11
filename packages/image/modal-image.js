@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Modal, View, StyleSheet } from "react-native";
+import { Modal, View, StyleSheet, PanResponder, Text, TouchableWithoutFeedback } from "react-native";
 import Button from "@times-components/link";
 import Svg, { Path, G } from "svgs";
 import Image from "./image";
@@ -21,14 +21,58 @@ const style = StyleSheet.create({
   }
 });
 
+// √((x2 - x1)² + (y2 - y1)²)
+const distanceBetweenTouches = ([
+  { pageX: x1, pageY: y1 },
+  { pageX: x2, pageY: y2 }
+]) => Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2))
+
+const angleBetweenTouches = ([
+  { pageX: x1, pageY: y1 },
+  { pageX: x2, pageY: y2 }
+]) => {
+  const opposite = y1 - y2;
+  const adjacent = x1 - x2;
+  const tan = opposite / adjacent;
+  const rad = Math.atan2(opposite, adjacent)
+  const degrees = rad * 180 / Math.PI
+  return degrees
+}
+
 class ModalImage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showModal: false
+      showModal: false,
+      angle: 0,
+      zoomRatio: 1
     };
     this.hideModal = this.hideModal.bind(this);
     this.showModal = this.showModal.bind(this);
+  }
+
+  componentWillMount() {
+    this._panResponder = PanResponder.create({
+      onStartShouldSetPanResponder: (e, { numberActiveTouches }) => numberActiveTouches > 1,
+      onMoveShouldSetPanResponder: (e, { numberActiveTouches }) => numberActiveTouches > 1,
+      onStartShouldSetResponderCapture: (e, { numberActiveTouches }) => numberActiveTouches > 1,
+      onMoveShouldSetResponderCapture: (e, { numberActiveTouches }) => numberActiveTouches > 1,
+      onPanResponderStart: (evt) => { this.handlePinchStart(evt) },
+      onPanResponderMove: (evt) => { this.handlePinchChange(evt) },
+      onPanResponderRelease: () => { this.setState({ zoomRatio: 1, angle: 0 }) }, // TODO animate back to original position
+    });
+  }
+
+  handlePinchStart({ nativeEvent: { touches } }) {
+    this.startDistance = distanceBetweenTouches(touches)
+    this.startAngle = angleBetweenTouches(touches)
+  }
+
+  handlePinchChange({ nativeEvent: { touches }}) {
+    const zoomRatio = distanceBetweenTouches(touches) / this.startDistance
+    const currentAngle = angleBetweenTouches(touches);
+    const angle = (currentAngle - this.startAngle) % 360
+    this.setState({ zoomRatio, angle })
   }
 
   showModal() {
@@ -49,6 +93,11 @@ class ModalImage extends Component {
       </Svg>
     );
 
+    const transform = [
+      { scale: this.state.zoomRatio },
+      { rotate: `${this.state.angle} deg` }
+    ];
+
     return (
       <View>
         <Modal
@@ -56,11 +105,15 @@ class ModalImage extends Component {
           onRequestClose={this.hideModal}
           presentationStyle="fullScreen"
         >
-          <View style={style.modal}>
+          <View style={style.modal} {...this._panResponder.panHandlers}>
             <Button onPress={this.hideModal}>{closeButton}</Button>
-            <View style={style.imageContainer}>
-              <Image {...this.props} style={style.image} />
-            </View>
+            <TouchableWithoutFeedback>
+              <View style={style.imageContainer}>
+                <View>
+                  <Image {...this.props} style={[style.image, {transform}]} />
+                </View>
+              </View>
+            </TouchableWithoutFeedback>
           </View>
         </Modal>
         <Button onPress={this.showModal}>
