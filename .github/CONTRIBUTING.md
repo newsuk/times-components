@@ -37,12 +37,14 @@ We're using [lerna](https://github.com/lerna/lerna) for the monorepo with each
 component in it's own package that should stand alone with it's own tests and
 react story etc. A component is simply the exported JSX with no compilation
 
-For ease of use there is a CLI for creating a component. Run
-`./times-components` for instructions, this is the quickest way to create a
+For ease of use there is a CLI for creating a component. This is the quickest way to create a
 package with the required scaffolding which is; a component, `package.json`,
 stubbed test and story. Note that the stubbed test will fail until a snapshot is
 created with `jest --updateSnapshot` or a test run is made without the `--CI`
-flag
+flag.
+
+To use this, in the root of the project run:
+`times-components create component ComponentName "Component Description"`
 
 When developing a component it's easiest to use the
 [storybooks](https://github.com/storybooks/storybook) with hot reloading. Make
@@ -84,8 +86,8 @@ with discussions for whatever you are including.
 Every component should have a `XXXX.test.js` file with the component's Jest
 tests.
 
-If the component contains functionality that requires functional testing on a 
-device or browser, you can use [Fructose](https://github.com/newsuk/fructose). 
+If the component contains functionality that requires functional testing on a
+device or browser, you can use [Fructose](https://github.com/newsuk/fructose).
 This should follow the naming convention, `XXXX.fructose.js`.
 
 Fructose uses detox to instrument the tests. In order to run the tests you will
@@ -103,10 +105,10 @@ If you run `npm run functional-test:ios` in the root directory it will run
  and web.
 
 [Dextrose](https://github.com/newsuk/dextrose) is a visual snapshotting tool designed to make the visual inspection of
- components easier. 
+ components easier.
 
-In order to run dextrose simply use `yarn visual-snapshot-web`, 
-`yarn visual-snapshot-ios` or `yarn visual-snapshot-android`. Each component 
+In order to run dextrose simply use `yarn visual-snapshot-web`,
+`yarn visual-snapshot-ios` or `yarn visual-snapshot-android`. Each component
 that has differences from master will be visually snapshotted and saved under the
  /dextrose/snappy folder. This can be very useful for visually validating components.
 
