@@ -10,8 +10,7 @@ import {
   SecondaryImg,
   InlineImg,
   PullQuoteContainer,
-  PullQuoteResp,
-  ArticleImgResp
+  PullQuoteResp
 } from "./styles/body/responsive";
 
 const getImageContainer = imageType => {
