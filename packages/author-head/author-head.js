@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     })
   },
   twitterLink: {
-    fontSize: 18,
+    fontSize: 15,
     fontFamily: "GillSansMTStd-Medium",
     color: "#006699",
     textDecorationLine: "none",

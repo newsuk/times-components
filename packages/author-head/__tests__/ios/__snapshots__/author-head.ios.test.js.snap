@@ -295,7 +295,7 @@ exports[`AuthorHead test on ios renders with data 1`] = `
             Object {
               "color": "#006699",
               "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 18,
+              "fontSize": 15,
               "paddingLeft": 5,
               "textDecorationLine": "none",
             },
@@ -461,7 +461,7 @@ exports[`AuthorHead test on ios renders without profile picture 1`] = `
             Object {
               "color": "#006699",
               "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 18,
+              "fontSize": 15,
               "paddingLeft": 5,
               "textDecorationLine": "none",
             },
