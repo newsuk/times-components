@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TealiumSendScheduler inject utag throws if not given a profile 1`] = `"Tealium option not supplied: profile"`;
+
+exports[`TealiumSendScheduler inject utag throws if not given an account 1`] = `"Tealium option not supplied: account"`;
+
+exports[`TealiumSendScheduler inject utag throws if not given an env 1`] = `"Tealium option not supplied: env"`;

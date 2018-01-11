@@ -37,8 +37,7 @@ export default class TealiumSendScheduler {
       this.scheduleSendEvents();
     };
 
-    const head = this.d.head || this.d.getElementsByTagName("head")[0];
-    head.appendChild(utag);
+    this.d.head.appendChild(utag);
 
     utag.src = `//tags.tiqcdn.com/utag/${account}/${profile}/${env}/utag.js`;
   }
@@ -49,7 +48,11 @@ export default class TealiumSendScheduler {
   }
 
   scheduleSendEvents() {
-    if (this.sendEventScheduled || !TealiumSendScheduler.scriptLoaded) {
+    if (
+      this.sendEventScheduled ||
+      !TealiumSendScheduler.scriptLoaded ||
+      typeof this.w.tealiumTrack !== "function"
+    ) {
       return;
     }
 
@@ -69,7 +72,6 @@ export default class TealiumSendScheduler {
 
   sendEvents(deadline) {
     this.sendEventScheduled = false;
-
     do {
       if (!this.queue.length) {
         break;
@@ -77,9 +79,7 @@ export default class TealiumSendScheduler {
 
       const e = this.queue.shift();
 
-      if (typeof this.w.tealiumTrack === "function") {
-        this.w.tealiumTrack(e);
-      }
+      this.w.tealiumTrack(e);
     } while (deadline.timeRemaining() > 0);
 
     if (this.queue.length > 0) {
