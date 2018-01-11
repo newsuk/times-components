@@ -1,6 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ParagraphContainer, Paragraph } from "../styles/article-body/responsive";
+import {
+  ParagraphContainer,
+  Paragraph
+} from "../styles/article-body/responsive";
 import styles from "../styles/article-body";
 
 const BodyParagraph = props => (
