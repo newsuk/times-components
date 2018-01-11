@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@storybook/react-native": "3.2.11",
+    "@storybook/react-native": "3.2.18",
     "@times-components/jest-configurator": "0.0.8",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
@@ -52,7 +52,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "prop-types": "15.6.0"
+    "prop-types": "15.6.0",
+    "svgs": "3.1.1"
   },
   "peerDependencies": {
     "react": ">=16",
