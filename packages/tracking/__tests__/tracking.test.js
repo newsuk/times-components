@@ -61,19 +61,19 @@ describe("WithTrackScrollDepth", () => {
       .dive()
       .instance()
       .onViewableItemsChanged.call(tracking.instance(), {
-      info: {
-        changed: [
-          {
-            isViewable: true,
-            elementId: 1
-          },
-          {
-            isViewable: true,
-            elementId: 1
-          }
-        ]
-      }
-    });
+        info: {
+          changed: [
+            {
+              isViewable: true,
+              elementId: 1
+            },
+            {
+              isViewable: true,
+              elementId: 1
+            }
+          ]
+        }
+      });
 
     expect(reporter.mock.calls).toMatchSnapshot();
   });
