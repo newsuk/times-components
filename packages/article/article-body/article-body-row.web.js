@@ -8,7 +8,7 @@ import {
   InlineImg,
   PullQuoteContainer,
   PullQuoteResp
-} from "./styles/body/responsive";
+} from "../styles/body/responsive";
 
 const imageWrapperFunction = imageType => {
   switch (imageType) {

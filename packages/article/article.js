@@ -9,9 +9,9 @@ import ArticleLoading from "./article-loading";
 
 import listViewDataHelper from "./data-helper";
 import styles from "./styles/body";
-import ArticleHeader from "./article-header";
-import ArticleMeta from "./article-meta";
-import ArticleRow from "./article-body-row";
+import ArticleHeader from "./article-header/article-header";
+import ArticleMeta from "./article-meta/article-meta";
+import ArticleRow from "./article-body/article-body-row";
 
 import articleTrackingContext from "./article-tracking-context";
 

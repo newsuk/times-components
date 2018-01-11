@@ -5,9 +5,9 @@ import { AdComposer } from "@times-components/ad";
 
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
-import ArticleHeader from "./article-header";
-import ArticleMeta from "./article-meta";
-import ArticleBody from "./article-body";
+import ArticleHeader from "./article-header/article-header";
+import ArticleMeta from "./article-meta/article-meta";
+import ArticleBody from "./article-body/article-body";
 import LeadAssetComponent from "./article-lead-asset.web";
 
 import articleTrackingContext from "./article-tracking-context";

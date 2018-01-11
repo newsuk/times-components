@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { View, Text } from "react-native";
 import ArticleByline from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
-import styles from "./styles/meta";
+import styles from "../styles/meta";
 
 const ArticleMetaRow = (textStyle, component, key, RowWrapper) => (
   <RowWrapper key={key} style={styles.articleMetaElement}>

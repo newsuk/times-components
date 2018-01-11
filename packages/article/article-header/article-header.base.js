@@ -8,11 +8,11 @@ import {
 } from "@times-components/article-flag";
 import ArticleLabel from "@times-components/article-label";
 import { Text, View, ViewPropTypes } from "react-native";
-import styles from "./styles/header";
+import styles from "../styles/header";
 import {
   HeadlineContainer,
   LabelContainer
-} from "./styles/header/responsive.web.js";
+} from "../styles/header/responsive.web.js";
 
 const { style: ViewStylePropTypes } = ViewPropTypes;
 
