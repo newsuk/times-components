@@ -1,10 +1,10 @@
 {
   "rootDir": "../../",
   "coverageDirectory": "<rootDir>/packages/tracking/coverage/web",
-  "coveragePathIgnorePatterns": ["/__tests__/"],
+  "collectCoverageFrom": ["**/packages/tracking/track-scroll-depth.web.js"],
   "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
   "testEnvironment": "jsdom",
-  "testMatch": ["<rootDir>/packages/tracking/__tests__/**.web.test.js"],
+  "testMatch": ["<rootDir>/packages/tracking/__tests__/*.web.test.js"],
   "moduleNameMapper": {
     "react-native": "react-native-web"
   },
