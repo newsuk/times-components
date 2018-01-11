@@ -28,13 +28,13 @@ const renderCaption = (display, caption, credits) => {
   }
 
   return (
-    <View key="caption" style={styles[`${display}Caption`]}>
+    <View key="caption" style={styles.inlineCaption}>
       <Caption text={caption} credits={credits} style={styles} />
     </View>
   );
 };
 
-const ArticleImage = ({ imageOptions, captionOptions }) => {
+const InlineImage = ({ imageOptions, captionOptions }) => {
   const { display, ratio, url } = imageOptions;
   const { caption, credits } = captionOptions;
 
@@ -48,14 +48,14 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
   const aspectRatio = ratioWidth / ratioHeight;
 
   return [
-    <View key="img" style={styles[`${display}Image`]}>
+    <View key="img" style={styles.inlineImage}>
       <Image uri={url} aspectRatio={aspectRatio} />
     </View>,
     ...imgCaption
   ];
 };
 
-ArticleImage.propTypes = articleImagePropTypes;
-ArticleImage.defaultProps = articleImageDefaultPropTypes;
+InlineImage.propTypes = articleImagePropTypes;
+InlineImage.defaultProps = articleImageDefaultPropTypes;
 
-export default ArticleImage;
+export default InlineImage;

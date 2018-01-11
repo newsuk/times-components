@@ -60,7 +60,7 @@ const renderCaption = (display, caption, credits) => {
   );
 };
 
-const ArticleImage = ({ imageOptions, captionOptions }) => {
+const InlineImage = ({ imageOptions, captionOptions }) => {
   const { display, ratio, url } = imageOptions;
   const { caption, credits } = captionOptions;
 
@@ -83,7 +83,7 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
   );
 };
 
-ArticleImage.propTypes = articleImagePropTypes;
-ArticleImage.defaultProps = articleImageDefaultPropTypes;
+InlineImage.propTypes = articleImagePropTypes;
+InlineImage.defaultProps = articleImageDefaultPropTypes;
 
-export default ArticleImage;
+export default InlineImage;

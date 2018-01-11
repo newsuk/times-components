@@ -3,7 +3,7 @@ import { View, StyleSheet } from "react-native";
 import Image from "@times-components/image";
 import Caption from "@times-components/caption";
 import InsetCaption from "./inset-caption";
-import InsetInlineImage from "./inline-image";
+import InlineImage from "./inline-image";
 
 import {
   articleImagePropTypes,
@@ -53,7 +53,7 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
 
   if (display === "inline") {
     return (
-      <InsetInlineImage
+      <InlineImage
         imageOptions={imageOptions}
         captionOptions={captionOptions}
       />
