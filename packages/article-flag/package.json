@@ -66,6 +66,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
+    "@times-components/icons": "0.0.1",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.0",
     "svgs": "3.1.1"
