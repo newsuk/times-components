@@ -7755,9 +7755,7 @@ exports[`Article test on android renders full article 1`] = `
       onLayout={[Function]}
       style={null}
     >
-      <View
-        className="sc-dnqmqq lmyDTR"
-      >
+      <View>
         <View
           style={
             Object {
@@ -8034,9 +8032,7 @@ exports[`Article test on android renders full article 1`] = `
       onLayout={[Function]}
       style={null}
     >
-      <View
-        className="sc-iwsKbI kcGwYz"
-      >
+      <View>
         <View
           style={
             Object {
