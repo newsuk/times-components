@@ -1,8 +1,7 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
-import withResponsiveStyles from "@times-components/responsive-styles";
 
 const { propTypes: { style: TextPropTypesStyle } } = Text;
 
@@ -23,8 +22,8 @@ const AuthorPhoto = ({ uri, style }) => {
 
   return (
     <Image uri={uri} style={[styles.authorPhoto, style]} aspectRatio={1} />
-  )
-}
+  );
+};
 
 AuthorPhoto.defaultProps = {
   uri: "",

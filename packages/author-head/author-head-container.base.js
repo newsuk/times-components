@@ -1,5 +1,8 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";  
+import { StyleSheet, Text, View } from "react-native";
+import PropTypes from "prop-types";
+
+const { propTypes: { style: TextPropTypesStyle } } = Text;
 
 const styles = StyleSheet.create({
   wrapper: {
@@ -15,16 +18,29 @@ const styles = StyleSheet.create({
   }
 });
 
-const AuthorHeadContainer = ({style, children, WrapperComponent}) => (
+const AuthorHeadContainer = ({ style, children, WrapperComponent }) => (
   <View style={styles.wrapper} pointerEvents="box-none">
-    <WrapperComponent accessibilityRole="banner" style={[styles.container, style]}>
+    <WrapperComponent
+      accessibilityRole="banner"
+      style={[styles.container, style]}
+    >
       {children}
-    </WrapperComponent>    
+    </WrapperComponent>
   </View>
-)
+);
 
 AuthorHeadContainer.defaultProps = {
+  style: {},
   WrapperComponent: View
-}
+};
+
+AuthorHeadContainer.propTypes = {
+  style: TextPropTypesStyle,
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element)
+  ]).isRequired,
+  WrapperComponent: PropTypes.func
+};
 
 export default AuthorHeadContainer;

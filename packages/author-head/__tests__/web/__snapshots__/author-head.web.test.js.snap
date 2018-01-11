@@ -12,10 +12,6 @@ exports[`AuthorHead test on web renders 1`] = `
   color: #000;
 }
 
-.c1 {
-  width: 100px;
-}
-
 .c0 {
   padding-top: 30px;
 }
@@ -107,10 +103,6 @@ exports[`AuthorHead test on web renders with data 1`] = `
   font-family: TimesModern-Bold;
   font-size: 30px;
   color: #000;
-}
-
-.c1 {
-  width: 100px;
 }
 
 .c0 {
@@ -289,10 +281,6 @@ exports[`AuthorHead test on web renders without profile picture 1`] = `
   font-family: TimesModern-Bold;
   font-size: 30px;
   color: #000;
-}
-
-.c1 {
-  width: 100px;
 }
 
 .c0 {

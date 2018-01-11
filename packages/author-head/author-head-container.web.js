@@ -4,7 +4,7 @@ import withResponsiveStyles from "@times-components/responsive-styles";
 import AuthorHeadContainerBase from "./author-head-container.base";
 
 const AuthorHeadWrapper = withResponsiveStyles(View, {
-  base: () =>`
+  base: () => `
     padding-top: 30px;
   `,
   mediumUp: () => `
@@ -12,9 +12,8 @@ const AuthorHeadWrapper = withResponsiveStyles(View, {
   `
 });
 
-const AuthorHeadContainer = (props) => (
-    <AuthorHeadContainerBase {...props} WrapperComponent={AuthorHeadWrapper} />
+const AuthorHeadContainer = props => (
+  <AuthorHeadContainerBase {...props} WrapperComponent={AuthorHeadWrapper} />
 );
 
 export default AuthorHeadContainer;
-    
