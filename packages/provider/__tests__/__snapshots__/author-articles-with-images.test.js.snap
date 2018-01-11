@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`returns query result 1`] = `
+Object {
+  "__typename": "Author",
+  "articles": Object {
+    "__typename": "Articles",
+    "count": 20,
+    "list": Array [
+      Object {
+        "__typename": "Article",
+        "headline": "Top medal for forces dog who took a bite out of the Taliban",
+        "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
+        "label": "",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0",
+            Symbol(id): "$Article:d98c257c-cb16-11e7-b529-95e3fc05f40f.leadAsset.crop({\\"ratio\\":\\"3:2\\"})",
+          },
+          "title": "Title",
+          Symbol(id): "$Article:d98c257c-cb16-11e7-b529-95e3fc05f40f.leadAsset",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2017-11-17T00:01:00.000Z",
+        "summary": Array [
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "url": "https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f",
+        Symbol(id): "Article:d98c257c-cb16-11e7-b529-95e3fc05f40f",
+      },
+      Object {
+        "__typename": "Article",
+        "headline": "Social media must raise game to beat terrorists, says UN chief",
+        "id": "4e6894ec-cb18-11e7-b529-95e3fc05f40f",
+        "label": "",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745",
+            Symbol(id): "$Article:4e6894ec-cb18-11e7-b529-95e3fc05f40f.leadAsset.crop({\\"ratio\\":\\"3:2\\"})",
+          },
+          "title": "Title",
+          Symbol(id): "$Article:4e6894ec-cb18-11e7-b529-95e3fc05f40f.leadAsset",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2017-11-17T00:01:00.000Z",
+        "summary": Array [
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "url": "https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0",
+        Symbol(id): "Article:4e6894ec-cb18-11e7-b529-95e3fc05f40f",
+      },
+      Object {
+        "__typename": "Article",
+        "headline": "Cuts have left the army 20 years out of date, says former general",
+        "id": "f79c9d8c-c95c-11e7-b529-95e3fc05f40f",
+        "label": "",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0",
+            Symbol(id): "$Article:f79c9d8c-c95c-11e7-b529-95e3fc05f40f.leadAsset.crop({\\"ratio\\":\\"3:2\\"})",
+          },
+          "title": "Nad e Ali in Helmand province, Afghanistan.",
+          Symbol(id): "$Article:f79c9d8c-c95c-11e7-b529-95e3fc05f40f.leadAsset",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2017-11-14T17:00:00.000Z",
+        "summary": Array [
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "url": "https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn",
+        Symbol(id): "Article:f79c9d8c-c95c-11e7-b529-95e3fc05f40f",
+      },
+      Object {
+        "__typename": "Article",
+        "headline": "MoD recruits more civilians as Royal Marines face axe",
+        "id": "21627e52-c651-11e7-92dc-06edfbca4aab",
+        "label": "",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F06c0e50a-c667-11e7-9914-a38dcc178fcd.jpg?crop=3600%2C2400%2C0%2C0",
+            Symbol(id): "$Article:21627e52-c651-11e7-92dc-06edfbca4aab.leadAsset.crop({\\"ratio\\":\\"3:2\\"})",
+          },
+          "title": "HMS Ocean Embarks British Marines",
+          Symbol(id): "$Article:21627e52-c651-11e7-92dc-06edfbca4aab.leadAsset",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2017-11-11T00:01:00.000Z",
+        "summary": Array [
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Britain’s new defence secretary is facing questions over why his department has hired hundreds of civilians while it considers cutting 1,000",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "url": "https://www.thetimes.co.uk/article/mod-recruits-more-civilians-as-royal-marines-face-axe-nqdh8v3zd",
+        Symbol(id): "Article:21627e52-c651-11e7-92dc-06edfbca4aab",
+      },
+      Object {
+        "__typename": "Article",
+        "headline": "Suits you: poppy power is branching out for Remembrance appeal",
+        "id": "9c4991b8-c657-11e7-92dc-06edfbca4aab",
+        "label": "",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1d663086-c625-11e7-9914-a38dcc178fcd.jpg?crop=907%2C605%2C87%2C93",
+            Symbol(id): "$Article:9c4991b8-c657-11e7-92dc-06edfbca4aab.leadAsset.crop({\\"ratio\\":\\"3:2\\"})",
+          },
+          "title": "",
+          Symbol(id): "$Article:9c4991b8-c657-11e7-92dc-06edfbca4aab.leadAsset",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2017-11-11T00:01:00.000Z",
+        "summary": Array [
+          Object {
+            "attributes": Object {
+              "class": "dropcap@1",
+            },
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "The idea of selling anything other than a traditional paper poppy to mark Remembrance Sunday was unheard of a decade ago.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "But when a group of",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "url": "https://www.thetimes.co.uk/article/remembrance-appeal-branches-out-with-poppy-onesies-mj2crrd8x",
+        Symbol(id): "Article:9c4991b8-c657-11e7-92dc-06edfbca4aab",
+      },
+    ],
+    Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"deborah-haynes\\"}).articles",
+  },
+  Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"deborah-haynes\\"})",
+}
+`;

@@ -7,7 +7,10 @@ import renderer from "react-test-renderer";
 import { MockedProvider } from "@times-components/utils/graphql";
 import set from "lodash.set";
 import cloneDeep from "lodash.clonedeep";
-import { makeAuthor, makeArticleMocks } from "../fixtures/fixture-generator";
+import {
+  makeAuthor,
+  makeArticleMocks
+} from "@times-components/provider/fixtures/author-profile/fixture-generator";
 import AuthorProfile from "../author-profile";
 import AuthorProfileItem from "../author-profile-item";
 import AuthorHead from "../author-profile-author-head";

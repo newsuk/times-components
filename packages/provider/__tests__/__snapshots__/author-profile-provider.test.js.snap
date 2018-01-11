@@ -5,13 +5,13 @@ Object {
   "__typename": "Author",
   "articles": Object {
     "__typename": "Articles",
-    "count": 24,
-    Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"fiona-hamilton\\"}).articles",
+    "count": 20,
+    Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"deborah-haynes\\"}).articles",
   },
   "biography": Array [
     Object {
       "attributes": Object {
-        "value": "Lorem ",
+        "value": "Deborah Haynes is the defence editor at ",
       },
       "children": Array [],
       "name": "text",
@@ -21,39 +21,7 @@ Object {
       "children": Array [
         Object {
           "attributes": Object {
-            "value": "ipsum",
-          },
-          "children": Array [],
-          "name": "text",
-        },
-      ],
-      "name": "bold",
-    },
-    Object {
-      "attributes": Object {
-        "value": " testbr ",
-      },
-      "children": Array [],
-      "name": "text",
-    },
-    Object {
-      "attributes": Object {},
-      "children": Array [],
-      "name": "break",
-    },
-    Object {
-      "attributes": Object {
-        "value": "More text ",
-      },
-      "children": Array [],
-      "name": "text",
-    },
-    Object {
-      "attributes": Object {},
-      "children": Array [
-        Object {
-          "attributes": Object {
-            "value": " last ",
+            "value": "The Times",
           },
           "children": Array [],
           "name": "text",
@@ -61,12 +29,19 @@ Object {
       ],
       "name": "italic",
     },
+    Object {
+      "attributes": Object {
+        "value": ", covering the most important defence & security news in the UK and around the world.",
+      },
+      "children": Array [],
+      "name": "text",
+    },
   ],
   "hasLeadAssets": true,
-  "image": null,
-  "jobTitle": "Legal Editor",
-  "name": "Fiona Hamilton",
+  "image": "//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
+  "jobTitle": "Defence Editor",
+  "name": "Deborah Haynes",
   "twitter": "jdoe",
-  Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"fiona-hamilton\\"})",
+  Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"deborah-haynes\\"})",
 }
 `;

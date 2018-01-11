@@ -16,6 +16,10 @@
     "preset": "react-native",
     "rootDir": "../../",
     "coverageDirectory": "<rootDir>/packages/provider/coverage/",
+    "collectCoverageFrom": [
+      "**/packages/provider/*.js",
+      "!**/packages/provider/*stories.js"
+    ],
     "transformIgnorePatterns": [
       "node_modules/(?!@times-components)/"
     ],

@@ -10,7 +10,7 @@ import connectGraphql, {
   ArticleProvider
 } from "./provider.js";
 import { query as authorProfileQuery } from "./author-profile";
-import fixture from "./fixtures/author-profile.json";
+import fixture from "./fixtures/author-profile/author-profile.json";
 import { query as articleQuery } from "./article";
 import articleFixture from "./fixtures/article.json";
 

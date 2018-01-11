@@ -5,13 +5,13 @@ import React16Adapter from "enzyme-adapter-react-16";
 import RCT from "react-test-renderer";
 import Link from "@times-components/link";
 import Pagination from "@times-components/pagination";
+import { makeAuthor } from "@times-components/provider/fixtures/author-profile/fixture-generator";
+import authorProfileFixture from "@times-components/provider/fixtures/author-profile/author-profile.json";
 import AuthorProfile from "../author-profile";
 import AuthorProfileItem from "../author-profile-item";
-import authorProfileFixture from "../fixtures/author-profile.json";
 import pagedResult from "./paged-result";
 import test from "./author-profile-helper";
 import AuthorProfileContent from "../author-profile-content.js";
-import { makeAuthor } from "../fixtures/fixture-generator";
 
 // A hack until this is resolved: https://github.com/facebook/react-native/pull/13048
 jest.mock("ScrollView", () => {

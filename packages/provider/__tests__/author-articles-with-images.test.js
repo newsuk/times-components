@@ -3,7 +3,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import { MockedProvider } from "@times-components/utils/graphql";
-import { AuthorProfileProvider } from "../provider";
+import { AuthorArticlesWithImagesProvider } from "../provider";
 import { makeArticleMocks } from "../fixtures/author-profile/fixture-generator";
 
 const renderComponent = child =>
@@ -11,9 +11,13 @@ const renderComponent = child =>
     <MockedProvider
       mocks={makeArticleMocks({ withImages: true, pageSize: 5, delay: 0 })}
     >
-      <AuthorProfileProvider slug="deborah-haynes">
+      <AuthorArticlesWithImagesProvider
+        slug="deborah-haynes"
+        pageSise={5}
+        page={1}
+      >
         {child}
-      </AuthorProfileProvider>
+      </AuthorArticlesWithImagesProvider>
     </MockedProvider>
   );
 
