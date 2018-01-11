@@ -34,7 +34,8 @@ const sharedStyles = {
     flexDirection: "row",
     alignItems: "center",
     marginTop: 10,
-    height: 13
+    height: 13,
+    height: 20
   },
   twitterContainer: {
     display: "flex",
@@ -42,8 +43,8 @@ const sharedStyles = {
     alignItems: "center",
     borderLeftWidth: 1,
     borderLeftColor: "#696969",
-    marginLeft: 6,
-    paddingLeft: 6
+    marginLeft: 7,
+    paddingLeft: 7,
   }
 };
 
