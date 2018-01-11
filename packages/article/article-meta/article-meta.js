@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import styles from "../styles/meta";
+import styles from "../styles/article-meta";
 import ArticleMetaBase from "./article-meta-base";
 
 const ArticleMeta = props => (
