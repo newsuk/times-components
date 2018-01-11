@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tealium",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "React storybook helpers for Times Components",
   "main": "tealium.js",
   "scripts": {
