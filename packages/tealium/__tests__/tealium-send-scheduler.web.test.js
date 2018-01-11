@@ -38,7 +38,7 @@ describe("TealiumSendScheduler", () => {
           global.window,
           global.window.document
         );
-      expect(makeTealiumScheduler).toThrow();
+      expect(makeTealiumScheduler).toThrowErrorMatchingSnapshot();
     });
 
     it("throws if not given a profile", () => {
@@ -51,7 +51,7 @@ describe("TealiumSendScheduler", () => {
           global.window,
           global.window.document
         );
-      expect(makeTealiumScheduler).toThrow();
+      expect(makeTealiumScheduler).toThrowErrorMatchingSnapshot();
     });
 
     it("throws if not given an account", () => {
@@ -64,7 +64,7 @@ describe("TealiumSendScheduler", () => {
           global.window,
           global.window.document
         );
-      expect(makeTealiumScheduler).toThrow();
+      expect(makeTealiumScheduler).toThrowErrorMatchingSnapshot();
     });
 
     it("injects utag script", () => {
