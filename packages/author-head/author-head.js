@@ -8,7 +8,7 @@ import { withTrackEvents } from "@times-components/tracking";
 import { treePropType } from "@times-components/markup";
 
 import AuthorTitle from "./author-title";
-import TwitterIcon from "./twitter-icon";
+import { IconTwitter } from "@times-components/icons";
 import Bio from "./author-bio";
 import AuthorName from "./author-name";
 
@@ -103,7 +103,7 @@ const TwitterLink = ({ handle, onPress }) => {
 
   return (
     <View style={styles.twitter}>
-      <TwitterIcon />
+      <IconTwitter width={15} height={15} />
       <TextLink
         style={styles.twitterLink}
         url={url}
