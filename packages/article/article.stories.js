@@ -7,6 +7,8 @@ import { ArticleProvider } from "@times-components/provider";
 import { MockedProvider } from "@times-components/utils/graphql";
 import { addTypenameToDocument } from "apollo-utilities";
 import { query as articleQuery } from "@times-components/provider/article";
+import { withTrackingContext } from "@times-components/tracking";
+import { action } from "@storybook/addon-actions";
 import Article from "./article";
 
 const fullArticleTypenameFixture = require("./fixtures/full-article-typename.json");
@@ -140,4 +142,15 @@ storiesOf("Article", module)
   ))
   .add("Fixtures - No lead asset", () => (
     <Article {...articleFixtureNoLeadAsset.data} analyticsStream={() => {}} />
-  ));
+  ))
+  .add("Tracking", () => {
+    const ArticleWithTrackingContext = withTrackingContext(Article, {
+      trackingObject: "Story"
+    });
+    return (
+      <ArticleWithTrackingContext
+        {...fullArticleFixture.data}
+        analyticsStream={action("analytics-event")}
+      />
+    );
+  });
