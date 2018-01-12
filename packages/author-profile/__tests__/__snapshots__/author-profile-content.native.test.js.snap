@@ -3769,7 +3769,7 @@ exports[`renders profile content loading 1`] = `
               Object {
                 "height": 100,
                 "position": "absolute",
-                "top": 23,
+                "top": 30,
                 "width": 100,
               }
             }
@@ -4494,7 +4494,7 @@ exports[`renders profile loading 1`] = `
               Object {
                 "height": 100,
                 "position": "absolute",
-                "top": 23,
+                "top": 30,
                 "width": 100,
               }
             }

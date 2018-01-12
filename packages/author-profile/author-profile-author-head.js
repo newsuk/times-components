@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   photoContainer: {
     width: 100,
     height: 100,
-    top: 23,
+    top: 30,
     position: "absolute"
   },
   gradient: {
