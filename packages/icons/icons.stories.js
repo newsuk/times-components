@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     borderLeftWidth: borderWidth,
     borderLeftColor: borderColor,
     borderTopWidth: borderWidth,
-    borderTopColor: borderColor,
+    borderTopColor: borderColor
   },
   icon: {
     flexGrow: 1,
