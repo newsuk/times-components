@@ -23,7 +23,7 @@ storiesOf("Provider", module)
       }
     `;
 
-    const WithData = connectGraphql(query);
+    const WithData = connectGraphql(query, 0);
 
     const mocks = [
       {
@@ -57,7 +57,7 @@ storiesOf("Provider", module)
       }
     `;
 
-    const WithData = connectGraphql(query);
+    const WithData = connectGraphql(query, 0);
 
     const mocks = [
       {

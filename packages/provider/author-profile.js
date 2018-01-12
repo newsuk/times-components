@@ -1,5 +1,5 @@
 import gql from "graphql-tag";
-import connectGraphql from "./connect";
+import connectGraphql, { debounceTimeRapidUserAction } from "./connect";
 
 export const query = gql`
   query AuthorQuery($slug: Slug!) {
@@ -21,4 +21,8 @@ const propsToVariables = ({ slug }) => ({
   slug
 });
 
-export default connectGraphql(query, propsToVariables);
+export default connectGraphql(
+  query,
+  debounceTimeRapidUserAction,
+  propsToVariables
+);
