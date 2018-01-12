@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, PanResponder, TouchableWithoutFeedback } from "react-native";
+import { View, PanResponder, TouchableWithoutFeedback, Animated } from "react-native";
 import PropTypes from "prop-types";
 
 const distanceBetweenTouches = (
@@ -20,8 +20,8 @@ class Gestures extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      zoomRatio: 1,
-      angle: 0
+      zoomRatio: new Animated.Value(1),
+      angle: new Animated.Value(0)
     };
   }
 
@@ -42,8 +42,11 @@ class Gestures extends Component {
         this.handlePinchChange(evt);
       },
       onPanResponderRelease: () => {
-        this.setState({ zoomRatio: 1, angle: 0 });
-      } // TODO animate back to original position
+        Animated.parallel([
+          Animated.spring(this.state.zoomRatio, {toValue: 1}),
+          Animated.spring(this.state.angle, {toValue: 0}),
+        ]).start();
+      }
     });
   }
 
@@ -56,14 +59,23 @@ class Gestures extends Component {
     const zoomRatio = distanceBetweenTouches(touches) / this.startDistance;
     const currentAngle = angleBetweenTouches(touches);
     const angle = (currentAngle - this.startAngle) % 360;
-    this.setState({ zoomRatio, angle });
+
+
+    this.state.zoomRatio.setValue(zoomRatio);
+    console.log(angle);
+
+    this.state.angle.setValue(Math.round(angle));
   }
 
   render() {
     const transformStyle = {
       transform: [
         { scale: this.state.zoomRatio },
-        { rotate: `${this.state.angle} deg` }
+        { rotate: this.state.angle.interpolate({
+          inputRange: [0, 359],
+          outputRange: ['0 deg', '359 deg']
+        })},
+        {perspective: 1000}, // Required to make animations work on Android
       ]
     };
 
@@ -71,7 +83,7 @@ class Gestures extends Component {
       <View style={{ flexGrow: 1 }} {...this.panResponder.panHandlers}>
         <TouchableWithoutFeedback>
           <View {...this.props}>
-            <View style={transformStyle}>{this.props.children}</View>
+            <Animated.View style={transformStyle}>{this.props.children}</Animated.View>
           </View>
         </TouchableWithoutFeedback>
       </View>
