@@ -1,4 +1,4 @@
-/* global React, shallow, reactTestRenderer */
+/* global React, shallow, renderer */
 import { withTrackScrollDepth } from "../tracking";
 import withTestContext from "./test-tracking-context";
 import sharedTrackingTests from "./shared-tracking-tests";
@@ -18,7 +18,7 @@ describe("WithTrackScrollDepth", () => {
       { trackingObject: "TestObject" }
     );
 
-    reactTestRenderer.create(
+    renderer.create(
       <ListWithChildTracking
         analyticsStream={reporter}
         onViewed={() => {}}

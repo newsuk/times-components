@@ -1,4 +1,4 @@
-/* global React, PropTypes, reactTestRenderer, mount */
+/* global React, PropTypes, renderer, mount */
 import { Text, View } from "react-native";
 import { withTrackScrollDepth } from "../tracking";
 import withTestContext from "./test-tracking-context";
@@ -100,7 +100,7 @@ describe("WithTrackScrollDepth", () => {
       { trackingObject: "TestObject" }
     );
 
-    reactTestRenderer.create(
+    renderer.create(
       <ListWithChildTracking
         analyticsStream={reporter}
         items={[
@@ -152,7 +152,7 @@ describe("WithTrackScrollDepth", () => {
       })
     );
 
-    reactTestRenderer.create(
+    renderer.create(
       <ListWithChildTracking
         analyticsStream={reporter}
         items={[{ someKey: "1", someValue: "one", elementId: 1 }]}
@@ -179,7 +179,7 @@ describe("WithTrackScrollDepth", () => {
       })
     );
 
-    reactTestRenderer.create(
+    renderer.create(
       <ListWithChildTracking
         analyticsStream={reporter}
         items={[{ someKey: "1", someValue: "one" }]}
@@ -204,7 +204,7 @@ describe("WithTrackScrollDepth", () => {
       withTrackScrollDepth(ListComponent)
     );
 
-    reactTestRenderer.create(
+    renderer.create(
       <ListWithChildTracking
         analyticsStream={reporter}
         items={[
@@ -235,7 +235,7 @@ describe("WithTrackScrollDepth", () => {
       withTrackScrollDepth(ListComponent)
     );
 
-    reactTestRenderer
+    renderer
       .create(<ListWithChildTracking analyticsStream={() => {}} items={[]} />)
       .unmount();
 
@@ -252,7 +252,7 @@ describe("WithTrackScrollDepth", () => {
     );
 
     const renderComponent = () =>
-      reactTestRenderer
+      renderer
         .create(<ListWithChildTracking analyticsStream={() => {}} items={[]} />)
         .unmount();
 
@@ -271,7 +271,7 @@ describe("WithTrackScrollDepth", () => {
     delete global.window.IntersectionObserver;
 
     const renderComponent = () =>
-      reactTestRenderer.create(
+      renderer.create(
         <ListWithChildTracking analyticsStream={() => {}} items={[]} />
       );
 
@@ -284,7 +284,7 @@ describe("WithTrackScrollDepth", () => {
     const ListWithChildTracking = withTrackScrollDepth(ListComponent);
 
     const renderComponent = () => {
-      reactTestRenderer.create(
+      renderer.create(
         <ListWithChildTracking
           analyticsStream={() => {}}
           items={[
@@ -306,7 +306,7 @@ describe("WithTrackScrollDepth", () => {
     );
 
     const renderComponent = () => {
-      reactTestRenderer.create(
+      renderer.create(
         <ListWithChildTracking
           analyticsStream={() => {}}
           items={[
@@ -331,7 +331,7 @@ describe("WithTrackScrollDepth", () => {
       { trackingObject: "TestObject" }
     );
 
-    reactTestRenderer.create(
+    renderer.create(
       <ListWithChildTracking
         analyticsStream={reporter}
         items={[
