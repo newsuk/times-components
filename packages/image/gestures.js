@@ -61,7 +61,7 @@ class Gestures extends Component {
     const angle = (currentAngle - this.startAngle) % 360;
 
     this.state.zoomRatio.setValue(zoomRatio);
-    this.state.angle.setValue(Math.round(angle));
+    this.state.angle.setValue(angle);
   }
 
   render() {
