@@ -10,42 +10,48 @@ import {
 } from "./article-image-proptypes";
 
 const InsetCaptionContainerStyle = withResponsiveStyles(View, {
-  base: () => `width: 50%;
-                margin-top: -10px;
-                padding-top: 5px;
-                padding-left: 20px;
-                padding-right: 10px;
-                padding-bottom: 20px;
-                display: inline-block;
-                vertical-align:top;
-                `,
-  mediumUp: () => `padding-left: 0px;
-                     width: 30%;
-                     clear: left;
-                     float:left;
-                     margin-top: 0px;
-                     padding-top: 0px;
-                     padding-right: 20px;
-                     padding-bottom: 30px;
-                    `,
-  wideUp: () => `padding-left: 0px;
-                   width: 35.71429%;
-                  `
+  base: () => `
+    width: 50%;
+    margin-top: -10px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    display: inline-block;
+    vertical-align: top;
+  `,
+  mediumUp: () => `
+    padding-left: 0px;
+    width: 30%;
+    clear: left;
+    float:left;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  `,
+  wideUp: () => `
+    padding-left: 0px;
+    width: 35.71429%;
+  `
 });
 
 const InsetImageStyle = withResponsiveStyles(View, {
-  base: () => `width: 50%;
-                padding-top: 5px;
-                padding-bottom: 20px;
-                display: inline-block;
-                vertical-align:top;`,
-  mediumUp: () => `width: 30%;
-                    clear:left;
-                    float:left;
-                    padding-bottom: 0px;
-                    padding-right: 20px;`,
-  wideUp: () => `width: 35.71429%;
-                 clear: left;`
+  base: () => `
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    display: inline-block;
+    vertical-align: top;`,
+  mediumUp: () => `
+    width: 30%;
+    clear:left;
+    float:left;
+    padding-bottom: 0px;
+    padding-right: 20px;`,
+  wideUp: () => `
+    width: 35.71429%;
+    clear: left;`
 });
 
 const renderCaption = (display, caption, credits) => {
