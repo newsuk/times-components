@@ -1,7 +1,5 @@
-/* global PropTypes */
-import React from "react";
+/* global React, PropTypes, reactTestRenderer */
 import { Text } from "react-native";
-import renderer from "react-test-renderer";
 import { withTrackEvents } from "../tracking";
 import withTrackingContext from "./test-tracking-context";
 import sharedTrackingTests from "./shared-tracking-tests";
@@ -38,7 +36,7 @@ describe("TrackEvents", () => {
       })
     );
 
-    renderer.create(
+    reactTestRenderer.create(
       <WithTrackingAndContext analyticsStream={reporter} {...props} />
     );
 
@@ -53,7 +51,7 @@ describe("TrackEvents", () => {
       })
     );
 
-    renderer.create(
+    reactTestRenderer.create(
       <WithTrackingAndContext analyticsStream={reporter} {...props} />
     );
 
@@ -108,7 +106,7 @@ describe("TrackEvents", () => {
       })
     );
 
-    renderer.create(
+    reactTestRenderer.create(
       <WithTrackingAndContext analyticsStream={reporter} {...props} />
     );
 
@@ -135,7 +133,7 @@ describe("TrackEvents", () => {
     );
     const reporter = jest.fn();
 
-    renderer.create(
+    reactTestRenderer.create(
       <WithTrackingAndContext
         aProp="propValue"
         analyticsStream={reporter}
@@ -181,7 +179,7 @@ describe("TrackEvents", () => {
     );
     const reporter = jest.fn();
 
-    renderer.create(
+    reactTestRenderer.create(
       <WithTrackingAndContext
         aProp="propValue"
         analyticsStream={reporter}
@@ -201,7 +199,7 @@ describe("TrackEvents", () => {
       })
     );
 
-    renderer.create(
+    reactTestRenderer.create(
       <WithTrackingAndContext
         analyticsStream={reporter}
         {...props}

@@ -1,7 +1,5 @@
-/* global PropTypes */
-import React from "react";
+/* global React, PropTypes, reactTestRenderer */
 import { Text } from "react-native";
-import renderer from "react-test-renderer";
 import trackingContextTypes from "../tracking-context-types";
 import { withTrackingContext } from "../tracking";
 
@@ -40,7 +38,7 @@ describe("WithTrackingContext", () => {
     );
     const reporter = jest.fn();
 
-    renderer.create(
+    reactTestRenderer.create(
       <WithTrackingAndContext keyTwo="two" analyticsStream={reporter} />
     );
 
@@ -61,7 +59,9 @@ describe("WithTrackingContext", () => {
     );
     const reporter = jest.fn();
 
-    renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
+    reactTestRenderer.create(
+      <WithTrackingAndContext analyticsStream={reporter} />
+    );
 
     expect(reporter).toHaveBeenCalledWith(
       expect.objectContaining({
@@ -80,7 +80,9 @@ describe("WithTrackingContext", () => {
     );
     const reporter = jest.fn();
 
-    renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
+    reactTestRenderer.create(
+      <WithTrackingAndContext analyticsStream={reporter} />
+    );
 
     expect(reporter).toHaveBeenCalledWith(
       expect.objectContaining({
@@ -99,7 +101,9 @@ describe("WithTrackingContext", () => {
     );
     const reporter = jest.fn();
 
-    renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
+    reactTestRenderer.create(
+      <WithTrackingAndContext analyticsStream={reporter} />
+    );
 
     expect(reporter).toHaveBeenCalledWith(
       expect.objectContaining({
@@ -117,7 +121,9 @@ describe("WithTrackingContext", () => {
     );
 
     const render = () =>
-      renderer.create(<WithTrackingAndContext analyticsStream={() => {}} />);
+      reactTestRenderer.create(
+        <WithTrackingAndContext analyticsStream={() => {}} />
+      );
 
     expect(render).toThrowErrorMatchingSnapshot();
   });
@@ -128,7 +134,9 @@ describe("WithTrackingContext", () => {
     });
     const reporter = jest.fn();
 
-    renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
+    reactTestRenderer.create(
+      <WithTrackingAndContext analyticsStream={reporter} />
+    );
 
     expect(reporter).toHaveBeenCalledWith(
       expect.objectContaining({
@@ -145,7 +153,7 @@ describe("WithTrackingContext", () => {
       trackingObject: "AuthorProfile"
     });
     const reporter = jest.fn();
-    const testRenderer = renderer.create(
+    const testRenderer = reactTestRenderer.create(
       <WithTrackingAndContext analyticsStream={reporter} />
     );
     testRenderer.update(<WithTrackingAndContext analyticsStream={reporter} />);
@@ -159,7 +167,9 @@ describe("WithTrackingContext", () => {
     const reporter = jest.fn();
     global.Date = jest.fn(() => new RealDate("2017-09-26T15:25:56.206Z"));
 
-    renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
+    reactTestRenderer.create(
+      <WithTrackingAndContext analyticsStream={reporter} />
+    );
 
     expect(reporter).toHaveBeenCalledWith(
       expect.objectContaining({
@@ -174,7 +184,7 @@ describe("WithTrackingContext", () => {
       { trackingObject: "TestObject2" }
     );
 
-    const render = () => renderer.create(<WithTrackingAndContext />);
+    const render = () => reactTestRenderer.create(<WithTrackingAndContext />);
 
     expect(render).toThrowErrorMatchingSnapshot();
   });
@@ -184,7 +194,7 @@ describe("WithTrackingContext", () => {
       trackingObject: "AuthorProfile"
     });
 
-    const tree = renderer.create(
+    const tree = reactTestRenderer.create(
       <WithTrackingContext someProp="bar" analyticsStream={() => {}} />
     );
 

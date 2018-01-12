@@ -1,6 +1,5 @@
-/* global PropTypes */
-import React from "react";
-import { Text, FlatList } from "react-native";
+/* global React, PropTypes */
+import { FlatList, Text } from "react-native";
 
 class ListComponent extends React.Component {
   static get propTypes() {

@@ -1,7 +1,5 @@
-/* global PropTypes */
+/* global React, PropTypes, reactTestRenderer */
 import { Text } from "react-native";
-import React from "react";
-import renderer from "react-test-renderer";
 
 const TestComponent = props => <Text>{props.someProp}</Text>;
 TestComponent.propTypes = { someProp: PropTypes.string };
@@ -12,14 +10,14 @@ export default trackingEnhancer => {
   it("renders when tracking context is missing", () => {
     const WithTracking = trackingEnhancer(TestComponent);
 
-    const tree = renderer.create(<WithTracking />).toJSON();
+    const tree = reactTestRenderer.create(<WithTracking />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
   it("forwards props to wrapped component", () => {
     const WithTracking = trackingEnhancer(TestComponent);
-    const tree = renderer.create(<WithTracking someProp="bar" />);
+    const tree = reactTestRenderer.create(<WithTracking someProp="bar" />);
 
     expect(tree).toMatchSnapshot();
   });

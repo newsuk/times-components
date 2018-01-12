@@ -1,14 +1,8 @@
-/* global PropTypes */
-import { View, Text } from "react-native";
-import React from "react";
-import renderer from "react-test-renderer";
-import Enzyme, { mount } from "enzyme";
-import React16Adapter from "enzyme-adapter-react-16";
+/* global React, PropTypes, reactTestRenderer, mount */
+import { Text, View } from "react-native";
 import { withTrackScrollDepth } from "../tracking";
 import withTestContext from "./test-tracking-context";
 import sharedTrackingTests from "./shared-tracking-tests";
-
-Enzyme.configure({ adapter: new React16Adapter() });
 
 class FakeIntersectionObserver {
   static clearObserving() {
@@ -106,7 +100,7 @@ describe("WithTrackScrollDepth", () => {
       { trackingObject: "TestObject" }
     );
 
-    renderer.create(
+    reactTestRenderer.create(
       <ListWithChildTracking
         analyticsStream={reporter}
         items={[
@@ -158,7 +152,7 @@ describe("WithTrackScrollDepth", () => {
       })
     );
 
-    renderer.create(
+    reactTestRenderer.create(
       <ListWithChildTracking
         analyticsStream={reporter}
         items={[{ someKey: "1", someValue: "one", elementId: 1 }]}
@@ -185,7 +179,7 @@ describe("WithTrackScrollDepth", () => {
       })
     );
 
-    renderer.create(
+    reactTestRenderer.create(
       <ListWithChildTracking
         analyticsStream={reporter}
         items={[{ someKey: "1", someValue: "one" }]}
@@ -210,7 +204,7 @@ describe("WithTrackScrollDepth", () => {
       withTrackScrollDepth(ListComponent)
     );
 
-    renderer.create(
+    reactTestRenderer.create(
       <ListWithChildTracking
         analyticsStream={reporter}
         items={[
@@ -241,7 +235,7 @@ describe("WithTrackScrollDepth", () => {
       withTrackScrollDepth(ListComponent)
     );
 
-    renderer
+    reactTestRenderer
       .create(<ListWithChildTracking analyticsStream={() => {}} items={[]} />)
       .unmount();
 
@@ -258,7 +252,7 @@ describe("WithTrackScrollDepth", () => {
     );
 
     const renderComponent = () =>
-      renderer
+      reactTestRenderer
         .create(<ListWithChildTracking analyticsStream={() => {}} items={[]} />)
         .unmount();
 
@@ -277,7 +271,7 @@ describe("WithTrackScrollDepth", () => {
     delete global.window.IntersectionObserver;
 
     const renderComponent = () =>
-      renderer.create(
+      reactTestRenderer.create(
         <ListWithChildTracking analyticsStream={() => {}} items={[]} />
       );
 
@@ -290,7 +284,7 @@ describe("WithTrackScrollDepth", () => {
     const ListWithChildTracking = withTrackScrollDepth(ListComponent);
 
     const renderComponent = () => {
-      renderer.create(
+      reactTestRenderer.create(
         <ListWithChildTracking
           analyticsStream={() => {}}
           items={[
@@ -312,7 +306,7 @@ describe("WithTrackScrollDepth", () => {
     );
 
     const renderComponent = () => {
-      renderer.create(
+      reactTestRenderer.create(
         <ListWithChildTracking
           analyticsStream={() => {}}
           items={[
@@ -337,7 +331,7 @@ describe("WithTrackScrollDepth", () => {
       { trackingObject: "TestObject" }
     );
 
-    renderer.create(
+    reactTestRenderer.create(
       <ListWithChildTracking
         analyticsStream={reporter}
         items={[
