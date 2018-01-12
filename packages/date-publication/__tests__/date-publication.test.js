@@ -3,45 +3,85 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import Enzyme, { shallow } from "enzyme";
-import React16Adapter from "enzyme-adapter-react-16";
-import format from "date-fns/format";
 import DatePublication from "../date-publication";
 
-Enzyme.configure({ adapter: new React16Adapter() });
+function gmtTests(gmtOffset, isGMT) {
+  const { getTimezoneOffset } = Date.prototype;
 
-describe("Date Publication test", () => {
-  const props = {
-    date: new Date("2017-07-01T14:32:00.000Z"),
-    publication: "TIMES"
-  };
-
-  it("renders a DatePublication component with Times publication and Relevant date", () => {
-    const tree = renderer.create(<DatePublication {...props} />).toJSON();
-    expect(tree).toMatchSnapshot();
+  beforeEach(() => {
+    global.Date.prototype.getTimezoneOffset = jest
+      .genMockFunction()
+      .mockReturnValue(gmtOffset); // eslint-disable-line no-extend-native
   });
 
-  it("renders a DatePublication component with Sunday Times publication and Relevant date", () => {
-    const sundayTimesProps = {
-      ...props,
-      publication: "SUNDAYTIMES"
-    };
+  afterEach(() => {
+    global.Date.prototype.getTimezoneOffset = getTimezoneOffset; // eslint-disable-line no-extend-native
+  });
+
+  const props = {
+    publication: "TIMES",
+    isGMT
+  };
+
+  it("renders a DatePublication component with Times publication and Relevant date with (article) date in GMT", () => {
     const tree = renderer
-      .create(<DatePublication {...sundayTimesProps} />)
+      .create(<DatePublication {...props} date="2017-01-01T14:32:00.000Z" />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  it("date should follow the correct format", () => {
-    const component = shallow(<DatePublication {...props} />);
-    expect(component.text()).toContain(format(props.date, "dddd MMMM DD YYYY"));
+  it("renders a DatePublication component with Times publication and Relevant date with (article) date in BST", () => {
+    const tree = renderer
+      .create(
+        <DatePublication
+          {...props}
+          date="2017-07-01T14:32:00.000Z"
+          isDateGMT={false}
+        />
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
-  it("without providing a publication, The Times will be set as default", () => {
+  it("renders a DatePublication component with The Sunday Times publication and Relevant date with (article) date in BST", () => {
+    props.publication = "SUNDAYTIMES";
+    const tree = renderer
+      .create(
+        <DatePublication
+          {...props}
+          date="2017-07-01T14:32:00.000Z"
+          isDateGMT={false}
+        />
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders a DatePublication component with default publication and Relevant date with (article) date in BST", () => {
     const removePubProps = props;
     delete removePubProps.publication;
 
-    const component = shallow(<DatePublication {...removePubProps} />);
-    expect(component.text()).toContain("The Times");
+    const tree = renderer
+      .create(
+        <DatePublication
+          {...props}
+          date="2017-07-01T14:32:00.000Z"
+          isDateGMT={false}
+        />
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
   });
+}
+
+describe("when the user have the same timezone (UTC+0) as London timezone (UTC+0)", () => {
+  gmtTests(0, true);
+});
+
+describe("when the user have a different timezone (UTC+2) than London timezone (UTC+0)", () => {
+  gmtTests(120, true);
+});
+
+describe("when the user have a different timezone (UTC+0) than London timezone (UTC+1)", () => {
+  gmtTests(0, false);
 });

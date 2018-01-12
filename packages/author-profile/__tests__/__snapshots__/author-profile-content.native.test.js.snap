@@ -1802,6 +1802,8 @@ exports[`renders profile content component 1`] = `
         "elementId": "articleList-1-0",
         "headline": "Top medal for forces dog who took a bite out of the Taliban",
         "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
+        "isDateGMT": true,
+        "isGMT": true,
         "label": "",
         "leadAsset": Object {
           "__typename": "Image",
@@ -1812,7 +1814,7 @@ exports[`renders profile content component 1`] = `
           "title": "Title",
         },
         "publicationName": "TIMES",
-        "publishedTime": 2017-11-17T00:01:00.000Z,
+        "publishedTime": "2017-11-17T00:01:00.000Z",
         "summary": Array [
           Object {
             "attributes": Object {},
@@ -1835,6 +1837,8 @@ exports[`renders profile content component 1`] = `
         "elementId": "articleList-1-1",
         "headline": "Social media must raise game to beat terrorists, says UN chief",
         "id": "4e6894ec-cb18-11e7-b529-95e3fc05f40f",
+        "isDateGMT": true,
+        "isGMT": true,
         "label": "",
         "leadAsset": Object {
           "__typename": "Image",
@@ -1845,7 +1849,7 @@ exports[`renders profile content component 1`] = `
           "title": "Title",
         },
         "publicationName": "TIMES",
-        "publishedTime": 2017-11-17T00:01:00.000Z,
+        "publishedTime": "2017-11-17T00:01:00.000Z",
         "summary": Array [
           Object {
             "attributes": Object {},
@@ -1868,6 +1872,8 @@ exports[`renders profile content component 1`] = `
         "elementId": "articleList-1-2",
         "headline": "Cuts have left the army 20 years out of date, says former general",
         "id": "f79c9d8c-c95c-11e7-b529-95e3fc05f40f",
+        "isDateGMT": true,
+        "isGMT": true,
         "label": "",
         "leadAsset": Object {
           "__typename": "Image",
@@ -1878,7 +1884,7 @@ exports[`renders profile content component 1`] = `
           "title": "Nad e Ali in Helmand province, Afghanistan.",
         },
         "publicationName": "TIMES",
-        "publishedTime": 2017-11-14T17:00:00.000Z,
+        "publishedTime": "2017-11-14T17:00:00.000Z",
         "summary": Array [
           Object {
             "attributes": Object {},
@@ -2398,7 +2404,7 @@ exports[`renders profile content component 1`] = `
                     }
                     testID="datePublication"
                   >
-                    Friday November 17 2017, The Times
+                    Friday November 17 2017, 12:01am GMT, The Times
                   </Text>
                 </View>
               </View>
@@ -2649,7 +2655,7 @@ exports[`renders profile content component 1`] = `
                     }
                     testID="datePublication"
                   >
-                    Friday November 17 2017, The Times
+                    Friday November 17 2017, 12:01am GMT, The Times
                   </Text>
                 </View>
               </View>
@@ -2900,7 +2906,7 @@ exports[`renders profile content component 1`] = `
                     }
                     testID="datePublication"
                   >
-                    Tuesday November 14 2017, The Times
+                    Tuesday November 14 2017, 05:00pm GMT, The Times
                   </Text>
                 </View>
               </View>
@@ -3394,7 +3400,7 @@ exports[`renders profile content item component 1`] = `
               }
               testID="datePublication"
             >
-              Friday November 17 2017, The Times
+              Friday November 17 2017, 12:01am GMT, The Times
             </Text>
           </View>
         </View>
@@ -3514,7 +3520,7 @@ exports[`renders profile content item component with a specific image size 1`] =
               }
               testID="datePublication"
             >
-              Friday November 17 2017, The Times
+              Friday November 17 2017, 12:01am GMT, The Times
             </Text>
           </View>
         </View>
@@ -3634,7 +3640,7 @@ exports[`renders profile content item component with no image 1`] = `
               }
               testID="datePublication"
             >
-              Friday November 17 2017, The Times
+              Friday November 17 2017, 12:01am GMT, The Times
             </Text>
           </View>
         </View>

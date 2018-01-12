@@ -5,6 +5,8 @@
       "headline": "Supplement In Depth Template (Style)",
       "publicationName": "TIMES",
       "publishedTime": "2015-03-13T18:54:58.000Z",
+      "isDateGMT": true,
+      "isGMT": true,
       "label": "Random label",
       "byline": [
         {

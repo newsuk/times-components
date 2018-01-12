@@ -11,6 +11,8 @@ Object {
         "__typename": "Article",
         "headline": "Top medal for forces dog who took a bite out of the Taliban",
         "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
+        "isDateGMT": true,
+        "isGMT": true,
         "label": "",
         "longSummary": Array [
           Object {
@@ -77,6 +79,8 @@ Object {
         "__typename": "Article",
         "headline": "Social media must raise game to beat terrorists, says UN chief",
         "id": "4e6894ec-cb18-11e7-b529-95e3fc05f40f",
+        "isDateGMT": true,
+        "isGMT": true,
         "label": "",
         "longSummary": Array [
           Object {
@@ -143,6 +147,8 @@ Object {
         "__typename": "Article",
         "headline": "Cuts have left the army 20 years out of date, says former general",
         "id": "f79c9d8c-c95c-11e7-b529-95e3fc05f40f",
+        "isDateGMT": true,
+        "isGMT": true,
         "label": "",
         "longSummary": Array [
           Object {
@@ -209,6 +215,8 @@ Object {
         "__typename": "Article",
         "headline": "MoD recruits more civilians as Royal Marines face axe",
         "id": "21627e52-c651-11e7-92dc-06edfbca4aab",
+        "isDateGMT": true,
+        "isGMT": true,
         "label": "",
         "longSummary": Array [
           Object {
@@ -275,6 +283,8 @@ Object {
         "__typename": "Article",
         "headline": "Suits you: poppy power is branching out for Remembrance appeal",
         "id": "9c4991b8-c657-11e7-92dc-06edfbca4aab",
+        "isDateGMT": true,
+        "isGMT": true,
         "label": "",
         "longSummary": Array [
           Object {

@@ -12,13 +12,21 @@ const ArticleMetaRow = (textStyle, component) => (
   </View>
 );
 
-const ArticleMeta = ({ byline, publishedTime, publicationName }) => (
+const ArticleMeta = ({
+  byline,
+  publishedTime,
+  isGMT,
+  isDateGMT,
+  publicationName
+}) => (
   <Meta style={[styles.articleMiddleContainer, styles.articleMeta]}>
     {ArticleMetaRow(styles.byline, <ArticleByline ast={byline} />)}
     {ArticleMetaRow(
       styles.datePublication,
       <DatePublication
-        date={new Date(publishedTime)}
+        date={publishedTime}
+        isGMT={isGMT}
+        isDateGMT={isDateGMT}
         publication={publicationName}
       />
     )}
@@ -39,12 +47,16 @@ nodeShape.children = PropTypes.arrayOf(
 ArticleMeta.propTypes = {
   byline: PropTypes.arrayOf(PropTypes.shape(nodeShape)),
   publishedTime: PropTypes.string,
-  publicationName: PropTypes.string
+  publicationName: PropTypes.string,
+  isGMT: PropTypes.bool,
+  isDateGMT: PropTypes.bool
 };
 
 ArticleMeta.defaultProps = {
   byline: [],
   publishedTime: null,
+  isGMT: DatePublication.defaultProps.isGMT,
+  isDateGMT: DatePublication.defaultProps.isDateGMT,
   publicationName: null
 };
 
