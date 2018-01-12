@@ -1,13 +1,10 @@
+/* global shallow */
 import React from "react";
 import renderer from "react-test-renderer";
-import Enzyme, { shallow } from "enzyme";
-import React16Adapter from "enzyme-adapter-react-16";
 import { withTrackScrollDepth } from "../tracking";
 import withTestContext from "./test-tracking-context";
 import sharedTrackingTests from "./shared-tracking-tests";
 import ListComponent from "./list-component";
-
-Enzyme.configure({ adapter: new React16Adapter() });
 
 const items = [
   { someKey: "1", someValue: "one", elementId: "1" },

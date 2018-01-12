@@ -1,6 +1,6 @@
+/* global PropTypes */
 import React from "react";
 import { Text } from "react-native";
-import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
 import trackingContextTypes from "../tracking-context-types";
 import { withTrackingContext } from "../tracking";

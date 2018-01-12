@@ -1,6 +1,6 @@
+/* global PropTypes */
 import { View, Text } from "react-native";
 import React from "react";
-import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
 import Enzyme, { mount } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";

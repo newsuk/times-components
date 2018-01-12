@@ -1,7 +1,7 @@
+/* global PropTypes */
 import React from "react";
 import { Text } from "react-native";
 import renderer from "react-test-renderer";
-import PropTypes from "prop-types";
 import { withTrackEvents } from "../tracking";
 import withTrackingContext from "./test-tracking-context";
 import sharedTrackingTests from "./shared-tracking-tests";
