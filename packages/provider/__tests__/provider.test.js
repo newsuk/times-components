@@ -29,7 +29,7 @@ const mocks = [
   }
 ];
 
-const ConnectedComponent = connectGraphql(query);
+const ConnectedComponent = connectGraphql(query, undefined, 0);
 
 const renderComponent = (child, customMocks) =>
   renderer.create(
@@ -49,6 +49,10 @@ it("returns query result", done => {
 
     return null;
   });
+});
+
+it("complains if you omit the debounceTimeMs parameter to connectGraphql", () => {
+  expect(() => connectGraphql(query)).toThrowError();
 });
 
 it("returns loading state with no author", done => {

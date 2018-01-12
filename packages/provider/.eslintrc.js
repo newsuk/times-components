@@ -10,5 +10,8 @@ module.exports = {
       }
     ]
   },
-  plugins: ["graphql"]
+  plugins: ["graphql"],
+  env: {
+    jest: true
+  }
 };
