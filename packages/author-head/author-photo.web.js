@@ -5,10 +5,10 @@ import AuthorPhotoBase from "./author-photo.base";
 
 const ImageContainer = withResponsiveStyles(View, {
   base: () => `
-    width: 100px
+    width: 100px;
   `,
   mediumUp: () => `
-    width: 116px
+    width: 116px;
   `
 });
 
