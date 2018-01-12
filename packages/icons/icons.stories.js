@@ -1,4 +1,3 @@
-import "react-native";
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
@@ -7,7 +6,7 @@ import { IconDiamond, IconTwitter } from "./icons";
 const borderWidth = 1;
 const borderColor = "#d3d3d3";
 
-const styles =StyleSheet.create({
+const styles = StyleSheet.create({
   wrapper: {
     display: "flex",
     flexWrap: "wrap",
@@ -29,7 +28,7 @@ const styles =StyleSheet.create({
     paddingTop: 15,
     fontFamily: "GillSansMTStd-Medium"
   }
-})
+});
 
 storiesOf("Icons", module).add("Icons", () => (
   <View style={styles.wrapper}>

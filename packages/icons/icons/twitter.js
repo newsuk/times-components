@@ -16,15 +16,14 @@ const IconTwitter = ({ width, height, fillColour }) => (
   </Svg>
 );
 
-
 IconTwitter.propTypes = {
-    fillColour: PropTypes.string,
-    height: PropTypes.number.isRequired,
-    width: PropTypes.number.isRequired
-  };
+  fillColour: PropTypes.string,
+  height: PropTypes.number.isRequired,
+  width: PropTypes.number.isRequired
+};
 
 IconTwitter.defaultProps = {
-  fillColour: '#006699'
+  fillColour: "#006699"
 };
 
 export default IconTwitter;
