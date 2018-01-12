@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-head",
-  "version": "0.15.16",
+  "version": "0.15.17",
   "main": "author-head",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
@@ -74,7 +74,7 @@
     "@times-components/link": "0.13.4",
     "@times-components/markup": "0.15.8",
     "@times-components/responsive-styles": "0.2.7",
-    "@times-components/tracking": "0.5.13",
+    "@times-components/tracking": "0.5.14",
     "prop-types": "15.6.0",
     "styled-components": "2.2.3",
     "svgs": "3.1.1"
