@@ -29,11 +29,7 @@ const mocks = [
   }
 ];
 
-
-const renderComponent = (child, customMocks) =>
-  renderer.create(constructComponent(child, customMocks));
-
-export const constructComponent = (child, customMocks, debounceTimeMs = 0) => {
+const constructComponent = (child, customMocks, debounceTimeMs = 0) => {
   const ConnectedComponent = connectGraphql(query, debounceTimeMs);
   return (
     <MockedProvider mocks={customMocks || mocks} removeTypename>
@@ -42,7 +38,10 @@ export const constructComponent = (child, customMocks, debounceTimeMs = 0) => {
       </ConnectedComponent>
     </MockedProvider>
   );
-}
+};
+
+const renderComponent = (child, customMocks) =>
+  renderer.create(constructComponent(child, customMocks));
 
 it("returns query result", done => {
   renderComponent(({ isLoading, author }) => {
@@ -60,8 +59,10 @@ it("complains if you omit the debounceTimeMs parameter to connectGraphql", () =>
 });
 
 it("Doesn't use a Debounce HOC wrapper if debounceTimeMs is 0", () => {
-  expect(connectGraphql(query, 500).displayName).toEqual("WithDebounce(Apollo(Wrapper))")
-  expect(connectGraphql(query, 0).displayName).toEqual("Apollo(Wrapper)")
+  expect(connectGraphql(query, 500).displayName).toEqual(
+    "WithDebounce(Apollo(Wrapper))"
+  );
+  expect(connectGraphql(query, 0).displayName).toEqual("Apollo(Wrapper)");
 });
 
 it("returns loading state with no author", done => {
