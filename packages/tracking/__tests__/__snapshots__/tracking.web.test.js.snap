@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`WithTrackScrollDepth does not report missing elements 1`] = `Array []`;
+
 exports[`WithTrackScrollDepth forwards props to wrapped component 1`] = `
 <div
   className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
@@ -51,6 +53,59 @@ Array [
         "scrollDepth": Object {
           "itemNumber": 3,
           "total": 3,
+        },
+      },
+      "component": "ListComponentChild",
+    },
+  ],
+]
+`;
+
+exports[`WithTrackScrollDepth tracks scroll depth after update 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Scrolled",
+      "attrs": Object {
+        "scrollDepth": Object {
+          "itemNumber": 1,
+          "total": 3,
+        },
+      },
+      "component": "ListComponentChild",
+    },
+  ],
+  Array [
+    Object {
+      "action": "Scrolled",
+      "attrs": Object {
+        "scrollDepth": Object {
+          "itemNumber": 2,
+          "total": 3,
+        },
+      },
+      "component": "ListComponentChild",
+    },
+  ],
+  Array [
+    Object {
+      "action": "Scrolled",
+      "attrs": Object {
+        "scrollDepth": Object {
+          "itemNumber": 3,
+          "total": 3,
+        },
+      },
+      "component": "ListComponentChild",
+    },
+  ],
+  Array [
+    Object {
+      "action": "Scrolled",
+      "attrs": Object {
+        "scrollDepth": Object {
+          "itemNumber": 4,
+          "total": 4,
         },
       },
       "component": "ListComponentChild",

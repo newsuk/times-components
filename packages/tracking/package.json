@@ -7,6 +7,7 @@
     "test:native": "jest --config='./jest.config.json'",
     "test:web": "jest --config='./jest.config.web.json'",
     "test": "yarn test:web --ci --bail --coverage && yarn test:native --ci --bail --coverage",
+    "test:watch": "jest --projects jest.config*.json --watchAll",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
