@@ -27,7 +27,7 @@ const getQueryVariables = definitions =>
     )
   );
 
-const connectGraphql = (query, propsToVariables = identity, debounceTimeMs) => {
+const connectGraphql = (query, debounceTimeMs, propsToVariables = identity) => {
   if (
     process.env.NODE_ENV !== "production" &&
     typeof debounceTimeMs !== "number"

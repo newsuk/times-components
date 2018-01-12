@@ -29,4 +29,4 @@ export const query = gql`
   }
 `;
 
-export default connectGraphql(query, undefined, debounceTimeFrameBatching);
+export default connectGraphql(query, debounceTimeFrameBatching);

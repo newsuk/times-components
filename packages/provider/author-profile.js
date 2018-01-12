@@ -23,6 +23,6 @@ const propsToVariables = ({ slug }) => ({
 
 export default connectGraphql(
   query,
-  propsToVariables,
-  debounceTimeFrameBatching
+  debounceTimeFrameBatching,
+  propsToVariables
 );

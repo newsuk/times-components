@@ -55,6 +55,6 @@ const propsToVariables = ({
 
 export default connectGraphql(
   query,
-  propsToVariables,
-  debounceTimeFrameBatching
+  debounceTimeFrameBatching,
+  propsToVariables
 );
