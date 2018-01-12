@@ -8,7 +8,8 @@ import resolveAttrs from "./resolve-attrs";
 
 const withTrackingContext = (
   WrappedComponent,
-  { getAttrs = () => ({}), trackingObject } = {}
+  // eslint-disable-next-line no-unused-vars
+  { getAttrs = () => ({}), trackingObject, isDataReady = props => true } = {}
 ) => {
   const componentName = getDisplayName(WrappedComponent);
 
@@ -16,6 +17,7 @@ const withTrackingContext = (
     constructor(props, context) {
       super(props, context);
       this.fireAnalyticsEvent = this.fireAnalyticsEvent.bind(this);
+      this.pageEventTriggered = false;
       if (this.isRootTrackingContext()) {
         if (!trackingObject) {
           throw new TypeError(
@@ -39,11 +41,24 @@ const withTrackingContext = (
     }
 
     componentDidMount() {
-      if (this.isRootTrackingContext()) {
+      this.trackPageEvent(this.props);
+    }
+
+    componentWillReceiveProps(nextProps) {
+      this.trackPageEvent(nextProps);
+    }
+
+    trackPageEvent(props) {
+      if (
+        isDataReady(props) &&
+        this.isRootTrackingContext() &&
+        this.pageEventTriggered === false
+      ) {
+        this.pageEventTriggered = true;
         this.fireAnalyticsEvent({
           component: "Page",
           action: "Viewed",
-          attrs: resolveAttrs(getAttrs, this.props)
+          attrs: resolveAttrs(getAttrs, props)
         });
       }
     }
