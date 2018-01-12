@@ -6,12 +6,10 @@ export default (skip, first) => ({
       ...articleListWithImagesFixture.data.author,
       articles: {
         ...articleListWithImagesFixture.data.author.articles,
-        list: articleListWithImagesFixture.data.author.articles.list
-          .map(el => ({
-            ...el,
-            publishedTime: new Date(el.publishedTime)
-          }))
-          .slice(skip, skip + first)
+        list: articleListWithImagesFixture.data.author.articles.list.slice(
+          skip,
+          skip + first
+        )
       }
     }
   }

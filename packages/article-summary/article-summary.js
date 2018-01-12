@@ -81,7 +81,7 @@ ArticleSummary.propTypes = {
   label: PropTypes.string,
   headline: PropTypes.string,
   text: PropTypes.arrayOf(treePropType),
-  date: PropTypes.instanceOf(Date),
+  date: DatePublication.propTypes.date,
   publication: DatePublication.propTypes.publication
 };
 

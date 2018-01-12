@@ -52,8 +52,6 @@
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
     "dextrose": "1.2.14",
-    "enzyme": "3.2.0",
-    "enzyme-adapter-react-16": "1.1.0",
     "eslint": "4.9.0",
     "flow-bin": "0.42.0",
     "jest": "21.2.1",

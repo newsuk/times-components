@@ -28,7 +28,18 @@ const authorProfileProps = {
 };
 
 export default AuthorProfileContent => {
+  const realIntl = Intl;
+
+  beforeEach(() => {
+    global.Intl = {
+      DateTimeFormat: () => ({
+        resolvedOptions: () => ({ timeZone: "Europe/London" })
+      })
+    };
+  });
+
   afterEach(() => {
+    global.Intl = realIntl;
     jest.restoreAllMocks();
   });
 

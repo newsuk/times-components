@@ -1,5 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Date Publication test renders a DatePublication component with Sunday Times publication and Relevant date 1`] = `"Saturday July 01 2017, The Sunday Times"`;
+exports[`when the user have a different timezone than London timezone renders a DatePublication component with Times publication and Relevant GMT date 1`] = `"Sunday January 01 2017, 02:32pm GMT, The Times"`;
 
-exports[`Date Publication test renders a DatePublication component with Times publication and Relevant date 1`] = `"Saturday July 01 2017, The Times"`;
+exports[`when the user have a different timezone than London timezone renders a DatePublication component with default publication and Relevant BST date 1`] = `"Saturday July 01 2017, 03:32pm BST, The Times"`;
+
+exports[`when the user have a different timezone than London timezone renders a DatePublication component with default publication and Relevant GMT date 1`] = `"Sunday January 01 2017, 02:32pm GMT, The Times"`;
+
+exports[`when the user have the same timezone as London timezone renders a DatePublication component with Times publication and Relevant GMT date 1`] = `"Sunday January 01 2017, 02:32pm, The Times"`;
+
+exports[`when the user have the same timezone as London timezone renders a DatePublication component with default publication and Relevant BST date 1`] = `"Saturday July 01 2017, 03:32pm, The Times"`;
+
+exports[`when the user have the same timezone as London timezone renders a DatePublication component with default publication and Relevant GMT date 1`] = `"Sunday January 01 2017, 02:32pm, The Times"`;
