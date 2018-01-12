@@ -34,7 +34,6 @@ const sharedStyles = {
     flexDirection: "row",
     alignItems: "center",
     marginTop: 10,
-    height: 13,
     height: 20
   },
   twitterContainer: {
