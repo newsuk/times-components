@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const distanceBetweenTouches = (
   [{ pageX: x1, pageY: y1 }, { pageX: x2, pageY: y2 }]
-) => Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+) => Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2 ));
 
 const angleBetweenTouches = (
   [{ pageX: x1, pageY: y1 }, { pageX: x2, pageY: y2 }]
