@@ -6,9 +6,9 @@ import Image from "@times-components/image";
 import { TextLink } from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import { treePropType } from "@times-components/markup";
+import { IconTwitter } from "@times-components/icons";
 
 import AuthorTitle from "./author-title";
-import { IconTwitter } from "@times-components/icons";
 import Bio from "./author-bio";
 import AuthorName from "./author-name";
 
