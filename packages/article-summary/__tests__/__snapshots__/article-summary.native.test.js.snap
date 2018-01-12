@@ -78,7 +78,7 @@ exports[`renders an article-summary component with a single paragraph 1`] = `
     }
     testID="datePublication"
   >
-    Friday November 17 2017, 01:01am, The Times
+    Friday November 17 2017, 12:01am, The Times
   </Text>
 </View>
 `;
@@ -497,7 +497,7 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
     }
     testID="datePublication"
   >
-    Friday November 17 2017, 01:01am, The Times
+    Friday November 17 2017, 12:01am, The Times
   </Text>
 </View>
 `;
