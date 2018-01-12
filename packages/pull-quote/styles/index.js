@@ -10,6 +10,15 @@ const iosStyles = StyleSheet.create({
     paddingRight: 10,
     paddingBottom: 25,
     marginBottom: 0
+  },
+  // iOS Font hack
+  caption: {
+    ...sharedStyles.caption,
+    paddingTop: 4
+  },
+  link: {
+    ...sharedStyles.link,
+    paddingTop: 4
   }
 });
 

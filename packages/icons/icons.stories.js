@@ -13,14 +13,17 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     margin: 20,
     borderLeftWidth: borderWidth,
-    borderLeftColor: borderColor
-  },
-  icon: {
-    padding: 20,
-    borderRightWidth: borderWidth,
-    borderRightColor: borderColor,
+    borderLeftColor: borderColor,
     borderTopWidth: borderWidth,
     borderTopColor: borderColor,
+  },
+  icon: {
+    flexGrow: 1,
+    padding: 20,
+    justifyContent: "center",
+    alignItems: "center",
+    borderRightWidth: borderWidth,
+    borderRightColor: borderColor,
     borderBottomWidth: borderWidth,
     borderBottomColor: borderColor
   },

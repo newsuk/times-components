@@ -45,6 +45,7 @@ const sharedStyles = {
     borderLeftColor: "#696969",
     marginLeft: 7,
     paddingLeft: 7,
+    height: 15
   }
 };
 
