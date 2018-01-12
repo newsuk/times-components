@@ -1,17 +1,17 @@
 const lastSunday = (month, year) => {
-  const lastDayOfMonth = new Date(Date.UTC(year, month, 0));
+  const lastDayOfMonth = new Date(Date.UTC(year, month + 1, 0));
   const day = lastDayOfMonth.getDay();
   const dateOfSunday = lastDayOfMonth.getDate() - day;
   const sunday = new Date(Date.UTC(year, month, dateOfSunday));
   sunday.setHours(1);
-  return sunday.getTime();
+  return sunday;
 };
 
 const isBST = date => {
-  const startOfBST = lastSunday(3, date.getFullYear());
-  const endOfBST = lastSunday(10, date.getFullYear());
-  const isAfterStartOfBST = date.getTime() >= startOfBST;
-  const isBeforeEndOfBST = date.getTime() < endOfBST;
+  const startOfBST = lastSunday(2, date.getFullYear());
+  const endOfBST = lastSunday(9, date.getFullYear());
+  const isAfterStartOfBST = date.getTime() >= startOfBST.getTime();
+  const isBeforeEndOfBST = date.getTime() < endOfBST.getTime();
   return isAfterStartOfBST && isBeforeEndOfBST;
 };
 
