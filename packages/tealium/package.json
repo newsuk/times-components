@@ -23,7 +23,7 @@
     "rootDir": "../../",
     "coverageDirectory": "<rootDir>/packages/tealium/coverage/web/",
     "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
+      "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testEnvironment": "jsdom",
     "testMatch": [
@@ -47,7 +47,8 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.1.1",
     "jest": "21.2.1",
-    "prettier": "1.8.2"
+    "prettier": "1.8.2",
+    "react-native-web": "0.1.14"
   },
   "peerDependencies": {
     "react-native": ">=0.50",

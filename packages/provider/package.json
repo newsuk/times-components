@@ -3,7 +3,6 @@
   "version": "0.20.10",
   "main": "provider",
   "scripts": {
-    "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
     "test": "jest --bail --ci --coverage",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -21,7 +20,7 @@
       "!**/packages/provider/*stories.js"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
+      "node_modules/(?!(react-native|react-apollo-temp|@times-components)/)"
     ],
     "testMatch": [
       "<rootDir>/packages/provider/__tests__/**.test.js"
@@ -49,28 +48,18 @@
     "@times-components/eslint-config-thetimes": "0.1.1",
     "@times-components/utils": "0.1.1",
     "apollo-utilities": "1.0.4",
-    "babel-cli": "6.24.1",
-    "babel-core": "6.24.1",
-    "babel-eslint": "7.2.3",
-    "babel-jest": "21.2.0",
-    "babel-loader": "7.1.2",
-    "babel-plugin-transform-react-remove-prop-types": "0.4.5",
-    "babel-preset-flow": "6.23.0",
-    "babel-preset-react-native": "1.9.2",
     "dextrose": "1.2.14",
     "enzyme": "3.2.0",
     "enzyme-adapter-react-16": "1.1.0",
     "eslint": "4.9.0",
     "eslint-plugin-graphql": "1.4.1",
-    "flow-bin": "0.42.0",
     "graphql": "0.11.7",
     "jest": "21.2.1",
     "prettier": "1.8.2",
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-native": "0.50.1",
-    "react-test-renderer": "16.2.0",
-    "webpack": "3.3.0"
+    "react-test-renderer": "16.2.0"
   },
   "dependencies": {
     "graphql-tag": "2.5.0",

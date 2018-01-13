@@ -4,7 +4,6 @@
   "description": "Handles errors",
   "main": "error-view",
   "scripts": {
-    "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "jest --bail --verbose --watchAll",
     "test": "jest --bail --ci --coverage",
     "fmt": "prettier --write '**/*.*'",
@@ -21,7 +20,7 @@
       "/__tests__/"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
+      "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
       "<rootDir>/packages/error-view/__tests__/*.test.js"
@@ -49,23 +48,14 @@
     "@storybook/react-native": "3.2.18",
     "@times-components/brightcove-video": "1.10.3",
     "@times-components/eslint-config-thetimes": "0.1.1",
-    "babel-cli": "6.24.1",
-    "babel-core": "6.24.1",
-    "babel-jest": "21.2.0",
-    "babel-loader": "7.1.2",
-    "babel-plugin-transform-react-remove-prop-types": "0.4.5",
-    "babel-preset-flow": "6.23.0",
-    "babel-preset-react-native": "1.9.2",
     "dextrose": "1.2.14",
     "eslint": "4.9.0",
-    "flow-bin": "0.42.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-native": "0.50.1",
-    "react-test-renderer": "16.2.0",
-    "webpack": "3.3.0"
+    "react-test-renderer": "16.2.0"
   },
   "dependencies": {
     "prop-types": "15.6.0"

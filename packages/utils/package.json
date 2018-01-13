@@ -20,7 +20,7 @@
       "!**/packages/utils/graphql.js"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
+      "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
       "<rootDir>/packages/utils/__tests__/*.test.js"

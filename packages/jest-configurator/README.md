@@ -13,7 +13,7 @@ Then add platform specific code like below.
 ```js
 const jestConfigurator = require("@times-components/jest-configurator");
 
-module.exports = jestConfigurator("article", "android");
+module.exports = jestConfigurator("android", __dirname);
 ```
 
 Saving this file in your platform specific tests folder will give you a platform

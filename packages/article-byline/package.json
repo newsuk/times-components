@@ -4,7 +4,6 @@
   "description": "Article byline information",
   "main": "article-byline",
   "scripts": {
-    "flow": "node_modules/flow-bin/cli.js",
     "test:watch": "yarn test -- --watchAll",
     "test": "jest --config='./jest.config.json' --ci --bail --coverage",
     "fmt": "prettier --write '**/*.*'",
@@ -33,24 +32,16 @@
   "devDependencies": {
     "@storybook/react-native": "3.2.18",
     "@times-components/eslint-config-thetimes": "0.1.1",
-    "babel-cli": "6.24.1",
-    "babel-core": "6.24.1",
-    "babel-jest": "21.2.0",
-    "babel-loader": "7.1.2",
-    "babel-plugin-transform-react-remove-prop-types": "0.4.5",
-    "babel-preset-flow": "6.23.0",
-    "babel-preset-react-native": "1.9.2",
     "dextrose": "1.2.14",
     "eslint": "4.9.0",
-    "flow-bin": "0.42.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
     "raf": "3.4.0",
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-native": "0.50.1",
-    "react-test-renderer": "16.2.0",
-    "webpack": "3.3.0"
+    "react-native-web": "0.1.14",
+    "react-test-renderer": "16.2.0"
   },
   "dependencies": {
     "@times-components/link": "0.13.6",
