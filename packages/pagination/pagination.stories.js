@@ -60,6 +60,24 @@ storiesOf("Pagination", module)
       onPrev={action("last-page-prev-compact")}
     />
   ))
+  .add("Without top keyline", () => (
+    <Pagination
+      page={2}
+      count={60}
+      hideTopKeyline
+      onNext={action("without-top-keyline-next")}
+      onPrev={action("without-top-keyline-prev")}
+    />
+  ))
+  .add("Without bottom keyline", () => (
+    <Pagination
+      page={2}
+      count={60}
+      hideBottomKeyline
+      onNext={action("without-bottom-keyline-next")}
+      onPrev={action("without-bottom-keyline-prev")}
+    />
+  ))
   .add("Tracking", () => {
     const pageHandler = e => e.preventDefault();
     const PaginationWithTrackingContext = withTrackingContext(Pagination, {
