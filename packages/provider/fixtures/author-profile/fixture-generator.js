@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-unresolved
 import { addTypenameToDocument } from "apollo-utilities";
 import { query as authorProfileQuery } from "../../author-profile";
 import { query as articleListWithImagesQuery } from "../../author-articles-with-images";
