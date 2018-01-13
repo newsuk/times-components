@@ -36,7 +36,7 @@
     "storybook-native": "storybook -c .storybook.native start -p 7007",
     "preios": "yarn fetch-fonts",
     "ios": "react-native run-ios",
-    "preandroid": "yarn fetch-fonts",
+    "preandroid": "yarn fetch-fonts && ./lib/start_android_emulator.sh &",
     "android": "react-native run-android",
     "android:device": "./lib/setup_device_connections.sh && yarn android",
     "prefmt": "prettier --write '**/*.*'",
