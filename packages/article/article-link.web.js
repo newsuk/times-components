@@ -20,11 +20,11 @@ const responsivelinkStyles = {
 const ArticleLink = props => (
   <Link
     index={`link-${props.uuid}`}
-    url={props.href}
-    onPress={() => {}}
+    url={props.url}
+    onPress={props.onPress}
     responsivelinkStyles={responsivelinkStyles}
   >
-    {props.linkText}
+    {props.children}
   </Link>
 );
 
@@ -32,4 +32,7 @@ ArticleLink.defaultProps = {
   ...Link.defaultProps
 };
 
+ArticleLink.propTypes = {
+  ...Link.propTypes
+};
 export default ArticleLink;

@@ -72,9 +72,11 @@ const ArticleRow = props => {
         <ArticleLink
           key={index}
           uuid={index}
-          href={attributes.href}
-          linkText={children}
-        />
+          onPress={() => {}}
+          url={attributes.href}
+        >
+          {children}
+        </ArticleLink>
       );
     }
   });

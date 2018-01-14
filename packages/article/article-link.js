@@ -11,8 +11,8 @@ const linkStyles = {
 };
 
 const ArticleLink = props => (
-  <TextLink url={props.href} onPress={() => {}} style={linkStyles}>
-    {props.linkText}
+  <TextLink url={props.url} onPress={props.onPress} style={linkStyles}>
+    {props.children}
   </TextLink>
 );
 
@@ -20,4 +20,7 @@ ArticleLink.defaultProps = {
   ...TextLink.defaultProps
 };
 
+ArticleLink.propTypes = {
+  ...TextLink.propTypes
+};
 export default ArticleLink;

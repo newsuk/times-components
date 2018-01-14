@@ -12,7 +12,10 @@ const Link = ({ index, url, onPress, children, responsivelinkStyles }) => {
   const Wrapper =
     responsivelinkStyles !== null ? RespLink(responsivelinkStyles) : "a";
 
-  const style = responsivelinkStyles !== null ? {textDecoration: "underline"}:{textDecoration: "none"};
+  const style =
+    responsivelinkStyles !== null
+      ? { textDecoration: "underline" }
+      : { textDecoration: "none" };
 
   return (
     <Wrapper key={index} href={url} onClick={onPress} style={style}>
@@ -28,11 +31,13 @@ Link.propTypes = {
   responsivelinkStyles: PropTypes.shape({
     base: PropTypes.string,
     medium: PropTypes.string
-  })
+  }),
+  index: PropTypes.string
 };
 
 Link.defaultProps = {
-  responsivelinkStyles: null
+  responsivelinkStyles: null,
+  index: "0"
 };
 
 export default Link;
