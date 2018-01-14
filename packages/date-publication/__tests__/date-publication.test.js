@@ -20,7 +20,7 @@ function gmtTests(userTimezone) {
     global.Intl = realIntl;
   });
 
-  it("renders a DatePublication component with Times publication and Relevant GMT date", () => {
+  it("renders a DatePublication component with Times publication and relevant GMT date", () => {
     const tree = renderer
       .create(
         <DatePublication date="2017-01-01T14:32:00.000Z" publication="TIMES" />
@@ -29,14 +29,14 @@ function gmtTests(userTimezone) {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders a DatePublication component with default publication and Relevant GMT date", () => {
+  it("renders a DatePublication component with default publication and relevant GMT date", () => {
     const tree = renderer
       .create(<DatePublication date="2017-01-01T14:32:00.000Z" />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders a DatePublication component with default publication and Relevant BST date", () => {
+  it("renders a DatePublication component with default publication and relevant BST date", () => {
     const tree = renderer
       .create(<DatePublication date="2017-07-01T14:32:00.000Z" />)
       .toJSON();
@@ -44,10 +44,10 @@ function gmtTests(userTimezone) {
   });
 }
 
-describe("when the user have the same timezone as London timezone", () => {
+describe("when the user has the same time zone as London time zone", () => {
   gmtTests("Europe/London");
 });
 
-describe("when the user have a different timezone than London timezone", () => {
+describe("when the user has a different time zone than London time zone", () => {
   gmtTests("Europe/Kiev");
 });
