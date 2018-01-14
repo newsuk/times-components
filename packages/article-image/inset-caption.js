@@ -3,12 +3,9 @@ import React from "react";
 import Caption from "@times-components/caption";
 
 const captionStyle = {
-  priamry: {
-    container: {
-      paddingLeft: 10
-    }
-  },
-  inline: {}
+  container: {
+    paddingLeft: 10
+  }
 };
 
 const CaptionComponentPrimaryNative = ({ caption, credits }) => (

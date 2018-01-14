@@ -76,18 +76,19 @@ const imageStyles = `
 
 export const SecondaryImg = withResponsiveStyles(View, {
   base: () => `
-              ${imageStyles}
-              padding-bottom: 25px;
-              `,
+    ${imageStyles}
+    padding-bottom: 25px;
+  `,
   mediumUp: () => config.mediumBpPositioning,
   wideUp: () => `width: ${config.wideBpWidth};`
 });
 
 export const InlineImg = withResponsiveStyles(View, {
-  base: () => `${imageStyles}
-              padding-bottom: 0px;
-              display:block;
-              `,
+  base: () => `
+    ${imageStyles}
+    padding-bottom: 0;
+    display:block;
+  `,
   mediumUp: () => config.mediumBpPositioning,
   wideUp: () => `width: ${config.wideBpWidth};`
 });

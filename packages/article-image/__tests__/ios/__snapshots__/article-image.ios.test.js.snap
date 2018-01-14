@@ -195,7 +195,9 @@ exports[`Article Image test on ios does not render Article Image if ratio is not
             Object {
               "paddingTop": 10,
             },
-            undefined,
+            Object {
+              "paddingLeft": 10,
+            },
           ]
         }
       >
@@ -837,7 +839,9 @@ exports[`Article Image test on ios renders primary image correctly 1`] = `
             Object {
               "paddingTop": 10,
             },
-            undefined,
+            Object {
+              "paddingLeft": 10,
+            },
           ]
         }
       >

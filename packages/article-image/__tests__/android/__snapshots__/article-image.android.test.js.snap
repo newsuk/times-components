@@ -228,7 +228,9 @@ exports[`Article Image test on android does not render Article Image if ratio is
             Object {
               "paddingTop": 10,
             },
-            undefined,
+            Object {
+              "paddingLeft": 10,
+            },
           ]
         }
       >
@@ -1002,7 +1004,9 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
             Object {
               "paddingTop": 10,
             },
-            undefined,
+            Object {
+              "paddingLeft": 10,
+            },
           ]
         }
       >
