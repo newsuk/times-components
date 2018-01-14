@@ -1,7 +1,6 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 import Ad from "@times-components/ad";
-import { TextLink } from "@times-components/link";
 import PullQuote from "@times-components/pull-quote";
 import renderTreeWithoutDefaults from "./render-tree-without-defaults";
 
@@ -13,12 +12,6 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     paddingTop: 10,
     paddingBottom: 10
-  },
-  link: {
-    fontFamily: "TimesDigitalW04-Regular",
-    fontSize: 18,
-    lineHeight: 30,
-    color: "#069"
   }
 });
 const defaultRenderers = {
@@ -50,18 +43,6 @@ const defaultRenderers = {
         content={attributes.content}
         caption={attributes.caption.name}
       />
-    );
-  },
-  link(key, attributes, renderedChildren) {
-    return (
-      <TextLink
-        key={key}
-        style={styles.link}
-        url={attributes.href}
-        onPress={() => null}
-      >
-        {renderedChildren}
-      </TextLink>
     );
   }
 };
