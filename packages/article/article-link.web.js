@@ -9,7 +9,6 @@ const responsivelinkStyles = {
       font-size: 17px;
       margin-bottom: 25px;
       margin-top: 0;
-      text-decoration: underline;
   `,
   medium: `
       font-size: 18px;
