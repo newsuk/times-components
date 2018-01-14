@@ -26,19 +26,20 @@ export const Paragraph = withResponsiveStyles("p", {
   `
 });
 
-export const LinkStyle = styled.a`
-  color: #069;
-  font-family: "TimesDigitalW04-Regular";
-  line-height: 26px;
-  font-size: 17px;
-  margin-bottom: 25px;
-  margin-top: 0;
-
-  @media (min-width: ${config.mediumBreakpoint}) {
+export const LinkStyle = withResponsiveStyles("a", {
+  base: () => `
+    color: #069;
+    font-family: "TimesDigitalW04-Regular";
+    line-height: 26px;
+    font-size: 17px;
+    margin-bottom: 25px;
+    margin-top: 0;
+`,
+  mediumUp: () => `
     font-size: 18px;
     line-height: 30px;
-  }
-`;
+  `
+});
 
 /* --- Lead Asset Styles --- */
 
