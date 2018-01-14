@@ -21,9 +21,6 @@ class DatePublication extends React.Component {
     };
   }
   componentDidMount() {
-    updateLabelState();
-  }
-  updateLabelState() {
     const dateUTC = getUTCTime(this.props.date);
     if (!isLondonTimezone()) {
       this.setState({ tz: isBST(dateUTC) ? " BST" : " GMT" }); // eslint-disable-line react/no-did-mount-set-state
