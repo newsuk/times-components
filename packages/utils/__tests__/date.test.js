@@ -1,9 +1,9 @@
 /* eslint-env jest */
 
-import { isBST, getUTCTime } from "../date-helper";
+import { isBST, getUTCTime } from "../date";
 
 describe("date helper", () => {
-  it("2017-11-17 00:01:00 should be GMT date", () => {
+  it("2017-11-17 00:01:00 should be a GMT date", () => {
     expect(isBST(getUTCTime("2017-11-17T00:01:00.000Z"))).toEqual(false);
   });
 
