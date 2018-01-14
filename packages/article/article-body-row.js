@@ -68,7 +68,14 @@ const ArticleRow = props => {
       );
     },
     link(key, attributes, children) {
-      return <ArticleLink href={attributes.href} linkText={children} />;
+      return (
+        <ArticleLink
+          key={index}
+          uuid={index}
+          href={attributes.href}
+          linkText={children}
+        />
+      );
     }
   });
 };

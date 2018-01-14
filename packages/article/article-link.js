@@ -11,14 +11,10 @@ const linkStyles = {
 };
 
 const ArticleLink = props => (
-    <TextLink
-      url={props.href}
-      onPress={() => {}}
-      style={linkStyles}
-    >
-        {props.linkText}
-    </TextLink>
-  );
+  <TextLink url={props.href} onPress={() => {}} style={linkStyles}>
+    {props.linkText}
+  </TextLink>
+);
 
 ArticleLink.defaultProps = {
   ...TextLink.defaultProps

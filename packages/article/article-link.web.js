@@ -9,6 +9,7 @@ const responsivelinkStyles = {
       font-size: 17px;
       margin-bottom: 25px;
       margin-top: 0;
+      text-decoration: underline;
   `,
   medium: `
       font-size: 18px;
@@ -17,14 +18,15 @@ const responsivelinkStyles = {
 };
 
 const ArticleLink = props => (
-    <Link
-      url={props.href}
-      onPress={() => {}}
-      responsivelinkStyles={responsivelinkStyles}
-    >
-      {props.linkText}
-    </Link>
-  );
+  <Link
+    index={`link-${props.uuid}`}
+    url={props.href}
+    onPress={() => {}}
+    responsivelinkStyles={responsivelinkStyles}
+  >
+    {props.linkText}
+  </Link>
+);
 
 ArticleLink.defaultProps = {
   ...Link.defaultProps

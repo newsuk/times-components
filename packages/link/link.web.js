@@ -8,12 +8,14 @@ const RespLink = responsivelinkStyles =>
     mediumUp: () => `${responsivelinkStyles.medium}`
   });
 
-const Link = ({ url, onPress, children, responsivelinkStyles }) => {
+const Link = ({ index, url, onPress, children, responsivelinkStyles }) => {
   const Wrapper =
     responsivelinkStyles !== null ? RespLink(responsivelinkStyles) : "a";
 
+  const style = responsivelinkStyles !== null ? {textDecoration: "underline"}:{textDecoration: "none"};
+
   return (
-    <Wrapper href={url} onClick={onPress} style={{ textDecoration: "none" }}>
+    <Wrapper key={index} href={url} onClick={onPress} style={style}>
       {children}
     </Wrapper>
   );
