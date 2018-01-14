@@ -7941,7 +7941,9 @@ exports[`Article test on android renders full article 1`] = `
                     Object {
                       "paddingTop": 10,
                     },
-                    undefined,
+                    Object {
+                      "paddingLeft": 10,
+                    },
                   ]
                 }
               >
@@ -8069,7 +8071,7 @@ exports[`Article test on android renders full article 1`] = `
       style={null}
     >
       <View
-        className="sc-gqjmRU hUWxPm"
+        className="sc-gqjmRU cFXQwg"
       >
         <View
           style={

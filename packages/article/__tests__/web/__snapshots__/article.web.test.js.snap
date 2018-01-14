@@ -5793,7 +5793,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
   flex-wrap: nowrap;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
   display: block;
 }
 
@@ -6908,7 +6908,7 @@ exports[`Article test on web renders full article 1`] = `
   flex-wrap: nowrap;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
   display: block;
 }
 
