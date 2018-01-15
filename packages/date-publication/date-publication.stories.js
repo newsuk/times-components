@@ -4,7 +4,7 @@ import { storiesOf } from "dextrose/storiesOfOverloader";
 import DatePublication from "./date-publication";
 
 const props = {
-  date: new Date("2017-07-01T14:32:00.000Z"),
+  date: "2017-07-01T14:32:00.000Z",
   publication: "SUNDAYTIMES"
 };
 

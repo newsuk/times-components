@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.26.0"></a>
+# [0.26.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.25.2...@times-components/article@0.26.0) (2018-01-15)
+
+
+### Features
+
+* add time zone support to DatePublication ([#525](https://github.com/newsuk/times-components/issues/525)) ([444c148](https://github.com/newsuk/times-components/commit/444c148))
+
+
+
+
+<a name="0.25.2"></a>
+## [0.25.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.25.1...@times-components/article@0.25.2) (2018-01-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.25.1"></a>
+## [0.25.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.25.0...@times-components/article@0.25.1) (2018-01-15)
+
+
+### Bug Fixes
+
+* add link rendering in article body ([#507](https://github.com/newsuk/times-components/issues/507)) ([a108d8f](https://github.com/newsuk/times-components/commit/a108d8f))
+
+
+
+
 <a name="0.25.0"></a>
 # [0.25.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.24.20...@times-components/article@0.25.0) (2018-01-15)
 

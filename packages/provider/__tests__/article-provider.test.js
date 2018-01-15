@@ -3,7 +3,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import { MockedProvider } from "@times-components/utils/graphql";
-// eslint-disable-next-line import/no-unresolved
 import { addTypenameToDocument } from "apollo-utilities";
 import { ArticleProvider } from "../provider";
 import { query as articleQuery } from "../article";

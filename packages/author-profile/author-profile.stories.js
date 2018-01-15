@@ -2,7 +2,10 @@ import React from "react";
 import { storiesOf } from "dextrose/storiesOfOverloader";
 import { decorateAction } from "@storybook/addon-actions";
 import { AuthorProfileProvider } from "@times-components/provider";
-import { MockedProvider } from "@times-components/utils/graphql";
+import {
+  MockedProvider,
+  fragmentMatcher
+} from "@times-components/utils/graphql";
 import storybookReporter from "@times-components/tealium/storybook";
 import {
   makeAuthor,
@@ -11,6 +14,10 @@ import {
   makeMocksWithAuthorError,
   makeMocksWithPageError
 } from "@times-components/provider/fixtures/author-profile/fixture-generator";
+import { ApolloProvider } from "react-apollo-temp";
+import { ApolloClient } from "apollo-client";
+import { HttpLink } from "apollo-link-http";
+import { InMemoryCache } from "apollo-cache-inmemory";
 import AuthorProfile from "./author-profile";
 
 const preventDefaultedAction = decorateAction([
@@ -147,18 +154,39 @@ storiesOf("AuthorProfile", module)
       analyticsStream: storybookReporter
     };
 
-    return (
-      <MockedProvider mocks={makeArticleMocks({ withImages: true, pageSize })}>
-        <AuthorProfileProvider slug={slug}>
-          {({ author, isLoading, error }) => (
-            <AuthorProfile
-              author={author}
-              isLoading={isLoading}
-              error={error}
-              {...props}
-            />
-          )}
-        </AuthorProfileProvider>
-      </MockedProvider>
+    const withProvider = child => {
+      const uri = process.env.STORYBOOK_ENDPOINT;
+
+      if (uri) {
+        const client = new ApolloClient({
+          link: new HttpLink({ uri }),
+          cache: new InMemoryCache({
+            fragmentMatcher
+          })
+        });
+
+        return <ApolloProvider client={client}>{child}</ApolloProvider>;
+      }
+
+      return (
+        <MockedProvider
+          mocks={makeArticleMocks({ withImages: true, pageSize })}
+        >
+          {child}
+        </MockedProvider>
+      );
+    };
+
+    return withProvider(
+      <AuthorProfileProvider slug={slug}>
+        {({ author, isLoading, error }) => (
+          <AuthorProfile
+            author={author}
+            isLoading={isLoading}
+            error={error}
+            {...props}
+          />
+        )}
+      </AuthorProfileProvider>
     );
   });

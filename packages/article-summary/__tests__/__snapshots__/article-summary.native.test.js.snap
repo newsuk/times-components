@@ -78,7 +78,7 @@ exports[`renders an article-summary component with a single paragraph 1`] = `
     }
     testID="datePublication"
   >
-    Saturday July 01 2017, The Times
+    Friday November 17 2017, 12:01am, The Times
   </Text>
 </View>
 `;
@@ -235,7 +235,7 @@ exports[`renders an article-summary component with content including line breaks
     }
     testID="datePublication"
   >
-    Saturday July 01 2017, The Sunday Times
+    Saturday July 01 2017, 03:32pm, The Sunday Times
   </Text>
 </View>
 `;
@@ -333,7 +333,7 @@ exports[`renders an article-summary component with empty content at the end trim
     }
     testID="datePublication"
   >
-    Saturday July 01 2017, The Sunday Times
+    Saturday July 01 2017, 03:32pm, The Sunday Times
   </Text>
 </View>
 `;
@@ -406,7 +406,7 @@ exports[`renders an article-summary component with headline and no content 1`] =
     }
     testID="datePublication"
   >
-    Saturday July 01 2017, The Sunday Times
+    Saturday July 01 2017, 03:32pm, The Sunday Times
   </Text>
 </View>
 `;
@@ -497,7 +497,7 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
     }
     testID="datePublication"
   >
-    Saturday July 01 2017, The Times
+    Friday November 17 2017, 12:01am, The Times
   </Text>
 </View>
 `;

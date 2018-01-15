@@ -642,7 +642,7 @@ exports[`Article test on ios renders article no flags 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -1641,7 +1641,7 @@ exports[`Article test on ios renders article no label 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -2500,7 +2500,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -3339,7 +3339,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -4350,7 +4350,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -5221,7 +5221,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -6200,7 +6200,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -6553,11 +6553,26 @@ exports[`Article test on ios renders full article 1`] = `
               "name": "text",
             },
             Object {
+              "attributes": Object {
+                "href": "https://www.thetimes.co.uk/article/peers-call-for-action-after-liam-allan-trial-blunder-vnzn0sz89",
+              },
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "police disclosure of evidence",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "link",
+            },
+            Object {
               "attributes": Object {},
               "children": Array [
                 Object {
                   "attributes": Object {
-                    "value": "Telegraph ",
+                    "value": " Telegraph ",
                   },
                   "children": Array [],
                   "name": "text",
@@ -7315,7 +7330,7 @@ exports[`Article test on ios renders full article 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -7352,6 +7367,31 @@ exports[`Article test on ios renders full article 1`] = `
         >
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
+            accessibilityRole="link"
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            href="https://www.thetimes.co.uk/article/peers-call-for-action-after-liam-allan-trial-blunder-vnzn0sz89"
+            onPress={[Function]}
+            style={
+              Array [
+                Object {
+                  "textDecorationLine": "underline",
+                },
+                Object {
+                  "color": "#069",
+                  "fontFamily": "TimesDigitalW04-Regular",
+                  "fontSize": 17,
+                  "lineHeight": 26,
+                  "marginBottom": 25,
+                  "marginTop": 0,
+                },
+              ]
+            }
+          >
+            police disclosure of evidence
+          </Text>
+          <Text
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
@@ -7361,7 +7401,7 @@ exports[`Article test on ios renders full article 1`] = `
               }
             }
           >
-            Telegraph 
+             Telegraph 
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text

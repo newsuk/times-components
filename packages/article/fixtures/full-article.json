@@ -51,13 +51,29 @@
               "children": []
             },
             {
+              "name": "link",
+              "attributes": {
+                "href":
+                  "https://www.thetimes.co.uk/article/peers-call-for-action-after-liam-allan-trial-blunder-vnzn0sz89"
+              },
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value": "police disclosure of evidence"
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
               "name": "italic",
               "attributes": {},
               "children": [
                 {
                   "name": "text",
                   "attributes": {
-                    "value": "Telegraph "
+                    "value": " Telegraph "
                   },
                   "children": []
                 }

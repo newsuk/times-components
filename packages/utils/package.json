@@ -1,6 +1,6 @@
 {
   "name": "@times-components/utils",
-  "version": "0.0.11",
+  "version": "0.1.0",
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "scripts": {
     "make-schema": "node ./scripts/fetch-gql-schema",
@@ -23,7 +23,7 @@
       "node_modules/(?!@times-components)/"
     ],
     "testMatch": [
-      "<rootDir>/packages/utils/*.test.js"
+      "<rootDir>/packages/utils/__tests__/*.test.js"
     ]
   },
   "repository": {
@@ -51,8 +51,8 @@
     "prettier": "1.8.2"
   },
   "dependencies": {
-    "apollo-cache-inmemory": "1.1.1",
-    "apollo-client": "2.0.3",
+    "apollo-cache-inmemory": "1.1.5",
+    "apollo-client": "2.2.0",
     "graphql": "0.11.7",
     "prop-types": "15.6.0",
     "react": "16.2.0",

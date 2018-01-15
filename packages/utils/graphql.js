@@ -7,7 +7,7 @@ import { MockLink } from "react-apollo-temp/lib/test-links";
 import {
   InMemoryCache as Cache,
   IntrospectionFragmentMatcher
-} from "apollo-cache-inmemory"; // eslint-disable-line import/no-unresolved
+} from "apollo-cache-inmemory";
 import PropTypes from "prop-types";
 import introspectionResult from "./schema.json";
 

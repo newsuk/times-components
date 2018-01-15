@@ -4,6 +4,7 @@ import { renderTrees } from "@times-components/markup";
 import ArticleImage from "@times-components/article-image";
 import PullQuote from "@times-components/pull-quote";
 import BodyParagraph from "./article-body-paragraph";
+import ArticleLink from "./article-link";
 import PullQuoteWrapper from "./article-body-pullquote-wrapper.web";
 
 import {
@@ -60,6 +61,18 @@ const ArticleRow = ({ content: { data, index } }) =>
             twitter={twitter}
           />
         </PullQuoteWrapper>
+      );
+    },
+    link(key, attributes, children) {
+      return (
+        <ArticleLink
+          key={index}
+          uuid={index}
+          onPress={() => {}}
+          url={attributes.href}
+        >
+          {children}
+        </ArticleLink>
       );
     }
   });
