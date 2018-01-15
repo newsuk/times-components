@@ -7,7 +7,6 @@ import { ArticleProvider } from "@times-components/provider";
 import { MockedProvider } from "@times-components/utils/graphql";
 import { addTypenameToDocument } from "apollo-utilities";
 import { query as articleQuery } from "@times-components/provider/article";
-import { withTrackingContext } from "@times-components/tracking";
 import storybookReporter from "@times-components/tealium/storybook";
 import Article from "./article";
 
@@ -165,15 +164,4 @@ storiesOf("Article", module)
       {...articleFixtureNoLeadAsset.data}
       analyticsStream={storybookReporter}
     />
-  ))
-  .add("Tracking", () => {
-    const ArticleWithTrackingContext = withTrackingContext(Article, {
-      trackingObject: "Story"
-    });
-    return (
-      <ArticleWithTrackingContext
-        {...fullArticleFixture.data}
-        analyticsStream={storybookReporter}
-      />
-    );
-  });
+  ));
