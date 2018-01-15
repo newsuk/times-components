@@ -17,10 +17,7 @@ const ArticleMeta = ({ byline, publishedTime, publicationName }) => (
     {ArticleMetaRow(styles.byline, <ArticleByline ast={byline} />)}
     {ArticleMetaRow(
       styles.datePublication,
-      <DatePublication
-        date={new Date(publishedTime)}
-        publication={publicationName}
-      />
+      <DatePublication date={publishedTime} publication={publicationName} />
     )}
   </Meta>
 );

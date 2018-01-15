@@ -23,7 +23,7 @@
       "node_modules/(?!@times-components)/"
     ],
     "testMatch": [
-      "<rootDir>/packages/utils/*.test.js"
+      "<rootDir>/packages/utils/__tests__/*.test.js"
     ]
   },
   "repository": {

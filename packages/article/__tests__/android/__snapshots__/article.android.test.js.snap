@@ -683,7 +683,7 @@ exports[`Article test on android renders article no flags 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -1727,7 +1727,7 @@ exports[`Article test on android renders article no label 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -2631,7 +2631,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -3514,7 +3514,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -4572,7 +4572,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -5490,7 +5490,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -6513,7 +6513,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -7691,7 +7691,7 @@ exports[`Article test on android renders full article 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>

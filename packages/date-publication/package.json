@@ -21,7 +21,7 @@
       "node_modules/(?!@times-components)/"
     ],
     "testMatch": [
-      "<rootDir>/packages/date-publication/**.test.js"
+      "<rootDir>/packages/date-publication/__tests__/*.test.js"
     ]
   },
   "repository": {
@@ -52,8 +52,6 @@
     "babel-preset-flow": "6.23.0",
     "babel-preset-react-native": "1.9.2",
     "dextrose": "1.2.14",
-    "enzyme": "3.2.0",
-    "enzyme-adapter-react-16": "1.1.0",
     "eslint": "4.9.0",
     "flow-bin": "0.42.0",
     "jest": "21.2.1",
@@ -65,6 +63,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
+    "@times-components/utils": "0.0.11",
     "date-fns": "1.28.5",
     "prop-types": "15.6.0"
   },
