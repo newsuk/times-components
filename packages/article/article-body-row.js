@@ -4,6 +4,7 @@ import { renderTrees } from "@times-components/markup";
 import ArticleImage from "@times-components/article-image";
 import PullQuote from "@times-components/pull-quote";
 import BodyParagraph from "./article-body-paragraph";
+import ArticleLink from "./article-link";
 
 import {
   PrimaryImg,
@@ -64,6 +65,18 @@ const ArticleRow = props => {
             />
           </PullQuoteResp>
         </PullQuoteContainer>
+      );
+    },
+    link(key, attributes, children) {
+      return (
+        <ArticleLink
+          key={index}
+          uuid={index}
+          onPress={() => {}}
+          url={attributes.href}
+        >
+          {children}
+        </ArticleLink>
       );
     }
   });

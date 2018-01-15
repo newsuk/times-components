@@ -6873,11 +6873,26 @@ exports[`Article test on android renders full article 1`] = `
               "name": "text",
             },
             Object {
+              "attributes": Object {
+                "href": "https://www.thetimes.co.uk/article/peers-call-for-action-after-liam-allan-trial-blunder-vnzn0sz89",
+              },
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "police disclosure of evidence",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "link",
+            },
+            Object {
               "attributes": Object {},
               "children": Array [
                 Object {
                   "attributes": Object {
-                    "value": "Telegraph ",
+                    "value": " Telegraph ",
                   },
                   "children": Array [],
                   "name": "text",
@@ -7714,6 +7729,31 @@ exports[`Article test on android renders full article 1`] = `
         >
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
+            accessibilityRole="link"
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            href="https://www.thetimes.co.uk/article/peers-call-for-action-after-liam-allan-trial-blunder-vnzn0sz89"
+            onPress={[Function]}
+            style={
+              Array [
+                Object {
+                  "textDecorationLine": "underline",
+                },
+                Object {
+                  "color": "#069",
+                  "fontFamily": "TimesDigitalW04-Regular",
+                  "fontSize": 17,
+                  "lineHeight": 26,
+                  "marginBottom": 25,
+                  "marginTop": 0,
+                },
+              ]
+            }
+          >
+            police disclosure of evidence
+          </Text>
+          <Text
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
@@ -7723,7 +7763,7 @@ exports[`Article test on android renders full article 1`] = `
               }
             }
           >
-            Telegraph 
+             Telegraph 
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text
@@ -7792,7 +7832,7 @@ exports[`Article test on android renders full article 1`] = `
       style={null}
     >
       <View
-        className="sc-gZMcBi cFanlN"
+        className="sc-gqjmRU gcKeOi"
       >
         <View
           style={
@@ -8071,7 +8111,7 @@ exports[`Article test on android renders full article 1`] = `
       style={null}
     >
       <View
-        className="sc-gqjmRU cFXQwg"
+        className="sc-VigVT hYqJpB"
       >
         <View
           style={
