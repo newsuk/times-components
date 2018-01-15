@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.16.17"></a>
+## [0.16.17](https://github.com/newsuk/times-components/compare/@times-components/card@0.16.15...@times-components/card@0.16.17) (2018-01-11)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.16.16"></a>
+## [0.16.16](https://github.com/newsuk/times-components/compare/@times-components/card@0.16.15...@times-components/card@0.16.16) (2018-01-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.16.15"></a>
+## [0.16.15](https://github.com/newsuk/times-components/compare/@times-components/card@0.16.13...@times-components/card@0.16.15) (2018-01-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.16.14"></a>
+## [0.16.14](https://github.com/newsuk/times-components/compare/@times-components/card@0.16.13...@times-components/card@0.16.14) (2018-01-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.16.13"></a>
+## [0.16.13](https://github.com/newsuk/times-components/compare/@times-components/card@0.16.12...@times-components/card@0.16.13) (2018-01-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.16.12"></a>
+## [0.16.12](https://github.com/newsuk/times-components/compare/@times-components/card@0.16.10...@times-components/card@0.16.12) (2018-01-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.16.11"></a>
+## [0.16.11](https://github.com/newsuk/times-components/compare/@times-components/card@0.16.10...@times-components/card@0.16.11) (2018-01-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
 <a name="0.16.10"></a>
 ## [0.16.10](https://github.com/newsuk/times-components/compare/@times-components/card@0.16.9...@times-components/card@0.16.10) (2018-01-08)
 

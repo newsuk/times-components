@@ -2,12 +2,12 @@
 
 import React from "react";
 import { shallow, mount } from "enzyme";
+import authorProfileFixture from "@times-components/provider/fixtures/author-profile/author-profile.json";
+import articleListWithImagesFixture from "@times-components/provider/fixtures/author-profile/article-list-with-images.json";
 import test from "./author-profile-helper";
 import AuthorProfile from "../author-profile";
 import AuthorProfileItem from "../author-profile-item";
 import AuthorProfileContent from "../author-profile-content.web.js";
-import authorProfileFixture from "../fixtures/author-profile.json";
-import articleListWithImagesFixture from "../fixtures/article-list-with-images.json";
 import pagedResult from "./paged-result";
 
 const delay = ms => new Promise(res => setTimeout(res, ms));

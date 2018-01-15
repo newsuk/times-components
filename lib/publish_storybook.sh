@@ -36,7 +36,7 @@ git commit -m "Deploy Storybook to GitHub Pages"
 # /dev/null to hide any sensitive credential data that might otherwise be exposed.
 git push --force --quiet origin master:gh-pages > /dev/null 2>&1
 cd ..
-rm -rf storybook:build
+rm -rf storybook-static;
 
 echo ""
 echo "=> Storybook deployed"

@@ -1,8 +1,8 @@
 // eslint-disable-next-line import/no-unresolved
 import { addTypenameToDocument } from "apollo-utilities";
-import { query as authorProfileQuery } from "@times-components/provider/author-profile";
-import { query as articleListWithImagesQuery } from "@times-components/provider/author-articles-with-images";
-import { query as articleListNoImagesQuery } from "@times-components/provider/author-articles-no-images";
+import { query as authorProfileQuery } from "../../author-profile";
+import { query as articleListWithImagesQuery } from "../../author-articles-with-images";
+import { query as articleListNoImagesQuery } from "../../author-articles-no-images";
 import authorProfileFixture from "./author-profile.json";
 import articleListWithImagesFixture from "./article-list-with-images.json";
 import articleListNoImagesFixture from "./article-list-no-images.json";
@@ -50,9 +50,7 @@ export const makeArticleList = (
   };
 };
 
-const delay = 1000;
-
-const makeAuthorMock = ({ count, withImages, slug }) => ({
+const makeAuthorMock = ({ count, withImages, slug, delay = 1000 }) => ({
   delay,
   request: {
     query: addTypenameToDocument(authorProfileQuery),
@@ -98,7 +96,8 @@ export const makeArticleMocks = (
     count = 20,
     pageSize = 5,
     withImages = false,
-    slug = "deborah-haynes"
+    slug = "deborah-haynes",
+    delay = 1000
   } = {},
   transform
 ) => [

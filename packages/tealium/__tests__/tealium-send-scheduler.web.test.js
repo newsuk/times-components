@@ -13,21 +13,58 @@ describe("TealiumSendScheduler", () => {
   const realUtag = global.window.utag;
   let sendScheduler;
 
+  beforeEach(() => {
+    TealiumSendScheduler.scriptInjected = false;
+    TealiumSendScheduler.scriptLoaded = false;
+  });
+
   afterEach(() => {
+    const utags = global.window.document.querySelectorAll(
+      'script[src*="utag.js"]'
+    );
+    utags.forEach(utag => utag.remove());
+
     global.window.utag = realUtag;
   });
 
   describe("inject utag", () => {
-    beforeEach(() => {
-      TealiumSendScheduler.scriptInjected = false;
-      TealiumSendScheduler.scriptLoaded = false;
+    it("throws if not given an env", () => {
+      const makeTealiumScheduler = () =>
+        new TealiumSendScheduler(
+          {
+            ...trackingOptions,
+            env: undefined
+          },
+          global.window,
+          global.window.document
+        );
+      expect(makeTealiumScheduler).toThrowErrorMatchingSnapshot();
     });
 
-    afterEach(() => {
-      const utags = global.window.document.querySelectorAll(
-        'script[src*="utag.js"]'
-      );
-      utags.forEach(utag => utag.remove());
+    it("throws if not given a profile", () => {
+      const makeTealiumScheduler = () =>
+        new TealiumSendScheduler(
+          {
+            ...trackingOptions,
+            profile: undefined
+          },
+          global.window,
+          global.window.document
+        );
+      expect(makeTealiumScheduler).toThrowErrorMatchingSnapshot();
+    });
+
+    it("throws if not given an account", () => {
+      const makeTealiumScheduler = () =>
+        new TealiumSendScheduler(
+          {
+            ...trackingOptions,
+            account: undefined
+          },
+          global.window,
+          global.window.document
+        );
+      expect(makeTealiumScheduler).toThrowErrorMatchingSnapshot();
     });
 
     it("injects utag script", () => {
@@ -62,9 +99,7 @@ describe("TealiumSendScheduler", () => {
 
     it("does not inject utag when tracking is not enabled", () => {
       // eslint-disable-next-line no-new
-      new TealiumSendScheduler(
-        Object.assign(trackingOptions, { enabled: false })
-      );
+      new TealiumSendScheduler({ ...trackingOptions, enabled: false });
       expect(
         global.window.document.querySelector('script[src*="utag.js"]')
       ).toBeNull();
@@ -84,15 +119,21 @@ describe("TealiumSendScheduler", () => {
   describe("utag loaded", () => {
     const realRequestIdleCallback = global.window.requestIdleCallback;
 
-    beforeEach(() => {
+    const setup = () => {
       global.window.tealiumTrack = jest.fn();
-      TealiumSendScheduler.scriptLoaded = true;
+
       sendScheduler = new TealiumSendScheduler(
         trackingOptions,
         global.window,
         global.window.document
       );
-    });
+
+      const utag = global.window.document.querySelector(
+        'script[src*="utag.js"]'
+      );
+
+      utag.onload();
+    };
 
     afterEach(() => {
       global.window.requestIdleCallback = realRequestIdleCallback;
@@ -101,7 +142,9 @@ describe("TealiumSendScheduler", () => {
 
     it("schedules sending events during idle time", () => {
       global.window.requestIdleCallback = jest.fn();
-      sendScheduler.scheduleSendEvents();
+
+      setup();
+
       expect(global.window.requestIdleCallback).toHaveBeenCalledWith(
         sendScheduler.sendEvents,
         { timeout: 2000 }
@@ -110,56 +153,90 @@ describe("TealiumSendScheduler", () => {
 
     it("does not schedule multiple sends", () => {
       global.window.requestIdleCallback = jest.fn();
-      sendScheduler.scheduleSendEvents();
-      sendScheduler.scheduleSendEvents();
+
+      setup();
+
+      sendScheduler.enqueue();
+
       expect(global.window.requestIdleCallback).toHaveBeenCalledTimes(1);
     });
 
-    it("schedules sending events using timeout when idle callback is not available", () => {
+    it("sends events", done => {
+      setup();
+
+      const e = { component: "Page" };
+
+      sendScheduler.enqueue(e);
+
+      global.window.setTimeout(() => {
+        expect(global.window.tealiumTrack).toHaveBeenCalledWith(e);
+        done();
+      }, 0);
+    });
+
+    it("schedules sending events using timeout when idle callback is not available", done => {
       if (global.window.requestIdleCallback) {
         delete global.window.requestIdleCallback;
       }
       const spy = jest.spyOn(global.window, "setTimeout");
-      sendScheduler.scheduleSendEvents();
+
+      setup();
+
       expect(spy).toHaveBeenCalled();
+
+      global.window.setTimeout(() => {
+        expect(global.window.tealiumTrack).not.toHaveBeenCalled();
+        done();
+      }, 0);
     });
 
-    it("sends events", () => {
-      const e = { component: "Page" };
-      sendScheduler.queue.push(e);
-      sendScheduler.sendEvents({ timeRemaining: () => 50 });
-      expect(global.window.tealiumTrack).toHaveBeenCalledWith(e);
+    it("sends multiple events", done => {
+      setup();
+
+      const e1 = { component: "Page1" };
+      const e2 = { component: "Page2" };
+
+      sendScheduler.enqueue(e1);
+      sendScheduler.enqueue(e2);
+
+      global.window.setTimeout(() => {
+        expect(global.window.tealiumTrack).toHaveBeenCalledTimes(2);
+        done();
+      }, 0);
     });
 
-    it("sends multiple events", () => {
-      sendScheduler.queue.push(
-        { component: "Pagination" },
-        { component: "Pagination" }
-      );
-      sendScheduler.sendEvents({ timeRemaining: () => 50 });
-      expect(global.window.tealiumTrack).toHaveBeenCalledTimes(2);
+    it("does not throw if tealium track is not a function", done => {
+      setup();
+
+      global.window.tealiumTrack = null;
+
+      sendScheduler.enqueue();
+
+      global.window.setTimeout(done, 0);
     });
 
-    it("sends at least 1 event", () => {
-      sendScheduler.queue.push({ component: "Pagination" });
-      sendScheduler.sendEvents({ timeRemaining: () => 0 });
-      expect(global.window.tealiumTrack).toHaveBeenCalledTimes(1);
-    });
+    it("sends more events if they cannot be sent in time", done => {
+      setup();
 
-    it("does not attempt to send event when nothing is in queue", () => {
-      sendScheduler.sendEvents({ timeRemaining: () => 0 });
-      expect(global.window.tealiumTrack).not.toHaveBeenCalled();
-    });
+      const e1 = { component: "Page1" };
+      const e2 = { component: "Page2" };
 
-    it("schedules sending events when not all events sent in timeslot", () => {
-      const schedulerSpy = jest.spyOn(sendScheduler, "scheduleSendEvents");
-      sendScheduler.queue.push(
-        { component: "Pagination" },
-        { component: "Pagination" }
-      );
-      sendScheduler.sendEvents({ timeRemaining: () => 0 });
-      expect(global.window.tealiumTrack).toHaveBeenCalledTimes(1);
-      expect(schedulerSpy).toHaveBeenCalledTimes(1);
+      global.window.tealiumTrack = () => {
+        let count = 100000000;
+        while (count) {
+          count -= 1;
+        }
+      };
+
+      jest.spyOn(global.window, "tealiumTrack");
+
+      sendScheduler.enqueue(e1);
+      sendScheduler.enqueue(e2);
+
+      global.window.setTimeout(() => {
+        expect(global.window.tealiumTrack).toHaveBeenCalledTimes(2);
+        done();
+      }, 1000);
     });
   });
 });

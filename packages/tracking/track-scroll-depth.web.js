@@ -45,7 +45,7 @@ export default (
     }
 
     onObserved(observed = []) {
-      if (!this.context || !this.context.tracking) {
+      if (!this.context.tracking) {
         return;
       }
 
@@ -79,7 +79,7 @@ export default (
     observeChildren() {
       if (this.observer && this.childList)
         this.childList.forEach((props, index) => {
-          if (!this.childData.elementId) {
+          if (!this.childData[props.elementId]) {
             this.observeChild({
               ...props,
               index,

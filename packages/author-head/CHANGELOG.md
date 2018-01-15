@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.15.17"></a>
+## [0.15.17](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.15.16...@times-components/author-head@0.15.17) (2018-01-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.15.16"></a>
+## [0.15.16](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.15.14...@times-components/author-head@0.15.16) (2018-01-11)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.15.15"></a>
+## [0.15.15](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.15.14...@times-components/author-head@0.15.15) (2018-01-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.15.14"></a>
+## [0.15.14](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.15.13...@times-components/author-head@0.15.14) (2018-01-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.15.13"></a>
+## [0.15.13](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.15.12...@times-components/author-head@0.15.13) (2018-01-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.15.12"></a>
+## [0.15.12](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.15.10...@times-components/author-head@0.15.12) (2018-01-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.15.11"></a>
+## [0.15.11](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.15.10...@times-components/author-head@0.15.11) (2018-01-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
 <a name="0.15.10"></a>
 ## [0.15.10](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.15.9...@times-components/author-head@0.15.10) (2018-01-08)
 

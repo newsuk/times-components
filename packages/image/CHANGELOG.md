@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.11.0"></a>
+# [1.11.0](https://github.com/newsuk/times-components/compare/@times-components/image@1.10.4...@times-components/image@1.11.0) (2018-01-10)
+
+
+### Features
+
+* add modal image component ([#505](https://github.com/newsuk/times-components/issues/505)) ([46677a6](https://github.com/newsuk/times-components/commit/46677a6))
+
+
+
+
 <a name="1.10.4"></a>
 ## [1.10.4](https://github.com/newsuk/times-components/compare/@times-components/image@1.10.3...@times-components/image@1.10.4) (2018-01-08)
 

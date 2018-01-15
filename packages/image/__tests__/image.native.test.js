@@ -2,7 +2,7 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
-import Image from "../../image";
+import Image from "../image";
 
 export default () => {
   it("renders correctly", () => {
