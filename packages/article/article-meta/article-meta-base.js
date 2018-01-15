@@ -25,10 +25,7 @@ const ArticleMetaBase = ({
   ),
   ArticleMetaRow(
     styles.datePublication,
-    <DatePublication
-      date={publishedTime}
-      publication={publicationName}
-    />,
+    <DatePublication date={publishedTime} publication={publicationName} />,
     "articleDatePublication",
     RowWrapper
   )
