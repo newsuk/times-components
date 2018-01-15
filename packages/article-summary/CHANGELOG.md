@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.14.0"></a>
+# [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.13.13...@times-components/article-summary@0.14.0) (2018-01-15)
+
+
+### Features
+
+* add time zone support to DatePublication ([#525](https://github.com/newsuk/times-components/issues/525)) ([444c148](https://github.com/newsuk/times-components/commit/444c148))
+
+
+
+
 <a name="0.13.13"></a>
 ## [0.13.13](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.13.12...@times-components/article-summary@0.13.13) (2018-01-15)
 
