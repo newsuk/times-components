@@ -139,6 +139,55 @@ describe("WithTrackingContext", () => {
     );
   });
 
+  it("tracks page views when data is ready", () => {
+    const WithTrackingAndContext = withTrackingContext(TestComponent, {
+      trackingObject: "AuthorProfile",
+      isDataReady: () => true
+    });
+    const reporter = jest.fn();
+
+    renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
+
+    expect(reporter).toHaveBeenCalledWith(
+      expect.objectContaining({
+        object: "AuthorProfile",
+        action: "Viewed",
+        component: "Page"
+      })
+    );
+  });
+
+  it("doesnt track page views when data is not ready", () => {
+    const WithTrackingAndContext = withTrackingContext(TestComponent, {
+      trackingObject: "AuthorProfile",
+      isDataReady: () => false
+    });
+    const reporter = jest.fn();
+
+    renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
+
+    expect(reporter).not.toHaveBeenCalled();
+  });
+
+  it("only tracks page views when data is ready, with multiple updates", () => {
+    let isReady = false;
+    const WithTrackingAndContext = withTrackingContext(TestComponent, {
+      trackingObject: "AuthorProfile",
+      isDataReady: () => isReady
+    });
+    const reporter = jest.fn();
+    const testRenderer = renderer.create(
+      <WithTrackingAndContext analyticsStream={reporter} />
+    );
+    expect(reporter).not.toHaveBeenCalled();
+
+    isReady = true;
+    testRenderer.update(<WithTrackingAndContext analyticsStream={reporter} />);
+    testRenderer.update(<WithTrackingAndContext analyticsStream={reporter} />);
+
+    expect(reporter).toHaveBeenCalledTimes(1);
+  });
+
   /* This can occur if the child accidentally unmounts and is remounted */
   it("doesn't fire a second page view event if root element is re-rendered", () => {
     const WithTrackingAndContext = withTrackingContext(TestComponent, {
