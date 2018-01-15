@@ -7,5 +7,7 @@ android/*
 ios/*
 CHANGELOG.md
 .*
+!*.json
+**/package.json
 LICENSE
 yarn.lock
