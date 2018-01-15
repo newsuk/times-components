@@ -41,14 +41,14 @@ const withTrackingContext = (
     }
 
     componentDidMount() {
-      this.trackPageEvent(this.props);
+      this.attemptTrackPageEvent(this.props);
     }
 
     componentWillReceiveProps(nextProps) {
-      this.trackPageEvent(nextProps);
+      this.attemptTrackPageEvent(nextProps);
     }
 
-    trackPageEvent(props) {
+    attemptTrackPageEvent(props) {
       if (
         isDataReady(props) &&
         this.isRootTrackingContext() &&
