@@ -182,8 +182,9 @@ describe("WithTrackingContext", () => {
       isDataReady: () => isReady
     });
     const reporter = jest.fn();
-
-    testRenderer = renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
+    const testRenderer = renderer.create(
+      <WithTrackingAndContext analyticsStream={reporter} />
+    );
     expect(reporter).not.toHaveBeenCalled();
 
     isReady = true;
