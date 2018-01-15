@@ -1,6 +1,49 @@
 import React from "react";
-import ArticleHeaderBase from "./article-header.base";
+import PropTypes from "prop-types";
+import ArticleLabel from "@times-components/article-label";
+import { Text, View, ViewPropTypes } from "react-native";
 
-const ArticleHeader = props => <ArticleHeaderBase {...props} />;
+import HeaderFlags from "./article-header-flags";
+import HeaderStandfirst from "./article-header-standfirst";
+import styles from "../styles/article-header";
+
+const { style: ViewStylePropTypes } = ViewPropTypes;
+
+const HeaderLabel = ({ label }) => {
+  if (!label) return null;
+  return (
+    <View accessibilityLabel="label" testID="label" style={styles.articleLabel}>
+      <ArticleLabel title={label} color="#13354E" />
+    </View>
+  );
+};
+
+HeaderLabel.propTypes = {
+  label: PropTypes.string.isRequired
+};
+
+const ArticleHeader = ({ label, headline, standfirst, flags, style }) => (
+  <View style={[...style]}>
+    <HeaderLabel label={label} />
+    <Text style={styles.articleHeadLineText}>{headline}</Text>
+    <HeaderStandfirst standfirst={standfirst} />
+    <HeaderFlags flags={flags} />
+  </View>
+);
+
+ArticleHeader.propTypes = {
+  headline: PropTypes.string.isRequired,
+  label: PropTypes.string,
+  standfirst: PropTypes.string,
+  flags: PropTypes.arrayOf(PropTypes.string),
+  style: ViewStylePropTypes
+};
+
+ArticleHeader.defaultProps = {
+  label: null,
+  standfirst: null,
+  flags: [],
+  style: {}
+};
 
 export default ArticleHeader;
