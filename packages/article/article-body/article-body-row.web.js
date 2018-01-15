@@ -9,7 +9,7 @@ import PullQuoteWrapper from "./article-body-pullquote-wrapper.web";
 import {
   PrimaryImg,
   SecondaryImg,
-  InlineImg,
+  InlineImg
 } from "../styles/article-body/responsive";
 
 export const responsiveImageWrapper = imageType => {
@@ -50,7 +50,7 @@ const ArticleRow = ({ content: { data, index } }) => {
         </ImageWrapper>
       );
     },
-    pullQuote(key, { content, caption: { name, twitter }}) {
+    pullQuote(key, { content, caption: { name, twitter } }) {
       return (
         <PullQuoteWrapper key={key}>
           <PullQuote

@@ -32,7 +32,7 @@ const ArticleRow = ({ content: { data, index } }) => {
         </View>
       );
     },
-    pullQuote(key, { content, caption: { name, twitter }}) {
+    pullQuote(key, { content, caption: { name, twitter } }) {
       return (
         <View key={key}>
           <PullQuote
