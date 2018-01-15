@@ -8,8 +8,7 @@ import resolveAttrs from "./resolve-attrs";
 
 const withTrackingContext = (
   WrappedComponent,
-  // eslint-disable-next-line no-unused-vars
-  { getAttrs = () => ({}), trackingObject, isDataReady = props => true } = {}
+  { getAttrs = () => ({}), trackingObject, isDataReady = () => true } = {}
 ) => {
   const componentName = getDisplayName(WrappedComponent);
 
