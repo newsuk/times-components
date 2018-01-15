@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tracking",
-  "version": "0.5.14",
+  "version": "0.6.0",
   "main": "tracking",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.5.14...@times-components/tracking@0.6.0) (2018-01-15)
+
+
+### Features
+
+* will allow components to tell tracking to wait for data to be available ([192d00b](https://github.com/newsuk/times-components/commit/192d00b))
+
+
+
+
 <a name="0.5.14"></a>
 ## [0.5.14](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.5.13...@times-components/tracking@0.5.14) (2018-01-12)
 
