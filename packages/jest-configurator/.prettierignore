@@ -3,7 +3,6 @@
 dist
 lib
 __snapshots__
-**/package.json
 android/*
 ios/*
 CHANGELOG.md
