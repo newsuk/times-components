@@ -166,13 +166,7 @@ describe("WithTrackingContext", () => {
 
     renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
 
-    expect(reporter).not.toHaveBeenCalledWith(
-      expect.objectContaining({
-        object: "AuthorProfile",
-        action: "Viewed",
-        component: "Page"
-      })
-    );
+    expect(reporter).not.toHaveBeenCalled();
   });
 
   it("only tracks page views when data is ready, with multiple updates", () => {
