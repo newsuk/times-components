@@ -27,7 +27,7 @@ const HeaderLabel = ({ label }) => {
 };
 
 HeaderLabel.propTypes = {
-  label: PropTypes.string.isRequired
+  label: PropTypes.string
 };
 
 const ArticleHeader = ({ label, headline, standfirst, flags, style }) => (

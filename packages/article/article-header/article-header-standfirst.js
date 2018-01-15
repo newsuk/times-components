@@ -17,7 +17,7 @@ const HeaderStandfirst = ({ standfirst }) => {
 };
 
 HeaderStandfirst.propTypes = {
-  standfirst: PropTypes.string.isRequired
+  standfirst: PropTypes.string
 };
 
 export default HeaderStandfirst;
