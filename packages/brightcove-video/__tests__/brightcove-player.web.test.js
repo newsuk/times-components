@@ -1,5 +1,3 @@
-/* eslint-env jest, browser */
-
 import { View } from "react-native";
 import React from "react";
 import ReactDOM from "react-dom";

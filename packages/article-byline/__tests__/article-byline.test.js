@@ -1,4 +1,3 @@
-/* eslint-env jest */
 import "raf/polyfill";
 import "react-native";
 import React from "react";

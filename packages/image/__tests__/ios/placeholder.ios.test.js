@@ -1,5 +1,3 @@
-/* eslint-env jest */
-
 import placeholderTests from "../placeholder.test";
 
 jest.mock("react-native", () => {
