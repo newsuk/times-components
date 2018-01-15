@@ -3,30 +3,15 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import { MockedProvider } from "@times-components/utils/graphql";
-// eslint-disable-next-line import/no-unresolved
-import { addTypenameToDocument } from "apollo-utilities";
 import { AuthorProfileProvider } from "../provider";
-import { query as authorProfileQuery } from "../author-profile";
-import fixture from "../fixtures/author-profile.json";
-
-const mocks = [
-  {
-    request: {
-      query: addTypenameToDocument(authorProfileQuery)
-    },
-    result: fixture
-  }
-];
+import { makeArticleMocks } from "../fixtures/author-profile/fixture-generator";
 
 const renderComponent = child =>
   renderer.create(
-    <MockedProvider mocks={mocks}>
-      <AuthorProfileProvider
-        slug="fiona-hamilton"
-        pageSize={3}
-        page={4}
-        articleImageRatio="16:9"
-      >
+    <MockedProvider
+      mocks={makeArticleMocks({ withImages: true, pageSize: 5, delay: 0 })}
+    >
+      <AuthorProfileProvider slug="deborah-haynes">
         {child}
       </AuthorProfileProvider>
     </MockedProvider>

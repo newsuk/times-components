@@ -95,4 +95,93 @@ it("returns an error", done => {
   }, customMocks);
 });
 
-it("needs a test for refetch");
+it("re-renders with refetched data after error", done => {
+  const customMocks = [
+    {
+      request: {
+        query
+      },
+      error: {
+        message: "some error from the server"
+      }
+    },
+    {
+      request: {
+        query
+      },
+      result: {
+        data: {
+          author: {
+            name: "fiona-hamilton"
+          }
+        }
+      }
+    }
+  ];
+
+  renderComponent(({ isLoading, refetch, error, author }) => {
+    if (!isLoading) {
+      if (error) {
+        setTimeout(refetch);
+        return null;
+      }
+
+      expect(author).toMatchSnapshot();
+      done();
+    }
+
+    return null;
+  }, customMocks);
+});
+
+it("supports another refetch after error during refetch", done => {
+  const customMocks = [
+    {
+      request: {
+        query
+      },
+      error: {
+        message: "some error from the server"
+      }
+    },
+    {
+      request: {
+        query
+      },
+      error: {
+        message: "some error from the server"
+      }
+    },
+    {
+      request: {
+        query
+      },
+      result: {
+        data: {
+          author: {
+            name: "fiona-hamilton"
+          }
+        }
+      }
+    }
+  ];
+
+  let errorCount = 0;
+
+  renderComponent(({ isLoading, refetch, error, author }) => {
+    if (!isLoading) {
+      if (error) {
+        errorCount += 1;
+        setTimeout(refetch);
+
+        return null;
+      }
+
+      expect(errorCount).toEqual(2);
+      expect(author).toMatchSnapshot();
+      done();
+    }
+
+    return null;
+  }, customMocks);
+});

@@ -1,4 +1,4 @@
-import articleListWithImagesFixture from "../fixtures/article-list-with-images.json";
+import articleListWithImagesFixture from "@times-components/provider/fixtures/author-profile/article-list-with-images.json";
 
 export default (skip, first) => ({
   data: {

@@ -18,6 +18,7 @@ export const Paragraph = withResponsiveStyles("p", {
     font-size: 17px;
     margin-bottom: 25px;
     margin-top: 0;
+    display: block;
   `,
   mediumUp: () => `
     font-size: 18px;
@@ -65,21 +66,32 @@ export const PrimaryImg = withResponsiveStyles(View, {
   wideUp: () => `width: ${config.wideBpWidth};`
 });
 
-const ImageStyles = withResponsiveStyles(View, {
+const imageStyles = `
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+`;
+
+export const SecondaryImg = withResponsiveStyles(View, {
   base: () => `
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    ${imageStyles}
     padding-bottom: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
   `,
   mediumUp: () => config.mediumBpPositioning,
   wideUp: () => `width: ${config.wideBpWidth};`
 });
 
-export const SecondaryImg = ImageStyles;
-export const InlineImg = ImageStyles;
+export const InlineImg = withResponsiveStyles(View, {
+  base: () => `
+    ${imageStyles}
+    padding-bottom: 0;
+    display:block;
+  `,
+  mediumUp: () => config.mediumBpPositioning,
+  wideUp: () => `width: ${config.wideBpWidth};`
+});
 
 /* --- Pull Quotes --- */
 

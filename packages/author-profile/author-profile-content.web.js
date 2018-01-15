@@ -25,11 +25,11 @@ const ContentContainer = withResponsiveStyles(View, {
     width: 100%;
     max-width: 680px;
     padding-left: 10px;
-    padding-right 10px;
+    padding-right: 10px;
   `,
   mediumUp: () => `
     padding-left: 0;
-    padding-right 0;
+    padding-right: 0;
   `,
   hugeUp: () => `
     max-width: 760px;
@@ -157,10 +157,13 @@ class AuthorProfileContent extends Component {
       refetch
     } = this.props;
 
-    const paginationComponent = (hideResults = false) => (
+    const paginationComponent = (
+      { hideResults = false, hideTopKeyline = false } = {}
+    ) => (
       <AuthorProfilePagination
         count={count}
         hideResults={hideResults}
+        hideTopKeyline={hideTopKeyline}
         onNext={(...args) => {
           onNext(...args);
           scrollUpToPaging();
@@ -195,7 +198,7 @@ class AuthorProfileContent extends Component {
 
     const Contents = (
       <ContentContainer>
-        {paginationComponent()}
+        {paginationComponent({ hideResults: false, hideTopKeyline: true })}
         <View style={styles.container}>
           {data &&
             data.map((article, key) => {
@@ -231,7 +234,7 @@ class AuthorProfileContent extends Component {
               );
             })}
         </View>
-        {paginationComponent(true)}
+        {paginationComponent({ hideResults: true })}
       </ContentContainer>
     );
 

@@ -4,14 +4,14 @@ import { decorateAction } from "@storybook/addon-actions";
 import { AuthorProfileProvider } from "@times-components/provider";
 import { MockedProvider } from "@times-components/utils/graphql";
 import storybookReporter from "@times-components/tealium/storybook";
-import AuthorProfile from "./author-profile";
 import {
   makeAuthor,
   makeArticleMocks,
   makeBrokenMocks,
   makeMocksWithAuthorError,
   makeMocksWithPageError
-} from "./fixtures/fixture-generator";
+} from "@times-components/provider/fixtures/author-profile/fixture-generator";
+import AuthorProfile from "./author-profile";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {

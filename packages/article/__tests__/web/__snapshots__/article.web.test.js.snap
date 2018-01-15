@@ -103,6 +103,7 @@ exports[`Article test on web renders article no flags 1`] = `
   font-size: 17px;
   margin-bottom: 25px;
   margin-top: 0;
+  display: block;
 }
 
 .c2 {
@@ -593,7 +594,7 @@ exports[`Article test on web renders article no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -601,7 +602,7 @@ exports[`Article test on web renders article no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -619,7 +620,7 @@ exports[`Article test on web renders article no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -627,7 +628,7 @@ exports[`Article test on web renders article no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -640,7 +641,7 @@ exports[`Article test on web renders article no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -648,7 +649,7 @@ exports[`Article test on web renders article no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -659,7 +660,7 @@ exports[`Article test on web renders article no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -667,7 +668,7 @@ exports[`Article test on web renders article no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -678,7 +679,7 @@ exports[`Article test on web renders article no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -686,7 +687,7 @@ exports[`Article test on web renders article no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -697,7 +698,7 @@ exports[`Article test on web renders article no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -705,7 +706,7 @@ exports[`Article test on web renders article no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -716,7 +717,7 @@ exports[`Article test on web renders article no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -724,7 +725,7 @@ exports[`Article test on web renders article no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -735,7 +736,7 @@ exports[`Article test on web renders article no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -743,7 +744,7 @@ exports[`Article test on web renders article no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -754,7 +755,7 @@ exports[`Article test on web renders article no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -762,7 +763,7 @@ exports[`Article test on web renders article no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -773,7 +774,7 @@ exports[`Article test on web renders article no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -781,7 +782,7 @@ exports[`Article test on web renders article no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -792,7 +793,7 @@ exports[`Article test on web renders article no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -800,7 +801,7 @@ exports[`Article test on web renders article no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -811,7 +812,7 @@ exports[`Article test on web renders article no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -819,7 +820,7 @@ exports[`Article test on web renders article no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -830,7 +831,7 @@ exports[`Article test on web renders article no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -838,7 +839,7 @@ exports[`Article test on web renders article no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -882,6 +883,7 @@ exports[`Article test on web renders article no label 1`] = `
   font-size: 17px;
   margin-bottom: 25px;
   margin-top: 0;
+  display: block;
 }
 
 .c2 {
@@ -1450,7 +1452,7 @@ exports[`Article test on web renders article no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -1458,7 +1460,7 @@ exports[`Article test on web renders article no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -1476,7 +1478,7 @@ exports[`Article test on web renders article no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -1484,7 +1486,7 @@ exports[`Article test on web renders article no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -1497,7 +1499,7 @@ exports[`Article test on web renders article no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -1505,7 +1507,7 @@ exports[`Article test on web renders article no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -1516,7 +1518,7 @@ exports[`Article test on web renders article no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -1524,7 +1526,7 @@ exports[`Article test on web renders article no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -1535,7 +1537,7 @@ exports[`Article test on web renders article no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -1543,7 +1545,7 @@ exports[`Article test on web renders article no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -1554,7 +1556,7 @@ exports[`Article test on web renders article no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -1562,7 +1564,7 @@ exports[`Article test on web renders article no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -1573,7 +1575,7 @@ exports[`Article test on web renders article no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -1581,7 +1583,7 @@ exports[`Article test on web renders article no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -1592,7 +1594,7 @@ exports[`Article test on web renders article no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -1600,7 +1602,7 @@ exports[`Article test on web renders article no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -1611,7 +1613,7 @@ exports[`Article test on web renders article no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -1619,7 +1621,7 @@ exports[`Article test on web renders article no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -1630,7 +1632,7 @@ exports[`Article test on web renders article no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -1638,7 +1640,7 @@ exports[`Article test on web renders article no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -1649,7 +1651,7 @@ exports[`Article test on web renders article no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -1657,7 +1659,7 @@ exports[`Article test on web renders article no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -1668,7 +1670,7 @@ exports[`Article test on web renders article no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -1676,7 +1678,7 @@ exports[`Article test on web renders article no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -1687,7 +1689,7 @@ exports[`Article test on web renders article no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -1695,7 +1697,7 @@ exports[`Article test on web renders article no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -1739,6 +1741,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
   font-size: 17px;
   margin-bottom: 25px;
   margin-top: 0;
+  display: block;
 }
 
 .c2 {
@@ -2203,7 +2206,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -2211,7 +2214,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -2229,7 +2232,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -2237,7 +2240,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -2250,7 +2253,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -2258,7 +2261,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -2269,7 +2272,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -2277,7 +2280,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -2288,7 +2291,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -2296,7 +2299,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -2307,7 +2310,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -2315,7 +2318,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -2326,7 +2329,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -2334,7 +2337,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -2345,7 +2348,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -2353,7 +2356,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -2364,7 +2367,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -2372,7 +2375,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -2383,7 +2386,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -2391,7 +2394,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -2402,7 +2405,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -2410,7 +2413,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -2421,7 +2424,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -2429,7 +2432,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -2440,7 +2443,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -2448,7 +2451,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -2492,6 +2495,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
   font-size: 17px;
   margin-bottom: 25px;
   margin-top: 0;
+  display: block;
 }
 
 .c2 {
@@ -2948,7 +2952,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -2956,7 +2960,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -2974,7 +2978,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -2982,7 +2986,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -2995,7 +2999,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -3003,7 +3007,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -3014,7 +3018,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -3022,7 +3026,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -3033,7 +3037,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -3041,7 +3045,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -3052,7 +3056,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -3060,7 +3064,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -3071,7 +3075,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -3079,7 +3083,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -3090,7 +3094,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -3098,7 +3102,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -3109,7 +3113,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -3117,7 +3121,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -3128,7 +3132,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -3136,7 +3140,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -3147,7 +3151,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -3155,7 +3159,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -3166,7 +3170,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -3174,7 +3178,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -3185,7 +3189,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -3193,7 +3197,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -3237,6 +3241,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
   font-size: 17px;
   margin-bottom: 25px;
   margin-top: 0;
+  display: block;
 }
 
 .c2 {
@@ -3823,7 +3828,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -3831,7 +3836,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -3849,7 +3854,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -3857,7 +3862,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -3870,7 +3875,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -3878,7 +3883,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -3889,7 +3894,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -3897,7 +3902,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -3908,7 +3913,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -3916,7 +3921,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -3927,7 +3932,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -3935,7 +3940,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -3946,7 +3951,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -3954,7 +3959,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -3965,7 +3970,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -3973,7 +3978,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -3984,7 +3989,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -3992,7 +3997,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -4003,7 +4008,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -4011,7 +4016,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -4022,7 +4027,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -4030,7 +4035,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -4041,7 +4046,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -4049,7 +4054,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -4060,7 +4065,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -4068,7 +4073,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -4112,6 +4117,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
   font-size: 17px;
   margin-bottom: 25px;
   margin-top: 0;
+  display: block;
 }
 
 .c2 {
@@ -4594,7 +4600,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -4602,7 +4608,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -4620,7 +4626,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -4628,7 +4634,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -4641,7 +4647,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -4649,7 +4655,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -4660,7 +4666,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -4668,7 +4674,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -4679,7 +4685,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -4687,7 +4693,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -4698,7 +4704,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -4706,7 +4712,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -4717,7 +4723,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -4725,7 +4731,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -4736,7 +4742,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -4744,7 +4750,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -4755,7 +4761,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -4763,7 +4769,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -4774,7 +4780,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -4782,7 +4788,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -4793,7 +4799,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -4801,7 +4807,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -4812,7 +4818,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -4820,7 +4826,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -4831,7 +4837,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -4839,7 +4845,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -4883,6 +4889,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
   font-size: 17px;
   margin-bottom: 25px;
   margin-top: 0;
+  display: block;
 }
 
 .c2 {
@@ -5443,7 +5450,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -5451,7 +5458,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -5469,7 +5476,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -5477,7 +5484,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -5490,7 +5497,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -5498,7 +5505,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -5509,7 +5516,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -5517,7 +5524,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -5528,7 +5535,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -5536,7 +5543,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -5547,7 +5554,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -5555,7 +5562,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -5566,7 +5573,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -5574,7 +5581,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -5585,7 +5592,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -5593,7 +5600,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -5604,7 +5611,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -5612,7 +5619,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -5623,7 +5630,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -5631,7 +5638,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -5642,7 +5649,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -5650,7 +5657,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -5661,7 +5668,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -5669,7 +5676,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -5680,7 +5687,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
           className="c12"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -5688,7 +5695,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
             className="c13"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -5724,6 +5731,25 @@ exports[`Article test on web renders article with no lead asset 1`] = `
   padding-left: 10px;
 }
 
+.c17 {
+  width: 50%;
+  margin-top: -10px;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.c16 {
+  width: 50%;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
 .c10 {
   padding-left: 10px;
   padding-right: 10px;
@@ -5736,6 +5762,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
   font-size: 17px;
   margin-bottom: 25px;
   margin-top: 0;
+  display: block;
 }
 
 .c1 {
@@ -5765,9 +5792,23 @@ exports[`Article test on web renders article with no lead asset 1`] = `
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  padding-bottom: 25px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c15 {
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0;
+  display: block;
 }
 
 .c2 {
@@ -5826,6 +5867,43 @@ exports[`Article test on web renders article with no lead asset 1`] = `
 }
 
 @media (min-width:768px) {
+  .c17 {
+    padding-left: 0px;
+    width: 30%;
+    clear: left;
+    float: left;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c17 {
+    padding-left: 0px;
+    width: 35.71429%;
+  }
+}
+
+@media (min-width:768px) {
+  .c16 {
+    width: 30%;
+    clear: left;
+    float: left;
+    padding-bottom: 0px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c16 {
+    width: 35.71429%;
+    clear: left;
+  }
+}
+
+@media (min-width:768px) {
   .c10 {
     width: 83.33333333%;
     margin: 0 auto;
@@ -5886,6 +5964,21 @@ exports[`Article test on web renders article with no lead asset 1`] = `
 
 @media (min-width:1024px) {
   .c14 {
+    width: 58.33333%;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
+    width: 83.33333333%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c15 {
     width: 58.33333%;
   }
 }
@@ -6129,7 +6222,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
           className="c10"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -6137,7 +6230,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
             className="c11"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -6155,7 +6248,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
           className="c10"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -6163,7 +6256,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
             className="c11"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -6251,7 +6344,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
           className="c10"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -6259,7 +6352,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
             className="c11"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -6270,7 +6363,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
           className="c10"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -6278,7 +6371,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
             className="c11"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -6360,7 +6453,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
           className="c10"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -6368,7 +6461,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
             className="c11"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -6421,7 +6514,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
           className="c10"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -6429,7 +6522,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
             className="c11"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -6437,10 +6530,10 @@ exports[`Article test on web renders article with no lead asset 1`] = `
           </p>
         </div>
         <div
-          className="c14 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+          className="c15 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
         >
           <div
-            className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-width-1f720gc rn-zIndex-1lgpqti"
+            className="c16 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
           >
             <div
               className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -6483,13 +6576,13 @@ exports[`Article test on web renders article with no lead asset 1`] = `
             </div>
           </div>
           <div
-            className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-1hfyk0a rn-paddingTop-wk8lta rn-position-bnwqim rn-width-1f720gc rn-zIndex-1lgpqti"
+            className="c17 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
           >
             <div
               className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
             >
               <div
-                className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-paddingTop-wk8lta rn-position-bnwqim rn-zIndex-1lgpqti"
+                className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-paddingTop-m611by rn-position-bnwqim rn-zIndex-1lgpqti"
               >
                 <div
                   className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1x7yru4 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-lineHeight-5fcqz0 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
@@ -6511,7 +6604,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
           className="c10"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -6519,7 +6612,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
             className="c11"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -6527,10 +6620,10 @@ exports[`Article test on web renders article with no lead asset 1`] = `
           </p>
         </div>
         <div
-          className="c14 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+          className="c15 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
         >
           <div
-            className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-width-1f720gc rn-zIndex-1lgpqti"
+            className="c16 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
           >
             <div
               className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -6573,13 +6666,13 @@ exports[`Article test on web renders article with no lead asset 1`] = `
             </div>
           </div>
           <div
-            className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-1hfyk0a rn-paddingTop-wk8lta rn-position-bnwqim rn-width-1f720gc rn-zIndex-1lgpqti"
+            className="c17 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
           >
             <div
               className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
             >
               <div
-                className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-paddingTop-wk8lta rn-position-bnwqim rn-zIndex-1lgpqti"
+                className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-paddingTop-m611by rn-position-bnwqim rn-zIndex-1lgpqti"
               >
                 <div
                   className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1x7yru4 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-lineHeight-5fcqz0 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
@@ -6601,7 +6694,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
           className="c10"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -6609,7 +6702,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
             className="c11"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -6620,7 +6713,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
           className="c10"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -6628,7 +6721,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
             className="c11"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -6639,7 +6732,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
           className="c10"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -6647,7 +6740,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
             className="c11"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -6658,7 +6751,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
           className="c10"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -6666,7 +6759,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
             className="c11"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -6677,7 +6770,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
           className="c10"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -6685,7 +6778,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
             className="c11"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -6696,7 +6789,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
           className="c10"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -6704,7 +6797,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
             className="c11"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -6740,6 +6833,25 @@ exports[`Article test on web renders full article 1`] = `
   padding-left: 10px;
 }
 
+.c20 {
+  width: 50%;
+  margin-top: -10px;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.c19 {
+  width: 50%;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
 .c13 {
   padding-left: 10px;
   padding-right: 10px;
@@ -6752,6 +6864,7 @@ exports[`Article test on web renders full article 1`] = `
   font-size: 17px;
   margin-bottom: 25px;
   margin-top: 0;
+  display: block;
 }
 
 .c2 {
@@ -6796,18 +6909,32 @@ exports[`Article test on web renders full article 1`] = `
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  padding-bottom: 25px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 25px;
 }
 
-.c19 {
+.c18 {
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0;
+  display: block;
+}
+
+.c22 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
-.c18 {
+.c21 {
   display: block;
 }
 
@@ -6863,6 +6990,43 @@ exports[`Article test on web renders full article 1`] = `
 @media (min-width:768px) {
   .c16 {
     padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c20 {
+    padding-left: 0px;
+    width: 30%;
+    clear: left;
+    float: left;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c20 {
+    padding-left: 0px;
+    width: 35.71429%;
+  }
+}
+
+@media (min-width:768px) {
+  .c19 {
+    width: 30%;
+    clear: left;
+    float: left;
+    padding-bottom: 0px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c19 {
+    width: 35.71429%;
+    clear: left;
   }
 }
 
@@ -6963,7 +7127,22 @@ exports[`Article test on web renders full article 1`] = `
 }
 
 @media (min-width:768px) {
-  .c19 {
+  .c18 {
+    width: 83.33333333%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c18 {
+    width: 58.33333%;
+  }
+}
+
+@media (min-width:768px) {
+  .c22 {
     width: 60%;
     float: left;
     margin-right: 20px;
@@ -6975,7 +7154,7 @@ exports[`Article test on web renders full article 1`] = `
 }
 
 @media (min-width:768px) {
-  .c18 {
+  .c21 {
     width: 83.33333333%;
     margin: 0 auto;
     padding-left: 0;
@@ -6984,7 +7163,7 @@ exports[`Article test on web renders full article 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c18 {
+  .c21 {
     width: 58.33333%;
   }
 }
@@ -7438,7 +7617,7 @@ exports[`Article test on web renders full article 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -7446,7 +7625,7 @@ exports[`Article test on web renders full article 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -7464,7 +7643,7 @@ exports[`Article test on web renders full article 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -7472,7 +7651,7 @@ exports[`Article test on web renders full article 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -7560,7 +7739,7 @@ exports[`Article test on web renders full article 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -7568,7 +7747,7 @@ exports[`Article test on web renders full article 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -7579,7 +7758,7 @@ exports[`Article test on web renders full article 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -7587,7 +7766,7 @@ exports[`Article test on web renders full article 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -7669,7 +7848,7 @@ exports[`Article test on web renders full article 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -7677,7 +7856,7 @@ exports[`Article test on web renders full article 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -7730,7 +7909,7 @@ exports[`Article test on web renders full article 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -7738,7 +7917,7 @@ exports[`Article test on web renders full article 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -7746,10 +7925,10 @@ exports[`Article test on web renders full article 1`] = `
           </p>
         </div>
         <div
-          className="c17 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+          className="c18 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
         >
           <div
-            className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-width-1f720gc rn-zIndex-1lgpqti"
+            className="c19 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
           >
             <div
               className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -7792,13 +7971,13 @@ exports[`Article test on web renders full article 1`] = `
             </div>
           </div>
           <div
-            className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-1hfyk0a rn-paddingTop-wk8lta rn-position-bnwqim rn-width-1f720gc rn-zIndex-1lgpqti"
+            className="c20 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
           >
             <div
               className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
             >
               <div
-                className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-paddingTop-wk8lta rn-position-bnwqim rn-zIndex-1lgpqti"
+                className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-paddingTop-m611by rn-position-bnwqim rn-zIndex-1lgpqti"
               >
                 <div
                   className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1x7yru4 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-lineHeight-5fcqz0 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
@@ -7820,7 +7999,7 @@ exports[`Article test on web renders full article 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -7828,18 +8007,18 @@ exports[`Article test on web renders full article 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
-            Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. 
+            Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister.
           </p>
         </div>
         <div
-          className="c17 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+          className="c18 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
         >
           <div
-            className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-width-1f720gc rn-zIndex-1lgpqti"
+            className="c19 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
           >
             <div
               className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -7882,13 +8061,13 @@ exports[`Article test on web renders full article 1`] = `
             </div>
           </div>
           <div
-            className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-1hfyk0a rn-paddingTop-wk8lta rn-position-bnwqim rn-width-1f720gc rn-zIndex-1lgpqti"
+            className="c20 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
           >
             <div
               className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
             >
               <div
-                className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-paddingTop-wk8lta rn-position-bnwqim rn-zIndex-1lgpqti"
+                className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-paddingTop-m611by rn-position-bnwqim rn-zIndex-1lgpqti"
               >
                 <div
                   className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1x7yru4 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-lineHeight-5fcqz0 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
@@ -7910,7 +8089,7 @@ exports[`Article test on web renders full article 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -7918,18 +8097,18 @@ exports[`Article test on web renders full article 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
-            She led the Conservative Party for 15 years, won three general elections in succession, and never lost a significant vote in the House of Commons. Since Walpole in effect invented the role, only six men have served for longer than her as prime minister: Walpole himself, Pitt, Lord Liverpool, Lord Salisbury, Gladstone and Lord North. She fully earned her place in this company. 
+            She led the Conservative Party for 15 years, won three general elections in succession, and never lost a significant vote in the House of Commons. Since Walpole in effect invented the role, only six men have served for longer than her as prime minister: Walpole himself, Pitt, Lord Liverpool, Lord Salisbury, Gladstone and Lord North. She fully earned her place in this company. Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister.Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister
           </p>
         </div>
         <div
-          className="c18 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+          className="c21 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
         >
           <div
-            className="c19 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+            className="c22 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
           >
             <div
               className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-117bsoe rn-marginTop-1mnahxq rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -7975,7 +8154,7 @@ exports[`Article test on web renders full article 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -7983,7 +8162,7 @@ exports[`Article test on web renders full article 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -7994,7 +8173,7 @@ exports[`Article test on web renders full article 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -8002,7 +8181,7 @@ exports[`Article test on web renders full article 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -8013,7 +8192,7 @@ exports[`Article test on web renders full article 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -8021,7 +8200,7 @@ exports[`Article test on web renders full article 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -8032,7 +8211,7 @@ exports[`Article test on web renders full article 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -8040,7 +8219,7 @@ exports[`Article test on web renders full article 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >
@@ -8051,7 +8230,7 @@ exports[`Article test on web renders full article 1`] = `
           className="c13"
           style={
             Array [
-              94,
+              92,
             ]
           }
         >
@@ -8059,7 +8238,7 @@ exports[`Article test on web renders full article 1`] = `
             className="c14"
             style={
               Array [
-                96,
+                94,
               ]
             }
           >

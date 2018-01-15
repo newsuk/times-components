@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexDirection: "row",
     justifyContent: "center",
-    height: 40
+    height: 50
   }
 });
 

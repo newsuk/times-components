@@ -21,3 +21,20 @@ exports[`WithTrackScrollDepth renders when tracking context is missing 1`] = `
 `;
 
 exports[`WithTrackScrollDepth tracks scroll depth 1`] = `Array []`;
+
+exports[`WithTrackScrollDepth tracks scroll depth only for unseen children 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Scrolled",
+      "attrs": Object {
+        "scrollDepth": Object {
+          "itemNumber": 0,
+          "total": 3,
+        },
+      },
+      "component": "ListComponentChild",
+    },
+  ],
+]
+`;

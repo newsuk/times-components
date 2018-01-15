@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.10.5...@times-components/article-image@0.11.0) (2018-01-15)
+
+
+### Features
+
+* responsive inline images ([#518](https://github.com/newsuk/times-components/issues/518)) ([ed90802](https://github.com/newsuk/times-components/commit/ed90802))
+
+
+
+
+<a name="0.10.6"></a>
+## [0.10.6](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.10.5...@times-components/article-image@0.10.6) (2018-01-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-image
+
+<a name="0.10.5"></a>
+## [0.10.5](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.10.3...@times-components/article-image@0.10.5) (2018-01-10)
+
+
+### Bug Fixes
+
+* REPLAT-1166 Responsive Article Patterns ([#500](https://github.com/newsuk/times-components/issues/500)) ([873a16e](https://github.com/newsuk/times-components/commit/873a16e))
+
+
+
+
+<a name="0.10.4"></a>
+## [0.10.4](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.10.3...@times-components/article-image@0.10.4) (2018-01-10)
+
+
+### Bug Fixes
+
+* REPLAT-1166 Responsive Article Patterns ([#500](https://github.com/newsuk/times-components/issues/500)) ([873a16e](https://github.com/newsuk/times-components/commit/873a16e))
+
+
+
+
 <a name="0.10.3"></a>
 ## [0.10.3](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.10.2...@times-components/article-image@0.10.3) (2018-01-08)
 

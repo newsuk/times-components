@@ -34,6 +34,50 @@ describe("WithTrackScrollDepth", () => {
     expect(reporter.mock.calls).toMatchSnapshot();
   });
 
+  it("tracks scroll depth only for unseen children", () => {
+    const reporter = jest.fn();
+    const ListWithChildTracking = withTestContext(
+      withTrackScrollDepth(ListComponent),
+      { trackingObject: "TestObject" }
+    );
+
+    const tracking = shallow(
+      <ListWithChildTracking
+        analyticsStream={reporter}
+        items={items}
+        onViewed={() => {}}
+      />,
+      {
+        context: {
+          tracking: {
+            analytics: reporter
+          }
+        }
+      }
+    );
+
+    tracking
+      .dive()
+      .dive()
+      .instance()
+      .onViewableItemsChanged.call(tracking.instance(), {
+        info: {
+          changed: [
+            {
+              isViewable: true,
+              elementId: 1
+            },
+            {
+              isViewable: true,
+              elementId: 1
+            }
+          ]
+        }
+      });
+
+    expect(reporter.mock.calls).toMatchSnapshot();
+  });
+
   it("accepts component name override", () => {
     const reporter = jest.fn();
     const ListWithChildTracking = withTestContext(

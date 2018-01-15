@@ -3,6 +3,87 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.25.0"></a>
+# [0.25.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.24.20...@times-components/article@0.25.0) (2018-01-15)
+
+
+### Features
+
+* responsive inline images ([#518](https://github.com/newsuk/times-components/issues/518)) ([ed90802](https://github.com/newsuk/times-components/commit/ed90802))
+
+
+
+
+<a name="0.24.20"></a>
+## [0.24.20](https://github.com/newsuk/times-components/compare/@times-components/article@0.24.19...@times-components/article@0.24.20) (2018-01-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.24.19"></a>
+## [0.24.19](https://github.com/newsuk/times-components/compare/@times-components/article@0.24.18...@times-components/article@0.24.19) (2018-01-11)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.24.18"></a>
+## [0.24.18](https://github.com/newsuk/times-components/compare/@times-components/article@0.24.16...@times-components/article@0.24.18) (2018-01-11)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.24.17"></a>
+## [0.24.17](https://github.com/newsuk/times-components/compare/@times-components/article@0.24.16...@times-components/article@0.24.17) (2018-01-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.24.16"></a>
+## [0.24.16](https://github.com/newsuk/times-components/compare/@times-components/article@0.24.15...@times-components/article@0.24.16) (2018-01-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.24.15"></a>
+## [0.24.15](https://github.com/newsuk/times-components/compare/@times-components/article@0.24.14...@times-components/article@0.24.15) (2018-01-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.24.14"></a>
+## [0.24.14](https://github.com/newsuk/times-components/compare/@times-components/article@0.24.12...@times-components/article@0.24.14) (2018-01-10)
+
+
+### Bug Fixes
+
+* REPLAT-1166 Responsive Article Patterns ([#500](https://github.com/newsuk/times-components/issues/500)) ([873a16e](https://github.com/newsuk/times-components/commit/873a16e))
+
+
+
+
+<a name="0.24.13"></a>
+## [0.24.13](https://github.com/newsuk/times-components/compare/@times-components/article@0.24.12...@times-components/article@0.24.13) (2018-01-10)
+
+
+### Bug Fixes
+
+* REPLAT-1166 Responsive Article Patterns ([#500](https://github.com/newsuk/times-components/issues/500)) ([873a16e](https://github.com/newsuk/times-components/commit/873a16e))
+
+
+
+
 <a name="0.24.12"></a>
 ## [0.24.12](https://github.com/newsuk/times-components/compare/@times-components/article@0.24.11...@times-components/article@0.24.12) (2018-01-09)
 

@@ -1,5 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`re-renders with refetched data after error 1`] = `
+Object {
+  "name": "fiona-hamilton",
+  Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"fiona-hamilton\\"})",
+}
+`;
+
 exports[`returns an error 1`] = `[Error: Network error: some error from the server]`;
 
 exports[`returns config data 1`] = `
@@ -12,6 +19,13 @@ Object {
 exports[`returns loading state with no author 1`] = `undefined`;
 
 exports[`returns query result 1`] = `
+Object {
+  "name": "fiona-hamilton",
+  Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"fiona-hamilton\\"})",
+}
+`;
+
+exports[`supports another refetch after error during refetch 1`] = `
 Object {
   "name": "fiona-hamilton",
   Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"fiona-hamilton\\"})",
