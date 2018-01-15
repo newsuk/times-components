@@ -176,7 +176,7 @@ describe("WithTrackingContext", () => {
   });
 
   it("only tracks page views when data is ready, with multiple updates", () => {
-    isReady = false;
+    let isReady = false;
     const WithTrackingAndContext = withTrackingContext(TestComponent, {
       trackingObject: "AuthorProfile",
       isDataReady: () => isReady
