@@ -1,14 +1,8 @@
-import { View, Text } from "react-native";
-import React from "react";
-import PropTypes from "prop-types";
-import renderer from "react-test-renderer";
-import Enzyme, { mount } from "enzyme";
-import React16Adapter from "enzyme-adapter-react-16";
+/* global React, PropTypes, renderer, mount */
+import { Text, View } from "react-native";
 import { withTrackScrollDepth } from "../tracking";
 import withTestContext from "./test-tracking-context";
 import sharedTrackingTests from "./shared-tracking-tests";
-
-Enzyme.configure({ adapter: new React16Adapter() });
 
 class FakeIntersectionObserver {
   static clearObserving() {

@@ -1,7 +1,5 @@
+/* global React, PropTypes, renderer */
 import { Text } from "react-native";
-import React from "react";
-import PropTypes from "prop-types";
-import renderer from "react-test-renderer";
 
 const TestComponent = props => <Text>{props.someProp}</Text>;
 TestComponent.propTypes = { someProp: PropTypes.string };

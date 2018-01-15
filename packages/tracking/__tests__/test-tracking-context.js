@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+/* global React */
+import { Component } from "react";
 import trackingContextTypes from "../tracking-context-types";
 
 export default WrappedComponent => {
