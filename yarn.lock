@@ -3839,9 +3839,9 @@ detox@5.8.2:
     telnet-client "0.15.3"
     ws "^1.1.1"
 
-dextrose@1.2.14:
-  version "1.2.14"
-  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.2.14.tgz#b9013df987fd84db5a6b63cc812c8f114971ca27"
+dextrose@1.2.15:
+  version "1.2.15"
+  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.2.15.tgz#930af4620316f5d214f5afeca78576089aa219c8"
   dependencies:
     babel-core "6.26.0"
     babel-preset-react-native "4.0.0"
