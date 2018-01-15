@@ -1,6 +1,6 @@
 {
   "name": "@times-components/error-view",
-  "version": "0.7.9",
+  "version": "0.7.10",
   "description": "Handles errors",
   "main": "error-view",
   "scripts": {
@@ -47,8 +47,8 @@
   "devDependencies": {
     "@storybook/addon-actions": "3.2.18",
     "@storybook/react-native": "3.2.18",
-    "@times-components/brightcove-video": "1.10.2",
-    "@times-components/eslint-config-thetimes": "0.1.0",
+    "@times-components/brightcove-video": "1.10.3",
+    "@times-components/eslint-config-thetimes": "0.1.1",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/link",
-  "version": "0.13.5",
+  "version": "0.13.6",
   "description": "component to handle links and navigation",
   "main": "link",
   "scripts": {
@@ -36,9 +36,9 @@
   "devDependencies": {
     "@storybook/addon-actions": "3.2.18",
     "@storybook/react-native": "3.2.18",
-    "@times-components/eslint-config-thetimes": "0.1.0",
-    "@times-components/jest-configurator": "0.0.15",
-    "@times-components/storybook": "0.2.1",
+    "@times-components/eslint-config-thetimes": "0.1.1",
+    "@times-components/jest-configurator": "0.0.16",
+    "@times-components/storybook": "0.2.2",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
     "babel-jest": "21.2.0",
@@ -58,7 +58,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "@times-components/responsive-styles": "0.2.7",
+    "@times-components/responsive-styles": "0.2.8",
     "lodash.pick": "4.4.0",
     "prop-types": "15.6.0"
   },

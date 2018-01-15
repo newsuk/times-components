@@ -1,6 +1,6 @@
 {
   "name": "@times-components/utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "scripts": {
     "make-schema": "node ./scripts/fetch-gql-schema",
@@ -43,7 +43,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@times-components/eslint-config-thetimes": "0.1.0",
+    "@times-components/eslint-config-thetimes": "0.1.1",
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "mkdirp": "0.5.1",
