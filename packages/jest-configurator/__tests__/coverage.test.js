@@ -1,5 +1,3 @@
-/* eslint-env jest */
-
 import getCoveragePaths from "../src/coverage";
 
 describe("getCoveragePaths should", () => {

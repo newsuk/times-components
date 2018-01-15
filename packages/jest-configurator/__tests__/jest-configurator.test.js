@@ -1,5 +1,3 @@
-/* eslint-env jest */
-
 import jestConfigurator from "../src/jest-configurator";
 
 describe("Jest Configurator Tests", () => {

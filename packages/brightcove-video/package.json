@@ -21,7 +21,7 @@
       "node_modules/(?!@times-components)/"
     ],
     "testMatch": [
-      "<rootDir>/packages/brightcove-video/__tests__/*"
+      "<rootDir>/packages/brightcove-video/__tests__/*.test.js"
     ]
   },
   "repository": {

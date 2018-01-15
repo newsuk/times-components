@@ -1,5 +1,3 @@
-/* eslint-env jest */
-
 import imageTests from "../image.native.test";
 
 jest.mock("react-native", () => {

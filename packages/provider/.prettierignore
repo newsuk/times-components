@@ -2,10 +2,11 @@
 **/coverage/*
 dist
 __snapshots__
-**/package.json
 android/*
 ios/*
 CHANGELOG.md
 .*
+!*.json
+**/package.json
 LICENSE
 yarn.lock

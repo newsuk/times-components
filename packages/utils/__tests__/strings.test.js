@@ -1,5 +1,3 @@
-/* eslint-env jest */
-
 import { ratioTextToFloat } from "../strings";
 
 describe("ratioTextToFloat should", () => {

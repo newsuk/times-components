@@ -1,5 +1,3 @@
-/* eslint-env jest */
-
 import { Dimensions, Text } from "react-native";
 import React from "react";
 import renderer from "react-test-renderer";

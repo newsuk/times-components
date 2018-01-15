@@ -1,5 +1,3 @@
-/* eslint-env jest */
-
 import authorHeadTests from "../author-head.test.js";
 
 jest.mock("react-native", () => {

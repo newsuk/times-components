@@ -1,5 +1,3 @@
-/* eslint-env jest */
-
 import runTests from "./test-helper";
 import { renderTree, renderTrees } from "../markup.web";
 

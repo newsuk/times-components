@@ -1,5 +1,3 @@
-/* eslint-env jest, browser */
-
 import React from "react";
 import { shallow, mount } from "enzyme";
 import authorProfileFixture from "@times-components/provider/fixtures/author-profile/author-profile.json";

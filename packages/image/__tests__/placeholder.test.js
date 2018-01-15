@@ -1,5 +1,3 @@
-/* eslint-env jest */
-
 import "react-native";
 import { shallow } from "enzyme";
 import React from "react";
