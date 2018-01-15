@@ -1,12 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View } from "react-native";
 import ArticleLabel from "@times-components/article-label";
 import styles from "../styles/article-header";
 
-import {
-  LabelContainer
-} from "../styles/article-header/responsive";
+import { LabelContainer } from "../styles/article-header/responsive";
 
 const HeaderLabel = ({ label }) => {
   if (!label) return null;
@@ -23,6 +20,10 @@ const HeaderLabel = ({ label }) => {
 
 HeaderLabel.propTypes = {
   label: PropTypes.string
+};
+
+HeaderLabel.defaultProps = {
+  label: null
 };
 
 export default HeaderLabel;

@@ -22,6 +22,6 @@ HeaderStandfirst.propTypes = {
 
 HeaderStandfirst.defaultProps = {
   standfirst: null
-}
+};
 
 export default HeaderStandfirst;

@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ArticleLabel from "@times-components/article-label";
 import { Text, View, ViewPropTypes } from "react-native";
 
 import HeaderLabel from "./article-header-label";

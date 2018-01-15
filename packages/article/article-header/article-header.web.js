@@ -1,16 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, ViewPropTypes } from "react-native";
-import ArticleLabel from "@times-components/article-label";
 
 import HeaderLabel from "./article-header-label";
 import HeaderFlags from "./article-header-flags";
 import HeaderStandfirst from "./article-header-standfirst";
 import styles from "../styles/article-header";
 
-import {
-  HeadlineContainer
-} from "../styles/article-header/responsive";
+import { HeadlineContainer } from "../styles/article-header/responsive";
 
 const { style: ViewStylePropTypes } = ViewPropTypes;
 
