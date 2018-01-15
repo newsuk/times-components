@@ -20,4 +20,8 @@ HeaderStandfirst.propTypes = {
   standfirst: PropTypes.string
 };
 
+HeaderStandfirst.defaultProps = {
+  standfirst: null
+}
+
 export default HeaderStandfirst;

@@ -2,33 +2,17 @@ import React from "react";
 import PropTypes from "prop-types";
 import { View, ViewPropTypes } from "react-native";
 import ArticleLabel from "@times-components/article-label";
+
+import HeaderLabel from "./article-header-label";
 import HeaderFlags from "./article-header-flags";
 import HeaderStandfirst from "./article-header-standfirst";
 import styles from "../styles/article-header";
 
 import {
-  HeadlineContainer,
-  LabelContainer
+  HeadlineContainer
 } from "../styles/article-header/responsive";
 
 const { style: ViewStylePropTypes } = ViewPropTypes;
-
-const HeaderLabel = ({ label }) => {
-  if (!label) return null;
-  return (
-    <LabelContainer
-      accessibilityLabel="label"
-      testID="label"
-      style={styles.articleLabel}
-    >
-      <ArticleLabel title={label} color="#13354E" />
-    </LabelContainer>
-  );
-};
-
-HeaderLabel.propTypes = {
-  label: PropTypes.string
-};
 
 const ArticleHeader = ({ label, headline, standfirst, flags, style }) => (
   <View style={[...style]}>
