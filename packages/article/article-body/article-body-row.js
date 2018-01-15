@@ -6,8 +6,8 @@ import ArticleImage from "@times-components/article-image";
 import PullQuote from "@times-components/pull-quote";
 import BodyParagraph from "./article-body-paragraph";
 
-const ArticleRow = ({ content: { data, index } }) => {
-  return renderTrees([data], {
+const ArticleRow = ({ content: { data, index } }) =>
+  renderTrees([data], {
     paragraph(key, attributes, children) {
       return (
         <BodyParagraph key={index} uid={index}>
@@ -20,13 +20,13 @@ const ArticleRow = ({ content: { data, index } }) => {
         <View key={key}>
           <ArticleImage
             imageOptions={{
-              display: display,
-              ratio: ratio,
-              url: url
+              display,
+              ratio,
+              url
             }}
             captionOptions={{
-              caption: caption,
-              credits: credits
+              caption,
+              credits
             }}
           />
         </View>
@@ -45,7 +45,6 @@ const ArticleRow = ({ content: { data, index } }) => {
       );
     }
   });
-};
 
 ArticleRow.propTypes = {
   content: PropTypes.shape({

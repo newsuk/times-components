@@ -23,8 +23,8 @@ export const responsiveImageWrapper = imageType => {
   }
 };
 
-const ArticleRow = ({ content: { data, index } }) => {
-  return renderTrees([data], {
+const ArticleRow = ({ content: { data, index } }) =>
+  renderTrees([data], {
     paragraph(key, attributes, children) {
       return (
         <BodyParagraph key={index} uid={index}>
@@ -38,13 +38,13 @@ const ArticleRow = ({ content: { data, index } }) => {
         <ImageWrapper key={key}>
           <ArticleImage
             imageOptions={{
-              display: display,
-              ratio: ratio,
-              url: url
+              display,
+              ratio,
+              url
             }}
             captionOptions={{
-              caption: caption,
-              credits: credits
+              caption,
+              credits
             }}
           />
         </ImageWrapper>
@@ -63,7 +63,6 @@ const ArticleRow = ({ content: { data, index } }) => {
       );
     }
   });
-};
 
 ArticleRow.propTypes = {
   content: PropTypes.shape({
