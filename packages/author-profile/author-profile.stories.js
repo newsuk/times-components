@@ -2,7 +2,10 @@ import React from "react";
 import { storiesOf } from "dextrose/storiesOfOverloader";
 import { decorateAction } from "@storybook/addon-actions";
 import { AuthorProfileProvider } from "@times-components/provider";
-import { MockedProvider, fragmentMatcher } from "@times-components/utils/graphql";
+import {
+  MockedProvider,
+  fragmentMatcher
+} from "@times-components/utils/graphql";
 import storybookReporter from "@times-components/tealium/storybook";
 import {
   makeAuthor,
