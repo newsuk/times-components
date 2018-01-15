@@ -42,6 +42,7 @@
     "@storybook/react-native": "3.2.18",
     "@times-components/eslint-config-thetimes": "0.1.0",
     "@times-components/jest-configurator": "0.0.15",
+    "@times-components/tealium": "0.1.8",
     "@times-components/utils": "0.1.0",
     "apollo-utilities": "1.0.4",
     "babel-cli": "6.24.1",

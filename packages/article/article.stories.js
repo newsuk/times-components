@@ -7,6 +7,7 @@ import { ArticleProvider } from "@times-components/provider";
 import { MockedProvider } from "@times-components/utils/graphql";
 import { addTypenameToDocument } from "apollo-utilities";
 import { query as articleQuery } from "@times-components/provider/article";
+import storybookReporter from "@times-components/tealium/storybook";
 import Article from "./article";
 
 const fullArticleTypenameFixture = require("./fixtures/full-article-typename.json");
@@ -39,7 +40,7 @@ storiesOf("Article", module)
     const props = {
       ...fullArticleFixture.data,
       isLoading: false,
-      analyticsStream: () => {}
+      analyticsStream: storybookReporter
     };
 
     return <Article {...props} />;
@@ -48,14 +49,14 @@ storiesOf("Article", module)
     const props = {
       ...fullLongArticleFixture.data,
       isLoading: false,
-      analyticsStream: () => {}
+      analyticsStream: storybookReporter
     };
 
     return <Article {...props} />;
   })
   .add("Loading", () => {
     const props = {
-      analyticsStream: () => {},
+      analyticsStream: storybookReporter,
       isLoading: true
     };
 
@@ -63,7 +64,7 @@ storiesOf("Article", module)
   })
   .add("Error", () => {
     const props = {
-      analyticsStream: () => {},
+      analyticsStream: storybookReporter,
       error: { message: "An example error." }
     };
 
@@ -77,7 +78,7 @@ storiesOf("Article", module)
             article={article}
             isLoading={isLoading}
             error={error}
-            analyticsStream={() => {}}
+            analyticsStream={storybookReporter}
           />
         )}
       </ArticleProvider>
@@ -95,49 +96,72 @@ storiesOf("Article", module)
           >
             Click to render the ads
           </a>
-          <Article {...fullArticleFixture.data} analyticsStream={() => {}} />
+          <Article
+            {...fullArticleFixture.data}
+            analyticsStream={storybookReporter}
+          />
         </div>
       );
     }
 
-    return <Article {...fullArticleFixture.data} analyticsStream={() => {}} />;
+    return (
+      <Article
+        {...fullArticleFixture.data}
+        analyticsStream={storybookReporter}
+      />
+    );
   })
   .add("Fixtures - No ads", () => (
-    <Article {...articleFixtureNoAds.data} analyticsStream={() => {}} />
+    <Article
+      {...articleFixtureNoAds.data}
+      analyticsStream={storybookReporter}
+    />
   ))
   .add("Fixtures - No standfirst", () => (
-    <Article {...articleFixtureNoStandfirst.data} analyticsStream={() => {}} />
+    <Article
+      {...articleFixtureNoStandfirst.data}
+      analyticsStream={storybookReporter}
+    />
   ))
   .add("Fixtures - No label", () => (
-    <Article {...articleFixtureNoLabel.data} analyticsStream={() => {}} />
+    <Article
+      {...articleFixtureNoLabel.data}
+      analyticsStream={storybookReporter}
+    />
   ))
   .add("Fixtures - No flags", () => (
-    <Article {...articleFixtureNoFlags.data} analyticsStream={() => {}} />
+    <Article
+      {...articleFixtureNoFlags.data}
+      analyticsStream={storybookReporter}
+    />
   ))
   .add("Fixtures - No standfirst, no label", () => (
     <Article
       {...articleFixtureNoStandfirstNoLabel.data}
-      analyticsStream={() => {}}
+      analyticsStream={storybookReporter}
     />
   ))
   .add("Fixtures - No standfirst, no flags", () => (
     <Article
       {...articleFixtureNoStandfirstNoFlags.data}
-      analyticsStream={() => {}}
+      analyticsStream={storybookReporter}
     />
   ))
   .add("Fixtures - No label, no flags", () => (
     <Article
       {...articleFixtureNoLabelNoFlags.data}
-      analyticsStream={() => {}}
+      analyticsStream={storybookReporter}
     />
   ))
   .add("Fixtures - No label, no flags, no standfirst", () => (
     <Article
       {...articleFixtureNoLabelNoFlagsNoStandFirst.data}
-      analyticsStream={() => {}}
+      analyticsStream={storybookReporter}
     />
   ))
   .add("Fixtures - No lead asset", () => (
-    <Article {...articleFixtureNoLeadAsset.data} analyticsStream={() => {}} />
+    <Article
+      {...articleFixtureNoLeadAsset.data}
+      analyticsStream={storybookReporter}
+    />
   ));
