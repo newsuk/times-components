@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.16.0"></a>
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.15.20...@times-components/author-head@0.16.0) (2018-01-15)
+
+
+### Features
+
+* adds tealium reporting to article stories ([#527](https://github.com/newsuk/times-components/issues/527)) ([084e56e](https://github.com/newsuk/times-components/commit/084e56e))
+
+
+
+
 <a name="0.15.20"></a>
 ## [0.15.20](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.15.19...@times-components/author-head@0.15.20) (2018-01-15)
 
