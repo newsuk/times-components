@@ -39,7 +39,9 @@ const withDebounce = (WrappedComponent, debounceTimeMs) => {
   WithDebounce.displayName = `WithDebounce(${getDisplayName(
     WrappedComponent
   )})`;
-  WithDebounce.propTypes = WrappedComponent.propTypes;
+  WithDebounce.propTypes = { ...WrappedComponent.propTypes };
+  delete WithDebounce.propTypes.debouncedProps;
+  delete WithDebounce.propTypes.isDebouncing;
   WithDebounce.defaultProps = WrappedComponent.defaultProps;
   hoistNonReactStatic(WithDebounce, WrappedComponent);
 

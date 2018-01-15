@@ -27,6 +27,16 @@ const getQueryVariables = definitions =>
     )
   );
 
+export const makeGraphqlOptions = (
+  variableNames,
+  propsToVariables = identity
+) => props => ({
+  variables: _pick(
+    propsToVariables(props.debouncedProps || props),
+    variableNames
+  )
+});
+
 const connectGraphql = (query, debounceTimeMs, propsToVariables) => {
   if (
     process.env.NODE_ENV !== "production" &&
@@ -64,17 +74,3 @@ const connectGraphql = (query, debounceTimeMs, propsToVariables) => {
 };
 
 export default connectGraphql;
-
-export const makeGraphqlOptions = (
-  variableNames,
-  propsToVariables = identity
-) => {
-  return props => {
-    return {
-      variables: _pick(
-        propsToVariables(props.debouncedProps || props),
-        variableNames
-      )
-    };
-  };
-};

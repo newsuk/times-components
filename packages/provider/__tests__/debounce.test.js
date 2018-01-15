@@ -13,15 +13,14 @@ jest.useFakeTimers();
 // Jest has done this in v22, so this can be removed if we upgrade
 jest.advanceTimersByTime = jest.runTimersToTime;
 
-/* eslint react/prop-types: 0 */
 class Inner extends React.Component {
   constructor(props) {
     super(props);
     this.numberOfDebouncedPropsUpdates = 0;
   }
 
-  componentWillReceiveProps(props) {
-    if (this.props.debouncedProps !== props.debouncedProps) {
+  componentWillReceiveProps({ debouncedProps }) {
+    if (debouncedProps !== this.props.debouncedProps) {
       this.numberOfDebouncedPropsUpdates += 1;
     }
   }
@@ -30,6 +29,9 @@ class Inner extends React.Component {
     return "hello";
   }
 }
+Inner.propTypes = {
+  debouncedProps: PropTypes.shape({}).isRequired
+};
 
 describe("Debounce Tests", () => {
   it("adds debounceProps to the props passed to the inner component", () => {
@@ -120,15 +122,13 @@ describe("Debounce Tests", () => {
   });
 
   it("has appropriate static members on the outer component", () => {
-    /* eslint react/no-multi-comp: 0 */
-    class InnerWithStatics extends React.Component {
-      static staticMember = "staticMemberValue";
-      render() {
-        return this.props.foo;
-      }
-    }
+    const InnerWithStatics = props => props.foo;
+    InnerWithStatics.staticMember = "staticMemberValue";
     InnerWithStatics.propTypes = {
-      foo: PropTypes.string
+      foo: PropTypes.string,
+      debouncedProps: PropTypes.shape({
+        foo: PropTypes.string
+      }).isRequired
     };
     InnerWithStatics.defaultProps = {
       foo: ""
@@ -138,7 +138,7 @@ describe("Debounce Tests", () => {
     const Outer = withDebounce(InnerWithStatics, 1000);
     expect(Outer.displayName).toEqual("WithDebounce(InnerWithStatics)");
     expect(Outer.staticMember).toEqual("staticMemberValue");
-    expect(Outer.propTypes).toEqual({ foo: PropTypes.string });
+    expect(Outer.propTypes).toEqual({ foo: PropTypes.string }); // debouncedProps removed
     expect(Outer.defaultProps).toEqual(InnerWithStatics.defaultProps);
   });
 });

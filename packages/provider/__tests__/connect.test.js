@@ -15,7 +15,7 @@ it("Prefers the debouncedProps object, if it exists", () => {
 });
 
 it("Transforms props with the propsToVariables function", () => {
-  const propsToVariables = ({a, b}) => ({A: a + 10, B: b + 10});
+  const propsToVariables = ({ a, b }) => ({ A: a + 10, B: b + 10 });
   const options = makeGraphqlOptions(["A", "B"], propsToVariables);
   const props = { a: 1, b: 2, c: 3 };
 
