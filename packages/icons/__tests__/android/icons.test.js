@@ -11,6 +11,6 @@ jest.mock("react-native", () => {
   return reactNative;
 });
 
-describe("Icons test on android", () => {
+describe("Icons test on android: ", () => {
   shared();
 });
