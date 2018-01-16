@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-head",
-  "version": "0.16.2",
+  "version": "0.16.3",
   "main": "author-head",
   "scripts": {
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
