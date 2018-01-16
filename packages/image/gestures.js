@@ -4,6 +4,8 @@ import PropTypes from "prop-types";
 
 const distanceBetweenTouches = (
   [{ pageX: x1, pageY: y1 }, { pageX: x2, pageY: y2 }]
+  // Android JS version doesn't support **
+  // eslint-disable-next-line no-restricted-properties
 ) => Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2 ));
 
 const angleBetweenTouches = (
