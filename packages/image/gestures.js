@@ -64,6 +64,9 @@ class Gestures extends Component {
   }
 
   handlePinchChange({ nativeEvent: { touches } }) {
+    if (touches.length < 2) {
+      return;
+    }
     const zoomRatio = distanceBetweenTouches(touches) / this.startDistance;
     const currentAngle = angleBetweenTouches(touches);
     const angle = (currentAngle - this.startAngle) % 360;
