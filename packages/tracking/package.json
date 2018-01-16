@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tracking",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "main": "tracking",
   "scripts": {
     "test:native": "jest --config='./jest.config.json'",
@@ -32,9 +32,9 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.2.18",
-    "@times-components/eslint-config-thetimes": "0.1.1",
+    "@times-components/eslint-config-thetimes": "0.1.2",
     "@times-components/storybook": "0.2.2",
-    "@times-components/tealium": "0.1.9",
+    "@times-components/tealium": "0.1.10",
     "dextrose": "1.2.14",
     "enzyme": "3.2.0",
     "enzyme-adapter-react-16": "1.1.0",
