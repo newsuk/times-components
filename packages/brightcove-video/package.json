@@ -1,6 +1,6 @@
 {
   "name": "@times-components/brightcove-video",
-  "version": "1.10.3",
+  "version": "1.10.4",
   "main": "brightcove-video",
   "scripts": {
     "test:watch": "jest --bail --verbose --watchAll",
@@ -44,7 +44,7 @@
   "devDependencies": {
     "@storybook/addon-actions": "3.2.18",
     "@storybook/react-native": "3.2.18",
-    "@times-components/eslint-config-thetimes": "0.1.1",
+    "@times-components/eslint-config-thetimes": "0.1.2",
     "dextrose": "1.2.14",
     "eslint": "4.9.0",
     "jest": "21.2.1",

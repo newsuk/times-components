@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-flag",
-  "version": "0.9.8",
+  "version": "0.9.9",
   "description": "The article flag (sponsored, new, updated, etc)",
   "main": "article-flag",
   "scripts": {
@@ -45,7 +45,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.2.18",
-    "@times-components/eslint-config-thetimes": "0.1.1",
+    "@times-components/eslint-config-thetimes": "0.1.2",
     "dextrose": "1.2.14",
     "eslint": "4.9.0",
     "jest": "21.2.1",

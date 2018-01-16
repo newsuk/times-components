@@ -257,121 +257,121 @@ exports[`renders profile 1`] = `
           <View
             accessibilityRole="banner"
             style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#F9F8F3",
-                "flexDirection": "column",
-                "paddingBottom": 30,
-                "paddingTop": 20,
-                "width": "100%",
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F9F8F3",
+                  "flexDirection": "column",
+                  "paddingBottom": 40,
+                  "width": "100%",
+                },
+                Object {
+                  "paddingTop": 30,
+                },
+              ]
             }
           >
             <View
+              aspectRatio={1}
               style={
-                Object {
-                  "marginBottom": 20,
-                }
-              }
-            >
-              <View
-                aspectRatio={1}
-                style={
+                Array [
                   Object {
                     "borderColor": "#FFF",
-                    "borderRadius": 50,
-                    "borderWidth": 5,
+                    "marginBottom": 20,
                     "marginLeft": "auto",
                     "marginRight": "auto",
                     "overflow": "hidden",
+                  },
+                  Object {
+                    "borderRadius": 50,
                     "width": 100,
+                  },
+                ]
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
                   }
                 }
               >
-                <View
-                  style={
+                <Image
+                  onLoad={[Function]}
+                  source={
                     Object {
-                      "height": "100%",
-                      "width": "100%",
+                      "uri": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
                     }
                   }
-                >
-                  <Image
-                    onLoad={[Function]}
-                    source={
+                  style={
+                    Array [
                       Object {
-                        "uri": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
-                      }
-                    }
-                    style={
-                      Array [
-                        Object {
-                          "bottom": 0,
-                          "left": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                        },
-                        Object {
-                          "height": "100%",
-                          "width": "100%",
-                        },
-                        undefined,
-                      ]
-                    }
-                  />
+                        "bottom": 0,
+                        "left": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                      },
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      },
+                      undefined,
+                    ]
+                  }
+                />
+                <View
+                  onLayout={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "flex": 1,
+                      },
+                      null,
+                    ]
+                  }
+                >
                   <View
-                    onLayout={[Function]}
                     style={
-                      Array [
-                        Object {
-                          "flex": 1,
-                        },
-                        null,
-                      ]
+                      Object {
+                        "flex": 1,
+                      }
                     }
                   >
-                    <View
-                      style={
+                    <BVLinearGradient
+                      colors={
+                        Array [
+                          "#f9f9f9",
+                          "#ededed",
+                        ]
+                      }
+                      end={
                         Object {
-                          "flex": 1,
+                          "x": -0.09302964577578221,
+                          "y": 0.11488204504197774,
                         }
                       }
-                    >
-                      <BVLinearGradient
-                        colors={
-                          Array [
-                            "#f9f9f9",
-                            "#ededed",
-                          ]
+                      locations={
+                        Array [
+                          0,
+                          1,
+                        ]
+                      }
+                      start={
+                        Object {
+                          "x": 1,
+                          "y": 0,
                         }
-                        end={
+                      }
+                      style={
+                        Array [
                           Object {
-                            "x": -0.09302964577578221,
-                            "y": 0.11488204504197774,
-                          }
-                        }
-                        locations={
-                          Array [
-                            0,
-                            1,
-                          ]
-                        }
-                        start={
-                          Object {
-                            "x": 1,
-                            "y": 0,
-                          }
-                        }
-                        style={
-                          Array [
-                            Object {
-                              "flex": 1,
-                            },
-                          ]
-                        }
-                      />
-                    </View>
+                            "flex": 1,
+                          },
+                        ]
+                      }
+                    />
                   </View>
                 </View>
               </View>
@@ -416,7 +416,7 @@ exports[`renders profile 1`] = `
               style={
                 Object {
                   "flexDirection": "row",
-                  "paddingBottom": 16,
+                  "paddingBottom": 8,
                   "paddingTop": 16,
                 }
               }
@@ -448,7 +448,7 @@ exports[`renders profile 1`] = `
                     Object {
                       "color": "#006699",
                       "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 18,
+                      "fontSize": 15,
                       "paddingLeft": 5,
                       "textDecorationLine": "none",
                     },
@@ -1959,14 +1959,18 @@ exports[`renders profile content component 1`] = `
           <View
             accessibilityRole="banner"
             style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#F9F8F3",
-                "flexDirection": "column",
-                "paddingBottom": 30,
-                "paddingTop": 20,
-                "width": "100%",
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F9F8F3",
+                  "flexDirection": "column",
+                  "paddingBottom": 40,
+                  "width": "100%",
+                },
+                Object {
+                  "paddingTop": 30,
+                },
+              ]
             }
           >
             <Text
@@ -2009,7 +2013,7 @@ exports[`renders profile content component 1`] = `
               style={
                 Object {
                   "flexDirection": "row",
-                  "paddingBottom": 16,
+                  "paddingBottom": 8,
                   "paddingTop": 16,
                 }
               }
@@ -2041,7 +2045,7 @@ exports[`renders profile content component 1`] = `
                     Object {
                       "color": "#006699",
                       "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 18,
+                      "fontSize": 15,
                       "paddingLeft": 5,
                       "textDecorationLine": "none",
                     },
@@ -3070,14 +3074,18 @@ exports[`renders profile content empty 1`] = `
           <View
             accessibilityRole="banner"
             style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#F9F8F3",
-                "flexDirection": "column",
-                "paddingBottom": 30,
-                "paddingTop": 20,
-                "width": "100%",
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F9F8F3",
+                  "flexDirection": "column",
+                  "paddingBottom": 40,
+                  "width": "100%",
+                },
+                Object {
+                  "paddingTop": 30,
+                },
+              ]
             }
           >
             <Text
@@ -3761,7 +3769,7 @@ exports[`renders profile content loading 1`] = `
               Object {
                 "height": 100,
                 "position": "absolute",
-                "top": 23,
+                "top": 30,
                 "width": 100,
               }
             }
@@ -3771,7 +3779,6 @@ exports[`renders profile content loading 1`] = `
                 Object {
                   "borderColor": "#FFF",
                   "borderRadius": 50,
-                  "borderWidth": 5,
                   "height": 100,
                   "overflow": "hidden",
                   "width": 100,
@@ -4487,7 +4494,7 @@ exports[`renders profile loading 1`] = `
               Object {
                 "height": 100,
                 "position": "absolute",
-                "top": 23,
+                "top": 30,
                 "width": 100,
               }
             }
@@ -4497,7 +4504,6 @@ exports[`renders profile loading 1`] = `
                 Object {
                   "borderColor": "#FFF",
                   "borderRadius": 50,
-                  "borderWidth": 5,
                   "height": 100,
                   "overflow": "hidden",
                   "width": 100,
@@ -5648,14 +5654,18 @@ exports[`renders the author head 1`] = `
   <View
     accessibilityRole="banner"
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#F9F8F3",
-        "flexDirection": "column",
-        "paddingBottom": 30,
-        "paddingTop": 20,
-        "width": "100%",
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F9F8F3",
+          "flexDirection": "column",
+          "paddingBottom": 40,
+          "width": "100%",
+        },
+        Object {
+          "paddingTop": 30,
+        },
+      ]
     }
   >
     <Text
@@ -5698,7 +5708,7 @@ exports[`renders the author head 1`] = `
       style={
         Object {
           "flexDirection": "row",
-          "paddingBottom": 16,
+          "paddingBottom": 8,
           "paddingTop": 16,
         }
       }
@@ -5730,7 +5740,7 @@ exports[`renders the author head 1`] = `
             Object {
               "color": "#006699",
               "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 18,
+              "fontSize": 15,
               "paddingLeft": 5,
               "textDecorationLine": "none",
             },
@@ -5883,14 +5893,18 @@ exports[`renders with no author 1`] = `
           <View
             accessibilityRole="banner"
             style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#F9F8F3",
-                "flexDirection": "column",
-                "paddingBottom": 30,
-                "paddingTop": 20,
-                "width": "100%",
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F9F8F3",
+                  "flexDirection": "column",
+                  "paddingBottom": 40,
+                  "width": "100%",
+                },
+                Object {
+                  "paddingTop": 30,
+                },
+              ]
             }
           >
             <Text

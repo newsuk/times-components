@@ -1,6 +1,6 @@
 {
   "name": "@times-components/responsive-styles",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "description": "Higher-order component to apply responsive styles to a component (web usage only)",
   "main": "responsive-styles",
   "scripts": {
@@ -29,8 +29,8 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.2.18",
-    "@times-components/eslint-config-thetimes": "0.1.1",
-    "@times-components/jest-configurator": "0.0.16",
+    "@times-components/eslint-config-thetimes": "0.1.2",
+    "@times-components/jest-configurator": "0.0.17",
     "enzyme": "3.2.0",
     "enzyme-to-json": "3.2.2",
     "eslint": "4.9.0",

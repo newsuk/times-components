@@ -1,6 +1,6 @@
 {
   "name": "@times-components/watermark",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "description": "Watermark",
   "main": "watermark",
   "scripts": {
@@ -42,7 +42,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.2.18",
-    "@times-components/eslint-config-thetimes": "0.1.1",
+    "@times-components/eslint-config-thetimes": "0.1.2",
     "dextrose": "1.2.14",
     "eslint": "4.9.0",
     "jest": "21.2.1",

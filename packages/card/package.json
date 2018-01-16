@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "0.16.21",
+  "version": "0.16.22",
   "main": "card",
   "scripts": {
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
@@ -33,9 +33,9 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.2.18",
-    "@times-components/article-summary": "0.14.1",
-    "@times-components/eslint-config-thetimes": "0.1.1",
-    "@times-components/jest-configurator": "0.0.16",
+    "@times-components/article-summary": "0.14.2",
+    "@times-components/eslint-config-thetimes": "0.1.2",
+    "@times-components/jest-configurator": "0.0.17",
     "@times-components/storybook": "0.2.2",
     "dextrose": "1.2.14",
     "enzyme": "3.2.0",
@@ -51,10 +51,10 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/gradient": "0.3.9",
-    "@times-components/image": "1.12.2",
-    "@times-components/jest-configurator": "0.0.16",
-    "@times-components/responsive-styles": "0.2.8",
+    "@times-components/gradient": "0.3.10",
+    "@times-components/image": "1.12.3",
+    "@times-components/jest-configurator": "0.0.17",
+    "@times-components/responsive-styles": "0.2.9",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.0",
     "svgs": "3.1.1"

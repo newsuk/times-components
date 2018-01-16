@@ -1,6 +1,6 @@
 {
   "name": "@times-components/date-publication",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "Date and Publication properties",
   "main": "date-publication",
   "scripts": {
@@ -42,7 +42,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.2.18",
-    "@times-components/eslint-config-thetimes": "0.1.1",
+    "@times-components/eslint-config-thetimes": "0.1.2",
     "dextrose": "1.2.14",
     "eslint": "4.9.0",
     "jest": "21.2.1",

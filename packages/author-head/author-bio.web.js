@@ -7,7 +7,6 @@ const BioContainer = withResponsiveStyles(View, {
   base: () => `
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 32px;
   `,
   mediumUp: () => `
     padding-left: 0;
