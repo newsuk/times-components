@@ -1,7 +1,10 @@
 import React from "react";
-import { View } from "react-native";
+import { View, Text } from "react-native";
+import PropTypes from "prop-types";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import AuthorHeadContainerBase from "./author-head-container.base";
+import styles from "./author-head-container.styles";
+
+const { propTypes: { style: TextPropTypesStyle } } = Text;
 
 const AuthorHeadWrapper = withResponsiveStyles(View, {
   base: () => `
@@ -13,7 +16,26 @@ const AuthorHeadWrapper = withResponsiveStyles(View, {
 });
 
 const AuthorHeadContainer = props => (
-  <AuthorHeadContainerBase {...props} WrapperComponent={AuthorHeadWrapper} />
+  <View style={styles.wrapper} pointerEvents="box-none">
+    <AuthorHeadWrapper
+      accessibilityRole="banner"
+      style={[styles.container, props.style]}
+    >
+      {props.children}
+    </AuthorHeadWrapper>
+  </View>
 );
+
+AuthorHeadContainer.defaultProps = {
+  style: {}
+};
+
+AuthorHeadContainer.propTypes = {
+  style: TextPropTypesStyle,
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element)
+  ]).isRequired
+};
 
 export default AuthorHeadContainer;
