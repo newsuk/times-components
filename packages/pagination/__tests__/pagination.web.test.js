@@ -46,4 +46,15 @@ describe("Pagination Web", () => {
     expect(onChangePage).toHaveBeenCalledTimes(1);
     expect(getResultsText()).toEqual("Showing 81 - 100 of 500 results");
   });
+
+  it("Updates displayPage immediately when props.page is updated", () => {
+    const component = mount(<Pagination count={41} page={1} />);
+    expect(component.find("Results").text()).toEqual(
+      "Showing 1 - 20 of 41 results"
+    );
+    component.setProps({ page: 2 });
+    expect(component.find("Results").text()).toEqual(
+      "Showing 21 - 40 of 41 results"
+    );
+  });
 });

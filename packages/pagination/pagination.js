@@ -40,6 +40,8 @@ const styles = StyleSheet.create({
   }
 });
 
+const debounceIntervalMs = 250;
+
 class Pagination extends React.Component {
   constructor(props) {
     super(props);
@@ -60,7 +62,7 @@ class Pagination extends React.Component {
     clearTimeout(this.debounceTimeout);
     this.debounceTimeout = setTimeout(
       this.props.onChangePage,
-      250,
+      debounceIntervalMs,
       nextPage,
       direction
     );

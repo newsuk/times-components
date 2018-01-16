@@ -106,21 +106,4 @@ export default Pagination => () => {
       destinationPage: 1
     });
   });
-
-  // it("debounces calls to onChangePage", () => {
-
-  //   // jest.useFakeTimers();
-  //   const onChangePage = jest.fn();
-  //   const component = shallow(<Pagination count={500} page={2} onChangePage={onChangePage} />);
-
-  //   const clickNextLink = () => component.dive().find("Link").at(1).simulate("press");
-  //   const getResultsText = () => component.update().dive().find("Results").props().children;
-
-  //   expect(getResultsText()).toEqual("Showing 21 - 40 of 500 results");
-  //   clickNextLink();
-  //   expect(component.update().dive().state()).toEqual({displayPage: 3});
-  //   expect(getResultsText()).toEqual("Showing 21 - 40 of 500 results");
-
-  //   // jest.runAllTimers();
-  // });
 };

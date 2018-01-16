@@ -32,7 +32,7 @@ export default withPageState => () => {
   const testRenderingInnerComponentWithPage = (currentPage, navigateToPage) => {
     const Component = props => <Text>page:{props.page}</Text>;
     Component.propTypes = {
-      page: PropTypes.string.isRequired
+      page: PropTypes.number.isRequired
     };
     const PageChanger = withPageState(Component);
 
