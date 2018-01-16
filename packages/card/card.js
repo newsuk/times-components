@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, ViewPropTypes } from "react-native";
 import Image from "@times-components/image";
 import Loading from "./card-loading";
 
-const { style: ViewPropTypesStyle } = View.propTypes;
+const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 const styles = StyleSheet.create({
   imageContainer: {
