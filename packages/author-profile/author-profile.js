@@ -14,7 +14,7 @@ const castArticle = (page, pageSize) => article => ({
   ...article,
   page,
   pageSize,
-  publishedTime: new Date(article.publishedTime)
+  publishedTime: article.publishedTime
 });
 
 const AuthorProfile = ({
