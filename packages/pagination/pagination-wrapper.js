@@ -7,8 +7,6 @@ export default Component => {
     constructor(props) {
       super(props);
       this.state = props;
-
-      this.handleChangePage = this.handleChangePage.bind(this);
     }
 
     componentWillReceiveProps(nextProps) {
@@ -19,19 +17,12 @@ export default Component => {
       );
     }
 
-    handleChangePage(event, page) {
+    onChangePage = page => {
       this.setState({ page });
-      event.preventDefault();
-    }
+    };
 
     render() {
-      return (
-        <Component
-          {...this.state}
-          onNext={this.handleChangePage}
-          onPrev={this.handleChangePage}
-        />
-      );
+      return <Component {...this.state} onChangePage={this.onChangePage} />;
     }
   }
 

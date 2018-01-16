@@ -433,40 +433,32 @@ it("emits scroll tracking events for author profile content", () => {
   );
 });
 
-it("scrolls to the top when moving to the previous page", () => {
+const checkScrollToTop = next => {
+  jest.useFakeTimers();
+
   const onScroll = jest.spyOn(window, "scroll");
-  const onPrev = jest.fn();
   const component = mount(
     <AuthorProfileContent
       {...authorProfileContentProps}
       page={2}
-      onPrev={onPrev}
+      onChangePage={() => {}}
     />
   );
 
   component
-    .find({ href: "?page=1" })
+    .find({ href: next ? "?page=3" : "?page=1" })
     .first()
     .simulate("click");
 
+  jest.runAllTimers();
+
   expect(onScroll).toHaveBeenCalledWith({ left: 0, top: 0 });
+};
+
+it("scrolls to the top when moving to the previous page", () => {
+  checkScrollToTop(false);
 });
 
 it("scrolls to the top when moving to the next page", () => {
-  const onScroll = jest.spyOn(window, "scroll");
-  const onNext = jest.fn();
-  const component = mount(
-    <AuthorProfileContent
-      {...authorProfileContentProps}
-      page={2}
-      onNext={onNext}
-    />
-  );
-
-  component
-    .find({ href: "?page=3" })
-    .first()
-    .simulate("click");
-
-  expect(onScroll).toHaveBeenCalledWith({ left: 0, top: 0 });
+  checkScrollToTop(true);
 });

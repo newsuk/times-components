@@ -192,8 +192,13 @@ it("handles an article press", () => {
   });
 });
 
-it("invokes onPrev when the previous link is pressed", () => {
-  const onPrev = jest.fn();
+const testInvokesOnChangePageWhenLinkPressed = (
+  linkIndex,
+  onChangePageArgs
+) => {
+  jest.useFakeTimers();
+
+  const onChangePage = jest.fn();
   const results = pagedResult(0, 3);
 
   const comp = RCT.create(
@@ -209,49 +214,24 @@ it("invokes onPrev when the previous link is pressed", () => {
       imageRatio={3 / 2}
       onTwitterLinkPress={() => {}}
       onArticlePress={() => {}}
-      onPrev={onPrev}
+      onChangePage={onChangePage}
     />
   ).root;
 
-  comp
-    .findAllByType(Pagination)[0]
-    .findAllByType(Link)[0]
-    .props.onPress();
+  const links = comp.findAllByType(Pagination)[0].findAllByType(Link);
+  links[linkIndex].props.onPress();
 
-  expect(onPrev).toHaveBeenCalled();
+  jest.runAllTimers();
+
+  expect(onChangePage).toHaveBeenCalledWith(...onChangePageArgs);
+};
+
+it("invokes onPrev when the previous link is pressed", () => {
+  testInvokesOnChangePageWhenLinkPressed(0, [1, "previous"]);
 });
 
 it("invokes onNext when the next link is pressed", () => {
-  const onNext = jest.fn();
-  const results = pagedResult(0, 3);
-
-  const comp = RCT.create(
-    <AuthorProfileContent
-      count={10}
-      articles={results.data.author.articles.list}
-      author={authorProfileFixture.data.author}
-      isLoading={false}
-      articlesLoading={false}
-      slug="deborah-haynes"
-      page={2}
-      pageSize={3}
-      imageRatio={3 / 2}
-      onTwitterLinkPress={() => {}}
-      onArticlePress={() => {}}
-      onNext={onNext}
-    />
-  ).root;
-
-  comp
-    .findAllByType(Pagination)[0]
-    .findAllByType(Link)[1]
-    .props.onPress();
-
-  expect(onNext).toHaveBeenCalled();
+  testInvokesOnChangePageWhenLinkPressed(1, [3, "next"]);
 });
-
-it("scrolls to top when next page is clicked");
-
-it("scrolls to top when prev page is clicked");
 
 test(AuthorProfileContent);

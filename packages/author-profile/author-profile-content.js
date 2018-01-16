@@ -64,8 +64,7 @@ class AuthorProfileContent extends React.Component {
       jobTitle,
       name,
       onArticlePress,
-      onNext,
-      onPrev,
+      onChangePage,
       onTwitterLinkPress,
       page,
       pageSize,
@@ -98,15 +97,6 @@ class AuthorProfileContent extends React.Component {
       );
     }
 
-    const scrollToTopNextFrame = () => {
-      this.scrollAnimationFrame = global.requestAnimationFrame(() => {
-        this.listRef.scrollToOffset({
-          offset: 0,
-          animated: true
-        });
-      });
-    };
-
     const paginationComponent = (
       { hideResults = false, hideTopKeyline = false } = {}
     ) => (
@@ -114,13 +104,14 @@ class AuthorProfileContent extends React.Component {
         count={count}
         hideResults={hideResults}
         hideTopKeyline={hideTopKeyline}
-        onNext={(...args) => {
-          onNext(...args);
-          scrollToTopNextFrame();
-        }}
-        onPrev={(...args) => {
-          onPrev(...args);
-          scrollToTopNextFrame();
+        onChangePage={(...args) => {
+          onChangePage(...args);
+          this.scrollAnimationFrame = global.requestAnimationFrame(() => {
+            this.listRef.scrollToOffset({
+              offset: 0,
+              animated: true
+            });
+          });
         }}
         page={page}
         pageSize={pageSize}

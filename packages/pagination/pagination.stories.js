@@ -13,33 +13,25 @@ storiesOf("Pagination", module)
     <Pagination
       page={1}
       count={60}
-      onNext={action("first-page-next")}
-      onPrev={action("first-page-prev")}
+      onChangePage={action("first-page-change")}
     />
   ))
   .add("Another page", () => (
     <Pagination
       page={2}
       count={60}
-      onNext={action("another-page-next")}
-      onPrev={action("another-page-prev")}
+      onChangePage={action("another-page-change")}
     />
   ))
   .add("Last page", () => (
-    <Pagination
-      page={3}
-      count={60}
-      onNext={action("last-page-next")}
-      onPrev={action("last-page-prev")}
-    />
+    <Pagination page={3} count={60} onChangePage={action("last-page-change")} />
   ))
   .add("First page without results information", () => (
     <Pagination
       page={1}
       count={60}
       hideResults
-      onNext={action("first-page-next-compact")}
-      onPrev={action("first-page-prev-compact")}
+      onChangePage={action("first-page-change-compact")}
     />
   ))
   .add("Another page without results information", () => (
@@ -47,8 +39,7 @@ storiesOf("Pagination", module)
       page={2}
       count={60}
       hideResults
-      onNext={action("another-page-next-compact")}
-      onPrev={action("another-page-prev-compact")}
+      onChangePage={action("another-page-change-compact")}
     />
   ))
   .add("Last page without results information", () => (
@@ -56,8 +47,7 @@ storiesOf("Pagination", module)
       page={3}
       count={60}
       hideResults
-      onNext={action("last-page-next-compact")}
-      onPrev={action("last-page-prev-compact")}
+      onChangePage={action("last-page-change-compact")}
     />
   ))
   .add("Without top keyline", () => (
@@ -65,8 +55,7 @@ storiesOf("Pagination", module)
       page={2}
       count={60}
       hideTopKeyline
-      onNext={action("without-top-keyline-next")}
-      onPrev={action("without-top-keyline-prev")}
+      onChangePage={action("without-top-keyline-change-page")}
     />
   ))
   .add("Without bottom keyline", () => (
@@ -74,12 +63,10 @@ storiesOf("Pagination", module)
       page={2}
       count={60}
       hideBottomKeyline
-      onNext={action("without-bottom-keyline-next")}
-      onPrev={action("without-bottom-keyline-prev")}
+      onChangePage={action("without-bottom-keyline-change-page")}
     />
   ))
   .add("Tracking", () => {
-    const pageHandler = e => e.preventDefault();
     const PaginationWithTrackingContext = withTrackingContext(Pagination, {
       trackingObject: "Story"
     });
@@ -89,8 +76,6 @@ storiesOf("Pagination", module)
         count={60}
         hideResults
         analyticsStream={action("analytics-event")}
-        onNext={pageHandler}
-        onPrev={pageHandler}
       />
     );
   });
