@@ -2,7 +2,6 @@ import React from "react";
 import { View, StyleSheet, Platform } from "react-native";
 import PropTypes from "prop-types";
 
-import Image from "@times-components/image";
 import { TextLink } from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import { treePropType } from "@times-components/markup";
@@ -11,31 +10,13 @@ import AuthorTitle from "./author-title";
 import TwitterIcon from "./twitter-icon";
 import Bio from "./author-bio";
 import AuthorName from "./author-name";
+import AuthorPhoto from "./author-photo";
+import AuthorHeadContainer from "./author-head-container";
 
 const styles = StyleSheet.create({
-  container: {
-    width: "100%",
-    alignItems: "center",
-    flexDirection: "column",
-    backgroundColor: "#F9F8F3",
-    paddingTop: 20,
-    paddingBottom: 30
-  },
-  photoContainer: {
-    marginBottom: 20
-  },
-  roundImage: {
-    width: 100,
-    marginLeft: "auto",
-    marginRight: "auto",
-    borderColor: "#FFF",
-    borderRadius: 50,
-    borderWidth: 5,
-    overflow: "hidden"
-  },
   twitter: {
     paddingTop: 16,
-    paddingBottom: 16,
+    paddingBottom: 8,
     flexDirection: "row",
     ...Platform.select({
       android: {
@@ -44,37 +25,25 @@ const styles = StyleSheet.create({
     })
   },
   twitterLink: {
-    fontSize: 18,
+    fontSize: 15,
     fontFamily: "GillSansMTStd-Medium",
     color: "#006699",
     textDecorationLine: "none",
     paddingLeft: 5
-  },
-  wrapper: {
-    alignItems: "center",
-    backgroundColor: "transparent"
   }
 });
 
 const AuthorHead = props => {
   const { name, title, twitter, bio, uri, onTwitterLinkPress } = props;
 
-  const imageComponent = uri ? (
-    <View style={styles.photoContainer}>
-      <Image uri={`${uri}`} style={styles.roundImage} aspectRatio={1} />
-    </View>
-  ) : null;
-
   return (
-    <View style={styles.wrapper} pointerEvents="box-none">
-      <View accessibilityRole="banner" style={styles.container}>
-        {imageComponent}
-        <AuthorName name={name} />
-        <AuthorTitle title={title} />
-        <TwitterLink handle={twitter} onPress={onTwitterLinkPress} />
-        <Bio bio={bio} />
-      </View>
-    </View>
+    <AuthorHeadContainer>
+      <AuthorPhoto uri={uri} />
+      <AuthorName name={name} />
+      <AuthorTitle title={title} />
+      <TwitterLink handle={twitter} onPress={onTwitterLinkPress} />
+      <Bio bio={bio} />
+    </AuthorHeadContainer>
   );
 };
 
