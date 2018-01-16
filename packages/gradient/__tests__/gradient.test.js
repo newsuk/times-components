@@ -1,5 +1,3 @@
-/* eslint-env jest */
-
 import React from "react";
 import { StyleSheet } from "react-native";
 import renderer from "react-test-renderer";

@@ -59,7 +59,8 @@ describe("GptManager", () => {
   it("setConfig resolves if script was set and gpt is initialised", () => {
     const { googletag } = gptManager;
     googletag.cmd = jest.fn();
-    gptManager.isReady = jest.fn().mockImplementation(() => true);
+    gptManager.scriptSet = true;
+    gptManager.initialised = true;
     gptManager.setConfig();
     expect(googletag.cmd).not.toHaveBeenCalled();
   });
@@ -67,7 +68,8 @@ describe("GptManager", () => {
   it("init resolves if script was set and gpt is initialised", () => {
     const { googletag } = gptManager;
     googletag.cmd = jest.fn();
-    gptManager.isReady = jest.fn().mockImplementation(() => true);
+    gptManager.scriptSet = true;
+    gptManager.initialised = true;
     gptManager.init();
     expect(googletag.cmd).not.toHaveBeenCalled();
   });

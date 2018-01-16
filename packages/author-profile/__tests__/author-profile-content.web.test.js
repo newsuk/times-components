@@ -1,5 +1,3 @@
-/* eslint-env jest, browser */
-
 import React from "react";
 import { shallow, mount } from "enzyme";
 import authorProfileFixture from "@times-components/provider/fixtures/author-profile/author-profile.json";
@@ -14,22 +12,6 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
 
 test(AuthorProfileContent);
 
-const results = {
-  data: {
-    author: {
-      articles: {
-        ...articleListWithImagesFixture.data.author.articles,
-        list: articleListWithImagesFixture.data.author.articles.list.map(
-          el => ({
-            ...el,
-            publishedTime: new Date(el.publishedTime)
-          })
-        )
-      }
-    }
-  }
-};
-
 const makeAuthor = ({ withImages } = {}) => ({
   ...authorProfileFixture.data.author,
   hasLeadAssets: withImages,
@@ -38,8 +20,8 @@ const makeAuthor = ({ withImages } = {}) => ({
 
 const authorProfileContentProps = {
   ...makeAuthor({ withImages: true }),
-  articles: results.data.author.articles.list,
-  count: results.data.author.articles.list.length,
+  articles: articleListWithImagesFixture.data.author.articles.list,
+  count: articleListWithImagesFixture.data.author.articles.list.length,
   page: 1,
   pageSize: 3,
   imageRatio: 3 / 2,
@@ -215,7 +197,10 @@ it("renders good quality images if there is no IntersectionObserver", () => {
   const component = mount(
     <AuthorProfileContent
       {...authorProfileContentProps}
-      articles={results.data.author.articles.list.slice(0, 2)}
+      articles={articleListWithImagesFixture.data.author.articles.list.slice(
+        0,
+        2
+      )}
     />
   );
 
@@ -253,7 +238,10 @@ it("does not render good quality images if the item is quickly scrolled passed",
   const component = mount(
     <AuthorProfileContent
       {...authorProfileContentProps}
-      articles={results.data.author.articles.list.slice(0, 5)}
+      articles={articleListWithImagesFixture.data.author.articles.list.slice(
+        0,
+        5
+      )}
     />
   );
 
@@ -286,7 +274,10 @@ it("does no work if there are no pending items", async () => {
   mount(
     <AuthorProfileContent
       {...authorProfileContentProps}
-      articles={results.data.author.articles.list.slice(0, 5)}
+      articles={articleListWithImagesFixture.data.author.articles.list.slice(
+        0,
+        5
+      )}
     />
   );
 
@@ -324,7 +315,10 @@ it("does not set state after unmounting", async () => {
   const component = mount(
     <AuthorProfileContent
       {...authorProfileContentProps}
-      articles={results.data.author.articles.list.slice(0, 5)}
+      articles={articleListWithImagesFixture.data.author.articles.list.slice(
+        0,
+        5
+      )}
     />
   );
 
@@ -366,7 +360,10 @@ it("disconnects from the IntersectionObserver when unmounting", async () => {
   const component = mount(
     <AuthorProfileContent
       {...authorProfileContentProps}
-      articles={results.data.author.articles.list.slice(0, 5)}
+      articles={articleListWithImagesFixture.data.author.articles.list.slice(
+        0,
+        5
+      )}
     />
   );
 
@@ -383,7 +380,10 @@ it("does not throw when unmounting with no IntersectionObserver", async () => {
   const component = mount(
     <AuthorProfileContent
       {...authorProfileContentProps}
-      articles={results.data.author.articles.list.slice(0, 5)}
+      articles={articleListWithImagesFixture.data.author.articles.list.slice(
+        0,
+        5
+      )}
     />
   );
 

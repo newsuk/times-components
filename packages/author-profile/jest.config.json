@@ -2,7 +2,9 @@
   "preset": "react-native",
   "rootDir": "../../",
   "coverageDirectory": "<rootDir>/packages/author-profile/coverage/native/",
-  "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+  "transformIgnorePatterns": [
+    "node_modules/(?!(react-native|react-apollo-temp|@times-components)/)"
+  ],
   "testMatch": [
     "<rootDir>/packages/author-profile/__tests__/**.native.test.js"
   ],

@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "dextrose/storiesOfOverloader";
-import { decorateAction, action } from "@storybook/addon-actions";
+import { decorateAction } from "@storybook/addon-actions";
+import storybookReporter from "@times-components/tealium/storybook";
 import { withTrackingContext } from "@times-components/tracking";
 import { LateralSpacingDecorator } from "@times-components/storybook/decorators";
 import AuthorHead from "./author-head";
@@ -36,7 +37,7 @@ storiesOf("AuthorHead", module)
       <AuthorHeadWithTrackingContext
         {...data}
         {...extras}
-        analyticsStream={action("analytics-event")}
+        analyticsStream={storybookReporter}
       />
     );
   });

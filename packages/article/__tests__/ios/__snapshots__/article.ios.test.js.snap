@@ -647,7 +647,7 @@ exports[`Article test on ios renders article no flags 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -1650,7 +1650,7 @@ exports[`Article test on ios renders article no label 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -2513,7 +2513,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -3356,7 +3356,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -4372,7 +4372,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -5248,7 +5248,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -6231,7 +6231,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -6584,11 +6584,26 @@ exports[`Article test on ios renders full article 1`] = `
               "name": "text",
             },
             Object {
+              "attributes": Object {
+                "href": "https://www.thetimes.co.uk/article/peers-call-for-action-after-liam-allan-trial-blunder-vnzn0sz89",
+              },
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "police disclosure of evidence",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "link",
+            },
+            Object {
               "attributes": Object {},
               "children": Array [
                 Object {
                   "attributes": Object {
-                    "value": "Telegraph ",
+                    "value": " Telegraph ",
                   },
                   "children": Array [],
                   "name": "text",
@@ -6773,7 +6788,7 @@ exports[`Article test on ios renders full article 1`] = `
           "children": Array [
             Object {
               "attributes": Object {
-                "value": "Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. ",
+                "value": "Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister.",
               },
               "children": Array [],
               "name": "text",
@@ -6805,7 +6820,7 @@ exports[`Article test on ios renders full article 1`] = `
           "children": Array [
             Object {
               "attributes": Object {
-                "value": "She led the Conservative Party for 15 years, won three general elections in succession, and never lost a significant vote in the House of Commons. Since Walpole in effect invented the role, only six men have served for longer than her as prime minister: Walpole himself, Pitt, Lord Liverpool, Lord Salisbury, Gladstone and Lord North. She fully earned her place in this company. ",
+                "value": "She led the Conservative Party for 15 years, won three general elections in succession, and never lost a significant vote in the House of Commons. Since Walpole in effect invented the role, only six men have served for longer than her as prime minister: Walpole himself, Pitt, Lord Liverpool, Lord Salisbury, Gladstone and Lord North. She fully earned her place in this company. Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister.Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister",
               },
               "children": Array [],
               "name": "text",
@@ -7351,7 +7366,7 @@ exports[`Article test on ios renders full article 1`] = `
               }
             }
           >
-            Friday March 13 2015, The Times
+            Friday March 13 2015, 06:54pm, The Times
           </Text>
         </View>
       </View>
@@ -7388,6 +7403,31 @@ exports[`Article test on ios renders full article 1`] = `
         >
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
+            accessibilityRole="link"
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            href="https://www.thetimes.co.uk/article/peers-call-for-action-after-liam-allan-trial-blunder-vnzn0sz89"
+            onPress={[Function]}
+            style={
+              Array [
+                Object {
+                  "textDecorationLine": "underline",
+                },
+                Object {
+                  "color": "#069",
+                  "fontFamily": "TimesDigitalW04-Regular",
+                  "fontSize": 17,
+                  "lineHeight": 26,
+                  "marginBottom": 25,
+                  "marginTop": 0,
+                },
+              ]
+            }
+          >
+            police disclosure of evidence
+          </Text>
+          <Text
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
@@ -7397,7 +7437,7 @@ exports[`Article test on ios renders full article 1`] = `
               }
             }
           >
-            Telegraph 
+             Telegraph 
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text
@@ -7465,7 +7505,7 @@ exports[`Article test on ios renders full article 1`] = `
       style={null}
     >
       <View
-        className="sc-gZMcBi cFanlN"
+        className="sc-gqjmRU gcKeOi"
       >
         <View
           style={
@@ -7709,7 +7749,7 @@ exports[`Article test on ios renders full article 1`] = `
       style={null}
     >
       <View
-        className="sc-gqjmRU iPSktQ"
+        className="sc-VigVT hYqJpB"
       >
         <View
           style={

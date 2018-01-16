@@ -1,4 +1,3 @@
-/* eslint-env jest */
 import { Text } from "react-native";
 import test from "../shared";
 import Link, { TextLink } from "../../link";

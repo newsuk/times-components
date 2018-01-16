@@ -1,5 +1,3 @@
-/* eslint-env jest */
-
 import "react-native";
 import React from "react";
 import PropTypes from "prop-types";

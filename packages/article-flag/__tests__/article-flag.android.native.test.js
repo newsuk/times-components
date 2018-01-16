@@ -1,5 +1,3 @@
-/* eslint-env jest */
-
 import shared from "./shared";
 
 jest.mock("react-native", () => {

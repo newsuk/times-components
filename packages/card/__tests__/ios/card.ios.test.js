@@ -1,5 +1,3 @@
-/* eslint-env jest */
-
 import cardTests from "../card.native.test.js";
 
 jest.mock("react-native", () => {

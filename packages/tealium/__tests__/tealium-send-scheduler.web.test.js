@@ -1,5 +1,3 @@
-/* eslint-env jest */
-
 import TealiumSendScheduler from "../tealium-send-scheduler";
 
 describe("TealiumSendScheduler", () => {

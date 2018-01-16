@@ -1,3 +1,3 @@
 const jestConfigurator = require("@times-components/jest-configurator").default;
 
-module.exports = jestConfigurator("link", "web");
+module.exports = jestConfigurator("web", __dirname);

@@ -1,5 +1,3 @@
-/* eslint-env jest */
-
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
@@ -15,6 +13,20 @@ const articleFixtureNoLabelNoFlags = require("../fixtures/no-label-no-flags.json
 const articleFixtureNoLabelNoFlagsNoStandFirst = require("../fixtures/no-label-no-flags-no-standfirst.json");
 
 module.exports = () => {
+  const realIntl = Intl;
+
+  beforeEach(() => {
+    global.Intl = {
+      DateTimeFormat: () => ({
+        resolvedOptions: () => ({ timeZone: "Europe/London" })
+      })
+    };
+  });
+
+  afterEach(() => {
+    global.Intl = realIntl;
+  });
+
   it("renders activity indicator ", () => {
     const tree = renderer
       .create(<Article isLoading analyticsStream={() => {}} />)

@@ -1,5 +1,3 @@
-/* eslint-env jest */
-
 import React from "react";
 import renderer from "react-test-renderer";
 import { MockedProvider } from "@times-components/utils/graphql";

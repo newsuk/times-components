@@ -1,5 +1,3 @@
-/* eslint-env jest */
-
 import tests from "./test-wrapper-helper";
 import pagination from "../pagination-wrapper";
 

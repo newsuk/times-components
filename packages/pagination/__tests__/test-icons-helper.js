@@ -1,4 +1,3 @@
-/* eslint-env jest */
 import React from "react";
 import Enzyme, { shallow } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";

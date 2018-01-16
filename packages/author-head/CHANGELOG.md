@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.16.1"></a>
+## [0.16.1](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.16.0...@times-components/author-head@0.16.1) (2018-01-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.16.0"></a>
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.15.20...@times-components/author-head@0.16.0) (2018-01-15)
+
+
+### Features
+
+* adds tealium reporting to article stories ([#527](https://github.com/newsuk/times-components/issues/527)) ([084e56e](https://github.com/newsuk/times-components/commit/084e56e))
+
+
+
+
+<a name="0.15.20"></a>
+## [0.15.20](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.15.19...@times-components/author-head@0.15.20) (2018-01-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.15.19"></a>
+## [0.15.19](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.15.18...@times-components/author-head@0.15.19) (2018-01-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.15.18"></a>
+## [0.15.18](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.15.17...@times-components/author-head@0.15.18) (2018-01-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
 <a name="0.15.17"></a>
 ## [0.15.17](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.15.16...@times-components/author-head@0.15.17) (2018-01-12)
 

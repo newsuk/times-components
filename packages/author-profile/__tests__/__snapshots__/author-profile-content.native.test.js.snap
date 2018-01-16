@@ -1812,7 +1812,7 @@ exports[`renders profile content component 1`] = `
           "title": "Title",
         },
         "publicationName": "TIMES",
-        "publishedTime": 2017-11-17T00:01:00.000Z,
+        "publishedTime": "2017-11-17T00:01:00.000Z",
         "summary": Array [
           Object {
             "attributes": Object {},
@@ -1845,7 +1845,7 @@ exports[`renders profile content component 1`] = `
           "title": "Title",
         },
         "publicationName": "TIMES",
-        "publishedTime": 2017-11-17T00:01:00.000Z,
+        "publishedTime": "2017-11-17T00:01:00.000Z",
         "summary": Array [
           Object {
             "attributes": Object {},
@@ -1878,7 +1878,7 @@ exports[`renders profile content component 1`] = `
           "title": "Nad e Ali in Helmand province, Afghanistan.",
         },
         "publicationName": "TIMES",
-        "publishedTime": 2017-11-14T17:00:00.000Z,
+        "publishedTime": "2017-11-14T17:00:00.000Z",
         "summary": Array [
           Object {
             "attributes": Object {},
@@ -2398,7 +2398,7 @@ exports[`renders profile content component 1`] = `
                     }
                     testID="datePublication"
                   >
-                    Friday November 17 2017, The Times
+                    Friday November 17 2017, 12:01am, The Times
                   </Text>
                 </View>
               </View>
@@ -2649,7 +2649,7 @@ exports[`renders profile content component 1`] = `
                     }
                     testID="datePublication"
                   >
-                    Friday November 17 2017, The Times
+                    Friday November 17 2017, 12:01am, The Times
                   </Text>
                 </View>
               </View>
@@ -2900,7 +2900,7 @@ exports[`renders profile content component 1`] = `
                     }
                     testID="datePublication"
                   >
-                    Tuesday November 14 2017, The Times
+                    Tuesday November 14 2017, 05:00pm, The Times
                   </Text>
                 </View>
               </View>
@@ -3394,7 +3394,7 @@ exports[`renders profile content item component 1`] = `
               }
               testID="datePublication"
             >
-              Friday November 17 2017, The Times
+              Friday November 17 2017, 12:01am, The Times
             </Text>
           </View>
         </View>
@@ -3514,7 +3514,7 @@ exports[`renders profile content item component with a specific image size 1`] =
               }
               testID="datePublication"
             >
-              Friday November 17 2017, The Times
+              Friday November 17 2017, 12:01am, The Times
             </Text>
           </View>
         </View>
@@ -3634,7 +3634,7 @@ exports[`renders profile content item component with no image 1`] = `
               }
               testID="datePublication"
             >
-              Friday November 17 2017, The Times
+              Friday November 17 2017, 12:01am, The Times
             </Text>
           </View>
         </View>

@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.39.2"></a>
+## [0.39.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.39.1...@times-components/author-profile@0.39.2) (2018-01-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.39.1"></a>
+## [0.39.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.39.0...@times-components/author-profile@0.39.1) (2018-01-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.39.0"></a>
+# [0.39.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.38.0...@times-components/author-profile@0.39.0) (2018-01-15)
+
+
+### Features
+
+* will allow components to tell tracking to wait for data to be available ([192d00b](https://github.com/newsuk/times-components/commit/192d00b))
+
+
+
+
+<a name="0.38.0"></a>
+# [0.38.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.37.25...@times-components/author-profile@0.38.0) (2018-01-15)
+
+
+### Features
+
+* add time zone support to DatePublication ([#525](https://github.com/newsuk/times-components/issues/525)) ([444c148](https://github.com/newsuk/times-components/commit/444c148))
+
+
+
+
+<a name="0.37.25"></a>
+## [0.37.25](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.37.24...@times-components/author-profile@0.37.25) (2018-01-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.37.24"></a>
+## [0.37.24](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.37.23...@times-components/author-profile@0.37.24) (2018-01-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
 <a name="0.37.23"></a>
 ## [0.37.23](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.37.22...@times-components/author-profile@0.37.23) (2018-01-13)
 

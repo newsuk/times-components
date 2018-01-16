@@ -8,7 +8,7 @@ import resolveAttrs from "./resolve-attrs";
 
 const withTrackingContext = (
   WrappedComponent,
-  { getAttrs = () => ({}), trackingObject } = {}
+  { getAttrs = () => ({}), trackingObject, isDataReady = () => true } = {}
 ) => {
   const componentName = getDisplayName(WrappedComponent);
 
@@ -16,6 +16,7 @@ const withTrackingContext = (
     constructor(props, context) {
       super(props, context);
       this.fireAnalyticsEvent = this.fireAnalyticsEvent.bind(this);
+      this.pageEventTriggered = false;
       if (this.isRootTrackingContext()) {
         if (!trackingObject) {
           throw new TypeError(
@@ -39,11 +40,24 @@ const withTrackingContext = (
     }
 
     componentDidMount() {
-      if (this.isRootTrackingContext()) {
+      this.attemptTrackPageEvent(this.props);
+    }
+
+    componentWillReceiveProps(nextProps) {
+      this.attemptTrackPageEvent(nextProps);
+    }
+
+    attemptTrackPageEvent(props) {
+      if (
+        isDataReady(props) &&
+        this.isRootTrackingContext() &&
+        this.pageEventTriggered === false
+      ) {
+        this.pageEventTriggered = true;
         this.fireAnalyticsEvent({
           component: "Page",
           action: "Viewed",
-          attrs: resolveAttrs(getAttrs, this.props)
+          attrs: resolveAttrs(getAttrs, props)
         });
       }
     }
