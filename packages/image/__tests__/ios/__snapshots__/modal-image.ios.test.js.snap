@@ -106,6 +106,7 @@ exports[`ModalImage test on ios renders correctly 1`] = `
           testID={undefined}
         >
           <View
+            collapsable={undefined}
             style={
               Object {
                 "transform": Array [
@@ -114,6 +115,9 @@ exports[`ModalImage test on ios renders correctly 1`] = `
                   },
                   Object {
                     "rotate": "0 deg",
+                  },
+                  Object {
+                    "perspective": 1000,
                   },
                 ],
               }
