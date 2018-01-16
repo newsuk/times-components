@@ -1,12 +1,18 @@
 import React, { Component } from "react";
-import { View, PanResponder, TouchableWithoutFeedback, Animated } from "react-native";
+import {
+  View,
+  PanResponder,
+  TouchableWithoutFeedback,
+  Animated
+} from "react-native";
 import PropTypes from "prop-types";
 
 const distanceBetweenTouches = (
   [{ pageX: x1, pageY: y1 }, { pageX: x2, pageY: y2 }]
+) =>
   // Android JS version doesn't support **
   // eslint-disable-next-line no-restricted-properties
-) => Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2 ));
+  Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
 
 const angleBetweenTouches = (
   [{ pageX: x1, pageY: y1 }, { pageX: x2, pageY: y2 }]
@@ -45,8 +51,8 @@ class Gestures extends Component {
       },
       onPanResponderRelease: () => {
         Animated.parallel([
-          Animated.spring(this.state.zoomRatio, {toValue: 1}),
-          Animated.spring(this.state.angle, {toValue: 0}),
+          Animated.spring(this.state.zoomRatio, { toValue: 1 }),
+          Animated.spring(this.state.angle, { toValue: 0 })
         ]).start();
       }
     });
@@ -70,11 +76,13 @@ class Gestures extends Component {
     const transformStyle = {
       transform: [
         { scale: this.state.zoomRatio },
-        { rotate: this.state.angle.interpolate({
-          inputRange: [0, 359],
-          outputRange: ['0 deg', '359 deg']
-        })},
-        {perspective: 1000}, // Required to make animations work on Android
+        {
+          rotate: this.state.angle.interpolate({
+            inputRange: [0, 359],
+            outputRange: ["0 deg", "359 deg"]
+          })
+        },
+        { perspective: 1000 } // Required to make animations work on Android
       ]
     };
 
@@ -82,7 +90,9 @@ class Gestures extends Component {
       <View style={{ flexGrow: 1 }} {...this.panResponder.panHandlers}>
         <TouchableWithoutFeedback>
           <View {...this.props}>
-            <Animated.View style={transformStyle}>{this.props.children}</Animated.View>
+            <Animated.View style={transformStyle}>
+              {this.props.children}
+            </Animated.View>
           </View>
         </TouchableWithoutFeedback>
       </View>
