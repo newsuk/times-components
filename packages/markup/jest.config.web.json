@@ -8,7 +8,9 @@
     "!**/packages/markup/__tests__/**",
     "!**/packages/markup/*.stories.js"
   ],
-  "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+  "transformIgnorePatterns": [
+    "node_modules/(?!(react-native|@times-components)/)"
+  ],
   "testMatch": ["<rootDir>/packages/markup/__tests__/markup.web.test.js"],
   "moduleNameMapper": {
     "react-native": "react-native-web",

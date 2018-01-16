@@ -1,7 +1,9 @@
 {
   "rootDir": "../../",
   "coverageDirectory": "<rootDir>/packages/article-byline/coverage/",
-  "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+  "transformIgnorePatterns": [
+    "node_modules/(?!(react-native|@times-components)/)"
+  ],
   "testEnvironment": "jsdom",
   "testMatch": ["<rootDir>/packages/article-byline/__tests__/**.test.js"],
   "moduleNameMapper": {

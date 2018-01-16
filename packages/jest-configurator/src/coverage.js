@@ -57,33 +57,35 @@ const toPlatformMap = (filePath: string) => (
   };
 };
 
-// this is very jest coverage this monorepo specific :-(
-const fileToCoveragePath = (component: string, platform: AllPlatform) => (
+const fileToCoveragePath = (subPath: string, platform: AllPlatform) => (
   file: string
-) =>
-  `**/packages/${component}/${file}${
+) => {
+  const componentPath = subPath ? `${subPath}/` : "";
+  return `**/${componentPath}${file}${
     platform !== "universal" ? `.${platform}` : ""
   }.js`;
+};
 
 const makeCoveragePaths = (
-  filePath: string,
+  rootDir: string,
+  module: string,
   platform: Platform,
   files: Array<string>
 ) => {
   // assume that the package is the component
-  const component = path.basename(filePath);
+  const componentPath = path.relative(rootDir, module);
   // group the file paths by platform
-  const fileMap = files.reduce(toPlatformMap(filePath), {});
+  const fileMap = files.reduce(toPlatformMap(module), {});
 
   // take everything from the requested platform plus anything that is not
   // platform specific aka universal
   return [
     ...[...(fileMap[platform] || [])].map(
-      fileToCoveragePath(component, platform)
+      fileToCoveragePath(componentPath, platform)
     ),
     ...[...(fileMap.universal || [])]
       .filter(file => !fileMap[platform] || !fileMap[platform].has(file))
-      .map(fileToCoveragePath(component, "universal"))
+      .map(fileToCoveragePath(componentPath, "universal"))
   ];
 };
 
@@ -91,15 +93,16 @@ const makeCoveragePaths = (
 // currently does not group and use wildcards with exclusions i.e.
 // is file specific and inclusive only
 export default (
-  filePath: string,
+  rootDir: string,
+  module: string,
   platform: Platform,
   ignore: Array<string> = []
 ) => {
-  const files = recursive(filePath, [
+  const files = recursive(module, [
     ...staticFilesAndFolders,
     configFiles,
     ...ignore
   ]);
 
-  return makeCoveragePaths(filePath, platform, files);
+  return makeCoveragePaths(rootDir, module, platform, files);
 };

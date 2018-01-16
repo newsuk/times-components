@@ -7,7 +7,9 @@
     "!**/packages/article-summary/__tests__",
     "!**/packages/article-summary/*.stories.js"
   ],
-  "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+  "transformIgnorePatterns": [
+    "node_modules/(?!(react-native|@times-components)/)"
+  ],
   "testMatch": [
     "<rootDir>/packages/article-summary/__tests__/**!(.web).test.js"
   ]
