@@ -13,6 +13,7 @@ npx react-native start --root fructose --projectRoots $(pwd)/fructose,$(pwd) &
 react-native run-ios --no-packager
 PACKAGER_PID=$!
 LOGLEVEL=verbose npx dextrose --config ./dextrose/dextrose.ios.js --snapshotWait 2000
+npx dextrose upload-snaps dextrose/snappy --bucket times-components-snaps --key dextrose-test
 npx lerna run dextrose-clean
 kill -9 $PACKAGER_PID
 xcrun simctl shutdown booted
