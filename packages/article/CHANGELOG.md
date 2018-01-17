@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.27.3"></a>
+## [0.27.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.27.2...@times-components/article@0.27.3) (2018-01-17)
+
+
+### Bug Fixes
+
+* separate responsive from the native components ([#519](https://github.com/newsuk/times-components/issues/519)) ([beaaba8](https://github.com/newsuk/times-components/commit/beaaba8))
+
+
+
+
 <a name="0.27.2"></a>
 ## [0.27.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.27.1...@times-components/article@0.27.2) (2018-01-16)
 
