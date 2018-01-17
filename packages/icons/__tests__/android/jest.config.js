@@ -1,3 +1,3 @@
-const jestConfigurator = require("@times-components/jest-configurator");
+const jestConfigurator = require("@times-components/jest-configurator").default;
 
-module.exports = jestConfigurator("icons", "android");
+module.exports = jestConfigurator("android", __dirname);
