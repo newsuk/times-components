@@ -1,4 +1,6 @@
 [ignore]
+.*/node_modules/.*
+.*/__tests__/.*
 ; We fork some components by platform
 .*/*[.]android.js
 
