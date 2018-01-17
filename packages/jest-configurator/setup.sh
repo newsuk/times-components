@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-mkdir fixtures/all/node_modules
-mkdir fixtures/ignore/node_modules
+set -e
+
+mkdir -p fixtures/all/node_modules
+mkdir -p fixtures/ignore/node_modules
