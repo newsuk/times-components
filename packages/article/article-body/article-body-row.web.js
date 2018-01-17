@@ -5,12 +5,13 @@ import ArticleImage from "@times-components/article-image";
 import PullQuote from "@times-components/pull-quote";
 import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
-import PullQuoteWrapper from "./article-body-pullquote-wrapper.web";
 
 import {
   PrimaryImg,
   SecondaryImg,
-  InlineImg
+  InlineImg,
+  PullQuoteContainer,
+  PullQuoteResp
 } from "../styles/article-body/responsive";
 
 export const responsiveImageWrapper = imageType => {
@@ -53,14 +54,16 @@ const ArticleRow = ({ content: { data, index } }) =>
     },
     pullQuote(key, { content, caption: { name, twitter } }) {
       return (
-        <PullQuoteWrapper key={key}>
-          <PullQuote
-            key={key}
-            content={content}
-            caption={name}
-            twitter={twitter}
-          />
-        </PullQuoteWrapper>
+        <PullQuoteContainer>
+          <PullQuoteResp>
+            <PullQuote
+              key={key}
+              content={content}
+              caption={name}
+              twitter={twitter}
+            />
+          </PullQuoteResp>
+        </PullQuoteContainer>
       );
     },
     link(key, attributes, children) {
