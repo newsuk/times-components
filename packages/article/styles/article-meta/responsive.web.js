@@ -2,10 +2,10 @@ import { Text, View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 
 export const MetaTextElement = withResponsiveStyles(Text, {
-  base: () => "padding: 12px 0 9px;",
+  base: () => ` border-top: 1px solid #d0cece;`,
   mediumUp: () => `
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   `,
   wideUp: () => `
     line-height: 18px;
