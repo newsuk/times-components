@@ -3,7 +3,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { ApolloProvider } from "react-apollo";
 import connectGraphql from "../provider";
-import {createFuture, createClient} from "./provider-testing-utils";
+import {createFuture, createPingPongClient} from "./provider-testing-utils";
 
 
 it('should send queries only once', done => {
@@ -30,8 +30,7 @@ it('should send queries only once', done => {
     done();
   }
 
-
-  const client = createClient(
+  const client = createPingPongClient(
     id => futures[id].promise(),
     data => events.push(data),
   )
@@ -57,7 +56,6 @@ it('should send queries only once', done => {
     render() {
       const {i} = this.state;
 
-
       if (i<3) {
         setTimeout(() => {
           this.setState(({i: j})=>{
@@ -80,13 +78,10 @@ it('should send queries only once', done => {
     }
   }
 
-
   renderer.create(
     <ApolloProvider client={client}>
       <PingPong /> 
     </ApolloProvider>
   );
-
 })
-
 

@@ -13,8 +13,6 @@ type Query {
 }
 `;
 
-const nop = () => {};
-
 export function createFuture() {
   let resolve;
   const promise = new Promise(done => {resolve = done});
@@ -27,9 +25,9 @@ export function createFuture() {
   };
 }
 
-export function createClient (
+export function createPingPongClient (
   waitFor = () => Promise.resolve(),
-  onEvent = nop, 
+  onEvent = ()=>{}, 
 ) {
   const resolvers = {
     Query:  {
@@ -51,6 +49,3 @@ export function createClient (
 
   return client;
 }
-
-
-

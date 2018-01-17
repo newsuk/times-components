@@ -3,7 +3,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { ApolloProvider } from "react-apollo";
 import connectGraphql from "../provider";
-import {createFuture, createClient} from "./provider-testing-utils";
+import {createFuture, createPingPongClient} from "./provider-testing-utils";
 
 it('should recive gql client response', async () => {
   const query = gql`{
@@ -12,7 +12,7 @@ it('should recive gql client response', async () => {
     }
   }`
 
-  const client = createClient();
+  const client = createPingPongClient();
   const result = client.query({query});
   const {data} = await result;
   expect(data.ping.id).toEqual(42);
@@ -33,8 +33,7 @@ it('should maintain order', done => {
 
   const events = []; 
 
-
-  const client = createClient(
+  const client = createPingPongClient(
     id => futures[id].promise(),
     data => events.push(data),
   )
@@ -112,17 +111,9 @@ it('should maintain order', done => {
     }
   }
 
-
   renderer.create(
     <ApolloProvider client={client}>
       <PingPong /> 
     </ApolloProvider>
   );
-
-
-
-
-
 })
-
-
