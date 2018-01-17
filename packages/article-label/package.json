@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-label",
-  "version": "0.6.11",
+  "version": "0.6.12",
   "description": "The article label",
   "main": "article-label",
   "scripts": {
@@ -38,7 +38,7 @@
   "devDependencies": {
     "@storybook/react-native": "3.2.18",
     "@times-components/eslint-config-thetimes": "0.1.2",
-    "@times-components/jest-configurator": "0.0.17",
+    "@times-components/jest-configurator": "0.0.18",
     "dextrose": "1.2.14",
     "enzyme": "3.2.0",
     "enzyme-to-json": "3.2.2",

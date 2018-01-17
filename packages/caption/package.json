@@ -1,6 +1,6 @@
 {
   "name": "@times-components/caption",
-  "version": "0.9.16",
+  "version": "0.9.17",
   "description": "Media caption component",
   "main": "caption",
   "scripts": {
@@ -49,7 +49,7 @@
   "devDependencies": {
     "@storybook/react-native": "3.2.18",
     "@times-components/eslint-config-thetimes": "0.1.2",
-    "@times-components/image": "1.12.3",
+    "@times-components/image": "1.12.4",
     "dextrose": "1.2.14",
     "eslint": "4.9.0",
     "jest": "21.2.1",
