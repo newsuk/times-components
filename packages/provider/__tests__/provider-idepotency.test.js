@@ -18,9 +18,9 @@ it('should send queries only once', done => {
   const Connect = connectGraphql(query);
   const futures = Array.from({length:4}, createFuture);
 
-  let events = [];
+  const events = [];
 
-  function runTests() {
+  const runTests = () => {
     const requested = events
       .filter(x=>x.type==='request')
       .map(x=>x.id);
@@ -36,6 +36,15 @@ it('should send queries only once', done => {
     data => events.push(data),
   )
 
+  const resolveAll = async () => {
+
+    await futures[1].resolve();
+    await futures[3].resolve();
+    await futures[2].resolve();
+    await futures[0].resolve();
+
+    setTimeout(runTests);
+  }
 
   class PingPong extends React.Component {
     constructor(props, context) {
@@ -43,16 +52,6 @@ it('should send queries only once', done => {
       this.state = {
         i:0
       }
-    }
-
-    async resolveAll() {
-
-      await futures[1].resolve();
-      await futures[3].resolve();
-      await futures[2].resolve();
-      await futures[0].resolve();
-
-      setTimeout(runTests);
     }
 
     render() {
@@ -67,7 +66,7 @@ it('should send queries only once', done => {
           });
         });
       } else {
-        this.resolveAll();
+        resolveAll();
       }
 
       const j = i%2;

@@ -88,8 +88,8 @@ it('should maintain order', done => {
       if (i<2) {
         setTimeout(() => {
           this.setState(({i: j})=>{
-            events.push({id:i, type:'inc'})
-            return {i: i+1};      
+            events.push({id:j, type:'inc'})
+            return {i: j+1};      
           });
         });
       } else {
