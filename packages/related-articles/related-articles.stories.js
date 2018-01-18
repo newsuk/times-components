@@ -21,11 +21,12 @@ storiesOf("Related Articles", module)
     };
 
     return <RelatedArticles {...props} />;
-}).add("Single article with no lead image", () => {
-  const props = {
-    ...singleRelatedNoImageArticleFixture.data.article,
-    onPress: preventDefaultedAction("onArticlePress")
-  };
+  })
+  .add("Single article with no lead image", () => {
+    const props = {
+      ...singleRelatedNoImageArticleFixture.data.article,
+      onPress: preventDefaultedAction("onArticlePress")
+    };
 
-  return <RelatedArticles {...props} />;
-});
+    return <RelatedArticles {...props} />;
+  });
