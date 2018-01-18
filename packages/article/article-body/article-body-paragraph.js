@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
-import styles from "./styles/body";
+import styles from "../styles/article-body";
 
 const BodyParagraph = props => (
   <View

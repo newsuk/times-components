@@ -12,9 +12,9 @@ import {
   InlineImg,
   PullQuoteContainer,
   PullQuoteResp
-} from "./styles/body/responsive";
+} from "../styles/article-body/responsive";
 
-const getImageContainer = imageType => {
+export const responsiveImageWrapper = imageType => {
   switch (imageType) {
     case "secondary":
       return SecondaryImg;
@@ -25,9 +25,8 @@ const getImageContainer = imageType => {
   }
 };
 
-const ArticleRow = props => {
-  const { data, index } = props.content;
-  return renderTrees([data], {
+const ArticleRow = ({ content: { data, index } }) =>
+  renderTrees([data], {
     paragraph(key, attributes, children) {
       return (
         <BodyParagraph key={index} uid={index}>
@@ -35,27 +34,27 @@ const ArticleRow = props => {
         </BodyParagraph>
       );
     },
-    image(key, attributes) {
-      const ImageContainer = getImageContainer(attributes.display);
+    image(key, { display, ratio, url, caption, credits }) {
+      const ImageWrapper = responsiveImageWrapper(display);
       return (
-        <ImageContainer key={key}>
+        <ImageWrapper key={key}>
           <ArticleImage
             imageOptions={{
-              display: attributes.display,
-              ratio: attributes.ratio,
-              url: attributes.url
+              display,
+              ratio,
+              url
             }}
             captionOptions={{
-              caption: attributes.caption,
-              credits: attributes.credits
+              caption,
+              credits
             }}
           />
-        </ImageContainer>
+        </ImageWrapper>
       );
     },
     pullQuote(key, { content, caption: { name, twitter } }) {
       return (
-        <PullQuoteContainer key={key}>
+        <PullQuoteContainer>
           <PullQuoteResp>
             <PullQuote
               key={key}
@@ -80,7 +79,6 @@ const ArticleRow = props => {
       );
     }
   });
-};
 
 ArticleRow.propTypes = {
   content: PropTypes.shape({
