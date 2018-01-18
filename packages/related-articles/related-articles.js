@@ -31,7 +31,7 @@ const RelatedArticles = item => {
   );
 
   const cardProps = {
-    imageRatio: 1.5,
+    imageRatio: 16 / 9,
     imageSize: 996,
     showImage: true
   };
@@ -46,6 +46,7 @@ const RelatedArticles = item => {
             text={summary}
             date={publishedTime}
             publication={publicationName}
+            showPublication={false}
           />
         </Card>
       </View>
