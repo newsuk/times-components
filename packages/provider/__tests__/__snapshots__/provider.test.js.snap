@@ -1,31 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`re-renders with refetched data after error 1`] = `
+exports[`Provider Tests re-renders with refetched data after error 1`] = `
 Object {
   "name": "fiona-hamilton",
   Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"fiona-hamilton\\"})",
 }
 `;
 
-exports[`returns an error 1`] = `[Error: Network error: some error from the server]`;
+exports[`Provider Tests returns an error 1`] = `[Error: Network error: some error from the server]`;
 
-exports[`returns config data 1`] = `
+exports[`Provider Tests returns config data 1`] = `
 Object {
   "config1": "c1",
   "config2": "c2",
 }
 `;
 
-exports[`returns loading state with no author 1`] = `undefined`;
+exports[`Provider Tests returns loading state with no author 1`] = `undefined`;
 
-exports[`returns query result 1`] = `
+exports[`Provider Tests returns query result 1`] = `
 Object {
   "name": "fiona-hamilton",
   Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"fiona-hamilton\\"})",
 }
 `;
 
-exports[`supports another refetch after error during refetch 1`] = `
+exports[`Provider Tests supports another refetch after error during refetch 1`] = `
 Object {
   "name": "fiona-hamilton",
   Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"fiona-hamilton\\"})",

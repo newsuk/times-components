@@ -56,7 +56,6 @@ const withDebounce = WrappedComponent => {
     debounceTimeMs: PropTypes.number.isRequired,
     ...WrappedComponent.propTypes
   };
-  delete WithDebounce.propTypes.debounceTimeMs;
   delete WithDebounce.propTypes.debouncedProps;
   delete WithDebounce.propTypes.isDebouncing;
   WithDebounce.defaultProps = WrappedComponent.defaultProps;

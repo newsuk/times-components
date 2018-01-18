@@ -143,8 +143,8 @@ describe("Debounce Tests", () => {
     jest.advanceTimersByTime(1200);
     expect(setState.mock.calls.length).toEqual(1);
 
-    component.unmount();
     component.setProps({ foo: "updatedFoo2" });
+    component.unmount();
     jest.advanceTimersByTime(1200);
     expect(setState.mock.calls.length).toEqual(1);
   });
@@ -166,7 +166,10 @@ describe("Debounce Tests", () => {
     const Outer = withDebounce(InnerWithStatics);
     expect(Outer.displayName).toEqual("WithDebounce(InnerWithStatics)");
     expect(Outer.staticMember).toEqual("staticMemberValue");
-    expect(Outer.propTypes).toEqual({ foo: PropTypes.string }); // debounceTimeMs removed
+    expect(Outer.propTypes).toEqual({
+      foo: PropTypes.string,
+      debounceTimeMs: PropTypes.number.isRequired
+    }); // debounceTimeMs removed
     expect(Outer.defaultProps).toEqual(InnerWithStatics.defaultProps);
   });
 });
