@@ -33,7 +33,7 @@ const styles = {
     marginBottom: 10,
     flexWrap: "wrap"
   },
-  datePublication: {
+  metaText: {
     color: "#696969",
     fontSize: 13,
     lineHeight: 15,
@@ -58,18 +58,25 @@ const summarise = text => {
 };
 
 const ArticleSummary = props => {
-  const { label, headline, text, date, publication, showPublication } = props;
+  const {
+    label,
+    headline,
+    text,
+    date,
+    publication,
+    showPublication,
+    byline
+  } = props;
   const summary = summarise(text);
   const labelText = label && label.toUpperCase && label.toUpperCase();
 
   return (
     <View style={styles.container}>
       {label ? <Text style={styles.label}>{labelText}</Text> : null}
-      <Text 
-        style={styles.headline}>{headline}</Text>
+      <Text style={styles.headline}>{headline}</Text>
       <Text style={styles.text}>{renderTrees(summary, renderer)}</Text>
       <Text
-        style={styles.datePublication}
+        style={styles.metaText}
         accessibilityLabel="datePublication"
         testID="datePublication"
       >
@@ -79,6 +86,7 @@ const ArticleSummary = props => {
           showPublication={showPublication}
         />
       </Text>
+      {byline ? <Text style={styles.metaText}>{byline}</Text> : null}
     </View>
   );
 };
@@ -89,7 +97,8 @@ ArticleSummary.propTypes = {
   text: PropTypes.arrayOf(treePropType),
   date: DatePublication.propTypes.date,
   publication: DatePublication.propTypes.publication,
-  showPublication: DatePublication.propTypes.showPublication
+  showPublication: DatePublication.propTypes.showPublication,
+  byline: PropTypes.string
 };
 
 ArticleSummary.defaultProps = {
@@ -98,7 +107,8 @@ ArticleSummary.defaultProps = {
   text: [],
   date: null,
   publication: DatePublication.defaultProps.publication,
-  showPublication: DatePublication.defaultProps.showPublication
+  showPublication: DatePublication.defaultProps.showPublication,
+  byline: ""
 };
 
 export default ArticleSummary;
