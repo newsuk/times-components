@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-head",
-  "version": "0.16.4",
+  "version": "0.16.5",
   "main": "author-head",
   "scripts": {
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
@@ -63,11 +63,11 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/image": "1.12.4",
-    "@times-components/link": "0.13.8",
-    "@times-components/markup": "0.15.12",
+    "@times-components/image": "1.12.5",
+    "@times-components/link": "0.13.9",
+    "@times-components/markup": "0.15.13",
     "@times-components/responsive-styles": "0.2.10",
-    "@times-components/tracking": "0.6.2",
+    "@times-components/tracking": "0.6.3",
     "prop-types": "15.6.0",
     "styled-components": "2.2.3",
     "svgs": "3.1.1"

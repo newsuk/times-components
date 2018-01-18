@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-flag",
-  "version": "0.9.9",
+  "version": "0.9.10",
   "description": "The article flag (sponsored, new, updated, etc)",
   "main": "article-flag",
   "scripts": {
