@@ -7093,8 +7093,8 @@ exports[`Article test on android renders full article 1`] = `
         "data": Object {
           "attributes": Object {
             "caption": Object {
-              "name": "Katie Glass",
-              "twitter": "@KatieGlassST",
+              "name": "JudgeSapnara",
+              "twitter": "@JudgeSapnara",
             },
             "content": "[The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child",
           },

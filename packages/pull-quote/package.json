@@ -46,6 +46,7 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
+    "@times-components/icons": "0.0.1",
     "@times-components/link": "0.13.9",
     "prop-types": "15.6.0"
   },

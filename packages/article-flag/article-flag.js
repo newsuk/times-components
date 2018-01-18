@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, Platform } from "react-native";
 import PropTypes from "prop-types";
 
-import Diamond from "./diamond";
+import { IconDiamond } from "@times-components/icons";
 
 // When changing styles please debug both web, android and ios because
 // some styles are not working correctly on all platforms (namely, android)
@@ -39,7 +39,7 @@ const beautifyTitle = title => {
 const ArticleFlag = ({ title, color }) => (
   <View style={styles.view}>
     <View style={styles.diamond}>
-      <Diamond height={8} width={8} color={color} />
+      <IconDiamond height={8} width={8} fillColour={color} />
     </View>
     <Text
       accessibilityLabel={`flag-${title}`}

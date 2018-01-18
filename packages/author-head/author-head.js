@@ -5,9 +5,9 @@ import PropTypes from "prop-types";
 import { TextLink } from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import { treePropType } from "@times-components/markup";
+import { IconTwitter } from "@times-components/icons";
 
 import AuthorTitle from "./author-title";
-import TwitterIcon from "./twitter-icon";
 import Bio from "./author-bio";
 import AuthorName from "./author-name";
 import AuthorPhoto from "./author-photo";
@@ -72,7 +72,7 @@ const TwitterLink = ({ handle, onPress }) => {
 
   return (
     <View style={styles.twitter}>
-      <TwitterIcon />
+      <IconTwitter width={15} height={15} />
       <TextLink
         style={styles.twitterLink}
         url={url}

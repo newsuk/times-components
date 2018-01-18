@@ -1,29 +1,18 @@
 {
-  "name": "@times-components/author-head",
-  "version": "0.16.5",
-  "main": "author-head",
+  "name": "@times-components/icons",
+  "version": "0.0.1",
+  "description": "Times SVG Icons",
+  "main": "icons",
   "scripts": {
+    "flow": "node_modules/flow-bin/cli.js",
+    "fmt": "prettier --write '**/*.*'",
+    "prettier:diff": "prettier --list-different '**/*.*'",
+    "lint": "eslint . && npm run prettier:diff",
+    "test": "yarn test:android -- --ci --bail --coverage && yarn test:ios -- --ci --bail --coverage && yarn test:web -- --ci --bail --coverage",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
-    "test": "yarn test:android --ci --bail --coverage && yarn test:ios --ci --bail --coverage && yarn test:web --ci --bail --coverage",
-    "test:watch": "jest --projects */**/jest.config.js --watchAll",
-    "fmt": "prettier --write '**/*.*'",
-    "prettier:diff": "prettier --list-different '**/*.*'",
-    "lint": "eslint . && yarn prettier:diff",
-    "dextrose-stories": "dextrose-stories",
-    "dextrose-clean": "dextrose-clean"
-  },
-  "jest": {
-    "preset": "react-native",
-    "rootDir": "../../",
-    "coverageDirectory": "<rootDir>/packages/author-head/coverage/",
-    "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|@times-components)/)"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/author-head/__tests__/*.test.js"
-    ]
+    "test:watch": "jest --projects */**/jest.config.js --watchAll"
   },
   "repository": {
     "type": "git",
@@ -34,7 +23,7 @@
     "react",
     "native",
     "web",
-    "author-head",
+    "icons",
     "component"
   ],
   "license": "BSD-3-Clause",
@@ -48,8 +37,7 @@
     "@times-components/eslint-config-thetimes": "0.1.2",
     "@times-components/jest-configurator": "0.0.18",
     "@times-components/storybook": "0.2.2",
-    "@times-components/tealium": "0.1.10",
-    "dextrose": "1.3.2",
+    "dextrose": "1.2.14",
     "enzyme": "3.2.0",
     "enzyme-to-json": "3.2.2",
     "eslint": "4.9.0",
@@ -63,14 +51,7 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/icons": "0.0.1",
-    "@times-components/image": "1.12.5",
-    "@times-components/link": "0.13.9",
-    "@times-components/markup": "0.15.13",
-    "@times-components/responsive-styles": "0.2.10",
-    "@times-components/tracking": "0.6.3",
     "prop-types": "15.6.0",
-    "styled-components": "2.2.3",
     "svgs": "3.1.1"
   },
   "peerDependencies": {
