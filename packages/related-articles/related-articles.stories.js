@@ -4,7 +4,9 @@ import { decorateAction } from "@storybook/addon-actions";
 import RelatedArticles from "./related-articles";
 
 const singleRelatedArticleFixture = require("./fixtures/related-article.json");
-const singleRelatedNoImageArticleFixture = require("./fixtures/related-article-no-image.json");
+const singleRelatedArticleNoImageFixture = require("./fixtures/related-article-no-image.json");
+const singleRelatedArticleNoLabelFixture = require("./fixtures/related-article-no-label.json");
+const singleRelatedArticleNoBylineFixture = require("./fixtures/related-article-no-byline.json");
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
@@ -14,7 +16,7 @@ const preventDefaultedAction = decorateAction([
 ]);
 
 storiesOf("Related Articles", module)
-  .add("Single article with images", () => {
+  .add("Single article default", () => {
     const props = {
       ...singleRelatedArticleFixture.data.article,
       onPress: preventDefaultedAction("onArticlePress")
@@ -24,7 +26,23 @@ storiesOf("Related Articles", module)
   })
   .add("Single article with no lead image", () => {
     const props = {
-      ...singleRelatedNoImageArticleFixture.data.article,
+      ...singleRelatedArticleNoImageFixture.data.article,
+      onPress: preventDefaultedAction("onArticlePress")
+    };
+
+    return <RelatedArticles {...props} />;
+  })
+  .add("Single article with no label", () => {
+    const props = {
+      ...singleRelatedArticleNoLabelFixture.data.article,
+      onPress: preventDefaultedAction("onArticlePress")
+    };
+
+    return <RelatedArticles {...props} />;
+  })
+  .add("Single article with no byline", () => {
+    const props = {
+      ...singleRelatedArticleNoBylineFixture.data.article,
       onPress: preventDefaultedAction("onArticlePress")
     };
 

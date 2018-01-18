@@ -48,6 +48,7 @@
     "@times-components/card": "0.16.23",
     "@times-components/image": "1.12.3",
     "@times-components/link": "0.13.7",
+    "@times-components/markup": "0.15.11",
     "@times-components/responsive-styles": "0.2.9",
     "lodash.get": "4.4.2",
     "prop-types": "15.6.0"
