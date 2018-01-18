@@ -61,9 +61,10 @@ const ArticleSummary = props => {
   const { label, headline, text, date, publication, showPublication } = props;
   const summary = summarise(text);
   const labelText = label && label.toUpperCase && label.toUpperCase();
+
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>{labelText}</Text>
+      {label ? <Text style={styles.label}>{labelText}</Text> : null}
       <Text style={styles.headline}>{headline}</Text>
       <Text style={styles.text}>{renderTrees(summary, renderer)}</Text>
       <Text
