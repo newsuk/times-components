@@ -32,8 +32,9 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@storybook/addon-actions": "3.2.18",
-    "@storybook/react-native": "3.2.18",
+    "@storybook/addon-actions": "3.3.9",
+    "@storybook/addons": "3.3.9",
+    "@storybook/react-native": "3.3.9",
     "@times-components/error-view": "0.7.12",
     "@times-components/eslint-config-thetimes": "0.1.2",
     "@times-components/tealium": "0.1.10",
@@ -43,10 +44,11 @@
     "apollo-link-http": "1.3.2",
     "chance": "1.0.10",
     "dextrose": "1.3.2",
-    "enzyme": "3.2.0",
+    "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
-    "enzyme-to-json": "3.2.2",
+    "enzyme-to-json": "3.3.0",
     "eslint": "4.9.0",
+    "graphql": "0.12.3",
     "jest": "21.2.1",
     "lodash.clonedeep": "4.5.0",
     "lodash.set": "4.3.2",
@@ -56,7 +58,7 @@
     "react-apollo-temp": "2.0.5",
     "react-dom": "16.2.0",
     "react-native": "0.50.1",
-    "react-native-web": "0.1.14",
+    "react-native-web": "0.3.2",
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
@@ -80,7 +82,7 @@
     "react": ">=16",
     "react-dom": ">=16",
     "react-native": ">=0.50",
-    "react-native-web": ">=0.1"
+    "react-native-web": ">=0.3"
   },
   "publishConfig": {
     "access": "public"

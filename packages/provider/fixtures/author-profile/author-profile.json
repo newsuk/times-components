@@ -35,6 +35,7 @@
       ],
       "image": "//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
       "twitter": "jdoe",
+      "hasLeadAssets": true,
       "articles": {
         "count": 20,
         "__typename": "Articles"
