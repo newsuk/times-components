@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "0.16.25",
+  "version": "0.16.26",
   "main": "card",
   "scripts": {
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
@@ -33,7 +33,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.2.18",
-    "@times-components/article-summary": "0.14.4",
+    "@times-components/article-summary": "0.15.0",
     "@times-components/eslint-config-thetimes": "0.1.2",
     "@times-components/jest-configurator": "0.0.18",
     "@times-components/storybook": "0.2.2",

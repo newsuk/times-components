@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.1.12...@times-components/pull-quote@0.2.0) (2018-01-18)
+
+
+### Features
+
+* REPLAT_1212 Pull Quote Design Update ([#529](https://github.com/newsuk/times-components/issues/529)) ([6f9c4c6](https://github.com/newsuk/times-components/commit/6f9c4c6))
+
+
+
+
 <a name="0.1.12"></a>
 ## [0.1.12](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.1.11...@times-components/pull-quote@0.1.12) (2018-01-18)
 
