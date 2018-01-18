@@ -87,7 +87,7 @@ storiesOf("AuthorProfile", module)
     <MockedProvider
       mocks={makeMocksWithAuthorError({ slug, pageSize, withImages: true })}
     >
-      <AuthorProfileProvider slug={slug}>
+      <AuthorProfileProvider debounceTimeMs={0} slug={slug}>
         {({ author, isLoading, error, refetch }) => (
           <AuthorProfile
             author={author}
@@ -165,7 +165,11 @@ storiesOf("AuthorProfile", module)
           })
         });
 
-        return <ApolloProvider client={client}>{child}</ApolloProvider>;
+        return (
+          <ApolloProvider debounceTimeMs={250} client={client}>
+            {child}
+          </ApolloProvider>
+        );
       }
 
       return (
@@ -178,7 +182,7 @@ storiesOf("AuthorProfile", module)
     };
 
     return withProvider(
-      <AuthorProfileProvider slug={slug}>
+      <AuthorProfileProvider debounceTimeMs={0} slug={slug}>
         {({ author, isLoading, error }) => (
           <AuthorProfile
             author={author}

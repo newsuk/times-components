@@ -13,6 +13,7 @@ const renderComponent = child =>
         slug="deborah-haynes"
         pageSise={5}
         page={1}
+        debounceTimeMs={0}
       >
         {child}
       </AuthorArticlesWithImagesProvider>

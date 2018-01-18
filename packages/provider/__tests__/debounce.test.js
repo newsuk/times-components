@@ -35,41 +35,65 @@ Inner.propTypes = {
 
 describe("Debounce Tests", () => {
   it("adds debounceProps to the props passed to the inner component", () => {
-    const Outer = withDebounce(Inner, 1000);
-    const component = shallow(<Outer foo="initialFoo" />);
+    const Outer = withDebounce(Inner);
+    const component = shallow(<Outer foo="initialFoo" debounceTimeMs={1000} />);
     expect(component.find("Inner").props()).toEqual({
       foo: "initialFoo",
-      debouncedProps: { foo: "initialFoo" },
+      debounceTimeMs: 1000,
+      debouncedProps: {
+        foo: "initialFoo",
+        debounceTimeMs: 1000
+      },
       isDebouncing: false
     });
   });
 
   const testUpdateInnerPropsAfterDelay = delay => {
-    const Outer = withDebounce(Inner, delay);
-    const component = shallow(<Outer foo="initialFoo" />);
+    const Outer = withDebounce(Inner);
+    const component = shallow(
+      <Outer foo="initialFoo" debounceTimeMs={delay} />
+    );
+    const innerProps = () =>
+      component
+        .update()
+        .find("Inner")
+        .props();
+
+    const expectedPropsDuringDebounce = {
+      foo: "updatedFoo",
+      debounceTimeMs: delay,
+      debouncedProps: {
+        foo: "initialFoo",
+        debounceTimeMs: delay
+      },
+      isDebouncing: true
+    };
+
+    const expectedPropsAfterDebounce = {
+      foo: "updatedFoo",
+      debounceTimeMs: delay,
+      debouncedProps: {
+        foo: "updatedFoo",
+        debounceTimeMs: delay
+      },
+      isDebouncing: false
+    };
 
     component.setProps({ foo: "updatedFoo" });
-    expect(component.find("Inner").props()).toEqual({
-      foo: "updatedFoo",
-      debouncedProps: { foo: "initialFoo" },
-      isDebouncing: true
-    });
 
-    jest.advanceTimersByTime(0.99 * delay);
-    expect(
-      component
-        .update()
-        .find("Inner")
-        .props().debouncedProps
-    ).toEqual({ foo: "initialFoo" });
+    if (delay > 0) {
+      expect(innerProps()).toEqual(expectedPropsDuringDebounce);
 
-    jest.advanceTimersByTime(0.02 * delay);
-    expect(
-      component
-        .update()
-        .find("Inner")
-        .props().debouncedProps
-    ).toEqual({ foo: "updatedFoo" });
+      jest.advanceTimersByTime(0.99 * delay);
+
+      expect(innerProps()).toEqual(expectedPropsDuringDebounce);
+
+      jest.advanceTimersByTime(0.02 * delay);
+    } else {
+      jest.runAllTimers();
+    }
+
+    expect(innerProps()).toEqual(expectedPropsAfterDebounce);
   };
 
   it("immediately updates props, but delays update of debouncedProps", () => {
@@ -80,9 +104,13 @@ describe("Debounce Tests", () => {
     testUpdateInnerPropsAfterDelay(2500);
   });
 
+  it("handles zero debounce delay", () => {
+    testUpdateInnerPropsAfterDelay(0);
+  });
+
   it("updates debounceProps once for many closely spaced props updates", () => {
-    const Outer = withDebounce(Inner, 1000);
-    const component = mount(<Outer foo="initialFoo" />);
+    const Outer = withDebounce(Inner);
+    const component = mount(<Outer foo="initialFoo" debounceTimeMs={1000} />);
 
     const numberOfDebouncedPropsUpdates = () =>
       component
@@ -105,8 +133,8 @@ describe("Debounce Tests", () => {
   });
 
   it("does not atttempt to update props after unmount", () => {
-    const Outer = withDebounce(Inner, 1000);
-    const component = shallow(<Outer foo="initialFoo" />);
+    const Outer = withDebounce(Inner);
+    const component = shallow(<Outer foo="initialFoo" debounceTimeMs={1000} />);
     const setState = jest.spyOn(component.instance(), "handleDebounceTimer");
 
     expect(setState.mock.calls.length).toEqual(0);
@@ -135,10 +163,10 @@ describe("Debounce Tests", () => {
     };
     InnerWithStatics.displayName = "InnerWithStatics";
 
-    const Outer = withDebounce(InnerWithStatics, 1000);
+    const Outer = withDebounce(InnerWithStatics);
     expect(Outer.displayName).toEqual("WithDebounce(InnerWithStatics)");
     expect(Outer.staticMember).toEqual("staticMemberValue");
-    expect(Outer.propTypes).toEqual({ foo: PropTypes.string }); // debouncedProps removed
+    expect(Outer.propTypes).toEqual({ foo: PropTypes.string }); // debounceTimeMs removed
     expect(Outer.defaultProps).toEqual(InnerWithStatics.defaultProps);
   });
 });

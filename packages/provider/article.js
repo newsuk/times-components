@@ -1,5 +1,5 @@
 import gql from "graphql-tag";
-import connectGraphql, { debounceTimeRapidUserAction } from "./connect";
+import connectGraphql from "./connect";
 
 export const query = gql`
   query ArticleQuery($id: ID!) {
@@ -29,4 +29,4 @@ export const query = gql`
   }
 `;
 
-export default connectGraphql(query, debounceTimeRapidUserAction);
+export default connectGraphql(query);

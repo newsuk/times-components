@@ -9,7 +9,7 @@ const renderComponent = child =>
     <MockedProvider
       mocks={makeArticleMocks({ withImages: true, pageSize: 5, delay: 0 })}
     >
-      <AuthorProfileProvider slug="deborah-haynes">
+      <AuthorProfileProvider slug="deborah-haynes" debounceTimeMs={0}>
         {child}
       </AuthorProfileProvider>
     </MockedProvider>

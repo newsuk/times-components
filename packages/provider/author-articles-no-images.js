@@ -1,5 +1,5 @@
 import gql from "graphql-tag";
-import connectGraphql, { debounceTimeRapidUserAction } from "./connect";
+import connectGraphql from "./connect";
 
 export const query = gql`
   query ArticleListQuery(
@@ -41,8 +41,4 @@ const propsToVariables = ({
   longSummaryLength
 });
 
-export default connectGraphql(
-  query,
-  debounceTimeRapidUserAction,
-  propsToVariables
-);
+export default connectGraphql(query, propsToVariables);

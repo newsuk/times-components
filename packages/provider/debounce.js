@@ -1,11 +1,19 @@
 import React from "react";
+import PropTypes from "prop-types";
 import getDisplayName from "react-display-name";
 import hoistNonReactStatic from "hoist-non-react-statics";
 
-const withDebounce = (WrappedComponent, debounceTimeMs) => {
+const withDebounce = WrappedComponent => {
+  const validateProps = props => {
+    if (typeof props.debounceTimeMs !== "number") {
+      throw new Error("debounceTimeMs prop required");
+    }
+  };
+
   class WithDebounce extends React.Component {
     constructor(props) {
       super(props);
+      validateProps(props);
       this.state = {
         debouncedProps: props,
         isDebouncing: false
@@ -13,13 +21,18 @@ const withDebounce = (WrappedComponent, debounceTimeMs) => {
       this.debounceTimeout = null;
     }
 
-    componentWillReceiveProps() {
-      clearTimeout(this.debounceTimeout);
-      this.debounceTimeout = setTimeout(
-        this.handleDebounceTimer,
-        debounceTimeMs
-      );
-      this.setState({ isDebouncing: true });
+    componentWillReceiveProps(nextProps) {
+      validateProps(nextProps);
+      if (this.props.debounceTimeMs === 0) {
+        this.setState({ debouncedProps: nextProps, isDebouncing: false });
+      } else {
+        this.setState({ isDebouncing: true });
+        clearTimeout(this.debounceTimeout);
+        this.debounceTimeout = setTimeout(
+          this.handleDebounceTimer,
+          nextProps.debounceTimeMs
+        );
+      }
     }
 
     componentWillUnmount() {
@@ -39,7 +52,11 @@ const withDebounce = (WrappedComponent, debounceTimeMs) => {
   WithDebounce.displayName = `WithDebounce(${getDisplayName(
     WrappedComponent
   )})`;
-  WithDebounce.propTypes = { ...WrappedComponent.propTypes };
+  WithDebounce.propTypes = {
+    debounceTimeMs: PropTypes.number.isRequired,
+    ...WrappedComponent.propTypes
+  };
+  delete WithDebounce.propTypes.debounceTimeMs;
   delete WithDebounce.propTypes.debouncedProps;
   delete WithDebounce.propTypes.isDebouncing;
   WithDebounce.defaultProps = WrappedComponent.defaultProps;

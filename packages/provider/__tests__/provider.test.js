@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
 import gql from "graphql-tag";
 import { MockedProvider } from "@times-components/utils/graphql";
@@ -28,10 +29,14 @@ const mocks = [
 ];
 
 const constructComponent = (child, customMocks, debounceTimeMs = 0) => {
-  const ConnectedComponent = connectGraphql(query, debounceTimeMs);
+  const ConnectedComponent = connectGraphql(query);
   return (
     <MockedProvider mocks={customMocks || mocks} removeTypename>
-      <ConnectedComponent config1="c1" config2="c2">
+      <ConnectedComponent
+        config1="c1"
+        config2="c2"
+        debounceTimeMs={debounceTimeMs}
+      >
         {child}
       </ConnectedComponent>
     </MockedProvider>
@@ -50,17 +55,6 @@ it("returns query result", done => {
 
     return null;
   });
-});
-
-it("complains if you omit the debounceTimeMs parameter to connectGraphql", () => {
-  expect(() => connectGraphql(query)).toThrowError();
-});
-
-it("Doesn't use a Debounce HOC wrapper if debounceTimeMs is 0", () => {
-  expect(connectGraphql(query, 500).displayName).toEqual(
-    "WithDebounce(Apollo(Wrapper))"
-  );
-  expect(connectGraphql(query, 0).displayName).toEqual("Apollo(Wrapper)");
 });
 
 it("returns loading state with no author", done => {
@@ -196,4 +190,33 @@ it("supports another refetch after error during refetch", done => {
 
     return null;
   }, customMocks);
+});
+
+it("complains if you omit the debounceTimeMs parameter to a connected component", done => {
+  const ConnectedComponent = connectGraphql(query);
+
+  jest.spyOn(console, "error").mockImplementation(() => {});
+
+  class ErrorSpy extends React.Component {
+    /* eslint class-methods-use-this: "off" */
+    componentDidCatch(e) {
+      expect(e.message).toEqual("debounceTimeMs prop required");
+      done();
+    }
+
+    render() {
+      return this.props.children;
+    }
+  }
+  ErrorSpy.propTypes = {
+    children: PropTypes.node.isRequired
+  };
+
+  renderer.create(
+    <MockedProvider mocks={[]} removeTypename>
+      <ErrorSpy>
+        <ConnectedComponent />
+      </ErrorSpy>
+    </MockedProvider>
+  );
 });
