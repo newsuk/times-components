@@ -5,7 +5,7 @@
   "main": "lib/jest-configurator.js",
   "scripts": {
     "prepublishOnly": "babel src -d lib",
-    "postinstall": "./setup.sh",
+    "pretest": "./setup.sh",
     "test:watch": "jest --bail --verbose --watchAll",
     "test": "jest --bail --ci --coverage",
     "prettier:diff": "prettier --list-different '**/*.*'",
