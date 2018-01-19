@@ -6,7 +6,6 @@ exports[`Pagination Native renders correctly 1`] = `
     Object {
       "alignItems": "stretch",
       "flexDirection": "column",
-      "marginTop": 30,
     }
   }
 >
@@ -40,23 +39,17 @@ exports[`Pagination Native renders correctly 1`] = `
   </View>
   <View
     style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "borderStyle": "solid",
-          "flexDirection": "row",
-          "height": 50,
-          "justifyContent": "space-between",
-        },
-        Object {
-          "borderTopColor": "#dbdbdb",
-          "borderTopWidth": 1,
-        },
-        Object {
-          "borderBottomColor": "#dbdbdb",
-          "borderBottomWidth": 1,
-        },
-      ]
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "borderTopColor": "#dbdbdb",
+        "borderTopWidth": 1,
+        "flexDirection": "row",
+        "height": 50,
+        "justifyContent": "space-between",
+      }
     }
   >
     <View />
@@ -147,7 +140,6 @@ exports[`Pagination Native renders next link 1`] = `
     Object {
       "alignItems": "stretch",
       "flexDirection": "column",
-      "marginTop": 30,
     }
   }
 >
@@ -181,23 +173,17 @@ exports[`Pagination Native renders next link 1`] = `
   </View>
   <View
     style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "borderStyle": "solid",
-          "flexDirection": "row",
-          "height": 50,
-          "justifyContent": "space-between",
-        },
-        Object {
-          "borderTopColor": "#dbdbdb",
-          "borderTopWidth": 1,
-        },
-        Object {
-          "borderBottomColor": "#dbdbdb",
-          "borderBottomWidth": 1,
-        },
-      ]
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "borderTopColor": "#dbdbdb",
+        "borderTopWidth": 1,
+        "flexDirection": "row",
+        "height": 50,
+        "justifyContent": "space-between",
+      }
     }
   >
     <View />
@@ -288,7 +274,6 @@ exports[`Pagination Native renders prev and next link 1`] = `
     Object {
       "alignItems": "stretch",
       "flexDirection": "column",
-      "marginTop": 30,
     }
   }
 >
@@ -322,23 +307,17 @@ exports[`Pagination Native renders prev and next link 1`] = `
   </View>
   <View
     style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "borderStyle": "solid",
-          "flexDirection": "row",
-          "height": 50,
-          "justifyContent": "space-between",
-        },
-        Object {
-          "borderTopColor": "#dbdbdb",
-          "borderTopWidth": 1,
-        },
-        Object {
-          "borderBottomColor": "#dbdbdb",
-          "borderBottomWidth": 1,
-        },
-      ]
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "borderTopColor": "#dbdbdb",
+        "borderTopWidth": 1,
+        "flexDirection": "row",
+        "height": 50,
+        "justifyContent": "space-between",
+      }
     }
   >
     <View>
@@ -504,7 +483,6 @@ exports[`Pagination Native renders prev link 1`] = `
     Object {
       "alignItems": "stretch",
       "flexDirection": "column",
-      "marginTop": 30,
     }
   }
 >
@@ -538,23 +516,17 @@ exports[`Pagination Native renders prev link 1`] = `
   </View>
   <View
     style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "borderStyle": "solid",
-          "flexDirection": "row",
-          "height": 50,
-          "justifyContent": "space-between",
-        },
-        Object {
-          "borderTopColor": "#dbdbdb",
-          "borderTopWidth": 1,
-        },
-        Object {
-          "borderBottomColor": "#dbdbdb",
-          "borderBottomWidth": 1,
-        },
-      ]
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "borderTopColor": "#dbdbdb",
+        "borderTopWidth": 1,
+        "flexDirection": "row",
+        "height": 50,
+        "justifyContent": "space-between",
+      }
     }
   >
     <View>
@@ -644,7 +616,6 @@ exports[`Pagination Native renders results message 1`] = `
     Object {
       "alignItems": "stretch",
       "flexDirection": "column",
-      "marginTop": 30,
     }
   }
 >
@@ -678,161 +649,17 @@ exports[`Pagination Native renders results message 1`] = `
   </View>
   <View
     style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "borderStyle": "solid",
-          "flexDirection": "row",
-          "height": 50,
-          "justifyContent": "space-between",
-        },
-        Object {
-          "borderTopColor": "#dbdbdb",
-          "borderTopWidth": 1,
-        },
-        Object {
-          "borderBottomColor": "#dbdbdb",
-          "borderBottomWidth": 1,
-        },
-      ]
-    }
-  >
-    <View />
-    <View>
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        collapsable={undefined}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "marginLeft": 10,
-              "marginRight": 12,
-            }
-          }
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#006699",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 15,
-                "height": 15,
-                "marginRight": 10,
-                "textAlign": "right",
-              }
-            }
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-            >
-              Next
-            </Text>
-          </Text>
-          <svg
-            height={12}
-            style={Object {}}
-            viewBox="42 12 60 120"
-            width={7}
-          >
-            <g
-              fill="#006699"
-              style={Object {}}
-            >
-              <path
-                d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-                style={Object {}}
-              />
-            </g>
-          </svg>
-        </View>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`Pagination Native renders with hidden bottomKeyline 1`] = `
-<View
-  style={
-    Object {
-      "alignItems": "stretch",
-      "flexDirection": "column",
-      "marginTop": 30,
-    }
-  }
->
-  <View
-    style={
       Object {
         "alignItems": "center",
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "borderTopColor": "#dbdbdb",
+        "borderTopWidth": 1,
         "flexDirection": "row",
         "height": 50,
-        "justifyContent": "center",
+        "justifyContent": "space-between",
       }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Array [
-          Object {
-            "color": "#696969",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 15,
-            "paddingTop": 4,
-          },
-        ]
-      }
-    >
-      Showing 1 - 20 of 21 results
-    </Text>
-  </View>
-  <View
-    style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "borderStyle": "solid",
-          "flexDirection": "row",
-          "height": 50,
-          "justifyContent": "space-between",
-        },
-        Object {
-          "borderTopColor": "#dbdbdb",
-          "borderTopWidth": 1,
-        },
-        false,
-      ]
     }
   >
     <View />
@@ -923,120 +750,6 @@ exports[`Pagination Native renders with hidden results 1`] = `
     Object {
       "alignItems": "stretch",
       "flexDirection": "column",
-      "marginTop": 30,
-    }
-  }
->
-  <View
-    style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "borderStyle": "solid",
-          "flexDirection": "row",
-          "height": 50,
-          "justifyContent": "space-between",
-        },
-        Object {
-          "borderTopColor": "#dbdbdb",
-          "borderTopWidth": 1,
-        },
-        Object {
-          "borderBottomColor": "#dbdbdb",
-          "borderBottomWidth": 1,
-        },
-      ]
-    }
-  >
-    <View />
-    <View>
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        collapsable={undefined}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "marginLeft": 10,
-              "marginRight": 12,
-            }
-          }
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#006699",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 15,
-                "height": 15,
-                "marginRight": 10,
-                "textAlign": "right",
-              }
-            }
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-            >
-              Next
-            </Text>
-          </Text>
-          <svg
-            height={12}
-            style={Object {}}
-            viewBox="42 12 60 120"
-            width={7}
-          >
-            <g
-              fill="#006699"
-              style={Object {}}
-            >
-              <path
-                d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-                style={Object {}}
-              />
-            </g>
-          </svg>
-        </View>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`Pagination Native renders with hidden topKeyline 1`] = `
-<View
-  style={
-    Object {
-      "alignItems": "stretch",
-      "flexDirection": "column",
-      "marginTop": 30,
     }
   }
 >
@@ -1044,46 +757,15 @@ exports[`Pagination Native renders with hidden topKeyline 1`] = `
     style={
       Object {
         "alignItems": "center",
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 1,
+        "borderStyle": "solid",
+        "borderTopColor": "#dbdbdb",
+        "borderTopWidth": 1,
         "flexDirection": "row",
         "height": 50,
-        "justifyContent": "center",
+        "justifyContent": "space-between",
       }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Array [
-          Object {
-            "color": "#696969",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 15,
-            "paddingTop": 4,
-          },
-        ]
-      }
-    >
-      Showing 1 - 20 of 21 results
-    </Text>
-  </View>
-  <View
-    style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "borderStyle": "solid",
-          "flexDirection": "row",
-          "height": 50,
-          "justifyContent": "space-between",
-        },
-        false,
-        Object {
-          "borderBottomColor": "#dbdbdb",
-          "borderBottomWidth": 1,
-        },
-      ]
     }
   >
     <View />
