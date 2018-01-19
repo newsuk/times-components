@@ -46,8 +46,9 @@
     ]
   },
   "dependencies": {
-    "enzyme": "3.2.0",
+    "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
+    "enzyme-to-json": "3.3.0",
     "find-node-modules": "1.0.4",
     "recursive-readdir-synchronous": "0.0.3"
   },
@@ -63,8 +64,7 @@
     "prettier": "1.8.2"
   },
   "peerDependencies": {
-    "enzyme-to-json": "3.2.2",
-    "react-native-web": ">=0.1"
+    "react-native-web": ">=0.3"
   },
   "resolutions": {
     "minimatch": "3.0.4"

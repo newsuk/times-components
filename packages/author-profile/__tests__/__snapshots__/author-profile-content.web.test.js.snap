@@ -149,7 +149,7 @@ Array [
               onLayout={[Function]}
               style={
                 Array [
-                  75,
+                  84,
                   Object {
                     "bottom": 0,
                     "left": 0,
@@ -166,7 +166,7 @@ Array [
               >
                 <Gradient
                   degrees={264}
-                  style={75}
+                  style={84}
                 >
                   <View
                     style={
@@ -174,7 +174,7 @@ Array [
                         Object {
                           "backgroundImage": "linear-gradient(264deg, #f9f9f9 0%, #ededed 100%)",
                         },
-                        75,
+                        84,
                       ]
                     }
                   >
@@ -244,7 +244,7 @@ Array [
               onLayout={[Function]}
               style={
                 Array [
-                  75,
+                  84,
                   Object {
                     "bottom": 0,
                     "left": 0,
@@ -261,7 +261,7 @@ Array [
               >
                 <Gradient
                   degrees={264}
-                  style={75}
+                  style={84}
                 >
                   <View
                     style={
@@ -269,7 +269,7 @@ Array [
                         Object {
                           "backgroundImage": "linear-gradient(264deg, #f9f9f9 0%, #ededed 100%)",
                         },
-                        75,
+                        84,
                       ]
                     }
                   >
@@ -2560,7 +2560,7 @@ exports[`renders profile error 1`] = `
                           onLayout={[Function]}
                           style={
                             Array [
-                              75,
+                              84,
                               Object {
                                 "bottom": 0,
                                 "left": 0,
@@ -2577,7 +2577,7 @@ exports[`renders profile error 1`] = `
                           >
                             <Gradient
                               degrees={264}
-                              style={75}
+                              style={84}
                             >
                               <View
                                 style={
@@ -2585,7 +2585,7 @@ exports[`renders profile error 1`] = `
                                     Object {
                                       "backgroundImage": "linear-gradient(264deg, #f9f9f9 0%, #ededed 100%)",
                                     },
-                                    75,
+                                    84,
                                   ]
                                 }
                               >
