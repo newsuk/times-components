@@ -67,4 +67,9 @@ export default () =>
       <View style={{ width: "100%", height: "100%" }}>
         <Placeholder width={300} height={250} />
       </View>
+    ))
+    .add("WebFunction", () => (
+      <View style={{ width: "100%", height: "100%" }}>
+        <Placeholder width={300} height={250} />
+      </View>
     ));
