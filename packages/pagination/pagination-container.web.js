@@ -27,7 +27,7 @@ const PaginationContainer = ({ children, hideResults }) =>
   );
 
 PaginationContainer.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
   hideResults: PropTypes.bool
 };
 

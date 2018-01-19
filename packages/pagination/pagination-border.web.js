@@ -35,7 +35,7 @@ const PaginationBorder = ({ children, hideResults }) =>
   );
 
 PaginationBorder.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
   hideResults: PropTypes.bool
 };
 
