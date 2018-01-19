@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pull-quote",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Pull Quote for Times Components Articles",
   "main": "pull-quote",
   "scripts": {
@@ -33,7 +33,7 @@
   "devDependencies": {
     "@storybook/react-native": "3.3.9",
     "@times-components/eslint-config-thetimes": "0.1.2",
-    "@times-components/jest-configurator": "0.0.18",
+    "@times-components/jest-configurator": "0.0.19",
     "enzyme": "3.3.0",
     "enzyme-to-json": "3.3.0",
     "eslint": "4.9.0",
@@ -46,8 +46,8 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/icons": "0.1.0",
-    "@times-components/link": "0.13.9",
+    "@times-components/icons": "0.1.1",
+    "@times-components/link": "0.13.10",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {

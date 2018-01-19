@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tracking",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "main": "tracking",
   "scripts": {
     "test:native": "jest --config='./jest.config.json'",
@@ -33,8 +33,8 @@
   "devDependencies": {
     "@storybook/react-native": "3.3.9",
     "@times-components/eslint-config-thetimes": "0.1.2",
-    "@times-components/storybook": "0.2.2",
-    "@times-components/tealium": "0.1.10",
+    "@times-components/storybook": "0.2.3",
+    "@times-components/tealium": "0.1.11",
     "dextrose": "1.3.2",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
