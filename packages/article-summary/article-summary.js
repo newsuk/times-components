@@ -65,7 +65,8 @@ const ArticleSummary = props => {
     date,
     publication,
     showPublication,
-    byline
+    byline,
+    containerStyles
   } = props;
   const summary = summarise(text);
   const labelText = label && label.toUpperCase && label.toUpperCase();
@@ -73,7 +74,7 @@ const ArticleSummary = props => {
   return (
     <View style={styles.container}>
       {label ? <Text style={styles.label}>{labelText}</Text> : null}
-      <Text style={styles.headline}>{headline}</Text>
+      <Text style={[styles.headline, containerStyles.headline]}>{headline}</Text>
       <Text style={styles.text}>{renderTrees(summary, renderer)}</Text>
       <Text
         style={styles.metaText}
@@ -98,7 +99,8 @@ ArticleSummary.propTypes = {
   date: DatePublication.propTypes.date,
   publication: DatePublication.propTypes.publication,
   showPublication: DatePublication.propTypes.showPublication,
-  byline: PropTypes.string
+  byline: PropTypes.string,
+  containerStyles: Text.propTypes.style
 };
 
 ArticleSummary.defaultProps = {
@@ -108,7 +110,8 @@ ArticleSummary.defaultProps = {
   date: null,
   publication: DatePublication.defaultProps.publication,
   showPublication: DatePublication.defaultProps.showPublication,
-  byline: ""
+  byline: "",
+  containerStyles: {} 
 };
 
 export default ArticleSummary;
