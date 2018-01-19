@@ -8,6 +8,10 @@ import Link from "@times-components/link";
 import ArticleSummary from "@times-components/article-summary";
 
 const styles = StyleSheet.create({
+  headline: {
+    fontSize: 22,
+    lineHeight: 22
+  },
   container: {
     marginTop: 10,
     paddingLeft: 10,
@@ -74,6 +78,7 @@ const RelatedArticles = item => {
               publication={publicationName}
               showPublication={false}
               text={summary}
+              containerStyles={styles}
             />
           </Card>
         </View>
