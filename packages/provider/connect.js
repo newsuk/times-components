@@ -1,5 +1,6 @@
 import _pick from "lodash.pick";
 import { graphql } from "react-apollo-temp";
+import PropTypes from "prop-types";
 import withDebounce from "./debounce";
 
 const identity = a => a;
@@ -43,6 +44,9 @@ const connectGraphql = (query, propsToVariables) => {
       ...result,
       ...props
     });
+  Wrapper.propTypes = {
+    debouncedProps: PropTypes.shape({})
+  };
 
   const GraphQlComponent = graphql(query, {
     options: makeGraphqlOptions(variableNames, propsToVariables)
