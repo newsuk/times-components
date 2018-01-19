@@ -59,6 +59,8 @@
     "react-test-renderer": "16.2.0"
   },
   "peerDependencies": {
+    "babel-preset-env": "1.6.1",
+    "babel-preset-stage-2": "6.24.1",
     "react": ">=16",
     "react-dom": ">=16",
     "react-native": ">=0.50",

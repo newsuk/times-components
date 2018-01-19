@@ -57,5 +57,9 @@
     "prop-types": "15.6.0",
     "react": "16.2.0",
     "react-apollo-temp": "2.0.5"
+  },
+  "peerDependencies": {
+    "babel-preset-env": "1.6.1",
+    "babel-preset-stage-2": "6.24.1"
   }
 }
