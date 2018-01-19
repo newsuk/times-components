@@ -158,12 +158,11 @@ class AuthorProfileContent extends Component {
     } = this.props;
 
     const paginationComponent = (
-      { hideResults = false, hideTopKeyline = false } = {}
+      { hideResults = false } = {}
     ) => (
       <AuthorProfilePagination
         count={count}
         hideResults={hideResults}
-        hideTopKeyline={hideTopKeyline}
         onNext={(...args) => {
           onNext(...args);
           scrollUpToPaging();
@@ -198,7 +197,7 @@ class AuthorProfileContent extends Component {
 
     const Contents = (
       <ContentContainer>
-        {paginationComponent({ hideResults: false, hideTopKeyline: true })}
+        {paginationComponent({ hideResults: false })}
         <View style={styles.container}>
           {data &&
             data.map((article, key) => {
