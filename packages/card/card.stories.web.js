@@ -7,8 +7,6 @@ import ArticleSummary from "@times-components/article-summary";
 import Card from "./card";
 import articleSummaryProps from "./fixtures/article-summary-props.json";
 
-articleSummaryProps.date = new Date("2017-07-01T14:32:00.000Z");
-
 const cardProps = {
   image: {
     uri:
