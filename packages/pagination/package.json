@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pagination",
-  "version": "0.12.31",
+  "version": "0.12.32",
   "main": "pagination",
   "scripts": {
     "test:watch": "yarn test:native --bail --verbose --watchAll",
