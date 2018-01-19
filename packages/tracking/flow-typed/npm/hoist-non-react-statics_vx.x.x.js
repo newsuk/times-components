@@ -13,7 +13,7 @@
  * https://github.com/flowtype/flow-typed
  */
 
-declare module 'hoist-non-react-statics' {
+declare module "hoist-non-react-statics" {
   declare module.exports: any;
 }
 
@@ -23,11 +23,10 @@ declare module 'hoist-non-react-statics' {
  * needed.
  */
 
-
 // Filename aliases
-declare module 'hoist-non-react-statics/index' {
-  declare module.exports: $Exports<'hoist-non-react-statics'>;
+declare module "hoist-non-react-statics/index" {
+  declare module.exports: $Exports<"hoist-non-react-statics">;
 }
-declare module 'hoist-non-react-statics/index.js' {
-  declare module.exports: $Exports<'hoist-non-react-statics'>;
+declare module "hoist-non-react-statics/index.js" {
+  declare module.exports: $Exports<"hoist-non-react-statics">;
 }

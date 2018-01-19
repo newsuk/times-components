@@ -13,7 +13,7 @@
  * https://github.com/flowtype/flow-typed
  */
 
-declare module '@times-components/storybook' {
+declare module "@times-components/storybook" {
   declare module.exports: any;
 }
 
@@ -22,11 +22,11 @@ declare module '@times-components/storybook' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module '@times-components/storybook/decorators' {
+declare module "@times-components/storybook/decorators" {
   declare module.exports: any;
 }
 
 // Filename aliases
-declare module '@times-components/storybook/decorators.js' {
-  declare module.exports: $Exports<'@times-components/storybook/decorators'>;
+declare module "@times-components/storybook/decorators.js" {
+  declare module.exports: $Exports<"@times-components/storybook/decorators">;
 }

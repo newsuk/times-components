@@ -13,7 +13,7 @@
  * https://github.com/flowtype/flow-typed
  */
 
-declare module '@times-components/eslint-config-thetimes' {
+declare module "@times-components/eslint-config-thetimes" {
   declare module.exports: any;
 }
 
@@ -23,11 +23,10 @@ declare module '@times-components/eslint-config-thetimes' {
  * needed.
  */
 
-
 // Filename aliases
-declare module '@times-components/eslint-config-thetimes/index' {
-  declare module.exports: $Exports<'@times-components/eslint-config-thetimes'>;
+declare module "@times-components/eslint-config-thetimes/index" {
+  declare module.exports: $Exports<"@times-components/eslint-config-thetimes">;
 }
-declare module '@times-components/eslint-config-thetimes/index.js' {
-  declare module.exports: $Exports<'@times-components/eslint-config-thetimes'>;
+declare module "@times-components/eslint-config-thetimes/index.js" {
+  declare module.exports: $Exports<"@times-components/eslint-config-thetimes">;
 }

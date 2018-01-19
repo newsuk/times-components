@@ -13,7 +13,7 @@
  * https://github.com/flowtype/flow-typed
  */
 
-declare module 'prettier' {
+declare module "prettier" {
   declare module.exports: any;
 }
 
@@ -22,66 +22,66 @@ declare module 'prettier' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module 'prettier/bin/prettier' {
+declare module "prettier/bin/prettier" {
   declare module.exports: any;
 }
 
-declare module 'prettier/parser-babylon' {
+declare module "prettier/parser-babylon" {
   declare module.exports: any;
 }
 
-declare module 'prettier/parser-flow' {
+declare module "prettier/parser-flow" {
   declare module.exports: any;
 }
 
-declare module 'prettier/parser-graphql' {
+declare module "prettier/parser-graphql" {
   declare module.exports: any;
 }
 
-declare module 'prettier/parser-markdown' {
+declare module "prettier/parser-markdown" {
   declare module.exports: any;
 }
 
-declare module 'prettier/parser-parse5' {
+declare module "prettier/parser-parse5" {
   declare module.exports: any;
 }
 
-declare module 'prettier/parser-postcss' {
+declare module "prettier/parser-postcss" {
   declare module.exports: any;
 }
 
-declare module 'prettier/parser-typescript' {
+declare module "prettier/parser-typescript" {
   declare module.exports: any;
 }
 
 // Filename aliases
-declare module 'prettier/bin/prettier.js' {
-  declare module.exports: $Exports<'prettier/bin/prettier'>;
+declare module "prettier/bin/prettier.js" {
+  declare module.exports: $Exports<"prettier/bin/prettier">;
 }
-declare module 'prettier/index' {
-  declare module.exports: $Exports<'prettier'>;
+declare module "prettier/index" {
+  declare module.exports: $Exports<"prettier">;
 }
-declare module 'prettier/index.js' {
-  declare module.exports: $Exports<'prettier'>;
+declare module "prettier/index.js" {
+  declare module.exports: $Exports<"prettier">;
 }
-declare module 'prettier/parser-babylon.js' {
-  declare module.exports: $Exports<'prettier/parser-babylon'>;
+declare module "prettier/parser-babylon.js" {
+  declare module.exports: $Exports<"prettier/parser-babylon">;
 }
-declare module 'prettier/parser-flow.js' {
-  declare module.exports: $Exports<'prettier/parser-flow'>;
+declare module "prettier/parser-flow.js" {
+  declare module.exports: $Exports<"prettier/parser-flow">;
 }
-declare module 'prettier/parser-graphql.js' {
-  declare module.exports: $Exports<'prettier/parser-graphql'>;
+declare module "prettier/parser-graphql.js" {
+  declare module.exports: $Exports<"prettier/parser-graphql">;
 }
-declare module 'prettier/parser-markdown.js' {
-  declare module.exports: $Exports<'prettier/parser-markdown'>;
+declare module "prettier/parser-markdown.js" {
+  declare module.exports: $Exports<"prettier/parser-markdown">;
 }
-declare module 'prettier/parser-parse5.js' {
-  declare module.exports: $Exports<'prettier/parser-parse5'>;
+declare module "prettier/parser-parse5.js" {
+  declare module.exports: $Exports<"prettier/parser-parse5">;
 }
-declare module 'prettier/parser-postcss.js' {
-  declare module.exports: $Exports<'prettier/parser-postcss'>;
+declare module "prettier/parser-postcss.js" {
+  declare module.exports: $Exports<"prettier/parser-postcss">;
 }
-declare module 'prettier/parser-typescript.js' {
-  declare module.exports: $Exports<'prettier/parser-typescript'>;
+declare module "prettier/parser-typescript.js" {
+  declare module.exports: $Exports<"prettier/parser-typescript">;
 }

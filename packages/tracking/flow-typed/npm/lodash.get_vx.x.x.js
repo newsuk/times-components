@@ -13,7 +13,7 @@
  * https://github.com/flowtype/flow-typed
  */
 
-declare module 'lodash.get' {
+declare module "lodash.get" {
   declare module.exports: any;
 }
 
@@ -23,11 +23,10 @@ declare module 'lodash.get' {
  * needed.
  */
 
-
 // Filename aliases
-declare module 'lodash.get/index' {
-  declare module.exports: $Exports<'lodash.get'>;
+declare module "lodash.get/index" {
+  declare module.exports: $Exports<"lodash.get">;
 }
-declare module 'lodash.get/index.js' {
-  declare module.exports: $Exports<'lodash.get'>;
+declare module "lodash.get/index.js" {
+  declare module.exports: $Exports<"lodash.get">;
 }

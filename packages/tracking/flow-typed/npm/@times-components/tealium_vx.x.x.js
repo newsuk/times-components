@@ -13,7 +13,7 @@
  * https://github.com/flowtype/flow-typed
  */
 
-declare module '@times-components/tealium' {
+declare module "@times-components/tealium" {
   declare module.exports: any;
 }
 
@@ -22,46 +22,54 @@ declare module '@times-components/tealium' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module '@times-components/tealium/__tests__/tealium-send-scheduler.web.test' {
+declare module "@times-components/tealium/__tests__/tealium-send-scheduler.web.test" {
   declare module.exports: any;
 }
 
-declare module '@times-components/tealium/coverage/web/lcov-report/prettify' {
+declare module "@times-components/tealium/coverage/web/lcov-report/prettify" {
   declare module.exports: any;
 }
 
-declare module '@times-components/tealium/coverage/web/lcov-report/sorter' {
+declare module "@times-components/tealium/coverage/web/lcov-report/sorter" {
   declare module.exports: any;
 }
 
-declare module '@times-components/tealium/storybook' {
+declare module "@times-components/tealium/storybook" {
   declare module.exports: any;
 }
 
-declare module '@times-components/tealium/tealium-send-scheduler' {
+declare module "@times-components/tealium/tealium-send-scheduler" {
   declare module.exports: any;
 }
 
-declare module '@times-components/tealium/tealium' {
+declare module "@times-components/tealium/tealium" {
   declare module.exports: any;
 }
 
 // Filename aliases
-declare module '@times-components/tealium/__tests__/tealium-send-scheduler.web.test.js' {
-  declare module.exports: $Exports<'@times-components/tealium/__tests__/tealium-send-scheduler.web.test'>;
+declare module "@times-components/tealium/__tests__/tealium-send-scheduler.web.test.js" {
+  declare module.exports: $Exports<
+    "@times-components/tealium/__tests__/tealium-send-scheduler.web.test"
+  >;
 }
-declare module '@times-components/tealium/coverage/web/lcov-report/prettify.js' {
-  declare module.exports: $Exports<'@times-components/tealium/coverage/web/lcov-report/prettify'>;
+declare module "@times-components/tealium/coverage/web/lcov-report/prettify.js" {
+  declare module.exports: $Exports<
+    "@times-components/tealium/coverage/web/lcov-report/prettify"
+  >;
 }
-declare module '@times-components/tealium/coverage/web/lcov-report/sorter.js' {
-  declare module.exports: $Exports<'@times-components/tealium/coverage/web/lcov-report/sorter'>;
+declare module "@times-components/tealium/coverage/web/lcov-report/sorter.js" {
+  declare module.exports: $Exports<
+    "@times-components/tealium/coverage/web/lcov-report/sorter"
+  >;
 }
-declare module '@times-components/tealium/storybook.js' {
-  declare module.exports: $Exports<'@times-components/tealium/storybook'>;
+declare module "@times-components/tealium/storybook.js" {
+  declare module.exports: $Exports<"@times-components/tealium/storybook">;
 }
-declare module '@times-components/tealium/tealium-send-scheduler.js' {
-  declare module.exports: $Exports<'@times-components/tealium/tealium-send-scheduler'>;
+declare module "@times-components/tealium/tealium-send-scheduler.js" {
+  declare module.exports: $Exports<
+    "@times-components/tealium/tealium-send-scheduler"
+  >;
 }
-declare module '@times-components/tealium/tealium.js' {
-  declare module.exports: $Exports<'@times-components/tealium/tealium'>;
+declare module "@times-components/tealium/tealium.js" {
+  declare module.exports: $Exports<"@times-components/tealium/tealium">;
 }

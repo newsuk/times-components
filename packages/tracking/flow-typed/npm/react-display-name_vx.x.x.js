@@ -13,7 +13,7 @@
  * https://github.com/flowtype/flow-typed
  */
 
-declare module 'react-display-name' {
+declare module "react-display-name" {
   declare module.exports: any;
 }
 
@@ -22,18 +22,20 @@ declare module 'react-display-name' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module 'react-display-name/lib/getDisplayName' {
+declare module "react-display-name/lib/getDisplayName" {
   declare module.exports: any;
 }
 
-declare module 'react-display-name/lib/spec/getDislplayNameSpec' {
+declare module "react-display-name/lib/spec/getDislplayNameSpec" {
   declare module.exports: any;
 }
 
 // Filename aliases
-declare module 'react-display-name/lib/getDisplayName.js' {
-  declare module.exports: $Exports<'react-display-name/lib/getDisplayName'>;
+declare module "react-display-name/lib/getDisplayName.js" {
+  declare module.exports: $Exports<"react-display-name/lib/getDisplayName">;
 }
-declare module 'react-display-name/lib/spec/getDislplayNameSpec.js' {
-  declare module.exports: $Exports<'react-display-name/lib/spec/getDislplayNameSpec'>;
+declare module "react-display-name/lib/spec/getDislplayNameSpec.js" {
+  declare module.exports: $Exports<
+    "react-display-name/lib/spec/getDislplayNameSpec"
+  >;
 }
