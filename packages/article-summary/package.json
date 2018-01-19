@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "0.15.1",
+  "version": "0.15.2",
   "main": "article-summary",
   "scripts": {
     "test:watch": "yarn test:native --bail --verbose --watchAll",
@@ -44,8 +44,8 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/date-publication": "0.8.4",
-    "@times-components/markup": "0.16.1",
+    "@times-components/date-publication": "0.8.5",
+    "@times-components/markup": "0.16.2",
     "date-fns": "1.28.5",
     "prop-types": "15.6.0"
   },

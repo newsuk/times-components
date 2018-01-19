@@ -1,6 +1,6 @@
 {
   "name": "@times-components/responsive-styles",
-  "version": "0.2.11",
+  "version": "0.2.12",
   "description": "Higher-order component to apply responsive styles to a component (web usage only)",
   "main": "responsive-styles",
   "scripts": {
@@ -30,7 +30,7 @@
   "devDependencies": {
     "@storybook/react-native": "3.3.9",
     "@times-components/eslint-config-thetimes": "0.1.2",
-    "@times-components/jest-configurator": "0.0.19",
+    "@times-components/jest-configurator": "0.0.20",
     "enzyme": "3.3.0",
     "enzyme-to-json": "3.3.0",
     "eslint": "4.9.0",
