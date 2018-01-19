@@ -27,7 +27,7 @@ class ModalImage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showModal: false
+      showModal: props.show || false
     };
     this.hideModal = this.hideModal.bind(this);
     this.showModal = this.showModal.bind(this);

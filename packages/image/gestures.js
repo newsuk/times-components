@@ -20,8 +20,8 @@ const angleBetweenTouches = (
   const opposite = y1 - y2;
   const adjacent = x1 - x2;
   const rad = Math.atan2(opposite, adjacent);
-  const degrees = rad * 180 / Math.PI;
-  return degrees;
+
+  return rad * 180 / Math.PI;
 };
 
 class Gestures extends Component {
@@ -39,9 +39,9 @@ class Gestures extends Component {
         numberActiveTouches > 1,
       onMoveShouldSetPanResponder: (e, { numberActiveTouches }) =>
         numberActiveTouches > 1,
-      onStartShouldSetResponderCapture: (e, { numberActiveTouches }) =>
+      onStartShouldSetPanResponderCapture: (e, { numberActiveTouches }) =>
         numberActiveTouches > 1,
-      onMoveShouldSetResponderCapture: (e, { numberActiveTouches }) =>
+      onMoveShouldSetPanResponderCapture: (e, { numberActiveTouches }) =>
         numberActiveTouches > 1,
       onPanResponderStart: evt => {
         this.handlePinchStart(evt);

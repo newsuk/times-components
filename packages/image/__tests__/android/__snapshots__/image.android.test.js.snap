@@ -1,5 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Image test on android Gestures should handle a pinch 1`] = `
+<AnimatedComponent
+  style={
+    Object {
+      "transform": Array [
+        Object {
+          "scale": 3.0066592756745814,
+        },
+        Object {
+          "rotate": "-3.814 deg",
+        },
+        Object {
+          "perspective": 1000,
+        },
+      ],
+    }
+  }
+>
+  <TimesImage
+    aspectRatio={1.5}
+    style={Object {}}
+    uri="http://example.com/image.jpg"
+  />
+</AnimatedComponent>
+`;
+
 exports[`Image test on android allows styling 1`] = `
 <View
   aspectRatio={1.5}
