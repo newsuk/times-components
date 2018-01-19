@@ -8,37 +8,20 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexDirection: "row",
     justifyContent: "space-between",
-    height: 50
-  },
-  borderTop: {
+    height: 50,
+    borderBottomColor: "#dbdbdb",
+    borderBottomWidth: 1,
     borderTopColor: "#dbdbdb",
     borderTopWidth: 1
-  },
-  borderBottom: {
-    borderBottomColor: "#dbdbdb",
-    borderBottomWidth: 1
   }
 });
 
-const PaginationBorder = ({ children, hideResults }) => (
-  <View
-    style={[
-      styles.border,
-      hideResults && styles.borderTop,
-      styles.borderBottom
-    ]}
-  >
-    {children}
-  </View>
+const PaginationBorder = ({ children }) => (
+  <View style={styles.border}>{children}</View>
 );
 
 PaginationBorder.propTypes = {
-  children: PropTypes.string.isRequired,
-  hideResults: PropTypes.bool
-};
-
-PaginationBorder.defaultProps = {
-  hideResults: false
+  children: PropTypes.string.isRequired
 };
 
 export default PaginationBorder;
