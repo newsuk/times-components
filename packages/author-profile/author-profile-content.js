@@ -107,9 +107,7 @@ class AuthorProfileContent extends React.Component {
       });
     };
 
-    const paginationComponent = (
-      { hideResults = false } = {}
-    ) => (
+    const paginationComponent = ({ hideResults = false } = {}) => (
       <AuthorProfilePagination
         count={count}
         hideResults={hideResults}

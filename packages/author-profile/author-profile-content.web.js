@@ -157,9 +157,7 @@ class AuthorProfileContent extends Component {
       refetch
     } = this.props;
 
-    const paginationComponent = (
-      { hideResults = false } = {}
-    ) => (
+    const paginationComponent = ({ hideResults = false } = {}) => (
       <AuthorProfilePagination
         count={count}
         hideResults={hideResults}
