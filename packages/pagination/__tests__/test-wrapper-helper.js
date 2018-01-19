@@ -1,6 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import { Text } from "react-native";
+import PropTypes from "prop-types";
 import Enzyme, { shallow } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
 
@@ -11,11 +12,7 @@ export default withPageState => () => {
     const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
     const PageChanger = withPageState(Component);
 
-    const props = {
-      page: 1
-    };
-
-    const component = renderer.create(<PageChanger {...props} />).toJSON();
+    const component = renderer.create(<PageChanger page={1} />).toJSON();
     expect(component).toMatchSnapshot();
   });
 
@@ -23,12 +20,7 @@ export default withPageState => () => {
     const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
     const PageChanger = withPageState(Component);
 
-    const props = {
-      foo: "not bar",
-      page: 1
-    };
-
-    const wrapper = shallow(<PageChanger {...props} />);
+    const wrapper = shallow(<PageChanger page={1} foo="not bar" />);
 
     wrapper.setProps({ foo: "bar" });
     wrapper.update();
@@ -37,33 +29,31 @@ export default withPageState => () => {
     expect(wrapper.state().page).toEqual(1);
   });
 
-  it("renders inner component with prev page", () => {
-    const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
+  const testRenderingInnerComponentWithPage = (currentPage, navigateToPage) => {
+    const Component = props => <Text>page:{props.page}</Text>;
+    Component.propTypes = {
+      page: PropTypes.number.isRequired
+    };
     const PageChanger = withPageState(Component);
 
-    const props = {
-      page: 2
-    };
-
-    const wrapper = shallow(<PageChanger {...props} />);
-    wrapper.instance().handleChangePage({ preventDefault: () => {} }, 1);
+    const wrapper = shallow(<PageChanger page={currentPage} />);
+    wrapper.instance().onChangePage(navigateToPage);
     wrapper.update();
 
-    expect(wrapper.state().page).toEqual(1);
+    expect(wrapper.state().page).toEqual(navigateToPage);
+    expect(
+      wrapper
+        .dive()
+        .dive()
+        .text()
+    ).toEqual(`page:${navigateToPage}`);
+  };
+
+  it("renders inner component with prev page", () => {
+    testRenderingInnerComponentWithPage(2, 1);
   });
 
   it("renders inner component with next page", () => {
-    const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
-    const PageChanger = withPageState(Component);
-
-    const props = {
-      page: 2
-    };
-
-    const wrapper = shallow(<PageChanger {...props} />);
-    wrapper.instance().handleChangePage({ preventDefault: () => {} }, 3);
-    wrapper.update();
-
-    expect(wrapper.state().page).toEqual(3);
+    testRenderingInnerComponentWithPage(2, 3);
   });
 };

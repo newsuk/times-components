@@ -40,67 +40,98 @@ const styles = StyleSheet.create({
   }
 });
 
-const Pagination = ({
-  count,
-  generatePageLink,
-  onNext,
-  onPrev,
-  page,
-  pageSize,
-  hideResults,
-  hideTopKeyline,
-  hideBottomKeyline
-}) => {
-  const finalResult = Math.min(count, page * pageSize);
-  const startResult = Math.min(finalResult, (page - 1) * pageSize + 1);
-  const message = `Showing ${startResult} - ${finalResult} of ${count} results`;
+const debounceIntervalMs = 250;
 
-  const prevComponent =
-    startResult > pageSize ? (
-      <Link
-        style={styles.arrow}
-        onPress={e => onPrev(e, page - 1)}
-        url={generatePageLink(page - 1)}
-      >
-        <PreviousPageIcon />
-      </Link>
-    ) : null;
+class Pagination extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      displayPage: props.page
+    };
+  }
 
-  const nextComponent =
-    finalResult < count ? (
-      <Link
-        style={styles.arrow}
-        onPress={e => onNext(e, page + 1)}
-        url={generatePageLink(page + 1)}
-      >
-        <NextPageIcon />
-      </Link>
-    ) : null;
+  componentWillReceiveProps(nextProps) {
+    this.setState({ displayPage: nextProps.page });
+  }
 
-  const messageComponent = !hideResults ? <Results>{message}</Results> : null;
+  navigate(e, nextPage, direction) {
+    if (e) {
+      e.preventDefault();
+    }
+    this.setState({ displayPage: nextPage });
+    clearTimeout(this.debounceTimeout);
+    this.debounceTimeout = setTimeout(
+      this.props.onChangePage,
+      debounceIntervalMs,
+      nextPage,
+      direction
+    );
+  }
 
-  return (
-    <View style={styles.container}>
-      {messageComponent}
-      <View
-        style={[
-          styles.border,
-          !hideTopKeyline && styles.borderTop,
-          !hideBottomKeyline && styles.borderBottom
-        ]}
-      >
-        <View>{prevComponent}</View>
-        <View>{nextComponent}</View>
+  render() {
+    const {
+      count,
+      generatePageLink,
+      pageSize,
+      hideResults,
+      hideTopKeyline,
+      hideBottomKeyline
+    } = this.props;
+
+    const { displayPage } = this.state;
+
+    const finalResult = Math.min(count, displayPage * pageSize);
+    const startResult = Math.min(finalResult, (displayPage - 1) * pageSize + 1);
+    const message = `Showing ${startResult} - ${finalResult} of ${
+      count
+    } results`;
+
+    const prevComponent =
+      startResult > pageSize ? (
+        <Link
+          style={styles.arrow}
+          onPress={e => this.navigate(e, displayPage - 1, "previous")}
+          url={generatePageLink(displayPage - 1)}
+        >
+          <PreviousPageIcon />
+        </Link>
+      ) : null;
+
+    const nextComponent =
+      finalResult < count ? (
+        <Link
+          style={styles.arrow}
+          onPress={e => this.navigate(e, displayPage + 1, "next")}
+          url={generatePageLink(displayPage + 1)}
+        >
+          <NextPageIcon />
+        </Link>
+      ) : null;
+
+    const messageComponent = !hideResults ? <Results>{message}</Results> : null;
+
+    return (
+      <View style={styles.container}>
+        {messageComponent}
+        <View
+          style={[
+            styles.border,
+            !hideTopKeyline && styles.borderTop,
+            !hideBottomKeyline && styles.borderBottom
+          ]}
+        >
+          <View>{prevComponent}</View>
+          <View>{nextComponent}</View>
+        </View>
       </View>
-    </View>
-  );
-};
+    );
+  }
+}
 
 Pagination.propTypes = {
   count: PropTypes.number,
   generatePageLink: PropTypes.func,
-  onNext: PropTypes.func,
-  onPrev: PropTypes.func,
+  onChangePage: PropTypes.func,
   page: PropTypes.number,
   pageSize: PropTypes.number,
   hideResults: PropTypes.bool,
@@ -111,8 +142,7 @@ Pagination.propTypes = {
 Pagination.defaultProps = {
   count: 0,
   generatePageLink: page => `./${page}`,
-  onNext: () => {},
-  onPrev: () => {},
+  onChangePage: () => {},
   page: 1,
   pageSize: 20,
   hideResults: false,
@@ -123,22 +153,14 @@ Pagination.defaultProps = {
 export default withTrackEvents(Pagination, {
   analyticsEvents: [
     {
-      eventName: "onNext",
+      eventName: "onChangePage",
       actionName: "Pressed",
-      getAttrs: (props, [, destinationPage]) => ({
+      getAttrs: (props, [destinationPage, direction]) => ({
         destinationPage,
-        direction: "next"
-      })
-    },
-    {
-      eventName: "onPrev",
-      actionName: "Pressed",
-      getAttrs: (props, [, destinationPage]) => ({
-        destinationPage,
-        direction: "previous"
+        direction
       })
     }
   ]
 });
 
-export { withPageState };
+export { withPageState, Pagination as PaginationWithoutTrackEvents };

@@ -14,7 +14,7 @@ const castArticle = (page, pageSize) => article => ({
   ...article,
   page,
   pageSize,
-  publishedTime: new Date(article.publishedTime)
+  publishedTime: article.publishedTime
 });
 
 const AuthorProfile = ({
@@ -25,8 +25,7 @@ const AuthorProfile = ({
   onArticlePress,
   onTwitterLinkPress,
   page,
-  onNext,
-  onPrev,
+  onChangePage,
   pageSize: initPageSize,
   slug
 }) => {
@@ -94,8 +93,7 @@ const AuthorProfile = ({
             twitter={twitter}
             onTwitterLinkPress={onTwitterLinkPress}
             count={get(articles, "count", 0)}
-            onNext={onNext}
-            onPrev={onPrev}
+            onChangePage={onChangePage}
             page={page}
             pageSize={pageSize}
             imageRatio={ratioTextToFloat(imageRatio)}
@@ -117,8 +115,7 @@ AuthorProfile.defaultProps = {
   onArticlePress: () => {},
   onTwitterLinkPress: () => {},
   page: 1,
-  onNext: () => {},
-  onPrev: () => {},
+  onChangePage: () => {},
   pageSize: 10,
   refetch: () => {}
 };
@@ -134,8 +131,7 @@ AuthorProfile.propTypes = {
     twitter: PropTypes.string
   }),
   page: PropTypes.number,
-  onNext: PropTypes.func,
-  onPrev: PropTypes.func,
+  onChangePage: PropTypes.func,
   pageSize: PropTypes.number,
   onTwitterLinkPress: PropTypes.func,
   onArticlePress: PropTypes.func,

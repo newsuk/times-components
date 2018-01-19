@@ -36,17 +36,6 @@ const ContentContainer = withResponsiveStyles(View, {
   `
 });
 
-const scrollUpToPaging = () => {
-  if (typeof window === "undefined") {
-    return;
-  }
-
-  window.scroll({
-    top: 0,
-    left: 0
-  });
-};
-
 class AuthorProfileContent extends Component {
   constructor(props) {
     super(props);
@@ -143,8 +132,7 @@ class AuthorProfileContent extends Component {
       isLoading,
       name,
       onArticlePress,
-      onNext,
-      onPrev,
+      onChangePage,
       onTwitterLinkPress,
       page,
       pageSize,
@@ -164,13 +152,9 @@ class AuthorProfileContent extends Component {
         count={count}
         hideResults={hideResults}
         hideTopKeyline={hideTopKeyline}
-        onNext={(...args) => {
-          onNext(...args);
-          scrollUpToPaging();
-        }}
-        onPrev={(...args) => {
-          onPrev(...args);
-          scrollUpToPaging();
+        onChangePage={(...args) => {
+          onChangePage(...args);
+          window.scroll({ top: 0, left: 0 });
         }}
         page={page}
         pageSize={pageSize}

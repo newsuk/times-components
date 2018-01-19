@@ -121,8 +121,7 @@ exports[`renders profile 1`] = `
       count={20}
       hideResults={true}
       hideTopKeyline={false}
-      onNext={[Function]}
-      onPrev={[Function]}
+      onChangePage={[Function]}
       page={1}
       pageSize={3}
     />
@@ -172,8 +171,7 @@ exports[`renders profile 1`] = `
         count={20}
         hideResults={false}
         hideTopKeyline={true}
-        onNext={[Function]}
-        onPrev={[Function]}
+        onChangePage={[Function]}
         page={1}
         pageSize={3}
       />
@@ -1736,8 +1734,7 @@ exports[`renders profile content component 1`] = `
       count={undefined}
       hideResults={true}
       hideTopKeyline={false}
-      onNext={[Function]}
-      onPrev={[Function]}
+      onChangePage={[Function]}
       page={1}
       pageSize={3}
     />
@@ -1787,8 +1784,7 @@ exports[`renders profile content component 1`] = `
         count={undefined}
         hideResults={false}
         hideTopKeyline={true}
-        onNext={[Function]}
-        onPrev={[Function]}
+        onChangePage={[Function]}
         page={1}
         pageSize={3}
       />
@@ -2983,8 +2979,7 @@ exports[`renders profile content empty 1`] = `
       count={undefined}
       hideResults={true}
       hideTopKeyline={false}
-      onNext={[Function]}
-      onPrev={[Function]}
+      onChangePage={[Function]}
       page={undefined}
       pageSize={undefined}
     />
@@ -3004,8 +2999,7 @@ exports[`renders profile content empty 1`] = `
         count={undefined}
         hideResults={false}
         hideTopKeyline={true}
-        onNext={[Function]}
-        onPrev={[Function]}
+        onChangePage={[Function]}
         page={undefined}
         pageSize={undefined}
       />
@@ -3660,8 +3654,7 @@ exports[`renders profile content loading 1`] = `
       count={undefined}
       hideResults={true}
       hideTopKeyline={false}
-      onNext={[Function]}
-      onPrev={[Function]}
+      onChangePage={[Function]}
       page={undefined}
       pageSize={undefined}
     />
@@ -3681,8 +3674,7 @@ exports[`renders profile content loading 1`] = `
         count={undefined}
         hideResults={false}
         hideTopKeyline={true}
-        onNext={[Function]}
-        onPrev={[Function]}
+        onChangePage={[Function]}
         page={undefined}
         pageSize={undefined}
       />
@@ -4377,8 +4369,7 @@ exports[`renders profile loading 1`] = `
       count={undefined}
       hideResults={true}
       hideTopKeyline={false}
-      onNext={[Function]}
-      onPrev={[Function]}
+      onChangePage={[Function]}
       page={undefined}
       pageSize={3}
     />
@@ -4398,8 +4389,7 @@ exports[`renders profile loading 1`] = `
         count={undefined}
         hideResults={false}
         hideTopKeyline={true}
-        onNext={[Function]}
-        onPrev={[Function]}
+        onChangePage={[Function]}
         page={undefined}
         pageSize={3}
       />
@@ -5787,8 +5777,7 @@ exports[`renders with no author 1`] = `
       count={0}
       hideResults={true}
       hideTopKeyline={false}
-      onNext={[Function]}
-      onPrev={[Function]}
+      onChangePage={[Function]}
       page={1}
       pageSize={3}
     />
@@ -5808,8 +5797,7 @@ exports[`renders with no author 1`] = `
         count={0}
         hideResults={false}
         hideTopKeyline={true}
-        onNext={[Function]}
-        onPrev={[Function]}
+        onChangePage={[Function]}
         page={1}
         pageSize={3}
       />

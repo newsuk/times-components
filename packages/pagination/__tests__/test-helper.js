@@ -7,97 +7,75 @@ import React16Adapter from "enzyme-adapter-react-16";
 Enzyme.configure({ adapter: new React16Adapter() });
 
 export default Pagination => () => {
-  it("renders correctly", () => {
-    const props = {
-      count: 21,
-      page: 1
-    };
-
+  const checkMatchesSnapshot = props => {
     const component = renderer.create(<Pagination {...props} />).toJSON();
     expect(component).toMatchSnapshot();
+  };
+
+  it("renders correctly", () => {
+    checkMatchesSnapshot({
+      count: 21,
+      page: 1
+    });
   });
 
   it("renders results message", () => {
-    const props = {
+    checkMatchesSnapshot({
       count: 21,
       page: 1
-    };
-
-    const component = renderer.create(<Pagination {...props} />).toJSON();
-
-    expect(component).toMatchSnapshot();
+    });
   });
 
   it("renders with hidden results", () => {
-    const props = {
+    checkMatchesSnapshot({
       count: 21,
       page: 1,
       hideResults: true
-    };
-
-    const component = renderer.create(<Pagination {...props} />).toJSON();
-
-    expect(component).toMatchSnapshot();
+    });
   });
 
   it("renders with hidden topKeyline", () => {
-    const props = {
+    checkMatchesSnapshot({
       count: 21,
       page: 1,
       hideTopKeyline: true
-    };
-
-    const component = renderer.create(<Pagination {...props} />).toJSON();
-
-    expect(component).toMatchSnapshot();
+    });
   });
 
   it("renders with hidden bottomKeyline", () => {
-    const props = {
+    checkMatchesSnapshot({
       count: 21,
       page: 1,
       hideBottomKeyline: true
-    };
-
-    const component = renderer.create(<Pagination {...props} />).toJSON();
-
-    expect(component).toMatchSnapshot();
+    });
   });
 
   it("renders prev link", () => {
-    const props = {
+    checkMatchesSnapshot({
       count: 41,
       page: 3
-    };
-
-    const component = renderer.create(<Pagination {...props} />).toJSON();
-    expect(component).toMatchSnapshot();
+    });
   });
 
   it("renders prev and next link", () => {
-    const props = {
+    checkMatchesSnapshot({
       count: 41,
       page: 2
-    };
-
-    const component = renderer.create(<Pagination {...props} />).toJSON();
-    expect(component).toMatchSnapshot();
+    });
   });
 
   it("renders next link", () => {
-    const props = {
+    checkMatchesSnapshot({
       count: 41,
       page: 1
-    };
-
-    const component = renderer.create(<Pagination {...props} />).toJSON();
-
-    expect(component).toMatchSnapshot();
+    });
   });
 
-  it("tracks next page interaction", () => {
+  const testPageInteraction = (startPage, attrs) => {
+    jest.useFakeTimers();
+
     const stream = jest.fn();
-    const component = shallow(<Pagination count={21} page={1} />, {
+    const component = shallow(<Pagination count={21} page={startPage} />, {
       context: { tracking: { analytics: stream } }
     });
 
@@ -106,34 +84,26 @@ export default Pagination => () => {
       .find("Link")
       .simulate("press");
 
+    jest.runAllTimers();
+
     expect(stream).toHaveBeenCalledWith({
       component: "Pagination",
       action: "Pressed",
-      attrs: {
-        direction: "next",
-        destinationPage: 2
-      }
+      attrs
+    });
+  };
+
+  it("tracks next page interaction", () => {
+    testPageInteraction(1, {
+      direction: "next",
+      destinationPage: 2
     });
   });
 
   it("tracks previous page interaction", () => {
-    const stream = jest.fn();
-    const component = shallow(<Pagination count={21} page={2} />, {
-      context: { tracking: { analytics: stream } }
-    });
-
-    component
-      .dive()
-      .find("Link")
-      .simulate("press");
-
-    expect(stream).toHaveBeenCalledWith({
-      component: "Pagination",
-      action: "Pressed",
-      attrs: {
-        direction: "previous",
-        destinationPage: 1
-      }
+    testPageInteraction(2, {
+      direction: "previous",
+      destinationPage: 1
     });
   });
 };
