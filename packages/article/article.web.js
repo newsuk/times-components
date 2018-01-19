@@ -1,7 +1,7 @@
-import React from "react";
-import { View } from "react-native";
+import React, { Fragment } from "react";
+import { View, Text } from "react-native";
 import PropTypes from "prop-types";
-import { AdComposer } from "@times-components/ad";
+import Ad, { AdComposer } from "@times-components/ad";
 
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
@@ -16,7 +16,8 @@ import {
   MainContainer,
   HeaderContainer,
   MetaContainer,
-  BodyContainer
+  BodyContainer,
+  HeaderAdContainer
 } from "./styles/responsive";
 
 const withAdComposer = (children, section = "article") => (
@@ -38,30 +39,35 @@ class ArticlePage extends React.Component {
     } = articleData;
 
     return (
-      <MainContainer>
-        <LeadAssetComponent device="MOBILE" leadAsset={leadAsset} />
-        <HeaderContainer>
-          <ArticleHeader
-            headline={headline}
-            flags={flags}
-            standfirst={standfirst}
-            label={label}
-          />
-        </HeaderContainer>
-        <View>
-          <MetaContainer>
-            <ArticleMeta
-              byline={byline}
-              publishedTime={publishedTime}
-              publicationName={publicationName}
+      <Fragment>
+        <HeaderAdContainer key="headerAd">
+          <Ad code="ad-header"/>
+        </HeaderAdContainer>
+        <MainContainer>
+          <LeadAssetComponent device="MOBILE" leadAsset={leadAsset} />
+          <HeaderContainer>
+            <ArticleHeader
+              headline={headline}
+              flags={flags}
+              standfirst={standfirst}
+              label={label}
             />
-          </MetaContainer>
-          <LeadAssetComponent device="DESKTOP" leadAsset={leadAsset} />
-          <BodyContainer>
-            <ArticleBody content={content} />
-          </BodyContainer>
-        </View>
-      </MainContainer>
+          </HeaderContainer>
+          <View>
+            <MetaContainer>
+              <ArticleMeta
+                byline={byline}
+                publishedTime={publishedTime}
+                publicationName={publicationName}
+              />
+            </MetaContainer>
+            <LeadAssetComponent device="DESKTOP" leadAsset={leadAsset} />
+            <BodyContainer>
+              <ArticleBody content={content} />
+            </BodyContainer>
+          </View>
+        </MainContainer>
+      </Fragment>
     );
   }
 
