@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import Ad, { AdComposer } from "@times-components/ad";
 
@@ -41,7 +41,7 @@ class ArticlePage extends React.Component {
     return (
       <Fragment>
         <HeaderAdContainer key="headerAd">
-          <Ad code="ad-header"/>
+          <Ad code="ad-header" />
         </HeaderAdContainer>
         <MainContainer>
           <LeadAssetComponent device="MOBILE" leadAsset={leadAsset} />
