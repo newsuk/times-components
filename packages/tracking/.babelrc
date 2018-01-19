@@ -1,6 +1,3 @@
 {
-  "presets": ["flow", "env", "react", "stage-2"],
-  "ignore": [
-    "flow-typed/"
-  ]
+  "presets": ["flow", "env", "react", "stage-2"]
 }
