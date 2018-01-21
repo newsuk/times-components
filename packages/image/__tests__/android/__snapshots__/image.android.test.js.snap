@@ -1,15 +1,119 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Image test on android Gestures should handle a pinch 1`] = `
+exports[`Image test on android Gestures should do nothing if a finger is removed while interacting 1`] = `
 <AnimatedComponent
   style={
     Object {
       "transform": Array [
         Object {
-          "scale": 3.0066592756745814,
+          "scale": 1,
         },
         Object {
-          "rotate": "-3.814 deg",
+          "rotate": "0 deg",
+        },
+        Object {
+          "perspective": 1000,
+        },
+      ],
+    }
+  }
+>
+  <TimesImage
+    aspectRatio={1.5}
+    style={Object {}}
+    uri="http://example.com/image.jpg"
+  />
+</AnimatedComponent>
+`;
+
+exports[`Image test on android Gestures should rotate anti-clockwise when turning fingers 1`] = `
+<AnimatedComponent
+  style={
+    Object {
+      "transform": Array [
+        Object {
+          "scale": 1,
+        },
+        Object {
+          "rotate": "90 deg",
+        },
+        Object {
+          "perspective": 1000,
+        },
+      ],
+    }
+  }
+>
+  <TimesImage
+    aspectRatio={1.5}
+    style={Object {}}
+    uri="http://example.com/image.jpg"
+  />
+</AnimatedComponent>
+`;
+
+exports[`Image test on android Gestures should rotate clockwise when turning fingers 1`] = `
+<AnimatedComponent
+  style={
+    Object {
+      "transform": Array [
+        Object {
+          "scale": 1,
+        },
+        Object {
+          "rotate": "270 deg",
+        },
+        Object {
+          "perspective": 1000,
+        },
+      ],
+    }
+  }
+>
+  <TimesImage
+    aspectRatio={1.5}
+    style={Object {}}
+    uri="http://example.com/image.jpg"
+  />
+</AnimatedComponent>
+`;
+
+exports[`Image test on android Gestures should scale and rotate when spreading and rotating fingers 1`] = `
+<AnimatedComponent
+  style={
+    Object {
+      "transform": Array [
+        Object {
+          "scale": 2.9154759474226504,
+        },
+        Object {
+          "rotate": "-5.906 deg",
+        },
+        Object {
+          "perspective": 1000,
+        },
+      ],
+    }
+  }
+>
+  <TimesImage
+    aspectRatio={1.5}
+    style={Object {}}
+    uri="http://example.com/image.jpg"
+  />
+</AnimatedComponent>
+`;
+
+exports[`Image test on android Gestures should scale correctly when spreading fingers 1`] = `
+<AnimatedComponent
+  style={
+    Object {
+      "transform": Array [
+        Object {
+          "scale": 3,
+        },
+        Object {
+          "rotate": "0 deg",
         },
         Object {
           "perspective": 1000,
