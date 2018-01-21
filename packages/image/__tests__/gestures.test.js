@@ -166,10 +166,7 @@ export default () => {
         }
       ];
 
-      const component = touchAndMove(
-        start,
-        end
-      );
+      const component = touchAndMove(start, end);
 
       expect(component.find("AnimatedComponent")).toMatchSnapshot();
     });
