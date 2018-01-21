@@ -3,6 +3,8 @@ import { shallow } from "enzyme";
 import Gesture from "../gestures";
 import Image from "../image";
 
+const waitFor = delay => new Promise(res => setTimeout(res, delay));
+
 const mapTouches = ({ x, y }) => ({
   pageX: x,
   pageY: y
@@ -168,6 +170,41 @@ export default () => {
         start,
         end
       );
+
+      expect(component.find("AnimatedComponent")).toMatchSnapshot();
+    });
+
+    it("animate back to the start after release", async () => {
+      const component = touchAndMove(
+        [
+          {
+            x: 50,
+            y: 50
+          },
+          {
+            x: 100,
+            y: 100
+          }
+        ],
+        [
+          {
+            x: 30,
+            y: 40
+          },
+          {
+            x: 190,
+            y: 170
+          }
+        ]
+      );
+
+      const {
+        panResponder: { panHandlers: { onResponderRelease } }
+      } = component.instance();
+
+      onResponderRelease();
+
+      await waitFor(1000);
 
       expect(component.find("AnimatedComponent")).toMatchSnapshot();
     });
