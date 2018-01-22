@@ -40,30 +40,6 @@ export default Pagination => () => {
     expect(component).toMatchSnapshot();
   });
 
-  it("renders with hidden topKeyline", () => {
-    const props = {
-      count: 21,
-      page: 1,
-      hideTopKeyline: true
-    };
-
-    const component = renderer.create(<Pagination {...props} />).toJSON();
-
-    expect(component).toMatchSnapshot();
-  });
-
-  it("renders with hidden bottomKeyline", () => {
-    const props = {
-      count: 21,
-      page: 1,
-      hideBottomKeyline: true
-    };
-
-    const component = renderer.create(<Pagination {...props} />).toJSON();
-
-    expect(component).toMatchSnapshot();
-  });
-
   it("renders prev link", () => {
     const props = {
       count: 41,

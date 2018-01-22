@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.29.0"></a>
+# [0.29.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.28.3...@times-components/article@0.29.0) (2018-01-22)
+
+
+### Features
+
+* integrate header ad in article ([#554](https://github.com/newsuk/times-components/issues/554)) ([8f99517](https://github.com/newsuk/times-components/commit/8f99517))
+
+
+
+
+<a name="0.28.3"></a>
+## [0.28.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.28.2...@times-components/article@0.28.3) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.28.2"></a>
+## [0.28.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.28.0...@times-components/article@0.28.2) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.28.1"></a>
+## [0.28.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.28.0...@times-components/article@0.28.1) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
 <a name="0.28.0"></a>
 # [0.28.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.27.5...@times-components/article@0.28.0) (2018-01-18)
 

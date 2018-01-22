@@ -6,6 +6,19 @@ export const MainContainer = withResponsiveStyles(View, {
   wideUp: () => "padding-top: 20px; margin: 0 auto;"
 });
 
+/* --- HeaderAd --- */
+export const HeaderAdContainer = withResponsiveStyles(View, {
+  base: () => `display: none;`,
+  mediumUp: () => `
+    display: flex;
+    border-top-color: #dbdbdb;
+    border-bottom-color: #dbdbdb;
+    border-bottom-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  `
+});
+
 /* --- Header --- */
 
 export const HeaderContainer = withResponsiveStyles(View, {

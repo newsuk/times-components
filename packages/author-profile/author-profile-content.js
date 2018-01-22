@@ -107,13 +107,10 @@ class AuthorProfileContent extends React.Component {
       });
     };
 
-    const paginationComponent = (
-      { hideResults = false, hideTopKeyline = false } = {}
-    ) => (
+    const paginationComponent = ({ hideResults = false } = {}) => (
       <AuthorProfilePagination
         count={count}
         hideResults={hideResults}
-        hideTopKeyline={hideTopKeyline}
         onNext={(...args) => {
           onNext(...args);
           scrollToTopNextFrame();
@@ -185,7 +182,7 @@ class AuthorProfileContent extends React.Component {
               twitter={twitter}
               onTwitterLinkPress={onTwitterLinkPress}
             />
-            {paginationComponent({ hideResults: false, hideTopKeyline: true })}
+            {paginationComponent({ hideResults: false })}
           </View>
         }
         ListFooterComponent={paginationComponent({ hideResults: true })}

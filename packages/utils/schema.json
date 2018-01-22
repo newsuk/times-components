@@ -197,11 +197,7 @@
               "name": "count",
               "description": "The number of articles written by an author",
               "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": { "kind": "SCALAR", "name": "Int", "ofType": null }
-              },
+              "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },

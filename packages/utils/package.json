@@ -1,6 +1,6 @@
 {
   "name": "@times-components/utils",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "scripts": {
     "make-schema": "node ./scripts/fetch-gql-schema",
@@ -53,9 +53,13 @@
   "dependencies": {
     "apollo-cache-inmemory": "1.1.5",
     "apollo-client": "2.2.0",
-    "graphql": "0.11.7",
+    "graphql": "0.12.3",
     "prop-types": "15.6.0",
     "react": "16.2.0",
     "react-apollo-temp": "2.0.5"
+  },
+  "peerDependencies": {
+    "babel-preset-env": "1.6.1",
+    "babel-preset-stage-2": "6.24.1"
   }
 }
