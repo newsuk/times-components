@@ -25,7 +25,7 @@ ShallowWrapper {
           style={
             Object {
               "color": "#006699",
-              "fontFamily": "GillSansMTStd-Medium",
+              "fontFamily": "GillSansW01-Medium",
               "fontSize": 15,
               "height": 15,
               "marginRight": 10,
@@ -73,7 +73,7 @@ ShallowWrapper {
           "ellipsizeMode": "tail",
           "style": Object {
             "color": "#006699",
-            "fontFamily": "GillSansMTStd-Medium",
+            "fontFamily": "GillSansW01-Medium",
             "fontSize": 15,
             "height": 15,
             "marginRight": 10,
@@ -154,7 +154,7 @@ ShallowWrapper {
             style={
               Object {
                 "color": "#006699",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 15,
                 "height": 15,
                 "marginRight": 10,
@@ -202,7 +202,7 @@ ShallowWrapper {
             "ellipsizeMode": "tail",
             "style": Object {
               "color": "#006699",
-              "fontFamily": "GillSansMTStd-Medium",
+              "fontFamily": "GillSansW01-Medium",
               "fontSize": 15,
               "height": 15,
               "marginRight": 10,
@@ -318,7 +318,7 @@ ShallowWrapper {
           style={
             Object {
               "color": "#006699",
-              "fontFamily": "GillSansMTStd-Medium",
+              "fontFamily": "GillSansW01-Medium",
               "fontSize": 15,
               "height": 15,
               "marginLeft": 10,
@@ -395,7 +395,7 @@ ShallowWrapper {
           "ellipsizeMode": "tail",
           "style": Object {
             "color": "#006699",
-            "fontFamily": "GillSansMTStd-Medium",
+            "fontFamily": "GillSansW01-Medium",
             "fontSize": 15,
             "height": 15,
             "marginLeft": 10,
@@ -446,7 +446,7 @@ ShallowWrapper {
             style={
               Object {
                 "color": "#006699",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 15,
                 "height": 15,
                 "marginLeft": 10,
@@ -523,7 +523,7 @@ ShallowWrapper {
             "ellipsizeMode": "tail",
             "style": Object {
               "color": "#006699",
-              "fontFamily": "GillSansMTStd-Medium",
+              "fontFamily": "GillSansW01-Medium",
               "fontSize": 15,
               "height": 15,
               "marginLeft": 10,

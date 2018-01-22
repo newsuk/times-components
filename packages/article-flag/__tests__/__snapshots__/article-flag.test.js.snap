@@ -42,7 +42,7 @@ exports[`Article Flag test on web and ios renders Exclusive flag correctly 1`] =
     style={
       Array [
         Object {
-          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontFamily": "TimesDigital-RegularSC",
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.4,
@@ -101,7 +101,7 @@ exports[`Article Flag test on web and ios renders New flag correctly 1`] = `
     style={
       Array [
         Object {
-          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontFamily": "TimesDigital-RegularSC",
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.4,
@@ -160,7 +160,7 @@ exports[`Article Flag test on web and ios renders Sponsored flag correctly 1`] =
     style={
       Array [
         Object {
-          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontFamily": "TimesDigital-RegularSC",
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.4,
@@ -219,7 +219,7 @@ exports[`Article Flag test on web and ios renders Updated flag correctly 1`] = `
     style={
       Array [
         Object {
-          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontFamily": "TimesDigital-RegularSC",
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.4,
@@ -278,7 +278,7 @@ exports[`Article Flag test on web and ios renders correctly 1`] = `
     style={
       Array [
         Object {
-          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontFamily": "TimesDigital-RegularSC",
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.4,

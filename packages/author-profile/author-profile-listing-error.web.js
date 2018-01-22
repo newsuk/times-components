@@ -24,7 +24,7 @@ const Heading = withResponsiveStyles(Text, {
 
 const Message = withResponsiveStyles(Text, {
   base: () => `
-    font-family: TimesDigitalW04-Regular;
+    font-family: TimesDigital-Regular;
     font-size: 18px;
     line-height: 1.44;
     text-align: center;

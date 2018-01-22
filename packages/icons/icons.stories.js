@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
   },
   label: {
     paddingTop: 15,
-    fontFamily: "GillSansMTStd-Medium"
+    fontFamily: "GillSansW01-Medium"
   }
 });
 

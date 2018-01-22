@@ -7,7 +7,7 @@ const authorsAST = require("./fixtures/authors.json");
 
 const bylineStyles = {
   fontSize: 13,
-  fontFamily: "GillSansMTStd-Medium",
+  fontFamily: "GillSansW01-Medium",
   color: "#696969",
   lineHeight: 13,
   flexDirection: "row"

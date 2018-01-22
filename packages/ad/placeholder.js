@@ -23,7 +23,7 @@ const getStyles = (width, height) =>
     },
     placeholderText: {
       fontSize: 11,
-      fontFamily: "TimesDigitalW04",
+      fontFamily: "TimesDigital-Regular",
       backgroundColor: "#F9F9F9",
       color: "#696969",
       borderColor: "#DBDBDB",

@@ -111,7 +111,7 @@ exports[`renders an image with a caption 1`] = `
         Array [
           Object {
             "color": "#696969",
-            "fontFamily": "GillSansMTStd-Medium",
+            "fontFamily": "GillSansW01-Medium",
             "fontSize": 13,
             "lineHeight": 16,
           },
@@ -129,7 +129,7 @@ exports[`renders an image with a caption 1`] = `
         Array [
           Object {
             "color": "#696969",
-            "fontFamily": "GillSansMTStd-Medium",
+            "fontFamily": "GillSansW01-Medium",
             "fontSize": 13,
             "lineHeight": 16,
           },
@@ -170,7 +170,7 @@ exports[`renders correctly with credits 1`] = `
         Array [
           Object {
             "color": "#696969",
-            "fontFamily": "GillSansMTStd-Medium",
+            "fontFamily": "GillSansW01-Medium",
             "fontSize": 13,
             "lineHeight": 16,
           },
@@ -188,7 +188,7 @@ exports[`renders correctly with credits 1`] = `
         Array [
           Object {
             "color": "#696969",
-            "fontFamily": "GillSansMTStd-Medium",
+            "fontFamily": "GillSansW01-Medium",
             "fontSize": 13,
             "lineHeight": 16,
           },
@@ -229,7 +229,7 @@ exports[`renders correctly with credits only 1`] = `
         Array [
           Object {
             "color": "#696969",
-            "fontFamily": "GillSansMTStd-Medium",
+            "fontFamily": "GillSansW01-Medium",
             "fontSize": 13,
             "lineHeight": 16,
           },
@@ -272,7 +272,7 @@ exports[`renders correctly with specific styles 1`] = `
         Array [
           Object {
             "color": "#696969",
-            "fontFamily": "GillSansMTStd-Medium",
+            "fontFamily": "GillSansW01-Medium",
             "fontSize": 13,
             "lineHeight": 16,
           },
@@ -292,7 +292,7 @@ exports[`renders correctly with specific styles 1`] = `
         Array [
           Object {
             "color": "#696969",
-            "fontFamily": "GillSansMTStd-Medium",
+            "fontFamily": "GillSansW01-Medium",
             "fontSize": 13,
             "lineHeight": 16,
           },
@@ -335,7 +335,7 @@ exports[`renders correctly without credits 1`] = `
         Array [
           Object {
             "color": "#696969",
-            "fontFamily": "GillSansMTStd-Medium",
+            "fontFamily": "GillSansW01-Medium",
             "fontSize": 13,
             "lineHeight": 16,
           },

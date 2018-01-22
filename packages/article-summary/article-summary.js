@@ -9,7 +9,7 @@ const styles = {
   container: {},
   label: {
     color: "#333333",
-    fontFamily: "GillSansMTStd-Medium",
+    fontFamily: "GillSansW01-Medium",
     fontSize: 12,
     marginBottom: 2,
     letterSpacing: 1
@@ -28,7 +28,7 @@ const styles = {
   text: {
     color: "#696969",
     fontSize: 14,
-    fontFamily: "TimesDigitalW04",
+    fontFamily: "TimesDigital-Regular",
     lineHeight: 20,
     marginBottom: 10,
     flexWrap: "wrap"
@@ -37,7 +37,7 @@ const styles = {
     color: "#696969",
     fontSize: 13,
     lineHeight: 15,
-    fontFamily: "GillSansMTStd-Medium",
+    fontFamily: "GillSansW01-Medium",
     marginBottom: 10
   }
 };

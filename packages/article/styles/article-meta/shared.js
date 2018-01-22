@@ -21,11 +21,11 @@ const sharedStyles = {
     color: "#696969",
     fontSize: 13,
     lineHeight: 15,
-    fontFamily: "GillSansMTStd-Medium"
+    fontFamily: "GillSansW01-Medium"
   },
   byline: {
     fontSize: 13,
-    fontFamily: "GillSansMTStd-Medium",
+    fontFamily: "GillSansW01-Medium",
     color: "#696969",
     lineHeight: 15
   }

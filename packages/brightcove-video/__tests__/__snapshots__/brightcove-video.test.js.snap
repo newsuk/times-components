@@ -216,7 +216,7 @@ exports[`the player can trigger errors 1`] = `
       style={
         Object {
           "color": "white",
-          "fontFamily": "TimesDigitalW04",
+          "fontFamily": "TimesDigital-Regular",
           "fontSize": 14,
           "marginBottom": 15,
           "opacity": 0.8,
@@ -293,7 +293,7 @@ exports[`the player can trigger errors 1`] = `
           style={
             Object {
               "color": "white",
-              "fontFamily": "GillSansMTStd-Medium",
+              "fontFamily": "GillSansW01-Medium",
               "fontSize": 13,
               "letterSpacing": 1,
               "lineHeight": 15,
@@ -370,7 +370,7 @@ exports[`will handle an error properly 1`] = `
       style={
         Object {
           "color": "white",
-          "fontFamily": "TimesDigitalW04",
+          "fontFamily": "TimesDigital-Regular",
           "fontSize": 14,
           "marginBottom": 15,
           "opacity": 0.8,
@@ -447,7 +447,7 @@ exports[`will handle an error properly 1`] = `
           style={
             Object {
               "color": "white",
-              "fontFamily": "GillSansMTStd-Medium",
+              "fontFamily": "GillSansW01-Medium",
               "fontSize": 13,
               "letterSpacing": 1,
               "lineHeight": 15,

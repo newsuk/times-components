@@ -3,7 +3,7 @@ const sharedStyles = {
     marginBottom: 10
   },
   articleTextElement: {
-    fontFamily: "TimesDigitalW04",
+    fontFamily: "TimesDigital-Regular",
     lineHeight: 26,
     fontSize: 17,
     marginBottom: 25,
