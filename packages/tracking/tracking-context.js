@@ -1,5 +1,4 @@
 // @flow
-
 import React from "react";
 import type { Component } from "react";
 import PropTypes from "prop-types";
@@ -16,12 +15,16 @@ type TrackingProps = {
 type TrackingObject = {
   getAttrs: () => mixed,
   trackingObject: any,
-  isDataReady: (props: TrackingProps) => boolean   
+  isDataReady: (props: TrackingProps) => boolean
 };
 
 const withTrackingContext = (
   WrappedComponent: Component<any>,
-  { getAttrs = () => ({}), trackingObject, isDataReady = () => true }: TrackingObject = {}
+  {
+    getAttrs = () => ({}),
+    trackingObject,
+    isDataReady = () => true
+  }: TrackingObject = {}
 ) => {
   const componentName = getDisplayName(WrappedComponent);
 
