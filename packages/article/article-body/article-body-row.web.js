@@ -26,56 +26,54 @@ export const responsiveImageWrapper = imageType => {
 };
 
 const ArticleRow = ({ content: { data, index } }) =>
-  renderTrees(
-    [data],
-    {
-      paragraph(key, attributes, children) {
-        return (
-          <BodyParagraph key={key} uid={index}>
-            {children}
-          </BodyParagraph>
-        );
-      },
-      image(key, { display, ratio, url, caption, credits }) {
-        const ImageWrapper = responsiveImageWrapper(display);
-        return (
-          <ImageWrapper key={key}>
-            <ArticleImage
-              imageOptions={{
-                display,
-                ratio,
-                url
-              }}
-              captionOptions={{
-                caption,
-                credits
-              }}
-            />
-          </ImageWrapper>
-        );
-      },
-      pullQuote(key, { content, caption: { name, twitter } }) {
-        return (
-          <PullQuoteContainer key={key}>
-            <PullQuoteResp>
-              <PullQuote content={content} caption={name} twitter={twitter} />
-            </PullQuoteResp>
-          </PullQuoteContainer>
-        );
-      },
-      link(key, attributes, children) {
-        return (
-          <ArticleLink
-            key={key}
-            uuid={index}
-            onPress={() => {}}
-            url={attributes.href}
-          >
-            {children}
-          </ArticleLink>
-        );
-      }
-    });
+  renderTrees([data], {
+    paragraph(key, attributes, children) {
+      return (
+        <BodyParagraph key={key} uid={index}>
+          {children}
+        </BodyParagraph>
+      );
+    },
+    image(key, { display, ratio, url, caption, credits }) {
+      const ImageWrapper = responsiveImageWrapper(display);
+      return (
+        <ImageWrapper key={key}>
+          <ArticleImage
+            imageOptions={{
+              display,
+              ratio,
+              url
+            }}
+            captionOptions={{
+              caption,
+              credits
+            }}
+          />
+        </ImageWrapper>
+      );
+    },
+    pullQuote(key, { content, caption: { name, twitter } }) {
+      return (
+        <PullQuoteContainer key={key}>
+          <PullQuoteResp>
+            <PullQuote content={content} caption={name} twitter={twitter} />
+          </PullQuoteResp>
+        </PullQuoteContainer>
+      );
+    },
+    link(key, attributes, children) {
+      return (
+        <ArticleLink
+          key={key}
+          uuid={index}
+          onPress={() => {}}
+          url={attributes.href}
+        >
+          {children}
+        </ArticleLink>
+      );
+    }
+  });
 
 ArticleRow.propTypes = {
   content: PropTypes.shape({
