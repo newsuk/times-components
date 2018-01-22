@@ -4,11 +4,11 @@ import { makeExecutableSchema } from "graphql-tools";
 
 function createFuture() {
   let resolve;
-  let promise = new Promise( done => resolve = done);
+  let promise = new Promise(done => (resolve = done));
 
   return {
-    resolve: (data) => {
-      setTimeout(()=> resolve(data));
+    resolve: data => {
+      setTimeout(() => resolve(data));
       return promise;
     },
     promise: () => promise
@@ -26,25 +26,23 @@ type Query {
 }`;
 
 export default function PingPongTester(options) {
-
   const events = [];
   const blockers = {};
-  const wait = (id) => {
+  const wait = id => {
     blockers[id] = blockers[id] || createFuture();
     return blockers[id].promise();
-  }
+  };
 
   const resolvers = {
     Query: {
-      async ping(root, {id}) {
-        events.push({type:'request', id});
+      async ping(root, { id }) {
+        events.push({ type: "request", id });
         const data = await wait(id);
-        events.push({type:'resolved', id, data});
-        return {id, data}
+        events.push({ type: "resolved", id, data });
+        return { id, data };
       }
     }
-  }
-
+  };
 
   const schema = makeExecutableSchema({ typeDefs, resolvers });
 
@@ -54,7 +52,7 @@ export default function PingPongTester(options) {
     }
 
     getSnapshot() {
-      return [...events]
+      return [...events];
     }
 
     pushEvent(data) {
@@ -62,11 +60,10 @@ export default function PingPongTester(options) {
     }
 
     resolve(id, data) {
-      if( !blockers[id] ) 
-        return Promise.resolve(data);
+      if (!blockers[id]) return Promise.resolve(data);
 
-      setTimeout(()=>{
-        events.push({type:'resolving', id, data});
+      setTimeout(() => {
+        events.push({ type: "resolving", id, data });
         blockers[id].resolve(data);
         delete blockers[id];
       });
@@ -74,16 +71,15 @@ export default function PingPongTester(options) {
     }
 
     query(data) {
-      return super.query(data)
-        .then( ({data:d}) => {
-          events.push({
-            type: 'response',
-            data: d
-          })
-          return d
+      return super.query(data).then(({ data: d }) => {
+        events.push({
+          type: "response",
+          data: d
         });
+        return d;
+      });
     }
-  };
+  }
 
   return new WrappedClient({
     ...options,
