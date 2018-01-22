@@ -1,53 +1,92 @@
 import { ApolloClient } from "apollo-client";
-import { InMemoryCache } from "apollo-cache-inmemory";
 import { LocalLink } from "apollo-link-local";
 import { makeExecutableSchema } from "graphql-tools";
 
-const typeDefs = `
-type Pong {
-  id: Int
-}
-
-type Query {
-  ping(id: Int) : Pong
-}
-`;
-
-export function createFuture() {
+function createFuture() {
   let resolve;
-  const promise = new Promise(done => {
-    resolve = done;
-  });
+  let promise = new Promise( done => resolve = done);
+
   return {
-    resolve() {
-      setTimeout(resolve);
+    resolve: (data) => {
+      setTimeout(resolve, 0, data);
       return promise;
     },
     promise: () => promise
   };
 }
 
-export function createPingPongClient(
-  waitFor = () => Promise.resolve(),
-  onEvent = () => {}
-) {
+const typeDefs = `
+type Pong {
+  id: Int,
+  data: String
+}
+
+type Query {
+  ping(id: Int!) : Pong
+}`;
+
+export default function PingPongTester(options) {
+
+  const events = [];
+  const blockers = {};
+  const wait = (id) => {
+    blockers[id] = blockers[id] || createFuture();
+    return blockers[id].promise();
+  }
+
   const resolvers = {
     Query: {
-      ping: async (root, { id }) => {
-        onEvent({ id, type: "request" });
-        await waitFor(id);
-        onEvent({ id, type: "awaited" });
-        return { id };
+      async ping(root, {id}) {
+        events.push({type:'request', id});
+        const data = await wait(id);
+        events.push({type:'resolved', id, data});
+        return {id, data}
       }
     }
-  };
+  }
+
 
   const schema = makeExecutableSchema({ typeDefs, resolvers });
 
-  const client = new ApolloClient({
-    cache: new InMemoryCache({}),
+  class WrappedClient extends ApolloClient {
+    constructor(...args) {
+      super(...args);
+    }
+
+    getSnapshot() {
+      return [...events]
+    }
+
+    pushEvent(data) {
+      events.push(data);
+    }
+
+    resolve(id, data) {
+      if( !blockers[id] ) 
+        return Promise.resolve();
+
+      setTimeout(()=>{
+        events.push({type:'resolving', id, data});
+        blockers[id].resolve(data);
+        delete blockers[id];
+      });
+      return blockers[id].promise;
+    }
+
+    query(data) {
+      return super.query(data)
+        .then( ({data:d}) => {
+          events.push({
+            type: 'response',
+            data: d
+          })
+          return d
+        });
+    }
+  };
+
+  return new WrappedClient({
+    ...options,
     link: new LocalLink({ schema })
   });
-
-  return client;
 }
