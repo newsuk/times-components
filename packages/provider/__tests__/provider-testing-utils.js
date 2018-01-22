@@ -8,7 +8,7 @@ function createFuture() {
 
   return {
     resolve: (data) => {
-      setTimeout(resolve, 0, data);
+      setTimeout(()=> resolve(data));
       return promise;
     },
     promise: () => promise
@@ -63,14 +63,14 @@ export default function PingPongTester(options) {
 
     resolve(id, data) {
       if( !blockers[id] ) 
-        return Promise.resolve();
+        return Promise.resolve(data);
 
       setTimeout(()=>{
         events.push({type:'resolving', id, data});
         blockers[id].resolve(data);
         delete blockers[id];
       });
-      return blockers[id].promise;
+      return blockers[id].promise();
     }
 
     query(data) {

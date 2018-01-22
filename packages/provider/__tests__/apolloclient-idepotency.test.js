@@ -1,10 +1,6 @@
 import gql from "graphql-tag";
-import React from "react";
-import renderer from "react-test-renderer";
-import { ApolloProvider } from "react-apollo";
 import { InMemoryCache } from "apollo-cache-inmemory";
 
-import connectGraphql from "../provider";
 import createPingPongClient from "./provider-testing-utils";
 
 it("should not send the same query multiple times", async () => {
@@ -114,6 +110,7 @@ it("should resent same query if cache is disabled", async () => {
     query PingQuery($ID: Int) {
       ping(id: $ID) {
         id
+        data
       }
     }
   `;
@@ -127,7 +124,7 @@ it("should resent same query if cache is disabled", async () => {
     variables: {ID:1}
   });
  
-  await client.resolve(1);
+  await client.resolve(1, 'foo');
   await q1;
 
   const resolved1 = client.getSnapshot()
@@ -141,8 +138,8 @@ it("should resent same query if cache is disabled", async () => {
     fetchPolicy: 'network-only'
   });
 
-  await client.resolve(1);
-  await q2;
+  await client.resolve(1, 'bar');
+  const {ping} = await q2;
 
   const resolved2 = client.getSnapshot() 
     .filter(e => e.type === 'resolved')
@@ -150,6 +147,7 @@ it("should resent same query if cache is disabled", async () => {
 
   expect(resolved1).toBe(1);
   expect(resolved2).toBe(2);
+  expect(ping.data).toBe('bar');
 
 });
 
@@ -230,37 +228,3 @@ it("should not resent same query even if it has a different name and variables",
   expect(resolved).toBe(1);
 
 });
-
-
-
-/*
-it("should coalesce same query even with superfluous variables", async () => {
-  const query = gql`
-    query Ping1Query($ID: Int) {
-      ping(id: $ID) {
-        id
-      }
-    }
-  `;
-
-
-  const client = createPingPongClient({
-    cache: new InMemoryCache() 
-  })
-  
-  const q1 = client.query({query, variables: {ID:1}});
-  const q2 = client.query({query, variables: {ID:1, FOO:1}});
-  
-  await client.resolve(1);
-  await q1;
-  await q2;
-  
-  const resolved = client.getSnapshot() 
-    .filter(e => e.type === 'resolved')
-    .map(e => e.id).length;
-
-  expect(resolved).toBe(1);
-
-});
-
-*/

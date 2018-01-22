@@ -2,118 +2,83 @@ import gql from "graphql-tag";
 import React from "react";
 import renderer from "react-test-renderer";
 import { ApolloProvider } from "react-apollo";
+import { InMemoryCache } from "apollo-cache-inmemory";
+
 import connectGraphql from "../provider";
 import createPingPongClient from "./provider-testing-utils";
 
-it("should recive gql client response");
-/*
-it("should recive gql client response", async () => {
-  const query = gql`
-    {
-      ping(id: 42) {
-        id
-      }
-    }
-  `;
 
-  const client = createPingPongClient();
-  const result = client.query({ query });
-  const { data } = await result;
-  expect(data.ping.id).toEqual(42);
-});
-
-it("should maintain order", done => {
+it("should maintain order", async() => {
   const query = gql`
-    query PingQuery($id: Int) {
-      ping(id: $id) {
+    query PingQuery($ID: Int) {
+      ping(id: $ID) {
         id
       }
     }
   `;
 
   const Connect = connectGraphql(query);
-  const futures = Array.from({ length: 3 }, createFuture);
 
-  const events = [];
+  const client = createPingPongClient({
+    cache: new InMemoryCache()
+  });
 
-  const client = createPingPongClient(
-    id => futures[id].promise(),
-    data => events.push(data)
-  );
 
-  function runTests() {
-    const requested = events.filter(x => x.type === "request").map(x => x.id);
-
-    const rendered = events
-      .filter(x => x.type === "render")
-      .map(x => x.requestedId);
-
-    const awaited = events.filter(x => x.type === "awaited").map(x => x.id);
-
-    expect(requested).toEqual([0, 1, 2]);
-    expect(awaited).toEqual([1, 2, 0]);
-
-    expect(rendered).toEqual([0, 1, 2, 2]);
-    done();
-  }
-
-  const resolveAll = async () => {
-    events.push({ id: 1, type: "resolving" });
-    await futures[1].resolve();
-
-    events.push({ id: 2, type: "resolving" });
-    await futures[2].resolve();
-
-    events.push({ id: 0, type: "resolving" });
-    await futures[0].resolve();
-
-    setTimeout(runTests);
-  };
-
-  class PingPong extends React.Component {
-    constructor(props, context) {
-      super(props, context);
-      this.state = {
-        i: 0
-      };
-    }
-
-    render() {
-      const { i } = this.state;
-
-      if (i < 2) {
-        setTimeout(() => {
-          this.setState(({ i: j }) => {
-            events.push({ id: j, type: "inc" });
-            return { i: j + 1 };
-          });
-        });
-      } else {
-        resolveAll();
+  const lastRender = await new Promise( (done) => {
+    class PingPong extends React.Component {
+      constructor(props, context) {
+        super(props, context);
+        this.state = {
+          i: 0
+        };
       }
 
-      return (
-        <Connect id={i} name={i.toString()}>
-          {props => {
-            events.push({
-              id: (props.ping || {}).id,
-              requestedId: props.id,
-              type: "render",
-              loading: props.isLoading
-            });
+      render() {
+        const { i } = this.state;
+        
+        setTimeout( async ()=>{
+          if (i<3) {
+            this.setState({i:i+1})
+          } else {
+            await client.resolve(3);
+            await client.resolve(1);
+            await client.resolve(2);
+            await client.resolve(0);
+          }
+        })
 
-            return null;
-          }}
-        </Connect>
-      );
+        return (
+          <Connect ID={i}>
+            { (props) => {
+              const {isLoading, ping = {id:null}} = props;
+              client.pushEvent({type:'render', id: ping.id, requested: i, isLoading})
+              if (!isLoading) done(ping.id);
+              return null;
+            }}
+          </Connect>
+        );
+      }
     }
-  }
 
-  renderer.create(
-    <ApolloProvider client={client}>
-      <PingPong />
-    </ApolloProvider>
-  );
-});
+    renderer.create(
+      <ApolloProvider client={client}>
+        <PingPong />
+      </ApolloProvider>
+    );
+  })
 
-*/
+  expect(lastRender).toBe(3);
+  expect(client.getSnapshot()).toEqual([ 
+    { type: 'render', id: null, requested: 0, isLoading: true },
+    { type: 'request', id: 0 },
+    { type: 'request', id: 1 },
+    { type: 'render', id: null, requested: 1, isLoading: true },
+    { type: 'request', id: 2 },
+    { type: 'render', id: null, requested: 2, isLoading: true },
+    { type: 'request', id: 3 },
+    { type: 'render', id: null, requested: 3, isLoading: true },
+    { type: 'resolving', id: 3},
+    { type: 'resolved', id: 3},
+    { type: 'render', id: 3, requested: 3, isLoading: false }
+  ]);
+})
