@@ -19,7 +19,7 @@ const RelatedArticlesContent = ({ item }) => {
     publicationName,
     publishedTime,
     style,
-    summary,
+    summary125,
     url
   } = item;
 
@@ -48,7 +48,7 @@ const RelatedArticlesContent = ({ item }) => {
             label={label}
             publication={publicationName}
             showPublication={false}
-            text={summary}
+            text={summary125}
           />
         </Card>
       </View>
