@@ -27,7 +27,7 @@ BoxWithButtons.propTypes = {
 };
 
 const BoxWithTrackingContext = withTrackingContext(Box, {
-  trackingObject: "TrackRenderStory",
+  trackingObjectName: "TrackRenderStory",
   getAttrs: props => ({ color: props.color })
 });
 
@@ -42,7 +42,7 @@ const BoxWithPressTrackingAndContext = withTrackingContext(
       }
     ]
   }),
-  { trackingObject: "TrackRenderStory" }
+  { trackingObjectName: "TrackRenderStory" }
 );
 
 const BoxesWithTrackingContext = withTrackingContext(
@@ -51,7 +51,7 @@ const BoxesWithTrackingContext = withTrackingContext(
       id: props.elementId
     })
   }),
-  { trackingObject: "Story" }
+  { trackingObjectName: "Story" }
 );
 
 storiesOf("Tracking", module)
