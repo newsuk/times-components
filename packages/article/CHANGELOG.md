@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.29.1"></a>
+## [0.29.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.29.0...@times-components/article@0.29.1) (2018-01-22)
+
+
+### Bug Fixes
+
+* handle keys properly in the article rows renderers ([#559](https://github.com/newsuk/times-components/issues/559)) ([a941d05](https://github.com/newsuk/times-components/commit/a941d05))
+
+
+
+
 <a name="0.29.0"></a>
 # [0.29.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.28.3...@times-components/article@0.29.0) (2018-01-22)
 
