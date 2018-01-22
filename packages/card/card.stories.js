@@ -16,7 +16,6 @@ const cardProps = {
   showImage: true
 };
 
-articleSummaryProps.date = new Date("2017-07-01T14:32:00.000Z");
 storiesOf("Card", module)
   .addDecorator(LateralSpacingDecorator)
   .add("Loading", () => (

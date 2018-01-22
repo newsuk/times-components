@@ -224,7 +224,7 @@ export default AuthorProfileContent => {
         __typename: "Image"
       },
       publicationName: "TIMES",
-      publishedTime: new Date("2017-11-17T00:01:00.000Z"),
+      publishedTime: "2017-11-17T00:01:00.000Z",
       headline: "Top medal for forces dog who took a bite out of the Taliban",
       url:
         "https://www.thetimes.co.uk/article/d98c257c-cb16-11e7-b529-95e3fc05f40f",

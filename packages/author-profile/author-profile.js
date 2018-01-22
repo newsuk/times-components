@@ -10,13 +10,6 @@ import AuthorArticlesNoImagesProvider from "./author-profile-list-provider";
 import AuthorProfileError from "./author-profile-error";
 import AuthorProfileContent from "./author-profile-content";
 
-const castArticle = (page, pageSize) => article => ({
-  ...article,
-  page,
-  pageSize,
-  publishedTime: new Date(article.publishedTime)
-});
-
 const AuthorProfile = ({
   author,
   error,
@@ -77,35 +70,29 @@ const AuthorProfile = ({
         error: articlesError,
         refetch: refetchArticles,
         variables: { imageRatio = "3:2" }
-      }) => {
-        const articlesWithPublishTime = get(data, "articles.list", []).map(
-          castArticle(page, pageSize)
-        );
-
-        return (
-          <AuthorProfileContent
-            isLoading={isLoading}
-            name={name}
-            biography={biography}
-            uri={uri}
-            error={articlesError}
-            refetch={refetchArticles}
-            jobTitle={jobTitle}
-            twitter={twitter}
-            onTwitterLinkPress={onTwitterLinkPress}
-            count={get(articles, "count", 0)}
-            onNext={onNext}
-            onPrev={onPrev}
-            page={page}
-            pageSize={pageSize}
-            imageRatio={ratioTextToFloat(imageRatio)}
-            showImages={hasLeadAssets}
-            articlesLoading={articlesLoading}
-            articles={articlesWithPublishTime}
-            onArticlePress={onArticlePress}
-          />
-        );
-      }}
+      }) => (
+        <AuthorProfileContent
+          isLoading={isLoading}
+          name={name}
+          biography={biography}
+          uri={uri}
+          error={articlesError}
+          refetch={refetchArticles}
+          jobTitle={jobTitle}
+          twitter={twitter}
+          onTwitterLinkPress={onTwitterLinkPress}
+          count={get(articles, "count", 0)}
+          onNext={onNext}
+          onPrev={onPrev}
+          page={page}
+          pageSize={pageSize}
+          imageRatio={ratioTextToFloat(imageRatio)}
+          showImages={hasLeadAssets}
+          articlesLoading={articlesLoading}
+          articles={get(data, "articles.list", [])}
+          onArticlePress={onArticlePress}
+        />
+      )}
     </SelectedProvider>
   );
 };
