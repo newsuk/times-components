@@ -18,7 +18,7 @@
     exit 1
   fi
 
-  $ANDROID_HOME/tools/emulator @${avd} &
+  $emulator_cmd @${avd} &
 
   bootanim=""
   failcounter=0
