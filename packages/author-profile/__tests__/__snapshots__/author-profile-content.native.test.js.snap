@@ -2314,14 +2314,17 @@ exports[`renders profile content component 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#333333",
-                        "fontFamily": "TimesModern-Bold",
-                        "fontSize": 22,
-                        "fontWeight": "400",
-                        "lineHeight": 22,
-                        "marginBottom": 6,
-                      }
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontSize": 22,
+                          "fontWeight": "400",
+                          "lineHeight": 22,
+                          "marginBottom": 6,
+                        },
+                        undefined,
+                      ]
                     }
                   >
                     Top medal for forces dog who took a bite out of the Taliban
@@ -2549,14 +2552,17 @@ exports[`renders profile content component 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#333333",
-                        "fontFamily": "TimesModern-Bold",
-                        "fontSize": 22,
-                        "fontWeight": "400",
-                        "lineHeight": 22,
-                        "marginBottom": 6,
-                      }
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontSize": 22,
+                          "fontWeight": "400",
+                          "lineHeight": 22,
+                          "marginBottom": 6,
+                        },
+                        undefined,
+                      ]
                     }
                   >
                     Social media must raise game to beat terrorists, says UN chief
@@ -2784,14 +2790,17 @@ exports[`renders profile content component 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#333333",
-                        "fontFamily": "TimesModern-Bold",
-                        "fontSize": 22,
-                        "fontWeight": "400",
-                        "lineHeight": 22,
-                        "marginBottom": 6,
-                      }
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontSize": 22,
+                          "fontWeight": "400",
+                          "lineHeight": 22,
+                          "marginBottom": 6,
+                        },
+                        undefined,
+                      ]
                     }
                   >
                     Cuts have left the army 20 years out of date, says former general
@@ -3256,14 +3265,17 @@ exports[`renders profile content item component 1`] = `
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "color": "#333333",
-                  "fontFamily": "TimesModern-Bold",
-                  "fontSize": 22,
-                  "fontWeight": "400",
-                  "lineHeight": 22,
-                  "marginBottom": 6,
-                }
+                Array [
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontSize": 22,
+                    "fontWeight": "400",
+                    "lineHeight": 22,
+                    "marginBottom": 6,
+                  },
+                  undefined,
+                ]
               }
             >
               Top medal for forces dog who took a bite out of the Taliban
@@ -3360,14 +3372,17 @@ exports[`renders profile content item component with a specific image size 1`] =
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "color": "#333333",
-                  "fontFamily": "TimesModern-Bold",
-                  "fontSize": 22,
-                  "fontWeight": "400",
-                  "lineHeight": 22,
-                  "marginBottom": 6,
-                }
+                Array [
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontSize": 22,
+                    "fontWeight": "400",
+                    "lineHeight": 22,
+                    "marginBottom": 6,
+                  },
+                  undefined,
+                ]
               }
             >
               Top medal for forces dog who took a bite out of the Taliban
@@ -3464,14 +3479,17 @@ exports[`renders profile content item component with no image 1`] = `
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "color": "#333333",
-                  "fontFamily": "TimesModern-Bold",
-                  "fontSize": 22,
-                  "fontWeight": "400",
-                  "lineHeight": 22,
-                  "marginBottom": 6,
-                }
+                Array [
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontSize": 22,
+                    "fontWeight": "400",
+                    "lineHeight": 22,
+                    "marginBottom": 6,
+                  },
+                  undefined,
+                ]
               }
             >
               Top medal for forces dog who took a bite out of the Taliban

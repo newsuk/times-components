@@ -74,7 +74,9 @@ const ArticleSummary = props => {
   return (
     <View style={styles.container}>
       {label ? <Text style={styles.label}>{labelText}</Text> : null}
-      <Text style={[styles.headline, containerStyles.headline]}>{headline}</Text>
+      <Text style={[styles.headline, containerStyles.headline]}>
+        {headline}
+      </Text>
       <Text style={styles.text}>{renderTrees(summary, renderer)}</Text>
       <Text
         style={styles.metaText}
@@ -111,7 +113,7 @@ ArticleSummary.defaultProps = {
   publication: DatePublication.defaultProps.publication,
   showPublication: DatePublication.defaultProps.showPublication,
   byline: "",
-  containerStyles: {} 
+  containerStyles: {}
 };
 
 export default ArticleSummary;
