@@ -3,6 +3,8 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 
 import createPingPongClient from "./provider-testing-utils";
 
+/* eslint-disable graphql/template-strings */
+
 it("should not send the same query multiple times", async () => {
   const query = gql`
     query PingQuery($ID: Int) {

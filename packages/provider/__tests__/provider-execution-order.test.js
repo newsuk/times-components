@@ -1,3 +1,4 @@
+// @flow
 import gql from "graphql-tag";
 import React from "react";
 import renderer from "react-test-renderer";
@@ -6,6 +7,8 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 
 import connectGraphql from "../provider";
 import createPingPongClient from "./provider-testing-utils";
+
+/* eslint-disable graphql/template-strings */
 
 it("should maintain order", async () => {
   const query = gql`
@@ -47,7 +50,7 @@ it("should maintain order", async () => {
 
         return (
           <Connect ID={i}>
-            {props => {
+            {(props: { isLoading: boolean, ping: { id: ?number } }): null => {
               const { isLoading, ping = { id: null } } = props;
               client.pushEvent({
                 type: "render",

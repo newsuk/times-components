@@ -4,7 +4,9 @@ import { makeExecutableSchema } from "graphql-tools";
 
 function createFuture() {
   let resolve;
-  let promise = new Promise(done => (resolve = done));
+  const promise = new Promise(done => {
+    resolve = done;
+  });
 
   return {
     resolve: data => {
@@ -47,19 +49,13 @@ export default function PingPongTester(options) {
   const schema = makeExecutableSchema({ typeDefs, resolvers });
 
   class WrappedClient extends ApolloClient {
-    constructor(...args) {
-      super(...args);
-    }
+    getSnapshot = () => [...events];
 
-    getSnapshot() {
-      return [...events];
-    }
-
-    pushEvent(data) {
+    pushEvent = data => {
       events.push(data);
-    }
+    };
 
-    resolve(id, data) {
+    resolve = (id, data) => {
       if (!blockers[id]) return Promise.resolve(data);
 
       setTimeout(() => {
@@ -68,7 +64,7 @@ export default function PingPongTester(options) {
         delete blockers[id];
       });
       return blockers[id].promise();
-    }
+    };
 
     query(data) {
       return super.query(data).then(({ data: d }) => {
