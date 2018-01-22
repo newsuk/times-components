@@ -17,7 +17,7 @@ type TrackingContextPropsType = {
   analyticsStream: ({
     ...AnalyticsEventObjectType,
     object: string
-  }) => mixed
+  }) => void
 };
 
 type TrackingContextObjectType = {
