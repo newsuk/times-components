@@ -134,7 +134,7 @@ exports[`Article Image test on ios does not render Article Image if display is n
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 16,
               },
@@ -152,7 +152,7 @@ exports[`Article Image test on ios does not render Article Image if display is n
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 16,
               },
@@ -209,7 +209,7 @@ exports[`Article Image test on ios does not render Article Image if ratio is not
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 16,
               },
@@ -227,7 +227,7 @@ exports[`Article Image test on ios does not render Article Image if ratio is not
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 16,
               },
@@ -500,7 +500,7 @@ exports[`Article Image test on ios renders inline image (landscape) correctly 1`
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 16,
               },
@@ -518,7 +518,7 @@ exports[`Article Image test on ios renders inline image (landscape) correctly 1`
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 16,
               },
@@ -683,7 +683,7 @@ exports[`Article Image test on ios renders inline image (portrait) correctly 1`]
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 16,
               },
@@ -701,7 +701,7 @@ exports[`Article Image test on ios renders inline image (portrait) correctly 1`]
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 16,
               },
@@ -853,7 +853,7 @@ exports[`Article Image test on ios renders primary image correctly 1`] = `
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 16,
               },
@@ -871,7 +871,7 @@ exports[`Article Image test on ios renders primary image correctly 1`] = `
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 16,
               },
@@ -1036,7 +1036,7 @@ exports[`Article Image test on ios renders secondary image correctly 1`] = `
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 16,
               },
@@ -1054,7 +1054,7 @@ exports[`Article Image test on ios renders secondary image correctly 1`] = `
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 16,
               },

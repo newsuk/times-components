@@ -167,7 +167,7 @@ exports[`Article Image test on android does not render Article Image if display 
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 20,
               },
@@ -185,7 +185,7 @@ exports[`Article Image test on android does not render Article Image if display 
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 20,
               },
@@ -242,7 +242,7 @@ exports[`Article Image test on android does not render Article Image if ratio is
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 20,
               },
@@ -260,7 +260,7 @@ exports[`Article Image test on android does not render Article Image if ratio is
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 20,
               },
@@ -599,7 +599,7 @@ exports[`Article Image test on android renders inline image (landscape) correctl
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 20,
               },
@@ -617,7 +617,7 @@ exports[`Article Image test on android renders inline image (landscape) correctl
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 20,
               },
@@ -815,7 +815,7 @@ exports[`Article Image test on android renders inline image (portrait) correctly
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 20,
               },
@@ -833,7 +833,7 @@ exports[`Article Image test on android renders inline image (portrait) correctly
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 20,
               },
@@ -1018,7 +1018,7 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 20,
               },
@@ -1036,7 +1036,7 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 20,
               },
@@ -1234,7 +1234,7 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 20,
               },
@@ -1252,7 +1252,7 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
             Array [
               Object {
                 "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
+                "fontFamily": "GillSansW01-Medium",
                 "fontSize": 13,
                 "lineHeight": 20,
               },
