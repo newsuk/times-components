@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "0.16.29",
+  "version": "0.16.30",
   "main": "card",
   "scripts": {
     "test:android": "jest --config='./__tests__/android/jest.config.js'",

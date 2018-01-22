@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.16.30"></a>
+## [0.16.30](https://github.com/newsuk/times-components/compare/@times-components/card@0.16.29...@times-components/card@0.16.30) (2018-01-22)
+
+
+### Bug Fixes
+
+* props validation warnings on date ([#556](https://github.com/newsuk/times-components/issues/556)) ([73bcbb5](https://github.com/newsuk/times-components/commit/73bcbb5))
+
+
+
+
 <a name="0.16.29"></a>
 ## [0.16.29](https://github.com/newsuk/times-components/compare/@times-components/card@0.16.28...@times-components/card@0.16.29) (2018-01-19)
 
