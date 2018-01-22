@@ -1,4 +1,4 @@
-import _pick from "lodash.pick";
+import pick from "lodash.pick";
 import { graphql } from "react-apollo-temp";
 import PropTypes from "prop-types";
 import withDebounce from "./debounce";
@@ -21,7 +21,7 @@ export const makeGraphqlOptions = (
   variableNames,
   propsToVariables = identity
 ) => props => ({
-  variables: _pick(
+  variables: pick(
     propsToVariables(props.debouncedProps || props),
     variableNames
   )
