@@ -29,7 +29,7 @@ const ArticleRow = ({ content: { data, index } }) =>
   renderTrees([data], {
     paragraph(key, attributes, children) {
       return (
-        <BodyParagraph key={index} uid={index}>
+        <BodyParagraph key={key} uid={index}>
           {children}
         </BodyParagraph>
       );
@@ -54,14 +54,9 @@ const ArticleRow = ({ content: { data, index } }) =>
     },
     pullQuote(key, { content, caption: { name, twitter } }) {
       return (
-        <PullQuoteContainer>
+        <PullQuoteContainer key={key}>
           <PullQuoteResp>
-            <PullQuote
-              key={key}
-              content={content}
-              caption={name}
-              twitter={twitter}
-            />
+            <PullQuote content={content} caption={name} twitter={twitter} />
           </PullQuoteResp>
         </PullQuoteContainer>
       );
@@ -69,7 +64,7 @@ const ArticleRow = ({ content: { data, index } }) =>
     link(key, attributes, children) {
       return (
         <ArticleLink
-          key={index}
+          key={key}
           uuid={index}
           onPress={() => {}}
           url={attributes.href}
