@@ -20,6 +20,10 @@ import {
   HeaderAdContainer
 } from "./styles/responsive";
 
+const adStyle = {
+  marginBottom: 0
+};
+
 const withAdComposer = (children, section = "article") => (
   <AdComposer section={section}>{children}</AdComposer>
 );
@@ -41,7 +45,7 @@ class ArticlePage extends React.Component {
     return (
       <Fragment>
         <HeaderAdContainer key="headerAd">
-          <Ad code="ad-header" />
+          <Ad code="ad-header" style={adStyle} />
         </HeaderAdContainer>
         <MainContainer>
           <LeadAssetComponent device="MOBILE" leadAsset={leadAsset} />

@@ -13,7 +13,6 @@ export const HeaderAdContainer = withResponsiveStyles(View, {
     display: flex;
     border-top-color: #dbdbdb;
     border-bottom-color: #dbdbdb;
-    //border-top-width: 1px;
     border-bottom-width: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
