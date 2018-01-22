@@ -18,7 +18,6 @@ const RelatedArticlesContent = ({ item }) => {
     onPress,
     publicationName,
     publishedTime,
-    style,
     summary125,
     url
   } = item;

@@ -73,9 +73,7 @@ const ArticleSummary = props => {
   return (
     <View style={styles.container}>
       {label ? <Text style={styles.label}>{labelText}</Text> : null}
-      <Text style={styles.headline}>
-        {headline}
-      </Text>
+      <Text style={styles.headline}>{headline}</Text>
       <Text style={styles.text}>{renderTrees(summary, renderer)}</Text>
       <Text
         style={styles.metaText}
