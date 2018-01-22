@@ -22,7 +22,7 @@ storiesOf("Related Articles", module)
       onPress: preventDefaultedAction("onArticlePress")
     };
 
-    return <RelatedArticles {...props} />;
+    return <RelatedArticles item={props} />;
   })
   .add("Single article with no lead image", () => {
     const props = {
@@ -30,7 +30,7 @@ storiesOf("Related Articles", module)
       onPress: preventDefaultedAction("onArticlePress")
     };
 
-    return <RelatedArticles {...props} />;
+    return <RelatedArticles item={props} />;
   })
   .add("Single article with no label", () => {
     const props = {
@@ -38,7 +38,7 @@ storiesOf("Related Articles", module)
       onPress: preventDefaultedAction("onArticlePress")
     };
 
-    return <RelatedArticles {...props} />;
+    return <RelatedArticles item={props} />;
   })
   .add("Single article with no byline", () => {
     const props = {
@@ -46,5 +46,5 @@ storiesOf("Related Articles", module)
       onPress: preventDefaultedAction("onArticlePress")
     };
 
-    return <RelatedArticles {...props} />;
+    return <RelatedArticles item={props} />;
   });

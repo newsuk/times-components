@@ -9,17 +9,14 @@ exports[`renders an article-summary component with a single paragraph 1`] = `
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
-          "fontWeight": "400",
-          "lineHeight": 22,
-          "marginBottom": 6,
-        },
-        undefined,
-      ]
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 22,
+        "marginBottom": 6,
+      }
     }
   >
     Top medal for forces dog who took a bite out of the Taliban
@@ -95,17 +92,14 @@ exports[`renders an article-summary component with content including line breaks
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
-          "fontWeight": "400",
-          "lineHeight": 22,
-          "marginBottom": 6,
-        },
-        undefined,
-      ]
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 22,
+        "marginBottom": 6,
+      }
     }
   >
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
@@ -255,17 +249,14 @@ exports[`renders an article-summary component with empty content at the end trim
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
-          "fontWeight": "400",
-          "lineHeight": 22,
-          "marginBottom": 6,
-        },
-        undefined,
-      ]
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 22,
+        "marginBottom": 6,
+      }
     }
   >
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
@@ -356,17 +347,14 @@ exports[`renders an article-summary component with headline and no content 1`] =
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
-          "fontWeight": "400",
-          "lineHeight": 22,
-          "marginBottom": 6,
-        },
-        undefined,
-      ]
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 22,
+        "marginBottom": 6,
+      }
     }
   >
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
@@ -416,17 +404,14 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
-          "fontWeight": "400",
-          "lineHeight": 22,
-          "marginBottom": 6,
-        },
-        undefined,
-      ]
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 22,
+        "marginBottom": 6,
+      }
     }
   >
     Top medal for forces dog who took a bite out of the Taliban

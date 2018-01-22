@@ -2,15 +2,18 @@ import React from "react";
 import PropTypes from "prop-types";
 import { StyleSheet, View, Text } from "react-native";
 import { treePropType } from "@times-components/markup";
-import RelatedArticlesContent from "./related-articles-content";
 import SharedStyles from "./styles/shared";
+import MainContainer from "./styles/responsive";
+import RelatedArticlesContent from "./related-articles-content";
 
 const styles = StyleSheet.create(SharedStyles);
 
 const RelatedArticles = ({ item }) => (
   <View style={styles.container}>
     <Text style={styles.title}>Related links</Text>
-    <RelatedArticlesContent item={item} />
+    <MainContainer>
+      <RelatedArticlesContent item={item} />
+    </MainContainer>
   </View>
 );
 
