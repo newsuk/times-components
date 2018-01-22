@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Enzyme, { shallow, mount } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
@@ -13,7 +13,7 @@ jest.useFakeTimers();
 // Jest has done this in v22, so this can be removed if we upgrade
 jest.advanceTimersByTime = jest.runTimersToTime;
 
-class Inner extends React.Component {
+class Inner extends Component {
   constructor(props) {
     super(props);
     this.numberOfDebouncedPropsUpdates = 0;

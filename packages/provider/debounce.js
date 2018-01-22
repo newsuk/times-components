@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import getDisplayName from "react-display-name";
 import hoistNonReactStatic from "hoist-non-react-statics";
@@ -10,7 +10,7 @@ const withDebounce = WrappedComponent => {
     }
   };
 
-  class WithDebounce extends React.Component {
+  class WithDebounce extends Component {
     constructor(props) {
       super(props);
       validateProps(props);

@@ -1,7 +1,6 @@
 import { makeGraphqlOptions } from "../connect";
 
 describe("connect.js", () => {
-
   it("picks only required variables from the supplied props", () => {
     const options = makeGraphqlOptions(["a", "b"]);
     const props = { a: 1, b: 2, c: 3 };
@@ -23,5 +22,4 @@ describe("connect.js", () => {
 
     expect(options(props)).toEqual({ variables: { A: 11, B: 12 } });
   });
-
 });
