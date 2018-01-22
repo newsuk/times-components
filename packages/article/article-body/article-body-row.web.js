@@ -75,9 +75,7 @@ const ArticleRow = ({ content: { data, index } }) =>
           </ArticleLink>
         );
       }
-    },
-    index
-  );
+    });
 
 ArticleRow.propTypes = {
   content: PropTypes.shape({
