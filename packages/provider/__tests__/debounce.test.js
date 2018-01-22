@@ -33,7 +33,7 @@ Inner.propTypes = {
   debouncedProps: PropTypes.shape({}).isRequired
 };
 
-describe("Debounce Tests", () => {
+describe("Debounce", () => {
   it("adds debounceProps to the props passed to the inner component", () => {
     const Outer = withDebounce(Inner);
     const component = shallow(<Outer foo="initialFoo" debounceTimeMs={1000} />);
@@ -59,41 +59,21 @@ describe("Debounce Tests", () => {
         .find("Inner")
         .props();
 
-    const expectedPropsDuringDebounce = {
-      foo: "updatedFoo",
-      debounceTimeMs: delay,
-      debouncedProps: {
-        foo: "initialFoo",
-        debounceTimeMs: delay
-      },
-      isDebouncing: true
-    };
-
-    const expectedPropsAfterDebounce = {
-      foo: "updatedFoo",
-      debounceTimeMs: delay,
-      debouncedProps: {
-        foo: "updatedFoo",
-        debounceTimeMs: delay
-      },
-      isDebouncing: false
-    };
-
     component.setProps({ foo: "updatedFoo" });
 
     if (delay > 0) {
-      expect(innerProps()).toEqual(expectedPropsDuringDebounce);
+      expect(innerProps()).toMatchSnapshot();
 
       jest.advanceTimersByTime(0.99 * delay);
 
-      expect(innerProps()).toEqual(expectedPropsDuringDebounce);
+      expect(innerProps()).toMatchSnapshot();
 
       jest.advanceTimersByTime(0.02 * delay);
     } else {
       jest.runAllTimers();
     }
 
-    expect(innerProps()).toEqual(expectedPropsAfterDebounce);
+    expect(innerProps()).toMatchSnapshot();
   };
 
   it("immediately updates props, but delays update of debouncedProps", () => {

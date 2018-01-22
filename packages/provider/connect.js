@@ -45,7 +45,7 @@ const connectGraphql = (query, propsToVariables) => {
       ...props
     });
   Wrapper.propTypes = {
-    debouncedProps: PropTypes.shape({})
+    debouncedProps: PropTypes.shape({}).isRequired
   };
 
   const GraphQlComponent = graphql(query, {
