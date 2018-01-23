@@ -7,9 +7,13 @@ import { treePropType } from "@times-components/markup";
 import Card from "@times-components/card";
 import Link from "@times-components/link";
 import ArticleSummary from "@times-components/article-summary";
-import SharedStyles from "./styles/shared";
 
-const styles = StyleSheet.create(SharedStyles);
+const styles = StyleSheet.create({
+  cardContainer: {
+    paddingBottom: 10,
+    paddingTop: 10
+  }
+});
 
 const RelatedArticlesContent = ({ item }) => {
   const {
