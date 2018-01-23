@@ -1,5 +1,5 @@
 import React from "react";
-import { Colors } from "@times-components/styleguide"
+import { Colors } from "@times-components/styleguide";
 import PropTypes from "prop-types";
 import { View, Image, Text, TouchableOpacity, StyleSheet } from "react-native";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, View, Button } from "react-native";
-import { Colors } from "@times-components/styleguide"
+import { Colors } from "@times-components/styleguide";
 import PropTypes from "prop-types";
 import withResponsiveStyles from "@times-components/responsive-styles";
 

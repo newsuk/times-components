@@ -18,16 +18,13 @@ const styles = {
   }
 };
 
-
-const ColourSwatch = props => (  
+const ColourSwatch = props => (
   <View style={styles.container}>
     <Text style={styles.label}>{props.label}</Text>
-    <View style={[styles.box, { backgroundColor: props.colour }]}></View>
+    <View style={[styles.box, { backgroundColor: props.colour }]} />
   </View>
 );
 
-
-storiesOf("Styleguide", module)
-  .add("Colours", () => (
-    <ColourSwatch label="Mid Grey" colour={Colours.midGrey} />
+storiesOf("Styleguide", module).add("Colours", () => (
+  <ColourSwatch label="Mid Grey" colour={Colours.midGrey} />
 ));

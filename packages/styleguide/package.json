@@ -16,15 +16,11 @@
     "preset": "react-native",
     "rootDir": "../../",
     "coverageDirectory": "<rootDir>/packages/styleguide/coverage/",
-    "collectCoverageFrom": [
-      "**/packages/styleguide/styleguide.js"
-    ],
+    "collectCoverageFrom": ["**/packages/styleguide/styleguide.js"],
     "transformIgnorePatterns": [
       "node_modules/(?!(react-native|@times-components)/)"
     ],
-    "testMatch": [
-      "<rootDir>/packages/styleguide/__tests__/**.test.js"
-    ]
+    "testMatch": ["<rootDir>/packages/styleguide/__tests__/**.test.js"]
   },
   "repository": {
     "type": "git",

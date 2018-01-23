@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { Colors } from "@times-components/styleguide"
+import { Colors } from "@times-components/styleguide";
 
 const sharedStyles = {
   articleMeta: {

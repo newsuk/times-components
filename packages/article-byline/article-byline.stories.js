@@ -1,5 +1,5 @@
 import React from "react";
-import { Colors } from "@times-components/styleguide"
+import { Colors } from "@times-components/styleguide";
 import { Text } from "react-native";
 import { storiesOf } from "dextrose/storiesOfOverloader";
 import ArticleByline from "./article-byline";

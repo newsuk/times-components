@@ -1,5 +1,4 @@
-import { Colors } from "@times-components/styleguide"
-
+import { Colors } from "@times-components/styleguide";
 
 const sharedStyles = {
   articleHeadLineText: {
