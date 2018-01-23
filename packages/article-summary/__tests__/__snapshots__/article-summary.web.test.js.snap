@@ -9,7 +9,6 @@ exports[`renders an article-summary component with a single paragraph 1`] = `
     dir="auto"
     style={
       Object {
-        "WebkitFontSmoothing": "auto",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -85,7 +84,6 @@ exports[`renders an article-summary component with content including line breaks
     dir="auto"
     style={
       Object {
-        "WebkitFontSmoothing": "auto",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -187,7 +185,6 @@ exports[`renders an article-summary component with empty content at the end trim
     dir="auto"
     style={
       Object {
-        "WebkitFontSmoothing": "auto",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -276,7 +273,6 @@ exports[`renders an article-summary component with headline and no content 1`] =
     dir="auto"
     style={
       Object {
-        "WebkitFontSmoothing": "auto",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -330,7 +326,6 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
     dir="auto"
     style={
       Object {
-        "WebkitFontSmoothing": "auto",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
