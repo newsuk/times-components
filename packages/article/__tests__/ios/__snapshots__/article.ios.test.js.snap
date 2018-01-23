@@ -7380,7 +7380,7 @@ exports[`Article test on ios renders full article 1`] = `
                 },
                 Object {
                   "color": "#069",
-                  "fontFamily": "TimesDigitalW04",
+                  "fontFamily": "TimesDigitalW04-Regular",
                   "fontSize": 17,
                   "lineHeight": 26,
                   "marginBottom": 25,

@@ -7465,7 +7465,7 @@ exports[`Article test on web renders full article 1`] = `
 
 .c16 {
   color: #069;
-  font-family: "TimesDigitalW04";
+  font-family: "TimesDigitalW04-Regular";
   line-height: 26px;
   font-size: 17px;
   margin-bottom: 25px;
