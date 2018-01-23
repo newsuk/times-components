@@ -1,6 +1,7 @@
 import { jsdom } from "jsdom";
 
 import _makeHarness from "../dom-context-harness";
+import { expectFunctionToBeSerialisable } from "./check-serialisable-function";
 
 describe("DOMContext harness", () => {
   let document;
@@ -30,6 +31,10 @@ describe("DOMContext harness", () => {
       ...args
     });
 
+  it("is serialisable", () => {
+    expectFunctionToBeSerialisable(_makeHarness);
+  });
+
   it("injects scripts into the document head", () => {
     const harness = makeHarness({
       scriptUris: ["a", "b"]
@@ -54,44 +59,56 @@ describe("DOMContext harness", () => {
     expect([...scripts].map(s => s.src)).toEqual(["a", "b", "c"]);
   });
 
-  it("passes global variables to the init function", () => {
-    let received = null;
+  it("will invoke the mount hook returned by the init function", () => {
     window.myGlobalVariable = "myGlobalValue";
+    const mount = jest.fn();
+    const init = jest.fn().mockImplementation(() => ({ mount }));
+
+    const harness = makeHarness({ init });
+    harness.execute();
+
+    expect(mount).toHaveBeenCalled();
+  });
+
+  it("passes global variables to the init function", () => {
+    window.myGlobalVariable = "myGlobalValue";
+    const init = jest.fn();
 
     const harness = makeHarness({
       globalNames: ["myGlobalVariable"],
-      init: (el, data, g) => {
-        received = g.myGlobalVariable;
-      }
+      init
     });
     harness.execute();
 
-    expect(received).toEqual("myGlobalValue");
+    expect(init).toHaveBeenCalledWith(
+      expect.objectContaining({
+        globals: { myGlobalVariable: "myGlobalValue" }
+      })
+    );
   });
 
-  // TODO check this in webview
-
   it("reports errors in the init function", () => {
-    const handleError = jest.fn();
+    jest.spyOn(console, "error").mockImplementation();
+    const eventCallback = jest.fn();
     const harness = makeHarness({
       init: () => {
         throw new Error("broken");
       },
-      handleError
+      eventCallback
     });
     harness.execute();
-    expect(handleError).toHaveBeenCalledWith("runInit", "broken");
+    expect(eventCallback).toHaveBeenCalledWith("error", "broken");
   });
 
   it("reports errors in the execute function", () => {
-    const handleError = jest.fn();
+    const eventCallback = jest.fn();
     const harness = makeHarness({
       document: null, // will cause error on DOM manipulation
       scriptUris: ["a"],
-      handleError
+      eventCallback
     });
     harness.execute();
-    expect(handleError).toHaveBeenCalledWith("execute", expect.any(String));
+    expect(eventCallback).toHaveBeenCalledWith("error", expect.any(String));
   });
 
   it("invokes init function after globals are loaded", () => {
@@ -151,5 +168,46 @@ describe("DOMContext harness", () => {
     fireLoadEventFor("first");
 
     expect(init).toHaveBeenCalledTimes(1);
+  });
+
+  it("Dispatches a renderComplete event when the renderComplete callback is invoked", () => {
+    const eventCallback = jest.fn();
+
+    const harness = makeHarness({
+      init: ({ renderComplete }) => renderComplete(),
+      eventCallback
+    });
+
+    harness.execute();
+
+    expect(eventCallback).toHaveBeenCalledWith("renderComplete");
+  });
+
+  it("Does not dispatch multiple renderComplete events when the renderComplete callback is invoked multiple times", () => {
+    const eventCallback = jest.fn();
+
+    const harness = makeHarness({
+      init: ({ renderComplete }) => {
+        renderComplete();
+        renderComplete();
+      },
+      eventCallback
+    });
+
+    harness.execute();
+
+    expect(eventCallback).toHaveBeenCalledTimes(1);
+  });
+
+  it("Allows the renderComplete callback to be invoked asychronously", done => {
+    const harness = makeHarness({
+      init: ({ renderComplete }) => setTimeout(renderComplete, 0),
+      eventCallback: event => {
+        expect(event).toEqual("renderComplete");
+        done();
+      }
+    });
+
+    harness.execute();
   });
 });

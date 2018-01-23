@@ -1,8 +1,9 @@
 // NOTE: this function is serialised to a string and executed in a webview,
 // don't import any other modules or refer to variables defined outside of
-// the function body. Note that use of ES6 features like iteration and classes
-// will end up transpiling into code that uses helper functions like
-// _createClass, so keep this code ES5.
+// the function body. Note that use of some ES6 features like iteration and
+// classes will end up transpiling into code that uses helper functions like
+// _createClass, so keep this code simple. If you change this function, test
+// the DOMContext and Ad stories in both web and native storybooks.
 
 const makeHarness = ({
   document,
@@ -13,22 +14,24 @@ const makeHarness = ({
   data,
   scriptUris,
   globalNames,
-  handleError
+  eventCallback
 }) => {
-  let loaded = false;
+  let initialised = false;
+  let renderCompleteCalled = false;
 
-  const withCatch = (blockName, action) => {
+  const withCatch = action => {
     try {
       action();
     } catch (e) {
-      handleError(blockName, e.message);
+      // eslint-disable-next-line no-console
+      window.console.error(`DOMContext Error: ${e.message}\n${e.stack}`);
+      eventCallback("error", e.message);
     }
   };
 
   return {
     execute() {
-      withCatch("execute", () => {
-        window.postMessage({ loaded: true }, "*");
+      withCatch(() => {
         this.injectScripts();
         this.runInitIfGlobalsPresent();
       });
@@ -55,8 +58,8 @@ const makeHarness = ({
     },
 
     runInitIfGlobalsPresent() {
-      withCatch("runInitIfGlobalsPresent", () => {
-        if (loaded) {
+      withCatch(() => {
+        if (initialised) {
           return;
         }
         for (let i = 0; i < globalNames.length; i += 1) {
@@ -70,15 +73,31 @@ const makeHarness = ({
     },
 
     runInit() {
-      withCatch("runInit", () => {
-        loaded = true;
+      withCatch(() => {
+        initialised = true;
         const globals = {};
         for (let i = 0; i < globalNames.length; i += 1) {
           const globalName = globalNames[i];
           globals[globalName] = window[globalName];
         }
         el.setAttribute("id", id);
-        init(el, data, globals);
+        const renderComplete = () => {
+          if (!renderCompleteCalled) {
+            renderCompleteCalled = true;
+            eventCallback("renderComplete");
+          }
+        };
+        const initialiser = init({
+          el,
+          data,
+          globals,
+          renderComplete,
+          window,
+          document
+        });
+        if (initialiser && initialiser.mount) {
+          initialiser.mount();
+        }
       });
     }
   };

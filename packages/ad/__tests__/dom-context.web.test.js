@@ -7,62 +7,53 @@ import DOMContext from "../dom-context.web";
 
 Enzyme.configure({ adapter: new React16Adapter() });
 
-describe("DOMContext", () => {
-  it("sets the id of the element from the props passed in", () => {
-    let passedId = null;
+describe("DOMContext Web", () => {
+  it("passes an element to the init function", () => {
+    const init = jest.fn();
 
-    mount(
-      <DOMContext
-        id="my-id"
-        init={el => {
-          passedId = el.id;
-        }}
-      />
+    mount(<DOMContext init={init} />);
+
+    expect(init).toHaveBeenCalledWith(
+      expect.objectContaining({
+        el: expect.any(HTMLElement)
+      })
     );
-
-    expect(passedId).toEqual("my-id");
   });
 
   it("passes the data object to the init function", () => {
-    let passedData = null;
+    const init = jest.fn();
 
-    mount(
-      <DOMContext
-        init={(el, data) => {
-          passedData = data;
-        }}
-        data={{ foo: "bar" }}
-      />
+    mount(<DOMContext init={init} data={{ foo: "bar" }} />);
+
+    expect(init).toHaveBeenCalledWith(
+      expect.objectContaining({
+        data: { foo: "bar" }
+      })
     );
-
-    expect(passedData).toEqual({ foo: "bar" });
   });
 
   it("passes selected global variables to the init function", () => {
-    let passedGlobals = null;
-
+    const init = jest.fn();
     window.myGlobalVar1 = "myGlobalVar1Value";
     window.myGlobalVar2 = "myGlobalVar2Value";
     window.myGlobalVar3 = "myGlobalVar3Value";
 
-    const component = new DOMContext({
-      window,
-      document,
-      globalNames: ["myGlobalVar1", "myGlobalVar2"],
-      scriptUris: [],
-      data: {},
-      init: (el, data, g) => {
-        passedGlobals = g;
-      }
-    });
+    mount(
+      <DOMContext init={init} globalNames={["myGlobalVar1", "myGlobalVar2"]} />
+    );
 
-    const el = document.createElement("div");
-    component.handleDivRef(el);
+    expect(init).toHaveBeenCalledWith(
+      expect.objectContaining({
+        globals: {
+          myGlobalVar1: "myGlobalVar1Value",
+          myGlobalVar2: "myGlobalVar2Value"
+        }
+      })
+    );
 
-    expect(passedGlobals).toEqual({
-      myGlobalVar1: "myGlobalVar1Value",
-      myGlobalVar2: "myGlobalVar2Value"
-    });
+    delete window.myGlobalVar1;
+    delete window.myGlobalVar2;
+    delete window.myGlobalVar3;
   });
 
   it("reports an error in the init function", () => {
@@ -79,8 +70,27 @@ describe("DOMContext", () => {
       );
     };
 
-    expect(runWithError).toThrowError(
-      "Error in runInit inside DomContext: broken"
+    expect(runWithError).toThrowError("DomContext error: broken");
+  });
+
+  it("calls onRenderComplete when the renderComplete callback is invoked", () => {
+    const onRenderComplete = jest.fn();
+
+    mount(
+      <DOMContext
+        init={({ renderComplete }) => renderComplete()}
+        onRenderComplete={onRenderComplete}
+      />
     );
+
+    expect(onRenderComplete).toHaveBeenCalled();
+  });
+
+  it("Doesn't throw an error when given an invalid event name", () => {
+    const component = mount(<DOMContext init={() => {}} />);
+
+    expect(() => {
+      component.instance().processEvent({ type: "invalid" });
+    }).not.toThrowError();
   });
 });

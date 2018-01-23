@@ -11,4 +11,10 @@ describe("Generate Config test", () => {
     const result = getMaxSizes(sizes);
     expect(result).toEqual({ width: 320, height: 250 });
   });
+
+  it("getMaxSizes zero if the sizes is falsey", () => {
+    expect(getMaxSizes()).toEqual({ width: 0, height: 0 });
+    expect(getMaxSizes(null)).toEqual({ width: 0, height: 0 });
+    expect(getMaxSizes(undefined)).toEqual({ width: 0, height: 0 });
+  });
 });

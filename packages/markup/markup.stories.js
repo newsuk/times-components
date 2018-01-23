@@ -1,6 +1,5 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-env browser */
-import { AdComposer } from "@times-components/ad";
 import { View, Text, Platform, ScrollView } from "react-native";
 import React from "react";
 import { storiesOf } from "dextrose/storiesOfOverloader";
@@ -28,9 +27,7 @@ storiesOf("Markup", module)
           >
             Click to render the ads
           </a>
-          <AdComposer section="article">
-            {renderTrees(multiParagraphWithAds)}
-          </AdComposer>
+          {renderTrees(multiParagraphWithAds)}
         </div>
       );
     }

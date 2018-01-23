@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import Ad, { AdComposer } from "@times-components/ad";
+import Ad from "@times-components/ad";
 
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
@@ -23,10 +23,6 @@ import {
 const adStyle = {
   marginBottom: 0
 };
-
-const withAdComposer = (children, section = "article") => (
-  <AdComposer section={section}>{children}</AdComposer>
-);
 
 class ArticlePage extends React.Component {
   static renderArticle(articleData) {
@@ -86,8 +82,7 @@ class ArticlePage extends React.Component {
       return <ArticleLoading />;
     }
 
-    const ArticleListView = ArticlePage.renderArticle(this.props.article);
-    return withAdComposer(ArticleListView);
+    return ArticlePage.renderArticle(this.props.article);
   }
 }
 

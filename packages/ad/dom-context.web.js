@@ -5,12 +5,12 @@ import { propTypes, defaultProps } from "./dom-context-prop-types";
 
 /* eslint-env browser */
 export default class DOMContext extends React.PureComponent {
-  handleDivRef = div => {
+  componentDidMount() {
     const { scriptUris, globalNames, init, data, id } = this.props;
 
     const harness = makeHarness({
-      el: div,
-      handleError: this.handleError,
+      el: this.div,
+      eventCallback: this.eventCallback,
       id,
       window,
       document,
@@ -20,20 +20,45 @@ export default class DOMContext extends React.PureComponent {
       data
     });
 
-    this.lastError = null;
+    this.harnessExecuting = true;
     harness.execute();
-    if (this.lastError && process.env.NODE_ENV !== "production") {
-      throw new Error(this.lastError);
-    }
+    this.harnessExecuting = false;
+    this.processEventQueue();
+  }
+
+  eventQueue = [];
+
+  eventCallback = (type, detail) => {
+    this.eventQueue.push({ type, detail });
+    this.processEventQueue();
   };
 
-  handleError = (type, detail) => {
-    this.lastError = `Error in ${type} inside DomContext: ${detail}`;
+  processEventQueue() {
+    if (!this.harnessExecuting) {
+      this.eventQueue.forEach(this.processEvent);
+      this.eventQueue = [];
+    }
+  }
+
+  processEvent = ({ type, detail }) => {
+    if (type === "error") {
+      throw new Error(`DomContext error: ${detail}`);
+    }
+    if (type === "renderComplete") {
+      this.props.onRenderComplete();
+    }
   };
 
   render() {
     const { width, height } = this.props;
-    return <div style={{ width, height }} ref={this.handleDivRef} />;
+    return (
+      <div
+        style={{ width, height, overflow: "hidden" }}
+        ref={div => {
+          this.div = div;
+        }}
+      />
+    );
   }
 }
 
