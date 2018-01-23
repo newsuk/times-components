@@ -27,7 +27,7 @@ exports[`Pagination Native renders correctly 1`] = `
         Array [
           Object {
             "color": "#696969",
-            "fontFamily": "GillSansW01-Medium",
+            "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 15,
             "paddingTop": 4,
           },
@@ -95,7 +95,7 @@ exports[`Pagination Native renders correctly 1`] = `
             style={
               Object {
                 "color": "#006699",
-                "fontFamily": "GillSansW01-Medium",
+                "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 15,
                 "height": 15,
                 "marginRight": 10,
@@ -161,7 +161,7 @@ exports[`Pagination Native renders next link 1`] = `
         Array [
           Object {
             "color": "#696969",
-            "fontFamily": "GillSansW01-Medium",
+            "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 15,
             "paddingTop": 4,
           },
@@ -229,7 +229,7 @@ exports[`Pagination Native renders next link 1`] = `
             style={
               Object {
                 "color": "#006699",
-                "fontFamily": "GillSansW01-Medium",
+                "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 15,
                 "height": 15,
                 "marginRight": 10,
@@ -295,7 +295,7 @@ exports[`Pagination Native renders prev and next link 1`] = `
         Array [
           Object {
             "color": "#696969",
-            "fontFamily": "GillSansW01-Medium",
+            "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 15,
             "paddingTop": 4,
           },
@@ -377,7 +377,7 @@ exports[`Pagination Native renders prev and next link 1`] = `
             style={
               Object {
                 "color": "#006699",
-                "fontFamily": "GillSansW01-Medium",
+                "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 15,
                 "height": 15,
                 "marginLeft": 10,
@@ -438,7 +438,7 @@ exports[`Pagination Native renders prev and next link 1`] = `
             style={
               Object {
                 "color": "#006699",
-                "fontFamily": "GillSansW01-Medium",
+                "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 15,
                 "height": 15,
                 "marginRight": 10,
@@ -504,7 +504,7 @@ exports[`Pagination Native renders prev link 1`] = `
         Array [
           Object {
             "color": "#696969",
-            "fontFamily": "GillSansW01-Medium",
+            "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 15,
             "paddingTop": 4,
           },
@@ -586,7 +586,7 @@ exports[`Pagination Native renders prev link 1`] = `
             style={
               Object {
                 "color": "#006699",
-                "fontFamily": "GillSansW01-Medium",
+                "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 15,
                 "height": 15,
                 "marginLeft": 10,
@@ -637,7 +637,7 @@ exports[`Pagination Native renders results message 1`] = `
         Array [
           Object {
             "color": "#696969",
-            "fontFamily": "GillSansW01-Medium",
+            "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 15,
             "paddingTop": 4,
           },
@@ -705,7 +705,7 @@ exports[`Pagination Native renders results message 1`] = `
             style={
               Object {
                 "color": "#006699",
-                "fontFamily": "GillSansW01-Medium",
+                "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 15,
                 "height": 15,
                 "marginRight": 10,
@@ -811,7 +811,7 @@ exports[`Pagination Native renders with hidden results 1`] = `
             style={
               Object {
                 "color": "#006699",
-                "fontFamily": "GillSansW01-Medium",
+                "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 15,
                 "height": 15,
                 "marginRight": 10,

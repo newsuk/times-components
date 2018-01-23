@@ -4,7 +4,7 @@ import Link from "@times-components/link";
 const responsivelinkStyles = {
   base: `
       color: #069;
-      font-family: "TimesDigital-Regular";
+      font-family: "TimesDigitalW04";
       line-height: 26px;
       font-size: 17px;
       margin-bottom: 25px;

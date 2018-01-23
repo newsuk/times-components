@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   },
   arrow: {
     color: "#006699",
-    fontFamily: "GillSansW01-Medium",
+    fontFamily: "GillSansMTStd-Medium",
     fontSize: 14
   }
 });

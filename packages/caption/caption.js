@@ -22,7 +22,7 @@ const defaultStyle = StyleSheet.create({
     paddingTop: 10
   },
   text: {
-    fontFamily: "GillSansW01-Medium",
+    fontFamily: "GillSansMTStd-Medium",
     fontSize: 13,
     color: "#696969",
     ...lineHeightStyle

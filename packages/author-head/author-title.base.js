@@ -6,7 +6,7 @@ const { propTypes: { style: TextPropTypesStyle } } = Text;
 
 const styles = StyleSheet.create({
   title: {
-    fontFamily: "TimesDigital-RegularSC",
+    fontFamily: "TimesDigitalW04-RegularSC",
     fontSize: 14,
     color: "#696969"
   }

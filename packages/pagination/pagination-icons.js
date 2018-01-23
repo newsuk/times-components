@@ -6,7 +6,7 @@ import PageLabel from "./page-label";
 
 const textStyle = {
   height: 15,
-  fontFamily: "GillSansW01-Medium",
+  fontFamily: "GillSansMTStd-Medium",
   fontSize: 15,
   color: "#006699"
 };

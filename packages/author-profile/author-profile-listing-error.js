@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   },
   message: {
     alignSelf: "center",
-    fontFamily: "TimesDigital-Regular",
+    fontFamily: "TimesDigitalW04",
     fontSize: 18,
     textAlign: "center",
     color: "#696969"

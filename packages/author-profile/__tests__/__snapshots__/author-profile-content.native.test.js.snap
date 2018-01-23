@@ -87,7 +87,7 @@ exports[`renders page error 1`] = `
         Object {
           "alignSelf": "center",
           "color": "#696969",
-          "fontFamily": "TimesDigital-Regular",
+          "fontFamily": "TimesDigitalW04",
           "fontSize": 18,
           "textAlign": "center",
         }
@@ -401,7 +401,7 @@ exports[`renders profile 1`] = `
                 Array [
                   Object {
                     "color": "#696969",
-                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
                     "fontSize": 14,
                   },
                   Object {},
@@ -445,7 +445,7 @@ exports[`renders profile 1`] = `
                     },
                     Object {
                       "color": "#006699",
-                      "fontFamily": "GillSansW01-Medium",
+                      "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 15,
                       "paddingLeft": 5,
                       "textDecorationLine": "none",
@@ -473,7 +473,7 @@ exports[`renders profile 1`] = `
                 style={
                   Object {
                     "color": "#333",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 16,
                     "lineHeight": 26,
                     "textAlign": "center",
@@ -541,7 +541,7 @@ exports[`renders profile 1`] = `
                     Array [
                       Object {
                         "color": "#696969",
-                        "fontFamily": "GillSansW01-Medium",
+                        "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 15,
                         "paddingTop": 4,
                       },
@@ -609,7 +609,7 @@ exports[`renders profile 1`] = `
                         style={
                           Object {
                             "color": "#006699",
-                            "fontFamily": "GillSansW01-Medium",
+                            "fontFamily": "GillSansMTStd-Medium",
                             "fontSize": 15,
                             "height": 15,
                             "marginRight": 10,
@@ -1671,7 +1671,7 @@ exports[`renders profile 1`] = `
                       style={
                         Object {
                           "color": "#006699",
-                          "fontFamily": "GillSansW01-Medium",
+                          "fontFamily": "GillSansMTStd-Medium",
                           "fontSize": 15,
                           "height": 15,
                           "marginRight": 10,
@@ -1985,7 +1985,7 @@ exports[`renders profile content component 1`] = `
                 Array [
                   Object {
                     "color": "#696969",
-                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
                     "fontSize": 14,
                   },
                   Object {},
@@ -2029,7 +2029,7 @@ exports[`renders profile content component 1`] = `
                     },
                     Object {
                       "color": "#006699",
-                      "fontFamily": "GillSansW01-Medium",
+                      "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 15,
                       "paddingLeft": 5,
                       "textDecorationLine": "none",
@@ -2057,7 +2057,7 @@ exports[`renders profile content component 1`] = `
                 style={
                   Object {
                     "color": "#333",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 16,
                     "lineHeight": 26,
                     "textAlign": "center",
@@ -2125,7 +2125,7 @@ exports[`renders profile content component 1`] = `
                     Array [
                       Object {
                         "color": "#696969",
-                        "fontFamily": "GillSansW01-Medium",
+                        "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 15,
                         "paddingTop": 4,
                       },
@@ -2316,7 +2316,7 @@ exports[`renders profile content component 1`] = `
                     style={
                       Object {
                         "color": "#333333",
-                        "fontFamily": "GillSansW01-Medium",
+                        "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 12,
                         "letterSpacing": 1,
                         "marginBottom": 2,
@@ -2350,7 +2350,7 @@ exports[`renders profile content component 1`] = `
                       Object {
                         "color": "#696969",
                         "flexWrap": "wrap",
-                        "fontFamily": "TimesDigital-Regular",
+                        "fontFamily": "TimesDigitalW04",
                         "fontSize": 14,
                         "lineHeight": 20,
                         "marginBottom": 10,
@@ -2375,7 +2375,7 @@ exports[`renders profile content component 1`] = `
                     style={
                       Object {
                         "color": "#696969",
-                        "fontFamily": "GillSansW01-Medium",
+                        "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 13,
                         "lineHeight": 15,
                         "marginBottom": 10,
@@ -2567,7 +2567,7 @@ exports[`renders profile content component 1`] = `
                     style={
                       Object {
                         "color": "#333333",
-                        "fontFamily": "GillSansW01-Medium",
+                        "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 12,
                         "letterSpacing": 1,
                         "marginBottom": 2,
@@ -2601,7 +2601,7 @@ exports[`renders profile content component 1`] = `
                       Object {
                         "color": "#696969",
                         "flexWrap": "wrap",
-                        "fontFamily": "TimesDigital-Regular",
+                        "fontFamily": "TimesDigitalW04",
                         "fontSize": 14,
                         "lineHeight": 20,
                         "marginBottom": 10,
@@ -2626,7 +2626,7 @@ exports[`renders profile content component 1`] = `
                     style={
                       Object {
                         "color": "#696969",
-                        "fontFamily": "GillSansW01-Medium",
+                        "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 13,
                         "lineHeight": 15,
                         "marginBottom": 10,
@@ -2818,7 +2818,7 @@ exports[`renders profile content component 1`] = `
                     style={
                       Object {
                         "color": "#333333",
-                        "fontFamily": "GillSansW01-Medium",
+                        "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 12,
                         "letterSpacing": 1,
                         "marginBottom": 2,
@@ -2852,7 +2852,7 @@ exports[`renders profile content component 1`] = `
                       Object {
                         "color": "#696969",
                         "flexWrap": "wrap",
-                        "fontFamily": "TimesDigital-Regular",
+                        "fontFamily": "TimesDigitalW04",
                         "fontSize": 14,
                         "lineHeight": 20,
                         "marginBottom": 10,
@@ -2877,7 +2877,7 @@ exports[`renders profile content component 1`] = `
                     style={
                       Object {
                         "color": "#696969",
-                        "fontFamily": "GillSansW01-Medium",
+                        "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 13,
                         "lineHeight": 15,
                         "marginBottom": 10,
@@ -3087,7 +3087,7 @@ exports[`renders profile content empty 1`] = `
                 Array [
                   Object {
                     "color": "#696969",
-                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
                     "fontSize": 14,
                   },
                   Object {},
@@ -3112,7 +3112,7 @@ exports[`renders profile content empty 1`] = `
                 style={
                   Object {
                     "color": "#333",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 16,
                     "lineHeight": 26,
                     "textAlign": "center",
@@ -3165,7 +3165,7 @@ exports[`renders profile content empty 1`] = `
                     Array [
                       Object {
                         "color": "#696969",
-                        "fontFamily": "GillSansW01-Medium",
+                        "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 15,
                         "paddingTop": 4,
                       },
@@ -3306,7 +3306,7 @@ exports[`renders profile content item component 1`] = `
               style={
                 Object {
                   "color": "#333333",
-                  "fontFamily": "GillSansW01-Medium",
+                  "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 12,
                   "letterSpacing": 1,
                   "marginBottom": 2,
@@ -3340,7 +3340,7 @@ exports[`renders profile content item component 1`] = `
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -3355,7 +3355,7 @@ exports[`renders profile content item component 1`] = `
               style={
                 Object {
                   "color": "#696969",
-                  "fontFamily": "GillSansW01-Medium",
+                  "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 13,
                   "lineHeight": 15,
                   "marginBottom": 10,
@@ -3426,7 +3426,7 @@ exports[`renders profile content item component with a specific image size 1`] =
               style={
                 Object {
                   "color": "#333333",
-                  "fontFamily": "GillSansW01-Medium",
+                  "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 12,
                   "letterSpacing": 1,
                   "marginBottom": 2,
@@ -3460,7 +3460,7 @@ exports[`renders profile content item component with a specific image size 1`] =
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -3475,7 +3475,7 @@ exports[`renders profile content item component with a specific image size 1`] =
               style={
                 Object {
                   "color": "#696969",
-                  "fontFamily": "GillSansW01-Medium",
+                  "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 13,
                   "lineHeight": 15,
                   "marginBottom": 10,
@@ -3546,7 +3546,7 @@ exports[`renders profile content item component with no image 1`] = `
               style={
                 Object {
                   "color": "#333333",
-                  "fontFamily": "GillSansW01-Medium",
+                  "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 12,
                   "letterSpacing": 1,
                   "marginBottom": 2,
@@ -3580,7 +3580,7 @@ exports[`renders profile content item component with no image 1`] = `
                 Object {
                   "color": "#696969",
                   "flexWrap": "wrap",
-                  "fontFamily": "TimesDigital-Regular",
+                  "fontFamily": "TimesDigitalW04",
                   "fontSize": 14,
                   "lineHeight": 20,
                   "marginBottom": 10,
@@ -3595,7 +3595,7 @@ exports[`renders profile content item component with no image 1`] = `
               style={
                 Object {
                   "color": "#696969",
-                  "fontFamily": "GillSansW01-Medium",
+                  "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 13,
                   "lineHeight": 15,
                   "marginBottom": 10,
@@ -3831,7 +3831,7 @@ exports[`renders profile content loading 1`] = `
                     Array [
                       Object {
                         "color": "#696969",
-                        "fontFamily": "GillSansW01-Medium",
+                        "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 15,
                         "paddingTop": 4,
                       },
@@ -4290,7 +4290,7 @@ exports[`renders profile error 1`] = `
           Object {
             "alignSelf": "center",
             "color": "#696969",
-            "fontFamily": "TimesDigital-Regular",
+            "fontFamily": "TimesDigitalW04",
             "fontSize": 18,
             "textAlign": "center",
           }
@@ -4543,7 +4543,7 @@ exports[`renders profile loading 1`] = `
                     Array [
                       Object {
                         "color": "#696969",
-                        "fontFamily": "GillSansW01-Medium",
+                        "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 15,
                         "paddingTop": 4,
                       },
@@ -5630,7 +5630,7 @@ exports[`renders the author head 1`] = `
         Array [
           Object {
             "color": "#696969",
-            "fontFamily": "TimesDigital-RegularSC",
+            "fontFamily": "TimesDigitalW04-RegularSC",
             "fontSize": 14,
           },
           Object {},
@@ -5674,7 +5674,7 @@ exports[`renders the author head 1`] = `
             },
             Object {
               "color": "#006699",
-              "fontFamily": "GillSansW01-Medium",
+              "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 15,
               "paddingLeft": 5,
               "textDecorationLine": "none",
@@ -5702,7 +5702,7 @@ exports[`renders the author head 1`] = `
         style={
           Object {
             "color": "#333",
-            "fontFamily": "TimesDigital-Regular",
+            "fontFamily": "TimesDigitalW04",
             "fontSize": 16,
             "lineHeight": 26,
             "textAlign": "center",
@@ -5867,7 +5867,7 @@ exports[`renders with no author 1`] = `
                 Array [
                   Object {
                     "color": "#696969",
-                    "fontFamily": "TimesDigital-RegularSC",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
                     "fontSize": 14,
                   },
                   Object {},
@@ -5892,7 +5892,7 @@ exports[`renders with no author 1`] = `
                 style={
                   Object {
                     "color": "#333",
-                    "fontFamily": "TimesDigital-Regular",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": 16,
                     "lineHeight": 26,
                     "textAlign": "center",
@@ -5945,7 +5945,7 @@ exports[`renders with no author 1`] = `
                     Array [
                       Object {
                         "color": "#696969",
-                        "fontFamily": "GillSansW01-Medium",
+                        "fontFamily": "GillSansMTStd-Medium",
                         "fontSize": 15,
                         "paddingTop": 4,
                       },

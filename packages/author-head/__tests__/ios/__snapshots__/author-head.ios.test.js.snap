@@ -54,7 +54,7 @@ exports[`AuthorHead test on ios renders 1`] = `
         Array [
           Object {
             "color": "#696969",
-            "fontFamily": "TimesDigital-RegularSC",
+            "fontFamily": "TimesDigitalW04-RegularSC",
             "fontSize": 14,
           },
           Object {},
@@ -79,7 +79,7 @@ exports[`AuthorHead test on ios renders 1`] = `
         style={
           Object {
             "color": "#333",
-            "fontFamily": "TimesDigital-Regular",
+            "fontFamily": "TimesDigitalW04",
             "fontSize": 16,
             "lineHeight": 26,
             "textAlign": "center",
@@ -250,7 +250,7 @@ exports[`AuthorHead test on ios renders with data 1`] = `
         Array [
           Object {
             "color": "#696969",
-            "fontFamily": "TimesDigital-RegularSC",
+            "fontFamily": "TimesDigitalW04-RegularSC",
             "fontSize": 14,
           },
           Object {},
@@ -294,7 +294,7 @@ exports[`AuthorHead test on ios renders with data 1`] = `
             },
             Object {
               "color": "#006699",
-              "fontFamily": "GillSansW01-Medium",
+              "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 15,
               "paddingLeft": 5,
               "textDecorationLine": "none",
@@ -322,7 +322,7 @@ exports[`AuthorHead test on ios renders with data 1`] = `
         style={
           Object {
             "color": "#333",
-            "fontFamily": "TimesDigital-Regular",
+            "fontFamily": "TimesDigitalW04",
             "fontSize": 16,
             "lineHeight": 26,
             "textAlign": "center",
@@ -416,7 +416,7 @@ exports[`AuthorHead test on ios renders without profile picture 1`] = `
         Array [
           Object {
             "color": "#696969",
-            "fontFamily": "TimesDigital-RegularSC",
+            "fontFamily": "TimesDigitalW04-RegularSC",
             "fontSize": 14,
           },
           Object {},
@@ -460,7 +460,7 @@ exports[`AuthorHead test on ios renders without profile picture 1`] = `
             },
             Object {
               "color": "#006699",
-              "fontFamily": "GillSansW01-Medium",
+              "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 15,
               "paddingLeft": 5,
               "textDecorationLine": "none",
@@ -488,7 +488,7 @@ exports[`AuthorHead test on ios renders without profile picture 1`] = `
         style={
           Object {
             "color": "#333",
-            "fontFamily": "TimesDigital-Regular",
+            "fontFamily": "TimesDigitalW04",
             "fontSize": 16,
             "lineHeight": 26,
             "textAlign": "center",

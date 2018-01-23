@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     opacity: 0.8,
     fontSize: 14,
-    fontFamily: "TimesDigital-Regular"
+    fontFamily: "TimesDigitalW04"
   },
   resetButton: {
     flexDirection: "row",
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   },
   resetText: {
     color: "white",
-    fontFamily: "GillSansW01-Medium",
+    fontFamily: "GillSansMTStd-Medium",
     fontSize: 13,
     lineHeight: 15,
     position: "relative",

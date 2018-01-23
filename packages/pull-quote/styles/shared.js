@@ -16,14 +16,14 @@ const sharedStyles = {
     color: "#333333"
   },
   caption: {
-    fontFamily: "GillSansW01-Medium",
+    fontFamily: "GillSansMTStd-Medium",
     fontSize: 13,
     marginBottom: 0,
     lineHeight: 13
   },
   link: {
     color: "#006699",
-    fontFamily: "GillSansW01-Medium",
+    fontFamily: "GillSansMTStd-Medium",
     textDecorationLine: "none",
     fontSize: 13,
     marginLeft: 3,

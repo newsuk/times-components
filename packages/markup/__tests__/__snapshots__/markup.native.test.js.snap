@@ -215,7 +215,7 @@ exports[`Markup Native renders multiple paragraphs with a pull quote 1`] = `
         style={
           Array [
             Object {
-              "fontFamily": "GillSansW01-Medium",
+              "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 13,
               "marginBottom": 0,
@@ -495,7 +495,7 @@ exports[`Markup Native renders multiple paragraphs with ads 1`] = `
               "borderStyle": "solid",
               "borderWidth": 1,
               "color": "#696969",
-              "fontFamily": "TimesDigital-Regular",
+              "fontFamily": "TimesDigitalW04",
               "fontSize": 11,
               "letterSpacing": 1.5,
               "paddingBottom": 5,

@@ -5,7 +5,7 @@ import { renderTrees, treePropType } from "@times-components/markup";
 
 const styles = StyleSheet.create({
   bio: {
-    fontFamily: "TimesDigital-Regular",
+    fontFamily: "TimesDigitalW04",
     textAlign: "center",
     fontSize: 16,
     lineHeight: 26,

@@ -5,7 +5,7 @@ import { Text, StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   message: {
     color: "#696969",
-    fontFamily: "GillSansW01-Medium",
+    fontFamily: "GillSansMTStd-Medium",
     fontSize: 15,
     paddingTop: 4
   }

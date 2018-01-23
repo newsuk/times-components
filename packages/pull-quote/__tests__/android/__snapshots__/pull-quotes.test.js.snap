@@ -64,7 +64,7 @@ exports[`PullQuotes test on android Pull Quotes with a Caption 1`] = `
       style={
         Array [
           Object {
-            "fontFamily": "GillSansW01-Medium",
+            "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 13,
             "lineHeight": 13,
             "marginBottom": 0,
@@ -145,7 +145,7 @@ exports[`PullQuotes test on android Pull Quotes with a Caption and a Twitter 1`]
       style={
         Array [
           Object {
-            "fontFamily": "GillSansW01-Medium",
+            "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 13,
             "lineHeight": 13,
             "marginBottom": 0,
@@ -198,7 +198,7 @@ exports[`PullQuotes test on android Pull Quotes with a Caption and a Twitter 1`]
             },
             Object {
               "color": "#006699",
-              "fontFamily": "GillSansW01-Medium",
+              "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 13,
               "marginLeft": 3,
@@ -278,7 +278,7 @@ exports[`PullQuotes test on android Pull Quotes without a Caption 1`] = `
       style={
         Array [
           Object {
-            "fontFamily": "GillSansW01-Medium",
+            "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 13,
             "lineHeight": 13,
             "marginBottom": 0,
@@ -359,7 +359,7 @@ exports[`PullQuotes test on android Pull Quotes without a Caption and different 
       style={
         Array [
           Object {
-            "fontFamily": "GillSansW01-Medium",
+            "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 13,
             "lineHeight": 13,
             "marginBottom": 0,

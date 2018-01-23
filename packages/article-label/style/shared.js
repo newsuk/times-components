@@ -1,6 +1,6 @@
 const styles = {
   title: {
-    fontFamily: "GillSansW01-Medium",
+    fontFamily: "GillSansMTStd-Medium",
     fontSize: 12,
     lineHeight: 12,
     fontWeight: "400",
