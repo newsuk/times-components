@@ -200,6 +200,20 @@ eg
 * FontName / Full name = GillSansMTStd-Medium
 * FamilyName = GillSansMTStd-Medium
 
+## Babel config for native apps (Required for tracking)
+
+ Tracking package uses component.displayName. By default, react-native bundler removes displayName in release versions. To keep the display name, the projects that use times-components tracking feature, should follow these steps:
+  * Add `babel-plugin-add-react-displayname` as a dev dependency (`yarn add --dev babel-plugin-add-react-displayname`)
+  * Create .babelrc in base directory
+  * .babelrc should contain following plugins and presets:
+  ```
+  {
+    "presets": ["react-native"],
+    "plugins": ["add-react-displayname"]
+  }
+  ```
+  * Updating babelrc requires a cache clean-up for react-native bundler. Bundle with `react-native bundle --reset-cache` for the first time.
+
 ## Folder Structure
 
 An example component/package looks like this:
