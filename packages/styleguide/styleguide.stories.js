@@ -6,25 +6,42 @@ import { Colours } from "./styleguide";
 
 const styles = {
   container: {
+    flexDirection: "column",
+    alignItems: "center",
+
+  },
+  colourBox: {
     flexDirection: "row",
-    alignItems: "center"
   },
   label: {
+    padding: 5,
+    paddingLeft: 10,
     paddingRight: 10
   },
   box: {
     width: 100,
-    height: 40
+    height: 80,
+    margin: 25,
+    padding: 5,
+    borderRadius: 5
   }
 };
 
+
+
 const ColourSwatch = props => (
   <View style={styles.container}>
-    <Text style={styles.label}>{props.label}</Text>
     <View style={[styles.box, { backgroundColor: props.colour }]} />
+    <Text style={styles.label}>{props.label}</Text>
+    <Text style={styles.label}>{props.colour}</Text>
   </View>
 );
 
-storiesOf("Styleguide", module).add("Colours", () => (
-  <ColourSwatch label="Mid Grey" colour={Colours.midGrey} />
-));
+storiesOf("Styleguide", module)
+  .add("Base Colours", () => (
+    <View style={styles.colourBox}>{
+      Object.entries(Colours).map( ([label, colour]) =>
+        <ColourSwatch label={label} colour={colour} />
+      )
+    }</View>
+  ));
