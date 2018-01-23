@@ -18,7 +18,8 @@ const preventDefaultedAction = decorateAction([
 storiesOf("Related Articles", module)
   .add("Single article default", () => {
     const props = {
-      ...singleRelatedArticleFixture.data.article,
+      ...singleRelatedArticleFixture.data.relatedArticles[0],
+      template: singleRelatedArticleFixture.data.relatedArticlesTemplate,
       onPress: preventDefaultedAction("onArticlePress")
     };
 
@@ -26,7 +27,8 @@ storiesOf("Related Articles", module)
   })
   .add("Single article with no lead image", () => {
     const props = {
-      ...singleRelatedArticleNoImageFixture.data.article,
+      ...singleRelatedArticleNoImageFixture.data.relatedArticles[0],
+      template: singleRelatedArticleNoImageFixture.data.relatedArticlesTemplate,
       onPress: preventDefaultedAction("onArticlePress")
     };
 
@@ -34,7 +36,8 @@ storiesOf("Related Articles", module)
   })
   .add("Single article with no label", () => {
     const props = {
-      ...singleRelatedArticleNoLabelFixture.data.article,
+      ...singleRelatedArticleNoLabelFixture.data.relatedArticles[0],
+      template: singleRelatedArticleNoLabelFixture.data.relatedArticlesTemplate,
       onPress: preventDefaultedAction("onArticlePress")
     };
 
@@ -42,7 +45,9 @@ storiesOf("Related Articles", module)
   })
   .add("Single article with no byline", () => {
     const props = {
-      ...singleRelatedArticleNoBylineFixture.data.article,
+      ...singleRelatedArticleNoBylineFixture.data.relatedArticles[0],
+      template:
+        singleRelatedArticleNoBylineFixture.data.relatedArticlesTemplate,
       onPress: preventDefaultedAction("onArticlePress")
     };
 

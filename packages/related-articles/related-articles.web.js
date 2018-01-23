@@ -8,8 +8,8 @@ import RelatedArticlesContent from "./related-articles-content";
 
 const styles = StyleSheet.create(SharedStyles);
 
-const RelatedArticles = ({ item }) => (
-  <View style={styles.container}>
+const RelatedArticles = ({ item, template }) => (
+  <View style={styles.container} template={template}>
     <Text style={styles.title}>Related links</Text>
     <MainContainer>
       <RelatedArticlesContent item={item} />
@@ -27,7 +27,12 @@ RelatedArticles.propTypes = {
     publishedTime: PropTypes.string,
     summary: PropTypes.arrayOf(treePropType),
     url: PropTypes.string
-  }).isRequired
+  }).isRequired,
+  template: PropTypes.string
+};
+
+RelatedArticles.defaultProps = {
+  template: "DEFAULT"
 };
 
 export default RelatedArticles;

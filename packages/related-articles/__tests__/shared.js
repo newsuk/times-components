@@ -11,7 +11,8 @@ const singleRelatedArticleNoBylineFixture = require("../fixtures/related-article
 module.exports = () => {
   it("renders single default related article", () => {
     const props = {
-      ...singleRelatedArticleFixture.data.article,
+      ...singleRelatedArticleFixture.data.relatedArticles[0],
+      template: singleRelatedArticleFixture.data.relatedArticlesTemplate,
       onPress: () => {}
     };
     const tree = renderer
@@ -22,7 +23,8 @@ module.exports = () => {
 
   it("renders single default related article with no lead image", () => {
     const props = {
-      ...singleRelatedArticleNoImageFixture.data.article,
+      ...singleRelatedArticleNoImageFixture.data.relatedArticles[0],
+      template: singleRelatedArticleNoImageFixture.data.relatedArticlesTemplate,
       onPress: () => {}
     };
     const tree = renderer
@@ -33,7 +35,8 @@ module.exports = () => {
 
   it("renders single default related article with no label", () => {
     const props = {
-      ...singleRelatedArticleNoLabelFixture.data.article,
+      ...singleRelatedArticleNoLabelFixture.data.relatedArticles[0],
+      template: singleRelatedArticleNoLabelFixture.data.relatedArticlesTemplate,
       onPress: () => {}
     };
     const tree = renderer
@@ -44,7 +47,9 @@ module.exports = () => {
 
   it("renders single default related article with no byline", () => {
     const props = {
-      ...singleRelatedArticleNoBylineFixture.data.article,
+      ...singleRelatedArticleNoBylineFixture.data.relatedArticles[0],
+      template:
+        singleRelatedArticleNoBylineFixture.data.relatedArticlesTemplate,
       onPress: () => {}
     };
     const tree = renderer
