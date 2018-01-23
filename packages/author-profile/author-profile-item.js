@@ -75,6 +75,7 @@ export default withTrackEvents(AuthorProfileItem, {
     {
       eventName: "onPress",
       actionName: "Pressed",
+      trackingName: "AuthorProfileItem",
       getAttrs: ({ headline, id }) => ({
         articleHeadline: headline,
         articleId: id
