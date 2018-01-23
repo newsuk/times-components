@@ -2,35 +2,61 @@ import "react-native";
 import React from "react";
 import { Text, View } from "react-native";
 import { storiesOf } from "dextrose/storiesOfOverloader";
-import { Colours } from "./styleguide";
+import { UIColours, WeekendColours, Fonts } from "./styleguide";
 
 const styles = {
-  container: {
+  colorContainer: {
     flexDirection: "column",
     alignItems: "center",
-
   },
+
   colourBox: {
     flexDirection: "row",
   },
+
   label: {
     padding: 5,
     paddingLeft: 10,
     paddingRight: 10
   },
+
   box: {
     width: 100,
     height: 80,
     margin: 25,
     padding: 5,
     borderRadius: 5
+  },
+
+  fontContainer: {
+    flexDirection: "column",
+    alignItems: "center",
+    padding: 20
+  },
+
+  text: {
+    borderColor: 'black',
+    width: 250,
+    fontSize:20
   }
 };
 
+const FontSwatch = props => (
+  <View style={{
+    ...styles.fontContainer
+  }}>
+    <Text style={{
+      ...styles.text,
+     fontFamily: props.font
+    }}> Lorem ipsum dolor sit amet </Text>
+    <Text style={styles.label}>{props.label}</Text>
+    <Text style={styles.label}>{props.font}</Text>
+  </View>
+);
 
 
 const ColourSwatch = props => (
-  <View style={styles.container}>
+  <View style={styles.colorContainer}>
     <View style={[styles.box, { backgroundColor: props.colour }]} />
     <Text style={styles.label}>{props.label}</Text>
     <Text style={styles.label}>{props.colour}</Text>
@@ -38,10 +64,23 @@ const ColourSwatch = props => (
 );
 
 storiesOf("Styleguide", module)
-  .add("Base Colours", () => (
+  .add("UI Colours", () => (
     <View style={styles.colourBox}>{
-      Object.entries(Colours).map( ([label, colour]) =>
+      Object.entries(UIColours).map( ([label, colour]) =>
         <ColourSwatch label={label} colour={colour} />
       )
     }</View>
-  ));
+  ))
+  .add("Weekend Colours", () => (
+    <View style={styles.colourBox}>{
+      Object.entries(WeekendColours).map( ([label, colour]) =>
+        <ColourSwatch label={label} colour={colour} key={colour} />
+      )
+    }</View>
+  )).add("Fonts", () => (
+    <View style={styles.fontBox}>{ 
+      Object.entries(Fonts).map( ([label, font]) =>
+        <FontSwatch label={label} font={font} key={font} />
+      )
+    }</View>
+  ))
