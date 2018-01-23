@@ -95,6 +95,7 @@ export default withTrackEvents(Pagination, {
     {
       eventName: "onNext",
       actionName: "Pressed",
+      trackingName: "Pagination",
       getAttrs: (props, [, destinationPage]) => ({
         destinationPage,
         direction: "next"
@@ -103,6 +104,7 @@ export default withTrackEvents(Pagination, {
     {
       eventName: "onPrev",
       actionName: "Pressed",
+      trackingName: "Pagination",
       getAttrs: (props, [, destinationPage]) => ({
         destinationPage,
         direction: "previous"
