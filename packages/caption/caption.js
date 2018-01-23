@@ -1,4 +1,5 @@
 import React from "react";
+import { Colors } from "@times-components/styleguide"
 import PropTypes from "prop-types";
 import { View, ViewPropTypes, Text, StyleSheet, Platform } from "react-native";
 
@@ -24,7 +25,7 @@ const defaultStyle = StyleSheet.create({
   text: {
     fontFamily: "GillSansMTStd-Medium",
     fontSize: 13,
-    color: "#696969",
+    color: Colours.midGrey,
     ...lineHeightStyle
   },
   credits: {

@@ -3,6 +3,7 @@ import { Text, StyleSheet } from "react-native";
 import Ad from "@times-components/ad";
 import PullQuote from "@times-components/pull-quote";
 import renderTreeWithoutDefaults from "./render-tree-without-defaults";
+import { Colors } from "@times-components/styleguide"
 
 const styles = StyleSheet.create({
   italic: {
@@ -12,8 +13,8 @@ const styles = StyleSheet.create({
     fontWeight: "bold"
   },
   ad: {
-    borderTopColor: "#dbdbdb",
-    borderBottomColor: "#dbdbdb",
+    borderTopColor: Colours.keylineGrey,
+    borderBottomColor: Colours.keylineGrey,
     borderTopWidth: 1,
     borderBottomWidth: 1,
     paddingTop: 10,

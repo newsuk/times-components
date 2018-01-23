@@ -1,3 +1,5 @@
+import { Colors } from "@times-components/styleguide"
+
 const sharedStyles = {
   container: {
     marginTop: 0,
@@ -13,7 +15,7 @@ const sharedStyles = {
     fontFamily: "TimesModern-Regular",
     fontSize: 25,
     lineHeight: 30,
-    color: "#333333"
+    color: Colours.darkGrey
   },
   caption: {
     fontFamily: "GillSansMTStd-Medium",
@@ -22,7 +24,7 @@ const sharedStyles = {
     marginBottom: 0
   },
   link: {
-    color: "#696969",
+    color: Colours.midGrey,
     fontFamily: "TimesModern-Bold",
     textDecorationLine: "none"
   }

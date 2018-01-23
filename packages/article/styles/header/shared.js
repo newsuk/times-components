@@ -1,3 +1,6 @@
+import { Colors } from "@times-components/styleguide"
+
+
 const sharedStyles = {
   articleHeadLineText: {
     fontSize: 30,
@@ -10,7 +13,7 @@ const sharedStyles = {
     fontSize: 20,
     lineHeight: 26,
     fontFamily: "TimesModern-Regular",
-    color: "#333333",
+    color: Colours.darkGrey,
     paddingBottom: 9
   },
   articleLabel: {

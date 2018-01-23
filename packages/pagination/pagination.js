@@ -1,4 +1,5 @@
 import React from "react";
+import { Colors } from "@times-components/styleguide"
 import { StyleSheet, View } from "react-native";
 import PropTypes from "prop-types";
 import Link from "@times-components/link";
@@ -7,6 +8,7 @@ import withPageState from "./pagination-wrapper";
 import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
 import Results from "./results";
 
+
 const styles = StyleSheet.create({
   absolute: {
     left: 0,
@@ -14,7 +16,7 @@ const styles = StyleSheet.create({
     right: 0
   },
   arrow: {
-    color: "#006699",
+    color: Colours.linkBlue,
     fontFamily: "GillSansMTStd-Medium",
     fontSize: 14
   },
@@ -26,11 +28,11 @@ const styles = StyleSheet.create({
     height: 50
   },
   borderTop: {
-    borderTopColor: "#dbdbdb",
+    borderTopColor: Colours.keylineGrey,
     borderTopWidth: 1
   },
   borderBottom: {
-    borderBottomColor: "#dbdbdb",
+    borderBottomColor: Colours.keylineGrey,
     borderBottomWidth: 1
   },
   container: {

@@ -1,3 +1,4 @@
+import { Colors } from "@times-components/styleguide"
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
@@ -10,7 +11,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexDirection: "column",
     paddingBottom: 40,
-    backgroundColor: "#F9F8F3"
+    backgroundColor: Colours.backgroundGrey
   }
 });
 

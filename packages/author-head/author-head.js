@@ -1,4 +1,5 @@
 import React from "react";
+import { Colors } from "@times-components/styleguide"
 import { View, StyleSheet, Platform } from "react-native";
 import PropTypes from "prop-types";
 
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
   twitterLink: {
     fontSize: 15,
     fontFamily: "GillSansMTStd-Medium",
-    color: "#006699",
+    color: Colours.linkBlue,
     textDecorationLine: "none",
     paddingLeft: 5
   }

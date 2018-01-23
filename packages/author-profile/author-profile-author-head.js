@@ -1,3 +1,4 @@
+import { Colors } from "@times-components/styleguide"
 import AuthorHead from "@times-components/author-head";
 import Gradient from "@times-components/gradient";
 import React from "react";
@@ -6,7 +7,7 @@ import { StyleSheet, View } from "react-native";
 const styles = StyleSheet.create({
   container: {
     alignItems: "center",
-    backgroundColor: "#F9F8F3",
+    backgroundColor: Colours.backgroundBuff,
     minHeight: 264,
     width: "100%"
   },

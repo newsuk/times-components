@@ -1,4 +1,5 @@
 import React from "react";
+import { Colors } from "@times-components/styleguide"
 import { Text, StyleSheet } from "react-native";
 import { storiesOf } from "dextrose/storiesOfOverloader";
 import DatePublication from "./date-publication";
@@ -10,7 +11,7 @@ const props = {
 
 const styles = StyleSheet.create({
   text: {
-    color: "#696969",
+    color: Colours.midGrey,
     fontSize: 13,
     lineHeight: 15,
     fontFamily: "GillSansMTStd-Medium"

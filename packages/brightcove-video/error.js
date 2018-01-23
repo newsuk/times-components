@@ -1,4 +1,5 @@
 import React from "react";
+import { Colors } from "@times-components/styleguide"
 import PropTypes from "prop-types";
 import { View, Image, Text, TouchableOpacity, StyleSheet } from "react-native";
 
@@ -32,7 +33,7 @@ const styles = StyleSheet.create({
   },
   resetButton: {
     flexDirection: "row",
-    backgroundColor: "#006699",
+    backgroundColor: Colours.linkBlue,
     paddingVertical: 12,
     paddingHorizontal: 16,
     borderRadius: 2

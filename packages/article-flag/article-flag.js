@@ -1,4 +1,5 @@
 import React from "react";
+import { Colors } from "@times-components/styleguide"
 import { View, Text, Platform } from "react-native";
 import PropTypes from "prop-types";
 
@@ -62,7 +63,7 @@ ArticleFlag.defaultProps = {
 
 const NewArticleFlag = () => <ArticleFlag title="new" color="#E34605" />;
 const UpdatedArticleFlag = () => (
-  <ArticleFlag title="updated" color="#3C81BE" />
+  <ArticleFlag title="updated" color={Colours.notificationBlue} />
 );
 const ExclusiveArticleFlag = () => (
   <ArticleFlag title="exclusive" color="#C51D24" />

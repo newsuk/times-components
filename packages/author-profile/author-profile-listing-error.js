@@ -1,4 +1,5 @@
 import React from "react";
+import { Colors } from "@times-components/styleguide"
 import { Text, View, Button, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 
@@ -21,7 +22,7 @@ const styles = StyleSheet.create({
     fontFamily: "TimesDigitalW04-Regular",
     fontSize: 18,
     textAlign: "center",
-    color: "#696969"
+    color: Colours.midGrey
   },
   buttonContainer: {
     justifyContent: "flex-end"
@@ -49,7 +50,7 @@ const AuthorProfileListingError = ({ refetch }) => (
       <Button
         onPress={refetch}
         title="Retry"
-        color="#006699"
+        color=Colours.linkBlue
         accessibilityLabel="Retry"
       />
     </View>

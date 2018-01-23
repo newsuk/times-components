@@ -1,4 +1,5 @@
 import React from "react";
+import { Colors } from "@times-components/styleguide"
 import { Text, View, Platform } from "react-native";
 import PropTypes from "prop-types";
 import { renderTrees, treePropType } from "@times-components/markup";
@@ -8,14 +9,14 @@ import renderer from "./article-summary-renderer";
 const styles = {
   container: {},
   label: {
-    color: "#333333",
+    color: Colours.darkGrey,
     fontFamily: "GillSansMTStd-Medium",
     fontSize: 12,
     marginBottom: 2,
     letterSpacing: 1
   },
   headline: {
-    color: "#333333",
+    color: Colours.darkGrey,
     fontSize: 22,
     lineHeight: 22,
     marginBottom: 6,
@@ -26,7 +27,7 @@ const styles = {
     })
   },
   text: {
-    color: "#696969",
+    color: Colours.midGrey,
     fontSize: 14,
     fontFamily: "TimesDigitalW04",
     lineHeight: 20,
@@ -34,7 +35,7 @@ const styles = {
     flexWrap: "wrap"
   },
   datePublication: {
-    color: "#696969",
+    color: Colours.midGrey,
     fontSize: 13,
     lineHeight: 15,
     fontFamily: "GillSansMTStd-Medium",

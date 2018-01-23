@@ -1,4 +1,5 @@
 import React from "react";
+import { Colors } from "@times-components/styleguide"
 import { Text } from "react-native";
 import { storiesOf } from "dextrose/storiesOfOverloader";
 import ArticleByline from "./article-byline";
@@ -8,7 +9,7 @@ const authorsAST = require("./fixtures/authors.json");
 const bylineStyles = {
   fontSize: 13,
   fontFamily: "GillSansMTStd-Medium",
-  color: "#696969",
+  color: Colours.midGrey,
   lineHeight: 13,
   flexDirection: "row"
 };

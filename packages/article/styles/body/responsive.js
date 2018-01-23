@@ -12,7 +12,7 @@ export const ParagraphContainer = withResponsiveStyles("div", {
 
 export const Paragraph = withResponsiveStyles("p", {
   base: () => `
-    color: "#333333";
+    color: Colours.darkGrey;
     font-family: "TimesDigitalW04-Regular";
     line-height: 26px;
     font-size: 17px;

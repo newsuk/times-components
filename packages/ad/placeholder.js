@@ -1,4 +1,5 @@
 import React from "react";
+import { Colors } from "@times-components/styleguide"
 import { StyleSheet, View, Text, ViewPropTypes } from "react-native";
 import PropTypes from "prop-types";
 
@@ -14,19 +15,19 @@ const getStyles = (width, height) =>
     wrapper: {
       justifyContent: "center",
       alignItems: "center",
-      backgroundColor: "#F9F9F9",
+      backgroundColor: Colours.backgroundGrey,
       width,
       height,
-      borderColor: "#DBDBDB",
+      borderColor: Colours.keylineGrey,
       borderWidth: 1,
       borderStyle: "solid"
     },
     placeholderText: {
       fontSize: 11,
       fontFamily: "TimesDigitalW04",
-      backgroundColor: "#F9F9F9",
-      color: "#696969",
-      borderColor: "#DBDBDB",
+      backgroundColor: Colours.backgroundGrey,
+      color: Colours.midGrey,
+      borderColor: Colours.keylineGrey,
       borderWidth: 1,
       borderStyle: "solid",
       position: "absolute",

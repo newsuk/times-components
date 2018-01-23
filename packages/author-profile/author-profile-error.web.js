@@ -1,4 +1,5 @@
 import React from "react";
+import { Colors } from "@times-components/styleguide"
 import { Text, View, Button } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
@@ -102,7 +103,7 @@ const AuthorProfileError = ({ refetch }) => (
         <Button
           onPress={refetch}
           title="Retry"
-          color="#006699"
+          color={Colours.linkBlue}
           accessibilityLabel="Refresh the page"
         />
       </ButtonContainer>
