@@ -98,7 +98,7 @@ exports[`Article test on web renders article no flags 1`] = `
 
 .c15 {
   color: "#333333";
-  font-family: "TimesDigitalW04";
+  font-family: "TimesDigitalW04-Regular";
   line-height: 26px;
   font-size: 17px;
   margin-bottom: 25px;
@@ -942,7 +942,7 @@ exports[`Article test on web renders article no label 1`] = `
 
 .c14 {
   color: "#333333";
-  font-family: "TimesDigitalW04";
+  font-family: "TimesDigitalW04-Regular";
   line-height: 26px;
   font-size: 17px;
   margin-bottom: 25px;
@@ -1864,7 +1864,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
 
 .c14 {
   color: "#333333";
-  font-family: "TimesDigitalW04";
+  font-family: "TimesDigitalW04-Regular";
   line-height: 26px;
   font-size: 17px;
   margin-bottom: 25px;
@@ -2682,7 +2682,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
 
 .c14 {
   color: "#333333";
-  font-family: "TimesDigitalW04";
+  font-family: "TimesDigitalW04-Regular";
   line-height: 26px;
   font-size: 17px;
   margin-bottom: 25px;
@@ -3492,7 +3492,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
 
 .c15 {
   color: "#333333";
-  font-family: "TimesDigitalW04";
+  font-family: "TimesDigitalW04-Regular";
   line-height: 26px;
   font-size: 17px;
   margin-bottom: 25px;
@@ -4432,7 +4432,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
 
 .c15 {
   color: "#333333";
-  font-family: "TimesDigitalW04";
+  font-family: "TimesDigitalW04-Regular";
   line-height: 26px;
   font-size: 17px;
   margin-bottom: 25px;
@@ -5268,7 +5268,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
 
 .c14 {
   color: "#333333";
-  font-family: "TimesDigitalW04";
+  font-family: "TimesDigitalW04-Regular";
   line-height: 26px;
   font-size: 17px;
   margin-bottom: 25px;
@@ -6205,7 +6205,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
 
 .c12 {
   color: "#333333";
-  font-family: "TimesDigitalW04";
+  font-family: "TimesDigitalW04-Regular";
   line-height: 26px;
   font-size: 17px;
   margin-bottom: 25px;
@@ -7371,7 +7371,7 @@ exports[`Article test on web renders full article 1`] = `
 
 .c15 {
   color: "#333333";
-  font-family: "TimesDigitalW04";
+  font-family: "TimesDigitalW04-Regular";
   line-height: 26px;
   font-size: 17px;
   margin-bottom: 25px;

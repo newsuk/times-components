@@ -87,7 +87,7 @@ exports[`renders page error 1`] = `
         Object {
           "alignSelf": "center",
           "color": "#696969",
-          "fontFamily": "TimesDigitalW04",
+          "fontFamily": "TimesDigitalW04-Regular",
           "fontSize": 18,
           "textAlign": "center",
         }
@@ -4290,7 +4290,7 @@ exports[`renders profile error 1`] = `
           Object {
             "alignSelf": "center",
             "color": "#696969",
-            "fontFamily": "TimesDigitalW04",
+            "fontFamily": "TimesDigitalW04-Regular",
             "fontSize": 18,
             "textAlign": "center",
           }
