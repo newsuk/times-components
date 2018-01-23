@@ -2,7 +2,7 @@ import "react-native";
 import React from "react";
 import { Text, View } from "react-native";
 import { storiesOf } from "dextrose/storiesOfOverloader";
-import { UIColours, WeekendColours, Fonts } from "./styleguide";
+import { UIColours, WeekdaysColours, WeekendColours, Fonts } from "./styleguide";
 
 const styles = {
   colorContainer: {
@@ -71,13 +71,21 @@ storiesOf("Styleguide", module)
       )
     }</View>
   ))
+  .add("Weekdays Colours", () => (
+    <View style={styles.colourBox}>{
+      Object.entries(WeekdaysColours).map( ([label, colour]) =>
+        <ColourSwatch label={label} colour={colour} key={colour} />
+      )
+    }</View>
+  ))
   .add("Weekend Colours", () => (
     <View style={styles.colourBox}>{
       Object.entries(WeekendColours).map( ([label, colour]) =>
         <ColourSwatch label={label} colour={colour} key={colour} />
       )
     }</View>
-  )).add("Fonts", () => (
+  ))
+  .add("Fonts", () => (
     <View style={styles.fontBox}>{ 
       Object.entries(Fonts).map( ([label, font]) =>
         <FontSwatch label={label} font={font} key={font} />

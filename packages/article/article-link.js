@@ -23,4 +23,5 @@ ArticleLink.defaultProps = {
 ArticleLink.propTypes = {
   ...TextLink.propTypes
 };
+
 export default ArticleLink;
