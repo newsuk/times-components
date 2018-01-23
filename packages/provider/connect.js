@@ -1,5 +1,7 @@
-import _pick from "lodash.pick";
+import pick from "lodash.pick";
 import { graphql } from "react-apollo-temp";
+import PropTypes from "prop-types";
+import withDebounce from "./debounce";
 
 const identity = a => a;
 
@@ -15,7 +17,17 @@ const getQueryVariables = definitions =>
     )
   );
 
-const connectGraphql = (query, propsToVariables = identity) => {
+export const makeGraphqlOptions = (
+  variableNames,
+  propsToVariables = identity
+) => props => ({
+  variables: pick(
+    propsToVariables(props.debouncedProps || props),
+    variableNames
+  )
+});
+
+const connectGraphql = (query, propsToVariables) => {
   const variableNames = getQueryVariables(query.definitions);
   const Wrapper = ({
     data: { error, loading, refetch, retry, ...result },
@@ -28,18 +40,19 @@ const connectGraphql = (query, propsToVariables = identity) => {
         retry(); // FIXME: remove this after react-apollo fixes https://github.com/apollographql/apollo-client/issues/2513
         refetch();
       },
-      isLoading: loading,
+      isLoading: loading || props.isDebouncing,
       ...result,
       ...props
     });
+  Wrapper.propTypes = {
+    debouncedProps: PropTypes.shape({}).isRequired
+  };
 
-  return graphql(query, {
-    options(props) {
-      return {
-        variables: _pick(propsToVariables(props), variableNames)
-      };
-    }
+  const GraphQlComponent = graphql(query, {
+    options: makeGraphqlOptions(variableNames, propsToVariables)
   })(Wrapper);
+
+  return withDebounce(GraphQlComponent);
 };
 
 export default connectGraphql;

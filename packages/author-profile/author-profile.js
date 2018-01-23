@@ -62,6 +62,7 @@ const AuthorProfile = ({
       slug={slug}
       page={page}
       pageSize={initPageSize}
+      debounceTimeMs={250}
     >
       {({
         author: data,

@@ -14,6 +14,7 @@
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
+    "testEnvironment": "jsdom",
     "coverageDirectory": "<rootDir>/packages/provider/coverage/",
     "collectCoverageFrom": [
       "**/packages/provider/*.js",
@@ -62,11 +63,13 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
+    "hoist-non-react-statics": "2.3.1",
     "graphql-tag": "2.6.0",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",
     "prop-types": "15.6.0",
-    "react-apollo-temp": "2.0.5"
+    "react-apollo-temp": "2.0.5",
+    "react-display-name": "0.2.3"
   },
   "peerDependencies": {
     "babel-preset-env": "1.6.1",

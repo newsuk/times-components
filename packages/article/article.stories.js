@@ -72,7 +72,10 @@ storiesOf("Article", module)
   })
   .add("With Provider", () => (
     <MockedProvider mocks={mocks}>
-      <ArticleProvider id="198c4b2f-ecec-4f34-be53-c89f83bc1b44">
+      <ArticleProvider
+        id="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        debounceTimeMs={0}
+      >
         {({ article, isLoading, error }) => (
           <Article
             article={article}
