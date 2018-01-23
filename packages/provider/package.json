@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider",
-  "version": "0.20.15",
+  "version": "0.21.0",
   "main": "provider",
   "scripts": {
     "test:watch": "jest --bail --verbose --watchAll",
@@ -63,8 +63,8 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "hoist-non-react-statics": "2.3.1",
     "graphql-tag": "2.6.0",
+    "hoist-non-react-statics": "2.3.1",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",
     "prop-types": "15.6.0",
