@@ -278,7 +278,7 @@ exports[`RelatedArticles test on android renders single default related article 
                 }
                 testID="datePublication"
               >
-                Wednesday January 17 2018, 06:54pm
+                Friday March 13 2015, 06:54pm
               </Text>
               <Text
                 accessible={true}
@@ -583,7 +583,7 @@ exports[`RelatedArticles test on android renders single default related article 
                 }
                 testID="datePublication"
               >
-                Wednesday January 17 2018, 06:54pm
+                Friday March 13 2015, 06:54pm
               </Text>
             </View>
           </View>
@@ -856,7 +856,7 @@ exports[`RelatedArticles test on android renders single default related article 
                 }
                 testID="datePublication"
               >
-                Wednesday January 17 2018, 06:54pm
+                Friday March 13 2015, 06:54pm
               </Text>
               <Text
                 accessible={true}
@@ -1029,7 +1029,7 @@ exports[`RelatedArticles test on android renders single default related article 
                 }
                 testID="datePublication"
               >
-                Wednesday January 17 2018, 06:54pm
+                Friday March 13 2015, 06:54pm
               </Text>
               <Text
                 accessible={true}
