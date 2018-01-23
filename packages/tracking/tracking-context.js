@@ -1,8 +1,8 @@
 // @flow
-import React, { type Component } from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import getDisplayName from "react-display-name";
-import _get from "lodash.get";
+import get from "lodash.get";
 import hoistNonReactStatic from "hoist-non-react-statics";
 import trackingContextTypes from "./tracking-context-types";
 import resolveAttrs from "./resolve-attrs";
@@ -36,7 +36,7 @@ const withTrackingContext = (
 ) => {
   const componentName = getDisplayName(WrappedComponent);
 
-  class WithTrackingContext extends React.Component<TrackingContextPropsType> {
+  class WithTrackingContext extends Component<TrackingContextPropsType> {
     constructor(props: TrackingContextPropsType, context: {}) {
       super(props, context);
       this.fireAnalyticsEvent = this.fireAnalyticsEvent.bind(this);
@@ -113,7 +113,7 @@ const withTrackingContext = (
 
     analyticsStream(...args: Array<mixed>) {
       const stream =
-        _get(this.context, "tracking.analytics") || this.props.analyticsStream;
+        get(this.context, "tracking.analytics") || this.props.analyticsStream;
       return stream && stream(...args);
     }
 
