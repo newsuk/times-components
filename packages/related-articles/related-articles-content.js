@@ -1,7 +1,8 @@
 import React from "react";
 import get from "lodash.get";
 import PropTypes from "prop-types";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
+import withResponsiveStyles from "@times-components/responsive-styles";
 import { treePropType } from "@times-components/markup";
 import Card from "@times-components/card";
 import Link from "@times-components/link";
@@ -36,6 +37,17 @@ const RelatedArticlesContent = ({ item }) => {
 
   const bylineText = get(byline[0], "children[0].attributes.value") || "";
 
+  const ResponsiveHeadline = withResponsiveStyles(Text, {
+    base: () => `
+      font-size: 22px;
+      line-height: 22px;
+    `,
+    mediumUp: () => `
+      font-size: 30px;
+      line-height: 30px;
+    `
+  });
+
   return (
     <Link url={url} onPress={onPress}>
       <View style={styles.cardContainer}>
@@ -44,6 +56,7 @@ const RelatedArticlesContent = ({ item }) => {
             byline={bylineText}
             date={publishedTime}
             headline={headline}
+            responsiveHeadline={ResponsiveHeadline}
             label={label}
             publication={publicationName}
             showPublication={false}

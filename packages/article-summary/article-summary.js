@@ -1,8 +1,9 @@
 import React from "react";
-import { Text, View, Platform } from "react-native";
+import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import { renderTrees, treePropType } from "@times-components/markup";
 import DatePublication from "@times-components/date-publication";
+import ArticleSummaryHeadline from "./article-summary-headline";
 import renderer from "./article-summary-renderer";
 
 const styles = {
@@ -13,17 +14,6 @@ const styles = {
     fontSize: 12,
     marginBottom: 2,
     letterSpacing: 1
-  },
-  headline: {
-    color: "#333333",
-    fontSize: 22,
-    lineHeight: 22,
-    marginBottom: 6,
-    fontFamily: "TimesModern-Bold",
-    fontWeight: "400",
-    ...Platform.select({
-      web: { WebkitFontSmoothing: "auto" }
-    })
   },
   text: {
     color: "#696969",
@@ -61,6 +51,7 @@ const ArticleSummary = props => {
   const {
     label,
     headline,
+    responsiveHeadline,
     text,
     date,
     publication,
@@ -73,7 +64,10 @@ const ArticleSummary = props => {
   return (
     <View style={styles.container}>
       {label ? <Text style={styles.label}>{labelText}</Text> : null}
-      <Text style={styles.headline}>{headline}</Text>
+      <ArticleSummaryHeadline
+        responsiveHeadline={responsiveHeadline}
+        headline={headline}
+      />
       <Text style={styles.text}>{renderTrees(summary, renderer)}</Text>
       <Text
         style={styles.metaText}
@@ -94,6 +88,7 @@ const ArticleSummary = props => {
 ArticleSummary.propTypes = {
   label: PropTypes.string,
   headline: PropTypes.string,
+  responsiveHeadline: PropTypes.func,
   text: PropTypes.arrayOf(treePropType),
   date: DatePublication.propTypes.date,
   publication: DatePublication.propTypes.publication,
@@ -104,6 +99,7 @@ ArticleSummary.propTypes = {
 ArticleSummary.defaultProps = {
   label: "",
   headline: "",
+  responsiveHeadline: null,
   text: [],
   date: null,
   publication: DatePublication.defaultProps.publication,

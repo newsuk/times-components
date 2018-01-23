@@ -12,9 +12,7 @@ exports[`renders an article-summary component with a single paragraph 1`] = `
       Object {
         "color": "#333333",
         "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
         "fontWeight": "400",
-        "lineHeight": 22,
         "marginBottom": 6,
       }
     }
@@ -95,9 +93,7 @@ exports[`renders an article-summary component with content including line breaks
       Object {
         "color": "#333333",
         "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
         "fontWeight": "400",
-        "lineHeight": 22,
         "marginBottom": 6,
       }
     }
@@ -252,9 +248,7 @@ exports[`renders an article-summary component with empty content at the end trim
       Object {
         "color": "#333333",
         "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
         "fontWeight": "400",
-        "lineHeight": 22,
         "marginBottom": 6,
       }
     }
@@ -350,9 +344,7 @@ exports[`renders an article-summary component with headline and no content 1`] =
       Object {
         "color": "#333333",
         "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
         "fontWeight": "400",
-        "lineHeight": 22,
         "marginBottom": 6,
       }
     }
@@ -407,9 +399,7 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
       Object {
         "color": "#333333",
         "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
         "fontWeight": "400",
-        "lineHeight": 22,
         "marginBottom": 6,
       }
     }

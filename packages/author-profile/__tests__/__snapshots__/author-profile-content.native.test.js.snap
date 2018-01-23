@@ -2317,9 +2317,7 @@ exports[`renders profile content component 1`] = `
                       Object {
                         "color": "#333333",
                         "fontFamily": "TimesModern-Bold",
-                        "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
                         "marginBottom": 6,
                       }
                     }
@@ -2552,9 +2550,7 @@ exports[`renders profile content component 1`] = `
                       Object {
                         "color": "#333333",
                         "fontFamily": "TimesModern-Bold",
-                        "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
                         "marginBottom": 6,
                       }
                     }
@@ -2787,9 +2783,7 @@ exports[`renders profile content component 1`] = `
                       Object {
                         "color": "#333333",
                         "fontFamily": "TimesModern-Bold",
-                        "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
                         "marginBottom": 6,
                       }
                     }
@@ -3259,9 +3253,7 @@ exports[`renders profile content item component 1`] = `
                 Object {
                   "color": "#333333",
                   "fontFamily": "TimesModern-Bold",
-                  "fontSize": 22,
                   "fontWeight": "400",
-                  "lineHeight": 22,
                   "marginBottom": 6,
                 }
               }
@@ -3363,9 +3355,7 @@ exports[`renders profile content item component with a specific image size 1`] =
                 Object {
                   "color": "#333333",
                   "fontFamily": "TimesModern-Bold",
-                  "fontSize": 22,
                   "fontWeight": "400",
-                  "lineHeight": 22,
                   "marginBottom": 6,
                 }
               }
@@ -3467,9 +3457,7 @@ exports[`renders profile content item component with no image 1`] = `
                 Object {
                   "color": "#333333",
                   "fontFamily": "TimesModern-Bold",
-                  "fontSize": 22,
                   "fontWeight": "400",
-                  "lineHeight": 22,
                   "marginBottom": 6,
                 }
               }
