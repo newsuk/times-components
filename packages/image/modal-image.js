@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Modal, View, StyleSheet } from "react-native";
 import Button from "@times-components/link";
+import Gestures from "@times-components/gestures";
 import Svg, { Path, G } from "svgs";
 import Image from "./image";
 import { defaultProps, propTypes } from "./image-prop-types";
-import Gestures from "./gestures";
 
 const style = StyleSheet.create({
   modal: {

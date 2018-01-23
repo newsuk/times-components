@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[
+  `Gesture tests Gestures should animate back to the start after release 1`
+] = `
+<AnimatedComponent
+  style={
+    Object {
+      "transform": Array [
+        Object {
+          "scale": 1,
+        },
+        Object {
+          "rotate": "0 deg",
+        },
+        Object {
+          "perspective": 1000,
+        },
+      ],
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    Hello world!
+  </Text>
+</AnimatedComponent>
+`;
+
+exports[
+  `Gesture tests Gestures should do nothing if a finger is removed while interacting 1`
+] = `
+<AnimatedComponent
+  style={
+    Object {
+      "transform": Array [
+        Object {
+          "scale": 1,
+        },
+        Object {
+          "rotate": "0 deg",
+        },
+        Object {
+          "perspective": 1000,
+        },
+      ],
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    Hello world!
+  </Text>
+</AnimatedComponent>
+`;
+
+exports[
+  `Gesture tests Gestures should rotate anti-clockwise when turning fingers 1`
+] = `
+<AnimatedComponent
+  style={
+    Object {
+      "transform": Array [
+        Object {
+          "scale": 1,
+        },
+        Object {
+          "rotate": "90 deg",
+        },
+        Object {
+          "perspective": 1000,
+        },
+      ],
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    Hello world!
+  </Text>
+</AnimatedComponent>
+`;
+
+exports[
+  `Gesture tests Gestures should rotate clockwise when turning fingers 1`
+] = `
+<AnimatedComponent
+  style={
+    Object {
+      "transform": Array [
+        Object {
+          "scale": 1,
+        },
+        Object {
+          "rotate": "270 deg",
+        },
+        Object {
+          "perspective": 1000,
+        },
+      ],
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    Hello world!
+  </Text>
+</AnimatedComponent>
+`;
+
+exports[
+  `Gesture tests Gestures should scale and rotate when spreading and rotating fingers 1`
+] = `
+<AnimatedComponent
+  style={
+    Object {
+      "transform": Array [
+        Object {
+          "scale": 2.9154759474226504,
+        },
+        Object {
+          "rotate": "-5.906 deg",
+        },
+        Object {
+          "perspective": 1000,
+        },
+      ],
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    Hello world!
+  </Text>
+</AnimatedComponent>
+`;
+
+exports[
+  `Gesture tests Gestures should scale correctly when spreading fingers 1`
+] = `
+<AnimatedComponent
+  style={
+    Object {
+      "transform": Array [
+        Object {
+          "scale": 3,
+        },
+        Object {
+          "rotate": "0 deg",
+        },
+        Object {
+          "perspective": 1000,
+        },
+      ],
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    Hello world!
+  </Text>
+</AnimatedComponent>
+`;

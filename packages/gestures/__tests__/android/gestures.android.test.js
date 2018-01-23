@@ -1,4 +1,4 @@
-import imageTests from "../image.native.test";
+import tests from "../gestures.native.test";
 
 jest.mock("react-native", () => {
   const reactNative = require.requireActual("react-native");
@@ -9,6 +9,6 @@ jest.mock("react-native", () => {
   return reactNative;
 });
 
-describe("Image test on android", () => {
-  imageTests();
+describe("Gesture tests", () => {
+  tests();
 });

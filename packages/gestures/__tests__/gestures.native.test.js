@@ -1,7 +1,7 @@
 import React from "react";
+import { Text } from "react-native";
 import { shallow } from "enzyme";
 import Gesture from "../gestures";
-import Image from "../image";
 
 const waitFor = delay => new Promise(res => setTimeout(res, delay));
 
@@ -23,7 +23,7 @@ const makeTouchEvent = (active, history = []) => ({
 const touchAndMove = (startTouchPositions, endTouchPositions) => {
   const component = shallow(
     <Gesture>
-      <Image uri="http://example.com/image.jpg" aspectRatio={3 / 2} />
+      <Text>Hello world!</Text>
     </Gesture>
   );
 
