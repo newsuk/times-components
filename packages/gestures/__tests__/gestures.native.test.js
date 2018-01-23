@@ -20,16 +20,25 @@ const makeTouchEvent = (active, history = []) => ({
   }
 });
 
-const touchAndMove = (startTouchPositions, endTouchPositions) => {
-  const component = shallow(
+const renderComponent = () =>
+  shallow(
     <Gesture>
       <Text>Hello world!</Text>
     </Gesture>
   );
 
-  const {
-    panResponder: { panHandlers: { onResponderStart, onResponderMove } }
-  } = component.instance();
+const gestureHandlers = component => {
+  const { panResponder: { panHandlers } } = component;
+
+  return panHandlers;
+};
+
+const touchAndMove = (startTouchPositions, endTouchPositions) => {
+  const component = renderComponent();
+
+  const { onResponderStart, onResponderMove } = gestureHandlers(
+    component.instance()
+  );
 
   onResponderStart(makeTouchEvent(startTouchPositions));
   onResponderMove(makeTouchEvent(endTouchPositions, startTouchPositions));
@@ -195,15 +204,80 @@ export default () => {
         ]
       );
 
-      const {
-        panResponder: { panHandlers: { onResponderRelease } }
-      } = component.instance();
+      const { onResponderRelease } = gestureHandlers(component.instance());
 
       onResponderRelease();
 
       await waitFor(1000);
 
       expect(component.find("AnimatedComponent")).toMatchSnapshot();
+    });
+
+    it("not intercept 1 finger gestures", () => {
+      const {
+        onStartShouldSetResponder,
+        onMoveShouldSetResponder,
+        onStartShouldSetResponderCapture,
+        onMoveShouldSetResponderCapture
+      } = gestureHandlers(renderComponent().instance());
+
+      const emptyTouchEvent = makeTouchEvent([{ x: 50, y: 50 }], []);
+
+      // gesture state is updated _only_ during the capture phase
+      // so the relative methods need to be called first
+      const capturedStart = onStartShouldSetResponderCapture(emptyTouchEvent);
+      const capturedMove = onMoveShouldSetResponderCapture(emptyTouchEvent);
+      const respondedStart = onStartShouldSetResponder(emptyTouchEvent);
+      const respondedMove = onMoveShouldSetResponder(emptyTouchEvent);
+
+      expect(capturedStart).toBe(false);
+      expect(capturedMove).toBe(false);
+      expect(respondedStart).toBe(false);
+      expect(respondedMove).toBe(false);
+    });
+
+    it("intercept more than 1 finger gestures", () => {
+      const {
+        onStartShouldSetResponder,
+        onMoveShouldSetResponder,
+        onStartShouldSetResponderCapture,
+        onMoveShouldSetResponderCapture
+      } = gestureHandlers(renderComponent().instance());
+
+      const emptyTouchEvent = makeTouchEvent(
+        [
+          {
+            x: 50,
+            y: 50
+          },
+          {
+            x: 100,
+            y: 100
+          }
+        ],
+        [
+          {
+            x: 30,
+            y: 40
+          },
+          {
+            x: 190,
+            y: 170
+          }
+        ]
+      );
+
+      // gesture state is updated _only_ during the capture phase
+      // so the relative methods need to be called first
+      const capturedStart = onStartShouldSetResponderCapture(emptyTouchEvent);
+      const capturedMove = onMoveShouldSetResponderCapture(emptyTouchEvent);
+      const respondedStart = onStartShouldSetResponder(emptyTouchEvent);
+      const respondedMove = onMoveShouldSetResponder(emptyTouchEvent);
+
+      expect(capturedStart).toBe(true);
+      expect(capturedMove).toBe(true);
+      expect(respondedStart).toBe(true);
+      expect(respondedMove).toBe(true);
     });
   });
 };
