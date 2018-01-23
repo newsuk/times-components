@@ -1,14 +1,24 @@
 #!/usr/bin/env bash
 {
-  EMULATOR=$(emulator -list-avds | head -n 1)
-
-  if [[ -z $EMULATOR ]]
+  adb_cmd="$ANDROID_HOME/platform-tools/adb"
+  device=$($adb_cmd devices | tail -n +2)
+  if [[ ! -z $device ]]
   then
-    echo "You don't have an emulator set up"
+    echo "Device is already running"
     exit 0
   fi
 
-  $ANDROID_HOME/tools/emulator @${EMULATOR} &
+  emulator_cmd="$ANDROID_HOME/tools/emulator"
+
+  avd=$($emulator_cmd -list-avds | head -n 1)
+
+  if [[ -z $avd ]]
+  then
+    echo "You don't have an emulator set up"
+    exit 1
+  fi
+
+  $emulator_cmd @${avd} &
 
   bootanim=""
   failcounter=0
