@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 import Ad from "@times-components/ad";
 import PullQuote from "@times-components/pull-quote";
 import renderTreeWithoutDefaults from "./render-tree-without-defaults";
-import { Colors } from "@times-components/styleguide";
+import { Colours } from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
   ad: {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Colors } from "@times-components/styleguide";
+import { Colours } from "@times-components/styleguide";
 import { Text, StyleSheet } from "react-native";
 import { storiesOf } from "dextrose/storiesOfOverloader";
 import DatePublication from "./date-publication";

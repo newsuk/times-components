@@ -1,4 +1,4 @@
-import { Colors } from "@times-components/styleguide";
+import { Colours } from "@times-components/styleguide";
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({

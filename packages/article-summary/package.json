@@ -46,6 +46,7 @@
   "dependencies": {
     "@times-components/date-publication": "0.8.2",
     "@times-components/markup": "0.15.11",
+    "@times-components/styleguide": "^0.0.1",
     "date-fns": "1.28.5",
     "prop-types": "15.6.0"
   },

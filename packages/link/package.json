@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "@times-components/responsive-styles": "0.2.9",
+    "@times-components/styleguide": "^0.0.1",
     "lodash.pick": "4.4.0",
     "prop-types": "15.6.0"
   },

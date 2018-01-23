@@ -1,5 +1,5 @@
 import React from "react";
-import { Colors } from "@times-components/styleguide";
+import { Colours } from "@times-components/styleguide";
 import { StyleSheet, View } from "react-native";
 import PropTypes from "prop-types";
 import Link from "@times-components/link";

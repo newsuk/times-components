@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import { Colors } from "@times-components/styleguide";
+import { Colours } from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
   container: {

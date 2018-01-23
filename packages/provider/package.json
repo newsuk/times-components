@@ -62,6 +62,7 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
+    "@times-components/styleguide": "^0.0.1",
     "graphql-tag": "2.5.0",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",

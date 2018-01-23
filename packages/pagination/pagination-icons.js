@@ -1,5 +1,5 @@
 import React from "react";
-import { Colors } from "@times-components/styleguide";
+import { Colours } from "@times-components/styleguide";
 import { Text, View, StyleSheet, Platform } from "react-native";
 import Svg, { G, Path } from "svgs";
 

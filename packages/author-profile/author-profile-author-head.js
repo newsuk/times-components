@@ -1,4 +1,4 @@
-import { Colors } from "@times-components/styleguide";
+import { Colours } from "@times-components/styleguide";
 import AuthorHead from "@times-components/author-head";
 import Gradient from "@times-components/gradient";
 import React from "react";
