@@ -9,6 +9,7 @@ exports[`RelatedArticles test on ios renders single default related article 1`] 
       "paddingRight": 10,
     }
   }
+  template="DEFAULT"
 >
   <Text
     accessible={true}
@@ -282,6 +283,7 @@ exports[`RelatedArticles test on ios renders single default related article with
       "paddingRight": 10,
     }
   }
+  template="DEFAULT"
 >
   <Text
     accessible={true}
@@ -539,6 +541,7 @@ exports[`RelatedArticles test on ios renders single default related article with
       "paddingRight": 10,
     }
   }
+  template="DEFAULT"
 >
   <Text
     accessible={true}
@@ -796,6 +799,7 @@ exports[`RelatedArticles test on ios renders single default related article with
       "paddingRight": 10,
     }
   }
+  template="DEFAULT"
 >
   <Text
     accessible={true}
