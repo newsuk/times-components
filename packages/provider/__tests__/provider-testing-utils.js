@@ -8,7 +8,9 @@ import PropTypes from "prop-types";
 
 function createFuture() {
   let resolve;
-  const promise = new Promise(done => {resolve = done});
+  const promise = new Promise(done => {
+    resolve = done;
+  });
 
   return {
     resolve: () => {
@@ -28,19 +30,25 @@ export class TestLink extends ApolloLink {
     this.events = [];
   }
 
+  // resolve the i-th query
   resolve(i) {
-    if (!this.blocked[i]) return Promise.resolve();
+    if (!this.blocked[i]) {
+      return Promise.resolve();
+    }
     return this.blocked[i].resolve();
   }
 
+  // push a custom event
   pushEvent(data) {
     this.events.push(data);
   }
 
-  getRequest() {
+  // get all requests
+  getRequests() {
     return this.operations;
   }
 
+  // find and resolve a request by a given filter
   resolveRequest(filter) {
     const entry = Object.entries(this.operations).find(x => filter(x[1]));
 
@@ -49,10 +57,12 @@ export class TestLink extends ApolloLink {
     return Promise.resolve();
   }
 
+  // get all events
   getEvents() {
     return this.events;
   }
 
+  // used by apollo provider
   request(operation) {
     this.blocked.push(createFuture());
     const { promise } = this.blocked[this.blocked.length - 1];
@@ -98,7 +108,6 @@ export function createProviderTester(
 
   let setProps = () => Promise.resolve();
   class Stateful extends React.Component {
-
     constructor(props) {
       super(props);
       this.state = defaultProps;
@@ -152,8 +161,6 @@ export function createProviderTester(
     component
   };
 }
-
-
 
 function tidyEvent(e) {
   if (e.type === "render") {
