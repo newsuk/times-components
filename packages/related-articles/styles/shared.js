@@ -12,7 +12,7 @@ const sharedStyle = {
     borderBottomWidth: StyleSheet.hairlineWidth,
     borderTopColor: "#dbdbdb",
     borderTopWidth: StyleSheet.hairlineWidth,
-    fontFamily: "TimesModern",
+    fontFamily: "TimesModern-Regular",
     fontSize: 25,
     fontWeight: "bold",
     textAlign: "center",
