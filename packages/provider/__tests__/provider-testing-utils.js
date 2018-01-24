@@ -153,14 +153,10 @@ export function createProviderTester(
   };
 }
 
+
+
 function tidyEvent(e) {
   if (e.type === "render") {
-    delete e.data.refetch;
-    delete e.data.fetchMore;
-    delete e.data.updateQuery;
-    delete e.data.startPolling;
-    delete e.data.stopPolling;
-    delete e.data.subscribeToMore;
     return {
       type: e.type,
       ...e.data
