@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "0.30.0",
+  "version": "0.30.1",
   "description": "The article",
   "main": "article",
   "scripts": {
@@ -72,7 +72,7 @@
     "@times-components/provider": "0.21.0",
     "@times-components/pull-quote": "0.2.3",
     "@times-components/responsive-styles": "0.2.13",
-    "@times-components/tracking": "0.6.6",
+    "@times-components/tracking": "0.6.7",
     "lodash.get": "4.4.2",
     "prop-types": "15.6.0"
   },
