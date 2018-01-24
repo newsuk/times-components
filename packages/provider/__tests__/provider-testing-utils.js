@@ -1,17 +1,14 @@
 import { ApolloClient } from "apollo-client";
 import { InMemoryCache } from "apollo-cache-inmemory";
-import { makeExecutableSchema, addMockFunctionsToSchema } from "graphql-tools";
 import { ApolloLink, Observable } from "apollo-link";
-import { execute } from "graphql";
 import renderer from "react-test-renderer";
 import { ApolloProvider } from "react-apollo";
 import React from "react";
-
-import schema from "@times-components/utils/schema.json";
+import PropTypes from "prop-types";
 
 function createFuture() {
   let resolve;
-  let promise = new Promise(done => (resolve = done));
+  const promise = new Promise(done => {resolve = done});
 
   return {
     resolve: () => {
@@ -45,7 +42,7 @@ export class TestLink extends ApolloLink {
   }
 
   resolveRequest(filter) {
-    const entry = Object.entries(this.operations).find(([i, x]) => filter(x));
+    const entry = Object.entries(this.operations).find(x => filter(x[1]));
 
     if (entry) return this.resolve(entry[0]);
 
@@ -101,6 +98,7 @@ export function createProviderTester(
 
   let setProps = () => Promise.resolve();
   class Stateful extends React.Component {
+
     constructor(props) {
       super(props);
       this.state = defaultProps;
@@ -125,6 +123,10 @@ export function createProviderTester(
       return <Child {...this.state} />;
     }
   }
+
+  Stateful.propTypes = {
+    children: PropTypes.func.isRequired
+  };
 
   const component = renderer.create(
     <ApolloProvider client={client}>
@@ -152,7 +154,7 @@ export function createProviderTester(
 }
 
 function tidyEvent(e) {
-  if (e.type == "render") {
+  if (e.type === "render") {
     delete e.data.refetch;
     delete e.data.fetchMore;
     delete e.data.updateQuery;

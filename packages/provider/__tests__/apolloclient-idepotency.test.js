@@ -13,7 +13,7 @@ function AuthorQueryResolver({ variables }) {
 }
 
 const query = gql`
-  query AuthorQuery($slug: String!) {
+  query AuthorQuery($slug: Slug!) {
     author(slug: $slug) {
       name
     }
