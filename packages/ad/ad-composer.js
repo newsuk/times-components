@@ -28,8 +28,8 @@ class AdComposer extends Component {
 
   setPageLevelConfig(adConfig) {
     return {
-      edition_id: window.nuk ? window.nuk.ads.editionDate : null,
-      e_uuid: window.nuk ? window.nuk.ads.editionId: null,
+      edition_id: window.nuk ? nuk.ads.editionDate : null,
+      e_uuid: window.nuk ? nuk.ads.editionId: null,
       search: 'null',
       share_token: 'null',
       shared: '0',
@@ -37,8 +37,8 @@ class AdComposer extends Component {
       aid: adConfig.id,
       kw: `${adConfig.title} ${adConfig.label} ${adConfig.commercialtags}`.split(' '),
       pw: '1',
-      teaser: window.nuk ? (!window.nuk.user.isLoggedIn || window.nuk.user.isMeteredExpired) : '0',
-      log: window.nuk ? (window.nuk.user.isLoggedIn ? '1' : '0') : '0',
+      teaser: window.nuk ? (!nuk.user.isLoggedIn || nuk.user.isMeteredExpired) : '0',
+      log: window.nuk ? (nuk.user.isLoggedIn ? '1' : '0') : '0',
       subscriber: window.nuk ? (isSubscriber() ? '1' : '0'): '0',
       kuid: localStorage.get('kxkuid'),
       ksg: localStorage.get('kxsegs'),
