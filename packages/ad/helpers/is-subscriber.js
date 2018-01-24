@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = function () {
-    return !nuk.user.isMetered && nuk.user.isLoggedIn;
+    return !window.nuk.user.isMetered && window.nuk.user.isLoggedIn;
 };

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
+import localStorage from 'store';
 import PropTypes from "prop-types";
 import { Broadcast } from "react-broadcast";
 
-//import pageConfig from "./ad-page-config";
 import AdManager from "./ad-manager";
 import gptManager from "./gpt-manager";
 import pbjs from "./pbjs-manager";
@@ -21,23 +21,27 @@ class AdComposer extends Component {
       networkId: props.networkId,
       adUnit: props.adUnit,
       section: props.section,
-      //pageOptions: pageConfig,
-      //pageOptions: props.pageOptions,
       gptManager,
       pbjsManager
     });
   }
 
-  componentDidMount() {
-    const pageConfig = {
+  setPageLevelConfig() {
+    return {
+      teaser: window.nuk ? (!nuk.user.isLoggedIn || nuk.user.isMeteredExpired) : '0',
+      log: window.nuk ? (window.nuk.user.isLoggedIn ? '1' : '0') : '0',
+      subscriber: window.nuk ? (isSubscriber() ? '1' : '0'): '0',
+      kuid: localStorage.get('kxkuid'),
+      ksg: localStorage.get('kxsegs'),
       ppid: cookieHelper.getCpnId(cookieHelper.getCookieValue('acs_tnl')) || 'null',
       eid: cookieHelper.getCpnId(cookieHelper.getCookieValue('acs_tnl')) || 'null',
       om_v_id: cookieHelper.getVistorId(cookieHelper.getCookieValue('utag_main')) || 'null',
       cips: cookieHelper.getCips(cookieHelper.getCookieValue('acs_tnl')),
       refresh: "false"
     }
-
-    debugger;
+  }
+  componentDidMount() {
+    const pageConfig =  this.setPageLevelConfig();
     this.adManager
       .init(pageConfig)
       .then(this.adManager.display.bind(this.adManager))
