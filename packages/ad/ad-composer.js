@@ -28,8 +28,8 @@ class AdComposer extends Component {
 
   setPageLevelConfig(adConfig) {
     return {
-      edition_id: window.nuk ? nuk.ads.editionDate : null,
-      e_uuid: window.nuk ? nuk.ads.editionId: null,
+      edition_id: window.nuk ? window.nuk.ads.editionDate : null,
+      e_uuid: window.nuk ? window.nuk.ads.editionId: null,
       search: 'null',
       share_token: 'null',
       shared: '0',
