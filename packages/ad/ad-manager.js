@@ -13,16 +13,16 @@ class AdManager {
     this.section = options.section;
     this.gptManager = options.gptManager;
     this.pbjsManager = options.pbjsManager;
+    //this.pageOptions = options.pageOptions;
     this.initialised = false;
   }
 
-  init() {
+  init(pageOptions) {
     // Load scripts if needed be
     this.gptManager.loadScript();
     this.pbjsManager.loadScript();
-
     return this.gptManager
-      .setConfig()
+      .setConfig(pageOptions)
       .then(this.pbjsManager.setConfig.bind(this.pbjsManager))
       .then(this.gptManager.init.bind(this.gptManager))
       .then(this.pbjsManager.init.bind(this.pbjsManager, this.adQueue))

@@ -2,10 +2,14 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Broadcast } from "react-broadcast";
 
+//import pageConfig from "./ad-page-config";
 import AdManager from "./ad-manager";
 import gptManager from "./gpt-manager";
 import pbjs from "./pbjs-manager";
 import { pbjs as pbjsConfig } from "./config";
+
+import cookieHelper from './helpers/cookie-helper';
+import isSubscriber from './helpers/is-subscriber';
 
 const pbjsManager = pbjs(pbjsConfig);
 
@@ -17,14 +21,25 @@ class AdComposer extends Component {
       networkId: props.networkId,
       adUnit: props.adUnit,
       section: props.section,
+      //pageOptions: pageConfig,
+      //pageOptions: props.pageOptions,
       gptManager,
       pbjsManager
     });
   }
 
   componentDidMount() {
+    const pageConfig = {
+      ppid: cookieHelper.getCpnId(cookieHelper.getCookieValue('acs_tnl')) || 'null',
+      eid: cookieHelper.getCpnId(cookieHelper.getCookieValue('acs_tnl')) || 'null',
+      om_v_id: cookieHelper.getVistorId(cookieHelper.getCookieValue('utag_main')) || 'null',
+      cips: cookieHelper.getCips(cookieHelper.getCookieValue('acs_tnl')),
+      refresh: "false"
+    }
+
+    debugger;
     this.adManager
-      .init()
+      .init(pageConfig)
       .then(this.adManager.display.bind(this.adManager))
       .catch(err => {
         throw new Error(err);
@@ -47,7 +62,8 @@ AdComposer.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element)
-  ]).isRequired
+  ]).isRequired,
+  pageOptions: PropTypes.object
 };
 
 AdComposer.defaultProps = {
