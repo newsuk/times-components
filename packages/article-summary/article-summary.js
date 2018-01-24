@@ -54,7 +54,7 @@ const ArticleSummary = props => {
   const {
     label,
     headline,
-    responsiveHeadline,
+    hasResponsiveHeadline,
     text,
     date,
     publication,
@@ -67,10 +67,12 @@ const ArticleSummary = props => {
   return (
     <View style={styles.container}>
       {label ? <Text style={styles.label}>{labelText}</Text> : null}
-      <ArticleSummaryHeadline
-        responsiveHeadline={responsiveHeadline}
-        headline={headline}
-      />
+      {headline ? (
+        <ArticleSummaryHeadline
+          hasResponsiveHeadline={hasResponsiveHeadline}
+          headline={headline}
+        />
+      ) : null}
       <Text style={styles.text}>{renderTrees(summary, renderer)}</Text>
       <Text
         style={styles.metaText}
@@ -83,7 +85,7 @@ const ArticleSummary = props => {
           showPublication={showPublication}
         />
       </Text>
-      {byline ? (
+      {byline.length ? (
         <Text style={styles.metaText}>
           <ArticleByline ast={byline} />
         </Text>
@@ -95,7 +97,7 @@ const ArticleSummary = props => {
 ArticleSummary.propTypes = {
   label: PropTypes.string,
   headline: PropTypes.string,
-  responsiveHeadline: PropTypes.func,
+  hasResponsiveHeadline: PropTypes.bool,
   text: PropTypes.arrayOf(treePropType),
   date: DatePublication.propTypes.date,
   publication: DatePublication.propTypes.publication,
@@ -106,7 +108,7 @@ ArticleSummary.propTypes = {
 ArticleSummary.defaultProps = {
   label: "",
   headline: "",
-  responsiveHeadline: null,
+  hasResponsiveHeadline: false,
   text: [],
   date: null,
   publication: DatePublication.defaultProps.publication,
