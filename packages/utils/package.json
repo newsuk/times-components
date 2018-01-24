@@ -24,7 +24,8 @@
     ],
     "testMatch": [
       "<rootDir>/packages/utils/__tests__/*.test.js"
-    ]
+    ],
+    "setupFiles": ["<rootDir>/packages/utils/setup-jest.js"]
   },
   "repository": {
     "type": "git",
