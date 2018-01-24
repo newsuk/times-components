@@ -76,5 +76,4 @@ export default ArticleSummary => {
 
     expect(tree).toMatchSnapshot();
   });
-
 };
