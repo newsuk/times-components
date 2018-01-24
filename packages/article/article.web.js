@@ -23,14 +23,14 @@ import {
 const adStyle = {
   marginBottom: 0
 };
-
-const withAdComposer = (children, section = "article") => (
-  <AdComposer section={section}>{children}</AdComposer>
+const withAdComposer = (children, articleAdConfig, section = "article") => (
+  <AdComposer section={section} adConfig={articleAdConfig}>{children}</AdComposer>
 );
 
 class ArticlePage extends React.Component {
   static renderArticle(articleData) {
     const {
+      id,
       headline,
       flags,
       standfirst,
@@ -86,8 +86,16 @@ class ArticlePage extends React.Component {
       return <ArticleLoading />;
     }
 
+    const articleAdConfig = {
+      id: this.props.article.id,
+      title: this.props.article.title,
+      label: this.props.article.label,
+      commercialtags: 'test',//this.props.article.commercialtags,
+      contentType: 'art'
+    };
+
     const ArticleListView = ArticlePage.renderArticle(this.props.article);
-    return withAdComposer(ArticleListView);
+    return withAdComposer(ArticleListView, articleAdConfig);
   }
 }
 
