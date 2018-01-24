@@ -92,9 +92,12 @@ export function createClientTester(requestHandler) {
   return { client, link };
 }
 
-
-export function createProviderTester(requestHandler, Component, defaultProps = {}) {
-  const {link, client} = createClientTester(requestHandler);
+export function createProviderTester(
+  requestHandler,
+  Component,
+  defaultProps = {}
+) {
+  const { link, client } = createClientTester(requestHandler);
 
   let setProps = () => Promise.resolve();
   class Stateful extends React.Component {
@@ -104,10 +107,13 @@ export function createProviderTester(requestHandler, Component, defaultProps = {
     }
 
     componentDidMount() {
-      setProps = (state) => new Promise(done => this.setState( () => {
-        done(state);
-        return state;
-      }))
+      setProps = state =>
+        new Promise(done =>
+          this.setState(() => {
+            done(state);
+            return state;
+          })
+        );
     }
 
     componentWillUnmount() {
@@ -116,23 +122,25 @@ export function createProviderTester(requestHandler, Component, defaultProps = {
 
     render() {
       const Child = this.props.children;
-      return <Child {...this.state}/>;
+      return <Child {...this.state} />;
     }
   }
 
   const component = renderer.create(
-    <ApolloProvider client={client}>{
-      <Stateful>
-        {props => (
-          <Component {...props}>{
-            (data) => {
-              link.pushEvent({type:'render', data});
-              return null;
-            }
-          }</Component>
-        )}
-      </Stateful>
-    }</ApolloProvider>
+    <ApolloProvider client={client}>
+      {
+        <Stateful>
+          {props => (
+            <Component {...props}>
+              {data => {
+                link.pushEvent({ type: "render", data });
+                return null;
+              }}
+            </Component>
+          )}
+        </Stateful>
+      }
+    </ApolloProvider>
   );
 
   return {
@@ -140,11 +148,23 @@ export function createProviderTester(requestHandler, Component, defaultProps = {
     link,
     setProps,
     component
-  }
+  };
 }
 
 function tidyEvent(e) {
-  if(!e.operation) return e;
+  if (e.type == "render") {
+    delete e.data.refetch;
+    delete e.data.fetchMore;
+    delete e.data.updateQuery;
+    delete e.data.startPolling;
+    delete e.data.stopPolling;
+    delete e.data.subscribeToMore;
+    return {
+      type: e.type,
+      ...e.data
+    };
+  }
+
   return {
     type: e.type,
     query: e.operation.operationName,
