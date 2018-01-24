@@ -4,6 +4,8 @@ import { makeExecutableSchema, addMockFunctionsToSchema } from "graphql-tools";
 import { ApolloLink, Observable } from "apollo-link";
 import { execute } from "graphql";
 import renderer from "react-test-renderer";
+import { ApolloProvider } from "react-apollo";
+import React from "react";
 
 import schema from "@times-components/utils/schema.json";
 
@@ -104,8 +106,8 @@ export function createProviderTester(requestHandler, Component, defaultProps = {
     componentDidMount() {
       setProps = (state) => new Promise(done => this.setState( () => {
         done(state);
-        return state
-      })
+        return state;
+      }))
     }
 
     componentWillUnmount() {
@@ -142,6 +144,7 @@ export function createProviderTester(requestHandler, Component, defaultProps = {
 }
 
 function tidyEvent(e) {
+  if(!e.operation) return e;
   return {
     type: e.type,
     query: e.operation.operationName,
