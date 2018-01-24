@@ -4,7 +4,7 @@ const sharedStyles = {
   articleHeadLineText: {
     fontSize: 30,
     lineHeight: 32,
-    color: "#1d1d1b",
+    color: Colours.timesBlack,
     marginBottom: 7,
     fontFamily: "TimesModern-Bold"
   },

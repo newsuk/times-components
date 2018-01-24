@@ -1,10 +1,11 @@
 import { View, Text } from "react-native";
+import { Colours } from "@times-components/styleguide";
 import withResponsiveStyles from "@times-components/responsive-styles";
 
 export const HeadlineContainer = withResponsiveStyles(Text, {
   base: () => `
     font-size: 30px;
-    color: #1d1d1b;
+    color: ${Colours.timesBlack};
     margin-bottom: 8px;
     font-family: "TimesModern-Bold";
     font-weight: 400;

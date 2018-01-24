@@ -6,6 +6,7 @@ import {
   UpdatedArticleFlag,
   ExclusiveArticleFlag
 } from "@times-components/article-flag";
+import { Colours } from "@times-components/styleguide";
 import ArticleLabel from "@times-components/article-label";
 import { Text, View, ViewPropTypes } from "react-native";
 import styles from "./styles/header";
@@ -54,7 +55,7 @@ const renderLabel = label => {
       testID="label"
       style={styles.articleLabel}
     >
-      <ArticleLabel title={label} color="#13354E" />
+      <ArticleLabel title={label} color={Colours.news} />
     </LabelContainer>
   );
 };

@@ -1,8 +1,10 @@
 /* eslint-disable react/no-array-index-key */
 import React from "react";
 import { StyleSheet } from "react-native";
+import { Colours } from "@times-components/styleguide";
 import { TextLink } from "@times-components/link";
 import { renderTrees } from "@times-components/markup";
+
 
 import {
   articleBylinePropTypes,
@@ -11,7 +13,7 @@ import {
 
 const linkStyles = StyleSheet.create({
   link: {
-    color: "#069"
+    color: Colours.linkBlue
   }
 });
 

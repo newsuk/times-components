@@ -43,7 +43,7 @@ PullQuotes.propTypes = {
 
 PullQuotes.defaultProps = {
   caption: "",
-  quoteColour: "#13354e",
+  quoteColour: Colours.news,
   captionColour: Colours.midGrey,
   twitter: ""
 };

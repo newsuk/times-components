@@ -1,5 +1,6 @@
 import "react-native";
 import React from "react";
+import { Colours } from "@times-components/styleguide";
 import { storiesOf } from "@storybook/react-native";
 import PullQuotes from "./pull-quote";
 
@@ -20,7 +21,7 @@ storiesOf("PullQuotes", module)
     <PullQuotes
       content={content}
       caption={caption}
-      quoteColour="#850029"
-      captionColour="#850029"
+      quoteColour={Colours.comment}
+      captionColour={Colours.comment}
     />
   ));

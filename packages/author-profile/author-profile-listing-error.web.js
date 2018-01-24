@@ -29,7 +29,7 @@ const Message = withResponsiveStyles(Text, {
     font-size: 18px;
     line-height: 1.44;
     text-align: center;
-    color: #696969;
+    color: ${Colours.midGrey};
   `
 });
 
