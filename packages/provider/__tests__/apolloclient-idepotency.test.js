@@ -1,17 +1,5 @@
 import gql from "graphql-tag";
-import { createClientTester } from "./provider-testing-utils";
-
-function tidyEvent(e) {
-  return {
-    type: e.type,
-    query: e.operation.operationName,
-    vars: e.operation.variables
-  };
-}
-
-function getEvents(link) {
-  return link.getEvents().map(tidyEvent);
-}
+import { createClientTester, getEvents } from "./provider-testing-utils";
 
 function AuthorQueryResolver({ variables }) {
   return {
@@ -82,8 +70,6 @@ it("should sent same response if result cached", async () => {
 
   await Promise.all([q1, q2]);
 
-
-  console.log(getEvents(link));
   expect(getEvents(link)).toEqual([
     { type: "request", query: "AuthorQuery", vars: { slug: "1" } },
     { type: "resolving", query: "AuthorQuery", vars: { slug: "1" } },

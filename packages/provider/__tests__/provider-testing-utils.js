@@ -3,6 +3,7 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 import { makeExecutableSchema, addMockFunctionsToSchema } from "graphql-tools";
 import { ApolloLink, Observable } from "apollo-link";
 import { execute } from "graphql";
+import renderer from "react-test-renderer";
 
 import schema from "@times-components/utils/schema.json";
 
@@ -87,4 +88,67 @@ export function createClientTester(requestHandler) {
   });
 
   return { client, link };
+}
+
+
+export function createProviderTester(requestHandler, Component, defaultProps = {}) {
+  const {link, client} = createClientTester(requestHandler);
+
+  let setProps = () => Promise.resolve();
+  class Stateful extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = defaultProps;
+    }
+
+    componentDidMount() {
+      setProps = (state) => new Promise(done => this.setState( () => {
+        done(state);
+        return state
+      })
+    }
+
+    componentWillUnmount() {
+      setProps = () => Promise.resolve();
+    }
+
+    render() {
+      const Child = this.props.children;
+      return <Child {...this.state}/>;
+    }
+  }
+
+  const component = renderer.create(
+    <ApolloProvider client={client}>{
+      <Stateful>
+        {props => (
+          <Component {...props}>{
+            (data) => {
+              link.pushEvent({type:'render', data});
+              return null;
+            }
+          }</Component>
+        )}
+      </Stateful>
+    }</ApolloProvider>
+  );
+
+  return {
+    client,
+    link,
+    setProps,
+    component
+  }
+}
+
+function tidyEvent(e) {
+  return {
+    type: e.type,
+    query: e.operation.operationName,
+    vars: e.operation.variables
+  };
+}
+
+export function getEvents(link) {
+  return link.getEvents().map(tidyEvent);
 }
