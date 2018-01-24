@@ -12,16 +12,30 @@ describe("date helper", () => {
 });
 
 describe("timezone helper", () => {
+  const realIntl = Intl;
+
+  beforeEach(() => {
+    global.Intl = {
+      DateTimeFormat: () => ({
+        resolvedOptions: () => ({ timeZone: "Europe/London" })
+      })
+    };
+  });
+
+  afterEach(() => {
+    global.Intl = realIntl;
+  });
+
   it("should return true when London is the timezone", () => {
     expect(isLondonTimezone()).toEqual(true);
   });
 
   it("should return false when London is NOT the timezone", () => {
-    Intl.DateTimeFormat = () => ({
-      resolvedOptions: () => ({
-        timeZone: "Somewhere/Else"
+    global.Intl = {
+      DateTimeFormat: () => ({
+        resolvedOptions: () => ({ timeZone: "Somewhere/Else" })
       })
-    });
+    };
 
     expect(isLondonTimezone()).toEqual(false);
   });
