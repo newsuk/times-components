@@ -1,6 +1,7 @@
 {
   "name": "@times-components/gestures",
   "version": "1.0.0",
+  "description": "Wrapper to respond to pinch to zoom and rotate events",
   "main": "gestures",
   "scripts": {
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
