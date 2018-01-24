@@ -1,227 +1,114 @@
 import gql from "graphql-tag";
-import { InMemoryCache } from "apollo-cache-inmemory";
+import { createClientTester } from "./provider-testing-utils";
 
-import createPingPongClient from "./provider-testing-utils";
+function tidyEvent(e) {
+  return {
+    type: e.type,
+    query: e.operation.operationName,
+    vars: e.operation.variables
+  };
+}
 
-/* eslint-disable graphql/template-strings */
+function getEvents(link) {
+  return link.getEvents().map(tidyEvent);
+}
 
-it("should not send the same query multiple times", async () => {
-  const query = gql`
-    query PingQuery($ID: Int) {
-      ping(id: $ID) {
-        id
+function AuthorQueryResolver({ variables }) {
+  return {
+    data: {
+      author: {
+        name: variables.slug,
+        __typename: "Author"
       }
     }
-  `;
+  };
+}
 
-  const client = createPingPongClient({
-    cache: new InMemoryCache()
+const query = gql`
+  query AuthorQuery($slug: String!) {
+    author(slug: $slug) {
+      name
+    }
+  }
+`;
+
+it("should resolve correctly", async () => {
+  const { client, link } = createClientTester(AuthorQueryResolver);
+
+  const q = client.query({
+    query,
+    variables: { slug: "bar" }
   });
 
-  const q1 = client.query({ query, variables: { ID: 1 } });
-  const q2 = client.query({ query, variables: { ID: 2 } });
-  const q3 = client.query({ query, variables: { ID: 1 } });
-  const q4 = client.query({ query, variables: { ID: 2 } });
+  await link.resolve(0);
+  await q;
 
-  await client.resolve(1);
-  await client.resolve(2);
+  expect(getEvents(link)).toEqual([
+    { type: "request", query: "AuthorQuery", vars: { slug: "bar" } },
+    { type: "resolving", query: "AuthorQuery", vars: { slug: "bar" } },
+    { type: "resolved", query: "AuthorQuery", vars: { slug: "bar" } }
+  ]);
+});
+
+it("should not send the same query multiple times", async () => {
+  const { client, link } = createClientTester(AuthorQueryResolver);
+
+  const q1 = client.query({ query, variables: { slug: "1" } });
+  const q2 = client.query({ query, variables: { slug: "2" } });
+  const q3 = client.query({ query, variables: { slug: "1" } });
+  const q4 = client.query({ query, variables: { slug: "2" } });
+
+  await link.resolve(0);
+  await link.resolve(1);
 
   await Promise.all([q1, q2, q3, q4]);
 
-  const events = client.getSnapshot();
-  const resolved = events.filter(e => e.type === "resolved").map(e => e.id)
-    .length;
-  expect(resolved).toBe(2);
+  expect(getEvents(link)).toEqual([
+    { type: "request", query: "AuthorQuery", vars: { slug: "1" } },
+    { type: "request", query: "AuthorQuery", vars: { slug: "2" } },
+    { type: "resolving", query: "AuthorQuery", vars: { slug: "1" } },
+    { type: "resolving", query: "AuthorQuery", vars: { slug: "2" } },
+    { type: "resolved", query: "AuthorQuery", vars: { slug: "1" } },
+    { type: "resolved", query: "AuthorQuery", vars: { slug: "2" } }
+  ]);
 });
 
-it("should resent same query with superfluous but used query variables", async () => {
-  const query = gql`
-    query PingQuery($ID: Int, $FOO: Int) {
-      ping(id: $ID, foo: $FOO) {
-        id
-      }
-    }
-  `;
+it("should sent same response if result cached", async () => {
+  const { client, link } = createClientTester(AuthorQueryResolver);
 
-  const client = createPingPongClient({
-    cache: new InMemoryCache()
-  });
+  const q1 = client.query({ query, variables: { slug: "1" } });
+  await link.resolve(0);
+  const q2 = client.query({ query, variables: { slug: "1" } });
 
-  const q1 = client.query({ query, variables: { ID: 1 } });
+  await Promise.all([q1, q2]);
 
-  await client.resolve(1);
-  await q1;
 
-  const resolved1 = client
-    .getSnapshot()
-    .filter(e => e.type === "resolved")
-    .map(e => e.id).length;
+  console.log(getEvents(link));
+  expect(getEvents(link)).toEqual([
+    { type: "request", query: "AuthorQuery", vars: { slug: "1" } },
+    { type: "resolving", query: "AuthorQuery", vars: { slug: "1" } },
+    { type: "resolved", query: "AuthorQuery", vars: { slug: "1" } }
+  ]);
+});
 
-  const q2 = client.query({ query, variables: { ID: 1, FOO: 2 } });
-  await client.resolve(1);
+it("should return resolveds in the order ", async () => {
+  const { client, link } = createClientTester(AuthorQueryResolver);
+
+  const q1 = client.query({ query, variables: { slug: "1" } });
+  const q2 = client.query({ query, variables: { slug: "2" } });
+
+  await link.resolve(1);
   await q2;
 
-  const resolved2 = client
-    .getSnapshot()
-    .filter(e => e.type === "resolved")
-    .map(e => e.id).length;
-
-  expect(resolved1).toBe(1);
-  expect(resolved2).toBe(2);
-});
-
-it("should not resent same query if cached and superfluous but unused query variables", async () => {
-  const query = gql`
-    query PingQuery($ID: Int, $foo: Int) {
-      ping(id: $ID) {
-        id
-      }
-    }
-  `;
-
-  const client = createPingPongClient({
-    cache: new InMemoryCache()
-  });
-
-  const q1 = client.query({ query, variables: { ID: 1 } });
-
-  await client.resolve(1);
+  await link.resolve(0);
   await q1;
 
-  const resolved1 = client
-    .getSnapshot()
-    .filter(e => e.type === "resolved")
-    .map(e => e.id).length;
-
-  const q2 = client.query({ query, variables: { ID: 1, foo: 2 } });
-  await client.resolve(1);
-  await q2;
-
-  const resolved2 = client
-    .getSnapshot()
-    .filter(e => e.type === "resolved")
-    .map(e => e.id).length;
-
-  expect(resolved1).toBe(1);
-  expect(resolved2).toBe(1);
-});
-
-it("should resent same query if cache is disabled", async () => {
-  const query = gql`
-    query PingQuery($ID: Int) {
-      ping(id: $ID) {
-        id
-        data
-      }
-    }
-  `;
-
-  const client = createPingPongClient({
-    cache: new InMemoryCache()
-  });
-
-  const q1 = client.query({
-    query,
-    variables: { ID: 1 }
-  });
-
-  await client.resolve(1, "foo");
-  await q1;
-
-  const resolved1 = client
-    .getSnapshot()
-    .filter(e => e.type === "resolved")
-    .map(e => e.id).length;
-
-  const q2 = client.query({
-    query,
-    variables: { ID: 1, foo: 2 },
-    fetchPolicy: "network-only"
-  });
-
-  await client.resolve(1, "bar");
-  const { ping } = await q2;
-
-  const resolved2 = client
-    .getSnapshot()
-    .filter(e => e.type === "resolved")
-    .map(e => e.id).length;
-
-  expect(resolved1).toBe(1);
-  expect(resolved2).toBe(2);
-  expect(ping.data).toBe("bar");
-});
-
-it("should coalesce same queries even if cache is not used", async () => {
-  const query = gql`
-    query PingQuery($ID: Int) {
-      ping(id: $ID) {
-        id
-      }
-    }
-  `;
-
-  const client = createPingPongClient({
-    cache: new InMemoryCache()
-  });
-
-  const q1 = client.query({
-    query,
-    variables: { ID: 1 },
-    fetchPolicy: "network-only"
-  });
-
-  const q2 = client.query({
-    query,
-    variables: { ID: 1 },
-    fetchPolicy: "network-only"
-  });
-
-  await client.resolve(1);
-  await q1;
-  await q2;
-
-  const resolved = client
-    .getSnapshot()
-    .filter(e => e.type === "resolved")
-    .map(e => e.id).length;
-
-  expect(resolved).toBe(1);
-});
-
-it("should not resent same query even if it has a different name and variables", async () => {
-  const query1 = gql`
-    query Ping1Query($ID: Int) {
-      ping(id: $ID) {
-        id
-      }
-    }
-  `;
-
-  const query2 = gql`
-    query Ping2Query($FOO: Int) {
-      ping(id: $FOO) {
-        id
-      }
-    }
-  `;
-
-  const client = createPingPongClient({
-    cache: new InMemoryCache()
-  });
-
-  const q1 = client.query({ query: query1, variables: { ID: 1 } });
-
-  await client.resolve(1);
-  await q1;
-
-  const q2 = client.query({ query: query2, variables: { FOO: 1 } });
-  await q2;
-
-  const resolved = client
-    .getSnapshot()
-    .filter(e => e.type === "resolved")
-    .map(e => e.id).length;
-
-  expect(resolved).toBe(1);
+  expect(getEvents(link)).toEqual([
+    { type: "request", query: "AuthorQuery", vars: { slug: "1" } },
+    { type: "request", query: "AuthorQuery", vars: { slug: "2" } },
+    { type: "resolving", query: "AuthorQuery", vars: { slug: "1" } },
+    { type: "resolving", query: "AuthorQuery", vars: { slug: "2" } },
+    { type: "resolved", query: "AuthorQuery", vars: { slug: "2" } },
+    { type: "resolved", query: "AuthorQuery", vars: { slug: "1" } }
+  ]);
 });

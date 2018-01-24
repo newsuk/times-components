@@ -1,84 +1,90 @@
 import { ApolloClient } from "apollo-client";
-import { LocalLink } from "apollo-link-local";
-import { makeExecutableSchema } from "graphql-tools";
+import { InMemoryCache } from "apollo-cache-inmemory";
+import { makeExecutableSchema, addMockFunctionsToSchema } from "graphql-tools";
+import { ApolloLink, Observable } from "apollo-link";
+import { execute } from "graphql";
+
+import schema from "@times-components/utils/schema.json";
 
 function createFuture() {
   let resolve;
-  const promise = new Promise(done => {
-    resolve = done;
-  });
+  let promise = new Promise(done => (resolve = done));
 
   return {
-    resolve: data => {
-      setTimeout(() => resolve(data));
+    resolve: () => {
+      setTimeout(resolve);
       return promise;
     },
     promise: () => promise
   };
 }
 
-const typeDefs = `
-type Pong {
-  id: Int,
-  data: String
-}
-
-type Query {
-  ping(id: Int!) : Pong
-}`;
-
-export default function PingPongTester(options) {
-  const events = [];
-  const blockers = {};
-  const wait = id => {
-    blockers[id] = blockers[id] || createFuture();
-    return blockers[id].promise();
-  };
-
-  const resolvers = {
-    Query: {
-      async ping(root, { id }) {
-        events.push({ type: "request", id });
-        const data = await wait(id);
-        events.push({ type: "resolved", id, data });
-        return { id, data };
-      }
-    }
-  };
-
-  const schema = makeExecutableSchema({ typeDefs, resolvers });
-
-  class WrappedClient extends ApolloClient {
-    getSnapshot = () => [...events];
-
-    pushEvent = data => {
-      events.push(data);
-    };
-
-    resolve = (id, data) => {
-      if (!blockers[id]) return Promise.resolve(data);
-
-      setTimeout(() => {
-        events.push({ type: "resolving", id, data });
-        blockers[id].resolve(data);
-        delete blockers[id];
-      });
-      return blockers[id].promise();
-    };
-
-    query(data) {
-      return super.query(data).then(({ data: d }) => {
-        events.push({
-          type: "response",
-          data: d
-        });
-        return d;
-      });
-    }
+export class TestLink extends ApolloLink {
+  constructor(onRequest) {
+    super();
+    this.onRequest = onRequest;
+    this.operations = [];
+    this.blocked = [];
+    this.events = [];
   }
 
-  return new WrappedClient({
-    ...options,
-    link: new LocalLink({ schema })
+  resolve(i) {
+    if (!this.blocked[i]) return Promise.resolve();
+    return this.blocked[i].resolve();
+  }
+
+  pushEvent(data) {
+    this.events.push(data);
+  }
+
+  getRequest() {
+    return this.operations;
+  }
+
+  resolveRequest(filter) {
+    const entry = Object.entries(this.operations).find(([i, x]) => filter(x));
+
+    if (entry) return this.resolve(entry[0]);
+
+    return Promise.resolve();
+  }
+
+  getEvents() {
+    return this.events;
+  }
+
+  request(operation) {
+    this.blocked.push(createFuture());
+    const { promise } = this.blocked[this.blocked.length - 1];
+    this.operations.push(operation);
+    this.events.push({ type: "request", operation });
+    return new Observable(observer => {
+      Promise.resolve(this.onRequest(operation))
+        .then(async data => {
+          this.events.push({ type: "resolving", operation, data });
+          await promise();
+          this.events.push({ type: "resolved", operation, data });
+          if (!observer.closed) {
+            observer.next(data);
+            observer.complete();
+          }
+        })
+        .catch(e => {
+          this.events.push({ type: "error", error: e });
+          if (!observer.closed) {
+            observer.error(e);
+          }
+        });
+    });
+  }
+}
+
+export function createClientTester(requestHandler) {
+  const link = new TestLink(requestHandler);
+  const client = new ApolloClient({
+    cache: new InMemoryCache(),
+    link
   });
+
+  return { client, link };
 }

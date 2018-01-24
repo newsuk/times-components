@@ -571,12 +571,6 @@ apollo-link-local@1.0.3:
     apollo-link "^1.0.3"
     graphql "^0.11.7"
 
-apollo-link-schema@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/apollo-link-schema/-/apollo-link-schema-1.0.2.tgz#e4bb1cafcaecca8ff6b9aad7e2de2091179f33c7"
-  dependencies:
-    apollo-link "^1.0.7"
-
 apollo-link@^1.0.0, apollo-link@^1.0.3, apollo-link@^1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/apollo-link/-/apollo-link-1.0.7.tgz#42cd38a7378332fc3e41a214ff6a6e5e703a556f"
