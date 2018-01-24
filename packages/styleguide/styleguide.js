@@ -1,12 +1,4 @@
 
-
-// extracted from https://www.thetimes.co.uk/styleguide/colours
-// Array.from(document.querySelectorAll('pre code'))
-//   .map(x=>x.textContent)
-//   .map(x=>x.split('#'))
-//   .map( ([x,y])=> [x.split('section-')[1], '"#'+y+'"'] )
-//   .filter(x=>x[0]).map(x=>x.join(': ')).join(',\n')
-
 export const WeekendColours = {
   money: "#006a74",
   newsReview: "#004d6d",
@@ -72,7 +64,7 @@ export const Colours = {
 // TODO: find usage patterns and propper names 
 export const Fonts = {
   GillSans: "GillSansMTStd-Medium",
-  timesDigitalSc: "TimesDigitalW04-RegularSC",
+  timesDigitalRegularSc: "TimesDigitalW04-RegularSC",
   timesDigitalRegular: "TimesDigitalW04-Regular",
   timesDigital: "TimesDigitalW04",
   TimesModernBold: "TimesModern-Bold",

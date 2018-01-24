@@ -11,6 +11,7 @@ const styles = {
   },
 
   colourBox: {
+    flexWrap: "wrap",
     flexDirection: "row",
   },
 
