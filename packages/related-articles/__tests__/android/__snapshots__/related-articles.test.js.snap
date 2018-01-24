@@ -294,7 +294,13 @@ exports[`RelatedArticles test on android renders single default related article 
                   }
                 }
               >
-                Charles Bremner, Paris | Jack Malvern
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                >
+                  Charles Bremner, Paris | Jack Malvern
+                </Text>
               </Text>
             </View>
           </View>
@@ -585,6 +591,20 @@ exports[`RelatedArticles test on android renders single default related article 
               >
                 Friday March 13 2015, 06:54pm
               </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                    "lineHeight": 15,
+                    "marginBottom": 10,
+                  }
+                }
+              />
             </View>
           </View>
         </View>
@@ -872,7 +892,13 @@ exports[`RelatedArticles test on android renders single default related article 
                   }
                 }
               >
-                Charles Bremner, Paris | Jack Malvern
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                >
+                  Charles Bremner, Paris | Jack Malvern
+                </Text>
               </Text>
             </View>
           </View>
@@ -1045,7 +1071,13 @@ exports[`RelatedArticles test on android renders single default related article 
                   }
                 }
               >
-                Charles Bremner, Paris | Jack Malvern
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                >
+                  Charles Bremner, Paris | Jack Malvern
+                </Text>
               </Text>
             </View>
           </View>

@@ -1,8 +1,11 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
+
 import { renderTrees, treePropType } from "@times-components/markup";
 import DatePublication from "@times-components/date-publication";
+import ArticleByline from "@times-components/article-byline";
+
 import ArticleSummaryHeadline from "./article-summary-headline";
 import renderer from "./article-summary-renderer";
 
@@ -80,7 +83,11 @@ const ArticleSummary = props => {
           showPublication={showPublication}
         />
       </Text>
-      {byline ? <Text style={styles.metaText}>{byline}</Text> : null}
+      {byline ? (
+        <Text style={styles.metaText}>
+          <ArticleByline ast={byline} />
+        </Text>
+      ) : null}
     </View>
   );
 };
@@ -93,7 +100,7 @@ ArticleSummary.propTypes = {
   date: DatePublication.propTypes.date,
   publication: DatePublication.propTypes.publication,
   showPublication: DatePublication.propTypes.showPublication,
-  byline: PropTypes.string
+  byline: PropTypes.arrayOf(treePropType)
 };
 
 ArticleSummary.defaultProps = {
@@ -104,7 +111,7 @@ ArticleSummary.defaultProps = {
   date: null,
   publication: DatePublication.defaultProps.publication,
   showPublication: DatePublication.defaultProps.showPublication,
-  byline: ""
+  byline: []
 };
 
 export default ArticleSummary;

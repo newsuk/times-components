@@ -39,8 +39,6 @@ const RelatedArticlesContent = ({ item }) => {
     showImage: true
   };
 
-  const bylineText = get(byline[0], "children[0].attributes.value") || "";
-
   const ResponsiveHeadline = withResponsiveStyles(Text, {
     base: () => `
       font-size: 22px;
@@ -57,7 +55,7 @@ const RelatedArticlesContent = ({ item }) => {
       <View style={styles.cardContainer}>
         <Card {...cardProps} image={imageUri ? { uri: imageUri } : null}>
           <ArticleSummary
-            byline={bylineText}
+            byline={byline}
             date={publishedTime}
             headline={headline}
             responsiveHeadline={ResponsiveHeadline}
