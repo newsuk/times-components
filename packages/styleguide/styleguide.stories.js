@@ -68,28 +68,28 @@ storiesOf("Styleguide", module)
   .add("UI Colours", () => (
     <View style={styles.colourBox}>{
       Object.entries(UIColours).map( ([label, colour]) =>
-        <ColourSwatch label={label} colour={colour} />
+        <ColourSwatch label={label} colour={label+colour} />
       )
     }</View>
   ))
   .add("Weekdays Colours", () => (
     <View style={styles.colourBox}>{
       Object.entries(WeekdaysColours).map( ([label, colour]) =>
-        <ColourSwatch label={label} colour={colour} key={colour} />
+        <ColourSwatch label={label} colour={colour} key={label+colour} />
       )
     }</View>
   ))
   .add("Weekend Colours", () => (
     <View style={styles.colourBox}>{
       Object.entries(WeekendColours).map( ([label, colour]) =>
-        <ColourSwatch label={label} colour={colour} key={colour} />
+        <ColourSwatch label={label} colour={colour} key={label+colour} />
       )
     }</View>
   ))
   .add("Fonts", () => (
     <View style={styles.fontBox}>{ 
       Object.entries(Fonts).map( ([label, font]) =>
-        <FontSwatch label={label} font={font} key={font} />
+        <FontSwatch label={label} font={font} key={label+font} />
       )
     }</View>
   ))
