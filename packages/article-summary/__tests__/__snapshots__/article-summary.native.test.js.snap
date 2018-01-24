@@ -11,6 +11,22 @@ exports[`renders an article-summary component with a single paragraph 1`] = `
     style={
       Object {
         "color": "#333333",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 12,
+        "letterSpacing": 1,
+        "marginBottom": 2,
+      }
+    }
+  >
+    CAMILLA LONG
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#333333",
         "fontFamily": "TimesModern-Bold",
         "fontWeight": "400",
         "marginBottom": 6,
@@ -61,6 +77,49 @@ exports[`renders an article-summary component with a single paragraph 1`] = `
     testID="datePublication"
   >
     Friday November 17 2017, 12:01am, The Times
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 10,
+      }
+    }
+  >
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="/profile/camilla-long"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#069",
+          },
+          undefined,
+        ]
+      }
+    >
+      Camilla Long
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      , Environment Editor
+    </Text>
   </Text>
 </View>
 `;
@@ -217,6 +276,49 @@ exports[`renders an article-summary component with content including line breaks
   >
     Saturday July 01 2017, 03:32pm, The Sunday Times
   </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 10,
+      }
+    }
+  >
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="/profile/camilla-long"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#069",
+          },
+          undefined,
+        ]
+      }
+    >
+      Camilla Long
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      , Environment Editor
+    </Text>
+  </Text>
 </View>
 `;
 
@@ -313,6 +415,49 @@ exports[`renders an article-summary component with empty content at the end trim
   >
     Saturday July 01 2017, 03:32pm, The Sunday Times
   </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 10,
+      }
+    }
+  >
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="/profile/camilla-long"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#069",
+          },
+          undefined,
+        ]
+      }
+    >
+      Camilla Long
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      , Environment Editor
+    </Text>
+  </Text>
 </View>
 `;
 
@@ -384,6 +529,20 @@ exports[`renders an article-summary component with headline and no content 1`] =
   >
     Saturday July 01 2017, 03:32pm, The Sunday Times
   </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 10,
+      }
+    }
+  />
 </View>
 `;
 
@@ -456,6 +615,236 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
     testID="datePublication"
   >
     Friday November 17 2017, 12:01am, The Times
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 10,
+      }
+    }
+  >
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="/profile/camilla-long"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#069",
+          },
+          undefined,
+        ]
+      }
+    >
+      Camilla Long
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      , Environment Editor
+    </Text>
+  </Text>
+</View>
+`;
+
+exports[`renders an article-summary component with no byline 1`] = `
+<View
+  style={Object {}}
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontWeight": "400",
+        "marginBottom": 6,
+      }
+    }
+  >
+    Top medal for forces dog who took a bite out of the Taliban
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "flexWrap": "wrap",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 14,
+        "lineHeight": 20,
+        "marginBottom": 10,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      
+      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
+      ...
+    </Text>
+  </Text>
+  <Text
+    accessibilityLabel="datePublication"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 10,
+      }
+    }
+    testID="datePublication"
+  >
+    Friday November 17 2017, 12:01am, The Times
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 10,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`renders an article-summary component with no label 1`] = `
+<View
+  style={Object {}}
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontWeight": "400",
+        "marginBottom": 6,
+      }
+    }
+  >
+    Top medal for forces dog who took a bite out of the Taliban
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "flexWrap": "wrap",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 14,
+        "lineHeight": 20,
+        "marginBottom": 10,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      
+      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
+      ...
+    </Text>
+  </Text>
+  <Text
+    accessibilityLabel="datePublication"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 10,
+      }
+    }
+    testID="datePublication"
+  >
+    Friday November 17 2017, 12:01am, The Times
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 10,
+      }
+    }
+  >
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="/profile/camilla-long"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#069",
+          },
+          undefined,
+        ]
+      }
+    >
+      Camilla Long
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      , Environment Editor
+    </Text>
   </Text>
 </View>
 `;

@@ -1,8 +1,8 @@
 {
   "label": "Camilla Long",
-  "headline": "OK, so Putin’s not a lady, but he does have the wildest man‑PMT",
-  "date": "2017-07-01T14:32:00.000Z",
-  "publication": "SUNDAYTIMES",
+  "publication": "TIMES",
+  "date": "2017-11-17T00:01:00.000Z",
+  "headline": "Top medal for forces dog who took a bite out of the Taliban",
   "byline": [
     {
       "name": "author",
@@ -42,29 +42,11 @@
           "name": "text",
           "attributes": {
             "value":
-              "Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night."
+              "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear."
           },
           "children": []
         }
       ]
-    },
-    {
-      "name": "paragraph",
-      "attributes": {},
-      "children": [
-        {
-          "name": "text",
-          "attributes": {
-            "value": "The former punk"
-          },
-          "children": []
-        }
-      ]
-    },
-    {
-      "name": "paragraph",
-      "attributes": {},
-      "children": []
     }
   ]
 }
