@@ -8,7 +8,7 @@ const config = {
   platformVersion: "11.1",
   app: path.join(
     __dirname,
-    "../ios/build/Build/Products/Release-iphonesimulator/storybooknative.app"
+    "../ios/build/Build/Products/Debug-iphonesimulator/storybooknative.app"
   ),
   ignoredStories: [
     "Advertisement",
