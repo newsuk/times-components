@@ -19,6 +19,10 @@ const sharedStyle = {
     color: "#333",
     paddingTop: 11,
     paddingBottom: 14
+  },
+  cardContainer: {
+    paddingBottom: 10,
+    paddingTop: 10
   }
 };
 
