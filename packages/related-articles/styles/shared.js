@@ -18,7 +18,8 @@ const sharedStyle = {
     fontSize: 26,
     textAlign: "center",
     color: "#333",
-    lineHeight: 45
+    lineHeight: 59,
+    height: 57
   },
   cardContainer: {
     paddingBottom: 10,

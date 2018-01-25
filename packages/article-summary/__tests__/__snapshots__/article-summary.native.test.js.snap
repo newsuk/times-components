@@ -30,7 +30,7 @@ exports[`renders an article-summary component with a single paragraph 1`] = `
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontWeight": "400",
-          "marginBottom": 6,
+          "marginBottom": 5,
         },
         Object {
           "fontSize": 22,
@@ -77,7 +77,7 @@ exports[`renders an article-summary component with a single paragraph 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 15,
-        "marginBottom": 10,
+        "marginBottom": 5,
       }
     }
     testID="datePublication"
@@ -94,7 +94,7 @@ exports[`renders an article-summary component with a single paragraph 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 15,
-        "marginBottom": 10,
+        "marginBottom": 5,
       }
     }
   >
@@ -160,7 +160,7 @@ exports[`renders an article-summary component with content including line breaks
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontWeight": "400",
-          "marginBottom": 6,
+          "marginBottom": 5,
         },
         Object {
           "fontSize": 22,
@@ -281,7 +281,7 @@ exports[`renders an article-summary component with content including line breaks
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 15,
-        "marginBottom": 10,
+        "marginBottom": 5,
       }
     }
     testID="datePublication"
@@ -298,7 +298,7 @@ exports[`renders an article-summary component with content including line breaks
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 15,
-        "marginBottom": 10,
+        "marginBottom": 5,
       }
     }
   >
@@ -364,7 +364,7 @@ exports[`renders an article-summary component with empty content at the end trim
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontWeight": "400",
-          "marginBottom": 6,
+          "marginBottom": 5,
         },
         Object {
           "fontSize": 22,
@@ -426,7 +426,7 @@ exports[`renders an article-summary component with empty content at the end trim
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 15,
-        "marginBottom": 10,
+        "marginBottom": 5,
       }
     }
     testID="datePublication"
@@ -443,7 +443,7 @@ exports[`renders an article-summary component with empty content at the end trim
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 15,
-        "marginBottom": 10,
+        "marginBottom": 5,
       }
     }
   >
@@ -509,7 +509,7 @@ exports[`renders an article-summary component with headline and no content 1`] =
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontWeight": "400",
-          "marginBottom": 6,
+          "marginBottom": 5,
         },
         Object {
           "fontSize": 22,
@@ -546,7 +546,7 @@ exports[`renders an article-summary component with headline and no content 1`] =
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 15,
-        "marginBottom": 10,
+        "marginBottom": 5,
       }
     }
     testID="datePublication"
@@ -570,7 +570,7 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontWeight": "400",
-          "marginBottom": 6,
+          "marginBottom": 5,
         },
         Object {
           "fontSize": 22,
@@ -625,7 +625,7 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 15,
-        "marginBottom": 10,
+        "marginBottom": 5,
       }
     }
     testID="datePublication"
@@ -642,7 +642,7 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 15,
-        "marginBottom": 10,
+        "marginBottom": 5,
       }
     }
   >
@@ -692,7 +692,7 @@ exports[`renders an article-summary component with no byline 1`] = `
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontWeight": "400",
-          "marginBottom": 6,
+          "marginBottom": 5,
         },
         Object {
           "fontSize": 22,
@@ -739,7 +739,7 @@ exports[`renders an article-summary component with no byline 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 15,
-        "marginBottom": 10,
+        "marginBottom": 5,
       }
     }
     testID="datePublication"
@@ -763,7 +763,7 @@ exports[`renders an article-summary component with no label 1`] = `
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontWeight": "400",
-          "marginBottom": 6,
+          "marginBottom": 5,
         },
         Object {
           "fontSize": 22,
@@ -810,7 +810,7 @@ exports[`renders an article-summary component with no label 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 15,
-        "marginBottom": 10,
+        "marginBottom": 5,
       }
     }
     testID="datePublication"
@@ -827,7 +827,7 @@ exports[`renders an article-summary component with no label 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 15,
-        "marginBottom": 10,
+        "marginBottom": 5,
       }
     }
   >

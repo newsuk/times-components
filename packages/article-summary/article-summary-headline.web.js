@@ -9,6 +9,7 @@ const ResponsiveHeadline = withResponsiveStyles(Text, {
   base: () => `
     font-size: 22px;
     line-height: 22px;
+    margin-bottom: 5px;
   `,
   mediumUp: () => `
     font-size: 30px;
