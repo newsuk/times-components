@@ -3,6 +3,7 @@ import { Text } from "react-native";
 import PropTypes from "prop-types";
 import withResponsiveStyles from "@times-components/responsive-styles";
 import ArticleSummaryHeadlineBase from "./article-summary-headline-base";
+import headlineStyles from "./article-summary-headline-styles";
 
 const ResponsiveHeadline = withResponsiveStyles(Text, {
   base: () => `
@@ -21,7 +22,10 @@ const ArticleSummaryHeadline = ({ headline, hasResponsiveHeadline }) =>
       <ArticleSummaryHeadlineBase headline={headline} />
     </ResponsiveHeadline>
   ) : (
-    <ArticleSummaryHeadlineBase headline={headline} />
+    <ArticleSummaryHeadlineBase
+      style={headlineStyles.default}
+      headline={headline}
+    />
   );
 
 ArticleSummaryHeadline.propTypes = {

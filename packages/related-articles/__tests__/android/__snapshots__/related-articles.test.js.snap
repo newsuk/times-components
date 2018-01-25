@@ -301,11 +301,32 @@ exports[`RelatedArticles test on android renders single default related article 
                 }
               >
                 <Text
+                  accessibilityRole="link"
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  href="/profile/camilla-long"
+                  onPress={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "textDecorationLine": "underline",
+                      },
+                      Object {
+                        "color": "#069",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Camilla Long
+                </Text>
+                <Text
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-                  Charles Bremner, Paris | Jack Malvern
+                  , Environment Editor
                 </Text>
               </Text>
             </View>

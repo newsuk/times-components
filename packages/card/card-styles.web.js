@@ -21,7 +21,6 @@ export const SummaryContainer = withResponsiveStyles(View, {
   `,
   mediumUp: () => `
     padding-left: 15px;
-    padding-right: 8.3333%;
     flex-grow: 2.7;
     flex-basis: 0 !important;
   `
