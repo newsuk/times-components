@@ -19,16 +19,6 @@ exports[`RelatedArticles test on android renders single default related article 
         "borderStyle": "solid",
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 0.5,
-<<<<<<< HEAD
-        "color": "#333",
-        "fontFamily": "TimesModern-Regular",
-        "fontSize": 25,
-        "fontWeight": "bold",
-        "paddingBottom": 15,
-        "paddingTop": 10,
-        "textAlign": "center",
-=======
->>>>>>> fix: fix heading font and keylines in ios
       }
     }
   >
@@ -372,16 +362,6 @@ exports[`RelatedArticles test on android renders single default related article 
         "borderStyle": "solid",
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 0.5,
-<<<<<<< HEAD
-        "color": "#333",
-        "fontFamily": "TimesModern-Regular",
-        "fontSize": 25,
-        "fontWeight": "bold",
-        "paddingBottom": 15,
-        "paddingTop": 10,
-        "textAlign": "center",
-=======
->>>>>>> fix: fix heading font and keylines in ios
       }
     }
   >
@@ -682,16 +662,6 @@ exports[`RelatedArticles test on android renders single default related article 
         "borderStyle": "solid",
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 0.5,
-<<<<<<< HEAD
-        "color": "#333",
-        "fontFamily": "TimesModern-Regular",
-        "fontSize": 25,
-        "fontWeight": "bold",
-        "paddingBottom": 15,
-        "paddingTop": 10,
-        "textAlign": "center",
-=======
->>>>>>> fix: fix heading font and keylines in ios
       }
     }
   >
@@ -998,16 +968,6 @@ exports[`RelatedArticles test on android renders single default related article 
         "borderStyle": "solid",
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 0.5,
-<<<<<<< HEAD
-        "color": "#333",
-        "fontFamily": "TimesModern-Regular",
-        "fontSize": 25,
-        "fontWeight": "bold",
-        "paddingBottom": 15,
-        "paddingTop": 10,
-        "textAlign": "center",
-=======
->>>>>>> fix: fix heading font and keylines in ios
       }
     }
   >
