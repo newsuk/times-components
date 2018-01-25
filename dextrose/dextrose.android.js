@@ -3,8 +3,8 @@ const path = require("path");
 const config = {
   snapPath: path.join(__dirname, "/snappy"),
   platformName: "Android",
-  platformVersion: "7.1.1",
-  deviceName: "Nexus_5X_API_25",
+  platformVersion: "5.1",
+  deviceName: "Nexus_5X_API_22",
   app: path.join(
     __dirname,
     "../android/app/build/outputs/apk/release/app-release.apk"
