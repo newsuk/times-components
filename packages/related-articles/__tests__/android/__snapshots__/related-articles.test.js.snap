@@ -11,10 +11,7 @@ exports[`RelatedArticles test on android renders single default related article 
   }
   template="DEFAULT"
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+  <View
     style={
       Object {
         "borderBottomColor": "#dbdbdb",
@@ -22,6 +19,7 @@ exports[`RelatedArticles test on android renders single default related article 
         "borderStyle": "solid",
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 0.5,
+<<<<<<< HEAD
         "color": "#333",
         "fontFamily": "TimesModern-Regular",
         "fontSize": 25,
@@ -29,11 +27,28 @@ exports[`RelatedArticles test on android renders single default related article 
         "paddingBottom": 15,
         "paddingTop": 10,
         "textAlign": "center",
+=======
+>>>>>>> fix: fix heading font and keylines in ios
       }
     }
   >
-    Related links
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 26,
+          "lineHeight": 45,
+          "textAlign": "center",
+        }
+      }
+    >
+      Related links
+    </Text>
+  </View>
   <View
     accessibilityComponentType={undefined}
     accessibilityLabel={undefined}
@@ -349,10 +364,7 @@ exports[`RelatedArticles test on android renders single default related article 
   }
   template="DEFAULT"
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+  <View
     style={
       Object {
         "borderBottomColor": "#dbdbdb",
@@ -360,6 +372,7 @@ exports[`RelatedArticles test on android renders single default related article 
         "borderStyle": "solid",
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 0.5,
+<<<<<<< HEAD
         "color": "#333",
         "fontFamily": "TimesModern-Regular",
         "fontSize": 25,
@@ -367,11 +380,28 @@ exports[`RelatedArticles test on android renders single default related article 
         "paddingBottom": 15,
         "paddingTop": 10,
         "textAlign": "center",
+=======
+>>>>>>> fix: fix heading font and keylines in ios
       }
     }
   >
-    Related links
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 26,
+          "lineHeight": 45,
+          "textAlign": "center",
+        }
+      }
+    >
+      Related links
+    </Text>
+  </View>
   <View
     accessibilityComponentType={undefined}
     accessibilityLabel={undefined}
@@ -644,10 +674,7 @@ exports[`RelatedArticles test on android renders single default related article 
   }
   template="DEFAULT"
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+  <View
     style={
       Object {
         "borderBottomColor": "#dbdbdb",
@@ -655,6 +682,7 @@ exports[`RelatedArticles test on android renders single default related article 
         "borderStyle": "solid",
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 0.5,
+<<<<<<< HEAD
         "color": "#333",
         "fontFamily": "TimesModern-Regular",
         "fontSize": 25,
@@ -662,11 +690,28 @@ exports[`RelatedArticles test on android renders single default related article 
         "paddingBottom": 15,
         "paddingTop": 10,
         "textAlign": "center",
+=======
+>>>>>>> fix: fix heading font and keylines in ios
       }
     }
   >
-    Related links
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 26,
+          "lineHeight": 45,
+          "textAlign": "center",
+        }
+      }
+    >
+      Related links
+    </Text>
+  </View>
   <View
     accessibilityComponentType={undefined}
     accessibilityLabel={undefined}
@@ -945,10 +990,7 @@ exports[`RelatedArticles test on android renders single default related article 
   }
   template="DEFAULT"
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+  <View
     style={
       Object {
         "borderBottomColor": "#dbdbdb",
@@ -956,6 +998,7 @@ exports[`RelatedArticles test on android renders single default related article 
         "borderStyle": "solid",
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 0.5,
+<<<<<<< HEAD
         "color": "#333",
         "fontFamily": "TimesModern-Regular",
         "fontSize": 25,
@@ -963,11 +1006,28 @@ exports[`RelatedArticles test on android renders single default related article 
         "paddingBottom": 15,
         "paddingTop": 10,
         "textAlign": "center",
+=======
+>>>>>>> fix: fix heading font and keylines in ios
       }
     }
   >
-    Related links
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 26,
+          "lineHeight": 45,
+          "textAlign": "center",
+        }
+      }
+    >
+      Related links
+    </Text>
+  </View>
   <View
     accessibilityComponentType={undefined}
     accessibilityLabel={undefined}

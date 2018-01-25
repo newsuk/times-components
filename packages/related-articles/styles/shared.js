@@ -6,19 +6,19 @@ const sharedStyle = {
     paddingLeft: 10,
     paddingRight: 10
   },
-  title: {
+  titleContainer: {
     borderStyle: "solid",
     borderBottomColor: "#dbdbdb",
     borderBottomWidth: StyleSheet.hairlineWidth,
     borderTopColor: "#dbdbdb",
-    borderTopWidth: StyleSheet.hairlineWidth,
-    fontFamily: "TimesModern-Regular",
-    fontSize: 25,
-    fontWeight: "bold",
+    borderTopWidth: StyleSheet.hairlineWidth
+  },
+  title: {
+    fontFamily: "TimesModern-Bold",
+    fontSize: 26,
     textAlign: "center",
     color: "#333",
-    paddingTop: 10,
-    paddingBottom: 15
+    lineHeight: 45
   },
   cardContainer: {
     paddingBottom: 10,
