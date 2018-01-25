@@ -17,8 +17,8 @@ const sharedStyle = {
     fontWeight: "bold",
     textAlign: "center",
     color: "#333",
-    paddingTop: 11,
-    paddingBottom: 14
+    paddingTop: 10,
+    paddingBottom: 15
   },
   cardContainer: {
     paddingBottom: 10,
