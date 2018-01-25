@@ -31,7 +31,7 @@ const styles = {
     fontSize: 13,
     lineHeight: 15,
     fontFamily: "GillSansMTStd-Medium",
-    marginBottom: 10
+    marginBottom: 5
   }
 };
 

@@ -31,7 +31,8 @@ exports[`RelatedArticles test on android renders single default related article 
           "color": "#333",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 26,
-          "lineHeight": 45,
+          "height": 57,
+          "lineHeight": 59,
           "textAlign": "center",
         }
       }
@@ -237,7 +238,7 @@ exports[`RelatedArticles test on android renders single default related article 
                       "color": "#333333",
                       "fontFamily": "TimesModern-Bold",
                       "fontWeight": "400",
-                      "marginBottom": 6,
+                      "marginBottom": 5,
                     },
                     Object {
                       "fontSize": 22,
@@ -284,7 +285,7 @@ exports[`RelatedArticles test on android renders single default related article 
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
                     "lineHeight": 15,
-                    "marginBottom": 10,
+                    "marginBottom": 5,
                   }
                 }
                 testID="datePublication"
@@ -301,7 +302,7 @@ exports[`RelatedArticles test on android renders single default related article 
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
                     "lineHeight": 15,
-                    "marginBottom": 10,
+                    "marginBottom": 5,
                   }
                 }
               >
@@ -374,7 +375,8 @@ exports[`RelatedArticles test on android renders single default related article 
           "color": "#333",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 26,
-          "lineHeight": 45,
+          "height": 57,
+          "lineHeight": 59,
           "textAlign": "center",
         }
       }
@@ -580,7 +582,7 @@ exports[`RelatedArticles test on android renders single default related article 
                       "color": "#333333",
                       "fontFamily": "TimesModern-Bold",
                       "fontWeight": "400",
-                      "marginBottom": 6,
+                      "marginBottom": 5,
                     },
                     Object {
                       "fontSize": 22,
@@ -627,7 +629,7 @@ exports[`RelatedArticles test on android renders single default related article 
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
                     "lineHeight": 15,
-                    "marginBottom": 10,
+                    "marginBottom": 5,
                   }
                 }
                 testID="datePublication"
@@ -674,7 +676,8 @@ exports[`RelatedArticles test on android renders single default related article 
           "color": "#333",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 26,
-          "lineHeight": 45,
+          "height": 57,
+          "lineHeight": 59,
           "textAlign": "center",
         }
       }
@@ -864,7 +867,7 @@ exports[`RelatedArticles test on android renders single default related article 
                       "color": "#333333",
                       "fontFamily": "TimesModern-Bold",
                       "fontWeight": "400",
-                      "marginBottom": 6,
+                      "marginBottom": 5,
                     },
                     Object {
                       "fontSize": 22,
@@ -911,7 +914,7 @@ exports[`RelatedArticles test on android renders single default related article 
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
                     "lineHeight": 15,
-                    "marginBottom": 10,
+                    "marginBottom": 5,
                   }
                 }
                 testID="datePublication"
@@ -928,7 +931,7 @@ exports[`RelatedArticles test on android renders single default related article 
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
                     "lineHeight": 15,
-                    "marginBottom": 10,
+                    "marginBottom": 5,
                   }
                 }
               >
@@ -980,7 +983,8 @@ exports[`RelatedArticles test on android renders single default related article 
           "color": "#333",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 26,
-          "lineHeight": 45,
+          "height": 57,
+          "lineHeight": 59,
           "textAlign": "center",
         }
       }
@@ -1054,7 +1058,7 @@ exports[`RelatedArticles test on android renders single default related article 
                       "color": "#333333",
                       "fontFamily": "TimesModern-Bold",
                       "fontWeight": "400",
-                      "marginBottom": 6,
+                      "marginBottom": 5,
                     },
                     Object {
                       "fontSize": 22,
@@ -1101,7 +1105,7 @@ exports[`RelatedArticles test on android renders single default related article 
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
                     "lineHeight": 15,
-                    "marginBottom": 10,
+                    "marginBottom": 5,
                   }
                 }
                 testID="datePublication"
@@ -1118,7 +1122,7 @@ exports[`RelatedArticles test on android renders single default related article 
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
                     "lineHeight": 15,
-                    "marginBottom": 10,
+                    "marginBottom": 5,
                   }
                 }
               >

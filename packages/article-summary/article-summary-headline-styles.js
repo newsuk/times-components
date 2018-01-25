@@ -1,7 +1,7 @@
 export default {
   headline: {
     color: "#333333",
-    marginBottom: 6,
+    marginBottom: 5,
     fontFamily: "TimesModern-Bold",
     fontWeight: "400"
   },

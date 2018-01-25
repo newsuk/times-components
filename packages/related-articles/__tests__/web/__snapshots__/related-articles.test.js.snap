@@ -9,7 +9,7 @@ exports[`RelatedArticles test on web renders single default related article 1`] 
     className="rn-alignItems-1oszu61 rn-borderBottomColor-1pqs39m rn-borderBottomWidth-qklmqi rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopColor-1h66y5d rn-borderTopWidth-5kkj8d rn-borderRightWidth-fnigne rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
   >
     <div
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-iirzy8 rn-fontSize-yy2aun rn-lineHeight-1shqoa5 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-iirzy8 rn-fontSize-yy2aun rn-height-chkelg rn-lineHeight-1q7w8jc rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
       dir="auto"
     >
       Related links
@@ -99,7 +99,7 @@ exports[`RelatedArticles test on web renders single default related article 1`] 
                   BAYEUX TAPESTRY
                 </div>
                 <div
-                  className="sc-EHOje cpWGfn rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+                  className="sc-EHOje kSaiSk rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
                   dir="auto"
                 >
                   <span
@@ -108,7 +108,7 @@ exports[`RelatedArticles test on web renders single default related article 1`] 
                     style={
                       Object {
                         "fontWeight": "400",
-                        "marginBottom": "6px",
+                        "marginBottom": "5px",
                       }
                     }
                   >
@@ -141,25 +141,27 @@ exports[`RelatedArticles test on web renders single default related article 1`] 
                 </div>
                 <div
                   aria-label="datePublication"
-                  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+                  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
                   data-testid="datePublication"
                   dir="auto"
                   style={
                     Object {
                       "color": "rgba(105,105,105,1)",
                       "lineHeight": "15px",
+                      "marginBottom": "5px",
                     }
                   }
                 >
                   Friday March 13 2015, 06:54pm
                 </div>
                 <div
-                  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+                  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
                   dir="auto"
                   style={
                     Object {
                       "color": "rgba(105,105,105,1)",
                       "lineHeight": "15px",
+                      "marginBottom": "5px",
                     }
                   }
                 >
@@ -196,7 +198,7 @@ exports[`RelatedArticles test on web renders single default related article with
     className="rn-alignItems-1oszu61 rn-borderBottomColor-1pqs39m rn-borderBottomWidth-qklmqi rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopColor-1h66y5d rn-borderTopWidth-5kkj8d rn-borderRightWidth-fnigne rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
   >
     <div
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-iirzy8 rn-fontSize-yy2aun rn-lineHeight-1shqoa5 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-iirzy8 rn-fontSize-yy2aun rn-height-chkelg rn-lineHeight-1q7w8jc rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
       dir="auto"
     >
       Related links
@@ -286,7 +288,7 @@ exports[`RelatedArticles test on web renders single default related article with
                   BAYEUX TAPESTRY
                 </div>
                 <div
-                  className="sc-EHOje cpWGfn rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+                  className="sc-EHOje kSaiSk rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
                   dir="auto"
                 >
                   <span
@@ -295,7 +297,7 @@ exports[`RelatedArticles test on web renders single default related article with
                     style={
                       Object {
                         "fontWeight": "400",
-                        "marginBottom": "6px",
+                        "marginBottom": "5px",
                       }
                     }
                   >
@@ -328,13 +330,14 @@ exports[`RelatedArticles test on web renders single default related article with
                 </div>
                 <div
                   aria-label="datePublication"
-                  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+                  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
                   data-testid="datePublication"
                   dir="auto"
                   style={
                     Object {
                       "color": "rgba(105,105,105,1)",
                       "lineHeight": "15px",
+                      "marginBottom": "5px",
                     }
                   }
                 >
@@ -359,7 +362,7 @@ exports[`RelatedArticles test on web renders single default related article with
     className="rn-alignItems-1oszu61 rn-borderBottomColor-1pqs39m rn-borderBottomWidth-qklmqi rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopColor-1h66y5d rn-borderTopWidth-5kkj8d rn-borderRightWidth-fnigne rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
   >
     <div
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-iirzy8 rn-fontSize-yy2aun rn-lineHeight-1shqoa5 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-iirzy8 rn-fontSize-yy2aun rn-height-chkelg rn-lineHeight-1q7w8jc rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
       dir="auto"
     >
       Related links
@@ -436,7 +439,7 @@ exports[`RelatedArticles test on web renders single default related article with
                 className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
               >
                 <div
-                  className="sc-EHOje cpWGfn rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+                  className="sc-EHOje kSaiSk rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
                   dir="auto"
                 >
                   <span
@@ -445,7 +448,7 @@ exports[`RelatedArticles test on web renders single default related article with
                     style={
                       Object {
                         "fontWeight": "400",
-                        "marginBottom": "6px",
+                        "marginBottom": "5px",
                       }
                     }
                   >
@@ -478,25 +481,27 @@ exports[`RelatedArticles test on web renders single default related article with
                 </div>
                 <div
                   aria-label="datePublication"
-                  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+                  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
                   data-testid="datePublication"
                   dir="auto"
                   style={
                     Object {
                       "color": "rgba(105,105,105,1)",
                       "lineHeight": "15px",
+                      "marginBottom": "5px",
                     }
                   }
                 >
                   Friday March 13 2015, 06:54pm
                 </div>
                 <div
-                  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+                  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
                   dir="auto"
                   style={
                     Object {
                       "color": "rgba(105,105,105,1)",
                       "lineHeight": "15px",
+                      "marginBottom": "5px",
                     }
                   }
                 >
@@ -523,7 +528,7 @@ exports[`RelatedArticles test on web renders single default related article with
     className="rn-alignItems-1oszu61 rn-borderBottomColor-1pqs39m rn-borderBottomWidth-qklmqi rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopColor-1h66y5d rn-borderTopWidth-5kkj8d rn-borderRightWidth-fnigne rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
   >
     <div
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-iirzy8 rn-fontSize-yy2aun rn-lineHeight-1shqoa5 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-iirzy8 rn-fontSize-yy2aun rn-height-chkelg rn-lineHeight-1q7w8jc rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
       dir="auto"
     >
       Related links
@@ -570,7 +575,7 @@ exports[`RelatedArticles test on web renders single default related article with
                   BAYEUX TAPESTRY
                 </div>
                 <div
-                  className="sc-EHOje cpWGfn rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+                  className="sc-EHOje kSaiSk rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
                   dir="auto"
                 >
                   <span
@@ -579,7 +584,7 @@ exports[`RelatedArticles test on web renders single default related article with
                     style={
                       Object {
                         "fontWeight": "400",
-                        "marginBottom": "6px",
+                        "marginBottom": "5px",
                       }
                     }
                   >
@@ -612,25 +617,27 @@ exports[`RelatedArticles test on web renders single default related article with
                 </div>
                 <div
                   aria-label="datePublication"
-                  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+                  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
                   data-testid="datePublication"
                   dir="auto"
                   style={
                     Object {
                       "color": "rgba(105,105,105,1)",
                       "lineHeight": "15px",
+                      "marginBottom": "5px",
                     }
                   }
                 >
                   Friday March 13 2015, 06:54pm
                 </div>
                 <div
-                  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+                  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
                   dir="auto"
                   style={
                     Object {
                       "color": "rgba(105,105,105,1)",
                       "lineHeight": "15px",
+                      "marginBottom": "5px",
                     }
                   }
                 >
