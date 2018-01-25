@@ -26,8 +26,8 @@ exports[`RelatedArticles test on ios renders single default related article 1`] 
         "fontFamily": "TimesModern-Regular",
         "fontSize": 25,
         "fontWeight": "bold",
-        "paddingBottom": 14,
-        "paddingTop": 11,
+        "paddingBottom": 15,
+        "paddingTop": 10,
         "textAlign": "center",
       }
     }
@@ -333,8 +333,8 @@ exports[`RelatedArticles test on ios renders single default related article with
         "fontFamily": "TimesModern-Regular",
         "fontSize": 25,
         "fontWeight": "bold",
-        "paddingBottom": 14,
-        "paddingTop": 11,
+        "paddingBottom": 15,
+        "paddingTop": 10,
         "textAlign": "center",
       }
     }
@@ -597,8 +597,8 @@ exports[`RelatedArticles test on ios renders single default related article with
         "fontFamily": "TimesModern-Regular",
         "fontSize": 25,
         "fontWeight": "bold",
-        "paddingBottom": 14,
-        "paddingTop": 11,
+        "paddingBottom": 15,
+        "paddingTop": 10,
         "textAlign": "center",
       }
     }
@@ -867,8 +867,8 @@ exports[`RelatedArticles test on ios renders single default related article with
         "fontFamily": "TimesModern-Regular",
         "fontSize": 25,
         "fontWeight": "bold",
-        "paddingBottom": 14,
-        "paddingTop": 11,
+        "paddingBottom": 15,
+        "paddingTop": 10,
         "textAlign": "center",
       }
     }

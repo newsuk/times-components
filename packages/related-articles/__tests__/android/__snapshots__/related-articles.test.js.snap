@@ -26,8 +26,8 @@ exports[`RelatedArticles test on android renders single default related article 
         "fontFamily": "TimesModern-Regular",
         "fontSize": 25,
         "fontWeight": "bold",
-        "paddingBottom": 14,
-        "paddingTop": 11,
+        "paddingBottom": 15,
+        "paddingTop": 10,
         "textAlign": "center",
       }
     }
@@ -364,8 +364,8 @@ exports[`RelatedArticles test on android renders single default related article 
         "fontFamily": "TimesModern-Regular",
         "fontSize": 25,
         "fontWeight": "bold",
-        "paddingBottom": 14,
-        "paddingTop": 11,
+        "paddingBottom": 15,
+        "paddingTop": 10,
         "textAlign": "center",
       }
     }
@@ -659,8 +659,8 @@ exports[`RelatedArticles test on android renders single default related article 
         "fontFamily": "TimesModern-Regular",
         "fontSize": 25,
         "fontWeight": "bold",
-        "paddingBottom": 14,
-        "paddingTop": 11,
+        "paddingBottom": 15,
+        "paddingTop": 10,
         "textAlign": "center",
       }
     }
@@ -960,8 +960,8 @@ exports[`RelatedArticles test on android renders single default related article 
         "fontFamily": "TimesModern-Regular",
         "fontSize": 25,
         "fontWeight": "bold",
-        "paddingBottom": 14,
-        "paddingTop": 11,
+        "paddingBottom": 15,
+        "paddingTop": 10,
         "textAlign": "center",
       }
     }
