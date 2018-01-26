@@ -4232,7 +4232,7 @@ exports[`renders profile error 1`] = `
         "alignSelf": "center",
         "marginBottom": 20,
         "marginTop": 20,
-        "width": "90%",
+        "width": "60%",
       }
     }
   >
