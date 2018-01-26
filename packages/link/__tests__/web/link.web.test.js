@@ -1,5 +1,6 @@
 import React from "react";
 import { mount } from "enzyme";
+import "jest-styled-components";
 import test from "../shared";
 import Link, { TextLink } from "../../link";
 
@@ -30,7 +31,7 @@ describe("Link tests on Web", () => {
       </Link>
     );
 
-    expect(component).toMatchSnapshot();
+    expect(component.render()).toMatchSnapshot();
   });
 
   test(Link, TextLink, "p");

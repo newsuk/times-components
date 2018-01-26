@@ -81,49 +81,27 @@ exports[`Link tests on Web TextLink renders correctly with specific styles 1`] =
 `;
 
 exports[`Link tests on Web renders with responsive styles 1`] = `
-<Link
-  index="0"
-  onPress={[Function]}
-  responsiveLinkStyles={
-    Object {
-      "base": "
-      color: #069;
-      font-family: \\"TimesDigitalW04-Regular\\";
-      line-height: 26px;
-      font-size: 17px;
-      margin-bottom: 25px;
-      margin-top: 0;
-  ",
-      "medium": "
-      font-size: 18px;
-      line-height: 30px;
-  ",
-    }
+.c0 {
+  color: #069;
+  font-family: "TimesDigitalW04-Regular";
+  line-height: 26px;
+  font-size: 17px;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-size: 18px;
+    line-height: 30px;
   }
-  url="http://thetimes.co.uk"
+}
+
+<a
+  class="c0"
+  href="http://thetimes.co.uk"
+  style="text-decoration: underline;"
 >
-  <styled.a
-    href="http://thetimes.co.uk"
-    key="0"
-    onClick={[Function]}
-    style={
-      Object {
-        "textDecoration": "underline",
-      }
-    }
-  >
-    <a
-      className="sc-bdVaJa CkrWH"
-      href="http://thetimes.co.uk"
-      onClick={[Function]}
-      style={
-        Object {
-          "textDecoration": "underline",
-        }
-      }
-    >
-      The Times
-    </a>
-  </styled.a>
-</Link>
+  The Times
+</a>
 `;
