@@ -1,10 +1,7 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import Enzyme, { shallow } from "enzyme";
-import React16Adapter from "enzyme-adapter-react-16";
-
-Enzyme.configure({ adapter: new React16Adapter() });
+import { shallow } from "enzyme";
 
 export default Pagination => () => {
   it("renders correctly", () => {

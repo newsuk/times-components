@@ -1,0 +1,296 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article Flag test on ios renders Exclusive flag correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "marginBottom": 1,
+        "marginRight": 5,
+      }
+    }
+  >
+    <svg
+      height={8}
+      style={Object {}}
+      viewBox="0 0 20 20"
+      width={8}
+    >
+      <g
+        fill="#C51D24"
+        style={Object {}}
+      >
+        <path
+          d="M 0,10 10,20 20,10 10,0 Z"
+          style={Object {}}
+        />
+      </g>
+    </svg>
+  </View>
+  <Text
+    accessibilityLabel="flag-exclusive"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.4,
+        },
+        Object {
+          "color": "#C51D24",
+        },
+      ]
+    }
+    testID="flag-exclusive"
+  >
+    exclusive
+  </Text>
+</View>
+`;
+
+exports[`Article Flag test on ios renders New flag correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "marginBottom": 1,
+        "marginRight": 5,
+      }
+    }
+  >
+    <svg
+      height={8}
+      style={Object {}}
+      viewBox="0 0 20 20"
+      width={8}
+    >
+      <g
+        fill="#E34605"
+        style={Object {}}
+      >
+        <path
+          d="M 0,10 10,20 20,10 10,0 Z"
+          style={Object {}}
+        />
+      </g>
+    </svg>
+  </View>
+  <Text
+    accessibilityLabel="flag-new"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.4,
+        },
+        Object {
+          "color": "#E34605",
+        },
+      ]
+    }
+    testID="flag-new"
+  >
+    new
+  </Text>
+</View>
+`;
+
+exports[`Article Flag test on ios renders Sponsored flag correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "marginBottom": 1,
+        "marginRight": 5,
+      }
+    }
+  >
+    <svg
+      height={8}
+      style={Object {}}
+      viewBox="0 0 20 20"
+      width={8}
+    >
+      <g
+        fill="#4D4D4D"
+        style={Object {}}
+      >
+        <path
+          d="M 0,10 10,20 20,10 10,0 Z"
+          style={Object {}}
+        />
+      </g>
+    </svg>
+  </View>
+  <Text
+    accessibilityLabel="flag-sponsored"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.4,
+        },
+        Object {
+          "color": "#4D4D4D",
+        },
+      ]
+    }
+    testID="flag-sponsored"
+  >
+    sponsored
+  </Text>
+</View>
+`;
+
+exports[`Article Flag test on ios renders Updated flag correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "marginBottom": 1,
+        "marginRight": 5,
+      }
+    }
+  >
+    <svg
+      height={8}
+      style={Object {}}
+      viewBox="0 0 20 20"
+      width={8}
+    >
+      <g
+        fill="#3C81BE"
+        style={Object {}}
+      >
+        <path
+          d="M 0,10 10,20 20,10 10,0 Z"
+          style={Object {}}
+        />
+      </g>
+    </svg>
+  </View>
+  <Text
+    accessibilityLabel="flag-updated"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.4,
+        },
+        Object {
+          "color": "#3C81BE",
+        },
+      ]
+    }
+    testID="flag-updated"
+  >
+    updated
+  </Text>
+</View>
+`;
+
+exports[`Article Flag test on ios renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "marginBottom": 1,
+        "marginRight": 5,
+      }
+    }
+  >
+    <svg
+      height={8}
+      style={Object {}}
+      viewBox="0 0 20 20"
+      width={8}
+    >
+      <g
+        fill="black"
+        style={Object {}}
+      >
+        <path
+          d="M 0,10 10,20 20,10 10,0 Z"
+          style={Object {}}
+        />
+      </g>
+    </svg>
+  </View>
+  <Text
+    accessibilityLabel="flag-articleFlag"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.4,
+        },
+        Object {
+          "color": "black",
+        },
+      ]
+    }
+    testID="flag-articleFlag"
+  >
+    articleflag
+  </Text>
+</View>
+`;

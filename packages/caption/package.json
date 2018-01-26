@@ -4,27 +4,16 @@
   "description": "Media caption component",
   "main": "caption",
   "scripts": {
-    "test:watch": "jest --bail --verbose --watchAll",
-    "test": "jest --bail --ci --coverage",
+    "test:android": "jest --config='./__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test": "yarn test:android --ci --bail --coverage && yarn test:ios --ci --bail --coverage && yarn test:web --ci --bail --coverage",
+    "test:watch": "jest --projects */**/jest.config.js --watchAll",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "dextrose-stories": "dextrose-stories",
     "dextrose-clean": "dextrose-clean"
-  },
-  "jest": {
-    "preset": "react-native",
-    "rootDir": "../../",
-    "coverageDirectory": "<rootDir>/packages/caption/coverage/",
-    "collectCoverageFrom": [
-      "**/packages/caption/caption.js"
-    ],
-    "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|@times-components)/)"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/caption/__tests__/**.test.js"
-    ]
   },
   "repository": {
     "type": "git",
@@ -50,6 +39,7 @@
     "@storybook/react-native": "3.3.9",
     "@times-components/eslint-config-thetimes": "0.1.2",
     "@times-components/image": "1.13.1",
+    "@times-components/jest-configurator": "0.0.21",
     "dextrose": "1.3.2",
     "eslint": "4.9.0",
     "jest": "21.2.1",
