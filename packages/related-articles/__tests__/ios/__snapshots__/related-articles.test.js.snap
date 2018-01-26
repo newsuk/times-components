@@ -14,11 +14,15 @@ exports[`RelatedArticles test on ios renders single default related article 1`] 
   <View
     style={
       Object {
+        "alignItems": "center",
         "borderBottomColor": "#dbdbdb",
         "borderBottomWidth": 0.5,
         "borderStyle": "solid",
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 0.5,
+        "display": "flex",
+        "height": 57,
+        "justifyContent": "center",
       }
     }
   >
@@ -31,11 +35,9 @@ exports[`RelatedArticles test on ios renders single default related article 1`] 
           "color": "#333",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 26,
-          "height": 57,
-          "lineHeight": 59,
-          "textAlign": "center",
         }
       }
+      textAlignVertical="center"
     >
       Related links
     </Text>
@@ -327,11 +329,15 @@ exports[`RelatedArticles test on ios renders single default related article with
   <View
     style={
       Object {
+        "alignItems": "center",
         "borderBottomColor": "#dbdbdb",
         "borderBottomWidth": 0.5,
         "borderStyle": "solid",
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 0.5,
+        "display": "flex",
+        "height": 57,
+        "justifyContent": "center",
       }
     }
   >
@@ -344,11 +350,9 @@ exports[`RelatedArticles test on ios renders single default related article with
           "color": "#333",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 26,
-          "height": 57,
-          "lineHeight": 59,
-          "textAlign": "center",
         }
       }
+      textAlignVertical="center"
     >
       Related links
     </Text>
@@ -597,11 +601,15 @@ exports[`RelatedArticles test on ios renders single default related article with
   <View
     style={
       Object {
+        "alignItems": "center",
         "borderBottomColor": "#dbdbdb",
         "borderBottomWidth": 0.5,
         "borderStyle": "solid",
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 0.5,
+        "display": "flex",
+        "height": 57,
+        "justifyContent": "center",
       }
     }
   >
@@ -614,11 +622,9 @@ exports[`RelatedArticles test on ios renders single default related article with
           "color": "#333",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 26,
-          "height": 57,
-          "lineHeight": 59,
-          "textAlign": "center",
         }
       }
+      textAlignVertical="center"
     >
       Related links
     </Text>
@@ -873,11 +879,15 @@ exports[`RelatedArticles test on ios renders single default related article with
   <View
     style={
       Object {
+        "alignItems": "center",
         "borderBottomColor": "#dbdbdb",
         "borderBottomWidth": 0.5,
         "borderStyle": "solid",
         "borderTopColor": "#dbdbdb",
         "borderTopWidth": 0.5,
+        "display": "flex",
+        "height": 57,
+        "justifyContent": "center",
       }
     }
   >
@@ -890,11 +900,9 @@ exports[`RelatedArticles test on ios renders single default related article with
           "color": "#333",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 26,
-          "height": 57,
-          "lineHeight": 59,
-          "textAlign": "center",
         }
       }
+      textAlignVertical="center"
     >
       Related links
     </Text>

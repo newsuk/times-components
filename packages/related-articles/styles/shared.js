@@ -11,15 +11,16 @@ const sharedStyle = {
     borderBottomColor: "#dbdbdb",
     borderBottomWidth: StyleSheet.hairlineWidth,
     borderTopColor: "#dbdbdb",
-    borderTopWidth: StyleSheet.hairlineWidth
+    borderTopWidth: StyleSheet.hairlineWidth,
+    height: 57,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
   },
   title: {
     fontFamily: "TimesModern-Bold",
     fontSize: 26,
-    textAlign: "center",
-    color: "#333",
-    lineHeight: 59,
-    height: 57
+    color: "#333"
   },
   cardContainer: {
     paddingBottom: 10,
