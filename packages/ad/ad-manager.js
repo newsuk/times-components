@@ -1,3 +1,8 @@
+/* global window, nuk */
+import { isSubscriber } from "@times-components/utils/is-subscriber";
+import { cookieHelper } from "@times-components/utils/cookie-helper";
+import localStorage from "store";
+
 const removeItemFromQueue = (queue, itemId) => {
   const obj = Object.assign([], queue);
   const objIds = obj.map(item => item.id);
@@ -11,15 +16,19 @@ class AdManager {
     this.adUnit = options.adUnit;
     this.networkId = options.networkId;
     this.section = options.section;
+    this.adConfig = options.adConfig;
     this.gptManager = options.gptManager;
     this.pbjsManager = options.pbjsManager;
     this.initialised = false;
   }
 
-  init(pageOptions) {
+  init() {
     // Load scripts if needed be
     this.gptManager.loadScript();
     this.pbjsManager.loadScript();
+
+    const pageOptions = this.setPageLevelConfig(this.adConfig);
+
     return this.gptManager
       .setConfig(pageOptions)
       .then(this.pbjsManager.setConfig.bind(this.pbjsManager))
@@ -32,6 +41,42 @@ class AdManager {
           this.pushAdToGPT(ad.code, ad.mappings);
         });
       });
+  }
+
+  setPageLevelConfig(adConfig) {
+    return {
+      edition_id: window.nuk ? nuk.ads.editionDate : null,
+      e_uuid: window.nuk ? nuk.ads.editionId : null,
+      search: "null",
+      share_token: "null",
+      shared: "0",
+      cont: adConfig.contentType,
+      aid: adConfig.id,
+      kw: `${adConfig.title} ${adConfig.label} ${
+        adConfig.commercialtags
+      }`.split(" "),
+      pw: "1",
+      teaser: window.nuk
+        ? !nuk.user.isLoggedIn || nuk.user.isMeteredExpired
+        : "0",
+      log: window.nuk ? this.isLoggedIn() : "0",
+      subscriber: window.nuk ? this.getSubscriber() : "0",
+      kuid: localStorage.get("kxkuid"),
+      ksg: localStorage.get("kxsegs"),
+      ppid: cookieHelper.getCpnId() || "null",
+      eid: cookieHelper.getCpnId() || "null",
+      om_v_id: cookieHelper.getVistorId() || "null",
+      cips: cookieHelper.getCips() || "null",
+      refresh: "false"
+    };
+  }
+
+  getSubscriber() {
+    return isSubscriber() ? "1" : "0";
+  }
+
+  isLoggedIn() {
+    return nuk.user.isLoggedIn ? "1" : "0";
   }
 
   registerAd(slot) {
