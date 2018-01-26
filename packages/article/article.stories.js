@@ -3,7 +3,7 @@ import { storiesOf } from "dextrose/storiesOfOverloader";
 import React from "react";
 import { Platform } from "react-native";
 
-import { ArticleProvider } from "@times-components/provider";
+import { ArticleProvider, ArticleRelatedProvider} from "@times-components/provider";
 import { MockedProvider } from "@times-components/utils/graphql";
 import { addTypenameToDocument } from "apollo-utilities";
 import { query as articleQuery } from "@times-components/provider/article";
@@ -103,7 +103,7 @@ storiesOf("Article", module)
   ))
   .add("With Related Articles Provider", () => (
     <MockedProvider mocks={mocks2}>
-      <ArticleProvider
+      <ArticleRelatedProvider
         id="113e9875-b7bf-4dd7-ac99-dee231bf6e74"
         debounceTimeMs={0}
       >
@@ -115,7 +115,7 @@ storiesOf("Article", module)
             analyticsStream={storybookReporter}
           />
         )}
-      </ArticleProvider>
+      </ArticleRelatedProvider>
     </MockedProvider>
   ))
   .add("Fixtures - Full", () => {
