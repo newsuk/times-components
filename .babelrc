@@ -1,4 +1,3 @@
 {
-  "presets": ["react-native"],
-  "plugins": ["flow-react-proptypes"]
+  "presets": ["react-native"]
 }
