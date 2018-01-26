@@ -566,7 +566,7 @@ exports[`renders profile 1`] = `
                     },
                     false,
                     Object {
-                      "borderBottomColor": "#dbdbdb",
+                      "borderBottomColor": "#DBDBDB",
                       "borderBottomWidth": 1,
                     },
                   ]
@@ -966,7 +966,7 @@ exports[`renders profile 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -1283,7 +1283,7 @@ exports[`renders profile 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -1631,11 +1631,11 @@ exports[`renders profile 1`] = `
                     "justifyContent": "space-between",
                   },
                   Object {
-                    "borderTopColor": "#dbdbdb",
+                    "borderTopColor": "#DBDBDB",
                     "borderTopWidth": 1,
                   },
                   Object {
-                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomColor": "#DBDBDB",
                     "borderBottomWidth": 1,
                   },
                 ]
@@ -2163,7 +2163,7 @@ exports[`renders profile content component 1`] = `
                     },
                     false,
                     Object {
-                      "borderBottomColor": "#dbdbdb",
+                      "borderBottomColor": "#DBDBDB",
                       "borderBottomWidth": 1,
                     },
                   ]
@@ -2421,7 +2421,7 @@ exports[`renders profile content component 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -2672,7 +2672,7 @@ exports[`renders profile content component 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -2954,11 +2954,11 @@ exports[`renders profile content component 1`] = `
                     "justifyContent": "space-between",
                   },
                   Object {
-                    "borderTopColor": "#dbdbdb",
+                    "borderTopColor": "#DBDBDB",
                     "borderTopWidth": 1,
                   },
                   Object {
-                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomColor": "#DBDBDB",
                     "borderBottomWidth": 1,
                   },
                 ]
@@ -3216,7 +3216,7 @@ exports[`renders profile content empty 1`] = `
                     },
                     false,
                     Object {
-                      "borderBottomColor": "#dbdbdb",
+                      "borderBottomColor": "#DBDBDB",
                       "borderBottomWidth": 1,
                     },
                   ]
@@ -3271,11 +3271,11 @@ exports[`renders profile content empty 1`] = `
                     "justifyContent": "space-between",
                   },
                   Object {
-                    "borderTopColor": "#dbdbdb",
+                    "borderTopColor": "#DBDBDB",
                     "borderTopWidth": 1,
                   },
                   Object {
-                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomColor": "#DBDBDB",
                     "borderBottomWidth": 1,
                   },
                 ]
@@ -3895,7 +3895,7 @@ exports[`renders profile content loading 1`] = `
                     },
                     false,
                     Object {
-                      "borderBottomColor": "#dbdbdb",
+                      "borderBottomColor": "#DBDBDB",
                       "borderBottomWidth": 1,
                     },
                   ]
@@ -4250,11 +4250,11 @@ exports[`renders profile content loading 1`] = `
                     "justifyContent": "space-between",
                   },
                   Object {
-                    "borderTopColor": "#dbdbdb",
+                    "borderTopColor": "#DBDBDB",
                     "borderTopWidth": 1,
                   },
                   Object {
-                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomColor": "#DBDBDB",
                     "borderBottomWidth": 1,
                   },
                 ]
@@ -4620,7 +4620,7 @@ exports[`renders profile loading 1`] = `
                     },
                     false,
                     Object {
-                      "borderBottomColor": "#dbdbdb",
+                      "borderBottomColor": "#DBDBDB",
                       "borderBottomWidth": 1,
                     },
                   ]
@@ -4944,7 +4944,7 @@ exports[`renders profile loading 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -5261,7 +5261,7 @@ exports[`renders profile loading 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -5609,11 +5609,11 @@ exports[`renders profile loading 1`] = `
                     "justifyContent": "space-between",
                   },
                   Object {
-                    "borderTopColor": "#dbdbdb",
+                    "borderTopColor": "#DBDBDB",
                     "borderTopWidth": 1,
                   },
                   Object {
-                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomColor": "#DBDBDB",
                     "borderBottomWidth": 1,
                   },
                 ]
@@ -5634,7 +5634,7 @@ exports[`renders profile separator 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "#dbdbdb",
+      "backgroundColor": "#DBDBDB",
       "height": 1,
     }
   }
@@ -6035,7 +6035,7 @@ exports[`renders with no author 1`] = `
                     },
                     false,
                     Object {
-                      "borderBottomColor": "#dbdbdb",
+                      "borderBottomColor": "#DBDBDB",
                       "borderBottomWidth": 1,
                     },
                   ]
@@ -6265,7 +6265,7 @@ exports[`renders with no author 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -6488,7 +6488,7 @@ exports[`renders with no author 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -6742,11 +6742,11 @@ exports[`renders with no author 1`] = `
                     "justifyContent": "space-between",
                   },
                   Object {
-                    "borderTopColor": "#dbdbdb",
+                    "borderTopColor": "#DBDBDB",
                     "borderTopWidth": 1,
                   },
                   Object {
-                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomColor": "#DBDBDB",
                     "borderBottomWidth": 1,
                   },
                 ]

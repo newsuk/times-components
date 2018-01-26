@@ -1,5 +1,5 @@
 import React from "react";
-import { Colours } from "@times-components/styleguide"
+import { Colours } from "@times-components/styleguide";
 import { Text, View, Button, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 
@@ -50,7 +50,7 @@ const AuthorProfileListingError = ({ refetch }) => (
       <Button
         onPress={refetch}
         title="Retry"
-        color=Colours.linkBlue
+        color={Colours.linkBlue}
         accessibilityLabel="Retry"
       />
     </View>

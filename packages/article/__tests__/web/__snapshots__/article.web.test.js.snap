@@ -75,7 +75,7 @@ exports[`Article test on web renders an error 1`] = `
 exports[`Article test on web renders article no flags 1`] = `
 .c7 {
   font-size: 30px;
-  color: #1d1d1b;
+  color: #1D1D1B;
   margin-bottom: 8px;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -853,7 +853,7 @@ exports[`Article test on web renders article no flags 1`] = `
 exports[`Article test on web renders article no label 1`] = `
 .c6 {
   font-size: 30px;
-  color: #1d1d1b;
+  color: #1D1D1B;
   margin-bottom: 8px;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -1709,7 +1709,7 @@ exports[`Article test on web renders article no label 1`] = `
 exports[`Article test on web renders article no label no flags 1`] = `
 .c6 {
   font-size: 30px;
-  color: #1d1d1b;
+  color: #1D1D1B;
   margin-bottom: 8px;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -2461,7 +2461,7 @@ exports[`Article test on web renders article no label no flags 1`] = `
 exports[`Article test on web renders article no label no flags no standfirst 1`] = `
 .c6 {
   font-size: 30px;
-  color: #1d1d1b;
+  color: #1D1D1B;
   margin-bottom: 8px;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -3205,7 +3205,7 @@ exports[`Article test on web renders article no label no flags no standfirst 1`]
 exports[`Article test on web renders article no standfirst 1`] = `
 .c7 {
   font-size: 30px;
-  color: #1d1d1b;
+  color: #1D1D1B;
   margin-bottom: 8px;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -4079,7 +4079,7 @@ exports[`Article test on web renders article no standfirst 1`] = `
 exports[`Article test on web renders article no standfirst no flags 1`] = `
 .c7 {
   font-size: 30px;
-  color: #1d1d1b;
+  color: #1D1D1B;
   margin-bottom: 8px;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -4849,7 +4849,7 @@ exports[`Article test on web renders article no standfirst no flags 1`] = `
 exports[`Article test on web renders article no standfirst no label 1`] = `
 .c6 {
   font-size: 30px;
-  color: #1d1d1b;
+  color: #1D1D1B;
   margin-bottom: 8px;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -5697,7 +5697,7 @@ exports[`Article test on web renders article no standfirst no label 1`] = `
 exports[`Article test on web renders article with no lead asset 1`] = `
 .c4 {
   font-size: 30px;
-  color: #1d1d1b;
+  color: #1D1D1B;
   margin-bottom: 8px;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -6797,7 +6797,7 @@ exports[`Article test on web renders article with no lead asset 1`] = `
 exports[`Article test on web renders full article 1`] = `
 .c7 {
   font-size: 30px;
-  color: #1d1d1b;
+  color: #1D1D1B;
   margin-bottom: 8px;
   font-family: "TimesModern-Bold";
   font-weight: 400;

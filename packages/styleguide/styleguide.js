@@ -1,74 +1,72 @@
-
 export const WeekendColours = {
-  money: "#006a74",
-  newsReview: "#004d6d",
-  travel: "#2c79ad",
-  home: "#8d724d",
+  money: "#006A74",
+  newsReview: "#004D6D",
+  travel: "#2C79AD",
+  home: "#8D724D",
   irishSport: "#01000D",
-  sundayTimesMagazine: "#1d1d1b",
-  style: "#bc3385",
-  culture: "#7b0046",
-  saturdayReview: "#a31d24",
-  weekend: "#05829a",
-  theTimesMagazine: "1d1d1b"
-}
+  sundayTimesMagazine: "#1D1D1B",
+  style: "#BC3385",
+  culture: "#7B0046",
+  saturdayReview: "#A31D24",
+  weekend: "#05829A",
+  theTimesMagazine: "#1D1D1D"
+};
 
 export const WeekdaysColours = {
-  default: "#1d1d1b",
-  news: "#13354e",
+  default: "#1D1D1B",
+  news: "#13354E",
   comment: "#850029",
-  world: "#636c17",
-  business: "#005b8d",
-  law: "#691d26",
-  register: "#6c6c69",
+  world: "#636C17",
+  business: "#005B8D",
+  law: "#691D26",
+  register: "#6C6C69",
   sport: "#008347",
-  ireland: "#004e45",
-  scotland: "#00233e",
-  puzzles: "#c74600",
-  leaders: "#f4f2e8",
-  defcon: "#ff1d25",
-  focus: "#c00",
+  ireland: "#004E45",
+  scotland: "#00233E",
+  puzzles: "#C74600",
+  leaders: "#F4f2e8",
+  defcon: "#FF1d25",
+  focus: "#CC0000",
   theGame: "#006469",
-  theDish: "#db133b",
+  theDish: "#DB133B",
   bricksMortar: "#006469",
-  techGames: "#1a1f24",
-  gardening: "#00313b",
-  driving: "#c04605",
+  techGames: "#1A1f24",
+  gardening: "#00313B",
+  driving: "#C04605",
   times2: "#622956",
   artsFeatures: "#622956",
-  todaysMagazines: "#1d1d1b",
-  timesMagazine: "#1d1d1b",
-  styleMagazine: "#bc3385",
-  cultureMagazine: "#7b0046"
-}
+  todaysMagazines: "#1D1D1B",
+  timesMagazine: "#1D1D1B",
+  styleMagazine: "#BC3385",
+  cultureMagazine: "#7B0046"
+};
 
 export const UIColours = {
-  timesBlack: "#1d1d1b",
+  timesBlack: "#1D1D1B",
   midGrey: "#696969",
   darkGrey: "#333333",
-  keylineGrey: "#dbdbdb",
+  keylineGrey: "#DBDBDB",
   linkBlue: "#006699",
-  notificationBlue: "#3c81be",
-  backgroundGrey: "#f9f9f9",
-  backgroundBuff: "#f9f8f3",
-  alertYellow: "#fcc435"
+  notificationBlue: "#3C81BE",
+  backgroundGrey: "#F9F9F9",
+  backgroundBuff: "#F9F8F3",
+  alertYellow: "#FCC435"
 };
 
 export const Colours = {
   ...WeekendColours,
   ...WeekdaysColours,
   ...UIColours
-}
+};
 
-
-// TODO: find usage patterns and propper names 
+// TODO: find usage patterns and propper names
 export const Fonts = {
   GillSans: "GillSansMTStd-Medium",
   timesDigitalRegularSc: "TimesDigitalW04-RegularSC",
   timesDigitalRegular: "TimesDigitalW04-Regular",
   timesDigital: "TimesDigitalW04",
   TimesModernBold: "TimesModern-Bold",
-  timesModern:"TimesModern-Regular"
+  timesModern: "TimesModern-Regular"
 };
 
 export const Spacing = {};

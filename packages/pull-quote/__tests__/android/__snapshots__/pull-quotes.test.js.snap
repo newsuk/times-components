@@ -24,7 +24,7 @@ exports[`PullQuotes test on android Pull Quotes with a Caption 1`] = `
           "marginTop": 0,
         },
         Object {
-          "color": "#13354e",
+          "color": "#13354E",
         },
       ]
     }
@@ -93,7 +93,7 @@ exports[`PullQuotes test on android Pull Quotes with a Caption and a Twitter 1`]
           "marginTop": 0,
         },
         Object {
-          "color": "#13354e",
+          "color": "#13354E",
         },
       ]
     }
@@ -185,7 +185,7 @@ exports[`PullQuotes test on android Pull Quotes without a Caption 1`] = `
           "marginTop": 0,
         },
         Object {
-          "color": "#13354e",
+          "color": "#13354E",
         },
       ]
     }

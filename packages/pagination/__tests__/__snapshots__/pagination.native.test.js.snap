@@ -49,11 +49,11 @@ exports[`Pagination Native renders correctly 1`] = `
           "justifyContent": "space-between",
         },
         Object {
-          "borderTopColor": "#dbdbdb",
+          "borderTopColor": "#DBDBDB",
           "borderTopWidth": 1,
         },
         Object {
-          "borderBottomColor": "#dbdbdb",
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
         },
       ]
@@ -190,11 +190,11 @@ exports[`Pagination Native renders next link 1`] = `
           "justifyContent": "space-between",
         },
         Object {
-          "borderTopColor": "#dbdbdb",
+          "borderTopColor": "#DBDBDB",
           "borderTopWidth": 1,
         },
         Object {
-          "borderBottomColor": "#dbdbdb",
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
         },
       ]
@@ -331,11 +331,11 @@ exports[`Pagination Native renders prev and next link 1`] = `
           "justifyContent": "space-between",
         },
         Object {
-          "borderTopColor": "#dbdbdb",
+          "borderTopColor": "#DBDBDB",
           "borderTopWidth": 1,
         },
         Object {
-          "borderBottomColor": "#dbdbdb",
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
         },
       ]
@@ -547,11 +547,11 @@ exports[`Pagination Native renders prev link 1`] = `
           "justifyContent": "space-between",
         },
         Object {
-          "borderTopColor": "#dbdbdb",
+          "borderTopColor": "#DBDBDB",
           "borderTopWidth": 1,
         },
         Object {
-          "borderBottomColor": "#dbdbdb",
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
         },
       ]
@@ -687,11 +687,11 @@ exports[`Pagination Native renders results message 1`] = `
           "justifyContent": "space-between",
         },
         Object {
-          "borderTopColor": "#dbdbdb",
+          "borderTopColor": "#DBDBDB",
           "borderTopWidth": 1,
         },
         Object {
-          "borderBottomColor": "#dbdbdb",
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
         },
       ]
@@ -828,7 +828,7 @@ exports[`Pagination Native renders with hidden bottomKeyline 1`] = `
           "justifyContent": "space-between",
         },
         Object {
-          "borderTopColor": "#dbdbdb",
+          "borderTopColor": "#DBDBDB",
           "borderTopWidth": 1,
         },
         false,
@@ -938,11 +938,11 @@ exports[`Pagination Native renders with hidden results 1`] = `
           "justifyContent": "space-between",
         },
         Object {
-          "borderTopColor": "#dbdbdb",
+          "borderTopColor": "#DBDBDB",
           "borderTopWidth": 1,
         },
         Object {
-          "borderBottomColor": "#dbdbdb",
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
         },
       ]
@@ -1080,7 +1080,7 @@ exports[`Pagination Native renders with hidden topKeyline 1`] = `
         },
         false,
         Object {
-          "borderBottomColor": "#dbdbdb",
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
         },
       ]

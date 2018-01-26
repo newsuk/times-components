@@ -5,7 +5,6 @@ import { Colours } from "@times-components/styleguide";
 import { TextLink } from "@times-components/link";
 import { renderTrees } from "@times-components/markup";
 
-
 import {
   articleBylinePropTypes,
   articleBylineDefaultPropTypes
