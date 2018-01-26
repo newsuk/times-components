@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "0.16.31",
+  "version": "0.16.32",
   "main": "card",
   "scripts": {
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
@@ -33,7 +33,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.3.9",
-    "@times-components/article-summary": "0.15.3",
+    "@times-components/article-summary": "0.15.4",
     "@times-components/eslint-config-thetimes": "0.1.2",
     "@times-components/jest-configurator": "0.0.21",
     "@times-components/storybook": "0.2.4",
@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@times-components/gradient": "0.3.14",
-    "@times-components/image": "1.13.0",
+    "@times-components/image": "1.13.1",
     "@times-components/jest-configurator": "0.0.21",
     "@times-components/responsive-styles": "0.2.13",
     "prop-types": "15.6.0",
