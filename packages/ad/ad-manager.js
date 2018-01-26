@@ -13,7 +13,6 @@ class AdManager {
     this.section = options.section;
     this.gptManager = options.gptManager;
     this.pbjsManager = options.pbjsManager;
-    //this.pageOptions = options.pageOptions;
     this.initialised = false;
   }
 

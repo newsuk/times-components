@@ -9,6 +9,7 @@ import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleBody from "./article-body/article-body";
 import LeadAssetComponent from "./article-lead-asset.web";
+import { articleAdTypes } from "./article-ad-proptypes";
 
 import articleTrackingContext from "./article-tracking-context";
 
@@ -24,13 +25,14 @@ const adStyle = {
   marginBottom: 0
 };
 const withAdComposer = (children, articleAdConfig, section = "article") => (
-  <AdComposer section={section} adConfig={articleAdConfig}>{children}</AdComposer>
+  <AdComposer section={section} adConfig={articleAdConfig}>
+    {children}
+  </AdComposer>
 );
 
 class ArticlePage extends React.Component {
   static renderArticle(articleData) {
     const {
-      id,
       headline,
       flags,
       standfirst,
@@ -85,16 +87,17 @@ class ArticlePage extends React.Component {
     if (isLoading) {
       return <ArticleLoading />;
     }
+    const articleData = this.props.article;
 
     const articleAdConfig = {
-      id: this.props.article.id,
-      title: this.props.article.title,
-      label: this.props.article.label,
-      commercialtags: 'test',//this.props.article.commercialtags,
-      contentType: 'art'
+      id: articleData.id,
+      title: articleData.headline || "",
+      label: articleData.label || "",
+      commercialtags: articleData.commercialtags || "",
+      contentType: "art"
     };
 
-    const ArticleListView = ArticlePage.renderArticle(this.props.article);
+    const ArticleListView = ArticlePage.renderArticle(articleData);
     return withAdComposer(ArticleListView, articleAdConfig);
   }
 }
@@ -102,7 +105,8 @@ class ArticlePage extends React.Component {
 ArticlePage.propTypes = {
   article: PropTypes.shape({
     ...ArticleHeader.propTypes,
-    ...ArticleMeta.propTypes
+    ...ArticleMeta.propTypes,
+    ...articleAdTypes
   }),
   isLoading: PropTypes.bool,
   error: PropTypes.shape({
