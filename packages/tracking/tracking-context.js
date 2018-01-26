@@ -1,6 +1,5 @@
 // @flow
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import getDisplayName from "react-display-name";
 import get from "lodash.get";
 import hoistNonReactStatic from "hoist-non-react-statics";
@@ -111,7 +110,7 @@ const withTrackingContext = (
       return !this.context || !this.context.tracking;
     }
 
-    analyticsStream(...args: Array<mixed>) {
+    analyticsStream(...args: Array<any>) {
       const stream =
         get(this.context, "tracking.analytics") || this.props.analyticsStream;
       return stream && stream(...args);
@@ -125,11 +124,6 @@ const withTrackingContext = (
   WithTrackingContext.displayName = `WithTrackingContext(${componentName})`;
   WithTrackingContext.contextTypes = trackingContextTypes;
   WithTrackingContext.childContextTypes = trackingContextTypes;
-  WithTrackingContext.propTypes = {
-    analyticsStream: PropTypes.func,
-    ...WrappedComponent.propTypes
-  };
-  WithTrackingContext.defaultProps = WrappedComponent.defaultProps;
   hoistNonReactStatic(WithTrackingContext, WrappedComponent);
 
   return WithTrackingContext;
