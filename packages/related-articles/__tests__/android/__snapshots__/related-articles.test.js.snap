@@ -37,7 +37,6 @@ exports[`RelatedArticles test on android renders single default related article 
           "fontSize": 26,
         }
       }
-      textAlignVertical="center"
     >
       Related links
     </Text>
@@ -383,7 +382,6 @@ exports[`RelatedArticles test on android renders single default related article 
           "fontSize": 26,
         }
       }
-      textAlignVertical="center"
     >
       Related links
     </Text>
@@ -686,7 +684,6 @@ exports[`RelatedArticles test on android renders single default related article 
           "fontSize": 26,
         }
       }
-      textAlignVertical="center"
     >
       Related links
     </Text>
@@ -995,7 +992,6 @@ exports[`RelatedArticles test on android renders single default related article 
           "fontSize": 26,
         }
       }
-      textAlignVertical="center"
     >
       Related links
     </Text>

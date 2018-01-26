@@ -6,9 +6,7 @@ const styles = StyleSheet.create(SharedStyles);
 
 const RelatedArticlesHeading = () => (
   <View style={styles.titleContainer}>
-    <Text textAlignVertical="center" style={styles.title}>
-      Related links
-    </Text>
+    <Text style={styles.title}>Related links</Text>
   </View>
 );
 
