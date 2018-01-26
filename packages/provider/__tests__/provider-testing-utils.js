@@ -3,7 +3,7 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 import { ApolloLink, Observable } from "apollo-link";
 import renderer from "react-test-renderer";
 import { ApolloProvider } from "react-apollo";
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 function createFuture() {
@@ -107,7 +107,7 @@ export function createProviderTester(
   const { link, client } = createClientTester(requestHandler);
 
   let setProps = () => Promise.resolve();
-  class Stateful extends React.Component {
+  class Stateful extends Component {
     constructor(props) {
       super(props);
       this.state = defaultProps;
