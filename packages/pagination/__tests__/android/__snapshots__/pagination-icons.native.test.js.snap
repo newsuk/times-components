@@ -6,8 +6,7 @@ exports[`Pagination Icons on Android Next page icon renders out an svg and label
     Object {
       "alignItems": "baseline",
       "flexDirection": "row",
-      "marginLeft": 10,
-      "marginRight": 12,
+      "padding": 12,
     }
   }
 >
@@ -52,7 +51,7 @@ exports[`Pagination Icons on Android Previous page icon renders out an svg and l
     Object {
       "alignItems": "baseline",
       "flexDirection": "row",
-      "marginLeft": 10,
+      "padding": 12,
     }
   }
 >

@@ -81,8 +81,7 @@ exports[`Pagination on Android renders correctly 1`] = `
             Object {
               "alignItems": "baseline",
               "flexDirection": "row",
-              "marginLeft": 10,
-              "marginRight": 12,
+              "padding": 12,
             }
           }
         >
@@ -213,8 +212,7 @@ exports[`Pagination on Android renders next link 1`] = `
             Object {
               "alignItems": "baseline",
               "flexDirection": "row",
-              "marginLeft": 10,
-              "marginRight": 12,
+              "padding": 12,
             }
           }
         >
@@ -344,7 +342,7 @@ exports[`Pagination on Android renders prev and next link 1`] = `
             Object {
               "alignItems": "baseline",
               "flexDirection": "row",
-              "marginLeft": 10,
+              "padding": 12,
             }
           }
         >
@@ -418,8 +416,7 @@ exports[`Pagination on Android renders prev and next link 1`] = `
             Object {
               "alignItems": "baseline",
               "flexDirection": "row",
-              "marginLeft": 10,
-              "marginRight": 12,
+              "padding": 12,
             }
           }
         >
@@ -549,7 +546,7 @@ exports[`Pagination on Android renders prev link 1`] = `
             Object {
               "alignItems": "baseline",
               "flexDirection": "row",
-              "marginLeft": 10,
+              "padding": 12,
             }
           }
         >
@@ -681,8 +678,7 @@ exports[`Pagination on Android renders results message 1`] = `
             Object {
               "alignItems": "baseline",
               "flexDirection": "row",
-              "marginLeft": 10,
-              "marginRight": 12,
+              "padding": 12,
             }
           }
         >
@@ -785,8 +781,7 @@ exports[`Pagination on Android renders with hidden results 1`] = `
             Object {
               "alignItems": "baseline",
               "flexDirection": "row",
-              "marginLeft": 10,
-              "marginRight": 12,
+              "padding": 12,
             }
           }
         >
