@@ -37,21 +37,25 @@ describe("provider execution order tests", () => {
     expect(getEvents(link)).toMatchObject([
       {
         type: "render",
-        error: undefined,
-        isLoading: true,
-        variables: { slug: "1" },
-        networkStatus: 1,
-        slug: "1"
+        props: {
+          error: undefined,
+          isLoading: true,
+          variables: { slug: "1" },
+          networkStatus: 1,
+          slug: "1"
+        }
       },
       { type: "request", query: "AuthorQuery", vars: { slug: "1" } },
       { type: "request", query: "AuthorQuery", vars: { slug: "2" } },
       {
         type: "render",
-        error: undefined,
-        isLoading: true,
-        variables: { slug: "2" },
-        networkStatus: 1,
-        slug: "2"
+        props: {
+          error: undefined,
+          isLoading: true,
+          variables: { slug: "2" },
+          networkStatus: 1,
+          slug: "2"
+        }
       },
       { type: "resolving", query: "AuthorQuery", vars: { slug: "1" } },
       { type: "resolving", query: "AuthorQuery", vars: { slug: "2" } },
@@ -59,12 +63,14 @@ describe("provider execution order tests", () => {
       { type: "resolved", query: "AuthorQuery", vars: { slug: "2" } },
       {
         type: "render",
-        error: undefined,
-        isLoading: false,
-        variables: { slug: "2" },
-        networkStatus: 7,
-        author: { name: "2", __typename: "Author" },
-        slug: "2"
+        props: {
+          error: undefined,
+          isLoading: false,
+          variables: { slug: "2" },
+          networkStatus: 7,
+          author: { name: "2", __typename: "Author" },
+          slug: "2"
+        }
       }
     ]);
   });
@@ -86,55 +92,65 @@ describe("provider execution order tests", () => {
     expect(getEvents(link)).toMatchObject([
       {
         type: "render",
-        error: undefined,
-        isLoading: true,
-        variables: { slug: "1" },
-        networkStatus: 1,
-        slug: "1"
+        props: {
+          error: undefined,
+          isLoading: true,
+          variables: { slug: "1" },
+          networkStatus: 1,
+          slug: "1"
+        }
       },
       { type: "request", query: "AuthorQuery", vars: { slug: "1" } },
       { type: "request", query: "AuthorQuery", vars: { slug: "2" } },
       {
         type: "render",
-        error: undefined,
-        isLoading: true,
-        variables: { slug: "2" },
-        networkStatus: 1,
-        slug: "2"
+        props: {
+          error: undefined,
+          isLoading: true,
+          variables: { slug: "2" },
+          networkStatus: 1,
+          slug: "2"
+        }
       },
       { type: "resolving", query: "AuthorQuery", vars: { slug: "1" } },
       { type: "resolving", query: "AuthorQuery", vars: { slug: "2" } },
       { type: "resolved", query: "AuthorQuery", vars: { slug: "2" } },
       {
         type: "render",
-        error: undefined,
-        isLoading: false,
-        variables: { slug: "2" },
-        networkStatus: 7,
-        author: { name: "2", __typename: "Author" },
-        slug: "2"
+        props: {
+          error: undefined,
+          isLoading: false,
+          variables: { slug: "2" },
+          networkStatus: 7,
+          author: { name: "2", __typename: "Author" },
+          slug: "2"
+        }
       },
       { type: "resolved", query: "AuthorQuery", vars: { slug: "1" } },
       { type: "request", query: "AuthorQuery", vars: { slug: "3" } },
       {
         type: "render",
-        error: undefined,
-        isLoading: true,
-        variables: { slug: "3" },
-        networkStatus: 2,
-        author: { name: "2", __typename: "Author" },
-        slug: "3"
+        props: {
+          error: undefined,
+          isLoading: true,
+          variables: { slug: "3" },
+          networkStatus: 2,
+          author: { name: "2", __typename: "Author" },
+          slug: "3"
+        }
       },
       { type: "resolving", query: "AuthorQuery", vars: { slug: "3" } },
       { type: "resolved", query: "AuthorQuery", vars: { slug: "3" } },
       {
         type: "render",
-        error: undefined,
-        isLoading: false,
-        variables: { slug: "3" },
-        networkStatus: 7,
-        author: { name: "3", __typename: "Author" },
-        slug: "3"
+        props: {
+          error: undefined,
+          isLoading: false,
+          variables: { slug: "3" },
+          networkStatus: 7,
+          author: { name: "3", __typename: "Author" },
+          slug: "3"
+        }
       }
     ]);
   });
@@ -157,44 +173,52 @@ describe("provider execution order tests", () => {
     expect(getEvents(link)).toMatchObject([
       {
         type: "render",
-        error: undefined,
-        isLoading: true,
-        variables: { slug: "1" },
-        networkStatus: 1,
-        slug: "1"
+        props: {
+          error: undefined,
+          isLoading: true,
+          variables: { slug: "1" },
+          networkStatus: 1,
+          slug: "1"
+        }
       },
       { type: "request", query: "AuthorQuery", vars: { slug: "1" } },
       {
         type: "render",
-        error: undefined,
-        isLoading: true,
-        variables: { slug: "1" },
-        networkStatus: 1,
-        slug: "1",
-        foo: 1
+        props: {
+          error: undefined,
+          isLoading: true,
+          variables: { slug: "1" },
+          networkStatus: 1,
+          slug: "1",
+          foo: 1
+        }
       },
       { type: "resolving", query: "AuthorQuery", vars: { slug: "1" } },
       { type: "resolved", query: "AuthorQuery", vars: { slug: "1" } },
       {
         type: "render",
-        error: undefined,
-        isLoading: false,
-        variables: { slug: "1" },
-        networkStatus: 7,
-        author: { name: "1", __typename: "Author" },
-        slug: "1",
-        foo: 1
+        props: {
+          error: undefined,
+          isLoading: false,
+          variables: { slug: "1" },
+          networkStatus: 7,
+          author: { name: "1", __typename: "Author" },
+          slug: "1",
+          foo: 1
+        }
       },
       {
         type: "render",
-        error: undefined,
-        isLoading: false,
-        variables: { slug: "1" },
-        networkStatus: 7,
-        author: { name: "1", __typename: "Author" },
-        slug: "1",
-        foo: 1,
-        bar: 2
+        props: {
+          error: undefined,
+          isLoading: false,
+          variables: { slug: "1" },
+          networkStatus: 7,
+          author: { name: "1", __typename: "Author" },
+          slug: "1",
+          foo: 1,
+          bar: 2
+        }
       }
     ]);
   });

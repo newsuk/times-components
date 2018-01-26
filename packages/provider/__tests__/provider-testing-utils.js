@@ -141,10 +141,10 @@ export function createProviderTester(
     <ApolloProvider client={client}>
       {
         <Stateful>
-          {props => (
-            <Component {...props}>
-              {data => {
-                link.pushEvent({ type: "render", data });
+          {state => (
+            <Component {...state}>
+              {props => {
+                link.pushEvent({ type: "render", props });
                 return null;
               }}
             </Component>
@@ -164,10 +164,7 @@ export function createProviderTester(
 
 function tidyEvent(e) {
   if (e.type === "render") {
-    return {
-      type: e.type,
-      ...e.data
-    };
+    return e;
   }
 
   return {
