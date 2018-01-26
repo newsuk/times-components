@@ -68,7 +68,7 @@ storiesOf("Styleguide", module)
   .add("UI Colours", () => (
     <View style={styles.colourBox}>{
       Object.entries(UIColours).map( ([label, colour]) =>
-        <ColourSwatch label={label} colour={label+colour} />
+        <ColourSwatch label={label} colour={colour} key={label+colour} />
       )
     }</View>
   ))
