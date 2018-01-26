@@ -1,9 +1,10 @@
 {
   "name": "@times-components/image",
-  "version": "1.12.8",
+  "version": "1.13.1",
   "main": "image",
   "scripts": {
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
+    "test:android:debug": "node --inspect --inspect-brk node_modules/.bin/jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "test": "yarn test:android --ci --bail --coverage && yarn test:ios --ci --bail --coverage && yarn test:web --ci --bail --coverage",
@@ -47,9 +48,10 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
+    "@times-components/gestures": "1.1.0",
     "@times-components/gradient": "0.3.14",
     "@times-components/jest-configurator": "0.0.21",
-    "@times-components/link": "0.13.12",
+    "@times-components/link": "0.13.13",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.0",
     "svgs": "3.1.1"

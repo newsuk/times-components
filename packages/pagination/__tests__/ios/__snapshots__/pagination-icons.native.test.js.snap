@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaginationIcons on iOS Next page icon renders out an svg and label 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "marginLeft": 10,
+      "marginRight": 12,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#006699",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 15,
+        "height": 15,
+        "marginRight": 10,
+        "textAlign": "right",
+      }
+    }
+  >
+    <PageLabel
+      direction="Next"
+    />
+  </Text>
+  <Svg
+    height={12}
+    viewBox="42 12 60 120"
+    width={7}
+  >
+    <G
+      fill="#006699"
+    >
+      <Path
+        d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+      />
+    </G>
+  </Svg>
+</View>
+`;
+
+exports[`PaginationIcons on iOS Previous page icon renders out an svg and label 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "marginLeft": 10,
+    }
+  }
+>
+  <Svg
+    height={12}
+    viewBox="42 12 60 120"
+    width={7}
+  >
+    <G
+      fill="#006699"
+    >
+      <Path
+        d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
+      />
+    </G>
+  </Svg>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#006699",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 15,
+        "height": 15,
+        "marginLeft": 10,
+        "textAlign": "left",
+      }
+    }
+  >
+    <PageLabel
+      direction="Previous"
+    />
+  </Text>
+</View>
+`;

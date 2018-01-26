@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Modal, View, StyleSheet } from "react-native";
 import Button from "@times-components/link";
+import Gestures from "@times-components/gestures";
 import Svg, { Path, G } from "svgs";
 import Image from "./image";
 import { defaultProps, propTypes } from "./image-prop-types";
@@ -17,7 +18,8 @@ const style = StyleSheet.create({
     justifyContent: "center"
   },
   image: {
-    width: "100%"
+    width: "100%",
+    opacity: 1
   }
 });
 
@@ -25,7 +27,7 @@ class ModalImage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showModal: false
+      showModal: props.show || false
     };
     this.hideModal = this.hideModal.bind(this);
     this.showModal = this.showModal.bind(this);
@@ -58,9 +60,9 @@ class ModalImage extends Component {
         >
           <View style={style.modal}>
             <Button onPress={this.hideModal}>{closeButton}</Button>
-            <View style={style.imageContainer}>
+            <Gestures style={style.imageContainer}>
               <Image {...this.props} style={style.image} />
-            </View>
+            </Gestures>
           </View>
         </Modal>
         <Button onPress={this.showModal}>

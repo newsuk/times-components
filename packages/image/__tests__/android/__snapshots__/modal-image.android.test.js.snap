@@ -63,136 +63,190 @@ exports[`ModalImage test on android renders correctly 1`] = `
         </svg>
       </View>
       <View
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Object {
             "flexGrow": 1,
-            "justifyContent": "center",
           }
         }
       >
         <View
-          aspectRatio={1.5}
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          nativeID={undefined}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "width": "100%",
+              "flexGrow": 1,
+              "justifyContent": "center",
             }
           }
+          testID={undefined}
         >
           <View
+            collapsable={undefined}
             style={
               Object {
-                "height": "100%",
-                "width": "100%",
+                "transform": Array [
+                  Object {
+                    "scale": 1,
+                  },
+                  Object {
+                    "rotate": "0 deg",
+                  },
+                  Object {
+                    "perspective": 1000,
+                  },
+                ],
               }
             }
           >
-            <Image
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "http://example.com/image.jpg&preview=true",
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "bottom": 0,
-                    "left": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                  },
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  },
-                  undefined,
-                ]
-              }
-            />
             <View
+              aspectRatio={1.5}
               style={
                 Object {
-                  "height": "100%",
+                  "opacity": 1,
                   "width": "100%",
                 }
               }
             >
-              <Image
-                onLoad={[Function]}
-                source={
+              <View
+                style={
                   Object {
-                    "uri": "http://example.com/image.jpg",
+                    "height": "100%",
+                    "width": "100%",
                   }
                 }
-                style={
-                  Array [
-                    Object {
-                      "bottom": 0,
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                    },
-                    Object {
-                      "height": "100%",
-                      "width": "100%",
-                    },
-                    undefined,
-                  ]
-                }
-              />
-              <View
-                onLayout={[Function]}
-                style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                    null,
-                  ]
-                }
               >
+                <Image
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "http://example.com/image.jpg&preview=true",
+                    }
+                  }
+                  style={
+                    Array [
+                      Object {
+                        "bottom": 0,
+                        "left": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                      },
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      },
+                      undefined,
+                    ]
+                  }
+                />
                 <View
                   style={
                     Object {
-                      "flex": 1,
+                      "height": "100%",
+                      "width": "100%",
                     }
                   }
                 >
-                  <BVLinearGradient
-                    colors={
-                      Array [
-                        "#f9f9f9",
-                        "#ededed",
-                      ]
-                    }
-                    end={
+                  <Image
+                    onLoad={[Function]}
+                    source={
                       Object {
-                        "x": -0.09302964577578221,
-                        "y": 0.11488204504197774,
-                      }
-                    }
-                    locations={
-                      Array [
-                        0,
-                        1,
-                      ]
-                    }
-                    start={
-                      Object {
-                        "x": 1,
-                        "y": 0,
+                        "uri": "http://example.com/image.jpg",
                       }
                     }
                     style={
                       Array [
                         Object {
-                          "flex": 1,
+                          "bottom": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
                         },
+                        Object {
+                          "height": "100%",
+                          "width": "100%",
+                        },
+                        undefined,
                       ]
                     }
                   />
+                  <View
+                    onLayout={[Function]}
+                    style={
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                        null,
+                      ]
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    >
+                      <BVLinearGradient
+                        colors={
+                          Array [
+                            "#f9f9f9",
+                            "#ededed",
+                          ]
+                        }
+                        end={
+                          Object {
+                            "x": -0.09302964577578221,
+                            "y": 0.11488204504197774,
+                          }
+                        }
+                        locations={
+                          Array [
+                            0,
+                            1,
+                          ]
+                        }
+                        start={
+                          Object {
+                            "x": 1,
+                            "y": 0,
+                          }
+                        }
+                        style={
+                          Array [
+                            Object {
+                              "flex": 1,
+                            },
+                          ]
+                        }
+                      />
+                    </View>
+                  </View>
                 </View>
               </View>
             </View>
