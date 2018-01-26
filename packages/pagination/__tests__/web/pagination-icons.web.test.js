@@ -1,3 +1,3 @@
 import tests from "../test-icons-helper";
 
-describe("PaginationIcons Web", tests);
+describe("PaginationIcons on Web", tests);

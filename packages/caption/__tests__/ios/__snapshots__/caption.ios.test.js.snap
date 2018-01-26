@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders an image with a caption 1`] = `
+exports[`Caption on Android renders an image with a caption 1`] = `
 <View>
   <View
     aspectRatio={1.7777777777777777}
@@ -150,7 +150,7 @@ exports[`renders an image with a caption 1`] = `
 </View>
 `;
 
-exports[`renders correctly with credits 1`] = `
+exports[`Caption on Android renders correctly with credits 1`] = `
 <View>
   <View
     style={
@@ -209,7 +209,7 @@ exports[`renders correctly with credits 1`] = `
 </View>
 `;
 
-exports[`renders correctly with credits only 1`] = `
+exports[`Caption on Android renders correctly with credits only 1`] = `
 <View>
   <View
     style={
@@ -250,7 +250,7 @@ exports[`renders correctly with credits only 1`] = `
 </View>
 `;
 
-exports[`renders correctly with specific styles 1`] = `
+exports[`Caption on Android renders correctly with specific styles 1`] = `
 <View>
   <View
     style={
@@ -315,7 +315,7 @@ exports[`renders correctly with specific styles 1`] = `
 </View>
 `;
 
-exports[`renders correctly without credits 1`] = `
+exports[`Caption on Android renders correctly without credits 1`] = `
 <View>
   <View
     style={

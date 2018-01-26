@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pagination Native renders correctly 1`] = `
+exports[`Pagination on Android renders correctly 1`] = `
 <View
   style={
     Object {
@@ -132,7 +132,7 @@ exports[`Pagination Native renders correctly 1`] = `
 </View>
 `;
 
-exports[`Pagination Native renders next link 1`] = `
+exports[`Pagination on Android renders next link 1`] = `
 <View
   style={
     Object {
@@ -264,7 +264,7 @@ exports[`Pagination Native renders next link 1`] = `
 </View>
 `;
 
-exports[`Pagination Native renders prev and next link 1`] = `
+exports[`Pagination on Android renders prev and next link 1`] = `
 <View
   style={
     Object {
@@ -469,7 +469,7 @@ exports[`Pagination Native renders prev and next link 1`] = `
 </View>
 `;
 
-exports[`Pagination Native renders prev link 1`] = `
+exports[`Pagination on Android renders prev link 1`] = `
 <View
   style={
     Object {
@@ -600,7 +600,7 @@ exports[`Pagination Native renders prev link 1`] = `
 </View>
 `;
 
-exports[`Pagination Native renders results message 1`] = `
+exports[`Pagination on Android renders results message 1`] = `
 <View
   style={
     Object {
@@ -732,7 +732,7 @@ exports[`Pagination Native renders results message 1`] = `
 </View>
 `;
 
-exports[`Pagination Native renders with hidden results 1`] = `
+exports[`Pagination on Android renders with hidden results 1`] = `
 <View
   style={
     Object {

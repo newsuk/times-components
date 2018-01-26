@@ -1,3 +1,3 @@
 import tests from "../test-icons-helper";
 
-describe("PaginationIcons Native", tests);
+describe("Pagination Icons on Android", tests);

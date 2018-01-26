@@ -1,3 +1,3 @@
 import tests from "../test-icons-helper";
 
-describe("PaginationIcons Native", tests);
+describe("PaginationIcons on iOS", tests);

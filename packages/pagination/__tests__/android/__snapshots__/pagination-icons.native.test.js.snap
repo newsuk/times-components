@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PaginationIcons Native Next page icon renders out an svg and label 1`] = `
+exports[`Pagination Icons on Android Next page icon renders out an svg and label 1`] = `
 <View
   style={
     Object {
@@ -46,7 +46,7 @@ exports[`PaginationIcons Native Next page icon renders out an svg and label 1`] 
 </View>
 `;
 
-exports[`PaginationIcons Native Previous page icon renders out an svg and label 1`] = `
+exports[`Pagination Icons on Android Previous page icon renders out an svg and label 1`] = `
 <View
   style={
     Object {

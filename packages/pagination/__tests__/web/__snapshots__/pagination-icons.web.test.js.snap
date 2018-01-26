@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PaginationIcons Web Next page icon renders out an svg and label 1`] = `
+exports[`PaginationIcons on Web Next page icon renders out an svg and label 1`] = `
 <View
   style={72}
 >
@@ -27,7 +27,7 @@ exports[`PaginationIcons Web Next page icon renders out an svg and label 1`] = `
 </View>
 `;
 
-exports[`PaginationIcons Web Previous page icon renders out an svg and label 1`] = `
+exports[`PaginationIcons on Web Previous page icon renders out an svg and label 1`] = `
 <View
   style={73}
 >
