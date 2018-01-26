@@ -7,10 +7,12 @@ import { ArticleProvider } from "@times-components/provider";
 import { MockedProvider } from "@times-components/utils/graphql";
 import { addTypenameToDocument } from "apollo-utilities";
 import { query as articleQuery } from "@times-components/provider/article";
+import { query as articleRelatedQuery } from "@times-components/provider/article-with-related-articles";
 import storybookReporter from "@times-components/tealium/storybook";
 import Article from "./article";
 
 const fullArticleTypenameFixture = require("./fixtures/full-article-typename.json");
+const fullArticleRelatedArticlesTypenameFixture = require("./fixtures/full-article-related-articles-typename.json");
 const fullArticleFixture = require("./fixtures/full-article.json");
 const fullLongArticleFixture = require("./fixtures/full-long-article.json");
 const articleFixtureNoStandfirst = require("./fixtures/no-standfirst.json");
@@ -34,6 +36,18 @@ const mocks = [
     result: fullArticleTypenameFixture
   }
 ];
+
+const mocks2 = [
+  {
+    request: {
+      query: addTypenameToDocument(articleRelatedQuery),
+      variables: {
+        id: "198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+      }
+    },
+    result: fullArticleRelatedArticlesTypenameFixture
+  }
+]
 
 storiesOf("Article", module)
   .add("Default", () => {
@@ -74,6 +88,23 @@ storiesOf("Article", module)
     <MockedProvider mocks={mocks}>
       <ArticleProvider
         id="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        debounceTimeMs={0}
+      >
+        {({ article, isLoading, error }) => (
+          <Article
+            article={article}
+            isLoading={isLoading}
+            error={error}
+            analyticsStream={storybookReporter}
+          />
+        )}
+      </ArticleProvider>
+    </MockedProvider>
+  ))
+  .add("With Related Articles Provider", () => (
+    <MockedProvider mocks={mocks2}>
+      <ArticleProvider
+        id="113e9875-b7bf-4dd7-ac99-dee231bf6e74"
         debounceTimeMs={0}
       >
         {({ article, isLoading, error }) => (
