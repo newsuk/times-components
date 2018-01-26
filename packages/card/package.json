@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "0.16.30",
+  "version": "0.16.31",
   "main": "card",
   "scripts": {
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@times-components/gradient": "0.3.14",
-    "@times-components/image": "1.12.8",
+    "@times-components/image": "1.13.0",
     "@times-components/jest-configurator": "0.0.21",
     "@times-components/responsive-styles": "0.2.13",
     "prop-types": "15.6.0",
