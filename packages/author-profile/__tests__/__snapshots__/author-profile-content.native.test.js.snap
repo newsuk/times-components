@@ -415,7 +415,7 @@ exports[`renders profile 1`] = `
                 Object {
                   "flexDirection": "row",
                   "paddingBottom": 8,
-                  "paddingTop": 16,
+                  "paddingTop": 8,
                 }
               }
             >
@@ -1997,7 +1997,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "flexDirection": "row",
                   "paddingBottom": 8,
-                  "paddingTop": 16,
+                  "paddingTop": 8,
                 }
               }
             >
@@ -5642,7 +5642,7 @@ exports[`renders the author head 1`] = `
         Object {
           "flexDirection": "row",
           "paddingBottom": 8,
-          "paddingTop": 16,
+          "paddingTop": 8,
         }
       }
     >
