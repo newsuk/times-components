@@ -2,18 +2,18 @@ import React from "react";
 import PropTypes from "prop-types";
 import withResponsiveStyles from "@times-components/responsive-styles";
 
-const RespLink = responsivelinkStyles =>
+const RespLink = responsiveLinkStyles =>
   withResponsiveStyles("a", {
-    base: () => `${responsivelinkStyles.base}`,
-    mediumUp: () => `${responsivelinkStyles.medium}`
+    base: () => `${responsiveLinkStyles.base}`,
+    mediumUp: () => `${responsiveLinkStyles.medium}`
   });
 
-const Link = ({ index, url, onPress, children, responsivelinkStyles }) => {
+const Link = ({ index, url, onPress, children, responsiveLinkStyles }) => {
   const Wrapper =
-    responsivelinkStyles !== null ? RespLink(responsivelinkStyles) : "a";
+    responsiveLinkStyles !== null ? RespLink(responsiveLinkStyles) : "a";
 
   const style =
-    responsivelinkStyles !== null
+    responsiveLinkStyles !== null
       ? { textDecoration: "underline" }
       : { textDecoration: "none" };
 
@@ -28,7 +28,7 @@ Link.propTypes = {
   url: PropTypes.string.isRequired,
   onPress: PropTypes.func.isRequired,
   children: PropTypes.node.isRequired,
-  responsivelinkStyles: PropTypes.shape({
+  responsiveLinkStyles: PropTypes.shape({
     base: PropTypes.string,
     medium: PropTypes.string
   }),
@@ -36,7 +36,7 @@ Link.propTypes = {
 };
 
 Link.defaultProps = {
-  responsivelinkStyles: null,
+  responsiveLinkStyles: null,
   index: "0"
 };
 
