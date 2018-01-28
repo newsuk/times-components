@@ -23,8 +23,7 @@ function parseCookie(value, valueSeparator, paramSeparator) {
   const cookieValue = decodeCookie(value) || "";
   return cookieValue.split(valueSeparator).reduce((res, param) => {
     const parts = param.split(paramSeparator);
-    res[parts[0]] = parts[1];
-    return res;
+    return Object.assign(res, { [parts[0]]: parts[1] });
   }, {});
 }
 
