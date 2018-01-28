@@ -24,7 +24,8 @@
     ],
     "testMatch": [
       "<rootDir>/packages/utils/__tests__/*.test.js"
-    ]
+    ],
+    "testEnvironment": "jsdom"
   },
   "repository": {
     "type": "git",

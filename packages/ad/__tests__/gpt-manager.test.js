@@ -2,7 +2,7 @@ import gptManager from "../gpt-manager";
 
 describe("GptManager", () => {
   it("gptManager singleton is initialised with correct props", () => {
-    expect(gptManager.scriptSet).toBeFalsy();
+    expect(gptManager.scriptSet12).toBeFalsy();
     expect(gptManager.initialised).toBeFalsy();
     expect(gptManager.googletag).toBeNull();
     expect(gptManager.isReady).toBeFalsy();

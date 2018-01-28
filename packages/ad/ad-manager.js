@@ -22,28 +22,14 @@ class AdManager {
     this.initialised = false;
   }
 
-  init() {
-    // Load scripts if needed be
-    this.gptManager.loadScript();
-    this.pbjsManager.loadScript();
-
-    const pageOptions = this.setPageLevelConfig(this.adConfig);
-
-    return this.gptManager
-      .setConfig(pageOptions)
-      .then(this.pbjsManager.setConfig.bind(this.pbjsManager))
-      .then(this.gptManager.init.bind(this.gptManager))
-      .then(this.pbjsManager.init.bind(this.pbjsManager, this.adQueue))
-      .then(() => {
-        this.initialised = true;
-        // Actually push the ads to GPT
-        this.adQueue.forEach(ad => {
-          this.pushAdToGPT(ad.code, ad.mappings);
-        });
-      });
+  static getSubscriber() {
+    return isSubscriber() ? "1" : "0";
   }
 
-  setPageLevelConfig(adConfig) {
+  static isLoggedIn() {
+    return nuk.user.isLoggedIn ? "1" : "0";
+  }
+  static setPageLevelConfig(adConfig) {
     return {
       edition_id: window.nuk ? nuk.ads.editionDate : null,
       e_uuid: window.nuk ? nuk.ads.editionId : null,
@@ -59,8 +45,8 @@ class AdManager {
       teaser: window.nuk
         ? !nuk.user.isLoggedIn || nuk.user.isMeteredExpired
         : "0",
-      log: window.nuk ? this.isLoggedIn() : "0",
-      subscriber: window.nuk ? this.getSubscriber() : "0",
+      log: window.nuk ? AdManager.isLoggedIn() : "0",
+      subscriber: window.nuk ? AdManager.getSubscriber() : "0",
       kuid: localStorage.get("kxkuid"),
       ksg: localStorage.get("kxsegs"),
       ppid: cookieHelper.getCpnId() || "null",
@@ -71,12 +57,25 @@ class AdManager {
     };
   }
 
-  getSubscriber() {
-    return isSubscriber() ? "1" : "0";
-  }
+  init() {
+    // Load scripts if needed be
+    this.gptManager.loadScript();
+    this.pbjsManager.loadScript();
 
-  isLoggedIn() {
-    return nuk.user.isLoggedIn ? "1" : "0";
+    const pageOptions = AdManager.setPageLevelConfig(this.adConfig);
+
+    return this.gptManager
+      .setConfig(pageOptions)
+      .then(this.pbjsManager.setConfig.bind(this.pbjsManager))
+      .then(this.gptManager.init.bind(this.gptManager))
+      .then(this.pbjsManager.init.bind(this.pbjsManager, this.adQueue))
+      .then(() => {
+        this.initialised = true;
+        // Actually push the ads to GPT
+        this.adQueue.forEach(ad => {
+          this.pushAdToGPT(ad.code, ad.mappings);
+        });
+      });
   }
 
   registerAd(slot) {
