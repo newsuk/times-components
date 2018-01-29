@@ -15,6 +15,20 @@ const createProps = fixtureData => ({
 });
 
 module.exports = () => {
+  const realIntl = Intl;
+
+  beforeEach(() => {
+    global.Intl = {
+      DateTimeFormat: () => ({
+        resolvedOptions: () => ({ timeZone: "Europe/London" })
+      })
+    };
+  });
+
+  afterEach(() => {
+    global.Intl = realIntl;
+  });
+
   it("renders single default related article", () => {
     const tree = renderer
       .create(
