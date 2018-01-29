@@ -6,7 +6,7 @@ import gql from "graphql-tag";
 import { MockedProvider } from "@times-components/utils/graphql";
 import connectGraphql, {
   AuthorProfileProvider,
-  ArticleProvider
+  ArticleProvider,
 } from "./provider.js";
 import { query as authorProfileQuery } from "./author-profile";
 import fixture from "./fixtures/author-profile/author-profile.json";
@@ -114,7 +114,7 @@ storiesOf("Provider", module)
         request: {
           query: addTypenameToDocument(articleQuery),
           variables: {
-            id: "3107c018-cb60-11e4-81dd-064fe933cd41"
+            id: "198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           }
         },
         result: articleFixture
@@ -124,7 +124,7 @@ storiesOf("Provider", module)
     return (
       <MockedProvider mocks={mocks}>
         <ArticleProvider
-          id="3107c018-cb60-11e4-81dd-064fe933cd41"
+          id="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           debounceTimeMs={0}
         >
           {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
