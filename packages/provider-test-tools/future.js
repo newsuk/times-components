@@ -1,4 +1,4 @@
-export function createFuture() {
+export default function createFuture() {
   let resolve;
   const promise = new Promise(done => {
     resolve = done;

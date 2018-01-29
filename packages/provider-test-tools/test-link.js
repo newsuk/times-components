@@ -1,8 +1,8 @@
 import { ApolloLink, Observable } from "apollo-link";
 import isEqual from "lodash.isequal";
-import { createFuture } from "./future";
+import createFuture from "./future";
 
-export class TestLink extends ApolloLink {
+export default class TestLink extends ApolloLink {
   constructor(onRequest) {
     super();
     this.onRequest = onRequest;

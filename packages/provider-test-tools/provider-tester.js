@@ -2,9 +2,13 @@ import React from "react";
 import renderer from "react-test-renderer";
 import PropTypes from "prop-types";
 import { ApolloProvider } from "react-apollo";
-import { clientTester } from "./client-tester"; 
+import clientTester from "./client-tester";
 
-export function providerTester(requestHandler, Component, defaultProps = {}) {
+export default function providerTester(
+  requestHandler,
+  Component,
+  defaultProps = {}
+) {
   const { link, client } = clientTester(requestHandler);
 
   let setProps = () => Promise.resolve();

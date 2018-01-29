@@ -1,3 +1,5 @@
-export * from './helpers';
-export * from './client-tester';
-export * from './provider-tester';
+import clientTester from "./client-tester";
+import providerTester from "./provider-tester";
+export * from "./helpers";
+
+export { clientTester, providerTester };
