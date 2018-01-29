@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "0.41.5",
+  "version": "0.41.6",
   "description": "Author info along with articles they have written",
   "main": "author-profile",
   "scripts": {
@@ -63,11 +63,11 @@
   },
   "dependencies": {
     "@times-components/article-summary": "0.15.5",
-    "@times-components/author-head": "0.17.8",
-    "@times-components/card": "0.16.33",
+    "@times-components/author-head": "0.17.9",
+    "@times-components/card": "0.16.34",
     "@times-components/error-view": "0.7.16",
     "@times-components/gradient": "0.3.15",
-    "@times-components/image": "1.13.2",
+    "@times-components/image": "1.13.3",
     "@times-components/link": "0.13.14",
     "@times-components/pagination": "0.12.36",
     "@times-components/provider": "0.21.1",
