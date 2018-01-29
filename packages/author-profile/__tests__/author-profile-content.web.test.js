@@ -433,7 +433,45 @@ it("emits scroll tracking events for author profile content", () => {
   );
 });
 
-it("scrolls to the top when moving to the previous page", () => {
+it("scrolls to the top when moving to the previous page on bottom pagination click", () => {
+  const onScroll = jest.spyOn(window, "scroll");
+  const onPrev = jest.fn();
+  const component = mount(
+    <AuthorProfileContent
+      {...authorProfileContentProps}
+      page={2}
+      onPrev={onPrev}
+    />
+  );
+
+  component
+    .find({ href: "?page=1" })
+    .last()
+    .simulate("click");
+
+  expect(onScroll).toHaveBeenCalledWith({ left: 0, top: 0 });
+});
+
+it("scrolls to the top when moving to the next page on bottom pagination click", () => {
+  const onScroll = jest.spyOn(window, "scroll");
+  const onNext = jest.fn();
+  const component = mount(
+    <AuthorProfileContent
+      {...authorProfileContentProps}
+      page={2}
+      onNext={onNext}
+    />
+  );
+
+  component
+    .find({ href: "?page=3" })
+    .last()
+    .simulate("click");
+
+  expect(onScroll).toHaveBeenCalledWith({ left: 0, top: 0 });
+});
+
+it("doesnt scroll to the top when moving to the previous page on top pagination click", () => {
   const onScroll = jest.spyOn(window, "scroll");
   const onPrev = jest.fn();
   const component = mount(
@@ -449,10 +487,10 @@ it("scrolls to the top when moving to the previous page", () => {
     .first()
     .simulate("click");
 
-  expect(onScroll).toHaveBeenCalledWith({ left: 0, top: 0 });
+  expect(onScroll).not.toHaveBeenCalledWith({ left: 0, top: 0 });
 });
 
-it("scrolls to the top when moving to the next page", () => {
+it("doesnt scroll to the top when moving to the next page on top pagination click", () => {
   const onScroll = jest.spyOn(window, "scroll");
   const onNext = jest.fn();
   const component = mount(
@@ -468,5 +506,5 @@ it("scrolls to the top when moving to the next page", () => {
     .first()
     .simulate("click");
 
-  expect(onScroll).toHaveBeenCalledWith({ left: 0, top: 0 });
+  expect(onScroll).not.toHaveBeenCalledWith({ left: 0, top: 0 });
 });

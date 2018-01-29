@@ -19,8 +19,8 @@ const ShortText = withResponsiveStyles(View, {
 
 const styles = StyleSheet.create({
   container: {
-    paddingBottom: 10,
-    paddingTop: 10
+    paddingBottom: 15,
+    paddingTop: 15
   }
 });
 

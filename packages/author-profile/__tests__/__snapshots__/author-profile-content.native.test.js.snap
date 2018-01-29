@@ -415,7 +415,7 @@ exports[`renders profile 1`] = `
                 Object {
                   "flexDirection": "row",
                   "paddingBottom": 8,
-                  "paddingTop": 16,
+                  "paddingTop": 8,
                 }
               }
             >
@@ -597,8 +597,7 @@ exports[`renders profile 1`] = `
                         Object {
                           "alignItems": "center",
                           "flexDirection": "row",
-                          "marginLeft": 10,
-                          "marginRight": 12,
+                          "padding": 12,
                         }
                       }
                     >
@@ -658,8 +657,8 @@ exports[`renders profile 1`] = `
         style={
           Array [
             Object {
-              "paddingBottom": 10,
-              "paddingTop": 10,
+              "paddingBottom": 15,
+              "paddingTop": 15,
             },
             Object {
               "paddingLeft": 10,
@@ -975,8 +974,8 @@ exports[`renders profile 1`] = `
         style={
           Array [
             Object {
-              "paddingBottom": 10,
-              "paddingTop": 10,
+              "paddingBottom": 15,
+              "paddingTop": 15,
             },
             Object {
               "paddingLeft": 10,
@@ -1292,8 +1291,8 @@ exports[`renders profile 1`] = `
         style={
           Array [
             Object {
-              "paddingBottom": 10,
-              "paddingTop": 10,
+              "paddingBottom": 15,
+              "paddingTop": 15,
             },
             Object {
               "paddingLeft": 10,
@@ -1659,8 +1658,7 @@ exports[`renders profile 1`] = `
                       Object {
                         "alignItems": "center",
                         "flexDirection": "row",
-                        "marginLeft": 10,
-                        "marginRight": 12,
+                        "padding": 12,
                       }
                     }
                   >
@@ -1999,7 +1997,7 @@ exports[`renders profile content component 1`] = `
                 Object {
                   "flexDirection": "row",
                   "paddingBottom": 8,
-                  "paddingTop": 16,
+                  "paddingTop": 8,
                 }
               }
             >
@@ -2190,8 +2188,8 @@ exports[`renders profile content component 1`] = `
           style={
             Array [
               Object {
-                "paddingBottom": 10,
-                "paddingTop": 10,
+                "paddingBottom": 15,
+                "paddingTop": 15,
               },
               Object {
                 "paddingLeft": 10,
@@ -2441,8 +2439,8 @@ exports[`renders profile content component 1`] = `
           style={
             Array [
               Object {
-                "paddingBottom": 10,
-                "paddingTop": 10,
+                "paddingBottom": 15,
+                "paddingTop": 15,
               },
               Object {
                 "paddingLeft": 10,
@@ -2692,8 +2690,8 @@ exports[`renders profile content component 1`] = `
           style={
             Array [
               Object {
-                "paddingBottom": 10,
-                "paddingTop": 10,
+                "paddingBottom": 15,
+                "paddingTop": 15,
               },
               Object {
                 "paddingLeft": 10,
@@ -3282,8 +3280,8 @@ exports[`renders profile content item component 1`] = `
     style={
       Array [
         Object {
-          "paddingBottom": 10,
-          "paddingTop": 10,
+          "paddingBottom": 15,
+          "paddingTop": 15,
         },
         undefined,
       ]
@@ -3402,8 +3400,8 @@ exports[`renders profile content item component with a specific image size 1`] =
     style={
       Array [
         Object {
-          "paddingBottom": 10,
-          "paddingTop": 10,
+          "paddingBottom": 15,
+          "paddingTop": 15,
         },
         undefined,
       ]
@@ -3522,8 +3520,8 @@ exports[`renders profile content item component with no image 1`] = `
     style={
       Array [
         Object {
-          "paddingBottom": 10,
-          "paddingTop": 10,
+          "paddingBottom": 15,
+          "paddingTop": 15,
         },
         undefined,
       ]
@@ -3872,8 +3870,8 @@ exports[`renders profile content loading 1`] = `
         style={
           Array [
             Object {
-              "paddingBottom": 10,
-              "paddingTop": 10,
+              "paddingBottom": 15,
+              "paddingTop": 15,
             },
             Object {
               "paddingLeft": 10,
@@ -4234,7 +4232,7 @@ exports[`renders profile error 1`] = `
         "alignSelf": "center",
         "marginBottom": 20,
         "marginTop": 20,
-        "width": "90%",
+        "width": "60%",
       }
     }
   >
@@ -4584,8 +4582,8 @@ exports[`renders profile loading 1`] = `
         style={
           Array [
             Object {
-              "paddingBottom": 10,
-              "paddingTop": 10,
+              "paddingBottom": 15,
+              "paddingTop": 15,
             },
             Object {
               "paddingLeft": 10,
@@ -4901,8 +4899,8 @@ exports[`renders profile loading 1`] = `
         style={
           Array [
             Object {
-              "paddingBottom": 10,
-              "paddingTop": 10,
+              "paddingBottom": 15,
+              "paddingTop": 15,
             },
             Object {
               "paddingLeft": 10,
@@ -5218,8 +5216,8 @@ exports[`renders profile loading 1`] = `
         style={
           Array [
             Object {
-              "paddingBottom": 10,
-              "paddingTop": 10,
+              "paddingBottom": 15,
+              "paddingTop": 15,
             },
             Object {
               "paddingLeft": 10,
@@ -5644,7 +5642,7 @@ exports[`renders the author head 1`] = `
         Object {
           "flexDirection": "row",
           "paddingBottom": 8,
-          "paddingTop": 16,
+          "paddingTop": 8,
         }
       }
     >
@@ -5986,8 +5984,8 @@ exports[`renders with no author 1`] = `
         style={
           Array [
             Object {
-              "paddingBottom": 10,
-              "paddingTop": 10,
+              "paddingBottom": 15,
+              "paddingTop": 15,
             },
             Object {
               "paddingLeft": 10,
@@ -6209,8 +6207,8 @@ exports[`renders with no author 1`] = `
         style={
           Array [
             Object {
-              "paddingBottom": 10,
-              "paddingTop": 10,
+              "paddingBottom": 15,
+              "paddingTop": 15,
             },
             Object {
               "paddingLeft": 10,
@@ -6432,8 +6430,8 @@ exports[`renders with no author 1`] = `
         style={
           Array [
             Object {
-              "paddingBottom": 10,
-              "paddingTop": 10,
+              "paddingBottom": 15,
+              "paddingTop": 15,
             },
             Object {
               "paddingLeft": 10,
