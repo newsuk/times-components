@@ -537,7 +537,7 @@
       "relatedArticlesLayout": {
         "template": "LEAD_AND_TWO",
         "lead": "9bb5565f-3810-426f-84f1-c03e4a580697",
-        "__typename": "Layout"
+        "__typename": "LeadAndTwo"
       },
       "relatedArticles": [
         {

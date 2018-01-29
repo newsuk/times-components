@@ -536,7 +536,7 @@
       },
       "relatedArticlesLayout": {
         "template": "DEFAULT",
-        "__typename": "Layout"
+        "__typename": "Default"
       },
       "relatedArticles": [
         {
