@@ -18,21 +18,25 @@ exports[`renders an article-summary component with a single paragraph 1`] = `
       }
     }
   >
-    
+    CAMILLA LONG
   </Text>
   <Text
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
-        "fontWeight": "400",
-        "lineHeight": 22,
-        "marginBottom": 6,
-      }
+      Array [
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontWeight": "400",
+          "marginBottom": 5,
+        },
+        Object {
+          "fontSize": 22,
+          "lineHeight": 22,
+        },
+      ]
     }
   >
     Top medal for forces dog who took a bite out of the Taliban
@@ -73,12 +77,55 @@ exports[`renders an article-summary component with a single paragraph 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 15,
-        "marginBottom": 10,
+        "marginBottom": 5,
       }
     }
     testID="datePublication"
   >
     Friday November 17 2017, 12:01am, The Times
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+  >
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="/profile/camilla-long"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#069",
+          },
+          undefined,
+        ]
+      }
+    >
+      Camilla Long
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      , Environment Editor
+    </Text>
   </Text>
 </View>
 `;
@@ -108,14 +155,18 @@ exports[`renders an article-summary component with content including line breaks
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
-        "fontWeight": "400",
-        "lineHeight": 22,
-        "marginBottom": 6,
-      }
+      Array [
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontWeight": "400",
+          "marginBottom": 5,
+        },
+        Object {
+          "fontSize": 22,
+          "lineHeight": 22,
+        },
+      ]
     }
   >
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
@@ -230,12 +281,55 @@ exports[`renders an article-summary component with content including line breaks
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 15,
-        "marginBottom": 10,
+        "marginBottom": 5,
       }
     }
     testID="datePublication"
   >
     Saturday July 01 2017, 03:32pm, The Sunday Times
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+  >
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="/profile/camilla-long"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#069",
+          },
+          undefined,
+        ]
+      }
+    >
+      Camilla Long
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      , Environment Editor
+    </Text>
   </Text>
 </View>
 `;
@@ -265,14 +359,18 @@ exports[`renders an article-summary component with empty content at the end trim
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
-        "fontWeight": "400",
-        "lineHeight": 22,
-        "marginBottom": 6,
-      }
+      Array [
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontWeight": "400",
+          "marginBottom": 5,
+        },
+        Object {
+          "fontSize": 22,
+          "lineHeight": 22,
+        },
+      ]
     }
   >
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
@@ -328,12 +426,55 @@ exports[`renders an article-summary component with empty content at the end trim
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 15,
-        "marginBottom": 10,
+        "marginBottom": 5,
       }
     }
     testID="datePublication"
   >
     Saturday July 01 2017, 03:32pm, The Sunday Times
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+  >
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="/profile/camilla-long"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#069",
+          },
+          undefined,
+        ]
+      }
+    >
+      Camilla Long
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      , Environment Editor
+    </Text>
   </Text>
 </View>
 `;
@@ -363,14 +504,18 @@ exports[`renders an article-summary component with headline and no content 1`] =
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
-        "fontWeight": "400",
-        "lineHeight": 22,
-        "marginBottom": 6,
-      }
+      Array [
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontWeight": "400",
+          "marginBottom": 5,
+        },
+        Object {
+          "fontSize": 22,
+          "lineHeight": 22,
+        },
+      ]
     }
   >
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
@@ -401,7 +546,7 @@ exports[`renders an article-summary component with headline and no content 1`] =
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 15,
-        "marginBottom": 10,
+        "marginBottom": 5,
       }
     }
     testID="datePublication"
@@ -420,30 +565,18 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 12,
-        "letterSpacing": 1,
-        "marginBottom": 2,
-      }
-    }
-  >
-    
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
-        "fontWeight": "400",
-        "lineHeight": 22,
-        "marginBottom": 6,
-      }
+      Array [
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontWeight": "400",
+          "marginBottom": 5,
+        },
+        Object {
+          "fontSize": 22,
+          "lineHeight": 22,
+        },
+      ]
     }
   >
     Top medal for forces dog who took a bite out of the Taliban
@@ -492,12 +625,240 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 15,
-        "marginBottom": 10,
+        "marginBottom": 5,
       }
     }
     testID="datePublication"
   >
     Friday November 17 2017, 12:01am, The Times
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+  >
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="/profile/camilla-long"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#069",
+          },
+          undefined,
+        ]
+      }
+    >
+      Camilla Long
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      , Environment Editor
+    </Text>
+  </Text>
+</View>
+`;
+
+exports[`renders an article-summary component with no byline 1`] = `
+<View
+  style={Object {}}
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontWeight": "400",
+          "marginBottom": 5,
+        },
+        Object {
+          "fontSize": 22,
+          "lineHeight": 22,
+        },
+      ]
+    }
+  >
+    Top medal for forces dog who took a bite out of the Taliban
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "flexWrap": "wrap",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 14,
+        "lineHeight": 20,
+        "marginBottom": 10,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      
+      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
+      ...
+    </Text>
+  </Text>
+  <Text
+    accessibilityLabel="datePublication"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+    testID="datePublication"
+  >
+    Friday November 17 2017, 12:01am, The Times
+  </Text>
+</View>
+`;
+
+exports[`renders an article-summary component with no label 1`] = `
+<View
+  style={Object {}}
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontWeight": "400",
+          "marginBottom": 5,
+        },
+        Object {
+          "fontSize": 22,
+          "lineHeight": 22,
+        },
+      ]
+    }
+  >
+    Top medal for forces dog who took a bite out of the Taliban
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "flexWrap": "wrap",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 14,
+        "lineHeight": 20,
+        "marginBottom": 10,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      
+      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
+      ...
+    </Text>
+  </Text>
+  <Text
+    accessibilityLabel="datePublication"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+    testID="datePublication"
+  >
+    Friday November 17 2017, 12:01am, The Times
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+  >
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="/profile/camilla-long"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#069",
+          },
+          undefined,
+        ]
+      }
+    >
+      Camilla Long
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      , Environment Editor
+    </Text>
   </Text>
 </View>
 `;

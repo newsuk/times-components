@@ -3,6 +3,36 @@
   "headline": "OK, so Putin’s not a lady, but he does have the wildest man‑PMT",
   "date": "2017-07-01T14:32:00.000Z",
   "publication": "SUNDAYTIMES",
+  "byline": [
+    {
+      "name": "author",
+      "attributes": {
+        "slug": "camilla-long"
+      },
+      "children": [
+        {
+          "name": "text",
+          "attributes": {
+            "value": "Camilla Long"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "inline",
+      "attributes": {},
+      "children": [
+        {
+          "name": "text",
+          "attributes": {
+            "value": ", Environment Editor"
+          },
+          "children": []
+        }
+      ]
+    }
+  ],
   "text": [
     {
       "name": "paragraph",

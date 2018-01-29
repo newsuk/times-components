@@ -64,7 +64,6 @@ exports[`Card test on web renders 1`] = `
 @media (min-width:768px) {
   .c2 {
     padding-left: 15px;
-    padding-right: 8.3333%;
     -webkit-box-flex: 2.7;
     -webkit-flex-grow: 2.7;
     -ms-flex-positive: 2.7;
@@ -187,7 +186,6 @@ exports[`Card test on web renders loading state 1`] = `
 @media (min-width:768px) {
   .c2 {
     padding-left: 15px;
-    padding-right: 8.3333%;
     -webkit-box-flex: 2.7;
     -webkit-flex-grow: 2.7;
     -ms-flex-positive: 2.7;
@@ -315,7 +313,6 @@ exports[`Card test on web renders without image 1`] = `
 @media (min-width:768px) {
   .c1 {
     padding-left: 15px;
-    padding-right: 8.3333%;
     -webkit-box-flex: 2.7;
     -webkit-flex-grow: 2.7;
     -ms-flex-positive: 2.7;
@@ -371,7 +368,6 @@ exports[`Card test on web renders without image url 1`] = `
 @media (min-width:768px) {
   .c1 {
     padding-left: 15px;
-    padding-right: 8.3333%;
     -webkit-box-flex: 2.7;
     -webkit-flex-grow: 2.7;
     -ms-flex-positive: 2.7;

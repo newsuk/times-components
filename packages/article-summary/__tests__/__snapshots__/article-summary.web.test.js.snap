@@ -15,19 +15,18 @@ exports[`renders an article-summary component with a single paragraph 1`] = `
       }
     }
   >
-    
+    CAMILLA LONG
   </div>
   <div
     className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     style={
       Object {
-        "WebkitFontSmoothing": "auto",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
         "lineHeight": "22px",
-        "marginBottom": "6px",
+        "marginBottom": "5px",
       }
     }
   >
@@ -67,11 +66,36 @@ exports[`renders an article-summary component with a single paragraph 1`] = `
       Object {
         "color": "rgba(105,105,105,1)",
         "lineHeight": "15px",
-        "marginBottom": "10px",
+        "marginBottom": "5px",
       }
     }
   >
     Friday November 17 2017, 12:01am, The Times
+  </div>
+  <div
+    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+    dir="auto"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+        "lineHeight": "15px",
+        "marginBottom": "5px",
+      }
+    }
+  >
+    <a
+      className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-1ncyl3j rn-whiteSpace-irrty rn-wordWrap-qvutc0"
+      dir="auto"
+      href="/profile/camilla-long"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="link"
+    >
+      Camilla Long
+    </a>
+    <span>
+      , Environment Editor
+    </span>
   </div>
 </div>
 `;
@@ -98,12 +122,11 @@ exports[`renders an article-summary component with content including line breaks
     dir="auto"
     style={
       Object {
-        "WebkitFontSmoothing": "auto",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
         "lineHeight": "22px",
-        "marginBottom": "6px",
+        "marginBottom": "5px",
       }
     }
   >
@@ -169,11 +192,36 @@ exports[`renders an article-summary component with content including line breaks
       Object {
         "color": "rgba(105,105,105,1)",
         "lineHeight": "15px",
-        "marginBottom": "10px",
+        "marginBottom": "5px",
       }
     }
   >
     Saturday July 01 2017, 03:32pm, The Sunday Times
+  </div>
+  <div
+    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+    dir="auto"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+        "lineHeight": "15px",
+        "marginBottom": "5px",
+      }
+    }
+  >
+    <a
+      className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-1ncyl3j rn-whiteSpace-irrty rn-wordWrap-qvutc0"
+      dir="auto"
+      href="/profile/camilla-long"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="link"
+    >
+      Camilla Long
+    </a>
+    <span>
+      , Environment Editor
+    </span>
   </div>
 </div>
 `;
@@ -200,12 +248,11 @@ exports[`renders an article-summary component with empty content at the end trim
     dir="auto"
     style={
       Object {
-        "WebkitFontSmoothing": "auto",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
         "lineHeight": "22px",
-        "marginBottom": "6px",
+        "marginBottom": "5px",
       }
     }
   >
@@ -258,11 +305,36 @@ exports[`renders an article-summary component with empty content at the end trim
       Object {
         "color": "rgba(105,105,105,1)",
         "lineHeight": "15px",
-        "marginBottom": "10px",
+        "marginBottom": "5px",
       }
     }
   >
     Saturday July 01 2017, 03:32pm, The Sunday Times
+  </div>
+  <div
+    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+    dir="auto"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+        "lineHeight": "15px",
+        "marginBottom": "5px",
+      }
+    }
+  >
+    <a
+      className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-1ncyl3j rn-whiteSpace-irrty rn-wordWrap-qvutc0"
+      dir="auto"
+      href="/profile/camilla-long"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="link"
+    >
+      Camilla Long
+    </a>
+    <span>
+      , Environment Editor
+    </span>
   </div>
 </div>
 `;
@@ -289,12 +361,11 @@ exports[`renders an article-summary component with headline and no content 1`] =
     dir="auto"
     style={
       Object {
-        "WebkitFontSmoothing": "auto",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
         "lineHeight": "22px",
-        "marginBottom": "6px",
+        "marginBottom": "5px",
       }
     }
   >
@@ -325,7 +396,7 @@ exports[`renders an article-summary component with headline and no content 1`] =
       Object {
         "color": "rgba(105,105,105,1)",
         "lineHeight": "15px",
-        "marginBottom": "10px",
+        "marginBottom": "5px",
       }
     }
   >
@@ -339,29 +410,15 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
   className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
   <div
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-    dir="auto"
-    style={
-      Object {
-        "fontSize": "12px",
-        "letterSpacing": "1px",
-        "marginBottom": "2px",
-      }
-    }
-  >
-    
-  </div>
-  <div
     className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     style={
       Object {
-        "WebkitFontSmoothing": "auto",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
         "lineHeight": "22px",
-        "marginBottom": "6px",
+        "marginBottom": "5px",
       }
     }
   >
@@ -408,11 +465,185 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
       Object {
         "color": "rgba(105,105,105,1)",
         "lineHeight": "15px",
-        "marginBottom": "10px",
+        "marginBottom": "5px",
       }
     }
   >
     Friday November 17 2017, 12:01am, The Times
+  </div>
+  <div
+    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+    dir="auto"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+        "lineHeight": "15px",
+        "marginBottom": "5px",
+      }
+    }
+  >
+    <a
+      className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-1ncyl3j rn-whiteSpace-irrty rn-wordWrap-qvutc0"
+      dir="auto"
+      href="/profile/camilla-long"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="link"
+    >
+      Camilla Long
+    </a>
+    <span>
+      , Environment Editor
+    </span>
+  </div>
+</div>
+`;
+
+exports[`renders an article-summary component with no byline 1`] = `
+<div
+  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+>
+  <div
+    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+    dir="auto"
+    style={
+      Object {
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": "22px",
+        "fontWeight": "400",
+        "lineHeight": "22px",
+        "marginBottom": "5px",
+      }
+    }
+  >
+    Top medal for forces dog who took a bite out of the Taliban
+  </div>
+  <div
+    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+    dir="auto"
+    style={
+      Object {
+        "WebkitBoxLines": "multiple",
+        "WebkitFlexWrap": "wrap",
+        "color": "rgba(105,105,105,1)",
+        "flexWrap": "wrap",
+        "fontFamily": "TimesDigitalW04",
+        "lineHeight": "20px",
+        "marginBottom": "10px",
+        "msFlexWrap": "wrap",
+      }
+    }
+  >
+    <span
+      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-irrty rn-wordWrap-qvutc0"
+      dir="auto"
+    >
+      
+      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
+      ...
+    </span>
+  </div>
+  <div
+    aria-label="datePublication"
+    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+    data-testid="datePublication"
+    dir="auto"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+        "lineHeight": "15px",
+        "marginBottom": "5px",
+      }
+    }
+  >
+    Friday November 17 2017, 12:01am, The Times
+  </div>
+</div>
+`;
+
+exports[`renders an article-summary component with no label 1`] = `
+<div
+  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+>
+  <div
+    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+    dir="auto"
+    style={
+      Object {
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": "22px",
+        "fontWeight": "400",
+        "lineHeight": "22px",
+        "marginBottom": "5px",
+      }
+    }
+  >
+    Top medal for forces dog who took a bite out of the Taliban
+  </div>
+  <div
+    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+    dir="auto"
+    style={
+      Object {
+        "WebkitBoxLines": "multiple",
+        "WebkitFlexWrap": "wrap",
+        "color": "rgba(105,105,105,1)",
+        "flexWrap": "wrap",
+        "fontFamily": "TimesDigitalW04",
+        "lineHeight": "20px",
+        "marginBottom": "10px",
+        "msFlexWrap": "wrap",
+      }
+    }
+  >
+    <span
+      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-irrty rn-wordWrap-qvutc0"
+      dir="auto"
+    >
+      
+      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
+      ...
+    </span>
+  </div>
+  <div
+    aria-label="datePublication"
+    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+    data-testid="datePublication"
+    dir="auto"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+        "lineHeight": "15px",
+        "marginBottom": "5px",
+      }
+    }
+  >
+    Friday November 17 2017, 12:01am, The Times
+  </div>
+  <div
+    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+    dir="auto"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+        "lineHeight": "15px",
+        "marginBottom": "5px",
+      }
+    }
+  >
+    <a
+      className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-1ncyl3j rn-whiteSpace-irrty rn-wordWrap-qvutc0"
+      dir="auto"
+      href="/profile/camilla-long"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="link"
+    >
+      Camilla Long
+    </a>
+    <span>
+      , Environment Editor
+    </span>
   </div>
 </div>
 `;

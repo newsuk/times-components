@@ -107,17 +107,19 @@ class AuthorProfileContent extends React.Component {
       });
     };
 
-    const paginationComponent = ({ hideResults = false } = {}) => (
+    const paginationComponent = (
+      { hideResults = false, autoScroll = false } = {}
+    ) => (
       <AuthorProfilePagination
         count={count}
         hideResults={hideResults}
         onNext={(...args) => {
           onNext(...args);
-          scrollToTopNextFrame();
+          if (autoScroll) scrollToTopNextFrame();
         }}
         onPrev={(...args) => {
           onPrev(...args);
-          scrollToTopNextFrame();
+          if (autoScroll) scrollToTopNextFrame();
         }}
         page={page}
         pageSize={pageSize}
@@ -182,10 +184,13 @@ class AuthorProfileContent extends React.Component {
               twitter={twitter}
               onTwitterLinkPress={onTwitterLinkPress}
             />
-            {paginationComponent({ hideResults: false })}
+            {paginationComponent({ hideResults: false, autoScroll: false })}
           </View>
         }
-        ListFooterComponent={paginationComponent({ hideResults: true })}
+        ListFooterComponent={paginationComponent({
+          hideResults: true,
+          autoScroll: true
+        })}
         ItemSeparatorComponent={() => (
           <View style={styles.padding}>
             <AuthorProfileItemSeparator />

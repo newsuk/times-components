@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tracking",
-  "version": "0.6.6",
+  "version": "0.6.8",
   "main": "tracking",
   "scripts": {
     "test:native": "jest --config='./jest.config.json'",
@@ -33,8 +33,8 @@
   "devDependencies": {
     "@storybook/react-native": "3.3.9",
     "@times-components/eslint-config-thetimes": "0.1.3",
-    "@times-components/storybook": "0.2.4",
-    "@times-components/tealium": "0.1.13",
+    "@times-components/storybook": "0.2.5",
+    "@times-components/tealium": "0.1.14",
     "dextrose": "1.4.0",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
@@ -55,6 +55,7 @@
     "react-display-name": "0.2.3"
   },
   "peerDependencies": {
+    "babel-plugin-add-react-displayname": "0.0.4",
     "babel-preset-env": "1.6.1",
     "babel-preset-stage-2": "6.24.1",
     "react": ">=16",

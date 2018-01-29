@@ -3,6 +3,36 @@
   "publication": "TIMES",
   "date": "2017-11-17T00:01:00.000Z",
   "headline": "Top medal for forces dog who took a bite out of the Taliban",
+  "byline": [
+    {
+      "name": "author",
+      "attributes": {
+        "slug": "camilla-long"
+      },
+      "children": [
+        {
+          "name": "text",
+          "attributes": {
+            "value": "Camilla Long"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "inline",
+      "attributes": {},
+      "children": [
+        {
+          "name": "text",
+          "attributes": {
+            "value": ", Environment Editor"
+          },
+          "children": []
+        }
+      ]
+    }
+  ],
   "text": [
     {
       "name": "paragraph",
