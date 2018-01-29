@@ -1,12 +1,12 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import RelatedArticles from "../related-articles";
+import Slice from "../slice";
 
-const singleRelatedArticleFixture = require("../fixtures/related-article.json");
-const singleRelatedArticleNoImageFixture = require("../fixtures/related-article-no-image.json");
-const singleRelatedArticleNoLabelFixture = require("../fixtures/related-article-no-label.json");
-const singleRelatedArticleNoBylineFixture = require("../fixtures/related-article-no-byline.json");
+const singleRelatedArticleFixture = require("../fixtures/single-related-article.json");
+const singleRelatedArticleNoImageFixture = require("../fixtures/single-related-article-no-image.json");
+const singleRelatedArticleNoLabelFixture = require("../fixtures/single-related-article-no-label.json");
+const singleRelatedArticleNoBylineFixture = require("../fixtures/single-related-article-no-byline.json");
 
 const createProps = fixtureData => ({
   ...fixtureData.relatedArticles[0],
@@ -29,10 +29,10 @@ module.exports = () => {
     global.Intl = realIntl;
   });
 
-  it("renders single default related article", () => {
+  it("renders single article", () => {
     const tree = renderer
       .create(
-        <RelatedArticles
+        <Slice
           item={createProps(singleRelatedArticleFixture.data)}
           analyticsStream={() => {}}
         />
@@ -41,10 +41,10 @@ module.exports = () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders single default related article with no lead image", () => {
+  it("renders single article with no lead image", () => {
     const tree = renderer
       .create(
-        <RelatedArticles
+        <Slice
           item={createProps(singleRelatedArticleNoImageFixture.data)}
           analyticsStream={() => {}}
         />
@@ -53,10 +53,10 @@ module.exports = () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders single default related article with no label", () => {
+  it("renders single article with no label", () => {
     const tree = renderer
       .create(
-        <RelatedArticles
+        <Slice
           item={createProps(singleRelatedArticleNoLabelFixture.data)}
           analyticsStream={() => {}}
         />
@@ -65,10 +65,10 @@ module.exports = () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders single default related article with no byline", () => {
+  it("renders single article with no byline", () => {
     const tree = renderer
       .create(
-        <RelatedArticles
+        <Slice
           item={createProps(singleRelatedArticleNoBylineFixture.data)}
           analyticsStream={() => {}}
         />

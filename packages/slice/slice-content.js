@@ -10,7 +10,7 @@ import SharedStyles from "./styles/shared";
 
 const styles = StyleSheet.create(SharedStyles);
 
-const RelatedArticlesContent = ({ item }) => {
+const SliceContent = ({ item }) => {
   const {
     byline,
     label,
@@ -54,7 +54,7 @@ const RelatedArticlesContent = ({ item }) => {
   );
 };
 
-RelatedArticlesContent.propTypes = {
+SliceContent.propTypes = {
   item: PropTypes.shape({
     byline: PropTypes.arrayOf(treePropType),
     headline: PropTypes.string,
@@ -67,4 +67,4 @@ RelatedArticlesContent.propTypes = {
   }).isRequired
 };
 
-export default RelatedArticlesContent;
+export default SliceContent;
