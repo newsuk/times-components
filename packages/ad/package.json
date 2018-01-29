@@ -59,7 +59,7 @@
     "prop-types": "15.6.0",
     "react-broadcast": "0.5.2",
     "store": "^1.3.17",
-    "lodash": "4.4.2"
+    "lodash.foreach": "4.4.0"
   },
   "peerDependencies": {
     "babel-preset-env": "1.6.1",

@@ -1,5 +1,5 @@
 /* eslint-env browser */
-import forEach from "lodash/forEach";
+import forEach from "lodash.foreach";
 
 const GptManager = class GptManager {
   constructor() {
