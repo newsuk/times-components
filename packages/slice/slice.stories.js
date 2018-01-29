@@ -15,7 +15,7 @@ const preventDefaultedAction = decorateAction([
   }
 ]);
 
-const createProps = fixtureData => ({
+const createRelatedArticlesProps = fixtureData => ({
   ...fixtureData.relatedArticles[0],
   template: fixtureData.relatedArticlesTemplate,
   onPress: preventDefaultedAction("onArticlePress")
@@ -23,14 +23,24 @@ const createProps = fixtureData => ({
 
 storiesOf("Slice", module)
   .add("Single related article default", () => (
-    <Slice item={createProps(singleRelatedArticleFixture.data)} />
+    <Slice
+      item={createRelatedArticlesProps(singleRelatedArticleFixture.data)}
+    />
   ))
   .add("Single related article with no lead image", () => (
-    <Slice item={createProps(singleRelatedArticleNoImageFixture.data)} />
+    <Slice
+      item={createRelatedArticlesProps(singleRelatedArticleNoImageFixture.data)}
+    />
   ))
   .add("Single related article with no label", () => (
-    <Slice item={createProps(singleRelatedArticleNoLabelFixture.data)} />
+    <Slice
+      item={createRelatedArticlesProps(singleRelatedArticleNoLabelFixture.data)}
+    />
   ))
   .add("Single related article with no byline", () => (
-    <Slice item={createProps(singleRelatedArticleNoBylineFixture.data)} />
+    <Slice
+      item={createRelatedArticlesProps(
+        singleRelatedArticleNoBylineFixture.data
+      )}
+    />
   ));

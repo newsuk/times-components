@@ -1,5 +1,5 @@
 import shared from "../shared";
 
-describe("RelatedArticles test on ios", () => {
+describe("Slice test on ios", () => {
   shared();
 });
