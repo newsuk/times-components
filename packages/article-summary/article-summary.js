@@ -66,13 +66,16 @@ const ArticleSummary = props => {
       <Text style={styles.label}>{labelText}</Text>
       <Text style={styles.headline}>{headline}</Text>
       <Text style={styles.text}>{renderTrees(summary, renderer)}</Text>
-      <Text
-        style={styles.datePublication}
-        accessibilityLabel="datePublication"
-        testID="datePublication"
-      >
-        <DatePublication date={date} publication={publication} />
-      </Text>
+      {date &&
+        publication && (
+          <Text
+            style={styles.datePublication}
+            accessibilityLabel="datePublication"
+            testID="datePublication"
+          >
+            <DatePublication date={date} publication={publication} />
+          </Text>
+        )}
     </View>
   );
 };
@@ -81,7 +84,7 @@ ArticleSummary.propTypes = {
   label: PropTypes.string,
   headline: PropTypes.string,
   text: PropTypes.arrayOf(treePropType),
-  date: DatePublication.propTypes.date,
+  date: PropTypes.string,
   publication: DatePublication.propTypes.publication
 };
 
