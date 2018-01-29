@@ -203,7 +203,8 @@
             },
             {
               "name": "hasLeadAssets",
-              "description": "Some authors have poor article lead assets, this flag denotes that the lead assets are useful for presentation purposes",
+              "description":
+                "Some authors have poor article lead assets, this flag denotes that the lead assets are useful for presentation purposes",
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -215,7 +216,8 @@
             },
             {
               "name": "twitter",
-              "description": "Twitter handle for an author (can be an empty string)",
+              "description":
+                "Twitter handle for an author (can be an empty string)",
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -254,7 +256,8 @@
               "args": [
                 {
                   "name": "first",
-                  "description": "The maximum number of articles you want to take, defaults to 10",
+                  "description":
+                    "The maximum number of articles you want to take, defaults to 10",
                   "type": {
                     "kind": "SCALAR",
                     "name": "Int",
@@ -264,7 +267,8 @@
                 },
                 {
                   "name": "skip",
-                  "description": "The number of articles to skip over, useful for paging, defaults to 0",
+                  "description":
+                    "The number of articles to skip over, useful for paging, defaults to 0",
                   "type": {
                     "kind": "SCALAR",
                     "name": "Int",
@@ -298,7 +302,8 @@
         {
           "kind": "SCALAR",
           "name": "Int",
-          "description": "The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1. ",
+          "description":
+            "The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1. ",
           "fields": null,
           "inputFields": null,
           "interfaces": null,
@@ -312,7 +317,8 @@
           "fields": [
             {
               "name": "byline",
-              "description": "An AST of one or more authors that may contain job titles and/or locations",
+              "description":
+                "An AST of one or more authors that may contain job titles and/or locations",
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -328,7 +334,8 @@
               "args": [
                 {
                   "name": "maxWordCount",
-                  "description": "If a teaser is required, use to truncate the article content by words. If the client doesn't have permission for the content, the maximum will be the lesser of the predefined teaser length and requested maximum",
+                  "description":
+                    "If a teaser is required, use to truncate the article content by words. If the client doesn't have permission for the content, the maximum will be the lesser of the predefined teaser length and requested maximum",
                   "type": {
                     "kind": "SCALAR",
                     "name": "Int",
@@ -338,7 +345,8 @@
                 },
                 {
                   "name": "maxCharCount",
-                  "description": "If summary text is required, use to truncate the article content by characters. If the client doesn't have permission for the content, the maximum will be the lesser of the predefined teaser length and requested maximum",
+                  "description":
+                    "If summary text is required, use to truncate the article content by characters. If the client doesn't have permission for the content, the maximum will be the lesser of the predefined teaser length and requested maximum",
                   "type": {
                     "kind": "SCALAR",
                     "name": "Int",
@@ -348,7 +356,8 @@
                 },
                 {
                   "name": "markupType",
-                  "description": "A filter on the article content as Markup, for unauthorised users it will default to \"paragraph\"",
+                  "description":
+                    "A filter on the article content as Markup, for unauthorised users it will default to \"paragraph\"",
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -463,7 +472,8 @@
             },
             {
               "name": "relatedArticles",
-              "description": "Curated list of articles selected by editorial that appear at the end of an article",
+              "description":
+                "Curated list of articles selected by editorial that appear at the end of an article",
               "args": [],
               "type": {
                 "kind": "LIST",
@@ -479,7 +489,8 @@
             },
             {
               "name": "relatedArticlesLayout",
-              "description": "Presentational information on how the related articles should be displayed",
+              "description":
+                "Presentational information on how the related articles should be displayed",
               "args": [],
               "type": {
                 "kind": "INTERFACE",
@@ -491,7 +502,8 @@
             },
             {
               "name": "standfirst",
-              "description": "A brief introductory summary, typically appearing immediately after the headline and typographically distinct from the rest of the article",
+              "description":
+                "A brief introductory summary, typically appearing immediately after the headline and typographically distinct from the rest of the article",
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -503,7 +515,8 @@
             },
             {
               "name": "summary",
-              "description": "A predefined truncated version of the article with a max length of the teaser, can optionally choose a shorter length. Use this to avoid ACS.",
+              "description":
+                "A predefined truncated version of the article with a max length of the teaser, can optionally choose a shorter length. Use this to avoid ACS.",
               "args": [
                 {
                   "name": "maxCharCount",
@@ -534,7 +547,8 @@
                 "ofType": null
               },
               "isDeprecated": true,
-              "deprecationReason": "Use headline instead which is more descriptive in the context of an article"
+              "deprecationReason":
+                "Use headline instead which is more descriptive in the context of an article"
             },
             {
               "name": "url",
@@ -567,7 +581,8 @@
         {
           "kind": "SCALAR",
           "name": "String",
-          "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+          "description":
+            "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
           "fields": null,
           "inputFields": null,
           "interfaces": null,
@@ -612,7 +627,8 @@
         {
           "kind": "SCALAR",
           "name": "ID",
-          "description": "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
+          "description":
+            "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
           "fields": null,
           "inputFields": null,
           "interfaces": null,
@@ -860,7 +876,8 @@
         {
           "kind": "INTERFACE",
           "name": "Layout",
-          "description": "A selection of template types that have opinions over how they should be presented. Usually used within the context of an associated list of articles",
+          "description":
+            "A selection of template types that have opinions over how they should be presented. Usually used within the context of an associated list of articles",
           "fields": [
             {
               "name": "template",
@@ -899,7 +916,8 @@
         {
           "kind": "ENUM",
           "name": "Template",
-          "description": "Predefined template names that should be used by all systems interested in templates to denote the template layout",
+          "description":
+            "Predefined template names that should be used by all systems interested in templates to denote the template layout",
           "fields": null,
           "inputFields": null,
           "interfaces": null,
@@ -928,7 +946,8 @@
         {
           "kind": "SCALAR",
           "name": "Boolean",
-          "description": "The `Boolean` scalar type represents `true` or `false`.",
+          "description":
+            "The `Boolean` scalar type represents `true` or `false`.",
           "fields": null,
           "inputFields": null,
           "interfaces": null,
@@ -1040,7 +1059,8 @@
             },
             {
               "name": "imageUrl",
-              "description": "Poster image of the most recent video of a competition",
+              "description":
+                "Poster image of the most recent video of a competition",
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -1064,7 +1084,8 @@
             },
             {
               "name": "groups",
-              "description": "A list of video groupings associated to a sport competition",
+              "description":
+                "A list of video groupings associated to a sport competition",
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -1094,7 +1115,8 @@
         {
           "kind": "OBJECT",
           "name": "SportVideoGroup",
-          "description": "A group of sport videos (e.g. round, match day, extras, ...)",
+          "description":
+            "A group of sport videos (e.g. round, match day, extras, ...)",
           "fields": [
             {
               "name": "name",
@@ -1114,7 +1136,8 @@
             },
             {
               "name": "brightcoveVideos",
-              "description": "A list of sport videos ordered by time of creation",
+              "description":
+                "A list of sport videos ordered by time of creation",
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -1144,7 +1167,8 @@
         {
           "kind": "OBJECT",
           "name": "BrightcoveSportVideo",
-          "description": "A video in the sports video hub. Note that some of these videos are only licensed on mobile applications.",
+          "description":
+            "A video in the sports video hub. Note that some of these videos are only licensed on mobile applications.",
           "fields": [
             {
               "name": "videoId",
@@ -1275,7 +1299,8 @@
         {
           "kind": "OBJECT",
           "name": "__Schema",
-          "description": "A GraphQL Schema defines the capabilities of a GraphQL server. It exposes all available types and directives on the server, as well as the entry points for query, mutation, and subscription operations.",
+          "description":
+            "A GraphQL Schema defines the capabilities of a GraphQL server. It exposes all available types and directives on the server, as well as the entry points for query, mutation, and subscription operations.",
           "fields": [
             {
               "name": "types",
@@ -1302,7 +1327,8 @@
             },
             {
               "name": "queryType",
-              "description": "The type that query operations will be rooted at.",
+              "description":
+                "The type that query operations will be rooted at.",
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -1318,7 +1344,8 @@
             },
             {
               "name": "mutationType",
-              "description": "If this server supports mutation, the type that mutation operations will be rooted at.",
+              "description":
+                "If this server supports mutation, the type that mutation operations will be rooted at.",
               "args": [],
               "type": {
                 "kind": "OBJECT",
@@ -1330,7 +1357,8 @@
             },
             {
               "name": "subscriptionType",
-              "description": "If this server support subscription, the type that subscription operations will be rooted at.",
+              "description":
+                "If this server support subscription, the type that subscription operations will be rooted at.",
               "args": [],
               "type": {
                 "kind": "OBJECT",
@@ -1342,7 +1370,8 @@
             },
             {
               "name": "directives",
-              "description": "A list of all directives supported by this server.",
+              "description":
+                "A list of all directives supported by this server.",
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -1372,7 +1401,8 @@
         {
           "kind": "OBJECT",
           "name": "__Type",
-          "description": "The fundamental unit of any GraphQL Schema is the type. There are many kinds of types in GraphQL as represented by the `__TypeKind` enum.\n\nDepending on the kind of a type, certain fields describe information about that type. Scalar types provide no information beyond a name and description, while Enum types provide their values. Object and Interface types provide the fields they describe. Abstract types, Union and Interface, provide the Object types possible at runtime. List and NonNull types compose other types.",
+          "description":
+            "The fundamental unit of any GraphQL Schema is the type. There are many kinds of types in GraphQL as represented by the `__TypeKind` enum.\n\nDepending on the kind of a type, certain fields describe information about that type. Scalar types provide no information beyond a name and description, while Enum types provide their values. Object and Interface types provide the fields they describe. Abstract types, Union and Interface, provide the Object types possible at runtime. List and NonNull types compose other types.",
           "fields": [
             {
               "name": "kind",
@@ -1557,7 +1587,8 @@
         {
           "kind": "ENUM",
           "name": "__TypeKind",
-          "description": "An enum describing what kind of type a given `__Type` is.",
+          "description":
+            "An enum describing what kind of type a given `__Type` is.",
           "fields": null,
           "inputFields": null,
           "interfaces": null,
@@ -1570,43 +1601,50 @@
             },
             {
               "name": "OBJECT",
-              "description": "Indicates this type is an object. `fields` and `interfaces` are valid fields.",
+              "description":
+                "Indicates this type is an object. `fields` and `interfaces` are valid fields.",
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "INTERFACE",
-              "description": "Indicates this type is an interface. `fields` and `possibleTypes` are valid fields.",
+              "description":
+                "Indicates this type is an interface. `fields` and `possibleTypes` are valid fields.",
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "UNION",
-              "description": "Indicates this type is a union. `possibleTypes` is a valid field.",
+              "description":
+                "Indicates this type is a union. `possibleTypes` is a valid field.",
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "ENUM",
-              "description": "Indicates this type is an enum. `enumValues` is a valid field.",
+              "description":
+                "Indicates this type is an enum. `enumValues` is a valid field.",
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "INPUT_OBJECT",
-              "description": "Indicates this type is an input object. `inputFields` is a valid field.",
+              "description":
+                "Indicates this type is an input object. `inputFields` is a valid field.",
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "LIST",
-              "description": "Indicates this type is a list. `ofType` is a valid field.",
+              "description":
+                "Indicates this type is a list. `ofType` is a valid field.",
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "NON_NULL",
-              "description": "Indicates this type is a non-null. `ofType` is a valid field.",
+              "description":
+                "Indicates this type is a non-null. `ofType` is a valid field.",
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -1616,7 +1654,8 @@
         {
           "kind": "OBJECT",
           "name": "__Field",
-          "description": "Object and Interface types are described by a list of Fields, each of which has a name, potentially a list of arguments, and a return type.",
+          "description":
+            "Object and Interface types are described by a list of Fields, each of which has a name, potentially a list of arguments, and a return type.",
           "fields": [
             {
               "name": "name",
@@ -1722,7 +1761,8 @@
         {
           "kind": "OBJECT",
           "name": "__InputValue",
-          "description": "Arguments provided to Fields or Directives and the input fields of an InputObject are represented as Input Values which describe their type and optionally a default value.",
+          "description":
+            "Arguments provided to Fields or Directives and the input fields of an InputObject are represented as Input Values which describe their type and optionally a default value.",
           "fields": [
             {
               "name": "name",
@@ -1770,7 +1810,8 @@
             },
             {
               "name": "defaultValue",
-              "description": "A GraphQL-formatted string representing the default value for this input value.",
+              "description":
+                "A GraphQL-formatted string representing the default value for this input value.",
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -1789,7 +1830,8 @@
         {
           "kind": "OBJECT",
           "name": "__EnumValue",
-          "description": "One possible value for a given Enum. Enum values are unique values, not a placeholder for a string or numeric value. However an Enum value is returned in a JSON response as a string.",
+          "description":
+            "One possible value for a given Enum. Enum values are unique values, not a placeholder for a string or numeric value. However an Enum value is returned in a JSON response as a string.",
           "fields": [
             {
               "name": "name",
@@ -1856,7 +1898,8 @@
         {
           "kind": "OBJECT",
           "name": "__Directive",
-          "description": "A Directive provides a way to describe alternate runtime execution and type validation behavior in a GraphQL document.\n\nIn some cases, you need to provide options to alter GraphQL's execution behavior in ways field arguments will not suffice, such as conditionally including or skipping a field. Directives provide this by describing additional information to the executor.",
+          "description":
+            "A Directive provides a way to describe alternate runtime execution and type validation behavior in a GraphQL document.\n\nIn some cases, you need to provide options to alter GraphQL's execution behavior in ways field arguments will not suffice, such as conditionally including or skipping a field. Directives provide this by describing additional information to the executor.",
           "fields": [
             {
               "name": "name",
@@ -1989,7 +2032,8 @@
         {
           "kind": "ENUM",
           "name": "__DirectiveLocation",
-          "description": "A Directive can be adjacent to many parts of the GraphQL language, a __DirectiveLocation describes one such possible adjacencies.",
+          "description":
+            "A Directive can be adjacent to many parts of the GraphQL language, a __DirectiveLocation describes one such possible adjacencies.",
           "fields": null,
           "inputFields": null,
           "interfaces": null,
@@ -2092,13 +2136,15 @@
             },
             {
               "name": "INPUT_OBJECT",
-              "description": "Location adjacent to an input object type definition.",
+              "description":
+                "Location adjacent to an input object type definition.",
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "INPUT_FIELD_DEFINITION",
-              "description": "Location adjacent to an input object field definition.",
+              "description":
+                "Location adjacent to an input object field definition.",
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -2108,7 +2154,8 @@
         {
           "kind": "OBJECT",
           "name": "LeadAndTwo",
-          "description": "Three articles with one that has more importance over the others denoted by the lead ID. Would usually be associated with a list of articles",
+          "description":
+            "Three articles with one that has more importance over the others denoted by the lead ID. Would usually be associated with a list of articles",
           "fields": [
             {
               "name": "template",
@@ -2149,7 +2196,8 @@
         {
           "kind": "OBJECT",
           "name": "OpinionAndTwo",
-          "description": "Three articles with one that has more importance over the others denoted by the opinion ID. Would usually be associated with a list of articles",
+          "description":
+            "Three articles with one that has more importance over the others denoted by the opinion ID. Would usually be associated with a list of articles",
           "fields": [
             {
               "name": "template",
@@ -2190,7 +2238,8 @@
         {
           "kind": "OBJECT",
           "name": "Default",
-          "description": "Any number of articles with no opinion on the layout/importance of any",
+          "description":
+            "Any number of articles with no opinion on the layout/importance of any",
           "fields": [
             {
               "name": "template",
@@ -2220,7 +2269,8 @@
       "directives": [
         {
           "name": "skip",
-          "description": "Directs the executor to skip this field or fragment when the `if` argument is true.",
+          "description":
+            "Directs the executor to skip this field or fragment when the `if` argument is true.",
           "args": [
             {
               "name": "if",
@@ -2243,7 +2293,8 @@
         },
         {
           "name": "include",
-          "description": "Directs the executor to include this field or fragment only when the `if` argument is true.",
+          "description":
+            "Directs the executor to include this field or fragment only when the `if` argument is true.",
           "args": [
             {
               "name": "if",
@@ -2266,11 +2317,13 @@
         },
         {
           "name": "deprecated",
-          "description": "Marks an element of a GraphQL schema as no longer supported.",
+          "description":
+            "Marks an element of a GraphQL schema as no longer supported.",
           "args": [
             {
               "name": "reason",
-              "description": "Explains why this element was deprecated, usually also including a suggestion for how to access supported similar data. Formatted in [Markdown](https://daringfireball.net/projects/markdown/).",
+              "description":
+                "Explains why this element was deprecated, usually also including a suggestion for how to access supported similar data. Formatted in [Markdown](https://daringfireball.net/projects/markdown/).",
               "type": {
                 "kind": "SCALAR",
                 "name": "String",

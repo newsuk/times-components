@@ -568,7 +568,8 @@
                 {
                   "name": "text",
                   "attributes": {
-                    "value": "GAY and lesbian couples and those who have children using IVF treatment or a surrogate make better parents than heterosexual couples, according to the author of a new book."
+                    "value":
+                      "GAY and lesbian couples and those who have children using IVF treatment or a surrogate make better parents than heterosexual couples, according to the author of a new book."
                   },
                   "children": []
                 }
@@ -581,7 +582,8 @@
                 {
                   "name": "text",
                   "attributes": {
-                    "value": "Susan Golombok, director of the Centre for Family Research at Cambridge University, believes that, in general, these so-called “new” families face so many obstacles to reach parenthood that they perform better when they arrive there."
+                    "value":
+                      "Susan Golombok, director of the Centre for Family Research at Cambridge University, believes that, in general, these so-called “new” families face so many obstacles to reach parenthood that they perform better when they arrive there."
                   },
                   "children": []
                 }
@@ -594,7 +596,8 @@
                 {
                   "name": "text",
                   "attributes": {
-                    "value": "“When you think about it, the parents of these families are people who have often gone through years of infertility or faced a lot of social disapproval, or sometimes both,” she said."
+                    "value":
+                      "“When you think about it, the parents of these families are people who have often gone through years of infertility or faced a lot of social disapproval, or sometimes both,” she said."
                   },
                   "children": []
                 }
@@ -607,14 +610,16 @@
                 {
                   "name": "text",
                   "attributes": {
-                    "value": "“So only people that really, really want to be parents stay the course. It’s often so difficult that if you weren’t so committed then you’d just drop off along"
+                    "value":
+                      "“So only people that really, really want to be parents stay the course. It’s often so difficult that if you weren’t so committed then you’d just drop off along"
                   },
                   "children": []
                 }
               ]
             }
           ],
-          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/gay-and-ivf-couples-better-at-raising-children-c5bp6fpgv"
+          "url":
+            "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/gay-and-ivf-couples-better-at-raising-children-c5bp6fpgv"
         },
         {
           "byline": [
@@ -644,7 +649,8 @@
                 {
                   "name": "text",
                   "attributes": {
-                    "value": "THE Prince of Wales will not hold back his opinions when he writes and talks to government ministers, even if the Supreme Court rules this week that letters revealing his “most deeply held personal views and beliefs” must be made public."
+                    "value":
+                      "THE Prince of Wales will not hold back his opinions when he writes and talks to government ministers, even if the Supreme Court rules this week that letters revealing his “most deeply held personal views and beliefs” must be made public."
                   },
                   "children": []
                 }
@@ -657,7 +663,8 @@
                 {
                   "name": "text",
                   "attributes": {
-                    "value": "Informed sources told The Sunday Times this weekend that Charles “continues to believe it is his duty to talk to ministers about things he has learnt, or about issues which (while not party political) need some attention”."
+                    "value":
+                      "Informed sources told The Sunday Times this weekend that Charles “continues to believe it is his duty to talk to ministers about things he has learnt, or about issues which (while not party political) need some attention”."
                   },
                   "children": []
                 }
@@ -670,7 +677,8 @@
                 {
                   "name": "text",
                   "attributes": {
-                    "value": "In a 10-year legal battle to block the publication of the letters, the government has argued that their release could “seriously damage” Charles’s future role as king if they were made public."
+                    "value":
+                      "In a 10-year legal battle to block the publication of the letters, the government has argued that their release could “seriously damage” Charles’s future role as king if they were made public."
                   },
                   "children": []
                 }
@@ -683,14 +691,16 @@
                 {
                   "name": "text",
                   "attributes": {
-                    "value": "Dominic Grieve, the former attorney-general, has argued that the monarch could not be seen to"
+                    "value":
+                      "Dominic Grieve, the former attorney-general, has argued that the monarch could not be seen to"
                   },
                   "children": []
                 }
               ]
             }
           ],
-          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/charles-to-keep-writing-memos-686ncmbpq"
+          "url":
+            "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/charles-to-keep-writing-memos-686ncmbpq"
         }
       ],
       "__typename": "Article"

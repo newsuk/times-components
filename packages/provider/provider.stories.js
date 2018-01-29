@@ -6,7 +6,7 @@ import gql from "graphql-tag";
 import { MockedProvider } from "@times-components/utils/graphql";
 import connectGraphql, {
   AuthorProfileProvider,
-  ArticleProvider,
+  ArticleProvider
 } from "./provider.js";
 import { query as authorProfileQuery } from "./author-profile";
 import fixture from "./fixtures/author-profile/author-profile.json";
