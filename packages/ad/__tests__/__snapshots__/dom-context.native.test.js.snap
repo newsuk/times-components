@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DOMContext renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "height": 200,
+      "width": 200,
+    }
+  }
+>
+  <WebView
+    onMessage={[Function]}
+    source={
+      Object {
+        "html": "
+      <html>
+        <head>
+        <meta name=\\"viewport\\" content=\\"width=200,height=200,initial-scale=1,user-scalable=no\\">
+        </head>
+        <body>
+          <div></div>
+          <script>
+          function handleError(type, detail) {
+            // error can intefere with postMessage if not delayed to next frame
+            requestAnimationFrame(() => {
+              window.postMessage(JSON.stringify({
+                type: type,
+                detail: detail
+              }), \\"*\\");
+            });
+          }
+          window.onerror = function(e) {
+            handleError(\\"initialisation\\", e.toString());
+          }
+          </script>
+          <script>
+            var harness = (mockHarness)({
+              el: document.getElementsByTagName(\\"div\\")[0],
+              window: window,
+              document: document,
+              handleError: handleError,
+              init: function init() {},
+              data: {\\"foo\\":\\"bar\\"},
+              scriptUris: [],
+              globalNames: []
+            });
+            harness.execute();
+          </script>
+        </body>
+      </html>
+    ",
+      }
+    }
+  />
+</View>
+`;
