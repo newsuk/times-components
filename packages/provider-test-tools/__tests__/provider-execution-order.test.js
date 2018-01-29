@@ -1,6 +1,6 @@
 import gql from "graphql-tag";
-import { createProviderTester, getRenderedQueries, getResolvedQueries } from "./provider-testing-utils";
-import connectGraphql from "../connect";
+import { graphql } from "react-apollo";
+import { providerTester, getRenderedQueries } from "../";
 
 function AuthorQueryResolver({ variables }) {
   return {
@@ -13,6 +13,22 @@ function AuthorQueryResolver({ variables }) {
   };
 }
 
+const connect = query => {
+  const Wrapper = ({
+    data: { error, loading, ...result },
+    children,
+    ...props
+  }) =>
+    children({
+      error,
+      loading,
+      ...result,
+      ...props
+    });
+
+  return graphql(query)(Wrapper);
+};
+
 const query = gql`
   query AuthorQuery($slug: Slug!) {
     author(slug: $slug) {
@@ -23,59 +39,58 @@ const query = gql`
 
 describe("provider execution order tests", () => {
   it("should resolve in order", async () => {
-    const Connected = connectGraphql(query);
-    const { link, setProps } = createProviderTester(
+    const { link, setProps } = providerTester(
       AuthorQueryResolver,
-      Connected,
+      connect(query),
       { slug: "1" }
     );
 
-    await link.findByQuery('AuthorQuery', {slug: "1"}).resolve();
+    await link.findByQuery("AuthorQuery", { slug: "1" }).resolve();
     expect(getRenderedQueries(link)[0]).toMatchObject({
-      isLoading: true,
+      loading: true,
       variables: { slug: "1" }
     });
 
     await setProps({ slug: "2" });
     expect(getRenderedQueries(link).length).toBe(2);
     expect(getRenderedQueries(link)[1]).toMatchObject({
-      isLoading: true,
+      loading: true,
       variables: { slug: "2" }
     });
 
-
-    await link.findByQuery('AuthorQuery', {slug: "2"}).resolve();
+    await link.findByQuery("AuthorQuery", { slug: "2" }).resolve();
     expect(getRenderedQueries(link).length).toBe(3);
     expect(getRenderedQueries(link)[2]).toMatchObject({
-      isLoading: false,
+      loading: false,
       variables: { slug: "2" },
       author: { name: "2" }
     });
   });
 
   it("should render in order even if resolved out of order", async () => {
-    const Connected = connectGraphql(query);
-    const { link, setProps } = createProviderTester(
+    const { link, setProps } = providerTester(
       AuthorQueryResolver,
-      Connected,
+      connect(query),
       { slug: "1" }
     );
 
-
     await setProps({ slug: "2" });
-    await link.findByQuery('AuthorQuery', {slug: "2"}).resolve();
+    await link.findByQuery("AuthorQuery", { slug: "2" }).resolve();
     expect(getRenderedQueries(link).length).toBe(3);
-    expect(getRenderedQueries(link)).toMatchObject([{
-      isLoading: true,
-      variables: { slug: "1" }
-    },{
-      isLoading: true,
-      variables: { slug: "2" }
-    },{
-      isLoading: false,
-      variables: { slug: "2" },
-      author: { name: "2" }
-    }]);
+    expect(getRenderedQueries(link)).toMatchObject([
+      {
+        loading: true,
+        variables: { slug: "1" }
+      },
+      {
+        loading: true,
+        variables: { slug: "2" }
+      },
+      {
+        loading: false,
+        variables: { slug: "2" },
+        author: { name: "2" }
+      }
+    ]);
   });
-
 });

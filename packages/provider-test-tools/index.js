@@ -3,9 +3,9 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 import { ApolloLink, Observable } from "apollo-link";
 import renderer from "react-test-renderer";
 import { ApolloProvider } from "react-apollo";
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import { isEqual } from "lodash";
+import isEqual from "lodash.isequal";
 
 function createFuture() {
   let resolve;
@@ -34,7 +34,7 @@ export class TestLink extends ApolloLink {
   findByQuery(queryName, variables) {
     return this.operations.find(
       ({ operation }) =>
-        operation.operationName == queryName &&
+        operation.operationName === queryName &&
         (!variables || isEqual(operation.variables, variables))
     );
   }
@@ -42,11 +42,11 @@ export class TestLink extends ApolloLink {
   filterByQuery(queryName, variables) {
     return this.operations.filter(
       ({ operation }) =>
-        operation.operationName == queryName &&
+        operation.operationName === queryName &&
         (!variables || isEqual(operation.variables, variables))
     );
   }
-  
+
   // push a custom event
   pushEvent(data) {
     this.events.push(data);
@@ -91,7 +91,7 @@ export class TestLink extends ApolloLink {
   }
 }
 
-export function createClientTester(requestHandler) {
+export function clientTester(requestHandler) {
   const link = new TestLink(requestHandler);
   const client = new ApolloClient({
     cache: new InMemoryCache(),
@@ -101,15 +101,11 @@ export function createClientTester(requestHandler) {
   return { client, link };
 }
 
-export function createProviderTester(
-  requestHandler,
-  Component,
-  defaultProps = {}
-) {
-  const { link, client } = createClientTester(requestHandler);
+export function providerTester(requestHandler, Component, defaultProps = {}) {
+  const { link, client } = clientTester(requestHandler);
 
   let setProps = () => Promise.resolve();
-  class Stateful extends Component {
+  class Stateful extends React.Component {
     constructor(props) {
       super(props);
       this.state = defaultProps;
@@ -181,14 +177,16 @@ export function getEvents(link) {
 }
 
 export function getResolvedQueries(link) {
-  return link.getEvents()
-    .filter(e => e.type == 'resolved')
+  return link
+    .getEvents()
+    .filter(e => e.type === "resolved")
     .map(tidyEvent);
 }
 
 export function getRenderedQueries(link) {
-  return link.getEvents()
-    .filter(e => e.type == 'render')
+  return link
+    .getEvents()
+    .filter(e => e.type === "render")
     .map(tidyEvent)
-    .map(x=>x.props);
+    .map(x => x.props);
 }

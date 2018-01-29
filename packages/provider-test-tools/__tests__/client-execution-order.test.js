@@ -1,5 +1,5 @@
 import gql from "graphql-tag";
-import { createClientTester, getResolvedQueries } from "./provider-testing-utils";
+import { clientTester, getResolvedQueries } from "../";
 
 function AuthorQueryResolver({ variables }) {
   return {
@@ -22,7 +22,7 @@ const query = gql`
 
 describe("apollo-client tests", () => {
   it("should resolve correctly", async () => {
-    const { client, link } = createClientTester(AuthorQueryResolver);
+    const { client, link } = clientTester(AuthorQueryResolver);
 
     const q = client.query({
       query,
@@ -40,7 +40,7 @@ describe("apollo-client tests", () => {
   });
 
   it("should not send the same query multiple times", async () => {
-    const { client, link } = createClientTester(AuthorQueryResolver);
+    const { client, link } = clientTester(AuthorQueryResolver);
 
     const queries = Promise.all([
       client.query({ query, variables: { slug: "1" } }),
@@ -54,17 +54,16 @@ describe("apollo-client tests", () => {
     await link.findByQuery("AuthorQuery", { slug: "1" }).resolve();
     await link.findByQuery("AuthorQuery", { slug: "2" }).resolve();
 
-    await queries; 
+    await queries;
 
-    expect(getResolvedQueries(link))
-      .toMatchObject([
-        { vars: { slug: "1" } },
-        { vars: { slug: "2" } }
-      ]);
+    expect(getResolvedQueries(link)).toMatchObject([
+      { vars: { slug: "1" } },
+      { vars: { slug: "2" } }
+    ]);
   });
 
   it("should retrieve same response from cache", async () => {
-    const { client, link } = createClientTester(AuthorQueryResolver);
+    const { client, link } = clientTester(AuthorQueryResolver);
 
     const q1 = client.query({ query, variables: { slug: "1" } });
     await link.findByQuery("AuthorQuery", { slug: "1" }).resolve();
@@ -73,12 +72,11 @@ describe("apollo-client tests", () => {
     await Promise.all([q1, q2]);
 
     expect(link.filterByQuery("AuthorQuery").length).toBe(1);
-    expect(getResolvedQueries(link))
-      .toMatchObject([ { vars: { slug: "1" } }])
+    expect(getResolvedQueries(link)).toMatchObject([{ vars: { slug: "1" } }]);
   });
 
   it("should return responses in the same order as resolved", async () => {
-    const { client, link } = createClientTester(AuthorQueryResolver);
+    const { client, link } = clientTester(AuthorQueryResolver);
 
     const queries = Promise.all([
       client.query({ query, variables: { slug: "1" } }),

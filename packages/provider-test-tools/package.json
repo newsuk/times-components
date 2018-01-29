@@ -1,0 +1,95 @@
+{
+  "name": "@times-components/provider-test-tools",
+  "version": "0.20.10",
+  "main": "index",
+  "scripts": {
+    "flow": "node_modules/flow-bin/cli.js",
+    "test:watch": "jest --bail --verbose --watchAll",
+    "test": "jest --bail --ci --coverage",
+    "prettier:diff": "prettier --list-different '**/*.*'",
+    "fmt": "prettier --write '**/*.*'",
+    "lint": "eslint . && yarn prettier:diff",
+    "dextrose-stories": "dextrose-stories",
+    "dextrose-clean": "dextrose-clean"
+  },
+  "jest": {
+    "preset": "react-native",
+    "rootDir": "../../",
+    "coverageDirectory": "<rootDir>/packages/provider-test-tools/coverage/",
+    "collectCoverageFrom": [
+      "**/packages/provider-test-tools/*.js",
+      "!**/packages/provider-test-tools/*stories.js"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!@times-components)/"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/provider-test-tools/__tests__/**.test.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "keywords": [
+    "react-native-web",
+    "react",
+    "native",
+    "web",
+    "provider",
+    "component"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "devDependencies": {
+    "@storybook/react-native": "3.2.18",
+    "@times-components/eslint-config-thetimes": "0.1.1",
+    "@times-components/utils": "0.1.1",
+    "babel-cli": "6.24.1",
+    "babel-core": "6.24.1",
+    "babel-eslint": "7.2.3",
+    "babel-jest": "21.2.0",
+    "babel-loader": "7.1.2",
+    "babel-plugin-transform-react-remove-prop-types": "0.4.5",
+    "babel-preset-flow": "6.23.0",
+    "babel-preset-react-native": "1.9.2",
+    "dextrose": "1.2.14",
+    "enzyme": "3.2.0",
+    "enzyme-adapter-react-16": "1.1.0",
+    "eslint": "4.9.0",
+    "eslint-plugin-graphql": "1.4.1",
+    "flow-bin": "0.42.0",
+    "jest": "21.2.1",
+    "prettier": "1.8.2",
+    "webpack": "3.3.0"
+  },
+  "dependencies": {
+    "apollo-cache-inmemory": "1.1.5",
+    "apollo-client": "2.2.0",
+    "apollo-link": "1.0.7",
+    "apollo-link-local": "1.0.3",
+    "apollo-utilities": "1.0.4",
+    "graphql": "0.11.7",
+    "graphql-tag": "2.5.0",
+    "graphql-tools": "2.18.0",
+    "lodash.isequal": "4.4.0",
+    "prop-types": "15.6.0",
+    "react": "16.2.0",
+    "react-apollo": "2.0.4",
+    "react-dom": "16.2.0",
+    "react-native": "0.50.1",
+    "react-test-renderer": "16.2.0"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16",
+    "react-native": ">=0.50",
+    "react-native-web": ">=0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
