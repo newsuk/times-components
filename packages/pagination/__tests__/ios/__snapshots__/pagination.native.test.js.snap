@@ -83,8 +83,7 @@ exports[`Pagination on iOS renders correctly 1`] = `
             Object {
               "alignItems": "center",
               "flexDirection": "row",
-              "marginLeft": 10,
-              "marginRight": 12,
+              "padding": 12,
             }
           }
         >
@@ -217,8 +216,7 @@ exports[`Pagination on iOS renders next link 1`] = `
             Object {
               "alignItems": "center",
               "flexDirection": "row",
-              "marginLeft": 10,
-              "marginRight": 12,
+              "padding": 12,
             }
           }
         >
@@ -350,7 +348,7 @@ exports[`Pagination on iOS renders prev and next link 1`] = `
             Object {
               "alignItems": "center",
               "flexDirection": "row",
-              "marginLeft": 10,
+              "padding": 12,
             }
           }
         >
@@ -426,8 +424,7 @@ exports[`Pagination on iOS renders prev and next link 1`] = `
             Object {
               "alignItems": "center",
               "flexDirection": "row",
-              "marginLeft": 10,
-              "marginRight": 12,
+              "padding": 12,
             }
           }
         >
@@ -559,7 +556,7 @@ exports[`Pagination on iOS renders prev link 1`] = `
             Object {
               "alignItems": "center",
               "flexDirection": "row",
-              "marginLeft": 10,
+              "padding": 12,
             }
           }
         >
@@ -693,8 +690,7 @@ exports[`Pagination on iOS renders results message 1`] = `
             Object {
               "alignItems": "center",
               "flexDirection": "row",
-              "marginLeft": 10,
-              "marginRight": 12,
+              "padding": 12,
             }
           }
         >
@@ -799,8 +795,7 @@ exports[`Pagination on iOS renders with hidden results 1`] = `
             Object {
               "alignItems": "center",
               "flexDirection": "row",
-              "marginLeft": 10,
-              "marginRight": 12,
+              "padding": 12,
             }
           }
         >

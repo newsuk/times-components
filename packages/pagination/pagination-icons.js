@@ -13,7 +13,6 @@ const textStyle = {
 
 const container = {
   flexDirection: "row",
-  marginLeft: 10,
   ...Platform.select({
     web: {
       alignItems: "center"
@@ -30,13 +29,13 @@ const container = {
 const styles = StyleSheet.create({
   nextContainer: Object.assign(
     {
-      marginRight: 12
+      padding: 12
     },
     container
   ),
   previousContainer: Object.assign(
     {
-      marginLeft: 12
+      padding: 12
     },
     container
   ),
