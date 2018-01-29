@@ -15,41 +15,28 @@ const preventDefaultedAction = decorateAction([
   }
 ]);
 
+const createProps = fixtureData => ({
+  ...fixtureData.relatedArticles[0],
+  template: fixtureData.relatedArticlesTemplate,
+  onPress: preventDefaultedAction("onArticlePress")
+});
+
 storiesOf("Related Articles", module)
-  .add("Single article default", () => {
-    const props = {
-      ...singleRelatedArticleFixture.data.relatedArticles[0],
-      template: singleRelatedArticleFixture.data.relatedArticlesTemplate,
-      onPress: preventDefaultedAction("onArticlePress")
-    };
-
-    return <RelatedArticles item={props} />;
-  })
-  .add("Single article with no lead image", () => {
-    const props = {
-      ...singleRelatedArticleNoImageFixture.data.relatedArticles[0],
-      template: singleRelatedArticleNoImageFixture.data.relatedArticlesTemplate,
-      onPress: preventDefaultedAction("onArticlePress")
-    };
-
-    return <RelatedArticles item={props} />;
-  })
-  .add("Single article with no label", () => {
-    const props = {
-      ...singleRelatedArticleNoLabelFixture.data.relatedArticles[0],
-      template: singleRelatedArticleNoLabelFixture.data.relatedArticlesTemplate,
-      onPress: preventDefaultedAction("onArticlePress")
-    };
-
-    return <RelatedArticles item={props} />;
-  })
-  .add("Single article with no byline", () => {
-    const props = {
-      ...singleRelatedArticleNoBylineFixture.data.relatedArticles[0],
-      template:
-        singleRelatedArticleNoBylineFixture.data.relatedArticlesTemplate,
-      onPress: preventDefaultedAction("onArticlePress")
-    };
-
-    return <RelatedArticles item={props} />;
-  });
+  .add("Single article default", () => (
+    <RelatedArticles item={createProps(singleRelatedArticleFixture.data)} />
+  ))
+  .add("Single article with no lead image", () => (
+    <RelatedArticles
+      item={createProps(singleRelatedArticleNoImageFixture.data)}
+    />
+  ))
+  .add("Single article with no label", () => (
+    <RelatedArticles
+      item={createProps(singleRelatedArticleNoLabelFixture.data)}
+    />
+  ))
+  .add("Single article with no byline", () => (
+    <RelatedArticles
+      item={createProps(singleRelatedArticleNoBylineFixture.data)}
+    />
+  ));

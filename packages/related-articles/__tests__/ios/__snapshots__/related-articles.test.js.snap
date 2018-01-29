@@ -203,18 +203,14 @@ exports[`RelatedArticles test on ios renders single default related article 1`] 
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Array [
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontWeight": "400",
-                      "marginBottom": 5,
-                    },
-                    Object {
-                      "fontSize": 22,
-                      "lineHeight": 22,
-                    },
-                  ]
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontSize": 22,
+                    "fontWeight": "400",
+                    "lineHeight": 22,
+                    "marginBottom": 6,
+                  }
                 }
               >
                 Now for a new battle: bringing the fragile masterpiece over safely
@@ -255,55 +251,12 @@ exports[`RelatedArticles test on ios renders single default related article 1`] 
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
                     "lineHeight": 15,
-                    "marginBottom": 5,
+                    "marginBottom": 10,
                   }
                 }
                 testID="datePublication"
               >
-                Friday March 13 2015, 06:54pm
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                    "marginBottom": 5,
-                  }
-                }
-              >
-                <Text
-                  accessibilityRole="link"
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  href="/profile/camilla-long"
-                  onPress={[Function]}
-                  style={
-                    Array [
-                      Object {
-                        "textDecorationLine": "underline",
-                      },
-                      Object {
-                        "color": "#069",
-                      },
-                      undefined,
-                    ]
-                  }
-                >
-                  Camilla Long
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  , Environment Editor
-                </Text>
+                Friday March 13 2015, 06:54pm, The Times
               </Text>
             </View>
           </View>
@@ -517,18 +470,14 @@ exports[`RelatedArticles test on ios renders single default related article with
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Array [
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontWeight": "400",
-                      "marginBottom": 5,
-                    },
-                    Object {
-                      "fontSize": 22,
-                      "lineHeight": 22,
-                    },
-                  ]
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontSize": 22,
+                    "fontWeight": "400",
+                    "lineHeight": 22,
+                    "marginBottom": 6,
+                  }
                 }
               >
                 Now for a new battle: bringing the fragile masterpiece over safely
@@ -569,12 +518,12 @@ exports[`RelatedArticles test on ios renders single default related article with
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
                     "lineHeight": 15,
-                    "marginBottom": 5,
+                    "marginBottom": 10,
                   }
                 }
                 testID="datePublication"
               >
-                Friday March 13 2015, 06:54pm
+                Friday March 13 2015, 06:54pm, The Times
               </Text>
             </View>
           </View>
@@ -772,18 +721,30 @@ exports[`RelatedArticles test on ios renders single default related article with
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Array [
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontWeight": "400",
-                      "marginBottom": 5,
-                    },
-                    Object {
-                      "fontSize": 22,
-                      "lineHeight": 22,
-                    },
-                  ]
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 12,
+                    "letterSpacing": 1,
+                    "marginBottom": 2,
+                  }
+                }
+              >
+                
+              </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontSize": 22,
+                    "fontWeight": "400",
+                    "lineHeight": 22,
+                    "marginBottom": 6,
+                  }
                 }
               >
                 Now for a new battle: bringing the fragile masterpiece over safely
@@ -824,34 +785,12 @@ exports[`RelatedArticles test on ios renders single default related article with
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
                     "lineHeight": 15,
-                    "marginBottom": 5,
+                    "marginBottom": 10,
                   }
                 }
                 testID="datePublication"
               >
-                Friday March 13 2015, 06:54pm
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                    "marginBottom": 5,
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Charles Bremner, Paris | Jack Malvern
-                </Text>
+                Friday March 13 2015, 06:54pm, The Times
               </Text>
             </View>
           </View>
@@ -966,18 +905,14 @@ exports[`RelatedArticles test on ios renders single default related article with
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Array [
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
-                      "fontWeight": "400",
-                      "marginBottom": 5,
-                    },
-                    Object {
-                      "fontSize": 22,
-                      "lineHeight": 22,
-                    },
-                  ]
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontSize": 22,
+                    "fontWeight": "400",
+                    "lineHeight": 22,
+                    "marginBottom": 6,
+                  }
                 }
               >
                 Now for a new battle: bringing the fragile masterpiece over safely
@@ -1018,34 +953,12 @@ exports[`RelatedArticles test on ios renders single default related article with
                     "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": 13,
                     "lineHeight": 15,
-                    "marginBottom": 5,
+                    "marginBottom": 10,
                   }
                 }
                 testID="datePublication"
               >
-                Friday March 13 2015, 06:54pm
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                    "marginBottom": 5,
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Charles Bremner, Paris | Jack Malvern
-                </Text>
+                Friday March 13 2015, 06:54pm, The Times
               </Text>
             </View>
           </View>

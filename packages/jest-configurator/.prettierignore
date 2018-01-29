@@ -1,5 +1,4 @@
 **/node_modules/*
-**/coverage/*
 dist
 lib
 __snapshots__
@@ -9,6 +8,7 @@ CHANGELOG.md
 .*
 !*.json
 **/package.json
+**/coverage/*
 LICENSE
 yarn.lock
 *.sh

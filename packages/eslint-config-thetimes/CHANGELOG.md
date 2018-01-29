@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.3"></a>
+## [0.1.3](https://github.com/newsuk/times-components/compare/@times-components/eslint-config-thetimes@0.1.2...@times-components/eslint-config-thetimes@0.1.3) (2018-01-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/eslint-config-thetimes
+
 <a name="0.1.2"></a>
 ## [0.1.2](https://github.com/newsuk/times-components/compare/@times-components/eslint-config-thetimes@0.1.1...@times-components/eslint-config-thetimes@0.1.2) (2018-01-16)
 
