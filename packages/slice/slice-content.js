@@ -18,7 +18,7 @@ const SliceContent = ({ item }) => {
     onPress,
     publicationName,
     publishedTime,
-    summary125,
+    summary,
     url
   } = item;
 
@@ -46,7 +46,7 @@ const SliceContent = ({ item }) => {
             label={label}
             publication={publicationName}
             showPublication={false}
-            text={summary125}
+            text={summary}
           />
         </Card>
       </View>
