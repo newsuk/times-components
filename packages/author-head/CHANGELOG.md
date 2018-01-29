@@ -3,6 +3,84 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.17.4"></a>
+## [0.17.4](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.17.3...@times-components/author-head@0.17.4) (2018-01-24)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.17.3"></a>
+## [0.17.3](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.17.2...@times-components/author-head@0.17.3) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.17.2"></a>
+## [0.17.2](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.17.0...@times-components/author-head@0.17.2) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.17.1"></a>
+## [0.17.1](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.17.0...@times-components/author-head@0.17.1) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.17.0"></a>
+# [0.17.0](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.16.5...@times-components/author-head@0.17.0) (2018-01-18)
+
+
+### Features
+
+* REPLAT_1212 Pull Quote Design Update ([#529](https://github.com/newsuk/times-components/issues/529)) ([6f9c4c6](https://github.com/newsuk/times-components/commit/6f9c4c6))
+
+
+
+
+<a name="0.16.5"></a>
+## [0.16.5](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.16.4...@times-components/author-head@0.16.5) (2018-01-18)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.16.4"></a>
+## [0.16.4](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.16.3...@times-components/author-head@0.16.4) (2018-01-17)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.16.3"></a>
+## [0.16.3](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.16.2...@times-components/author-head@0.16.3) (2018-01-16)
+
+
+### Bug Fixes
+
+* apply design review changes to Author profile ([#522](https://github.com/newsuk/times-components/issues/522)) ([12796f3](https://github.com/newsuk/times-components/commit/12796f3))
+
+
+
+
+<a name="0.16.2"></a>
+## [0.16.2](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.16.1...@times-components/author-head@0.16.2) (2018-01-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
 <a name="0.16.1"></a>
 ## [0.16.1](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.16.0...@times-components/author-head@0.16.1) (2018-01-15)
 

@@ -18,7 +18,10 @@ const mocks = [
 const renderComponent = child =>
   renderer.create(
     <MockedProvider mocks={mocks}>
-      <ArticleProvider id="3107c018-cb60-11e4-81dd-064fe933cd41">
+      <ArticleProvider
+        id="3107c018-cb60-11e4-81dd-064fe933cd41"
+        debounceTimeMs={0}
+      >
         {child}
       </ArticleProvider>
     </MockedProvider>

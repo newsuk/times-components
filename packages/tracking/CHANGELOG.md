@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.7"></a>
+## [0.6.7](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.6.6...@times-components/tracking@0.6.7) (2018-01-24)
+
+
+### Bug Fixes
+
+* add tracking display name ([#565](https://github.com/newsuk/times-components/issues/565)) ([997930e](https://github.com/newsuk/times-components/commit/997930e))
+
+
+
+
+<a name="0.6.6"></a>
+## [0.6.6](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.6.5...@times-components/tracking@0.6.6) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/tracking
+
+<a name="0.6.5"></a>
+## [0.6.5](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.6.3...@times-components/tracking@0.6.5) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/tracking
+
+<a name="0.6.4"></a>
+## [0.6.4](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.6.3...@times-components/tracking@0.6.4) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/tracking
+
+<a name="0.6.3"></a>
+## [0.6.3](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.6.2...@times-components/tracking@0.6.3) (2018-01-18)
+
+
+
+
+**Note:** Version bump only for package @times-components/tracking
+
+<a name="0.6.2"></a>
+## [0.6.2](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.6.1...@times-components/tracking@0.6.2) (2018-01-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/tracking
+
 <a name="0.6.1"></a>
 ## [0.6.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.6.0...@times-components/tracking@0.6.1) (2018-01-15)
 

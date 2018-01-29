@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Debounce handles different debounce delays 1`] = `
+Object {
+  "debounceTimeMs": 2500,
+  "debouncedProps": Object {
+    "debounceTimeMs": 2500,
+    "foo": "initialFoo",
+  },
+  "foo": "updatedFoo",
+  "isDebouncing": true,
+}
+`;
+
+exports[`Debounce handles different debounce delays 2`] = `
+Object {
+  "debounceTimeMs": 2500,
+  "debouncedProps": Object {
+    "debounceTimeMs": 2500,
+    "foo": "initialFoo",
+  },
+  "foo": "updatedFoo",
+  "isDebouncing": true,
+}
+`;
+
+exports[`Debounce handles different debounce delays 3`] = `
+Object {
+  "debounceTimeMs": 2500,
+  "debouncedProps": Object {
+    "debounceTimeMs": 2500,
+    "foo": "updatedFoo",
+  },
+  "foo": "updatedFoo",
+  "isDebouncing": false,
+}
+`;
+
+exports[`Debounce handles zero debounce delay 1`] = `
+Object {
+  "debounceTimeMs": 0,
+  "debouncedProps": Object {
+    "debounceTimeMs": 0,
+    "foo": "updatedFoo",
+  },
+  "foo": "updatedFoo",
+  "isDebouncing": false,
+}
+`;
+
+exports[`Debounce immediately updates props, but delays update of debouncedProps 1`] = `
+Object {
+  "debounceTimeMs": 1000,
+  "debouncedProps": Object {
+    "debounceTimeMs": 1000,
+    "foo": "initialFoo",
+  },
+  "foo": "updatedFoo",
+  "isDebouncing": true,
+}
+`;
+
+exports[`Debounce immediately updates props, but delays update of debouncedProps 2`] = `
+Object {
+  "debounceTimeMs": 1000,
+  "debouncedProps": Object {
+    "debounceTimeMs": 1000,
+    "foo": "initialFoo",
+  },
+  "foo": "updatedFoo",
+  "isDebouncing": true,
+}
+`;
+
+exports[`Debounce immediately updates props, but delays update of debouncedProps 3`] = `
+Object {
+  "debounceTimeMs": 1000,
+  "debouncedProps": Object {
+    "debounceTimeMs": 1000,
+    "foo": "updatedFoo",
+  },
+  "foo": "updatedFoo",
+  "isDebouncing": false,
+}
+`;

@@ -12,7 +12,7 @@ export FRC=$CWD/fructose
 npx react-native start --root fructose --projectRoots $(pwd)/fructose,$(pwd) &
 react-native run-ios --no-packager
 PACKAGER_PID=$!
-LOGLEVEL=verbose npx dextrose --config ./dextrose/dextrose.ios.js --snapshotWait 2000
+LOGLEVEL=verbose npx run dextrose --config ./dextrose/dextrose.ios.js --snapshotWait 2000
 npx lerna run dextrose-clean
 kill -9 $PACKAGER_PID
 xcrun simctl shutdown booted

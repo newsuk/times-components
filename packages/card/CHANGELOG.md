@@ -3,6 +3,84 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.16.30"></a>
+## [0.16.30](https://github.com/newsuk/times-components/compare/@times-components/card@0.16.29...@times-components/card@0.16.30) (2018-01-22)
+
+
+### Bug Fixes
+
+* props validation warnings on date ([#556](https://github.com/newsuk/times-components/issues/556)) ([73bcbb5](https://github.com/newsuk/times-components/commit/73bcbb5))
+
+
+
+
+<a name="0.16.29"></a>
+## [0.16.29](https://github.com/newsuk/times-components/compare/@times-components/card@0.16.28...@times-components/card@0.16.29) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.16.28"></a>
+## [0.16.28](https://github.com/newsuk/times-components/compare/@times-components/card@0.16.26...@times-components/card@0.16.28) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.16.27"></a>
+## [0.16.27](https://github.com/newsuk/times-components/compare/@times-components/card@0.16.26...@times-components/card@0.16.27) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.16.26"></a>
+## [0.16.26](https://github.com/newsuk/times-components/compare/@times-components/card@0.16.25...@times-components/card@0.16.26) (2018-01-18)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.16.25"></a>
+## [0.16.25](https://github.com/newsuk/times-components/compare/@times-components/card@0.16.24...@times-components/card@0.16.25) (2018-01-18)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.16.24"></a>
+## [0.16.24](https://github.com/newsuk/times-components/compare/@times-components/card@0.16.23...@times-components/card@0.16.24) (2018-01-17)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.16.23"></a>
+## [0.16.23](https://github.com/newsuk/times-components/compare/@times-components/card@0.16.22...@times-components/card@0.16.23) (2018-01-16)
+
+
+### Bug Fixes
+
+* Replace deprecated View.PropTypes.style with ViewPropTypes.style in card.js ([#535](https://github.com/newsuk/times-components/issues/535)) ([50489cf](https://github.com/newsuk/times-components/commit/50489cf))
+
+
+
+
+<a name="0.16.22"></a>
+## [0.16.22](https://github.com/newsuk/times-components/compare/@times-components/card@0.16.21...@times-components/card@0.16.22) (2018-01-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
 <a name="0.16.21"></a>
 ## [0.16.21](https://github.com/newsuk/times-components/compare/@times-components/card@0.16.20...@times-components/card@0.16.21) (2018-01-15)
 

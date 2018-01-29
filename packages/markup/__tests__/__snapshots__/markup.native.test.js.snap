@@ -197,26 +197,39 @@ exports[`Markup Native renders multiple paragraphs with a pull quote 1`] = `
     >
       [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
     </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <View
       style={
-        Array [
-          Object {
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 13,
-            "marginBottom": 0,
-            "marginTop": 10,
-          },
-          Object {
-            "color": "#696969",
-          },
-        ]
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "height": 20,
+          "marginTop": 10,
+        }
       }
     >
-      Katie Glass
-    </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "lineHeight": 13,
+              "marginBottom": 0,
+              "paddingTop": 4,
+            },
+            Object {
+              "color": "#696969",
+            },
+          ]
+        }
+      >
+        Katie Glass
+      </Text>
+    </View>
   </View>
   <Text
     accessible={true}

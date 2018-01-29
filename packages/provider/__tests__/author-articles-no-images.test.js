@@ -13,6 +13,7 @@ const renderComponent = child =>
         page={1}
         shortSummaryLength={220}
         longSummaryLength={360}
+        debounceTimeMs={0}
       >
         {child}
       </AuthorArticlesNoImagesProvider>

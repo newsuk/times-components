@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.0.21"></a>
+## [0.0.21](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.0.20...@times-components/jest-configurator@0.0.21) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/jest-configurator
+
+<a name="0.0.20"></a>
+## [0.0.20](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.0.18...@times-components/jest-configurator@0.0.20) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/jest-configurator
+
+<a name="0.0.19"></a>
+## [0.0.19](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.0.18...@times-components/jest-configurator@0.0.19) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/jest-configurator
+
+<a name="0.0.18"></a>
+## [0.0.18](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.0.17...@times-components/jest-configurator@0.0.18) (2018-01-17)
+
+
+
+
+**Note:** Version bump only for package @times-components/jest-configurator
+
+<a name="0.0.17"></a>
+## [0.0.17](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.0.16...@times-components/jest-configurator@0.0.17) (2018-01-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/jest-configurator
+
 <a name="0.0.16"></a>
 ## [0.0.16](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.0.15...@times-components/jest-configurator@0.0.16) (2018-01-15)
 

@@ -11,3 +11,4 @@ CHANGELOG.md
 **/package.json
 LICENSE
 yarn.lock
+*.sh

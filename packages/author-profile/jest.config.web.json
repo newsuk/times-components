@@ -1,7 +1,9 @@
 {
   "rootDir": "../../",
   "coverageDirectory": "<rootDir>/packages/author-profile/coverage/web/",
-  "transformIgnorePatterns": ["node_modules/(?!@times-components)/"],
+  "transformIgnorePatterns": [
+    "node_modules/(?!(react-native|react-apollo-temp|@times-components)/)"
+  ],
   "testEnvironment": "jsdom",
   "testMatch": ["<rootDir>/packages/author-profile/__tests__/**.web.test.js"],
   "moduleNameMapper": {

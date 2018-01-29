@@ -42,7 +42,7 @@ storiesOf("Provider", module)
 
     return (
       <MockedProvider mocks={mocks} removeTypename>
-        <WithData prop1={1} prop2={2}>
+        <WithData prop1={1} prop2={2} debounceTimeMs={0}>
           {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
         </WithData>
       </MockedProvider>
@@ -72,7 +72,7 @@ storiesOf("Provider", module)
 
     return (
       <MockedProvider mocks={mocks} removeTypename>
-        <WithData prop1={1} prop2={2}>
+        <WithData prop1={1} prop2={2} debounceTimeMs={0}>
           {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
         </WithData>
       </MockedProvider>
@@ -101,6 +101,7 @@ storiesOf("Provider", module)
           pageSize={3}
           page={4}
           articleImageRatio="16:9"
+          debounceTimeMs={0}
         >
           {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
         </AuthorProfileProvider>
@@ -122,7 +123,10 @@ storiesOf("Provider", module)
 
     return (
       <MockedProvider mocks={mocks}>
-        <ArticleProvider id="3107c018-cb60-11e4-81dd-064fe933cd41">
+        <ArticleProvider
+          id="3107c018-cb60-11e4-81dd-064fe933cd41"
+          debounceTimeMs={0}
+        >
           {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
         </ArticleProvider>
       </MockedProvider>

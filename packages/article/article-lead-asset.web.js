@@ -8,7 +8,7 @@ import {
   MediaContainerMobile,
   LeadAssetMobile,
   LeadAssetDesktop
-} from "./styles/body/responsive";
+} from "./styles/article-body/responsive";
 
 function renderLeadAsset(leadAsset) {
   if (leadAsset) {

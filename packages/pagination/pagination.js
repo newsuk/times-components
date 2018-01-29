@@ -6,6 +6,8 @@ import { withTrackEvents } from "@times-components/tracking";
 import withPageState from "./pagination-wrapper";
 import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
 import Results from "./results";
+import PaginationBorder from "./pagination-border";
+import PaginationContainer from "./pagination-container";
 
 const styles = StyleSheet.create({
   absolute: {
@@ -17,26 +19,6 @@ const styles = StyleSheet.create({
     color: "#006699",
     fontFamily: "GillSansMTStd-Medium",
     fontSize: 14
-  },
-  border: {
-    borderStyle: "solid",
-    alignItems: "center",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    height: 50
-  },
-  borderTop: {
-    borderTopColor: "#dbdbdb",
-    borderTopWidth: 1
-  },
-  borderBottom: {
-    borderBottomColor: "#dbdbdb",
-    borderBottomWidth: 1
-  },
-  container: {
-    alignItems: "stretch",
-    flexDirection: "column",
-    marginTop: 30
   }
 });
 
@@ -47,9 +29,7 @@ const Pagination = ({
   onPrev,
   page,
   pageSize,
-  hideResults,
-  hideTopKeyline,
-  hideBottomKeyline
+  hideResults
 }) => {
   const finalResult = Math.min(count, page * pageSize);
   const startResult = Math.min(finalResult, (page - 1) * pageSize + 1);
@@ -80,19 +60,13 @@ const Pagination = ({
   const messageComponent = !hideResults ? <Results>{message}</Results> : null;
 
   return (
-    <View style={styles.container}>
+    <PaginationContainer hideResults={hideResults}>
       {messageComponent}
-      <View
-        style={[
-          styles.border,
-          !hideTopKeyline && styles.borderTop,
-          !hideBottomKeyline && styles.borderBottom
-        ]}
-      >
+      <PaginationBorder hideResults={hideResults}>
         <View>{prevComponent}</View>
         <View>{nextComponent}</View>
-      </View>
-    </View>
+      </PaginationBorder>
+    </PaginationContainer>
   );
 };
 
@@ -103,9 +77,7 @@ Pagination.propTypes = {
   onPrev: PropTypes.func,
   page: PropTypes.number,
   pageSize: PropTypes.number,
-  hideResults: PropTypes.bool,
-  hideTopKeyline: PropTypes.bool,
-  hideBottomKeyline: PropTypes.bool
+  hideResults: PropTypes.bool
 };
 
 Pagination.defaultProps = {
@@ -115,9 +87,7 @@ Pagination.defaultProps = {
   onPrev: () => {},
   page: 1,
   pageSize: 20,
-  hideResults: false,
-  hideTopKeyline: false,
-  hideBottomKeyline: false
+  hideResults: false
 };
 
 export default withTrackEvents(Pagination, {

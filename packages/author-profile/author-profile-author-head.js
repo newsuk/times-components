@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   photoContainer: {
     width: 100,
     height: 100,
-    top: 23,
+    top: 30,
     position: "absolute"
   },
   gradient: {
@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
     height: 100,
     borderColor: "#FFF",
     borderRadius: 50,
-    borderWidth: 5,
     overflow: "hidden"
   },
   wrapper: {

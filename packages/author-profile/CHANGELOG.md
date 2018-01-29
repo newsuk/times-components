@@ -3,6 +3,114 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.41.1"></a>
+## [0.41.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.41.0...@times-components/author-profile@0.41.1) (2018-01-24)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.41.0"></a>
+# [0.41.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.40.4...@times-components/author-profile@0.41.0) (2018-01-23)
+
+
+### Features
+
+* add debouncing to all graphql queries ([#548](https://github.com/newsuk/times-components/issues/548)) ([7c1ced1](https://github.com/newsuk/times-components/commit/7c1ced1))
+
+
+
+
+<a name="0.40.4"></a>
+## [0.40.4](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.40.2...@times-components/author-profile@0.40.4) (2018-01-22)
+
+
+### Bug Fixes
+
+* props validation warnings on date ([#556](https://github.com/newsuk/times-components/issues/556)) ([73bcbb5](https://github.com/newsuk/times-components/commit/73bcbb5))
+
+
+
+
+<a name="0.40.3"></a>
+## [0.40.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.40.2...@times-components/author-profile@0.40.3) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.40.2"></a>
+## [0.40.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.40.0...@times-components/author-profile@0.40.2) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.40.1"></a>
+## [0.40.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.40.0...@times-components/author-profile@0.40.1) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.40.0"></a>
+# [0.40.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.39.7...@times-components/author-profile@0.40.0) (2018-01-18)
+
+
+### Features
+
+* REPLAT_1212 Pull Quote Design Update ([#529](https://github.com/newsuk/times-components/issues/529)) ([6f9c4c6](https://github.com/newsuk/times-components/commit/6f9c4c6))
+
+
+
+
+<a name="0.39.7"></a>
+## [0.39.7](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.39.6...@times-components/author-profile@0.39.7) (2018-01-18)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.39.6"></a>
+## [0.39.6](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.39.5...@times-components/author-profile@0.39.6) (2018-01-17)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.39.5"></a>
+## [0.39.5](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.39.4...@times-components/author-profile@0.39.5) (2018-01-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.39.4"></a>
+## [0.39.4](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.39.3...@times-components/author-profile@0.39.4) (2018-01-16)
+
+
+### Bug Fixes
+
+* apply design review changes to Author profile ([#522](https://github.com/newsuk/times-components/issues/522)) ([12796f3](https://github.com/newsuk/times-components/commit/12796f3))
+
+
+
+
+<a name="0.39.3"></a>
+## [0.39.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.39.2...@times-components/author-profile@0.39.3) (2018-01-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
 <a name="0.39.2"></a>
 ## [0.39.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.39.1...@times-components/author-profile@0.39.2) (2018-01-15)
 

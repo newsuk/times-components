@@ -3,6 +3,117 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.30.1"></a>
+## [0.30.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.30.0...@times-components/article@0.30.1) (2018-01-24)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.30.0"></a>
+# [0.30.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.29.1...@times-components/article@0.30.0) (2018-01-23)
+
+
+### Features
+
+* add debouncing to all graphql queries ([#548](https://github.com/newsuk/times-components/issues/548)) ([7c1ced1](https://github.com/newsuk/times-components/commit/7c1ced1))
+
+
+
+
+<a name="0.29.1"></a>
+## [0.29.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.29.0...@times-components/article@0.29.1) (2018-01-22)
+
+
+### Bug Fixes
+
+* handle keys properly in the article rows renderers ([#559](https://github.com/newsuk/times-components/issues/559)) ([a941d05](https://github.com/newsuk/times-components/commit/a941d05))
+
+
+
+
+<a name="0.29.0"></a>
+# [0.29.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.28.3...@times-components/article@0.29.0) (2018-01-22)
+
+
+### Features
+
+* integrate header ad in article ([#554](https://github.com/newsuk/times-components/issues/554)) ([8f99517](https://github.com/newsuk/times-components/commit/8f99517))
+
+
+
+
+<a name="0.28.3"></a>
+## [0.28.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.28.2...@times-components/article@0.28.3) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.28.2"></a>
+## [0.28.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.28.0...@times-components/article@0.28.2) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.28.1"></a>
+## [0.28.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.28.0...@times-components/article@0.28.1) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.28.0"></a>
+# [0.28.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.27.5...@times-components/article@0.28.0) (2018-01-18)
+
+
+### Features
+
+* REPLAT_1212 Pull Quote Design Update ([#529](https://github.com/newsuk/times-components/issues/529)) ([6f9c4c6](https://github.com/newsuk/times-components/commit/6f9c4c6))
+
+
+
+
+<a name="0.27.5"></a>
+## [0.27.5](https://github.com/newsuk/times-components/compare/@times-components/article@0.27.4...@times-components/article@0.27.5) (2018-01-18)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.27.4"></a>
+## [0.27.4](https://github.com/newsuk/times-components/compare/@times-components/article@0.27.3...@times-components/article@0.27.4) (2018-01-17)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.27.3"></a>
+## [0.27.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.27.2...@times-components/article@0.27.3) (2018-01-17)
+
+
+### Bug Fixes
+
+* separate responsive from the native components ([#519](https://github.com/newsuk/times-components/issues/519)) ([beaaba8](https://github.com/newsuk/times-components/commit/beaaba8))
+
+
+
+
+<a name="0.27.2"></a>
+## [0.27.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.27.1...@times-components/article@0.27.2) (2018-01-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
 <a name="0.27.1"></a>
 ## [0.27.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.27.0...@times-components/article@0.27.1) (2018-01-15)
 

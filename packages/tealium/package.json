@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tealium",
-  "version": "0.1.9",
+  "version": "0.1.13",
   "description": "React storybook helpers for Times Components",
   "main": "tealium.js",
   "scripts": {
@@ -23,7 +23,7 @@
     "rootDir": "../../",
     "coverageDirectory": "<rootDir>/packages/tealium/coverage/web/",
     "transformIgnorePatterns": [
-      "node_modules/(?!@times-components)/"
+      "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testEnvironment": "jsdom",
     "testMatch": [
@@ -42,16 +42,20 @@
     ]
   },
   "dependencies": {
-    "@storybook/addon-actions": "3.2.18"
+    "@storybook/addon-actions": "3.3.9",
+    "@storybook/addons": "3.3.9"
   },
   "devDependencies": {
-    "@times-components/eslint-config-thetimes": "0.1.1",
+    "@times-components/eslint-config-thetimes": "0.1.2",
     "jest": "21.2.1",
-    "prettier": "1.8.2"
+    "prettier": "1.8.2",
+    "react-native-web": "0.1.14"
   },
   "peerDependencies": {
+    "babel-preset-env": "1.6.1",
+    "babel-preset-stage-2": "6.24.1",
     "react-native": ">=0.50",
-    "react-native-web": ">=0.1"
+    "react-native-web": ">=0.3"
   },
   "publishConfig": {
     "access": "public"

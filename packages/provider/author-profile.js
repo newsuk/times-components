@@ -17,8 +17,4 @@ export const query = gql`
   }
 `;
 
-const propsToVariables = ({ slug }) => ({
-  slug
-});
-
-export default connectGraphql(query, propsToVariables);
+export default connectGraphql(query);

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
 import gql from "graphql-tag";
 import { MockedProvider } from "@times-components/utils/graphql";
@@ -27,159 +28,197 @@ const mocks = [
   }
 ];
 
-const ConnectedComponent = connectGraphql(query);
-
-const renderComponent = (child, customMocks) =>
-  renderer.create(
+const constructComponent = (child, customMocks, debounceTimeMs = 0) => {
+  const ConnectedComponent = connectGraphql(query);
+  return (
     <MockedProvider mocks={customMocks || mocks} removeTypename>
-      <ConnectedComponent config1="c1" config2="c2">
+      <ConnectedComponent
+        config1="c1"
+        config2="c2"
+        debounceTimeMs={debounceTimeMs}
+      >
         {child}
       </ConnectedComponent>
     </MockedProvider>
   );
+};
 
-it("returns query result", done => {
-  renderComponent(({ isLoading, author }) => {
-    if (!isLoading) {
-      expect(author).toMatchSnapshot();
-      done();
-    }
+const renderComponent = (child, customMocks) =>
+  renderer.create(constructComponent(child, customMocks));
 
-    return null;
-  });
-});
-
-it("returns loading state with no author", done => {
-  renderComponent(({ isLoading, author }) => {
-    if (isLoading) {
-      expect(author).toMatchSnapshot();
-      done();
-    }
-
-    return null;
-  });
-});
-
-it("returns config data", done => {
-  renderComponent(({ isLoading, config1, config2 }) => {
-    if (!isLoading) {
-      expect({ config1, config2 }).toMatchSnapshot();
-      done();
-    }
-
-    return null;
-  });
-});
-
-it("returns an error", done => {
-  const customMocks = [
-    {
-      request: {
-        query
-      },
-      error: {
-        message: "some error from the server"
+describe("Provider Tests", () => {
+  it("returns query result", done => {
+    renderComponent(({ isLoading, author }) => {
+      if (!isLoading) {
+        expect(author).toMatchSnapshot();
+        done();
       }
-    }
-  ];
 
-  renderComponent(({ isLoading, error }) => {
-    if (!isLoading) {
-      expect(error).toMatchSnapshot();
-      done();
-    }
+      return null;
+    });
+  });
 
-    return null;
-  }, customMocks);
-});
-
-it("re-renders with refetched data after error", done => {
-  const customMocks = [
-    {
-      request: {
-        query
-      },
-      error: {
-        message: "some error from the server"
+  it("returns loading state with no author", done => {
+    renderComponent(({ isLoading, author }) => {
+      if (isLoading) {
+        expect(author).toMatchSnapshot();
+        done();
       }
-    },
-    {
-      request: {
-        query
+
+      return null;
+    });
+  });
+
+  it("returns config data", done => {
+    renderComponent(({ isLoading, config1, config2 }) => {
+      if (!isLoading) {
+        expect({ config1, config2 }).toMatchSnapshot();
+        done();
+      }
+
+      return null;
+    });
+  });
+
+  it("returns an error", done => {
+    const customMocks = [
+      {
+        request: {
+          query
+        },
+        error: {
+          message: "some error from the server"
+        }
+      }
+    ];
+
+    renderComponent(({ isLoading, error }) => {
+      if (!isLoading) {
+        expect(error).toMatchSnapshot();
+        done();
+      }
+
+      return null;
+    }, customMocks);
+  });
+
+  it("re-renders with refetched data after error", done => {
+    const customMocks = [
+      {
+        request: {
+          query
+        },
+        error: {
+          message: "some error from the server"
+        }
       },
-      result: {
-        data: {
-          author: {
-            name: "fiona-hamilton"
+      {
+        request: {
+          query
+        },
+        result: {
+          data: {
+            author: {
+              name: "fiona-hamilton"
+            }
           }
         }
       }
-    }
-  ];
+    ];
 
-  renderComponent(({ isLoading, refetch, error, author }) => {
-    if (!isLoading) {
-      if (error) {
-        setTimeout(refetch);
-        return null;
+    renderComponent(({ isLoading, refetch, error, author }) => {
+      if (!isLoading) {
+        if (error) {
+          setTimeout(refetch);
+          return null;
+        }
+
+        expect(author).toMatchSnapshot();
+        done();
       }
 
-      expect(author).toMatchSnapshot();
-      done();
-    }
+      return null;
+    }, customMocks);
+  });
 
-    return null;
-  }, customMocks);
-});
-
-it("supports another refetch after error during refetch", done => {
-  const customMocks = [
-    {
-      request: {
-        query
+  it("supports another refetch after error during refetch", done => {
+    const customMocks = [
+      {
+        request: {
+          query
+        },
+        error: {
+          message: "some error from the server"
+        }
       },
-      error: {
-        message: "some error from the server"
-      }
-    },
-    {
-      request: {
-        query
+      {
+        request: {
+          query
+        },
+        error: {
+          message: "some error from the server"
+        }
       },
-      error: {
-        message: "some error from the server"
-      }
-    },
-    {
-      request: {
-        query
-      },
-      result: {
-        data: {
-          author: {
-            name: "fiona-hamilton"
+      {
+        request: {
+          query
+        },
+        result: {
+          data: {
+            author: {
+              name: "fiona-hamilton"
+            }
           }
         }
       }
-    }
-  ];
+    ];
 
-  let errorCount = 0;
+    let errorCount = 0;
 
-  renderComponent(({ isLoading, refetch, error, author }) => {
-    if (!isLoading) {
-      if (error) {
-        errorCount += 1;
-        setTimeout(refetch);
+    renderComponent(({ isLoading, refetch, error, author }) => {
+      if (!isLoading) {
+        if (error) {
+          errorCount += 1;
+          setTimeout(refetch);
 
-        return null;
+          return null;
+        }
+
+        expect(errorCount).toEqual(2);
+        expect(author).toMatchSnapshot();
+        done();
       }
 
-      expect(errorCount).toEqual(2);
-      expect(author).toMatchSnapshot();
-      done();
-    }
+      return null;
+    }, customMocks);
+  });
 
-    return null;
-  }, customMocks);
+  it("complains if you omit the debounceTimeMs parameter to a connected component", done => {
+    const ConnectedComponent = connectGraphql(query);
+
+    jest.spyOn(console, "error").mockImplementation(() => {});
+
+    class ErrorSpy extends React.Component {
+      /* eslint class-methods-use-this: "off" */
+      componentDidCatch(e) {
+        expect(e.message).toEqual("debounceTimeMs prop required");
+        done();
+      }
+
+      render() {
+        return this.props.children;
+      }
+    }
+    ErrorSpy.propTypes = {
+      children: PropTypes.node.isRequired
+    };
+
+    renderer.create(
+      <MockedProvider mocks={[]} removeTypename>
+        <ErrorSpy>
+          <ConnectedComponent />
+        </ErrorSpy>
+      </MockedProvider>
+    );
+  });
 });

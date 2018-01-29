@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.3"></a>
+## [0.2.3](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.2.2...@times-components/pull-quote@0.2.3) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+<a name="0.2.2"></a>
+## [0.2.2](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.2.0...@times-components/pull-quote@0.2.2) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+<a name="0.2.1"></a>
+## [0.2.1](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.2.0...@times-components/pull-quote@0.2.1) (2018-01-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.1.12...@times-components/pull-quote@0.2.0) (2018-01-18)
+
+
+### Features
+
+* REPLAT_1212 Pull Quote Design Update ([#529](https://github.com/newsuk/times-components/issues/529)) ([6f9c4c6](https://github.com/newsuk/times-components/commit/6f9c4c6))
+
+
+
+
+<a name="0.1.12"></a>
+## [0.1.12](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.1.11...@times-components/pull-quote@0.1.12) (2018-01-18)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+<a name="0.1.11"></a>
+## [0.1.11](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.1.10...@times-components/pull-quote@0.1.11) (2018-01-17)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+<a name="0.1.10"></a>
+## [0.1.10](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.1.9...@times-components/pull-quote@0.1.10) (2018-01-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
 <a name="0.1.9"></a>
 ## [0.1.9](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.1.8...@times-components/pull-quote@0.1.9) (2018-01-15)
 
