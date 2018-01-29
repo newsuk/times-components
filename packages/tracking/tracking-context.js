@@ -28,7 +28,7 @@ type TrackingContextObjectType = {
 };
 
 const withTrackingContext = (
-  WrappedComponent: Element<any>,
+  WrappedComponent: any,
   {
     getAttrs = () => ({}),
     trackingObjectName = "",
@@ -38,6 +38,10 @@ const withTrackingContext = (
   const componentName = getDisplayName(WrappedComponent);
 
   class WithTrackingContext extends Component<TrackingContextPropsType> {
+    static defaultProps = {
+      ...WrappedComponent.defaultProps
+    };
+
     constructor(props: TrackingContextPropsType, context: {}) {
       super(props, context);
       this.fireAnalyticsEvent = this.fireAnalyticsEvent.bind(this);
@@ -139,7 +143,6 @@ const withTrackingContext = (
     analyticsStream: PropTypes.func,
     ...WrappedComponent.propTypes
   };
-  WithTrackingContext.defaultProps = WrappedComponent.defaultProps;
   hoistNonReactStatic(WithTrackingContext, WrappedComponent);
 
   return WithTrackingContext;
