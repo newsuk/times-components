@@ -35,6 +35,7 @@
   "devDependencies": {
     "@storybook/react-native": "3.3.9",
     "@times-components/eslint-config-thetimes": "0.1.3",
+    "@times-components/jest-configurator": "0.0.22",
     "@times-components/storybook": "0.2.5",
     "dextrose": "1.3.2",
     "enzyme": "3.3.0",
@@ -48,7 +49,6 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/jest-configurator": "0.0.22",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
