@@ -1,5 +1,5 @@
 import gql from "graphql-tag";
-import { createProviderTester, getEvents } from "./provider-testing-utils";
+import { createProviderTester, getRenderedQueries, getResolvedQueries } from "./provider-testing-utils";
 import connectGraphql from "../connect";
 
 function AuthorQueryResolver({ variables }) {
@@ -30,49 +30,27 @@ describe("provider execution order tests", () => {
       { slug: "1" }
     );
 
-    await setProps({ slug: "2" });
-    await link.resolve(0);
-    await link.resolve(1);
+    await link.findByQuery('AuthorQuery', {slug: "1"}).resolve();
+    expect(getRenderedQueries(link)[0]).toMatchObject({
+      isLoading: true,
+      variables: { slug: "1" }
+    });
 
-    expect(getEvents(link)).toMatchObject([
-      {
-        type: "render",
-        props: {
-          error: undefined,
-          isLoading: true,
-          variables: { slug: "1" },
-          networkStatus: 1,
-          slug: "1"
-        }
-      },
-      { type: "request", query: "AuthorQuery", vars: { slug: "1" } },
-      { type: "request", query: "AuthorQuery", vars: { slug: "2" } },
-      {
-        type: "render",
-        props: {
-          error: undefined,
-          isLoading: true,
-          variables: { slug: "2" },
-          networkStatus: 1,
-          slug: "2"
-        }
-      },
-      { type: "resolving", query: "AuthorQuery", vars: { slug: "1" } },
-      { type: "resolving", query: "AuthorQuery", vars: { slug: "2" } },
-      { type: "resolved", query: "AuthorQuery", vars: { slug: "1" } },
-      { type: "resolved", query: "AuthorQuery", vars: { slug: "2" } },
-      {
-        type: "render",
-        props: {
-          error: undefined,
-          isLoading: false,
-          variables: { slug: "2" },
-          networkStatus: 7,
-          author: { name: "2", __typename: "Author" },
-          slug: "2"
-        }
-      }
-    ]);
+    await setProps({ slug: "2" });
+    expect(getRenderedQueries(link).length).toBe(2);
+    expect(getRenderedQueries(link)[1]).toMatchObject({
+      isLoading: true,
+      variables: { slug: "2" }
+    });
+
+
+    await link.findByQuery('AuthorQuery', {slug: "2"}).resolve();
+    expect(getRenderedQueries(link).length).toBe(3);
+    expect(getRenderedQueries(link)[2]).toMatchObject({
+      isLoading: false,
+      variables: { slug: "2" },
+      author: { name: "2" }
+    });
   });
 
   it("should render in order even if resolved out of order", async () => {
@@ -83,143 +61,21 @@ describe("provider execution order tests", () => {
       { slug: "1" }
     );
 
-    setProps({ slug: "2" });
-    await link.resolve(1);
-    await link.resolve(0);
-    await setProps({ slug: "3" });
-    await link.resolve(2);
 
-    expect(getEvents(link)).toMatchObject([
-      {
-        type: "render",
-        props: {
-          error: undefined,
-          isLoading: true,
-          variables: { slug: "1" },
-          networkStatus: 1,
-          slug: "1"
-        }
-      },
-      { type: "request", query: "AuthorQuery", vars: { slug: "1" } },
-      { type: "request", query: "AuthorQuery", vars: { slug: "2" } },
-      {
-        type: "render",
-        props: {
-          error: undefined,
-          isLoading: true,
-          variables: { slug: "2" },
-          networkStatus: 1,
-          slug: "2"
-        }
-      },
-      { type: "resolving", query: "AuthorQuery", vars: { slug: "1" } },
-      { type: "resolving", query: "AuthorQuery", vars: { slug: "2" } },
-      { type: "resolved", query: "AuthorQuery", vars: { slug: "2" } },
-      {
-        type: "render",
-        props: {
-          error: undefined,
-          isLoading: false,
-          variables: { slug: "2" },
-          networkStatus: 7,
-          author: { name: "2", __typename: "Author" },
-          slug: "2"
-        }
-      },
-      { type: "resolved", query: "AuthorQuery", vars: { slug: "1" } },
-      { type: "request", query: "AuthorQuery", vars: { slug: "3" } },
-      {
-        type: "render",
-        props: {
-          error: undefined,
-          isLoading: true,
-          variables: { slug: "3" },
-          networkStatus: 2,
-          author: { name: "2", __typename: "Author" },
-          slug: "3"
-        }
-      },
-      { type: "resolving", query: "AuthorQuery", vars: { slug: "3" } },
-      { type: "resolved", query: "AuthorQuery", vars: { slug: "3" } },
-      {
-        type: "render",
-        props: {
-          error: undefined,
-          isLoading: false,
-          variables: { slug: "3" },
-          networkStatus: 7,
-          author: { name: "3", __typename: "Author" },
-          slug: "3"
-        }
-      }
-    ]);
+    await setProps({ slug: "2" });
+    await link.findByQuery('AuthorQuery', {slug: "2"}).resolve();
+    expect(getRenderedQueries(link).length).toBe(3);
+    expect(getRenderedQueries(link)).toMatchObject([{
+      isLoading: true,
+      variables: { slug: "1" }
+    },{
+      isLoading: true,
+      variables: { slug: "2" }
+    },{
+      isLoading: false,
+      variables: { slug: "2" },
+      author: { name: "2" }
+    }]);
   });
 
-  it("should not refetch if same query despite superfluous vars", async () => {
-    const Connected = connectGraphql(query);
-    const { link, setProps } = createProviderTester(
-      AuthorQueryResolver,
-      Connected,
-      { slug: "1" }
-    );
-
-    await setProps({ slug: "1", foo: 1 });
-    await link.resolve(0);
-    await link.resolve(1);
-
-    await setProps({ slug: "1", bar: 2 });
-    await link.resolve(1);
-
-    expect(getEvents(link)).toMatchObject([
-      {
-        type: "render",
-        props: {
-          error: undefined,
-          isLoading: true,
-          variables: { slug: "1" },
-          networkStatus: 1,
-          slug: "1"
-        }
-      },
-      { type: "request", query: "AuthorQuery", vars: { slug: "1" } },
-      {
-        type: "render",
-        props: {
-          error: undefined,
-          isLoading: true,
-          variables: { slug: "1" },
-          networkStatus: 1,
-          slug: "1",
-          foo: 1
-        }
-      },
-      { type: "resolving", query: "AuthorQuery", vars: { slug: "1" } },
-      { type: "resolved", query: "AuthorQuery", vars: { slug: "1" } },
-      {
-        type: "render",
-        props: {
-          error: undefined,
-          isLoading: false,
-          variables: { slug: "1" },
-          networkStatus: 7,
-          author: { name: "1", __typename: "Author" },
-          slug: "1",
-          foo: 1
-        }
-      },
-      {
-        type: "render",
-        props: {
-          error: undefined,
-          isLoading: false,
-          variables: { slug: "1" },
-          networkStatus: 7,
-          author: { name: "1", __typename: "Author" },
-          slug: "1",
-          foo: 1,
-          bar: 2
-        }
-      }
-    ]);
-  });
 });

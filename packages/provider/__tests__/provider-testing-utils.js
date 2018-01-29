@@ -185,3 +185,10 @@ export function getResolvedQueries(link) {
     .filter(e => e.type == 'resolved')
     .map(tidyEvent);
 }
+
+export function getRenderedQueries(link) {
+  return link.getEvents()
+    .filter(e => e.type == 'render')
+    .map(tidyEvent)
+    .map(x=>x.props);
+}
