@@ -9,7 +9,7 @@
     "test:watch": "jest --projects jest.config*.json --watchAll",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "lint": "eslint . && yarn prettier:diff",
+    "lint": "flow && eslint . && yarn prettier:diff",
     "dextrose-stories": "dextrose-stories",
     "dextrose-clean": "dextrose-clean"
   },

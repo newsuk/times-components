@@ -1,5 +1,6 @@
 // @flow
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import getDisplayName from "react-display-name";
 import get from "lodash.get";
 import hoistNonReactStatic from "hoist-non-react-statics";
@@ -7,6 +8,7 @@ import trackingContextTypes from "./tracking-context-types";
 import resolveAttrs from "./resolve-attrs";
 
 type AnalyticsEventObjectType = {
+  object: {},
   component: string,
   action: string,
   attrs: Function
@@ -26,12 +28,12 @@ type TrackingContextObjectType = {
 };
 
 const withTrackingContext = (
-  WrappedComponent: Component<any>,
+  WrappedComponent: Element<any>,
   {
     getAttrs = () => ({}),
     trackingObjectName = "",
     isDataReady = () => true
-  }: TrackingContextObjectType
+  }: TrackingContextObjectType = {}
 ) => {
   const componentName = getDisplayName(WrappedComponent);
 
@@ -88,7 +90,12 @@ const withTrackingContext = (
       }
     }
 
-    fireAnalyticsEvent({ component, action, attrs }: AnalyticsEventObjectType) {
+    fireAnalyticsEvent({
+      object,
+      component,
+      action,
+      attrs
+    }: AnalyticsEventObjectType) {
       const decoratedEvent = {
         component,
         action,
@@ -98,6 +105,10 @@ const withTrackingContext = (
         },
         object: trackingObjectName
       };
+
+      if (object || trackingObjectName) {
+        decoratedEvent.object = object || trackingObjectName;
+      }
 
       if (this.isRootTrackingContext()) {
         decoratedEvent.attrs.eventTime = new Date().toISOString();
@@ -117,13 +128,18 @@ const withTrackingContext = (
     }
 
     render() {
-      return <WithTrackingContext {...this.props} />;
+      return <WrappedComponent {...this.props} />;
     }
   }
 
   WithTrackingContext.displayName = `WithTrackingContext(${componentName})`;
   WithTrackingContext.contextTypes = trackingContextTypes;
   WithTrackingContext.childContextTypes = trackingContextTypes;
+  WithTrackingContext.propTypes = {
+    analyticsStream: PropTypes.func,
+    ...WrappedComponent.propTypes
+  };
+  WithTrackingContext.defaultProps = WrappedComponent.defaultProps;
   hoistNonReactStatic(WithTrackingContext, WrappedComponent);
 
   return WithTrackingContext;
