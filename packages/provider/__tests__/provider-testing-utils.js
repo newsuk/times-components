@@ -5,6 +5,7 @@ import renderer from "react-test-renderer";
 import { ApolloProvider } from "react-apollo";
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { isEqual } from "lodash";
 
 function createFuture() {
   let resolve;
@@ -30,14 +31,22 @@ export class TestLink extends ApolloLink {
     this.events = [];
   }
 
-  // resolve the i-th query
-  resolve(i) {
-    if (!this.blocked[i]) {
-      return Promise.resolve();
-    }
-    return this.blocked[i].resolve();
+  findByQuery(queryName, variables) {
+    return this.operations.find(
+      ({ operation }) =>
+        operation.operationName == queryName &&
+        (!variables || isEqual(operation.variables, variables))
+    );
   }
 
+  filterByQuery(queryName, variables) {
+    return this.operations.filter(
+      ({ operation }) =>
+        operation.operationName == queryName &&
+        (!variables || isEqual(operation.variables, variables))
+    );
+  }
+  
   // push a custom event
   pushEvent(data) {
     this.events.push(data);
@@ -49,13 +58,6 @@ export class TestLink extends ApolloLink {
   }
 
   // find and resolve a request by a given filter
-  resolveRequest(filter) {
-    const entry = Object.entries(this.operations).find(x => filter(x[1]));
-
-    if (entry) return this.resolve(entry[0]);
-
-    return Promise.resolve();
-  }
 
   // get all events
   getEvents() {
@@ -65,13 +67,13 @@ export class TestLink extends ApolloLink {
   // used by apollo provider
   request(operation) {
     this.blocked.push(createFuture());
-    const { promise } = this.blocked[this.blocked.length - 1];
-    this.operations.push(operation);
+    const { promise, resolve } = this.blocked[this.blocked.length - 1];
+    this.operations.push({ operation, resolve, promise });
     this.events.push({ type: "request", operation });
     return new Observable(observer => {
       Promise.resolve(this.onRequest(operation))
         .then(async data => {
-          this.events.push({ type: "resolving", operation, data });
+          this.events.push({ type: "resolving", operation });
           await promise();
           this.events.push({ type: "resolved", operation, data });
           if (!observer.closed) {
@@ -176,4 +178,10 @@ function tidyEvent(e) {
 
 export function getEvents(link) {
   return link.getEvents().map(tidyEvent);
+}
+
+export function getResolvedQueries(link) {
+  return link.getEvents()
+    .filter(e => e.type == 'resolved')
+    .map(tidyEvent);
 }
