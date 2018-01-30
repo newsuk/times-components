@@ -93,12 +93,16 @@ class ArticlePage extends React.Component {
       id: articleData.id,
       title: articleData.headline || "",
       label: articleData.label || "",
-      commercialtags: articleData.commercialtags || "",
+      commercialtags: articleData.commercialTags || "",
       contentType: "art"
     };
 
     const ArticleListView = ArticlePage.renderArticle(articleData);
-    return withAdComposer(ArticleListView, articleAdConfig);
+    return withAdComposer(
+      ArticleListView,
+      articleAdConfig,
+      articleData.section
+    );
   }
 }
 
