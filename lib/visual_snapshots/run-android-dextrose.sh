@@ -1,6 +1,4 @@
 #!/bin/bash
-npx appium &
-APPIUM_PID=$!
 LOCAL=true npx fructose-tunnel
 emulator @Nexus_5X_API_25 -no-boot-anim &
 EMU_PID=$!
@@ -18,4 +16,3 @@ npx react-native run-android --variant=release --no-packager
 npx dextrose run --config ./dextrose/dextrose.android.js --timeout 600000  --snapshotWait 2000
 npx lerna run dextrose-clean
 kill -9 $EMU_PID
-kill -9 $APPIUM_PID

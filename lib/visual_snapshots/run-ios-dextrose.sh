@@ -1,6 +1,4 @@
 #!/bin/bash
-appium &
-APPIUM_PID=$!
 xcrun simctl boot 'iPhone 7'
 npx lerna run dextrose-clean
 npx lerna run dextrose-stories --since
@@ -16,4 +14,3 @@ LOGLEVEL=verbose npx run dextrose --config ./dextrose/dextrose.ios.js --snapshot
 npx lerna run dextrose-clean
 kill -9 $PACKAGER_PID
 xcrun simctl shutdown booted
-kill -9 $APPIUM_PID
