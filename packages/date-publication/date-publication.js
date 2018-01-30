@@ -52,7 +52,7 @@ DatePublication.propTypes = {
 };
 
 DatePublication.defaultProps = {
-  publication: null,
+  publication: "TIMES",
   showPublication: true
 };
 

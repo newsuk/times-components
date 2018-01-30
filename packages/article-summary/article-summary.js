@@ -74,20 +74,19 @@ const ArticleSummary = props => {
         />
       ) : null}
       <Text style={styles.text}>{renderTrees(summary, renderer)}</Text>
-      {date &&
-        publication && (
-          <Text
-            style={styles.metaText}
-            accessibilityLabel="datePublication"
-            testID="datePublication"
-          >
-            <DatePublication
-              date={date}
-              publication={publication}
-              showPublication={showPublication}
-            />
-          </Text>
-        )}
+      {date && (
+        <Text
+          style={styles.metaText}
+          accessibilityLabel="datePublication"
+          testID="datePublication"
+        >
+          <DatePublication
+            date={date}
+            publication={publication}
+            showPublication={showPublication}
+          />
+        </Text>
+      )}
       {byline.length ? (
         <Text style={styles.metaText}>
           <ArticleByline ast={byline} />
