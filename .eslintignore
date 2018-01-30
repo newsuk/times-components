@@ -1,5 +1,6 @@
 **/node_modules/*
 **/coverage/*
+**/flow-typed/*
 dist
 storybook-static
 packages

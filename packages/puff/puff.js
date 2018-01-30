@@ -1,11 +1,10 @@
-//@flow
+// @flow
 
 import React from "react";
-import PropTypes from "prop-types";
 import { View, Text } from "react-native";
 import ArticleSummary from "@times-components/article-summary";
 import Card from "@times-components/card";
-import Link, { TextLink } from "@times-components/link";
+import Link from "@times-components/link";
 import { IconChevronRight } from "@times-components/icons";
 import withResponsiveStyles from "@times-components/responsive-styles";
 import styles from "./styles";
@@ -28,14 +27,14 @@ const TextContainer = withResponsiveStyles(View, {
 
 type PuffType = {|
   headline: string,
-  label?: string,
+  label: ?string,
   text: *, // @TODO: What is the type of "markup"?
   link: string,
-  linkText?: string,
+  linkText: ?string,
   sectionName: string,
-  image?: string,
-  imageRatio?: number,
-  imageSize?: number,
+  image: ?string,
+  imageRatio: ?number,
+  imageSize: ?number,
   onPress: Event => void
 |};
 

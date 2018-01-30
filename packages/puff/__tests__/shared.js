@@ -2,9 +2,8 @@ import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
-
-import Puff from "../puff";
 import Link from "@times-components/link";
+import Puff from "../puff";
 import puffProps from "../fixtures/puff-props";
 
 module.exports = () => {
