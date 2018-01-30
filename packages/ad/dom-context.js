@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { WebView, View, Linking } from "react-native";
+import { WebView, View, Linking, Platform } from "react-native";
 
 import makeHarness from "./dom-context-harness";
 import webviewEventCallbackSetup from "./webview-event-callback-setup";
@@ -100,18 +100,26 @@ export default class DOMContext extends PureComponent {
       </html>
     `;
     // console.log(html);
+
+    const postMessageBugWorkaround = Platform.select({
+      // https://github.com/facebook/react-native/issues/10865
+      ios: {
+        injectedJavaScript:
+          "window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
+      }
+    });
+
     return (
       <View style={{ width, height }}>
         <WebView
           ref={ref => {
             this.webView = ref;
           }}
-          // workaround: https://github.com/facebook/react-native/issues/10865
-          injectedJavaScript="window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
           source={{ html, baseUrl: this.props.baseUrl }}
           onMessage={this.handleMessageEvent}
           onNavigationStateChange={this.handleNavigationStateChange}
           style={{ backgroundColor: "transparent" }}
+          {...postMessageBugWorkaround}
         />
       </View>
     );

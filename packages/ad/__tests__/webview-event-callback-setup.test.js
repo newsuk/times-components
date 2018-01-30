@@ -47,6 +47,25 @@ describe("webviewEventCallbackSetup", () => {
     );
   });
 
+  it("preferrs reactBridgePostMessage if available", () => {
+    webviewEventCallbackSetup({ window });
+    window.postMessage = jest.fn();
+    window.reactBridgePostMessage = jest.fn();
+    window.eventCallback("TYPE", "DETAIL");
+    jest.runAllTimers();
+    expect(window.postMessage).toHaveBeenCalledTimes(0);
+    expect(window.reactBridgePostMessage).toHaveBeenCalledTimes(1);
+  });
+
+  it("falls abck to postMessage if reactBridgePostMessage if not available", () => {
+    webviewEventCallbackSetup({ window });
+    window.postMessage = jest.fn();
+    delete window.reactBridgePostMessage;
+    window.eventCallback("TYPE", "DETAIL");
+    jest.runAllTimers();
+    expect(window.postMessage).toHaveBeenCalledTimes(1);
+  });
+
   it("posts a message to the parent when the global error handler is called", () => {
     webviewEventCallbackSetup({ window });
     window.onerror("a", "b", "c", "d", "e");

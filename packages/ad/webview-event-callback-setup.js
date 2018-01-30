@@ -8,7 +8,8 @@ const webviewEventCallbackSetup = options => {
   window.eventCallback = (type, detail) => {
     // delay until next frame as React Native message bridge is not set up immediately
     window.requestAnimationFrame(() => {
-      window.reactBridgePostMessage(
+      const method = window.reactBridgePostMessage || window.postMessage;
+      method(
         JSON.stringify({
           isTngMessage: true,
           type,
