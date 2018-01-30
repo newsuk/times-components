@@ -312,6 +312,14 @@
     prop-types "15.6.0"
     react-broadcast "0.5.2"
 
+"@times-components/ad@0.6.14":
+  version "0.6.14"
+  resolved "https://registry.yarnpkg.com/@times-components/ad/-/ad-0.6.14.tgz#6851875435d439ea7c23a0e2b652f80a4ed33d0c"
+  dependencies:
+    "@times-components/watermark" "0.2.14"
+    prop-types "15.6.0"
+    react-broadcast "0.5.2"
+
 "@times-components/article-byline@0.10.25":
   version "0.10.25"
   resolved "https://registry.yarnpkg.com/@times-components/article-byline/-/article-byline-0.10.25.tgz#4d8849ab5f320904036fdc2ad383a75a9c0f9fe5"
@@ -320,12 +328,14 @@
     "@times-components/markup" "0.16.3"
     prop-types "15.6.0"
 
-"@times-components/article-summary@0.15.3":
-  version "0.15.3"
-  resolved "https://registry.yarnpkg.com/@times-components/article-summary/-/article-summary-0.15.3.tgz#d07d46c273b63f62796bf85daab7ccd1f80ea495"
+"@times-components/article-summary@0.15.7":
+  version "0.15.7"
+  resolved "https://registry.yarnpkg.com/@times-components/article-summary/-/article-summary-0.15.7.tgz#c3c08a427303205b0554a8251868370f5f0a2e3c"
   dependencies:
-    "@times-components/date-publication" "0.8.6"
-    "@times-components/markup" "0.16.3"
+    "@times-components/article-byline" "0.10.25"
+    "@times-components/date-publication" "0.8.9"
+    "@times-components/markup" "0.16.5"
+    "@times-components/responsive-styles" "0.2.13"
     date-fns "1.28.5"
     prop-types "15.6.0"
 
@@ -341,11 +351,11 @@
     react-native-svg "5.5.0"
     svgs "3.1.1"
 
-"@times-components/date-publication@0.8.6":
-  version "0.8.6"
-  resolved "https://registry.yarnpkg.com/@times-components/date-publication/-/date-publication-0.8.6.tgz#867b4559c1ce0294fd2f2f8a60632bf0c573c69c"
+"@times-components/date-publication@0.8.9":
+  version "0.8.9"
+  resolved "https://registry.yarnpkg.com/@times-components/date-publication/-/date-publication-0.8.9.tgz#68bef666982a7e17c63149acbddb58c4c51ae9bd"
   dependencies:
-    "@times-components/utils" "0.1.5"
+    "@times-components/utils" "0.2.0"
     date-fns "1.28.5"
     prop-types "15.6.0"
 
@@ -388,6 +398,13 @@
     prop-types "15.6.0"
     svgs "3.1.1"
 
+"@times-components/icons@0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@times-components/icons/-/icons-0.1.4.tgz#768692e698bb6fb1a2057fea8d051d84c5792383"
+  dependencies:
+    prop-types "15.6.0"
+    svgs "3.1.1"
+
 "@times-components/image@1.12.8":
   version "1.12.8"
   resolved "https://registry.yarnpkg.com/@times-components/image/-/image-1.12.8.tgz#27303035148446dc1d3bb9db7ea9061181720456"
@@ -417,12 +434,28 @@
     lodash.pick "4.4.0"
     prop-types "15.6.0"
 
+"@times-components/link@0.13.14":
+  version "0.13.14"
+  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-0.13.14.tgz#ac13e5dc01c124d3bf77b5a4ca5647951c42b240"
+  dependencies:
+    "@times-components/responsive-styles" "0.2.14"
+    lodash.pick "4.4.0"
+    prop-types "15.6.0"
+
 "@times-components/markup@0.16.3":
   version "0.16.3"
   resolved "https://registry.yarnpkg.com/@times-components/markup/-/markup-0.16.3.tgz#9a90e0e5b8270f10e1b04e07cf92422a4ca1beeb"
   dependencies:
     "@times-components/ad" "0.6.13"
     "@times-components/pull-quote" "0.2.3"
+    prop-types "15.6.0"
+
+"@times-components/markup@0.16.5":
+  version "0.16.5"
+  resolved "https://registry.yarnpkg.com/@times-components/markup/-/markup-0.16.5.tgz#81bbe38573752dfcd6175fc9bab2dcbdded56770"
+  dependencies:
+    "@times-components/ad" "0.6.14"
+    "@times-components/pull-quote" "0.2.5"
     prop-types "15.6.0"
 
 "@times-components/pull-quote@0.2.3":
@@ -433,6 +466,14 @@
     "@times-components/link" "0.13.12"
     prop-types "15.6.0"
 
+"@times-components/pull-quote@0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@times-components/pull-quote/-/pull-quote-0.2.5.tgz#e96fba4c888b501755da2bb1b5a0e214d23ac1cd"
+  dependencies:
+    "@times-components/icons" "0.1.4"
+    "@times-components/link" "0.13.14"
+    prop-types "15.6.0"
+
 "@times-components/responsive-styles@0.2.13":
   version "0.2.13"
   resolved "https://registry.yarnpkg.com/@times-components/responsive-styles/-/responsive-styles-0.2.13.tgz#cac4b88b4a93461d3c596acb40df147758ac4c37"
@@ -440,20 +481,17 @@
     prop-types "15.6.0"
     styled-components "2.2.3"
 
-"@times-components/utils@0.1.5":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-0.1.5.tgz#787d6241e298dde4dd31a82488de0060eb3b0bb3"
-  dependencies:
-    apollo-cache-inmemory "1.1.5"
-    apollo-client "2.2.0"
-    graphql "0.12.3"
-    prop-types "15.6.0"
-    react "16.2.0"
-    react-apollo-temp "2.0.5"
-
 "@times-components/watermark@0.2.13":
   version "0.2.13"
   resolved "https://registry.yarnpkg.com/@times-components/watermark/-/watermark-0.2.13.tgz#c02dda88fe07b88ce5dc3b52aaa9a1c39f354907"
+  dependencies:
+    prop-types "15.6.0"
+    react-native-svg "5.5.0"
+    svgs "3.1.1"
+
+"@times-components/watermark@0.2.14":
+  version "0.2.14"
+  resolved "https://registry.yarnpkg.com/@times-components/watermark/-/watermark-0.2.14.tgz#ce45e6e76e9064636cfdb110def603ed476d5e2a"
   dependencies:
     prop-types "15.6.0"
     react-native-svg "5.5.0"
@@ -2697,8 +2735,8 @@ caniuse-api@^1.5.2:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000798"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000798.tgz#92f26f77f89cc2a4d60487f41e0b3d2a6c3fe341"
+  version "1.0.30000799"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000799.tgz#0904953de93f3f492647e58c1a1bda7a73a0cb0b"
 
 caniuse-lite@^1.0.30000791, caniuse-lite@^1.0.30000792:
   version "1.0.30000792"
@@ -5583,8 +5621,8 @@ global@4.3.2, global@^4.3.0, global@^4.3.2, global@~4.3.0:
     process "~0.5.1"
 
 globals@^11.1.0:
-  version "11.2.0"
-  resolved "https://registry.yarnpkg.com/globals/-/globals-11.2.0.tgz#aa2ece052a787563ba70a3dcd9dc2eb8a9a0488c"
+  version "11.3.0"
+  resolved "https://registry.yarnpkg.com/globals/-/globals-11.3.0.tgz#e04fdb7b9796d8adac9c8f64c14837b2313378b0"
 
 globals@^9.17.0, globals@^9.18.0:
   version "9.18.0"
@@ -11472,8 +11510,8 @@ uglifyjs-webpack-plugin@^0.4.6:
     webpack-sources "^1.0.1"
 
 uglifyjs-webpack-plugin@^1.1.6:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/uglifyjs-webpack-plugin/-/uglifyjs-webpack-plugin-1.1.6.tgz#f4ba8449edcf17835c18ba6ae99b9d610857fb19"
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/uglifyjs-webpack-plugin/-/uglifyjs-webpack-plugin-1.1.8.tgz#1302fb9471a7daf3d0a5174da6d65f0f415e75ad"
   dependencies:
     cacache "^10.0.1"
     find-cache-dir "^1.0.0"
