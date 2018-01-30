@@ -157,17 +157,19 @@ class AuthorProfileContent extends Component {
       refetch
     } = this.props;
 
-    const paginationComponent = ({ hideResults = false } = {}) => (
+    const paginationComponent = (
+      { hideResults = false, autoScroll = false } = {}
+    ) => (
       <AuthorProfilePagination
         count={count}
         hideResults={hideResults}
         onNext={(...args) => {
           onNext(...args);
-          scrollUpToPaging();
+          if (autoScroll) scrollUpToPaging();
         }}
         onPrev={(...args) => {
           onPrev(...args);
-          scrollUpToPaging();
+          if (autoScroll) scrollUpToPaging();
         }}
         page={page}
         pageSize={pageSize}
@@ -195,7 +197,7 @@ class AuthorProfileContent extends Component {
 
     const Contents = (
       <ContentContainer>
-        {paginationComponent({ hideResults: false })}
+        {paginationComponent({ hideResults: false, autoScroll: false })}
         <View style={styles.container}>
           {data &&
             data.map((article, key) => {
@@ -231,7 +233,7 @@ class AuthorProfileContent extends Component {
               );
             })}
         </View>
-        {paginationComponent({ hideResults: true })}
+        {paginationComponent({ hideResults: true, autoScroll: true })}
       </ContentContainer>
     );
 

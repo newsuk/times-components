@@ -298,7 +298,7 @@ exports[`AuthorHead test on android renders with data 1`] = `
           "alignItems": "center",
           "flexDirection": "row",
           "paddingBottom": 8,
-          "paddingTop": 16,
+          "paddingTop": 8,
         }
       }
     >
@@ -465,7 +465,7 @@ exports[`AuthorHead test on android renders without profile picture 1`] = `
           "alignItems": "center",
           "flexDirection": "row",
           "paddingBottom": 8,
-          "paddingTop": 16,
+          "paddingTop": 8,
         }
       }
     >

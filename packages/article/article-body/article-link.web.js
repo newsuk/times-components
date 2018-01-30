@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "@times-components/link";
 
-const responsivelinkStyles = {
+const responsiveLinkStyles = {
   base: `
       color: #069;
       font-family: "TimesDigitalW04-Regular";
@@ -21,7 +21,7 @@ const ArticleLink = props => (
     index={`link-${props.uuid}`}
     url={props.url}
     onPress={props.onPress}
-    responsivelinkStyles={responsivelinkStyles}
+    responsiveLinkStyles={responsiveLinkStyles}
   >
     {props.children}
   </Link>

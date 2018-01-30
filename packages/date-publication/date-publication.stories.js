@@ -17,8 +17,14 @@ const styles = StyleSheet.create({
   }
 });
 
-storiesOf("DatePublication", module).add("standard DatePublication", () => (
-  <Text style={styles.text}>
-    <DatePublication {...props} />
-  </Text>
-));
+storiesOf("DatePublication", module)
+  .add("standard DatePublication", () => (
+    <Text style={styles.text}>
+      <DatePublication {...props} />
+    </Text>
+  ))
+  .add("DatePublication with publication not displayed", () => (
+    <Text style={styles.text}>
+      <DatePublication {...props} showPublication={false} />
+    </Text>
+  ));

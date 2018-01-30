@@ -1,0 +1,48 @@
+{
+  "data": {
+    "relatedArticlesTemplate": "DEFAULT",
+    "relatedArticles": [
+      {
+        "id": "08604618-fb0e-11e7-a987-7fcf5e9983dc",
+        "headline":
+          "Now for a new battle: bringing the fragile masterpiece over safely",
+        "summary": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab."
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-13T18:54:58.000Z",
+        "label": "BAYEUX TAPESTRY",
+        "url":
+          "https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh",
+        "byline": [
+          {
+            "name": "inline",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Charles Bremner, Paris | Jack Malvern"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

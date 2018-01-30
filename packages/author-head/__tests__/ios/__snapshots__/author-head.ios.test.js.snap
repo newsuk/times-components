@@ -264,7 +264,7 @@ exports[`AuthorHead test on ios renders with data 1`] = `
         Object {
           "flexDirection": "row",
           "paddingBottom": 8,
-          "paddingTop": 16,
+          "paddingTop": 8,
         }
       }
     >
@@ -430,7 +430,7 @@ exports[`AuthorHead test on ios renders without profile picture 1`] = `
         Object {
           "flexDirection": "row",
           "paddingBottom": 8,
-          "paddingTop": 16,
+          "paddingTop": 8,
         }
       }
     >
