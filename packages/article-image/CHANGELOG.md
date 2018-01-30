@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.11.17"></a>
+## [0.11.17](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.11.16...@times-components/article-image@0.11.17) (2018-01-30)
+
+
+### Bug Fixes
+
+* android dextrose ([#569](https://github.com/newsuk/times-components/issues/569)) ([b5b74fa](https://github.com/newsuk/times-components/commit/b5b74fa))
+
+
+
+
 <a name="0.11.16"></a>
 ## [0.11.16](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.11.15...@times-components/article-image@0.11.16) (2018-01-30)
 

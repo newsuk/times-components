@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.16"></a>
+## [0.3.16](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.3.15...@times-components/gradient@0.3.16) (2018-01-30)
+
+
+### Bug Fixes
+
+* android dextrose ([#569](https://github.com/newsuk/times-components/issues/569)) ([b5b74fa](https://github.com/newsuk/times-components/commit/b5b74fa))
+
+
+
+
 <a name="0.3.15"></a>
 ## [0.3.15](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.3.14...@times-components/gradient@0.3.15) (2018-01-26)
 
