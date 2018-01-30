@@ -5,27 +5,12 @@ import getDisplayName from "react-display-name";
 import get from "lodash.get";
 import hoistNonReactStatic from "hoist-non-react-statics";
 import trackingContextTypes from "./tracking-context-types";
+import type {
+  AnalyticsEventObjectType,
+  TrackingContextObjectType,
+  TrackingContextPropsType
+} from "./tracking-types";
 import resolveAttrs from "./resolve-attrs";
-
-type AnalyticsEventObjectType = {
-  object: {},
-  component: string,
-  action: string,
-  attrs: Function
-};
-
-type TrackingContextPropsType = {
-  analyticsStream: ({
-    ...AnalyticsEventObjectType,
-    object: string
-  }) => void
-};
-
-type TrackingContextObjectType = {
-  getAttrs: any => mixed,
-  trackingObjectName: string,
-  isDataReady: (props: TrackingContextPropsType) => boolean
-};
 
 const withTrackingContext = (
   WrappedComponent: any,
