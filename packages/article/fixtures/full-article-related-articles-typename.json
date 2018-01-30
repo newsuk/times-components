@@ -535,13 +535,12 @@
         "__typename": "Image"
       },
       "relatedArticlesLayout": {
-        "template": "DEFAULT",
-        "__typename": "Default"
+        "template": "LEAD_AND_TWO",
+        "lead": "9bb5565f-3810-426f-84f1-c03e4a580697",
+        "__typename": "LeadAndTwo"
       },
       "relatedArticles": [
         {
-          "id": "ea16d744-cb4a-11e4-a202-50ac5def393a",
-          "headline": "TMS: Pratchett’s law of the jungle - Disable Saving",
           "byline": [
             {
               "name": "inline",
@@ -550,17 +549,18 @@
                 {
                   "name": "text",
                   "attributes": {
-                    "value": "Patrick Kidd"
+                    "value": "Josh Glancy"
                   },
                   "children": []
                 }
               ]
             }
           ],
-          "label": "Health",
-          "publicationName": "TIMES",
-          "publishedTime": "2015-03-23T19:39:39.000Z",
-          "summary100": [
+          "headline": "Gay and IVF couples ‘better at raising children’",
+          "label": null,
+          "publicationName": "SUNDAYTIMES",
+          "publishedTime": "2015-03-21T23:37:49.000Z",
+          "summary": [
             {
               "name": "paragraph",
               "attributes": {},
@@ -569,201 +569,59 @@
                   "name": "text",
                   "attributes": {
                     "value":
-                      "Terry Pratchett, who died last week, began his career on the "
-                  },
-                  "children": []
-                },
-                {
-                  "name": "italic",
-                  "attributes": {},
-                  "children": [
-                    {
-                      "name": "text",
-                      "attributes": {
-                        "value": "Bucks Free Press"
-                      },
-                      "children": []
-                    }
-                  ]
-                },
-                {
-                  "name": "text",
-                  "attributes": {
-                    "value": " in 1965, aged 17, and"
+                      "GAY and lesbian couples and those who have children using IVF treatment or a surrogate make better parents than heterosexual couples, according to the author of a new book."
                   },
                   "children": []
                 }
               ]
-            }
-          ],
-          "summary110": [
-            {
-              "name": "paragraph",
-              "attributes": {},
-              "children": [
-                {
-                  "name": "text",
-                  "attributes": {
-                    "value":
-                      "Terry Pratchett, who died last week, began his career on the "
-                  },
-                  "children": []
-                },
-                {
-                  "name": "italic",
-                  "attributes": {},
-                  "children": [
-                    {
-                      "name": "text",
-                      "attributes": {
-                        "value": "Bucks Free Press"
-                      },
-                      "children": []
-                    }
-                  ]
-                },
-                {
-                  "name": "text",
-                  "attributes": {
-                    "value": " in 1965, aged 17, and the paper"
-                  },
-                  "children": []
-                }
-              ]
-            }
-          ],
-          "summary125": [
-            {
-              "name": "paragraph",
-              "attributes": {},
-              "children": [
-                {
-                  "name": "text",
-                  "attributes": {
-                    "value":
-                      "Terry Pratchett, who died last week, began his career on the "
-                  },
-                  "children": []
-                },
-                {
-                  "name": "italic",
-                  "attributes": {},
-                  "children": [
-                    {
-                      "name": "text",
-                      "attributes": {
-                        "value": "Bucks Free Press"
-                      },
-                      "children": []
-                    }
-                  ]
-                },
-                {
-                  "name": "text",
-                  "attributes": {
-                    "value": " in 1965, aged 17, and the paper recalls in a"
-                  },
-                  "children": []
-                }
-              ]
-            }
-          ],
-          "summary150": [
-            {
-              "name": "paragraph",
-              "attributes": {},
-              "children": [
-                {
-                  "name": "text",
-                  "attributes": {
-                    "value":
-                      "Terry Pratchett, who died last week, began his career on the "
-                  },
-                  "children": []
-                },
-                {
-                  "name": "italic",
-                  "attributes": {},
-                  "children": [
-                    {
-                      "name": "text",
-                      "attributes": {
-                        "value": "Bucks Free Press"
-                      },
-                      "children": []
-                    }
-                  ]
-                },
-                {
-                  "name": "text",
-                  "attributes": {
-                    "value":
-                      " in 1965, aged 17, and the paper recalls in a tribute that he wore his"
-                  },
-                  "children": []
-                }
-              ]
-            }
-          ],
-          "summary180": [
-            {
-              "name": "paragraph",
-              "attributes": {},
-              "children": [
-                {
-                  "name": "text",
-                  "attributes": {
-                    "value":
-                      "Terry Pratchett, who died last week, began his career on the "
-                  },
-                  "children": []
-                },
-                {
-                  "name": "italic",
-                  "attributes": {},
-                  "children": [
-                    {
-                      "name": "text",
-                      "attributes": {
-                        "value": "Bucks Free Press"
-                      },
-                      "children": []
-                    }
-                  ]
-                },
-                {
-                  "name": "text",
-                  "attributes": {
-                    "value":
-                      " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job"
-                  },
-                  "children": []
-                }
-              ]
-            }
-          ],
-          "leadAsset": {
-            "title": "TMS: Pratchett’s law of the jungle",
-            "crop169": {
-              "url":
-                "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40",
-              "__typename": "Crop"
             },
-            "crop32": {
-              "url":
-                "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
-              "__typename": "Crop"
+            {
+              "name": "paragraph",
+              "attributes": {},
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value":
+                      "Susan Golombok, director of the Centre for Family Research at Cambridge University, believes that, in general, these so-called “new” families face so many obstacles to reach parenthood that they perform better when they arrive there."
+                  },
+                  "children": []
+                }
+              ]
             },
-            "__typename": "Image"
-          },
+            {
+              "name": "paragraph",
+              "attributes": {},
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value":
+                      "“When you think about it, the parents of these families are people who have often gone through years of infertility or faced a lot of social disapproval, or sometimes both,” she said."
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "paragraph",
+              "attributes": {},
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value":
+                      "“So only people that really, really want to be parents stay the course. It’s often so difficult that if you weren’t so committed then you’d just drop off along"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ],
           "url":
-            "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779",
-          "__typename": "Article"
+            "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/gay-and-ivf-couples-better-at-raising-children-c5bp6fpgv"
         },
         {
-          "id": "b09fc422-cb53-11e4-81dd-064fe933cd41",
-          "headline":
-            "Rise of centenarian drivers as elderly push on - V5 Premoderated Comments",
           "byline": [
             {
               "name": "inline",
@@ -772,17 +630,18 @@
                 {
                   "name": "text",
                   "attributes": {
-                    "value": "Graeme Paton Transport Correspondent"
+                    "value": "Nicholas Hellen, Social Affairs Editor"
                   },
                   "children": []
                 }
               ]
             }
           ],
-          "label": "Science",
-          "publicationName": "TIMES",
-          "publishedTime": "2015-03-23T20:42:27.000Z",
-          "summary100": [
+          "headline": "Charles to keep writing memos",
+          "label": "Environment",
+          "publicationName": "SUNDAYTIMES",
+          "publishedTime": "2015-03-21T23:28:55.000Z",
+          "summary": [
             {
               "name": "paragraph",
               "attributes": {},
@@ -791,55 +650,7 @@
                   "name": "text",
                   "attributes": {
                     "value":
-                      "More than 200 motorists are still on the road after celebrating their 100th birthday as older people"
-                  },
-                  "children": []
-                }
-              ]
-            }
-          ],
-          "summary110": [
-            {
-              "name": "paragraph",
-              "attributes": {},
-              "children": [
-                {
-                  "name": "text",
-                  "attributes": {
-                    "value":
-                      "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become"
-                  },
-                  "children": []
-                }
-              ]
-            }
-          ],
-          "summary125": [
-            {
-              "name": "paragraph",
-              "attributes": {},
-              "children": [
-                {
-                  "name": "text",
-                  "attributes": {
-                    "value":
-                      "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly"
-                  },
-                  "children": []
-                }
-              ]
-            }
-          ],
-          "summary150": [
-            {
-              "name": "paragraph",
-              "attributes": {},
-              "children": [
-                {
-                  "name": "text",
-                  "attributes": {
-                    "value":
-                      "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
+                      "THE Prince of Wales will not hold back his opinions when he writes and talks to government ministers, even if the Supreme Court rules this week that letters revealing his “most deeply held personal views and beliefs” must be made public."
                   },
                   "children": []
                 }
@@ -852,14 +663,13 @@
                 {
                   "name": "text",
                   "attributes": {
-                    "value": "Figures"
+                    "value":
+                      "Informed sources told The Sunday Times this weekend that Charles “continues to believe it is his duty to talk to ministers about things he has learnt, or about issues which (while not party political) need some attention”."
                   },
                   "children": []
                 }
               ]
-            }
-          ],
-          "summary180": [
+            },
             {
               "name": "paragraph",
               "attributes": {},
@@ -868,7 +678,7 @@
                   "name": "text",
                   "attributes": {
                     "value":
-                      "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
+                      "In a 10-year legal battle to block the publication of the letters, the government has argued that their release could “seriously damage” Charles’s future role as king if they were made public."
                   },
                   "children": []
                 }
@@ -881,150 +691,16 @@
                 {
                   "name": "text",
                   "attributes": {
-                    "value": "Figures from the Driver and Vehicle"
+                    "value":
+                      "Dominic Grieve, the former attorney-general, has argued that the monarch could not be seen to"
                   },
                   "children": []
                 }
               ]
             }
           ],
-          "leadAsset": {
-            "title": "Rise of centenarian drivers as elderly push on",
-            "crop169": {
-              "url":
-                "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C439%2C0%2C40",
-              "__typename": "Crop"
-            },
-            "crop32": {
-              "url":
-                "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C520%2C0%2C0",
-              "__typename": "Crop"
-            },
-            "__typename": "Image"
-          },
           "url":
-            "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz",
-          "__typename": "Article"
-        },
-        {
-          "id": "8557a3d2-cb55-11e4-81dd-064fe933cd41",
-          "headline":
-            "Syndicated url: At long last, a burial place fit for a king",
-          "byline": [
-            {
-              "name": "inline",
-              "attributes": {},
-              "children": [
-                {
-                  "name": "text",
-                  "attributes": {
-                    "value": "Jack Malvern Arts Correspondent Dominic Kennedy"
-                  },
-                  "children": []
-                }
-              ]
-            }
-          ],
-          "label": "Science",
-          "publicationName": "TIMES",
-          "publishedTime": "2015-03-23T20:56:09.000Z",
-          "summary100": [
-            {
-              "name": "paragraph",
-              "attributes": {},
-              "children": [
-                {
-                  "name": "text",
-                  "attributes": {
-                    "value":
-                      "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week"
-                  },
-                  "children": []
-                }
-              ]
-            }
-          ],
-          "summary110": [
-            {
-              "name": "paragraph",
-              "attributes": {},
-              "children": [
-                {
-                  "name": "text",
-                  "attributes": {
-                    "value":
-                      "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the"
-                  },
-                  "children": []
-                }
-              ]
-            }
-          ],
-          "summary125": [
-            {
-              "name": "paragraph",
-              "attributes": {},
-              "children": [
-                {
-                  "name": "text",
-                  "attributes": {
-                    "value":
-                      "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can"
-                  },
-                  "children": []
-                }
-              ]
-            }
-          ],
-          "summary150": [
-            {
-              "name": "paragraph",
-              "attributes": {},
-              "children": [
-                {
-                  "name": "text",
-                  "attributes": {
-                    "value":
-                      "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the"
-                  },
-                  "children": []
-                }
-              ]
-            }
-          ],
-          "summary180": [
-            {
-              "name": "paragraph",
-              "attributes": {},
-              "children": [
-                {
-                  "name": "text",
-                  "attributes": {
-                    "value":
-                      "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family affair"
-                  },
-                  "children": []
-                }
-              ]
-            }
-          ],
-          "leadAsset": {
-            "title": "At long last, a burial place fit for a king",
-            "crop169": {
-              "url":
-                "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/966beb186f2a7951c2b7f6d3ac4339862a7c381b.jpg?crop=780%2C439%2C0%2C40",
-              "__typename": "Crop"
-            },
-            "crop32": {
-              "url":
-                "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/966beb186f2a7951c2b7f6d3ac4339862a7c381b.jpg?crop=780%2C520%2C0%2C0",
-              "__typename": "Crop"
-            },
-            "__typename": "Image"
-          },
-          "url":
-            "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
-          "__typename": "Article"
+            "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/charles-to-keep-writing-memos-686ncmbpq"
         }
       ],
       "__typename": "Article"
