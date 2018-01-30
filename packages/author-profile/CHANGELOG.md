@@ -3,6 +3,73 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.41.9"></a>
+## [0.41.9](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.41.8...@times-components/author-profile@0.41.9) (2018-01-30)
+
+
+### Bug Fixes
+
+* android dextrose ([#569](https://github.com/newsuk/times-components/issues/569)) ([b5b74fa](https://github.com/newsuk/times-components/commit/b5b74fa))
+
+
+
+
+<a name="0.41.8"></a>
+## [0.41.8](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.41.7...@times-components/author-profile@0.41.8) (2018-01-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.41.7"></a>
+## [0.41.7](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.41.6...@times-components/author-profile@0.41.7) (2018-01-29)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.41.6"></a>
+## [0.41.6](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.41.5...@times-components/author-profile@0.41.6) (2018-01-29)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.41.5"></a>
+## [0.41.5](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.41.4...@times-components/author-profile@0.41.5) (2018-01-29)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.41.4"></a>
+## [0.41.4](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.41.3...@times-components/author-profile@0.41.4) (2018-01-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.41.3"></a>
+## [0.41.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.41.2...@times-components/author-profile@0.41.3) (2018-01-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.41.2"></a>
+## [0.41.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.41.1...@times-components/author-profile@0.41.2) (2018-01-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
 <a name="0.41.1"></a>
 ## [0.41.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.41.0...@times-components/author-profile@0.41.1) (2018-01-24)
 

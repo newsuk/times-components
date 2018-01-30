@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.13.4"></a>
+## [1.13.4](https://github.com/newsuk/times-components/compare/@times-components/image@1.13.3...@times-components/image@1.13.4) (2018-01-30)
+
+
+### Bug Fixes
+
+* android dextrose ([#569](https://github.com/newsuk/times-components/issues/569)) ([b5b74fa](https://github.com/newsuk/times-components/commit/b5b74fa))
+
+
+
+
+<a name="1.13.3"></a>
+## [1.13.3](https://github.com/newsuk/times-components/compare/@times-components/image@1.13.2...@times-components/image@1.13.3) (2018-01-29)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.13.2"></a>
+## [1.13.2](https://github.com/newsuk/times-components/compare/@times-components/image@1.13.1...@times-components/image@1.13.2) (2018-01-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.13.1"></a>
+## [1.13.1](https://github.com/newsuk/times-components/compare/@times-components/image@1.13.0...@times-components/image@1.13.1) (2018-01-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.13.0"></a>
+# [1.13.0](https://github.com/newsuk/times-components/compare/@times-components/image@1.12.8...@times-components/image@1.13.0) (2018-01-26)
+
+
+### Features
+
+* add pinch to zoom/rotate ([#534](https://github.com/newsuk/times-components/issues/534)) ([dcd9d19](https://github.com/newsuk/times-components/commit/dcd9d19))
+
+
+
+
 <a name="1.12.8"></a>
 ## [1.12.8](https://github.com/newsuk/times-components/compare/@times-components/image@1.12.7...@times-components/image@1.12.8) (2018-01-19)
 

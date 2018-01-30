@@ -1,9 +1,6 @@
 import React from "react";
-import Enzyme, { shallow } from "enzyme";
-import React16Adapter from "enzyme-adapter-react-16";
+import { shallow } from "enzyme";
 import { PreviousPageIcon, NextPageIcon } from "../pagination-icons";
-
-Enzyme.configure({ adapter: new React16Adapter() });
 
 export default () => {
   describe("Previous page icon", () => {
