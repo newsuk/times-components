@@ -312,33 +312,6 @@
     prop-types "15.6.0"
     react-broadcast "0.5.2"
 
-"@times-components/ad@0.6.14":
-  version "0.6.14"
-  resolved "https://registry.yarnpkg.com/@times-components/ad/-/ad-0.6.14.tgz#6851875435d439ea7c23a0e2b652f80a4ed33d0c"
-  dependencies:
-    "@times-components/watermark" "0.2.14"
-    prop-types "15.6.0"
-    react-broadcast "0.5.2"
-
-"@times-components/article-byline@0.10.25":
-  version "0.10.25"
-  resolved "https://registry.yarnpkg.com/@times-components/article-byline/-/article-byline-0.10.25.tgz#4d8849ab5f320904036fdc2ad383a75a9c0f9fe5"
-  dependencies:
-    "@times-components/link" "0.13.12"
-    "@times-components/markup" "0.16.3"
-    prop-types "15.6.0"
-
-"@times-components/article-summary@0.15.7":
-  version "0.15.7"
-  resolved "https://registry.yarnpkg.com/@times-components/article-summary/-/article-summary-0.15.7.tgz#c3c08a427303205b0554a8251868370f5f0a2e3c"
-  dependencies:
-    "@times-components/article-byline" "0.10.25"
-    "@times-components/date-publication" "0.8.9"
-    "@times-components/markup" "0.16.5"
-    "@times-components/responsive-styles" "0.2.13"
-    date-fns "1.28.5"
-    prop-types "15.6.0"
-
 "@times-components/card@0.16.30":
   version "0.16.30"
   resolved "https://registry.yarnpkg.com/@times-components/card/-/card-0.16.30.tgz#052bbe8c3bacbbcdd237eff970e9a7edf4a7e2c9"
@@ -350,14 +323,6 @@
     prop-types "15.6.0"
     react-native-svg "5.5.0"
     svgs "3.1.1"
-
-"@times-components/date-publication@0.8.9":
-  version "0.8.9"
-  resolved "https://registry.yarnpkg.com/@times-components/date-publication/-/date-publication-0.8.9.tgz#68bef666982a7e17c63149acbddb58c4c51ae9bd"
-  dependencies:
-    "@times-components/utils" "0.2.0"
-    date-fns "1.28.5"
-    prop-types "15.6.0"
 
 "@times-components/fructose@3.1.14":
   version "3.1.14"
@@ -398,13 +363,6 @@
     prop-types "15.6.0"
     svgs "3.1.1"
 
-"@times-components/icons@0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@times-components/icons/-/icons-0.1.4.tgz#768692e698bb6fb1a2057fea8d051d84c5792383"
-  dependencies:
-    prop-types "15.6.0"
-    svgs "3.1.1"
-
 "@times-components/image@1.12.8":
   version "1.12.8"
   resolved "https://registry.yarnpkg.com/@times-components/image/-/image-1.12.8.tgz#27303035148446dc1d3bb9db7ea9061181720456"
@@ -434,14 +392,6 @@
     lodash.pick "4.4.0"
     prop-types "15.6.0"
 
-"@times-components/link@0.13.14":
-  version "0.13.14"
-  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-0.13.14.tgz#ac13e5dc01c124d3bf77b5a4ca5647951c42b240"
-  dependencies:
-    "@times-components/responsive-styles" "0.2.14"
-    lodash.pick "4.4.0"
-    prop-types "15.6.0"
-
 "@times-components/markup@0.16.3":
   version "0.16.3"
   resolved "https://registry.yarnpkg.com/@times-components/markup/-/markup-0.16.3.tgz#9a90e0e5b8270f10e1b04e07cf92422a4ca1beeb"
@@ -450,28 +400,12 @@
     "@times-components/pull-quote" "0.2.3"
     prop-types "15.6.0"
 
-"@times-components/markup@0.16.5":
-  version "0.16.5"
-  resolved "https://registry.yarnpkg.com/@times-components/markup/-/markup-0.16.5.tgz#81bbe38573752dfcd6175fc9bab2dcbdded56770"
-  dependencies:
-    "@times-components/ad" "0.6.14"
-    "@times-components/pull-quote" "0.2.5"
-    prop-types "15.6.0"
-
 "@times-components/pull-quote@0.2.3":
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@times-components/pull-quote/-/pull-quote-0.2.3.tgz#ffec8aca711abec039f2ed80cb87ee307ff0e74a"
   dependencies:
     "@times-components/icons" "0.1.3"
     "@times-components/link" "0.13.12"
-    prop-types "15.6.0"
-
-"@times-components/pull-quote@0.2.5":
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/@times-components/pull-quote/-/pull-quote-0.2.5.tgz#e96fba4c888b501755da2bb1b5a0e214d23ac1cd"
-  dependencies:
-    "@times-components/icons" "0.1.4"
-    "@times-components/link" "0.13.14"
     prop-types "15.6.0"
 
 "@times-components/responsive-styles@0.2.13":
@@ -484,14 +418,6 @@
 "@times-components/watermark@0.2.13":
   version "0.2.13"
   resolved "https://registry.yarnpkg.com/@times-components/watermark/-/watermark-0.2.13.tgz#c02dda88fe07b88ce5dc3b52aaa9a1c39f354907"
-  dependencies:
-    prop-types "15.6.0"
-    react-native-svg "5.5.0"
-    svgs "3.1.1"
-
-"@times-components/watermark@0.2.14":
-  version "0.2.14"
-  resolved "https://registry.yarnpkg.com/@times-components/watermark/-/watermark-0.2.14.tgz#ce45e6e76e9064636cfdb110def603ed476d5e2a"
   dependencies:
     prop-types "15.6.0"
     react-native-svg "5.5.0"
