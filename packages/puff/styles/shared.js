@@ -28,7 +28,11 @@ const sharedStyle = {
     borderTopColor: "#000000"
   },
   textContainer: {
-    padding: 10
+    padding: 10,
+    paddingTop: 5
+  },
+  withoutImage: {
+    paddingTop: 10
   },
   link: {
     color: "#CD0000",

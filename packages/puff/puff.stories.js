@@ -1,6 +1,6 @@
 import "react-native";
 import React from "react";
-import { storiesOf } from "@storybook/react-native";
+import { storiesOf } from "dextrose/storiesOfOverloader";
 import Puff from "./puff";
 import puffProps from "./fixtures/puff-props";
 

@@ -10,13 +10,19 @@ import { IconChevronRight } from "@times-components/icons";
 import withResponsiveStyles from "@times-components/responsive-styles";
 import styles from "./styles";
 
+const CardContainer = withResponsiveStyles(View, {
+  mediumUp: () => `
+    padding: 10px;
+  `
+});
+
 const TextContainer = withResponsiveStyles(View, {
   base: () => `
-    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
   `,
   mediumUp: () => `
-    padding-top: 10px;
-    padding-left: 0;
+    padding: 0;
   `
 });
 
@@ -47,21 +53,25 @@ const Puff = ({
 }: PuffType) => (
   <View style={[styles.root, styles[`section${sectionName}`]]}>
     <Link url={link} onPress={onPress}>
-      <Card
-        image={image}
-        imageRatio={imageRatio}
-        imageSize={imageSize}
-        showImage={!!image}
-      >
-        <TextContainer style={styles.textContainer}>
-          <ArticleSummary label={label} headline={headline} text={text} />
+      <CardContainer>
+        <Card
+          image={image}
+          imageRatio={imageRatio}
+          imageSize={imageSize}
+          showImage={!!image}
+        >
+          <TextContainer
+            style={[styles.textContainer, !image && styles.withoutImage]}
+          >
+            <ArticleSummary label={label} headline={headline} text={text} />
 
-          <Text style={styles.link}>
-            {linkText}{" "}
-            <IconChevronRight width={10} height={10} fillColour="#CD0000" />
-          </Text>
-        </TextContainer>
-      </Card>
+            <Text style={styles.link}>
+              {linkText}{" "}
+              <IconChevronRight width={10} height={10} fillColour="#CD0000" />
+            </Text>
+          </TextContainer>
+        </Card>
+      </CardContainer>
     </Link>
   </View>
 );

@@ -65,25 +65,6 @@
     react-inspector "^2.2.2"
     uuid "^3.1.0"
 
-"@storybook/addon-actions@^3.2.18":
-  version "3.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.3.11.tgz#158a64f01c97fcf6922e7a370c6519d216544bcd"
-  dependencies:
-    deep-equal "^1.0.1"
-    global "^4.3.2"
-    make-error "^1.3.2"
-    prop-types "^15.6.0"
-    react-inspector "^2.2.2"
-    uuid "^3.1.0"
-
-"@storybook/addon-links@^3.2.18":
-  version "3.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-3.3.11.tgz#7bc57baddd1502153ee94cf11fcb88d49131b211"
-  dependencies:
-    "@storybook/components" "^3.3.11"
-    global "^4.3.2"
-    prop-types "^15.5.10"
-
 "@storybook/addon-links@^3.3.9":
   version "3.3.9"
   resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-3.3.9.tgz#13781ac1c21ddfe347ece6ceab8518c8d1f98a0f"
@@ -96,10 +77,6 @@
   version "3.3.9"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-3.3.9.tgz#356ce7f1de892d88ca4bc5f686d06e07dd8c2108"
 
-"@storybook/addons@^3.2.18":
-  version "3.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-3.3.11.tgz#7f85136d6da785160658aee512fd3cac99780f42"
-
 "@storybook/channel-postmessage@^3.3.9":
   version "3.3.9"
   resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-3.3.9.tgz#a59220f9ecbdbe05deac6ac4339715aa587d41dd"
@@ -108,23 +85,12 @@
     global "^4.3.2"
     json-stringify-safe "^5.0.1"
 
-"@storybook/channel-websocket@^3.2.18":
-  version "3.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/channel-websocket/-/channel-websocket-3.3.11.tgz#a82171946b15efafa6a53af4cc53b08e6548debb"
-  dependencies:
-    "@storybook/channels" "^3.3.11"
-    global "^4.3.2"
-
 "@storybook/channel-websocket@^3.3.9":
   version "3.3.9"
   resolved "https://registry.yarnpkg.com/@storybook/channel-websocket/-/channel-websocket-3.3.9.tgz#abb69ffeccb3c698fd81b6dec7b314d9e0223dd5"
   dependencies:
     "@storybook/channels" "^3.3.9"
     global "^4.3.2"
-
-"@storybook/channels@^3.3.11":
-  version "3.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-3.3.11.tgz#569f1c7c364aeb076df78eb829c58f9c9f0a3936"
 
 "@storybook/channels@^3.3.9":
   version "3.3.9"
@@ -133,14 +99,6 @@
 "@storybook/client-logger@^3.3.9":
   version "3.3.9"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-3.3.9.tgz#a73e382c383c1bfa6d2ff7fa5cae77cd09efa524"
-
-"@storybook/components@^3.3.11":
-  version "3.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-3.3.11.tgz#cb2a48b52e7cb45408172f4462f4730ca6970e78"
-  dependencies:
-    glamor "^2.20.40"
-    glamorous "^4.11.2"
-    prop-types "^15.6.0"
 
 "@storybook/components@^3.3.9":
   version "3.3.9"
@@ -174,56 +132,6 @@
     hoist-non-react-statics "^1.2.0"
     lodash.pick "^4.4.0"
     shallowequal "^0.2.2"
-
-"@storybook/react-native@3.2.18":
-  version "3.2.18"
-  resolved "https://registry.yarnpkg.com/@storybook/react-native/-/react-native-3.2.18.tgz#cb25bd473b7d867048c1c3b1efe5c6504785c21f"
-  dependencies:
-    "@storybook/addon-actions" "^3.2.18"
-    "@storybook/addon-links" "^3.2.18"
-    "@storybook/addons" "^3.2.18"
-    "@storybook/channel-websocket" "^3.2.18"
-    "@storybook/ui" "^3.2.18"
-    autoprefixer "^7.2.3"
-    babel-core "^6.26.0"
-    babel-loader "^7.1.2"
-    babel-plugin-syntax-async-functions "^6.13.0"
-    babel-plugin-syntax-trailing-function-commas "^6.22.0"
-    babel-plugin-transform-class-properties "^6.24.1"
-    babel-plugin-transform-object-rest-spread "^6.23.0"
-    babel-plugin-transform-react-constant-elements "^6.23.0"
-    babel-plugin-transform-regenerator "^6.26.0"
-    babel-plugin-transform-runtime "^6.23.0"
-    babel-polyfill "^6.26.0"
-    babel-preset-env "^1.6.1"
-    babel-preset-minify "^0.2.0"
-    babel-preset-react "^6.24.1"
-    babel-preset-stage-0 "^6.24.1"
-    babel-runtime "^6.26.0"
-    case-sensitive-paths-webpack-plugin "^2.1.1"
-    commander "^2.12.2"
-    css-loader "^0.28.7"
-    events "^1.1.1"
-    express "^4.16.2"
-    file-loader "^1.1.5"
-    find-cache-dir "^1.0.0"
-    global "^4.3.2"
-    json-loader "^0.5.7"
-    json5 "^0.5.1"
-    postcss-loader "^2.0.9"
-    prop-types "^15.6.0"
-    react-native-compat "^1.0.0"
-    react-native-iphone-x-helper "^1.0.1"
-    shelljs "^0.7.8"
-    style-loader "^0.19.1"
-    url-loader "^0.6.2"
-    url-parse "^1.1.9"
-    util-deprecate "^1.0.2"
-    uuid "^3.1.0"
-    webpack "^3.10.0"
-    webpack-dev-middleware "^1.12.2"
-    webpack-hot-middleware "^2.21.0"
-    ws "^3.3.3"
 
 "@storybook/react-native@3.3.9":
   version "3.3.9"
@@ -352,34 +260,6 @@
     webpack "^3.10.0"
     webpack-dev-middleware "^1.12.2"
     webpack-hot-middleware "^2.21.0"
-
-"@storybook/ui@^3.2.18":
-  version "3.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/ui/-/ui-3.3.11.tgz#df500b97739da484d51d6a1bcb52ce3866ad2148"
-  dependencies:
-    "@storybook/components" "^3.3.11"
-    "@storybook/mantra-core" "^1.7.2"
-    "@storybook/react-komposer" "^2.0.3"
-    babel-runtime "^6.26.0"
-    deep-equal "^1.0.1"
-    events "^1.1.1"
-    fuse.js "^3.2.0"
-    global "^4.3.2"
-    json-stringify-safe "^5.0.1"
-    keycode "^2.1.9"
-    lodash.debounce "^4.0.8"
-    lodash.pick "^4.4.0"
-    lodash.sortby "^4.7.0"
-    podda "^1.2.2"
-    prop-types "^15.6.0"
-    qs "^6.5.1"
-    react-fuzzy "^0.5.1"
-    react-icons "^2.2.7"
-    react-inspector "^2.2.2"
-    react-modal "^3.1.10"
-    react-split-pane "^0.1.74"
-    react-treebeard "^2.1.0"
-    redux "^3.7.2"
 
 "@storybook/ui@^3.3.9":
   version "3.3.9"
@@ -3712,7 +3592,7 @@ css-in-js-utils@^2.0.0:
   dependencies:
     hyphenate-style-name "^1.0.2"
 
-css-loader@^0.28.7, css-loader@^0.28.8:
+css-loader@^0.28.8:
   version "0.28.9"
   resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-0.28.9.tgz#68064b85f4e271d7ce4c48a58300928e535d1c95"
   dependencies:
@@ -5127,7 +5007,7 @@ file-entry-cache@^2.0.0:
     flat-cache "^1.2.1"
     object-assign "^4.0.1"
 
-file-loader@^1.1.5, file-loader@^1.1.6:
+file-loader@^1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-1.1.6.tgz#7b9a8f2c58f00a77fddf49e940f7ac978a3ea0e8"
   dependencies:
