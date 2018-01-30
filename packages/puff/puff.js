@@ -20,14 +20,13 @@ const TextContainer = withResponsiveStyles(View, {
   `
 });
 
-type Section = "News" | "Comment" | "Sport"; // @TODO: Do we have a list of valid sections?
 type PuffType = {|
   headline: string,
   label?: string,
   text: *, // @TODO: What is the type of "markup"?
   link: string,
   linkText?: string,
-  sectionName: Section,
+  sectionName: string,
   image?: string,
   imageRatio?: number,
   imageSize?: number,

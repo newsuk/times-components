@@ -10,7 +10,7 @@ storiesOf("Puff", module)
     <Puff {...puffProps} sectionName={null} />
   ))
   .add("Puff without a label", () => <Puff {...puffProps} label={null} />)
-  .add("Puff without custom link text", () => (
-    <Puff {...puffProps} linkText={undefined} />
+  .add("Puff with custom link text", () => (
+    <Puff {...puffProps} linkText="Read the feature" />
   ))
   .add("Puff without an image", () => <Puff {...puffProps} image={null} />);

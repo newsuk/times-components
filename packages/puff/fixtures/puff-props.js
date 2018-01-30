@@ -25,7 +25,6 @@ export default {
       "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F17e35a72-0472-11e8-8e80-008642e5faa1.jpg?crop=3561%2C2003%2C0%2C185"
   },
   link: "https://www.thetimes.co.uk",
-  linkText: "Read the feature",
   imageRatio: 16 / 9,
   imageSize: 360,
   onPress: action("onPress")
