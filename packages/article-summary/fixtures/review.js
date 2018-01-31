@@ -1,7 +1,17 @@
-{
-  "label": "Camilla Long",
-  "headline": "OK, so Putin’s not a lady, but he does have the wildest man‑PMT",
-  "byline": [
+import React from "react";
+import ArticleLabel from "@times-components/article-label";
+import ArticleByline from "@times-components/article-byline";
+import DatePublication from "@times-components/date-publication";
+import { renderTrees } from "@times-components/markup";
+import ArticleSummaryHeadline from "../article-summary-headline";
+import renderer from "../article-summary-renderer";
+import summarise from "../summarise";
+
+export default {
+  Label: () => <ArticleLabel title="Camilla Long" color="#333333" />,
+  DatePublication: () => <DatePublication date="2017-07-01T14:32:00.000Z" publication="SUNDAYTIMES" />,
+  Headline: () => <ArticleSummaryHeadline headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT" />,
+  Byline: () => <ArticleByline ast={[
     {
       "name": "author",
       "attributes": {
@@ -30,10 +40,8 @@
         }
       ]
     }
-  ],
-  "date": "2017-07-01T14:32:00.000Z",
-  "publication": "SUNDAYTIMES",
-  "text": [
+  ]} />,
+  textAst: () => renderTrees(summarise([
     {
       "name": "paragraph",
       "attributes": {},
@@ -134,5 +142,6 @@
         }
       ]
     }
-  ]
+  ]) , renderer)
 }
+

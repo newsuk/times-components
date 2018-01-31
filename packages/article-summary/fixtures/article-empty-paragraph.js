@@ -1,9 +1,17 @@
-{
-  "label": "Camilla Long",
-  "headline": "OK, so Putin’s not a lady, but he does have the wildest man‑PMT",
-  "date": "2017-07-01T14:32:00.000Z",
-  "publication": "SUNDAYTIMES",
-  "byline": [
+import React from "react";
+import ArticleLabel from "@times-components/article-label";
+import ArticleByline from "@times-components/article-byline";
+import DatePublication from "@times-components/date-publication";
+import { renderTrees } from "@times-components/markup";
+import ArticleSummaryHeadline from "../article-summary-headline";
+import renderer from "../article-summary-renderer";
+import summarise from "../summarise";
+
+export default {
+  Label: () => <ArticleLabel title="Camilla Long" color="#333333" />,
+  DatePublication: () => <DatePublication date="2017-11-17T00:01:00.000Z" publication="TIMES" />,
+  Headline: () => <ArticleSummaryHeadline headline="Top medal for forces dog who took a bite out of the Taliban" />,
+  Byline: () => <ArticleByline ast={[
     {
       "name": "author",
       "attributes": {
@@ -32,8 +40,8 @@
         }
       ]
     }
-  ],
-  "text": [
+  ]} />,
+  textAst: () => renderTrees(summarise([
     {
       "name": "paragraph",
       "attributes": {},
@@ -42,7 +50,7 @@
           "name": "text",
           "attributes": {
             "value":
-              "Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night."
+              "Sally Jones, one of the world's most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night."
           },
           "children": []
         }
@@ -66,5 +74,6 @@
       "attributes": {},
       "children": []
     }
-  ]
+  ]) , renderer)
 }
+
