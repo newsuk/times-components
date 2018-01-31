@@ -6,6 +6,7 @@ import com.facebook.react.ReactApplication;
 import com.facebook.stetho.Stetho;
 import com.BV.LinearGradient.LinearGradientPackage;
 import com.horcrux.svg.SvgPackage;
+import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -29,7 +30,7 @@ public class MainApplication extends Application implements ReactApplication {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
             new LinearGradientPackage(),
-            new SvgPackage(), new BrightcovePackage()
+            new SvgPackage(), new BrightcovePackage(), new RNDeviceInfo()
       );
     }
 

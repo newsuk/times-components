@@ -7,6 +7,7 @@ import {
   isBST,
   getUTCTime
 } from "@times-components/utils/date";
+import getTimezone from "@times-components/utils/date/time-zone";
 
 const publications = {
   SUNDAYTIMES: "The Sunday Times",
@@ -41,7 +42,7 @@ class DatePublication extends React.Component {
       : ``;
     return `${format(datetimeLondonTimezone, "dddd MMMM DD YYYY, hh:mma")}${
       this.state.tz
-    }${publicationString}`;
+    }${publicationString}${getTimezone()}`;
   }
 }
 

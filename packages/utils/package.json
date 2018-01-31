@@ -56,7 +56,8 @@
     "graphql": "0.12.3",
     "prop-types": "15.6.0",
     "react": "16.2.0",
-    "react-apollo-temp": "2.0.5"
+    "react-apollo-temp": "2.0.5",
+    "react-native-device-info": "0.13.0"
   },
   "peerDependencies": {
     "babel-preset-env": "1.6.1",

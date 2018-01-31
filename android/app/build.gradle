@@ -157,6 +157,7 @@ repositories {
 dependencies {
     implementation project(':react-native-linear-gradient')
     implementation project(':react-native-svg')
+    compile project(':react-native-device-info')
     implementation project(path: ':rntbrightcovevideo')
     implementation "com.facebook.react:react-native:0.50.1"  // From node_modules
     implementation "com.facebook.stetho:stetho:1.5.0"
