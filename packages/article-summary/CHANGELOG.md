@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.15.9"></a>
+## [0.15.9](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.15.8...@times-components/article-summary@0.15.9) (2018-01-30)
+
+
+### Bug Fixes
+
+* update to latest article summary and update fixture ([#581](https://github.com/newsuk/times-components/issues/581)) ([64bc215](https://github.com/newsuk/times-components/commit/64bc215))
+
+
+
+
+<a name="0.15.8"></a>
+## [0.15.8](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.15.7...@times-components/article-summary@0.15.8) (2018-01-30)
+
+
+### Bug Fixes
+
+* android dextrose ([#569](https://github.com/newsuk/times-components/issues/569)) ([b5b74fa](https://github.com/newsuk/times-components/commit/b5b74fa))
+
+
+
+
+<a name="0.15.7"></a>
+## [0.15.7](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.15.6...@times-components/article-summary@0.15.7) (2018-01-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-summary
+
 <a name="0.15.6"></a>
 ## [0.15.6](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.15.5...@times-components/article-summary@0.15.6) (2018-01-29)
 
