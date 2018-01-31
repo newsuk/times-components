@@ -2,13 +2,15 @@
 import { storiesOf } from "dextrose/storiesOfOverloader";
 import React from "react";
 import { Platform } from "react-native";
+import { addTypenameToDocument } from "apollo-utilities";
 
+import { decorateAction } from "@storybook/addon-actions";
 import { ArticleProvider } from "@times-components/provider";
 import { MockedProvider } from "@times-components/utils/graphql";
-import { addTypenameToDocument } from "apollo-utilities";
 import { query as articleQuery } from "@times-components/provider/article";
 import storybookReporter from "@times-components/tealium/storybook";
 import Article from "./article";
+import RelatedArticles from "./related-articles/related-articles";
 
 const fullArticleTypenameFixture = require("./fixtures/full-article-typename.json");
 const fullArticleFixture = require("./fixtures/full-article.json");
@@ -22,6 +24,24 @@ const articleFixtureNoStandfirstNoFlags = require("./fixtures/no-standfirst-no-f
 const articleFixtureNoLabelNoFlags = require("./fixtures/no-label-no-flags.json");
 const articleFixtureNoLabelNoFlagsNoStandFirst = require("./fixtures/no-label-no-flags-no-standfirst.json");
 const articleFixtureNoLeadAsset = require("./fixtures/no-lead-asset.json");
+// Related articles
+const singleRelatedArticleFixture = require("./related-articles/fixtures/single-related-article.json");
+const singleRelatedArticleNoImageFixture = require("./related-articles/fixtures/single-related-article-no-image.json");
+const singleRelatedArticleNoLabelFixture = require("./related-articles/fixtures/single-related-article-no-label.json");
+const singleRelatedArticleNoBylineFixture = require("./related-articles/fixtures/single-related-article-no-byline.json");
+
+const preventDefaultedAction = decorateAction([
+  ([e, ...args]) => {
+    e.preventDefault();
+    return ["[SyntheticEvent (storybook prevented default)]", ...args];
+  }
+]);
+
+const createRelatedArticlesProps = fixtureData => ({
+  ...fixtureData.relatedArticles[0],
+  template: fixtureData.relatedArticlesTemplate,
+  onPress: preventDefaultedAction("onArticlePress")
+});
 
 const mocks = [
   {
@@ -166,5 +186,27 @@ storiesOf("Article", module)
     <Article
       {...articleFixtureNoLeadAsset.data}
       analyticsStream={storybookReporter}
+    />
+  ))
+  .add("Single related article default", () => (
+    <RelatedArticles
+      item={createRelatedArticlesProps(singleRelatedArticleFixture.data)}
+    />
+  ))
+  .add("Single related article with no lead image", () => (
+    <RelatedArticles
+      item={createRelatedArticlesProps(singleRelatedArticleNoImageFixture.data)}
+    />
+  ))
+  .add("Single related article with no label", () => (
+    <RelatedArticles
+      item={createRelatedArticlesProps(singleRelatedArticleNoLabelFixture.data)}
+    />
+  ))
+  .add("Single related article with no byline", () => (
+    <RelatedArticles
+      item={createRelatedArticlesProps(
+        singleRelatedArticleNoBylineFixture.data
+      )}
     />
   ));
