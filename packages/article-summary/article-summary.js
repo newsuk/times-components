@@ -35,85 +35,49 @@ const styles = {
   }
 };
 
-const summarise = text => {
-  if (!text.length) {
-    return text;
-  }
-
-  const initial = text.slice(0, text.length - 1);
-  const last = text[text.length - 1];
-  const teaser = Object.assign({}, last, {
-    name: "teaser",
-    attributes: { isSingle: initial.length === 0 }
-  });
-
-  return [...initial, teaser];
-};
-
 const ArticleSummary = props => {
   const {
-    label,
-    headline,
-    hasResponsiveHeadline,
-    text,
-    date,
-    publication,
-    showPublication,
-    byline
+    Label,
+    Headline,
+    textAst,
+    DatePublication,
+    Byline
   } = props;
-  const summary = summarise(text);
-  const labelText = label && label.toUpperCase && label.toUpperCase();
-
+  
   return (
     <View style={styles.container}>
-      {label ? <Text style={styles.label}>{labelText}</Text> : null}
-      {headline ? (
-        <ArticleSummaryHeadline
-          hasResponsiveHeadline={hasResponsiveHeadline}
-          headline={headline}
-        />
-      ) : null}
-      <Text style={styles.text}>{renderTrees(summary, renderer)}</Text>
+      <Label />
+      <Headline />
+      <Text style={styles.text}>{textAst()}</Text>
       <Text
         style={styles.metaText}
         accessibilityLabel="datePublication"
         testID="datePublication"
-      >
-        <DatePublication
-          date={date}
-          publication={publication}
-          showPublication={showPublication}
-        />
+      > 
+        <DatePublication />
       </Text>
-      {byline.length ? (
-        <Text style={styles.metaText}>
-          <ArticleByline ast={byline} />
-        </Text>
-      ) : null}
+      
+      <Text style={styles.metaText}>
+        <Byline />
+      </Text>
     </View>
   );
 };
 
 ArticleSummary.propTypes = {
-  label: PropTypes.string,
-  headline: PropTypes.string,
-  hasResponsiveHeadline: PropTypes.bool,
-  text: PropTypes.arrayOf(treePropType),
-  date: DatePublication.propTypes.date,
-  publication: DatePublication.propTypes.publication,
-  showPublication: DatePublication.propTypes.showPublication,
-  byline: PropTypes.arrayOf(treePropType)
+  Label: PropTypes.element,
+  Headline: PropTypes.element,
+  textAst: PropTypes.func,
+  DatePublication: PropTypes.element,
+  Byline: PropTypes.element
 };
 
 ArticleSummary.defaultProps = {
-  label: "",
-  headline: "",
-  hasResponsiveHeadline: false,
-  text: [],
-  date: null,
-  publication: DatePublication.defaultProps.publication,
-  showPublication: DatePublication.defaultProps.showPublication,
-  byline: []
+  Label: () => null,
+  Headline: () => null,
+  textAst: () => [],
+  DatePublication: () => null,
+  Byline: () => null
 };
 
 export default ArticleSummary;
