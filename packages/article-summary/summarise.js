@@ -11,4 +11,4 @@ export default function summarise(text) {
   });
 
   return [...initial, teaser];
-};
+}

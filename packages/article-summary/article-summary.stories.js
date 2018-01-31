@@ -4,11 +4,11 @@ import ArticleLabel from "@times-components/article-label";
 import { storiesOf } from "dextrose/storiesOfOverloader";
 import ArticleSummary from "./article-summary";
 
-import defaultFixture from "./fixtures/default.js";
-import articleMultiFixture from "./fixtures/article-multi.js";
-import noBylineFixture from "./fixtures/no-byline.js";
-import noLabelFixture from "./fixtures/no-label.js";
-import reviewFixture from "./fixtures/review.js";
+import defaultFixture from "./fixtures/default";
+import articleMultiFixture from "./fixtures/article-multi";
+import noBylineFixture from "./fixtures/no-byline";
+import noLabelFixture from "./fixtures/no-label";
+import reviewFixture from "./fixtures/review";
 
 const story = m => <View style={{ padding: 20 }}>{m}</View>;
 
