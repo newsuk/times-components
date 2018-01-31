@@ -9,7 +9,6 @@ const makeHarness = ({
   document,
   window,
   el,
-  id,
   init,
   data,
   scriptUris,
@@ -80,7 +79,6 @@ const makeHarness = ({
           const globalName = globalNames[i];
           globals[globalName] = window[globalName];
         }
-        el.setAttribute("id", id);
         const renderComplete = () => {
           if (!renderCompleteCalled) {
             renderCompleteCalled = true;
