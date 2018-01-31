@@ -12,7 +12,11 @@ function renderAst(ast) {
 }
 
 const ArticleSummary = props => {
+<<<<<<< HEAD
   const { Label, Headline, summaryText, DatePublication, Byline } = props;
+=======
+  const { Label, Headline, textAst, DatePublication, Byline } = props;
+>>>>>>> chore: make it pretty
 
   return (
     <View>
