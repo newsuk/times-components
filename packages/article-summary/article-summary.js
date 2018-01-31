@@ -36,14 +36,8 @@ const styles = {
 };
 
 const ArticleSummary = props => {
-  const {
-    Label,
-    Headline,
-    textAst,
-    DatePublication,
-    Byline
-  } = props;
-  
+  const { Label, Headline, textAst, DatePublication, Byline } = props;
+
   return (
     <View style={styles.container}>
       <Label />
@@ -53,10 +47,10 @@ const ArticleSummary = props => {
         style={styles.metaText}
         accessibilityLabel="datePublication"
         testID="datePublication"
-      > 
+      >
         <DatePublication />
       </Text>
-      
+
       <Text style={styles.metaText}>
         <Byline />
       </Text>
@@ -65,11 +59,11 @@ const ArticleSummary = props => {
 };
 
 ArticleSummary.propTypes = {
-  Label: PropTypes.element,
-  Headline: PropTypes.element,
+  Label: PropTypes.func,
+  Headline: PropTypes.func,
   textAst: PropTypes.func,
-  DatePublication: PropTypes.element,
-  Byline: PropTypes.element
+  DatePublication: PropTypes.func,
+  Byline: PropTypes.func
 };
 
 ArticleSummary.defaultProps = {
