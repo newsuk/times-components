@@ -17,7 +17,7 @@ const withTrackingContext = (
   {
     getAttrs = () => ({}),
     trackingObjectName = "",
-    isDataReady = () => true
+    isDataReady = (props: TrackingContextPropsType) => true // eslint-disable-line
   }: TrackingContextObjectType = {}
 ) => {
   const componentName = getDisplayName(WrappedComponent);
