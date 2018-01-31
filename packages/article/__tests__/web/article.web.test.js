@@ -4,13 +4,11 @@ import renderer from "react-test-renderer";
 import "jest-styled-components";
 import Article from "../../article";
 import shared from "../shared";
-import relatedArticlesShared from "../related-articles-shared";
 
 const articleFixtureNoLeadAsset = require("../../fixtures/no-lead-asset.json");
 
 describe("Article test on web", () => {
   shared();
-  relatedArticlesShared();
 
   it("renders article with no lead asset", () => {
     const tree = renderer
