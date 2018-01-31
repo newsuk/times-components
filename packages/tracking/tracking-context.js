@@ -1,4 +1,5 @@
 // @flow
+
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import getDisplayName from "react-display-name";
@@ -9,7 +10,7 @@ import type {
   AnalyticsEventObjectType,
   TrackingContextObjectType,
   TrackingContextPropsType
-} from "./tracking-types";
+} from "./tracking.flow";
 import resolveAttrs from "./resolve-attrs";
 
 const withTrackingContext = (
@@ -17,7 +18,7 @@ const withTrackingContext = (
   {
     getAttrs = () => ({}),
     trackingObjectName = "",
-    isDataReady = (props: TrackingContextPropsType) => true // eslint-disable-line
+    isDataReady
   }: TrackingContextObjectType = {}
 ) => {
   const componentName = getDisplayName(WrappedComponent);
@@ -29,7 +30,7 @@ const withTrackingContext = (
 
     constructor(props: TrackingContextPropsType, context: {}) {
       super(props, context);
-      this.fireAnalyticsEvent = this.fireAnalyticsEvent.bind(this);
+
       this.pageEventTriggered = false;
       if (this.isRootTrackingContext()) {
         if (!trackingObjectName) {
@@ -61,16 +62,16 @@ const withTrackingContext = (
       this.attemptTrackPageEvent(nextProps);
     }
 
-    fireAnalyticsEvent: Function;
     pageEventTriggered: boolean;
 
     attemptTrackPageEvent(props: TrackingContextPropsType) {
       if (
-        isDataReady(props) &&
+        (!isDataReady || isDataReady(props)) &&
         this.isRootTrackingContext() &&
         this.pageEventTriggered === false
       ) {
         this.pageEventTriggered = true;
+
         this.fireAnalyticsEvent({
           component: "Page",
           action: "Viewed",
@@ -79,12 +80,12 @@ const withTrackingContext = (
       }
     }
 
-    fireAnalyticsEvent({
+    fireAnalyticsEvent = ({
       object,
       component,
       action,
       attrs
-    }: AnalyticsEventObjectType) {
+    }: AnalyticsEventObjectType) => {
       const decoratedEvent = {
         component,
         action,
@@ -104,16 +105,16 @@ const withTrackingContext = (
       }
 
       this.analyticsStream(decoratedEvent);
-    }
+    };
 
     isRootTrackingContext() {
       return !this.context || !this.context.tracking;
     }
 
-    analyticsStream(...args: Array<any>) {
+    analyticsStream(analyticsEvent: AnalyticsEventObjectType) {
       const stream =
         get(this.context, "tracking.analytics") || this.props.analyticsStream;
-      return stream && stream(...args);
+      return stream && stream(analyticsEvent);
     }
 
     render() {

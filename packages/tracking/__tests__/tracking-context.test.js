@@ -15,7 +15,7 @@ describe("WithTrackingContext", () => {
     const TestTracking = (props, context) => {
       context.tracking.analytics({
         component: "TestComponent",
-        action: "TestAction",
+        action: "Viewed",
         attrs: {}
       });
       return <WrappedComponent {...props} />;
@@ -46,7 +46,7 @@ describe("WithTrackingContext", () => {
 
     expect(reporter).toHaveBeenCalledWith(
       expect.objectContaining({
-        action: "TestAction",
+        action: "Viewed",
         attrs: expect.objectContaining({ one: "two", three: "four" })
       })
     );
@@ -65,7 +65,7 @@ describe("WithTrackingContext", () => {
 
     expect(reporter).toHaveBeenCalledWith(
       expect.objectContaining({
-        action: "TestAction",
+        action: "Viewed",
         attrs: expect.objectContaining({ one: "three" })
       })
     );
@@ -85,7 +85,7 @@ describe("WithTrackingContext", () => {
     expect(reporter).toHaveBeenCalledWith(
       expect.objectContaining({
         object: "TestObject",
-        action: "TestAction"
+        action: "Viewed"
       })
     );
   });
@@ -104,7 +104,7 @@ describe("WithTrackingContext", () => {
     expect(reporter).toHaveBeenCalledWith(
       expect.objectContaining({
         object: "TestObject2",
-        action: "TestAction"
+        action: "Viewed"
       })
     );
   });
