@@ -1,6 +1,6 @@
 import gql from "graphql-tag";
 import { graphql } from "react-apollo";
-import { providerTester, getRenderedQueries } from "../";
+import { providerTester, getRenderedQueries, getResolvedQueries } from "../";
 
 function AuthorQueryResolver({ variables }) {
   return {
@@ -76,7 +76,10 @@ describe("provider execution order tests", () => {
 
     await setProps({ slug: "2" });
     await link.findByQuery("AuthorQuery", { slug: "2" }).resolve();
+    expect(getResolvedQueries(link).length).toBe(1);
+    await link.findByQuery("AuthorQuery", { slug: "1" }).resolve();
     expect(getRenderedQueries(link).length).toBe(3);
+    expect(getResolvedQueries(link).length).toBe(2);
     expect(getRenderedQueries(link)).toMatchObject([
       {
         loading: true,

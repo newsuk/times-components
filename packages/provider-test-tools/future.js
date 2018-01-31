@@ -6,7 +6,7 @@ export default function createFuture() {
 
   return {
     resolve: () => {
-      setTimeout(resolve);
+      resolve();
       return promise;
     },
     promise: () => promise
