@@ -1,6 +1,6 @@
 {
   "name": "@times-components/brightcove-video",
-  "version": "1.10.10",
+  "version": "1.10.11",
   "main": "brightcove-video",
   "scripts": {
     "test:watch": "jest --bail --verbose --watchAll",
