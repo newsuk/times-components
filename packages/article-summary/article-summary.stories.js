@@ -14,8 +14,7 @@ const story = m => <View style={{ padding: 20 }}>{m}</View>;
 
 storiesOf("ArticleSummary", module)
   .add("Default", () => story(<ArticleSummary {...defaultFixture} />))
-
-/*
+  .add("No byline", () => story(<ArticleSummary {...noBylineFixture} />))
   .add("Summary with multiple paragraphs", () =>
     story(<ArticleSummary {...articleMultiFixture} />)
   )
@@ -23,4 +22,3 @@ storiesOf("ArticleSummary", module)
   .add("Review/Rating Summary", () =>
     story(<ArticleSummary {...reviewFixture} />)
   );
-*/
