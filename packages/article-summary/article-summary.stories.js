@@ -1,6 +1,5 @@
 import React from "react";
 import { View } from "react-native";
-import ArticleLabel from "@times-components/article-label";
 import { storiesOf } from "dextrose/storiesOfOverloader";
 import ArticleSummary from "./article-summary";
 
