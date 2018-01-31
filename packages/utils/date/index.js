@@ -27,7 +27,6 @@ const getUTCTime = date => {
     localDate.getUTCMinutes()
   );
 };
-console.log(getTimezone());
 
 const isLondonTimezone = () => {
   try {
