@@ -2,9 +2,11 @@ import React from "react";
 import ArticleByline from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
 import { renderTrees } from "@times-components/markup";
-import ArticleSummaryHeadline from "../article-summary-headline";
-import renderer from "../article-summary-renderer";
-import summarise from "../summarise";
+import {
+  ArticleSummaryHeadline,
+  renderer,
+  summarise
+} from "../";
 
 export default {
   DatePublication: () => (
