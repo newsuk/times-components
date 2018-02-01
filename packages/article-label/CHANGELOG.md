@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.19"></a>
+## [0.6.19](https://github.com/newsuk/times-components/compare/@times-components/article-label@0.6.18...@times-components/article-label@0.6.19) (2018-01-31)
+
+
+### Bug Fixes
+
+* fix the broken storybook addon by updating storybook. ([#583](https://github.com/newsuk/times-components/issues/583)) ([6056e00](https://github.com/newsuk/times-components/commit/6056e00))
+
+
+
+
 <a name="0.6.18"></a>
 ## [0.6.18](https://github.com/newsuk/times-components/compare/@times-components/article-label@0.6.17...@times-components/article-label@0.6.18) (2018-01-30)
 

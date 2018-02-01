@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.7"></a>
+## [0.2.7](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.2.6...@times-components/pull-quote@0.2.7) (2018-01-31)
+
+
+### Bug Fixes
+
+* fix the broken storybook addon by updating storybook. ([#583](https://github.com/newsuk/times-components/issues/583)) ([6056e00](https://github.com/newsuk/times-components/commit/6056e00))
+
+
+
+
 <a name="0.2.6"></a>
 ## [0.2.6](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.2.5...@times-components/pull-quote@0.2.6) (2018-01-30)
 

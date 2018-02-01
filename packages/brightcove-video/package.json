@@ -1,6 +1,6 @@
 {
   "name": "@times-components/brightcove-video",
-  "version": "1.10.10",
+  "version": "1.10.11",
   "main": "brightcove-video",
   "scripts": {
     "test:watch": "jest --bail --verbose --watchAll",
@@ -42,9 +42,9 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@storybook/addon-actions": "3.3.9",
-    "@storybook/addons": "3.3.9",
-    "@storybook/react-native": "3.3.9",
+    "@storybook/addon-actions": "3.3.11",
+    "@storybook/addons": "3.3.11",
+    "@storybook/react-native": "3.3.11",
     "@times-components/eslint-config-thetimes": "0.1.3",
     "dextrose": "1.4.0",
     "eslint": "4.9.0",
