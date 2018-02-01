@@ -1,6 +1,5 @@
 import React from "react";
 import ArticleLabel from "@times-components/article-label";
-import ArticleByline from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
 import { renderTrees } from "@times-components/markup";
 import {

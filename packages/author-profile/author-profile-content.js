@@ -1,5 +1,5 @@
 import React from "react";
-import { Dimensions, FlatList, StyleSheet, View, Picker } from "react-native";
+import { Dimensions, FlatList, StyleSheet, View } from "react-native";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import ErrorView from "@times-components/error-view";
 import AuthorProfileAuthorHead from "./author-profile-author-head";
@@ -152,7 +152,7 @@ class AuthorProfileContent extends React.Component {
         renderItem={({ item, index }) => (
           <ErrorView>
             {({ hasError }) =>
-              hasError ? <Picker/> : (
+              hasError ? null : (
                 <AuthorProfileItem
                   {...item}
                   imageRatio={imageRatio}
