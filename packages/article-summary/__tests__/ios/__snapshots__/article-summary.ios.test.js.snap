@@ -4,9 +4,18 @@ exports[`Article Summary test on ios renders an article-summary component with a
 <View>
   <View
     style={
-      Object {
-        "marginBottom": 0,
-      }
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "lineHeight": 12,
+        },
+        Object {
+          "color": "#333333",
+        },
+      ]
     }
   >
     <Text
@@ -73,7 +82,7 @@ exports[`Article Summary test on ios renders an article-summary component with a
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
-      
+
       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
       ...
     </Text>
@@ -146,9 +155,18 @@ exports[`Article Summary test on ios renders an article-summary component with c
 <View>
   <View
     style={
-      Object {
-        "marginBottom": 0,
-      }
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "lineHeight": 12,
+        },
+        Object {
+          "color": "#333333",
+        },
+      ]
     }
   >
     <Text
@@ -215,7 +233,7 @@ exports[`Article Summary test on ios renders an article-summary component with c
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
-      
+
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -233,7 +251,7 @@ exports[`Article Summary test on ios renders an article-summary component with c
         allowFontScaling={true}
         ellipsizeMode="tail"
       >
-        
+
 
       </Text>
       ITV
@@ -242,7 +260,7 @@ exports[`Article Summary test on ios renders an article-summary component with c
         allowFontScaling={true}
         ellipsizeMode="tail"
       >
-        
+
 
       </Text>
       ★★★★☆
@@ -252,7 +270,7 @@ exports[`Article Summary test on ios renders an article-summary component with c
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
-       
+
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -270,7 +288,7 @@ exports[`Article Summary test on ios renders an article-summary component with c
         allowFontScaling={true}
         ellipsizeMode="tail"
       >
-        
+
 
       </Text>
       BBC Two
@@ -279,7 +297,7 @@ exports[`Article Summary test on ios renders an article-summary component with c
         allowFontScaling={true}
         ellipsizeMode="tail"
       >
-        
+
 
       </Text>
       ★★★☆☆
@@ -289,7 +307,7 @@ exports[`Article Summary test on ios renders an article-summary component with c
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
-       
+
       Poor old Harriet, Duchess of Sutherland. There she was giddily expecting a
       ...
     </Text>
@@ -362,9 +380,18 @@ exports[`Article Summary test on ios renders an article-summary component with e
 <View>
   <View
     style={
-      Object {
-        "marginBottom": 0,
-      }
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "lineHeight": 12,
+        },
+        Object {
+          "color": "#333333",
+        },
+      ]
     }
   >
     <Text
@@ -431,7 +458,7 @@ exports[`Article Summary test on ios renders an article-summary component with e
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
-      
+
       Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.
     </Text>
     <Text
@@ -439,7 +466,7 @@ exports[`Article Summary test on ios renders an article-summary component with e
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
-       
+
       The former punk
     </Text>
     <Text
@@ -447,7 +474,7 @@ exports[`Article Summary test on ios renders an article-summary component with e
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
-       
+
       ...
     </Text>
   </Text>
@@ -519,9 +546,18 @@ exports[`Article Summary test on ios renders an article-summary component with h
 <View>
   <View
     style={
-      Object {
-        "marginBottom": 0,
-      }
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "lineHeight": 12,
+        },
+        Object {
+          "color": "#333333",
+        },
+      ]
     }
   >
     <Text
@@ -601,6 +637,20 @@ exports[`Article Summary test on ios renders an article-summary component with h
   >
     Saturday July 01 2017, 03:32pm, The Sunday Times
   </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+  />
 </View>
 `;
 
@@ -648,7 +698,7 @@ exports[`Article Summary test on ios renders an article-summary component with m
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
-      
+
       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
     </Text>
     <Text
@@ -656,7 +706,7 @@ exports[`Article Summary test on ios renders an article-summary component with m
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
-       
+
       Mali sniffed out explosives and insurgents during a gunfight that lasted seven and a half hours to help a team of Special Boat Service (SBS) operators hunt down and kill more than a dozen
       ...
     </Text>
@@ -769,7 +819,7 @@ exports[`Article Summary test on ios renders an article-summary component with n
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
-      
+
       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
       ...
     </Text>
@@ -792,6 +842,20 @@ exports[`Article Summary test on ios renders an article-summary component with n
   >
     Friday November 17 2017, 12:01am, The Times
   </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+  />
 </View>
 `;
 
@@ -839,7 +903,7 @@ exports[`Article Summary test on ios renders an article-summary component with n
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
-      
+
       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
       ...
     </Text>
