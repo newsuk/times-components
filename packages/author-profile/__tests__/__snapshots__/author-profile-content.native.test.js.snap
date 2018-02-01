@@ -2371,6 +2371,20 @@ exports[`renders profile content component 1`] = `
                   >
                     Friday November 17 2017, 12:01am, The Times
                   </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                  />
                 </View>
               </View>
             </View>
@@ -2610,6 +2624,20 @@ exports[`renders profile content component 1`] = `
                   >
                     Friday November 17 2017, 12:01am, The Times
                   </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                  />
                 </View>
               </View>
             </View>
@@ -2849,6 +2877,20 @@ exports[`renders profile content component 1`] = `
                   >
                     Tuesday November 14 2017, 05:00pm, The Times
                   </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                  />
                 </View>
               </View>
             </View>
@@ -3315,6 +3357,20 @@ exports[`renders profile content item component 1`] = `
             >
               Friday November 17 2017, 12:01am, The Times
             </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 15,
+                  "marginBottom": 5,
+                }
+              }
+            />
           </View>
         </View>
       </View>
@@ -3423,6 +3479,20 @@ exports[`renders profile content item component with a specific image size 1`] =
             >
               Friday November 17 2017, 12:01am, The Times
             </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 15,
+                  "marginBottom": 5,
+                }
+              }
+            />
           </View>
         </View>
       </View>
@@ -3531,6 +3601,20 @@ exports[`renders profile content item component with no image 1`] = `
             >
               Friday November 17 2017, 12:01am, The Times
             </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 15,
+                  "marginBottom": 5,
+                }
+              }
+            />
           </View>
         </View>
       </View>
