@@ -9,13 +9,18 @@ exports[`Article Summary test on ios renders an article-summary component with a
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 12,
-        "letterSpacing": 1,
-        "marginBottom": 2,
-      }
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "lineHeight": 12,
+        },
+        Object {
+          "color": "#333333",
+        },
+      ]
     }
   >
     CAMILLA LONG
@@ -139,13 +144,18 @@ exports[`Article Summary test on ios renders an article-summary component with c
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 12,
-        "letterSpacing": 1,
-        "marginBottom": 2,
-      }
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "lineHeight": 12,
+        },
+        Object {
+          "color": "#333333",
+        },
+      ]
     }
   >
     CAMILLA LONG
@@ -343,13 +353,18 @@ exports[`Article Summary test on ios renders an article-summary component with e
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 12,
-        "letterSpacing": 1,
-        "marginBottom": 2,
-      }
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "lineHeight": 12,
+        },
+        Object {
+          "color": "#333333",
+        },
+      ]
     }
   >
     CAMILLA LONG
@@ -488,13 +503,18 @@ exports[`Article Summary test on ios renders an article-summary component with h
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 12,
-        "letterSpacing": 1,
-        "marginBottom": 2,
-      }
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "lineHeight": 12,
+        },
+        Object {
+          "color": "#333333",
+        },
+      ]
     }
   >
     CAMILLA LONG
@@ -553,6 +573,20 @@ exports[`Article Summary test on ios renders an article-summary component with h
   >
     Saturday July 01 2017, 03:32pm, The Sunday Times
   </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+  />
 </View>
 `;
 
@@ -746,6 +780,20 @@ exports[`Article Summary test on ios renders an article-summary component with n
   >
     Friday November 17 2017, 12:01am, The Times
   </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+  />
 </View>
 `;
 
