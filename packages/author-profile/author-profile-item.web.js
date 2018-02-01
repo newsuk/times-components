@@ -72,21 +72,28 @@ const AuthorProfileItem = item => {
   }
 
   const childProps = {
-    Label:() => <ArticleLabel title={label} color="#333333" />,
+    Label: () => <ArticleLabel title={label} color="#333333" />,
     Headline: () => <ArticleSummaryHeadline headline={headline} />,
-    DatePublication: () => <DatePublication date={publishedTime} publication={publicationName}/>
+    DatePublication: () => (
+      <DatePublication date={publishedTime} publication={publicationName} />
+    )
   };
-
 
   const children = showImage ? (
     <ArticleSummary {...childProps} textAst={() => renderAst(summary)} />
   ) : (
     <Fragment>
       <LongText>
-        <ArticleSummary {...childProps} textAst={() => renderAst(longSummary)} />
+        <ArticleSummary
+          {...childProps}
+          textAst={() => renderAst(longSummary)}
+        />
       </LongText>
       <ShortText>
-        <ArticleSummary {...childProps} textAst={() => renderAst(shortSummary)} />
+        <ArticleSummary
+          {...childProps}
+          textAst={() => renderAst(shortSummary)}
+        />
       </ShortText>
     </Fragment>
   );
