@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.10.11"></a>
+## [1.10.11](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.10.10...@times-components/brightcove-video@1.10.11) (2018-01-31)
+
+
+### Bug Fixes
+
+* fix the broken storybook addon by updating storybook. ([#583](https://github.com/newsuk/times-components/issues/583)) ([6056e00](https://github.com/newsuk/times-components/commit/6056e00))
+
+
+
+
 <a name="1.10.10"></a>
 ## [1.10.10](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.10.9...@times-components/brightcove-video@1.10.10) (2018-01-30)
 
