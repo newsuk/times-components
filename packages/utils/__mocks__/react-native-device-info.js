@@ -1,3 +1,3 @@
 module.exports = {
-    getTimezone: jest.fn(() => "Europe/London")
-}
+  getTimezone: jest.fn(() => "Europe/London")
+};

@@ -4,7 +4,7 @@ const getTimezone = () => {
   try {
     return DeviceInfo.getTimezone();
   } catch (err) {
-    return;
+    return "";
   }
 };
 
