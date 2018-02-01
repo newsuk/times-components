@@ -14,16 +14,15 @@
     "preset": "react-native",
     "rootDir": "../../",
     "testEnvironment": "jsdom",
-    "coverageDirectory": "<rootDir>/packages/provider/coverage/",
+    "coverageDirectory": "<rootDir>/packages/provider-test-tools/coverage/",
     "collectCoverageFrom": [
-      "**/packages/provider/*.js",
-      "!**/packages/provider/*stories.js"
+      "**/packages/provider-test-tools/*.js"
     ],
     "transformIgnorePatterns": [
       "node_modules/(?!(react-native|react-apollo-temp|@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/provider/__tests__/**.test.js"
+      "<rootDir>/packages/provider-test-tools/__tests__/**.test.js"
     ]
   },
   "repository": {
