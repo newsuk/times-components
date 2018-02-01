@@ -1,6 +1,6 @@
 import React from "react";
 import get from "lodash.get";
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View } from "react-native";
 import Card from "@times-components/card";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
@@ -71,7 +71,9 @@ const AuthorProfileItem = item => {
           showImage={showImage}
         >
           <ArticleSummary
-            Label={() => label? <ArticleLabel title={label} color="#333333" /> : null}
+            Label={() =>
+              label ? <ArticleLabel title={label} color="#333333" /> : null
+            }
             Headline={() => <ArticleSummaryHeadline headline={headline} />}
             textAst={() => renderAst(summaryText)}
             DatePublication={() => (
