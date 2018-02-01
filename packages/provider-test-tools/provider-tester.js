@@ -11,6 +11,7 @@ export default function providerTester(
 ) {
   const { link, client } = clientTester(requestHandler);
 
+  let isMounted = false;
   let setProps = () => Promise.resolve();
   class Stateful extends React.Component {
     constructor(props) {
@@ -19,16 +20,21 @@ export default function providerTester(
     }
 
     componentDidMount() {
-      setProps = state =>
-        new Promise(done =>
+      isMounted = true;
+      setProps = state => {
+        if (!isMounted) return Promise.resolve();
+
+        return new Promise(done =>
           this.setState(() => {
             done(state);
             return state;
           })
         );
+      };
     }
 
     componentWillUnmount() {
+      isMounted = false;
       setProps = () => Promise.resolve();
     }
 

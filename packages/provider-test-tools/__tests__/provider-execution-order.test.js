@@ -96,4 +96,17 @@ describe("provider execution order tests", () => {
       }
     ]);
   });
+
+  it("should not send requests after unmount", async () => {
+    const { link, setProps, component } = providerTester(
+      AuthorQueryResolver,
+      connect(query),
+      { slug: "1" }
+    );
+
+    component.unmount();
+    const nextProps = await setProps({ slug: "2" });
+    expect(nextProps).toBeUndefined();
+    expect(link.getRequests()).toHaveLength(1);
+  });
 });

@@ -1,5 +1,5 @@
 export function tidyEvent(e) {
-  if (e.type === "render") {
+  if (e.type === "render" || e.type === "error") {
     return e;
   }
 
