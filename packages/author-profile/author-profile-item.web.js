@@ -7,7 +7,6 @@ import { withTrackEvents } from "@times-components/tracking";
 import withResponsiveStyles from "@times-components/responsive-styles";
 
 import ArticleLabel from "@times-components/article-label";
-import ArticleByline from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
 import { renderTrees } from "@times-components/markup";
 import ArticleSummary, {
@@ -72,7 +71,8 @@ const AuthorProfileItem = item => {
   }
 
   const childProps = {
-    Label: () => label? <ArticleLabel title={label} color="#333333" /> : null,
+    Label: () =>
+      label ? <ArticleLabel title={label} color="#333333" /> : null,
     Headline: () => <ArticleSummaryHeadline headline={headline} />,
     DatePublication: () => (
       <DatePublication date={publishedTime} publication={publicationName} />
