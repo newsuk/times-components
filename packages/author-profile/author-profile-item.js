@@ -17,7 +17,6 @@ import ArticleSummary, {
 
 const renderAst = ast => renderTrees(summarise(ast), renderer);
 
-
 const styles = StyleSheet.create({
   container: {
     paddingBottom: 15,
@@ -61,7 +60,7 @@ const AuthorProfileItem = item => {
   }
 
   const summaryText = showImage ? summary : shortSummary;
-  
+
   return (
     <Link url={url} onPress={onPress}>
       <View style={[styles.container, style]}>
@@ -75,7 +74,12 @@ const AuthorProfileItem = item => {
             Label={() => <ArticleLabel title={label} color="#333333" />}
             headline={() => <ArticleSummaryHeadline headline={headline} />}
             textAst={() => renderAst(summaryText)}
-            DatePublication={() => <DatePublication date={publishedTime} publication={publicationName}/>}
+            DatePublication={() => (
+              <DatePublication
+                date={publishedTime}
+                publication={publicationName}
+              />
+            )}
           />
         </Card>
       </View>
