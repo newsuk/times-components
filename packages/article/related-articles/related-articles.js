@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
 
 const RelatedArticles = ({ item, template }) => {
   if (!item) return null;
-  return(
+  return (
     <View style={styles.container}>
       <RelatedArticlesHeading />
       <Slice template={template}>
