@@ -1,6 +1,8 @@
 export default {
   DEFAULT: {
-    display: "flex"
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center"
   },
   LEAD_AND_TWO: {
     borderColor: "green",

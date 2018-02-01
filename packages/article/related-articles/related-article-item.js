@@ -2,19 +2,19 @@ import React from "react";
 import get from "lodash.get";
 import { StyleSheet, View } from "react-native";
 import ArticleSummary from "@times-components/article-summary";
-import Card from "@times-components/card";
+import Image from "@times-components/image";
 import Link from "@times-components/link";
 import { propTypesItem } from "./proptypes";
 
 const styles = StyleSheet.create({
   cardContainer: {
     paddingBottom: 10,
-    paddingTop: 10
+    paddingTop: 10,
   }
 });
 
-const RelatedArticleItem = ({ item }) => {
-  if (!item) return null;
+const RelatedArticleItem = ({ article }) => {
+  if (!article) return null;
   const {
     byline,
     label,
@@ -24,39 +24,35 @@ const RelatedArticleItem = ({ item }) => {
     publishedTime,
     summary,
     url
-  } = item;
+  } = article;
 
   const imageUri = get(
-    item,
+    article,
     "leadAsset.crop.url",
-    get(item, "leadAsset.posterImage.crop.url", null)
+    get(article, "leadAsset.posterImage.crop.url", null)
   );
 
-  const cardProps = {
-    imageRatio: 16 / 9,
-    imageSize: 996,
-    showImage: true
-  };
-
+    // <Link url={url} onPress={onPress}>
   return (
-    <Link url={url} onPress={onPress}>
       <View style={styles.cardContainer}>
-        <Card {...cardProps} image={imageUri ? { uri: imageUri } : null}>
-          <ArticleSummary
-            byline={byline}
-            date={publishedTime}
-            headline={headline}
-            hasResponsiveHeadline
-            label={label}
-            publication={publicationName}
-            showPublication={false}
-            text={summary}
-          />
-        </Card>
+        <Image
+          uri={`${imageUri}&resize=996`}
+          aspectRatio={16/9}
+        />
+        <ArticleSummary
+          byline={byline}
+          date={publishedTime}
+          headline={headline}
+          hasResponsiveHeadline
+          label={label}
+          publication={publicationName}
+          showPublication={false}
+          text={summary}
+        />
       </View>
-    </Link>
   );
 };
+    // </Link>
 
 RelatedArticleItem.propTypes = propTypesItem;
 

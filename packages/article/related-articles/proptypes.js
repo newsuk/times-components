@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { treePropType } from "@times-components/markup";
 
 export const propTypesItem = {
-  item: PropTypes.shape({
+  article: PropTypes.shape({
     byline: PropTypes.arrayOf(treePropType),
     headline: PropTypes.string,
     label: PropTypes.string,
@@ -15,7 +15,7 @@ export const propTypesItem = {
 };
 
 export const propTypes = {
-  ...propTypesItem,
+  articles: PropTypes.arrayOf(propTypesItem.article),
   template: PropTypes.string
 };
 
