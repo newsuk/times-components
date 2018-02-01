@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tracking",
-  "version": "0.6.10",
+  "version": "0.6.11",
   "main": "tracking",
   "scripts": {
     "test:native": "jest --config='./jest.config.json'",
