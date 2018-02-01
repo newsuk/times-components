@@ -48,6 +48,8 @@ const AuthorProfileItem = item => {
     );
   }
 
+  summaryText = showImage ? summary : shortSummary;
+
   return (
     <Link url={url} onPress={onPress}>
       <View style={[styles.container, style]}>
