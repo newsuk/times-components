@@ -5,7 +5,18 @@ import Card from "@times-components/card";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import ArticleSummary from "@times-components/article-summary";
+
+import ArticleLabel from "@times-components/article-label";
+import ArticleByline from "@times-components/article-byline";
+import DatePublication from "@times-components/date-publication";
+import { renderTrees } from "@times-components/markup";
+import ArticleSummary, {
+  ArticleSummaryHeadline,
+  renderer,
+  summarise
+} from "@times-components/article-summary";
+
+const renderAst = ast => renderTrees(summarise(ast), renderer);
 
 const LongText = withResponsiveStyles(View, {
   base: () => "display: none;",
@@ -61,21 +72,21 @@ const AuthorProfileItem = item => {
   }
 
   const childProps = {
-    label,
-    headline,
-    date: publishedTime,
-    publication: publicationName
+    Label:() => <ArticleLabel title={label} color="#333333" />,
+    Headline: () => <ArticleSummaryHeadline headline={headline} />,
+    DatePublication: () => <DatePublication date={publishedTime} publication={publicationName}/>
   };
 
+
   const children = showImage ? (
-    <ArticleSummary {...childProps} text={summary} />
+    <ArticleSummary {...childProps} textAst={() => renderAst(summary)} />
   ) : (
     <Fragment>
       <LongText>
-        <ArticleSummary {...childProps} text={longSummary} />
+        <ArticleSummary {...childProps} textAst={() => renderAst(longSummary)} />
       </LongText>
       <ShortText>
-        <ArticleSummary {...childProps} text={shortSummary} />
+        <ArticleSummary {...childProps} textAst={() => renderAst(shortSummary)} />
       </ShortText>
     </Fragment>
   );

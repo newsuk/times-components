@@ -250,8 +250,4 @@ it("invokes onNext when the next link is pressed", () => {
   expect(onNext).toHaveBeenCalled();
 });
 
-it("scrolls to top when next page is clicked");
-
-it("scrolls to top when prev page is clicked");
-
 test(AuthorProfileContent);

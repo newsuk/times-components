@@ -1,6 +1,6 @@
 export default function summarise(text) {
-  if (!text.length) {
-    return text;
+  if (!text || !text.length) {
+    return text||[];
   }
 
   const initial = text.slice(0, text.length - 1);

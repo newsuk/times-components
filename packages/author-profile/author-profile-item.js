@@ -15,7 +15,7 @@ import ArticleSummary, {
   summarise
 } from "@times-components/article-summary";
 
-const renderAst = ast => renderTrees(summarise(ast, renderer));
+const renderAst = ast => renderTrees(summarise(ast), renderer);
 
 
 const styles = StyleSheet.create({
@@ -60,7 +60,7 @@ const AuthorProfileItem = item => {
     );
   }
 
-  summaryText = showImage ? summary : shortSummary;
+  const summaryText = showImage ? summary : shortSummary;
   
   return (
     <Link url={url} onPress={onPress}>
@@ -74,7 +74,7 @@ const AuthorProfileItem = item => {
           <ArticleSummary
             Label={() => <ArticleLabel title={label} color="#333333" />}
             headline={() => <ArticleSummaryHeadline headline={headline} />}
-            textAst={renderAst(summaryText)}
+            textAst={() => renderAst(summaryText)}
             DatePublication={() => <DatePublication date={publishedTime} publication={publicationName}/>}
           />
         </Card>
