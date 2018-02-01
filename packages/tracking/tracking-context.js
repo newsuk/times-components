@@ -1,26 +1,41 @@
+// @flow
+
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import getDisplayName from "react-display-name";
-import _get from "lodash.get";
+import get from "lodash.get";
 import hoistNonReactStatic from "hoist-non-react-statics";
 import trackingContextTypes from "./tracking-context-types";
+import type {
+  AnalyticsEventObjectType,
+  TrackingContextObjectType,
+  TrackingContextPropsType
+} from "./tracking.flow";
 import resolveAttrs from "./resolve-attrs";
 
 const withTrackingContext = (
-  WrappedComponent,
-  { getAttrs = () => ({}), trackingObject, isDataReady = () => true } = {}
+  WrappedComponent: any,
+  {
+    getAttrs = () => ({}),
+    trackingObjectName = "",
+    isDataReady
+  }: TrackingContextObjectType = {}
 ) => {
   const componentName = getDisplayName(WrappedComponent);
 
-  class WithTrackingContext extends Component {
-    constructor(props, context) {
+  class WithTrackingContext extends Component<TrackingContextPropsType> {
+    static defaultProps = {
+      ...WrappedComponent.defaultProps
+    };
+
+    constructor(props: TrackingContextPropsType, context: {}) {
       super(props, context);
-      this.fireAnalyticsEvent = this.fireAnalyticsEvent.bind(this);
+
       this.pageEventTriggered = false;
       if (this.isRootTrackingContext()) {
-        if (!trackingObject) {
+        if (!trackingObjectName) {
           throw new TypeError(
-            "Missing argument trackingObject of withTrackingContext()"
+            "Missing argument trackingObjectName of withTrackingContext()"
           );
         }
         if (!this.props.analyticsStream) {
@@ -43,17 +58,20 @@ const withTrackingContext = (
       this.attemptTrackPageEvent(this.props);
     }
 
-    componentWillReceiveProps(nextProps) {
+    componentWillReceiveProps(nextProps: TrackingContextPropsType) {
       this.attemptTrackPageEvent(nextProps);
     }
 
-    attemptTrackPageEvent(props) {
+    pageEventTriggered: boolean;
+
+    attemptTrackPageEvent(props: TrackingContextPropsType) {
       if (
-        isDataReady(props) &&
+        (!isDataReady || isDataReady(props)) &&
         this.isRootTrackingContext() &&
         this.pageEventTriggered === false
       ) {
         this.pageEventTriggered = true;
+
         this.fireAnalyticsEvent({
           component: "Page",
           action: "Viewed",
@@ -62,18 +80,24 @@ const withTrackingContext = (
       }
     }
 
-    fireAnalyticsEvent({ object, component, action, attrs }) {
+    fireAnalyticsEvent = ({
+      object,
+      component,
+      action,
+      attrs
+    }: AnalyticsEventObjectType) => {
       const decoratedEvent = {
         component,
         action,
         attrs: {
           ...resolveAttrs(getAttrs, this.props),
           ...attrs
-        }
+        },
+        object: trackingObjectName
       };
 
-      if (object || trackingObject) {
-        decoratedEvent.object = object || trackingObject;
+      if (object || trackingObjectName) {
+        decoratedEvent.object = object || trackingObjectName;
       }
 
       if (this.isRootTrackingContext()) {
@@ -81,16 +105,16 @@ const withTrackingContext = (
       }
 
       this.analyticsStream(decoratedEvent);
-    }
+    };
 
     isRootTrackingContext() {
       return !this.context || !this.context.tracking;
     }
 
-    analyticsStream(...args) {
+    analyticsStream(analyticsEvent: AnalyticsEventObjectType) {
       const stream =
-        _get(this.context, "tracking.analytics") || this.props.analyticsStream;
-      return stream && stream(...args);
+        get(this.context, "tracking.analytics") || this.props.analyticsStream;
+      return stream && stream(analyticsEvent);
     }
 
     render() {
@@ -105,7 +129,6 @@ const withTrackingContext = (
     analyticsStream: PropTypes.func,
     ...WrappedComponent.propTypes
   };
-  WithTrackingContext.defaultProps = WrappedComponent.defaultProps;
   hoistNonReactStatic(WithTrackingContext, WrappedComponent);
 
   return WithTrackingContext;

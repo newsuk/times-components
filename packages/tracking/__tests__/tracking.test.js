@@ -20,7 +20,7 @@ describe("WithTrackScrollDepth", () => {
     const reporter = jest.fn();
     const ListWithChildTracking = withTestContext(
       withTrackScrollDepth(ListComponent),
-      { trackingObject: "TestObject" }
+      { trackingObjectName: "TestObject" }
     );
 
     renderer.create(
@@ -38,7 +38,7 @@ describe("WithTrackScrollDepth", () => {
     const reporter = jest.fn();
     const ListWithChildTracking = withTestContext(
       withTrackScrollDepth(ListComponent),
-      { trackingObject: "TestObject" }
+      { trackingObjectName: "TestObject" }
     );
 
     const tracking = shallow(

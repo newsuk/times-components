@@ -9,7 +9,7 @@
     "test:watch": "jest --projects jest.config*.json --watchAll",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "lint": "eslint . && yarn prettier:diff",
+    "lint": "flow && eslint . && yarn prettier:diff",
     "dextrose-stories": "dextrose-stories",
     "dextrose-clean": "dextrose-clean"
   },
@@ -39,13 +39,10 @@
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
     "eslint": "4.9.0",
+    "flow-bin": "0.63.1",
     "jest": "21.2.1",
     "prettier": "1.8.2",
     "raf": "3.4.0",
-    "react": "16.2.0",
-    "react-dom": "16.2.0",
-    "react-native": "0.50.1",
-    "react-native-web": "0.3.2",
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
