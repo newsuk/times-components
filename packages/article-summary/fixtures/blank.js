@@ -1,7 +1,9 @@
 import React from "react";
 import DatePublication from "@times-components/date-publication";
 import ArticleLabel from "@times-components/article-label";
-import ArticleSummaryHeadline from "../article-summary-headline";
+import {
+  ArticleSummaryHeadline
+} from "../";
 
 export default {
   Label: () => <ArticleLabel title="Camilla Long" color="#333333" />,

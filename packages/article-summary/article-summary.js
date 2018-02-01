@@ -1,6 +1,9 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
+import summarise from './summarise';
+import renderer from './article-summary-renderer';
+import ArticleSummaryHeadline from './article-summary-headline';
 
 const styles = {
   container: {},
@@ -65,6 +68,13 @@ ArticleSummary.defaultProps = {
   textAst: () => [],
   DatePublication: () => null,
   Byline: () => null
+};
+
+
+export {
+  summarise,
+  renderer,
+  ArticleSummaryHeadline
 };
 
 export default ArticleSummary;
