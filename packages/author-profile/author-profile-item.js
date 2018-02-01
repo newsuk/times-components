@@ -1,12 +1,11 @@
 import React from "react";
 import get from "lodash.get";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, Text } from "react-native";
 import Card from "@times-components/card";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 
 import ArticleLabel from "@times-components/article-label";
-import ArticleByline from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
 import { renderTrees } from "@times-components/markup";
 import ArticleSummary, {
@@ -71,8 +70,8 @@ const AuthorProfileItem = item => {
           showImage={showImage}
         >
           <ArticleSummary
-            Label={() => <ArticleLabel title={label} color="#333333" />}
-            headline={() => <ArticleSummaryHeadline headline={headline} />}
+            Label={() => label? <ArticleLabel title={label} color="#333333" /> : null}
+            Headline={() => <ArticleSummaryHeadline headline={headline} />}
             textAst={() => renderAst(summaryText)}
             DatePublication={() => (
               <DatePublication

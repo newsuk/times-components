@@ -46,7 +46,6 @@ const ArticleSummary = props => {
       >
         <DatePublication />
       </Text>
-
       <Text style={styles.metaText}>
         <Byline />
       </Text>

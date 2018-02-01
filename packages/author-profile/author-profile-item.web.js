@@ -72,7 +72,7 @@ const AuthorProfileItem = item => {
   }
 
   const childProps = {
-    Label: () => <ArticleLabel title={label} color="#333333" />,
+    Label: () => label? <ArticleLabel title={label} color="#333333" /> : null,
     Headline: () => <ArticleSummaryHeadline headline={headline} />,
     DatePublication: () => (
       <DatePublication date={publishedTime} publication={publicationName} />
