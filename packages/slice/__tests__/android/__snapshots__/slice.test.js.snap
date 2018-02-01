@@ -42,5 +42,3 @@ exports[`Slice test on android Related articles renders multiple child elements 
   </Text>
 </View>
 `;
-
-exports[`Slice test on android Related articles renders null for a slice with no children 1`] = `null`;

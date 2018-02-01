@@ -39,5 +39,3 @@ exports[`Slice test on web Related articles renders multiple child elements 1`] 
   </div>
 </div>
 `;
-
-exports[`Slice test on web Related articles renders null for a slice with no children 1`] = `null`;

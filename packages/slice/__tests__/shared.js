@@ -6,11 +6,6 @@ import Slice from "../slice";
 
 module.exports = () => {
   context("Related articles", () => {
-    it("renders null for a slice with no children", () => {
-      const tree = renderer.create(<Slice />).toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
     it("renders a single child element", () => {
       const tree = renderer
         .create(

@@ -42,5 +42,3 @@ exports[`Slice test on ios Related articles renders multiple child elements 1`] 
   </Text>
 </View>
 `;
-
-exports[`Slice test on ios Related articles renders null for a slice with no children 1`] = `null`;
