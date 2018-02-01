@@ -3,6 +3,8 @@ import React from "react";
 import renderer from "react-test-renderer";
 import DatePublication from "../date-publication";
 
+jest.mock("react-native-device-info");
+
 function gmtTests(userTimezone) {
   const realIntl = Intl;
 
@@ -12,6 +14,8 @@ function gmtTests(userTimezone) {
         resolvedOptions: () => ({ timeZone: userTimezone })
       })
     };
+    // eslint-disable-next-line global-require, import/no-extraneous-dependencies
+    require("react-native-device-info").setMockTimezone(userTimezone);
   });
 
   afterEach(() => {

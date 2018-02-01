@@ -1,3 +1,8 @@
+let timezone = "Europe/London";
+
 module.exports = {
-  getTimezone: jest.fn(() => "Europe/London")
+  setMockTimezone: t => {
+    timezone = t;
+  },
+  getTimezone: jest.fn(() => timezone)
 };

@@ -36,6 +36,8 @@ describe("timezone helper", () => {
         resolvedOptions: () => ({ timeZone: "Somewhere/Else" })
       })
     };
+    // eslint-disable-next-line global-require
+    require("react-native-device-info").setMockTimezone("Somewhere/Else");
 
     expect(isLondonTimezone()).toEqual(false);
   });
