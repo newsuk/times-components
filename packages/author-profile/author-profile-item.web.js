@@ -75,7 +75,6 @@ const AuthorProfileItem = item => {
     )
   };
 
-
   const children = showImage ? (
     <ArticleSummary {...childProps} summaryText={() => renderAst(summary)} />
   ) : (
