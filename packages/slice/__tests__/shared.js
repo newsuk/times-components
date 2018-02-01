@@ -14,6 +14,10 @@ const createRelatedArticlesProps = fixtureData => ({
   onPress: () => {}
 });
 
+// @TODO: DEFAULT WITH NO CHILD
+// @TODO: DEFAULT WITH ONE CHILD
+// @TODO: DEFAULT WITH TWO CHILDREN
+
 module.exports = () => {
   const realIntl = Intl;
 
