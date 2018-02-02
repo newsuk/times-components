@@ -5,5 +5,8 @@ export default {
     fontFamily: "TimesModern-Bold",
     fontWeight: "400"
   },
-  default: {}
+  default: {
+    fontSize: 22,
+    lineHeight: 22
+  }
 };

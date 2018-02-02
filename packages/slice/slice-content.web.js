@@ -49,7 +49,7 @@ const SliceContent = ({ item }) => {
             DatePublication={() => <DatePublication date={publishedTime} />}
             Headline={() => (
               <ResponsiveHeadline>
-                <ArticleSummaryHeadline headline={headline} />{" "}
+                <ArticleSummaryHeadline headline={headline} />
               </ResponsiveHeadline>
             )}
             Label={() => <ArticleLabel title={label} color="#333333" />}
