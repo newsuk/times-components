@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.17.0"></a>
+# [0.17.0](https://github.com/newsuk/times-components/compare/@times-components/markup@0.16.7...@times-components/markup@0.17.0) (2018-02-02)
+
+
+### Features
+
+* add new Ad component pieces ([#579](https://github.com/newsuk/times-components/issues/579)) ([25bb859](https://github.com/newsuk/times-components/commit/25bb859))
+
+
+
+
 <a name="0.16.7"></a>
 ## [0.16.7](https://github.com/newsuk/times-components/compare/@times-components/markup@0.16.6...@times-components/markup@0.16.7) (2018-01-31)
 
