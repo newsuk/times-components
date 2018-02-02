@@ -70,7 +70,7 @@ const AuthorProfileItem = item => {
           showImage={showImage}
         >
           <ArticleSummary
-            Label={() => Label}
+            Label={Label}
             Headline={() => <ArticleSummaryHeadline headline={headline} />}
             summaryText={() => renderAst(summaryText)}
             DatePublication={() => (

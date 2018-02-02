@@ -601,32 +601,11 @@ exports[`Article Summary test on ios renders an article-summary component with h
   >
     Saturday July 01 2017, 03:32pm, The Sunday Times
   </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-  />
 </View>
 `;
 
 exports[`Article Summary test on ios renders an article-summary component with multiple paragraphs 1`] = `
 <View>
-  <View
-    style={
-      Object {
-        "marginBottom": 0,
-      }
-    }
-  />
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -748,13 +727,6 @@ exports[`Article Summary test on ios renders an article-summary component with m
 
 exports[`Article Summary test on ios renders an article-summary component with no byline 1`] = `
 <View>
-  <View
-    style={
-      Object {
-        "marginBottom": 0,
-      }
-    }
-  />
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -820,32 +792,11 @@ exports[`Article Summary test on ios renders an article-summary component with n
   >
     Friday November 17 2017, 12:01am, The Times
   </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-  />
 </View>
 `;
 
 exports[`Article Summary test on ios renders an article-summary component with no label 1`] = `
 <View>
-  <View
-    style={
-      Object {
-        "marginBottom": 0,
-      }
-    }
-  />
   <Text
     accessible={true}
     allowFontScaling={true}
