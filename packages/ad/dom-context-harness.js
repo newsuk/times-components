@@ -93,8 +93,8 @@ const makeHarness = ({
           window,
           document
         });
-        if (initialiser && initialiser.mount) {
-          initialiser.mount();
+        if (initialiser && initialiser.execute) {
+          initialiser.execute();
         }
       });
     }

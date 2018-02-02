@@ -5,7 +5,7 @@
 const adInit = args => {
   const { el, data, window, globals: { googletag }, renderComplete } = args;
 
-  let mounted = false;
+  let executed = false;
 
   return {
     pageInit() {
@@ -68,9 +68,9 @@ const adInit = args => {
       });
     },
 
-    mount() {
-      if (mounted) throw new Error("mount() has already been called");
-      mounted = true;
+    execute() {
+      if (executed) throw new Error("execute() has already been called");
+      executed = true;
       if (!window.globalAdInitComplete) {
         window.globalAdInitComplete = true;
         this.pageInit();

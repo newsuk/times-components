@@ -40,8 +40,6 @@ describe("Ad", () => {
     renderer.create(<Ad {...adProps} code="ad-unknown-code" />);
   });
 
-  it.skip("handleLayout changes configuration", () => {});
-
   it("renders with one ad slot", () => {
     const tree = renderer.create(<Ad {...adProps} code="ad-header" />).toJSON();
 

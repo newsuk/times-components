@@ -59,15 +59,15 @@ describe("DOMContext harness", () => {
     expect([...scripts].map(s => s.src)).toEqual(["a", "b", "c"]);
   });
 
-  it("will invoke the mount hook returned by the init function", () => {
+  it("will invoke the execute hook returned by the init function", () => {
     window.myGlobalVariable = "myGlobalValue";
-    const mount = jest.fn();
-    const init = jest.fn().mockImplementation(() => ({ mount }));
+    const execute = jest.fn();
+    const init = jest.fn().mockImplementation(() => ({ execute }));
 
     const harness = makeHarness({ init });
     harness.execute();
 
-    expect(mount).toHaveBeenCalled();
+    expect(execute).toHaveBeenCalled();
   });
 
   it("passes global variables to the init function", () => {

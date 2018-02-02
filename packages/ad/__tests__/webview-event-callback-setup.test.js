@@ -26,7 +26,7 @@ describe("webviewEventCallbackSetup", () => {
     expectFunctionToBeSerialisable(webviewEventCallbackSetup);
   });
 
-  it("sets the eventCallback funciton on the window", () => {
+  it("sets the eventCallback function on the window", () => {
     expect(window.eventCallback).toBeUndefined();
     webviewEventCallbackSetup({ window });
     expect(window.eventCallback).toEqual(expect.any(Function));

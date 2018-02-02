@@ -4,7 +4,7 @@ import {
 } from "./check-serialisable-function";
 
 describe("checkSerialisableFunction", () => {
-  it("does not find errors in funciton that does not use global variables", () => {
+  it("does not find errors in function that does not use global variables", () => {
     function f(a1) {
       const useOfA1 = a1;
       function X(a3) {

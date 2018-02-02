@@ -72,24 +72,24 @@ describe("Ad init", () => {
   it("performs page and slot initialisation if it is the first initialiser to be called", () => {
     jest.spyOn(init, "pageInit");
     jest.spyOn(init, "slotInit");
-    init.mount();
+    init.execute();
     expect(init.pageInit).toHaveBeenCalledTimes(1);
     expect(init.slotInit).toHaveBeenCalledTimes(1);
   });
 
   it("does slot but not page initialisation if it is not the first initialiser to be called", () => {
-    adInit(initOptions).mount();
+    adInit(initOptions).execute();
     jest.spyOn(init, "pageInit");
     jest.spyOn(init, "slotInit");
-    init.mount();
+    init.execute();
     expect(init.pageInit).toHaveBeenCalledTimes(0);
     expect(init.slotInit).toHaveBeenCalledTimes(1);
   });
 
-  it("throws if mount is called twice", () => {
-    init.mount();
-    expect(() => init.mount()).toThrowError(
-      new Error("mount() has already been called")
+  it("throws if execute is called twice", () => {
+    init.execute();
+    expect(() => init.execute()).toThrowError(
+      new Error("execute() has already been called")
     );
   });
 
@@ -136,7 +136,7 @@ describe("Ad init", () => {
   });
 
   it("displays all ads after a delay", () => {
-    init.mount();
+    init.execute();
     processGoogletagCommandQueue();
     expect(mockGoogletag.display).not.toHaveBeenCalled();
     expect(mockPubAds.refresh).not.toHaveBeenCalled();
@@ -156,10 +156,10 @@ describe("Ad init", () => {
     );
   });
 
-  it("throws if the mount hook is called twice", () => {
-    init.mount();
-    expect(() => init.mount()).toThrowError(
-      new Error("mount() has already been called")
+  it("throws if the execute hook is called twice", () => {
+    init.execute();
+    expect(() => init.execute()).toThrowError(
+      new Error("execute() has already been called")
     );
   });
 });
