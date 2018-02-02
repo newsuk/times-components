@@ -36,7 +36,7 @@ module.exports = () => {
       const tree = renderer
         .create(
           <RelatedArticles
-            item={createRelatedArticlesProps(singleRelatedArticleFixture.data)}
+            {...createRelatedArticlesProps(singleRelatedArticleFixture.data)}
           />
         )
         .toJSON();
@@ -47,7 +47,7 @@ module.exports = () => {
       const tree = renderer
         .create(
           <RelatedArticles
-            item={createRelatedArticlesProps(
+            {...createRelatedArticlesProps(
               singleRelatedArticleNoImageFixture.data
             )}
           />
@@ -60,7 +60,7 @@ module.exports = () => {
       const tree = renderer
         .create(
           <RelatedArticles
-            item={createRelatedArticlesProps(
+            {...createRelatedArticlesProps(
               singleRelatedArticleNoLabelFixture.data
             )}
           />
@@ -73,7 +73,7 @@ module.exports = () => {
       const tree = renderer
         .create(
           <RelatedArticles
-            item={createRelatedArticlesProps(
+            {...createRelatedArticlesProps(
               singleRelatedArticleNoBylineFixture.data
             )}
           />

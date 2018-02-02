@@ -190,17 +190,27 @@ storiesOf("Article", module)
     />
   ))
   .add("Single related article default", () => (
-    <RelatedArticles {...createRelatedArticlesProps(singleRelatedArticleFixture.data)} />
+    <RelatedArticles
+      {...createRelatedArticlesProps(singleRelatedArticleFixture.data)}
+    />
   ))
   .add("Single related article with no lead image", () => (
-    <RelatedArticles {...createRelatedArticlesProps(singleRelatedArticleNoImageFixture.data)} />
+    <RelatedArticles
+      {...createRelatedArticlesProps(singleRelatedArticleNoImageFixture.data)}
+    />
   ))
   .add("Single related article with no label", () => (
-    <RelatedArticles {...createRelatedArticlesProps(singleRelatedArticleNoLabelFixture.data)} />
+    <RelatedArticles
+      {...createRelatedArticlesProps(singleRelatedArticleNoLabelFixture.data)}
+    />
   ))
   .add("Single related article with no byline", () => (
-    <RelatedArticles {...createRelatedArticlesProps(singleRelatedArticleNoBylineFixture.data)} />
+    <RelatedArticles
+      {...createRelatedArticlesProps(singleRelatedArticleNoBylineFixture.data)}
+    />
   ))
   .add("Two related articles", () => (
-    <RelatedArticles {...createRelatedArticlesProps(twoRelatedArticlesFixture.data)} />
+    <RelatedArticles
+      {...createRelatedArticlesProps(twoRelatedArticlesFixture.data)}
+    />
   ));

@@ -6,16 +6,17 @@ export const propTypesItem = {
     byline: PropTypes.arrayOf(treePropType),
     headline: PropTypes.string,
     label: PropTypes.string,
-    onPress: PropTypes.func,
     publicationName: PropTypes.string,
     publishedTime: PropTypes.string,
     summary: PropTypes.arrayOf(treePropType),
     url: PropTypes.string
-  }).isRequired
+  }).isRequired,
+  onPress: PropTypes.func.isRequired
 };
 
 export const propTypes = {
   articles: PropTypes.arrayOf(propTypesItem.article),
+  onPress: PropTypes.func.isRequired,
   template: PropTypes.string
 };
 

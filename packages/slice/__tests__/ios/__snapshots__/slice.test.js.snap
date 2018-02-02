@@ -2,11 +2,7 @@
 
 exports[`Slice test on ios Related articles renders a single child element 1`] = `
 <View
-  style={
-    Object {
-      "display": "flex",
-    }
-  }
+  style={Object {}}
 >
   <Text
     accessible={true}
@@ -20,11 +16,7 @@ exports[`Slice test on ios Related articles renders a single child element 1`] =
 
 exports[`Slice test on ios Related articles renders multiple child elements 1`] = `
 <View
-  style={
-    Object {
-      "display": "flex",
-    }
-  }
+  style={Object {}}
 >
   <Text
     accessible={true}

@@ -1,9 +1,5 @@
 export default {
-  DEFAULT: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "center"
-  },
+  DEFAULT: {},
   LEAD_AND_TWO: {
     borderColor: "green",
     borderWidth: 10

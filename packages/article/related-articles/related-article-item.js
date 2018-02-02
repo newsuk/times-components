@@ -7,19 +7,21 @@ import Link from "@times-components/link";
 import { propTypesItem } from "./proptypes";
 
 const styles = StyleSheet.create({
-  cardContainer: {
+  container: {
+    borderStyle: "solid",
+    borderBottomColor: "#dbdbdb",
+    borderBottomWidth: StyleSheet.hairlineWidth,
     paddingBottom: 10,
-    paddingTop: 10,
+    paddingTop: 10
   }
 });
 
-const RelatedArticleItem = ({ article }) => {
+const RelatedArticleItem = ({ article, onPress }) => {
   if (!article) return null;
   const {
     byline,
     label,
     headline,
-    onPress,
     publicationName,
     publishedTime,
     summary,
@@ -32,13 +34,14 @@ const RelatedArticleItem = ({ article }) => {
     get(article, "leadAsset.posterImage.crop.url", null)
   );
 
-    // <Link url={url} onPress={onPress}>
   return (
-      <View style={styles.cardContainer}>
-        <Image
-          uri={`${imageUri}&resize=996`}
-          aspectRatio={16/9}
-        />
+    <Link url={url} onPress={onPress}>
+      <View style={styles.container}>
+        {imageUri ? (
+          <View style={{ marginBottom: 10 }}>
+            <Image uri={`${imageUri}&resize=996`} aspectRatio={16 / 9} />
+          </View>
+        ) : null}
         <ArticleSummary
           byline={byline}
           date={publishedTime}
@@ -50,9 +53,9 @@ const RelatedArticleItem = ({ article }) => {
           text={summary}
         />
       </View>
+    </Link>
   );
 };
-    // </Link>
 
 RelatedArticleItem.propTypes = propTypesItem;
 

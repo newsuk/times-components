@@ -13,15 +13,19 @@ const styles = StyleSheet.create({
   }
 });
 
-const RelatedArticles = ({ articles, template }) => {
+const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles) return null;
   return (
     <View style={styles.container}>
       <RelatedArticlesHeading />
       <Slice template={template}>
-        {articles.map(article =>
-          <RelatedArticleItem key={article.id} articlesLength={articles.length} article={article} />
-        )}
+        {articles.map(article => (
+          <RelatedArticleItem
+            key={article.id}
+            article={article}
+            onPress={onPress}
+          />
+        ))}
       </Slice>
     </View>
   );
