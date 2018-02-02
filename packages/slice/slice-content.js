@@ -76,3 +76,4 @@ SliceContent.propTypes = {
 };
 
 export default SliceContent;
+
