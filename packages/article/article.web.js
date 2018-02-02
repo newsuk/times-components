@@ -9,6 +9,7 @@ import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleBody from "./article-body/article-body";
 import LeadAssetComponent from "./article-lead-asset.web";
+import { articleAdTypes } from "./article-ad-proptypes";
 
 import articleTrackingContext from "./article-tracking-context";
 
@@ -23,9 +24,10 @@ import {
 const adStyle = {
   marginBottom: 0
 };
-
-const withAdComposer = (children, section = "article") => (
-  <AdComposer section={section}>{children}</AdComposer>
+const withAdComposer = (children, articleAdConfig, section = "article") => (
+  <AdComposer section={section} adConfig={articleAdConfig}>
+    {children}
+  </AdComposer>
 );
 
 class ArticlePage extends React.Component {
@@ -85,16 +87,30 @@ class ArticlePage extends React.Component {
     if (isLoading) {
       return <ArticleLoading />;
     }
+    const articleData = this.props.article;
 
-    const ArticleListView = ArticlePage.renderArticle(this.props.article);
-    return withAdComposer(ArticleListView);
+    const articleAdConfig = {
+      id: articleData.id,
+      title: articleData.headline || "",
+      label: articleData.label || "",
+      commercialtags: articleData.commercialTags || "",
+      contentType: "art"
+    };
+
+    const ArticleListView = ArticlePage.renderArticle(articleData);
+    return withAdComposer(
+      ArticleListView,
+      articleAdConfig,
+      articleData.section
+    );
   }
 }
 
 ArticlePage.propTypes = {
   article: PropTypes.shape({
     ...ArticleHeader.propTypes,
-    ...ArticleMeta.propTypes
+    ...ArticleMeta.propTypes,
+    ...articleAdTypes
   }),
   isLoading: PropTypes.bool,
   error: PropTypes.shape({

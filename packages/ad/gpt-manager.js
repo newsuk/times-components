@@ -1,4 +1,5 @@
 /* eslint-env browser */
+import forEach from "lodash.foreach";
 
 const GptManager = class GptManager {
   constructor() {
@@ -31,7 +32,13 @@ const GptManager = class GptManager {
     this.scriptSet = true;
   }
 
-  setConfig() {
+  setPageTargeting(options) {
+    forEach(options, (value, key) => {
+      this.googletag.pubads().setTargeting(key, value);
+    });
+  }
+
+  setConfig(options) {
     const { googletag } = this;
 
     // See https://developers.google.com/doubleclick-gpt/reference#googletagpubadsservice
@@ -39,6 +46,9 @@ const GptManager = class GptManager {
       if (this.isReady) return resolve();
 
       return googletag.cmd.push(() => {
+        // set page level config
+        this.setPageTargeting(options);
+
         // fetch multiple ads at once
         googletag.pubads().enableSingleRequest();
 

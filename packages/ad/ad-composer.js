@@ -17,6 +17,7 @@ class AdComposer extends Component {
       networkId: props.networkId,
       adUnit: props.adUnit,
       section: props.section,
+      adConfig: props.adConfig,
       gptManager,
       pbjsManager
     });
@@ -47,12 +48,26 @@ AdComposer.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element)
-  ]).isRequired
+  ]).isRequired,
+  adConfig: PropTypes.shape({
+    id: PropTypes.string,
+    title: PropTypes.string,
+    label: PropTypes.string,
+    commercialtags: PropTypes.string,
+    contentType: PropTypes.string
+  })
 };
 
 AdComposer.defaultProps = {
   networkId: "25436805",
-  adUnit: "d.thetimes.co.uk"
+  adUnit: "d.thetimes.co.uk",
+  adConfig: {
+    id: "null",
+    title: "null",
+    label: "null",
+    commercialtags: "null",
+    contentType: "null"
+  }
 };
 
 export default AdComposer;
