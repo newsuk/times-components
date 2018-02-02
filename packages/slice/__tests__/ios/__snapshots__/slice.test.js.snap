@@ -233,10 +233,7 @@ exports[`Slice test on ios Related articles renders single article 1`] = `
                       "fontWeight": "400",
                       "marginBottom": 5,
                     },
-                    Object {
-                      "fontSize": 22,
-                      "lineHeight": 22,
-                    },
+                    Object {},
                     Object {},
                   ]
                 }
@@ -571,10 +568,7 @@ exports[`Slice test on ios Related articles renders single article with no bylin
                       "fontWeight": "400",
                       "marginBottom": 5,
                     },
-                    Object {
-                      "fontSize": 22,
-                      "lineHeight": 22,
-                    },
+                    Object {},
                     Object {},
                   ]
                 }
@@ -860,10 +854,7 @@ exports[`Slice test on ios Related articles renders single article with no label
                       "fontWeight": "400",
                       "marginBottom": 5,
                     },
-                    Object {
-                      "fontSize": 22,
-                      "lineHeight": 22,
-                    },
+                    Object {},
                     Object {},
                   ]
                 }
@@ -1078,10 +1069,7 @@ exports[`Slice test on ios Related articles renders single article with no lead 
                       "fontWeight": "400",
                       "marginBottom": 5,
                     },
-                    Object {
-                      "fontSize": 22,
-                      "lineHeight": 22,
-                    },
+                    Object {},
                     Object {},
                   ]
                 }
