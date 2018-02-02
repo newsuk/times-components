@@ -42,15 +42,14 @@ function gmtTests(userTimezone) {
   });
 }
 
-
 function tests() {
-describe("when the user has the same time zone as London time zone", () => {
-  gmtTests("Europe/London");
-});
+  describe("when the user has the same time zone as London time zone", () => {
+    gmtTests("Europe/London");
+  });
 
-describe("when the user has a different time zone than London time zone", () => {
-  gmtTests("Europe/Kiev");
-});
+  describe("when the user has a different time zone than London time zone", () => {
+    gmtTests("Europe/Kiev");
+  });
 }
 
 export default tests;

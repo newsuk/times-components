@@ -53,4 +53,8 @@ DatePublication.propTypes = {
   publication: PropTypes.oneOf(Object.keys(publications))
 };
 
+DatePublication.defaultProps = {
+  publication: null
+};
+
 export default DatePublication;
