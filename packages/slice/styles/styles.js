@@ -1,5 +1,10 @@
 export default {
-  DEFAULT: {},
+  DEFAULT: {
+    container: {
+      display: "flex",
+      flexDirection: "row"
+    }
+  },
   LEAD_AND_TWO: {
     borderColor: "green",
     borderWidth: 10

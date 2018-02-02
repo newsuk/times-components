@@ -10,7 +10,7 @@ module.exports = () => {
       const tree = renderer
         .create(
           <Slice>
-            <Text>Test text</Text>
+            <Text key={"test1"}>Test text</Text>
           </Slice>
         )
         .toJSON();
@@ -21,8 +21,8 @@ module.exports = () => {
       const tree = renderer
         .create(
           <Slice>
-            <Text>Test text 1</Text>
-            <Text>Test text 2</Text>
+            <Text key={"test1"}>Test text 1</Text>
+            <Text key={"test2"}>Test text 2</Text>
           </Slice>
         )
         .toJSON();

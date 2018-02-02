@@ -1,51 +1,16 @@
 import React from "react";
 import get from "lodash.get";
-import { StyleSheet, View } from "react-native";
 import ArticleSummary from "@times-components/article-summary";
 import Image from "@times-components/image";
 import Link from "@times-components/link";
-import withResponsiveStyles from "@times-components/responsive-styles";
+import {
+  RelatedArticleContainer,
+  ImageContainer,
+  SummaryContainer
+} from "./styles/responsive";
 import { propTypesItem } from "./proptypes";
 
-const RelatedArticleContainer = withResponsiveStyles(View, {
-  base: () => `
-    border-style: solid;
-    border-bottom-color: #dbdbdb;
-    border-bottom-width: ${StyleSheet.hairlineWidth}px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 10px;
-    padding-top: 10px;
-  `,
-  mediumUp: () => `
-    flex-direction: row;
-  `
-});
-
-const ImageContainer = withResponsiveStyles(View, {
-  base: () => `
-    flex-grow: 1;
-    margin-bottom: 10px;
-  `,
-  mediumUp: () => `
-    flex-grow: 2;
-    flex-basis: 0;
-    margin-bottom: 0;
-  `
-});
-
-const SummaryContainer = withResponsiveStyles(View, {
-  base: () => `
-    flex-grow: 1;
-  `,
-  mediumUp: () => `
-    padding-left: 15px;
-    flex-grow: 2.7;
-    flex-basis: 0 !important;
-  `
-});
-
-const RelatedArticleItem = ({ article, onPress }) => {
+const RelatedArticleItem = ({ article, articleCount, onPress }) => {
   if (!article) return null;
   const {
     byline,
@@ -63,15 +28,20 @@ const RelatedArticleItem = ({ article, onPress }) => {
     get(article, "leadAsset.posterImage.crop.url", null)
   );
 
+  // @TODO: pass these in to ensure items are agnostic of articles.length
+  const StyledRelatedArticleContainer = RelatedArticleContainer(articleCount);
+  const StyledImageContainer = ImageContainer(articleCount);
+  const StyledSummaryContainer = SummaryContainer(articleCount);
+
   return (
     <Link url={url} onPress={onPress}>
-      <RelatedArticleContainer>
+      <StyledRelatedArticleContainer>
         {imageUri ? (
-          <ImageContainer>
+          <StyledImageContainer>
             <Image uri={`${imageUri}&resize=996`} aspectRatio={16 / 9} />
-          </ImageContainer>
+          </StyledImageContainer>
         ) : null}
-        <SummaryContainer>
+        <StyledSummaryContainer>
           <ArticleSummary
             byline={byline}
             date={publishedTime}
@@ -82,8 +52,8 @@ const RelatedArticleItem = ({ article, onPress }) => {
             showPublication={false}
             text={summary}
           />
-        </SummaryContainer>
-      </RelatedArticleContainer>
+        </StyledSummaryContainer>
+      </StyledRelatedArticleContainer>
     </Link>
   );
 };

@@ -1,18 +1,20 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
 import PropTypes from "prop-types";
-import SliceContainer from "./styles/responsive";
-import templateStyles from "./styles/styles";
+import { SliceContainer, ChildContainer } from "./styles/responsive";
 
 const Slice = ({ children, template }) => {
-  if (!children || children.length === 0) return null;
-  const styles = StyleSheet.create({
-    template: templateStyles[template]
-  });
+  if (!children) return null;
 
+  const childArray = [...children];
+
+  console.log(template); // eslint-disable-line
+
+  // @TODO needs to be more agnostic of related articles specific styles / code
   return (
     <SliceContainer>
-      <View style={styles.template}>{children}</View>
+      {childArray.map(child => (
+        <ChildContainer key={child.key}>{child}</ChildContainer>
+      ))}
     </SliceContainer>
   );
 };

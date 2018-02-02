@@ -13,6 +13,10 @@ const styles = StyleSheet.create({
   }
 });
 
+// borderBottomColor: "red",
+//     borderBottomWidth: StyleSheet.hairlineWidth,
+//     borderStyle: "solid"
+
 const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles) return null;
   return (
@@ -23,6 +27,7 @@ const RelatedArticles = ({ articles, onPress, template }) => {
           <RelatedArticleItem
             key={article.id}
             article={article}
+            articleCount={articles.length}
             onPress={onPress}
           />
         ))}

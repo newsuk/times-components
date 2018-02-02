@@ -2,35 +2,69 @@
 
 exports[`Slice test on ios Related articles renders a single child element 1`] = `
 <View
-  style={Object {}}
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "row",
+    }
+  }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+  <View
+    style={
+      Object {
+        "borderColor": "red",
+        "borderStyle": "solid",
+        "borderWidth": 1,
+        "flexGrow": 1,
+        "width": "50%",
+      }
+    }
   >
-    Test text
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      Test text
+    </Text>
+  </View>
 </View>
 `;
 
 exports[`Slice test on ios Related articles renders multiple child elements 1`] = `
 <View
-  style={Object {}}
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "row",
+    }
+  }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+  <View
+    style={
+      Object {
+        "borderColor": "red",
+        "borderStyle": "solid",
+        "borderWidth": 1,
+        "flexGrow": 1,
+        "width": "50%",
+      }
+    }
   >
-    Test text 1
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
-    Test text 2
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      Test text 1
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      Test text 2
+    </Text>
+  </View>
 </View>
 `;
