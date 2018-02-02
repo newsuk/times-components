@@ -900,37 +900,6 @@ exports[`Slice test on android Related articles renders single article with no l
           </View>
           <View>
             <View>
-              <View
-                style={
-                  Object {
-                    "marginBottom": 5,
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 12,
-                        "fontWeight": "400",
-                        "letterSpacing": 1.2,
-                        "lineHeight": 12,
-                        "marginBottom": -4,
-                        "paddingTop": 5,
-                      },
-                      Object {
-                        "color": "#333333",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
               <Text
                 accessible={true}
                 allowFontScaling={true}

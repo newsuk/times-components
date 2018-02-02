@@ -16,9 +16,9 @@ const ArticleSummary = props => {
 
   return (
     <View>
-      <View style={styles.labelWrapper}>
+      {Label ? <View style={styles.labelWrapper}>
         <Label />
-      </View>
+      </View> : null}
       <Headline />
       <Text style={styles.text}>{summaryText()}</Text>
       <Text
@@ -28,9 +28,9 @@ const ArticleSummary = props => {
       >
         <DatePublication />
       </Text>
-      <Text style={styles.metaText}>
+      {Byline ? <Text style={styles.metaText}>
         <Byline />
-      </Text>
+      </Text> : null}
     </View>
   );
 };
@@ -44,11 +44,11 @@ ArticleSummary.propTypes = {
 };
 
 ArticleSummary.defaultProps = {
-  Label: () => null,
-  Headline: () => null,
+  Label: null,
+  Headline: null,
   summaryText: () => [],
-  DatePublication: () => null,
-  Byline: () => null
+  DatePublication: null,
+  Byline: null
 };
 
 export { renderAst, summarise, renderer, ArticleSummaryHeadline };

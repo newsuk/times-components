@@ -1,6 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-<<<<<<< HEAD:packages/article-summary/__tests__/ios/__snapshots__/article-summary.ios.test.js.snap
 exports[`Article Summary test on ios renders an article-summary component with a single paragraph 1`] = `
 <View
   style={Object {}}
@@ -9,11 +8,6 @@ exports[`Article Summary test on ios renders an article-summary component with a
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
-=======
-exports[`renders an article-summary component with a single paragraph 1`] = `
-<View>
-  <View
->>>>>>> fix: Updating the visual styling required for making everything look as it previously did cross platform:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
     style={
       Object {
         "marginBottom": 0,
@@ -153,7 +147,6 @@ exports[`renders an article-summary component with a single paragraph 1`] = `
 </View>
 `;
 
-<<<<<<< HEAD:packages/article-summary/__tests__/ios/__snapshots__/article-summary.ios.test.js.snap
 exports[`Article Summary test on ios renders an article-summary component with content including line breaks 1`] = `
 <View
   style={Object {}}
@@ -162,11 +155,6 @@ exports[`Article Summary test on ios renders an article-summary component with c
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
-=======
-exports[`renders an article-summary component with content including line breaks 1`] = `
-<View>
-  <View
->>>>>>> fix: Updating the visual styling required for making everything look as it previously did cross platform:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
     style={
       Object {
         "marginBottom": 0,
@@ -380,7 +368,6 @@ exports[`renders an article-summary component with content including line breaks
 </View>
 `;
 
-<<<<<<< HEAD:packages/article-summary/__tests__/ios/__snapshots__/article-summary.ios.test.js.snap
 exports[`Article Summary test on ios renders an article-summary component with empty content at the end trimmed 1`] = `
 <View
   style={Object {}}
@@ -389,11 +376,6 @@ exports[`Article Summary test on ios renders an article-summary component with e
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
-=======
-exports[`renders an article-summary component with empty content at the end trimmed 1`] = `
-<View>
-  <View
->>>>>>> fix: Updating the visual styling required for making everything look as it previously did cross platform:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
     style={
       Object {
         "marginBottom": 0,
@@ -548,7 +530,6 @@ exports[`renders an article-summary component with empty content at the end trim
 </View>
 `;
 
-<<<<<<< HEAD:packages/article-summary/__tests__/ios/__snapshots__/article-summary.ios.test.js.snap
 exports[`Article Summary test on ios renders an article-summary component with headline and no content 1`] = `
 <View
   style={Object {}}
@@ -557,11 +538,6 @@ exports[`Article Summary test on ios renders an article-summary component with h
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
-=======
-exports[`renders an article-summary component with headline and no content 1`] = `
-<View>
-  <View
->>>>>>> fix: Updating the visual styling required for making everything look as it previously did cross platform:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
     style={
       Object {
         "marginBottom": 0,
@@ -645,20 +621,6 @@ exports[`renders an article-summary component with headline and no content 1`] =
   >
     Saturday July 01 2017, 03:32pm, The Sunday Times
   </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-  />
 </View>
 `;
 
@@ -670,6 +632,7 @@ exports[`Article Summary test on ios renders an article-summary component with m
 =======
 exports[`renders an article-summary component with multiple paragraphs 1`] = `
 <View>
+<<<<<<< HEAD:packages/article-summary/__tests__/ios/__snapshots__/article-summary.ios.test.js.snap
   <View
     style={
       Object {
@@ -678,6 +641,8 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
     }
   />
 >>>>>>> fix: Updating the visual styling required for making everything look as it previously did cross platform:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
+=======
+>>>>>>> fix: Added turnery operators to avoid showing empty containers in the snapshots:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -805,6 +770,7 @@ exports[`Article Summary test on ios renders an article-summary component with n
 =======
 exports[`renders an article-summary component with no byline 1`] = `
 <View>
+<<<<<<< HEAD:packages/article-summary/__tests__/ios/__snapshots__/article-summary.ios.test.js.snap
   <View
     style={
       Object {
@@ -813,6 +779,8 @@ exports[`renders an article-summary component with no byline 1`] = `
     }
   />
 >>>>>>> fix: Updating the visual styling required for making everything look as it previously did cross platform:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
+=======
+>>>>>>> fix: Added turnery operators to avoid showing empty containers in the snapshots:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -878,20 +846,6 @@ exports[`renders an article-summary component with no byline 1`] = `
   >
     Friday November 17 2017, 12:01am, The Times
   </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-  />
 </View>
 `;
 
@@ -903,6 +857,7 @@ exports[`Article Summary test on ios renders an article-summary component with n
 =======
 exports[`renders an article-summary component with no label 1`] = `
 <View>
+<<<<<<< HEAD:packages/article-summary/__tests__/ios/__snapshots__/article-summary.ios.test.js.snap
   <View
     style={
       Object {
@@ -911,6 +866,8 @@ exports[`renders an article-summary component with no label 1`] = `
     }
   />
 >>>>>>> fix: Updating the visual styling required for making everything look as it previously did cross platform:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
+=======
+>>>>>>> fix: Added turnery operators to avoid showing empty containers in the snapshots:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
   <Text
     accessible={true}
     allowFontScaling={true}

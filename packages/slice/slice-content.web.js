@@ -40,19 +40,22 @@ const SliceContent = ({ item }) => {
     showImage: true
   };
 
+  const Label = label ? () => <ArticleLabel title={label} color="#333333" /> : null;
+  const Byline = byline ? () => <ArticleByline ast={byline} /> : null;
+
   return (
     <Link url={url} onPress={onPress}>
       <View style={styles.cardContainer}>
         <Card {...cardProps} image={imageUri ? { uri: imageUri } : null}>
           <ArticleSummary
-            Byline={() => <ArticleByline ast={byline} />}
+            Byline={Byline}
             DatePublication={() => <DatePublication date={publishedTime} />}
             Headline={() => (
               <ResponsiveHeadline>
                 <ArticleSummaryHeadline headline={headline} />
               </ResponsiveHeadline>
             )}
-            Label={() => <ArticleLabel title={label} color="#333333" />}
+            Label={Label}
             summaryText={() => renderAst(summary)}
           />
         </Card>
