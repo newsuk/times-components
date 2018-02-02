@@ -250,6 +250,7 @@ exports[`Slice test on android Related articles renders single article 1`] = `
                       "fontSize": 22,
                       "lineHeight": 22,
                     },
+                    Object {},
                   ]
                 }
               >
@@ -600,6 +601,7 @@ exports[`Slice test on android Related articles renders single article with no b
                       "fontSize": 22,
                       "lineHeight": 22,
                     },
+                    Object {},
                   ]
                 }
               >
@@ -921,6 +923,7 @@ exports[`Slice test on android Related articles renders single article with no l
                       "fontSize": 22,
                       "lineHeight": 22,
                     },
+                    Object {},
                   ]
                 }
               >
@@ -1118,6 +1121,7 @@ exports[`Slice test on android Related articles renders single article with no l
                       "fontSize": 22,
                       "lineHeight": 22,
                     },
+                    Object {},
                   ]
                 }
               >
