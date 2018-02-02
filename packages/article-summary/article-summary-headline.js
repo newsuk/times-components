@@ -19,3 +19,4 @@ ArticleSummaryHeadline.defaultProps = {
 };
 
 export default ArticleSummaryHeadline;
+
