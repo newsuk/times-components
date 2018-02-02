@@ -4,18 +4,9 @@ exports[`Article Summary test on ios renders an article-summary component with a
 <View>
   <View
     style={
-      Array [
-        Object {
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "lineHeight": 12,
-        },
-        Object {
-          "color": "#333333",
-        },
-      ]
+      Object {
+        "marginBottom": 0,
+      }
     }
   >
     <Text
@@ -155,18 +146,9 @@ exports[`Article Summary test on ios renders an article-summary component with c
 <View>
   <View
     style={
-      Array [
-        Object {
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "lineHeight": 12,
-        },
-        Object {
-          "color": "#333333",
-        },
-      ]
+      Object {
+        "marginBottom": 0,
+      }
     }
   >
     <Text
@@ -380,18 +362,9 @@ exports[`Article Summary test on ios renders an article-summary component with e
 <View>
   <View
     style={
-      Array [
-        Object {
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "lineHeight": 12,
-        },
-        Object {
-          "color": "#333333",
-        },
-      ]
+      Object {
+        "marginBottom": 0,
+      }
     }
   >
     <Text
@@ -546,18 +519,9 @@ exports[`Article Summary test on ios renders an article-summary component with h
 <View>
   <View
     style={
-      Array [
-        Object {
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "lineHeight": 12,
-        },
-        Object {
-          "color": "#333333",
-        },
-      ]
+      Object {
+        "marginBottom": 0,
+      }
     }
   >
     <Text
@@ -656,6 +620,13 @@ exports[`Article Summary test on ios renders an article-summary component with h
 
 exports[`Article Summary test on ios renders an article-summary component with multiple paragraphs 1`] = `
 <View>
+  <View
+    style={
+      Object {
+        "marginBottom": 0,
+      }
+    }
+  />
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -777,6 +748,13 @@ exports[`Article Summary test on ios renders an article-summary component with m
 
 exports[`Article Summary test on ios renders an article-summary component with no byline 1`] = `
 <View>
+  <View
+    style={
+      Object {
+        "marginBottom": 0,
+      }
+    }
+  />
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -861,6 +839,13 @@ exports[`Article Summary test on ios renders an article-summary component with n
 
 exports[`Article Summary test on ios renders an article-summary component with no label 1`] = `
 <View>
+  <View
+    style={
+      Object {
+        "marginBottom": 0,
+      }
+    }
+  />
   <Text
     accessible={true}
     allowFontScaling={true}

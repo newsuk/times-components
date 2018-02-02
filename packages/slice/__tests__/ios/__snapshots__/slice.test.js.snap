@@ -180,23 +180,11 @@ exports[`Slice test on ios Related articles renders single article 1`] = `
           </View>
           <View>
             <View>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "fontWeight": "400",
-                      "letterSpacing": 1.2,
-                      "lineHeight": 12,
-                    },
-                    Object {
-                      "color": "#333333",
-                    },
-                  ]
+                  Object {
+                    "marginBottom": 0,
+                  }
                 }
               >
                 <Text
@@ -233,7 +221,10 @@ exports[`Slice test on ios Related articles renders single article 1`] = `
                       "fontWeight": "400",
                       "marginBottom": 5,
                     },
-                    Object {},
+                    Object {
+                      "fontSize": 22,
+                      "lineHeight": 22,
+                    },
                     Object {},
                   ]
                 }
@@ -515,23 +506,11 @@ exports[`Slice test on ios Related articles renders single article with no bylin
           </View>
           <View>
             <View>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "fontWeight": "400",
-                      "letterSpacing": 1.2,
-                      "lineHeight": 12,
-                    },
-                    Object {
-                      "color": "#333333",
-                    },
-                  ]
+                  Object {
+                    "marginBottom": 0,
+                  }
                 }
               >
                 <Text
@@ -568,7 +547,10 @@ exports[`Slice test on ios Related articles renders single article with no bylin
                       "fontWeight": "400",
                       "marginBottom": 5,
                     },
-                    Object {},
+                    Object {
+                      "fontSize": 22,
+                      "lineHeight": 22,
+                    },
                     Object {},
                   ]
                 }
@@ -821,23 +803,11 @@ exports[`Slice test on ios Related articles renders single article with no label
           </View>
           <View>
             <View>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "fontWeight": "400",
-                      "letterSpacing": 1.2,
-                      "lineHeight": 12,
-                    },
-                    Object {
-                      "color": "#333333",
-                    },
-                  ]
+                  Object {
+                    "marginBottom": 0,
+                  }
                 }
               >
 
@@ -854,7 +824,10 @@ exports[`Slice test on ios Related articles renders single article with no label
                       "fontWeight": "400",
                       "marginBottom": 5,
                     },
-                    Object {},
+                    Object {
+                      "fontSize": 22,
+                      "lineHeight": 22,
+                    },
                     Object {},
                   ]
                 }
@@ -1016,23 +989,11 @@ exports[`Slice test on ios Related articles renders single article with no lead 
         >
           <View>
             <View>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "fontWeight": "400",
-                      "letterSpacing": 1.2,
-                      "lineHeight": 12,
-                    },
-                    Object {
-                      "color": "#333333",
-                    },
-                  ]
+                  Object {
+                    "marginBottom": 0,
+                  }
                 }
               >
                 <Text
@@ -1069,7 +1030,10 @@ exports[`Slice test on ios Related articles renders single article with no lead 
                       "fontWeight": "400",
                       "marginBottom": 5,
                     },
-                    Object {},
+                    Object {
+                      "fontSize": 22,
+                      "lineHeight": 22,
+                    },
                     Object {},
                   ]
                 }
