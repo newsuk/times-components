@@ -1,4 +1,4 @@
-import { bidders, sizes } from "./config";
+import sizes from "./sizes";
 
 // Given all the valid ad sizes returns the maximum height possible
 // for the element
@@ -45,60 +45,12 @@ const getSlotConfig = (section, code, width) => {
   const adSizes = getAdSizes(code, width);
   const mappings = getSizeMaps(code);
   const maxSizes = getMaxSizes(adSizes);
-  const bids = [
-    {
-      bidder: "appnexus",
-      params: {
-        placementId: bidders.appnexus.placementId,
-        section
-      }
-    },
-    {
-      bidder: "rubicon",
-      params: {
-        accountId: bidders.rubicon.accountId,
-        siteId: bidders.rubicon.siteId,
-        zoneId: bidders.rubicon.zoneId,
-        inventory: { section }
-      }
-    },
-    {
-      bidder: "indexExchange",
-      params: {
-        id: code,
-        siteID: bidders.indexExchange.siteId
-      }
-    }
-  ];
-
-  adSizes.forEach(size => {
-    bids.push({
-      bidder: "pubmatic",
-      params: {
-        publisherId: bidders.pubmatic.accountId,
-        adSlot: `${bidders.pubmatic.adSlotPrefix}@${size.join("x")}`,
-        section
-      }
-    });
-
-    // Criteo
-    const zoneId = bidders.criteo.zoneMap[size.join("x")] || "";
-    if (zoneId) {
-      bids.push({
-        bidder: "criteo",
-        params: {
-          zoneId
-        }
-      });
-    }
-  });
 
   return {
     code,
     sizes: adSizes,
     maxSizes,
-    mappings,
-    bids
+    mappings
   };
 };
 

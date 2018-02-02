@@ -47,7 +47,13 @@ const defaultRenderers = {
   },
   ad(key) {
     return (
-      <Ad key={key} code="intervention" section="article" style={styles.ad} />
+      <Ad
+        key={key}
+        code="intervention"
+        pos="ad-header"
+        section="article"
+        style={styles.ad}
+      />
     );
   },
   break(key) {

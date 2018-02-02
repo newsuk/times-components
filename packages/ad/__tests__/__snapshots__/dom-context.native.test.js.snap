@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DOMContext Native renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "height": undefined,
+      "width": undefined,
+    }
+  }
+>
+  <WebView
+    injectedJavaScript="window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
+    onMessage={[Function]}
+    onNavigationStateChange={[Function]}
+    source={
+      Object {
+        "baseUrl": undefined,
+        "html": "
+      <html>
+        <head>
+        <meta name=\\"viewport\\" content=\\"width=undefined,height=undefined,initial-scale=1,user-scalable=no\\">
+        <style>
+          html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+          }
+        </style>
+        </head>
+        <body>
+          <div></div>
+          <script>
+            (mockErrorHandler)(window);
+          </script>
+          <script>
+            (mockHarness)({
+              el: document.getElementsByTagName(\\"div\\")[0],
+              window: window,
+              document: document,
+              eventCallback: eventCallback,
+              init: function init() {},
+              data: {\\"foo\\":\\"bar\\"},
+              scriptUris: [],
+              globalNames: []
+            }).execute();
+          </script>
+        </body>
+      </html>
+    ",
+      }
+    }
+    style={
+      Object {
+        "backgroundColor": "transparent",
+      }
+    }
+  />
+</View>
+`;

@@ -16,6 +16,9 @@ const bio = require("../fixtures/bio.json");
 const script = require("../fixtures/script.json");
 const image = require("../fixtures/image.json");
 
+// don't render ad internals
+jest.mock("@times-components/ad", () => "Ad");
+
 export default (
   renderTree,
   renderTrees,
