@@ -6,14 +6,6 @@ import renderer from "./article-summary-renderer";
 import ArticleSummaryHeadline from "./article-summary-headline";
 
 const styles = {
-  container: {},
-  label: {
-    color: "#333333",
-    fontFamily: "GillSansMTStd-Medium",
-    fontSize: 12,
-    marginBottom: 2,
-    letterSpacing: 1
-  },
   text: {
     color: "#696969",
     fontSize: 14,
@@ -35,7 +27,7 @@ const ArticleSummary = props => {
   const { Label, Headline, textAst, DatePublication, Byline } = props;
 
   return (
-    <View style={styles.container}>
+    <View>
       <Label />
       <Headline />
       <Text style={styles.text}>{textAst()}</Text>
