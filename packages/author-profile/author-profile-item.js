@@ -12,8 +12,6 @@ import ArticleSummary, {
   renderAst
 } from "@times-components/article-summary";
 
-const renderAst = ast => renderTrees(summarise(ast), renderer);
-
 const styles = StyleSheet.create({
   container: {
     paddingBottom: 15,

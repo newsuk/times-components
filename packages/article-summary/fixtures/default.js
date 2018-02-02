@@ -2,8 +2,7 @@ import React from "react";
 import ArticleLabel from "@times-components/article-label";
 import ArticleByline from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
-import { renderTrees } from "@times-components/markup";
-import { ArticleSummaryHeadline, renderer, summarise } from "../";
+import { ArticleSummaryHeadline, renderAst } from "../";
 
 export default {
   Label: () => <ArticleLabel title="Camilla Long" color="#333333" />,
@@ -48,23 +47,20 @@ export default {
     />
   ),
   summaryText: () =>
-    renderTrees(
-      summarise([
-        {
-          name: "paragraph",
-          attributes: {},
-          children: [
-            {
-              name: "text",
-              attributes: {
-                value:
-                  "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear."
-              },
-              children: []
-            }
-          ]
-        }
-      ]),
-      renderer
-    )
+    renderAst([
+      {
+        name: "paragraph",
+        attributes: {},
+        children: [
+          {
+            name: "text",
+            attributes: {
+              value:
+                "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear."
+            },
+            children: []
+          }
+        ]
+      }
+    ])
 };

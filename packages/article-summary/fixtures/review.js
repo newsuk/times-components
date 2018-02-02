@@ -2,8 +2,7 @@ import React from "react";
 import ArticleLabel from "@times-components/article-label";
 import ArticleByline from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
-import { renderTrees } from "@times-components/markup";
-import { ArticleSummaryHeadline, renderer, summarise } from "../";
+import { ArticleSummaryHeadline, renderAst } from "../";
 
 export default {
   Label: () => <ArticleLabel title="Camilla Long" color="#333333" />,
@@ -51,109 +50,106 @@ export default {
     />
   ),
   summaryText: () =>
-    renderTrees(
-      summarise([
-        {
-          name: "paragraph",
-          attributes: {},
-          children: [
-            {
-              name: "bold",
-              attributes: {},
-              children: [
-                {
-                  name: "text",
-                  attributes: {
-                    value: "Victoria"
-                  },
-                  children: []
-                }
-              ]
+    renderAst([
+      {
+        name: "paragraph",
+        attributes: {},
+        children: [
+          {
+            name: "bold",
+            attributes: {},
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value: "Victoria"
+                },
+                children: []
+              }
+            ]
+          },
+          {
+            name: "break",
+            attributes: {},
+            children: []
+          },
+          {
+            name: "text",
+            attributes: {
+              value: " ITV"
             },
-            {
-              name: "break",
-              attributes: {},
-              children: []
+            children: []
+          },
+          {
+            name: "break",
+            attributes: {},
+            children: []
+          },
+          {
+            name: "text",
+            attributes: {
+              value: "★★★★☆"
             },
-            {
-              name: "text",
-              attributes: {
-                value: " ITV"
-              },
-              children: []
+            children: []
+          }
+        ]
+      },
+      {
+        name: "paragraph",
+        attributes: {},
+        children: [
+          {
+            name: "bold",
+            attributes: {},
+            children: [
+              {
+                name: "text",
+                attributes: {
+                  value: "Lucy Worsley’s Nights at the Opera"
+                },
+                children: []
+              }
+            ]
+          },
+          {
+            name: "break",
+            attributes: {},
+            children: []
+          },
+          {
+            name: "text",
+            attributes: {
+              value: " BBC Two"
             },
-            {
-              name: "break",
-              attributes: {},
-              children: []
+            children: []
+          },
+          {
+            name: "break",
+            attributes: {},
+            children: []
+          },
+          {
+            name: "text",
+            attributes: {
+              value: "★★★☆☆"
             },
-            {
-              name: "text",
-              attributes: {
-                value: "★★★★☆"
-              },
-              children: []
-            }
-          ]
-        },
-        {
-          name: "paragraph",
-          attributes: {},
-          children: [
-            {
-              name: "bold",
-              attributes: {},
-              children: [
-                {
-                  name: "text",
-                  attributes: {
-                    value: "Lucy Worsley’s Nights at the Opera"
-                  },
-                  children: []
-                }
-              ]
+            children: []
+          }
+        ]
+      },
+      {
+        name: "paragraph",
+        attributes: {},
+        children: [
+          {
+            name: "text",
+            attributes: {
+              value:
+                "Poor old Harriet, Duchess of Sutherland. There she was giddily expecting a"
             },
-            {
-              name: "break",
-              attributes: {},
-              children: []
-            },
-            {
-              name: "text",
-              attributes: {
-                value: " BBC Two"
-              },
-              children: []
-            },
-            {
-              name: "break",
-              attributes: {},
-              children: []
-            },
-            {
-              name: "text",
-              attributes: {
-                value: "★★★☆☆"
-              },
-              children: []
-            }
-          ]
-        },
-        {
-          name: "paragraph",
-          attributes: {},
-          children: [
-            {
-              name: "text",
-              attributes: {
-                value:
-                  "Poor old Harriet, Duchess of Sutherland. There she was giddily expecting a"
-              },
-              children: []
-            }
-          ]
-        }
-      ]),
-      renderer
-    )
+            children: []
+          }
+        ]
+      }
+    ])
 };
