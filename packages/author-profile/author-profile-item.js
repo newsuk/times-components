@@ -75,7 +75,7 @@ const AuthorProfileItem = item => {
               label ? <ArticleLabel title={label} color="#333333" /> : null
             }
             Headline={() => <ArticleSummaryHeadline headline={headline} />}
-            textAst={() => renderAst(summaryText)}
+            summaryText={() => renderAst(summaryText)}
             DatePublication={() => (
               <DatePublication
                 date={publishedTime}

@@ -45,7 +45,7 @@ export default {
       ]}
     />
   ),
-  textAst: () =>
+  summaryText: () =>
     renderTrees(
       summarise([
         {
