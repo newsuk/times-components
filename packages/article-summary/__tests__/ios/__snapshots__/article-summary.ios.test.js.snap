@@ -41,6 +41,7 @@ exports[`Article Summary test on ios renders an article-summary component with a
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
       ]
     }
   >
@@ -176,6 +177,7 @@ exports[`Article Summary test on ios renders an article-summary component with c
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
       ]
     }
   >
@@ -385,6 +387,7 @@ exports[`Article Summary test on ios renders an article-summary component with e
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
       ]
     }
   >
@@ -535,6 +538,7 @@ exports[`Article Summary test on ios renders an article-summary component with h
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
       ]
     }
   >
@@ -610,6 +614,7 @@ exports[`Article Summary test on ios renders an article-summary component with m
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
       ]
     }
   >
@@ -732,6 +737,7 @@ exports[`Article Summary test on ios renders an article-summary component with n
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
       ]
     }
   >
@@ -817,6 +823,7 @@ exports[`Article Summary test on ios renders an article-summary component with n
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
       ]
     }
   >
