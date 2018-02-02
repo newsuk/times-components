@@ -56,8 +56,9 @@ const AuthorProfileItem = item => {
 
   const summaryText = showImage ? summary : shortSummary;
   const Label = label
-    ? () => <ArticleLabel title={label} color="#333333" />
+    ? <ArticleLabel title={label} color="#333333" />
     : null;
+
 
   return (
     <Link url={url} onPress={onPress}>
@@ -69,9 +70,7 @@ const AuthorProfileItem = item => {
           showImage={showImage}
         >
           <ArticleSummary
-            Label={() =>
-              label ? <ArticleLabel title={label} color="#333333" /> : null
-            }
+            Label={() => Label}
             Headline={() => <ArticleSummaryHeadline headline={headline} />}
             summaryText={() => renderAst(summaryText)}
             DatePublication={() => (
