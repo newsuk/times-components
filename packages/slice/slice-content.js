@@ -5,7 +5,15 @@ import { StyleSheet, View } from "react-native";
 import { treePropType } from "@times-components/markup";
 import Card from "@times-components/card";
 import Link from "@times-components/link";
-import ArticleSummary from "@times-components/article-summary";
+import ArticleSummary, {
+  ArticleSummaryHeadline,
+  renderAst
+} from "@times-components/article-summary";
+
+import ArticleLabel from "@times-components/article-label";
+import ArticleByline from "@times-components/article-byline";
+import DatePublication from "@times-components/date-publication";
+
 import SharedStyles from "./styles/shared";
 
 const styles = StyleSheet.create(SharedStyles);
@@ -39,14 +47,16 @@ const SliceContent = ({ item }) => {
       <View style={styles.cardContainer}>
         <Card {...cardProps} image={imageUri ? { uri: imageUri } : null}>
           <ArticleSummary
-            byline={byline}
-            date={publishedTime}
-            headline={headline}
-            hasResponsiveHeadline
-            label={label}
-            publication={publicationName}
-            showPublication={false}
-            text={summary}
+            Byline={() => <ArticleByline ast={byline} />}
+            DatePublication={() => (
+              <DatePublication
+                date={publishedTime}
+                publication={publicationName}
+              />
+            )}
+            Headline={() => <ArticleSummaryHeadline headline={headline} />}
+            Label={() => <ArticleLabel title={label} color="#333333" />}
+            summaryText={() => renderAst(summary)}
           />
         </Card>
       </View>

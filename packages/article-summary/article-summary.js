@@ -1,6 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
+import { renderTrees } from "@times-components/markup";
 import summarise from "./summarise";
 import renderer from "./article-summary-renderer";
 import ArticleSummaryHeadline from "./article-summary-headline";
@@ -22,6 +23,10 @@ const styles = {
     marginBottom: 5
   }
 };
+
+function renderAst(ast) {
+  return renderTrees(summarise(ast), renderer);
+}
 
 const ArticleSummary = props => {
   const { Label, Headline, summaryText, DatePublication, Byline } = props;
@@ -61,6 +66,6 @@ ArticleSummary.defaultProps = {
   Byline: () => null
 };
 
-export { summarise, renderer, ArticleSummaryHeadline };
+export { renderAst, summarise, renderer, ArticleSummaryHeadline };
 
 export default ArticleSummary;
