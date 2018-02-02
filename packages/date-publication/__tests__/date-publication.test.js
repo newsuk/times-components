@@ -27,7 +27,7 @@ function gmtTests(userTimezone) {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders a DatePublication component with a relevant GMT date", () => {
+  it("renders a DatePublication component with an appropriate GMT date", () => {
     const tree = renderer
       .create(
         <DatePublication date="2017-01-01T14:32:00.000Z" publication="TIMES" />
@@ -36,7 +36,7 @@ function gmtTests(userTimezone) {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders a DatePublication component with a relevant BST date", () => {
+  it("renders a DatePublication component with an appropriate BST date", () => {
     const tree = renderer
       .create(
         <DatePublication date="2017-07-01T14:32:00.000Z" publication="TIMES" />
