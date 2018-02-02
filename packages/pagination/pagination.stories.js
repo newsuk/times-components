@@ -63,7 +63,7 @@ storiesOf("Pagination", module)
   .add("Tracking", () => {
     const pageHandler = e => e.preventDefault();
     const PaginationWithTrackingContext = withTrackingContext(Pagination, {
-      trackingObject: "Story"
+      trackingObjectName: "Story"
     });
     return (
       <PaginationWithTrackingContext
