@@ -211,29 +211,37 @@ exports[`Slice test on android Related articles renders single article 1`] = `
           </View>
           <View>
             <View>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "fontWeight": "400",
-                      "letterSpacing": 1.2,
-                      "lineHeight": 12,
-                      "marginBottom": -4,
-                      "paddingTop": 5,
-                    },
-                    Object {
-                      "color": "#333333",
-                    },
-                  ]
+                  Object {
+                    "marginBottom": 5,
+                  }
                 }
               >
-                B A Y E U X   T A P E S T R Y
-              </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 12,
+                        "fontWeight": "400",
+                        "letterSpacing": 1.2,
+                        "lineHeight": 12,
+                        "marginBottom": -4,
+                        "paddingTop": 5,
+                      },
+                      Object {
+                        "color": "#333333",
+                      },
+                    ]
+                  }
+                >
+                  B A Y E U X   T A P E S T R Y
+                </Text>
+              </View>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -246,7 +254,10 @@ exports[`Slice test on android Related articles renders single article 1`] = `
                       "fontWeight": "400",
                       "marginBottom": 5,
                     },
-                    Object {},
+                    Object {
+                      "fontSize": 22,
+                      "lineHeight": 22,
+                    },
                     Object {},
                   ]
                 }
@@ -559,29 +570,37 @@ exports[`Slice test on android Related articles renders single article with no b
           </View>
           <View>
             <View>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "fontWeight": "400",
-                      "letterSpacing": 1.2,
-                      "lineHeight": 12,
-                      "marginBottom": -4,
-                      "paddingTop": 5,
-                    },
-                    Object {
-                      "color": "#333333",
-                    },
-                  ]
+                  Object {
+                    "marginBottom": 5,
+                  }
                 }
               >
-                B A Y E U X   T A P E S T R Y
-              </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 12,
+                        "fontWeight": "400",
+                        "letterSpacing": 1.2,
+                        "lineHeight": 12,
+                        "marginBottom": -4,
+                        "paddingTop": 5,
+                      },
+                      Object {
+                        "color": "#333333",
+                      },
+                    ]
+                  }
+                >
+                  B A Y E U X   T A P E S T R Y
+                </Text>
+              </View>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -594,7 +613,10 @@ exports[`Slice test on android Related articles renders single article with no b
                       "fontWeight": "400",
                       "marginBottom": 5,
                     },
-                    Object {},
+                    Object {
+                      "fontSize": 22,
+                      "lineHeight": 22,
+                    },
                     Object {},
                   ]
                 }
@@ -878,29 +900,37 @@ exports[`Slice test on android Related articles renders single article with no l
           </View>
           <View>
             <View>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "fontWeight": "400",
-                      "letterSpacing": 1.2,
-                      "lineHeight": 12,
-                      "marginBottom": -4,
-                      "paddingTop": 5,
-                    },
-                    Object {
-                      "color": "#333333",
-                    },
-                  ]
+                  Object {
+                    "marginBottom": 5,
+                  }
                 }
               >
-                
-              </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 12,
+                        "fontWeight": "400",
+                        "letterSpacing": 1.2,
+                        "lineHeight": 12,
+                        "marginBottom": -4,
+                        "paddingTop": 5,
+                      },
+                      Object {
+                        "color": "#333333",
+                      },
+                    ]
+                  }
+                >
+                  
+                </Text>
+              </View>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -913,7 +943,10 @@ exports[`Slice test on android Related articles renders single article with no l
                       "fontWeight": "400",
                       "marginBottom": 5,
                     },
-                    Object {},
+                    Object {
+                      "fontSize": 22,
+                      "lineHeight": 22,
+                    },
                     Object {},
                   ]
                 }
@@ -1073,29 +1106,37 @@ exports[`Slice test on android Related articles renders single article with no l
         >
           <View>
             <View>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 12,
-                      "fontWeight": "400",
-                      "letterSpacing": 1.2,
-                      "lineHeight": 12,
-                      "marginBottom": -4,
-                      "paddingTop": 5,
-                    },
-                    Object {
-                      "color": "#333333",
-                    },
-                  ]
+                  Object {
+                    "marginBottom": 5,
+                  }
                 }
               >
-                B A Y E U X   T A P E S T R Y
-              </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 12,
+                        "fontWeight": "400",
+                        "letterSpacing": 1.2,
+                        "lineHeight": 12,
+                        "marginBottom": -4,
+                        "paddingTop": 5,
+                      },
+                      Object {
+                        "color": "#333333",
+                      },
+                    ]
+                  }
+                >
+                  B A Y E U X   T A P E S T R Y
+                </Text>
+              </View>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -1108,7 +1149,10 @@ exports[`Slice test on android Related articles renders single article with no l
                       "fontWeight": "400",
                       "marginBottom": 5,
                     },
-                    Object {},
+                    Object {
+                      "fontSize": 22,
+                      "lineHeight": 22,
+                    },
                     Object {},
                   ]
                 }

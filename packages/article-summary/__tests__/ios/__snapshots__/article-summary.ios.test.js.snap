@@ -1,5 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+<<<<<<< HEAD:packages/article-summary/__tests__/ios/__snapshots__/article-summary.ios.test.js.snap
 exports[`Article Summary test on ios renders an article-summary component with a single paragraph 1`] = `
 <View
   style={Object {}}
@@ -8,23 +9,39 @@ exports[`Article Summary test on ios renders an article-summary component with a
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+=======
+exports[`renders an article-summary component with a single paragraph 1`] = `
+<View>
+  <View
+>>>>>>> fix: Updating the visual styling required for making everything look as it previously did cross platform:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
     style={
-      Array [
-        Object {
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "lineHeight": 12,
-        },
-        Object {
-          "color": "#333333",
-        },
-      ]
+      Object {
+        "marginBottom": 0,
+      }
     }
   >
-    CAMILLA LONG
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 12,
+          },
+          Object {
+            "color": "#333333",
+          },
+        ]
+      }
+    >
+      CAMILLA LONG
+    </Text>
+  </View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -136,6 +153,7 @@ exports[`Article Summary test on ios renders an article-summary component with a
 </View>
 `;
 
+<<<<<<< HEAD:packages/article-summary/__tests__/ios/__snapshots__/article-summary.ios.test.js.snap
 exports[`Article Summary test on ios renders an article-summary component with content including line breaks 1`] = `
 <View
   style={Object {}}
@@ -144,23 +162,39 @@ exports[`Article Summary test on ios renders an article-summary component with c
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+=======
+exports[`renders an article-summary component with content including line breaks 1`] = `
+<View>
+  <View
+>>>>>>> fix: Updating the visual styling required for making everything look as it previously did cross platform:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
     style={
-      Array [
-        Object {
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "lineHeight": 12,
-        },
-        Object {
-          "color": "#333333",
-        },
-      ]
+      Object {
+        "marginBottom": 0,
+      }
     }
   >
-    CAMILLA LONG
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 12,
+          },
+          Object {
+            "color": "#333333",
+          },
+        ]
+      }
+    >
+      CAMILLA LONG
+    </Text>
+  </View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -346,6 +380,7 @@ exports[`Article Summary test on ios renders an article-summary component with c
 </View>
 `;
 
+<<<<<<< HEAD:packages/article-summary/__tests__/ios/__snapshots__/article-summary.ios.test.js.snap
 exports[`Article Summary test on ios renders an article-summary component with empty content at the end trimmed 1`] = `
 <View
   style={Object {}}
@@ -354,23 +389,39 @@ exports[`Article Summary test on ios renders an article-summary component with e
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+=======
+exports[`renders an article-summary component with empty content at the end trimmed 1`] = `
+<View>
+  <View
+>>>>>>> fix: Updating the visual styling required for making everything look as it previously did cross platform:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
     style={
-      Array [
-        Object {
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "lineHeight": 12,
-        },
-        Object {
-          "color": "#333333",
-        },
-      ]
+      Object {
+        "marginBottom": 0,
+      }
     }
   >
-    CAMILLA LONG
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 12,
+          },
+          Object {
+            "color": "#333333",
+          },
+        ]
+      }
+    >
+      CAMILLA LONG
+    </Text>
+  </View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -497,6 +548,7 @@ exports[`Article Summary test on ios renders an article-summary component with e
 </View>
 `;
 
+<<<<<<< HEAD:packages/article-summary/__tests__/ios/__snapshots__/article-summary.ios.test.js.snap
 exports[`Article Summary test on ios renders an article-summary component with headline and no content 1`] = `
 <View
   style={Object {}}
@@ -505,23 +557,39 @@ exports[`Article Summary test on ios renders an article-summary component with h
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+=======
+exports[`renders an article-summary component with headline and no content 1`] = `
+<View>
+  <View
+>>>>>>> fix: Updating the visual styling required for making everything look as it previously did cross platform:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
     style={
-      Array [
-        Object {
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "lineHeight": 12,
-        },
-        Object {
-          "color": "#333333",
-        },
-      ]
+      Object {
+        "marginBottom": 0,
+      }
     }
   >
-    CAMILLA LONG
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 12,
+          },
+          Object {
+            "color": "#333333",
+          },
+        ]
+      }
+    >
+      CAMILLA LONG
+    </Text>
+  </View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -594,10 +662,22 @@ exports[`Article Summary test on ios renders an article-summary component with h
 </View>
 `;
 
+<<<<<<< HEAD:packages/article-summary/__tests__/ios/__snapshots__/article-summary.ios.test.js.snap
 exports[`Article Summary test on ios renders an article-summary component with multiple paragraphs 1`] = `
 <View
   style={Object {}}
 >
+=======
+exports[`renders an article-summary component with multiple paragraphs 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "marginBottom": 0,
+      }
+    }
+  />
+>>>>>>> fix: Updating the visual styling required for making everything look as it previously did cross platform:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -717,10 +797,22 @@ exports[`Article Summary test on ios renders an article-summary component with m
 </View>
 `;
 
+<<<<<<< HEAD:packages/article-summary/__tests__/ios/__snapshots__/article-summary.ios.test.js.snap
 exports[`Article Summary test on ios renders an article-summary component with no byline 1`] = `
 <View
   style={Object {}}
 >
+=======
+exports[`renders an article-summary component with no byline 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "marginBottom": 0,
+      }
+    }
+  />
+>>>>>>> fix: Updating the visual styling required for making everything look as it previously did cross platform:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -803,10 +895,22 @@ exports[`Article Summary test on ios renders an article-summary component with n
 </View>
 `;
 
+<<<<<<< HEAD:packages/article-summary/__tests__/ios/__snapshots__/article-summary.ios.test.js.snap
 exports[`Article Summary test on ios renders an article-summary component with no label 1`] = `
 <View
   style={Object {}}
 >
+=======
+exports[`renders an article-summary component with no label 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "marginBottom": 0,
+      }
+    }
+  />
+>>>>>>> fix: Updating the visual styling required for making everything look as it previously did cross platform:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
   <Text
     accessible={true}
     allowFontScaling={true}

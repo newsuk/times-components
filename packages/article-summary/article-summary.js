@@ -5,24 +5,7 @@ import { renderTrees } from "@times-components/markup";
 import summarise from "./summarise";
 import renderer from "./article-summary-renderer";
 import ArticleSummaryHeadline from "./article-summary-headline";
-
-const styles = {
-  text: {
-    color: "#696969",
-    fontSize: 14,
-    fontFamily: "TimesDigitalW04",
-    lineHeight: 20,
-    marginBottom: 10,
-    flexWrap: "wrap"
-  },
-  metaText: {
-    color: "#696969",
-    fontSize: 13,
-    lineHeight: 15,
-    fontFamily: "GillSansMTStd-Medium",
-    marginBottom: 5
-  }
-};
+import styles from "./styles";
 
 function renderAst(ast) {
   return renderTrees(summarise(ast), renderer);
@@ -33,7 +16,9 @@ const ArticleSummary = props => {
 
   return (
     <View>
-      <Label />
+      <View style={styles.labelWrapper}>
+        <Label />
+      </View>
       <Headline />
       <Text style={styles.text}>{summaryText()}</Text>
       <Text
