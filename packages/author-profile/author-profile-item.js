@@ -56,9 +56,8 @@ const AuthorProfileItem = item => {
 
   const summaryText = showImage ? summary : shortSummary;
   const Label = label
-    ? <ArticleLabel title={label} color="#333333" />
+    ? () => <ArticleLabel title={label} color="#333333" />
     : null;
-
 
   return (
     <Link url={url} onPress={onPress}>
