@@ -15,7 +15,7 @@ describe("WithTrackingContext", () => {
     const TestTracking = (props, context) => {
       context.tracking.analytics({
         component: "TestComponent",
-        action: "TestAction",
+        action: "Viewed",
         attrs: {}
       });
       return <WrappedComponent {...props} />;
@@ -34,7 +34,7 @@ describe("WithTrackingContext", () => {
     const WithTrackingAndContext = withTrackingContext(
       withTestTracking(TestComponent),
       {
-        trackingObject: "TestObject",
+        trackingObjectName: "TestObject",
         getAttrs: props => ({ one: props.keyTwo, three: "four" })
       }
     );
@@ -46,7 +46,7 @@ describe("WithTrackingContext", () => {
 
     expect(reporter).toHaveBeenCalledWith(
       expect.objectContaining({
-        action: "TestAction",
+        action: "Viewed",
         attrs: expect.objectContaining({ one: "two", three: "four" })
       })
     );
@@ -57,7 +57,7 @@ describe("WithTrackingContext", () => {
       withTrackingContext(withTestTracking(TestComponent), {
         getAttrs: () => ({ one: "three" })
       }),
-      { trackingObject: "TestObject", getAttrs: () => ({ one: "two" }) }
+      { trackingObjectName: "TestObject", getAttrs: () => ({ one: "two" }) }
     );
     const reporter = jest.fn();
 
@@ -65,7 +65,7 @@ describe("WithTrackingContext", () => {
 
     expect(reporter).toHaveBeenCalledWith(
       expect.objectContaining({
-        action: "TestAction",
+        action: "Viewed",
         attrs: expect.objectContaining({ one: "three" })
       })
     );
@@ -75,7 +75,7 @@ describe("WithTrackingContext", () => {
     const WithTrackingAndContext = withTrackingContext(
       withTestTracking(TestComponent),
       {
-        trackingObject: "TestObject"
+        trackingObjectName: "TestObject"
       }
     );
     const reporter = jest.fn();
@@ -85,7 +85,7 @@ describe("WithTrackingContext", () => {
     expect(reporter).toHaveBeenCalledWith(
       expect.objectContaining({
         object: "TestObject",
-        action: "TestAction"
+        action: "Viewed"
       })
     );
   });
@@ -93,9 +93,9 @@ describe("WithTrackingContext", () => {
   it("allows object to be overriden by descendant tracking context", () => {
     const WithTrackingAndContext = withTrackingContext(
       withTrackingContext(withTestTracking(TestComponent), {
-        trackingObject: "TestObject2"
+        trackingObjectName: "TestObject2"
       }),
-      { trackingObject: "TestObject" }
+      { trackingObjectName: "TestObject" }
     );
     const reporter = jest.fn();
 
@@ -104,7 +104,7 @@ describe("WithTrackingContext", () => {
     expect(reporter).toHaveBeenCalledWith(
       expect.objectContaining({
         object: "TestObject2",
-        action: "TestAction"
+        action: "Viewed"
       })
     );
   });
@@ -112,7 +112,7 @@ describe("WithTrackingContext", () => {
   it("raises error when tracking object not supplied to top-level context", () => {
     const WithTrackingAndContext = withTrackingContext(
       withTrackingContext(withTestTracking(TestComponent), {
-        trackingObject: "TestObject2"
+        trackingObjectName: "TestObject2"
       })
     );
 
@@ -124,7 +124,7 @@ describe("WithTrackingContext", () => {
 
   it("root context tracks page views", () => {
     const WithTrackingAndContext = withTrackingContext(TestComponent, {
-      trackingObject: "AuthorProfile"
+      trackingObjectName: "AuthorProfile"
     });
     const reporter = jest.fn();
 
@@ -141,7 +141,7 @@ describe("WithTrackingContext", () => {
 
   it("tracks page views when data is ready", () => {
     const WithTrackingAndContext = withTrackingContext(TestComponent, {
-      trackingObject: "AuthorProfile",
+      trackingObjectName: "AuthorProfile",
       isDataReady: () => true
     });
     const reporter = jest.fn();
@@ -159,7 +159,7 @@ describe("WithTrackingContext", () => {
 
   it("doesnt track page views when data is not ready", () => {
     const WithTrackingAndContext = withTrackingContext(TestComponent, {
-      trackingObject: "AuthorProfile",
+      trackingObjectName: "AuthorProfile",
       isDataReady: () => false
     });
     const reporter = jest.fn();
@@ -172,7 +172,7 @@ describe("WithTrackingContext", () => {
   it("only tracks page views when data is ready, with multiple updates", () => {
     let isReady = false;
     const WithTrackingAndContext = withTrackingContext(TestComponent, {
-      trackingObject: "AuthorProfile",
+      trackingObjectName: "AuthorProfile",
       isDataReady: () => isReady
     });
     const reporter = jest.fn();
@@ -191,7 +191,7 @@ describe("WithTrackingContext", () => {
   /* This can occur if the child accidentally unmounts and is remounted */
   it("doesn't fire a second page view event if root element is re-rendered", () => {
     const WithTrackingAndContext = withTrackingContext(TestComponent, {
-      trackingObject: "AuthorProfile"
+      trackingObjectName: "AuthorProfile"
     });
     const reporter = jest.fn();
     const testRenderer = renderer.create(
@@ -203,7 +203,7 @@ describe("WithTrackingContext", () => {
 
   it("applies timestamp to descendant events", () => {
     const WithTrackingAndContext = withTrackingContext(TestComponent, {
-      trackingObject: "TestObject"
+      trackingObjectName: "TestObject"
     });
     const reporter = jest.fn();
     global.Date = jest.fn(() => new RealDate("2017-09-26T15:25:56.206Z"));
@@ -220,7 +220,7 @@ describe("WithTrackingContext", () => {
   it("raises error when analyticsStream not supplied to top-level context", () => {
     const WithTrackingAndContext = withTrackingContext(
       withTestTracking(TestComponent),
-      { trackingObject: "TestObject2" }
+      { trackingObjectName: "TestObject2" }
     );
 
     const render = () => renderer.create(<WithTrackingAndContext />);
@@ -230,7 +230,7 @@ describe("WithTrackingContext", () => {
 
   it("forwards props to wrapped component", () => {
     const WithTrackingContext = withTrackingContext(TestComponent, {
-      trackingObject: "AuthorProfile"
+      trackingObjectName: "AuthorProfile"
     });
 
     const tree = renderer.create(
@@ -242,7 +242,7 @@ describe("WithTrackingContext", () => {
 
   it("hoists wrapped propTypes", () => {
     const WithTrackingContext = withTrackingContext(TestComponent, {
-      trackingObject: "AuthorProfile"
+      trackingObjectName: "AuthorProfile"
     });
 
     expect(WithTrackingContext.propTypes).toMatchObject(
@@ -252,7 +252,7 @@ describe("WithTrackingContext", () => {
 
   it("hoists wrapped defaultProps", () => {
     const WithTrackingContext = withTrackingContext(TestComponent, {
-      trackingObject: "AuthorProfile"
+      trackingObjectName: "AuthorProfile"
     });
 
     expect(WithTrackingContext.defaultProps).toMatchObject(
@@ -262,7 +262,7 @@ describe("WithTrackingContext", () => {
 
   it("hoists wrapped statics", () => {
     const WithTrackingContext = withTrackingContext(TestComponent, {
-      trackingObject: "AuthorProfile"
+      trackingObjectName: "AuthorProfile"
     });
 
     expect(WithTrackingContext.someStatic).toEqual(TestComponent.someStatic);

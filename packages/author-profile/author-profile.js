@@ -138,7 +138,7 @@ const AuthorProfileWithTracking = withTrackingContext(AuthorProfile, {
     pageSize,
     articlesCount: get(author, "articles.count", 0)
   }),
-  trackingObject: "AuthorProfile",
+  trackingObjectName: "AuthorProfile",
   isDataReady: ({ isLoading }) => !isLoading
 });
 

@@ -31,7 +31,7 @@ storiesOf("AuthorHead", module)
   })
   .add("Tracking", () => {
     const AuthorHeadWithTrackingContext = withTrackingContext(AuthorHead, {
-      trackingObject: "Story"
+      trackingObjectName: "Story"
     });
     return (
       <AuthorHeadWithTrackingContext
