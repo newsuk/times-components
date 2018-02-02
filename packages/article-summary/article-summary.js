@@ -16,9 +16,11 @@ const ArticleSummary = props => {
 
   return (
     <View>
-      {Label ? <View style={styles.labelWrapper}>
-        <Label />
-      </View> : null}
+      {Label ? (
+        <View style={styles.labelWrapper}>
+          <Label />
+        </View>
+      ) : null}
       <Headline />
       <Text style={styles.text}>{summaryText()}</Text>
       <Text
@@ -28,9 +30,11 @@ const ArticleSummary = props => {
       >
         <DatePublication />
       </Text>
-      {Byline ? <Text style={styles.metaText}>
-        <Byline />
-      </Text> : null}
+      {Byline ? (
+        <Text style={styles.metaText}>
+          <Byline />
+        </Text>
+      ) : null}
     </View>
   );
 };

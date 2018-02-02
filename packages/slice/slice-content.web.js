@@ -40,7 +40,9 @@ const SliceContent = ({ item }) => {
     showImage: true
   };
 
-  const Label = label ? () => <ArticleLabel title={label} color="#333333" /> : null;
+  const Label = label
+    ? () => <ArticleLabel title={label} color="#333333" />
+    : null;
   const Byline = byline ? () => <ArticleByline ast={byline} /> : null;
 
   return (
