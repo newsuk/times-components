@@ -27,14 +27,17 @@ class DatePublication extends React.Component {
     }
   }
   render() {
-    const { date, publication, showPublication } = this.props;
+    const { date, publication } = this.props;
+
     const datetimeUTC = getUTCTime(date);
     const isDateBST = isBST(datetimeUTC);
     const offset = isDateBST ? 60 : 0;
     const datetimeLondonTimezone = addMinutes(datetimeUTC, offset);
-    const publicationString = showPublication
+
+    const publicationString = publication
       ? `, ${publications[publication]}`
       : ``;
+
     return `${format(datetimeLondonTimezone, "dddd MMMM DD YYYY, hh:mma")}${
       this.state.tz
     }${publicationString}`;
@@ -43,13 +46,11 @@ class DatePublication extends React.Component {
 
 DatePublication.propTypes = {
   date: PropTypes.string.isRequired,
-  publication: PropTypes.oneOf(Object.keys(publications)),
-  showPublication: PropTypes.bool
+  publication: PropTypes.oneOf(Object.keys(publications))
 };
 
 DatePublication.defaultProps = {
-  publication: "TIMES",
-  showPublication: true
+  publication: null
 };
 
 export default DatePublication;
