@@ -180,11 +180,23 @@ exports[`Slice test on ios Related articles renders single article 1`] = `
           </View>
           <View>
             <View>
-              <View
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
                 style={
-                  Object {
-                    "marginBottom": 0,
-                  }
+                  Array [
+                    Object {
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                      "letterSpacing": 1.2,
+                      "lineHeight": 12,
+                    },
+                    Object {
+                      "color": "#333333",
+                    },
+                  ]
                 }
               >
                 <Text
@@ -251,7 +263,7 @@ exports[`Slice test on ios Related articles renders single article 1`] = `
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-                  
+
                   Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
                   ...
                 </Text>
@@ -506,11 +518,23 @@ exports[`Slice test on ios Related articles renders single article with no bylin
           </View>
           <View>
             <View>
-              <View
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
                 style={
-                  Object {
-                    "marginBottom": 0,
-                  }
+                  Array [
+                    Object {
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                      "letterSpacing": 1.2,
+                      "lineHeight": 12,
+                    },
+                    Object {
+                      "color": "#333333",
+                    },
+                  ]
                 }
               >
                 <Text
@@ -577,7 +601,7 @@ exports[`Slice test on ios Related articles renders single article with no bylin
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-                  
+
                   Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
                   ...
                 </Text>
@@ -810,6 +834,27 @@ exports[`Slice test on ios Related articles renders single article with no label
                 style={
                   Array [
                     Object {
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                      "letterSpacing": 1.2,
+                      "lineHeight": 12,
+                    },
+                    Object {
+                      "color": "#333333",
+                    },
+                  ]
+                }
+              >
+
+              </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
                       "color": "#333333",
                       "fontFamily": "TimesModern-Bold",
                       "fontWeight": "400",
@@ -845,7 +890,7 @@ exports[`Slice test on ios Related articles renders single article with no label
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-                  
+
                   Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
                   ...
                 </Text>
@@ -980,11 +1025,23 @@ exports[`Slice test on ios Related articles renders single article with no lead 
         >
           <View>
             <View>
-              <View
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
                 style={
-                  Object {
-                    "marginBottom": 0,
-                  }
+                  Array [
+                    Object {
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                      "letterSpacing": 1.2,
+                      "lineHeight": 12,
+                    },
+                    Object {
+                      "color": "#333333",
+                    },
+                  ]
                 }
               >
                 <Text
@@ -1051,7 +1108,7 @@ exports[`Slice test on ios Related articles renders single article with no lead 
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-                  
+
                   Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
                   ...
                 </Text>

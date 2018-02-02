@@ -211,37 +211,29 @@ exports[`Slice test on android Related articles renders single article 1`] = `
           </View>
           <View>
             <View>
-              <View
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
                 style={
-                  Object {
-                    "marginBottom": 5,
-                  }
+                  Array [
+                    Object {
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                      "letterSpacing": 1.2,
+                      "lineHeight": 12,
+                      "marginBottom": -4,
+                      "paddingTop": 5,
+                    },
+                    Object {
+                      "color": "#333333",
+                    },
+                  ]
                 }
               >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 12,
-                        "fontWeight": "400",
-                        "letterSpacing": 1.2,
-                        "lineHeight": 12,
-                        "marginBottom": -4,
-                        "paddingTop": 5,
-                      },
-                      Object {
-                        "color": "#333333",
-                      },
-                    ]
-                  }
-                >
-                  B A Y E U X   T A P E S T R Y
-                </Text>
-              </View>
+                B A Y E U X   T A P E S T R Y
+              </Text>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -284,7 +276,7 @@ exports[`Slice test on android Related articles renders single article 1`] = `
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-                  
+
                   Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
                   ...
                 </Text>
@@ -570,37 +562,29 @@ exports[`Slice test on android Related articles renders single article with no b
           </View>
           <View>
             <View>
-              <View
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
                 style={
-                  Object {
-                    "marginBottom": 5,
-                  }
+                  Array [
+                    Object {
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                      "letterSpacing": 1.2,
+                      "lineHeight": 12,
+                      "marginBottom": -4,
+                      "paddingTop": 5,
+                    },
+                    Object {
+                      "color": "#333333",
+                    },
+                  ]
                 }
               >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 12,
-                        "fontWeight": "400",
-                        "letterSpacing": 1.2,
-                        "lineHeight": 12,
-                        "marginBottom": -4,
-                        "paddingTop": 5,
-                      },
-                      Object {
-                        "color": "#333333",
-                      },
-                    ]
-                  }
-                >
-                  B A Y E U X   T A P E S T R Y
-                </Text>
-              </View>
+                B A Y E U X   T A P E S T R Y
+              </Text>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -643,7 +627,7 @@ exports[`Slice test on android Related articles renders single article with no b
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-                  
+
                   Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
                   ...
                 </Text>
@@ -907,6 +891,29 @@ exports[`Slice test on android Related articles renders single article with no l
                 style={
                   Array [
                     Object {
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                      "letterSpacing": 1.2,
+                      "lineHeight": 12,
+                      "marginBottom": -4,
+                      "paddingTop": 5,
+                    },
+                    Object {
+                      "color": "#333333",
+                    },
+                  ]
+                }
+              >
+
+              </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
                       "color": "#333333",
                       "fontFamily": "TimesModern-Bold",
                       "fontWeight": "400",
@@ -942,7 +949,7 @@ exports[`Slice test on android Related articles renders single article with no l
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-                  
+
                   Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
                   ...
                 </Text>
@@ -1075,37 +1082,29 @@ exports[`Slice test on android Related articles renders single article with no l
         >
           <View>
             <View>
-              <View
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
                 style={
-                  Object {
-                    "marginBottom": 5,
-                  }
+                  Array [
+                    Object {
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                      "letterSpacing": 1.2,
+                      "lineHeight": 12,
+                      "marginBottom": -4,
+                      "paddingTop": 5,
+                    },
+                    Object {
+                      "color": "#333333",
+                    },
+                  ]
                 }
               >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 12,
-                        "fontWeight": "400",
-                        "letterSpacing": 1.2,
-                        "lineHeight": 12,
-                        "marginBottom": -4,
-                        "paddingTop": 5,
-                      },
-                      Object {
-                        "color": "#333333",
-                      },
-                    ]
-                  }
-                >
-                  B A Y E U X   T A P E S T R Y
-                </Text>
-              </View>
+                B A Y E U X   T A P E S T R Y
+              </Text>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -1148,7 +1147,7 @@ exports[`Slice test on android Related articles renders single article with no l
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-                  
+
                   Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
                   ...
                 </Text>
