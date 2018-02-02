@@ -1,32 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Article Summary test on Android renders an article-summary component with a single paragraph 1`] = `
-<View
-  style={Object {}}
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+<View>
+  <View
     style={
-      Array [
-        Object {
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "lineHeight": 12,
-          "marginBottom": -4,
-          "paddingTop": 5,
-        },
-        Object {
-          "color": "#333333",
-        },
-      ]
+      Object {
+        "marginBottom": 5,
+      }
     }
   >
-    C A M I L L A   L O N G
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 12,
+            "marginBottom": -4,
+            "paddingTop": 5,
+          },
+          Object {
+            "color": "#333333",
+          },
+        ]
+      }
+    >
+      C A M I L L A   L O N G
+    </Text>
+  </View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -43,6 +49,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
       ]
     }
   >
@@ -138,32 +145,38 @@ exports[`Article Summary test on Android renders an article-summary component wi
 `;
 
 exports[`Article Summary test on Android renders an article-summary component with content including line breaks 1`] = `
-<View
-  style={Object {}}
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+<View>
+  <View
     style={
-      Array [
-        Object {
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "lineHeight": 12,
-          "marginBottom": -4,
-          "paddingTop": 5,
-        },
-        Object {
-          "color": "#333333",
-        },
-      ]
+      Object {
+        "marginBottom": 5,
+      }
     }
   >
-    C A M I L L A   L O N G
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 12,
+            "marginBottom": -4,
+            "paddingTop": 5,
+          },
+          Object {
+            "color": "#333333",
+          },
+        ]
+      }
+    >
+      C A M I L L A   L O N G
+    </Text>
+  </View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -180,6 +193,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
       ]
     }
   >
@@ -349,32 +363,38 @@ exports[`Article Summary test on Android renders an article-summary component wi
 `;
 
 exports[`Article Summary test on Android renders an article-summary component with empty content at the end trimmed 1`] = `
-<View
-  style={Object {}}
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+<View>
+  <View
     style={
-      Array [
-        Object {
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "lineHeight": 12,
-          "marginBottom": -4,
-          "paddingTop": 5,
-        },
-        Object {
-          "color": "#333333",
-        },
-      ]
+      Object {
+        "marginBottom": 5,
+      }
     }
   >
-    C A M I L L A   L O N G
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 12,
+            "marginBottom": -4,
+            "paddingTop": 5,
+          },
+          Object {
+            "color": "#333333",
+          },
+        ]
+      }
+    >
+      C A M I L L A   L O N G
+    </Text>
+  </View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -391,6 +411,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
       ]
     }
   >
@@ -501,32 +522,38 @@ exports[`Article Summary test on Android renders an article-summary component wi
 `;
 
 exports[`Article Summary test on Android renders an article-summary component with headline and no content 1`] = `
-<View
-  style={Object {}}
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+<View>
+  <View
     style={
-      Array [
-        Object {
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "lineHeight": 12,
-          "marginBottom": -4,
-          "paddingTop": 5,
-        },
-        Object {
-          "color": "#333333",
-        },
-      ]
+      Object {
+        "marginBottom": 5,
+      }
     }
   >
-    C A M I L L A   L O N G
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 12,
+            "marginBottom": -4,
+            "paddingTop": 5,
+          },
+          Object {
+            "color": "#333333",
+          },
+        ]
+      }
+    >
+      C A M I L L A   L O N G
+    </Text>
+  </View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -543,6 +570,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
       ]
     }
   >
@@ -581,27 +609,11 @@ exports[`Article Summary test on Android renders an article-summary component wi
   >
     Saturday July 01 2017, 03:32pm, The Sunday Times
   </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-  />
 </View>
 `;
 
 exports[`Article Summary test on Android renders an article-summary component with multiple paragraphs 1`] = `
-<View
-  style={Object {}}
->
+<View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -618,6 +630,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
       ]
     }
   >
@@ -721,9 +734,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
 `;
 
 exports[`Article Summary test on Android renders an article-summary component with no byline 1`] = `
-<View
-  style={Object {}}
->
+<View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -740,6 +751,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
       ]
     }
   >
@@ -788,27 +800,11 @@ exports[`Article Summary test on Android renders an article-summary component wi
   >
     Friday November 17 2017, 12:01am, The Times
   </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-  />
 </View>
 `;
 
 exports[`Article Summary test on Android renders an article-summary component with no label 1`] = `
-<View
-  style={Object {}}
->
+<View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -825,6 +821,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
       ]
     }
   >
