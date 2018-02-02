@@ -10,7 +10,7 @@ export default {
   Headline: () => (
     <ArticleSummaryHeadline headline="Top medal for forces dog who took a bite out of the Taliban" />
   ),
-  textAst: () =>
+  summaryText: () =>
     renderTrees(
       summarise([
         {

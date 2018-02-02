@@ -24,13 +24,13 @@ const styles = {
 };
 
 const ArticleSummary = props => {
-  const { Label, Headline, textAst, DatePublication, Byline } = props;
+  const { Label, Headline, summaryText, DatePublication, Byline } = props;
 
   return (
     <View>
       <Label />
       <Headline />
-      <Text style={styles.text}>{textAst()}</Text>
+      <Text style={styles.text}>{summaryText()}</Text>
       <Text
         style={styles.metaText}
         accessibilityLabel="datePublication"
@@ -48,7 +48,7 @@ const ArticleSummary = props => {
 ArticleSummary.propTypes = {
   Label: PropTypes.func,
   Headline: PropTypes.func,
-  textAst: PropTypes.func,
+  summaryText: PropTypes.func,
   DatePublication: PropTypes.func,
   Byline: PropTypes.func
 };
@@ -56,7 +56,7 @@ ArticleSummary.propTypes = {
 ArticleSummary.defaultProps = {
   Label: () => null,
   Headline: () => null,
-  textAst: () => [],
+  summaryText: () => [],
   DatePublication: () => null,
   Byline: () => null
 };

@@ -80,19 +80,19 @@ const AuthorProfileItem = item => {
   };
 
   const children = showImage ? (
-    <ArticleSummary {...childProps} textAst={() => renderAst(summary)} />
+    <ArticleSummary {...childProps} summaryText={() => renderAst(summary)} />
   ) : (
     <Fragment>
       <LongText>
         <ArticleSummary
           {...childProps}
-          textAst={() => renderAst(longSummary)}
+          summaryText={() => renderAst(longSummary)}
         />
       </LongText>
       <ShortText>
         <ArticleSummary
           {...childProps}
-          textAst={() => renderAst(shortSummary)}
+          summaryText={() => renderAst(shortSummary)}
         />
       </ShortText>
     </Fragment>
