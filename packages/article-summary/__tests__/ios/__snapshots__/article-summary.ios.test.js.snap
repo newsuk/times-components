@@ -9,33 +9,22 @@ exports[`Article Summary test on ios renders an article-summary component with a
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "marginBottom": 0,
-      }
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "lineHeight": 12,
+        },
+        Object {
+          "color": "#333333",
+        },
+      ]
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Array [
-          Object {
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 12,
-            "fontWeight": "400",
-            "letterSpacing": 1.2,
-            "lineHeight": 12,
-          },
-          Object {
-            "color": "#333333",
-          },
-        ]
-      }
-    >
-      CAMILLA LONG
-    </Text>
-  </View>
+    CAMILLA LONG
+  </Text>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -52,7 +41,6 @@ exports[`Article Summary test on ios renders an article-summary component with a
           "fontSize": 22,
           "lineHeight": 22,
         },
-        Object {},
       ]
     }
   >
@@ -78,11 +66,11 @@ exports[`Article Summary test on ios renders an article-summary component with a
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
+<<<<<<< HEAD
 
-      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
-      ...
+=======
+
     </Text>
-  </Text>
   <Text
     accessibilityLabel="datePublication"
     accessible={true}
@@ -156,6 +144,7 @@ exports[`Article Summary test on ios renders an article-summary component with c
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
+<<<<<<< HEAD
       Object {
         "marginBottom": 0,
       }
@@ -183,6 +172,24 @@ exports[`Article Summary test on ios renders an article-summary component with c
       CAMILLA LONG
     </Text>
   </View>
+=======
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "lineHeight": 12,
+        },
+        Object {
+          "color": "#333333",
+        },
+      ]
+    }
+  >
+    CAMILLA LONG
+  </Text>
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -199,7 +206,10 @@ exports[`Article Summary test on ios renders an article-summary component with c
           "fontSize": 22,
           "lineHeight": 22,
         },
+<<<<<<< HEAD
         Object {},
+=======
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
       ]
     }
   >
@@ -225,7 +235,11 @@ exports[`Article Summary test on ios renders an article-summary component with c
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -243,7 +257,11 @@ exports[`Article Summary test on ios renders an article-summary component with c
         allowFontScaling={true}
         ellipsizeMode="tail"
       >
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
 
       </Text>
       ITV
@@ -252,7 +270,11 @@ exports[`Article Summary test on ios renders an article-summary component with c
         allowFontScaling={true}
         ellipsizeMode="tail"
       >
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
 
       </Text>
       ★★★★☆
@@ -262,7 +284,11 @@ exports[`Article Summary test on ios renders an article-summary component with c
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -280,7 +306,11 @@ exports[`Article Summary test on ios renders an article-summary component with c
         allowFontScaling={true}
         ellipsizeMode="tail"
       >
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
 
       </Text>
       BBC Two
@@ -289,7 +319,11 @@ exports[`Article Summary test on ios renders an article-summary component with c
         allowFontScaling={true}
         ellipsizeMode="tail"
       >
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
 
       </Text>
       ★★★☆☆
@@ -299,7 +333,11 @@ exports[`Article Summary test on ios renders an article-summary component with c
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
       Poor old Harriet, Duchess of Sutherland. There she was giddily expecting a
       ...
     </Text>
@@ -377,6 +415,7 @@ exports[`Article Summary test on ios renders an article-summary component with e
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
+<<<<<<< HEAD
       Object {
         "marginBottom": 0,
       }
@@ -404,6 +443,24 @@ exports[`Article Summary test on ios renders an article-summary component with e
       CAMILLA LONG
     </Text>
   </View>
+=======
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "lineHeight": 12,
+        },
+        Object {
+          "color": "#333333",
+        },
+      ]
+    }
+  >
+    CAMILLA LONG
+  </Text>
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -420,7 +477,10 @@ exports[`Article Summary test on ios renders an article-summary component with e
           "fontSize": 22,
           "lineHeight": 22,
         },
+<<<<<<< HEAD
         Object {},
+=======
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
       ]
     }
   >
@@ -446,7 +506,11 @@ exports[`Article Summary test on ios renders an article-summary component with e
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
       Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.
     </Text>
     <Text
@@ -454,7 +518,11 @@ exports[`Article Summary test on ios renders an article-summary component with e
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
       The former punk
     </Text>
     <Text
@@ -462,7 +530,11 @@ exports[`Article Summary test on ios renders an article-summary component with e
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
       ...
     </Text>
   </Text>
@@ -539,6 +611,7 @@ exports[`Article Summary test on ios renders an article-summary component with h
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
+<<<<<<< HEAD
       Object {
         "marginBottom": 0,
       }
@@ -566,6 +639,24 @@ exports[`Article Summary test on ios renders an article-summary component with h
       CAMILLA LONG
     </Text>
   </View>
+=======
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "lineHeight": 12,
+        },
+        Object {
+          "color": "#333333",
+        },
+      ]
+    }
+  >
+    CAMILLA LONG
+  </Text>
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -582,7 +673,10 @@ exports[`Article Summary test on ios renders an article-summary component with h
           "fontSize": 22,
           "lineHeight": 22,
         },
+<<<<<<< HEAD
         Object {},
+=======
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
       ]
     }
   >
@@ -621,14 +715,35 @@ exports[`Article Summary test on ios renders an article-summary component with h
   >
     Saturday July 01 2017, 03:32pm, The Sunday Times
   </Text>
+<<<<<<< HEAD
 </View>
 `;
 
 <<<<<<< HEAD:packages/article-summary/__tests__/ios/__snapshots__/article-summary.ios.test.js.snap
+=======
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+  />
+</View>
+`;
+
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
 exports[`Article Summary test on ios renders an article-summary component with multiple paragraphs 1`] = `
 <View
   style={Object {}}
 >
+<<<<<<< HEAD
 =======
 exports[`renders an article-summary component with multiple paragraphs 1`] = `
 <View>
@@ -643,6 +758,8 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
 >>>>>>> fix: Updating the visual styling required for making everything look as it previously did cross platform:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
 =======
 >>>>>>> fix: Added turnery operators to avoid showing empty containers in the snapshots:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
+=======
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -659,7 +776,10 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
           "fontSize": 22,
           "lineHeight": 22,
         },
+<<<<<<< HEAD
         Object {},
+=======
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
       ]
     }
   >
@@ -685,7 +805,11 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
     </Text>
     <Text
@@ -693,7 +817,11 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
       Mali sniffed out explosives and insurgents during a gunfight that lasted seven and a half hours to help a team of Special Boat Service (SBS) operators hunt down and kill more than a dozen
       ...
     </Text>
@@ -762,11 +890,15 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
 </View>
 `;
 
+<<<<<<< HEAD
 <<<<<<< HEAD:packages/article-summary/__tests__/ios/__snapshots__/article-summary.ios.test.js.snap
+=======
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
 exports[`Article Summary test on ios renders an article-summary component with no byline 1`] = `
 <View
   style={Object {}}
 >
+<<<<<<< HEAD
 =======
 exports[`renders an article-summary component with no byline 1`] = `
 <View>
@@ -781,6 +913,8 @@ exports[`renders an article-summary component with no byline 1`] = `
 >>>>>>> fix: Updating the visual styling required for making everything look as it previously did cross platform:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
 =======
 >>>>>>> fix: Added turnery operators to avoid showing empty containers in the snapshots:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
+=======
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -797,7 +931,10 @@ exports[`renders an article-summary component with no byline 1`] = `
           "fontSize": 22,
           "lineHeight": 22,
         },
+<<<<<<< HEAD
         Object {},
+=======
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
       ]
     }
   >
@@ -823,7 +960,11 @@ exports[`renders an article-summary component with no byline 1`] = `
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
       ...
     </Text>
@@ -846,14 +987,35 @@ exports[`renders an article-summary component with no byline 1`] = `
   >
     Friday November 17 2017, 12:01am, The Times
   </Text>
+<<<<<<< HEAD
 </View>
 `;
 
 <<<<<<< HEAD:packages/article-summary/__tests__/ios/__snapshots__/article-summary.ios.test.js.snap
+=======
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+  />
+</View>
+`;
+
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
 exports[`Article Summary test on ios renders an article-summary component with no label 1`] = `
 <View
   style={Object {}}
 >
+<<<<<<< HEAD
 =======
 exports[`renders an article-summary component with no label 1`] = `
 <View>
@@ -868,6 +1030,8 @@ exports[`renders an article-summary component with no label 1`] = `
 >>>>>>> fix: Updating the visual styling required for making everything look as it previously did cross platform:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
 =======
 >>>>>>> fix: Added turnery operators to avoid showing empty containers in the snapshots:packages/article-summary/__tests__/__snapshots__/article-summary.native.test.js.snap
+=======
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -884,7 +1048,10 @@ exports[`renders an article-summary component with no label 1`] = `
           "fontSize": 22,
           "lineHeight": 22,
         },
+<<<<<<< HEAD
         Object {},
+=======
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
       ]
     }
   >
@@ -910,7 +1077,11 @@ exports[`renders an article-summary component with no label 1`] = `
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> Test: Update the Article Summary package to enable Jest Configurator (#588)
       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
       ...
     </Text>

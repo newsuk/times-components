@@ -9,16 +9,23 @@ exports[`Article Summary test on Android renders an article-summary component wi
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 12,
-        "letterSpacing": 1,
-        "marginBottom": 2,
-      }
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "lineHeight": 12,
+          "marginBottom": -4,
+          "paddingTop": 5,
+        },
+        Object {
+          "color": "#333333",
+        },
+      ]
     }
   >
-    CAMILLA LONG
+    C A M I L L A   L O N G
   </Text>
   <Text
     accessible={true}
@@ -139,16 +146,23 @@ exports[`Article Summary test on Android renders an article-summary component wi
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 12,
-        "letterSpacing": 1,
-        "marginBottom": 2,
-      }
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "lineHeight": 12,
+          "marginBottom": -4,
+          "paddingTop": 5,
+        },
+        Object {
+          "color": "#333333",
+        },
+      ]
     }
   >
-    CAMILLA LONG
+    C A M I L L A   L O N G
   </Text>
   <Text
     accessible={true}
@@ -343,16 +357,23 @@ exports[`Article Summary test on Android renders an article-summary component wi
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 12,
-        "letterSpacing": 1,
-        "marginBottom": 2,
-      }
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "lineHeight": 12,
+          "marginBottom": -4,
+          "paddingTop": 5,
+        },
+        Object {
+          "color": "#333333",
+        },
+      ]
     }
   >
-    CAMILLA LONG
+    C A M I L L A   L O N G
   </Text>
   <Text
     accessible={true}
@@ -488,16 +509,23 @@ exports[`Article Summary test on Android renders an article-summary component wi
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 12,
-        "letterSpacing": 1,
-        "marginBottom": 2,
-      }
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "lineHeight": 12,
+          "marginBottom": -4,
+          "paddingTop": 5,
+        },
+        Object {
+          "color": "#333333",
+        },
+      ]
     }
   >
-    CAMILLA LONG
+    C A M I L L A   L O N G
   </Text>
   <Text
     accessible={true}
@@ -553,6 +581,20 @@ exports[`Article Summary test on Android renders an article-summary component wi
   >
     Saturday July 01 2017, 03:32pm, The Sunday Times
   </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+  />
 </View>
 `;
 
@@ -746,6 +788,20 @@ exports[`Article Summary test on Android renders an article-summary component wi
   >
     Friday November 17 2017, 12:01am, The Times
   </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+  />
 </View>
 `;
 
