@@ -36,7 +36,7 @@ exports[`DOMContext Native renders correctly 1`] = `
             (mockErrorHandler)(window);
           </script>
           <script>
-            var harness = (mockHarness)({
+            (mockHarness)({
               el: document.getElementsByTagName(\\"div\\")[0],
               window: window,
               document: document,

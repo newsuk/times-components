@@ -4,9 +4,12 @@ import renderer from "react-test-renderer";
 
 import DOMContextNative from "../dom-context";
 
+// prevent function sources appearing in snapshots
 jest.mock("../dom-context-harness", () => "mockHarness");
 jest.mock("../webview-event-callback-setup", () => "mockErrorHandler");
-jest.mock("WebView", () => "WebView");
+jest.mock("../ad-init", () => () => "mockInit");
+
+jest.mock("WebView", () => "WebView"); // https://github.com/facebook/react-native/issues/12440
 
 describe("DOMContext Native", () => {
   afterEach(() => {

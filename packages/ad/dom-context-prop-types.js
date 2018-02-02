@@ -14,6 +14,5 @@ export const defaultProps = {
   scriptUris: [],
   globalNames: [],
   data: {},
-  init: () => {},
   onRenderComplete: () => {}
 };

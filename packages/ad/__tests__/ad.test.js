@@ -7,10 +7,13 @@ import Ad from "../ad";
 
 Enzyme.configure({ adapter: new React16Adapter() });
 
+// prevent function sources appearing in snapshots
 jest.mock("../dom-context-harness", () => "mockHarness");
 jest.mock("../webview-event-callback-setup", () => "mockErrorHandler");
-jest.mock("../placeholder", () => "Placeholder");
-jest.mock("../ad-init", () => () => {});
+jest.mock("../ad-init", () => () => "mockInit");
+
+jest.mock("../placeholder", () => "Placeholder"); // prevent SVG in snapshots
+jest.mock("WebView", () => "WebView"); // https://github.com/facebook/react-native/issues/12440
 
 describe("Ad", () => {
   const adProps = {
@@ -22,18 +25,15 @@ describe("Ad", () => {
     pos: "mock-pos"
   };
 
-  beforeEach(() => {
-    jest.mock("WebView", () => "WebView");
-  });
-
   afterEach(() => {
     jest.resetModules();
     jest.clearAllMocks();
   });
 
   it("renders without error", () => {
-    jest.spyOn(console, "error").mockImplementation((...args) => {
-      throw new Error(args.join(" "));
+    jest.spyOn(console, "error").mockImplementationOnce(message => {
+      console.error(message); // eslint-disable-line no-console
+      throw new Error(message);
     });
     renderer.create(<Ad {...adProps} code="ad-header" />);
     renderer.create(<Ad {...adProps} code="ad-pixel" />);

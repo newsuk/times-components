@@ -76,7 +76,7 @@ export default class DOMContext extends PureComponent {
             (${webviewEventCallbackSetup})(window);
           </script>
           <script>
-            var harness = (${makeHarness})({
+            (${makeHarness})({
               el: document.getElementsByTagName("div")[0],
               window: window,
               document: document,
@@ -90,7 +90,6 @@ export default class DOMContext extends PureComponent {
         </body>
       </html>
     `;
-    // console.log(html);
 
     const postMessageBugWorkaround = Platform.select({
       // https://github.com/facebook/react-native/issues/10865

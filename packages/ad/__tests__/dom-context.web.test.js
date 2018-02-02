@@ -86,6 +86,13 @@ describe("DOMContext Web", () => {
     expect(onRenderComplete).toHaveBeenCalled();
   });
 
+  it("does not error when init calls renderComplete but no onRenderComplete callback is provided", () => {
+    const f = () => {
+      mount(<DOMContext init={({ renderComplete }) => renderComplete()} />);
+    };
+    expect(f).not.toThrow();
+  });
+
   it("Doesn't throw an error when given an invalid event name", () => {
     const component = mount(<DOMContext init={() => {}} />);
 

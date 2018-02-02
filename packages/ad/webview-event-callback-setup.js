@@ -19,12 +19,14 @@ const webviewEventCallbackSetup = options => {
       );
     });
   };
-  window.onerror = (msg, file, line, col, error) => {
+  window.addEventListener("error", ev => {
+    const file = (ev.filename || "").substring(0, 100);
     window.eventCallback(
       "error",
-      `msg=${msg}, file=${file}, line=${line}, col=${col}, error=${error}`
+      `msg=${ev.message || ""}, file=${file}, line=${ev.lineno ||
+        ""}, col=${ev.colno || ""}`
     );
-  };
+  });
   // eslint-disable-next-line no-console
   window.console.error = (...args) => {
     window.eventCallback("error", args.join("\n"));
