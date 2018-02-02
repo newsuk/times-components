@@ -7,10 +7,9 @@ import { withTrackEvents } from "@times-components/tracking";
 
 import ArticleLabel from "@times-components/article-label";
 import DatePublication from "@times-components/date-publication";
-import { renderTrees } from "@times-components/markup";
 import ArticleSummary, {
   ArticleSummaryHeadline,
-  renderAst 
+  renderAst
 } from "@times-components/article-summary";
 
 const styles = StyleSheet.create({

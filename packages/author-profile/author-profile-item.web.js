@@ -8,14 +8,10 @@ import withResponsiveStyles from "@times-components/responsive-styles";
 
 import ArticleLabel from "@times-components/article-label";
 import DatePublication from "@times-components/date-publication";
-import { renderTrees } from "@times-components/markup";
 import ArticleSummary, {
   ArticleSummaryHeadline,
-  renderer,
-  summarise
+  renderAst
 } from "@times-components/article-summary";
-
-const renderAst = ast => renderTrees(summarise(ast), renderer);
 
 const LongText = withResponsiveStyles(View, {
   base: () => "display: none;",

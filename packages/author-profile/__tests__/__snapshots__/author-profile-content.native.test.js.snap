@@ -2304,9 +2304,7 @@ exports[`renders profile content component 1`] = `
                 </View>
               </View>
               <View>
-                <View
-                  style={Object {}}
-                >
+                <View>
                   <Text
                     accessible={true}
                     allowFontScaling={true}
@@ -2557,9 +2555,7 @@ exports[`renders profile content component 1`] = `
                 </View>
               </View>
               <View>
-                <View
-                  style={Object {}}
-                >
+                <View>
                   <Text
                     accessible={true}
                     allowFontScaling={true}
@@ -2810,9 +2806,7 @@ exports[`renders profile content component 1`] = `
                 </View>
               </View>
               <View>
-                <View
-                  style={Object {}}
-                >
+                <View>
                   <Text
                     accessible={true}
                     allowFontScaling={true}
@@ -3300,9 +3294,7 @@ exports[`renders profile content item component 1`] = `
         style={null}
       >
         <View>
-          <View
-            style={Object {}}
-          >
+          <View>
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -3422,9 +3414,7 @@ exports[`renders profile content item component with a specific image size 1`] =
         style={null}
       >
         <View>
-          <View
-            style={Object {}}
-          >
+          <View>
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -3544,9 +3534,7 @@ exports[`renders profile content item component with no image 1`] = `
         style={null}
       >
         <View>
-          <View
-            style={Object {}}
-          >
+          <View>
             <Text
               accessible={true}
               allowFontScaling={true}
