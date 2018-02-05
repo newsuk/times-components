@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import getDisplayName from "react-display-name";
 import hoistNonReactStatic from "hoist-non-react-statics";
+import isEqual from "lodash.isequal";
 
 const withDebounce = WrappedComponent => {
   const validateProps = props => {
@@ -23,6 +24,7 @@ const withDebounce = WrappedComponent => {
 
     componentWillReceiveProps(nextProps) {
       validateProps(nextProps);
+      if (isEqual(this.props, nextProps)) return;
       if (this.props.debounceTimeMs === 0) {
         this.setState({ debouncedProps: nextProps, isDebouncing: false });
       } else {
