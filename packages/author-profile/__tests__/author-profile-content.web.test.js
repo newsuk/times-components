@@ -16,7 +16,7 @@ const delayAndAdvance = ms => {
   const timer = delay(ms);
   jest.runTimersToTime(ms);
   return timer;
-}
+};
 
 test(AuthorProfileContent);
 
