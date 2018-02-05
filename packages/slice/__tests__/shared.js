@@ -11,7 +11,7 @@ module.exports = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders null for a slice with no children", () => {
+    it("renders a single child element", () => {
       const tree = renderer
         .create(
           <Slice>
@@ -22,7 +22,7 @@ module.exports = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders null for a slice with no children", () => {
+    it("renders multiple child elements", () => {
       const tree = renderer
         .create(
           <Slice>

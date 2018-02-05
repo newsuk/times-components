@@ -1,8 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Slice test on android Related articles renders null for a slice with no children 1`] = `null`;
-
-exports[`Slice test on android Related articles renders null for a slice with no children 2`] = `
+exports[`Slice test on android Related articles renders a single child element 1`] = `
 <View
   style={
     Object {
@@ -20,7 +18,7 @@ exports[`Slice test on android Related articles renders null for a slice with no
 </View>
 `;
 
-exports[`Slice test on android Related articles renders null for a slice with no children 3`] = `
+exports[`Slice test on android Related articles renders multiple child elements 1`] = `
 <View
   style={
     Object {
@@ -44,3 +42,5 @@ exports[`Slice test on android Related articles renders null for a slice with no
   </Text>
 </View>
 `;
+
+exports[`Slice test on android Related articles renders null for a slice with no children 1`] = `null`;
