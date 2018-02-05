@@ -2,10 +2,6 @@ import { Text } from "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 import context from "jest-context";
-import singleRelatedArticleFixture from "@times-components/article/related-articles/fixtures/single-related-article.json";
-import singleRelatedArticleNoImageFixture from "@times-components/article/related-articles/fixtures/single-related-article-no-image.json";
-import singleRelatedArticleNoLabelFixture from "@times-components/article/related-articles/fixtures/single-related-article-no-label.json";
-import singleRelatedArticleNoBylineFixture from "@times-components/article/related-articles/fixtures/single-related-article-no-byline.json";
 import Slice from "../slice";
 
 module.exports = () => {
