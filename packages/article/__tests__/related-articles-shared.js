@@ -5,10 +5,10 @@ import context from "jest-context";
 
 import RelatedArticles from "../related-articles/related-articles";
 
-const singleRelatedArticleFixture = require("../related-articles/fixtures/single-related-article.json");
-const singleRelatedArticleNoImageFixture = require("../related-articles/fixtures/single-related-article-no-image.json");
-const singleRelatedArticleNoLabelFixture = require("../related-articles/fixtures/single-related-article-no-label.json");
-const singleRelatedArticleNoBylineFixture = require("../related-articles/fixtures/single-related-article-no-byline.json");
+import singleRelatedArticleFixture from "../related-articles/fixtures/single-related-article.json";
+import singleRelatedArticleNoImageFixture from "../related-articles/fixtures/single-related-article-no-image.json";
+import singleRelatedArticleNoLabelFixture from "../related-articles/fixtures/single-related-article-no-label.json";
+import singleRelatedArticleNoBylineFixture from "../related-articles/fixtures/single-related-article-no-byline.json";
 
 const createRelatedArticlesProps = fixtureData => ({
   ...fixtureData.relatedArticles[0],

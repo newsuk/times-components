@@ -12,23 +12,23 @@ import storybookReporter from "@times-components/tealium/storybook";
 import Article from "./article";
 import RelatedArticles from "./related-articles/related-articles";
 
-const fullArticleTypenameFixture = require("./fixtures/full-article-typename.json");
-const fullArticleFixture = require("./fixtures/full-article.json");
-const fullLongArticleFixture = require("./fixtures/full-long-article.json");
-const articleFixtureNoStandfirst = require("./fixtures/no-standfirst.json");
-const articleFixtureNoLabel = require("./fixtures/no-label.json");
-const articleFixtureNoAds = require("./fixtures/no-ads.json");
-const articleFixtureNoFlags = require("./fixtures/no-flags.json");
-const articleFixtureNoStandfirstNoLabel = require("./fixtures/no-standfirst-no-label.json");
-const articleFixtureNoStandfirstNoFlags = require("./fixtures/no-standfirst-no-flags.json");
-const articleFixtureNoLabelNoFlags = require("./fixtures/no-label-no-flags.json");
-const articleFixtureNoLabelNoFlagsNoStandFirst = require("./fixtures/no-label-no-flags-no-standfirst.json");
-const articleFixtureNoLeadAsset = require("./fixtures/no-lead-asset.json");
+import fullArticleTypenameFixture from "./fixtures/full-article-typename.json";
+import fullArticleFixture from "./fixtures/full-article.json";
+import fullLongArticleFixture from "./fixtures/full-long-article.json";
+import articleFixtureNoStandfirst from "./fixtures/no-standfirst.json";
+import articleFixtureNoLabel from "./fixtures/no-label.json";
+import articleFixtureNoAds from "./fixtures/no-ads.json";
+import articleFixtureNoFlags from "./fixtures/no-flags.json";
+import articleFixtureNoStandfirstNoLabel from "./fixtures/no-standfirst-no-label.json";
+import articleFixtureNoStandfirstNoFlags from "./fixtures/no-standfirst-no-flags.json";
+import articleFixtureNoLabelNoFlags from "./fixtures/no-label-no-flags.json";
+import articleFixtureNoLabelNoFlagsNoStandFirst from "./fixtures/no-label-no-flags-no-standfirst.json";
+import articleFixtureNoLeadAsset from "./fixtures/no-lead-asset.json";
 // Related articles
-const singleRelatedArticleFixture = require("./related-articles/fixtures/single-related-article.json");
-const singleRelatedArticleNoImageFixture = require("./related-articles/fixtures/single-related-article-no-image.json");
-const singleRelatedArticleNoLabelFixture = require("./related-articles/fixtures/single-related-article-no-label.json");
-const singleRelatedArticleNoBylineFixture = require("./related-articles/fixtures/single-related-article-no-byline.json");
+import singleRelatedArticleFixture from "./related-articles/fixtures/single-related-article.json";
+import singleRelatedArticleNoImageFixture from "./related-articles/fixtures/single-related-article-no-image.json";
+import singleRelatedArticleNoLabelFixture from "./related-articles/fixtures/single-related-article-no-label.json";
+import singleRelatedArticleNoBylineFixture from "./related-articles/fixtures/single-related-article-no-byline.json";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
