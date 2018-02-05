@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import ApolloClient from "apollo-client";
 import { ApolloProvider } from "react-apollo-temp";
-import { MockLink } from "react-apollo-temp/lib/test-links";
+import { MockLink } from "react-apollo-temp/lib/test-utils";
 import {
   InMemoryCache as Cache,
   IntrospectionFragmentMatcher
