@@ -40,7 +40,7 @@ const connectGraphql = (query, propsToVariables) => {
         retry(); // FIXME: remove this after react-apollo fixes https://github.com/apollographql/apollo-client/issues/2513
         refetch();
       },
-      isLoading: loading || props.isDebouncing,
+      isLoading: loading,
       ...result,
       ...props
     });
