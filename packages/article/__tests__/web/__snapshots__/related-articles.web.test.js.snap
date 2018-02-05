@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Related articles test on web Related articles renders single article 1`] = `null`;
+exports[`Related articles test on web Related articles renders single related article 1`] = `null`;
 
-exports[`Related articles test on web Related articles renders single article with no byline 1`] = `null`;
+exports[`Related articles test on web Related articles renders single related article with no byline 1`] = `null`;
 
-exports[`Related articles test on web Related articles renders single article with no label 1`] = `null`;
+exports[`Related articles test on web Related articles renders single related article with no label 1`] = `null`;
 
-exports[`Related articles test on web Related articles renders single article with no lead image 1`] = `null`;
+exports[`Related articles test on web Related articles renders single related article with no lead image 1`] = `null`;
+
+exports[`Related articles test on web Related articles renders two related articles 1`] = `null`;

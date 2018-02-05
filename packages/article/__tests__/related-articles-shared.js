@@ -9,6 +9,7 @@ import singleRelatedArticleFixture from "../related-articles/fixtures/single-rel
 import singleRelatedArticleNoImageFixture from "../related-articles/fixtures/single-related-article-no-image.json";
 import singleRelatedArticleNoLabelFixture from "../related-articles/fixtures/single-related-article-no-label.json";
 import singleRelatedArticleNoBylineFixture from "../related-articles/fixtures/single-related-article-no-byline.json";
+import twoRelatedArticlesFixture from "../related-articles/fixtures/two-related-articles.json";
 
 const createRelatedArticlesProps = fixtureData => ({
   ...fixtureData.relatedArticles[0],
@@ -32,7 +33,7 @@ module.exports = () => {
   });
 
   context("Related articles", () => {
-    it("renders single article", () => {
+    it("renders single related article", () => {
       const tree = renderer
         .create(
           <RelatedArticles
@@ -43,7 +44,7 @@ module.exports = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders single article with no lead image", () => {
+    it("renders single related article with no lead image", () => {
       const tree = renderer
         .create(
           <RelatedArticles
@@ -56,7 +57,7 @@ module.exports = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders single article with no label", () => {
+    it("renders single related article with no label", () => {
       const tree = renderer
         .create(
           <RelatedArticles
@@ -69,13 +70,24 @@ module.exports = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders single article with no byline", () => {
+    it("renders single related article with no byline", () => {
       const tree = renderer
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
               singleRelatedArticleNoBylineFixture.data
             )}
+          />
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it("renders two related articles", () => {
+      const tree = renderer
+        .create(
+          <RelatedArticles
+            {...createRelatedArticlesProps(twoRelatedArticlesFixture.data)}
           />
         )
         .toJSON();
