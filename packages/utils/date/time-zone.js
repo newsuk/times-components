@@ -1,6 +1,8 @@
+import DeviceInfo from "react-native-device-info";
+
 const getTimezone = () => {
   try {
-    return Intl.DateTimeFormat().resolvedOptions().timeZone;
+    return DeviceInfo.getTimezone();
   } catch (err) {
     return "";
   }
