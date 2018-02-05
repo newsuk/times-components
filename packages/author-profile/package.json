@@ -4,14 +4,13 @@
   "description": "Author info along with articles they have written",
   "main": "author-profile",
   "scripts": {
-    "test:native": "jest --config='./jest.config.json'",
-    "test:web": "jest --config='./jest.config.web.json'",
-    "test": "yarn test:native --ci --bail --coverage && yarn test:web --ci --bail --coverage",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "lint": "eslint . && yarn prettier:diff",
-    "dextrose-stories": "dextrose-stories",
-    "dextrose-clean": "dextrose-clean"
+    "lint": "eslint . && npm run prettier:diff",
+    "test": "yarn test:android --ci --bail --coverage && yarn test:ios --ci --bail --coverage && yarn test:web --ci --bail --coverage",
+    "test:android": "jest --config='./__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'"
   },
   "repository": {
     "type": "git",
@@ -34,8 +33,8 @@
     "@storybook/addon-actions": "3.3.11",
     "@storybook/addons": "3.3.11",
     "@storybook/react-native": "3.3.11",
-    "@times-components/error-view": "0.8.0",
     "@times-components/eslint-config-thetimes": "0.1.3",
+    "@times-components/jest-configurator": "0.0.23",
     "@times-components/tealium": "0.2.0",
     "@times-components/utils": "0.3.0",
     "apollo-cache-inmemory": "1.1.5",
