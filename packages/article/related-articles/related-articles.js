@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, ScrollView } from "react-native";
 import Slice from "@times-components/slice";
 import RelatedArticlesHeading from "./heading";
 import RelatedArticleItem from "./related-article-item";
@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
 const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles) return null;
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <RelatedArticlesHeading />
       <Slice template={template}>
         {articles.map(article => (
@@ -25,7 +25,7 @@ const RelatedArticles = ({ articles, onPress, template }) => {
           />
         ))}
       </Slice>
-    </View>
+    </ScrollView>
   );
 };
 

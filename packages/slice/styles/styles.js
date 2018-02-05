@@ -1,16 +1,12 @@
 export default {
-  DEFAULT: {
+  default: {
     container: {
       display: "flex",
       flexDirection: "row"
+    },
+    child: {
+      flexBasis: 0,
+      flexGrow: 1
     }
-  },
-  LEAD_AND_TWO: {
-    borderColor: "green",
-    borderWidth: 10
-  },
-  OPINION_AND_TWO: {
-    borderColor: "black",
-    borderWidth: 10
   }
 };

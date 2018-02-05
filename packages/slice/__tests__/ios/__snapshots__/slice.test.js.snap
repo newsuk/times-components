@@ -12,11 +12,8 @@ exports[`Slice test on ios Related articles renders a single child element 1`] =
   <View
     style={
       Object {
-        "borderColor": "red",
-        "borderStyle": "solid",
-        "borderWidth": 1,
+        "flexBasis": 0,
         "flexGrow": 1,
-        "width": "50%",
       }
     }
   >
@@ -43,11 +40,8 @@ exports[`Slice test on ios Related articles renders multiple child elements 1`] 
   <View
     style={
       Object {
-        "borderColor": "red",
-        "borderStyle": "solid",
-        "borderWidth": 1,
+        "flexBasis": 0,
         "flexGrow": 1,
-        "width": "50%",
       }
     }
   >

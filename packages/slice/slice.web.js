@@ -1,27 +1,26 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {
-  SliceContainer,
-  ChildrenContainer,
-  ChildContainer
-} from "./styles/responsive";
+import getStyledComponent from "./styles/responsive";
 
 const Slice = ({ children, template }) => {
   if (!children) return null;
 
   const childArray = [...children];
+  const StyledSliceContainer = getStyledComponent(template, "SliceContainer");
+  const StyledChildrenContainer = getStyledComponent(
+    template,
+    "ChildrenContainer"
+  );
+  const StyledChildContainer = getStyledComponent(template, "ChildContainer");
 
-  console.log(template); // eslint-disable-line
-
-  // @TODO needs to be more agnostic of related articles specific styles / code
   return (
-    <SliceContainer>
-      <ChildrenContainer>
+    <StyledSliceContainer>
+      <StyledChildrenContainer>
         {childArray.map(child => (
-          <ChildContainer key={child.key}>{child}</ChildContainer>
+          <StyledChildContainer key={child.key}>{child}</StyledChildContainer>
         ))}
-      </ChildrenContainer>
-    </SliceContainer>
+      </StyledChildrenContainer>
+    </StyledSliceContainer>
   );
 };
 
