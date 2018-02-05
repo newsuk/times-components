@@ -5,7 +5,7 @@ import { action } from "@storybook/addon-actions";
 import { storiesOf } from "dextrose/storiesOfOverloader";
 import stateful from "react-stateful-fn";
 
-import Ad from "./ad";
+import Ad, { AdComposer } from "./ad";
 import Placeholder from "./placeholder";
 
 import NativeDOMContext from "./dom-context";
@@ -39,31 +39,45 @@ const withOpenInNewWindow = children => {
 };
 
 storiesOf("Advertisement", module)
-  .add("render one ad", () => withOpenInNewWindow(<Ad code="intervention" />))
+  .add("render one ad", () =>
+    withOpenInNewWindow(
+      <AdComposer>
+        <Ad code="intervention" />
+      </AdComposer>
+    )
+  )
   .add("render article ads", () =>
     withOpenInNewWindow(
       <View>
-        <Ad section="article" code="ad-header" pos="header" />
-        <Ad section="article" code="intervention" pos="inline-ad" />
-        <Ad
-          section="article"
-          code="ad-article-sponsored"
-          pos="article-sponsored-ad"
-        />
+        <AdComposer>
+          <Ad section="article" code="ad-header" pos="header" />
+        </AdComposer>
+        <AdComposer>
+          <Ad section="article" code="intervention" pos="inline-ad" />
+        </AdComposer>
+        <AdComposer>
+          <Ad
+            section="article"
+            code="ad-article-sponsored"
+            pos="article-sponsored-ad"
+          />
+        </AdComposer>
       </View>
     )
   )
   .add("sponsored ads", () =>
     withOpenInNewWindow(
       <View>
-        <Ad
-          section="article"
-          code="ad-article-sponsored"
-          pos="article-sponsored-ad"
-          networkId="3048"
-          width={1024}
-          height={250}
-        />
+        <AdComposer>
+          <Ad
+            section="article"
+            code="ad-article-sponsored"
+            pos="article-sponsored-ad"
+            networkId="3048"
+            width={1024}
+            height={250}
+          />
+        </AdComposer>
       </View>
     )
   )
@@ -75,7 +89,9 @@ storiesOf("Advertisement", module)
           elementum ex id diam eleifend convallis. Nulla faucibus nec nibh sed
           condimentum.
         </Text>
-        <Ad code="intervention" section="article" />
+        <AdComposer>
+          <Ad code="intervention" section="article" />
+        </AdComposer>
         <Text style={{ color: "red" }}>
           Class aptent taciti sociosqu ad litora torquent per conubia nostra,
           per inceptos himenaeos. Curabitur non sem ut sapien viverra pharetra
@@ -95,7 +111,9 @@ storiesOf("Advertisement", module)
           Orci varius natoque penatibus et magnis dis parturient montes,
           nascetur ridiculus mus.
         </Text>
-        <Ad code="header" section="article" />
+        <AdComposer>
+          <Ad code="header" section="article" />
+        </AdComposer>
         <Text>
           Donec convallis enim sit amet elit pharetra, et aliquet augue blandit.
           Integer suscipit mollis libero, et imperdiet nunc. Aenean eu lacus
@@ -104,7 +122,9 @@ storiesOf("Advertisement", module)
           vitae erat. Nulla eget nulla rhoncus, sollicitudin ipsum et, volutpat
           ligula.
         </Text>
-        <Ad code="intervention" section="article" />
+        <AdComposer>
+          <Ad code="intervention" section="article" />
+        </AdComposer>
         <Text>
           Aliquam dapibus risus a leo euismod, sed dignissim nibh commodo. Donec
           vitae justo aliquam, pellentesque risus laoreet, hendrerit augue.
@@ -121,7 +141,9 @@ storiesOf("Advertisement", module)
     const Component = stateful((props, { show }, { setState }) =>
       withOpenInNewWindow(
         <ScrollView>
-          <Ad code="header" section="article" />
+          <AdComposer>
+            <Ad code="header" section="article" />
+          </AdComposer>
           <Text
             style={{ color: "blue", textDecoration: "underline" }}
             onPress={() => setState({ show: !show })}

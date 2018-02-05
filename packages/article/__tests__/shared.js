@@ -15,6 +15,14 @@ const articleFixtureNoLabelNoFlagsNoStandFirst = require("../fixtures/no-label-n
 module.exports = () => {
   const realIntl = Intl;
 
+  const adConfig = {
+    networkId: "mockNetwork",
+    adUnit: "mockAdUnit",
+    pageTargeting: {
+      title: "Title"
+    }
+  };
+
   beforeEach(() => {
     global.Intl = {
       DateTimeFormat: () => ({
@@ -29,7 +37,9 @@ module.exports = () => {
 
   it("renders activity indicator ", () => {
     const tree = renderer
-      .create(<Article isLoading analyticsStream={() => {}} />)
+      .create(
+        <Article isLoading analyticsStream={() => {}} adConfig={adConfig} />
+      )
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
@@ -40,7 +50,7 @@ module.exports = () => {
     };
 
     const tree = renderer.create(
-      <Article {...props} analyticsStream={() => {}} />
+      <Article {...props} analyticsStream={() => {}} adConfig={adConfig} />
     );
     expect(tree).toMatchSnapshot();
   });
@@ -48,7 +58,11 @@ module.exports = () => {
   it("renders full article", () => {
     const tree = renderer
       .create(
-        <Article {...fullArticleFixture.data} analyticsStream={() => {}} />
+        <Article
+          {...fullArticleFixture.data}
+          analyticsStream={() => {}}
+          adConfig={adConfig}
+        />
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
@@ -57,7 +71,11 @@ module.exports = () => {
   it("renders article no flags", () => {
     const tree = renderer
       .create(
-        <Article {...articleFixtureNoFlags.data} analyticsStream={() => {}} />
+        <Article
+          {...articleFixtureNoFlags.data}
+          analyticsStream={() => {}}
+          adConfig={adConfig}
+        />
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
@@ -66,7 +84,11 @@ module.exports = () => {
   it("renders article no label", () => {
     const tree = renderer
       .create(
-        <Article {...articleFixtureNoLabel.data} analyticsStream={() => {}} />
+        <Article
+          {...articleFixtureNoLabel.data}
+          analyticsStream={() => {}}
+          adConfig={adConfig}
+        />
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
@@ -78,6 +100,7 @@ module.exports = () => {
         <Article
           {...articleFixtureNoStandfirst.data}
           analyticsStream={() => {}}
+          adConfig={adConfig}
         />
       )
       .toJSON();
@@ -90,6 +113,7 @@ module.exports = () => {
         <Article
           {...articleFixtureNoStandfirstNoFlags.data}
           analyticsStream={() => {}}
+          adConfig={adConfig}
         />
       )
       .toJSON();
@@ -102,6 +126,7 @@ module.exports = () => {
         <Article
           {...articleFixtureNoStandfirstNoLabel.data}
           analyticsStream={() => {}}
+          adConfig={adConfig}
         />
       )
       .toJSON();
@@ -113,6 +138,7 @@ module.exports = () => {
         <Article
           {...articleFixtureNoLabelNoFlags.data}
           analyticsStream={() => {}}
+          adConfig={adConfig}
         />
       )
       .toJSON();
@@ -124,6 +150,7 @@ module.exports = () => {
         <Article
           {...articleFixtureNoLabelNoFlagsNoStandFirst.data}
           analyticsStream={() => {}}
+          adConfig={adConfig}
         />
       )
       .toJSON();
@@ -133,7 +160,11 @@ module.exports = () => {
   it("tracks page view", () => {
     const stream = jest.fn();
     renderer.create(
-      <Article {...fullArticleFixture.data} analyticsStream={stream} />
+      <Article
+        {...fullArticleFixture.data}
+        analyticsStream={stream}
+        adConfig={adConfig}
+      />
     );
     expect(stream).toHaveBeenCalledWith({
       object: "Article",

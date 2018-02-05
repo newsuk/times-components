@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { Subscriber } from "react-broadcast";
 import { View, ViewPropTypes, Dimensions, StyleSheet } from "react-native";
 import { getSlotConfig, getSizeMaps } from "./generate-config";
 import Placeholder from "./placeholder";
 import DOMContext from "./dom-context";
 import adInit from "./ad-init";
-import pageOptions from "./fixtures/page-options.json";
+import AdComposer from "./ad-composer";
 import slotOptions from "./fixtures/slot-options.json";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
@@ -33,16 +34,16 @@ class Ad extends Component {
     });
   };
 
-  render() {
+  renderAd(adConfig) {
     const data = {
       config: this.config,
       code: this.props.code,
-      networkId: this.props.networkId,
-      adUnit: this.props.adUnit,
+      networkId: adConfig.networkId,
+      adUnit: adConfig.adUnit,
       section: this.props.section,
       pos: this.props.pos,
       sizingMap: getSizeMaps(this.props.code),
-      pageOptions,
+      pageTargeting: adConfig.pageTargeting,
       slotOptions: { ...slotOptions, pos: this.props.pos }
     };
 
@@ -77,6 +78,17 @@ class Ad extends Component {
       </View>
     );
   }
+
+  render() {
+    if (this.props.overrideAdConfig) {
+      return this.renderAd(this.props.overrideAdConfig);
+    }
+    return (
+      <Subscriber channel="adConfig">
+        {adConfig => this.renderAd(adConfig)}
+      </Subscriber>
+    );
+  }
 }
 
 Ad.propTypes = {
@@ -86,7 +98,12 @@ Ad.propTypes = {
   section: PropTypes.string,
   pos: PropTypes.string,
   baseUrl: PropTypes.string,
-  style: ViewPropTypesStyle
+  style: ViewPropTypesStyle,
+  overrideAdConfig: PropTypes.shape({
+    networkId: PropTypes.string.isRequired,
+    adUnit: PropTypes.string.isRequired,
+    pageTargeting: PropTypes.shape({})
+  })
 };
 
 // NOTE, these values are temporary, adding real values (or removing defaults
@@ -97,7 +114,10 @@ Ad.defaultProps = {
   section: "article",
   pos: "article-ad",
   baseUrl: "https://www.thetimes.co.uk/",
-  style: null
+  style: null,
+  overrideAdConfig: null
 };
 
 export default Ad;
+
+export { AdComposer };

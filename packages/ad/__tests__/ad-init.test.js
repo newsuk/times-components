@@ -48,6 +48,9 @@ describe("Ad init", () => {
         sizingMap: [],
         networkId: "mockNetwork",
         adUnit: "mockAdUnit",
+        pageTargeting: {
+          title: "Title"
+        },
         code: "mockCode",
         pos: "mockPos"
       },
@@ -94,14 +97,10 @@ describe("Ad init", () => {
   });
 
   it("configures googletag on page init", () => {
-    initOptions.data.pageOptions = { pageOptionName: "pageOptionValue" };
     init = adInit(initOptions);
     init.pageInit();
     processGoogletagCommandQueue();
-    expect(mockPubAds.setTargeting).toHaveBeenCalledWith(
-      "pageOptionName",
-      "pageOptionValue"
-    );
+    expect(mockPubAds.setTargeting).toHaveBeenCalledWith("title", "Title");
   });
 
   it("configures slots on slot init", () => {
