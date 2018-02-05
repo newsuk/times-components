@@ -1,6 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { SliceContainer, ChildContainer } from "./styles/responsive";
+import {
+  SliceContainer,
+  ChildrenContainer,
+  ChildContainer
+} from "./styles/responsive";
 
 const Slice = ({ children, template }) => {
   if (!children) return null;
@@ -12,9 +16,11 @@ const Slice = ({ children, template }) => {
   // @TODO needs to be more agnostic of related articles specific styles / code
   return (
     <SliceContainer>
-      {childArray.map(child => (
-        <ChildContainer key={child.key}>{child}</ChildContainer>
-      ))}
+      <ChildrenContainer>
+        {childArray.map(child => (
+          <ChildContainer key={child.key}>{child}</ChildContainer>
+        ))}
+      </ChildrenContainer>
     </SliceContainer>
   );
 };

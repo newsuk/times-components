@@ -12,6 +12,8 @@ const styles = StyleSheet.create({
     borderBottomColor: "#dbdbdb",
     borderBottomWidth: StyleSheet.hairlineWidth,
     paddingBottom: 10,
+    paddingLeft: 10,
+    paddingRight: 10,
     paddingTop: 10
   }
 });

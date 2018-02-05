@@ -7,15 +7,9 @@ import { propTypes, defaultProps } from "./proptypes";
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 10,
-    paddingLeft: 10,
-    paddingRight: 10
+    marginTop: 10
   }
 });
-
-// borderBottomColor: "red",
-//     borderBottomWidth: StyleSheet.hairlineWidth,
-//     borderStyle: "solid"
 
 const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles) return null;

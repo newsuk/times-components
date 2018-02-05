@@ -11,7 +11,9 @@ const styles = StyleSheet.create({
     height: 57,
     display: "flex",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    paddingLeft: 10,
+    paddingRight: 10
   },
   title: {
     fontFamily: "TimesModern-Bold",

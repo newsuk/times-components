@@ -1,4 +1,4 @@
-import { View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 
 const mediumBpWidth = "83.33333333%";
@@ -6,6 +6,14 @@ const wideBpWidth = "58.33333%";
 
 // @TODO: use template to pull these in
 export const SliceContainer = withResponsiveStyles(View, {
+  mediumUp: () => `
+    border-style: solid;
+    border-bottom-color: #dbdbdb;
+    border-bottom-width: ${StyleSheet.hairlineWidth}px;
+  `
+});
+
+export const ChildrenContainer = withResponsiveStyles(View, {
   base: () => `
     display: flex;
     flex-direction: column;
