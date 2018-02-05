@@ -1,11 +1,7 @@
-import { StyleSheet } from "react-native";
+import React from "react";
+import { StyleSheet, View, Text } from "react-native";
 
-const sharedStyle = {
-  container: {
-    marginTop: 10,
-    paddingLeft: 10,
-    paddingRight: 10
-  },
+const styles = StyleSheet.create({
   titleContainer: {
     borderStyle: "solid",
     borderBottomColor: "#dbdbdb",
@@ -32,6 +28,12 @@ const sharedStyle = {
     fontFamily: "TimesModern-Bold",
     fontWeight: "400"
   }
-};
+});
 
-export default sharedStyle;
+const RelatedArticlesHeading = () => (
+  <View style={styles.titleContainer}>
+    <Text style={styles.title}>Related links</Text>
+  </View>
+);
+
+export default RelatedArticlesHeading;

@@ -2,11 +2,13 @@ import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 import context from "jest-context";
-import singleRelatedArticleFixture from "@times-components/article/related-articles/fixtures/single-related-article.json";
-import singleRelatedArticleNoImageFixture from "@times-components/article/related-articles/fixtures/single-related-article-no-image.json";
-import singleRelatedArticleNoLabelFixture from "@times-components/article/related-articles/fixtures/single-related-article-no-label.json";
-import singleRelatedArticleNoBylineFixture from "@times-components/article/related-articles/fixtures/single-related-article-no-byline.json";
-import Slice from "../slice";
+
+import RelatedArticles from "../related-articles/related-articles";
+
+import singleRelatedArticleFixture from "../related-articles/fixtures/single-related-article.json";
+import singleRelatedArticleNoImageFixture from "../related-articles/fixtures/single-related-article-no-image.json";
+import singleRelatedArticleNoLabelFixture from "../related-articles/fixtures/single-related-article-no-label.json";
+import singleRelatedArticleNoBylineFixture from "../related-articles/fixtures/single-related-article-no-byline.json";
 
 const createRelatedArticlesProps = fixtureData => ({
   ...fixtureData.relatedArticles[0],
@@ -30,10 +32,10 @@ module.exports = () => {
   });
 
   context("Related articles", () => {
-    it("renders single slice with related", () => {
+    it("renders single article", () => {
       const tree = renderer
         .create(
-          <Slice
+          <RelatedArticles
             item={createRelatedArticlesProps(singleRelatedArticleFixture.data)}
           />
         )
@@ -41,10 +43,10 @@ module.exports = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders single slice with related with no lead image", () => {
+    it("renders single article with no lead image", () => {
       const tree = renderer
         .create(
-          <Slice
+          <RelatedArticles
             item={createRelatedArticlesProps(
               singleRelatedArticleNoImageFixture.data
             )}
@@ -54,10 +56,10 @@ module.exports = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders single slice with related with no label", () => {
+    it("renders single article with no label", () => {
       const tree = renderer
         .create(
-          <Slice
+          <RelatedArticles
             item={createRelatedArticlesProps(
               singleRelatedArticleNoLabelFixture.data
             )}
@@ -67,10 +69,10 @@ module.exports = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders single slice with related with no byline", () => {
+    it("renders single article with no byline", () => {
       const tree = renderer
         .create(
-          <Slice
+          <RelatedArticles
             item={createRelatedArticlesProps(
               singleRelatedArticleNoBylineFixture.data
             )}

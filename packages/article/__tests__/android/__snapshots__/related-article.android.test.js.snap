@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Slice test on android Related articles renders single article 1`] = `
+exports[`Related articles test on android Related articles renders single article 1`] = `
 <View
   style={
     Object {
@@ -210,38 +210,25 @@ exports[`Slice test on android Related articles renders single article 1`] = `
             </View>
           </View>
           <View>
-            <View>
-              <View
+            <View
+              style={Object {}}
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
                 style={
                   Object {
-                    "marginBottom": 5,
+                    "color": "#333333",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 12,
+                    "letterSpacing": 1,
+                    "marginBottom": 2,
                   }
                 }
               >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 12,
-                        "fontWeight": "400",
-                        "letterSpacing": 1.2,
-                        "lineHeight": 12,
-                        "marginBottom": -4,
-                        "paddingTop": 5,
-                      },
-                      Object {
-                        "color": "#333333",
-                      },
-                    ]
-                  }
-                >
-                  B A Y E U X   T A P E S T R Y
-                </Text>
-              </View>
+                BAYEUX TAPESTRY
+              </Text>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -258,7 +245,6 @@ exports[`Slice test on android Related articles renders single article 1`] = `
                       "fontSize": 22,
                       "lineHeight": 22,
                     },
-                    Object {},
                   ]
                 }
               >
@@ -359,7 +345,7 @@ exports[`Slice test on android Related articles renders single article 1`] = `
 </View>
 `;
 
-exports[`Slice test on android Related articles renders single article with no byline 1`] = `
+exports[`Related articles test on android Related articles renders single article with no byline 1`] = `
 <View
   style={
     Object {
@@ -569,38 +555,25 @@ exports[`Slice test on android Related articles renders single article with no b
             </View>
           </View>
           <View>
-            <View>
-              <View
+            <View
+              style={Object {}}
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
                 style={
                   Object {
-                    "marginBottom": 5,
+                    "color": "#333333",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 12,
+                    "letterSpacing": 1,
+                    "marginBottom": 2,
                   }
                 }
               >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 12,
-                        "fontWeight": "400",
-                        "letterSpacing": 1.2,
-                        "lineHeight": 12,
-                        "marginBottom": -4,
-                        "paddingTop": 5,
-                      },
-                      Object {
-                        "color": "#333333",
-                      },
-                    ]
-                  }
-                >
-                  B A Y E U X   T A P E S T R Y
-                </Text>
-              </View>
+                BAYEUX TAPESTRY
+              </Text>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -617,7 +590,6 @@ exports[`Slice test on android Related articles renders single article with no b
                       "fontSize": 22,
                       "lineHeight": 22,
                     },
-                    Object {},
                   ]
                 }
               >
@@ -666,20 +638,6 @@ exports[`Slice test on android Related articles renders single article with no b
               >
                 Friday March 13 2015, 06:54pm
               </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                    "lineHeight": 15,
-                    "marginBottom": 5,
-                  }
-                }
-              />
             </View>
           </View>
         </View>
@@ -689,7 +647,7 @@ exports[`Slice test on android Related articles renders single article with no b
 </View>
 `;
 
-exports[`Slice test on android Related articles renders single article with no label 1`] = `
+exports[`Related articles test on android Related articles renders single article with no label 1`] = `
 <View
   style={
     Object {
@@ -899,7 +857,9 @@ exports[`Slice test on android Related articles renders single article with no l
             </View>
           </View>
           <View>
-            <View>
+            <View
+              style={Object {}}
+            >
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -916,7 +876,6 @@ exports[`Slice test on android Related articles renders single article with no l
                       "fontSize": 22,
                       "lineHeight": 22,
                     },
-                    Object {},
                   ]
                 }
               >
@@ -996,7 +955,7 @@ exports[`Slice test on android Related articles renders single article with no l
 </View>
 `;
 
-exports[`Slice test on android Related articles renders single article with no lead image 1`] = `
+exports[`Related articles test on android Related articles renders single article with no lead image 1`] = `
 <View
   style={
     Object {
@@ -1074,38 +1033,25 @@ exports[`Slice test on android Related articles renders single article with no l
           style={null}
         >
           <View>
-            <View>
-              <View
+            <View
+              style={Object {}}
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
                 style={
                   Object {
-                    "marginBottom": 5,
+                    "color": "#333333",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 12,
+                    "letterSpacing": 1,
+                    "marginBottom": 2,
                   }
                 }
               >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 12,
-                        "fontWeight": "400",
-                        "letterSpacing": 1.2,
-                        "lineHeight": 12,
-                        "marginBottom": -4,
-                        "paddingTop": 5,
-                      },
-                      Object {
-                        "color": "#333333",
-                      },
-                    ]
-                  }
-                >
-                  B A Y E U X   T A P E S T R Y
-                </Text>
-              </View>
+                BAYEUX TAPESTRY
+              </Text>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -1122,7 +1068,6 @@ exports[`Slice test on android Related articles renders single article with no l
                       "fontSize": 22,
                       "lineHeight": 22,
                     },
-                    Object {},
                   ]
                 }
               >

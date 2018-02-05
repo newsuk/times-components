@@ -3,14 +3,14 @@ import React from "react";
 import renderer from "react-test-renderer";
 import Article from "../article";
 
-const fullArticleFixture = require("../fixtures/full-article.json");
-const articleFixtureNoLabel = require("../fixtures/no-label.json");
-const articleFixtureNoFlags = require("../fixtures/no-flags.json");
-const articleFixtureNoStandfirst = require("../fixtures/no-standfirst.json");
-const articleFixtureNoStandfirstNoLabel = require("../fixtures/no-standfirst-no-label.json");
-const articleFixtureNoStandfirstNoFlags = require("../fixtures/no-standfirst-no-flags.json");
-const articleFixtureNoLabelNoFlags = require("../fixtures/no-label-no-flags.json");
-const articleFixtureNoLabelNoFlagsNoStandFirst = require("../fixtures/no-label-no-flags-no-standfirst.json");
+import fullArticleFixture from "../fixtures/full-article.json";
+import articleFixtureNoLabel from "../fixtures/no-label.json";
+import articleFixtureNoFlags from "../fixtures/no-flags.json";
+import articleFixtureNoStandfirst from "../fixtures/no-standfirst.json";
+import articleFixtureNoStandfirstNoLabel from "../fixtures/no-standfirst-no-label.json";
+import articleFixtureNoStandfirstNoFlags from "../fixtures/no-standfirst-no-flags.json";
+import articleFixtureNoLabelNoFlags from "../fixtures/no-label-no-flags.json";
+import articleFixtureNoLabelNoFlagsNoStandFirst from "../fixtures/no-label-no-flags-no-standfirst.json";
 
 module.exports = () => {
   const realIntl = Intl;
