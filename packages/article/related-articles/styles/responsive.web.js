@@ -3,22 +3,38 @@ import withResponsiveStyles from "@times-components/responsive-styles";
 
 export const StyledRelatedArticlesHeading = withResponsiveStyles(View, {
   base: () => `
+    align-items: center;
     border-style: solid;
     border-bottom-color: #dbdbdb;
     border-bottom-width: ${StyleSheet.hairlineWidth}px;
     border-top-color: #dbdbdb;
     border-top-width: ${StyleSheet.hairlineWidth}px;
-    height: 57px;
     display: flex;
-    align-items: center;
+    height: 57px;
     justify-content: center;
     margin-left: 10px;
     margin-right: 10px;
   `,
   mediumUp: () => `
-      margin-left: 0;
-      margin-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   `
+});
+
+export const StyledSeparator = withResponsiveStyles(View, {
+  base: () => `
+      display: none;
+    `,
+  mediumUp: () => `
+      border-right-style: solid;
+      border-right-width: 1px;
+      border-right-color: #dbdbdb;
+      display: block;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      min-height: 100%;
+    `
 });
 
 export const RelatedArticleContainer = articleCount =>
@@ -32,7 +48,7 @@ export const RelatedArticleContainer = articleCount =>
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 10px;
+    margin-top: 10px;
   `,
     mediumUp: () => `
       border: 0;

@@ -37,6 +37,5 @@ export const ChildContainer = withResponsiveStyles(View, {
   `,
   mediumUp: () => `
     flex-basis: 0 !important;
-    padding-left: 15px;
   `
 });

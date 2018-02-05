@@ -1,26 +1,6 @@
 import React from "react";
-import { StyleSheet, View, Text } from "react-native";
-
-const styles = StyleSheet.create({
-  titleContainer: {
-    borderStyle: "solid",
-    borderBottomColor: "#dbdbdb",
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderTopColor: "#dbdbdb",
-    borderTopWidth: StyleSheet.hairlineWidth,
-    height: 57,
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    paddingLeft: 10,
-    paddingRight: 10
-  },
-  title: {
-    fontFamily: "TimesModern-Bold",
-    fontSize: 26,
-    color: "#333"
-  }
-});
+import { View, Text } from "react-native";
+import styles from "./styles/base";
 
 const RelatedArticlesHeading = () => (
   <View style={styles.titleContainer}>

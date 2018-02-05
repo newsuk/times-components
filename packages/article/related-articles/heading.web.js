@@ -1,14 +1,7 @@
 import React from "react";
-import { StyleSheet, Text } from "react-native";
+import { Text } from "react-native";
+import styles from "./styles/base";
 import { StyledRelatedArticlesHeading } from "./styles/responsive";
-
-const styles = StyleSheet.create({
-  title: {
-    fontFamily: "TimesModern-Bold",
-    fontSize: 26,
-    color: "#333"
-  }
-});
 
 const RelatedArticlesHeading = () => (
   <StyledRelatedArticlesHeading>

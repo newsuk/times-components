@@ -21,7 +21,6 @@ const RelatedArticles = ({ articles, onPress, template }) => {
           <RelatedArticleItem
             key={article.id}
             article={article}
-            articleCount={articles.length}
             onPress={onPress}
           />
         ))}
