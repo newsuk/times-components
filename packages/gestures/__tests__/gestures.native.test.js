@@ -5,13 +5,12 @@ import Gesture from "../gestures";
 
 jest.useFakeTimers();
 const delay = ms => new Promise(done => setTimeout(done, ms));
-  
+
 const delayAndAdvance = ms => {
   const timer = delay(ms);
   jest.runTimersToTime(ms);
   return timer;
 };
-
 
 const mapTouches = ({ x, y }) => ({
   pageX: x,
