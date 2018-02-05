@@ -1,12 +1,12 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import defaultFixture from "../fixtures/default.json";
-import articleMultiFixture from "../fixtures/article-multi.json";
-import emptyParagraphFixture from "../fixtures/article-empty-paragraph.json";
-import noBylineFixture from "../fixtures/no-byline.json";
-import noLabelFixture from "../fixtures/no-label.json";
-import reviewFixture from "../fixtures/review.json";
-import blankFixture from "../fixtures/blank.json";
+import defaultFixture from "../fixtures/default";
+import articleMultiFixture from "../fixtures/article-multi";
+import emptyParagraphFixture from "../fixtures/article-empty-paragraph";
+import noBylineFixture from "../fixtures/no-byline";
+import noLabelFixture from "../fixtures/no-label";
+import reviewFixture from "../fixtures/review";
+import blankFixture from "../fixtures/blank";
 
 export default ArticleSummary => {
   const realIntl = Intl;
