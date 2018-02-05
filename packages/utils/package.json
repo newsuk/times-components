@@ -4,7 +4,6 @@
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "scripts": {
     "make-schema": "node ./scripts/fetch-gql-schema",
-    "test:watch": "jest --bail --verbose --watchAll",
     "test": "jest --bail --ci --coverage",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",

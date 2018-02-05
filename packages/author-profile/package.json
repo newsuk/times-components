@@ -4,7 +4,6 @@
   "description": "Author info along with articles they have written",
   "main": "author-profile",
   "scripts": {
-    "test:watch": "yarn test:native --bail --verbose --watchAll",
     "test:native": "jest --config='./jest.config.json'",
     "test:web": "jest --config='./jest.config.web.json'",
     "test": "yarn test:native --ci --bail --coverage && yarn test:web --ci --bail --coverage",

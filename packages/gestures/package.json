@@ -8,7 +8,6 @@
     "test:android:debug": "node --inspect --inspect-brk node_modules/.bin/jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test": "yarn test:android --ci --bail --coverage && yarn test:ios --ci --bail --coverage",
-    "test:watch": "jest --projects */**/jest.config.js --watchAll",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",

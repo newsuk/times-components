@@ -4,7 +4,6 @@
   "description": "React storybook helpers for Times Components",
   "main": "tealium.js",
   "scripts": {
-    "test:watch": "jest --bail --verbose --watchAll",
     "test": "jest --bail --ci --coverage",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

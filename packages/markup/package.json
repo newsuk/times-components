@@ -4,7 +4,6 @@
   "description": "a component which takes an HTML ast and renders the platform specific markup",
   "main": "markup",
   "scripts": {
-    "test:watch": "yarn test:native --bail --verbose --watchAll",
     "test:native": "jest --config='./jest.config.json'",
     "test:web": "jest --config='./jest.config.web.json'",
     "test": "yarn test:native --ci --bail --coverage && yarn test:web --ci --bail --coverage",
