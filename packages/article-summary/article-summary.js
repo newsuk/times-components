@@ -63,3 +63,4 @@ ArticleSummary.defaultProps = {
 export { renderAst, summarise, renderer, ArticleSummaryHeadline };
 
 export default ArticleSummary;
+
