@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "1.13.6",
+  "version": "1.13.7",
   "main": "image",
   "scripts": {
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
@@ -50,7 +50,7 @@
   },
   "dependencies": {
     "@times-components/gestures": "1.1.4",
-    "@times-components/gradient": "0.3.17",
+    "@times-components/gradient": "0.4.0",
     "@times-components/link": "0.13.16",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.0",

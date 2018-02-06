@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.41.17"></a>
+## [0.41.17](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.41.15...@times-components/author-profile@0.41.17) (2018-02-06)
+
+
+### Bug Fixes
+
+* use faketimers to make author profile tests more deterministic ([#597](https://github.com/newsuk/times-components/issues/597)) ([4b17846](https://github.com/newsuk/times-components/commit/4b17846))
+
+
+
+
 <a name="0.41.16"></a>
 ## [0.41.16](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.41.15...@times-components/author-profile@0.41.16) (2018-02-06)
 
