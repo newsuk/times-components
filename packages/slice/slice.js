@@ -1,17 +1,12 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import PropTypes from "prop-types";
-import templateStyles from "./styles/styles";
+import slicePropTypes from "./proptypes";
+import getTemplateStyles from "./styles";
 
 const Slice = ({ children, template }) => {
   if (!children) return null;
 
-  const templateName = template.toLowerCase();
-
-  const styles = StyleSheet.create({
-    container: templateStyles[templateName].container,
-    child: templateStyles[templateName].child
-  });
+  const styles = StyleSheet.create(getTemplateStyles(template));
 
   return (
     <View style={styles.container}>
@@ -20,16 +15,6 @@ const Slice = ({ children, template }) => {
   );
 };
 
-Slice.propTypes = {
-  template: PropTypes.string,
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.arrayOf(PropTypes.element)
-  ]).isRequired
-};
-
-Slice.defaultProps = {
-  template: "DEFAULT"
-};
+Slice.propTypes = slicePropTypes;
 
 export default Slice;

@@ -6,10 +6,14 @@ import Slice from "../slice";
 
 module.exports = () => {
   context("Related articles", () => {
+    const template = {
+      domain: "relatedArticles",
+      type: "Default"
+    };
     it("renders a single child element", () => {
       const tree = renderer
         .create(
-          <Slice>
+          <Slice template={template}>
             <Text key="test1">Test text</Text>
           </Slice>
         )
@@ -20,7 +24,7 @@ module.exports = () => {
     it("renders multiple child elements", () => {
       const tree = renderer
         .create(
-          <Slice>
+          <Slice template={template}>
             <Text key="test1">Test text 1</Text>
             <Text key="test2">Test text 2</Text>
           </Slice>

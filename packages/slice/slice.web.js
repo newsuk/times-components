@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+import slicePropTypes from "./proptypes";
 import getStyledComponent from "./styles/responsive";
 
 const Slice = ({ children, template }) => {
@@ -24,16 +24,6 @@ const Slice = ({ children, template }) => {
   );
 };
 
-Slice.propTypes = {
-  template: PropTypes.string,
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.arrayOf(PropTypes.element)
-  ]).isRequired
-};
-
-Slice.defaultProps = {
-  template: "DEFAULT"
-};
+Slice.propTypes = slicePropTypes;
 
 export default Slice;
