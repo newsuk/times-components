@@ -3,7 +3,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import DatePublication from "../date-publication";
 
-function tests() {
+export default function() {
   it("renders a DatePublication component with Times publication and relevant GMT date", () => {
     const tree = renderer
       .create(
@@ -27,5 +27,3 @@ function tests() {
     expect(tree).toMatchSnapshot();
   });
 }
-
-export default tests;
