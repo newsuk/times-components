@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.22.3"></a>
+## [0.22.3](https://github.com/newsuk/times-components/compare/@times-components/provider@0.22.2...@times-components/provider@0.22.3) (2018-02-06)
+
+
+### Bug Fixes
+
+* don't change state if component receives the same props ([#595](https://github.com/newsuk/times-components/issues/595)) ([771bfa6](https://github.com/newsuk/times-components/commit/771bfa6))
+
+
+
+
 <a name="0.22.2"></a>
 ## [0.22.2](https://github.com/newsuk/times-components/compare/@times-components/provider@0.22.1...@times-components/provider@0.22.2) (2018-01-31)
 

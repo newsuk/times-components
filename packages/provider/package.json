@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider",
-  "version": "0.22.2",
+  "version": "0.22.3",
   "main": "provider",
   "scripts": {
     "test:watch": "jest --bail --verbose --watchAll",
