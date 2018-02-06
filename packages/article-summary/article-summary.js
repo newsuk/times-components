@@ -11,10 +11,6 @@ function renderAst(ast) {
   return renderTrees(summarise(ast), renderer);
 }
 
-function renderAst(ast) {
-  return renderTrees(summarise(ast), renderer);
-}
-
 const ArticleSummary = props => {
   const { Label, Headline, summaryText, DatePublication, Byline } = props;
 

@@ -13,14 +13,14 @@ export default function() {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders a DatePublication component with an appropriate GMT date", () => {
+  it("renders a DatePublication component with GMT date", () => {
     const tree = renderer
       .create(<DatePublication date="2017-01-01T14:32:00.000Z" />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders a DatePublication component with an appropriate BST date", () => {
+  it("renders a DatePublication component with BST date", () => {
     const tree = renderer
       .create(<DatePublication date="2017-07-01T14:32:00.000Z" />)
       .toJSON();
