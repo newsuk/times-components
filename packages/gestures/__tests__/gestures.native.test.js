@@ -3,7 +3,7 @@ import { Text } from "react-native";
 import { shallow } from "enzyme";
 import Gesture from "../gestures";
 
-jest.useFakeTimers();		 +const waitFor = delay => new Promise(res => setTimeout(res, delay));
+jest.useFakeTimers();
 const delay = ms => new Promise(done => setTimeout(done, ms));
 
 const delayAndAdvance = ms => {
