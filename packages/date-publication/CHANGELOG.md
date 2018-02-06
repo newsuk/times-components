@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.8.11...@times-components/date-publication@0.9.0) (2018-02-06)
+
+
+### Features
+
+* move DatePublication over to Jest Configurator ([#596](https://github.com/newsuk/times-components/issues/596)) ([a3966a6](https://github.com/newsuk/times-components/commit/a3966a6))
+
+
+
+
 <a name="0.8.11"></a>
 ## [0.8.11](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.8.10...@times-components/date-publication@0.8.11) (2018-01-31)
 

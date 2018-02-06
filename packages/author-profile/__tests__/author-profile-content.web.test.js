@@ -8,7 +8,15 @@ import AuthorProfileItem from "../author-profile-item";
 import AuthorProfileContent from "../author-profile-content.web.js";
 import pagedResult from "./paged-result";
 
+jest.useFakeTimers();
+
 const delay = ms => new Promise(res => setTimeout(res, ms));
+
+const delayAndAdvance = ms => {
+  const timer = delay(ms);
+  jest.runTimersToTime(ms);
+  return timer;
+};
 
 test(AuthorProfileContent);
 
@@ -158,7 +166,7 @@ it("renders a good quality image if it is visible", async () => {
 
   window.IntersectionObserver.dispatchEntriesForInstance(1, makeEntries);
 
-  await delay(100);
+  await delayAndAdvance(100);
 
   expect(
     component
@@ -183,7 +191,7 @@ it("renders a poor quality image if it is not visible", async () => {
 
   window.IntersectionObserver.dispatchEntriesForInstance(1, makeEntries);
 
-  await delay(100);
+  await delayAndAdvance(100);
 
   expect(
     component
@@ -234,7 +242,6 @@ it("renders good quality images if there is no IntersectionObserver", () => {
 
 it("does not render good quality images if the item is quickly scrolled passed", async () => {
   window.IntersectionObserver = FakeIntersectionObserver;
-
   const component = mount(
     <AuthorProfileContent
       {...authorProfileContentProps}
@@ -252,7 +259,7 @@ it("does not render good quality images if the item is quickly scrolled passed",
     }));
   window.IntersectionObserver.dispatchEntriesForInstance(1, makeEntries);
 
-  await delay(20);
+  await delayAndAdvance(20);
 
   const makeNewEntries = nodes =>
     [...nodes].map((node, indx) => ({
@@ -261,7 +268,7 @@ it("does not render good quality images if the item is quickly scrolled passed",
     }));
   window.IntersectionObserver.dispatchEntriesForInstance(1, makeNewEntries);
 
-  await delay(100);
+  await delayAndAdvance(100);
 
   expect(component.render().find("img")).toMatchSnapshot();
 });
@@ -289,7 +296,7 @@ it("does no work if there are no pending items", async () => {
     }));
   window.IntersectionObserver.dispatchEntriesForInstance(1, makeEntries);
 
-  await delay(20);
+  await delayAndAdvance(20);
 
   // Scroll passed all items before setting state
   const makeNewEntries = nodes =>
@@ -299,7 +306,7 @@ it("does no work if there are no pending items", async () => {
     }));
   window.IntersectionObserver.dispatchEntriesForInstance(1, makeNewEntries);
 
-  await delay(100);
+  await delayAndAdvance(100);
 
   // No work was done
   expect(spy).not.toHaveBeenCalled();
@@ -329,7 +336,7 @@ it("does not set state after unmounting", async () => {
     }));
   window.IntersectionObserver.dispatchEntriesForInstance(1, makeEntries);
 
-  await delay(20);
+  await delayAndAdvance(20);
 
   const makeNewEntries = nodes =>
     [...nodes].map((node, indx) => ({
@@ -338,11 +345,11 @@ it("does not set state after unmounting", async () => {
     }));
   window.IntersectionObserver.dispatchEntriesForInstance(1, makeNewEntries);
 
-  await delay(0);
+  await delayAndAdvance(0);
 
   component.unmount();
 
-  await delay(100);
+  await delayAndAdvance(100);
 
   expect(setStateSpy.mock.calls.length).toBe(0);
 
