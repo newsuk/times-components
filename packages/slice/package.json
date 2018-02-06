@@ -37,7 +37,7 @@
     "@storybook/addons": "3.3.11",
     "@storybook/react-native": "3.3.11",
     "@times-components/jest-configurator": "0.0.21",
-    "dextrose": "1.4.0",
+    "dextrose": "1.4.2",
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "jest-context": "2.1.0",
