@@ -39,7 +39,7 @@ class Ad extends Component {
       code: this.props.code,
       networkId: this.props.networkId,
       adUnit: this.props.adUnit,
-      contextUrl: "https://www.thetimes.co.uk/edition/news/ftse-fears-after-record-wall-st-fall-97bbj8p7n",
+      contextUrl: "https://www.thetimes.co.uk/article/fdefc7fa-0ac4-11e8-a5b3-3d239643ad40",
       section: this.props.section,
       sizingMap: getSizeMaps(this.props.pos),
       pageTargeting: adConfig.pageTargeting,
