@@ -1,4 +1,4 @@
-import tests from "../shared";
+import shared from "../shared";
 
 const realIntl = Intl;
 
@@ -13,7 +13,7 @@ describe("Date Publication test on Web when the user has the same time zone as L
   afterEach(() => {
     global.Intl = realIntl;
   });
-  tests();
+  shared();
 });
 
 describe("Date Publication test on Web when the user has a different time zone than London time zone", () => {
@@ -27,5 +27,5 @@ describe("Date Publication test on Web when the user has a different time zone t
   afterEach(() => {
     global.Intl = realIntl;
   });
-  tests();
+  shared();
 });

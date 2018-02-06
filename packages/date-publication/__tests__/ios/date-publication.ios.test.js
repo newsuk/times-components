@@ -1,4 +1,4 @@
-import tests from "../shared";
+import shared from "../shared";
 
 // eslint-disable-next-line import/no-extraneous-dependencies
 const rndiMock = require("react-native-device-info");
@@ -9,12 +9,12 @@ describe("Date Publication test on iOS when the user has the same time zone as L
   beforeEach(() => {
     rndiMock.setMockTimezone("Europe/London");
   });
-  tests();
+  shared();
 });
 
 describe("Date Publication test on iOS when the user has a different time zone than London time zone", () => {
   beforeEach(() => {
     rndiMock.setMockTimezone("Europe/Kiev");
   });
-  tests();
+  shared();
 });
