@@ -11,7 +11,6 @@
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
-    "test:watch": "jest --projects */**/jest.config.js --watchAll",
     "dextrose-stories": "dextrose-stories",
     "dextrose-clean": "dextrose-clean"
   },
@@ -33,9 +32,6 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@storybook/addon-actions": "3.3.11",
-    "@storybook/addons": "3.3.11",
-    "@storybook/react-native": "3.3.11",
     "@times-components/jest-configurator": "0.0.21",
     "dextrose": "1.4.0",
     "eslint": "4.9.0",
@@ -48,13 +44,7 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/article": "0.31.3",
-    "@times-components/article-summary": "0.15.10",
-    "@times-components/card": "0.16.30",
-    "@times-components/image": "1.12.8",
-    "@times-components/markup": "0.16.3",
     "@times-components/responsive-styles": "0.2.13",
-    "lodash.get": "4.4.2",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
