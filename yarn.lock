@@ -334,9 +334,9 @@
     react-native-svg "5.5.0"
     svgs "3.1.1"
 
-"@times-components/fructose@3.1.14":
-  version "3.1.14"
-  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.1.14.tgz#a31be85b619132431a46774f970b4146927156c1"
+"@times-components/fructose@3.1.15":
+  version "3.1.15"
+  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.1.15.tgz#8e44cb5bfee0ca173edcd853fcc453785eba4d40"
   dependencies:
     babel-polyfill "^6.26.0"
     babel-preset-es2015 "^6.24.1"
@@ -4042,6 +4042,21 @@ dextrose@1.3.2:
 dextrose@1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.4.0.tgz#f98d24d609212cc8fef43aa621e1a346caccac79"
+  dependencies:
+    aws-sdk "^2.179.0"
+    babel-core "6.26.0"
+    babel-preset-react-native "4.0.0"
+    commander " 2.12.1"
+    npmlog "4.1.2"
+    osnap "^1.1.0"
+    pug "^2.0.0-rc.4"
+    socket.io "^2.0.4"
+    socket.io-client "^2.0.4"
+    wd "1.4.1"
+
+dextrose@1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.4.2.tgz#20e3d1ad638c5123f1f43f983e02862661cb58ed"
   dependencies:
     aws-sdk "^2.179.0"
     babel-core "6.26.0"
