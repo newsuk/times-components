@@ -54,6 +54,7 @@ class Ad extends Component {
     const webviewComponent = (
       <DOMContext
         data={data}
+        preScript={[{uri:, callback}]}
         scriptUris={["https://www.googletagservices.com/tag/js/gpt.js"]}
         globalNames={["googletag"]}
         baseUrl={this.props.baseUrl}
