@@ -251,7 +251,7 @@ exports[`Slice test on ios Related articles renders single article 1`] = `
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-
+                  
                   Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
                   ...
                 </Text>
@@ -272,7 +272,7 @@ exports[`Slice test on ios Related articles renders single article 1`] = `
                 }
                 testID="datePublication"
               >
-                Friday March 13 2015, 06:54pm
+                Friday March 13 2015, 06:54pm, The Times
               </Text>
               <Text
                 accessible={true}
@@ -577,7 +577,7 @@ exports[`Slice test on ios Related articles renders single article with no bylin
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-
+                  
                   Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
                   ...
                 </Text>
@@ -598,7 +598,7 @@ exports[`Slice test on ios Related articles renders single article with no bylin
                 }
                 testID="datePublication"
               >
-                Friday March 13 2015, 06:54pm
+                Friday March 13 2015, 06:54pm, The Times
               </Text>
               <Text
                 accessible={true}
@@ -803,15 +803,6 @@ exports[`Slice test on ios Related articles renders single article with no label
           </View>
           <View>
             <View>
-              <View
-                style={
-                  Object {
-                    "marginBottom": 0,
-                  }
-                }
-              >
-
-              </Text>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -854,7 +845,7 @@ exports[`Slice test on ios Related articles renders single article with no label
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-
+                  
                   Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
                   ...
                 </Text>
@@ -875,7 +866,7 @@ exports[`Slice test on ios Related articles renders single article with no label
                 }
                 testID="datePublication"
               >
-                Friday March 13 2015, 06:54pm
+                Friday March 13 2015, 06:54pm, The Times
               </Text>
               <Text
                 accessible={true}
@@ -1060,7 +1051,7 @@ exports[`Slice test on ios Related articles renders single article with no lead 
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-
+                  
                   Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
                   ...
                 </Text>
@@ -1081,7 +1072,7 @@ exports[`Slice test on ios Related articles renders single article with no lead 
                 }
                 testID="datePublication"
               >
-                Friday March 13 2015, 06:54pm
+                Friday March 13 2015, 06:54pm, The Times
               </Text>
               <Text
                 accessible={true}
