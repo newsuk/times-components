@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "0.15.11",
+  "version": "0.16.0",
   "main": "article-summary",
   "scripts": {
     "test:android": "jest --config='./__tests__/android/jest.config.js'",

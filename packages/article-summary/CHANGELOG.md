@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.16.0"></a>
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.15.11...@times-components/article-summary@0.16.0) (2018-02-06)
+
+
+### Features
+
+* Adding jest configurator to the Article Summary tests ([#592](https://github.com/newsuk/times-components/issues/592)) ([c4cf24c](https://github.com/newsuk/times-components/commit/c4cf24c))
+
+
+
+
 <a name="0.15.11"></a>
 ## [0.15.11](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.15.10...@times-components/article-summary@0.15.11) (2018-02-02)
 
