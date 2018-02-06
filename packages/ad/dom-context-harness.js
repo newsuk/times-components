@@ -36,9 +36,10 @@ const makeHarness = ({
   return {
     execute() {
       withCatch(() => {
-        this.loadScriptsParallel(scriptUris, () => {
-          this.checkForInit();
-        });
+        // create script tag for grapeshot
+
+        //this.injectScripts();
+        this.runInitIfGlobalsPresent();
       });
     },
     checkForInit() {
