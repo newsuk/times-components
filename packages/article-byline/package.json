@@ -4,7 +4,6 @@
   "description": "Article byline information",
   "main": "article-byline",
   "scripts": {
-    "test:watch": "yarn test -- --watchAll",
     "test": "jest --config='./jest.config.json' --ci --bail --coverage",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

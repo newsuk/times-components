@@ -11,7 +11,6 @@
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
-    "test:watch": "jest --projects */**/jest.config.js --watchAll",
     "dextrose-stories": "dextrose-stories",
     "dextrose-clean": "dextrose-clean"
   },

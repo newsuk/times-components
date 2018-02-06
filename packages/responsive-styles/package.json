@@ -7,8 +7,7 @@
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "test": "jest --config='./__tests__/web/jest.config.js' --ci --bail --coverage",
-    "test:watch": "yarn test --watchAll"
+    "test": "jest --config='./__tests__/web/jest.config.js' --ci --bail --coverage"
   },
   "repository": {
     "type": "git",

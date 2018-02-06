@@ -3,7 +3,6 @@
   "version": "1.10.11",
   "main": "brightcove-video",
   "scripts": {
-    "test:watch": "jest --bail --verbose --watchAll",
     "test": "jest --bail --ci --coverage",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
