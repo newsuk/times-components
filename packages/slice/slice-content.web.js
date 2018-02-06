@@ -1,7 +1,7 @@
 import React from "react";
 import get from "lodash.get";
 import PropTypes from "prop-types";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import { treePropType } from "@times-components/markup";
 import ArticleLabel from "@times-components/article-label";
 import ArticleByline from "@times-components/article-byline";
@@ -54,7 +54,7 @@ const SliceContent = ({ item }) => {
             DatePublication={() => <DatePublication date={publishedTime} />}
             Headline={() => (
               <ResponsiveHeadline>
-                <ArticleSummaryHeadline headline={headline} />
+                <Text style={styles.headline}>{headline}</Text>
               </ResponsiveHeadline>
             )}
             Label={Label}

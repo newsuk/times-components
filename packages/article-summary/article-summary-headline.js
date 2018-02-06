@@ -6,7 +6,7 @@ import styles from "./styles";
 const { style: TextStylePropTypes } = Text.propTypes;
 
 const ArticleSummaryHeadline = ({ headline, style }) => (
-  <Text style={[styles.headline, styles.default, style]}>{headline}</Text>
+  <Text style={[styles.headline, styles.headlineWrapper, style]}>{headline}</Text>
 );
 
 ArticleSummaryHeadline.propTypes = {
