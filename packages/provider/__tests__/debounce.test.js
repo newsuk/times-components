@@ -48,6 +48,21 @@ describe("Debounce", () => {
     });
   });
 
+  it("does not change debouncing status if component recieves same props", () => {
+    const Outer = withDebounce(Inner);
+    const component = shallow(<Outer foo="initialFoo" debounceTimeMs={1000} />);
+    component.setProps({ foo: "initialFoo" });
+    expect(component.find("Inner").props()).toEqual({
+      foo: "initialFoo",
+      debounceTimeMs: 1000,
+      debouncedProps: {
+        foo: "initialFoo",
+        debounceTimeMs: 1000
+      },
+      isDebouncing: false
+    });
+  });
+
   const testUpdateInnerPropsAfterDelay = delay => {
     const Outer = withDebounce(Inner);
     const component = shallow(
