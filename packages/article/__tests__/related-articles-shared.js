@@ -12,7 +12,7 @@ import singleRelatedArticleNoBylineFixture from "../related-articles/fixtures/si
 import twoRelatedArticlesFixture from "../related-articles/fixtures/two-related-articles.json";
 
 const createRelatedArticlesProps = fixtureData => ({
-  ...fixtureData.relatedArticles[0],
+  articles: fixtureData.relatedArticles,
   template: fixtureData.relatedArticlesTemplate,
   onPress: () => {}
 });
