@@ -1,80 +1,34 @@
-import "react-native";
+import { Text } from "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 import context from "jest-context";
-import singleRelatedArticleFixture from "@times-components/article/related-articles/fixtures/single-related-article.json";
-import singleRelatedArticleNoImageFixture from "@times-components/article/related-articles/fixtures/single-related-article-no-image.json";
-import singleRelatedArticleNoLabelFixture from "@times-components/article/related-articles/fixtures/single-related-article-no-label.json";
-import singleRelatedArticleNoBylineFixture from "@times-components/article/related-articles/fixtures/single-related-article-no-byline.json";
 import Slice from "../slice";
 
-const createRelatedArticlesProps = fixtureData => ({
-  ...fixtureData.relatedArticles[0],
-  template: fixtureData.relatedArticlesTemplate,
-  onPress: () => {}
-});
-
 module.exports = () => {
-  const realIntl = Intl;
-
-  beforeEach(() => {
-    global.Intl = {
-      DateTimeFormat: () => ({
-        resolvedOptions: () => ({ timeZone: "Europe/London" })
-      })
-    };
-  });
-
-  afterEach(() => {
-    global.Intl = realIntl;
-  });
-
   context("Related articles", () => {
-    it("renders single slice with related", () => {
+    it("renders null for a slice with no children", () => {
+      const tree = renderer.create(<Slice />).toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it("renders a single child element", () => {
       const tree = renderer
         .create(
-          <Slice
-            item={createRelatedArticlesProps(singleRelatedArticleFixture.data)}
-          />
+          <Slice>
+            <Text>Test text</Text>
+          </Slice>
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders single slice with related with no lead image", () => {
+    it("renders multiple child elements", () => {
       const tree = renderer
         .create(
-          <Slice
-            item={createRelatedArticlesProps(
-              singleRelatedArticleNoImageFixture.data
-            )}
-          />
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
-    it("renders single slice with related with no label", () => {
-      const tree = renderer
-        .create(
-          <Slice
-            item={createRelatedArticlesProps(
-              singleRelatedArticleNoLabelFixture.data
-            )}
-          />
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
-    it("renders single slice with related with no byline", () => {
-      const tree = renderer
-        .create(
-          <Slice
-            item={createRelatedArticlesProps(
-              singleRelatedArticleNoBylineFixture.data
-            )}
-          />
+          <Slice>
+            <Text>Test text 1</Text>
+            <Text>Test text 2</Text>
+          </Slice>
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
