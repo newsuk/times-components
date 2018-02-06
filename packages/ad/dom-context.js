@@ -84,6 +84,7 @@ export default class DOMContext extends PureComponent {
               init: ${init},
               data: ${JSON.stringify(data)},
               scriptUris: ${JSON.stringify(scriptUris)},
+              preScripts: ${JSON.stringify(preScripts)},
               globalNames: ${JSON.stringify(globalNames)}
             }).execute();
           </script>
