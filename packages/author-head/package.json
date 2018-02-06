@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-head",
-  "version": "0.17.13",
+  "version": "0.17.14",
   "main": "author-head",
   "scripts": {
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
@@ -65,7 +65,7 @@
   },
   "dependencies": {
     "@times-components/icons": "0.1.6",
-    "@times-components/image": "1.13.5",
+    "@times-components/image": "1.13.6",
     "@times-components/link": "0.13.16",
     "@times-components/markup": "0.17.0",
     "@times-components/responsive-styles": "0.2.15",

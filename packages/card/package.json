@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "0.16.42",
+  "version": "0.16.43",
   "main": "card",
   "scripts": {
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@times-components/gradient": "0.3.17",
-    "@times-components/image": "1.13.5",
+    "@times-components/image": "1.13.6",
     "@times-components/responsive-styles": "0.2.15",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.0",
