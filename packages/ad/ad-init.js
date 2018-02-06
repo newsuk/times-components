@@ -3,11 +3,14 @@
 
 /* eslint-env browser */
 const adInit = args => {
-  const { el, data, window, globals: { googletag }, renderComplete } = args;
+  const { el, data, window, globals: { googletag, gs_channels }, renderComplete } = args;
 
   let executed = false;
   return {
     pageInit() {
+      googletag.cmd.push(function () {
+        googletag.pubads().setTargeting('gs_cat', gs_channels);
+    });
       googletag.cmd.push(() => {
         const pubads = googletag.pubads();
         Object.entries(data.pageTargeting || {}).forEach(entry =>
@@ -76,6 +79,7 @@ const adInit = args => {
       }
       this.slotInit();
     }
+
   };
 };
 
