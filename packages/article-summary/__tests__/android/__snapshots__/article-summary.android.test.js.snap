@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders an article-summary component with a single paragraph 1`] = `
+exports[`Article Summary test on Android renders an article-summary component with a single paragraph 1`] = `
 <View
   style={Object {}}
 >
@@ -130,7 +130,7 @@ exports[`renders an article-summary component with a single paragraph 1`] = `
 </View>
 `;
 
-exports[`renders an article-summary component with content including line breaks 1`] = `
+exports[`Article Summary test on Android renders an article-summary component with content including line breaks 1`] = `
 <View
   style={Object {}}
 >
@@ -334,7 +334,7 @@ exports[`renders an article-summary component with content including line breaks
 </View>
 `;
 
-exports[`renders an article-summary component with empty content at the end trimmed 1`] = `
+exports[`Article Summary test on Android renders an article-summary component with empty content at the end trimmed 1`] = `
 <View
   style={Object {}}
 >
@@ -479,7 +479,7 @@ exports[`renders an article-summary component with empty content at the end trim
 </View>
 `;
 
-exports[`renders an article-summary component with headline and no content 1`] = `
+exports[`Article Summary test on Android renders an article-summary component with headline and no content 1`] = `
 <View
   style={Object {}}
 >
@@ -556,7 +556,7 @@ exports[`renders an article-summary component with headline and no content 1`] =
 </View>
 `;
 
-exports[`renders an article-summary component with multiple paragraphs 1`] = `
+exports[`Article Summary test on Android renders an article-summary component with multiple paragraphs 1`] = `
 <View
   style={Object {}}
 >
@@ -678,7 +678,7 @@ exports[`renders an article-summary component with multiple paragraphs 1`] = `
 </View>
 `;
 
-exports[`renders an article-summary component with no byline 1`] = `
+exports[`Article Summary test on Android renders an article-summary component with no byline 1`] = `
 <View
   style={Object {}}
 >
@@ -749,7 +749,7 @@ exports[`renders an article-summary component with no byline 1`] = `
 </View>
 `;
 
-exports[`renders an article-summary component with no label 1`] = `
+exports[`Article Summary test on Android renders an article-summary component with no label 1`] = `
 <View
   style={Object {}}
 >
