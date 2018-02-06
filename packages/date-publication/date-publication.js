@@ -47,7 +47,7 @@ DatePublication.propTypes = {
 };
 
 DatePublication.defaultProps = {
-  publication: null,
+  publication: null
 };
 
 export default DatePublication;

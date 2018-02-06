@@ -16,7 +16,10 @@ export default function() {
   it("renders a DatePublication component with Sunday Times publication and relevant GMT date", () => {
     const tree = renderer
       .create(
-        <DatePublication date="2017-01-01T14:32:00.000Z" publication="SUNDAYTIMES" />
+        <DatePublication
+          date="2017-01-01T14:32:00.000Z"
+          publication="SUNDAYTIMES"
+        />
       )
       .toJSON();
     expect(tree).toMatchSnapshot();

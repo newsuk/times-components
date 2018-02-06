@@ -3,11 +3,6 @@ import { Text, StyleSheet } from "react-native";
 import { storiesOf } from "dextrose/storiesOfOverloader";
 import DatePublication from "./date-publication";
 
-const props = {
-  date: "2017-07-01T14:32:00.000Z",
-  publication: "SUNDAYTIMES"
-};
-
 const styles = StyleSheet.create({
   text: {
     color: "#696969",
@@ -20,7 +15,10 @@ const styles = StyleSheet.create({
 storiesOf("DatePublication", module)
   .add("standard DatePublication", () => (
     <Text style={styles.text}>
-      <DatePublication date="2017-07-01T14:32:00.000Z" publication="SUNDAYTIMES" />
+      <DatePublication
+        date="2017-07-01T14:32:00.000Z"
+        publication="SUNDAYTIMES"
+      />
     </Text>
   ))
   .add("DatePublication with publication not displayed", () => (

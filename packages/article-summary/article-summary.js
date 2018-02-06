@@ -47,7 +47,6 @@ ArticleSummary.propTypes = {
   Byline: PropTypes.func
 };
 
-
 ArticleSummary.defaultProps = {
   Label: null,
   Headline: null,
