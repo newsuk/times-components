@@ -1,6 +1,4 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import rndiMock from "react-native-device-info";
-
 import shared from "../shared";
 
 describe("Date Publication test on android when the user has the same time zone as London time zone", () => {
