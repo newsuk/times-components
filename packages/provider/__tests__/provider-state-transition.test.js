@@ -12,7 +12,6 @@ jest.useFakeTimers();
 // Jest has done this in v22, so this can be removed if we upgrade
 jest.advanceTimersByTime = jest.runTimersToTime;
 
-
 function AuthorQueryResolver({ variables }) {
   return {
     data: {
@@ -46,7 +45,7 @@ describe("provider execution order tests", () => {
     const { link, setProps } = providerTester(AuthorQueryResolver, Debounced, {
       slug: "1"
     });
-    
+
     await link.findByQuery("AuthorQuery", { slug: "1" }).resolve();
     await wait(0); // wait for render
     await setProps({ slug: "2" });
@@ -61,11 +60,11 @@ describe("provider execution order tests", () => {
     const { link, setProps } = providerTester(AuthorQueryResolver, Debounced, {
       slug: "1"
     });
-    
+
     await link.findByQuery("AuthorQuery", { slug: "1" }).resolve();
     await setProps({ slug: "2" });
     await wait(1000);
-    
+
     expect(getRenderedQueries(link)).toMatchSnapshot();
   });
 
@@ -73,15 +72,13 @@ describe("provider execution order tests", () => {
     const { link, setProps } = providerTester(AuthorQueryResolver, Debounced, {
       slug: "1"
     });
-    
+
     await wait(0);
     await setProps({ slug: "2" });
     await wait(500);
     await link.findByQuery("AuthorQuery", { slug: "1" }).resolve();
     await wait(1000);
-    
+
     expect(getRenderedQueries(link)).toMatchSnapshot();
   });
 });
-
-
