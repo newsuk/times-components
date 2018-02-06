@@ -4,8 +4,10 @@
   "description": "Date and Publication properties",
   "main": "date-publication",
   "scripts": {
-    "test:watch": "jest --bail --verbose --watchAll",
-    "test": "jest --bail --ci --coverage",
+    "test:android": "jest --config='./__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test": "yarn test:android --ci --bail --coverage && yarn test:ios --ci --bail --coverage && yarn test:web --ci --bail --coverage",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
@@ -53,6 +55,7 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
+    "@times-components/jest-configurator": "0.0.22",
     "@times-components/utils": "0.2.0",
     "date-fns": "1.28.5",
     "prop-types": "15.6.0"
