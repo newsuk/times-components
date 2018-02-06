@@ -14,17 +14,6 @@
     "dextrose-stories": "dextrose-stories",
     "dextrose-clean": "dextrose-clean"
   },
-  "jest": {
-    "preset": "react-native",
-    "rootDir": "../../",
-    "coverageDirectory": "<rootDir>/packages/date-publication/coverage/",
-    "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|@times-components)/)"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/date-publication/__tests__/*.test.js"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/newsuk/times-components.git"

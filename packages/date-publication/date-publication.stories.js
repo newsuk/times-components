@@ -20,11 +20,11 @@ const styles = StyleSheet.create({
 storiesOf("DatePublication", module)
   .add("standard DatePublication", () => (
     <Text style={styles.text}>
-      <DatePublication {...props} />
+      <DatePublication date="2017-07-01T14:32:00.000Z" publication="SUNDAYTIMES" />
     </Text>
   ))
   .add("DatePublication with publication not displayed", () => (
     <Text style={styles.text}>
-      <DatePublication {...props} showPublication={false} />
+      <DatePublication date="2017-07-01T14:32:00.000Z" />
     </Text>
   ));
