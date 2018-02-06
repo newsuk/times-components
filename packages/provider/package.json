@@ -66,7 +66,7 @@
     "graphql-tag": "2.6.0",
     "hoist-non-react-statics": "2.3.1",
     "lodash.get": "4.4.2",
-    "lodash.isequal": "4.5.0",
+    "lodash.isequal": "4.4.0",
     "lodash.pick": "4.4.0",
     "prop-types": "15.6.0",
     "react-apollo-temp": "2.0.5",
