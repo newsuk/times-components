@@ -3,7 +3,7 @@ import { StyleSheet, ScrollView } from "react-native";
 import Slice from "@times-components/slice";
 import RelatedArticlesHeading from "./heading";
 import RelatedArticleItem from "./related-article-item";
-import { propTypes, defaultProps } from "./proptypes";
+import { relatedArticlesPropTypes, defaultProps } from "./proptypes";
 
 const styles = StyleSheet.create({
   container: {
@@ -29,7 +29,7 @@ const RelatedArticles = ({ articles, onPress, template }) => {
   );
 };
 
-RelatedArticles.propTypes = propTypes;
+RelatedArticles.propTypes = relatedArticlesPropTypes;
 RelatedArticles.defaultProps = defaultProps;
 
 export default RelatedArticles;

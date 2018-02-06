@@ -1,7 +1,5 @@
 import { StyleSheet } from "react-native";
-
-const mediumBpWidth = "83.33333333%"; // @TODO: put these somewhere sensible
-const wideBpWidth = "58.33333%";
+import config from "@times-components/article/styles/responsive-config";
 
 export const SliceContainerStyles = {
   mediumUp: () => `
@@ -22,10 +20,10 @@ export const ChildrenContainerStyles = {
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
-    width: ${mediumBpWidth};
+    width: ${config.mediumBpWidth};
   `,
   wideUp: () => `
-    width: ${wideBpWidth};
+    width: ${config.wideBpWidth};
   `
 };
 

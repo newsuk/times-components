@@ -4,7 +4,7 @@ import { StyleSheet, View } from "react-native";
 import ArticleSummary from "@times-components/article-summary";
 import Image from "@times-components/image";
 import Link from "@times-components/link";
-import { propTypesItem } from "./proptypes";
+import { relatedArticleItemPropTypes } from "./proptypes";
 
 const styles = StyleSheet.create({
   container: {
@@ -59,6 +59,6 @@ const RelatedArticleItem = ({ article, onPress }) => {
   );
 };
 
-RelatedArticleItem.propTypes = propTypesItem;
+RelatedArticleItem.propTypes = relatedArticleItemPropTypes;
 
 export default RelatedArticleItem;
