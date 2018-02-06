@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import PropTypes from "prop-types";
+import SliceContainer from "./styles/responsive";
 import templateStyles from "./styles/styles";
 
 const Slice = ({ children, template }) => {
@@ -9,7 +10,11 @@ const Slice = ({ children, template }) => {
     template: templateStyles[template]
   });
 
-  return <View style={styles.template}>{children}</View>;
+  return (
+    <SliceContainer>
+      <View style={styles.template}>{children}</View>
+    </SliceContainer>
+  );
 };
 
 Slice.propTypes = {

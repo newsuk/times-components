@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { treePropType } from "@times-components/markup";
 
-export const propTypes = {
+export const propTypesItem = {
   item: PropTypes.shape({
     byline: PropTypes.arrayOf(treePropType),
     headline: PropTypes.string,
@@ -11,7 +11,11 @@ export const propTypes = {
     publishedTime: PropTypes.string,
     summary: PropTypes.arrayOf(treePropType),
     url: PropTypes.string
-  }).isRequired,
+  }).isRequired
+};
+
+export const propTypes = {
+  ...propTypesItem,
   template: PropTypes.string
 };
 
