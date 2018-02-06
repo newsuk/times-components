@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import templateStyles from "./styles/styles";
 
 const Slice = ({ children, template }) => {
-  if (!children || children.length === 0) return null;
+  if (!children) return null;
 
   const templateName = template.toLowerCase();
 
