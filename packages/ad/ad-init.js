@@ -3,17 +3,14 @@
 
 /* eslint-env browser */
 const adInit = args => {
-  const {
-    el,
-    data,
-    window,
-    globals: { googletag, gs_channels = "DEFAULT" }, // eslint-disable-line camelcase
-    renderComplete
-  } = args;
+  const { el, data, window, globals: { googletag, gs_channels }, renderComplete } = args;
 
   let executed = false;
   return {
     pageInit() {
+      googletag.cmd.push(function () {
+        googletag.pubads().setTargeting('gs_cat', gs_channels);
+    });
       googletag.cmd.push(() => {
         googletag.pubads().setTargeting("gs_cat", gs_channels);
       });
@@ -85,6 +82,7 @@ const adInit = args => {
       }
       this.slotInit();
     }
+
   };
 };
 

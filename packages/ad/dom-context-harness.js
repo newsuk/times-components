@@ -10,7 +10,7 @@ const makeHarness = ({
   window,
   el,
   data,
-  init,
+  preScripts,
   scriptUris,
   globalNames,
   eventCallback
@@ -37,8 +37,9 @@ const makeHarness = ({
     execute() {
       withCatch(() => {
         // create script tag for grapeshot
-
-        //this.injectScripts();
+        this.injectScripts(preScripts, ()=> {
+          this.injectScripts(scriptUris, this.handleScriptLoad.bind(this));
+        });
         this.runInitIfGlobalsPresent();
       });
     },
@@ -75,14 +76,9 @@ const makeHarness = ({
       this.checkForInit();
     },
 
-    loadScriptsParallel(scripts, callback) {
-      if (scripts.length === 0) {
-        callback();
-      }
+    injectScripts(scripts, func) {
       for (let i = 0; i < scripts.length; i += 1) {
-        const scriptUri = scripts[i].uri;
-        const timeout = scripts[i].timeout || -1;
-        const canRequestFail = scripts[i].canRequestFail || false;
+        const scriptUri = scripts[i];
         const scriptId = `dom-context-script-${scriptUri.replace(/\W/g, "")}`;
         if (!document.getElementById(scriptId)) {
           const script = document.createElement("script");
@@ -106,6 +102,7 @@ const makeHarness = ({
           script.defer = true;
           document.head.appendChild(script);
         }
+        script.addEventListener("load", func);
       }
     },
 
