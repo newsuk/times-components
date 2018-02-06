@@ -3,7 +3,14 @@ import { Text } from "react-native";
 import { shallow } from "enzyme";
 import Gesture from "../gestures";
 
-const waitFor = delay => new Promise(res => setTimeout(res, delay));
+jest.useFakeTimers();
+const delay = ms => new Promise(done => setTimeout(done, ms));
+
+const delayAndAdvance = ms => {
+  const timer = delay(ms);
+  jest.runTimersToTime(ms);
+  return timer;
+};
 
 const mapTouches = ({ x, y }) => ({
   pageX: x,
@@ -208,7 +215,7 @@ export default () => {
 
       onResponderRelease();
 
-      await waitFor(1000);
+      await delayAndAdvance(1000);
 
       expect(component.find("AnimatedComponent")).toMatchSnapshot();
     });
