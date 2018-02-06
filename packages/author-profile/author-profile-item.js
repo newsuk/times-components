@@ -97,4 +97,3 @@ export default withTrackEvents(AuthorProfileItem, {
     }
   ]
 });
-

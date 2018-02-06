@@ -8,10 +8,7 @@ import ArticleByline from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
 import Card from "@times-components/card";
 import Link from "@times-components/link";
-import ArticleSummary, {
-  ArticleSummaryHeadline,
-  renderAst
-} from "@times-components/article-summary";
+import ArticleSummary, { renderAst } from "@times-components/article-summary";
 import { ResponsiveHeadline } from "./styles/responsive";
 import SharedStyles from "./styles/shared";
 
