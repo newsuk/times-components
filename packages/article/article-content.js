@@ -22,5 +22,4 @@ ArticleContent.propTypes = {
   renderRow: PropTypes.func.isRequired
 };
 
-
 export default ArticleContent;
