@@ -1,10 +1,10 @@
 #!/bin/bash
 set -ev
 
-if [ "${TRAVIS_PULL_REQUEST}" = "true" ]
+if [ "${TRAVIS_PULL_REQUEST}" = "false" ]
 then
-  yarn test --since
+  yarn test
   exit 0
 fi
 
-yarn test
+yarn test --since
