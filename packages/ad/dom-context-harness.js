@@ -36,8 +36,12 @@ const makeHarness = ({
   return {
     execute() {
       withCatch(() => {
-        // create script tag for grapeshot
-        this.injectScripts(preScripts, ()=> {
+        window.gs_channels = "DEFAULT";
+        this.injectScripts(preScripts, (err, data)=> {
+          console.log("err", err, "data", data)
+          if(err){
+            alert("Failed to laod preScripts", err);
+          }
           this.injectScripts(scriptUris, this.handleScriptLoad.bind(this));
         });
         this.runInitIfGlobalsPresent();
@@ -77,11 +81,14 @@ const makeHarness = ({
     },
 
     injectScripts(scripts, func) {
+      console.log("injectScripts", scripts);
       for (let i = 0; i < scripts.length; i += 1) {
         const scriptUri = scripts[i];
         const scriptId = `dom-context-script-${scriptUri.replace(/\W/g, "")}`;
-        if (!document.getElementById(scriptId)) {
-          const script = document.createElement("script");
+        // check if the script was prev created
+        let script = document.getElementById(scriptId);
+        if (!script) {
+          script = document.createElement("script");
           script.id = scriptId;
           script.type = "text/javascript";
           script.addEventListener(
@@ -102,11 +109,17 @@ const makeHarness = ({
           script.defer = true;
           document.head.appendChild(script);
         }
-        script.addEventListener("load", func);
+        script.addEventListener("load", func.bind(null, null));
+        script.addEventListener("error", func);
       }
     },
 
-    runInit() {
+    handleScriptLoad() {
+      console.log("handleScriptLoad");
+      this.runInitIfGlobalsPresent();
+    },
+
+    runInitIfGlobalsPresent() {
       withCatch(() => {
         if (initCalled) {
           return;
