@@ -1,6 +1,6 @@
 {
   "name": "@times-components/slice",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Slice",
   "main": "slice",
   "scripts": {
@@ -47,7 +47,7 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/article-summary": "0.16.3",
+    "@times-components/article-summary": "0.16.4",
     "@times-components/card": "0.16.30",
     "@times-components/image": "1.12.8",
     "@times-components/link": "0.13.12",

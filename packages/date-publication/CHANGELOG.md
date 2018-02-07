@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.9.2...@times-components/date-publication@0.10.0) (2018-02-07)
+
+
+### Features
+
+* use the native timezone ([#584](https://github.com/newsuk/times-components/issues/584)) ([e03a0b1](https://github.com/newsuk/times-components/commit/e03a0b1))
+
+
+
+
 <a name="0.9.2"></a>
 ## [0.9.2](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.9.1...@times-components/date-publication@0.9.2) (2018-02-06)
 
