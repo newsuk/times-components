@@ -55,7 +55,7 @@ export default class DOMContext extends PureComponent {
       width,
       height,
       globalNames,
-      preScriptsUris,
+      preScriptUris,
       scriptUris
     } = this.props;
     // NOTE: if this generated code is not working, and you don't know why
@@ -92,7 +92,7 @@ export default class DOMContext extends PureComponent {
               init: ${init},
               data: ${JSON.stringify(data)},
               scriptUris: ${JSON.stringify(scriptUris)},
-              preScripts: ${JSON.stringify(preScriptsUris)},
+              preScripts: ${JSON.stringify(preScriptUris)},
               globalNames: ${JSON.stringify(globalNames)}
             }).execute();
           </script>
