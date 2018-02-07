@@ -6,7 +6,7 @@ import { propTypes, defaultProps } from "./dom-context-prop-types";
 /* eslint-env browser */
 export default class DOMContext extends React.PureComponent {
   componentDidMount() {
-    const { scriptUris, preScripts, globalNames, init, data, id } = this.props;
+    const { scriptUris, preScriptsUris, globalNames, init, data, id } = this.props;
 
     const harness = makeHarness({
       el: this.div,
@@ -15,7 +15,7 @@ export default class DOMContext extends React.PureComponent {
       window,
       document,
       scriptUris,
-      preScripts,
+      preScriptsUris,
       globalNames,
       init,
       data
