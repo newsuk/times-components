@@ -1,23 +1,20 @@
 import React from "react";
-import ArticleLabel from "@times-components/article-label";
-import ArticleByline from "@times-components/article-byline";
-import DatePublication from "@times-components/date-publication";
-import { ArticleSummaryHeadline, renderAst } from "../";
+import { ArticleSummaryHeadline, ArticleSummaryContent } from "../";
 
 export default {
-  Label: () => <ArticleLabel title="Camilla Long" color="#333333" />,
-  DatePublication: () => (
-    <DatePublication
-      date="2017-07-01T14:32:00.000Z"
-      publication="SUNDAYTIMES"
-    />
-  ),
-  Headline: () => (
+  labelProps: {
+    title: "Camilla Long", 
+    color:"#333333"
+  },
+  datePublicationProps: {
+    date: "2017-07-01T14:32:00.000Z",
+    publication: "SUNDAYTIMES"
+  },
+  headline: () => (
     <ArticleSummaryHeadline headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT" />
   ),
-  Byline: () => (
-    <ArticleByline
-      ast={[
+  bylineProps: {
+    ast: [
         {
           name: "author",
           attributes: {
@@ -46,11 +43,9 @@ export default {
             }
           ]
         }
-      ]}
-    />
-  ),
-  summaryText: () =>
-    renderAst([
+      ]
+  },
+  content: () => <ArticleSummaryContent ast={[
       {
         name: "paragraph",
         attributes: {},
@@ -151,5 +146,5 @@ export default {
           }
         ]
       }
-    ])
+    ]} />
 };

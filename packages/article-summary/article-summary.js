@@ -1,10 +1,14 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
-import { renderTrees } from "@times-components/markup";
+import { renderTrees, articleBylinePropTypes } from "@times-components/markup";
 import summarise from "./summarise";
 import renderer from "./article-summary-renderer";
+import ArticleLabel from "@times-components/article-label";
+import Byline from "@times-components/article-byline";
+import DatePublication from "@times-components/date-publication";
 import ArticleSummaryHeadline from "./article-summary-headline";
+import ArticleSummaryContent from "./article-summary-content";
 import styles from "./styles";
 
 function renderAst(ast) {
@@ -12,27 +16,29 @@ function renderAst(ast) {
 }
 
 const ArticleSummary = props => {
-  const { Label, Headline, summaryText, DatePublication, Byline } = props;
+  const { labelProps, headline, content, datePublicationProps, bylineProps } = props;
 
   return (
     <View>
-      {Label ? (
+      {labelProps ? (
         <View style={styles.labelWrapper}>
-          <Label />
+          <ArticleLabel {...labelProps} />
         </View>
       ) : null}
-      <Headline />
-      <Text style={styles.text}>{summaryText()}</Text>
-      <Text
-        style={styles.metaText}
-        accessibilityLabel="datePublication"
-        testID="datePublication"
-      >
-        <DatePublication />
-      </Text>
-      {Byline ? (
+      { headline() }  
+      { content() }
+      { datePublicationProps ? (
+        <Text
+          style={styles.metaText}
+          accessibilityLabel="datePublication"
+          testID="datePublication"
+        >
+          <DatePublication {...datePublicationProps} /> 
+        </Text>
+      ) : null }
+      {bylineProps ? (
         <Text style={styles.metaText}>
-          <Byline />
+          <Byline {...bylineProps} />
         </Text>
       ) : null}
     </View>
@@ -40,21 +46,24 @@ const ArticleSummary = props => {
 };
 
 ArticleSummary.propTypes = {
-  Label: PropTypes.func,
-  Headline: PropTypes.func,
-  summaryText: PropTypes.func,
-  DatePublication: PropTypes.func,
-  Byline: PropTypes.func
+  labelProps: PropTypes.shape({
+    title: PropTypes.string,
+    color: PropTypes.string
+  }),
+  headline: PropTypes.func,
+  content: PropTypes.func,
+  bylineProps: articleBylinePropTypes,
+  datePublicationProps: PropTypes.shape({
+    date: PropTypes.string,
+    publication: PropTypes.string
+  })
 };
 
 ArticleSummary.defaultProps = {
-  Label: null,
-  Headline: null,
-  summaryText: () => [],
-  DatePublication: null,
-  Byline: null
+  content: () => [],
+  headline: () => null,
 };
 
-export { renderAst, summarise, renderer, ArticleSummaryHeadline };
+export { renderAst, summarise, renderer, ArticleSummaryHeadline, ArticleSummaryContent };
 
 export default ArticleSummary;

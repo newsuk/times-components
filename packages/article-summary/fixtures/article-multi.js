@@ -1,18 +1,16 @@
 import React from "react";
-import ArticleByline from "@times-components/article-byline";
-import DatePublication from "@times-components/date-publication";
-import { ArticleSummaryHeadline, renderAst } from "../";
+import { ArticleSummaryHeadline, ArticleSummaryContent } from "../";
 
 export default {
-  DatePublication: () => (
-    <DatePublication date="2017-11-17T00:01:00.000Z" publication="TIMES" />
-  ),
-  Headline: () => (
+  datePublicationProps: {
+    date: "2017-11-17T00:01:00.000Z",
+    publication: "TIMES"
+  },
+  headline: () => (
     <ArticleSummaryHeadline headline="Top medal for forces dog who took a bite out of the Taliban" />
   ),
-  Byline: () => (
-    <ArticleByline
-      ast={[
+  bylineProps: {
+    ast: [
         {
           name: "author",
           attributes: {
@@ -41,11 +39,10 @@ export default {
             }
           ]
         }
-      ]}
-    />
-  ),
-  summaryText: () =>
-    renderAst([
+      ]
+  },
+  content: () =>
+    <ArticleSummaryContent ast={[
       {
         name: "paragraph",
         attributes: {},
@@ -74,5 +71,5 @@ export default {
           }
         ]
       }
-    ])
+    ]} />
 };
