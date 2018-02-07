@@ -21,15 +21,16 @@ export const StyledRelatedArticlesHeading = withResponsiveStyles(View, {
   `
 });
 
-export const RelatedArticleItemContainer = hasPadding => withResponsiveStyles(View, {
-  mediumUp: () => `
+export const RelatedArticleItemContainer = hasPadding =>
+  withResponsiveStyles(View, {
+    mediumUp: () => `
     display: flex;
     flex-grow: 1;
     min-height: 100%;
     flex-basis: 0 !important;
     padding-right: ${hasPadding ? "10px" : ""};
   `
-});
+  });
 
 export const StyledSeparator = withResponsiveStyles(View, {
   base: () => `
