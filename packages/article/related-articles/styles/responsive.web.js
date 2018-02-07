@@ -21,15 +21,13 @@ export const StyledRelatedArticlesHeading = withResponsiveStyles(View, {
   `
 });
 
-export const StyledRelatedArticleItemContainer = withResponsiveStyles(View, {
-  base: () => `
+export const RelatedArticleItemContainer = hasPadding => withResponsiveStyles(View, {
+  mediumUp: () => `
     display: flex;
     flex-grow: 1;
-    flex-direction: row;
     min-height: 100%;
-  `,
-  mediumUp: () => `
     flex-basis: 0 !important;
+    padding-right: ${hasPadding ? "10px" : ""};
   `
 });
 
@@ -46,7 +44,7 @@ export const StyledSeparator = withResponsiveStyles(View, {
       margin-right: 10px;
       margin-bottom: 10px;
       margin-top: 10px;
-      min-height: 100%;
+      min-height: auto;
     `
 });
 

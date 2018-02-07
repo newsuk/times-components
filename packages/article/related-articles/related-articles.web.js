@@ -6,7 +6,7 @@ import RelatedArticlesHeading from "./heading";
 import RelatedArticleItem from "./related-article-item";
 import { relatedArticlesPropTypes, defaultProps } from "./proptypes";
 import {
-  StyledRelatedArticleItemContainer,
+  RelatedArticleItemContainer,
   StyledSeparator,
   RelatedArticleContainer,
   ImageContainer,
@@ -35,6 +35,7 @@ const RelatedArticles = ({ articles, onPress, template }) => {
       const hasBorder = articleCount > 1 && index > 0;
       const hasPadding = index < articleCount - 1;
       const paddingStyle = { paddingRight: hasPadding ? "10px" : "" };
+      const StyledRelatedArticleItemContainer = RelatedArticleItemContainer(hasPadding);
 
       if (hasBorder) {
         myArray.push(<StyledSeparator key={`separator-${article.id}`} />);
@@ -42,7 +43,6 @@ const RelatedArticles = ({ articles, onPress, template }) => {
       myArray.push(
         <StyledRelatedArticleItemContainer
           key={article.id}
-          style={paddingStyle}
         >
           <RelatedArticleItem
             article={article}
