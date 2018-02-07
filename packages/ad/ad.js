@@ -39,7 +39,8 @@ class Ad extends Component {
       code: this.props.code,
       networkId: this.props.networkId,
       adUnit: this.props.adUnit,
-      contextUrl: "https://www.thetimes.co.uk/article/fdefc7fa-0ac4-11e8-a5b3-3d239643ad40",
+      contextUrl:
+        "https://www.thetimes.co.uk/article/fdefc7fa-0ac4-11e8-a5b3-3d239643ad40",
       section: this.props.section,
       sizingMap: getSizeMaps(this.props.pos),
       pageTargeting: adConfig.pageTargeting,
@@ -52,7 +53,9 @@ class Ad extends Component {
       ? { width: 0, height: 0 }
       : { height: this.config.maxSizes.height };
 
-    const grapeshotScriptUrl = `https://newscorp.grapeshot.co.uk/thetimes/channels.cgi?url=${encodeURIComponent(data.contextUrl)}`;
+    const grapeshotScriptUrl = `https://newscorp.grapeshot.co.uk/thetimes/channels.cgi?url=${encodeURIComponent(
+      data.contextUrl
+    )}`;
     const webviewComponent = (
       <DOMContext
         data={data}

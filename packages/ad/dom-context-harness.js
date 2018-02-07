@@ -35,8 +35,8 @@ const makeHarness = ({
 
   return {
     loadScripts() {
-      this.injectScripts(scriptUris, (err, data) => {
-        if(err){
+      this.injectScripts(scriptUris, err => {
+        if (err) {
           this.reportError(err);
           return;
         }
@@ -45,11 +45,10 @@ const makeHarness = ({
     },
     execute() {
       withCatch(() => {
-        this.injectScripts(preScripts, (err) => {
+        this.injectScripts(preScripts, err => {
           this.loadScripts();
-          if(err){
+          if (err) {
             this.reportError(err);
-            return;
           }
         });
         setTimeout(() => {
@@ -136,7 +135,6 @@ const makeHarness = ({
         const globals = {};
         for (let i = 0; i < globalNames.length; i += 1) {
           const globalName = globalNames[i];
-          console.log("window[globalName]", globalName, window[globalName]);
           globals[globalName] = window[globalName];
         }
         const renderComplete = () => {
