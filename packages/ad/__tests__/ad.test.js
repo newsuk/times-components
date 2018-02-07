@@ -67,14 +67,12 @@ describe("Ad", () => {
   it("renders with more than one ad slot", () => {
     const tree = renderer
       .create(
-        <div>
-          <AdComposer>
+        <AdComposer>
+          <div>
             <Ad {...adProps} code="ad-header" />
-          </AdComposer>
-          <AdComposer>
             <Ad {...adProps} code="intervention" />
-          </AdComposer>
-        </div>
+          </div>
+        </AdComposer>
       )
       .toJSON();
 
