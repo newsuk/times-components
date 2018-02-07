@@ -3,9 +3,9 @@ set -ev
 
 if [ "${TRAVIS_PULL_REQUEST}" = "false" ]
 then
-  yarn test
+  yarn test --since
   exit 0
 fi
 
-yarn test --since
+yarn test
 yarn coverage:publish
