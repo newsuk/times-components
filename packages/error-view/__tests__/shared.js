@@ -63,4 +63,4 @@ module.exports = () => {
 
     expect(tree).toMatchSnapshot();
   });
-}
+};
