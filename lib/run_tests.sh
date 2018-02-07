@@ -8,3 +8,4 @@ then
 fi
 
 yarn test --since
+yarn coverage:publish

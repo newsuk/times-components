@@ -12,7 +12,6 @@ script:
   - yarn lint
   - ./lib/run_tests.sh
 after_success:
-  - yarn coverage:publish
   - ./lib/publish.sh
 deploy:
   skip_cleanup: true
