@@ -1,32 +1,23 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
-import PropTypes from "prop-types";
-import SliceContainer from "./styles/responsive";
-import templateStyles from "./styles/styles";
+import slicePropTypes from "./proptypes";
+import getStyledComponent from "./styles/responsive";
 
 const Slice = ({ children, template }) => {
-  if (!children || children.length === 0) return null;
-  const styles = StyleSheet.create({
-    template: templateStyles[template]
-  });
+  if (!children) return null;
+
+  const StyledSliceContainer = getStyledComponent(template, "SliceContainer");
+  const StyledChildrenContainer = getStyledComponent(
+    template,
+    "ChildrenContainer"
+  );
 
   return (
-    <SliceContainer>
-      <View style={styles.template}>{children}</View>
-    </SliceContainer>
+    <StyledSliceContainer>
+      <StyledChildrenContainer>{children}</StyledChildrenContainer>
+    </StyledSliceContainer>
   );
 };
 
-Slice.propTypes = {
-  template: PropTypes.string,
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.arrayOf(PropTypes.element)
-  ]).isRequired
-};
-
-Slice.defaultProps = {
-  template: "DEFAULT"
-};
+Slice.propTypes = slicePropTypes;
 
 export default Slice;

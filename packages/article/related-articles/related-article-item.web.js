@@ -1,24 +1,17 @@
 import React from "react";
 import get from "lodash.get";
-import { StyleSheet, View } from "react-native";
 import ArticleSummary from "@times-components/article-summary";
 import Image from "@times-components/image";
 import Link from "@times-components/link";
 import { relatedArticleItemPropTypes } from "./proptypes";
 
-const styles = StyleSheet.create({
-  container: {
-    borderStyle: "solid",
-    borderBottomColor: "#dbdbdb",
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    paddingBottom: 10,
-    paddingLeft: 10,
-    paddingRight: 10,
-    paddingTop: 10
-  }
-});
-
-const RelatedArticleItem = ({ article, onPress }) => {
+const RelatedArticleItem = ({
+  article,
+  onPress,
+  styledRelatedArticleContainer: StyledRelatedArticleContainer,
+  styledImageContainer: StyledImageContainer,
+  styledSummaryContainer: StyledSummaryContainer
+}) => {
   if (!article) return null;
   const {
     byline,
@@ -38,23 +31,25 @@ const RelatedArticleItem = ({ article, onPress }) => {
 
   return (
     <Link url={url} onPress={onPress}>
-      <View style={styles.container}>
+      <StyledRelatedArticleContainer>
         {imageUri ? (
-          <View style={{ marginBottom: 10 }}>
+          <StyledImageContainer>
             <Image uri={`${imageUri}&resize=996`} aspectRatio={16 / 9} />
-          </View>
+          </StyledImageContainer>
         ) : null}
-        <ArticleSummary
-          byline={byline}
-          date={publishedTime}
-          headline={headline}
-          hasResponsiveHeadline
-          label={label}
-          publication={publicationName}
-          showPublication={false}
-          text={summary}
-        />
-      </View>
+        <StyledSummaryContainer>
+          <ArticleSummary
+            byline={byline}
+            date={publishedTime}
+            headline={headline}
+            hasResponsiveHeadline
+            label={label}
+            publication={publicationName}
+            showPublication={false}
+            text={summary}
+          />
+        </StyledSummaryContainer>
+      </StyledRelatedArticleContainer>
     </Link>
   );
 };

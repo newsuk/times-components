@@ -1,11 +1,12 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { Text } from "react-native";
 import styles from "./styles/base";
+import { StyledRelatedArticlesHeading } from "./styles/responsive";
 
 const RelatedArticlesHeading = () => (
-  <View style={styles.titleContainer}>
+  <StyledRelatedArticlesHeading>
     <Text style={styles.title}>Related links</Text>
-  </View>
+  </StyledRelatedArticlesHeading>
 );
 
 export default RelatedArticlesHeading;

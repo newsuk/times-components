@@ -6,16 +6,15 @@ import Slice from "../slice";
 
 module.exports = () => {
   context("Related articles", () => {
-    it("renders null for a slice with no children", () => {
-      const tree = renderer.create(<Slice />).toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
+    const template = {
+      domain: "relatedArticles",
+      type: "Default"
+    };
     it("renders a single child element", () => {
       const tree = renderer
         .create(
-          <Slice>
-            <Text>Test text</Text>
+          <Slice template={template}>
+            <Text key="test1">Test text</Text>
           </Slice>
         )
         .toJSON();
@@ -25,9 +24,9 @@ module.exports = () => {
     it("renders multiple child elements", () => {
       const tree = renderer
         .create(
-          <Slice>
-            <Text>Test text 1</Text>
-            <Text>Test text 2</Text>
+          <Slice template={template}>
+            <Text key="test1">Test text 1</Text>
+            <Text key="test2">Test text 2</Text>
           </Slice>
         )
         .toJSON();

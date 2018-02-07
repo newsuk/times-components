@@ -1,27 +1,20 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import PropTypes from "prop-types";
-import templateStyles from "./styles/styles";
+import slicePropTypes from "./proptypes";
+import getTemplateStyles from "./styles";
 
 const Slice = ({ children, template }) => {
-  if (!children || children.length === 0) return null;
-  const styles = StyleSheet.create({
-    template: templateStyles[template]
-  });
+  if (!children) return null;
 
-  return <View style={styles.template}>{children}</View>;
+  const styles = StyleSheet.create(getTemplateStyles(template));
+
+  return (
+    <View style={styles.container}>
+      <View style={styles.child}>{children}</View>
+    </View>
+  );
 };
 
-Slice.propTypes = {
-  template: PropTypes.string,
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.arrayOf(PropTypes.element)
-  ]).isRequired
-};
-
-Slice.defaultProps = {
-  template: "DEFAULT"
-};
+Slice.propTypes = slicePropTypes;
 
 export default Slice;

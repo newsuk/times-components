@@ -29,6 +29,7 @@ import singleRelatedArticleFixture from "./related-articles/fixtures/single-rela
 import singleRelatedArticleNoImageFixture from "./related-articles/fixtures/single-related-article-no-image.json";
 import singleRelatedArticleNoLabelFixture from "./related-articles/fixtures/single-related-article-no-label.json";
 import singleRelatedArticleNoBylineFixture from "./related-articles/fixtures/single-related-article-no-byline.json";
+import twoRelatedArticlesFixture from "./related-articles/fixtures/two-related-articles.json";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
@@ -38,7 +39,7 @@ const preventDefaultedAction = decorateAction([
 ]);
 
 const createRelatedArticlesProps = fixtureData => ({
-  ...fixtureData.relatedArticles[0],
+  articles: fixtureData.relatedArticles,
   template: fixtureData.relatedArticlesTemplate,
   onPress: preventDefaultedAction("onArticlePress")
 });
@@ -217,23 +218,26 @@ storiesOf("Article", module)
   ))
   .add("Single related article default", () => (
     <RelatedArticles
-      item={createRelatedArticlesProps(singleRelatedArticleFixture.data)}
+      {...createRelatedArticlesProps(singleRelatedArticleFixture.data)}
     />
   ))
   .add("Single related article with no lead image", () => (
     <RelatedArticles
-      item={createRelatedArticlesProps(singleRelatedArticleNoImageFixture.data)}
+      {...createRelatedArticlesProps(singleRelatedArticleNoImageFixture.data)}
     />
   ))
   .add("Single related article with no label", () => (
     <RelatedArticles
-      item={createRelatedArticlesProps(singleRelatedArticleNoLabelFixture.data)}
+      {...createRelatedArticlesProps(singleRelatedArticleNoLabelFixture.data)}
     />
   ))
   .add("Single related article with no byline", () => (
     <RelatedArticles
-      item={createRelatedArticlesProps(
-        singleRelatedArticleNoBylineFixture.data
-      )}
+      {...createRelatedArticlesProps(singleRelatedArticleNoBylineFixture.data)}
+    />
+  ))
+  .add("Two related articles", () => (
+    <RelatedArticles
+      {...createRelatedArticlesProps(twoRelatedArticlesFixture.data)}
     />
   ));

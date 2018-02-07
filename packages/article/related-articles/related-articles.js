@@ -1,31 +1,38 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, ScrollView } from "react-native";
 import Slice from "@times-components/slice";
+import getTemplateObject from "./config";
 import RelatedArticlesHeading from "./heading";
 import RelatedArticleItem from "./related-article-item";
-import { propTypes, defaultProps } from "./proptypes";
+import { relatedArticlesPropTypes, defaultProps } from "./proptypes";
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 10,
-    paddingLeft: 10,
-    paddingRight: 10
+    marginTop: 10
   }
 });
 
-const RelatedArticles = ({ item, template }) => {
-  if (!item) return null;
+const RelatedArticles = ({ articles, onPress, template }) => {
+  if (!articles) return null;
+  const templateObject = getTemplateObject(template);
+
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <RelatedArticlesHeading />
-      <Slice template={template}>
-        <RelatedArticleItem item={item} />
+      <Slice template={templateObject}>
+        {articles.map(article => (
+          <RelatedArticleItem
+            key={article.id}
+            article={article}
+            onPress={onPress}
+          />
+        ))}
       </Slice>
-    </View>
+    </ScrollView>
   );
 };
 
-RelatedArticles.propTypes = propTypes;
+RelatedArticles.propTypes = relatedArticlesPropTypes;
 RelatedArticles.defaultProps = defaultProps;
 
 export default RelatedArticles;
