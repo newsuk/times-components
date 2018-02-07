@@ -49,7 +49,15 @@ export default class DOMContext extends PureComponent {
   };
 
   render() {
-    const { init, data, width, height, globalNames, scriptUris } = this.props;
+    const {
+      init,
+      data,
+      width,
+      height,
+      globalNames,
+      preScripts,
+      scriptUris
+    } = this.props;
     // NOTE: if this generated code is not working, and you don't know why
     // because React Native doesn't report errors in webview JS code, try
     // connecting a debugger to the app, console.log(html), copy and paste
