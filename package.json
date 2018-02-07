@@ -21,7 +21,7 @@
     "visual-snapshot-ios": "./lib/visual_snapshots/run-ios-dextrose.sh",
     "visual-snapshot-web": "./lib/visual_snapshots/run-web-dextrose.sh",
     "visual-snapshot-android": "./lib/visual_snapshots/run-android-dextrose.sh",
-    "coverage:publish": "lcov-result-merger ./**/lcov.info | coveralls",
+    "coverage:publish": "lcov-result-merger './**/lcov.info' | coveralls",
     "prelint": "eslint . && prettier --list-different '**/*.*'",
     "lint": "lerna run lint --since",
     "fetch-fonts": "node ./lib/fetch-fonts",
