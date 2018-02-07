@@ -6,6 +6,7 @@ import RelatedArticlesHeading from "./heading";
 import RelatedArticleItem from "./related-article-item";
 import { relatedArticlesPropTypes, defaultProps } from "./proptypes";
 import {
+  StyledRelatedArticleItemContainer,
   StyledSeparator,
   RelatedArticleContainer,
   ImageContainer,
@@ -15,11 +16,6 @@ import {
 const styles = StyleSheet.create({
   container: {
     marginTop: 10
-  },
-  itemContainer: {
-    display: "flex",
-    flexDirection: "row",
-    minHeight: "100%"
   }
 });
 
@@ -33,28 +29,40 @@ const RelatedArticles = ({ articles, onPress, template }) => {
   const StyledImageContainer = ImageContainer(articleCount);
   const StyledSummaryContainer = SummaryContainer(articleCount);
 
+  const renderArticleItems = () => {
+    const myArray = [];
+    articles.map((article, index) => {
+      const hasBorder = articleCount > 1 && index > 0;
+      const hasPadding = index < articleCount - 1;
+      const paddingStyle = { paddingRight: hasPadding ? "10px" : "" };
+
+      if (hasBorder) {
+        myArray.push(<StyledSeparator key={`separator-${article.id}`} />);
+      }
+      myArray.push(
+        <StyledRelatedArticleItemContainer
+          key={article.id}
+          style={paddingStyle}
+        >
+          <RelatedArticleItem
+            article={article}
+            onPress={onPress}
+            styledRelatedArticleContainer={StyledRelatedArticleContainer}
+            styledImageContainer={StyledImageContainer}
+            styledSummaryContainer={StyledSummaryContainer}
+          />
+        </StyledRelatedArticleItemContainer>
+      );
+      return true;
+    });
+
+    return myArray;
+  };
+
   return (
     <View style={styles.container}>
       <RelatedArticlesHeading />
-      <Slice template={templateObject}>
-        {articles.map((article, index) => {
-          const hasBorder = articleCount > 1 && index > 0;
-          const hasPadding = index < articleCount - 1;
-          const paddingStyle = { paddingRight: hasPadding ? "10px" : "" };
-          return (
-            <View key={article.id} style={[styles.itemContainer, paddingStyle]}>
-              {hasBorder ? <StyledSeparator /> : null}
-              <RelatedArticleItem
-                article={article}
-                onPress={onPress}
-                styledRelatedArticleContainer={StyledRelatedArticleContainer}
-                styledImageContainer={StyledImageContainer}
-                styledSummaryContainer={StyledSummaryContainer}
-              />
-            </View>
-          );
-        })}
-      </Slice>
+      <Slice template={templateObject}>{renderArticleItems()}</Slice>
     </View>
   );
 };

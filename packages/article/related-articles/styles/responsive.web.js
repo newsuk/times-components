@@ -21,6 +21,18 @@ export const StyledRelatedArticlesHeading = withResponsiveStyles(View, {
   `
 });
 
+export const StyledRelatedArticleItemContainer = withResponsiveStyles(View, {
+  base: () => `
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    min-height: 100%;
+  `,
+  mediumUp: () => `
+    flex-basis: 0 !important;
+  `
+});
+
 export const StyledSeparator = withResponsiveStyles(View, {
   base: () => `
       display: none;
@@ -30,6 +42,7 @@ export const StyledSeparator = withResponsiveStyles(View, {
       border-right-width: 1px;
       border-right-color: #dbdbdb;
       display: block;
+      flex: 0 !important;
       margin-right: 10px;
       margin-bottom: 10px;
       margin-top: 10px;

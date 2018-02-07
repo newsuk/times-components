@@ -26,12 +26,3 @@ export const ChildrenContainerStyles = {
     width: ${config.wideBpWidth};
   `
 };
-
-export const ChildContainerStyles = {
-  base: () => `
-    flex-grow: 1;
-  `,
-  mediumUp: () => `
-    flex-basis: 0 !important;
-  `
-};
