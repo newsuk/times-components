@@ -318,59 +318,6 @@
     react-treebeard "^2.1.0"
     redux "^3.7.2"
 
-<<<<<<< HEAD
-=======
-"@times-components/ad@0.6.13":
-  version "0.6.13"
-  resolved "https://registry.yarnpkg.com/@times-components/ad/-/ad-0.6.13.tgz#939d3544cc85900afd951143b5e9c139fcb961d2"
-  dependencies:
-    "@times-components/watermark" "0.2.13"
-    prop-types "15.6.0"
-    react-broadcast "0.5.2"
-
-"@times-components/ad@0.6.16":
-  version "0.6.16"
-  resolved "https://registry.yarnpkg.com/@times-components/ad/-/ad-0.6.16.tgz#7058f8578273c1af57c07fa88c4d7c4ea84ce4bc"
-  dependencies:
-    "@times-components/watermark" "0.2.16"
-    prop-types "15.6.0"
-    react-broadcast "0.5.2"
-
-"@times-components/article-byline@0.10.29":
-  version "0.10.29"
-  resolved "https://registry.yarnpkg.com/@times-components/article-byline/-/article-byline-0.10.29.tgz#077b01a1213da7525780b330ed9e6886d698ccc6"
-  dependencies:
-    "@times-components/link" "0.13.16"
-    "@times-components/markup" "0.16.7"
-    prop-types "15.6.0"
-
-"@times-components/article-label@0.6.18":
-  version "0.6.18"
-  resolved "https://registry.yarnpkg.com/@times-components/article-label/-/article-label-0.6.18.tgz#769fd1a16fb4c2f5e5e3d32d2f54ccb6d8becee4"
-  dependencies:
-    prop-types "15.6.0"
-
-"@times-components/card@0.16.30":
-  version "0.16.30"
-  resolved "https://registry.yarnpkg.com/@times-components/card/-/card-0.16.30.tgz#052bbe8c3bacbbcdd237eff970e9a7edf4a7e2c9"
-  dependencies:
-    "@times-components/gradient" "0.3.14"
-    "@times-components/image" "1.12.8"
-    "@times-components/jest-configurator" "0.0.21"
-    "@times-components/responsive-styles" "0.2.13"
-    prop-types "15.6.0"
-    react-native-svg "5.5.0"
-    svgs "3.1.1"
-
-"@times-components/date-publication@0.8.11":
-  version "0.8.11"
-  resolved "https://registry.yarnpkg.com/@times-components/date-publication/-/date-publication-0.8.11.tgz#0787e66139d43ac2270c5bdb930b6341a0e4a61b"
-  dependencies:
-    "@times-components/utils" "0.2.0"
-    date-fns "1.28.5"
-    prop-types "15.6.0"
-
->>>>>>> chore: Minor fixes
 "@times-components/fructose@3.1.14":
   version "3.1.14"
   resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.1.14.tgz#a31be85b619132431a46774f970b4146927156c1"
@@ -412,6 +359,13 @@
     prop-types "15.6.0"
     svgs "3.1.1"
 
+"@times-components/icons@0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@times-components/icons/-/icons-0.1.6.tgz#59d4069bcf7f3813e095bf555508a9329bf1f86d"
+  dependencies:
+    prop-types "15.6.0"
+    svgs "3.1.1"
+
 "@times-components/image@1.12.8":
   version "1.12.8"
   resolved "https://registry.yarnpkg.com/@times-components/image/-/image-1.12.8.tgz#27303035148446dc1d3bb9db7ea9061181720456"
@@ -441,6 +395,14 @@
     lodash.pick "4.4.0"
     prop-types "15.6.0"
 
+"@times-components/link@0.13.16":
+  version "0.13.16"
+  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-0.13.16.tgz#dc4d25ee831631b7af971e116821d55760ae782b"
+  dependencies:
+    "@times-components/responsive-styles" "0.2.15"
+    lodash.pick "4.4.0"
+    prop-types "15.6.0"
+
 "@times-components/markup@0.16.3":
   version "0.16.3"
   resolved "https://registry.yarnpkg.com/@times-components/markup/-/markup-0.16.3.tgz#9a90e0e5b8270f10e1b04e07cf92422a4ca1beeb"
@@ -465,12 +427,38 @@
     "@times-components/link" "0.13.12"
     prop-types "15.6.0"
 
+"@times-components/pull-quote@0.2.7":
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/@times-components/pull-quote/-/pull-quote-0.2.7.tgz#415f8c3e29090366980829042aae094ea2bb8270"
+  dependencies:
+    "@times-components/icons" "0.1.6"
+    "@times-components/link" "0.13.16"
+    prop-types "15.6.0"
+
 "@times-components/responsive-styles@0.2.13":
   version "0.2.13"
   resolved "https://registry.yarnpkg.com/@times-components/responsive-styles/-/responsive-styles-0.2.13.tgz#cac4b88b4a93461d3c596acb40df147758ac4c37"
   dependencies:
     prop-types "15.6.0"
     styled-components "2.2.3"
+
+"@times-components/responsive-styles@0.2.15":
+  version "0.2.15"
+  resolved "https://registry.yarnpkg.com/@times-components/responsive-styles/-/responsive-styles-0.2.15.tgz#fe4249a2287cf30a2700844ff0f8df0602340d47"
+  dependencies:
+    prop-types "15.6.0"
+    styled-components "2.2.3"
+
+"@times-components/utils@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-0.2.0.tgz#72f5d8dffa231fc2921dd58ef4244214c0fccf50"
+  dependencies:
+    apollo-cache-inmemory "1.1.5"
+    apollo-client "2.2.0"
+    graphql "0.12.3"
+    prop-types "15.6.0"
+    react "16.2.0"
+    react-apollo-temp "2.0.5"
 
 "@times-components/watermark@0.2.13":
   version "0.2.13"
@@ -480,7 +468,18 @@
     react-native-svg "5.5.0"
     svgs "3.1.1"
 
+<<<<<<< HEAD
 >>>>>>> chore: Minor fixes
+=======
+"@times-components/watermark@0.2.16":
+  version "0.2.16"
+  resolved "https://registry.yarnpkg.com/@times-components/watermark/-/watermark-0.2.16.tgz#1df61e7a1cc0f3f66b33ce8bc6bbd47bf665d443"
+  dependencies:
+    prop-types "15.6.0"
+    react-native-svg "5.5.0"
+    svgs "3.1.1"
+
+>>>>>>> chore: linting and formatting cross packages
 "@types/async@2.0.46":
   version "2.0.46"
   resolved "https://registry.yarnpkg.com/@types/async/-/async-2.0.46.tgz#f13a6c336a6582b95d0c0269e796b709488fd54d"
