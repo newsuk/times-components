@@ -83,13 +83,13 @@ describe("Ad", () => {
 
   it("hides the placeholder when the ad is ready", () => {
     jest.spyOn(console, "error").mockImplementation(() => {});
-    const mockAdConfig = {
+    const mockOverrides = {
       networkId: "25436805",
       adUnit: "d.thetimes.co.uk",
       pageTargeting: {}
     };
     const component = shallow(
-      <Ad {...adProps} overrideAdConfig={mockAdConfig} code="ad-header" />
+      <Ad {...adProps} overrides={mockOverrides} code="ad-header" />
     );
 
     expect(component.find("Placeholder").length).toEqual(1);

@@ -50,7 +50,7 @@ storiesOf("Article", module)
       ...fullArticleFixture.data,
       isLoading: false,
       analyticsStream: storybookReporter,
-      adConfig: { adConfig }
+      adConfig
     };
 
     return <Article {...props} />;
@@ -60,7 +60,7 @@ storiesOf("Article", module)
       ...fullLongArticleFixture.data,
       isLoading: false,
       analyticsStream: storybookReporter,
-      adConfig: { adConfig }
+      adConfig
     };
 
     return <Article {...props} />;
@@ -68,7 +68,8 @@ storiesOf("Article", module)
   .add("Loading", () => {
     const props = {
       analyticsStream: storybookReporter,
-      isLoading: true
+      isLoading: true,
+      adConfig
     };
 
     return <Article {...props} />;

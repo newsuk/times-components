@@ -2,6 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
+import { AdComposer } from "@times-components/ad";
 
 import ArticleContent from "./article-content";
 import ArticleError from "./article-error";
@@ -100,7 +101,9 @@ class ArticlePage extends React.Component {
       />
     );
 
-    return ArticleListView;
+    return (
+      <AdComposer adConfig={this.props.adConfig}>{ArticleListView}</AdComposer>
+    );
   }
 }
 
@@ -116,7 +119,8 @@ ArticlePage.propTypes = {
       message: PropTypes.string
     }),
     message: PropTypes.string
-  })
+  }),
+  adConfig: PropTypes.shape({}).isRequired
 };
 
 ArticlePage.defaultProps = {
