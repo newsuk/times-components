@@ -42,6 +42,7 @@
     "enzyme": "3.3.0",
     "enzyme-to-json": "3.3.0",
     "eslint": "4.9.0",
+    "flow-bin": "0.63.1",
     "jest": "21.2.1",
     "jest-styled-components": "4.9.0",
     "prettier": "1.8.2",
@@ -52,7 +53,6 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "flow-bin": "0.63.1",
     "svgs": "3.1.1"
   },
   "peerDependencies": {
