@@ -13,6 +13,5 @@ export default {
   ),
   Headline: () => (
     <ArticleSummaryHeadline headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT" />
-  ),
-  summaryText: () => renderAst([])
+  )
 };

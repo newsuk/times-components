@@ -515,6 +515,95 @@ exports[`Article Summary test on ios renders an article-summary component with e
 </View>
 `;
 
+exports[`Article Summary test on ios renders an article-summary component with headline and blank content 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "marginBottom": 0,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 12,
+          },
+          Object {
+            "color": "#333333",
+          },
+        ]
+      }
+    >
+      CAMILLA LONG
+    </Text>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontWeight": "400",
+          "marginBottom": 5,
+        },
+        Object {
+          "fontSize": 22,
+          "lineHeight": 22,
+        },
+        Object {},
+      ]
+    }
+  >
+    OK, so Putin’s not a lady, but he does have the wildest man‑PMT
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "flexWrap": "wrap",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 14,
+        "lineHeight": 20,
+        "marginBottom": 10,
+      }
+    }
+  />
+  <Text
+    accessibilityLabel="datePublication"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+    testID="datePublication"
+  >
+    Saturday July 01 2017, 03:32pm, The Sunday Times
+  </Text>
+</View>
+`;
+
 exports[`Article Summary test on ios renders an article-summary component with headline and no content 1`] = `
 <View>
   <View

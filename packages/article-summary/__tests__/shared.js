@@ -7,6 +7,7 @@ import noBylineFixture from "../fixtures/no-byline";
 import noLabelFixture from "../fixtures/no-label";
 import reviewFixture from "../fixtures/review";
 import blankFixture from "../fixtures/blank";
+import noContentFixture from "../fixtures/noContent";
 
 export default ArticleSummary => {
   const realIntl = Intl;
@@ -47,8 +48,16 @@ export default ArticleSummary => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders an article-summary component with headline and no content", () => {
+  it("renders an article-summary component with headline and blank content", () => {
     const tree = renderer.create(<ArticleSummary {...blankFixture} />).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders an article-summary component with headline and no content", () => {
+    const tree = renderer
+      .create(<ArticleSummary {...noContentFixture} />)
+      .toJSON();
 
     expect(tree).toMatchSnapshot();
   });
