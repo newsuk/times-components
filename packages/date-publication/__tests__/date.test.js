@@ -1,4 +1,5 @@
 /* global Intl */
+import rndiMock from "react-native-device-info";
 import { isBST, getUTCTime, isLondonTimezone } from "../date";
 
 describe("date helper", () => {
@@ -36,8 +37,7 @@ describe("timezone helper", () => {
         resolvedOptions: () => ({ timeZone: "Somewhere/Else" })
       })
     };
-    // eslint-disable-next-line global-require
-    require("react-native-device-info").setMockTimezone("Somewhere/Else");
+    rndiMock.setMockTimezone("Somewhere/Else");
 
     expect(isLondonTimezone()).toEqual(false);
   });
