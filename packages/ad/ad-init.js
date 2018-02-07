@@ -3,7 +3,7 @@
 
 /* eslint-env browser */
 const adInit = args => {
-  const { el, data, window, globals: { googletag, gs_channels }, renderComplete } = args;
+  const { el, data, window, globals: { googletag, gs_channels = "DEFAULT" }, renderComplete } = args;
 
   let executed = false;
   return {
