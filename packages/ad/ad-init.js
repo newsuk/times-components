@@ -8,9 +8,10 @@ const adInit = args => {
   let executed = false;
   return {
     pageInit() {
+      console.log("gs_channels", gs_channels);
       googletag.cmd.push(function () {
         googletag.pubads().setTargeting('gs_cat', gs_channels);
-    });
+      });
       googletag.cmd.push(() => {
         googletag.pubads().setTargeting("gs_cat", gs_channels);
       });
