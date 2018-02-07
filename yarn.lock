@@ -343,8 +343,7 @@
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
 
-<<<<<<< HEAD
-=======
+
 "@times-components/gradient@0.3.14":
   version "0.3.14"
   resolved "https://registry.yarnpkg.com/@times-components/gradient/-/gradient-0.3.14.tgz#b33f6f0479054c13affe150fa3f72a63abdd16a4"
@@ -449,17 +448,6 @@
     prop-types "15.6.0"
     styled-components "2.2.3"
 
-"@times-components/utils@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-0.2.0.tgz#72f5d8dffa231fc2921dd58ef4244214c0fccf50"
-  dependencies:
-    apollo-cache-inmemory "1.1.5"
-    apollo-client "2.2.0"
-    graphql "0.12.3"
-    prop-types "15.6.0"
-    react "16.2.0"
-    react-apollo-temp "2.0.5"
-
 "@times-components/watermark@0.2.13":
   version "0.2.13"
   resolved "https://registry.yarnpkg.com/@times-components/watermark/-/watermark-0.2.13.tgz#c02dda88fe07b88ce5dc3b52aaa9a1c39f354907"
@@ -468,9 +456,6 @@
     react-native-svg "5.5.0"
     svgs "3.1.1"
 
-<<<<<<< HEAD
->>>>>>> chore: Minor fixes
-=======
 "@times-components/watermark@0.2.16":
   version "0.2.16"
   resolved "https://registry.yarnpkg.com/@times-components/watermark/-/watermark-0.2.16.tgz#1df61e7a1cc0f3f66b33ce8bc6bbd47bf665d443"
@@ -479,7 +464,6 @@
     react-native-svg "5.5.0"
     svgs "3.1.1"
 
->>>>>>> chore: linting and formatting cross packages
 "@types/async@2.0.46":
   version "2.0.46"
   resolved "https://registry.yarnpkg.com/@types/async/-/async-2.0.46.tgz#f13a6c336a6582b95d0c0269e796b709488fd54d"
