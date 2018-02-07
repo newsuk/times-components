@@ -30,26 +30,39 @@ const makeHarness = ({
   };
 
   return {
+    loadScripts() {
+      this.injectScripts(scriptUris, (err, data) => {
+        if(err){
+          this.reportError(err);
+          return;
+        }
+        this.handleScriptLoad();
+      });
+    },
     execute() {
       withCatch(() => {
-        window.gs_channels = "DEFAULT";
-        this.injectScripts(preScripts, (err, data)=> {
-          console.log("err", err, "data", data)
+        this.injectScripts(preScripts, (err) => {
+          this.loadScripts();
           if(err){
-            alert("Failed to laod preScripts", err);
+            this.reportError(err);
+            return;
           }
-          this.injectScripts(scriptUris, this.handleScriptLoad.bind(this));
         });
-        this.runInitIfGlobalsPresent();
+        setTimeout(() => {
+          this.loadScripts();
+        }, 500);
       });
     },
 
+    reportError(err) {
+      // eslint-disable-next-line no-console
+      window.console.error(`Error while loading the script: ${err}`);
+    },
+
     injectScripts(scripts, func) {
-      console.log("injectScripts", scripts);
       for (let i = 0; i < scripts.length; i += 1) {
         const scriptUri = scripts[i];
         const scriptId = `dom-context-script-${scriptUri.replace(/\W/g, "")}`;
-        // check if the script was prev created
         let script = document.getElementById(scriptId);
         if (!script) {
           script = document.createElement("script");
@@ -64,31 +77,15 @@ const makeHarness = ({
     },
 
     handleScriptLoad() {
-      console.log("handleScriptLoad");
-      this.runInitIfGlobalsPresent();
-    },
-
-    runInitIfGlobalsPresent() {
-      withCatch(() => {
-        if (initialised) {
-          return;
-        }
-        for (let i = 0; i < globalNames.length; i += 1) {
-          const globalName = globalNames[i];
-          if (typeof window[globalName] === "undefined") {
-            return;
-          }
-        }
-        this.runInit();
-      });
+      this.runInit();
     },
 
     runInit() {
       withCatch(() => {
-        initialised = true;
         const globals = {};
         for (let i = 0; i < globalNames.length; i += 1) {
           const globalName = globalNames[i];
+          console.log("window[globalName]", globalName, window[globalName]);
           globals[globalName] = window[globalName];
         }
         const renderComplete = () => {
