@@ -272,7 +272,7 @@ exports[`Slice test on ios Related articles renders single article 1`] = `
                 }
                 testID="datePublication"
               >
-                Friday March 13 2015, 06:54pm, The Times
+                Friday March 13 2015, 06:54pm
               </Text>
               <Text
                 accessible={true}
@@ -598,7 +598,7 @@ exports[`Slice test on ios Related articles renders single article with no bylin
                 }
                 testID="datePublication"
               >
-                Friday March 13 2015, 06:54pm, The Times
+                Friday March 13 2015, 06:54pm
               </Text>
               <Text
                 accessible={true}
@@ -866,7 +866,7 @@ exports[`Slice test on ios Related articles renders single article with no label
                 }
                 testID="datePublication"
               >
-                Friday March 13 2015, 06:54pm, The Times
+                Friday March 13 2015, 06:54pm
               </Text>
               <Text
                 accessible={true}
@@ -1072,7 +1072,7 @@ exports[`Slice test on ios Related articles renders single article with no lead 
                 }
                 testID="datePublication"
               >
-                Friday March 13 2015, 06:54pm, The Times
+                Friday March 13 2015, 06:54pm
               </Text>
               <Text
                 accessible={true}

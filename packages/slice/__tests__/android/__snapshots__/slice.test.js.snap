@@ -305,7 +305,7 @@ exports[`Slice test on android Related articles renders single article 1`] = `
                 }
                 testID="datePublication"
               >
-                Friday March 13 2015, 06:54pm, The Times
+                Friday March 13 2015, 06:54pm
               </Text>
               <Text
                 accessible={true}
@@ -664,7 +664,7 @@ exports[`Slice test on android Related articles renders single article with no b
                 }
                 testID="datePublication"
               >
-                Friday March 13 2015, 06:54pm, The Times
+                Friday March 13 2015, 06:54pm
               </Text>
               <Text
                 accessible={true}
@@ -963,7 +963,7 @@ exports[`Slice test on android Related articles renders single article with no l
                 }
                 testID="datePublication"
               >
-                Friday March 13 2015, 06:54pm, The Times
+                Friday March 13 2015, 06:54pm
               </Text>
               <Text
                 accessible={true}
@@ -1169,7 +1169,7 @@ exports[`Slice test on android Related articles renders single article with no l
                 }
                 testID="datePublication"
               >
-                Friday March 13 2015, 06:54pm, The Times
+                Friday March 13 2015, 06:54pm
               </Text>
               <Text
                 accessible={true}
