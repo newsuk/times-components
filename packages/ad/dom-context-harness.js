@@ -34,17 +34,27 @@ const makeHarness = ({
   const isScriptErrored = scriptId => scriptsErrored.indexOf(scriptId) > -1;
 
   return {
+    loadScripts() {
+      this.injectScripts(scriptUris, (err, data) => {
+        if(err){
+          this.reportError(err);
+          return;
+        }
+        this.handleScriptLoad();
+      });
+    },
     execute() {
       withCatch(() => {
-        window.gs_channels = "DEFAULT";
-        this.injectScripts(preScripts, (err, data)=> {
-          console.log("err", err, "data", data)
+        this.injectScripts(preScripts, (err) => {
+          this.loadScripts();
           if(err){
-            alert("Failed to laod preScripts", err);
+            this.reportError(err);
+            return;
           }
-          this.injectScripts(scriptUris, this.handleScriptLoad.bind(this));
         });
-        this.runInitIfGlobalsPresent();
+        setTimeout(() => {
+          this.loadScripts();
+        }, 500);
       });
     },
     checkForInit() {
@@ -80,12 +90,15 @@ const makeHarness = ({
       this.checkForInit();
     },
 
+    reportError(err) {
+      // eslint-disable-next-line no-console
+      window.console.error(`Error while loading the script: ${err}`);
+    },
+
     injectScripts(scripts, func) {
-      console.log("injectScripts", scripts);
       for (let i = 0; i < scripts.length; i += 1) {
         const scriptUri = scripts[i];
         const scriptId = `dom-context-script-${scriptUri.replace(/\W/g, "")}`;
-        // check if the script was prev created
         let script = document.getElementById(scriptId);
         if (!script) {
           script = document.createElement("script");
@@ -115,19 +128,15 @@ const makeHarness = ({
     },
 
     handleScriptLoad() {
-      console.log("handleScriptLoad");
-      this.runInitIfGlobalsPresent();
+      this.runInit();
     },
 
-    runInitIfGlobalsPresent() {
+    runInit() {
       withCatch(() => {
-        if (initCalled) {
-          return;
-        }
-        initCalled = true;
         const globals = {};
         for (let i = 0; i < globalNames.length; i += 1) {
           const globalName = globalNames[i];
+          console.log("window[globalName]", globalName, window[globalName]);
           globals[globalName] = window[globalName];
         }
         const renderComplete = () => {
