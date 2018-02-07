@@ -13,7 +13,7 @@
  * https://github.com/flowtype/flow-typed
  */
 
-declare module 'svgs' {
+declare module "svgs" {
   declare module.exports: any;
 }
 
@@ -22,38 +22,38 @@ declare module 'svgs' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module 'svgs/example/index' {
+declare module "svgs/example/index" {
   declare module.exports: any;
 }
 
-declare module 'svgs/index.native' {
+declare module "svgs/index.native" {
   declare module.exports: any;
 }
 
-declare module 'svgs/lib/index' {
+declare module "svgs/lib/index" {
   declare module.exports: any;
 }
 
-declare module 'svgs/test' {
+declare module "svgs/test" {
   declare module.exports: any;
 }
 
 // Filename aliases
-declare module 'svgs/example/index.js' {
-  declare module.exports: $Exports<'svgs/example/index'>;
+declare module "svgs/example/index.js" {
+  declare module.exports: $Exports<"svgs/example/index">;
 }
-declare module 'svgs/index' {
-  declare module.exports: $Exports<'svgs'>;
+declare module "svgs/index" {
+  declare module.exports: $Exports<"svgs">;
 }
-declare module 'svgs/index.js' {
-  declare module.exports: $Exports<'svgs'>;
+declare module "svgs/index.js" {
+  declare module.exports: $Exports<"svgs">;
 }
-declare module 'svgs/index.native.js' {
-  declare module.exports: $Exports<'svgs/index.native'>;
+declare module "svgs/index.native.js" {
+  declare module.exports: $Exports<"svgs/index.native">;
 }
-declare module 'svgs/lib/index.js' {
-  declare module.exports: $Exports<'svgs/lib/index'>;
+declare module "svgs/lib/index.js" {
+  declare module.exports: $Exports<"svgs/lib/index">;
 }
-declare module 'svgs/test.js' {
-  declare module.exports: $Exports<'svgs/test'>;
+declare module "svgs/test.js" {
+  declare module.exports: $Exports<"svgs/test">;
 }

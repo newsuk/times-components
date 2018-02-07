@@ -52,8 +52,7 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "flow-bin": "0.64.0",
-    "prop-types": "15.6.0",
+    "flow-bin": "0.63.1",
     "svgs": "3.1.1"
   },
   "peerDependencies": {
