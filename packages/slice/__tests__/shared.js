@@ -5,7 +5,7 @@ import context from "jest-context";
 import Slice from "../slice";
 
 module.exports = () => {
-  context("Related articles", () => {
+  context("DEFAULT template", () => {
     const template = "DEFAULT";
 
     it("renders a single child element", () => {

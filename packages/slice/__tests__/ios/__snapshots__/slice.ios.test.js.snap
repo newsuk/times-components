@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Slice test on ios Related articles renders a single child element 1`] = `
+exports[`Slice test on ios DEFAULT template renders a single child element 1`] = `
 <View
   style={
     Object {
@@ -28,7 +28,7 @@ exports[`Slice test on ios Related articles renders a single child element 1`] =
 </View>
 `;
 
-exports[`Slice test on ios Related articles renders multiple child elements 1`] = `
+exports[`Slice test on ios DEFAULT template renders multiple child elements 1`] = `
 <View
   style={
     Object {
