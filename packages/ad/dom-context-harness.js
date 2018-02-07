@@ -10,7 +10,7 @@ const makeHarness = ({
   window,
   el,
   data,
-  preScripts,
+  preScriptsUris,
   scriptUris,
   globalNames,
   eventCallback
@@ -45,7 +45,7 @@ const makeHarness = ({
     },
     execute() {
       withCatch(() => {
-        this.injectScripts(preScripts, err => {
+        this.injectScripts(preScriptsUris, err => {
           this.loadScripts();
           if (err) {
             this.reportError(err);
