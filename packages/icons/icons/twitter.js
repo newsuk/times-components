@@ -1,7 +1,6 @@
+// @flow
 import React from "react";
 import Svg, { Path } from "svgs";
-
-// @flow
 import type { Element } from "react";
 
 export type TwitterProps = {
