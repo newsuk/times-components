@@ -1,7 +1,6 @@
 import React from "react";
 import { StyleSheet, ScrollView } from "react-native";
 import Slice from "@times-components/slice";
-import getTemplateObject from "./config";
 import RelatedArticlesHeading from "./heading";
 import RelatedArticleItem from "./related-article-item";
 import { relatedArticlesPropTypes, defaultProps } from "./proptypes";
@@ -14,12 +13,11 @@ const styles = StyleSheet.create({
 
 const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles) return null;
-  const templateObject = getTemplateObject(template);
 
   return (
     <ScrollView style={styles.container}>
       <RelatedArticlesHeading />
-      <Slice template={templateObject}>
+      <Slice template={template}>
         {articles.map(article => (
           <RelatedArticleItem
             key={article.id}

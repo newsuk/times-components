@@ -1,10 +1,7 @@
-import relatedArticlesDefaultStyles from "./related-articles.default.styles.js";
+import defaultStyles from "./default.styles.js";
 
 const templateStyles = {
-  relatedArticlesDefaultStyles
+  defaultStyles
 };
 
-export default template => {
-  const stylesObjectName = `${template.domain}${template.type}Styles`;
-  return templateStyles[stylesObjectName];
-};
+export default template => templateStyles[`${template}Styles`];

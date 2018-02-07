@@ -1,13 +1,18 @@
 import React from "react";
-import slicePropTypes from "./proptypes";
+import { propTypes, defaultProps } from "./proptypes";
 import getStyledComponent from "./styles/responsive";
+import getTemplateName from "./template-map";
 
 const Slice = ({ children, template }) => {
   if (!children) return null;
 
-  const StyledSliceContainer = getStyledComponent(template, "SliceContainer");
+  const templateName = getTemplateName(template);
+  const StyledSliceContainer = getStyledComponent(
+    templateName,
+    "SliceContainer"
+  );
   const StyledChildrenContainer = getStyledComponent(
-    template,
+    templateName,
     "ChildrenContainer"
   );
 
@@ -18,6 +23,7 @@ const Slice = ({ children, template }) => {
   );
 };
 
-Slice.propTypes = slicePropTypes;
+Slice.propTypes = propTypes;
+Slice.defaultProps = defaultProps;
 
 export default Slice;

@@ -6,10 +6,8 @@ import Slice from "../slice";
 
 module.exports = () => {
   context("Related articles", () => {
-    const template = {
-      domain: "relatedArticles",
-      type: "Default"
-    };
+    const template = "DEFAULT";
+
     it("renders a single child element", () => {
       const tree = renderer
         .create(
