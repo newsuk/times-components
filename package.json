@@ -13,7 +13,7 @@
   },
   "scripts": {
     "native": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "yarn storybook:test-build && jest ./lib && lerna run test --since --stream",
+    "test": "yarn storybook:test-build && jest ./lib --coverage && lerna run test --stream",
     "functional-test:web": "./lib/functional_tests/run-web.sh",
     "functional-test:ios": "./lib/functional_tests/run-ios.sh",
     "functional-test:android": "./lib/functional_tests/run-android.sh",
@@ -21,7 +21,7 @@
     "visual-snapshot-ios": "./lib/visual_snapshots/run-ios-dextrose.sh",
     "visual-snapshot-web": "./lib/visual_snapshots/run-web-dextrose.sh",
     "visual-snapshot-android": "./lib/visual_snapshots/run-android-dextrose.sh",
-    "coverage:publish": "lcov-result-merger ./packages/**/lcov.info | coveralls",
+    "coverage:publish": "lcov-result-merger ./**/lcov.info | coveralls",
     "prelint": "eslint . && prettier --list-different '**/*.*'",
     "lint": "lerna run lint --since",
     "fetch-fonts": "node ./lib/fetch-fonts",

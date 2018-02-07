@@ -45,6 +45,8 @@ then
   exit 0
 fi
 
+yarn coverage:publish
+
 # set npm credentials
 echo "Setting up npm"
 echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
