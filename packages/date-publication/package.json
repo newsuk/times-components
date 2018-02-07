@@ -58,7 +58,8 @@
     "@times-components/jest-configurator": "0.0.23",
     "@times-components/utils": "0.2.2",
     "date-fns": "1.28.5",
-    "prop-types": "15.6.0"
+    "prop-types": "15.6.0",
+    "react-native-device-info": "0.13.0"
   },
   "peerDependencies": {
     "babel-preset-env": "1.6.1",

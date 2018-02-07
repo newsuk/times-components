@@ -1,3 +1,5 @@
+import getTimezone from "./time-zone";
+
 const lastSunday = (month, year) => {
   const lastDayOfMonth = new Date(Date.UTC(year, month + 1, 0));
   const day = lastDayOfMonth.getDay();
@@ -28,7 +30,7 @@ const getUTCTime = date => {
 
 const isLondonTimezone = () => {
   try {
-    return Intl.DateTimeFormat().resolvedOptions().timeZone === "Europe/London";
+    return getTimezone() === "Europe/London";
   } catch (err) {
     return false;
   }

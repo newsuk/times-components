@@ -3,21 +3,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import DatePublication from "../date-publication";
 
-function gmtTests(userTimezone) {
-  const realIntl = Intl;
-
-  beforeEach(() => {
-    global.Intl = {
-      DateTimeFormat: () => ({
-        resolvedOptions: () => ({ timeZone: userTimezone })
-      })
-    };
-  });
-
-  afterEach(() => {
-    global.Intl = realIntl;
-  });
-
+export default function() {
   it("renders a DatePublication component with Times publication and relevant GMT date", () => {
     const tree = renderer
       .create(
@@ -41,15 +27,3 @@ function gmtTests(userTimezone) {
     expect(tree).toMatchSnapshot();
   });
 }
-
-function tests() {
-  describe("when the user has the same time zone as London time zone", () => {
-    gmtTests("Europe/London");
-  });
-
-  describe("when the user has a different time zone than London time zone", () => {
-    gmtTests("Europe/Kiev");
-  });
-}
-
-export default tests;

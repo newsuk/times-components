@@ -2,11 +2,7 @@ import format from "date-fns/format";
 import addMinutes from "date-fns/add_minutes";
 import PropTypes from "prop-types";
 import React from "react";
-import {
-  isLondonTimezone,
-  isBST,
-  getUTCTime
-} from "@times-components/utils/date";
+import { isLondonTimezone, isBST, getUTCTime } from "./date";
 
 const publications = {
   SUNDAYTIMES: "The Sunday Times",
