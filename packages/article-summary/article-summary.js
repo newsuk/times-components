@@ -20,7 +20,7 @@ const ArticleSummary = props => {
 
   return (
     <View>
-      {labelProps ? (
+      {(labelProps && labelProps.title) ? (
         <View style={styles.labelWrapper}>
           <ArticleLabel {...labelProps} />
         </View>

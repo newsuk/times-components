@@ -9,6 +9,7 @@ import ArticleLabel from "@times-components/article-label";
 import DatePublication from "@times-components/date-publication";
 import ArticleSummary, {
   ArticleSummaryHeadline,
+  ArticleSummaryContent,
   renderAst
 } from "@times-components/article-summary";
 
@@ -54,10 +55,7 @@ const AuthorProfileItem = item => {
     );
   }
 
-  const summaryText = showImage ? summary : shortSummary;
-  const Label = label
-    ? () => <ArticleLabel title={label} color="#333333" />
-    : null;
+  const content = showImage ? summary : shortSummary;
 
   return (
     <Link url={url} onPress={onPress}>
@@ -69,15 +67,16 @@ const AuthorProfileItem = item => {
           showImage={showImage}
         >
           <ArticleSummary
-            Label={Label}
-            Headline={() => <ArticleSummaryHeadline headline={headline} />}
-            summaryText={() => renderAst(summaryText)}
-            DatePublication={() => (
-              <DatePublication
-                date={publishedTime}
-                publication={publicationName}
-              />
-            )}
+            labelProps={{
+              title: label, 
+              color: "#333333"
+            }}
+            headline={() => <ArticleSummaryHeadline headline={headline} />}
+            content={() => <ArticleSummaryContent ast={content} />}
+            datePublicationProps= {{
+              date: publishedTime,
+              publication: publicationName
+            }}
           />
         </Card>
       </View>

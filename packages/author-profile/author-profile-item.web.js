@@ -10,7 +10,7 @@ import ArticleLabel from "@times-components/article-label";
 import DatePublication from "@times-components/date-publication";
 import ArticleSummary, {
   ArticleSummaryHeadline,
-  renderAst
+  ArticleSummaryContent
 } from "@times-components/article-summary";
 
 const LongText = withResponsiveStyles(View, {
@@ -67,28 +67,34 @@ const AuthorProfileItem = item => {
   }
 
   const childProps = {
-    Label: () =>
-      label ? <ArticleLabel title={label} color="#333333" /> : null,
-    Headline: () => <ArticleSummaryHeadline headline={headline} />,
-    DatePublication: () => (
-      <DatePublication date={publishedTime} publication={publicationName} />
-    )
+    labelProps: {
+      title: label,
+      color: "#333333"
+    },
+    headline: () => <ArticleSummaryHeadline headline={headline} />,
+    datePublicationProps: {
+      date: publishedTime,
+      publication: publicationName
+    }
   };
 
   const children = showImage ? (
-    <ArticleSummary {...childProps} summaryText={() => renderAst(summary)} />
+    <ArticleSummary 
+      {...childProps} 
+      content={() => <ArticleSummaryContent ast={summary} />}
+    />
   ) : (
     <Fragment>
       <LongText>
         <ArticleSummary
           {...childProps}
-          summaryText={() => renderAst(longSummary)}
+          summaryText={() =>  <ArticleSummaryContent ast={longSummary} />}
         />
       </LongText>
       <ShortText>
         <ArticleSummary
           {...childProps}
-          summaryText={() => renderAst(shortSummary)}
+          content={() => <ArticleSummaryContent ast={shortSummary} />}
         />
       </ShortText>
     </Fragment>

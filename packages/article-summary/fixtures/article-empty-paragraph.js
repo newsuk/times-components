@@ -6,7 +6,7 @@ export default {
     title: "Camilla Long",
     color: "#333333"
   },
-  datePublication: {
+  datePublicationProps: {
     date:"2017-07-01T14:32:00.000Z",
     publication:"SUNDAYTIMES"
   },
