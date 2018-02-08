@@ -5,8 +5,6 @@ import { getSlotConfig, getSizeMaps } from "./generate-config";
 import Placeholder from "./placeholder";
 import DOMContext from "./dom-context";
 import adInit from "./ad-init";
-import pageOptions from "./fixtures/page-options.json";
-import slotOptions from "./fixtures/slot-options.json";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 
@@ -42,8 +40,7 @@ class Ad extends Component {
       section: this.props.section,
       pos: this.props.pos,
       sizingMap: getSizeMaps(this.props.code),
-      pageOptions,
-      slotOptions: { ...slotOptions, pos: this.props.pos }
+      slotOptions: { pos: this.props.pos }
     };
 
     const sizeProps = !this.state.adReady
