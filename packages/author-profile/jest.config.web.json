@@ -2,7 +2,7 @@
   "rootDir": "../../",
   "coverageDirectory": "<rootDir>/packages/author-profile/coverage/web/",
   "transformIgnorePatterns": [
-    "node_modules/(?!(react-native|react-apollo-temp|@times-components)/)"
+    "node_modules/(?!(react-native|react-apollo|@times-components)/)"
   ],
   "testEnvironment": "jsdom",
   "testMatch": ["<rootDir>/packages/author-profile/__tests__/**.web.test.js"],

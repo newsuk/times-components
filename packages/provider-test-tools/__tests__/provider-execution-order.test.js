@@ -1,5 +1,5 @@
 import gql from "graphql-tag";
-import { graphql } from "react-apollo-temp";
+import { graphql } from "react-apollo";
 import { providerTester, getRenderedQueries, getResolvedQueries } from "../";
 
 function AuthorQueryResolver({ variables }) {

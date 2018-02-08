@@ -18,7 +18,7 @@
       "**/packages/provider-test-tools/*.js"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|react-apollo-temp|@times-components)/)"
+      "node_modules/(?!(react-native|react-apollo|@times-components)/)"
     ],
     "testMatch": [
       "<rootDir>/packages/provider-test-tools/__tests__/**.test.js"
@@ -58,7 +58,7 @@
     "lodash.isequal": "4.4.0",
     "prop-types": "15.6.0",
     "react": "16.2.0",
-    "react-apollo-temp": "2.0.5",
+    "react-apollo": "2.1.0-beta.0",
     "react-test-renderer": "16.2.0"
   },
   "peerDependencies": {
