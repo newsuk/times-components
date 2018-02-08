@@ -3,6 +3,8 @@
 import { View, Text, Platform, ScrollView } from "react-native";
 import { AdComposer } from "@times-components/ad";
 import React from "react";
+import { AdComposer } from "@times-components/ad";
+
 import { storiesOf } from "dextrose/storiesOfOverloader";
 import { CenteredDecorator } from "@times-components/storybook/decorators";
 import { renderTree, renderTrees } from "./markup";

@@ -151,7 +151,7 @@ exports[`Markup Web renders multiple paragraphs with ads 1`] = `
     This is the text for paragraph two
   </p>
   <Ad
-    pos="inline-ad"
+    pos="intervention"
     style={80}
   />
   <p>
