@@ -7,76 +7,80 @@ export default {
     color: "#333333"
   },
   datePublicationProps: {
-    date:"2017-07-01T14:32:00.000Z",
-    publication:"SUNDAYTIMES"
+    date: "2017-07-01T14:32:00.000Z",
+    publication: "SUNDAYTIMES"
   },
   headline: () => (
     <ArticleSummaryHeadline headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT" />
   ),
   bylineProps: {
-    ast:[
+    ast: [
+      {
+        name: "author",
+        attributes: {
+          slug: "camilla-long"
+        },
+        children: [
+          {
+            name: "text",
+            attributes: {
+              value: "Camilla Long"
+            },
+            children: []
+          }
+        ]
+      },
+      {
+        name: "inline",
+        attributes: {},
+        children: [
+          {
+            name: "text",
+            attributes: {
+              value: ", Environment Editor"
+            },
+            children: []
+          }
+        ]
+      }
+    ]
+  },
+  content: () => (
+    <ArticleSummaryContent
+      ast={[
         {
-          name: "author",
-          attributes: {
-            slug: "camilla-long"
-          },
+          name: "paragraph",
+          attributes: {},
           children: [
             {
               name: "text",
               attributes: {
-                value: "Camilla Long"
+                value:
+                  "Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night."
               },
               children: []
             }
           ]
         },
         {
-          name: "inline",
+          name: "paragraph",
           attributes: {},
           children: [
             {
               name: "text",
               attributes: {
-                value: ", Environment Editor"
+                value: "The former punk"
               },
               children: []
             }
           ]
+        },
+        {
+          name: "paragraph",
+          attributes: {},
+          children: []
         }
-      ]
-  },
-  content: () => <ArticleSummaryContent ast={[
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night."
-            },
-            children: []
-          }
-        ]
-      },
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value: "The former punk"
-            },
-            children: []
-          }
-        ]
-      },
-      {
-        name: "paragraph",
-        attributes: {},
-        children: []
-      }
-    ]} />
+      ]}
+    />
+  )
 };

@@ -3,8 +3,8 @@ import { ArticleSummaryHeadline, ArticleSummaryContent } from "../";
 
 export default {
   labelProps: {
-    title: "Camilla Long", 
-    color:"#333333"
+    title: "Camilla Long",
+    color: "#333333"
   },
   datePublicationProps: {
     date: "2017-07-01T14:32:00.000Z",
@@ -15,136 +15,140 @@ export default {
   ),
   bylineProps: {
     ast: [
+      {
+        name: "author",
+        attributes: {
+          slug: "camilla-long"
+        },
+        children: [
+          {
+            name: "text",
+            attributes: {
+              value: "Camilla Long"
+            },
+            children: []
+          }
+        ]
+      },
+      {
+        name: "inline",
+        attributes: {},
+        children: [
+          {
+            name: "text",
+            attributes: {
+              value: ", Environment Editor"
+            },
+            children: []
+          }
+        ]
+      }
+    ]
+  },
+  content: () => (
+    <ArticleSummaryContent
+      ast={[
         {
-          name: "author",
-          attributes: {
-            slug: "camilla-long"
-          },
+          name: "paragraph",
+          attributes: {},
           children: [
+            {
+              name: "bold",
+              attributes: {},
+              children: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Victoria"
+                  },
+                  children: []
+                }
+              ]
+            },
+            {
+              name: "break",
+              attributes: {},
+              children: []
+            },
             {
               name: "text",
               attributes: {
-                value: "Camilla Long"
+                value: " ITV"
+              },
+              children: []
+            },
+            {
+              name: "break",
+              attributes: {},
+              children: []
+            },
+            {
+              name: "text",
+              attributes: {
+                value: "★★★★☆"
               },
               children: []
             }
           ]
         },
         {
-          name: "inline",
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "bold",
+              attributes: {},
+              children: [
+                {
+                  name: "text",
+                  attributes: {
+                    value: "Lucy Worsley’s Nights at the Opera"
+                  },
+                  children: []
+                }
+              ]
+            },
+            {
+              name: "break",
+              attributes: {},
+              children: []
+            },
+            {
+              name: "text",
+              attributes: {
+                value: " BBC Two"
+              },
+              children: []
+            },
+            {
+              name: "break",
+              attributes: {},
+              children: []
+            },
+            {
+              name: "text",
+              attributes: {
+                value: "★★★☆☆"
+              },
+              children: []
+            }
+          ]
+        },
+        {
+          name: "paragraph",
           attributes: {},
           children: [
             {
               name: "text",
               attributes: {
-                value: ", Environment Editor"
+                value:
+                  "Poor old Harriet, Duchess of Sutherland. There she was giddily expecting a"
               },
               children: []
             }
           ]
         }
-      ]
-  },
-  content: () => <ArticleSummaryContent ast={[
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "bold",
-            attributes: {},
-            children: [
-              {
-                name: "text",
-                attributes: {
-                  value: "Victoria"
-                },
-                children: []
-              }
-            ]
-          },
-          {
-            name: "break",
-            attributes: {},
-            children: []
-          },
-          {
-            name: "text",
-            attributes: {
-              value: " ITV"
-            },
-            children: []
-          },
-          {
-            name: "break",
-            attributes: {},
-            children: []
-          },
-          {
-            name: "text",
-            attributes: {
-              value: "★★★★☆"
-            },
-            children: []
-          }
-        ]
-      },
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "bold",
-            attributes: {},
-            children: [
-              {
-                name: "text",
-                attributes: {
-                  value: "Lucy Worsley’s Nights at the Opera"
-                },
-                children: []
-              }
-            ]
-          },
-          {
-            name: "break",
-            attributes: {},
-            children: []
-          },
-          {
-            name: "text",
-            attributes: {
-              value: " BBC Two"
-            },
-            children: []
-          },
-          {
-            name: "break",
-            attributes: {},
-            children: []
-          },
-          {
-            name: "text",
-            attributes: {
-              value: "★★★☆☆"
-            },
-            children: []
-          }
-        ]
-      },
-      {
-        name: "paragraph",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value:
-                "Poor old Harriet, Duchess of Sutherland. There she was giddily expecting a"
-            },
-            children: []
-          }
-        ]
-      }
-    ]} />
+      ]}
+    />
+  )
 };

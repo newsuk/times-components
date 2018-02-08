@@ -1,5 +1,5 @@
 import React from "react";
-import { ArticleSummaryHeadline, ArticleSummaryContent } from "../";
+import { ArticleSummaryHeadline } from "../";
 
 export default {
   labelProps: {
@@ -12,5 +12,5 @@ export default {
   },
   headline: () => (
     <ArticleSummaryHeadline headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT" />
-  ),
+  )
 };

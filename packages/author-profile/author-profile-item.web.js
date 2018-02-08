@@ -6,8 +6,6 @@ import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import withResponsiveStyles from "@times-components/responsive-styles";
 
-import ArticleLabel from "@times-components/article-label";
-import DatePublication from "@times-components/date-publication";
 import ArticleSummary, {
   ArticleSummaryHeadline,
   ArticleSummaryContent
@@ -79,8 +77,8 @@ const AuthorProfileItem = item => {
   };
 
   const children = showImage ? (
-    <ArticleSummary 
-      {...childProps} 
+    <ArticleSummary
+      {...childProps}
       content={() => <ArticleSummaryContent ast={summary} />}
     />
   ) : (
@@ -88,7 +86,7 @@ const AuthorProfileItem = item => {
       <LongText>
         <ArticleSummary
           {...childProps}
-          summaryText={() =>  <ArticleSummaryContent ast={longSummary} />}
+          summaryText={() => <ArticleSummaryContent ast={longSummary} />}
         />
       </LongText>
       <ShortText>

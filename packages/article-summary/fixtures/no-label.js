@@ -1,7 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
 import { ArticleSummaryHeadline, ArticleSummaryContent } from "../";
-import styles from "../styles";
 
 export default {
   datePublicationProps: {
@@ -12,52 +10,55 @@ export default {
     <ArticleSummaryHeadline headline="Top medal for forces dog who took a bite out of the Taliban" />
   ),
   bylineProps: {
-      ast:[
-        {
-          name: "author",
-          attributes: {
-            slug: "camilla-long"
-          },
-          children: [
-            {
-              name: "text",
-              attributes: {
-                value: "Camilla Long"
-              },
-              children: []
-            }
-          ]
-        },
-        {
-          name: "inline",
-          attributes: {},
-          children: [
-            {
-              name: "text",
-              attributes: {
-                value: ", Environment Editor"
-              },
-              children: []
-            }
-          ]
-        }
-      ]
-  },
-  content: () => 
-    <ArticleSummaryContent ast={[
+    ast: [
       {
-        name: "paragraph",
+        name: "author",
+        attributes: {
+          slug: "camilla-long"
+        },
+        children: [
+          {
+            name: "text",
+            attributes: {
+              value: "Camilla Long"
+            },
+            children: []
+          }
+        ]
+      },
+      {
+        name: "inline",
         attributes: {},
         children: [
           {
             name: "text",
             attributes: {
-              value:
-                "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear."
+              value: ", Environment Editor"
             },
             children: []
           }
         ]
       }
-    ]} />
+    ]
+  },
+  content: () => (
+    <ArticleSummaryContent
+      ast={[
+        {
+          name: "paragraph",
+          attributes: {},
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value:
+                  "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear."
+              },
+              children: []
+            }
+          ]
+        }
+      ]}
+    />
+  )
 };

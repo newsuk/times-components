@@ -452,6 +452,24 @@ exports[`Article Summary test on ios renders an article-summary component with e
     </Text>
   </Text>
   <Text
+    accessibilityLabel="datePublication"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+    testID="datePublication"
+  >
+    Saturday July 01 2017, 03:32pm, The Sunday Times
+  </Text>
+  <Text
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"

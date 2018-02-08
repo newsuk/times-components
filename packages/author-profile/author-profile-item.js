@@ -5,12 +5,9 @@ import Card from "@times-components/card";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 
-import ArticleLabel from "@times-components/article-label";
-import DatePublication from "@times-components/date-publication";
 import ArticleSummary, {
   ArticleSummaryHeadline,
-  ArticleSummaryContent,
-  renderAst
+  ArticleSummaryContent
 } from "@times-components/article-summary";
 
 const styles = StyleSheet.create({
@@ -68,12 +65,12 @@ const AuthorProfileItem = item => {
         >
           <ArticleSummary
             labelProps={{
-              title: label, 
+              title: label,
               color: "#333333"
             }}
             headline={() => <ArticleSummaryHeadline headline={headline} />}
             content={() => <ArticleSummaryContent ast={content} />}
-            datePublicationProps= {{
+            datePublicationProps={{
               date: publishedTime,
               publication: publicationName
             }}
