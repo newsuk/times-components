@@ -81,24 +81,8 @@ exports[`Link tests on Web TextLink renders correctly with specific styles 1`] =
 `;
 
 exports[`Link tests on Web renders with responsive styles 1`] = `
-.c0 {
-  color: #069;
-  font-family: "TimesDigitalW04-Regular";
-  line-height: 26px;
-  font-size: 17px;
-  margin-bottom: 25px;
-  margin-top: 0;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-
 <a
-  class="c0"
+  class="sc-bdVaJa CkrWH"
   href="http://thetimes.co.uk"
   style="text-decoration: underline;"
 >

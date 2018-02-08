@@ -27,14 +27,15 @@ exports[`Article Summary test on ios renders an article-summary component with a
     style={
       Array [
         Object {
+          "fontSize": 22,
+          "lineHeight": 25,
+        },
+        Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontWeight": "400",
           "marginBottom": 5,
-        },
-        Object {
-          "fontSize": 22,
-          "lineHeight": 22,
+          "marginTop": 0,
         },
       ]
     }
@@ -157,14 +158,15 @@ exports[`Article Summary test on ios renders an article-summary component with c
     style={
       Array [
         Object {
+          "fontSize": 22,
+          "lineHeight": 25,
+        },
+        Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontWeight": "400",
           "marginBottom": 5,
-        },
-        Object {
-          "fontSize": 22,
-          "lineHeight": 22,
+          "marginTop": 0,
         },
       ]
     }
@@ -361,14 +363,15 @@ exports[`Article Summary test on ios renders an article-summary component with e
     style={
       Array [
         Object {
+          "fontSize": 22,
+          "lineHeight": 25,
+        },
+        Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontWeight": "400",
           "marginBottom": 5,
-        },
-        Object {
-          "fontSize": 22,
-          "lineHeight": 22,
+          "marginTop": 0,
         },
       ]
     }
@@ -506,14 +509,15 @@ exports[`Article Summary test on ios renders an article-summary component with h
     style={
       Array [
         Object {
+          "fontSize": 22,
+          "lineHeight": 25,
+        },
+        Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontWeight": "400",
           "marginBottom": 5,
-        },
-        Object {
-          "fontSize": 22,
-          "lineHeight": 22,
+          "marginTop": 0,
         },
       ]
     }
@@ -567,14 +571,15 @@ exports[`Article Summary test on ios renders an article-summary component with m
     style={
       Array [
         Object {
+          "fontSize": 22,
+          "lineHeight": 25,
+        },
+        Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontWeight": "400",
           "marginBottom": 5,
-        },
-        Object {
-          "fontSize": 22,
-          "lineHeight": 22,
+          "marginTop": 0,
         },
       ]
     }
@@ -689,14 +694,15 @@ exports[`Article Summary test on ios renders an article-summary component with n
     style={
       Array [
         Object {
+          "fontSize": 22,
+          "lineHeight": 25,
+        },
+        Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontWeight": "400",
           "marginBottom": 5,
-        },
-        Object {
-          "fontSize": 22,
-          "lineHeight": 22,
+          "marginTop": 0,
         },
       ]
     }
@@ -760,14 +766,15 @@ exports[`Article Summary test on ios renders an article-summary component with n
     style={
       Array [
         Object {
+          "fontSize": 22,
+          "lineHeight": 25,
+        },
+        Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontWeight": "400",
           "marginBottom": 5,
-        },
-        Object {
-          "fontSize": 22,
-          "lineHeight": 22,
+          "marginTop": 0,
         },
       ]
     }

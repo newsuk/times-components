@@ -1,12 +1,10 @@
 import React from "react";
 import { Text } from "react-native";
 import PropTypes from "prop-types";
-import headlineStyles from "./article-summary-headline-styles";
+import styles from "./styles/article-summary-headline-styles";
 
 const ArticleSummaryHeadline = ({ headline }) => (
-  <Text style={[headlineStyles.default, headlineStyles.headline]}>
-    {headline}
-  </Text>
+  <Text style={[styles.default, styles.headline]}>{headline}</Text>
 );
 
 ArticleSummaryHeadline.propTypes = {

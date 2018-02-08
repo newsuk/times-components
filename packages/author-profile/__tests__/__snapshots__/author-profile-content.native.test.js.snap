@@ -2314,14 +2314,15 @@ exports[`renders profile content component 1`] = `
                     style={
                       Array [
                         Object {
+                          "fontSize": 22,
+                          "lineHeight": 25,
+                        },
+                        Object {
                           "color": "#333333",
                           "fontFamily": "TimesModern-Bold",
                           "fontWeight": "400",
                           "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
+                          "marginTop": 0,
                         },
                       ]
                     }
@@ -2553,14 +2554,15 @@ exports[`renders profile content component 1`] = `
                     style={
                       Array [
                         Object {
+                          "fontSize": 22,
+                          "lineHeight": 25,
+                        },
+                        Object {
                           "color": "#333333",
                           "fontFamily": "TimesModern-Bold",
                           "fontWeight": "400",
                           "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
+                          "marginTop": 0,
                         },
                       ]
                     }
@@ -2792,14 +2794,15 @@ exports[`renders profile content component 1`] = `
                     style={
                       Array [
                         Object {
+                          "fontSize": 22,
+                          "lineHeight": 25,
+                        },
+                        Object {
                           "color": "#333333",
                           "fontFamily": "TimesModern-Bold",
                           "fontWeight": "400",
                           "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
+                          "marginTop": 0,
                         },
                       ]
                     }
@@ -3268,14 +3271,15 @@ exports[`renders profile content item component 1`] = `
               style={
                 Array [
                   Object {
+                    "fontSize": 22,
+                    "lineHeight": 25,
+                  },
+                  Object {
                     "color": "#333333",
                     "fontFamily": "TimesModern-Bold",
                     "fontWeight": "400",
                     "marginBottom": 5,
-                  },
-                  Object {
-                    "fontSize": 22,
-                    "lineHeight": 22,
+                    "marginTop": 0,
                   },
                 ]
               }
@@ -3376,14 +3380,15 @@ exports[`renders profile content item component with a specific image size 1`] =
               style={
                 Array [
                   Object {
+                    "fontSize": 22,
+                    "lineHeight": 25,
+                  },
+                  Object {
                     "color": "#333333",
                     "fontFamily": "TimesModern-Bold",
                     "fontWeight": "400",
                     "marginBottom": 5,
-                  },
-                  Object {
-                    "fontSize": 22,
-                    "lineHeight": 22,
+                    "marginTop": 0,
                   },
                 ]
               }
@@ -3484,14 +3489,15 @@ exports[`renders profile content item component with no image 1`] = `
               style={
                 Array [
                   Object {
+                    "fontSize": 22,
+                    "lineHeight": 25,
+                  },
+                  Object {
                     "color": "#333333",
                     "fontFamily": "TimesModern-Bold",
                     "fontWeight": "400",
                     "marginBottom": 5,
-                  },
-                  Object {
-                    "fontSize": 22,
-                    "lineHeight": 22,
+                    "marginTop": 0,
                   },
                 ]
               }

@@ -236,14 +236,15 @@ exports[`Slice test on android Related articles renders single article 1`] = `
                 style={
                   Array [
                     Object {
+                      "fontSize": 22,
+                      "lineHeight": 25,
+                    },
+                    Object {
                       "color": "#333333",
                       "fontFamily": "TimesModern-Bold",
                       "fontWeight": "400",
                       "marginBottom": 5,
-                    },
-                    Object {
-                      "fontSize": 22,
-                      "lineHeight": 22,
+                      "marginTop": 0,
                     },
                   ]
                 }
@@ -581,14 +582,15 @@ exports[`Slice test on android Related articles renders single article with no b
                 style={
                   Array [
                     Object {
+                      "fontSize": 22,
+                      "lineHeight": 25,
+                    },
+                    Object {
                       "color": "#333333",
                       "fontFamily": "TimesModern-Bold",
                       "fontWeight": "400",
                       "marginBottom": 5,
-                    },
-                    Object {
-                      "fontSize": 22,
-                      "lineHeight": 22,
+                      "marginTop": 0,
                     },
                   ]
                 }
@@ -867,14 +869,15 @@ exports[`Slice test on android Related articles renders single article with no l
                 style={
                   Array [
                     Object {
+                      "fontSize": 22,
+                      "lineHeight": 25,
+                    },
+                    Object {
                       "color": "#333333",
                       "fontFamily": "TimesModern-Bold",
                       "fontWeight": "400",
                       "marginBottom": 5,
-                    },
-                    Object {
-                      "fontSize": 22,
-                      "lineHeight": 22,
+                      "marginTop": 0,
                     },
                   ]
                 }
@@ -1059,14 +1062,15 @@ exports[`Slice test on android Related articles renders single article with no l
                 style={
                   Array [
                     Object {
+                      "fontSize": 22,
+                      "lineHeight": 25,
+                    },
+                    Object {
                       "color": "#333333",
                       "fontFamily": "TimesModern-Bold",
                       "fontWeight": "400",
                       "marginBottom": 5,
-                    },
-                    Object {
-                      "fontSize": 22,
-                      "lineHeight": 22,
+                      "marginTop": 0,
                     },
                   ]
                 }
