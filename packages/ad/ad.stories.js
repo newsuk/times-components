@@ -17,6 +17,8 @@ if (window.document) {
 } else {
   DOMContext = NativeDOMContext;
 }
+const articleUrl =
+  "https://www.thetimes.co.uk/article/fdefc7fa-0ac4-11e8-a5b3-3d239643ad40";
 
 const withOpenInNewWindow = children => {
   const link = typeof document === "object" &&
@@ -52,7 +54,19 @@ storiesOf("Advertisement", module)
       </View>
     )
   )
-  .add("render one ad and some text - inline", () =>
+  .add("ad with grapeshot", () =>
+    withOpenInNewWindow(
+      <View>
+        <Ad
+          section="article"
+          code="ad-header"
+          pos="header"
+          contextUrl={articleUrl}
+        />
+      </View>
+    )
+  )
+  .add("render one ad and some text", () =>
     withOpenInNewWindow(
       <ScrollView>
         <Text style={{ color: "blue" }}>
