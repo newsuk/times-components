@@ -13,7 +13,7 @@ import twoRelatedArticlesFixture from "../related-articles/fixtures/two-related-
 
 const createRelatedArticlesProps = fixtureData => ({
   articles: fixtureData.relatedArticles,
-  template: fixtureData.relatedArticlesTemplate,
+  template: fixtureData.relatedArticlesLayout.template,
   onPress: () => {}
 });
 

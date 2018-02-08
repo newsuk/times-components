@@ -1,6 +1,8 @@
 {
   "data": {
-    "relatedArticlesTemplate": "DEFAULT",
+    "relatedArticlesLayout": {
+      "template": "DEFAULT"
+    },
     "relatedArticles": [
       {
         "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",

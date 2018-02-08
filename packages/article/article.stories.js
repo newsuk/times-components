@@ -40,7 +40,7 @@ const preventDefaultedAction = decorateAction([
 
 const createRelatedArticlesProps = fixtureData => ({
   articles: fixtureData.relatedArticles,
-  template: fixtureData.relatedArticlesTemplate,
+  template: fixtureData.relatedArticlesLayout.template,
   onPress: preventDefaultedAction("onArticlePress")
 });
 
