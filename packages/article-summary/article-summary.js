@@ -1,11 +1,11 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
-import { renderTrees, articleBylinePropTypes } from "@times-components/markup";
+import { renderTrees } from "@times-components/markup";
 import summarise from "./summarise";
 import renderer from "./article-summary-renderer";
 import ArticleLabel from "@times-components/article-label";
-import Byline from "@times-components/article-byline";
+import Byline, { articleBylinePropTypes } from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
 import ArticleSummaryHeadline from "./article-summary-headline";
 import ArticleSummaryContent from "./article-summary-content";
@@ -52,7 +52,7 @@ ArticleSummary.propTypes = {
   }),
   headline: PropTypes.func,
   content: PropTypes.func,
-  bylineProps: articleBylinePropTypes,
+  bylineProps: PropTypes.shape(articleBylinePropTypes),
   datePublicationProps: PropTypes.shape({
     date: PropTypes.string,
     publication: PropTypes.string
@@ -60,7 +60,7 @@ ArticleSummary.propTypes = {
 };
 
 ArticleSummary.defaultProps = {
-  content: () => [],
+  content: () => null,
   headline: () => null,
 };
 

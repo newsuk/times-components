@@ -35,4 +35,5 @@ const ArticleByline = ({ ast, style }) =>
 ArticleByline.propTypes = articleBylinePropTypes;
 ArticleByline.defaultProps = articleBylineDefaultPropTypes;
 
+export { articleBylinePropTypes };
 export default ArticleByline;

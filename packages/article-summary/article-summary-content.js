@@ -6,11 +6,11 @@ import { renderAst } from './';
 import styles from "./styles";
 
 export default function ArticleSummaryContent({ast = []}) {
-  return (
+  return (ast.length > 0) ? (
     <Text style={styles.text}>
      {renderAst(ast)}
     </Text>
-  );
+  ) : null;
 }
 
 ArticleSummaryContent.propTypes = {

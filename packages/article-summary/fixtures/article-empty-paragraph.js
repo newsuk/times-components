@@ -7,14 +7,14 @@ export default {
     color: "#333333"
   },
   datePublication: {
-    date="2017-07-01T14:32:00.000Z"
-    publication="SUNDAYTIMES"
+    date:"2017-07-01T14:32:00.000Z",
+    publication:"SUNDAYTIMES"
   },
   headline: () => (
     <ArticleSummaryHeadline headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT" />
   ),
   bylineProps: {
-    ast:{[
+    ast:[
         {
           name: "author",
           attributes: {
@@ -43,7 +43,7 @@ export default {
             }
           ]
         }
-      ]}
+      ]
   },
   content: () => <ArticleSummaryContent ast={[
       {
