@@ -12,10 +12,18 @@ describe("DOMContext harness", () => {
     window = document.defaultView;
   });
 
-  const fireLoadEventFor = source => {
+  const fireEventFor = (evt, source) => {
     Array.from(document.getElementsByTagName("script"))
       .find(el => el.src === source)
-      .dispatchEvent(new window.Event("load"));
+      .dispatchEvent(new window.Event(evt));
+  };
+
+  const fireLoadEventFor = source => {
+    fireEventFor("load", source);
+  };
+
+  const fireErrorEventFor = source => {
+    fireEventFor("error", source);
   };
 
   const makeHarness = args =>
@@ -37,7 +45,7 @@ describe("DOMContext harness", () => {
 
   it("injects scripts into the document head", () => {
     const harness = makeHarness({
-      scriptUris: ["a", "b"]
+      scriptUris: [{ uri: "a" }, { uri: "b" }]
     });
     harness.execute();
     const scripts = document.head.getElementsByTagName("script");
@@ -47,11 +55,11 @@ describe("DOMContext harness", () => {
 
   it("does not inject script twice in document head", () => {
     const harness = makeHarness({
-      scriptUris: ["a", "b"]
+      scriptUris: [{ uri: "a" }, { uri: "b" }]
     });
     harness.execute();
     const anotherHarness = makeHarness({
-      scriptUris: ["a", "c"]
+      scriptUris: [{ uri: "a" }, { uri: "c" }]
     });
     anotherHarness.execute();
     const scripts = document.head.getElementsByTagName("script");
@@ -104,7 +112,7 @@ describe("DOMContext harness", () => {
     const eventCallback = jest.fn();
     const harness = makeHarness({
       document: null, // will cause error on DOM manipulation
-      scriptUris: ["a"],
+      scriptUris: [{ uri: "a" }],
       eventCallback
     });
     harness.execute();
@@ -116,7 +124,7 @@ describe("DOMContext harness", () => {
     const init = jest.fn();
     const harness = makeHarness({
       init,
-      scriptUris: ["providesSecond"],
+      scriptUris: [{ uri: "providesSecond" }],
       globalNames: ["first", "second"]
     });
 
@@ -129,45 +137,45 @@ describe("DOMContext harness", () => {
     expect(init).toHaveBeenCalledTimes(1);
   });
 
-  it("doesn't invoke init function if globals aren't loaded", () => {
+  it("invokes init function if the script has an expired timeout", () => {
+    jest.useFakeTimers();
     const init = jest.fn();
     const harness = makeHarness({
       init,
+      scriptUris: [{ uri: "providesSecond", timeout: 200 }]
+    });
+    harness.execute();
+    expect(init).not.toBeCalled();
+    jest.runAllTimers();
+    expect(init).toHaveBeenCalledTimes(1);
+  });
+
+  it("invokes init function if the script can fail", () => {
+    jest.useFakeTimers();
+    const init = jest.fn();
+    const harness = makeHarness({
+      init,
+      scriptUris: [{ uri: "providesSecond", canRequestFail: true }]
+    });
+    harness.execute();
+
+    fireErrorEventFor("providesSecond");
+
+    expect(init).toHaveBeenCalledTimes(1);
+  });
+
+  it("doesn't invoke init function if globals aren't loaded", () => {
+    const init = jest.fn();
+    const eventCallback = jest.fn();
+    const harness = makeHarness({
+      init,
       scriptUris: ["willNeverLoad"],
-      globalNames: ["requiredVar"]
+      globalNames: ["requiredVar"],
+      eventCallback
     });
 
     harness.execute();
     expect(init).toHaveBeenCalledTimes(0);
-  });
-
-  it("invokes the init function immediately if all globals are provided before scripts load", () => {
-    window.requiredVar = "present";
-    const init = jest.fn();
-    const harness = makeHarness({
-      init,
-      scriptUris: ["first"],
-      globalNames: ["requiredVar"]
-    });
-
-    harness.execute();
-    expect(init).toHaveBeenCalledTimes(1);
-  });
-
-  it("does not invoke the init function twice when multiple scripts load after globals are provided", () => {
-    window.requiredVar = "present";
-    const init = jest.fn();
-    const harness = makeHarness({
-      init,
-      scriptUris: ["first"],
-      globalNames: ["requiredVar"]
-    });
-
-    harness.execute();
-
-    fireLoadEventFor("first");
-
-    expect(init).toHaveBeenCalledTimes(1);
   });
 
   it("Dispatches a renderComplete event when the renderComplete callback is invoked", () => {
