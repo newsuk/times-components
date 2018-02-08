@@ -51,8 +51,7 @@ describe("Ad init", () => {
         pageTargeting: {
           title: "Title"
         },
-        code: "mockCode",
-        pos: "mockPos"
+        pos: "mockCode"
       },
       window,
       globals: {
@@ -106,7 +105,7 @@ describe("Ad init", () => {
   it("configures slots on slot init", () => {
     initOptions.data = {
       config: {
-        code: "mock-code",
+        pos: "mock-code",
         sizes: [],
         maxSizes: {
           width: 0,
@@ -120,7 +119,7 @@ describe("Ad init", () => {
           sizes: [[1, 1]]
         }
       ],
-      slotOptions: {
+      slotTargeting: {
         slotOptionName: "slotOptionValue"
       }
     };

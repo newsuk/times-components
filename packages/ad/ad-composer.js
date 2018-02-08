@@ -16,7 +16,8 @@ AdComposer.propTypes = {
   adConfig: PropTypes.shape({
     networkId: PropTypes.string.isRequired,
     adUnit: PropTypes.string.isRequired,
-    pageTargeting: PropTypes.shape({})
+    pageTargeting: PropTypes.shape({}),
+    slotTargeting: PropTypes.shape({})
   })
 };
 
@@ -27,6 +28,9 @@ AdComposer.defaultProps = {
     pageTargeting: {
       title: "This is title",
       label: "This is label"
+    },
+    slotTargeting: {
+      section: "news"
     }
   }
 };
