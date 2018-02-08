@@ -17,4 +17,3 @@ Slice.propTypes = propTypes;
 Slice.defaultProps = defaultProps;
 
 export default Slice;
-
