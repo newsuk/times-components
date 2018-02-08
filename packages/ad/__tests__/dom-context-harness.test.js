@@ -68,7 +68,6 @@ describe("DOMContext harness", () => {
   });
 
   it("will invoke the execute hook returned by the init function", () => {
-    window.myGlobalVariable = "myGlobalValue";
     const execute = jest.fn();
     const init = jest.fn().mockImplementation(() => ({ execute }));
 
@@ -119,22 +118,31 @@ describe("DOMContext harness", () => {
     expect(eventCallback).toHaveBeenCalledWith("error", expect.any(String));
   });
 
-  it("invokes init function after globals are loaded", () => {
-    window.first = "firstValue";
+  it("invokes init function after the scripts are loaded", () => {
     const init = jest.fn();
     const harness = makeHarness({
       init,
-      scriptUris: [{ uri: "providesSecond" }],
-      globalNames: ["first", "second"]
+      scriptUris: [{ uri: "providesSecond" }]
     });
 
     harness.execute();
 
-    window.second = "secondValue";
-
     fireLoadEventFor("providesSecond");
 
     expect(init).toHaveBeenCalledTimes(1);
+  });
+
+  it("doesn't invoke init function if the scripts aren't loaded", () => {
+    const init = jest.fn();
+    const eventCallback = jest.fn();
+    const harness = makeHarness({
+      init,
+      scriptUris: [{ uri: "willNeverLoad" }],
+      eventCallback
+    });
+
+    harness.execute();
+    expect(init).toHaveBeenCalledTimes(0);
   });
 
   it("invokes init function if the script has an expired timeout", () => {
@@ -164,20 +172,6 @@ describe("DOMContext harness", () => {
     expect(init).toHaveBeenCalledTimes(1);
   });
 
-  it("doesn't invoke init function if globals aren't loaded", () => {
-    const init = jest.fn();
-    const eventCallback = jest.fn();
-    const harness = makeHarness({
-      init,
-      scriptUris: ["willNeverLoad"],
-      globalNames: ["requiredVar"],
-      eventCallback
-    });
-
-    harness.execute();
-    expect(init).toHaveBeenCalledTimes(0);
-  });
-
   it("Dispatches a renderComplete event when the renderComplete callback is invoked", () => {
     const eventCallback = jest.fn();
 
@@ -205,17 +199,5 @@ describe("DOMContext harness", () => {
     harness.execute();
 
     expect(eventCallback).toHaveBeenCalledTimes(1);
-  });
-
-  it("Allows the renderComplete callback to be invoked asychronously", done => {
-    const harness = makeHarness({
-      init: ({ renderComplete }) => setTimeout(renderComplete, 0),
-      eventCallback: event => {
-        expect(event).toEqual("renderComplete");
-        done();
-      }
-    });
-
-    harness.execute();
   });
 });
