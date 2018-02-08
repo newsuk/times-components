@@ -10,7 +10,7 @@ const makeHarness = ({
   window,
   el,
   data,
-  preScriptUris,
+  init,
   scriptUris,
   globalNames,
   eventCallback
@@ -18,7 +18,7 @@ const makeHarness = ({
   let renderCompleteCalled = false;
   let initCalled = false;
   const scritpsLoaded = [];
-  const scriptsErrored = [];
+  const scriptErrored = [];
 
   const withCatch = action => {
     try {
@@ -30,35 +30,18 @@ const makeHarness = ({
     }
   };
 
-  const isScriptLoaded = scriptId => scritpsLoaded.indexOf(scriptId) > -1;
-  const isScriptErrored = scriptId => scriptsErrored.indexOf(scriptId) > -1;
+  const isScriptLoaded = scriptId => document.getElementById(scriptId);
 
   return {
-    loadScripts() {
-      this.injectScripts(scriptUris, err => {
-        if (err) {
-          this.reportError(err);
-          return;
-        }
-        this.handleScriptLoad();
-      });
-    },
     execute() {
       withCatch(() => {
-        this.injectScripts(preScriptUris, err => {
-          this.loadScripts();
-          if (err) {
-            this.reportError(err);
-          }
+        this.loadScriptsParallel(scriptUris, () => {
+          this.checkForInit();
         });
-        window.setTimeout(() => {
-          this.loadScripts();
-        }, 500);
       });
     },
     checkForInit() {
-      const totalScriptsProcessed =
-        scritpsLoaded.length + scriptsErrored.length;
+      const totalScriptsProcessed = scritpsLoaded.length + scriptErrored.length;
       if (totalScriptsProcessed === scriptUris.length) {
         this.runInit();
       }
@@ -73,8 +56,8 @@ const makeHarness = ({
       this.checkForInit();
     },
     scriptErrored(scriptId, canRequestFail, err) {
-      scriptsErrored.push(scriptId);
-      if (!canRequestFail) {
+      scriptErrored.push(scriptId);
+      if (canRequestFail) {
         throw new Error(`Failed to load the script ${err}`);
       }
       this.reportError();
@@ -82,25 +65,24 @@ const makeHarness = ({
     },
 
     scriptTimeout(scriptId) {
-      if (isScriptLoaded(scriptId) || isScriptErrored(scriptId)) {
+      if (isScriptLoaded(scriptId)) {
         return;
       }
-      scriptsErrored.push(scriptId);
+      scriptErrored.push(scriptId);
       this.checkForInit();
     },
 
-    reportError(err) {
-      // eslint-disable-next-line no-console
-      window.console.error(`Error while loading the script: ${err}`);
-    },
-
-    injectScripts(scripts, func) {
+    loadScriptsParallel(scripts, callback) {
+      if (scripts.length === 0) {
+        callback();
+      }
       for (let i = 0; i < scripts.length; i += 1) {
-        const scriptUri = scripts[i];
+        const scriptUri = scripts[i].uri;
+        const timeout = scripts[i].timeout || 0;
+        const canRequestFail = scripts[i].canRequestFail || false;
         const scriptId = `dom-context-script-${scriptUri.replace(/\W/g, "")}`;
-        let script = document.getElementById(scriptId);
-        if (!script) {
-          script = document.createElement("script");
+        if (!isScriptLoaded(scriptId)) {
+          const script = document.createElement("script");
           script.id = scriptId;
           script.type = "text/javascript";
           script.addEventListener(
@@ -111,7 +93,7 @@ const makeHarness = ({
             "error",
             this.scriptErrored.bind(this, scriptId, canRequestFail)
           );
-          if (timeout > 0) {
+          if (timeout) {
             const scriptTimeout = this.scriptTimeout.bind(this, scriptId);
             window.setTimeout(() => {
               scriptTimeout();
@@ -121,17 +103,15 @@ const makeHarness = ({
           script.defer = true;
           document.head.appendChild(script);
         }
-        script.addEventListener("load", func.bind(null, null));
-        script.addEventListener("error", func);
       }
-    },
-
-    handleScriptLoad() {
-      this.runInit();
     },
 
     runInit() {
       withCatch(() => {
+        if (initCalled) {
+          return;
+        }
+        initCalled = true;
         const globals = {};
         for (let i = 0; i < globalNames.length; i += 1) {
           const globalName = globalNames[i];
