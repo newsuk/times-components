@@ -133,7 +133,7 @@
     "prop-types": "15.6.0",
     "react": "16.2.0",
     "react-dom": "16.2.0",
-    "react-native": "0.50.4",
+    "react-native": "0.50.1",
     "react-native-storybook-loader": "1.5.1",
     "react-native-web": "0.3.2",
     "rimraf": "2.6.1",
@@ -145,7 +145,6 @@
   },
   "dependencies": {
     "babel-preset-env": "1.6.1",
-    "babel-preset-stage-2": "6.24.1",
-    "metro-bundler": "0.22.1"
+    "babel-preset-stage-2": "6.24.1"
   }
 }
