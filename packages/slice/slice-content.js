@@ -7,12 +7,8 @@ import Card from "@times-components/card";
 import Link from "@times-components/link";
 import ArticleSummary, {
   ArticleSummaryHeadline,
-  renderAst
+  ArticleSummaryContent
 } from "@times-components/article-summary";
-
-import ArticleLabel from "@times-components/article-label";
-import ArticleByline from "@times-components/article-byline";
-import DatePublication from "@times-components/date-publication";
 
 import SharedStyles from "./styles/shared";
 
@@ -41,21 +37,16 @@ const SliceContent = ({ item }) => {
     showImage: true
   };
 
-  const Label = label
-    ? () => <ArticleLabel title={label} color="#333333" />
-    : null;
-  const Byline = byline ? () => <ArticleByline ast={byline} /> : null;
-
   return (
     <Link url={url} onPress={onPress}>
       <View style={styles.cardContainer}>
         <Card {...cardProps} image={imageUri ? { uri: imageUri } : null}>
           <ArticleSummary
-            Byline={Byline}
-            DatePublication={() => <DatePublication date={publishedTime} />}
-            Headline={() => <ArticleSummaryHeadline headline={headline} />}
-            Label={Label}
-            summaryText={() => renderAst(summary)}
+            bylineProps={{ ast: byline }}
+            datePublicationProps={{ date: publishedTime }}
+            headline={() => <ArticleSummaryHeadline headline={headline} />}
+            labelProps={{ title: label, color: "#333333" }}
+            content={() => <ArticleSummaryContent ast={summary} />}
           />
         </Card>
       </View>
