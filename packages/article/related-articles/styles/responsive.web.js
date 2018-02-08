@@ -10,7 +10,7 @@ export const StyledRelatedArticlesHeading = withResponsiveStyles(View, {
     border-top-color: #dbdbdb;
     border-top-width: ${StyleSheet.hairlineWidth}px;
     display: flex;
-    height: 57px;
+    height: 55px;
     justify-content: center;
     margin-left: 10px;
     margin-right: 10px;

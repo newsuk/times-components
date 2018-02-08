@@ -7,7 +7,7 @@ export default StyleSheet.create({
     borderBottomWidth: StyleSheet.hairlineWidth,
     borderTopColor: "#dbdbdb",
     borderTopWidth: StyleSheet.hairlineWidth,
-    height: 57,
+    height: 55,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
