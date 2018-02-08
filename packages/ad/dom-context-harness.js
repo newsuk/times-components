@@ -17,8 +17,8 @@ const makeHarness = ({
 }) => {
   let renderCompleteCalled = false;
   let initCalled = false;
-  const scritpsLoaded = [];
-  const scriptsErrored = [];
+  // const scritpsLoaded = [];
+  // const scriptsErrored = [];
 
   const withCatch = action => {
     try {
@@ -29,24 +29,42 @@ const makeHarness = ({
       eventCallback("error", e.message);
     }
   };
-
-  const isScriptLoaded = scriptId => scritpsLoaded.indexOf(scriptId) > -1;
-  const isScriptErrored = scriptId => scriptsErrored.indexOf(scriptId) > -1;
-
+  const log = (...message) => {
+    // eslint-disable-next-line no-console
+    window.console.info(data.code, ...message);
+  };
   return {
     execute() {
       withCatch(() => {
+        // eslint-disable-next-line no-param-reassign
+        window.scritpsProcessed = window.scritpsProcessed || [];
         this.loadScriptsParallel(scriptUris, () => {
-          this.checkForInit();
+          this.runInitIfGlobalsPresent();
         });
       });
     },
-    checkForInit() {
-      const totalScriptsProcessed =
-        scritpsLoaded.length + scriptsErrored.length;
+    runInitIfGlobalsPresent() {
+      log(
+        "runInitIfGlobalsPresent",
+        "window.scritpsProcessed",
+        window.scritpsProcessed,
+        "scriptUris.length",
+        scriptUris.length
+      );
+      const totalScriptsProcessed = window.scritpsProcessed.length;
       if (totalScriptsProcessed === scriptUris.length) {
+        log("runInit");
         this.runInit();
       }
+    },
+    addProcessedScript(scriptId) {
+      if (this.isScriptProcessed(scriptId)) {
+        return;
+      }
+      window.scritpsProcessed.push(scriptId);
+    },
+    isScriptProcessed(scriptId) {
+      return window.scritpsProcessed.indexOf(scriptId) > -1;
     },
     reportError(err) {
       // eslint-disable-next-line no-console
@@ -54,27 +72,42 @@ const makeHarness = ({
     },
 
     scriptLoaded(scriptId) {
-      scritpsLoaded.push(scriptId);
-      this.checkForInit();
+      withCatch(() => {
+        log("scriptLoaded", scriptId);
+        this.addProcessedScript(scriptId);
+        this.runInitIfGlobalsPresent();
+      });
     },
     scriptErrored(scriptId, canRequestFail, err) {
-      scriptsErrored.push(scriptId);
-      if (!canRequestFail) {
-        throw new Error(`Failed to load the script ${err}`);
-      }
-      this.reportError();
-      this.checkForInit();
+      withCatch(() => {
+        log("scriptErrored", scriptId);
+        this.addProcessedScript(scriptId);
+        if (!canRequestFail) {
+          throw new Error(`Failed to load the script ${err}`);
+        }
+        this.reportError();
+        this.runInitIfGlobalsPresent();
+      });
     },
 
     scriptTimeout(scriptId) {
-      if (isScriptLoaded(scriptId) || isScriptErrored(scriptId)) {
-        return;
-      }
-      scriptsErrored.push(scriptId);
-      this.checkForInit();
+      withCatch(() => {
+        log(
+          "scriptTimeout id:",
+          scriptId,
+          "already processed:",
+          this.isScriptProcessed(scriptId)
+        );
+        if (this.isScriptProcessed(scriptId)) {
+          return;
+        }
+        this.addProcessedScript(scriptId);
+        this.runInitIfGlobalsPresent();
+      });
     },
 
     loadScriptsParallel(scripts, callback) {
+      // no external scripts to load, execute init
       if (scripts.length === 0) {
         callback();
       }
@@ -83,27 +116,31 @@ const makeHarness = ({
         const timeout = scripts[i].timeout || -1;
         const canRequestFail = scripts[i].canRequestFail || false;
         const scriptId = `dom-context-script-${scriptUri.replace(/\W/g, "")}`;
-        if (!document.getElementById(scriptId)) {
-          const script = document.createElement("script");
+        // we rely on the shared (between the dom-context) document to check if we have already loaded the script
+        // maybe with a different Ad component on the page
+        let script = document.getElementById(scriptId);
+        if (!script) {
+          log("create script", scriptId);
+          script = document.createElement("script");
           script.id = scriptId;
           script.type = "text/javascript";
-          script.addEventListener(
-            "load",
-            this.scriptLoaded.bind(this, scriptId)
-          );
-          script.addEventListener(
-            "error",
-            this.scriptErrored.bind(this, scriptId, canRequestFail)
-          );
-          if (timeout > 0) {
-            const scriptTimeout = this.scriptTimeout.bind(this, scriptId);
-            window.setTimeout(() => {
-              scriptTimeout();
-            }, timeout);
-          }
           script.src = scriptUri;
           script.defer = true;
           document.head.appendChild(script);
+        } else {
+          // the script was already created, maybe from a different Ad component
+          log("this script was already created", scriptId);
+        }
+        script.addEventListener("load", this.scriptLoaded.bind(this, scriptId));
+        script.addEventListener(
+          "error",
+          this.scriptErrored.bind(this, scriptId, canRequestFail)
+        );
+        if (timeout > 0) {
+          const scriptTimeout = this.scriptTimeout.bind(this, scriptId);
+          window.setTimeout(() => {
+            scriptTimeout();
+          }, timeout);
         }
       }
     },
