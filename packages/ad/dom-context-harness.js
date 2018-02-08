@@ -18,7 +18,7 @@ const makeHarness = ({
   let renderCompleteCalled = false;
   let initCalled = false;
   const scritpsLoaded = [];
-  const scriptErrored = [];
+  const scriptsErrored = [];
 
   const withCatch = action => {
     try {
@@ -30,7 +30,8 @@ const makeHarness = ({
     }
   };
 
-  const isScriptLoaded = scriptId => document.getElementById(scriptId);
+  const isScriptLoaded = scriptId => scritpsLoaded.indexOf(scriptId) > -1;
+  const isScriptErrored = scriptId => scriptsErrored.indexOf(scriptId) > -1;
 
   return {
     execute() {
@@ -41,7 +42,8 @@ const makeHarness = ({
       });
     },
     checkForInit() {
-      const totalScriptsProcessed = scritpsLoaded.length + scriptErrored.length;
+      const totalScriptsProcessed =
+        scritpsLoaded.length + scriptsErrored.length;
       if (totalScriptsProcessed === scriptUris.length) {
         this.runInit();
       }
@@ -56,8 +58,8 @@ const makeHarness = ({
       this.checkForInit();
     },
     scriptErrored(scriptId, canRequestFail, err) {
-      scriptErrored.push(scriptId);
-      if (canRequestFail) {
+      scriptsErrored.push(scriptId);
+      if (!canRequestFail) {
         throw new Error(`Failed to load the script ${err}`);
       }
       this.reportError();
@@ -65,10 +67,10 @@ const makeHarness = ({
     },
 
     scriptTimeout(scriptId) {
-      if (isScriptLoaded(scriptId)) {
+      if (isScriptLoaded(scriptId) || isScriptErrored(scriptId)) {
         return;
       }
-      scriptErrored.push(scriptId);
+      scriptsErrored.push(scriptId);
       this.checkForInit();
     },
 
@@ -78,10 +80,10 @@ const makeHarness = ({
       }
       for (let i = 0; i < scripts.length; i += 1) {
         const scriptUri = scripts[i].uri;
-        const timeout = scripts[i].timeout || 0;
+        const timeout = scripts[i].timeout || -1;
         const canRequestFail = scripts[i].canRequestFail || false;
         const scriptId = `dom-context-script-${scriptUri.replace(/\W/g, "")}`;
-        if (!isScriptLoaded(scriptId)) {
+        if (!document.getElementById(scriptId)) {
           const script = document.createElement("script");
           script.id = scriptId;
           script.type = "text/javascript";
@@ -93,7 +95,7 @@ const makeHarness = ({
             "error",
             this.scriptErrored.bind(this, scriptId, canRequestFail)
           );
-          if (timeout) {
+          if (timeout > 0) {
             const scriptTimeout = this.scriptTimeout.bind(this, scriptId);
             window.setTimeout(() => {
               scriptTimeout();
