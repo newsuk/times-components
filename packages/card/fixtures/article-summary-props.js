@@ -1,28 +1,24 @@
 import React from "react";
-import ArticleLabel from "@times-components/article-label";
-import DatePublication from "@times-components/date-publication";
-import { renderTrees } from "@times-components/markup";
 import {
   ArticleSummaryHeadline,
-  renderer,
-  summarise
+  ArticleSummaryContent
 } from "@times-components/article-summary";
 
 export default {
-  Label: () => <ArticleLabel title="Camilla Long" color="#333333" />,
-  Headline: () => (
+  labelProps: {
+    title: "Camilla Long",
+    color: "#333333"
+  },
+  headline: () => (
     <ArticleSummaryHeadline headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT" />
   ),
-  DatePublication: () => (
-    <DatePublication
-      date="2017-07-10T14:32:00.000Z"
-      publication="SUNDAYTIMES"
-    />
-  ),
-
-  summaryText: () =>
-    renderTrees(
-      summarise([
+  datePublicationProps: {
+    date: "2017-07-10T14:32:00.000Z",
+    publication: "SUNDAYTIMES"
+  },
+  content: () => (
+    <ArticleSummaryContent
+      ast={[
         {
           name: "paragraph",
           attributes: {},
@@ -50,7 +46,7 @@ export default {
             }
           ]
         }
-      ]),
-      renderer
-    )
+      ]}
+    />
+  )
 };
