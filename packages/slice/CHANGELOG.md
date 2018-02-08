@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.0.11"></a>
+## [0.0.11](https://github.com/newsuk/times-components/compare/@times-components/slice@0.0.10...@times-components/slice@0.0.11) (2018-02-08)
+
+
+### Bug Fixes
+
+* sync up version numbers ([#629](https://github.com/newsuk/times-components/issues/629)) ([151b99a](https://github.com/newsuk/times-components/commit/151b99a))
+
+
+
+
 <a name="0.0.10"></a>
 ## [0.0.10](https://github.com/newsuk/times-components/compare/@times-components/slice@0.0.9...@times-components/slice@0.0.10) (2018-02-07)
 
