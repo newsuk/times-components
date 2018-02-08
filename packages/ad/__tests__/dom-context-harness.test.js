@@ -122,7 +122,8 @@ describe("DOMContext harness", () => {
     const init = jest.fn();
     const harness = makeHarness({
       init,
-      scriptUris: [{ uri: "providesSecond" }]
+      scriptUris: [{ uri: "providesSecond" }],
+      globalNames: ["first", "second"]
     });
 
     harness.execute();
@@ -132,22 +133,10 @@ describe("DOMContext harness", () => {
     expect(init).toHaveBeenCalledTimes(1);
   });
 
-  it("doesn't invoke init function if the scripts aren't loaded", () => {
-    const init = jest.fn();
-    const eventCallback = jest.fn();
-    const harness = makeHarness({
-      init,
-      scriptUris: [{ uri: "willNeverLoad" }],
-      eventCallback
-    });
-
-    harness.execute();
-    expect(init).not.toBeCalled();
-  });
-
   it("invokes init function if the script has an expired timeout", () => {
     jest.useFakeTimers();
     const init = jest.fn();
+    const eventCallback = jest.fn();
     const harness = makeHarness({
       init,
       scriptUris: [{ uri: "providesSecond", timeout: 200 }]
@@ -170,6 +159,19 @@ describe("DOMContext harness", () => {
     fireErrorEventFor("providesSecond");
 
     expect(init).toHaveBeenCalledTimes(1);
+  });
+
+  it("doesn't invoke init function if globals aren't loaded", () => {
+    const init = jest.fn();
+    const eventCallback = jest.fn();
+    const harness = makeHarness({
+      init,
+      scriptUris: ["willNeverLoad"],
+      globalNames: ["requiredVar"],
+      eventCallback
+    });
+    harness.execute();
+    expect(init).toHaveBeenCalledTimes(0);
   });
 
   it("Dispatches a renderComplete event when the renderComplete callback is invoked", () => {
