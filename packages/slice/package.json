@@ -35,7 +35,7 @@
     "@storybook/addon-actions": "3.3.11",
     "@storybook/addons": "3.3.11",
     "@storybook/react-native": "3.3.11",
-    "@times-components/jest-configurator": "0.0.21",
+    "@times-components/jest-configurator": "0.0.23",
     "dextrose": "1.4.0",
     "eslint": "4.9.0",
     "jest": "21.2.1",
@@ -48,11 +48,11 @@
   },
   "dependencies": {
     "@times-components/article-summary": "0.16.4",
-    "@times-components/card": "0.16.30",
-    "@times-components/image": "1.12.8",
-    "@times-components/link": "0.13.12",
-    "@times-components/markup": "0.16.3",
-    "@times-components/responsive-styles": "0.2.13",
+    "@times-components/card": "0.16.47",
+    "@times-components/image": "1.13.8",
+    "@times-components/link": "0.13.17",
+    "@times-components/markup": "0.17.1",
+    "@times-components/responsive-styles": "0.2.16",
     "lodash.get": "4.4.2",
     "prop-types": "15.6.0"
   },
@@ -66,3 +66,4 @@
     "access": "public"
   }
 }
+

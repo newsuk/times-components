@@ -48,7 +48,7 @@
     "@times-components/date-publication": "0.10.0",
     "@times-components/jest-configurator": "0.0.23",
     "@times-components/markup": "0.17.1",
-    "@times-components/responsive-styles": "0.2.13",
+    "@times-components/responsive-styles": "0.2.16",
     "date-fns": "1.28.5",
     "prop-types": "15.6.0"
   },
