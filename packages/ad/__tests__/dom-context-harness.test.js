@@ -142,7 +142,7 @@ describe("DOMContext harness", () => {
     });
 
     harness.execute();
-    expect(init).toHaveBeenCalledTimes(0);
+    expect(init).not.toBeCalled();
   });
 
   it("invokes init function if the script has an expired timeout", () => {
