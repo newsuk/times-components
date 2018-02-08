@@ -32,6 +32,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@times-components/jest-configurator": "0.0.23",
     "dextrose": "1.4.0",
     "eslint": "4.9.0",
     "jest": "21.2.1",
