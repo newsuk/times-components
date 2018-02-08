@@ -9,8 +9,7 @@ const script = PropTypes.shape({
 export const propTypes = {
   width: PropTypes.number,
   height: PropTypes.number,
-  scriptUris: PropTypes.arrayOf(PropTypes.string),
-  preScriptUris: PropTypes.arrayOf(PropTypes.string),
+  scriptUris: PropTypes.arrayOf(script),
   globalNames: PropTypes.arrayOf(PropTypes.string),
   init: PropTypes.func.isRequired,
   onRenderComplete: PropTypes.func,
@@ -19,7 +18,6 @@ export const propTypes = {
 
 export const defaultProps = {
   scriptUris: [],
-  preScriptUris: [],
   globalNames: [],
   data: {},
   onRenderComplete: () => {}
