@@ -53,14 +53,22 @@ class Ad extends Component {
       ? { width: 0, height: 0 }
       : { height: this.config.maxSizes.height };
 
-    const grapeshotScriptUrl = `https://newscorp.grapeshot.co.uk/thetimes/channels.cgi?url=${encodeURIComponent(
-      data.contextUrl
-    )}`;
+    const mainScripts = [
+      {
+        uri: `https://newscorp.grapeshot.co.uk/thetimes/channels.cgi?url=${encodeURIComponent(
+          data.contextUrl
+        )}`,
+        canRequestFail: true,
+        timeout: 500
+      },
+      {
+        uri: "https://www.googletagservices.com/tag/js/gpt.js"
+      }
+    ];
     const webviewComponent = (
       <DOMContext
         data={data}
-        preScriptUris={[grapeshotScriptUrl]}
-        scriptUris={["https://www.googletagservices.com/tag/js/gpt.js"]}
+        scriptUris={mainScripts}
         globalNames={["googletag", "gs_channels"]}
         baseUrl={this.props.baseUrl}
         init={adInit}

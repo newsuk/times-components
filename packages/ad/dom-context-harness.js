@@ -9,14 +9,16 @@ const makeHarness = ({
   document,
   window,
   el,
-  init,
   data,
-  preScriptUris,
+  init,
   scriptUris,
   globalNames,
   eventCallback
 }) => {
   let renderCompleteCalled = false;
+  let initCalled = false;
+  const scritpsLoaded = [];
+  const scriptErrored = [];
 
   const withCatch = action => {
     try {
@@ -28,58 +30,88 @@ const makeHarness = ({
     }
   };
 
+  const isScriptLoaded = scriptId => document.getElementById(scriptId);
+
   return {
-    loadScripts() {
-      this.injectScripts(scriptUris, err => {
-        if (err) {
-          this.reportError(err);
-          return;
-        }
-        this.handleScriptLoad();
-      });
-    },
     execute() {
       withCatch(() => {
-        this.injectScripts(preScriptUris, err => {
-          this.loadScripts();
-          if (err) {
-            this.reportError(err);
-          }
+        this.loadScriptsParallel(scriptUris, () => {
+          this.checkForInit();
         });
-        window.setTimeout(() => {
-          this.loadScripts();
-        }, 500);
       });
     },
-
+    checkForInit() {
+      const totalScriptsProcessed = scritpsLoaded.length + scriptErrored.length;
+      if (totalScriptsProcessed === scriptUris.length) {
+        this.runInit();
+      }
+    },
     reportError(err) {
       // eslint-disable-next-line no-console
       window.console.error(`Error while loading the script: ${err}`);
     },
 
-    injectScripts(scripts, func) {
+    scriptLoaded(scriptId) {
+      scritpsLoaded.push(scriptId);
+      this.checkForInit();
+    },
+    scriptErrored(scriptId, canRequestFail, err) {
+      scriptErrored.push(scriptId);
+      if (canRequestFail) {
+        throw new Error(`Failed to load the script ${err}`);
+      }
+      this.reportError();
+      this.checkForInit();
+    },
+
+    scriptTimeout(scriptId) {
+      if (isScriptLoaded(scriptId)) {
+        return;
+      }
+      scriptErrored.push(scriptId);
+      this.checkForInit();
+    },
+
+    loadScriptsParallel(scripts, callback) {
+      if (scripts.length === 0) {
+        callback();
+      }
       for (let i = 0; i < scripts.length; i += 1) {
-        const scriptUri = scripts[i];
+        const scriptUri = scripts[i].uri;
+        const timeout = scripts[i].timeout || 0;
+        const canRequestFail = scripts[i].canRequestFail || false;
         const scriptId = `dom-context-script-${scriptUri.replace(/\W/g, "")}`;
-        let script = document.getElementById(scriptId);
-        if (!script) {
-          script = document.createElement("script");
+        if (!isScriptLoaded(scriptId)) {
+          const script = document.createElement("script");
           script.id = scriptId;
+          script.type = "text/javascript";
+          script.addEventListener(
+            "load",
+            this.scriptLoaded.bind(this, scriptId)
+          );
+          script.addEventListener(
+            "error",
+            this.scriptErrored.bind(this, scriptId, canRequestFail)
+          );
+          if (timeout) {
+            const scriptTimeout = this.scriptTimeout.bind(this, scriptId);
+            window.setTimeout(() => {
+              scriptTimeout();
+            }, timeout);
+          }
           script.src = scriptUri;
           script.defer = true;
           document.head.appendChild(script);
         }
-        script.addEventListener("load", func.bind(null, null));
-        script.addEventListener("error", func);
       }
-    },
-
-    handleScriptLoad() {
-      this.runInit();
     },
 
     runInit() {
       withCatch(() => {
+        if (initCalled) {
+          return;
+        }
+        initCalled = true;
         const globals = {};
         for (let i = 0; i < globalNames.length; i += 1) {
           const globalName = globalNames[i];
