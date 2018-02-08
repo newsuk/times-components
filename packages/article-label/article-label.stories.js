@@ -3,6 +3,6 @@ import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import ArticleLabel from "./article-label";
 
-storiesOf("ArticleLabel", module).add("ArticleLabel", () => (
+storiesOf("Simple/ArticleLabel", module).add("ArticleLabel", () => (
   <ArticleLabel title="swimming" color="#008347" />
 ));

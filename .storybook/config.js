@@ -1,6 +1,7 @@
 import { configure, addDecorator } from "@storybook/react";
 import { Text, View } from 'react-native';
 import { withInfo, setDefaults } from '@storybook/addon-info';
+import { setOptions } from '@storybook/addon-options';
 
 const req = require.context(
   "../packages",
@@ -11,6 +12,11 @@ const req = require.context(
 setDefaults({
   propTablesExclude: [Text, View]
 })
+
+setOptions({
+  name: 'Times Components',
+  hierarchySeparator: /\//
+});
 
 addDecorator((story, context) => withInfo('')(story)(context));
 

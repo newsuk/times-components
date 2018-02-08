@@ -61,7 +61,7 @@ FiresOnError.propTypes = {
   onError: PropTypes.func.isRequired
 };
 
-storiesOf("ErrorView", module)
+storiesOf("Simple/ErrorView", module)
   .add("handles a component that errors", () => (
     <ErrorView>
       {({ hasError, error }) =>
