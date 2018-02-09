@@ -41,7 +41,9 @@ const SliceContent = ({ item }) => {
         <Card {...cardProps} image={imageUri ? { uri: imageUri } : null}>
           <ArticleSummary
             byline={() =>
-              ArticleByline({ ast: byline }) ? ( // this ternary could be replaced with a HOC that does the decorating and null check
+              // this ternary could even be replaced with a HOC
+              // that does the null check
+              ArticleByline({ ast: byline }) ? (
                 <Text style={styles.metaText}>
                   <ArticleByline ast={byline} />
                 </Text>

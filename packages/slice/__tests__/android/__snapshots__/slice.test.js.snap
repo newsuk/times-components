@@ -308,32 +308,11 @@ exports[`Slice test on android Related articles renders single article 1`] = `
                 }
               >
                 <Text
-                  accessibilityRole="link"
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  href="/profile/camilla-long"
-                  onPress={[Function]}
-                  style={
-                    Array [
-                      Object {
-                        "textDecorationLine": "underline",
-                      },
-                      Object {
-                        "color": "#069",
-                      },
-                      undefined,
-                    ]
-                  }
-                >
-                  Camilla Long
-                </Text>
-                <Text
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-                  , Environment Editor
+                  Charles Bremner, Paris | Jack Malvern
                 </Text>
               </Text>
             </View>
@@ -638,6 +617,20 @@ exports[`Slice test on android Related articles renders single article with no b
               >
                 Friday March 13 2015, 06:54pm
               </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                    "lineHeight": 15,
+                    "marginBottom": 5,
+                  }
+                }
+              />
             </View>
           </View>
         </View>
