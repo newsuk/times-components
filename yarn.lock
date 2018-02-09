@@ -9772,10 +9772,6 @@ react-split-pane@^0.1.74:
     prop-types "^15.5.10"
     react-style-proptype "^3.0.0"
 
-react-stateful-fn@0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/react-stateful-fn/-/react-stateful-fn-0.1.0.tgz#69982aeacb6dd9cc75ad7a1073f47cb619e54c9a"
-
 react-style-proptype@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/react-style-proptype/-/react-style-proptype-3.1.0.tgz#c8912fc13460f5b0c1ec1114c729d535b52b8073"
