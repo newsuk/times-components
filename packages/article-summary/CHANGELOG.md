@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.17.0"></a>
+# [0.17.0](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.16.5...@times-components/article-summary@0.17.0) (2018-02-09)
+
+
+### Features
+
+* REPLAT-1403 - Article Summary Refactor ([#586](https://github.com/newsuk/times-components/issues/586)) ([8f8364b](https://github.com/newsuk/times-components/commit/8f8364b)), closes [#587](https://github.com/newsuk/times-components/issues/587) [#588](https://github.com/newsuk/times-components/issues/588) [#572](https://github.com/newsuk/times-components/issues/572) [#549](https://github.com/newsuk/times-components/issues/549) [#543](https://github.com/newsuk/times-components/issues/543) [#588](https://github.com/newsuk/times-components/issues/588) [#572](https://github.com/newsuk/times-components/issues/572) [#549](https://github.com/newsuk/times-components/issues/549) [#543](https://github.com/newsuk/times-components/issues/543)
+
+
+
+
 <a name="0.16.5"></a>
 ## [0.16.5](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.16.4...@times-components/article-summary@0.16.5) (2018-02-08)
 

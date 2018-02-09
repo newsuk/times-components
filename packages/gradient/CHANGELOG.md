@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.4.1...@times-components/gradient@0.5.0) (2018-02-09)
+
+
+### Features
+
+* REPLAT-1403 - Article Summary Refactor ([#586](https://github.com/newsuk/times-components/issues/586)) ([8f8364b](https://github.com/newsuk/times-components/commit/8f8364b)), closes [#587](https://github.com/newsuk/times-components/issues/587) [#588](https://github.com/newsuk/times-components/issues/588) [#572](https://github.com/newsuk/times-components/issues/572) [#549](https://github.com/newsuk/times-components/issues/549) [#543](https://github.com/newsuk/times-components/issues/543) [#588](https://github.com/newsuk/times-components/issues/588) [#572](https://github.com/newsuk/times-components/issues/572) [#549](https://github.com/newsuk/times-components/issues/549) [#543](https://github.com/newsuk/times-components/issues/543)
+
+
+
+
 <a name="0.4.1"></a>
 ## [0.4.1](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.4.0...@times-components/gradient@0.4.1) (2018-02-06)
 
