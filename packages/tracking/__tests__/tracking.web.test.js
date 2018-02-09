@@ -81,6 +81,7 @@ class ListComponent extends React.Component {
   }
 }
 
+module.exports = () => {
 describe("WithTrackScrollDepth", () => {
   let realGetElementById;
 
@@ -355,3 +356,4 @@ describe("WithTrackScrollDepth", () => {
 
   sharedTrackingTests(withTrackScrollDepth);
 });
+}

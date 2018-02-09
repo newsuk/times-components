@@ -1,5 +1,6 @@
 import resolveAttrs from "../resolve-attrs";
 
+module.exports = () => {
 describe("resolveAttrs", () => {
   it("returns empty object if getAttrs is not supplied", () => {
     const attrs = resolveAttrs();
@@ -23,3 +24,4 @@ describe("resolveAttrs", () => {
     expect(attrs).toEqual({ someProp: "two", someArg: "four" });
   });
 });
+}

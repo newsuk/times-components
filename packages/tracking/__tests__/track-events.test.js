@@ -6,6 +6,7 @@ import { withTrackEvents } from "../tracking";
 import withTrackingContext from "./test-tracking-context";
 import sharedTrackingTests from "./shared-tracking-tests";
 
+module.exports = () => {
 describe("TrackEvents", () => {
   const TestComponent = ({ event1, event2, ...props }) => {
     event1("event1 arg");
@@ -215,3 +216,4 @@ describe("TrackEvents", () => {
 
   sharedTrackingTests(withTrackEvents);
 });
+}

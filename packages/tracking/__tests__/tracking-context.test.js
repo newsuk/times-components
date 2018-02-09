@@ -5,6 +5,7 @@ import renderer from "react-test-renderer";
 import trackingContextTypes from "../tracking-context-types";
 import { withTrackingContext } from "../tracking";
 
+module.exports = () => {
 describe("WithTrackingContext", () => {
   const TestComponent = props => <Text>{props.someProp}</Text>;
   TestComponent.propTypes = { someProp: PropTypes.string };
@@ -268,3 +269,4 @@ describe("WithTrackingContext", () => {
     expect(WithTrackingContext.someStatic).toEqual(TestComponent.someStatic);
   });
 });
+}

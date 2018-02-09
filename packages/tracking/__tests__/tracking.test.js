@@ -15,6 +15,7 @@ const items = [
   { someKey: "3", someValue: "three", elementId: "3" }
 ];
 
+module.exports = () => {
 describe("WithTrackScrollDepth", () => {
   it("tracks scroll depth", () => {
     const reporter = jest.fn();
@@ -270,3 +271,4 @@ describe("WithTrackScrollDepth", () => {
 
   sharedTrackingTests(withTrackScrollDepth);
 });
+}
