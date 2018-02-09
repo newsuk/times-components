@@ -49,9 +49,7 @@ const makeHarness = ({
         "scriptUris.length",
         scriptUris.length
       );
-      const totalScriptsProcessed = window.scritpsProcessed.length;
-      if (totalScriptsProcessed === scriptUris.length) {
-        log("runInit");
+      if (scriptUris.length === window.scritpsProcessed.length) {
         this.runInit();
       }
     },
@@ -128,6 +126,7 @@ const makeHarness = ({
         } else {
           // the script was already created, maybe from a different Ad component
           log("this script was already created", scriptId);
+          this.runInitIfGlobalsPresent();
         }
         script.addEventListener("load", this.scriptLoaded.bind(this, scriptId));
         script.addEventListener(
