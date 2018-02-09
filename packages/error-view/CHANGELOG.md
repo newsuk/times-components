@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.7.19...@times-components/error-view@0.8.0) (2018-02-09)
+
+
+### Features
+
+* add Jest Configurator to error view ([#623](https://github.com/newsuk/times-components/issues/623)) ([1261bd0](https://github.com/newsuk/times-components/commit/1261bd0))
+
+
+
+
 <a name="0.7.19"></a>
 ## [0.7.19](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.7.18...@times-components/error-view@0.7.19) (2018-02-06)
 
