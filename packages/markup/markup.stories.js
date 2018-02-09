@@ -34,7 +34,11 @@ storiesOf("Markup", module)
         </AdComposer>
       );
     }
-    return <AdComposer><ScrollView>{renderTrees(multiParagraphWithAds)}</ScrollView></AdComposer>;
+    return (
+      <AdComposer>
+        <ScrollView>{renderTrees(multiParagraphWithAds)}</ScrollView>
+      </AdComposer>
+    );
   })
   .add("Mixture of tags", () =>
     renderTree(mixture, {
