@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { Subscriber } from "react-broadcast";
 import { View, ViewPropTypes, Dimensions, StyleSheet } from "react-native";
 import { getSlotConfig, getSizeMaps } from "./generate-config";
 import Placeholder from "./placeholder";
 import DOMContext from "./dom-context";
 import adInit from "./ad-init";
-import pageOptions from "./fixtures/page-options.json";
+import AdComposer from "./ad-composer";
 import slotOptions from "./fixtures/slot-options.json";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
@@ -33,16 +34,16 @@ class Ad extends Component {
     });
   };
 
-  render() {
+  renderAd(adConfig) {
     const data = {
       config: this.config,
       code: this.props.code,
-      networkId: this.props.networkId,
-      adUnit: this.props.adUnit,
+      networkId: adConfig.networkId,
+      adUnit: adConfig.adUnit,
       section: this.props.section,
       pos: this.props.pos,
       sizingMap: getSizeMaps(this.props.code),
-      pageOptions,
+      pageTargeting: adConfig.pageTargeting,
       slotOptions: { ...slotOptions, pos: this.props.pos }
     };
 
@@ -77,6 +78,14 @@ class Ad extends Component {
       </View>
     );
   }
+
+  render() {
+    return (
+      <Subscriber channel="adConfig">
+        {adConfig => this.renderAd(adConfig)}
+      </Subscriber>
+    );
+  }
 }
 
 Ad.propTypes = {
@@ -101,3 +110,5 @@ Ad.defaultProps = {
 };
 
 export default Ad;
+
+export { AdComposer };

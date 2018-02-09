@@ -5,7 +5,7 @@ import { action } from "@storybook/addon-actions";
 import { storiesOf } from "dextrose/storiesOfOverloader";
 import stateful from "react-stateful-fn";
 
-import Ad from "./ad";
+import Ad, { AdComposer } from "./ad";
 import Placeholder from "./placeholder";
 
 import NativeDOMContext from "./dom-context";
@@ -31,10 +31,12 @@ const withOpenInNewWindow = children => {
     );
 
   return (
-    <View>
-      {link}
-      {children}
-    </View>
+    <AdComposer>
+      <View>
+        {link}
+        {children}
+      </View>
+    </AdComposer>
   );
 };
 

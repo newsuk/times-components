@@ -8,6 +8,14 @@ import shared from "../shared";
 const articleFixtureNoLeadAsset = require("../../fixtures/no-lead-asset.json");
 
 describe("Article test on web", () => {
+  const adConfig = {
+    networkId: "mockNetwork",
+    adUnit: "mockAdUnit",
+    pageTargeting: {
+      title: "Title"
+    }
+  };
+
   shared();
 
   it("renders article with no lead asset", () => {
@@ -16,6 +24,7 @@ describe("Article test on web", () => {
         <Article
           {...articleFixtureNoLeadAsset.data}
           analyticsStream={() => {}}
+          adConfig={adConfig}
         />
       )
       .toJSON();

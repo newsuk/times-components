@@ -35,12 +35,22 @@ const mocks = [
   }
 ];
 
+const adConfig = {
+  networkId: "25436805",
+  adUnit: "d.thetimes.co.uk",
+  pageTargeting: {
+    title: "Title",
+    label: "Label"
+  }
+};
+
 storiesOf("Article", module)
   .add("Default", () => {
     const props = {
       ...fullArticleFixture.data,
       isLoading: false,
-      analyticsStream: storybookReporter
+      analyticsStream: storybookReporter,
+      adConfig
     };
 
     return <Article {...props} />;
@@ -49,7 +59,8 @@ storiesOf("Article", module)
     const props = {
       ...fullLongArticleFixture.data,
       isLoading: false,
-      analyticsStream: storybookReporter
+      analyticsStream: storybookReporter,
+      adConfig
     };
 
     return <Article {...props} />;
@@ -57,7 +68,8 @@ storiesOf("Article", module)
   .add("Loading", () => {
     const props = {
       analyticsStream: storybookReporter,
-      isLoading: true
+      isLoading: true,
+      adConfig
     };
 
     return <Article {...props} />;
@@ -82,6 +94,7 @@ storiesOf("Article", module)
             isLoading={isLoading}
             error={error}
             analyticsStream={storybookReporter}
+            adConfig={adConfig}
           />
         )}
       </ArticleProvider>
@@ -102,6 +115,7 @@ storiesOf("Article", module)
           <Article
             {...fullArticleFixture.data}
             analyticsStream={storybookReporter}
+            adConfig={adConfig}
           />
         </div>
       );
@@ -111,6 +125,7 @@ storiesOf("Article", module)
       <Article
         {...fullArticleFixture.data}
         analyticsStream={storybookReporter}
+        adConfig={adConfig}
       />
     );
   })
@@ -118,53 +133,62 @@ storiesOf("Article", module)
     <Article
       {...articleFixtureNoAds.data}
       analyticsStream={storybookReporter}
+      adConfig={adConfig}
     />
   ))
   .add("Fixtures - No standfirst", () => (
     <Article
       {...articleFixtureNoStandfirst.data}
       analyticsStream={storybookReporter}
+      adConfig={adConfig}
     />
   ))
   .add("Fixtures - No label", () => (
     <Article
       {...articleFixtureNoLabel.data}
       analyticsStream={storybookReporter}
+      adConfig={adConfig}
     />
   ))
   .add("Fixtures - No flags", () => (
     <Article
       {...articleFixtureNoFlags.data}
       analyticsStream={storybookReporter}
+      adConfig={adConfig}
     />
   ))
   .add("Fixtures - No standfirst, no label", () => (
     <Article
       {...articleFixtureNoStandfirstNoLabel.data}
       analyticsStream={storybookReporter}
+      adConfig={adConfig}
     />
   ))
   .add("Fixtures - No standfirst, no flags", () => (
     <Article
       {...articleFixtureNoStandfirstNoFlags.data}
       analyticsStream={storybookReporter}
+      adConfig={adConfig}
     />
   ))
   .add("Fixtures - No label, no flags", () => (
     <Article
       {...articleFixtureNoLabelNoFlags.data}
       analyticsStream={storybookReporter}
+      adConfig={adConfig}
     />
   ))
   .add("Fixtures - No label, no flags, no standfirst", () => (
     <Article
       {...articleFixtureNoLabelNoFlagsNoStandFirst.data}
       analyticsStream={storybookReporter}
+      adConfig={adConfig}
     />
   ))
   .add("Fixtures - No lead asset", () => (
     <Article
       {...articleFixtureNoLeadAsset.data}
       analyticsStream={storybookReporter}
+      adConfig={adConfig}
     />
   ));

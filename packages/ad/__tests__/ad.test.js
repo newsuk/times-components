@@ -1,9 +1,9 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Enzyme, { shallow } from "enzyme";
+import Enzyme from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
 
-import Ad from "../ad";
+import Ad, { AdComposer } from "../ad";
 
 Enzyme.configure({ adapter: new React16Adapter() });
 
@@ -35,13 +35,31 @@ describe("Ad", () => {
       console.error(message); // eslint-disable-line no-console
       throw new Error(message);
     });
-    renderer.create(<Ad {...adProps} code="ad-header" />);
-    renderer.create(<Ad {...adProps} code="ad-pixel" />);
-    renderer.create(<Ad {...adProps} code="ad-unknown-code" />);
+    renderer.create(
+      <AdComposer>
+        <Ad {...adProps} code="ad-header" />
+      </AdComposer>
+    );
+    renderer.create(
+      <AdComposer>
+        <Ad {...adProps} code="ad-pixel" />
+      </AdComposer>
+    );
+    renderer.create(
+      <AdComposer>
+        <Ad {...adProps} code="ad-unknown-code" />
+      </AdComposer>
+    );
   });
 
   it("renders with one ad slot", () => {
-    const tree = renderer.create(<Ad {...adProps} code="ad-header" />).toJSON();
+    const tree = renderer
+      .create(
+        <AdComposer>
+          <Ad {...adProps} code="ad-header" />
+        </AdComposer>
+      )
+      .toJSON();
 
     expect(tree).toMatchSnapshot();
   });
@@ -49,21 +67,15 @@ describe("Ad", () => {
   it("renders with more than one ad slot", () => {
     const tree = renderer
       .create(
-        <div>
-          <Ad {...adProps} code="ad-header" />
-          <Ad {...adProps} code="intervention" />
-        </div>
+        <AdComposer>
+          <div>
+            <Ad {...adProps} code="ad-header" />
+            <Ad {...adProps} code="intervention" />
+          </div>
+        </AdComposer>
       )
       .toJSON();
 
     expect(tree).toMatchSnapshot();
-  });
-
-  it("hides the placeholder when the ad is ready", () => {
-    const component = shallow(<Ad {...adProps} code="ad-header" />);
-
-    expect(component.find("Placeholder").length).toEqual(1);
-    component.find("DOMContext").simulate("renderComplete");
-    expect(component.update().find("Placeholder").length).toEqual(0);
   });
 });

@@ -1,6 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-env browser */
 import { View, Text, Platform, ScrollView } from "react-native";
+import { AdComposer } from "@times-components/ad";
 import React from "react";
 import { storiesOf } from "dextrose/storiesOfOverloader";
 import { CenteredDecorator } from "@times-components/storybook/decorators";
@@ -19,19 +20,25 @@ storiesOf("Markup", module)
   .add("Multiple paragraphs with ads", () => {
     if (Platform.OS === "web") {
       return (
-        <div>
-          <a
-            href={`/iframe.html${window.top.location.search}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Click to render the ads
-          </a>
-          {renderTrees(multiParagraphWithAds)}
-        </div>
+        <AdComposer>
+          <div>
+            <a
+              href={`/iframe.html${window.top.location.search}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Click to render the ads
+            </a>
+            {renderTrees(multiParagraphWithAds)}
+          </div>
+        </AdComposer>
       );
     }
-    return <ScrollView>{renderTrees(multiParagraphWithAds)}</ScrollView>;
+    return (
+      <AdComposer>
+        <ScrollView>{renderTrees(multiParagraphWithAds)}</ScrollView>
+      </AdComposer>
+    );
   })
   .add("Mixture of tags", () =>
     renderTree(mixture, {

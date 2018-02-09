@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import Ad from "@times-components/ad";
+import Ad, { AdComposer } from "@times-components/ad";
 
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
@@ -9,7 +9,6 @@ import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleBody from "./article-body/article-body";
 import LeadAssetComponent from "./article-lead-asset.web";
-
 import articleTrackingContext from "./article-tracking-context";
 
 import {
@@ -82,7 +81,11 @@ class ArticlePage extends React.Component {
       return <ArticleLoading />;
     }
 
-    return ArticlePage.renderArticle(this.props.article);
+    return (
+      <AdComposer adConfig={this.props.adConfig}>
+        {ArticlePage.renderArticle(this.props.article)}
+      </AdComposer>
+    );
   }
 }
 
@@ -98,7 +101,8 @@ ArticlePage.propTypes = {
       message: PropTypes.string
     }),
     message: PropTypes.string
-  })
+  }),
+  adConfig: PropTypes.shape({}).isRequired
 };
 
 ArticlePage.defaultProps = {
