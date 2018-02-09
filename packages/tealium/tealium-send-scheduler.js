@@ -48,11 +48,13 @@ export default class TealiumSendScheduler {
   }
 
   scheduleSendEvents() {
+    console.log(this.w.tealiumTrack);
     if (
       this.sendEventScheduled ||
       !TealiumSendScheduler.scriptLoaded ||
       typeof this.w.tealiumTrack !== "function"
     ) {
+      console.log('skip');
       return;
     }
 
