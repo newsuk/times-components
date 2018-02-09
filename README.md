@@ -51,11 +51,11 @@ when trying to use a broken font.
 
 ## Testing and code coverage
 
-|  Tests  | Covered |  CI  |
-|---|---|---|
-| Unit tests, UI tests and Integration tests | :white_check_mark:  | [Travis Build](https://travis-ci.org/newsuk/times-components) |
-| Visual Regression tool (Dextrose) | :white_check_mark: | Not automated |
-| Functional Regression tool (Fructose) | :white_check_mark: | Not automated |
+| Tests                                      | Covered            | CI                                                            |
+| ------------------------------------------ | ------------------ | ------------------------------------------------------------- |
+| Unit tests, UI tests and Integration tests | :white_check_mark: | [Travis Build](https://travis-ci.org/newsuk/times-components) |
+| Visual Regression tool (Dextrose)          | :white_check_mark: | Not automated                                                 |
+| Functional Regression tool (Fructose)      | :white_check_mark: | Not automated                                                 |
 
 ## Contributing
 
