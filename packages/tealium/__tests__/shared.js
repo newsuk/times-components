@@ -1,5 +1,7 @@
 import TealiumSendScheduler from "../tealium-send-scheduler";
 
+module.exports = () => {
+
 describe("TealiumSendScheduler", () => {
   const trackingOptions = {
     enabled: true,
@@ -238,3 +240,5 @@ describe("TealiumSendScheduler", () => {
     });
   });
 });
+
+}
