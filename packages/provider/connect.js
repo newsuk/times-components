@@ -1,5 +1,5 @@
 import pick from "lodash.pick";
-import { graphql } from "react-apollo-temp";
+import { graphql } from "react-apollo";
 import PropTypes from "prop-types";
 import withDebounce from "./debounce";
 
@@ -37,7 +37,6 @@ const connectGraphql = (query, propsToVariables) => {
     children({
       error,
       refetch: () => {
-        retry(); // FIXME: remove this after react-apollo fixes https://github.com/apollographql/apollo-client/issues/2513
         refetch();
       },
       isLoading: loading,
