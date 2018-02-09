@@ -6,9 +6,7 @@ import { renderAst } from "./";
 import styles from "./styles";
 
 const ArticleSummaryContent = ({ ast }) =>
-  ast.length > 0 ? (
-    <Text style={styles.text}>{renderAst(ast)}</Text>
-  ) : null;
+  ast.length > 0 ? <Text style={styles.text}>{renderAst(ast)}</Text> : null;
 
 ArticleSummaryContent.propTypes = {
   ast: PropTypes.arrayOf(treePropType)

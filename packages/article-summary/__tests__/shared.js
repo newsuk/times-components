@@ -91,9 +91,7 @@ export default () => {
   });
 
   it("renders an article-summary component with no headline", () => {
-    const tree = renderer
-      .create(<ArticleSummary {...noHeadline} />)
-      .toJSON();
+    const tree = renderer.create(<ArticleSummary {...noHeadline} />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
@@ -107,18 +105,16 @@ export default () => {
   });
 
   it("renders an ArticleSummaryContent component with a blank AST", () => {
-    const tree = renderer
-      .create(<ArticleSummaryContent ast={[]} />)
-      .toJSON();
+    const tree = renderer.create(<ArticleSummaryContent ast={[]} />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
-  it('summarise should return the value provided if its an empty array', () => {
+  it("summarise should return the value provided if its an empty array", () => {
     expect(summarise([])).toEqual([]);
   });
 
-  it('summarise should return [] if it has no parameters', () => {
+  it("summarise should return [] if it has no parameters", () => {
     expect(summarise()).toEqual([]);
   });
 };
