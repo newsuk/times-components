@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Enzyme, { shallow } from "enzyme";
+import Enzyme from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
 
 import Ad, { AdComposer } from "../ad";
@@ -77,21 +77,5 @@ describe("Ad", () => {
       .toJSON();
 
     expect(tree).toMatchSnapshot();
-  });
-
-  it("hides the placeholder when the ad is ready", () => {
-    jest.spyOn(console, "error").mockImplementation(() => {});
-    const mockOverrides = {
-      networkId: "25436805",
-      adUnit: "d.thetimes.co.uk",
-      pageTargeting: {}
-    };
-    const component = shallow(
-      <Ad {...adProps} overrides={mockOverrides} code="ad-header" />
-    );
-
-    expect(component.find("Placeholder").length).toEqual(1);
-    component.find("DOMContext").simulate("renderComplete");
-    expect(component.update().find("Placeholder").length).toEqual(0);
   });
 });
