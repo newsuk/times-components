@@ -16,5 +16,8 @@
     "!**/packages/author-profile/*.stories.js",
     "!**/packages/author-profile/__tests__/**.test.js"
   ],
-  "snapshotSerializers": ["enzyme-to-json/serializer"]
+  "snapshotSerializers": ["enzyme-to-json/serializer"],
+  "moduleNameMapper": {
+    "^react-apollo$": "<rootDir>/node_modules/react-apollo/index.js"
+  }
 }

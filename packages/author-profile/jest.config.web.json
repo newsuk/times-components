@@ -7,7 +7,8 @@
   "testEnvironment": "jsdom",
   "testMatch": ["<rootDir>/packages/author-profile/__tests__/**.web.test.js"],
   "moduleNameMapper": {
-    "react-native": "react-native-web"
+    "react-native": "react-native-web",
+    "^react-apollo$": "<rootDir>/node_modules/react-apollo/index.js"
   },
   "collectCoverageFrom": [
     "**/packages/author-profile/*.js",

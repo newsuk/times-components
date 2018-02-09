@@ -23,7 +23,10 @@
     ],
     "testMatch": [
       "<rootDir>/packages/utils/__tests__/*.test.js"
-    ]
+    ],
+    "moduleNameMapper": {
+      "^react-apollo$": "<rootDir>/node_modules/react-apollo/index.js"
+    }
   },
   "repository": {
     "type": "git",
