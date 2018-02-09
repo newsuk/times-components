@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`does not render an error state if there is no error 1`] = `
+exports[`Error View test on android does not render an error state if there is no error 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
@@ -10,7 +10,7 @@ exports[`does not render an error state if there is no error 1`] = `
 </Text>
 `;
 
-exports[`renders the error state if a component invokes an error 1`] = `
+exports[`Error View test on android renders the error state if a component invokes an error 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
@@ -20,7 +20,7 @@ exports[`renders the error state if a component invokes an error 1`] = `
 </Text>
 `;
 
-exports[`renders the error state if a component throws an error 1`] = `
+exports[`Error View test on android renders the error state if a component throws an error 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}

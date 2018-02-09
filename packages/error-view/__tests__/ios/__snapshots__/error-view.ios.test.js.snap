@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error View test on iOS does not render an error state if there is no error 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+  All good
+</Text>
+`;
+
+exports[`Error View test on iOS renders the error state if a component invokes an error 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+  Error: some error
+</Text>
+`;
+
+exports[`Error View test on iOS renders the error state if a component throws an error 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+  Error: an error occurred
+</Text>
+`;
