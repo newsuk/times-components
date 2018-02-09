@@ -11,7 +11,6 @@ import blankFixture from "../fixtures/blank";
 import noContentFixture from "../fixtures/no-content";
 import noHeadline from "../fixtures/no-headline";
 import noDatePublication from "../fixtures/no-datepublication";
-import noDatepublication from "../fixtures/no-datepublication";
 
 export default () => {
   const realIntl = Intl;
@@ -98,7 +97,7 @@ export default () => {
 
   it("renders an article-summary component with no date publication", () => {
     const tree = renderer
-      .create(<ArticleSummary {...noDatepublication} />)
+      .create(<ArticleSummary {...noDatePublication} />)
       .toJSON();
 
     expect(tree).toMatchSnapshot();
