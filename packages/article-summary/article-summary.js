@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 
 import { renderTrees, treePropType } from "@times-components/markup";
 import DatePublication from "@times-components/date-publication";
-import ArticleByline from "@times-components/article-byline";
 
 import ArticleSummaryHeadline from "./article-summary-headline";
 import renderer from "./article-summary-renderer";
@@ -85,11 +84,7 @@ const ArticleSummary = props => {
           showPublication={showPublication}
         />
       </Text>
-      {byline.length ? (
-        <Text style={styles.metaText}>
-          <ArticleByline ast={byline} />
-        </Text>
-      ) : null}
+      {byline()}
     </View>
   );
 };
@@ -102,7 +97,7 @@ ArticleSummary.propTypes = {
   date: DatePublication.propTypes.date,
   publication: DatePublication.propTypes.publication,
   showPublication: DatePublication.propTypes.showPublication,
-  byline: PropTypes.arrayOf(treePropType)
+  byline: PropTypes.func
 };
 
 ArticleSummary.defaultProps = {
@@ -113,7 +108,7 @@ ArticleSummary.defaultProps = {
   date: null,
   publication: DatePublication.defaultProps.publication,
   showPublication: DatePublication.defaultProps.showPublication,
-  byline: []
+  byline: () => null
 };
 
 export default ArticleSummary;
