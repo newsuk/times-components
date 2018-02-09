@@ -1,8 +1,8 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import { propTypes, defaultProps } from "./proptypes";
+import getTemplateName from "./styles/template-map";
 import getTemplateStyles from "./styles";
-import getTemplateName from "./template-map";
 
 const Slice = ({ children, template }) => {
   if (!children) return null;

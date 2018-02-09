@@ -18,5 +18,17 @@ export default StyleSheet.create({
     fontFamily: "TimesModern-Bold",
     fontSize: 26,
     color: "#333"
+  },
+  container: {
+    borderStyle: "solid",
+    borderBottomColor: "#dbdbdb",
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    paddingBottom: 10,
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingTop: 10
+  },
+  imageContainer: {
+    marginBottom: 10
   }
 });

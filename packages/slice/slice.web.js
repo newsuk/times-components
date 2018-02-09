@@ -1,7 +1,7 @@
 import React from "react";
 import { propTypes, defaultProps } from "./proptypes";
-import getStyledComponent from "./styles/responsive";
-import getTemplateName from "./template-map";
+import getTemplateName from "./styles/template-map";
+import getStyledComponent from "./styles";
 
 const Slice = ({ children, template }) => {
   if (!children) return null;

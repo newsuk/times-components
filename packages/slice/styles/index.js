@@ -1,4 +1,4 @@
-import defaultStyles from "./default.styles.js";
+import defaultStyles from "./default/base";
 
 const templateStyles = {
   defaultStyles

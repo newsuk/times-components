@@ -1,6 +1,6 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import * as defaultStyles from "./default.web.js";
+import * as defaultStyles from "./default/responsive";
 
 const templateStyles = {
   defaultStyles
