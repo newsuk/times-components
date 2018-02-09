@@ -74,17 +74,19 @@ const ArticleSummary = props => {
         />
       ) : null}
       <Text style={styles.text}>{renderTrees(summary, renderer)}</Text>
-      <Text
-        style={styles.metaText}
-        accessibilityLabel="datePublication"
-        testID="datePublication"
-      >
-        <DatePublication
-          date={date}
-          publication={publication}
-          showPublication={showPublication}
-        />
-      </Text>
+      {date && (
+        <Text
+          style={styles.metaText}
+          accessibilityLabel="datePublication"
+          testID="datePublication"
+        >
+          <DatePublication
+            date={date}
+            publication={publication}
+            showPublication={showPublication}
+          />
+        </Text>
+      )}
       {byline.length ? (
         <Text style={styles.metaText}>
           <ArticleByline ast={byline} />
@@ -99,7 +101,7 @@ ArticleSummary.propTypes = {
   headline: PropTypes.string,
   hasResponsiveHeadline: PropTypes.bool,
   text: PropTypes.arrayOf(treePropType),
-  date: DatePublication.propTypes.date,
+  date: PropTypes.string,
   publication: DatePublication.propTypes.publication,
   showPublication: DatePublication.propTypes.showPublication,
   byline: PropTypes.arrayOf(treePropType)

@@ -2,5 +2,3 @@
 **/coverage/*
 **/flow-typed/*
 dist
-storybook-static
-packages

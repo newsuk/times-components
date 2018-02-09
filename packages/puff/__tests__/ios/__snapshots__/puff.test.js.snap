@@ -1,0 +1,1179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Puff test on ios:  renders correctly when all props are provided 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F9F8F3",
+        "borderStyle": "solid",
+        "borderTopColor": "#000000",
+        "borderTopWidth": 8,
+      },
+      Object {
+        "borderTopColor": "#13354E",
+      },
+    ]
+  }
+>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    collapsable={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    nativeID={undefined}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <View
+      onLayout={undefined}
+    >
+      <View
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          <View
+            aspectRatio={1.7777777777777777}
+            style={Object {}}
+          >
+            <View
+              style={
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
+              }
+            >
+              <Image
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F17e35a72-0472-11e8-8e80-008642e5faa1.jpg?crop=3561%2C2003%2C0%2C185&resize=360",
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "bottom": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    },
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    },
+                    undefined,
+                  ]
+                }
+              />
+              <View
+                onLayout={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                    },
+                    null,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <BVLinearGradient
+                    colors={
+                      Array [
+                        "#f9f9f9",
+                        "#ededed",
+                      ]
+                    }
+                    end={
+                      Object {
+                        "x": -0.09302964577578221,
+                        "y": 0.11488204504197774,
+                      }
+                    }
+                    locations={
+                      Array [
+                        0,
+                        1,
+                      ]
+                    }
+                    start={
+                      Object {
+                        "x": 1,
+                        "y": 0,
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                      ]
+                    }
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View>
+          <View
+            style={Object {}}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#333333",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 12,
+                  "letterSpacing": 1,
+                  "marginBottom": 2,
+                }
+              }
+            >
+              INTERACTIVE
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontWeight": "400",
+                    "marginBottom": 5,
+                  },
+                  Object {
+                    "fontSize": 22,
+                    "lineHeight": 22,
+                  },
+                ]
+              }
+            >
+              Deal or no deal: the UK's Brexit options
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#696969",
+                  "flexWrap": "wrap",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 14,
+                  "lineHeight": 20,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+              >
+                
+                From a comprehensive partnership to an agreed ‘no deal’, there are various eventualities for Britain’s exit from the European Union
+                ...
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#CD0000",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 13,
+                  "textDecorationColor": "transparent",
+                }
+              }
+            >
+              Read more
+            </Text>
+            <svg
+              height={10}
+              style={Object {}}
+              viewBox="42 12 60 120"
+              width={10}
+            >
+              <g
+                fill="#CD0000"
+                style={Object {}}
+              >
+                <path
+                  d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                  style={Object {}}
+                />
+              </g>
+            </svg>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Puff test on ios:  renders correctly with custom link text 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F9F8F3",
+        "borderStyle": "solid",
+        "borderTopColor": "#000000",
+        "borderTopWidth": 8,
+      },
+      Object {
+        "borderTopColor": "#13354E",
+      },
+    ]
+  }
+>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    collapsable={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    nativeID={undefined}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <View
+      onLayout={undefined}
+    >
+      <View
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          <View
+            aspectRatio={1.7777777777777777}
+            style={Object {}}
+          >
+            <View
+              style={
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
+              }
+            >
+              <Image
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F17e35a72-0472-11e8-8e80-008642e5faa1.jpg?crop=3561%2C2003%2C0%2C185&resize=360",
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "bottom": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    },
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    },
+                    undefined,
+                  ]
+                }
+              />
+              <View
+                onLayout={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                    },
+                    null,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <BVLinearGradient
+                    colors={
+                      Array [
+                        "#f9f9f9",
+                        "#ededed",
+                      ]
+                    }
+                    end={
+                      Object {
+                        "x": -0.09302964577578221,
+                        "y": 0.11488204504197774,
+                      }
+                    }
+                    locations={
+                      Array [
+                        0,
+                        1,
+                      ]
+                    }
+                    start={
+                      Object {
+                        "x": 1,
+                        "y": 0,
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                      ]
+                    }
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View>
+          <View
+            style={Object {}}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#333333",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 12,
+                  "letterSpacing": 1,
+                  "marginBottom": 2,
+                }
+              }
+            >
+              INTERACTIVE
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontWeight": "400",
+                    "marginBottom": 5,
+                  },
+                  Object {
+                    "fontSize": 22,
+                    "lineHeight": 22,
+                  },
+                ]
+              }
+            >
+              Deal or no deal: the UK's Brexit options
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#696969",
+                  "flexWrap": "wrap",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 14,
+                  "lineHeight": 20,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+              >
+                
+                From a comprehensive partnership to an agreed ‘no deal’, there are various eventualities for Britain’s exit from the European Union
+                ...
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#CD0000",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 13,
+                  "textDecorationColor": "transparent",
+                }
+              }
+            >
+              Read the feature
+            </Text>
+            <svg
+              height={10}
+              style={Object {}}
+              viewBox="42 12 60 120"
+              width={10}
+            >
+              <g
+                fill="#CD0000"
+                style={Object {}}
+              >
+                <path
+                  d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                  style={Object {}}
+                />
+              </g>
+            </svg>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Puff test on ios:  renders correctly without a label 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F9F8F3",
+        "borderStyle": "solid",
+        "borderTopColor": "#000000",
+        "borderTopWidth": 8,
+      },
+      Object {
+        "borderTopColor": "#13354E",
+      },
+    ]
+  }
+>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    collapsable={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    nativeID={undefined}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <View
+      onLayout={undefined}
+    >
+      <View
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          <View
+            aspectRatio={1.7777777777777777}
+            style={Object {}}
+          >
+            <View
+              style={
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
+              }
+            >
+              <Image
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F17e35a72-0472-11e8-8e80-008642e5faa1.jpg?crop=3561%2C2003%2C0%2C185&resize=360",
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "bottom": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    },
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    },
+                    undefined,
+                  ]
+                }
+              />
+              <View
+                onLayout={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                    },
+                    null,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <BVLinearGradient
+                    colors={
+                      Array [
+                        "#f9f9f9",
+                        "#ededed",
+                      ]
+                    }
+                    end={
+                      Object {
+                        "x": -0.09302964577578221,
+                        "y": 0.11488204504197774,
+                      }
+                    }
+                    locations={
+                      Array [
+                        0,
+                        1,
+                      ]
+                    }
+                    start={
+                      Object {
+                        "x": 1,
+                        "y": 0,
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                      ]
+                    }
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View>
+          <View
+            style={Object {}}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontWeight": "400",
+                    "marginBottom": 5,
+                  },
+                  Object {
+                    "fontSize": 22,
+                    "lineHeight": 22,
+                  },
+                ]
+              }
+            >
+              Deal or no deal: the UK's Brexit options
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#696969",
+                  "flexWrap": "wrap",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 14,
+                  "lineHeight": 20,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+              >
+                
+                From a comprehensive partnership to an agreed ‘no deal’, there are various eventualities for Britain’s exit from the European Union
+                ...
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#CD0000",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 13,
+                  "textDecorationColor": "transparent",
+                }
+              }
+            >
+              Read more
+            </Text>
+            <svg
+              height={10}
+              style={Object {}}
+              viewBox="42 12 60 120"
+              width={10}
+            >
+              <g
+                fill="#CD0000"
+                style={Object {}}
+              >
+                <path
+                  d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                  style={Object {}}
+                />
+              </g>
+            </svg>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Puff test on ios:  renders correctly without a section 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F9F8F3",
+        "borderStyle": "solid",
+        "borderTopColor": "#000000",
+        "borderTopWidth": 8,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    collapsable={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    nativeID={undefined}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <View
+      onLayout={undefined}
+    >
+      <View
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          <View
+            aspectRatio={1.7777777777777777}
+            style={Object {}}
+          >
+            <View
+              style={
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
+              }
+            >
+              <Image
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F17e35a72-0472-11e8-8e80-008642e5faa1.jpg?crop=3561%2C2003%2C0%2C185&resize=360",
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "bottom": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    },
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    },
+                    undefined,
+                  ]
+                }
+              />
+              <View
+                onLayout={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                    },
+                    null,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <BVLinearGradient
+                    colors={
+                      Array [
+                        "#f9f9f9",
+                        "#ededed",
+                      ]
+                    }
+                    end={
+                      Object {
+                        "x": -0.09302964577578221,
+                        "y": 0.11488204504197774,
+                      }
+                    }
+                    locations={
+                      Array [
+                        0,
+                        1,
+                      ]
+                    }
+                    start={
+                      Object {
+                        "x": 1,
+                        "y": 0,
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                      ]
+                    }
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View>
+          <View
+            style={Object {}}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#333333",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 12,
+                  "letterSpacing": 1,
+                  "marginBottom": 2,
+                }
+              }
+            >
+              INTERACTIVE
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontWeight": "400",
+                    "marginBottom": 5,
+                  },
+                  Object {
+                    "fontSize": 22,
+                    "lineHeight": 22,
+                  },
+                ]
+              }
+            >
+              Deal or no deal: the UK's Brexit options
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#696969",
+                  "flexWrap": "wrap",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 14,
+                  "lineHeight": 20,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+              >
+                
+                From a comprehensive partnership to an agreed ‘no deal’, there are various eventualities for Britain’s exit from the European Union
+                ...
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#CD0000",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 13,
+                  "textDecorationColor": "transparent",
+                }
+              }
+            >
+              Read more
+            </Text>
+            <svg
+              height={10}
+              style={Object {}}
+              viewBox="42 12 60 120"
+              width={10}
+            >
+              <g
+                fill="#CD0000"
+                style={Object {}}
+              >
+                <path
+                  d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                  style={Object {}}
+                />
+              </g>
+            </svg>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Puff test on ios:  renders correctly without an image 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F9F8F3",
+        "borderStyle": "solid",
+        "borderTopColor": "#000000",
+        "borderTopWidth": 8,
+      },
+      Object {
+        "borderTopColor": "#13354E",
+      },
+    ]
+  }
+>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    collapsable={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    nativeID={undefined}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <View
+      onLayout={undefined}
+    >
+      <View
+        style={null}
+      >
+        <View>
+          <View
+            style={Object {}}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#333333",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 12,
+                  "letterSpacing": 1,
+                  "marginBottom": 2,
+                }
+              }
+            >
+              INTERACTIVE
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontWeight": "400",
+                    "marginBottom": 5,
+                  },
+                  Object {
+                    "fontSize": 22,
+                    "lineHeight": 22,
+                  },
+                ]
+              }
+            >
+              Deal or no deal: the UK's Brexit options
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#696969",
+                  "flexWrap": "wrap",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 14,
+                  "lineHeight": 20,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+              >
+                
+                From a comprehensive partnership to an agreed ‘no deal’, there are various eventualities for Britain’s exit from the European Union
+                ...
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#CD0000",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 13,
+                  "textDecorationColor": "transparent",
+                }
+              }
+            >
+              Read more
+            </Text>
+            <svg
+              height={10}
+              style={Object {}}
+              viewBox="42 12 60 120"
+              width={10}
+            >
+              <g
+                fill="#CD0000"
+                style={Object {}}
+              >
+                <path
+                  d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                  style={Object {}}
+                />
+              </g>
+            </svg>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
