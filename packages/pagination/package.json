@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pagination",
-  "version": "0.12.40",
+  "version": "0.12.41",
   "main": "pagination",
   "scripts": {
     "test": "yarn test:android --ci --bail --coverage && yarn test:ios --ci --bail --coverage && yarn test:web --ci --bail --coverage",
@@ -54,7 +54,7 @@
   "dependencies": {
     "@times-components/link": "0.13.17",
     "@times-components/responsive-styles": "0.2.16",
-    "@times-components/tracking": "0.6.12",
+    "@times-components/tracking": "0.6.13",
     "prop-types": "15.6.0",
     "react-display-name": "0.2.3",
     "react-native-svg": "5.5.0",

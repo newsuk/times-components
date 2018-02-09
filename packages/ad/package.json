@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ad",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Ad component",
   "main": "ad",
   "scripts": {
@@ -41,7 +41,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@storybook/addon-actions": "3.3.9",
+    "@storybook/addon-actions": "3.3.11",
     "@storybook/react-native": "3.3.11",
     "@times-components/eslint-config-thetimes": "0.1.3",
     "dextrose": "1.4.0",
