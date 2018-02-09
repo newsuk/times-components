@@ -2,15 +2,7 @@ import React from "react";
 import { Text } from "react-native";
 import { shallow } from "enzyme";
 import Gesture from "../gestures";
-
-jest.useFakeTimers();
-const delay = ms => new Promise(done => setTimeout(done, ms));
-
-const delayAndAdvance = ms => {
-  const timer = delay(ms);
-  jest.runTimersToTime(ms);
-  return timer;
-};
+import { delayAndAdvance } from "@times-components/utils/faketime";
 
 const mapTouches = ({ x, y }) => ({
   pageX: x,
