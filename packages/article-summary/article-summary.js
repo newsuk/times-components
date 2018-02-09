@@ -1,93 +1,53 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
-
-import { renderTrees, treePropType } from "@times-components/markup";
+import ArticleLabel from "@times-components/article-label";
+import Byline, {
+  articleBylinePropTypes
+} from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
-import ArticleByline from "@times-components/article-byline";
-
-import ArticleSummaryHeadline from "./article-summary-headline";
+import { renderTrees } from "@times-components/markup";
+import summarise from "./summarise";
 import renderer from "./article-summary-renderer";
 
-const styles = {
-  container: {},
-  label: {
-    color: "#333333",
-    fontFamily: "GillSansMTStd-Medium",
-    fontSize: 12,
-    marginBottom: 2,
-    letterSpacing: 1
-  },
-  text: {
-    color: "#696969",
-    fontSize: 14,
-    fontFamily: "TimesDigitalW04",
-    lineHeight: 20,
-    marginBottom: 10,
-    flexWrap: "wrap"
-  },
-  metaText: {
-    color: "#696969",
-    fontSize: 13,
-    lineHeight: 15,
-    fontFamily: "GillSansMTStd-Medium",
-    marginBottom: 5
-  }
-};
+import ArticleSummaryHeadline from "./article-summary-headline";
+import ArticleSummaryContent from "./article-summary-content";
+import styles from "./styles";
 
-const summarise = text => {
-  if (!text.length) {
-    return text;
-  }
-
-  const initial = text.slice(0, text.length - 1);
-  const last = text[text.length - 1];
-  const teaser = Object.assign({}, last, {
-    name: "teaser",
-    attributes: { isSingle: initial.length === 0 }
-  });
-
-  return [...initial, teaser];
-};
+function renderAst(ast) {
+  return renderTrees(summarise(ast), renderer);
+}
 
 const ArticleSummary = props => {
   const {
-    label,
+    labelProps,
     headline,
-    hasResponsiveHeadline,
-    text,
-    date,
-    publication,
-    showPublication,
-    byline
+    content,
+    datePublicationProps,
+    bylineProps
   } = props;
-  const summary = summarise(text);
-  const labelText = label && label.toUpperCase && label.toUpperCase();
 
   return (
-    <View style={styles.container}>
-      {label ? <Text style={styles.label}>{labelText}</Text> : null}
-      {headline ? (
-        <ArticleSummaryHeadline
-          hasResponsiveHeadline={hasResponsiveHeadline}
-          headline={headline}
-        />
+    <View>
+      {labelProps && labelProps.title ? (
+        <View style={styles.labelWrapper}>
+          <ArticleLabel {...labelProps} />
+        </View>
       ) : null}
-      <Text style={styles.text}>{renderTrees(summary, renderer)}</Text>
-      <Text
-        style={styles.metaText}
-        accessibilityLabel="datePublication"
-        testID="datePublication"
-      >
-        <DatePublication
-          date={date}
-          publication={publication}
-          showPublication={showPublication}
-        />
-      </Text>
-      {byline.length ? (
+      {headline()}
+      {content()}
+      {datePublicationProps ? (
+        <Text
+          style={styles.metaText}
+          accessibilityLabel="datePublication"
+          testID="datePublication"
+        >
+          <DatePublication {...datePublicationProps} />
+        </Text>
+      ) : null}
+      {bylineProps ? (
         <Text style={styles.metaText}>
-          <ArticleByline ast={byline} />
+          <Byline {...bylineProps} />
         </Text>
       ) : null}
     </View>
@@ -95,25 +55,33 @@ const ArticleSummary = props => {
 };
 
 ArticleSummary.propTypes = {
-  label: PropTypes.string,
-  headline: PropTypes.string,
-  hasResponsiveHeadline: PropTypes.bool,
-  text: PropTypes.arrayOf(treePropType),
-  date: DatePublication.propTypes.date,
-  publication: DatePublication.propTypes.publication,
-  showPublication: DatePublication.propTypes.showPublication,
-  byline: PropTypes.arrayOf(treePropType)
+  labelProps: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    color: PropTypes.string
+  }),
+  headline: PropTypes.func,
+  content: PropTypes.func,
+  bylineProps: PropTypes.shape(articleBylinePropTypes),
+  datePublicationProps: PropTypes.shape({
+    date: PropTypes.string,
+    publication: PropTypes.string
+  })
 };
 
 ArticleSummary.defaultProps = {
-  label: "",
-  headline: "",
-  hasResponsiveHeadline: false,
-  text: [],
-  date: null,
-  publication: DatePublication.defaultProps.publication,
-  showPublication: DatePublication.defaultProps.showPublication,
-  byline: []
+  content: () => null,
+  headline: () => null,
+  bylineProps: null,
+  labelProps: null,
+  datePublicationProps: null
+};
+
+export {
+  renderAst,
+  summarise,
+  renderer,
+  ArticleSummaryHeadline,
+  ArticleSummaryContent
 };
 
 export default ArticleSummary;

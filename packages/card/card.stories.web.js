@@ -5,7 +5,7 @@ import { storiesOf } from "dextrose/storiesOfOverloader";
 import { LateralSpacingDecorator } from "@times-components/storybook/decorators";
 import ArticleSummary from "@times-components/article-summary";
 import Card from "./card";
-import articleSummaryProps from "./fixtures/article-summary-props.json";
+import articleSummaryProps from "./fixtures/article-summary-props";
 
 const cardProps = {
   image: {

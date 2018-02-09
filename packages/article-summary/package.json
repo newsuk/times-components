@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "@times-components/article-byline": "0.10.32",
+    "@times-components/article-label": "0.6.20",
     "@times-components/date-publication": "0.10.0",
     "@times-components/jest-configurator": "0.0.23",
     "@times-components/markup": "0.17.2",

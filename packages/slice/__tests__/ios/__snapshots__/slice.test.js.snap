@@ -179,25 +179,36 @@ exports[`Slice test on ios Related articles renders single article 1`] = `
             </View>
           </View>
           <View>
-            <View
-              style={Object {}}
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+            <View>
+              <View
                 style={
                   Object {
-                    "color": "#333333",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 12,
-                    "letterSpacing": 1,
-                    "marginBottom": 2,
+                    "marginBottom": 0,
                   }
                 }
               >
-                BAYEUX TAPESTRY
-              </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 12,
+                        "fontWeight": "400",
+                        "letterSpacing": 1.2,
+                        "lineHeight": 12,
+                      },
+                      Object {
+                        "color": "#333333",
+                      },
+                    ]
+                  }
+                >
+                  BAYEUX TAPESTRY
+                </Text>
+              </View>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -214,6 +225,7 @@ exports[`Slice test on ios Related articles renders single article 1`] = `
                       "fontSize": 22,
                       "lineHeight": 22,
                     },
+                    Object {},
                   ]
                 }
               >
@@ -493,25 +505,36 @@ exports[`Slice test on ios Related articles renders single article with no bylin
             </View>
           </View>
           <View>
-            <View
-              style={Object {}}
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+            <View>
+              <View
                 style={
                   Object {
-                    "color": "#333333",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 12,
-                    "letterSpacing": 1,
-                    "marginBottom": 2,
+                    "marginBottom": 0,
                   }
                 }
               >
-                BAYEUX TAPESTRY
-              </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 12,
+                        "fontWeight": "400",
+                        "letterSpacing": 1.2,
+                        "lineHeight": 12,
+                      },
+                      Object {
+                        "color": "#333333",
+                      },
+                    ]
+                  }
+                >
+                  BAYEUX TAPESTRY
+                </Text>
+              </View>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -528,6 +551,7 @@ exports[`Slice test on ios Related articles renders single article with no bylin
                       "fontSize": 22,
                       "lineHeight": 22,
                     },
+                    Object {},
                   ]
                 }
               >
@@ -576,6 +600,20 @@ exports[`Slice test on ios Related articles renders single article with no bylin
               >
                 Friday March 13 2015, 06:54pm
               </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                    "lineHeight": 15,
+                    "marginBottom": 5,
+                  }
+                }
+              />
             </View>
           </View>
         </View>
@@ -764,9 +802,7 @@ exports[`Slice test on ios Related articles renders single article with no label
             </View>
           </View>
           <View>
-            <View
-              style={Object {}}
-            >
+            <View>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -783,6 +819,7 @@ exports[`Slice test on ios Related articles renders single article with no label
                       "fontSize": 22,
                       "lineHeight": 22,
                     },
+                    Object {},
                   ]
                 }
               >
@@ -942,25 +979,36 @@ exports[`Slice test on ios Related articles renders single article with no lead 
           style={null}
         >
           <View>
-            <View
-              style={Object {}}
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+            <View>
+              <View
                 style={
                   Object {
-                    "color": "#333333",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 12,
-                    "letterSpacing": 1,
-                    "marginBottom": 2,
+                    "marginBottom": 0,
                   }
                 }
               >
-                BAYEUX TAPESTRY
-              </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 12,
+                        "fontWeight": "400",
+                        "letterSpacing": 1.2,
+                        "lineHeight": 12,
+                      },
+                      Object {
+                        "color": "#333333",
+                      },
+                    ]
+                  }
+                >
+                  BAYEUX TAPESTRY
+                </Text>
+              </View>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -977,6 +1025,7 @@ exports[`Slice test on ios Related articles renders single article with no lead 
                       "fontSize": 22,
                       "lineHeight": 22,
                     },
+                    Object {},
                   ]
                 }
               >

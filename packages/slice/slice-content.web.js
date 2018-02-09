@@ -1,15 +1,14 @@
 import React from "react";
 import get from "lodash.get";
 import PropTypes from "prop-types";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import { treePropType } from "@times-components/markup";
 import Card from "@times-components/card";
 import Link from "@times-components/link";
 import ArticleSummary, {
-  ArticleSummaryHeadline,
   ArticleSummaryContent
 } from "@times-components/article-summary";
-
+import { ResponsiveHeadline } from "./styles/responsive";
 import SharedStyles from "./styles/shared";
 
 const styles = StyleSheet.create(SharedStyles);
@@ -44,7 +43,11 @@ const SliceContent = ({ item }) => {
           <ArticleSummary
             bylineProps={{ ast: byline }}
             datePublicationProps={{ date: publishedTime }}
-            headline={() => <ArticleSummaryHeadline headline={headline} />}
+            headline={() => (
+              <ResponsiveHeadline>
+                <Text style={styles.headline}>{headline}</Text>
+              </ResponsiveHeadline>
+            )}
             labelProps={{ title: label, color: "#333333" }}
             content={() => <ArticleSummaryContent ast={summary} />}
           />

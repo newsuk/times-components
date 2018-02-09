@@ -4,7 +4,11 @@ import { StyleSheet, View } from "react-native";
 import Card from "@times-components/card";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
-import ArticleSummary from "@times-components/article-summary";
+
+import ArticleSummary, {
+  ArticleSummaryHeadline,
+  ArticleSummaryContent
+} from "@times-components/article-summary";
 
 const styles = StyleSheet.create({
   container: {
@@ -48,6 +52,8 @@ const AuthorProfileItem = item => {
     );
   }
 
+  const content = showImage ? summary : shortSummary;
+
   return (
     <Link url={url} onPress={onPress}>
       <View style={[styles.container, style]}>
@@ -58,11 +64,16 @@ const AuthorProfileItem = item => {
           showImage={showImage}
         >
           <ArticleSummary
-            label={label}
-            headline={headline}
-            text={showImage ? summary : shortSummary}
-            date={publishedTime}
-            publication={publicationName}
+            labelProps={{
+              title: label,
+              color: "#333333"
+            }}
+            headline={() => <ArticleSummaryHeadline headline={headline} />}
+            content={() => <ArticleSummaryContent ast={content} />}
+            datePublicationProps={{
+              date: publishedTime,
+              publication: publicationName
+            }}
           />
         </Card>
       </View>

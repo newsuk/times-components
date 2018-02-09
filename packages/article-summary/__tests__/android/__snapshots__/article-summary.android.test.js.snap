@@ -1,25 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Article Summary test on Android renders an ArticleSummaryContent component with a blank AST 1`] = `null`;
+
 exports[`Article Summary test on Android renders an article-summary component with a single paragraph 1`] = `
-<View
-  style={Object {}}
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+<View>
+  <View
     style={
       Object {
-        "color": "#333333",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 12,
-        "letterSpacing": 1,
-        "marginBottom": 2,
+        "marginBottom": 5,
       }
     }
   >
-    CAMILLA LONG
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 12,
+            "marginBottom": -4,
+            "paddingTop": 5,
+          },
+          Object {
+            "color": "#333333",
+          },
+        ]
+      }
+    >
+      C A M I L L A   L O N G
+    </Text>
+  </View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -36,6 +51,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
       ]
     }
   >
@@ -131,25 +147,38 @@ exports[`Article Summary test on Android renders an article-summary component wi
 `;
 
 exports[`Article Summary test on Android renders an article-summary component with content including line breaks 1`] = `
-<View
-  style={Object {}}
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+<View>
+  <View
     style={
       Object {
-        "color": "#333333",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 12,
-        "letterSpacing": 1,
-        "marginBottom": 2,
+        "marginBottom": 5,
       }
     }
   >
-    CAMILLA LONG
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 12,
+            "marginBottom": -4,
+            "paddingTop": 5,
+          },
+          Object {
+            "color": "#333333",
+          },
+        ]
+      }
+    >
+      C A M I L L A   L O N G
+    </Text>
+  </View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -166,6 +195,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
       ]
     }
   >
@@ -335,25 +365,38 @@ exports[`Article Summary test on Android renders an article-summary component wi
 `;
 
 exports[`Article Summary test on Android renders an article-summary component with empty content at the end trimmed 1`] = `
-<View
-  style={Object {}}
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+<View>
+  <View
     style={
       Object {
-        "color": "#333333",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 12,
-        "letterSpacing": 1,
-        "marginBottom": 2,
+        "marginBottom": 5,
       }
     }
   >
-    CAMILLA LONG
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 12,
+            "marginBottom": -4,
+            "paddingTop": 5,
+          },
+          Object {
+            "color": "#333333",
+          },
+        ]
+      }
+    >
+      C A M I L L A   L O N G
+    </Text>
+  </View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -370,6 +413,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
       ]
     }
   >
@@ -479,26 +523,39 @@ exports[`Article Summary test on Android renders an article-summary component wi
 </View>
 `;
 
-exports[`Article Summary test on Android renders an article-summary component with headline and no content 1`] = `
-<View
-  style={Object {}}
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+exports[`Article Summary test on Android renders an article-summary component with headline and blank content 1`] = `
+<View>
+  <View
     style={
       Object {
-        "color": "#333333",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 12,
-        "letterSpacing": 1,
-        "marginBottom": 2,
+        "marginBottom": 5,
       }
     }
   >
-    CAMILLA LONG
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 12,
+            "marginBottom": -4,
+            "paddingTop": 5,
+          },
+          Object {
+            "color": "#333333",
+          },
+        ]
+      }
+    >
+      C A M I L L A   L O N G
+    </Text>
+  </View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -515,26 +572,88 @@ exports[`Article Summary test on Android renders an article-summary component wi
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
       ]
     }
   >
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
   </Text>
   <Text
+    accessibilityLabel="datePublication"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
-        "flexWrap": "wrap",
-        "fontFamily": "TimesDigitalW04",
-        "fontSize": 14,
-        "lineHeight": 20,
-        "marginBottom": 10,
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
       }
     }
-  />
+    testID="datePublication"
+  >
+    Saturday July 01 2017, 03:32pm, The Sunday Times
+  </Text>
+</View>
+`;
+
+exports[`Article Summary test on Android renders an article-summary component with headline and no content 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "marginBottom": 5,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 12,
+            "marginBottom": -4,
+            "paddingTop": 5,
+          },
+          Object {
+            "color": "#333333",
+          },
+        ]
+      }
+    >
+      C A M I L L A   L O N G
+    </Text>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontWeight": "400",
+          "marginBottom": 5,
+        },
+        Object {
+          "fontSize": 22,
+          "lineHeight": 22,
+        },
+        Object {},
+      ]
+    }
+  >
+    OK, so Putin’s not a lady, but he does have the wildest man‑PMT
+  </Text>
   <Text
     accessibilityLabel="datePublication"
     accessible={true}
@@ -557,9 +676,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
 `;
 
 exports[`Article Summary test on Android renders an article-summary component with multiple paragraphs 1`] = `
-<View
-  style={Object {}}
->
+<View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -576,6 +693,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
       ]
     }
   >
@@ -679,9 +797,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
 `;
 
 exports[`Article Summary test on Android renders an article-summary component with no byline 1`] = `
-<View
-  style={Object {}}
->
+<View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -698,6 +814,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
       ]
     }
   >
@@ -749,10 +866,39 @@ exports[`Article Summary test on Android renders an article-summary component wi
 </View>
 `;
 
-exports[`Article Summary test on Android renders an article-summary component with no label 1`] = `
-<View
-  style={Object {}}
->
+exports[`Article Summary test on Android renders an article-summary component with no date publication 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "marginBottom": 5,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 12,
+            "marginBottom": -4,
+            "paddingTop": 5,
+          },
+          Object {
+            "color": "#333333",
+          },
+        ]
+      }
+    >
+      C A M I L L A   L O N G
+    </Text>
+  </View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -769,6 +915,181 @@ exports[`Article Summary test on Android renders an article-summary component wi
           "fontSize": 22,
           "lineHeight": 22,
         },
+        Object {},
+      ]
+    }
+  >
+    Top medal for forces dog who took a bite out of the Taliban
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "flexWrap": "wrap",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 14,
+        "lineHeight": 20,
+        "marginBottom": 10,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      
+      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
+      ...
+    </Text>
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+  >
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="/profile/camilla-long"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#069",
+          },
+          undefined,
+        ]
+      }
+    >
+      Camilla Long
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      , Environment Editor
+    </Text>
+  </Text>
+</View>
+`;
+
+exports[`Article Summary test on Android renders an article-summary component with no headline 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "marginBottom": 5,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 12,
+            "marginBottom": -4,
+            "paddingTop": 5,
+          },
+          Object {
+            "color": "#333333",
+          },
+        ]
+      }
+    >
+      C A M I L L A   L O N G
+    </Text>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "flexWrap": "wrap",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 14,
+        "lineHeight": 20,
+        "marginBottom": 10,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      
+      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
+      ...
+    </Text>
+  </Text>
+  <Text
+    accessibilityLabel="datePublication"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+    testID="datePublication"
+  >
+    Saturday July 01 2017, 03:32pm, The Sunday Times
+  </Text>
+</View>
+`;
+
+exports[`Article Summary test on Android renders an article-summary component with no label 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontWeight": "400",
+          "marginBottom": 5,
+        },
+        Object {
+          "fontSize": 22,
+          "lineHeight": 22,
+        },
+        Object {},
       ]
     }
   >

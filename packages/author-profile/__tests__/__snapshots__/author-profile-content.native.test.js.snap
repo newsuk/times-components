@@ -2304,9 +2304,7 @@ exports[`renders profile content component 1`] = `
                 </View>
               </View>
               <View>
-                <View
-                  style={Object {}}
-                >
+                <View>
                   <Text
                     accessible={true}
                     allowFontScaling={true}
@@ -2323,6 +2321,7 @@ exports[`renders profile content component 1`] = `
                           "fontSize": 22,
                           "lineHeight": 22,
                         },
+                        Object {},
                       ]
                     }
                   >
@@ -2543,9 +2542,7 @@ exports[`renders profile content component 1`] = `
                 </View>
               </View>
               <View>
-                <View
-                  style={Object {}}
-                >
+                <View>
                   <Text
                     accessible={true}
                     allowFontScaling={true}
@@ -2562,6 +2559,7 @@ exports[`renders profile content component 1`] = `
                           "fontSize": 22,
                           "lineHeight": 22,
                         },
+                        Object {},
                       ]
                     }
                   >
@@ -2782,9 +2780,7 @@ exports[`renders profile content component 1`] = `
                 </View>
               </View>
               <View>
-                <View
-                  style={Object {}}
-                >
+                <View>
                   <Text
                     accessible={true}
                     allowFontScaling={true}
@@ -2801,6 +2797,7 @@ exports[`renders profile content component 1`] = `
                           "fontSize": 22,
                           "lineHeight": 22,
                         },
+                        Object {},
                       ]
                     }
                   >
@@ -3258,9 +3255,7 @@ exports[`renders profile content item component 1`] = `
         style={null}
       >
         <View>
-          <View
-            style={Object {}}
-          >
+          <View>
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -3277,26 +3272,12 @@ exports[`renders profile content item component 1`] = `
                     "fontSize": 22,
                     "lineHeight": 22,
                   },
+                  Object {},
                 ]
               }
             >
               Top medal for forces dog who took a bite out of the Taliban
             </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#696969",
-                  "flexWrap": "wrap",
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 14,
-                  "lineHeight": 20,
-                  "marginBottom": 10,
-                }
-              }
-            />
             <Text
               accessibilityLabel="datePublication"
               accessible={true}
@@ -3366,9 +3347,7 @@ exports[`renders profile content item component with a specific image size 1`] =
         style={null}
       >
         <View>
-          <View
-            style={Object {}}
-          >
+          <View>
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -3385,26 +3364,12 @@ exports[`renders profile content item component with a specific image size 1`] =
                     "fontSize": 22,
                     "lineHeight": 22,
                   },
+                  Object {},
                 ]
               }
             >
               Top medal for forces dog who took a bite out of the Taliban
             </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#696969",
-                  "flexWrap": "wrap",
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 14,
-                  "lineHeight": 20,
-                  "marginBottom": 10,
-                }
-              }
-            />
             <Text
               accessibilityLabel="datePublication"
               accessible={true}
@@ -3474,9 +3439,7 @@ exports[`renders profile content item component with no image 1`] = `
         style={null}
       >
         <View>
-          <View
-            style={Object {}}
-          >
+          <View>
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -3493,26 +3456,12 @@ exports[`renders profile content item component with no image 1`] = `
                     "fontSize": 22,
                     "lineHeight": 22,
                   },
+                  Object {},
                 ]
               }
             >
               Top medal for forces dog who took a bite out of the Taliban
             </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#696969",
-                  "flexWrap": "wrap",
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 14,
-                  "lineHeight": 20,
-                  "marginBottom": 10,
-                }
-              }
-            />
             <Text
               accessibilityLabel="datePublication"
               accessible={true}
