@@ -4,6 +4,9 @@
   "description": "Renders a gradient background",
   "main": "gradient",
   "scripts": {
+    "test:android": "jest --config='./__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "test": "jest --bail --ci --coverage",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
