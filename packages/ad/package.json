@@ -54,7 +54,6 @@
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-native": "0.50.1",
-    "react-stateful-fn": "0.1.0",
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
