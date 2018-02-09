@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`Watermark tests on web renders correctly 1`] = `
 <svg
   height={250}
   style={Object {}}
