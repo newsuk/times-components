@@ -25,6 +25,13 @@ const sharedStyle = {
   cardContainer: {
     paddingBottom: 10,
     paddingTop: 10
+  },
+  metaText: {
+    color: "#696969",
+    fontSize: 13,
+    lineHeight: 15,
+    fontFamily: "GillSansMTStd-Medium",
+    marginBottom: 5
   }
 };
 

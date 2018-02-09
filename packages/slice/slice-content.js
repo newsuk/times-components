@@ -1,11 +1,12 @@
 import React from "react";
 import get from "lodash.get";
 import PropTypes from "prop-types";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import { treePropType } from "@times-components/markup";
 import Card from "@times-components/card";
 import Link from "@times-components/link";
 import ArticleSummary from "@times-components/article-summary";
+import ArticleByline from "@times-components/article-byline";
 import SharedStyles from "./styles/shared";
 
 const styles = StyleSheet.create(SharedStyles);
@@ -39,7 +40,13 @@ const SliceContent = ({ item }) => {
       <View style={styles.cardContainer}>
         <Card {...cardProps} image={imageUri ? { uri: imageUri } : null}>
           <ArticleSummary
-            byline={byline}
+            byline={() =>
+              ArticleByline({ ast: byline }) ? ( // this ternary could be replaced with a HOC that does the decorating and null check
+                <Text style={styles.metaText}>
+                  <ArticleByline ast={byline} />
+                </Text>
+              ) : null
+            }
             date={publishedTime}
             headline={headline}
             hasResponsiveHeadline

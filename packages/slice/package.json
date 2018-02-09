@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "@times-components/article-summary": "0.16.5",
+    "@times-components/article-byline": "0.10.32",
     "@times-components/card": "0.16.48",
     "@times-components/image": "1.13.8",
     "@times-components/link": "0.13.17",

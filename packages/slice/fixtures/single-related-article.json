@@ -29,28 +29,13 @@
           "https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh",
         "byline": [
           {
-            "name": "author",
-            "attributes": {
-              "slug": "camilla-long"
-            },
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "Camilla Long"
-                },
-                "children": []
-              }
-            ]
-          },
-          {
             "name": "inline",
             "attributes": {},
             "children": [
               {
                 "name": "text",
                 "attributes": {
-                  "value": ", Environment Editor"
+                  "value": "Charles Bremner, Paris | Jack Malvern"
                 },
                 "children": []
               }
