@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/tealium@0.1.17...@times-components/tealium@0.2.0) (2018-02-09)
+
+
+### Features
+
+* add Jest Configurator to the Tealium package ([#636](https://github.com/newsuk/times-components/issues/636)) ([c40436d](https://github.com/newsuk/times-components/commit/c40436d))
+
+
+
+
 <a name="0.1.17"></a>
 ## [0.1.17](https://github.com/newsuk/times-components/compare/@times-components/tealium@0.1.16...@times-components/tealium@0.1.17) (2018-02-08)
 

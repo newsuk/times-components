@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.2.17...@times-components/watermark@0.3.0) (2018-02-09)
+
+
+### Features
+
+* add jest-configurator to Watermark package ([#635](https://github.com/newsuk/times-components/issues/635)) ([770a5bf](https://github.com/newsuk/times-components/commit/770a5bf))
+
+
+
+
 <a name="0.2.17"></a>
 ## [0.2.17](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.2.16...@times-components/watermark@0.2.17) (2018-02-06)
 
