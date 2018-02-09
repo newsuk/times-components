@@ -1,12 +1,12 @@
 export default {
   headline: {
     color: "#333333",
-    marginBottom: 5,
     fontFamily: "TimesModern-Bold",
-    fontWeight: "400"
+    fontWeight: "400",
+    margin: "0 0 5px"
   },
   default: {
-    fontSize: 22,
-    lineHeight: 22
+    fontSize: "22px",
+    lineHeight: "25px"
   }
 };

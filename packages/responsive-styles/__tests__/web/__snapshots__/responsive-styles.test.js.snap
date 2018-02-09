@@ -1,50 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`applies styles for all breakpoints 1`] = `
-.c0 {
-  color: orange;
-}
-
-@media (min-width:520px) {
-  .c0 {
-    color: red;
-  }
-}
-
-@media (min-width:768px) {
-  .c0 {
-    color: blue;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    color: green;
-  }
-}
-
-@media (min-width:1320px) {
-  .c0 {
-    color: yellow;
-  }
-}
-
 <div
-  className="c0"
+  className="sc-htpNat GdNTF"
 >
   Foo
 </div>
 `;
 
 exports[`applies styles to custom components via className 1`] = `
-@media (min-width:768px) {
-  .c0 {
-    color: blue;
-  }
-}
-
 <div
-  className="c0"
+  className="sc-ifAKCX ktlgsk"
 >
   Hello
 </div>
@@ -52,7 +18,7 @@ exports[`applies styles to custom components via className 1`] = `
 
 exports[`handles empty styles object 1`] = `
 <div
-  className=""
+  className="sc-bwzfXH dkZRhB"
 >
   Foo
 </div>
@@ -60,35 +26,23 @@ exports[`handles empty styles object 1`] = `
 
 exports[`handles missing styles object 1`] = `
 <div
-  className=""
+  className="sc-bdVaJa hkemwx"
 >
   Foo
 </div>
 `;
 
 exports[`optimises un-used breakpoints away 1`] = `
-@media (min-width:768px) {
-  .c0 {
-    color: blue;
-  }
-}
-
 <div
-  className="c0"
+  className="sc-bxivhb leAFYu"
 >
   Foo
 </div>
 `;
 
 exports[`supports responsive styles based on props 1`] = `
-@media (min-width:768px) {
-  .c0 {
-    color: red;
-  }
-}
-
 <div
-  className="c0"
+  className="sc-EHOje dnKWZa"
 >
   Hello
 </div>

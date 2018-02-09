@@ -1,32 +1,13 @@
 import React from "react";
-import { Text } from "react-native";
 import PropTypes from "prop-types";
-import withResponsiveStyles from "@times-components/responsive-styles";
-import ArticleSummaryHeadlineBase from "./article-summary-headline-base";
-import headlineStyles from "./article-summary-headline-styles";
-
-const ResponsiveHeadline = withResponsiveStyles(Text, {
-  base: () => `
-    font-size: 22px;
-    line-height: 22px;
-    margin-bottom: 5px;
-  `,
-  mediumUp: () => `
-    font-size: 30px;
-    line-height: 30px;
-  `
-});
+import styles from "./styles/article-summary-headline-styles";
+import ResponsiveHeadline from "./styles/responsive";
 
 const ArticleSummaryHeadline = ({ headline, hasResponsiveHeadline }) =>
   hasResponsiveHeadline ? (
-    <ResponsiveHeadline>
-      <ArticleSummaryHeadlineBase headline={headline} />
-    </ResponsiveHeadline>
+    <ResponsiveHeadline style={styles.headline}>{headline}</ResponsiveHeadline>
   ) : (
-    <ArticleSummaryHeadlineBase
-      style={headlineStyles.default}
-      headline={headline}
-    />
+    <h3 style={{ ...styles.default, ...styles.headline }}>{headline}</h3>
   );
 
 ArticleSummaryHeadline.propTypes = {
