@@ -17,8 +17,6 @@ const makeHarness = ({
 }) => {
   let renderCompleteCalled = false;
   let initCalled = false;
-  // const scritpsLoaded = [];
-  // const scriptsErrored = [];
 
   const withCatch = action => {
     try {
@@ -31,7 +29,7 @@ const makeHarness = ({
   };
   const log = (...message) => {
     // eslint-disable-next-line no-console
-    window.console.info(data.code, ...message);
+    window.console.info(`${data.code}:`, ...message);
   };
   return {
     execute() {
