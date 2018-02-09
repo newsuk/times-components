@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Watermark tests on android renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#e8e8e8",
+      "borderColor": "#646464",
+      "borderWidth": 0.5,
+      "height": 250,
+      "width": 300,
+    }
+  }
+/>
+`;
