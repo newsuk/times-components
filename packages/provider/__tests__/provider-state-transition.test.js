@@ -4,7 +4,7 @@ import {
   providerTester,
   getRenderedQueries
 } from "@times-components/provider-test-tools";
-import { delayAndAdvance } "@times-components/utils";
+import { delayAndAdvance } from "@times-components/utils";
 import connect from "../connect";
 
 function AuthorQueryResolver({ variables }) {
