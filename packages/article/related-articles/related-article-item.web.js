@@ -1,9 +1,14 @@
 import React from "react";
+import { Text } from "react-native";
 import get from "lodash.get";
-import ArticleSummary from "@times-components/article-summary";
+import ArticleSummary, {
+  ArticleSummaryContent
+} from "@times-components/article-summary";
 import Image from "@times-components/image";
 import Link from "@times-components/link";
 import { relatedArticleItemPropTypes } from "./proptypes";
+import styles from "./styles/base";
+import { ResponsiveHeadline } from "./styles/responsive";
 
 const RelatedArticleItem = ({
   article,
@@ -13,15 +18,7 @@ const RelatedArticleItem = ({
   styledSummaryContainer: StyledSummaryContainer
 }) => {
   if (!article) return null;
-  const {
-    byline,
-    label,
-    headline,
-    publicationName,
-    publishedTime,
-    summary,
-    url
-  } = article;
+  const { byline, label, headline, publishedTime, summary, url } = article;
 
   const imageUri = get(
     article,
@@ -39,14 +36,15 @@ const RelatedArticleItem = ({
         ) : null}
         <StyledSummaryContainer>
           <ArticleSummary
-            byline={byline}
-            date={publishedTime}
-            headline={headline}
-            hasResponsiveHeadline
-            label={label}
-            publication={publicationName}
-            showPublication={false}
-            text={summary}
+            bylineProps={{ ast: byline }}
+            datePublicationProps={{ date: publishedTime }}
+            headline={() => (
+              <ResponsiveHeadline>
+                <Text style={styles.headline}>{headline}</Text>
+              </ResponsiveHeadline>
+            )}
+            labelProps={{ title: label, color: "#333333" }}
+            content={() => <ArticleSummaryContent ast={summary} />}
           />
         </StyledSummaryContainer>
       </StyledRelatedArticleContainer>

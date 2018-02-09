@@ -1,4 +1,4 @@
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 
 export const StyledRelatedArticlesHeading = withResponsiveStyles(View, {
@@ -69,6 +69,18 @@ export const RelatedArticleContainer = articleCount =>
       padding-right: 0;
   `
   });
+
+export const ResponsiveHeadline = withResponsiveStyles(Text, {
+  base: () => `
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 5px;
+  `,
+  mediumUp: () => `
+    font-size: 30px;
+    line-height: 30px;
+  `
+});
 
 export const ImageContainer = articleCount =>
   withResponsiveStyles(View, {

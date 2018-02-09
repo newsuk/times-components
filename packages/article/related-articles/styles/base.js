@@ -28,6 +28,12 @@ export default StyleSheet.create({
     paddingRight: 10,
     paddingTop: 10
   },
+  headline: {
+    color: "#333333",
+    marginBottom: 5,
+    fontFamily: "TimesModern-Bold",
+    fontWeight: "400"
+  },
   imageContainer: {
     marginBottom: 10
   }

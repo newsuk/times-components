@@ -224,25 +224,38 @@ exports[`Related articles test on android Related articles renders single relate
                 </View>
               </View>
             </View>
-            <View
-              style={Object {}}
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+            <View>
+              <View
                 style={
                   Object {
-                    "color": "#333333",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 12,
-                    "letterSpacing": 1,
-                    "marginBottom": 2,
+                    "marginBottom": 5,
                   }
                 }
               >
-                BAYEUX TAPESTRY
-              </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 12,
+                        "fontWeight": "400",
+                        "letterSpacing": 1.2,
+                        "lineHeight": 12,
+                        "marginBottom": -4,
+                        "paddingTop": 5,
+                      },
+                      Object {
+                        "color": "#333333",
+                      },
+                    ]
+                  }
+                >
+                  B A Y E U X   T A P E S T R Y
+                </Text>
+              </View>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -259,6 +272,7 @@ exports[`Related articles test on android Related articles renders single relate
                       "fontSize": 22,
                       "lineHeight": 22,
                     },
+                    Object {},
                   ]
                 }
               >
@@ -562,25 +576,38 @@ exports[`Related articles test on android Related articles renders single relate
                 </View>
               </View>
             </View>
-            <View
-              style={Object {}}
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+            <View>
+              <View
                 style={
                   Object {
-                    "color": "#333333",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 12,
-                    "letterSpacing": 1,
-                    "marginBottom": 2,
+                    "marginBottom": 5,
                   }
                 }
               >
-                BAYEUX TAPESTRY
-              </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 12,
+                        "fontWeight": "400",
+                        "letterSpacing": 1.2,
+                        "lineHeight": 12,
+                        "marginBottom": -4,
+                        "paddingTop": 5,
+                      },
+                      Object {
+                        "color": "#333333",
+                      },
+                    ]
+                  }
+                >
+                  B A Y E U X   T A P E S T R Y
+                </Text>
+              </View>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -597,6 +624,7 @@ exports[`Related articles test on android Related articles renders single relate
                       "fontSize": 22,
                       "lineHeight": 22,
                     },
+                    Object {},
                   ]
                 }
               >
@@ -645,6 +673,20 @@ exports[`Related articles test on android Related articles renders single relate
               >
                 Friday March 13 2015, 06:54pm
               </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                    "lineHeight": 15,
+                    "marginBottom": 5,
+                  }
+                }
+              />
             </View>
           </View>
         </View>
@@ -878,9 +920,7 @@ exports[`Related articles test on android Related articles renders single relate
                 </View>
               </View>
             </View>
-            <View
-              style={Object {}}
-            >
+            <View>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -897,6 +937,7 @@ exports[`Related articles test on android Related articles renders single relate
                       "fontSize": 22,
                       "lineHeight": 22,
                     },
+                    Object {},
                   ]
                 }
               >
@@ -1068,25 +1109,38 @@ exports[`Related articles test on android Related articles renders single relate
               }
             }
           >
-            <View
-              style={Object {}}
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+            <View>
+              <View
                 style={
                   Object {
-                    "color": "#333333",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 12,
-                    "letterSpacing": 1,
-                    "marginBottom": 2,
+                    "marginBottom": 5,
                   }
                 }
               >
-                BAYEUX TAPESTRY
-              </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 12,
+                        "fontWeight": "400",
+                        "letterSpacing": 1.2,
+                        "lineHeight": 12,
+                        "marginBottom": -4,
+                        "paddingTop": 5,
+                      },
+                      Object {
+                        "color": "#333333",
+                      },
+                    ]
+                  }
+                >
+                  B A Y E U X   T A P E S T R Y
+                </Text>
+              </View>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -1103,6 +1157,7 @@ exports[`Related articles test on android Related articles renders single relate
                       "fontSize": 22,
                       "lineHeight": 22,
                     },
+                    Object {},
                   ]
                 }
               >
@@ -1406,25 +1461,38 @@ exports[`Related articles test on android Related articles renders two related a
                 </View>
               </View>
             </View>
-            <View
-              style={Object {}}
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+            <View>
+              <View
                 style={
                   Object {
-                    "color": "#333333",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 12,
-                    "letterSpacing": 1,
-                    "marginBottom": 2,
+                    "marginBottom": 5,
                   }
                 }
               >
-                BAYEUX TAPESTRY
-              </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 12,
+                        "fontWeight": "400",
+                        "letterSpacing": 1.2,
+                        "lineHeight": 12,
+                        "marginBottom": -4,
+                        "paddingTop": 5,
+                      },
+                      Object {
+                        "color": "#333333",
+                      },
+                    ]
+                  }
+                >
+                  B A Y E U X   T A P E S T R Y
+                </Text>
+              </View>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -1441,6 +1509,7 @@ exports[`Related articles test on android Related articles renders two related a
                       "fontSize": 22,
                       "lineHeight": 22,
                     },
+                    Object {},
                   ]
                 }
               >
@@ -1681,25 +1750,38 @@ exports[`Related articles test on android Related articles renders two related a
                 </View>
               </View>
             </View>
-            <View
-              style={Object {}}
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+            <View>
+              <View
                 style={
                   Object {
-                    "color": "#333333",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 12,
-                    "letterSpacing": 1,
-                    "marginBottom": 2,
+                    "marginBottom": 5,
                   }
                 }
               >
-                BAYEUX TAPESTRY
-              </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 12,
+                        "fontWeight": "400",
+                        "letterSpacing": 1.2,
+                        "lineHeight": 12,
+                        "marginBottom": -4,
+                        "paddingTop": 5,
+                      },
+                      Object {
+                        "color": "#333333",
+                      },
+                    ]
+                  }
+                >
+                  B A Y E U X   T A P E S T R Y
+                </Text>
+              </View>
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -1716,6 +1798,7 @@ exports[`Related articles test on android Related articles renders two related a
                       "fontSize": 22,
                       "lineHeight": 22,
                     },
+                    Object {},
                   ]
                 }
               >

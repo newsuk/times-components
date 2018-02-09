@@ -1,7 +1,10 @@
 import React from "react";
 import get from "lodash.get";
 import { View } from "react-native";
-import ArticleSummary from "@times-components/article-summary";
+import ArticleSummary, {
+  ArticleSummaryHeadline,
+  ArticleSummaryContent
+} from "@times-components/article-summary";
 import Image from "@times-components/image";
 import Link from "@times-components/link";
 import { relatedArticleItemPropTypes } from "./proptypes";
@@ -9,15 +12,7 @@ import styles from "./styles/base";
 
 const RelatedArticleItem = ({ article, onPress }) => {
   if (!article) return null;
-  const {
-    byline,
-    label,
-    headline,
-    publicationName,
-    publishedTime,
-    summary,
-    url
-  } = article;
+  const { byline, label, headline, publishedTime, summary, url } = article;
 
   const imageUri = get(
     article,
@@ -34,14 +29,11 @@ const RelatedArticleItem = ({ article, onPress }) => {
           </View>
         ) : null}
         <ArticleSummary
-          byline={byline}
-          date={publishedTime}
-          headline={headline}
-          hasResponsiveHeadline
-          label={label}
-          publication={publicationName}
-          showPublication={false}
-          text={summary}
+          bylineProps={{ ast: byline }}
+          datePublicationProps={{ date: publishedTime }}
+          headline={() => <ArticleSummaryHeadline headline={headline} />}
+          labelProps={{ title: label, color: "#333333" }}
+          content={() => <ArticleSummaryContent ast={summary} />}
         />
       </View>
     </Link>
