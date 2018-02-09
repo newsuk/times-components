@@ -122,7 +122,7 @@ storiesOf("Primitives/Advertisement", module)
         <ScrollView>
           <Ad pos="header" section="article" />
           <Text
-            style={{ color: "blue", textDecoration: "underline" }}
+            style={{ color: "blue", textDecorationLine: "underline" }}
             onPress={() => setState({ show: !show })}
           >
             {show ? "hide second ad" : "show second ad"}.
