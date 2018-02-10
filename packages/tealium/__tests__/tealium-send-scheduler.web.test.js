@@ -1,12 +1,5 @@
 import TealiumSendScheduler from "../tealium-send-scheduler";
-jest.useFakeTimers();
-
-const delay = ms => new Promise(done => setTimeout(done, ms));
-const delayAndAdvance = ms => {
-  const timer = delay(ms);
-  jest.runTimersToTime(ms);
-  return timer;
-};
+import { delay, advance, delayAndAdvance } from "@times-components/utils/faketime";
 
 describe("TealiumSendScheduler", () => {
   const trackingOptions = {
@@ -217,15 +210,15 @@ describe("TealiumSendScheduler", () => {
       await delayAndAdvance(1000);
     });
 
-    it.only("sends more events if they cannot be sent in time", async () => {
+    it("sends more events if they cannot be sent in time", async () => {
       setup();
       const timer = delay(2 * 60 * 1000);
       
       const e1 = { component: "Page1" };
       const e2 = { component: "Page2" };
 
-      global.window.tealiumTrack = async () => {
-        await delayAndAdvance(1 * 60 * 1000);
+      global.window.tealiumTrack = () => {
+        advance(1 * 60 * 1000);
       };
 
       jest.spyOn(global.window, "tealiumTrack");
