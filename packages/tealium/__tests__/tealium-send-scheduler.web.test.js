@@ -1,5 +1,9 @@
+import {
+  delay,
+  advance,
+  delayAndAdvance
+} from "@times-components/utils/faketime";
 import TealiumSendScheduler from "../tealium-send-scheduler";
-import { delay, advance, delayAndAdvance } from "@times-components/utils/faketime";
 
 describe("TealiumSendScheduler", () => {
   const trackingOptions = {
@@ -195,7 +199,6 @@ describe("TealiumSendScheduler", () => {
       sendScheduler.enqueue(e1);
       sendScheduler.enqueue(e2);
 
-
       await delayAndAdvance(1000);
       expect(global.window.tealiumTrack).toHaveBeenCalledTimes(2);
     });
@@ -213,7 +216,7 @@ describe("TealiumSendScheduler", () => {
     it("sends more events if they cannot be sent in time", async () => {
       setup();
       const timer = delay(2 * 60 * 1000);
-      
+
       const e1 = { component: "Page1" };
       const e2 = { component: "Page2" };
 
@@ -226,7 +229,7 @@ describe("TealiumSendScheduler", () => {
       sendScheduler.enqueue(e1);
       sendScheduler.enqueue(e2);
 
-      await delayAndAdvance(0); 
+      await delayAndAdvance(0);
       await timer;
       expect(global.window.tealiumTrack).toHaveBeenCalledTimes(2);
     });

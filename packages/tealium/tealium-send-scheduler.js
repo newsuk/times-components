@@ -62,7 +62,7 @@ export default class TealiumSendScheduler {
       this.w.requestIdleCallback(this.sendEvents, { timeout: 2000 });
     } else {
       this.w.setTimeout(() => {
-        if ( typeof this.w.tealiumTrack !== "function" ) {
+        if (typeof this.w.tealiumTrack !== "function") {
           return;
         }
         const start = Date.now();
