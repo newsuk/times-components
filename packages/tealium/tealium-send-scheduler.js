@@ -48,13 +48,11 @@ export default class TealiumSendScheduler {
   }
 
   scheduleSendEvents() {
-    console.log(this.w.tealiumTrack);
     if (
       this.sendEventScheduled ||
       !TealiumSendScheduler.scriptLoaded ||
       typeof this.w.tealiumTrack !== "function"
     ) {
-      console.log('skip');
       return;
     }
 
@@ -64,6 +62,9 @@ export default class TealiumSendScheduler {
       this.w.requestIdleCallback(this.sendEvents, { timeout: 2000 });
     } else {
       this.w.setTimeout(() => {
+        if ( typeof this.w.tealiumTrack !== "function" ) {
+          return;
+        }
         const start = Date.now();
         this.sendEvents({
           timeRemaining: () => Math.max(0, 50 - (Date.now() - start))

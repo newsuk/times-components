@@ -212,20 +212,20 @@ describe("TealiumSendScheduler", () => {
 
       global.window.tealiumTrack = null;
 
-      console.log('blub');
       sendScheduler.enqueue();
 
       await delayAndAdvance(1000);
     });
 
-    it("sends more events if they cannot be sent in time", async () => {
+    it.only("sends more events if they cannot be sent in time", async () => {
       setup();
-
+      const timer = delay(2 * 60 * 1000);
+      
       const e1 = { component: "Page1" };
       const e2 = { component: "Page2" };
 
-      global.window.tealiumTrack = () => {
-        jest.runTimersToTime(1e10);
+      global.window.tealiumTrack = async () => {
+        await delayAndAdvance(1 * 60 * 1000);
       };
 
       jest.spyOn(global.window, "tealiumTrack");
@@ -233,7 +233,8 @@ describe("TealiumSendScheduler", () => {
       sendScheduler.enqueue(e1);
       sendScheduler.enqueue(e2);
 
-      await delayAndAdvance(1e21);
+      await delayAndAdvance(0); 
+      await timer;
       expect(global.window.tealiumTrack).toHaveBeenCalledTimes(2);
     });
   });
