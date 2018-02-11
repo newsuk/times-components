@@ -148,7 +148,6 @@ describe("DOMContext harness", () => {
   it("invokes init function if the script has an expired timeout", () => {
     jest.useFakeTimers();
     const init = jest.fn();
-    const eventCallback = jest.fn();
     const harness = makeHarness({
       init,
       scriptUris: [{ uri: "providesSecond", timeout: 200 }]
