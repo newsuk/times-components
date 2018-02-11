@@ -18,9 +18,6 @@ const adInit = args => {
         googletag.pubads().setTargeting("gs_cat", gs_channels);
       });
       googletag.cmd.push(() => {
-        googletag.pubads().setTargeting("gs_cat", gs_channels);
-      });
-      googletag.cmd.push(() => {
         const pubads = googletag.pubads();
         Object.entries(data.pageTargeting || {}).forEach(entry =>
           pubads.setTargeting(entry[0], entry[1])
