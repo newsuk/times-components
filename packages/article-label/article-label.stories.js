@@ -1,6 +1,6 @@
 import "react-native";
 import React from "react";
-import { storiesOf } from "dextrose/storiesOfOverloader";
+import { storiesOf } from "@storybook/react-native";
 import ArticleLabel from "./article-label";
 
 storiesOf("ArticleLabel", module).add("ArticleLabel", () => (
