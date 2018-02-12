@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Related articles test on ios Related articles handles no related articles 1`] = `null`;
+
 exports[`Related articles test on ios Related articles renders single related article 1`] = `
 <RCTScrollView
   style={

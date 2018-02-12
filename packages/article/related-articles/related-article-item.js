@@ -11,7 +11,6 @@ import { relatedArticleItemPropTypes } from "./proptypes";
 import styles from "./styles/base";
 
 const RelatedArticleItem = ({ article, onPress }) => {
-  if (!article) return null;
   const { byline, label, headline, publishedTime, summary, url } = article;
 
   const imageUri = get(

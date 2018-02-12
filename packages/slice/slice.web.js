@@ -4,8 +4,6 @@ import getTemplateName from "./styles/template-map";
 import getStyledComponent from "./styles";
 
 const Slice = ({ children, template }) => {
-  if (!children) return null;
-
   const templateName = getTemplateName(template);
   const StyledSliceContainer = getStyledComponent(
     templateName,

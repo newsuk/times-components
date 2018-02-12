@@ -13,7 +13,7 @@ import {
 } from "./styles/responsive";
 
 const RelatedArticles = ({ articles, onPress, template }) => {
-  if (!articles) return null;
+  if (!articles || articles.length === 0) return null;
 
   const articleCount = articles.length;
   const StyledRelatedArticleContainer = RelatedArticleContainer(articleCount);

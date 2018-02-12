@@ -5,8 +5,6 @@ import getTemplateName from "./styles/template-map";
 import getTemplateStyles from "./styles";
 
 const Slice = ({ children, template }) => {
-  if (!children) return null;
-
   const templateName = getTemplateName(template);
   const styles = StyleSheet.create(getTemplateStyles(templateName));
 

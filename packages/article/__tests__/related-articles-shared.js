@@ -33,6 +33,19 @@ module.exports = () => {
   });
 
   context("Related articles", () => {
+    it("handles no related articles", () => {
+      const data = {
+        relatedArticles: [],
+        relatedArticlesLayout: {
+          template: "DEFAULT"
+        }
+      };
+      const tree = renderer
+        .create(<RelatedArticles {...createRelatedArticlesProps(data)} />)
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
     it("renders single related article", () => {
       const tree = renderer
         .create(

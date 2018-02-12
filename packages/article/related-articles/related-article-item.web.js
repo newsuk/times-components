@@ -17,7 +17,6 @@ const RelatedArticleItem = ({
   styledImageContainer: StyledImageContainer,
   styledSummaryContainer: StyledSummaryContainer
 }) => {
-  if (!article) return null;
   const { byline, label, headline, publishedTime, summary, url } = article;
 
   const imageUri = get(

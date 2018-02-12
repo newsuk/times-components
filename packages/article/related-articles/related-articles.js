@@ -6,7 +6,7 @@ import RelatedArticleItem from "./related-article-item";
 import { relatedArticlesPropTypes, defaultProps } from "./proptypes";
 
 const RelatedArticles = ({ articles, onPress, template }) => {
-  if (!articles) return null;
+  if (!articles || articles.length === 0) return null;
 
   return (
     <ScrollView style={{ marginTop: 10 }}>
