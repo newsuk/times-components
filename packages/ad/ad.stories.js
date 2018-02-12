@@ -40,36 +40,13 @@ const withOpenInNewWindow = children => {
   );
 };
 
-storiesOf("Advertisement - header ad", module)
-  .add("render one ad", () => withOpenInNewWindow(<Ad pos="intervention" />))
-  .add("render article ads - header, inline , sponsored", () =>
+storiesOf("Advertisement", module)
+  .add("render one ad - intervention", () => withOpenInNewWindow(<Ad pos="intervention" />))
+  .add("render article ads - header, inline", () =>
     withOpenInNewWindow(
       <View>
         <Ad section="article" pos="header" />
         <Ad section="article" pos="inline-ad" />
-        <Ad section="article" pos="article-sponsored-ad" />
-      </View>
-    )
-  )
-  .add("render article ads - pixel, pixelskin , pixelteads", () =>
-    withOpenInNewWindow(
-      <View>
-        <Ad section="article" pos="pixel" />
-        <Ad section="article" pos="pixelskin" />
-        <Ad section="article" pos="pixelteads" />
-      </View>
-    )
-  )
-  .add("sponsored ads", () =>
-    withOpenInNewWindow(
-      <View>
-        <Ad
-          section="article"
-          pos="article-sponsored-ad"
-          networkId="3048"
-          width={1024}
-          height={250}
-        />
       </View>
     )
   )
