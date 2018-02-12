@@ -11,6 +11,6 @@ npx react-native bundle --platform ios --dev false --reset-cache --entry-file fr
 react-native run-ios --no-packager --configuration Release
 PACKAGER_PID=$!
 LOGLEVEL=verbose npx dextrose run --config ./dextrose/dextrose.ios.js --snapshotWait 2000
-npx lerna run dextrose cs $(PWD)
+npx lerna run dextrose-clean
 kill -9 $PACKAGER_PID
 xcrun simctl shutdown booted
