@@ -69,7 +69,7 @@ const ArticleSummary = props => {
       {label ? <Text style={styles.label}>{labelText}</Text> : null}
       {headline ? (
         <ArticleSummaryHeadline
-          hasResponsiveHeadline={hasResponsiveHeadline}
+          hasResponsiveHeadline={false}
           headline={headline}
         />
       ) : null}
