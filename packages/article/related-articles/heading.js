@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text } from "react-native";
-import styles from "./styles/base";
+import styles from "./styles";
 
 const RelatedArticlesHeading = () => (
   <View style={styles.titleContainer}>

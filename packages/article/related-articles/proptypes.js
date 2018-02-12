@@ -4,11 +4,10 @@ import { treePropType } from "@times-components/markup";
 export const relatedArticleItemPropTypes = {
   article: PropTypes.shape({
     byline: PropTypes.arrayOf(treePropType),
-    headline: PropTypes.string,
+    headline: PropTypes.string.isRequired,
     label: PropTypes.string,
-    publicationName: PropTypes.string,
-    publishedTime: PropTypes.string,
-    summary: PropTypes.arrayOf(treePropType),
+    publishedTime: PropTypes.string.isRequired,
+    summary: PropTypes.arrayOf(treePropType).isRequired,
     url: PropTypes.string
   }).isRequired,
   onPress: PropTypes.func.isRequired

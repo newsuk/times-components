@@ -1,6 +1,6 @@
 import React from "react";
 import { Text } from "react-native";
-import styles from "./styles/base";
+import styles from "./styles";
 import { StyledRelatedArticlesHeading } from "./styles/responsive";
 
 const RelatedArticlesHeading = () => (
