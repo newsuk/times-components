@@ -1,11 +1,12 @@
 // @flow
 import React from "react";
 import Svg, { Path } from "svgs";
+
 import type { Element } from "react";
+import type { IconProps } from "../icons.flow";
 
 export type TwitterProps = {
-  width: number,
-  height: number,
+  ...IconProps,
   fillColour?: string
 };
 
@@ -13,7 +14,7 @@ const IconTwitter = ({
   width,
   height,
   fillColour
-}: TwitterProps): Element<*> => (
+}: TwitterProps): Element<Svg> => (
   <Svg width={width} height={height} viewBox="-354.2 -279.4 750 600">
     <Path
       d="M391.3-210.7c-28.9,10.9-57.8,21.7-86.7,25.3c32.5-18.1,54.2-50.6,68.7-83.1c-28.9,18.1-61.5,28.9-97.6,36.1
