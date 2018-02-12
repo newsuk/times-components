@@ -1,6 +1,7 @@
-import { withResponsiveElementStyles } from "@times-components/responsive-styles";
+import { Text } from "react-native";
+import withResponsiveStyles from "@times-components/responsive-styles";
 
-export default withResponsiveElementStyles("h3", {
+export default withResponsiveStyles(Text, {
   base: () => `
     font-size: 22px;
     line-height: 25px;
