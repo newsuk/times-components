@@ -14,7 +14,7 @@ exports[`Storybook Decorator tests on iOS should render a Bar Spacing Decorator 
     allowFontScaling={true}
     ellipsizeMode="tail"
   >
-    I'm in Storybook!
+    I am in Storybook!
   </Text>
 </View>
 `;
@@ -40,7 +40,7 @@ exports[`Storybook Decorator tests on iOS should render a Centered Decorator 1`]
     allowFontScaling={true}
     ellipsizeMode="tail"
   >
-    I'm in Storybook!
+    I am in Storybook!
   </Text>
 </View>
 `;
@@ -60,7 +60,7 @@ exports[`Storybook Decorator tests on iOS should render a Lateral Spacing Decora
     allowFontScaling={true}
     ellipsizeMode="tail"
   >
-    I'm in Storybook!
+    I am in Storybook!
   </Text>
 </View>
 `;
@@ -84,7 +84,7 @@ exports[`Storybook Decorator tests on iOS should render a White Background Decor
     allowFontScaling={true}
     ellipsizeMode="tail"
   >
-    I'm in Storybook!
+    I am in Storybook!
   </Text>
 </View>
 `;
