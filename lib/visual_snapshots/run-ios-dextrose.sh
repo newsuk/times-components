@@ -3,7 +3,7 @@ xcrun simctl boot 'iPhone 7'
 npx lerna run dextrose-clean
 npx lerna run dextrose-stories --since
 npm run fetch-fonts
-npx rnstl --searchDir ./packages --pattern './*/*.dextrose.tmp.js' --outputFile ./fructose/components.js
+npx rnstl --searchDir ./packages --pattern '**/*/*.stories!(web).dextrose.tmp.js' --outputFile ./fructose/components.js
 npx compile-tests -d fructose
 export CWD=$(pwd) 
 export FRC=$CWD/fructose 
