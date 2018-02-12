@@ -44,9 +44,9 @@ const makeHarness = ({
     runInitIfGlobalsPresent() {
       log(
         "runInitIfGlobalsPresent",
-        "window.scritpsProcessed",
+        "global scripts loaded:",
         window.scritpsProcessed,
-        "scriptUris.length",
+        "local scripts to load:",
         scriptUris.length
       );
       if (scriptUris.length === window.scritpsProcessed.length) {
@@ -69,14 +69,14 @@ const makeHarness = ({
 
     scriptLoaded(scriptId) {
       withCatch(() => {
-        log("scriptLoaded", scriptId);
+        log("script loaded:", scriptId);
         this.addProcessedScript(scriptId);
         this.runInitIfGlobalsPresent();
       });
     },
     scriptErrored(scriptId, canRequestFail, err) {
       withCatch(() => {
-        log("scriptErrored", scriptId);
+        log("script errored:", scriptId);
         this.addProcessedScript(scriptId);
         if (!canRequestFail) {
           throw new Error(`Failed to load the script ${err}`);
@@ -89,7 +89,7 @@ const makeHarness = ({
     scriptTimeout(scriptId) {
       withCatch(() => {
         log(
-          "scriptTimeout id:",
+          "script timeout id:",
           scriptId,
           "already processed:",
           this.isScriptProcessed(scriptId)
@@ -116,7 +116,7 @@ const makeHarness = ({
         // maybe with a different Ad component on the page
         let script = document.getElementById(scriptId);
         if (!script) {
-          log("create script", scriptId);
+          log("create script:", scriptId);
           script = document.createElement("script");
           script.id = scriptId;
           script.type = "text/javascript";
@@ -125,7 +125,7 @@ const makeHarness = ({
           document.head.appendChild(script);
         } else {
           // the script was already created, maybe from a different Ad component
-          log("this script was already created", scriptId);
+          log("this script was already created:", scriptId);
           this.runInitIfGlobalsPresent();
         }
         script.addEventListener("load", this.scriptLoaded.bind(this, scriptId));
@@ -144,6 +144,7 @@ const makeHarness = ({
 
     runInit() {
       withCatch(() => {
+        log("run init was already called:", initCalled);
         if (initCalled) {
           return;
         }
