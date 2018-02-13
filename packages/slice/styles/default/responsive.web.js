@@ -1,15 +1,15 @@
 import { StyleSheet } from "react-native";
 import config from "@times-components/article/styles/responsive-config";
 
-export const SliceContainerStyles = {
+export const SliceContainerStyles = () => ({
   mediumUp: () => `
     border-style: solid;
     border-bottom-color: #dbdbdb;
     border-bottom-width: ${StyleSheet.hairlineWidth}px;
   `
-};
+});
 
-export const ChildrenContainerStyles = {
+export const ChildrenContainerStyles = childCount => ({
   base: () => `
     display: flex;
     flex-direction: column;
@@ -18,11 +18,11 @@ export const ChildrenContainerStyles = {
   mediumUp: () => `
     flex-direction: row;
     margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-    width: ${config.mediumBpWidth};
+    padding-left: ${childCount === 5 ? "10px" : 0};
+    padding-right: ${childCount === 5 ? "10px" : 0};
+    width: ${childCount === 5 ? "auto" : config.mediumBpWidth};
   `,
   wideUp: () => `
-    width: ${config.wideBpWidth};
+    width: ${childCount === 5 ? "auto" : config.wideBpWidth};
   `
-};
+});

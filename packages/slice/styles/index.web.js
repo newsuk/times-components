@@ -6,9 +6,10 @@ const templateStyles = {
   defaultStyles
 };
 
-export default (template, componentName) => {
+export default (template, componentName, childCount) => {
   const stylesObjectName = `${template}Styles`;
   const componentStylesName = `${componentName}Styles`;
   const styleObject = templateStyles[stylesObjectName][componentStylesName];
-  return withResponsiveStyles(View, styleObject);
+  const obj = styleObject(childCount);
+  return withResponsiveStyles(View, obj);
 };
