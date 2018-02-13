@@ -1,5 +1,5 @@
 import React from "react";
-import { storiesOf } from "dextrose/storiesOfOverloader";
+import { storiesOf } from "@storybook/react-native";
 import BrightcoveVideo from "./brightcove-video";
 
 const policyKey =

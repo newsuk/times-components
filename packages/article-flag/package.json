@@ -11,8 +11,8 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "dextrose-stories": "dextrose-stories",
-    "dextrose-clean": "dextrose-clean"
+    "dextrose-stories": "dextrose gs $(PWD)",
+    "dextrose-clean": "dextrose cs $(PWD)"
   },
   "repository": {
     "type": "git",
@@ -35,7 +35,7 @@
     "@storybook/react-native": "3.3.11",
     "@times-components/eslint-config-thetimes": "0.1.3",
     "@times-components/jest-configurator": "0.0.23",
-    "dextrose": "1.4.0",
+    "dextrose": "1.4.5",
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",

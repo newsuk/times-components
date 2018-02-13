@@ -11,8 +11,8 @@
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "dextrose-stories": "dextrose-stories",
-    "dextrose-clean": "dextrose-clean"
+    "dextrose-stories": "dextrose gs $(PWD)",
+    "dextrose-clean": "dextrose cs $(PWD)"
   },
   "repository": {
     "type": "git",
@@ -40,7 +40,7 @@
     "@times-components/tealium": "0.2.0",
     "@times-components/utils": "0.3.0",
     "apollo-utilities": "1.0.4",
-    "dextrose": "1.4.0",
+    "dextrose": "1.4.5",
     "enzyme": "3.3.0",
     "enzyme-to-json": "3.3.0",
     "eslint": "4.9.0",

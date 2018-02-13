@@ -2,7 +2,7 @@
 import React from "react";
 import { Text, ScrollView, View } from "react-native";
 import { action } from "@storybook/addon-actions";
-import { storiesOf } from "dextrose/storiesOfOverloader";
+import { storiesOf } from "@storybook/react-native";
 import stateful from "react-stateful-fn";
 
 import Ad, { AdComposer } from "./ad";

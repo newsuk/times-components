@@ -130,7 +130,7 @@ declare module "dextrose/src/web-snapper.test" {
   declare module.exports: any;
 }
 
-declare module "dextrose/storiesOfOverloader" {
+declare module "@storybook/react-native" {
   declare module.exports: any;
 }
 
@@ -222,6 +222,6 @@ declare module "dextrose/src/web-snapper.js" {
 declare module "dextrose/src/web-snapper.test.js" {
   declare module.exports: $Exports<"dextrose/src/web-snapper.test">;
 }
-declare module "dextrose/storiesOfOverloader.js" {
-  declare module.exports: $Exports<"dextrose/storiesOfOverloader">;
+declare module "@storybook/react-native.js" {
+  declare module.exports: $Exports<"@storybook/react-native">;
 }

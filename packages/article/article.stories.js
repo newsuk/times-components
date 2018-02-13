@@ -1,5 +1,5 @@
 /* eslint-env browser */
-import { storiesOf } from "dextrose/storiesOfOverloader";
+import { storiesOf } from "@storybook/react-native";
 import React from "react";
 import { Platform } from "react-native";
 import { addTypenameToDocument } from "apollo-utilities";
