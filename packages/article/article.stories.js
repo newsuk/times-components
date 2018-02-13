@@ -41,6 +41,9 @@ const adConfig = {
   pageTargeting: {
     title: "Title",
     label: "Label"
+  },
+  slotTargeting: {
+    path: "/news"
   }
 };
 

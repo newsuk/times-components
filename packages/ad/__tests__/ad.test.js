@@ -20,9 +20,7 @@ describe("Ad", () => {
     adUnit: "mock-ad-unit",
     networkId: "mock-network-id",
     section: "mock-section",
-    code: "mock-code",
-    baseUrl: "https://mock-url.com/",
-    pos: "mock-pos"
+    baseUrl: "https://mock-url.com/"
   };
 
   afterEach(() => {
@@ -37,17 +35,17 @@ describe("Ad", () => {
     });
     renderer.create(
       <AdComposer>
-        <Ad {...adProps} code="ad-header" />
+        <Ad {...adProps} pos="header" />
       </AdComposer>
     );
     renderer.create(
       <AdComposer>
-        <Ad {...adProps} code="ad-pixel" />
+        <Ad {...adProps} pos="pixel" />
       </AdComposer>
     );
     renderer.create(
       <AdComposer>
-        <Ad {...adProps} code="ad-unknown-code" />
+        <Ad {...adProps} pos="ad-unknown-code" />
       </AdComposer>
     );
   });
@@ -56,7 +54,7 @@ describe("Ad", () => {
     const tree = renderer
       .create(
         <AdComposer>
-          <Ad {...adProps} code="ad-header" />
+          <Ad {...adProps} pos="header" />
         </AdComposer>
       )
       .toJSON();
@@ -69,8 +67,8 @@ describe("Ad", () => {
       .create(
         <AdComposer>
           <div>
-            <Ad {...adProps} code="ad-header" />
-            <Ad {...adProps} code="intervention" />
+            <Ad {...adProps} pos="header" />
+            <Ad {...adProps} pos="intervention" />
           </div>
         </AdComposer>
       )

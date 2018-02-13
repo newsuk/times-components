@@ -20,6 +20,9 @@ module.exports = () => {
     adUnit: "mockAdUnit",
     pageTargeting: {
       title: "Title"
+    },
+    slotTargeting: {
+      path: "/news"
     }
   };
 
