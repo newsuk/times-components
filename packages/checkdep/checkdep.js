@@ -13,7 +13,7 @@ function suggestFix(packageJson = {}, fixupMap) {
     Object.entries(dep || {})
       .map(([key, value]) => [key, fixupMap[key], value])
       .filter(x => x[1])
-      .filter(x => x[1] != x[2])
+      .filter(x => x[1] !== x[2])
       .map(([name, ver]) => ({ [name]: ver }))
       .reduce((a, b) => ({ ...a, ...b }), {});
 
@@ -67,7 +67,7 @@ export default async function checkdep(expr, strategy) {
     );
 
   const flatReverseLookup = list
-    .map(p => [p[2] + "@" + p[3], p[0] + "@" + p[1]])
+    .map(p => [`${p[2]}@${p[3]}`, `${p[0]}@${p[1]}`])
     .reduce(
       (a, [target, pack]) =>
         Object.assign(a, {
@@ -89,7 +89,7 @@ export default async function checkdep(expr, strategy) {
       [c[0]]: [...c[1]].map(p => ({
         name: c[0],
         version: p,
-        usedBy: [...flatReverseLookup[c[0] + "@" + p]]
+        usedBy: [...flatReverseLookup[`${c[0]}@${p}`]]
       }))
     }))
     .reduce((a, b) => Object.assign(a, b), {});
@@ -103,10 +103,10 @@ export default async function checkdep(expr, strategy) {
   const wrong = packagesList.map(p => p[1]).flatMap(p =>
     Object.entries(p.dependencies || {})
       .map(([k, v]) => [p.name, k, v, packageMap[k]])
-      .filter(x => x[3] && x[2] != x[3])
-      .map(([usedBy, p, installs, expected]) => ({
+      .filter(x => x[3] && x[2] !== x[3])
+      .map(([usedBy, packageName, installs, expected]) => ({
         usedBy,
-        package: p,
+        package: packageName,
         installs,
         expected
       }))
