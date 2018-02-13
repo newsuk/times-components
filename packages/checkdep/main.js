@@ -6,6 +6,12 @@ import checkdep from "./checkdep";
 import * as strategies from "./strategies";
 import { argv } from './cli-options';
 
+function prettifyHint([name, current, target]) {
+  return ` ${chalk.blue(name)}: ${chalk.red(current)} -> ${chalk.green(
+    target
+  )}`
+}
+
 checkdep(argv.expr, argv.strategy ? strategies[argv.strategy] : null)
   .then(({ fixupMap, suggestions, fixedPackages, all }) => {
     if (argv.list) {
@@ -33,12 +39,7 @@ checkdep(argv.expr, argv.strategy ? strategies[argv.strategy] : null)
         console.log(path);
         console.log(
           suggestionList
-            .map(
-              ([name, current, target]) =>
-                ` ${chalk.blue(name)}: ${chalk.red(current)} -> ${chalk.green(
-                  target
-                )}`
-            )
+            .map(prettifyHint)
             .join("\n")
         );
       });
