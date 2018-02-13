@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.17.3"></a>
+## [0.17.3](https://github.com/newsuk/times-components/compare/@times-components/card@0.17.2...@times-components/card@0.17.3) (2018-02-13)
+
+
+### Bug Fixes
+
+* storybook versions for web ([#641](https://github.com/newsuk/times-components/issues/641)) ([768c51d](https://github.com/newsuk/times-components/commit/768c51d))
+
+
+
+
 <a name="0.17.2"></a>
 ## [0.17.2](https://github.com/newsuk/times-components/compare/@times-components/card@0.17.1...@times-components/card@0.17.2) (2018-02-09)
 
