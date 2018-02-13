@@ -6,7 +6,7 @@ export default function getPackages(expr) {
     glob(expr, (error, paths) => {
       if (error) return reject(error);
       return done(
-        paths.map(p=>readJson(p))
+        paths.map(p=>readJson(p).then(json=> [p, json]))
       );
     });
   }).then(files => Promise.all(files));
