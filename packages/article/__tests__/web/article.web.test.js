@@ -13,6 +13,9 @@ describe("Article test on web", () => {
     adUnit: "mockAdUnit",
     pageTargeting: {
       title: "Title"
+    },
+    slotTargeting: {
+      path: "/news"
     }
   };
 

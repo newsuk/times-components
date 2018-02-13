@@ -300,8 +300,7 @@ exports[`Markup Native renders multiple paragraphs with ads 1`] = `
     This is the text for paragraph two
   </Text>
   <Ad
-    code="intervention"
-    pos="ad-header"
+    pos="inline-ad"
     section="article"
     style={
       Object {

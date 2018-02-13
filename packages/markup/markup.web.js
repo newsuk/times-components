@@ -31,7 +31,7 @@ const defaultRenderers = {
     return <span key={key}>{renderedChildren}</span>;
   },
   ad(key) {
-    return <Ad key={key} code="intervention" style={styles.ad} />;
+    return <Ad key={key} pos="intervention" style={styles.ad} />;
   },
   break(key) {
     return <br key={key} />;

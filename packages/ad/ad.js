@@ -7,7 +7,6 @@ import Placeholder from "./placeholder";
 import DOMContext from "./dom-context";
 import adInit from "./ad-init";
 import AdComposer from "./ad-composer";
-import slotOptions from "./fixtures/slot-options.json";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 
@@ -21,7 +20,7 @@ class Ad extends Component {
   constructor(props) {
     super(props);
     const { width } = Dimensions.get("window");
-    this.config = getSlotConfig(props.section, props.code, width);
+    this.config = getSlotConfig(props.section, props.pos, width);
 
     this.state = {
       adReady: false
@@ -37,14 +36,15 @@ class Ad extends Component {
   renderAd(adConfig) {
     const data = {
       config: this.config,
-      code: this.props.code,
+      pos: this.props.pos,
       networkId: adConfig.networkId,
       adUnit: adConfig.adUnit,
       section: this.props.section,
-      pos: this.props.pos,
-      sizingMap: getSizeMaps(this.props.code),
+      sizingMap: getSizeMaps(this.props.pos),
       pageTargeting: adConfig.pageTargeting,
-      slotOptions: { ...slotOptions, pos: this.props.pos }
+      slotTargeting: Object.assign(adConfig.slotTargeting, {
+        pos: this.props.pos
+      })
     };
 
     const sizeProps = !this.state.adReady
@@ -91,9 +91,8 @@ class Ad extends Component {
 Ad.propTypes = {
   networkId: PropTypes.string,
   adUnit: PropTypes.string,
-  code: PropTypes.string.isRequired,
+  pos: PropTypes.string.isRequired,
   section: PropTypes.string,
-  pos: PropTypes.string,
   baseUrl: PropTypes.string,
   style: ViewPropTypesStyle
 };
@@ -104,7 +103,6 @@ Ad.defaultProps = {
   networkId: "25436805",
   adUnit: "d.thetimes.co.uk",
   section: "article",
-  pos: "article-ad",
   baseUrl: "https://www.thetimes.co.uk/",
   style: null
 };

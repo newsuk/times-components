@@ -16,14 +16,14 @@ const getMaxSizes = adSizes => {
   );
 };
 
-const getSizeMaps = code => {
-  switch (code) {
-    case "ad-header":
+const getSizeMaps = pos => {
+  switch (pos) {
+    case "header":
       return sizes.header;
-    case "ad-pixel":
-    case "ad-pixelskin":
-    case "ad-pixelteads":
-    case "ad-article-sponsored":
+    case "pixel":
+    case "pixelskin":
+    case "pixelteads":
+    case "article-sponsored-ad":
       return sizes.pixel;
     default:
       return sizes.intervention;
@@ -31,8 +31,8 @@ const getSizeMaps = code => {
 };
 
 // Returns the valid ad sizes given the ad code and window width
-const getAdSizes = (code, width) => {
-  const sizeMap = getSizeMaps(code);
+const getAdSizes = (pos, width) => {
+  const sizeMap = getSizeMaps(pos);
   for (let i = sizeMap.length - 1; i > 0; i -= 1) {
     if (width > sizeMap[i].width) {
       return sizeMap[i].sizes;
@@ -41,13 +41,13 @@ const getAdSizes = (code, width) => {
   return [];
 };
 
-const getSlotConfig = (section, code, width) => {
-  const adSizes = getAdSizes(code, width);
-  const mappings = getSizeMaps(code);
+const getSlotConfig = (section, pos, width) => {
+  const adSizes = getAdSizes(pos, width);
+  const mappings = getSizeMaps(pos);
   const maxSizes = getMaxSizes(adSizes);
 
   return {
-    code,
+    pos,
     sizes: adSizes,
     maxSizes,
     mappings
