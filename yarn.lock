@@ -79,7 +79,7 @@
     react-addons-create-fragment "^15.5.3"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-links@^3.3.11":
+"@storybook/addon-links@3.3.11", "@storybook/addon-links@^3.3.11":
   version "3.3.11"
   resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-3.3.11.tgz#7bc57baddd1502153ee94cf11fcb88d49131b211"
   dependencies:
@@ -91,7 +91,7 @@
   version "3.3.11"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-3.3.11.tgz#7f85136d6da785160658aee512fd3cac99780f42"
 
-"@storybook/channel-postmessage@^3.3.11":
+"@storybook/channel-postmessage@3.3.11", "@storybook/channel-postmessage@^3.3.11":
   version "3.3.11"
   resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-3.3.11.tgz#a379f96f7819ba3752bb471ebf90ad07c3fc28ea"
   dependencies:
@@ -99,22 +99,22 @@
     global "^4.3.2"
     json-stringify-safe "^5.0.1"
 
-"@storybook/channel-websocket@^3.3.11":
+"@storybook/channel-websocket@3.3.11", "@storybook/channel-websocket@^3.3.11":
   version "3.3.11"
   resolved "https://registry.yarnpkg.com/@storybook/channel-websocket/-/channel-websocket-3.3.11.tgz#a82171946b15efafa6a53af4cc53b08e6548debb"
   dependencies:
     "@storybook/channels" "^3.3.11"
     global "^4.3.2"
 
-"@storybook/channels@^3.3.11":
+"@storybook/channels@3.3.11", "@storybook/channels@^3.3.11":
   version "3.3.11"
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-3.3.11.tgz#569f1c7c364aeb076df78eb829c58f9c9f0a3936"
 
-"@storybook/client-logger@^3.3.11":
+"@storybook/client-logger@3.3.11", "@storybook/client-logger@^3.3.11":
   version "3.3.11"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-3.3.11.tgz#35c851dbed2067201189847c7aa92f8d567a4d61"
 
-"@storybook/components@^3.3.11":
+"@storybook/components@3.3.11", "@storybook/components@^3.3.11":
   version "3.3.11"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-3.3.11.tgz#cb2a48b52e7cb45408172f4462f4730ca6970e78"
   dependencies:
@@ -130,7 +130,7 @@
     "@storybook/react-simple-di" "^1.2.1"
     babel-runtime "6.x.x"
 
-"@storybook/node-logger@^3.3.11":
+"@storybook/node-logger@3.3.11", "@storybook/node-logger@^3.3.11":
   version "3.3.11"
   resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-3.3.11.tgz#e459cbf8da75e2671a08de4f6dfe32b556b20af6"
   dependencies:
@@ -275,7 +275,7 @@
     webpack-dev-middleware "^1.12.2"
     webpack-hot-middleware "^2.21.0"
 
-"@storybook/ui@^3.3.11":
+"@storybook/ui@3.3.11", "@storybook/ui@^3.3.11":
   version "3.3.11"
   resolved "https://registry.yarnpkg.com/@storybook/ui/-/ui-3.3.11.tgz#df500b97739da484d51d6a1bcb52ce3866ad2148"
   dependencies:
@@ -302,14 +302,6 @@
     react-split-pane "^0.1.74"
     react-treebeard "^2.1.0"
     redux "^3.7.2"
-
-"@times-components/ad@0.6.16":
-  version "0.6.16"
-  resolved "https://registry.yarnpkg.com/@times-components/ad/-/ad-0.6.16.tgz#7058f8578273c1af57c07fa88c4d7c4ea84ce4bc"
-  dependencies:
-    "@times-components/watermark" "0.2.16"
-    prop-types "15.6.0"
-    react-broadcast "0.5.2"
 
 "@times-components/ad@0.7.1":
   version "0.7.1"
@@ -406,13 +398,6 @@
     prop-types "15.6.0"
     react-native-linear-gradient "2.3.0"
 
-"@times-components/icons@0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@times-components/icons/-/icons-0.1.6.tgz#59d4069bcf7f3813e095bf555508a9329bf1f86d"
-  dependencies:
-    prop-types "15.6.0"
-    svgs "3.1.1"
-
 "@times-components/image@1.13.8":
   version "1.13.8"
   resolved "https://registry.yarnpkg.com/@times-components/image/-/image-1.13.8.tgz#a93d5fcba45c2aff9851e6a484a38a9b89682bb2"
@@ -424,22 +409,6 @@
     react-native-svg "5.5.0"
     svgs "3.1.1"
 
-"@times-components/link@0.13.16":
-  version "0.13.16"
-  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-0.13.16.tgz#dc4d25ee831631b7af971e116821d55760ae782b"
-  dependencies:
-    "@times-components/responsive-styles" "0.2.15"
-    lodash.pick "4.4.0"
-    prop-types "15.6.0"
-
-"@times-components/markup@0.16.7":
-  version "0.16.7"
-  resolved "https://registry.yarnpkg.com/@times-components/markup/-/markup-0.16.7.tgz#2beec508f02aaeec98cdf8bc307a76af3cfcffa9"
-  dependencies:
-    "@times-components/ad" "0.6.16"
-    "@times-components/pull-quote" "0.2.7"
-    prop-types "15.6.0"
-
 "@times-components/markup@0.17.1":
   version "0.17.1"
   resolved "https://registry.yarnpkg.com/@times-components/markup/-/markup-0.17.1.tgz#8ee3ee1eb0384d464ea2c9443f4d4b57352cdfee"
@@ -447,21 +416,6 @@
     "@times-components/ad" "0.7.1"
     "@times-components/pull-quote" "0.2.8"
     prop-types "15.6.0"
-
-"@times-components/pull-quote@0.2.7":
-  version "0.2.7"
-  resolved "https://registry.yarnpkg.com/@times-components/pull-quote/-/pull-quote-0.2.7.tgz#415f8c3e29090366980829042aae094ea2bb8270"
-  dependencies:
-    "@times-components/icons" "0.1.6"
-    "@times-components/link" "0.13.16"
-    prop-types "15.6.0"
-
-"@times-components/responsive-styles@0.2.15":
-  version "0.2.15"
-  resolved "https://registry.yarnpkg.com/@times-components/responsive-styles/-/responsive-styles-0.2.15.tgz#fe4249a2287cf30a2700844ff0f8df0602340d47"
-  dependencies:
-    prop-types "15.6.0"
-    styled-components "2.2.3"
 
 "@times-components/tracking@0.6.12":
   version "0.6.12"
@@ -471,14 +425,6 @@
     lodash.get "4.4.2"
     prop-types "15.6.0"
     react-display-name "0.2.3"
-
-"@times-components/watermark@0.2.16":
-  version "0.2.16"
-  resolved "https://registry.yarnpkg.com/@times-components/watermark/-/watermark-0.2.16.tgz#1df61e7a1cc0f3f66b33ce8bc6bbd47bf665d443"
-  dependencies:
-    prop-types "15.6.0"
-    react-native-svg "5.5.0"
-    svgs "3.1.1"
 
 "@times-components/watermark@0.2.17":
   version "0.2.17"
