@@ -4,7 +4,7 @@ const chalk = require("chalk");
 const yargs = require("optimist");
 const checkdep = require("./checkdep").default;
 const strategies = require("./strategies");
-const { writeJson } = require('fs-extra');
+const { writeJson } = require("fs-extra");
 
 const argv = yargs
   .option("expr", "glob expression that finds package.json files")
@@ -34,37 +34,40 @@ const argv = yargs
   }).argv;
 
 checkdep(argv.expr, argv.strategy ? strategies[argv.strategy] : null)
-  .then( ({fixupMap, suggestions, fixedPackages, all}) => {
-
+  .then(({ fixupMap, suggestions, fixedPackages, all }) => {
     if (argv.list) {
       Object.entries(all)
-        .map( ([name, versions]) => [name, [...versions]] )
-        .forEach( ([name, versions]) => {
-          const color = (versions.length>1 && !fixupMap[name])
-            ? chalk.red
-            : (!fixupMap[name])
-              ? chalk.green
-              : chalk.yellow;
+        .map(([name, versions]) => [name, [...versions]])
+        .forEach(([name, versions]) => {
+          const color =
+            versions.length > 1 && !fixupMap[name]
+              ? chalk.red
+              : !fixupMap[name] ? chalk.green : chalk.yellow;
 
-          console.log(name, color(versions.join(' ')));
-      });
+          console.log(name, color(versions.join(" ")));
+        });
     }
-
 
     if (argv.showRules) {
       console.log(fixupMap);
     }
 
     if (argv.hint || argv.fix) {
-      suggestions.forEach(
-        ([path, suggestions]) => {
-
-        console.log(path)
+      suggestions.forEach(([path, suggestions]) => {
+        console.log(path);
         console.log(
-          suggestions.map(
-            ([name, current, target]) =>
-              " "+ chalk.blue(name) + ": "+ chalk.red(current) + " -> "+ chalk.green(target)
-          ).join('\n'))
+          suggestions
+            .map(
+              ([name, current, target]) =>
+                " " +
+                chalk.blue(name) +
+                ": " +
+                chalk.red(current) +
+                " -> " +
+                chalk.green(target)
+            )
+            .join("\n")
+        );
       });
     }
 
@@ -77,8 +80,6 @@ checkdep(argv.expr, argv.strategy ? strategies[argv.strategy] : null)
         fixedPackages.map(([path, json]) => writeJson(path, json))
       );
     }
-
-
   })
   .catch(e => {
     console.log(e.toString());
