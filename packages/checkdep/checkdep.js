@@ -5,15 +5,60 @@ function resolveConflicts(strategy, packages) {
   return packages.sort(strategy)[0];
 }
 
-export default async function checkdep(expr) {
+function suggestFix(packageJson = {}, fixupMap) {
+  const fixup = dep => Object
+    .entries(dep||{}).map( ([key, value]) => [key, fixupMap[key], value])
+    .filter(x => x[1])
+    .filter(x => x[1] != x[2])
+    .map( ([name, ver]) => ({[name]: ver}))
+    .reduce((a,b) => ({...a, ...b}), {});
+
+  const count = o => Object.keys(o).length;
+
+  const dependencies = fixup(packageJson.dependencies);
+  const devDependencies = fixup(packageJson.devDependencies);
+
+  if( !count(dependencies) && !count(devDependencies) )
+    return null;
+
+  return {
+    dependencies,
+    devDependencies
+  };
+}
+
+function applyFix(packageJson, {dependencies, devDependencies}) {
+  return {
+    ...packageJson,
+    dependencies: {
+      ...packageJson.dependencies,
+      ...dependencies
+    },
+    devDependencies: {
+      ...packageJson.devDependencies,
+      ...devDependencies
+    }
+  };
+}
+
+export default async function checkdep(expr, strategyName) {
+
+  const usedStrategy = strategy[strategyName];
+
+  if (!usedStrategy)
+    throw new Error("strategy " + strategyName +" not available");
+
+
   const packagesList = await getPackages(expr);
 
   const packageMap = packagesList
+    .map(p => p[1])
     .map(p => [p.name, p.version])
     .map(([name, version]) => ({ [name]: version }))
     .reduce((a, b) => Object.assign(a, b), {});
 
   const list = packagesList
+    .map(p => p[1])
     .map(p => [
       p.name,
       p.version,
@@ -60,7 +105,9 @@ export default async function checkdep(expr) {
     strategy.majorityProgressive, c
   ));
 
-  const wrong = packagesList.flatMap(p =>
+  const wrong = packagesList
+    .map(p => p[1])
+    .flatMap(p =>
     Object.entries(p.dependencies || {})
       .map(([k, v]) => [p.name, k, v, packageMap[k]])
       .filter(x => x[3] && x[3] != x[2])
@@ -72,14 +119,30 @@ export default async function checkdep(expr) {
       }))
   );
 
-
-
   const fixupMap = [].concat(
     fixed.map(w => ({[w.name] : w.version})),
     wrong.map(w => ({[w.package] : w.expected}))
   ).reduce( (a,b) => ({...a, ...b}), {});
 
+  const todo = packagesList
+    .map( ([path, json]) => [path, json, suggestFix(json, fixupMap)] )
+    .filter( x=> x[2]);
+
+  const fixedPackages = todo
+    .map( ([path, json, fix]) => [path, applyFix(json, fix)]);
+
+  const suggestions = todo.map(
+    ([path, json, fix]) => [path, [].concat(
+        Object.entries(fix.dependencies)
+          .map( ([name, version]) => [name, json.dependencies[name], version] )
+          .filter(x => x[1]),
+        Object.entries(fix.devDependencies)
+          .map( ([name, version]) => [name, json.devDependencies[name], version] )
+          .filter(x => x[1])
+      )]
+  )
 
 
-  return {divergent, wrong, fixed, fixupMap};
+
+  return {all: depMap, divergent, wrong, fixupMap, suggestions, fixedPackages};
 }
