@@ -45,7 +45,7 @@ checkdep(argv.expr, argv.strategy ? strategies[argv.strategy] : null)
               return chalk.red;
             }
 
-            return (!fixupMap[name]) ? chalk.green : chalk.yellow;
+            return !fixupMap[name] ? chalk.green : chalk.yellow;
           })();
 
           console.log(name, color(versions.join(" ")));
