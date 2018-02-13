@@ -46,7 +46,9 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "babel-register": "6.26.0",
     "eslint": "4.9.0",
+    "fs-extra": "5.0.0",
     "jest": "21.2.1",
     "prettier": "1.8.2"
   },
