@@ -6,9 +6,23 @@ import ResponsiveHeadline from "./styles/responsive";
 
 const ArticleSummaryHeadline = ({ headline, hasResponsiveHeadline }) =>
   hasResponsiveHeadline ? (
-    <ResponsiveHeadline accessible accessibilityRole="heading" aria-level={3} style={styles.headline}>{headline}</ResponsiveHeadline>
+    <ResponsiveHeadline
+      accessible
+      accessibilityRole="heading"
+      aria-level={3}
+      style={styles.headline}
+    >
+      {headline}
+    </ResponsiveHeadline>
   ) : (
-    <Text accessible accessibilityRole="heading" aria-level={3} style={{ ...styles.default, ...styles.headline }}>{headline}</Text>
+    <Text
+      accessible
+      accessibilityRole="heading"
+      aria-level={3}
+      style={{ ...styles.default, ...styles.headline }}
+    >
+      {headline}
+    </Text>
   );
 
 ArticleSummaryHeadline.propTypes = {

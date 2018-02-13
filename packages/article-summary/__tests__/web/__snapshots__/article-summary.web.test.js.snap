@@ -18,16 +18,23 @@ exports[`Article Summary test on Web renders an article-summary component with a
     CAMILLA LONG
   </div>
   <h3
+    aria-level={3}
+    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+    dir="auto"
+    role="heading"
     style={
       Object {
-        "color": "#333333",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
         "lineHeight": "25px",
-        "margin": "0 0 5px",
+        "marginBottom": "0 0 5px",
+        "marginLeft": "0 0 5px",
+        "marginRight": "0 0 5px",
+        "marginTop": "0 0 5px",
       }
     }
+    tabIndex="0"
   >
     Top medal for forces dog who took a bite out of the Taliban
   </h3>
@@ -117,16 +124,23 @@ exports[`Article Summary test on Web renders an article-summary component with c
     CAMILLA LONG
   </div>
   <h3
+    aria-level={3}
+    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+    dir="auto"
+    role="heading"
     style={
       Object {
-        "color": "#333333",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
         "lineHeight": "25px",
-        "margin": "0 0 5px",
+        "marginBottom": "0 0 5px",
+        "marginLeft": "0 0 5px",
+        "marginRight": "0 0 5px",
+        "marginTop": "0 0 5px",
       }
     }
+    tabIndex="0"
   >
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
   </h3>
@@ -242,16 +256,23 @@ exports[`Article Summary test on Web renders an article-summary component with e
     CAMILLA LONG
   </div>
   <h3
+    aria-level={3}
+    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+    dir="auto"
+    role="heading"
     style={
       Object {
-        "color": "#333333",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
         "lineHeight": "25px",
-        "margin": "0 0 5px",
+        "marginBottom": "0 0 5px",
+        "marginLeft": "0 0 5px",
+        "marginRight": "0 0 5px",
+        "marginTop": "0 0 5px",
       }
     }
+    tabIndex="0"
   >
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
   </h3>
@@ -354,16 +375,23 @@ exports[`Article Summary test on Web renders an article-summary component with h
     CAMILLA LONG
   </div>
   <h3
+    aria-level={3}
+    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+    dir="auto"
+    role="heading"
     style={
       Object {
-        "color": "#333333",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
         "lineHeight": "25px",
-        "margin": "0 0 5px",
+        "marginBottom": "0 0 5px",
+        "marginLeft": "0 0 5px",
+        "marginRight": "0 0 5px",
+        "marginTop": "0 0 5px",
       }
     }
+    tabIndex="0"
   >
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
   </h3>
@@ -406,16 +434,23 @@ exports[`Article Summary test on Web renders an article-summary component with m
   className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
   <h3
+    aria-level={3}
+    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+    dir="auto"
+    role="heading"
     style={
       Object {
-        "color": "#333333",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
         "lineHeight": "25px",
-        "margin": "0 0 5px",
+        "marginBottom": "0 0 5px",
+        "marginLeft": "0 0 5px",
+        "marginRight": "0 0 5px",
+        "marginTop": "0 0 5px",
       }
     }
+    tabIndex="0"
   >
     Top medal for forces dog who took a bite out of the Taliban
   </h3>
@@ -499,16 +534,23 @@ exports[`Article Summary test on Web renders an article-summary component with n
   className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
   <h3
+    aria-level={3}
+    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+    dir="auto"
+    role="heading"
     style={
       Object {
-        "color": "#333333",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
         "lineHeight": "25px",
-        "margin": "0 0 5px",
+        "marginBottom": "0 0 5px",
+        "marginLeft": "0 0 5px",
+        "marginRight": "0 0 5px",
+        "marginTop": "0 0 5px",
       }
     }
+    tabIndex="0"
   >
     Top medal for forces dog who took a bite out of the Taliban
   </h3>
@@ -560,16 +602,23 @@ exports[`Article Summary test on Web renders an article-summary component with n
   className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
   <h3
+    aria-level={3}
+    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+    dir="auto"
+    role="heading"
     style={
       Object {
-        "color": "#333333",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
         "lineHeight": "25px",
-        "margin": "0 0 5px",
+        "marginBottom": "0 0 5px",
+        "marginLeft": "0 0 5px",
+        "marginRight": "0 0 5px",
+        "marginTop": "0 0 5px",
       }
     }
+    tabIndex="0"
   >
     Top medal for forces dog who took a bite out of the Taliban
   </h3>
