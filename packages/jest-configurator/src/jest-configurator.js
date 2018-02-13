@@ -24,6 +24,23 @@ const webSpecific = {
   moduleFileExtensions: ["web.js", "js", "json"]
 };
 
+const platformIndependentSpecific = {
+  moduleFileExtensions: ["js", "json"]
+};
+
+const platformCode = platform => {
+  switch (platform) {
+    case "web":
+      return webSpecific;
+    case "ios":
+      return nativeSpecific("ios");
+    case "android":
+      return nativeSpecific("android");
+    default:
+      return platformIndependentSpecific;
+  }
+};
+
 export default (
   platform: Platform,
   cwd: string,
@@ -38,7 +55,7 @@ export default (
 
   return {
     preset: "react-native",
-    ...(platform === "web" ? webSpecific : nativeSpecific(platform)),
+    ...platformCode(platform),
     rootDir,
     transformIgnorePatterns: [
       "node_modules/(?!(react-native|react-native-linear-gradient|@times-components)/)"
