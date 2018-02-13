@@ -1,3 +1,8 @@
+import {
+  delay,
+  advance,
+  delayAndAdvance
+} from "@times-components/utils/faketime";
 import TealiumSendScheduler from "../tealium-send-scheduler";
 
 module.exports = () => {
@@ -151,30 +156,29 @@ module.exports = () => {
         );
       });
 
-      it("does not schedule multiple sends", () => {
+      it("does not schedule multiple sends", async () => {
         global.window.requestIdleCallback = jest.fn();
 
         setup();
 
         sendScheduler.enqueue();
 
+        await delayAndAdvance(1000);
         expect(global.window.requestIdleCallback).toHaveBeenCalledTimes(1);
       });
 
-      it("sends events", done => {
+      it("sends events", async () => {
         setup();
 
         const e = { component: "Page" };
 
         sendScheduler.enqueue(e);
 
-        global.window.setTimeout(() => {
-          expect(global.window.tealiumTrack).toHaveBeenCalledWith(e);
-          done();
-        }, 0);
+        await delayAndAdvance(1000);
+        expect(global.window.tealiumTrack).toHaveBeenCalledWith(e);
       });
 
-      it("schedules sending events using timeout when idle callback is not available", done => {
+      it("schedules sending events using timeout when idle callback is not available", async () => {
         if (global.window.requestIdleCallback) {
           delete global.window.requestIdleCallback;
         }
@@ -184,13 +188,11 @@ module.exports = () => {
 
         expect(spy).toHaveBeenCalled();
 
-        global.window.setTimeout(() => {
-          expect(global.window.tealiumTrack).not.toHaveBeenCalled();
-          done();
-        }, 0);
+        await delayAndAdvance(1000);
+        expect(global.window.tealiumTrack).not.toHaveBeenCalled();
       });
 
-      it("sends multiple events", done => {
+      it("sends multiple events", async () => {
         setup();
 
         const e1 = { component: "Page1" };
@@ -199,33 +201,29 @@ module.exports = () => {
         sendScheduler.enqueue(e1);
         sendScheduler.enqueue(e2);
 
-        global.window.setTimeout(() => {
-          expect(global.window.tealiumTrack).toHaveBeenCalledTimes(2);
-          done();
-        }, 0);
+        await delayAndAdvance(1000);
+        expect(global.window.tealiumTrack).toHaveBeenCalledTimes(2);
       });
 
-      it("does not throw if tealium track is not a function", done => {
+      it("does not throw if tealium track is not a function", async () => {
         setup();
 
         global.window.tealiumTrack = null;
 
         sendScheduler.enqueue();
 
-        global.window.setTimeout(done, 0);
+        await delayAndAdvance(1000);
       });
 
-      it("sends more events if they cannot be sent in time", done => {
+      it("sends more events if they cannot be sent in time", async () => {
         setup();
+        const timer = delay(2 * 60 * 1000);
 
         const e1 = { component: "Page1" };
         const e2 = { component: "Page2" };
 
         global.window.tealiumTrack = () => {
-          let count = 100000000;
-          while (count) {
-            count -= 1;
-          }
+          advance(1 * 60 * 1000);
         };
 
         jest.spyOn(global.window, "tealiumTrack");
@@ -233,10 +231,9 @@ module.exports = () => {
         sendScheduler.enqueue(e1);
         sendScheduler.enqueue(e2);
 
-        global.window.setTimeout(() => {
-          expect(global.window.tealiumTrack).toHaveBeenCalledTimes(2);
-          done();
-        }, 1000);
+        await delayAndAdvance(0);
+        await timer;
+        expect(global.window.tealiumTrack).toHaveBeenCalledTimes(2);
       });
     });
   });
