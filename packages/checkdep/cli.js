@@ -1,12 +1,13 @@
+/* eslint-disable no-console */
 require("babel-register");
 require("babel-polyfill");
 const chalk = require("chalk");
 const yargs = require("optimist");
-const checkdep = require("./checkdep").default;
+const { default: checkdep } = require("./checkdep");
 const strategies = require("./strategies");
 const { writeJson } = require("fs-extra");
 
-const argv = yargs
+const { argv } = yargs
   .option("expr", "glob expression that finds package.json files")
   .string("expr")
   .alias("expr", "e")
@@ -31,7 +32,7 @@ const argv = yargs
     info: true,
     showRules: false,
     strategy: undefined
-  }).argv;
+  });
 
 checkdep(argv.expr, argv.strategy ? strategies[argv.strategy] : null)
   .then(({ fixupMap, suggestions, fixedPackages, all }) => {
@@ -39,10 +40,13 @@ checkdep(argv.expr, argv.strategy ? strategies[argv.strategy] : null)
       Object.entries(all)
         .map(([name, versions]) => [name, [...versions]])
         .forEach(([name, versions]) => {
-          const color =
-            versions.length > 1 && !fixupMap[name]
-              ? chalk.red
-              : !fixupMap[name] ? chalk.green : chalk.yellow;
+          const color = (() => {
+            if (versions.length > 1 && !fixupMap[name]) {
+              return chalk.red;
+            }
+
+            return (!fixupMap[name]) ? chalk.green : chalk.yellow;
+          })();
 
           console.log(name, color(versions.join(" ")));
         });
@@ -53,18 +57,15 @@ checkdep(argv.expr, argv.strategy ? strategies[argv.strategy] : null)
     }
 
     if (argv.hint || argv.fix) {
-      suggestions.forEach(([path, suggestions]) => {
+      suggestions.forEach(([path, suggestionList]) => {
         console.log(path);
         console.log(
-          suggestions
+          suggestionList
             .map(
               ([name, current, target]) =>
-                " " +
-                chalk.blue(name) +
-                ": " +
-                chalk.red(current) +
-                " -> " +
-                chalk.green(target)
+                ` ${chalk.blue(name)}: ${chalk.red(current)} -> ${chalk.green(
+                  target
+                )}`
             )
             .join("\n")
         );
@@ -80,6 +81,8 @@ checkdep(argv.expr, argv.strategy ? strategies[argv.strategy] : null)
         fixedPackages.map(([path, json]) => writeJson(path, json))
       );
     }
+
+    return Promise.resolve();
   })
   .catch(e => {
     console.log(e.toString());
