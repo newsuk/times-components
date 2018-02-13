@@ -1,9 +1,11 @@
 {
   "data": {
-    "relatedArticlesTemplate": "DEFAULT",
+    "relatedArticlesLayout": {
+      "template": "DEFAULT"
+    },
     "relatedArticles": [
       {
-        "id": "08604618-fb0e-11e7-a987-7fcf5e9983dc",
+        "id": "28604618-fb0e-11e7-a987-7fcf5e9983dc",
         "headline":
           "Now for a new battle: bringing the fragile masterpiece over safely",
         "summary": [

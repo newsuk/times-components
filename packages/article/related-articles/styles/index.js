@@ -1,29 +1,31 @@
 import { StyleSheet } from "react-native";
 
-const sharedStyle = {
-  container: {
-    marginTop: 10,
-    paddingLeft: 10,
-    paddingRight: 10
-  },
+export default StyleSheet.create({
   titleContainer: {
     borderStyle: "solid",
     borderBottomColor: "#dbdbdb",
     borderBottomWidth: StyleSheet.hairlineWidth,
     borderTopColor: "#dbdbdb",
     borderTopWidth: StyleSheet.hairlineWidth,
-    height: 57,
+    height: 55,
     display: "flex",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    paddingLeft: 10,
+    paddingRight: 10
   },
   title: {
     fontFamily: "TimesModern-Bold",
     fontSize: 26,
     color: "#333"
   },
-  cardContainer: {
+  container: {
+    borderStyle: "solid",
+    borderBottomColor: "#dbdbdb",
+    borderBottomWidth: StyleSheet.hairlineWidth,
     paddingBottom: 10,
+    paddingLeft: 10,
+    paddingRight: 10,
     paddingTop: 10
   },
   headline: {
@@ -31,7 +33,8 @@ const sharedStyle = {
     marginBottom: 5,
     fontFamily: "TimesModern-Bold",
     fontWeight: "400"
+  },
+  imageContainer: {
+    marginBottom: 10
   }
-};
-
-export default sharedStyle;
+});

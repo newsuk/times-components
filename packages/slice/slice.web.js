@@ -1,17 +1,25 @@
 import React from "react";
-import { SubContainer, MainContainer } from "./styles/responsive";
-import SliceContent from "./slice-content";
-import SliceHeading from "./slice-heading";
-import { propTypes, defaultProps } from "./slice-prop-types";
+import { propTypes, defaultProps } from "./proptypes";
+import getTemplateName from "./styles/template-map";
+import getStyledComponent from "./styles";
 
-const Slice = ({ item, template }) => (
-  <MainContainer template={template}>
-    <SliceHeading />
-    <SubContainer>
-      <SliceContent item={item} />
-    </SubContainer>
-  </MainContainer>
-);
+const Slice = ({ children, template }) => {
+  const templateName = getTemplateName(template);
+  const StyledSliceContainer = getStyledComponent(
+    templateName,
+    "SliceContainer"
+  );
+  const StyledChildrenContainer = getStyledComponent(
+    templateName,
+    "ChildrenContainer"
+  );
+
+  return (
+    <StyledSliceContainer>
+      <StyledChildrenContainer>{children}</StyledChildrenContainer>
+    </StyledSliceContainer>
+  );
+};
 
 Slice.propTypes = propTypes;
 Slice.defaultProps = defaultProps;
