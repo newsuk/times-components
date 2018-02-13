@@ -2,26 +2,47 @@
 import { storiesOf } from "dextrose/storiesOfOverloader";
 import React from "react";
 import { Platform } from "react-native";
+import { addTypenameToDocument } from "apollo-utilities";
 
+import { decorateAction } from "@storybook/addon-actions";
 import { ArticleProvider } from "@times-components/provider";
 import { MockedProvider } from "@times-components/utils/graphql";
-import { addTypenameToDocument } from "apollo-utilities";
 import { query as articleQuery } from "@times-components/provider/article";
 import storybookReporter from "@times-components/tealium/storybook";
 import Article from "./article";
+import RelatedArticles from "./related-articles/related-articles";
 
-const fullArticleTypenameFixture = require("./fixtures/full-article-typename.json");
-const fullArticleFixture = require("./fixtures/full-article.json");
-const fullLongArticleFixture = require("./fixtures/full-long-article.json");
-const articleFixtureNoStandfirst = require("./fixtures/no-standfirst.json");
-const articleFixtureNoLabel = require("./fixtures/no-label.json");
-const articleFixtureNoAds = require("./fixtures/no-ads.json");
-const articleFixtureNoFlags = require("./fixtures/no-flags.json");
-const articleFixtureNoStandfirstNoLabel = require("./fixtures/no-standfirst-no-label.json");
-const articleFixtureNoStandfirstNoFlags = require("./fixtures/no-standfirst-no-flags.json");
-const articleFixtureNoLabelNoFlags = require("./fixtures/no-label-no-flags.json");
-const articleFixtureNoLabelNoFlagsNoStandFirst = require("./fixtures/no-label-no-flags-no-standfirst.json");
-const articleFixtureNoLeadAsset = require("./fixtures/no-lead-asset.json");
+import fullArticleTypenameFixture from "./fixtures/full-article-typename.json";
+import fullArticleFixture from "./fixtures/full-article.json";
+import fullLongArticleFixture from "./fixtures/full-long-article.json";
+import articleFixtureNoStandfirst from "./fixtures/no-standfirst.json";
+import articleFixtureNoLabel from "./fixtures/no-label.json";
+import articleFixtureNoAds from "./fixtures/no-ads.json";
+import articleFixtureNoFlags from "./fixtures/no-flags.json";
+import articleFixtureNoStandfirstNoLabel from "./fixtures/no-standfirst-no-label.json";
+import articleFixtureNoStandfirstNoFlags from "./fixtures/no-standfirst-no-flags.json";
+import articleFixtureNoLabelNoFlags from "./fixtures/no-label-no-flags.json";
+import articleFixtureNoLabelNoFlagsNoStandFirst from "./fixtures/no-label-no-flags-no-standfirst.json";
+import articleFixtureNoLeadAsset from "./fixtures/no-lead-asset.json";
+// Related articles
+import singleRelatedArticleFixture from "./related-articles/fixtures/single-related-article.json";
+import singleRelatedArticleNoImageFixture from "./related-articles/fixtures/single-related-article-no-image.json";
+import singleRelatedArticleNoLabelFixture from "./related-articles/fixtures/single-related-article-no-label.json";
+import singleRelatedArticleNoBylineFixture from "./related-articles/fixtures/single-related-article-no-byline.json";
+import twoRelatedArticlesFixture from "./related-articles/fixtures/two-related-articles.json";
+
+const preventDefaultedAction = decorateAction([
+  ([e, ...args]) => {
+    e.preventDefault();
+    return ["[SyntheticEvent (storybook prevented default)]", ...args];
+  }
+]);
+
+const createRelatedArticlesProps = fixtureData => ({
+  articles: fixtureData.relatedArticles,
+  template: fixtureData.relatedArticlesLayout.template,
+  onPress: preventDefaultedAction("onArticlePress")
+});
 
 const mocks = [
   {
@@ -193,5 +214,30 @@ storiesOf("Article", module)
       {...articleFixtureNoLeadAsset.data}
       analyticsStream={storybookReporter}
       adConfig={adConfig}
+    />
+  ))
+  .add("Single related article default", () => (
+    <RelatedArticles
+      {...createRelatedArticlesProps(singleRelatedArticleFixture.data)}
+    />
+  ))
+  .add("Single related article with no lead image", () => (
+    <RelatedArticles
+      {...createRelatedArticlesProps(singleRelatedArticleNoImageFixture.data)}
+    />
+  ))
+  .add("Single related article with no label", () => (
+    <RelatedArticles
+      {...createRelatedArticlesProps(singleRelatedArticleNoLabelFixture.data)}
+    />
+  ))
+  .add("Single related article with no byline", () => (
+    <RelatedArticles
+      {...createRelatedArticlesProps(singleRelatedArticleNoBylineFixture.data)}
+    />
+  ))
+  .add("Two related articles", () => (
+    <RelatedArticles
+      {...createRelatedArticlesProps(twoRelatedArticlesFixture.data)}
     />
   ));
