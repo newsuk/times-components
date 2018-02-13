@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "1.13.9",
+  "version": "1.13.10",
   "main": "image",
   "scripts": {
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
@@ -48,9 +48,9 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/gestures": "1.1.5",
-    "@times-components/gradient": "0.5.0",
-    "@times-components/link": "0.13.17",
+    "@times-components/gestures": "1.1.6",
+    "@times-components/gradient": "0.5.1",
+    "@times-components/link": "0.13.18",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.0",
     "svgs": "3.1.1"
