@@ -1,7 +1,7 @@
 import optimist from "optimist";
 
 export default optimist
-  .usage("checkdep -e \"packages/*/package.json\" [...options]")
+  .usage('checkdep -e "packages/*/package.json" [...options]')
   .option("help", "shows this message")
   .alias("help", "h")
   .option("expr", "glob expression that finds package.json files")
@@ -20,7 +20,10 @@ export default optimist
   .boolean("hint")
   .option("strategy", "how to resolve conflicts")
   .string("strategy")
-  .describe("strategy", "{conservative|progressive|majority|majorityConservative|majorityProgressive}")
+  .describe(
+    "strategy",
+    "{conservative|progressive|majority|majorityConservative|majorityProgressive}"
+  )
   .default({
     expr: "packages/*/package.json",
     list: false,

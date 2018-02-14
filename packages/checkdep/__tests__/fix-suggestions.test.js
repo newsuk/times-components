@@ -30,7 +30,7 @@ describe("checkdep tests", () => {
     const rules = {
       a: "2.0.0",
       c: "2.0.0"
-    }
+    };
 
     const fix = suggestFix(packageJson, rules);
     expect(fix).toEqual({

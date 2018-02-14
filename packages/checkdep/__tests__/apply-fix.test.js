@@ -1,21 +1,26 @@
-import { applyFix } from "../checkdep";
+import { applyPatch } from "../checkdep";
 
-describe("checkdep applyFix tests", () => {
+describe("checkdep applyPatch tests", () => {
   it("should have dependencies not defined if empty ", () => {
     const packageJson = {
       name: "foo",
-      dependencies: {}
+      dependencies: {},
+      devDependencies: {}
     };
 
     const fix = {
-      x: "1.0.0"
+      dependencies: {},
+      devDependencies: {}
     };
-    const fixed = applyFix(packageJson, fix);
+
+    const fixed = applyPatch(packageJson, fix);
     expect(fixed.dependencies).toEqual(undefined);
+    expect(fixed.devDependencies).toEqual(undefined);
   });
 
-  it("should fix dependencies", () => {
+  it("should patch dependencies", () => {
     const packageJson = {
+      name: "foo",
       dependencies: {
         x: "2.0.0",
         a: "42.0.0"
@@ -26,11 +31,15 @@ describe("checkdep applyFix tests", () => {
     };
 
     const fix = {
-      x: "1.0.0",
-      y: "3.0.0"
+      dependencies: {
+        x: "1.0.0"
+      },
+      devDependencies: {
+        y: "3.0.0"
+      }
     };
 
-    const fixed = applyFix(packageJson, fix);
+    const fixed = applyPatch(packageJson, fix);
     expect(fixed).toMatchObject({
       name: "foo",
       dependencies: {
@@ -42,5 +51,4 @@ describe("checkdep applyFix tests", () => {
       }
     });
   });
-
 });

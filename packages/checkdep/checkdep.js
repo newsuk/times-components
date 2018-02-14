@@ -2,8 +2,8 @@ import "babel-polyfill";
 import getPackages from "./get-packages";
 
 function resolveConflicts(strategy, packages) {
-  const {name, version} = packages.sort(strategy)[0];
-  return {name, version};
+  const { name, version } = packages.sort(strategy)[0];
+  return { name, version };
 }
 
 function objectOrUndefined(dep) {
@@ -32,17 +32,23 @@ export function suggestFix(packageJson = {}, rules = {}) {
   };
 }
 
-export function applyFix(packageJson, { dependencies, devDependencies }) {
+export function applyPatch(
+  packageJson,
+  { dependencies = {}, devDependencies = {} }
+) {
+  const newDeps = objectOrUndefined({
+    ...packageJson.dependencies,
+    ...dependencies
+  });
+
+  const newDev = objectOrUndefined({
+    ...packageJson.devDependencies,
+    ...devDependencies
+  });
   return {
     ...packageJson,
-    dependencies: objectOrUndefined({
-      ...packageJson.dependencies,
-      ...dependencies
-    }),
-    devDependencies: objectOrUndefined({
-      ...packageJson.devDependencies,
-      ...devDependencies
-    })
+    dependencies: newDeps,
+    devDependencies: newDev
   };
 }
 
@@ -62,15 +68,13 @@ export function getAllRequirements(packages) {
 }
 
 export function computeFlatReverseLookupMap(requirements) {
-  return requirements
-    .map(p => [`${p[2]}@${p[3]}`, `${p[0]}@${p[1]}`])
-    .reduce(
-      (a, [target, pack]) =>
-        Object.assign(a, {
-          [target]: new Set([pack, ...(a[target] || [])])
-        }),
-      {}
-    );
+  return requirements.map(p => [`${p[2]}@${p[3]}`, `${p[0]}@${p[1]}`]).reduce(
+    (a, [target, pack]) =>
+      Object.assign(a, {
+        [target]: new Set([pack, ...(a[target] || [])])
+      }),
+    {}
+  );
 }
 
 export function computeVersionSets(requirements) {
@@ -84,7 +88,6 @@ export function computeVersionSets(requirements) {
 }
 
 export function computeReverseLookupMap(requirements, versionSets) {
-
   const flatReverseLookup = computeFlatReverseLookupMap(requirements);
 
   return Object.entries(versionSets)
@@ -95,7 +98,7 @@ export function computeReverseLookupMap(requirements, versionSets) {
         usedBy: [...flatReverseLookup[`${c[0]}@${p}`]]
       }))
     }))
-    .reduce((a, b) => Object.assign(a, b), {})
+    .reduce((a, b) => Object.assign(a, b), {});
 }
 
 export function findWrongVersions(packages) {
@@ -117,21 +120,18 @@ export function findWrongVersions(packages) {
   );
 }
 
-export function fixTodo([path, json, fix]) {
-  return [
-    path,
-    applyFix(json, fix)
-  ];
+export function fixTodo([path, json, patch]) {
+  return [path, applyPatch(json, patch)];
 }
 
 export function getSuggestions(todo) {
-  return todo.map(([path, json, fix]) => [
+  return todo.map(([path, json, patch]) => [
     path,
     [].concat(
-      Object.entries(fix.dependencies)
+      Object.entries(patch.dependencies)
         .map(([name, version]) => [name, json.dependencies[name], version])
         .filter(x => x[1]),
-      Object.entries(fix.devDependencies)
+      Object.entries(patch.devDependencies)
         .map(([name, version]) => [name, json.devDependencies[name], version])
         .filter(x => x[1])
     )
@@ -141,14 +141,16 @@ export function getSuggestions(todo) {
 export function getTodos(packagesList, rules) {
   return packagesList
     .map(([path, json]) => [path, json, suggestFix(json, rules)])
-    .filter(x => x[2])
+    .filter(x => x[2]);
 }
 
 export function createRules(resolved, wrong) {
-  return [].concat(
-    resolved.map(w => ({ [w.name]: w.version })),
-    wrong.map(w => ({ [w.package]: w.expected }))
-  ).reduce((a, b) => ({ ...a, ...b }), {});
+  return []
+    .concat(
+      resolved.map(w => ({ [w.name]: w.version })),
+      wrong.map(w => ({ [w.package]: w.expected }))
+    )
+    .reduce((a, b) => ({ ...a, ...b }), {});
 }
 
 export function applyStrategy(requirements, strategy) {
@@ -162,9 +164,7 @@ export function applyStrategy(requirements, strategy) {
 
   const reverseLookup = computeReverseLookupMap(requirements, versionSets);
 
-  const divergent = Object
-    .values(reverseLookup)
-    .filter(x => x.length > 1);
+  const divergent = Object.values(reverseLookup).filter(x => x.length > 1);
 
   return {
     versionSets,
@@ -173,7 +173,7 @@ export function applyStrategy(requirements, strategy) {
 }
 
 export default async function checkdep(packagesList, strategy) {
-  const packages = packagesList.map(p=>p[1]);
+  const packages = packagesList.map(p => p[1]);
   const requirements = getAllRequirements(packages);
 
   const { versionSets, resolved } = applyStrategy(requirements, strategy);

@@ -19,10 +19,11 @@ describe("checkdep applyStrategy tests", () => {
     ];
 
     const { resolved } = applyStrategy(requirements, progressive);
-    expect(resolved).toEqual([{
-      name: "x",
-      version: "2.0.0"
-    }]);
+    expect(resolved).toEqual([
+      {
+        name: "x",
+        version: "2.0.0"
+      }
+    ]);
   });
-
 });
