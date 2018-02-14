@@ -21,7 +21,8 @@ const staticFilesAndFolders = [
   "LICENSE",
   "*.stories*.js",
   "*.json",
-  "*fructose*"
+  "*fructose*",
+  "flow-typed"
 ];
 
 const toValidExt = (ext: string): AllPlatform | null => {
