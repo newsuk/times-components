@@ -5,7 +5,9 @@ import { StyledRelatedArticlesHeading } from "./styles/responsive";
 
 const RelatedArticlesHeading = () => (
   <StyledRelatedArticlesHeading>
-    <Text style={styles.title}>Related links</Text>
+    <Text accessibilityRole="heading" aria-level="3" style={styles.title}>
+      Related links
+    </Text>
   </StyledRelatedArticlesHeading>
 );
 

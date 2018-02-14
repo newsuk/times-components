@@ -39,7 +39,13 @@ const RelatedArticleItem = ({
             datePublicationProps={{ date: publishedTime }}
             headline={() => (
               <ResponsiveHeadline>
-                <Text style={styles.headline}>{headline}</Text>
+                <Text
+                  accessibilityRole="heading"
+                  aria-level="3"
+                  style={styles.headline}
+                >
+                  {headline}
+                </Text>
               </ResponsiveHeadline>
             )}
             labelProps={{ title: label, color: "#333333" }}

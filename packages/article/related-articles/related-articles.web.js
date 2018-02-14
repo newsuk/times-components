@@ -33,7 +33,10 @@ const RelatedArticles = ({ articles, onPress, template }) => {
         myArray.push(<StyledSeparator key={`separator-${article.id}`} />);
       }
       myArray.push(
-        <StyledRelatedArticleItemContainer key={article.id}>
+        <StyledRelatedArticleItemContainer
+          accessibilityRole="article"
+          key={article.id}
+        >
           <RelatedArticleItem
             article={article}
             onPress={onPress}
