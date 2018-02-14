@@ -1,5 +1,3 @@
-/* global document, window */
-
 // NOTE: this function is serialised to a string and executed in a webview,
 // don't import any other modules or refer to variables defined outside of
 // the function body. Note that use of some ES6 features like iteration and
