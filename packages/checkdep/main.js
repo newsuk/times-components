@@ -4,7 +4,9 @@ import { writeJson } from "fs-extra";
 
 import checkdep from "./checkdep";
 import * as strategies from "./strategies";
-import { argv } from './cli-options';
+import options from './cli-options';
+
+const { argv, help } = options;
 
 function prettifyHint([name, current, target]) {
   return ` ${chalk.blue(name)}: ${chalk.red(current)} -> ${chalk.green(
@@ -14,6 +16,12 @@ function prettifyHint([name, current, target]) {
 
 checkdep(argv.expr, argv.strategy ? strategies[argv.strategy] : null)
   .then(({ rules, suggestions, fixedPackages, versionSets }) => {
+
+    if (argv.help) {
+      console.log(help());
+      return Promise.resolve();
+    }
+
     if (argv.list) {
       Object.entries(versionSets)
         .map(([name, versions]) => [name, [...versions]])

@@ -1,5 +1,9 @@
-const optimist = require("optimist");
-export const argv = optimist
+import optimist from "optimist";
+
+export default optimist
+  .usage("checkdep -e \"packages/*/package.json\" [...options]")
+  .option("help", "shows this message")
+  .alias("help", "h")
   .option("expr", "glob expression that finds package.json files")
   .string("expr")
   .alias("expr", "e")
@@ -15,13 +19,14 @@ export const argv = optimist
   .option("hint", "print fix suggestions")
   .boolean("hint")
   .option("strategy", "how to resolve conflicts")
-  .boolean("string")
+  .string("strategy")
+  .describe("strategy", "{conservative|progressive|majority|majorityConservative|majorityProgressive}")
   .default({
     expr: "packages/*/package.json",
     list: false,
     fix: false,
     bail: false,
-    info: true,
+    hint: true,
     showRules: false,
     strategy: undefined
-  }).argv;
+  });

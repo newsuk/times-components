@@ -8,6 +8,8 @@ function objectOrUndefined(dep) {
   return Object.keys(dep).length ? dep : undefined;
 }
 
+const count = o => Object.keys(o).length;
+
 function suggestFix(packageJson = {}, fixupMap) {
   const fixup = dep =>
     Object.entries(dep || {})
@@ -16,8 +18,6 @@ function suggestFix(packageJson = {}, fixupMap) {
       .filter(x => x[1] !== x[2])
       .map(([name, ver]) => ({ [name]: ver }))
       .reduce((a, b) => ({ ...a, ...b }), {});
-
-  const count = o => Object.keys(o).length;
 
   const dependencies = fixup(packageJson.dependencies);
   const devDependencies = fixup(packageJson.devDependencies);
@@ -30,7 +30,7 @@ function suggestFix(packageJson = {}, fixupMap) {
   };
 }
 
-function applyFix(packageJson, { dependencies, devDependencies }) {
+export function applyFix(packageJson, { dependencies, devDependencies }) {
   return {
     ...packageJson,
     dependencies: objectOrUndefined({
@@ -60,15 +60,13 @@ export function getAllRequirements(packages) {
 }
 
 export function computeFlatReverseLookupMap(requirements) {
-  return requirements
-    .map(p => [`${p[2]}@${p[3]}`, `${p[0]}@${p[1]}`])
-    .reduce(
-      (a, [target, pack]) =>
-        Object.assign(a, {
-          [target]: new Set([pack, ...(a[target] || [])])
-        }),
-      {}
-    );
+  return requirements.map(p => [`${p[2]}@${p[3]}`, `${p[0]}@${p[1]}`]).reduce(
+    (a, [target, pack]) =>
+      Object.assign(a, {
+        [target]: new Set([pack, ...(a[target] || [])])
+      }),
+    {}
+  );
 }
 
 export function computeVersionSets(requirements) {
@@ -82,7 +80,6 @@ export function computeVersionSets(requirements) {
 }
 
 export function computeReverseLookupMap(requirements, versionSets) {
-
   const flatReverseLookup = computeFlatReverseLookupMap(requirements);
 
   return Object.entries(versionSets)
@@ -93,7 +90,7 @@ export function computeReverseLookupMap(requirements, versionSets) {
         usedBy: [...flatReverseLookup[`${c[0]}@${p}`]]
       }))
     }))
-    .reduce((a, b) => Object.assign(a, b), {})
+    .reduce((a, b) => Object.assign(a, b), {});
 }
 
 export function findWrongVersions(packages) {
@@ -116,10 +113,7 @@ export function findWrongVersions(packages) {
 }
 
 export function fixTodo([path, json, fix]) {
-  return [
-    path,
-    applyFix(json, fix)
-  ];
+  return [path, applyFix(json, fix)];
 }
 
 export function getSuggestions(todo) {
@@ -139,27 +133,24 @@ export function getSuggestions(todo) {
 export function getTodos(packagesList, rules) {
   return packagesList
     .map(([path, json]) => [path, json, suggestFix(json, rules)])
-    .filter(x => x[2])
+    .filter(x => x[2]);
 }
-
 
 export default async function checkdep(expr, strategy) {
   const packagesList = await getPackages(expr);
-  const packages = packagesList.map(p=>p[1]);
+  const packages = packagesList.map(p => p[1]);
 
   const requirements = getAllRequirements(packages);
   const versionSets = computeVersionSets(requirements);
   const reverseLookup = computeReverseLookupMap(requirements, versionSets);
 
-  const divergent = Object
-    .values(reverseLookup)
-    .filter(x => x.length > 1);
+  const divergent = Object.values(reverseLookup).filter(x => x.length > 1);
 
   const fixed = strategy
     ? divergent.map(c => resolveConflicts(strategy, c))
     : [];
 
-  const wrong = findWrongVersions(packages)
+  const wrong = findWrongVersions(packages);
 
   const rules = []
     .concat(
