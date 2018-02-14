@@ -12,8 +12,6 @@ export default class DOMContext extends React.PureComponent {
       el: this.div,
       eventCallback: this.eventCallback,
       id,
-      window,
-      document,
       scriptUris,
       globalNames,
       init,
@@ -43,9 +41,10 @@ export default class DOMContext extends React.PureComponent {
   processEvent = ({ type, detail }) => {
     if (type === "error") {
       throw new Error(`DomContext error: ${detail}`);
-    }
-    if (type === "renderComplete") {
+    } else if (type === "renderComplete") {
       this.props.onRenderComplete();
+    } else if (type === "log") {
+      console.log(detail); // eslint-disable-line no-console
     }
   };
 

@@ -1,13 +1,15 @@
+/* global document, window */
+
 // NOTE: this function is serialised to a string and executed in a webview,
 // don't import any other modules or refer to variables defined outside of
 // the function body. Note that use of some ES6 features like iteration and
 // classes will end up transpiling into code that uses helper functions like
 // _createClass, so keep this code simple. If you change this function, test
 // the DOMContext and Ad stories in both web and native storybooks.
+// NATIVE: window and document objects are relative to each WebView
+// WEB: window and document objects are shared between the ads components
 
 const makeHarness = ({
-  document,
-  window,
   el,
   data,
   init,
@@ -28,8 +30,7 @@ const makeHarness = ({
     }
   };
   const log = (...message) => {
-    // eslint-disable-next-line no-console
-    window.console.info(`${data.code}:`, ...message);
+    eventCallback("log", `${data.code} ad: ${message.join(" ")}`);
   };
   return {
     execute() {
@@ -42,13 +43,6 @@ const makeHarness = ({
       });
     },
     runInitIfGlobalsPresent() {
-      log(
-        "runInitIfGlobalsPresent",
-        "global scripts loaded:",
-        window.scritpsProcessed,
-        "local scripts to load:",
-        scriptUris.length
-      );
       if (scriptUris.length === window.scritpsProcessed.length) {
         this.runInit();
       }
@@ -61,10 +55,6 @@ const makeHarness = ({
     },
     isScriptProcessed(scriptId) {
       return window.scritpsProcessed.indexOf(scriptId) > -1;
-    },
-    reportError(err) {
-      // eslint-disable-next-line no-console
-      window.console.error(`Error while loading the script: ${err}`);
     },
 
     scriptLoaded(scriptId) {
@@ -81,7 +71,6 @@ const makeHarness = ({
         if (!canRequestFail) {
           throw new Error(`Failed to load the script ${err}`);
         }
-        this.reportError();
         this.runInitIfGlobalsPresent();
       });
     },
@@ -103,7 +92,6 @@ const makeHarness = ({
     },
 
     loadScriptsParallel(scripts, callback) {
-      // no external scripts to load, execute init
       if (scripts.length === 0) {
         callback();
       }
@@ -112,8 +100,6 @@ const makeHarness = ({
         const timeout = scripts[i].timeout || -1;
         const canRequestFail = scripts[i].canRequestFail || false;
         const scriptId = `dom-context-script-${scriptUri.replace(/\W/g, "")}`;
-        // we rely on the shared (between the dom-context) document to check if we have already loaded the script
-        // maybe with a different Ad component on the page
         let script = document.getElementById(scriptId);
         if (!script) {
           log("create script:", scriptId);
@@ -124,8 +110,6 @@ const makeHarness = ({
           script.defer = true;
           document.head.appendChild(script);
         } else {
-          // the script was already created, maybe from a different Ad component
-          log("this script was already created:", scriptId);
           this.runInitIfGlobalsPresent();
         }
         script.addEventListener("load", this.scriptLoaded.bind(this, scriptId));
@@ -144,7 +128,6 @@ const makeHarness = ({
 
     runInit() {
       withCatch(() => {
-        log("run init was already called:", initCalled);
         if (initCalled) {
           return;
         }
