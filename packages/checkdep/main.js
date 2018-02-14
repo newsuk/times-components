@@ -51,7 +51,7 @@ checkdep(argv.expr, argv.strategy ? strategies[argv.strategy] : null)
 
     if (argv.fix) {
       return Promise.all(
-        fixedPackages.map(([path, json]) => writeJson(path, json))
+        fixedPackages.map(([path, json]) => writeJson(path, json, {spaces:2}))
       );
     }
 
