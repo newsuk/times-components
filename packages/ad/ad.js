@@ -36,9 +36,9 @@ class Ad extends Component {
   renderAd(adConfig) {
     const data = {
       config: this.config,
-      code: this.props.code,
-      networkId: this.props.networkId,
-      adUnit: this.props.adUnit,
+      pos: this.props.pos,
+      networkId: adConfig.networkId,
+      adUnit: adConfig.adUnit,
       contextUrl: this.props.contextUrl,
       section: this.props.section,
       sizingMap: getSizeMaps(this.props.pos),
