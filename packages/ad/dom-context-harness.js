@@ -13,6 +13,8 @@ const makeHarness = ({
   el,
   data,
   init,
+  window,
+  document,
   scriptUris,
   globalNames,
   eventCallback

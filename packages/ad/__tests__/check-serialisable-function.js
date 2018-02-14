@@ -5,7 +5,10 @@ export const getSerialisableFunctionErrors = f => {
   // eslint can't handle top level unnamed function
   const source = String(f).replace(/^function\s*\(/, "function _(");
   return linter
-    .verify(source, { rules: { "no-undef": "error" } })
+    .verify(source, {
+      rules: { "no-undef": "error" },
+      globals: { window: true, document: true }
+    })
     .filter(e => !/'cov_\w+' is not defined./.test(e.message))
     .filter(e => !/'console' is not defined./.test(e.message));
 };

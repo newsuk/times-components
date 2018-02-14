@@ -28,6 +28,8 @@ describe("DOMContext harness", () => {
 
   const makeHarness = args =>
     _makeHarness({
+      document,
+      window,
       el: args.el || document.createElement("div"),
       id: "dom-context-id",
       scriptUris: [],
@@ -44,7 +46,10 @@ describe("DOMContext harness", () => {
 
   it("injects scripts into the document head", () => {
     const harness = makeHarness({
-      scriptUris: [{ uri: "a" }, { uri: "b" }]
+      scriptUris: [
+        { uri: "a", canRequestFail: true },
+        { uri: "b", canRequestFail: true }
+      ]
     });
     harness.execute();
     const scripts = document.head.getElementsByTagName("script");
@@ -54,11 +59,17 @@ describe("DOMContext harness", () => {
 
   it("does not inject script twice in document head", () => {
     const harness = makeHarness({
-      scriptUris: [{ uri: "a" }, { uri: "b" }]
+      scriptUris: [
+        { uri: "a", canRequestFail: true },
+        { uri: "b", canRequestFail: true }
+      ]
     });
     harness.execute();
     const anotherHarness = makeHarness({
-      scriptUris: [{ uri: "a" }, { uri: "c" }]
+      scriptUris: [
+        { uri: "a", canRequestFail: true },
+        { uri: "c", canRequestFail: true }
+      ]
     });
     anotherHarness.execute();
     const scripts = document.head.getElementsByTagName("script");
