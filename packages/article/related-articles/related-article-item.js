@@ -19,6 +19,13 @@ const RelatedArticleItem = ({ article, onPress }) => {
     get(article, "leadAsset.posterImage.crop.url", null)
   );
 
+  // Waiting on styleguide approval
+  const sampleObject = {
+    thedish: "#db133b",
+    sport: "#008347",
+    comment: "#850029"
+  }
+
   return (
     <Link url={url} onPress={onPress}>
       <View style={styles.container}>
@@ -31,7 +38,7 @@ const RelatedArticleItem = ({ article, onPress }) => {
           bylineProps={{ ast: byline }}
           datePublicationProps={{ date: publishedTime }}
           headline={() => <ArticleSummaryHeadline headline={headline} />}
-          labelProps={{ title: label, color: "#333333" }}
+          labelProps={{ title: label, color: sampleObject[section] || "#333333" }}
           content={() => <ArticleSummaryContent ast={summary} />}
         />
       </View>

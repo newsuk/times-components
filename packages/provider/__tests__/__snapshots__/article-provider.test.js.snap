@@ -541,6 +541,7 @@ Object {
       },
       "publicationName": "TIMES",
       "publishedTime": "2015-03-23T19:39:39.000Z",
+      "section": "sport",
       "summary100": Array [
         Object {
           "attributes": Object {},
@@ -756,6 +757,7 @@ Object {
       },
       "publicationName": "TIMES",
       "publishedTime": "2015-03-23T20:42:27.000Z",
+      "section": "comment",
       "summary100": Array [
         Object {
           "attributes": Object {},
@@ -897,6 +899,7 @@ Object {
       },
       "publicationName": "TIMES",
       "publishedTime": "2015-03-23T20:56:09.000Z",
+      "section": "thedish",
       "summary100": Array [
         Object {
           "attributes": Object {},

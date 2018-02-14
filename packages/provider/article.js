@@ -28,6 +28,7 @@ export const query = gql`
       relatedArticles {
         id
         headline
+        section
         byline
         label
         publicationName
