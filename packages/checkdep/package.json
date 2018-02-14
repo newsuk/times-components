@@ -7,10 +7,7 @@
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && npm run prettier:diff",
-    "test": "yarn test:android --ci --bail --coverage && yarn test:ios --ci --bail --coverage && yarn test:web --ci --bail --coverage",
-    "test:android": "jest --config='./__tests__/android/jest.config.js'",
-    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
-    "test:web": "jest --config='./__tests__/web/jest.config.js'"
+    "test": "jest --bail --ci --coverage"
   },
   "jest": {
     "preset": "react-native",
@@ -18,14 +15,14 @@
     "testEnvironment": "jsdom",
     "coverageDirectory": "<rootDir>/packages/checkdep/coverage/",
     "collectCoverageFrom": [
-      "**/packages/provider/*.js",
-      "!**/packages/provider/*stories.js"
+      "**/packages/checkdep/*.js",
+      "!**/packages/checkdep/cli.js"
     ],
     "transformIgnorePatterns": [
       "node_modules/(?!(react-native|react-apollo-temp|@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/provider/__tests__/**.test.js"
+      "<rootDir>/packages/checkdep/__tests__/**.test.js"
     ]
   },
   "repository": {
@@ -52,10 +49,11 @@
     "prettier": "1.8.2"
   },
   "dependencies": {
+    "babel-plugin-transform-runtime": "6.23.0",
     "babel-polyfill": "6.26.0",
     "babel-register": "6.26.0",
-    "fs-extra": "5.0.0",
     "chalk": "2.3.1",
+    "fs-extra": "5.0.0",
     "glob": "^7.1.2",
     "optimist": "0.6.1",
     "semver": "^5.5.0"
