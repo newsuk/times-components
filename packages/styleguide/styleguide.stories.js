@@ -1,9 +1,14 @@
-import { View, StyleSheet, Text } from "react-native";
+import { Platform, ScrollView, Text, View } from "react-native";
 import React from "react";
+import PropTypes from "prop-types";
 import { storiesOf } from "@storybook/react-native";
 import sectionColours from "./styleguide";
 
 const colourBoxStyles = {
+  display: {
+    flexDirection: "row",
+    flexWrap: "wrap"
+  },
   container: {
     width: 250,
     paddingBottom: 10,
@@ -32,10 +37,22 @@ const ColourBox = ({ name, hex }) => (
   </View>
 );
 
-storiesOf("Styleguide", module).add("Section Colours", () => (
-  <View style={{ flexDirection: "row", flexWrap: "wrap" }}>
-    {Object.keys(sectionColours).map(colour => (
-      <ColourBox name={colour} hex={sectionColours[colour]} />
-    ))}
-  </View>
-));
+ColourBox.propTypes = {
+  name: PropTypes.string.isRequired,
+  hex: PropTypes.string.isRequired
+};
+
+storiesOf("Styleguide", module).add("Section Colours", () => {
+  const colourBoxes = Object.keys(sectionColours).map(colourName => (
+    <ColourBox
+      key={colourName}
+      name={colourName}
+      hex={sectionColours[colourName]}
+    />
+  ));
+
+  if (Platform.OS === "web") {
+    return <View style={colourBoxStyles.display}>{colourBoxes}</View>;
+  }
+  return <ScrollView>{colourBoxes}</ScrollView>;
+});
