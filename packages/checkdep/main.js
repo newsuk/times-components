@@ -8,17 +8,33 @@ const { help } = options;
 function prettifyHint([name, current, target]) {
   return ` ${chalk.blue(name)}: ${chalk.red(current)} -> ${chalk.green(
     target
-  )}`
+  )}`;
 }
 
-export default async function main({log, getPackages, writeJson, argv, exit}) {
+export default async function main({
+  log,
+  getPackages,
+  writeJson,
+  argv,
+  exit
+}) {
   if (argv.help) {
     log(help());
     return Promise.resolve();
   }
 
+  if (argv.strategy) {
+    if (!strategies[argv.strategy]) {
+      log(`strategy ${argv.strategy} not available`);
+      return exit(1);
+    }
+  }
+
   const packagesList = await getPackages(argv.expr);
-  return checkdep(packagesList, argv.strategy ? strategies[argv.strategy] : null)
+  return checkdep(
+    packagesList,
+    argv.strategy ? strategies[argv.strategy] : null
+  )
     .then(({ rules, suggestions, fixedPackages, versionSets }) => {
       if (argv.list) {
         Object.entries(versionSets)
@@ -32,7 +48,7 @@ export default async function main({log, getPackages, writeJson, argv, exit}) {
               return !rules[name] ? chalk.green : chalk.yellow;
             })();
 
-            log(chalk.blue(i+1), name, color(versions.join(" ")));
+            log(chalk.blue(i + 1), name, color(versions.join(" ")));
           });
       }
 
@@ -43,11 +59,7 @@ export default async function main({log, getPackages, writeJson, argv, exit}) {
       if (argv.hint || argv.fix) {
         suggestions.forEach(([path, suggestionList]) => {
           log(path);
-          log('  '+
-            suggestionList
-              .map(prettifyHint)
-              .join("\n")
-          );
+          log("  " + suggestionList.map(prettifyHint).join("\n"));
         });
       }
 
@@ -58,7 +70,9 @@ export default async function main({log, getPackages, writeJson, argv, exit}) {
 
       if (argv.fix) {
         return Promise.all(
-          fixedPackages.map(([path, json]) => writeJson(path, json, {spaces:2}))
+          fixedPackages.map(([path, json]) =>
+            writeJson(path, json, { spaces: 2 })
+          )
         );
       }
 
