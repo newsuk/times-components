@@ -20,7 +20,7 @@ const RelatedArticles = ({ articles, onPress, template }) => {
   const StyledImageContainer = ImageContainer(articleCount);
   const StyledSummaryContainer = SummaryContainer(articleCount);
 
-  const renderArticles = () => {
+  const renderArticleItems = () => {
     const articleArray = articles.map((article, index) => {
       const hasPadding = index < articleCount - 1;
       const StyledRelatedArticleItemContainer = RelatedArticleItemContainer(
@@ -53,7 +53,7 @@ const RelatedArticles = ({ articles, onPress, template }) => {
   return (
     <View style={{ marginTop: 10 }}>
       <RelatedArticlesHeading />
-      <Slice template={template}>{renderArticles()}</Slice>
+      <Slice template={template}>{renderArticleItems()}</Slice>
     </View>
   );
 };
