@@ -15,13 +15,25 @@ export const ChildrenContainerStyles = childCount => ({
     flex-direction: column;
     flex-wrap: wrap;
   `,
-  mediumUp: () => `
-    flex-direction: row;
-    margin: 0 auto;
-    padding-left: ${childCount === 5 ? "10px" : 0};
-    padding-right: ${childCount === 5 ? "10px" : 0};
-    width: ${childCount === 5 ? "auto" : config.mediumBpWidth};
-  `,
+  mediumUp: () => {
+    let tabletStyles = `
+      padding-left: 0;
+      padding-right: 0;
+      width: ${config.mediumBpWidth};
+    `;
+    if (childCount === 5) {
+      tabletStyles = `
+        padding-left: 10px;
+        padding-right: 10px;
+        width: auto;
+      `;
+    }
+    return `
+      flex-direction: row;
+      margin: 0 auto;
+      ${tabletStyles}
+    `;
+  },
   wideUp: () => `
     width: ${childCount === 5 ? "auto" : config.wideBpWidth};
   `
