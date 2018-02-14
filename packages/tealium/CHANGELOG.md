@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.1"></a>
+## [0.2.1](https://github.com/newsuk/times-components/compare/@times-components/tealium@0.2.0...@times-components/tealium@0.2.1) (2018-02-14)
+
+
+### Bug Fixes
+
+* use fake timers for Tealium tests ([#639](https://github.com/newsuk/times-components/issues/639)) ([e67494f](https://github.com/newsuk/times-components/commit/e67494f))
+
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/tealium@0.1.17...@times-components/tealium@0.2.0) (2018-02-09)
 

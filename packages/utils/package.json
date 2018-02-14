@@ -1,6 +1,6 @@
 {
   "name": "@times-components/utils",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "scripts": {
     "make-schema": "node ./scripts/fetch-gql-schema",
