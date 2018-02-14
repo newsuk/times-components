@@ -4,7 +4,7 @@ import { View, Text, Platform, ScrollView } from "react-native";
 import { AdComposer } from "@times-components/ad";
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
-import { CenteredDecorator } from "@times-components/storybook/decorators";
+import { CenteredDecorator } from "@times-components/storybook";
 import { renderTree, renderTrees } from "./markup";
 
 const multiParagraph = require("./fixtures/multi-paragraph.json");

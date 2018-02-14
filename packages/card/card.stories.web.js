@@ -2,7 +2,7 @@
 import React from "react";
 import ReactDOMServer from "react-dom/server";
 import { storiesOf } from "@storybook/react-native";
-import { LateralSpacingDecorator } from "@times-components/storybook/decorators";
+import { LateralSpacingDecorator } from "@times-components/storybook";
 import ArticleSummary from "@times-components/article-summary";
 import Card from "./card";
 import articleSummaryProps from "./fixtures/article-summary-props";

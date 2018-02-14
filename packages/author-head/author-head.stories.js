@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react-native";
 import { decorateAction } from "@storybook/addon-actions";
 import storybookReporter from "@times-components/tealium/storybook";
 import { withTrackingContext } from "@times-components/tracking";
-import { LateralSpacingDecorator } from "@times-components/storybook/decorators";
+import { LateralSpacingDecorator } from "@times-components/storybook";
 import AuthorHead from "./author-head";
 
 const data = require("./fixtures/profile.json");

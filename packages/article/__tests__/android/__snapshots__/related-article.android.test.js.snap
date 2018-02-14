@@ -250,7 +250,7 @@ exports[`Related articles test on android Related articles renders single relate
                         "paddingTop": 5,
                       },
                       Object {
-                        "color": "#333333",
+                        "color": "#db133b",
                       },
                     ]
                   }
@@ -602,7 +602,7 @@ exports[`Related articles test on android Related articles renders single relate
                         "paddingTop": 5,
                       },
                       Object {
-                        "color": "#333333",
+                        "color": "#db133b",
                       },
                     ]
                   }
@@ -1135,7 +1135,7 @@ exports[`Related articles test on android Related articles renders single relate
                         "paddingTop": 5,
                       },
                       Object {
-                        "color": "#333333",
+                        "color": "#db133b",
                       },
                     ]
                   }
@@ -2417,7 +2417,7 @@ exports[`Related articles test on android Related articles renders two related a
                         "paddingTop": 5,
                       },
                       Object {
-                        "color": "#333333",
+                        "color": "#db133b",
                       },
                     ]
                   }
@@ -2706,7 +2706,7 @@ exports[`Related articles test on android Related articles renders two related a
                         "paddingTop": 5,
                       },
                       Object {
-                        "color": "#333333",
+                        "color": "#008347",
                       },
                     ]
                   }

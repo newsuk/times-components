@@ -17,7 +17,15 @@ const RelatedArticleItem = ({
   styledImageContainer: StyledImageContainer,
   styledSummaryContainer: StyledSummaryContainer
 }) => {
-  const { byline, label, headline, publishedTime, section, summary, url } = article;
+  const {
+    byline,
+    label,
+    headline,
+    publishedTime,
+    section,
+    summary,
+    url
+  } = article;
 
   const imageUri = get(
     article,
@@ -25,13 +33,12 @@ const RelatedArticleItem = ({
     get(article, "leadAsset.posterImage.crop.url", null)
   );
 
-
   // Waiting on styleguide approval
   const sampleObject = {
     thedish: "#db133b",
     sport: "#008347",
     comment: "#850029"
-  }
+  };
 
   return (
     <Link url={url} onPress={onPress}>
@@ -56,7 +63,10 @@ const RelatedArticleItem = ({
                 </Text>
               </ResponsiveHeadline>
             )}
-            labelProps={{ title: label, color: sampleObject[section] || "#333333" }}
+            labelProps={{
+              title: label,
+              color: sampleObject[section] || "#333333"
+            }}
             content={() => <ArticleSummaryContent ast={summary} />}
           />
         </StyledSummaryContainer>

@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { CenteredDecorator } from "@times-components/storybook/decorators";
+import { CenteredDecorator } from "@times-components/storybook";
 import Gestures from "./gestures";
 
 const styles = StyleSheet.create({

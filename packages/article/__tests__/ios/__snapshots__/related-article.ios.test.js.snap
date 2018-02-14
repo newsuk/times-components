@@ -217,7 +217,7 @@ exports[`Related articles test on ios Related articles renders single related ar
                         "lineHeight": 12,
                       },
                       Object {
-                        "color": "#333333",
+                        "color": "#db133b",
                       },
                     ]
                   }
@@ -536,7 +536,7 @@ exports[`Related articles test on ios Related articles renders single related ar
                         "lineHeight": 12,
                       },
                       Object {
-                        "color": "#333333",
+                        "color": "#db133b",
                       },
                     ]
                   }
@@ -1038,7 +1038,7 @@ exports[`Related articles test on ios Related articles renders single related ar
                         "lineHeight": 12,
                       },
                       Object {
-                        "color": "#333333",
+                        "color": "#db133b",
                       },
                     ]
                   }
@@ -2188,7 +2188,7 @@ exports[`Related articles test on ios Related articles renders two related artic
                         "lineHeight": 12,
                       },
                       Object {
-                        "color": "#333333",
+                        "color": "#db133b",
                       },
                     ]
                   }
@@ -2444,7 +2444,7 @@ exports[`Related articles test on ios Related articles renders two related artic
                         "lineHeight": 12,
                       },
                       Object {
-                        "color": "#333333",
+                        "color": "#008347",
                       },
                     ]
                   }
