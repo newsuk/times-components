@@ -1,12 +1,8 @@
 /* eslint-disable no-console */
 import chalk from "chalk";
-import { writeJson } from "fs-extra";
-
+import options from "./cli-options";
 import checkdep from "./checkdep";
-import * as strategies from "./strategies";
-import options from './cli-options';
-
-const { argv, help } = options;
+const { help } = options;
 
 function prettifyHint([name, current, target]) {
   return ` ${chalk.blue(name)}: ${chalk.red(current)} -> ${chalk.green(
@@ -14,58 +10,62 @@ function prettifyHint([name, current, target]) {
   )}`
 }
 
-checkdep(argv.expr, argv.strategy ? strategies[argv.strategy] : null)
-  .then(({ rules, suggestions, fixedPackages, versionSets }) => {
+export default async function main({log, getPackages, writeJson, argv}) {
+  const packagesList = await getPackages(argv.expr);
+  return checkdep(packagesList, argv.strategy ? strategies[argv.strategy] : null)
+    .then(({ rules, suggestions, fixedPackages, versionSets }) => {
 
-    if (argv.help) {
-      console.log(help());
-      return Promise.resolve();
-    }
+      if (argv.help) {
+        log(help());
+        return Promise.resolve();
+      }
 
-    if (argv.list) {
-      Object.entries(versionSets)
-        .map(([name, versions]) => [name, [...versions]])
-        .forEach(([name, versions], i) => {
-          const color = (() => {
-            if (versions.length > 1 && !rules[name]) {
-              return chalk.red;
-            }
+      if (argv.list) {
+        Object.entries(versionSets)
+          .map(([name, versions]) => [name, [...versions]])
+          .forEach(([name, versions], i) => {
+            const color = (() => {
+              if (versions.length > 1 && !rules[name]) {
+                return chalk.red;
+              }
 
-            return !rules[name] ? chalk.green : chalk.yellow;
-          })();
+              return !rules[name] ? chalk.green : chalk.yellow;
+            })();
 
-          console.log(chalk.blue(i+1), name, color(versions.join(" ")));
+            log(chalk.blue(i+1), name, color(versions.join(" ")));
+          });
+      }
+
+      if (argv.showRules) {
+        log(rules);
+      }
+
+      if (argv.hint || argv.fix) {
+        suggestions.forEach(([path, suggestionList]) => {
+          log(path);
+          log('  '+
+            suggestionList
+              .map(prettifyHint)
+              .join("\n")
+          );
         });
-    }
+      }
 
-    if (argv.showRules) {
-      console.log(rules);
-    }
+      if (argv.bail && suggestions.length) {
+        exit(1);
+        return Promise.resolve();
+      }
 
-    if (argv.hint || argv.fix) {
-      suggestions.forEach(([path, suggestionList]) => {
-        console.log(path);
-        console.log(
-          suggestionList
-            .map(prettifyHint)
-            .join("\n")
+      if (argv.fix) {
+        return Promise.all(
+          fixedPackages.map(([path, json]) => writeJson(path, json, {spaces:2}))
         );
-      });
-    }
+      }
 
-    if (argv.bail && suggestions.length) {
-      process.exit(1);
-    }
-
-    if (argv.fix) {
-      return Promise.all(
-        fixedPackages.map(([path, json]) => writeJson(path, json, {spaces:2}))
-      );
-    }
-
-    return Promise.resolve();
-  })
-  .catch(e => {
-    console.log(e.toString());
-    process.exit(1);
-  });
+      return Promise.resolve();
+    })
+    .catch(e => {
+      log(e.toString());
+      exit(1);
+    });
+}
