@@ -79,9 +79,9 @@ export default class DOMContext extends PureComponent {
           </script>
           <script>
             (${makeHarness})({
+              el: document.getElementsByTagName("div")[0],
               window: window,
               document: document,
-              el: document.getElementsByTagName("div")[0],
               eventCallback: eventCallback,
               init: ${init},
               data: ${JSON.stringify(data)},
