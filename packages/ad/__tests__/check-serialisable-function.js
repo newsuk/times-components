@@ -6,8 +6,7 @@ export const getSerialisableFunctionErrors = f => {
   const source = String(f).replace(/^function\s*\(/, "function _(");
   return linter
     .verify(source, {
-      rules: { "no-undef": "error" },
-      globals: { window: true, document: true }
+      rules: { "no-undef": "error" }
     })
     .filter(e => !/'cov_\w+' is not defined./.test(e.message))
     .filter(e => !/'console' is not defined./.test(e.message));
