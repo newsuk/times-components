@@ -1,5 +1,3 @@
-
-
 const sectionColours = {
   news: "#13354e",
   world: "#636c17",
