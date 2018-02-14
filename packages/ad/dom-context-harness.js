@@ -30,7 +30,7 @@ const makeHarness = ({
     }
   };
   const log = (...message) => {
-    eventCallback("log", `${data.code} ad: ${message.join(" ")}`);
+    eventCallback("log", `${data.pos} ad: ${message.join(" ")}`);
   };
   return {
     execute() {
