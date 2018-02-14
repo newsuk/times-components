@@ -11,8 +11,8 @@
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
-    "dextrose-stories": "dextrose-stories",
-    "dextrose-clean": "dextrose-clean"
+    "dextrose-stories": "dextrose generate-stories $(pwd)",
+    "dextrose-clean": "dextrose clean-stories $(pwd)"
   },
   "repository": {
     "type": "git",
@@ -36,7 +36,7 @@
     "@storybook/addons": "3.3.11",
     "@storybook/react-native": "3.3.11",
     "@times-components/jest-configurator": "0.0.23",
-    "dextrose": "1.4.0",
+    "dextrose": "^1.4.6",
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "jest-context": "2.1.0",

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { StyleSheet, View } from "react-native";
-import { storiesOf } from "dextrose/storiesOfOverloader";
+import { storiesOf } from "@storybook/react-native";
 import Gradient from "./gradient";
 
 const styles = StyleSheet.create({

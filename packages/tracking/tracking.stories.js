@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Button, View } from "react-native";
-import { storiesOf } from "dextrose/storiesOfOverloader";
+import { storiesOf } from "@storybook/react-native";
 import storybookReporter from "@times-components/tealium/storybook";
 import {
   withTrackingContext,

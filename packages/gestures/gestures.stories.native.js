@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { storiesOf } from "dextrose/storiesOfOverloader";
+import { storiesOf } from "@storybook/react-native";
 import { CenteredDecorator } from "@times-components/storybook/decorators";
 import Gestures from "./gestures";
 

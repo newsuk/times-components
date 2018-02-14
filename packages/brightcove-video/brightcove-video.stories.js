@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Image, Text } from "react-native";
 
-import { storiesOf } from "dextrose/storiesOfOverloader";
+import { storiesOf } from "@storybook/react-native";
 import { action, decorateAction } from "@storybook/addon-actions";
 import BrightcoveVideo from "./brightcove-video";
 import Player from "./brightcove-player";

@@ -1,6 +1,6 @@
 import { View } from "react-native";
 import React from "react";
-import { storiesOf } from "dextrose/storiesOfOverloader";
+import { storiesOf } from "@storybook/react-native";
 import { action } from "@storybook/addon-actions";
 import { CenteredDecorator } from "@times-components/storybook/decorators";
 import Link, { TextLink } from "./link";

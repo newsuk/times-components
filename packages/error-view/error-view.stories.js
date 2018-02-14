@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import { View, ViewPropTypes, Text, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
-import { storiesOf } from "dextrose/storiesOfOverloader";
+import { storiesOf } from "@storybook/react-native";
 import BrightcoveVideo from "@times-components/brightcove-video";
 import ErrorView from "./error-view";
 
