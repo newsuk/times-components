@@ -2,6 +2,7 @@
 import chalk from "chalk";
 import options from "./cli-options";
 import checkdep from "./checkdep";
+import * as strategies from "./strategies";
 const { help } = options;
 
 function prettifyHint([name, current, target]) {
@@ -10,16 +11,15 @@ function prettifyHint([name, current, target]) {
   )}`
 }
 
-export default async function main({log, getPackages, writeJson, argv}) {
+export default async function main({log, getPackages, writeJson, argv, exit}) {
+  if (argv.help) {
+    log(help());
+    return Promise.resolve();
+  }
+
   const packagesList = await getPackages(argv.expr);
   return checkdep(packagesList, argv.strategy ? strategies[argv.strategy] : null)
     .then(({ rules, suggestions, fixedPackages, versionSets }) => {
-
-      if (argv.help) {
-        log(help());
-        return Promise.resolve();
-      }
-
       if (argv.list) {
         Object.entries(versionSets)
           .map(([name, versions]) => [name, [...versions]])

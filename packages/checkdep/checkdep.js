@@ -1,7 +1,9 @@
+import "babel-polyfill";
 import getPackages from "./get-packages";
 
 function resolveConflicts(strategy, packages) {
-  return packages.sort(strategy)[0];
+  const {name, version} = packages.sort(strategy)[0];
+  return {name, version};
 }
 
 function objectOrUndefined(dep) {
@@ -10,10 +12,10 @@ function objectOrUndefined(dep) {
 
 const count = o => Object.keys(o).length;
 
-function suggestFix(packageJson = {}, fixupMap) {
-  const fixup = dep =>
-    Object.entries(dep || {})
-      .map(([key, value]) => [key, fixupMap[key], value])
+export function suggestFix(packageJson = {}, rules = {}) {
+  const fixup = (dep = {}) =>
+    Object.entries(dep)
+      .map(([key, value]) => [key, rules[key], value])
       .filter(x => x[1])
       .filter(x => x[1] !== x[2])
       .map(([name, ver]) => ({ [name]: ver }))
@@ -55,7 +57,7 @@ export function getAllRequirements(packages) {
       )
     ])
     .flatMap(([name, version, deps]) =>
-      deps.map(([tName, tVersion]) => [name, version, tName, tVersion])
+      deps.map(([depName, depVersion]) => [name, version, depName, depVersion])
     );
 }
 
@@ -142,40 +144,49 @@ export function getTodos(packagesList, rules) {
     .filter(x => x[2])
 }
 
+export function createRules(resolved, wrong) {
+  return [].concat(
+    resolved.map(w => ({ [w.name]: w.version })),
+    wrong.map(w => ({ [w.package]: w.expected }))
+  ).reduce((a, b) => ({ ...a, ...b }), {});
+}
 
-export default async function checkdep(packagesList, strategy) {
-  const packages = packagesList.map(p=>p[1]);
-
-  const requirements = getAllRequirements(packages);
+export function applyStrategy(requirements, strategy) {
   const versionSets = computeVersionSets(requirements);
+
+  if (!strategy)
+    return {
+      versionSets,
+      resolved: []
+    };
+
   const reverseLookup = computeReverseLookupMap(requirements, versionSets);
 
   const divergent = Object
     .values(reverseLookup)
     .filter(x => x.length > 1);
 
-  const fixed = strategy
-    ? divergent.map(c => resolveConflicts(strategy, c))
-    : [];
+  return {
+    versionSets,
+    resolved: divergent.map(c => resolveConflicts(strategy, c))
+  };
+}
 
-  const wrong = findWrongVersions(packages)
+export default async function checkdep(packagesList, strategy) {
+  const packages = packagesList.map(p=>p[1]);
+  const requirements = getAllRequirements(packages);
 
-  const rules = []
-    .concat(
-      fixed.map(w => ({ [w.name]: w.version })),
-      wrong.map(w => ({ [w.package]: w.expected }))
-    )
-    .reduce((a, b) => ({ ...a, ...b }), {});
+  const { versionSets, resolved } = applyStrategy(requirements, strategy);
 
+  const wrong = findWrongVersions(packages);
+  const rules = createRules(resolved, wrong);
   const todo = getTodos(packagesList, rules);
 
   const fixedPackages = todo.map(fixTodo);
-
   const suggestions = getSuggestions(todo);
 
   return {
     versionSets,
-    divergent,
     wrong,
     rules,
     suggestions,
