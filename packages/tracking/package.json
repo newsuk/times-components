@@ -3,9 +3,10 @@
   "version": "0.6.16",
   "main": "tracking",
   "scripts": {
-    "test:native": "jest --config='./jest.config.json'",
-    "test:web": "jest --config='./jest.config.web.json'",
-    "test": "yarn test:web --ci --bail --coverage && yarn test:native --ci --bail --coverage",
+    "test": "yarn test:android --ci --bail --coverage && yarn test:ios --ci --bail --coverage && yarn test:web --ci --bail --coverage",
+    "test:android": "jest --config='./__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "flow && eslint . && yarn prettier:diff",
@@ -32,6 +33,7 @@
   "devDependencies": {
     "@storybook/react-native": "3.3.11",
     "@times-components/eslint-config-thetimes": "0.1.3",
+    "@times-components/jest-configurator": "0.0.23",
     "@times-components/storybook": "0.2.6",
     "@times-components/tealium": "0.2.1",
     "dextrose": "1.4.5",
