@@ -4,7 +4,10 @@
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "scripts": {
     "make-schema": "node ./scripts/fetch-gql-schema",
-    "test": "jest --bail --ci --coverage",
+    "test": "yarn test:android --ci --bail --coverage && yarn test:ios --ci --bail --coverage && yarn test:web --ci --bail --coverage",
+    "test:android": "jest --config='./__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff"
@@ -50,6 +53,7 @@
     "prettier": "1.8.2"
   },
   "dependencies": {
+    "@times-components/jest-configurator": "0.0.23",
     "apollo-cache-inmemory": "1.1.5",
     "apollo-client": "2.2.0",
     "graphql": "0.12.3",
