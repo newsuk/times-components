@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# 0.3.0 (2018-02-14)
+
+
+### Features
+
+* add new Ad component pieces ([#579](https://github.com/newsuk/times-components/issues/579)) ([25bb859](https://github.com/newsuk/times-components/commit/25bb859))
+* add tests to the Storybook package ([#640](https://github.com/newsuk/times-components/issues/640)) ([91df2b0](https://github.com/newsuk/times-components/commit/91df2b0))
+
+
+
+
 <a name="0.2.6"></a>
 ## [0.2.6](https://github.com/newsuk/times-components/compare/@times-components/storybook@0.2.5...@times-components/storybook@0.2.6) (2018-01-31)
 
