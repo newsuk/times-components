@@ -13,25 +13,25 @@ function prettifyHint([name, current, target]) {
 }
 
 checkdep(argv.expr, argv.strategy ? strategies[argv.strategy] : null)
-  .then(({ fixupMap, suggestions, fixedPackages, all }) => {
+  .then(({ rules, suggestions, fixedPackages, versionSets }) => {
     if (argv.list) {
-      Object.entries(all)
+      Object.entries(versionSets)
         .map(([name, versions]) => [name, [...versions]])
-        .forEach(([name, versions]) => {
+        .forEach(([name, versions], i) => {
           const color = (() => {
-            if (versions.length > 1 && !fixupMap[name]) {
+            if (versions.length > 1 && !rules[name]) {
               return chalk.red;
             }
 
-            return !fixupMap[name] ? chalk.green : chalk.yellow;
+            return !rules[name] ? chalk.green : chalk.yellow;
           })();
 
-          console.log(name, color(versions.join(" ")));
+          console.log(chalk.blue(i+1), name, color(versions.join(" ")));
         });
     }
 
     if (argv.showRules) {
-      console.log(fixupMap);
+      console.log(rules);
     }
 
     if (argv.hint || argv.fix) {
