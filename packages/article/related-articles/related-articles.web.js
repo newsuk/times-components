@@ -42,11 +42,14 @@ const RelatedArticles = ({ articles, onPress, template }) => {
 
     return articleArray.reduce((prev, current, index) => {
       const hasBorder = articleCount > 1 && index > 0;
-      return [
-        ...prev,
-        hasBorder ? <StyledSeparator key={`separator-${current.key}`} /> : null,
-        current
-      ];
+      if (hasBorder) {
+        return [
+          ...prev,
+          <StyledSeparator key={`separator-${current.key}`} />,
+          current
+        ];
+      }
+      return [...prev, current];
     }, articleArray[0]);
   };
 
