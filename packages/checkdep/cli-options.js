@@ -26,7 +26,7 @@ export default optimist
     list: false,
     fix: false,
     bail: false,
-    hint: true,
+    hint: false,
     showRules: false,
     strategy: undefined
   });
