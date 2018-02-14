@@ -8,17 +8,17 @@
 // WEB: window and document objects are shared between the ads components
 
 const makeHarness = ({
-  el,
-  data,
-  init,
-  window,
   document,
+  window,
+  el,
+  init,
+  data,
   scriptUris,
   globalNames,
   eventCallback
 }) => {
-  let renderCompleteCalled = false;
   let initCalled = false;
+  let renderCompleteCalled = false;
 
   const withCatch = action => {
     try {
