@@ -41,7 +41,7 @@ const RelatedArticleItem = ({
               <ResponsiveHeadline>
                 <Text
                   accessibilityRole="heading"
-                  aria-level={3}
+                  aria-level="3"
                   style={styles.headline}
                 >
                   {headline}
