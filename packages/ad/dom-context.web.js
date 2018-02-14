@@ -12,6 +12,8 @@ export default class DOMContext extends React.PureComponent {
       el: this.div,
       eventCallback: this.eventCallback,
       id,
+      window,
+      document,
       scriptUris,
       globalNames,
       init,

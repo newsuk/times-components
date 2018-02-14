@@ -45,12 +45,12 @@ exports[`Ad renders with more than one ad slot 1`] = `
           </script>
           <script>
             (mockHarness)({
-              el: document.getElementsByTagName(\\"div\\")[0],
               window: window,
               document: document,
+              el: document.getElementsByTagName(\\"div\\")[0],
               eventCallback: eventCallback,
               init: function () {return \\"mockInit\\";},
-              data: {\\"config\\":{\\"code\\":\\"ad-header\\",\\"sizes\\":[[320,50],[320,48],[300,50]],\\"maxSizes\\":{\\"width\\":320,\\"height\\":50},\\"mappings\\":[{\\"width\\":0,\\"height\\":0,\\"sizes\\":[]},{\\"width\\":300,\\"height\\":100,\\"sizes\\":[[320,50],[320,48],[300,50]]},{\\"width\\":768,\\"height\\":90,\\"sizes\\":[[728,90]]},{\\"width\\":1024,\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]]}]},\\"code\\":\\"ad-header\\",\\"networkId\\":\\"mock-network-id\\",\\"adUnit\\":\\"mock-ad-unit\\",\\"contextUrl\\":\\"\\",\\"section\\":\\"mock-section\\",\\"pos\\":\\"mock-pos\\",\\"sizingMap\\":[{\\"width\\":0,\\"height\\":0,\\"sizes\\":[]},{\\"width\\":300,\\"height\\":100,\\"sizes\\":[[320,50],[320,48],[300,50]]},{\\"width\\":768,\\"height\\":90,\\"sizes\\":[[728,90]]},{\\"width\\":1024,\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]]}],\\"pageTargeting\\":{\\"title\\":\\"This is title\\",\\"label\\":\\"This is label\\"},\\"slotOptions\\":{\\"sec_id\\":\\"null\\",\\"section\\":\\"\\",\\"path\\":\\"/edition/news/\\",\\"zone\\":\\"current_edition\\",\\"slot\\":\\"\\",\\"timestestgroup\\":4,\\"pos\\":\\"mock-pos\\"}},
+              data: {\\"config\\":{\\"pos\\":\\"header\\",\\"sizes\\":[[320,50],[320,48],[300,50]],\\"maxSizes\\":{\\"width\\":320,\\"height\\":50},\\"mappings\\":[{\\"width\\":0,\\"height\\":0,\\"sizes\\":[]},{\\"width\\":300,\\"height\\":100,\\"sizes\\":[[320,50],[320,48],[300,50]]},{\\"width\\":768,\\"height\\":90,\\"sizes\\":[[728,90]]},{\\"width\\":1024,\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]]}]},\\"pos\\":\\"header\\",\\"networkId\\":\\"25436805\\",\\"adUnit\\":\\"d.thetimes.co.uk\\",\\"contextUrl\\":\\"\\",\\"section\\":\\"mock-section\\",\\"sizingMap\\":[{\\"width\\":0,\\"height\\":0,\\"sizes\\":[]},{\\"width\\":300,\\"height\\":100,\\"sizes\\":[[320,50],[320,48],[300,50]]},{\\"width\\":768,\\"height\\":90,\\"sizes\\":[[728,90]]},{\\"width\\":1024,\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]]}],\\"pageTargeting\\":{\\"title\\":\\"This is title\\",\\"label\\":\\"This is label\\"},\\"slotTargeting\\":{\\"section\\":\\"news\\",\\"pos\\":\\"header\\"}},
               scriptUris: [{\\"uri\\":\\"https://newscorp.grapeshot.co.uk/thetimes/channels.cgi?url=\\",\\"canRequestFail\\":true,\\"timeout\\":500},{\\"uri\\":\\"https://www.googletagservices.com/tag/js/gpt.js\\"}],
               globalNames: [\\"googletag\\",\\"gs_channels\\"]
             }).execute();
@@ -120,12 +120,12 @@ exports[`Ad renders with more than one ad slot 1`] = `
           </script>
           <script>
             (mockHarness)({
-              el: document.getElementsByTagName(\\"div\\")[0],
               window: window,
               document: document,
+              el: document.getElementsByTagName(\\"div\\")[0],
               eventCallback: eventCallback,
               init: function () {return \\"mockInit\\";},
-              data: {\\"config\\":{\\"code\\":\\"intervention\\",\\"sizes\\":[[300,250],[320,50],[320,48],[300,50]],\\"maxSizes\\":{\\"width\\":320,\\"height\\":250},\\"mappings\\":[{\\"width\\":0,\\"height\\":0,\\"sizes\\":[]},{\\"width\\":300,\\"height\\":100,\\"sizes\\":[[300,250],[320,50],[320,48],[300,50]]},{\\"width\\":768,\\"height\\":90,\\"sizes\\":[[728,90]]},{\\"width\\":1024,\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]]}]},\\"code\\":\\"intervention\\",\\"networkId\\":\\"mock-network-id\\",\\"adUnit\\":\\"mock-ad-unit\\",\\"contextUrl\\":\\"\\",\\"section\\":\\"mock-section\\",\\"pos\\":\\"mock-pos\\",\\"sizingMap\\":[{\\"width\\":0,\\"height\\":0,\\"sizes\\":[]},{\\"width\\":300,\\"height\\":100,\\"sizes\\":[[300,250],[320,50],[320,48],[300,50]]},{\\"width\\":768,\\"height\\":90,\\"sizes\\":[[728,90]]},{\\"width\\":1024,\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]]}],\\"pageTargeting\\":{\\"title\\":\\"This is title\\",\\"label\\":\\"This is label\\"},\\"slotOptions\\":{\\"sec_id\\":\\"null\\",\\"section\\":\\"\\",\\"path\\":\\"/edition/news/\\",\\"zone\\":\\"current_edition\\",\\"slot\\":\\"\\",\\"timestestgroup\\":4,\\"pos\\":\\"mock-pos\\"}},
+              data: {\\"config\\":{\\"pos\\":\\"intervention\\",\\"sizes\\":[[300,250],[320,50],[320,48],[300,50]],\\"maxSizes\\":{\\"width\\":320,\\"height\\":250},\\"mappings\\":[{\\"width\\":0,\\"height\\":0,\\"sizes\\":[]},{\\"width\\":300,\\"height\\":100,\\"sizes\\":[[300,250],[320,50],[320,48],[300,50]]},{\\"width\\":768,\\"height\\":90,\\"sizes\\":[[728,90]]},{\\"width\\":1024,\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]]}]},\\"pos\\":\\"intervention\\",\\"networkId\\":\\"25436805\\",\\"adUnit\\":\\"d.thetimes.co.uk\\",\\"contextUrl\\":\\"\\",\\"section\\":\\"mock-section\\",\\"sizingMap\\":[{\\"width\\":0,\\"height\\":0,\\"sizes\\":[]},{\\"width\\":300,\\"height\\":100,\\"sizes\\":[[300,250],[320,50],[320,48],[300,50]]},{\\"width\\":768,\\"height\\":90,\\"sizes\\":[[728,90]]},{\\"width\\":1024,\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]]}],\\"pageTargeting\\":{\\"title\\":\\"This is title\\",\\"label\\":\\"This is label\\"},\\"slotTargeting\\":{\\"section\\":\\"news\\",\\"pos\\":\\"intervention\\"}},
               scriptUris: [{\\"uri\\":\\"https://newscorp.grapeshot.co.uk/thetimes/channels.cgi?url=\\",\\"canRequestFail\\":true,\\"timeout\\":500},{\\"uri\\":\\"https://www.googletagservices.com/tag/js/gpt.js\\"}],
               globalNames: [\\"googletag\\",\\"gs_channels\\"]
             }).execute();
@@ -199,12 +199,12 @@ exports[`Ad renders with one ad slot 1`] = `
           </script>
           <script>
             (mockHarness)({
-              el: document.getElementsByTagName(\\"div\\")[0],
               window: window,
               document: document,
+              el: document.getElementsByTagName(\\"div\\")[0],
               eventCallback: eventCallback,
               init: function () {return \\"mockInit\\";},
-              data: {\\"config\\":{\\"code\\":\\"ad-header\\",\\"sizes\\":[[320,50],[320,48],[300,50]],\\"maxSizes\\":{\\"width\\":320,\\"height\\":50},\\"mappings\\":[{\\"width\\":0,\\"height\\":0,\\"sizes\\":[]},{\\"width\\":300,\\"height\\":100,\\"sizes\\":[[320,50],[320,48],[300,50]]},{\\"width\\":768,\\"height\\":90,\\"sizes\\":[[728,90]]},{\\"width\\":1024,\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]]}]},\\"code\\":\\"ad-header\\",\\"networkId\\":\\"mock-network-id\\",\\"adUnit\\":\\"mock-ad-unit\\",\\"contextUrl\\":\\"\\",\\"section\\":\\"mock-section\\",\\"pos\\":\\"mock-pos\\",\\"sizingMap\\":[{\\"width\\":0,\\"height\\":0,\\"sizes\\":[]},{\\"width\\":300,\\"height\\":100,\\"sizes\\":[[320,50],[320,48],[300,50]]},{\\"width\\":768,\\"height\\":90,\\"sizes\\":[[728,90]]},{\\"width\\":1024,\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]]}],\\"pageTargeting\\":{\\"title\\":\\"This is title\\",\\"label\\":\\"This is label\\"},\\"slotOptions\\":{\\"sec_id\\":\\"null\\",\\"section\\":\\"\\",\\"path\\":\\"/edition/news/\\",\\"zone\\":\\"current_edition\\",\\"slot\\":\\"\\",\\"timestestgroup\\":4,\\"pos\\":\\"mock-pos\\"}},
+              data: {\\"config\\":{\\"pos\\":\\"header\\",\\"sizes\\":[[320,50],[320,48],[300,50]],\\"maxSizes\\":{\\"width\\":320,\\"height\\":50},\\"mappings\\":[{\\"width\\":0,\\"height\\":0,\\"sizes\\":[]},{\\"width\\":300,\\"height\\":100,\\"sizes\\":[[320,50],[320,48],[300,50]]},{\\"width\\":768,\\"height\\":90,\\"sizes\\":[[728,90]]},{\\"width\\":1024,\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]]}]},\\"pos\\":\\"header\\",\\"networkId\\":\\"25436805\\",\\"adUnit\\":\\"d.thetimes.co.uk\\",\\"contextUrl\\":\\"\\",\\"section\\":\\"mock-section\\",\\"sizingMap\\":[{\\"width\\":0,\\"height\\":0,\\"sizes\\":[]},{\\"width\\":300,\\"height\\":100,\\"sizes\\":[[320,50],[320,48],[300,50]]},{\\"width\\":768,\\"height\\":90,\\"sizes\\":[[728,90]]},{\\"width\\":1024,\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]]}],\\"pageTargeting\\":{\\"title\\":\\"This is title\\",\\"label\\":\\"This is label\\"},\\"slotTargeting\\":{\\"section\\":\\"news\\",\\"pos\\":\\"header\\"}},
               scriptUris: [{\\"uri\\":\\"https://newscorp.grapeshot.co.uk/thetimes/channels.cgi?url=\\",\\"canRequestFail\\":true,\\"timeout\\":500},{\\"uri\\":\\"https://www.googletagservices.com/tag/js/gpt.js\\"}],
               globalNames: [\\"googletag\\",\\"gs_channels\\"]
             }).execute();
