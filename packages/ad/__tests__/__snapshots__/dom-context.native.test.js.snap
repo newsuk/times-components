@@ -37,9 +37,9 @@ exports[`DOMContext Native renders correctly 1`] = `
           </script>
           <script>
             (mockHarness)({
+              el: document.getElementsByTagName(\\"div\\")[0],
               window: window,
               document: document,
-              el: document.getElementsByTagName(\\"div\\")[0],
               eventCallback: eventCallback,
               init: function init() {},
               data: {\\"foo\\":\\"bar\\"},
