@@ -20,38 +20,40 @@ const RelatedArticles = ({ articles, onPress, template }) => {
   const StyledImageContainer = ImageContainer(articleCount);
   const StyledSummaryContainer = SummaryContainer(articleCount);
 
+  const renderArticles = () => {
+    const articleArray = articles.map((article, index) => {
+      const hasPadding = index < articleCount - 1;
+      const StyledRelatedArticleItemContainer = RelatedArticleItemContainer(
+        hasPadding
+      );
+
+      return (
+        <StyledRelatedArticleItemContainer key={article.id}>
+          <RelatedArticleItem
+            article={article}
+            onPress={onPress}
+            styledRelatedArticleContainer={StyledRelatedArticleContainer}
+            styledImageContainer={StyledImageContainer}
+            styledSummaryContainer={StyledSummaryContainer}
+          />
+        </StyledRelatedArticleItemContainer>
+      );
+    });
+
+    return articleArray.reduce((prev, current, index) => {
+      const hasBorder = articleCount > 1 && index > 0;
+      return [
+        ...prev,
+        hasBorder ? <StyledSeparator key={`separator-${current.key}`} /> : null,
+        current
+      ];
+    }, articleArray[0]);
+  };
+
   return (
     <View style={{ marginTop: 10 }}>
       <RelatedArticlesHeading />
-      <Slice template={template}>
-        {articles
-          .map((article, index) => {
-            const hasPadding = index < articleCount - 1;
-            const StyledRelatedArticleItemContainer = RelatedArticleItemContainer(
-              hasPadding
-            );
-
-            return (
-              <StyledRelatedArticleItemContainer key={article.id}>
-                <RelatedArticleItem
-                  article={article}
-                  onPress={onPress}
-                  styledRelatedArticleContainer={StyledRelatedArticleContainer}
-                  styledImageContainer={StyledImageContainer}
-                  styledSummaryContainer={StyledSummaryContainer}
-                />
-              </StyledRelatedArticleItemContainer>
-            );
-          })
-          .reduce((prev, current, index) => {
-            const hasBorder = articleCount > 1 && index > 0;
-            return [
-              prev,
-              hasBorder ? <StyledSeparator key={`separator-${prev.id}`} /> : "",
-              current
-            ];
-          })}
-      </Slice>
+      <Slice template={template}>{renderArticles()}</Slice>
     </View>
   );
 };
