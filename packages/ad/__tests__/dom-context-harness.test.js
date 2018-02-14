@@ -28,12 +28,11 @@ describe("DOMContext harness", () => {
 
   const makeHarness = args =>
     _makeHarness({
-      document,
-      window,
       el: args.el || document.createElement("div"),
       id: "dom-context-id",
       scriptUris: [],
       data: {},
+      eventCallback: () => {},
       init: () => {},
       globalNames: [],
       ...args
