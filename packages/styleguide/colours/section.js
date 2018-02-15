@@ -38,5 +38,5 @@ export default sectionColours;
 - Arts Features
 - Today's Magazines
 
-James Miller asked Massimo Hamilton on 14/02 for missing values
+James Miller asked Massimo Hamilton on 14/02 for missing values. To be covered in another PR.
 */
