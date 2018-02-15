@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Subscriber } from "react-broadcast";
 import { View, ViewPropTypes, Dimensions, StyleSheet } from "react-native";
 import { getSlotConfig, getSizeMaps } from "./generate-config";
+import { prebidConfig, getPrebidSlotConfig } from "./prebid-config";
 import Placeholder from "./placeholder";
 import DOMContext from "./dom-context";
 import adInit from "./ad-init";
@@ -21,10 +22,12 @@ class Ad extends Component {
     super(props);
     const { width } = Dimensions.get("window");
     this.config = getSlotConfig(props.section, props.pos, width);
-
+    this.prebidConfig = prebidConfig;
     this.state = {
       adReady: false
     };
+    // TODO check article
+    this.slots.push(getPrebidSlotConfig(this.props.pos, "article"));
   }
 
   setAdReady = () => {
@@ -36,6 +39,9 @@ class Ad extends Component {
   renderAd(adConfig) {
     const data = {
       config: this.config,
+      prebidConfig: this.prebidConfig,
+      // TODO
+      slots: [],
       pos: this.props.pos,
       networkId: adConfig.networkId,
       adUnit: adConfig.adUnit,
@@ -51,8 +57,17 @@ class Ad extends Component {
     const sizeProps = !this.state.adReady
       ? { width: 0, height: 0 }
       : { height: this.config.maxSizes.height };
+    const scriptsToLoad = [];
 
-    const mainScripts = [
+    if (data.amazonAccountID) {
+      scriptsToLoad.push({
+        uri: "https://c.amazon-adsystem.com/aax2/apstag.js"
+      });
+    }
+    scriptsToLoad.push(
+      {
+        uri: "https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js"
+      },
       {
         uri: `https://newscorp.grapeshot.co.uk/thetimes/channels.cgi?url=${encodeURIComponent(
           data.contextUrl
@@ -63,12 +78,12 @@ class Ad extends Component {
       {
         uri: "https://www.googletagservices.com/tag/js/gpt.js"
       }
-    ];
+    );
     const webviewComponent = (
       <DOMContext
         data={data}
-        scriptUris={mainScripts}
-        globalNames={["googletag", "gs_channels"]}
+        scriptUris={scriptsToLoad}
+        globalNames={["googletag", "gs_channels", "pbjs"]}
         baseUrl={this.props.baseUrl}
         init={adInit}
         onRenderComplete={this.setAdReady}
@@ -108,7 +123,8 @@ Ad.propTypes = {
   section: PropTypes.string,
   baseUrl: PropTypes.string,
   contextUrl: PropTypes.string,
-  style: ViewPropTypesStyle
+  style: ViewPropTypesStyle,
+  amazonAccountID: PropTypes.string
 };
 
 // NOTE, these values are temporary, adding real values (or removing defaults
@@ -119,7 +135,8 @@ Ad.defaultProps = {
   section: "article",
   baseUrl: "https://www.thetimes.co.uk/",
   contextUrl: "",
-  style: null
+  style: null,
+  amazonAccountID: null
 };
 
 export default Ad;

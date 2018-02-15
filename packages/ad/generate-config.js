@@ -30,7 +30,7 @@ const getSizeMaps = pos => {
   }
 };
 
-// Returns the valid ad sizes given the ad code and window width
+// Returns the valid ad sizes given the ad pos and window width
 const getAdSizes = (pos, width) => {
   const sizeMap = getSizeMaps(pos);
   for (let i = sizeMap.length - 1; i > 0; i -= 1) {

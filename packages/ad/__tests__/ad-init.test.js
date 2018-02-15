@@ -160,4 +160,47 @@ describe("Ad init", () => {
       new Error("execute() has already been called")
     );
   });
+
+  it("get the ad unit path", () => {
+    expect(init.getAdUnitPath(["3048", "d.thetimes.co.uk"])).toEqual(
+      "/3048/d.thetimes.co.uk"
+    );
+  });
+
+  it("get the ad unit path with a commercial section", () => {
+    expect(init.getAdUnitPath(["3048", "d.thetimes.co.uk", "news"])).toEqual(
+      "/3048/d.thetimes.co.uk/news"
+    );
+  });
+
+  it("get Amazon Config without a commercial section", () => {
+    const adsSlot = [{ code: "ad-header", sizes: [[970, 250], [970, 90]] }];
+    const amazonSlotConfig = [
+      {
+        slotID: "ad-header",
+        slotName: "/3048/d.thetimes.co.uk",
+        sizes: [[970, 250], [970, 90]]
+      }
+    ];
+    expect(init.getAmazonConfig(adsSlot, "3048", "d.thetimes.co.uk")).toEqual(
+      amazonSlotConfig
+    );
+  });
+
+  it("get Amazon Config with a commercial section", () => {
+    expect(
+      init.getAmazonConfig([], "3048", "d.thetimes.co.uk", "news")
+    ).toEqual("");
+  });
+
+  it.only("setup and init Amazon apstag", () => {
+    expect(window.apstag).toEqual(undefined);
+    init.setupApstag();
+    expect(window.apstag._Q).toEqual([]); // eslint-disable-line no-underscore-dangle
+    init.configureApstag("3360", 3000);
+    expect(window.apstag._Q).toEqual([
+      // eslint-disable-line no-underscore-dangle
+      ["i", { pubID: "3360", adServer: "googletag", bidTimeout: 3000 }]
+    ]);
+  });
 });
