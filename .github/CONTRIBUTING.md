@@ -73,13 +73,8 @@ npm
 
 ## Component categories
 
-When creating a new component you should specify the most suitable category in the stories file. For example to add
-a `Slider` component to the the `Composed` category you would add:
-
-```
-storiesOf("Composed/Slider", module)
-```
-
+When creating a new component you should specify the most suitable category in 
+the stories file. 
 The current categories are:
 
 * <b>Primitive</b> - components that are the basic building blocks from which
@@ -89,6 +84,13 @@ other components can be composed
 Composed and Primitive components
 * <b>Helpers</b> - tools, utilities and helpers
 
+For example to add
+a `Slider` component to the the `Composed` category you just prefix the category 
+name in the `slider.stories.js` file.
+
+```
+storiesOf("Composed/Slider", module)
+```
 
 
 ## Submitting a Pull Request
