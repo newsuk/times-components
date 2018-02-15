@@ -1,0 +1,294 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article Byline test on android renders correctly with a single author 1`] = `
+<Text
+  accessibilityRole="link"
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  href="/profile/alexandra-frean"
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "textDecorationLine": "underline",
+      },
+      Object {
+        "color": "#069",
+      },
+      undefined,
+    ]
+  }
+>
+  Alexandra Frean
+</Text>
+`;
+
+exports[`Article Byline test on android renders correctly with a single inline element 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+  Lindsay McIntosh Scottish Political Editor
+</Text>
+`;
+
+exports[`Article Byline test on android renders correctly with an empty AST (empty byline on DB) 1`] = `null`;
+
+exports[`Article Byline test on android renders correctly with multiple authors separated by spaces 1`] = `
+Array [
+  <Text
+    accessibilityRole="link"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    href="/profile/camilla-long"
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "textDecorationLine": "underline",
+        },
+        Object {
+          "color": "#069",
+        },
+        undefined,
+      ]
+    }
+  >
+    Camilla Long
+  </Text>,
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+     
+  </Text>,
+  <Text
+    accessibilityRole="link"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    href="/profile/mike-atherton"
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "textDecorationLine": "underline",
+        },
+        Object {
+          "color": "#069",
+        },
+        undefined,
+      ]
+    }
+  >
+    Mike Atherton
+  </Text>,
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+     
+  </Text>,
+  <Text
+    accessibilityRole="link"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    href="/profile/alexandra-frean"
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "textDecorationLine": "underline",
+        },
+        Object {
+          "color": "#069",
+        },
+        undefined,
+      ]
+    }
+  >
+    Alexandra Frean
+  </Text>,
+]
+`;
+
+exports[`Article Byline test on android renders correctly with multiple authors separated by text with commas 1`] = `
+Array [
+  <Text
+    accessibilityRole="link"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    href="/profile/camilla-long"
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "textDecorationLine": "underline",
+        },
+        Object {
+          "color": "#069",
+        },
+        undefined,
+      ]
+    }
+  >
+    Camilla Long
+  </Text>,
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    , 
+  </Text>,
+  <Text
+    accessibilityRole="link"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    href="/profile/mike-atherton"
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "textDecorationLine": "underline",
+        },
+        Object {
+          "color": "#069",
+        },
+        undefined,
+      ]
+    }
+  >
+    Mike Atherton
+  </Text>,
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    , 
+  </Text>,
+  <Text
+    accessibilityRole="link"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    href="/profile/alexandra-frean"
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "textDecorationLine": "underline",
+        },
+        Object {
+          "color": "#069",
+        },
+        undefined,
+      ]
+    }
+  >
+    Alexandra Frean
+  </Text>,
+]
+`;
+
+exports[`Article Byline test on android renders correctly with styles 1`] = `
+<Text
+  accessibilityRole="link"
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  href="/profile/alexandra-frean"
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "textDecorationLine": "underline",
+      },
+      Object {
+        "color": "#069",
+      },
+      Object {
+        "color": "red",
+        "textDecorationLine": "underline",
+      },
+    ]
+  }
+>
+  Alexandra Frean
+</Text>
+`;
+
+exports[`Article Byline test on android renders correctly with the author at the end 1`] = `
+Array [
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    RBS Six Nations 
+  </Text>,
+  <Text
+    accessibilityRole="link"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    href="/profile/mike-atherton"
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "textDecorationLine": "underline",
+        },
+        Object {
+          "color": "#069",
+        },
+        undefined,
+      ]
+    }
+  >
+    Mike Atherton
+  </Text>,
+]
+`;
+
+exports[`Article Byline test on android renders correctly with the author in the begining 1`] = `
+Array [
+  <Text
+    accessibilityRole="link"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    href="/profile/camilla-long"
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "textDecorationLine": "underline",
+        },
+        Object {
+          "color": "#069",
+        },
+        undefined,
+      ]
+    }
+  >
+    Camilla Long
+  </Text>,
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    , Environment Editor
+  </Text>,
+]
+`;

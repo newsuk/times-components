@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Article Byline Tests renders correctly with a single author 1`] = `
+exports[`Article Byline test on web renders correctly with a single author 1`] = `
 <a
   className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-1ncyl3j rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
   dir="auto"
@@ -13,15 +13,15 @@ exports[`Article Byline Tests renders correctly with a single author 1`] = `
 </a>
 `;
 
-exports[`Article Byline Tests renders correctly with a single inline element 1`] = `
+exports[`Article Byline test on web renders correctly with a single inline element 1`] = `
 <span>
   Lindsay McIntosh Scottish Political Editor
 </span>
 `;
 
-exports[`Article Byline Tests renders correctly with an empty AST (empty byline on DB) 1`] = `null`;
+exports[`Article Byline test on web renders correctly with an empty AST (empty byline on DB) 1`] = `null`;
 
-exports[`Article Byline Tests renders correctly with multiple authors separated by spaces 1`] = `
+exports[`Article Byline test on web renders correctly with multiple authors separated by spaces 1`] = `
 Array [
   <a
     className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-1ncyl3j rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
@@ -62,7 +62,7 @@ Array [
 ]
 `;
 
-exports[`Article Byline Tests renders correctly with multiple authors separated by text with commas 1`] = `
+exports[`Article Byline test on web renders correctly with multiple authors separated by text with commas 1`] = `
 Array [
   <a
     className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-1ncyl3j rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
@@ -103,7 +103,7 @@ Array [
 ]
 `;
 
-exports[`Article Byline Tests renders correctly with styles 1`] = `
+exports[`Article Byline test on web renders correctly with styles 1`] = `
 <a
   className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-1ncyl3j rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
   dir="auto"
@@ -121,7 +121,7 @@ exports[`Article Byline Tests renders correctly with styles 1`] = `
 </a>
 `;
 
-exports[`Article Byline Tests renders correctly with the author at the end 1`] = `
+exports[`Article Byline test on web renders correctly with the author at the end 1`] = `
 Array [
   <span>
     RBS Six Nations 
@@ -139,7 +139,7 @@ Array [
 ]
 `;
 
-exports[`Article Byline Tests renders correctly with the author in the begining 1`] = `
+exports[`Article Byline test on web renders correctly with the author in the begining 1`] = `
 Array [
   <a
     className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-1ncyl3j rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
