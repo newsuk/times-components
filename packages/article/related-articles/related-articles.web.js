@@ -28,7 +28,10 @@ const RelatedArticles = ({ articles, onPress, template }) => {
       );
 
       return (
-        <StyledRelatedArticleItemContainer key={article.id}>
+        <StyledRelatedArticleItemContainer
+          accessibilityRole="article"
+          key={article.id}
+        >
           <RelatedArticleItem
             article={article}
             onPress={onPress}
