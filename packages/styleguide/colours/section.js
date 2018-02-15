@@ -1,42 +1,36 @@
 const sectionColours = {
-  news: "#13354e",
-  world: "#636c17",
+  artsfeatures: "#622956",
   business: "#005b8d",
-  sport: "#008347",
-  register: "#6c6c69",
-  Comment: "#850029",
-  comment: "#850029",
-  times2: "#622956",
-  thegame: "#006469",
   bricksmortar: "#006469",
-  weekend: "#05829a",
-  saturdayreview: "#a31d24",
-  money: "#006a74",
-  thetimesmagazine: "#1d1d1b",
-  puzzle: "#c74600",
+  comment: "#850029",
+  Comment: "#850029",
   culture: "#7b0046",
+  defcon: "#FF1D25",
+  driving: "#C04605",
+  focus: "#CC0000",
+  gardening: "#00313B",
   home: "#8d724d",
-  thesundaytimesmagazine: "#1d1d1b",
+  ireland: "#004E45",
+  law: "#691D26",
+  leaders: "#F4F2E8",
+  money: "#006a74",
+  news: "#13354e",
   newsreview: "#004d6d",
+  puzzle: "#c74600",
+  register: "#6c6c69",
+  saturdayreview: "#a31d24",
+  sport: "#008347",
   style: "#bc3385",
+  techgames: "#1A1F24",
+  thedish: "#db133b",
+  thegame: "#006469",
+  thetimesmagazine: "#1d1d1b",
+  thesundaytimesmagazine: "#1d1d1b",
+  times2: "#622956",
+  todaysmagazines: "#1D1D1B",
   travel: "#2c79ad",
-  thedish: "#db133b"
+  weekend: "#05829a",
+  world: "#636c17"
 };
 
 export default sectionColours;
-
-/* Missing Sections
-- Law
-- Register
-- Ireland
-- Leaders
-- Defcon
-- Focus
-- Tech Games
-- Gardening
-- Driving
-- Arts Features
-- Today's Magazines
-
-James Miller asked Massimo Hamilton on 14/02 for missing values. To be covered in another PR.
-*/
