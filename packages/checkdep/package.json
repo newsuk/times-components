@@ -9,6 +9,9 @@
     "lint": "eslint . && npm run prettier:diff",
     "test": "jest --bail --ci --coverage"
   },
+  "bin": {
+    "checkdep": "./cli.js"
+  },
   "jest": {
     "preset": "react-native",
     "rootDir": "../../",
