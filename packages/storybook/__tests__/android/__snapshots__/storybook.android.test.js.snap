@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storybook Decorator tests on android should render a Bar Spacing Decorator 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "marginTop": 20,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    I am in Storybook!
+  </Text>
+</View>
+`;
+
+exports[`Storybook Decorator tests on android should render a Centered Decorator 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    I am in Storybook!
+  </Text>
+</View>
+`;
+
+exports[`Storybook Decorator tests on android should render a Lateral Spacing Decorator 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "marginLeft": 20,
+      "marginRight": 20,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    I am in Storybook!
+  </Text>
+</View>
+`;
+
+exports[`Storybook Decorator tests on android should render a White Background Decorator 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "bottom": 0,
+      "flex": 1,
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    I am in Storybook!
+  </Text>
+</View>
+`;

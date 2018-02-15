@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.42.7"></a>
+## [0.42.7](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.42.5...@times-components/author-profile@0.42.7) (2018-02-14)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.42.6"></a>
+## [0.42.6](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.42.5...@times-components/author-profile@0.42.6) (2018-02-14)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.42.5"></a>
+## [0.42.5](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.42.3...@times-components/author-profile@0.42.5) (2018-02-13)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.42.4"></a>
+## [0.42.4](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.42.3...@times-components/author-profile@0.42.4) (2018-02-13)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.42.3"></a>
+## [0.42.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.42.2...@times-components/author-profile@0.42.3) (2018-02-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.42.2"></a>
+## [0.42.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.42.1...@times-components/author-profile@0.42.2) (2018-02-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.42.1"></a>
+## [0.42.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.42.0...@times-components/author-profile@0.42.1) (2018-02-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
 <a name="0.42.0"></a>
 # [0.42.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.41.22...@times-components/author-profile@0.42.0) (2018-02-09)
 

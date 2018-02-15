@@ -12,7 +12,6 @@ cp ios/main.jsbundle.meta ios/build/Build/Products/Release-iphonesimulator/story
 cp ios/main.jsbundle ios/build/Build/Products/Release-iphonesimulator/storybooknative.app/
 react-native run-ios --no-packager --configuration Release
 PACKAGER_PID=$!
-LOGLEVEL=verbose npx dextrose run --config ./dextrose/dextrose.ios.js --snapshotWait 2000
-npx lerna run dextrose-clean
+npx dextrose run --config ./dextrose/dextrose.ios.js --snapshotWait 2000
 kill -9 $PACKAGER_PID
 xcrun simctl shutdown booted

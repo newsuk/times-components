@@ -20,7 +20,7 @@ const adInit = args => {
 
       window.setTimeout(() => {
         googletag.cmd.push(() => {
-          googletag.display(data.config.code);
+          googletag.display(data.config.pos);
           googletag.pubads().refresh();
         });
       }, 0);
@@ -28,12 +28,12 @@ const adInit = args => {
 
     slotInit() {
       googletag.cmd.push(() => {
-        const slotName = `/${data.networkId}/${data.adUnit}/${data.code}`;
+        const slotName = `/${data.networkId}/${data.adUnit}/${data.pos}`;
 
         const slot = googletag.defineSlot(
           slotName,
           data.config.sizes,
-          data.config.code
+          data.config.pos
         );
         if (!slot) {
           throw new Error(
@@ -46,7 +46,7 @@ const adInit = args => {
 
         el.innerHTML = `
           <div
-            id="${data.code}"
+            id="${data.pos}"
             style="display: table-cell; vertical-align: middle"
           ></div>
         `;
@@ -59,7 +59,7 @@ const adInit = args => {
         );
         slot.defineSizeMapping(mapping.build());
 
-        Object.entries(data.slotOptions || {}).forEach(entry =>
+        Object.entries(data.slotTargeting || {}).forEach(entry =>
           slot.setTargeting(entry[0], entry[1])
         );
 

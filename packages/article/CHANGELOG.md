@@ -3,6 +3,74 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.36.0"></a>
+# [0.36.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.35.1...@times-components/article@0.36.0) (2018-02-14)
+
+
+### Features
+
+* add semantic elements to related articles ([#645](https://github.com/newsuk/times-components/issues/645)) ([77901b9](https://github.com/newsuk/times-components/commit/77901b9))
+
+
+
+
+<a name="0.35.2"></a>
+## [0.35.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.35.1...@times-components/article@0.35.2) (2018-02-14)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.35.1"></a>
+## [0.35.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.35.0...@times-components/article@0.35.1) (2018-02-13)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.35.0"></a>
+# [0.35.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.34.0...@times-components/article@0.35.0) (2018-02-13)
+
+
+### Features
+
+* provide the layout for two related articles ([#621](https://github.com/newsuk/times-components/issues/621)) ([fd10b51](https://github.com/newsuk/times-components/commit/fd10b51)), closes [#585](https://github.com/newsuk/times-components/issues/585)
+
+
+
+
+<a name="0.34.0"></a>
+# [0.34.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.33.1...@times-components/article@0.34.0) (2018-02-13)
+
+
+### Features
+
+* change ad slot targeting config ([#626](https://github.com/newsuk/times-components/issues/626)) ([d651c08](https://github.com/newsuk/times-components/commit/d651c08))
+
+
+
+
+<a name="0.33.1"></a>
+## [0.33.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.33.0...@times-components/article@0.33.1) (2018-02-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.33.0"></a>
+# [0.33.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.32.9...@times-components/article@0.33.0) (2018-02-09)
+
+
+### Features
+
+* add ad composer ([#611](https://github.com/newsuk/times-components/issues/611)) ([94b8f41](https://github.com/newsuk/times-components/commit/94b8f41))
+
+
+
+
 <a name="0.32.9"></a>
 ## [0.32.9](https://github.com/newsuk/times-components/compare/@times-components/article@0.32.8...@times-components/article@0.32.9) (2018-02-09)
 

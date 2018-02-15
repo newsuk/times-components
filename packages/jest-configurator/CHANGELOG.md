@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.0"></a>
+# [0.1.0](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.0.23...@times-components/jest-configurator@0.1.0) (2018-02-14)
+
+
+### Features
+
+* add jest-configurator to Tracking package ([#638](https://github.com/newsuk/times-components/issues/638)) ([6b251e9](https://github.com/newsuk/times-components/commit/6b251e9))
+
+
+
+
 <a name="0.0.23"></a>
 ## [0.0.23](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.0.22...@times-components/jest-configurator@0.0.23) (2018-02-06)
 

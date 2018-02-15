@@ -46,15 +46,7 @@ const defaultRenderers = {
     return <Text key={key}>{renderedChildren}</Text>;
   },
   ad(key) {
-    return (
-      <Ad
-        key={key}
-        code="intervention"
-        pos="ad-header"
-        section="article"
-        style={styles.ad}
-      />
-    );
+    return <Ad key={key} pos="inline-ad" section="article" style={styles.ad} />;
   },
   break(key) {
     return <Text key={key}>{"\n"}</Text>;

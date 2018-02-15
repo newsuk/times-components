@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.17.24"></a>
+## [0.17.24](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.17.22...@times-components/author-head@0.17.24) (2018-02-14)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.17.23"></a>
+## [0.17.23](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.17.22...@times-components/author-head@0.17.23) (2018-02-14)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.17.22"></a>
+## [0.17.22](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.17.21...@times-components/author-head@0.17.22) (2018-02-13)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.17.21"></a>
+## [0.17.21](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.17.20...@times-components/author-head@0.17.21) (2018-02-13)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.17.20"></a>
+## [0.17.20](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.17.19...@times-components/author-head@0.17.20) (2018-02-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.17.19"></a>
+## [0.17.19](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.17.18...@times-components/author-head@0.17.19) (2018-02-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
 <a name="0.17.18"></a>
 ## [0.17.18](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.17.17...@times-components/author-head@0.17.18) (2018-02-09)
 

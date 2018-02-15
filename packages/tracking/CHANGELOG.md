@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.6.16...@times-components/tracking@0.7.0) (2018-02-14)
+
+
+### Features
+
+* add jest-configurator to Tracking package ([#638](https://github.com/newsuk/times-components/issues/638)) ([6b251e9](https://github.com/newsuk/times-components/commit/6b251e9))
+
+
+
+
+<a name="0.6.16"></a>
+## [0.6.16](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.6.15...@times-components/tracking@0.6.16) (2018-02-14)
+
+
+
+
+**Note:** Version bump only for package @times-components/tracking
+
+<a name="0.6.15"></a>
+## [0.6.15](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.6.14...@times-components/tracking@0.6.15) (2018-02-13)
+
+
+
+
+**Note:** Version bump only for package @times-components/tracking
+
+<a name="0.6.14"></a>
+## [0.6.14](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.6.13...@times-components/tracking@0.6.14) (2018-02-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/tracking
+
 <a name="0.6.13"></a>
 ## [0.6.13](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.6.12...@times-components/tracking@0.6.13) (2018-02-08)
 

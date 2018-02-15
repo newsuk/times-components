@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.9.2"></a>
+## [0.9.2](https://github.com/newsuk/times-components/compare/@times-components/ad@0.9.1...@times-components/ad@0.9.2) (2018-02-14)
+
+
+
+
+**Note:** Version bump only for package @times-components/ad
+
+<a name="0.9.1"></a>
+## [0.9.1](https://github.com/newsuk/times-components/compare/@times-components/ad@0.9.0...@times-components/ad@0.9.1) (2018-02-13)
+
+
+
+
+**Note:** Version bump only for package @times-components/ad
+
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/ad@0.8.1...@times-components/ad@0.9.0) (2018-02-13)
+
+
+### Features
+
+* change ad slot targeting config ([#626](https://github.com/newsuk/times-components/issues/626)) ([d651c08](https://github.com/newsuk/times-components/commit/d651c08))
+
+
+
+
+<a name="0.8.1"></a>
+## [0.8.1](https://github.com/newsuk/times-components/compare/@times-components/ad@0.8.0...@times-components/ad@0.8.1) (2018-02-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/ad
+
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/ad@0.7.2...@times-components/ad@0.8.0) (2018-02-09)
+
+
+### Features
+
+* add ad composer ([#611](https://github.com/newsuk/times-components/issues/611)) ([94b8f41](https://github.com/newsuk/times-components/commit/94b8f41))
+
+
+
+
 <a name="0.7.2"></a>
 ## [0.7.2](https://github.com/newsuk/times-components/compare/@times-components/ad@0.7.1...@times-components/ad@0.7.2) (2018-02-08)
 

@@ -40,7 +40,7 @@ class ArticlePage extends React.Component {
     return (
       <Fragment>
         <HeaderAdContainer key="headerAd">
-          <Ad code="ad-header" style={adStyle} />
+          <Ad pos="header" style={adStyle} />
         </HeaderAdContainer>
         <MainContainer>
           <LeadAssetComponent device="MOBILE" leadAsset={leadAsset} />

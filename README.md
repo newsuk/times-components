@@ -49,6 +49,14 @@ requires that [fontforge](http://fontforge.github.io/en-US/) is installed,
 otherwise the fix won't be applied and you'll get the classic red error screen
 when trying to use a broken font.
 
+## Testing and code coverage
+
+| Tests                                      | Covered            | CI                                                            |
+| ------------------------------------------ | ------------------ | ------------------------------------------------------------- |
+| Unit tests, UI tests and Integration tests | :white_check_mark: | [Travis Build](https://travis-ci.org/newsuk/times-components) |
+| Visual Regression tool (Dextrose)          | :white_check_mark: | Not automated                                                 |
+| Functional Regression tool (Fructose)      | :white_check_mark: | Not automated                                                 |
+
 ## Contributing
 
 See the [CONTRIBUTING.md](.github/CONTRIBUTING.md) for an extensive breakdown of
