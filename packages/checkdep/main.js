@@ -1,10 +1,9 @@
 /* eslint-disable no-console */
 import chalk from "chalk";
-import options from "./cli-options";
+import { help } from "./cli-options";
 import checkdep from "./checkdep";
+import graph from "./graph";
 import * as strategies from "./strategies";
-
-const { help } = options;
 
 function prettifyHint([name, current, target]) {
   return ` ${chalk.blue(name)}: ${chalk.red(current)} -> ${chalk.green(
@@ -36,7 +35,12 @@ export default async function main({
     packagesList,
     argv.strategy ? strategies[argv.strategy] : null
   )
-    .then(({ rules, suggestions, fixedPackages, versionSets }) => {
+    .then(({ requirements, rules, suggestions, fixedPackages, versionSets }) => {
+
+      if (argv.graph) {
+        log(graph(requirements, argv.graph));
+      }
+
       if (argv.list) {
         Object.entries(versionSets)
           .map(([name, versions]) => [name, [...versions]])

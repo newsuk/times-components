@@ -5,29 +5,29 @@ exports[`checkdep cli tests bail if wrong 1`] = `Array []`;
 exports[`checkdep cli tests list all dependencies 1`] = `
 Array [
   Array [
-    "[34m1[39m",
+    "1",
     "a",
-    "[32m1.0.0[39m",
+    "1.0.0",
   ],
   Array [
-    "[34m2[39m",
+    "2",
     "b",
-    "[32m2.0.0[39m",
+    "2.0.0",
   ],
   Array [
-    "[34m3[39m",
+    "3",
     "c",
-    "[32m3.0.0[39m",
+    "3.0.0",
   ],
   Array [
-    "[34m4[39m",
+    "4",
     "d",
-    "[32m4.0.0[39m",
+    "4.0.0",
   ],
   Array [
-    "[34m5[39m",
+    "5",
     "foo",
-    "[32m0.0.1[39m",
+    "0.0.1",
   ],
 ]
 `;

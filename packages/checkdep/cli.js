@@ -1,12 +1,10 @@
 #!/usr/bin/env node
-require("babel-register");
-
-const { exit } = require("process");
-const { writeJson } = require("fs-extra");
-const getPackages = require("./get-packages").default;
-const { argv } = require("./cli-options").default;
+import { exit } from "process";
+import { writeJson } from "fs-extra";
+import getPackages from "./get-packages";
+import { argv } from "./cli-options";
+import main from "./main";
 
 // eslint-disable-next-line no-console
 const log = (...args) => console.log(...args);
-
-require("./main").default({ log, writeJson, getPackages, argv, exit });
+main({ log, writeJson, getPackages, argv, exit });
