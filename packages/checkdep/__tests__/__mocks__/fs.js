@@ -1,8 +1,7 @@
-const fs = jest.genMockFromModule('fs');
-
+const fs = jest.genMockFromModule("fs");
 
 let dir = {};
-function __mockFs(files) {
+function mockFs(files) {
   dir = files;
 }
 
@@ -16,13 +15,13 @@ function readdir(path, cb) {
 }
 
 function readFile(path, ...args) {
-  if (args.length == 1) {
+  if (args.length === 1) {
     return args[0](0, dir[path]);
   }
-  args[1](0, dir[path]);
+  return args[1](0, dir[path]);
 }
 
-fs.__mockFs = __mockFs;
+fs.mockFs = mockFs;
 fs.readdir = readdir;
 fs.lstat = lstat;
 fs.readFile = readFile;
