@@ -1,8 +1,8 @@
 export default template => {
   const templateObject = {
     DEFAULT: "default",
-    LEAD_AND_TWO: "lead-and-two",
-    OPINION_AND_TWO: "opinion-and-two"
+    LEAD_AND_TWO: "lead",
+    OPINION_AND_TWO: "opinion"
   };
 
   return templateObject[template];

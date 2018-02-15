@@ -5,12 +5,13 @@ import context from "jest-context";
 
 import RelatedArticles from "../related-articles/related-articles";
 
-import singleRelatedArticleFixture from "../related-articles/fixtures/single-related-article.json";
-import singleRelatedArticleNoImageFixture from "../related-articles/fixtures/single-related-article-no-image.json";
-import singleRelatedArticleNoLabelFixture from "../related-articles/fixtures/single-related-article-no-label.json";
-import singleRelatedArticleNoBylineFixture from "../related-articles/fixtures/single-related-article-no-byline.json";
-import twoRelatedArticlesFixture from "../related-articles/fixtures/two-related-articles.json";
-import threeRelatedArticlesFixture from "../related-articles/fixtures/three-related-articles.json";
+import oneDefaultRelatedArticleFixture from "../related-articles/fixtures/default/one-default.json";
+import oneDefaultRelatedArticleNoImageFixture from "../related-articles/fixtures/default/one-no-image.json";
+import oneDefaultRelatedArticleNoLabelFixture from "../related-articles/fixtures/default/one-no-label.json";
+import oneDefaultRelatedArticleNoBylineFixture from "../related-articles/fixtures/default/one-no-byline.json";
+import twoDefaultRelatedArticlesFixture from "../related-articles/fixtures/default/two-default.json";
+import threeDefaultRelatedArticlesFixture from "../related-articles/fixtures/default/three-default.json";
+import oneLeadAndTwoRelatedArticleFixture from "../related-articles/fixtures/lead-and-two/one-default.json";
 
 const createRelatedArticlesProps = fixtureData => ({
   articles: fixtureData.relatedArticles,
@@ -34,7 +35,7 @@ module.exports = () => {
   });
 
   context("Related articles", () => {
-    it("handles no related articles", () => {
+    it("handles an empty articles array", () => {
       const data = {
         relatedArticles: [],
         relatedArticlesLayout: {
@@ -47,23 +48,12 @@ module.exports = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders single related article", () => {
-      const tree = renderer
-        .create(
-          <RelatedArticles
-            {...createRelatedArticlesProps(singleRelatedArticleFixture.data)}
-          />
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
-    it("renders single related article with no lead image", () => {
+    it("renders one DEFAULT related article", () => {
       const tree = renderer
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
-              singleRelatedArticleNoImageFixture.data
+              oneDefaultRelatedArticleFixture.data
             )}
           />
         )
@@ -71,12 +61,12 @@ module.exports = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders single related article with no label", () => {
+    it("renders one DEFAULT related article with no lead image", () => {
       const tree = renderer
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
-              singleRelatedArticleNoLabelFixture.data
+              oneDefaultRelatedArticleNoImageFixture.data
             )}
           />
         )
@@ -84,12 +74,12 @@ module.exports = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders single related article with no byline", () => {
+    it("renders one DEFAULT related article with no label", () => {
       const tree = renderer
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
-              singleRelatedArticleNoBylineFixture.data
+              oneDefaultRelatedArticleNoLabelFixture.data
             )}
           />
         )
@@ -97,22 +87,52 @@ module.exports = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders two related articles", () => {
+    it("renders one DEFAULT related article with no byline", () => {
       const tree = renderer
         .create(
           <RelatedArticles
-            {...createRelatedArticlesProps(twoRelatedArticlesFixture.data)}
+            {...createRelatedArticlesProps(
+              oneDefaultRelatedArticleNoBylineFixture.data
+            )}
           />
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders three related articles", () => {
+    it("renders two DEFAULT related articles", () => {
       const tree = renderer
         .create(
           <RelatedArticles
-            {...createRelatedArticlesProps(threeRelatedArticlesFixture.data)}
+            {...createRelatedArticlesProps(
+              twoDefaultRelatedArticlesFixture.data
+            )}
+          />
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it("renders three DEFAULT related articles", () => {
+      const tree = renderer
+        .create(
+          <RelatedArticles
+            {...createRelatedArticlesProps(
+              threeDefaultRelatedArticlesFixture.data
+            )}
+          />
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it("renders one LEAD_AND_TWO related article", () => {
+      const tree = renderer
+        .create(
+          <RelatedArticles
+            {...createRelatedArticlesProps(
+              oneLeadAndTwoRelatedArticleFixture.data
+            )}
           />
         )
         .toJSON();

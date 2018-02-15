@@ -1,7 +1,9 @@
 import defaultStyles from "./default";
+import leadStyles from "./lead";
 
 const templateStyles = {
-  defaultStyles
+  defaultStyles,
+  leadStyles
 };
 
 export default template => templateStyles[`${template}Styles`];

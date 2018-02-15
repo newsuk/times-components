@@ -1,9 +1,11 @@
 import { StyleSheet, View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 import * as defaultComponents from "./default/responsive";
+import * as leadComponents from "./lead/responsive";
 
 const templateStyles = {
-  defaultComponents
+  defaultComponents,
+  leadComponents
 };
 
 export default (template, componentName, config) => {
