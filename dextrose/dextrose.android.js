@@ -4,7 +4,19 @@ const ignoredStories = require("./ignoredStories");
 const config = {
   snapPath: path.join(__dirname, "/snappy"),
   platformName: "Android",
-  ignoredStories
+  ignoredStories: [
+    "Advertisement",
+    "AuthorHeadTracking",
+    "AuthorProfileTracking",
+    "Brightcove",
+    "PaginationTracking",
+    "Provider",
+    "TrackingPage",
+    "TrackingEvent",
+    "Error",
+    "error",
+    "AuthorProfileLoading"
+  ]
 };
 
 module.exports = config;
