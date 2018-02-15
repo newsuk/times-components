@@ -185,32 +185,35 @@ class AuthorProfileContent extends Component {
       </ContentContainer>
     );
 
-    const data = (articlesLoading
+    const data = articlesLoading
       ? Array(pageSize)
           .fill()
-          .map((number, id) => ({ id, isLoading: true }))
-      : articles
-    ).map((article, idx) => ({
-      ...article,
-      elementId: `articleList-${page}-${idx}`
-    }));
+          .map((number, indx) => ({
+            id: indx,
+            elementId: `empty.${indx}`,
+            isLoading: true
+          }))
+      : articles.map((article, indx) => ({
+          ...article,
+          elementId: `${article.id}.${indx}`
+        }));
 
     const Contents = (
       <ContentContainer>
         {paginationComponent({ hideResults: false, autoScroll: false })}
         <View style={styles.container}>
           {data &&
-            data.map((article, key) => {
-              const { id, url } = article;
+            data.map((article, indx) => {
+              const { id, elementId, url } = article;
               const separatorComponent =
-                key > 0 ? <AuthorProfileItemSeparator /> : null;
+                indx > 0 ? <AuthorProfileItemSeparator /> : null;
 
               return (
                 <div
-                  key={id}
-                  id={article.elementId}
-                  accessibility-label={article.elementId}
-                  data-testid={article.elementId}
+                  key={elementId}
+                  id={elementId}
+                  accessibility-label={elementId}
+                  data-testid={elementId}
                   ref={node => this.registerNode(node)}
                 >
                   <ErrorView>
@@ -221,7 +224,7 @@ class AuthorProfileContent extends Component {
                           <AuthorProfileItem
                             {...article}
                             imageRatio={imageRatio}
-                            imageSize={this.getImageSize(article.elementId)}
+                            imageSize={this.getImageSize(elementId)}
                             showImage={showImages}
                             onPress={e => onArticlePress(e, { id, url })}
                           />

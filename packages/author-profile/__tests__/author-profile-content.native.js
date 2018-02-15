@@ -107,7 +107,7 @@ export default () => {
           {
             isViewable: true,
             item: {
-              elementId: "articleList-1-2"
+              elementId: "f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
             }
           }
         ]
