@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.9.5"></a>
+## [0.9.5](https://github.com/newsuk/times-components/compare/@times-components/ad@0.9.4...@times-components/ad@0.9.5) (2018-02-15)
+
+
+### Bug Fixes
+
+* vertically align the ads ([#653](https://github.com/newsuk/times-components/issues/653)) ([da2b59e](https://github.com/newsuk/times-components/commit/da2b59e))
+
+
+
+
 <a name="0.9.4"></a>
 ## [0.9.4](https://github.com/newsuk/times-components/compare/@times-components/ad@0.9.3...@times-components/ad@0.9.4) (2018-02-15)
 
