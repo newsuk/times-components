@@ -18,7 +18,7 @@ const style = {
   }
 };
 
-storiesOf("Caption", module)
+storiesOf("Primatives/Caption", module)
   .add("Without credits", () => <Caption text={captionText} />)
   .add("With credits", () => <Caption text={captionText} credits={credits} />)
   .add("Credits only", () => <Caption credits={credits} />)

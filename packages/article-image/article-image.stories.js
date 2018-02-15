@@ -10,7 +10,7 @@ const landscapeInlineImage = require("./fixtures/landscape-inline-image.json")
 const portraitInlineImage = require("./fixtures/portrait-inline-image.json")
   .fixture;
 
-storiesOf("ArticleImage", module)
+storiesOf("Primatives/ArticleImage", module)
   .add("Primary", () => (
     <ArticleImage
       imageOptions={primaryImage.imageOptions}

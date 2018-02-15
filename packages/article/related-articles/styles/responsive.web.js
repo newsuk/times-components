@@ -96,7 +96,7 @@ export const ImageContainer = articleCount =>
     flex-basis: 0;
     margin-bottom: 0;
   `
-        : ``
+        : `display: block;`
   });
 
 export const SummaryContainer = articleCount =>

@@ -7,7 +7,7 @@ import { LateralSpacingDecorator } from "@times-components/storybook/decorators"
 import Pagination, { withPageState } from "./pagination";
 import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
 
-storiesOf("Pagination", module)
+storiesOf("Composed/Pagination", module)
   .addDecorator(LateralSpacingDecorator)
   .add("First page", () => (
     <Pagination
@@ -79,7 +79,7 @@ storiesOf("Pagination", module)
 
 const PageChanger = withPageState(Pagination);
 
-storiesOf("Pagination Helper", module)
+storiesOf("Composed/Pagination/Helper", module)
   .addDecorator(story => <View style={{ paddingTop: 20 }}>{story()}</View>)
   .add("First page", () => <PageChanger page={1} count={60} />)
   .add("Another page", () => <PageChanger page={2} count={60} />)
@@ -94,7 +94,7 @@ storiesOf("Pagination Helper", module)
     <PageChanger page={3} count={60} hideResults />
   ));
 
-storiesOf("Pagination Icons", module)
+storiesOf("Composed/Pagination/Icons", module)
   .addDecorator(story => <View style={{ paddingTop: 20 }}>{story()}</View>)
   .add("previous page icon", () => <PreviousPageIcon label="Previous Page" />)
   .add("next page icon", () => <NextPageIcon label="Next Page" />);

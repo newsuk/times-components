@@ -11,6 +11,6 @@ const WithColours = withResponsiveStyles("div", {
   hugeUp: () => "color: purple;"
 });
 
-storiesOf("ResponsiveStyles", module).add("ResponsiveStyles", () => (
+storiesOf("Helpers/ResponsiveStyles", module).add("ResponsiveStyles", () => (
   <WithColours>Hello</WithColours>
 ));

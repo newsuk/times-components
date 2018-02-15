@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   }
 });
 
-storiesOf("Gestures", module)
+storiesOf("Helpers/Gestures", module)
   .addDecorator(CenteredDecorator)
   .add("With a View", () => (
     <Gestures style={styles.gestures}>
