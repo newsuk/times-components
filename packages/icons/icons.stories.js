@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   }
 });
 
-storiesOf("Icons", module).add("Icons", () => (
+storiesOf("Primatives/Icons", module).add("Icons", () => (
   <View style={styles.wrapper}>
     <View style={styles.icon}>
       <IconDiamond width={50} height={50} fillColour="#4D4D4D" />

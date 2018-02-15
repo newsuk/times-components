@@ -30,7 +30,7 @@ Component.propTypes = {
   children: PropTypes.element
 };
 
-storiesOf("Gradient", module)
+storiesOf("Primatives/Gradient", module)
   .add("Default", () => (
     <Component
       style={{

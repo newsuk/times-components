@@ -30,7 +30,7 @@ const preventDefaultedAction = decorateAction([
 const slug = "deborah-haynes";
 const pageSize = 5;
 
-storiesOf("AuthorProfile", module)
+storiesOf("Pages/AuthorProfile", module)
   .add("Default with images", () => {
     const props = {
       slug,

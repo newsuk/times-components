@@ -11,37 +11,40 @@ const SquareImage = props => (
   <Image uri={squareUri} aspectRatio={1 / 1} {...props} />
 );
 
-storiesOf("Image", module).add("Server side rendered Image (web only)", () => {
-  const markup = {
-    __html: ReactDOMServer.renderToStaticMarkup(
-      <View>
-        <SquareImage
-          style={{
-            width: 200,
-            height: 200,
-            borderRadius: 100,
-            overflow: "hidden"
-          }}
-        />
-        <SquareImage
-          style={{
-            width: 100,
-            height: 100,
-            borderRadius: 50,
-            overflow: "hidden"
-          }}
-        />
-        <SquareImage
-          style={{
-            width: 50,
-            height: 50,
-            borderRadius: 25,
-            overflow: "hidden"
-          }}
-        />
-      </View>
-    )
-  };
+storiesOf("Primatives/Image", module).add(
+  "Server side rendered Image (web only)",
+  () => {
+    const markup = {
+      __html: ReactDOMServer.renderToStaticMarkup(
+        <View>
+          <SquareImage
+            style={{
+              width: 200,
+              height: 200,
+              borderRadius: 100,
+              overflow: "hidden"
+            }}
+          />
+          <SquareImage
+            style={{
+              width: 100,
+              height: 100,
+              borderRadius: 50,
+              overflow: "hidden"
+            }}
+          />
+          <SquareImage
+            style={{
+              width: 50,
+              height: 50,
+              borderRadius: 25,
+              overflow: "hidden"
+            }}
+          />
+        </View>
+      )
+    };
 
-  return <div dangerouslySetInnerHTML={markup} />;
-});
+    return <div dangerouslySetInnerHTML={markup} />;
+  }
+);

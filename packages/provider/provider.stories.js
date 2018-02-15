@@ -13,7 +13,7 @@ import fixture from "./fixtures/author-profile/author-profile.json";
 import { query as articleQuery } from "./article";
 import articleFixture from "./fixtures/article.json";
 
-storiesOf("Provider", module)
+storiesOf("Helpers/Provider", module)
   .add("Props and fetched data", () => {
     const query = gql`
       {

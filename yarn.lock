@@ -87,6 +87,10 @@
     global "^4.3.2"
     prop-types "^15.5.10"
 
+"@storybook/addon-options@3.3.11":
+  version "3.3.11"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-options/-/addon-options-3.3.11.tgz#2e4a5fd9b4a5875104aed232dff0f7f257a9611b"
+
 "@storybook/addons@3.3.11", "@storybook/addons@^3.3.11":
   version "3.3.11"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-3.3.11.tgz#7f85136d6da785160658aee512fd3cac99780f42"
@@ -876,8 +880,8 @@ are-we-there-yet@~1.1.2:
     readable-stream "^2.0.6"
 
 argparse@^1.0.7:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.9.tgz#73d83bc263f86e97f8cc4f6bae1b0e90a7d22c86"
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
   dependencies:
     sprintf-js "~1.0.2"
 
@@ -11220,8 +11224,8 @@ styled-components@2.2.3:
     supports-color "^3.2.3"
 
 stylis@3.x:
-  version "3.4.8"
-  resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.4.8.tgz#94380babbcd4c75726215794ca985b38ec96d1a3"
+  version "3.4.9"
+  resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.4.9.tgz#2e1403c06264bde8dbf1eb8fd82b2cfd1c4b31cc"
 
 subcommander@1.0.0:
   version "1.0.0"
