@@ -307,6 +307,58 @@
     react-treebeard "^2.1.0"
     redux "^3.7.2"
 
+"@times-components/ad@0.9.4":
+  version "0.9.4"
+  resolved "https://registry.yarnpkg.com/@times-components/ad/-/ad-0.9.4.tgz#07deadf6708a6399e3d178d73a3166ebed519527"
+  dependencies:
+    "@times-components/watermark" "0.3.4"
+    prop-types "15.6.0"
+    react-broadcast "0.5.2"
+
+"@times-components/article-byline@0.11.7":
+  version "0.11.7"
+  resolved "https://registry.yarnpkg.com/@times-components/article-byline/-/article-byline-0.11.7.tgz#f793cf5d66f388425aa5bba84aae105c2098b24c"
+  dependencies:
+    "@times-components/link" "0.13.21"
+    "@times-components/markup" "0.19.4"
+    prop-types "15.6.0"
+
+"@times-components/article-summary@0.17.8":
+  version "0.17.8"
+  resolved "https://registry.yarnpkg.com/@times-components/article-summary/-/article-summary-0.17.8.tgz#665604231748c4189323484391a68e15ef449574"
+  dependencies:
+    "@times-components/article-byline" "0.11.7"
+    "@times-components/article-label" "0.6.24"
+    "@times-components/date-publication" "0.11.5"
+    "@times-components/jest-configurator" "0.2.0"
+    "@times-components/markup" "0.19.4"
+    "@times-components/responsive-styles" "0.2.19"
+    date-fns "1.28.5"
+    prop-types "15.6.0"
+
+"@times-components/article@0.37.0":
+  version "0.37.0"
+  resolved "https://registry.yarnpkg.com/@times-components/article/-/article-0.37.0.tgz#6ba1cb4addaf450e13bcf8188f3e7ef46058f331"
+  dependencies:
+    "@times-components/ad" "0.9.4"
+    "@times-components/article-byline" "0.11.7"
+    "@times-components/article-flag" "0.10.11"
+    "@times-components/article-image" "0.11.29"
+    "@times-components/article-label" "0.6.24"
+    "@times-components/article-summary" "0.17.8"
+    "@times-components/caption" "0.9.36"
+    "@times-components/date-publication" "0.11.5"
+    "@times-components/image" "1.13.14"
+    "@times-components/link" "0.13.21"
+    "@times-components/markup" "0.19.4"
+    "@times-components/provider" "0.22.10"
+    "@times-components/pull-quote" "0.2.12"
+    "@times-components/responsive-styles" "0.2.19"
+    "@times-components/slice" "0.3.0"
+    "@times-components/tracking" "0.7.2"
+    lodash.get "4.4.2"
+    prop-types "15.6.0"
+
 "@times-components/fructose@3.1.14":
   version "3.1.14"
   resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.1.14.tgz#a31be85b619132431a46774f970b4146927156c1"
@@ -331,6 +383,14 @@
     webpack "^3.8.1"
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
+
+"@times-components/markup@0.19.4":
+  version "0.19.4"
+  resolved "https://registry.yarnpkg.com/@times-components/markup/-/markup-0.19.4.tgz#f5c24f0da5545b014975187280515eeca2654f2a"
+  dependencies:
+    "@times-components/ad" "0.9.4"
+    "@times-components/pull-quote" "0.2.12"
+    prop-types "15.6.0"
 
 "@types/async@2.0.46":
   version "2.0.46"
