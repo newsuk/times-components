@@ -16,25 +16,25 @@ export const ChildrenContainerStyles = childCount => ({
     flex-wrap: wrap;
   `,
   mediumUp: () => {
-    let tabletStyles = `
+    const smallStyle = `
       padding-left: 0;
       padding-right: 0;
       width: ${config.mediumBpWidth};
     `;
-    if (childCount === 5) {
-      tabletStyles = `
-        padding-left: 10px;
-        padding-right: 10px;
-        width: auto;
-      `;
-    }
+
+    const largeStyle = `
+      padding-left: 10px;
+      padding-right: 10px;
+      width: auto;
+    `;
+
     return `
       flex-direction: row;
       margin: 0 auto;
-      ${tabletStyles}
+      ${childCount >= 5 ? largeStyle : smallStyle}
     `;
   },
   wideUp: () => `
-    width: ${childCount === 5 ? "auto" : config.wideBpWidth};
+    width: ${childCount >= 5 ? "auto" : config.wideBpWidth};
   `
 });
