@@ -307,83 +307,6 @@
     react-treebeard "^2.1.0"
     redux "^3.7.2"
 
-"@times-components/ad@0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@times-components/ad/-/ad-0.7.1.tgz#47f59ae11129029eace647fac4d7c0d5f9c0d027"
-  dependencies:
-    "@times-components/watermark" "0.2.17"
-    prop-types "15.6.0"
-    react-broadcast "0.5.2"
-
-"@times-components/article-byline@0.10.31":
-  version "0.10.31"
-  resolved "https://registry.yarnpkg.com/@times-components/article-byline/-/article-byline-0.10.31.tgz#74c98bcbd3d6a67fe3e327eb5bd5764b2a55a930"
-  dependencies:
-    "@times-components/link" "0.13.17"
-    "@times-components/markup" "0.17.1"
-    prop-types "15.6.0"
-
-"@times-components/article-flag@0.10.7":
-  version "0.10.7"
-  resolved "https://registry.yarnpkg.com/@times-components/article-flag/-/article-flag-0.10.7.tgz#95f046cb73d324cf79c97a1bc4f1e41e6cba1077"
-  dependencies:
-    "@times-components/icons" "0.1.7"
-    prop-types "15.6.0"
-    react-native-svg "5.5.0"
-    svgs "3.1.1"
-
-"@times-components/article-image@0.11.23":
-  version "0.11.23"
-  resolved "https://registry.yarnpkg.com/@times-components/article-image/-/article-image-0.11.23.tgz#4ea1af48e8f09fc83ea385d703c03dcc1adde8b9"
-  dependencies:
-    "@times-components/caption" "0.9.30"
-    "@times-components/image" "1.13.8"
-    "@times-components/responsive-styles" "0.2.16"
-    prop-types "15.6.0"
-
-"@times-components/article-label@0.6.20":
-  version "0.6.20"
-  resolved "https://registry.yarnpkg.com/@times-components/article-label/-/article-label-0.6.20.tgz#6ae4216251a638b0b30d462277d9ea1f0ccd6e0e"
-  dependencies:
-    prop-types "15.6.0"
-
-"@times-components/article@0.32.7":
-  version "0.32.7"
-  resolved "https://registry.yarnpkg.com/@times-components/article/-/article-0.32.7.tgz#a55b267f8cdbed7acbb76509e359c141be278420"
-  dependencies:
-    "@times-components/ad" "0.7.1"
-    "@times-components/article-byline" "0.10.31"
-    "@times-components/article-flag" "0.10.7"
-    "@times-components/article-image" "0.11.23"
-    "@times-components/article-label" "0.6.20"
-    "@times-components/caption" "0.9.30"
-    "@times-components/date-publication" "0.10.0"
-    "@times-components/image" "1.13.8"
-    "@times-components/link" "0.13.17"
-    "@times-components/markup" "0.17.1"
-    "@times-components/provider" "0.22.6"
-    "@times-components/pull-quote" "0.2.8"
-    "@times-components/responsive-styles" "0.2.16"
-    "@times-components/tracking" "0.6.12"
-    lodash.get "4.4.2"
-    prop-types "15.6.0"
-
-"@times-components/caption@0.9.30":
-  version "0.9.30"
-  resolved "https://registry.yarnpkg.com/@times-components/caption/-/caption-0.9.30.tgz#fba88cdeefd889999b29484aa71333b56b862d42"
-  dependencies:
-    prop-types "15.6.0"
-
-"@times-components/date-publication@0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@times-components/date-publication/-/date-publication-0.10.0.tgz#9d88edc0542ed216f3b4e3862d2de157f4df9bec"
-  dependencies:
-    "@times-components/jest-configurator" "0.0.23"
-    "@times-components/utils" "0.3.0"
-    date-fns "1.28.5"
-    prop-types "15.6.0"
-    react-native-device-info "0.13.0"
-
 "@times-components/fructose@3.1.14":
   version "3.1.14"
   resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.1.14.tgz#a31be85b619132431a46774f970b4146927156c1"
@@ -408,120 +331,6 @@
     webpack "^3.8.1"
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
-
-"@times-components/gestures@1.1.5":
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/@times-components/gestures/-/gestures-1.1.5.tgz#02a164d75b32051b0524ea9d1f9c1db1fcbce962"
-  dependencies:
-    prop-types "15.6.0"
-
-"@times-components/gradient@0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@times-components/gradient/-/gradient-0.4.1.tgz#e46071619cda9f433478550b056ce8f9a15b37da"
-  dependencies:
-    "@times-components/jest-configurator" "0.0.23"
-    prop-types "15.6.0"
-    react-native-linear-gradient "2.3.0"
-
-"@times-components/icons@0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@times-components/icons/-/icons-0.1.7.tgz#e1d3e4a8de67753d0d905e7d57731943325b4ffc"
-  dependencies:
-    prop-types "15.6.0"
-    svgs "3.1.1"
-
-"@times-components/image@1.13.8":
-  version "1.13.8"
-  resolved "https://registry.yarnpkg.com/@times-components/image/-/image-1.13.8.tgz#a93d5fcba45c2aff9851e6a484a38a9b89682bb2"
-  dependencies:
-    "@times-components/gestures" "1.1.5"
-    "@times-components/gradient" "0.4.1"
-    "@times-components/link" "0.13.17"
-    prop-types "15.6.0"
-    react-native-svg "5.5.0"
-    svgs "3.1.1"
-
-"@times-components/jest-configurator@0.0.23":
-  version "0.0.23"
-  resolved "https://registry.yarnpkg.com/@times-components/jest-configurator/-/jest-configurator-0.0.23.tgz#16300966e18d7f326a3547b9263712e5cfadfb37"
-  dependencies:
-    enzyme "3.3.0"
-    enzyme-adapter-react-16 "1.1.0"
-    enzyme-to-json "3.3.0"
-    find-node-modules "1.0.4"
-    recursive-readdir-synchronous "0.0.3"
-
-"@times-components/link@0.13.17":
-  version "0.13.17"
-  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-0.13.17.tgz#13f6aec306dff6efaeeb3022ce41371aad2a6bee"
-  dependencies:
-    "@times-components/responsive-styles" "0.2.16"
-    lodash.pick "4.4.0"
-    prop-types "15.6.0"
-
-"@times-components/markup@0.17.1":
-  version "0.17.1"
-  resolved "https://registry.yarnpkg.com/@times-components/markup/-/markup-0.17.1.tgz#8ee3ee1eb0384d464ea2c9443f4d4b57352cdfee"
-  dependencies:
-    "@times-components/ad" "0.7.1"
-    "@times-components/pull-quote" "0.2.8"
-    prop-types "15.6.0"
-
-"@times-components/provider@0.22.6":
-  version "0.22.6"
-  resolved "https://registry.yarnpkg.com/@times-components/provider/-/provider-0.22.6.tgz#352870d431f03638ac43959f20df9334f093b389"
-  dependencies:
-    graphql-tag "2.6.0"
-    hoist-non-react-statics "2.3.1"
-    lodash.get "4.4.2"
-    lodash.isequal "4.4.0"
-    lodash.pick "4.4.0"
-    prop-types "15.6.0"
-    react-apollo-temp "2.0.5"
-    react-display-name "0.2.3"
-
-"@times-components/pull-quote@0.2.8":
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/@times-components/pull-quote/-/pull-quote-0.2.8.tgz#6c74a1f04cfb46b5066a06d8fda9845bf40fdee8"
-  dependencies:
-    "@times-components/icons" "0.1.7"
-    "@times-components/link" "0.13.17"
-    prop-types "15.6.0"
-
-"@times-components/responsive-styles@0.2.16":
-  version "0.2.16"
-  resolved "https://registry.yarnpkg.com/@times-components/responsive-styles/-/responsive-styles-0.2.16.tgz#0f29522bf1e92f8c572caeda02e0fb9ba9c7606a"
-  dependencies:
-    prop-types "15.6.0"
-    styled-components "2.2.3"
-
-"@times-components/tracking@0.6.12":
-  version "0.6.12"
-  resolved "https://registry.yarnpkg.com/@times-components/tracking/-/tracking-0.6.12.tgz#782797df7595e8e1b548aa2e73e65d1cc061b859"
-  dependencies:
-    hoist-non-react-statics "2.3.1"
-    lodash.get "4.4.2"
-    prop-types "15.6.0"
-    react-display-name "0.2.3"
-
-"@times-components/utils@0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-0.3.0.tgz#768fc2c9cbdfad4caff365d1c58b771dc567c873"
-  dependencies:
-    apollo-cache-inmemory "1.1.5"
-    apollo-client "2.2.0"
-    graphql "0.12.3"
-    prop-types "15.6.0"
-    react "16.2.0"
-    react-apollo-temp "2.0.5"
-
-"@times-components/watermark@0.2.17":
-  version "0.2.17"
-  resolved "https://registry.yarnpkg.com/@times-components/watermark/-/watermark-0.2.17.tgz#4b82e57cbc3dfa9139e5094db1d1355d49565666"
-  dependencies:
-    prop-types "15.6.0"
-    react-native-svg "5.5.0"
-    svgs "3.1.1"
 
 "@types/async@2.0.46":
   version "2.0.46"
@@ -703,13 +512,6 @@ alphanum-sort@^1.0.1, alphanum-sort@^1.0.2:
 amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
-
-animated@^0.2.0:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/animated/-/animated-0.2.2.tgz#04af7846ad0b9b8d1f0472cc53d82b8efeb4a751"
-  dependencies:
-    invariant "^2.2.0"
-    normalize-css-color "^1.0.1"
 
 ansi-escapes@^1.1.0:
   version "1.4.0"
@@ -3927,10 +3729,6 @@ dateformat@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/dateformat/-/dateformat-2.2.0.tgz#4065e2013cf9fb916ddfd82efb506ad4c6769062"
 
-debounce@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/debounce/-/debounce-1.0.2.tgz#503cc674d8d7f737099664fb75ddbd36b9626dc6"
-
 debounce@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/debounce/-/debounce-1.1.0.tgz#6a1a4ee2a9dc4b7c24bb012558dbcdb05b37f408"
@@ -4143,36 +3941,6 @@ detox@5.8.2:
     npmlog "^4.0.2"
     telnet-client "0.15.3"
     ws "^1.1.1"
-
-dextrose@1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.3.2.tgz#63639432b8cecb1b1dbd101921562a833d3423a3"
-  dependencies:
-    aws-sdk "^2.179.0"
-    babel-core "6.26.0"
-    babel-preset-react-native "4.0.0"
-    commander " 2.12.1"
-    npmlog "4.1.2"
-    osnap "^1.1.0"
-    pug "^2.0.0-rc.4"
-    socket.io "^2.0.4"
-    socket.io-client "^2.0.4"
-    wd "1.4.1"
-
-dextrose@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.4.0.tgz#f98d24d609212cc8fef43aa621e1a346caccac79"
-  dependencies:
-    aws-sdk "^2.179.0"
-    babel-core "6.26.0"
-    babel-preset-react-native "4.0.0"
-    commander " 2.12.1"
-    npmlog "4.1.2"
-    osnap "^1.1.0"
-    pug "^2.0.0-rc.4"
-    socket.io "^2.0.4"
-    socket.io-client "^2.0.4"
-    wd "1.4.1"
 
 dextrose@1.4.5:
   version "1.4.5"
@@ -6329,7 +6097,7 @@ inline-style-prefixer@^2.0.5:
     bowser "^1.0.0"
     hyphenate-style-name "^1.0.1"
 
-inline-style-prefixer@^3.0.6, inline-style-prefixer@^3.0.8:
+inline-style-prefixer@^3.0.6:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/inline-style-prefixer/-/inline-style-prefixer-3.0.8.tgz#8551b8e5b4d573244e66a34b04f7d32076a2b534"
   dependencies:
@@ -8378,7 +8146,7 @@ nopt@~1.0.10:
   dependencies:
     abbrev "1"
 
-normalize-css-color@^1.0.1, normalize-css-color@^1.0.2:
+normalize-css-color@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/normalize-css-color/-/normalize-css-color-1.0.2.tgz#02991e97cccec6623fe573afbbf0de6a1f3e9f8d"
 
@@ -9805,23 +9573,6 @@ react-native-svg@5.5.0:
   dependencies:
     color "^0.11.1"
     lodash "^4.16.6"
-
-react-native-web@0.1.14:
-  version "0.1.14"
-  resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.1.14.tgz#23aba7abb49bce3fa205766deb9e13e23a4ce1eb"
-  dependencies:
-    animated "^0.2.0"
-    array-find-index "^1.0.2"
-    babel-runtime "^6.26.0"
-    create-react-class "^15.6.2"
-    debounce "1.0.2"
-    deep-assign "^2.0.0"
-    fbjs "^0.8.16"
-    hyphenate-style-name "^1.0.2"
-    inline-style-prefixer "^3.0.8"
-    normalize-css-color "^1.0.2"
-    prop-types "^15.6.0"
-    react-timer-mixin "^0.13.3"
 
 react-native-web@0.3.2:
   version "0.3.2"
