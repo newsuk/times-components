@@ -47,10 +47,10 @@ const adInit = args => {
         el.innerHTML = `
           <div
             id="${data.pos}"
-            style="display: table-cell; vertical-align: middle"
           ></div>
         `;
-        el.style.display = "table";
+        el.style.display = "flex";
+        el.style.alignItems = "center";
         el.style.margin = "0 auto";
 
         const mapping = googletag.sizeMapping();
