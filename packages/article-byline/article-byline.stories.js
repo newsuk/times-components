@@ -20,7 +20,7 @@ const bylineLinkStyles = {
   }
 };
 
-storiesOf("Primatives/ArticleByline", module)
+storiesOf("Primitives/ArticleByline", module)
   .add("ArticleByline with a single author", () => (
     <Text style={bylineStyles}>
       <ArticleByline ast={authorsAST.singleAuthor} />

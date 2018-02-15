@@ -16,7 +16,7 @@ const SixteenNineImage = props => (
   <Image uri={sixteenNineUri} aspectRatio={16 / 9} {...props} />
 );
 
-storiesOf("Primatives/Image", module)
+storiesOf("Primitives/Image", module)
   .add("Fills parent width", () => <SquareImage />)
   .add("Maintains aspect ratio", () => (
     <View>
