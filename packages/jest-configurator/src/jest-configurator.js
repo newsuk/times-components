@@ -24,6 +24,23 @@ const webSpecific = {
   moduleFileExtensions: ["web.js", "js", "json"]
 };
 
+const platformIndependentSpecific = {
+  moduleFileExtensions: ["js", "json"]
+};
+
+const platformCode = platform => {
+  switch (platform) {
+    case "web":
+      return webSpecific;
+    case "ios":
+      return nativeSpecific("ios");
+    case "android":
+      return nativeSpecific("android");
+    default:
+      return platformIndependentSpecific;
+  }
+};
+
 export default (
   platform: Platform,
   cwd: string,
@@ -36,22 +53,26 @@ export default (
     (global || local).replace("node_modules", "")
   );
 
+  const platformPath = platform ? `${platform}/` : "";
+
   return {
     preset: "react-native",
-    ...(platform === "web" ? webSpecific : nativeSpecific(platform)),
+    ...platformCode(platform),
     rootDir,
     transformIgnorePatterns: [
       "node_modules/(?!(react-native|react-native-linear-gradient|@times-components)/)"
     ],
-    coverageDirectory: `${module}/coverage/${platform}/`,
+    coverageDirectory: `${module}/coverage/${platformPath}`,
     collectCoverageFrom: getCoveragePaths(
       rootDir,
       module,
       platform,
       coverageIgnoreGlobs
     ),
-    testMatch: [`${module}/__tests__/${platform}/*.test.js`],
-    testPathIgnorePatterns: [`${module}/__tests__/${platform}/jest.config.js`],
+    testMatch: [`${module}/__tests__/${platformPath}*.test.js`],
+    testPathIgnorePatterns: [
+      `${module}/__tests__/${platformPath}jest.config.js`
+    ],
     snapshotSerializers: ["enzyme-to-json/serializer"],
     setupTestFrameworkScriptFile: path.resolve(__dirname, "../setup-jest.js")
   };
