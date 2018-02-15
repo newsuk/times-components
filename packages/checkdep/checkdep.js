@@ -1,5 +1,4 @@
 import "babel-polyfill";
-
 function resolveConflicts(strategy, packages) {
   const { name, version } = packages.sort(strategy)[0];
   return { name, version };
@@ -171,7 +170,7 @@ export function applyStrategy(requirements, strategy) {
   };
 }
 
-export default async function checkdep(packagesList, strategy) {
+export default async function compute(packagesList, strategy) {
   const packages = packagesList.map(p => p[1]);
   const requirements = getAllRequirements(packages);
 
@@ -185,6 +184,7 @@ export default async function checkdep(packagesList, strategy) {
   const suggestions = getSuggestions(todo);
 
   return {
+    requirements,
     versionSets,
     wrong,
     rules,

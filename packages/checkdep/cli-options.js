@@ -1,12 +1,15 @@
 import optimist from "optimist";
 
-export default optimist
+const { help, argv } = optimist
   .usage('checkdep -e "packages/*/package.json" [...options]')
   .option("help", "shows this message")
   .alias("help", "h")
   .option("expr", "glob expression that finds package.json files")
   .string("expr")
   .alias("expr", "e")
+  .option("graph", "output the dependency graph for all matching requirements")
+  .string("graph")
+  .alias("graph", "g")
   .alias("strategy", "s")
   .option("fix", "fixed dependencies with wrong versions")
   .boolean("fix")
@@ -33,3 +36,9 @@ export default optimist
     showRules: false,
     strategy: undefined
   });
+
+
+export {
+  help,
+  argv
+};

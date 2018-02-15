@@ -1,7 +1,11 @@
+import chalk from "chalk";
 import main from "../main";
 import simple from "./fixtures/simple.json";
 import wrong from "./fixtures/wrong.json";
 import wrongFixed from "./fixtures/wrong-fixed.json";
+
+//unfortunately we cant test colours as the root yarn test disables colours
+chalk.enabled = false;
 
 describe("checkdep cli tests", () => {
   it("prints help", async () => {
