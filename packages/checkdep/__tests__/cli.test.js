@@ -8,12 +8,7 @@ describe("checkdep cli tests", () => {
     const log = jest.fn();
     const argv = { help: true };
     await main({ log, argv });
-  });
-
-  it("prints help", async () => {
-    const log = jest.fn();
-    const argv = { help: true };
-    await main({ log, argv });
+    expect(log.mock.calls).toMatchSnapshot();
   });
 
   it("list all dependencies", async () => {
@@ -24,6 +19,7 @@ describe("checkdep cli tests", () => {
 
     await main({ log, argv, getPackages, exit });
     expect(exit.mock.calls).toEqual([]);
+    expect(log.mock.calls).toMatchSnapshot();
   });
 
   it("list all rules", async () => {
@@ -34,6 +30,7 @@ describe("checkdep cli tests", () => {
 
     await main({ log, argv, getPackages, exit });
     expect(exit.mock.calls).toEqual([]);
+    expect(log.mock.calls).toMatchSnapshot();
   });
 
   it("list all hints", async () => {
@@ -44,6 +41,7 @@ describe("checkdep cli tests", () => {
 
     await main({ log, argv, getPackages, exit });
     expect(exit.mock.calls).toEqual([]);
+    expect(log.mock.calls).toMatchSnapshot();
   });
 
   it("bail if wrong", async () => {
@@ -54,6 +52,7 @@ describe("checkdep cli tests", () => {
 
     await main({ log, argv, getPackages, exit });
     expect(exit.mock.calls).toEqual([[1]]);
+    expect(log.mock.calls).toMatchSnapshot();
   });
 
   it("throw exception on parse error", async () => {
@@ -74,6 +73,7 @@ describe("checkdep cli tests", () => {
 
     await main({ log, argv, getPackages, exit });
     expect(exit.mock.calls).toEqual([[1]]);
+    expect(log.mock.calls).toMatchSnapshot();
   });
 
   it("should fix wrong package.json", async () => {
@@ -82,8 +82,7 @@ describe("checkdep cli tests", () => {
     const writeJson = jest.fn();
 
     const log = jest.fn();
-    const argv = { fix: true , expr: "*" };
-    console.log(log.mock.calls);
+    const argv = { fix: true, expr: "*" };
 
     await main({ log, argv, getPackages, exit, writeJson });
     expect(exit.mock.calls).toEqual([]);
