@@ -1,5 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
+import { renderTree, renderTrees } from "../";
 
 const singleParagraph = require("../fixtures/single-paragraph.json");
 const multiParagraph = require("../fixtures/multi-paragraph.json");
@@ -19,12 +20,7 @@ const image = require("../fixtures/image.json");
 // don't render ad internals
 jest.mock("@times-components/ad", () => "Ad");
 
-export default (
-  renderTree,
-  renderTrees,
-  TextComponent,
-  BlockComponent
-) => () => {
+export default (TextComponent, BlockComponent) => () => {
   it("renders a single paragraph", () => {
     const output = renderer.create(renderTree(singleParagraph)).toJSON();
 

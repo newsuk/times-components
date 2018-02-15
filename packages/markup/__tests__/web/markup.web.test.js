@@ -1,4 +1,3 @@
-import runTests from "../shared";
-import { renderTree, renderTrees } from "../../markup.web";
+import shared from "../shared";
 
-describe("Markup Web", runTests(renderTree, renderTrees, "p", "div"));
+describe("Markup Web", shared("p", "div"));
