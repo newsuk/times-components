@@ -36,8 +36,6 @@ const platformCode = platform => {
       return nativeSpecific("ios");
     case "android":
       return nativeSpecific("android");
-    case null:
-      return platformIndependentSpecific;
     default:
       return platformIndependentSpecific;
   }
