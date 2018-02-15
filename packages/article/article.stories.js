@@ -30,6 +30,7 @@ import singleRelatedArticleNoImageFixture from "./related-articles/fixtures/sing
 import singleRelatedArticleNoLabelFixture from "./related-articles/fixtures/single-related-article-no-label.json";
 import singleRelatedArticleNoBylineFixture from "./related-articles/fixtures/single-related-article-no-byline.json";
 import twoRelatedArticlesFixture from "./related-articles/fixtures/two-related-articles.json";
+import threeRelatedArticlesFixture from "./related-articles/fixtures/three-related-articles.json";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
@@ -239,5 +240,10 @@ storiesOf("Article", module)
   .add("Two related articles", () => (
     <RelatedArticles
       {...createRelatedArticlesProps(twoRelatedArticlesFixture.data)}
+    />
+  ))
+  .add("Three related articles", () => (
+    <RelatedArticles
+      {...createRelatedArticlesProps(threeRelatedArticlesFixture.data)}
     />
   ));

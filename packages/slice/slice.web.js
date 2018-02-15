@@ -11,7 +11,8 @@ const Slice = ({ children, template }) => {
   );
   const StyledChildrenContainer = getStyledComponent(
     templateName,
-    "ChildrenContainer"
+    "ChildrenContainer",
+    children.length
   );
 
   return (
