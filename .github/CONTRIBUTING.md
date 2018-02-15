@@ -71,6 +71,26 @@ npm
 
 `update-deps` is run `postinstall` to add `node_modules` to each of the packages
 
+## Component categories
+
+When creating a new component you should specify the most suitable category in the stories file. For example to add
+a `Slider` component to the the `Composed` category you would add:
+
+```
+storiesOf("Composed/Slider", module)
+```
+
+The current categories are:
+
+* <b>Primitive</b> - components that are the basic building blocks from which
+other components can be composed
+* <b>Composed</b> - components that are composed of Primitives
+* <b>Pages</b> - complex page level components made up from multiple 
+Composed and Primitive components
+* <b>Helpers</b> - tools, utilities and helpers
+
+
+
 ## Submitting a Pull Request
 
 Good pull requests, such as patches, improvements, and new features, are a
