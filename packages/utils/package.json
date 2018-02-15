@@ -4,7 +4,7 @@
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "scripts": {
     "make-schema": "node ./scripts/fetch-gql-schema",
-    "test": "jest --config='./__tests__/jest.config.js'",
+    "test": "jest --config='./__tests__/jest.config.js' --bail --ci --coverage",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff"
