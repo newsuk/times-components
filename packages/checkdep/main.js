@@ -3,6 +3,7 @@ import chalk from "chalk";
 import options from "./cli-options";
 import checkdep from "./checkdep";
 import * as strategies from "./strategies";
+
 const { help } = options;
 
 function prettifyHint([name, current, target]) {
@@ -59,7 +60,7 @@ export default async function main({
       if (argv.hint || argv.fix) {
         suggestions.forEach(([path, suggestionList]) => {
           log(path);
-          log("  " + suggestionList.map(prettifyHint).join("\n"));
+          log(`    ${suggestionList.map(prettifyHint).join("\n")}`);
         });
       }
 

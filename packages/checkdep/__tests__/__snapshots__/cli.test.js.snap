@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checkdep cli tests bail if wrong 1`] = `Array []`;
+
+exports[`checkdep cli tests list all dependencies 1`] = `
+Array [
+  Array [
+    "[34m1[39m",
+    "a",
+    "[32m1.0.0[39m",
+  ],
+  Array [
+    "[34m2[39m",
+    "b",
+    "[32m2.0.0[39m",
+  ],
+  Array [
+    "[34m3[39m",
+    "c",
+    "[32m3.0.0[39m",
+  ],
+  Array [
+    "[34m4[39m",
+    "d",
+    "[32m4.0.0[39m",
+  ],
+  Array [
+    "[34m5[39m",
+    "foo",
+    "[32m0.0.1[39m",
+  ],
+]
+`;
+
+exports[`checkdep cli tests list all hints 1`] = `Array []`;
+
+exports[`checkdep cli tests list all rules 1`] = `
+Array [
+  Array [
+    Object {},
+  ],
+]
+`;
+
+exports[`checkdep cli tests prints help 1`] = `
+Array [
+  Array [
+    "checkdep -e \\"packages/*/package.json\\" [...options]
+
+Options:
+  --strategy, -s  {conservative|progressive|majority|majorityConservative|majorityProgressive}
+  --expr, -e                                                                                    [default: \\"packages/*/package.json\\"]
+  --list                                                                                        [default: false]
+  --fix                                                                                         [default: false]
+  --bail                                                                                        [default: false]
+  --hint                                                                                        [default: false]
+  --showRules                                                                                   [default: false]
+",
+  ],
+]
+`;
+
+exports[`checkdep cli tests throw exception if strategy not found 1`] = `
+Array [
+  Array [
+    "strategy foo not available",
+  ],
+]
+`;

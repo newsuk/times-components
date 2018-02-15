@@ -12,7 +12,8 @@ exit with code 1 if packages are not in-sync
 
 ## strategies
 
-Strategies decide which package version to use if more then one are used in the monorepo.
+Strategies decide which package version to use if more then one are used in the
+monorepo.
 
 ### conservative
 
@@ -33,7 +34,6 @@ as majority but on a tie pick the older version
 ### majorityProgressive
 
 as majority but on a tie pick the newer version
-
 
 ```
 checkdep -e "packages/*/package.json" [...options]
