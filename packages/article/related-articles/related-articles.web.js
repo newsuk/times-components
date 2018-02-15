@@ -43,16 +43,13 @@ const RelatedArticles = ({ articles, onPress, template }) => {
       );
     });
 
-    return articleArray.reduce((prev, current, index) => {
-      const hasBorder = articleCount > 1 && index > 0;
-      return hasBorder
-        ? [
-            ...prev,
-            <StyledSeparator key={`separator-${current.key}`} />,
-            current
-          ]
-        : [...prev, current];
-    }, articleArray[0]);
+    return articleArray.reduce((previous, current) =>
+      [].concat(
+        previous,
+        <StyledSeparator key={`separator-${current.key}`} />,
+        current
+      )
+    );
   };
 
   return (
