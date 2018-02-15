@@ -11,7 +11,7 @@ const SquareImage = props => (
   <Image uri={squareUri} aspectRatio={1 / 1} {...props} />
 );
 
-storiesOf("Simple/Image", module).add(
+storiesOf("Primatives/Image", module).add(
   "Server side rendered Image (web only)",
   () => {
     const markup = {

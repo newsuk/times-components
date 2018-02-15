@@ -68,7 +68,7 @@ const adConfig = {
   }
 };
 
-storiesOf("Complex/Article", module)
+storiesOf("Pages/Article", module)
   .add("Default", () => {
     const props = {
       ...fullArticleFixture.data,

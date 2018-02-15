@@ -12,7 +12,7 @@ const BigPinkSquare = props => (
   />
 );
 
-storiesOf("Simple/Link", module)
+storiesOf("Primatives/Link", module)
   .addDecorator(CenteredDecorator)
   .add("Link with big content", () => (
     <Link url="https://thetimes.co.uk" onPress={action("onPress")}>

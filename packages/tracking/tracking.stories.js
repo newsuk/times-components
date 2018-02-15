@@ -54,7 +54,7 @@ const BoxesWithTrackingContext = withTrackingContext(
   { trackingObjectName: "Story" }
 );
 
-storiesOf("Other/Tracking", module)
+storiesOf("Helpers/Tracking", module)
   .add("Page tracking", () => (
     <BoxWithTrackingContext analyticsStream={storybookReporter} color="red" />
   ))

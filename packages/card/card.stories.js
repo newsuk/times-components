@@ -16,7 +16,7 @@ const cardProps = {
   showImage: true
 };
 
-storiesOf("Compound/Card", module)
+storiesOf("Composed/Card", module)
   .addDecorator(LateralSpacingDecorator)
   .add("Loading", () => (
     <Card {...cardProps} isLoading>
