@@ -1,0 +1,12 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+<a name="0.1.0"></a>
+# 0.1.0 (2018-02-16)
+
+
+### Features
+
+* Styleguide Package ([#652](https://github.com/newsuk/times-components/issues/652)) ([87a59ac](https://github.com/newsuk/times-components/commit/87a59ac))
