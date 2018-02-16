@@ -7,7 +7,6 @@ const singleParagraph = require("../fixtures/single-paragraph.json");
 const multiParagraph = require("../fixtures/multi-paragraph.json");
 const multiParagraphWithAds = require("../fixtures/multi-paragraph-with-ads.json");
 const multiParagraphWithPullQuote = require("../fixtures/multi-paragraph-with-pullquote.json");
-const anchor = require("../fixtures/anchor.json");
 const bold = require("../fixtures/bold.json");
 const italic = require("../fixtures/italic.json");
 const span = require("../fixtures/span.json");
@@ -47,24 +46,6 @@ export default () => {
   it("renders multiple paragraphs with ads", () => {
     const output = renderer
       .create(<View>{renderTrees(multiParagraphWithAds)}</View>)
-      .toJSON();
-
-    expect(output).toMatchSnapshot();
-  });
-
-  it("renders the anchor tag", () => {
-    const output = renderer
-      .create(
-        renderTree(anchor, {
-          link(key, { href }, children) {
-            return (
-              <Text key={key} href={href}>
-                {children}
-              </Text>
-            );
-          }
-        })
-      )
       .toJSON();
 
     expect(output).toMatchSnapshot();

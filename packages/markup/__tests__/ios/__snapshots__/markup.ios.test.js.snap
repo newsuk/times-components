@@ -377,17 +377,6 @@ exports[`Markup Native tests on iOS renders tags nested 1`] = `
 </Text>
 `;
 
-exports[`Markup Native tests on iOS renders the anchor tag 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  href="www.google.com"
->
-  some link here
-</Text>
-`;
-
 exports[`Markup Native tests on iOS renders the bold tag 1`] = `
 <Text
   accessible={true}
