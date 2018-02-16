@@ -8,6 +8,7 @@
         "id": "58604618-fb0e-11e7-a987-7fcf5e9983dc",
         "headline":
           "Now for a new battle: bringing the fragile masterpiece over safely",
+        "section": "thedish",
         "summary": [
           {
             "name": "paragraph",
@@ -66,6 +67,7 @@
         },
         "label": "BAYEUX TAPESTRY",
         "headline": "Bayeux Tapestry to be displayed in Britain",
+        "section": "sport",
         "summary": [
           {
             "name": "paragraph",
@@ -113,6 +115,7 @@
         },
         "label": "BAYEUX TAPESTRY",
         "headline": "Bayeux Tapestry to be displayed in Britain",
+        "section": "register",
         "summary": [
           {
             "name": "paragraph",
