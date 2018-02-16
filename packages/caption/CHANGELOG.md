@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.9.37"></a>
+## [0.9.37](https://github.com/newsuk/times-components/compare/@times-components/caption@0.9.36...@times-components/caption@0.9.37) (2018-02-16)
+
+
+### Bug Fixes
+
+* typo in grouping name ([#656](https://github.com/newsuk/times-components/issues/656)) ([680296c](https://github.com/newsuk/times-components/commit/680296c))
+
+
+
+
 <a name="0.9.36"></a>
 ## [0.9.36](https://github.com/newsuk/times-components/compare/@times-components/caption@0.9.35...@times-components/caption@0.9.36) (2018-02-15)
 
