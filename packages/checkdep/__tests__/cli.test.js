@@ -1,10 +1,11 @@
 import chalk from "chalk";
 import main from "../main";
 import simple from "./fixtures/simple.json";
+import divergent from "./fixtures/divergent.json";
 import wrong from "./fixtures/wrong.json";
 import wrongFixed from "./fixtures/wrong-fixed.json";
 
-//unfortunately we cant test colours as the root yarn test disables colours
+// unfortunately we cant test colours as the root yarn test disables colours
 chalk.enabled = false;
 
 describe("checkdep cli tests", () => {
@@ -15,11 +16,30 @@ describe("checkdep cli tests", () => {
     expect(log.mock.calls).toMatchSnapshot();
   });
 
+  it("prints graph", async () => {
+    const log = jest.fn();
+    const argv = { graph: "*=>*" };
+    const getPackages = () => simple;
+    await main({ log, getPackages, argv });
+    expect(log.mock.calls).toMatchSnapshot();
+  });
+
   it("list all dependencies", async () => {
     const exit = jest.fn();
     const log = jest.fn();
-    const argv = { list: 1, expr: "" };
+    const argv = { list: 1, expr: "*" };
     const getPackages = () => simple;
+
+    await main({ log, argv, getPackages, exit });
+    expect(exit.mock.calls).toEqual([]);
+    expect(log.mock.calls).toMatchSnapshot();
+  });
+
+  it("list with divergent", async () => {
+    const exit = jest.fn();
+    const log = jest.fn();
+    const argv = { list: 1, expr: "*" };
+    const getPackages = () => divergent;
 
     await main({ log, argv, getPackages, exit });
     expect(exit.mock.calls).toEqual([]);

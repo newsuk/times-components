@@ -1,7 +1,7 @@
-export default function patRegExp(pat = "") {
+export default function patRegExp(pat) {
   if (pat === "") {
-    return "^.+$";
+    return "";
   }
 
-  return `^${pat.replace("*", ".+")}.*$`;
+  return `^${pat.replace(/[*]/g, ".+")}.*$`;
 }

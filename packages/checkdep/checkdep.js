@@ -1,4 +1,5 @@
 import "babel-polyfill";
+
 function resolveConflicts(strategy, packages) {
   const { name, version } = packages.sort(strategy)[0];
   return { name, version };
