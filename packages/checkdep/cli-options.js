@@ -37,8 +37,4 @@ const { help, argv } = optimist
     strategy: undefined
   });
 
-
-export {
-  help,
-  argv
-};
+export { help, argv };

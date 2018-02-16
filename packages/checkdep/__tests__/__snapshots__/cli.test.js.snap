@@ -42,6 +42,44 @@ Array [
 ]
 `;
 
+exports[`checkdep cli tests list with divergent 1`] = `
+Array [
+  Array [
+    "1",
+    "a",
+    "1.0.1 1.0.0",
+  ],
+  Array [
+    "2",
+    "b",
+    "2.0.0",
+  ],
+  Array [
+    "3",
+    "foo",
+    "0.0.1",
+  ],
+]
+`;
+
+exports[`checkdep cli tests prints graph 1`] = `
+Array [
+  Array [
+    "digraph G {
+  \\"foo@0.0.1\\" -> \\"a@1.0.0\\";
+  \\"foo@0.0.1\\" -> \\"b@2.0.0\\";
+  \\"foo@0.0.1\\" -> \\"c@3.0.0\\";
+  \\"foo@0.0.1\\" -> \\"d@4.0.0\\";
+  \\"bar@0.0.1\\" -> \\"foo@0.0.1\\";
+  \\"bar@0.0.1\\" -> \\"a@1.0.0\\";
+  \\"bar@0.0.1\\" -> \\"b@2.0.0\\";
+  \\"bar@0.0.1\\" -> \\"c@3.0.0\\";
+  \\"bar@0.0.1\\" -> \\"d@4.0.0\\";
+}",
+  ],
+]
+`;
+
 exports[`checkdep cli tests prints help 1`] = `
 Array [
   Array [
