@@ -1,29 +1,32 @@
 import "babel-polyfill";
 
+const { keys, values, entries } = Object;
+const toObject = (a, b) => ({ ...a, ...b });
+const count = o => keys(o).length;
+const distinct = x => [...new Set(x)];
+const objectOrUndefined = dep => (count(dep) ? dep : undefined);
+
+// TODO: handle semver ranges and bail if undecidable
 function resolveConflicts(strategy, packages) {
   const { name, version } = packages.sort(strategy)[0];
   return { name, version };
 }
 
-function objectOrUndefined(dep) {
-  return Object.keys(dep).length ? dep : undefined;
-}
-
-const count = o => Object.keys(o).length;
-
 export function suggestFix(packageJson = {}, rules = {}) {
   const fixup = (dep = {}) =>
-    Object.entries(dep)
+    entries(dep)
       .map(([key, value]) => [key, rules[key], value])
       .filter(x => x[1])
       .filter(x => x[1] !== x[2])
       .map(([name, ver]) => ({ [name]: ver }))
-      .reduce((a, b) => ({ ...a, ...b }), {});
+      .reduce(toObject, {});
 
   const dependencies = fixup(packageJson.dependencies);
   const devDependencies = fixup(packageJson.devDependencies);
 
-  if (!count(dependencies) && !count(devDependencies)) return null;
+  if (!count(dependencies) && !count(devDependencies)) {
+    return null;
+  }
 
   return {
     dependencies,
@@ -31,84 +34,77 @@ export function suggestFix(packageJson = {}, rules = {}) {
   };
 }
 
-export function applyPatch(
+export const applyPatch = (
   packageJson,
   { dependencies = {}, devDependencies = {} }
-) {
-  const newDeps = objectOrUndefined({
+) => ({
+  ...packageJson,
+  dependencies: objectOrUndefined({
     ...packageJson.dependencies,
     ...dependencies
-  });
-
-  const newDev = objectOrUndefined({
+  }),
+  devDependencies: objectOrUndefined({
     ...packageJson.devDependencies,
     ...devDependencies
-  });
-  return {
-    ...packageJson,
-    dependencies: newDeps,
-    devDependencies: newDev
-  };
-}
+  })
+});
 
 export function getAllRequirements(packages) {
   return packages
     .map(p => [
       p.name,
       p.version,
-      [].concat(
-        Object.entries(p.dependencies || {}),
-        Object.entries(p.devDependencies || {})
-      )
+      [...entries(p.dependencies || {}), ...entries(p.devDependencies || {})]
     ])
     .flatMap(([name, version, deps]) =>
       deps.map(([depName, depVersion]) => [name, version, depName, depVersion])
     );
 }
 
-export function computeFlatReverseLookupMap(requirements) {
-  return requirements.map(p => [`${p[2]}@${p[3]}`, `${p[0]}@${p[1]}`]).reduce(
-    (a, [target, pack]) =>
-      Object.assign(a, {
-        [target]: new Set([pack, ...(a[target] || [])])
-      }),
+export function computeVersionSets(requirements) {
+  return requirements.map(p => [p[2], p[3]]).reduce(
+    (sets, [name, ver]) => ({
+      ...sets,
+      [name]: distinct([ver, ...(sets[name] || [])])
+    }),
     {}
   );
 }
 
-export function computeVersionSets(requirements) {
-  return requirements.map(p => [p[2], p[3]]).reduce(
-    (a, [name, ver]) =>
-      Object.assign(a, {
-        [name]: new Set([ver, ...(a[name] || [])])
-      }),
+export function computeFlatReverseLookupMap(requirements) {
+  return requirements.map(r => [`${r[2]}@${r[3]}`, `${r[0]}@${r[1]}`]).reduce(
+    (deps, [dependee, dependency]) => ({
+      ...deps,
+      [dependee]: new Set([dependency, ...(deps[dependee] || [])])
+    }),
     {}
   );
 }
 
 export function computeReverseLookupMap(requirements, versionSets) {
   const flatReverseLookup = computeFlatReverseLookupMap(requirements);
-
-  return Object.entries(versionSets)
-    .map(c => ({
-      [c[0]]: [...c[1]].map(p => ({
-        name: c[0],
-        version: p,
-        usedBy: [...flatReverseLookup[`${c[0]}@${p}`]]
-      }))
+  return entries(versionSets)
+    .map(([dependency, versions]) => ({
+      [dependency]: [
+        ...versions.map(version => ({
+          name: dependency,
+          version,
+          usedBy: [...flatReverseLookup[`${dependency}@${version}`]]
+        }))
+      ]
     }))
-    .reduce((a, b) => Object.assign(a, b), {});
+    .reduce(toObject, {});
 }
 
+// finds dependencies that don't match packages
 export function findWrongVersions(packages) {
-  const packageMap = packages
-    .map(p => [p.name, p.version])
-    .map(([name, version]) => ({ [name]: version }))
-    .reduce((a, b) => Object.assign(a, b), {});
+  const expectedVersions = packages
+    .map(({ name, version }) => ({ [name]: version }))
+    .reduce(toObject, {});
 
   return packages.flatMap(p =>
-    Object.entries(p.dependencies || {})
-      .map(([k, v]) => [p.name, k, v, packageMap[k]])
+    entries(p.dependencies || {})
+      .map(([name, version]) => [p.name, name, version, expectedVersions[name]])
       .filter(x => x[3] && x[2] !== x[3])
       .map(([usedBy, packageName, installs, expected]) => ({
         usedBy,
@@ -126,14 +122,14 @@ export function fixTodo([path, json, patch]) {
 export function getSuggestions(todo) {
   return todo.map(([path, json, patch]) => [
     path,
-    [].concat(
-      Object.entries(patch.dependencies)
+    [
+      ...entries(patch.dependencies)
         .map(([name, version]) => [name, json.dependencies[name], version])
         .filter(x => x[1]),
-      Object.entries(patch.devDependencies)
+      ...entries(patch.devDependencies)
         .map(([name, version]) => [name, json.devDependencies[name], version])
         .filter(x => x[1])
-    )
+    ]
   ]);
 }
 
@@ -144,30 +140,29 @@ export function getTodos(packagesList, rules) {
 }
 
 export function createRules(resolved, wrong) {
-  return []
-    .concat(
-      resolved.map(w => ({ [w.name]: w.version })),
-      wrong.map(w => ({ [w.package]: w.expected }))
-    )
-    .reduce((a, b) => ({ ...a, ...b }), {});
+  return [
+    ...resolved.map(w => ({ [w.name]: w.version })),
+    ...wrong.map(w => ({ [w.package]: w.expected }))
+  ].reduce(toObject, {});
 }
 
 export function applyStrategy(requirements, strategy) {
   const versionSets = computeVersionSets(requirements);
 
-  if (!strategy)
+  if (!strategy) {
     return {
       versionSets,
       resolved: []
     };
+  }
 
   const reverseLookup = computeReverseLookupMap(requirements, versionSets);
-
-  const divergent = Object.values(reverseLookup).filter(x => x.length > 1);
+  const divergent = values(reverseLookup).filter(x => x.length > 1);
+  const resolved = divergent.map(c => resolveConflicts(strategy, c));
 
   return {
     versionSets,
-    resolved: divergent.map(c => resolveConflicts(strategy, c))
+    resolved
   };
 }
 
