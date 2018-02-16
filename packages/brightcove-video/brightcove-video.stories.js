@@ -19,7 +19,7 @@ const playIconURI = "https://i.imgur.com/qvmvjzE.png";
 
 const firstArgJSONAction = decorateAction([args => [JSON.stringify(args[0])]]);
 
-storiesOf("Primatives/BrightcoveVideo", module)
+storiesOf("Primitives/BrightcoveVideo", module)
   .add("Launcher with default values", () => (
     <BrightcoveVideo
       policyKey={policyKey}
