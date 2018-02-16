@@ -17,7 +17,7 @@ const makeHarness = ({
   globalNames,
   eventCallback
 }) => {
-  let initCalled = false;
+  let scriptsLoadedCalled = false;
   let renderCompleteCalled = false;
 
   const withCatch = action => {
@@ -26,7 +26,7 @@ const makeHarness = ({
     } catch (e) {
       // eslint-disable-next-line no-console
       window.console.error(`DOMContext Error: ${e.message}\n${e.stack}`);
-      eventCallback("error", e.message);
+      eventCallback("error", `${e.message}${e.stack}`);
     }
   };
   const log = (...message) => {
@@ -37,14 +37,23 @@ const makeHarness = ({
       withCatch(() => {
         // eslint-disable-next-line no-param-reassign
         window.scritpsProcessed = window.scritpsProcessed || [];
+        const initialiser = init({
+          el,
+          data,
+          window,
+          document
+        });
+        if (initialiser.init) {
+          initialiser.init();
+        }
         this.loadScriptsParallel(scriptUris, () => {
-          this.runInitIfGlobalsPresent();
+          this.runScriptsLoadedIf();
         });
       });
     },
-    runInitIfGlobalsPresent() {
+    runScriptsLoadedIf() {
       if (scriptUris.length === window.scritpsProcessed.length) {
-        this.runInit();
+        this.scriptsLoaded();
       }
     },
     addProcessedScript(scriptId) {
@@ -61,7 +70,7 @@ const makeHarness = ({
       withCatch(() => {
         log("script loaded:", scriptId);
         this.addProcessedScript(scriptId);
-        this.runInitIfGlobalsPresent();
+        this.runScriptsLoadedIf();
       });
     },
     scriptErrored(scriptId, canRequestFail, err) {
@@ -71,7 +80,7 @@ const makeHarness = ({
         if (!canRequestFail) {
           throw new Error(`Failed to load the script ${err}`);
         }
-        this.runInitIfGlobalsPresent();
+        this.runScriptsLoadedIf();
       });
     },
 
@@ -87,7 +96,7 @@ const makeHarness = ({
           return;
         }
         this.addProcessedScript(scriptId);
-        this.runInitIfGlobalsPresent();
+        this.runScriptsLoadedIf();
       });
     },
 
@@ -110,7 +119,7 @@ const makeHarness = ({
           script.defer = true;
           document.head.appendChild(script);
         } else {
-          this.runInitIfGlobalsPresent();
+          this.runScriptsLoadedIf();
         }
         script.addEventListener("load", this.scriptLoaded.bind(this, scriptId));
         script.addEventListener(
@@ -126,12 +135,12 @@ const makeHarness = ({
       }
     },
 
-    runInit() {
+    scriptsLoaded() {
       withCatch(() => {
-        if (initCalled) {
+        if (scriptsLoadedCalled) {
           return;
         }
-        initCalled = true;
+        scriptsLoadedCalled = true;
         const globals = {};
         for (let i = 0; i < globalNames.length; i += 1) {
           const globalName = globalNames[i];
@@ -151,8 +160,8 @@ const makeHarness = ({
           window,
           document
         });
-        if (initialiser && initialiser.execute) {
-          initialiser.execute();
+        if (initialiser && initialiser.scriptsLoaded) {
+          initialiser.scriptsLoaded();
         }
       });
     }

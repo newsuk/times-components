@@ -26,8 +26,12 @@ class Ad extends Component {
     this.state = {
       adReady: false
     };
-    // TODO check article
-    this.slots.push(getPrebidSlotConfig(this.props.pos, "article"));
+    this.slots = [];
+    const slotsBid = ["ad-header", "ad-article-inline"];
+    if (slotsBid.includes(this.props.pos)) {
+      // TODO check article
+      this.slots.push(getPrebidSlotConfig(this.props.pos, "article"));
+    }
   }
 
   setAdReady = () => {
@@ -59,31 +63,31 @@ class Ad extends Component {
       : { height: this.config.maxSizes.height };
     const scriptsToLoad = [];
 
-    if (data.amazonAccountID) {
+    if (this.prebidConfig.bidders.amazon.accountId) {
       scriptsToLoad.push({
         uri: "https://c.amazon-adsystem.com/aax2/apstag.js"
       });
     }
     scriptsToLoad.push(
-      {
-        uri: "https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js"
-      },
+      // {
+      //   uri: "https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js"
+      // },
       {
         uri: `https://newscorp.grapeshot.co.uk/thetimes/channels.cgi?url=${encodeURIComponent(
           data.contextUrl
         )}`,
         canRequestFail: true,
         timeout: 500
-      },
-      {
-        uri: "https://www.googletagservices.com/tag/js/gpt.js"
       }
+      // ,{
+      //   uri: "https://www.googletagservices.com/tag/js/gpt.js"
+      // }
     );
     const webviewComponent = (
       <DOMContext
         data={data}
         scriptUris={scriptsToLoad}
-        globalNames={["googletag", "gs_channels", "pbjs"]}
+        globalNames={["googletag", "gs_channels", "pbjs", "apstag"]}
         baseUrl={this.props.baseUrl}
         init={adInit}
         onRenderComplete={this.setAdReady}

@@ -100,7 +100,7 @@ export default class DOMContext extends PureComponent {
           "window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
       }
     });
-
+    console.log(html);
     return (
       <View style={{ width, height }}>
         <WebView
