@@ -161,7 +161,8 @@
     "@storybook/components": "3.3.11",
     "@storybook/client-logger": "3.3.11",
     "@storybook/node-logger": "3.3.11",
-    "@storybook/ui": "3.3.11"
-
+    "@storybook/ui": "3.3.11",
+    "react-native": "0.50.1",
+    "ws": "3.3.2"
   }
 }
