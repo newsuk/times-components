@@ -22,10 +22,9 @@ prints a graphviz compatible output that can be converted to a graphic
 
 The filter allows you to restrict the nodes that will be part of the graph.
 
-The graph is described as a set of relationship of the shape
-`package@version => dependency@version`.
-A Node is included in the graph if the supplied pattern matches the
-relationship. Currently only supported placeholder symbol is "\*".
+The graph is described as a set of relationship of the shape `package@version =>
+dependency@version`. A Node is included in the graph if the supplied pattern
+matches the relationship. Currently only supported placeholder symbol is "\*".
 
 #### Examples
 
@@ -44,7 +43,6 @@ all the dependencies of all times-components packages
 `*=>*` , ``, `*`
 
 everything
-
 
 ## --bail
 

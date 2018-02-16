@@ -31,10 +31,7 @@ export default async function main({
   }
 
   const packagesList = await getPackages(argv.expr);
-  return depend(
-    packagesList,
-    argv.strategy ? strategies[argv.strategy] : null
-  )
+  return depend(packagesList, argv.strategy ? strategies[argv.strategy] : null)
     .then(
       ({ requirements, rules, suggestions, fixedPackages, versionSets }) => {
         if (argv.graph) {
