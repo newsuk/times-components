@@ -62,7 +62,7 @@ class Ad extends Component {
       ? { width: 0, height: 0 }
       : { height: this.config.maxSizes.height };
     const scriptsToLoad = [];
-    this.prebidConfig.bidders.amazon.accountId = null;
+    //this.prebidConfig.bidders.amazon.accountId = null;
     if (this.prebidConfig.bidders.amazon.accountId) {
       scriptsToLoad.push({
         uri: "https://c.amazon-adsystem.com/aax2/apstag.js"
@@ -134,7 +134,7 @@ Ad.propTypes = {
 // NOTE, these values are temporary, adding real values (or removing defaults
 // altogether) will be done in REPLAT-591 and REPLAT-592
 Ad.defaultProps = {
-  networkId: "25436805",
+  networkId: "3048",
   adUnit: "d.thetimes.co.uk",
   section: "article",
   baseUrl: "https://www.thetimes.co.uk/",

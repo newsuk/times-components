@@ -30,10 +30,11 @@ const adInit = args => {
     configureApstag() {
       window.apstag = {
         init(i) {
-          this.addToQueue(["i", i]);
+          this.addToQueue(["i", {"0":i}]);
         },
         fetchBids(i) {
-          this.addToQueue(["f", i]);
+          this.addToQueue(["f", {"0":i}]);
+          console.log('Testtt', JSON.stringify(window.apstag._Q));
         },
         setDisplayBids() {},
         targetingKeys() {
@@ -47,22 +48,28 @@ const adInit = args => {
     },
     initApstag(amazonAccountID, timeout) {
       window.apstag.init({
-        pubID: amazonAccountID,
+        pubID: "3360",//amazonAccountID,
         adServer: "googletag",
         bidTimeout: timeout
       });
     },
     getAmazonConfig(adSlots, networkId, adUnit, section) {
+      console.log('getAmazonConfig, before');
       const adUnitPathParts = [networkId, adUnit];
       if (section) {
         adUnitPathParts.push(section);
       }
       const adUnitPath = this.getAdUnitPath(adUnitPathParts);
-      return adSlots.map(slot => ({
+      console.log('adSlots are', adSlots);
+      const adk = adSlots.map(slot => ({
         slotID: slot.pos,
         slotName: adUnitPath,
         sizes: slot.sizes
       }));
+      console.log('getAmazonConfig, after', adk);
+
+
+      return adk ;
     },
     scheduleRequestAmazonBids(
       adsSlots,
@@ -74,7 +81,8 @@ const adInit = args => {
       return new Promise(resolve => {
         window.apstag.fetchBids(
           { slots: this.getAmazonConfig(adsSlots, networkId, adUnit, section) },
-          () => resolve("amazon bids loaded")
+          () => {      console.log('scheduleRequestAmazonBids, resolve');
+          resolve("amazon bids loaded");}
         );
       });
     },

@@ -43,7 +43,7 @@ storiesOf("Advertisement", module)
   .add("render one ad - intervention", () =>
     withOpenInNewWindow(<Ad pos="intervention" />)
   )
-  .add("render one ad - header", () => withOpenInNewWindow(<Ad pos="header" />))
+  .add("render one ad - header", () => withOpenInNewWindow(<Ad pos="ad-header" />))
   .add("render article ads - header, inline", () =>
     withOpenInNewWindow(
       <View>
