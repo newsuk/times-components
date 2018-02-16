@@ -75,6 +75,9 @@ export const ResponsiveHeadline = withResponsiveStyles(Text, {
     font-size: 22px;
     line-height: 22px;
     margin-bottom: 5px;
+    &:hover {
+      color: #069;
+    }
   `,
   mediumUp: () => `
     font-size: 30px;
