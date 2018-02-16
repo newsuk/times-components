@@ -13,6 +13,7 @@ import twoDefaultRelatedArticlesFixture from "../related-articles/fixtures/defau
 import threeDefaultRelatedArticlesFixture from "../related-articles/fixtures/default/three-default.json";
 import oneLeadAndTwoRelatedArticleFixture from "../related-articles/fixtures/lead-and-two/one-default.json";
 import twoLeadAndTwoRelatedArticlesFixture from "../related-articles/fixtures/lead-and-two/two-default.json";
+import threeLeadAndTwoRelatedArticlesFixture from "../related-articles/fixtures/lead-and-two/three-default.json";
 
 const createRelatedArticlesProps = fixtureData => ({
   articles: fixtureData.relatedArticles,
@@ -146,6 +147,20 @@ module.exports = () => {
           <RelatedArticles
             {...createRelatedArticlesProps(
               twoLeadAndTwoRelatedArticlesFixture.data
+            )}
+          />
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+  });
+
+    it("renders three LEAD_AND_TWO related article", () => {
+      const tree = renderer
+        .create(
+          <RelatedArticles
+            {...createRelatedArticlesProps(
+              threeLeadAndTwoRelatedArticlesFixture.data
             )}
           />
         )

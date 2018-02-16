@@ -33,6 +33,7 @@ import twoDefaultRelatedArticlesFixture from "./related-articles/fixtures/defaul
 import threeDefaultRelatedArticlesFixture from "./related-articles/fixtures/default/three-default.json";
 import oneLeadAndTwoRelatedArticleFixture from "./related-articles/fixtures/lead-and-two/one-default.json";
 import twoLeadAndTwoRelatedArticleFixture from "./related-articles/fixtures/lead-and-two/two-default.json";
+import threeLeadAndTwoRelatedArticleFixture from "./related-articles/fixtures/lead-and-two/three-default.json";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
@@ -263,5 +264,10 @@ storiesOf("Pages/Article", module)
   .add("Two LEAD_AND_TWO related articles", () => (
     <RelatedArticles
       {...createRelatedArticlesProps(twoLeadAndTwoRelatedArticleFixture.data)}
+    />
+  ))
+  .add("Three LEAD_AND_TWO related articles", () => (
+    <RelatedArticles
+      {...createRelatedArticlesProps(threeLeadAndTwoRelatedArticleFixture.data)}
     />
   ));
