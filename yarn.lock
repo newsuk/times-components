@@ -323,58 +323,6 @@
     react-treebeard "^2.1.0"
     redux "^3.7.2"
 
-"@times-components/ad@0.9.4":
-  version "0.9.4"
-  resolved "https://registry.yarnpkg.com/@times-components/ad/-/ad-0.9.4.tgz#07deadf6708a6399e3d178d73a3166ebed519527"
-  dependencies:
-    "@times-components/watermark" "0.3.4"
-    prop-types "15.6.0"
-    react-broadcast "0.5.2"
-
-"@times-components/article-byline@0.11.7":
-  version "0.11.7"
-  resolved "https://registry.yarnpkg.com/@times-components/article-byline/-/article-byline-0.11.7.tgz#f793cf5d66f388425aa5bba84aae105c2098b24c"
-  dependencies:
-    "@times-components/link" "0.13.21"
-    "@times-components/markup" "0.19.4"
-    prop-types "15.6.0"
-
-"@times-components/article-summary@0.17.8":
-  version "0.17.8"
-  resolved "https://registry.yarnpkg.com/@times-components/article-summary/-/article-summary-0.17.8.tgz#665604231748c4189323484391a68e15ef449574"
-  dependencies:
-    "@times-components/article-byline" "0.11.7"
-    "@times-components/article-label" "0.6.24"
-    "@times-components/date-publication" "0.11.5"
-    "@times-components/jest-configurator" "0.2.0"
-    "@times-components/markup" "0.19.4"
-    "@times-components/responsive-styles" "0.2.19"
-    date-fns "1.28.5"
-    prop-types "15.6.0"
-
-"@times-components/article@0.37.0":
-  version "0.37.0"
-  resolved "https://registry.yarnpkg.com/@times-components/article/-/article-0.37.0.tgz#6ba1cb4addaf450e13bcf8188f3e7ef46058f331"
-  dependencies:
-    "@times-components/ad" "0.9.4"
-    "@times-components/article-byline" "0.11.7"
-    "@times-components/article-flag" "0.10.11"
-    "@times-components/article-image" "0.11.29"
-    "@times-components/article-label" "0.6.24"
-    "@times-components/article-summary" "0.17.8"
-    "@times-components/caption" "0.9.36"
-    "@times-components/date-publication" "0.11.5"
-    "@times-components/image" "1.13.14"
-    "@times-components/link" "0.13.21"
-    "@times-components/markup" "0.19.4"
-    "@times-components/provider" "0.22.10"
-    "@times-components/pull-quote" "0.2.12"
-    "@times-components/responsive-styles" "0.2.19"
-    "@times-components/slice" "0.3.0"
-    "@times-components/tracking" "0.7.2"
-    lodash.get "4.4.2"
-    prop-types "15.6.0"
-
 "@times-components/fructose@3.1.14":
   version "3.1.14"
   resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.1.14.tgz#a31be85b619132431a46774f970b4146927156c1"
@@ -399,148 +347,6 @@
     webpack "^3.8.1"
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
-
-<<<<<<< HEAD
-"@times-components/markup@0.19.4":
-  version "0.19.4"
-  resolved "https://registry.yarnpkg.com/@times-components/markup/-/markup-0.19.4.tgz#f5c24f0da5545b014975187280515eeca2654f2a"
-=======
-"@times-components/gestures@1.1.5":
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/@times-components/gestures/-/gestures-1.1.5.tgz#02a164d75b32051b0524ea9d1f9c1db1fcbce962"
-  dependencies:
-    prop-types "15.6.0"
-
-"@times-components/gradient@0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@times-components/gradient/-/gradient-0.4.1.tgz#e46071619cda9f433478550b056ce8f9a15b37da"
-  dependencies:
-    "@times-components/jest-configurator" "0.0.23"
-    prop-types "15.6.0"
-    react-native-linear-gradient "2.3.0"
-
-"@times-components/icons@0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@times-components/icons/-/icons-0.1.7.tgz#e1d3e4a8de67753d0d905e7d57731943325b4ffc"
-  dependencies:
-    prop-types "15.6.0"
-    svgs "3.1.1"
-
-"@times-components/image@1.13.8":
-  version "1.13.8"
-  resolved "https://registry.yarnpkg.com/@times-components/image/-/image-1.13.8.tgz#a93d5fcba45c2aff9851e6a484a38a9b89682bb2"
-  dependencies:
-    "@times-components/gestures" "1.1.5"
-    "@times-components/gradient" "0.4.1"
-    "@times-components/link" "0.13.17"
-    prop-types "15.6.0"
-    react-native-svg "5.5.0"
-    svgs "3.1.1"
-
-"@times-components/jest-configurator@0.0.23":
-  version "0.0.23"
-  resolved "https://registry.yarnpkg.com/@times-components/jest-configurator/-/jest-configurator-0.0.23.tgz#16300966e18d7f326a3547b9263712e5cfadfb37"
-  dependencies:
-    enzyme "3.3.0"
-    enzyme-adapter-react-16 "1.1.0"
-    enzyme-to-json "3.3.0"
-    find-node-modules "1.0.4"
-    recursive-readdir-synchronous "0.0.3"
-
-"@times-components/link@0.13.17":
-  version "0.13.17"
-  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-0.13.17.tgz#13f6aec306dff6efaeeb3022ce41371aad2a6bee"
-  dependencies:
-    "@times-components/responsive-styles" "0.2.16"
-    lodash.pick "4.4.0"
-    prop-types "15.6.0"
-
-"@times-components/markup@0.17.1":
-  version "0.17.1"
-  resolved "https://registry.yarnpkg.com/@times-components/markup/-/markup-0.17.1.tgz#8ee3ee1eb0384d464ea2c9443f4d4b57352cdfee"
-  dependencies:
-    "@times-components/ad" "0.7.1"
-    "@times-components/pull-quote" "0.2.8"
-    prop-types "15.6.0"
-
-"@times-components/provider@0.22.6":
-  version "0.22.6"
-  resolved "https://registry.yarnpkg.com/@times-components/provider/-/provider-0.22.6.tgz#352870d431f03638ac43959f20df9334f093b389"
-  dependencies:
-    graphql-tag "2.6.0"
-    hoist-non-react-statics "2.3.1"
-    lodash.get "4.4.2"
-    lodash.isequal "4.4.0"
-    lodash.pick "4.4.0"
-    prop-types "15.6.0"
-    react-apollo-temp "2.0.5"
-    react-display-name "0.2.3"
-
-"@times-components/pull-quote@0.2.8":
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/@times-components/pull-quote/-/pull-quote-0.2.8.tgz#6c74a1f04cfb46b5066a06d8fda9845bf40fdee8"
-  dependencies:
-    "@times-components/icons" "0.1.7"
-    "@times-components/link" "0.13.17"
-    prop-types "15.6.0"
-
-"@times-components/responsive-styles@0.2.16":
-  version "0.2.16"
-  resolved "https://registry.yarnpkg.com/@times-components/responsive-styles/-/responsive-styles-0.2.16.tgz#0f29522bf1e92f8c572caeda02e0fb9ba9c7606a"
-  dependencies:
-    prop-types "15.6.0"
-    styled-components "2.2.3"
-
-"@times-components/storybook@0.2.6":
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/@times-components/storybook/-/storybook-0.2.6.tgz#51a6ebf56961a6d933b267e5704b1754facc0a7f"
-  dependencies:
-    "@storybook/addon-actions" "3.3.11"
-    "@storybook/addons" "3.3.11"
-    eslint "4.9.0"
-    eslint-config-airbnb "16.1.0"
-    eslint-config-prettier "2.6.0"
-    eslint-plugin-import "2.8.0"
-    eslint-plugin-jsx-a11y "6.0.2"
-    eslint-plugin-react "7.4.0"
-    react "16.2.0"
-    react-dom "16.2.0"
-    react-native "0.50.1"
-
-"@times-components/styleguide@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-0.1.0.tgz#fd0b17b778444dd1dacd9b066974f49930500265"
-  dependencies:
-    prop-types "15.6.0"
-
-"@times-components/tracking@0.6.12":
-  version "0.6.12"
-  resolved "https://registry.yarnpkg.com/@times-components/tracking/-/tracking-0.6.12.tgz#782797df7595e8e1b548aa2e73e65d1cc061b859"
-  dependencies:
-    hoist-non-react-statics "2.3.1"
-    lodash.get "4.4.2"
-    prop-types "15.6.0"
-    react-display-name "0.2.3"
-
-"@times-components/utils@0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-0.3.0.tgz#768fc2c9cbdfad4caff365d1c58b771dc567c873"
-  dependencies:
-    apollo-cache-inmemory "1.1.5"
-    apollo-client "2.2.0"
-    graphql "0.12.3"
-    prop-types "15.6.0"
-    react "16.2.0"
-    react-apollo-temp "2.0.5"
-
-"@times-components/watermark@0.2.17":
-  version "0.2.17"
-  resolved "https://registry.yarnpkg.com/@times-components/watermark/-/watermark-0.2.17.tgz#4b82e57cbc3dfa9139e5094db1d1355d49565666"
->>>>>>>  feat: Add section to Provider and filter down to Related Articles
-  dependencies:
-    "@times-components/ad" "0.9.4"
-    "@times-components/pull-quote" "0.2.12"
-    prop-types "15.6.0"
 
 "@types/async@2.0.46":
   version "2.0.46"
@@ -3515,18 +3321,6 @@ conventional-commits-parser@^2.1.1, conventional-commits-parser@^2.1.3:
     through2 "^2.0.0"
     trim-off-newlines "^1.0.0"
 
-conventional-commits-parser@^2.1.3:
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/conventional-commits-parser/-/conventional-commits-parser-2.1.3.tgz#fbbfcfe4901ccbae63bb3834f982325e0b7c663f"
-  dependencies:
-    JSONStream "^1.0.4"
-    is-text-path "^1.0.0"
-    lodash "^4.2.1"
-    meow "^3.3.0"
-    split2 "^2.0.0"
-    through2 "^2.0.0"
-    trim-off-newlines "^1.0.0"
-
 conventional-recommended-bump@^1.0.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/conventional-recommended-bump/-/conventional-recommended-bump-1.2.1.tgz#1b7137efb5091f99fe009e2fe9ddb7cc490e9375"
@@ -5572,16 +5366,6 @@ git-raw-commits@^1.3.0, git-raw-commits@^1.3.2:
     split2 "^2.0.0"
     through2 "^2.0.0"
 
-git-raw-commits@^1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/git-raw-commits/-/git-raw-commits-1.3.2.tgz#0766c14d33566ba0094869697e13b0eb06147c07"
-  dependencies:
-    dargs "^4.0.1"
-    lodash.template "^4.0.2"
-    meow "^3.3.0"
-    split2 "^2.0.0"
-    through2 "^2.0.0"
-
 git-remote-origin-url@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/git-remote-origin-url/-/git-remote-origin-url-2.0.0.tgz#5282659dae2107145a11126112ad3216ec5fa65f"
@@ -5590,13 +5374,6 @@ git-remote-origin-url@^2.0.0:
     pify "^2.3.0"
 
 git-semver-tags@^1.3.0, git-semver-tags@^1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/git-semver-tags/-/git-semver-tags-1.3.2.tgz#94afa43c9070ae527a3ab86b978e59ae207803cc"
-  dependencies:
-    meow "^3.3.0"
-    semver "^5.0.1"
-
-git-semver-tags@^1.3.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/git-semver-tags/-/git-semver-tags-1.3.2.tgz#94afa43c9070ae527a3ab86b978e59ae207803cc"
   dependencies:
@@ -7759,11 +7536,7 @@ lodash@^3.10.1, lodash@^3.5.0:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
-lodash@^4.0.0, lodash@^4.1.0, lodash@^4.11.1, lodash@^4.13.1, lodash@^4.14.0, lodash@^4.14.1, lodash@^4.15.0, lodash@^4.16.6, lodash@^4.17.0, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.6.1, lodash@^4.8.0:
-  version "4.17.5"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
-
-lodash@^4.0.1:
+lodash@^4.0.0, lodash@^4.0.1, lodash@^4.1.0, lodash@^4.11.1, lodash@^4.13.1, lodash@^4.14.0, lodash@^4.14.1, lodash@^4.15.0, lodash@^4.16.6, lodash@^4.17.0, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.6.1, lodash@^4.8.0:
   version "4.17.5"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
 
