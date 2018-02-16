@@ -19,7 +19,7 @@ const extras = {
   onTwitterLinkPress: preventDefaultedAction("onTwitterLinkPress")
 };
 
-storiesOf("AuthorHead", module)
+storiesOf("Composed/AuthorHead", module)
   .addDecorator(LateralSpacingDecorator)
   .add("Full Header", () => <AuthorHead {...data} {...extras} />)
   .add("No profile picture", () => {

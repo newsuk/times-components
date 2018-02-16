@@ -11,7 +11,7 @@ import reviewFixture from "./fixtures/review";
 
 const story = m => <View style={{ padding: 20 }}>{m}</View>;
 
-storiesOf("ArticleSummary", module)
+storiesOf("Composed/ArticleSummary", module)
   .add("Default", () => story(<ArticleSummary {...defaultFixture} />))
   .add("No byline", () => story(<ArticleSummary {...noBylineFixture} />))
   .add("Summary with multiple paragraphs", () =>

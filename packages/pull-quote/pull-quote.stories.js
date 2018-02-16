@@ -8,7 +8,7 @@ const content =
 const caption = "Judge Sapnara";
 const twitter = "@henrywinter";
 
-storiesOf("PullQuotes", module)
+storiesOf("Primatives/PullQuotes", module)
   .add("Pull Quotes with a Caption", () => (
     <PullQuotes content={content} caption={caption} />
   ))

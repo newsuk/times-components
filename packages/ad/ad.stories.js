@@ -40,7 +40,7 @@ const withOpenInNewWindow = children => {
   );
 };
 
-storiesOf("Advertisement", module)
+storiesOf("Primatives/Advertisement", module)
   .add("render one ad - intervention", () =>
     withOpenInNewWindow(<Ad pos="intervention" />)
   )

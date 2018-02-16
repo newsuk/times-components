@@ -1,4 +1,5 @@
 const path = require("path");
+const ignoredStories = require("./ignoredStories");
 
 const config = {
   snapPath: path.join(__dirname, "/snappy"),
@@ -11,7 +12,10 @@ const config = {
     "PaginationTracking",
     "Provider",
     "TrackingPage",
-    "TrackingEvent"
+    "TrackingEvent",
+    "Error",
+    "error",
+    "AuthorProfileLoading"
   ]
 };
 

@@ -13,7 +13,7 @@ const bylineStyles = {
   }
 };
 
-describe("Article Byline Tests", () => {
+module.exports = () => {
   it("renders correctly with a single author", () => {
     const tree = renderer
       .create(<ArticleByline ast={authorsAST.singleAuthor} />)
@@ -69,4 +69,4 @@ describe("Article Byline Tests", () => {
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
-});
+};

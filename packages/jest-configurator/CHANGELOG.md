@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.1.0...@times-components/jest-configurator@0.2.0) (2018-02-15)
+
+
+### Features
+
+* allow platform independence in Jest Configurator ([#646](https://github.com/newsuk/times-components/issues/646)) ([d83b7b2](https://github.com/newsuk/times-components/commit/d83b7b2))
+
+
+
+
 <a name="0.1.0"></a>
 # [0.1.0](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.0.23...@times-components/jest-configurator@0.1.0) (2018-02-14)
 

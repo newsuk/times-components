@@ -48,7 +48,6 @@ describe("Jest Configurator Tests", () => {
     });
   });
 
-  // Web specific
   describe("Web specific configuration", () => {
     it("should use the module mapper to match react-native to react-native-web", () => {
       const config = jestConfigurator("web", dir);
@@ -87,6 +86,18 @@ describe("Jest Configurator Tests", () => {
         "js",
         "json"
       ]);
+    });
+  });
+
+  describe("No platform specific config", () => {
+    it("should allow a null platform value", () => {
+      const config = jestConfigurator(null, dir);
+      expect(config.moduleFileExtensions).toEqual(["js", "json"]);
+    });
+
+    it("should allow any other value to be platformless config", () => {
+      const config = jestConfigurator(12345, dir);
+      expect(config.moduleFileExtensions).toEqual(["js", "json"]);
     });
   });
 });

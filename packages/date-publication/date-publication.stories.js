@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   }
 });
 
-storiesOf("DatePublication", module)
+storiesOf("Primatives/DatePublication", module)
   .add("standard DatePublication", () => (
     <Text style={styles.text}>
       <DatePublication

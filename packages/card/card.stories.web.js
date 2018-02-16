@@ -17,7 +17,7 @@ const cardProps = {
   showImage: true
 };
 
-storiesOf("Card", module)
+storiesOf("Composed/Card", module)
   .addDecorator(LateralSpacingDecorator)
   .add("Static rendering (web only)", () => {
     const markup = {

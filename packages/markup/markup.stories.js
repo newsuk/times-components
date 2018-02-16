@@ -14,7 +14,7 @@ const mixture = require("./fixtures/tag-mixture.json");
 const bio = require("./fixtures/bio.json");
 const ratings = require("./fixtures/ratings.json");
 
-storiesOf("Markup", module)
+storiesOf("Composed/Markup", module)
   .addDecorator(CenteredDecorator)
   .add("Multiple paragraphs", () => <View>{renderTrees(multiParagraph)}</View>)
   .add("Multiple paragraphs with ads", () => {

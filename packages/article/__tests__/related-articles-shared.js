@@ -10,6 +10,7 @@ import singleRelatedArticleNoImageFixture from "../related-articles/fixtures/sin
 import singleRelatedArticleNoLabelFixture from "../related-articles/fixtures/single-related-article-no-label.json";
 import singleRelatedArticleNoBylineFixture from "../related-articles/fixtures/single-related-article-no-byline.json";
 import twoRelatedArticlesFixture from "../related-articles/fixtures/two-related-articles.json";
+import threeRelatedArticlesFixture from "../related-articles/fixtures/three-related-articles.json";
 
 const createRelatedArticlesProps = fixtureData => ({
   articles: fixtureData.relatedArticles,
@@ -101,6 +102,17 @@ module.exports = () => {
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(twoRelatedArticlesFixture.data)}
+          />
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it("renders three related articles", () => {
+      const tree = renderer
+        .create(
+          <RelatedArticles
+            {...createRelatedArticlesProps(threeRelatedArticlesFixture.data)}
           />
         )
         .toJSON();

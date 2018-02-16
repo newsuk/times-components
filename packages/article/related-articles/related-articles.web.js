@@ -21,18 +21,13 @@ const RelatedArticles = ({ articles, onPress, template }) => {
   const StyledSummaryContainer = SummaryContainer(articleCount);
 
   const renderArticleItems = () => {
-    const myArray = [];
-    articles.map((article, index) => {
-      const hasBorder = articleCount > 1 && index > 0;
+    const articleArray = articles.map((article, index) => {
       const hasPadding = index < articleCount - 1;
       const StyledRelatedArticleItemContainer = RelatedArticleItemContainer(
         hasPadding
       );
 
-      if (hasBorder) {
-        myArray.push(<StyledSeparator key={`separator-${article.id}`} />);
-      }
-      myArray.push(
+      return (
         <StyledRelatedArticleItemContainer
           accessibilityRole="article"
           key={article.id}
@@ -46,10 +41,15 @@ const RelatedArticles = ({ articles, onPress, template }) => {
           />
         </StyledRelatedArticleItemContainer>
       );
-      return true;
     });
 
-    return myArray;
+    return articleArray.reduce((previous, current) =>
+      [].concat(
+        previous,
+        <StyledSeparator key={`separator-${current.key}`} />,
+        current
+      )
+    );
   };
 
   return (
