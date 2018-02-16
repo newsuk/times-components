@@ -29,7 +29,7 @@
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
-    "react-native-web": "0.1.14"
+    "react-native-web": "0.3.2"
   },
   "peerDependencies": {
     "babel-preset-env": "1.6.1",
