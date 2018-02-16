@@ -6,7 +6,7 @@ import {
   majorityProgressive
 } from "../strategies";
 
-describe("checkdep strategy tests", () => {
+describe("depend strategy tests", () => {
   it("should pick older version if strategy is conservative", async () => {
     const old = { version: "1.0.0" };
     const newer = { version: "2.0.0" };

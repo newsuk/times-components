@@ -1,6 +1,6 @@
-import { getAllRequirements } from "../checkdep";
+import { getAllRequirements } from "../depend";
 
-describe("checkdep requirements tests", () => {
+describe("depend requirements tests", () => {
   it("should return no requirements if no dependencies available", () => {
     const packages = [{}, {}];
 

@@ -3,7 +3,7 @@ import getPackages from "../get-packages";
 
 jest.mock("fs");
 
-describe("checkdep getPackages tests", () => {
+describe("depend get-packages tests", () => {
   it("should get mocked json files", async () => {
     fs.mockFs({
       "foo.json": "[1]",

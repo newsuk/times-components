@@ -1,6 +1,6 @@
-import { applyPatch } from "../checkdep";
+import { applyPatch } from "../depend";
 
-describe("checkdep applyPatch tests", () => {
+describe("depend apply-patch tests", () => {
   it("should have dependencies not defined if empty ", () => {
     const packageJson = {
       name: "foo",

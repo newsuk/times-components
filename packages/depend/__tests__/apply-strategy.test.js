@@ -1,7 +1,7 @@
-import { applyStrategy } from "../checkdep";
+import { applyStrategy } from "../depend";
 import { progressive } from "../strategies";
 
-describe("checkdep applyStrategy tests", () => {
+describe("depend apply-strategy tests", () => {
   it("should not resolve conflicts if no strategy is provided", () => {
     const requirements = [
       ["foo", "1.0.0", "x", "1.0.0"],

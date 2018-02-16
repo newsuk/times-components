@@ -1,8 +1,8 @@
 {
-  "name": "@times-components/checkdep",
-  "version": "0.0.2",
+  "name": "@times-components/depend",
+  "version": "0.0.1",
   "description": "dependency analyzer and fixer",
-  "main": "checkdep",
+  "main": "depend",
   "scripts": {
     "build": "babel . -d dist --ignore dist,node_modules,coverage,__tests__",
     "prepublish": "npm run build",
@@ -18,16 +18,16 @@
     "preset": "react-native",
     "rootDir": "../../",
     "testEnvironment": "jsdom",
-    "coverageDirectory": "<rootDir>/packages/checkdep/coverage/",
+    "coverageDirectory": "<rootDir>/packages/depend/coverage/",
     "collectCoverageFrom": [
-      "**/packages/checkdep/*.js",
-      "!**/packages/checkdep/cli.js"
+      "**/packages/depend/*.js",
+      "!**/packages/depend/cli.js"
     ],
     "transformIgnorePatterns": [
       "node_modules/(?!(react-native|react-apollo-temp|@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/checkdep/__tests__/**.test.js"
+      "<rootDir>/packages/depend/__tests__/**.test.js"
     ]
   },
   "repository": {

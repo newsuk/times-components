@@ -1,4 +1,4 @@
-# checkdep/cli
+# depend/cli
 
 A tool for syncing version numbers in a monorepo.
 
@@ -36,7 +36,7 @@ as majority but on a tie pick the older version
 as majority but on a tie pick the newer version
 
 ```
-checkdep -e "packages/*/package.json" [...options]
+depend -e "packages/*/package.json" [...options]
 
 Options:
   --strategy, -s  {conservative|progressive|majority|majorityConservative|majorityProgressive}
