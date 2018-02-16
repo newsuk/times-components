@@ -1,6 +1,6 @@
 {
   "name": "@times-components/brightcove-video",
-  "version": "1.10.14",
+  "version": "1.10.15",
   "main": "brightcove-video",
   "scripts": {
     "test": "jest --bail --ci --coverage",
