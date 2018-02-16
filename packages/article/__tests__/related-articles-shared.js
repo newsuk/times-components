@@ -13,13 +13,14 @@ import singleRelatedArticleNoBylineFixture from "../related-articles/fixtures/si
 import twoRelatedArticlesFixture from "../related-articles/fixtures/two-related-articles.json";
 import threeRelatedArticlesFixture from "../related-articles/fixtures/three-related-articles.json";
 
-const createRelatedArticlesProps = fixtureData => ({
+const createRelatedArticlesProps = (fixtureData, action) => ({
+  analyticsStream: action,
   articles: fixtureData.relatedArticles,
   template: fixtureData.relatedArticlesLayout.template,
   onPress: () => {}
 });
 
-module.exports = () => {
+export default () => {
   const realIntl = Intl;
 
   beforeEach(() => {
@@ -36,6 +37,7 @@ module.exports = () => {
 
   context("Related articles", () => {
     it("handles no related articles", () => {
+      const events = jest.fn();
       const data = {
         relatedArticles: [],
         relatedArticlesLayout: {
@@ -43,81 +45,108 @@ module.exports = () => {
         }
       };
       const tree = renderer
-        .create(<RelatedArticles {...createRelatedArticlesProps(data)} />)
+        .create(
+          <RelatedArticles {...createRelatedArticlesProps(data, events)} />
+        )
         .toJSON();
       expect(tree).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot();
     });
 
     it("renders single related article", () => {
+      const events = jest.fn();
       const tree = renderer
         .create(
           <RelatedArticles
-            {...createRelatedArticlesProps(singleRelatedArticleFixture.data)}
+            {...createRelatedArticlesProps(
+              singleRelatedArticleFixture.data,
+              events
+            )}
           />
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot();
     });
 
     it("renders single related article with no lead image", () => {
+      const events = jest.fn();
       const tree = renderer
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
-              singleRelatedArticleNoImageFixture.data
+              singleRelatedArticleNoImageFixture.data,
+              events
             )}
           />
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot();
     });
 
     it("renders single related article with no label", () => {
+      const events = jest.fn();
       const tree = renderer
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
-              singleRelatedArticleNoLabelFixture.data
+              singleRelatedArticleNoLabelFixture.data,
+              events
             )}
           />
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot();
     });
 
     it("renders single related article with no byline", () => {
+      const events = jest.fn();
       const tree = renderer
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
-              singleRelatedArticleNoBylineFixture.data
+              singleRelatedArticleNoBylineFixture.data,
+              events
             )}
           />
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot();
     });
 
     it("renders two related articles", () => {
+      const events = jest.fn();
       const tree = renderer
         .create(
           <RelatedArticles
-            {...createRelatedArticlesProps(twoRelatedArticlesFixture.data)}
+            {...createRelatedArticlesProps(
+              twoRelatedArticlesFixture.data,
+              events
+            )}
           />
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot();
     });
 
     it("renders three related articles", () => {
+      const events = jest.fn();
       const tree = renderer
         .create(
           <RelatedArticles
-            {...createRelatedArticlesProps(threeRelatedArticlesFixture.data)}
+            {...createRelatedArticlesProps(
+              threeRelatedArticlesFixture.data,
+              events
+            )}
           />
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot();
     });
   });
 };
