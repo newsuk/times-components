@@ -1,5 +1,4 @@
 import React from "react";
-import { Text } from "react-native";
 import get from "lodash.get";
 import ArticleSummary, {
   ArticleSummaryContent
@@ -45,7 +44,7 @@ const RelatedArticleItem = ({
       ) : null}
       <StyledSummaryContainer>
         <ArticleSummary
-          bylineProps={{ ast: byline }}
+          bylineProps={{ ast: byline, section }}
           datePublicationProps={{ date: publishedTime }}
           headline={() => (
             <Link url={url} onPress={onPress}>

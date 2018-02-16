@@ -125,9 +125,9 @@ exports[`Article Summary test on ios renders an article-summary component with a
             "textDecorationLine": "underline",
           },
           Object {
-            "color": "#069",
+            "color": "#13354e",
           },
-          undefined,
+          Object {},
         ]
       }
     >
@@ -341,9 +341,9 @@ exports[`Article Summary test on ios renders an article-summary component with c
             "textDecorationLine": "underline",
           },
           Object {
-            "color": "#069",
+            "color": "#7b0046",
           },
-          undefined,
+          Object {},
         ]
       }
     >
@@ -498,9 +498,9 @@ exports[`Article Summary test on ios renders an article-summary component with e
             "textDecorationLine": "underline",
           },
           Object {
-            "color": "#069",
+            "color": "#008347",
           },
-          undefined,
+          Object {},
         ]
       }
     >
@@ -767,9 +767,9 @@ exports[`Article Summary test on ios renders an article-summary component with m
             "textDecorationLine": "underline",
           },
           Object {
-            "color": "#069",
+            "color": "#db133b",
           },
-          undefined,
+          Object {},
         ]
       }
     >
@@ -961,9 +961,9 @@ exports[`Article Summary test on ios renders an article-summary component with n
             "textDecorationLine": "underline",
           },
           Object {
-            "color": "#069",
+            "color": "#005b8d",
           },
-          undefined,
+          Object {},
         ]
       }
     >
@@ -1151,9 +1151,9 @@ exports[`Article Summary test on ios renders an article-summary component with n
             "textDecorationLine": "underline",
           },
           Object {
-            "color": "#069",
+            "color": "#13354e",
           },
-          undefined,
+          Object {},
         ]
       }
     >
