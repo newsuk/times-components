@@ -8,7 +8,7 @@ import {
   SponsoredArticleFlag
 } from "./article-flag";
 
-storiesOf("Primatives/ArticleFlag", module)
+storiesOf("Primitives/ArticleFlag", module)
   .add("ArticleFlag (New)", () => <NewArticleFlag />)
   .add("ArticleFlag (Updated)", () => <UpdatedArticleFlag />)
   .add("ArticleFlag (Exclusive)", () => <ExclusiveArticleFlag />)
