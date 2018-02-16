@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 import config from "@times-components/article/styles/responsive-config";
 
-export const SliceContainerStyles = () => ({
+export const SliceContainer = () => ({
   mediumUp: () => `
     border-style: solid;
     border-bottom-color: #dbdbdb;
@@ -9,7 +9,7 @@ export const SliceContainerStyles = () => ({
   `
 });
 
-export const ChildrenContainerStyles = childCount => ({
+export const ChildrenContainer = childCount => ({
   base: () => `
     display: flex;
     flex-direction: column;
@@ -31,10 +31,10 @@ export const ChildrenContainerStyles = childCount => ({
     return `
       flex-direction: row;
       margin: 0 auto;
-      ${childCount >= 5 ? largeStyle : smallStyle}
+      ${childCount === 1 ? smallStyle : largeStyle}
     `;
   },
   wideUp: () => `
-    width: ${childCount >= 5 ? "auto" : config.wideBpWidth};
+    width: ${childCount === 1 ? config.wideBpWidth : "auto"};
   `
 });

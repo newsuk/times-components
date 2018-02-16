@@ -153,7 +153,6 @@ module.exports = () => {
         .toJSON();
       expect(tree).toMatchSnapshot();
     });
-  });
 
     it("renders three LEAD_AND_TWO related article", () => {
       const tree = renderer

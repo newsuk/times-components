@@ -1,22 +1,37 @@
 import React from "react";
 import { View } from "react-native";
 import Slice from "@times-components/slice";
+import getTemplateName from "@times-components/slice/styles/template-map";
 import RelatedArticlesHeading from "./heading";
 import RelatedArticleItem from "./related-article-item";
 import { relatedArticlesPropTypes, defaultProps } from "./proptypes";
-import {
-  RelatedArticleContainer,
-  ImageContainer,
-  SummaryContainer
-} from "./styles/responsive";
+import getStyledComponent from "./styles/responsive";
 
 const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles || articles.length === 0) return null;
 
-  const articleCount = articles.length;
-  const StyledRelatedArticleContainer = RelatedArticleContainer(articleCount);
-  const StyledImageContainer = ImageContainer(articleCount);
-  const StyledSummaryContainer = SummaryContainer(articleCount);
+const articleCount = articles.length;
+
+  const templateName = getTemplateName(template);
+
+  const RelatedArticleContainer = getStyledComponent(
+    View,
+    templateName,
+    "RelatedArticleContainer",
+    { articleCount }
+  );
+  const ImageContainer = getStyledComponent(
+    View,
+    templateName,
+    "ImageContainer",
+    { articleCount }
+  );
+  const SummaryContainer = getStyledComponent(
+    View,
+    templateName,
+    "SummaryContainer",
+    { articleCount }
+  );
 
   const renderArticleItems = () =>
     articles.map(article => (
@@ -24,9 +39,9 @@ const RelatedArticles = ({ articles, onPress, template }) => {
         article={article}
         key={article.id}
         onPress={onPress}
-        styledRelatedArticleContainer={StyledRelatedArticleContainer}
-        styledImageContainer={StyledImageContainer}
-        styledSummaryContainer={StyledSummaryContainer}
+        relatedArticleContainer={RelatedArticleContainer}
+        imageContainer={ImageContainer}
+        summaryContainer={SummaryContainer}
       />
     ));
 
