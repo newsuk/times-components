@@ -11,8 +11,8 @@
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
-    "dextrose-stories": "dextrose-stories",
-    "dextrose-clean": "dextrose-clean"
+    "dextrose-stories": "dextrose generate-stories $(pwd)",
+    "dextrose-clean": "dextrose clean-stories $(pwd)"
   },
   "repository": {
     "type": "git",

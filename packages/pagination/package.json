@@ -10,8 +10,8 @@
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "dextrose-stories": "dextrose gs $(PWD)",
-    "dextrose-clean": "dextrose cs $(PWD)"
+    "dextrose-stories": "dextrose generate-stories $(pwd)",
+    "dextrose-clean": "dextrose clean-stories $(pwd)"
   },
   "repository": {
     "type": "git",
@@ -37,7 +37,7 @@
     "@times-components/eslint-config-thetimes": "0.1.3",
     "@times-components/jest-configurator": "0.2.0",
     "@times-components/storybook": "0.3.1",
-    "dextrose": "1.4.5",
+    "dextrose": "^1.4.6",
     "enzyme": "3.3.0",
     "enzyme-to-json": "3.3.0",
     "eslint": "4.9.0",

@@ -11,7 +11,10 @@ const config = {
     "PaginationTracking",
     "Provider",
     "TrackingPage",
-    "TrackingEvent"
+    "TrackingEvent",
+    "Error",
+    "error",
+    "AuthorProfileLoading"
   ]
 };
 

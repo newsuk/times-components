@@ -11,8 +11,8 @@
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "dextrose-stories": "dextrose gs $(PWD)",
-    "dextrose-clean": "dextrose cs $(PWD)"
+    "dextrose-stories": "dextrose generate-stories $(pwd)",
+    "dextrose-clean": "dextrose clean-stories $(pwd)"
   },
   "repository": {
     "type": "git",
