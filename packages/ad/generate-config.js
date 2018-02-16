@@ -35,6 +35,7 @@ const getAdSizes = (pos, width) => {
   const sizeMap = getSizeMaps(pos);
   for (let i = sizeMap.length - 1; i > 0; i -= 1) {
     if (width > sizeMap[i].width) {
+      console.log('inside is', sizeMap[i].sizes);
       return sizeMap[i].sizes;
     }
   }

@@ -1,4 +1,4 @@
-import { getSizeMaps } from "./generate-config";
+import { getAdSizes } from "./generate-config";
 
 const timeout = 1000;
 const minPrice = 0.01;
@@ -76,8 +76,9 @@ const bidderSettings = {
   }
 };
 
-const getPrebidSlotConfig = (pos, section) => {
-  const sizes = getSizeMaps(pos);
+const getPrebidSlotConfig = (pos, section, width) => {
+  const sizes = getAdSizes(pos, width);
+  console.log('sizes are', sizes);
   const bids = [
     {
       bidder: "appnexus",

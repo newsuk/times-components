@@ -27,10 +27,10 @@ class Ad extends Component {
       adReady: false
     };
     this.slots = [];
-    const slotsBid = ["ad-header", "ad-article-inline"];
+    const slotsBid = ["ad-header", "ad-article-inline", "intervention"];
     if (slotsBid.includes(this.props.pos)) {
       // TODO check article
-      this.slots.push(getPrebidSlotConfig(this.props.pos, "article"));
+      this.slots.push(getPrebidSlotConfig(this.props.pos, "article", width));
     }
   }
 
@@ -45,7 +45,7 @@ class Ad extends Component {
       config: this.config,
       prebidConfig: this.prebidConfig,
       // TODO
-      slots: [],
+      slots: this.slots,
       pos: this.props.pos,
       networkId: adConfig.networkId,
       adUnit: adConfig.adUnit,
@@ -62,16 +62,16 @@ class Ad extends Component {
       ? { width: 0, height: 0 }
       : { height: this.config.maxSizes.height };
     const scriptsToLoad = [];
-
+    this.prebidConfig.bidders.amazon.accountId = null;
     if (this.prebidConfig.bidders.amazon.accountId) {
       scriptsToLoad.push({
         uri: "https://c.amazon-adsystem.com/aax2/apstag.js"
       });
     }
     scriptsToLoad.push(
-      // {
-      //   uri: "https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js"
-      // },
+      {
+        uri: "https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js"
+      },
       {
         uri: `https://newscorp.grapeshot.co.uk/thetimes/channels.cgi?url=${encodeURIComponent(
           data.contextUrl
@@ -79,9 +79,9 @@ class Ad extends Component {
         canRequestFail: true,
         timeout: 500
       }
-      // ,{
-      //   uri: "https://www.googletagservices.com/tag/js/gpt.js"
-      // }
+      ,{
+        uri: "https://www.googletagservices.com/tag/js/gpt.js"
+      }
     );
     const webviewComponent = (
       <DOMContext

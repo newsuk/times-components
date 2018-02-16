@@ -5,7 +5,7 @@
 
 const adInit = args => {
   const {
-    // el,
+    el,
     data,
     window,
     globals // : { googletag, gs_channels = "DEFAULT", pbjs, apstag }, // eslint-disable-line camelcase
@@ -72,16 +72,13 @@ const adInit = args => {
       section
     ) {
       return new Promise(resolve => {
-        if (!amazonPudID) {
-          return resolve("amazon bidding disabled");
-        }
         window.apstag.fetchBids(
           { slots: this.getAmazonConfig(adsSlots, networkId, adUnit, section) },
           () => resolve("amazon bids loaded")
         );
       });
     },
-    requestPrebidBids(pb) {
+    requestPrebidBids(pb, pos) {
       return new Promise(resolve => {
         pb.que.push(() => {
           // TODO check pos
@@ -105,6 +102,7 @@ const adInit = args => {
     },
     scheduleGPTConfiguration(gtag, pageTargeting) {
       gtag.cmd.push(() => {
+        console.log('scheduleGPTConfiguration', gtag.pubads);
         const pubads = gtag.pubads();
         Object.entries(pageTargeting || {}).forEach(entry =>
           pubads.setTargeting(entry[0], entry[1])
@@ -118,12 +116,14 @@ const adInit = args => {
     },
     scheduleGrapeshotTargeting(gtag) {
       gtag.cmd.push(() => {
+        console.log('scheduleGrapeshotTargeting', gtag.pubads);
+
         gtag.pubads().setTargeting("gs_cat", globals.gs_channels);
       });
     },
     dfpReady(gtag) {
       console.log("dfpReady", gtag);
-      return new Promise(resolve => gtag.cmd.push(resolve));
+      return new Promise(resolve => gtag.cmd.push(()=> {console.log("jjj");resolve();}));
     },
     applyPrebidTargeting(pb) {
       try {
@@ -148,9 +148,11 @@ const adInit = args => {
     displayAds(gtag, pb, ap) {
       this.applyAmazonTargeting(ap);
       this.applyPrebidTargeting(pb);
+      //debugger;
+      console.log('gtag is', gtag);
       gtag.pubads().refresh();
     },
-    scheduleSlotInit(gtag, el, networkId, adUnit, pos) {
+    scheduleSlotInit(gtag, adWrapper, networkId, adUnit, pos) {
       gtag.cmd.push(() => {
         const slotName = `/${networkId}/${adUnit}/${pos}`;
 
@@ -166,16 +168,17 @@ const adInit = args => {
             } could not be defined, probably it was already defined`
           );
         }
+
         slot.addService(gtag.pubads());
 
-        el.innerHTML = `
+        adWrapper.innerHTML = `
             <div
               id="${data.pos}"
               style="display: table-cell; vertical-align: middle"
             ></div>
           `;
-        el.style.display = "table";
-        el.style.margin = "0 auto";
+        adWrapper.style.display = "table";
+        adWrapper.style.margin = "0 auto";
 
         const mapping = gtag.sizeMapping();
         data.sizingMap.forEach(size =>
@@ -228,16 +231,17 @@ const adInit = args => {
             )
           );
         }
-        // this.scheduleGPTConfiguration(window.googletag, pageTargeting);
-        // biddingActions.push(
-        //   this.dfpReady(window.googletag),
-        //   this.requestPrebidBids(window.pbjs)
-        // );
-        // Promise.all(biddingActions)
-        //   .then(this.displayAds(window.googletag, window.pbjs, window.apstag))
-        //   .catch(err => console.error("error loading the ads", err));
+        this.scheduleGPTConfiguration(window.googletag, pageTargeting);
+        biddingActions.push(
+          //new Promise((resolve) => setTimeout(() => resolve(), 15000)),
+          this.dfpReady(window.googletag),
+          this.requestPrebidBids(window.pbjs, pos)
+        );
+        Promise.all(biddingActions)
+          //.then(this.displayAds(window.googletag, window.pbjs, window.apstag))
+          .catch(err => console.error("error loading the ads", err));
       }
-      this.scheduleSlotInit(window.googletag, networkId, adUnit, pos);
+      this.scheduleSlotInit(window.googletag, el, networkId, adUnit, pos);
     },
     scriptsLoaded() {
       // at this point all the scripts are loaded (eg: pbjs, googletag, apstag)
