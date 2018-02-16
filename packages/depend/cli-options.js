@@ -1,7 +1,7 @@
 import optimist from "optimist";
 
 const { help, argv } = optimist
-  .usage('checkdep -e "packages/*/package.json" [...options]')
+  .usage('depend -e "packages/*/package.json" [...options]')
   .option("help", "shows this message")
   .alias("help", "h")
   .option("expr", "glob expression that finds package.json files")

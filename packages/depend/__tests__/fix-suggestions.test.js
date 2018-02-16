@@ -1,6 +1,6 @@
-import { suggestFix } from "../checkdep";
+import { suggestFix } from "../depend";
 
-describe("checkdep tests", () => {
+describe("depend fix-suggestion tests", () => {
   it("should not suggest fixes no rules defined", () => {
     const packageJson = {
       dependencies: {

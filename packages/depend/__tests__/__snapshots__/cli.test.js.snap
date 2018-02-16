@@ -83,7 +83,7 @@ Array [
 exports[`checkdep cli tests prints help 1`] = `
 Array [
   Array [
-    "checkdep -e \\"packages/*/package.json\\" [...options]
+    "depend -e \\"packages/*/package.json\\" [...options]
 
 Options:
   --strategy, -s  {conservative|progressive|majority|majorityConservative|majorityProgressive}

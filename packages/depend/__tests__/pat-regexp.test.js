@@ -1,6 +1,6 @@
 import patRegExp from "../pat-regexp";
 
-describe("checkdep pat-regexp tests", () => {
+describe("depend pat-regexp tests", () => {
   it("should return nothing if empty", () => {
     expect(patRegExp("")).toEqual("");
   });

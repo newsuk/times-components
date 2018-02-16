@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import chalk from "chalk";
 import { help } from "./cli-options";
-import checkdep from "./checkdep";
+import depend from "./depend";
 import graph from "./graph";
 import * as strategies from "./strategies";
 
@@ -31,7 +31,7 @@ export default async function main({
   }
 
   const packagesList = await getPackages(argv.expr);
-  return checkdep(
+  return depend(
     packagesList,
     argv.strategy ? strategies[argv.strategy] : null
   )
