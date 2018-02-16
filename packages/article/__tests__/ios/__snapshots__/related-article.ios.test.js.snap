@@ -1457,7 +1457,7 @@ exports[`Related articles test on ios Related articles renders three related art
                         "textDecorationLine": "underline",
                       },
                       Object {
-                        "color": "#13354e",
+                        "color": "#db133b",
                       },
                       Object {},
                     ]
@@ -1734,7 +1734,7 @@ exports[`Related articles test on ios Related articles renders three related art
                         "textDecorationLine": "underline",
                       },
                       Object {
-                        "color": "#13354e",
+                        "color": "#008347",
                       },
                       Object {},
                     ]
@@ -2011,7 +2011,7 @@ exports[`Related articles test on ios Related articles renders three related art
                         "textDecorationLine": "underline",
                       },
                       Object {
-                        "color": "#13354e",
+                        "color": "#6c6c69",
                       },
                       Object {},
                     ]

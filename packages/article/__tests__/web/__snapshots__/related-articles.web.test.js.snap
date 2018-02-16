@@ -844,7 +844,7 @@ exports[`Related articles test on web Related articles renders three related art
                   role="link"
                   style={
                     Object {
-                      "color": "rgba(19,53,78,1)",
+                      "color": "rgba(219,19,59,1)",
                     }
                   }
                 >
@@ -1019,7 +1019,7 @@ exports[`Related articles test on web Related articles renders three related art
                   role="link"
                   style={
                     Object {
-                      "color": "rgba(19,53,78,1)",
+                      "color": "rgba(0,131,71,1)",
                     }
                   }
                 >
@@ -1194,7 +1194,7 @@ exports[`Related articles test on web Related articles renders three related art
                   role="link"
                   style={
                     Object {
-                      "color": "rgba(19,53,78,1)",
+                      "color": "rgba(108,108,105,1)",
                     }
                   }
                 >
