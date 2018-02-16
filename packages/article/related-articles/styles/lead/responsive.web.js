@@ -49,9 +49,9 @@ export const Headline = () => ({
   `
 });
 
-export const ImageContainer = ({ articleCount }) => ({
+export const ImageContainer = ({ articleCount, isLead }) => ({
   base: () => `
-    display: ${articleCount === 3 ? "none" : "block"};
+    display: ${isLead ? "block" : "none"};
     flex-grow: 1;
     margin-bottom: 10px;
   `,

@@ -20,12 +20,6 @@ const articleCount = articles.length;
     "RelatedArticleContainer",
     { articleCount }
   );
-  const ImageContainer = getStyledComponent(
-    View,
-    templateName,
-    "ImageContainer",
-    { articleCount }
-  );
   const SummaryContainer = getStyledComponent(
     View,
     templateName,
@@ -34,16 +28,24 @@ const articleCount = articles.length;
   );
 
   const renderArticleItems = () =>
-    articles.map(article => (
-      <RelatedArticleItem
-        article={article}
-        key={article.id}
-        onPress={onPress}
-        relatedArticleContainer={RelatedArticleContainer}
-        imageContainer={ImageContainer}
-        summaryContainer={SummaryContainer}
-      />
-    ));
+    articles.map((article, index) => {
+      const ImageContainer = getStyledComponent(
+        View,
+        templateName,
+        "ImageContainer",
+        { articleCount, isLead: index === 0 }
+      );
+      return (
+        <RelatedArticleItem
+          article={article}
+          key={article.id}
+          onPress={onPress}
+          relatedArticleContainer={RelatedArticleContainer}
+          imageContainer={ImageContainer}
+          summaryContainer={SummaryContainer}
+        />
+      )
+    });
 
   return (
     <View style={{ marginTop: 10 }}>
