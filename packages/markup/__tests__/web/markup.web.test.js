@@ -1,3 +1,5 @@
 import shared from "../shared";
 
-describe("Markup Web", shared("p", "div"));
+describe("Markup Web", () => {
+  shared();
+});

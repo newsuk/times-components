@@ -344,12 +344,24 @@ exports[`Markup Native tests on iOS renders multiple paragraphs with ads 1`] = `
 </View>
 `;
 
-exports[`Markup Native tests on iOS renders tags nested within blocks 1`] = `
-<View>
+exports[`Markup Native tests on iOS renders tags nested 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
   Some text is here 
-  <View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
     and there is some 
-    <View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
       more text 
       <Text
         accessible={true}
@@ -358,11 +370,11 @@ exports[`Markup Native tests on iOS renders tags nested within blocks 1`] = `
       >
         and in here
       </Text>
-    </View>
+    </Text>
      after it too
-  </View>
+  </Text>
    and here
-</View>
+</Text>
 `;
 
 exports[`Markup Native tests on iOS renders the anchor tag 1`] = `

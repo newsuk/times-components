@@ -1,4 +1,5 @@
 import React from "react";
+import { Text, View } from "react-native";
 import renderer from "react-test-renderer";
 import { renderTree, renderTrees } from "../";
 
@@ -20,7 +21,7 @@ const image = require("../fixtures/image.json");
 // don't render ad internals
 jest.mock("@times-components/ad", () => "Ad");
 
-export default (TextComponent, BlockComponent) => () => {
+export default () => {
   it("renders a single paragraph", () => {
     const output = renderer.create(renderTree(singleParagraph)).toJSON();
 
@@ -29,7 +30,7 @@ export default (TextComponent, BlockComponent) => () => {
 
   it("renders multiple paragraphs", () => {
     const output = renderer
-      .create(<BlockComponent>{renderTrees(multiParagraph)}</BlockComponent>)
+      .create(<View>{renderTrees(multiParagraph)}</View>)
       .toJSON();
 
     expect(output).toMatchSnapshot();
@@ -37,11 +38,7 @@ export default (TextComponent, BlockComponent) => () => {
 
   it("renders multiple paragraphs with a pull quote", () => {
     const output = renderer
-      .create(
-        <BlockComponent>
-          {renderTrees(multiParagraphWithPullQuote)}
-        </BlockComponent>
-      )
+      .create(<View>{renderTrees(multiParagraphWithPullQuote)}</View>)
       .toJSON();
 
     expect(output).toMatchSnapshot();
@@ -49,9 +46,7 @@ export default (TextComponent, BlockComponent) => () => {
 
   it("renders multiple paragraphs with ads", () => {
     const output = renderer
-      .create(
-        <BlockComponent>{renderTrees(multiParagraphWithAds)}</BlockComponent>
-      )
+      .create(<View>{renderTrees(multiParagraphWithAds)}</View>)
       .toJSON();
 
     expect(output).toMatchSnapshot();
@@ -63,9 +58,9 @@ export default (TextComponent, BlockComponent) => () => {
         renderTree(anchor, {
           link(key, { href }, children) {
             return (
-              <TextComponent key={key} href={href}>
+              <Text key={key} href={href}>
                 {children}
-              </TextComponent>
+              </Text>
             );
           }
         })
@@ -104,15 +99,13 @@ export default (TextComponent, BlockComponent) => () => {
       .create(
         renderTree(mixture, {
           block(key, attributes, renderedChildren) {
-            return (
-              <BlockComponent key={key}>{renderedChildren}</BlockComponent>
-            );
+            return <View key={key}>{renderedChildren}</View>;
           },
           link(key, attributes, renderedChildren) {
             return (
-              <TextComponent key={key} href={attributes.href}>
+              <Text key={key} href={attributes.href}>
                 {renderedChildren}
-              </TextComponent>
+              </Text>
             );
           }
         })
@@ -122,14 +115,12 @@ export default (TextComponent, BlockComponent) => () => {
     expect(output).toMatchSnapshot();
   });
 
-  it("renders tags nested within blocks", () => {
+  it("renders tags nested", () => {
     const output = renderer
       .create(
         renderTree(nested, {
           block(key, attributes, renderedChildren) {
-            return (
-              <BlockComponent key={key}>{renderedChildren}</BlockComponent>
-            );
+            return <Text key={key}>{renderedChildren}</Text>;
           }
         })
       )
@@ -139,9 +130,7 @@ export default (TextComponent, BlockComponent) => () => {
   });
 
   it("renders wrapped tags", () => {
-    const output = renderer
-      .create(<TextComponent>{renderTrees(bio)}</TextComponent>)
-      .toJSON();
+    const output = renderer.create(<Text>{renderTrees(bio)}</Text>).toJSON();
 
     expect(output).toMatchSnapshot();
   });
@@ -149,9 +138,7 @@ export default (TextComponent, BlockComponent) => () => {
   it("renders multiple children", () => {
     const output = renderer
       .create(
-        <TextComponent style={{ color: "red" }}>
-          {renderTrees(multiParagraph)}
-        </TextComponent>
+        <Text style={{ color: "red" }}>{renderTrees(multiParagraph)}</Text>
       )
       .toJSON();
 
@@ -159,17 +146,13 @@ export default (TextComponent, BlockComponent) => () => {
   });
 
   it("does not render a script tag", () => {
-    const output = renderer
-      .create(<BlockComponent>{renderTrees(script)}</BlockComponent>)
-      .toJSON();
+    const output = renderer.create(<View>{renderTrees(script)}</View>).toJSON();
 
     expect(output).toMatchSnapshot();
   });
 
   it("does not render an image tag", () => {
-    const output = renderer
-      .create(<BlockComponent>{renderTrees(image)}</BlockComponent>)
-      .toJSON();
+    const output = renderer.create(<View>{renderTrees(image)}</View>).toJSON();
 
     expect(output).toMatchSnapshot();
   });
