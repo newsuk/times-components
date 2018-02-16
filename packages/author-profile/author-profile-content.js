@@ -129,13 +129,14 @@ class AuthorProfileContent extends React.Component {
     const data = articlesLoading
       ? Array(pageSize)
           .fill()
-          .map((number, id) => ({
-            id,
+          .map((number, indx) => ({
+            id: indx,
+            elementId: `empty.${indx}`,
             isLoading: true
           }))
-      : articles.map((article, idx) => ({
+      : articles.map((article, indx) => ({
           ...article,
-          elementId: `articleList-${page}-${idx}`
+          elementId: `${article.id}.${indx}`
         }));
 
     if (!articlesLoading) this.props.receiveChildList(data);
