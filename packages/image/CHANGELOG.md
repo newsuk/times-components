@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.13.15"></a>
+## [1.13.15](https://github.com/newsuk/times-components/compare/@times-components/image@1.13.14...@times-components/image@1.13.15) (2018-02-16)
+
+
+### Bug Fixes
+
+* typo in grouping name ([#656](https://github.com/newsuk/times-components/issues/656)) ([680296c](https://github.com/newsuk/times-components/commit/680296c))
+
+
+
+
 <a name="1.13.14"></a>
 ## [1.13.14](https://github.com/newsuk/times-components/compare/@times-components/image@1.13.13...@times-components/image@1.13.14) (2018-02-15)
 

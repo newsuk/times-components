@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pagination",
-  "version": "0.12.47",
+  "version": "0.12.48",
   "main": "pagination",
   "scripts": {
     "test": "yarn test:android --ci --bail --coverage && yarn test:ios --ci --bail --coverage && yarn test:web --ci --bail --coverage",
@@ -52,9 +52,9 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/link": "0.13.21",
+    "@times-components/link": "0.13.22",
     "@times-components/responsive-styles": "0.2.19",
-    "@times-components/tracking": "0.7.2",
+    "@times-components/tracking": "0.7.3",
     "prop-types": "15.6.0",
     "react-display-name": "0.2.3",
     "react-native-svg": "5.5.0",
