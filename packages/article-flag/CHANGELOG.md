@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.10.13"></a>
+## [0.10.13](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.10.11...@times-components/article-flag@0.10.13) (2018-02-16)
+
+
+### Bug Fixes
+
+* apply new dextrose ([#651](https://github.com/newsuk/times-components/issues/651)) ([ca586ee](https://github.com/newsuk/times-components/commit/ca586ee))
+* typo in grouping name ([#656](https://github.com/newsuk/times-components/issues/656)) ([680296c](https://github.com/newsuk/times-components/commit/680296c))
+
+
+
+
 <a name="0.10.12"></a>
 ## [0.10.12](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.10.11...@times-components/article-flag@0.10.12) (2018-02-16)
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.17.29"></a>
+## [0.17.29](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.17.27...@times-components/author-head@0.17.29) (2018-02-16)
+
+
+### Bug Fixes
+
+* apply new dextrose ([#651](https://github.com/newsuk/times-components/issues/651)) ([ca586ee](https://github.com/newsuk/times-components/commit/ca586ee))
+
+
+
+
 <a name="0.17.28"></a>
 ## [0.17.28](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.17.27...@times-components/author-head@0.17.28) (2018-02-16)
 

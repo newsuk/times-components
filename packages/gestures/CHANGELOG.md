@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.12"></a>
+## [1.1.12](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.1.11...@times-components/gestures@1.1.12) (2018-02-16)
+
+
+### Bug Fixes
+
+* apply new dextrose ([#651](https://github.com/newsuk/times-components/issues/651)) ([ca586ee](https://github.com/newsuk/times-components/commit/ca586ee))
+
+
+
+
 <a name="1.1.11"></a>
 ## [1.1.11](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.1.10...@times-components/gestures@1.1.11) (2018-02-16)
 

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tracking",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "main": "tracking",
   "scripts": {
     "test": "yarn test:android --ci --bail --coverage && yarn test:ios --ci --bail --coverage && yarn test:web --ci --bail --coverage",
