@@ -1,0 +1,52 @@
+{
+  "name": "@times-components/styleguide",
+  "version": "0.0.1",
+  "description": "Centralised library for common styles throughout the Times",
+  "main": "styleguide",
+  "scripts": {
+    "fmt": "prettier --write '**/*.*'",
+    "prettier:diff": "prettier --list-different '**/*.*'",
+    "lint": "eslint . && npm run prettier:diff",
+    "test": "jest --config='./__tests__/jest.config.js' --bail --ci --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "keywords": [
+    "react-native-web",
+    "react",
+    "native",
+    "web",
+    "styleguide",
+    "component"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "devDependencies": {
+    "@storybook/react-native": "3.3.11",
+    "@times-components/jest-configurator": "*",
+    "eslint": "4.9.0",
+    "jest": "21.2.1",
+    "prettier": "1.8.2",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-native": "0.50.1",
+    "react-test-renderer": "16.2.0"
+  },
+  "dependencies": {
+    "prop-types": "15.6.0"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16",
+    "react-native": ">=0.50",
+    "react-native-web": ">=0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
