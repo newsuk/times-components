@@ -13,15 +13,37 @@ const adInit = args => {
   } = args;
 
   let executed = false;
-
+  const logTypes = ["amazon", "gpt", "pbjs", "verbose"];
+  const log = (type, message) => {
+    if (!logTypes.includes(type) || process.env.NODE_ENV === "production")
+      return;
+    console.log(`${type}: ${message}`); // eslint-disable-line no-console
+  };
   return {
+    scheduleGPTAction(gtag, label, action) {
+      gtag.cmd.push(action);
+      log(
+        "verbose",
+        `gpt: schedule gpt action:${label}. actions in queue:${gtag.cmd.length}`
+      );
+    },
+    schedulePrebidAction(pb, label, action) {
+      pb.que.push(action);
+      log(
+        "verbose",
+        `prebid: schedule prebid action:${label}. actions in queue:${
+          pb.que.length
+        }`
+      );
+    },
     getAdUnitPath(params) {
       return params.reduce(
         (acc, cur, index) => (index === 1 ? `/${acc}/${cur}` : `${acc}/${cur}`)
       );
     },
     setAdUnits(pb, adsSlots) {
-      pb.que.push(() => {
+      this.schedulePrebidAction(pb, "set ad unit", () => {
+        log("pbjs", "remove and add ad units");
         adsSlots.forEach(slot => pb.removeAdUnit(slot.code));
         // TODO check for clone
         pb.addAdUnits(adsSlots);
@@ -31,9 +53,11 @@ const adInit = args => {
       // NOTE: this is Amazon code, change it carefully
       window.apstag = {
         init() {
+          log("amazon", "calling init");
           this.addToQueue("i", arguments); // eslint-disable-line prefer-rest-params
         },
         fetchBids() {
+          log("amazon", "calling fetchBids");
           this.addToQueue("f", arguments); // eslint-disable-line prefer-rest-params
         },
         setDisplayBids() {},
@@ -47,6 +71,12 @@ const adInit = args => {
       };
     },
     initApstag(amazonAccountID, timeout) {
+      log(
+        "amazon",
+        `init apstag with amazonAccountID:${amazonAccountID} and timeout ${
+          timeout
+        }`
+      );
       window.apstag.init({
         pubID: amazonAccountID,
         adServer: "googletag",
@@ -54,22 +84,22 @@ const adInit = args => {
       });
     },
     getAmazonConfig(adSlots, networkId, adUnit, section) {
-      console.log('getAmazonConfig, before');
+      log(
+        "amazon",
+        `getAmazonConfig adUnit:${adUnit} networkId:${networkId} section:${
+          section
+        }`
+      );
       const adUnitPathParts = [networkId, adUnit];
       if (section) {
         adUnitPathParts.push(section);
       }
       const adUnitPath = this.getAdUnitPath(adUnitPathParts);
-      console.log('adSlots are', adSlots);
-      const adk = adSlots.map(slot => ({
+      return adSlots.map(slot => ({
         slotID: slot.pos,
         slotName: adUnitPath,
         sizes: slot.sizes
       }));
-      console.log('getAmazonConfig, after', adk);
-
-
-      return adk ;
     },
     scheduleRequestAmazonBids(
       adsSlots,
@@ -81,57 +111,78 @@ const adInit = args => {
       return new Promise(resolve => {
         window.apstag.fetchBids(
           { slots: this.getAmazonConfig(adsSlots, networkId, adUnit, section) },
-          () => {      console.log('scheduleRequestAmazonBids, resolve');
-          resolve("amazon bids loaded");}
+          aBids => {
+            log("amazon", `bids loaded ${JSON.stringify(aBids)}`);
+            resolve(aBids);
+          }
         );
       });
     },
-    requestPrebidBids(pb, pos) {
+    requestPrebidBids(pb, slots) {
       return new Promise(resolve => {
-        pb.que.push(() => {
-          // TODO check pos
-          this.setAdUnits(pb, pos);
+        this.schedulePrebidAction(pb, "request bid", () => {
+          this.setAdUnits(pb, slots);
+          log("pbjs", "requesting bids");
           pb.requestBids({
-            bidsBackHandler() {
-              resolve();
+            bidsBackHandler(bids) {
+              log("pbjs", "bids are loaded or timeout");
+              resolve(bids);
             }
           });
         });
       });
     },
     configurePrebid(prebid, prebidOptions) {
-      console.log(
-        "configure prebid with",
-        prebidOptions.timeout,
-        prebidOptions.bidderSettings
+      log(
+        "pbjs",
+        `configure prebid with timeout:${
+          prebidOptions.timeout
+        } and settings:${JSON.stringify(prebidOptions.bidderSettings)}`
       );
       prebid.bidderTimeout = prebidOptions.timeout; // eslint-disable-line no-param-reassign
       prebid.bidderSettings = prebidOptions.bidderSettings; // eslint-disable-line no-param-reassign
     },
     scheduleGPTConfiguration(gtag, pageTargeting) {
-      gtag.cmd.push(() => {
-        console.log('scheduleGPTConfiguration', gtag.pubads);
+      this.scheduleGPTAction(gtag, "set page targeting", () => {
+        log("gpt", `set page targeting with:${JSON.stringify(pageTargeting)}`);
         const pubads = gtag.pubads();
         Object.entries(pageTargeting || {}).forEach(entry =>
           pubads.setTargeting(entry[0], entry[1])
         );
+      });
+      this.scheduleGPTAction(gtag, "configuration", () => {
+        log("gpt", `configuring`);
+        const pubads = gtag.pubads();
         pubads.disableInitialLoad();
         // Fetch multiple ads at the same time
         pubads.enableSingleRequest();
         // Enable all GPT services that have been defined for ad slots
         gtag.enableServices();
+        gtag
+          .pubads()
+          .addEventListener("slotRenderEnded", event =>
+            log("gpt", `slot render ended ${event.companyIds}`)
+          );
       });
     },
     scheduleGrapeshotTargeting(gtag) {
-      gtag.cmd.push(() => {
-        console.log('scheduleGrapeshotTargeting', gtag.pubads);
-
+      this.scheduleGPTAction(gtag, "grapeshot targeting", () => {
+        log(
+          "gpt",
+          `set grapeshot page level targeting with:${globals.gs_channels} ${
+            gtag.pubads
+          }`
+        );
         gtag.pubads().setTargeting("gs_cat", globals.gs_channels);
       });
     },
     dfpReady(gtag) {
-      console.log("dfpReady", gtag);
-      return new Promise(resolve => gtag.cmd.push(()=> {console.log("jjj");resolve();}));
+      return new Promise(resolve =>
+        this.scheduleGPTAction(gtag, "ready", () => {
+          log("gpt", "googletag ready");
+          resolve("googletag ready");
+        })
+      );
     },
     applyPrebidTargeting(pb) {
       try {
@@ -156,52 +207,55 @@ const adInit = args => {
     displayAds(gtag, pb, ap) {
       this.applyAmazonTargeting(ap);
       this.applyPrebidTargeting(pb);
-      //debugger;
-      console.log('gtag is', gtag);
       gtag.pubads().refresh();
     },
-    scheduleSlotInit(gtag, adWrapper, networkId, adUnit, pos) {
-      gtag.cmd.push(() => {
-        const slotName = `/${networkId}/${adUnit}/${pos}`;
-
+    scheduleSlotInit(gtag, adWrapper, networkId, adUnit, pos, adsData) {
+      this.scheduleGPTAction(gtag, "configure slot", () => {
+        const adUnitPath = `/${networkId}/${adUnit}/${pos}`;
+        const containerID = adsData.config.pos;
         const slot = gtag.defineSlot(
-          slotName,
-          data.config.sizes,
-          data.config.pos
+          adUnitPath,
+          adsData.config.sizes,
+          containerID
         );
         if (!slot) {
           throw new Error(
-            `Ad slot ${
-              slotName
+            `Ad slot ${containerID} ${
+              adUnitPath
             } could not be defined, probably it was already defined`
           );
         }
-
+        window.adsSlot.push(slot);
         slot.addService(gtag.pubads());
-
+        log(
+          "gpt",
+          `Define a new slot adUnitPath:${adUnitPath} with div id ${
+            containerID
+          }`
+        );
+        // eslint-disable-next-line no-param-reassign
         adWrapper.innerHTML = `
             <div
-              id="${data.pos}"
+              id="${containerID}"
               style="display: table-cell; vertical-align: middle"
             ></div>
           `;
-        adWrapper.style.display = "table";
-        adWrapper.style.margin = "0 auto";
+        adWrapper.style.display = "table"; // eslint-disable-line no-param-reassign
+        adWrapper.style.margin = "0 auto"; // eslint-disable-line no-param-reassign
 
         const mapping = gtag.sizeMapping();
-        data.sizingMap.forEach(size =>
+        adsData.sizingMap.forEach(size =>
           mapping.addSize([size.width, size.height], size.sizes)
         );
         slot.defineSizeMapping(mapping.build());
-
-        Object.entries(data.slotTargeting || {}).forEach(entry =>
+        // set slot targeting
+        Object.entries(adsData.slotTargeting || {}).forEach(entry =>
           slot.setTargeting(entry[0], entry[1])
         );
         // TODO to check if we need renderComplete
         // renderComplete();
       });
     },
-    // -------------
     init() {
       const {
         pos,
@@ -215,13 +269,17 @@ const adInit = args => {
 
       if (!window.initCalled) {
         window.initCalled = true;
-
+        window.adsSlot = [];
         window.googletag = window.googletag || {};
         window.googletag.cmd = window.googletag.cmd || [];
-
         window.pbjs = {};
         window.pbjs.que = window.pbjs.que || [];
-
+        this.scheduleGPTAction(window.googletag, "processing", () =>
+          log("gpt", "loaded, processing the queue")
+        );
+        this.schedulePrebidAction(window.pbjs, "processing", () =>
+          log("pbjs", "loaded, processing the queue")
+        );
         const amazonAccountID = prebidConfig.bidders.amazon.accountId;
         const biddingActions = [];
         this.configurePrebid(window.pbjs, prebidConfig);
@@ -241,27 +299,25 @@ const adInit = args => {
         }
         this.scheduleGPTConfiguration(window.googletag, pageTargeting);
         biddingActions.push(
-          //new Promise((resolve) => setTimeout(() => resolve(), 15000)),
           this.dfpReady(window.googletag),
-          this.requestPrebidBids(window.pbjs, pos)
+          this.requestPrebidBids(window.pbjs, slots)
         );
         Promise.all(biddingActions)
-          //.then(this.displayAds(window.googletag, window.pbjs, window.apstag))
+          .then(
+            this.displayAds.bind(
+              this,
+              window.googletag,
+              window.pbjs,
+              window.apstag
+            )
+          )
           .catch(err => console.error("error loading the ads", err));
       }
-      this.scheduleSlotInit(window.googletag, el, networkId, adUnit, pos);
+      this.scheduleSlotInit(window.googletag, el, networkId, adUnit, pos, data);
     },
     scriptsLoaded() {
       // at this point all the scripts are loaded (eg: pbjs, googletag, apstag)
       // we call this function multiple times, one for each ad
-      // const { networkId, adUnit, prebidConfig, section, slots } = data;
-      console.log(
-        "[ad-init.js]scriptsLoaded",
-        globals.googletag,
-        globals.gs_channels,
-        globals.pbjs,
-        globals.apstag
-      );
       if (executed) throw new Error("execute() has already been called");
       executed = true;
       if (!window.globalAdInitComplete) {
