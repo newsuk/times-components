@@ -7,6 +7,16 @@ import Ad, { AdComposer } from "./ad";
 import Placeholder from "./placeholder";
 import NativeDOMContext from "./dom-context";
 import WebDOMContext from "./dom-context.web";
+import pageTargeting from "./fixtures/page-options.json";
+import slotTargeting from "./fixtures/slot-options.json";
+
+const adConfigBase = { networkId: "25436805", adUnit: "d.thetimes.co.uk" };
+const adConfig = Object.assign(
+  {},
+  adConfigBase,
+  { pageTargeting },
+  { slotTargeting }
+);
 
 let DOMContext;
 if (window.document) {
@@ -30,7 +40,7 @@ const withOpenInNewWindow = children => {
     );
 
   return (
-    <AdComposer>
+    <AdComposer adConfig={adConfig}>
       <View>
         {link}
         {children}
@@ -41,13 +51,15 @@ const withOpenInNewWindow = children => {
 
 storiesOf("Advertisement", module)
   .add("render one ad - intervention", () =>
-    withOpenInNewWindow(<Ad pos="intervention" />)
+    withOpenInNewWindow(<Ad pos="intervention" contextUrl={articleUrl} />)
   )
-  .add("render one ad - header", () => withOpenInNewWindow(<Ad pos="ad-header" />))
+  .add("render one ad - header", () =>
+    withOpenInNewWindow(<Ad pos="ad-header" contextUrl={articleUrl} />)
+  )
   .add("render article ads - header, inline", () =>
     withOpenInNewWindow(
       <View>
-        <Ad section="article" pos="header" />
+        <Ad section="article" pos="ad-header" />
         <Ad section="article" pos="inline-ad" />
       </View>
     )
@@ -55,12 +67,7 @@ storiesOf("Advertisement", module)
   .add("ad with grapeshot", () =>
     withOpenInNewWindow(
       <View>
-        <Ad
-          section="article"
-          code="ad-header"
-          pos="header"
-          contextUrl={articleUrl}
-        />
+        <Ad section="article" pos="ad-header" contextUrl={articleUrl} />
       </View>
     )
   )
@@ -92,7 +99,7 @@ storiesOf("Advertisement", module)
           Orci varius natoque penatibus et magnis dis parturient montes,
           nascetur ridiculus mus.
         </Text>
-        <Ad pos="header" section="article" />
+        <Ad pos="ad-header" section="article" />
         <Text>
           Donec convallis enim sit amet elit pharetra, et aliquet augue blandit.
           Integer suscipit mollis libero, et imperdiet nunc. Aenean eu lacus
@@ -101,7 +108,7 @@ storiesOf("Advertisement", module)
           vitae erat. Nulla eget nulla rhoncus, sollicitudin ipsum et, volutpat
           ligula.
         </Text>
-        <Ad pos="inline-ad" section="article" />
+        <Ad pos="ad-article-inline" section="article" />
         <Text>
           Aliquam dapibus risus a leo euismod, sed dignissim nibh commodo. Donec
           vitae justo aliquam, pellentesque risus laoreet, hendrerit augue.
