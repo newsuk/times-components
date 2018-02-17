@@ -1,6 +1,6 @@
 import { getAdSizes } from "./generate-config";
 
-const timeout = 1000;
+const timeout = 3000;
 const minPrice = 0.01;
 const maxBid = 15;
 const bucketSize = 0.25;
