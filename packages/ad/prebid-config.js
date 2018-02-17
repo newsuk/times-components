@@ -7,12 +7,12 @@ const bucketSize = 0.25;
 
 const biddersConfig = {
   appnexus: {
-    placementId: "5823281"
+    placementId: "7460885"
   },
   rubicon: {
-    accountId: "14062",
-    siteId: "70608",
-    zoneId: "335918"
+    accountId: "7753",
+    siteId: "76518",
+    zoneId: "448756"
   },
   amazon: {
     accountId: "3360"
@@ -31,11 +31,11 @@ const biddersConfig = {
     }
   },
   pubmatic: {
-    accountId: "01234",
-    adSlotPrefix: "TheTimes"
+    accountId: "156034",
+    adSlotPrefix: "Thetimes"
   },
   indexExchange: {
-    siteId: "1234"
+    siteId: "188830"
   }
 };
 
@@ -78,7 +78,6 @@ const bidderSettings = {
 
 const getPrebidSlotConfig = (pos, section, width) => {
   const sizes = getAdSizes(pos, width);
-  console.log('sizes are', sizes);
   const bids = [
     {
       bidder: "appnexus",
@@ -128,7 +127,8 @@ const getPrebidSlotConfig = (pos, section, width) => {
     }
   });
   return {
-    pos,
+    // NOTE: for the prebidding the position of the ad in the page is called code
+    code: pos,
     sizes,
     bids
   };
