@@ -28,27 +28,27 @@ const adInit = args => {
       });
     },
     configureApstag() {
+      // NOTE: this is Amazon code, change it carefully
       window.apstag = {
-        init(i) {
-          this.addToQueue(["i", {"0":i}]);
+        init() {
+          this.addToQueue("i", arguments); // eslint-disable-line prefer-rest-params
         },
-        fetchBids(i) {
-          this.addToQueue(["f", {"0":i}]);
-          console.log('Testtt', JSON.stringify(window.apstag._Q));
+        fetchBids() {
+          this.addToQueue("f", arguments); // eslint-disable-line prefer-rest-params
         },
         setDisplayBids() {},
         targetingKeys() {
           return [];
         },
-        addToQueue(item) {
-          this._Q.push(item); // eslint-disable-line no-underscore-dangle
+        addToQueue(action, d) {
+          this._Q.push([action, d]); // eslint-disable-line no-underscore-dangle
         },
         _Q: []
       };
     },
     initApstag(amazonAccountID, timeout) {
       window.apstag.init({
-        pubID: "3360",//amazonAccountID,
+        pubID: amazonAccountID,
         adServer: "googletag",
         bidTimeout: timeout
       });
