@@ -21,7 +21,8 @@
     "coverageDirectory": "<rootDir>/packages/depend/coverage/",
     "collectCoverageFrom": [
       "**/packages/depend/*.js",
-      "!**/packages/depend/cli.js"
+      "!**/packages/depend/cli.js",
+      "!**/packages/depend/get-packages.js"
     ],
     "transformIgnorePatterns": [
       "node_modules/(?!(react-native|react-apollo-temp|@times-components)/)"
