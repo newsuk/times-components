@@ -62,7 +62,6 @@ class Ad extends Component {
       ? { width: 0, height: 0 }
       : { height: this.config.maxSizes.height };
     const scriptsToLoad = [];
-    //this.prebidConfig.bidders.amazon.accountId = null;
     if (this.prebidConfig.bidders.amazon.accountId) {
       scriptsToLoad.push({
         uri: "https://c.amazon-adsystem.com/aax2/apstag.js"
@@ -70,6 +69,7 @@ class Ad extends Component {
     }
     scriptsToLoad.push(
       {
+        // NOTE: this is version 0.24.1
         uri: "https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js"
       },
       {
@@ -78,8 +78,8 @@ class Ad extends Component {
         )}`,
         canRequestFail: true,
         timeout: 500
-      }
-      ,{
+      },
+      {
         uri: "https://www.googletagservices.com/tag/js/gpt.js"
       }
     );
