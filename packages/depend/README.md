@@ -72,3 +72,7 @@ as majority but on a tie pick the older version
 ### majorityProgressive
 
 as majority but on a tie pick the newer version
+
+## Limitations
+
+Version ranges are currently not supported.
