@@ -241,14 +241,13 @@ const adInit = args => {
             containerID
           }`
         );
+        adWrapper.id = `wrapper-${containerID}`; // eslint-disable-line no-param-reassign
         // eslint-disable-next-line no-param-reassign
         adWrapper.innerHTML = `
-            <div
-              id="${containerID}"
-              style="display: table-cell; vertical-align: middle"
-            ></div>
-          `;
-        adWrapper.id = `wrapper-${containerID}`; // eslint-disable-line no-param-reassign
+          <div style="display: table-cell; vertical-align: middle">
+            <div id="${containerID}"></div>
+          </div>
+        `;
         adWrapper.style.display = "table"; // eslint-disable-line no-param-reassign
         adWrapper.style.margin = "0 auto"; // eslint-disable-line no-param-reassign
 
