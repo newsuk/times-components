@@ -7,10 +7,10 @@
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && npm run prettier:diff",
-    "test": "yarn test:android --ci --bail --coverage && yarn test:ios --ci --bail --coverage && yarn test:web --ci --bail --coverage",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
-    "test:web": "jest --config='./__tests__/web/jest.config.js'"
+    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage"
   },
   "repository": {
     "type": "git",

@@ -3,10 +3,10 @@
   "version": "0.23.0",
   "main": "provider",
   "scripts": {
-    "test": "jest --bail --ci --coverage",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
+    "test": "jest",
     "dextrose-stories": "dextrose generate-stories $(pwd)",
     "dextrose-clean": "dextrose clean-stories $(pwd)"
   },

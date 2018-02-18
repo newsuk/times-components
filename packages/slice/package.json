@@ -7,10 +7,10 @@
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && npm run prettier:diff",
-    "test": "yarn test:android --ci --bail --coverage && yarn test:ios --ci --bail --coverage && yarn test:web --ci --bail --coverage",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
     "dextrose-stories": "dextrose generate-stories $(pwd)",
     "dextrose-clean": "dextrose clean-stories $(pwd)"
   },
@@ -34,10 +34,9 @@
   "devDependencies": {
     "@storybook/react-native": "3.3.11",
     "@times-components/jest-configurator": "0.2.0",
-    "dextrose": "1.4.5",
+    "dextrose": "^1.4.6",
     "eslint": "4.9.0",
     "jest": "21.2.1",
-    "jest-context": "2.1.0",
     "prettier": "1.8.2",
     "react": "16.2.0",
     "react-dom": "16.2.0",

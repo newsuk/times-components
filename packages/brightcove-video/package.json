@@ -3,10 +3,10 @@
   "version": "1.10.16",
   "main": "brightcove-video",
   "scripts": {
-    "test": "jest --bail --ci --coverage",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
+    "test": "jest",
     "dextrose-stories": "dextrose generate-stories $(pwd)",
     "dextrose-clean": "dextrose clean-stories $(pwd)"
   },

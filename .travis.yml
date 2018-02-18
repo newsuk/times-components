@@ -8,9 +8,13 @@ install:
   - yarn --frozen-lockfile
 before_script:
   - chmod +x ./lib/publish.sh
+env:
+  - JOB_TYPE=android
+  - JOB_TYPE=ios
+  - JOB_TYPE=web
+  - JOB_TYPE=rest
 script:
-  - yarn lint
-  - ./lib/run_tests.sh
+  - ./lib/run_jobs.sh
 after_success:
   - ./lib/publish.sh
 deploy:

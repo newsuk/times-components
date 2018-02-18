@@ -1,7 +1,8 @@
+/* global context */
+
 import { Text } from "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import context from "jest-context";
 import Slice from "../slice";
 
 module.exports = () => {

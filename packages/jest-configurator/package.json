@@ -5,11 +5,11 @@
   "main": "lib/jest-configurator.js",
   "scripts": {
     "prepublishOnly": "babel src -d lib",
-    "pretest": "./setup.sh",
-    "test": "jest --bail --ci --coverage",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",
-    "lint": "flow && eslint . && yarn prettier:diff"
+    "lint": "flow && eslint . && yarn prettier:diff",
+    "pretest": "./setup.sh",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -49,6 +49,7 @@
     "enzyme-adapter-react-16": "1.1.0",
     "enzyme-to-json": "3.3.0",
     "find-node-modules": "1.0.4",
+    "jest-plugin-context": "2.6.0",
     "recursive-readdir-synchronous": "0.0.3"
   },
   "devDependencies": {

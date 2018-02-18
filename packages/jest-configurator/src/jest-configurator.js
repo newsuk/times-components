@@ -74,6 +74,9 @@ export default (
       `${module}/__tests__/${platformPath}jest.config.js`
     ],
     snapshotSerializers: ["enzyme-to-json/serializer"],
-    setupTestFrameworkScriptFile: path.resolve(__dirname, "../setup-jest.js")
+    setupFiles: [
+      path.resolve(__dirname, "../setup-jest.js"),
+      "jest-plugin-context/setup"
+    ]
   };
 };
