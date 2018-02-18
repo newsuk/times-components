@@ -36,14 +36,14 @@ const makeHarness = ({
     execute() {
       withCatch(() => {
         // eslint-disable-next-line no-param-reassign
-        window.scritpsProcessed = window.scritpsProcessed || [];
+        window.scripts = window.scripts || [];
         this.loadScriptsParallel(scriptUris, () => {
           this.runInitIfGlobalsPresent();
         });
       });
     },
     runInitIfGlobalsPresent() {
-      if (scriptUris.length === window.scritpsProcessed.length) {
+      if (scriptUris.length === window.scripts.length) {
         this.runInit();
       }
     },
@@ -51,10 +51,10 @@ const makeHarness = ({
       if (this.isScriptProcessed(scriptId)) {
         return;
       }
-      window.scritpsProcessed.push(scriptId);
+      window.scripts.push(scriptId);
     },
     isScriptProcessed(scriptId) {
-      return window.scritpsProcessed.indexOf(scriptId) > -1;
+      return window.scripts.indexOf(scriptId) > -1;
     },
 
     scriptLoaded(scriptId) {
