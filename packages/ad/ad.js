@@ -136,7 +136,7 @@ Ad.propTypes = {
 Ad.defaultProps = {
   networkId: "3048",
   adUnit: "d.thetimes.co.uk",
-  section: "article",
+  section: "news",
   baseUrl: "https://www.thetimes.co.uk/",
   contextUrl: "",
   style: null,

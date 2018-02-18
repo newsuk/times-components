@@ -10,7 +10,8 @@ import WebDOMContext from "./dom-context.web";
 import pageTargeting from "./fixtures/page-options.json";
 import slotTargeting from "./fixtures/slot-options.json";
 
-const adConfigBase = { networkId: "25436805", adUnit: "d.thetimes.co.uk" };
+const devNetworkId = "25436805";
+const adConfigBase = { networkId: devNetworkId, adUnit: "d.thetimes.co.uk" };
 const adConfig = Object.assign(
   {},
   adConfigBase,
@@ -51,23 +52,23 @@ const withOpenInNewWindow = children => {
 
 storiesOf("Advertisement", module)
   .add("render one ad - intervention", () =>
-    withOpenInNewWindow(<Ad pos="intervention" contextUrl={articleUrl} />)
+    withOpenInNewWindow(<Ad pos="intervention" contextUrl={articleUrl} section="news"/>)
   )
   .add("render one ad - header", () =>
-    withOpenInNewWindow(<Ad pos="ad-header" contextUrl={articleUrl} />)
+    withOpenInNewWindow(<Ad pos="ad-header" contextUrl={articleUrl} section="news"/>)
   )
   .add("render article ads - header, inline", () =>
     withOpenInNewWindow(
       <View>
-        <Ad section="article" pos="ad-header" />
-        <Ad section="article" pos="inline-ad" />
+        <Ad section="news" pos="ad-header" />
+        <Ad section="news" pos="inline-ad" />
       </View>
     )
   )
   .add("ad with grapeshot", () =>
     withOpenInNewWindow(
       <View>
-        <Ad section="article" pos="ad-header" contextUrl={articleUrl} />
+        <Ad section="news" pos="ad-header" contextUrl={articleUrl} />
       </View>
     )
   )
@@ -79,7 +80,7 @@ storiesOf("Advertisement", module)
           elementum ex id diam eleifend convallis. Nulla faucibus nec nibh sed
           condimentum.
         </Text>
-        <Ad pos="inline-ad" section="article" />
+        <Ad pos="inline-ad" section="news" />
         <Text style={{ color: "red" }}>
           Class aptent taciti sociosqu ad litora torquent per conubia nostra,
           per inceptos himenaeos. Curabitur non sem ut sapien viverra pharetra
@@ -99,7 +100,7 @@ storiesOf("Advertisement", module)
           Orci varius natoque penatibus et magnis dis parturient montes,
           nascetur ridiculus mus.
         </Text>
-        <Ad pos="ad-header" section="article" />
+        <Ad pos="ad-header" section="news" />
         <Text>
           Donec convallis enim sit amet elit pharetra, et aliquet augue blandit.
           Integer suscipit mollis libero, et imperdiet nunc. Aenean eu lacus
@@ -108,7 +109,7 @@ storiesOf("Advertisement", module)
           vitae erat. Nulla eget nulla rhoncus, sollicitudin ipsum et, volutpat
           ligula.
         </Text>
-        <Ad pos="ad-article-inline" section="article" />
+        <Ad pos="ad-article-inline" section="news" />
         <Text>
           Aliquam dapibus risus a leo euismod, sed dignissim nibh commodo. Donec
           vitae justo aliquam, pellentesque risus laoreet, hendrerit augue.
