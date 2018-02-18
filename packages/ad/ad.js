@@ -53,9 +53,7 @@ class Ad extends Component {
       section: this.props.section,
       sizingMap: getSizeMaps(this.props.pos),
       pageTargeting: adConfig.pageTargeting,
-      slotTargeting: Object.assign(adConfig.slotTargeting, {
-        pos: this.props.pos
-      })
+      slotTargeting: adConfig.slotTargeting
     };
 
     const sizeProps = !this.state.adReady

@@ -30,18 +30,25 @@ const makeHarness = ({
     }
   };
   const log = (...message) => {
-    eventCallback("log", `${data.pos} ad: ${message.join(" ")}`);
+    // eventCallback("log", `${data.pos} ad: ${message.join(" ")}`);
   };
   return {
     execute() {
       withCatch(() => {
         // eslint-disable-next-line no-param-reassign
         window.scritpsProcessed = window.scritpsProcessed || [];
+        const renderComplete = () => {
+          if (!renderCompleteCalled) {
+            renderCompleteCalled = true;
+            eventCallback("renderComplete");
+          }
+        };
         const initialiser = init({
           el,
           data,
           window,
-          document
+          document,
+          renderComplete
         });
         if (initialiser.init) {
           initialiser.init();

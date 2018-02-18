@@ -8,10 +8,9 @@ const adInit = args => {
     el,
     data,
     window,
-    globals // : { googletag, gs_channels = "DEFAULT", pbjs, apstag }, // eslint-disable-line camelcase
-    // renderComplete
+    globals, // : { googletag, gs_channels = "DEFAULT", pbjs, apstag }, // eslint-disable-line camelcase
+    renderComplete
   } = args;
-
   let executed = false;
   const logTypes = ["amazon", "gpt", "pbjs", "verbose"];
   const log = (type, message) => {
@@ -22,19 +21,19 @@ const adInit = args => {
   return {
     scheduleGPTAction(gtag, label, action) {
       gtag.cmd.push(action);
-      log(
-        "verbose",
-        `gpt: schedule gpt action:${label}. actions in queue:${gtag.cmd.length}`
-      );
+      // log(
+      //   "verbose",
+      //   `gpt: schedule gpt action:${label}. actions in queue:${gtag.cmd.length}`
+      // );
     },
     schedulePrebidAction(pb, label, action) {
       pb.que.push(action);
-      log(
-        "verbose",
-        `prebid: schedule prebid action:${label}. actions in queue:${
-          pb.que.length
-        }`
-      );
+      // log(
+      //   "verbose",
+      //   `prebid: schedule prebid action:${label}. actions in queue:${
+      //     pb.que.length
+      //   }`
+      // );
     },
     getAdUnitPath(params) {
       return params.reduce(
@@ -53,11 +52,9 @@ const adInit = args => {
       // NOTE: this is Amazon code, change it carefully
       window.apstag = {
         init() {
-          log("amazon", "calling init");
           this.addToQueue("i", arguments); // eslint-disable-line prefer-rest-params
         },
         fetchBids() {
-          log("amazon", "calling fetchBids");
           this.addToQueue("f", arguments); // eslint-disable-line prefer-rest-params
         },
         setDisplayBids() {},
@@ -109,15 +106,22 @@ const adInit = args => {
       section
     ) {
       return new Promise(resolve => {
-        const amazonSlots = this.getAmazonConfig(adsSlots, networkId, adUnit, section);
-        log("amazon", `request Amazon bids with slot ${JSON.stringify(amazonSlots)}`)
-        window.apstag.fetchBids(
-          { slots: amazonSlots},
-          aBids => {
-            log("amazon", `bids loaded ${JSON.stringify(aBids)}`);
-            resolve(aBids);
-          }
+        const amazonSlots = this.getAmazonConfig(
+          adsSlots,
+          networkId,
+          adUnit,
+          section
         );
+        log(
+          "amazon",
+          `schedule request Amazon bids with slots: ${JSON.stringify(
+            amazonSlots
+          )}`
+        );
+        window.apstag.fetchBids({ slots: amazonSlots }, aBids => {
+          log("amazon", `bids loaded ${JSON.stringify(aBids)}`);
+          resolve(aBids);
+        });
       });
     },
     requestPrebidBids(pb, slots) {
@@ -146,14 +150,14 @@ const adInit = args => {
     },
     scheduleGPTConfiguration(gtag, pageTargeting) {
       this.scheduleGPTAction(gtag, "set page targeting", () => {
-        log("gpt", `set page targeting with:${JSON.stringify(pageTargeting)}`);
+        log("gpt", "set page targeting");
         const pubads = gtag.pubads();
         Object.entries(pageTargeting || {}).forEach(entry =>
           pubads.setTargeting(entry[0], entry[1])
         );
       });
       this.scheduleGPTAction(gtag, "configuration", () => {
-        log("gpt", `configuring`);
+        log("gpt", `configure gpt`);
         const pubads = gtag.pubads();
         pubads.disableInitialLoad();
         // Fetch multiple ads at the same time
@@ -163,7 +167,17 @@ const adInit = args => {
         gtag
           .pubads()
           .addEventListener("slotRenderEnded", event =>
-            log("gpt", `slot render ended ${event.companyIds}`)
+            log("gpt", `event: slot render ended ${event.slot}`)
+          );
+        gtag
+          .pubads()
+          .addEventListener("impressionViewable", event =>
+            log("gpt", `event: impression is considered viewable ${event.slot}`)
+          );
+        gtag
+          .pubads()
+          .addEventListener("slotOnload", event =>
+            log("gpt", `event: load event from iframe ${event.slot}`)
           );
       });
     },
@@ -207,19 +221,25 @@ const adInit = args => {
       }
     },
     displayAds(gtag, pb, ap) {
-      this.applyAmazonTargeting(ap);
+      log("verbose", "displayAds");
       this.applyPrebidTargeting(pb);
+      this.applyAmazonTargeting(ap);
+      log("gpt", "googletag refresh called");
       gtag.pubads().refresh();
     },
-    scheduleSlotInit(gtag, adWrapper, networkId, adUnit, pos, adsData) {
-      this.scheduleGPTAction(gtag, "configure slot", () => {
-        const adUnitPath = `/${networkId}/${adUnit}/${pos}`;
-        const containerID = adsData.config.pos;
-        const slot = gtag.defineSlot(
-          adUnitPath,
-          adsData.config.sizes,
-          containerID
-        );
+    scheduleSlotDefine(
+      gtag,
+      adWrapper,
+      networkId,
+      adUnit,
+      section,
+      slotConfig,
+      slotTargeting
+    ) {
+      this.scheduleGPTAction(gtag, "define slot", () => {
+        const adUnitPath = `/${networkId}/${adUnit}/${section}`;
+        const { pos: containerID, sizes, mappings } = slotConfig;
+        const slot = gtag.defineSlot(adUnitPath, sizes, containerID);
         if (!slot) {
           throw new Error(
             `Ad slot ${containerID} ${
@@ -231,7 +251,7 @@ const adInit = args => {
         slot.addService(gtag.pubads());
         log(
           "gpt",
-          `Define a new slot adUnitPath:${adUnitPath} with div id ${
+          `Define a new slot adUnitPath:${adUnitPath} with div#id ${
             containerID
           }`
         );
@@ -242,40 +262,48 @@ const adInit = args => {
               style="display: table-cell; vertical-align: middle"
             ></div>
           `;
+        adWrapper.id = `wrapper-${containerID}`; // eslint-disable-line no-param-reassign
         adWrapper.style.display = "table"; // eslint-disable-line no-param-reassign
         adWrapper.style.margin = "0 auto"; // eslint-disable-line no-param-reassign
 
-        const mapping = gtag.sizeMapping();
-        adsData.sizingMap.forEach(size =>
-          mapping.addSize([size.width, size.height], size.sizes)
+        const gptMapping = gtag.sizeMapping();
+        mappings.forEach(size =>
+          gptMapping.addSize([size.width, size.height], size.sizes)
         );
-        slot.defineSizeMapping(mapping.build());
-        // set slot targeting
-        Object.entries(adsData.slotTargeting || {}).forEach(entry =>
+        slot.defineSizeMapping(gptMapping.build());
+        Object.entries(slotTargeting || {}).forEach(entry =>
           slot.setTargeting(entry[0], entry[1])
         );
-        // TODO to check if we need renderComplete
-        // renderComplete();
+        log("verbose", `googletag display ${containerID}`);
+        gtag.display(containerID);
+        // TODO: probably we should move this callback inside slotRenderEnded event handler
+        // this callback update the Ad component setting the height
+        renderComplete();
       });
     },
+    initGlobals() {
+      window.adsSlot = [];
+      window.googletag = window.googletag || {};
+      window.googletag.cmd = window.googletag.cmd || [];
+      window.pbjs = {};
+      window.pbjs.que = window.pbjs.que || [];
+    },
     init() {
+      log("verbose", "init");
       const {
-        pos,
+        config: slotConfig,
         networkId,
         adUnit,
         prebidConfig,
         section,
         slots,
-        pageTargeting
+        pageTargeting,
+        slotTargeting
       } = data;
 
       if (!window.initCalled) {
         window.initCalled = true;
-        window.adsSlot = [];
-        window.googletag = window.googletag || {};
-        window.googletag.cmd = window.googletag.cmd || [];
-        window.pbjs = {};
-        window.pbjs.que = window.pbjs.que || [];
+        this.initGlobals();
         this.scheduleGPTAction(window.googletag, "processing", () =>
           log("gpt", "loaded, processing the queue")
         );
@@ -315,11 +343,20 @@ const adInit = args => {
           )
           .catch(err => console.error("error loading the ads", err));
       }
-      this.scheduleSlotInit(window.googletag, el, networkId, adUnit, pos, data);
+      this.scheduleSlotDefine(
+        window.googletag,
+        el,
+        networkId,
+        adUnit,
+        section,
+        slotConfig,
+        slotTargeting
+      );
     },
     scriptsLoaded() {
       // at this point all the scripts are loaded (eg: pbjs, googletag, apstag)
       // we call this function multiple times, one for each ad
+      log("verbose", "scripts loaded");
       if (executed) throw new Error("execute() has already been called");
       executed = true;
       if (!window.globalAdInitComplete) {
