@@ -14,7 +14,8 @@ const makeHarness = ({
   init,
   data,
   scriptUris,
-  globalNames,
+  // TODO: can we safetely remove the global concept???
+  // globalNames,
   eventCallback
 }) => {
   let scriptsLoadedCalled = false;
@@ -30,7 +31,7 @@ const makeHarness = ({
     }
   };
   const log = (...message) => {
-    // eventCallback("log", `${data.pos} ad: ${message.join(" ")}`);
+    eventCallback("log", `${data.pos} ad: ${message.join(" ")}`);
   };
   return {
     execute() {
@@ -148,11 +149,12 @@ const makeHarness = ({
           return;
         }
         scriptsLoadedCalled = true;
-        const globals = {};
-        for (let i = 0; i < globalNames.length; i += 1) {
-          const globalName = globalNames[i];
-          globals[globalName] = window[globalName];
-        }
+        // TODO: can we safetely remove the global concept???
+        // const globals = {};
+        // for (let i = 0; i < globalNames.length; i += 1) {
+        //   const globalName = globalNames[i];
+        //   globals[globalName] = window[globalName];
+        // }
         const renderComplete = () => {
           if (!renderCompleteCalled) {
             renderCompleteCalled = true;
@@ -162,10 +164,12 @@ const makeHarness = ({
         const initialiser = init({
           el,
           data,
-          globals,
+          // TODO: can we safetely remove the global concept???
+          // globals,
           renderComplete,
           window,
-          document
+          // TODO: can we safetely remove the document???
+          // document
         });
         if (initialiser && initialiser.scriptsLoaded) {
           initialiser.scriptsLoaded();

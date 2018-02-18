@@ -85,7 +85,8 @@ class Ad extends Component {
       <DOMContext
         data={data}
         scriptUris={scriptsToLoad}
-        globalNames={["googletag", "gs_channels", "pbjs", "apstag"]}
+        // TODO: can we safetely remove globals?
+        // globalNames={["googletag", "gs_channels", "pbjs", "apstag"]}
         baseUrl={this.props.baseUrl}
         init={adInit}
         onRenderComplete={this.setAdReady}

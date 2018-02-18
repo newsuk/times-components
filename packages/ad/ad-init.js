@@ -8,7 +8,8 @@ const adInit = args => {
     el,
     data,
     window,
-    globals, // : { googletag, gs_channels = "DEFAULT", pbjs, apstag }, // eslint-disable-line camelcase
+    // TODO: can we safetely remove globals?
+    // globals, // : { googletag, gs_channels = "DEFAULT", pbjs, apstag }, // eslint-disable-line camelcase
     renderComplete
   } = args;
   const logTypes = ["amazon", "gpt", "pbjs", "verbose"];
