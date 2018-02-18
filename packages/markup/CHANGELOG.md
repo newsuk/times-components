@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.20.0"></a>
+# [0.20.0](https://github.com/newsuk/times-components/compare/@times-components/markup@0.19.7...@times-components/markup@0.20.0) (2018-02-18)
+
+
+### Features
+
+* Use jest-configurator in the Markup package ([#644](https://github.com/newsuk/times-components/issues/644)) ([ed337d4](https://github.com/newsuk/times-components/commit/ed337d4))
+
+
+
+
 <a name="0.19.7"></a>
 ## [0.19.7](https://github.com/newsuk/times-components/compare/@times-components/markup@0.19.5...@times-components/markup@0.19.7) (2018-02-16)
 
