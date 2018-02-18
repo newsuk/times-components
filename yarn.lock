@@ -348,6 +348,28 @@
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
 
+"@times-components/jest-configurator@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@times-components/jest-configurator/-/jest-configurator-0.2.0.tgz#59fa04b7e84088269883c8d2afa721c53c748b07"
+  dependencies:
+    enzyme "3.3.0"
+    enzyme-adapter-react-16 "1.1.0"
+    enzyme-to-json "3.3.0"
+    find-node-modules "1.0.4"
+    recursive-readdir-synchronous "0.0.3"
+
+"@times-components/utils@0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-0.4.1.tgz#6481d6f60af40407de7bb00a393ba3d75b0e31c1"
+  dependencies:
+    "@times-components/jest-configurator" "0.2.0"
+    apollo-cache-inmemory "1.1.5"
+    apollo-client "2.2.0"
+    graphql "0.12.3"
+    prop-types "15.6.0"
+    react "16.2.0"
+    react-apollo-temp "2.0.5"
+
 "@types/async@2.0.46":
   version "2.0.46"
   resolved "https://registry.yarnpkg.com/@types/async/-/async-2.0.46.tgz#f13a6c336a6582b95d0c0269e796b709488fd54d"

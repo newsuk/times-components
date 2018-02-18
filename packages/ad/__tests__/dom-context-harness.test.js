@@ -1,5 +1,5 @@
 import { jsdom } from "jsdom";
-
+import { advance } from "@times-components/utils/faketime";
 import _makeHarness from "../dom-context-harness";
 import { expectFunctionToBeSerialisable } from "./check-serialisable-function";
 
@@ -155,8 +155,7 @@ describe("DOMContext harness", () => {
     expect(init).not.toBeCalled();
   });
 
-  it("invokes init function if the script has an expired timeout", () => {
-    jest.useFakeTimers();
+  it("invokes init function if the script has an expired timeout", async () => {
     const init = jest.fn();
     const harness = makeHarness({
       init,
@@ -164,12 +163,11 @@ describe("DOMContext harness", () => {
     });
     harness.execute();
     expect(init).not.toBeCalled();
-    jest.runAllTimers();
+    await advance(200);
     expect(init).toHaveBeenCalledTimes(1);
   });
 
   it("invokes init function if the script can fail", () => {
-    jest.useFakeTimers();
     const init = jest.fn();
     const harness = makeHarness({
       init,
