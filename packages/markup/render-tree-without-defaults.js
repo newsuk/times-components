@@ -1,4 +1,4 @@
-const renderTree = (tree, renderers, key, indx = 0) => {
+const renderTree = (tree, renderers, key, indx) => {
   const { name, attributes, children } = tree;
 
   const renderer = renderers[name];

@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Markup Native does not render a script tag 1`] = `<View />`;
+exports[`Markup Native tests on android does not render a script tag 1`] = `<View />`;
 
-exports[`Markup Native does not render an image tag 1`] = `<View />`;
+exports[`Markup Native tests on android does not render an image tag 1`] = `<View />`;
 
-exports[`Markup Native renders a mixture of tags 1`] = `
+exports[`Markup Native tests on android renders a mixture of tags 1`] = `
 <View>
   <View>
     <Text
@@ -56,7 +56,7 @@ exports[`Markup Native renders a mixture of tags 1`] = `
 </View>
 `;
 
-exports[`Markup Native renders a single paragraph 1`] = `
+exports[`Markup Native tests on android renders a single paragraph 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
@@ -66,7 +66,7 @@ exports[`Markup Native renders a single paragraph 1`] = `
 </Text>
 `;
 
-exports[`Markup Native renders multiple children 1`] = `
+exports[`Markup Native tests on android renders multiple children 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
@@ -94,7 +94,7 @@ exports[`Markup Native renders multiple children 1`] = `
 </Text>
 `;
 
-exports[`Markup Native renders multiple paragraphs 1`] = `
+exports[`Markup Native tests on android renders multiple paragraphs 1`] = `
 <View>
   <Text
     accessible={true}
@@ -113,7 +113,7 @@ exports[`Markup Native renders multiple paragraphs 1`] = `
 </View>
 `;
 
-exports[`Markup Native renders multiple paragraphs with a pull quote 1`] = `
+exports[`Markup Native tests on android renders multiple paragraphs with a pull quote 1`] = `
 <View>
   <Text
     accessible={true}
@@ -153,12 +153,10 @@ exports[`Markup Native renders multiple paragraphs with a pull quote 1`] = `
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 30,
         "marginTop": 0,
-        "paddingBottom": 25,
         "paddingLeft": 10,
         "paddingRight": 10,
-        "paddingTop": 5,
       }
     }
   >
@@ -219,7 +217,6 @@ exports[`Markup Native renders multiple paragraphs with a pull quote 1`] = `
               "fontSize": 13,
               "lineHeight": 13,
               "marginBottom": 0,
-              "paddingTop": 4,
             },
             Object {
               "color": "#696969",
@@ -262,7 +259,7 @@ exports[`Markup Native renders multiple paragraphs with a pull quote 1`] = `
 </View>
 `;
 
-exports[`Markup Native renders multiple paragraphs with ads 1`] = `
+exports[`Markup Native tests on android renders multiple paragraphs with ads 1`] = `
 <View>
   <Text
     accessible={true}
@@ -344,12 +341,24 @@ exports[`Markup Native renders multiple paragraphs with ads 1`] = `
 </View>
 `;
 
-exports[`Markup Native renders tags nested within blocks 1`] = `
-<View>
+exports[`Markup Native tests on android renders tags nested 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
   Some text is here 
-  <View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
     and there is some 
-    <View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
       more text 
       <Text
         accessible={true}
@@ -358,25 +367,14 @@ exports[`Markup Native renders tags nested within blocks 1`] = `
       >
         and in here
       </Text>
-    </View>
+    </Text>
      after it too
-  </View>
+  </Text>
    and here
-</View>
-`;
-
-exports[`Markup Native renders the anchor tag 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  href="www.google.com"
->
-  some link here
 </Text>
 `;
 
-exports[`Markup Native renders the bold tag 1`] = `
+exports[`Markup Native tests on android renders the bold tag 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
@@ -391,7 +389,7 @@ exports[`Markup Native renders the bold tag 1`] = `
 </Text>
 `;
 
-exports[`Markup Native renders the italic tag 1`] = `
+exports[`Markup Native tests on android renders the italic tag 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
@@ -406,7 +404,7 @@ exports[`Markup Native renders the italic tag 1`] = `
 </Text>
 `;
 
-exports[`Markup Native renders the line break tag 1`] = `
+exports[`Markup Native tests on android renders the line break tag 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
@@ -417,7 +415,7 @@ exports[`Markup Native renders the line break tag 1`] = `
 </Text>
 `;
 
-exports[`Markup Native renders the span tag 1`] = `
+exports[`Markup Native tests on android renders the span tag 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
@@ -427,7 +425,7 @@ exports[`Markup Native renders the span tag 1`] = `
 </Text>
 `;
 
-exports[`Markup Native renders wrapped tags 1`] = `
+exports[`Markup Native tests on android renders wrapped tags 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
