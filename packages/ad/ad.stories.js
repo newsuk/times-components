@@ -64,8 +64,8 @@ storiesOf("Advertisement", module)
   .add("render article ads - header, inline", () =>
     withOpenInNewWindow(
       <View>
-        <Ad section="news" pos="ad-header" />
-        <Ad section="news" pos="inline-ad" />
+        <Ad section="news" pos="ad-header" contextUrl={articleUrl} />
+        <Ad section="news" pos="inline-ad" contextUrl={articleUrl} />
       </View>
     )
   )
@@ -84,7 +84,7 @@ storiesOf("Advertisement", module)
           elementum ex id diam eleifend convallis. Nulla faucibus nec nibh sed
           condimentum.
         </Text>
-        <Ad pos="inline-ad" section="news" />
+        <Ad pos="inline-ad" section="news" contextUrl={articleUrl} />
         <Text style={{ color: "red" }}>
           Class aptent taciti sociosqu ad litora torquent per conubia nostra,
           per inceptos himenaeos. Curabitur non sem ut sapien viverra pharetra
@@ -104,7 +104,7 @@ storiesOf("Advertisement", module)
           Orci varius natoque penatibus et magnis dis parturient montes,
           nascetur ridiculus mus.
         </Text>
-        <Ad pos="ad-header" section="news" />
+        <Ad pos="ad-header" section="news" contextUrl={articleUrl} />
         <Text>
           Donec convallis enim sit amet elit pharetra, et aliquet augue blandit.
           Integer suscipit mollis libero, et imperdiet nunc. Aenean eu lacus
@@ -113,7 +113,7 @@ storiesOf("Advertisement", module)
           vitae erat. Nulla eget nulla rhoncus, sollicitudin ipsum et, volutpat
           ligula.
         </Text>
-        <Ad pos="ad-article-inline" section="news" />
+        <Ad pos="ad-article-inline" section="news" contextUrl={articleUrl} />
         <Text>
           Aliquam dapibus risus a leo euismod, sed dignissim nibh commodo. Donec
           vitae justo aliquam, pellentesque risus laoreet, hendrerit augue.
