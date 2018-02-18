@@ -52,10 +52,14 @@ const withOpenInNewWindow = children => {
 
 storiesOf("Advertisement", module)
   .add("render one ad - intervention", () =>
-    withOpenInNewWindow(<Ad pos="intervention" contextUrl={articleUrl} section="news"/>)
+    withOpenInNewWindow(
+      <Ad pos="intervention" contextUrl={articleUrl} section="news" />
+    )
   )
   .add("render one ad - header", () =>
-    withOpenInNewWindow(<Ad pos="ad-header" contextUrl={articleUrl} section="news"/>)
+    withOpenInNewWindow(
+      <Ad pos="ad-header" contextUrl={articleUrl} section="news" />
+    )
   )
   .add("render article ads - header, inline", () =>
     withOpenInNewWindow(
