@@ -241,15 +241,13 @@ const adInit = args => {
             containerID
           }`
         );
-        adWrapper.id = `wrapper-${containerID}`; // eslint-disable-line no-param-reassign
-        // eslint-disable-next-line no-param-reassign
-        adWrapper.innerHTML = `
-          <div style="display: table-cell; vertical-align: middle">
-            <div id="${containerID}"></div>
-          </div>
-        `;
-        adWrapper.style.display = "table"; // eslint-disable-line no-param-reassign
-        adWrapper.style.margin = "0 auto"; // eslint-disable-line no-param-reassign
+        /* eslint-disable no-param-reassign */
+        adWrapper.id = `wrapper-${containerID}`;
+        adWrapper.innerHTML = `<div id="${containerID}"></div>`;
+        adWrapper.style.display = "flex";
+        adWrapper.style.alignItems = "center";
+        adWrapper.style.margin = "0 auto";
+        /* eslint-enable no-param-reassign */
 
         const gptMapping = gtag.sizeMapping();
         mappings.forEach(size =>
