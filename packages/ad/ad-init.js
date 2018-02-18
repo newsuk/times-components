@@ -96,7 +96,7 @@ const adInit = args => {
       }
       const adUnitPath = this.getAdUnitPath(adUnitPathParts);
       return adSlots.map(slot => ({
-        slotID: slot.pos,
+        slotID: slot.code,
         slotName: adUnitPath,
         sizes: slot.sizes
       }));
@@ -109,8 +109,10 @@ const adInit = args => {
       section
     ) {
       return new Promise(resolve => {
+        const amazonSlots = this.getAmazonConfig(adsSlots, networkId, adUnit, section);
+        log("amazon", `request Amazon bids with slot ${JSON.stringify(amazonSlots)}`)
         window.apstag.fetchBids(
-          { slots: this.getAmazonConfig(adsSlots, networkId, adUnit, section) },
+          { slots: amazonSlots},
           aBids => {
             log("amazon", `bids loaded ${JSON.stringify(aBids)}`);
             resolve(aBids);
