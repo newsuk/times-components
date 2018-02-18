@@ -11,11 +11,9 @@ const adInit = args => {
     globals, // : { googletag, gs_channels = "DEFAULT", pbjs, apstag }, // eslint-disable-line camelcase
     renderComplete
   } = args;
-  let executed = false;
   const logTypes = ["amazon", "gpt", "pbjs", "verbose"];
   const log = (type, message) => {
-    if (!logTypes.includes(type))
-      return;
+    if (!logTypes.includes(type)) return;
     console.log(`${type}: ${message}`); // eslint-disable-line no-console
   };
   return {
@@ -175,11 +173,9 @@ const adInit = args => {
       this.scheduleGPTAction(gtag, "grapeshot targeting", () => {
         log(
           "gpt",
-          `set grapeshot page level targeting with:${globals.gs_channels} ${
-            gtag.pubads
-          }`
+          `set grapeshot page level targeting with:${window.gs_channels}`
         );
-        gtag.pubads().setTargeting("gs_cat", globals.gs_channels);
+        gtag.pubads().setTargeting("gs_cat", window.gs_channels);
       });
     },
     dfpReady(gtag) {
@@ -289,7 +285,10 @@ const adInit = args => {
         pageTargeting,
         slotTargeting
       } = data;
-      log("verbose", `init for slot:${data.pos} initCalled:${window.initCalled}`);
+      log(
+        "verbose",
+        `init for slot:${data.pos} initCalled:${window.initCalled}`
+      );
       if (!window.initCalled) {
         window.initCalled = true;
         this.initGlobals();
@@ -306,6 +305,8 @@ const adInit = args => {
         if (amazonAccountID) {
           this.configureApstag();
           this.initApstag(amazonAccountID, prebidConfig.timeout);
+          // FIXME: at the moment we configure the amazon bids with just one slot (the first one)
+          // because we call init just one time (window.initCalled)
           biddingActions.push(
             this.scheduleRequestAmazonBids(
               slots,
@@ -345,12 +346,10 @@ const adInit = args => {
     scriptsLoaded() {
       // at this point all the scripts are loaded (eg: pbjs, googletag, apstag)
       // we call this function multiple times, one for each ad
-      log("verbose", "scripts loaded");
-      if (executed) throw new Error("execute() has already been called");
-      executed = true;
+      log("verbose", `scripts loaded ${window.globalAdInitComplete}`);
       if (!window.globalAdInitComplete) {
         window.globalAdInitComplete = true;
-        // call for each ad
+        this.scheduleGrapeshotTargeting(window.googletag);
       }
     }
   };
