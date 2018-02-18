@@ -14,26 +14,16 @@ const adInit = args => {
   let executed = false;
   const logTypes = ["amazon", "gpt", "pbjs", "verbose"];
   const log = (type, message) => {
-    if (!logTypes.includes(type) || process.env.NODE_ENV === "production")
+    if (!logTypes.includes(type))
       return;
     console.log(`${type}: ${message}`); // eslint-disable-line no-console
   };
   return {
     scheduleGPTAction(gtag, label, action) {
       gtag.cmd.push(action);
-      // log(
-      //   "verbose",
-      //   `gpt: schedule gpt action:${label}. actions in queue:${gtag.cmd.length}`
-      // );
     },
     schedulePrebidAction(pb, label, action) {
       pb.que.push(action);
-      // log(
-      //   "verbose",
-      //   `prebid: schedule prebid action:${label}. actions in queue:${
-      //     pb.que.length
-      //   }`
-      // );
     },
     getAdUnitPath(params) {
       return params.reduce(
@@ -44,7 +34,7 @@ const adInit = args => {
       this.schedulePrebidAction(pb, "set ad unit", () => {
         log("pbjs", "remove and add ad units");
         adsSlots.forEach(slot => pb.removeAdUnit(slot.code));
-        // TODO check for clone
+        // TODO: check for clone
         pb.addAdUnits(adsSlots);
       });
     },
@@ -289,7 +279,6 @@ const adInit = args => {
       window.pbjs.que = window.pbjs.que || [];
     },
     init() {
-      log("verbose", "init");
       const {
         config: slotConfig,
         networkId,
@@ -300,7 +289,7 @@ const adInit = args => {
         pageTargeting,
         slotTargeting
       } = data;
-
+      log("verbose", `init for slot:${data.pos} initCalled:${window.initCalled}`);
       if (!window.initCalled) {
         window.initCalled = true;
         this.initGlobals();
