@@ -7,7 +7,7 @@ const adInit = args => {
     el,
     data,
     window,
-    globals: { googletag, gs_channels = "DEFAULT" }, // eslint-disable-line camelcase
+    globals: { googletag, gs_channels = ["DEFAULT"] }, // eslint-disable-line camelcase
     renderComplete
   } = args;
 
