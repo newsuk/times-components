@@ -21,14 +21,12 @@ exports[`Slice test on android DEFAULT template renders a single child element 1
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-    >
-      Test text
-    </Text>
+    />
   </View>
 </View>
 `;
 
-exports[`Slice test on android DEFAULT template renders multiple child elements 1`] = `
+exports[`Slice test on android DEFAULT template renders three child elements 1`] = `
 <View
   style={
     Object {
@@ -49,16 +47,48 @@ exports[`Slice test on android DEFAULT template renders multiple child elements 
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-    >
-      Test text 1
-    </Text>
+    />
     <Text
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-    >
-      Test text 2
-    </Text>
+    />
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    />
+  </View>
+</View>
+`;
+
+exports[`Slice test on android DEFAULT template renders two child elements 1`] = `
+<View
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexBasis": 0,
+        "flexGrow": 1,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    />
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    />
   </View>
 </View>
 `;

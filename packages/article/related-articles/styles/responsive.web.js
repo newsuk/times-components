@@ -21,32 +21,13 @@ export const StyledRelatedArticlesHeading = withResponsiveStyles(View, {
   `
 });
 
-export const RelatedArticleItemContainer = hasPadding =>
-  withResponsiveStyles(View, {
-    mediumUp: () => `
+export const RelatedArticleItemContainer = withResponsiveStyles(View, {
+  mediumUp: () => `
     display: flex;
     flex-grow: 1;
     min-height: 100%;
     flex-basis: 0 !important;
-    padding-right: ${hasPadding ? "10px" : ""};
   `
-  });
-
-export const StyledSeparator = withResponsiveStyles(View, {
-  base: () => `
-      display: none;
-    `,
-  mediumUp: () => `
-      border-right-style: solid;
-      border-right-width: 1px;
-      border-right-color: #dbdbdb;
-      display: block;
-      flex: 0 !important;
-      margin-right: 10px;
-      margin-bottom: 10px;
-      margin-top: 10px;
-      min-height: auto;
-    `
 });
 
 export const RelatedArticleContainer = articleCount =>
@@ -60,7 +41,6 @@ export const RelatedArticleContainer = articleCount =>
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-top: 10px;
   `,
     mediumUp: () => `
       border: 0;
