@@ -48,28 +48,25 @@ ColourBox.propTypes = {
 };
 
 storiesOf("Helpers/Styleguide", module)
+  .add("Section Colours", () => {
+    const colourBoxes = Object.keys(sectionColours).map(colourName => (
+      <ColourBox
+        key={colourName}
+        name={colourName}
+        hex={sectionColours[colourName]}
+      />
+    ));
 
-.add("Section Colours", () => {
-  const colourBoxes = Object.keys(sectionColours).map(colourName => (
-    <ColourBox
-      key={colourName}
-      name={colourName}
-      hex={sectionColours[colourName]}
-    />
-  ));
+    if (Platform.OS === "web") {
+      return <View style={styles.display}>{colourBoxes}</View>;
+    }
+    return <ScrollView>{colourBoxes}</ScrollView>;
+  })
 
-  if (Platform.OS === "web") {
-    return <View style={styles.display}>{colourBoxes}</View>;
-  }
-  return <ScrollView>{colourBoxes}</ScrollView>;
-})
-
-.add("Animations", () => {
-    return (
+  .add("Animations", () => (
     <FadeIn>
       <View style={styles.animationBox}>
         <Text style={styles.text}>Fade In</Text>
       </View>
     </FadeIn>
-    );
-});
+  ));

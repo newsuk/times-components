@@ -1,5 +1,6 @@
 import React from "react";
 import { Animated } from "react-native";
+import PropTypes from "prop-types";
 
 class FadeIn extends React.Component {
   state = {
@@ -21,5 +22,12 @@ class FadeIn extends React.Component {
     );
   }
 }
+
+FadeIn.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element)
+  ]).isRequired
+};
 
 export default FadeIn;

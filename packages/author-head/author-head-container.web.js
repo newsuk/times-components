@@ -16,8 +16,6 @@ const AuthorHeadWrapper = withResponsiveStyles(View, {
   `
 });
 
-console.log(FadeIn);
-
 const AuthorHeadContainer = props => (
   <FadeIn>
     <View style={styles.wrapper} pointerEvents="box-none">

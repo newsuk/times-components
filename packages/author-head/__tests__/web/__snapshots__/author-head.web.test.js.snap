@@ -1,27 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AuthorHead test on web renders 1`] = `
-.c3 {
+.c4 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.c2 {
+.c3 {
   font-family: TimesModern-Bold;
   font-size: 30px;
   color: #000;
 }
 
-.c1 {
+.c2 {
   width: 100px;
 }
 
 .c0 {
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
+}
+
+.c1 {
   padding-top: 30px;
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c4 {
     padding-left: 0;
     padding-right: 0;
     max-width: 680px;
@@ -29,96 +34,105 @@ exports[`AuthorHead test on web renders 1`] = `
 }
 
 @media (min-width:1320px) {
-  .c3 {
+  .c4 {
     max-width: 760px;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c3 {
     font-size: 45px;
   }
 }
 
 @media (min-width:768px) {
-  .c1 {
+  .c2 {
     width: 116px;
   }
 }
 
 @media (min-width:768px) {
-  .c0 {
+  .c1 {
     padding-top: 60px;
   }
 }
 
 <div
-  className="rn-alignItems-1awozwy rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-pointerEvents-12vffkv rn-position-bnwqim rn-zIndex-1lgpqti"
+  className="c0 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
-  <header
-    className="c0 rn-alignItems-1awozwy rn-backgroundColor-1178u4u rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-1uwte3a rn-position-bnwqim rn-width-13qz1uu rn-zIndex-1lgpqti"
-    role="banner"
+  <div
+    className="rn-alignItems-1awozwy rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-pointerEvents-12vffkv rn-position-bnwqim rn-zIndex-1lgpqti"
   >
-    <div
-      className="c1 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
-    />
-    <h1
-      aria-label="author-name"
-      aria-level="1"
-      className="c2 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-      data-testid="author-name"
-      dir="auto"
-      role="heading"
-    >
-      
-    </h1>
-    <h2
-      aria-level="2"
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1x7yru4 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-yvv7r8 rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-      dir="auto"
-      role="heading"
-      style={
-        Object {
-          "WebkitFontSmoothing": "antialiased",
-        }
-      }
-    >
-      
-    </h2>
-    <div
-      className="c3 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+    <header
+      className="c1 rn-alignItems-1awozwy rn-backgroundColor-1178u4u rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-1uwte3a rn-position-bnwqim rn-width-13qz1uu rn-zIndex-1lgpqti"
+      role="banner"
     >
       <div
-        className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-1feecvn rn-fontSize-ubezar rn-lineHeight-eaezby rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-        dir="auto"
+        className="c2 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
       />
-    </div>
-  </header>
+      <h1
+        aria-label="author-name"
+        aria-level="1"
+        className="c3 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+        data-testid="author-name"
+        dir="auto"
+        role="heading"
+      >
+        
+      </h1>
+      <h2
+        aria-level="2"
+        className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1x7yru4 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-yvv7r8 rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+        dir="auto"
+        role="heading"
+        style={
+          Object {
+            "WebkitFontSmoothing": "antialiased",
+          }
+        }
+      >
+        
+      </h2>
+      <div
+        className="c4 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+      >
+        <div
+          className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-1feecvn rn-fontSize-ubezar rn-lineHeight-eaezby rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+          dir="auto"
+        />
+      </div>
+    </header>
+  </div>
 </div>
 `;
 
 exports[`AuthorHead test on web renders with data 1`] = `
-.c3 {
+.c4 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.c2 {
+.c3 {
   font-family: TimesModern-Bold;
   font-size: 30px;
   color: #000;
 }
 
-.c1 {
+.c2 {
   width: 100px;
 }
 
 .c0 {
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
+}
+
+.c1 {
   padding-top: 30px;
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c4 {
     padding-left: 0;
     padding-right: 0;
     max-width: 680px;
@@ -126,181 +140,190 @@ exports[`AuthorHead test on web renders with data 1`] = `
 }
 
 @media (min-width:1320px) {
-  .c3 {
+  .c4 {
     max-width: 760px;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c3 {
     font-size: 45px;
   }
 }
 
 @media (min-width:768px) {
-  .c1 {
+  .c2 {
     width: 116px;
   }
 }
 
 @media (min-width:768px) {
-  .c0 {
+  .c1 {
     padding-top: 60px;
   }
 }
 
 <div
-  className="rn-alignItems-1awozwy rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-pointerEvents-12vffkv rn-position-bnwqim rn-zIndex-1lgpqti"
+  className="c0 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
-  <header
-    className="c0 rn-alignItems-1awozwy rn-backgroundColor-1178u4u rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-1uwte3a rn-position-bnwqim rn-width-13qz1uu rn-zIndex-1lgpqti"
-    role="banner"
+  <div
+    className="rn-alignItems-1awozwy rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-pointerEvents-12vffkv rn-position-bnwqim rn-zIndex-1lgpqti"
   >
-    <div
-      className="c1 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+    <header
+      className="c1 rn-alignItems-1awozwy rn-backgroundColor-1178u4u rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-1uwte3a rn-position-bnwqim rn-width-13qz1uu rn-zIndex-1lgpqti"
+      role="banner"
     >
       <div
-        className="rn-alignItems-1oszu61 rn-borderTopColor-jebswk rn-borderRightColor-1y2kpd rn-borderBottomColor-1ykcu4d rn-borderLeftColor-lfc6mk rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginBottom-117bsoe rn-marginLeft-1jj8364 rn-marginRight-lchren rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-overflowX-11yh6sk rn-overflowY-buy8e9 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-width-13qz1uu rn-zIndex-1lgpqti"
-        style={
-          Object {
-            "borderBottomLeftRadius": "50%",
-            "borderBottomRightRadius": "50%",
-            "borderTopLeftRadius": "50%",
-            "borderTopRightRadius": "50%",
-          }
-        }
+        className="c2 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
       >
         <div
+          className="rn-alignItems-1oszu61 rn-borderTopColor-jebswk rn-borderRightColor-1y2kpd rn-borderBottomColor-1ykcu4d rn-borderLeftColor-lfc6mk rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginBottom-117bsoe rn-marginLeft-1jj8364 rn-marginRight-lchren rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-overflowX-11yh6sk rn-overflowY-buy8e9 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-width-13qz1uu rn-zIndex-1lgpqti"
           style={
             Object {
-              "display": "table",
-              "height": 0,
-              "overflow": "hidden",
-              "paddingBottom": "100%",
+              "borderBottomLeftRadius": "50%",
+              "borderBottomRightRadius": "50%",
+              "borderTopLeftRadius": "50%",
+              "borderTopRightRadius": "50%",
             }
           }
         >
-          <img
-            alt=""
-            src="https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200"
+          <div
             style={
               Object {
-                "display": "block",
-                "position": "absolute",
-                "width": "100%",
-                "zIndex": 1,
+                "display": "table",
+                "height": 0,
+                "overflow": "hidden",
+                "paddingBottom": "100%",
               }
             }
-          />
-          <div
-            className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
           >
-            <div
-              className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+            <img
+              alt=""
+              src="https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200"
               style={
                 Object {
-                  "backgroundImage": "linear-gradient(264deg, #f9f9f9 0%, #ededed 100%)",
+                  "display": "block",
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 1,
                 }
               }
             />
+            <div
+              className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
+            >
+              <div
+                className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #f9f9f9 0%, #ededed 100%)",
+                  }
+                }
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <h1
-      aria-label="author-name"
-      aria-level="1"
-      className="c2 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-      data-testid="author-name"
-      dir="auto"
-      role="heading"
-    >
-      Carol Midgley
-    </h1>
-    <h2
-      aria-level="2"
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1x7yru4 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-yvv7r8 rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-      dir="auto"
-      role="heading"
-      style={
-        Object {
-          "WebkitFontSmoothing": "antialiased",
+      <h1
+        aria-label="author-name"
+        aria-level="1"
+        className="c3 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+        data-testid="author-name"
+        dir="auto"
+        role="heading"
+      >
+        Carol Midgley
+      </h1>
+      <h2
+        aria-level="2"
+        className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1x7yru4 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-yvv7r8 rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+        dir="auto"
+        role="heading"
+        style={
+          Object {
+            "WebkitFontSmoothing": "antialiased",
+          }
         }
-      }
-    >
-      columnist
-    </h2>
-    <div
-      className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-xd6kpl rn-paddingTop-tskmnb rn-position-bnwqim rn-zIndex-1lgpqti"
-    >
-      <svg
-        height={15}
-        style={Object {}}
-        viewBox="-354.2 -279.4 750 600"
-        width={15}
       >
-        <path
-          d="M391.3-210.7c-28.9,10.9-57.8,21.7-86.7,25.3c32.5-18.1,54.2-50.6,68.7-83.1c-28.9,18.1-61.5,28.9-97.6,36.1 c-28.9-28.9-68.7-47-112-47c-83.1,0-151.8,68.7-151.8,151.8c0,10.8,0,25.3,3.6,36.1c-126.5-7.3-238.6-68.7-314.5-159 c-14.5,21.7-21.7,50.6-21.7,75.9c0,54.2,25.3,101.2,68.7,126.5c-25.3,0-47-7.2-68.7-18.1c0,0,0,0,0,3.6 c0,72.3,54.2,137.4,122.9,148.2c-14.5,3.6-25.3,3.6-39.7,3.6c-10.9,0-18.1,0-28.9-3.6c18.1,61.5,75.9,104.8,141,104.8 c-50.6,39.8-119.3,65.1-188,65.1c-10.8,0-25.3,0-36.1-3.6c68.7,43.3,148.2,68.7,234.9,68.7C167.2,320.6,319,89.3,319-113.1 c0-7.2,0-14.4,0-18.1C344.3-152.9,369.6-181.8,391.3-210.7z"
-          fill="#006699"
-          style={Object {}}
-        />
-      </svg>
-      <a
-        className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-a023e6 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-qhyqy2 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-        dir="auto"
-        href="https://twitter.com/carolmidgley"
-        onClick={[Function]}
-        onKeyDown={[Function]}
-        role="link"
-      >
-        @
-        carolmidgley
-      </a>
-    </div>
-    <div
-      className="c3 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
-    >
+        columnist
+      </h2>
       <div
-        className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-1feecvn rn-fontSize-ubezar rn-lineHeight-eaezby rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-        dir="auto"
+        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-xd6kpl rn-paddingTop-tskmnb rn-position-bnwqim rn-zIndex-1lgpqti"
       >
-        Carol Midgley joined 
-        <em>
-          The Times
-        </em>
-         in 1996, and won feature writer of the year in 2004. Find her Wednesday column in 
-        <em>
-          Times2
-        </em>
-         each week and a weekly comment piece on Fridays.
+        <svg
+          height={15}
+          style={Object {}}
+          viewBox="-354.2 -279.4 750 600"
+          width={15}
+        >
+          <path
+            d="M391.3-210.7c-28.9,10.9-57.8,21.7-86.7,25.3c32.5-18.1,54.2-50.6,68.7-83.1c-28.9,18.1-61.5,28.9-97.6,36.1 c-28.9-28.9-68.7-47-112-47c-83.1,0-151.8,68.7-151.8,151.8c0,10.8,0,25.3,3.6,36.1c-126.5-7.3-238.6-68.7-314.5-159 c-14.5,21.7-21.7,50.6-21.7,75.9c0,54.2,25.3,101.2,68.7,126.5c-25.3,0-47-7.2-68.7-18.1c0,0,0,0,0,3.6 c0,72.3,54.2,137.4,122.9,148.2c-14.5,3.6-25.3,3.6-39.7,3.6c-10.9,0-18.1,0-28.9-3.6c18.1,61.5,75.9,104.8,141,104.8 c-50.6,39.8-119.3,65.1-188,65.1c-10.8,0-25.3,0-36.1-3.6c68.7,43.3,148.2,68.7,234.9,68.7C167.2,320.6,319,89.3,319-113.1 c0-7.2,0-14.4,0-18.1C344.3-152.9,369.6-181.8,391.3-210.7z"
+            fill="#006699"
+            style={Object {}}
+          />
+        </svg>
+        <a
+          className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-a023e6 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-qhyqy2 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+          dir="auto"
+          href="https://twitter.com/carolmidgley"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="link"
+        >
+          @
+          carolmidgley
+        </a>
       </div>
-    </div>
-  </header>
+      <div
+        className="c4 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+      >
+        <div
+          className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-1feecvn rn-fontSize-ubezar rn-lineHeight-eaezby rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+          dir="auto"
+        >
+          Carol Midgley joined 
+          <em>
+            The Times
+          </em>
+           in 1996, and won feature writer of the year in 2004. Find her Wednesday column in 
+          <em>
+            Times2
+          </em>
+           each week and a weekly comment piece on Fridays.
+        </div>
+      </div>
+    </header>
+  </div>
 </div>
 `;
 
 exports[`AuthorHead test on web renders without profile picture 1`] = `
-.c3 {
+.c4 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.c2 {
+.c3 {
   font-family: TimesModern-Bold;
   font-size: 30px;
   color: #000;
 }
 
-.c1 {
+.c2 {
   width: 100px;
 }
 
 .c0 {
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
+}
+
+.c1 {
   padding-top: 30px;
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c4 {
     padding-left: 0;
     padding-right: 0;
     max-width: 680px;
@@ -308,107 +331,111 @@ exports[`AuthorHead test on web renders without profile picture 1`] = `
 }
 
 @media (min-width:1320px) {
-  .c3 {
+  .c4 {
     max-width: 760px;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c3 {
     font-size: 45px;
   }
 }
 
 @media (min-width:768px) {
-  .c1 {
+  .c2 {
     width: 116px;
   }
 }
 
 @media (min-width:768px) {
-  .c0 {
+  .c1 {
     padding-top: 60px;
   }
 }
 
 <div
-  className="rn-alignItems-1awozwy rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-pointerEvents-12vffkv rn-position-bnwqim rn-zIndex-1lgpqti"
+  className="c0 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
-  <header
-    className="c0 rn-alignItems-1awozwy rn-backgroundColor-1178u4u rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-1uwte3a rn-position-bnwqim rn-width-13qz1uu rn-zIndex-1lgpqti"
-    role="banner"
+  <div
+    className="rn-alignItems-1awozwy rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-pointerEvents-12vffkv rn-position-bnwqim rn-zIndex-1lgpqti"
   >
-    <div
-      className="c1 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
-    />
-    <h1
-      aria-label="author-name"
-      aria-level="1"
-      className="c2 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-      data-testid="author-name"
-      dir="auto"
-      role="heading"
-    >
-      Carol Midgley
-    </h1>
-    <h2
-      aria-level="2"
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1x7yru4 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-yvv7r8 rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-      dir="auto"
-      role="heading"
-      style={
-        Object {
-          "WebkitFontSmoothing": "antialiased",
-        }
-      }
-    >
-      columnist
-    </h2>
-    <div
-      className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-xd6kpl rn-paddingTop-tskmnb rn-position-bnwqim rn-zIndex-1lgpqti"
-    >
-      <svg
-        height={15}
-        style={Object {}}
-        viewBox="-354.2 -279.4 750 600"
-        width={15}
-      >
-        <path
-          d="M391.3-210.7c-28.9,10.9-57.8,21.7-86.7,25.3c32.5-18.1,54.2-50.6,68.7-83.1c-28.9,18.1-61.5,28.9-97.6,36.1 c-28.9-28.9-68.7-47-112-47c-83.1,0-151.8,68.7-151.8,151.8c0,10.8,0,25.3,3.6,36.1c-126.5-7.3-238.6-68.7-314.5-159 c-14.5,21.7-21.7,50.6-21.7,75.9c0,54.2,25.3,101.2,68.7,126.5c-25.3,0-47-7.2-68.7-18.1c0,0,0,0,0,3.6 c0,72.3,54.2,137.4,122.9,148.2c-14.5,3.6-25.3,3.6-39.7,3.6c-10.9,0-18.1,0-28.9-3.6c18.1,61.5,75.9,104.8,141,104.8 c-50.6,39.8-119.3,65.1-188,65.1c-10.8,0-25.3,0-36.1-3.6c68.7,43.3,148.2,68.7,234.9,68.7C167.2,320.6,319,89.3,319-113.1 c0-7.2,0-14.4,0-18.1C344.3-152.9,369.6-181.8,391.3-210.7z"
-          fill="#006699"
-          style={Object {}}
-        />
-      </svg>
-      <a
-        className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-a023e6 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-qhyqy2 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-        dir="auto"
-        href="https://twitter.com/carolmidgley"
-        onClick={[Function]}
-        onKeyDown={[Function]}
-        role="link"
-      >
-        @
-        carolmidgley
-      </a>
-    </div>
-    <div
-      className="c3 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+    <header
+      className="c1 rn-alignItems-1awozwy rn-backgroundColor-1178u4u rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-1uwte3a rn-position-bnwqim rn-width-13qz1uu rn-zIndex-1lgpqti"
+      role="banner"
     >
       <div
-        className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-1feecvn rn-fontSize-ubezar rn-lineHeight-eaezby rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+        className="c2 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+      />
+      <h1
+        aria-label="author-name"
+        aria-level="1"
+        className="c3 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+        data-testid="author-name"
         dir="auto"
+        role="heading"
       >
-        Carol Midgley joined 
-        <em>
-          The Times
-        </em>
-         in 1996, and won feature writer of the year in 2004. Find her Wednesday column in 
-        <em>
-          Times2
-        </em>
-         each week and a weekly comment piece on Fridays.
+        Carol Midgley
+      </h1>
+      <h2
+        aria-level="2"
+        className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1x7yru4 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-yvv7r8 rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+        dir="auto"
+        role="heading"
+        style={
+          Object {
+            "WebkitFontSmoothing": "antialiased",
+          }
+        }
+      >
+        columnist
+      </h2>
+      <div
+        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingRight-9aemit rn-paddingLeft-gy4na3 rn-paddingBottom-xd6kpl rn-paddingTop-tskmnb rn-position-bnwqim rn-zIndex-1lgpqti"
+      >
+        <svg
+          height={15}
+          style={Object {}}
+          viewBox="-354.2 -279.4 750 600"
+          width={15}
+        >
+          <path
+            d="M391.3-210.7c-28.9,10.9-57.8,21.7-86.7,25.3c32.5-18.1,54.2-50.6,68.7-83.1c-28.9,18.1-61.5,28.9-97.6,36.1 c-28.9-28.9-68.7-47-112-47c-83.1,0-151.8,68.7-151.8,151.8c0,10.8,0,25.3,3.6,36.1c-126.5-7.3-238.6-68.7-314.5-159 c-14.5,21.7-21.7,50.6-21.7,75.9c0,54.2,25.3,101.2,68.7,126.5c-25.3,0-47-7.2-68.7-18.1c0,0,0,0,0,3.6 c0,72.3,54.2,137.4,122.9,148.2c-14.5,3.6-25.3,3.6-39.7,3.6c-10.9,0-18.1,0-28.9-3.6c18.1,61.5,75.9,104.8,141,104.8 c-50.6,39.8-119.3,65.1-188,65.1c-10.8,0-25.3,0-36.1-3.6c68.7,43.3,148.2,68.7,234.9,68.7C167.2,320.6,319,89.3,319-113.1 c0-7.2,0-14.4,0-18.1C344.3-152.9,369.6-181.8,391.3-210.7z"
+            fill="#006699"
+            style={Object {}}
+          />
+        </svg>
+        <a
+          className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-a023e6 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-qhyqy2 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+          dir="auto"
+          href="https://twitter.com/carolmidgley"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="link"
+        >
+          @
+          carolmidgley
+        </a>
       </div>
-    </div>
-  </header>
+      <div
+        className="c4 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+      >
+        <div
+          className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-1feecvn rn-fontSize-ubezar rn-lineHeight-eaezby rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+          dir="auto"
+        >
+          Carol Midgley joined 
+          <em>
+            The Times
+          </em>
+           in 1996, and won feature writer of the year in 2004. Find her Wednesday column in 
+          <em>
+            Times2
+          </em>
+           each week and a weekly comment piece on Fridays.
+        </div>
+      </div>
+    </header>
+  </div>
 </div>
 `;
