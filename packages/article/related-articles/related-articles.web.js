@@ -1,56 +1,52 @@
 import React from "react";
 import { View } from "react-native";
 import Slice from "@times-components/slice";
+import getTemplateName from "@times-components/slice/styles/template-map";
 import RelatedArticlesHeading from "./heading";
 import RelatedArticleItem from "./related-article-item";
 import { relatedArticlesPropTypes, defaultProps } from "./proptypes";
-import {
-  RelatedArticleItemContainer,
-  StyledSeparator,
-  RelatedArticleContainer,
-  ImageContainer,
-  SummaryContainer
-} from "./styles/responsive";
+import getStyledComponent from "./styles/responsive";
 
 const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles || articles.length === 0) return null;
 
   const articleCount = articles.length;
-  const StyledRelatedArticleContainer = RelatedArticleContainer(articleCount);
-  const StyledImageContainer = ImageContainer(articleCount);
-  const StyledSummaryContainer = SummaryContainer(articleCount);
 
-  const renderArticleItems = () => {
-    const articleArray = articles.map((article, index) => {
-      const hasPadding = index < articleCount - 1;
-      const StyledRelatedArticleItemContainer = RelatedArticleItemContainer(
-        hasPadding
+  const templateName = getTemplateName(template);
+
+  const RelatedArticleContainer = getStyledComponent(
+    View,
+    templateName,
+    "RelatedArticleContainer",
+    { articleCount }
+  );
+  const SummaryContainer = getStyledComponent(
+    View,
+    templateName,
+    "SummaryContainer",
+    { articleCount }
+  );
+
+  const renderArticleItems = () =>
+    articles.map((article, index) => {
+      const ImageContainer = getStyledComponent(
+        View,
+        templateName,
+        "ImageContainer",
+        { articleCount, isLead: index === 0 }
       );
-
       return (
-        <StyledRelatedArticleItemContainer
-          accessibilityRole="article"
+        <RelatedArticleItem
+          article={article}
           key={article.id}
-        >
-          <RelatedArticleItem
-            article={article}
-            onPress={onPress}
-            styledRelatedArticleContainer={StyledRelatedArticleContainer}
-            styledImageContainer={StyledImageContainer}
-            styledSummaryContainer={StyledSummaryContainer}
-          />
-        </StyledRelatedArticleItemContainer>
+          onPress={onPress}
+          relatedArticleContainer={RelatedArticleContainer}
+          imageContainer={ImageContainer}
+          summaryContainer={SummaryContainer}
+          template={template}
+        />
       );
     });
-
-    return articleArray.reduce((previous, current) =>
-      [].concat(
-        previous,
-        <StyledSeparator key={`separator-${current.key}`} />,
-        current
-      )
-    );
-  };
 
   return (
     <View style={{ marginTop: 10 }}>

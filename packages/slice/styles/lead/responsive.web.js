@@ -6,9 +6,9 @@ export const ChildrenContainer = ({ childCount }) => ({
     flex-direction: column;
     flex-wrap: wrap;
     padding-bottom: 10px;
+    padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 10px;
   `,
   mediumUp: () => {
     const smallStyle = `
@@ -22,11 +22,11 @@ export const ChildrenContainer = ({ childCount }) => ({
     return `
       flex-direction: row;
       margin: 0 auto;
-      ${childCount >= 3 ? largeStyle : smallStyle}
+      ${childCount === 1 ? smallStyle : largeStyle}
     `;
   },
   wideUp: () => `
-    width: ${childCount >= 3 ? "100%" : config.wideBpWidth};
+    width: ${childCount === 1 ? config.wideBpWidth : "100%"};
   `
 });
 
@@ -34,11 +34,21 @@ export const ChildContainer = ({ isFirstChild }) => ({
   base: () => `
     padding-top: ${isFirstChild ? "0px" : "10px"};
   `,
-  mediumUp: () => `
-    display: flex;
-    flex-basis: 0 !important;
-    flex-grow: 1;
-    min-height: 100%;
-    padding-top: 0px;
-  `
+  mediumUp: () => {
+    const firstStyle = `
+      flex-grow: 3;
+    `;
+
+    const childStyle = `
+      flex-grow: 1;
+      padding-top: 0px;
+    `;
+
+    return `
+      display: flex;
+      flex-basis: 0 !important;
+      min-height: 100%;
+      ${isFirstChild ? firstStyle : childStyle};
+    `;
+  }
 });

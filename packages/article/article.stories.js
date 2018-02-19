@@ -25,12 +25,15 @@ import articleFixtureNoLabelNoFlags from "./fixtures/no-label-no-flags.json";
 import articleFixtureNoLabelNoFlagsNoStandFirst from "./fixtures/no-label-no-flags-no-standfirst.json";
 import articleFixtureNoLeadAsset from "./fixtures/no-lead-asset.json";
 // Related articles
-import singleRelatedArticleFixture from "./related-articles/fixtures/single-related-article.json";
-import singleRelatedArticleNoImageFixture from "./related-articles/fixtures/single-related-article-no-image.json";
-import singleRelatedArticleNoLabelFixture from "./related-articles/fixtures/single-related-article-no-label.json";
-import singleRelatedArticleNoBylineFixture from "./related-articles/fixtures/single-related-article-no-byline.json";
-import twoRelatedArticlesFixture from "./related-articles/fixtures/two-related-articles.json";
-import threeRelatedArticlesFixture from "./related-articles/fixtures/three-related-articles.json";
+import oneDefaultRelatedArticleFixture from "./related-articles/fixtures/default/one-default.json";
+import oneDefaultRelatedArticleNoImageFixture from "./related-articles/fixtures/default/one-no-image.json";
+import oneDefaultRelatedArticleNoLabelFixture from "./related-articles/fixtures/default/one-no-label.json";
+import oneDefaultRelatedArticleNoBylineFixture from "./related-articles/fixtures/default/one-no-byline.json";
+import twoDefaultRelatedArticlesFixture from "./related-articles/fixtures/default/two-default.json";
+import threeDefaultRelatedArticlesFixture from "./related-articles/fixtures/default/three-default.json";
+import oneLeadAndTwoRelatedArticleFixture from "./related-articles/fixtures/lead-and-two/one-default.json";
+import twoLeadAndTwoRelatedArticleFixture from "./related-articles/fixtures/lead-and-two/two-default.json";
+import threeLeadAndTwoRelatedArticleFixture from "./related-articles/fixtures/lead-and-two/three-default.json";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
@@ -217,33 +220,54 @@ storiesOf("Pages/Article", module)
       adConfig={adConfig}
     />
   ))
-  .add("Single related article default", () => (
+  .add("One DEFAULT related article", () => (
     <RelatedArticles
-      {...createRelatedArticlesProps(singleRelatedArticleFixture.data)}
+      {...createRelatedArticlesProps(oneDefaultRelatedArticleFixture.data)}
     />
   ))
-  .add("Single related article with no lead image", () => (
+  .add("One DEFAULT related article with no lead image", () => (
     <RelatedArticles
-      {...createRelatedArticlesProps(singleRelatedArticleNoImageFixture.data)}
+      {...createRelatedArticlesProps(
+        oneDefaultRelatedArticleNoImageFixture.data
+      )}
     />
   ))
-  .add("Single related article with no label", () => (
+  .add("One DEFAULT related article with no label", () => (
     <RelatedArticles
-      {...createRelatedArticlesProps(singleRelatedArticleNoLabelFixture.data)}
+      {...createRelatedArticlesProps(
+        oneDefaultRelatedArticleNoLabelFixture.data
+      )}
     />
   ))
-  .add("Single related article with no byline", () => (
+  .add("One DEFAULT related article with no byline", () => (
     <RelatedArticles
-      {...createRelatedArticlesProps(singleRelatedArticleNoBylineFixture.data)}
+      {...createRelatedArticlesProps(
+        oneDefaultRelatedArticleNoBylineFixture.data
+      )}
     />
   ))
-  .add("Two related articles", () => (
+  .add("Two DEFAULT related articles", () => (
     <RelatedArticles
-      {...createRelatedArticlesProps(twoRelatedArticlesFixture.data)}
+      {...createRelatedArticlesProps(twoDefaultRelatedArticlesFixture.data)}
     />
   ))
-  .add("Three related articles", () => (
+  .add("Three DEFAULT related articles", () => (
     <RelatedArticles
-      {...createRelatedArticlesProps(threeRelatedArticlesFixture.data)}
+      {...createRelatedArticlesProps(threeDefaultRelatedArticlesFixture.data)}
+    />
+  ))
+  .add("One LEAD_AND_TWO related article", () => (
+    <RelatedArticles
+      {...createRelatedArticlesProps(oneLeadAndTwoRelatedArticleFixture.data)}
+    />
+  ))
+  .add("Two LEAD_AND_TWO related articles", () => (
+    <RelatedArticles
+      {...createRelatedArticlesProps(twoLeadAndTwoRelatedArticleFixture.data)}
+    />
+  ))
+  .add("Three LEAD_AND_TWO related articles", () => (
+    <RelatedArticles
+      {...createRelatedArticlesProps(threeLeadAndTwoRelatedArticleFixture.data)}
     />
   ));

@@ -8,7 +8,7 @@ import ArticleSummary, {
 import Image from "@times-components/image";
 import Link from "@times-components/link";
 import { relatedArticleItemPropTypes } from "./proptypes";
-import styles from "./styles";
+import styles from "./styles/shared";
 
 const RelatedArticleItem = ({ article, onPress }) => {
   const { byline, label, headline, publishedTime, summary, url } = article;

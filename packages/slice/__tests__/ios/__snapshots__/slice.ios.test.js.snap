@@ -22,13 +22,14 @@ exports[`Slice test on ios DEFAULT template renders a single child element 1`] =
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
-      Test text
+      Test text 
+      1
     </Text>
   </View>
 </View>
 `;
 
-exports[`Slice test on ios DEFAULT template renders multiple child elements 1`] = `
+exports[`Slice test on ios DEFAULT template renders three child elements 1`] = `
 <View
   style={
     Object {
@@ -50,14 +51,61 @@ exports[`Slice test on ios DEFAULT template renders multiple child elements 1`] 
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
-      Test text 1
+      Test text 
+      1
     </Text>
     <Text
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
     >
-      Test text 2
+      Test text 
+      2
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      Test text 
+      3
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Slice test on ios DEFAULT template renders two child elements 1`] = `
+<View
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexBasis": 0,
+        "flexGrow": 1,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      Test text 
+      1
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      Test text 
+      2
     </Text>
   </View>
 </View>
