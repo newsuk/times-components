@@ -2,6 +2,23 @@
 
 exports[`Related articles test on web Related articles handles no related articles 1`] = `null`;
 
+exports[`Related articles test on web Related articles handles no related articles 2`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [],
+        "eventTime": "2018-02-19T11:33:10.022Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
 exports[`Related articles test on web Related articles renders single related article 1`] = `
 <div
   className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-marginTop-156q2ks rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -181,6 +198,30 @@ exports[`Related articles test on web Related articles renders single related ar
 </div>
 `;
 
+exports[`Related articles test on web Related articles renders single related article 2`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
+            "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+          },
+        ],
+        "eventTime": "2018-02-19T11:33:10.068Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
 exports[`Related articles test on web Related articles renders single related article with no byline 1`] = `
 <div
   className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-marginTop-156q2ks rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -356,6 +397,30 @@ exports[`Related articles test on web Related articles renders single related ar
 </div>
 `;
 
+exports[`Related articles test on web Related articles renders single related article with no byline 2`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "",
+            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
+            "id": "08604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+          },
+        ],
+        "eventTime": "2018-02-19T11:33:10.119Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
 exports[`Related articles test on web Related articles renders single related article with no label 1`] = `
 <div
   className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-marginTop-156q2ks rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -517,6 +582,30 @@ exports[`Related articles test on web Related articles renders single related ar
 </div>
 `;
 
+exports[`Related articles test on web Related articles renders single related article with no label 2`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Charles Bremner, Paris | Jack Malvern",
+            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
+            "id": "28604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+          },
+        ],
+        "eventTime": "2018-02-19T11:33:10.103Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
 exports[`Related articles test on web Related articles renders single related article with no lead image 1`] = `
 <div
   className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-marginTop-156q2ks rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -651,6 +740,30 @@ exports[`Related articles test on web Related articles renders single related ar
     </div>
   </div>
 </div>
+`;
+
+exports[`Related articles test on web Related articles renders single related article with no lead image 2`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Charles Bremner, Paris | Jack Malvern",
+            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
+            "id": "18604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+          },
+        ],
+        "eventTime": "2018-02-19T11:33:10.087Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
 `;
 
 exports[`Related articles test on web Related articles renders three related articles 1`] = `
@@ -1142,6 +1255,42 @@ exports[`Related articles test on web Related articles renders three related art
 </div>
 `;
 
+exports[`Related articles test on web Related articles renders three related articles 2`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
+            "id": "58604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+          },
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Bayeux Tapestry to be displayed in Britain",
+            "id": "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2018-01-17T12:00:00.000Z",
+          },
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Bayeux Tapestry to be displayed in Britain",
+            "id": "8b47c1b8-fb05-11e7-a987-7fcf5e99898c",
+            "publishedTime": "2018-01-17T12:00:00.000Z",
+          },
+        ],
+        "eventTime": "2018-02-19T11:33:10.190Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
 exports[`Related articles test on web Related articles renders two related articles 1`] = `
 <div
   className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-marginTop-156q2ks rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -1474,4 +1623,34 @@ exports[`Related articles test on web Related articles renders two related artic
     </div>
   </div>
 </div>
+`;
+
+exports[`Related articles test on web Related articles renders two related articles 2`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
+            "id": "58604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+          },
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Bayeux Tapestry to be displayed in Britain",
+            "id": "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2018-01-17T12:00:00.000Z",
+          },
+        ],
+        "eventTime": "2018-02-19T11:33:10.151Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
 `;

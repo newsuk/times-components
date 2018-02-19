@@ -2,6 +2,23 @@
 
 exports[`Related articles test on android Related articles handles no related articles 1`] = `null`;
 
+exports[`Related articles test on android Related articles handles no related articles 2`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [],
+        "eventTime": "2018-02-19T11:32:49.843Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
 exports[`Related articles test on android Related articles renders single related article 1`] = `
 <RCTScrollView
   style={
@@ -365,6 +382,30 @@ exports[`Related articles test on android Related articles renders single relate
 </RCTScrollView>
 `;
 
+exports[`Related articles test on android Related articles renders single related article 2`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
+            "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+          },
+        ],
+        "eventTime": "2018-02-19T11:32:49.873Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
 exports[`Related articles test on android Related articles renders single related article with no byline 1`] = `
 <RCTScrollView
   style={
@@ -720,6 +761,30 @@ exports[`Related articles test on android Related articles renders single relate
 </RCTScrollView>
 `;
 
+exports[`Related articles test on android Related articles renders single related article with no byline 2`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "",
+            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
+            "id": "08604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+          },
+        ],
+        "eventTime": "2018-02-19T11:32:49.902Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
 exports[`Related articles test on android Related articles renders single related article with no label 1`] = `
 <RCTScrollView
   style={
@@ -1052,6 +1117,30 @@ exports[`Related articles test on android Related articles renders single relate
 </RCTScrollView>
 `;
 
+exports[`Related articles test on android Related articles renders single related article with no label 2`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Charles Bremner, Paris | Jack Malvern",
+            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
+            "id": "28604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+          },
+        ],
+        "eventTime": "2018-02-19T11:32:49.894Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
 exports[`Related articles test on android Related articles renders single related article with no lead image 1`] = `
 <RCTScrollView
   style={
@@ -1281,6 +1370,30 @@ exports[`Related articles test on android Related articles renders single relate
     </View>
   </View>
 </RCTScrollView>
+`;
+
+exports[`Related articles test on android Related articles renders single related article with no lead image 2`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Charles Bremner, Paris | Jack Malvern",
+            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
+            "id": "18604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+          },
+        ],
+        "eventTime": "2018-02-19T11:32:49.882Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
 `;
 
 exports[`Related articles test on android Related articles renders three related articles 1`] = `
@@ -2256,6 +2369,42 @@ exports[`Related articles test on android Related articles renders three related
 </RCTScrollView>
 `;
 
+exports[`Related articles test on android Related articles renders three related articles 2`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
+            "id": "58604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+          },
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Bayeux Tapestry to be displayed in Britain",
+            "id": "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2018-01-17T12:00:00.000Z",
+          },
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Bayeux Tapestry to be displayed in Britain",
+            "id": "8b47c1b8-fb05-11e7-a987-7fcf5e99898c",
+            "publishedTime": "2018-01-17T12:00:00.000Z",
+          },
+        ],
+        "eventTime": "2018-02-19T11:32:49.937Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
 exports[`Related articles test on android Related articles renders two related articles 1`] = `
 <RCTScrollView
   style={
@@ -2922,4 +3071,34 @@ exports[`Related articles test on android Related articles renders two related a
     </View>
   </View>
 </RCTScrollView>
+`;
+
+exports[`Related articles test on android Related articles renders two related articles 2`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
+            "id": "58604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+          },
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Bayeux Tapestry to be displayed in Britain",
+            "id": "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2018-01-17T12:00:00.000Z",
+          },
+        ],
+        "eventTime": "2018-02-19T11:32:49.916Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
 `;
