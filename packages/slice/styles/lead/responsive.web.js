@@ -1,10 +1,12 @@
 import config from "@times-components/article/styles/responsive-config";
 
-export const ChildrenContainer = childCount => ({
+export const ChildrenContainer = ({ childCount }) => ({
   base: () => `
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-bottom: 10px;
+    padding-top: 10px;
   `,
   mediumUp: () => {
     const smallStyle = `
@@ -16,7 +18,7 @@ export const ChildrenContainer = childCount => ({
     const largeStyle = `
       padding-left: 10px;
       padding-right: 10px;
-      width: auto;
+      width: 100%;
     `;
 
     return `
@@ -26,7 +28,7 @@ export const ChildrenContainer = childCount => ({
     `;
   },
   wideUp: () => `
-    width: ${childCount === 1 ? config.wideBpWidth : "auto"};
+    width: ${childCount === 1 ? config.wideBpWidth : "100%"};
   `
 });
 

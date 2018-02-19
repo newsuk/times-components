@@ -34,4 +34,13 @@ storiesOf("Primitives/Slice", module)
   ))
   .add("Default template with three items", () => (
     <Slice template="DEFAULT">{createItems(3)}</Slice>
+  ))
+  .add("Lead template with one item", () => (
+    <Slice template="LEAD_AND_TWO">{createItems(1)}</Slice>
+  ))
+  .add("Lead template with two items", () => (
+    <Slice template="LEAD_AND_TWO">{createItems(2)}</Slice>
+  ))
+  .add("Lead template with three items", () => (
+    <Slice template="LEAD_AND_TWO">{createItems(3)}</Slice>
   ));
