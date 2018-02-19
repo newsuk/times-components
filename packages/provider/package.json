@@ -20,7 +20,7 @@
       "!**/packages/provider/*stories.js"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|react-apollo-temp|@times-components)/)"
+      "node_modules/(?!(react-native|react-apollo|@times-components)/)"
     ],
     "testMatch": [
       "<rootDir>/packages/provider/__tests__/**.test.js"
@@ -69,7 +69,7 @@
     "lodash.isequal": "4.4.0",
     "lodash.pick": "4.4.0",
     "prop-types": "15.6.0",
-    "react-apollo-temp": "2.0.5",
+    "react-apollo": "2.1.0-beta.2",
     "react-display-name": "0.2.3"
   },
   "peerDependencies": {
