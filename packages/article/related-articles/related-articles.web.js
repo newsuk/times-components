@@ -5,7 +5,6 @@ import RelatedArticlesHeading from "./heading";
 import RelatedArticleItem from "./related-article-item";
 import { relatedArticlesPropTypes, defaultProps } from "./proptypes";
 import {
-  RelatedArticleItemContainer,
   RelatedArticleContainer,
   ImageContainer,
   SummaryContainer
@@ -21,15 +20,14 @@ const RelatedArticles = ({ articles, onPress, template }) => {
 
   const renderArticleItems = () =>
     articles.map(article => (
-      <RelatedArticleItemContainer accessibilityRole="article" key={article.id}>
-        <RelatedArticleItem
-          article={article}
-          onPress={onPress}
-          styledRelatedArticleContainer={StyledRelatedArticleContainer}
-          styledImageContainer={StyledImageContainer}
-          styledSummaryContainer={StyledSummaryContainer}
-        />
-      </RelatedArticleItemContainer>
+      <RelatedArticleItem
+        article={article}
+        key={article.id}
+        onPress={onPress}
+        styledRelatedArticleContainer={StyledRelatedArticleContainer}
+        styledImageContainer={StyledImageContainer}
+        styledSummaryContainer={StyledSummaryContainer}
+      />
     ));
 
   return (

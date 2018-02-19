@@ -21,15 +21,6 @@ export const StyledRelatedArticlesHeading = withResponsiveStyles(View, {
   `
 });
 
-export const RelatedArticleItemContainer = withResponsiveStyles(View, {
-  mediumUp: () => `
-    display: flex;
-    flex-grow: 1;
-    min-height: 100%;
-    flex-basis: 0 !important;
-  `
-});
-
 export const RelatedArticleContainer = articleCount =>
   withResponsiveStyles(View, {
     base: () => `
@@ -38,7 +29,6 @@ export const RelatedArticleContainer = articleCount =>
     border-bottom-width: ${StyleSheet.hairlineWidth}px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
   `,
