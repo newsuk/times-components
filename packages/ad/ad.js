@@ -26,12 +26,10 @@ class Ad extends Component {
     this.state = {
       adReady: false
     };
+
     this.slots = [];
-    const slotsBid = ["ad-header", "ad-article-inline", "intervention"];
-    if (slotsBid.includes(this.props.pos)) {
-      // TODO check article
-      this.slots.push(getPrebidSlotConfig(this.props.pos, "article", width));
-    }
+    this.slotsForPrebid = ["ad-header", "ad-article-inline"]; //TODO check pos values
+    this.slotsForPrebid.map(slot => this.slots.push(getPrebidSlotConfig(this.props.pos, "article", width)));
   }
 
   setAdReady = () => {
