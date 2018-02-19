@@ -7,12 +7,12 @@ const bucketSize = 0.25;
 
 const biddersConfig = {
   appnexus: {
-    placementId: "7460885"
+    placementId: "5823281"
   },
   rubicon: {
-    accountId: "7753",
-    siteId: "76518",
-    zoneId: "448756"
+    accountId: "14062",
+    siteId: "70608",
+    zoneId: "335918"
   },
   amazon: {
     accountId: "3360"
