@@ -36,8 +36,8 @@ module.exports = () => {
     global.Intl = realIntl;
   });
 
-  context("Related articles", () => {
-    it("handles an empty articles array", () => {
+  context("DEFAULT template", () => {
+    it("handles an empty related articles array", () => {
       const data = {
         relatedArticles: [],
         relatedArticlesLayout: {
@@ -50,7 +50,7 @@ module.exports = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders one DEFAULT related article", () => {
+    it("renders one related article", () => {
       const tree = renderer
         .create(
           <RelatedArticles
@@ -63,7 +63,7 @@ module.exports = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders one DEFAULT related article with no lead image", () => {
+    it("renders one related article with no lead image", () => {
       const tree = renderer
         .create(
           <RelatedArticles
@@ -76,7 +76,7 @@ module.exports = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders one DEFAULT related article with no label", () => {
+    it("renders one related article with no label", () => {
       const tree = renderer
         .create(
           <RelatedArticles
@@ -89,7 +89,7 @@ module.exports = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders one DEFAULT related article with no byline", () => {
+    it("renders one related article with no byline", () => {
       const tree = renderer
         .create(
           <RelatedArticles
@@ -102,7 +102,7 @@ module.exports = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders two DEFAULT related articles", () => {
+    it("renders two related articles", () => {
       const tree = renderer
         .create(
           <RelatedArticles
@@ -115,7 +115,7 @@ module.exports = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders three DEFAULT related articles", () => {
+    it("renders three related articles", () => {
       const tree = renderer
         .create(
           <RelatedArticles
@@ -127,8 +127,10 @@ module.exports = () => {
         .toJSON();
       expect(tree).toMatchSnapshot();
     });
+  });
 
-    it("renders one LEAD_AND_TWO related article", () => {
+  context("LEAD_AND_TWO template", () => {
+    it("renders one related article", () => {
       const tree = renderer
         .create(
           <RelatedArticles
@@ -141,7 +143,7 @@ module.exports = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders two LEAD_AND_TWO related article", () => {
+    it("renders two related articles", () => {
       const tree = renderer
         .create(
           <RelatedArticles
@@ -154,7 +156,7 @@ module.exports = () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders three LEAD_AND_TWO related article", () => {
+    it("renders three related articles", () => {
       const tree = renderer
         .create(
           <RelatedArticles
