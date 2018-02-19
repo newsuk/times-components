@@ -21,7 +21,10 @@ exports[`Slice test on ios DEFAULT template renders a single child element 1`] =
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-    />
+    >
+      Test text 
+      1
+    </Text>
   </View>
 </View>
 `;
@@ -47,17 +50,26 @@ exports[`Slice test on ios DEFAULT template renders three child elements 1`] = `
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-    />
+    >
+      Test text 
+      1
+    </Text>
     <Text
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-    />
+    >
+      Test text 
+      2
+    </Text>
     <Text
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-    />
+    >
+      Test text 
+      3
+    </Text>
   </View>
 </View>
 `;
@@ -83,12 +95,18 @@ exports[`Slice test on ios DEFAULT template renders two child elements 1`] = `
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-    />
+    >
+      Test text 
+      1
+    </Text>
     <Text
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-    />
+    >
+      Test text 
+      2
+    </Text>
   </View>
 </View>
 `;

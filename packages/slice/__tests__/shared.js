@@ -15,7 +15,7 @@ module.exports = () => {
         .map(item => {
           const { key } = item;
           if (key > noOfItems) return false;
-          return <Text key={key} />;
+          return <Text key={key}>Test text {key}</Text>;
         })
         .filter(item => item !== false);
 
