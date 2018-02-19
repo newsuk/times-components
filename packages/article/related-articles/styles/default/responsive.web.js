@@ -1,22 +1,5 @@
 import { StyleSheet } from "react-native";
 
-export const Separator = () => ({
-  base: () => `
-      display: none;
-    `,
-  mediumUp: () => `
-      border-right-style: solid;
-      border-right-width: 1px;
-      border-right-color: #dbdbdb;
-      display: block;
-      flex: 0 !important;
-      margin-right: 10px;
-      margin-bottom: 10px;
-      margin-top: 10px;
-      min-height: auto;
-    `
-});
-
 export const RelatedArticleContainer = ({ articleCount }) => ({
   base: () => `
     border-style: solid;
@@ -24,10 +7,8 @@ export const RelatedArticleContainer = ({ articleCount }) => ({
     border-bottom-width: ${StyleSheet.hairlineWidth}px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-top: 10px;
   `,
   mediumUp: () => `
       border: 0;
@@ -77,14 +58,4 @@ export const SummaryContainer = ({ articleCount }) => ({
     flex-basis: 0 !important;
   `
       : ``
-});
-
-export const RelatedArticleItemContainer = ({ hasPadding }) => ({
-  mediumUp: () => `
-    display: flex;
-    flex-grow: 1;
-    min-height: 100%;
-    flex-basis: 0 !important;
-    padding-right: ${hasPadding ? "10px" : ""};
-  `
 });

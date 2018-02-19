@@ -10,7 +10,7 @@ import getStyledComponent from "./styles/responsive";
 const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles || articles.length === 0) return null;
 
-const articleCount = articles.length;
+  const articleCount = articles.length;
 
   const templateName = getTemplateName(template);
 
@@ -43,8 +43,9 @@ const articleCount = articles.length;
           relatedArticleContainer={RelatedArticleContainer}
           imageContainer={ImageContainer}
           summaryContainer={SummaryContainer}
+          template={template}
         />
-      )
+      );
     });
 
   return (

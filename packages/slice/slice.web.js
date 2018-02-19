@@ -21,9 +21,15 @@ const Slice = ({ children, template }) => {
       return [
         ...(previous.length > 0
           ? previous
-          : [<ChildContainer>{previous}</ChildContainer>]),
+          : [
+              <ChildContainer key={`child-${previous.key}`}>
+                {previous}
+              </ChildContainer>
+            ]),
         <Separator key={`separator-${current.key}`} />,
-        <ChildCurrentContainer>{current}</ChildCurrentContainer>
+        <ChildCurrentContainer key={`child-${current.key}`}>
+          {current}
+        </ChildCurrentContainer>
       ];
     });
 
