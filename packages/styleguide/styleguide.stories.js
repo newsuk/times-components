@@ -2,9 +2,9 @@ import { Platform, ScrollView, Text, View } from "react-native";
 import React from "react";
 import PropTypes from "prop-types";
 import { storiesOf } from "@storybook/react-native";
-import sectionColours from "./styleguide";
+import { sectionColours, FadeIn } from "./styleguide";
 
-const colourBoxStyles = {
+const styles = {
   display: {
     flexDirection: "row",
     flexWrap: "wrap"
@@ -25,13 +25,18 @@ const colourBoxStyles = {
     fontFamily: "TimesDigitalW04",
     fontSize: 12,
     color: "#333333"
+  },
+  animationBox: {
+    backgroundColor: "#CCCCCC",
+    margin: 50,
+    padding: 100
   }
 };
 
 const ColourBox = ({ name, hex }) => (
-  <View style={colourBoxStyles.container}>
-    <View style={{ ...colourBoxStyles.box, backgroundColor: hex }} />
-    <Text style={colourBoxStyles.text}>
+  <View style={styles.container}>
+    <View style={{ ...styles.box, backgroundColor: hex }} />
+    <Text style={styles.text}>
       {name} - {hex}
     </Text>
   </View>
@@ -42,7 +47,9 @@ ColourBox.propTypes = {
   hex: PropTypes.string.isRequired
 };
 
-storiesOf("Helpers/Styleguide", module).add("Section Colours", () => {
+storiesOf("Helpers/Styleguide", module)
+
+.add("Section Colours", () => {
   const colourBoxes = Object.keys(sectionColours).map(colourName => (
     <ColourBox
       key={colourName}
@@ -52,7 +59,17 @@ storiesOf("Helpers/Styleguide", module).add("Section Colours", () => {
   ));
 
   if (Platform.OS === "web") {
-    return <View style={colourBoxStyles.display}>{colourBoxes}</View>;
+    return <View style={styles.display}>{colourBoxes}</View>;
   }
   return <ScrollView>{colourBoxes}</ScrollView>;
+})
+
+.add("Animations", () => {
+    return (
+    <FadeIn>
+      <View style={styles.animationBox}>
+        <Text style={styles.text}>Fade In</Text>
+      </View>
+    </FadeIn>
+    );
 });

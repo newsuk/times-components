@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Animated, View, StyleSheet, ViewPropTypes } from "react-native";
+import { View, StyleSheet, ViewPropTypes } from "react-native";
 import Image from "@times-components/image";
+import { FadeIn } from "@times-components/styleguide";
 import Loading from "./card-loading";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
@@ -13,19 +14,6 @@ const styles = StyleSheet.create({
 });
 
 class CardComponent extends React.Component {
-  state = {
-    fadeAnim: new Animated.Value(0)
-  }
-
-  componentDidMount() {
-    Animated.timing(
-      this.state.fadeAnim, {
-        toValue: 1,
-        duration: 300
-      }
-    ).start();
-  }
-
   render() {
     const {
       isLoading,
@@ -56,12 +44,14 @@ class CardComponent extends React.Component {
       ) : null;
 
     return (
-      <Animated.View onLayout={this.handleLayout} style={{opacity: this.state.fadeAnim}}>
-        <View style={style}>
-          {showImage ? imageComponent : null}
-          <View>{children}</View>
+      <FadeIn>
+        <View onLayout={this.handleLayout}>
+          <View style={style}>
+            {showImage ? imageComponent : null}
+            <View>{children}</View>
+          </View>
         </View>
-      </Animated.View>
+      </FadeIn>
     );
   }
 }

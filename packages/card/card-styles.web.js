@@ -1,20 +1,8 @@
 import { View } from "react-native";
-import { keyframes } from "styled-components";
 import withResponsiveStyles from "@times-components/responsive-styles";
-
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-`;
 
 export const ImageContainer = withResponsiveStyles(View, {
   base: () => `
-    animation: ${fadeIn} 0.3s ease-in-out;
     flex-grow: 1;
     flex-shrink: 1 !important;
     margin-bottom: 10px;
@@ -28,7 +16,6 @@ export const ImageContainer = withResponsiveStyles(View, {
 
 export const SummaryContainer = withResponsiveStyles(View, {
   base: () => `
-    animation: ${fadeIn} 0.3s ease-in-out;
     flex-grow: 1;
     flex-shrink: 1 !important;
   `,

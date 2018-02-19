@@ -2,24 +2,13 @@ import React from "react";
 import { View, Text } from "react-native";
 import PropTypes from "prop-types";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import { keyframes } from "styled-components";
+import { FadeIn } from "@times-components/styleguide";
 import styles from "./author-head-container.styles";
 
 const { propTypes: { style: TextPropTypesStyle } } = Text;
 
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-`;
-
 const AuthorHeadWrapper = withResponsiveStyles(View, {
   base: () => `
-  animation: ${fadeIn} 0.3s ease-in-out;
     padding-top: 30px;
   `,
   mediumUp: () => `
@@ -27,15 +16,19 @@ const AuthorHeadWrapper = withResponsiveStyles(View, {
   `
 });
 
+console.log(FadeIn);
+
 const AuthorHeadContainer = props => (
-  <View style={styles.wrapper} pointerEvents="box-none">
-    <AuthorHeadWrapper
-      accessibilityRole="banner"
-      style={[styles.container, props.style]}
-    >
-      {props.children}
-    </AuthorHeadWrapper>
-  </View>
+  <FadeIn>
+    <View style={styles.wrapper} pointerEvents="box-none">
+      <AuthorHeadWrapper
+        accessibilityRole="banner"
+        style={[styles.container, props.style]}
+      >
+        {props.children}
+      </AuthorHeadWrapper>
+    </View>
+  </FadeIn>
 );
 
 AuthorHeadContainer.defaultProps = {
