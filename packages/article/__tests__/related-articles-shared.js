@@ -3,6 +3,8 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
+import context from "jest-context";
+import mockDate from "mockdate";
 
 import RelatedArticles from "../related-articles/related-articles";
 
@@ -24,6 +26,7 @@ export default () => {
   const realIntl = Intl;
 
   beforeEach(() => {
+    mockDate.set("1/1/2018");
     global.Intl = {
       DateTimeFormat: () => ({
         resolvedOptions: () => ({ timeZone: "Europe/London" })
@@ -32,6 +35,7 @@ export default () => {
   });
 
   afterEach(() => {
+    mockDate.reset();
     global.Intl = realIntl;
   });
 

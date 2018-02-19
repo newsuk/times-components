@@ -4010,18 +4010,16 @@ detox@5.8.2:
     ws "^1.1.1"
 
 dextrose@^1.4.6:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.5.0.tgz#79ced11b639d773a3198ac1dd7b5b9b1200ae88f"
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.4.6.tgz#cc733eb19787fe98c2e7b70607b5651c2cb18566"
   dependencies:
     aws-sdk "^2.179.0"
     babel-core "6.26.0"
     babel-preset-react-native "4.0.0"
     commander " 2.12.1"
-    nock "^9.1.9"
     npmlog "4.1.2"
     osnap "^1.1.0"
     pug "^2.0.0-rc.4"
-    request "^2.83.0"
     socket.io "^2.0.4"
     socket.io-client "^2.0.4"
     wd "1.4.1"
@@ -8048,6 +8046,10 @@ mkdirp@0.5.1, mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdi
 mkpath@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/mkpath/-/mkpath-0.1.0.tgz#7554a6f8d871834cc97b5462b122c4c124d6de91"
+
+mockdate@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/mockdate/-/mockdate-2.0.2.tgz#5ae0c0eaf8fe23e009cd01f9889b42c4f634af12"
 
 modify-values@^1.0.0:
   version "1.0.0"
