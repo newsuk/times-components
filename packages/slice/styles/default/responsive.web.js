@@ -1,13 +1,4 @@
-import { StyleSheet } from "react-native";
 import config from "@times-components/article/styles/responsive-config";
-
-export const SliceContainerStyles = () => ({
-  mediumUp: () => `
-    border-style: solid;
-    border-bottom-color: #dbdbdb;
-    border-bottom-width: ${StyleSheet.hairlineWidth}px;
-  `
-});
 
 export const ChildrenContainerStyles = childCount => ({
   base: () => `
@@ -25,16 +16,18 @@ export const ChildrenContainerStyles = childCount => ({
     const largeStyle = `
       padding-left: 10px;
       padding-right: 10px;
-      width: auto;
+      width: 100%;
     `;
 
     return `
       flex-direction: row;
       margin: 0 auto;
-      ${childCount >= 5 ? largeStyle : smallStyle}
+      ${childCount === 3 ? largeStyle : smallStyle}
     `;
   },
   wideUp: () => `
-    width: ${childCount >= 5 ? "auto" : config.wideBpWidth};
+    width: ${childCount === 3 ? "100%" : config.wideBpWidth};
   `
 });
+
+export default ChildrenContainerStyles;
