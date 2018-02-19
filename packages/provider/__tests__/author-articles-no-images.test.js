@@ -9,7 +9,7 @@ const renderComponent = child =>
     <MockedProvider mocks={makeArticleMocks({ pageSize: 5, delay: 0 })}>
       <AuthorArticlesNoImagesProvider
         slug="deborah-haynes"
-        pageSise={5}
+        pageSize={5}
         page={1}
         shortSummaryLength={220}
         longSummaryLength={360}

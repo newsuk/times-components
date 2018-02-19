@@ -9,7 +9,10 @@ import fixture from "../fixtures/article.json";
 const mocks = [
   {
     request: {
-      query: addTypenameToDocument(articleQuery)
+      query: addTypenameToDocument(articleQuery),
+      variables: {
+        id: "113e9875-b7bf-4dd7-ac99-dee231bf6e74"
+      }
     },
     result: fixture
   }

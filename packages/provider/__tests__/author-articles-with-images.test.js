@@ -11,7 +11,7 @@ const renderComponent = child =>
     >
       <AuthorArticlesWithImagesProvider
         slug="deborah-haynes"
-        pageSise={5}
+        pageSize={5}
         page={1}
         debounceTimeMs={0}
       >
