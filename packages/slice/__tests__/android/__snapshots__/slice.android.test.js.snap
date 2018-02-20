@@ -4,61 +4,361 @@ exports[`Slice test on android DEFAULT template renders a single child element 1
 <View
   style={
     Object {
-      "display": "flex",
-      "flexDirection": "row",
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "column",
+      "justifyContent": "flex-start",
+      "marginBottom": 10,
+      "marginTop": 10,
     }
   }
 >
   <View
+    key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
     style={
       Object {
-        "flexBasis": 0,
-        "flexGrow": 1,
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <View
+      style={
+        Array [
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          },
+          Object {
+            "paddingTop": 0,
+          },
+        ]
+      }
     >
-      Test text
-    </Text>
+      <ExampleChild
+        key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+      >
+        Test text 
+        08604618-fb0e-11e7-a987-7fcf5e9983dc
+      </ExampleChild>
+    </View>
+  </View>
+  <View
+    key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+    style={
+      Object {
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          },
+          Object {
+            "paddingTop": 10,
+          },
+        ]
+      }
+    >
+      <ExampleChild
+        key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+      >
+        Test text 
+        08604618-fb0e-11e7-a987-7fcf5e9983dd
+      </ExampleChild>
+    </View>
+  </View>
+  <View
+    key="08604618-fb0e-11e7-a987-7fcf5e9983de"
+    style={
+      Object {
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          },
+          Object {
+            "paddingTop": 10,
+          },
+        ]
+      }
+    >
+      <ExampleChild
+        key="08604618-fb0e-11e7-a987-7fcf5e9983de"
+      >
+        Test text 
+        08604618-fb0e-11e7-a987-7fcf5e9983de
+      </ExampleChild>
+    </View>
   </View>
 </View>
 `;
 
-exports[`Slice test on android DEFAULT template renders multiple child elements 1`] = `
+exports[`Slice test on android DEFAULT template renders three child elements 1`] = `
 <View
   style={
     Object {
-      "display": "flex",
-      "flexDirection": "row",
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "column",
+      "justifyContent": "flex-start",
+      "marginBottom": 10,
+      "marginTop": 10,
     }
   }
 >
   <View
+    key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
     style={
       Object {
-        "flexBasis": 0,
-        "flexGrow": 1,
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <View
+      style={
+        Array [
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          },
+          Object {
+            "paddingTop": 0,
+          },
+        ]
+      }
     >
-      Test text 1
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+      <ExampleChild
+        key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+      >
+        Test text 
+        08604618-fb0e-11e7-a987-7fcf5e9983dc
+      </ExampleChild>
+    </View>
+  </View>
+  <View
+    key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+    style={
+      Object {
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          },
+          Object {
+            "paddingTop": 10,
+          },
+        ]
+      }
     >
-      Test text 2
-    </Text>
+      <ExampleChild
+        key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+      >
+        Test text 
+        08604618-fb0e-11e7-a987-7fcf5e9983dd
+      </ExampleChild>
+    </View>
+  </View>
+  <View
+    key="08604618-fb0e-11e7-a987-7fcf5e9983de"
+    style={
+      Object {
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          },
+          Object {
+            "paddingTop": 10,
+          },
+        ]
+      }
+    >
+      <ExampleChild
+        key="08604618-fb0e-11e7-a987-7fcf5e9983de"
+      >
+        Test text 
+        08604618-fb0e-11e7-a987-7fcf5e9983de
+      </ExampleChild>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Slice test on android DEFAULT template renders two child elements 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "column",
+      "justifyContent": "flex-start",
+      "marginBottom": 10,
+      "marginTop": 10,
+    }
+  }
+>
+  <View
+    key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+    style={
+      Object {
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          },
+          Object {
+            "paddingTop": 0,
+          },
+        ]
+      }
+    >
+      <ExampleChild
+        key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+      >
+        Test text 
+        08604618-fb0e-11e7-a987-7fcf5e9983dc
+      </ExampleChild>
+    </View>
+  </View>
+  <View
+    key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+    style={
+      Object {
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          },
+          Object {
+            "paddingTop": 10,
+          },
+        ]
+      }
+    >
+      <ExampleChild
+        key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+      >
+        Test text 
+        08604618-fb0e-11e7-a987-7fcf5e9983dd
+      </ExampleChild>
+    </View>
+  </View>
+  <View
+    key="08604618-fb0e-11e7-a987-7fcf5e9983de"
+    style={
+      Object {
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          },
+          Object {
+            "paddingTop": 10,
+          },
+        ]
+      }
+    >
+      <ExampleChild
+        key="08604618-fb0e-11e7-a987-7fcf5e9983de"
+      >
+        Test text 
+        08604618-fb0e-11e7-a987-7fcf5e9983de
+      </ExampleChild>
+    </View>
   </View>
 </View>
 `;

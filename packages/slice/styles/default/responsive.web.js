@@ -1,40 +1,55 @@
 import { StyleSheet } from "react-native";
 import config from "@times-components/article/styles/responsive-config";
 
-export const SliceContainerStyles = () => ({
-  mediumUp: () => `
-    border-style: solid;
-    border-bottom-color: #dbdbdb;
-    border-bottom-width: ${StyleSheet.hairlineWidth}px;
-  `
-});
-
-export const ChildrenContainerStyles = childCount => ({
+export const ChildrenContainer = ({ childCount }) => ({
   base: () => `
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-bottom: 10px;
+    padding-top: 10px;
   `,
   mediumUp: () => {
     const smallStyle = `
-      padding-left: 0;
-      padding-right: 0;
       width: ${config.mediumBpWidth};
     `;
 
     const largeStyle = `
       padding-left: 10px;
       padding-right: 10px;
-      width: auto;
+      width: 100%;
     `;
 
     return `
       flex-direction: row;
       margin: 0 auto;
-      ${childCount >= 5 ? largeStyle : smallStyle}
+      ${childCount >= 3 ? largeStyle : smallStyle}
     `;
   },
   wideUp: () => `
-    width: ${childCount >= 5 ? "auto" : config.wideBpWidth};
+    width: ${childCount >= 3 ? "100%" : config.wideBpWidth};
+  `
+});
+
+export const ChildContainer = ({ isFirstChild }) => ({
+  base: () => `
+    border-style: solid;
+    border-bottom-color: #dbdbdb;
+    border-bottom-width: ${StyleSheet.hairlineWidth}px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: ${isFirstChild ? "0px" : "10px"};
+  `,
+  mediumUp: () => `
+    border: 0;
+    display: flex;
+    flex-basis: 0 !important;
+    flex-grow: 1;
+    min-height: 100%;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
   `
 });

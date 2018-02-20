@@ -1,10 +1,25 @@
+import { StyleSheet } from "react-native";
+
 export default {
   container: {
-    display: "flex",
-    flexDirection: "row"
+    alignItems: "center",
+    flex: 1,
+    flexDirection: "column",
+    justifyContent: "flex-start",
+    marginBottom: 10,
+    marginTop: 10
+  },
+  childContainer: {
+    borderStyle: "solid",
+    borderBottomColor: "#dbdbdb",
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    width: "100%"
   },
   child: {
-    flexBasis: 0,
-    flexGrow: 1
+    paddingBottom: 10,
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingTop: 10,
+    width: "100%"
   }
 };

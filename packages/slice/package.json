@@ -35,6 +35,7 @@
     "@storybook/react-native": "3.3.11",
     "@times-components/jest-configurator": "0.2.1",
     "dextrose": "^1.4.6",
+    "enzyme": "3.3.0",
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
