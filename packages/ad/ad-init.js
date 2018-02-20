@@ -213,8 +213,10 @@ const adInit = args => {
     },
     displayAds(gtag, pb, ap) {
       log("verbose", "displayAds");
-      this.applyPrebidTargeting(pb);
-      this.applyAmazonTargeting(ap);
+      if (platform === "web") {
+        this.applyPrebidTargeting(pb);
+        this.applyAmazonTargeting(ap);
+      }
       log("gpt", "googletag refresh called");
       gtag.pubads().refresh();
     },
@@ -251,6 +253,7 @@ const adInit = args => {
         adWrapper.innerHTML = `<div id="${containerID}"></div>`;
         adWrapper.style.display = "flex";
         adWrapper.style.alignItems = "center";
+        adWrapper.style.justifyContent = "center";
         adWrapper.style.margin = "0 auto";
         /* eslint-enable no-param-reassign */
 
@@ -345,7 +348,9 @@ const adInit = args => {
             section
           );
         } else {
-          window.googletag.pubads().refresh();
+          this.dfpReady(window.googletag)
+            .then(this.displayAds.bind(this, window.googletag))
+            .catch(err => console.error("error loading the ads", err)); // eslint-disable-line no-console
         }
         this.scheduleGPTConfiguration(window.googletag, pageTargeting);
       }
