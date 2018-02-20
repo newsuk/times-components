@@ -1,11 +1,11 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import { FadeIn } from "@times-components/styleguide";
+import { Animations } from "@times-components/styleguide";
 import styles from "./author-head-container.styles";
 
 const AuthorHeadContainer = props => (
-  <FadeIn>
+  <Animations.FadeIn>
     <View style={styles.wrapper} pointerEvents="box-none">
       <View
         accessibilityRole="banner"
@@ -14,7 +14,7 @@ const AuthorHeadContainer = props => (
         {props.children}
       </View>
     </View>
-  </FadeIn>
+  </Animations.FadeIn>
 );
 
 AuthorHeadContainer.propTypes = {

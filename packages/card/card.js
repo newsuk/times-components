@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { View, StyleSheet, ViewPropTypes } from "react-native";
 import Image from "@times-components/image";
-import { FadeIn } from "@times-components/styleguide";
+import { Animations } from "@times-components/styleguide";
 import Loading from "./card-loading";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
@@ -44,14 +44,14 @@ class CardComponent extends React.Component {
       ) : null;
 
     return (
-      <FadeIn>
+      <Animations.FadeIn>
         <View onLayout={this.handleLayout}>
           <View style={style}>
             {showImage ? imageComponent : null}
             <View>{children}</View>
           </View>
         </View>
-      </FadeIn>
+      </Animations.FadeIn>
     );
   }
 }

@@ -2,7 +2,7 @@ import { Platform, ScrollView, Text, View } from "react-native";
 import React from "react";
 import PropTypes from "prop-types";
 import { storiesOf } from "@storybook/react-native";
-import { sectionColours, FadeIn } from "./styleguide";
+import { Colours, Animations } from "./styleguide";
 
 const styles = {
   display: {
@@ -49,11 +49,11 @@ ColourBox.propTypes = {
 
 storiesOf("Helpers/Styleguide", module)
   .add("Section Colours", () => {
-    const colourBoxes = Object.keys(sectionColours).map(colourName => (
+    const colourBoxes = Object.keys(Colours.sectionColours).map(colourName => (
       <ColourBox
         key={colourName}
         name={colourName}
-        hex={sectionColours[colourName]}
+        hex={Colours.sectionColours[colourName]}
       />
     ));
 
@@ -64,9 +64,9 @@ storiesOf("Helpers/Styleguide", module)
   })
 
   .add("Animations", () => (
-    <FadeIn>
+    <Animations.FadeIn>
       <View style={styles.animationBox}>
         <Text style={styles.text}>Fade In</Text>
       </View>
-    </FadeIn>
+    </Animations.FadeIn>
   ));

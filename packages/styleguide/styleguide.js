@@ -1,4 +1,10 @@
 import sectionColours from "./colours/section";
 import FadeIn from "./animations";
 
-export { sectionColours, FadeIn };
+export const Colours = {
+  sectionColours
+};
+
+export const Animations = {
+  FadeIn
+};
