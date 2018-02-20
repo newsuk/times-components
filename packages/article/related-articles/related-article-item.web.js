@@ -59,7 +59,9 @@ const RelatedArticleItem = ({
             )}
             labelProps={{
               title: label,
-              color: Colours.sectionColours[section] || Colours.sectionColours.default
+              color:
+                Colours.sectionColours[section] ||
+                Colours.sectionColours.default
             }}
             content={() => <ArticleSummaryContent ast={summary} />}
           />
