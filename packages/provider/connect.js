@@ -30,13 +30,16 @@ export const makeGraphqlOptions = (
 const connectGraphql = (query, propsToVariables) => {
   const variableNames = getQueryVariables(query.definitions);
   const Wrapper = ({
-    data: { error, loading, refetch, ...result },
+    data: { error, loading, refetch, retry, ...result },
     children,
     ...props
   }) =>
     children({
       error,
-      refetch,
+      refetch: () => {
+        retry(); // FIXME: remove this after react-apollo fixes https://github.com/apollographql/apollo-client/issues/2513
+        refetch();
+      },
       isLoading: loading,
       ...result,
       ...props
