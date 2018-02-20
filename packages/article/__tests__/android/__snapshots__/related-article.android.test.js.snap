@@ -1587,7 +1587,7 @@ exports[`Related articles test on android Related articles renders three related
                         "textDecorationLine": "underline",
                       },
                       Object {
-                        "color": "#db133b",
+                        "color": "#DB133B",
                       },
                       Object {},
                     ]
@@ -2207,7 +2207,7 @@ exports[`Related articles test on android Related articles renders three related
                         "textDecorationLine": "underline",
                       },
                       Object {
-                        "color": "#6c6c69",
+                        "color": "#6C6C69",
                       },
                       Object {},
                     ]
