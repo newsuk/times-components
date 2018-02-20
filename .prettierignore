@@ -20,5 +20,6 @@ storybook-static
 *.sh
 *.log
 packages
+coverage
 settings.gradle
 build.gradle

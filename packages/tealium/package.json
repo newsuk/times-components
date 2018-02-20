@@ -4,10 +4,10 @@
   "description": "React storybook helpers for Times Components",
   "main": "tealium.js",
   "scripts": {
-    "test": "jest --config='./__tests__/web/jest.config.js' --ci --bail --coverage",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "lint": "eslint . && yarn prettier:diff"
+    "lint": "eslint . && yarn prettier:diff",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'"
   },
   "repository": {
     "type": "git",

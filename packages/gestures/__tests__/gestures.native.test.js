@@ -179,7 +179,7 @@ export default () => {
       expect(component.find("AnimatedComponent")).toMatchSnapshot();
     });
 
-    it("animate back to the start after release", async () => {
+    xit("animate back to the start after release", async () => {
       const component = touchAndMove(
         [
           {

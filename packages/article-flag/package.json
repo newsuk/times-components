@@ -4,13 +4,13 @@
   "description": "The article flag (sponsored, new, updated, etc)",
   "main": "article-flag",
   "scripts": {
-    "test:android": "jest --config='./__tests__/android/jest.config.js'",
-    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
-    "test:web": "jest --config='./__tests__/web/jest.config.js'",
-    "test": "yarn test:android --ci --bail --coverage && yarn test:ios --ci --bail --coverage && yarn test:web --ci --bail --coverage",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
+    "test:android": "jest --config='./__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
     "dextrose-stories": "dextrose generate-stories $(pwd)",
     "dextrose-clean": "dextrose clean-stories $(pwd)"
   },
