@@ -1,5 +1,5 @@
 import pick from "lodash.pick";
-import { graphql } from "react-apollo/index";
+import { graphql } from "react-apollo-temp";
 import PropTypes from "prop-types";
 import withDebounce from "./debounce";
 
