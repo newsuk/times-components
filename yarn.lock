@@ -628,7 +628,7 @@ apollo-link@1.0.7:
     apollo-utilities "^1.0.0"
     zen-observable "^0.6.0"
 
-apollo-link@^1.0.0, apollo-link@^1.0.6, apollo-link@^1.0.7, apollo-link@^1.1.0:
+apollo-link@^1.0.0, apollo-link@^1.0.7, apollo-link@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/apollo-link/-/apollo-link-1.1.0.tgz#9d573b16387ee0d8e147b1f319e42c8c562f18f7"
   dependencies:
@@ -3960,8 +3960,8 @@ detox@5.8.2:
     ws "^1.1.1"
 
 dextrose@^1.4.6:
-  version "1.4.6"
-  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.4.6.tgz#cc733eb19787fe98c2e7b70607b5651c2cb18566"
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.4.7.tgz#f4a4c4640321d5f41aaaa1c19dc9fcef1f413b71"
   dependencies:
     aws-sdk "^2.179.0"
     babel-core "6.26.0"
@@ -5855,7 +5855,7 @@ hoist-non-react-statics@2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.3.1.tgz#343db84c6018c650778898240135a1420ee22ce0"
 
-hoist-non-react-statics@^2.2.0, hoist-non-react-statics@^2.3.1:
+hoist-non-react-statics@^2.2.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.0.tgz#d2ca2dfc19c5a91c5a6615ce8e564ef0347e2a40"
 
@@ -7513,10 +7513,6 @@ lodash@4.16.2:
 lodash@4.17.2:
   version "4.17.2"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.2.tgz#34a3055babe04ce42467b607d700072c7ff6bf42"
-
-lodash@4.17.4:
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
 lodash@^3.10.1, lodash@^3.5.0:
   version "3.10.1"
@@ -9465,17 +9461,6 @@ react-apollo-temp@2.0.5:
     lodash.flowright "^3.5.0"
     lodash.pick "^4.4.0"
     prop-types "^15.5.8"
-
-react-apollo@2.1.0-beta.2:
-  version "2.1.0-beta.2"
-  resolved "https://registry.yarnpkg.com/react-apollo/-/react-apollo-2.1.0-beta.2.tgz#3bf4ca91f27bc602d197933ba54fdab0115b7316"
-  dependencies:
-    apollo-link "^1.0.6"
-    fbjs "^0.8.16"
-    hoist-non-react-statics "^2.3.1"
-    invariant "^2.2.2"
-    lodash "4.17.4"
-    prop-types "^15.6.0"
 
 react-art@^16.2.0:
   version "16.2.0"
