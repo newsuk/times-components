@@ -10,7 +10,13 @@ const Slice = ({ children, template }) => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.child}>{children}</View>
+      {children.map((child, index) => (
+        <View key={child.key} style={styles.childContainer}>
+          <View style={[styles.child, { paddingTop: index === 0 ? 0 : 10 }]}>
+            {child}
+          </View>
+        </View>
+      ))}
     </View>
   );
 };

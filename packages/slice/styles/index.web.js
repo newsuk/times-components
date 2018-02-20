@@ -28,6 +28,7 @@ export const Separator = withResponsiveStyles(View, {
       min-height: auto;
     `
 });
+Separator.displayName = "Separator";
 
 export const SliceContainer = withResponsiveStyles(View, {
   mediumUp: () => `
@@ -36,3 +37,4 @@ export const SliceContainer = withResponsiveStyles(View, {
     border-bottom-width: ${StyleSheet.hairlineWidth}px;
   `
 });
+SliceContainer.displayName = "SliceContainer";

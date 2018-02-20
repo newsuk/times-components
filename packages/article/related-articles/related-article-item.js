@@ -30,7 +30,7 @@ const RelatedArticleItem = ({ article, onPress }) => {
 
   return (
     <Link url={url} onPress={onPress}>
-      <View style={styles.container}>
+      <View>
         {imageUri ? (
           <View style={styles.imageContainer}>
             <Image uri={`${imageUri}&resize=996`} aspectRatio={16 / 9} />

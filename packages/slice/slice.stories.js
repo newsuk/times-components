@@ -1,12 +1,11 @@
-import { View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import Slice from "./slice";
 
-const moduleStyle = {
-  flex: 1,
+const moduleStyle = StyleSheet.create({
   height: 150
-};
+});
 
 const colours = [
   { backgroundColor: "blue", key: 1 },

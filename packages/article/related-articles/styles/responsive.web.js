@@ -24,19 +24,11 @@ export const StyledRelatedArticlesHeading = withResponsiveStyles(View, {
 export const RelatedArticleContainer = articleCount =>
   withResponsiveStyles(View, {
     base: () => `
-    border-style: solid;
-    border-bottom-color: #dbdbdb;
-    border-bottom-width: ${StyleSheet.hairlineWidth}px;
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
-    padding-right: 10px;
   `,
     mediumUp: () => `
-      border: 0;
       flex-direction: ${articleCount === 1 ? "row" : ""};
-      padding-left: 0;
-      padding-right: 0;
   `
   });
 
