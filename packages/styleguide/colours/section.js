@@ -6,6 +6,7 @@ const sectionColours = {
   Comment: "#850029",
   culture: "#7B0046",
   defcon: "#FF1D25",
+  default: "#333333",
   driving: "#C04605",
   focus: "#CC0000",
   gardening: "#00313B",
