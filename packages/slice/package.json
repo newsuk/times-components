@@ -1,6 +1,6 @@
 {
   "name": "@times-components/slice",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "Slice",
   "main": "slice",
   "scripts": {
@@ -33,7 +33,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.3.11",
-    "@times-components/jest-configurator": "0.2.0",
+    "@times-components/jest-configurator": "0.2.1",
     "dextrose": "^1.4.6",
     "eslint": "4.9.0",
     "jest": "21.2.1",
@@ -44,8 +44,8 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/article": "0.38.0",
-    "@times-components/responsive-styles": "0.2.19",
+    "@times-components/article": "0.38.1",
+    "@times-components/responsive-styles": "0.2.20",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
