@@ -13,6 +13,7 @@ const adInit = args => {
     renderComplete,
     platform
   } = args;
+
   const logTypes = ["amazon", "gpt", "pbjs", "verbose"];
   const log = (type, message) => {
     if (!logTypes.includes(type)) return;
@@ -193,7 +194,7 @@ const adInit = args => {
         pb.enableSendAllBids();
         pb.setTargetingForGPTAsync();
       } catch (ex) {
-        console.error("Set Targeting for GTP Async with prebid failed:", ex);
+        console.error("Set Targeting for GTP Async with prebid failed:", ex); // eslint-disable-line no-console
       }
     },
     applyAmazonTargeting(ap) {
@@ -202,10 +203,12 @@ const adInit = args => {
           ap.setDisplayBids();
         }
       } catch (exception) {
+        /* eslint-disable no-console */
         console.error(
           "Set Targeting for GPT Async with amazon failed:",
           exception
         );
+        /* eslint-enable no-console */
       }
     },
     displayAds(gtag, pb, ap) {
@@ -310,7 +313,7 @@ const adInit = args => {
             window.apstag
           )
         )
-        .catch(err => console.error("error loading the ads", err));
+        .catch(err => console.error("error loading the ads", err)); // eslint-disable-line no-console
     },
     init() {
       const {
@@ -333,24 +336,28 @@ const adInit = args => {
         this.scheduleGPTAction(window.googletag, "processing", () =>
           log("gpt", "loaded, processing the queue")
         );
-
-        this.initializePrebid(prebidConfig, slots, networkId, adUnit, section);
-        // if (platform === 'web') {
-        //   initializePrebid(prebidConfig, slots, networkId, adUnit, section);
-        // } else {
-        //   gtag.pubads().refresh();
-        // }
+        if (platform === "web") {
+          this.initializePrebid(
+            prebidConfig,
+            slots,
+            networkId,
+            adUnit,
+            section
+          );
+        } else {
+          window.googletag.pubads().refresh();
+        }
         this.scheduleGPTConfiguration(window.googletag, pageTargeting);
       }
-        this.scheduleSlotDefine(
-          window.googletag,
-          el,
-          networkId,
-          adUnit,
-          section,
-          slotConfig,
-          slotTargeting
-        );
+      this.scheduleSlotDefine(
+        window.googletag,
+        el,
+        networkId,
+        adUnit,
+        section,
+        slotConfig,
+        slotTargeting
+      );
     },
     scriptsLoaded() {
       // at this point all the scripts are loaded (eg: pbjs, googletag, apstag)

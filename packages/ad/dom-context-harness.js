@@ -50,7 +50,8 @@ const makeHarness = ({
           data,
           window,
           document,
-          renderComplete
+          renderComplete,
+          platform
         });
         if (initialiser.init) {
           initialiser.init();

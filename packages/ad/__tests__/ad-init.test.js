@@ -194,12 +194,12 @@ describe("Ad init", () => {
   });
 
   it.only("setup and init Amazon apstag", () => {
+    /* eslint no-underscore-dangle: ["error", { "allow": ["_Q"] }] */
     expect(window.apstag).toEqual(undefined);
     init.setupApstag();
-    expect(window.apstag._Q).toEqual([]); // eslint-disable-line no-underscore-dangle
+    expect(window.apstag._Q).toEqual([]);
     init.configureApstag("3360", 3000);
     expect(window.apstag._Q).toEqual([
-      // eslint-disable-line no-underscore-dangle
       ["i", { pubID: "3360", adServer: "googletag", bidTimeout: 3000 }]
     ]);
   });

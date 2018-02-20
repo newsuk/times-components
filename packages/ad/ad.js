@@ -1,7 +1,13 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Subscriber } from "react-broadcast";
-import { View, ViewPropTypes, Dimensions, StyleSheet } from "react-native";
+import {
+  View,
+  ViewPropTypes,
+  Dimensions,
+  StyleSheet,
+  Platform
+} from "react-native";
 import { getSlotConfig, getSizeMaps } from "./generate-config";
 import { prebidConfig, getPrebidSlotConfig } from "./prebid-config";
 import Placeholder from "./placeholder";
@@ -41,7 +47,6 @@ class Ad extends Component {
   };
 
   renderAd(adConfig) {
-    console.log("ad is", this.props.pos);
     const data = {
       config: this.config,
       prebidConfig: this.prebidConfig,
@@ -82,6 +87,8 @@ class Ad extends Component {
         uri: "https://www.googletagservices.com/tag/js/gpt.js"
       }
     );
+
+    const platform = Platform.OS === "web" ? "web" : "native";
     const webviewComponent = (
       <DOMContext
         data={data}
@@ -90,6 +97,7 @@ class Ad extends Component {
         // globalNames={["googletag", "gs_channels", "pbjs", "apstag"]}
         baseUrl={this.props.baseUrl}
         init={adInit}
+        platform={platform}
         onRenderComplete={this.setAdReady}
         {...sizeProps}
       />

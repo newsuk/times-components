@@ -6,8 +6,7 @@ import { propTypes, defaultProps } from "./dom-context-prop-types";
 /* eslint-env browser */
 export default class DOMContext extends React.PureComponent {
   componentDidMount() {
-    const { scriptUris, init, data, id } = this.props;
-
+    const { scriptUris, globalNames, init, data, id, platform } = this.props;
     const harness = makeHarness({
       el: this.div,
       eventCallback: this.eventCallback,
@@ -15,13 +14,14 @@ export default class DOMContext extends React.PureComponent {
       window,
       document,
       scriptUris,
-      // TODO: can we safetely remove the global concept???
-      // globalNames,
+      globalNames,
       init,
-      data
+      data,
+      platform
     });
 
     this.harnessExecuting = true;
+
     harness.execute();
     this.harnessExecuting = false;
     this.processEventQueue();
