@@ -17,9 +17,3 @@ script:
   - ./lib/run_jobs.sh
 after_success:
   - ./lib/publish.sh
-deploy:
-  skip_cleanup: true
-  provider: script
-  script: lib/publish_storybook.sh
-  on:
-    branch: master

@@ -6,6 +6,12 @@ echo "Running publish script"
 echo $(printf "TRAVIS_BRANCH %s" $TRAVIS_BRANCH)
 echo $(printf "TRAVIS_PULL_REQUEST %s" $TRAVIS_PULL_REQUEST)
 
+if [[ $JOB_TYPE != 'rest' ]]
+then
+  echo "We only publish for the rest job"
+  exit 0
+fi
+
 if [[ $TRAVIS_BRANCH != 'master' ]]
 then
   echo "Not on master"
@@ -60,3 +66,5 @@ lerna publish --conventional-commits --yes --concurrency=1 --exact -m "$MESSAGE"
 # push above changes to git
 echo "Pushing to master"
 git push origin master --tags --quiet > /dev/null 2>&1
+
+./lib/publish_storybook.sh
