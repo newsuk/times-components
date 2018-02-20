@@ -127,7 +127,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
             "textDecorationLine": "underline",
           },
           Object {
-            "color": "#13354e",
+            "color": "#13354E",
           },
           Object {},
         ]
@@ -345,7 +345,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
             "textDecorationLine": "underline",
           },
           Object {
-            "color": "#7b0046",
+            "color": "#7B0046",
           },
           Object {},
         ]
@@ -777,7 +777,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
             "textDecorationLine": "underline",
           },
           Object {
-            "color": "#db133b",
+            "color": "#DB133B",
           },
           Object {},
         ]
@@ -973,7 +973,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
             "textDecorationLine": "underline",
           },
           Object {
-            "color": "#005b8d",
+            "color": "#005B8D",
           },
           Object {},
         ]
@@ -1165,7 +1165,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
             "textDecorationLine": "underline",
           },
           Object {
-            "color": "#13354e",
+            "color": "#13354E",
           },
           Object {},
         ]

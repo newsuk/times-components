@@ -14,7 +14,7 @@ exports[`Article Byline test on android renders correctly with a single author 1
         "textDecorationLine": "underline",
       },
       Object {
-        "color": "#13354e",
+        "color": "#13354E",
       },
       Object {},
     ]
@@ -75,7 +75,7 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#13354e",
+          "color": "#13354E",
         },
         Object {},
       ]
@@ -103,7 +103,7 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#13354e",
+          "color": "#13354E",
         },
         Object {},
       ]
@@ -131,7 +131,7 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#13354e",
+          "color": "#13354E",
         },
         Object {},
       ]
@@ -157,7 +157,7 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#13354e",
+          "color": "#13354E",
         },
         Object {},
       ]
@@ -185,7 +185,7 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#13354e",
+          "color": "#13354E",
         },
         Object {},
       ]
@@ -213,7 +213,7 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#13354e",
+          "color": "#13354E",
         },
         Object {},
       ]
@@ -238,7 +238,7 @@ exports[`Article Byline test on android renders correctly with styles 1`] = `
         "textDecorationLine": "underline",
       },
       Object {
-        "color": "#13354e",
+        "color": "#13354E",
       },
       Object {
         "color": "red",
@@ -273,7 +273,7 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#13354e",
+          "color": "#13354E",
         },
         Object {},
       ]
@@ -299,7 +299,7 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#13354e",
+          "color": "#13354E",
         },
         Object {},
       ]
