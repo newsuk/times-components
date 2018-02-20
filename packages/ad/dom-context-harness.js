@@ -14,6 +14,7 @@ const makeHarness = ({
   init,
   data,
   scriptUris,
+  platform,
   // TODO: can we safetely remove the global concept???
   // globalNames,
   eventCallback
@@ -168,6 +169,7 @@ const makeHarness = ({
           // globals,
           renderComplete,
           window,
+          platform
           // TODO: can we safetely remove the document???
           // document
         });

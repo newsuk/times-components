@@ -65,7 +65,7 @@ storiesOf("Advertisement", module)
     withOpenInNewWindow(
       <View>
         <Ad section="news" pos="ad-header" contextUrl={articleUrl} />
-        <Ad section="news" pos="inline-ad" contextUrl={articleUrl} />
+        <Ad section="news" pos="ad-article-inline" contextUrl={articleUrl} />
       </View>
     )
   )

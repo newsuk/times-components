@@ -29,7 +29,9 @@ class Ad extends Component {
 
     this.slots = [];
     this.slotsForPrebid = ["ad-header", "ad-article-inline"];
-    this.slotsForPrebid.map(slot => this.slots.push(getPrebidSlotConfig(slot, "article", width)));
+    this.slotsForPrebid.map(slot =>
+      this.slots.push(getPrebidSlotConfig(slot, "article", width))
+    );
   }
 
   setAdReady = () => {
@@ -39,6 +41,7 @@ class Ad extends Component {
   };
 
   renderAd(adConfig) {
+    console.log("ad is", this.props.pos);
     const data = {
       config: this.config,
       prebidConfig: this.prebidConfig,

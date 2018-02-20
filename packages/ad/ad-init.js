@@ -10,7 +10,8 @@ const adInit = args => {
     window,
     // TODO: can we safetely remove globals?
     // globals, // : { googletag, gs_channels = "DEFAULT", pbjs, apstag }, // eslint-disable-line camelcase
-    renderComplete
+    renderComplete,
+    platform
   } = args;
   const logTypes = ["amazon", "gpt", "pbjs", "verbose"];
   const log = (type, message) => {
@@ -272,6 +273,45 @@ const adInit = args => {
       window.pbjs = {};
       window.pbjs.que = window.pbjs.que || [];
     },
+    initializePrebid(prebidConfig, slots, networkId, adUnit, section) {
+      this.schedulePrebidAction(window.pbjs, "processing", () =>
+        log("pbjs", "loaded, processing the queue")
+      );
+      const amazonAccountID = prebidConfig.bidders.amazon.accountId;
+      const biddingActions = [];
+      this.configurePrebid(window.pbjs, prebidConfig);
+      // Enable Amazon Bidding
+      if (amazonAccountID) {
+        this.configureApstag();
+        this.initApstag(amazonAccountID, prebidConfig.timeout);
+        // FIXME: at the moment we configure the amazon bids with just one slot (the first one)
+        // because we call init just one time (window.initCalled)
+        biddingActions.push(
+          this.scheduleRequestAmazonBids(
+            slots,
+            amazonAccountID,
+            networkId,
+            adUnit,
+            section
+          )
+        );
+      }
+
+      biddingActions.push(
+        this.dfpReady(window.googletag),
+        this.requestPrebidBids(window.pbjs, slots)
+      );
+      Promise.all(biddingActions)
+        .then(
+          this.displayAds.bind(
+            this,
+            window.googletag,
+            window.pbjs,
+            window.apstag
+          )
+        )
+        .catch(err => console.error("error loading the ads", err));
+    },
     init() {
       const {
         config: slotConfig,
@@ -293,53 +333,24 @@ const adInit = args => {
         this.scheduleGPTAction(window.googletag, "processing", () =>
           log("gpt", "loaded, processing the queue")
         );
-        this.schedulePrebidAction(window.pbjs, "processing", () =>
-          log("pbjs", "loaded, processing the queue")
-        );
-        const amazonAccountID = prebidConfig.bidders.amazon.accountId;
-        const biddingActions = [];
-        this.configurePrebid(window.pbjs, prebidConfig);
-        // Enable Amazon Bidding
-        if (amazonAccountID) {
-          this.configureApstag();
-          this.initApstag(amazonAccountID, prebidConfig.timeout);
-          // FIXME: at the moment we configure the amazon bids with just one slot (the first one)
-          // because we call init just one time (window.initCalled)
-          biddingActions.push(
-            this.scheduleRequestAmazonBids(
-              slots,
-              amazonAccountID,
-              networkId,
-              adUnit,
-              section
-            )
-          );
-        }
+
+        this.initializePrebid(prebidConfig, slots, networkId, adUnit, section);
+        // if (platform === 'web') {
+        //   initializePrebid(prebidConfig, slots, networkId, adUnit, section);
+        // } else {
+        //   gtag.pubads().refresh();
+        // }
         this.scheduleGPTConfiguration(window.googletag, pageTargeting);
-        biddingActions.push(
-          this.dfpReady(window.googletag),
-          this.requestPrebidBids(window.pbjs, slots)
-        );
-        Promise.all(biddingActions)
-          .then(
-            this.displayAds.bind(
-              this,
-              window.googletag,
-              window.pbjs,
-              window.apstag
-            )
-          )
-          .catch(err => console.error("error loading the ads", err));
       }
-      this.scheduleSlotDefine(
-        window.googletag,
-        el,
-        networkId,
-        adUnit,
-        section,
-        slotConfig,
-        slotTargeting
-      );
+        this.scheduleSlotDefine(
+          window.googletag,
+          el,
+          networkId,
+          adUnit,
+          section,
+          slotConfig,
+          slotTargeting
+        );
     },
     scriptsLoaded() {
       // at this point all the scripts are loaded (eg: pbjs, googletag, apstag)
