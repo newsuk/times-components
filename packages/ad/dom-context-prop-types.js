@@ -1,9 +1,15 @@
 import PropTypes from "prop-types";
 
+const script = PropTypes.shape({
+  uri: PropTypes.string,
+  timeout: PropTypes.number,
+  canRequestFail: PropTypes.bool
+});
+
 export const propTypes = {
   width: PropTypes.number,
   height: PropTypes.number,
-  scriptUris: PropTypes.arrayOf(PropTypes.string),
+  scriptUris: PropTypes.arrayOf(script),
   globalNames: PropTypes.arrayOf(PropTypes.string),
   init: PropTypes.func.isRequired,
   onRenderComplete: PropTypes.func,

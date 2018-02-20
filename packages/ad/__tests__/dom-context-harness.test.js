@@ -1,5 +1,5 @@
 import { jsdom } from "jsdom";
-
+import { advance } from "@times-components/utils/faketime";
 import _makeHarness from "../dom-context-harness";
 import { expectFunctionToBeSerialisable } from "./check-serialisable-function";
 
@@ -12,10 +12,18 @@ describe("DOMContext harness", () => {
     window = document.defaultView;
   });
 
-  const fireLoadEventFor = source => {
+  const fireEventFor = (evt, source) => {
     Array.from(document.getElementsByTagName("script"))
       .find(el => el.src === source)
-      .dispatchEvent(new window.Event("load"));
+      .dispatchEvent(new window.Event(evt));
+  };
+
+  const fireLoadEventFor = source => {
+    fireEventFor("load", source);
+  };
+
+  const fireErrorEventFor = source => {
+    fireEventFor("error", source);
   };
 
   const makeHarness = args =>
@@ -26,6 +34,7 @@ describe("DOMContext harness", () => {
       id: "dom-context-id",
       scriptUris: [],
       data: {},
+      eventCallback: () => {},
       init: () => {},
       globalNames: [],
       ...args
@@ -37,7 +46,10 @@ describe("DOMContext harness", () => {
 
   it("injects scripts into the document head", () => {
     const harness = makeHarness({
-      scriptUris: ["a", "b"]
+      scriptUris: [
+        { uri: "a", canRequestFail: true },
+        { uri: "b", canRequestFail: true }
+      ]
     });
     harness.execute();
     const scripts = document.head.getElementsByTagName("script");
@@ -47,11 +59,17 @@ describe("DOMContext harness", () => {
 
   it("does not inject script twice in document head", () => {
     const harness = makeHarness({
-      scriptUris: ["a", "b"]
+      scriptUris: [
+        { uri: "a", canRequestFail: true },
+        { uri: "b", canRequestFail: true }
+      ]
     });
     harness.execute();
     const anotherHarness = makeHarness({
-      scriptUris: ["a", "c"]
+      scriptUris: [
+        { uri: "a", canRequestFail: true },
+        { uri: "c", canRequestFail: true }
+      ]
     });
     anotherHarness.execute();
     const scripts = document.head.getElementsByTagName("script");
@@ -60,7 +78,6 @@ describe("DOMContext harness", () => {
   });
 
   it("will invoke the execute hook returned by the init function", () => {
-    window.myGlobalVariable = "myGlobalValue";
     const execute = jest.fn();
     const init = jest.fn().mockImplementation(() => ({ execute }));
 
@@ -104,68 +121,61 @@ describe("DOMContext harness", () => {
     const eventCallback = jest.fn();
     const harness = makeHarness({
       document: null, // will cause error on DOM manipulation
-      scriptUris: ["a"],
+      scriptUris: [{ uri: "a" }],
       eventCallback
     });
     harness.execute();
     expect(eventCallback).toHaveBeenCalledWith("error", expect.any(String));
   });
 
-  it("invokes init function after globals are loaded", () => {
-    window.first = "firstValue";
+  it("invokes init function after the scripts are loaded", () => {
     const init = jest.fn();
     const harness = makeHarness({
       init,
-      scriptUris: ["providesSecond"],
-      globalNames: ["first", "second"]
+      scriptUris: [{ uri: "providesSecond" }]
     });
 
     harness.execute();
-
-    window.second = "secondValue";
 
     fireLoadEventFor("providesSecond");
 
     expect(init).toHaveBeenCalledTimes(1);
   });
 
-  it("doesn't invoke init function if globals aren't loaded", () => {
+  it("doesn't invoke init function if the scripts aren't loaded", () => {
     const init = jest.fn();
+    const eventCallback = jest.fn();
     const harness = makeHarness({
       init,
-      scriptUris: ["willNeverLoad"],
-      globalNames: ["requiredVar"]
+      scriptUris: [{ uri: "willNeverLoad" }],
+      eventCallback
     });
 
     harness.execute();
-    expect(init).toHaveBeenCalledTimes(0);
+    expect(init).not.toBeCalled();
   });
 
-  it("invokes the init function immediately if all globals are provided before scripts load", () => {
-    window.requiredVar = "present";
+  it("invokes init function if the script has an expired timeout", async () => {
     const init = jest.fn();
     const harness = makeHarness({
       init,
-      scriptUris: ["first"],
-      globalNames: ["requiredVar"]
+      scriptUris: [{ uri: "providesSecond", timeout: 200 }]
     });
-
     harness.execute();
+    expect(init).not.toBeCalled();
+    await advance(200);
     expect(init).toHaveBeenCalledTimes(1);
   });
 
-  it("does not invoke the init function twice when multiple scripts load after globals are provided", () => {
-    window.requiredVar = "present";
+  it("invokes init function if the script can fail", () => {
     const init = jest.fn();
     const harness = makeHarness({
       init,
-      scriptUris: ["first"],
-      globalNames: ["requiredVar"]
+      scriptUris: [{ uri: "providesSecond", canRequestFail: true }]
     });
-
     harness.execute();
 
-    fireLoadEventFor("first");
+    fireErrorEventFor("providesSecond");
 
     expect(init).toHaveBeenCalledTimes(1);
   });
@@ -197,17 +207,5 @@ describe("DOMContext harness", () => {
     harness.execute();
 
     expect(eventCallback).toHaveBeenCalledTimes(1);
-  });
-
-  it("Allows the renderComplete callback to be invoked asychronously", done => {
-    const harness = makeHarness({
-      init: ({ renderComplete }) => setTimeout(renderComplete, 0),
-      eventCallback: event => {
-        expect(event).toEqual("renderComplete");
-        done();
-      }
-    });
-
-    harness.execute();
   });
 });

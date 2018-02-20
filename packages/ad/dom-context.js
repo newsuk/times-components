@@ -27,13 +27,15 @@ export default class DOMContext extends PureComponent {
       // don't try and process postMessage events from 3rd party scripts
       return;
     }
-    const event = JSON.parse(json);
-    if (event.type === "error" && process.env.NODE_ENV !== "production") {
+    const { type, detail } = JSON.parse(json);
+    if (type === "error" && process.env.NODE_ENV !== "production") {
       // don't throw in production because 3rd party scripts in WebView can error
-      throw new Error(`Error inside WebView: ${event.detail}`);
+      throw new Error(`Error inside WebView: ${detail}`);
     }
-    if (event.type === "renderComplete") {
+    if (type === "renderComplete") {
       this.props.onRenderComplete();
+    } else if (type === "log") {
+      console.log(detail); // eslint-disable-line no-console
     }
   };
 

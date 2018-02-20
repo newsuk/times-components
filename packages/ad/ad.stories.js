@@ -3,11 +3,8 @@ import React from "react";
 import { Text, ScrollView, View } from "react-native";
 import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react-native";
-import stateful from "react-stateful-fn";
-
 import Ad, { AdComposer } from "./ad";
 import Placeholder from "./placeholder";
-
 import NativeDOMContext from "./dom-context";
 import WebDOMContext from "./dom-context.web";
 
@@ -17,6 +14,8 @@ if (window.document) {
 } else {
   DOMContext = NativeDOMContext;
 }
+const articleUrl =
+  "https://www.thetimes.co.uk/article/fdefc7fa-0ac4-11e8-a5b3-3d239643ad40";
 
 const withOpenInNewWindow = children => {
   const link = typeof document === "object" &&
@@ -52,7 +51,19 @@ storiesOf("Primitives/Advertisement", module)
       </View>
     )
   )
-  .add("render one ad and some text - inline", () =>
+  .add("ad with grapeshot", () =>
+    withOpenInNewWindow(
+      <View>
+        <Ad
+          section="article"
+          code="ad-header"
+          pos="header"
+          contextUrl={articleUrl}
+        />
+      </View>
+    )
+  )
+  .add("render one ad and some text", () =>
     withOpenInNewWindow(
       <ScrollView>
         <Text style={{ color: "blue" }}>
@@ -102,23 +113,6 @@ storiesOf("Primitives/Advertisement", module)
       </ScrollView>
     )
   )
-  .add("remove and re-add ads", () => {
-    const Component = stateful((props, { show }, { setState }) =>
-      withOpenInNewWindow(
-        <ScrollView>
-          <Ad pos="header" section="article" />
-          <Text
-            style={{ color: "blue", textDecoration: "underline" }}
-            onPress={() => setState({ show: !show })}
-          >
-            {show ? "hide second ad" : "show second ad"}.
-          </Text>
-          {show && <Ad pos="inline-ad" section="article" />}
-        </ScrollView>
-      )
-    );
-    return <Component />;
-  })
   .add("Placeholder (300x250 - MPU)", () => (
     <Placeholder width={300} height={250} />
   ))
