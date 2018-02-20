@@ -58,7 +58,7 @@ describe("provider execution order tests", () => {
     expect(getRenderedQueries(link)).toMatchSnapshot();
   });
 
-  it.skip("should not render old resolved query while debounce", async () => {
+  it("should not render old resolved query while debounce", async () => {
     const { link, setProps } = providerTester(AuthorQueryResolver, Debounced, {
       slug: "1"
     });
