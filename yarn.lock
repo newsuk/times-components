@@ -9678,8 +9678,8 @@ react-clone-referenced-element@^1.0.1:
   resolved "https://registry.yarnpkg.com/react-clone-referenced-element/-/react-clone-referenced-element-1.0.1.tgz#2bba8c69404c5e4a944398600bcc4c941f860682"
 
 react-color@^2.11.4:
-  version "2.13.8"
-  resolved "https://registry.yarnpkg.com/react-color/-/react-color-2.13.8.tgz#bcc58f79a722b9bfc37c402e68cd18f26970aee4"
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/react-color/-/react-color-2.14.0.tgz#5828a11c034aa0939befbd888a066ee37d8c3cc2"
   dependencies:
     lodash "^4.0.1"
     material-colors "^1.2.1"
