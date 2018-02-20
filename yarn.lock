@@ -323,6 +323,14 @@
     react-treebeard "^2.1.0"
     redux "^3.7.2"
 
+"@times-components/article-label@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@times-components/article-label/-/article-label-0.7.0.tgz#26f1b016aaaf6d838255144a4e40cbf9e0f62dd6"
+  dependencies:
+    "@times-components/styleguide" "0.2.0"
+    lodash.invert "4.3.0"
+    prop-types "15.6.0"
+
 "@times-components/fructose@3.1.14":
   version "3.1.14"
   resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.1.14.tgz#a31be85b619132431a46774f970b4146927156c1"
