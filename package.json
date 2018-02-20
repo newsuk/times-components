@@ -101,6 +101,7 @@
     "@storybook/addon-actions": "3.3.11",
     "@storybook/addon-info": "3.3.11",
     "@storybook/addon-options": "3.3.11",
+    "@storybook/addon-knobs": "3.3.13",
     "@storybook/addons": "3.3.11",
     "@storybook/react": "3.3.11",
     "@storybook/react-native": "3.3.11",

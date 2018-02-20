@@ -542,6 +542,7 @@
         {
           "id": "ea16d744-cb4a-11e4-a202-50ac5def393a",
           "headline": "TMS: Pratchett’s law of the jungle - Disable Saving",
+          "section": "sport",
           "byline": [
             {
               "name": "inline",
@@ -764,6 +765,7 @@
           "id": "b09fc422-cb53-11e4-81dd-064fe933cd41",
           "headline":
             "Rise of centenarian drivers as elderly push on - V5 Premoderated Comments",
+          "section": "comment",
           "byline": [
             {
               "name": "inline",
@@ -910,6 +912,7 @@
           "id": "8557a3d2-cb55-11e4-81dd-064fe933cd41",
           "headline":
             "Syndicated url: At long last, a burial place fit for a king",
+          "section": "thedish",
           "byline": [
             {
               "name": "inline",

@@ -5,10 +5,9 @@ import {
   configure,
   addDecorator
 } from "@storybook/react-native";
-import { BarSpacingDecorator } from "@times-components/storybook/decorators";
-import { WhiteBgColorDecorator } from "@times-components/storybook/decorators";
+import { withKnobs } from '@storybook/addon-knobs';
+import { BarSpacingDecorator, WhiteBgColorDecorator } from "@times-components/storybook";
 import { loadStories } from "./story-loader";
-import "./addons";
 
 if (Platform.OS === "ios") {
   addDecorator(BarSpacingDecorator);
@@ -17,6 +16,8 @@ if (Platform.OS === "ios") {
 if (Platform.OS === "android") {
   addDecorator(WhiteBgColorDecorator);
 }
+
+addDecorator(withKnobs);
 
 configure(loadStories, module);
 

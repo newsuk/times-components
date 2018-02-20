@@ -2,6 +2,7 @@
   "name": "@times-components/storybook",
   "version": "0.3.1",
   "description": "React storybook helpers for Times Components",
+  "main": "storybook",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

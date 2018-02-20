@@ -250,7 +250,7 @@ exports[`Related articles test on android Related articles renders single relate
                         "paddingTop": 5,
                       },
                       Object {
-                        "color": "#333333",
+                        "color": "#DB133B",
                       },
                     ]
                   }
@@ -602,7 +602,7 @@ exports[`Related articles test on android Related articles renders single relate
                         "paddingTop": 5,
                       },
                       Object {
-                        "color": "#333333",
+                        "color": "#DB133B",
                       },
                     ]
                   }
@@ -1135,7 +1135,7 @@ exports[`Related articles test on android Related articles renders single relate
                         "paddingTop": 5,
                       },
                       Object {
-                        "color": "#333333",
+                        "color": "#DB133B",
                       },
                     ]
                   }
@@ -1487,7 +1487,7 @@ exports[`Related articles test on android Related articles renders three related
                         "paddingTop": 5,
                       },
                       Object {
-                        "color": "#333333",
+                        "color": "#DB133B",
                       },
                     ]
                   }
@@ -1776,7 +1776,7 @@ exports[`Related articles test on android Related articles renders three related
                         "paddingTop": 5,
                       },
                       Object {
-                        "color": "#333333",
+                        "color": "#008347",
                       },
                     ]
                   }
@@ -2065,7 +2065,7 @@ exports[`Related articles test on android Related articles renders three related
                         "paddingTop": 5,
                       },
                       Object {
-                        "color": "#333333",
+                        "color": "#6C6C69",
                       },
                     ]
                   }
@@ -2417,7 +2417,7 @@ exports[`Related articles test on android Related articles renders two related a
                         "paddingTop": 5,
                       },
                       Object {
-                        "color": "#333333",
+                        "color": "#DB133B",
                       },
                     ]
                   }
@@ -2706,7 +2706,7 @@ exports[`Related articles test on android Related articles renders two related a
                         "paddingTop": 5,
                       },
                       Object {
-                        "color": "#333333",
+                        "color": "#008347",
                       },
                     ]
                   }

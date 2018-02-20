@@ -42,7 +42,7 @@ ColourBox.propTypes = {
   hex: PropTypes.string.isRequired
 };
 
-storiesOf("Styleguide", module).add("Section Colours", () => {
+storiesOf("Helpers/Styleguide", module).add("Section Colours", () => {
   const colourBoxes = Object.keys(sectionColours).map(colourName => (
     <ColourBox
       key={colourName}

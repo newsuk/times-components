@@ -3,7 +3,7 @@ import { View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { action } from "@storybook/addon-actions";
 import { withTrackingContext } from "@times-components/tracking";
-import { LateralSpacingDecorator } from "@times-components/storybook/decorators";
+import { LateralSpacingDecorator } from "@times-components/storybook";
 import Pagination, { withPageState } from "./pagination";
 import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
 

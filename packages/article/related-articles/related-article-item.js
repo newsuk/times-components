@@ -7,11 +7,20 @@ import ArticleSummary, {
 } from "@times-components/article-summary";
 import Image from "@times-components/image";
 import Link from "@times-components/link";
+import sectionColours from "@times-components/styleguide";
 import { relatedArticleItemPropTypes } from "./proptypes";
 import styles from "./styles";
 
 const RelatedArticleItem = ({ article, onPress }) => {
-  const { byline, label, headline, publishedTime, summary, url } = article;
+  const {
+    byline,
+    label,
+    headline,
+    publishedTime,
+    section,
+    summary,
+    url
+  } = article;
 
   const imageUri = get(
     article,
@@ -31,7 +40,10 @@ const RelatedArticleItem = ({ article, onPress }) => {
           bylineProps={{ ast: byline }}
           datePublicationProps={{ date: publishedTime }}
           headline={() => <ArticleSummaryHeadline headline={headline} />}
-          labelProps={{ title: label, color: "#333333" }}
+          labelProps={{
+            title: label,
+            color: sectionColours[section] || sectionColours.default
+          }}
           content={() => <ArticleSummaryContent ast={summary} />}
         />
       </View>
