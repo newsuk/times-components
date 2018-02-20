@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.23.0"></a>
+# [0.23.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.22.12...@times-components/provider@0.23.0) (2018-02-20)
+
+
+### Features
+
+* REPLAT-1311 Label Colour by Section ([#662](https://github.com/newsuk/times-components/issues/662)) ([7c50dcb](https://github.com/newsuk/times-components/commit/7c50dcb))
+
+
+
+
 <a name="0.22.12"></a>
 ## [0.22.12](https://github.com/newsuk/times-components/compare/@times-components/provider@0.22.11...@times-components/provider@0.22.12) (2018-02-16)
 

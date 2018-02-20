@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.13.0"></a>
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.12.49...@times-components/pagination@0.13.0) (2018-02-20)
+
+
+### Features
+
+* REPLAT-1311 Label Colour by Section ([#662](https://github.com/newsuk/times-components/issues/662)) ([7c50dcb](https://github.com/newsuk/times-components/commit/7c50dcb))
+
+
+
+
 <a name="0.12.49"></a>
 ## [0.12.49](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.12.47...@times-components/pagination@0.12.49) (2018-02-16)
 

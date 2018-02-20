@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.1.12...@times-components/gestures@1.2.0) (2018-02-20)
+
+
+### Features
+
+* REPLAT-1311 Label Colour by Section ([#662](https://github.com/newsuk/times-components/issues/662)) ([7c50dcb](https://github.com/newsuk/times-components/commit/7c50dcb))
+
+
+
+
 <a name="1.1.12"></a>
 ## [1.1.12](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.1.11...@times-components/gestures@1.1.12) (2018-02-16)
 
