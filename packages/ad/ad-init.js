@@ -347,12 +347,16 @@ const adInit = args => {
             adUnit,
             section
           );
-        } else {
-          this.dfpReady(window.googletag)
-            .then(this.displayAds.bind(this, window.googletag))
-            .catch(err => console.error("error loading the ads", err)); // eslint-disable-line no-console
         }
+
         this.scheduleGPTConfiguration(window.googletag, pageTargeting);
+
+        if (platform !== "web") {
+          this.dfpReady(window.googletag)
+          .then(this.displayAds.bind(this, window.googletag))
+          .catch(err => console.error("error loading the ads", err)); // eslint-disable-line no-console
+        }
+
       }
       this.scheduleSlotDefine(
         window.googletag,
