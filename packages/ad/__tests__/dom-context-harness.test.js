@@ -10,6 +10,7 @@ describe("DOMContext harness", () => {
   beforeEach(() => {
     document = jsdom("<html></html>");
     window = document.defaultView;
+    platform: "web";
   });
 
   const fireEventFor = (evt, source) => {
@@ -44,7 +45,7 @@ describe("DOMContext harness", () => {
     expectFunctionToBeSerialisable(_makeHarness);
   });
 
-  it("injects scripts into the document head", () => {
+  it.only("injects scripts into the document head", () => {
     const harness = makeHarness({
       scriptUris: [
         { uri: "a", canRequestFail: true },

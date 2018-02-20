@@ -213,10 +213,8 @@ const adInit = args => {
     },
     displayAds(gtag, pb, ap) {
       log("verbose", "displayAds");
-      if (platform === "web") {
-        this.applyPrebidTargeting(pb);
-        this.applyAmazonTargeting(ap);
-      }
+      this.applyPrebidTargeting(pb);
+      this.applyAmazonTargeting(ap);
       log("gpt", "googletag refresh called");
       gtag.pubads().refresh();
     },
@@ -350,12 +348,6 @@ const adInit = args => {
         }
 
         this.scheduleGPTConfiguration(window.googletag, pageTargeting);
-
-        if (platform !== "web") {
-          this.dfpReady(window.googletag)
-          .then(this.displayAds.bind(this, window.googletag))
-          .catch(err => console.error("error loading the ads", err)); // eslint-disable-line no-console
-        }
 
       }
       this.scheduleSlotDefine(

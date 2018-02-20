@@ -14,6 +14,7 @@ describe("Ad init", () => {
   let mockSlot;
   let mockSizeMapping;
   let mockGoogletag;
+  let platform;
 
   beforeEach(() => {
     document = jsdom("<html></html>");
@@ -57,7 +58,8 @@ describe("Ad init", () => {
       globals: {
         googletag: mockGoogletag
       },
-      renderComplete: jest.fn()
+      renderComplete: jest.fn(),
+      platform: "web"
     };
     init = adInit(initOptions);
   });
@@ -193,12 +195,12 @@ describe("Ad init", () => {
     ).toEqual("");
   });
 
-  it.only("setup and init Amazon apstag", () => {
+  it("setup and init Amazon apstag", () => {
     /* eslint no-underscore-dangle: ["error", { "allow": ["_Q"] }] */
     expect(window.apstag).toEqual(undefined);
-    init.setupApstag();
+    init.configureApstag();
     expect(window.apstag._Q).toEqual([]);
-    init.configureApstag("3360", 3000);
+    init.initApstag("3360", 3000);
     expect(window.apstag._Q).toEqual([
       ["i", { pubID: "3360", adServer: "googletag", bidTimeout: 3000 }]
     ]);

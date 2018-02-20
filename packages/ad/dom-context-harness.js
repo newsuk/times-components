@@ -39,12 +39,15 @@ const makeHarness = ({
       withCatch(() => {
         // eslint-disable-next-line no-param-reassign
         window.scritpsProcessed = window.scritpsProcessed || [];
+        console.log('one', window.scritpsProcessed);
         const renderComplete = () => {
           if (!renderCompleteCalled) {
             renderCompleteCalled = true;
             eventCallback("renderComplete");
           }
         };
+        console.log('two', platform);
+
         const initialiser = init({
           el,
           data,
@@ -53,16 +56,21 @@ const makeHarness = ({
           renderComplete,
           platform
         });
+        console.log('two b', initialiser.init);
+
         if (initialiser.init) {
+          console.log('three', window.scritpsProcessed);
           initialiser.init();
         }
         this.loadScriptsParallel(scriptUris, () => {
+          console.log('four', window.scritpsProcessed);
           this.runScriptsLoadedIf();
         });
       });
     },
     runScriptsLoadedIf() {
       if (scriptUris.length === window.scritpsProcessed.length) {
+        console.log('five', window.scritpsProcessed);
         this.scriptsLoaded();
       }
     },
@@ -147,10 +155,15 @@ const makeHarness = ({
 
     scriptsLoaded() {
       withCatch(() => {
+        console.log('six');
+
         if (scriptsLoadedCalled) {
+          console.log('seven');
           return;
         }
         scriptsLoadedCalled = true;
+        console.log('eight');
+
         // TODO: can we safetely remove the global concept???
         // const globals = {};
         // for (let i = 0; i < globalNames.length; i += 1) {
@@ -175,6 +188,8 @@ const makeHarness = ({
           // document
         });
         if (initialiser && initialiser.scriptsLoaded) {
+          console.log('nine');
+
           initialiser.scriptsLoaded();
         }
       });
