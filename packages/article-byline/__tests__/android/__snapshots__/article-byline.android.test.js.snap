@@ -14,9 +14,33 @@ exports[`Article Byline test on android renders correctly with a single author 1
         "textDecorationLine": "underline",
       },
       Object {
-        "color": "#069",
+        "color": "#13354E",
       },
-      undefined,
+      Object {},
+    ]
+  }
+>
+  Alexandra Frean
+</Text>
+`;
+
+exports[`Article Byline test on android renders correctly with a single author with a section 1`] = `
+<Text
+  accessibilityRole="link"
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  href="/profile/alexandra-frean"
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "textDecorationLine": "underline",
+      },
+      Object {
+        "color": "#008347",
+      },
+      Object {},
     ]
   }
 >
@@ -51,9 +75,9 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#069",
+          "color": "#13354E",
         },
-        undefined,
+        Object {},
       ]
     }
   >
@@ -79,9 +103,9 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#069",
+          "color": "#13354E",
         },
-        undefined,
+        Object {},
       ]
     }
   >
@@ -107,9 +131,9 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#069",
+          "color": "#13354E",
         },
-        undefined,
+        Object {},
       ]
     }
   >
@@ -133,9 +157,9 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#069",
+          "color": "#13354E",
         },
-        undefined,
+        Object {},
       ]
     }
   >
@@ -161,9 +185,9 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#069",
+          "color": "#13354E",
         },
-        undefined,
+        Object {},
       ]
     }
   >
@@ -189,9 +213,9 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#069",
+          "color": "#13354E",
         },
-        undefined,
+        Object {},
       ]
     }
   >
@@ -214,7 +238,7 @@ exports[`Article Byline test on android renders correctly with styles 1`] = `
         "textDecorationLine": "underline",
       },
       Object {
-        "color": "#069",
+        "color": "#13354E",
       },
       Object {
         "color": "red",
@@ -249,9 +273,9 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#069",
+          "color": "#13354E",
         },
-        undefined,
+        Object {},
       ]
     }
   >
@@ -275,9 +299,9 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#069",
+          "color": "#13354E",
         },
-        undefined,
+        Object {},
       ]
     }
   >

@@ -14,16 +14,19 @@ const bylineStyles = {
 };
 
 const bylineLinkStyles = {
-  link: {
-    color: "red",
-    textDecorationLine: "none"
-  }
+  color: "red",
+  textDecorationLine: "none"
 };
 
 storiesOf("Primitives/ArticleByline", module)
   .add("ArticleByline with a single author", () => (
     <Text style={bylineStyles}>
       <ArticleByline ast={authorsAST.singleAuthor} />
+    </Text>
+  ))
+  .add("ArticleByline with a single author in sport section", () => (
+    <Text style={bylineStyles}>
+      <ArticleByline ast={authorsAST.singleAuthor} section="sport" />
     </Text>
   ))
   .add("ArticleByline with a text only element", () => (

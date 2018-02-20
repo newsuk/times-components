@@ -43,7 +43,8 @@ export default {
           }
         ]
       }
-    ]
+    ],
+    section: "culture"
   },
   content: () => (
     <ArticleSummaryContent

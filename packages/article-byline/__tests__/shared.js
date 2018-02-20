@@ -7,16 +7,21 @@ import ArticleByline from "../article-byline";
 const authorsAST = require("../fixtures/authors.json");
 
 const bylineStyles = {
-  link: {
-    color: "red",
-    textDecorationLine: "underline"
-  }
+  color: "red",
+  textDecorationLine: "underline"
 };
 
 module.exports = () => {
   it("renders correctly with a single author", () => {
     const tree = renderer
       .create(<ArticleByline ast={authorsAST.singleAuthor} />)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders correctly with a single author with a section", () => {
+    const tree = renderer
+      .create(<ArticleByline ast={authorsAST.singleAuthor} section="sport" />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

@@ -1,5 +1,4 @@
 import React from "react";
-import { Text } from "react-native";
 import get from "lodash.get";
 import ArticleSummary, {
   ArticleSummaryContent
@@ -35,37 +34,37 @@ const RelatedArticleItem = ({
   );
 
   return (
-    <Link url={url} onPress={onPress}>
-      <StyledRelatedArticleContainer>
-        {imageUri ? (
+    <StyledRelatedArticleContainer>
+      {imageUri ? (
+        <Link url={url} onPress={onPress}>
           <StyledImageContainer>
             <Image uri={`${imageUri}&resize=996`} aspectRatio={16 / 9} />
           </StyledImageContainer>
-        ) : null}
-        <StyledSummaryContainer>
-          <ArticleSummary
-            bylineProps={{ ast: byline }}
-            datePublicationProps={{ date: publishedTime }}
-            headline={() => (
-              <ResponsiveHeadline>
-                <Text
-                  accessibilityRole="heading"
-                  aria-level="3"
-                  style={styles.headline}
-                >
-                  {headline}
-                </Text>
+        </Link>
+      ) : null}
+      <StyledSummaryContainer>
+        <ArticleSummary
+          bylineProps={{ ast: byline, section }}
+          datePublicationProps={{ date: publishedTime }}
+          headline={() => (
+            <Link url={url} onPress={onPress}>
+              <ResponsiveHeadline
+                accessibilityRole="heading"
+                aria-level="3"
+                style={styles.headline}
+              >
+                {headline}
               </ResponsiveHeadline>
-            )}
-            labelProps={{
-              title: label,
-              color: sectionColours[section] || sectionColours.default
-            }}
-            content={() => <ArticleSummaryContent ast={summary} />}
-          />
-        </StyledSummaryContainer>
-      </StyledRelatedArticleContainer>
-    </Link>
+            </Link>
+          )}
+          labelProps={{
+            title: label,
+            color: sectionColours[section] || sectionColours.default
+          }}
+          content={() => <ArticleSummaryContent ast={summary} />}
+        />
+      </StyledSummaryContainer>
+    </StyledRelatedArticleContainer>
   );
 };
 

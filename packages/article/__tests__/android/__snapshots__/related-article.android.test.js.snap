@@ -1575,11 +1575,32 @@ exports[`Related articles test on android Related articles renders three related
                 }
               >
                 <Text
+                  accessibilityRole="link"
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  href="/profile/camilla-long"
+                  onPress={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "textDecorationLine": "underline",
+                      },
+                      Object {
+                        "color": "#DB133B",
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  Camilla Long
+                </Text>
+                <Text
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-                  Camilla Long, Environment Editor
+                  , Environment Editor
                 </Text>
               </Text>
             </View>
@@ -1864,11 +1885,32 @@ exports[`Related articles test on android Related articles renders three related
                 }
               >
                 <Text
+                  accessibilityRole="link"
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  href="/profile/camilla-long"
+                  onPress={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "textDecorationLine": "underline",
+                      },
+                      Object {
+                        "color": "#008347",
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  Camilla Long
+                </Text>
+                <Text
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-                  Camilla Long, Environment Editor
+                  , Environment Editor
                 </Text>
               </Text>
             </View>
@@ -2153,11 +2195,32 @@ exports[`Related articles test on android Related articles renders three related
                 }
               >
                 <Text
+                  accessibilityRole="link"
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  href="/profile/camilla-long"
+                  onPress={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "textDecorationLine": "underline",
+                      },
+                      Object {
+                        "color": "#6C6C69",
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  Camilla Long
+                </Text>
+                <Text
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-                  Camilla Long, Environment Editor
+                  , Environment Editor
                 </Text>
               </Text>
             </View>

@@ -39,7 +39,8 @@ export default {
           }
         ]
       }
-    ]
+    ],
+    section: "business"
   },
   content: () => (
     <ArticleSummaryContent

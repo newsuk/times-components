@@ -37,7 +37,7 @@ const RelatedArticleItem = ({ article, onPress }) => {
           </View>
         ) : null}
         <ArticleSummary
-          bylineProps={{ ast: byline }}
+          bylineProps={{ ast: byline, section }}
           datePublicationProps={{ date: publishedTime }}
           headline={() => <ArticleSummaryHeadline headline={headline} />}
           labelProps={{

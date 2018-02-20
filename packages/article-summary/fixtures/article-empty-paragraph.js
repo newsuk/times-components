@@ -43,7 +43,8 @@ export default {
           }
         ]
       }
-    ]
+    ],
+    section: "sport"
   },
   content: () => (
     <ArticleSummaryContent
