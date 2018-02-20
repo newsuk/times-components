@@ -348,16 +348,6 @@
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
 
-"@times-components/jest-configurator@0.0.23":
-  version "0.0.23"
-  resolved "https://registry.yarnpkg.com/@times-components/jest-configurator/-/jest-configurator-0.0.23.tgz#16300966e18d7f326a3547b9263712e5cfadfb37"
-  dependencies:
-    enzyme "3.3.0"
-    enzyme-adapter-react-16 "1.1.0"
-    enzyme-to-json "3.3.0"
-    find-node-modules "1.0.4"
-    recursive-readdir-synchronous "0.0.3"
-
 "@types/async@2.0.46":
   version "2.0.46"
   resolved "https://registry.yarnpkg.com/@types/async/-/async-2.0.46.tgz#f13a6c336a6582b95d0c0269e796b709488fd54d"
@@ -3969,21 +3959,6 @@ detox@5.8.2:
     telnet-client "0.15.3"
     ws "^1.1.1"
 
-dextrose@1.4.5:
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.4.5.tgz#c91050440cce0cbf4a9d4f33fb649a3fa4f3694a"
-  dependencies:
-    aws-sdk "^2.179.0"
-    babel-core "6.26.0"
-    babel-preset-react-native "4.0.0"
-    commander " 2.12.1"
-    npmlog "4.1.2"
-    osnap "^1.1.0"
-    pug "^2.0.0-rc.4"
-    socket.io "^2.0.4"
-    socket.io-client "^2.0.4"
-    wd "1.4.1"
-
 dextrose@^1.4.6:
   version "1.4.6"
   resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.4.6.tgz#cc733eb19787fe98c2e7b70607b5651c2cb18566"
@@ -6744,10 +6719,6 @@ jest-config@^21.2.1:
     jest-validate "^21.2.1"
     pretty-format "^21.2.1"
 
-jest-context@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/jest-context/-/jest-context-2.1.0.tgz#8d92b636323ce0698f801b6282029feb987c9545"
-
 jest-diff@^21.2.1:
   version "21.2.1"
   resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-21.2.1.tgz#46cccb6cab2d02ce98bc314011764bb95b065b4f"
@@ -6823,6 +6794,10 @@ jest-message-util@^21.2.1:
 jest-mock@^21.2.0:
   version "21.2.0"
   resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-21.2.0.tgz#7eb0770e7317968165f61ea2a7281131534b3c0f"
+
+jest-plugin-context@2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/jest-plugin-context/-/jest-plugin-context-2.6.0.tgz#a79de56c0ce107d15f5b453f56944479adb140e3"
 
 jest-regex-util@^21.2.0:
   version "21.2.0"
