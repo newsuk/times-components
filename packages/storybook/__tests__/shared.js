@@ -1,7 +1,7 @@
 import React from "react";
 import { Text } from "react-native";
 import renderer from "react-test-renderer";
-import swap, {
+import {
   CenteredDecorator,
   BarSpacingDecorator,
   LateralSpacingDecorator,
@@ -37,19 +37,5 @@ module.exports = () => {
       .create(WhiteBgColorDecorator(() => <WrappedComponent />))
       .toJSON();
     expect(component).toMatchSnapshot();
-  });
-  it("swap should swap the key values in an object and return it", () => {
-    const sampleObject = {
-      primary: "red",
-      secondary: "blue",
-      tertiary: "green"
-    };
-
-    const swappedValues = swap(sampleObject);
-    expect(swappedValues).toEqual({
-      red: "primary",
-      blue: "secondary",
-      green: "tertiary"
-    });
   });
 };

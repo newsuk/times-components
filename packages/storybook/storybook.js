@@ -1,4 +1,3 @@
-export { default } from "./swap";
 export {
   CenteredDecorator,
   BarSpacingDecorator,
