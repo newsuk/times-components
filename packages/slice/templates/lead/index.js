@@ -13,9 +13,13 @@ const LeadSlice = ({ lead, child1, child2 }) => {
   const hasChildren = child1();
   const hasTwoChildren = child2();
   const Container = getContainer(!!hasChildren);
+  Container.displayName = "Container";
   const LeadContainer = getLeadContainer(!!hasChildren);
+  LeadContainer.displayName = "LeadContainer";
   const ChildContainer1 = getChildContainer(false, !!hasTwoChildren);
+  ChildContainer1.displayName = "ChildContainer1";
   const ChildContainer2 = getChildContainer(true);
+  ChildContainer2.displayName = "ChildContainer2";
   return (
     <SliceContainer>
       <Container>

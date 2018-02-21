@@ -5,6 +5,7 @@ import { getChildrenContainer, ChildContainer } from "./responsive";
 
 const DefaultSlice = ({ children }) => {
   const ChildrenContainer = getChildrenContainer(children);
+  ChildrenContainer.displayName = "ChildrenContainer";
   return (
     <SliceContainer>
       <ChildrenContainer>

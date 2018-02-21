@@ -32,6 +32,7 @@ export const ChildrenContainer = withResponsiveStyles(View, {
     height: auto;
   `
 });
+ChildrenContainer.displayName = "ChildrenContainer";
 
 export const getChildContainer = (isSecondChild, hasTwoChildren) =>
   withResponsiveStyles(View, {
