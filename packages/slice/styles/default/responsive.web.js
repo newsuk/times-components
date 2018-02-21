@@ -36,6 +36,8 @@ export const ChildContainer = ({ isFirstChild }) => ({
     border-style: solid;
     border-bottom-color: #dbdbdb;
     border-bottom-width: ${StyleSheet.hairlineWidth}px;
+    flex: 1;
+    flex-direction: row;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -45,6 +47,7 @@ export const ChildContainer = ({ isFirstChild }) => ({
     border: 0;
     display: flex;
     flex-basis: 0 !important;
+    flex-direction: column;
     flex-grow: 1;
     min-height: 100%;
     padding-bottom: 0;
