@@ -10,16 +10,6 @@ exports[`1. DEFAULT template renders a single child element 1`] = `
         key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
       />
     </ChildContainer>
-    <Separator
-      key="separator-08604618-fb0e-11e7-a987-7fcf5e9983dd"
-    />
-    <ChildContainer
-      key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
-    >
-      <ExampleChild
-        key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
-      />
-    </ChildContainer>
   </ChildrenContainer>
 </SliceContainer>
 `;
@@ -42,16 +32,6 @@ exports[`2. DEFAULT template renders two child elements 1`] = `
     >
       <ExampleChild
         key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
-      />
-    </ChildContainer>
-    <Separator
-      key="separator-08604618-fb0e-11e7-a987-7fcf5e9983de"
-    />
-    <ChildContainer
-      key="08604618-fb0e-11e7-a987-7fcf5e9983de"
-    >
-      <ExampleChild
-        key="08604618-fb0e-11e7-a987-7fcf5e9983de"
       />
     </ChildContainer>
   </ChildrenContainer>

@@ -18,7 +18,7 @@ module.exports = () => {
     const createDefaultItems = noOfItems =>
       items
         .map((item, index) => {
-          if (index > noOfItems) return false;
+          if (index >= noOfItems) return false;
           return <ExampleChild key={item.key} />;
         })
         .filter(item => item !== false);
