@@ -7,19 +7,19 @@ jest.useFakeTimers();
 
 describe("Ad init", () => {
   let document;
-  let window;
+  // let window;
   let initOptions;
   let init;
   let mockPubAds;
   let mockSlot;
   let mockSizeMapping;
   let mockGoogletag;
-  let platform;
+  // let platform;
   let slotConfig;
 
   beforeEach(() => {
     document = jsdom("<html></html>");
-    window = document.defaultView;
+    // window = document.defaultView;
     mockPubAds = {
       setTargeting: jest.fn(),
       disableInitialLoad: jest.fn(),
@@ -59,7 +59,7 @@ describe("Ad init", () => {
           sizes: [[1, 1]]
         }
       ]
-    },
+    };
     initOptions = {
       el: document.createElement("div"),
       data: {
@@ -162,7 +162,7 @@ describe("Ad init", () => {
     init.initializeBidding  = jest.fn();
     init.scheduleGPTConfiguration = jest.fn();
 
-    //init.scheduleSlotDefine = jest.fn();
+    // init.scheduleSlotDefine = jest.fn();
 
     init.init();
     expect(processGoogletagCommandQueue).toThrowError(
