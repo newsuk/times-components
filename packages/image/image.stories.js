@@ -2,6 +2,7 @@
 import React from "react";
 import { View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
+import { checkA11y } from "@storybook/addon-a11y";
 import Image from "./image";
 
 const squareUri =
@@ -17,6 +18,7 @@ const SixteenNineImage = props => (
 );
 
 storiesOf("Primitives/Image", module)
+  .addDecorator(checkA11y)
   .add("Fills parent width", () => <SquareImage />)
   .add("Maintains aspect ratio", () => (
     <View>

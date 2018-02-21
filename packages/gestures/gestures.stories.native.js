@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { storiesOf } from "@storybook/react-native";
+import { checkA11y } from "@storybook/addon-a11y";
 import { CenteredDecorator } from "@times-components/storybook";
 import Gestures from "./gestures";
 
@@ -39,6 +40,7 @@ const styles = StyleSheet.create({
 });
 
 storiesOf("Helpers/Gestures", module)
+  .addDecorator(checkA11y)
   .addDecorator(CenteredDecorator)
   .add("With a View", () => (
     <Gestures style={styles.gestures}>

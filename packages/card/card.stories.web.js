@@ -2,6 +2,7 @@
 import React from "react";
 import ReactDOMServer from "react-dom/server";
 import { storiesOf } from "@storybook/react-native";
+import { checkA11y } from "@storybook/addon-a11y";
 import { LateralSpacingDecorator } from "@times-components/storybook";
 import ArticleSummary from "@times-components/article-summary";
 import Card from "./card";
@@ -18,6 +19,7 @@ const cardProps = {
 };
 
 storiesOf("Composed/Card", module)
+  .addDecorator(checkA11y)
   .addDecorator(LateralSpacingDecorator)
   .add("Static rendering (web only)", () => {
     const markup = {

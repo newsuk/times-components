@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { storiesOf } from "@storybook/react-native";
 import { Animations, colours, fonts } from "./styleguide";
 import styles from "./styleguide.stories.styles";
+import { checkA11y } from "@storybook/addon-a11y";
 
 const ColourBox = ({ name, hex }) => (
   <View style={styles.container}>
@@ -20,6 +21,7 @@ ColourBox.propTypes = {
 };
 
 storiesOf("Helpers/Styleguide", module)
+  .addDecorator(checkA11y)
   .add("Functional Colours", () => {
     const colourBoxes = Object.keys(colours.functional).map(colourName => (
       <ColourBox
