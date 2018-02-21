@@ -6,12 +6,6 @@ echo "Running publish script"
 echo $(printf "TRAVIS_BRANCH %s" $TRAVIS_BRANCH)
 echo $(printf "TRAVIS_PULL_REQUEST %s" $TRAVIS_PULL_REQUEST)
 
-if [[ $JOB_TYPE != 'rest' ]]
-then
-  echo "We only publish for the rest job"
-  exit 0
-fi
-
 if [[ $TRAVIS_BRANCH != 'master' ]]
 then
   echo "Not on master"
@@ -52,6 +46,12 @@ then
 fi
 
 yarn coverage:publish
+
+if [[ $JOB_TYPE != 'rest' ]]
+then
+  echo "We only publish for the rest job"
+  exit 0
+fi
 
 # set npm credentials
 echo "Setting up npm"
