@@ -21,7 +21,10 @@ const createItems = noOfItems =>
       const { backgroundColor, key } = colour;
       if (key > noOfItems) return false;
       return (
-        <View key={`item${key}`} style={[moduleStyle.item, { backgroundColor }]} />
+        <View
+          key={`item${key}`}
+          style={[moduleStyle.item, { backgroundColor }]}
+        />
       );
     })
     .filter(item => item !== false);
