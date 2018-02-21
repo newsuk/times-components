@@ -38,6 +38,19 @@ export const Separator = withResponsiveStyles(View, {
 });
 Separator.displayName = "Separator";
 
+export const ChildContainer = withResponsiveStyles(View, {
+  base: () => `
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+  `,
+  mediumUp: () => `
+    padding-left: 0;
+    padding-right: 0;
+  `
+});
+ChildContainer.displayName = "ChildContainer";
+
 export const getChildrenContainer = ({ childCount }) =>
   withResponsiveStyles(View, {
     base: () => `
@@ -66,15 +79,3 @@ export const getChildrenContainer = ({ childCount }) =>
     width: ${childCount >= 3 ? "100%" : config.wideBpWidth};
   `
   });
-
-export const ChildContainer = withResponsiveStyles(View, {
-  base: () => `
-    flex: 1;
-    padding-left: 10px;
-    padding-right: 10px;
-  `,
-  mediumUp: () => `
-    padding-left: 0;
-    padding-right: 0;
-  `
-});
