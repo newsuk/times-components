@@ -12,6 +12,6 @@ export const articleBylinePropTypes = {
 
 export const articleBylineDefaultPropTypes = {
   ast: {},
-  section: "news",
+  section: "",
   style: {}
 };
