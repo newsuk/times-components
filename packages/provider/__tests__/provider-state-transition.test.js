@@ -57,18 +57,4 @@ describe("provider execution order tests", () => {
 
     expect(getRenderedQueries(link)).toMatchSnapshot();
   });
-
-  it.skip("should not render old resolved query while debounce", async () => {
-    const { link, setProps } = providerTester(AuthorQueryResolver, Debounced, {
-      slug: "1"
-    });
-
-    await delayAndAdvance(0);
-    await setProps({ slug: "2" });
-    await delayAndAdvance(500);
-    await link.findByQuery("AuthorQuery", { slug: "1" }).resolve();
-    await delayAndAdvance(1000);
-
-    expect(getRenderedQueries(link)).toMatchSnapshot();
-  });
 });

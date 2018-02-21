@@ -150,18 +150,18 @@ export const makeMocksWithPageError = ({ withImages, pageSize }) => {
     pageSize,
     withImages
   });
-  const [first, , ...last] = articles;
+
+  const [first, second, ...last] = articles;
 
   return [
     author,
     first,
     {
-      request: {
-        query: query({ withImages }),
-        variables: makeVariables({ withImages, skip: pageSize, pageSize })
-      },
+      delay: second.delay,
+      request: second.request,
       error: new Error("Could not get articles")
     },
+    second,
     ...last
   ];
 };

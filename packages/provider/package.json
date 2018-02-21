@@ -20,7 +20,7 @@
       "!**/packages/provider/*stories.js"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|react-apollo-temp|@times-components)/)"
+      "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
       "<rootDir>/packages/provider/__tests__/**.test.js"

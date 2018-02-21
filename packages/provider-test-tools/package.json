@@ -18,7 +18,7 @@
       "**/packages/provider-test-tools/*.js"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|react-apollo-temp|@times-components)/)"
+      "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
       "<rootDir>/packages/provider-test-tools/__tests__/**.test.js"
