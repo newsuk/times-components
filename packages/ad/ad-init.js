@@ -57,6 +57,7 @@ const adInit = args => {
         },
         _Q: []
       };
+      console.log(JSON.stringify(window.apstag ))
     },
     initApstag(amazonAccountID, timeout) {
       log(
@@ -130,7 +131,7 @@ const adInit = args => {
       });
     },
     configurePrebid(prebid, prebidOptions) {
-      log(
+      console.log(
         "pbjs",
         `configure prebid with timeout:${
           prebidOptions.timeout
@@ -140,15 +141,15 @@ const adInit = args => {
       prebid.bidderSettings = prebidOptions.bidderSettings; // eslint-disable-line no-param-reassign
     },
     scheduleGPTConfiguration(gtag, pageTargeting) {
-      this.scheduleGPTAction(gtag, "set page targeting", () => {
-        log("gpt", "set page targeting");
+      console.log("gpt", "set page targeting", JSON.stringify(gtag));
+      this.scheduleGPTAction(gtag, "set page targeting ok", () => {
         const pubads = gtag.pubads();
         Object.entries(pageTargeting || {}).forEach(entry =>
           pubads.setTargeting(entry[0], entry[1])
         );
       });
       this.scheduleGPTAction(gtag, "configuration", () => {
-        log("gpt", `configure gpt`);
+        console.log("gpt", `configure gpt`);
         const pubads = gtag.pubads();
         pubads.disableInitialLoad();
         // Fetch multiple ads at the same time
@@ -277,7 +278,7 @@ const adInit = args => {
       window.pbjs = {};
       window.pbjs.que = window.pbjs.que || [];
     },
-    initializePrebid(prebidConfig, slots, networkId, adUnit, section) {
+    initializeBidding(prebidConfig, slots, networkId, adUnit, section) {
       this.schedulePrebidAction(window.pbjs, "processing", () =>
         log("pbjs", "loaded, processing the queue")
       );
@@ -338,7 +339,7 @@ const adInit = args => {
           log("gpt", "loaded, processing the queue")
         );
         if (platform === "web") {
-          this.initializePrebid(
+          this.initializeBidding(
             prebidConfig,
             slots,
             networkId,

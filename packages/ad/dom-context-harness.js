@@ -27,6 +27,7 @@ const makeHarness = ({
       action();
     } catch (e) {
       // eslint-disable-next-line no-console
+     console.log(e.message,">>>>>>>>>>>>>>>>>>>>>>",e.stack)
       window.console.error(`DOMContext Error: ${e.message}\n${e.stack}`);
       eventCallback("error", `${e.message}${e.stack}`);
     }
@@ -56,14 +57,14 @@ const makeHarness = ({
           renderComplete,
           platform
         });
-        console.log('two b', initialiser.init);
+        console.log('two b', initialiser);
 
         if (initialiser.init) {
           console.log('three', window.scritpsProcessed);
           initialiser.init();
         }
         this.loadScriptsParallel(scriptUris, () => {
-          console.log('four', window.scritpsProcessed);
+          console.log('four', scriptUris);
           this.runScriptsLoadedIf();
         });
       });
@@ -120,8 +121,10 @@ const makeHarness = ({
 
     loadScriptsParallel(scripts, callback) {
       if (scripts.length === 0) {
+        console.log('eleven');
         callback();
       }
+      console.log('twelve', scripts.length);
       for (let i = 0; i < scripts.length; i += 1) {
         const scriptUri = scripts[i].uri;
         const timeout = scripts[i].timeout || -1;
@@ -129,7 +132,7 @@ const makeHarness = ({
         const scriptId = `dom-context-script-${scriptUri.replace(/\W/g, "")}`;
         let script = document.getElementById(scriptId);
         if (!script) {
-          log("create script:", scriptId);
+          console.log("create script:", scriptId);
           script = document.createElement("script");
           script.id = scriptId;
           script.type = "text/javascript";

@@ -14,7 +14,7 @@ export default class DOMContext extends React.PureComponent {
       window,
       document,
       scriptUris,
-      globalNames,
+      //globalNames,
       init,
       data,
       platform
