@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "prop-types": "15.6.0",
-    "react-native-svg": "6.2.0",
+    "react-native-svg": "6.2.2",
     "svgs": "3.1.1"
   },
   "peerDependencies": {

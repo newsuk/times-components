@@ -9708,9 +9708,9 @@ react-native-storybook-loader@1.5.1:
     glob "^7.1.1"
     yargs "^8.0.2"
 
-react-native-svg@6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-6.2.0.tgz#6375ef04c2e27d27943efd56178f8b110deca0fe"
+react-native-svg@6.2.2:
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-6.2.2.tgz#5803cddce374a542b4468c38a2474fca32080685"
   dependencies:
     color "^2.0.1"
     lodash "^4.16.6"
