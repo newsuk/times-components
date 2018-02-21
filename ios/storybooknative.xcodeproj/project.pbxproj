@@ -339,18 +339,18 @@
 			remoteGlobalIDString = E72EC1401F7ABB5A0001BC90;
 			remoteInfo = "RNDeviceInfo-tvOS";
 		};
-		CE3EB74E203DEE2000FD1723 /* PBXContainerItemProxy */ = {
+		CEA921E6203DF8AA001ACD7A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CE3EB748203DEE2000FD1723 /* RNSVG.xcodeproj */;
+			containerPortal = CEA921E0203DF8AA001ACD7A /* RNSVG.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0CF68AC11AF0540F00FF9E5C;
 			remoteInfo = RNSVG;
 		};
-		CE3EB750203DEE2000FD1723 /* PBXContainerItemProxy */ = {
+		CEA921E8203DF8AA001ACD7A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CE3EB748203DEE2000FD1723 /* RNSVG.xcodeproj */;
+			containerPortal = CEA921E0203DF8AA001ACD7A /* RNSVG.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = CE3EB74B203DEE2000FD1723;
+			remoteGlobalIDString = CEA921E3203DF8AA001ACD7A;
 			remoteInfo = "RNSVG-tvOS";
 		};
 /* End PBXContainerItemProxy section */
@@ -407,7 +407,7 @@
 		A8EA890E2023732700C2D919 /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNDeviceInfo.xcodeproj; path = "../node_modules/react-native-device-info/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		CE3EB6EC203DE6E700FD1723 /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BVLinearGradient.xcodeproj; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; };
-		CE3EB748203DEE2000FD1723 /* RNSVG.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSVG.xcodeproj; path = "../../blub/node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; };
+		CEA921E0203DF8AA001ACD7A /* RNSVG.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSVG.xcodeproj; path = "../../blub/node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; };
 		ED3A0BAC1F38C8F300048867 /* RNTBrightcoveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNTBrightcoveView.h; path = "../packages/brightcove-video/ios/RNTBrightcove/RNTBrightcoveView.h"; sourceTree = "<group>"; };
 		ED3A0BAD1F38C8F300048867 /* RNTBrightcoveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNTBrightcoveView.m; path = "../packages/brightcove-video/ios/RNTBrightcove/RNTBrightcoveView.m"; sourceTree = "<group>"; };
 		ED3A0BAE1F38C8F300048867 /* RNTBrightcoveManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNTBrightcoveManager.h; path = "../packages/brightcove-video/ios/RNTBrightcove/RNTBrightcoveManager.h"; sourceTree = "<group>"; };
@@ -593,7 +593,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				CE3EB748203DEE2000FD1723 /* RNSVG.xcodeproj */,
+				CEA921E0203DF8AA001ACD7A /* RNSVG.xcodeproj */,
 				CE3EB6EC203DE6E700FD1723 /* BVLinearGradient.xcodeproj */,
 				A8EA890E2023732700C2D919 /* RNDeviceInfo.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
@@ -710,11 +710,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CE3EB749203DEE2000FD1723 /* Products */ = {
+		CEA921E1203DF8AA001ACD7A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE3EB74F203DEE2000FD1723 /* libRNSVG.a */,
-				CE3EB751203DEE2000FD1723 /* libRNSVG-tvOS.a */,
+				CEA921E7203DF8AA001ACD7A /* libRNSVG.a */,
+				CEA921E9203DF8AA001ACD7A /* libRNSVG-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -824,8 +824,8 @@
 					ProjectRef = A8EA890E2023732700C2D919 /* RNDeviceInfo.xcodeproj */;
 				},
 				{
-					ProductGroup = CE3EB749203DEE2000FD1723 /* Products */;
-					ProjectRef = CE3EB748203DEE2000FD1723 /* RNSVG.xcodeproj */;
+					ProductGroup = CEA921E1203DF8AA001ACD7A /* Products */;
+					ProjectRef = CEA921E0203DF8AA001ACD7A /* RNSVG.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1123,18 +1123,18 @@
 			remoteRef = CE3EB724203DE6E800FD1723 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		CE3EB74F203DEE2000FD1723 /* libRNSVG.a */ = {
+		CEA921E7203DF8AA001ACD7A /* libRNSVG.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRNSVG.a;
-			remoteRef = CE3EB74E203DEE2000FD1723 /* PBXContainerItemProxy */;
+			remoteRef = CEA921E6203DF8AA001ACD7A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		CE3EB751203DEE2000FD1723 /* libRNSVG-tvOS.a */ = {
+		CEA921E9203DF8AA001ACD7A /* libRNSVG-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libRNSVG-tvOS.a";
-			remoteRef = CE3EB750203DEE2000FD1723 /* PBXContainerItemProxy */;
+			remoteRef = CEA921E8203DF8AA001ACD7A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

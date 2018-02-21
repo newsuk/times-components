@@ -57,8 +57,8 @@
   },
   "dependencies": {
     "prop-types": "15.6.0",
-    "react-native-svg": "6.2.2",
-    "svgs": "3.1.1"
+    "react-native-svg": "5.5.1",
+    "svgs": "3.2.1"
   },
   "peerDependencies": {
     "babel-preset-env": "1.6.1",
