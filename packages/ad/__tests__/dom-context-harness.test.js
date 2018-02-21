@@ -6,11 +6,12 @@ import { expectFunctionToBeSerialisable } from "./check-serialisable-function";
 describe("DOMContext harness", () => {
   let document;
   let window;
+  let platform;
 
   beforeEach(() => {
     document = jsdom("<html></html>");
     window = document.defaultView;
-    platform: "web";
+    platform = "web";
   });
 
   const fireEventFor = (evt, source) => {
@@ -31,13 +32,14 @@ describe("DOMContext harness", () => {
     _makeHarness({
       document,
       window,
+      platform,
       el: args.el || document.createElement("div"),
-      id: "dom-context-id",
+      //id: "dom-context-id",
       scriptUris: [],
       data: {},
       eventCallback: () => {},
-      init: () => {},
-      globalNames: [],
+      init:  (args) => { return {init: () =>{}}},//() => {},
+      //globalNames: [],
       ...args
     });
 
@@ -45,7 +47,7 @@ describe("DOMContext harness", () => {
     expectFunctionToBeSerialisable(_makeHarness);
   });
 
-  it.only("injects scripts into the document head", () => {
+  it("injects scripts into the document head", () => {
     const harness = makeHarness({
       scriptUris: [
         { uri: "a", canRequestFail: true },
@@ -79,31 +81,32 @@ describe("DOMContext harness", () => {
   });
 
   it("will invoke the execute hook returned by the init function", () => {
-    const execute = jest.fn();
-    const init = jest.fn().mockImplementation(() => ({ execute }));
-
-    const harness = makeHarness({ init });
-    harness.execute();
-
-    expect(execute).toHaveBeenCalled();
-  });
-
-  it("passes global variables to the init function", () => {
-    window.myGlobalVariable = "myGlobalValue";
     const init = jest.fn();
+    const adInit = jest.fn().mockImplementation(() => ({ init }));
 
-    const harness = makeHarness({
-      globalNames: ["myGlobalVariable"],
-      init
-    });
+    const harness = makeHarness({ init: adInit });
     harness.execute();
 
-    expect(init).toHaveBeenCalledWith(
-      expect.objectContaining({
-        globals: { myGlobalVariable: "myGlobalValue" }
-      })
-    );
+    expect(init).toHaveBeenCalled();
   });
+
+  // ------------ NOT SUPPORTING GLOABL VARS -----------------
+  // it("passes global variables to the init function", () => {
+  //   window.myGlobalVariable = "myGlobalValue";
+  //   const init = jest.fn();
+
+  //   const harness = makeHarness({
+  //     globalNames: ["myGlobalVariable"],
+  //     init
+  //   });
+  //   harness.execute();
+
+  //   expect(init).toHaveBeenCalledWith(
+  //     expect.objectContaining({
+  //       globals: { myGlobalVariable: "myGlobalValue" }
+  //     })
+  //   );
+  // });
 
   it("reports errors in the init function", () => {
     jest.spyOn(console, "error").mockImplementation();
@@ -115,7 +118,7 @@ describe("DOMContext harness", () => {
       eventCallback
     });
     harness.execute();
-    expect(eventCallback).toHaveBeenCalledWith("error", "broken");
+    expect(eventCallback).toHaveBeenCalledWith("error", expect.any(String));
   });
 
   it("reports errors in the execute function", () => {
@@ -129,59 +132,63 @@ describe("DOMContext harness", () => {
     expect(eventCallback).toHaveBeenCalledWith("error", expect.any(String));
   });
 
-  it("invokes init function after the scripts are loaded", () => {
-    const init = jest.fn();
-    const harness = makeHarness({
-      init,
-      scriptUris: [{ uri: "providesSecond" }]
-    });
+  // ------START: Now the scripts are loaded in parallel to ad init ------
 
-    harness.execute();
+  // it("invokes init function after the scripts are loaded", () => {
+  //   const init = jest.fn();
+  //   const harness = makeHarness({
+  //     init,
+  //     scriptUris: [{ uri: "providesSecond" }]
+  //   });
 
-    fireLoadEventFor("providesSecond");
+  //   harness.execute();
 
-    expect(init).toHaveBeenCalledTimes(1);
-  });
+  //   fireLoadEventFor("providesSecond");
 
-  it("doesn't invoke init function if the scripts aren't loaded", () => {
-    const init = jest.fn();
-    const eventCallback = jest.fn();
-    const harness = makeHarness({
-      init,
-      scriptUris: [{ uri: "willNeverLoad" }],
-      eventCallback
-    });
+  //   expect(init).toHaveBeenCalledTimes(1);
+  // });
 
-    harness.execute();
-    expect(init).not.toBeCalled();
-  });
+  // it("doesn't invoke init function if the scripts aren't loaded", () => {
+  //   const init = jest.fn();
+  //   const eventCallback = jest.fn();
+  //   const harness = makeHarness({
+  //     init,
+  //     scriptUris: [{ uri: "willNeverLoad" }],
+  //     eventCallback
+  //   });
 
-  it("invokes init function if the script has an expired timeout", () => {
-    jest.useFakeTimers();
-    const init = jest.fn();
-    const harness = makeHarness({
-      init,
-      scriptUris: [{ uri: "providesSecond", timeout: 200 }]
-    });
-    harness.execute();
-    expect(init).not.toBeCalled();
-    jest.runAllTimers();
-    expect(init).toHaveBeenCalledTimes(1);
-  });
+  //   harness.execute();
+  //   expect(init).not.toBeCalled();
+  // });
 
-  it("invokes init function if the script can fail", () => {
-    jest.useFakeTimers();
-    const init = jest.fn();
-    const harness = makeHarness({
-      init,
-      scriptUris: [{ uri: "providesSecond", canRequestFail: true }]
-    });
-    harness.execute();
+  // it("invokes init function if the script has an expired timeout", () => {
+  //   jest.useFakeTimers();
+  //   const init = jest.fn();
+  //   const harness = makeHarness({
+  //     init,
+  //     scriptUris: [{ uri: "providesSecond", timeout: 200 }]
+  //   });
+  //   harness.execute();
+  //   expect(init).not.toBeCalled();
+  //   jest.runAllTimers();
+  //   expect(init).toHaveBeenCalledTimes(1);
+  // });
 
-    fireErrorEventFor("providesSecond");
+  // it("invokes init function if the script can fail", () => {
+  //   jest.useFakeTimers();
+  //   const init = jest.fn();
+  //   const harness = makeHarness({
+  //     init,
+  //     scriptUris: [{ uri: "providesSecond", canRequestFail: true }]
+  //   });
+  //   harness.execute();
 
-    expect(init).toHaveBeenCalledTimes(1);
-  });
+  //   fireErrorEventFor("providesSecond");
+
+  //   expect(init).toHaveBeenCalledTimes(1);
+  // });
+
+  // ------END:  Now the scripts are loaded in parallel to ad init ------
 
   it("Dispatches a renderComplete event when the renderComplete callback is invoked", () => {
     const eventCallback = jest.fn();
@@ -204,7 +211,8 @@ describe("DOMContext harness", () => {
         renderComplete();
         renderComplete();
       },
-      eventCallback
+      eventCallback,
+      init: () =>{}
     });
 
     harness.execute();
