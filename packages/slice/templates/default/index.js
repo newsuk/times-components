@@ -1,11 +1,7 @@
 import React from "react";
-import { propTypes, defaultProps } from "../proptypes";
-import {
-  getChildrenContainer,
-  ChildContainer,
-  Separator,
-  SliceContainer
-} from "./responsive";
+import propTypes from "./proptypes";
+import { Separator, SliceContainer } from "../shared.responsive";
+import { getChildrenContainer, ChildContainer } from "./responsive";
 
 const DefaultSlice = ({ children }) => {
   const ChildrenContainer = getChildrenContainer(children);
@@ -27,6 +23,5 @@ const DefaultSlice = ({ children }) => {
 };
 
 DefaultSlice.propTypes = propTypes;
-DefaultSlice.defaultProps = defaultProps;
 
 export default DefaultSlice;

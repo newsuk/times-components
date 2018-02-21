@@ -1,7 +1,7 @@
 import { StyleSheet, View } from "react-native";
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
-import { DefaultSlice } from "./";
+import { DefaultSlice, LeadSlice } from "./";
 
 const styles = StyleSheet.create({
   child: {
@@ -12,7 +12,8 @@ const styles = StyleSheet.create({
 const colours = [
   { backgroundColor: "red", key: 1 },
   { backgroundColor: "yellow", key: 2 },
-  { backgroundColor: "green", key: 3 }
+  { backgroundColor: "green", key: 3 },
+  { backgroundColor: "blue", key: 4 }
 ];
 
 const createDefaultItems = noOfItems =>
@@ -35,4 +36,70 @@ storiesOf("Primitives/Slice", module)
   ))
   .add("Default template with three items", () => (
     <DefaultSlice>{createDefaultItems(3)}</DefaultSlice>
+  ))
+  .add("Lead template with one item", () => (
+    <LeadSlice
+      lead={() => (
+        <View
+          style={{
+            flex: 1,
+            minHeight: 150,
+            backgroundColor: colours[0].backgroundColor
+          }}
+        />
+      )}
+    />
+  ))
+  .add("Lead template with two items", () => (
+    <LeadSlice
+      lead={() => (
+        <View
+          style={{
+            flex: 1,
+            minHeight: 150,
+            backgroundColor: colours[0].backgroundColor
+          }}
+        />
+      )}
+      child1={() => (
+        <View
+          style={{
+            flex: 1,
+            minHeight: 150,
+            backgroundColor: colours[1].backgroundColor
+          }}
+        />
+      )}
+    />
+  ))
+  .add("Lead template with three items", () => (
+    <LeadSlice
+      lead={() => (
+        <View
+          style={{
+            flex: 1,
+            minHeight: 150,
+            backgroundColor: colours[0].backgroundColor
+          }}
+        />
+      )}
+      child1={() => (
+        <View
+          style={{
+            flex: 1,
+            minHeight: 150,
+            backgroundColor: colours[1].backgroundColor
+          }}
+        />
+      )}
+      child2={() => (
+        <View
+          style={{
+            flex: 1,
+            minHeight: 150,
+            backgroundColor: colours[2].backgroundColor
+          }}
+        />
+      )}
+    />
   ));
