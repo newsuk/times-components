@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Styleguide tests for android should render a FadeIn animation wrapper component 1`] = `
+<View
+  collapsable={undefined}
+  style={
+    Object {
+      "opacity": 0,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    Hello World
+  </Text>
+</View>
+`;

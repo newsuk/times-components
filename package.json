@@ -14,6 +14,7 @@
   "scripts": {
     "native": "node node_modules/react-native/local-cli/cli.js start",
     "test": "yarn storybook:test-build && jest ./lib --ci --bail --coverage",
+    "test:all": "yarn test && lerna run test --since --stream && lerna run test:all --since --stream",
     "functional-test:web": "./lib/functional_tests/run-web.sh",
     "functional-test:ios": "./lib/functional_tests/run-ios.sh",
     "functional-test:android": "./lib/functional_tests/run-android.sh",

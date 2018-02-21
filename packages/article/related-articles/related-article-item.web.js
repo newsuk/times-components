@@ -6,7 +6,7 @@ import ArticleSummary, {
 } from "@times-components/article-summary";
 import Image from "@times-components/image";
 import Link from "@times-components/link";
-import sectionColours from "@times-components/styleguide";
+import { colours } from "@times-components/styleguide";
 import { relatedArticleItemPropTypes } from "./proptypes";
 import styles from "./styles";
 import { ResponsiveHeadline } from "./styles/responsive";
@@ -59,7 +59,9 @@ const RelatedArticleItem = ({
             )}
             labelProps={{
               title: label,
-              color: sectionColours[section] || sectionColours.default
+              color:
+                colours.sectionColours[section] ||
+                colours.sectionColours.default
             }}
             content={() => <ArticleSummaryContent ast={summary} />}
           />

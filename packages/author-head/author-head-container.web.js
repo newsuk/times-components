@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text } from "react-native";
 import PropTypes from "prop-types";
 import withResponsiveStyles from "@times-components/responsive-styles";
+import { Animations } from "@times-components/styleguide";
 import styles from "./author-head-container.styles";
 
 const { propTypes: { style: TextPropTypesStyle } } = Text;
@@ -16,14 +17,16 @@ const AuthorHeadWrapper = withResponsiveStyles(View, {
 });
 
 const AuthorHeadContainer = props => (
-  <View style={styles.wrapper} pointerEvents="box-none">
-    <AuthorHeadWrapper
-      accessibilityRole="banner"
-      style={[styles.container, props.style]}
-    >
-      {props.children}
-    </AuthorHeadWrapper>
-  </View>
+  <Animations.FadeIn>
+    <View style={styles.wrapper} pointerEvents="box-none">
+      <AuthorHeadWrapper
+        accessibilityRole="banner"
+        style={[styles.container, props.style]}
+      >
+        {props.children}
+      </AuthorHeadWrapper>
+    </View>
+  </Animations.FadeIn>
 );
 
 AuthorHeadContainer.defaultProps = {

@@ -7,7 +7,10 @@
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && npm run prettier:diff",
-    "test": "jest --config='./__tests__/jest.config.js'"
+    "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
+    "test:android": "jest --config='./__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'"
   },
   "repository": {
     "type": "git",
@@ -38,6 +41,7 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
+    "@times-components/responsive-styles": "0.2.20",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
