@@ -41,6 +41,19 @@ You can try without these requirements, but you'd be on your own.
        work.
   4. go to http://localhost:7007
 
+## React-Native Remote Debugger
+
+The current React-Native version opens the url `10.0.0.2:8081` when remote
+debugging is enabled. This only works if this ip redirects to `localhost`.
+
+In order to remote debug react native app on via `localhost` you need to follow
+this particular sequence:
+
+1. `yarn storybook`
+2. navigate to `localhost:8081/debugger-ui`
+3. `yarn android` or `yarn ios`
+   * if android: `cmd+M` and enable Remote Debugging
+
 ### Fonts ⚠️
 
 In order to view the storybook on native, you'll need to fix broken fonts. This
