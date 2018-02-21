@@ -1,8 +1,5 @@
 import { StyleSheet, View } from "react-native";
-import withResponsiveStyles from "@times-components/responsive-styles";
-
-const mediumBpWidth = "83.33333333%";
-const wideBpWidth = "58.33333%";
+import withResponsiveStyles, { config } from "@times-components/responsive-styles";
 
 export const SliceContainer = withResponsiveStyles(View, {
   base: () => `
@@ -53,7 +50,7 @@ export const getChildrenContainer = ({ childCount }) =>
   `,
     mediumUp: () => {
       const smallStyle = `
-      width: ${mediumBpWidth};
+      width: ${config.mediumBpWidth};
     `;
 
       const largeStyle = `
@@ -66,7 +63,7 @@ export const getChildrenContainer = ({ childCount }) =>
     `;
     },
     wideUp: () => `
-    width: ${childCount >= 3 ? "100%" : wideBpWidth};
+    width: ${childCount >= 3 ? "100%" : config.wideBpWidth};
   `
   });
 
