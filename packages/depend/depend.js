@@ -166,7 +166,7 @@ export function applyStrategy(requirements, strategy) {
   };
 }
 
-export default async function compute(packagesList, strategy) {
+export default async function compute(packagesList, strategy, overrides = {}) {
   const packages = packagesList.map(p => p[1]);
   const requirements = getAllRequirements(packages);
 
@@ -174,7 +174,10 @@ export default async function compute(packagesList, strategy) {
 
   const wrong = findWrongVersions(packages);
   const rules = createRules(resolved, wrong);
-  const todo = getTodos(packagesList, rules);
+  const todo = getTodos(packagesList, {
+    ...rules,
+    ...overrides
+  });
 
   const fixedPackages = todo.map(fixTodo);
   const suggestions = getSuggestions(todo);

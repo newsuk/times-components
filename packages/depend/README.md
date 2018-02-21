@@ -10,13 +10,23 @@ depend -e "packages/*/package.json" [...options]
 
 # Options
 
+## --expr, -e "{glob}"
+
+Defines the glob expression that will be used to search the filesystem for
+package.json files. By default it will use `"packages/*/package.json"`.
+
 ## --fix
 
-fixes the packages that are not in-sync
+Fixes the packages that are not in-sync
 
 ## --graph, -g ["{filter}"]
 
-prints a graphviz compatible output that can be converted to a graphic
+Prints a graphviz compatible output that can be converted to a graphic
+
+## --pick, -p {package}@{version}
+
+Adds `{package}@{version}` to the set of rules. Use this in conjunction with
+`--hint` to verify the expected behaviour and use `--fix` to apply the changes.
 
 ### Filter
 
