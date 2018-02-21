@@ -16,9 +16,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+
+  NSURL *bundleJSLocation;
+  NSURL *packagerJSLocation;
   NSURL *jsCodeLocation;
 
-  jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+  bundleJSLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+  packagerJSLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+
+  if (bundleJSLocation) {
+    jsCodeLocation = bundleJSLocation;
+  } else {
+    jsCodeLocation = packagerJSLocation;
+  }
 
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"storybooknative"
