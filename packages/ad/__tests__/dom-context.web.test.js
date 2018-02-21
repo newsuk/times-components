@@ -11,12 +11,14 @@ describe("DOMContext Web", () => {
   let platform;
 
   beforeEach(() => {
-    platform: "web";
+    platform = "web";
   });
 
   it("passes an element to the init function", () => {
-    const init = jest.fn(() =>  {return {init: ()=> {}}});
-    mount(<DOMContext init={init} platform={platform}/>);
+    const init = jest.fn(() => {
+      return { init: () => {} };
+    });
+    mount(<DOMContext init={init} platform={platform} />);
 
     expect(init).toHaveBeenCalledWith(
       expect.objectContaining({
@@ -26,9 +28,11 @@ describe("DOMContext Web", () => {
   });
 
   it("passes the data object to the init function", () => {
-    const init = jest.fn(() =>  {return {init: ()=> {}}});
+    const init = jest.fn(() => {
+      return { init: () => {} };
+    });
 
-    mount(<DOMContext init={init} data={{ foo: "bar" }} platform={platform}/>);
+    mount(<DOMContext init={init} data={{ foo: "bar" }} platform={platform} />);
 
     expect(init).toHaveBeenCalledWith(
       expect.objectContaining({
@@ -37,7 +41,7 @@ describe("DOMContext Web", () => {
     );
   });
 
-  //----------- NOT PASSING GLOBALS ANYMORE -------------
+  // ----------- NOT PASSING GLOBALS ANYMORE -------------
 
   // it("passes selected global variables to the init function", () => {
   //   const init = jest.fn(() =>  {return {init: ()=> {}}});
@@ -107,7 +111,15 @@ describe("DOMContext Web", () => {
   // });
 
   it("Doesn't throw an error when given an invalid event name", () => {
-    const component = mount(<DOMContext init={() => {return {init: ()=> {}}}} platform={platform}/>);
+    /* eslint arrow-body-style: ["error", "as-needed", { "requireReturnForObjectLiteral": true }] */
+    const component = mount(
+      <DOMContext
+        init={() => {
+          return { init: () => {} };
+        }}
+        platform={platform}
+      />
+    );
 
     expect(() => {
       component.instance().processEvent({ type: "invalid" });

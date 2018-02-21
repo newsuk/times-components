@@ -14,19 +14,21 @@ describe("DOMContext harness", () => {
     platform = "web";
   });
 
-  const fireEventFor = (evt, source) => {
-    Array.from(document.getElementsByTagName("script"))
-      .find(el => el.src === source)
-      .dispatchEvent(new window.Event(evt));
-  };
+  // const fireEventFor = (evt, source) => {
+  //   Array.from(document.getElementsByTagName("script"))
+  //     .find(el => el.src === source)
+  //     .dispatchEvent(new window.Event(evt));
+  // };
 
-  const fireLoadEventFor = source => {
-    fireEventFor("load", source);
-  };
+  // const fireLoadEventFor = source => {
+  //   fireEventFor("load", source);
+  // };
 
-  const fireErrorEventFor = source => {
-    fireEventFor("error", source);
-  };
+  // const fireErrorEventFor = source => {
+  //   fireEventFor("error", source);
+  // };
+  const init = jest.fn();
+  const adInit = jest.fn().mockImplementation(() => ({ init }));
 
   const makeHarness = args =>
     _makeHarness({
@@ -34,12 +36,12 @@ describe("DOMContext harness", () => {
       window,
       platform,
       el: args.el || document.createElement("div"),
-      //id: "dom-context-id",
+      // id: "dom-context-id",
       scriptUris: [],
       data: {},
       eventCallback: () => {},
-      init:  (args) => { return {init: () =>{}}},//() => {},
-      //globalNames: [],
+      init: adInit,
+      // globalNames: [],
       ...args
     });
 
@@ -81,9 +83,6 @@ describe("DOMContext harness", () => {
   });
 
   it("will invoke the execute hook returned by the init function", () => {
-    const init = jest.fn();
-    const adInit = jest.fn().mockImplementation(() => ({ init }));
-
     const harness = makeHarness({ init: adInit });
     harness.execute();
 
@@ -211,8 +210,8 @@ describe("DOMContext harness", () => {
         renderComplete();
         renderComplete();
       },
-      eventCallback,
-      init: () =>{}
+      eventCallback
+      // init: () =>{}
     });
 
     harness.execute();

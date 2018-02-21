@@ -107,8 +107,7 @@ describe("Ad init", () => {
   });
 
   it("performs bidding and page initialisation once and initialize slot for each request", () => {
-
-    init.initializeBidding  = jest.fn();
+    init.initializeBidding = jest.fn();
     init.scheduleGPTConfiguration = jest.fn();
     init.scheduleSlotDefine = jest.fn();
 
@@ -124,7 +123,7 @@ describe("Ad init", () => {
   });
 
   it("configures googletag on page init", () => {
-    init.initializeBidding  = jest.fn();
+    init.initializeBidding = jest.fn();
     init.scheduleSlotDefine = jest.fn();
 
     init.init();
@@ -133,7 +132,7 @@ describe("Ad init", () => {
   });
 
   it("configures slots on slot init", () => {
-    init.initializeBidding  = jest.fn();
+    init.initializeBidding = jest.fn();
     init.scheduleGPTConfiguration = jest.fn();
 
     init.init();
@@ -159,7 +158,7 @@ describe("Ad init", () => {
   it("throws if defineSlot returns null", () => {
     mockGoogletag.defineSlot.mockImplementation(() => null);
 
-    init.initializeBidding  = jest.fn();
+    init.initializeBidding = jest.fn();
     init.scheduleGPTConfiguration = jest.fn();
 
     // init.scheduleSlotDefine = jest.fn();
