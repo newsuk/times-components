@@ -2,7 +2,7 @@ import { Platform, ScrollView, Text, View } from "react-native";
 import React from "react";
 import PropTypes from "prop-types";
 import { storiesOf } from "@storybook/react-native";
-import { Colours, Animations } from "./styleguide";
+import { colours, Animations } from "./styleguide";
 
 const styles = {
   display: {
@@ -49,11 +49,11 @@ ColourBox.propTypes = {
 
 storiesOf("Helpers/Styleguide", module)
   .add("Section Colours", () => {
-    const colourBoxes = Object.keys(Colours.sectionColours).map(colourName => (
+    const colourBoxes = Object.keys(colours.sectionColours).map(colourName => (
       <ColourBox
         key={colourName}
         name={colourName}
-        hex={Colours.sectionColours[colourName]}
+        hex={colours.sectionColours[colourName]}
       />
     ));
 

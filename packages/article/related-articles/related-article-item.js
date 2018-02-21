@@ -7,7 +7,7 @@ import ArticleSummary, {
 } from "@times-components/article-summary";
 import Image from "@times-components/image";
 import Link from "@times-components/link";
-import { Colours } from "@times-components/styleguide";
+import { colours } from "@times-components/styleguide";
 import { relatedArticleItemPropTypes } from "./proptypes";
 import styles from "./styles";
 
@@ -43,7 +43,7 @@ const RelatedArticleItem = ({ article, onPress }) => {
           labelProps={{
             title: label,
             color:
-              Colours.sectionColours[section] || Colours.sectionColours.default
+              colours.sectionColours[section] || colours.sectionColours.default
           }}
           content={() => <ArticleSummaryContent ast={summary} />}
         />

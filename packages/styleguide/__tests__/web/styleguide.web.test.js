@@ -1,9 +1,9 @@
 import shared from "../shared";
-import { Colours } from "../../styleguide";
+import { colours } from "../../styleguide";
 
 describe("Styleguide tests for web", () => {
   it("should have an object of section colours", () => {
-    expect(typeof Colours.sectionColours).toBe("object");
+    expect(typeof colours.sectionColours).toBe("object");
   });
 
   shared();
