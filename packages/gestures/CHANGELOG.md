@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.2"></a>
+## [1.2.2](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.2.1...@times-components/gestures@1.2.2) (2018-02-21)
+
+
+### Bug Fixes
+
+* update react apollo mocks ([#671](https://github.com/newsuk/times-components/issues/671)) ([844ac6f](https://github.com/newsuk/times-components/commit/844ac6f))
+
+
+
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.2.0...@times-components/gestures@1.2.1) (2018-02-20)
 

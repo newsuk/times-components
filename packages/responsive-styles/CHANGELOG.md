@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/responsive-styles@0.2.20...@times-components/responsive-styles@0.3.0) (2018-02-21)
+
+
+### Features
+
+* add author profile animations ([#670](https://github.com/newsuk/times-components/issues/670)) ([9198122](https://github.com/newsuk/times-components/commit/9198122))
+
+
+
+
 <a name="0.2.20"></a>
 ## [0.2.20](https://github.com/newsuk/times-components/compare/@times-components/responsive-styles@0.2.19...@times-components/responsive-styles@0.2.20) (2018-02-20)
 

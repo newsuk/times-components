@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.9"></a>
+## [0.1.9](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.1.8...@times-components/provider-test-tools@0.1.9) (2018-02-21)
+
+
+### Bug Fixes
+
+* update react apollo mocks ([#671](https://github.com/newsuk/times-components/issues/671)) ([844ac6f](https://github.com/newsuk/times-components/commit/844ac6f))
+
+
+
+
 <a name="0.1.8"></a>
 ## [0.1.8](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.1.7...@times-components/provider-test-tools@0.1.8) (2018-02-20)
 
