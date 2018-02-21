@@ -1,37 +1,30 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
-import withResponsiveStyles from "@times-components/responsive-styles";
 import { DefaultSlice } from "./";
 
-const moduleStyle = StyleSheet.create({
-  item: {
-    height: 150
+const styles = StyleSheet.create({
+  child: {
+    minHeight: 150
   }
 });
 
 const colours = [
-  { backgroundColor: "yellow", key: 1 },
-  { backgroundColor: "red", key: 2 },
+  { backgroundColor: "red", key: 1 },
+  { backgroundColor: "yellow", key: 2 },
   { backgroundColor: "green", key: 3 }
 ];
 
-const createDefaultItems = noOfItems => {
-  const ChildContainer = getChildContainer(noOfItems);
-  const Child = getChild(noOfItems);
-  return colours
+const createDefaultItems = noOfItems =>
+  colours
     .map(colour => {
       const { backgroundColor, key } = colour;
       if (key > noOfItems) return false;
       return (
-        <View
-          key={`item${key}`}
-          style={[moduleStyle.item, { backgroundColor }]}
-        />
+        <View key={`item${key}`} style={[styles.child, { backgroundColor }]} />
       );
     })
     .filter(item => item !== false);
-}
 
 storiesOf("Primitives/Slice", module)
   .add("Default template with one item", () => (

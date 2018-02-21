@@ -1,5 +1,4 @@
-import Slice from './slice';
-import DefaultSlice from './default';
-import LeadSlice from './lead';
+import Slice from "./slice";
+import DefaultSlice from "./default";
 
-export { DefaultSlice, LeadSlice, Slice };
+export { DefaultSlice, Slice };
