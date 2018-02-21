@@ -11,6 +11,15 @@ function prettifyHint([name, current, target]) {
   )}`;
 }
 
+function pickOverride(str = "") {
+  const [name, version] = str.split("@");
+  if (!version) {
+    return {};
+  }
+
+  return { [name]: version };
+}
+
 export default async function main({
   log,
   getPackages,
@@ -31,7 +40,11 @@ export default async function main({
   }
 
   const packagesList = await getPackages(argv.expr);
-  return depend(packagesList, argv.strategy ? strategies[argv.strategy] : null)
+  return depend(
+    packagesList,
+    argv.strategy ? strategies[argv.strategy] : null,
+    pickOverride(argv.pick)
+  )
     .then(
       ({ requirements, rules, suggestions, fixedPackages, versionSets }) => {
         if (argv.graph) {
