@@ -27,7 +27,6 @@ const makeHarness = ({
       action();
     } catch (e) {
       // eslint-disable-next-line no-console
-     console.log(e.message,">>>>>>>>>>>>>>>>>>>>>>",e.stack)
       window.console.error(`DOMContext Error: ${e.message}\n${e.stack}`);
       eventCallback("error", `${e.message}${e.stack}`);
     }
@@ -40,14 +39,12 @@ const makeHarness = ({
       withCatch(() => {
         // eslint-disable-next-line no-param-reassign
         window.scritpsProcessed = window.scritpsProcessed || [];
-        console.log('one', window.scritpsProcessed);
         const renderComplete = () => {
           if (!renderCompleteCalled) {
             renderCompleteCalled = true;
             eventCallback("renderComplete");
           }
         };
-        console.log('two', platform);
 
         const initialiser = init({
           el,
@@ -57,21 +54,17 @@ const makeHarness = ({
           renderComplete,
           platform
         });
-        console.log('two b', initialiser);
 
         if (initialiser.init) {
-          console.log('three', window.scritpsProcessed);
           initialiser.init();
         }
         this.loadScriptsParallel(scriptUris, () => {
-          console.log('four', scriptUris);
           this.runScriptsLoadedIf();
         });
       });
     },
     runScriptsLoadedIf() {
       if (scriptUris.length === window.scritpsProcessed.length) {
-        console.log('five', window.scritpsProcessed);
         this.scriptsLoaded();
       }
     },
@@ -121,10 +114,8 @@ const makeHarness = ({
 
     loadScriptsParallel(scripts, callback) {
       if (scripts.length === 0) {
-        console.log('eleven');
         callback();
       }
-      console.log('twelve', scripts.length);
       for (let i = 0; i < scripts.length; i += 1) {
         const scriptUri = scripts[i].uri;
         const timeout = scripts[i].timeout || -1;
@@ -132,7 +123,7 @@ const makeHarness = ({
         const scriptId = `dom-context-script-${scriptUri.replace(/\W/g, "")}`;
         let script = document.getElementById(scriptId);
         if (!script) {
-          console.log("create script:", scriptId);
+          log("create script:", scriptId);
           script = document.createElement("script");
           script.id = scriptId;
           script.type = "text/javascript";
@@ -158,14 +149,10 @@ const makeHarness = ({
 
     scriptsLoaded() {
       withCatch(() => {
-        console.log('six');
-
         if (scriptsLoadedCalled) {
-          console.log('seven');
           return;
         }
         scriptsLoadedCalled = true;
-        console.log('eight');
 
         // TODO: can we safetely remove the global concept???
         // const globals = {};
@@ -191,8 +178,6 @@ const makeHarness = ({
           // document
         });
         if (initialiser && initialiser.scriptsLoaded) {
-          console.log('nine');
-
           initialiser.scriptsLoaded();
         }
       });

@@ -11,7 +11,7 @@ jest.mock("../webview-event-callback-setup", () => "mockErrorHandler");
 jest.mock("WebView", () => "WebView"); // https://github.com/facebook/react-native/issues/12440
 
 describe("DOMContext Native", () => {
-  let platform = "native";
+  const platform = "native";
 
   afterEach(() => {
     jest.resetModules();
@@ -76,7 +76,11 @@ describe("DOMContext Native", () => {
 
   it("renders correctly", () => {
     const component = renderer.create(
-      <DOMContextNative init={() => {}} data={{ foo: "bar" }} platform={platform}/>
+      <DOMContextNative
+        init={() => {}}
+        data={{ foo: "bar" }}
+        platform={platform}
+      />
     );
     const s = component.toJSON();
 

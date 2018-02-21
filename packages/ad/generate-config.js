@@ -45,10 +45,6 @@ const getSlotConfig = (section, pos, width) => {
   const adSizes = getAdSizes(pos, width);
   const mappings = getSizeMaps(pos);
   const maxSizes = getMaxSizes(adSizes);
-  console.log('sizes are', JSON.stringify(adSizes));
-  console.log('maxSizes are', maxSizes);
-  console.log('mappings are', mappings);
-
 
   return {
     pos,

@@ -57,7 +57,6 @@ const adInit = args => {
         },
         _Q: []
       };
-      console.log(JSON.stringify(window.apstag ))
     },
     initApstag(amazonAccountID, timeout) {
       log(
@@ -131,7 +130,7 @@ const adInit = args => {
       });
     },
     configurePrebid(prebid, prebidOptions) {
-      console.log(
+      log(
         "pbjs",
         `configure prebid with timeout:${
           prebidOptions.timeout
@@ -141,7 +140,7 @@ const adInit = args => {
       prebid.bidderSettings = prebidOptions.bidderSettings; // eslint-disable-line no-param-reassign
     },
     scheduleGPTConfiguration(gtag, pageTargeting) {
-      console.log("gpt", "set page targeting", JSON.stringify(gtag));
+      log("gpt", "set page targeting", JSON.stringify(gtag));
       this.scheduleGPTAction(gtag, "set page targeting ok", () => {
         const pubads = gtag.pubads();
         Object.entries(pageTargeting || {}).forEach(entry =>
@@ -149,7 +148,7 @@ const adInit = args => {
         );
       });
       this.scheduleGPTAction(gtag, "configuration", () => {
-        console.log("gpt", `configure gpt`);
+        log("gpt", `configure gpt`);
         const pubads = gtag.pubads();
         pubads.disableInitialLoad();
         // Fetch multiple ads at the same time
@@ -349,7 +348,6 @@ const adInit = args => {
         }
 
         this.scheduleGPTConfiguration(window.googletag, pageTargeting);
-
       }
       this.scheduleSlotDefine(
         window.googletag,
