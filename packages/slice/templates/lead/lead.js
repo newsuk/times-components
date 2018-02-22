@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import { propTypes, defaultProps } from "./proptypes";
-import styles from "./styles";
+import styles from "../styles";
 
 const Slice = ({ lead, child1, child2 }) => {
   const hasChildren = child1();

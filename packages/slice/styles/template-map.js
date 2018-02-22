@@ -1,3 +1,4 @@
+// @TODO: delete this file when related articles wired up properly
 export default template => {
   const templateObject = {
     DEFAULT: "default",

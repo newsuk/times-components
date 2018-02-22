@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import propTypes from "./proptypes";
-import styles from "./styles";
+import styles from "../styles";
 
 const Slice = ({ children }) => (
   <View style={styles.container}>
