@@ -184,7 +184,6 @@ describe("Ad init", () => {
     });
     const nativeInit = adInit(nativeInitOptions);
     jest.spyOn(nativeInit, "dfpReady");
-    jest.spyOn(nativeInit, "displayAds");
 
     nativeInit.init();
     nativeInitOptions.window.googletag.cmd.forEach(cmd => cmd());
@@ -250,13 +249,13 @@ describe("Ad init", () => {
   });
 
   // TODO APSTAG
-  // it("setup and init Amazon apstag", () => {
-  //   /* eslint no-underscore-dangle: ["error", { "allow": ["_Q"] }] */
-  //   expect(window.apstag).toEqual(undefined);
-  //   init.configureApstag();
-  //   console.log('>>>>>>.', window.apstag);
-  //   expect(window.apstag._Q).toEqual([]);
-  //   init.initApstag("3360", 3000);
-  //   expect(window.apstag._Q).toEqual([["i", {"adServer": "googletag", "bidTimeout": 3000, "pubID": "3360"}]]);
-  // });
+  it("setup and init Amazon apstag", () => {
+    /* eslint no-underscore-dangle: ["error", { "allow": ["_Q"] }] */
+    expect(window.apstag).toEqual(undefined);
+    init.configureApstag();
+    expect(window.apstag._Q).toEqual([]);
+
+    init.initApstag("3360", 3000);
+    expect(window.apstag._Q).not.toBe([]);
+  });
 });
