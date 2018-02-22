@@ -14,7 +14,7 @@ const functionalColours = {
   red: "#CC0000",
   tinted: "#EFEFEF",
   white: "#FFFFFF",
-  yellow: "#EAA000"
+  yellow: "#EAA000" 
 };
 
 export default functionalColours;
