@@ -213,8 +213,10 @@ const adInit = args => {
     },
     displayAds(gtag, pb, ap) {
       log("verbose", "displayAds");
-      this.applyPrebidTargeting(pb);
-      this.applyAmazonTargeting(ap);
+      if (platform === "web") {
+        this.applyPrebidTargeting(pb);
+        this.applyAmazonTargeting(ap);
+      }
       log("gpt", "googletag refresh called");
       gtag.pubads().refresh();
     },
@@ -344,6 +346,10 @@ const adInit = args => {
             networkId,
             adUnit,
             section
+          );
+        } else {
+          this.dfpReady(window.googletag).then(
+            this.displayAds.bind(this, window.googletag)
           );
         }
 

@@ -102,10 +102,11 @@ describe("DOMContext Web", () => {
   //   expect(onRenderComplete).toHaveBeenCalled();
   // });
 
-  //  --------- FIX ME
+  // --------- FIX ME
   // it("does not error when init calls renderComplete but no onRenderComplete callback is provided", () => {
+  //   const init = jest.fn();
   //   const f = () => {
-  //     mount(<DOMContext init={({ renderComplete }) => renderComplete()} platform={platform}/>);
+  //     mount(<DOMContext init={({ renderComplete }, {init}) => {renderComplete();}} platform={platform}/>);
   //   };
   //   expect(f).not.toThrow();
   // });

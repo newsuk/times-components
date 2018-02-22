@@ -7,7 +7,7 @@ jest.useFakeTimers();
 
 describe("Ad init", () => {
   let document;
-  // let window;
+  let window;
   let initOptions;
   let init;
   let mockPubAds;
@@ -19,7 +19,7 @@ describe("Ad init", () => {
 
   beforeEach(() => {
     document = jsdom("<html></html>");
-    // window = document.defaultView;
+    window = document.defaultView;
     mockPubAds = {
       setTargeting: jest.fn(),
       disableInitialLoad: jest.fn(),
@@ -44,6 +44,7 @@ describe("Ad init", () => {
       enableServices: jest.fn(),
       sizeMapping: jest.fn().mockImplementation(() => mockSizeMapping)
     };
+    window.googletag = mockGoogletag;
     slotConfig = {
       containerID: "mock-code",
       pos: "mock-code",
@@ -84,10 +85,7 @@ describe("Ad init", () => {
           bidderSettings: {}
         }
       },
-      window: {
-        googletag: mockGoogletag,
-        apstag: {}
-      },
+      window,
       // globals: {
       //   googletag: mockGoogletag
       // },
@@ -106,7 +104,7 @@ describe("Ad init", () => {
     expectFunctionToBeSerialisable(adInit);
   });
 
-  it("performs bidding and page initialisation once and initialize slot for each request", () => {
+  it("performs bidding and page initialisation once and initialize slot for each request for web", () => {
     init.initializeBidding = jest.fn();
     init.scheduleGPTConfiguration = jest.fn();
     init.scheduleSlotDefine = jest.fn();
@@ -120,6 +118,27 @@ describe("Ad init", () => {
     // called once in the first init call, so 1 + 0 = 1
     expect(init.initializeBidding).toHaveBeenCalledTimes(1);
     expect(init.scheduleSlotDefine).toHaveBeenCalledTimes(2);
+  });
+
+  it("does not perform bidding request for native", () => {
+    const nativeInitOptions = Object.assign(initOptions, {
+      platform: "native"
+    });
+    const nativeInit = adInit(nativeInitOptions);
+
+    nativeInit.initializeBidding = jest.fn();
+    nativeInit.scheduleGPTConfiguration = jest.fn();
+    nativeInit.scheduleSlotDefine = jest.fn();
+
+    nativeInit.init();
+    expect(nativeInit.initializeBidding).toHaveBeenCalledTimes(0);
+    expect(nativeInit.scheduleGPTConfiguration).toHaveBeenCalledTimes(1);
+    expect(nativeInit.scheduleSlotDefine).toHaveBeenCalledTimes(1);
+
+    nativeInit.init();
+    // called once in the first init call, so 1 + 0 = 1
+    expect(nativeInit.scheduleGPTConfiguration).toHaveBeenCalledTimes(1);
+    expect(nativeInit.scheduleSlotDefine).toHaveBeenCalledTimes(2);
   });
 
   it("configures googletag on page init", () => {
@@ -144,16 +163,36 @@ describe("Ad init", () => {
     );
   });
 
-  // it("displays all ads after a delay", () => {
-  //   init.init();
-  //   processGoogletagCommandQueue();
-  //   expect(mockGoogletag.display).not.toHaveBeenCalled();
-  //   expect(mockPubAds.refresh).not.toHaveBeenCalled();
-  //   jest.runAllTimers();
-  //   processGoogletagCommandQueue();
-  //   expect(mockPubAds.refresh).toHaveBeenCalled();
-  //   expect(mockGoogletag.display).toHaveBeenCalled();
-  // });
+  it("displays all ads for web", () => {
+    init.initializeBidding = jest.fn();
+
+    init.init();
+    processGoogletagCommandQueue();
+    expect(mockGoogletag.display).toHaveBeenCalled(); // when slot is define
+    expect(mockPubAds.refresh).not.toHaveBeenCalled(); // when prebid, amazon and dfp is ready
+
+    init.applyPrebidTargeting = jest.fn();
+    init.applyAmazonTargeting = jest.fn();
+    init.displayAds(mockGoogletag);
+    expect(init.applyPrebidTargeting).toHaveBeenCalled();
+    expect(mockPubAds.refresh).toHaveBeenCalled();
+  });
+
+  it("displays all ads for native", () => {
+    const nativeInitOptions = Object.assign(initOptions, {
+      platform: "native"
+    });
+    const nativeInit = adInit(nativeInitOptions);
+    jest.spyOn(nativeInit, "dfpReady");
+    jest.spyOn(nativeInit, "displayAds");
+
+    nativeInit.init();
+    nativeInitOptions.window.googletag.cmd.forEach(cmd => cmd());
+    nativeInitOptions.window.googletag.cmd = [];
+
+    expect(nativeInitOptions.window.googletag.display).toHaveBeenCalled(); // when slot is define
+    expect(nativeInit.dfpReady).toHaveBeenCalled();
+  });
 
   it("throws if defineSlot returns null", () => {
     mockGoogletag.defineSlot.mockImplementation(() => null);
@@ -211,14 +250,13 @@ describe("Ad init", () => {
   });
 
   // TODO APSTAG
-  // it.only("setup and init Amazon apstag", () => {
+  // it("setup and init Amazon apstag", () => {
   //   /* eslint no-underscore-dangle: ["error", { "allow": ["_Q"] }] */
   //   expect(window.apstag).toEqual(undefined);
   //   init.configureApstag();
-  //   expect(window.apstag).toEqual({"_Q":[]});
+  //   console.log('>>>>>>.', window.apstag);
+  //   expect(window.apstag._Q).toEqual([]);
   //   init.initApstag("3360", 3000);
-  //   expect(window.apstag._Q).toEqual([
-  //     ["i", { pubID: "3360", adServer: "googletag", bidTimeout: 3000 }]
-  //   ]);
+  //   expect(window.apstag._Q).toEqual([["i", {"adServer": "googletag", "bidTimeout": 3000, "pubID": "3360"}]]);
   // });
 });

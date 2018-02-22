@@ -45,7 +45,6 @@ const makeHarness = ({
             eventCallback("renderComplete");
           }
         };
-
         const initialiser = init({
           el,
           data,
