@@ -2,7 +2,7 @@
   "name": "@times-components/slice",
   "version": "0.4.8",
   "description": "Slice",
-  "main": "slice",
+  "main": "index",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
