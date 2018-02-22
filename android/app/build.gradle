@@ -161,7 +161,7 @@ dependencies {
       exclude group: "com.google.android.gms"
    }
     implementation project(path: ':rntbrightcovevideo')
-    implementation "com.facebook.react:react-native:0.50.1"  // From node_modules
+    implementation "com.facebook.react:react-native:0.53.+"  // From node_modules
     implementation "com.facebook.stetho:stetho:1.5.0"
 }
 

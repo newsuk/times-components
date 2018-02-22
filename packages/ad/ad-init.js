@@ -197,10 +197,10 @@ const adInit = args => {
         console.error("Set Targeting for GTP Async with prebid failed:", ex); // eslint-disable-line no-console
       }
     },
-    applyAmazonTargeting(ap) {
+    applyAmazonTargeting() {
       try {
-        if (ap) {
-          ap.setDisplayBids();
+        if (window.apstag) {
+          window.apstag.setDisplayBids();
         }
       } catch (exception) {
         /* eslint-disable no-console */
@@ -215,7 +215,7 @@ const adInit = args => {
       log("verbose", "displayAds");
       if (platform === "web") {
         this.applyPrebidTargeting(pb);
-        this.applyAmazonTargeting(ap);
+        this.applyAmazonTargeting();
       }
       log("gpt", "googletag refresh called");
       gtag.pubads().refresh();
