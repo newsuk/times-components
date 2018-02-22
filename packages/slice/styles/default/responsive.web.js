@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import config from "@times-components/article/styles/responsive-config";
+import config from "@times-components/responsive-styles";
 
 export const ChildrenContainer = ({ childCount }) => ({
   base: () => `

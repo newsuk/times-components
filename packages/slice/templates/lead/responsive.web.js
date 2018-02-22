@@ -111,18 +111,18 @@ export const getLeadContainer = hasChildren =>
     width: ${hasChildren ? "auto" : "100%"};
   `,
     mediumUp: () => {
-    const smallStyle = `
+      const smallStyle = `
       flex-grow: 0;
       padding-left: 0;
       padding-right: 0;
     `;
-    const largeStyle = `
+      const largeStyle = `
       flex-grow: 3;
       padding-left: 10px;
       padding-right: 10px;
     `;
-    return `
+      return `
       ${hasChildren ? largeStyle : smallStyle}
-    `
-  }
+    `;
+    }
   });

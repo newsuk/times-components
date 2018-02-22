@@ -42,7 +42,6 @@ storiesOf("Primitives/Slice", module)
       lead={() => (
         <View
           style={{
-            flex: 1,
             minHeight: 150,
             backgroundColor: colours[0].backgroundColor
           }}
@@ -55,7 +54,6 @@ storiesOf("Primitives/Slice", module)
       lead={() => (
         <View
           style={{
-            flex: 1,
             minHeight: 150,
             backgroundColor: colours[0].backgroundColor
           }}
@@ -64,7 +62,6 @@ storiesOf("Primitives/Slice", module)
       child1={() => (
         <View
           style={{
-            flex: 1,
             minHeight: 150,
             backgroundColor: colours[1].backgroundColor
           }}
@@ -77,7 +74,6 @@ storiesOf("Primitives/Slice", module)
       lead={() => (
         <View
           style={{
-            flex: 1,
             minHeight: 150,
             backgroundColor: colours[0].backgroundColor
           }}
@@ -86,7 +82,6 @@ storiesOf("Primitives/Slice", module)
       child1={() => (
         <View
           style={{
-            flex: 1,
             minHeight: 150,
             backgroundColor: colours[1].backgroundColor
           }}
@@ -95,7 +90,6 @@ storiesOf("Primitives/Slice", module)
       child2={() => (
         <View
           style={{
-            flex: 1,
             minHeight: 150,
             backgroundColor: colours[2].backgroundColor
           }}
