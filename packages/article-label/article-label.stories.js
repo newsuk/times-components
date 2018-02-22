@@ -9,10 +9,6 @@ import ArticleLabel from "./article-label";
 storiesOf("Primitives/ArticleLabel", module).add("ArticleLabel", () => (
   <ArticleLabel
     title="swimming"
-    color={select(
-      "Section",
-      invert(colours.sectionColours),
-      colours.sectionColours.default
-    )}
+    color={select("Section", invert(colours.section), colours.section.default)}
   />
 ));
