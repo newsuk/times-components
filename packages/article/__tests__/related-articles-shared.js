@@ -124,7 +124,7 @@ export default () => {
   });
 
   describe("Related articles analytics", () => {
-    it("handles no related articles", () => {
+    it("sends analytics even if no related articles are rendered", () => {
       const events = jest.fn();
       const data = {
         relatedArticles: [],
@@ -138,7 +138,7 @@ export default () => {
       expect(events.mock.calls).toMatchSnapshot();
     });
 
-    it("renders single related article", () => {
+    it("sends analytics if a single related article is rendered", () => {
       const events = jest.fn();
       renderer.create(
         <RelatedArticles
@@ -151,7 +151,7 @@ export default () => {
       expect(events.mock.calls).toMatchSnapshot();
     });
 
-    it("renders single related article with no lead image", () => {
+    it("sends analytics if a single related article with no lead image is rendered", () => {
       const events = jest.fn();
       renderer.create(
         <RelatedArticles
@@ -164,7 +164,7 @@ export default () => {
       expect(events.mock.calls).toMatchSnapshot();
     });
 
-    it("renders single related article with no label", () => {
+    it("sends analytics if a single related article with no label is rendered", () => {
       const events = jest.fn();
       renderer.create(
         <RelatedArticles
@@ -177,7 +177,7 @@ export default () => {
       expect(events.mock.calls).toMatchSnapshot();
     });
 
-    it("renders single related article with no byline", () => {
+    it("sends analytics if a single related article with no byline is rendered", () => {
       const events = jest.fn();
       renderer.create(
         <RelatedArticles
@@ -190,7 +190,7 @@ export default () => {
       expect(events.mock.calls).toMatchSnapshot();
     });
 
-    it("renders two related articles", () => {
+    it("sends analytics if two related articles are rendered", () => {
       const events = jest.fn();
       renderer.create(
         <RelatedArticles
@@ -203,7 +203,7 @@ export default () => {
       expect(events.mock.calls).toMatchSnapshot();
     });
 
-    it("renders three related articles", () => {
+    it("sends analytics if three related articles are rendered", () => {
       const events = jest.fn();
       renderer.create(
         <RelatedArticles
