@@ -18,10 +18,10 @@ export default StyleSheet.create({
   title: {
     fontFamily: "TimesModern-Bold",
     fontSize: 26,
-    color: "#333"
+    color: colours.functional.greyDark
   },
   headline: {
-    color: "#333333",
+    color: colours.functional.greyDark,
     marginBottom: 5,
     fontFamily: "TimesModern-Bold",
     fontWeight: "400"
