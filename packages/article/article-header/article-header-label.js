@@ -5,7 +5,6 @@ import { colours } from "@times-components/styleguide";
 import { View } from "react-native";
 import styles from "../styles/article-header";
 
-
 const HeaderLabel = ({ label }) => {
   if (!label) return null;
   return (
