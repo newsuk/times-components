@@ -1,11 +1,7 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { LateralSpacingDecorator } from "@times-components/storybook";
-import ArticleSummary from "@times-components/article-summary";
 import Card from "./card";
-import NewCard from "./new-card";
-import articleSummaryProps from "./fixtures/article-summary-props";
 
 const cardProps = {
   image: {
@@ -14,52 +10,21 @@ const cardProps = {
   },
   imageRatio: 1.5,
   imageSize: 360,
+  imageMinWidth: 250,
   showImage: true
 };
 
 storiesOf("Composed/Card", module)
-  .addDecorator(LateralSpacingDecorator)
-  .add("Loading", () => (
-    <Card {...cardProps} isLoading>
-      <Text>Is loading</Text>
-    </Card>
-  ))
+  .add("Loading", () => <Card {...cardProps} isLoading />)
   .add("Default", () => (
     <Card {...cardProps}>
-      <ArticleSummary {...articleSummaryProps} />
+      <View
+        style={{
+          backgroundColor: "blue",
+          flex: 1,
+          minHeight: 200,
+          minWidth: 650
+        }}
+      />
     </Card>
-  ))
-  .add("Without Image", () => (
-    <Card
-      {...Object.assign({}, cardProps, {
-        image: {
-          url: null
-        }
-      })}
-    >
-      <ArticleSummary {...articleSummaryProps} />
-    </Card>
-  ));
-
-storiesOf("Composed/NewCard", module)
-  .add("Loading", () => (
-    <NewCard {...cardProps} isLoading>
-      <Text>Is loading</Text>
-    </NewCard>
-  ))
-  .add("Default", () => (
-    <NewCard {...cardProps}>
-      <View style={{ backgroundColor: "blue", flex: 1, minHeight: 150 }} />
-    </NewCard>
-  ))
-  .add("Without Image", () => (
-    <NewCard
-      {...Object.assign({}, cardProps, {
-        image: {
-          url: null
-        }
-      })}
-    >
-      <ArticleSummary {...articleSummaryProps} />
-    </NewCard>
   ));

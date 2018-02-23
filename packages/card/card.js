@@ -1,28 +1,23 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { View, StyleSheet, ViewPropTypes } from "react-native";
+import React, { Component } from "react";
+import { View, ViewPropTypes } from "react-native";
 import Image from "@times-components/image";
 import { Animations } from "@times-components/styleguide";
-import Loading from "./card-loading";
+import Loading from "./loading";
+import { propTypes, defaultProps } from "./proptypes";
+import styles from "./styles/shared";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 
-const styles = StyleSheet.create({
-  imageContainer: {
-    marginBottom: 10
-  }
-});
-
-class CardComponent extends React.Component {
+class CardComponent extends Component {
   render() {
     const {
-      isLoading,
+      children,
       image,
       imageRatio,
       imageSize,
+      isLoading,
       showImage,
-      style,
-      children
+      style
     } = this.props;
 
     if (isLoading) {
@@ -34,11 +29,11 @@ class CardComponent extends React.Component {
     }
 
     const imageComponent =
-      image && image.uri ? (
+      image && showImage && image.uri ? (
         <View style={styles.imageContainer}>
           <Image
-            uri={`${image.uri}&resize=${imageSize}`}
             aspectRatio={imageRatio}
+            uri={`${image.uri}&resize=${imageSize}`}
           />
         </View>
       ) : null;
@@ -47,7 +42,7 @@ class CardComponent extends React.Component {
       <Animations.FadeIn>
         <View onLayout={this.handleLayout}>
           <View style={style}>
-            {showImage ? imageComponent : null}
+            {imageComponent}
             <View>{children}</View>
           </View>
         </View>
@@ -57,25 +52,13 @@ class CardComponent extends React.Component {
 }
 
 CardComponent.propTypes = {
-  image: PropTypes.shape({ uri: PropTypes.string }),
-  imageRatio: PropTypes.number,
-  imageSize: PropTypes.number,
-  showImage: PropTypes.bool,
-  style: ViewPropTypesStyle,
-  children: PropTypes.node,
-  isLoading: PropTypes.bool
+  ...propTypes,
+  style: ViewPropTypesStyle
 };
 
 CardComponent.defaultProps = {
-  image: {
-    uri: ""
-  },
-  imageRatio: 1,
-  imageSize: 100,
-  showImage: false,
-  style: null,
-  children: [],
-  isLoading: false
+  ...defaultProps,
+  style: null
 };
 
 export default CardComponent;
