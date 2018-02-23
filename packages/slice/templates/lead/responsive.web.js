@@ -37,16 +37,18 @@ ChildrenContainer.displayName = "ChildrenContainer";
 export const getChildContainer = (isSecondChild, hasTwoChildren) =>
   withResponsiveStyles(View, {
     base: () => {
+      const twoChildrenFirstStyle = `
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: #dbdbdb;
+        padding-bottom: 10px;
+      `;
+      const oneChildFirstStyle = `
+        padding-bottom: 0;
+      `;
       const firstChildStyle = hasTwoChildren
-        ? `
-      border-bottom-style: solid;
-      border-bottom-width: 1px;
-      border-bottom-color: #dbdbdb;
-      padding-bottom: 10px;
-    `
-        : `
-      padding-bottom: 0;
-    `;
+        ? twoChildrenFirstStyle
+        : oneChildFirstStyle;
 
       const secondChildStyle = `
       padding-top: 10px;
@@ -81,19 +83,19 @@ export const getContainer = hasChildren =>
     width: 100%;
   `,
     mediumUp: () => {
-      const smallStyle = `
+      const withoutChildrenStyle = `
       padding-left: 0px;
       padding-right: 0px;
       width: ${config.mediumBpWidth};
     `;
 
-      const largeStyle = `
+      const withChildrenStyle = `
       width: 100%;
     `;
 
       return `
       flex-direction: row;
-      ${hasChildren ? largeStyle : smallStyle}
+      ${hasChildren ? withChildrenStyle : withoutChildrenStyle}
     `;
     },
     wideUp: () => `
@@ -111,18 +113,18 @@ export const getLeadContainer = hasChildren =>
     width: ${hasChildren ? "auto" : "100%"};
   `,
     mediumUp: () => {
-      const smallStyle = `
+      const withoutChildrenStyle = `
       flex-grow: 0;
       padding-left: 0;
       padding-right: 0;
     `;
-      const largeStyle = `
+      const withChildrenStyle = `
       flex-grow: 3;
       padding-left: 10px;
       padding-right: 10px;
     `;
       return `
-      ${hasChildren ? largeStyle : smallStyle}
+      ${hasChildren ? withChildrenStyle : withoutChildrenStyle}
     `;
     }
   });
