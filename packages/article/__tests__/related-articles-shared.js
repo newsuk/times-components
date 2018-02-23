@@ -1,5 +1,3 @@
-/* global context */
-
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
@@ -207,7 +205,7 @@ export default () => {
 
     it("renders three related articles", () => {
       const events = jest.fn();
-      const tree = renderer.create(
+      renderer.create(
         <RelatedArticles
           {...createRelatedArticlesProps(
             threeRelatedArticlesFixture.data,
