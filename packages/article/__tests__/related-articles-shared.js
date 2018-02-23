@@ -3,7 +3,6 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import context from "jest-context";
 import mockDate from "mockdate";
 
 import RelatedArticles from "../related-articles/related-articles";
@@ -39,7 +38,7 @@ export default () => {
     global.Intl = realIntl;
   });
 
-  context("Related articles", () => {
+  describe("Related articles", () => {
     it("handles no related articles", () => {
       const events = jest.fn();
       const data = {
