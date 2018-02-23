@@ -1,3 +1,4 @@
+// @TODO: delete this file when related articles wired up properly
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import { propTypes, defaultProps } from "./proptypes";

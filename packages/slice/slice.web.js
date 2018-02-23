@@ -1,3 +1,4 @@
+// @TODO: delete this file when related articles wired up properly
 import React from "react";
 import { propTypes, defaultProps } from "./proptypes";
 import getTemplateName from "./styles/template-map";

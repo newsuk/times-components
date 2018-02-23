@@ -1,6 +1,7 @@
 import React from "react";
 import { ScrollView } from "react-native";
-import Slice from "@times-components/slice";
+// @TODO: use TemplateSlice components
+import { Slice } from "@times-components/slice";
 import RelatedArticlesHeading from "./heading";
 import RelatedArticleItem from "./related-article-item";
 import { relatedArticlesPropTypes, defaultProps } from "./proptypes";

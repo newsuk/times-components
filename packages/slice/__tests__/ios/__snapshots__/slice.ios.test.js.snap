@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Slice test on ios DEFAULT template renders a single child element 1`] = `
+exports[`1. DEFAULT template renders a single child element 1`] = `
 <View
   style={
     Object {
@@ -42,86 +42,13 @@ exports[`Slice test on ios DEFAULT template renders a single child element 1`] =
     >
       <ExampleChild
         key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
-      >
-        Test text 
-        08604618-fb0e-11e7-a987-7fcf5e9983dc
-      </ExampleChild>
-    </View>
-  </View>
-  <View
-    key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
-    style={
-      Object {
-        "borderBottomColor": "#dbdbdb",
-        "borderBottomWidth": 0.5,
-        "borderStyle": "solid",
-        "width": "100%",
-      }
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          },
-          Object {
-            "paddingTop": 10,
-          },
-        ]
-      }
-    >
-      <ExampleChild
-        key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
-      >
-        Test text 
-        08604618-fb0e-11e7-a987-7fcf5e9983dd
-      </ExampleChild>
-    </View>
-  </View>
-  <View
-    key="08604618-fb0e-11e7-a987-7fcf5e9983de"
-    style={
-      Object {
-        "borderBottomColor": "#dbdbdb",
-        "borderBottomWidth": 0.5,
-        "borderStyle": "solid",
-        "width": "100%",
-      }
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          },
-          Object {
-            "paddingTop": 10,
-          },
-        ]
-      }
-    >
-      <ExampleChild
-        key="08604618-fb0e-11e7-a987-7fcf5e9983de"
-      >
-        Test text 
-        08604618-fb0e-11e7-a987-7fcf5e9983de
-      </ExampleChild>
+      />
     </View>
   </View>
 </View>
 `;
 
-exports[`Slice test on ios DEFAULT template renders three child elements 1`] = `
+exports[`2. DEFAULT template renders two child elements 1`] = `
 <View
   style={
     Object {
@@ -163,10 +90,7 @@ exports[`Slice test on ios DEFAULT template renders three child elements 1`] = `
     >
       <ExampleChild
         key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
-      >
-        Test text 
-        08604618-fb0e-11e7-a987-7fcf5e9983dc
-      </ExampleChild>
+      />
     </View>
   </View>
   <View
@@ -198,51 +122,13 @@ exports[`Slice test on ios DEFAULT template renders three child elements 1`] = `
     >
       <ExampleChild
         key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
-      >
-        Test text 
-        08604618-fb0e-11e7-a987-7fcf5e9983dd
-      </ExampleChild>
-    </View>
-  </View>
-  <View
-    key="08604618-fb0e-11e7-a987-7fcf5e9983de"
-    style={
-      Object {
-        "borderBottomColor": "#dbdbdb",
-        "borderBottomWidth": 0.5,
-        "borderStyle": "solid",
-        "width": "100%",
-      }
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          },
-          Object {
-            "paddingTop": 10,
-          },
-        ]
-      }
-    >
-      <ExampleChild
-        key="08604618-fb0e-11e7-a987-7fcf5e9983de"
-      >
-        Test text 
-        08604618-fb0e-11e7-a987-7fcf5e9983de
-      </ExampleChild>
+      />
     </View>
   </View>
 </View>
 `;
 
-exports[`Slice test on ios DEFAULT template renders two child elements 1`] = `
+exports[`3. DEFAULT template renders three child elements 1`] = `
 <View
   style={
     Object {
@@ -284,10 +170,7 @@ exports[`Slice test on ios DEFAULT template renders two child elements 1`] = `
     >
       <ExampleChild
         key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
-      >
-        Test text 
-        08604618-fb0e-11e7-a987-7fcf5e9983dc
-      </ExampleChild>
+      />
     </View>
   </View>
   <View
@@ -319,10 +202,7 @@ exports[`Slice test on ios DEFAULT template renders two child elements 1`] = `
     >
       <ExampleChild
         key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
-      >
-        Test text 
-        08604618-fb0e-11e7-a987-7fcf5e9983dd
-      </ExampleChild>
+      />
     </View>
   </View>
   <View
@@ -354,10 +234,214 @@ exports[`Slice test on ios DEFAULT template renders two child elements 1`] = `
     >
       <ExampleChild
         key="08604618-fb0e-11e7-a987-7fcf5e9983de"
-      >
-        Test text 
-        08604618-fb0e-11e7-a987-7fcf5e9983de
-      </ExampleChild>
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`4. LEAD_AND_TWO template renders a single child element 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "column",
+      "justifyContent": "flex-start",
+      "marginBottom": 10,
+      "marginTop": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          },
+          Object {
+            "paddingTop": 0,
+          },
+        ]
+      }
+    >
+      <ExampleChild />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`5. LEAD_AND_TWO template renders two child elements 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "column",
+      "justifyContent": "flex-start",
+      "marginBottom": 10,
+      "marginTop": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          },
+          Object {
+            "paddingTop": 0,
+          },
+        ]
+      }
+    >
+      <ExampleChild />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
+      }
+    >
+      <ExampleChild />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`6. LEAD_AND_TWO template renders three child elements 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "column",
+      "justifyContent": "flex-start",
+      "marginBottom": 10,
+      "marginTop": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          },
+          Object {
+            "paddingTop": 0,
+          },
+        ]
+      }
+    >
+      <ExampleChild />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
+      }
+    >
+      <ExampleChild />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#dbdbdb",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
+      }
+    >
+      <ExampleChild />
     </View>
   </View>
 </View>

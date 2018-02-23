@@ -1,41 +1,99 @@
 import { StyleSheet, View } from "react-native";
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
-import Slice from "./slice";
+import { DefaultSlice, LeadSlice } from "./";
 
-const moduleStyle = StyleSheet.create({
-  item: {
-    height: 150
+const styles = StyleSheet.create({
+  child: {
+    minHeight: 150
   }
 });
 
 const colours = [
-  { backgroundColor: "blue", key: 1 },
-  { backgroundColor: "red", key: 2 },
-  { backgroundColor: "green", key: 3 }
+  { backgroundColor: "red", key: 1 },
+  { backgroundColor: "yellow", key: 2 },
+  { backgroundColor: "green", key: 3 },
+  { backgroundColor: "blue", key: 4 }
 ];
 
-const createItems = noOfItems =>
+const createDefaultItems = noOfItems =>
   colours
     .map(colour => {
       const { backgroundColor, key } = colour;
       if (key > noOfItems) return false;
       return (
-        <View
-          key={`item${key}`}
-          style={[moduleStyle.item, { backgroundColor }]}
-        />
+        <View key={`item${key}`} style={[styles.child, { backgroundColor }]} />
       );
     })
     .filter(item => item !== false);
 
 storiesOf("Primitives/Slice", module)
   .add("Default template with one item", () => (
-    <Slice template="DEFAULT">{createItems(1)}</Slice>
+    <DefaultSlice>{createDefaultItems(1)}</DefaultSlice>
   ))
   .add("Default template with two items", () => (
-    <Slice template="DEFAULT">{createItems(2)}</Slice>
+    <DefaultSlice>{createDefaultItems(2)}</DefaultSlice>
   ))
   .add("Default template with three items", () => (
-    <Slice template="DEFAULT">{createItems(3)}</Slice>
+    <DefaultSlice>{createDefaultItems(3)}</DefaultSlice>
+  ))
+  .add("Lead template with one item", () => (
+    <LeadSlice
+      lead={() => (
+        <View
+          style={{
+            minHeight: 150,
+            backgroundColor: colours[0].backgroundColor
+          }}
+        />
+      )}
+    />
+  ))
+  .add("Lead template with two items", () => (
+    <LeadSlice
+      lead={() => (
+        <View
+          style={{
+            minHeight: 150,
+            backgroundColor: colours[0].backgroundColor
+          }}
+        />
+      )}
+      child1={() => (
+        <View
+          style={{
+            minHeight: 150,
+            backgroundColor: colours[1].backgroundColor
+          }}
+        />
+      )}
+    />
+  ))
+  .add("Lead template with three items", () => (
+    <LeadSlice
+      lead={() => (
+        <View
+          style={{
+            minHeight: 320,
+            backgroundColor: colours[0].backgroundColor
+          }}
+        />
+      )}
+      child1={() => (
+        <View
+          style={{
+            minHeight: 150,
+            backgroundColor: colours[1].backgroundColor
+          }}
+        />
+      )}
+      child2={() => (
+        <View
+          style={{
+            minHeight: 150,
+            backgroundColor: colours[2].backgroundColor
+          }}
+        />
+      )}
+    />
   ));
