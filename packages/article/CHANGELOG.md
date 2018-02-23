@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.40.0"></a>
+# [0.40.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.39.1...@times-components/article@0.40.0) (2018-02-23)
+
+
+### Features
+
+* Slice API for default and lead ([#675](https://github.com/newsuk/times-components/issues/675)) ([c7a0f94](https://github.com/newsuk/times-components/commit/c7a0f94))
+
+
+
+
 <a name="0.39.1"></a>
 ## [0.39.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.39.0...@times-components/article@0.39.1) (2018-02-23)
 

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-image",
-  "version": "0.11.35",
+  "version": "0.11.36",
   "description": "Article Image",
   "main": "article-image",
   "scripts": {
@@ -49,9 +49,9 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/caption": "0.9.42",
-    "@times-components/image": "1.13.20",
-    "@times-components/responsive-styles": "0.3.1",
+    "@times-components/caption": "0.9.43",
+    "@times-components/image": "1.13.21",
+    "@times-components/responsive-styles": "0.4.0",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {

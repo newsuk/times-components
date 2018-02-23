@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "1.13.20",
+  "version": "1.13.21",
   "main": "image",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -50,7 +50,7 @@
   "dependencies": {
     "@times-components/gestures": "1.2.3",
     "@times-components/gradient": "0.5.8",
-    "@times-components/link": "0.14.3",
+    "@times-components/link": "0.14.4",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.1",
     "svgs": "3.2.1"
