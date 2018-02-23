@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { View } from "react-native";
+import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import { Animations } from "@times-components/styleguide";
 import Loading from "./loading";
@@ -63,7 +64,14 @@ class CardComponent extends Component {
   }
 }
 
-CardComponent.propTypes = propTypes;
-CardComponent.defaultProps = defaultProps;
+CardComponent.propTypes = {
+  ...propTypes,
+  imageMinWidth: PropTypes.number
+};
+
+CardComponent.defaultProps = {
+  ...defaultProps,
+  imageMinWidth: 100
+};
 
 export default CardComponent;

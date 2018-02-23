@@ -15,7 +15,6 @@ export const propTypes = {
   image: PropTypes.shape({ uri: PropTypes.string }),
   imageRatio: PropTypes.number,
   imageSize: PropTypes.number,
-  imageWidth: PropTypes.number,
   isLoading: PropTypes.bool,
   showImage: PropTypes.bool
 };
@@ -27,7 +26,6 @@ export const defaultProps = {
   },
   imageRatio: 1,
   imageSize: 100,
-  imageWidth: 100,
   isLoading: false,
   showImage: false
 };
