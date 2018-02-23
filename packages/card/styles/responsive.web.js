@@ -13,7 +13,7 @@ export const CardContainer = withResponsiveStyles(View, {
   `
 });
 
-export const getImageContainer = imageSize =>
+export const getImageContainer = imageMinWidth =>
   withResponsiveStyles(View, {
     base: () => `
     flex: 1;
@@ -21,7 +21,7 @@ export const getImageContainer = imageSize =>
   `,
     mediumUp: () => `
     margin-bottom: 0;
-    min-width: ${imageSize}px;
+    min-width: ${imageMinWidth}px;
     padding-right: 15px;
   `
   });

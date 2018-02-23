@@ -21,9 +21,9 @@ class CardComponent extends Component {
     const {
       children,
       image,
+      imageMinWidth,
       imageRatio,
       imageSize,
-      imageMinWidth,
       isLoading,
       showImage
     } = this.props;

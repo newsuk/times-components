@@ -44,8 +44,8 @@ const CardComponent = ({
         </View>
       </View>
     </Animations.FadeIn>
-  )
-}
+  );
+};
 
 CardComponent.propTypes = {
   ...propTypes,

@@ -11,7 +11,7 @@ const cardProps = {
   },
   imageRatio: 1.5,
   imageSize: 360,
-  imageMinWidth: 250,
+  imageMinWidth: 200,
   showImage: true
 };
 
@@ -23,8 +23,7 @@ storiesOf("Composed/Card", module)
         style={{
           backgroundColor: "blue",
           flex: 1,
-          minHeight: 200,
-          minWidth: 650
+          minHeight: 200
         }}
       />
     </Card>
