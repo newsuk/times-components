@@ -3,14 +3,12 @@ import withResponsiveStyles from "@times-components/responsive-styles";
 
 export const ImageContainer = withResponsiveStyles(View, {
   base: () => `
-    flex-grow: 1;
-    flex-shrink: 1 !important;
-    margin-bottom: 10px;
+    flex: 2;
+    margin-bottom: 0;
+    min-width: 350px;
   `,
   mediumUp: () => `
-    flex-grow: 2;
-    flex-basis: 0 !important;
-    margin-bottom: 0;
+    padding-right: 15px;
   `
 });
 
