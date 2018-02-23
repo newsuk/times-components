@@ -1,20 +1,20 @@
 const functionalColours = {
-  white: "#FFFFFF",
-  offWhite: "#F9F9F9",
   black: "#1D1D1B",
+  blue: "#006699",
+  blueDark: "#1A1F24",
+  buff: "#F4F2E8",
+  error: "#DB133B",
+  gold: "#8F7F75",
   grey: "#666666",
   greyDark: "#333333",
   greyMid: "#696969",
   greyLight: "#D0CECE",
-  tinted: "#EFEFEF",
-  buff: "#F4F2E8",
   keyline: "#DBDBDB",
-  gold: "#8F7F75",
+  offWhite: "#F9F9F9",
   red: "#CC0000",
-  yellow: "#EAA000",
-  blue: "#006699",
-  blueDark: "#1A1F24",
-  error: "#DB133B"
+  tinted: "#EFEFEF",
+  white: "#FFFFFF",
+  yellow: "#EAA000"
 };
 
 export default functionalColours;
