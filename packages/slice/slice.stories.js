@@ -74,7 +74,7 @@ storiesOf("Primitives/Slice", module)
       lead={() => (
         <View
           style={{
-            minHeight: 150,
+            minHeight: 320,
             backgroundColor: colours[0].backgroundColor
           }}
         />
