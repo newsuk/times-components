@@ -1,11 +1,12 @@
 import { StyleSheet } from "react-native";
+import { colours } from "@times-components/styleguide";
 
 export default StyleSheet.create({
   titleContainer: {
     borderStyle: "solid",
-    borderBottomColor: "#dbdbdb",
+    borderBottomColor: colours.functional.keyline,
     borderBottomWidth: StyleSheet.hairlineWidth,
-    borderTopColor: "#dbdbdb",
+    borderTopColor: colours.functional.keyline,
     borderTopWidth: StyleSheet.hairlineWidth,
     height: 55,
     display: "flex",
