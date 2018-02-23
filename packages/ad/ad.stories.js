@@ -69,13 +69,6 @@ storiesOf("Advertisement", module)
       </View>
     )
   )
-  .add("ad with grapeshot", () =>
-    withOpenInNewWindow(
-      <View>
-        <Ad section="news" pos="ad-header" contextUrl={articleUrl} />
-      </View>
-    )
-  )
   .add("render one ad and some text", () =>
     withOpenInNewWindow(
       <ScrollView>
