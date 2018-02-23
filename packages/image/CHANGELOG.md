@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.13.20"></a>
+## [1.13.20](https://github.com/newsuk/times-components/compare/@times-components/image@1.13.19...@times-components/image@1.13.20) (2018-02-23)
+
+
+### Bug Fixes
+
+* allow storybook-native debugging by upgrading react native ([#673](https://github.com/newsuk/times-components/issues/673)) ([2228d33](https://github.com/newsuk/times-components/commit/2228d33))
+
+
+
+
 <a name="1.13.19"></a>
 ## [1.13.19](https://github.com/newsuk/times-components/compare/@times-components/image@1.13.18...@times-components/image@1.13.19) (2018-02-21)
 

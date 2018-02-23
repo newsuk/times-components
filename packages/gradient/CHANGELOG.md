@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.8"></a>
+## [0.5.8](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.5.7...@times-components/gradient@0.5.8) (2018-02-23)
+
+
+### Bug Fixes
+
+* allow storybook-native debugging by upgrading react native ([#673](https://github.com/newsuk/times-components/issues/673)) ([2228d33](https://github.com/newsuk/times-components/commit/2228d33))
+
+
+
+
 <a name="0.5.7"></a>
 ## [0.5.7](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.5.6...@times-components/gradient@0.5.7) (2018-02-20)
 

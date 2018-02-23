@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.7"></a>
+## [0.2.7](https://github.com/newsuk/times-components/compare/@times-components/tealium@0.2.6...@times-components/tealium@0.2.7) (2018-02-23)
+
+
+### Bug Fixes
+
+* allow storybook-native debugging by upgrading react native ([#673](https://github.com/newsuk/times-components/issues/673)) ([2228d33](https://github.com/newsuk/times-components/commit/2228d33))
+
+
+
+
 <a name="0.2.6"></a>
 ## [0.2.6](https://github.com/newsuk/times-components/compare/@times-components/tealium@0.2.5...@times-components/tealium@0.2.6) (2018-02-20)
 
