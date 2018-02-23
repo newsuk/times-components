@@ -4,7 +4,9 @@ import { storiesOf } from "@storybook/react-native";
 import Slice from "./slice";
 
 const moduleStyle = StyleSheet.create({
-  height: 150
+  item: {
+    height: 150
+  }
 });
 
 const colours = [
@@ -19,7 +21,10 @@ const createItems = noOfItems =>
       const { backgroundColor, key } = colour;
       if (key > noOfItems) return false;
       return (
-        <View key={`item${key}`} style={[moduleStyle, { backgroundColor }]} />
+        <View
+          key={`item${key}`}
+          style={[moduleStyle.item, { backgroundColor }]}
+        />
       );
     })
     .filter(item => item !== false);

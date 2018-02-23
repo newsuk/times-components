@@ -87,6 +87,7 @@ exports[`Related articles test on ios Related articles renders single related ar
             accessibilityTraits={undefined}
             accessible={true}
             collapsable={undefined}
+            hasTVPreferredFocus={undefined}
             hitSlop={undefined}
             isTVSelectable={true}
             nativeID={undefined}
@@ -417,6 +418,7 @@ exports[`Related articles test on ios Related articles renders single related ar
             accessibilityTraits={undefined}
             accessible={true}
             collapsable={undefined}
+            hasTVPreferredFocus={undefined}
             hitSlop={undefined}
             isTVSelectable={true}
             nativeID={undefined}
@@ -739,6 +741,7 @@ exports[`Related articles test on ios Related articles renders single related ar
             accessibilityTraits={undefined}
             accessible={true}
             collapsable={undefined}
+            hasTVPreferredFocus={undefined}
             hitSlop={undefined}
             isTVSelectable={true}
             nativeID={undefined}
@@ -1040,6 +1043,7 @@ exports[`Related articles test on ios Related articles renders single related ar
             accessibilityTraits={undefined}
             accessible={true}
             collapsable={undefined}
+            hasTVPreferredFocus={undefined}
             hitSlop={undefined}
             isTVSelectable={true}
             nativeID={undefined}
@@ -1271,6 +1275,7 @@ exports[`Related articles test on ios Related articles renders three related art
             accessibilityTraits={undefined}
             accessible={true}
             collapsable={undefined}
+            hasTVPreferredFocus={undefined}
             hitSlop={undefined}
             isTVSelectable={true}
             nativeID={undefined}
@@ -1543,6 +1548,7 @@ exports[`Related articles test on ios Related articles renders three related art
             accessibilityTraits={undefined}
             accessible={true}
             collapsable={undefined}
+            hasTVPreferredFocus={undefined}
             hitSlop={undefined}
             isTVSelectable={true}
             nativeID={undefined}
@@ -1815,6 +1821,7 @@ exports[`Related articles test on ios Related articles renders three related art
             accessibilityTraits={undefined}
             accessible={true}
             collapsable={undefined}
+            hasTVPreferredFocus={undefined}
             hitSlop={undefined}
             isTVSelectable={true}
             nativeID={undefined}
@@ -2145,6 +2152,7 @@ exports[`Related articles test on ios Related articles renders two related artic
             accessibilityTraits={undefined}
             accessible={true}
             collapsable={undefined}
+            hasTVPreferredFocus={undefined}
             hitSlop={undefined}
             isTVSelectable={true}
             nativeID={undefined}
@@ -2417,6 +2425,7 @@ exports[`Related articles test on ios Related articles renders two related artic
             accessibilityTraits={undefined}
             accessible={true}
             collapsable={undefined}
+            hasTVPreferredFocus={undefined}
             hitSlop={undefined}
             isTVSelectable={true}
             nativeID={undefined}
