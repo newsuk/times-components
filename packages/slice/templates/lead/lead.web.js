@@ -12,13 +12,16 @@ import {
 const LeadSlice = ({ lead, child1, child2 }) => {
   const hasChildren = child1();
   const hasTwoChildren = child2();
-  const Container = getContainer(!!hasChildren);
+  const Container = getContainer({ hasChildren: !!hasChildren });
   Container.displayName = "Container";
-  const LeadContainer = getLeadContainer(!!hasChildren);
+  const LeadContainer = getLeadContainer({ hasChildren: !!hasChildren });
   LeadContainer.displayName = "LeadContainer";
-  const ChildContainer1 = getChildContainer(false, !!hasTwoChildren);
+  const ChildContainer1 = getChildContainer({
+    isSecondChild: false,
+    hasTwoChildren: !!hasTwoChildren
+  });
   ChildContainer1.displayName = "ChildContainer1";
-  const ChildContainer2 = getChildContainer(true);
+  const ChildContainer2 = getChildContainer({ isSecondChild: true });
   ChildContainer2.displayName = "ChildContainer2";
   return (
     <SliceContainer>

@@ -34,7 +34,7 @@ export const ChildrenContainer = withResponsiveStyles(View, {
 });
 ChildrenContainer.displayName = "ChildrenContainer";
 
-export const getChildContainer = (isSecondChild, hasTwoChildren) =>
+export const getChildContainer = ({ isSecondChild, hasTwoChildren }) =>
   withResponsiveStyles(View, {
     base: () => {
       const twoChildrenFirstStyle = `
@@ -71,7 +71,7 @@ export const getChildContainer = (isSecondChild, hasTwoChildren) =>
     `
   });
 
-export const getContainer = hasChildren =>
+export const getContainer = ({ hasChildren }) =>
   withResponsiveStyles(View, {
     base: () => `
     flex: 1;
@@ -103,7 +103,7 @@ export const getContainer = hasChildren =>
   `
   });
 
-export const getLeadContainer = hasChildren =>
+export const getLeadContainer = ({ hasChildren }) =>
   withResponsiveStyles(View, {
     base: () => `
     flex: 1;
