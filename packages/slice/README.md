@@ -1,13 +1,13 @@
 # Slice
 
-Slices are templates for articles. A slice lays out a set of articles according
-to template.
+Slices are templates for article cards. A slice lays out a set of cards
+according to template.
 
 ## Image Placeholder Rules
 
 If an article has no image available (either as the lead image or generated from
-the associated video), display a new generic Times/ ST logo, NOT one that is
-specific to the publication (Times/ Sun Times)
+the associated video), display a new generic Times / ST logo, NOT one that is
+specific to the publication (The Times / The Sunday Times)
 
 This should apply in the following scenarios when an image is in a slice:
 
