@@ -12,13 +12,13 @@ exports[`AuthorHead test on web renders 1`] = `
   color: #000;
 }
 
-.c2 {
-  width: 100px;
-}
-
 .c0 {
   -webkit-animation: eMLfYp 0.3s ease-in-out;
   animation: eMLfYp 0.3s ease-in-out;
+}
+
+.c2 {
+  width: 100px;
 }
 
 .c1 {
@@ -118,13 +118,13 @@ exports[`AuthorHead test on web renders with data 1`] = `
   color: #000;
 }
 
-.c2 {
-  width: 100px;
-}
-
 .c0 {
   -webkit-animation: eMLfYp 0.3s ease-in-out;
   animation: eMLfYp 0.3s ease-in-out;
+}
+
+.c2 {
+  width: 100px;
 }
 
 .c1 {
@@ -309,13 +309,13 @@ exports[`AuthorHead test on web renders without profile picture 1`] = `
   color: #000;
 }
 
-.c2 {
-  width: 100px;
-}
-
 .c0 {
   -webkit-animation: eMLfYp 0.3s ease-in-out;
   animation: eMLfYp 0.3s ease-in-out;
+}
+
+.c2 {
+  width: 100px;
 }
 
 .c1 {

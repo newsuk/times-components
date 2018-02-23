@@ -15,10 +15,10 @@ exports[`Related articles test on android Related articles renders single relate
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "#dbdbdb",
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 0.5,
           "borderStyle": "solid",
-          "borderTopColor": "#dbdbdb",
+          "borderTopColor": "#DBDBDB",
           "borderTopWidth": 0.5,
           "display": "flex",
           "height": 55,
@@ -34,7 +34,7 @@ exports[`Related articles test on android Related articles renders single relate
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#333",
+            "color": "#333333",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 26,
           }
@@ -378,10 +378,10 @@ exports[`Related articles test on android Related articles renders single relate
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "#dbdbdb",
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 0.5,
           "borderStyle": "solid",
-          "borderTopColor": "#dbdbdb",
+          "borderTopColor": "#DBDBDB",
           "borderTopWidth": 0.5,
           "display": "flex",
           "height": 55,
@@ -397,7 +397,7 @@ exports[`Related articles test on android Related articles renders single relate
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#333",
+            "color": "#333333",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 26,
           }
@@ -733,10 +733,10 @@ exports[`Related articles test on android Related articles renders single relate
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "#dbdbdb",
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 0.5,
           "borderStyle": "solid",
-          "borderTopColor": "#dbdbdb",
+          "borderTopColor": "#DBDBDB",
           "borderTopWidth": 0.5,
           "display": "flex",
           "height": 55,
@@ -752,7 +752,7 @@ exports[`Related articles test on android Related articles renders single relate
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#333",
+            "color": "#333333",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 26,
           }
@@ -1065,10 +1065,10 @@ exports[`Related articles test on android Related articles renders single relate
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "#dbdbdb",
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 0.5,
           "borderStyle": "solid",
-          "borderTopColor": "#dbdbdb",
+          "borderTopColor": "#DBDBDB",
           "borderTopWidth": 0.5,
           "display": "flex",
           "height": 55,
@@ -1084,7 +1084,7 @@ exports[`Related articles test on android Related articles renders single relate
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#333",
+            "color": "#333333",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 26,
           }
@@ -1296,10 +1296,10 @@ exports[`Related articles test on android Related articles renders three related
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "#dbdbdb",
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 0.5,
           "borderStyle": "solid",
-          "borderTopColor": "#dbdbdb",
+          "borderTopColor": "#DBDBDB",
           "borderTopWidth": 0.5,
           "display": "flex",
           "height": 55,
@@ -1315,7 +1315,7 @@ exports[`Related articles test on android Related articles renders three related
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#333",
+            "color": "#333333",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 26,
           }
@@ -2269,10 +2269,10 @@ exports[`Related articles test on android Related articles renders two related a
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "#dbdbdb",
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 0.5,
           "borderStyle": "solid",
-          "borderTopColor": "#dbdbdb",
+          "borderTopColor": "#DBDBDB",
           "borderTopWidth": 0.5,
           "display": "flex",
           "height": 55,
@@ -2288,7 +2288,7 @@ exports[`Related articles test on android Related articles renders two related a
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#333",
+            "color": "#333333",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 26,
           }
