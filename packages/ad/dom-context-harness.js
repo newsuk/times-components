@@ -31,8 +31,8 @@ const makeHarness = ({
       eventCallback("error", `${e.message}${e.stack}`);
     }
   };
-  const log = (...message) => {
-    eventCallback("log", `${data.pos} ad: ${message.join(" ")}`);
+  const log = (message) => {
+    eventCallback("log", `${data.pos} ad: ${message}`);
   };
   return {
     execute() {
@@ -51,7 +51,8 @@ const makeHarness = ({
           window,
           document,
           renderComplete,
-          platform
+          platform,
+          eventCallback
         });
 
         if (initialiser.init) {
@@ -79,14 +80,14 @@ const makeHarness = ({
 
     scriptLoaded(scriptId) {
       withCatch(() => {
-        log("script loaded:", scriptId);
+        log(`script loaded: ${scriptId}`);
         this.addProcessedScript(scriptId);
         this.runScriptsLoadedIf();
       });
     },
     scriptErrored(scriptId, canRequestFail, err) {
       withCatch(() => {
-        log("script errored:", scriptId);
+        log(`script errored ${scriptId}`);
         this.addProcessedScript(scriptId);
         if (!canRequestFail) {
           throw new Error(`Failed to load the script ${err}`);
@@ -97,12 +98,7 @@ const makeHarness = ({
 
     scriptTimeout(scriptId) {
       withCatch(() => {
-        log(
-          "script timeout id:",
-          scriptId,
-          "already processed:",
-          this.isScriptProcessed(scriptId)
-        );
+        log(`script timeout id: ${scriptId} already processed: ${this.isScriptProcessed(scriptId)}`);
         if (this.isScriptProcessed(scriptId)) {
           return;
         }
@@ -122,7 +118,6 @@ const makeHarness = ({
         const scriptId = `dom-context-script-${scriptUri.replace(/\W/g, "")}`;
         let script = document.getElementById(scriptId);
         if (!script) {
-          log("create script:", scriptId);
           script = document.createElement("script");
           script.id = scriptId;
           script.type = "text/javascript";
@@ -172,7 +167,8 @@ const makeHarness = ({
           // globals,
           renderComplete,
           window,
-          platform
+          platform,
+          eventCallback
           // TODO: can we safetely remove the document???
           // document
         });

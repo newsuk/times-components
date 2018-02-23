@@ -11,13 +11,15 @@ const adInit = args => {
     // TODO: can we safetely remove globals?
     // globals, // : { googletag, gs_channels = "DEFAULT", pbjs, apstag }, // eslint-disable-line camelcase
     renderComplete,
-    platform
+    platform,
+    eventCallback
   } = args;
 
   const logTypes = ["amazon", "gpt", "pbjs", "verbose"];
   const log = (type, message) => {
     if (!logTypes.includes(type)) return;
     console.log(`${type}: ${message}`); // eslint-disable-line no-console
+    eventCallback("log", `${type}: ${message}`);
   };
   return {
     scheduleGPTAction(gtag, label, action) {
