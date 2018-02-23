@@ -1,6 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
+import { boolean } from "@storybook/addon-knobs/react";
 import Card from "./card";
 
 const cardProps = {
@@ -17,7 +18,7 @@ const cardProps = {
 storiesOf("Composed/Card", module)
   .add("Loading", () => <Card {...cardProps} isLoading />)
   .add("Default", () => (
-    <Card {...cardProps}>
+    <Card {...cardProps} showImage={boolean("Show image?", true)}>
       <View
         style={{
           backgroundColor: "blue",

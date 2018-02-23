@@ -26,6 +26,8 @@ class CardComponent extends Component {
       showImage
     } = this.props;
 
+    console.log('showImage: ', showImage);
+
     if (isLoading) {
       return (
         <View>
