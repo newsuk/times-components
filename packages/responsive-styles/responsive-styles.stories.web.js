@@ -1,7 +1,6 @@
 import "react-native";
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
-import { checkA11y } from "@storybook/addon-a11y";
 import withResponsiveStyles from "./responsive-styles";
 
 const WithColours = withResponsiveStyles("div", {
@@ -12,6 +11,6 @@ const WithColours = withResponsiveStyles("div", {
   hugeUp: () => "color: purple;"
 });
 
-storiesOf("Helpers/ResponsiveStyles", module)
-  .addDecorator(checkA11y)
-  .add("ResponsiveStyles", () => <WithColours>Hello</WithColours>);
+storiesOf("Helpers/ResponsiveStyles", module).add("ResponsiveStyles", () => (
+  <WithColours>Hello</WithColours>
+));

@@ -28,7 +28,6 @@ const createDefaultItems = noOfItems =>
     .filter(item => item !== false);
 
 storiesOf("Primitives/Slice", module)
-  .addDecorator(checkA11y)
   .add("Default template with one item", () => (
     <DefaultSlice>{createDefaultItems(1)}</DefaultSlice>
   ))

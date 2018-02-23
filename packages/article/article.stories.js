@@ -1,6 +1,5 @@
 /* eslint-env browser */
 import { storiesOf } from "@storybook/react-native";
-import { checkA11y } from "@storybook/addon-a11y";
 import React from "react";
 import { Platform } from "react-native";
 import { addTypenameToDocument } from "apollo-utilities";
@@ -71,7 +70,6 @@ const adConfig = {
 };
 
 storiesOf("Pages/Article", module)
-  .addDecorator(checkA11y)
   .add("Default", () => {
     const props = {
       ...fullArticleFixture.data,

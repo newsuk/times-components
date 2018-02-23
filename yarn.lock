@@ -54,23 +54,17 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-<<<<<<< HEAD
-"@storybook/addon-actions@3.3.14", "@storybook/addon-actions@^3.3.14":
+"@storybook/addon-a11y@3.3.14":
   version "3.3.14"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.3.14.tgz#b78e707b32130ad16ea8a0af62a66f23b5df502b"
-=======
-"@storybook/addon-a11y@3.3.11":
-  version "3.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-3.3.11.tgz#04c1f4548ebb8e2d22577595e1743782fd023a93"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-3.3.14.tgz#dcf3253e768ebb25b2e4669706865946dfff5ec3"
   dependencies:
-    "@storybook/components" "^3.3.11"
+    "@storybook/components" "^3.3.14"
     axe-core "^2.6.0"
     prop-types "^15.6.0"
 
-"@storybook/addon-actions@3.3.11", "@storybook/addon-actions@^3.3.11":
-  version "3.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.3.11.tgz#158a64f01c97fcf6922e7a370c6519d216544bcd"
->>>>>>> Adding a11y to each package.json
+"@storybook/addon-actions@3.3.14", "@storybook/addon-actions@^3.3.14":
+  version "3.3.14"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.3.14.tgz#b78e707b32130ad16ea8a0af62a66f23b5df502b"
   dependencies:
     deep-equal "^1.0.1"
     global "^4.3.2"
@@ -148,15 +142,9 @@
   version "3.3.14"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-3.3.14.tgz#03d5bc6036a8e82351a349bec11a8c89f06c901e"
 
-<<<<<<< HEAD
 "@storybook/components@^3.3.14":
   version "3.3.14"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-3.3.14.tgz#84ffcb5ac6a7d40e145402ed0d1521e6ad1b2d4d"
-=======
-"@storybook/components@3.3.11", "@storybook/components@^3.3.11":
-  version "3.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-3.3.11.tgz#cb2a48b52e7cb45408172f4462f4730ca6970e78"
->>>>>>> Adding a11y to each package.json
   dependencies:
     glamor "^2.20.40"
     glamorous "^4.11.2"
@@ -982,6 +970,10 @@ aws-sign2@~0.7.0:
 aws4@^1.2.1, aws4@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
+
+axe-core@^2.6.0:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-2.6.1.tgz#28772c4f76966d373acda35b9a409299dc00d1b5"
 
 axobject-query@^0.1.0:
   version "0.1.0"

@@ -1,7 +1,6 @@
 import React from "react";
 import { Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { checkA11y } from "@storybook/addon-a11y";
 import { addTypenameToDocument } from "apollo-utilities";
 import gql from "graphql-tag";
 import { MockedProvider } from "@times-components/utils/graphql";
@@ -15,7 +14,6 @@ import { query as articleQuery } from "./article";
 import articleFixture from "./fixtures/article.json";
 
 storiesOf("Helpers/Provider", module)
-  .addDecorator(checkA11y)
   .add("Props and fetched data", () => {
     const query = gql`
       {
