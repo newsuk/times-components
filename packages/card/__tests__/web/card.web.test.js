@@ -14,7 +14,7 @@ const cardProps = {
   showImage: true
 };
 
-describe("Card test on web", () => {
+describe("Card tests on web", () => {
   it("renders", () => {
     const tree = renderer
       .create(
