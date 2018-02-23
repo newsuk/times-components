@@ -9,7 +9,7 @@ const functionalColours = {
   greyDark: "#333333",
   greyLight: "#D0CECE",
   greyMid: "#696969",
-  keyline: "#DBDBDB", 
+  keyline: "#DBDBDB",
   offWhite: "#F9F9F9",
   red: "#CC0000",
   tinted: "#EFEFEF",
