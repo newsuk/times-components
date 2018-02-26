@@ -5,7 +5,7 @@ import { getChildrenContainer, ChildContainer } from "./responsive";
 
 const DefaultSlice = ({ children }) => {
   const ChildrenContainer = getChildrenContainer(children);
-  const Separator = getSeparator({ withMargin: true });
+  const Separator = getSeparator({ hasLeftRightMargin: true });
 
   // for tests
   ChildrenContainer.displayName = "ChildrenContainer";
