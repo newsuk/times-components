@@ -50,7 +50,6 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@times-components/date-publication": "0.11.10",
     "@times-components/gradient": "0.5.8",
     "@times-components/image": "1.13.22",
