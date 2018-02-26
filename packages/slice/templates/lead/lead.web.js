@@ -13,7 +13,7 @@ const LeadSlice = ({ lead, support1, support2 }) => {
   const hasSupports = supports.length > 0;
   const Container = getContainer({ hasSupports });
   const LeadContainer = getLeadContainer({ hasSupports });
-  const Separator = getSeparator({ withMargin: false });
+  const Separator = getSeparator({ hasLeftRightMargin: false });
 
   // for tests
   Container.displayName = "Container";
