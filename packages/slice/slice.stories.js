@@ -59,14 +59,15 @@ storiesOf("Primitives/Slice", module)
           }}
         />
       )}
-      child1={() => (
+      sections={[
         <View
+          key={1}
           style={{
             minHeight: 150,
             backgroundColor: colours[1].backgroundColor
           }}
         />
-      )}
+      ]}
     />
   ))
   .add("Lead template with three items", () => (
@@ -79,21 +80,21 @@ storiesOf("Primitives/Slice", module)
           }}
         />
       )}
-      child1={() => (
+      sections={[
         <View
+          key={1}
           style={{
             minHeight: 150,
             backgroundColor: colours[1].backgroundColor
           }}
-        />
-      )}
-      child2={() => (
+        />,
         <View
+          key={2}
           style={{
             minHeight: 150,
             backgroundColor: colours[2].backgroundColor
           }}
         />
-      )}
+      ]}
     />
   ));

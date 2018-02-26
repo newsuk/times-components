@@ -1,11 +1,16 @@
 import React from "react";
 import propTypes from "./proptypes";
-import { Separator, SliceContainer } from "../shared.responsive";
+import { getSeparator, SliceContainer } from "../shared.responsive";
 import { getChildrenContainer, ChildContainer } from "./responsive";
 
 const DefaultSlice = ({ children }) => {
   const ChildrenContainer = getChildrenContainer(children);
+  const Separator = getSeparator({ withMargin: true });
+
+  // for tests
   ChildrenContainer.displayName = "ChildrenContainer";
+  Separator.displayName = "Separator";
+
   return (
     <SliceContainer>
       <ChildrenContainer>

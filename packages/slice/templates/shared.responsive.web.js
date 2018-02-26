@@ -13,8 +13,9 @@ export const SliceContainer = withResponsiveStyles(View, {
 });
 SliceContainer.displayName = "SliceContainer";
 
-export const Separator = withResponsiveStyles(View, {
-  base: () => `
+export const getSeparator = ({ withMargin }) =>
+  withResponsiveStyles(View, {
+    base: () => `
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: #dbdbdb;
@@ -23,16 +24,12 @@ export const Separator = withResponsiveStyles(View, {
     margin-top: 10px;
     min-width: auto;
   `,
-  mediumUp: () => `
+    mediumUp: () => `
     border-bottom: none;  
     border-right-style: solid;
     border-right-width: 1px;
     border-right-color: #dbdbdb;
     flex: 0 !important;
-    margin-bottom: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 0;
+    margin: ${withMargin ? "0 10px" : "0px"};
   `
-});
-Separator.displayName = "Separator";
+  });

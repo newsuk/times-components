@@ -63,7 +63,7 @@ module.exports = () => {
       const wrapper = shallow(
         <LeadSlice
           lead={() => <ExampleChild />}
-          child1={() => <ExampleChild />}
+          sections={[<ExampleChild key="section1" />]}
         />
       );
       expect(wrapper).toMatchSnapshot(
@@ -75,8 +75,7 @@ module.exports = () => {
       const wrapper = shallow(
         <LeadSlice
           lead={() => <ExampleChild />}
-          child1={() => <ExampleChild />}
-          child2={() => <ExampleChild />}
+          sections={[(<ExampleChild key="section1" />), (<ExampleChild key="section2" />)]}
         />
       );
       expect(wrapper).toMatchSnapshot(
