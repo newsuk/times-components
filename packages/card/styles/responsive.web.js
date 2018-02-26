@@ -21,7 +21,7 @@ export const getChildContainer = childRatio =>
     mediumUp: () => `
     flex: ${childRatio};
   `
-});
+  });
 
 export const getImageContainer = () =>
   withResponsiveStyles(View, {
@@ -34,4 +34,4 @@ export const getImageContainer = () =>
     margin-bottom: 0;
     padding-right: 15px;
   `
-});
+  });

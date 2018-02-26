@@ -12,7 +12,7 @@ const cardProps = {
     size: 360,
     uri:
       "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12"
-  },
+  }
 };
 
 describe("Card tests on web", () => {
@@ -41,12 +41,9 @@ describe("Card tests on web", () => {
   });
 
   it("renders without image", () => {
-    const noImageProps = Object.assign({}, cardProps, {
-      image: null
-    });
     const tree = renderer
       .create(
-        <Card {...noImageProps}>
+        <Card childRatio={5.7}>
           <span>No image</span>
         </Card>
       )
