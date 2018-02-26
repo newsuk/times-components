@@ -4,7 +4,7 @@ import { colours, fonts } from "@times-components/styleguide";
 
 const linkStyles = {
   color: colours.functional.blue,
-  fontFamily: fonts.bodyRegularSmallCaps,
+  fontFamily: fonts.bodyRegular,
   lineHeight: 26,
   fontSize: 17,
   marginBottom: 25,
