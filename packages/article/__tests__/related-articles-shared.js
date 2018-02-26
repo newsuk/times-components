@@ -36,7 +36,7 @@ export default () => {
     global.Intl = realIntl;
   });
 
-  describe("Related articles render", () => {
+  describe("Related articles", () => {
     it("handles no related articles", () => {
       const data = {
         relatedArticles: [],
@@ -123,7 +123,7 @@ export default () => {
     });
   });
 
-  describe("Related articles analytics", () => {
+  describe("Related articles tracking", () => {
     it("sends analytics even if no related articles are rendered", () => {
       const events = jest.fn();
       const data = {
