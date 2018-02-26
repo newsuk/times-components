@@ -1,11 +1,12 @@
 import { StyleSheet } from "react-native";
+import { colours } from "@times-components/styleguide";
 
 export default StyleSheet.create({
   titleContainer: {
     borderStyle: "solid",
-    borderBottomColor: "#dbdbdb",
+    borderBottomColor: colours.functional.keyline,
     borderBottomWidth: StyleSheet.hairlineWidth,
-    borderTopColor: "#dbdbdb",
+    borderTopColor: colours.functional.keyline,
     borderTopWidth: StyleSheet.hairlineWidth,
     height: 55,
     display: "flex",
@@ -17,10 +18,10 @@ export default StyleSheet.create({
   title: {
     fontFamily: "TimesModern-Bold",
     fontSize: 26,
-    color: "#333"
+    color: colours.functional.greyDark
   },
   headline: {
-    color: "#333333",
+    color: colours.functional.greyDark,
     marginBottom: 5,
     fontFamily: "TimesModern-Bold",
     fontWeight: "400"

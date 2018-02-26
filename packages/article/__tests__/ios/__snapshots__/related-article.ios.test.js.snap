@@ -15,10 +15,10 @@ exports[`Related articles test on ios Related articles renders single related ar
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "#dbdbdb",
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 0.5,
           "borderStyle": "solid",
-          "borderTopColor": "#dbdbdb",
+          "borderTopColor": "#DBDBDB",
           "borderTopWidth": 0.5,
           "display": "flex",
           "height": 55,
@@ -34,7 +34,7 @@ exports[`Related articles test on ios Related articles renders single related ar
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#333",
+            "color": "#333333",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 26,
           }
@@ -346,10 +346,10 @@ exports[`Related articles test on ios Related articles renders single related ar
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "#dbdbdb",
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 0.5,
           "borderStyle": "solid",
-          "borderTopColor": "#dbdbdb",
+          "borderTopColor": "#DBDBDB",
           "borderTopWidth": 0.5,
           "display": "flex",
           "height": 55,
@@ -365,7 +365,7 @@ exports[`Related articles test on ios Related articles renders single related ar
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#333",
+            "color": "#333333",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 26,
           }
@@ -669,10 +669,10 @@ exports[`Related articles test on ios Related articles renders single related ar
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "#dbdbdb",
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 0.5,
           "borderStyle": "solid",
-          "borderTopColor": "#dbdbdb",
+          "borderTopColor": "#DBDBDB",
           "borderTopWidth": 0.5,
           "display": "flex",
           "height": 55,
@@ -688,7 +688,7 @@ exports[`Related articles test on ios Related articles renders single related ar
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#333",
+            "color": "#333333",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 26,
           }
@@ -971,10 +971,10 @@ exports[`Related articles test on ios Related articles renders single related ar
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "#dbdbdb",
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 0.5,
           "borderStyle": "solid",
-          "borderTopColor": "#dbdbdb",
+          "borderTopColor": "#DBDBDB",
           "borderTopWidth": 0.5,
           "display": "flex",
           "height": 55,
@@ -990,7 +990,7 @@ exports[`Related articles test on ios Related articles renders single related ar
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#333",
+            "color": "#333333",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 26,
           }
@@ -1203,10 +1203,10 @@ exports[`Related articles test on ios Related articles renders three related art
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "#dbdbdb",
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 0.5,
           "borderStyle": "solid",
-          "borderTopColor": "#dbdbdb",
+          "borderTopColor": "#DBDBDB",
           "borderTopWidth": 0.5,
           "display": "flex",
           "height": 55,
@@ -1222,7 +1222,7 @@ exports[`Related articles test on ios Related articles renders three related art
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#333",
+            "color": "#333333",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 26,
           }
@@ -2080,10 +2080,10 @@ exports[`Related articles test on ios Related articles renders two related artic
       style={
         Object {
           "alignItems": "center",
-          "borderBottomColor": "#dbdbdb",
+          "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 0.5,
           "borderStyle": "solid",
-          "borderTopColor": "#dbdbdb",
+          "borderTopColor": "#DBDBDB",
           "borderTopWidth": 0.5,
           "display": "flex",
           "height": 55,
@@ -2099,7 +2099,7 @@ exports[`Related articles test on ios Related articles renders two related artic
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#333",
+            "color": "#333333",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 26,
           }

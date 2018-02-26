@@ -1,8 +1,9 @@
 import React from "react";
 import { TextLink } from "@times-components/link";
+import { colours } from "@times-components/styleguide";
 
 const linkStyles = {
-  color: "#069",
+  color: colours.functional.blue,
   fontFamily: "TimesDigitalW04-Regular",
   lineHeight: 26,
   fontSize: 17,

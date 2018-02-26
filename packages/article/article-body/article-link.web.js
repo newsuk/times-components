@@ -1,9 +1,10 @@
 import React from "react";
 import Link from "@times-components/link";
+import { colours } from "@times-components/styleguide";
 
 const responsiveLinkStyles = {
   base: `
-      color: #069;
+      color: ${colours.functional.blue};
       font-family: "TimesDigitalW04-Regular";
       line-height: 26px;
       font-size: 17px;
