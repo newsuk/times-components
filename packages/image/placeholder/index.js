@@ -31,12 +31,11 @@ class Placeholder extends React.Component {
 
   render() {
     const { style } = this.props;
-
     const { width } = this.state;
 
     const tComponent = width ? (
       <View style={[styles.container, styles.t]}>
-        <T width={width * 0.15} height={width * 0.15} />
+        <T width={width} height={width} />
       </View>
     ) : null;
 
