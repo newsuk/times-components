@@ -4021,7 +4021,7 @@ detox@5.8.2:
     telnet-client "0.15.3"
     ws "^1.1.1"
 
-dextrose@^1.4.6:
+dextrose@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.5.0.tgz#79ced11b639d773a3198ac1dd7b5b9b1200ae88f"
   dependencies:
@@ -8239,8 +8239,8 @@ no-case@^2.2.0:
     lower-case "^1.1.1"
 
 nock@^9.1.9:
-  version "9.2.3"
-  resolved "https://registry.yarnpkg.com/nock/-/nock-9.2.3.tgz#39738087d6a0497d3a165fb352612b38a2f9b92f"
+  version "9.2.1"
+  resolved "https://registry.yarnpkg.com/nock/-/nock-9.2.1.tgz#7e73561277c3e8f2287e385d3d04c7223a54faea"
   dependencies:
     chai "^4.1.2"
     debug "^3.1.0"
