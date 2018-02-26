@@ -11,7 +11,6 @@ const cardProps = {
   },
   imageRatio: 1.5,
   imageSize: 360,
-  imageMinWidth: 200,
   showImage: true
 };
 
@@ -21,8 +20,8 @@ storiesOf("Composed/Card", module)
     <Card {...cardProps} showImage={boolean("Show image?", true)}>
       <View
         style={{
-          backgroundColor: "blue",
-          flex: 1,
+          border: "1px solid black",
+          flex: 2.7,
           minHeight: 200
         }}
       />

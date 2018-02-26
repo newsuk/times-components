@@ -58,8 +58,10 @@ exports[`Card tests on web renders 1`] = `
 
 @media (min-width:768px) {
   .c2 {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
     margin-bottom: 0;
-    min-width: undefinedpx;
     padding-right: 15px;
   }
 }
@@ -153,8 +155,10 @@ exports[`Card tests on web renders loading state 1`] = `
 
 @media (min-width:768px) {
   .c1 {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
     margin-bottom: 0;
-    min-width: undefinedpx;
     padding-right: 15px;
   }
 }

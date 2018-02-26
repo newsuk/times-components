@@ -41,7 +41,7 @@ class CardComponent extends Component {
       );
     }
 
-    const ImageContainer = getImageContainer(imageMinWidth);
+    const ImageContainer = getImageContainer();
 
     const imageComponent =
       image && showImage && image.uri ? (

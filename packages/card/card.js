@@ -1,12 +1,10 @@
 import React from "react";
-import { View, ViewPropTypes } from "react-native";
+import { View } from "react-native";
 import Image from "@times-components/image";
 import { Animations } from "@times-components/styleguide";
 import Loading from "./loading";
 import { propTypes, defaultProps } from "./proptypes";
 import styles from "./styles/shared";
-
-const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 const CardComponent = ({
   children,
@@ -14,8 +12,7 @@ const CardComponent = ({
   imageRatio,
   imageSize,
   isLoading,
-  showImage,
-  style
+  showImage
 }) => {
   if (isLoading) {
     return (
@@ -38,23 +35,14 @@ const CardComponent = ({
   return (
     <Animations.FadeIn>
       <View>
-        <View style={style}>
-          {imageComponent}
-          <View>{children}</View>
-        </View>
+        {imageComponent}
+        <View>{children}</View>
       </View>
     </Animations.FadeIn>
   );
 };
 
-CardComponent.propTypes = {
-  ...propTypes,
-  style: ViewPropTypesStyle
-};
-
-CardComponent.defaultProps = {
-  ...defaultProps,
-  style: null
-};
+CardComponent.propTypes = propTypes;
+CardComponent.defaultProps = defaultProps;
 
 export default CardComponent;
