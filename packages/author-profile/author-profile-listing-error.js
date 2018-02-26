@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   },
   message: {
     alignSelf: "center",
-    fontFamily: fonts.bodyRegularSmallCaps,
+    fontFamily: fonts.bodyRegular,
     fontSize: 18,
     textAlign: "center",
     color: "#696969"
