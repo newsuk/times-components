@@ -30,7 +30,9 @@ const LeadSlice = ({ lead, sections }) => {
               const SectionContainer = getSectionContainer(index);
               SectionContainer.displayName = "SectionContainer";
               return (
-                <SectionContainer key={`section-container-${section.key}`}>{section}</SectionContainer>
+                <SectionContainer key={`section-container-${section.key}`}>
+                  {section}
+                </SectionContainer>
               );
             })}
           </SectionsContainer>
