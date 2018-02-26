@@ -20,9 +20,9 @@ storiesOf("Composed/Card", module)
     <Card {...cardProps}>
       <View
         style={{
+          borderColor: "black",
           borderStyle: "solid",
-          borderTopColor: "black",
-          borderTopWidth: 1,
+          borderWidth: 1,
           minHeight: 200
         }}
       />
