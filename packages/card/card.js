@@ -9,33 +9,29 @@ import styles from "./styles/shared";
 const CardComponent = ({
   children,
   image,
-  imageRatio,
-  imageSize,
-  isLoading,
-  showImage
+  isLoading
 }) => {
+  const { isShowing, ratio, size, uri } = image;
   if (isLoading) {
     return (
       <View>
-        <Loading aspectRatio={imageRatio} showImage={showImage} />
+        <Loading aspectRatio={ratio} showImage={isShowing} />
       </View>
     );
   }
 
-  const imageComponent =
-    image && showImage && image.uri ? (
-      <View style={styles.imageContainer}>
-        <Image
-          aspectRatio={imageRatio}
-          uri={`${image.uri}&resize=${imageSize}`}
-        />
-      </View>
-    ) : null;
-
   return (
     <Animations.FadeIn>
       <View>
-        {imageComponent}
+        {
+          image && isShowing && uri &&
+            <View style={styles.imageContainer}>
+              <Image
+                aspectRatio={ratio}
+                uri={`${uri}&resize=${size}`}
+              />
+            </View>
+        }
         <View>{children}</View>
       </View>
     </Animations.FadeIn>

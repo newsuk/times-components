@@ -13,6 +13,16 @@ export const CardContainer = withResponsiveStyles(View, {
   `
 });
 
+export const getChildContainer = childRatio =>
+  withResponsiveStyles(View, {
+    base: () => `
+    flex: 1;
+  `,
+    mediumUp: () => `
+    flex: ${childRatio};
+  `
+});
+
 export const getImageContainer = () =>
   withResponsiveStyles(View, {
     base: () => `
@@ -24,4 +34,4 @@ export const getImageContainer = () =>
     margin-bottom: 0;
     padding-right: 15px;
   `
-  });
+});

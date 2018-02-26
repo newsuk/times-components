@@ -1,77 +1,73 @@
 import React, { Component } from "react";
 import { View } from "react-native";
-import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import { Animations } from "@times-components/styleguide";
 import Loading from "./loading";
 import { propTypes, defaultProps } from "./proptypes";
-import { CardContainer, getImageContainer } from "./styles/responsive";
+import { CardContainer, getChildContainer, getImageContainer } from "./styles/responsive";
 
 class CardComponent extends Component {
   shouldComponentUpdate(nextProps) {
-    const { image, imageSize, isLoading, showImage } = this.props;
+    const { image, isLoading } = this.props;
+    const { isShowing, size, uri } = image;
 
     return (
-      (image && image.uri !== nextProps.image.uri) ||
-      imageSize !== nextProps.imageSize ||
-      isLoading !== nextProps.isLoading ||
-      showImage !== nextProps.showImage
+      (image && uri !== nextProps.image.uri) ||
+      size !== nextProps.image.size ||
+      isShowing !== nextProps.image.isShowing ||
+      isLoading !== nextProps.isLoading
     );
   }
   render() {
     const {
       children,
+      childRatio,
       image,
-      imageMinWidth,
-      imageRatio,
-      imageSize,
-      isLoading,
-      showImage
+      isLoading
     } = this.props;
+    const { isShowing, ratio, size, uri } = image;
 
     if (isLoading) {
       return (
         <View>
           <Loading
-            aspectRatio={imageRatio}
-            imageMinWidth={imageMinWidth}
-            showImage={showImage}
+            aspectRatio={ratio}
+            childRatio={childRatio}
+            showImage={isShowing}
           />
         </View>
       );
     }
 
+    const ChildContainer = getChildContainer(childRatio);
     const ImageContainer = getImageContainer();
 
-    const imageComponent =
-      image && showImage && image.uri ? (
-        <ImageContainer>
-          <Image
-            aspectRatio={imageRatio}
-            uri={`${image.uri}&resize=${imageSize}`}
-          />
-        </ImageContainer>
-      ) : null;
+    // for tests
+    ChildContainer.displayName = "ChildContainer";
+    ImageContainer.displayName = "ImageContainer";
 
     return (
       <Animations.FadeIn>
         <CardContainer>
-          {imageComponent}
-          {children}
+          {
+            image && isShowing && uri &&
+              <ImageContainer>
+                <Image
+                  aspectRatio={ratio}
+                  uri={`${uri}&resize=${size}`}
+                />
+              </ImageContainer>
+          }
+          <ChildContainer>
+            {children}
+          </ChildContainer>
         </CardContainer>
       </Animations.FadeIn>
     );
   }
 }
 
-CardComponent.propTypes = {
-  ...propTypes,
-  imageMinWidth: PropTypes.number
-};
-
-CardComponent.defaultProps = {
-  ...defaultProps,
-  imageMinWidth: 100
-};
+CardComponent.propTypes = propTypes;
+CardComponent.defaultProps = defaultProps;
 
 export default CardComponent;

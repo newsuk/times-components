@@ -2,30 +2,36 @@ import PropTypes from "prop-types";
 
 export const loadingPropTypes = {
   aspectRatio: PropTypes.number,
+  childRatio: PropTypes.number,
   showImage: PropTypes.bool
 };
 
 export const loadingDefaultProps = {
   aspectRatio: 3 / 2,
+  childRatio: 1,
   showImage: false
 };
 
 export const propTypes = {
   children: PropTypes.node,
-  image: PropTypes.shape({ uri: PropTypes.string }),
-  imageRatio: PropTypes.number,
-  imageSize: PropTypes.number,
-  isLoading: PropTypes.bool,
-  showImage: PropTypes.bool
+  childRatio: PropTypes.number,
+  image: PropTypes.shape({
+    isShown: PropTypes.bool,
+    ratio: PropTypes.number,
+    size: PropTypes.number,
+    uri: PropTypes.string
+  }),
+  isLoading: PropTypes.bool
 };
 
 export const defaultProps = {
   children: [],
+  childRatio: 1,
   image: {
+    isShown: false,
+    ratio: 1,
+    size: 100,
     uri: ""
   },
-  imageRatio: 1,
-  imageSize: 100,
-  isLoading: false,
-  showImage: false
+  isLoading: false
 };
