@@ -19,7 +19,7 @@ const ArticleLink = props => (
 
 ArticleLink.defaultProps = {
   ...TextLink.defaultProps
-};
+}; 
 
 ArticleLink.propTypes = {
   ...TextLink.propTypes
