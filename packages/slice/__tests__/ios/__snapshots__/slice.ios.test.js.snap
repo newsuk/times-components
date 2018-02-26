@@ -328,7 +328,11 @@ exports[`5. LEAD_AND_TWO template renders two child elements 1`] = `
     </View>
   </View>
   <View
+<<<<<<< HEAD
     key="support1"
+=======
+    key="section1"
+>>>>>>> refactor: refactor the Slice logic for children/sections
     style={
       Object {
         "borderBottomColor": "#dbdbdb",
@@ -350,7 +354,11 @@ exports[`5. LEAD_AND_TWO template renders two child elements 1`] = `
       }
     >
       <ExampleChild
+<<<<<<< HEAD
         key="support1"
+=======
+        key="section1"
+>>>>>>> refactor: refactor the Slice logic for children/sections
       />
     </View>
   </View>
@@ -400,7 +408,11 @@ exports[`6. LEAD_AND_TWO template renders three child elements 1`] = `
     </View>
   </View>
   <View
+<<<<<<< HEAD
     key="support1"
+=======
+    key="section1"
+>>>>>>> refactor: refactor the Slice logic for children/sections
     style={
       Object {
         "borderBottomColor": "#dbdbdb",
@@ -422,12 +434,20 @@ exports[`6. LEAD_AND_TWO template renders three child elements 1`] = `
       }
     >
       <ExampleChild
+<<<<<<< HEAD
         key="support1"
+=======
+        key="section1"
+>>>>>>> refactor: refactor the Slice logic for children/sections
       />
     </View>
   </View>
   <View
+<<<<<<< HEAD
     key="support2"
+=======
+    key="section2"
+>>>>>>> refactor: refactor the Slice logic for children/sections
     style={
       Object {
         "borderBottomColor": "#dbdbdb",
@@ -449,7 +469,11 @@ exports[`6. LEAD_AND_TWO template renders three child elements 1`] = `
       }
     >
       <ExampleChild
+<<<<<<< HEAD
         key="support2"
+=======
+        key="section2"
+>>>>>>> refactor: refactor the Slice logic for children/sections
       />
     </View>
   </View>
