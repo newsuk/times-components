@@ -1,7 +1,7 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import config from "../responsive-config";
 import { colours } from "@times-components/styleguide";
+import config from "../responsive-config";
 
 /* --- Body --- */
 
