@@ -1,10 +1,10 @@
 import React from "react";
 import { TextLink } from "@times-components/link";
-import { colours } from "@times-components/styleguide";
+import { colours, fonts } from "@times-components/styleguide";
 
 const linkStyles = {
   color: colours.functional.blue,
-  fontFamily: "TimesDigitalW04-Regular",
+  fontFamily: fonts.bodyRegularSmallCaps,
   lineHeight: 26,
   fontSize: 17,
   marginBottom: 25,

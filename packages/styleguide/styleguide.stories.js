@@ -2,7 +2,7 @@ import { Platform, ScrollView, Text, View } from "react-native";
 import React from "react";
 import PropTypes from "prop-types";
 import { storiesOf } from "@storybook/react-native";
-import { colours, Animations } from "./styleguide";
+import { Animations, colours, fonts } from "./styleguide";
 
 const styles = {
   display: {
@@ -22,7 +22,7 @@ const styles = {
   },
   text: {
     textAlign: "center",
-    fontFamily: "TimesDigitalW04",
+    fontFamily: fonts.body,
     fontSize: 12,
     color: "#333333"
   },

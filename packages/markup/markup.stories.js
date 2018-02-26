@@ -5,6 +5,7 @@ import { AdComposer } from "@times-components/ad";
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import { CenteredDecorator } from "@times-components/storybook";
+import { fonts } from "@times-components/styleguide";
 import { renderTree, renderTrees } from "./markup";
 
 const multiParagraph = require("./fixtures/multi-paragraph.json");
@@ -66,7 +67,7 @@ storiesOf("Composed/Markup", module)
               style={{
                 margin: 10,
                 color: "red",
-                fontFamily: "TimesModern-Bold"
+                fontFamily: fonts.headline
               }}
             >
               {children}

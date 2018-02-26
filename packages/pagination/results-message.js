@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Text, StyleSheet } from "react-native";
+import { fonts } from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
   message: {
     color: "#696969",
-    fontFamily: "GillSansMTStd-Medium",
+    fontFamily: fonts.supporting,
     fontSize: 15,
     paddingTop: 4
   }

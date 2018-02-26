@@ -5,7 +5,7 @@ const sharedStyles = {
     marginBottom: 10
   },
   articleTextElement: {
-    fontFamily: fonts.primary,
+    fontFamily: fonts.body,
     lineHeight: 26,
     fontSize: 17,
     marginBottom: 25,

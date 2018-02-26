@@ -1,8 +1,10 @@
+import { fonts } from "@times-components/styleguide";
+
 const sharedStyles = {
   text: {
     color: "#696969",
     fontSize: 14,
-    fontFamily: "TimesDigitalW04",
+    fontFamily: fonts.body,
     lineHeight: 20,
     marginBottom: 10,
     flexWrap: "wrap"
@@ -11,7 +13,7 @@ const sharedStyles = {
     color: "#696969",
     fontSize: 13,
     lineHeight: 15,
-    fontFamily: "GillSansMTStd-Medium",
+    fontFamily: fonts.supporting,
     marginBottom: 5
   },
   labelWrapper: {
@@ -20,7 +22,7 @@ const sharedStyles = {
   headline: {
     color: "#333333",
     marginBottom: 5,
-    fontFamily: "TimesModern-Bold",
+    fontFamily: fonts.headline,
     fontWeight: "400"
   },
   headlineWrapper: {

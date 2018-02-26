@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { fonts } from "@times-components/styleguide";
 
 const sharedStyles = {
   articleMeta: {
@@ -21,11 +22,11 @@ const sharedStyles = {
     color: "#696969",
     fontSize: 13,
     lineHeight: 15,
-    fontFamily: "GillSansMTStd-Medium"
+    fontFamily: fonts.supporting
   },
   byline: {
     fontSize: 13,
-    fontFamily: "GillSansMTStd-Medium",
+    fontFamily: fonts.supporting,
     color: "#696969",
     lineHeight: 15
   }
