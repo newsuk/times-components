@@ -89,15 +89,15 @@ exports[`5. LEAD_AND_TWO template renders two child elements 1`] = `
       <ExampleChild />
     </LeadContainer>
     <Separator />
-    <SectionsContainer>
-      <SectionContainer
-        key="section-container-section1"
+    <SupportsContainer>
+      <SupportContainer
+        key="support-container-support1"
       >
         <ExampleChild
-          key="section1"
+          key="support1"
         />
-      </SectionContainer>
-    </SectionsContainer>
+      </SupportContainer>
+    </SupportsContainer>
   </Container>
 </SliceContainer>
 `;
@@ -109,22 +109,22 @@ exports[`6. LEAD_AND_TWO template renders three child elements 1`] = `
       <ExampleChild />
     </LeadContainer>
     <Separator />
-    <SectionsContainer>
-      <SectionContainer
-        key="section-container-section1"
+    <SupportsContainer>
+      <SupportContainer
+        key="support-container-support1"
       >
         <ExampleChild
-          key="section1"
+          key="support1"
         />
-      </SectionContainer>
-      <SectionContainer
-        key="section-container-section2"
+      </SupportContainer>
+      <SupportContainer
+        key="support-container-support2"
       >
         <ExampleChild
-          key="section2"
+          key="support2"
         />
-      </SectionContainer>
-    </SectionsContainer>
+      </SupportContainer>
+    </SupportsContainer>
   </Container>
 </SliceContainer>
 `;

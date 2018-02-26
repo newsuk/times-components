@@ -1,10 +1,12 @@
 import PropTypes from "prop-types";
 
 export const propTypes = {
-  lead: PropTypes.func.isRequired,
-  sections: PropTypes.arrayOf(PropTypes.node)
+  lead: PropTypes.node.isRequired,
+  support1: PropTypes.node,
+  support2: PropTypes.node
 };
 
 export const defaultProps = {
-  sections: []
+  support1: null,
+  support2: null
 };

@@ -53,7 +53,7 @@ module.exports = () => {
 
   context("LEAD_AND_TWO template", () => {
     it("renders a single child element", () => {
-      const wrapper = shallow(<LeadSlice lead={() => <ExampleChild />} />);
+      const wrapper = shallow(<LeadSlice lead={<ExampleChild />} />);
       expect(wrapper).toMatchSnapshot(
         "4. LEAD_AND_TWO template renders a single child element"
       );
@@ -62,8 +62,8 @@ module.exports = () => {
     it("renders two child elements", () => {
       const wrapper = shallow(
         <LeadSlice
-          lead={() => <ExampleChild />}
-          sections={[<ExampleChild key="section1" />]}
+          lead={<ExampleChild />}
+          support1={<ExampleChild key="support1" />}
         />
       );
       expect(wrapper).toMatchSnapshot(
@@ -74,11 +74,9 @@ module.exports = () => {
     it("renders three child elements", () => {
       const wrapper = shallow(
         <LeadSlice
-          lead={() => <ExampleChild />}
-          sections={[
-            <ExampleChild key="section1" />,
-            <ExampleChild key="section2" />
-          ]}
+          lead={<ExampleChild />}
+          support1={<ExampleChild key="support1" />}
+          support2={<ExampleChild key="support2" />}
         />
       );
       expect(wrapper).toMatchSnapshot(

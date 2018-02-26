@@ -3,16 +3,16 @@ import withResponsiveStyles, {
   config
 } from "@times-components/responsive-styles";
 
-export const SectionsContainer = withResponsiveStyles(View, {
+export const SupportsContainer = withResponsiveStyles(View, {
   base: () => `
     flex: 1;
     flex-direction: column;
     height: auto;
   `
 });
-SectionsContainer.displayName = "SectionsContainer";
+SupportsContainer.displayName = "SupportsContainer";
 
-export const getSectionContainer = index =>
+export const getSupportContainer = index =>
   withResponsiveStyles(View, {
     base: () => {
       const firstChildStyle = `
@@ -44,7 +44,7 @@ export const getSectionContainer = index =>
     `
   });
 
-export const getContainer = ({ hasSections }) =>
+export const getContainer = ({ hasSupports }) =>
   withResponsiveStyles(View, {
     base: () => `
     flex: 1;
@@ -56,48 +56,48 @@ export const getContainer = ({ hasSections }) =>
     width: 100%;
   `,
     mediumUp: () => {
-      const withoutSectionsStyle = `
+      const withoutSupportsStyle = `
       padding-left: 0px;
       padding-right: 0px;
       width: ${config.mediumBpWidth};
     `;
 
-      const withSectionsStyle = `
+      const withSupportsStyle = `
       width: 100%;
     `;
 
       return `
       flex-direction: row;
-      ${hasSections ? withSectionsStyle : withoutSectionsStyle}
+      ${hasSupports ? withSupportsStyle : withoutSupportsStyle}
     `;
     },
     wideUp: () => `
-    width: ${hasSections ? "100%" : config.wideBpWidth};
+    width: ${hasSupports ? "100%" : config.wideBpWidth};
   `
   });
 
-export const getLeadContainer = ({ hasSections }) =>
+export const getLeadContainer = ({ hasSupports }) =>
   withResponsiveStyles(View, {
     base: () => `
     flex: 1;
     flex-grow: 1;
     padding-left: 10px;
     padding-right: 10px;
-    width: ${hasSections ? "auto" : "100%"};
+    width: ${hasSupports ? "auto" : "100%"};
   `,
     mediumUp: () => {
-      const withoutSectionsStyle = `
+      const withoutSupportsStyle = `
       flex-grow: 0;
       padding-left: 0;
       padding-right: 0;
     `;
-      const withSectionsStyle = `
+      const withSupportsStyle = `
       flex-grow: 3;
       padding-left: 10px;
       padding-right: 10px;
     `;
       return `
-      ${hasSections ? withSectionsStyle : withoutSectionsStyle}
+      ${hasSupports ? withSupportsStyle : withoutSupportsStyle}
     `;
     }
   });
