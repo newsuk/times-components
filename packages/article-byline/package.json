@@ -49,6 +49,7 @@
   "dependencies": {
     "@times-components/link": "0.14.4",
     "@times-components/markup": "0.21.6",
+    "@times-components/styleguide": "0.3.3",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {

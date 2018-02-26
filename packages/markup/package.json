@@ -49,6 +49,7 @@
   "dependencies": {
     "@times-components/ad": "0.10.2",
     "@times-components/pull-quote": "0.2.19",
+    "@times-components/styleguide": "0.3.3",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {

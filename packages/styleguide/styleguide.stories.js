@@ -30,6 +30,16 @@ const styles = {
     backgroundColor: "#CCCCCC",
     margin: 50,
     padding: 100
+  },
+  showoffFontsContainer: {
+    borderBottomWidth: 1,
+    borderBottomColor: "#CCCCCC",
+    margin: 20
+  },
+  showoffFonts: {
+    fontSize: 30,
+    paddingTop: 15,
+    paddingBottom: 20
   }
 };
 
@@ -83,4 +93,57 @@ storiesOf("Helpers/Styleguide", module)
         <Text style={styles.text}>Fade In</Text>
       </View>
     </Animations.FadeIn>
-  ));
+  ))
+
+  .add("Fonts", () => {
+    const phrase = "The Quick Brown Fox Jumped Over the Lazy Dog";
+    return (
+      <ScrollView>
+        <View style={styles.showoffFontsContainer}>
+          <Text>Body</Text>
+          <Text style={[styles.showoffFonts, { fontFamily: fonts.body }]}>
+            {phrase}
+          </Text>
+        </View>
+        <View style={styles.showoffFontsContainer}>
+          <Text>Body Regular</Text>
+          <Text
+            style={[styles.showoffFonts, { fontFamily: fonts.bodyRegular }]}
+          >
+            {phrase}
+          </Text>
+        </View>
+        <View style={styles.showoffFontsContainer}>
+          <Text>Body Regular Small Caps</Text>
+          <Text
+            style={[
+              styles.showoffFonts,
+              { fontFamily: fonts.bodyRegularSmallCaps }
+            ]}
+          >
+            {phrase}
+          </Text>
+        </View>
+        <View style={styles.showoffFontsContainer}>
+          <Text>Headline</Text>
+          <Text style={[styles.showoffFonts, { fontFamily: fonts.headline }]}>
+            {phrase}
+          </Text>
+        </View>
+        <View style={styles.showoffFontsContainer}>
+          <Text>Headline Regular</Text>
+          <Text
+            style={[styles.showoffFonts, { fontFamily: fonts.headlineRegular }]}
+          >
+            {phrase}
+          </Text>
+        </View>
+        <View style={styles.showoffFontsContainer}>
+          <Text>Supporting</Text>
+          <Text style={[styles.showoffFonts, { fontFamily: fonts.supporting }]}>
+            {phrase}
+          </Text>
+        </View>
+      </ScrollView>
+    );
+  });
