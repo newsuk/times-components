@@ -5,6 +5,8 @@ import T from "./t";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 
+const SCALING_FACTOR = 0.27411167512690354;
+
 const styles = StyleSheet.create({
   container: {
     flex: 1
@@ -35,7 +37,7 @@ class Placeholder extends React.Component {
 
     const tComponent = width ? (
       <View style={[styles.container, styles.t]}>
-        <T width={width} height={width} />
+        <T width={width * SCALING_FACTOR} height={width * SCALING_FACTOR} />
       </View>
     ) : null;
 
