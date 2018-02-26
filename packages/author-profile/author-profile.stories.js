@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import { decorateAction } from "@storybook/addon-actions";
+import { checkA11y } from "@storybook/addon-a11y";
 import { AuthorProfileProvider } from "@times-components/provider";
 import {
   MockedProvider,
@@ -31,6 +32,7 @@ const slug = "deborah-haynes";
 const pageSize = 5;
 
 storiesOf("Pages/AuthorProfile", module)
+  .addDecorator(checkA11y)
   .add("Default with images", () => {
     const props = {
       slug,

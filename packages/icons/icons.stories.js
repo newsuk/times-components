@@ -35,15 +35,17 @@ const styles = StyleSheet.create({
   }
 });
 
-storiesOf("Primitives/Icons", module).add("Icons", () => (
-  <View style={styles.wrapper}>
-    <View style={styles.icon}>
-      <IconDiamond width={50} height={50} fillColour="#4D4D4D" />
-      <Text style={styles.label}>Diamond</Text>
+storiesOf("Primitives/Icons", module)
+  .addDecorator(checkA11y)
+  .add("Icons", () => (
+    <View style={styles.wrapper}>
+      <View style={styles.icon}>
+        <IconDiamond width={50} height={50} fillColour="#4D4D4D" />
+        <Text style={styles.label}>Diamond</Text>
+      </View>
+      <View style={styles.icon}>
+        <IconTwitter width={50} height={50} />
+        <Text style={styles.label}>Twitter</Text>
+      </View>
     </View>
-    <View style={styles.icon}>
-      <IconTwitter width={50} height={50} />
-      <Text style={styles.label}>Twitter</Text>
-    </View>
-  </View>
-));
+  ));

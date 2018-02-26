@@ -2,12 +2,14 @@ import React from "react";
 import { View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { action } from "@storybook/addon-actions";
+import { checkA11y } from "@storybook/addon-a11y";
 import { withTrackingContext } from "@times-components/tracking";
 import { LateralSpacingDecorator } from "@times-components/storybook";
 import Pagination, { withPageState } from "./pagination";
 import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
 
 storiesOf("Composed/Pagination", module)
+  .addDecorator(checkA11y)
   .addDecorator(LateralSpacingDecorator)
   .add("First page", () => (
     <Pagination

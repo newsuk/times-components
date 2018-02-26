@@ -1,6 +1,7 @@
 import { StyleSheet, View } from "react-native";
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
+import { checkA11y } from "@storybook/addon-a11y";
 import { DefaultSlice, LeadSlice } from "./";
 
 const styles = StyleSheet.create({
@@ -28,6 +29,7 @@ const createDefaultItems = noOfItems =>
     .filter(item => item !== false);
 
 storiesOf("Primitives/Slice", module)
+  .addDecorator(checkA11y)
   .add("Default template with one item", () => (
     <DefaultSlice>{createDefaultItems(1)}</DefaultSlice>
   ))
