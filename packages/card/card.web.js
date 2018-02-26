@@ -48,8 +48,7 @@ class CardComponent extends Component {
     return (
       <Animations.FadeIn>
         <CardContainer>
-          {image &&
-            isShowing &&
+          {isShowing &&
             uri && (
               <ImageContainer>
                 <Image aspectRatio={ratio} uri={`${uri}&resize=${size}`} />

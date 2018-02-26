@@ -9,15 +9,13 @@ import styles from "./styles/shared";
 const Loading = ({ aspectRatio, childRatio, showImage }) => {
   const ImageContainer = getImageContainer();
 
-  const imageComponent = (
-    <ImageContainer>
-      <Image uri="" aspectRatio={aspectRatio} />
-    </ImageContainer>
-  );
-
   return (
     <CardContainer>
-      {showImage && imageComponent}
+      {showImage && (
+        <ImageContainer>
+          <Image aspectRatio={aspectRatio} uri="" />
+        </ImageContainer>
+      )}
       <View style={{ flex: childRatio }}>
         <Gradient style={styles.headerContainer} degrees={264} />
         <Gradient style={styles.textContainer} degrees={267} />
