@@ -240,6 +240,7 @@ exports[`Card test on ios renders loading state 1`] = `
             },
             Object {
               "marginBottom": 0,
+              "maxWidth": 240,
             },
           ]
         }
