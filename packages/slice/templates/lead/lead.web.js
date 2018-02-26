@@ -4,14 +4,15 @@ import { getSeparator, SliceContainer } from "../shared.responsive";
 import {
   getContainer,
   getLeadContainer,
-  getSectionContainer,
-  SectionsContainer
+  getSupportContainer,
+  SupportsContainer
 } from "./responsive";
 
-const LeadSlice = ({ lead, sections }) => {
-  const hasSections = sections.length > 0;
-  const Container = getContainer({ hasSections });
-  const LeadContainer = getLeadContainer({ hasSections });
+const LeadSlice = ({ lead, support1, support2 }) => {
+  const supports = [support1, support2].filter(support => support !== null);
+  const hasSupports = supports.length > 0;
+  const Container = getContainer({ hasSupports });
+  const LeadContainer = getLeadContainer({ hasSupports });
   const Separator = getSeparator({ withMargin: false });
 
   // for tests
@@ -22,20 +23,20 @@ const LeadSlice = ({ lead, sections }) => {
   return (
     <SliceContainer>
       <Container>
-        <LeadContainer>{lead()}</LeadContainer>
-        {hasSections && <Separator />}
-        {hasSections && (
-          <SectionsContainer>
-            {sections.map((section, index) => {
-              const SectionContainer = getSectionContainer(index);
-              SectionContainer.displayName = "SectionContainer";
+        <LeadContainer>{lead}</LeadContainer>
+        {hasSupports && <Separator />}
+        {hasSupports && (
+          <SupportsContainer>
+            {supports.map((support, index) => {
+              const SupportContainer = getSupportContainer(index);
+              SupportContainer.displayName = "SupportContainer";
               return (
-                <SectionContainer key={`section-container-${section.key}`}>
-                  {section}
-                </SectionContainer>
+                <SupportContainer key={`support-container-${support.key}`}>
+                  {support}
+                </SupportContainer>
               );
             })}
-          </SectionsContainer>
+          </SupportsContainer>
         )}
       </Container>
     </SliceContainer>
