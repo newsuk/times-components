@@ -553,7 +553,7 @@ exports[`Article test on android renders article no flags 1`] = `
                   "paddingTop": 5,
                 },
                 Object {
-                  "color": "#13354E",
+                  "color": "#333333",
                 },
               ]
             }
@@ -4309,7 +4309,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
                   "paddingTop": 5,
                 },
                 Object {
-                  "color": "#13354E",
+                  "color": "#333333",
                 },
               ]
             }
@@ -5359,7 +5359,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
                   "paddingTop": 5,
                 },
                 Object {
-                  "color": "#13354E",
+                  "color": "#333333",
                 },
               ]
             }
@@ -7393,7 +7393,7 @@ exports[`Article test on android renders full article 1`] = `
                   "paddingTop": 5,
                 },
                 Object {
-                  "color": "#13354E",
+                  "color": "#333333",
                 },
               ]
             }
@@ -7705,7 +7705,7 @@ exports[`Article test on android renders full article 1`] = `
                   "textDecorationLine": "underline",
                 },
                 Object {
-                  "color": "#069",
+                  "color": "#006699",
                   "fontFamily": "TimesDigitalW04-Regular",
                   "fontSize": 17,
                   "lineHeight": 26,

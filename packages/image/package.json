@@ -51,6 +51,7 @@
     "@times-components/gestures": "1.2.3",
     "@times-components/gradient": "0.5.8",
     "@times-components/link": "0.14.4",
+    "@times-components/styleguide": "0.3.2",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.1",
     "svgs": "3.2.1"

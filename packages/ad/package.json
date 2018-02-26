@@ -60,6 +60,7 @@
   },
   "dependencies": {
     "@times-components/watermark": "0.3.8",
+    "@times-components/styleguide": "0.3.2",
     "prop-types": "15.6.0",
     "react-broadcast": "0.5.2"
   },

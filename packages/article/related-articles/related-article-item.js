@@ -42,8 +42,7 @@ const RelatedArticleItem = ({ article, onPress }) => {
           headline={() => <ArticleSummaryHeadline headline={headline} />}
           labelProps={{
             title: label,
-            color:
-              colours.sectionColours[section] || colours.sectionColours.default
+            color: colours.section[section] || colours.section.default
           }}
           content={() => <ArticleSummaryContent ast={summary} />}
         />

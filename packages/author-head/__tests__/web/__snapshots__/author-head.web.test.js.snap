@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AuthorHead test on web renders 1`] = `
+.c0 {
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
+}
+
 .c4 {
   padding-left: 10px;
   padding-right: 10px;
@@ -14,11 +19,6 @@ exports[`AuthorHead test on web renders 1`] = `
 
 .c2 {
   width: 100px;
-}
-
-.c0 {
-  -webkit-animation: eMLfYp 0.3s ease-in-out;
-  animation: eMLfYp 0.3s ease-in-out;
 }
 
 .c1 {
@@ -107,6 +107,11 @@ exports[`AuthorHead test on web renders 1`] = `
 `;
 
 exports[`AuthorHead test on web renders with data 1`] = `
+.c0 {
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
+}
+
 .c4 {
   padding-left: 10px;
   padding-right: 10px;
@@ -120,11 +125,6 @@ exports[`AuthorHead test on web renders with data 1`] = `
 
 .c2 {
   width: 100px;
-}
-
-.c0 {
-  -webkit-animation: eMLfYp 0.3s ease-in-out;
-  animation: eMLfYp 0.3s ease-in-out;
 }
 
 .c1 {
@@ -298,6 +298,11 @@ exports[`AuthorHead test on web renders with data 1`] = `
 `;
 
 exports[`AuthorHead test on web renders without profile picture 1`] = `
+.c0 {
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
+}
+
 .c4 {
   padding-left: 10px;
   padding-right: 10px;
@@ -311,11 +316,6 @@ exports[`AuthorHead test on web renders without profile picture 1`] = `
 
 .c2 {
   width: 100px;
-}
-
-.c0 {
-  -webkit-animation: eMLfYp 0.3s ease-in-out;
-  animation: eMLfYp 0.3s ease-in-out;
 }
 
 .c1 {
