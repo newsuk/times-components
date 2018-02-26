@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
-import { fonts } from "@times-components/styleguide";
+import { fonts, colours } from "@times-components/styleguide";
 
 const sharedStyles = {
   articleMeta: {
     marginBottom: 20,
-    borderBottomColor: "#d0cece",
+    borderBottomColor: colours.functional.keyline,
     borderBottomWidth: StyleSheet.hairlineWidth,
     paddingLeft: 0,
     paddingRight: 0,
@@ -15,11 +15,11 @@ const sharedStyles = {
     paddingTop: 9
   },
   articleMetaElement: {
-    borderTopColor: "#d0cece",
+    borderTopColor: colours.functional.keyline,
     borderTopWidth: StyleSheet.hairlineWidth
   },
   datePublication: {
-    color: "#696969",
+    color: colours.functional.greyMid,
     fontSize: 13,
     lineHeight: 15,
     fontFamily: fonts.supporting
@@ -27,7 +27,7 @@ const sharedStyles = {
   byline: {
     fontSize: 13,
     fontFamily: fonts.supporting,
-    color: "#696969",
+    color: colours.functional.greyMid,
     lineHeight: 15
   }
 };

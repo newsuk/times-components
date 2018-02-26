@@ -1,6 +1,7 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 import config from "../responsive-config";
+import { colours } from "@times-components/styleguide";
 
 /* --- Body --- */
 
@@ -12,7 +13,7 @@ export const ParagraphContainer = withResponsiveStyles("div", {
 
 export const Paragraph = withResponsiveStyles("p", {
   base: () => `
-    color: "#333333";
+    color: ${colours.functional.greyDark};
     font-family: "TimesDigitalW04-Regular";
     line-height: 26px;
     font-size: 17px;
@@ -28,7 +29,7 @@ export const Paragraph = withResponsiveStyles("p", {
 
 export const LinkStyle = withResponsiveStyles("a", {
   base: () => `
-    color: #069;
+    color: ${colours.functional.blue};
     font-family: "TimesDigitalW04-Regular";
     line-height: 26px;
     font-size: 17px;
