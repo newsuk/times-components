@@ -27,19 +27,25 @@ describe("depend cli-parser tests", () => {
   });
 
   it("should get strategy", () => {
-    const { strategy } = parser.parse(["depend", "/", "--strategy", "blub"]);
-    expect(strategy).toEqual("blub");
+    const { strategy } = parser.parse(["depend", "/", "--strategy", "majority"]);
+    expect(strategy).toEqual("majority");
   });
 
-  it("should throw if no strategy provided", () => {
-    expect(() => parser.parse(["depend", "path", "--strategy"])).toThrow();
+  it("should exit if invalid strategy provided", () => {
+    parser.parse(["depend", "path", "--strategy", "blub"]);
     expect(console.error.mock.calls.length).toBeTruthy();
     expect(process.exit.mock.calls).toEqual([[1]]);
   });
 
-  it("should get package", () => {
+  it("should get pick rule", () => {
     const { pick } = parser.parse(["depend", "path", "--pick", "blub@blub"]);
     expect(pick).toEqual("blub@blub");
+  });
+
+  it("should exit if invalid pick rule is provided", () => {
+    parser.parse(["depend", "path", "--pick", "blub"]);
+    expect(console.error.mock.calls.length).toBeTruthy();
+    expect(process.exit.mock.calls).toEqual([[1]]);
   });
 
   it("should throw if no package provided", () => {
