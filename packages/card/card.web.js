@@ -13,11 +13,12 @@ import {
 
 class CardComponent extends Component {
   shouldComponentUpdate(nextProps) {
-    const { image, imageSize, isLoading } = this.props;
+    const { image, imageSize, isLoading, showImage } = this.props;
     return (
       (image && image.uri !== nextProps.image.uri) ||
       imageSize !== nextProps.imageSize ||
-      isLoading !== nextProps.isLoading
+      isLoading !== nextProps.isLoading ||
+      showImage !== nextProps.showImage
     );
   }
   render() {
