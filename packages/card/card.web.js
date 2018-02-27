@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { View } from "react-native";
 import Image from "@times-components/image";
 import { Animations } from "@times-components/styleguide";
@@ -10,7 +10,7 @@ import {
   CardContainer
 } from "./card-styles.web";
 
-class CardComponent extends React.Component {
+class CardComponent extends Component {
   shouldComponentUpdate(nextProps) {
     const { image, imageSize, isLoading } = this.props;
     return (
@@ -37,20 +37,18 @@ class CardComponent extends React.Component {
       );
     }
 
-    const imageComponent =
-      image && image.uri ? (
-        <ImageContainer>
-          <Image
-            uri={`${image.uri}&resize=${imageSize || 100}`}
-            aspectRatio={imageRatio}
-          />
-        </ImageContainer>
-      ) : null;
-
     return (
       <Animations.FadeIn>
         <CardContainer>
-          {showImage ? imageComponent : null}
+          {
+            showImage && image && image.uri &&
+              <ImageContainer>
+                <Image
+                  uri={`${image.uri}&resize=${imageSize || 100}`}
+                  aspectRatio={imageRatio}
+                />
+              </ImageContainer>
+          }
           <SummaryContainer>{children}</SummaryContainer>
         </CardContainer>
       </Animations.FadeIn>

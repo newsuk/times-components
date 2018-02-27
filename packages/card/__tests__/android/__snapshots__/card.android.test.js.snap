@@ -326,12 +326,8 @@ exports[`Card test on android renders vertical by default 1`] = `
     }
   }
 >
-  <View
-    onLayout={undefined}
-  >
-    <View
-      style={null}
-    >
+  <View>
+    <View>
       <View
         style={
           Object {
@@ -487,12 +483,8 @@ exports[`Card test on android renders without image 1`] = `
     }
   }
 >
-  <View
-    onLayout={undefined}
-  >
-    <View
-      style={null}
-    >
+  <View>
+    <View>
       <View>
         <Text
           accessible={true}
@@ -516,12 +508,8 @@ exports[`Card test on android renders without image url 1`] = `
     }
   }
 >
-  <View
-    onLayout={undefined}
-  >
-    <View
-      style={null}
-    >
+  <View>
+    <View>
       <View>
         <Text
           accessible={true}
