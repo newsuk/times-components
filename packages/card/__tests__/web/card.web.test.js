@@ -13,7 +13,7 @@ const cardProps = {
   showImage: true,
   tabletChildRatio: 2.7
 };
-
+ 
 describe("Card tests on web", () => {
   it("should render a card", () => {
     const component = shallow(
