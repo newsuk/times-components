@@ -1,6 +1,5 @@
 /* eslint-disable no-console */
 import chalk from "chalk";
-import { help } from "./cli-options";
 import depend from "./depend";
 import graph from "./graph";
 import * as strategies from "./strategies";
@@ -27,11 +26,6 @@ export default async function main({
   argv,
   exit
 }) {
-  if (argv.help) {
-    log(help());
-    return Promise.resolve();
-  }
-
   if (argv.strategy) {
     if (!strategies[argv.strategy]) {
       log(`strategy ${argv.strategy} not available`);
