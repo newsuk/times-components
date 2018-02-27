@@ -4,7 +4,7 @@
   "description": "dependency analyzer and fixer",
   "main": "depend",
   "scripts": {
-    "build": "babel . -d dist --ignore dist,node_modules,coverage,__tests__",
+    "build": "babel . -d dist --ignore dist,node_modules,coverage,__tests__ && cp package.json dist/package.json",
     "prepublish": "npm run build",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
