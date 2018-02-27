@@ -8,14 +8,7 @@ import wrongFixed from "./fixtures/wrong-fixed.json";
 // unfortunately we cant test colours as the root yarn test disables colours
 chalk.enabled = false;
 
-describe("checkdep cli tests", () => {
-  it("prints help", async () => {
-    const log = jest.fn();
-    const argv = { help: true };
-    await main({ log, argv });
-    expect(log.mock.calls).toMatchSnapshot();
-  });
-
+describe("depend cli tests", () => {
   it("prints graph", async () => {
     const log = jest.fn();
     const argv = { graph: "*=>*" };
