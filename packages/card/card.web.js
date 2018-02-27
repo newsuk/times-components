@@ -12,27 +12,25 @@ import {
 
 class CardComponent extends Component {
   shouldComponentUpdate(nextProps) {
-    const { image, isLoading } = this.props;
-    const { isShowing, size, uri } = image;
+    const { image, imageSize, showImage, isLoading } = this.props;
 
     return (
-      (image && uri !== nextProps.image.uri) ||
-      size !== nextProps.image.size ||
-      isShowing !== nextProps.image.isShowing ||
+      (image && image.uri !== nextProps.image.uri) ||
+      imageSize !== nextProps.imageSize ||
+      showImage !== nextProps.showImage ||
       isLoading !== nextProps.isLoading
     );
   }
   render() {
-    const { children, childRatio, image, isLoading } = this.props;
-    const { isShowing, ratio, size, uri } = image;
+    const { children, childRatio, image, imageRatio, imageSize, showImage, isLoading } = this.props;
 
     if (isLoading) {
       return (
         <View>
           <Loading
-            aspectRatio={ratio}
+            aspectRatio={imageRatio}
             childRatio={childRatio}
-            showImage={isShowing}
+            showImage={showImage}
           />
         </View>
       );
@@ -48,10 +46,10 @@ class CardComponent extends Component {
     return (
       <Animations.FadeIn>
         <CardContainer>
-          {isShowing &&
-            uri && (
+          {showImage &&
+            image && image.uri && (
               <ImageContainer>
-                <Image aspectRatio={ratio} uri={`${uri}&resize=${size}`} />
+                <Image aspectRatio={imageRatio} uri={`${image.uri}&resize=${imageSize}`} />
               </ImageContainer>
             )}
           <ChildContainer>{children}</ChildContainer>

@@ -6,12 +6,11 @@ import Loading from "./loading";
 import { propTypes, defaultProps } from "./proptypes";
 import styles from "./styles/shared";
 
-const CardComponent = ({ children, image, isLoading }) => {
-  const { isShowing, ratio, size, uri } = image;
+const CardComponent = ({ children, image, imageRatio, imageSize, showImage, isLoading }) => {
   if (isLoading) {
     return (
       <View>
-        <Loading aspectRatio={ratio} showImage={isShowing} />
+        <Loading aspectRatio={imageRatio} showImage={showImage} />
       </View>
     );
   }
@@ -19,10 +18,10 @@ const CardComponent = ({ children, image, isLoading }) => {
   return (
     <Animations.FadeIn>
       <View>
-        {isShowing &&
-          uri && (
+        {showImage &&
+          image && image.uri && (
             <View style={styles.imageContainer}>
-              <Image aspectRatio={ratio} uri={`${uri}&resize=${size}`} />
+              <Image aspectRatio={imageRatio} uri={`${image.uri}&resize=${imageSize}`} />
             </View>
           )}
         <View>{children}</View>

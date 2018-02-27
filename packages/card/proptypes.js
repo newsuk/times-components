@@ -16,22 +16,20 @@ export const propTypes = {
   children: PropTypes.node,
   childRatio: PropTypes.number,
   image: PropTypes.shape({
-    isShown: PropTypes.bool,
-    ratio: PropTypes.number,
-    size: PropTypes.number,
     uri: PropTypes.string
   }),
+  imageRatio: PropTypes.number,
+  imageSize: PropTypes.number,
+  showImage: PropTypes.bool,
   isLoading: PropTypes.bool
 };
 
 export const defaultProps = {
   children: [],
   childRatio: 1,
-  image: {
-    isShown: false,
-    ratio: 1,
-    size: 100,
-    uri: ""
-  },
+  image: {},
+  imageRatio: 1,
+  imageSize: 100,
+  showImage: false,
   isLoading: false
 };

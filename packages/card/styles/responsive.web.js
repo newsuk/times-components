@@ -20,6 +20,7 @@ export const getChildContainer = childRatio =>
   `,
     mediumUp: () => `
     flex: ${childRatio};
+    flex-basis: 0 !important;
   `
   });
 
