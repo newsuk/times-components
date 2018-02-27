@@ -9,6 +9,7 @@ export const CardContainer = withResponsiveStyles(View, {
     flex-direction: row;
   `
 });
+CardContainer.displayName = "CardContainer";
 
 export const getChildContainer = childRatio =>
   withResponsiveStyles(View, {
@@ -32,3 +33,4 @@ export const ImageContainer = withResponsiveStyles(View, {
     padding-right: 15px;
   `
 });
+ImageContainer.displayName = "ImageContainer";

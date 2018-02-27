@@ -1,6 +1,5 @@
 import React from "react";
 import { shallow } from "enzyme";
-import renderer from "react-test-renderer";
 import "jest-styled-components";
 import Card from "../../card";
 
@@ -16,71 +15,65 @@ const cardProps = {
 };
 
 describe("Card test on web", () => {
-  it("renders", () => {
-    const tree = renderer
-      .create(
-        <Card {...cardProps}>
-          <span>A card</span>
-        </Card>
-      )
-      .toJSON();
+  it("should render", () => {
+    const component = shallow(
+      <Card {...cardProps}>
+        <span>A card</span>
+      </Card>
+    );
 
-    expect(tree).toMatchSnapshot();
+    expect(component).toMatchSnapshot("1. Render a Card");
   });
 
-  it("renders loading state", () => {
-    const tree = renderer
-      .create(
-        <Card {...cardProps} isLoading>
-          <span>A loading state</span>
-        </Card>
-      )
-      .toJSON();
+  it("should render the loading state", () => {
+    const component = shallow(
+      <Card {...cardProps} isLoading>
+        <span>Loading state</span>
+      </Card>
+    );
 
-    expect(tree).toMatchSnapshot();
+    expect(component).toMatchSnapshot("2. Render the loading state");
   });
 
-  it("renders without image", () => {
+  it("should render without an image", () => {
     const noImageProps = Object.assign({}, cardProps, {
       image: null
     });
-    const tree = renderer
-      .create(
-        <Card {...noImageProps}>
-          <span>No image</span>
-        </Card>
-      )
-      .toJSON();
+    const component = shallow(
+      <Card {...noImageProps}>
+        <span>No image</span>
+      </Card>
+    );
 
-    expect(tree).toMatchSnapshot();
+    expect(component).toMatchSnapshot("3. Renders without an image");
   });
 
-  it("renders without image url", () => {
+  it("should render without image url", () => {
     const noImageProps = Object.assign({}, cardProps, {
       image: {
         uri: null
       }
     });
-    const tree = renderer
-      .create(
-        <Card {...noImageProps}>
-          <span>No URL</span>
-        </Card>
-      )
-      .toJSON();
+    const component = shallow(
+      <Card {...noImageProps}>
+        <span>No URL</span>
+      </Card>
+    );
 
-    expect(tree).toMatchSnapshot();
+    expect(component).toMatchSnapshot("4. Renders without an image URL");
   });
 
-  it("re-renders when image uri changes", () => {
+  it("should re-render when image uri changes", () => {
     const component = shallow(
       <Card {...cardProps}>
         <span>Some text</span>
       </Card>
     );
 
+    const testUri = "http://foo";
+
     component.setProps({
-      image: { uri: "http://foo" }
+      image: { uri: testUri }
     });
 
     expect(
@@ -88,18 +81,20 @@ describe("Card test on web", () => {
         .find("TimesImage")
         .at(0)
         .props().uri
-    ).toMatchSnapshot();
+    ).toEqual(`${testUri}&resize=${cardProps.imageSize}`);
   });
 
-  it("re-renders when image size changes", () => {
+  it("should re-render when image size changes", () => {
     const component = shallow(
       <Card {...cardProps}>
         <span>Some content</span>
       </Card>
     );
 
+    const testImageSize = 620;
+
     component.setProps({
-      imageSize: 620
+      imageSize: testImageSize
     });
 
     expect(
@@ -107,10 +102,10 @@ describe("Card test on web", () => {
         .find("TimesImage")
         .at(0)
         .props().uri
-    ).toMatchSnapshot();
+    ).toEqual(`${cardProps.image.uri}&resize=${testImageSize}`);
   });
 
-  it("re-renders when is loading changes", () => {
+  it("should re-render after showing the loading state", () => {
     const component = shallow(
       <Card {...cardProps} isLoading>
         <span>Re-render me</span>
@@ -121,10 +116,12 @@ describe("Card test on web", () => {
       isLoading: false
     });
 
-    expect(component.find("TimesImage").at(0)).toMatchSnapshot();
+    expect(component).toMatchSnapshot(
+      "5. Re-renders after showing the loading state"
+    );
   });
 
-  it("does not re-render fixed prop changes", () => {
+  it("should not re-render when image ratio changes", () => {
     const component = shallow(
       <Card {...cardProps}>
         <span>Do not re-render me</span>
@@ -135,6 +132,8 @@ describe("Card test on web", () => {
       imageRatio: 2
     });
 
-    expect(component.find("TimesImage").at(0)).toMatchSnapshot();
+    expect(component).toMatchSnapshot(
+      "6. Renders Card normally and does not re-render"
+    );
   });
 });
