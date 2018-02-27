@@ -97,7 +97,7 @@ describe("depend cli tests", () => {
 
   it("should get expr from lerna.json", async () => {
     const exit = jest.fn();
-    const readJson = jest.fn(async () => ({packages: ["./*"]}));
+    const readJson = jest.fn(async () => ({ packages: ["./*"] }));
     const getPackages = jest.fn(() => simple);
 
     const log = jest.fn();
