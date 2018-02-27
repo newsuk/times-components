@@ -83,7 +83,7 @@ storiesOf("Helpers/Styleguide", module)
               { fontFamily: fonts.bodyRegularSmallCaps }
             ]}
           >
-            {phrase}
+            {phrase.toLowerCase()}
           </Text>
         </View>
         <View style={styles.showoffFontsContainer}>
