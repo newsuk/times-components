@@ -2,7 +2,7 @@
 import { exit } from "process";
 import { writeJson } from "fs-extra";
 import getPackages from "./get-packages";
-import { argv } from "./cli-options";
+import argv from "./cli-options";
 import main from "./main";
 
 // eslint-disable-next-line no-console
