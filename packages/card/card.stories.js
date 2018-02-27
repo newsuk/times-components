@@ -1,10 +1,7 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text, View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { LateralSpacingDecorator } from "@times-components/storybook";
-import ArticleSummary from "@times-components/article-summary";
 import Card from "./card";
-import articleSummaryProps from "./fixtures/article-summary-props";
 
 const cardProps = {
   image: {
@@ -17,7 +14,6 @@ const cardProps = {
 };
 
 storiesOf("Composed/Card", module)
-  .addDecorator(LateralSpacingDecorator)
   .add("Loading", () => (
     <Card {...cardProps} isLoading>
       <Text>Is loading</Text>
@@ -25,17 +21,13 @@ storiesOf("Composed/Card", module)
   ))
   .add("Default", () => (
     <Card {...cardProps}>
-      <ArticleSummary {...articleSummaryProps} />
-    </Card>
-  ))
-  .add("Without Image", () => (
-    <Card
-      {...Object.assign({}, cardProps, {
-        image: {
-          url: null
-        }
-      })}
-    >
-      <ArticleSummary {...articleSummaryProps} />
+      <View
+        style={{
+          borderColor: "black",
+          borderStyle: "solid",
+          borderWidth: 1,
+          minHeight: 200
+        }}
+      />
     </Card>
   ));

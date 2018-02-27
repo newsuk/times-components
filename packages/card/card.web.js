@@ -1,8 +1,8 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { View } from "react-native";
 import Image from "@times-components/image";
 import { Animations } from "@times-components/styleguide";
+import { propTypes, defaultProps } from "./proptypes";
 import Loading from "./card-loading";
 import {
   ImageContainer,
@@ -58,24 +58,7 @@ class CardComponent extends React.Component {
   }
 }
 
-CardComponent.propTypes = {
-  image: PropTypes.shape({ uri: PropTypes.string }),
-  imageRatio: PropTypes.number,
-  imageSize: PropTypes.number,
-  showImage: PropTypes.bool,
-  children: PropTypes.node,
-  isLoading: PropTypes.bool
-};
-
-CardComponent.defaultProps = {
-  image: {
-    uri: ""
-  },
-  imageRatio: 1,
-  imageSize: 100,
-  showImage: false,
-  children: [],
-  isLoading: false
-};
+CardComponent.propTypes = propTypes;
+CardComponent.defaultProps = defaultProps;
 
 export default CardComponent;

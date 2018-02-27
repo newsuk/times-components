@@ -1,11 +1,9 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { View, StyleSheet, ViewPropTypes } from "react-native";
+import { View, StyleSheet } from "react-native";
 import Image from "@times-components/image";
 import { Animations } from "@times-components/styleguide";
+import { propTypes, defaultProps } from "./proptypes";
 import Loading from "./card-loading";
-
-const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 const styles = StyleSheet.create({
   imageContainer: {
@@ -21,7 +19,6 @@ class CardComponent extends React.Component {
       imageRatio,
       imageSize,
       showImage,
-      style,
       children
     } = this.props;
 
@@ -46,7 +43,7 @@ class CardComponent extends React.Component {
     return (
       <Animations.FadeIn>
         <View onLayout={this.handleLayout}>
-          <View style={style}>
+          <View>
             {showImage ? imageComponent : null}
             <View>{children}</View>
           </View>
@@ -56,26 +53,7 @@ class CardComponent extends React.Component {
   }
 }
 
-CardComponent.propTypes = {
-  image: PropTypes.shape({ uri: PropTypes.string }),
-  imageRatio: PropTypes.number,
-  imageSize: PropTypes.number,
-  showImage: PropTypes.bool,
-  style: ViewPropTypesStyle,
-  children: PropTypes.node,
-  isLoading: PropTypes.bool
-};
-
-CardComponent.defaultProps = {
-  image: {
-    uri: ""
-  },
-  imageRatio: 1,
-  imageSize: 100,
-  showImage: false,
-  style: null,
-  children: [],
-  isLoading: false
-};
+CardComponent.propTypes = propTypes;
+CardComponent.defaultProps = defaultProps;
 
 export default CardComponent;
