@@ -3,45 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { storiesOf } from "@storybook/react-native";
 import { Animations, colours, fonts } from "./styleguide";
-
-const styles = {
-  display: {
-    flexDirection: "row",
-    flexWrap: "wrap"
-  },
-  container: {
-    width: 250,
-    paddingBottom: 10,
-    borderWidth: 1,
-    borderColor: "#DBDBDB",
-    margin: 20
-  },
-  box: {
-    height: 100,
-    marginBottom: 10
-  },
-  text: {
-    textAlign: "center",
-    fontFamily: fonts.body,
-    fontSize: 12,
-    color: "#333333"
-  },
-  animationBox: {
-    backgroundColor: "#CCCCCC",
-    margin: 50,
-    padding: 100
-  },
-  showoffFontsContainer: {
-    borderBottomWidth: 1,
-    borderBottomColor: "#CCCCCC",
-    margin: 20
-  },
-  showoffFonts: {
-    fontSize: 30,
-    paddingTop: 15,
-    paddingBottom: 20
-  }
-};
+import styles from "./styleguide.stories.styles";
 
 const ColourBox = ({ name, hex }) => (
   <View style={styles.container}>
