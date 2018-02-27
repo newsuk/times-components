@@ -15,10 +15,14 @@ function resolveConflicts(strategy, packages) {
 export function suggestFix(packageJson = {}, rules = {}) {
   const fixup = (dep = {}) =>
     entries(dep)
-      .map(([key, value]) => [key, rules[key], value])
-      .filter(x => x[1])
-      .filter(x => x[1] !== x[2])
-      .map(([name, ver]) => ({ [name]: ver }))
+      .map(([name, version]) => ({
+        name,
+        version,
+        expected: rules[name]
+      }))
+      .filter(x => x.expected)
+      .filter(x => x.expected !== x.version)
+      .map(({name, expected}) => ({ [name]: expected }))
       .reduce(toObject, {});
 
   const dependencies = fixup(packageJson.dependencies);
@@ -103,31 +107,30 @@ export function findWrongVersions(packages) {
     .reduce(toObject, {});
 
   return packages.flatMap(p =>
-    entries(p.dependencies || {})
-      .map(([name, version]) => [p.name, name, version, expectedVersions[name]])
-      .filter(x => x[3] && x[2] !== x[3])
-      .map(([usedBy, packageName, installs, expected]) => ({
-        usedBy,
-        package: packageName,
+    [...entries(p.dependencies || {}), ...entries(p.devDependencies || {})]
+      .map(([name, installs]) => ({
+        usedBy: p.name,
+        package: name,
         installs,
-        expected
+        expected: expectedVersions[name]
       }))
+      .filter( ({installs, expected}) => expected && installs !== expected)
   );
 }
 
-export function fixTodo([path, json, patch]) {
-  return [path, applyPatch(json, patch)];
+export function fixTodo({path, packageJson, patch}) {
+  return [path, applyPatch(packageJson, patch)];
 }
 
 export function getSuggestions(todo) {
-  return todo.map(([path, json, patch]) => [
+  return todo.map(({path, packageJson, patch}) => [
     path,
     [
       ...entries(patch.dependencies)
-        .map(([name, version]) => [name, json.dependencies[name], version])
+        .map(([name, version]) => [name, packageJson.dependencies[name], version])
         .filter(x => x[1]),
       ...entries(patch.devDependencies)
-        .map(([name, version]) => [name, json.devDependencies[name], version])
+        .map(([name, version]) => [name, packageJson.devDependencies[name], version])
         .filter(x => x[1])
     ]
   ]);
@@ -135,8 +138,12 @@ export function getSuggestions(todo) {
 
 export function getTodos(packagesList, rules) {
   return packagesList
-    .map(([path, json]) => [path, json, suggestFix(json, rules)])
-    .filter(x => x[2]);
+    .map(([path, packageJson]) => ({
+      path,
+      packageJson,
+      patch: suggestFix(packageJson, rules)
+    }))
+    .filter(x => x.patch);
 }
 
 export function createRules(resolved, wrong) {

@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`checkdep cli tests bail if wrong 1`] = `Array []`;
+exports[`depend cli tests bail if wrong 1`] = `Array []`;
 
-exports[`checkdep cli tests list all dependencies 1`] = `
+exports[`depend cli tests list all dependencies 1`] = `
 Array [
   Array [
     "1",
@@ -32,9 +32,9 @@ Array [
 ]
 `;
 
-exports[`checkdep cli tests list all hints 1`] = `Array []`;
+exports[`depend cli tests list all hints 1`] = `Array []`;
 
-exports[`checkdep cli tests list all rules 1`] = `
+exports[`depend cli tests list all rules 1`] = `
 Array [
   Array [
     Object {},
@@ -42,7 +42,7 @@ Array [
 ]
 `;
 
-exports[`checkdep cli tests list with divergent 1`] = `
+exports[`depend cli tests list with divergent 1`] = `
 Array [
   Array [
     "1",
@@ -62,7 +62,7 @@ Array [
 ]
 `;
 
-exports[`checkdep cli tests prints graph 1`] = `
+exports[`depend cli tests prints graph 1`] = `
 Array [
   Array [
     "digraph G {
@@ -80,25 +80,7 @@ Array [
 ]
 `;
 
-exports[`checkdep cli tests prints help 1`] = `
-Array [
-  Array [
-    "depend -e \\"packages/*/package.json\\" [...options]
-
-Options:
-  --strategy, -s  {conservative|progressive|majority|majorityConservative|majorityProgressive}
-  --expr, -e                                                                                    [default: \\"packages/*/package.json\\"]
-  --list                                                                                        [default: false]
-  --fix                                                                                         [default: false]
-  --bail                                                                                        [default: false]
-  --hint                                                                                        [default: false]
-  --showRules                                                                                   [default: false]
-",
-  ],
-]
-`;
-
-exports[`checkdep cli tests throw exception if strategy not found 1`] = `
+exports[`depend cli tests throw exception if strategy not found 1`] = `
 Array [
   Array [
     "strategy foo not available",

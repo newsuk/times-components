@@ -43,6 +43,7 @@ export default async function main({
       ({ requirements, rules, suggestions, fixedPackages, versionSets }) => {
         if (argv.graph) {
           log(graph(requirements, argv.graph));
+          Promise.resolve(0);
         }
 
         if (argv.list) {
@@ -89,6 +90,7 @@ export default async function main({
       }
     )
     .catch(e => {
+      console.log(e.toString());
       log(e.toString());
       exit(1);
     });
