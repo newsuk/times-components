@@ -10,15 +10,16 @@ export const CardContainer = withResponsiveStyles(View, {
   `
 });
 
-export const getChildContainer = childRatio => withResponsiveStyles(View, {
-  base: () => `
+export const getChildContainer = childRatio =>
+  withResponsiveStyles(View, {
+    base: () => `
     flex: 1;
   `,
-  mediumUp: () => `
+    mediumUp: () => `
     flex: ${childRatio};
     flex-basis: 0 !important;
   `
-});
+  });
 
 export const ImageContainer = withResponsiveStyles(View, {
   base: () => `

@@ -2233,12 +2233,8 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
               }
             }
           >
-            <View
-              onLayout={undefined}
-            >
-              <View
-                style={null}
-              >
+            <View>
+              <View>
                 <View
                   style={
                     Object {
@@ -2481,12 +2477,8 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
               }
             }
           >
-            <View
-              onLayout={undefined}
-            >
-              <View
-                style={null}
-              >
+            <View>
+              <View>
                 <View
                   style={
                     Object {
@@ -2729,12 +2721,8 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
               }
             }
           >
-            <View
-              onLayout={undefined}
-            >
-              <View
-                style={null}
-              >
+            <View>
+              <View>
                 <View
                   style={
                     Object {
@@ -3322,12 +3310,8 @@ exports[`AuthorProfile test on ios renders profile content item component 1`] = 
         }
       }
     >
-      <View
-        onLayout={undefined}
-      >
-        <View
-          style={null}
-        >
+      <View>
+        <View>
           <View>
             <View>
               <Text
@@ -3424,12 +3408,8 @@ exports[`AuthorProfile test on ios renders profile content item component with a
         }
       }
     >
-      <View
-        onLayout={undefined}
-      >
-        <View
-          style={null}
-        >
+      <View>
+        <View>
           <View>
             <View>
               <Text
@@ -3526,12 +3506,8 @@ exports[`AuthorProfile test on ios renders profile content item component with n
         }
       }
     >
-      <View
-        onLayout={undefined}
-      >
-        <View
-          style={null}
-        >
+      <View>
+        <View>
           <View>
             <View>
               <Text

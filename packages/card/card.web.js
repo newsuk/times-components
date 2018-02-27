@@ -36,7 +36,11 @@ class CardComponent extends Component {
     if (isLoading) {
       return (
         <View>
-          <Loading aspectRatio={imageRatio} childRatio={childRatio} showImage={showImage} />
+          <Loading
+            aspectRatio={imageRatio}
+            childRatio={childRatio}
+            showImage={showImage}
+          />
         </View>
       );
     }
@@ -46,15 +50,16 @@ class CardComponent extends Component {
     return (
       <Animations.FadeIn>
         <CardContainer>
-          {
-            showImage && image && image.uri &&
+          {showImage &&
+            image &&
+            image.uri && (
               <ImageContainer>
                 <Image
                   aspectRatio={imageRatio}
                   uri={`${image.uri}&resize=${imageSize}`}
                 />
               </ImageContainer>
-          }
+            )}
           <ChildContainer>{children}</ChildContainer>
         </CardContainer>
       </Animations.FadeIn>

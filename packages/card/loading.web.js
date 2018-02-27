@@ -3,7 +3,11 @@ import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import Gradient from "@times-components/gradient";
 import { loadingPropTypes, loadingDefaultProps } from "./proptypes";
-import { CardContainer, getChildContainer, ImageContainer } from "./styles/responsive";
+import {
+  CardContainer,
+  getChildContainer,
+  ImageContainer
+} from "./styles/responsive";
 import styles from "./styles/shared";
 
 const Loading = ({ aspectRatio, childRatio, showImage }) => {
@@ -11,12 +15,11 @@ const Loading = ({ aspectRatio, childRatio, showImage }) => {
 
   return (
     <CardContainer>
-      {
-        showImage &&
+      {showImage && (
         <ImageContainer>
           <Image uri="" aspectRatio={aspectRatio} />
         </ImageContainer>
-      }
+      )}
       <ChildContainer>
         <Gradient style={[styles.headerContainer]} degrees={264} />
         <Gradient style={[styles.textContainer]} degrees={267} />
@@ -27,7 +30,7 @@ const Loading = ({ aspectRatio, childRatio, showImage }) => {
         />
       </ChildContainer>
     </CardContainer>
-  )
+  );
 };
 
 Loading.propTypes = {

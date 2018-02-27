@@ -13,23 +13,32 @@ const cardProps = {
   imageSize: 360
 };
 
-const label = 'Width of Card content';
+const label = "Width of Card content";
 const defaultValue = 2.7;
 const options = {
-   range: true,
-   min: 1,
-   max: 5,
-   step: 0.1,
+  range: true,
+  min: 1,
+  max: 5,
+  step: 0.1
 };
 
 storiesOf("Composed/Card", module)
   .add("Loading", () => (
-    <Card {...cardProps} childRatio={number(label, defaultValue, options)} showImage={boolean("Show Image?", true, '')} isLoading>
+    <Card
+      {...cardProps}
+      childRatio={number(label, defaultValue, options)}
+      showImage={boolean("Show Image?", true, "")}
+      isLoading
+    >
       <Text>Is loading</Text>
     </Card>
   ))
   .add("Default", () => (
-    <Card {...cardProps} childRatio={number(label, defaultValue, options)} showImage={boolean("Show Image?", true, '')}>
+    <Card
+      {...cardProps}
+      childRatio={number(label, defaultValue, options)}
+      showImage={boolean("Show Image?", true, "")}
+    >
       <View
         style={{
           borderColor: "black",
