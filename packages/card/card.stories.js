@@ -1,11 +1,10 @@
 import React from "react";
 import { Text, View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { boolean } from "@storybook/addon-knobs/react";
+import { boolean, number } from "@storybook/addon-knobs/react";
 import Card from "./card";
 
 const cardProps = {
-  childRatio: 2.7,
   image: {
     uri:
       "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12"
@@ -14,14 +13,23 @@ const cardProps = {
   imageSize: 360
 };
 
+const label = 'Width of Card content';
+const defaultValue = 2.7;
+const options = {
+   range: true,
+   min: 1,
+   max: 5,
+   step: 0.1,
+};
+
 storiesOf("Composed/Card", module)
   .add("Loading", () => (
-    <Card {...cardProps} showImage={boolean("Show Image?", true, '')} isLoading>
+    <Card {...cardProps} childRatio={number(label, defaultValue, options)} showImage={boolean("Show Image?", true, '')} isLoading>
       <Text>Is loading</Text>
     </Card>
   ))
   .add("Default", () => (
-    <Card {...cardProps} showImage={boolean("Show Image?", true, '')}>
+    <Card {...cardProps} childRatio={number(label, defaultValue, options)} showImage={boolean("Show Image?", true, '')}>
       <View
         style={{
           borderColor: "black",
