@@ -13,7 +13,7 @@ import ArticleSummary, {
 
 const LongText = withResponsiveStyles(View, {
   base: () => "display: none;",
-  mediumUp: () => "display: block;"
+  mediumUp: () => "display: block; padding-left: 15px;"
 });
 
 const ShortText = withResponsiveStyles(View, {
@@ -56,6 +56,7 @@ const AuthorProfileItem = item => {
     return (
       <View style={[styles.container, style]}>
         <Card
+          childRatio={2.7}
           isLoading={isLoading}
           imageRatio={imageRatio}
           showImage={showImage}
@@ -102,6 +103,7 @@ const AuthorProfileItem = item => {
     <Link url={url} onPress={onPress}>
       <View style={[styles.container, style]}>
         <Card
+          childRatio={2.7}
           image={imageUri ? { uri: imageUri } : null}
           imageRatio={imageRatio}
           imageSize={imageSize}
