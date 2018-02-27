@@ -30,6 +30,6 @@ export const getSeparator = ({ hasLeftRightMargin }) =>
     border-right-width: 1px;
     border-right-color: #dbdbdb;
     flex: 0 !important;
-    margin: ${hasLeftRightMargin ? "0 10px" : "0px"};
+    margin: ${hasLeftRightMargin ? "0 10px" : "0"};
   `
   });
