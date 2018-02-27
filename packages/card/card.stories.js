@@ -13,7 +13,7 @@ const cardProps = {
   imageRatio: 1.5,
   imageSize: 360
 };
-
+ 
 const label = "Width of Card content";
 const defaultValue = 2.7;
 const options = {
