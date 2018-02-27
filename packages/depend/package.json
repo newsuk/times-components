@@ -1,0 +1,72 @@
+{
+  "name": "@times-components/depend",
+  "version": "0.0.1",
+  "description": "dependency analyzer and fixer",
+  "main": "depend",
+  "scripts": {
+    "build": "babel . -d dist --ignore dist,node_modules,coverage,__tests__ && cp package.json dist/package.json",
+    "prepublish": "npm run build",
+    "fmt": "prettier --write '**/*.*'",
+    "prettier:diff": "prettier --list-different '**/*.*'",
+    "lint": "eslint . && npm run prettier:diff",
+    "test": "jest --bail --ci --coverage"
+  },
+  "bin": {
+    "depend": "dist/cli.js"
+  },
+  "jest": {
+    "preset": "react-native",
+    "rootDir": "../../",
+    "testEnvironment": "jsdom",
+    "coverageDirectory": "<rootDir>/packages/depend/coverage/",
+    "collectCoverageFrom": [
+      "**/packages/depend/*.js",
+      "!**/packages/depend/cli.js",
+      "!**/packages/depend/get-packages.js"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|react-apollo-temp|@times-components)/)"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/depend/__tests__/**.test.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "keywords": [
+    "mono",
+    "repo",
+    "lerna",
+    "dependency",
+    "analyzer",
+    "linter"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-stage-2": "6.24.1",
+    "eslint": "4.9.0",
+    "jest": "21.2.1",
+    "prettier": "1.8.2"
+  },
+  "dependencies": {
+    "babel-plugin-transform-runtime": "6.23.0",
+    "babel-polyfill": "6.26.0",
+    "babel-runtime": "6.26.0",
+    "chalk": "2.3.1",
+    "commander": "2.14.1",
+    "fs-extra": "5.0.0",
+    "glob": "7.1.2",
+    "semver": "5.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

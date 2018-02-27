@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`depend cli tests bail if wrong 1`] = `Array []`;
+
+exports[`depend cli tests list all dependencies 1`] = `
+Array [
+  Array [
+    "1",
+    "a",
+    "1.0.0",
+  ],
+  Array [
+    "2",
+    "b",
+    "2.0.0",
+  ],
+  Array [
+    "3",
+    "c",
+    "3.0.0",
+  ],
+  Array [
+    "4",
+    "d",
+    "4.0.0",
+  ],
+  Array [
+    "5",
+    "foo",
+    "0.0.1",
+  ],
+]
+`;
+
+exports[`depend cli tests list all hints 1`] = `Array []`;
+
+exports[`depend cli tests list all rules 1`] = `
+Array [
+  Array [
+    Object {},
+  ],
+]
+`;
+
+exports[`depend cli tests list with divergent 1`] = `
+Array [
+  Array [
+    "1",
+    "a",
+    "1.0.1 1.0.0",
+  ],
+  Array [
+    "2",
+    "b",
+    "2.0.0",
+  ],
+  Array [
+    "3",
+    "foo",
+    "0.0.1",
+  ],
+]
+`;
+
+exports[`depend cli tests prints graph 1`] = `
+Array [
+  Array [
+    "digraph G {
+
+}",
+  ],
+]
+`;

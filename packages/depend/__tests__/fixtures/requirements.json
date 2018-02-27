@@ -1,0 +1,10 @@
+[
+  {
+    "package": { "name": "x", "version": "1.0.0" },
+    "requires": { "name": "z", "version": "1.0.0" }
+  },
+  {
+    "package": { "name": "y", "version": "1.0.0" },
+    "requires": { "name": "z", "version": "1.0.0" }
+  }
+]
