@@ -35,8 +35,8 @@ class CardComponent extends Component {
       imageRatio,
       imageSize,
       isLoading,
-      showImage
-      tabletChildRatio,
+      showImage,
+      tabletChildRatio
     } = this.props;
 
     if (isLoading) {
