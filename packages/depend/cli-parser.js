@@ -8,8 +8,11 @@ export default commander
     "tool to analyze, visualize and fix dependencies of a javascript monorepo"
   )
   .option(
+    "-l --lerna <path>",
+    "path to project root. Uses packages field to find all packages"
+  )
+  .option(
     "-e --expr <glob>",
-    "expr",
     "glob expression that finds package.json files"
   )
   .option(

@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 import chalk from "chalk";
+import { join } from "path";
 import depend from "./depend";
 import graph from "./graph";
 import * as strategies from "./strategies";
@@ -22,6 +23,7 @@ function pickOverride(str = "") {
 export default async function main({
   log,
   getPackages,
+  readJson,
   writeJson,
   argv,
   exit
@@ -33,7 +35,20 @@ export default async function main({
     }
   }
 
-  const packagesList = await getPackages(argv.expr);
+  const lernaPackages = (argv.lerna)
+    ? await readJson(join(argv.lerna,'lerna.json'))
+      .then(lerna => lerna.packages)
+      .then(packages => packages.map(expr => join(argv.lerna, expr, "package.json")))
+    : [];
+
+  const packagesToFind = [...lernaPackages, argv.expr]
+    .filter(x=>x)
+
+
+  const packagesList = await Promise.all(
+    packagesToFind.map(getPackages)
+  ).then(packages => packages.flatten());
+
   return depend(
     packagesList,
     argv.strategy ? strategies[argv.strategy] : null,
