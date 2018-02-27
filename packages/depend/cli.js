@@ -6,6 +6,6 @@ import parser from "./cli-parser";
 import main from "./main";
 
 // eslint-disable-next-line no-console
-const argv = parser(process.argv);
 const log = (...args) => console.log(...args);
+const argv = parser(process.argv);
 main({ log, writeJson, getPackages, argv, exit });

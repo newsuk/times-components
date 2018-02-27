@@ -22,8 +22,14 @@ describe("depend requirements tests", () => {
 
     const requirements = getAllRequirements(packages);
     expect(requirements).toEqual([
-      ["foo", "2.0.0", "x", "1.0.0"],
-      ["foo", "2.0.0", "y", "3.0.0"]
+      {
+        package: { name: "foo", version: "2.0.0" },
+        requires: { name: "x", version: "1.0.0" }
+      },
+      {
+        package: { name: "foo", version: "2.0.0" },
+        requires: { name: "y", version: "3.0.0" }
+      }
     ]);
   });
 
@@ -39,6 +45,11 @@ describe("depend requirements tests", () => {
     ];
 
     const requirements = getAllRequirements(packages);
-    expect(requirements).toEqual([["foo", "2.0.0", "y", "1.0.0"]]);
+    expect(requirements).toEqual([
+      {
+        package: { name: "foo", version: "2.0.0" },
+        requires: { name: "y", version: "1.0.0" }
+      }
+    ]);
   });
 });
