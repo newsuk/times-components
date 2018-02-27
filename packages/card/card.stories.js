@@ -22,15 +22,6 @@ const options = {
   step: 0.1
 };
 
-const label = 'Width of Card content';
-const defaultValue = 2.7;
-const options = {
-   range: true,
-   min: 1,
-   max: 5,
-   step: 0.1,
-};
-
 storiesOf("Composed/Card", module)
   .add("Loading", () => (
     <Card
