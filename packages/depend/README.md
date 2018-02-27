@@ -1,14 +1,43 @@
 # depend
 
-A tool for syncing version numbers in a monorepo.
+A tool for analysing, visualizing and syncing version numbers in a monorepo.
+
+This tool parses all `package.json` files described in your `lerna.json` or that
+match a given glob-expression. All packages found are assumed to be part of one
+monorepo.
+
+# Linting
+
+Based on the parsed packages, linting rules are computed. Based on those rules,
+hints are computed and can be displayed using `--hint` and applied with `--fix`.
+Strategies add additional rules for ensuring packages install the same external
+dependencies. By default, only rules are computed that ensure that every package
+installs the latest version of each package found in the monorepo.
+
+# Analysis
+
+`--list` prints all package versions found in the monorepo. Based on the used
+rules, packages will be rendered in different colours:
+
+* Green => nothing to do.
+* Yellow => rules available to resolve the conflict.
+* Red => no rule available to resolve this conflict.
+
+If no rules are available, set a strategy or fix the issue by using `--pick`.
 
 # Usage
 
 ```
-depend -e "packages/*/package.json" [...options]
+depend --lerna "{path/to/lerna/project}" [...options]
+depend --expr "{glob}" [...options]
 ```
 
 # Options
+
+## --lerna, -l "{path}"
+
+Evaluate all `package.json` files defined in the `packages` field found
+`<path>/lerna.json` file.
 
 ## --expr, -e "{glob}"
 
@@ -17,11 +46,20 @@ package.json files. By default it will use `"packages/*/package.json"`.
 
 ## --fix
 
-Fixes the packages that are not in-sync
+Fixes the packages according to the computed versions.
 
 ## --graph, -g ["{filter}"]
 
-Prints a graphviz compatible output that can be converted to a graphic.
+Prints a [graphviz](https://graphviz.org) compatible output that can be
+converted to an image.
+
+## `--list`
+
+prints all package versions found in the monorepo.
+
+## '--showRules'
+
+prints all computed rules.
 
 ### Examples
 
@@ -133,13 +171,16 @@ everything
 
 ## --bail
 
-exit with code 1 if packages are not in-sync
+exit with code 1 if packages don't install the expected versions.
 
 ## strategies [--strategy, -s]
 
-Strategies resolve external dependency version conflicts within the monorepo.
-Dependencies that are also packages of the monorepo are always set to the latest
-version irrespective of the chosen strategy.
+Strategies compute additional rules how to resolve version conflicts of external
+(dev)dependencies within the monorepo.
+
+Dependencies that are also packages of the monorepo, are always (suggested to
+be) set to the latest version found in the monorepo irrespective of the chosen
+strategy.
 
 ### conservative
 
@@ -163,4 +204,4 @@ as majority but on a tie pick the newer version
 
 ## Limitations
 
-Version ranges are currently not supported.
+Strategies `progressive` and `conservative` don't support version ranges.
