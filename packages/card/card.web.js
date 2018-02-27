@@ -3,7 +3,7 @@ import { View } from "react-native";
 import Image from "@times-components/image";
 import { Animations } from "@times-components/styleguide";
 import { propTypes, defaultProps } from "./proptypes";
-import Loading from "./card-loading";
+import Loading from "./loading";
 import {
   ImageContainer,
   SummaryContainer,

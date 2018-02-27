@@ -1,15 +1,10 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import { View } from "react-native";
 import Image from "@times-components/image";
 import { Animations } from "@times-components/styleguide";
 import { propTypes, defaultProps } from "./proptypes";
-import Loading from "./card-loading";
-
-const styles = StyleSheet.create({
-  imageContainer: {
-    marginBottom: 10
-  }
-});
+import Loading from "./loading";
+import styles from "./styles/shared";
 
 class CardComponent extends React.Component {
   render() {
