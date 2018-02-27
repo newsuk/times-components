@@ -25,19 +25,17 @@ const CardComponent = ({
   return (
     <Animations.FadeIn>
       <View>
-        <View>
-          {showImage &&
-            image &&
-            image.uri && (
-              <View style={styles.imageContainer}>
-                <Image
-                  aspectRatio={imageRatio}
-                  uri={`${image.uri}&resize=${imageSize}`}
-                />
-              </View>
-            )}
-          <View>{children}</View>
-        </View>
+        {showImage &&
+          image &&
+          image.uri && (
+            <View style={styles.imageContainer}>
+              <Image
+                aspectRatio={imageRatio}
+                uri={`${image.uri}&resize=${imageSize}`}
+              />
+            </View>
+          )}
+        <View>{children}</View>
       </View>
     </Animations.FadeIn>
   );
