@@ -90,7 +90,6 @@ export default async function main({
       }
     )
     .catch(e => {
-      console.log(e.toString());
       log(e.toString());
       exit(1);
     });
