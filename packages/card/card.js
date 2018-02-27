@@ -7,12 +7,12 @@ import Loading from "./loading";
 import styles from "./styles/shared";
 
 const CardComponent = ({
-  isLoading,
+  children,
   image,
   imageRatio,
   imageSize,
-  showImage,
-  children
+  isLoading,
+  showImage
 }) => {
   if (isLoading) {
     return (

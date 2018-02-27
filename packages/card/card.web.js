@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import { View } from "react-native";
+import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import { Animations } from "@times-components/styleguide";
 import { propTypes, defaultProps } from "./proptypes";
 import Loading from "./loading";
 import {
   ImageContainer,
-  SummaryContainer,
+  ChildContainer,
   CardContainer
 } from "./card-styles.web";
 
@@ -21,6 +22,7 @@ class CardComponent extends Component {
   }
   render() {
     const {
+      childRatio,
       isLoading,
       image,
       imageRatio,
@@ -32,7 +34,7 @@ class CardComponent extends Component {
     if (isLoading) {
       return (
         <View>
-          <Loading imageRatio={imageRatio} showImage={showImage} />
+          <Loading aspectRatio={imageRatio} childRatio={childRatio} showImage={showImage} />
         </View>
       );
     }
@@ -44,19 +46,25 @@ class CardComponent extends Component {
             showImage && image && image.uri &&
               <ImageContainer>
                 <Image
-                  uri={`${image.uri}&resize=${imageSize || 100}`}
                   aspectRatio={imageRatio}
+                  uri={`${image.uri}&resize=${imageSize}`}
                 />
               </ImageContainer>
           }
-          <SummaryContainer>{children}</SummaryContainer>
+          <ChildContainer>{children}</ChildContainer>
         </CardContainer>
       </Animations.FadeIn>
     );
   }
 }
 
-CardComponent.propTypes = propTypes;
-CardComponent.defaultProps = defaultProps;
+CardComponent.propTypes = {
+  ...propTypes,
+  childRatio: PropTypes.number
+};
+CardComponent.defaultProps = {
+  ...defaultProps,
+  childRatio: 1
+};
 
 export default CardComponent;

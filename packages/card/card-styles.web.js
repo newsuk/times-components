@@ -15,7 +15,7 @@ export const ImageContainer = withResponsiveStyles(View, {
   `
 });
 
-export const SummaryContainer = withResponsiveStyles(View, {
+export const ChildContainer = withResponsiveStyles(View, {
   base: () => `
     flex-grow: 1;
     flex-shrink: 1 !important;
