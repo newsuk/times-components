@@ -33,7 +33,7 @@ const Loading = ({ aspectRatio, tabletChildRatio, showImage }) => {
         />
       </ChildContainer>
     </CardContainer>
-  )
+  );
 };
 
 Loading.propTypes = {
