@@ -1,15 +1,5 @@
 import graph from "../graph";
-
-const requirements = [
-  {
-    package: { name: "x", version: "1.0.0" },
-    requires: { name: "z", version: "1.0.0" }
-  },
-  {
-    package: { name: "y", version: "1.0.0" },
-    requires: { name: "z", version: "1.0.0" }
-  }
-];
+import requirements from "./fixtures/requirements";
 
 describe("depend graph printer tests", () => {
   it("should handle empty filter", () => {
