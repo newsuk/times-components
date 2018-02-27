@@ -6,10 +6,10 @@ import { Animations } from "@times-components/styleguide";
 import { propTypes, defaultProps } from "./proptypes";
 import Loading from "./loading";
 import {
-  ImageContainer,
-  ChildContainer,
-  CardContainer
-} from "./card-styles.web";
+  CardContainer,
+  getChildContainer,
+  ImageContainer
+} from "./styles/responsive";
 
 class CardComponent extends Component {
   shouldComponentUpdate(nextProps) {
@@ -22,13 +22,13 @@ class CardComponent extends Component {
   }
   render() {
     const {
+      children,
       childRatio,
-      isLoading,
       image,
       imageRatio,
       imageSize,
-      showImage,
-      children
+      isLoading,
+      showImage
     } = this.props;
 
     if (isLoading) {
@@ -38,6 +38,8 @@ class CardComponent extends Component {
         </View>
       );
     }
+
+    const ChildContainer = getChildContainer(childRatio);
 
     return (
       <Animations.FadeIn>

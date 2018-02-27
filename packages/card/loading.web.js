@@ -1,23 +1,23 @@
 import React from "react";
-import { View } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import Gradient from "@times-components/gradient";
 import { loadingPropTypes, loadingDefaultProps } from "./proptypes";
-import { ImageContainer, CardContainer } from "./card-styles";
+import { CardContainer, getChildContainer, ImageContainer } from "./styles/responsive";
 import styles from "./styles/shared";
 
 const Loading = ({ aspectRatio, childRatio, showImage }) => {
-  const imageComponent = (
-    <ImageContainer>
-      <Image uri="" aspectRatio={aspectRatio} />
-    </ImageContainer>
-  );
+  const ChildContainer = getChildContainer(childRatio);
 
   return (
     <CardContainer>
-      {showImage && imageComponent}
-      <View style={{ flex: childRatio }}>
+      {
+        showImage &&
+        <ImageContainer>
+          <Image uri="" aspectRatio={aspectRatio} />
+        </ImageContainer>
+      }
+      <ChildContainer>
         <Gradient style={[styles.headerContainer]} degrees={264} />
         <Gradient style={[styles.textContainer]} degrees={267} />
         <Gradient style={[styles.textContainer]} degrees={267} />
@@ -25,9 +25,9 @@ const Loading = ({ aspectRatio, childRatio, showImage }) => {
           style={[styles.textContainer, styles.noMarginBottom]}
           degrees={267}
         />
-      </View>
+      </ChildContainer>
     </CardContainer>
-  );
+  )
 };
 
 Loading.propTypes = {
