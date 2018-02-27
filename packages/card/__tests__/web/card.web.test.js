@@ -111,7 +111,7 @@ describe("Card tests on web", () => {
         <span>Re-render me</span>
       </Card>
     );
- 
+
     component.setProps({
       isLoading: false
     });
