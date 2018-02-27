@@ -138,8 +138,8 @@ exit with code 1 if packages are not in-sync
 ## strategies [--strategy, -s]
 
 Strategies resolve external dependency version conflicts within the monorepo.
-Dependencies that are also packages of the monorepo are always set
-to the latest version irrespective of the chosen strategy.
+Dependencies that are also packages of the monorepo are always set to the latest
+version irrespective of the chosen strategy.
 
 ### conservative
 

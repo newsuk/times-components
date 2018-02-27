@@ -1,9 +1,8 @@
 import graph from "../graph";
-import requirements from "./fixtures/requirements";
+import requirements from "./fixtures/requirements.json";
 
 describe("depend graph printer tests", () => {
   it("should handle empty filter", () => {
-    const requirements = [];
     const filter = "";
     const dot = graph(requirements, filter);
     expect(dot).toMatchSnapshot();

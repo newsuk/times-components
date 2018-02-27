@@ -1,10 +1,13 @@
+/* eslint-disable no-console */
 import commander from "commander";
 import { version } from "./package.json";
 import * as strategies from "./strategies";
 
 function validatePick(rule) {
   if (rule.split("@").length !== 2) {
-    console.error(`"${rule}" is an invalid rule. Format: "-p {name}@{version}"`);
+    console.error(
+      `"${rule}" is an invalid rule. Format: "-p {name}@{version}"`
+    );
     process.exit(1);
   }
   return rule;
@@ -29,10 +32,7 @@ export default commander
     "-l --lerna <path>",
     "path to project root. Uses packages field to find all packages"
   )
-  .option(
-    "-e --expr <glob>",
-    "glob expression that finds package.json files"
-  )
+  .option("-e --expr <glob>", "glob expression that finds package.json files")
   .option(
     "-p --pick <dependency>",
     "sets all package dependencies to {package}@{version}",

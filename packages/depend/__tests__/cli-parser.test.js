@@ -27,7 +27,12 @@ describe("depend cli-parser tests", () => {
   });
 
   it("should get strategy", () => {
-    const { strategy } = parser.parse(["depend", "/", "--strategy", "majority"]);
+    const { strategy } = parser.parse([
+      "depend",
+      "/",
+      "--strategy",
+      "majority"
+    ]);
     expect(strategy).toEqual("majority");
   });
 
