@@ -151,7 +151,7 @@ pick the newest used version
 
 ### majority
 
-use the version the is used by the majority of packages in your repo
+use the version that is used by the majority of packages in your repo
 
 ### majorityConservative
 
