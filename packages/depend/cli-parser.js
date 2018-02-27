@@ -1,5 +1,23 @@
 import commander from "commander";
 import { version } from "./package.json";
+import * as strategies from "./strategies";
+
+function validatePick(rule) {
+  if (rule.split("@").length !== 2) {
+    console.error(`"${rule}" is an invalid rule. Format: "-p {name}@{version}"`);
+    process.exit(1);
+  }
+  return rule;
+}
+
+function validateStrategies(name) {
+  if (!strategies[name]) {
+    const options = Object.keys(strategies).join(", ");
+    console.error(`"${name}" is invalid strategy. Chose one of: ${options}"`);
+    process.exit(1);
+  }
+  return name;
+}
 
 export default commander
   .version(version)
@@ -17,7 +35,8 @@ export default commander
   )
   .option(
     "-p --pick <dependency>",
-    "sets all package dependencies to {package}@{version}"
+    "sets all package dependencies to {package}@{version}",
+    validatePick
   )
   .option(
     "-g --graph [filter]",
@@ -25,7 +44,8 @@ export default commander
   )
   .option(
     "-s --strategy <strategy>",
-    "how to resolve conflicts. possible strategies: conservative, progressive, majority, majorityConservative, majorityProgressive"
+    "how to resolve conflicts. possible strategies: conservative, progressive, majority, majorityConservative, majorityProgressive",
+    validateStrategies
   )
   .option("-f --fix", "fixed dependencies with wrong versions")
   .option("-sr --show-rules", "prints rules that will be applied")

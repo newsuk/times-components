@@ -13,10 +13,6 @@ function prettifyHint([name, current, target]) {
 
 function pickOverride(str = "") {
   const [name, version] = str.split("@");
-  if (!version) {
-    return {};
-  }
-
   return { [name]: version };
 }
 
@@ -28,12 +24,6 @@ export default async function main({
   argv,
   exit
 }) {
-  if (argv.strategy) {
-    if (!strategies[argv.strategy]) {
-      log(`strategy ${argv.strategy} not available`);
-      return exit(1);
-    }
-  }
 
   const lernaPackages = (argv.lerna)
     ? await readJson(join(argv.lerna,'lerna.json'))
@@ -46,7 +36,7 @@ export default async function main({
 
 
   const packagesList = await Promise.all(
-    packagesToFind.map(getPackages)
+    packagesToFind.map(path=>getPackages(path))
   ).then(packages => packages.flatten());
 
   return depend(

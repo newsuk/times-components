@@ -82,17 +82,6 @@ describe("depend cli tests", () => {
     expect(exit.mock.calls).toEqual([[1]]);
   });
 
-  it("throw exception if strategy not found", async () => {
-    const exit = jest.fn();
-    const log = jest.fn();
-    const argv = { bail: 1, expr: "*", strategy: "foo" };
-    const getPackages = () => ["", []];
-
-    await main({ log, argv, getPackages, exit });
-    expect(exit.mock.calls).toEqual([[1]]);
-    expect(log.mock.calls).toMatchSnapshot();
-  });
-
   it("should fix wrong package.json", async () => {
     const exit = jest.fn();
     const getPackages = () => wrong;
@@ -104,5 +93,19 @@ describe("depend cli tests", () => {
     await main({ log, argv, getPackages, exit, writeJson });
     expect(exit.mock.calls).toEqual([]);
     expect(writeJson.mock.calls).toEqual(wrongFixed);
+  });
+
+  it("should get expr from lerna.json", async () => {
+    const exit = jest.fn();
+    const readJson = jest.fn(async () => ({packages: ["./*"]}));
+    const getPackages = jest.fn(() => simple);
+
+    const log = jest.fn();
+    const argv = { list: "", lerna: "project/root" };
+
+    await main({ log, argv, getPackages, exit, readJson });
+    expect(exit.mock.calls).toEqual([]);
+    expect(readJson.mock.calls).toEqual([["project/root/lerna.json"]]);
+    expect(getPackages.mock.calls).toEqual([["project/root/*/package.json"]]);
   });
 });
