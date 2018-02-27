@@ -1,5 +1,5 @@
 import commander from "commander";
-import {version} from "./package.json"
+import { version } from "./package.json";
 
 export default commander
   .version(version)

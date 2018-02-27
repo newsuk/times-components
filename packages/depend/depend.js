@@ -22,7 +22,7 @@ export function suggestFix(packageJson = {}, rules = {}) {
       }))
       .filter(x => x.expected)
       .filter(x => x.expected !== x.version)
-      .map(({name, expected}) => ({ [name]: expected }))
+      .map(({ name, expected }) => ({ [name]: expected }))
       .reduce(toObject, {});
 
   const dependencies = fixup(packageJson.dependencies);
@@ -55,34 +55,43 @@ export const applyPatch = (
 
 export function getAllRequirements(packages) {
   return packages
-    .map(p => [
-      p.name,
-      p.version,
-      [...entries(p.dependencies || {}), ...entries(p.devDependencies || {})]
-    ])
-    .flatMap(([name, version, deps]) =>
-      deps.map(([depName, depVersion]) => [name, version, depName, depVersion])
+    .map(p => ({
+      name: p.name,
+      version: p.version,
+      deps: [
+        ...entries(p.dependencies || {}),
+        ...entries(p.devDependencies || {})
+      ]
+    }))
+    .flatMap(({ name, version, deps }) =>
+      deps.map(([depName, depVersion]) => ({
+        package: { name, version },
+        requires: { name: depName, version: depVersion }
+      }))
     );
 }
 
 export function computeVersionSets(requirements) {
-  return requirements.map(p => [p[2], p[3]]).reduce(
-    (sets, [name, ver]) => ({
+  return requirements.map(p => p.requires).reduce(
+    (sets, { name, version }) => ({
       ...sets,
-      [name]: distinct([ver, ...(sets[name] || [])])
+      [name]: distinct([version, ...(sets[name] || [])])
     }),
     {}
   );
 }
 
 export function computeFlatReverseLookupMap(requirements) {
-  return requirements.map(r => [`${r[2]}@${r[3]}`, `${r[0]}@${r[1]}`]).reduce(
-    (deps, [dependee, dependency]) => ({
-      ...deps,
-      [dependee]: new Set([dependency, ...(deps[dependee] || [])])
-    }),
-    {}
-  );
+  const packName = ({ name, version }) => `${name}@${version}`;
+  return requirements
+    .map(r => [packName(r.package), packName(r.requires)])
+    .reduce(
+      (deps, [dependee, dependency]) => ({
+        ...deps,
+        [dependee]: distinct([dependency, ...(deps[dependee] || [])])
+      }),
+      {}
+    );
 }
 
 export function computeReverseLookupMap(requirements, versionSets) {
@@ -93,7 +102,7 @@ export function computeReverseLookupMap(requirements, versionSets) {
         ...versions.map(version => ({
           name: dependency,
           version,
-          usedBy: [...flatReverseLookup[`${dependency}@${version}`]]
+          usedBy: [...(flatReverseLookup[`${dependency}@${version}`] || [])]
         }))
       ]
     }))
@@ -114,23 +123,31 @@ export function findWrongVersions(packages) {
         installs,
         expected: expectedVersions[name]
       }))
-      .filter( ({installs, expected}) => expected && installs !== expected)
+      .filter(({ installs, expected }) => expected && installs !== expected)
   );
 }
 
-export function fixTodo({path, packageJson, patch}) {
+export function fixTodo({ path, packageJson, patch }) {
   return [path, applyPatch(packageJson, patch)];
 }
 
 export function getSuggestions(todo) {
-  return todo.map(({path, packageJson, patch}) => [
+  return todo.map(({ path, packageJson, patch }) => [
     path,
     [
       ...entries(patch.dependencies)
-        .map(([name, version]) => [name, packageJson.dependencies[name], version])
+        .map(([name, version]) => [
+          name,
+          packageJson.dependencies[name],
+          version
+        ])
         .filter(x => x[1]),
       ...entries(patch.devDependencies)
-        .map(([name, version]) => [name, packageJson.devDependencies[name], version])
+        .map(([name, version]) => [
+          name,
+          packageJson.devDependencies[name],
+          version
+        ])
         .filter(x => x[1])
     ]
   ]);
@@ -155,14 +172,12 @@ export function createRules(resolved, wrong) {
 
 export function applyStrategy(requirements, strategy) {
   const versionSets = computeVersionSets(requirements);
-
   if (!strategy) {
     return {
       versionSets,
       resolved: []
     };
   }
-
   const reverseLookup = computeReverseLookupMap(requirements, versionSets);
   const divergent = values(reverseLookup).filter(x => x.length > 1);
   const resolved = divergent.map(c => resolveConflicts(strategy, c));
