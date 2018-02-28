@@ -13,6 +13,7 @@ export const ChildContainer = withResponsiveStyles(View, {
     flex-basis: 0 !important;
     padding-left: 0;
     padding-right: 0;
+    width: 0;
   `
 });
 ChildContainer.displayName = "ChildContainer";

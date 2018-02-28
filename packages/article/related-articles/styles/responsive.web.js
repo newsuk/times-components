@@ -83,8 +83,20 @@ export const getImageContainer = ({
   return ImageContainer;
 };
 
+// replace with Card
+export const getRelatedArticleContainer = articleCount =>
+  withResponsiveStyles(View, {
+    base: () => `
+    display: flex;
+    flex-direction: column;
+  `,
+    mediumUp: () => `
+      flex-direction: ${articleCount === 1 ? "row" : "column"};
+  `
+  });
+
 export const getSummaryContainer = ({ articleCount }) => {
-  const SummaryContainer = withResponsiveStyles(View, {
+  withResponsiveStyles(View, {
     base: () => `
     flex-grow: 1;
   `,
