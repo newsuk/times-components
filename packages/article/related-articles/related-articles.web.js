@@ -4,7 +4,10 @@ import { View } from "react-native";
 import { Slice } from "@times-components/slice";
 import Heading from "./heading";
 import RelatedArticleItem from "./related-article-item";
-import { relatedArticlesPropTypes, defaultProps } from "./proptypes";
+import {
+  relatedArticlesPropTypes,
+  relatedArticlesDefaultProps
+} from "./related-articles-proptypes";
 import {
   RelatedArticleContainer,
   ImageContainer,
@@ -42,6 +45,6 @@ const RelatedArticles = ({ articles, onPress, template }) => {
 };
 
 RelatedArticles.propTypes = relatedArticlesPropTypes;
-RelatedArticles.defaultProps = defaultProps;
+RelatedArticles.defaultProps = relatedArticlesDefaultProps;
 
 export default withTrackingContext(RelatedArticles);
