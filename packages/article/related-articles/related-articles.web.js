@@ -1,6 +1,5 @@
 import React from "react";
 import { View } from "react-native";
-import { DefaultSlice, LeadSlice } from "@times-components/slice";
 import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
 import {
@@ -12,6 +11,7 @@ import {
   getRelatedArticleContainer,
   getSummaryContainer
 } from "./styles/responsive";
+import getSliceComponent from "./utils";
 
 import withTrackingContext from "./related-articles-tracking-context";
 
@@ -23,20 +23,7 @@ const RelatedArticles = ({ articles, onPress, template }) => {
   const RelatedArticleContainer = getRelatedArticleContainer(articleCount);
   const SummaryContainer = getSummaryContainer(articleCount);
 
-  let Slice;
-
-  switch (template) {
-    case "DEFAULT":
-    default:
-      Slice = DefaultSlice;
-      break;
-    case "LEAD_AND_TWO":
-      Slice = LeadSlice;
-      break;
-    // case 'OPINION':
-    //   Slice = OpinionSlice;
-    //   break;
-  }
+  const Slice = getSliceComponent(template);
 
   // for tests
   ImageContainer.displayName = "ImageContainer";
