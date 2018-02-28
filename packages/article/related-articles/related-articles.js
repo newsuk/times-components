@@ -1,14 +1,13 @@
 import React from "react";
 import { ScrollView } from "react-native";
 import renderSlice from "./related-articles.base";
-import Heading from "./heading";
+import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
 import withTrackingContext from "./related-articles-tracking-context";
 import {
   relatedArticlesPropTypes,
   relatedArticlesDefaultProps
 } from "./related-articles-proptypes";
-import getSliceComponent from "./utils";
 
 const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles || articles.length === 0) return null;
@@ -34,7 +33,7 @@ const RelatedArticles = ({ articles, onPress, template }) => {
 
   return (
     <ScrollView style={{ marginTop: 10 }}>
-      <Heading />
+      <RelatedArticlesHeading />
       {renderSlice(template, renderArticleItems)}
     </ScrollView>
   );
