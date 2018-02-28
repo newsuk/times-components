@@ -1,6 +1,6 @@
 {
   "name": "@times-components/date-publication",
-  "version": "0.11.10",
+  "version": "0.11.11",
   "description": "Date and Publication properties",
   "main": "date-publication",
   "scripts": {
@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "@times-components/jest-configurator": "0.2.1",
-    "@times-components/styleguide": "0.3.3",
+    "@times-components/styleguide": "0.3.4",
     "@times-components/utils": "0.5.1",
     "date-fns": "1.28.5",
     "prop-types": "15.6.0",
