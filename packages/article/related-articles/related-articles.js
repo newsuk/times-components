@@ -4,8 +4,11 @@ import { ScrollView } from "react-native";
 import { Slice } from "@times-components/slice";
 import Heading from "./heading";
 import RelatedArticleItem from "./related-article-item";
-import { relatedArticlesPropTypes, defaultProps } from "./proptypes";
 import withTrackingContext from "./related-articles-tracking-context";
+import {
+  relatedArticlesPropTypes,
+  relatedArticlesDefaultProps
+} from "./related-articles-proptypes";
 
 const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles || articles.length === 0) return null;
@@ -27,6 +30,6 @@ const RelatedArticles = ({ articles, onPress, template }) => {
 };
 
 RelatedArticles.propTypes = relatedArticlesPropTypes;
-RelatedArticles.defaultProps = defaultProps;
+RelatedArticles.defaultProps = relatedArticlesDefaultProps;
 
 export default withTrackingContext(RelatedArticles);

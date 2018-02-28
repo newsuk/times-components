@@ -73,7 +73,7 @@ class CardComponent extends Component {
     );
   }
 }
- 
+
 CardComponent.propTypes = {
   ...cardPropTypes,
   tabletChildRatio: PropTypes.number

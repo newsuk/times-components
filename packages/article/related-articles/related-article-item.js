@@ -8,7 +8,7 @@ import ArticleSummary, {
 import Image from "@times-components/image";
 import Link from "@times-components/link";
 import { colours } from "@times-components/styleguide";
-import { relatedArticleItemPropTypes } from "./proptypes";
+import relatedArticleItemPropTypes from "./related-article-item-proptypes";
 import styles from "./styles";
 
 const RelatedArticleItem = ({ article, onPress }) => {
