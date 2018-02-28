@@ -42,7 +42,7 @@ Evaluate all `package.json` files defined in the `packages` field found
 ## --expr, -e "{glob}"
 
 Defines the glob expression that will be used to search the filesystem for
-package.json files. By default it will use `"packages/*/package.json"`.
+package.json files.
 
 ## --fix
 
@@ -126,6 +126,7 @@ digraph {
 
 Depend itself does not have any rendering capabilities but `--graph` output can
 be directly piped into a [graphviz](https://www.graphviz.org/) renderer.
+`fdp` and `circo` can be obtained by installing the graphviz package.
 
 `depend -l . -g "@times-components/*=>dextrose@" | fdp -Tsvg -o dextrose.svg`
 
