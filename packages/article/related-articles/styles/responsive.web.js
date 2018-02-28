@@ -1,13 +1,14 @@
 import { StyleSheet, Text, View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
+import { colours } from "@times-components/styleguide";
 
-export const StyledRelatedArticlesHeading = withResponsiveStyles(View, {
+export const RelatedArticlesHeading = withResponsiveStyles(View, {
   base: () => `
     align-items: center;
     border-style: solid;
-    border-bottom-color: #dbdbdb;
+    border-bottom-color: ${colours.functional.keyline};
     border-bottom-width: ${StyleSheet.hairlineWidth}px;
-    border-top-color: #dbdbdb;
+    border-top-color: ${colours.functional.keyline};
     border-top-width: ${StyleSheet.hairlineWidth}px;
     display: flex;
     height: 55px;

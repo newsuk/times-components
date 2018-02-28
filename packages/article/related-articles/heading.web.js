@@ -1,14 +1,14 @@
 import React from "react";
 import { Text } from "react-native";
 import styles from "./styles";
-import { StyledRelatedArticlesHeading } from "./styles/responsive";
+import { RelatedArticlesHeading } from "./styles/responsive";
 
-const RelatedArticlesHeading = () => (
-  <StyledRelatedArticlesHeading>
+const Heading = () => (
+  <RelatedArticlesHeading>
     <Text accessibilityRole="heading" aria-level="3" style={styles.title}>
       Related links
     </Text>
-  </StyledRelatedArticlesHeading>
+  </RelatedArticlesHeading>
 );
 
-export default RelatedArticlesHeading;
+export default Heading;
