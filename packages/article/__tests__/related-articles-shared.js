@@ -123,7 +123,7 @@ export default () => {
     });
   });
 
-  describe("Related articles tracking", () => {
+  describe("tracker", () => {
     it("sends analytics even if no related articles are rendered", () => {
       const events = jest.fn();
       const data = {

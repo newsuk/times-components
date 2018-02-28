@@ -2924,7 +2924,7 @@ exports[`Related articles test on android Related articles renders two related a
 </RCTScrollView>
 `;
 
-exports[`Related articles test on android Related articles tracking sends analytics even if no related articles are rendered 1`] = `
+exports[`Related articles test on android tracker sends analytics even if no related articles are rendered 1`] = `
 Array [
   Array [
     Object {
@@ -2941,7 +2941,7 @@ Array [
 ]
 `;
 
-exports[`Related articles test on android Related articles tracking sends analytics if a single related article is rendered 1`] = `
+exports[`Related articles test on android tracker sends analytics if a single related article is rendered 1`] = `
 Array [
   Array [
     Object {
@@ -2966,7 +2966,7 @@ Array [
 ]
 `;
 
-exports[`Related articles test on android Related articles tracking sends analytics if a single related article with no byline is rendered 1`] = `
+exports[`Related articles test on android tracker sends analytics if a single related article with no byline is rendered 1`] = `
 Array [
   Array [
     Object {
@@ -2991,7 +2991,7 @@ Array [
 ]
 `;
 
-exports[`Related articles test on android Related articles tracking sends analytics if a single related article with no label is rendered 1`] = `
+exports[`Related articles test on android tracker sends analytics if a single related article with no label is rendered 1`] = `
 Array [
   Array [
     Object {
@@ -3016,7 +3016,7 @@ Array [
 ]
 `;
 
-exports[`Related articles test on android Related articles tracking sends analytics if a single related article with no lead image is rendered 1`] = `
+exports[`Related articles test on android tracker sends analytics if a single related article with no lead image is rendered 1`] = `
 Array [
   Array [
     Object {
@@ -3041,7 +3041,7 @@ Array [
 ]
 `;
 
-exports[`Related articles test on android Related articles tracking sends analytics if three related articles are rendered 1`] = `
+exports[`Related articles test on android tracker sends analytics if three related articles are rendered 1`] = `
 Array [
   Array [
     Object {
@@ -3080,7 +3080,7 @@ Array [
 ]
 `;
 
-exports[`Related articles test on android Related articles tracking sends analytics if two related articles are rendered 1`] = `
+exports[`Related articles test on android tracker sends analytics if two related articles are rendered 1`] = `
 Array [
   Array [
     Object {
