@@ -1,5 +1,6 @@
 import React from "react";
 import { View } from "react-native";
+import { DefaultSlice, LeadSlice } from "@times-components/slice";
 import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
 import {
@@ -11,7 +12,6 @@ import {
   getRelatedArticleContainer,
   getSummaryContainer
 } from "./styles/responsive";
-import getSliceComponent from "./utils";
 
 import withTrackingContext from "./related-articles-tracking-context";
 
@@ -22,8 +22,6 @@ const RelatedArticles = ({ articles, onPress, template }) => {
   const ImageContainer = getImageContainer(articleCount);
   const RelatedArticleContainer = getRelatedArticleContainer(articleCount);
   const SummaryContainer = getSummaryContainer(articleCount);
-
-  const Slice = getSliceComponent(template);
 
   // for tests
   ImageContainer.displayName = "ImageContainer";
@@ -42,10 +40,26 @@ const RelatedArticles = ({ articles, onPress, template }) => {
       />
     ));
 
+  const renderSlice = () => {
+    switch (template) {
+      case "DEFAULT":
+      default:
+        return <DefaultSlice>{renderArticleItems()}</DefaultSlice>;
+      case "LEAD_AND_TWO":
+        return (
+          <LeadSlice
+            lead={renderArticleItems()[0]}
+            support1={renderArticleItems()[1]}
+            support2={renderArticleItems()[2]}
+          />
+        );
+    }
+  };
+
   return (
     <View style={{ marginTop: 10 }}>
       <RelatedArticlesHeading />
-      <Slice template={template}>{renderArticleItems()}</Slice>
+      {renderSlice()}
     </View>
   );
 };
