@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "1.13.23",
+  "version": "1.13.24",
   "main": "image",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
