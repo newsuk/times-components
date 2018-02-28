@@ -2,7 +2,7 @@ import React from "react";
 import { ScrollView } from "react-native";
 // @TODO: use TemplateSlice components
 import { Slice } from "@times-components/slice";
-import Heading from "./heading";
+import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
 import withTrackingContext from "./related-articles-tracking-context";
 import {
@@ -15,7 +15,7 @@ const RelatedArticles = ({ articles, onPress, template }) => {
 
   return (
     <ScrollView style={{ marginTop: 10 }}>
-      <Heading />
+      <RelatedArticlesHeading />
       <Slice template={template}>
         {articles.map(article => (
           <RelatedArticleItem
