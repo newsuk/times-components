@@ -1,7 +1,10 @@
 # Slice
 
-Slices are templates for article cards. A slice lays out a set of cards
+Slices are templates. A slice lays out a set of components
 according to template.
+
+Visit the official [storybook](http://components.thetimes.co.uk/?selectedKind=Primitives%2FSlice&selectedStory=Default%20template%20with%20one%20item&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs) 
+to see our available slice templates.
 
 ## Image Placeholder Rules
 
@@ -9,11 +12,7 @@ If an article has no image available (either as the lead image or generated from
 the associated video), display a new generic Times / ST logo, NOT one that is
 specific to the publication (The Times / The Sunday Times)
 
-This should apply in the following scenarios when an image is in a slice:
-
-* author profile list page
-* saved article list page
-* related link tile image
+This should not apply in the following scenarios:
 
 but NOT in these scenarios:
 
