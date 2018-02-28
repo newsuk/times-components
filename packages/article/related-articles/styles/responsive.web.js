@@ -53,6 +53,7 @@ export const getImageContainer = articleCount =>
         : `display: block;`
   });
 
+// replace with Card
 export const getRelatedArticleContainer = articleCount =>
   withResponsiveStyles(View, {
     base: () => `
@@ -60,7 +61,7 @@ export const getRelatedArticleContainer = articleCount =>
     flex-direction: column;
   `,
     mediumUp: () => `
-      flex-direction: ${articleCount === 1 ? "row" : ""};
+      flex-direction: ${articleCount === 1 ? "row" : "column"};
   `
   });
 

@@ -1,7 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-// @TODO: use TemplateSlice components
-import { Slice } from "@times-components/slice";
+import { DefaultSlice, LeadSlice } from "@times-components/slice";
 import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
 import {
@@ -23,6 +22,21 @@ const RelatedArticles = ({ articles, onPress, template }) => {
   const ImageContainer = getImageContainer(articleCount);
   const RelatedArticleContainer = getRelatedArticleContainer(articleCount);
   const SummaryContainer = getSummaryContainer(articleCount);
+
+  let Slice;
+
+  switch (template) {
+    case "DEFAULT":
+    default:
+      Slice = DefaultSlice;
+      break;
+    case "LEAD_AND_TWO":
+      Slice = LeadSlice;
+      break;
+    // case 'OPINION':
+    //   Slice = OpinionSlice;
+    //   break;
+  }
 
   // for tests
   ImageContainer.displayName = "ImageContainer";
