@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import Image from "@times-components/image";
 import { Animations } from "@times-components/styleguide";
-import { propTypes, defaultProps } from "./card-proptypes";
+import { cardPropTypes, cardDefaultProps } from "./card-proptypes";
 import Loading from "./card-loading";
 import styles from "./styles/shared";
 
@@ -41,7 +41,7 @@ const CardComponent = ({
   );
 };
 
-CardComponent.propTypes = propTypes;
-CardComponent.defaultProps = defaultProps;
+CardComponent.propTypes = cardPropTypes;
+CardComponent.defaultProps = cardDefaultProps;
 
 export default CardComponent;

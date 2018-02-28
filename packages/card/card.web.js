@@ -3,7 +3,7 @@ import { View } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import { Animations } from "@times-components/styleguide";
-import { propTypes, defaultProps } from "./card-proptypes";
+import { cardPropTypes, cardDefaultProps } from "./card-proptypes";
 import Loading from "./card-loading";
 import {
   CardContainer,
@@ -69,11 +69,11 @@ class CardComponent extends Component {
 }
 
 CardComponent.propTypes = {
-  ...propTypes,
+  ...cardPropTypes,
   childRatio: PropTypes.number
 };
 CardComponent.defaultProps = {
-  ...defaultProps,
+  ...cardDefaultProps,
   childRatio: 1
 };
 

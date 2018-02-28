@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export const propTypes = {
+export const cardPropTypes = {
   image: PropTypes.shape({ uri: PropTypes.string }),
   imageRatio: PropTypes.number,
   imageSize: PropTypes.number,
@@ -9,7 +9,7 @@ export const propTypes = {
   isLoading: PropTypes.bool
 };
 
-export const defaultProps = {
+export const cardDefaultProps = {
   image: {
     uri: ""
   },
