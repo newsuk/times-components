@@ -14,6 +14,7 @@ import {
   getRelatedArticleContainer,
   getSummaryContainer
 } from "./styles/responsive";
+import getSliceComponent from "./utils";
 
 const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles || articles.length === 0) return null;

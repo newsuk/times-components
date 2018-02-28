@@ -8,6 +8,7 @@ import {
   relatedArticlesPropTypes,
   relatedArticlesDefaultProps
 } from "./related-articles-proptypes";
+import getSliceComponent from "./utils";
 
 const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles || articles.length === 0) return null;
