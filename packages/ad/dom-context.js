@@ -51,7 +51,7 @@ export default class DOMContext extends PureComponent {
   };
 
   render() {
-    const { init, data, width, height, globalNames, scriptUris } = this.props;
+    const { init, data, width, height, scripts } = this.props;
     // NOTE: if this generated code is not working, and you don't know why
     // because React Native doesn't report errors in webview JS code, try
     // connecting a debugger to the app, console.log(html), copy and paste
@@ -85,8 +85,7 @@ export default class DOMContext extends PureComponent {
               eventCallback: eventCallback,
               init: ${init},
               data: ${JSON.stringify(data)},
-              scriptUris: ${JSON.stringify(scriptUris)},
-              globalNames: ${JSON.stringify(globalNames)}
+              scripts: ${JSON.stringify(scripts)},
             }).execute();
           </script>
         </body>
@@ -100,7 +99,6 @@ export default class DOMContext extends PureComponent {
           "window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
       }
     });
-
     return (
       <View style={{ width, height }}>
         <WebView

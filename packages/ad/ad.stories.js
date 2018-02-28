@@ -7,6 +7,17 @@ import Ad, { AdComposer } from "./ad";
 import Placeholder from "./placeholder";
 import NativeDOMContext from "./dom-context";
 import WebDOMContext from "./dom-context.web";
+import pageTargeting from "./fixtures/page-options.json";
+import slotTargeting from "./fixtures/slot-options.json";
+
+const devNetworkId = "25436805";
+const adConfigBase = { networkId: devNetworkId, adUnit: "d.thetimes.co.uk" };
+const adConfig = Object.assign(
+  {},
+  adConfigBase,
+  { pageTargeting },
+  { slotTargeting }
+);
 
 let DOMContext;
 if (window.document) {
@@ -30,7 +41,7 @@ const withOpenInNewWindow = children => {
     );
 
   return (
-    <AdComposer>
+    <AdComposer adConfig={adConfig}>
       <View>
         {link}
         {children}
@@ -39,27 +50,22 @@ const withOpenInNewWindow = children => {
   );
 };
 
-storiesOf("Primitives/Advertisement", module)
+storiesOf("Advertisement", module)
   .add("render one ad - intervention", () =>
-    withOpenInNewWindow(<Ad pos="intervention" />)
+    withOpenInNewWindow(
+      <Ad pos="intervention" contextUrl={articleUrl} section="news" />
+    )
+  )
+  .add("render one ad - header", () =>
+    withOpenInNewWindow(
+      <Ad pos="ad-header" contextUrl={articleUrl} section="news" />
+    )
   )
   .add("render article ads - header, inline", () =>
     withOpenInNewWindow(
       <View>
-        <Ad section="article" pos="header" />
-        <Ad section="article" pos="inline-ad" />
-      </View>
-    )
-  )
-  .add("ad with grapeshot", () =>
-    withOpenInNewWindow(
-      <View>
-        <Ad
-          section="article"
-          code="ad-header"
-          pos="header"
-          contextUrl={articleUrl}
-        />
+        <Ad section="news" pos="ad-header" contextUrl={articleUrl} />
+        <Ad section="news" pos="ad-article-inline" contextUrl={articleUrl} />
       </View>
     )
   )
@@ -71,7 +77,7 @@ storiesOf("Primitives/Advertisement", module)
           elementum ex id diam eleifend convallis. Nulla faucibus nec nibh sed
           condimentum.
         </Text>
-        <Ad pos="inline-ad" section="article" />
+        <Ad pos="inline-ad" section="news" contextUrl={articleUrl} />
         <Text style={{ color: "red" }}>
           Class aptent taciti sociosqu ad litora torquent per conubia nostra,
           per inceptos himenaeos. Curabitur non sem ut sapien viverra pharetra
@@ -91,7 +97,7 @@ storiesOf("Primitives/Advertisement", module)
           Orci varius natoque penatibus et magnis dis parturient montes,
           nascetur ridiculus mus.
         </Text>
-        <Ad pos="header" section="article" />
+        <Ad pos="ad-header" section="news" contextUrl={articleUrl} />
         <Text>
           Donec convallis enim sit amet elit pharetra, et aliquet augue blandit.
           Integer suscipit mollis libero, et imperdiet nunc. Aenean eu lacus
@@ -100,7 +106,7 @@ storiesOf("Primitives/Advertisement", module)
           vitae erat. Nulla eget nulla rhoncus, sollicitudin ipsum et, volutpat
           ligula.
         </Text>
-        <Ad pos="inline-ad" section="article" />
+        <Ad pos="ad-article-inline" section="news" contextUrl={articleUrl} />
         <Text>
           Aliquam dapibus risus a leo euismod, sed dignissim nibh commodo. Donec
           vitae justo aliquam, pellentesque risus laoreet, hendrerit augue.
@@ -129,18 +135,18 @@ storiesOf("Primitives/Advertisement", module)
 
     return withOpenInNewWindow(
       <DOMContext
-        scriptUris={[script]}
-        globalNames={["global1"]}
+        scripts={[{ uri: script }]}
         data={{ message: "data value" }}
         init={args => {
           const {
             el,
             renderComplete,
             data: { message },
-            globals: { global1 }
+            window,
+            eventCallback
           } = args;
           const worked =
-            message === "data value" && global1 === "external value";
+            message === "data value" && window.global1 === "external value";
           el.innerHTML = `
             <div style="
                 width: 100%;
@@ -151,8 +157,9 @@ storiesOf("Primitives/Advertisement", module)
             ">
               worked=${worked}<br>
               data.message=${message}<br>
-              globals.global1=${global1}<br>
+              globals.global1=${window.global1}<br>
               <button class="renderComplete">call <code>renderComplete()</code></button><br>
+              <button class="logMessages">log messages</button><br>
               <button class="exception" onclick="throw new Error('bar')"><code>throw new Error("bar");</button><br>
               <button class="console-error" onclick="console.error('err')"><code>console.error("err");</code></button><br>
             </div>
@@ -160,6 +167,14 @@ storiesOf("Primitives/Advertisement", module)
           el
             .getElementsByClassName("renderComplete")[0]
             .addEventListener("click", renderComplete);
+          el
+            .getElementsByClassName("logMessages")[0]
+            .addEventListener("click", () => {
+              eventCallback("log", "message 1");
+              eventCallback("log", "message 2");
+              eventCallback("log", "message 3");
+              eventCallback("log", "message 4");
+            });
         }}
         onRenderComplete={action("onRenderComplete")}
         width={300}

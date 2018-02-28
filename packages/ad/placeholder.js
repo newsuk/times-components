@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, View, Text, ViewPropTypes } from "react-native";
 import PropTypes from "prop-types";
-import { colours, fonts } from "@times-components/styleguide";
+
 import TimesWatermark from "./ad-watermark";
 
 const getStyles = (width, height) =>
@@ -14,19 +14,19 @@ const getStyles = (width, height) =>
     wrapper: {
       justifyContent: "center",
       alignItems: "center",
-      backgroundColor: colours.functional.offWhite,
+      backgroundColor: "#F9F9F9",
       width,
       height,
-      borderColor: colours.functional.keyline,
+      borderColor: "#DBDBDB",
       borderWidth: 1,
       borderStyle: "solid"
     },
     placeholderText: {
       fontSize: 11,
-      fontFamily: fonts.body,
-      backgroundColor: colours.functional.offWhite,
-      color: colours.functional.greyMid,
-      borderColor: colours.functional.keyline,
+      fontFamily: "TimesDigitalW04",
+      backgroundColor: "#F9F9F9",
+      color: "#696969",
+      borderColor: "#DBDBDB",
       borderWidth: 1,
       borderStyle: "solid",
       position: "absolute",

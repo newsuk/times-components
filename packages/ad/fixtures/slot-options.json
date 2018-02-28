@@ -1,8 +1,9 @@
 {
   "sec_id": "null",
-  "section": "",
+  "section": "news",
   "path": "/edition/news/",
   "zone": "current_edition",
-  "slot": "",
-  "timestestgroup": 4
+  "slot": "news",
+  "pos": "header",
+  "timestestgroup": 1
 }
