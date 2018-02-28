@@ -52,6 +52,7 @@ export default async function main({
 
         if (argv.list) {
           Object.entries(versionSets)
+            .sort(([a], [b]) => a.localeCompare(b))
             .map(([name, versions]) => [name, [...versions]])
             .forEach(([name, versions], i) => {
               const color = (() => {
