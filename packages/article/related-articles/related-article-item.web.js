@@ -20,8 +20,8 @@ const RelatedArticleItem = ({
 }) => {
   const {
     byline,
-    label,
     headline,
+    label,
     publishedTime,
     section,
     summary,
@@ -58,8 +58,8 @@ const RelatedArticleItem = ({
               </ResponsiveHeadline>
             )}
             labelProps={{
-              title: label,
-              color: colours.section[section] || colours.section.default
+              color: colours.section[section] || colours.section.default,
+              title: label
             }}
             content={() => <ArticleSummaryContent ast={summary} />}
           />

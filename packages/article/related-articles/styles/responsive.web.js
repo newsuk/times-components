@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 import { colours } from "@times-components/styleguide";
 
-export const StyledRelatedArticlesHeading = withResponsiveStyles(View, {
+export const RelatedArticlesHeading = withResponsiveStyles(View, {
   base: () => `
     align-items: center;
     border-style: solid;
