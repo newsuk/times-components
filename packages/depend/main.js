@@ -24,19 +24,17 @@ export default async function main({
   argv,
   exit
 }) {
+  const { lerna = "", expr } = argv;
 
-  const {lerna = "", expr} = argv;
-
-  const lernaPath = (lerna || !expr)
-    ? join(lerna, "lerna.json")
-    : "";
+  const lernaPath = lerna || !expr ? join(lerna, "lerna.json") : "";
 
   const lernaPackages = lernaPath
     ? await readJson(lernaPath)
-        .then(lerna => lerna.packages)
+        .then(({ packages }) => packages)
         .then(packages =>
           packages.map(pattern => join(lerna, pattern, "package.json"))
-        ).catch( e => {
+        )
+        .catch(e => {
           log(e);
           exit(1);
         })

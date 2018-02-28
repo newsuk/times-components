@@ -9,7 +9,6 @@ import wrongFixed from "./fixtures/wrong-fixed.json";
 chalk.enabled = false;
 
 describe("depend cli tests", () => {
-
   it("prints graph", async () => {
     const log = jest.fn();
     const argv = { graph: "*=>*", expr: "package.json" };
