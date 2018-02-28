@@ -15,6 +15,7 @@ describe("webviewEventCallbackSetup", () => {
       }),
       reactBridgePostMessageDecoded: jest.fn(),
       requestAnimationFrame: realWindow.requestAnimationFrame,
+      setTimeout: realWindow.setTimeout,
       console: {},
       addEventListener: jest.fn().mockImplementation((name, handler) => {
         if (name === "error") {

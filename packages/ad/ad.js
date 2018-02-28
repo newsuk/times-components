@@ -92,9 +92,7 @@ class Ad extends Component {
     const webviewComponent = (
       <DOMContext
         data={data}
-        scriptUris={scriptsToLoad}
-        // TODO: can we safetely remove globals?
-        // globalNames={["googletag", "gs_channels", "pbjs", "apstag"]}
+        scripts={scriptsToLoad}
         baseUrl={this.props.baseUrl}
         init={adInit}
         platform={platform}

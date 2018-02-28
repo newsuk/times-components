@@ -13,10 +13,8 @@ const makeHarness = ({
   el,
   init,
   data,
-  scriptUris,
+  scripts,
   platform,
-  // TODO: can we safetely remove the global concept???
-  // globalNames,
   eventCallback
 }) => {
   let scriptsLoadedCalled = false;
@@ -31,7 +29,7 @@ const makeHarness = ({
       eventCallback("error", `${e.message}${e.stack}`);
     }
   };
-  const log = (message) => {
+  const log = message => {
     eventCallback("log", `${data.pos} ad: ${message}`);
   };
   return {
@@ -54,17 +52,14 @@ const makeHarness = ({
           platform,
           eventCallback
         });
-
-        if (initialiser.init) {
+        if (initialiser && initialiser.init) {
           initialiser.init();
         }
-        this.loadScriptsParallel(scriptUris, () => {
-          this.runScriptsLoadedIf();
-        });
+        this.loadScriptsParallel();
       });
     },
     runScriptsLoadedIf() {
-      if (scriptUris.length === window.scritpsProcessed.length) {
+      if (scripts.length === window.scritpsProcessed.length) {
         this.scriptsLoaded();
       }
     },
@@ -98,7 +93,11 @@ const makeHarness = ({
 
     scriptTimeout(scriptId) {
       withCatch(() => {
-        log(`script timeout id: ${scriptId} already processed: ${this.isScriptProcessed(scriptId)}`);
+        log(
+          `script timeout id: ${
+            scriptId
+          } already processed: ${this.isScriptProcessed(scriptId)}`
+        );
         if (this.isScriptProcessed(scriptId)) {
           return;
         }
@@ -107,9 +106,9 @@ const makeHarness = ({
       });
     },
 
-    loadScriptsParallel(scripts, callback) {
+    loadScriptsParallel() {
       if (scripts.length === 0) {
-        callback();
+        this.runScriptsLoadedIf();
       }
       for (let i = 0; i < scripts.length; i += 1) {
         const scriptUri = scripts[i].uri;
@@ -148,12 +147,6 @@ const makeHarness = ({
         }
         scriptsLoadedCalled = true;
 
-        // TODO: can we safetely remove the global concept???
-        // const globals = {};
-        // for (let i = 0; i < globalNames.length; i += 1) {
-        //   const globalName = globalNames[i];
-        //   globals[globalName] = window[globalName];
-        // }
         const renderComplete = () => {
           if (!renderCompleteCalled) {
             renderCompleteCalled = true;

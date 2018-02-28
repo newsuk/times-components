@@ -41,32 +41,6 @@ describe("DOMContext Web", () => {
     );
   });
 
-  // ----------- NOT PASSING GLOBALS ANYMORE -------------
-
-  // it("passes selected global variables to the init function", () => {
-  //   const init = jest.fn(() =>  {return {init: ()=> {}}});
-  //   window.myGlobalVar1 = "myGlobalVar1Value";
-  //   window.myGlobalVar2 = "myGlobalVar2Value";
-  //   window.myGlobalVar3 = "myGlobalVar3Value";
-
-  //   mount(
-  //     <DOMContext init={init} globalNames={["myGlobalVar1", "myGlobalVar2"]} platform={platform}/>
-  //   );
-
-  //   expect(init).toHaveBeenCalledWith(
-  //     expect.objectContaining({
-  //       globals: {
-  //         myGlobalVar1: "myGlobalVar1Value",
-  //         myGlobalVar2: "myGlobalVar2Value"
-  //       }
-  //     })
-  //   );
-
-  //   delete window.myGlobalVar1;
-  //   delete window.myGlobalVar2;
-  //   delete window.myGlobalVar3;
-  // });
-
   it("reports an error in the init function", () => {
     jest.spyOn(console, "error").mockImplementation();
 

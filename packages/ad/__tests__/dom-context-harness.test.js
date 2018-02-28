@@ -36,12 +36,10 @@ describe("DOMContext harness", () => {
       window,
       platform,
       el: args.el || document.createElement("div"),
-      // id: "dom-context-id",
-      scriptUris: [],
+      scripts: [],
       data: {},
       eventCallback: () => {},
       init: adInit,
-      // globalNames: [],
       ...args
     });
 
@@ -51,7 +49,7 @@ describe("DOMContext harness", () => {
 
   it("injects scripts into the document head", () => {
     const harness = makeHarness({
-      scriptUris: [
+      scripts: [
         { uri: "a", canRequestFail: true },
         { uri: "b", canRequestFail: true }
       ]
@@ -64,14 +62,14 @@ describe("DOMContext harness", () => {
 
   it("does not inject script twice in document head", () => {
     const harness = makeHarness({
-      scriptUris: [
+      scripts: [
         { uri: "a", canRequestFail: true },
         { uri: "b", canRequestFail: true }
       ]
     });
     harness.execute();
     const anotherHarness = makeHarness({
-      scriptUris: [
+      scripts: [
         { uri: "a", canRequestFail: true },
         { uri: "c", canRequestFail: true }
       ]
@@ -88,24 +86,6 @@ describe("DOMContext harness", () => {
 
     expect(init).toHaveBeenCalled();
   });
-
-  // ------------ NOT SUPPORTING GLOABL VARS -----------------
-  // it("passes global variables to the init function", () => {
-  //   window.myGlobalVariable = "myGlobalValue";
-  //   const init = jest.fn();
-
-  //   const harness = makeHarness({
-  //     globalNames: ["myGlobalVariable"],
-  //     init
-  //   });
-  //   harness.execute();
-
-  //   expect(init).toHaveBeenCalledWith(
-  //     expect.objectContaining({
-  //       globals: { myGlobalVariable: "myGlobalValue" }
-  //     })
-  //   );
-  // });
 
   it("reports errors in the init function", () => {
     jest.spyOn(console, "error").mockImplementation();
@@ -124,7 +104,7 @@ describe("DOMContext harness", () => {
     const eventCallback = jest.fn();
     const harness = makeHarness({
       document: null, // will cause error on DOM manipulation
-      scriptUris: [{ uri: "a" }],
+      scripts: [{ uri: "a" }],
       eventCallback
     });
     harness.execute();
@@ -137,7 +117,7 @@ describe("DOMContext harness", () => {
   //   const init = jest.fn();
   //   const harness = makeHarness({
   //     init,
-  //     scriptUris: [{ uri: "providesSecond" }]
+  //     scripts: [{ uri: "providesSecond" }]
   //   });
 
   //   harness.execute();
@@ -152,7 +132,7 @@ describe("DOMContext harness", () => {
   //   const eventCallback = jest.fn();
   //   const harness = makeHarness({
   //     init,
-  //     scriptUris: [{ uri: "willNeverLoad" }],
+  //     scripts: [{ uri: "willNeverLoad" }],
   //     eventCallback
   //   });
 
@@ -165,7 +145,7 @@ describe("DOMContext harness", () => {
   //   const init = jest.fn();
   //   const harness = makeHarness({
   //     init,
-  //     scriptUris: [{ uri: "providesSecond", timeout: 200 }]
+  //     scripts: [{ uri: "providesSecond", timeout: 200 }]
   //   });
   //   harness.execute();
   //   expect(init).not.toBeCalled();
@@ -178,7 +158,7 @@ describe("DOMContext harness", () => {
   //   const init = jest.fn();
   //   const harness = makeHarness({
   //     init,
-  //     scriptUris: [{ uri: "providesSecond", canRequestFail: true }]
+  //     scripts: [{ uri: "providesSecond", canRequestFail: true }]
   //   });
   //   harness.execute();
 

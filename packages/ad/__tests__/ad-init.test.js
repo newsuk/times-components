@@ -86,11 +86,9 @@ describe("Ad init", () => {
         }
       },
       window,
-      // globals: {
-      //   googletag: mockGoogletag
-      // },
       renderComplete: jest.fn(),
-      platform: "web"
+      platform: "web",
+      eventCallback: jest.fn()
     };
     init = adInit(initOptions);
   });

@@ -135,18 +135,18 @@ storiesOf("Advertisement", module)
 
     return withOpenInNewWindow(
       <DOMContext
-        scriptUris={[script]}
-        globalNames={["global1"]}
+        scripts={[{ uri: script }]}
         data={{ message: "data value" }}
         init={args => {
           const {
             el,
             renderComplete,
             data: { message },
-            globals: { global1 }
+            window,
+            eventCallback
           } = args;
           const worked =
-            message === "data value" && global1 === "external value";
+            message === "data value" && window.global1 === "external value";
           el.innerHTML = `
             <div style="
                 width: 100%;
@@ -157,8 +157,9 @@ storiesOf("Advertisement", module)
             ">
               worked=${worked}<br>
               data.message=${message}<br>
-              globals.global1=${global1}<br>
+              globals.global1=${window.global1}<br>
               <button class="renderComplete">call <code>renderComplete()</code></button><br>
+              <button class="logMessages">log messages</button><br>
               <button class="exception" onclick="throw new Error('bar')"><code>throw new Error("bar");</button><br>
               <button class="console-error" onclick="console.error('err')"><code>console.error("err");</code></button><br>
             </div>
@@ -166,6 +167,14 @@ storiesOf("Advertisement", module)
           el
             .getElementsByClassName("renderComplete")[0]
             .addEventListener("click", renderComplete);
+          el
+            .getElementsByClassName("logMessages")[0]
+            .addEventListener("click", () => {
+              eventCallback("log", "message 1");
+              eventCallback("log", "message 2");
+              eventCallback("log", "message 3");
+              eventCallback("log", "message 4");
+            });
         }}
         onRenderComplete={action("onRenderComplete")}
         width={300}

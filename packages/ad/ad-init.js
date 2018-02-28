@@ -213,7 +213,7 @@ const adInit = args => {
         /* eslint-enable no-console */
       }
     },
-    displayAds(gtag, pb, ap) {
+    displayAds(gtag, pb) {
       log("verbose", "displayAds");
       if (platform === "web") {
         this.applyPrebidTargeting(pb);
@@ -278,7 +278,7 @@ const adInit = args => {
       window.adsSlot = [];
       window.googletag = window.googletag || {};
       window.googletag.cmd = window.googletag.cmd || [];
-      window.pbjs = {};
+      window.pbjs = window.pbjs || {};
       window.pbjs.que = window.pbjs.que || [];
     },
     initializeBidding(prebidConfig, slots, networkId, adUnit, section) {
