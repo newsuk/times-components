@@ -1,15 +1,13 @@
 import React from "react";
 import { ScrollView } from "react-native";
-<<<<<<< HEAD
 import renderSlice from "./related-articles.base";
 import Heading from "./heading";
-// @TODO: use TemplateSlice components
 import RelatedArticleItem from "./related-article-item";
+import withTrackingContext from "./related-articles-tracking-context";
 import {
   relatedArticlesPropTypes,
   relatedArticlesDefaultProps
 } from "./related-articles-proptypes";
-import withTrackingContext from "./related-articles-tracking-context";
 
 const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles || articles.length === 0) return null;

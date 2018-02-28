@@ -2,8 +2,6 @@ import React from "react";
 import { View } from "react-native";
 import renderSlice from "./related-articles.base";
 import Heading from "./heading";
-// @TODO: use TemplateSlice components
-import { Slice } from "@times-components/slice";
 import RelatedArticleItem from "./related-article-item";
 import {
   relatedArticlesPropTypes,
