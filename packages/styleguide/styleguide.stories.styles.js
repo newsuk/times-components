@@ -33,14 +33,22 @@ const styles = {
     margin: 20
   },
   headline: {
-    fontSize: "14",
+    fontSize: 18,
     fontWeight: "bold",
-    marginBottom: 10
+    marginBottom: 10,
+    textDecoration: "underline"
+  },
+  subHeadline: {
+    fontSize: 14,
+    fontWeight: "bold",
+    marginLeft: 10,
+    marginTop: 10
   },
   showoffFonts: {
     fontSize: 30,
-    paddingTop: 15,
-    paddingBottom: 20
+    marginTop: 10,
+    marginBottom: 20,
+    marginLeft: 20
   }
 };
 
