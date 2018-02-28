@@ -41,6 +41,7 @@ Evaluate all `package.json` files defined in the `packages` field found
 
 ## --expr, -e "{glob}"
 
+
 Defines the glob expression that will be used to search the filesystem for
 package.json files.
 
@@ -102,8 +103,8 @@ Consider following repo:
   }
 ```
 
-`depend -l . -g "*=>react-native"` will only outputs the subset that has
-react-native as a dependency:
+`depend -l . -g "*=>react-native"` will only outputs the subset that has react-native
+as a dependency:
 
 ```dot
 digraph {
@@ -112,8 +113,8 @@ digraph {
 }
 ```
 
-`depend -l . -g "foo=>*"` will only outputs the subset that has react-native as
-a dependency:
+`depend -l . -g "foo=>*"` will only outputs the subset that has react-native as a
+dependency:
 
 ```dot
 digraph {
@@ -125,8 +126,8 @@ digraph {
 ### Rendering Svgs
 
 Depend itself does not have any rendering capabilities but `--graph` output can
-be directly piped into a [graphviz](https://www.graphviz.org/) renderer. `fdp`
-and `circo` can be obtained by installing the graphviz package.
+be directly piped into a [graphviz](https://www.graphviz.org/) renderer.
+`fdp` and `circo` can be obtained by installing the graphviz package.
 
 `depend -l . -g "@times-components/*=>dextrose@" | fdp -Tsvg -o dextrose.svg`
 

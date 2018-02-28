@@ -24,15 +24,25 @@ export default async function main({
   argv,
   exit
 }) {
-  const lernaPackages = argv.lerna
-    ? await readJson(join(argv.lerna, "lerna.json"))
+
+  const {lerna = "", expr} = argv;
+
+  const lernaPath = (lerna || !expr)
+    ? join(lerna, "lerna.json")
+    : "";
+
+  const lernaPackages = lernaPath
+    ? await readJson(lernaPath)
         .then(lerna => lerna.packages)
         .then(packages =>
-          packages.map(expr => join(argv.lerna, expr, "package.json"))
-        )
+          packages.map(pattern => join(lerna, pattern, "package.json"))
+        ).catch( e => {
+          log(e);
+          exit(1);
+        })
     : [];
 
-  const packagesToFind = [...lernaPackages, argv.expr].filter(x => x);
+  const packagesToFind = [...lernaPackages, expr].filter(x => x);
 
   const packagesList = await Promise.all(
     packagesToFind.map(path => getPackages(path))
