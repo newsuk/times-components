@@ -1,12 +1,13 @@
 import React from "react";
 import { Text, View, StyleSheet, Platform } from "react-native";
 import Svg, { G, Path } from "svgs";
+import { fonts } from "@times-components/styleguide";
 
 import PageLabel from "./page-label";
 
 const textStyle = {
   height: 15,
-  fontFamily: "GillSansMTStd-Medium",
+  fontFamily: fonts.supporting,
   fontSize: 15,
   color: "#006699"
 };

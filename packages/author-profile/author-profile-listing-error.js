@@ -1,6 +1,7 @@
 import React from "react";
 import { Text, View, Button, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
+import { fonts } from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
   body: {
@@ -10,7 +11,7 @@ const styles = StyleSheet.create({
   },
   heading: {
     alignSelf: "center",
-    fontFamily: "TimesModern-Bold",
+    fontFamily: fonts.headline,
     fontSize: 35,
     textAlign: "center",
     color: "#000000",
@@ -18,7 +19,7 @@ const styles = StyleSheet.create({
   },
   message: {
     alignSelf: "center",
-    fontFamily: "TimesDigitalW04-Regular",
+    fontFamily: fonts.bodyRegular,
     fontSize: 18,
     textAlign: "center",
     color: "#696969"

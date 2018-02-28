@@ -1,6 +1,7 @@
 import React from "react";
 import { Text, StyleSheet } from "react-native";
 import { storiesOf } from "@storybook/react-native";
+import { fonts } from "@times-components/styleguide";
 import DatePublication from "./date-publication";
 
 const styles = StyleSheet.create({
@@ -8,7 +9,7 @@ const styles = StyleSheet.create({
     color: "#696969",
     fontSize: 13,
     lineHeight: 15,
-    fontFamily: "GillSansMTStd-Medium"
+    fontFamily: fonts.supporting
   }
 });
 

@@ -1,29 +1,31 @@
+import { fonts } from "@times-components/styleguide";
+
 const sharedStyles = {
   container: {
     marginTop: 0,
     marginBottom: 30
   },
   quotes: {
-    fontFamily: "TimesModern-Regular",
+    fontFamily: fonts.headlineRegular,
     fontSize: 75,
     marginTop: 0,
     marginBottom: -40
   },
   content: {
-    fontFamily: "TimesModern-Regular",
+    fontFamily: fonts.headlineRegular,
     fontSize: 25,
     lineHeight: 30,
     color: "#333333"
   },
   caption: {
-    fontFamily: "GillSansMTStd-Medium",
+    fontFamily: fonts.supporting,
     fontSize: 13,
     marginBottom: 0,
     lineHeight: 13
   },
   link: {
     color: "#006699",
-    fontFamily: "GillSansMTStd-Medium",
+    fontFamily: fonts.supporting,
     textDecorationLine: "none",
     fontSize: 13,
     marginLeft: 3,

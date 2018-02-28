@@ -1,12 +1,13 @@
 import React from "react";
 import { StyleSheet, Text } from "react-native";
 import PropTypes from "prop-types";
+import { fonts } from "@times-components/styleguide";
 
 const { propTypes: { style: TextPropTypesStyle } } = Text;
 
 const styles = StyleSheet.create({
   title: {
-    fontFamily: "TimesDigitalW04-RegularSC",
+    fontFamily: fonts.bodyRegularSmallCaps,
     fontSize: 14,
     color: "#696969"
   }

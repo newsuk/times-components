@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, ViewPropTypes, Text, StyleSheet, Platform } from "react-native";
+import { fonts } from "@times-components/styleguide";
 
 const { style: TextPropTypesStyle } = Text.propTypes;
 const { style: ViewPropTypesStyle } = ViewPropTypes;
@@ -22,7 +23,7 @@ const defaultStyle = StyleSheet.create({
     paddingTop: 10
   },
   text: {
-    fontFamily: "GillSansMTStd-Medium",
+    fontFamily: fonts.supporting,
     fontSize: 13,
     color: "#696969",
     ...lineHeightStyle

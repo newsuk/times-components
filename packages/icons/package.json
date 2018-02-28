@@ -50,6 +50,7 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
+    "@times-components/styleguide": "0.3.3",
     "prop-types": "15.6.0",
     "svgs": "3.2.1"
   },

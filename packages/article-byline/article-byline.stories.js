@@ -1,13 +1,14 @@
 import React from "react";
 import { Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
+import { fonts } from "@times-components/styleguide";
 import ArticleByline from "./article-byline";
 
 const authorsAST = require("./fixtures/authors.json");
 
 const bylineStyles = {
   fontSize: 13,
-  fontFamily: "GillSansMTStd-Medium",
+  fontFamily: fonts.supporting,
   color: "#696969",
   lineHeight: 13,
   flexDirection: "row"

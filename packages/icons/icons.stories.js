@@ -1,6 +1,7 @@
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
+import { fonts } from "@times-components/styleguide";
 import { IconDiamond, IconTwitter } from "./icons";
 
 const borderWidth = 1;
@@ -29,7 +30,7 @@ const styles = StyleSheet.create({
   },
   label: {
     paddingTop: 15,
-    fontFamily: "GillSansMTStd-Medium"
+    fontFamily: fonts.supporting
   }
 });
 

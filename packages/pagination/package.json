@@ -54,6 +54,7 @@
   "dependencies": {
     "@times-components/link": "0.14.4",
     "@times-components/responsive-styles": "0.4.0",
+    "@times-components/styleguide": "0.3.3",
     "@times-components/tracking": "0.7.7",
     "prop-types": "15.6.0",
     "react-display-name": "0.2.3",

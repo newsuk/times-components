@@ -3,6 +3,7 @@ import { View, Text, Platform } from "react-native";
 import PropTypes from "prop-types";
 
 import { IconDiamond } from "@times-components/icons";
+import { fonts } from "@times-components/styleguide";
 
 // When changing styles please debug both web, android and ios because
 // some styles are not working correctly on all platforms (namely, android)
@@ -16,7 +17,7 @@ const styles = {
     marginBottom: 1
   },
   title: {
-    fontFamily: "TimesDigitalW04-RegularSC",
+    fontFamily: fonts.bodyRegularSmallCaps,
     fontSize: Platform.OS === "android" ? 10 : 12,
     fontWeight: "400",
     letterSpacing: 1.4
