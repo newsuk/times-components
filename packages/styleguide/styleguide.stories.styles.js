@@ -32,6 +32,11 @@ const styles = {
     borderBottomColor: "#CCCCCC",
     margin: 20
   },
+  headline: {
+    fontSize: "14",
+    fontWeight: "bold",
+    marginBottom: 10
+  },
   showoffFonts: {
     fontSize: 30,
     paddingTop: 15,

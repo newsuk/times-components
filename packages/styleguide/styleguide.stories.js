@@ -62,13 +62,17 @@ storiesOf("Helpers/Styleguide", module)
     return (
       <ScrollView>
         <View style={styles.showoffFontsContainer}>
-          <Text>Body</Text>
+          <Text style={styles.headline}>Body</Text>
           <Text style={[styles.showoffFonts, { fontFamily: fonts.body }]}>
             {phrase}
           </Text>
         </View>
         <View style={styles.showoffFontsContainer}>
-          <Text>Body Regular</Text>
+          <Text style={styles.headline}>Body Regular</Text>
+          <Text>
+            Used for the body copy of articles or as the teaser copy on article
+            links.
+          </Text>
           <Text
             style={[styles.showoffFonts, { fontFamily: fonts.bodyRegular }]}
           >
@@ -76,7 +80,13 @@ storiesOf("Helpers/Styleguide", module)
           </Text>
         </View>
         <View style={styles.showoffFontsContainer}>
-          <Text>Body Regular Small Caps</Text>
+          <Text style={styles.headline}>Body Regular Small Caps</Text>
+          <Text>
+            Always used as a lowercase font, it is typically used to support the
+            headline font. It’s used in various different places e.g. Journalist
+            pages for the Journalist job title, article flags and show more
+            buttons on the homepage.
+          </Text>
           <Text
             style={[
               styles.showoffFonts,
@@ -87,13 +97,20 @@ storiesOf("Helpers/Styleguide", module)
           </Text>
         </View>
         <View style={styles.showoffFontsContainer}>
-          <Text>Headline</Text>
+          <Text style={styles.headline}>Headline</Text>
+          <Text>
+            Used as the headline for components and articles across the site.
+          </Text>
           <Text style={[styles.showoffFonts, { fontFamily: fonts.headline }]}>
             {phrase}
           </Text>
         </View>
         <View style={styles.showoffFontsContainer}>
-          <Text>Headline Regular</Text>
+          <Text style={styles.headline}>Headline Regular</Text>
+          <Text>
+            Used primarily to style subheadings for components and stand firsts
+            on the homepage and articles.
+          </Text>
           <Text
             style={[styles.showoffFonts, { fontFamily: fonts.headlineRegular }]}
           >
@@ -101,7 +118,11 @@ storiesOf("Helpers/Styleguide", module)
           </Text>
         </View>
         <View style={styles.showoffFontsContainer}>
-          <Text>Supporting</Text>
+          <Text style={styles.headline}>Supporting</Text>
+          <Text>
+            Used as a supporting typeface in a variety of places including
+            messaging banners, buttons, links, homepage labels and tags.
+          </Text>
           <Text style={[styles.showoffFonts, { fontFamily: fonts.supporting }]}>
             {phrase}
           </Text>
