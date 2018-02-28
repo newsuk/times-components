@@ -12,6 +12,7 @@ export const ChildContainer = withResponsiveStyles(View, {
   mediumUp: () => `
     padding-left: 0;
     padding-right: 0;
+    width: 0;
   `
 });
 ChildContainer.displayName = "ChildContainer";
