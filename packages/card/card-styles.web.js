@@ -11,6 +11,7 @@ export const ImageContainer = withResponsiveStyles(View, {
     flex-grow: 2;
     flex-basis: 0 !important;
     margin-bottom: 0;
+    margin-right: 15px;
   `
 });
 
@@ -20,7 +21,6 @@ export const SummaryContainer = withResponsiveStyles(View, {
     flex-shrink: 1 !important;
   `,
   mediumUp: () => `
-    padding-left: 15px;
     flex-grow: 2.7;
     flex-basis: 0 !important;
   `

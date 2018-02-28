@@ -15,7 +15,8 @@ const gradientStyles = StyleSheet.create({
     height: 10,
     marginBottom: 10
   },
-  noMarginBottom: {
+  lastBar: {
+    maxWidth: 240,
     marginBottom: 0
   }
 });
@@ -35,7 +36,7 @@ const Loading = ({ aspectRatio, showImage }) => {
         <Gradient style={[gradientStyles.textContainer]} degrees={267} />
         <Gradient style={[gradientStyles.textContainer]} degrees={267} />
         <Gradient
-          style={[gradientStyles.textContainer, gradientStyles.noMarginBottom]}
+          style={[gradientStyles.textContainer, gradientStyles.lastBar]}
           degrees={267}
         />
       </SummaryContainer>

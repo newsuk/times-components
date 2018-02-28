@@ -273,6 +273,7 @@ exports[`Card test on android renders loading state 1`] = `
             },
             Object {
               "marginBottom": 0,
+              "maxWidth": 240,
             },
           ]
         }
