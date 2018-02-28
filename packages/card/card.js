@@ -2,8 +2,8 @@ import React from "react";
 import { View } from "react-native";
 import Image from "@times-components/image";
 import { Animations } from "@times-components/styleguide";
-import { propTypes, defaultProps } from "./proptypes";
-import Loading from "./loading";
+import { propTypes, defaultProps } from "./card-proptypes";
+import Loading from "./card-loading";
 import styles from "./styles/shared";
 
 const CardComponent = ({

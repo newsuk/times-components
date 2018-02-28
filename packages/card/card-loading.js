@@ -2,7 +2,10 @@ import React from "react";
 import { View } from "react-native";
 import Image from "@times-components/image";
 import Gradient from "@times-components/gradient";
-import { loadingPropTypes, loadingDefaultProps } from "./proptypes";
+import {
+  loadingPropTypes,
+  loadingDefaultProps
+} from "./card-loading-proptypes";
 import styles from "./styles/shared";
 
 const Loading = ({ aspectRatio, showImage }) => (

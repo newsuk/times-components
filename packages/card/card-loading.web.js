@@ -2,7 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import Gradient from "@times-components/gradient";
-import { loadingPropTypes, loadingDefaultProps } from "./proptypes";
+import {
+  loadingPropTypes,
+  loadingDefaultProps
+} from "./card-loading-proptypes";
 import {
   CardContainer,
   getChildContainer,

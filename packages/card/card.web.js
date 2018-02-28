@@ -3,8 +3,8 @@ import { View } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import { Animations } from "@times-components/styleguide";
-import { propTypes, defaultProps } from "./proptypes";
-import Loading from "./loading";
+import { propTypes, defaultProps } from "./card-proptypes";
+import Loading from "./card-loading";
 import {
   CardContainer,
   getChildContainer,
