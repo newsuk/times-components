@@ -5,12 +5,12 @@ import mockDate from "mockdate";
 
 import RelatedArticles from "../related-articles/related-articles";
 
-import singleRelatedArticleFixture from "../related-articles/fixtures/single-related-article.json";
-import singleRelatedArticleNoImageFixture from "../related-articles/fixtures/single-related-article-no-image.json";
-import singleRelatedArticleNoLabelFixture from "../related-articles/fixtures/single-related-article-no-label.json";
-import singleRelatedArticleNoBylineFixture from "../related-articles/fixtures/single-related-article-no-byline.json";
-import twoRelatedArticlesFixture from "../related-articles/fixtures/two-related-articles.json";
-import threeRelatedArticlesFixture from "../related-articles/fixtures/three-related-articles.json";
+import defaultSingleRelatedArticleFixture from "../related-articles/fixtures/default/single-related-article.json";
+import defaultTwoRelatedArticlesFixture from "../related-articles/fixtures/default/two-related-articles.json";
+import defaultThreeRelatedArticlesFixture from "../related-articles/fixtures/default/three-related-articles.json";
+import leadSingleRelatedArticleFixture from "../related-articles/fixtures/lead/single-related-article.json";
+import leadTwoRelatedArticlesFixture from "../related-articles/fixtures/lead/two-related-articles.json";
+import leadThreeRelatedArticlesFixture from "../related-articles/fixtures/lead/three-related-articles.json";
 
 const createRelatedArticlesProps = (fixtureData, action = () => {}) => ({
   analyticsStream: action,
@@ -50,23 +50,12 @@ export default () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders single related article", () => {
-      const tree = renderer
-        .create(
-          <RelatedArticles
-            {...createRelatedArticlesProps(singleRelatedArticleFixture.data)}
-          />
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
-    it("renders single related article with no lead image", () => {
+    it("Default template with one related article", () => {
       const tree = renderer
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
-              singleRelatedArticleNoImageFixture.data
+              defaultSingleRelatedArticleFixture.data
             )}
           />
         )
@@ -74,12 +63,12 @@ export default () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders single related article with no label", () => {
+    it("Default template with two related articles", () => {
       const tree = renderer
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
-              singleRelatedArticleNoLabelFixture.data
+              defaultTwoRelatedArticlesFixture.data
             )}
           />
         )
@@ -87,12 +76,12 @@ export default () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders single related article with no byline", () => {
+    it("Default template with three related articles", () => {
       const tree = renderer
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
-              singleRelatedArticleNoBylineFixture.data
+              defaultThreeRelatedArticlesFixture.data
             )}
           />
         )
@@ -100,22 +89,37 @@ export default () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders two related articles", () => {
+    it("Lead and two template with one related article", () => {
       const tree = renderer
         .create(
           <RelatedArticles
-            {...createRelatedArticlesProps(twoRelatedArticlesFixture.data)}
+            {...createRelatedArticlesProps(
+              leadSingleRelatedArticleFixture.data
+            )}
           />
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders three related articles", () => {
+    it("Lead and two template with two related articles", () => {
       const tree = renderer
         .create(
           <RelatedArticles
-            {...createRelatedArticlesProps(threeRelatedArticlesFixture.data)}
+            {...createRelatedArticlesProps(leadTwoRelatedArticlesFixture.data)}
+          />
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it("Lead and two template with three related articles", () => {
+      const tree = renderer
+        .create(
+          <RelatedArticles
+            {...createRelatedArticlesProps(
+              leadThreeRelatedArticlesFixture.data
+            )}
           />
         )
         .toJSON();
