@@ -19,6 +19,7 @@ const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles || articles.length === 0) return null;
 
   const articleCount = articles.length;
+
   const RelatedArticleContainer = getRelatedArticleContainer({ articleCount });
   const SummaryContainer = getSummaryContainer({ articleCount });
 

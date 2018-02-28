@@ -11,4 +11,4 @@ const RelatedArticlesHeading = () => (
   </Heading>
 );
 
-export default Heading;
+export default RelatedArticlesHeading;
