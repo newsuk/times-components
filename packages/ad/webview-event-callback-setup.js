@@ -7,7 +7,7 @@ const webviewEventCallbackSetup = options => {
   const { window } = options;
   window.eventCallback = (type, detail) => {
     // delay until next frame as React Native message bridge is not set up immediately
-    window.requestAnimationFrame(() => {
+    window.setTimeout(() => {
       const method = window.reactBridgePostMessage || window.postMessage;
       method(
         JSON.stringify({
@@ -17,7 +17,7 @@ const webviewEventCallbackSetup = options => {
         }),
         "*"
       );
-    });
+    }, 300);
   };
   window.addEventListener("error", ev => {
     const file = (ev.filename || "").substring(0, 100);

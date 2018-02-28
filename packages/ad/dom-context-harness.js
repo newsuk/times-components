@@ -13,11 +13,11 @@ const makeHarness = ({
   el,
   init,
   data,
-  scriptUris,
-  globalNames,
+  scripts,
+  platform,
   eventCallback
 }) => {
-  let initCalled = false;
+  let scriptsLoadedCalled = false;
   let renderCompleteCalled = false;
 
   const withCatch = action => {
@@ -26,74 +26,89 @@ const makeHarness = ({
     } catch (e) {
       // eslint-disable-next-line no-console
       window.console.error(`DOMContext Error: ${e.message}\n${e.stack}`);
-      eventCallback("error", e.message);
+      eventCallback("error", `${e.message}${e.stack}`);
     }
   };
-  const log = (...message) => {
-    eventCallback("log", `${data.pos} ad: ${message.join(" ")}`);
+  const log = message => {
+    eventCallback("log", `${data.pos} ad: ${message}`);
   };
   return {
     execute() {
       withCatch(() => {
         // eslint-disable-next-line no-param-reassign
-        window.scripts = window.scripts || [];
-        this.loadScriptsParallel(scriptUris, () => {
-          this.runInitIfGlobalsPresent();
+        window.scritpsProcessed = window.scritpsProcessed || [];
+        const renderComplete = () => {
+          if (!renderCompleteCalled) {
+            renderCompleteCalled = true;
+            eventCallback("renderComplete");
+          }
+        };
+        const initialiser = init({
+          el,
+          data,
+          window,
+          document,
+          renderComplete,
+          platform,
+          eventCallback
         });
+        if (initialiser && initialiser.init) {
+          initialiser.init();
+        }
+        this.loadScriptsParallel();
       });
     },
-    runInitIfGlobalsPresent() {
-      if (scriptUris.length === window.scripts.length) {
-        this.runInit();
+    runScriptsLoadedIf() {
+      if (scripts.length === window.scritpsProcessed.length) {
+        this.scriptsLoaded();
       }
     },
     addProcessedScript(scriptId) {
       if (this.isScriptProcessed(scriptId)) {
         return;
       }
-      window.scripts.push(scriptId);
+      window.scritpsProcessed.push(scriptId);
     },
     isScriptProcessed(scriptId) {
-      return window.scripts.indexOf(scriptId) > -1;
+      return window.scritpsProcessed.indexOf(scriptId) > -1;
     },
 
     scriptLoaded(scriptId) {
       withCatch(() => {
-        log("script loaded:", scriptId);
+        log(`script loaded: ${scriptId}`);
         this.addProcessedScript(scriptId);
-        this.runInitIfGlobalsPresent();
+        this.runScriptsLoadedIf();
       });
     },
     scriptErrored(scriptId, canRequestFail, err) {
       withCatch(() => {
-        log("script errored:", scriptId);
+        log(`script errored ${scriptId}`);
         this.addProcessedScript(scriptId);
         if (!canRequestFail) {
           throw new Error(`Failed to load the script ${err}`);
         }
-        this.runInitIfGlobalsPresent();
+        this.runScriptsLoadedIf();
       });
     },
 
     scriptTimeout(scriptId) {
       withCatch(() => {
         log(
-          "script timeout id:",
-          scriptId,
-          "already processed:",
-          this.isScriptProcessed(scriptId)
+          `script timeout id: ${
+            scriptId
+          } already processed: ${this.isScriptProcessed(scriptId)}`
         );
         if (this.isScriptProcessed(scriptId)) {
           return;
         }
         this.addProcessedScript(scriptId);
-        this.runInitIfGlobalsPresent();
+        this.runScriptsLoadedIf();
       });
     },
 
-    loadScriptsParallel(scripts, callback) {
+    loadScriptsParallel() {
       if (scripts.length === 0) {
-        callback();
+        this.runScriptsLoadedIf();
       }
       for (let i = 0; i < scripts.length; i += 1) {
         const scriptUri = scripts[i].uri;
@@ -102,7 +117,6 @@ const makeHarness = ({
         const scriptId = `dom-context-script-${scriptUri.replace(/\W/g, "")}`;
         let script = document.getElementById(scriptId);
         if (!script) {
-          log("create script:", scriptId);
           script = document.createElement("script");
           script.id = scriptId;
           script.type = "text/javascript";
@@ -110,7 +124,7 @@ const makeHarness = ({
           script.defer = true;
           document.head.appendChild(script);
         } else {
-          this.runInitIfGlobalsPresent();
+          this.runScriptsLoadedIf();
         }
         script.addEventListener("load", this.scriptLoaded.bind(this, scriptId));
         script.addEventListener(
@@ -126,17 +140,13 @@ const makeHarness = ({
       }
     },
 
-    runInit() {
+    scriptsLoaded() {
       withCatch(() => {
-        if (initCalled) {
+        if (scriptsLoadedCalled) {
           return;
         }
-        initCalled = true;
-        const globals = {};
-        for (let i = 0; i < globalNames.length; i += 1) {
-          const globalName = globalNames[i];
-          globals[globalName] = window[globalName];
-        }
+        scriptsLoadedCalled = true;
+
         const renderComplete = () => {
           if (!renderCompleteCalled) {
             renderCompleteCalled = true;
@@ -146,13 +156,17 @@ const makeHarness = ({
         const initialiser = init({
           el,
           data,
-          globals,
+          // TODO: can we safetely remove the global concept???
+          // globals,
           renderComplete,
           window,
-          document
+          platform,
+          eventCallback
+          // TODO: can we safetely remove the document???
+          // document
         });
-        if (initialiser && initialiser.execute) {
-          initialiser.execute();
+        if (initialiser && initialiser.scriptsLoaded) {
+          initialiser.scriptsLoaded();
         }
       });
     }

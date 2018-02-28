@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 const script = PropTypes.shape({
-  uri: PropTypes.string,
+  uri: PropTypes.string.isRequired,
   timeout: PropTypes.number,
   canRequestFail: PropTypes.bool
 });
@@ -9,16 +9,14 @@ const script = PropTypes.shape({
 export const propTypes = {
   width: PropTypes.number,
   height: PropTypes.number,
-  scriptUris: PropTypes.arrayOf(script),
-  globalNames: PropTypes.arrayOf(PropTypes.string),
+  scripts: PropTypes.arrayOf(script),
   init: PropTypes.func.isRequired,
   onRenderComplete: PropTypes.func,
   data: PropTypes.shape({})
 };
 
 export const defaultProps = {
-  scriptUris: [],
-  globalNames: [],
+  scripts: [],
   data: {},
   onRenderComplete: () => {}
 };
