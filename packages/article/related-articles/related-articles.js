@@ -1,7 +1,9 @@
 import React from "react";
 import { ScrollView } from "react-native";
+<<<<<<< HEAD
 import renderSlice from "./related-articles.base";
-import RelatedArticlesHeading from "./related-articles-heading";
+import Heading from "./heading";
+// @TODO: use TemplateSlice components
 import RelatedArticleItem from "./related-article-item";
 import {
   relatedArticlesPropTypes,
@@ -33,7 +35,7 @@ const RelatedArticles = ({ articles, onPress, template }) => {
 
   return (
     <ScrollView style={{ marginTop: 10 }}>
-      <RelatedArticlesHeading />
+      <Heading />
       {renderSlice(template, renderArticleItems)}
     </ScrollView>
   );

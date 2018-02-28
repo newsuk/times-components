@@ -1,7 +1,9 @@
 import React from "react";
 import { View } from "react-native";
 import renderSlice from "./related-articles.base";
-import RelatedArticlesHeading from "./related-articles-heading";
+import Heading from "./heading";
+// @TODO: use TemplateSlice components
+import { Slice } from "@times-components/slice";
 import RelatedArticleItem from "./related-article-item";
 import {
   relatedArticlesPropTypes,
@@ -52,7 +54,7 @@ const RelatedArticles = ({ articles, onPress, template }) => {
 
   return (
     <View style={{ marginTop: 10 }}>
-      <RelatedArticlesHeading />
+      <Heading />
       {renderSlice(template, renderArticleItems)}
     </View>
   );
