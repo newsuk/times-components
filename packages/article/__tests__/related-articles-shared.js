@@ -151,32 +151,6 @@ export default () => {
       expect(events.mock.calls).toMatchSnapshot();
     });
 
-    it("sends analytics if a single related article with no lead image is rendered", () => {
-      const events = jest.fn();
-      renderer.create(
-        <RelatedArticles
-          {...createRelatedArticlesProps(
-            singleRelatedArticleNoImageFixture.data,
-            events
-          )}
-        />
-      );
-      expect(events.mock.calls).toMatchSnapshot();
-    });
-
-    it("sends analytics if a single related article with no label is rendered", () => {
-      const events = jest.fn();
-      renderer.create(
-        <RelatedArticles
-          {...createRelatedArticlesProps(
-            singleRelatedArticleNoLabelFixture.data,
-            events
-          )}
-        />
-      );
-      expect(events.mock.calls).toMatchSnapshot();
-    });
-
     it("sends analytics if a single related article with no byline is rendered", () => {
       const events = jest.fn();
       renderer.create(
