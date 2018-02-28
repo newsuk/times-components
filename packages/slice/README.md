@@ -14,8 +14,6 @@ specific to the publication (The Times / The Sunday Times)
 
 This should not apply in the following scenarios:
 
-but NOT in these scenarios:
-
 * Search results list page - these don't display images anyway
 * Any homepage slices
 * This also does NOT apply to when an article page template is missing a lead
