@@ -14,9 +14,9 @@ import { ResponsiveHeadline } from "./styles/responsive";
 const RelatedArticleItem = ({
   article,
   onPress,
-  styledRelatedArticleContainer: StyledRelatedArticleContainer,
-  styledImageContainer: StyledImageContainer,
-  styledSummaryContainer: StyledSummaryContainer
+  imageContainer: ImageContainer,
+  relatedArticleContainer: RelatedArticleContainer,
+  summaryContainer: SummaryContainer
 }) => {
   const {
     byline,
@@ -36,13 +36,13 @@ const RelatedArticleItem = ({
 
   return (
     <Link url={url} onPress={onPress}>
-      <StyledRelatedArticleContainer>
+      <RelatedArticleContainer>
         {imageUri ? (
-          <StyledImageContainer>
+          <ImageContainer>
             <Image uri={`${imageUri}&resize=996`} aspectRatio={16 / 9} />
-          </StyledImageContainer>
+          </ImageContainer>
         ) : null}
-        <StyledSummaryContainer>
+        <SummaryContainer>
           <ArticleSummary
             bylineProps={{ ast: byline }}
             datePublicationProps={{ date: publishedTime }}
@@ -63,8 +63,8 @@ const RelatedArticleItem = ({
             }}
             content={() => <ArticleSummaryContent ast={summary} />}
           />
-        </StyledSummaryContainer>
-      </StyledRelatedArticleContainer>
+        </SummaryContainer>
+      </RelatedArticleContainer>
     </Link>
   );
 };

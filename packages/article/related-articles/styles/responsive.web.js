@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 import { colours } from "@times-components/styleguide";
 
-export const RelatedArticlesHeading = withResponsiveStyles(View, {
+export const Heading = withResponsiveStyles(View, {
   base: () => `
     align-items: center;
     border-style: solid;
@@ -21,17 +21,7 @@ export const RelatedArticlesHeading = withResponsiveStyles(View, {
     margin-right: 0;
   `
 });
-
-export const RelatedArticleContainer = articleCount =>
-  withResponsiveStyles(View, {
-    base: () => `
-    display: flex;
-    flex-direction: column;
-  `,
-    mediumUp: () => `
-      flex-direction: ${articleCount === 1 ? "row" : ""};
-  `
-  });
+Heading.displayName = "Heading";
 
 export const ResponsiveHeadline = withResponsiveStyles(Text, {
   base: () => `
@@ -44,8 +34,9 @@ export const ResponsiveHeadline = withResponsiveStyles(Text, {
     line-height: 30px;
   `
 });
+ResponsiveHeadline.displayName = "ResponsiveHeadline";
 
-export const ImageContainer = articleCount =>
+export const getImageContainer = articleCount =>
   withResponsiveStyles(View, {
     base: () => `
     display: ${articleCount === 3 ? "none" : "block"};
@@ -62,7 +53,18 @@ export const ImageContainer = articleCount =>
         : `display: block;`
   });
 
-export const SummaryContainer = articleCount =>
+export const getRelatedArticleContainer = articleCount =>
+  withResponsiveStyles(View, {
+    base: () => `
+    display: flex;
+    flex-direction: column;
+  `,
+    mediumUp: () => `
+      flex-direction: ${articleCount === 1 ? "row" : ""};
+  `
+  });
+
+export const getSummaryContainer = articleCount =>
   withResponsiveStyles(View, {
     base: () => `
     flex-grow: 1;
