@@ -16,7 +16,7 @@ export const ChildContainer = withResponsiveStyles(View, {
 });
 ChildContainer.displayName = "ChildContainer";
 
-export const getChildrenContainer = childCount =>
+export const getChildrenContainer = ({ childCount }) =>
   withResponsiveStyles(View, {
     base: () => `
     flex: 1;
@@ -32,6 +32,8 @@ export const getChildrenContainer = childCount =>
     `;
 
       const largeStyle = `
+      padding-left: 20px;
+      padding-right: 20px;
       width: 100%;
     `;
 

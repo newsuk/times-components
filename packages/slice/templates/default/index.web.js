@@ -4,7 +4,9 @@ import { getSeparator, SliceContainer } from "../shared.responsive";
 import { getChildrenContainer, ChildContainer } from "./responsive";
 
 const DefaultSlice = ({ children }) => {
-  const ChildrenContainer = getChildrenContainer(children);
+  const ChildrenContainer = getChildrenContainer({
+    childCount: children.length
+  });
   const Separator = getSeparator({ hasLeftRightMargin: true });
 
   // for tests

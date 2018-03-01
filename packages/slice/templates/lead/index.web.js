@@ -28,7 +28,7 @@ const LeadSlice = ({ lead, support1, support2 }) => {
         {hasSupports && (
           <SupportsContainer>
             {supports.map((support, index) => {
-              const SupportContainer = getSupportContainer(index);
+              const SupportContainer = getSupportContainer({ index });
               SupportContainer.displayName = "SupportContainer";
               return (
                 <SupportContainer key={`support-container-${support.key}`}>

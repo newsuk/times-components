@@ -12,7 +12,7 @@ export const SupportsContainer = withResponsiveStyles(View, {
 });
 SupportsContainer.displayName = "SupportsContainer";
 
-export const getSupportContainer = index =>
+export const getSupportContainer = ({ index }) =>
   withResponsiveStyles(View, {
     base: () => {
       const firstChildStyle = `
