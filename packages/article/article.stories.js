@@ -41,6 +41,7 @@ const preventDefaultedAction = decorateAction([
 ]);
 
 const createRelatedArticlesProps = fixtureData => ({
+  analyticsStream: storybookReporter,
   articles: fixtureData.relatedArticles,
   template: fixtureData.relatedArticlesLayout.template,
   onPress: preventDefaultedAction("onArticlePress")
