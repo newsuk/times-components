@@ -45,8 +45,7 @@ class CardComponent extends Component {
       );
     }
 
-    const ChildContainer = getChildContainer(childRatio);
-    ChildContainer.displayName = "ChildContainer";
+    const ChildContainer = getChildContainer({ childRatio });
 
     return (
       <Animations.FadeIn>

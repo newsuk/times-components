@@ -11,17 +11,6 @@ export const CardContainer = withResponsiveStyles(View, {
 });
 CardContainer.displayName = "CardContainer";
 
-export const getChildContainer = childRatio =>
-  withResponsiveStyles(View, {
-    base: () => `
-    flex: 1;
-  `,
-    mediumUp: () => `
-    flex: ${childRatio};
-    flex-basis: 0 !important;
-  `
-  });
-
 export const ImageContainer = withResponsiveStyles(View, {
   base: () => `
     flex: 1;
@@ -34,3 +23,17 @@ export const ImageContainer = withResponsiveStyles(View, {
   `
 });
 ImageContainer.displayName = "ImageContainer";
+
+export const getChildContainer = ({ childRatio }) => {
+  const ChildContainer = withResponsiveStyles(View, {
+    base: () => `
+    flex: 1;
+  `,
+    mediumUp: () => `
+    flex: ${childRatio};
+    flex-basis: 0 !important;
+  `
+  });
+  ChildContainer.displayName = "ChildContainer";
+  return ChildContainer;
+};

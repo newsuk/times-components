@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import Card from "../../card";
 
 const cardProps = {
@@ -13,8 +13,8 @@ const cardProps = {
   showImage: true
 };
 
-describe("Card test on web", () => {
-  it("should render", () => {
+describe("Card tests on web", () => {
+  it("should render a card", () => {
     const component = shallow(
       <Card {...cardProps}>
         <span>A card</span>
@@ -25,7 +25,7 @@ describe("Card test on web", () => {
   });
 
   it("should render the loading state", () => {
-    const component = shallow(
+    const component = mount(
       <Card {...cardProps} isLoading>
         <span>Loading state</span>
       </Card>

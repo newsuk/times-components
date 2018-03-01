@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card test on ios renders loading state 1`] = `
+exports[`Card tests on ios renders loading state 1`] = `
 <View>
   <View>
     <View
@@ -283,7 +283,7 @@ exports[`Card test on ios renders loading state 1`] = `
 </View>
 `;
 
-exports[`Card test on ios renders vertical by default 1`] = `
+exports[`Card tests on ios renders vertical by default 1`] = `
 <View
   collapsable={undefined}
   style={
@@ -405,7 +405,7 @@ exports[`Card test on ios renders vertical by default 1`] = `
 </View>
 `;
 
-exports[`Card test on ios renders without image 1`] = `
+exports[`Card tests on ios renders without image 1`] = `
 <View
   collapsable={undefined}
   style={
@@ -428,7 +428,7 @@ exports[`Card test on ios renders without image 1`] = `
 </View>
 `;
 
-exports[`Card test on ios renders without image url 1`] = `
+exports[`Card tests on ios renders without image url 1`] = `
 <View
   collapsable={undefined}
   style={

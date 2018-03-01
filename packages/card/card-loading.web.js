@@ -14,7 +14,7 @@ import {
 import styles from "./styles/shared";
 
 const Loading = ({ aspectRatio, childRatio, showImage }) => {
-  const ChildContainer = getChildContainer(childRatio);
+  const ChildContainer = getChildContainer({ childRatio });
 
   return (
     <CardContainer>
