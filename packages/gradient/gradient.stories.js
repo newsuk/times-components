@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { StyleSheet, View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
+import { checkA11y } from "@storybook/addon-a11y";
 import Gradient from "./gradient";
 
 const styles = StyleSheet.create({
@@ -31,6 +32,7 @@ Component.propTypes = {
 };
 
 storiesOf("Primitives/Gradient", module)
+  .addDecorator(checkA11y)
   .add("Default", () => (
     <Component
       style={{

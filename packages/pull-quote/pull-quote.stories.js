@@ -1,6 +1,7 @@
 import "react-native";
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
+import { checkA11y } from "@storybook/addon-a11y";
 import PullQuotes from "./pull-quote";
 
 const content =
@@ -9,6 +10,7 @@ const caption = "Judge Sapnara";
 const twitter = "@henrywinter";
 
 storiesOf("Primitives/PullQuotes", module)
+  .addDecorator(checkA11y)
   .add("Pull Quotes with a Caption", () => (
     <PullQuotes content={content} caption={caption} />
   ))

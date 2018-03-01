@@ -3,6 +3,7 @@ import { View, Image, Text } from "react-native";
 
 import { storiesOf } from "@storybook/react-native";
 import { action, decorateAction } from "@storybook/addon-actions";
+import { checkA11y } from "@storybook/addon-a11y";
 import BrightcoveVideo from "./brightcove-video";
 import Player from "./brightcove-player";
 
@@ -20,6 +21,7 @@ const playIconURI = "https://i.imgur.com/qvmvjzE.png";
 const firstArgJSONAction = decorateAction([args => [JSON.stringify(args[0])]]);
 
 storiesOf("Primitives/BrightcoveVideo", module)
+  .addDecorator(checkA11y)
   .add("Launcher with default values", () => (
     <BrightcoveVideo
       policyKey={policyKey}

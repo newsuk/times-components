@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Button, View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import storybookReporter from "@times-components/tealium/storybook";
+import { checkA11y } from "@storybook/addon-a11y";
 import {
   withTrackingContext,
   withTrackEvents,
@@ -55,6 +56,7 @@ const BoxesWithTrackingContext = withTrackingContext(
 );
 
 storiesOf("Helpers/Tracking", module)
+  .addDecorator(checkA11y)
   .add("Page tracking", () => (
     <BoxWithTrackingContext analyticsStream={storybookReporter} color="red" />
   ))
