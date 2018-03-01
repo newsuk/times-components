@@ -36,8 +36,8 @@ export const ResponsiveHeadline = withResponsiveStyles(Text, {
 });
 ResponsiveHeadline.displayName = "ResponsiveHeadline";
 
-export const getImageContainer = articleCount =>
-  withResponsiveStyles(View, {
+export const getImageContainer = ({ articleCount }) => {
+  const ImageContainer = withResponsiveStyles(View, {
     base: () => `
     display: ${articleCount === 3 ? "none" : "block"};
     flex-grow: 1;
@@ -52,10 +52,13 @@ export const getImageContainer = articleCount =>
   `
         : `display: block;`
   });
+  ImageContainer.displayName = "ImageContainer";
+  return ImageContainer;
+};
 
 // replace with Card
-export const getRelatedArticleContainer = articleCount =>
-  withResponsiveStyles(View, {
+export const getRelatedArticleContainer = ({ articleCount }) => {
+  const RelatedArticleContainer = withResponsiveStyles(View, {
     base: () => `
     display: flex;
     flex-direction: column;
@@ -64,9 +67,12 @@ export const getRelatedArticleContainer = articleCount =>
       flex-direction: ${articleCount === 1 ? "row" : "column"};
   `
   });
+  RelatedArticleContainer.displayName = "RelatedArticleContainer";
+  return RelatedArticleContainer;
+};
 
-export const getSummaryContainer = articleCount =>
-  withResponsiveStyles(View, {
+export const getSummaryContainer = ({ articleCount }) => {
+  const SummaryContainer = withResponsiveStyles(View, {
     base: () => `
     flex-grow: 1;
   `,
@@ -79,3 +85,6 @@ export const getSummaryContainer = articleCount =>
   `
         : ``
   });
+  SummaryContainer.displayName = "SummaryContainer";
+  return SummaryContainer;
+};
