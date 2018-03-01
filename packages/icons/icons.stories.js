@@ -1,6 +1,10 @@
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
+<<<<<<< HEAD
+=======
+import { fonts } from "@times-components/styleguide";
+>>>>>>> feat: adds video-icon svg
 import { IconDiamond, IconTwitter, IconVideo } from "./icons";
 
 const borderWidth = 1;
