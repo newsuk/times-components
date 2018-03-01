@@ -19,14 +19,9 @@ const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles || articles.length === 0) return null;
 
   const articleCount = articles.length;
-  const ImageContainer = getImageContainer(articleCount);
-  const RelatedArticleContainer = getRelatedArticleContainer(articleCount);
-  const SummaryContainer = getSummaryContainer(articleCount);
-
-  // for tests
-  ImageContainer.displayName = "ImageContainer";
-  RelatedArticleContainer.displayName = "RelatedArticleContainer";
-  SummaryContainer.displayName = "SummaryContainer";
+  const ImageContainer = getImageContainer({ articleCount });
+  const RelatedArticleContainer = getRelatedArticleContainer({ articleCount });
+  const SummaryContainer = getSummaryContainer({ articleCount });
 
   const renderArticleItems = () =>
     articles.map(article => (
