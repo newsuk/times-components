@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/slice@0.5.2...@times-components/slice@0.7.0) (2018-03-01)
+
+
+### Features
+
+* add related articles tracking ([#666](https://github.com/newsuk/times-components/issues/666)) ([33146c2](https://github.com/newsuk/times-components/commit/33146c2))
+
+
+
+
 <a name="0.6.0"></a>
 # [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/slice@0.5.2...@times-components/slice@0.6.0) (2018-03-01)
 
