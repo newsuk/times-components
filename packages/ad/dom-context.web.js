@@ -45,8 +45,6 @@ export default class DOMContext extends React.PureComponent {
       throw new Error(`DomContext error: ${detail}`);
     } else if (type === "renderComplete") {
       this.props.onRenderComplete();
-    } else if (type === "log") {
-      console.log(detail); // eslint-disable-line no-console
     }
   };
 
