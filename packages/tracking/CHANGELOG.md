@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.7.8...@times-components/tracking@0.8.0) (2018-03-01)
+
+
+### Features
+
+* add related articles tracking ([#666](https://github.com/newsuk/times-components/issues/666)) ([33146c2](https://github.com/newsuk/times-components/commit/33146c2))
+
+
+
+
 <a name="0.7.8"></a>
 ## [0.7.8](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.7.7...@times-components/tracking@0.7.8) (2018-03-01)
 
