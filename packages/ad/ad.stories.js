@@ -157,7 +157,7 @@ storiesOf("Advertisement", module)
             ">
               worked=${worked}<br>
               data.message=${message}<br>
-              globals.global1=${window.global1}<br>
+              window.global1=${window.global1}<br>
               <button class="renderComplete">call <code>renderComplete()</code></button><br>
               <button class="logMessages">log messages</button><br>
               <button class="exception" onclick="throw new Error('bar')"><code>throw new Error("bar");</button><br>

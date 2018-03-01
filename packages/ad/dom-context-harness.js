@@ -29,9 +29,6 @@ const makeHarness = ({
       eventCallback("error", `${e.message}${e.stack}`);
     }
   };
-  const log = message => {
-    eventCallback("log", `${data.pos} ad: ${message}`);
-  };
   return {
     execute() {
       withCatch(() => {
@@ -75,14 +72,12 @@ const makeHarness = ({
 
     scriptLoaded(scriptId) {
       withCatch(() => {
-        log(`script loaded: ${scriptId}`);
         this.addProcessedScript(scriptId);
         this.runScriptsLoadedIf();
       });
     },
     scriptErrored(scriptId, canRequestFail, err) {
       withCatch(() => {
-        log(`script errored ${scriptId}`);
         this.addProcessedScript(scriptId);
         if (!canRequestFail) {
           throw new Error(`Failed to load the script ${err}`);
@@ -93,11 +88,6 @@ const makeHarness = ({
 
     scriptTimeout(scriptId) {
       withCatch(() => {
-        log(
-          `script timeout id: ${
-            scriptId
-          } already processed: ${this.isScriptProcessed(scriptId)}`
-        );
         if (this.isScriptProcessed(scriptId)) {
           return;
         }
@@ -153,17 +143,15 @@ const makeHarness = ({
             eventCallback("renderComplete");
           }
         };
+        // FIXME we're calling init again after scripts load... We should be caching the first initialiser and calling the scriptsLoaded hook.
+        // better still, we could move script loading out of DOMContext and into ad-init
         const initialiser = init({
           el,
           data,
-          // TODO: can we safetely remove the global concept???
-          // globals,
           renderComplete,
           window,
           platform,
           eventCallback
-          // TODO: can we safetely remove the document???
-          // document
         });
         if (initialiser && initialiser.scriptsLoaded) {
           initialiser.scriptsLoaded();
