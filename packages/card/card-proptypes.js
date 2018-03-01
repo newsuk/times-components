@@ -8,7 +8,7 @@ export const cardPropTypes = {
   isLoading: PropTypes.bool,
   showImage: PropTypes.bool
 };
- 
+
 export const cardDefaultProps = {
   children: [],
   image: {
