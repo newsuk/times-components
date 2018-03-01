@@ -13,7 +13,8 @@ export default StyleSheet.create({
     height: 10,
     marginBottom: 10
   },
-  noMarginBottom: {
-    marginBottom: 0
+  lastBar: {
+    marginBottom: 0,
+    maxWidth: 240
   }
 });

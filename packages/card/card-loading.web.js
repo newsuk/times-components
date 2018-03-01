@@ -28,7 +28,7 @@ const Loading = ({ aspectRatio, childRatio, showImage }) => {
         <Gradient style={[styles.textContainer]} degrees={267} />
         <Gradient style={[styles.textContainer]} degrees={267} />
         <Gradient
-          style={[styles.textContainer, styles.noMarginBottom]}
+          style={[styles.textContainer, styles.lastBar]}
           degrees={267}
         />
       </ChildContainer>
