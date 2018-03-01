@@ -15,11 +15,6 @@ const LeadSlice = ({ lead, support1, support2 }) => {
   const LeadContainer = getLeadContainer({ hasSupports });
   const Separator = getSeparator({ hasLeftRightMargin: false });
 
-  // for tests
-  Container.displayName = "Container";
-  LeadContainer.displayName = "LeadContainer";
-  Separator.displayName = "Separator";
-
   return (
     <SliceContainer>
       <Container>

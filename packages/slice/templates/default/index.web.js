@@ -9,10 +9,6 @@ const DefaultSlice = ({ children }) => {
   });
   const Separator = getSeparator({ hasLeftRightMargin: true });
 
-  // for tests
-  ChildrenContainer.displayName = "ChildrenContainer";
-  Separator.displayName = "Separator";
-
   return (
     <SliceContainer>
       <ChildrenContainer>

@@ -16,8 +16,8 @@ export const ChildContainer = withResponsiveStyles(View, {
 });
 ChildContainer.displayName = "ChildContainer";
 
-export const getChildrenContainer = ({ childCount }) =>
-  withResponsiveStyles(View, {
+export const getChildrenContainer = ({ childCount }) => {
+  const ChildrenContainer = withResponsiveStyles(View, {
     base: () => `
     flex: 1;
     flex-direction: column;
@@ -46,3 +46,6 @@ export const getChildrenContainer = ({ childCount }) =>
     width: ${childCount >= 3 ? "100%" : config.wideBpWidth};
   `
   });
+  ChildrenContainer.displayName = "ChildrenContainer";
+  return ChildrenContainer;
+};

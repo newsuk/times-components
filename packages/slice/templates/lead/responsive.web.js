@@ -12,8 +12,8 @@ export const SupportsContainer = withResponsiveStyles(View, {
 });
 SupportsContainer.displayName = "SupportsContainer";
 
-export const getSupportContainer = ({ index }) =>
-  withResponsiveStyles(View, {
+export const getSupportContainer = ({ index }) => {
+  const SupportContainer = withResponsiveStyles(View, {
     base: () => {
       const firstChildStyle = `
         padding-bottom: 0;
@@ -43,9 +43,12 @@ export const getSupportContainer = ({ index }) =>
       padding-right: 0;
     `
   });
+  SupportContainer.displayName = "SupportContainer";
+  return SupportContainer;
+};
 
-export const getContainer = ({ hasSupports }) =>
-  withResponsiveStyles(View, {
+export const getContainer = ({ hasSupports }) => {
+  const Container = withResponsiveStyles(View, {
     base: () => `
     flex: 1;
     flex-direction: column;
@@ -75,9 +78,12 @@ export const getContainer = ({ hasSupports }) =>
     width: ${hasSupports ? "100%" : config.wideBpWidth};
   `
   });
+  Container.displayName = "Container";
+  return Container;
+};
 
-export const getLeadContainer = ({ hasSupports }) =>
-  withResponsiveStyles(View, {
+export const getLeadContainer = ({ hasSupports }) => {
+  const LeadContainer = withResponsiveStyles(View, {
     base: () => `
     flex: 1;
     flex-grow: 1;
@@ -101,3 +107,6 @@ export const getLeadContainer = ({ hasSupports }) =>
     `;
     }
   });
+  LeadContainer.displayName = "LeadContainer";
+  return LeadContainer;
+};

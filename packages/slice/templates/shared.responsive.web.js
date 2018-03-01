@@ -13,8 +13,8 @@ export const SliceContainer = withResponsiveStyles(View, {
 });
 SliceContainer.displayName = "SliceContainer";
 
-export const getSeparator = ({ hasLeftRightMargin }) =>
-  withResponsiveStyles(View, {
+export const getSeparator = ({ hasLeftRightMargin }) => {
+  const Separator = withResponsiveStyles(View, {
     base: () => `
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -33,3 +33,6 @@ export const getSeparator = ({ hasLeftRightMargin }) =>
     margin: ${hasLeftRightMargin ? "0 10px" : "0"};
   `
   });
+  Separator.displayName = "Separator";
+  return Separator;
+};
