@@ -5,7 +5,6 @@ import role from "@times-components/slice/styles/role-map";
 export default Component =>
   withTrackingContext(Component, {
     trackingObjectName: "RelatedArticles",
-    isDataReady: ({ isLoading }) => !isLoading,
     getAttrs: ({ template, articles }) => ({
       template,
       articles: articles.map(
