@@ -12,7 +12,7 @@ const responsiveLinkStyles = {
       margin-top: 0;
   `,
   medium: `
-      font-size: ${fontSizes.body};
+      font-size: ${fontSizes.body}px;
       line-height: 30px;
   `
 };

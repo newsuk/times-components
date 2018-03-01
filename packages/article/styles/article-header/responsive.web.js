@@ -4,15 +4,15 @@ import { colours } from "@times-components/styleguide";
 
 export const HeadlineContainer = withResponsiveStyles(Text, {
   base: () => `
-    font-size: 30px;
+    font-size: ${fontSizes.biggestHeadline}px;
     color: ${colours.functional.brandColour};
     margin-bottom: 8px;
-    font-family: "TimesModern-Bold";
+    font-family: "${fonts.headline}";
     font-weight: 400;
     line-height: 30px;
   `,
   mediumUp: () => `
-    font-size: 45px;
+    font-size: ${fontSizes.hugestHeadline}px;
     line-height: 45px;
   `
 });

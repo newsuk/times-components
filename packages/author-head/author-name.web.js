@@ -6,11 +6,11 @@ import { colours } from "@times-components/styleguide";
 
 const AuthorNameWrapper = withResponsiveStyles(Text, {
   base: () => `
-    font-family: TimesModern-Bold;
-    font-size: 30px;
+    font-family: ${fonts.headline};
+    font-size: ${fontSizes.biggestHeadline}px;
     color: ${colours.functional.brandColour};
   `,
-  mediumUp: () => "font-size: 45px;"
+  mediumUp: () => `font-size: ${fontSizes.hugestHeadline}px;`
 });
 
 const AuthorName = ({ name }) => (
