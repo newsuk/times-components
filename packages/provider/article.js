@@ -16,7 +16,7 @@ export const query = gql`
       leadAsset {
         ... imageFields
         ... on Video {
-          posterImage: {
+          posterImage {
             ... imageFields
           }
         }
@@ -63,7 +63,7 @@ export const query = gql`
     }
   }
 
-  fragment imageFields on Character {
+  fragment imageFields on Image {
     id
     title
     credits
