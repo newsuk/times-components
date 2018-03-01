@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ad",
-  "version": "0.10.3",
+  "version": "0.10.4",
   "description": "Ad component",
   "main": "ad",
   "scripts": {
@@ -60,8 +60,8 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.3.4",
-    "@times-components/watermark": "0.3.8",
+    "@times-components/styleguide": "0.3.5",
+    "@times-components/watermark": "0.3.9",
     "prop-types": "15.6.0",
     "react-broadcast": "0.5.2"
   },
