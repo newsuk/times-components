@@ -983,6 +983,7 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                     },
                     Object {
                       "marginBottom": 0,
+                      "maxWidth": 240,
                     },
                   ]
                 }
@@ -1333,6 +1334,7 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                     },
                     Object {
                       "marginBottom": 0,
+                      "maxWidth": 240,
                     },
                   ]
                 }
@@ -1683,6 +1685,7 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                     },
                     Object {
                       "marginBottom": 0,
+                      "maxWidth": 240,
                     },
                   ]
                 }
@@ -4295,6 +4298,7 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
                     },
                     Object {
                       "marginBottom": 0,
+                      "maxWidth": 240,
                     },
                   ]
                 }
@@ -5043,6 +5047,7 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                     },
                     Object {
                       "marginBottom": 0,
+                      "maxWidth": 240,
                     },
                   ]
                 }
@@ -5393,6 +5398,7 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                     },
                     Object {
                       "marginBottom": 0,
+                      "maxWidth": 240,
                     },
                   ]
                 }
@@ -5743,6 +5749,7 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                     },
                     Object {
                       "marginBottom": 0,
+                      "maxWidth": 240,
                     },
                   ]
                 }
@@ -6439,6 +6446,7 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                     },
                     Object {
                       "marginBottom": 0,
+                      "maxWidth": 240,
                     },
                   ]
                 }
@@ -6662,6 +6670,7 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                     },
                     Object {
                       "marginBottom": 0,
+                      "maxWidth": 240,
                     },
                   ]
                 }
@@ -6885,6 +6894,7 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                     },
                     Object {
                       "marginBottom": 0,
+                      "maxWidth": 240,
                     },
                   ]
                 }
