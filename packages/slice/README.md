@@ -1,7 +1,7 @@
 # Slice
 
-Slices are templates. A slice lays out a set of components according to
-template.
+Slices are templates. A slice lays out a set of components according to the
+given template rules.
 
 Visit the official
 [storybook](http://components.thetimes.co.uk/?selectedKind=Primitives%2FSlice&selectedStory=Default%20template%20with%20one%20item&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs)
@@ -16,4 +16,4 @@ specific to the publication (The Times / The Sunday Times)
 This should not apply in the following scenarios:
 
 * Any homepage slices
-* When article page template is missing a lead image
+* When the article page is missing it's lead image
