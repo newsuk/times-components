@@ -75,9 +75,6 @@ class Ad extends Component {
       {
         // NOTE: this is version 0.24.1
         uri: "https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js"
-      },
-      {
-        uri: "https://www.googletagservices.com/tag/js/gpt.js"
       }
     );
 

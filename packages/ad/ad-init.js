@@ -36,13 +36,13 @@ const adInit = args => {
   //   gpt: {
   //     scheduleAction(action) {},
 
-  //     scheduleSetPageTargetingValues(keyValuePairs) {
-  //       this.scheduleAction(() => {
-  //         for (let keyName in keyValuePairs) {
-  //           gtag.pubads().setTargeting(keyName, keyValuePairs[keyName]);
-  //         }
-  //       })
+  // scheduleSetPageTargetingValues(keyValuePairs) {
+  //   this.scheduleAction(() => {
+  //     for (let keyName in keyValuePairs) {
+  //       gtag.pubads().setTargeting(keyName, keyValuePairs[keyName]);
   //     }
+  //   })
+  // }
   //   },
 
   //   grapeshot: {
@@ -57,16 +57,20 @@ const adInit = args => {
   //     }
   //   },
 
-  //   init() {
-  //     const { withTimeout } = this.utils;
-  //     Promise.all(
-  //       withTimeout(setupGrapeshot, 1000),
-  //       withTimeout(setupPrebidding, 3000)
-  //     )
-  //       .then(setupPageTargeting)
-  //       .then(setupSlots)
-  //       .then(showAds);
-  //   }
+  // init() {
+  //   const { withTimeout } = this.utils;
+  //   Promise.all(
+  //     withTimeout(setupGrapeshot, 1000),
+  //     withTimeout(setupPrebidding, 3000)
+  //   )
+  //     .then(sendGPTRequest);
+
+
+  //   setupGrapeshot()
+  //   const { withTimeout } = this.utils;
+  //   withTimeout(setupPrebidding, 3000)
+  //     .then(sendGPTRequest);
+  // }
   // };
 
   // const setupGrapeshot = () => {
@@ -109,6 +113,28 @@ const adInit = args => {
       }
     },
 
+    gpt: {
+
+      setupGPT(utils) {
+        window.googletag = window.googletag || {};
+        window.googletag.cmd = window.googletag.cmd || [];
+        return utils.loadScript("https://www.googletagservices.com/tag/js/gpt.js");
+      },
+
+      scheduleAction(action) {
+        window.googletag.cmd.push(action);
+      },
+
+      scheduleSetPageTargetingValues(keyValuePairs) {
+        this.scheduleAction(() => {
+          const pubads = window.googletag.pubads();
+          for (let keyName in keyValuePairs) {
+            pubads.setTargeting(keyName, keyValuePairs[keyName]);
+          }
+        })
+      }
+    },
+
     prebid: {
       applyPrebidTargeting(pb) {
         try {
@@ -117,6 +143,22 @@ const adInit = args => {
         } catch (ex) {
           console.error("Set Targeting for GTP Async with prebid failed:", ex); // eslint-disable-line no-console
         }
+      },
+    },
+
+    grapeshot: {
+      setupGrapeshot(gpt, utils) {
+        const grapeshotUrl = `https://newscorp.grapeshot.co.uk/thetimes/channels.cgi?url=${encodeURIComponent(
+          data.contextUrl
+        )}`;
+        return utils.loadScript(grapeshotUrl)
+          .then(() => {
+            console.log("GRAPESHOT COMPLETE!", window.gs_channels);
+            gpt.scheduleSetPageTargetingValues({ gs_cat: window.gs_channels });
+          })
+          .catch(() => {
+            gpt.scheduleSetPageTargetingValues({ gs_cat: ["default"] });
+          })
       },
     },
 
@@ -243,12 +285,6 @@ const adInit = args => {
         //   );
       });
     },
-    scheduleGrapeshotTargeting(gtag) {
-      this.scheduleGPTAction(gtag, "grapeshot targeting", () => {
-        console.log("GRAPESHOT COMPLETE!", window.gs_channels);
-        gtag.pubads().setTargeting("gs_cat", window.gs_channels);
-      });
-    },
     dfpReady(gtag) {
       return new Promise(resolve =>
         this.scheduleGPTAction(gtag, "ready", () => {
@@ -324,8 +360,6 @@ const adInit = args => {
     },
     initGlobals() {
       window.adsSlot = [];
-      window.googletag = window.googletag || {};
-      window.googletag.cmd = window.googletag.cmd || [];
       window.pbjs = window.pbjs || {};
       window.pbjs.que = window.pbjs.que || [];
     },
@@ -381,14 +415,11 @@ const adInit = args => {
         window.initCalled = true;
         this.initGlobals();
 
-        const grapeshotUrl = `https://newscorp.grapeshot.co.uk/thetimes/channels.cgi?url=${encodeURIComponent(
-          data.contextUrl
-        )}`;
-        debugger;
-        this.utils.loadScript(grapeshotUrl)
-          .then(() => {
-            this.scheduleGrapeshotTargeting(window.googletag)
-          })
+        Promise.all([
+          this.gpt.setupGPT(this.utils),
+          this.grapeshot.setupGrapeshot(this.gpt, this.utils)
+        ]);
+
 
         if (platform === "web") {
           this.initializeBidding(
@@ -426,9 +457,8 @@ const adInit = args => {
       let method = group[methodName];
       group[methodName] = function () {
         const args = Array.prototype.slice.call(arguments);
-        const message = `ad-init: ${groupName}.${methodName}(${args.join(", ")})`;
-        console.log(message, ...args);
-        eventCallback("log", message);
+        console.log(`ad-init: ${groupName}.${methodName}`, ...args);
+        eventCallback("log", `ad-init: ${groupName}.${methodName}(${args.join(", ")})`);
         return method.apply(this, args);
       };
     }
