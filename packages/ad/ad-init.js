@@ -97,6 +97,10 @@ const adInit = args => {
 
     utils: {
       loadScript(scriptUri) {
+        if (scriptsInserted[scriptUri]) {
+          throw new Error(`Inserting "${scriptUri}" twice.`);
+        }
+        scriptsInserted[scriptUri] = true;
         return new Promise((resolve, reject) => {
           const script = document.createElement("script");
           script.type = "text/javascript";
@@ -136,8 +140,21 @@ const adInit = args => {
     },
 
     prebid: {
+      setupPrebid(prebidConfig, utils) {
+        window.pbjs = window.pbjs || {};
+        window.pbjs.que = window.pbjs.que || [];
+        const scriptPromises = [
+          utils.loadScript("https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js")
+        ];
+        if (prebidConfig.bidders.amazon.accountId) {
+          scriptPromises.push(utils.loadScript("https://c.amazon-adsystem.com/aax2/apstag.js"))
+        }
+        return Promise.all(scriptPromises);
+      },
+
       applyPrebidTargeting(pb) {
         try {
+          console.log("PREBIDDING COMPLETE!", window.gs_channels);
           pb.enableSendAllBids();
           pb.setTargetingForGPTAsync();
         } catch (ex) {
@@ -360,8 +377,6 @@ const adInit = args => {
     },
     initGlobals() {
       window.adsSlot = [];
-      window.pbjs = window.pbjs || {};
-      window.pbjs.que = window.pbjs.que || [];
     },
     initializeBidding(prebidConfig, slots, networkId, adUnit, section) {
       const amazonAccountID = prebidConfig.bidders.amazon.accountId;
@@ -417,7 +432,8 @@ const adInit = args => {
 
         Promise.all([
           this.gpt.setupGPT(this.utils),
-          this.grapeshot.setupGrapeshot(this.gpt, this.utils)
+          this.grapeshot.setupGrapeshot(this.gpt, this.utils),
+          this.prebid.setupPrebid(prebidConfig, this.utils)
         ]);
 
 
@@ -451,18 +467,18 @@ const adInit = args => {
 
   // uncomment this to enable logging of ad initialisation logic
   // NOTE: do not delete this code, it's super-useful for the next person who needs to debug ads on native
-  for (let groupName in initialiser) {
-    let group = initialiser[groupName];
-    for (let methodName in group) {
-      let method = group[methodName];
-      group[methodName] = function () {
-        const args = Array.prototype.slice.call(arguments);
-        console.log(`ad-init: ${groupName}.${methodName}`, ...args);
-        eventCallback("log", `ad-init: ${groupName}.${methodName}(${args.join(", ")})`);
-        return method.apply(this, args);
-      };
-    }
-  }
+  // for (let groupName in initialiser) {
+  //   let group = initialiser[groupName];
+  //   for (let methodName in group) {
+  //     let method = group[methodName];
+  //     group[methodName] = function () {
+  //       const args = Array.prototype.slice.call(arguments);
+  //       console.log(`ad-init: ${groupName}.${methodName}`, ...args);
+  //       eventCallback("log", `ad-init: ${groupName}.${methodName}(${args.join(", ")})`);
+  //       return method.apply(this, args);
+  //     };
+  //   }
+  // }
 
   return initialiser;
 };
