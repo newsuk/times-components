@@ -65,8 +65,7 @@ class CardComponent extends Component {
                   uri={`${image.uri}&resize=${imageSize}`}
                 />
               </ImageContainer>
-            )
-          }
+            )}
           <ChildContainer>{children}</ChildContainer>
         </CardContainer>
       </Animations.FadeIn>
