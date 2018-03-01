@@ -3,7 +3,7 @@ import { View, StyleSheet, Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { checkA11y } from "@storybook/addon-a11y";
 import { fonts } from "@times-components/styleguide";
-import { IconDiamond, IconTwitter } from "./icons";
+import { IconDiamond, IconTwitter, IconVideo } from "./icons";
 
 const borderWidth = 1;
 const borderColor = "#d3d3d3";
@@ -48,4 +48,17 @@ storiesOf("Primitives/Icons", module)
         <Text style={styles.label}>Twitter</Text>
       </View>
     </View>
+<<<<<<< HEAD
   ));
+=======
+    <View style={styles.icon}>
+      <IconTwitter width={50} height={50} />
+      <Text style={styles.label}>Twitter</Text>
+    </View>
+    <View style={styles.icon}>
+      <IconVideo width={50} height={50} />
+      <Text style={styles.label}>Video</Text>
+    </View>
+  </View>
+));
+>>>>>>> feat: adds video-icon svg
