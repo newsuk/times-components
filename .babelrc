@@ -1,4 +1,4 @@
 {
-  "presets": ["react-native-stage-0", "react-native"],
+  "presets": ["react-native"],
   "plugins": [["flow-react-proptypes", { "ignoreNodeModules": true }]]
 }
