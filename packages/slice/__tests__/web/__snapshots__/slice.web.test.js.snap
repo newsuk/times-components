@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. DEFAULT template renders a single child element 1`] = `
+<SliceContainer>
+  <ChildrenContainer>
+    <ChildContainer
+      key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+    >
+      <ExampleChild
+        key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+      />
+    </ChildContainer>
+  </ChildrenContainer>
+</SliceContainer>
+`;
+
+exports[`2. DEFAULT template renders two child elements 1`] = `
+<SliceContainer>
+  <ChildrenContainer>
+    <ChildContainer
+      key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+    >
+      <ExampleChild
+        key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+      />
+    </ChildContainer>
+    <Separator
+      key="separator-08604618-fb0e-11e7-a987-7fcf5e9983dd"
+    />
+    <ChildContainer
+      key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+    >
+      <ExampleChild
+        key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+      />
+    </ChildContainer>
+  </ChildrenContainer>
+</SliceContainer>
+`;
+
+exports[`3. DEFAULT template renders three child elements 1`] = `
+<SliceContainer>
+  <ChildrenContainer>
+    <ChildContainer
+      key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+    >
+      <ExampleChild
+        key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+      />
+    </ChildContainer>
+    <Separator
+      key="separator-08604618-fb0e-11e7-a987-7fcf5e9983dd"
+    />
+    <ChildContainer
+      key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+    >
+      <ExampleChild
+        key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+      />
+    </ChildContainer>
+    <Separator
+      key="separator-08604618-fb0e-11e7-a987-7fcf5e9983de"
+    />
+    <ChildContainer
+      key="08604618-fb0e-11e7-a987-7fcf5e9983de"
+    >
+      <ExampleChild
+        key="08604618-fb0e-11e7-a987-7fcf5e9983de"
+      />
+    </ChildContainer>
+  </ChildrenContainer>
+</SliceContainer>
+`;
+
+exports[`4. LEAD_AND_TWO template renders a single child element 1`] = `
+<SliceContainer>
+  <Container>
+    <LeadContainer>
+      <ExampleChild />
+    </LeadContainer>
+  </Container>
+</SliceContainer>
+`;
+
+exports[`5. LEAD_AND_TWO template renders two child elements 1`] = `
+<SliceContainer>
+  <Container>
+    <LeadContainer>
+      <ExampleChild />
+    </LeadContainer>
+    <Separator />
+    <SupportsContainer>
+      <SupportContainer
+        key="support-container-support1"
+      >
+        <ExampleChild
+          key="support1"
+        />
+      </SupportContainer>
+    </SupportsContainer>
+  </Container>
+</SliceContainer>
+`;
+
+exports[`6. LEAD_AND_TWO template renders three child elements 1`] = `
+<SliceContainer>
+  <Container>
+    <LeadContainer>
+      <ExampleChild />
+    </LeadContainer>
+    <Separator />
+    <SupportsContainer>
+      <SupportContainer
+        key="support-container-support1"
+      >
+        <ExampleChild
+          key="support1"
+        />
+      </SupportContainer>
+      <SupportContainer
+        key="support-container-support2"
+      >
+        <ExampleChild
+          key="support2"
+        />
+      </SupportContainer>
+    </SupportsContainer>
+  </Container>
+</SliceContainer>
+`;
