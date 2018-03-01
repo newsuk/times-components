@@ -95,7 +95,6 @@ const adInit = args => {
       loadScript(scriptUri) {
         return new Promise((resolve, reject) => {
           const script = document.createElement("script");
-          script.id = scriptId;
           script.type = "text/javascript";
           script.src = scriptUri;
           script.defer = true;
@@ -246,6 +245,7 @@ const adInit = args => {
     },
     scheduleGrapeshotTargeting(gtag) {
       this.scheduleGPTAction(gtag, "grapeshot targeting", () => {
+        console.log("GRAPESHOT COMPLETE!", window.gs_channels);
         gtag.pubads().setTargeting("gs_cat", window.gs_channels);
       });
     },
@@ -377,8 +377,19 @@ const adInit = args => {
         slotTargeting
       } = data;
       if (!window.initCalled) {
+
         window.initCalled = true;
         this.initGlobals();
+
+        const grapeshotUrl = `https://newscorp.grapeshot.co.uk/thetimes/channels.cgi?url=${encodeURIComponent(
+          data.contextUrl
+        )}`;
+        debugger;
+        this.utils.loadScript(grapeshotUrl)
+          .then(() => {
+            this.scheduleGrapeshotTargeting(window.googletag)
+          })
+
         if (platform === "web") {
           this.initializeBidding(
             prebidConfig,
@@ -405,14 +416,6 @@ const adInit = args => {
         slotTargeting
       );
     },
-    scriptsLoaded() {
-      // at this point all the scripts are loaded (eg: pbjs, googletag, apstag)
-      // we call this function multiple times, one for each ad
-      if (!window.globalAdInitComplete) {
-        window.globalAdInitComplete = true;
-        this.scheduleGrapeshotTargeting(window.googletag);
-      }
-    }
   };
 
   // uncomment this to enable logging of ad initialisation logic
@@ -426,7 +429,7 @@ const adInit = args => {
         const message = `ad-init: ${groupName}.${methodName}(${args.join(", ")})`;
         console.log(message, ...args);
         eventCallback("log", message);
-        method.apply(this, args);
+        return method.apply(this, args);
       };
     }
   }
