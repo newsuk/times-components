@@ -2,9 +2,8 @@ import React from "react";
 import { View, Text, Platform } from "react-native";
 import PropTypes from "prop-types";
 
-import { colours } from "@times-components/styleguide";
+import { colours, fonts } from "@times-components/styleguide";
 import { IconDiamond } from "@times-components/icons";
-import { fonts } from "@times-components/styleguide";
 
 // When changing styles please debug both web, android and ios because
 // some styles are not working correctly on all platforms (namely, android)
@@ -62,7 +61,9 @@ ArticleFlag.defaultProps = {
   color: "black"
 };
 
-const NewArticleFlag = () => <ArticleFlag title="new" color={colours.functional.deepOrange} />;
+const NewArticleFlag = () => (
+  <ArticleFlag title="new" color={colours.functional.deepOrange} />
+);
 const UpdatedArticleFlag = () => (
   <ArticleFlag title="updated" color={colours.functional.pictonBlue} />
 );

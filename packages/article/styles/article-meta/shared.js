@@ -26,7 +26,7 @@ const sharedStyles = {
   },
   byline: {
     fontSize: 13,
-    fontFamily: fonts.supporting, 
+    fontFamily: fonts.supporting,
     color: colours.functional.greyMid,
     lineHeight: 15
   }
