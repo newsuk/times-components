@@ -1,9 +1,10 @@
 # Slice
 
-Slices are templates. A slice lays out a set of components
-according to template.
+Slices are templates. A slice lays out a set of components according to
+template.
 
-Visit the official [storybook](http://components.thetimes.co.uk/?selectedKind=Primitives%2FSlice&selectedStory=Default%20template%20with%20one%20item&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs) 
+Visit the official
+[storybook](http://components.thetimes.co.uk/?selectedKind=Primitives%2FSlice&selectedStory=Default%20template%20with%20one%20item&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs)
 to see our available slice templates.
 
 ## Image Placeholder Rules
