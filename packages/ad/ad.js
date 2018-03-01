@@ -66,17 +66,6 @@ class Ad extends Component {
       ? { width: 0, height: 0 }
       : { height: this.config.maxSizes.height };
     const scriptsToLoad = [];
-    if (this.prebidConfig.bidders.amazon.accountId) {
-      scriptsToLoad.push({
-        uri: "https://c.amazon-adsystem.com/aax2/apstag.js"
-      });
-    }
-    scriptsToLoad.push(
-      {
-        // NOTE: this is version 0.24.1
-        uri: "https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js"
-      }
-    );
 
     const platform = Platform.OS === "web" ? "web" : "native";
     const webviewComponent = (
