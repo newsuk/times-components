@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. Render a Card 1`] = `
-<Styled(View)>
+<FadeIn>
   <CardContainer>
     <ImageContainer>
       <TimesImage
@@ -16,7 +16,7 @@ exports[`1. Render a Card 1`] = `
       </span>
     </ChildContainer>
   </CardContainer>
-</Styled(View)>
+</FadeIn>
 `;
 
 exports[`2. Render the loading state 1`] = `
@@ -295,7 +295,7 @@ exports[`2. Render the loading state 1`] = `
 `;
 
 exports[`3. Renders without an image 1`] = `
-<Styled(View)>
+<FadeIn>
   <CardContainer>
     <ChildContainer>
       <span>
@@ -303,11 +303,11 @@ exports[`3. Renders without an image 1`] = `
       </span>
     </ChildContainer>
   </CardContainer>
-</Styled(View)>
+</FadeIn>
 `;
 
 exports[`4. Renders without an image URL 1`] = `
-<Styled(View)>
+<FadeIn>
   <CardContainer>
     <ChildContainer>
       <span>
@@ -315,11 +315,11 @@ exports[`4. Renders without an image URL 1`] = `
       </span>
     </ChildContainer>
   </CardContainer>
-</Styled(View)>
+</FadeIn>
 `;
 
 exports[`5. Re-renders after showing the loading state 1`] = `
-<Styled(View)>
+<FadeIn>
   <CardContainer>
     <ImageContainer>
       <TimesImage
@@ -334,11 +334,11 @@ exports[`5. Re-renders after showing the loading state 1`] = `
       </span>
     </ChildContainer>
   </CardContainer>
-</Styled(View)>
+</FadeIn>
 `;
 
 exports[`6. Renders Card normally and does not re-render 1`] = `
-<Styled(View)>
+<FadeIn>
   <CardContainer>
     <ImageContainer>
       <TimesImage
@@ -353,5 +353,5 @@ exports[`6. Renders Card normally and does not re-render 1`] = `
       </span>
     </ChildContainer>
   </CardContainer>
-</Styled(View)>
+</FadeIn>
 `;
