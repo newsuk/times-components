@@ -1,8 +1,8 @@
-import { fonts, colours } from "@times-components/styleguide";
+import { colours, fonts, fontSizes } from "@times-components/styleguide";
 
 const sharedStyles = {
   articleHeadLineText: {
-    fontSize: 30,
+    fontSize: fontSizes.biggestHeadline,
     lineHeight: 32,
     color: colours.functional.brandColour,
     marginBottom: 7,

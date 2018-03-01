@@ -4,12 +4,12 @@ const fontSizes = {
   body: 18,
   smallestHeadline: 18,
   smallHeadline: 22,
-  regularHeadline:24,
+  regularHeadline: 24,
   bigHeadline: 27,
   biggestHeadline: 30,
   hugeHeadline: 35,
   hugestHeadline: 45
-}
+};
 
 export default fontSizes;
 

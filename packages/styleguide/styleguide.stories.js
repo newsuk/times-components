@@ -19,16 +19,20 @@ ColourBox.propTypes = {
   hex: PropTypes.string.isRequired
 };
 
-const fontDisplayer = (fontFamily, phrase) => (
+const fontDisplayer = (fontFamily, phrase) =>
   Object.keys(fontSizes).map(fontSize => (
     <Fragment>
-    <Text style={styles.subHeadline}>{fontSize}</Text>
-    <Text style={[styles.showoffFonts, { fontFamily, fontSize: fontSizes[fontSize] }]}>
-      {phrase}
-    </Text>
+      <Text style={styles.subHeadline}>{fontSize}</Text>
+      <Text
+        style={[
+          styles.showoffFonts,
+          { fontFamily, fontSize: fontSizes[fontSize] }
+        ]}
+      >
+        {phrase}
+      </Text>
     </Fragment>
-  ))
-);
+  ));
 
 fontDisplayer();
 
