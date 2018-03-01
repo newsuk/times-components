@@ -77,13 +77,6 @@ class Ad extends Component {
         uri: "https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js"
       },
       {
-        uri: `https://newscorp.grapeshot.co.uk/thetimes/channels.cgi?url=${encodeURIComponent(
-          data.contextUrl
-        )}`,
-        canRequestFail: true,
-        timeout: 500
-      },
-      {
         uri: "https://www.googletagservices.com/tag/js/gpt.js"
       }
     );

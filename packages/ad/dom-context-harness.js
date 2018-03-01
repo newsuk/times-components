@@ -143,19 +143,6 @@ const makeHarness = ({
             eventCallback("renderComplete");
           }
         };
-        // FIXME we're calling init again after scripts load... We should be caching the first initialiser and calling the scriptsLoaded hook.
-        // better still, we could move script loading out of DOMContext and into ad-init
-        const initialiser = init({
-          el,
-          data,
-          renderComplete,
-          window,
-          platform,
-          eventCallback
-        });
-        if (initialiser && initialiser.scriptsLoaded) {
-          initialiser.scriptsLoaded();
-        }
       });
     }
   };
