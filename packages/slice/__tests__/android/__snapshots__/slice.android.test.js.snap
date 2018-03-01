@@ -328,6 +328,7 @@ exports[`5. LEAD_AND_TWO template renders two child elements 1`] = `
     </View>
   </View>
   <View
+    key="support1"
     style={
       Object {
         "borderBottomColor": "#dbdbdb",
@@ -348,7 +349,9 @@ exports[`5. LEAD_AND_TWO template renders two child elements 1`] = `
         }
       }
     >
-      <ExampleChild />
+      <ExampleChild
+        key="support1"
+      />
     </View>
   </View>
 </View>
@@ -397,6 +400,7 @@ exports[`6. LEAD_AND_TWO template renders three child elements 1`] = `
     </View>
   </View>
   <View
+    key="support1"
     style={
       Object {
         "borderBottomColor": "#dbdbdb",
@@ -417,10 +421,13 @@ exports[`6. LEAD_AND_TWO template renders three child elements 1`] = `
         }
       }
     >
-      <ExampleChild />
+      <ExampleChild
+        key="support1"
+      />
     </View>
   </View>
   <View
+    key="support2"
     style={
       Object {
         "borderBottomColor": "#dbdbdb",
@@ -441,7 +448,9 @@ exports[`6. LEAD_AND_TWO template renders three child elements 1`] = `
         }
       }
     >
-      <ExampleChild />
+      <ExampleChild
+        key="support2"
+      />
     </View>
   </View>
 </View>

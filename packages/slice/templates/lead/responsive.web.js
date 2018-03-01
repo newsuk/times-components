@@ -3,65 +3,38 @@ import withResponsiveStyles, {
   config
 } from "@times-components/responsive-styles";
 
-export const Separator = withResponsiveStyles(View, {
-  base: () => `
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: #dbdbdb;
-    flex: 1;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    min-width: auto;
-  `,
-  mediumUp: () => `
-    border-bottom: none;  
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-right-color: #dbdbdb;
-    flex: 0 !important;
-    margin-bottom: 0;
-    margin-top: 0;
-  `
-});
-Separator.displayName = "Separator";
-
-export const ChildrenContainer = withResponsiveStyles(View, {
+export const SupportsContainer = withResponsiveStyles(View, {
   base: () => `
     flex: 1;
     flex-direction: column;
     height: auto;
   `
 });
-ChildrenContainer.displayName = "ChildrenContainer";
+SupportsContainer.displayName = "SupportsContainer";
 
-export const getChildContainer = ({ isSecondChild, hasTwoChildren }) =>
-  withResponsiveStyles(View, {
+export const getSupportContainer = ({ index }) => {
+  const SupportContainer = withResponsiveStyles(View, {
     base: () => {
-      const twoChildrenFirstStyle = `
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-        border-bottom-color: #dbdbdb;
-        padding-bottom: 10px;
-      `;
-      const oneChildFirstStyle = `
+      const firstChildStyle = `
         padding-bottom: 0;
       `;
-      const firstChildStyle = hasTwoChildren
-        ? twoChildrenFirstStyle
-        : oneChildFirstStyle;
 
       const secondChildStyle = `
-      padding-top: 10px;
-    `;
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-top-color: #dbdbdb;
+        margin-top: 10px;
+        padding-top: 10px;
+      `;
 
       return `
-      flex: 1;
-      flex-wrap: wrap;
-      min-height: auto;
-      padding-left: 10px;
-      padding-right: 10px;
-      ${isSecondChild ? secondChildStyle : firstChildStyle}
-    `;
+        flex: 1;
+        flex-wrap: wrap;
+        min-height: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        ${index === 0 ? firstChildStyle : secondChildStyle}
+      `;
     },
     mediumUp: () => `
       margin-left: 10px;
@@ -70,9 +43,12 @@ export const getChildContainer = ({ isSecondChild, hasTwoChildren }) =>
       padding-right: 0;
     `
   });
+  SupportContainer.displayName = "SupportContainer";
+  return SupportContainer;
+};
 
-export const getContainer = ({ hasChildren }) =>
-  withResponsiveStyles(View, {
+export const getContainer = ({ hasSupports }) => {
+  const Container = withResponsiveStyles(View, {
     base: () => `
     flex: 1;
     flex-direction: column;
@@ -83,48 +59,54 @@ export const getContainer = ({ hasChildren }) =>
     width: 100%;
   `,
     mediumUp: () => {
-      const withoutChildrenStyle = `
+      const withoutSupportsStyle = `
       padding-left: 0px;
       padding-right: 0px;
       width: ${config.mediumBpWidth};
     `;
 
-      const withChildrenStyle = `
+      const withSupportsStyle = `
       width: 100%;
     `;
 
       return `
       flex-direction: row;
-      ${hasChildren ? withChildrenStyle : withoutChildrenStyle}
+      ${hasSupports ? withSupportsStyle : withoutSupportsStyle}
     `;
     },
     wideUp: () => `
-    width: ${hasChildren ? "100%" : config.wideBpWidth};
+    width: ${hasSupports ? "100%" : config.wideBpWidth};
   `
   });
+  Container.displayName = "Container";
+  return Container;
+};
 
-export const getLeadContainer = ({ hasChildren }) =>
-  withResponsiveStyles(View, {
+export const getLeadContainer = ({ hasSupports }) => {
+  const LeadContainer = withResponsiveStyles(View, {
     base: () => `
     flex: 1;
     flex-grow: 1;
     padding-left: 10px;
     padding-right: 10px;
-    width: ${hasChildren ? "auto" : "100%"};
+    width: ${hasSupports ? "auto" : "100%"};
   `,
     mediumUp: () => {
-      const withoutChildrenStyle = `
+      const withoutSupportsStyle = `
       flex-grow: 0;
       padding-left: 0;
       padding-right: 0;
     `;
-      const withChildrenStyle = `
+      const withSupportsStyle = `
       flex-grow: 3;
       padding-left: 10px;
       padding-right: 10px;
     `;
       return `
-      ${hasChildren ? withChildrenStyle : withoutChildrenStyle}
+      ${hasSupports ? withSupportsStyle : withoutSupportsStyle}
     `;
     }
   });
+  LeadContainer.displayName = "LeadContainer";
+  return LeadContainer;
+};

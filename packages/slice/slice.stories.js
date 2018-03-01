@@ -41,61 +41,64 @@ storiesOf("Primitives/Slice", module)
   ))
   .add("Lead template with one item", () => (
     <LeadSlice
-      lead={() => (
+      lead={
         <View
           style={{
             minHeight: 150,
             backgroundColor: colours[0].backgroundColor
           }}
         />
-      )}
+      }
     />
   ))
   .add("Lead template with two items", () => (
     <LeadSlice
-      lead={() => (
+      lead={
         <View
           style={{
             minHeight: 150,
             backgroundColor: colours[0].backgroundColor
           }}
         />
-      )}
-      child1={() => (
+      }
+      support1={
         <View
+          key={1}
           style={{
             minHeight: 150,
             backgroundColor: colours[1].backgroundColor
           }}
         />
-      )}
+      }
     />
   ))
   .add("Lead template with three items", () => (
     <LeadSlice
-      lead={() => (
+      lead={
         <View
           style={{
             minHeight: 320,
             backgroundColor: colours[0].backgroundColor
           }}
         />
-      )}
-      child1={() => (
+      }
+      support1={
         <View
+          key={1}
           style={{
             minHeight: 150,
             backgroundColor: colours[1].backgroundColor
           }}
         />
-      )}
-      child2={() => (
+      }
+      support2={
         <View
+          key={2}
           style={{
             minHeight: 150,
             backgroundColor: colours[2].backgroundColor
           }}
         />
-      )}
+      }
     />
   ));
