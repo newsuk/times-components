@@ -103,19 +103,22 @@ describe("Ad init", () => {
   });
 
   it("performs bidding and page initialisation once and initialize slot for each request for web", () => {
-    init.initializeBidding = jest.fn();
-    init.scheduleGPTConfiguration = jest.fn();
-    init.scheduleSlotDefine = jest.fn();
 
-    init.init();
-    expect(init.initializeBidding).toHaveBeenCalledTimes(1);
-    expect(init.scheduleGPTConfiguration).toHaveBeenCalledTimes(1);
-    expect(init.scheduleSlotDefine).toHaveBeenCalledTimes(1);
+    const init1 = adInit(initOptions);
+    const init2 = adInit(initOptions);
 
-    init.init();
-    // called once in the first init call, so 1 + 0 = 1
-    expect(init.initializeBidding).toHaveBeenCalledTimes(1);
-    expect(init.scheduleSlotDefine).toHaveBeenCalledTimes(2);
+    jest.spyOn(init1, "doPageAdSetupAsync").mockImplementation(() => {});
+    jest.spyOn(init2, "doPageAdSetupAsync").mockImplementation(() => {});
+    jest.spyOn(init1.gpt, "scheduleSlotDefine").mockImplementation(() => {});
+    jest.spyOn(init2.gpt, "scheduleSlotDefine").mockImplementation(() => {});
+
+    init1.init();
+    init2.init();
+
+    expect(init1.doPageAdSetupAsync).toHaveBeenCalledTimes(1);
+    expect(init2.doPageAdSetupAsync).toHaveBeenCalledTimes(0);
+    expect(init1.gpt.scheduleSlotDefine).toHaveBeenCalledTimes(1);
+    expect(init2.gpt.scheduleSlotDefine).toHaveBeenCalledTimes(1);
   });
 
   it("does not perform bidding request for native", () => {

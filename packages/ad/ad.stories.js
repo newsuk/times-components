@@ -129,52 +129,52 @@ storiesOf("Advertisement", module)
     <Placeholder width={970} height={250} />
   ))
   .add("DOMContext", () => {
-    // script content: `window.global1 = "external value";`
-    const script =
-      "data:text/javascript;charset=utf-8;base64,d2luZG93Lmdsb2JhbDEgPSAiZXh0ZXJuYWwgdmFsdWUiOw==";
+    // script content: `window.global1 = "external value";`dsb2JhbDEgPSAiZXh0ZXJuYWwgdmFsdWUiOw==";
 
     return withOpenInNewWindow(
       <DOMContext
-        scripts={[{ uri: script }]}
         data={{ message: "data value" }}
         init={args => {
           const {
             el,
-            renderComplete,
             data: { message },
             window,
             eventCallback
           } = args;
-          const worked =
-            message === "data value" && window.global1 === "external value";
-          el.innerHTML = `
-            <div style="
-                width: 100%;
-                height: 100%;
-                background: ${worked ? "#8C8" : "#C88"};
-                font-size: 20px;
-                padding: 10px;
-            ">
-              worked=${worked}<br>
-              data.message=${message}<br>
-              window.global1=${window.global1}<br>
-              <button class="renderComplete">call <code>renderComplete()</code></button><br>
-              <button class="logMessages">log messages</button><br>
-              <button class="exception" onclick="throw new Error('bar')"><code>throw new Error("bar");</button><br>
-              <button class="console-error" onclick="console.error('err')"><code>console.error("err");</code></button><br>
-            </div>
-          `;
-          el
-            .getElementsByClassName("renderComplete")[0]
-            .addEventListener("click", renderComplete);
-          el
-            .getElementsByClassName("logMessages")[0]
-            .addEventListener("click", () => {
-              eventCallback("log", "message 1");
-              eventCallback("log", "message 2");
-              eventCallback("log", "message 3");
-              eventCallback("log", "message 4");
-            });
+          return {
+            init() {
+              const worked =
+              message === "data value";
+            el.innerHTML = `
+              <div style="
+                  width: 100%;
+                  height: 100%;
+                  background: ${worked ? "#8C8" : "#C88"};
+                  font-size: 20px;
+                  padding: 10px;
+              ">
+                worked=${worked}<br>
+                data.message=${message}<br>
+                window.global1=${window.global1}<br>
+                <button class="renderComplete">call <code>renderComplete()</code></button><br>
+                <button class="logMessages">log messages</button><br>
+                <button class="exception" onclick="throw new Error('bar')"><code>throw new Error("bar");</button><br>
+                <button class="console-error" onclick="console.error('err')"><code>console.error("err");</code></button><br>
+              </div>
+            `;
+            el
+              .getElementsByClassName("renderComplete")[0]
+              .addEventListener("click", () => { eventCallback("renderComplete") });
+            el
+              .getElementsByClassName("logMessages")[0]
+              .addEventListener("click", () => {
+                eventCallback("log", "message 1");
+                eventCallback("log", "message 2");
+                eventCallback("log", "message 3");
+                eventCallback("log", "message 4");
+              });
+            }
+          }
         }}
         onRenderComplete={action("onRenderComplete")}
         width={300}

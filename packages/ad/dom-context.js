@@ -81,12 +81,14 @@ export default class DOMContext extends PureComponent {
             el: document.getElementsByTagName("div")[0],
             eventCallback: eventCallback,
             data: ${JSON.stringify(data)},
-            platform: "native"
+            platform: "native",
+            window
           }).init();
           </script>
         </body>
       </html>
     `;
+    console.log(html);
     const postMessageBugWorkaround = Platform.select({
       // https://github.com/facebook/react-native/issues/10865
       ios: {
