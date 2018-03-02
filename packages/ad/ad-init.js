@@ -136,10 +136,19 @@ const adInit = args => {
             pubads.setTargeting(keyName, keyValuePairs[keyName]);
           }
         })
-      }
+      },
+
+      waitUntilReady() {
+        return new Promise(resolve =>
+          this.scheduleAction(() => {
+            resolve();
+          })
+        );
+      },
     },
 
     prebid: {
+      // TODO rename to loadPrebidScripts
       setupPrebid(prebidConfig, utils) {
         window.pbjs = window.pbjs || {};
         window.pbjs.que = window.pbjs.que || [];
@@ -152,13 +161,142 @@ const adInit = args => {
         return Promise.all(scriptPromises);
       },
 
-      applyPrebidTargeting(pb) {
+      // TODO rename to someting better
+      initialize(prebidConfig, slots, networkId, adUnit, section, gpt, displayAds) {
+        const amazonAccountID = prebidConfig.bidders.amazon.accountId;
+        const biddingActions = [];
+        window.pbjs.bidderTimeout = prebidConfig.timeout;
+        window.pbjs.bidderSettings = prebidConfig.bidderSettings;
+        // Enable Amazon Bidding
+        if (amazonAccountID) {
+          this.configureApstag();
+          this.initApstag(amazonAccountID, prebidConfig.timeout);
+          // FIXME: at the moment we configure the amazon bids with just one slot (the first one)
+          // because we call init just one time (window.initCalled)
+          biddingActions.push(
+            this.scheduleRequestAmazonBids(
+              slots,
+              amazonAccountID,
+              networkId,
+              adUnit,
+              section
+            )
+          );
+        }
+
+        biddingActions.push(
+          gpt.waitUntilReady(),
+          this.requestPrebidBids(slots)
+        );
+        Promise.all(biddingActions)
+          .then(() => {
+            displayAds(
+              window.googletag,
+              window.pbjs,
+              window.apstag
+            )
+          })
+          .catch(err => console.error("error loading the ads", err)); // eslint-disable-line no-console
+      },
+      configureApstag() {
+        // NOTE: this is Amazon code, change it carefully
+        window.apstag = {
+          init() {
+            this.addToQueue("i", arguments); // eslint-disable-line prefer-rest-params
+          },
+          fetchBids() {
+            this.addToQueue("f", arguments); // eslint-disable-line prefer-rest-params
+          },
+          setDisplayBids() { },
+          targetingKeys() {
+            return [];
+          },
+          addToQueue(action, d) {
+            this._Q.push([action, d]); // eslint-disable-line no-underscore-dangle
+          },
+          _Q: []
+        };
+      },
+      //TODO merge with configureApstag?
+      initApstag(amazonAccountID, timeout) {
+        window.apstag.init({
+          pubID: amazonAccountID,
+          adServer: "googletag",
+          bidTimeout: timeout
+        });
+      },
+      getAmazonConfig(adSlots, networkId, adUnit, section) {
+        const adUnitPathParts = [networkId, adUnit];
+        if (section) {
+          adUnitPathParts.push(section);
+        }
+        const adUnitPath = this.getAdUnitPath(adUnitPathParts);
+        return adSlots.map(slot => ({
+          slotID: slot.code,
+          slotName: adUnitPath,
+          sizes: slot.sizes
+        }));
+      },
+      getAdUnitPath(params) {
+        return params.reduce(
+          (acc, cur, index) => (index === 1 ? `/${acc}/${cur}` : `${acc}/${cur}`)
+        );
+      },
+      scheduleRequestAmazonBids(
+        adsSlots,
+        amazonPudID,
+        networkId,
+        adUnit,
+        section
+      ) {
+        return new Promise(resolve => {
+          const amazonSlots = this.getAmazonConfig(
+            adsSlots,
+            networkId,
+            adUnit,
+            section
+          );
+          window.apstag.fetchBids({ slots: amazonSlots }, aBids => {
+            resolve(aBids);
+          });
+        });
+      },
+      schedulePrebidAction(action) {
+        window.pbjs.que.push(action);
+      },
+      setAdUnits(adsSlots) {
+        this.schedulePrebidAction(() => {
+          adsSlots.forEach(slot => window.pbjs.removeAdUnit(slot.code));
+          // TODO: check for clone
+          window.pbjs.addAdUnits(adsSlots);
+        });
+      },
+      requestPrebidBids(slots) {
+        return new Promise(resolve => {
+          this.schedulePrebidAction(() => {
+            this.setAdUnits(window.pbjs, slots);
+            window.pbjs.requestBids({
+              bidsBackHandler(bids) {
+                resolve(bids);
+              }
+            });
+          });
+        });
+      },
+
+      applyPrebidTargeting() {
         try {
-          console.log("PREBIDDING COMPLETE!", window.gs_channels);
-          pb.enableSendAllBids();
-          pb.setTargetingForGPTAsync();
+          console.log("PREBIDDING COMPLETE!", window.pbjs);
+          window.pbjs.enableSendAllBids();
+          window.pbjs.setTargetingForGPTAsync();
         } catch (ex) {
           console.error("Set Targeting for GTP Async with prebid failed:", ex); // eslint-disable-line no-console
+        }
+      },
+      applyAmazonTargeting() {
+        if (window.apstag) {
+          console.log("Amazon bids done");
+          window.apstag.setDisplayBids();
         }
       },
     },
@@ -190,96 +328,9 @@ const adInit = args => {
 
 
 
+    //TODO delete
     scheduleGPTAction(gtag, label, action) {
       gtag.cmd.push(action);
-    },
-    schedulePrebidAction(pb, label, action) {
-      pb.que.push(action);
-    },
-    getAdUnitPath(params) {
-      return params.reduce(
-        (acc, cur, index) => (index === 1 ? `/${acc}/${cur}` : `${acc}/${cur}`)
-      );
-    },
-    setAdUnits(pb, adsSlots) {
-      this.schedulePrebidAction(pb, "set ad unit", () => {
-        adsSlots.forEach(slot => pb.removeAdUnit(slot.code));
-        // TODO: check for clone
-        pb.addAdUnits(adsSlots);
-      });
-    },
-    configureApstag() {
-      // NOTE: this is Amazon code, change it carefully
-      window.apstag = {
-        init() {
-          this.addToQueue("i", arguments); // eslint-disable-line prefer-rest-params
-        },
-        fetchBids() {
-          this.addToQueue("f", arguments); // eslint-disable-line prefer-rest-params
-        },
-        setDisplayBids() { },
-        targetingKeys() {
-          return [];
-        },
-        addToQueue(action, d) {
-          this._Q.push([action, d]); // eslint-disable-line no-underscore-dangle
-        },
-        _Q: []
-      };
-    },
-    initApstag(amazonAccountID, timeout) {
-      window.apstag.init({
-        pubID: amazonAccountID,
-        adServer: "googletag",
-        bidTimeout: timeout
-      });
-    },
-    getAmazonConfig(adSlots, networkId, adUnit, section) {
-      const adUnitPathParts = [networkId, adUnit];
-      if (section) {
-        adUnitPathParts.push(section);
-      }
-      const adUnitPath = this.getAdUnitPath(adUnitPathParts);
-      return adSlots.map(slot => ({
-        slotID: slot.code,
-        slotName: adUnitPath,
-        sizes: slot.sizes
-      }));
-    },
-    scheduleRequestAmazonBids(
-      adsSlots,
-      amazonPudID,
-      networkId,
-      adUnit,
-      section
-    ) {
-      return new Promise(resolve => {
-        const amazonSlots = this.getAmazonConfig(
-          adsSlots,
-          networkId,
-          adUnit,
-          section
-        );
-        window.apstag.fetchBids({ slots: amazonSlots }, aBids => {
-          resolve(aBids);
-        });
-      });
-    },
-    requestPrebidBids(pb, slots) {
-      return new Promise(resolve => {
-        this.schedulePrebidAction(pb, "request bid", () => {
-          this.setAdUnits(pb, slots);
-          pb.requestBids({
-            bidsBackHandler(bids) {
-              resolve(bids);
-            }
-          });
-        });
-      });
-    },
-    configurePrebid(prebid, prebidOptions) {
-      prebid.bidderTimeout = prebidOptions.timeout; // eslint-disable-line no-param-reassign
-      prebid.bidderSettings = prebidOptions.bidderSettings; // eslint-disable-line no-param-reassign
     },
     scheduleGPTConfiguration(gtag, pageTargeting) {
       this.scheduleGPTAction(gtag, "set page targeting ok", () => {
@@ -302,33 +353,12 @@ const adInit = args => {
         //   );
       });
     },
-    dfpReady(gtag) {
-      return new Promise(resolve =>
-        this.scheduleGPTAction(gtag, "ready", () => {
-          resolve("googletag ready");
-        })
-      );
-    },
-    applyAmazonTargeting() {
-      try {
-        if (window.apstag) {
-          window.apstag.setDisplayBids();
-        }
-      } catch (exception) {
-        /* eslint-disable no-console */
-        console.error(
-          "Set Targeting for GPT Async with amazon failed:",
-          exception
-        );
-        /* eslint-enable no-console */
-      }
-    },
-    displayAds(gtag, pb) {
+    displayAds() {
       if (platform === "web") {
-        this.prebid.applyPrebidTargeting(pb);
-        this.applyAmazonTargeting();
+        this.prebid.applyPrebidTargeting();
+        this.prebid.applyAmazonTargeting();
       }
-      gtag.pubads().refresh();
+      window.googletag.pubads().refresh();
     },
     scheduleSlotDefine(
       gtag,
@@ -378,42 +408,6 @@ const adInit = args => {
     initGlobals() {
       window.adsSlot = [];
     },
-    initializeBidding(prebidConfig, slots, networkId, adUnit, section) {
-      const amazonAccountID = prebidConfig.bidders.amazon.accountId;
-      const biddingActions = [];
-      this.configurePrebid(window.pbjs, prebidConfig);
-      // Enable Amazon Bidding
-      if (amazonAccountID) {
-        this.configureApstag();
-        this.initApstag(amazonAccountID, prebidConfig.timeout);
-        // FIXME: at the moment we configure the amazon bids with just one slot (the first one)
-        // because we call init just one time (window.initCalled)
-        biddingActions.push(
-          this.scheduleRequestAmazonBids(
-            slots,
-            amazonAccountID,
-            networkId,
-            adUnit,
-            section
-          )
-        );
-      }
-
-      biddingActions.push(
-        this.dfpReady(window.googletag),
-        this.requestPrebidBids(window.pbjs, slots)
-      );
-      Promise.all(biddingActions)
-        .then(
-          this.displayAds.bind(
-            this,
-            window.googletag,
-            window.pbjs,
-            window.apstag
-          )
-        )
-        .catch(err => console.error("error loading the ads", err)); // eslint-disable-line no-console
-    },
     init() {
       const {
         config: slotConfig,
@@ -433,21 +427,25 @@ const adInit = args => {
         Promise.all([
           this.gpt.setupGPT(this.utils),
           this.grapeshot.setupGrapeshot(this.gpt, this.utils),
+          // only setup on web
           this.prebid.setupPrebid(prebidConfig, this.utils)
         ]);
 
 
         if (platform === "web") {
-          this.initializeBidding(
+          //TODO rationalise arguments
+          this.prebid.initialize(
             prebidConfig,
             slots,
             networkId,
             adUnit,
-            section
+            section,
+            this.gpt,
+            this.displayAds.bind(this)
           );
         } else {
           this.dfpReady(window.googletag).then(
-            this.displayAds.bind(this, window.googletag)
+            this.displayAds.bind(this)
           );
         }
 
