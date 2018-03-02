@@ -11,6 +11,8 @@ import {
   SummaryContainer
 } from "./styles/responsive";
 
+import withTrackingContext from "./related-articles-tracking-context";
+
 const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles || articles.length === 0) return null;
 
@@ -42,4 +44,4 @@ const RelatedArticles = ({ articles, onPress, template }) => {
 RelatedArticles.propTypes = relatedArticlesPropTypes;
 RelatedArticles.defaultProps = defaultProps;
 
-export default RelatedArticles;
+export default withTrackingContext(RelatedArticles);

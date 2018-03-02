@@ -12,7 +12,7 @@ import articleFixtureNoStandfirstNoFlags from "../fixtures/no-standfirst-no-flag
 import articleFixtureNoLabelNoFlags from "../fixtures/no-label-no-flags.json";
 import articleFixtureNoLabelNoFlagsNoStandFirst from "../fixtures/no-label-no-flags-no-standfirst.json";
 
-module.exports = () => {
+export default () => {
   const realIntl = Intl;
 
   const adConfig = {

@@ -1475,3 +1475,141 @@ exports[`Related articles test on web Related articles renders two related artic
   </div>
 </div>
 `;
+
+exports[`Related articles test on web tracker sends analytics even if no related articles are rendered 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
+exports[`Related articles test on web tracker sends analytics if a single related article is rendered 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
+            "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+            "role": "default-1",
+          },
+        ],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
+exports[`Related articles test on web tracker sends analytics if a single related article with no byline is rendered 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "",
+            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
+            "id": "08604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+            "role": "default-1",
+          },
+        ],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
+exports[`Related articles test on web tracker sends analytics if three related articles are rendered 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
+            "id": "58604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+            "role": "default-1",
+          },
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Bayeux Tapestry to be displayed in Britain",
+            "id": "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2018-01-17T12:00:00.000Z",
+            "role": "default-2",
+          },
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Bayeux Tapestry to be displayed in Britain",
+            "id": "8b47c1b8-fb05-11e7-a987-7fcf5e99898c",
+            "publishedTime": "2018-01-17T12:00:00.000Z",
+            "role": "default-3",
+          },
+        ],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
+exports[`Related articles test on web tracker sends analytics if two related articles are rendered 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
+            "id": "58604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+            "role": "default-1",
+          },
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Bayeux Tapestry to be displayed in Britain",
+            "id": "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2018-01-17T12:00:00.000Z",
+            "role": "default-2",
+          },
+        ],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;

@@ -18,7 +18,7 @@ const withTrackingContext = (
   {
     getAttrs = () => ({}),
     trackingObjectName = "",
-    isDataReady
+    isDataReady = ({ isLoading }) => !isLoading
   }: TrackingContextObjectType = {}
 ) => {
   const componentName = getDisplayName(WrappedComponent);
@@ -66,7 +66,7 @@ const withTrackingContext = (
 
     attemptTrackPageEvent(props: TrackingContextPropsType) {
       if (
-        (!isDataReady || isDataReady(props)) &&
+        isDataReady(props) &&
         this.isRootTrackingContext() &&
         this.pageEventTriggered === false
       ) {

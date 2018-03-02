@@ -1,57 +1,48 @@
 import React from "react";
-import { StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import Gradient from "@times-components/gradient";
-import { ImageContainer, SummaryContainer, CardContainer } from "./card-styles";
+import {
+  loadingPropTypes,
+  loadingDefaultProps
+} from "./card-loading-proptypes";
+import {
+  CardContainer,
+  getChildContainer,
+  ImageContainer
+} from "./styles/responsive";
+import styles from "./styles/shared";
 
-const gradientStyles = StyleSheet.create({
-  headerContainer: {
-    height: 24,
-    marginBottom: 10,
-    maxWidth: 300
-  },
-  textContainer: {
-    height: 10,
-    marginBottom: 10
-  },
-  lastBar: {
-    maxWidth: 240,
-    marginBottom: 0
-  }
-});
-
-const Loading = ({ aspectRatio, showImage }) => {
-  const imageComponent = (
-    <ImageContainer>
-      <Image uri="" aspectRatio={aspectRatio} />
-    </ImageContainer>
-  );
+const Loading = ({ aspectRatio, childRatio, showImage }) => {
+  const ChildContainer = getChildContainer({ childRatio });
 
   return (
     <CardContainer>
-      {showImage && imageComponent}
-      <SummaryContainer>
-        <Gradient style={[gradientStyles.headerContainer]} degrees={264} />
-        <Gradient style={[gradientStyles.textContainer]} degrees={267} />
-        <Gradient style={[gradientStyles.textContainer]} degrees={267} />
+      {showImage && (
+        <ImageContainer>
+          <Image aspectRatio={aspectRatio} />
+        </ImageContainer>
+      )}
+      <ChildContainer>
+        <Gradient style={[styles.headerContainer]} degrees={264} />
+        <Gradient style={[styles.textContainer]} degrees={267} />
+        <Gradient style={[styles.textContainer]} degrees={267} />
         <Gradient
-          style={[gradientStyles.textContainer, gradientStyles.lastBar]}
+          style={[styles.textContainer, styles.lastBar]}
           degrees={267}
         />
-      </SummaryContainer>
+      </ChildContainer>
     </CardContainer>
   );
 };
 
-Loading.defaultProps = {
-  aspectRatio: 3 / 2,
-  showImage: false
-};
-
 Loading.propTypes = {
-  aspectRatio: PropTypes.number,
-  showImage: PropTypes.bool
+  ...loadingPropTypes,
+  childRatio: PropTypes.number
+};
+Loading.defaultProps = {
+  ...loadingDefaultProps,
+  childRatio: 1
 };
 
 export default Loading;
