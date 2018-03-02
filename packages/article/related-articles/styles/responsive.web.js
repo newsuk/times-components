@@ -6,9 +6,9 @@ export const StyledRelatedArticlesHeading = withResponsiveStyles(View, {
   base: () => `
     align-items: center;
     border-style: solid;
-    border-bottom-color: ${colours.functional.keyline};
+    border-bottom-color: ${colours.functional.alto};
     border-bottom-width: ${StyleSheet.hairlineWidth}px;
-    border-top-color: ${colours.functional.keyline};
+    border-top-color: ${colours.functional.alto};
     border-top-width: ${StyleSheet.hairlineWidth}px;
     display: flex;
     height: 55px;

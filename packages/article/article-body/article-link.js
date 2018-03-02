@@ -3,7 +3,7 @@ import { TextLink } from "@times-components/link";
 import { colours, fonts } from "@times-components/styleguide";
 
 const linkStyles = {
-  color: colours.functional.blue,
+  color: colours.functional.azureBlue,
   fontFamily: fonts.bodyRegular,
   lineHeight: 26,
   fontSize: 17,

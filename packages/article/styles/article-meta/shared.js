@@ -4,7 +4,7 @@ import { fonts, colours } from "@times-components/styleguide";
 const sharedStyles = {
   articleMeta: {
     marginBottom: 20,
-    borderBottomColor: colours.functional.keyline,
+    borderBottomColor: colours.functional.alto,
     borderBottomWidth: StyleSheet.hairlineWidth,
     paddingLeft: 0,
     paddingRight: 0,
@@ -15,11 +15,11 @@ const sharedStyles = {
     paddingTop: 9
   },
   articleMetaElement: {
-    borderTopColor: colours.functional.keyline,
+    borderTopColor: colours.functional.alto,
     borderTopWidth: StyleSheet.hairlineWidth
   },
   datePublication: {
-    color: colours.functional.greyMid,
+    color: colours.functional.doveGrey,
     fontSize: 13,
     lineHeight: 15,
     fontFamily: fonts.supporting
@@ -27,7 +27,7 @@ const sharedStyles = {
   byline: {
     fontSize: 13,
     fontFamily: fonts.supporting,
-    color: colours.functional.greyMid,
+    color: colours.functional.doveGrey,
     lineHeight: 15
   }
 };

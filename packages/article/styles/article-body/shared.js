@@ -9,7 +9,7 @@ const sharedStyles = {
     lineHeight: 26,
     fontSize: 17,
     marginBottom: 25,
-    color: colours.functional.greyDark
+    color: colours.functional.mineShaftGrey
   },
   articleMainContentRow: {
     paddingLeft: 10,

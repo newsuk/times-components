@@ -1,16 +1,14 @@
 const functionalColours = {
-  black: "#1D1D1B",
-  blue: "#006699",
-  deepOrange: "#E34605",
-  error: "#DB133B",
-  greyDark: "#333333",
-  greyMid: "#696969",
-  gunmetalGrey: "#4D4D4D",
-  keyline: "#DBDBDB",
-  muletaRed: "#C51D24",
+  alto: "#DBDBDB", // Keylines and borders
+  azureBlue: "#006699", // Buttons and links
+  cardinalRed: "#C51D24", // Exclusive article flag
+  doveGrey: "#696969", // Bylines, dates and other auxiliary text
+  mineShaftGrey: "#333333", // Headlines, titles and paragraph text
   offWhite: "#F9F9F9",
-  pictonBlue: "#3C81BE",
-  red: "#CC0000",
+  bostonBlue: "#3C81BE", // Updated article flag
+  timesBlack: "#1D1D1B", // Times brand colour
+  trinidadOrange: "#E34605", // New article flag
+  tundoraGrey: "#4D4D4D", // Sponsored article flag
   white: "#FFFFFF"
 };
 
