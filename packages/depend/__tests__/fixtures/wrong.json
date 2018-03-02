@@ -1,0 +1,19 @@
+[
+  [
+    "foo.json",
+    {
+      "name": "foo",
+      "version": "0.0.2"
+    }
+  ],
+  [
+    "bar.json",
+    {
+      "name": "bar",
+      "version": "0.0.1",
+      "dependencies": {
+        "foo": "0.0.1"
+      }
+    }
+  ]
+]

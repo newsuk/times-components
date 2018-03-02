@@ -1,0 +1,33 @@
+[
+  [
+    "foo.json",
+    {
+      "name": "foo",
+      "version": "0.0.1",
+      "dependencies": {
+        "a": "1.0.0",
+        "b": "2.0.0"
+      },
+      "devDependencies": {
+        "c": "3.0.0",
+        "d": "4.0.0"
+      }
+    }
+  ],
+  [
+    "bar.json",
+    {
+      "name": "bar",
+      "version": "0.0.1",
+      "dependencies": {
+        "foo": "0.0.1",
+        "a": "1.0.0",
+        "b": "2.0.0"
+      },
+      "devDependencies": {
+        "c": "3.0.0",
+        "d": "4.0.0"
+      }
+    }
+  ]
+]

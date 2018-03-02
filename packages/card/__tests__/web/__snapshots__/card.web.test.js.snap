@@ -63,12 +63,12 @@ exports[`Card test on web renders 1`] = `
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
     margin-bottom: 0;
+    margin-right: 15px;
   }
 }
 
 @media (min-width:768px) {
   .c3 {
-    padding-left: 15px;
     -webkit-box-flex: 2.7;
     -webkit-flex-grow: 2.7;
     -ms-flex-positive: 2.7;
@@ -185,12 +185,12 @@ exports[`Card test on web renders loading state 1`] = `
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
     margin-bottom: 0;
+    margin-right: 15px;
   }
 }
 
 @media (min-width:768px) {
   .c2 {
-    padding-left: 15px;
     -webkit-box-flex: 2.7;
     -webkit-flex-grow: 2.7;
     -ms-flex-positive: 2.7;
@@ -286,7 +286,7 @@ exports[`Card test on web renders loading state 1`] = `
         }
       />
       <div
-        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-1or9b2r rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-1or9b2r rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-p1pxzi rn-maxWidth-1fnot1l rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
         style={
           Object {
             "backgroundImage": "linear-gradient(267deg, #f9f9f9 0%, #ededed 100%)",
@@ -322,7 +322,6 @@ exports[`Card test on web renders without image 1`] = `
 
 @media (min-width:768px) {
   .c2 {
-    padding-left: 15px;
     -webkit-box-flex: 2.7;
     -webkit-flex-grow: 2.7;
     -ms-flex-positive: 2.7;
@@ -382,7 +381,6 @@ exports[`Card test on web renders without image url 1`] = `
 
 @media (min-width:768px) {
   .c2 {
-    padding-left: 15px;
     -webkit-box-flex: 2.7;
     -webkit-flex-grow: 2.7;
     -ms-flex-positive: 2.7;

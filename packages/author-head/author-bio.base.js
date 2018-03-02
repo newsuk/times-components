@@ -2,10 +2,11 @@ import React from "react";
 import { StyleSheet, Text } from "react-native";
 import PropTypes from "prop-types";
 import { renderTrees, treePropType } from "@times-components/markup";
+import { fonts } from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
   bio: {
-    fontFamily: "TimesDigitalW04",
+    fontFamily: fonts.body,
     textAlign: "center",
     fontSize: 16,
     lineHeight: 26,

@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { fonts } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 import globalStyle from "../shared";
 
@@ -9,7 +10,7 @@ const androidStyles = {
   },
   articleTextElement: {
     ...sharedStyles.articleTextElement,
-    fontFamily: "TimesDigitalW04",
+    fontFamily: fonts.body,
     fontSize: 17,
     fontStyle: "normal",
     marginBottom: 20

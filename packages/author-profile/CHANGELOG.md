@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.45.0"></a>
+# [0.45.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.43.7...@times-components/author-profile@0.45.0) (2018-03-01)
+
+
+### Features
+
+* add related articles tracking ([#666](https://github.com/newsuk/times-components/issues/666)) ([33146c2](https://github.com/newsuk/times-components/commit/33146c2))
+
+
+
+
+<a name="0.44.0"></a>
+# [0.44.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.43.7...@times-components/author-profile@0.44.0) (2018-03-01)
+
+
+### Features
+
+* add related articles tracking ([#666](https://github.com/newsuk/times-components/issues/666)) ([33146c2](https://github.com/newsuk/times-components/commit/33146c2))
+
+
+
+
+<a name="0.43.7"></a>
+## [0.43.7](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.43.6...@times-components/author-profile@0.43.7) (2018-03-01)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.43.6"></a>
+## [0.43.6](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.43.5...@times-components/author-profile@0.43.6) (2018-02-28)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.43.5"></a>
+## [0.43.5](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.43.4...@times-components/author-profile@0.43.5) (2018-02-28)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.43.4"></a>
+## [0.43.4](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.43.3...@times-components/author-profile@0.43.4) (2018-02-28)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
 <a name="0.43.3"></a>
 ## [0.43.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.43.2...@times-components/author-profile@0.43.3) (2018-02-26)
 

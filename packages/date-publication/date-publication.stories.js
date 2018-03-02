@@ -1,6 +1,8 @@
 import React from "react";
 import { Text, StyleSheet } from "react-native";
 import { storiesOf } from "@storybook/react-native";
+import { checkA11y } from "@storybook/addon-a11y";
+import { fonts } from "@times-components/styleguide";
 import DatePublication from "./date-publication";
 
 const styles = StyleSheet.create({
@@ -8,11 +10,12 @@ const styles = StyleSheet.create({
     color: "#696969",
     fontSize: 13,
     lineHeight: 15,
-    fontFamily: "GillSansMTStd-Medium"
+    fontFamily: fonts.supporting
   }
 });
 
 storiesOf("Primitives/DatePublication", module)
+  .addDecorator(checkA11y)
   .add("standard DatePublication", () => (
     <Text style={styles.text}>
       <DatePublication

@@ -181,3 +181,19 @@ exports[`Tracking tests on web WithTrackingContext forwards props to wrapped com
 exports[`Tracking tests on web WithTrackingContext raises error when analyticsStream not supplied to top-level context 1`] = `"Missing prop analyticsStream of WithTrackingContext"`;
 
 exports[`Tracking tests on web WithTrackingContext raises error when tracking object not supplied to top-level context 1`] = `"Missing argument trackingObjectName of withTrackingContext()"`;
+
+exports[`Tracking tests on web WithTrackingContext tracks nested events 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "a": "a",
+        "eventTime": "2018-03-02T11:17:27.504Z",
+      },
+      "component": "Page",
+      "object": "tracker1",
+    },
+  ],
+]
+`;

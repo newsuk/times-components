@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, Image, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { fonts } from "@times-components/styleguide";
 
 import ResetIcon from "./reset-icon";
 
@@ -20,7 +21,7 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: 20,
     marginBottom: 5,
-    fontFamily: "TimesModern-Bold"
+    fontFamily: fonts.headline
   },
   errorBody: {
     color: "white",
@@ -28,7 +29,7 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     opacity: 0.8,
     fontSize: 14,
-    fontFamily: "TimesDigitalW04"
+    fontFamily: fonts.body
   },
   resetButton: {
     flexDirection: "row",
@@ -39,7 +40,7 @@ const styles = StyleSheet.create({
   },
   resetText: {
     color: "white",
-    fontFamily: "GillSansMTStd-Medium",
+    fontFamily: fonts.supporting,
     fontSize: 13,
     lineHeight: 15,
     position: "relative",

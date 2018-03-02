@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colours } from "@times-components/styleguide";
+import { colours, fonts } from "@times-components/styleguide";
 
 export default StyleSheet.create({
   titleContainer: {
@@ -16,14 +16,14 @@ export default StyleSheet.create({
     paddingRight: 10
   },
   title: {
-    fontFamily: "TimesModern-Bold",
+    fontFamily: fonts.headline,
     fontSize: 26,
     color: colours.functional.greyDark
   },
   headline: {
     color: colours.functional.greyDark,
     marginBottom: 5,
-    fontFamily: "TimesModern-Bold",
+    fontFamily: fonts.headline,
     fontWeight: "400"
   },
   imageContainer: {

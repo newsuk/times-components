@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`depend graph printer tests should handle empty filter 1`] = `
+"digraph G {
+  \\"x@1.0.0\\" -> \\"z@1.0.0\\";
+  \\"y@1.0.0\\" -> \\"z@1.0.0\\";
+}"
+`;
+
+exports[`depend graph printer tests should handle left filter 1`] = `
+"digraph G {
+  \\"x@1.0.0\\" -> \\"z@1.0.0\\";
+}"
+`;
+
+exports[`depend graph printer tests should handle right filter 1`] = `
+"digraph G {
+  \\"x@1.0.0\\" -> \\"z@1.0.0\\";
+  \\"y@1.0.0\\" -> \\"z@1.0.0\\";
+}"
+`;
