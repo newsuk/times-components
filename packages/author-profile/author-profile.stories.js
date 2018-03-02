@@ -159,7 +159,13 @@ storiesOf("Pages/AuthorProfile", module)
 
       if (uri) {
         const client = new ApolloClient({
-          link: new HttpLink({ uri }),
+          link: new HttpLink({
+            uri,
+            useGETForQueries: true,
+            headers: {
+              "content-type": "application/x-www-form-urlencoded"
+            }
+          }),
           cache: new InMemoryCache({
             fragmentMatcher
           })
