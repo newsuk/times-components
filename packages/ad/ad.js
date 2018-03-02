@@ -66,13 +66,11 @@ class Ad extends Component {
       ? { width: 0, height: 0 }
       : { height: this.config.maxSizes.height };
 
-    const platform = Platform.OS === "web" ? "web" : "native";
     const webviewComponent = (
       <DOMContext
         data={data}
         baseUrl={this.props.baseUrl}
         init={adInit}
-        platform={platform}
         onRenderComplete={this.setAdReady}
         {...sizeProps}
       />
