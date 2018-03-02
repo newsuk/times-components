@@ -49,16 +49,14 @@ storiesOf("Primitives/Icons", module).add("Icons", () => (
       <IconTwitter
         width={50}
         height={50}
-        fillColour={color("Icon color", IconTwitter.defaultProps.fillColour)}
-      />
+        fillColour={color("Twitter color", IconTwitter.defaultProps.fillColour)}/>
       <Text style={styles.label}>Twitter</Text>
     </View>
     <View style={styles.icon}>
       <IconVideo
         width={50}
         height={50}
-        fillColour={color("Video color", IconVideo.defaultProps.fillColour)}
-      />
+        fillColour={color("Video color", IconVideo.defaultProps.fillColour)}/>
       <Text style={styles.label}>Video</Text>
     </View>
   </View>
