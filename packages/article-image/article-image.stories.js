@@ -1,6 +1,7 @@
 import "react-native";
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
+import { checkA11y } from "@storybook/addon-a11y";
 import ArticleImage from "./article-image";
 
 const primaryImage = require("./fixtures/primary-image.json").fixture;
@@ -11,6 +12,7 @@ const portraitInlineImage = require("./fixtures/portrait-inline-image.json")
   .fixture;
 
 storiesOf("Primitives/ArticleImage", module)
+  .addDecorator(checkA11y)
   .add("Primary", () => (
     <ArticleImage
       imageOptions={primaryImage.imageOptions}

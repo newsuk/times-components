@@ -1,6 +1,7 @@
 import React from "react";
 import { Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
+import { checkA11y } from "@storybook/addon-a11y";
 import { fonts } from "@times-components/styleguide";
 import ArticleByline from "./article-byline";
 
@@ -22,6 +23,7 @@ const bylineLinkStyles = {
 };
 
 storiesOf("Primitives/ArticleByline", module)
+  .addDecorator(checkA11y)
   .add("ArticleByline with a single author", () => (
     <Text style={bylineStyles}>
       <ArticleByline ast={authorsAST.singleAuthor} />

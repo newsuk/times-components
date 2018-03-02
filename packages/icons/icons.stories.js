@@ -1,6 +1,7 @@
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
+import { checkA11y } from "@storybook/addon-a11y";
 import { fonts } from "@times-components/styleguide";
 import { color } from "@storybook/addon-knobs";
 import { IconDiamond, IconTwitter, IconVideo } from "./icons";
@@ -35,7 +36,10 @@ const styles = StyleSheet.create({
   }
 });
 
-storiesOf("Primitives/Icons", module).add("Icons", () => (
+
+storiesOf("Primitives/Icons", module)
+  .addDecorator(checkA11y)
+  .add("Icons", () => (
   <View style={styles.wrapper}>
     <View style={styles.icon}>
       <IconDiamond

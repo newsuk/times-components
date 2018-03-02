@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
 
 export const propTypes = {
-  lead: PropTypes.func.isRequired,
-  child1: PropTypes.func,
-  child2: PropTypes.func
+  lead: PropTypes.node.isRequired,
+  support1: PropTypes.node,
+  support2: PropTypes.node
 };
 
 export const defaultProps = {
-  child1: () => null,
-  child2: () => null
+  support1: null,
+  support2: null
 };

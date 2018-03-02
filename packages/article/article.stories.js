@@ -5,6 +5,7 @@ import { Platform } from "react-native";
 import { addTypenameToDocument } from "apollo-utilities";
 
 import { decorateAction } from "@storybook/addon-actions";
+import { checkA11y } from "@storybook/addon-a11y";
 import { ArticleProvider } from "@times-components/provider";
 import { MockedProvider } from "@times-components/utils/graphql";
 import { query as articleQuery } from "@times-components/provider/article";
@@ -40,6 +41,7 @@ const preventDefaultedAction = decorateAction([
 ]);
 
 const createRelatedArticlesProps = fixtureData => ({
+  analyticsStream: storybookReporter,
   articles: fixtureData.relatedArticles,
   template: fixtureData.relatedArticlesLayout.template,
   onPress: preventDefaultedAction("onArticlePress")
@@ -70,6 +72,7 @@ const adConfig = {
 };
 
 storiesOf("Pages/Article", module)
+  .addDecorator(checkA11y)
   .add("Default", () => {
     const props = {
       ...fullArticleFixture.data,

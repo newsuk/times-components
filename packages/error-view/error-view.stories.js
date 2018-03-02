@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import { View, ViewPropTypes, Text, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 import { storiesOf } from "@storybook/react-native";
+import { checkA11y } from "@storybook/addon-a11y";
 import BrightcoveVideo from "@times-components/brightcove-video";
 import ErrorView from "./error-view";
 
@@ -62,6 +63,7 @@ FiresOnError.propTypes = {
 };
 
 storiesOf("Primitives/ErrorView", module)
+  .addDecorator(checkA11y)
   .add("handles a component that errors", () => (
     <ErrorView>
       {({ hasError, error }) =>
