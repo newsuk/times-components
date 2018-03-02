@@ -1,14 +1,16 @@
 import React from "react";
 import { View } from "react-native";
-// @TODO: use TemplateSlice components
-import { Slice } from "@times-components/slice";
-import RelatedArticlesHeading from "./heading";
+import { DefaultSlice, LeadSlice } from "@times-components/slice";
+import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
-import { relatedArticlesPropTypes, defaultProps } from "./proptypes";
 import {
-  RelatedArticleContainer,
-  ImageContainer,
-  SummaryContainer
+  relatedArticlesPropTypes,
+  relatedArticlesDefaultProps
+} from "./related-articles-proptypes";
+import {
+  getImageContainer,
+  getRelatedArticleContainer,
+  getSummaryContainer
 } from "./styles/responsive";
 
 import withTrackingContext from "./related-articles-tracking-context";
@@ -17,9 +19,9 @@ const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles || articles.length === 0) return null;
 
   const articleCount = articles.length;
-  const StyledRelatedArticleContainer = RelatedArticleContainer(articleCount);
-  const StyledImageContainer = ImageContainer(articleCount);
-  const StyledSummaryContainer = SummaryContainer(articleCount);
+  const ImageContainer = getImageContainer({ articleCount });
+  const RelatedArticleContainer = getRelatedArticleContainer({ articleCount });
+  const SummaryContainer = getSummaryContainer({ articleCount });
 
   const renderArticleItems = () =>
     articles.map(article => (
@@ -27,21 +29,37 @@ const RelatedArticles = ({ articles, onPress, template }) => {
         article={article}
         key={article.id}
         onPress={onPress}
-        styledRelatedArticleContainer={StyledRelatedArticleContainer}
-        styledImageContainer={StyledImageContainer}
-        styledSummaryContainer={StyledSummaryContainer}
+        imageContainer={ImageContainer}
+        relatedArticleContainer={RelatedArticleContainer}
+        summaryContainer={SummaryContainer}
       />
     ));
+
+  const renderSlice = () => {
+    switch (template) {
+      case "DEFAULT":
+      default:
+        return <DefaultSlice>{renderArticleItems()}</DefaultSlice>;
+      case "LEAD_AND_TWO":
+        return (
+          <LeadSlice
+            lead={renderArticleItems()[0]}
+            support1={renderArticleItems()[1]}
+            support2={renderArticleItems()[2]}
+          />
+        );
+    }
+  };
 
   return (
     <View style={{ marginTop: 10 }}>
       <RelatedArticlesHeading />
-      <Slice template={template}>{renderArticleItems()}</Slice>
+      {renderSlice()}
     </View>
   );
 };
 
 RelatedArticles.propTypes = relatedArticlesPropTypes;
-RelatedArticles.defaultProps = defaultProps;
+RelatedArticles.defaultProps = relatedArticlesDefaultProps;
 
 export default withTrackingContext(RelatedArticles);

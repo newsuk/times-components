@@ -31,12 +31,12 @@ class CardComponent extends Component {
   render() {
     const {
       children,
-      tabletChildRatio,
       image,
       imageRatio,
       imageSize,
       isLoading,
-      showImage
+      showImage,
+      tabletChildRatio
     } = this.props;
 
     if (isLoading) {
@@ -44,8 +44,8 @@ class CardComponent extends Component {
         <View>
           <Loading
             aspectRatio={imageRatio}
-            tabletChildRatio={tabletChildRatio}
             showImage={showImage}
+            tabletChildRatio={tabletChildRatio}
           />
         </View>
       );

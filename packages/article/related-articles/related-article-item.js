@@ -8,14 +8,14 @@ import ArticleSummary, {
 import Image from "@times-components/image";
 import Link from "@times-components/link";
 import { colours } from "@times-components/styleguide";
-import { relatedArticleItemPropTypes } from "./proptypes";
+import relatedArticleItemPropTypes from "./related-article-item-proptypes";
 import styles from "./styles";
 
 const RelatedArticleItem = ({ article, onPress }) => {
   const {
     byline,
-    label,
     headline,
+    label,
     publishedTime,
     section,
     summary,
@@ -38,13 +38,13 @@ const RelatedArticleItem = ({ article, onPress }) => {
         ) : null}
         <ArticleSummary
           bylineProps={{ ast: byline }}
+          content={() => <ArticleSummaryContent ast={summary} />}
           datePublicationProps={{ date: publishedTime }}
           headline={() => <ArticleSummaryHeadline headline={headline} />}
           labelProps={{
             title: label,
             color: colours.section[section] || colours.section.default
           }}
-          content={() => <ArticleSummaryContent ast={summary} />}
         />
       </View>
     </Link>

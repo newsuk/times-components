@@ -1,13 +1,14 @@
 import { StyleSheet, Text, View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
+import { colours } from "@times-components/styleguide";
 
-export const StyledRelatedArticlesHeading = withResponsiveStyles(View, {
+export const Heading = withResponsiveStyles(View, {
   base: () => `
     align-items: center;
     border-style: solid;
-    border-bottom-color: #dbdbdb;
+    border-bottom-color: ${colours.functional.keyline};
     border-bottom-width: ${StyleSheet.hairlineWidth}px;
-    border-top-color: #dbdbdb;
+    border-top-color: ${colours.functional.keyline};
     border-top-width: ${StyleSheet.hairlineWidth}px;
     display: flex;
     height: 55px;
@@ -20,17 +21,7 @@ export const StyledRelatedArticlesHeading = withResponsiveStyles(View, {
     margin-right: 0;
   `
 });
-
-export const RelatedArticleContainer = articleCount =>
-  withResponsiveStyles(View, {
-    base: () => `
-    display: flex;
-    flex-direction: column;
-  `,
-    mediumUp: () => `
-      flex-direction: ${articleCount === 1 ? "row" : ""};
-  `
-  });
+Heading.displayName = "Heading";
 
 export const ResponsiveHeadline = withResponsiveStyles(Text, {
   base: () => `
@@ -43,9 +34,10 @@ export const ResponsiveHeadline = withResponsiveStyles(Text, {
     line-height: 30px;
   `
 });
+ResponsiveHeadline.displayName = "ResponsiveHeadline";
 
-export const ImageContainer = articleCount =>
-  withResponsiveStyles(View, {
+export const getImageContainer = ({ articleCount }) => {
+  const ImageContainer = withResponsiveStyles(View, {
     base: () => `
     display: ${articleCount === 3 ? "none" : "block"};
     flex-grow: 1;
@@ -60,9 +52,27 @@ export const ImageContainer = articleCount =>
   `
         : `display: block;`
   });
+  ImageContainer.displayName = "ImageContainer";
+  return ImageContainer;
+};
 
-export const SummaryContainer = articleCount =>
-  withResponsiveStyles(View, {
+// replace with Card
+export const getRelatedArticleContainer = ({ articleCount }) => {
+  const RelatedArticleContainer = withResponsiveStyles(View, {
+    base: () => `
+    display: flex;
+    flex-direction: column;
+  `,
+    mediumUp: () => `
+      flex-direction: ${articleCount === 1 ? "row" : "column"};
+  `
+  });
+  RelatedArticleContainer.displayName = "RelatedArticleContainer";
+  return RelatedArticleContainer;
+};
+
+export const getSummaryContainer = ({ articleCount }) => {
+  const SummaryContainer = withResponsiveStyles(View, {
     base: () => `
     flex-grow: 1;
   `,
@@ -75,3 +85,6 @@ export const SummaryContainer = articleCount =>
   `
         : ``
   });
+  SummaryContainer.displayName = "SummaryContainer";
+  return SummaryContainer;
+};

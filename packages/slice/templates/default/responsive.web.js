@@ -10,6 +10,7 @@ export const ChildContainer = withResponsiveStyles(View, {
     padding-right: 10px;
   `,
   mediumUp: () => `
+    flex-basis: 0 !important;
     padding-left: 0;
     padding-right: 0;
   `
