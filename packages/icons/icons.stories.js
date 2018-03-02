@@ -1,7 +1,6 @@
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { fonts } from "@times-components/styleguide";
 import { IconDiamond, IconTwitter, IconVideo } from "./icons";
 
 const borderWidth = 1;
@@ -30,21 +29,15 @@ const styles = StyleSheet.create({
   },
   label: {
     paddingTop: 15,
-    fontFamily: fonts.supporting
+    fontFamily: "GillSansMTStd-Medium"
   }
 });
 
-storiesOf("Primitives/Icons", module)
-  .add("Icons", () => (
-    <View style={styles.wrapper}>
-      <View style={styles.icon}>
-        <IconDiamond width={50} height={50} fillColour="#4D4D4D" />
-        <Text style={styles.label}>Diamond</Text>
-      </View>
-      <View style={styles.icon}>
-        <IconTwitter width={50} height={50} />
-        <Text style={styles.label}>Twitter</Text>
-      </View>
+storiesOf("Icons", module).add("Icons", () => (
+  <View style={styles.wrapper}>
+    <View style={styles.icon}>
+      <IconDiamond width={50} height={50} fillColour="#4D4D4D" />
+      <Text style={styles.label}>Diamond</Text>
     </View>
     <View style={styles.icon}>
       <IconTwitter width={50} height={50} />
