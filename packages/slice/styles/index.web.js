@@ -1,4 +1,3 @@
-// @TODO: delete this file when related articles wired up properly
 import { StyleSheet, View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 import * as defaultComponents from "./default/responsive";
