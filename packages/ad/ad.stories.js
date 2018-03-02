@@ -2,7 +2,6 @@
 import React from "react";
 import { Text, ScrollView, View } from "react-native";
 import { action } from "@storybook/addon-actions";
-import { checkA11y } from "@storybook/addon-a11y";
 import { storiesOf } from "@storybook/react-native";
 import Ad, { AdComposer } from "./ad";
 import Placeholder from "./placeholder";
@@ -41,7 +40,6 @@ const withOpenInNewWindow = children => {
 };
 
 storiesOf("Primitives/Advertisement", module)
-  .addDecorator(checkA11y)
   .add("render one ad - intervention", () =>
     withOpenInNewWindow(<Ad pos="intervention" />)
   )

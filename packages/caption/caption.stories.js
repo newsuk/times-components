@@ -1,7 +1,6 @@
 import "react-native";
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
-import { checkA11y } from "@storybook/addon-a11y";
 import Image from "@times-components/image";
 import Caption from "./caption";
 
@@ -20,7 +19,6 @@ const style = {
 };
 
 storiesOf("Primitives/Caption", module)
-  .addDecorator(checkA11y)
   .add("Without credits", () => <Caption text={captionText} />)
   .add("With credits", () => <Caption text={captionText} credits={credits} />)
   .add("Credits only", () => <Caption credits={credits} />)
