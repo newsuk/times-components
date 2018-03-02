@@ -1,4 +1,4 @@
 {
-  "presets": ["env", "react-native"],
+  "presets": ["react-native"],
   "plugins": [["flow-react-proptypes", { "ignoreNodeModules": true }]]
 }
