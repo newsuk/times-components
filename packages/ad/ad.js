@@ -1,13 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Subscriber } from "react-broadcast";
-import {
-  View,
-  ViewPropTypes,
-  Dimensions,
-  StyleSheet,
-  Platform
-} from "react-native";
+import { View, ViewPropTypes, Dimensions, StyleSheet } from "react-native";
 import { getSlotConfig, getSizeMaps } from "./generate-config";
 import { prebidConfig, getPrebidSlotConfig } from "./prebid-config";
 import Placeholder from "./placeholder";
@@ -66,13 +60,11 @@ class Ad extends Component {
       ? { width: 0, height: 0 }
       : { height: this.config.maxSizes.height };
 
-    const platform = Platform.OS === "web" ? "web" : "native";
     const webviewComponent = (
       <DOMContext
         data={data}
         baseUrl={this.props.baseUrl}
         init={adInit}
-        platform={platform}
         onRenderComplete={this.setAdReady}
         {...sizeProps}
       />

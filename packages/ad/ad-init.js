@@ -3,7 +3,8 @@
 // NOTE: this function is serialised to a string and passed into a webview.
 
 const adInit = args => {
-  const { el, data, platform, eventCallback } = args;
+  const { el, data, platform, eventCallback, window } = args;
+  const { document, setTimeout } = window;
 
   const scriptsInserted = {};
 
@@ -24,10 +25,10 @@ const adInit = args => {
             resolve();
           });
           script.addEventListener("error", () => {
-            reject(`load error for ${scriptUri}`);
+            reject(new Error(`load error for ${scriptUri}`));
           });
           if (timeout) {
-            setTimeout(reject, timeout, `timeout for ${scriptUri}`);
+            setTimeout(reject, timeout, new Error(`timeout for ${scriptUri}`));
           }
         });
       }
@@ -50,9 +51,9 @@ const adInit = args => {
       scheduleSetPageTargetingValues(keyValuePairs) {
         this.scheduleAction(() => {
           const pubads = window.googletag.pubads();
-          for (let keyName in keyValuePairs) {
-            pubads.setTargeting(keyName, keyValuePairs[keyName]);
-          }
+          Object.entries(keyValuePairs).forEach((key, value) => {
+            pubads.setTargeting(key, value);
+          });
         });
       },
 
@@ -98,9 +99,6 @@ const adInit = args => {
             slot.setTargeting(entry[0], entry[1])
           );
           window.googletag.display(containerID);
-          // TODO: probably we should move this callback inside slotRenderEnded event handler
-          // this callback update the Ad component setting the height
-          eventCallback("renderComplete");
         });
       },
 
@@ -141,7 +139,7 @@ const adInit = args => {
             "https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js"
           )
         ];
-        if (prebidConfig.bidders.amazon.accountId) {
+        if (prebidConfig.bidders.amazon && prebidConfig.bidders.amazon.accountId) {
           scriptPromises.push(
             utils.loadScript("https://c.amazon-adsystem.com/aax2/apstag.js")
           );
@@ -150,7 +148,7 @@ const adInit = args => {
       },
 
       requestBidsAsync(prebidConfig, slots, networkId, adUnit, section, gpt) {
-        const amazonAccountID = prebidConfig.bidders.amazon.accountId;
+        const amazonAccountID = prebidConfig.bidders.amazon && prebidConfig.bidders.amazon.accountId;
         const biddingActions = [];
         window.pbjs.bidderTimeout = prebidConfig.timeout;
         window.pbjs.bidderSettings = prebidConfig.bidderSettings;
@@ -298,9 +296,46 @@ const adInit = args => {
       }
     },
 
-    //
-    // ABANDON HOPE BELOW HERE
-    //
+    doPageAdSetupAsync() {
+      const {
+        config: slotConfig,
+        networkId,
+        adUnit,
+        prebidConfig,
+        section,
+        slots,
+        slotTargeting
+      } = data;
+      const parallelActions = [
+        this.gpt.setupAsync(this.utils),
+        this.grapeshot.setupAsync(this.gpt, this.utils)
+      ];
+
+      const enablePrebidding = platform === "web";
+      if (enablePrebidding) {
+        parallelActions.push(
+          this.prebid.setupAsync(prebidConfig, this.utils),
+          this.prebid.requestBidsAsync(
+            prebidConfig,
+            slots,
+            networkId,
+            adUnit,
+            section,
+            this.gpt
+          )
+        );
+      }
+
+      return Promise.all(parallelActions)
+        .then(this.gpt.waitUntilReady())
+        .then(() => {
+          if (enablePrebidding) {
+            this.prebid.applyPrebidTargeting();
+            this.prebid.applyAmazonTargeting();
+          }
+          this.gpt.displayAds();
+        });
+    },
 
     init() {
       const {
@@ -310,42 +345,14 @@ const adInit = args => {
         prebidConfig,
         section,
         slots,
-        pageTargeting,
         slotTargeting
       } = data;
+
       if (!window.initCalled) {
         window.initCalled = true;
-
-        const parallelActions = [
-          this.gpt.setupAsync(this.utils),
-          this.grapeshot.setupAsync(this.gpt, this.utils)
-        ];
-
-        const enablePrebidding = platform === "web";
-        if (enablePrebidding) {
-          parallelActions.push(
-            this.prebid.setupAsync(prebidConfig, this.utils),
-            this.prebid.requestBidsAsync(
-              prebidConfig,
-              slots,
-              networkId,
-              adUnit,
-              section,
-              this.gpt
-            )
-          );
-        }
-
-        Promise.all(parallelActions)
-          .then(this.gpt.waitUntilReady())
-          .then(() => {
-            if (enablePrebidding) {
-              this.prebid.applyPrebidTargeting();
-              this.prebid.applyAmazonTargeting();
-            }
-            this.gpt.displayAds();
-          });
+        this.doPageAdSetupAsync();
       }
+
       this.gpt.scheduleSlotDefine(
         el,
         networkId,
@@ -354,6 +361,9 @@ const adInit = args => {
         slotConfig,
         slotTargeting
       );
+      this.gpt.waitUntilReady().then(() => {
+        eventCallback("renderComplete");
+      });
     }
   };
 
