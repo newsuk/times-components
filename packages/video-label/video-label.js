@@ -1,18 +1,18 @@
 import React from "react";
 import { Text, View } from "react-native";
-import { VideoIcon } from "@times-components/icons";
+import { IconVideo } from "@times-components/icons";
 import PropTypes from "prop-types";
 import styles from "./style";
 
 const VideoLabel = ({ title, color }) => (
-  <View>
-    <VideoIcon
-      width={styles.title.fontSize}
-      height={styles.title.fontSize}
+  <View style={{flexDirection:"row", alignItems: "center"}}>
+    <IconVideo
+      width={styles.title.fontSize * 1.5}
+      height={styles.title.fontSize * 1.5}
       fillColor={color}
     />
-    <Text style={[styles.title, { color }]}>Video</Text>
-    {title && <Text style={[styles.title, { color }]}> | {Title}</Text>}
+    <Text style={[styles.title, { color , marginLeft:10}]}>VIDEO</Text>
+    {title && <Text style={[styles.title, { color }]}> | {title}</Text>}
   </View>
 );
 

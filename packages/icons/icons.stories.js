@@ -36,34 +36,36 @@ const styles = StyleSheet.create({
   }
 });
 
-
 storiesOf("Primitives/Icons", module)
   .addDecorator(checkA11y)
   .add("Icons", () => (
-  <View style={styles.wrapper}>
-    <View style={styles.icon}>
-      <IconDiamond
-        width={50}
-        height={50}
-        fillColour={color("Diamond color", IconDiamond.defaultProps.fillColour)}
-      />
-      <Text style={styles.label}>Diamond</Text>
+    <View style={styles.wrapper}>
+      <View style={styles.icon}>
+        <IconDiamond
+          width={50}
+          height={50}
+          fillColour={color(
+            "Diamond color",
+            IconDiamond.defaultProps.fillColour
+          )}
+        />
+        <Text style={styles.label}>Diamond</Text>
+      </View>
+      <View style={styles.icon}>
+        <IconTwitter
+          width={50}
+          height={50}
+          fillColour={color("Icon color", IconTwitter.defaultProps.fillColour)}
+        />
+        <Text style={styles.label}>Twitter</Text>
+      </View>
+      <View style={styles.icon}>
+        <IconVideo
+          width={50}
+          height={50}
+          fillColour={color("Video color", IconVideo.defaultProps.fillColour)}
+        />
+        <Text style={styles.label}>Video</Text>
+      </View>
     </View>
-    <View style={styles.icon}>
-      <IconTwitter
-        width={50}
-        height={50}
-        fillColour={color("Icon color", IconTwitter.defaultProps.fillColour)}
-      />
-      <Text style={styles.label}>Twitter</Text>
-    </View>
-    <View style={styles.icon}>
-      <IconVideo
-        width={50}
-        height={50}
-        fillColour={color("Video color", IconVideo.defaultProps.fillColour)}
-      />
-      <Text style={styles.label}>Video</Text>
-    </View>
-  </View>
-));
+  ));
