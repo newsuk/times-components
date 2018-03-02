@@ -2,7 +2,7 @@ import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { fonts } from "@times-components/styleguide";
-import { withKnobs, color } from "@storybook/addon-knobs";
+import { color } from "@storybook/addon-knobs";
 import { IconDiamond, IconTwitter, IconVideo } from "./icons";
 
 const borderWidth = 1;
