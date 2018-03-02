@@ -18,7 +18,7 @@ import {
 } from "../../templates/lead/responsive";
 
 describe("Slice tests on web", () => {
-  context("Responsive shared components", () => {
+  context("responsive shared components", () => {
     it("renders SliceContainer correctly", () => {
       expect(renderer.create(<SliceContainer />).toJSON()).toMatchSnapshot();
     });

@@ -18,5 +18,6 @@ const FadeIn = withResponsiveStyles(View, {
     animation: ${fadingAnimation} 0.3s ease-in-out;
   `
 });
+FadeIn.displayName = "FadeIn";
 
 export default FadeIn;
